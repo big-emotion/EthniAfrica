@@ -9,97 +9,102 @@
       "mainName": "Twa",
       "selfAppellation": "Batwa",
       "exonyms": [
-        "Batwa",
-        "Abatwa",
-        "Ge-Sera",
         "Pygmée",
         "Pygmées",
-        "Pygmees des Grands Lacs"
+        "Abayanda",
+        "Abashenzi",
+        "Gutyoza",
+        "Historiquement marginalisés"
       ],
-      "spellingAliases": ["Pigmée", "Pigmées"],
-      "originOfExonyms": "Batwa est la forme la plus courante avec le prefixe bantu de pluriel Ba-. Abatwa est la forme en kinyarwanda/kirundi (prefixe Aba-). Ge-Sera est un terme local moins repandu. Le terme 'Pygmee' (Pygmy en anglais) proviendrait du grec 'pygmaios' (haut d'une coudée) ; les colonisateurs européens l'ont appliqué à ces peuples. Ce terme designe a l'origine les petites estatues humaines de l'antiquite grecque, applique aux populations de petite stature d'Afrique centrale.",
-      "whyProblematic": "Le terme 'Pygmee' est considere comme pejoratif et deshumanisant par de nombreuses organisations de defenses des droits des peuples autochtones, dont l'IWGIA (International Work Group for Indigenous Affairs) et le Forum Permanent de l'ONU sur les Questions Autochtones. Il reduit les individus a une caracteristique physique (stature) et nie leur identite culturelle et linguistique. L'auto-denomination Batwa ou Twa est preferred par les communautes et les organisations de defense des droits. Au Rwanda, suite au genocide de 1994, toute denomination ethnique est officiellement proscrite, ce qui cree une tension entre protection de l'identite Batwa et interdiction legale des categories ethniques.",
-      "contemporaryUsage": "Twa et Batwa sont les termes acceptes dans les contextes academiques, onusiens et dans les communications des organisations de defense des droits des peuples autochtones. L'IWGIA et le Forest Peoples Programme utilisent systematiquement Batwa. Au Rwanda, le gouvernement utilise le terme 'peuples historiquement marginalises' pour eviter la denomination ethnique. Au Burundi, les Twa sont reconnus comme l'une des trois composantes ethniques (avec les Hutu et les Tutsi). Au singulier, on dit Mutwa.",
+      "spellingAliases": [
+        "Abatwa",
+        "Watwa",
+        "Barhwa",
+        "Mutwa",
+        "Pigmée",
+        "Pigmées"
+      ],
+      "originOfExonyms": "Twa est le radical du nom Batwa ; Ba- marque le pluriel et Mu- le singulier, Mutwa. Dans la plupart des langues bantoues, le radical -twa désigne des chasseurs-cueilleurs, ou d'anciens chasseurs-cueilleurs, tenus pour les premiers habitants d'une région et pour des gens de très bas rang, selon l'anthropologue Jerome Lewis ; il renvoie, pour son origine possible, au linguiste Thilo Schadeberg. Le mot Pygmée vient du latin Pygmaei, tiré du grec pugmaios, « homme grand comme le poing », selon le Dictionnaire de l'Académie française ; des explorateurs européens l'ont appliqué à ces peuples à la fin du XIXe siècle. Les voisins des Batwa leur donnent aussi des noms méprisants, comme Abayanda, « ceux qui volent ».",
+      "whyProblematic": "Le mot Pygmée est un terme savant que les voisins des Batwa emploient souvent pour les insulter ; la plupart des Batwa des Grands Lacs le rejettent, mais leurs militants l'acceptent par solidarité avec les autres peuples pygmées, selon Jerome Lewis. Le nom Batwa lui-même peut être respectueux ou insultant selon le ton. Au Rwanda, depuis le génocide de 1994, la distinction entre Bahutu, Batutsi et Batwa est proscrite et sa mention est punie comme « divisionnisme » ; le gouvernement ne reconnaît donc pas les Batwa comme un peuple autochtone distinct, constate en 2008 la Commission africaine des droits de l'homme et des peuples.",
+      "contemporaryUsage": "La plupart des Batwa se nomment eux-mêmes Batwa, selon Jerome Lewis ; au nord du Kivu, certains se disent indifféremment Batwa ou Bambuti, et ceux qui vivent encore de la forêt se disent Impunyu. Au Burundi, des Batwa qui se disent « développés » préfèrent Abaterambere, « ceux qui avancent ». Au Rwanda, le gouvernement parle de « populations historiquement marginalisées ». Au Burundi, la Constitution réserve aux Batwa trois sièges à l'Assemblée nationale et trois au Sénat. La Commission africaine des droits de l'homme et des peuples les cite depuis 2003 parmi les peuples autochtones du Burundi, du Rwanda, de l'Ouganda et de la république démocratique du Congo.",
       "linguisticFamily": "FLG_BANTU",
-      "ethnoLinguisticGroup": "Peuples autochtones Bantu, region des Grands Lacs",
-      "historicalRegion": "Region des Grands Lacs (forets de montagne et zones humides)",
+      "ethnoLinguisticGroup": "Peuple autochtone de la région des Grands Lacs, de langues bantoues",
+      "historicalRegion": "Région des Grands Lacs, autour du lac Kivu et jusqu'au nord du lac Tanganyika : forêts de montagne et de plaine, rives des lacs",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null,
       "currentCountries": ["RWA", "BDI", "COD", "UGA"]
     },
-    "ethnicities": ["Twa", "Batwa", "Abatwa"],
+    "ethnicities": ["Twa", "Batwa", "Impunyu"],
     "origins": {
-      "ancientOrigins": "Les Twa des Grands Lacs sont generalement consideres comme la population la plus ancienne encore presente dans la region, predecesseurs des Hutu et Tutsi arives plus tard. Ils ont traditionnelement vecu comme chasseurs-cueilleurs semi-nomades dans les forets de montagne. Des hypotheses suggerent qu'ils pourraient etre arrives dans la region en meme temps que les Hutu ou qu'ils descendent de populations de chasseurs-cueilleurs anterieure a l'expansion bantoue. Leur lien avec les forets de montagne (massifs du Congo-Nile, forets de Bwindi, de Nyungwe, des Virunga) est documente depuis plusieurs siecles.",
-      "formationPeriod": "Presence attestee dans la region des Grands Lacs depuis au moins plusieurs siecles avant les premieres descriptions europeennes (19e siecle). Tradition orale et textes rwandais anciens les mentionnent comme les habitants originels des forets avant l'arrivee des agriculteurs Hutu.",
+      "ancientOrigins": "Les traditions orales des grands groupes de la région et les historiens occidentaux s'accordent à voir dans les Batwa les premiers habitants de la région, écrit Jerome Lewis. Les Batwa affirment n'avoir aucune origine ailleurs ni aucune histoire de migration, alors que leurs voisins racontent tous être venus d'ailleurs. Un Mutwa de 65 ans, à Mungwa au Burundi, lui expliquait en 1999 que leurs grands-pères leur avaient appris que les Batwa étaient là bien avant les autres.",
+      "formationPeriod": null,
       "migrationRoutes": [
-        "Presence originelle dans les forets de montagne d'Afrique centrale (foret d'Ituri, Congo)",
-        "Expansion vers les forets du Rwanda, Burundi, Uganda et est du Congo",
-        "Dispersions forcees depuis les annees 1970 suite aux expulsions des forets pour la creation de parcs nationaux et de plantations"
+        "Aucune migration dans les récits des Batwa, qui se disent les premiers habitants de la région",
+        "Expulsions des forêts : Kahuzi-Biega (RDC), de la fin des années 1960 à 1975 ; parc des Volcans, Nyungwe et Gishwati (Rwanda), à la fin des années 1980 ; Bwindi et Mgahinga (Ouganda), en 1991",
+        "Fuites de réfugiés : du Rwanda en 1994, du Burundi vers le Rwanda en 2005"
       ],
       "historicalSettlementZones": [
-        "Foret de Bwindi Impenetrable (Uganda, jusqu'en 1991)",
-        "Parc national des Volcans (Rwanda, jusqu'aux annees 1970)",
-        "Foret de Nyungwe (Rwanda, jusqu'aux annees 1980)",
-        "Parc national de Kahuzi-Biega (RDC, jusqu'en 1975)",
-        "Foret de Gishwati (Rwanda)",
-        "Zones humides et marecages du Rwanda, Burundi et est du Congo"
+        "Forêt de Kahuzi-Biega (RDC), jusqu'en 1975",
+        "Parc national des Volcans, forêts de Nyungwe et de Gishwati (Rwanda), jusqu'à la fin des années 1980",
+        "Forêts de Bwindi, de Mgahinga et d'Echuya (Ouganda), jusqu'en 1991",
+        "Rives du lac Kivu et île d'Idjwi (RDC), rives du lac Tanganyika et du lac Rweru"
       ],
-      "unificationsOrDivisions": "Les Twa ne forment pas une entite politique unifiee mais une constellation de petites communautes dispersees dans quatre pays. Ils partagent une identite culturelle et un statut de peuple autochtone marginalise. Des organisations comme la CAURWA au Rwanda et UOBDU en Uganda cherchent a federer les communautes Twa pour la defense de leurs droits.",
-      "externalInfluences": "L'arrivee des Hutu (agriculteurs Bantu) a progressivement marginalise les Twa en leur attribuant un statut social inferieur. Les royaumes tutssi leur ont parfois accorde des roles particuliers a la cour. La colonisation europeenne et la creation de reserves et parcs nationaux ont entraine les premieres grandes expulsions. Les conflits armes (Rwanda 1994, Congo) ont dramatiquement fragilise les communautes Twa.",
-      "majorHistoricalEvents": "Annees 1970-1980: expulsions massives des forets pour la creation de parcs nationaux (Volcans, Nyungwe au Rwanda; Bwindi, Mgahinga en Uganda; Kahuzi-Biega en RDC). 1994: genocide rwandais, environ 30% de la population Twa du Rwanda est exterminees. 2019: retour de ~6 000 Batwa dans le parc de Kahuzi-Biega (RDC) suivi de violences des gardes du parc (armes, viols, mutilations). Juillet 1994: premiere participation des Batwa rwandais au Groupe de travail de l'ONU sur les Populations Autochtones."
+      "unificationsOrDivisions": "Les Batwa ne forment pas une entité politique, mais de petites communautés dispersées dans quatre pays. Ils parlent des langues différentes, en général celle du groupe dominant de leur région, mais tous se reconnaissent une même ascendance, celle des premiers chasseurs-cueilleurs de la région, selon Jerome Lewis. En 1991, des Batwa du Rwanda et de la RDC ont fondé leurs premières organisations, l'Association pour la promotion des Batwa et le Programme d'intégration et de développement du peuple pygmée au Kivu.",
+      "externalInfluences": "Les Batwa se voient comme un peuple colonisé, d'abord par des agriculteurs, puis par des éleveurs, enfin par des Européens, écrit Jerome Lewis. Les agriculteurs venus après eux, bien plus nombreux, les ont intégrés au plus bas de leur société. La déforestation, puis la création de parcs nationaux, les ont privés de presque toutes leurs terres.",
+      "majorHistoricalEvents": "De la fin des années 1960 à 1975, 580 familles batwa, soit 3 000 à 6 000 personnes, sont expulsées de la forêt de Kahuzi-Biega, en RDC, sans consultation, selon Jerome Lewis. En 1991, la création des parcs de Bwindi et de Mgahinga, en Ouganda, achève leur expulsion de ces forêts. En 1994, jusqu'à 30 % des Batwa du Rwanda meurent ou sont tués pendant le génocide et la guerre qui suit, selon Jerome Lewis ; l'UNPO compte environ 10 000 morts. En juillet 1994, des Batwa du Rwanda participent pour la première fois au groupe de travail des Nations unies sur les populations autochtones. Entre 2019 et 2021, selon un rapport de Minority Rights Group rapporté par Mongabay, des gardes du parc de Kahuzi-Biega et des soldats tuent 20 Batwa revenus dans le parc ; le parc conteste ces accusations."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Organisation traditionnelle en petits groupes de chasseurs-cueilleurs semi-nomades, sans chefferie centralisee. Prise de decision collective au sein des groupes familiaux. Historiquement, certains Twa avaient des fonctions particulieres a la cour des rois tutsi (potiers, entertainers, parfois executeurs). Ces roles de cour constituaient une forme d'integration sociale asymetrique, non une autonomie politique.",
-      "clanOrganization": "Organisation en petits groupes familiaux mobiles. Pas de systeme clanique formalise comparable aux groupes agricoles voisins. L'appartenance de groupe est determinee par la proximite familiale et le partage du territoire forestier.",
+      "traditionalPoliticalSystem": "Les Batwa n'ont pas de royaume à eux. Dans les royaumes de la région, ils jouaient un rôle important : dans les mythes et les rituels, ils donnaient leur légitimité aux chefs, qui devaient être « intronisés » par des Batwa et en garder auprès d'eux, selon Jerome Lewis. Au Kivu, un chef sans Batwa à sa cour ne compte pas.",
+      "clanOrganization": "Les Batwa du Bufumbira, en Ouganda, se rattachent aux neuf clans kiga venus du Rwanda vers 1750, et non aux clans arrivés après eux, selon Jerome Lewis. Les Impunyu de la forêt vivent en petits groupes, rarement plus de 50 personnes, et restent sur le territoire de leur clan, qu'ils connaissent.",
       "ageClassSystems": null,
-      "roleOfLineages": "Les liens familiaux determinent l'appartenance aux groupes de chasse et de collecte. La transmission des savoirs (chasse, botanique, poterie) se fait au sein des lignages. La poterie constitue un marqueur identitaire fort: les Twa sont les potiers par excellence dans la region des Grands Lacs, une specialisation qui les distingue des autres groupes pygmees africains.",
-      "religiousAuthority": "Pratiques spirituelles animistes liees au monde forestier et aux forces naturelles. Veneration des ancetres. Certaines communautes Twa ont adopte le christianisme, notamment en Uganda et au Rwanda. Les pratiques traditionnelles de soin par les plantes medicinals de la foret constituaient une forme d'autorite spirituelle et medicale."
+      "roleOfLineages": null,
+      "religiousAuthority": "Les Batwa conféraient leur légitimité aux chefs dans les rituels de chefferie et de fertilité de la terre, et « autorisaient » rituellement les nouveaux venus à utiliser la terre, selon Jerome Lewis. Ceux qui ont perdu l'accès à la forêt continuent d'y aller en secret pour visiter les sites sacrés de leurs ancêtres et y déposer des offrandes."
     },
     "languages": {
-      "mainLanguage": "Kinyarwanda / Kirundi selon le pays",
+      "mainLanguage": "Kinyarwanda (kin) ou kirundi (run), selon le pays",
       "isoCodes": ["kin", "run"],
-      "dialects": [
-        "Dialectes Twa du Kinyarwanda (Rwanda)",
-        "Dialectes Twa du Kirundi (Burundi)",
-        "Dialectes Twa du Kiga (Uganda)",
-        "Dialectes Twa du Tembo (RDC)"
-      ],
-      "vehicularRole": "Les Twa des Grands Lacs parlent des dialectes des langues bantoues dominantes de leurs pays respectifs: le Kinyarwanda (kin, ISO 639-3) au Rwanda, le Kirundi (run) au Burundi, le Kiga (cgg) en Uganda, le Tembo (tbt) ou d'autres langues bantoues locales en RDC. Les Twa n'ont pas de langue propre independante dans la region des Grands Lacs, a la difference de certains groupes pygmees de la foret equatoriale (Baka, Aka). Cette adoption des langues bantoues environnantes reflete des siecles d'integration culturelle partielle avec les groupes agriculteurs voisins."
+      "dialects": ["Kitwa (Burundi)"],
+      "vehicularRole": "Les Batwa parlent aujourd'hui plusieurs langues, en général celle du groupe dominant de leur région, et prononcent parfois leur nom Barhwa, selon Jerome Lewis. Au Rwanda et au Burundi, les langues dominantes sont le kinyarwanda et le kirundi, deux langues bantoues des Grands Lacs selon Glottolog. Des militants batwa affirment que les Bahutu et les Batutsi ont repris une grande part du vocabulaire de l'ancienne langue des Batwa ; un dictionnaire du kitwa du Burundi était en préparation en 2000 pour montrer ce qui le distingue du kirundi."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q107331"
     },
     "culture": {
-      "majorRites": "Rites de chasse et de collecte en foret, aujourd'hui largement perdus suite aux expulsions des zones forestieres. Ceremonies liees aux passages de vie (naissance, puberte, mariage, deces). La poterie constitue a la fois une pratique economique et un element rituel de l'identite Twa: le processus de collecte de l'argile, son traitement et la fabrication des vases sont charges de dimension sociale et spirituelle.",
-      "symbols": "La foret est le symbole central et l'espace vital traditionnel des Twa. La poterie est le symbole identitaire principal, notamment au Rwanda ou elle represente le seul metier traditionnel encore partiellement praticable. La stature physique (generalement moins elevee que les voisins) est un symbole ambivalent: constitutive de leur identite selon les categories exterieures, mais source de stigmatisation.",
-      "artsAndMusic": "Chants et danses traditionnels lies aux activites de chasse et de collecte, pratiques lors des ceremonies communautaires. La poterie artisanale est l'art traditionnel le plus notable des Twa des Grands Lacs, les distinguant des autres groupes pygmees d'Afrique qui pratiquent plutot l'echange de viande contre des biens. En Uganda, les Twa (Batwa) sont promus comme attraction touristique culturelle autour du parc de Bwindi.",
-      "spiritualities": "Animisme traditionnel centree sur le monde forestier: les arbres, les cours d'eau, les animaux et les espaces naturels sont habites de forces spirituelles. Veneration des ancetres. En Uganda et au Rwanda, une partie significative des Twa s'est convertie au christianisme, notamment evangelique, depuis les annees 1980-1990. Les pratiques de guerison par les plantes medicinales forestieres constituent un heritage spirituel et medical menace par la perte d'acces aux forets."
+      "majorRites": "Dans les rituels de chefferie et de fertilité de la terre, les Batwa avaient une place obligée, selon Jerome Lewis. Chez les Impunyu, les sites sacrés des ancêtres se trouvent aujourd'hui dans des parcs nationaux.",
+      "symbols": "Quand la forêt a fait place aux champs et aux pâturages, la poterie a remplacé la forêt et la chasse comme symbole de l'identité batwa, selon Jerome Lewis. Le travail d'une femme est ainsi devenu le signe de tout un peuple. La fabrication des pots est un moment de vie collective qui réunit toute la communauté.",
+      "artsAndMusic": "Les Batwa ont servi les cours royales comme amuseurs, porteurs de litière, chasseurs et messagers, et beaucoup ont été bardes et musiciens dans les campagnes, selon Jerome Lewis. Il cite un album de chants de cour pour inanga et de chants populaires de Médard Ntamaganya, du Rwanda, publié en 1997 par la Maison des cultures du monde.",
+      "spiritualities": "Même interdits de forêt, beaucoup de Batwa y vont encore pour des activités religieuses, pour visiter les sites sacrés de leurs ancêtres et y faire des offrandes, selon Jerome Lewis. Dans les mythes de leurs voisins, leur vie de chasseurs est pourtant présentée comme immorale."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de royaumes ou chefferies Twa independants. Historiquement, certains Twa avaient des positions privilegiees a la cour des rois tutsi comme potiers, musiciens, bouffons ou parfois executeurs. Cette integration partielle a la cour royale leur conferait un statut ambigu: reconnus pour leurs savoirs particuliers mais stigmatises socialement.",
-      "relationsWithNeighbors": "Relations historiquement asymetriques avec les Hutu et les Tutsi: les Twa occupaient le rang social le plus bas dans la hierarchie sociale traditionnelle des royaumes des Grands Lacs. Ils faisaient l'objet de discriminations et d'interdits (les Hutu et Tutsi refusaient par exemple de manger avec les Twa ou de manger leurs aliments). Au Rwanda, la croyance que dormir avec une femme Twa guerissait les maux de dos illustre la nature complexe et exploitatrice de ces relations.",
-      "conflictsOrAlliances": "Victims du genocide rwandais de 1994 (environ 30% de la population Twa exterminees). Victimes des conflits armes en RDC (notamment dans le parc de Kahuzi-Biega). Expulsion violente du parc de Kahuzi-Biega en 2019 avec usage d'armes automatiques et de viols par les gardes du parc appuyes par l'armee congolaise. Participation depuis 1994 au mouvement international des peuples autochtones via l'ONU.",
-      "diaspora": "Les Twa sont disperses dans quatre pays (Rwanda, Burundi, RDC, Uganda) en petites communautes marginalisees. Au Rwanda, depuis 2005, les politiques foncieres menacent les zones humides ou les Batwa collectaient l'argile pour la poterie. La majorite des Twa sont aujourd'hui sans terres et vivent dans une extreme pauvrete. En Uganda, 40% des Batwa dependaient de la mendicite comme source principale de revenus en 2007 selon les enquetes du Minority Rights Group."
+      "kingdomsOrChiefdoms": "Pas de royaume batwa. Certains Batwa ont reçu des terres d'un mwami pour leurs services, quelques-uns sont devenus sous-chefs, et un clan du Rwanda, les Basyeti, a été anobli, selon Jerome Lewis. Selon lui, les forêts d'altitude du Bufumbira, appelées « le domaine des clochettes », appartenaient aux Batwa, qui payaient tribut au roi du Rwanda ; un Mutwa, Basebya, a mené des raids contre les Batutsi de 1896 à sa capture en 1910.",
+      "relationsWithNeighbors": "Partout, leurs voisins refusent de manger ou de boire avec les Batwa, de les recevoir chez eux ou de les épouser, selon Jerome Lewis. Jean-Michel van der Burgt notait déjà en 1903 qu'aucun Murundi n'épouserait une Mutwa. Beaucoup de voisins voient les Batwa comme des gens « non civilisés » ; certains Batwa intériorisent ce regard ou renoncent à leur identité quand ils s'enrichissent.",
+      "conflictsOrAlliances": "Pendant les guerres de la région, tous les camps méprisent les Batwa, qui sont attaqués des deux côtés ou forcés de prendre les armes, selon Jerome Lewis. Jusqu'à 30 % des Batwa du Rwanda sont morts ou ont été tués en 1994. Depuis juillet 1994, ils participent au mouvement international des peuples autochtones, notamment aux Nations unies.",
+      "diaspora": "Pendant et après le génocide de 1994, environ 10 000 Twa ont fui le Rwanda comme réfugiés, selon l'UNPO, citée par la Commission africaine des droits de l'homme et des peuples, qui rapporte aussi des discriminations contre eux dans les camps. En mars 2005, des dizaines de Batwa du Burundi ont fui au Rwanda après avoir été attaqués."
     },
     "demography": {
-      "totalPopulation": 120000,
-      "referenceYear": 2025,
-      "source": "IWGIA et Minority Rights Group International. En 2000, la population totale etait estimee a ~80 000 personnes. En 2008, le Burundi seul comptait 78 071 Twa. Estimations pour 2025: Rwanda ~33 000, Burundi ~80 000-85 000, Uganda ~6 700, RDC ~15 000-20 000. Total estime entre 100 000 et 150 000 personnes.",
+      "totalPopulation": null,
+      "referenceYear": 2000,
+      "source": "Jerome Lewis estime en 2000 les Batwa des Grands Lacs à 70 000 à 87 000 personnes, entre 0,02 et 0,7 % de la population de chaque pays, à partir des chiffres de leurs associations : 20 000 à 27 000 au Rwanda, 30 000 à 40 000 au Burundi, 16 000 en RDC et 4 000 en Ouganda. Le recensement ougandais de 2014 compte 6 200 Batwa. La Commission africaine donne environ 2 % de la population du Burundi en 2005 et moins de 2 % de celle du Rwanda en 2008.",
       "distributionByCountry": [
         {
           "country": "BDI",
-          "population": 80000,
-          "note": "Plus grande population Twa des Grands Lacs, ~1% de la population nationale (estimation 2008: 78 071)"
+          "population": null,
+          "note": "30 000 à 40 000 selon les estimations du gouvernement et de l'association UNIPROBA, citées par Jerome Lewis en 2000 ; environ 2 % de la population selon la Commission africaine en 2005."
         },
         {
           "country": "RWA",
-          "population": 25000,
-          "note": "~1% de la population nationale, ~33 000 selon certaines estimations"
+          "population": null,
+          "note": "20 000 à 27 000 selon Jerome Lewis en 2000 ; moins de 2 % de la population selon la Commission africaine en 2008."
         },
         {
           "country": "COD",
-          "population": 10000,
-          "note": "Est du Congo, notamment region de Kahuzi-Biega"
+          "population": null,
+          "note": "Environ 16 000 au Kivu selon les chiffres de 1993 cités par Jerome Lewis ; autour du parc de Kahuzi-Biega, sur les rives du lac Kivu et dans l'île d'Idjwi."
         },
         {
           "country": "UGA",
-          "population": 6000,
-          "note": "Sud-ouest de l'Uganda, ancienne zone de Bwindi et Echuya; estimation 6 705 selon Minority Rights Group"
+          "population": 6200,
+          "note": "Recensement de 2014 du Bureau des statistiques de l'Ouganda, dans le sud-ouest du pays, autour des forêts de Bwindi, de Mgahinga et d'Echuya."
         }
       ]
     },
@@ -120,7 +125,8 @@
         "title": "Jerome Lewis, The Batwa Pygmies of the Great Lakes Region, MRG Report, 2000",
         "url": "https://citizenshiprightsafrica.org/wp-content/uploads/2001/03/Lewis-Batwa-report-MRG-2000.pdf",
         "tier": "referenced",
-        "source_kind": "ngo"
+        "source_kind": "ngo",
+        "notes": "Rapport de Minority Rights Group International, Londres, 2000, lu dans la copie en ligne le 3 novembre 2026. Pages 5 à 7 : noms, nombre et premiers habitants ; pages 9 et 10 : cours royales et poterie ; page 13 : noms méprisants ; pages 19 à 21 : expulsions des forêts ; page 23 : le génocide de 1994."
       },
       {
         "title": "UNPO, Rapport UPR Rwanda 23e session – situation des Batwa",
@@ -156,11 +162,114 @@
         "tier": "referenced",
         "source_kind": "linguistic_reference",
         "notes": "Atteste la graphie ancienne « pigmée »."
+      },
+      {
+        "title": "The Batwa Pygmies of the Great Lakes Region",
+        "author": "Jerome Lewis",
+        "year": 2000,
+        "url": "https://citizenshiprightsafrica.org/wp-content/uploads/2001/03/Lewis-Batwa-report-MRG-2000.pdf",
+        "tier": "referenced",
+        "source_kind": "ngo",
+        "notes": "Rapport de Minority Rights Group International, Londres, 2000 ; lu dans la copie en ligne le 11 octobre 2026, relu le 3 novembre 2026. Les pages sont celles du rapport imprimé.",
+        "page": "p. 5-10, 13, 19-21, 23 et 29-30"
+      },
+      {
+        "title": "Rapport du Groupe de travail de la Commission africaine sur les populations/communautés autochtones : mission en République du Rwanda, 1er-5 décembre 2008",
+        "url": "https://achpr.au.int/sites/default/files/files/2022-10/achpr47misrepspecmecindpoprwanda2008eng.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Rapport de mission de la Commission africaine des droits de l'homme et des peuples, adopté à sa 47e session ordinaire, en mai 2010, et publié avec l'IWGIA ; lu en anglais sur le site de la Commission le 3 novembre 2026. Pages 18-19 : la distinction entre Bahutu, Batutsi et Batwa est proscrite et sa mention est un délit de « divisionnisme » ; le gouvernement range les Batwa parmi les « populations historiquement marginalisées ». Page 17 : les Twa font moins de 2 % de la population. Page 29 : selon l'UNPO, environ 10 000 Twa, plus du tiers des Twa du Rwanda, ont été tués en 1994, et autant ont fui le pays ; à la fin des années 1980, les derniers Twa de la forêt ont été expulsés du parc des Volcans, de la forêt de Nyungwe et de celle de Gishwati."
+      },
+      {
+        "title": "Report of the Research and Information Visit to Burundi, 27 March - 9 April 2005 (African Commission's Working Group of Experts on Indigenous Populations/Communities)",
+        "url": "https://achpr.au.int/sites/default/files/files/2022-10/achpr38misrepspecmecindpopburundi2005eng.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Rapport de Zéphirin Kalimba et Albert K. Barume pour le groupe de travail de la Commission africaine des droits de l'homme et des peuples ; lu sur le site de la Commission le 3 novembre 2026. Page 3 : les Batwa font environ 2 % des quelque 8 millions d'habitants du Burundi ; la Constitution leur garantit trois sièges à l'Assemblée nationale et trois au Sénat. Page 17 : des dizaines de Batwa ont fui au Rwanda en mars 2005 après avoir été attaqués."
+      },
+      {
+        "title": "Indigenous Peoples in Africa: The Forgotten Peoples? The African Commission's work on indigenous peoples in Africa",
+        "author": "Commission africaine des droits de l'homme et des peuples et IWGIA",
+        "year": 2006,
+        "url": "https://achpr.au.int/sites/default/files/files/2022-08/achprwgipreportsummaryversioneng.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Résumé, publié en 2006 par la Commission africaine des droits de l'homme et des peuples et l'IWGIA, du rapport de son groupe de travail sur les populations autochtones, adopté par la Commission en novembre 2003 (p. 9-10). Lu sur le site de la Commission le 3 novembre 2026. Le tableau de la page 15 donne des exemples de peuples qui se disent autochtones : au Cameroun les Bakola ou Bagyeli, les Baka et les Medzan, au Gabon les Baka, au Burundi, au Rwanda et en Ouganda les Batwa, en république démocratique du Congo les Batwa, les Bacwa et les Bambuti."
+      },
+      {
+        "title": "Uganda Bureau of Statistics — National Population and Housing Census 2014, Main Report (2016), tableau A8",
+        "url": "https://unstats.un.org/unsd/demographic/sources/census/wphc/Uganda/UGA-2016-05-23.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport principal du recensement de 2014 du Bureau des statistiques de l'Ouganda, publié en 2016, lu dans la copie de la Division de statistique des Nations unies le 3 novembre 2026. Tableau A8, population par ethnie : 6 200 Batwa, dont 3 022 hommes et 3 178 femmes, 5 429 en milieu rural."
+      },
+      {
+        "title": "Glottolog — Kinyarwanda (kiny1244)",
+        "url": "https://glottolog.org/resource/languoid/id/kiny1244",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max Planck d'anthropologie évolutionniste, lu le 3 novembre 2026 : le kinyarwanda (kin), langue bantoue des Grands Lacs."
+      },
+      {
+        "title": "Glottolog — Rundi (rund1242)",
+        "url": "https://glottolog.org/resource/languoid/id/rund1242",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max Planck d'anthropologie évolutionniste, lu le 3 novembre 2026 : le kirundi (run), langue bantoue des Grands Lacs."
+      },
+      {
+        "title": "Rangers in DRC gorilla park abused Indigenous villagers, report says",
+        "url": "https://news.mongabay.com/2022/04/rangers-in-drc-gorilla-park-abused-indigenous-villagers-report-says/",
+        "tier": "unverified",
+        "source_kind": "press",
+        "notes": "Article de Laurel Sutherland, Mongabay, 7 avril 2022 ; lu le 3 novembre 2026. Il rend compte d'un rapport de Minority Rights Group : des Batwa revenus dans le parc de Kahuzi-Biega en octobre 2018 ; entre 2019 et 2021, 20 Batwa tués et 15 femmes violées par des gardes du parc et des soldats. Le parc et la Wildlife Conservation Society contestent ces accusations."
+      },
+      {
+        "title": "Histoires, livre II, chapitre 32",
+        "author": "Hérodote, texte grec et traduction anglaise d'A. D. Godley publiés par Perseus",
+        "year": 1920,
+        "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0125%3Abook%3D2%3Achapter%3D32",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "livre II, chapitre 32",
+        "notes": "Texte grec de l'édition de Cambridge (Harvard University Press, 1920), lu sur le site de la bibliothèque numérique Perseus (université Tufts) le 3 novembre 2026, avec la traduction anglaise d'A. D. Godley. Hérodote rapporte le récit de jeunes Nasamons, un peuple de Libye, capturés au-delà du désert par des « hommes petits, plus petits que des hommes de taille moyenne » (andras mikrous), à la peau noire, près d'un grand fleuve où vivent des crocodiles. Le passage n'emploie pas le mot pygmée."
+      },
+      {
+        "title": "Iliade, chant III (texte grec)",
+        "author": "Homère, texte des Homeri Opera de D. B. Monro et T. W. Allen (Oxford, 1920), publié par Perseus",
+        "year": 1920,
+        "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0133%3Abook%3D3%3Acard%3D1",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "chant III, vers 3-6",
+        "notes": "Texte grec de l'édition d'Oxford de 1920, lu sur le site de la bibliothèque numérique Perseus (université Tufts) le 3 novembre 2026. Aux vers 3 à 6, les grues qui fuient l'hiver volent vers les flots de l'Océan et portent « aux hommes Pygmées » (andrasi Pygmaioisi) le meurtre et la mort."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Batwa, au singulier Mutwa, sont un peuple des Grands Lacs, au Rwanda, au Burundi, en Ouganda et dans l'est du Congo, tenu pour le premier habitant de la région.",
+      "followUp": "Que veut dire le nom Twa, et pourquoi les Batwa rejettent-ils souvent le mot Pygmée ?"
+    },
+    "gaps": [
+      {
+        "field": "content.origins.formationPeriod",
+        "reason": "Nous n'avons pas trouvé de source qui date la formation de ce peuple ; nous avons consulté le rapport de Jerome Lewis pour Minority Rights Group et les rapports de la Commission africaine des droits de l'homme et des peuples."
+      },
+      {
+        "field": "content.organization.ageClassSystems",
+        "reason": "Nous n'avons pas trouvé de source qui décrive des classes d'âge chez les Batwa des Grands Lacs ; nous avons consulté le rapport de Jerome Lewis et les rapports de la Commission africaine."
+      },
+      {
+        "field": "content.organization.roleOfLineages",
+        "reason": "Nous n'avons pas trouvé de source qui décrive le rôle des lignages chez les Batwa ; nous avons consulté les mêmes sources."
+      },
+      {
+        "field": "content.demography.totalPopulation",
+        "reason": "Il n'existe pas de chiffre récent pour l'ensemble des Batwa : seuls l'Ouganda les compte dans son recensement. Nous donnons les estimations avec leurs auteurs plutôt que d'additionner des chiffres d'années différentes."
       }
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Twa désigne un peuple des Grands Lacs, au Rwanda, au Burundi, dans l'est de la république démocratique du Congo et en Ouganda, qui se nomme lui-même Batwa, et Mutwa pour une seule personne. D'autres noms existent : Pygmées, un mot savant venu du grec, et des noms méprisants que lui donnent ses voisins, comme Abayanda. On ne sait pas avec certitude d'où vient le nom Twa ; ce que disent les sources est présenté plus bas.",
+    "summary": "Le nom Twa désigne un peuple des Grands Lacs, au Rwanda, au Burundi, dans l'est de la république démocratique du Congo et en Ouganda, qui se nomme lui-même Batwa, et Mutwa pour une seule personne. D'autres noms existent : Pygmées, un mot savant venu du grec, des noms méprisants que lui donnent ses voisins, comme Abayanda, et au Rwanda l'expression « populations historiquement marginalisées ». Ce que disent les sources de l'origine de chacun est présenté plus bas.",
     "names": [
       {
         "nameText": "Batwa",
@@ -178,7 +287,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Batwa est celui que la plupart de ces gens se donnent ; une seule personne se dit Mutwa. Dans la plupart des langues bantoues, le radical -twa désigne des chasseurs-cueilleurs, ou d'anciens chasseurs-cueilleurs, reconnus comme les premiers habitants d'une région et tenus en très basse estime, selon l'anthropologue Jerome Lewis. Les sources que nous avons lues n'expliquent pas l'origine de ce radical.",
+            "statement": "Le nom Batwa est celui que la plupart de ces gens se donnent ; une seule personne se dit Mutwa. Dans la plupart des langues bantoues, le radical -twa désigne des chasseurs-cueilleurs, ou d'anciens chasseurs-cueilleurs, reconnus comme les premiers habitants d'une région et tenus en très basse estime, selon l'anthropologue Jerome Lewis. Pour l'origine possible de ce radical, il renvoie aux travaux du linguiste Thilo Schadeberg.",
             "aspect": "meaning",
             "sources": [
               {
@@ -188,7 +297,7 @@
                 "url": "https://citizenshiprightsafrica.org/wp-content/uploads/2001/03/Lewis-Batwa-report-MRG-2000.pdf",
                 "tier": "referenced",
                 "source_kind": "ngo",
-                "page": "p. 5",
+                "page": "p. 5 et p. 29, note 4",
                 "notes": "Rapport de Minority Rights Group International, Londres, 2000 ; lu dans la copie en ligne le 11 octobre 2026."
               }
             ]
@@ -217,12 +326,34 @@
           },
           {
             "period": {
+              "from": 1999,
+              "to": 2000,
+              "label": "Enquête de 1999, rapport de 2000"
+            },
+            "era": "modern",
+            "statement": "Le nom Batwa n'est pas le seul que se donnent ces gens : au nord du Kivu, certains se disent indifféremment Batwa ou Bambuti, et ceux qui vivent encore de la forêt se disent Impunyu, selon Jerome Lewis.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Batwa Pygmies of the Great Lakes Region",
+                "author": "Jerome Lewis",
+                "year": 2000,
+                "url": "https://citizenshiprightsafrica.org/wp-content/uploads/2001/03/Lewis-Batwa-report-MRG-2000.pdf",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "notes": "Rapport de Minority Rights Group International, Londres, 2000 ; lu dans la copie en ligne le 11 octobre 2026, relu le 3 novembre 2026. Les pages sont celles du rapport imprimé.",
+                "page": "p. 5 et p. 8-9"
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1891,
               "to": 1894,
               "label": "Voyage de 1891-1893, livre de 1894"
             },
             "era": "colonial",
-            "statement": "Le nom Batwa apparaît, sous la forme Watwa, chez l'explorateur Oscar Baumann, qui donne aussi la forme Batwa : en Urundi, il voit dans les Watwa, dispersés dans tout le pays, la population la plus ancienne, et note que ce nom est surtout donné aux peuples pygmées des forêts du sud du Congo. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "statement": "Le nom Batwa apparaît, sous la forme Watwa, chez l'explorateur Oscar Baumann, qui donne aussi la forme Batwa : en Urundi, il voit dans les Watwa, dispersés dans tout le pays, la population la plus ancienne, et note que ce nom est surtout donné aux peuples pygmées des forêts du sud du Congo. C'est la plus ancienne trace de ce nom que nous connaissons. Le peuple existait déjà avant elle.",
             "birth": true,
             "formAsWritten": "Watwa",
             "sources": [
@@ -297,9 +428,61 @@
             "period": {
               "from": null,
               "to": null,
-              "label": "Origine non datée"
+              "label": "Antiquité grecque"
             },
-            "statement": "Le nom Pygmée viendrait du latin Pygmaei, lui-même tiré du grec pugmaios, « grand comme le poing », selon le Dictionnaire de l'Académie française.",
+            "statement": "Le nom Pygmée désigne d'abord, dans l'Iliade d'Homère, un peuple de légende : au chant III, les grues qui fuient l'hiver volent vers les flots de l'Océan et portent « aux hommes Pygmées » le meurtre et la mort. Serge Bahuchet ajoute que ce peuple est haut d'une coudée.",
+            "before": true,
+            "sources": [
+              {
+                "title": "L'invention des Pygmées",
+                "author": "Serge Bahuchet",
+                "year": 1993,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1993_num_33_129_2078",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Cahiers d'études africaines, 33 (129), 1993, p. 153-181. Lu sur Persée le 18 octobre 2026, page par page ; les numéros sont ceux de la revue imprimée.",
+                "page": "p. 153-154"
+              },
+              {
+                "title": "Iliade, chant III (texte grec)",
+                "author": "Homère, texte des Homeri Opera de D. B. Monro et T. W. Allen (Oxford, 1920), publié par Perseus",
+                "year": 1920,
+                "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0133%3Abook%3D3%3Acard%3D1",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chant III, vers 3-6",
+                "notes": "Texte grec de l'édition d'Oxford de 1920, lu sur le site de la bibliothèque numérique Perseus (université Tufts) le 3 novembre 2026. Aux vers 3 à 6, les grues qui fuient l'hiver volent vers les flots de l'Océan et portent « aux hommes Pygmées » (andrasi Pygmaioisi) le meurtre et la mort."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -499,
+              "to": -400,
+              "label": "Ve siècle avant notre ère"
+            },
+            "statement": "Le nom Pygmée n'apparaît pas dans le récit que rapporte l'historien grec Hérodote : de jeunes Nasamons, un peuple de Libye, traversent le désert et sont capturés par des « hommes petits, plus petits que des hommes de taille moyenne », à la peau noire, qui les mènent près d'un grand fleuve où vivent des crocodiles.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoires, livre II, chapitre 32",
+                "author": "Hérodote, texte grec et traduction anglaise d'A. D. Godley publiés par Perseus",
+                "year": 1920,
+                "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0125%3Abook%3D2%3Achapter%3D32",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "livre II, chapitre 32",
+                "notes": "Texte grec de l'édition de Cambridge (Harvard University Press, 1920), lu sur le site de la bibliothèque numérique Perseus (université Tufts) le 3 novembre 2026, avec la traduction anglaise d'A. D. Godley. Hérodote rapporte le récit de jeunes Nasamons, un peuple de Libye, capturés au-delà du désert par des « hommes petits, plus petits que des hommes de taille moyenne » (andras mikrous), à la peau noire, près d'un grand fleuve où vivent des crocodiles. Le passage n'emploie pas le mot pygmée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Pygmée vient du latin Pygmaei, lui-même tiré du grec pugmaios, « homme grand comme le poing, nain », de pugmê, le poing, puis la coudée ; il entre en français au XIIIe siècle, selon le Dictionnaire de l'Académie française. Le mot renvoie donc à la taille, comme le rappellent Marine Robillard et Serge Bahuchet.",
             "sources": [
               {
                 "title": "Dictionnaire de l'Académie française, 9e édition, entrée « pygmée »",
@@ -308,9 +491,20 @@
                 "url": "https://www.dictionnaire-academie.fr/article/A9P5144",
                 "tier": "official",
                 "source_kind": "linguistic_reference",
-                "notes": "Entrée lue sur le site du Dictionnaire de l'Académie française le 11 octobre 2026."
+                "notes": "Entrée lue sur le site du Dictionnaire de l'Académie française le 11 octobre 2026, relue le 3 novembre 2026."
+              },
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 18 octobre 2026 puis le 3 novembre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée ; les paragraphes sont numérotés dans la marge.",
+                "page": "§ 6"
               }
-            ]
+            ],
+            "aspect": "meaning"
           },
           {
             "period": {
@@ -335,11 +529,11 @@
           },
           {
             "period": {
-              "from": 1880,
+              "from": 1870,
               "to": 1900,
               "label": "Fin du XIXe siècle"
             },
-            "statement": "Le nom Pygmée est donné à la fin du XIXe siècle par des explorateurs à des populations de petite taille d'Afrique centrale et méridionale, selon le Dictionnaire de l'Académie française.",
+            "statement": "Le nom Pygmée est donné à la fin du XIXe siècle par des explorateurs à des populations de petite taille d'Afrique centrale et méridionale, selon le Dictionnaire de l'Académie française, qui cite les Pygmées du Burundi. Le premier à l'appliquer à un peuple vivant est l'explorateur allemand Georg Schweinfurth, en 1870, chez les Akka du pays mangbetu, selon Serge Bahuchet.",
             "aspect": "imposition",
             "sources": [
               {
@@ -349,7 +543,27 @@
                 "url": "https://www.dictionnaire-academie.fr/article/A9P5144",
                 "tier": "official",
                 "source_kind": "linguistic_reference",
-                "notes": "Entrée lue sur le site du Dictionnaire de l'Académie française le 11 octobre 2026."
+                "notes": "Entrée lue sur le site du Dictionnaire de l'Académie française le 11 octobre 2026, relue le 3 novembre 2026."
+              },
+              {
+                "title": "L'invention des Pygmées",
+                "author": "Serge Bahuchet",
+                "year": 1993,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1993_num_33_129_2078",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Cahiers d'études africaines, 33 (129), 1993, p. 153-181. Lu sur Persée le 18 octobre 2026, page par page ; les numéros sont ceux de la revue imprimée.",
+                "page": "p. 153 et p. 163"
+              },
+              {
+                "title": "The Heart of Africa: Three Years' Travels and Adventures in the Unexplored Regions of Central Africa, from 1868 to 1871, vol. II",
+                "author": "Georg Schweinfurth",
+                "year": 1874,
+                "url": "https://archive.org/details/heartofafrica02schw_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 126-127",
+                "notes": "New York, Harper & Brothers, 1874, traduction anglaise d'Ellen E. Frewer. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; la page 126 a été vérifiée sur l'image."
               }
             ]
           },
@@ -360,7 +574,7 @@
               "label": "Voyage de 1891-1893, livre de 1894"
             },
             "era": "colonial",
-            "statement": "Le nom Pygmée est rapproché de ce peuple, sous sa forme allemande Pygmäen, par Oscar Baumann, qui décrit dans le nord de l'Urundi « une tribu des Watwa, apparentée aux Pygmées ». C'est la plus ancienne trace de ce nom pour ce peuple que le projet connaît. Le peuple existait déjà avant elle.",
+            "statement": "Le nom Pygmée est rapproché de ce peuple, sous sa forme allemande Pygmäen, par Oscar Baumann, qui décrit dans le nord de l'Urundi « une tribu des Watwa, apparentée aux Pygmées ». C'est la plus ancienne trace de ce nom pour ce peuple que nous connaissons. Le peuple existait déjà avant elle.",
             "birth": true,
             "formAsWritten": "Pygmäen",
             "sources": [
@@ -419,6 +633,28 @@
                 "notes": "Rapport de Minority Rights Group International, Londres, 2000 ; lu dans la copie en ligne le 11 octobre 2026."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Pygmée est, pour Marine Robillard et Serge Bahuchet, un mot « artificiellement créé par les Européens durant le 19e siècle ». Il réunit des peuples que leurs gènes, leurs langues et leurs cultures distinguent ; les explorateurs les appelaient d'ailleurs aussi bien nains, dwarfs ou Zwerge.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 18 octobre 2026 puis le 3 novembre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée ; les paragraphes sont numérotés dans la marge.",
+                "page": "§ 3 et § 6"
+              }
+            ]
           }
         ]
       },
@@ -471,6 +707,102 @@
                 "source_kind": "ngo",
                 "page": "p. 5 et p. 29, note 2",
                 "notes": "Rapport de Minority Rights Group International, Londres, 2000 ; lu dans la copie en ligne le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Peuples autochtones",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Le nom qu'emploient les Batwa et les instances internationales pour défendre leurs droits.",
+        "periodLabel": "En usage depuis 1994",
+        "accounts": [
+          {
+            "period": {
+              "from": 1994,
+              "to": 2000,
+              "label": "Depuis juillet 1994"
+            },
+            "era": "modern",
+            "statement": "Le nom peuples autochtones est celui sous lequel des Batwa du Rwanda participent, pour la première fois en juillet 1994, au groupe de travail des Nations unies sur les populations autochtones ; des Batwa du Congo les rejoignent en juillet 1998, selon Jerome Lewis. Les Batwa se reconnaissent clairement comme un peuple autochtone, écrit-il.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Batwa Pygmies of the Great Lakes Region",
+                "author": "Jerome Lewis",
+                "year": 2000,
+                "url": "https://citizenshiprightsafrica.org/wp-content/uploads/2001/03/Lewis-Batwa-report-MRG-2000.pdf",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "notes": "Rapport de Minority Rights Group International, Londres, 2000 ; lu dans la copie en ligne le 11 octobre 2026, relu le 3 novembre 2026. Les pages sont celles du rapport imprimé.",
+                "page": "p. 6-7"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2006,
+              "label": "Rapport adopté en 2003, résumé publié en 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom peuples autochtones s'applique aux Batwa dans le rapport que la Commission africaine des droits de l'homme et des peuples adopte en novembre 2003 : elle les cite parmi les peuples qui se disent autochtones au Burundi, au Rwanda, en Ouganda et en république démocratique du Congo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Indigenous Peoples in Africa: The Forgotten Peoples? The African Commission's work on indigenous peoples in Africa",
+                "author": "Commission africaine des droits de l'homme et des peuples et IWGIA",
+                "year": 2006,
+                "url": "https://achpr.au.int/sites/default/files/files/2022-08/achprwgipreportsummaryversioneng.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 9-10 et p. 15",
+                "notes": "Résumé, publié en 2006 par la Commission africaine des droits de l'homme et des peuples et l'IWGIA, du rapport de son groupe de travail sur les populations autochtones, adopté par la Commission en novembre 2003 (p. 9-10). Lu sur le site de la Commission le 3 novembre 2026. Le tableau de la page 15 donne des exemples de peuples qui se disent autochtones : au Cameroun les Bakola ou Bagyeli, les Baka et les Medzan, au Gabon les Baka, au Burundi, au Rwanda et en Ouganda les Batwa, en république démocratique du Congo les Batwa, les Bacwa et les Bambuti."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Historiquement marginalisés",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le gouvernement du Rwanda",
+        "shortLine": "L'expression du gouvernement rwandais pour les Batwa et d'autres groupes vulnérables, depuis le génocide de 1994.",
+        "periodLabel": "Écrit depuis 2008 ; en usage au Rwanda",
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "Décembre 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom « populations historiquement marginalisées » est celui que le gouvernement du Rwanda emploie pour les Batwa et d'autres groupes vulnérables, selon la Commission africaine des droits de l'homme et des peuples, en mission au Rwanda en décembre 2008. Depuis le génocide de 1994, la distinction entre Bahutu, Batutsi et Batwa y est interdite, et la mentionner est un délit de « divisionnisme » ; le gouvernement ne reconnaît donc pas les Batwa comme un peuple autochtone distinct. C'est la plus ancienne trace de ce nom que nous connaissons.",
+            "aspect": "imposition",
+            "formAsWritten": "historically marginalised populations",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Le gouvernement du Rwanda",
+                "role": "emploie cette expression"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Rapport du Groupe de travail de la Commission africaine sur les populations/communautés autochtones : mission en République du Rwanda, 1er-5 décembre 2008",
+                "url": "https://achpr.au.int/sites/default/files/files/2022-10/achpr47misrepspecmecindpoprwanda2008eng.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "author": "Commission africaine des droits de l'homme et des peuples",
+                "year": 2010,
+                "page": "p. 9 et p. 18-19",
+                "notes": "Rapport de mission de la Commission africaine des droits de l'homme et des peuples, adopté à sa 47e session ordinaire, en mai 2010, et publié avec l'IWGIA ; lu en anglais sur le site de la Commission le 3 novembre 2026. Pages 18-19 : la distinction entre Bahutu, Batutsi et Batwa est proscrite et sa mention est un délit de « divisionnisme » ; le gouvernement range les Batwa parmi les « populations historiquement marginalisées ». Page 17 : les Twa font moins de 2 % de la population. Page 29 : selon l'UNPO, environ 10 000 Twa, plus du tiers des Twa du Rwanda, ont été tués en 1994, et autant ont fui le pays ; à la fin des années 1980, les derniers Twa de la forêt ont été expulsés du parc des Volcans, de la forêt de Nyungwe et de celle de Gishwati."
               }
             ]
           }

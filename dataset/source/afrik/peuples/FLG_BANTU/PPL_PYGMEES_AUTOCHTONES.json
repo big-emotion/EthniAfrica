@@ -11,82 +11,101 @@
       "exonyms": [
         "Pygmée",
         "Pygmées",
-        "Autochtones",
-        "Twa (terme generique parfois applique abusivement)",
-        "Aka (variante pour les Baka du Congo)"
+        "Négrilles",
+        "Quatre B",
+        "Peuples autochtones",
+        "Populations marginales"
       ],
-      "spellingAliases": ["Pigmée", "Pigmées"],
-      "originOfExonyms": "Le mot Pygmée vient du latin Pygmaei, lui-même tiré du grec pugmaios, « homme grand comme le poing », de pugmê, le poing, puis la coudée, selon le Dictionnaire de l'Académie française. Chez Homère, il désigne déjà un peuple de légende, haut d'une coudée, que les grues attaquent en migrant, selon l'anthropologue Serge Bahuchet. À la fin du XIXe siècle, des explorateurs l'ont donné à des peuples de petite taille d'Afrique centrale, dont les chasseurs-cueilleurs des forêts, selon le même dictionnaire.",
-      "whyProblematic": "Le terme Pygmee est considere comme devalorisant et colonial. Il est percu comme un attribut physique reducteur et nie l'identite culturelle et ethnique propre a chaque groupe. Il a ete utilise historiquement pour justifier discrimination et exclusion sociale. Les organisations de droits des peuples autochtones (Forest Peoples Programme, IWGIA) recommandent d'utiliser les noms propres de chaque groupe : Baka, Bagyeli, Bedzan, Aka, Mbuti, etc.",
-      "contemporaryUsage": "Le terme Pygmee est progressivement abandonne au profit des auto-appellations specifiques. Au Cameroun, les termes officiels et militants privilegient Peuples autochtones ou Chasseurs-cueilleurs forestiers. Les organisations internationales (ONU, UNESCO, Greenpeace Afrique) utilisent Peuples autochtones. Les Baka se nomment aussi Bayaka, les Bagyeli Bakola et les Bedzan Medzan.",
-      "linguisticFamily": "Bantou (langues baka et bagyeli), avec influences de langues du bassin du Congo",
-      "ethnoLinguisticGroup": "Chasseurs-cueilleurs forestiers d'Afrique centrale ; trois groupes principaux au Cameroun : Baka, Bagyeli/Bakola, Bedzan/Medzan",
-      "historicalRegion": "Forets tropicales du bassin du Congo : sud-est et est du Cameroun, nord du Gabon, nord de la Republique du Congo, sud-ouest de la Republique centrafricaine",
+      "spellingAliases": [
+        "Pigmée",
+        "Pigmées",
+        "Pigmy",
+        "BBBB",
+        "Medzan",
+        "Bedzang",
+        "Bagyéli"
+      ],
+      "originOfExonyms": "Le mot Pygmée vient du latin Pygmaei, lui-même tiré du grec pugmaios, « homme grand comme le poing », de pugmê, le poing, puis la coudée ; il entre en français au XIIIe siècle, selon le Dictionnaire de l'Académie française. Dans l'Iliade d'Homère, il désigne un peuple de légende que les grues attaquent en migrant. À la fin du XIXe siècle, des explorateurs européens l'ont donné à des peuples d'Afrique centrale, dont les chasseurs-cueilleurs des forêts : pour Marine Robillard et Serge Bahuchet, c'est un mot « artificiellement créé par les Européens » qui réunit des peuples très différents. En 1879, l'anthropologue E.-T. Hamy a proposé à Paris un autre nom savant, Négrilles. Au Cameroun, le nom Quatre B (« BBBB ») réunit aujourd'hui les Baka, les Bagyeli, les Bakola et les Bedzan.",
+      "whyProblematic": "Le mot Pygmée est jugé péjoratif par beaucoup de gens, dont une grande partie des peuples concernés, écrit Aili Pyhälä dans un rapport de l'IWGIA de 2012. Il fait croire à une seule culture pygmée et efface la diversité de ces peuples ; le nom le plus juste, selon elle, est celui de chaque peuple : Baka, Bagyeli, Aka, Mbuti. Marine Robillard et Serge Bahuchet rappellent que le mot renvoie à la taille et que les objections viennent surtout des organisations qui défendent ces peuples. En république du Congo, la loi du 25 février 2011 assimile son emploi à une injure. La Commission africaine des droits de l'homme et des peuples l'emploie encore en 2007 dans son rapport sur le Gabon, tout en reconnaissant son caractère péjoratif, faute d'un autre mot.",
+      "contemporaryUsage": "Au Cameroun, on emploie de plus en plus l'expression « peuples autochtones » ou le nom de chaque peuple. Depuis 2003, la Commission africaine des droits de l'homme et des peuples cite les Bakola ou Bagyeli, les Baka et les Medzan parmi les peuples du Cameroun qui se disent autochtones, et les Baka parmi ceux du Gabon. En 2009, le ministre camerounais des Affaires sociales les rangeait parmi les « populations marginales », selon un document du ministère des Forêts de 2011. L'UNESCO parle en 2025 des Baka comme de « peuples autochtones semi-nomades ». Marine Robillard et Serge Bahuchet relèvent aussi le nom Quatre B, ou « BBBB », pour l'ensemble Baka, Bagyeli, Bakola et Bedzan. Les catalogues de langues donnent d'autres noms à la langue baka, comme Babinga ou Bayaka ; les Bayaka ou Aka de Centrafrique et du Congo forment pourtant un autre peuple.",
+      "linguisticFamily": "Plusieurs familles : le baka est une langue oubanguienne, le gyele des Bagyeli et des Bakola une langue bantoue du groupe A.80, et les Bedzan parlent un dialecte du tikar, une langue bantoïde qui n'est pas bantoue, selon Glottolog et Marine Robillard et Serge Bahuchet.",
+      "ethnoLinguisticGroup": "Chasseurs-cueilleurs des forêts d'Afrique centrale ; au Cameroun, trois groupes distincts : les Baka, les Bagyeli ou Bakola, et les Bedzan ou Medzan.",
+      "historicalRegion": "Forêts du sud-est du Cameroun, du nord de la république du Congo, du nord du Gabon et du sud-ouest de la Centrafrique (Baka) ; région de Lolodorf, Bipindi et Kribi, près de la côte camerounaise (Bagyeli et Bakola) ; une région de savane du Cameroun (Bedzan).",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null,
       "currentCountries": ["CMR", "GAB", "COG", "CAF"]
     },
     "ethnicities": ["Baka", "Bagyeli", "Bakola", "Bedzan", "Medzan"],
     "origins": {
-      "ancientOrigins": "Les etudes genetiques indiquent que les ancetres des chasseurs-cueilleurs forestiers d'Afrique centrale se sont separes des autres populations humaines il y a au moins 60 000 ans, constituant parmi les lignees humaines les plus anciennes d'Afrique. Des sources antiques grecques (Herodote, Homere) font reference a des peuples de petite stature en Afrique subsaharienne. Leurs ancetres ont toujours habite les forets denses d'Afrique centrale, accumulant des connaissances ecologiques exceptionnelles.",
-      "formationPeriod": "Presence attestee dans les forets du bassin du Congo depuis des millenaires. L'identite ethnique distincte des Baka, Bagyeli et Bedzan s'est cristallisee au contact progressif avec les peuples agriculteurs bantu arrivant depuis le nord et l'ouest.",
+      "ancientOrigins": "Selon des études citées par Aili Pyhälä, les ancêtres des chasseurs-cueilleurs d'Afrique centrale se seraient séparés des autres populations humaines il y a environ 70 000 ans, avant de se diviser entre les peuples d'aujourd'hui. Les Baka considèrent la forêt comme leur lieu d'origine, écrit-elle. Bien avant le mot pygmée, l'historien grec Hérodote rapporte le récit de jeunes Nasamons capturés, au-delà du désert de Libye, par des « hommes petits » à la peau noire ; Homère parle déjà des Pygmées, un peuple de légende.",
+      "formationPeriod": null,
       "migrationRoutes": [
-        "Forets du bassin du Congo (stabilite historique relative)",
-        "Mouvements saisonniers a l'interieur des forets selon les ressources disponibles"
+        "Déplacements saisonniers dans la forêt : pendant la saison sèche, de décembre à mars, de longues expéditions de chasse et de cueillette appelées molongo (Baka)",
+        "Installation le long des routes, depuis plus d'un demi-siècle, à la suite des programmes de sédentarisation (Baka)"
       ],
       "historicalSettlementZones": [
-        "Forets du sud et de l'est du Cameroun (Baka)",
-        "Zone cotiere du sud-ouest Cameroun entre Kribi et le Mont Cameroun (Bagyeli/Bakola)",
-        "Zone de la Haute-Sanaga au centre-nord Cameroun (Bedzan/Medzan)",
-        "Nord du Gabon et de la Republique du Congo (Baka)"
+        "Forêts du sud-est du Cameroun (Baka)",
+        "Nord de la république du Congo, nord du Gabon et sud-ouest de la Centrafrique (Baka)",
+        "Région de Lolodorf, Bipindi et Kribi, au sud-ouest du Cameroun (Bagyeli et Bakola)",
+        "Région de savane du Cameroun (Bedzan)"
       ],
-      "unificationsOrDivisions": "Les trois groupes principaux du Cameroun (Baka, Bagyeli, Bedzan) sont distincts et ne constituent pas une entite politique unifiee. Ils partagent un mode de vie de chasseurs-cueilleurs semi-nomades et des discriminations communes de la part des populations agricoles voisines.",
-      "externalInfluences": "Contact de longue date avec les agriculteurs bantu (relations de dependance economique et d'echanges inegaux). Colonisation europeenne ayant impose des limites territoriales ignorant les droits fonciers autochtones. Expansion de l'exploitation forestiere industrielle depuis le XXe siecle. Politiques de conservation (aires protegees, reserves) ayant restreint l'acces aux territoires ancestraux.",
-      "majorHistoricalEvents": "Creation de nombreuses aires protegees au Cameroun et dans la region ayant reduit les territoires de chasse. Sedentarisation forcee ou incitee depuis les annees 1970-1980. Absence de reconnaissance juridique des droits fonciers autochtones au Cameroun (confirmee par le droit national encore en 2025 selon Greenpeace Afrique). Inscription de la Reserve de faune du Dja (UNESCO, 1987) sans consultation adequately des communautes Baka riveraines."
+      "unificationsOrDivisions": "Les Baka, les Bagyeli ou Bakola et les Bedzan ou Medzan sont trois groupes très distincts, selon Aili Pyhälä, et ne forment pas une entité politique. Ils parlent des langues de familles différentes. Marine Robillard et Serge Bahuchet notent que les groupes dits pygmées ignorent souvent l'existence des autres groupes semblables : c'est de l'extérieur qu'on les a réunis sous un seul nom.",
+      "externalInfluences": "Les Baka échangent depuis longtemps avec les agriculteurs bantous voisins, dont beaucoup dépendent aujourd'hui pour leurs besoins de base, selon Aili Pyhälä. Le gouvernement camerounais et les missionnaires jugeaient les « pygmées » à « un stade d'évolution primitif » et ont lancé, il y a plus d'un demi-siècle, un programme de sédentarisation le long des routes. Presque tout le territoire du Sud-Est a ensuite été concédé à des sociétés forestières et minières ou classé en aires protégées.",
+      "majorHistoricalEvents": "La réserve de faune du Dja est réserve de biosphère depuis 1981 et inscrite au patrimoine mondial de l'UNESCO depuis 1987 ; l'UNESCO relève le manque d'inclusion des Baka dans les politiques de conservation. Des chercheurs liés à l'IWGIA ont décrit en 2020 des violences d'écogardes contre des Baka au nom de la conservation. En 2025, aucun texte camerounais ne garantit encore la reconnaissance juridique des peuples autochtones, selon Greenpeace Afrique."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Organisation egalitaire et consensuelle au sein des groupes familiaux. Prise de decision collective par consensus, absence de hierarchie politique formalisee. Pas de chefferies institutionnalisees (contrairement aux Bantu voisins).",
-      "clanOrganization": "Organisation en groupes familiaux elargis mobiles, reorientant les alliances selon les ressources et les saisons. Les Baka vivent en campements (mondundu) de plusieurs families.",
+      "traditionalPoliticalSystem": "Les Baka ont depuis toujours leurs représentants politiques, des chefs de village, écrit Aili Pyhälä ; mais l'État camerounais ne reconnaît pas leurs chefferies, et certains de ses agents ignoraient même qu'ils avaient des chefs. Sans chefferie reconnue, ils n'ont presque aucune place dans les décisions qui les concernent.",
+      "clanOrganization": "Selon Aili Pyhälä, les Baka vivaient traditionnellement en clans presque isolés, qui chassaient et cueillaient en se déplaçant dans la forêt ; ils partent encore en petits ou en grands groupes vers des campements forestiers.",
       "ageClassSystems": null,
-      "roleOfLineages": "Les lineages transmettent les savoirs ecologiques, les pratiques de chasse et les rituels. La transmission orale est fondamentale dans une culture essentiellement non ecrite.",
-      "religiousAuthority": "Mediateurs rituels charges de la communication avec les esprits de la foret (notamment Jengi chez les Baka). L'autorite spirituelle est distribuee et non centralisee."
+      "roleOfLineages": null,
+      "religiousAuthority": "Chez les Baka, la forêt abrite tous les esprits, dont Edjengui, leur dieu protecteur, selon Aili Pyhälä. L'UNESCO décrit Edjengi comme la divinité suprême, consultée pour les décisions importantes et invoquée dans des rituels réservés aux hommes initiés."
     },
     "languages": {
-      "mainLanguage": "Baka (groupe principal du Cameroun)",
-      "isoCodes": ["bkc", "bbk"],
-      "dialects": ["Bagyeli (Bakola)", "Bedzan (Medzan)", "Bayaka (Congo)"],
-      "vehicularRole": "Les communautes utilisent souvent la langue des populations Bantu voisines (Fang, Bulu, Ewondo) comme lingua franca pour les echanges commerciaux, ainsi que le francais dans le contexte camerounais. Les langues autochtones sont transmises oralement au sein des communautes."
+      "mainLanguage": "Baka (bkc)",
+      "isoCodes": ["bkc", "gyi"],
+      "dialects": [
+        "Gyele, langue des Bagyeli et des Bakola (gyi)",
+        "Parler tikar des Bedzan"
+      ],
+      "vehicularRole": "Les Baka parlent leur langue, une langue oubanguienne éloignée de celles de leurs voisins ; les Bagyeli et les Bakola parlent le gyele, une langue bantoue, et les Bedzan un dialecte du tikar, selon Marine Robillard et Serge Bahuchet. Au contact prolongé des Bantous voisins et des organismes d'aide, certains mots baka sont remplacés par leur équivalent français, observe Aili Pyhälä. En 2012, Plan Cameroun prévoyait des écoles pilotes où l'enseignement se ferait en baka."
     },
+    "externalIdentifiers": {},
     "culture": {
-      "majorRites": "Jengi (Baka) : ceremonie d'initiation des jeunes hommes a l'age adulte, impliquant une rencontre avec l'esprit de la foret Jengi qui se manifeste vetu de raphia. Luma : chants de remerciement a Jengi apres une chasse fructueuse. Mbouamboua : danse rituelle pratiquee lors des deces pour eloigner la malediction. Les Baka quittent le campement apres un deces et s'etablissent ailleurs.",
-      "symbols": "La foret est le symbole central de l'identite et de la spiritualite. Jengi, l'esprit de la foret, est la figure tutellaire des Baka. Le miel (poki) est hautement valorise culturellement et economiquement.",
-      "artsAndMusic": "Musique polyphonique vocale d'une grande sophistication, avec techniques de contrepoint et de vocalises caracteristiques ; etudiee et admiree par des musicologues du monde entier. Les femmes Baka pratiquent des chants collectifs importants pour la cohesion sociale. Instruments de musique : arc musical, tambours, sifflets. Anthropologue Shiho Hattori a repertorie environ 100 instruments et outils culturels baka.",
-      "spiritualities": "Croyance en Jengi, esprit tutellaire de la foret, intermediaire entre le dieu supreme Komba et les Baka. Jengi est omnipresent dans la foret et punit les transgresseurs. Le culte de Jengi integre la chasse, la vie communautaire, les rites de passage et les funerailles. La foret est sacree et source de toute vie."
+      "majorRites": "Les Baka pratiquent toujours leurs rituels et leurs initiations, écrit Aili Pyhälä. Selon l'UNESCO, certains rituels, où l'on invoque Edjengi, sont réservés aux hommes initiés ; lors des funérailles apparaissent les Embouamboua, les esprits des ancêtres, qui purifient les défunts.",
+      "symbols": "La forêt est la base de l'identité des Baka : ils la voient comme la source de toute nourriture, de toute guérison et de toute protection, et comme leur lieu d'origine, selon Aili Pyhälä. Détruire la forêt, écrit-elle, c'est détruire leur dieu.",
+      "artsAndMusic": "Les Baka pratiquent le chant polyphonique, comme les Aka plus au nord, dont le chant est inscrit au patrimoine culturel immatériel de l'UNESCO depuis 2008. Marine Robillard et Serge Bahuchet renvoient aux travaux de Susanne Fürniss pour la musique et les rituels des Baka.",
+      "spiritualities": "La forêt abrite les esprits des Baka, dont Edjengi ou Edjengui. La plupart des Baka refusent de se convertir à une religion venue d'ailleurs, selon Aili Pyhälä. Pour récolter le miel, ils emploient la fumée avec parcimonie, sans détruire les ruches, note l'UNESCO."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de royaumes ni de chefferies institutionnalisees. Les groupes vivent en communautes autonomes sans structures d'etat.",
-      "relationsWithNeighbors": "Relations de dependance economique et d'echanges inegaux avec les agriculteurs bantu voisins (Fang, Bulu, Ewondo au Cameroun). Les Baka fournissent produits de la foret (fruits, plantes medicinales, miel) en echange de produits manufactures et alimentaires. Cette relation est souvent asymetrique, les Baka etant marginalises et parfois traites comme serviteurs (indentured servants). Discriminations frequentes ; comparaisons degradantes aux animaux rapportees par des chercheurs.",
-      "conflictsOrAlliances": "Conflits recurrents avec les gardes eco-forestiers et la conservation imposee (restrictions d'acces aux forets ancestrales). Soutien de Forest Peoples Programme, IWGIA, Greenpeace Afrique, UNESCO pour la defense de leurs droits. En 2010, des leaders Baka et Bagyeli ont participe au Chelsea Flower Show de Londres pour sensibiliser sur leurs droits.",
+      "kingdomsOrChiefdoms": "Pas de royaume. Les chefs de village baka existent, mais l'État camerounais ne reconnaît que des chefferies enregistrées, dites de troisième degré, que les Baka n'obtiennent presque jamais, selon Aili Pyhälä.",
+      "relationsWithNeighbors": "Les Baka échangent avec les agriculteurs bantous voisins et dépendent souvent d'eux depuis leur installation le long des routes, selon Aili Pyhälä. Marine Robillard et Serge Bahuchet décrivent une relation où les voisins méprisent ces peuples tout en admirant leurs pouvoirs magiques. Des représentants de l'État et des villageois voisins ont traité des Baka de « chimpanzés », rapportent Catherine Clarke et Simon Hoyte en 2020. Au Gabon, la Commission africaine a constaté en 2007 que des « Pygmées » vivent sous le contrôle de « maîtres bantous ».",
+      "conflictsOrAlliances": "Des écogardes armés frappent et dépouillent des Baka au nom de la conservation, selon des témoignages recueillis par Catherine Clarke et Simon Hoyte en 2020. Des organisations comme l'IWGIA et le Forest Peoples Programme soutiennent leurs droits.",
       "diaspora": null
     },
     "demography": {
-      "totalPopulation": 100000,
-      "referenceYear": 2025,
-      "source": "Baka : environ 40 000 a 70 000 au Cameroun, Gabon et Congo (Ritimo/Forest Peoples Programme, 2020). Bagyeli : quelques milliers. Bedzan : quelques centaines. Estimation totale pour le Cameroun : environ 100 000 personnes tous groupes confondus.",
+      "totalPopulation": null,
+      "referenceYear": 2012,
+      "source": "Il n'existe pas de recensement officiel des Baka au Cameroun, note Aili Pyhälä en 2012. Elle estime les Baka à 50 000 à 70 000 personnes, dont 40 000 à 60 000 au Cameroun. La même année, Marine Robillard et Serge Bahuchet estiment les Baka à 30 000 à 40 000, les Bakola ou Bagyeli à environ 4 000 et les Bedzan à 400 à 500. Catherine Clarke et Simon Hoyte donnent en 2020 plus de 40 000 Baka.",
       "distributionByCountry": [
         {
           "country": "CMR",
-          "population": 75000
+          "population": null,
+          "note": "Baka du sud-est, Bagyeli et Bakola de la région de Kribi, Bedzan d'une région de savane. Selon Aili Pyhälä, 40 000 à 60 000 Baka vivent au Cameroun (estimation de 2012)."
         },
         {
           "country": "GAB",
-          "population": 15000
+          "population": null,
+          "note": "Baka du nord du pays, cités par la Commission africaine en 2007 parmi les peuples pygmées du Gabon."
         },
         {
           "country": "COG",
-          "population": 8000
+          "population": null,
+          "note": "Baka du nord du pays."
         },
         {
           "country": "CAF",
-          "population": 2000
+          "population": null,
+          "note": "Baka du sud-ouest du pays, selon Aili Pyhälä."
         }
       ]
     },
@@ -94,30 +113,35 @@
       {
         "title": "La Conservation et le peuple Baka au Cameroun – Ritimo, 2020",
         "url": "https://www.ritimo.org/Violence-corruption-et-fausses-promesses-La-Conservation-et-le-peuple-Baka-au",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "notes": "Traduction française, publiée par Ritimo le 19 août 2020, d'un article de Catherine Clarke et Simon Hoyte paru sur le site de l'IWGIA le 26 juin 2020. Lue le 3 novembre 2026 : plus de 40 000 Baka ; des écogardes armés qui ciblent les Baka au nom de la conservation ; des représentants de l'État et des voisins qui les traitent de « chimpanzés »."
       },
       {
         "title": "Gardiens de la forêt : les Baka et l'esprit vivant du Dja",
         "url": "https://www.unesco.org/fr/articles/gardiens-de-la-foret-les-baka-et-lesprit-vivant-du-dja",
         "tier": "official",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": "Article de l'UNESCO publié le 30 septembre 2025 et mis à jour le 10 novembre 2025, sans auteur indiqué ; lu le 3 novembre 2026. Il présente Edjengi, les Embouamboua, le chant polyphonique et la récolte du miel, et rappelle que la réserve du Dja est inscrite au patrimoine mondial depuis 1987."
       },
       {
         "title": "Statut des Peuples Autochtones – Greenpeace Afrique, 2025",
         "url": "https://www.greenpeace.org/africa/fr/les-blogs/58654/peuples-autochtones-trois-decennies-dattente-pour-une-reconnaissance-legale-et-juridique/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "notes": "Article de Marcial Nzemie et Stella Tchoukep, Greenpeace Afrique, Yaoundé, 8 août 2025 ; lu le 3 novembre 2026. Il constate qu'après plus de trente ans de débat, aucun texte ne garantit encore la reconnaissance des peuples autochtones au Cameroun."
       },
       {
         "title": "Quel avenir pour les Baka ? Droits et moyens de subsistance des peuples autochtones dans le Sud-Est du Cameroun",
         "url": "https://iwgia.org/images/publications/0584_informe_13_fre_opt.pdf",
         "tier": "official",
-        "source_kind": "ngo"
+        "source_kind": "ngo",
+        "notes": "Rapport d'Aili Pyhälä, IWGIA, Plan Finlande et Plan Cameroun, rapport 13, 2012, traduit de l'anglais par Madeleine Pérusse ; lu le 3 novembre 2026. Pages 14 à 16 : territoires, nombre et sédentarisation des Baka ; page 18 : leurs chefs ; page 23 : la forêt et Edjengui."
       },
       {
         "title": "Des leaders Baka et Bagyeli exposent les problemes – Forest Peoples Programme, 2010",
         "url": "https://www.forestpeoples.org/fr/publications-resources/news/article/des-leaders-baka-et-bagyeli-exposent-les-problemes-de-leur-forets-aupres-des-medias-et-du-public/",
         "tier": "referenced",
-        "source_kind": "ngo"
+        "source_kind": "ngo",
+        "notes": "Article d'actualité du Forest Peoples Programme, 2010."
       },
       {
         "title": "Dictionnaire de l'Académie française, 1re édition (1694), entrée « pigmée » renvoyant à « pygmée »",
@@ -125,11 +149,114 @@
         "tier": "referenced",
         "source_kind": "linguistic_reference",
         "notes": "Atteste la graphie ancienne « pigmée »."
+      },
+      {
+        "title": "Glottolog — Baka (Cameroon) (baka1272)",
+        "url": "https://glottolog.org/resource/languoid/id/baka1272",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max Planck d'anthropologie évolutionniste, lu le 3 novembre 2026. Le baka (code bkc) y est classé parmi les langues oubanguiennes (branche Mundu-Baka), et non parmi les langues bantoues ; il est parlé au Cameroun, au Gabon, en république du Congo et en Centrafrique. Autres noms relevés : Babinga, Bayaka, Bayaga, Bibaya, Pygmées de l'Est."
+      },
+      {
+        "title": "Glottolog — Gyele (gyel1242)",
+        "url": "https://glottolog.org/resource/languoid/id/gyel1242",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max Planck d'anthropologie évolutionniste, lu le 3 novembre 2026. Le gyele (code gyi), langue des Bagyeli et des Bakola, y est classé parmi les langues bantoues du groupe makaa-njem (A.80) ; il est parlé au Cameroun et en Guinée équatoriale. Autres noms relevés : Bagyele, Bagiele, Bajele, Bakola, Bogyeli, Gieli."
+      },
+      {
+        "title": "Glottolog — Tikar (tika1246)",
+        "url": "https://glottolog.org/resource/languoid/id/tika1246",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max Planck d'anthropologie évolutionniste, lu le 3 novembre 2026. Le tikar (code tik), parlé au Cameroun, y est classé parmi les langues bantoïdes du Nord, en dehors des langues bantoues. Le catalogue ne donne pas d'entrée à part pour le parler des Bedzan."
+      },
+      {
+        "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+        "author": "Marine Robillard et Serge Bahuchet",
+        "year": 2012,
+        "url": "https://journals.openedition.org/africanistes/4253",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 18 octobre 2026 puis le 3 novembre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée ; les paragraphes sont numérotés dans la marge. Lus pour ce chapitre : le tableau 1 (noms, langues et nombre des groupes), les § 4, 9, 21, 24, 36, 40, 46 et 48-49."
+      },
+      {
+        "title": "Indigenous Peoples in Africa: The Forgotten Peoples? The African Commission's work on indigenous peoples in Africa",
+        "author": "Commission africaine des droits de l'homme et des peuples et IWGIA",
+        "year": 2006,
+        "url": "https://achpr.au.int/sites/default/files/files/2022-08/achprwgipreportsummaryversioneng.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Résumé, publié en 2006 par la Commission africaine des droits de l'homme et des peuples et l'IWGIA, du rapport de son groupe de travail sur les populations autochtones, adopté par la Commission en novembre 2003 (p. 9-10). Lu sur le site de la Commission le 3 novembre 2026. Le tableau de la page 15 donne des exemples de peuples qui se disent autochtones : au Cameroun les Bakola ou Bagyeli, les Baka et les Medzan, au Gabon les Baka, au Burundi, au Rwanda et en Ouganda les Batwa, en république démocratique du Congo les Batwa, les Bacwa et les Bambuti."
+      },
+      {
+        "title": "Report of the African Commission's Working Group on Indigenous Populations/Communities: Mission to the Gabonese Republic, 15-30 September 2007",
+        "url": "https://achpr.au.int/sites/default/files/files/2022-10/misrepspecmecindiggabon2007eng.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Rapport de mission de la Commission africaine des droits de l'homme et des peuples au Gabon, du 15 au 30 septembre 2007 ; lu sur le site de la Commission le 3 novembre 2026. Page 10 : les Baka, les Akowa, les Bekui, les Babinga, les Bambongo et les Barimba sont les Pygmées du Gabon ; le rapport emploie le mot « Pygmy » faute d'un autre, tout en le sachant péjoratif."
+      },
+      {
+        "title": "Plan pour les peuples autochtones et vulnérables (PPAV) du projet de conservation et d'utilisation durable de la forêt de Ngoyla-Mintom",
+        "url": "https://documents1.worldbank.org/curated/en/364541468017355484/pdf/IPP5410CAM0FR0projet0de0conservation.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Document du ministère des Forêts et de la Faune du Cameroun, Yaoundé, 24 octobre 2011, publié par la Banque mondiale ; lu le 3 novembre 2026. Page 17 : il cite le ministre des Affaires sociales, en 2009, pour qui les populations autochtones sont des « populations marginales », « notamment des Pygmées Baka, Bakola, Bagyéli et Bedzang ». Page 18 : les Bakola et Bagyéli vivent dans la zone de Lolodorf, Bipindi et Kribi. Page 20 : les Baka de Ngoyla et Mintom sont estimés à environ 3 000 personnes, faute de recensement."
+      },
+      {
+        "title": "Histoires, livre II, chapitre 32",
+        "author": "Hérodote, texte grec et traduction anglaise d'A. D. Godley publiés par Perseus",
+        "year": 1920,
+        "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0125%3Abook%3D2%3Achapter%3D32",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "livre II, chapitre 32",
+        "notes": "Texte grec de l'édition de Cambridge (Harvard University Press, 1920), lu sur le site de la bibliothèque numérique Perseus (université Tufts) le 3 novembre 2026, avec la traduction anglaise d'A. D. Godley. Hérodote rapporte le récit de jeunes Nasamons, un peuple de Libye, capturés au-delà du désert par des « hommes petits, plus petits que des hommes de taille moyenne » (andras mikrous), à la peau noire, près d'un grand fleuve où vivent des crocodiles. Le passage n'emploie pas le mot pygmée."
+      },
+      {
+        "title": "Iliade, chant III (texte grec)",
+        "author": "Homère, texte des Homeri Opera de D. B. Monro et T. W. Allen (Oxford, 1920), publié par Perseus",
+        "year": 1920,
+        "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0133%3Abook%3D3%3Acard%3D1",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "chant III, vers 3-6",
+        "notes": "Texte grec de l'édition d'Oxford de 1920, lu sur le site de la bibliothèque numérique Perseus (université Tufts) le 3 novembre 2026. Aux vers 3 à 6, les grues qui fuient l'hiver volent vers les flots de l'Océan et portent « aux hommes Pygmées » (andrasi Pygmaioisi) le meurtre et la mort."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Baka, les Bagyeli ou Bakola et les Bedzan sont des peuples des forêts du Cameroun et des pays voisins, longtemps appelés Pygmées, un mot venu d'une légende grecque.",
+      "followUp": "Pourquoi le mot Pygmée est-il contesté, et comment ces peuples se nomment-ils ?"
+    },
+    "gaps": [
+      {
+        "field": "content.appellations.selfAppellation",
+        "reason": "Ces peuples n'ont pas de nom commun qu'ils se donneraient eux-mêmes dans les sources que nous avons lues : Marine Robillard et Serge Bahuchet notent que la catégorie « pygmée » n'a pas de nom dans les langues locales, et que ces groupes ignorent souvent l'existence des autres. Chacun a son propre nom, comme Bagyeli ou Bakola."
+      },
+      {
+        "field": "content.origins.formationPeriod",
+        "reason": "Nous n'avons pas trouvé de source qui date la formation de ces peuples ; nous avons consulté le rapport d'Aili Pyhälä, l'article de Marine Robillard et Serge Bahuchet et Glottolog."
+      },
+      {
+        "field": "content.organization.ageClassSystems",
+        "reason": "Nous n'avons pas trouvé de source qui décrive des classes d'âge chez les Baka, les Bagyeli ou les Bedzan ; nous avons consulté le rapport d'Aili Pyhälä, l'article de l'UNESCO sur les Baka du Dja et l'article de Marine Robillard et Serge Bahuchet."
+      },
+      {
+        "field": "content.organization.roleOfLineages",
+        "reason": "Nous n'avons pas trouvé de source qui décrive le rôle des lignages chez ces peuples ; nous avons consulté les mêmes sources."
+      },
+      {
+        "field": "content.historicalRole.diaspora",
+        "reason": "Nous n'avons pas trouvé de source qui parle de communautés baka, bagyeli ou bedzan installées hors de leur région ; nous avons consulté le rapport d'Aili Pyhälä, les rapports de la Commission africaine des droits de l'homme et des peuples et l'article de Marine Robillard et Serge Bahuchet."
+      },
+      {
+        "field": "content.demography.totalPopulation",
+        "reason": "Il n'existe pas de recensement de ces peuples, et les estimations publiées varient beaucoup ; nous les donnons avec leurs auteurs plutôt que d'additionner des chiffres d'années et de sources différentes."
       }
     ]
   },
   "nameHistory": {
-    "summary": "Le mot Pygmée réunit, de l'extérieur, plusieurs peuples des forêts d'Afrique centrale ; ce n'est pas le nom d'un peuple. Cette fiche parle de ceux du Cameroun et des pays voisins : les Baka, les Bedzan et les Bagyeli, qui se nomment eux-mêmes Bagyeli ou Bakola selon les régions. Le mot vient d'une légende grecque, et des Européens l'ont appliqué à ces peuples ; on lui préfère aujourd'hui le nom de chaque peuple ou l'expression « peuples autochtones ». Les sources que nous avons lues ne disent pas comment les Baka et les Bedzan se nomment eux-mêmes. Nous présentons plus bas l'histoire de ces noms.",
+    "summary": "Le mot Pygmée réunit, de l'extérieur, plusieurs peuples des forêts d'Afrique centrale ; ce n'est pas le nom d'un peuple. Cette fiche parle de ceux du Cameroun et des pays voisins : les Baka, les Bedzan et les Bagyeli, qui se nomment eux-mêmes Bagyeli ou Bakola selon les régions. Le mot vient d'une légende grecque, et des Européens l'ont appliqué à ces peuples ; on lui préfère aujourd'hui le nom de chaque peuple ou l'expression « peuples autochtones ». D'autres noms existent, comme Négrilles ou Quatre B. Les sources que nous avons lues ne disent pas comment les Baka et les Bedzan se nomment eux-mêmes. Nous présentons plus bas l'histoire de ces noms.",
     "names": [
       {
         "nameText": "Bagyeli",
@@ -295,6 +422,29 @@
           },
           {
             "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "2007"
+            },
+            "era": "modern",
+            "statement": "Le nom Pygmée est encore employé en 2007 par la Commission africaine des droits de l'homme et des peuples dans son rapport sur le Gabon, « faute d'un autre mot », tout en le sachant péjoratif. Elle y range les Baka parmi les Pygmées du Gabon.",
+            "aspect": "usage",
+            "formAsWritten": "Pygmy",
+            "sources": [
+              {
+                "title": "Report of the African Commission's Working Group on Indigenous Populations/Communities: Mission to the Gabonese Republic, 15-30 September 2007",
+                "url": "https://achpr.au.int/sites/default/files/files/2022-10/misrepspecmecindiggabon2007eng.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "author": "Commission africaine des droits de l'homme et des peuples",
+                "year": 2010,
+                "page": "p. 10",
+                "notes": "Rapport de mission au Gabon, du 15 au 30 septembre 2007, adopté en mai 2009 et publié en 2010 par la Commission africaine des droits de l'homme et des peuples avec l'IWGIA ; lu sur le site de la Commission le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1888,
               "to": 1889,
               "label": "1888-1889"
@@ -382,7 +532,7 @@
               "label": "1625"
             },
             "era": "polity",
-            "statement": "Le nom Pygmée apparaît, sous la forme anglaise Pigmy, dans une note que l'éditeur anglais Samuel Purchas ajoute en 1625 au récit du marin Andrew Battell : il y parle de « Pigmy Pongo-killers », des Pygmées tueurs de pongos, c'est-à-dire de gorilles. Battell décrit dans le même récit les Matimbas, un « petit peuple » de chasseurs du pays de Loango, dont les femmes tuent les pongos à l'arc. C'est la plus ancienne trace de ce nom pour des peuples d'Afrique centrale que le projet connaît. Ces peuples existaient bien avant lui.",
+            "statement": "Le nom Pygmée apparaît, sous la forme anglaise Pigmy, dans une note que l'éditeur anglais Samuel Purchas ajoute en 1625 au récit du marin Andrew Battell : il y parle de « Pigmy Pongo-killers », des Pygmées tueurs de pongos, c'est-à-dire de gorilles. Battell décrit dans le même récit les Matimbas, un « petit peuple » de chasseurs du pays de Loango, dont les femmes tuent les pongos à l'arc. C'est la plus ancienne trace de ce nom pour des peuples d'Afrique centrale que nous connaissons. Ces peuples existaient bien avant lui.",
             "formAsWritten": "Pigmy",
             "birth": true,
             "sources": [
@@ -404,7 +554,7 @@
               "to": null,
               "label": "Antiquité grecque"
             },
-            "statement": "Le nom Pygmée désigne d'abord, dans l'Iliade d'Homère, un peuple de légende, haut d'une coudée, que les grues attaquent en migrant, selon Serge Bahuchet. Plus tard, le philosophe grec Aristote place les Pygmées aux sources du Nil et affirme qu'ils ne sont pas une fable.",
+            "statement": "Le nom Pygmée désigne d'abord, dans l'Iliade d'Homère, un peuple de légende : au chant III, les grues qui fuient l'hiver volent vers les flots de l'Océan et portent « aux hommes Pygmées » le meurtre et la mort. Serge Bahuchet ajoute que ce peuple est haut d'une coudée. Plus tard, le philosophe grec Aristote place les Pygmées aux sources du Nil et affirme qu'ils ne sont pas une fable.",
             "before": true,
             "sources": [
               {
@@ -414,8 +564,18 @@
                 "url": "https://www.persee.fr/doc/cea_0008-0055_1993_num_33_129_2078",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 153-154",
-                "notes": "Cahiers d'études africaines, 33 (129), 1993, p. 153-181. Lu sur Persée le 18 octobre 2026, page par page ; les numéros sont ceux de la revue imprimée."
+                "notes": "Cahiers d'études africaines, 33 (129), 1993, p. 153-181. Lu sur Persée le 18 octobre 2026, page par page ; les numéros sont ceux de la revue imprimée.",
+                "page": "p. 153-154"
+              },
+              {
+                "title": "Iliade, chant III (texte grec)",
+                "author": "Homère, texte des Homeri Opera de D. B. Monro et T. W. Allen (Oxford, 1920), publié par Perseus",
+                "year": 1920,
+                "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0133%3Abook%3D3%3Acard%3D1",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chant III, vers 3-6",
+                "notes": "Texte grec de l'édition d'Oxford de 1920, lu sur le site de la bibliothèque numérique Perseus (université Tufts) le 3 novembre 2026. Aux vers 3 à 6, les grues qui fuient l'hiver volent vers les flots de l'Océan et portent « aux hommes Pygmées » (andrasi Pygmaioisi) le meurtre et la mort."
               }
             ]
           },
@@ -425,7 +585,7 @@
               "to": null,
               "label": "Sens du nom"
             },
-            "statement": "Le nom Pygmée vient du latin Pygmaei, lui-même tiré du grec pugmaios, « homme grand comme le poing, nain », de pugmê, le poing, puis la coudée, selon le Dictionnaire de l'Académie française. Le mot renvoie donc à la taille, comme le rappellent Marine Robillard et Serge Bahuchet.",
+            "statement": "Le nom Pygmée vient du latin Pygmaei, lui-même tiré du grec pugmaios, « homme grand comme le poing, nain », de pugmê, le poing, puis la coudée ; il entre en français au XIIIe siècle, selon le Dictionnaire de l'Académie française. Le mot renvoie donc à la taille, comme le rappellent Marine Robillard et Serge Bahuchet.",
             "aspect": "meaning",
             "sources": [
               {
@@ -435,7 +595,7 @@
                 "url": "https://www.dictionnaire-academie.fr/article/A9P5144",
                 "tier": "official",
                 "source_kind": "linguistic_reference",
-                "notes": "Entrée lue sur le site du Dictionnaire de l'Académie française le 18 octobre 2026."
+                "notes": "Entrée lue sur le site du Dictionnaire de l'Académie française le 18 octobre 2026, relue le 3 novembre 2026."
               },
               {
                 "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
@@ -446,6 +606,27 @@
                 "source_kind": "academic",
                 "page": "§ 6",
                 "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 18 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée ; les paragraphes sont numérotés dans la marge."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -499,
+              "to": -400,
+              "label": "Ve siècle avant notre ère"
+            },
+            "statement": "Le nom Pygmée n'apparaît pas dans le récit que rapporte l'historien grec Hérodote : de jeunes Nasamons, un peuple de Libye, traversent le désert et sont capturés par des « hommes petits, plus petits que des hommes de taille moyenne », à la peau noire, qui les mènent près d'un grand fleuve où vivent des crocodiles.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoires, livre II, chapitre 32",
+                "author": "Hérodote, texte grec et traduction anglaise d'A. D. Godley publiés par Perseus",
+                "year": 1920,
+                "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0125%3Abook%3D2%3Achapter%3D32",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "livre II, chapitre 32",
+                "notes": "Texte grec de l'édition de Cambridge (Harvard University Press, 1920), lu sur le site de la bibliothèque numérique Perseus (université Tufts) le 3 novembre 2026, avec la traduction anglaise d'A. D. Godley. Hérodote rapporte le récit de jeunes Nasamons, un peuple de Libye, capturés au-delà du désert par des « hommes petits, plus petits que des hommes de taille moyenne » (andras mikrous), à la peau noire, près d'un grand fleuve où vivent des crocodiles. Le passage n'emploie pas le mot pygmée."
               }
             ]
           }
@@ -487,7 +668,7 @@
               "to": 1879,
               "label": "5 février 1879"
             },
-            "statement": "Le nom Négrilles apparaît dans une communication de E.-T. Hamy à la Société d'anthropologie de Paris : il le propose « pour désigner cet ensemble ethnique », les peuples de petite taille de l'Afrique équatoriale. C'est la plus ancienne trace de ce nom que le projet connaît. Ces peuples existaient bien avant lui.",
+            "statement": "Le nom Négrilles apparaît dans une communication de E.-T. Hamy à la Société d'anthropologie de Paris : il le propose « pour désigner cet ensemble ethnique », les peuples de petite taille de l'Afrique équatoriale. C'est la plus ancienne trace de ce nom que nous connaissons. Ces peuples existaient bien avant lui.",
             "formAsWritten": "négrilles",
             "birth": true,
             "sources": [
@@ -531,7 +712,7 @@
               "label": "2012"
             },
             "era": "modern",
-            "statement": "Le nom Quatre B apparaît, sous les formes « BBBB » et « quatre B », chez Marine Robillard et Serge Bahuchet : au Cameroun, où le mot Pygmée est contesté, on désigne ainsi l'ensemble formé par les Baka, les Bagyeli, les Bakola et les Bedzan. C'est la plus ancienne trace de ce nom que le projet connaît. Ces peuples existaient bien avant lui.",
+            "statement": "Le nom Quatre B apparaît, sous les formes « BBBB » et « quatre B », chez Marine Robillard et Serge Bahuchet : au Cameroun, où le mot Pygmée est contesté, on désigne ainsi l'ensemble formé par les Baka, les Bagyeli, les Bakola et les Bedzan. C'est la plus ancienne trace de ce nom que nous connaissons. Ces peuples existaient bien avant lui.",
             "formAsWritten": "BBBB",
             "birth": true,
             "sources": [
@@ -542,7 +723,7 @@
                 "url": "https://journals.openedition.org/africanistes/4253",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "§ 5",
+                "page": "§ 4",
                 "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 18 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée ; les paragraphes sont numérotés dans la marge."
               }
             ]
@@ -603,6 +784,29 @@
           },
           {
             "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "2009"
+            },
+            "era": "modern",
+            "statement": "Le nom populations marginales est celui que retient en 2009 le ministre camerounais des Affaires sociales : pour lui, les populations autochtones sont des « populations marginales », « notamment des Pygmées Baka, Bakola, Bagyéli et Bedzang », mais aussi les Mbororo et les montagnards, selon un plan du ministère des Forêts de 2011.",
+            "aspect": "usage",
+            "formAsWritten": "populations marginales",
+            "sources": [
+              {
+                "title": "Plan pour les peuples autochtones et vulnérables (PPAV) du projet de conservation et d'utilisation durable de la forêt de Ngoyla-Mintom",
+                "url": "https://documents1.worldbank.org/curated/en/364541468017355484/pdf/IPP5410CAM0FR0projet0de0conservation.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "author": "Ministère des Forêts et de la Faune du Cameroun",
+                "year": 2011,
+                "page": "p. 17",
+                "notes": "Document du ministère des Forêts et de la Faune du Cameroun, Yaoundé, 24 octobre 2011, publié par la Banque mondiale ; lu le 3 novembre 2026. Page 17 : il cite le ministre des Affaires sociales, en 2009, pour qui les populations autochtones sont des « populations marginales », « notamment des Pygmées Baka, Bakola, Bagyéli et Bedzang ». Page 18 : les Bakola et Bagyéli vivent dans la zone de Lolodorf, Bipindi et Kribi. Page 20 : les Baka de Ngoyla et Mintom sont estimés à environ 3 000 personnes, faute de recensement."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 2011,
               "to": 2011,
               "label": "2011"
@@ -631,7 +835,7 @@
               "label": "Depuis 2003"
             },
             "era": "modern",
-            "statement": "Le nom peuples autochtones s'applique à ces peuples dans les instances internationales depuis 2003. Cette année-là, l'Union africaine examine les droits des populations autochtones en Afrique. Des représentants des Batwa et d'autres peuples dits pygmées participent aussi, depuis 2003, au groupe de travail des Nations unies sur les questions autochtones, à l'insistance du Groupe de travail international sur les affaires autochtones (IWGIA), selon Marine Robillard et Serge Bahuchet.",
+            "statement": "Le nom peuples autochtones s'applique à ces peuples dans les instances internationales depuis 2003. Cette année-là, la Commission africaine des droits de l'homme et des peuples adopte le rapport de son groupe de travail, qui cite les Bakola ou Bagyeli, les Baka et les Medzan parmi les peuples du Cameroun qui se disent autochtones. Des représentants des Batwa et d'autres peuples dits pygmées participent aussi, depuis 2003, au groupe de travail des Nations unies sur les questions autochtones, à l'insistance du Groupe de travail international sur les affaires autochtones (IWGIA), selon Marine Robillard et Serge Bahuchet.",
             "aspect": "usage",
             "sources": [
               {
@@ -643,6 +847,16 @@
                 "source_kind": "academic",
                 "page": "§ 77 et § 86",
                 "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 18 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée ; les paragraphes sont numérotés dans la marge."
+              },
+              {
+                "title": "Indigenous Peoples in Africa: The Forgotten Peoples? The African Commission's work on indigenous peoples in Africa",
+                "author": "Commission africaine des droits de l'homme et des peuples et IWGIA",
+                "year": 2006,
+                "url": "https://achpr.au.int/sites/default/files/files/2022-08/achprwgipreportsummaryversioneng.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 9-10 et p. 15",
+                "notes": "Résumé, publié en 2006 par la Commission africaine des droits de l'homme et des peuples et l'IWGIA, du rapport de son groupe de travail sur les populations autochtones, adopté par la Commission en novembre 2003 (p. 9-10). Lu sur le site de la Commission le 3 novembre 2026. Le tableau de la page 15 donne des exemples de peuples qui se disent autochtones : au Cameroun les Bakola ou Bagyeli, les Baka et les Medzan, au Gabon les Baka, au Burundi, au Rwanda et en Ouganda les Batwa, en république démocratique du Congo les Batwa, les Bacwa et les Bambuti."
               }
             ]
           },

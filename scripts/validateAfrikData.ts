@@ -4861,7 +4861,11 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // which it says to leave out until the fiche has been reviewed.
   // 5968 -> 5920 on 2026-10-19: ETNI-2135 records `spellingAliases` on 48
   // people fiches whose sources already attest those forms.
-  peuple: 5920,
+  // 5920 -> 5894 on 2026-11-03: premium pass on eight people fiches (Bulu,
+  // Ewondo, Gbaya, Lenje, Namwanga, forest peoples, Twa, Amazigh) adds
+  // `externalIdentifiers`, `peopleGroupId`/`peopleGroupLabel` and
+  // `spellingAliases` where the sources support them.
+  peuple: 5894,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
