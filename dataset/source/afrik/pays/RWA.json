@@ -3,9 +3,9 @@
   "nameFr": "Rwanda",
   "nameEn": "Rwanda",
   "nameOfficial": "République du Rwanda (Repubulika y'u Rwanda)",
-  "summary": "Le Rwanda tire probablement son nom du verbe « kwanda », s'étendre, en kinyarwanda, en référence au royaume qui l'a précédé. Monarchie centralisée depuis le XVe siècle, il passa sous protectorat allemand puis sous tutelle belge au sein du Ruanda-Urundi. Hutu, Tutsi et Twa y partagent une même langue, le kinyarwanda.",
-  "etymology": "Le nom \"Rwanda\" viendrait du verbe \"kwanda\", qui veut dire \"s'étendre\" en kinyarwanda, ou de \"ruanda\", qui voudrait dire \"pays\" ou \"territoire\". Le nom fait référence au royaume précolonial du Rwanda.",
-  "nameOriginActor": "Le nom vient du royaume précolonial du Rwanda (Royaume du Rwanda), qui unifiait les peuples des hautes terres. Les colonisateurs allemands puis belges ont conservé ce nom.",
+  "summary": "Le nom Rwanda est celui d'un ancien royaume de la région des Grands Lacs, devenu en 1962 le nom de l'État indépendant ; sous l'administration belge, il s'écrivait Ruanda. Son origine est expliquée de plusieurs façons : un pays, le premier règne, ou une racine du kinyarwanda qui veut dire s'élargir. Hutu, Tutsi et Twa y parlent une même langue, le kinyarwanda.",
+  "etymology": "Le nom Rwanda désignait un royaume avant la colonisation, et aussi d'autres territoires de la région. Son origine est expliquée de plusieurs façons. Selon le poète Sekarama, il voudrait dire le premier règne, ou le premier tambour royal (ingoma). Selon Gakanisha, il voudrait dire un pays (igihugu). Selon l'abbé Alexis Kagame et des auteurs de l'époque coloniale, il viendrait d'une racine du kinyarwanda, aand, qui donne kwaanda, « s'élargir », et voudrait dire « la grande extension ». Ces explications nous sont connues par Amani Athar et Eugène Shimamungu, qui les rapportent et les discutent.",
+  "nameOriginActor": "Le nom Rwanda est celui que portait le royaume en kinyarwanda, la langue du pays, avant la colonisation. Les administrations allemande puis belge l'ont écrit Ruanda, et l'État indépendant a pris le nom de Rwanda le 1er juillet 1962.",
   "nameHistory": {
     "summary": "Le nom Rwanda désigne un pays de la région des Grands Lacs, la République du Rwanda, qui se nomme elle-même Republika y'u Rwanda en kinyarwanda. Le nom s'est d'abord écrit Ruanda, et le pays a formé avec le Burundi le territoire du Ruanda-Urundi, sous administration belge. Les sources ne s'accordent pas sur l'origine du nom Rwanda ; nous les présentons plus bas.",
     "names": [
@@ -202,6 +202,26 @@
                 "notes": "Tribune d'opinion du quotidien rwandais The New Times, 27 novembre 2024, lue le 10 octobre 2026. L'auteur rapporte trois explications du nom Rwanda : celle du poète Sekarama, celle de Gakanisha et celle des savants de l'époque coloniale ; il tient les deux premières pour justes."
               }
             ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Rwanda viendrait d'une racine ancienne, aand, qui donne kwaanda, « s'élargir », et voudrait dire « la grande extension », selon l'abbé Alexis Kagame dans Un abrégé de l'ethno-histoire du Rwanda (1972), tel que le rapporte Eugène Shimamungu.",
+            "hypothesisGroup": "origine du nom Rwanda",
+            "sources": [
+              {
+                "title": "L'expansionisme tutsi et l'origine du mot Rwanda",
+                "author": "Eugène Shimamungu, Éditions Sources du Nil",
+                "year": 2009,
+                "url": "https://editions-sources-du-nil.over-blog.com/article-32343852.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Billet d'opinion publié le 7 juin 2009 sur le blog des Éditions Sources du Nil, lu le 3 novembre 2026. L'auteur cite Alexis Kagame, Un abrégé de l'ethno-histoire du Rwanda (1972), sans numéro de page : « ce toponyme provient d'une racine ancienne /+aand-/ qui donne kwaanda \"s'élargir\" » ; « Le toponyme \"Rwanda\" signifierait donc \"la Grande extension\" ». L'auteur rapproche lui-même le nom du mot kinyarwanda umwaanda. Le livre de Kagame n'a pas pu être consulté en ligne."
+              }
+            ]
           }
         ]
       },
@@ -353,14 +373,14 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Afrique orientale allemande (1885-1916)",
-        "Ruanda-Urundi (1916-1962)"
+        "Ruanda (graphie employée jusqu'en 1962)",
+        "Ruanda-Urundi (territoire commun avec le Burundi, jusqu'en 1962)"
       ],
-      "antiquity": "Le territoire était peuplé de groupes bantous et nilotiques sans nom unifié. Les Twa (pygmées) sont considérés comme les premiers habitants.",
-      "middleAges": "Développement du royaume du Rwanda à partir du XVe siècle. Le royaume s'appelait \"Rwanda\" ou \"Imana y'u Rwanda\" (Rwanda de Dieu).",
-      "precolonial": "Royaume du Rwanda (XVe - XIXe siècles) avec une monarchie centralisée. Le nom \"Rwanda\" était utilisé pour désigner le royaume et son territoire.",
-      "colonization": "1885-1916 : Protectorat allemand de l'Afrique orientale allemande (Deutsch-Ostafrika), incluant le Rwanda. 1916-1962 : Ruanda-Urundi sous mandat belge (puis tutelle de l'ONU). Les Belges ont divisé administrativement le Rwanda et le Burundi mais conservé les noms.",
-      "contemporary": "Indépendance en 1962 sous le nom de \"République rwandaise\" puis \"République du Rwanda\". Le nom officiel en français est \"République du Rwanda\" et en kinyarwanda \"Repubulika y'u Rwanda\"."
+      "antiquity": null,
+      "middleAges": null,
+      "precolonial": "Avant la colonisation, le nom Rwanda désignait le royaume du mwami, le roi, selon l'Histoire générale de l'Afrique publiée par l'UNESCO. Selon les traditions de la cour, reprises par l'abbé Alexis Kagame et résumées par l'historien Jan Vansina, ce royaume serait né d'un petit territoire au bord du lac Mohasi, avant de s'agrandir. Le nom désignait aussi d'autres territoires de la région, selon Amani Athar. L'explorateur John Hanning Speke l'écrit Rŭanda en 1861, dans le récit de son voyage vers les sources du Nil.",
+      "colonization": "Le Rwanda fait partie de l'Afrique orientale allemande avant la Première Guerre mondiale, selon l'Histoire générale de l'Afrique. Le premier Européen visite le pays en 1894, selon Jan Vansina, et l'administration allemande s'installe au tournant du siècle, selon Human Rights Watch. L'armée belge occupe le pays en 1916. Le 21 août 1919, les Alliés attribuent « le Ruanda et l'Urundi » à la Belgique, qui les administre sous mandat de la Société des Nations, puis comme territoire sous tutelle des Nations unies, connu sous le nom de Ruanda-Urundi, à partir de 1946.",
+      "contemporary": "Le Rwanda devient indépendant le 1er juillet 1962 et prend alors le nom de Rwanda, tandis que l'Urundi devient le Burundi. L'État s'appelle aujourd'hui Republika y'u Rwanda en kinyarwanda, République du Rwanda en français, Republic of Rwanda en anglais et Jamhuri ya Rwanda en swahili, selon le Permanent Committee on Geographical Names du Royaume-Uni."
     },
     "kingdoms": [
       {
@@ -378,8 +398,8 @@
           "Hutu (majorité)",
           "Twa (minorité)"
         ],
-        "politicalCenters": ["Nyanza (capitale royale)", "Butare"],
-        "historicalRole": "Royaume centralisé avec une monarchie sacrée (mwami). Système de chefferies hiérarchisées. Expansion territoriale et unification culturelle. Distinctions sociales complexes entre Hutu, Tutsi et Twa, instrumentalisées par le colonialisme. Selon l'Histoire générale de l'Afrique, une nouvelle dynastie, celle du tambour Kalinga, est très probablement fondée par Ruganzu Ndori au début du XVIIe siècle."
+        "politicalCenters": ["Nyanza (capitale royale)"],
+        "historicalRole": "Le royaume du Rwanda est gouverné par un roi, le mwami. Les historiens de la cour racontaient son passé comme une suite presque continue de conquêtes à partir d'un petit noyau ; l'historien Jan Vansina, en 1961, conteste ce récit et situe le renforcement du pouvoir royal à partir du XVe ou du XVIe siècle. Selon l'Histoire générale de l'Afrique, une nouvelle dynastie, celle du tambour Kalinga, est très probablement fondée par Ruganzu Ndori au début du XVIIe siècle. Selon Human Rights Watch, la frontière entre Hutu et Tutsi restait souple et franchissable avant la colonisation."
       },
       {
         "name": "Ruanda-Urundi",
@@ -394,7 +414,7 @@
           "Tous les peuples rwandais sous administration coloniale belge"
         ],
         "politicalCenters": ["Kigali (capitale administrative)"],
-        "historicalRole": "Mandat belge puis tutelle de l'ONU. Politique coloniale de division et d'instrumentalisation des distinctions Hutu/Tutsi. Introduction de cartes d'identité ethniques."
+        "historicalRole": "Le Ruanda-Urundi réunit le Rwanda et le Burundi sous administration belge : mandat de la Société des Nations en 1922, puis territoire sous tutelle des Nations unies en 1946. Dans les années 1930, l'administration belge demande à chaque Rwandais de déclarer son groupe, hutu, tutsi ou twa, et l'inscrit sur sa carte d'identité, selon Human Rights Watch ; environ 15 % des habitants se déclarent alors tutsi et environ 84 % hutu. Le récit colonial de l'histoire du pays s'appuie sur l'« hypothèse hamitique », une théorie alors en vogue selon laquelle une race supérieure, venue du nord-est de l'Afrique, aurait apporté la civilisation ; Human Rights Watch y voit une version déformée du passé."
       },
       {
         "name": "République du Rwanda",
@@ -407,36 +427,29 @@
         },
         "dominantPeoples": ["Tous les peuples rwandais"],
         "politicalCenters": ["Kigali (capitale)"],
-        "historicalRole": "Indépendance en 1962. Première République (1962-1973) : tensions ethniques. Deuxième République (1973-1994) : régime Habyarimana. Génocide de 1994. Troisième République depuis 1994 : reconstruction, abolition des distinctions ethniques officielles."
+        "historicalRole": "La République du Rwanda naît de l'indépendance du 1er juillet 1962, après la fin de la monarchie, votée en septembre 1961. En 1994, le génocide contre les Tutsi fait plus d'un million de morts, selon les Nations unies. La Constitution de 2003, révisée en 2015, interdit toute discrimination fondée notamment sur l'origine ethnique."
       }
     ],
     "majorPeoples": [
       {
         "name": "Hutu (Rwandais)",
         "selfAppellation": "Abahutu",
-        "exonyms": [
-          "Hutu (terme utilisé par les Européens). Note importante : Les distinctions Hutu/Tutsi/Twa sont des constructions sociales et politiques complexes",
-          "historiquement instrumentalisées par le colonialisme."
-        ],
+        "exonyms": ["Hutu"],
         "peopleId": "PPL_RWANDAIS_HUTU",
-        "mainRegion": "Tout le Rwanda (majorité)",
+        "mainRegion": "Tout le Rwanda",
         "languages": ["Kinyarwanda", "français", "anglais"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Hutu\" a été instrumentalisé par le colonialisme belge qui a figé les distinctions sociales en catégories \"racialisées\". L'auto-appellation \"Abahutu\" est préférée. Ces distinctions doivent être contextualisées historiquement."
+        "appellationRemarks": "Hutu, Tutsi et Twa parlent la même langue, le kinyarwanda. Selon Human Rights Watch, la frontière entre Hutu et Tutsi était souple avant la colonisation ; l'administration belge l'a figée dans les années 1930 en inscrivant le groupe de chacun sur sa carte d'identité."
       },
       {
         "name": "Tutsi (Rwandais)",
         "selfAppellation": "Abatutsi",
-        "exonyms": [
-          "Tutsi",
-          "Watutsi (terme historique). Note importante : Les distinctions Hutu/Tutsi/Twa sont des constructions sociales et politiques complexes",
-          "historiquement instrumentalisées par le colonialisme."
-        ],
+        "exonyms": ["Tutsi", "Watutsi"],
         "peopleId": "PPL_RWANDAIS_TUTSI",
         "mainRegion": "Tout le Rwanda",
         "languages": ["Kinyarwanda", "français", "anglais"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Tutsi\" a été instrumentalisé par le colonialisme belge. La \"thèse hamitique\" coloniale était une construction raciste. L'auto-appellation \"Abatutsi\" est préférée. Ces distinctions doivent être contextualisées historiquement."
+        "appellationRemarks": "Selon Human Rights Watch, le mot Tutsi semble avoir d'abord désigné la condition d'une personne, celle d'un homme riche en bétail, avant de désigner un groupe. Le récit colonial, appuyé sur l'« hypothèse hamitique », présentait les Tutsi comme venus du nord ; ce rapport y voit une version déformée du passé."
       },
       {
         "name": "Twa",
@@ -446,10 +459,16 @@
         "mainRegion": "Forêts et zones rurales",
         "languages": ["Kinyarwanda", "langues twa"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Pygmée\" peut être considéré comme péjoratif. L'auto-appellation \"Abatwa\" est préférée. Les Twa sont les premiers habitants du Rwanda."
+        "appellationRemarks": "Le terme Pygmée peut être reçu comme péjoratif. Selon Human Rights Watch, les Twa forment le plus petit des trois groupes, nettement distinct des Hutu et des Tutsi, et la frontière qui les sépare des deux autres était bien plus rigide."
       }
     ],
     "culture": {
+      "mainLanguages": [
+        { "name": "Kinyarwanda", "isoCode": "kin", "isPrimary": true },
+        { "name": "Français", "isoCode": "fra", "isPrimary": false },
+        { "name": "Anglais", "isoCode": "eng", "isPrimary": false },
+        { "name": "Swahili", "isoCode": "swa", "isPrimary": false }
+      ],
       "culturalTraditions": "Tambours royaux (ingoma), danse traditionnelle (intore), poésie orale, artisanat (vannerie, poterie), architecture traditionnelle, élevage bovin (importance symbolique et économique)",
       "dominantReligions": "Christianisme (catholique majoritaire, protestant), croyances traditionnelles (syncrétisme), islam (minorité)",
       "lifestyles": "Vie principalement rurale, agriculture (café, thé, bananes, haricots, sorgho), élevage (bovins, caprins), pêche (lacs), commerce",
@@ -457,12 +476,12 @@
       "regionalRelations": "Relations historiques avec les peuples du Burundi, de la RDC, de l'Ouganda, de la Tanzanie. Diaspora importante en Belgique, en Ouganda, en RDC, et dans les pays occidentaux."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement du territoire par les Twa (pygmées), puis migrations bantoues (Hutu) et nilotiques (Tutsi) depuis plusieurs siècles. Formation de structures sociales complexes.",
-      "middleAges": "Développement du royaume du Rwanda à partir du XVe siècle. Expansion territoriale et unification culturelle. Système monarchique centralisé avec distinctions sociales entre Hutu, Tutsi et Twa.",
-      "precolonial": "Apogée du royaume du Rwanda (XIXe siècle) avec expansion territoriale. Système de chefferies hiérarchisées. Distinctions sociales complexes mais perméables.",
-      "colonization": "1885 : Protectorat allemand. 1916 : Occupation belge. 1923 : Mandat belge (Ruanda-Urundi). Politique coloniale de division et d'instrumentalisation des distinctions Hutu/Tutsi. Introduction de cartes d'identité ethniques. \"Thèse hamitique\" coloniale raciste.",
-      "independenceStruggle": "Mouvements nationalistes dans les années 1950. \"Révolution sociale\" de 1959-1962 : renversement de la monarchie, exode des Tutsi. Indépendance en 1962. Première République dominée par les Hutu.",
-      "postIndependence": "Première République (1962-1973) : tensions ethniques, exodes répétés des Tutsi. Deuxième République (1973-1994) : régime Habyarimana, politique d'exclusion. Génocide de 1994 : extermination de 800 000 à 1 million de Tutsi et Hutu modérés. Troisième République depuis 1994 : reconstruction, abolition des distinctions ethniques officielles, politique de réconciliation, développement économique remarquable."
+      "ancientPeriods": null,
+      "middleAges": "Selon les traditions de la cour, reprises par l'abbé Alexis Kagame et résumées par l'historien Jan Vansina, le royaume du Rwanda serait né d'un petit territoire au bord du lac Mohasi. Vansina situe le renforcement du pouvoir royal à partir du XVe ou du XVIe siècle, et l'Histoire générale de l'Afrique tient pour très probable la fondation d'une nouvelle dynastie par Ruganzu Ndori au début du XVIIe siècle.",
+      "precolonial": "Au XIXe siècle, le roi Rwabugiri mène de nombreuses campagnes contre les pays voisins, selon Jan Vansina ; c'est sous son règne que le premier Européen visite le Rwanda, en 1894. Avant la colonisation, la frontière entre Hutu et Tutsi restait souple et franchissable, tandis que celle qui séparait les Twa des deux autres groupes était bien plus rigide, selon Human Rights Watch.",
+      "colonization": "L'administration allemande s'installe au tournant du XXe siècle, sous le règne de Musinga. Après la Première Guerre mondiale, la Belgique la remplace : l'armée belge occupe le pays en 1916, puis la Belgique l'administre avec l'Urundi, sous mandat de la Société des Nations, puis sous tutelle des Nations unies. Dans les années 1930, l'administration belge inscrit le groupe de chaque Rwandais, hutu, tutsi ou twa, sur sa carte d'identité, selon Human Rights Watch.",
+      "independenceStruggle": "En novembre 1959, des violences éclatent : selon les Nations unies, un soulèvement hutu fait des centaines de morts parmi les Tutsi. En septembre 1961, environ 80 % des Rwandais votent la fin de la monarchie, selon Human Rights Watch. Le Rwanda devient indépendant le 1er juillet 1962 ; à cette date, 120 000 personnes, surtout des Tutsi, se sont réfugiées dans les pays voisins, selon les Nations unies.",
+      "postIndependence": "En 1994, avant le génocide, les Nations unies estiment que le Rwanda compte plus de 7 millions d'habitants, dont environ 85 % de Hutu, 14 % de Tutsi et 1 % de Twa. Le génocide contre les Tutsi commence le 6 avril 1994 ; des responsables hutu modérés sont aussi assassinés, et plus d'un million de personnes y perdent la vie, selon les Nations unies. La Constitution de 2003, révisée en 2015, interdit la discrimination fondée notamment sur l'origine ethnique et fait de la lutte contre le divisionnisme un principe de l'État. Le recensement de 2022 compte 13 246 394 habitants, selon l'Institut national de la statistique du Rwanda."
     },
     "sources": [
       {
@@ -528,6 +547,77 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre de J. B. Webster, B. A. Ogot et J.-P. Chrétien (1999), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 889. « Il est très probable que Ruganzu Ndori fonda, au début du XVIIe siècle, une nouvelle dynastie, celle du tambour Kalinga. »"
+      },
+      {
+        "title": "MAIN INDICATORS: 5th Rwanda Population and Housing Census (PHC)",
+        "url": "https://statistics.gov.rw/data-sources/censuses/Population-and-Housing-Census/fifth-population-and-housing-census-2022/main-indicators-5th-rwanda-population-and-housing-census-phc",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Institut national de la statistique du Rwanda (NISR), page des principaux résultats du cinquième recensement général de la population et de l'habitat, lue le 3 novembre 2026 : « Rwanda's population was 13,246,394 as of August 2022 ». La page ne donne aucune répartition par groupe hutu, tutsi ou twa."
+      },
+      {
+        "title": "Rwanda's Constitution of 2003 with Amendments through 2015",
+        "url": "https://www.constituteproject.org/constitution/Rwanda_2015",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Traduction anglaise publiée par le Constitute Project, lue le 3 novembre 2026. Article 8 : « The National language is Ikinyarwanda. The official languages are Ikinyarwanda, English and French. » L'article 10 fait de la lutte contre la discrimination et le divisionnisme, notamment ethniques, un principe fondamental ; l'article 16 interdit toute discrimination fondée notamment sur l'origine ethnique."
+      },
+      {
+        "title": "Toponymic Factfile: Rwanda",
+        "url": "https://assets.publishing.service.gov.uk/media/679903cd636f8db3c270713e/Rwanda_Toponymic_Factfile.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Permanent Committee on Geographical Names (Royaume-Uni), 2025, lu le 3 novembre 2026. Page 1 : nom de l'État en kinyarwanda, français, anglais et swahili ; frontières avec le Burundi, la République démocratique du Congo, la Tanzanie et l'Ouganda. Page 2 : « Rwanda has four official languages: Kinyarwanda, French, English and Swahili. Kinyarwanda is the national language and spoken almost universally » ; le swahili est langue officielle depuis 2017 ; le kinyarwanda est une langue bantoue intercompréhensible avec le kirundi du Burundi."
+      },
+      {
+        "title": "Glottolog — Kinyarwanda (kiny1244)",
+        "url": "https://glottolog.org/resource/languoid/id/kiny1244",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche lue le 3 novembre 2026. Code ISO 639-3 kin. Classement : Atlantic-Congo, Volta-Congo, Benue-Congo, Bantoid, Southern Bantoid, Narrow Bantu, East Bantu, Northeast Savanna Bantu, Great Lakes Bantu, Western Lakes Bantu, Kivu, West Highlands Kivu."
+      },
+      {
+        "title": "United Nations — 1994 Genocide against the Tutsi in Rwanda",
+        "url": "https://www.un.org/en/preventgenocide/rwanda/historical-background.shtml",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Programme d'information des Nations unies sur le génocide de 1994 contre les Tutsi au Rwanda, page de contexte historique lue le 3 novembre 2026. « By 1994, Rwanda's population stood at more than 7 million people comprising 3 ethnic groups: the Hutu (who made up roughly 85% of the population), the Tutsi (14%), and the Twa (1%). » Novembre 1959 : soulèvement hutu, des centaines de Tutsi tués ; 120 000 réfugiés, surtout tutsi, en 1962 ; début des massacres le 6 avril 1994 ; « more than one million people are estimated to have perished »."
+      },
+      {
+        "title": "Leave None to Tell the Story: Genocide in Rwanda, chapitre « History »",
+        "author": "Alison Des Forges pour Human Rights Watch",
+        "year": 1999,
+        "url": "https://www.hrw.org/reports/1999/rwanda/Geno1-3-09.htm",
+        "tier": "referenced",
+        "source_kind": "ngo",
+        "notes": "Human Rights Watch, mars 1999, lu le 3 novembre 2026. Section « The Meaning of \"Hutu,\" \"Tutsi,\" and \"Twa\" » : la frontière entre Hutu et Tutsi était « flexible and permeable before the colonial era », celle qui séparait les Twa « far more rigid » ; le mot Tutsi désignait d'abord « the status of an individual—a person rich in cattle ». Section « The Transformation of \"Hutu\" and \"Tutsi\" » : déclaration du groupe de chacun dans les années 1930, inscrite sur les cartes d'identité ; « Some 15 percent of the population declared themselves Tutsi, approximately 84 percent said they were Hutu » ; l'« Hamitic hypothesis ». Section « The Hutu Revolution » : en septembre 1961, environ 80 % des Rwandais votent la fin de la monarchie. Les Allemands installent une administration coloniale au tournant du siècle."
+      },
+      {
+        "title": "L'évolution du royaume rwanda des origines à 1900",
+        "author": "Jan Vansina",
+        "year": 1962,
+        "url": "https://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(NS)_T.XXVI,2_VANSINA%20J._L%27%C3%A9volution%20du%20royaume%20rwanda%20des%20origines%20%C3%A0%201900_1962.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 5, 10, 15 et 73",
+        "notes": "Académie royale des sciences d'outre-mer, Bruxelles, mémoire présenté à la séance du 15 mai 1961 et publié en 1962, lu dans l'exemplaire numérisé de l'Académie le 3 novembre 2026. P. 5 : les historiens de la cour présentaient le passé du Rwanda comme « un progrès pratiquement ininterrompu ». P. 10, résumé du récit de l'abbé A. Kagame : les rois successeurs de Gihanga gouvernent « un petit territoire aux bords du lac Mohasi qui fut dans la suite le berceau du Rwanda moderne ». P. 15 : campagnes du roi Rwabugiri ; « le premier Européen visita le Rwanda, en 1894 » ; sous le règne de Musinga, « l'administration allemande et, après elle, l'administration belge, occupèrent le pays ». P. 73 : renforcement du pouvoir royal « à partir du XVe ou XVIe siècle ». L'ouvrage ne traite pas de l'origine du nom Rwanda."
+      },
+      {
+        "title": "L'aménagement linguistique dans le monde : Rwanda",
+        "url": "https://axl.cefan.ulaval.ca/afrique/rwanda.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Site hébergé par la Chaire pour le développement de la recherche sur la culture d'expression française en Amérique du Nord (CEFAN), Université Laval, dernière mise à jour le 3 novembre 2024, lu le 3 novembre 2026. Sous l'administration allemande, le pays est « appelé alors Ruanda » ; le français est introduit « au moment de l'occupation par l'armée belge en 1916 » ; les Belges imposent une carte d'identité portant la mention ethnique (1933-1934) ; vote des députés, le 8 février 2017, d'une loi faisant du swahili la quatrième langue officielle. Les pourcentages de groupes donnés sur cette page ne citent pas de source et ne sont pas repris ici."
+      }
+    ],
+    "gaps": [
+      {
+        "field": "content.demographics.peoples",
+        "reason": "Le Rwanda ne compte plus les Hutu, les Tutsi et les Twa dans ses recensements depuis le génocide de 1994 : le recensement de 2022 ne donne aucune répartition de ce type. Nous ne donnons donc pas de part actuelle pour chacun de ces groupes. Les seules parts que nous avons trouvées sont anciennes : environ 84 % de Hutu et 15 % de Tutsi lors de l'enregistrement des années 1930, selon Human Rights Watch, et environ 85 % de Hutu, 14 % de Tutsi et 1 % de Twa en 1994, avant le génocide, selon les Nations unies."
+      },
+      {
+        "field": "content.culture",
+        "reason": "Nous n'avons pas encore trouvé de source publiée par le Rwanda qui décrive la répartition actuelle des religions ; les résultats détaillés du recensement de 2022 sur ce point n'étaient pas accessibles."
       }
     ],
     "demographics": {
@@ -539,24 +629,25 @@
           "name": "Hutu (Rwandais)",
           "peopleId": "PPL_RWANDAIS_HUTU",
           "region": "Tout le Rwanda",
-          "languageFamily": "FLG_NIGERCONGO",
-          "percentageInCountry": 84
+          "languageFamily": "FLG_NIGERCONGO"
         },
         {
           "name": "Tutsi (Rwandais)",
           "peopleId": "PPL_RWANDAIS_TUTSI",
           "region": "Tout le Rwanda",
-          "languageFamily": "FLG_NIGERCONGO",
-          "percentageInCountry": 15
+          "languageFamily": "FLG_NIGERCONGO"
         },
         {
           "name": "Twa",
           "peopleId": "PPL_TWA",
           "region": "Forêts et zones rurales",
-          "languageFamily": "FLG_NIGERCONGO",
-          "percentageInCountry": 1
+          "languageFamily": "FLG_NIGERCONGO"
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "Le Rwanda est un pays de la région des Grands Lacs, voisin de l'Ouganda, de la Tanzanie, du Burundi et de la RD Congo. Son nom, écrit Ruanda jusqu'en 1962, était celui d'un ancien royaume.",
+      "followUp": "Que voudrait dire le nom Rwanda, selon les explications qu'en donnent les sources ?"
     }
   }
 }
