@@ -44,9 +44,13 @@ describe("specialist terms in the fiches", () => {
 
   // @req REQ-143
   it("explains « agglutinant » in the Bantu family's typology", () => {
-    expect(read("famille_linguistique/FLG_BANTU.json")).toMatch(
-      /agglutinantes \(les mots se construisent/
-    );
+    // The premium rewrite of 2026-11-03 dropped the word with the unsourced
+    // typology it belonged to; wherever it returns, it carries its gloss.
+    const text = read("famille_linguistique/FLG_BANTU.json");
+    const uses = text.match(/agglutinant\w*/g) ?? [];
+    const glossed =
+      text.match(/agglutinant\w* \(les mots se construisent/g) ?? [];
+    expect(glossed.length).toBe(uses.length);
   });
 
   // @req REQ-143
