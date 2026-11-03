@@ -82,6 +82,50 @@
           },
           {
             "period": {
+              "from": 1997,
+              "to": 2001,
+              "label": "1997-2001"
+            },
+            "era": "modern",
+            "hypothesisGroup": "unite-nilo-saharienne",
+            "statement": "Le nom nilo-saharien désignerait bien une famille issue d'une même langue ancienne, selon Lionel Bender en 1997 et Christopher Ehret en 2001. Chacun en propose un arbre différent, fondé sur des correspondances régulières entre les langues, rapporte Pascal Boyeldieu.",
+            "sources": [
+              {
+                "title": "Les langues nilo-sahariennes",
+                "author": "Pascal Boyeldieu",
+                "year": 2011,
+                "url": "https://shs.hal.science/halshs-00658528",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article du Dictionnaire des langues dirigé par E. Bonvini, J. Busutil et A. Peyraube (Presses universitaires de France, 2011, p. 185-190), lu en entier dans la version déposée par l'auteur sur l'archive ouverte HAL.",
+                "page": "p. 3-4 de la version déposée sur HAL"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "hypothesisGroup": "unite-nilo-saharienne",
+            "statement": "Le nom nilo-saharien regrouperait peut-être des langues voisines plutôt qu'une seule famille, selon Pascal Boyeldieu. Leurs ressemblances pourraient venir de langues qui se côtoient depuis des siècles, voire des millénaires, sur le même espace.",
+            "sources": [
+              {
+                "title": "Les langues nilo-sahariennes",
+                "author": "Pascal Boyeldieu",
+                "year": 2011,
+                "url": "https://shs.hal.science/halshs-00658528",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article du Dictionnaire des langues dirigé par E. Bonvini, J. Busutil et A. Peyraube (Presses universitaires de France, 2011, p. 185-190), lu en entier dans la version déposée par l'auteur sur l'archive ouverte HAL.",
+                "page": "p. 4-5 de la version déposée sur HAL"
+              }
+            ]
+          },
+          {
+            "period": {
               "from": null,
               "to": null,
               "label": "Position actuelle du catalogue"
@@ -98,6 +142,22 @@
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
                 "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 10 octobre 2026. Commentaire sur l'appartenance de la famille : « No conclusive, methodologically sound basis for assigning Saharan to an alleged full or partial Nilo-Saharan has been presented »."
+              },
+              {
+                "title": "Glottolog 5.3 — Family: Nilotic",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/nilo1247",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              },
+              {
+                "title": "Glottolog 5.3 — Family: Central Sudanic",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/cent2225",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
               }
             ]
           },
@@ -292,40 +352,53 @@
   },
   "content": {
     "searchAnswer": {
-      "lead": "Un regroupement de langues du Nil au lac Tchad et à l'Afrique de l'Est. Joseph Greenberg lui a donné son nom en 1963 ; plusieurs linguistes doutent qu'il forme une seule famille.",
+      "lead": "Un regroupement de langues parlées du Mali à l'Éthiopie et de l'Égypte à la Tanzanie. Joseph Greenberg l'a nommé en 1963 ; beaucoup de linguistes doutent qu'il forme une seule famille.",
       "followUp": "Pourquoi des linguistes doutent-ils de l'unité de ces langues ?"
     },
     "decolonialHeader": {
-      "whyProblematic": " **Preuves coloniales :** Le terme s'inscrit dans une tradition de classification linguistique européenne du XIXe-XXe siècle (missions, explorateurs, chercheurs coloniaux) dont les catégories reflètent des perspectives extérieures, universalisantes et parfois hiérarchisées. Les concepts de \"Niloto-Soudan\", \"Sudanic\", \"Chari-Nile\" proviennent de travaux de Westermann, Lepsius, Meinhof, qui utilisaient des critères historiques et géographiques centrés sur les Européens, parfois sans preuves internes rigoureuses pour tous les sous-groupes. Carl Meinhof utilisait notamment des concepts comme \"Hamitic component\" pour justifier des hiérarchies raciales linguistiques. **Auteurs locaux défendant l'africanité :** Certains linguistes africains remettent en question l'unité génétique complète du phylum Nilo-Saharien, soulignant des branches mal attestées ou divergentes. Théophile Obenga critique notamment la méthode de \"comparaison de masse\" de Greenberg et l'absence de preuves systématiques. Les communautés nilotiques revendiquent leurs langues endogènes et les études anthropologiques locales remettent en cause les imputations imposées par la classification coloniale. **Études génétiques modernes :** Des analyses récentes montrent que les populations parlant des langues supposées Nilo-Sahariennes présentent une forte variation génétique et une certaine isolation entre groupes. L'étude de Dobon et al. (2015) dans *Scientific Reports* identifie un composant génétique commun chez des groupes parlant des langues dites Nilo-Sahariennes au Soudan et au Soudan du Sud, mais aussi des niveaux d'admixture importants, montrant que la frontière linguistique ne coïncide pas toujours avec la structure génétique. L'étude de Mulindwa et al. (2020) sur les Lugbara (Nord-Ouest de l'Ouganda) documente une biodiversité génétique importante avec signatures adaptatives mais pas de mélange complet avec Afro-asiatique/Niger-Congo. **Critiques linguistiques modernes :** Plusieurs linguistes contestent aujourd'hui la cohérence génétique de la famille Nilo-Saharien. Glottolog (2019) ne reconnaît pas l'unité de plusieurs branches, notamment Kadu, Koman, Kunama. Gerrit Dimmendaal, Roger Blench, Tom Güldemann et d'autres linguistes modernes jugent les preuves pour l'unité de la famille encore insuffisantes, en particulier pour des groupes comme Kadu ou Songhai. Certains qualifient Nilo-Saharien comme un \"wastebasket\" (poubelle) de Greenberg sans preuves comparatives robustes pour toutes ses branches.",
-      "selfAppellation": null,
-      "contemporaryUsage": " Macro-famille proposée (phylogénétique) regroupant les langues nilotiques (Maasai, Luo, Dinka, Nuer), sahariennes (Kanuri, Teda, Daza, Zaghawa), soudaniques centrales (Lendu, Lugbara, Mangbetu, Moru), Songhay (Zarma, Songhay de Gao), Koman (sud Éthiopie), Kunama/Barya, Surmic (Me'en, Suri), et d'autres branches. Utilisée dans les classifications linguistiques académiques (SIL Ethnologue, Glottolog avec réserves) bien que son unité génétique soit controversée.",
+      "linkWithFamily": "Le nilo-saharien n'est rattaché à aucune famille plus large. C'est lui-même un regroupement, proposé par Joseph Greenberg en 1963, de familles déjà décrites avant lui, comme les langues nilotiques, sahariennes ou soudaniques centrales, selon Pascal Boyeldieu. Le catalogue Glottolog ne retient pas ce regroupement et traite chacune de ces familles comme une famille indépendante. D. Olderogge proposait au contraire de réunir ces langues avec les langues niger-congo dans un seul ensemble, qu'il appelait zindj.",
       "historicalAppellations": [
-        "Langues nilotiques et soudanaises",
-        "Nilotic-Sudanic",
-        "Chari-Nile",
-        "Macro-Sudanic",
-        "Soudanais oriental"
+        "Nördliche Negersprachen",
+        "Langues soudanaises",
+        "Soudanique oriental",
+        "Macro-soudanique",
+        "Chari-nil"
       ],
-      "originOfHistoricalTerm": " Le terme « Nilo-Saharan » a été créé par **Joseph H. Greenberg** en **1963**, dans son ouvrage *The Languages of Africa* (Indiana University Press / Mouton). Greenberg avait repris et élargi des classifications antérieures de linguistes européens (Diedrich Westermann, Heinrich Lepsius, Heinrich Barth, Carl Meinhof), en combinant les anciens groupes \"Sudanic\" et divers ensembles non-affiliés exclus de Niger-Congo, Afro-asiatique et Khoisan. C'est **une construction comparative moderne**, et non un terme ancien ou endogène. Avant Greenberg, Westermann (début XXe siècle) utilisait \"Sudanic\" et \"Chari-Nile\" était proposé dans les années 1950."
+      "originOfHistoricalTerm": "Le nom nilo-saharien a été forgé par le linguiste américain Joseph Greenberg, dans The Languages of Africa, en 1963, à partir des noms du Nil et du Sahara. Ce n'est pas un nom venu des locuteurs, mais une étiquette de savant. En 1949-1950, Greenberg séparait encore ces langues en plusieurs familles, comme le songhaï, le saharien central, le soudanique oriental et le soudanique central ; en 1954, il réunit les deux soudaniques, avec le berta et le kunama, sous le nom de macro-soudanique. Avant lui, Diedrich Westermann rangeait depuis 1911 la plupart de ces langues parmi les langues soudanaises, un ensemble qui comprenait aussi les langues d'Afrique de l'Ouest. Dans le classement de 1963, le chari-nil est la plus grande branche du nilo-saharien : il réunit le soudanique oriental, le soudanique central, le berta et le kunama.",
+      "whyProblematic": "Les premiers classements de ces langues ont été faits par des savants européens qui mêlaient langue et race. En 1880, Richard Lepsius tient les langues bantoues pour fondamentales et voit dans les autres langues parlées par des Noirs des langues « mêlées » ; il affirme aussi la supériorité des langues qui distinguent le masculin et le féminin, rappelle Joseph Greenberg. En 1912, Carl Meinhof range le maasaï parmi les langues dites hamitiques, un nom tiré de Cham, fils de Noé, parce que cette langue distingue le masculin et le féminin ; Greenberg relève que ce livre porte l'idée d'une supériorité raciale des « Hamites ». Greenberg a replacé le maasaï parmi les langues nilotiques, mais son propre regroupement est discuté pour une autre raison : beaucoup de linguistes jugent ses preuves trop faibles pour montrer que ces langues descendent d'une même langue ancienne. Pascal Boyeldieu le décrit comme l'ensemble « à la fois le plus hétérogène et le plus sujet à controverse » des grands ensembles de Greenberg, et le catalogue Glottolog ne le retient pas.",
+      "selfAppellation": "Aucun nom propre : « nilo-saharien » est un nom de savants, formé sur le Nil et le Sahara. Les sources que nous avons consultées ne donnent aucun nom commun à toutes ces langues dans les langues elles-mêmes. Elles sont parlées par des peuples aux modes de vie très différents, par exemple les cultivateurs sara du Tchad, les chasseurs-cueilleurs efe de République démocratique du Congo et les pasteurs maasaï du Kenya et de Tanzanie, selon Pascal Boyeldieu.",
+      "contemporaryUsage": "Le nilo-saharien désigne aujourd'hui, dans les ouvrages de référence, un ensemble de 90 à 180 langues selon les estimations, parlées du Mali à l'Éthiopie et de l'Égypte à la Tanzanie, selon Pascal Boyeldieu. On y range traditionnellement le songhaï, les langues sahariennes comme le kanouri, le maban, le fur, les langues soudaniques centrales comme le lugbara, les langues soudaniques orientales comme le nubien, le dinka, le luo ou le maasaï, ainsi que le berta, le kunama et le koman-gumuz. Selon Boyeldieu, le classement de Greenberg est généralement considéré comme une base de travail utile, mais l'idée qu'il réunit des langues issues d'un même ancêtre reste discutée. Le catalogue Glottolog et l'atlas WALS classent ces langues dans des familles séparées, comme le saharien, le soudanique central ou le nilotique.",
+      "geographicArea": "Mali, Niger, Burkina Faso, Nigeria, Cameroun, Tchad, Soudan, Soudan du Sud, Égypte, Éthiopie, Érythrée, République centrafricaine, République démocratique du Congo, Ouganda, Kenya, Tanzanie",
+      "numberOfLanguages": 120,
+      "totalSpeakers": 70000000
     },
     "generalInfo": {
       "branches": [
-        "Songhay",
+        "Songhaï",
         "Saharien",
+        "Kuliak",
         "Maban",
         "Fur",
         "Soudanique central",
         "Berta",
         "Kunama",
-        "Core (soudanique oriental, incl. Nilotique)",
+        "Soudanique oriental, dont le nubien et le nilotique",
         "Koman",
         "Gumuz",
-        "Kuliak",
-        "Kadu"
+        "Kadugli-krongo"
       ],
-      "geographicArea": "Est sahélien, Nil supérieur (Soudan, Soudan du Sud), Sahara central (Niger, Tchad, Nigéria), Afrique centrale orientale (RDC, Ouganda, Kenya, Tanzanie), Corne de l'Afrique (Éthiopie, Érythrée). Distribution discontinue couvrant environ 17 pays africains.",
+      "geographicArea": "Du Mali à l'Éthiopie et de l'Égypte à la Tanzanie, en zones séparées : la vallée du Niger, le lac Tchad et le nord du Tchad, le Darfour, la vallée du Nil au Soudan et au Soudan du Sud, l'ouest de l'Éthiopie et de l'Érythrée, le nord-est de la République démocratique du Congo, le nord de la République centrafricaine et l'Afrique de l'Est jusqu'au nord de la Tanzanie.",
       "numberOfLanguages": 120,
-      "totalSpeakers": 70000000
+      "totalSpeakers": 70000000,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "Un ordre de grandeur : selon Pascal Boyeldieu (2011), les estimations vont de 90 à 180 langues, selon les langues que l'on range dans l'ensemble."
+        },
+        "totalSpeakers": {
+          "note": "Une estimation sans source : nous n'avons pas trouvé de total publié. Pascal Boyeldieu (2011) donne des chiffres par groupe, par exemple environ trois millions de locuteurs pour le songhaï et quatre millions pour les langues sahariennes.",
+          "unsourced": true
+        }
+      }
     },
     "associatedPeoples": [
       {
@@ -367,21 +440,41 @@
       {
         "name": "Murle",
         "peopleId": "PPL_MURLE"
+      },
+      {
+        "name": "Songhaï",
+        "peopleId": "PPL_SONGHAI"
+      },
+      {
+        "name": "Nubiens",
+        "peopleId": "PPL_NUBIENS"
+      },
+      {
+        "name": "Kunama",
+        "peopleId": "PPL_KUNAMA"
+      },
+      {
+        "name": "Berta",
+        "peopleId": "PPL_BERTA"
+      },
+      {
+        "name": "Gumuz",
+        "peopleId": "PPL_GUMUZ"
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " **Ordre des mots :** Grande variabilité selon les branches. Les langues orientales (Nilotic, Surmic, certains Kuliak et Kadu) tendent vers l'ordre Sujet-Verbe-Objet (SVO) ou auxiliaire-verbe-objet. Par exemple, le Dholuo (Nilotic, Kenya) utilise l'ordre SVO : *achiemo* \"je mange\", *wachiemo* \"nous mangeons\". Les langues occidentales/nordiques (ex. Nubien, Saharien, Maban, Kunama) montrent souvent un ordre verbe-final (SOV). Par exemple, le Kanuri (Saharien, Tchad/Niger) utilise principalement l'ordre SOV. **Morphologie nominale :** Système singulatif-collectif-pluriel dans plusieurs branches. Exemple en **Bari** (Nilotic, Sud-Soudan) : *rima'* « sang » (forme de base), *rima-tat* « une goutte de sang » (singulatif), *nyɔmɔt* « graines » (pluriel), *nyɔmɔt-ti* « graine » (singulatif), *nyɔmɔt-an* « beaucoup de sortes de graines » (collectif). Le Kipsigis (Nilotic, Kenya) présente un système tripartite singulatif-collectif-pluriel similaire. **Morphologie verbale :** Distinction aspectuelle forte entre formes perfectives vs imperfectives dans diverses branches (Saharan, Taman, Nyimang, Surmic). Marquage du sujet, personne, aspect. Préfixes personnels verbaux : 1ère personne singulier souvent préfixe *a-*, 2ème personne *i-* ou similaire dans plusieurs branches. Dérivation verbale : causatif, voix passive, négation souvent comme affixes ou préfixes/suffixes verbaux. Exemple en Dholuo : verbe *chiemo* \"manger\" : *achiemo* \"je mange\", *ochiemo* \"il/elle mange\", *wachiemo* \"nous mangeons\". **Marqueurs de cas :** Certaines langues Nilotic orientales possèdent des distinctions de genre inhérentes (masculin/féminin) sur certains noms. En général, distinction de genre rare dans la famille.",
-      "phonologicalFeatures": " **Tons :** La plupart des langues sont **tonales**, avec deux à quatre tons selon les langues, utilisés pour distinctions lexicales et grammaticales. Par exemple, **Lugbara** (Central Sudanic, Ouganda) peut distinguer jusqu'à **quatre niveaux tonals**. Le Dinka (West Nilotic) utilise un système tonal complexe avec voix soufflée vs voix stricte. **Harmonie vocalique ATR :** Très présente dans Nilotic, Surmic, Central Sudanic : les voyelles sont divisées en sets ATR+ (advanced tongue root) / ATR- (retracted tongue root), selon la position avancée ou rétractée de la racine de la langue, avec restrictions sur co-occurrence dans le mot. Par exemple, le Dinka utilise ce contraste avec voix laryngée ou soufflée (breathy vs creaky) vocalique. **Consonnes rares :** Distinctions rares comme consonnes implosives, éjectives, stops labio-vélaires (/kp, gb/), distinction voix soufflée / voix dure ou crépitée dans certaines langues Nilotic (ex. Dinka). Par exemple, certaines langues Komuz (comme Koma, Éthiopie occidentale) possèdent des consonnes éjectives, implosives et des contrastes vocaliques complexes. Le Dinka développe aussi distinction entre voix ou qualité vocale (voix chuchotée, breathy, creaky) pour les voyelles, ainsi qu'une longueur tripartite (voyelle courte-moyenne-longue). **Qualité de voix et longueur :** Le Dinka présente des distinctions complexes incluant voix soufflée vs voix stricte, trois longueurs de voyelles dans certains contextes, combinées avec les tons.",
-      "relationsWithNeighbors": " **Influence Afro-asiatique :** Contacts linguistiques avec langues Afro-asiatiques (Cushitiques, Arabes) dans le nord-Est (Éthiopie, Soudan). Certaines formes grammaticales TAM (Temps-Aspect-Mode) chez les langues Saharan et Nubian semblent avoir été influencées syntaxiquement par des langues Cushitiques. Certains vocabulaires Saharan montrent influence de langues berbères ou arabes dans le lexique de prêt (religieux, technique) - par exemple, Kanuri a emprunté des termes arabes modernes pour concepts modernes, mais pas toujours pour vocabulaire fondamental. **Influence Niger-Congo :** Contact prolongé avec langues Niger-Congo et Afro-Asiatiques entraîne partage de traits phonologiques ou morphosyntaxiques. Les bandes frontalières entre langues Nilotic et Bantu montrent échanges lexicaux dans le vocabulaire du cheptel, de la culture pastorale. Certaines langues contactées ont influencé les langues Centrales Sudaniques dans la structure consonantique et l'harmonie vocalique. Par exemple, harmonie vocalique ATR partagée avec langues Niger-Congo, ou tonalité acquise par contact dans certaines zones. **Influence Khoisan :** Échanges anciens dans le Sahara suggérés pour certaines zones, bien que moins documentés. **Emprunts lexicaux précis :** Songhay a acquis de nombreux emprunts lexicaux du Mande (Niger-Congo), dû à contact prolongé entre locuteurs Songhay et Mande, notamment dans l'argot ou vocabulaire culturel localement non fondamental.",
-      "keyInnovations": "Des linguistes y relèvent des innovations, c'est-à-dire des traits apparus dans ces langues plutôt qu'hérités d'une langue ancestrale : une façon de marquer le nombre (un seul élément, un ensemble, plusieurs), d'anciens suffixes remplacés par des variations de ton ou de voix, et des changements dans les sons. Le détail suit, avec ses références.\n\n **Système de nombre tripartite :** Le développement du système singulatif-collectif-pluriel (une forme pour un seul élément, une pour un ensemble, une pour plusieurs) dans les langues Nilotic est considéré comme une innovation propre à la famille, plutôt que simple conservation. Proto-Nilo-Saharan selon Blench (2010) aurait développé ce système singulier simple, pluriel avec suffixe, collectifs pour des groupes non dénombrables ou classes collectives. **Transformations morphologiques spéciales :** Dans les langues Nilotic occidentales (Dinka, etc.), affixes anciens remplacés ou transformés en traits suprasegmentaux (ton, voix : des variations de hauteur ou de qualité de la voix, sans rapport avec les consonnes ni les voyelles). Innovation dans les systèmes TAM (Temps-Aspect-Mode), notamment dans Saharan : élaboration récente de systèmes tense/aspect. **Innovations phonétiques :** Dans certaines langues Kuliak ou Kadu, innovations phonétiques / réduction ou perte de tonalité, simplification des systèmes consonantiques comparé aux hypothétiques protoformes. Dans certaines langues Nilotic orientales, un développement de voyelles longues, voix soufflée vs voix dure / crépitée, comme dans Dinka. **Trait novateur proposé :** Bender (2000) identifie un isoglosse (un mot ou un trait partagé par plusieurs langues) *kutuk* « bouche » et *(ko)TVS-(Vg)* pour « trois », partagé entre plusieurs langues comme Nilotic, Surmic, Taman, suggérant une innovation partagée dans Eastern Sudanic."
+      "typology": "Les langues nilo-sahariennes ont des structures très différentes les unes des autres : selon Pascal Boyeldieu, une typologie de ces langues aboutit surtout à une liste de traits très variés. L'ordre des mots en donne un exemple. Le kanouri et le fur placent le verbe à la fin de la phrase, après le sujet et l'objet ; le luo suit l'ordre sujet, verbe, objet, comme le français ; le maasaï place le verbe en tête, d'après l'atlas WALS. Parmi les langues soudaniques centrales, le groupe bongo-baguirmi suit l'ordre sujet, verbe, objet et emploie des prépositions, tandis que le groupe moru-mangbetu emploie surtout des postpositions, c'est-à-dire des mots placés après le nom, selon Pascal Boyeldieu et Pierre Nougayrol.",
+      "phonologicalFeatures": "Presque toutes les langues d'Afrique sont des langues à tons, où la hauteur de la voix suffit à distinguer deux mots, selon Ian Maddieson dans l'atlas WALS. Parmi les langues nilo-sahariennes qu'il décrit, le kanouri, le luo et le maasaï ont un système simple, qui oppose surtout un ton haut et un ton bas. Le dinka et le lugbara ont un système plus complexe, avec davantage de contrastes. Didier Demolin, Alain Ghio et Michael Karani citent aussi le maasaï parmi les langues de la vallée du Rift qui ont des sons et des systèmes sonores rares dans les langues du monde.",
+      "relationsWithNeighbors": "Les langues nilo-sahariennes côtoient depuis longtemps des langues d'autres familles, et il est souvent difficile de séparer ce qu'elles ont hérité et ce qu'elles ont emprunté. Le songhaï serait né d'une langue de communication touarègue, donc berbère, adoptée dans un milieu de langue mandé, selon Robert Nicolaï, rapporté par Pascal Boyeldieu. Le catalogue Glottolog estime que Nicolaï a défait le rattachement du songhaï au nilo-saharien proposé par Bender et par Ehret. En Afrique de l'Est, les langues nilotiques orientales seraient descendues vers le sud depuis le nord-ouest de leur aire actuelle, au contact des langues soudaniques centrales puis des langues couchitiques orientales, selon Rainer Vossen, cité par Boyeldieu.",
+      "keyInnovations": "Joseph Greenberg a appuyé son regroupement sur un vocabulaire commun et sur quelques éléments de grammaire qui reviennent d'une langue à l'autre, selon Pascal Boyeldieu : des pronoms en a, i et e pour « je », « tu » et « il », des marques du singulier et du pluriel en n et k ou en t et k, et un élément k- qui sert à former des noms. Pour classer des langues, les linguistes cherchent des innovations communes, c'est-à-dire des traits apparus une seule fois dans une langue ancêtre puis transmis à ses descendantes. Lionel Bender en 1997 et Christopher Ehret en 2001 ont cherché de telles innovations, mais Boyeldieu juge les conclusions du premier « peu convaincantes » et invite à considérer la méthode du second avec « la plus grande réserve ». Pour lui, une partie des ressemblances pourrait venir de langues voisines depuis des siècles, voire des millénaires."
     },
     "historyAndOrigins": {
-      "probableOrigin": " **Théorie linguistique dominante :** **Joseph H. Greenberg (1963)** - *The Languages of Africa* (Indiana University Press / Mouton) : proposition de la famille Nilo-Saharienne comme entité génétique unifiée, basée sur comparaison lexicale, morphologique, typologique. Greenberg avait combiné les anciens groupes \"Sudanic\" et divers ensembles non-affiliés. **Révisions linguistiques :** **Lionel Bender (1989-2000)** : révisions internes, repositionnement de branches (Kadu, Komuz, continuité ou divergences selon branches). Classification interne raffinée avec Chari-Nile, Core Nilo-Saharan, etc. **Christopher Ehret (2001)** propose classification avec deux branches principales, exclut certains groupes comme Kadu dans certains modèles. **Gerrit J. Dimmendaal, Roger Blench, Tom Güldemann** : analyses critiques modernes qui acceptent quelques branches mais rejettent ou considèrent comme incertaines l'unité de tout le groupe. Blench (2010) propose le système singulatif-collectif-pluriel comme innovation proto-Nilo-Saharan. **Théorie archéologique / paléoclimatique :** Approches génétiques et paléoclimatiques suggèrent l'expansion initiale possible en période humide du Sahara (\"Green Sahara\", African Humid Period) autour du 8e-6e millénaire avant notre ère, avec interaction des populations aquatiques, suivie d'aridification, fragmentation, migrations. Certaines branches (ex. Eastern Sudanic) estimées avoir une origine remontant au 5e millénaire avant J.-C. ou avant, dans le Néolithique ancien, basé sur reconstructions et estimations paléolinguistiques. **Théorie génétique :** Études génétiques modernes (Dobon et al. 2015, Mulindwa et al. 2020) montrent une structure complexe, avec des composantes partagées entre locuteurs de langues supposées Nilo-Sahariennes et d'autres groupes linguistiques, suggérant des emprunts, des contacts et des migrations, non une ascendance purement génétique uniformisée. Les frontières linguistiques ne coïncident pas toujours avec la structure génétique. **Théorie alternative / critique :** Pour certains linguistes (Glottolog, Starostin 2015-2016), Nilo-Saharien est un \"wastebasket\" (poubelle) de Greenberg sans preuves comparatives robustes pour toutes ses branches. Certains acceptent seulement des sous-ensembles du phylum, ou qualifient certaines branches comme \"non-déterminées\" ou isolées.",
-      "emergencePeriod": " **(1) Émergence historique du groupe linguistique (protolangage) :** Propositions situent le *Proto-Nilo-Saharien* entre 8000 à 12000 ans avant le présent (Holocène), souvent lié au climat humide du Sahara (African Humid Period, qui commence entre 13 000 et 9000 av. J.-C. environ et prend fin vers 3500-3000 av. J.-C., selon les études), mais pas de datation précise universellement acceptée. Certaines branches (ex. Eastern Sudanic) estimées remonter au 5e millénaire avant J.-C. ou avant, dans le Néolithique ancien. Estimations basées sur reconstructions paléolinguistiques et données archéologiques. **(2) Date de classification académique :** Le terme \"Nilo-Saharan\" tel que reconnu aujourd'hui date de **Greenberg (1963)** dans *The Languages of Africa*. Avant cela, études comparatives mentionnées dès fin XIXe / début XXe siècle : Heinrich Barth (1853) pour la branche Saharan, Heinrich Lepsius (1880) pour Nilotic, Diedrich Westermann (décennies 1910-1930) posant les groupes Sudanic. Greenberg avait publié des articles en 1949-1954 sur classification africaine, propositions de Macro-Sudanic, Chari-Nile, avant l'extension à Nilo-Saharan en 1963.",
-      "diffusion": " **Théorie 1 - Expansion liée au climat et cours d'eau :** Expansion liée aux bassins du Nil et du Chari pendant période humide du Sahara (6e-8e millénaire BCE), voie de peuplement suivant cours d'eau. Blench (2010) voit la distribution comme reflet des voies d'eau du Sahara vert il y a ~12000 ans. Diffusion depuis zone hypothétique autour du Soudan (région entre Nil et Chari), vers l'ouest (Songhay, Saharan vers Tchad, Niger, Nigéria), vers l'est (Éthiopie, Kenya, Tanzanie via branches Nilotic), vers le centre (République centrafricaine, Congo via Central Sudanic). **Théorie 2 - Diversification tardive avec contacts :** Alternative selon laquelle certaines branches (ex. Songhay, Kadu) sont très divergentes ou même non incluses ; la diffusion se serait faite par migrations plus dispersées, pas par unité homogène. Classification plutôt tardive, avec plusieurs vagues de contact, migrations et influences, sans qu'il y ait eu nécessairement un proto-groupe homogène. Usage de la linguistique comparée et de la génétique pour montrer qu'il y a eu des échanges lexicaux, des shifts linguistiques, hétérogénéité, pas une simple \"famille\" linéaire. **Théorie 3 - Migrations pastorales :** Expansion liée aux pratiques pastorales et à la domestication du bétail. Les groupes Nilotic associent leur expansion aux pratiques pastorales, se déplaçant vers l'est et le sud au fur et à mesure que le Sahara s'assèche. Migrations pastorales nilotiques au cours du IIIe-IIe millénaire BCE. Par exemple, peuple Kalenjin origine dans le bassin du Moyen Nil. **Théorie 4 - Contacts et fragmentations :** Classification comme \"macrophylum\" incluant contacts/diffusion lexicale avec Niger-Congo (Blench). Certains linguistes remettent en question l'unité génétique et considèrent certaines branches comme liées plutôt par contact que par ascendance commune.",
-      "historicalBreaks": " **Aridification du Sahara (~4200-4000 BCE) :** Fragmentation géographique due à aridification, isolement des branches linguistiques. Désertification du Sahara provoquant séparation des groupes et développement indépendant des branches. **Guerres et déplacements forcés :** Conflits et déplacements forcés au Soudan, au Tchad et en Ouganda (XIXe-XXe siècles, période coloniale et post-coloniale) ayant provoqué migrations et mélanges linguistiques. **Pressions linguistiques :** Pressions arabophones au nord (expansion de l'arabe au Soudan, au Tchad) et bantoues au sud (expansion des langues Bantu en Afrique orientale et centrale) ayant influencé les populations Nilo-Sahariennes. **Séparations internes :** Différenciation des branches Eastern Sudanic, Central Sudanic, Saharan, etc. au cours du temps, avec perte de compréhensibilité mutuelle.",
-      "contactZones": " **Zone sahélienne centrale :** Région entre le fleuve Niger, le lac Tchad, le Dar-Fur, etc., zones de contact entre langues Saharan (Kanuri, Zaghawa) et langues Niger-Congo (Mande, Adamawa-Ubangi). Zone frontalière Niger-Nigeria autour du lac Tchad pour les Saharan, Kanuri. **Corridor du Nil et régions adjacentes :** Vallée du Nil, régions du haut Soudan (Nubie), Soudan, Soudan du Sud, Tchad pour Nilotic, Nubian, Central Sudanic. Nil supérieur comme zone de métissage linguistique. **Corne de l'Afrique :** Zones frontalières entre Nilotic et Afro-asiatiques (Éthiopie, Soudan oriental) favorisant emprunts phonologiques et lexicaux. Région de Darfur, des Monts Nuba (Nuba Hills), zones frontalières Éthiopie-Soudan, etc. Nuba Hills (Soudan) pour les langues Kadu, Temein, Nyimang, etc., avec contacts entre groupes divers. **Afrique centrale orientale :** Ituri (RDC – Mangbetu, Lendu) comme zone de contact entre Central Sudanic et langues Niger-Congo (Bantu). Ouganda, Kenya, Tanzanie : zones de contact entre Nilotic et Bantu. **Routes spécifiques :** Fleuves Nil et Chari, lacs et corridors de la ceinture soudanaise, anciens cours d'eau sahariens durant les périodes humides qui servaient de corridors culturels et linguistiques.",
-      "majorEvents": " **~13000-3000 av. J.-C. (dates selon les études) :** Période humide du Sahara (African Humid Period), permettant migrations et expansion - contexte de diffusion initiale. **~6000-4000 av. J.-C. :** Communautés pastorales le long d'anciennes voies fluviales comme le Wadi Howar, pastoralisme précoce (proto-Nilotic) en réponse à l'aridité croissante. **Vers 5000-4000 av. J.-C. :** Possibles séparations des branches Eastern Sudanic selon reconstructions paléolinguistiques. **Vers 2200 av. J.-C. :** Événement dit « de 4,2 ka », c'est-à-dire d'il y a 4 200 ans (aridification du Sahara), provoquant fragmentation géographique et isolement des groupes linguistiques. **XIXe siècle :** Explorateurs, missionnaires, linguistes européens collectent données sur langues distinctes (Nilotic, Saharan, etc.). Heinrich Barth (1853) étudie les langues Saharan, Heinrich Lepsius (1880) classe les langues Nilotic. **Début XXe siècle :** Travaux de Westermann (décennies 1910-1930) posant les groupes Sudanic. Diedrich Westermann et Carl Meinhof développent classifications avec présupposés raciaux problématiques. **1949-1954 :** Articles de Greenberg sur classification africaine, propositions de Macro-Sudanic, Chari-Nile avant extension à Nilo-Saharan. **1963 :** Greenberg publie *The Languages of Africa*, pose officiellement \"Nilo-Saharan\" comme proposition de famille génétique. **Années 1980-2000 :** Révisions de Lionel Bender, Christopher Ehret, affinant la classification interne. **2015 :** Étude génétique de Dobon et al. dans *Scientific Reports* identifie composant propre aux locuteurs Nilo-Sahariens au Soudan / Sud-Soudan. **2020 :** Étude de Mulindwa et al. sur les Lugbara (Nord-Ouest de l'Ouganda) documente biodiversité génétique et signatures adaptatives."
+      "probableOrigin": "L'origine commune de ces langues reste une hypothèse discutée. Pour Joseph Greenberg, puis pour Lionel Bender et Christopher Ehret, elles descendent d'une même langue ancienne, rapporte Pascal Boyeldieu ; pour Boyeldieu, elles pourraient aussi ne pas former une seule famille. J. E. G. Sutton associe l'histoire de ces langues à une civilisation de pêcheurs qui s'étend il y a huit à dix mille ans, pendant une période très humide, de la vallée du Niger au bassin du Nil. Les études génétiques ne tranchent pas la question. En 2015, Begoña Dobon et ses collègues trouvent une composante génétique commune aux groupes de langue nilo-saharienne du Darfour et d'une partie des monts Nouba, proche de celle des Nilotes du Soudan du Sud. En 2020, Julius Mulindwa et ses collègues trouvent au contraire de grandes différences génétiques entre les Lugbara d'Ouganda et les Gumuz d'Éthiopie, deux peuples de langue dite nilo-saharienne.",
+      "emergencePeriod": "Aucune date ne fait consensus pour une langue ancêtre commune, puisque son existence même est discutée. J. E. G. Sutton voit dans l'éclatement de ces langues, dispersées du haut Niger au centre de la Tanzanie, le signe d'une ancienneté de plusieurs milliers d'années, plus grande que celle des langues niger-congo et afro-asiatiques arrivées ensuite dans la même zone. Le classement savant se date plus facilement : Joseph Greenberg sépare encore ces langues en plusieurs familles en 1949-1950, en rassemble une partie en 1954 et les réunit sous le nom de nilo-saharien en 1963.",
+      "diffusion": "Selon J. E. G. Sutton, ces langues se seraient étendues avec une civilisation de pêcheurs, il y a huit à dix mille ans, le long des lacs, des marais et des rivières alors nombreux entre le Sahara et la forêt. Il remarque que ces langues se sont surtout maintenues dans des régions de lacs, de marais et de rivières, où ce mode de vie a pu durer le plus longtemps. D'autres travaux suivent des groupes plus petits. Rainer Vossen propose que les langues nilotiques orientales se soient déplacées vers le sud depuis le nord-ouest de leur aire actuelle. Pascal Boyeldieu situe le foyer des langues sara-bongo-baguirmiennes dans le sud-ouest du Soudan, d'où une partie s'est étendue jusqu'au sud du Tchad.",
+      "historicalBreaks": "Pour J. E. G. Sutton, l'assèchement du climat se fait sentir à partir d'environ 5000 ans avant notre ère : le niveau des lacs baisse et l'économie fondée sur la pêche recule. Il relie à cette période humide puis à son recul l'éclatement des langues nilo-sahariennes en groupes très éloignés les uns des autres. Plus près de nous, plusieurs de ces langues sont en voie de disparition au Tchad, au Soudan et en Éthiopie, où elles reculent devant des langues plus répandues, selon Pascal Boyeldieu.",
+      "contactZones": "Dans la vallée du Niger, le songhaï porte la trace de langues berbères et mandé, selon l'explication de Robert Nicolaï. En Afrique de l'Est, les langues nilotiques orientales ont été en contact avec des langues soudaniques centrales, puis avec des langues couchitiques, selon Rainer Vossen. Dans la vallée du Rift, des langues nilotiques comme le maasaï côtoient des langues couchitiques, des langues bantoues et des langues à clics comme le hadza et le sandawe, selon Didier Demolin et ses collègues. Entre le Tchad, le Soudan, la République centrafricaine et la République démocratique du Congo, les langues soudaniques centrales se ressemblent beaucoup sans que leur parenté soit prouvée, et Pascal Boyeldieu et Pierre Nougayrol envisagent des contacts anciens entre elles.",
+      "majorEvents": "Il y a huit à dix mille ans, une période très humide favorise une civilisation de pêcheurs que J. E. G. Sutton associe à ces langues ; à partir d'environ 5000 ans avant notre ère, l'assèchement du climat la fait reculer. Le méroïtique, la langue écrite du royaume de Méroé, sur le Nil, disparaît vers le IVe siècle de notre ère ; Bruce Trigger propose d'y voir une langue soudanique orientale, rapporte Joseph Greenberg. En 1880, Richard Lepsius classe ces langues selon des idées de race ; en 1911, Diedrich Westermann les range parmi les langues soudanaises, et en 1912, Carl Meinhof range le maasaï parmi les langues dites hamitiques. Greenberg classe ces langues en plusieurs familles en 1949-1950, puis les réunit sous le nom de nilo-saharien en 1963. Lionel Bender en 1997 et Christopher Ehret en 2001 proposent chacun un arbre de cette famille, et le catalogue Glottolog la divise aujourd'hui en familles indépendantes."
     },
     "distribution": {
       "totalSpeakers": 70000000,
@@ -421,15 +514,17 @@
       },
       {
         "title": "Dobon, B.; Hassan, H.; Laayouni, H.; Comas, D.; et al. (2015) – \"The genetics of East African populations: a Nilo-Saharan component in the African genetic landscape\". *Scientific Reports*, 5:9996. Nature Publishing Group",
-        "url": null,
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4446898/",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Article en libre accès, lu en entier sur PubMed Central. Il étudie 500 personnes de neuf groupes du Soudan et trouve une composante génétique commune aux groupes de langue nilo-saharienne du Darfour et d'une partie des monts Nouba, proche de celle des Nilotes du Soudan du Sud."
       },
       {
         "title": "Mulindwa, J.; et al. (2020) – \"High Levels of Genetic Diversity within Nilo-Saharan Populations: Implications for Human Adaptation\". *The American Journal of Human Genetics*, 107(3), pp. 473-486",
-        "url": null,
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7477016/",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Article en libre accès, lu sur PubMed Central. Le résumé indique une différenciation génétique plus forte entre les Lugbara d'Ouganda et les Gumuz d'Éthiopie qu'entre deux populations de langue afro-asiatique ou niger-congo."
       },
       {
         "title": "Blench, Roger (2010) – Travaux sur le protolangage Nilo-Saharien et la typologie, notamment le système singulatif-collectif-pluratif. Dans *The Nilo-Saharan Languages*. Cambridge: Cambridge University Press (références indirectes via Britannica / articles de typologie)",
@@ -490,6 +585,267 @@
         "url": "https://www.ethnologue.com/language/luo",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Les langues nilo-sahariennes",
+        "author": "Pascal Boyeldieu",
+        "year": 2011,
+        "url": "https://shs.hal.science/halshs-00658528",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article du Dictionnaire des langues dirigé par E. Bonvini, J. Busutil et A. Peyraube (Presses universitaires de France, 2011, p. 185-190), lu en entier dans la version déposée par l'auteur sur l'archive ouverte HAL."
+      },
+      {
+        "title": "Les langues soudaniques centrales : essai d'évaluation",
+        "author": "Pascal Boyeldieu et Pierre Nougayrol",
+        "year": 2008,
+        "url": "https://shs.hal.science/halshs-00348133",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre de Problems of Linguistic-Historical Reconstruction in Africa, dirigé par D. Ibriszimow (Rüdiger Köppe, 2008, p. 9-29), lu dans la version déposée par les auteurs sur l'archive ouverte HAL. L'introduction situe ces langues et la première partie conclut que leur parenté n'est pas prouvée."
+      },
+      {
+        "title": "General History of Africa, I, ch. 12 : African linguistic classification",
+        "author": "Joseph H. Greenberg",
+        "year": 1981,
+        "url": "https://archive.org/details/unesco_general_history_africa_i",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, édition anglaise du volume I, dirigé par J. Ki-Zerbo, lue dans l'exemplaire numérisé sur archive.org : p. 295-297 pour Lepsius, Westermann et Meinhof, p. 305-307 pour la famille nilo-saharienne et le méroïtique, p. 308 pour le tableau des étapes du classement."
+      },
+      {
+        "title": "General History of Africa, I, ch. 19 : The prehistory of East Africa",
+        "author": "J. E. G. Sutton",
+        "year": 1981,
+        "url": "https://archive.org/details/unesco_general_history_africa_i",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, édition anglaise du volume I, dirigé par J. Ki-Zerbo, lue dans l'exemplaire numérisé sur archive.org. La section « The aquatic tradition of middle and eastern Africa », p. 481-484, relie les langues nilo-sahariennes à une civilisation de pêcheurs d'il y a huit à dix mille ans."
+      },
+      {
+        "title": "Les sons des langues de la vallée du Rift",
+        "author": "Didier Demolin, Alain Ghio et Michael Karani",
+        "year": 2023,
+        "url": "https://hal.science/hal-04596445",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Encadré du livre Le Grand Rift africain à la confluence des temps (Le Cherche-Midi, 2023, p. 150-151), lu dans la version déposée sur l'archive ouverte HAL."
+      },
+      {
+        "title": "Glottolog 5.3 — Family: Nilotic",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/nilo1247",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 3 novembre 2026. Commentaire sur l'appartenance de la famille : rien de concluant ne permet de la rattacher au soudanique oriental ni à un nilo-saharien complet ou partiel."
+      },
+      {
+        "title": "Glottolog 5.3 — Family: Central Sudanic",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/cent2225",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 3 novembre 2026. Même commentaire pour le soudanique central."
+      },
+      {
+        "title": "Glottolog 5.3 — Family: Songhay",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/song1307",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 3 novembre 2026. Commentaire : le rattachement au nilo-saharien proposé par Ehret ou Bender a été défait par Robert Nicolaï."
+      },
+      {
+        "title": "Glottolog 5.3 — Family: Maban",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/maba1274",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 3 novembre 2026. Commentaire : rien de concluant ne permet de rattacher le maban à un nilo-saharien complet ou partiel."
+      },
+      {
+        "title": "Glottolog 5.3 — Family: Furan",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/fura1235",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 3 novembre 2026. Même commentaire pour la famille furienne, qui compte deux langues dans le catalogue."
+      },
+      {
+        "title": "Glottolog 5.3 — Family: Koman",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/koma1264",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 3 novembre 2026. Même commentaire pour le koman ; les rapprochements avec le gumuz sont jugés trop peu nombreux et trop irréguliers pour conclure à une parenté."
+      },
+      {
+        "title": "Glottolog 5.3 — Family: Gumuz",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/gumu1250",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 3 novembre 2026. Famille de trois langues, traitée comme indépendante."
+      },
+      {
+        "title": "Glottolog 5.3 — Family: Kuliak",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/kuli1252",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 3 novembre 2026. Famille de trois langues, traitée comme indépendante."
+      },
+      {
+        "title": "Glottolog 5.3 — Family: Kadugli-Krongo",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/kadu1256",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 3 novembre 2026. Famille de six langues des monts Nouba, traitée comme indépendante."
+      },
+      {
+        "title": "Glottolog 5.3 — Family: Nubian",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/nubi1251",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 3 novembre 2026. Commentaire : rien de concluant ne permet de rattacher le nubien au soudanique oriental ni à un nilo-saharien complet ou partiel."
+      },
+      {
+        "title": "Glottolog 5.3 — Family: Surmic",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/surm1244",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 3 novembre 2026. Même commentaire pour les langues sourmiques."
+      },
+      {
+        "title": "Glottolog 5.3 — Language: Kunama",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/kuna1268",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 3 novembre 2026. Le kunama y est classé à part ; même commentaire sur le nilo-saharien."
+      },
+      {
+        "title": "Glottolog 5.3 — Language: Central Kanuri",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/cent2050",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 3 novembre 2026. La page indique les pays où la langue est parlée : Cameroun, Niger, Nigeria, Soudan et Tchad."
+      },
+      {
+        "title": "WALS Online — Family: Eastern Sudanic",
+        "author": "Matthew S. Dryer et Martin Haspelmath (dir.)",
+        "year": 2013,
+        "url": "https://wals.info/languoid/family/easternsudanic",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas mondial des structures des langues, publié en ligne par l'Institut Max-Planck d'anthropologie évolutionniste, lu le 3 novembre 2026. L'atlas range le soudanique oriental, le saharien, le soudanique central et le songhaï comme des familles distinctes."
+      },
+      {
+        "title": "WALS Online — Datapoint Kanuri / Order of Subject, Object and Verb",
+        "author": "Matthew S. Dryer et Martin Haspelmath (dir.)",
+        "year": 2013,
+        "url": "https://wals.info/valuesets/81A-knr",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas mondial des structures des langues, publié en ligne par l'Institut Max-Planck d'anthropologie évolutionniste, lu le 3 novembre 2026. Valeur donnée par Matthew S. Dryer : sujet, objet, verbe."
+      },
+      {
+        "title": "WALS Online — Datapoint Fur / Order of Subject, Object and Verb",
+        "author": "Matthew S. Dryer et Martin Haspelmath (dir.)",
+        "year": 2013,
+        "url": "https://wals.info/valuesets/81A-fur",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas mondial des structures des langues, publié en ligne par l'Institut Max-Planck d'anthropologie évolutionniste, lu le 3 novembre 2026. Valeur donnée par Matthew S. Dryer : sujet, objet, verbe."
+      },
+      {
+        "title": "WALS Online — Datapoint Luo / Order of Subject, Object and Verb",
+        "author": "Matthew S. Dryer et Martin Haspelmath (dir.)",
+        "year": 2013,
+        "url": "https://wals.info/valuesets/81A-luo",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas mondial des structures des langues, publié en ligne par l'Institut Max-Planck d'anthropologie évolutionniste, lu le 3 novembre 2026. Valeur donnée par Matthew S. Dryer : sujet, verbe, objet."
+      },
+      {
+        "title": "WALS Online — Datapoint Maasai / Order of Subject, Object and Verb",
+        "author": "Matthew S. Dryer et Martin Haspelmath (dir.)",
+        "year": 2013,
+        "url": "https://wals.info/valuesets/81A-maa",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas mondial des structures des langues, publié en ligne par l'Institut Max-Planck d'anthropologie évolutionniste, lu le 3 novembre 2026. Valeur donnée par Matthew S. Dryer : verbe, sujet, objet."
+      },
+      {
+        "title": "WALS Online — Chapter 13: Tone",
+        "author": "Ian Maddieson",
+        "year": 2013,
+        "url": "https://wals.info/chapter/13",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Chapitre de l'atlas mondial des structures des langues, lu le 3 novembre 2026. Il distingue les systèmes de tons simples, qui opposent surtout deux hauteurs, des systèmes complexes, et note que presque toutes les langues d'Afrique sont des langues à tons."
+      },
+      {
+        "title": "WALS Online — Datapoint Kanuri / Tone",
+        "author": "Matthew S. Dryer et Martin Haspelmath (dir.)",
+        "year": 2013,
+        "url": "https://wals.info/valuesets/13A-knr",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas mondial des structures des langues, publié en ligne par l'Institut Max-Planck d'anthropologie évolutionniste, lu le 3 novembre 2026. Valeur donnée par Ian Maddieson : système de tons simple."
+      },
+      {
+        "title": "WALS Online — Datapoint Luo / Tone",
+        "author": "Matthew S. Dryer et Martin Haspelmath (dir.)",
+        "year": 2013,
+        "url": "https://wals.info/valuesets/13A-luo",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas mondial des structures des langues, publié en ligne par l'Institut Max-Planck d'anthropologie évolutionniste, lu le 3 novembre 2026. Valeur donnée par Ian Maddieson : système de tons simple."
+      },
+      {
+        "title": "WALS Online — Datapoint Maasai / Tone",
+        "author": "Matthew S. Dryer et Martin Haspelmath (dir.)",
+        "year": 2013,
+        "url": "https://wals.info/valuesets/13A-maa",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas mondial des structures des langues, publié en ligne par l'Institut Max-Planck d'anthropologie évolutionniste, lu le 3 novembre 2026. Valeur donnée par Ian Maddieson : système de tons simple."
+      },
+      {
+        "title": "WALS Online — Datapoint Dinka / Tone",
+        "author": "Matthew S. Dryer et Martin Haspelmath (dir.)",
+        "year": 2013,
+        "url": "https://wals.info/valuesets/13A-din",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas mondial des structures des langues, publié en ligne par l'Institut Max-Planck d'anthropologie évolutionniste, lu le 3 novembre 2026. Valeur donnée par Ian Maddieson : système de tons complexe."
+      },
+      {
+        "title": "WALS Online — Datapoint Lugbara / Tone",
+        "author": "Matthew S. Dryer et Martin Haspelmath (dir.)",
+        "year": 2013,
+        "url": "https://wals.info/valuesets/13A-lug",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas mondial des structures des langues, publié en ligne par l'Institut Max-Planck d'anthropologie évolutionniste, lu le 3 novembre 2026. Valeur donnée par Ian Maddieson : système de tons complexe."
       }
     ]
   }
