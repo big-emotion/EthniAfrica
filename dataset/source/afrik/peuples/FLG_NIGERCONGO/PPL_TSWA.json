@@ -4,105 +4,514 @@
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["MOZ", "ZWE", "ZAF"],
   "classificationStatus": "contested",
+  "nameHistory": {
+    "summary": "Le nom Tswa désigne un peuple du sud du Mozambique, surtout de la province d'Inhambane, qui se nomme lui-même ainsi. Ce peuple porte aussi d'autres noms : Hlengwe, pour un ensemble plus large de clans, et Landim, un ancien nom employé par les Portugais. Les origines de ces noms sont discutées ; elles sont présentées plus bas avec leurs sources.",
+    "names": [
+      {
+        "nameText": "Tswa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tsc",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent ; leur langue est le xitswa.",
+        "periodLabel": "Écrit dès 1896",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tswa désigne un peuple et sa langue, le xitswa, écrit aussi Tshwa, Shitshwa ou Sheetshwa, selon le catalogue Glottolog. Une explication de son origine est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog — Tswa (tswa1255)",
+                "author": "Glottolog",
+                "year": 2026,
+                "url": "https://glottolog.org/resource/languoid/id/tswa1255",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde. La notice classe le tswa, code tsc, dans le groupe tswa-ronga (S.50) des langues bantoues du Sud, à côté du tsonga et du ronga. Elle relève cinq parlers : Hlengwe, Mandla, Ndxhonge, Nhayi et Tshwa, et trois pays : Mozambique, Afrique du Sud et Zimbabwe. Autres noms relevés : Kitshwa, Sheetshwa, Shitshwa, Tshwa et Xitshwa. Ses références citent An English-Tswa dictionary de J. A. Persson (Inhambane Mission Press, 1928) et Outlines of Tswa grammar de Josef A. Persson (Central Mission Press, 1932, 2e édition). Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1896,
+              "label": "1896"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tswa apparaît en 1896, sous la forme Tsoua, chez le missionnaire suisse Henri-Alexandre Junod. Il écrit que les Hlengoué de Madzibé, qui vivent le long du Changane jusqu'à Inhambane, y « sont connus sous le nom de Tsoua ». C'est la plus ancienne trace écrite de ce nom que nous ayons lue. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Tsoua",
+            "birth": true,
+            "sources": [
+              {
+                "title": "La tribu et la langue thonga, avec quelques échantillons du folklore thonga",
+                "author": "Henri-Alexandre Junod",
+                "year": 1896,
+                "url": "https://archive.org/details/latribuetlalangu00juno",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Lausanne, Imprimerie Georges Bridel, 1896, lu dans la numérisation d'Internet Archive. Ouvrage d'un missionnaire suisse. Page 4, note : « Il en est de même des Tsoua, des environs d'Inhambane, anciens sujets du chef Bingwane, qui, bien que décimés par les expéditions des souverains ngoni, ne se sont jamais laissé soumettre entièrement ». Pages 4 et 5 : le mot Landim ou Landin est « un autre nom que les Portugais appliquent depuis longtemps aux natifs de ces contrées » ; selon l'auteur, il « n'a pas été emprunté aux natifs et paraît avoir à l'origine le sens de : indigène, noir ». Page 6 : les Hlengoué de Madzibé occupent le pays de Gaza « tout le long de la Changane jusqu'à Inhambane, où ils sont connus sous le nom de Tsoua ». Page 25 : des missionnaires américains d'Inhambane « ont fait paraître […] une traduction tsoua des quatre évangiles ». Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tswa est écrit « Shitsua » en 1910 par Augusto Cabral, un administrateur colonial portugais. Pour lui, c'est le nom de la langue des Landins du district d'Inhambane : « O dialecto landim denomina-se Shitsua ».",
+            "formAsWritten": "Shitsua",
+            "sources": [
+              {
+                "title": "Raças, usos e costumes dos indigenas do districto de Inhambane, acompanhado de um vocabulario em shitsua, guitonga e shishope",
+                "author": "Augusto Cabral",
+                "year": 1910,
+                "url": "https://archive.org/details/raasusosecostum00cabrgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 14",
+                "notes": "Lourenço Marques, Imprensa Nacional, 1910, lu dans la numérisation d'Internet Archive. Ouvrage d'un administrateur colonial portugais, écrit avec le vocabulaire racial de l'époque. Pages 13 et 14 : l'auteur reprend l'explication de Torre do Valle, pour qui Landim viendrait du verbe ku landya, « suivre » ; les habitants auraient répondu aux premiers Portugais « di landi, segue-me ou di landya, eu sou escravo, ou súbdito ». Page 14 : « O dialecto landim denomina-se Shitsua ». Page 15 : le district compte « Landins, Bashopes e Batongas », et l'auteur situe les Landins à Vilanculos, Massinga, Panga, Morrumbene, Homoine, Maxixe, Panda, Inharrime, Zavala, Guilala et Cumbana. Page 17 : les Landins pratiquent la circoncision, comme les Batongas et les Bashopes. Page 25 : en 1847, « o Maunze, chefe da tribu Landim-Macuacua, invadido pelo Manicusso », demande la protection du gouverneur d'Inhambane. Introduction du vocabulaire : « o dialecto Landim ou Shitsua tende a avassallar os outros dois ». Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tswa apparaît sous la forme Ba-Tswa en 1912, toujours chez Henri-Alexandre Junod. Il range alors « les Ba-Tswa d'Inhambane » parmi les trois branches du grand groupe hlengwe, avec les clans Hlenbengwane, Yingwane et Nkumbi.",
+            "formAsWritten": "Ba-Tswa",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive. Page 18 : le groupe hlengwe comprend « the Hlengwe proper », « the Ba-Tswa of Inhambane with the Hlenbengwane, Yingwane, Nkumbi » et « the Nwanati with the Makwakwa, Khambane, Ndindane ». Page 19 : des milliers de travailleurs « coming every year to the mines » du Transvaal s'installent dans les villes. Page 271 : « Bingwane, the chief of the Ba-Tswa, had taken so many wives that he hardly knew them ». Appendice I : un pasteur africain, le révérend S. Malale, a relevé le parler « of the Madzibi people dwelling in the hinterland of Inhambane », et « The American missionaries have already published many books in the Tswa sub-dialect spoken in the vicinity of Inhambane ». Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1914,
+              "to": 1914,
+              "label": "1914"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tswa désigne en 1914, chez Henri-Alexandre Junod, une branche du grand groupe hlengwe, entre le Limpopo et Inhambane. Parmi eux vivent, ajoute-t-il, des clans venus du pays nyai ou kalanga, au sud de la Rhodésie, l'actuel Zimbabwe.",
+            "sources": [
+              {
+                "title": "The Condition of the Natives of South-East Africa in the Sixteenth Century, according to the Early Portuguese Documents",
+                "author": "Henri-Alexandre Junod",
+                "year": 1914,
+                "url": "https://archive.org/details/conditionofnativ00juno",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15",
+                "notes": "Le Cap, South African Association for the Advancement of Science, 1914, lu dans la numérisation d'Internet Archive. Page 15 : entre le Limpopo et Inhambane vivent les Ba-Chopi, les Tonga d'Inhambane et « the Ba-Tswa, who are but a branch of the big Hlengwe group which belongs to the Thonga-Shangaan tribe ». L'auteur ajoute que beaucoup de ces clans « emigrated from the Nyai or Kalanga groups, countries in the South of Rhodesia » et cite « the clans of Khambane and Matewakwa called by the common name of Nwanati ». Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposée en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tswa serait la forme hlengwe de Ba-Tjwa, le nom que les Thonga donnaient aux Zoulous, lui-même proche de Ba-Rwa, le nom que les Sotho donnaient aux gens des montagnes, selon Henri-Alexandre Junod. Les peuples, explique-t-il, nomment souvent leurs voisins d'après la direction où ils vivent.",
+            "hypothesisGroup": "origine du nom Tswa",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18 et note",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive. La note de la page 18 écrit : « This name Ba-Tswa, is the Hlengwe form of Ba-Tjwa, a term by which the Zulu have been commonly designated amongst the Thonga. Ba-Tjwa is probably the corresponding form for Ba-Rwa, an appellation by which the Suto of the Zoutpansberg plains used to call the tribes of the mountains ». Elle ajoute que les habitants, pour nommer des peuples étrangers, regardent surtout la direction où ils vivent. Consulté le 3 novembre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hlengwe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un grand groupe de clans du sud du Mozambique, dont les Tswa font partie.",
+        "periodLabel": "Fin du XVIIe siècle, selon un historien",
+        "accounts": [
+          {
+            "period": {
+              "from": 1670,
+              "to": 1699,
+              "label": "Fin du XVIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Hlengwe serait apparu à la fin du XVIIe siècle pour désigner les groupes dispersés dans l'intérieur aride, entre les fleuves Save, Limpopo et Changane, selon l'historien Vitor Alexandre Lourenço.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Moçambique: memórias sociais de ontem, dilemas políticos de hoje",
+                "author": "Vitor Alexandre Lourenço",
+                "year": 2010,
+                "url": "http://hdl.handle.net/10071/10996",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 134",
+                "notes": "Gerpress, 2010, livre déposé dans le dépôt de l'Iscte – Institut universitaire de Lisbonne ; lu dans la troisième partie, sur l'histoire du sud du Mozambique. Page 134 : le nom Hlengwe « deve ter surgido nos finais do século XVII » pour désigner les groupes dispersés entre le Save, le Limpopo et le Changane. Page 135 : au premier quart du XVIIIe siècle, « já se havia familiarizado o termo Landins para englobar todos os elementos integrados nessa cultura Tsonga » ; une communauté d'origine nwanati fonde le royaume de Macuacua entre le Changane, l'Inharrime et la côte d'Inhambane ; le royaume de Dzivi (Mative) s'étend après la mort de son chef Macia en 1775, et une partie des Mative part vers le Save, où elle fonde trois petites chefferies, « Mazivi, Muabsa e Manhiça, ainda classificadas entre os Tswa ». Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1700,
+              "label": "Avant le XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Hlengwe était porté, avant le XVIIIe siècle, par un groupe qui vivait dans le royaume de Nyaka, au sud de l'actuelle Maputo, selon les chercheurs Mandla Mathebula et Sekgothe Mokgoatšana. Ce groupe se nommait aussi Tsonga ou Rhonga.",
+            "sources": [
+              {
+                "title": "The ‘polyonymous identity’ of the Hlengwe people of Zimbabwe and their struggle for a ‘collective proper name’",
+                "author": "Mandla D. Mathebula et Sekgothe Mokgoatšana",
+                "year": 2020,
+                "url": "https://doi.org/10.4102/hts.v76i4.6192",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article paru dans HTS Teologiese Studies / Theological Studies, vol. 76, n° 4, 2020, en accès libre, auteurs de l'université du Limpopo. Les Hlengwe forment quatre sections, dans les provinces d'Inhambane et de Gaza au Mozambique, dans la province du Limpopo en Afrique du Sud et au Zimbabwe ; « Before the 18th century, these sections constituted a single group that was resident in the Nyaka kingdom, south of Maputo ». Le royaume de Nyaka existait à la fin du XIVe siècle, selon David Hedges (1978) qu'ils citent. Au début du XVIIIe siècle, le chef Bangwana a deux fils, Madzivi et Mantsena ; le nom de lignée Cawuke « seems to have disappeared in the Madzivi group when this group split and settled in Inhambane », et « The Hlengwe of Zimbabwe are the descendants of Mantsena ». Les Hlengwe sont au Xikundwini, chez les Sono, vers le milieu du XVIIIe siècle. Au Zimbabwe, « Even the Hlengwe people began to call themselves ‘baShangane’ » ; les auteurs concluent qu'ils forment un groupe distinct des Tsonga et des Shangaan. Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1896,
+              "label": "1896"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hlengwe est écrit « hlengoué » en 1896 par Henri-Alexandre Junod. Il situe le berceau du groupe dans le pays de Tchaouké, à l'est du Limpopo, et compte parmi ses branches les Hlengoué de Madzibé, connus à Inhambane sous le nom de Tsoua.",
+            "formAsWritten": "hlengoué",
+            "sources": [
+              {
+                "title": "La tribu et la langue thonga, avec quelques échantillons du folklore thonga",
+                "author": "Henri-Alexandre Junod",
+                "year": 1896,
+                "url": "https://archive.org/details/latribuetlalangu00juno",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Lausanne, Imprimerie Georges Bridel, 1896, lu dans la numérisation d'Internet Archive. Ouvrage d'un missionnaire suisse. Page 4, note : « Il en est de même des Tsoua, des environs d'Inhambane, anciens sujets du chef Bingwane, qui, bien que décimés par les expéditions des souverains ngoni, ne se sont jamais laissé soumettre entièrement ». Pages 4 et 5 : le mot Landim ou Landin est « un autre nom que les Portugais appliquent depuis longtemps aux natifs de ces contrées » ; selon l'auteur, il « n'a pas été emprunté aux natifs et paraît avoir à l'origine le sens de : indigène, noir ». Page 6 : les Hlengoué de Madzibé occupent le pays de Gaza « tout le long de la Changane jusqu'à Inhambane, où ils sont connus sous le nom de Tsoua ». Page 25 : des missionnaires américains d'Inhambane « ont fait paraître […] une traduction tsoua des quatre évangiles ». Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hlengwe désigne en 1912, chez Henri-Alexandre Junod, toute la population thonga de l'est et du nord-est, du Limpopo jusqu'à Inhambane. Junod note qu'il ne convient vraiment qu'aux clans du nord de cet ensemble, et il le garde faute de mieux.",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17-18",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive. Page 17 : « In the Djonga dialect, Hlengwe means wealth. I do not know if this be the etymology of the name ». Page 18 : le nom désigne toute la population thonga de l'est et du nord-est, du Limpopo à Inhambane et à la Sabie du Nord, mais « applies properly only to the Northern part of the Eastern clans ». Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposée en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hlengwe viendrait peut-être du mot qui veut dire « richesse » dans le parler djonga, selon Henri-Alexandre Junod, qui n'en est pas sûr lui-même.",
+            "hypothesisGroup": "origine du nom Hlengwe",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17-18",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive. Page 17 : « In the Djonga dialect, Hlengwe means wealth. I do not know if this be the etymology of the name ». Page 18 : le nom désigne toute la population thonga de l'est et du nord-est, du Limpopo à Inhambane et à la Sabie du Nord, mais « applies properly only to the Northern part of the Eastern clans ». Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2020,
+              "label": "Usage décrit de 2014 à 2020"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom Hlengwe désigne aujourd'hui, au Zimbabwe, un peuple du district de Chiredzi que l'on appelle aussi Shangani ou Shangaan. L'historien Taderera Hebert Chisi juge ce second nom faux, car les Hlengwe n'étaient pas à l'origine des Shangaan. Mathebula et Mokgoatšana notent pourtant que beaucoup de Hlengwe se disent aujourd'hui baShangane.",
+            "sources": [
+              {
+                "title": "Colonial Economic Disempowerment and the Responses of the Hlengwe Peasantry of the South East Lowveld of Zimbabwe: 1890-1965",
+                "author": "Taderera Hebert Chisi",
+                "year": 2014,
+                "url": "https://www.journals.codesria.org/index.php/az/article/download/1817/1876/2040",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 167",
+                "notes": "Article paru dans Afrika Zamani, n° 20-21, 2012-2013, publié par le Codesria et l'Association des historiens africains en 2014, p. 165-194. Page 167 : les Hlengwe « are mostly found in the Chiredzi district but also occupy parts of the Mwenezi and Zaka districts » ; « They are also commonly referred to as the ‘Shangani’, yet that is a distortion of the truth for the Hlengwe were not originally Shangani people ». En 1890, leur pays était partagé entre des chefs, dont Sengwe, Gezani, Tsovani, Chisa et Chilonga, « All had their clearly marked boundaries ». Page 168 : cueillette, chasse, pêche, agriculture et commerce, ainsi que l'élevage, le sel, la poterie et la vannerie. Consulté le 3 novembre 2026."
+              },
+              {
+                "title": "The ‘polyonymous identity’ of the Hlengwe people of Zimbabwe and their struggle for a ‘collective proper name’",
+                "author": "Mandla D. Mathebula et Sekgothe Mokgoatšana",
+                "year": 2020,
+                "url": "https://doi.org/10.4102/hts.v76i4.6192",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article paru dans HTS Teologiese Studies / Theological Studies, vol. 76, n° 4, 2020, en accès libre, auteurs de l'université du Limpopo. Les Hlengwe forment quatre sections, dans les provinces d'Inhambane et de Gaza au Mozambique, dans la province du Limpopo en Afrique du Sud et au Zimbabwe ; « Before the 18th century, these sections constituted a single group that was resident in the Nyaka kingdom, south of Maputo ». Le royaume de Nyaka existait à la fin du XIVe siècle, selon David Hedges (1978) qu'ils citent. Au début du XVIIIe siècle, le chef Bangwana a deux fils, Madzivi et Mantsena ; le nom de lignée Cawuke « seems to have disappeared in the Madzivi group when this group split and settled in Inhambane », et « The Hlengwe of Zimbabwe are the descendants of Mantsena ». Les Hlengwe sont au Xikundwini, chez les Sono, vers le milieu du XVIIIe siècle. Au Zimbabwe, « Even the Hlengwe people began to call themselves ‘baShangane’ » ; les auteurs concluent qu'ils forment un groupe distinct des Tsonga et des Shangaan. Consulté le 3 novembre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Landim",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Portugais",
+        "shortLine": "Un ancien nom portugais pour les peuples de langue tsonga, dont les Tswa d'Inhambane.",
+        "periodLabel": "Courant dès le début du XVIIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1700,
+              "to": 1725,
+              "label": "Premier quart du XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Landim, au pluriel Landins, était déjà courant au premier quart du XVIIIe siècle pour désigner l'ensemble des peuples de culture tsonga du sud du Mozambique, selon l'historien Vitor Alexandre Lourenço.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Moçambique: memórias sociais de ontem, dilemas políticos de hoje",
+                "author": "Vitor Alexandre Lourenço",
+                "year": 2010,
+                "url": "http://hdl.handle.net/10071/10996",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 135",
+                "notes": "Gerpress, 2010, livre déposé dans le dépôt de l'Iscte – Institut universitaire de Lisbonne ; lu dans la troisième partie, sur l'histoire du sud du Mozambique. Page 134 : le nom Hlengwe « deve ter surgido nos finais do século XVII » pour désigner les groupes dispersés entre le Save, le Limpopo et le Changane. Page 135 : au premier quart du XVIIIe siècle, « já se havia familiarizado o termo Landins para englobar todos os elementos integrados nessa cultura Tsonga » ; une communauté d'origine nwanati fonde le royaume de Macuacua entre le Changane, l'Inharrime et la côte d'Inhambane ; le royaume de Dzivi (Mative) s'étend après la mort de son chef Macia en 1775, et une partie des Mative part vers le Save, où elle fonde trois petites chefferies, « Mazivi, Muabsa e Manhiça, ainda classificadas entre os Tswa ». Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1896,
+              "label": "1896"
+            },
+            "era": "colonial",
+            "aspect": "imposition",
+            "statement": "Le nom Landim est, selon Henri-Alexandre Junod, un nom que les Portugais donnent depuis longtemps aux habitants de ces régions. Junod écrit qu'il n'a pas été emprunté aux habitants, qu'il est inconnu à l'intérieur du pays, et il refuse de l'employer.",
+            "sources": [
+              {
+                "title": "La tribu et la langue thonga, avec quelques échantillons du folklore thonga",
+                "author": "Henri-Alexandre Junod",
+                "year": 1896,
+                "url": "https://archive.org/details/latribuetlalangu00juno",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4-5",
+                "notes": "Lausanne, Imprimerie Georges Bridel, 1896, lu dans la numérisation d'Internet Archive. Ouvrage d'un missionnaire suisse. Page 4, note : « Il en est de même des Tsoua, des environs d'Inhambane, anciens sujets du chef Bingwane, qui, bien que décimés par les expéditions des souverains ngoni, ne se sont jamais laissé soumettre entièrement ». Pages 4 et 5 : le mot Landim ou Landin est « un autre nom que les Portugais appliquent depuis longtemps aux natifs de ces contrées » ; selon l'auteur, il « n'a pas été emprunté aux natifs et paraît avoir à l'origine le sens de : indigène, noir ». Page 6 : les Hlengoué de Madzibé occupent le pays de Gaza « tout le long de la Changane jusqu'à Inhambane, où ils sont connus sous le nom de Tsoua ». Page 25 : des missionnaires américains d'Inhambane « ont fait paraître […] une traduction tsoua des quatre évangiles ». Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1896,
+              "label": "Proposée en 1896"
+            },
+            "era": "colonial",
+            "statement": "Le nom Landim aurait d'abord voulu dire « indigène » ou « noir », selon Henri-Alexandre Junod. Les Ronga des environs de Lourenço Marques, l'actuelle Maputo, l'employaient encore dans ce sens pour tous les Noirs.",
+            "hypothesisGroup": "origine du nom Landim",
+            "sources": [
+              {
+                "title": "La tribu et la langue thonga, avec quelques échantillons du folklore thonga",
+                "author": "Henri-Alexandre Junod",
+                "year": 1896,
+                "url": "https://archive.org/details/latribuetlalangu00juno",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4-5",
+                "notes": "Lausanne, Imprimerie Georges Bridel, 1896, lu dans la numérisation d'Internet Archive. Ouvrage d'un missionnaire suisse. Page 4, note : « Il en est de même des Tsoua, des environs d'Inhambane, anciens sujets du chef Bingwane, qui, bien que décimés par les expéditions des souverains ngoni, ne se sont jamais laissé soumettre entièrement ». Pages 4 et 5 : le mot Landim ou Landin est « un autre nom que les Portugais appliquent depuis longtemps aux natifs de ces contrées » ; selon l'auteur, il « n'a pas été emprunté aux natifs et paraît avoir à l'origine le sens de : indigène, noir ». Page 6 : les Hlengoué de Madzibé occupent le pays de Gaza « tout le long de la Changane jusqu'à Inhambane, où ils sont connus sous le nom de Tsoua ». Page 25 : des missionnaires américains d'Inhambane « ont fait paraître […] une traduction tsoua des quatre évangiles ». Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "Proposée en 1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Landim viendrait du verbe ku landya, « suivre », selon l'explication de Torre do Valle reprise par Augusto Cabral. Aux premiers Portugais qui demandaient qui ils étaient, les habitants auraient répondu « di landya », compris comme « je suis esclave » ou « je suis sujet ».",
+            "hypothesisGroup": "origine du nom Landim",
+            "sources": [
+              {
+                "title": "Raças, usos e costumes dos indigenas do districto de Inhambane, acompanhado de um vocabulario em shitsua, guitonga e shishope",
+                "author": "Augusto Cabral",
+                "year": 1910,
+                "url": "https://archive.org/details/raasusosecostum00cabrgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 13-14",
+                "notes": "Lourenço Marques, Imprensa Nacional, 1910, lu dans la numérisation d'Internet Archive. Ouvrage d'un administrateur colonial portugais, écrit avec le vocabulaire racial de l'époque. Pages 13 et 14 : l'auteur reprend l'explication de Torre do Valle, pour qui Landim viendrait du verbe ku landya, « suivre » ; les habitants auraient répondu aux premiers Portugais « di landi, segue-me ou di landya, eu sou escravo, ou súbdito ». Page 14 : « O dialecto landim denomina-se Shitsua ». Page 15 : le district compte « Landins, Bashopes e Batongas », et l'auteur situe les Landins à Vilanculos, Massinga, Panga, Morrumbene, Homoine, Maxixe, Panda, Inharrime, Zavala, Guilala et Cumbana. Page 17 : les Landins pratiquent la circoncision, comme les Batongas et les Bashopes. Page 25 : en 1847, « o Maunze, chefe da tribu Landim-Macuacua, invadido pelo Manicusso », demande la protection du gouverneur d'Inhambane. Introduction du vocabulaire : « o dialecto Landim ou Shitsua tende a avassallar os outros dois ». Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Landim désigne en 1910, chez Augusto Cabral, l'un des trois peuples du district d'Inhambane, à côté des Bashopes et des Batongas. Cabral garde ce nom parce qu'il est connu depuis longtemps dans le district, même des habitants.",
+            "formAsWritten": "Landins",
+            "sources": [
+              {
+                "title": "Raças, usos e costumes dos indigenas do districto de Inhambane, acompanhado de um vocabulario em shitsua, guitonga e shishope",
+                "author": "Augusto Cabral",
+                "year": 1910,
+                "url": "https://archive.org/details/raasusosecostum00cabrgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 13-15",
+                "notes": "Lourenço Marques, Imprensa Nacional, 1910, lu dans la numérisation d'Internet Archive. Ouvrage d'un administrateur colonial portugais, écrit avec le vocabulaire racial de l'époque. Pages 13 et 14 : l'auteur reprend l'explication de Torre do Valle, pour qui Landim viendrait du verbe ku landya, « suivre » ; les habitants auraient répondu aux premiers Portugais « di landi, segue-me ou di landya, eu sou escravo, ou súbdito ». Page 14 : « O dialecto landim denomina-se Shitsua ». Page 15 : le district compte « Landins, Bashopes e Batongas », et l'auteur situe les Landins à Vilanculos, Massinga, Panga, Morrumbene, Homoine, Maxixe, Panda, Inharrime, Zavala, Guilala et Cumbana. Page 17 : les Landins pratiquent la circoncision, comme les Batongas et les Bashopes. Page 25 : en 1847, « o Maunze, chefe da tribu Landim-Macuacua, invadido pelo Manicusso », demande la protection du gouverneur d'Inhambane. Introduction du vocabulaire : « o dialecto Landim ou Shitsua tende a avassallar os outros dois ». Consulté le 3 novembre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Tswa",
       "selfAppellation": "Vatswa",
-      "exonyms": [
-        "Tshwa",
-        "Xitswa speakers",
-        "Kitshwa",
-        "Hlengwe (pour le dialecte zimbabween)",
-        "Batswa"
-      ],
-      "originOfExonyms": "Tswa est le terme anglophone et portugais courant. Tshwa est une graphie alternative. Le nom Vatswa est l'appellation endonymique en xitswa. La langue est appelee xitswa ou xiTswa. Les locuteurs du dialecte Hlengwe au Zimbabwe sont parfois appeles Hlengwe ou Vatswa du Zimbabwe.",
-      "whyProblematic": "Les Tswa sont souvent consideres par les recenseurs mozambicains et par les peuples voisins comme un sous-dialecte des Tsonga plutot que comme un peuple distinct. Cette ambiguite rend les donnees demographiques difficiles a etablir. La Bible de reference ecrite est basee sur la grammaire tsonga; xitswa s'en distingue par des traits phonologiques et lexicaux propres.",
-      "contemporaryUsage": "Vatswa est l'appellation endonymique. Les recensements mozambicains classent souvent les Tswa avec les Tsonga. En contexte academique et missionnaire, Tswa est distingue comme langue separee (ISO 639-3: tsc). La denomination xitswa est utilisee dans les publications chretiennes et linguistiques.",
+      "exonyms": ["Hlengwe", "Landim", "Shangaan (au Zimbabwe)"],
+      "spellingAliases": ["Tshwa", "Tsoua", "Ba-Tswa", "Batswa"],
+      "originOfExonyms": "Le nom Tswa apparaît par écrit en 1896, sous la forme Tsoua, chez le missionnaire suisse Henri-Alexandre Junod. En 1912, le même auteur propose d'y voir la forme hlengwe de Ba-Tjwa, le nom que les Thonga donnaient aux Zoulous. Le nom Hlengwe désigne un ensemble plus large de clans, dont les Tswa font partie selon Junod. Il viendrait peut-être du mot qui veut dire « richesse » dans le parler djonga, une explication dont Junod lui-même doute. Le nom Landim est un ancien nom portugais pour les peuples de langue tsonga. Il aurait voulu dire « indigène » ou « noir » selon Junod, ou viendrait du verbe ku landya, « suivre », selon l'explication que reprend l'administrateur colonial Augusto Cabral en 1910.",
+      "whyProblematic": "Le nom Landim vient des Portugais et non des habitants, selon Junod. L'une des explications de son origine le relie aux mots « esclave » ou « sujet ». Le nom Hlengwe pose une autre difficulté : selon les auteurs, il couvre un ensemble de clans plus large que les Tswa. Au Zimbabwe, les Hlengwe sont souvent appelés Shangani ou Shangaan, un nom que l'historien Taderera Hebert Chisi juge faux, car ils n'étaient pas à l'origine des Shangaan.",
+      "contemporaryUsage": "Les Tswa se nomment Vatswa ; Henri-Alexandre Junod écrivait Ba-Tswa en 1912. Leur langue est le xitswa. Le catalogue Glottolog relève aussi les formes Tshwa, Xitshwa, Shitshwa, Sheetshwa et Kitshwa. Au Mozambique, la langue est écrite Xitshwa par le premier séminaire de normalisation de l'orthographe, en 1989, puis Citshwa par le deuxième, en 2000, selon le linguiste Gregório Firmino. Au Zimbabwe, beaucoup de Hlengwe se disent aujourd'hui baShangane, selon Mathebula et Mokgoatšana.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null,
       "linguisticFamily": "FLG_NIGERCONGO",
-      "ethnoLinguisticGroup": "Bantou (Zone S) — famille Tswa-Ronga (S.50), langue Tswa S.51",
-      "historicalRegion": "Province d'Inhambane (Mozambique meridional), province de Gaza (Mozambique), zones frontieres du Zimbabwe meridional",
+      "ethnoLinguisticGroup": "Bantou du Sud, groupe tswa-ronga (S.50), langue tswa (S.51)",
+      "historicalRegion": "Province d'Inhambane et vallée du Changane, au sud du Mozambique ; basses terres du sud-est du Zimbabwe pour les Hlengwe",
       "currentCountries": ["MOZ", "ZWE", "ZAF"]
     },
     "ethnicities": [
-      "Dzivi (Dzibi) — principal groupe tswa, province d'Inhambane (Mozambique)",
-      "Hlengwe — groupe s'etendant vers le Zimbabwe meridional; Maho (2009) le considere comme langue separee",
-      "Mhandla — troisieme groupe principal de la confedeartion tswa",
-      "Nwanati (Makwakwa) — sous-groupe place traditionnellement au sud des Hlengwe",
-      "Nzonge (Gwambe) — sous-groupe dans la region entre les Dzivi et les Chopi",
-      "Vatswa urbanises de Maputo — population issue des migrations dues aux guerres civiles et a la recherche d'emploi"
+      "Dzivi, ou Madzibi : groupe de l'arrière-pays d'Inhambane",
+      "Hlengwe : groupe qui s'étend jusqu'au sud-est du Zimbabwe",
+      "Mandla : parler relevé par Glottolog",
+      "Nwanati : clans de Khambane, de Matewakwa et de Makwakwa",
+      "Ndxhonge et Nhayi : parlers relevés par Glottolog"
     ],
     "origins": {
-      "ancientOrigins": "Les ancetres des Tswa, comme ceux des autres peuples du groupe Tswa-Ronga (Tsonga, Ronga, Tswa), sont des Bantous qui migrerent depuis l'Afrique centrale (autour de 200-500 apr. J.-C.) pour s'etablir dans le Mozambique meridional. Les Tswa constituent l'une des trois branches du macro-groupe Tsonga (Vatsonga), avec les Ronga et les Tsonga/Shangaan. Leurs ancetres etaient parmi les premiers habitants connus du Mozambique meridional avant le 15e siecle. Le sous-groupe Hlengwe est lie au royaume de Nyaka (Nyaka kingdom), dont l'origine est datee du 14e siecle selon le Joshua Project.",
-      "formationPeriod": "L'identite tswa distincte s'est consolidee au sein du macro-groupe Tsonga au fil des siecles, en raison de la dispersion geographique dans des zones legerement differentes du Mozambique meridional. Les Tswa habitaient principalement l'arriere-pays de la province d'Inhambane, tandis que les Ronga etaient sur la cote autour de Maputo et les Tsonga/Shangaan plus au nord. Le premier dictionnaire anglais-tswa fut publie en 1928 par le rev. J. A. Persson de la Methodist Episcopal Mission.",
+      "ancientOrigins": "Les Tswa font partie, selon Henri-Alexandre Junod en 1912, du grand groupe hlengwe, l'une des branches des peuples de langue thonga, aujourd'hui dite tsonga. Selon les chercheurs Mandla Mathebula et Sekgothe Mokgoatšana, les Hlengwe vivaient avant le XVIIIe siècle dans le royaume de Nyaka, au sud de l'actuelle Maputo. Ce royaume existait déjà à la fin du XIVe siècle, d'après les travaux de l'historien David Hedges qu'ils citent. Les Portugais l'ont rencontré au milieu du XVIe siècle.",
+      "formationPeriod": "Au début du XVIIIe siècle, les Hlengwe étaient dirigés par Bangwana, selon Mathebula et Mokgoatšana. Le groupe de Madzivi, l'un de ses fils, s'est séparé et installé dans la région d'Inhambane. Son autre fils, Mantsena, est l'ancêtre des Hlengwe du Zimbabwe. L'historien Vitor Alexandre Lourenço décrit ensuite le royaume de Dzivi, aussi appelé Mative, qui s'agrandit après la mort de son chef Macia, en 1775.",
       "migrationRoutes": [
-        "Depuis l'Afrique centrale vers le Mozambique meridional (200-500 apr. J.-C.)",
-        "Installation progressive dans l'arriere-pays de la province d'Inhambane (axe ouest)",
-        "Extension du groupe Hlengwe vers le Zimbabwe meridional (province de Masvingo/Matabeleland Sud)",
-        "Migrations economiques vers les mines d'Afrique du Sud (20e siecle) et vers Maputo",
-        "Mouvements de refuge vers les hauteurs et les villes durant les guerres nguni (XIXe s.) et civiles mozambicaines (1977-1992)"
+        "Du royaume de Nyaka, au sud de l'actuelle Maputo, vers le nord, au XVIIIe siècle, selon Mathebula et Mokgoatšana",
+        "Installation du groupe de Madzivi dans la région d'Inhambane, selon Mathebula et Mokgoatšana",
+        "Arrivée des Hlengwe de Mantsena au Xikundwini, chez les Sono, vers le milieu du XVIIIe siècle, puis dans les basses terres du sud-est du Zimbabwe",
+        "Départ d'une partie des Mative vers le fleuve Save, après 1775, où ils fondent les petites chefferies de Mazivi, Muabsa et Manhiça, selon Lourenço",
+        "Départ de travailleurs vers les mines du Transvaal, en Afrique du Sud, que Junod décrit en 1912 pour tout le sud du Mozambique"
       ],
       "historicalSettlementZones": [
-        "Province d'Inhambane (Mozambique): principales zones rurales a l'ouest d'Inhambane — concentration la plus forte de Vatswa",
-        "Province de Gaza (Mozambique): zone frontaliere, surtout le district de Chicualacuala",
-        "Province de Maputo (Mozambique): banlieues et zone rurale au sud de Maputo",
-        "Provinces de Manica et Sofala (Mozambique): minorites",
-        "Zimbabwe meridional: district de Chiredzi et zones de Save valley (Hlengwe)",
-        "Zimbabwe meridional (Manicaland, Matabeleland Sud) — sous-groupe Hlengwe"
+        "Arrière-pays d'Inhambane, au sud du Mozambique, où vivent les Madzibi selon Junod (1912)",
+        "Vallée du Changane jusqu'à Inhambane, selon Junod (1896)",
+        "Vilanculos, Massinga, Panga, Morrumbene, Homoine, Maxixe, Panda, Inharrime, Zavala, Guilala et Cumbana, où Augusto Cabral situe les Landins en 1910",
+        "District de Chiredzi et une partie de ceux de Mwenezi et de Zaka, au sud-est du Zimbabwe, pour les Hlengwe selon Chisi"
       ],
-      "unificationsOrDivisions": "Les trois grands groupes tswa (Dzivi, Hlengwe, Mhandla) sont reconnus par les Vatswa eux-memes comme distincts mais partageant la meme langue et des coutumes tres similaires. Les frontieres coloniales ont separe les Hlengwe entre Mozambique et Zimbabwe, comme pour de nombreux peuples de la region. Les Tswa ont ete longtemps confondus avec les Tsonga dans les recensements, ce qui a affaibli leur reconnaissance politique specifique.",
-      "externalInfluences": "Influence de l'Empire de Gaza (Soshangane, 1820s): impact sur les Tswa du Mozambique meridional, similaire aux Tsonga. Colonisation portugaise du Mozambique. Missions chretiennes methodistes episcopales (Methodist Episcopal Mission): premiere grammaire et dictionnaire tswa par le rev. J. A. Persson (1928). Christianisme protestant dominant depuis le 20e siecle. Migration de main-d'oeuvre vers les mines sud-africaines.",
-      "majorHistoricalEvents": "1820s: impact de l'expansion de l'Empire de Gaza sur le Mozambique meridional, affectant les Tswa comme les Tsonga. 1928: publication du premier dictionnaire anglais-tswa par le rev. Persson. 1975: independance du Mozambique; tous les groupes ethniques integres dans une identite mozambicaine officielle. 1977-1992: guerre civile mozambicaine devastant les provinces meridionales."
+      "unificationsOrDivisions": "Junod distingue en 1912 trois branches dans le grand groupe hlengwe : les Hlengwe proprement dits, les Ba-Tswa d'Inhambane et les Nwanati, avec les Makwakwa. Selon Mathebula et Mokgoatšana, les Hlengwe se sont divisés au XVIIIe siècle en quatre sections : dans les provinces d'Inhambane et de Gaza au Mozambique, dans la province du Limpopo en Afrique du Sud, et au Zimbabwe. Les Hlengwe du Zimbabwe ont perdu tout lien avec le groupe de Madzivi, ajoutent-ils.",
+      "externalInfluences": "Au XIXe siècle, les Tswa subissent les expéditions des souverains ngoni de l'État de Gaza. Junod écrit en 1896 qu'ils en ont été décimés, sans jamais être entièrement soumis. Des missionnaires américains installés à Inhambane publient avant 1896 une traduction des quatre évangiles en tswa, puis d'autres livres dans cette langue. Le missionnaire J. A. Persson publie ensuite un dictionnaire anglais-tswa en 1928 et une grammaire du tswa en 1932, selon le catalogue Glottolog.",
+      "majorHistoricalEvents": "En 1775 meurt Macia, chef du royaume de Dzivi, selon Lourenço. En 1847, Maunze, chef des Landins Macuacua, est attaqué par Manicusso, c'est-à-dire Soshangane, le fondateur de l'État de Gaza. Il demande alors la protection du gouverneur portugais d'Inhambane, selon Augusto Cabral. Junod mentionne en 1896 la guerre de 1894 entre les Portugais et Gungunyane, le souverain de Gaza."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Organisation en chefferies traditionnelles locales, similaire au modele tsonga: un chef (hosi) dirige chaque communaute dans son territoire propre. Pas de structure centrale pan-tswa. Les decisions communautaires sont prises en conseil par les anciens. La colonisation portugaise puis le gouvernement du FRELIMO ont superpose des structures administratives modernes.",
-      "clanOrganization": "Organisation patrilineaire en clans, similar aux autres groupes du macro-groupe Tsonga. Les noms de clan remontent a des ancetres fondateurs. Le mariage est exogame (interdit au sein du meme clan). Les Tswa du Mozambique partagent de nombreux noms de clan avec les Tsonga voisins.",
-      "ageClassSystems": "Initiations de passage a l'age adulte similaires au modele tsonga, avec ecole d'initiation masculine et feminine. La transmission du savoir traditionnel (agriculture, peche, artisanat) se fait par apprentissage inter-generationnel.",
-      "roleOfLineages": "Lignages patrilineaires determinant la succession, l'appartenance clanique et les alliances matrimoniales. Les ancetres jouent un role de protection et d'orientation pour les vivants; leur veneration est centrale dans la vie spirituelle.",
-      "religiousAuthority": "Autorite des guerisseurs-devins traditionnels (n'anga), similaires au modele tsonga. Veneration des ancetres comme mediateurs spirituels. Le christianisme (protestant et catholique) est aujourd'hui dominant, la plupart des Tswa etant chretiens (IMB/Joshua Project: religion principale: religion traditionnelle africaine combinee avec le christianisme). Presence missionnaire methodiste depuis la fin du 19e siecle."
+      "traditionalPoliticalSystem": "Les Tswa vivaient sous des chefs, que l'administration portugaise appelait régulos. Junod cite en 1896 et en 1912 Bingwane, ancien chef des Ba-Tswa, qui avait tant d'épouses qu'il ne les connaissait plus toutes. Augusto Cabral décrit en 1910 les chefs de la région d'Inhambane et leurs alliances avec le gouverneur portugais. Au Zimbabwe, le pays hlengwe était partagé en 1890 entre plusieurs chefs aux frontières bien marquées, dont Sengwe, Gezani, Tsovani, Chisa et Chilonga, selon Chisi.",
+      "clanOrganization": "Junod range en 1912 les Ba-Tswa d'Inhambane avec les clans Hlenbengwane, Yingwane et Nkumbi. En 1914, il ajoute que plusieurs clans de la région viennent du pays nyai ou kalanga, au sud de l'actuel Zimbabwe. C'est le cas des Nwanati, dont font partie les clans de Khambane et de Matewakwa.",
+      "ageClassSystems": "Les sources consultées ne décrivent pas de classes d'âge chez les Tswa.",
+      "roleOfLineages": "Chez les Hlengwe, la famille qui dirigeait portait le nom de lignée Cawuke, selon Mathebula et Mokgoatšana. Ce nom semble avoir disparu dans le groupe de Madzivi après son installation à Inhambane.",
+      "religiousAuthority": "Les sources consultées ne décrivent pas d'autorité religieuse propre aux Tswa."
     },
     "languages": {
-      "mainLanguage": "Xitswa (Tswa)",
+      "mainLanguage": "Xitswa (tsc)",
       "isoCodes": ["tsc"],
-      "dialects": [
-        "Hlengwe (Lengwe, Lhenge) — s'etend vers le Zimbabwe meridional; parfois classe comme langue separee",
-        "Dzibi (Dzivi, Dzonga) — dialecte principal d'Inhambane",
-        "Mhandla — dialecte du groupe Mhandla",
-        "Nwanati (Makwakwe-Khambani) — petit sous-dialecte",
-        "Ndxhonge (Nhayi, Nyai) — dialecte du groupe Nzonge"
-      ],
-      "vehicularRole": "Le xitswa (ISO 639-3: tsc) est une langue stable du Niger-Congo, parlee par environ 1,2 a 1,4 million de personnes, principalement au Mozambique (Joshua Project 2025: 1 383 000 au Mozambique). C'est la plus proche parente du xitsonga et du ronga, les trois etant mutuellement intelligibles. Classe en Zone S du bantou. Toutes les langues Tswa-Ronga sont reconnues au Mozambique. Le portugais est la langue officielle. Une grammaire et une traduction de la Bible existent en xitswa (standardisation par le rev. J. A. Persson et des missions subsequentes)."
+      "dialects": ["Hlengwe", "Mandla", "Ndxhonge", "Nhayi", "Tshwa"],
+      "vehicularRole": "Le xitswa est une langue bantoue du groupe tswa-ronga, avec le tsonga et le ronga, selon le catalogue Glottolog. On le parle au Mozambique, surtout dans la province d'Inhambane, ainsi qu'en Afrique du Sud et au Zimbabwe. En 1910, l'administrateur colonial Augusto Cabral écrit que le shitsua tend à s'imposer face aux deux autres langues du district d'Inhambane, le chope et le gitonga. Les Européens, ajoute-t-il, l'apprennent plus facilement. La langue s'écrit depuis la fin du XIXe siècle, avec les livres des missionnaires américains d'Inhambane."
+    },
+    "externalIdentifiers": {
+      "glottocode": "tswa1255",
+      "iso639_3": "tsc"
     },
     "culture": {
-      "majorRites": "Rites de passage a l'age adulte (initiation masculine et feminine) similaires au modele tsonga. Ceremonies de mariage avec rites de dot (lobola). Rites funeraires avec veneration des ancetres. Ceremonies agricoles et de peche pour les communautes cotieres d'Inhambane. Les Tswa de la cote d'Inhambane pratiquent la peche artisanale et ont des rites lies a la mer et aux cours d'eau. Ceremonies de propitiation aux ancetres lors des periodes de maladies ou de malheurs.",
-      "symbols": "Le fleuve Save et les cotes d'Inhambane sont des reperes geographiques identitaires majeurs. La jupe de danse (similaire au xibelani tsonga) est portee lors des ceremonies. Les instruments de musique traditionnels (tambours, xylophone de type mbila) sont des symboles de la culture partagee avec les Tsonga voisins.",
-      "artsAndMusic": "Musique et danse traditionnelles proches du modele tsonga: danses feminines avec jupes de danse caracteristiques. Pratique de la musique a percussion (tambours) et du xylophone (mbila). Artisanat: vannerie, poterie. Les Tswa des zones cotieres pratiquent la construction de pirogues et la peche. Tradition orale (contes, proverbes) transmise par les anciens. L'art tswa n'est pas documente comme distinctement separe de l'art tsonga/ronga.",
-      "spiritualities": "Religion traditionnelle africaine: veneration des ancetres comme forces protectrices et guidantes. Consultation des guerisseurs-devins (n'anga) pour diagnostiquer maladies et malheurs. Croyances en esprits de la nature (des eaux, des forets). Syncretsime avec le christianisme protestant (Methodist Episcopal Mission depuis la fin du 19e siecle, puis autres denominations). La religion principale des Tswa est aujourd'hui la religion traditionnelle africaine, souvent combinees avec des pratiques chretiennes, selon les sources missionnaires (IMB)."
+      "majorRites": "Augusto Cabral, administrateur colonial, note en 1910 que les Landins du district d'Inhambane pratiquent la circoncision, comme leurs voisins Batongas et Bashopes.",
+      "symbols": "Les sources consultées ne décrivent pas de symboles propres aux Tswa.",
+      "artsAndMusic": "Au Zimbabwe, les Hlengwe faisaient de la poterie et de la vannerie avant la colonisation, selon l'historien Taderera Hebert Chisi.",
+      "spiritualities": "Des missionnaires américains d'Inhambane ont traduit les quatre évangiles en tswa avant 1896, selon Junod. Les sources consultées ne décrivent pas les croyances plus anciennes des Tswa."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de royaume centralise documentee specifique aux Tswa. Organisation en chefferies locales. Le sous-groupe Hlengwe est associe au royaume de Nyaka (Nyaka kingdom), dont les origines remontent au 14e siecle selon le Joshua Project. L'Empire de Gaza (Soshangane, 1820s-1895) a eu une influence sur les Tswa meridionaux du Mozambique, mais les Tswa ne faisaient pas partie de son noyau.",
-      "relationsWithNeighbors": "Relations etroites avec les Tsonga/Shangaan et les Ronga, avec lesquels les Tswa partagent la langue, l'histoire et les traditions — les trois groupes sont souvent regroupes sous le terme Vatsonga. Relations avec les Chopi (Vacopi) voisins dans la province d'Inhambane. Les Hlengwe du Zimbabwe ont des relations avec les Shona (Karanga) de la province de Masvingo. Migrations economiques vers l'Afrique du Sud, surtout les mines du Rand.",
-      "conflictsOrAlliances": "1820s: impact de l'expansion de Soshangane sur le Mozambique meridional. 1977-1992: guerre civile mozambicaine (FRELIMO vs RENAMO) devastant les provinces d'Inhambane et de Gaza, forcant de nombreux Tswa a fuir vers Maputo ou l'Afrique du Sud. La guerre civile a profondement perturbe les structures sociales et les pratiques culturelles traditionnelles.",
-      "diaspora": "Migration economique importante vers les mines d'Afrique du Sud depuis le debut du 20e siecle (recrutement de main-d'oeuvre mozabicaine). Certains Tswa sont restes en Afrique du Sud (province du Limpopo, Mpumalanga). Migration vers Maputo et Matola (banlieue). Les Hlengwe du Zimbabwe forment une petite communaute dans les districts de Chiredzi et de Save Valley."
+      "kingdomsOrChiefdoms": "Les Hlengwe, dont les Tswa sont issus, vivaient avant le XVIIIe siècle dans le royaume de Nyaka, au sud de l'actuelle Maputo, selon Mathebula et Mokgoatšana. Dans la région d'Inhambane, Vitor Alexandre Lourenço décrit au XVIIIe siècle le royaume de Dzivi, ou Mative, et le royaume de Macuacua, fondé par une communauté d'origine nwanati. Après 1775, une partie des Mative fonde près du Save trois petites chefferies, Mazivi, Muabsa et Manhiça, encore classées parmi les Tswa au début du XXe siècle.",
+      "relationsWithNeighbors": "Entre le Limpopo et Inhambane, les Tswa vivent à côté des Chopi, sur la côte, et des Tonga d'Inhambane, qui parlent le gitonga, selon Junod en 1914. Augusto Cabral décrit en 1910 des unions entre Landins et Bashopes. Selon Lourenço, les Mative, les Vilanculos et les Macuacua ont repoussé les Bitonga au XVIIIe siècle.",
+      "conflictsOrAlliances": "Au XVIIIe siècle, le royaume de Dzivi chasse une partie des Bila vers la vallée du Limpopo, selon Lourenço. Au XIXe siècle, les souverains ngoni de Gaza lancent des expéditions contre les Tswa, qui ne se laissent jamais soumettre entièrement, selon Junod. En 1847, Maunze, chef des Landins Macuacua, attaqué par Soshangane, propose une alliance au gouverneur portugais d'Inhambane, selon Cabral.",
+      "diaspora": "Les Hlengwe du Zimbabwe vivent surtout dans le district de Chiredzi, selon Chisi. Une autre section hlengwe vit dans la province du Limpopo, en Afrique du Sud, selon Mathebula et Mokgoatšana. Junod décrit en 1912 les départs de travailleurs du sud du Mozambique vers les mines du Transvaal ; beaucoup s'installent ensuite dans les villes."
     },
     "demography": {
-      "totalPopulation": 1414000,
-      "referenceYear": 2025,
-      "source": "Joshua Project (2025): Mozambique 1 383 000, Zimbabwe + Afrique du Sud estimations incertaines — total global 1 414 000. Omniglot: environ 1,2 million de locuteurs principalement au Mozambique. Wikipedia: plus d'un million de Vatswa, mais tous ne communiquent pas en xitswa. Une autre estimation compte 1 350 000 Vatswa au Mozambique en 2025 (Joshua Project, CLEAR Global). Une autre estimation compte 1 500 000 Vatswa en 2025 (Joshua Project, Ethnologue).",
+      "totalPopulation": 1453000,
+      "referenceYear": 2026,
+      "source": "Joshua Project, base de données missionnaire, consultée le 3 novembre 2026 : 1 422 000 au Mozambique, 27 000 en Afrique du Sud et 4 400 au Zimbabwe. Ce sont des estimations, sans recensement cité ni date.",
       "distributionByCountry": [
         {
           "country": "MOZ",
-          "population": 1383000,
-          "note": "Province d'Inhambane (zone rurale a l'ouest d'Inhambane): concentration principale. Also provinces de Gaza, Maputo, Manica, Sofala et capitale Maputo."
-        },
-        {
-          "country": "ZWE",
-          "population": 25000,
-          "note": "Zimbabwe meridional (district de Chiredzi, Save Valley) — surtout groupe Hlengwe; chiffres incertains"
+          "population": 1422000,
+          "note": "Surtout la province d'Inhambane ; estimation de Joshua Project"
         },
         {
           "country": "ZAF",
-          "population": 6000,
-          "note": "Province du Limpopo et Mpumalanga — migrants economiques et leurs descendants; chiffres tres incertains"
+          "population": 27000,
+          "note": "Estimation de Joshua Project"
+        },
+        {
+          "country": "ZWE",
+          "population": 4400,
+          "note": "Estimation de Joshua Project"
         }
       ]
     },
@@ -123,7 +532,8 @@
         "title": "Joshua Project — Tswa in Mozambique (MZ)",
         "url": "https://joshuaproject.net/people_groups/15600/MZ",
         "tier": "unverified",
-        "source_kind": "missionary_database"
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire évangélique. Elle compte 1 422 000 Tswa au Mozambique, 27 000 en Afrique du Sud et 4 400 au Zimbabwe, soit 1 453 000 personnes. Ce sont des estimations « compilées de diverses sources », sans recensement cité ni date. Consulté le 3 novembre 2026."
       },
       {
         "title": "PeopleGroups.org — Tswa of Zimbabwe",
@@ -165,165 +575,116 @@
         "title": "WorldAtlas — What Languages Are Spoken In Mozambique",
         "url": "https://www.worldatlas.com/articles/what-languages-are-spoken-in-mozambique.html",
         "tier": "unverified"
-      }
-    ]
-  },
-  "nameHistory": {
-    "summary": "Le nom Tswa désigne un peuple du sud du Mozambique, surtout dans les provinces d'Inhambane et de Gaza, qui se nomme lui-même ainsi. D'autres noms existent : Tshwa, et Hlengwe pour un ensemble plus large. Les sources que nous avons lues ne proposent qu'une explication de chacun de ces noms ; nous les présentons plus bas.",
-    "names": [
-      {
-        "nameText": "Tswa",
-        "nameStatus": "current",
-        "selfGiven": true,
-        "languageOfOrigin": "tsc",
-        "namedBy": null,
-        "shortLine": "Le nom qu'ils se donnent ; leur langue est le xitswa.",
-        "periodLabel": "Écrit dès 1912",
-        "accounts": [
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Usage contemporain"
-            },
-            "era": "modern",
-            "statement": "Le nom Tswa désigne un peuple et sa langue, le xitswa, écrit aussi Tshwa, Shitshwa ou Sheetshwa, selon le catalogue Glottolog. Son origine n'a qu'une explication dans les sources que nous avons lues ; elle est présentée plus bas.",
-            "aspect": "meaning",
-            "sources": [
-              {
-                "title": "Glottolog — Tswa (tswa1255)",
-                "author": "Glottolog",
-                "year": 2026,
-                "url": "https://glottolog.org/resource/languoid/id/tswa1255",
-                "tier": "official",
-                "source_kind": "linguistic_reference",
-                "notes": "Notice consultée le 11 octobre 2026. Langue de code tsc, parlée au Mozambique, en Afrique du Sud et au Zimbabwe. Autres noms relevés dans le catalogue Multitree : Kitshwa, Sheetshwa, Shitshwa, Tshwa et Xitshwa."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": 1912,
-              "to": 1912,
-              "label": "1912"
-            },
-            "era": "colonial",
-            "statement": "Le nom Tswa apparaît, sous la forme Ba-Tswa, chez le missionnaire suisse Henri-Alexandre Junod, qui range « les Ba-Tswa d'Inhambane » parmi les clans du grand groupe hlengwe. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
-            "formAsWritten": "Ba-Tswa",
-            "birth": true,
-            "sources": [
-              {
-                "title": "The Life of a South African Tribe, vol. I : The Social Life",
-                "author": "Henri-Alexandre Junod",
-                "year": 1912,
-                "url": "https://archive.org/details/cu31924012891127",
-                "tier": "referenced",
-                "source_kind": "academic",
-                "page": "p. 18 et note",
-                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 11 octobre 2026. La page range dans le groupe hlengwe « The Ba-Tswa of Inhambane with the Hlenbengwane, Yingwane, Nkumbi ». La note écrit : « This name Ba-Tswa, is the Hlengwe form of Ba-Tjwa, a term by which the Zulu have been commonly designated amongst the Thonga. Ba-Tjwa is probably the corresponding form for Ba-Rwa, an appellation by which the Suto of the Zoutpansberg plains used to call the tribes of the mountains »."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": 1914,
-              "to": 1914,
-              "label": "1914"
-            },
-            "era": "colonial",
-            "statement": "Le nom Tswa désigne, chez Henri-Alexandre Junod, une branche du grand groupe hlengwe, entre le Limpopo et Inhambane. Parmi eux vivent des clans venus du pays kalanga, au sud de la Rhodésie, ajoute-t-il.",
-            "sources": [
-              {
-                "title": "The Condition of the Natives of South-East Africa in the Sixteenth Century, according to the Early Portuguese Documents",
-                "author": "Henri-Alexandre Junod",
-                "year": 1914,
-                "url": "https://archive.org/details/conditionofnativ00juno",
-                "tier": "referenced",
-                "source_kind": "academic",
-                "page": "p. 15",
-                "notes": "Le Cap, South African Association for the Advancement of Science, 1914, 25 pages, lu dans la numérisation d'Internet Archive le 11 octobre 2026. La page écrit : « The Ba-Lengi, more commonly called Ba-Chopi (wrongly spelt \"M'chopes\" on certain maps); viz., \"those who are transfixed with weapons\" (as their country was the favourite hunting, or, rather, raiding ground of Gungunyana) ; they occupy the border of the sea in the southern part of the region ». Elle range aussi « the Ba-Tswa » dans le grand groupe hlengwe."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": 1912,
-              "to": 1912,
-              "label": "Proposée en 1912"
-            },
-            "era": "colonial",
-            "statement": "Le nom Tswa serait la forme hlengwe de Ba-Tjwa, le nom que les Thonga donnaient aux Zoulous, lui-même proche de Ba-Rwa, le nom que les Sotho donnaient aux gens des montagnes, selon Henri-Alexandre Junod. Les peuples, explique-t-il, nomment souvent leurs voisins d'après la direction où ils vivent.",
-            "hypothesisGroup": "origine du nom Tswa",
-            "sources": [
-              {
-                "title": "The Life of a South African Tribe, vol. I : The Social Life",
-                "author": "Henri-Alexandre Junod",
-                "year": 1912,
-                "url": "https://archive.org/details/cu31924012891127",
-                "tier": "referenced",
-                "source_kind": "academic",
-                "page": "p. 18 et note",
-                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 11 octobre 2026. La page range dans le groupe hlengwe « The Ba-Tswa of Inhambane with the Hlenbengwane, Yingwane, Nkumbi ». La note écrit : « This name Ba-Tswa, is the Hlengwe form of Ba-Tjwa, a term by which the Zulu have been commonly designated amongst the Thonga. Ba-Tjwa is probably the corresponding form for Ba-Rwa, an appellation by which the Suto of the Zoutpansberg plains used to call the tribes of the mountains »."
-              }
-            ]
-          }
-        ]
       },
       {
-        "nameText": "Hlengwe",
-        "nameStatus": "current",
-        "selfGiven": false,
-        "languageOfOrigin": null,
-        "namedBy": null,
-        "shortLine": "Le nom d'un grand groupe de clans du sud du Mozambique, dont les Tswa font partie.",
-        "periodLabel": "Écrit dès 1912",
-        "accounts": [
-          {
-            "period": {
-              "from": 1912,
-              "to": 1912,
-              "label": "1912"
-            },
-            "era": "colonial",
-            "statement": "Le nom Hlengwe désigne, chez Henri-Alexandre Junod, toute la population thonga de l'est et du nord-est, du Limpopo jusqu'à Inhambane. Junod note qu'il ne convient vraiment qu'aux clans du nord de cet ensemble, et le garde faute de mieux. C'est la plus ancienne trace de ce nom que le projet connaît. Le groupe existait déjà avant lui.",
-            "formAsWritten": "Hlengwe",
-            "birth": true,
-            "sources": [
-              {
-                "title": "The Life of a South African Tribe, vol. I : The Social Life",
-                "author": "Henri-Alexandre Junod",
-                "year": 1912,
-                "url": "https://archive.org/details/cu31924012891127",
-                "tier": "referenced",
-                "source_kind": "academic",
-                "page": "p. 17-18",
-                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 17 : « In the Djonga dialect, Hlengwe means wealth. I do not know if this be the etymology of the name ». Page 18 : le nom désigne toute la population thonga de l'est et du nord-est, du Limpopo à Inhambane et à la Sabie du Nord, mais « applies properly only to the Northern part of the Eastern clans »."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": 1912,
-              "to": 1912,
-              "label": "Proposée en 1912"
-            },
-            "era": "colonial",
-            "statement": "Le nom Hlengwe viendrait peut-être du mot qui veut dire « richesse » dans le parler djonga, selon Henri-Alexandre Junod, qui n'en est pas sûr lui-même.",
-            "hypothesisGroup": "origine du nom Hlengwe",
-            "sources": [
-              {
-                "title": "The Life of a South African Tribe, vol. I : The Social Life",
-                "author": "Henri-Alexandre Junod",
-                "year": 1912,
-                "url": "https://archive.org/details/cu31924012891127",
-                "tier": "referenced",
-                "source_kind": "academic",
-                "page": "p. 17-18",
-                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 17 : « In the Djonga dialect, Hlengwe means wealth. I do not know if this be the etymology of the name ». Page 18 : le nom désigne toute la population thonga de l'est et du nord-est, du Limpopo à Inhambane et à la Sabie du Nord, mais « applies properly only to the Northern part of the Eastern clans »."
-              }
-            ]
-          }
-        ]
+        "title": "Glottolog — Tswa (tswa1255)",
+        "author": "Glottolog",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/tswa1255",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde. La notice classe le tswa, code tsc, dans le groupe tswa-ronga (S.50) des langues bantoues du Sud, à côté du tsonga et du ronga. Elle relève cinq parlers : Hlengwe, Mandla, Ndxhonge, Nhayi et Tshwa, et trois pays : Mozambique, Afrique du Sud et Zimbabwe. Autres noms relevés : Kitshwa, Sheetshwa, Shitshwa, Tshwa et Xitshwa. Ses références citent An English-Tswa dictionary de J. A. Persson (Inhambane Mission Press, 1928) et Outlines of Tswa grammar de Josef A. Persson (Central Mission Press, 1932, 2e édition). Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "La tribu et la langue thonga, avec quelques échantillons du folklore thonga",
+        "author": "Henri-Alexandre Junod",
+        "year": 1896,
+        "url": "https://archive.org/details/latribuetlalangu00juno",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lausanne, Imprimerie Georges Bridel, 1896, lu dans la numérisation d'Internet Archive. Ouvrage d'un missionnaire suisse. Page 4, note : « Il en est de même des Tsoua, des environs d'Inhambane, anciens sujets du chef Bingwane, qui, bien que décimés par les expéditions des souverains ngoni, ne se sont jamais laissé soumettre entièrement ». Pages 4 et 5 : le mot Landim ou Landin est « un autre nom que les Portugais appliquent depuis longtemps aux natifs de ces contrées » ; selon l'auteur, il « n'a pas été emprunté aux natifs et paraît avoir à l'origine le sens de : indigène, noir ». Page 6 : les Hlengoué de Madzibé occupent le pays de Gaza « tout le long de la Changane jusqu'à Inhambane, où ils sont connus sous le nom de Tsoua ». Page 25 : des missionnaires américains d'Inhambane « ont fait paraître […] une traduction tsoua des quatre évangiles ». Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Raças, usos e costumes dos indigenas do districto de Inhambane, acompanhado de um vocabulario em shitsua, guitonga e shishope",
+        "author": "Augusto Cabral",
+        "year": 1910,
+        "url": "https://archive.org/details/raasusosecostum00cabrgoog",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Lourenço Marques, Imprensa Nacional, 1910, lu dans la numérisation d'Internet Archive. Ouvrage d'un administrateur colonial portugais, écrit avec le vocabulaire racial de l'époque. Pages 13 et 14 : l'auteur reprend l'explication de Torre do Valle, pour qui Landim viendrait du verbe ku landya, « suivre » ; les habitants auraient répondu aux premiers Portugais « di landi, segue-me ou di landya, eu sou escravo, ou súbdito ». Page 14 : « O dialecto landim denomina-se Shitsua ». Page 15 : le district compte « Landins, Bashopes e Batongas », et l'auteur situe les Landins à Vilanculos, Massinga, Panga, Morrumbene, Homoine, Maxixe, Panda, Inharrime, Zavala, Guilala et Cumbana. Page 17 : les Landins pratiquent la circoncision, comme les Batongas et les Bashopes. Page 25 : en 1847, « o Maunze, chefe da tribu Landim-Macuacua, invadido pelo Manicusso », demande la protection du gouverneur d'Inhambane. Introduction du vocabulaire : « o dialecto Landim ou Shitsua tende a avassallar os outros dois ». Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "The Life of a South African Tribe, vol. I : The Social Life",
+        "author": "Henri-Alexandre Junod",
+        "year": 1912,
+        "url": "https://archive.org/details/cu31924012891127",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive. Page 18 : le groupe hlengwe comprend « the Hlengwe proper », « the Ba-Tswa of Inhambane with the Hlenbengwane, Yingwane, Nkumbi » et « the Nwanati with the Makwakwa, Khambane, Ndindane ». Page 19 : des milliers de travailleurs « coming every year to the mines » du Transvaal s'installent dans les villes. Page 271 : « Bingwane, the chief of the Ba-Tswa, had taken so many wives that he hardly knew them ». Appendice I : un pasteur africain, le révérend S. Malale, a relevé le parler « of the Madzibi people dwelling in the hinterland of Inhambane », et « The American missionaries have already published many books in the Tswa sub-dialect spoken in the vicinity of Inhambane ». Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "The Condition of the Natives of South-East Africa in the Sixteenth Century, according to the Early Portuguese Documents",
+        "author": "Henri-Alexandre Junod",
+        "year": 1914,
+        "url": "https://archive.org/details/conditionofnativ00juno",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Le Cap, South African Association for the Advancement of Science, 1914, lu dans la numérisation d'Internet Archive. Page 15 : entre le Limpopo et Inhambane vivent les Ba-Chopi, les Tonga d'Inhambane et « the Ba-Tswa, who are but a branch of the big Hlengwe group which belongs to the Thonga-Shangaan tribe ». L'auteur ajoute que beaucoup de ces clans « emigrated from the Nyai or Kalanga groups, countries in the South of Rhodesia » et cite « the clans of Khambane and Matewakwa called by the common name of Nwanati ». Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Moçambique: memórias sociais de ontem, dilemas políticos de hoje",
+        "author": "Vitor Alexandre Lourenço",
+        "year": 2010,
+        "url": "http://hdl.handle.net/10071/10996",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 134-135",
+        "notes": "Gerpress, 2010, livre déposé dans le dépôt de l'Iscte – Institut universitaire de Lisbonne ; lu dans la troisième partie, sur l'histoire du sud du Mozambique. Page 134 : le nom Hlengwe « deve ter surgido nos finais do século XVII » pour désigner les groupes dispersés entre le Save, le Limpopo et le Changane. Page 135 : au premier quart du XVIIIe siècle, « já se havia familiarizado o termo Landins para englobar todos os elementos integrados nessa cultura Tsonga » ; une communauté d'origine nwanati fonde le royaume de Macuacua entre le Changane, l'Inharrime et la côte d'Inhambane ; le royaume de Dzivi (Mative) s'étend après la mort de son chef Macia en 1775, et une partie des Mative part vers le Save, où elle fonde trois petites chefferies, « Mazivi, Muabsa e Manhiça, ainda classificadas entre os Tswa ». Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "The ‘polyonymous identity’ of the Hlengwe people of Zimbabwe and their struggle for a ‘collective proper name’",
+        "author": "Mandla D. Mathebula et Sekgothe Mokgoatšana",
+        "year": 2020,
+        "url": "https://doi.org/10.4102/hts.v76i4.6192",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article paru dans HTS Teologiese Studies / Theological Studies, vol. 76, n° 4, 2020, en accès libre, auteurs de l'université du Limpopo. Les Hlengwe forment quatre sections, dans les provinces d'Inhambane et de Gaza au Mozambique, dans la province du Limpopo en Afrique du Sud et au Zimbabwe ; « Before the 18th century, these sections constituted a single group that was resident in the Nyaka kingdom, south of Maputo ». Le royaume de Nyaka existait à la fin du XIVe siècle, selon David Hedges (1978) qu'ils citent. Au début du XVIIIe siècle, le chef Bangwana a deux fils, Madzivi et Mantsena ; le nom de lignée Cawuke « seems to have disappeared in the Madzivi group when this group split and settled in Inhambane », et « The Hlengwe of Zimbabwe are the descendants of Mantsena ». Les Hlengwe sont au Xikundwini, chez les Sono, vers le milieu du XVIIIe siècle. Au Zimbabwe, « Even the Hlengwe people began to call themselves ‘baShangane’ » ; les auteurs concluent qu'ils forment un groupe distinct des Tsonga et des Shangaan. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Colonial Economic Disempowerment and the Responses of the Hlengwe Peasantry of the South East Lowveld of Zimbabwe: 1890-1965",
+        "author": "Taderera Hebert Chisi",
+        "year": 2014,
+        "url": "https://www.journals.codesria.org/index.php/az/article/download/1817/1876/2040",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 167-168",
+        "notes": "Article paru dans Afrika Zamani, n° 20-21, 2012-2013, publié par le Codesria et l'Association des historiens africains en 2014, p. 165-194. Page 167 : les Hlengwe « are mostly found in the Chiredzi district but also occupy parts of the Mwenezi and Zaka districts » ; « They are also commonly referred to as the ‘Shangani’, yet that is a distortion of the truth for the Hlengwe were not originally Shangani people ». En 1890, leur pays était partagé entre des chefs, dont Sengwe, Gezani, Tsovani, Chisa et Chilonga, « All had their clearly marked boundaries ». Page 168 : cueillette, chasse, pêche, agriculture et commerce, ainsi que l'élevage, le sel, la poterie et la vannerie. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "A situação do português no contexto multilingue de Moçambique",
+        "author": "Gregório Firmino",
+        "year": 2008,
+        "url": "https://dlcv.fflch.usp.br/sites/dlcv.fflch.usp.br/files/06_19.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 1-2",
+        "notes": "Texte d'un linguiste de l'université Eduardo Mondlane, à Maputo, déposé sur le site du département de lettres de l'université de São Paulo. Page 1 : la classification de Guthrie range le tswa (S.51) dans le groupe tswa-ronga (S.50), avec le gwamba, le tsonga et le ronga. Page 2, tableau des correspondances : la langue s'appelle Tswa chez Guthrie et dans le recensement de 1997, Xitshwa dans le premier séminaire de normalisation de l'orthographe (1989), Citshwa dans le deuxième (2000), et elle est parlée dans la province d'Inhambane. Consulté le 3 novembre 2026."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Tswa, ou Vatswa, sont un peuple du sud du Mozambique, surtout de la province d'Inhambane. Ils parlent le xitswa, une langue bantoue proche du tsonga et du ronga.",
+      "followUp": "D'où viennent les noms Tswa, Hlengwe et Landim ?"
+    },
+    "gaps": [
+      {
+        "field": "organization.ageClassSystems",
+        "reason": "Nous n'avons pas trouvé, dans les ouvrages d'Henri-Alexandre Junod et d'Augusto Cabral ni dans les travaux de Vitor Alexandre Lourenço, de Mathebula et Mokgoatšana et de Chisi, de description de classes d'âge chez les Tswa."
+      },
+      {
+        "field": "organization.religiousAuthority",
+        "reason": "Nous n'avons pas trouvé, dans les ouvrages d'Henri-Alexandre Junod et d'Augusto Cabral consultés, de description des devins ou des prêtres chez les Tswa."
+      },
+      {
+        "field": "culture.symbols",
+        "reason": "Nous n'avons pas trouvé, dans les ouvrages et articles consultés, de source qui décrive des symboles propres aux Tswa."
+      },
+      {
+        "field": "culture.artsAndMusic",
+        "reason": "Les sources consultées décrivent l'artisanat des Hlengwe du Zimbabwe, mais pas la musique ni la danse des Tswa du Mozambique."
+      },
+      {
+        "field": "culture.spiritualities",
+        "reason": "Les sources consultées parlent des missions chrétiennes, mais pas des croyances plus anciennes des Tswa."
       }
     ]
   }
