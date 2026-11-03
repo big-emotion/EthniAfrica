@@ -3,9 +3,9 @@
   "nameFr": "Ghana",
   "nameEn": "Ghana",
   "nameOfficial": "République du Ghana (Republic of Ghana)",
-  "summary": "Le Ghana a pris en 1957 le nom d'un ancien royaume, le Wagadu selon la tradition soninké, qui se trouvait bien plus au nord-ouest, hors de son territoire ; les sources ne s'accordent pas sur qui a choisi ce nom. Premier État d'Afrique subsaharienne à accéder à l'indépendance, il succède à la colonie britannique de la Côte-de-l'Or sur un sol qui fut celui des royaumes akan — Ashanti, Denkyira, Akwamu — et des peuples mole-dagbani, ewe et ga-dangme. Le kente et l'adinkra en sont les signatures visuelles.",
+  "summary": "Le Ghana a pris en 1957 le nom d'un ancien royaume, appelé Wagadu par la tradition soninké, qui se trouvait bien plus au nord-ouest, hors de son territoire ; les sources n'attribuent pas ce choix à la même personne. Il succède à la colonie britannique de la Côte-de-l'Or, la première des colonies britanniques d'Afrique de l'Ouest à devenir indépendante. Son sol a été celui de royaumes akan comme le Denkyira, l'Akwamu et l'Asante, de royaumes du Nord comme celui des Dagomba, et des peuples ewe et ga-dangme.",
   "etymology": "Le nom \"Ghana\" est celui d'un ancien royaume ouest-africain que les sources arabes médiévales appellent Ghana, et que la tradition orale soninké situe à Wagadu (Hunwick). Ce royaume se trouvait bien plus au nord-ouest, entre le Sahara et les hauts cours du Sénégal et du Niger, et non sur le territoire du Ghana actuel, selon l'Encyclopaedia Africana. Chez al-Bakri (1067-1068), \"Ghana\" est le titre que portent les rois de ce peuple, et le nom du pays est Awkar. Le sens du mot est rapporté de plusieurs façons : \"chef de guerre\", selon une traduction courante (Citi Newsroom, 2026), ou nom de la dynastie Kaya Maghan, glosé \"roi de l'or\" en soninké dans une chronique de Tombouctou, une glose que Delafosse et Hunwick discutent en proposant chacun un autre sens du mot kaya (Hunwick, 2003). Le 11 décembre 1956, un ministre britannique déclare aux Communes que ce nom a été conféré au nouveau pays \"conformément aux vœux locaux\" et qu'il était celui d'un ancien royaume \"dans ce qui est aujourd'hui un territoire français au sud du Sahara\". Le Ghana Independence Act de 1957 place les territoires de la Côte-de-l'Or \"sous le nom de Ghana\", et l'Encyclopaedia Africana date du 6 mars 1957 le moment où le nom a été pris. J. B. Danquah voyait dans les Akan des descendants de ce royaume ; l'Encyclopaedia Africana juge la preuve douteuse et Citi Newsroom relève que la recherche n'a pas établi de lien migratoire direct.",
-  "nameOriginActor": "Le choix du nom n'est attribué de la même façon par aucune source. L'Encyclopaedia Africana écrit que la suggestion de donner le nom Ghana à la Côte-de-l'Or est due à J. B. Danquah. MyJoyOnline (2019) et Citi Newsroom (2026) rapportent qu'il avait d'abord proposé \"Akanland\". Citi Newsroom lui attribue ensuite \"Akan-Ga\", puis l'idée de \"New Ghana\", que MyJoyOnline tire d'une chronique du Times of West Africa du 26 mars 1934. Citi Newsroom écrit que Kwame Nkrumah a joué un rôle décisif pour en faire le nom officiel de l'État. Devant les Communes, en décembre 1956, le gouvernement britannique dit seulement que le nom a été conféré conformément aux vœux locaux, sans nommer personne. En septembre 2023, un dirigeant politique ghanéen a contesté publiquement que Danquah ait proposé ce nom, selon la presse (Onua Online). Une phrase de Kwame Nkrumah, « nous tirons fierté du nom de Ghana, non par romantisme mais comme une inspiration pour l'avenir », est datée de 1953 par une transcription non officielle de son discours (Speakola) et de mai 1956 par MyJoyOnline, qui cite les débats de l'Assemblée législative ; la date n'est pas tranchée, et la phrase ne dit pas qui a choisi le nom. Aucun texte d'époque cité ici ne désigne l'auteur du choix.",
+  "nameOriginActor": "Le choix du nom n'est attribué de la même façon par aucune source. L'Encyclopaedia Africana écrit que la suggestion de donner le nom Ghana à la Côte-de-l'Or est due à J. B. Danquah. MyJoyOnline (2019) et Citi Newsroom (2026) rapportent qu'il avait d'abord proposé \"Akanland\". Citi Newsroom lui attribue ensuite \"Akan-Ga\", puis l'idée de \"New Ghana\", que MyJoyOnline tire d'une chronique du Times of West Africa du 26 mars 1934. Citi Newsroom écrit que Kwame Nkrumah a joué un rôle décisif pour en faire le nom officiel de l'État. Devant les Communes, en décembre 1956, le gouvernement britannique dit seulement que le nom a été conféré conformément aux vœux locaux, sans nommer personne. En septembre 2023, un dirigeant politique ghanéen a contesté publiquement que Danquah ait proposé ce nom, selon la presse (Onua Online). Une phrase de Kwame Nkrumah, « nous tirons fierté du nom de Ghana, non par romantisme mais comme une inspiration pour l'avenir », est datée de 1953 par une transcription non officielle de son discours (Speakola) et de mai 1956 par MyJoyOnline, qui cite les débats de l'Assemblée législative ; les deux sources ne donnent pas la même date.",
   "nameHistory": {
     "summary": "Le nom Ghana désigne un pays d'Afrique de l'Ouest, la République du Ghana, qui a pris en 1957 le nom d'un royaume médiéval situé plus au nord-ouest, comme le Mali a repris celui d'un empire. Le pays s'appelait auparavant Côte-de-l'Or, Gold Coast en anglais. Les sources ne s'accordent pas toujours sur le sens premier du nom Ghana ; nous les présentons plus bas.",
     "names": [
@@ -115,6 +115,24 @@
                 "tier": "unverified",
                 "source_kind": "press",
                 "notes": "Article de presse ghanéen du 5 mars 2026, consulté le 9 octobre 2026."
+              },
+              {
+                "title": "Ghana",
+                "author": "Encyclopaedia Africana",
+                "year": null,
+                "url": "https://encyclopaediaafricana.com/ghana/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article de l'encyclopédie en ligne, lu en ligne. Il écrit que la suggestion de donner le nom Ghana à la Côte-de-l'Or après l'indépendance a été faite par J. B. Danquah, et que celui-ci voyait dans les Akan des descendants des habitants de l'empire médiéval."
+              },
+              {
+                "title": "J. B. Danquah and the naming of our Republic",
+                "author": "MyJoyOnline",
+                "year": 2019,
+                "url": "https://www.myjoyonline.com/j-b-danquah-and-the-naming-of-our-republic/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Tribune de presse ghanéenne du 5 juin 2019, lue en ligne. Elle cite l'Akim Abuakwa Handbook de J. B. Danquah (1928), rapporte ses propositions « Akanland », puis « Akan-Ga », puis « New Ghana », d'après une chronique du Times of West Africa du 26 mars 1934, et cite le soutien de Kwame Nkrumah dans les débats de l'Assemblée législative du 18 mai 1956."
               }
             ]
           },
@@ -339,58 +357,105 @@
         "Gout-Custe de Mina (néerlandais, 1602)",
         "Gold Coast (anglais, forme employée dans la traduction de Bosman de 1705), colonie de la Côte-de-l'Or (1874-1957)"
       ],
-      "antiquity": "Le territoire était peuplé de royaumes Akan (Bono, Akwamu, Denkyira, Asante, Fante, Akuapem), peuples Ga-Dangme, Guan, Gur et Mandé. Le royaume dont le nom a été repris en 1957 (Wagadu pour la tradition soninké) se trouvait beaucoup plus au nord-ouest : un traité arabe médiéval cité par Hunwick le place à Awkar, région marquée Aouker sur les cartes actuelles, dans le nord du Hawd. Il n'était pas sur le territoire du Ghana actuel.",
-      "middleAges": "Développement des royaumes Akan (XIIIe-XIXe siècles). Royaume Ashanti (Asante) devient le plus puissant. Commerce avec les Européens (or, esclaves).",
-      "precolonial": "Royaumes Akan puissants (Ashanti, Denkyira, Akwamu), peuples Ga-Dangme sur la côte, royaumes gur au nord (Dagomba, Mamprusi). Commerce côtier avec les Européens. Aucune des sources citées ici ne donne de nom pour l'ensemble du territoire avant la colonisation.",
-      "colonization": "XVe-XIXe siècles : présence portugaise, néerlandaise puis britannique. Le lieu de traite d'or de Shama, où les Portugais obtiennent de l'or en janvier 1471, était alors appelé Mina, d'après Duarte Pacheco Pereira (vers 1505-1508), qui date de 1482 le château de São Jorge da Mina et parle de la côte de Malagueta ou de Mina. Un ouvrage néerlandais de 1602 intitule la côte \"Gout-Custe de Mina\". La traduction anglaise de Bosman, publiée en 1705, décrit déjà la \"Gold-Coast\" comme une partie de la Guinée. Une charte du 24 juillet 1874 constitue la colonie sous le nom de \"Gold Coast Colony\". Les sources citées ici n'attestent ni une forme portugaise \"Costa do Ouro\" ni un emploi anglais de \"Gold Coast\" avant 1705. Nom colonial : \"Côte-de-l'Or\" (Gold Coast), qui désigne le territoire par la ressource que les Européens y extraient plutôt que par les royaumes et les peuples qui l'habitent — une logique de nomination partagée avec les autres \"côtes\" du golfe de Guinée (Côte-des-Esclaves, Côte-d'Ivoire, Côte du Poivre), qui efface les entités politiques locales derrière le commerce colonial.",
-      "contemporary": "Le 6 mars 1957, la colonie de la Côte-de-l'Or prend le nom de Ghana à l'indépendance (Encyclopaedia Africana) ; le Ghana Independence Act de 1957 place ses territoires \"sous le nom de Ghana\". Le nom officiel en anglais est \"Republic of Ghana\"."
+      "antiquity": "Les sources consultées ne donnent aucun nom pour ce territoire dans l'Antiquité. Le royaume dont le nom a été repris en 1957, appelé Wagadu par la tradition soninké, se trouvait beaucoup plus au nord-ouest : un traité arabe médiéval cité par Hunwick le place à Awkar, une région marquée Aouker sur les cartes actuelles, dans le nord du Hawd. Il n'était donc pas sur le territoire du Ghana actuel.",
+      "middleAges": "Les plus anciens noms d'États connus sur ce territoire datent de la fin de cette période. Quand les Portugais arrivent, vers 1500, ils trouvent sur la côte des États déjà formés, dont Ahanta, Shama, Aguafo, Fetu, Asebu, Agona et Accra, selon l'historien A. Adu Boahen. Dans la savane du Nord existent alors les royaumes mamprusi, dagomba et nanumba. Plus au sud, le Bono, que Boahen présente comme le premier royaume akan, apparaît dans la seconde moitié du XVe siècle.",
+      "precolonial": "Une carte néerlandaise datée du 25 décembre 1629 montre environ trente-huit États et royaumes entre les fleuves Tano et Volta. Selon A. Adu Boahen, presque tous ont été identifiés et existent encore aux mêmes endroits. Cette carte signale Nsoko, aujourd'hui identifiée à Begho, comme un lieu où, selon la citation en anglais que donne Boahen, « cloths are woven like carpets which are worn among the Acanists », c'est-à-dire des étoffes tissées comme des tapis. Au XVIIIe siècle, le nom Asante s'étend à un empire qui va, au milieu du siècle, du fleuve Comoé à la Volta. Aucune des sources citées ici ne donne de nom pour l'ensemble du territoire avant la colonisation.",
+      "colonization": "Du XVe au XIXe siècle, Portugais, Néerlandais puis Britanniques s'installent sur la côte. Le lieu de traite d'or de Shama, où les Portugais obtiennent de l'or en janvier 1471, était alors appelé Mina, d'après Duarte Pacheco Pereira (vers 1505-1508), qui date de 1482 le château de São Jorge da Mina et parle de la côte de Malagueta ou de Mina. Un ouvrage néerlandais de 1602 intitule la côte « Gout-Custe de Mina ». La traduction anglaise de Bosman, publiée en 1705, décrit déjà la « Gold-Coast » comme une partie de la Guinée ; son titre divise la Guinée en trois côtes, celles de l'or, des esclaves et de l'ivoire. L'Encyclopaedia Africana écrit que les premiers Portugais, trouvant la région riche en or alluvial, ont appelé le pays Côte de l'Or, sans citer de texte portugais ; aucune des sources citées ici n'atteste la forme « Costa do Ouro ». Une charte du 24 juillet 1874 constitue la colonie sous le nom de « Gold Coast Colony », en français Côte-de-l'Or. Pour J. B. Danquah, selon Citi Newsroom, ce nom tiré de la richesse minière reflétait les priorités du commerce européen plutôt que l'histoire des habitants.",
+      "contemporary": "Le 6 mars 1957, la colonie de la Côte-de-l'Or prend le nom de Ghana à l'indépendance (Encyclopaedia Africana) ; le Ghana Independence Act de 1957 place ses territoires « sous le nom de Ghana ». Le 1er juillet 1960, le pays devient une république, avec Kwame Nkrumah pour président, selon l'Encyclopaedia Africana. Son nom officiel en anglais est « Republic of Ghana »."
     },
     "kingdoms": [
       {
-        "name": "Royaumes Akan",
-        "period": "XIIIe - XIXe siècles",
+        "name": "Royaumes mamprusi, dagomba et nanumba",
+        "period": "XVe siècle - annexion britannique (1901)",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1201,
-          "endYear": 1900,
-          "precision": "century"
+          "startYear": 1430,
+          "endYear": 1901,
+          "precision": "approximate",
+          "datingNote": "Le début résume deux datations : l'Encyclopaedia Africana place vers 1430 Sitobu, fondateur du royaume dagomba, et l'Histoire générale de l'Afrique fait jouer au Dagomba un rôle majeur à partir de Na Nyaghse (1460-1500). La fin retenue est l'annexion des Territoires du Nord par la Grande-Bretagne en 1901 ; les royaumes eux-mêmes ne disparaissent pas à cette date."
         },
-        "dominantPeoples": ["Akan (Ashanti, Fante, Akyem, Akuapem, Denkyira)"],
+        "dominantPeoples": ["Mamprusi", "Dagomba", "Nanumba"],
         "politicalCenters": [
-          "Kumasi (capitale Ashanti)",
-          "Cape Coast",
-          "Accra"
+          "Yendi Dabari, puis Yendi à partir du milieu du XVIIe siècle (Dagomba)",
+          "Gambaga, principal marché du pays mamprusi"
         ],
-        "historicalRole": "Royaumes Akan puissants, commerce de l'or, résistance à la colonisation. Royaume Ashanti particulièrement puissant."
+        "historicalRole": "Selon Michel Izard et Joseph Ki-Zerbo, ces trois royaumes ont été fondés par des descendants de Na Gbewa, que les traditions relient aussi aux royaumes mossi. L'islam y entre depuis le Gonja ; le premier roi dagomba converti, Na Zangina, règne au tout début du XVIIIe siècle. En 1744, l'Asante intervient dans une guerre de succession dagomba et impose un tribut annuel en prisonniers."
       },
       {
-        "name": "Royaume Ashanti",
-        "period": "XVIIe - XIXe siècles",
+        "name": "Gonja",
+        "period": "Seconde moitié du XVIe siècle - conquête asante (1732)",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1601,
-          "endYear": 1900,
-          "precision": "century"
+          "startYear": 1550,
+          "endYear": 1732,
+          "precision": "approximate",
+          "datingNote": "L'Histoire générale de l'Afrique place la fondation dans la seconde moitié du XVIe siècle, sans année précise. La fin retenue est la conquête par l'Asante en 1732, après laquelle le Gonja reste un État vassal."
         },
-        "dominantPeoples": ["Ashanti (Akan)"],
-        "politicalCenters": ["Kumasi (capitale)"],
-        "historicalRole": "Royaume Akan le plus puissant, expansion territoriale, commerce de l'or, résistance aux Britanniques. Guerres anglo-ashanti (XIXe siècle)."
+        "dominantPeoples": ["Gonja"],
+        "politicalCenters": ["Yagbum"],
+        "historicalRole": "Royaume fondé par un chef mandé, selon Michel Izard et Joseph Ki-Zerbo. Sous Lata-Jakpa, il prend aux Dagomba le centre de production de sel de Daboya. Selon l'Encyclopaedia Africana, ses dirigeants parlent le gbanyito, une langue guan."
       },
       {
-        "name": "Royaumes Ga-Dangme",
-        "period": "Précolonial - présent",
+        "name": "Royaume ga (Accra)",
+        "period": "Vers 1600 - conquête asante (1744-1745)",
         "entryType": "polity",
-        "dominantPeoples": ["Ga", "Dangme"],
-        "politicalCenters": ["Accra", "régions côtières"],
-        "historicalRole": "Peuples côtiers, commerce avec les Européens, présence historique à Accra."
+        "timeRange": {
+          "startYear": 1600,
+          "endYear": 1745,
+          "precision": "approximate",
+          "datingNote": "A. Adu Boahen écrit que la royauté profane existe chez les Ga vers 1600 ; avant 1300, ils étaient gouvernés par des prêtres. Les sources ne s'accordent pas sur les dates du XVIIe siècle : Boahen situe l'apogée sous Okai Akwei (vers 1640-1677) et la conquête par l'Akwamu en 1681, alors que l'Encyclopaedia Africana place Okai Koi vers 1610-1660 et sa défaite face à l'Akwamu en 1660. La fin retenue est la conquête par l'Asante en 1744-1745."
+        },
+        "dominantPeoples": ["Ga"],
+        "politicalCenters": [
+          "Ayawaso, capitale jusqu'en 1680",
+          "Accra, sur la côte, ensuite"
+        ],
+        "historicalRole": "Royaume des plaines d'Accra, dont les villes côtières reconnaissent l'autorité du Ga Mantse, le roi. Il s'étend au XVIIe siècle vers le nord, sur des principautés guan, selon A. Adu Boahen."
       },
       {
-        "name": "Royaumes gur",
-        "period": "Précolonial - présent",
+        "name": "Denkyira",
+        "period": "Années 1650-1660 - 1701",
         "entryType": "polity",
-        "dominantPeoples": ["Dagomba", "Mamprusi"],
-        "politicalCenters": ["Nord"],
-        "historicalRole": "Royaumes gur liés aux Mossi et aux Mandé, organisation politique traditionnelle."
+        "timeRange": {
+          "startYear": 1650,
+          "endYear": 1701,
+          "precision": "approximate",
+          "datingNote": "A. Adu Boahen date la séparation d'avec la confédération adansi des guerres des années 1650 et 1660. La fin retenue est la défaite face à l'Asante, entre 1699 et 1701 selon Boahen, à la bataille de Feyiase en novembre 1701 selon l'Encyclopaedia Africana."
+        },
+        "dominantPeoples": ["Denkyira (Akan)"],
+        "politicalCenters": ["Abankieso, au confluent du Pra et de l'Ofin"],
+        "historicalRole": "Premier État akan à devenir un empire, selon A. Adu Boahen. En 1690, il domine le sud-ouest de la Côte-de-l'Or et une partie de la Côte d'Ivoire actuelle."
+      },
+      {
+        "name": "Akwamu",
+        "period": "XVIIe siècle - 1731",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1630,
+          "endYear": 1731,
+          "precision": "approximate",
+          "datingNote": "A. Adu Boahen décrit l'Akwamu comme un royaume puissant entre 1630 et 1670 environ. Il date sa défaite de 1731 ; l'Encyclopaedia Africana parle d'une bataille décisive en 1730 et d'une guerre menée jusqu'en 1733."
+        },
+        "dominantPeoples": ["Akwamu (Akan)"],
+        "politicalCenters": [
+          "Nyanoase, près de l'actuelle Nsawam",
+          "Akwamufie, de l'autre côté de la Volta, après 1731"
+        ],
+        "historicalRole": "Royaume akan du sud-est, qui conquiert le royaume ga et des États adangbe. Battu par l'Akyem Abuakwa et ses alliés, il se replie de l'autre côté de la Volta, selon A. Adu Boahen."
+      },
+      {
+        "name": "Asante",
+        "period": "Fin du XVIIe siècle - annexion britannique (1901)",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1697,
+          "endYear": 1901,
+          "precision": "approximate",
+          "datingNote": "Le début suit l'Encyclopaedia Africana, qui fait régner Osei Tutu, fondateur de la nation asante, à partir de 1697 environ. La fin retenue est l'annexion de 1901 donnée par l'Histoire générale de l'Afrique ; l'Encyclopaedia Africana date du 1er janvier 1902 la perte de souveraineté."
+        },
+        "dominantPeoples": ["Asante (Akan)"],
+        "politicalCenters": ["Kumasi"],
+        "historicalRole": "Confédération d'États akan unis autour de l'Asantehene et du Siège d'or, symbole de la nation. Au milieu du XVIIIe siècle, son empire va du Comoé à la Volta. Il combat les Britanniques au XIXe siècle et mène encore une guerre contre eux en 1900, sous la conduite de Yaa Asantewaa."
       },
       {
         "name": "Côte-de-l'Or",
@@ -402,10 +467,13 @@
           "precision": "year"
         },
         "dominantPeoples": [
-          "Tous les peuples ghanéens sous administration coloniale britannique"
+          "Tous les peuples du territoire, sous administration britannique"
         ],
-        "politicalCenters": ["Accra (capitale coloniale)", "Cape Coast"],
-        "historicalRole": "Colonie britannique, résistance ghanéenne (guerres anglo-ashanti), mouvements nationalistes."
+        "politicalCenters": [
+          "Cape Coast, siège du gouvernement jusqu'en 1876",
+          "Accra, à partir de 1876"
+        ],
+        "historicalRole": "Colonie britannique constituée par une charte du 24 juillet 1874, après la défaite asante. L'Asante et les Territoires du Nord y sont rattachés en 1901 ; le Togo britannique la rejoint peu avant l'indépendance, après un référendum tenu en 1956. Elle devient indépendante le 6 mars 1957 sous le nom de Ghana."
       },
       {
         "name": "République du Ghana",
@@ -416,75 +484,73 @@
           "ongoing": true,
           "precision": "year"
         },
-        "dominantPeoples": ["Tous les peuples ghanéens"],
-        "politicalCenters": ["Accra (capitale)"],
-        "historicalRole": "Premier État indépendant d'Afrique subsaharienne (1957). Histoire politique avec alternance démocratique et régimes militaires. Développement économique, modèle de démocratie en Afrique."
+        "dominantPeoples": ["Tous les peuples du Ghana"],
+        "politicalCenters": ["Accra"],
+        "historicalRole": "État indépendant depuis le 6 mars 1957 et république depuis le 1er juillet 1960. Il connaît plusieurs régimes militaires entre 1966 et 1992, entrecoupés de deux républiques civiles, puis des alternances au pouvoir sous la Quatrième République, selon l'Encyclopaedia Africana."
       }
     ],
     "majorPeoples": [
       {
         "name": "Akan",
         "selfAppellation": "Akan",
-        "exonyms": ["Akan (terme utilisé par les Européens)"],
+        "exonyms": [
+          "Acanists (forme écrite sur une carte néerlandaise de 1629)"
+        ],
         "peopleId": "PPL_AKAN",
-        "mainRegion": "Centre, Sud, Ouest",
-        "languages": ["Akan (Twi, Fante)", "anglais"],
+        "mainRegion": "Régions Ashanti, Centre, Grand Accra, Ouest, Est et Bono",
+        "languages": ["Akan (aka)", "Nzema (nzi)"],
         "languageFamily": "FLG_KWA",
-        "appellationRemarks": "Le terme \"Akan\" est neutre et accepté."
+        "appellationRemarks": "Le recensement de 2021 fait des Akan le plus grand des neuf grands groupes ethniques du Ghana. A. Adu Boahen distingue les Akan de l'Est, dont les Asante, les Akuapem, les Akyem, les Akwamu, les Kwahu et les Fante, qui parlent presque tous le twi, et les Akan de l'Ouest, dont les Nzema, les Ahanta, les Aowin et les Sehwi."
       },
       {
         "name": "Mole-Dagbani",
-        "selfAppellation": "Dagomba, Mamprusi",
-        "exonyms": [
-          "Mole-Dagbani (terme utilisé par les Européens)",
-          "Dagomba",
-          "Mamprusi"
-        ],
+        "selfAppellation": "Dagbamba",
+        "exonyms": ["Mole-Dagbane", "Dagomba"],
         "peopleId": "PPL_DAGOMBA",
-        "mainRegion": "Nord",
-        "languages": ["Dagbani", "Mampruli", "anglais"],
-        "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Mole-Dagbani\" est neutre et accepté."
+        "mainRegion": "Régions du Nord, du Haut-Est et du Haut-Ouest",
+        "languages": ["Dagbani (dag)", "Mampruli (maw)"],
+        "languageFamily": "FLG_GUR",
+        "appellationRemarks": "Mole-Dagbani est le nom d'un des neuf grands groupes ethniques du recensement de 2021. A. Adu Boahen écrit Mole-Dagbane pour l'ensemble des États mamprusi, dagomba, nanumba et mossi. Nous renvoyons ici à la fiche des Dagomba ; Glottolog relève Dagbamba parmi les noms de leur langue, le dagbani."
       },
       {
         "name": "Ewe",
-        "selfAppellation": "Eʋe / Eʋegbe",
-        "exonyms": ["Ewe (terme utilisé par les Européens)"],
+        "selfAppellation": "Eʋe",
+        "exonyms": ["Éwé"],
         "peopleId": "PPL_EWE",
-        "mainRegion": "Volta (Est)",
-        "languages": ["Ewe", "anglais"],
+        "mainRegion": "Région de la Volta et Grand Accra",
+        "languages": ["Ewe (ewe)"],
         "languageFamily": "FLG_KWA",
-        "appellationRemarks": "Le terme \"Ewe\" est neutre et accepté. L'auto-appellation \"Eʋe\" est préférée."
+        "appellationRemarks": "En ewe, la langue se nomme Eʋegbe, selon Glottolog. Les Ewe vivent au Ghana et au Togo ; A. Adu Boahen situe leur dernier foyer commun à Notsie, dans le Togo actuel."
       },
       {
         "name": "Ga-Dangme",
-        "selfAppellation": "Gã / Ga (Ga), Dangme / Adaŋme (Dangme)",
-        "exonyms": ["Ga-Dangme (terme utilisé par les Européens)"],
+        "selfAppellation": "Gã, Dangme",
+        "exonyms": ["Ga-Adangbe"],
         "peopleId": "PPL_GA_DANGME",
-        "mainRegion": "Grande Accra",
-        "languages": ["Ga", "Dangme", "anglais"],
+        "mainRegion": "Grand Accra et région de l'Est",
+        "languages": ["Ga (gaa)", "Dangme (ada)"],
         "languageFamily": "FLG_KWA",
-        "appellationRemarks": "Le terme \"Ga-Dangme\" est neutre et accepté. Les auto-appellations \"Gã\" et \"Dangme\" sont préférées."
+        "appellationRemarks": "Le recensement de 2021 réunit les Ga et les Dangme dans un même groupe. A. Adu Boahen écrit Ga-Adangbe et rapporte que les Ga se sont séparés de leurs parents adangbe dans la basse vallée de la Volta, avant de s'installer dans les plaines d'Accra."
       },
       {
         "name": "Guan",
         "selfAppellation": "Guan",
-        "exonyms": ["Guan (terme utilisé par les Européens)"],
+        "exonyms": ["Guang"],
         "peopleId": "PPL_GUAN",
-        "mainRegion": "Centre",
-        "languages": ["Guan", "anglais"],
+        "mainRegion": "Régions de la Savane, d'Oti, du Centre et de Bono Est",
+        "languages": ["Gonja (gjn)"],
         "languageFamily": "FLG_KWA",
-        "appellationRemarks": "Le terme \"Guan\" est neutre et accepté."
+        "appellationRemarks": "Glottolog range le gonja dans la branche guang des langues kwa. Selon l'Encyclopaedia Africana, les Guan, conquis par les Akan, ont gardé leur propre langue."
       },
       {
         "name": "Gurma",
         "selfAppellation": "Gurma",
-        "exonyms": ["Gurma (terme utilisé par les Européens)"],
+        "exonyms": ["Gourma"],
         "peopleId": "PPL_GOURMANTCHE",
-        "mainRegion": "Nord-Est",
-        "languages": ["Gurma", "anglais"],
-        "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Gurma\" est neutre et accepté."
+        "mainRegion": "Régions du Nord et d'Oti",
+        "languages": ["Konkomba (xon)", "Gourmanchéma (gux)"],
+        "languageFamily": "FLG_GUR",
+        "appellationRemarks": "Gurma est le nom d'un des neuf grands groupes ethniques du recensement de 2021. Glottolog classe le konkomba et le gourmanchéma dans un même sous-groupe gurma des langues gur. Nous renvoyons ici à la fiche des Gourmantché."
       }
     ],
     "culture": {
@@ -529,21 +595,25 @@
         {
           "name": "Kasem",
           "isoCode": "xsm"
+        },
+        {
+          "name": "Farefare (gurune)",
+          "isoCode": "gur"
         }
       ],
-      "culturalTraditions": "Musique traditionnelle (highlife, hiplife), danse traditionnelle, poésie orale, artisanat (kente, adinkra), architecture traditionnelle, festivals (Homowo, Akwasidae)",
-      "dominantReligions": "Christianisme (protestant majoritaire, catholique), islam (minorité, surtout au nord), croyances traditionnelles (syncrétisme)",
-      "lifestyles": "Vie principalement rurale, agriculture (cacao, or, pétrole, manioc, igname, riz), élevage (bovins, caprins), pêche (côtes), exploitation minière (or, diamants), commerce, urbanisation croissante",
-      "socialOrganization": "Système de chefferies traditionnelles (chieftaincy), structure clanique patrilinéaire, organisation en familles étendues et lignages, importance des ancêtres, système de confréries religieuses",
-      "regionalRelations": "Relations historiques avec les peuples du Togo, du Bénin, de la Côte d'Ivoire, du Burkina Faso. Diaspora importante au Royaume-Uni, aux États-Unis, et dans les pays occidentaux."
+      "culturalTraditions": "Le tissage est une tradition ancienne du sud du pays. Selon une étude que cite A. Adu Boahen, le tissage sur métier étroit est arrivé chez les Akan, les Ewe et les Ga depuis le Soudan occidental avant l'arrivée des Portugais, et il atteint sa plus grande finesse au XVIIIe siècle. Boahen cite les étoffes kente des Akan, les étoffes adanudo des Ewe et l'adinkra, une étoffe estampée de motifs akan, reprise ensuite par les Asante. Les rois asante du XVIIIe siècle réunissent les artisans autour de Kumasi : Ahwiaa pour les sièges sculptés, Bonwire pour le kente, Tafo pour la poterie, Fumesua pour le fer et Krofofrom pour le laiton. Chez les Asante, l'Odwira est une fête annuelle de l'igname où les chefs des États membres venaient rendre hommage à l'Asantehene, selon l'Histoire générale de l'Afrique et l'Encyclopaedia Africana. La musique highlife s'est développée au Ghana, où elle était pleinement formée vers 1930 ; Accra en était le principal foyer avant 1940, et elle a connu son apogée dans les années 1950, selon Jan Vansina.",
+      "dominantReligions": "Au recensement de 2021, 71,3 % des habitants se déclarent chrétiens : 31,6 % appartiennent aux Églises pentecôtistes et charismatiques, 17,4 % aux Églises protestantes, 10,0 % à l'Église catholique et 12,3 % à d'autres Églises chrétiennes. L'islam réunit 19,9 % des habitants, la religion traditionnelle 3,2 %, d'autres religions 4,5 %, et 1,1 % se disent sans religion. Le recensement définit la religion traditionnelle comme le culte des divinités et des ancêtres. Dans les régions du Nord, de la Savane et du Nord-Est, plus de six habitants sur dix sont musulmans. Selon Michel Izard et Joseph Ki-Zerbo, l'islam est entré chez les Dagomba depuis le Gonja au XVIIe siècle, et le premier roi dagomba converti règne au début du XVIIIe siècle.",
+      "lifestyles": "La population du Ghana est aujourd'hui en majorité urbaine : selon le recensement de 2021, 56,7 % des habitants vivent en ville, contre 50,9 % en 2010. Cette part va de 91,7 % dans le Grand Accra à 25,4 % dans la région du Haut-Est. Parmi les personnes de 15 ans et plus qui ont un emploi, 32,0 % travaillent dans l'agriculture, la forêt ou la pêche, 26,5 % dans les services et la vente, et 16,1 % dans l'artisanat ; par secteur, les services emploient 53,3 % des actifs, l'agriculture 33,0 % et l'industrie 13,7 %. Le cacao, devenu une culture majeure, a été apporté de l'île de Fernando Po vers 1878 par Tetteh Quarshie, un artisan de la Mission de Bâle, selon l'Encyclopaedia Africana. Plus anciennement, l'Aowin, le Denkyira, l'Akwamu et l'Asante étaient les principaux producteurs d'or, selon A. Adu Boahen.",
+      "socialOrganization": "Les peuples du Ghana ne s'organisent pas tous de la même façon. Chez les Akan, selon A. Adu Boahen, le roi d'un État est choisi dans la famille royale en suivant la descendance par la mère, et il gouverne avec un conseil de chefs de familles ou de clans, plutôt comme le premier parmi ses égaux. Les Ga, les Adangbe et les Ewe vivent au contraire en lignages et en clans fondés sur la descendance par le père. Chez les Asante, les chefs des États de la confédération reconnaissent l'Asantehene et siègent à son conseil. Dans le royaume dagomba, d'après l'Encyclopaedia Africana, Na Nyagse fait tuer les prêtres de la terre, appelés tendana, et installe à leur place des membres de sa famille, mais leurs fonctions religieuses sont conservées. À l'époque coloniale, une ordonnance de 1927 renforce l'autorité des chefs, selon la même encyclopédie.",
+      "regionalRelations": "Plusieurs peuples du Ghana vivent aussi dans les pays voisins. Les Ewe vivent au Ghana et au Togo, et leurs traditions situent un ancien foyer commun à Notsie, dans le Togo actuel. Les Akan de l'Ouest, comme les Anyi et les Baoulé, vivent en Côte d'Ivoire, selon A. Adu Boahen. Au nord, les traditions relient les royaumes mamprusi et dagomba aux royaumes mossi du Burkina Faso actuel, selon Michel Izard et Joseph Ki-Zerbo. Le Togo britannique, administré par la Grande-Bretagne sous mandat puis sous tutelle, a voté en 1956 pour rejoindre la Côte-de-l'Or, selon l'Encyclopaedia Africana."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement du territoire par des groupes Akan, Ga-Dangme, Guan, Gur. Développement de royaumes indépendants.",
-      "middleAges": "Développement des royaumes Akan (XIIIe-XIXe siècles). Royaume Ashanti devient le plus puissant. Commerce de l'or avec les Européens.",
-      "precolonial": "Apogée du royaume Ashanti (XVIIe-XIXe siècles). Expansion territoriale, commerce de l'or, résistance aux Britanniques. Guerres anglo-ashanti (XIXe siècle).",
-      "colonization": "XVe siècle : premiers contacts portugais. XVIIe-XIXe siècles : présence néerlandaise, britannique. 1874 : Colonie britannique (Gold Coast). Résistance ghanéenne (guerres anglo-ashanti).",
-      "independenceStruggle": "Mouvements nationalistes dans les années 1950. Indépendance obtenue en 1957. Kwame Nkrumah devient premier président. Premier État indépendant d'Afrique subsaharienne.",
-      "postIndependence": "Première République (1957-1966) : présidence de Nkrumah, socialisme africain. Régimes militaires (1966-1992). Quatrième République depuis 1992 : alternance démocratique, développement économique, modèle de démocratie en Afrique."
+      "ancientPeriods": "Les sources consultées décrivent peu les périodes les plus anciennes. L'Encyclopaedia Africana présente comme une hypothèse l'arrivée des ancêtres des Akan depuis la région du Gonja vers l'an 1200, en trois vagues : les Guan, puis les Fante, puis les Twi. A. Adu Boahen situe vers 1500 le foyer de la plupart des Akan dans le bassin de l'Ofin et du Pra, autour de l'Adansi et de l'Amanse.",
+      "middleAges": "Avant 1300, les Ga sont gouvernés par des prêtres, selon A. Adu Boahen. Au nord, le royaume dagomba prend de l'importance au XVe siècle : l'Encyclopaedia Africana place son fondateur, Sitobu, vers 1430, et Michel Izard et Joseph Ki-Zerbo font commencer son rôle majeur avec Na Nyaghse (1460-1500). Dans la seconde moitié du XVe siècle apparaît le Bono, premier royaume akan selon Boahen, enrichi par le commerce autour de Begho. En janvier 1471, les Portugais obtiennent de l'or à Shama, et ils construisent en 1482 le château de São Jorge da Mina, d'après Duarte Pacheco Pereira.",
+      "precolonial": "Entre le XVIe et le XVIIIe siècle, les Akan, les Ga-Adangbe et les Ewe achèvent de s'installer dans les régions où ils vivent aujourd'hui, selon A. Adu Boahen. Vers 1550 se forme la confédération adansi ; puis le Denkyira et l'Akwamu deviennent des empires. L'Asante bat le Denkyira entre 1699 et 1701, et l'Akwamu est vaincu en 1731 par l'Akyem Abuakwa et ses alliés. Au milieu du XVIIIe siècle, l'empire asante va du Comoé à la Volta ; seul l'État fante, soutenu par les Britanniques, reste indépendant sur la côte. Au nord, le Gonja, fondé par un chef mandé, combat les Dagomba ; en 1744, l'Asante impose aux Dagomba un tribut de 2 000 prisonniers par an, selon Michel Izard et Joseph Ki-Zerbo, ou de 200 esclaves par an, selon l'Encyclopaedia Africana. La traite des esclaves atteint son sommet entre 1670 et 1750, et la plupart des captifs sont pris à la guerre ou lors de razzias, écrit Boahen.",
+      "colonization": "Les Portugais arrivent sur la côte en 1471. Les Néerlandais prennent le château d'Elmina en 1637, et les Anglais construisent le château de Cape Coast en 1662, selon l'Encyclopaedia Africana. Les Asante et les Britanniques s'affrontent à partir des années 1760 : en 1824, les Asante battent les Britanniques et tuent le gouverneur Charles MacCarthy, puis sont vaincus à Dodowa en 1826. En février 1874, l'armée de Garnet Wolseley prend et pille Kumasi, et le traité de Fomena détache de l'Asante ses vassaux du sud, selon M'Baye Gueye et A. Adu Boahen. Une charte du 24 juillet 1874 constitue la colonie de la Côte-de-l'Or. En 1896, l'Asantehene Prempeh Ier est arrêté puis exilé ; en 1900, la demande du gouverneur britannique de recevoir le Siège d'or déclenche la guerre conduite par Yaa Asantewaa, reine d'Edweso. L'Asante et les Territoires du Nord sont annexés en 1901.",
+      "independenceStruggle": "Après la Seconde Guerre mondiale apparaissent les partis qui mènent le pays à l'indépendance : la United Gold Coast Convention en 1947, le Convention People's Party de Kwame Nkrumah en 1949 et le Northern People's Party en 1954, selon Jean Suret-Canale et A. Adu Boahen. En février 1948, des émeutes éclatent contre la vie chère et l'abattage obligatoire de cacaoyers malades, selon l'Encyclopaedia Africana. Nkrumah mène une campagne d'« action positive » inspirée de Gandhi, selon Ali A. Mazrui. Son parti gagne les élections de 1951 et de 1956, et il forme le gouvernement en février 1951. Le 6 mars 1957, la Côte-de-l'Or devient indépendante sous le nom de Ghana ; c'est la première des colonies britanniques d'Afrique de l'Ouest à obtenir son indépendance.",
+      "postIndependence": "Le Ghana devient une république le 1er juillet 1960, avec Kwame Nkrumah pour président, et un régime à parti unique en 1964. Le 24 février 1966, un coup d'État militaire renverse Nkrumah. Suivent une Deuxième République en 1969, de nouveaux coups d'État en 1972, 1978, 1979 et 1981, et une Troisième République de 1979 à 1981, selon l'Encyclopaedia Africana et l'Histoire générale de l'Afrique. En 1992, le multipartisme est rétabli et Jerry Rawlings devient le premier président de la Quatrième République. En 2000, l'élection de John Agyekum Kufuor donne lieu à la première passation ordonnée du pouvoir entre deux partis ; d'autres alternances suivent, jusqu'à l'élection de John Dramani Mahama en 2024, selon l'Encyclopaedia Africana."
     },
     "sources": [
       {
@@ -565,7 +635,7 @@
         "url": "https://census2021.statsghana.gov.gh/gssmain/fileUpload/reportthemelist/Volume%203%20Highlights.pdf",
         "tier": "official",
         "source_kind": "official_statistics",
-        "notes": "Recensement conduit par le service statistique national du Ghana, qui publie la répartition de la population par groupe ethnique."
+        "notes": "Recueil des principaux résultats du recensement de 2021, publié par le service statistique national du Ghana. Il indique que la population urbaine passe de 50,9 % en 2010 à 56,7 % en 2021 (p. 4), que trois des neuf grands groupes ethniques, les Akan, les Mole-Dagbani et les Ewe, forment 77 % de la population (p. 30), et que 32,0 % des actifs de 15 ans et plus travaillent dans l'agriculture, la forêt ou la pêche (p. 51), l'agriculture employant 33,0 % des actifs par secteur (p. 61)."
       },
       {
         "title": "UN DESA – World Population Prospects",
@@ -607,7 +677,7 @@
         "url": "https://encyclopaediaafricana.com/ghana/",
         "tier": "referenced",
         "source_kind": "encyclopedia",
-        "notes": "Article de l'encyclopédie en ligne : il attribue à J. B. Danquah la suggestion du nom, situe l'ancien royaume entre le Sahara et les hauts cours du Sénégal et du Niger, juge douteuse la preuve d'une filiation akan et donne le 6 mars 1957 pour la date à laquelle le nom a été pris."
+        "notes": "Article de l'encyclopédie en ligne : il attribue à J. B. Danquah la suggestion du nom, situe l'ancien royaume entre le Sahara et les hauts cours du Sénégal et du Niger, juge douteuse la preuve d'une filiation akan et donne le 6 mars 1957 pour la date à laquelle le nom a été pris. L'article retrace aussi l'histoire du pays : les royaumes ga, akwamu, akyem, asante, dagomba et gonja, les forts européens, les guerres asante, la colonie de 1874, l'introduction du cacao vers 1878, les émeutes de 1948, la république de 1960, les coups d'État à partir de 1966 et les présidents de la Quatrième République jusqu'à l'élection de 2024."
       },
       {
         "title": "MyJoyOnline — J. B. Danquah and the naming of our Republic (5 juin 2019)",
@@ -674,92 +744,222 @@
         "tier": "official",
         "source_kind": "academic",
         "notes": "Rapport annuel officiel du gouvernement colonial britannique : il rappelle la charte du 24 juillet 1874 qui constitue la \"Gold Coast Colony\"."
+      },
+      {
+        "title": "Ghana Statistical Service — 2021 Population and Housing Census, General Report, Volume 3C : Background Characteristics (2021)",
+        "url": "https://census2021.statsghana.gov.gh/gssmain/fileUpload/reportthemelist/2021%20PHC%20General%20Report%20Vol%203C_Background%20Characteristics_181121.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport du recensement de 2021 publié par le service statistique national du Ghana. Le recensement définit le groupe ethnique par la langue, la culture et l'histoire communes auxquelles une personne s'identifie, ou par la langue maternelle (p. 25). Le tableau 5.5 (p. 50) répartit les 30 484 536 Ghanéens recensés en neuf grands groupes : Akan 45,7 %, Mole-Dagbani 18,5 %, Ewe 12,8 %, Ga-Dangme 7,1 %, Gurma 6,4 %, Guan 3,2 %, Grusi 2,7 %, Mande 2,0 % et autres 1,6 %, avec leur répartition par région. Le tableau 5.7 (p. 58) donne l'appartenance religieuse : chrétiens 71,3 %, musulmans 19,9 %, religion traditionnelle 3,2 %, autres religions 4,5 %, sans religion 1,1 %."
+      },
+      {
+        "title": "Ghana Statistical Service — 2021 Population and Housing Census, General Report, Volume 3D : Literacy and Education",
+        "url": "https://census2021.statsghana.gov.gh/gssmain/fileUpload/reportthemesub/2021%20PHC%20General%20Report%20Vol%203D_Literacy%20and%20Education.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport du recensement de 2021 sur l'alphabétisation et l'éducation. Parmi les personnes alphabétisées de 6 ans et plus, un peu plus de 96 % savent lire et écrire l'anglais et 52,8 % au moins une langue ghanéenne (p. 29). Dans le Grand Accra, les langues les plus lues sont l'asante twi, le ga et l'ewe ; dans le Haut-Est, le kasem et le gurune (p. 30)."
+      },
+      {
+        "title": "Boahen, A. Adu — The states and cultures of the Lower Guinean coast, dans Histoire générale de l'Afrique, vol. V (UNESCO, 1992)",
+        "url": "https://archive.org/details/general-history-of-africa-v-africa-from-the-16th-to-the-18th-century",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre 14 (p. 399-433) du cinquième volume de l'Histoire générale de l'Afrique de l'UNESCO, dirigé par B. A. Ogot, lu en anglais dans une copie numérisée de l'édition Heinemann, University of California Press et UNESCO. Il décrit l'installation des Akan, des Ga-Adangbe et des Ewe, dont le départ des Ewe de Notsie (p. 400), la division entre Akan de l'Est et de l'Ouest et les lignages paternels des Ga-Adangbe et des Ewe (p. 402), la traite des esclaves, à son sommet entre 1670 et 1750 (p. 408), les États trouvés par les Portugais vers 1500 et le royaume de Bono (p. 411), le royaume ga et la carte néerlandaise de 1629 (p. 412-413), le Denkyira et l'Akwamu (p. 414-415), les conquêtes asante (p. 420), les États producteurs d'or (p. 421) et le tissage, dont le kente et l'adinkra (p. 428-429)."
+      },
+      {
+        "title": "Izard, Michel et Ki-Zerbo, Joseph — From the Niger to the Volta, dans Histoire générale de l'Afrique, vol. V (UNESCO, 1992)",
+        "url": "https://archive.org/details/general-history-of-africa-v-africa-from-the-16th-to-the-18th-century",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre 12 (p. 327-367) du cinquième volume de l'Histoire générale de l'Afrique de l'UNESCO, lu en anglais dans une copie numérisée. Les royaumes mamprusi, nanumba et dagomba y sont fondés par des descendants de Na Gbewa ; le Dagomba joue un rôle majeur depuis Na Nyaghse (1460-1500) ; un chef mandé fonde le Gonja dans la seconde moitié du XVIe siècle (p. 339) ; en 1744, l'Asante impose au Dagomba un tribut annuel de 2 000 prisonniers (p. 340). L'islam entre au Dagomba depuis le Gonja et Gambaga devient un centre musulman (p. 365)."
+      },
+      {
+        "title": "Arhin, K. et Ki-Zerbo, Joseph — States and peoples of the Niger Bend and the Volta, dans Histoire générale de l'Afrique, vol. VI (UNESCO, 1989)",
+        "url": "https://archive.org/details/general-history-of-africa-v-africa-from-the-16th-to-the-18th-century",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre 25 du sixième volume de l'Histoire générale de l'Afrique de l'UNESCO, lu en anglais dans une copie numérisée. Il décrit l'union asante, le serment de l'Asantehene, la place des États du nord comme le Dagomba, le Mamprusi et le Gonja (p. 669-670) et la fête de l'Odwira, à laquelle les chefs akan devaient assister (p. 671)."
+      },
+      {
+        "title": "Gueye, M'Baye et Boahen, A. Adu — African initiatives and resistance in West Africa, 1880-1914, dans Histoire générale de l'Afrique, vol. VII (UNESCO, 1985)",
+        "url": "https://archive.org/details/general-history-of-africa-v-africa-from-the-16th-to-the-18th-century",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre 6 du septième volume de l'Histoire générale de l'Afrique de l'UNESCO, lu en anglais dans une copie numérisée. Il retrace les guerres entre l'Asante et les Britanniques : la défaite britannique de 1824 et la mort de Charles MacCarthy, la bataille de Dodowa, la prise de Kumasi par Garnet Wolseley en février 1874 et le traité de Fomena (p. 130-131), l'arrestation et l'exil de Prempeh Ier en 1896 (p. 132), et la guerre de Yaa Asantewaa en 1900, déclenchée par la demande du Siège d'or (p. 143)."
+      },
+      {
+        "title": "Uzoigwe, G. N. — European partition and conquest of Africa: an overview, dans Histoire générale de l'Afrique, vol. VII (UNESCO, 1985)",
+        "url": "https://archive.org/details/general-history-of-africa-v-africa-from-the-16th-to-the-18th-century",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre 2 du septième volume de l'Histoire générale de l'Afrique de l'UNESCO, lu en anglais dans une copie numérisée. La dernière expédition contre Kumasi (1900) est suivie en 1901 de l'annexion de l'Asante ; les Territoires du Nord, occupés entre 1896 et 1898, sont annexés la même année (p. 36)."
+      },
+      {
+        "title": "Suret-Canale, Jean et Boahen, A. Adu — West Africa, 1945-60, dans Histoire générale de l'Afrique, vol. VIII (UNESCO, 1993)",
+        "url": "https://archive.org/details/general-history-of-africa-v-africa-from-the-16th-to-the-18th-century",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre 7 du huitième volume de l'Histoire générale de l'Afrique de l'UNESCO, lu en anglais dans une copie numérisée. Il date la création de la United Gold Coast Convention (1947), du Convention People's Party (1949) et du Northern People's Party (1954), et se demande pourquoi le Ghana a été la première colonie britannique à devenir indépendante (p. 167). Il cite la fusillade de 1948 et les élections de 1951 et de 1956 gagnées par le parti de Nkrumah (p. 172)."
+      },
+      {
+        "title": "Mazrui, Ali A. — Seek ye first the political kingdom, dans Histoire générale de l'Afrique, vol. VIII (UNESCO, 1993)",
+        "url": "https://archive.org/details/general-history-of-africa-v-africa-from-the-16th-to-the-18th-century",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre 5 du huitième volume de l'Histoire générale de l'Afrique de l'UNESCO, lu en anglais dans une copie numérisée. La stratégie d'« action positive » de Kwame Nkrumah en Côte-de-l'Or y est décrite comme directement inspirée de Gandhi (p. 120)."
+      },
+      {
+        "title": "Elaigwu, J. Isawa et Mazrui, Ali A. — Nation-building and changing political structures, dans Histoire générale de l'Afrique, vol. VIII (UNESCO, 1993)",
+        "url": "https://archive.org/details/general-history-of-africa-v-africa-from-the-16th-to-the-18th-century",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre 15 du huitième volume de l'Histoire générale de l'Afrique de l'UNESCO, lu en anglais dans une copie numérisée. Son tableau des dirigeants depuis l'indépendance donne pour le Ghana Kwame Nkrumah (1957-1966), J. A. Ankrah (1966-1969), A. A. Afrifa (1969), Kofi Busia (1969-1972), I. K. Acheampong (1972-1978), Frederick Akuffo (1978-1979), Jerry Rawlings (1979), Hilla Limann (1979-1981) et de nouveau Jerry Rawlings à partir de 1981 (p. 459)."
+      },
+      {
+        "title": "Ki-Zerbo, Joseph, Mazrui, Ali A. et Wondji, Christophe — Nation-building and changing political values, dans Histoire générale de l'Afrique, vol. VIII (UNESCO, 1993)",
+        "url": "https://archive.org/details/general-history-of-africa-v-africa-from-the-16th-to-the-18th-century",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre 16 du huitième volume de l'Histoire générale de l'Afrique de l'UNESCO, rédigé avec A. Adu Boahen, lu en anglais dans une copie numérisée. Kwame Nkrumah fait du Ghana un régime socialiste à parti unique en 1964 (p. 483)."
+      },
+      {
+        "title": "Thiam, Iba Der et Mulira, James — Africa and the socialist countries, dans Histoire générale de l'Afrique, vol. VIII (UNESCO, 1993)",
+        "url": "https://archive.org/details/general-history-of-africa-v-africa-from-the-16th-to-the-18th-century",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre 27 du huitième volume de l'Histoire générale de l'Afrique de l'UNESCO, lu en anglais dans une copie numérisée. Le coup d'État du 24 février 1966 renverse Kwame Nkrumah (p. 809)."
+      },
+      {
+        "title": "Vansina, Jan — Arts and society since 1935, dans Histoire générale de l'Afrique, vol. VIII (UNESCO, 1993)",
+        "url": "https://archive.org/details/general-history-of-africa-v-africa-from-the-16th-to-the-18th-century",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre 20 du huitième volume de l'Histoire générale de l'Afrique de l'UNESCO, lu en anglais dans une copie numérisée. Le highlife, pleinement formé au Ghana vers 1930, avait Accra pour foyer avant 1940 et a connu son apogée dans les années 1950 (p. 610-611)."
+      },
+      {
+        "title": "Glottolog — fiches des langues akan, ewe, ga, dangme, dagbani, mampruli, dagaare, gonja, nzema, kasem, farefare, konkomba et gourmanchéma",
+        "url": "https://glottolog.org/resource/languoid/id/akan1250",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue en ligne des langues du monde, consulté fiche par fiche (codes akan1250, ewee1241, gaaa1244, adan1247, dagb1246, mamp1244, sout2789, gonj1241, nzim1238, kase1253, fare1241, konk1269 et gour1243). Il range l'akan, l'ewe, le ga, le dangme, le gonja et le nzema dans les langues kwa, et le dagbani, le mampruli, le dagaare, le kasem, le konkomba et le gourmanchéma dans les langues gur ; le kasem y appartient au sous-groupe grusi, le konkomba et le gourmanchéma au sous-groupe gurma. Il relève Eʋegbe comme nom de l'ewe dans cette langue et Dagbamba parmi les noms du dagbani. Il reprend aussi les statuts donnés par Ethnologue en 2025 : l'akan y est décrit comme langue de travail nationale de fait, et l'ewe, le ga, le dangme, le dagbani, le dagaare, le gonja et le nzema comme langues reconnues depuis une ordonnance de 1951 de la Côte-de-l'Or."
+      },
+      {
+        "title": "Al-Bakrī (Abou-Obeïd el-Bekri) — Description de l'Afrique septentrionale, traduction de William Mac Guckin de Slane, édition revue et corrigée (1913)",
+        "url": "https://archive.org/details/fr103andalus05",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Alger, Adolphe Jourdan, 1913, lu dans l'exemplaire numérisé. Chapitre « Description de Ghana et mœurs de ses habitants » (p. 327) : « Ghana est le titre que portent les rois de ce peuple ; le nom de leur pays est Aoukar ». Le roi régnant en l'an 460 de l'hégire (1067-1068) se nomme Tenkamenin."
       }
     ],
     "demographics": {
       "totalPopulation": 35100000,
       "referenceYear": 2025,
-      "source": "UNFPA – World Population Dashboard",
+      "source": "UNFPA – World Population Dashboard — Ghana",
       "peoples": [
         {
           "name": "Akan",
           "peopleId": "PPL_AKAN",
-          "population": 16040700,
+          "population": 13925576,
+          "referenceYear": 2021,
           "percentageInCountry": 45.7,
-          "percentageInAfrica": 1.23,
-          "region": "Centre, Sud, Ouest",
-          "languageFamily": "FLG_KWA"
+          "percentageInAfrica": null,
+          "region": "Régions Ashanti, Centre, Grand Accra, Ouest, Est et Bono",
+          "languageFamily": "FLG_KWA",
+          "mainLanguageCode": "aka"
         },
         {
           "name": "Mole-Dagbani",
           "peopleId": "PPL_DAGOMBA",
-          "population": 6493500,
+          "population": 5638881,
+          "referenceYear": 2021,
           "percentageInCountry": 18.5,
-          "percentageInAfrica": 0.43,
-          "region": "Nord",
-          "languageFamily": "FLG_NIGERCONGO"
+          "percentageInAfrica": null,
+          "region": "Régions du Nord, du Haut-Est et du Haut-Ouest",
+          "languageFamily": "FLG_GUR",
+          "mainLanguageCode": "dag"
         },
         {
           "name": "Ewe",
           "peopleId": "PPL_EWE",
-          "population": 4492800,
+          "population": 3902009,
+          "referenceYear": 2021,
           "percentageInCountry": 12.8,
-          "percentageInAfrica": 0.36,
-          "region": "Volta (Est)",
-          "languageFamily": "FLG_KWA"
+          "percentageInAfrica": null,
+          "region": "Région de la Volta et Grand Accra",
+          "languageFamily": "FLG_KWA",
+          "mainLanguageCode": "ewe"
         },
         {
           "name": "Ga-Dangme",
           "peopleId": "PPL_GA_DANGME",
-          "population": 2492100,
+          "population": 2153562,
+          "referenceYear": 2021,
           "percentageInCountry": 7.1,
-          "percentageInAfrica": 0.19,
-          "region": "Grande Accra",
-          "languageFamily": "FLG_KWA"
-        },
-        {
-          "name": "Guan",
-          "peopleId": "PPL_GUAN",
-          "population": 1123200,
-          "percentageInCountry": 3.2,
-          "percentageInAfrica": 0.11,
-          "region": "Centre",
-          "languageFamily": "FLG_KWA"
+          "percentageInAfrica": null,
+          "region": "Grand Accra et région de l'Est",
+          "languageFamily": "FLG_KWA",
+          "mainLanguageCode": null
         },
         {
           "name": "Gurma",
           "peopleId": "PPL_GOURMANTCHE",
-          "population": 2246400,
+          "population": 1959618,
+          "referenceYear": 2021,
           "percentageInCountry": 6.4,
-          "percentageInAfrica": 0.08,
-          "region": "Nord-Est",
-          "languageFamily": "FLG_NIGERCONGO"
+          "percentageInAfrica": null,
+          "region": "Régions du Nord et d'Oti",
+          "languageFamily": "FLG_GUR",
+          "mainLanguageCode": null
+        },
+        {
+          "name": "Guan",
+          "peopleId": "PPL_GUAN",
+          "population": 981747,
+          "referenceYear": 2021,
+          "percentageInCountry": 3.2,
+          "percentageInAfrica": null,
+          "region": "Régions de la Savane, d'Oti, du Centre et de Bono Est",
+          "languageFamily": "FLG_KWA",
+          "mainLanguageCode": null
         },
         {
           "name": "Grusi",
           "peopleId": null,
-          "population": 947700,
+          "population": 826901,
+          "referenceYear": 2021,
           "percentageInCountry": 2.7,
-          "region": null,
-          "languageFamily": "FLG_NIGERCONGO"
+          "percentageInAfrica": null,
+          "region": "Régions du Haut-Est et du Haut-Ouest",
+          "languageFamily": "FLG_GUR",
+          "mainLanguageCode": null
         },
         {
           "name": "Mande",
           "peopleId": null,
-          "population": 702000,
+          "population": 600213,
+          "referenceYear": 2021,
           "percentageInCountry": 2.0,
+          "percentageInAfrica": null,
           "region": null,
-          "languageFamily": "FLG_MANDE"
+          "languageFamily": "FLG_MANDE",
+          "mainLanguageCode": null
         },
         {
           "name": "Autres groupes ethniques",
           "peopleId": null,
-          "population": 561600,
+          "population": 496029,
+          "referenceYear": 2021,
           "percentageInCountry": 1.6,
-          "region": "Divers",
-          "languageFamily": null
+          "percentageInAfrica": null,
+          "region": null,
+          "languageFamily": null,
+          "mainLanguageCode": null
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "Le Ghana est un pays d'Afrique de l'Ouest. Jusqu'en 1957, il s'appelait Côte-de-l'Or ; à son indépendance, il a pris le nom d'un ancien royaume situé plus au nord-ouest.",
+      "followUp": "Pourquoi ce pays a-t-il pris le nom d'un royaume qui se trouvait hors de son territoire ?"
     }
   }
 }
