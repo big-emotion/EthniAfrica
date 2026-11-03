@@ -91,6 +91,7 @@ describe("LanguageFamilyDetailViewV2 — a long prose chapter folds after its fi
     expectFolded("Caractéristiques linguistiques", "Typologie", [
       "Traits phonologiques",
       "Relations avec les voisins",
+      "Innovations majeures",
     ]);
     expectFolded("Histoire et origines", "Origine probable", [
       "Période d'émergence",

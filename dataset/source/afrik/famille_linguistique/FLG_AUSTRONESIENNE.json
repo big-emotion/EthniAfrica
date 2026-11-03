@@ -1,4 +1,15 @@
 {
+  "_meta": {
+    "research": [
+      "2026-11-03 : Glottolog JSON aust1307, mala1537, mala1545, kibu1236 (version 5.3) ; plai1258 renvoie au cri des Plaines, sans rapport, le code malayo-polynésien est mala1545.",
+      "Ethnologue mlg : 403 en direct et Wayback Machine inaccessible depuis le proxy ; CIA World Factbook : site fermé en février 2026, instantané d'archive inaccessible. Chiffres de ces deux sources non revérifiés.",
+      "INSTAT RGPH-3 tome 2 (PDF) et note Projection 2050 : population recensée 2018, pas de question sur la langue.",
+      "Insee Analyses Mayotte n° 33 (2022) pour le kibushi. Pas de chiffre de locuteurs pour les Comores hors Mayotte.",
+      "Lus en texte intégral : Adelaar 2012 (dépôt Minerva), Serva et al. 2012 (arXiv), Beaujard 2011 (HAL), Blust 2013 (dépôt ANU), Pearson 2004 (ZASPiL), Campbell 2026 (IOWC), Greenberg 1980 (copie du chapitre sur bokundoli.org, unesdoc renvoie 403), Schmidt 1906 et Bopp 1841 (OCR Internet Archive). Hurles 2005 et Pierron 2017 : résumés PubMed.",
+      "Non trouvés en accès ouvert : Dahl 1951, Adelaar et Himmelmann 2005 (archive.org en prêt seulement), Blench 2007 (rogerblench.info renvoie 403/404).",
+      "Supprimés faute de source lue : Rasolofonirina 2004 ; exemples gaga, migaga, mahagaga ; ordre SVO (le WALS donne VOS) ; dates de séparation 4000-5000 av. J.-C. et fusion 800-1000 ; chiffres 27 000 000 et 25 000 000."
+    ]
+  },
   "id": "FLG_AUSTRONESIENNE",
   "nameFr": "Austronésienne (présente en Afrique uniquement via Madagascar)",
   "nameEn": "Austronesian / Malayo-Polynesian",
@@ -207,24 +218,37 @@
   },
   "content": {
     "searchAnswer": {
-      "lead": "Madagascar est le seul pays d'Afrique dont la langue relève de cette famille, répandue aussi en Asie du Sud-Est et dans le Pacifique. Le nom date d'environ 1900.",
+      "lead": "Madagascar est le seul pays d'Afrique dont la langue relève de cette famille, répandue aussi en Asie du Sud-Est et dans le Pacifique. Le nom a été proposé en 1899.",
       "followUp": "Que reproche-t-on aux travaux qui ne voyaient à Madagascar qu'une origine asiatique ?"
     },
     "decolonialHeader": {
-      "whyProblematic": " L'expression ne pose pas de problème direct, mais son utilisation en Afrique peut prêter à confusion car elle désigne une famille mondiale principalement asiatique. En Afrique, seule Madagascar en relève : certains travaux coloniaux minimisaient l'africanité du peuple malgache en insistant uniquement sur l'origine austronésienne, invisibilisant les apports bantous et est-africains. **Preuves des travaux coloniaux problématiques :**",
-      "selfAppellation": null,
-      "contemporaryUsage": "Les locuteurs utilisent principalement leur identité ethnique en premier lieu, puis le terme *Malagasy* pour l'identité nationale (Rasolofonirina, 2004).",
-      "historicalAppellations": [],
-      "originOfHistoricalTerm": "Terme forgé par le linguiste autrichien Wilhelm Schmidt (vers 1899-1906) pour désigner un ensemble cohérent de langues parlées dans les îles du Pacifique, de l'Asie du Sud-Est et de l'océan Indien, remplaçant l'ancienne dénomination \"Malayo-Polynesian\" pour inclure les langues de Formose (Taiwan)."
+      "linkWithFamily": "Le malgache appartient à la grande branche malayo-polynésienne de la famille austronésienne. Glottolog le range parmi les langues du Barito du Sud-Est, parlées dans le sud de Bornéo, en Indonésie. Le missionnaire et linguiste norvégien Otto Christian Dahl a montré en 1951 sa parenté étroite avec le maanyan, l'une de ces langues. Ce rattachement est largement accepté, selon le linguiste Robert Blust.",
+      "historicalAppellations": ["Malayo-polynésien"],
+      "originOfHistoricalTerm": "Le nom malayo-polynésien apparaît en allemand, sous la forme malayisch-polynesisch, dans le titre d'une étude du linguiste Franz Bopp publiée à Berlin en 1841. Il réunit le nom du malais et celui des langues de Polynésie. En 1899, le prêtre et linguiste autrichien Wilhelm Schmidt propose de le remplacer par austronesisch, « austronésien », dans une conférence à la Société d'anthropologie de Vienne. Il s'en explique en 1906 : selon lui, le polynésien descend du malais et ne peut donc pas être mis à égalité avec lui dans un nom double. Il forme le nouveau nom comme indonésien ou polynésien, parce que toutes ces langues sont parlées dans des îles situées au sud-est de l'Asie, dans ce qu'il appelle l'« Auster », le Sud.",
+      "whyProblematic": "Le nom austronésien ne vise aucun peuple en particulier. La difficulté vient de l'usage qu'on en a fait pour raconter l'histoire de Madagascar. Au début du XVIIe siècle, Luis Moriano jugeait la langue de l'île « très semblable au malais, ce qui prouve d'une manière presque sûre que les premiers habitants sont venus des ports de Malacca », selon Joseph Greenberg. Greenberg écrit en 1980 que ce rattachement au malayo-polynésien, « et par conséquent son absence de parenté avec les langues d'Afrique », avait été noté dès le XVIIe siècle et était généralement accepté. Selon l'historien Gwyn Campbell, l'école coloniale française réunie autour des travaux d'Alfred et Guillaume Grandidier a dominé l'écriture de l'histoire de l'île pendant la plus grande partie du XXe siècle, en insistant sur sa singularité. Campbell ajoute que la plupart des historiens ont longtemps vu Madagascar comme « un îlot historique isolé », coupé de l'Afrique voisine. L'école nationaliste apparue dans les années 1970 reconnaît au contraire une ancienne influence africaine, et l'idée d'une origine uniquement austronésienne des Malgaches a été réfutée par la génétique, selon le même auteur. En 2005, les généticiens Matthew Hurles et ses collègues trouvent chez les Malgaches des apports africain et indonésien à peu près égaux. Du côté de la langue, Alexander Adelaar juge en 2012 que l'influence des langues bantoues sur le malgache a été majeure, et qu'un autre linguiste, John Wolff, la sous-estime gravement.",
+      "selfAppellation": "Les locuteurs n'ont pas de nom à eux pour la famille entière. À Madagascar, leur langue s'appelle malagasy, et la Constitution de 2010 en fait la langue nationale.",
+      "contemporaryUsage": "Les linguistes emploient aujourd'hui le nom austronésien pour toute la famille, qui compte plus de mille langues, de Taïwan aux îles du Pacifique et jusqu'à Madagascar. Glottolog en recense 1 276. En Afrique, la famille n'est représentée que par le malgache. Glottolog compte treize langues dans le groupe malgache. D'autres auteurs, comme Alexander Adelaar et Robert Blust, décrivent plutôt une seule langue, dont la vingtaine de dialectes se comprennent en général entre eux.",
+      "geographicArea": "Madagascar, Mayotte",
+      "numberOfLanguages": 13,
+      "totalSpeakers": 25674196
     },
     "generalInfo": {
       "branches": [
-        "North-Central Malagasic (malgache du Nord-Centre : Merina, Betsileo, Sakalava du Nord, Betsimisaraka, Tsimihety, Antankarana)",
-        "Southwestern Malagasic (malgache du Sud-Ouest : Bara, Tandroy, Mahafaly, Vezo, Antaisaka)"
+        "Malgache du Nord et du Centre (North-Central Malagasic dans Glottolog) : malgache des Hautes Terres, avec le merina, le betsileo, le sihanaka, le bezanozano, le tañala, l'antaimoro et l'antambahoaka ; betsimisaraka du Sud et du Nord ; tsimihety ; antankarana, avec le kibushi de Mayotte ; kibosy du Nord-Ouest",
+        "Malgache du Sud-Ouest (Southwestern Malagasic dans Glottolog) : bara, tanosy, masikoro avec le vezo et le mikea, sakalava de l'Ouest, mahafaly, antaisaka et tandroy"
       ],
-      "geographicArea": "Madagascar (Afrique). Famille mondiale présente également en Asie du Sud-Est, Océanie, et Formose.",
-      "numberOfLanguages": 1,
-      "totalSpeakers": 27000000
+      "geographicArea": "Madagascar et Mayotte en Afrique. Hors d'Afrique, la famille s'étend sur Taïwan, les îles d'Asie du Sud-Est, quelques régions du continent asiatique et les îles du Pacifique.",
+      "numberOfLanguages": 13,
+      "totalSpeakers": 25674196,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "Le nombre de langues que Glottolog compte dans le groupe malgache, seul représentant de la famille en Afrique. D'autres auteurs y voient une seule langue aux nombreux dialectes. Pour toute la famille, Glottolog compte 1 276 langues."
+        },
+        "totalSpeakers": {
+          "note": "Le nombre d'habitants recensés à Madagascar en 2018 par l'INSTAT, donné comme ordre de grandeur : selon Maurizio Serva et ses collègues, le malgache est parlé par toute la population. Ce chiffre ne compte ni les locuteurs du kibushi à Mayotte ni ceux qui vivent hors d'Afrique.",
+          "unsourced": false
+        }
+      }
     },
     "associatedPeoples": [
       {
@@ -249,63 +273,74 @@
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " Le malgache est une langue agglutinante (les mots se construisent en ajoutant des éléments à la suite les uns des autres) avec un ordre syntaxique SVO (Sujet-Verbe-Objet). Exemples concrets :",
-      "phonologicalFeatures": " - Peu de consonnes occlusives aspirées (contrairement aux langues indo-européennes)",
-      "keyInnovations": " Imagine que les verbes sont comme des Lego : cette langue adore ajouter des petits morceaux (comme *mi-* ou *maha-*) au début des mots pour changer leur sens ou dire qui fait l'action. C'est un système très astucieux pour créer plein de nouveaux mots à partir d'un seul ! Par exemple, prends le mot *gaga* (surpris). Si on ajoute le bloc *mi-*, ça devient *migaga* (s'étonner). Si on utilises le bloc *maha-*, ça devient *mahagaga* (c'est étonnant / magique). Hop, deux sens différents avec la même brique de base ! - Complexe dérivationnel verbal avec système de voix développé (active, passive, causative, réciproque)"
+      "typology": "Le malgache place d'habitude le verbe en tête de la phrase et le sujet à la fin : l'ordre est verbe, objet, sujet, selon l'atlas des structures des langues WALS. Dans la phrase « mi-vidy mofo hoʔan ny ankizy aho », « j'achète du pain pour l'enfant », le verbe mi-vidy, « acheter », vient en premier et aho, « je », en dernier. Robert Blust reprend cet exemple au linguiste Edward Keenan. Les mots se forment en ajoutant des éléments, préfixes ou suffixes, autour d'une racine, sans les fondre entre eux, d'après le WALS. Le verbe change aussi de forme selon le participant placé en fin de phrase : celui qui agit, ce qui subit l'action, ou bien l'instrument, le lieu ou le bénéficiaire. Le linguiste Matt Pearson compte cinq formes de ce type, qu'on appelle des voix.",
+      "phonologicalFeatures": "Le malgache n'a pas de tons : la hauteur de la voix ne change pas le sens des mots, selon le WALS. La même base lui donne peu de voyelles et un nombre moyen de consonnes. Robert Blust note qu'il a plus de consonnes que la plupart des langues de l'ouest de l'Indonésie. Otto Christian Dahl y comptait des consonnes précédées d'un son nasal, comme mp, nt, ntr ou ŋk, selon Blust. Les mots ne se terminent jamais par une consonne. Blust y voit probablement un effet du contact avec les langues bantoues de la côte est-africaine. En merina, les anciennes consonnes finales sont devenues -tra, -ka ou -na, suivies d'une voyelle à peine prononcée, ou bien elles ont disparu, selon Alexander Adelaar.",
+      "relationsWithNeighbors": "Le malgache a emprunté des mots à plusieurs langues d'Asie du Sud-Est : au malais, au javanais et à des langues du sud de Sulawesi, selon Alexander Adelaar, cité par Maurizio Serva et ses collègues. Beaucoup des mots malais touchent à la mer et à la navigation, selon Adelaar. Le malgache a aussi reçu de nombreux mots bantous. D'après Adelaar, les noms bantous des plantes et des animaux domestiques y sont plus présents que les noms venus de Bornéo, et ils ont mieux gardé leur sens. Les mots ùndri, « mouton », et akùndru, « banane », sont bantous, mais on ne peut les rattacher ni au swahili ni aux langues des Comores, selon le même auteur. Le swahili, longtemps langue du commerce sur la côte est-africaine, a donné au malgache beaucoup de mots de culture et la plupart de ses mots arabes. Il est encore plus présent dans les dialectes du nord-ouest de l'île. Le malgache et les langues des Comores se sont aussi prêté des mots. À Mayotte, presque tous les natifs de l'île qui maîtrisent le kibushi parlent aussi le shimaoré, selon l'Insee.",
+      "keyInnovations": "Le trait le plus marquant du malgache est son système de voix. Le verbe porte des préfixes ou des suffixes qui indiquent quel participant est placé en fin de phrase comme sujet. Avec la racine sorat, « écrire », la forme manoratra s'emploie quand le sujet est celui qui écrit, selon Matt Pearson. Robert Blust oppose mi-vidy, « acheter », où le sujet est l'acheteur, et i-vidi-an-ko, où le sujet est l'enfant pour qui l'on achète. Ce système rapproche le malgache des langues de Taïwan et des Philippines, plus que des langues de Bornéo dont il est le plus proche parent. Selon Blust, c'est un héritage de l'ancêtre commun que ces langues ont gardé, et non une création récente. Les changements propres au malgache viennent plutôt de son histoire en Afrique de l'Est. Les mots ont perdu leurs consonnes finales, sans doute au contact des langues bantoues, selon Blust. Otto Christian Dahl attribuait aussi aux langues bantoues un système de temps du verbe et un préfixe ki- pour les choses inanimées, selon Alexander Adelaar."
     },
     "historyAndOrigins": {
-      "probableOrigin": " **QUI a classé et proposé les théories :**",
-      "emergencePeriod": " **Deux temporalités distinctes :** 1. **Émergence historique de la famille** : Le proto-austronésien remonte à ~4000-5000 ans avant notre ère à Formose (Taiwan). La branche malayo-polynésienne s'est séparée vers ~3000-2500 av. J.-C. 2. **Date de classification académique** :",
-      "diffusion": " **Pluralité des perspectives et théories disponibles :** **Théorie 1 - Route directe depuis Bornéo (Dahl, Adelaar) :** - Migration directe depuis le sud de Bornéo (région Barito) vers Madagascar - Navigation via les courants de l'océan Indien - Arrivée unique ou en vagues successives entre 500-700 ap. J.-C. **Théorie 2 - Route via l'Asie du Sud-Est et l'océan Indien (Blench, archéologie) :** - Migration depuis Bornéo via Java, Sumatra, puis traversée de l'océan Indien - Arrêts possibles aux Comores ou sur la côte est-africaine - Contacts avec les réseaux commerciaux swahili-arabes **Théorie 3 - Migrations multiples (génétique, Pierron et al.) :** - Plusieurs vagues migratoires austronésiennes - Arrivée simultanée ou successive de populations bantoues - Mélange progressif sur plusieurs siècles (500-1000 ap. J.-C.) **Théorie 4 - Expansion via les routes commerciales (historique) :** - Utilisation des routes maritimes établies par les marchands arabes et indiens - Madagascar comme point de relais dans le commerce océan Indien - Influence des réseaux commerciaux sur la diffusion linguistique **Consensus actuel :** La théorie dominante combine l'origine barito (Dahl/Adelaar) avec des migrations multiples (génétique), mais les détails des routes exactes restent débattus.",
-      "historicalBreaks": " - Séparation nette entre malgache et reste de la famille austronésienne vers 500-700 ap. J.-C. (isolement géographique) - Fusion linguistique avec les langues bantoues (swahili, comorien) entre 800-1000 ap. J.-C., créant un substrat bantou dans le vocabulaire malgache",
-      "contactZones": " **Zones géographiques de contact de la FLG Austronésienne en Afrique :**"
+      "probableOrigin": "La famille austronésienne serait née à Taïwan. Robert Blust s'appuie sur un argument de répartition : neuf des dix grandes branches de la famille ne se trouvent qu'à Taïwan, et la dixième, le malayo-polynésien, couvre tout le reste. Le malgache vient de cette dixième branche. Ses plus proches parents se parlent dans le sud de Bornéo, le long du fleuve Barito : Otto Christian Dahl l'a montré en 1951 en le comparant au maanyan. La génétique va dans le même sens pour la part asiatique des Malgaches. En 2005, Matthew Hurles et ses collègues situent à Bornéo l'origine la plus probable des lignées paternelles venues d'Asie, et trouvent des parts africaine et asiatique à peu près égales. En 2017, Denis Pierron et ses collègues trouvent chez tous les Malgaches étudiés une ascendance à la fois bantoue et austronésienne.",
+      "emergencePeriod": "Selon Robert Blust, des locuteurs de langues austronésiennes arrivent à Taïwan depuis la Chine continentale entre 4000 et 3500 avant notre ère. La langue ancestrale de la famille commence à se diviser sur l'île il y a 5 500 à 6 000 ans. L'ancêtre de la branche malayo-polynésienne est ensuite parlé dans le nord des Philippines, il y a 4 000 à 4 500 ans. L'arrivée à Madagascar est bien plus tardive. Blust indique qu'on la place en général entre le VIIe et le XIIIe siècle. Alexander Adelaar situe le départ depuis Bornéo vers le VIIe siècle et l'installation à Madagascar environ un siècle plus tard. Maurizio Serva et ses collègues calculent, à partir des dialectes, une arrivée vers 650 de notre ère. Otto Christian Dahl proposait vers 400 ou vers 700, selon Philippe Beaujard. Denis Pierron et ses collègues placent le mélange des populations au cours du dernier millénaire. L'île n'était peut-être pas vide avant eux : Adelaar rapporte, d'après Roger Blench, des traces humaines vieilles d'environ 2 300 ans, dont on ne peut pas dire à quel peuple elles appartiennent. La parenté avec le malais est remarquée dès le début du XVIIe siècle. Le Néerlandais H. N. van der Tuuk la démontre en 1864, et Dahl établit le lien avec Bornéo en 1951, selon Serva et ses collègues.",
+      "diffusion": "Les chercheurs s'accordent sur un voyage par mer depuis l'Indonésie, mais pas sur sa route ni sur la façon dont il a été organisé. Une première hypothèse fait arriver les migrants directement à Madagascar. Maurizio Serva et ses collègues situent le premier débarquement sur la côte sud-est, entre Mahanoro et Ambovombe, parce que les dialectes y sont les plus variés. Ils supposent un passage par le détroit de la Sonde, entre Sumatra et Java, puis les grands courants de l'océan Indien. Philippe Beaujard défend aussi une arrivée directe, en s'appuyant sur des poteries anciennes, et pense que les contacts avec les langues bantoues ont pu avoir lieu aux Comores. Une deuxième hypothèse fait passer les migrants d'abord par la côte est-africaine. L'historien Hubert Deschamps l'a proposée en 1960. Alexander Adelaar la reprend en s'appuyant sur la génétique, et pense que les premiers habitants formaient déjà une population mêlée, austronésienne et bantoue. Robert Blust, qui cite Murdock comme peut-être le premier à l'avoir suggérée, en 1959, situe ce contact sur la côte du Mozambique. Pierre Simon, cité par Beaujard, décrit des expéditions vers la côte africaine dès le IVe ou le Ve siècle, puis une installation aux Comores et à Madagascar vers la fin du VIIe siècle. L'étude génétique de Denis Pierron et ses collègues suggère au contraire des arrivées séparées depuis l'Afrique et depuis l'Asie, plutôt que l'arrivée d'une population déjà mêlée. Reste la question de l'organisation du voyage. Selon Adelaar, les locuteurs venus de Bornéo, peu tournés vers la mer, voyageaient sous la conduite de marins malais. Beaujard en doute, et voit plutôt dans l'expansion malaise la cause de leur départ.",
+      "historicalBreaks": "Une fois à Madagascar, le malgache s'est éloigné de ses parents de Bornéo : selon Robert Blust, sa structure diffère aujourd'hui nettement de celle des langues du Barito. Sur l'île, les dialectes se partagent en deux grands groupes, l'un au sud-ouest, l'autre au centre, au nord et à l'est, selon l'étude de Maurizio Serva et ses collègues. Glottolog retient les deux mêmes branches. À partir du XVIe siècle, les Merina du plateau central fondent un royaume qui finit par soumettre une grande partie de l'île. Leur parler devient la forme de référence du malgache, et c'est avec lui que les Français ont eu le plus de contacts pendant la colonisation, selon Blust.",
+      "contactZones": "Le malgache s'est formé au contact de l'Afrique de l'Est. Alexander Adelaar distingue plusieurs sources africaines possibles : des langues bantoues anciennes, les langues des Comores, le swahili, et le makhuwa, langue de nombreux esclaves amenés à Madagascar. Il n'exclut pas des langues couchitiques, ni une langue disparue parlée dans l'île avant l'arrivée des Austronésiens. Les dialectes du nord-ouest de Madagascar portent le plus de mots swahilis, selon le même auteur. À Mayotte, dans l'archipel des Comores, le kibushi est une forme du malgache que Glottolog rattache au parler antankarana du nord de Madagascar. En 2019, 18 % des habitants de Mayotte âgés de 15 ans ou plus disaient le maîtriser, selon l'Insee.",
+      "majorEvents": "Alexander Adelaar relie le voyage des ancêtres des Malgaches aux marins malais de Sriwijaya, une puissance née à Sumatra au VIIe siècle, selon Philippe Beaujard. Beaujard voit dans l'expansion malaise la cause du départ, à cette époque ou un peu avant. Il rappelle que des stèles dressées à Sumatra à partir de 683 portent des inscriptions en vieux malais et dans une langue proche de celles du Barito. Au IIe millénaire, d'autres migrations venues d'Asie du Sud-Est, de la côte est-africaine et d'Inde continuent de mêler les apports, selon Beaujard. À partir du XVIe siècle, le royaume merina étend son pouvoir sur l'île, selon Robert Blust. Madagascar est ensuite intégrée à l'empire colonial français, de 1896 à 1960, selon l'historien Gwyn Campbell. Pendant cette période, l'école historique coloniale réunie autour d'Alfred et Guillaume Grandidier insiste sur la singularité de l'île, selon le même auteur."
     },
     "distribution": {
-      "totalSpeakers": 27000000,
+      "totalSpeakers": 25674196,
       "distributionByCountry": {
-        "MDG": 25000000
+        "MDG": 25674196
       }
     },
     "sources": [
       {
-        "title": "Adelaar, K. Alexander (2005) – *The Austronesian Languages of Asia and Madagascar*. Routledge",
+        "title": "Adelaar, K. Alexander (2005) – The Austronesian Languages of Asia and Madagascar. Routledge",
         "url": null,
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Ouvrage collectif dirigé par Alexander Adelaar et Nikolaus Himmelmann, Londres et New York, Routledge, 2005. Son exemplaire numérisé n'est accessible qu'en prêt ; nous ne l'avons pas lu directement."
       },
       {
-        "title": "Dahl, Otto Christian (1951) – *Malgache et Maanjan : une comparaison linguistique*. Egede-Instituttet",
-        "url": null,
-        "tier": "referenced"
-      },
-      {
-        "title": "Blust, Robert (2013) – *The Austronesian Languages*. Asia-Pacific Linguistics",
-        "url": null,
-        "tier": "referenced"
-      },
-      {
-        "title": "Blench, Roger (2007) – \"New palaeozoogeographical evidence for the settlement of Madagascar\". *Azania: Archaeological Research in Africa*",
+        "title": "Dahl, Otto Christian (1951) – Malgache et Maanjan : une comparaison linguistique. Egede-Instituttet",
         "url": null,
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Oslo, Egede-Instituttet, 1951. Ouvrage imprimé, que nous connaissons par les travaux de Robert Blust, Alexander Adelaar, Philippe Beaujard et Maurizio Serva."
       },
       {
-        "title": "Hurles, Matthew E. et al. (2005) – \"The Dual Origin of the Malagasy in Island Southeast Asia and East Africa: Evidence from Maternal and Paternal Lineages\". *American Journal of Human Genetics*",
-        "url": null,
+        "title": "Blust, Robert (2013) – The Austronesian Languages, édition révisée. Asia-Pacific Linguistics",
+        "url": "https://openresearch-repository.anu.edu.au/handle/1885/10191",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Canberra, Asia-Pacific Linguistics, Université nationale australienne, 2013, en accès libre. Lu en ligne : p. 1 (étendue de la famille jusqu'à Madagascar), p. 20-21 (premiers rapprochements entre malgache et malais), p. 42-43 (royaume merina), p. 64 et p. 68-69 (le malgache, ses dialectes et sa structure), p. 225 (consonnes du malgache), p. 607 et p. 756-757 (Taïwan, berceau probable de la famille, et datations)."
       },
       {
-        "title": "Pierron, Denis et al. (2017) – \"Genomic landscape of human diversity across Madagascar\". *Proceedings of the National Academy of Sciences*",
+        "title": "Blench, Roger (2007) – \"New palaeozoogeographical evidence for the settlement of Madagascar\". Azania: Archaeological Research in Africa",
         "url": null,
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Article de la revue Azania, 2007. Nous ne l'avons pas lu directement ; Alexander Adelaar en résume les arguments (2012, p. 146)."
       },
       {
-        "title": "UNESCO – *Atlas of the World's Languages in Danger* (2010)",
+        "title": "Hurles, Matthew E. et al. (2005) – The Dual Origin of the Malagasy in Island Southeast Asia and East Africa: Evidence from Maternal and Paternal Lineages. American Journal of Human Genetics",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1199379/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Revue American Journal of Human Genetics, vol. 76, n° 5, 2005, p. 894-901, lue dans PubMed Central. Le résumé conclut à des apports africain et indonésien à peu près égaux, et situe à Bornéo l'origine la plus probable des lignées paternelles venues d'Asie."
+      },
+      {
+        "title": "Pierron, Denis et al. (2017) – Genomic landscape of human diversity across Madagascar. Proceedings of the National Academy of Sciences",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5559028/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Revue Proceedings of the National Academy of Sciences, vol. 114, n° 32, 2017, lue dans PubMed Central. Le résumé décrit une ascendance bantoue et austronésienne chez tous les Malgaches étudiés, un mélange au cours du dernier millénaire et des arrivées séparées depuis l'Afrique et l'Asie."
+      },
+      {
+        "title": "UNESCO – Atlas of the World's Languages in Danger (2010)",
         "url": null,
         "tier": "referenced",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": "Atlas des langues en danger publié par l'UNESCO en 2010."
       },
       {
         "title": "SIL Ethnologue – Malagasy (mlg)",
@@ -323,25 +358,120 @@
         "title": "ONU/UNFPA – Projections démographiques Madagascar (2025)",
         "url": null,
         "tier": "needs_review",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": "Projections de population pour Madagascar ; la publication exacte n'est pas précisée."
       },
       {
-        "title": "Schmidt, W. (1899) – *Die sprachlichen Verhältnisse von Deutsch-Neuguinea*",
+        "title": "Schmidt, W. (1899) – Die sprachlichen Verhältnisse von Deutsch-Neuguinea",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "notes": "Wilhelm Schmidt situe lui-même sa première proposition du nom austronésien dans une conférence intitulée « Die sprachlichen Verhältnisse Ozeaniens », publiée en 1899 dans les Mitteilungen de la Société d'anthropologie de Vienne, vol. 29, p. 245 (Die Mon-Khmer-Völker, 1906, p. 69, note 1)."
       },
       {
         "title": "Glottolog 5.0 (2024) – Classification du nœud \"Malagasic\" [mala1537] : deux branches directes, \"North-Central Malagasic\" [nort3196] et \"Southwestern Malagasic\" [sout3174]",
         "url": "https://glottolog.org/resource/languoid/id/mala1537",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du groupe malgache dans Glottolog, relue le 3 novembre 2026 dans la version 5.3 : treize langues réparties en deux branches. Glottolog le classe dans la famille austronésienne, branche malayo-polynésienne, puis Basap-Grand Barito, Grand Barito et Barito du Sud-Est."
       },
       {
         "title": "World Bank (2023) – Population, total, Madagascar : 31 195 932 habitants. (contexte démographique du chiffre de ≈25 000 000 locuteurs du malgache retenu d'après Adelaar 2005)",
         "url": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=MG",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Glottolog 5.3 — Austronesian [aust1307]",
+        "url": "https://glottolog.org/resource/languoid/id/aust1307",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la famille austronésienne dans Glottolog, lue le 3 novembre 2026 : 1 276 langues."
+      },
+      {
+        "title": "Glottolog 5.3 — Kibushi-Kimaore [kibu1236]",
+        "url": "https://glottolog.org/resource/languoid/id/kibu1236",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du kibushi de Mayotte dans Glottolog, lue le 3 novembre 2026 : un dialecte du malgache antankarana, dans le groupe du nord."
+      },
+      {
+        "title": "WALS Online — Language Malagasy (WALS code mal)",
+        "url": "https://wals.info/languoid/lect/wals_code_mal",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas mondial des structures des langues, édité par Matthew Dryer et Martin Haspelmath. Valeurs lues pour le malagasy : ordre verbe, objet, sujet (81A) ; pas de tons (13A) ; inventaire de consonnes moyennement grand (1A) ; petit inventaire de voyelles (2A) ; morphologie uniquement par ajout d'éléments (20A) ; passif (107A), causatif (111A) et réciproque (106A) marqués sur le verbe."
+      },
+      {
+        "title": "Adelaar, Alexander (2012) – Malagasy Phonological History and Bantu Influence. Oceanic Linguistics, vol. 51, n° 1",
+        "url": "https://minerva-access.unimelb.edu.au/server/api/core/bitstreams/3e98e25b-05f2-54f1-ad37-0a71377af48a/content",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de la revue Oceanic Linguistics, University of Hawai‘i Press, juin 2012, p. 123-159, lu dans le dépôt en accès libre de l'Université de Melbourne. Lu : p. 123 (influence bantoue majeure), p. 145-146 (histoire du peuplement, présence humaine plus ancienne d'après Roger Blench), p. 146-148 (langues africaines en contact avec le malgache, emprunts bantous et swahilis)."
+      },
+      {
+        "title": "Serva, Maurizio, Filippo Petroni, Dima Volchenkov et Søren Wichmann (2012) – Malagasy Dialects and the Peopling of Madagascar. Journal of the Royal Society Interface",
+        "url": "https://arxiv.org/abs/1102.2180",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article paru dans le Journal of the Royal Society Interface, vol. 9, n° 66, 2012, lu dans sa version déposée sur arXiv. Le résumé dit que le malgache est parlé par toute la population. L'introduction retrace la découverte de la parenté avec le malais et le maanyan ; la conclusion propose une arrivée vers 650 et un débarquement sur la côte sud-est."
+      },
+      {
+        "title": "Beaujard, Philippe (2011) – The first migrants to Madagascar and their introduction of plants: linguistic and ethnological evidence. Azania, vol. 46, n° 2",
+        "url": "https://shs.hal.science/halshs-00706173",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de la revue Azania: Archaeological Research in Africa, 2011, p. 169-189, lu dans l'archive ouverte HAL. Lu : le résumé et p. 169-172 (hypothèses de Dahl, Adelaar, Simon et de l'auteur sur l'arrivée des premiers migrants), et la conclusion."
+      },
+      {
+        "title": "Pearson, Matt (2004) – Voice morphology, case, and argument structure in Malagasy. ZAS Papers in Linguistics, vol. 34",
+        "url": "https://zaspil.leibniz-zas.de/article/view/215",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Revue du Leibniz-Zentrum Allgemeine Sprachwissenschaft, Berlin, 2004, p. 229-243, en accès libre. Lu : p. 229-231, où l'auteur décrit les cinq formes de voix du verbe malgache."
+      },
+      {
+        "title": "Campbell, Gwyn (2026) – Introduction à la traduction française de An Economic History of Imperial Madagascar, 1750-1895",
+        "url": "https://indianoceanworldcentre.com/wp-content/uploads/2026/06/introduction.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Introduction de la traduction française du livre de l'historien Gwyn Campbell, publiée par l'Indian Ocean World Centre de l'Université McGill ; l'original anglais a paru en 2005. Lu : la partie « Traditions historiographiques : la spécificité de Madagascar » et les notes iii et vii."
+      },
+      {
+        "title": "INSTAT Madagascar (2020) – Résultats globaux du troisième recensement général de la population et de l'habitation de 2018 (RGPH-3), tome 2",
+        "url": "https://www.instat.mg/documents/upload/main/INSTAT_RGPH3-Definitif-ResultatsGlogaux-Tome2_17-2021.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Institut national de la statistique de Madagascar, décembre 2020. Les tableaux donnent 25 674 196 habitants recensés en 2018 pour l'ensemble du pays."
+      },
+      {
+        "title": "Insee Analyses Mayotte n° 33 (2022) – Mayotte, un territoire riche de ses langues et de ses traditions",
+        "url": "https://www.insee.fr/fr/statistiques/6467148",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Étude de l'Institut national de la statistique et des études économiques, juillet 2022, tirée de l'enquête sur les pratiques culturelles à Mayotte en 2019. Elle indique que 18 % des habitants de 15 ans ou plus déclarent maîtriser le kibushi, et que presque tous les natifs de l'île qui le maîtrisent parlent aussi le shimaoré."
+      },
+      {
+        "title": "Constitution de la République de Madagascar (2010), traduction anglaise du Constitute Project",
+        "url": "https://www.constituteproject.org/constitution/Madagascar_2010",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Traduction anglaise publiée par le Constitute Project, lue le 3 novembre 2026. L'article 4 dit : « The national language is Malagasy », c'est-à-dire que la langue nationale est le malagasy."
       }
-    ]
+    ],
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "MDG",
+          "speakers": 25674196,
+          "source": {
+            "title": "INSTAT Madagascar (2020) – Résultats globaux du troisième recensement général de la population et de l'habitation de 2018 (RGPH-3), tome 2",
+            "url": "https://www.instat.mg/documents/upload/main/INSTAT_RGPH3-Definitif-ResultatsGlogaux-Tome2_17-2021.pdf",
+            "tier": "official",
+            "source_kind": "official_statistics",
+            "notes": "Institut national de la statistique de Madagascar, décembre 2020. Les tableaux donnent 25 674 196 habitants recensés en 2018 pour l'ensemble du pays."
+          }
+        }
+      ]
+    }
   }
 }

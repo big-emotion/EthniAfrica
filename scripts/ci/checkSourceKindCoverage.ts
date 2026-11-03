@@ -46,8 +46,10 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * 1001 -> 991 the same day: ten untyped citations left with PPL_MUCUBAL,
  * folded into PPL_MUCUVAL, and two people fiches withdrawn after wave 24;
  * the one carried to the Cabo Verde fiche carries a source_kind.
+ * 991 -> 989 on 2026-11-03: the premium pass on five family fiches typed two
+ * citations of the Mandé fiche (Creissels 2019, Khachaturyan 2020).
  */
-export const UNTYPED_SOURCE_RATCHET = 991;
+export const UNTYPED_SOURCE_RATCHET = 989;
 
 export interface UntypedSource {
   file: string;
