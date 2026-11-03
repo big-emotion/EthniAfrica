@@ -159,6 +159,34 @@
                 "page": "p. 338"
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1851,
+              "to": 1851,
+              "label": "1851"
+            },
+            "era": "polity",
+            "before": true,
+            "statement": "Avant le nom saharien, l'explorateur allemand Heinrich Barth note en 1851, pendant un voyage au Kanem, que la langue des Teda, qu'il appelle « modi Teda », est proche parente du kanouri. Il ajoute qu'elle n'a presque aucun lien visible avec le berbère.",
+            "actors": [
+              {
+                "name": "Heinrich Barth",
+                "role": "explorateur allemand au service du gouvernement britannique, qui note la parenté entre les deux langues"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 3",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri31857bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 77",
+                "notes": "Journal de voyage de l'explorateur allemand, au service du gouvernement britannique, New York, D. Appleton, 1857. Passage daté de 1851, pendant son voyage au Kanem, lu dans la numérisation d'Internet Archive."
+              }
+            ]
           }
         ]
       }
@@ -170,17 +198,30 @@
       "followUp": "Pourquoi ce nom est-il critiqué ?"
     },
     "decolonialHeader": {
-      "whyProblematic": " - Le terme « Saharien » est une dénomination géographique imposée par les linguistes occidentaux, sans correspondre à une auto-identification historique ou culturelle des communautés concernées. - Joseph Greenberg, héritier d'une tradition de classification linguistique eurocentrée, utilise la méthode de la « mass comparison » critiquée par des linguistes contemporains (Martin Haspelmath, Lyle Campbell) pour manque de rigueur quantitative dans les correspondances phonétiques. - Des auteurs coloniaux ont utilisé des classifications raciales (notamment l'opposition « hamite » vs « nègre ») pour catégoriser les peuples sahariens (notamment les Toubous), créant des hiérarchies pseudo-historiques. - Des linguistes africains comme Théophile Obenga (suivant Cheikh Anta Diop) critiquent les grandes classifications de Greenberg, défendant que de nombreux idiomes africains partagent un patrimoine commun sous-jacent (lexique commun, morphologie) qui n'est pas bien rendu par les grandes familles telles que Nilo-Saharien. - Les études génétiques modernes (ex. \"African evolutionary history inferred from whole genome sequence data of 44 indigenous African populations\", 2019) montrent que les lignées linguistiques se corrèlent davantage avec l'histoire génétique locale qu'avec une « origine saharienne » monolithique, soulignant plutôt la complexité et l'hybridité des populations. - La cohérence interne du groupe Saharien est largement reconnue (Cyffer 2020), mais l'appartenance au phylum Nilo-Saharien reste controversée, certains linguistes estimant qu'il y a davantage de traits dus au contact linguistique qu'à une ascendance commune claire.",
+      "linkWithFamily": "Le saharien est une famille à part selon le catalogue Glottolog. Joseph Greenberg en faisait en 1963 une branche de la famille nilo-saharienne, un rattachement que les éditeurs de Glottolog jugent non prouvé.",
+      "historicalAppellations": ["Langues sahariennes", "Saharien central"],
+      "originOfHistoricalTerm": "Le nom saharien a été proposé par le linguiste américain Joseph Greenberg, d'après le nom du Sahara. Il apparaît d'abord sous la forme « saharien central » dans ses articles de 1949-1950, où ce groupe forme une famille à part. Dans son livre de 1963, il devient « saharien » et une branche de la famille nilo-saharienne. Bien avant, en 1851, l'explorateur allemand Heinrich Barth avait déjà noté au Kanem que la langue des Teda est proche parente du kanouri.",
+      "whyProblematic": "Le nom saharien vient de la recherche et non des peuples qui parlent ces langues. Il a été donné en 1949-1950, à l'époque coloniale, par un linguiste américain, d'après le nom d'une région. Aucun de ces peuples ne se nomme ainsi : chacun nomme sa propre langue. La place du groupe dans une famille plus large est aussi discutée. Joseph Greenberg le range dans le nilo-saharien, mais le catalogue Glottolog, comme Ari Awagana et Camille Lefebvre en 2025, jugent ce rattachement mal établi. Pour ces deux auteurs, la parenté des langues sahariennes entre elles ne fait en revanche aucun doute.",
       "selfAppellation": null,
       "contemporaryUsage": "Les communautés emploient leurs propres noms, comme Kanuri, Beria, Tedaga et Dazaga. Elles ne se nomment pas « Saharien » : ce terme a été utilisé dans la recherche occidentale pour regrouper leurs langues.",
-      "historicalAppellations": ["Langues sahariennes"],
-      "originOfHistoricalTerm": " Le terme « Saharien » (anglais : \"Saharan\") a été proposé par Joseph H. Greenberg dans son ouvrage *The Languages of Africa* (1963, Chicago : University of Chicago Press). Greenberg a classé ce groupe comme branche du phylum Nilo-Saharien qu'il proposait. Avant Greenberg, des explorateurs comme Heinrich Barth (1853) avaient décrit les langues Kanuri et Teda-Daza autour du lac Tchad, mais sans classification formelle en tant que famille unifiée."
+      "geographicArea": "Tchad, Niger, Nigeria, Soudan, Cameroun, Libye",
+      "numberOfLanguages": 10,
+      "totalSpeakers": 12000000
     },
     "generalInfo": {
       "branches": ["Saharien oriental", "Saharien occidental"],
-      "geographicArea": "Sahara central et oriental, bassin du lac Tchad, Tibesti (Tchad/Libye), nord-est du Tchad, est du Soudan, nord-est du Nigéria, sud-est du Niger, extrême nord du Cameroun",
+      "geographicArea": "Sahara central, bassin du lac Tchad, Tibesti, Kanem, Bornou, oasis du Kawar, Fezzan libyen, extrême nord du Cameroun, ouest du Soudan",
       "numberOfLanguages": 10,
-      "totalSpeakers": 12000000
+      "totalSpeakers": 12000000,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "Dix langues selon le catalogue Glottolog, dont deux qui ne sont plus apprises comme première langue : le berti et le tarjumo."
+        },
+        "totalSpeakers": {
+          "note": "Une estimation que nous n'avons pas pu rattacher à une source.",
+          "unsourced": true
+        }
+      }
     },
     "associatedPeoples": [
       {
@@ -198,16 +239,33 @@
       {
         "name": "Daza",
         "peopleId": "PPL_DAZA"
+      },
+      {
+        "name": "Kanembu",
+        "peopleId": "PPL_KANEMBU"
+      },
+      {
+        "name": "Bideyat",
+        "peopleId": "PPL_BIDEYAT"
+      },
+      {
+        "name": "Kreda",
+        "peopleId": "PPL_KREDA"
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " Les langues sahariennes sont généralement classées comme langues **SOV** (sujet-objet-verbe) ou montrent une forte tendance au verbe final dans certaines variantes. Exemples concrets :"
+      "typology": "Les langues sahariennes placent le verbe à la fin de la phrase : l'ordre habituel est sujet, objet, verbe. Elles emploient des postpositions, de petits mots placés après le nom là où le français met une préposition devant. L'atlas des structures des langues WALS relève ces deux traits pour le kanouri, le tubu (teda-daza) et le beria. Le kanouri forme ses mots surtout avec des suffixes, ajoutés à la fin du mot, et compte six ou sept cas, c'est-à-dire des formes qui disent le rôle d'un nom dans la phrase.",
+      "phonologicalFeatures": "Le kanouri est une langue à tons : la hauteur de la voix sur une syllabe peut changer le sens d'un mot. WALS classe son système de tons parmi les systèmes simples. Le kanouri a un nombre moyen de consonnes et beaucoup de voyelles, entre sept et quatorze selon ce classement. Il distingue les consonnes sourdes et sonores, du type t et d, et n'a pas de consonnes glottalisées, prononcées avec un coup de glotte. Il a aussi des consonnes prénasalisées, comme ng ou nd, que l'écriture savante du Bornou ne marque pas, selon Ari Awagana et Camille Lefebvre.",
+      "relationsWithNeighbors": "Le kanouri a prêté des mots au haoussa, la langue voisine à l'ouest. Joseph Greenberg a montré ces emprunts pour des mots de culture et de technique militaire, signe de l'influence de l'empire du Bornou, selon Joseph Ki-Zerbo. Des titres de la cour du Bornou, comme kaygamma, se sont répandus jusqu'au Cameroun et au Nigeria. Dans la région, les gens parlent souvent plusieurs langues : le haoussa et le kanouri servent de langues de communication, et l'arabe sert pour l'écrit savant et religieux, selon Ari Awagana et Camille Lefebvre. Le kanouri s'écrit aussi en caractères arabes, ce qu'on appelle l'ajami.",
+      "keyInnovations": "Le kanouri a une tradition écrite ancienne, propre au Bornou. Entre le XVe et le XVIIe siècle, des savants musulmans y ont fixé une forme de la langue pour expliquer le Coran, que le linguiste Dmitry Bondarev appelle « old kanembu », le vieux kanembu. Cette forme garde des mots et des formes de grammaire disparus du kanouri et du kanembu d'aujourd'hui, mais proches du teda-daza ou du beria actuels, selon Ari Awagana et Camille Lefebvre. Elle est encore apprise et récitée au Niger et au Nigeria, bien que les locuteurs d'aujourd'hui ne la comprennent plus. Le catalogue Glottolog range aussi dans la famille le tarjumo, une langue apprise seulement comme seconde langue."
     },
     "historyAndOrigins": {
-      "probableOrigin": " Théories linguistiques : 1. Classification de Greenberg (1963) : Joseph H. Greenberg classe les langues sahariennes comme branche du phylum Nilo-Saharien dans *The Languages of Africa* (Chicago : University of Chicago Press, 1963). Cette classification reste la plus influente mais a été critiquée pour sa méthode de « mass comparison ». 2. Théorie de Cyffer (2020) : Norbert Cyffer, dans « Saharan » (Oxford Handbook of African Languages, 2020), affermit la cohérence génétique interne du groupe saharien tout en reconnaissant les débats sur son appartenance au phylum Nilo-Saharien. 3. Théorie de Blench : Roger Blench suggère que Saharien forme un groupe avec Songhay (branche « Songhay-Saharan ») au sein de Nilo-Saharien, proposant une relation plus étroite entre ces deux groupes. 4. Théories alternatives : certains linguistes contestent l'unité du phylum Nilo-Saharien ou le rattachement de certaines langues, suggérant que les similarités résultent en partie de contact plutôt que d'une origine génétique unique. Théories archéologiques : - Origine estimée autour du bassin du lac Tchad ou dans le couloir Tchad-Dongola. Les reconstructions linguistiques suggèrent que le proto-Saharien a été parlé plusieurs milliers d'années avant aujourd'hui, possiblement au Néolithique (5ᵉ-4ᵉ millénaire av. J.-C.), correspondant aux périodes humides du Sahara (Holocène moyen).",
-      "emergencePeriod": " 1. Émergence historique de la famille Saharienne : les reconstructions linguistiques suggèrent que le proto-Saharien a été parlé plusieurs milliers d'années avant aujourd'hui, possiblement au Néolithique (5ᵉ-4ᵉ millénaire av. J.-C.), correspondant aux périodes humides du Sahara (surtout au début et au milieu de l'Holocène, entre 13 000 et 3000 av. J.-C. environ selon les études). La séparation des langues sahariennes entre elles remonte probablement à plusieurs millénaires, avec diversification autour du bassin du lac Tchad. 2. Date de classification académique : le terme « Saharan languages » a été stabilisé et formalisé par Joseph H. Greenberg dans *The Languages of Africa* (1963). Avant cette classification, des explorateurs et linguistes avaient décrit les langues individuellement : Heinrich Barth (1853) mentionne les langues autour du lac Tchad, des descriptions isolées de Kanuri, Zaghawa, Teda-Daza au XIXᵉ et début XXᵉ siècle. Diedrich Hermann Westermann (1910-1950) définit des groupes « sudaniques » qui préfigureront le Saharien. Les travaux récents de Norbert Cyffer (2020) dans l'Oxford Handbook of African Languages constituent une mise à jour importante de la reconstruction proto-Saharienne.",
-      "diffusion": " Théories multiples disponibles : Théorie 1 (expansion depuis le lac Tchad) : Expansion à partir du bassin du lac Tchad vers le nord (Teda-Daza dans le Tibesti, Libye) et vers l'ouest (Kanuri dans le Nigéria, Niger). Diffusion liée aux périodes humides du Sahara et aux routes commerciales historiques. Théorie 2 (interactions multiples) : Contacts prolongés et multiples entre langues sahariennes et langues afro-asiatiques (chadiques, berbères, arabes), migrations historiques (commerce, échanges pastoraux), influençant la diffusion et la diversité. Expansion liée aux anciens réseaux culturels sahariens lors des périodes humides, avec contact avec langues afro-asiatiques dans les oasis. Théorie 3 (origine hybride, moins acceptée) : Certaines langues classées dans Saharien pourraient être hybrides ou avoir des substrats préexistants non Nilo-Sahariens, remettant en question une origine unique. Les similarités résulteraient en partie de contact plutôt que d'une ascendance génétique commune. Routes migratoires documentées :",
-      "contactZones": " Localisation géographique précise :"
+      "probableOrigin": "Les langues sahariennes sont clairement parentes entre elles, selon Ari Awagana et Camille Lefebvre. Leur origine plus lointaine est discutée. Joseph Greenberg y voyait une branche de la famille nilo-saharienne, parlée du fleuve Niger au haut Nil, et Dierk Lange et Bawuro Barkindo relèvent des mots communs avec le songhaï du Niger. Le catalogue Glottolog juge au contraire ce rattachement non prouvé. Le Tibesti passe souvent pour le pays d'origine de tous les Tubu, Teda et Daza, dont le nom voudrait dire « habitants de la montagne », mais Dierk Lange estime que ce n'est pas certain.",
+      "emergencePeriod": "Les sources que nous avons lues ne donnent pas de date pour la séparation des langues sahariennes entre elles. Le peuple kanouri se forme peu à peu à partir du XIIIe siècle autour du lignage des rois du Kanem, selon Dierk Lange. La parenté entre ces langues est notée par Heinrich Barth en 1851, puis Joseph Greenberg réunit le groupe sous le nom de saharien central en 1949-1950 et de saharien en 1963.",
+      "diffusion": "Le kanouri s'est répandu avec le royaume du Kanem, puis du Bornou. À la fin du XIVe siècle, les attaques des Bulala obligent les rois à quitter le Kanem, à l'est du lac Tchad, pour s'installer au Bornou, à l'ouest, selon Dierk Lange. Sur ce grand espace, des parlers proches se sont formés et ont donné un ensemble continu de dialectes kanouri et kanembu, souvent parce que d'autres populations ont adopté le kanouri, selon Ari Awagana et Camille Lefebvre. Plus à l'est, les Teda-Daza ont étendu leurs pâturages aux dépens des Zaghawa, selon Dierk Lange et Bawuro Barkindo.",
+      "historicalBreaks": "Dans la seconde moitié du XIe siècle, une nouvelle dynastie, les Sefuwa, prend le pouvoir au Kanem et met fin à la domination des Zaghawa. Les rois s'appuient ensuite sur différents groupes, d'abord des nomades tubu et kay, puis des groupes kanembu sédentaires, selon Dierk Lange. À la fin du XIVe siècle, leur départ vers le Bornou déplace le centre du royaume à l'ouest du lac Tchad. Le berti, parlé au Soudan, n'est plus transmis comme première langue, selon le catalogue Glottolog.",
+      "contactZones": "Les langues kanouri et kanembu touchent de nombreuses langues voisines, selon Ari Awagana et Camille Lefebvre. Au Niger, elles rencontrent le tamasheq au Damergou et le haoussa au Damagaram. Au Tchad, au Kanem et au Bahr el-Ghazal, elles côtoient l'arabe et des langues tchadiques. Au nord du Cameroun, elles voisinent avec le peul et des langues tchadiques. Dans les oasis du Kawar et au Fezzan, elles côtoient l'arabe, le tamasheq et le teda-daza.",
+      "majorEvents": "Le royaume du Kanem, à l'est du lac Tchad, est d'abord dominé par les Zaghawa. Dans la seconde moitié du XIe siècle, la dynastie des Sefuwa y prend le pouvoir, selon Dierk Lange. Vers 1382-1387, le roi Umar ben Idris quitte la capitale Djimi et semble abandonner le Kanem pour le Bornou. Le roi Ali Ghadjideni fonde ensuite Gazargamo, qui reste la capitale des Sefuwa pendant plus de trois siècles. Au début du XXe siècle, le lettré bornouan al-Hajj Musa ibn Hissein écrit pour l'Allemand Rudolf Prietze des centaines de pages en kanouri, selon Ari Awagana et Camille Lefebvre."
     },
     "distribution": {
       "totalSpeakers": 12000000,
@@ -318,6 +376,79 @@
         "tier": "official",
         "source_kind": "linguistic_reference",
         "notes": "SIL Ethnologue, 19e éd. (2016), page consultée via version archivée (Internet Archive, 25 juin et 8 mai 2016) – \"Tedaga [tuq]\": 28 500 locuteurs au Tchad (recensement 1993), 10 000 au Niger (1998), 2 000 au Nigeria (Blench & Zeitlyn 1990). \"Dazaga [dzg]\": 487 000 au Tchad (2013 J. Leclerc), 50 000 au Niger (2007). https://www.ethnologue.com/language/tuq ; https://www.ethnologue.com/language/dzg"
+      },
+      {
+        "title": "Glottolog 5.3 — Berti (bert1249)",
+        "url": "https://glottolog.org/resource/languoid/id/bert1249",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 3 novembre 2026. La fiche classe le berti dans le saharien oriental et le dit éteint, d'après Christopher Moseley (2010). La fiche de la famille saharienne compte dix langues."
+      },
+      {
+        "title": "Glottolog 5.3 — Tarjumo (tarj1235)",
+        "url": "https://glottolog.org/resource/languoid/id/tarj1235",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 3 novembre 2026. Le tarjumo y est rangé avec le kanembu dans le saharien occidental, comme langue apprise en seconde langue seulement."
+      },
+      {
+        "title": "WALS Online — Kanuri (wals_code_knr)",
+        "url": "https://wals.info/languoid/lect/wals_code_knr",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des structures des langues du monde, dirigé par Matthew S. Dryer et Martin Haspelmath, lu en ligne le 3 novembre 2026. Valeurs lues pour le kanouri : ordre sujet, objet, verbe ; postpositions ; morphologie surtout suffixale ; six ou sept cas ; système de tons simple ; nombre moyen de consonnes ; sept à quatorze voyelles ; consonnes sourdes et sonores ; pas de consonnes glottalisées."
+      },
+      {
+        "title": "WALS Online — Tubu (wals_code_tbu)",
+        "url": "https://wals.info/languoid/lect/wals_code_tbu",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des structures des langues du monde, lu en ligne le 3 novembre 2026. Valeurs lues pour le tubu (teda-daza) : ordre sujet, objet, verbe ; postpositions."
+      },
+      {
+        "title": "WALS Online — Beria (wals_code_zag)",
+        "url": "https://wals.info/languoid/lect/wals_code_zag",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des structures des langues du monde, lu en ligne le 3 novembre 2026. Valeurs lues pour le beria, langue des Zaghawa, parlée au Soudan et au Tchad : ordre sujet, objet, verbe ; postpositions."
+      },
+      {
+        "title": "General History of Africa, IV, ch. 10 : The kingdoms and peoples of Chad",
+        "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_iv.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, édition anglaise du volume dirigé par D. T. Niane, chapitre de Dierk Lange, 1984. Relu le 3 novembre 2026 dans l'exemplaire numérisé d'Internet Archive, à la même pagination : p. 239 (Zaghawa et Sefuwa), p. 245 (Tubu, Daza, Tibesti), p. 246 (formation du peuple kanouri, langues nilo-sahariennes et tchadiques), p. 258 (départ du Kanem vers le Bornou) et p. 265 (Gazargamo)."
+      },
+      {
+        "title": "General History of Africa, III, ch. 15 : The Chad region as a crossroads",
+        "url": "https://archive.org/details/unesco_general_history_africa_iii",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, édition anglaise du volume dirigé par M. El Fasi, 1988, chapitre de Dierk Lange avec Bawuro M. Barkindo. Lu le 3 novembre 2026 dans l'exemplaire numérisé d'Internet Archive : p. 439 (Tubu, nom donné aux Teda-Daza par les locuteurs du kanembu), p. 440 (Zaghawa, qui se nomment Beri, et expansion des Teda-Daza) et p. 441 (locuteurs des langues sahariennes et tchadiques autour du lac)."
+      },
+      {
+        "title": "General History of Africa, I, General introduction",
+        "url": "https://archive.org/details/unesco_general_history_africa_i",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, édition anglaise du volume dirigé par Joseph Ki-Zerbo, 1981, introduction générale de Joseph Ki-Zerbo. Lu le 3 novembre 2026 dans l'exemplaire numérisé d'Internet Archive, p. 12 : apports du kanouri au haoussa et diffusion des titres du Bornou."
+      },
+      {
+        "title": "L'œuvre en kanouri d'al-Hajj Musa ibn Hissein, un savant du Borno (Niger-Nigéria)",
+        "url": "https://hal.science/hal-05752466",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Livre d'Ari Awagana et Camille Lefebvre, Leyde, Brill, collection African Sources for African History, 2025, en libre accès sur l'archive ouverte HAL. Lu le 3 novembre 2026, chapitre 1, p. 18-21 : place du kanouri et du saharien, dialectes, langues en contact, plurilinguisme, écriture en caractères arabes et vieux kanembu."
+      },
+      {
+        "title": "Travels and Discoveries in North and Central Africa, vol. 3",
+        "author": "Heinrich Barth",
+        "year": 1857,
+        "url": "https://archive.org/details/travelsdiscoveri31857bart",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 77",
+        "notes": "Journal de voyage de l'explorateur allemand, au service du gouvernement britannique, New York, D. Appleton, 1857. Passage daté de 1851, pendant son voyage au Kanem, lu dans la numérisation d'Internet Archive."
       }
     ]
   }

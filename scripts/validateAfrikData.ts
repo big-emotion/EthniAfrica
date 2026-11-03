@@ -4866,7 +4866,10 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
   // day, when FLG_BERBERE gained `originOfHistoricalTerm` the same way.
-  famille_linguistique: 104,
+  // 104 -> 82 on 2026-11-03: the premium pass on Niger-Congo, Nilo-Saharan,
+  // Nilotic, Omotic and Saharan filled every key the model declares on those
+  // five fiches, each written from the sources they cite.
+  famille_linguistique: 82,
   // 13 -> 9 on 2026-09-29: `culture.mainLanguages` added on Mali, Senegal,
   // Burundi and the Republic of the Congo from an official toponymic factfile.
   // 9 -> 8 on 2026-10-26: `culture.mainLanguages` added on the DR Congo, its
