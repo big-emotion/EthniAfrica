@@ -3,8 +3,9 @@
   "nameMain": "Guéré",
   "languageFamilyId": "FLG_KROU",
   "currentCountries": ["CIV", "LBR"],
+  "classificationStatus": "colonial-legacy",
   "nameHistory": {
-    "summary": "Le nom Guéré désigne un peuple de langue krou de l'ouest de la Côte d'Ivoire, autour de Guiglo, Duékoué et Taï, qui se nomme lui-même Wè. Au Liberia, les Wè sont appelés Krahn. Les sources ne s'accordent pas toujours sur l'origine du nom Guéré ; nous les présentons plus bas.",
+    "summary": "Le nom Guéré désigne un peuple de langue krou de l'ouest de la Côte d'Ivoire, autour de Duékoué, Guiglo et Bangolo, qui se nomme lui-même Wè. Ses voisins wè du nord l'appellent aussi Zonbahon, et au Liberia les Wè portent le nom Krahn. Plusieurs explications de l'origine des noms Guéré et Wè existent ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Wè",
@@ -13,7 +14,7 @@
         "languageOfOrigin": "gxx",
         "namedBy": null,
         "shortLine": "Le nom que se donne ce peuple, au sud comme au nord de son pays.",
-        "periodLabel": "Écrit en 1975 ; en usage aujourd'hui",
+        "periodLabel": "Écrit en 1969 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
@@ -32,7 +33,7 @@
                 "url": "https://www.ecoi.net/de/dokument/2041625.html",
                 "tier": "official",
                 "source_kind": "government",
-                "notes": "Réponse à une demande d'information du 12 janvier 2018, lue sur ecoi.net le 11 octobre 2026. Elle rapporte que le groupe « Wé [We, Wè, Wê] » fait partie du groupe krou et que « les Wé sont aussi appelés Guéré », d'après un géographe et le Minority Rights Group."
+                "notes": "Réponse à une demande d'information du 12 janvier 2018, lue sur ecoi.net le 11 octobre 2026 puis relue le 3 novembre 2026. Elle rapporte que le groupe « Wé [We, Wè, Wê] » fait partie du groupe krou et que « les Wé sont aussi appelés Guéré », d'après un géographe et le Minority Rights Group."
               }
             ]
           },
@@ -43,7 +44,7 @@
               "label": "Thèse de 1969, livre de 1975"
             },
             "era": "modern",
-            "statement": "Le nom Wè apparaît chez le sociologue Alfred Schwartz comme le nom de tout l'ensemble que l'administration coloniale a partagé entre Guéré, au sud, et Wobé, au nord. Il ne vivait plus, écrit-il, que dans la mémoire des vieux. C'est la plus ancienne trace de ce nom que le projet connaît. Selon l'auteur, le nom et le peuple existaient déjà bien avant.",
+            "statement": "Le nom Wè apparaît chez le sociologue Alfred Schwartz comme le nom de tout l'ensemble que l'administration coloniale a partagé entre Guéré, au sud, et Wobé, au nord. Il ne vivait plus, écrit-il, que dans la mémoire des vieux. C'est la plus ancienne trace de ce nom que nous connaissons. Selon l'auteur, le nom et le peuple existaient déjà bien avant.",
             "formAsWritten": "wè",
             "birth": true,
             "sources": [
@@ -80,6 +81,70 @@
                 "notes": "Abidjan, INADES, 1975, lu dans le texte intégral publié par l'IRD le 11 octobre 2026. Condensé d'une thèse soutenue en Sorbonne le 28 janvier 1969, publiée en 1971 sous le titre Tradition et changements dans la société guéré (mémoire ORSTOM n° 52). Page 21 : « l'ensemble wè ou wènian, « les hommes qui pardonnent facilement » ». L'auteur ne dit pas qui lui a donné ce sens."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1997,
+              "to": 1997,
+              "label": "Rapporté en 1997"
+            },
+            "era": "modern",
+            "statement": "Le nom Wè, ou Wènion, voudrait dire « les hommes qui pardonnent facilement », selon l'Institut de linguistique appliquée de l'Université de Côte d'Ivoire, dans un texte de 1997 que cite la Commission de l'immigration et du statut de réfugié du Canada.",
+            "hypothesisGroup": "origine du nom Wè",
+            "sources": [
+              {
+                "title": "Current situation of members of the Wè ethnic group, including where they live, their characteristics, and how they are treated by government authorities (2002-Aug. 2003) [CIV41868.FE]",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada, Direction des recherches",
+                "year": 2003,
+                "url": "https://www.ecoi.net/de/dokument/1190906.html",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Réponse à une demande d'information publiée le 25 août 2003, version française lue sur ecoi.net le 3 novembre 2026. Elle cite un texte de l'Institut de linguistique appliquée de l'Université de Côte d'Ivoire daté du 16 avril 1997, « La Côte d'Ivoire à travers ses racines. Les Krou » : « les Wè ou Wènion (les hommes qui pardonnent facilement) comprennent les Guéré et les Wobé »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Rapporté en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Wè viendrait de Wègnon, ou Wègnondi, « les hommes qui ont pitié dans le cœur », le nom que se donne ce peuple, selon une page personnelle consacrée à la culture wè que cite la Commission de l'immigration et du statut de réfugié du Canada.",
+            "hypothesisGroup": "origine du nom Wè",
+            "sources": [
+              {
+                "title": "Current situation of members of the Wè ethnic group, including where they live, their characteristics, and how they are treated by government authorities (2002-Aug. 2003) [CIV41868.FE]",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada, Direction des recherches",
+                "year": 2003,
+                "url": "https://www.ecoi.net/de/dokument/1190906.html",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Réponse à une demande d'information publiée le 25 août 2003, version française lue sur ecoi.net le 3 novembre 2026. Elle cite la page personnelle Wobébli, « La culture traditionnelle We », consultée le 13 août 2003 : « Le nom qu'ils se donnent est Wègnon ou parfois Wègnondi, ce qui signifie : les hommes (gnon) qui ont pitié (Wè) dans le cœur (di) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2002,
+              "to": 2011,
+              "label": "Récit recueilli en 2002, publié en 2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Wè se retrouve dans celui de Wègnon, « homme qui a pitié », l'ancêtre des Wè dans un récit mythique que l'anthropologue Bony Guiblehon a recueilli en 2002 à Douagué. Wègnon serait descendu du ciel par une chaîne, et son enfant était un buffle.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La conception du « temps » chez les Wè en Côte d'Ivoire : le temps social en mutation",
+                "author": "Bony Guiblehon",
+                "year": 2011,
+                "url": "https://translation.bible/publications/sycomore/5.1/Guiblehon_Syc_5.1_2011_25-39.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 33",
+                "notes": "Le Sycomore, vol. 5, n° 1, 2011, p. 25-39, lu le 3 novembre 2026 dans le PDF publié par la revue. L'auteur enseigne l'anthropologie et la sociologie à l'Université de Bouaké. Page 33 : « certains récits mythiques affirment que l'ancêtre des Wè, Wègnon, « homme qui a pitié » était descendu du ciel à l'aide d'une chaîne ». Une note précise que le mythe a été raconté le 10 janvier 2002 à Douagué."
+              }
+            ]
           }
         ]
       },
@@ -89,7 +154,7 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom de la partie sud du pays wè, venu de l'époque coloniale ; son origine est discutée.",
+        "shortLine": "Le nom de la partie sud du pays wè, fixé à l'époque coloniale ; son origine est discutée.",
         "periodLabel": "Écrit dès 1904 ; en usage aujourd'hui",
         "accounts": [
           {
@@ -116,12 +181,39 @@
           },
           {
             "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque coloniale"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guéré, avec le nom Wobé, partage en deux un même peuple : selon l'Institut de linguistique appliquée de l'Université de Côte d'Ivoire, l'administration coloniale a cru voir deux ethnies chez les Guéré et les Wobé, qui ne forment en réalité qu'un seul groupe, les Wè.",
+            "aspect": "imposition",
+            "actors": [
+              {
+                "name": "administration coloniale française",
+                "role": "classe Guéré et Wobé comme deux ethnies"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Current situation of members of the Wè ethnic group, including where they live, their characteristics, and how they are treated by government authorities (2002-Aug. 2003) [CIV41868.FE]",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada, Direction des recherches",
+                "year": 2003,
+                "url": "https://www.ecoi.net/de/dokument/1190906.html",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Réponse à une demande d'information publiée le 25 août 2003, version française lue sur ecoi.net le 3 novembre 2026. Elle cite l'Institut de linguistique appliquée de l'Université de Côte d'Ivoire (16 avril 1997) : les Wè comprennent les Guéré et les Wobé, « en qui l'administration coloniale a cru voir deux ethnies différentes », mais qui « ne forment en réalité qu'une seule entité ». Elle cite aussi une page personnelle sur les Wè : « Les colonisateurs les ont recensés sous les appellations de Wobé, pour ceux du nord de la Côte d'Ivoire, Guéré pour ceux du sud de ce pays et de Khran pour ceux du Libéria »."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1904,
               "to": 1904,
               "label": "1904"
             },
             "era": "polity",
-            "statement": "Le nom Guéré apparaît sous une forme proche, Nguéré, chez l'administrateur colonial Maurice Delafosse : il donne Nguéré ou Gon comme autres noms des Gbêlé, un peuple de la forêt de l'ouest de la Côte d'Ivoire. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources ne disent pas s'il s'agit exactement des groupes qu'on appelle aujourd'hui Guéré.",
+            "statement": "Le nom Guéré apparaît sous une forme proche, Nguéré, chez l'administrateur colonial Maurice Delafosse : c'est, écrit-il, le nom que portent « sur les cartes » les Gbêlé ou Manon, un peuple de la forêt de l'ouest de la Côte d'Ivoire qu'il range parmi les peuples de langue mandé, et non parmi les Krou. C'est la plus ancienne trace de ce nom que nous connaissons.",
             "formAsWritten": "Nguéré",
             "birth": true,
             "sources": [
@@ -132,8 +224,8 @@
                 "url": "https://archive.org/details/vocabulairescomp00delauoft",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 69",
-                "notes": "Paris, Ernest Leroux, 1904, lu dans l'exemplaire numérisé d'archive.org le 11 octobre 2026. Delafosse énumère, au nord et à l'ouest des Boboua, « Guio et Gbêlé (Dioula anthropophages et Nguéré ou Gon) » ; il écrit d'après des renseignements recueillis hors de ce pays, où la mission Hostains-d'Ollone avait rencontré des hostilités."
+                "page": "p. 69 et p. 145",
+                "notes": "Paris, Ernest Leroux, 1904, lu dans l'exemplaire numérisé d'archive.org le 11 octobre 2026 puis relu le 3 novembre 2026. Ouvrage d'un administrateur colonial. Page 69 : « Guio et Gbêlé (Dioula anthropophages et Nguéré ou Gon) » ; l'auteur écrit d'après des renseignements recueillis hors de ce pays, où la mission Hostains-d'Ollone avait rencontré des hostilités. Page 145, dans la liste des peuples mandé : « Les Gbêlé ou Manon (Nguéré ou Gon sur les cartes) »."
               }
             ]
           },
@@ -166,7 +258,7 @@
               "label": "Entre le XVIe et le XVIIIe siècle"
             },
             "era": "polity",
-            "statement": "Le nom Guéré, écrit « guerré », désigne chez Christophe Wondji des groupes wè descendus du nord. Leur éclatement aurait conduit des Kru du Liberia jusqu'à Grand-Béréby, en Côte d'Ivoire.",
+            "statement": "Le nom Guéré, écrit « guerré », désigne chez l'historien Christophe Wondji des groupes wè descendus du nord. Leur éclatement aurait conduit des Kru du Liberia jusqu'à Grand-Béréby, en Côte d'Ivoire.",
             "before": true,
             "sources": [
               {
@@ -178,6 +270,16 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 425",
                 "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026 : « à la suite d'une fragmentation de groupes guerré (We) descendus du nord ». L'auteur s'appuie sur A. Schwartz (1971)."
+              },
+              {
+                "title": "General History of Africa, V, ch. 13: The states and cultures of the Upper Guinean coast",
+                "author": "Christophe Wondji",
+                "year": 1992,
+                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 382",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 3 novembre 2026 dans la copie que publie South African History Online. Page 382 : « the Kru of Grand-Béréby came to Côte d'Ivoire from Liberia following the fragmentation of Guerre groups (the We) from the north »."
               }
             ]
           },
@@ -208,6 +310,123 @@
                 "notes": "Abidjan, INADES, 1975, lu dans le texte intégral publié par l'IRD le 11 octobre 2026. Condensé d'une thèse soutenue en Sorbonne le 28 janvier 1969, publiée en 1971 sous le titre Tradition et changements dans la société guéré (mémoire ORSTOM n° 52). Page 21 : le capitaine Laurent, « alors administrateur du cercle du Haut-Cavally, retint officiellement pour désigner ces mêmes populations « la dénomination Guéré », corruption de Guémin, « les hommes de Guéo » ». L'auteur ne cite pas de document d'archive pour ce récit."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Rapporté en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Guéré viendrait de « Guéhé minh », la réponse des Yacouba, aussi appelés Dan, aux premiers colons qui leur demandaient le nom de leurs voisins du sud, selon un mémorandum d'élus, de cadres et de chefs traditionnels wè. Les auteurs traduisent ce nom par « peuple guerrier ».",
+            "hypothesisGroup": "origine du nom Guéré",
+            "actors": [
+              {
+                "name": "Yacouba (Dan)",
+                "role": "voisins du nord interrogés par les colons, d'après le mémorandum"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Mémorandum du Comité de sauvegarde du patrimoine foncier wê",
+                "author": "Comité de sauvegarde du patrimoine foncier wê, élus, cadres et chefs traditionnels des régions du Cavally et du Guémon",
+                "year": 2013,
+                "url": "https://connectionivoirienne.net/2013/03/27/exclusif-gueguerre-ouremi-frci-voici-le-rapport-confidentiel-qui-a-tout-gate/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Texte publié par le site d'information Connectionivoirienne le 27 mars 2013, sous le titre « Exclusif guéguerre Ourémi-FRCI : voici le rapport confidentiel qui a tout gâté », d'après Eventnews TV. Lu le 3 novembre 2026. Préambule : « pour les Wê-sud, le peuple ‘’Yacouba’’ a décliné : ‘’ Guéhé minh’’ qui devient Guéré (peuple guerrier) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2018,
+              "label": "Usage décrit entre 2013 et 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Guéré désigne aujourd'hui les Wè du sud, dans les départements de Bangolo, Duékoué, Guiglo, Bloléquin et Toulepleu. En 2013, des élus et des chefs traditionnels wè écrivent que ces Wè du sud sont « appelés abusivement » Guéré et parlent d'un « héritage colonial ». La presse ivoirienne emploie encore le nom, par exemple pour les villages guéré riverains du mont Péko en 2016.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Mémorandum du Comité de sauvegarde du patrimoine foncier wê",
+                "author": "Comité de sauvegarde du patrimoine foncier wê, élus, cadres et chefs traditionnels des régions du Cavally et du Guémon",
+                "year": 2013,
+                "url": "https://connectionivoirienne.net/2013/03/27/exclusif-gueguerre-ouremi-frci-voici-le-rapport-confidentiel-qui-a-tout-gate/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Texte publié par le site d'information Connectionivoirienne le 27 mars 2013, sous le titre « Exclusif guéguerre Ourémi-FRCI : voici le rapport confidentiel qui a tout gâté », d'après Eventnews TV. Lu le 3 novembre 2026. Préambule : « le Wê a malheureusement reçu en héritage colonial la distinction dialectale de Wobé et de Guéré » ; « les Wê sud appelés abusivement ‘’Guéré’’ occupant les départements de Bangolo, Duékoué, Guiglo, Bloléquin et Toulepleu »."
+              },
+              {
+                "title": "Côte d'Ivoire : information sur l'ethnie Wé, y compris son emplacement dans le pays et ses relations avec les Dozo (2016-janvier 2018) [CIV106042.F]",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada, Direction des recherches",
+                "year": 2018,
+                "url": "https://www.ecoi.net/de/dokument/2041625.html",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Réponse à une demande d'information du 12 janvier 2018, relue sur ecoi.net le 3 novembre 2026. Elle cite le quotidien L'Intelligent d'Abidjan du 9 octobre 2016, qui parle de « près de 22 villages riverains Guérés dans les départements de Duekoué et Bangolo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1953,
+              "to": 1976,
+              "label": "Relevé en 1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Guéré s'écrit Ngere dans les publications anglaises sur l'art africain, où il désigne, avec le nom Dan, des groupes de l'est du Liberia, selon les historiens Svend Holsoe et Joseph Lauer. Ils relèvent que les mêmes peuples y portent aussi les noms Kran, Gio, Yacouba ou Tien.",
+            "formAsWritten": "Ngere",
+            "actors": [
+              {
+                "name": "historiens de l'art de langue anglaise",
+                "role": "écrivent cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Holsoe, Svend E. & Lauer, Joseph — Who Are the Kran/Guere and the Gio/Yacouba? African Studies Review 19(1), 1976",
+                "author": "Svend E. Holsoe et Joseph J. Lauer",
+                "year": 1976,
+                "url": "https://www.cambridge.org/core/journals/african-studies-review/article/who-are-the-kranguere-and-the-gioyacouba-ethnic-identifications-along-the-liberiaivory-coast-border/4E33CA4D6CDC5962A21AEE535A3E10AD",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 139",
+                "notes": "African Studies Review, vol. 19, n° 1, avril 1976, p. 139-150. Seul le premier paragraphe, publié en accès libre par Cambridge University Press, a été lu le 3 novembre 2026 : « The terms most commonly observed in English publications for those groups which live in eastern Liberia are Dan and Ngere (Fagg, 1953: 17-18) » ; « The names Gio, Yacouba, Kran, and Tien also can be found used by other scholars to refer to the very same peoples »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Zonbahon",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les Wè du nord",
+        "shortLine": "Le nom que les Wè du nord donnent aux Wè du sud : « les hommes d'en bas ».",
+        "periodLabel": "Rapporté en 2013",
+        "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Rapporté en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Zonbahon, « les hommes d'en bas », c'est-à-dire du sud, est celui que les Wè du nord donnent aux Wè du sud, qui les appellent en retour Koéahon, « les hommes d'en haut ». C'est ce que rapporte un mémorandum d'élus, de cadres et de chefs traditionnels wè.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mémorandum du Comité de sauvegarde du patrimoine foncier wê",
+                "author": "Comité de sauvegarde du patrimoine foncier wê, élus, cadres et chefs traditionnels des régions du Cavally et du Guémon",
+                "year": 2013,
+                "url": "https://connectionivoirienne.net/2013/03/27/exclusif-gueguerre-ouremi-frci-voici-le-rapport-confidentiel-qui-a-tout-gate/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Texte publié par le site d'information Connectionivoirienne le 27 mars 2013, sous le titre « Exclusif guéguerre Ourémi-FRCI : voici le rapport confidentiel qui a tout gâté », d'après Eventnews TV. Lu le 3 novembre 2026. Préambule : « Les Wê-nord, dans l'imagerie populaire, appelant les Wê-sud, les ‘’Zonbahon’’ traduisible par les ‘’hommes d'en bas, (du sud)’’ et les Wê-sud appelant les wê-nord : ‘’ les koéahon’’ synonyme de ‘’ Hommes d'en haut, (du nord)’’ »."
+              }
+            ]
           }
         ]
       },
@@ -227,7 +446,7 @@
               "label": "Usage décrit par l'auteur"
             },
             "era": "modern",
-            "statement": "Le nom Krahn désigne au Liberia une population d'environ 50 000 personnes, qui prolonge vers le sud-ouest les Guéré de Côte d'Ivoire, selon Alfred Schwartz. Nous ne connaissons pas la plus ancienne trace écrite de ce nom.",
+            "statement": "Le nom Krahn désigne au Liberia une population d'environ 50 000 personnes, qui prolonge vers le sud-ouest les Guéré de Côte d'Ivoire, selon Alfred Schwartz.",
             "sources": [
               {
                 "title": "La vie quotidienne dans un village guéré",
@@ -248,7 +467,7 @@
               "label": "XVIe siècle"
             },
             "era": "polity",
-            "statement": "Le nom Krahn désigne, chez Christophe Wondji, l'un des groupes, avec les Bassa et les Grebo, en lesquels les Kru du Liberia se seraient divisés au XVIe siècle, d'après C. Behrens.",
+            "statement": "Le nom Krahn désigne, chez l'historien Christophe Wondji, l'un des groupes, avec les Bassa et les Grebo, en lesquels les Kru du Liberia se seraient divisés au XVIe siècle, d'après C. Behrens.",
             "sources": [
               {
                 "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de haute Guinée",
@@ -259,6 +478,37 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 425",
                 "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              },
+              {
+                "title": "General History of Africa, V, ch. 13: The states and cultures of the Upper Guinean coast",
+                "author": "Christophe Wondji",
+                "year": 1992,
+                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 381",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 3 novembre 2026 dans la copie que publie South African History Online. Page 381 : « C. Behrens thinks that the Kru moved into Liberia along the coast from east to west during the sixteenth century. There they split up into the Bassa, the Krahn and the Grebo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Krahn désigne en 2003 un groupe du Liberia que l'International Crisis Group décrit comme « cousin » des Guéré de Côte d'Ivoire, d'après la Commission de l'immigration et du statut de réfugié du Canada.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Current situation of members of the Wè ethnic group, including where they live, their characteristics, and how they are treated by government authorities (2002-Aug. 2003) [CIV41868.FE]",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada, Direction des recherches",
+                "year": 2003,
+                "url": "https://www.ecoi.net/de/dokument/1190906.html",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Réponse à une demande d'information publiée le 25 août 2003, version française lue sur ecoi.net le 3 novembre 2026. Elle résume un rapport de l'International Crisis Group du 30 avril 2003 : les membres « du groupe ethnique des Krahn, qui sont décrits comme des [traduction] « cousins » des Guéré »."
               }
             ]
           }
@@ -266,138 +516,175 @@
       }
     ]
   },
-  "classificationStatus": "colonial-legacy",
   "content": {
     "appellations": {
       "mainName": "Guéré",
       "selfAppellation": "Wè",
-      "exonyms": [
-        "Gere",
-        "Gewo",
-        "Ngere",
-        "Gwere",
-        "Wee",
-        "Wé",
-        "Kran",
-        "Krahn"
-      ],
-      "originOfExonyms": "L'administration coloniale française a introduit Guéré à la suite d'un malentendu sur les lieux et la langue. Avant la colonisation, la population se nommait uniquement Wè, qui signifierait hommes qui pardonnent facilement. Les Français ont imposé la distinction entre Guéré, au sud, et Wobé, au nord, au sein d'un même peuple. Au Liberia, les Wè sont appelés Kran ou Krahn.",
-      "whyProblematic": "La partition Guéré / Wobé est une construction coloniale artificielle qui ne correspondait à aucune frontière culturelle, linguistique ou identitaire préexistante. Elle a engendré des divisions qui se sont progressivement institutionnalisées malgré leur caractère arbitraire.",
-      "contemporaryUsage": "Le terme Guéré reste l'appellation courante en Côte d'Ivoire et dans la littérature francophone. Les populations elles-mêmes utilisent Wè pour désigner l'ensemble ethno-culturel, et Guéré pour désigner le sous-groupe méridional par opposition aux Wobé du nord.",
-      "linguisticFamily": "FLG_KROU",
-      "ethnoLinguisticGroup": "Krou occidental (Wè)",
-      "historicalRegion": "Forêts de l'Ouest ivoirien (Duékoué, Guiglo, Taï) et Est du Liberia",
-      "currentCountries": ["CIV", "LBR"]
+      "exonyms": ["Guéré", "Nguéré", "Ngere", "Zonbahon", "Krahn", "Kran"],
+      "spellingAliases": ["Guere", "Gere", "Wé", "Wê", "We", "Wèè"],
+      "originOfExonyms": "Le nom Guéré vient de l'époque coloniale. Le sociologue Alfred Schwartz rapporte qu'il viendrait de Guémin, « les hommes de Guéo », le nom que les Dan donnaient à leurs voisins du sud, et que le capitaine Laurent, administrateur du cercle du Haut-Cavally, l'a retenu après 1911 pour toute la population au sud des Dan. Un mémorandum d'élus et de chefs traditionnels wè, publié en 2013, donne une autre explication : les Yacouba, aussi appelés Dan, auraient répondu « Guéhé minh » aux premiers colons, ce qu'ils traduisent par « peuple guerrier ». Une forme proche, Nguéré, figure dès 1904 chez Maurice Delafosse, mais pour un autre peuple, les Gbêlé ou Manon. Les Wè du nord appellent les Wè du sud Zonbahon, « les hommes d'en bas ». Au Liberia, les Wè portent le nom Krahn, écrit aussi Kran.",
+      "whyProblematic": "Le nom Guéré vient d'un classement fait par l'administration coloniale française. Selon l'Institut de linguistique appliquée de l'Université de Côte d'Ivoire, cité en 2003 par la Commission de l'immigration et du statut de réfugié du Canada, cette administration « a cru voir deux ethnies différentes » chez les Guéré et les Wobé, qui forment pourtant un seul peuple, les Wè. Alfred Schwartz rapporte qu'un administrateur colonial, le capitaine Laurent, a étendu le nom d'un petit groupe à toute la population au sud des Dan. En 2013, des élus et des chefs traditionnels wè parlent d'un « héritage colonial » et écrivent que les Wè du sud sont « appelés abusivement » Guéré.",
+      "contemporaryUsage": "Le nom Guéré reste courant en Côte d'Ivoire, notamment dans la presse, pour les Wè du sud. Des Wè emploient le nom Wè, ou Wê, pour l'ensemble du peuple : en 2013, des élus et des chefs traditionnels parlent du « pays wê » et ne gardent les noms Guéré et Wobé que pour désigner le sud et le nord. Une association de jeunes se nomme l'Alliance des jeunes Wê. Glottolog appelle la langue « Wè Southern », le wè du Sud, et donne Guéré comme autre nom.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Guéré proprement dits (zone de Guiglo et Duékoué, Côte d'Ivoire)",
-      "Wobé (sous-groupe nord du peuple Wè, CIV)",
-      "Kran / Krahn (nom des Wè au Liberia, Grand Gedeh et Nimba Counties)",
-      "Wè méridionaux (zone de Taï et Grabo)",
-      "Wè du Moyen-Cavally (zone frontalière CIV-LBR)"
+      "Beu, un parler du wè du Sud recensé par Glottolog",
+      "Fleo, un parler du wè du Sud recensé par Glottolog",
+      "Gboo, un parler du wè du Sud recensé par Glottolog",
+      "Neao, un parler du wè du Sud recensé par Glottolog",
+      "Nyeo, un parler du wè du Sud recensé par Glottolog",
+      "Zaa, un parler du wè du Sud recensé par Glottolog",
+      "Zagna, un parler du wè du Sud recensé par Glottolog",
+      "Zagné, une des seize confédérations wè selon Bony Guiblehon, dont Glottolog recense le parler",
+      "Zibiao, une des seize confédérations wè selon Bony Guiblehon, dont Glottolog recense le parler"
     ],
     "origins": {
-      "ancientOrigins": "Les Wè (Guéré) font partie du grand ensemble Krou dont les origines remontent au moins au XVe siècle dans les régions forestières entre le fleuve Cavally et le fleuve Bandama. Ils descendent de populations autochtones de la forêt équatoriale ouest-africaine. Des traditions orales et des études linguistiques suggèrent que les ancêtres des Wè ont migré depuis les hautes terres nord-est (région de la Guinée actuelle) vers la forêt littorale, poussés par des pressions des royaumes mandingues esclavagistes.",
-      "formationPeriod": "L'identité Wè distincte se consolide entre le XVIe et le XVIIIe siècle dans les forêts de l'Ouest ivoirien. La distinction Guéré / Wobé est imposée par l'administration coloniale française à partir de la fin du XIXe siècle et formalisée au XXe siècle.",
+      "ancientOrigins": "Les Guéré font partie des Wè, un peuple de langue krou. Selon l'historien Christophe Wondji, qui s'appuie sur les travaux d'Alfred Schwartz, la poussée vers le sud des peuples de langue mandé, comme les Dan, a repoussé les peuples krou vers la forêt. Un groupe wè, les Nidrou de la région de Toulepleu, vivait d'abord dans la savane et serait entré dans la forêt au milieu du XVIe siècle.",
+      "formationPeriod": "D'après Christophe Wondji, les Wè venus de la région de Toulepleu atteignent la forêt de Guiglo au milieu du XVIIe siècle, puis le fleuve Cavally à la fin du XVIIe siècle et au début du XVIIIe siècle. D'autres groupes arrivent au XVIIIe siècle, du sud-ouest avec les Zibiao, du nord-est avec les Zarabaon et du nord avec les Sémien. Le nom Guéré ne s'étend à tout le sud du pays wè qu'au début du XXe siècle, sous l'administration coloniale, selon Alfred Schwartz.",
       "migrationRoutes": [
-        "Migration depuis les plateaux guinéo-ivoiriens vers le sud, par les vallées forestières",
-        "Expansion le long du fleuve Cavally, frontière naturelle entre CIV et Liberia",
-        "Dispersion vers l'ouest libérien (peuple Kran / Krahn)"
+        "Des Wè de la région de Toulepleu vers Nidrou et Bewa, puis vers la forêt de Guiglo au milieu du XVIIe siècle, selon Christophe Wondji",
+        "Vers le fleuve Cavally, à la fin du XVIIe siècle et au début du XVIIIe siècle, selon le même auteur",
+        "Au XVIIIe siècle, arrivées venues du sud-ouest (Zibiao), du nord-est (Zarabaon) et du nord (Sémien), selon le même auteur",
+        "Après l'éclatement de groupes wè venus du nord, des Kru du Liberia gagnent Grand-Béréby, en Côte d'Ivoire, selon le même auteur"
       ],
       "historicalSettlementZones": [
-        "Département de Guiglo (Côte d'Ivoire)",
-        "Département de Duékoué (Côte d'Ivoire)",
-        "Zone de Taï (Côte d'Ivoire, forêt tropicale)",
-        "Grand Gedeh County et Nimba County (Liberia)",
-        "Vallée du Cavally (zone frontalière CIV-LBR)"
+        "Départements de Bangolo, Duékoué, Guiglo, Bloléquin et Toulepleu, selon le mémorandum d'élus et de chefs traditionnels wè de 2013",
+        "Régions du Guémon et du Cavally, dans l'ouest de la Côte d'Ivoire",
+        "Couloir entre le Nuon et le Cavally, l'un des deux foyers de population du pays wè selon l'Institut de linguistique appliquée",
+        "Forêt de Guiglo et vallée du Cavally, atteintes aux XVIIe et XVIIIe siècles selon Christophe Wondji"
       ],
-      "unificationsOrDivisions": "Les Wè n'ont jamais formé d'entité politique centralisée. Ils vivaient en communautés villageoises autonomes reliées par la langue, les rites communs et les alliances matrimoniales. La division Guéré / Wobé imposée par la colonisation française s'est progressivement intégrée dans les identités locales malgré son origine arbitraire.",
-      "externalInfluences": "Contacts anciens avec les peuples Dan (Yacouba) au nord, qui partagent des similarités artistiques (masques). Influence des royaumes mandingues par le commerce de la kola. Colonisation française (1905-1960) : pacification militaire et fixation des frontières. Influence du christianisme évangélique et du catholicisme depuis le XXe siècle.",
-      "majorHistoricalEvents": "Résistances aux incursions mandingues et à la colonisation française au début du XXe siècle. La crise politico-militaire ivoirienne (2002-2011) a durement affecté la région de l'Ouest ivoirien, peuplée de Wè, entraînant des déplacements massifs et des violences intercommunautaires dans les zones de Duékoué et Guiglo. Opération militaire ivoirienne de 2016 dans le Parc du Mont Péko, entraînant le déplacement de plusieurs milliers de Guéré."
+      "unificationsOrDivisions": "Les Wè forment, selon Bony Guiblehon, un ensemble de seize fédérations, qu'Alfred Schwartz appelle des « confédérations guerrières », dont les Gbéon, les Baon, les Zoho, les Zibiao et les Zagné. Aucune des sources lues ne décrit de pouvoir commun à tout le peuple. L'administration coloniale a ensuite partagé les Wè entre Guéré, au sud, et Wobé, au nord, comme s'il s'agissait de deux ethnies. En 2013, des élus et des chefs traditionnels wè disent que ce peuple a « surmonté cette fausse distinction » et ne garde ces noms que pour situer le sud et le nord.",
+      "externalInfluences": "Les Wè ont vécu, selon Bony Guiblehon, des brassages avec les Malinké, les Niaboua et les Niédéboua, puis des vagues d'immigration venues du Mali, de Guinée et du Burkina Faso. Il note que le colonisateur a introduit le café et le cacao, ce qui a changé le calendrier des fêtes et des travaux. D'après le mémorandum de 2013, les premiers étrangers accueillis comme ouvriers agricoles sont venus de Guinée dans les années 1950, suivis de Maliens, de Voltaïques, aujourd'hui Burkinabè, et de Malinké ivoiriens.",
+      "majorHistoricalEvents": "La conquête coloniale du pays wè reste dans les récits des anciens : Bony Guiblehon cite un vieil homme qui raconte à son petit-fils ses combats contre les Blancs pendant la « pacification ». Après 1911, l'administration coloniale fixe le nom Guéré pour le sud du pays wè, selon Alfred Schwartz. La crise ivoirienne commencée en 2002 a durement touché les Guéré : en mai 2003, plus de 100 Guéré auraient été tués entre Bangolo et Duékoué, d'après l'Irish Times cité par la Commission de l'immigration et du statut de réfugié du Canada. L'International Crisis Group note en 2014 que les régions du Cavally et du Guémon sont celles où la crise après l'élection de 2010 a fait le plus de victimes, en dehors d'Abidjan. En 2016, l'évacuation du parc du mont Péko aurait déplacé 17 729 adultes et 11 548 enfants riverains guéré, selon le quotidien L'Intelligent d'Abidjan."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Organisation non centralisée en communautés villageoises autonomes. Chaque village est dirigé par un chef (headman) dont l'autorité repose sur ses mérites personnels (travail agricole, succès à la chasse, prestige). Les chefs entretiennent leur statut par la redistribution de richesses lors de fêtes communautaires. Les confédérations guerrières constituent le niveau d'organisation le plus élevé, conduites par un chef militaire ayant également une autorité civile.",
-      "clanOrganization": "Société patrilinéaire organisée en clans (familles étendues). Le patriarche (père ou aîné du lignage) supervise les mariages, règle les conflits internes et influence la vie religieuse du clan. Chaque famille étendue constitue une unité économique et sociale.",
-      "ageClassSystems": "Système de classes d'âge similaire à celui des Dan voisins. Les jeunes hommes sont regroupés par tranches d'âge pour accomplir des travaux collectifs, participer aux initiations et aux activités guerrières. Les classes d'âge jouent un rôle dans la transmission des savoirs culturels et rituels.",
-      "roleOfLineages": "Les lignages patrilinéaires structurent l'organisation sociale, l'accès à la terre et les alliances matrimoniales. L'identité clanique détermine les droits fonciers, les obligations rituelles et les allégeances politiques.",
-      "religiousAuthority": "L'autorité religieuse est incarnée par les gardiens et porteurs de masques sacrés, initiés à des rites spécifiques. Le masque est le principal médiateur entre le monde des vivants et celui des ancêtres et des esprits. Les devins (voyants) jouent également un rôle central dans la gestion des crises spirituelles et sociales."
+      "traditionalPoliticalSystem": "Les Wè sont organisés en seize fédérations, aussi appelées « confédérations guerrières », selon Bony Guiblehon. Le récit des alliances passées sert à justifier la légitimité d'un chef ou la primauté d'un lignage, et l'ancienneté d'un groupe sur une terre compte dans le choix d'un chef. Le mois de mars porte le nom tohbo-coh, « mois du chef ».",
+      "clanOrganization": "Les Wè sont organisés en groupes de filiation, lignages, clans ou tribus, qui se donnent chacun un ancêtre commun, selon Bony Guiblehon. Chaque groupe garde de longues généalogies, appelées ji, « racines ». Connaître ses ancêtres est une condition des mariages entre deux familles, pour éviter qu'ils ne soient trop proches parents.",
+      "ageClassSystems": "Nous n'avons pas trouvé de source qui décrive un système de classes d'âge chez les Guéré.",
+      "roleOfLineages": "Les lignages comptent dans la vie politique : selon Bony Guiblehon, l'histoire de chaque groupe sert à expliquer la domination d'un lignage sur les autres et à défendre ses droits sur la terre. Les funérailles des chefs de lignage sont les plus longues et les plus importantes. Les anciennes guerres opposaient parfois des lignages wè entre eux.",
+      "religiousAuthority": "Nous n'avons pas trouvé de source qui décrive qui exerce l'autorité religieuse chez les Guéré."
     },
     "languages": {
-      "mainLanguage": "Wè méridional (guéré)",
+      "mainLanguage": "Wè du Sud, aussi appelé guéré (gxx)",
       "isoCodes": ["gxx"],
       "dialects": [
-        "Guéré (zone de Guiglo, dialecte méridional)",
-        "Wobé (zone nord, proche parent)",
-        "Krahn occidental (Liberia, forme libérienne du wè)",
-        "Krahn oriental (Liberia)"
+        "Beu",
+        "Fleo",
+        "Gboo",
+        "Neao",
+        "Nyeo",
+        "Zaa",
+        "Zagna",
+        "Zagne",
+        "Zibiao"
       ],
-      "vehicularRole": "Le wè / guéré est la langue maternelle de l'ensemble de la communauté. Le français est la langue officielle et d'enseignement en Côte d'Ivoire. L'anglais est utilisé au Liberia. Le dioula sert de langue véhiculaire régionale pour les échanges commerciaux."
+      "vehicularRole": "Le wè du Sud est une langue krou. Glottolog le range avec le wè de l'Ouest, le wè du Nord, parlé par les Wobé, et le krahn de l'Ouest du Liberia dans un même groupe, appelé Guere-Krahn. Selon Bony Guiblehon, la langue wè reste très uniforme malgré quelques différences entre le nord et le sud, et le français et le dioula y ont peu d'influence."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q3122474",
+      "glottocode": "weso1238",
+      "iso639_3": "gxx"
     },
     "culture": {
-      "majorRites": "Rites d'initiation masculins (circoncision) organisés hors du village, en brousse, durant lesquels les jeunes initiés apprennent les traditions, la discipline et les valeurs communautaires. Ces rites durent traditionnellement deux mois, commençant en août avec la récolte du premier riz. Rites des hommes-panthères, initiation durant sept mois (de juillet à janvier en brousse). Funérailles élaborées (koh) organisées en mars (tohbo-coh), mobilisant d'importantes ressources humaines, matérielles et financières. Fêtes de récolte présidées par les masques pour remercier les ancêtres et les dieux. Rites de passage à l'âge adulte pour les jeunes femmes, marqués par l'excision traditionnellement.",
-      "symbols": "Le masque (gle) est le symbole central de la civilisation Wè. Il est une entité spirituelle complète comprenant une coiffe, un visage sculpté en bois, une jupe de fibre végétale et un tissu couvrant le haut du corps. Les masques Wè sont caractérisés par des traits puissants aux yeux tubulaires, un visage triangulaire, des cornes, et sont ornés de coquillages cauris, clochettes, clous et plumes. Chaque type de masque (sacré, guerrier, joyeux) incarne une fonction sociale et spirituelle spécifique.",
-      "artsAndMusic": "Sculpture sur bois des masques : art majeur des Wè, masques aux traits puissants avec ornements (cauris, clochettes, clous, plumes) renforçant leur pouvoir spirituel. Musique de percussion (tambours, sanza) appelant les masques à sortir de la forêt. Danses cérémonielles accompagnant les sorties de masques. Poésie orale transmettant les traditions et l'histoire clanique. Chants féminins rituels lors des sorties de masques, femmes vêtues de blanc ou ornées de craie blanche. Artisanat : tissage, poterie et forge traditionnelle.",
-      "spiritualities": "Animisme profond : croyance que tous les éléments naturels (animaux, plantes, objets) possèdent une essence spirituelle. Culte des ancêtres et des esprits de la brousse (esprits du bush) auxquels des pouvoirs surnaturels sont attribués. Le masque est le principal intermédiaire entre Dieu, les ancêtres et les vivants. Cosmologie dualiste : opposition entre village (monde contrôlé) et brousse (monde des esprits). Influences croissantes du christianisme évangélique et catholique depuis le milieu du XXe siècle."
+      "majorRites": "Les grandes fêtes wè sont liées aux initiations, aux naissances et aux funérailles, selon Bony Guiblehon. La circoncision commence souvent en août, avec la récolte du premier riz, et dure deux mois ; aujourd'hui, beaucoup d'enfants sont circoncis à la naissance dans les centres de santé. L'initiation des « hommes-panthères » durait sept jours en brousse ; elle dure aujourd'hui sept mois, de juillet à janvier. Les funérailles, appelées koh, des chefs de lignage ont lieu en saison sèche ; autrefois, le mort était enterré le lendemain et les grandes funérailles se tenaient plus tard, au mois de mars. Depuis les années 1960, les corps peuvent être conservés des mois avant les funérailles.",
+      "symbols": "Le buffle est un animal protecteur des Wè, selon Bony Guiblehon : d'après un récit mythique, l'enfant de l'ancêtre Wègnon et de sa femme Ditin était un buffle, et il est interdit aux Wè de manger sa viande.",
+      "artsAndMusic": "Les Guéré sont connus des historiens de l'art africain : plusieurs auteurs de langue anglaise parlent d'un style « Dan N'gere », commun aux Dan et à leurs voisins, selon Svend Holsoe et Joseph Lauer. Nous n'avons pas trouvé de source qui décrive leur musique et leurs danses.",
+      "spiritualities": "D'après un récit mythique recueilli par Bony Guiblehon, l'ancêtre des Wè, Wègnon, « homme qui a pitié », est descendu du ciel par une chaîne. Il avait deux visages, l'un animal et l'autre humain. Lui et son fils buffle sont des esprits bienveillants qui protègent les Wè. Ce récit décrit un temps des origines où les hommes, les animaux et les arbres vivaient en paix."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Absence de royaumes ou chefferies centralisées. L'organisation en confédérations guerrières (confederation militaire) est la plus haute forme de regroupement politique. Les confédérations étaient formées pour la défense contre les incursions extérieures et n'avaient pas de permanence institutionnelle.",
-      "relationsWithNeighbors": "Relations complexes avec les Dan (Yacouba) au nord, avec qui les Wè partagent des similarités artistiques et culturelles (masques). Tensions historiques avec les peuples mandingues (Dioula, Malinké) liées aux incursions esclavagistes. Relations de voisinage et d'échanges avec les Wobé (peuple frère), les Bété à l'est, et les Grebo au Liberia.",
-      "conflictsOrAlliances": "Résistance aux incursions mandingues esclavagistes qui ont provoqué des migrations vers la forêt. Résistance à la pacification coloniale française. Forte implication dans la crise politico-militaire ivoirienne (2002-2011) : les milices Wè (FLGO) ont participé aux affrontements, et la région de Duékoué-Guiglo a été le théâtre de violences intercommunautaires entre Guéré et allogènes. Accusation de crimes de guerre lors de la crise post-électorale de 2010-2011.",
-      "diaspora": "Diaspora interne importante dans les villes ivoiriennes (Abidjan, Daloa, San Pedro). Présence au Liberia comme Krahn. Diaspora internationale modeste (France, Europe, États-Unis) principalement composée d'étudiants et de réfugiés politiques issus des crises ivoiriennes."
+      "kingdomsOrChiefdoms": "Les sources que nous avons lues ne décrivent pas de royaume wè. Elles parlent de seize fédérations, ou « confédérations guerrières », qui ont connu des guerres entre lignages et contre des voisins, selon Bony Guiblehon.",
+      "relationsWithNeighbors": "Au nord, les Wè ont pour voisins les Dan, aussi appelés Yacouba, dont la poussée vers le sud les a menés vers la forêt selon Christophe Wondji, et les Toura, avec qui ils ont connu des guerres selon Bony Guiblehon. Au Liberia, les Krahn sont décrits comme des « cousins » des Guéré. Dans l'ouest ivoirien, les Wè sont traditionnellement les propriétaires de la terre, qu'ils louent à des migrants ivoiriens venus du centre et du nord, surtout baoulé et dioula, et à des migrants venus surtout du Burkina Faso, selon l'International Crisis Group.",
+      "conflictsOrAlliances": "Pendant la crise ivoirienne commencée en 2002, les Guéré ont en général soutenu le président Laurent Gbagbo, selon les sources que cite la Commission de l'immigration et du statut de réfugié du Canada. L'International Crisis Group rapporte en 2003 que des Krahn du Liberia vivant en Côte d'Ivoire soutenaient aussi ce président. Après la crise de 2010 et 2011, des conflits fonciers ont opposé des Wè à des planteurs baoulé, appuyés par des chasseurs dozo selon des témoignages rapportés par la presse, notamment dans la forêt classée du Goin-Débé en 2017.",
+      "diaspora": "Nous n'avons pas trouvé de source qui décrive une diaspora guéré hors de l'ouest de la Côte d'Ivoire."
     },
     "demography": {
-      "totalPopulation": 700000,
-      "referenceYear": 2025,
-      "source": "Peoplegroups.org 2023 (562 000 en CIV), ECOI/IRB Canada 2018 (estimation Afriki Presse : 2,4 millions pour l'ensemble Wè), Minority Rights Group. Estimation 2025 tenant compte de la croissance démographique et de la présence au Liberia (Krahn : env. 139 000 au recensement 2008).",
+      "totalPopulation": 564000,
+      "referenceYear": 2026,
+      "source": "Estimation de Joshua Project, une base de données missionnaire, consultée en 2026. Pour l'ensemble des Wè, du nord comme du sud, les chiffres cités en 2018 par la Commission de l'immigration et du statut de réfugié du Canada vont de 318 000 personnes, selon le Minority Rights Group, à 2,4 millions, selon le site Afriki Presse.",
       "distributionByCountry": [
         {
           "country": "CIV",
-          "population": 600000,
-          "note": "Régions du Guémon (Guiglo) et de Cavally (Côte d'Ivoire occidentale), sous-préfectures de Duékoué, Guiglo, Taï, Grabo"
-        },
-        {
-          "country": "LBR",
-          "population": 100000,
-          "note": "Krahn de l'est libérien, Grand Gedeh County et Nimba County, proches parents des Guéré"
+          "population": 564000,
+          "note": "Ouest de la Côte d'Ivoire, surtout les départements de Bangolo, Duékoué, Guiglo, Bloléquin et Toulepleu, dans les régions du Guémon et du Cavally"
         }
       ]
     },
     "sources": [
       {
-        "title": "101 Last Tribes — Guere people",
-        "url": "https://www.101lasttribes.com/tribes/guere.html",
-        "tier": "unverified",
-        "source_kind": "community"
-      },
-      {
-        "title": "Joshua Project — Guere in Côte d'Ivoire",
-        "url": "https://joshuaproject.net/people_groups/11124",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
+        "title": "Current situation of members of the Wè ethnic group, including where they live, their characteristics, and how they are treated by government authorities (2002-Aug. 2003) [CIV41868.FE]",
+        "url": "https://www.ecoi.net/de/dokument/1190906.html",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Réponse de la Direction des recherches de la Commission de l'immigration et du statut de réfugié du Canada, publiée le 25 août 2003, version française lue sur ecoi.net le 3 novembre 2026. Elle cite l'Institut de linguistique appliquée de l'Université de Côte d'Ivoire (1997), une page personnelle sur la culture wè et un rapport de l'International Crisis Group (2003)."
       },
       {
         "title": "ECOI/IRB Canada — Côte d'Ivoire : information sur l'ethnie Wé, 2018",
         "url": "https://www.ecoi.net/de/dokument/2041625.html",
         "tier": "referenced",
-        "source_kind": "government"
+        "source_kind": "government",
+        "notes": "Réponse de la Direction des recherches de la Commission de l'immigration et du statut de réfugié du Canada, datée du 12 janvier 2018, relue sur ecoi.net le 3 novembre 2026. Elle cite l'International Crisis Group (2014), le Minority Rights Group, la presse ivoirienne et deux chercheurs."
       },
       {
-        "title": "Minority Rights Group — Côte d'Ivoire",
-        "url": "https://minorityrights.org/country/cote-divoire/",
-        "tier": "referenced",
-        "source_kind": "ngo"
+        "title": "Glottolog 5.3 — Wè du Sud (weso1238)",
+        "url": "https://glottolog.org/resource/languoid/id/weso1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice de la langue, lue le 3 novembre 2026 : code ISO gxx, autres noms Central Guéré, Gere, Guere, Guéré et Wèè, parlers Beu, Fleo, Gboo, Neao, Nyeo, Zaa, Zagna, Zagne et Zibiao, groupe Guere-Krahn, pays Côte d'Ivoire et Liberia."
       },
       {
-        "title": "Guiblehon, Bi Drombé — La conception du temps chez les Wè en Côte d'Ivoire. Sycomore 5.1, 2011",
+        "title": "La conception du « temps » chez les Wè en Côte d'Ivoire : le temps social en mutation",
         "url": "https://translation.bible/publications/sycomore/5.1/Guiblehon_Syc_5.1_2011_25-39.pdf",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de Bony Guiblehon, enseignant en anthropologie et sociologie à l'Université de Bouaké, paru dans Le Sycomore, vol. 5, n° 1, 2011, p. 25-39. Lu le 3 novembre 2026. Pages lues pour la langue (p. 27), les rites (p. 28 et 32), le mythe de Wègnon et les fédérations (p. 33), les généalogies (p. 34) et les funérailles (p. 36-38)."
+      },
+      {
+        "title": "General History of Africa, V, ch. 13: The states and cultures of the Upper Guinean coast",
+        "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de Christophe Wondji dans l'Histoire générale de l'Afrique de l'UNESCO, volume V dirigé par B. A. Ogot. Édition anglaise lue le 3 novembre 2026 dans la copie que publie South African History Online. Page 378 : « the Nidru of Toulepleu, a We group who originally lived in the savannah, were driven into the forest in the middle of the sixteenth century » ; page 381 : les Wè de Toulepleu « reached the Guiglo in the forest in the middle of the seventeenth century and the Cavally river in the late 1600s and early 1700s », suivis au XVIIIe siècle de migrations « from the south-west (Zibiao), the north-east (Zarabaon) and the north (Semien) »."
+      },
+      {
+        "title": "La vie quotidienne dans un village guéré",
+        "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-05/07959.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Livre d'Alfred Schwartz, Abidjan, INADES, 1975, lu dans le texte intégral publié par l'IRD le 11 octobre 2026. Condensé d'une thèse soutenue en Sorbonne en 1969, publiée en 1971 sous le titre Tradition et changements dans la société guéré."
+      },
+      {
+        "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+        "url": "https://archive.org/details/vocabulairescomp00delauoft",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Ouvrage de l'administrateur colonial Maurice Delafosse, Paris, Ernest Leroux, 1904, lu dans l'exemplaire numérisé d'archive.org le 3 novembre 2026 (pages 69 et 145)."
       },
       {
         "title": "Holsoe, Svend E. & Lauer, Joseph — Who Are the Kran/Guere and the Gio/Yacouba? African Studies Review 19(1), 1976",
         "url": "https://www.cambridge.org/core/journals/african-studies-review/article/who-are-the-kranguere-and-the-gioyacouba-ethnic-identifications-along-the-liberiaivory-coast-border/4E33CA4D6CDC5962A21AEE535A3E10AD",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "African Studies Review, vol. 19, n° 1, avril 1976, p. 139-150. Seul le premier paragraphe, en accès libre chez Cambridge University Press, a été lu le 3 novembre 2026."
+      },
+      {
+        "title": "Mémorandum du Comité de sauvegarde du patrimoine foncier wê",
+        "url": "https://connectionivoirienne.net/2013/03/27/exclusif-gueguerre-ouremi-frci-voici-le-rapport-confidentiel-qui-a-tout-gate/",
+        "tier": "unverified",
+        "source_kind": "community",
+        "notes": "Mémorandum d'élus, de cadres et de chefs traditionnels des régions du Cavally et du Guémon, publié par le site d'information Connectionivoirienne le 27 mars 2013, d'après Eventnews TV. Lu le 3 novembre 2026. Ce texte défend la cause des Wè dans un conflit foncier."
+      },
+      {
+        "title": "Joshua Project — Guere in Côte d'Ivoire",
+        "url": "https://joshuaproject.net/people_groups/11124",
+        "tier": "unverified",
+        "source_kind": "missionary_database",
+        "notes": "Base de données missionnaire, consultée le 3 novembre 2026 : « Population 564,000 », langue « We Southern », Guéré signalés en Côte d'Ivoire seulement."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Les Guéré sont un peuple de langue krou de l'ouest de la Côte d'Ivoire, autour de Duékoué et Guiglo, qui se nomme lui-même Wè ; le nom Guéré date de l'époque coloniale.",
+      "followUp": "Pourquoi l'administration coloniale a-t-elle séparé les Guéré des Wobé ?"
+    }
   }
 }
