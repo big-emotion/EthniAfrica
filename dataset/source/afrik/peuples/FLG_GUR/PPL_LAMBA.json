@@ -8,58 +8,63 @@
     "appellations": {
       "mainName": "Lamba",
       "selfAppellation": "Lama",
-      "exonyms": ["Lamba", "Namba", "Losso"],
-      "originOfExonyms": "Les Lamba se désignent eux-mêmes et désignent leur langue par le terme Lama. La forme Lamba est la transcription française introduite par l'administration coloniale allemande puis française et qui demeure en usage officiel au Togo et au Bénin. Le terme Namba est une variante régionale. L'appellation Losso a été attribuée par les coloniaux à tous les habitants du District de Doufelgou (dont les Lamba et les Nawdba), et les Lamba de cette zone sont encore fréquemment appelés Losso, bien que Lama et Losso soient des populations distinctes aux langues différentes.",
-      "whyProblematic": "La confusion entre Lamba (Lama) et Losso dans le District de Doufelgou résulte d'une classification coloniale erronée. Ces deux populations ont exercé une influence mutuelle mais leurs langues sont différentes et ne se ressemblent pas. Par ailleurs, les Lamba du Togo ne doivent pas être confondus avec les Lamba de la RDC (peuple Bantu distinct).",
-      "contemporaryUsage": "Les administrations togolaise et béninoise emploient Lamba. Les personnes concernées préfèrent Lama lorsqu'il est question de leur langue et de leur culture. Les recherches contemporaines distinguent ce peuple des Losso."
+      "exonyms": ["Losso"],
+      "spellingAliases": [],
+      "originOfExonyms": "Le nom Losso a été donné par des auteurs allemands au début de l'époque coloniale. L'ethnologue Leo Frobenius l'emploie en 1913 pour des cultivateurs de palmiers rencontrés à Pessidé, à Niamtougou et à Adjare, dans la région de Défalé. Il écrit que ce nom viendrait de la langue tem, celle des Kotokoli. L'administration coloniale a ensuite souvent appelé Losso à la fois les Lamba et leurs voisins nawdéba, selon les historiens réunis par Nicoué Lodjou Gayibor.",
+      "whyProblematic": "Le nom Losso met sous une seule étiquette deux peuples voisins, les Lamba et les Nawdéba. Les historiens réunis par Nicoué Lodjou Gayibor le jugent impropre, et Frobenius lui-même notait que ces groupes parlaient des langues assez différentes. Le nom Lamba prête aussi à confusion avec celui des Lamba de Zambie et de République démocratique du Congo : leur langue, bantoue, n'est pas le lama du Togo, selon le catalogue des langues Glottolog.",
+      "contemporaryUsage": "Seuls les groupes de la préfecture de la Kéran, autour de Kanté, se nomment eux-mêmes Lamba. Ceux de la préfecture de Doufelgou se désignent par le nom de leur groupement, comme Défalé, Kadjalla ou Alloum. Le nom Lamba sert pourtant à les désigner tous, selon les historiens réunis par Nicoué Lodjou Gayibor. Ces historiens donnent Lama et Lamba comme deux formes du pluriel d'un même mot, et appellent la langue lamin ; le catalogue Glottolog la nomme lama.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": ["Lamba", "Lama"],
     "origins": {
-      "ancientOrigins": "Les Lamba sont considérés comme autochtones de leur zone de résidence actuelle, descendants de l'ancien peuple Lama. Des mégalithes et des poteries anciennes attestent de leur présence très ancienne dans les montagnes du Togo et la vallée de la Kéran. Comme les Kabre voisins et apparentés, ils revendiquent une ascendance de l'ancien peuple Lama autochtone.",
-      "formationPeriod": "Peuplement ancien et stable dans les montagnes du nord Togo. La société Lamba se forme sans chef centralisé : avant la colonisation, il n'existait que des chefs rituels au niveau de chaque groupe familial, et des groupes de voisinage (tegu) formés pour la défense commune. Les classes d'âge constituent le principal mécanisme d'organisation collective.",
+      "ancientOrigins": "D'après leurs traditions, les Lamba seraient venus du massif de Lama Dessi, à Farendé, en pays kabiyè. Ils seraient passés par le pays nawda, autour de Niamtougou, puis par Défalé. Ils auraient trouvé sur place des habitants plus anciens, probablement des Dyè, qu'ils auraient repoussés ou assimilés : c'est pourquoi certains groupements se disent autochtones. Les historiens réunis par Nicoué Lodjou Gayibor rapportent ces traditions. Ils rattachent les Lamba à un peuplement ancien des montagnes du nord du Togo, marqué par un large usage de la pierre et par des langues du même groupe, du parler des Lamba jusqu'au délo.",
+      "formationPeriod": "Les historiens réunis par Gayibor pensent que les Lamba ont quitté Lama Dessi très tôt, avant que l'initiation et certains rituels du pays kabiyè n'y soient institués : ces rituels sont inconnus à Kanté. Pour l'historien N'Dah N'Dati, de l'université de Kara, les montagnes de Défalé sont le centre du peuplement lamba, où se serait formée une communauté de langue et de pratiques. Des querelles entre lignages, puis l'arrivée des Nawdéba, auraient ensuite dispersé les Lamba, qui fondent Kanté, Ataloté, Hélota et Pessidé, puis Korontière au Bénin, selon lui.",
       "migrationRoutes": [
-        "Migrations vers le sud du Togo le long de la route nationale No. 1 (axe Sokodé-Notsé) en quête de terres fertiles",
-        "Migration vers les capitales (Lomé, Cotonou) pour l'emploi salarié",
-        "Présence diasporique dans les régions Centrale et des Plateaux du Togo"
+        "De Lama Dessi, à Farendé, vers Défalé, en passant par le pays nawda autour de Niamtougou, selon les traditions rapportées par les historiens réunis par Nicoué Lodjou Gayibor",
+        "De Défalé et de ses environs vers Kanté et les autres groupements de la Kéran, selon les mêmes traditions",
+        "De Kanté vers Korontière, dans les monts de l'Atakora au Bénin, selon une des traditions recueillies par N'Dah N'Dati en 2023",
+        "Vers le sud du Togo à l'époque coloniale française : des Lamba de Kanté sont installés en 1928 à Rodokpé, au nord de Notsé, selon Nanbidou Dandonougbo"
       ],
       "historicalSettlementZones": [
-        "Centre et ouest du District de Kéran, région de Kara (nord du Togo)",
-        "Chaîne de Défalé, Monts du Togo",
-        "Parties occidentale et orientale du District de Doufelgou (Niamtougou : villages de Yaka et Agbandé)",
-        "Département de l'Atakora (autour de Boucoumbé) et Donga (Djougou, Bassila), nord du Bénin"
+        "Préfecture de la Kéran, au nord du Togo : groupements de Kanté, Ataloté, Pessidè et Helota",
+        "Préfecture de Doufelgou : groupements de Défalé, Kadjalla, Léon, Alloum, Pessidè, Yaka, Agbandè, Sarakawa et Namon",
+        "Monts et vallées de Défalé et leur piémont, au début de la plaine de l'Oti",
+        "Korontière, dans les monts de l'Atakora, au nord-ouest du Bénin"
       ],
-      "unificationsOrDivisions": "Les Lamba sont subdivisés en quatre groupes régionaux distincts. Les communautés de Lamba et de Losso sont souvent imbriquées géographiquement, source de confusion historique. La colonisation allemande puis française a introduit une hiérarchie de chefs qui intègre les communautés Lamba dans l'administration nationale togolaise.",
-      "externalInfluences": "Influence des coloniaux allemands (armée coloniale) puis français sur l'organisation politique (introduction d'une chefferie formelle). Présence missionnaire chrétienne. Pression d'islamisation limitée. Migrations économiques vers le sud du Togo et les capitales régionales ont diversifié les contacts culturels.",
-      "majorHistoricalEvents": "Présence dans les armées coloniales allemandes, britanniques et françaises. Après les indépendances, service dans les armées togolaise et béninoise. Introduction par les coloniaux allemands d'une hiérarchie de chefs reprise et développée par l'administration française, structurant les communautés dans l'administration nationale."
+      "unificationsOrDivisions": "Les Lamba ne forment pas une seule unité politique : chaque groupement porte son propre nom, et seuls ceux de la Kéran se nomment Lamba, selon les historiens réunis par Gayibor. Au Bénin, les Lamba de Korontière, minoritaires, ont adopté des coutumes de leurs voisins bèbèlbè et batɑ̃mmɑ̃riba. Certains rattachent désormais leurs ancêtres à ceux de ces voisins, ce que l'historien N'Dah N'Dati explique par des enjeux de terre et de nationalité.",
+      "externalInfluences": "Le fer produit dans le pays bassar était échangé jusqu'aux pays kabiyè et lamba ; des Lamba de Kpéssidé allaient le chercher au marché de Kabou, selon les historiens réunis par Gayibor. Des éléments venus de Kadjalla et d'Alloum se sont fondus dans le peuple bassar, selon les mêmes historiens. La chefferie, enfin, a été introduite par l'administration coloniale.",
+      "majorHistoricalEvents": "À Kanté, l'administration coloniale confie la chefferie au lignage Adjaradè ; le premier chef s'appelait Oussi Tessatè, et le pouvoir est resté depuis dans ce lignage, selon les historiens réunis par Gayibor. En 1927 et 1928, l'administration française déplace des Nawdéba de Baga et de Ténéga, puis des Lamba de Kanté, vers des terres inoccupées au nord de Notsé, dans le sud du Togo. Ils y fondent le village de Rodokpé, où les Lamba créent leur propre quartier, et entretiennent routes et voie ferrée, selon l'historien Nanbidou Dandonougbo."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Société égalitaire sans autorité politique centralisée avant la colonisation. Seuls des chefs rituels existaient au niveau de chaque groupe familial. Des groupes de voisinage (tegu) s'unissaient ponctuellement pour la défense ou l'attaque. La colonisation allemande, puis française, a introduit une hiérarchie de chefferie formelle qui intègre les communautés Lamba à l'administration nationale du Togo.",
-      "clanOrganization": "Descente patrilinéaire. Les homesteads (foyers) sont séparés les uns des autres par des champs, chaque famille constituant une unité économique autonome. L'organisation sociale est fortement influencée par les classes d'âge (age-sets).",
-      "roleOfLineages": "Les lignages patrilinéaires structurent l'héritage foncier, la transmission des droits et des responsabilités. La gestion des terres et les relations intrafamiliales relèvent des chefs de famille patrilinéaires.",
-      "religiousAuthority": "Pratiques animistes traditionnelles. Les chefs rituels familiaux gèrent les relations avec les ancêtres et les esprits. La religion traditionnelle reste majoritaire, avec une présence chrétienne significative dans les zones évangélisées."
+      "traditionalPoliticalSystem": "À Kanté, il n'y avait pas de pouvoir politique centralisé avant l'arrivée des colonisateurs. Il existait un chef de guerre et un chef religieux, et les chefs de famille réglaient les conflits entre les membres de leur communauté, selon les historiens réunis par Nicoué Lodjou Gayibor. La chefferie actuelle vient de l'administration coloniale.",
+      "clanOrganization": "Le peuplement de Kanté s'est fait par trois lignages, Adjaradè, Tarèdè et Teloudè, selon les historiens réunis par Gayibor. Les autres groupements, comme Réouté, Gnanté ou Atétou, disent venir de Défalé ou de ses environs.",
+      "ageClassSystems": "Les historiens réunis par Gayibor notent que l'initiation et certains rituels pratiqués en pays kabiyè sont inconnus à Kanté. L'historien N'Dah N'Dati écrit lui aussi que les Lamba ne connaissent pas ces rites d'initiation.",
+      "roleOfLineages": "Les lignages fondateurs gardent un rôle politique : le lignage Adjaradè détient la chefferie de Kanté depuis l'époque coloniale, selon Gayibor. Au Bénin, les lignages venus fonder Korontière se seraient fondus dans des groupes déjà présents, selon les traditions recueillies par N'Dah N'Dati.",
+      "religiousAuthority": "Avant la colonisation, un chef religieux existait à Kanté à côté du chef de guerre, selon les historiens réunis par Gayibor. À Korontière, au Bénin, l'historien N'Dah N'Dati a recueilli en 2023 les traditions de la communauté auprès de doyens-prêtres, d'anciens et de chasseurs."
     },
     "languages": {
-      "mainLanguage": "Lama",
+      "mainLanguage": "Lama (las)",
       "isoCodes": ["las"],
-      "dialects": [
-        "Parler du District de Kéran (Kanté)",
-        "Parler du District de Doufelgou (Niamtougou)",
-        "Parler de l'Atakora (Boucoumbé, Bénin)",
-        "Parler de la Donga (Djougou, Bénin)"
-      ],
-      "vehicularRole": "Le Lama est une collection de dialectes étroitement apparentés regroupés sous un même code ISO (lam). La langue la plus proche est le Kabiyé, parlé dans les districts de Kozah et Binah. Lama et Kabiyé sont classés dans le groupe Grusi oriental des langues Gur (Niger-Congo). Ce cluster linguistique (Lama, Kabiyé, Tem/Cotokoli, Bagou-Koussountou, Lukpa, Delo, Chala) représente 28% de la population du Togo, second groupe le plus parlé après le cluster Gbé. Le français (Togo) et l'anglais servent de langues officielles."
+      "dialects": ["Kandé (Kanté)", "Défalé", "Kadjalla"],
+      "vehicularRole": null
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q641349",
+      "glottocode": "lama1275",
+      "iso639_3": "las"
     },
     "culture": {
-      "majorRites": "Luttes traditionnelles (wrestling) pratiquées par les garçons de la première classe d'âge : pratique caractéristique des Lamba et des Kabre, connue dans tout le Togo. Les classes d'âge structurent les étapes de la vie sociale et rituelle. Cérémonies agricoles liées au mil et au sorgho. Rites funéraires et de deuil.",
-      "symbols": "La lutte traditionnelle est le symbole identitaire le plus fort. Le mil et le sorgho, base alimentaire, symbolisent la subsistance et la cohésion communautaire. Les mégalithes et poteries anciennes témoignent de l'ancienneté de la présence Lama.",
-      "artsAndMusic": "Statuettes Lamba mentionnées dans les collections anthropologiques ; utilisées principalement dans trois contextes rituels. Art de la parole et tradition orale. Brassage de bière épaisse de sorgho à faible teneur alcoolique (pratique culturale importante). Musique liée aux rites d'âge et aux cérémonies agricoles.",
-      "spiritualities": "Animisme traditionnel prépondérant. Culte des ancêtres. Chefs rituels au niveau familial gérant les relations avec les esprits. Présence chrétienne (catholique, protestante) croissante. Présence islamique minoritaire."
+      "majorRites": "Les Lamba installés à Rodokpé, comme leurs voisins nawdéba, tiennent les funérailles pour indispensables : le mort resterait près de son ancienne demeure si les rites n'étaient pas faits. Les restes des défunts âgés sont ramenés au village d'origine, à Kanté, pour qu'ils rejoignent les ancêtres protecteurs du lignage. Les funérailles ont lieu à la fin de la saison agricole, en janvier et en février, selon l'historien Nanbidou Dandonougbo, qui a interrogé des habitants de Rodokpé.",
+      "symbols": null,
+      "artsAndMusic": "La bière de sorgho que les Lamba appellent tchoukoutou est appréciée de leurs voisins éwé à Rodokpé. Les Lamba et les Nawdéba y sont aussi sollicités pour leur savoir-faire dans la couverture des toits, selon Nanbidou Dandonougbo.",
+      "spiritualities": "Les ancêtres tiennent une grande place dans la religion décrite à Rodokpé : les défunts âgés doivent rejoindre le groupe des ancêtres protecteurs du lignage, et les familles fixent la date des funérailles après avoir consulté les ancêtres, selon Nanbidou Dandonougbo."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Les Lamba n'ont pas constitué de royaumes centralisés. La société était fondée sur l'égalitarisme et les structures de défense coopérative entre villages voisins. La chefferie formelle est une création coloniale.",
-      "relationsWithNeighbors": "Voisinage étroit avec les Kabre (peuple apparenté, langue proche). Coexistence et influence mutuelle avec les Losso (Nawdba) du District de Doufelgou. Relations avec les Kotokoli (Tem) dans la région de Sokodé. Les Lamba ont migré vers les zones de peuplement d'autres groupes ethniques au sud du Togo.",
-      "conflictsOrAlliances": "Alliances défensives entre groupes de voisinage (tegu) contre des menaces extérieures. Participation aux armées coloniales allemandes, britanniques et françaises. Service post-indépendance dans les armées nationales togolaise et béninoise.",
-      "diaspora": "Migrations internes au Togo vers l'axe Sokodé-Notsé et vers Lomé. Diaspora à Cotonou (Bénin). Présence dans les zones frontalières du Ghana. Communautés diasporiques dans les régions Centrale et des Plateaux du Togo."
+      "kingdomsOrChiefdoms": "Les Lamba n'ont pas formé de royaume. À Kanté, la chefferie est une création de l'administration coloniale, confiée au lignage Adjaradè, selon les historiens réunis par Nicoué Lodjou Gayibor.",
+      "relationsWithNeighbors": "Les historiens réunis par Gayibor rangent les Lamba avec les Kabiyè, les Logba et les Kotokoli dans un même groupe de peuples apparentés. Les Lamba appellent Sola leurs voisins qui se nomment eux-mêmes Bitchambo, de part et d'autre de la rivière Kéran. Des noms de lieux konkomba, comme Nampoua, « forêt des Lamba », au nord de Guérin-Kouka, gardent peut-être le souvenir d'une ancienne présence lamba vers l'ouest, selon Robert Cornevin cité par ces historiens.",
+      "conflictsOrAlliances": "Au XVIIIe siècle, les ancêtres des Nawdéba, arrivés dans la plaine des monts Défalé, trouvent des populations d'origine lama, dont des Lamba, qu'ils repoussent ou assimilent au fil de conflits répétés, selon l'historien Banabia Longa. Certains Lamba, ceux d'Aloum, de Sarakawa, de Léon et de Pessidé, sont alors refoulés vers l'ouest, selon les historiens réunis par Gayibor. Selon une thèse de 2016 de S. M. Wembou citée par N'Dah N'Dati, les Tchokossi installés à Mango auraient aussi chassé des Lamba vers la région de Kanté ; les historiens réunis par Gayibor ne trouvent pas de confirmation de cette ancienne présence lamba jusqu'à Mango.",
+      "diaspora": "Une partie des Lamba a émigré vers les campagnes du centre et du sud-ouest du Togo, selon les historiens réunis par Gayibor. Des Lamba de Kanté ont été installés en 1928 par l'administration française à Rodokpé, à onze kilomètres au nord de Notsé. En 2016, ils formaient 23 % des 20 870 habitants du village, selon Nanbidou Dandonougbo, qui cite l'institut national de la statistique du Togo. Des migrants lamba ont aussi fondé Agodjololo, près d'Anié, dans le centre du pays, selon le même auteur. Ces communautés retournent à Kanté pour les funérailles."
     },
     "demography": {
       "totalPopulation": 451000,
@@ -68,11 +73,13 @@
       "distributionByCountry": [
         {
           "country": "TGO",
-          "population": 333000
+          "population": 333000,
+          "note": "Préfectures de la Kéran et de Doufelgou, dans la région de la Kara ; communautés dans le centre et le sud du pays"
         },
         {
           "country": "BEN",
-          "population": 114000
+          "population": 114000,
+          "note": "Monts de l'Atakora, notamment Korontière"
         },
         {
           "country": "GHA",
@@ -109,12 +116,65 @@
         "title": "Glottolog 5.3 — Lama (Togo) (lama1275)",
         "url": "https://glottolog.org/resource/languoid/id/lama1275",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde tenu par l'Institut Max-Planck d'anthropologie évolutionniste. Lu le 3 novembre 2026. Appui pour la langue : le lama (code las) y est classé parmi les langues gur, dans le groupe grusi oriental, avec trois dialectes, kandé, défalé et kadjala."
+      },
+      {
+        "title": "Histoire des Togolais, vol. I : Des origines à 1884",
+        "url": "https://archive.org/details/010010905",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "author": "Nicoué Lodjou Gayibor (dir.)",
+        "year": 1997,
+        "notes": "Lomé, Presses de l'Université du Bénin, 1997, édition définitive ; ouvrage collectif d'historiens de l'université de Lomé, lu dans une copie non officielle numérisée sur archive.org. Lu le 3 novembre 2026, p. 31-32, 38, 54, 75-76, 88, 95-107, 119, 133-138, 297 et 364. Appui pour les origines, l'organisation et les relations avec les voisins : les Lamba habitent les préfectures de la Kéran et de Doufelgou, seuls ceux de la Kéran se nomment Lamba (p. 105) ; leurs traditions les font venir de Lama Dessi par le pays nawda et Défalé (p. 105-106) ; à Kanté, « il n'y avait pas de pouvoir politique centralisé avant l'arrivée du colonisateur », mais un chef de guerre et un chef religieux, et la chefferie coloniale a été confiée au lignage Adjaradè (p. 107) ; des Lamba ont été refoulés vers l'ouest par les Nawdéba (p. 138)."
+      },
+      {
+        "title": "Und Afrika sprach…, vol. III : Unter den unsträflichen Äthiopen",
+        "url": "https://archive.org/details/bub_gb_9DY6AQAAMAAJ",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "author": "Leo Frobenius",
+        "year": 1913,
+        "notes": "Berlin, Vita Deutsches Verlagshaus, 1913 ; récit de l'ethnologue allemand Leo Frobenius, écrit pendant l'époque coloniale allemande au Togo. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive, chapitre XII « Die Losso », p. 348-350. Le texte porte des jugements méprisants de son époque sur les peuples décrits ; il n'est cité ici que pour le nom Losso. Appui pour l'histoire du nom Losso : l'auteur rencontre les « Losso » à Pessidé, à Niamtougou et à Adjare, dans la région de Défalé (p. 348), et écrit : « Die Bezeichnung Losso ist Tim-ursprungs », le nom Losso est d'origine tem (p. 350)."
+      },
+      {
+        "title": "Nanbidou Dandonougbo, « L'émigration nawdeba-lamba à Rodokpé pour le renforcement du programme colonial français (1928 à 1960) », 2022",
+        "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2022/04/Nanbidou-DANDONOUGBO.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "author": "Nanbidou Dandonougbo",
+        "year": 2022,
+        "notes": "Article d'un historien de l'université de Lomé, publié en avril 2022 sur la plateforme de revues de l'ACAREF, p. 364-378, fondé sur des entretiens à Rodokpé et sur les archives nationales du Togo. Lu le 3 novembre 2026. Appui pour les migrations, la diaspora et les rites funéraires : des Lamba de Kanté sont déplacés par l'administration française vers Rodokpé, où ils fondent leur quartier (p. 365 et 369) ; en 2016, le village compte 20 870 habitants, dont 23 % de Lamba (p. 367) ; les défunts âgés sont ramenés au village d'origine et les funérailles ont lieu en janvier et en février (p. 373-374) ; la bière de sorgho des Lamba se nomme tchoukoutou (p. 375)."
+      },
+      {
+        "title": "Banabia Longa, « La pierre sacrée, symbole de la puissance guerrière des Nawdeba de Siou (Nord-Togo) aux XVIIIe-XIXe siècles », 2025",
+        "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2025/12/5-Banabia-LONGA.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "author": "Banabia Longa",
+        "year": 2025,
+        "notes": "Article d'un historien de l'université de Lomé, publié en décembre 2025 sur la plateforme de revues de l'ACAREF, p. 95-107, fondé sur des documents écrits et des entretiens en pays nawda. Lu le 3 novembre 2026. Appui pour les conflits avec les Nawdéba : au XVIIIe siècle, les ancêtres des Nawdéba « trouvèrent à leur arrivée des populations d'origine lama (Lamba et Banatiba) qu'ils refoulèrent ou assimilèrent » (p. 95) ; certains Lamba seraient partis plus à l'ouest (p. 106-107)."
+      },
+      {
+        "title": "N'Dah N'Dati, « Les Lamba de Korontière : une inclusion allochtone dans le Kutãmmããku du XIXe siècle à 1914 », Ziglôbitha, n° 7, 2023",
+        "url": "https://www.ziglobitha.org/wp-content/uploads/2023/11/37-Art.-NDah-NDATI-pp.485-496.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "author": "N'Dah N'Dati",
+        "year": 2023,
+        "notes": "Article d'un historien de l'université de Kara (Togo), paru dans Ziglôbitha, revue de l'université Peleforo Gon Coulibaly de Korhogo, n° 7, octobre 2023, p. 485-496, fondé sur des entretiens menés à Korontière en août 2023. Lu le 3 novembre 2026. Appui pour les origines et la présence au Bénin : les traditions recueillies font venir les Lamba de Korontière de Lama Dessi ou de Kanté (p. 492-493) ; minoritaires, ils ont adopté des coutumes de leurs voisins (p. 493) ; en conclusion, l'auteur fait des montagnes de Défalé « l'épicentre du peuplement lamba » et note que les rites initiatiques du pays d'origine sont « inconnus par les Lamba » (p. 494)."
+      },
+      {
+        "title": "Glottolog 5.3 — Lamba (lamb1271)",
+        "url": "https://glottolog.org/resource/languoid/id/lamb1271",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde tenu par l'Institut Max-Planck d'anthropologie évolutionniste. Lu le 3 novembre 2026. Appui pour la distinction des deux peuples nommés Lamba : la langue lamba (code lam) de Zambie et de République démocratique du Congo y est classée parmi les langues bantoues, loin du lama du Togo."
       }
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Lamba désigne un peuple de langue gur du nord du Togo, aussi présent au Bénin et au Ghana, qui se nomme lui-même Lama. À l'époque coloniale, ses groupes ont souvent été confondus avec leurs voisins nawdéba sous le nom de Losso. On ne sait pas avec certitude d'où vient le nom Lamba ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Lamba désigne un peuple de langue gur du nord du Togo, aussi présent au Bénin, qui se nomme lui-même Lama ou Lamba. À l'époque coloniale, ses groupes ont souvent été confondus avec leurs voisins nawdéba sous le nom de Losso. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Lama",
@@ -146,6 +206,48 @@
                 "notes": "Lomé, Presses de l'Université du Bénin, 1997, édition définitive. Lu le 11 octobre 2026 dans une copie non officielle numérisée sur archive.org."
               }
             ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Nom de lieu non daté"
+            },
+            "statement": "Le nom Lama se retrouve dans Lama Dessi, « maison des Lama », le nom du massif de Farendé, en pays kabiyè, d'où la plupart des groupements de la région disent venir. Les historiens réunis par Nicoué Lodjou Gayibor y voient le berceau des Lama.",
+            "sources": [
+              {
+                "title": "Histoire des Togolais, vol. I : Des origines à 1884",
+                "author": "Nicoué Lodjou Gayibor (dir.)",
+                "year": 1997,
+                "url": "https://archive.org/details/010010905",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 96-97",
+                "notes": "Lomé, Presses de l'Université du Bénin, 1997, édition définitive. Lu le 11 octobre 2026 dans une copie non officielle numérisée sur archive.org."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1997,
+              "label": "1963-1997"
+            },
+            "era": "modern",
+            "statement": "Le nom Lama sert aussi aux historiens à désigner un ensemble plus large de peuples du nord du Togo, dont les Kabiyè, les Logba et les Lamba, qui rattachent leur origine au massif de Farendé. Ce sens a été créé en 1963 par Jean-Claude Froelich, selon les historiens réunis par Nicoué Lodjou Gayibor, qui le jugent commode mais discuté.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire des Togolais, vol. I : Des origines à 1884",
+                "author": "Nicoué Lodjou Gayibor (dir.)",
+                "year": 1997,
+                "url": "https://archive.org/details/010010905",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 95-96",
+                "notes": "Lomé, Presses de l'Université du Bénin, 1997, édition définitive. Lu le 11 octobre 2026 dans une copie non officielle numérisée sur archive.org, relu le 3 novembre 2026. Les auteurs citent J.-C. Froelich, Les populations du Nord-Togo, 1963 ; nous n'avons pas lu ce livre nous-mêmes."
+              }
+            ]
           }
         ]
       },
@@ -165,7 +267,7 @@
               "label": "1992-1997"
             },
             "era": "modern",
-            "statement": "Le nom Lamba n'est porté comme nom propre que par les groupes de la préfecture de la Kéran ; les autres se désignent par le nom de leur groupement, comme Défalé, Kadjalla ou Alloum, selon T. Gnama, cité par les historiens réunis par Nicoué Lodjou Gayibor. On ne sait pas avec certitude quand ce nom apparaît par écrit.",
+            "statement": "Le nom Lamba n'est porté comme nom propre que par les groupes de la préfecture de la Kéran ; les autres se désignent par le nom de leur groupement, comme Défalé, Kadjalla ou Alloum, selon T. Gnama, cité par les historiens réunis par Nicoué Lodjou Gayibor.",
             "aspect": "usage",
             "sources": [
               {
@@ -252,6 +354,56 @@
                 "source_kind": "academic",
                 "page": "p. 135",
                 "notes": "Lomé, Presses de l'Université du Bénin, 1997, édition définitive. Lu le 11 octobre 2026 dans une copie non officielle numérisée sur archive.org. Les auteurs citent Hupfeld, 1900, et Frobenius, 1913 ; nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Losso est écrit par l'ethnologue allemand Leo Frobenius pour des cultivateurs de palmiers qu'il rencontre à Pessidé, à Niamtougou et à Adjare, dans la région de Défalé. Il les trouve semblables partout, sauf par la langue.",
+            "formAsWritten": "Losso",
+            "actors": [
+              {
+                "name": "Leo Frobenius",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Und Afrika sprach…, vol. III : Unter den unsträflichen Äthiopen",
+                "author": "Leo Frobenius",
+                "year": 1913,
+                "url": "https://archive.org/details/bub_gb_9DY6AQAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 348",
+                "notes": "Berlin, Vita Deutsches Verlagshaus, 1913 ; récit de l'ethnologue allemand Leo Frobenius, écrit pendant l'époque coloniale allemande au Togo. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive, chapitre XII « Die Losso », p. 348-350. Le texte porte des jugements méprisants de son époque sur les peuples décrits ; il n'est cité ici que pour le nom Losso."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Proposée en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Losso viendrait de la langue tem, celle des Kotokoli, selon l'ethnologue allemand Leo Frobenius, qui ajoute que ces groupes n'ont pas de nom commun pour l'ensemble de leurs parents.",
+            "hypothesisGroup": "origine du nom Losso",
+            "sources": [
+              {
+                "title": "Und Afrika sprach…, vol. III : Unter den unsträflichen Äthiopen",
+                "author": "Leo Frobenius",
+                "year": 1913,
+                "url": "https://archive.org/details/bub_gb_9DY6AQAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 350",
+                "notes": "Berlin, Vita Deutsches Verlagshaus, 1913 ; récit de l'ethnologue allemand Leo Frobenius, écrit pendant l'époque coloniale allemande au Togo. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive, chapitre XII « Die Losso », p. 348-350. Le texte porte des jugements méprisants de son époque sur les peuples décrits ; il n'est cité ici que pour le nom Losso."
               }
             ]
           }
