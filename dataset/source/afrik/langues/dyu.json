@@ -195,6 +195,7 @@
       "scale": "EGIDS (Ethnologue)",
       "asOf": 2025
     },
+    "originDebated": true,
     "sources": [
       {
         "title": "Glottolog 5.3 — Dyula (dyul1238)",
@@ -237,7 +238,42 @@
         "tier": "unverified",
         "source_kind": "linguistic_reference",
         "notes": "Compilation en ligne dérivée des dictionnaires de Bailleul, Dumestre et Vydrin. Donne jula pour le commerçant et julakan pour la langue."
+      },
+      {
+        "title": "Cinquième Recensement général de la population et de l'habitation du Burkina Faso. Synthèse des résultats définitifs",
+        "url": "https://www.insd.bf/fr/file-download/download/public/2071",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Institut national de la statistique et de la démographie (INSD), Ouagadougou, juin 2022. Lu le 3 novembre 2026, section 3.3 et tableau 11, p. 47 : « Dioula (ou bambara) » est la principale langue couramment parlée de 5,7 % des 16 486 281 résidents de 3 ans ou plus recensés en 2019. Le recensement réunit le dioula et le bambara dans une même catégorie et ne compte qu'une langue principale par personne."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers.byCountry",
+        "reason": "Nous n'avons pas trouvé de chiffre officiel pour la Côte d'Ivoire ni pour le Mali. Les résultats publiés du recensement ivoirien de 2021 ne donnent pas de tableau des langues. Au Mali, le dioula est le plus souvent compté avec le bambara. Les enquêtes de Yaya Konaté auprès d'élèves et d'étudiants d'Abidjan donnent des pourcentages, mais pas un nombre de locuteurs pour le pays."
+      },
+      {
+        "field": "nameHistory.names[0].pronunciation",
+        "reason": "Nous n'avons pas encore trouvé de dictionnaire ou d'enregistrement qui donne la prononciation de julakan avec ses tons."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Une langue mandingue d'Afrique de l'Ouest, langue d'échange en Côte d'Ivoire et au Burkina Faso, que ses locuteurs appellent julakan.",
+      "followUp": "Pourquoi le mot jula veut-il dire « commerçant » ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "BFA",
+          "speakers": 939718,
+          "source": {
+            "title": "Cinquième Recensement général de la population et de l'habitation du Burkina Faso. Synthèse des résultats définitifs",
+            "url": "https://www.insd.bf/fr/file-download/download/public/2071",
+            "tier": "official",
+            "notes": "Notre calcul : 5,7 % des 16 486 281 résidents de 3 ans ou plus recensés en 2019, qui déclarent le dioula ou le bambara comme principale langue couramment parlée (tableau 11, p. 47). Le chiffre ne compte pas les personnes qui parlent le dioula comme deuxième langue. Il est donc plus bas que le nombre réel de personnes qui le parlent."
+          }
+        }
+      ]
+    }
   }
 }
