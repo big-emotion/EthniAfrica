@@ -4861,7 +4861,7 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // which it says to leave out until the fiche has been reviewed.
   // 5968 -> 5920 on 2026-10-19: ETNI-2135 records `spellingAliases` on 48
   // people fiches whose sources already attest those forms.
-  peuple: 5872,
+  peuple: 5864,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
