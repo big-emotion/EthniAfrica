@@ -10,12 +10,12 @@
   "nameFr": "Égyptien ancien",
   "nameEn": "Egyptian (Ancient)",
   "alternateNames": [],
-  "whyProblematic": "Selon l'article de Wikipédia, qui renvoie au dictionnaire d'Erman et Grapow (1926-1961), les Égyptiens appelaient leur langue r n km.t, « la parole de l'Égypte (Kemet) » ; km, « noir », renvoie aux terres noires et fertiles de la vallée du Nil. Le mot « égyptien » vient du grec Aígyptos, dont l'origine est discutée. Une explication relie ce nom à ḥwt-kꜣ-ptḥ, « le temple du ka de Ptah » (Ptah, dieu de Memphis ; le ka, une part spirituelle de la personne), un nom de Memphis, sans qu'un spécialiste soit cité. Strabon proposait « au-dessous de la mer Égée », que l'article présente comme une explication populaire. Une autre tradition le tire d'un roi légendaire, Aegyptus. Aucune n'est tranchée ici.",
+  "whyProblematic": "Les Égyptiens de l'Antiquité appelaient leur langue r n km.t, « la langue de l'Égypte », puis md.t km.t ; le mot km.t désigne « la terre noire et fertile », opposée au désert rouge, puis l'Égypte entière, selon le dictionnaire d'Erman et Grapow. Le mot « égyptien » vient du grec Aigyptos, dont l'origine est discutée. L'explication la plus répandue le tire de ḥw.t-kꜣ-ptḥ, « le temple du ka de Ptah », un sanctuaire de Memphis ; l'égyptologue Åke Engsheden rappelle qu'elle remonte à Heinrich Brugsch, en 1857, et qu'elle a ses critiques. Dans l'Antiquité, les Grecs expliquaient plutôt le nom par un roi légendaire, Aigyptos. Une explication attribuée en ligne au géographe Strabon, « au-dessous de la mer Égée », ne figure pas dans son œuvre, selon Engsheden.",
   "spellingAliases": [],
   "familyId": "FLG_AFROASIATIQUE",
   "peoples": [],
   "nameHistory": {
-    "summary": "Le nom égyptien ancien désigne la langue de l'Égypte des pharaons, dont le copte est la dernière forme. Le mot égyptien vient du grec. Les sources que nous avons lues ne donnent pas le nom que les Égyptiens de l'Antiquité donnaient à leur langue ; les chrétiens d'Égypte d'avant la conquête arabe se nommaient, eux, « les gens de la Terre noire ». L'origine du mot grec est discutée ; nous présentons plus bas l'explication que nous avons lue.",
+    "summary": "Le nom égyptien ancien désigne la langue de l'Égypte des pharaons, dont le copte est la dernière forme. Ceux qui la parlaient l'appelaient r n km.t, « la langue de l'Égypte », puis md.t km.t. Le mot égyptien vient du grec Aigyptos, dont l'origine est discutée ; nous présentons plus bas les explications proposées.",
     "names": [
       {
         "nameText": "Égyptien",
@@ -45,7 +45,8 @@
                 "page": "introduction",
                 "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. A145a-151b). L'auteur cite W. Vycichl (1983) et M. Krause (1979), que nous n'avons pas lus."
               }
-            ]
+            ],
+            "era": "modern"
           },
           {
             "period": {
@@ -53,7 +54,7 @@
               "to": null,
               "label": "Avant la conquête arabe"
             },
-            "statement": "Le nom égyptien n'était pas celui que se donnaient les chrétiens d'Égypte d'avant la conquête arabe : en copte sahidique, ils se disaient rmnkēme, « les gens de la Terre noire », la terre cultivable de la vallée du Nil, opposée aux déserts, selon Rodolphe Kasser. Pour l'Égypte des pharaons, les sources que nous avons lues ne donnent pas le nom de la langue.",
+            "statement": "Le nom égyptien n'était pas celui que se donnaient les chrétiens d'Égypte d'avant la conquête arabe : en copte sahidique, ils se disaient rmnkēme, « les gens de la Terre noire », la terre cultivable de la vallée du Nil, opposée aux déserts, selon Rodolphe Kasser.",
             "sources": [
               {
                 "title": "Language(s), Coptic, The Coptic Encyclopedia",
@@ -65,7 +66,8 @@
                 "page": "section sur le mot copte",
                 "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. A145a-151b). L'auteur cite W. Vycichl (1983) et M. Krause (1979), que nous n'avons pas lus."
               }
-            ]
+            ],
+            "era": "polity"
           },
           {
             "period": {
@@ -73,9 +75,8 @@
               "to": null,
               "label": "Antiquité grecque"
             },
-            "statement": "Le nom égyptien apparaît sous une forme proche, Aigyptioi, « les Égyptiens », dans l'Odyssée, le poème grec attribué à Homère, qui parle des beaux champs des hommes d'Égypte. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "statement": "Le nom égyptien apparaît comme nom d'un pays, Aigyptos, dans l'Odyssée, le poème grec attribué à Homère, qui parle des beaux champs des hommes d'Égypte. Chez Homère, le mot peut aussi désigner le Nil, selon Åke Engsheden.",
             "formAsWritten": "Αἰγυπτίων",
-            "birth": true,
             "sources": [
               {
                 "title": "Odyssée, chant XIV (texte grec)",
@@ -86,6 +87,40 @@
                 "source_kind": "archive",
                 "page": "chant XIV, vers 263",
                 "notes": "Lu le 11 octobre 2026 dans la Perseus Digital Library, université Tufts : « Αἰγυπτίων ἀνδρῶν περικαλλέας ἀγροὺς », « les beaux champs des hommes d'Égypte »."
+              },
+              {
+                "title": "An etymological safari to Aigyptos, Studien zur Altägyptischen Kultur, vol. 47",
+                "author": "Åke Engsheden",
+                "year": 2018,
+                "url": "https://content.e-bookshelf.de/media/reading/L-12020028-47ce3b2fb2.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 à 30, surtout p. 2, 4, 5 et 23",
+                "notes": "Hambourg, Helmut Buske, 2018. Lu le 3 novembre 2026 dans l'extrait mis en ligne par l'éditeur, qui contient l'article entier. L'auteur passe en revue toutes les explications proposées pour le nom grec de l'Égypte."
+              }
+            ],
+            "era": "polity"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Deuxième millénaire avant notre ère"
+            },
+            "era": "polity",
+            "statement": "Le nom égyptien a sa plus ancienne forme connue dans un nom de personne, ai-ku-pi-ti-jo, écrit en linéaire B sur une tablette de Cnossos, en Crète. Le mot désignait alors sans doute Memphis plutôt que l'Égypte, selon Åke Engsheden. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "formAsWritten": "ai-ku-pi-ti-jo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "An etymological safari to Aigyptos, Studien zur Altägyptischen Kultur, vol. 47",
+                "author": "Åke Engsheden",
+                "year": 2018,
+                "url": "https://content.e-bookshelf.de/media/reading/L-12020028-47ce3b2fb2.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 à 30, surtout p. 2, 4, 5 et 23",
+                "notes": "Hambourg, Helmut Buske, 2018. Lu le 3 novembre 2026 dans l'extrait mis en ligne par l'éditeur, qui contient l'article entier. L'auteur passe en revue toutes les explications proposées pour le nom grec de l'Égypte."
               }
             ]
           },
@@ -95,7 +130,7 @@
               "to": null,
               "label": "Origine non datée"
             },
-            "statement": "Le nom égyptien viendrait de ḥwt-kꜣ-ptḥ, « la maison du ka de Ptah », le nom du grand sanctuaire de Memphis, que les Grecs auraient étendu à tout le pays, selon Pierre du Bourguet et selon Rodolphe Kasser, qui s'appuie sur Werner Vycichl et Martin Krause.",
+            "statement": "Le nom égyptien viendrait de ḥw.t-kꜣ-ptḥ, « la maison du ka de Ptah », le nom du grand sanctuaire de Memphis, que les Grecs auraient étendu à la ville puis à tout le pays. C'est l'explication de Pierre du Bourguet et de Rodolphe Kasser. Åke Engsheden la présente comme la plus répandue, proposée par Heinrich Brugsch en 1857, et note que quelques chercheurs la contestent.",
             "hypothesisGroup": "origine du nom égyptien",
             "sources": [
               {
@@ -117,6 +152,243 @@
                 "source_kind": "academic",
                 "page": "section sur le mot copte",
                 "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. A145a-151b). L'auteur cite W. Vycichl (1983) et M. Krause (1979), que nous n'avons pas lus."
+              },
+              {
+                "title": "An etymological safari to Aigyptos, Studien zur Altägyptischen Kultur, vol. 47",
+                "author": "Åke Engsheden",
+                "year": 2018,
+                "url": "https://content.e-bookshelf.de/media/reading/L-12020028-47ce3b2fb2.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 à 30, surtout p. 2, 4, 5 et 23",
+                "notes": "Hambourg, Helmut Buske, 2018. Lu le 3 novembre 2026 dans l'extrait mis en ligne par l'éditeur, qui contient l'article entier. L'auteur passe en revue toutes les explications proposées pour le nom grec de l'Égypte."
+              }
+            ],
+            "era": "polity"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Antiquité grecque et romaine"
+            },
+            "era": "polity",
+            "statement": "Le nom égyptien viendrait d'un roi légendaire, Aigyptos, en latin Aegyptus : c'est l'explication que l'on donnait le plus souvent dans l'Antiquité, selon Åke Engsheden. Dans le mythe grec, ce roi est le frère jumeau de Danaos.",
+            "hypothesisGroup": "origine du nom égyptien",
+            "sources": [
+              {
+                "title": "An etymological safari to Aigyptos, Studien zur Altägyptischen Kultur, vol. 47",
+                "author": "Åke Engsheden",
+                "year": 2018,
+                "url": "https://content.e-bookshelf.de/media/reading/L-12020028-47ce3b2fb2.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 à 30, surtout p. 2, 4, 5 et 23",
+                "notes": "Hambourg, Helmut Buske, 2018. Lu le 3 novembre 2026 dans l'extrait mis en ligne par l'éditeur, qui contient l'article entier. L'auteur passe en revue toutes les explications proposées pour le nom grec de l'Égypte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -2575,
+              "to": 1400,
+              "label": "Vers 2575 avant notre ère jusqu'au XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom égyptien ancien réunit plusieurs états d'une même langue : l'ancien égyptien, écrit à partir de 2575 avant notre ère environ, selon James Allen ; le néo-égyptien, écrit de 1450 à 600 avant notre ère environ, selon Jean Winand ; puis le copte, écrit de 300 environ jusqu'au XIVe siècle, selon Tonio Sebastian Richter. Jean Winand ajoute que l'idée d'une suite bien ordonnée de cinq états ne tient plus.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Old Egyptian, UCLA Encyclopedia of Egyptology",
+                "author": "James P. Allen",
+                "year": 2015,
+                "url": "https://escholarship.org/uc/item/9h74h21k",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Lu le 3 novembre 2026 dans le dépôt eScholarship de l'université de Californie."
+              },
+              {
+                "title": "Late Egyptian, UCLA Encyclopedia of Egyptology",
+                "author": "Jean Winand",
+                "year": 2018,
+                "url": "https://escholarship.org/uc/item/3fr419rk",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 et 5",
+                "notes": "Lu le 3 novembre 2026 dans le dépôt eScholarship de l'université de Californie."
+              },
+              {
+                "title": "Coptic, UCLA Encyclopedia of Egyptology",
+                "author": "Tonio Sebastian Richter",
+                "year": 2023,
+                "url": "https://escholarship.org/uc/item/22r6s881",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Lu le 3 novembre 2026 dans le dépôt eScholarship de l'université de Californie."
+              },
+              {
+                "title": "Dialects in Pre-Coptic Egyptian, UCLA Encyclopedia of Egyptology",
+                "author": "Jean Winand",
+                "year": 2022,
+                "url": "https://escholarship.org/uc/item/8tr5w9nc",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Lu le 3 novembre 2026 dans le dépôt eScholarship de l'université de Californie. L'auteur est égyptologue à l'université de Liège."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "r n km.t",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "egy",
+        "namedBy": null,
+        "shortLine": "Le nom que les Égyptiens donnaient à leur langue : « la langue de l'Égypte », la terre noire.",
+        "periodLabel": "Écrit dès le Moyen Empire",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "era": "polity",
+            "statement": "Le nom r n km.t veut dire « la langue de l'Égypte ». Le mot km.t désigne d'abord « la terre noire et fertile », opposée au désert rouge, puis l'Égypte entière ; il est écrit depuis la fin de l'Ancien Empire, selon le dictionnaire d'Erman et Grapow.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Wörterbuch der ägyptischen Sprache, vol. V",
+                "author": "Adolf Erman et Hermann Grapow",
+                "year": 1926,
+                "url": "https://archive.org/details/WorterbuchDerAAgyptischenSpracheV.V",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 126 et 127, article km.t",
+                "notes": "Leipzig, J. C. Hinrichs, 1926. Lu le 3 novembre 2026 sur l'image des pages dans la numérisation d'Internet Archive. Dictionnaire de référence de l'égyptien ancien, préparé par l'Académie des sciences de Berlin."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Littérature du Moyen Empire"
+            },
+            "era": "polity",
+            "statement": "Le nom r n km.t figure dans le Conte de Sinouhé, quand un chef promet à Sinouhé qu'il entendra parler égyptien, selon Jean Winand. Le dictionnaire d'Erman et Grapow le range parmi les expressions de la littérature du Moyen Empire. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "rA n.t km.t",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dialects in Pre-Coptic Egyptian, UCLA Encyclopedia of Egyptology",
+                "author": "Jean Winand",
+                "year": 2022,
+                "url": "https://escholarship.org/uc/item/8tr5w9nc",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Lu le 3 novembre 2026 dans le dépôt eScholarship de l'université de Californie. L'auteur est égyptologue à l'université de Liège."
+              },
+              {
+                "title": "Wörterbuch der ägyptischen Sprache, vol. V",
+                "author": "Adolf Erman et Hermann Grapow",
+                "year": 1926,
+                "url": "https://archive.org/details/WorterbuchDerAAgyptischenSpracheV.V",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 126 et 127, article km.t",
+                "notes": "Leipzig, J. C. Hinrichs, 1926. Lu le 3 novembre 2026 sur l'image des pages dans la numérisation d'Internet Archive. Dictionnaire de référence de l'égyptien ancien, préparé par l'Académie des sciences de Berlin."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "md.t km.t",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "egy",
+        "namedBy": null,
+        "shortLine": "Un autre nom égyptien de la langue, « la parole de l'Égypte », en néo-égyptien.",
+        "periodLabel": "Néo-égyptien",
+        "accounts": [
+          {
+            "period": {
+              "from": -1450,
+              "to": -600,
+              "label": "Néo-égyptien, vers 1450 à 600 avant notre ère"
+            },
+            "era": "polity",
+            "statement": "Le nom md.t km.t désigne la langue égyptienne en néo-égyptien : le voyageur Ounamon demande s'il y a quelqu'un qui sait parler égyptien, selon Jean Winand. Pour lui, l'expression désignait sans doute l'égyptien en général, sous toutes ses formes parlées.",
+            "formAsWritten": "md.t km.t",
+            "sources": [
+              {
+                "title": "Dialects in Pre-Coptic Egyptian, UCLA Encyclopedia of Egyptology",
+                "author": "Jean Winand",
+                "year": 2022,
+                "url": "https://escholarship.org/uc/item/8tr5w9nc",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Lu le 3 novembre 2026 dans le dépôt eScholarship de l'université de Californie. L'auteur est égyptologue à l'université de Liège."
+              },
+              {
+                "title": "Late Egyptian, UCLA Encyclopedia of Egyptology",
+                "author": "Jean Winand",
+                "year": 2018,
+                "url": "https://escholarship.org/uc/item/3fr419rk",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 et 5",
+                "notes": "Lu le 3 novembre 2026 dans le dépôt eScholarship de l'université de Californie."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "mntrmnkēme",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "cop",
+        "namedBy": null,
+        "shortLine": "Le nom copte de la langue, « la parole des Égyptiens ».",
+        "periodLabel": "Copte",
+        "accounts": [
+          {
+            "period": {
+              "from": 300,
+              "to": 1400,
+              "label": "Copte, de 300 environ au XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom mntrmnkēme est un nom copte de la langue, « la parole des Égyptiens », selon Tonio Sebastian Richter. Le dictionnaire d'Erman et Grapow le donne comme suite des expressions égyptiennes plus anciennes.",
+            "formAsWritten": "ⲙⲛⲧⲣⲙⲛⲕⲏⲙⲉ",
+            "sources": [
+              {
+                "title": "Coptic, UCLA Encyclopedia of Egyptology",
+                "author": "Tonio Sebastian Richter",
+                "year": 2023,
+                "url": "https://escholarship.org/uc/item/22r6s881",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Lu le 3 novembre 2026 dans le dépôt eScholarship de l'université de Californie."
+              },
+              {
+                "title": "Wörterbuch der ägyptischen Sprache, vol. V",
+                "author": "Adolf Erman et Hermann Grapow",
+                "year": 1926,
+                "url": "https://archive.org/details/WorterbuchDerAAgyptischenSpracheV.V",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 126 et 127, article km.t",
+                "notes": "Leipzig, J. C. Hinrichs, 1926. Lu le 3 novembre 2026 sur l'image des pages dans la numérisation d'Internet Archive. Dictionnaire de référence de l'égyptien ancien, préparé par l'Académie des sciences de Berlin."
               }
             ]
           }
@@ -133,7 +405,12 @@
       "Middle Egyptian",
       "Old Egyptian"
     ],
-    "vitalityStatus": null,
+    "vitalityStatus": {
+      "status": "Extinct",
+      "scale": "EGIDS (Ethnologue)",
+      "asOf": 2025
+    },
+    "originDebated": true,
     "sources": [
       {
         "title": "Glottolog 5.3 - Egyptian (Ancient)",
@@ -155,7 +432,63 @@
         "tier": "unverified",
         "source_kind": "encyclopedia",
         "notes": "Article lu pour Kemet et pour les explications proposées du grec Aígyptos : ḥwt-kꜣ-ptḥ, l'explication de Strabon et le roi légendaire Aegyptus. L'article ne cite pas de spécialiste pour la première."
+      },
+      {
+        "title": "Wörterbuch der ägyptischen Sprache, vol. V",
+        "url": "https://archive.org/details/WorterbuchDerAAgyptischenSpracheV.V",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Leipzig, J. C. Hinrichs, 1926. Lu le 3 novembre 2026 sur l'image des pages dans la numérisation d'Internet Archive. Dictionnaire de référence de l'égyptien ancien, préparé par l'Académie des sciences de Berlin."
+      },
+      {
+        "title": "Dialects in Pre-Coptic Egyptian, UCLA Encyclopedia of Egyptology",
+        "url": "https://escholarship.org/uc/item/8tr5w9nc",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 dans le dépôt eScholarship de l'université de Californie. L'auteur est égyptologue à l'université de Liège."
+      },
+      {
+        "title": "Late Egyptian, UCLA Encyclopedia of Egyptology",
+        "url": "https://escholarship.org/uc/item/3fr419rk",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 dans le dépôt eScholarship de l'université de Californie."
+      },
+      {
+        "title": "Coptic, UCLA Encyclopedia of Egyptology",
+        "url": "https://escholarship.org/uc/item/22r6s881",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 dans le dépôt eScholarship de l'université de Californie."
+      },
+      {
+        "title": "Old Egyptian, UCLA Encyclopedia of Egyptology",
+        "url": "https://escholarship.org/uc/item/9h74h21k",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 dans le dépôt eScholarship de l'université de Californie."
+      },
+      {
+        "title": "An etymological safari to Aigyptos, Studien zur Altägyptischen Kultur, vol. 47",
+        "url": "https://content.e-bookshelf.de/media/reading/L-12020028-47ce3b2fb2.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Hambourg, Helmut Buske, 2018. Lu le 3 novembre 2026 dans l'extrait mis en ligne par l'éditeur, qui contient l'article entier. L'auteur passe en revue toutes les explications proposées pour le nom grec de l'Égypte."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.vehicularRole",
+        "reason": "Nous n'avons pas trouvé de source qui décrive l'usage de l'égyptien ancien comme langue d'échange avec d'autres peuples."
+      },
+      {
+        "field": "content.speakers.byCountry",
+        "reason": "L'égyptien ancien n'a plus de locuteurs : Glottolog la classe comme langue éteinte, au niveau 10 de l'échelle EGIDS."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "La langue de l'Égypte des pharaons, que ses locuteurs appelaient r n km.t, « la langue de la terre noire », et dont le copte est la dernière forme.",
+      "followUp": "D'où vient le mot grec qui a donné « Égypte » ?"
+    }
   }
 }
