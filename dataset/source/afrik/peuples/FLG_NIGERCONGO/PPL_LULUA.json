@@ -7,83 +7,93 @@
     "appellations": {
       "mainName": "Lulua",
       "selfAppellation": "Bena-Lulua",
-      "exonyms": [
-        "Luba",
-        "Lulua",
-        "Lulua (terme geographique tire de la riviere Lulua)",
-        "Luluwa (variante orthographique)",
-        "Bena-Lulua (litteralement 'gens de la Lulua')",
-        "Luba-Lulua (designation ISO 639)"
-      ],
-      "originOfExonyms": "Le nom Bena-Lulua (ou Luluwa) fait reference a la riviere Lulua, affluent du Kasai, dans la vallee de laquelle vit principalement ce groupe. Le terme Lulua fut adopte par les administrateurs coloniaux belges pour distinguer ce sous-groupe luba occidental des Baluba orientaux du Kasai-Oriental. Dans la classification ISO 639, le terme officiel est Luba-Lulua (L31b), variant occidental du Tshiluba.",
-      "contemporaryUsage": "Les membres de ce groupe se designent comme Bena-Lulua ou Luluwa, distincts des Baluba du Kasai-Oriental. Ils partagent la langue tshiluba mais avec un dialecte distinct (Cena-Luluwa/L31b). Dans le contexte politique congolais post-independence, les Lulua et les Luba formerent deux factions distinctes lors des violences de 1959-1960. Aujourd'hui, cette distinction est toujours reconnue socialement et politiquement.",
+      "exonyms": ["Lulua", "Bashilange", "Tushilange", "Baluba", "Luba-Lulua"],
+      "originOfExonyms": "Lulua est aussi le nom d'une rivière du Kasaï. En 1906, le missionnaire William M. Morrison écrit que les noms Baluba et Lulua ont été donnés à ces peuples de l'extérieur : entre eux, les gens se désignent alors par le nom de leur clan. Le nom Bashilange a une autre histoire. Selon les sujets du chef Kalamba, cités par Hermann Wissmann et ses compagnons en 1888, il viendrait de surnoms échangés lors de querelles anciennes, et les Chokwe en auraient tiré la forme Tushilange. Aujourd'hui, Glottolog appelle leur langue luba-lulua.",
+      "contemporaryUsage": "Les auteurs écrivent aujourd'hui Lulua ou Luluwa. La Bibliothèque nationale de France retient Lulua et relève aussi Bena Lulua, Beena Luluwa, Luluwa et Louloua, entre autres formes. Glottolog appelle la langue luba-lulua et y distingue deux dialectes, le baluba et le bena lulua. Dans un article de 1995, Kalala J. Ngalamulume observe qu'à Kananga, les Luluwa se partagent en deux groupes, les Bakwa Katawa et les Bena Mutombo.",
       "linguisticFamily": "FLG_NIGERCONGO",
-      "ethnoLinguisticGroup": "Bantou (Zone L, L31b — dialecte occidental du groupe luban)",
-      "historicalRegion": "Vallee de la riviere Lulua, Kasai-Occidental (actuel Kasai-Central) — Province de Kananga, RDC",
+      "ethnoLinguisticGroup": "Bantou, groupe luba du Kasaï (Glottolog : branche Luban, sous-groupe Bangubangu-Kasai)",
+      "historicalRegion": "Vallée de la rivière Lulua, autour de Kananga, au Kasaï-Central (RDC)",
       "currentCountries": ["COD"],
-      "spellingAliases": ["Luluwa"]
+      "spellingAliases": [
+        "Luluwa",
+        "Bena Luluwa",
+        "Beena Luluwa",
+        "Louloua",
+        "Loulouwa",
+        "Luluas",
+        "Shilange"
+      ],
+      "whyProblematic": "Le nom Bashilange pose problème : Kalamba et ses sujets le tenaient pour une insulte, écrivent Hermann Wissmann et ses compagnons en 1888. Le nom Lulua est lui aussi discuté. Pour l'historien Kalala J. Ngalamulume, l'administration coloniale n'a pas créé ce groupe de toutes pièces, mais elle a mis en place des institutions qui ont élargi une identité plus ancienne à un ensemble plus grand. En 2019, le même historien rappelle que l'administration belge opposait des « Luba » jugés « ouverts à la civilisation » à des « Lulua » qui avaient résisté à la conquête et qu'elle tenait à l'écart.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Bena-Lulua proprement dits — groupe central de la vallee de la Lulua (Kasai-Central)",
-      "Bena-Mpukaa — sous-groupe du Kasai-Central dont le dialecte fut base du tshiluba standard",
-      "Bena-Cimbala — sous-groupe de la region de Kananga",
-      "Bena-Tshibala — groupe apparente du sud Kasai-Central",
-      "Populations de transition Lulua-Kuba — en bordure du royaume Kuba au nord"
+      "Bakwa Katawa — l'un des deux groupes entre lesquels les Luluwa de Kananga se partagent dans les années 1980, selon Kalala J. Ngalamulume",
+      "Bena Mutombo — l'autre de ces deux groupes, selon le même historien",
+      "Bena Kapuku, Bena Mande, Bena Mukadi et Bena Mukangala — clans qui descendent de Mande Katawa et entourent Kananga",
+      "Bakwa Mushilu — groupe du chef Mwamba Mputu, rival de Kalamba à la fin du XIXe siècle"
     ],
     "origins": {
-      "ancientOrigins": "Les Bena-Lulua sont une branche du grand ensemble Luba-Kasai etablie dans la vallee de la riviere Lulua, dans l'actuel Kasai-Central. Comme l'ensemble des Luba-Kasai, ils descendent des populations bantoues luban qui migrerrent depuis le Katanga-Upemba vers le Kasai a partir du 15e siecle. La riviere Lulua constitue leur axe geographique et identitaire principal. Leur dialecte (Cena-Luluwa, L31b) se distingue du dialecte oriental (Buluba, L31a) principalement par les tons, l'intonation et certaines voyelles finales.",
-      "formationPeriod": "L'identite Lulua distincte se consolida progressivement entre le 17e et le 19e siecle, sous l'influence des contacts avec les peuples voisins (Kuba, Pende, Chokwe) et de l'organisation en chefferies autonomes. L'arrivee des missions catholiques et protestantes dans le Kasai des les annees 1880-1890 differencia les trajectoires des Lulua et des Baluba orientaux. Lors de la decolonisation (1959-1960), les Lulua s'opposerent violemment aux Baluba du Kasai-Oriental, percus comme concurrents pour les postes administratifs.",
+      "ancientOrigins": "Les Lulua font partie de l'ensemble luba. Selon la notice de l'Encyclopaedia Africana consacrée au chef Mukenge a Tunsele, des Luba venus du Shaba, l'actuel Katanga, ont migré vers le Kasaï, et certains se sont établis dans la vallée de la Lulua, près de l'actuelle Kananga. Valentine Kanyinda Muyumba situe le berceau des Luba dans les marais des lacs Upemba et Kisale. Nous n'avons pas trouvé de source qui date l'arrivée des ancêtres des Lulua dans la vallée.",
+      "formationPeriod": "L'identité lulua se forme au XIXe siècle. Selon l'Encyclopaedia Africana, les Luba de la Lulua s'imposent alors à leurs voisins grâce aux fusils et au commerce avec l'Angola. À la fin du siècle, les Lulua sont reconnus comme un groupe distinct. Au milieu du siècle, des fumeurs de chanvre fondent la communauté du Lubuku, mot que Hermann Wissmann traduit par « pays de l'amitié ». Le chef Kalamba Mukenge et sa sœur Sangula Meta font de ce culte une sorte de religion d'État pour unir leurs sujets, écrivent Wissmann et ses compagnons en 1888. En 1906, le missionnaire William M. Morrison note pourtant qu'il n'existe pas d'unité entre les clans. Pour l'historien Kalala J. Ngalamulume, l'administration coloniale a ensuite élargi cette identité à un ensemble plus grand.",
       "migrationRoutes": [
-        "Migration depuis le Katanga-Upemba vers le bassin du Kasai (15e-17e siecles)",
-        "Etablissement dans la vallee de la Lulua comme territoire principal",
-        "Migrations de travail vers Kananga (chef-lieu du Kasai-Central) aux 20e-21e siecles"
+        "Migration de Luba venus du Shaba (Katanga) vers le Kasaï, puis installation d'une partie d'entre eux dans la vallée de la Lulua, selon l'Encyclopaedia Africana",
+        "Installation de plusieurs milliers de Lulua, venus du sud et de l'est, autour de la mission presbytérienne de Luebo, selon William M. Morrison en 1906",
+        "Repli du chef Kalamba en 1891 à environ 80 km au sud-ouest de Luluabourg, au-delà de la rivière Miao, puis au-delà de la rivière Kasaï après 1896, selon l'Encyclopaedia Africana"
       ],
       "historicalSettlementZones": [
-        "Vallee de la riviere Lulua, Kasai-Central — territoire historique core",
-        "Region de Kananga — principal centre urbain",
-        "Secteurs ruraux du Kasai-Central (Dimbelenge, Tshikapa vers l'ouest)"
+        "Vallée de la rivière Lulua, près de l'actuelle Kananga",
+        "Mukenge, résidence du chef Kalamba, sur la ligne de partage des eaux entre le Mujau et la Lulua, décrite en 1888 avec environ 800 cases",
+        "Région de Luebo, au confluent de la Lulua et de la Luebo, au début du XXe siècle",
+        "Kananga, l'ancienne Luluabourg, et les clans qui l'entourent"
       ],
-      "unificationsOrDivisions": "Les Lulua ne formerent jamais un etat centralise mais s'organiserent en chefferies. Leur conflit avec les Baluba du Kasai-Oriental (1959-1960) resulta en une segregation residuelle persistante entre les deux communautes. Des violences inter-ethniques recurrirent lors du conflit du Kasai (2016-2018). Les deux communautes partagent la langue tshiluba mais maintiennent des identites sociales distinctes.",
-      "externalInfluences": "Contacts avec le Royaume Kuba (Bushong) au nord. Relations commerciales avec les Chokwe et Pende a l'ouest. Influence des missions catholiques (Peres Oblats de Marie Immaculee) et protestantes (American Presbyterian Congo Mission). Colonisation belge et administration centralisee de Kananga (Luluabourg). Independence du Congo (1960) et conflits politiques lies a la representation des groupes dans les institutions."
+      "unificationsOrDivisions": "Au début des années 1880, le chef Kalamba Mukenge a soumis les chefs voisins et leur a imposé un tribut, écrivent Hermann Wissmann et ses compagnons. Selon l'Encyclopaedia Africana, Wissmann ordonne ensuite à tous les chefs lulua de jurer obéissance à Kalamba et de lui payer tribut. Au moment de l'indépendance, le conflit entre Lulua et Luba conduit à partager la province du Kasaï en deux, selon Kalala Ngalamulume. Dans les années 1980, les Luluwa de Kananga se partagent à leur tour en deux groupes, les Bakwa Katawa et les Bena Mutombo, observe le même historien.",
+      "externalInfluences": "Au milieu du XIXe siècle, des marchands chokwe venus d'Angola apportent des fusils, et Kalamba cherche à entrer dans le commerce avec l'Angola, selon l'Encyclopaedia Africana. Les voyageurs allemands Paul Pogge et Hermann Wissmann arrivent chez Kalamba en 1881. Wissmann revient en 1884 au service de l'Association internationale du Congo et fonde le poste de Luluabourg, l'actuelle Kananga, sur la rive gauche de la Lulua. La mission presbytérienne américaine s'installe à Luebo, où viennent vivre de nombreux Lulua, écrit William M. Morrison en 1906. Plus tard, selon Kalala Ngalamulume, les politiques de l'administration belge et des missions contribuent à faire du nom Lulua une identité politique.",
+      "majorHistoricalEvents": "En octobre 1881, les voyageurs Paul Pogge et Hermann Wissmann arrivent chez le chef Kalamba. En 1884, Wissmann fonde le poste de Luluabourg près de Mukenge, la résidence de Kalamba. À partir de 1891, Kalamba et ses alliés chokwe combattent les troupes de l'État indépendant du Congo. Après une dernière bataille en juillet 1896, il se replie au-delà de la rivière Kasaï, où il meurt en 1898. Son fils Tshisungu Kalamba attaque en 1906 un dépôt de la Compagnie du Kasaï, puis rentre sur ses terres en 1909. En 1952 naît l'association des Lulua Frères. Le conflit entre Lulua et Luba contribue en 1960 à la sécession du Sud-Kasaï, et le gouvernement central reprend le contrôle de tout le Kasaï en décembre 1961."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Organisation en chefferies (chefferie dirigee par un mfumu). Chaque chefferie est autonome et gouvernee par un conseil de notables. L'organisation est moins centralisee que chez les Luba-Katanga. Les notables (bafulumuka) assistent le chef dans les decisions importantes. Le systeme de gouvernance traditionnel coexiste avec les structures administratives de l'Etat congolais.",
-      "clanOrganization": "Les Bena-Lulua sont organises en clans (bena) patrilineaires, chacun nomme d'apres un ancetre commun ou un lieu fondateur. L'exogamie clanique est la regle : le mariage au sein du meme clan est interdit. Les solidarites claniques jouent un role central dans la vie economique, sociale et en cas de conflits.",
-      "ageClassSystems": null,
-      "roleOfLineages": "Les lignages (dikanda) structurent les droits fonciers, les obligations matrimoniales et les responsabilites rituelles. Le chef de lignage (mfumu wa dikanda) est responsable de la mediation interne et de la representation du groupe dans les affaires publiques. Les relations de parenté par alliance matrimoniale tissent un reseau d'obligations reciproques entre lignages.",
-      "religiousAuthority": "Les devins-guerisseurs (Nganga) detiennent une autorite spirituelle dans la tradition. Le culte des ancetres (Bankambo) est central. Le christianisme catholique (via les Oblats) et protestant est predominant. Des mouvements synchretiques afro-chretiens et eglises de reveil sont presents dans la region de Kananga."
+      "traditionalPoliticalSystem": "En 1906, le missionnaire William M. Morrison écrit qu'il n'existe pas d'unité entre les Lulua : leurs villages et leurs clans vivent plus ou moins isolés. Au XIXe siècle, le chef Kalamba Mukenge bâtit pourtant un pouvoir plus large, le Lubuku. Selon Hermann Wissmann et ses compagnons, il y fixe des règles de propriété, punit le meurtre de mort et laisse circuler librement les marchands étrangers. Selon l'Encyclopaedia Africana, tous les Lulua lui paient ensuite un tribut annuel.",
+      "clanOrganization": "Les Lulua se répartissent en clans. En 1906, William M. Morrison écrit qu'à Luebo, les Baluba et les Lulua se désignent entre eux par le nom de leur clan, comme Bakua Kaloshi, Bakua Chimanga ou Bakua Temba, et que la langue varie d'un clan à l'autre. Kalala J. Ngalamulume nomme d'autres clans, les Bena Kapuku, Bena Mande, Bena Mukadi et Bena Mukangala, qui descendent de Mande Katawa. Le mot bena signifie « habitants de », selon le dictionnaire de Morrison. Nous n'avons pas trouvé de source qui dise si l'appartenance au clan se transmet par le père ou par la mère.",
+      "ageClassSystems": "Nous n'avons pas trouvé de source qui décrive des classes d'âge chez les Lulua.",
+      "roleOfLineages": "Les lignages comptent dans la mémoire du pouvoir. Selon Kalala J. Ngalamulume, les descendants de Mande Katawa, ceux de Ntiite Maloba et ceux de Muena Mushilu forment le « centre » du groupe, autour de Kananga. Les clans plus éloignés de la ville forment la « périphérie ». Le chef Mukenge a Tunsele, dit Kalamba, appartenait au clan des Bena Kashyye, selon l'Encyclopaedia Africana.",
+      "religiousAuthority": "Au XIXe siècle, le culte du chanvre, le riamba, donne une autorité religieuse au pouvoir de Kalamba. Selon Hermann Wissmann et ses compagnons, sa sœur Sangula Meta en est la prêtresse la plus ardente, et Kalamba fait brûler en public les anciens objets rituels. En 1906, le dictionnaire de William M. Morrison appelle muena lubuku le devin, celui qui consulte le lubuku, un objet servant à la divination. Au début du XXe siècle, la mission presbytérienne américaine de Luebo diffuse le christianisme parmi les Lulua."
     },
     "languages": {
-      "mainLanguage": "Tshiluba — dialecte Cena-Luluwa (variante occidentale)",
+      "mainLanguage": "Tshiluba, ou luba-lulua (lua)",
       "isoCodes": ["lua"],
       "dialects": [
-        "Cena-Luluwa (L31b) — dialecte occidental, specifique aux Bena-Lulua du Kasai-Central",
-        "Cena-Kananga — sous-variante de la region de Kananga",
-        "Tshiluba standard (base Cikwa-diishi + Cena-Mpuka) — koine utilisee dans les medias et l'education"
+        "Bena Lulua — l'un des deux dialectes que Glottolog distingue dans le luba-lulua (bena1263)",
+        "Baluba — l'autre dialecte distingué par Glottolog (balu1255)"
       ],
-      "vehicularRole": "Les Bena-Lulua parlent le dialecte Cena-Luluwa du tshiluba (L31b), qui se distingue du dialecte oriental L31a par les tons, l'intonation et certaines voyelles finales, mais les deux variantes sont mutuellement intelligibles. Le tshiluba standardise (base sur les deux dialectes) est la langue nationale des provinces du Kasai. Dans les zones rurales du Kasai-Central, le dialecte Lulua est dominant."
+      "vehicularRole": "Les Lulua parlent le tshiluba, que Glottolog appelle luba-lulua. En 1906, William M. Morrison note de légères différences de vocabulaire et de prononciation entre les Baluba et les Lulua, mais il réunit leurs parlers sous un seul nom. Le tshiluba est l'une des quatre langues nationales de la République démocratique du Congo, rappelle Valentine Kanyinda Muyumba."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q3267264",
+      "glottocode": "luba1249",
+      "iso639_3": "lua"
     },
     "culture": {
-      "majorRites": "Rites d'initiation masculine et feminine. Ceremonies de mariage avec dot en nature (betail, biens). Consultations de divination (Lubuko) par le Nganga. Funerailles avec periodes de deuil communautaire. Rites de protection et de benediction du territoire. Ceremonies de premiere recolte et de premier labour. Rites d'investiture des chefs de chefferie.",
-      "symbols": "La riviere Lulua comme symbole geographique identitaire. La ville de Kananga (ex-Luluabourg), capitale du Kasai-Central, comme centre politique et demographique. Les instruments de forge en fer comme symboles d'autorite traditionnelle. Les tissus traditionnels et la poterie.",
-      "artsAndMusic": "Sculpture sur bois (statues, masques, appuie-tetes). Poterie traditionnelle. Chants et danses lors des ceremonies de mariage, d'investiture et de deuil. Tissage de nattes et paniers. Tradition orale de contes (bisamba), proverbes et chants epiques. La Missa Luba (chef-d'oeuvre choral de 1958 compose avec des chanteurs luba-kasai) illustre la creativite musicale de l'ensemble du groupe luba-kasai.",
-      "spiritualities": "Religion traditionnelle : venerations des ancetres (Bankambo), croyance en Shakapanga (Createur) et Leza (Etre supreme). La divination (Lubuko) par le Nganga est pratiquee couramment. Le christianisme catholique est tres ancre depuis la periode coloniale. Des Eglises protestantes (presbyteriennes) sont actives. Un syncretisme entre traditions ancestrales et pratiques chretiennes est courant dans la vie quotidienne."
+      "majorRites": "Les rites les mieux décrits sont ceux du culte du chanvre au XIXe siècle. Hermann Wissmann et ses compagnons décrivent la danse du riamba, dansée aux fêtes, pendant les expéditions guerrières et presque chaque jour. Une danse de nuit a lieu à la pleine lune pour que les récoltes poussent. Pour entrer parmi les Bena-Riamba, le nouveau venu confesse en public toutes ses fautes. Les alliances d'amitié se concluent autour de la pipe à chanvre. Nous n'avons pas trouvé de source qui décrive les autres rites, comme l'initiation, le mariage ou les funérailles.",
+      "symbols": "Dans le culte de Kalamba, le chanvre est le « symbole sacré de la paix et de l'amitié », écrivent Hermann Wissmann et ses compagnons. La pipe à chanvre, faite d'une grande calebasse, accompagne l'homme en voyage et à la guerre. Les partisans de Kalamba se saluent par le mot mojo, qui veut dire « vie et santé ». La rivière Lulua porte le même nom que le peuple et que l'ancienne Luluabourg.",
+      "artsAndMusic": "Les Luluwa sont connus pour leurs statues d'hommes et de femmes finement sculptées, leurs masques et leurs arts décoratifs, selon la présentation du livre de Constantine Petridis, paru en 2018. Cet art serait né, sans doute, dans la seconde moitié du XIXe siècle. En 1888, Hermann Wissmann et ses compagnons décrivent la danse du riamba, au son de grands tambours frappés du plat de la main. La bibliographie de Valentine Kanyinda Muyumba recense un disque d'enregistrements faits en 1952 et 1957 qui comprend de la musique luluwa.",
+      "spiritualities": "En 1906, William M. Morrison écrit que les Bena Lulua ont l'idée d'un Être suprême qui crée le monde, sans lui rendre de culte. Il donne son nom sous la forme « Nfidi Mukulu ». Le mot Nzambi, venu du bas Congo, est alors adopté par les missionnaires pour dire Dieu. Au XIXe siècle, le culte du chanvre de Kalamba remplace par la force les anciens objets rituels. Le chanvre devient un moyen de protection contre tous les maux, selon Hermann Wissmann et ses compagnons. Au XXe siècle, le christianisme se diffuse depuis les missions, comme celle de Luebo."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Les Bena-Lulua s'organiserent en chefferies independantes sans former d'empire. La chefferie est l'unite politique de base. Sous la colonisation belge, Kananga (Luluabourg) devint le principal centre administratif du Kasai et polarisa la rivalite Lulua-Luba. La denomination Luluabourg fait directement reference au fleuve Lulua et symbolise la presence lulua dans cette ville.",
-      "relationsWithNeighbors": "Relations etroites avec les Luba-Kasai orientaux (langue commune, mais tensions identitaires). Contacts avec le Royaume Kuba (Bushong) au nord. Relations commerciales avec les Pende et Chokwe a l'ouest. Tensions recurrentes avec les Baluba de Kasai-Oriental autour des ressources administratives et economiques.",
-      "conflictsOrAlliances": "Conflit Luba-Lulua (1959-1960) : violences inter-ethniques majeures au moment de l'independance du Congo, causees par des tensions autour des postes administratifs et de la representation politique. Des dizaines de milliers de personnes furent deplacees. Ce conflit contribua a l'instabilite de la premiere republique congolaise. Nouvelles tensions lors du conflit du Kasai (2016-2018) qui impliqua egalement les communautes lulua.",
-      "diaspora": "Presence lulua a Kananga, Mbuji-Mayi et Kinshasa. La diaspora internationale est concentree principalement en Belgique et en France, issue des migrations academiques et des vagues de refugies des crises successives. Des communautes lulua sont presentes dans plusieurs pays occidentaux."
+      "kingdomsOrChiefdoms": "Au XIXe siècle, le chef Kalamba Mukenge bâtit autour de sa résidence de Mukenge un pouvoir appelé Lubuku, « pays de l'amitié », selon Hermann Wissmann et ses compagnons. Selon l'Encyclopaedia Africana, Kalamba, de son nom Mukenge a Tunsele, devient vers 1875 une figure majeure parmi les Lulua. Avec l'appui de Wissmann, il étend son autorité à tous les chefs lulua, qui lui paient tribut. L'État indépendant du Congo le chasse de ses terres en 1891. Luluabourg, fondée près de Mukenge en 1884, devient plus tard la capitale de la province du Kasaï.",
+      "relationsWithNeighbors": "Les Lulua vivent au contact des Luba, dont ils partagent la langue. En 1906, William M. Morrison réunit leurs parlers sous le nom de buluba-lulua, malgré de légères différences de mots et de prononciation. À Luebo, ils côtoient aussi les Bakete et les Bakuba, écrit-il. Les Chokwe, venus d'Angola, sont à la fois des partenaires de commerce et des alliés de Kalamba, selon l'Encyclopaedia Africana. Les noms échangés gardent aussi la trace de tensions. Selon Hermann Wissmann et ses compagnons, les sujets de Kalamba répondent au nom Tushilange, donné par les Chokwe, en appelant ceux-ci Diehndi, « les asticots ».",
+      "conflictsOrAlliances": "À partir de 1891, Kalamba et ses alliés chokwe combattent les troupes de l'État indépendant du Congo, selon l'Encyclopaedia Africana. À la fin de la période coloniale, la violence éclate à Luluabourg entre Lulua et Luba. La presse parle des « incidents de Luluabourg » ou du « conflit Baluba-Lulua », rappelle Kalala Ngalamulume. Ce conflit aboutit à la division de la province du Kasaï en deux, le Kasaï oriental pour les Luba et le Kasaï occidental pour les Lulua. Selon Valentine Kanyinda Muyumba, les affrontements entre Luba et Bena Lulua expliquent en partie la sécession du Sud-Kasaï en 1960.",
+      "diaspora": "Nous n'avons pas trouvé de source qui décrive les communautés lulua installées hors du Kasaï."
     },
     "demography": {
-      "totalPopulation": 3000000,
+      "totalPopulation": null,
       "referenceYear": 2025,
-      "source": "SIL Ethnologue — Tshiluba (lua) : total de 6,3 millions incluant les deux dialectes. Estimation de la part Lulua (dialecte L31b) : environ 3 millions en 2025, principalement dans le Kasai-Central. CIA World Factbook — RDC.",
+      "source": "Aucun chiffre n'est donné : nous n'avons pas trouvé de recensement ni d'estimation qui compte les Lulua à part des autres locuteurs du tshiluba.",
       "distributionByCountry": [
         {
           "country": "COD",
-          "population": 3000000,
-          "note": "Province du Kasai-Central (Kananga et environs), vallee de la riviere Lulua ; diaspora interne a Kinshasa et autres centres urbains de RDC"
+          "population": null,
+          "percentage": null,
+          "note": "Province du Kasaï-Central, autour de Kananga et dans la vallée de la Lulua."
         }
       ]
     },
@@ -116,6 +126,116 @@
         "url": "https://commons.wikimedia.org/wiki/Category:Tshiluba_language",
         "tier": "unverified",
         "source_kind": "community"
+      },
+      {
+        "title": "Glottolog 5.3 — Luba-Lulua (luba1249)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/luba1249",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue luba-lulua (code ISO 639-3 lua) dans Glottolog 5.3. Elle range la langue parmi les langues bantoues de la branche luba (Luban, Bangubangu-Kasai) et lui donne deux dialectes : Baluba (balu1255) et Bena Lulua (bena1263). Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Lulua (peuple d'Afrique), notice d'autorité",
+        "author": "Bibliothèque nationale de France",
+        "year": null,
+        "url": "https://data.bnf.fr/ark:/12148/cb12020430w",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Notice d'autorité RAMEAU de la Bibliothèque nationale de France, créée en 1987 et modifiée en 2017, lue dans ses données ouvertes. Forme retenue : « Lulua (peuple d'Afrique) ». Autres formes relevées : Bashilange, Beena Luluwa, Bena Lulua, Bena Luluwa, Bena Moyo, Kalebwe, Louloua, Loulouwa, Luba-Lulua, Luluas, Luluwa, Luva et Shilange. La notice précise que l'adjectif « lulua » est invariable. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Mythe, politique et histoire : le mythe de Mande Katawa chez les « Luluwa » du Kasayi",
+        "author": "Kalala J. Ngalamulume",
+        "year": 1995,
+        "url": "https://www.cambridge.org/core/journals/history-in-africa/article/abs/mythe-politique-et-histoire-le-mythe-de-mande-katawa-chez-les-luluwa-du-kasayi/00A52AF40371B1FEDF1B836C64101F3E",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 329",
+        "notes": "Article paru dans la revue History in Africa, vol. 22, 1995, p. 329-347 (DOI 10.2307/3171920). Le début de l'article et ses notes sont en accès libre chez Cambridge University Press ; c'est ce passage que nous avons lu. L'auteur y constate « la division de fait du groupe ethnique “Luluwa”, qui avait cent ans d'existence, en deux groupes distincts, les Bakwa Katawa et les Bena Mutombo ». Son hypothèse de travail : « l'administration coloniale n'a pas créé de toutes pièces un groupe ethnique ex nihilo ; elle a mis en place un cadre et des institutions qui ont permis l'élargissement de l'identité ethnique existante à un ensemble plus grand ». Il range au « centre » les descendants de Mande Katawa (Bena Kapuku, Bena Mande, Bena Mukadi et Bena Mukangala), ceux de Ntiite Maloba et ceux de Muena Mushilu, clans qui entourent Kananga ; les clans éloignés de la ville forment la « périphérie ». Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Mukenge a Tunsele",
+        "author": "Lukengu Tshipanda wa Mukenyi et Mumbanza mwa Bawele na Nyabakombi Ensobato",
+        "year": null,
+        "url": "https://encyclopaediaafricana.com/mukenge-a-tunsele/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice biographique signée, tirée de l'Encyclopaedia Africana Dictionary of African Biography et republiée en ligne par l'Encyclopaedia Africana. Elle dit que Mukenge a Tunsele (vers 1830-1898), du clan des Bena Kashyye, surnommé Kalamba (« sans égal »), domine les Lulua pendant la seconde moitié du XIXe siècle. Des Luba venus du Shaba se seraient établis dans la vallée de la Lulua, près de l'actuelle Kananga ; au milieu du siècle, des fumeurs de chanvre fondent la communauté du « Lubuku » et des marchands cokwe (chokwe) venus d'Angola apportent des fusils ; à la fin du siècle, les Lulua sont reconnus comme un groupe distinct. Paul Pogge et Hermann von Wissmann arrivent chez Kalamba en 1881 ; Wissmann fonde en 1884 le poste de Luluabourg près de son village et ordonne aux chefs lulua de lui payer tribut. Kalamba combat les troupes de l'État indépendant du Congo à partir de 1891, se replie au-delà de la rivière Kasaï après juillet 1896 et y meurt en 1898. Son fils Tshisungu Kalamba attaque en 1906 un dépôt de la Compagnie du Kasaï à Mai-Munene et rentre sur ses terres en 1909. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Rise of Nationalism in the Belgian Congo: The \"Lulua Brothers\" Association, 1952-1961",
+        "author": "Kalala Ngalamulume",
+        "year": 2019,
+        "url": "https://nomadit.co.uk/conference/ecas2019/paper/47650",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Résumé d'une communication présentée en juin 2019 à la conférence européenne des études africaines (ECAS), par un historien du Bryn Mawr College. Il étudie l'association des « Lulua Frères », créée en 1952. Il écrit que la violence éclata à Luluabourg entre les « Luba », vus comme « ouverts à la civilisation », et les « Lulua », qui s'étaient opposés à la conquête coloniale et que l'administration avait tenus à l'écart. La presse parla des « incidents de Luluabourg » ou du « conflit Baluba-Lulua ». Le conflit aboutit à la division de la province du Kasaï en deux : le Kasaï oriental pour les « Luba », le Kasaï occidental pour les « Lulua ». L'auteur étudie les politiques coloniales et missionnaires qui ont fait naître une identité politique appelée « Lulua ». Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Luluwa: Central African Art between Heaven and Earth",
+        "author": "Constantine Petridis",
+        "year": 2018,
+        "url": "https://yalebooks.yale.edu/9780300222487/luluwa",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Page de présentation du livre publié en 2018 par le Fonds Mercator et distribué par Yale University Press (240 pages). Elle dit que les Luluwa vivent entre les rivières Lubudi et Kasaï et qu'ils sont connus pour leurs statues masculines et féminines finement sculptées, leurs masques et leurs arts décoratifs. La création de cet art remonterait sans doute à la seconde moitié du XIXe siècle. L'auteur s'appuie sur les récits de voyageurs, de missionnaires, d'agents coloniaux et d'anthropologues venus dans la région entre les années 1880 et 1970. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Luba-Kasai: A Working Bibliography",
+        "author": "Valentine Kanyinda Muyumba",
+        "year": 2004,
+        "url": "https://journals.library.columbia.edu/index.php/ejab/article/download/6983/3723/12682",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article paru dans l'Electronic Journal of Africana Bibliography, vol. 9, 2004. L'introduction range les Luba-Luluwa parmi les groupes luba du Kasaï, à côté des Luba-Lubilanji et des Luba-Luntu. Elle écrit que les affrontements entre Luba et Bena Lulua expliquent en partie la sécession, en 1960, de l'État minier du Sud-Kasaï dirigé par Albert Kalonji, et que le gouvernement central reprit le contrôle de tout le Kasaï en décembre 1961. Elle rappelle que Luluabourg était la capitale de l'ancienne province du Kasaï et que le ciluba (tshiluba) est l'une des quatre langues nationales de la RDC. La bibliographie recense aussi un disque d'enregistrements de 1952 et 1957 qui comprend de la musique luluwa. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Im Innern Afrikas. Die Erforschung des Kassai während der Jahre 1883, 1884 und 1885",
+        "author": "Hermann Wissmann, Ludwig Wolf, Curt von François et Hans Mueller",
+        "year": 1888,
+        "url": "https://archive.org/details/11630692bsb",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 147-158",
+        "notes": "Récit d'expédition allemand de l'époque coloniale, Leipzig, F. A. Brockhaus, 1888, chapitre 8 : Das Volk der Baluba und die Anlage von Luluaburg, lu dans la numérisation d'Internet Archive. Les auteurs y appellent Baluba les sujets de Kalamba. Page 147 : Mukenge, résidence de Kalamba-Mukenge, compte environ 800 cases, sur la ligne de partage des eaux entre le Mujau et la Lulua. Page 148 : Pogge et Wissmann entrent dans le pays en octobre 1881. Page 150 : le poste de Luluaburg est bâti sur la rive gauche de la Lulua, à 10 km au nord de Mukenge. Page 154 : Kalamba a soumis les chefs voisins et leur a imposé un tribut ; il punit le meurtre de mort et laisse circuler les marchands étrangers dans le « Lubuku, d. h. Land der Freundschaft » ; le culte du chanvre a pour prêtresse sa sœur Sangula-Meta. Pages 155-156 : les anciens objets rituels sont brûlés, le chanvre devient un « symbole sacré de la paix et de l'amitié », les partisans se saluent par « Mojo », qui veut dire vie et santé ; la danse du riamba se fait au son de grands tambours frappés du plat de la main, et une danse a lieu à la pleine lune pour la croissance des récoltes. Pages 157-158 : l'entrée dans le cercle des Bena-Riamba passe par une confession publique. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Grammar and Dictionary of the Buluba-Lulua Language as spoken in the Upper Kasai and Congo Basin",
+        "author": "William M. Morrison",
+        "year": 1906,
+        "url": "https://archive.org/details/grammaranddicti01missgoog",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "page": "p. vi, 198 et 358",
+        "notes": "New York, American Tract Society, pour la mission presbytérienne américaine du Congo, 1906, lu dans la numérisation d'Internet Archive. Préface, p. vi : plusieurs milliers de Baluba et de Lulua se sont installés à Luebo, sur la rive nord de la Lulua, « the Lulua from the immediate south and east » ; les différences entre leurs parlers sont légères ; chaque peuple se divise en clans, comme « Bakua Kaloshi, Bakua Chimanga, Bakua Temba », et « there is no tribal unity ». Page 198, article God : Nzambi vient du bas Congo ; aucun culte n'est rendu à l'Être suprême, que les Bena Lulua nomment « Nfidi Mukulu » dans la numérisation. Page 358 : « Lubuku », objet servant à la divination ; « muena l. », devin. Consulté le 3 novembre 2026."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Lulua, qui se nomment eux-mêmes Bena-Lulua, vivent au Kasaï, en République démocratique du Congo, autour de Kananga. Au XIXe siècle, leurs voisins les appelaient Bashilange.",
+      "followUp": "Pourquoi les sujets du chef Kalamba tenaient-ils le nom Bashilange pour une insulte ?"
+    },
+    "gaps": [
+      {
+        "field": "content.organization.ageClassSystems",
+        "reason": "Nous n'avons pas trouvé, dans Glottolog, les récits de Wissmann et de Morrison, l'Encyclopaedia Africana et les travaux de Kalala J. Ngalamulume consultés, de source qui décrive des classes d'âge chez les Lulua."
+      },
+      {
+        "field": "content.organization.clanOrganization",
+        "reason": "Les sources consultées nomment des clans lulua, mais aucune ne dit si l'appartenance au clan se transmet par le père ou par la mère."
+      },
+      {
+        "field": "content.culture.majorRites",
+        "reason": "Les sources consultées décrivent les rites du culte du chanvre au XIXe siècle, mais pas l'initiation, le mariage ni les funérailles chez les Lulua."
+      },
+      {
+        "field": "content.historicalRole.diaspora",
+        "reason": "Nous n'avons pas trouvé de source qui décrive les communautés lulua installées hors du Kasaï, en RDC ou à l'étranger."
+      },
+      {
+        "field": "content.demography.totalPopulation",
+        "reason": "Nous n'avons pas trouvé de recensement ni d'estimation qui compte les Lulua à part des autres locuteurs du tshiluba."
       }
     ]
   },
@@ -240,6 +360,49 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. vi",
                 "notes": "New York, American Tract Society, pour la mission presbytérienne américaine du Congo, 1906. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La préface écrit : « the very names Baluba and Lulua do not seem to have been originally used by the people in speaking of themselves; these names have been given them by outsiders »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "Article publié en 1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Lulua, que l'historien Kalala J. Ngalamulume écrit Luluwa, désigne selon lui un groupe ethnique qui avait alors cent ans d'existence. Pour cet auteur, l'administration coloniale n'a pas créé ce groupe de toutes pièces : elle a mis en place des institutions qui ont élargi une identité plus ancienne à un ensemble plus grand.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Mythe, politique et histoire : le mythe de Mande Katawa chez les « Luluwa » du Kasayi",
+                "author": "Kalala J. Ngalamulume",
+                "year": 1995,
+                "url": "https://www.cambridge.org/core/journals/history-in-africa/article/abs/mythe-politique-et-histoire-le-mythe-de-mande-katawa-chez-les-luluwa-du-kasayi/00A52AF40371B1FEDF1B836C64101F3E",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 329",
+                "notes": "Article paru dans la revue History in Africa, vol. 22, 1995, p. 329-347 (DOI 10.2307/3171920). Le début de l'article et ses notes sont en accès libre chez Cambridge University Press ; c'est ce passage que nous avons lu. L'auteur y constate « la division de fait du groupe ethnique “Luluwa”, qui avait cent ans d'existence, en deux groupes distincts, les Bakwa Katawa et les Bena Mutombo ». Son hypothèse de travail : « l'administration coloniale n'a pas créé de toutes pièces un groupe ethnique ex nihilo ; elle a mis en place un cadre et des institutions qui ont permis l'élargissement de l'identité ethnique existante à un ensemble plus grand ». Il range au « centre » les descendants de Mande Katawa (Bena Kapuku, Bena Mande, Bena Mukadi et Bena Mukangala), ceux de Ntiite Maloba et ceux de Muena Mushilu, clans qui entourent Kananga ; les clans éloignés de la ville forment la « périphérie ». Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Communication présentée en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Lulua serait devenu une identité politique sous l'effet des politiques de l'administration belge et des missions, selon Kalala Ngalamulume. L'administration opposait, écrit-il, des « Luba » jugés « ouverts à la civilisation » à des « Lulua » qui avaient résisté à la conquête.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Rise of Nationalism in the Belgian Congo: The \"Lulua Brothers\" Association, 1952-1961",
+                "author": "Kalala Ngalamulume",
+                "year": 2019,
+                "url": "https://nomadit.co.uk/conference/ecas2019/paper/47650",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Résumé d'une communication présentée en juin 2019 à la conférence européenne des études africaines (ECAS), par un historien du Bryn Mawr College. Il étudie l'association des « Lulua Frères », créée en 1952. Il écrit que la violence éclata à Luluabourg entre les « Luba », vus comme « ouverts à la civilisation », et les « Lulua », qui s'étaient opposés à la conquête coloniale et que l'administration avait tenus à l'écart. La presse parla des « incidents de Luluabourg » ou du « conflit Baluba-Lulua ». Le conflit aboutit à la division de la province du Kasaï en deux : le Kasaï oriental pour les « Luba », le Kasaï occidental pour les « Lulua ». L'auteur étudie les politiques coloniales et missionnaires qui ont fait naître une identité politique appelée « Lulua ». Consulté le 3 novembre 2026."
               }
             ]
           }
@@ -390,6 +553,39 @@
                 "source_kind": "archive",
                 "page": "p. 166-167",
                 "notes": "Leipzig, F. A. Brockhaus, 1888, chapitre 8 : Das Volk der Baluba und die Anlage von Luluaburg. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. Les pages écrivent que Kalamba et ses sujets tiennent les noms Tuschilange et Baschilange pour une insulte, nés des surnoms Baschilambua et Baschilambembele, et que « die Bena-Riamba wollen nur Baluba benannt sein »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Luluwa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "shortLine": "Une autre graphie du nom Lulua, employée par plusieurs historiens.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "Article publié en 1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Luluwa est la graphie qu'emploie l'historien Kalala J. Ngalamulume dans un article de 1995, où il écrit le nom du groupe entre guillemets : « Luluwa ».",
+            "formAsWritten": "Luluwa",
+            "sources": [
+              {
+                "title": "Mythe, politique et histoire : le mythe de Mande Katawa chez les « Luluwa » du Kasayi",
+                "author": "Kalala J. Ngalamulume",
+                "year": 1995,
+                "url": "https://www.cambridge.org/core/journals/history-in-africa/article/abs/mythe-politique-et-histoire-le-mythe-de-mande-katawa-chez-les-luluwa-du-kasayi/00A52AF40371B1FEDF1B836C64101F3E",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 329",
+                "notes": "Article paru dans la revue History in Africa, vol. 22, 1995, p. 329-347 (DOI 10.2307/3171920). Le début de l'article et ses notes sont en accès libre chez Cambridge University Press ; c'est ce passage que nous avons lu. L'auteur y constate « la division de fait du groupe ethnique “Luluwa”, qui avait cent ans d'existence, en deux groupes distincts, les Bakwa Katawa et les Bena Mutombo ». Son hypothèse de travail : « l'administration coloniale n'a pas créé de toutes pièces un groupe ethnique ex nihilo ; elle a mis en place un cadre et des institutions qui ont permis l'élargissement de l'identité ethnique existante à un ensemble plus grand ». Il range au « centre » les descendants de Mande Katawa (Bena Kapuku, Bena Mande, Bena Mukadi et Bena Mukangala), ceux de Ntiite Maloba et ceux de Muena Mushilu, clans qui entourent Kananga ; les clans éloignés de la ville forment la « périphérie ». Consulté le 3 novembre 2026."
               }
             ]
           }
