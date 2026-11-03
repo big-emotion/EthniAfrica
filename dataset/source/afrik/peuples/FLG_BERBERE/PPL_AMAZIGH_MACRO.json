@@ -20,16 +20,19 @@
       "selfAppellation": "Imazighen",
       "exonyms": [
         "Berbers",
-        "Berberes",
-        "Libyens (Antiquite grecque)",
+        "Berbères",
+        "Libyens (Antiquité grecque)",
         "Mazikes (sources byzantines)"
       ],
-      "originOfExonyms": "Berber est le nom arabe Barbar, et le français berbère viendrait de lui. Il derive probablement du latin barbarus, par la forme parlee des villes romanisees que les Arabes entendent a leur arrivee, et non par un usage savant, selon Yves Modéran. Amazigh (pluriel Imazighen) est le nom que les peuples autochtones se donnent eux-memes. On y lit souvent « les hommes libres », mais Salem Chaker rapporte que cette glose vient de Jean-Leon l'Africain puis de Gsell, la juge « certainement pas fondee » et estime qu'il est difficile d'etablir une etymologie sure ; chez les Touareg, amajeγ designe l'aristocrate nomade, ce qui ne vaut pas pour l'ensemble. Les titres tribaux Barabara et Beraberata apparaissent dans des inscriptions egyptiennes de 1700 et 1300 av. J.-C.",
-      "whyProblematic": "Le terme Berber est considere pejoratif par une partie de la communaute car associe historiquement au mot barbare. Les mouvements culturels amazighs preferent Imazighen ou Amazigh.",
-      "contemporaryUsage": "Amazigh et Imazighen sont desormais les termes officialises dans les constitutions du Maroc (2011) et de l'Algerie. Berber reste d'usage courant dans les sources academiques anglophones.",
+      "spellingAliases": ["Amazigh", "Amaziɣ", "Imaziɣen"],
+      "originOfExonyms": "Le nom Berbères vient de l'arabe Barbar. Selon Yves Modéran, ce mot viendrait probablement du latin barbarus, par la prononciation populaire des villes romanisées que les Arabes entendent à leur arrivée, et non par un usage savant. Au XIVe siècle, l'historien Ibn Khaldoun rapporte un autre récit, qui le tire du mot arabe berbera, « un mélange de cris inintelligibles ». Amazigh, au pluriel Imazighen, est le nom que se donnent eux-mêmes plusieurs peuples berbères. On l'explique souvent par « les hommes libres », mais Salem Chaker rapporte que cette explication vient de Jean-Léon l'Africain puis de Gsell, la juge « certainement pas fondée » et estime qu'il est difficile d'établir une étymologie sûre. Chez les Touareg, amajeγ désigne l'aristocrate nomade, un sens qui ne vaut pas pour l'ensemble.",
+      "whyProblematic": "Le nom Berbère est jugé blessant par une partie des personnes qu'il désigne, parce qu'on le rapproche du mot « barbare ». Des berbérisants du Maghreb, surtout marocains, le remplacent en français par Imazighen : ils jugent l'ancien nom offensant pour la dignité nationale, selon Salem Chaker en 1986. Les mouvements culturels amazighs préfèrent Amazigh ou Imazighen.",
+      "contemporaryUsage": "Les formes amazighe et tamazight sont aujourd'hui inscrites dans les constitutions. Au Maroc, la Constitution de 2011 fait de l'amazighe une langue officielle de l'État, à côté de l'arabe (article 5). En Algérie, la révision constitutionnelle du 6 mars 2016 dispose que « Tamazight est également langue nationale et officielle » (article 4). Le mot berbère reste très ancien et courant en français, selon Salem Chaker.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null,
       "linguisticFamily": "FLG_BERBERE",
-      "ethnoLinguisticGroup": "Groupe afro-asiatique berbere, comprenant de nombreuses branches : nord-berbere (kabyle, chaoui, rifain, chenoua), atlasique (tamazight central, tachelhit), saharien (touareg/tamashek), zenetique",
-      "historicalRegion": "Tout le Maghreb et le Sahara (Tamazgha) : du Maroc a l'Egypte, des cotes mediterraneennes aux confins du Sahel",
+      "ethnoLinguisticGroup": "Groupe berbère de la famille afro-asiatique, avec de nombreuses branches : nord-berbère (kabyle, chaoui, rifain, chenoua), atlasique (tamazight central, tachelhit), saharienne (touareg ou tamasheq), zénète",
+      "historicalRegion": "Tout le Maghreb et le Sahara (Tamazgha) : du Maroc à l'Égypte, des côtes méditerranéennes aux confins du Sahel",
       "currentCountries": [
         "MAR",
         "DZA",
@@ -43,46 +46,45 @@
       ]
     },
     "ethnicities": [
-      "Kabyles (Algerie, Grande et Petite Kabylie, ~6 millions)",
-      "Chaouis / Shawiya (Algerie, massif des Aures, ~2,8 millions)",
-      "Chleuhs / Ishelhiyen (Maroc, Anti-Atlas et Souss, ~8 millions)",
-      "Rifains (Maroc, region du Rif, ~1,5 million)",
-      "Tamazight du Moyen Atlas (Maroc, ~2,8 millions)",
-      "Touaregs / Imuhar (Algerie, Mali, Niger, Burkina Faso, ~4 millions)",
-      "Mozabites (Algerie, vallee du M'zab, ~200 000)",
-      "Chenouas (Algerie, mont Chenoua, Tipaza, ~106 000)",
-      "Nafusis (Libye, Jabal Nafusa, ~186 000)",
-      "Zuwaras (Libye, nord-ouest, ~280 000)",
-      "Siwis (Egypte, oasis de Siwa, ~24 000)",
-      "Zenagas (Mauritanie, ~10 000)"
+      "Kabyles (Algérie, Grande et Petite Kabylie)",
+      "Chaouis ou Shawiya (Algérie, massif des Aurès)",
+      "Chleuhs ou Ishelhiyen (Maroc, Anti-Atlas et Souss)",
+      "Rifains (Maroc, Rif)",
+      "Berbérophones du Moyen Atlas, de langue tamazight (Maroc)",
+      "Touaregs ou Imuhar (Algérie, Libye, Mali, Niger, Burkina Faso)",
+      "Mozabites (Algérie, vallée du Mzab)",
+      "Chenouas (Algérie, mont Chenoua, Tipaza)",
+      "Nafusis (Libye, djebel Nefoussa)",
+      "Zuwaras (Libye, région de Zouara)",
+      "Siwis (Égypte, oasis de Siwa)",
+      "Zenagas (Mauritanie)"
     ],
     "origins": {
-      "ancientOrigins": "Les Imazighen sont consideres comme les peuples autochtones d'Afrique du Nord, presents dans la region depuis au moins 10 000 av. J.-C. selon les donnees archeologiques. Les peintures rupestres du Tassili n'Ajjer (Algerie, datees de 12 000 ans) et du Tadrart Acacus (Libye) attestent d'une civilisation prehistorique florissante. Les populations proto-berberes ont evolue a partir des cultures iberomaurusienne et capsienne. A partir de 2000 av. J.-C., les langues berberes se sont repandues depuis la vallee du Nil vers l'ouest a travers le Sahara septentrional jusqu'au Maghreb.",
-      "formationPeriod": "Au premier millenaire avant J.-C., les ancetres des Imazighen etaient les habitants autochtones de la vaste region visitee par les Grecs, les Carthaginois et les Romains. Tribes comme les Mauri, Masaesyli, Massyli, Musulamii, Gaetuli et Garamantes ont donne naissance aux royaumes berberes : Numidie (202-46 av. J.-C.), Mauretanie (3e s. av. J.-C.-44 ap. J.-C.).",
+      "ancientOrigins": "Le berbère, appelé tamazight dans la langue elle-même, peut être considéré comme la langue autochtone de l'Afrique du Nord à l'échelle de l'histoire connue, selon Salem Chaker : il couvrait à l'origine toute l'Afrique du Nord et le Sahara. Les textes égyptiens nomment très tôt des peuples vivant à l'ouest du Nil, comme les Temehou, que J. Desanges tient pour les ancêtres des Libyens que les Grecs ont connus en Cyrénaïque. Les historiens appellent Protoberbères ces populations anciennes.",
+      "formationPeriod": "Au premier millénaire avant notre ère, les ancêtres des Imazighen habitaient la vaste région que fréquentaient les Grecs, les Carthaginois et les Romains. Des peuples comme les Maures, les Masaesyles, les Massyles, les Musulames, les Gétules et les Garamantes y sont nommés ; des royaumes berbères en sont issus : la Numidie (202-46 av. J.-C.) et la Maurétanie (IIIe siècle av. J.-C.-44 apr. J.-C.).",
       "migrationRoutes": [
-        "Diffusion vers l'ouest depuis la vallee du Nil a partir de 2000 av. J.-C.",
-        "Extension vers le sud dans le Sahara (Touaregs)",
-        "Expansion vers les iles Canaries (Guanches, aujourd'hui assimiles)"
+        "Extension vers le sud, dans le Sahara (Touaregs)",
+        "Peuplement des îles Canaries (Guanches, aujourd'hui disparus en tant que groupe distinct)"
       ],
       "historicalSettlementZones": [
-        "Maghreb (Maroc, Algerie, Tunisie, Libye, Mauritanie)",
-        "Sahara central et meridional (Mali, Niger, Burkina Faso)",
-        "Oasis de Siwa (Egypte)",
-        "Iles Canaries (extincts en tant que groupe distinct)"
+        "Maghreb (Maroc, Algérie, Tunisie, Libye, Mauritanie)",
+        "Sahara central et méridional (Mali, Niger, Burkina Faso)",
+        "Oasis de Siwa (Égypte)",
+        "Îles Canaries (peuplement disparu en tant que groupe distinct)"
       ],
-      "unificationsOrDivisions": "Les Imazighen n'ont jamais forme un Etat unifie, mais ont produit de grandes dynasties : Almoravides (1053-1147), Almohades (1147-1275), Zirides, Hammadides, Marinides, Zayyanides, Hafsides. Les conquetes arabes du 7e-8e siecle ont amorce une arabisation progressive mais incomplete.",
-      "externalInfluences": "Contacts avec les Pheniciens et Carthaginois (fondation de Carthage, commerce), l'Empire romain (integration de la Numidie et de la Mauretanie), les Vandales (429-534), l'Empire byzantin (534-647), la conquete arabe (647-711), puis la colonisation europeenne (19e-20e siecles). Chaque vague a laisse des influences linguistiques, culturelles et religieuses.",
-      "majorHistoricalEvents": "Royaume de Numidie (roi Massinissa, 202-148 av. J.-C.). Grande revolte berbere contre les Arabes (739-741). Role central dans la conquete arabe de l'Espagne (711). Empires almoravide et almohade (11e-13e siecles). Resistance aux colonisations ottomane et europeenne. Printemps berbere en Algerie (1980). Officialisation de tamazight au Maroc (Constitution 2011) et en Algerie (Constitution 2016)."
+      "unificationsOrDivisions": "Les Imazighen n'ont jamais formé un État unique, mais des dynasties berbères ont dirigé de grands États : Almoravides (1053-1147), Almohades (1147-1275), Zirides, Hammadides, Marinides, Zayyanides, Hafsides. La conquête arabe et l'islamisation, au VIIIe siècle, puis l'arrivée de populations arabes nomades venues du Moyen-Orient, au XIe siècle, ont entraîné une lente arabisation de l'Afrique du Nord. Le berbère y est aujourd'hui dispersé en îlots, de quelques milliers à plusieurs millions de personnes, selon Salem Chaker.",
+      "externalInfluences": "Contacts avec les Phéniciens et les Carthaginois (fondation de Carthage, commerce), l'Empire romain (intégration de la Numidie et de la Maurétanie), les Vandales (429-534), l'Empire byzantin (534-647), la conquête arabe (647-711), puis la colonisation européenne (XIXe et XXe siècles). Chacune de ces périodes a laissé des influences linguistiques, culturelles et religieuses.",
+      "majorHistoricalEvents": "Royaume de Numidie (roi Massinissa, 202-148 av. J.-C.). Grande révolte berbère contre le pouvoir arabe (739-741). Rôle central dans la conquête arabe de l'Espagne (711). Empires almoravide et almohade (XIe-XIIIe siècles). Résistance aux dominations ottomane et européenne. Printemps berbère (Tafsut n Imazighen), parti de Kabylie en 1980, selon Mena Lafkioui. Le berbère devient « seconde langue nationale » en Algérie en 2002, puis langue officielle au Maroc en 2011, selon Salem Chaker, et en Algérie en 2016."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Structure tribale (taqbilt ou qabila) avec conseil d'anciens (jmaa ou tajmaat). Les societes berberes ont traditionnellement fonctionne selon un systeme democratique local : le conseil villageois delibere sur toutes les affaires communes, les conflits, les alliances et les decisions importantes. Certains groupes (Touaregs) ont des structures hierarchiques plus marquees avec un roi (amenokal).",
-      "clanOrganization": "Division en confederations tribales, tribus (icherkan) et fractions (tikhsiwin). Chaque village ou fraction est independant dans ses affaires locales. Systeme patrilineaire dominant (sauf chez les Touaregs, matrilineaires pour certains droits).",
-      "ageClassSystems": null,
-      "roleOfLineages": "Les lignages (ighs) structurent les droits fonciers, les alliances matrimoniales et l'appartenance tribale. Chez les Touaregs, le systeme est en partie matrilineaire : le nom, la noblesse et certains biens passent par la mere.",
-      "religiousAuthority": "Depuis le 7e siecle, Islam sunnite (majorite malekite) et ibadite (Mozabites, Nafusis). Les saints locaux (imrabdhen, marabouts) jouent historiquement un role d'intermediaires spirituels et sociaux. Avant l'islam, les Imazighen pratiquaient des religions polytheistes et animistes avec culte des ancetres."
+      "traditionalPoliticalSystem": "Le village ou la fraction s'administre par une assemblée, la djemâa (tajmaεt en berbère), présente en Kabylie, dans l'Aurès, au Mzab et au Maroc. Un conseil restreint, formé de l'amin, de l'ukil et des temman qui représentent les lignages, gère la vie commune et convoque l'assemblée générale des hommes pour les affaires importantes. « Ses décisions sont souveraines et elle les fait, au besoin, exécuter elle-même », écrivent D. Abrous et H. Claudot-Hawad. Elle fixe la coutume, règle les amendes et organise les travaux collectifs. Sous la colonisation, elle a été peu à peu vidée de ses pouvoirs. Chez les Touareg, l'ameni ou ameney est une réunion convoquée selon les circonstances : les délégués des clans et des confédérations s'y rencontrent, sous l'arbitrage d'une personnalité comme l'amenokal, le chef de la confédération.",
+      "clanOrganization": "Division en confédérations tribales, en tribus et en fractions. Chaque village ou fraction gère ses affaires locales. La filiation par le père domine ; chez les Touareg, certains droits passent par la mère.",
+      "ageClassSystems": "En Kabylie, au XIXe siècle, l'assemblée de village réunissait « les hommes en âge de porter les armes », et la parole des hommes mûrs et respectés y comptait le plus, selon D. Abrous et H. Claudot-Hawad. Ces auteurs ne décrivent pas pour autant de classes d'âge organisées.",
+      "roleOfLineages": "Les lignages (ighs) structurent les droits fonciers, les alliances matrimoniales et l'appartenance tribale. En Kabylie, ils sont représentés dans le conseil du village par les temman, selon D. Abrous et H. Claudot-Hawad. Chez les Touareg, le système est en partie matrilinéaire : le nom, la noblesse et certains biens passent par la mère.",
+      "religiousAuthority": "Depuis le VIIe siècle, l'islam domine : sunnite, en majorité malékite, et ibadite chez les Mozabites et les Nafusis. Les saints locaux (imrabdhen, marabouts) jouent historiquement un rôle d'intermédiaires spirituels et sociaux. Avant l'islam, les Imazighen pratiquaient des religions polythéistes, avec un culte des ancêtres."
     },
     "languages": {
-      "mainLanguage": "Tamazight (terme generique) / Langues berberes (famille)",
+      "mainLanguage": "Tamazight (nom générique) / langues berbères (famille)",
       "isoCodes": [
         "ber",
         "kab",
@@ -95,72 +97,85 @@
         "zgh"
       ],
       "dialects": [
-        "Kabyle (kab, Algerie)",
-        "Tachawit/Chaoui (shy, Algerie)",
-        "Tachelhit/Shilha (shi, Maroc)",
-        "Tamazight central (tzm, Maroc)",
-        "Tarifit/Rifain (rif, Maroc)",
-        "Tamashek/Touareg (tmh, Sahara)",
-        "Shenwa/Chenoua (cnu, Algerie)",
+        "Kabyle (kab, Algérie)",
+        "Tachawit ou chaoui (shy, Algérie)",
+        "Tachelhit ou chleuh (shi, Maroc)",
+        "Tamazight du Maroc central (tzm, Maroc)",
+        "Tarifit ou rifain (rif, Maroc)",
+        "Tamasheq ou touareg (tmh, Sahara)",
+        "Chenoua (cnu, Algérie)",
         "Tamazight standard marocain (zgh)",
         "Nafusi (nfz, Libye)",
-        "Siwi (siz, Egypte)",
+        "Siwi (siz, Égypte)",
         "Zenaga (zen, Mauritanie)"
       ],
-      "vehicularRole": "Les langues berberes sont les langues maternelles de 25 a 36 millions de personnes. L'arabe et le francais sont utilises comme langues vehiculaires. Tamazight est langue officielle au Maroc et en Algerie."
+      "vehicularRole": "Les langues berbères sont parlées par 23 à 25 millions de personnes selon Salem Chaker en 2013, et par environ 40 millions selon Mena Lafkioui dans le même bulletin. L'arabe et le français servent de langues véhiculaires. Le tamazight est langue officielle au Maroc depuis 2011 et en Algérie depuis 2016."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q45315",
+      "glottocode": "berb1260"
     },
     "culture": {
-      "majorRites": "Yennayer (Nouvel An amazigh, 13 janvier), celebrations agricoles saisonnieres, rites de passage (circoncision, mariage), festivals de moussem (pelerinages aux tombeaux de saints). Festival du mariage d'Imilchil (Maroc). Fetes d'Achoura. Rites funeraires islamises mais avec persistance de pratiques pre-islamiques.",
-      "symbols": "Tifinagh (alphabet ancestral ressuscite et officialise au 21e siecle). Signe Aza ou Agraw (croix berbere), adopte comme symbole pan-amazigh contemporain. Bijoux en argent a motifs geometriques, tapis et tissages aux motifs tribaux, poterie peinte.",
-      "artsAndMusic": "Musiques regionales distinctes : ahellil et ahidus (chants collectifs en cercle, Maroc et Algerie), izlan (chanson kabyle), isefra (poesie chantee). Instruments : bendir (tambourin), gasba (flute en roseau), lotar et guembri (luths), tindé (tambour touareg). Artisanat : tapis aux motifs geometriques, bijoux en argent, poterie, tatouages au henne.",
-      "spiritualities": "Islam sunnite malekite (majorite). Islam ibadite (Mozabites, Nafusis). Persistance de pratiques pre-islamiques : culte des saints (maraboutisme), croyances aux djinns et esprits, invocations pour la fertilite. Minorites juives berberes historiques. Conversions au christianisme chez une minorite de Kabyles (Algerie)."
+      "majorRites": "Yennayer (Nouvel An amazigh, en janvier), fêtes agricoles saisonnières, rites de passage (circoncision, mariage), moussems (pèlerinages aux tombeaux des saints). Festival du mariage d'Imilchil (Maroc). Fêtes d'Achoura. En Kabylie, l'assemblée de village organise un sacrifice collectif d'automne, selon D. Abrous et H. Claudot-Hawad. Rites funéraires islamisés, avec des pratiques plus anciennes que l'islam.",
+      "symbols": "Tifinagh, l'alphabet berbère ancien, remis en usage et officialisé au XXIe siècle. La lettre aza (ⵣ) du tifinagh est devenue un symbole amazigh contemporain. Bijoux en argent à motifs géométriques, tapis et tissages aux motifs propres à chaque tribu, poterie peinte.",
+      "artsAndMusic": "Musiques régionales distinctes : ahellil et ahidous (chants collectifs en cercle, Algérie et Maroc), izlan (couplets chantés), isefra (poésie chantée kabyle). Instruments : bendir (tambourin), gasba (flûte en roseau), lotar et guembri (luths), tindé (tambour touareg). Artisanat : tapis aux motifs géométriques, bijoux en argent, poterie, tatouages et motifs au henné. Depuis les années 1930 au moins, Paris est un haut lieu de la chanson kabyle, puis berbère, selon Salem Chaker.",
+      "spiritualities": "Islam sunnite malékite (majorité). Islam ibadite (Mozabites, Nafusis). Pratiques plus anciennes que l'islam : culte des saints, croyances aux djinns et aux esprits, invocations pour la fertilité. Communautés juives berbères historiques. Conversions au christianisme chez une minorité de Kabyles (Algérie)."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Numidie (roi Massinissa, 202-148 av. J.-C.), Mauretanie (Bocchus, Juba), Garamancie (Libye, 400 av. J.-C.-600 ap. J.-C.), Rustamides (Ibadhites, 776-909), empires almoravide (1053-1147) et almohade (1147-1275), royaumes marinide, zayyanide et hafside (13e-16e siecles).",
-      "relationsWithNeighbors": "Contacts commerciaux intenses avec les Pheniciens et Carthaginois. Integration partielle dans l'Empire romain. Relations complexes avec les Arabes : resistance puis conversion a l'islam et role actif dans l'expansion islamique (conquete de l'Espagne en 711). Coexistence avec les populations saharo-soudanaises (Touaregs et societes sahelo-subsahariennes).",
-      "conflictsOrAlliances": "Grande revolte berbere contre les Arabes (739-741). Role de la reine Dihya (Kahina) dans la resistance (703). Resistance aux colonisations ottomane et europeenne (19e-20e siecles). Printemps berbere en Algerie (1980). Mouvements tuareg au Mali et au Niger (rébellions de 1960, 1990, 2006, 2012).",
-      "diaspora": "Environ 2,2 millions d'Imazighen en Europe (principalement France, Belgique, Pays-Bas, Allemagne, Espagne). Communautes au Canada, aux Etats-Unis et en Israel (Berbers judeo-marocains). La diaspora joue un role actif dans la preservation linguistique et la revendication identitaire amazighe."
+      "kingdomsOrChiefdoms": "Numidie (roi Massinissa, 202-148 av. J.-C.), Maurétanie (Bocchus, Juba), royaume des Garamantes (Libye, vers 400 av. J.-C.-600 apr. J.-C.), Rostémides (ibadites, 776-909), empires almoravide (1053-1147) et almohade (1147-1275), royaumes mérinide, zayyanide et hafside (XIIIe-XVIe siècles).",
+      "relationsWithNeighbors": "Échanges commerciaux intenses avec les Phéniciens et les Carthaginois. Intégration partielle dans l'Empire romain. Relations complexes avec les Arabes : résistance, puis conversion à l'islam et rôle actif dans son expansion (conquête de l'Espagne en 711). Voisinage, au Sahel, entre les Touaregs et les sociétés sahéliennes.",
+      "conflictsOrAlliances": "Grande révolte berbère contre le pouvoir arabe (739-741). Résistance de la reine Dihya (la Kahena) vers 700. Résistance aux dominations ottomane et européenne (XIXe-XXe siècles). Printemps berbère en Algérie (1980). Rébellions touarègues au Mali et au Niger, à partir des années 1960, puis dans les années 1990, en 2006 et en 2012.",
+      "diaspora": "Salem Chaker estime en 2013 le nombre de berbérophones en France à près de 2 millions, pour deux tiers d'origine algérienne et pour un tiers d'origine marocaine, en grande majorité de nationalité française. L'émigration part de Kabylie dès le début du XXe siècle et du Souss après 1945, puis des Aurès et du Rif dans les années 1960. Les Kabyles vivent plutôt à Paris et dans l'Est, les Rifains dans le Nord et à Amiens, les Chleuhs en banlieue parisienne. D'autres communautés vivent en Belgique, aux Pays-Bas, en Allemagne, en Espagne et en Amérique du Nord. La diaspora joue un rôle actif dans la défense de la langue et de l'identité amazighes."
     },
     "demography": {
-      "totalPopulation": 35000000,
-      "referenceYear": 2025,
-      "source": "Wikipedia EN - Berbers (estimation 25-36 millions). Britannica : un quart de la population algerienne et plus de 60% de la population marocaine. IWGIA - Indigenous World 2025 Morocco. Ethnologue SIL International 2024. Recensement marocain HCP 2024 (24,8% de locuteurs tamazight, soit environ 9 millions). Recensement algerien (environ 10-12 millions de locuteurs berberophones).",
+      "totalPopulation": 25000000,
+      "referenceYear": 2013,
+      "source": "Estimation de Salem Chaker en 2013 : 23 à 25 millions de berbérophones, dont 80 % au Maroc et en Algérie ; nous retenons le haut de cette fourchette. Dans le même bulletin, Mena Lafkioui parle d'environ 40 millions de locuteurs. Ces chiffres comptent les personnes qui parlent une langue berbère, pas celles qui se disent amazighes, et ils restent discutés. Pour le Maroc, le recensement de 2024 du Haut-Commissariat au Plan compte 24,8 % de la population qui utilise l'amazighe au quotidien, contre 25,8 % en 2014.",
       "distributionByCountry": [
         {
           "country": "MAR",
-          "population": 12000000
+          "population": 9133426,
+          "note": "Selon le recensement de 2024 du Haut-Commissariat au Plan, 24,8 % des 36 828 330 habitants utilisent l'amazighe au quotidien (tachelhit, tamazight, tarifit et autres) ; nous avons fait le calcul. Salem Chaker estimait cette part à 40 % en 2013."
         },
         {
           "country": "DZA",
-          "population": 12000000
+          "population": null,
+          "note": "Environ 25 % de la population, selon Salem Chaker en 2013 : Kabylie, Aurès, Mzab, Chenoua, Sahara (Touaregs)."
         },
         {
           "country": "MLI",
-          "population": 2000000
+          "population": null,
+          "note": "Touaregs, surtout dans le nord du pays."
         },
         {
           "country": "NER",
-          "population": 2000000
+          "population": null,
+          "note": "Touaregs de l'Aïr et du nord du pays."
         },
         {
           "country": "LBY",
-          "population": 600000
+          "population": null,
+          "note": "Environ 10 % de la population, selon Salem Chaker en 2013 : djebel Nefoussa, Zouara, Ghadamès et Touaregs du sud-ouest."
         },
         {
           "country": "BFA",
-          "population": 100000
+          "population": null,
+          "note": "Touaregs du nord du pays."
         },
         {
           "country": "MRT",
-          "population": 100000
+          "population": null,
+          "note": "Petits groupes de langue zenaga, selon Salem Chaker en 2013."
         },
         {
           "country": "TUN",
-          "population": 100000
+          "population": null,
+          "note": "Environ 1 % de la population, selon Salem Chaker en 2013."
         },
         {
           "country": "EGY",
-          "population": 30000
+          "population": null,
+          "note": "Oasis de Siwa, selon Salem Chaker en 2013."
         }
       ]
     },
@@ -214,6 +229,95 @@
         "tier": "referenced",
         "source_kind": "academic",
         "notes": "Monographie d'historien. L'introduction de sa cinquième partie retrace l'origine du nom arabe des Berbères et sa première attestation."
+      },
+      {
+        "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome I",
+        "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+        "year": 1852,
+        "url": "https://archive.org/details/ibn-khaldun-histoire-des-berberes-et-des-dynasties-musulmanes-de-l-afrique-septentrionale-v-1",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Traduction française de William Mac Guckin de Slane, publiée à Alger en 1852, par ordre du ministre de la Guerre, pendant la conquête française : c'est une traduction de l'époque coloniale. Lue dans la numérisation d'Internet Archive le 3 novembre 2026. P. 168 : le récit du nom Berbères tiré du mot berbera ; p. 184 : l'aïeul Mazîgh.",
+        "page": "p. 168 et 184"
+      },
+      {
+        "title": "Langues et cité, n° 23 : Le berbère (août 2013)",
+        "author": "Salem Chaker ; Mena Lafkioui",
+        "year": 2013,
+        "url": "https://www.culture.gouv.fr/content/download/93561/file/lc_23_berbere_def.pdf",
+        "tier": "unverified",
+        "source_kind": "government",
+        "notes": "Bulletin de l'Observatoire des pratiques linguistiques, publié par le ministère de la Culture (France). Lu le 3 novembre 2026. P. 2, Salem Chaker, professeur de berbère à l'université d'Aix-Marseille : le Maroc (40 % de la population) et l'Algérie (25 %) « doivent compter 80 % des 23 à 25 millions de berbérophones » ; il existe aussi des groupes berbères en Libye (10 %), en Tunisie (1 %), en Égypte (Siwa) et en Mauritanie, et les Touaregs vivent dans cinq pays (Niger, Mali, Algérie, Libye, Burkina Faso). Il estime le nombre de berbérophones en France « à près de 2 millions de personnes », pour deux tiers d'origine algérienne et un tiers d'origine marocaine. P. 3, Mena Lafkioui (universités de Milan-Bicocca et de Gand) parle d'un peuple « comptant environ 40 millions de locuteurs, dont environ 2 millions vivent en France »."
+      },
+      {
+        "title": "Haut-Commissariat au Plan du Maroc (2024) – Recensement Général de la Population et de l'Habitat 2024, Principaux résultats, Rabat, 17 décembre 2024, p. 19",
+        "url": "https://www.hcp.ma/file/242665/",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Statistique officielle du Maroc, lue le 3 novembre 2026. P. 19 : « Le quart utilise les différentes expressions linguistiques de l'Amazigh (24,8%) », 33,3 % en milieu rural et 19,9 % en milieu urbain ; la légende précise « Amazigh (Tachelhit, Tamazight, Tarifit et autres) ». P. 5 : la population légale du Maroc est de 36 828 330 habitants au 1er septembre 2024."
+      },
+      {
+        "title": "Haut-Commissariat au Plan du Maroc – RGPH 2024, note « Les expressions linguistiques de la langue Amazighe utilisées par la population », 23 décembre 2024 (fichier 242745)",
+        "url": "https://www.hcp.ma/file/242745",
+        "tier": "unverified",
+        "source_kind": "official_statistics",
+        "notes": "Note de la statistique officielle du Maroc, lue le 3 novembre 2026. La part de la population qui utilise l'amazighe au quotidien est de 24,8 % en 2024, contre 25,8 % en 2014 et 27,5 % en 2004. La note précise que les personnes capables de parler l'amazighe mais qui ne l'utilisent pas au quotidien ne sont pas comptées."
+      },
+      {
+        "title": "Loi n° 16-01 du 6 mars 2016 portant révision constitutionnelle, Journal officiel de la République algérienne n° 14 du 7 mars 2016",
+        "author": "République algérienne démocratique et populaire",
+        "year": 2016,
+        "url": "https://www.joradp.dz/FTP/jo-francais/2016/F2016014.pdf",
+        "tier": "unverified",
+        "source_kind": "government",
+        "page": "p. 6",
+        "notes": "Traduction française officielle du Journal officiel, publiée par le Secrétariat général du Gouvernement. Lue le 3 novembre 2026. L'article 4 dispose : « Tamazight est également langue nationale et officielle. » Il crée une Académie algérienne de la langue amazighe. Le préambule nomme l'Islam, l'Arabité et l'Amazighité comme composantes de l'identité du pays."
+      },
+      {
+        "title": "Constitution du Royaume du Maroc de 2011, article 5 (traduction anglaise, Constitute Project)",
+        "author": "Royaume du Maroc",
+        "year": 2011,
+        "url": "https://www.constituteproject.org/constitution/Morocco_2011",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Traduction anglaise de Jefri J. Ruchti (William S. Hein & Co., 2012), lue le 3 novembre 2026. L'article 5 fait de l'arabe la langue officielle de l'État et dit que le tamazight (« amazighe ») est aussi une langue officielle de l'État."
+      },
+      {
+        "title": "Djemâa-Tajmaεt, Ameney, Encyclopédie berbère, 16",
+        "author": "D. Abrous et H. Claudot-Hawad",
+        "year": 1995,
+        "url": "https://journals.openedition.org/encyclopedieberbere/2184",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère, volume 16 (Djalut – Dougga), p. 2434-2441 de l'édition imprimée. Lue en ligne sur OpenEdition le 3 novembre 2026 ; les paragraphes y sont numérotés. Elle décrit la djemâa, assemblée de village présente en Kabylie, dans l'Aurès, au Mzab et au Maroc (§ 2-11), son affaiblissement sous la colonisation (§ 19-21) et l'ameni des Touareg (§ 26-35). Au XIXe siècle, en Kabylie, « étaient tenus d'y assister les hommes en âge de porter les armes » (§ 6)."
+      },
+      {
+        "title": "Glottolog 5.2 – classification génétique \"Berber [berb1260]\", 8 branches immédiates (Awjilah, Ghadames, Greater Zenatic, Kabyle-Atlas Berber, Nafusi, Tuareg, Unclassified Berber, Western Berber)",
+        "url": "https://glottolog.org/resource/languoid/id/berb1260",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice de la famille Berber, glottocode berb1260, lue le 3 novembre 2026."
+      },
+      {
+        "title": "Wikidata — Berbères (Q45315)",
+        "url": "https://www.wikidata.org/wiki/Q45315",
+        "tier": "unverified",
+        "source_kind": "community",
+        "notes": "Catalogue d'identifiants ouvert, lu le 3 novembre 2026 : l'élément Q45315 a pour libellé « Berbères », « groupe ethnique autochtone d'Afrique du Nord »."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Imazighen, au singulier Amazigh, sont les peuples berbères d'Afrique du Nord et du Sahara. On les appelle aussi Berbères, un nom venu de l'arabe, et les Grecs les nommaient Libyens.",
+      "followUp": "D'où vient le nom Berbères, et pourquoi beaucoup lui préfèrent-ils Imazighen ?"
+    },
+    "gaps": [
+      {
+        "field": "content.organization.ageClassSystems",
+        "reason": "Nous n'avons pas trouvé de source qui décrive des classes d'âge organisées chez les peuples berbères ; nous avons consulté l'Encyclopédie berbère, notamment sa notice sur l'assemblée de village."
+      },
+      {
+        "field": "content.demography.distributionByCountry",
+        "reason": "Nous n'avons pas trouvé de chiffre récent et daté du nombre de berbérophones pour l'Algérie, la Libye, la Tunisie, le Mali, le Niger, le Burkina Faso, la Mauritanie et l'Égypte. Nous donnons la part de la population estimée par Salem Chaker en 2013 quand il l'indique."
       }
     ]
   },
@@ -229,6 +333,47 @@
         "shortLine": "Le nom que se donnent des Berbères ; il est devenu le nom commun de tous.",
         "periodLabel": "Formes proches dès 500 avant notre ère ; en usage aujourd'hui",
         "accounts": [
+          {
+            "period": {
+              "from": 2011,
+              "to": 2016,
+              "label": "2011 et 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Imazighen a une forme féminine, tamazight, qui désigne la langue, selon Salem Chaker. Cette forme entre dans les constitutions : le Maroc fait de l'amazighe une langue officielle en 2011, et l'Algérie écrit en 2016 que « Tamazight est également langue nationale et officielle ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026, puis relue le 3 novembre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 1"
+              },
+              {
+                "title": "Constitution du Royaume du Maroc de 2011, article 5 (traduction anglaise, Constitute Project)",
+                "author": "Royaume du Maroc",
+                "year": 2011,
+                "url": "https://www.constituteproject.org/constitution/Morocco_2011",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Traduction anglaise de Jefri J. Ruchti (William S. Hein & Co., 2012), lue le 3 novembre 2026. L'article 5 fait de l'arabe la langue officielle de l'État et dit que le tamazight (« amazighe ») est aussi une langue officielle de l'État."
+              },
+              {
+                "title": "Loi n° 16-01 du 6 mars 2016 portant révision constitutionnelle, Journal officiel de la République algérienne n° 14 du 7 mars 2016",
+                "author": "République algérienne démocratique et populaire",
+                "year": 2016,
+                "url": "https://www.joradp.dz/FTP/jo-francais/2016/F2016014.pdf",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 6",
+                "notes": "Traduction française officielle du Journal officiel, publiée par le Secrétariat général du Gouvernement. Lue le 3 novembre 2026. L'article 4 dispose : « Tamazight est également langue nationale et officielle. » Il crée une Académie algérienne de la langue amazighe. Le préambule nomme l'Islam, l'Arabité et l'Amazighité comme composantes de l'identité du pays."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1986,
@@ -339,11 +484,11 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Sens proposé"
+              "from": 1950,
+              "to": 1951,
+              "label": "Proposée en 1950-1951"
             },
-            "statement": "Le nom Imazighen viendrait, sous sa forme touarègue Amāheɣ, d'un verbe qui veut dire « piller », selon Charles de Foucauld. Salem Chaker, qui rapporte cette explication, la juge impossible à défendre pour un linguiste.",
+            "statement": "Le nom Imazighen viendrait, sous sa forme touarègue Amāheɣ, d'un verbe qui veut dire « piller », selon Charles de Foucauld, dans son dictionnaire touareg-français publié en 1950-1951. Salem Chaker, qui rapporte cette explication, la juge impossible à défendre pour un linguiste.",
             "hypothesisGroup": "sens-amazigh",
             "sources": [
               {
@@ -353,18 +498,40 @@
                 "url": "https://journals.openedition.org/encyclopedieberbere/2465",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
-                "page": "§ 31-34"
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026, puis relue le 3 novembre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 31-34 et bibliographie"
+              }
+            ],
+            "era": "colonial"
+          },
+          {
+            "period": {
+              "from": 1957,
+              "to": 1957,
+              "label": "Proposée en 1957"
+            },
+            "statement": "Le nom Imazighen viendrait d'une racine qui veut dire « rouge », selon T. Sarnelli en 1957. Salem Chaker trouve cette explication peu convaincante pour un linguiste.",
+            "hypothesisGroup": "sens-amazigh",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026, puis relue le 3 novembre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 35-36 et bibliographie"
               }
             ]
           },
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Sens proposé"
+              "from": 1950,
+              "to": 1972,
+              "label": "Proposée en 1950, reprise en 1972"
             },
-            "statement": "Le nom Imazighen viendrait d'une racine qui veut dire « rouge », selon T. Sarnelli. Salem Chaker trouve cette explication peu convaincante pour un linguiste.",
+            "statement": "Le nom Imazighen serait proche d'un verbe touareg du sud qui veut dire « marcher d'un pas fier, comme un noble », selon K. G. Prasse en 1972, après F. Nicolas en 1950. Salem Chaker juge l'idée possible, mais non démontrée.",
             "hypothesisGroup": "sens-amazigh",
             "sources": [
               {
@@ -374,31 +541,11 @@
                 "url": "https://journals.openedition.org/encyclopedieberbere/2465",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
-                "page": "§ 35-36"
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026, puis relue le 3 novembre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 37-38 et bibliographie"
               }
-            ]
-          },
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Sens proposé"
-            },
-            "statement": "Le nom Imazighen serait proche d'un verbe touareg du sud qui veut dire « marcher d'un pas fier, comme un noble », selon K. G. Prasse, après F. Nicolas. Salem Chaker juge l'idée possible, mais non démontrée.",
-            "hypothesisGroup": "sens-amazigh",
-            "sources": [
-              {
-                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
-                "author": "Salem Chaker",
-                "year": 1986,
-                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
-                "tier": "referenced",
-                "source_kind": "academic",
-                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
-                "page": "§ 37-38"
-              }
-            ]
+            ],
+            "era": "colonial"
           },
           {
             "period": {
@@ -461,7 +608,8 @@
                 "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
                 "page": "§ 18-19"
               }
-            ]
+            ],
+            "era": "polity"
           },
           {
             "period": {
@@ -469,7 +617,7 @@
               "to": -401,
               "label": "Vers 500 avant notre ère, puis au Ve siècle avant notre ère"
             },
-            "statement": "Le nom Imazighen a des formes proches chez les géographes grecs : Mazyes chez Hécatée de Milet, qui écrit vers 500 avant notre ère, puis Maxyes chez Hérodote, selon Salem Chaker, qui y reconnaît le même nom. Hérodote place ses Maxyes, des sédentaires, en Tunisie, selon J. Desanges. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qui le portent existaient déjà avant lui.",
+            "statement": "Le nom Imazighen a des formes proches chez les géographes grecs : Mazyes chez Hécatée de Milet, qui écrit vers 500 avant notre ère, puis Maxyes chez Hérodote, selon Salem Chaker, qui y reconnaît le même nom. Hérodote place ses Maxyes, des sédentaires, en Tunisie, selon J. Desanges. C'est la plus ancienne trace de ce nom que nous connaissons. Les peuples qui le portent existaient déjà avant lui.",
             "formAsWritten": "Mazyes",
             "birth": true,
             "sources": [
@@ -503,7 +651,8 @@
                 "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
                 "page": "p. 465"
               }
-            ]
+            ],
+            "era": "polity"
           }
         ]
       },
@@ -648,11 +797,49 @@
           },
           {
             "period": {
+              "from": 1332,
+              "to": 1406,
+              "label": "XIVe siècle, chez Ibn Khaldoun"
+            },
+            "era": "polity",
+            "statement": "Le nom Berbères viendrait du mot arabe berbera, « un mélange de cris inintelligibles », selon un récit que rapporte l'historien Ibn Khaldoun. Un roi du Yémen, Ifricos, se serait écrié « Quelle berbera est la vôtre ! » en entendant leur langue, et on les aurait nommés Berbères pour cette raison.",
+            "hypothesisGroup": "origine-berberes",
+            "actors": [
+              {
+                "name": "Ibn Khaldoun",
+                "role": "rapporte ce récit au XIVe siècle"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome I",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1852,
+                "url": "https://archive.org/details/ibn-khaldun-histoire-des-berberes-et-des-dynasties-musulmanes-de-l-afrique-septentrionale-v-1",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 168",
+                "notes": "Traduction de William Mac Guckin de Slane, publiée à Alger en 1852 par ordre du ministre de la Guerre, pendant la conquête française : c'est une traduction de l'époque coloniale. Lue dans la numérisation d'Internet Archive le 3 novembre 2026. Ibn Khaldoun écrit : « Voici comment on raconte la chose » ; le roi s'écrie « Quelle berbera est la vôtre ! » et « Le mot berbera signifie, en arabe, un mélange de cris inintelligibles »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 1 : L'évolution de l'historiographie de l'Afrique",
+                "author": "John D. Fage",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume. Ibn Khaldūn, « Nord-Africain né à Tunis », y est daté 1332-1406.",
+                "page": "p. 47"
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 750,
               "to": 800,
               "label": "Seconde moitié du VIIIe siècle"
             },
-            "statement": "Le nom Berbères apparaît sous la forme arabe Barbar chez Ibn al-Kalbî, un auteur de la seconde moitié du VIIIe siècle, mort en 819 ou 821, selon Yves Modéran. Modéran ajoute que des récits transmis oralement, qui remonteraient à la fin du VIIe siècle, parlent déjà de Berbères. C'est la plus ancienne trace écrite de ce nom que le projet connaît. Les peuples qu'il désigne existaient déjà avant lui.",
+            "statement": "Le nom Berbères apparaît sous la forme arabe Barbar chez Ibn al-Kalbî, un auteur de la seconde moitié du VIIIe siècle, mort en 819 ou 821, selon Yves Modéran. Modéran ajoute que des récits transmis oralement, qui remonteraient à la fin du VIIe siècle, parlent déjà de Berbères. C'est la plus ancienne trace écrite de ce nom que nous connaissons. Les peuples qu'il désigne existaient déjà avant lui.",
             "formAsWritten": "Barbar",
             "birth": true,
             "sources": [
@@ -666,7 +853,8 @@
                 "notes": "Rome, École française de Rome, 2003. Lu en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
                 "page": "§ 19 et note 59"
               }
-            ]
+            ],
+            "era": "polity"
           },
           {
             "period": {
@@ -687,7 +875,8 @@
                 "notes": "Rome, École française de Rome, 2003. Lu en ligne sur OpenEdition le 18 octobre 2026 ; les paragraphes y sont numérotés.",
                 "page": "§ 18"
               }
-            ]
+            ],
+            "era": "polity"
           }
         ]
       },
@@ -719,7 +908,8 @@
                 "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
                 "page": "p. 463"
               }
-            ]
+            ],
+            "era": "polity"
           },
           {
             "period": {
@@ -728,7 +918,7 @@
               "label": "Sous Ramsès II, après 1317 avant notre ère"
             },
             "era": "polity",
-            "statement": "Le nom Libyens vient des Libou, un peuple que nomme pour la première fois une stèle d'el-Alamein, du temps de Ramsès II, selon J. Desanges. Les Grecs ont tiré de ce nom celui de la Libye, d'abord pour le pays de ce peuple, puis pour toute l'Afrique. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne existaient déjà avant lui.",
+            "statement": "Le nom Libyens vient des Libou, un peuple que nomme pour la première fois une stèle d'el-Alamein, du temps de Ramsès II, selon J. Desanges. Les Grecs ont tiré de ce nom celui de la Libye, d'abord pour le pays de ce peuple, puis pour toute l'Afrique. C'est la plus ancienne trace de ce nom que nous connaissons. Les peuples qu'il désigne existaient déjà avant lui.",
             "formAsWritten": "Libou",
             "birth": true,
             "sources": [
