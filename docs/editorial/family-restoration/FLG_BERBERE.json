@@ -1,56 +1,34 @@
 {
   "familyId": "FLG_BERBERE",
-  "generatedAt": "2026-09-07",
+  "generatedAt": "2026-11-03",
   "archivePath": "dataset/source/afrik/archive/famille_linguistique/FLG_BERBERE.txt",
   "fichePath": "dataset/source/afrik/famille_linguistique/FLG_BERBERE.json",
-  "charRatio": 0.637,
-  "anchorBudget": 44,
+  "charRatio": 2.286,
+  "anchorBudget": 16,
   "sections": [
     {
       "heading": "## HEADER DÉCOLONIAL (obligatoire)",
       "target": "content.decolonialHeader",
       "emptyTarget": false,
       "archiveChars": 8411,
-      "jsonChars": 231,
+      "jsonChars": 6666,
       "missingAnchors": [
         "1840",
         "1872",
         "1873",
-        "1883",
         "1906",
         "1917",
         "1920",
-        "1939",
-        "1940",
         "1956",
-        "1962",
-        "1966",
         "1975",
         "1979",
-        "1980",
-        "1989",
-        "1995",
-        "2001",
-        "2024",
-        "Académie Berbère",
         "Berbère Télévision",
         "Bureaux Arabes",
-        "Civilisations Orientales",
-        "Colonial Algeria",
-        "Congrès Mondial",
         "Culture Amazighe",
-        "Fanny Colonna",
-        "Ibn Khaldoun",
-        "Imperial Identities",
-        "Institut National",
         "Institut Royal",
         "Jean Amrouche",
         "Kateb Yacine",
-        "Mohand Bessaoud",
-        "Mouloud Mammeri",
-        "Mouvement Culturel",
-        "Patricia Lorcin",
-        "Robert Ageron"
+        "Mohand Bessaoud"
       ],
       "missingSubheadings": []
     },
@@ -59,7 +37,7 @@
       "target": "content.generalInfo",
       "emptyTarget": false,
       "archiveChars": 475,
-      "jsonChars": 294,
+      "jsonChars": 917,
       "missingAnchors": [],
       "missingSubheadings": []
     },
@@ -77,8 +55,8 @@
       "target": "content.linguisticCharacteristics",
       "emptyTarget": false,
       "archiveChars": 2108,
-      "jsonChars": 1802,
-      "missingAnchors": ["Famille Afro"],
+      "jsonChars": 1861,
+      "missingAnchors": [],
       "missingSubheadings": []
     },
     {
@@ -86,14 +64,8 @@
       "target": "content.historyAndOrigins",
       "emptyTarget": false,
       "archiveChars": 9146,
-      "jsonChars": 6249,
-      "missingAnchors": [
-        "Caire (1974)",
-        "Les Égyptiens",
-        "Maurétanie Tingitane",
-        "The Civilizations",
-        "The Languages"
-      ],
+      "jsonChars": 7364,
+      "missingAnchors": [],
       "missingSubheadings": []
     },
     {
@@ -101,7 +73,7 @@
       "target": "content.distribution",
       "emptyTarget": false,
       "archiveChars": 416,
-      "jsonChars": 66,
+      "jsonChars": 79,
       "missingAnchors": [],
       "missingSubheadings": []
     },
@@ -110,7 +82,7 @@
       "target": "content.sources",
       "emptyTarget": false,
       "archiveChars": 345,
-      "jsonChars": 4509,
+      "jsonChars": 12592,
       "missingAnchors": [],
       "missingSubheadings": []
     }
