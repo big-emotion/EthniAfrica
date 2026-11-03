@@ -3,9 +3,9 @@
   "nameFr": "Gabon",
   "nameEn": "Gabon",
   "nameOfficial": "République gabonaise",
-  "summary": "Le Gabon doit son nom au portugais « Gabão », la gabardine, dont l'estuaire du Komo rappelait la forme aux navigateurs du XVe siècle. Peuplé par les migrations bantoues, il compte plus de quarante peuples — Fang, Punu, Nzebi, Teke, Myene, Mbete. Ses masques, dont le ngil fang, comptent parmi les plus connus d'Afrique centrale.",
-  "etymology": "Le nom \"Gabon\" viendrait du portugais \"Gabão\" (gabardine, manteau), que les navigateurs portugais auraient donné au XVe siècle à l'estuaire du fleuve Komo, dont la forme rappellerait une gabardine. Le terme a été adapté en \"Gabon\" par les Français.",
-  "nameOriginActor": "Le nom \"Gabon\" a été donné par les navigateurs portugais au XVe siècle en référence à l'estuaire du fleuve Komo. Les Français ont adapté ce nom lors de la colonisation. Le nom a été officialisé lors de l'indépendance en 1960.",
+  "summary": "Le nom Gabon vient du rio do Gabão, le nom que les navigateurs portugais donnaient à un estuaire de la côte atlantique ; ce nom est écrit pour la première fois vers 1505-1508. Il viendrait du portugais gabão, un manteau de marin, à cause de la forme de cet estuaire, selon un groupe de travail gabonais sur les noms de lieux. Le nom est passé au comptoir français fondé sur ses rives, puis à la colonie et à l'État indépendant en 1960, où le français côtoie des langues bantoues comme le fang, le punu, le nzebi et le myene.",
+  "etymology": "Le nom Gabon vient de rio do Gabão, « le fleuve du Gabão », le nom que les Portugais donnaient à l'estuaire où se trouve aujourd'hui Libreville. Le capitaine portugais Duarte Pacheco Pereira l'écrit ainsi dans son Esmeraldo de situ orbis, vers 1505-1508. Ce nom viendrait du portugais gabão, un manteau de marin ou caban : l'estuaire en aurait vaguement eu la forme, selon le groupe de travail gabonais de la terminologie toponymique, dans un document présenté aux Nations unies en 2006. Ce document ne cite pas de source pour cette explication ; l'Université Laval la rapporte aussi. Nous n'avons pas trouvé d'autre explication publiée.",
+  "nameOriginActor": "Le nom apparaît d'abord chez des navigateurs portugais, qui appelaient l'estuaire rio do Gabão. Duarte Pacheco Pereira, vers 1505-1508, écrit seulement que ce grand fleuve « a pour nom » rio do Gabão, sans dire qui l'a nommé. Les Français reprennent le nom pour le comptoir qu'ils fondent sur l'estuaire en 1843, puis pour la colonie. En 1958, l'Assemblée territoriale du Gabon le garde en proclamant la République gabonaise, qui devient indépendante le 17 août 1960.",
   "nameHistory": {
     "summary": "Le nom Gabon désigne un pays d'Afrique centrale, la République gabonaise. Il a d'abord désigné l'estuaire d'un fleuve, que les navigateurs portugais appelaient rio do Gabão, puis le comptoir français établi sur ses rives. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas l'explication que donnent les sources.",
     "names": [
@@ -67,7 +67,7 @@
                 "tier": "official",
                 "source_kind": "government",
                 "page": "p. 2",
-                "notes": "Document présenté à Vienne, 28 mars-4 avril 2006, lu en ligne le 10 octobre 2026. « Rio do Gabao » y est présenté comme le nom que les Portugais ont donné à l'estuaire, « parce qu'il avait vaguement la forme d'un manteau de marin ou caban ». Le document ne cite pas de source pour cette explication."
+                "notes": "Document présenté à Vienne, 28 mars-4 avril 2006, lu en ligne le 10 octobre puis le 3 novembre 2026. « Rio do Gabao » y est présenté comme le nom que les Portugais ont donné à l'estuaire, « parce qu'il avait vaguement la forme d'un manteau de marin ou caban ». Le document ne cite pas de source pour cette explication. Il rapporte aussi que le comptoir du Gabon naît en 1843, sur des terres cédées par des traités entre la France et les chefs mpongwe, « propriétaires coutumiers des rives de l'Estuaire », et qu'en 1849 des esclaves libérés du navire Elizia sont installés au village de Libreville."
               },
               {
                 "title": "Gabon : le Gabon sous administration française",
@@ -206,11 +206,12 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Origine non datée"
+              "from": 2006,
+              "to": 2006,
+              "label": "Explication publiée en 2006"
             },
-            "statement": "Le nom Gabon viendrait du portugais gabão, un manteau de marin ou caban : les Portugais auraient donné ce nom à l'estuaire parce qu'il en avait vaguement la forme, selon le groupe de travail gabonais de la terminologie toponymique.",
+            "era": "modern",
+            "statement": "Le nom Gabon viendrait du portugais gabão, un manteau de marin ou caban : les Portugais auraient donné ce nom à l'estuaire parce qu'il en avait vaguement la forme, selon le groupe de travail gabonais de la terminologie toponymique. L'Université Laval rapporte la même explication.",
             "hypothesisGroup": "origine du nom Gabon",
             "sources": [
               {
@@ -221,7 +222,16 @@
                 "tier": "official",
                 "source_kind": "government",
                 "page": "p. 2",
-                "notes": "Document présenté à Vienne, 28 mars-4 avril 2006, lu en ligne le 10 octobre 2026. « Rio do Gabao » y est présenté comme le nom que les Portugais ont donné à l'estuaire, « parce qu'il avait vaguement la forme d'un manteau de marin ou caban ». Le document ne cite pas de source pour cette explication."
+                "notes": "Document présenté à Vienne, 28 mars-4 avril 2006, lu en ligne le 10 octobre puis le 3 novembre 2026. « Rio do Gabao » y est présenté comme le nom que les Portugais ont donné à l'estuaire, « parce qu'il avait vaguement la forme d'un manteau de marin ou caban ». Le document ne cite pas de source pour cette explication. Il rapporte aussi que le comptoir du Gabon naît en 1843, sur des terres cédées par des traités entre la France et les chefs mpongwe, « propriétaires coutumiers des rives de l'Estuaire », et qu'en 1849 des esclaves libérés du navire Elizia sont installés au village de Libreville."
+              },
+              {
+                "title": "Gabon, dans L'aménagement linguistique dans le monde (CEFAN, Université Laval)",
+                "author": "CEFAN, Université Laval",
+                "year": 2023,
+                "url": "https://axl.cefan.ulaval.ca/afrique/gabon.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page de l'Université Laval mise à jour le 16 novembre 2023, lue le 3 novembre 2026 ; elle ne nomme pas son auteur. Les Portugais, arrivés dans l'estuaire en 1472 selon la page, « baptisèrent le pays Rio de Gabão, du fait de sa forme semblable à un caban ». Léon M'Ba est le premier président de la République ; il meurt le 28 novembre 1967 et le vice-président Albert-Bernard Bongo lui succède. Omar Bongo meurt le 8 juin 2009 ; le 3 septembre 2009, son fils Ali Bongo Ondimba devient le troisième président du Gabon."
               }
             ]
           }
@@ -232,146 +242,128 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Gabão (portugais, XVe siècle)",
-        "Colonie française du Gabon (1885-1960)"
+        "Rio do Gabão (portugais, vers 1505-1508)",
+        "Comptoir du Gabon (à partir de 1843)",
+        "Colonie du Gabon, en Afrique-Équatoriale française (1910-1958)"
       ],
-      "antiquity": "Le territoire actuel du Gabon était peuplé de diverses sociétés bantoues sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs territoires.",
-      "middleAges": "Migrations bantoues vers la région. Développement de chefferies et royaumes locaux dans les forêts équatoriales. Pas de nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Mosaïque de chefferies et royaumes autonomes : chefferies Fang, Punu, Nzebi, Teke, Myene, Mbete, et autres peuples bantous forestiers. Les Portugais utilisaient le terme \"Gabão\" pour désigner la région de l'estuaire du Komo.",
-      "colonization": "1885-1960 : Colonie française du Gabon (partie de l'Afrique-Équatoriale française, AEF). Les Français ont créé la colonie du Gabon en 1885. Le territoire était administré comme une colonie française jusqu'à l'indépendance en 1960.",
-      "contemporary": "1960 : Indépendance du Gabon (17 août 1960), proclamation de la République gabonaise. Le nom \"Gabon\" est officialisé."
+      "antiquity": "Nous n'avons pas encore étudié les noms donnés à ce territoire avant l'arrivée des Portugais, à la fin du XVe siècle.",
+      "middleAges": "Les plus anciens textes que nous ayons lus sur ce territoire sont portugais et datent du début du XVIe siècle ; nous n'avons pas encore étudié les noms plus anciens.",
+      "precolonial": "Le nom Gabon est d'abord celui d'un estuaire. Vers 1505-1508, le capitaine portugais Duarte Pacheco Pereira décrit un grand fleuve très peuplé, qui « a pour nom » rio do Gabão. En 1668, l'auteur hollandais Olfert Dapper appelle Gabon le fleuve et le pays de son estuaire ; il rapporte que les habitants nomment Pongo l'île où vit leur roi, le Manipongo, « seigneur de Pongo ». Le nom viendrait du portugais gabão, un manteau de marin, à cause de la forme de l'estuaire, selon le groupe de travail gabonais de la terminologie toponymique.",
+      "colonization": "Les Français reprennent le nom de l'estuaire. Le comptoir du Gabon naît en 1843 sur des terres cédées par des chefs mpongwe, et en 1849 des esclaves libérés sont installés tout près, au village de Libreville, selon le groupe de travail gabonais de la terminologie toponymique. En 1910, le Gabon devient l'un des quatre territoires de l'Afrique-Équatoriale française, selon le Permanent Committee on Geographical Names britannique.",
+      "contemporary": "En 1958, le Gabon devient une république autonome au sein de la Communauté française, puis un État indépendant en août 1960, sous le nom de République gabonaise. La Constitution de 2024 reprend les deux formes : « Le Gabon est une République », et « la République Gabonaise » adopte le français comme langue officielle de travail."
     },
     "kingdoms": [
       {
-        "name": "Chefferies Fang",
-        "period": "Précolonial - présent",
+        "name": "Royaume de Pongo, dans l'estuaire du Gabon",
+        "period": "Décrit en 1668",
         "entryType": "polity",
-        "dominantPeoples": ["Fang"],
-        "politicalCenters": ["Chefferies lignagères traditionnelles"],
-        "historicalRole": "Chefferies Fang puissantes, système lignager, traditions forestières, masques fang (notamment ngil), boîtes à reliques (byeri). Migration nord-sud depuis le Cameroun septentrional. Rôle politique majeur dans le Gabon contemporain."
+        "timeRange": {
+          "startYear": 1668,
+          "endYear": 1668,
+          "precision": "approximate",
+          "datingNote": "Les bornes correspondent à la description publiée par Olfert Dapper en 1668. Les textes que nous avons lus ne disent ni quand ce royaume est né, ni quand il a pris fin."
+        },
+        "dominantPeoples": ["Mpongwe"],
+        "politicalCenters": ["Île de Pongo, dans l'estuaire"],
+        "historicalRole": "Olfert Dapper décrit en 1668 un roi qui vit sur l'île de Pongo et que les habitants appellent Manipongo, « seigneur de Pongo ». L'historien Elikia M'Bokolo y voit le seul État organisé de la région à cette époque ; les Portugais avaient trouvé des Mpongwe dans l'estuaire dès la fin du XVe siècle."
       },
       {
-        "name": "Chefferies Punu",
-        "period": "Précolonial - présent",
-        "entryType": "polity",
-        "dominantPeoples": ["Punu"],
-        "politicalCenters": ["Chefferies traditionnelles"],
-        "historicalRole": "Chefferies Punu, traditions artistiques réputées (masques blancs punu), structures lignagères. Traditions forestières."
-      },
-      {
-        "name": "Chefferies Nzebi",
-        "period": "Précolonial - présent",
-        "entryType": "polity",
-        "dominantPeoples": ["Nzebi"],
-        "politicalCenters": ["Chefferies traditionnelles"],
-        "historicalRole": "Chefferies Nzebi, traditions forestières, structures lignagères."
-      },
-      {
-        "name": "Chefferies Teke",
-        "period": "Précolonial - présent",
-        "entryType": "polity",
-        "dominantPeoples": ["Teke"],
-        "politicalCenters": ["Chefferies traditionnelles"],
-        "historicalRole": "Chefferies Teke, traditions forestières, structures lignagères. Relations avec les Teke du Congo."
-      },
-      {
-        "name": "Chefferies Myene",
-        "period": "Précolonial - présent",
-        "entryType": "polity",
-        "dominantPeoples": ["Myene"],
-        "politicalCenters": ["Chefferies traditionnelles côtières"],
-        "historicalRole": "Chefferies Myene côtières, traditions maritimes, commerce côtier. Contacts avec les Européens."
-      },
-      {
-        "name": "Colonie française du Gabon",
-        "period": "1885 - 1960",
+        "name": "Comptoir puis colonie française du Gabon",
+        "period": "1843 - 1960",
         "entryType": "colonial",
         "timeRange": {
-          "startYear": 1885,
+          "startYear": 1843,
           "endYear": 1960,
           "precision": "year"
         },
-        "dominantPeoples": [
-          "Tous les peuples gabonais sous domination française"
-        ],
-        "politicalCenters": ["Libreville (capitale coloniale)"],
-        "historicalRole": "Colonie française, intégration dans l'AEF. Exploitation économique (bois, caoutchouc, puis pétrole), développement de l'administration coloniale, résistance des peuples autochtones. Développement du mouvement indépendantiste au XXe siècle."
+        "dominantPeoples": ["Peuples du Gabon"],
+        "politicalCenters": ["Libreville"],
+        "historicalRole": "Le comptoir du Gabon naît en 1843 sur des terres cédées par des traités entre la France et les chefs mpongwe ; en 1849, des esclaves libérés sont installés au village de Libreville, qui deviendra la capitale. En 1910, le Gabon devient l'un des quatre territoires de l'Afrique-Équatoriale française, puis une république autonome au sein de la Communauté française en 1958, avant son indépendance en août 1960."
+      },
+      {
+        "name": "République gabonaise",
+        "period": "Depuis 1960",
+        "entryType": "modern",
+        "timeRange": {
+          "startYear": 1960,
+          "ongoing": true,
+          "precision": "year"
+        },
+        "dominantPeoples": ["Peuples du Gabon"],
+        "politicalCenters": ["Libreville"],
+        "historicalRole": "La République gabonaise est indépendante depuis le 17 août 1960. Léon M'Ba, son premier président, meurt en 1967 ; Omar Bongo lui succède jusqu'à sa mort en 2009, puis son fils Ali Bongo Ondimba devient président. Un coup d'État militaire le démet le 30 août 2023 ; une nouvelle Constitution est adoptée par référendum et promulguée le 19 décembre 2024, et Brice Oligui Nguema est élu président le 12 avril 2025."
       }
     ],
     "majorPeoples": [
       {
         "name": "Fang",
-        "selfAppellation": "Fan / Pangwe",
-        "exonyms": [
-          "Fang (terme utilisé par les Européens)",
-          "\"Pahouins\" (ancienne étiquette coloniale",
-          "terme problématique)"
-        ],
+        "selfAppellation": "Fang",
+        "exonyms": ["Pangwe", "Pahouin", "Pamue"],
         "peopleId": "PPL_FANG",
-        "mainRegion": "Nord du Gabon (forêts équatoriales)",
-        "languages": ["Fang (fan", "ISO 639-3)", "français"],
+        "mainRegion": "Nord du Gabon",
+        "languages": ["Fang (fan)", "français"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Les personnes concernées se nomment Fan ou Pangwe. Fang est le nom donné de l'extérieur le plus courant. Pahouins est une ancienne désignation coloniale qui peut être méprisante ; elle est donc à éviter."
+        "appellationRemarks": "Fang est le nom que ce peuple se donne. Peu après 1840, des traitants de la côte annoncent dans les comptoirs de l'estuaire l'arrivée des Mpangwe dans l'arrière-pays ; les Européens en font Pahouins en français et Pamue en espagnol, selon Pierre Alexandre (1965). Le fang est aussi parlé au Cameroun et en Guinée équatoriale."
       },
       {
         "name": "Punu",
-        "selfAppellation": "Punu",
-        "exonyms": ["Punu (terme utilisé par les Européens)"],
+        "selfAppellation": "Bapunu",
+        "exonyms": [],
         "peopleId": "PPL_PUNU",
         "mainRegion": "Sud du Gabon",
-        "languages": ["Punu (puu", "ISO 639-3)", "français"],
+        "languages": ["Punu ou yipunu (puu)", "français"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Punu\" est l'auto-appellation. Pas de terme péjoratif connu. Traditions artistiques réputées (masques blancs punu)."
+        "appellationRemarks": "Punu est le nom que ce peuple se donne, Bapunu au pluriel. Sa langue, le punu, s'écrit aussi yipunu ou ipunu ; elle est parlée au Gabon et en République du Congo."
       },
       {
         "name": "Nzebi",
-        "selfAppellation": "Nzebi",
-        "exonyms": ["Nzebi (terme utilisé par les Européens)"],
+        "selfAppellation": "Banzèbi (au pluriel), Munzèbi (pour une personne)",
+        "exonyms": ["Bandjabi"],
         "peopleId": "PPL_NZEBI",
-        "mainRegion": "Centre et Sud du Gabon",
-        "languages": ["Nzebi (nzb", "ISO 639-3)", "français"],
+        "mainRegion": "Centre et sud du Gabon",
+        "languages": ["Nzebi ou njebi (nzb)", "français"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Nzebi\" est l'auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Nzebi est le nom que ce peuple se donne. On écrit aussi Njebi, Ndjabi ou Bandjabi ; la langue est parlée au Gabon et en République du Congo."
       },
       {
         "name": "Teke",
         "selfAppellation": "Teke",
-        "exonyms": ["Teke (terme utilisé par les Européens)"],
+        "exonyms": ["Tio", "Anzique"],
         "peopleId": "PPL_TEKE",
         "mainRegion": "Est du Gabon",
-        "languages": ["Teke (teg", "ISO 639-3)", "français"],
+        "languages": ["Latege ou teke-tege (teg)", "français"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Teke\" est l'auto-appellation. Pas de terme péjoratif connu. Relations avec les Teke du Congo."
+        "appellationRemarks": "Les Teke vivent au Gabon, en République du Congo et en République démocratique du Congo. Au Gabon, leur langue est le latege, aussi appelé teke-tege ou iteghe."
       },
       {
         "name": "Myene",
-        "selfAppellation": "Myene",
-        "exonyms": ["Myene (terme utilisé par les Européens)"],
+        "selfAppellation": "Myènè",
+        "exonyms": [],
         "peopleId": "PPL_MYENE",
-        "mainRegion": "Côte du Gabon (Libreville, Port-Gentil)",
-        "languages": ["Myene (mye", "ISO 639-3)", "français"],
+        "mainRegion": "Côte du Gabon et basse vallée de l'Ogooué (Libreville, Port-Gentil, Lambaréné)",
+        "languages": ["Myene (mye)", "français"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Myene\" est l'auto-appellation. Pas de terme péjoratif connu. Traditions maritimes et côtières."
+        "appellationRemarks": "Myene est d'abord le nom d'une langue, que partagent plusieurs peuples de la côte : les Mpongwe de l'estuaire, les Orungu, les Galwa, les Nkomi, les Adyumba et les Enenga. La langue est aussi appelée omyene ou mpongwe."
       },
       {
         "name": "Mbete",
         "selfAppellation": "Mbete",
-        "exonyms": ["Mbete (terme utilisé par les Européens)"],
+        "exonyms": ["Obamba"],
         "peopleId": "PPL_MBETE",
-        "mainRegion": "Centre du Gabon",
-        "languages": ["Mbete (zmt", "ISO 639-3)", "français"],
+        "mainRegion": "Gabon et République du Congo",
+        "languages": ["Mbere ou mbete (mdt)", "français"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Mbete\" est l'auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Mbete est le nom de ce peuple et de sa langue, que l'on écrit aussi Mbere, Mbédé ou Mbété. Le mbere fait partie des langues bantoues les plus parlées du Gabon."
       },
       {
-        "name": "Autres peuples bantous",
-        "selfAppellation": "Variées selon les groupes",
-        "exonyms": ["Variées selon les groupes"],
-        "peopleId": null,
-        "mainRegion": "Diverses régions du Gabon",
-        "languages": ["Langues bantoues diverses", "français"],
+        "name": "Kota",
+        "selfAppellation": "Bakota",
+        "exonyms": ["Kota-Kota"],
+        "peopleId": "PPL_KOTA",
+        "mainRegion": "Nord-est du Gabon, autour de l'Ivindo et de l'Ogooué",
+        "languages": ["Kota ou ikota (koq)", "français"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Chaque groupe a sa propre auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Kota désigne un ensemble de peuples ; l'un d'eux se nomme lui-même Bakota. Sa langue, le kota, s'écrit aussi ikota ; elle est parlée au Gabon et en République du Congo."
       }
     ],
     "culture": {
@@ -390,11 +382,11 @@
           "isoCode": "puu"
         },
         {
-          "name": "Nzebi",
+          "name": "Nzebi (njebi)",
           "isoCode": "nzb"
         },
         {
-          "name": "Teke",
+          "name": "Latege (teke)",
           "isoCode": "teg"
         },
         {
@@ -402,26 +394,27 @@
           "isoCode": "mye"
         },
         {
-          "name": "Mbete",
-          "isoCode": "zmt"
+          "name": "Mbere (mbete)",
+          "isoCode": "mdt"
         },
         {
-          "name": "langues bantoues diverses"
+          "name": "Kota",
+          "isoCode": "koq"
         }
       ],
-      "culturalTraditions": "Diversité culturelle importante reflétant la mosaïque ethnique du Gabon (plus de 40 ethnies). Traditions bantoues forestières : masques fang (notamment ngil), masques blancs punu, boîtes à reliques (byeri), traditions d'initiation. Musique et danse traditionnelles variées. Cérémonies de passage, rites d'initiation, fêtes traditionnelles. Art gabonais réputé (masques, sculptures, reliquaires).",
-      "dominantReligions": "Christianisme (catholicisme majoritaire, protestantisme en croissance), religions traditionnelles africaines (syncrétisme fréquent, culte des ancêtres, masques, byeri)",
-      "lifestyles": "Agriculture (cultures vivrières, cacao, café), exploitation forestière (bois précieux), pêche (côtière), commerce et activités urbaines (zones urbaines, Libreville, Port-Gentil). Urbanisation importante. Économie basée sur l'exploitation pétrolière (première source de revenus), l'exploitation forestière, et les services. Le Gabon est l'un des pays les plus riches d'Afrique subsaharienne.",
-      "socialOrganization": "Organisation en chefferies lignagères traditionnelles (Fang, Punu, Nzebi, Teke, Myene, Mbete), structures claniques patrilinéaires. Importance des lignages et des familles étendues. Rôle des conseils d'anciens. Traditions d'initiation et de passage à l'âge adulte. Clanisme fort (Fang).",
-      "regionalRelations": "Relations historiques avec le Cameroun (Fang, commerce, frontière), le Congo (Teke, commerce, frontière), la Guinée équatoriale (Fang, commerce, frontière). Intégration dans la CEMAC (Communauté économique et monétaire de l'Afrique centrale). Relations commerciales et culturelles transfrontalières. Immigration importante de travailleurs (Cameroun, Congo, autres pays d'Afrique centrale)."
+      "culturalTraditions": "Les noms de lieux du Gabon gardent des récits locaux, que le groupe de travail gabonais de la terminologie toponymique a recueillis. Oyem viendrait d'un cri de ralliement fang, Mouila du mot punu muil, « corde », et Tchibanga d'une colline que les Punu appellent Yibang. Port-Gentil porte aussi le nom de Mandji, un arbre réputé pour ses vertus médicinales. La Constitution de 2024 engage l'État à protéger, promouvoir et enseigner les langues nationales.",
+      "dominantReligions": "Selon des estimations de responsables religieux, environ 80 % des habitants sont chrétiens, aux deux tiers catholiques et pour un tiers protestants, et environ 15 % sont musulmans. Le bwiti, qui mêle des éléments du christianisme aux croyances locales, le mwiri et le ndjobi font partie des religions pratiquées. Ces chiffres viennent du rapport américain sur la liberté religieuse publié en 2024, qui précise qu'ils varient beaucoup.",
+      "lifestyles": "Le Gabon est un pays très urbain : au recensement de 2013, 1 577 646 de ses 1 811 079 habitants vivaient en ville, et la Banque mondiale estime aujourd'hui ce taux à 80 %. L'économie repose en grande partie sur le pétrole, le manganèse et le bois, selon la Banque mondiale, qui souligne aussi la protection de la forêt tropicale.",
+      "socialOrganization": "Chaque peuple du Gabon a sa propre organisation sociale, et nous n'en avons pas encore fait la synthèse pour le pays. Les fiches des peuples en parlent. La Constitution de 2024 garantit l'égalité de tous les citoyens « sans distinction d'origine, de race, d'ethnie » et punit toute discrimination ethnique.",
+      "regionalRelations": "Le Gabon a pour voisins la Guinée équatoriale au nord-ouest, le Cameroun au nord et la République du Congo à l'est et au sud. Plusieurs de ses langues sont parlées des deux côtés de ces frontières : le fang au Cameroun et en Guinée équatoriale, le punu, le nzebi, le latege et le kota en République du Congo. Le Gabon et la Guinée équatoriale se disputent des îles de la baie de Corisco, dont Mbanié. Le pays accueille aussi beaucoup d'étrangers : 287 379 au recensement de 2013, soit 16 % des habitants."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement initial par les peuples bantous. Migrations bantoues vers la région. Développement de chefferies locales dans les forêts équatoriales.",
-      "middleAges": "Migrations bantoues continues. Développement de structures politiques locales. Contacts avec les peuples voisins.",
-      "precolonial": "Consolidation des chefferies Fang, Punu, Nzebi, Teke, Myene, Mbete. Migration des Fang depuis le Cameroun septentrional. Développement des traditions artistiques (masques, sculptures). Commerce régional. Contacts avec les Européens (Portugais, puis Français).",
-      "colonization": "1885 : Création de la colonie française du Gabon, intégration dans l'AEF. Période coloniale française (1885-1960), exploitation économique (bois, caoutchouc, puis pétrole), développement de l'administration coloniale, résistance des peuples autochtones. XXe siècle : Développement du mouvement indépendantiste.",
-      "independenceStruggle": "1950s-1960s : Mouvement pour l'indépendance mené par les dirigeants gabonais. 1960 : Indépendance du Gabon (17 août 1960), proclamation de la République gabonaise. Léon M'ba devient premier président.",
-      "postIndependence": "1960-1967 : Présidence de Léon M'ba. 1967-2009 : Présidence d'Omar Bongo (1967-2009), période de stabilité politique et de développement économique basé sur le pétrole. 2009-présent : Présidence d'Ali Bongo Ondimba (fils d'Omar Bongo). Défis : dépendance au pétrole, inégalités sociales, corruption. Le Gabon est l'un des pays les plus riches d'Afrique subsaharienne grâce à ses ressources pétrolières et forestières."
+      "ancientPeriods": "Nous n'avons pas encore étudié l'histoire ancienne du territoire gabonais à partir de sources que nous pouvons citer.",
+      "middleAges": "Nous n'avons pas encore étudié l'histoire de ce territoire avant l'arrivée des Portugais à partir de sources que nous pouvons citer.",
+      "precolonial": "Vers 1505-1508, Duarte Pacheco Pereira décrit l'estuaire du rio do Gabão comme très peuplé, et note que les Portugais n'y font pas encore de commerce. En 1668, Olfert Dapper décrit le royaume de Pongo, dans l'estuaire, dont le roi porte le titre de Manipongo. Peu après 1840, des traitants de la côte annoncent l'arrivée des Fang, qu'ils appellent Mpangwe, dans l'arrière-pays de l'estuaire ; l'explorateur Paul Belloni Du Chaillu les rencontre en 1856, selon Pierre Alexandre.",
+      "colonization": "La France fonde le comptoir du Gabon en 1843, sur des terres cédées par les chefs mpongwe de l'estuaire. En 1849, quarante-six esclaves libérés du navire négrier Elizia sont installés au village de Libreville. Plus au sud, la ville de Mandji prend le nom de Port-Gentil, d'après l'administrateur Émile Gentil. En 1910, le Gabon devient l'un des quatre territoires de l'Afrique-Équatoriale française.",
+      "independenceStruggle": "En 1958, le Gabon devient une république autonome au sein de la Communauté française. Il proclame son indépendance le 17 août 1960 ; Léon M'Ba, alors Premier ministre, devient le premier président de la République.",
+      "postIndependence": "Léon M'Ba meurt le 28 novembre 1967 et le vice-président Albert-Bernard Bongo, plus tard appelé Omar Bongo, lui succède. Après sa mort en 2009, son fils Ali Bongo Ondimba devient président le 3 septembre 2009. Un coup d'État militaire le démet le 30 août 2023, et l'Union africaine suspend le Gabon. Une nouvelle Constitution, adoptée par référendum, est promulguée le 19 décembre 2024 ; Brice Oligui Nguema est élu président le 12 avril 2025, et l'Union africaine lève la suspension le 30 avril. En août 2026, la Cour constitutionnelle valide le chiffre de 3 518 621 habitants issu d'un nouveau recensement, presque le double de celui de 2013, selon le journal Gabonreview."
     },
     "sources": [
       {
@@ -475,7 +468,165 @@
         "url": "https://web.archive.org/web/20251025152124/https://www.cia.gov/the-world-factbook/page-data/countries/gabon/page-data.json",
         "tier": "official",
         "source_kind": "government",
-        "notes": "Estimation : « Fang 23,5 %, Shira-Punu/Vili 20,6 %, Nzabi-Duma 11,2 %, Mbede-Teke 5,6 %, Myene 4,4 %, Kota-Kele 4,3 %, Okande-Tsogho 1,6 %, autres 12,6 %, étrangers 16,2 % ». Seules les parts des Fang et des Myene correspondent à un peuple de notre base. Les lignes qui regroupent plusieurs peuples (Shira-Punu/Vili, Nzabi-Duma, Mbede-Teke, Kota-Kele, Okande-Tsogho), les autres et les étrangers restent dans « Autres groupes ethniques ». Les parts des Punu (11,5 %) et des Nzebi (9 %) ne viennent pas de cette source, qui les compte dans des regroupements ; « Autres » (51,6 %) est le complément des parts listées. Le Factbook a cessé de paraître le 4 février 2026 ; copie lue le 6 octobre 2026."
+        "notes": "Estimation : « Fang 23,5 %, Shira-Punu/Vili 20,6 %, Nzabi-Duma 11,2 %, Mbede-Teke 5,6 %, Myene 4,4 %, Kota-Kele 4,3 %, Okande-Tsogho 1,6 %, autres 12,6 %, étrangers 16,2 % ». Plusieurs lignes comptent ensemble plusieurs peuples, sans part propre à chacun ; nous les reprenons telles quelles. Le recensement gabonais de 2013 compte les habitants par nationalité, pas par peuple. Le Factbook a cessé de paraître le 4 février 2026 ; copie lue le 6 octobre 2026."
+      },
+      {
+        "title": "Résultats globaux du Recensement Général de la Population et des Logements de 2013 du Gabon (RGPL2013)",
+        "author": "Direction générale de la statistique du Gabon",
+        "year": 2015,
+        "url": "https://gabon.unfpa.org/sites/default/files/pub-pdf/Resultats%20Globaux%20RGPL(1).pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. 3, tableau 1 ; p. 22, tableau 23",
+        "notes": "Rapport publié à Libreville en octobre 2015, lu le 3 novembre 2026 dans la copie mise en ligne par le bureau de l'UNFPA au Gabon. En 2013, le Gabon compte 1 811 079 résidents, dont 1 458 464 de nationalité gabonaise, 287 379 étrangers, soit 16 %, et 65 236 personnes dont la nationalité n'est pas déclarée ; 1 577 646 habitants vivent en milieu urbain. Le rapport présente la population par sexe, âge, province et nationalité ; il ne donne pas de répartition par peuple."
+      },
+      {
+        "title": "Toponymic Factfile: Gabon",
+        "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+        "year": 2023,
+        "url": "https://assets.publishing.service.gov.uk/media/64f5a3d4a78c5f000dc6f49b/Gabon_Toponymic_Factfile.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "page": "p. 1-5",
+        "notes": "Fiche publiée en 2023 par le gouvernement britannique, lue le 3 novembre 2026. Elle donne le nom court Gabon et le nom officiel République gabonaise, le français comme langue officielle, et cite le fang (fan), le mbere (mdt) et le sira (swj) parmi les langues bantoues les plus parlées. Elle rapporte qu'en 1910 le Gabon devient l'un des quatre territoires de l'Afrique-Équatoriale française, qu'en 1958 il devient une république autonome au sein de la Communauté française et qu'il est pleinement indépendant en août 1960. Elle décrit les voisins du pays et la dispute avec la Guinée équatoriale sur les îles de la baie de Corisco, dont Mbañe (Mbanié)."
+      },
+      {
+        "title": "Loi référendaire n° 002-R/2024 du 19 décembre 2024 portant Constitution de la République Gabonaise, Journal officiel de la République gabonaise n° 47 bis",
+        "author": "République gabonaise",
+        "year": 2024,
+        "url": "https://gabonmediatime.com/wp-content/uploads/2024/12/Journal-Officiel_n%C2%B047-Bis-du-19-decembre-2024_Constitution.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "page": "p. 1-2, préambule et article premier",
+        "notes": "Numéro du Journal officiel du 19 décembre 2024, lu le 3 novembre 2026 dans la copie mise en ligne par le site Gabon Media Time. L'article premier dit : « Le Gabon est une République » et « La République Gabonaise adopte le français comme langue officielle de travail. En outre, elle œuvre pour la protection, la promotion et l'enseignement de ses langues nationales. » Il assure « l'égalité de tous les citoyens devant la loi, sans distinction d'origine, de race, d'ethnie » et punit toute discrimination ethnique. Il fixe la capitale à Libreville et la fête nationale au 17 août. Le préambule se réfère à « l'esprit du 30 août 2023 »."
+      },
+      {
+        "title": "Communiqué PSC/PR/COMM.1172 (2023) du Conseil de paix et de sécurité de l'Union africaine, 1172e réunion, sur la situation en République gabonaise",
+        "author": "Conseil de paix et de sécurité de l'Union africaine",
+        "year": 2023,
+        "url": "https://unoau.unmissions.org/sites/default/files/1172.comm_fr_1.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Version française du communiqué adopté à Addis-Abéba le 31 août 2023, lue le 3 novembre 2026 sur le site du Bureau des Nations unies auprès de l'Union africaine. Le Conseil « condamne fermement le coup d'État militaire du 30 août 2023 en République gabonaise, qui a démis le Président Ali Bongo Ondimba » et suspend la participation du Gabon aux activités de l'Union africaine."
+      },
+      {
+        "title": "Communiqué PSC/PR/COMM.1277 (2025) du Conseil de paix et de sécurité de l'Union africaine, 1277e réunion, sur le programme de transition politique de la République gabonaise",
+        "author": "Conseil de paix et de sécurité de l'Union africaine",
+        "year": 2025,
+        "url": "https://unoau.unmissions.org/sites/default/files/1277.comm_fr.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Version française du communiqué adopté à Addis-Abéba le 30 avril 2025, lue le 3 novembre 2026 sur le site du Bureau des Nations unies auprès de l'Union africaine. Le Conseil salue un dialogue national, « l'adoption d'une nouvelle constitution par voie de référendum » et l'élection présidentielle du 12 avril 2025, « qui a marqué la fin de la transition politique » ; il félicite le président élu Brice Oligui Nguema et lève la suspension du Gabon."
+      },
+      {
+        "title": "Gabon, dans L'aménagement linguistique dans le monde (CEFAN, Université Laval)",
+        "author": "CEFAN, Université Laval",
+        "year": 2023,
+        "url": "https://axl.cefan.ulaval.ca/afrique/gabon.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Page de l'Université Laval mise à jour le 16 novembre 2023, lue le 3 novembre 2026 ; elle ne nomme pas son auteur. Les Portugais, arrivés dans l'estuaire en 1472 selon la page, « baptisèrent le pays Rio de Gabão, du fait de sa forme semblable à un caban ». Léon M'Ba est le premier président de la République ; il meurt le 28 novembre 1967 et le vice-président Albert-Bernard Bongo lui succède. Omar Bongo meurt le 8 juin 2009 ; le 3 septembre 2009, son fils Ali Bongo Ondimba devient le troisième président du Gabon."
+      },
+      {
+        "title": "2023 Report on International Religious Freedom: Gabon",
+        "author": "Département d'État des États-Unis",
+        "year": 2024,
+        "url": "https://www.ecoi.net/en/document/2111866.html",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Rapport publié le 26 juin 2024, lu le 3 novembre 2026 dans la copie de la base ecoi.net. Selon la conférence épiscopale du Gabon, environ 80 % de la population est chrétienne, aux deux tiers catholique et pour un tiers protestante ; selon le Conseil supérieur des affaires islamiques, environ 15 % est musulmane, dont beaucoup de résidents étrangers venus d'Afrique de l'Ouest. Le reste comprend notamment des fidèles de religions locales. Le rapport décrit le bwiti comme une foi qui mêle des éléments du christianisme aux croyances locales et cite aussi le mwiri et le ndjobi. Il précise que ces estimations, données par des responsables religieux, varient beaucoup."
+      },
+      {
+        "title": "The World Bank in Gabon: Overview",
+        "author": "Banque mondiale",
+        "year": null,
+        "url": "https://www.worldbank.org/en/country/gabon/overview",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Page lue le 3 novembre 2026 ; elle ne porte pas de date de mise à jour. Elle indique que le Gabon a l'un des taux d'urbanisation les plus élevés d'Afrique, 80 %, que la production de pétrole a baissé avec le vieillissement des champs, que celles de manganèse et de bois ont souffert de problèmes de transport et de demande, et que le pays protège sa forêt tropicale."
+      },
+      {
+        "title": "RGPL 2026 : 3,5 millions d'habitants, le grand bond démographique qui demande des explications",
+        "author": "Dimitri Mimongo, Gabonreview",
+        "year": 2026,
+        "url": "https://www.gabonreview.com/rgpl-2026-35-millions-dhabitants-le-grand-bond-demographique-qui-demande-des-explications/",
+        "tier": "referenced",
+        "source_kind": "press",
+        "notes": "Article publié le 28 août 2026, lu le 3 novembre 2026. La Cour constitutionnelle a validé le 27 août 2026 le chiffre de 3 518 621 habitants issu du recensement général de la population et des logements, contre 1 811 079 en 2013. L'article demande des explications sur ce chiffre et note que le document publié ne donne pas de répartition par nationalité."
+      },
+      {
+        "title": "La terminologie toponymique du Gabon, document de travail n° 43, vingt-troisième session du Groupe d'experts des Nations unies pour les noms géographiques",
+        "author": "Groupe de travail de la terminologie toponymique, Gabon",
+        "year": 2006,
+        "url": "https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/23-gegn/wp/gegn23wp43.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "page": "p. 2-3",
+        "notes": "Document présenté à Vienne, 28 mars-4 avril 2006, lu en ligne le 10 octobre puis le 3 novembre 2026. « Rio do Gabao » y est présenté comme le nom que les Portugais ont donné à l'estuaire, « parce qu'il avait vaguement la forme d'un manteau de marin ou caban ». Le document ne cite pas de source pour cette explication. Il rapporte aussi que le comptoir du Gabon naît en 1843, sur des terres cédées par des traités entre la France et les chefs mpongwe, « propriétaires coutumiers des rives de l'Estuaire », et qu'en 1849 des esclaves libérés du navire Elizia sont installés au village de Libreville. Il recueille aussi l'origine de noms de chefs-lieux : Oyem, Mouila, Tchibanga, Lambaréné, Port-Gentil (Mandji)."
+      },
+      {
+        "title": "Pierre Alexandre, Proto-histoire du groupe beti-bulu-fang : essai de synthèse provisoire, Cahiers d'études africaines, 1965",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1965_num_5_20_3049",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Cahiers d'études africaines, vol. 5, n° 20, p. 503-560, lu sur Persée le 3 novembre 2026. L'introduction rapporte que peu après 1840, des traitants gabonais annoncent aux comptoirs de l'estuaire l'arrivée, dans l'arrière-pays, des Mpangwe, que les Européens appelleront Pahouins ou Pamue ; Paul Belloni Du Chaillu est le premier Européen à les rencontrer, en 1856."
+      },
+      {
+        "title": "Glottolog 5.3 – Fang (Equatorial Guinea)",
+        "url": "https://glottolog.org/resource/languoid/id/fang1246",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice lue le 3 novembre 2026. Langue fang, code ISO 639-3 fan, parlée au Cameroun, en Guinée équatoriale, au Gabon et en République du Congo ; autres noms relevés : Pahouin, Pamue."
+      },
+      {
+        "title": "Glottolog 5.3 — Punu (punu1239)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/punu1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice lue le 3 novembre 2026. Langue punu, code ISO 639-3 puu, parlée au Gabon et en République du Congo ; autres noms relevés : Yipunu, Ipunu, Yipounou."
+      },
+      {
+        "title": "Glottolog 5.x — Njebi [njeb1242]",
+        "url": "https://glottolog.org/resource/languoid/id/njeb1242",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice lue le 3 novembre 2026. Langue njebi, code ISO 639-3 nzb, parlée au Gabon et en République du Congo ; autres noms relevés : Nzebi, Bandzabi, Ndjabi, Yinzebi."
+      },
+      {
+        "title": "Glottolog 5.3 — Latege (teke1275)",
+        "url": "https://glottolog.org/resource/languoid/id/teke1275",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice lue le 3 novembre 2026. Langue latege, code ISO 639-3 teg, parlée au Gabon et en République du Congo ; autres noms relevés : Teke-Tege, Iteghe, Teke du Nord."
+      },
+      {
+        "title": "Glottolog 5.3 — Myene (myen1241)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/myen1241",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice lue le 3 novembre 2026. Langue myene, code ISO 639-3 mye, parlée au Gabon ; autres noms relevés : Omyene, Mpongwe, Mpongwée, Pongoué."
+      },
+      {
+        "title": "Glottolog 5.3 — Mbere-Mbamba (mber1257)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/mber1257",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice lue le 3 novembre 2026. Langue mbere, code ISO 639-3 mdt, parlée au Gabon et en République du Congo ; autres noms relevés : Mbede, Mbédé, Mbété, Ambede, Limbede."
+      },
+      {
+        "title": "Glottolog 5.3 — Kota (Gabon) (kota1274)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/kota1274",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice lue le 3 novembre 2026. Langue kota du Gabon, code ISO 639-3 koq, parlée au Gabon et en République du Congo ; autres noms relevés : Ikota, Ikuta, Kotu."
       }
     ],
     "demographics": {
@@ -487,34 +638,72 @@
           "name": "Fang",
           "percentageInCountry": 23.5,
           "peopleId": "PPL_FANG",
-          "region": "Nord du Gabon (forêts équatoriales)",
-          "languageFamily": "FLG_BANTU"
+          "region": "Nord du Gabon",
+          "languageFamily": "FLG_BANTU",
+          "mainLanguageCode": "fan"
         },
         {
-          "name": "Punu",
-          "percentageInCountry": 11.5,
-          "peopleId": "PPL_PUNU",
+          "name": "Shira, Punu et Vili",
+          "percentageInCountry": 20.6,
+          "peopleId": null,
           "region": "Sud du Gabon",
           "languageFamily": "FLG_BANTU"
         },
         {
-          "name": "Nzebi",
-          "peopleId": "PPL_NZEBI",
-          "percentageInCountry": 9
+          "name": "Nzebi (Nzabi) et Duma",
+          "percentageInCountry": 11.2,
+          "peopleId": null,
+          "region": null,
+          "languageFamily": "FLG_BANTU"
+        },
+        {
+          "name": "Mbede (Mbete) et Teke",
+          "percentageInCountry": 5.6,
+          "peopleId": null,
+          "region": null,
+          "languageFamily": "FLG_BANTU"
         },
         {
           "name": "Myene",
           "percentageInCountry": 4.4,
-          "peopleId": "PPL_MYENE"
+          "peopleId": "PPL_MYENE",
+          "region": "Côte du Gabon",
+          "languageFamily": "FLG_BANTU",
+          "mainLanguageCode": "mye"
         },
         {
-          "name": "Autres groupes ethniques",
+          "name": "Kota et Kele",
+          "percentageInCountry": 4.3,
           "peopleId": null,
-          "region": "Divers",
-          "languageFamily": null,
-          "percentageInCountry": 51.6
+          "region": null,
+          "languageFamily": "FLG_BANTU"
+        },
+        {
+          "name": "Okande et Tsogho",
+          "percentageInCountry": 1.6,
+          "peopleId": null,
+          "region": null,
+          "languageFamily": "FLG_BANTU"
+        },
+        {
+          "name": "Autres groupes",
+          "percentageInCountry": 12.6,
+          "peopleId": null,
+          "region": null,
+          "languageFamily": null
+        },
+        {
+          "name": "Habitants de nationalité étrangère",
+          "percentageInCountry": 16.2,
+          "peopleId": null,
+          "region": null,
+          "languageFamily": null
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "Le Gabon est un pays d'Afrique centrale, sur la côte atlantique, dont la capitale est Libreville. Son nom vient du rio do Gabão, le nom portugais de son estuaire.",
+      "followUp": "Pourquoi les Portugais ont-ils appelé cet estuaire Gabão ?"
     }
   }
 }
