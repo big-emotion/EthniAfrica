@@ -3,9 +3,9 @@
   "nameFr": "Algérie",
   "nameEn": "Algeria",
   "nameOfficial": "République algérienne démocratique et populaire (Al-Jumhūriyyah al-Jazā'iriyyah ad-Dīmuqrāṭiyyah ash-Sha'biyyah)",
-  "summary": "L'Algérie tire son nom d'« Al-Djazair », « les îles », donné par les Ottomans aux îlots de la baie d'Alger. Terre des royaumes numides de Massinissa et de Jugurtha, elle fut régence ottomane puis, de 1830 à 1962, colonie et département français. Kabyles, Chaouis, Mozabites et Touaregs y maintiennent les langues amazighes aux côtés de l'arabe.",
-  "etymology": "Le nom \"Algérie\" viendrait de \"Al-Djazair\" (الجزائر), qui veut dire \"les îles\" en arabe, en référence aux îlots situés face à la baie d'Alger. Le nom a été donné par les Ottomans au XVIe siècle. Le terme français \"Algérie\" a été officialisé lors de la colonisation française (1830-1962).",
-  "nameOriginActor": "Les Ottomans ont nommé la région \"Al-Djazair\" au XVIe siècle. Le nom français \"Algérie\" a été officialisé par l'administration coloniale française en 1839.",
+  "summary": "Le nom Algérie vient de celui de sa capitale, Alger, en arabe al-Jazāʾir, un nom que le géographe al-Bakrī écrit déjà au XIe siècle et qui voudrait dire « les îles ». La France l'adopte en 1839 pour le territoire qu'elle conquiert depuis 1830, et le pays le garde à l'indépendance, en 1962. En tamazight, l'autre langue officielle avec l'arabe, le pays s'appelle Lezayer.",
+  "etymology": "Le nom Algérie est formé sur celui de la ville d'Alger, selon le Permanent Committee on Geographical Names, l'organisme britannique chargé des noms géographiques. En arabe, la ville et le pays portent le même nom, al-Jazāʾir, qui voudrait dire « les îles ». Au XIe siècle, le géographe andalou al-Bakrī écrit Djezaïr Beni Mezghanna, que son traducteur William Mac Guckin de Slane rend par « les îles de la tribu de Mezghanna ».",
+  "nameOriginActor": "Le nom arabe al-Jazāʾir est écrit pour la ville d'Alger dès le XIe siècle, chez le géographe al-Bakrī. Le nom français Algérie devient le nom officiel du territoire conquis en 1839 : le ministre de la Guerre, le général Antoine Virgile Schneider, demande alors de le substituer aux autres appellations, selon l'instruction que cite Bernard Lugan.",
   "nameHistory": {
     "summary": "Le nom Algérie désigne un pays d'Afrique du Nord, la République algérienne démocratique et populaire, qui se nomme elle-même al-Jazāʾir en arabe et Lezayer en tamazight. Le pays a porté d'autres noms : Régence d'Alger sous les Ottomans, puis Possessions françaises dans le nord de l'Afrique au début de la conquête française. L'origine du nom arabe n'est expliquée que par une seule hypothèse dans les sources que nous avons lues ; nous la présentons plus bas.",
     "names": [
@@ -364,42 +364,42 @@
     "historicalNames": {
       "formerNames": [
         "Numidie (Antiquité)",
-        "Régence d'Alger (1516-1830)",
-        "Algérie française (1830-1962)"
+        "Régence d'Alger (vers 1519-1830)",
+        "Possessions françaises dans le nord de l'Afrique (1834-1839)"
       ],
-      "antiquity": "Le territoire correspondait à la Numidie (royaumes numides), à la Maurétanie césarienne (région côtière), et à des territoires contrôlés par Carthage puis par Rome. Les peuples autochtones étaient les Numides (Berbères).",
-      "middleAges": "Région du Maghreb central, contrôlée par diverses dynasties berbères et arabes (Rustamides, Fatimides, Zirides, Hammadides, Almohades, Zianides). Nom arabe \"Al-Djazair\" apparaît au Moyen Âge.",
-      "precolonial": "Régence d'Alger (1516-1830), État ottoman semi-autonome dirigé par des deys. Le territoire était appelé \"Al-Djazair\" par les Ottomans et les populations locales.",
-      "colonization": "1830-1962 : Algérie française (colonie puis département français). Le nom \"Algérie\" est officialisé en 1839 par l'administration coloniale française.",
-      "contemporary": "1962 : Indépendance, République algérienne démocratique et populaire. Le nom officiel en arabe est \"Al-Jumhūriyyah al-Jazā'iriyyah ad-Dīmuqrāṭiyyah ash-Sha'biyyah\"."
+      "antiquity": "Dans l'Antiquité, une grande partie du nord de l'Algérie actuelle forme la Numidie. Peu avant la guerre entre Rome et Carthage, deux royaumes numides s'y partagent le pays : celui des Masaesyles, dont le roi Syphax a pour capitale Siga, à l'ouest, et celui des Massyles, à l'est. Massinissa réunit les Numides à partir de 203 av. J.-C. Rome annexe le royaume de Numidie en 46 av. J.-C. ; plus à l'ouest, la province romaine de Maurétanie Césarienne est créée en 42 apr. J.-C. autour de Caesarea, l'actuelle Cherchell.",
+      "middleAges": "La conquête arabe commence vers 680. Le pays prend alors place dans le Maghreb central, gouverné par des dynasties berbères comme les Rostémides de Tahert, de 776 à 909, puis les ʿAbd al-Wādides, appelés aussi Zianides, à Tlemcen, du XIIIe au milieu du XVIe siècle. Le nom al-Jazāʾir apparaît par écrit au XIe siècle chez le géographe al-Bakrī, pour la ville d'Alger, sous la forme Djezaïr Beni Mezghanna.",
+      "precolonial": "Vers 1519, Khayruddīn, l'un des frères Barberousse, place Alger sous la suzeraineté du sultan ottoman. Naît alors une province ottomane que les textes français appellent la Régence d'Alger ; à partir de 1671, son chef, le dey, est élu par la milice turque. La Régence prend fin avec la prise d'Alger par la France, le 5 juillet 1830.",
+      "colonization": "Après 1830, l'administration française parle d'abord des « possessions françaises dans le nord de l'Afrique », ou de l'« ancienne régence d'Alger », comme dans l'ordonnance du 22 juillet 1834. En 1839, le ministre de la Guerre demande de remplacer ces appellations par le nom Algérie. De 1848 à 1962, la France administre l'Algérie comme une partie de son propre territoire, organisée en départements.",
+      "contemporary": "L'Algérie devient indépendante en 1962 : l'indépendance est proclamée le 5 juillet, après le référendum du 1er juillet. L'État s'appelle République algérienne démocratique et populaire, en arabe al-Jumhūriyyah al-Jazāʾiriyyah ad-Dīmuqrāṭiyyah ash-Shaʿbiyyah. En tamazight, le pays se nomme Lezayer."
     },
     "kingdoms": [
       {
         "name": "Royaumes numides",
-        "period": "IIIe siècle av. J.-C. - Ier siècle av. J.-C.",
+        "period": "Fin du IIIe siècle av. J.-C. - 46 av. J.-C.",
         "entryType": "polity",
         "timeRange": {
-          "startYear": -300,
+          "startYear": -220,
           "endYear": -46,
           "precision": "approximate",
-          "datingNote": "La fin correspond à la création par César de la province romaine d'Africa Nova sur le royaume du roi numide Juba Ier, après sa campagne africaine de 46 av. J.-C., selon A. Mahjoubi (HGA II). La fiche prolongeait ces royaumes jusqu'au Ier siècle de notre ère ; la source citée ne soutient pas cette borne."
+          "datingNote": "Les sources décrivent les deux royaumes numides peu avant la guerre entre Rome et Carthage où combat Massinissa ; son père, le roi Gaia, meurt en 206 av. J.-C. L'année de départ est donc une approximation. La fin correspond à l'annexion du royaume de Numidie par Rome en 46 av. J.-C."
         },
-        "dominantPeoples": ["Numides (Berbères)"],
-        "politicalCenters": ["Cirta (Constantine)", "Hippo Regius (Annaba)"],
-        "historicalRole": "Royaumes numides puissants (Massinissa, Jugurtha), résistance à Rome, unification partielle de la Numidie."
+        "dominantPeoples": ["Numides (Massyles et Masaesyles)"],
+        "politicalCenters": ["Cirta (Constantine)", "Siga"],
+        "historicalRole": "Deux royaumes se partagent d'abord la Numidie : à l'ouest celui des Masaesyles, dont le roi Syphax réside à Siga, à l'est celui des Massyles. Massinissa les réunit ; ses successeurs règnent jusqu'à l'annexion romaine de 46 av. J.-C."
       },
       {
         "name": "Royaume de Massinissa",
-        "period": "202-148 av. J.-C.",
+        "period": "203-148 av. J.-C.",
         "entryType": "polity",
         "timeRange": {
-          "startYear": -202,
+          "startYear": -203,
           "endYear": -148,
           "precision": "year"
         },
         "dominantPeoples": ["Numides"],
-        "politicalCenters": ["Cirta"],
-        "historicalRole": "Unification de la Numidie, alliance avec Rome contre Carthage, développement de l'agriculture et du commerce."
+        "politicalCenters": ["Cirta (Constantine)"],
+        "historicalRole": "Massinissa, fils du roi massyle Gaia, est d'abord l'adversaire puis l'allié de Rome. Il entre à Cirta et reçoit le titre de roi de Numidie en 203 av. J.-C., agrandit son royaume aux dépens de Syphax et règne jusqu'à sa mort, en 148 av. J.-C., selon Jean-Marie Lassère."
       },
       {
         "name": "Royaume de Jugurtha",
@@ -411,24 +411,24 @@
           "precision": "year"
         },
         "dominantPeoples": ["Numides"],
-        "politicalCenters": ["Cirta"],
-        "historicalRole": "Résistance à la domination romaine, guerre de Jugurtha (112-105 av. J.-C.)."
+        "politicalCenters": ["Cirta (Constantine)"],
+        "historicalRole": "Petit-fils de Massinissa, Jugurtha reçoit une part de la Numidie à la mort du roi Micipsa, en 118 av. J.-C., puis s'empare du reste. Rome lui fait la guerre à partir de 112 av. J.-C. ; en 105, Bocchus, roi des Maures, le livre aux Romains."
       },
       {
-        "name": "Maurétanie césarienne",
-        "period": "Ier siècle av. J.-C. - Ve siècle apr. J.-C.",
+        "name": "Maurétanie Césarienne",
+        "period": "42-429",
         "entryType": "polity",
         "timeRange": {
-          "startYear": -100,
-          "endYear": 500,
-          "precision": "century"
+          "startYear": 42,
+          "endYear": 429,
+          "precision": "year"
         },
-        "dominantPeoples": ["Berbères", "Romains"],
-        "politicalCenters": ["Caesarea (Cherchell)", "Tipasa"],
-        "historicalRole": "Province romaine, romanisation partielle, développement urbain et commercial."
+        "dominantPeoples": ["Maures", "Romains"],
+        "politicalCenters": ["Caesarea (Cherchell)"],
+        "historicalRole": "Province romaine créée en 42 sur l'ancien royaume de Maurétanie, entre la Moulouya et l'oued el-Kebir, et gouvernée depuis Caesarea. Elle englobe de nombreuses tribus maures et compte des villes comme Caesarea, Tipasa et Sitifis (Sétif), jusqu'à l'invasion vandale de 429."
       },
       {
-        "name": "Dynastie rustamide",
+        "name": "Royaume rostémide de Tahert",
         "period": "776-909",
         "entryType": "polity",
         "timeRange": {
@@ -436,38 +436,39 @@
           "endYear": 909,
           "precision": "year"
         },
-        "dominantPeoples": ["Berbères ibadites"],
+        "dominantPeoples": ["Tribus berbères ibadites"],
         "politicalCenters": ["Tahert (Tiaret)"],
-        "historicalRole": "État berbère ibadite, centre intellectuel et commercial, résistance aux Fatimides."
+        "historicalRole": "Royaume ibadite fondé par Abd er-Rahman ibn Rostem, premier imam de Tahert en 776. Il exerce une autorité morale sur les autres communautés ibadites du Maghreb. En 909, une armée levée chez les Ketama y met fin ; les réfugiés gagnent Sedrata puis la vallée du Mzab."
       },
       {
-        "name": "Dynastie zianide",
-        "period": "1235-1556",
+        "name": "Royaume des ʿAbd al-Wādides (Zianides)",
+        "period": "XIIIe siècle - milieu du XVIe siècle",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1235,
-          "endYear": 1556,
-          "precision": "year"
+          "startYear": 1200,
+          "endYear": 1550,
+          "precision": "approximate",
+          "datingNote": "La source situe la dynastie du XIIIe siècle au milieu du XVIe siècle, sans donner d'année de fondation ; les bornes retenues suivent ces siècles. La fin correspond à la prise de Tlemcen par les troupes turques en 1550."
         },
-        "dominantPeoples": ["Berbères zénètes"],
+        "dominantPeoples": ["Banū ʿAbd al-Wād (Zénètes)"],
         "politicalCenters": ["Tlemcen"],
-        "historicalRole": "Royaume berbère indépendant, résistance aux Mérinides et aux Hafsides, centre culturel et commercial."
+        "historicalRole": "Dynastie berbère zénète qui tente de tenir le Maghreb central, de la Moulouya à la Kabylie, depuis Tlemcen. Elle lutte longtemps contre les Mérinides de Fès, qui assiègent Tlemcen de 1298 à 1306 puis la prennent en 1337."
       },
       {
         "name": "Régence d'Alger",
-        "period": "1516-1830",
+        "period": "1519-1830",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1516,
+          "startYear": 1519,
           "endYear": 1830,
           "precision": "year"
         },
-        "dominantPeoples": ["Berbères", "Arabes", "Turcs ottomans"],
+        "dominantPeoples": ["Milice turque"],
         "politicalCenters": ["Alger"],
-        "historicalRole": "État ottoman semi-autonome, piraterie en Méditerranée, résistance aux puissances européennes."
+        "historicalRole": "Province ottomane née quand Khayruddīn Barberousse reconnaît la suzeraineté du sultan, vers 1519. Elle pratique la guerre de course en Méditerranée, source de nombreux conflits avec les Européens ; à partir de 1671, les deys sont élus par la milice turque. Elle prend fin avec la prise d'Alger en 1830."
       },
       {
-        "name": "Algérie française",
+        "name": "Algérie coloniale",
         "period": "1830-1962",
         "entryType": "colonial",
         "timeRange": {
@@ -475,136 +476,121 @@
           "endYear": 1962,
           "precision": "year"
         },
-        "dominantPeoples": [
-          "Tous les peuples algériens sous domination coloniale"
-        ],
-        "politicalCenters": ["Alger (capitale coloniale)"],
-        "historicalRole": "Colonisation française, résistance algérienne, guerre d'indépendance (1954-1962)."
+        "dominantPeoples": ["Administration coloniale française"],
+        "politicalCenters": ["Alger"],
+        "historicalRole": "Domination française, de la prise d'Alger en 1830 à l'indépendance de 1962. Un gouverneur général dirige les possessions françaises à partir de 1834 ; de 1848 à 1962, le territoire est divisé en départements. Elle connaît de grandes insurrections, comme celle de 1871, puis la guerre d'indépendance, de 1954 à 1962."
       }
     ],
     "majorPeoples": [
       {
         "name": "Arabes d'Algérie",
-        "selfAppellation": "Al-'Arab (العرب)",
-        "exonyms": [
-          "Arabes",
-          "Arabophones",
-          "Maures (terme historique pour certains groupes sahariens)"
-        ],
+        "selfAppellation": "ʿArab (العرب)",
+        "exonyms": ["Arabes"],
         "peopleId": "PPL_ARABES_AFRIQUE",
-        "mainRegion": "Toutes les régions d'Algérie, majoritaires dans les plaines et les villes",
-        "languages": ["Arabe algérien (darija)", "arabe standard"],
+        "mainRegion": "Toutes les régions d'Algérie",
+        "languages": ["Arabe algérien, ou darja (arq)", "Arabe standard (ara)"],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "Le terme \"Arabe\" est l'auto-appellation. Les Arabes d'Algérie sont majoritairement arabisés (métissés avec les Berbères). Le terme \"Maure\" est historique et désigne certains groupes sahariens."
+        "appellationRemarks": "L'arabe est langue nationale et officielle selon la Constitution. Environ 70 % des habitants parlent l'arabe algérien, appelé darja, selon le Permanent Committee on Geographical Names ; c'est un chiffre de locuteurs, qui ne dit pas combien d'Algériens se disent arabes. Les recensements algériens ne comptent pas les habitants par peuple ; selon Salem Chaker, seul celui de 1966 a posé une question sur la langue maternelle. Nous n'avons donc pas trouvé de chiffre officiel récent sur la part des Arabes d'Algérie dans la population."
       },
       {
         "name": "Kabyles",
-        "selfAppellation": "Leqbayel / Iqbayliyen",
-        "exonyms": [
-          "« Kabyle » (nom arabe devenu courant, sans sens méprisant, mais donné de l'extérieur)",
-          "« Berbère » (terme colonial",
-          "considéré problématique ; auto-appellation correcte : Amazigh / Imazighen)"
-        ],
+        "selfAppellation": "Leqbayel (au singulier aqbayli)",
+        "exonyms": ["Kabyles", "Berbères"],
         "peopleId": "PPL_KABYLE",
-        "mainRegion": "Kabylie (nord de l'Algérie, massif de l'Atlas tellien)",
-        "languages": ["Kabyle (tamaziɣt taqbaylit)"],
+        "mainRegion": "Kabylie, dans le nord de l'Algérie, à l'est d'Alger",
+        "languages": ["Kabyle, ou taqbaylit (kab)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Une explication rapproche Berbère du grec barbaros, « étranger ». Son usage par les colonisateurs contribue à rendre ce nom problématique. Les personnes concernées se nomment Amazigh, ou Imazighen au pluriel. Kabyle est un nom d'origine arabe largement accepté."
+        "appellationRemarks": "Les mots Kabyle et Kabylie viennent de l'arabe qabâ'il, « tribus », que les citadins employaient pour les ruraux organisés en tribus ; les Français les imposent au milieu du XIXe siècle pour nommer la région, selon R. Bellil. Le nom Berbère est ancien ; le Permanent Committee on Geographical Names le juge aujourd'hui péjoratif et recommande Amazigh. Salem Chaker estimait vers 2004 à environ 5,5 millions le nombre de personnes parlant kabyle, dont 2 à 2,5 millions hors de Kabylie. Les recensements algériens ne comptent pas les habitants par peuple ; selon Salem Chaker, seul celui de 1966 a posé une question sur la langue maternelle. Nous n'avons donc pas trouvé de chiffre officiel récent sur la part des Kabyles dans la population."
       },
       {
         "name": "Chaouis",
-        "selfAppellation": "Ishawiyen / Icawiyen",
-        "exonyms": [
-          "« Chaouïa » (nom arabe utilisé depuis le Moyen Âge, donné de l'extérieur, sans sens méprisant)"
-        ],
+        "selfAppellation": "Icawiyen",
+        "exonyms": ["Chaouïa"],
         "peopleId": "PPL_CHAOUI",
-        "mainRegion": "Massif de l'Aurès (est de l'Algérie)",
-        "languages": ["Chaoui (tachawit)"],
+        "mainRegion": "Aurès, dans l'est de l'Algérie, jusqu'au Hodna à l'ouest",
+        "languages": ["Chaoui, ou tachawit (shy)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Chaoui est un nom d'origine arabe largement accepté. Les personnes concernées se nomment Ishawiyen ou Icawiyen."
+        "appellationRemarks": "Chaouïa est la forme arabe et française du nom, au pluriel. Le parler chaoui, centré sur l'Aurès, s'étend largement vers l'ouest, en direction du Hodna, selon Salem Chaker. Les recensements algériens ne comptent pas les habitants par peuple ; selon Salem Chaker, seul celui de 1966 a posé une question sur la langue maternelle. Nous n'avons donc pas trouvé de chiffre officiel récent sur la part des Chaouis dans la population."
       },
       {
         "name": "Mozabites",
-        "selfAppellation": "Imazighen du Mzab",
-        "exonyms": [
-          "Mozabites (nom français donné de l'extérieur)",
-          "« Berbère » (terme colonial",
-          "considéré problématique)"
-        ],
+        "selfAppellation": "At Mẓab",
+        "exonyms": ["Mozabites", "Beni Mzab"],
         "peopleId": "PPL_MOZABITE",
-        "mainRegion": "Vallée du Mzab (Ghardaïa)",
-        "languages": ["Mozabite (tumzabt)"],
+        "mainRegion": "Vallée du Mzab, autour de Ghardaïa",
+        "languages": ["Mozabite, ou tumẓabt (mzb)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Le terme \"Berbère\" est considéré comme problématique. L'auto-appellation est \"Imazighen du Mzab\". Les Mozabites sont ibadites (branche de l'islam)."
+        "appellationRemarks": "Les Mozabites sont ibadites, une branche de l'islam distincte du sunnisme majoritaire ; leurs ancêtres gagnent le Mzab après la chute du royaume de Tahert, en 909, selon C. Agabi. Langue et religion vont ensemble : on ne peut guère imaginer « un mozabite non ibadite et un ibadite non berbérophone », écrivent Salem Chaker, Saïd Chemakh et Abdallah Nouh, qui estiment à environ 200 000 les personnes parlant mozabite dans la wilaya de Ghardaïa vers 2009. Les recensements algériens ne comptent pas les habitants par peuple ; selon Salem Chaker, seul celui de 1966 a posé une question sur la langue maternelle. Nous n'avons donc pas trouvé de chiffre officiel récent sur la part des Mozabites dans la population."
       },
       {
         "name": "Chenoua",
-        "selfAppellation": "Ičenwa",
-        "exonyms": ["Chenoua (nom français donné de l'extérieur)"],
+        "selfAppellation": "Icenwiyen",
+        "exonyms": ["Chenoua"],
         "peopleId": "PPL_CHENOUA",
-        "mainRegion": "Mont Chenoua (région de Tipaza)",
-        "languages": ["Chenoua (tacenwit)"],
+        "mainRegion": "Massif du Chenoua, à l'ouest de Tipasa",
+        "languages": ["Chenoua (cnu)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Petit peuple amazigh de la côte algérienne. L'auto-appellation est \"Ičenwa\"."
+        "appellationRemarks": "Chenoua est le nom d'un massif de la côte algérienne, donné aussi à la population de langue berbère qui l'habite."
       },
       {
         "name": "Touaregs",
-        "selfAppellation": "Kel Tamasheq / Imuhagh",
-        "exonyms": [
-          "Touaregs (nom venu de l'arabe, diffusé par le français, donné de l'extérieur)",
-          "« Berbère » (terme colonial, considéré problématique)"
-        ],
+        "selfAppellation": "Imuhagh / Kel Tamasheq",
+        "exonyms": ["Touaregs"],
         "peopleId": "PPL_TUAREG",
-        "mainRegion": "Sahara algérien (Ahaggar, Tassili n'Ajjer)",
-        "languages": ["Tamasheq (tamahaq)"],
+        "mainRegion": "Sahara algérien : Ahaggar (Hoggar) et Ajjer",
+        "languages": ["Touareg, ou tamahaq (tmh)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Touareg est un nom donné de l'extérieur : il vient de l'arabe et le français l'a diffusé. Les personnes concernées se nomment Imuhagh, ou Kel Tamasheq, « ceux qui parlent tamasheq ». Le nom Berbère est considéré comme problématique."
+        "appellationRemarks": "Touareg est un nom donné de l'extérieur. Les Touaregs se nomment eux-mêmes Imuhagh, ou Kel Tamasheq, « ceux de la langue tamasheq ». En Algérie, l'Ahaggar, Hoggar en arabe, est le pays historique de la confédération des Kel Ahaggar, selon l'Encyclopédie berbère."
       }
     ],
     "culture": {
       "mainLanguages": [
         {
-          "name": "Arabe algérien",
+          "name": "Arabe",
+          "isoCode": "ara",
+          "isPrimary": true
+        },
+        {
+          "name": "Tamazight"
+        },
+        {
+          "name": "Arabe algérien (darja)",
           "isoCode": "arq"
         },
         {
-          "name": "arabe standard",
-          "isoCode": "ara"
-        },
-        {
-          "name": "kabyle",
+          "name": "Kabyle",
           "isoCode": "kab"
         },
         {
-          "name": "chaoui",
+          "name": "Chaoui",
           "isoCode": "shy"
         },
         {
-          "name": "mozabite",
+          "name": "Mozabite (tumẓabt)",
           "isoCode": "mzb"
         },
         {
-          "name": "tamasheq",
+          "name": "Touareg (tamahaq)",
           "isoCode": "tmh"
         },
         {
-          "name": "français",
+          "name": "Français",
           "isoCode": "fra"
         }
       ],
-      "culturalTraditions": "Musique chaâbi, raï, poésie arabe et amazighe, artisanat (bijoux, poterie, tissage), fêtes amazighes (Yennayer), architecture traditionnelle (ksour, maisons de Kabylie, villes du Mzab)",
-      "dominantReligions": "Islam sunnite (école malékite majoritaire), ibadisme (Mozabites), soufisme important",
-      "lifestyles": "Urbanisation croissante, agriculture (plaines), pastoralisme (montagnes, Sahara), commerce, industrie pétrolière et gazière",
-      "socialOrganization": "Structures familiales traditionnelles, systèmes d'autogestion communautaire (tajmaât en Kabylie), organisation tribale (Sahara), structures étatiques modernes",
-      "regionalRelations": "Relations avec le Maghreb (Maroc, Tunisie, Libye), échanges transsahariens, relations avec l'Europe, rôle dans l'Union africaine et la Ligue arabe"
+      "culturalTraditions": "Les cultures de l'Algérie s'expriment en arabe, en tamazight et en français. En Kabylie, le chant tient une place de choix, selon l'Encyclopédie berbère. Dans la vallée du Mzab, cinq villes construites au XIe siècle, dont Ghardaïa et Beni Isguen, gardent une forte originalité. En 1972, Mouloud Mammeri publie une grammaire du tamazight écrite en tamazight, en alphabet latin ; le tifinagh, l'alphabet berbère, est de plus en plus employé.",
+      "dominantReligions": "L'islam est la religion de l'État selon la Constitution. La plupart des musulmans suivent le rite malékite ; les Ibadites, une autre branche de l'islam, vivent surtout dans le Mzab et autour d'Ouargla. Dans l'Antiquité, une partie de la Numidie était chrétienne.",
+      "lifestyles": "La plupart des habitants vivent dans le nord du pays ; le sud appartient au Sahara. Dans l'Ahaggar, les quelques dizaines de milliers d'habitants se regroupent autour de l'Atakor, surtout à Tamanrasset. Les Mozabites se sont spécialisés dans le commerce de détail dans les villes du nord.",
+      "socialOrganization": "Avant la colonisation, une grande partie des ruraux vit en tribus : c'est le sens du mot arabe qabâ'il, d'où vient le nom Kabyle. En 1871, ce sont les assemblées locales, les djemâas, qui répartissent la contribution de guerre imposée aux tribus insurgées. Au Sahara, les Touaregs de l'Ahaggar forment la confédération des Kel Ahaggar.",
+      "regionalRelations": "La Constitution présente l'Algérie comme une « partie intégrante du Grand Maghreb », un « pays arabe et amazigh, méditerranéen et africain ». Elle inscrit sa politique étrangère dans les principes des Nations unies, de l'Union africaine et de la Ligue des États arabes."
     },
     "historicalFacts": {
-      "ancientPeriods": "Présence humaine depuis la préhistoire (sites archéologiques, art rupestre du Tassili). Royaumes numides (Massinissa, Jugurtha), domination carthaginoise puis romaine, christianisation partielle.",
-      "middleAges": "Conquête arabe (VIIe-VIIIe siècles), islamisation progressive, dynasties berbères (Rustamides, Zirides, Hammadides, Zianides), résistance aux Fatimides et aux Almohades.",
-      "precolonial": "Régence d'Alger (1516-1830), État ottoman semi-autonome, piraterie en Méditerranée, résistance aux puissances européennes, commerce transsaharien.",
-      "colonization": "Conquête française (1830), résistance algérienne (Émir Abdelkader, révolte de Mokrani), colonisation de peuplement, développement de l'économie coloniale, mouvements nationalistes (XXe siècle).",
-      "independenceStruggle": "Guerre d'indépendance (1954-1962), Front de libération nationale (FLN), accords d'Évian (1962), indépendance (5 juillet 1962).",
-      "postIndependence": "République algérienne (1962), socialisme algérien, nationalisation des hydrocarbures, guerre civile (1991-2002), printemps arabe (2011), mouvement Hirak (2019), transition politique."
+      "ancientPeriods": "Dans l'Antiquité, les royaumes numides occupent le nord du pays. Massinissa règne de 203 à 148 av. J.-C. ; son petit-fils Jugurtha combat Rome de 112 à 105 av. J.-C. Rome annexe la Numidie en 46 av. J.-C. et crée la Maurétanie Césarienne en 42 apr. J.-C. Une partie de la Numidie devient chrétienne, et les Vandales conquièrent le pays en 429.",
+      "middleAges": "La conquête arabe commence vers 680. Le royaume ibadite des Rostémides, à Tahert, dure de 776 à 909. Au XIe siècle, l'arrivée des tribus arabes hilaliennes repousse vers l'ouest les Banū ʿAbd al-Wād, qui fondent ensuite à Tlemcen un royaume berbère, du XIIIe au milieu du XVIe siècle.",
+      "precolonial": "Vers 1519, Alger passe sous la suzeraineté ottomane. La Régence d'Alger pratique la guerre de course en Méditerranée, ce qui l'oppose souvent aux Européens. En 1550, les troupes turques prennent Tlemcen.",
+      "colonization": "La France prend Alger le 5 juillet 1830 et commence la conquête du pays. De 1848 à 1962, l'Algérie est divisée en départements français. En 1870, les décrets Crémieux changent le statut des Juifs d'Algérie. En 1871, une grande insurrection part de l'est du pays, surtout de Kabylie, menée par le bachaga el-Mokrani et les confréries du cheikh Aheddad ; la répression confisque plus de 446 000 hectares de terres.",
+      "independenceStruggle": "La guerre d'indépendance commence le 1er novembre 1954. En 1958, le Gouvernement provisoire de la République algérienne est créé au Caire. Le cessez-le-feu suit les accords d'Évian, le 19 mars 1962 ; après le référendum du 1er juillet, l'indépendance est proclamée le 5 juillet 1962.",
+      "postIndependence": "La première Constitution est adoptée en 1963, avec le FLN comme parti unique. Le colonel Boumédiène prend le pouvoir en 1965 ; la Constitution de 1976 affirme le choix du socialisme. Celle de 1989 autorise plusieurs partis. Les élections de 1991 sont annulées et la lutte armée menée par des groupes islamistes, de 1992 à 2002, aurait fait 200 000 morts, selon la Digithèque MJP. Le tamazight devient langue nationale en 2002, puis langue officielle en 2016. Après les troubles de 2019, la Constitution est révisée en 2020."
     },
     "sources": [
       {
@@ -689,47 +675,272 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "UNESCO, volume dirigé par G. Mokhtar, chapitre d'A. Mahjoubi (1980), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 507. La province d'Africa Nova est créée par César « après sa campagne africaine contre les Pompéiens et leur allié le roi numide Juba Ier »."
+      },
+      {
+        "title": "Algérie, Constitution de 1996, version consolidée du 30 décembre 2020",
+        "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+        "year": 2020,
+        "url": "https://mjp.univ-perp.fr/constit/dz2020.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Consulté le 3 novembre 2026. Texte de la Constitution révisée en 2020, avec la liste des révisions de 2002, 2008 et 2016. Article 2 : « L'Islam est la religion de l'État. » Article 3 : « L'arabe est la langue nationale et officielle. » Article 4 : « Tamazight est également langue nationale et officielle. » Le préambule nomme « l'Islam, l'Arabité et l'Amazighité » comme composantes de l'identité et présente l'Algérie comme « partie intégrante du Grand Maghreb, pays arabe et amazigh, méditerranéen et africain »."
+      },
+      {
+        "title": "Algérie : constitutions et repères historiques",
+        "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+        "year": null,
+        "url": "https://mjp.univ-perp.fr/constit/dz.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Consulté le 3 novembre 2026. Fiche révisée le 15 mars 2021. Chronologie : « 203 av. JC - Massinissa unifie les Numides » ; « 46 av. JC - Annexion par Rome du royaume de Numidie » ; « 429 - Conquête vandale » ; « 680 - Début de la conquête arabe » ; « 1671 - Les Dey sont élus par la milice turque » ; « 24 octobre 1870 - Décrets Crémieux » ; « 1er novembre 1954 - Début de la guerre d'Algérie » ; « 19 mars 1962 - Cessez-le-feu » ; « 1er juillet 1962 - Référendum d'autodétermination » ; « 5 juillet 1962 - Proclamation de l'indépendance » ; constitutions de 1963, 1976, 1989 et 1996 ; « 1992-2002 - La lutte armée engagée par les islamistes aurait provoqué 200.000 morts » ; révision proposée « à la suite des troubles survenus en 2019 »."
+      },
+      {
+        "title": "Toponymic Factfile: Algeria",
+        "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+        "year": 2026,
+        "url": "https://assets.publishing.service.gov.uk/media/69b1739195b7465160349650/Algeria_Toponymic_Factfile.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "page": "p. 1-4",
+        "notes": "Fiche officielle britannique de toponymie, édition 2026. P. 2 : la colonisation française commence en 1830 ; de 1848 à 1962, la France administre l'Algérie comme une partie de son territoire, divisée en départements. P. 3 : le tamazight est reconnu langue nationale en 2002 et langue officielle avec l'arabe en 2016. P. 4 : environ 70 % des habitants parlent l'arabe algérien (arq), appelé darja ; le français reste très employé ; les principales langues amazighes sont le kabyle (kab), le tamasheq (tmh) des Touaregs du sud et les parlers chaouis (shy). La fiche ajoute qu'en 1972 Mouloud Mammeri publie une grammaire du tamazight écrite en tamazight, en alphabet latin."
+      },
+      {
+        "title": "RGPH 2008 : résultats de l'exploitation exhaustive, avant-propos",
+        "author": "Office national des statistiques (Algérie)",
+        "year": null,
+        "url": "https://www.ons.dz/collections/Avant%20propos.html",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Consulté le 3 novembre 2026. Le cinquième recensement général de la population et de l'habitat a lieu du 16 au 30 avril 2008. Les résultats publiés portent sur l'âge, le sexe, la situation matrimoniale, l'instruction, l'activité, les ménages et les logements ; ils ne classent pas les habitants par peuple ou par langue."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 9 : Algérie, Tunisie et Libye : les Ottomans et leurs héritiers",
+        "author": "M. H. Chérif",
+        "year": 1999,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 276-277 et 294",
+        "notes": "UNESCO, volume dirigé par Bethwell A. Ogot. Vers 1519, Khayruddīn, l'un des frères Barberousse, fait appel au sultan ottoman ; section « La Régence d'Alger au XVIIIe siècle », p. 294."
+      },
+      {
+        "title": "Numides, Numidie, Encyclopédie berbère, 34",
+        "author": "Mansour Ghaki, Jean-Pierre Laporte et Xavier Dupuis",
+        "year": 2012,
+        "url": "https://journals.openedition.org/encyclopedieberbere/2768",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 5633-5668",
+        "notes": "Lu en texte intégral sur OpenEdition le 3 novembre 2026. Deux royaumes numides apparaissent peu avant la guerre entre Rome et Carthage : Syphax, roi des Masaesyles, domine l'ouest algérien depuis sa capitale, Siga ; Gaia règne sur les Massyles, à l'est. La liste des rois numides va jusqu'à la fin du royaume, en 46 av. J.-C. Massinissa est enterré « dans la région de sa capitale principale, Cirta ». L'article a des sections sur la Numidie romaine (de 46 av. J.-C. à 429) et sur la Numidie chrétienne."
+      },
+      {
+        "title": "Massinissa, Encyclopédie berbère, 30",
+        "author": "J.-M. Lassère",
+        "year": 2010,
+        "url": "https://journals.openedition.org/encyclopedieberbere/493",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 4650-4661",
+        "notes": "Lu en texte intégral sur OpenEdition le 3 novembre 2026. Massinissa entre à Cirta et se voit reconnaître le titre royal en Numidie (203) ; son règne « s'étend de 203 à 148 ». Fils du roi des Massyles Gaia, mort en 206 ; Syphax est roi des Masaesyles."
+      },
+      {
+        "title": "Jugurtha. De la Grande à la Petite Numidie, Encyclopédie berbère, 26",
+        "author": "G. Camps et S. Chaker",
+        "year": 2004,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1377",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 3975-3979",
+        "notes": "Lu en texte intégral sur OpenEdition le 3 novembre 2026. Chronologie de l'article : « 118 : Mort de Micipsa » et partage de la Numidie ; « 113 : Jugurtha envahit le royaume d'Adherbal et assiège Cirta » ; en 112, « Rome décide de combattre Jugurtha » ; en 105, Bocchus, roi des Maures, livre Jugurtha aux Romains. Cette notice date la mort de Massinissa de 146 av. J.-C."
+      },
+      {
+        "title": "Maurétanies (Provinces), Encyclopédie berbère, 31",
+        "author": "Y. Modéran",
+        "year": 2010,
+        "url": "https://journals.openedition.org/encyclopedieberbere/523",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 4737-4751",
+        "notes": "Lu en texte intégral sur OpenEdition le 3 novembre 2026. Après l'assassinat du roi Ptolémée (hiver 39-40), le royaume de Maurétanie est annexé ; en 42, il est divisé en deux provinces, dont « la Maurétanie Césarienne, dirigée depuis Caesarea (Cherchell) », entre la Moulouya et l'Ampsaga (Oued el-Kebir). L'organisation reste en place jusqu'à « l'invasion vandale de 429 »."
+      },
+      {
+        "title": "Ibadites, Encyclopédie berbère, 23",
+        "author": "C. Agabi",
+        "year": 2000,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1624",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 3567-3574",
+        "notes": "Lu en texte intégral sur OpenEdition le 3 novembre 2026. Abd er-Rahman ibn Rostem crée la ville de Tahert, capitale d'un royaume ibadite dont il est le premier imam (776). En 909, l'armée levée chez les Ketama met fin au royaume rostémide. Les réfugiés s'établissent à Sedrata, près d'Ouargla, puis dans la vallée du Mzab, où cinq villes sont construites au XIe siècle. Les Ibadites forment aujourd'hui, « noyés dans la masse malékite », des îlots de langue berbère, dont le plus important est le Mzab."
+      },
+      {
+        "title": "'Abd-al-Wādides, Encyclopédie berbère, 1",
+        "author": "G. Deverdun",
+        "year": 1984,
+        "url": "https://journals.openedition.org/encyclopedieberbere/780",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 70-73",
+        "notes": "Lu en texte intégral sur OpenEdition le 3 novembre 2026. Dynastie berbère « appelée aussi « Zayyānides » » qui règne « du XIIIe jusqu'au milieu du XVIe siècle, avec pour capitale Tlemcen » sur le Maghreb central. Les Banū 'Abd-al-Wād appartiennent aux Zanāta selon Ibn Khaldoun. Tlemcen passe ensuite sous la suzeraineté des Espagnols et des Turcs, avant que les troupes turques la reprennent en 1550."
+      },
+      {
+        "title": "Kabylie : L'insurrection de 1871, Encyclopédie berbère, 26",
+        "author": "X. Yacono",
+        "year": 2004,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1410",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 4022-4026",
+        "notes": "Lu en texte intégral sur OpenEdition le 3 novembre 2026. C'est « la plus importante des insurrections que connut l'Algérie française avant celle du 1er novembre 1954 » ; elle part de l'est du pays, surtout des régions de Kabylie. Elle est menée par le bachaga Mohammed el-Hadj el-Mokrani, rejoint par les confréries du cheikh Aheddad. La répression impose une contribution de guerre et la mise sous séquestre de 446 406 hectares."
+      },
+      {
+        "title": "Kabylie : La région dans les écrits arabes (géographes et historiens du Xe au XVIe siècle), Encyclopédie berbère, 26",
+        "author": "R. Bellil",
+        "year": 2004,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1405",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "§ 1",
+        "notes": "Encyclopédie berbère, vol. 26, 2004, p. 4016-4022, lue en texte intégral sur OpenEdition le 3 novembre 2026. Les mots « Kabylie » et « Kabyles » s'imposent au milieu du XIXe siècle, quand les Français nomment les régions de la colonie ; ils viennent de l'arabe qabâ'il (singulier qabîla), « tribu », que les citadins employaient déjà pour les ruraux organisés en tribus."
+      },
+      {
+        "title": "Kabylie : La langue, Encyclopédie berbère, 26",
+        "author": "Salem Chaker",
+        "year": 2004,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1431",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 4055-4066",
+        "notes": "Lu en texte intégral sur OpenEdition le 3 novembre 2026. L'auteur estime « la population kabylophone à environ 5,5 millions de personnes », dont 3 à 3,5 millions en Kabylie et 2 à 2,5 millions hors de la région, par projection des chiffres connus. Note 1 : le recensement de 1966 est « le seul depuis l'indépendance de l'Algérie à comporter une question sur la langue maternelle »."
+      },
+      {
+        "title": "Chaoui/Chaouïa (linguistique/littérature), Encyclopédie berbère, 12",
+        "author": "S. Chaker",
+        "year": 1993,
+        "url": "https://journals.openedition.org/encyclopedieberbere/2107",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 1875-1877",
+        "notes": "Lu en texte intégral sur OpenEdition le 3 novembre 2026. Le parler chaoui, centré sur l'Aurès, déborde largement le massif, surtout vers l'ouest, en direction du Hodna."
+      },
+      {
+        "title": "Mzab — Mozabite : Langue et littérature, Encyclopédie berbère, 32",
+        "author": "S. Chaker, S. Chemakh et A. Nouh",
+        "year": 2010,
+        "url": "https://journals.openedition.org/encyclopedieberbere/678",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 5181-5190",
+        "notes": "Lu en texte intégral sur OpenEdition le 3 novembre 2026. Le mozabite, ou tumẓabt, appartient aux parlers berbères dits zénètes, comme le chaoui. Les auteurs estiment, à partir des statistiques électorales, à environ 200 000 les personnes qui parlent mozabite dans la wilaya de Ghardaïa vers 2009, sans compter une diaspora importante dans les villes du nord. On ne peut guère imaginer, écrivent-ils, « un mozabite non ibadite et un ibadite non berbérophone »."
+      },
+      {
+        "title": "Ahaggar, Encyclopédie berbère, 8",
+        "author": "P. Rognon, G. Camps, M. Gast et S. Chaker",
+        "year": 1990,
+        "url": "https://journals.openedition.org/encyclopedieberbere/270",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 1233-1268",
+        "notes": "Lu en texte intégral sur OpenEdition le 3 novembre 2026. « L'Ahaggar (ou Hoggar en arabe) est le nom historique du pays contrôlé jadis par la Confédération des Touaregs Kel Ahaggar. » Les quelques dizaines de milliers d'habitants vivent surtout autour de l'Atakor, notamment à Tamanrasset."
+      },
+      {
+        "title": "Musiques de Kabylie, Encyclopédie berbère, 32",
+        "author": "M. Mahfoufi",
+        "year": 2010,
+        "url": "https://journals.openedition.org/encyclopedieberbere/3234",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 5114-5121",
+        "notes": "Lu en texte intégral sur OpenEdition le 3 novembre 2026. Dès les premières études, au XIXe siècle, les auteurs notent que « le chant tenait une place de choix dans la culture de Kabylie » ; des musicologues y enregistrent ensuite des pièces vocales et instrumentales, en 1913, vers 1928 et en 1954."
+      },
+      {
+        "title": "Glottolog 5.3 — Kabyle (kaby1243)",
+        "url": "https://glottolog.org/resource/languoid/id/kaby1243",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. Langue kabyle (code ISO 639-3 kab), classée parmi les langues berbères de la famille afro-asiatique."
+      },
+      {
+        "title": "Glottolog 5.3 — Algerian Arabic (alge1239)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/alge1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. L'arabe algérien est classé parmi les parlers arabes du Maghreb, dans les langues sémitiques. Code ISO 639-3 : arq."
+      },
+      {
+        "title": "Glottolog 5.3 — Chaouia of the Aures (tach1249)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/tach1249",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. Le chaoui de l'Aurès est classé parmi les langues berbères zénètes. Code ISO 639-3 : shy."
+      },
+      {
+        "title": "Glottolog 5.3 — Tumzabt (tumz1238)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/tumz1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. Le tumẓabt est classé parmi les langues berbères zénètes des oasis du nord du Sahara. Code ISO 639-3 : mzb."
+      },
+      {
+        "title": "Glottolog 5.3 — Tahaggart Tamahaq (taha1241)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/taha1241",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. Le tamahaq de l'Ahaggar est classé parmi les langues touarègues, une branche des langues berbères. Code ISO 639-3 : thv."
+      },
+      {
+        "title": "Glottolog - Shenwa (chen1266)",
+        "url": "https://glottolog.org/resource/languoid/id/chen1266",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ],
     "demographics": {
       "totalPopulation": 47400000,
       "referenceYear": 2025,
-      "source": "UNFPA – World Population Dashboard",
+      "source": "UNFPA – World Population Dashboard — Algérie",
       "peoples": [
         {
           "name": "Arabes d'Algérie",
-          "percentageInCountry": 70,
-          "percentageInAfrica": 17.5,
           "peopleId": "PPL_ARABES_AFRIQUE",
           "region": "Toutes les régions",
-          "languageFamily": "FLG_SEMITIQUE"
+          "languageFamily": "FLG_SEMITIQUE",
+          "mainLanguageCode": "arq"
         },
         {
           "name": "Kabyles",
-          "population": 10000000,
-          "percentageInCountry": 22.2,
-          "percentageInAfrica": 5.6,
           "peopleId": "PPL_KABYLE",
           "region": "Kabylie (nord)",
-          "languageFamily": "FLG_BERBERE"
+          "languageFamily": "FLG_BERBERE",
+          "mainLanguageCode": "kab"
         },
         {
           "name": "Chaouis",
-          "population": 2870000,
-          "percentageInCountry": 6.4,
-          "percentageInAfrica": 1.6,
           "peopleId": "PPL_CHAOUI",
-          "region": "Massif de l'Aurès (est)",
-          "languageFamily": "FLG_BERBERE"
+          "region": "Aurès (est)",
+          "languageFamily": "FLG_BERBERE",
+          "mainLanguageCode": "shy"
         },
         {
           "name": "Mozabites",
-          "percentageInCountry": 1.4,
+          "peopleId": "PPL_MOZABITE",
           "region": "Vallée du Mzab (Ghardaïa)",
           "languageFamily": "FLG_BERBERE",
-          "peopleId": "PPL_MOZABITE"
+          "mainLanguageCode": "mzb"
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "L'Algérie est un pays d'Afrique du Nord, dont la capitale est Alger. Son nom vient de celui de la ville, al-Jazāʾir en arabe ; en tamazight, le pays s'appelle Lezayer.",
+      "followUp": "Pourquoi le nom arabe d'Alger voudrait-il dire « les îles » ?"
     }
   }
 }
