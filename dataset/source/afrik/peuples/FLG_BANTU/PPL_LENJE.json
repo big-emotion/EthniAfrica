@@ -7,72 +7,86 @@
     "appellations": {
       "mainName": "Lenje",
       "selfAppellation": "Balenje",
-      "exonyms": [
-        "Bene Mukuni",
+      "exonyms": [],
+      "spellingAliases": [
+        "Walenje",
         "Balenge",
+        "Bene Mukuni",
+        "Beni Mukuni",
         "Benimukuni",
-        "Ciina mukuna",
-        "Lenge",
+        "Mukuni",
         "Lengi",
-        "Mukuni"
+        "Lenji"
       ],
-      "originOfExonyms": "Bene Mukuni voudrait dire en bantou les gens de Mukuni, en référence au fondateur légendaire de la chefferie lenje. Le prefixe Ba-/Be- est le pluriel bantu pour designer un peuple. Balenge est une variante phonetique de Balenje.",
+      "originOfExonyms": "Le nom Bene Mukuni renverrait au chef Mukuni et à son peuple. En 1908, A. C. Madan traduit ainsi le nom du parler Chine Mukuni : « la langue du chef Mukuni et de son peuple ». Selon Elliot Machinyise, Martin Chabu et Mercy Zemba (2023), Mukuni, sa famille et les clans qui lui étaient liés furent appelés Bene Mukuni à leur arrivée à Chibombo. Dans la langue lenje, le préfixe change selon ce qu'on nomme : les personnes sont les Walenje ou Balenje, la langue est le chilenje, et le pays le Wulenje, d'après la grammaire de Madan.",
       "whyProblematic": null,
-      "contemporaryUsage": "Lenje est le nom officiel utilise en Zambie. Bene Mukuni est le terme traditionnel toujours employe par les Lenje eux-memes. PeopleGroups.org les recense sous Lenje of Zambia (PGID PG015590). Reconnus parmi les 72 tribus officielles de Zambie.",
+      "contemporaryUsage": "Lenje est le nom qu'emploie le recensement zambien de 2010, qui compte officiellement 73 groupes ethniques dans le pays. Selon Kenneth Ngalamika (2022), les Lenje sont « parfois appelés Bene Mukuni » et se louent eux-mêmes comme « ba Lenje bantanshi » ou « bene chishi ». Les bases missionnaires les recensent sous le nom de Lenje, et Joshua Project leur donne aussi le nom de Bene Mukuni.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null,
       "linguisticFamily": "FLG_BANTU",
-      "ethnoLinguisticGroup": "Botatwe (Bantu zone M, Guthrie M.61)",
-      "historicalRegion": "Province Centrale, province de Lusaka et province du Copperbelt, Zambie",
+      "ethnoLinguisticGroup": "Botatwe (bantou, zone M de Guthrie, M.61)",
+      "historicalRegion": "Province Centrale de la Zambie surtout, et provinces de Lusaka et du Copperbelt",
       "currentCountries": ["ZMB"]
     },
     "ethnicities": ["Lenje"],
     "origins": {
-      "ancientOrigins": "Les Lenje sont consideres parmi les premiers peuples a s'installer en Zambie. Deux traditions d'origine coexistent : la premiere les fait venir de la region du Cameroun lors de l'expansion bantoue ; la seconde les relie aux royaumes Luba-Lunda du Congo. Selon les traditions orales conservees dans les documents de la ceremonie Kulamba Kubwalo (2016), vers 1700 les Bene Mukuni (lignage fondateur lenje) migrerent vers Chibombo depuis Kola au Congo, appartenant a la tribu Bayeke du Royaume Luba.",
-      "formationPeriod": "Etablissement dans la region de Chisamba atteste vers le XVIe siecle. Arrivee des Bene Mukuni dans la region de Chibombo vers 1700, ou ils trouverent deja les Lenje (Balenge) sous leur chef Nakandanga et les Soli sous Mbonshi.",
+      "ancientOrigins": "Les récits sur l'origine des Lenje diffèrent. Selon Joshua Project et Kenneth Ngalamika (2022), les Lenje seraient parmi les premiers peuples arrivés dans l'actuelle Zambie, venus de la région du Cameroun. Selon Elliot Machinyise, Martin Chabu et Mercy Zemba (2023), qui s'appuient sur des récits et sur les documents de la cérémonie Kulamba Kubwalo (2016), les Bene Mukuni, dont descendent les chefs lenje d'aujourd'hui, seraient venus vers 1700 de Kola, au Congo ; ils appartenaient au peuple bayeke du royaume luba. Rhoda Kachali (2008) présente les Lenje comme les premiers habitants des abords des marais de Lukanga, sans date d'arrivée ; elle cite Sicard et Vogel (1969), pour qui ils pourraient y vivre depuis le XVIIe siècle.",
+      "formationPeriod": "Selon Manchishi (1990), cité par Elliot Machinyise et ses coauteurs (2023), des Balenge et des Soli vivaient dans la région de Chisamba vers 1500 ; ces auteurs voient dans ces Balenge les ancêtres des Sala d'aujourd'hui. Les Bene Mukuni arrivèrent vers 1700 et trouvèrent à Chisamba les Lenje, sous leur chef Nakandanga, et les Soli, sous Mbonshi.",
       "migrationRoutes": [
-        "Depuis la region du Cameroun ou le bassin du Congo, via les migrations bantoues, vers les plateaux de la province Centrale de Zambie"
+        "De Kola, au Congo, jusqu'à Chibombo, vers 1700, pour les Bene Mukuni, selon les documents de la cérémonie Kulamba Kubwalo cités par Machinyise, Chabu et Zemba (2023)",
+        "De Chisamba à Namayani, puis vers Mwembeshi au sud, pour les Lenje chassés par les Bene Mukuni et devenus les Sala, selon les mêmes auteurs"
       ],
       "historicalSettlementZones": [
-        "Province Centrale de Zambie (Chibombo, Chisamba, Kabwe, Kapiri Mposhi)",
-        "Province de Lusaka",
-        "Province du Copperbelt",
-        "Districts de Mumbwa, Masaiti et Mpongwe"
+        "Le pays traversé par le chemin de fer entre la rivière Kafue et Broken Hill, que A. C. Madan appelle le district lenje en 1908",
+        "Le district de Chibombo et la région de Chisamba, dans la province Centrale",
+        "Les abords est des marais de Lukanga, dont le territoire du chef Chipepo, dans le district de Kapiri Mposhi",
+        "Les provinces de Lusaka et du Copperbelt, où vit une partie des Lenje en 2010"
       ],
-      "unificationsOrDivisions": "Les Bene Mukuni consoliderent l'autorite lenje en poussant certains groupes (Lenje de Namayani, qui devinrent les Sala) vers le sud. Les Lenje actuels de Chibombo ne seraient pas les Lenje d'origine ; les Lenje originels seraient les Sala d'aujourd'hui.",
-      "externalInfluences": "Contact avec les missions chretiennes et l'administration coloniale britannique en Rhodesie du Nord depuis la fin du XIXe siecle. Urbanisation croissante, notamment autour de Kabwe et Lusaka. Influence feministe contemporaine sur les pratiques traditionnelles.",
-      "majorHistoricalEvents": "Migration fondatrice des Bene Mukuni depuis Kola (Congo) vers 1700. Etablissement du systeme de sept chefferies lenje. Installation de Lusaka a proximite des terres lenje. Pratique de la Chisungu (ceremonie d'initiation feminine) documentee depuis les annees 1920."
+      "unificationsOrDivisions": "Selon Elliot Machinyise, Martin Chabu et Mercy Zemba (2023), les Bene Mukuni chassèrent les Lenje de Chisamba vers Namayani, tandis que les Soli s'enfuirent vers Bwinjimfumu, dans l'actuelle Lusaka. Les Lenje de Namayani partirent ensuite vers le sud, à Mwembeshi, et prirent le nom de Sala. Pour ces auteurs, les Lenje de Chibombo ne sont donc pas les Lenje d'origine : ce sont les Sala d'aujourd'hui.",
+      "externalInfluences": "En 1908, le chemin de fer traverse déjà le pays lenje, et A. C. Madan écrit son manuel de langue pour les missionnaires, les colons et les fonctionnaires. Rhoda Kachali (2008), qui cite Chipungu (1992), décrit la période coloniale comme celle où les Zambiens perdirent l'accès à leurs ressources : villages regroupés, chasse et pêche interdites, maïs imposé à la place du sorgho et du mil. Elle note aussi l'arrivée, depuis les années 1960, de pêcheurs de langue bemba dans les marais de Lukanga.",
+      "majorHistoricalEvents": "Vers 1700, les Bene Mukuni s'installent à Chibombo, selon les documents de la cérémonie Kulamba Kubwalo cités par Machinyise, Chabu et Zemba (2023). En 1908, A. C. Madan publie à Oxford le premier manuel de la langue lenje. En 2003, la Société biblique de Zambie publie une Bible en lenje, dont la traduction avait commencé en 1990, selon les mêmes auteurs."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Chefferie patrilineaire avec un chef superieur et sept chefs subordonnes. Chef superieur : Mukuni Ng'ombe. Chefs subordonnes : Liteta, Mungule, Chitanda, Mukubwe, Ng'abwe et Chamuka. La grande femme fondatrice legendaire (Bene Mukuni) est enterree a Likonde Lyabankanga dans le district de Chibombo.",
-      "clanOrganization": "Organisation en clans patrilineaires. Les Lenje sont organises en clans exogames avec une hierarchie clanique. Le systeme de relations de plaisanterie entre clans (similaire aux balwani des Lala) est atteste.",
-      "roleOfLineages": "Les lignages claniques structurent les alliances matrimoniales, l'acces a la terre et la transmission des titres. Le lobola (dot) fait partie des coutumes matrimoniales.",
-      "religiousAuthority": "Les chefs exercent une autorite rituelle. Veneration des ancetres comme source de protection et de fertilite. Les chefs de village organisent les ceremonies d'initiation (Chisungu) et la ceremonie annuelle Kulamba Kubwalo."
+      "traditionalPoliticalSystem": "Le chef supérieur des Lenje porte le titre de Mukuni Ng'ombe ; Kenneth Ngalamika (2022) l'appelle aussi Chipepo. Il cite à ses côtés les chefs Liteta, Mungule, Chitanda et Mukubwe. Selon son récit, les Lenje étaient menés par une femme dont cinq enfants sont aujourd'hui chefs, et qui serait enterrée à Likonde Lyaba Nkanga, dans le district de Chibombo. Le chef Ngabwe descendrait d'un fils du chef supérieur, et le chef Chamuka aurait reçu son titre pour sa fidélité. Selon Rhoda Kachali (2008), le chef gouvernait autrefois les ressources naturelles avec un conseil d'hommes et de femmes appelés ndunas.",
+      "clanOrganization": "En 1908, A. C. Madan note que les habitants du pays lenje semblent se désigner entre eux par les noms de leurs clans. En 1920, Edwin W. Smith et Andrew Murray Dale publient une liste de clans des Batema et des Walenje, chacun lié à un animal ou à une chose : le lion pour les Banenkalamo, le bétail pour les Baneng'ombe, l'éléphant pour les Bananzofu, le chien pour les Banambwa. Le site Explore Lusaka parle de clans patrilinéaires ; le récit de Kenneth Ngalamika fait descendre les chefs des enfants d'une femme, Nkanga.",
+      "ageClassSystems": null,
+      "roleOfLineages": "Selon Rhoda Kachali (2008), les membres du conseil du chef, les ndunas, sont choisis selon la parenté, et la chefferie se transmet dans la famille. Selon le récit de Kenneth Ngalamika (2022), les chefs lenje sont les enfants de Nkanga, « bana ba Nkanga ».",
+      "religiousAuthority": "Selon Rhoda Kachali (2008), le pouvoir du chef était de nature spirituelle : on le voyait comme le lien entre les vivants et les esprits des ancêtres honorés dans les marais de Lukanga. Désobéir au chef revenait à désobéir aux esprits. Des règles en découlaient : ne pas pêcher pendant la saison des pluies, de novembre à mars, et ne pas entrer dans certains lieux du marais."
     },
     "languages": {
-      "mainLanguage": "Lenje (Chilenje)",
+      "mainLanguage": "Lenje, ou chilenje (leh)",
       "isoCodes": ["leh"],
-      "dialects": ["Lukanga (parle par les BaTwa du marais Lukanga)"],
-      "vehicularRole": "Le lenje (ISO 639-3 : leh, Glottocode : lenj1248, Guthrie M.61) est une langue bantoue du groupe Botatwe, proche du soli et du tonga. Il compte environ 130 000 locuteurs (recensement 2010). Langue activement utilisee lors des ceremonies culturelles. Le nyanja et l'anglais sont utilises en milieu urbain."
+      "dialects": [
+        "Chine Mukuni, le parler du chef Mukuni et de son peuple, que A. C. Madan prend pour modèle en 1908"
+      ],
+      "vehicularRole": "Le lenje est une langue bantoue du groupe botatwe, dans la branche kafue, selon Glottolog. A. C. Madan le jugeait proche de l'ila et du tonga en 1908. Au recensement de 2010, 1,2 % des habitants de la Zambie le citent comme la langue qu'ils emploient le plus pour communiquer, et 10,4 % dans la province Centrale. Une Bible en lenje paraît en 2003."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q109535978",
+      "glottocode": "lenj1248",
+      "iso639_3": "leh"
     },
     "culture": {
-      "majorRites": "La Chisungu est le rite d'initiation feminine majeur : il marque le passage de l'adolescence a l'age adulte pour les jeunes femmes lenje. Il se deroule en trois etapes : separation (confinement dans une maison d'initiation), marge (enseignement des roles sociaux, responsabilites conjugales et normes sociales), et agregation (reintegration publique de l'initiee comme adulte). Pratique documentee depuis les annees 1920 a Chibombo. La ceremonie Kulamba Kubwalo est tenue chaque annee en octobre dans le district de Chibombo ; elle honore le chef traditionnel et celebre la cohesion communautaire.",
-      "symbols": "Le betail est un symbole identitaire fort chez les Lenje, qui sont reputes comme fiers eleveurs de bovins. La danse Mooba est un rituel emblematique associe a la possession spirituelle et a la guerison.",
-      "artsAndMusic": "La danse Mooba, rituel puissant associe a la possession spirituelle et a la guerison, est l'expression culturelle la plus distinctive des Lenje. La danse cibitiko est partagee avec les Soli voisins. Traditions orales et chants lors des ceremonies.",
-      "spiritualities": "Veneration des ancetres comme principale pratique spirituelle traditionnelle. Croyance dans le courroux des ancetres en cas de mauvais traitement d'un semblable. Ceremonies de pluie et de recolte. Adoption progressive du christianisme depuis la periode coloniale, aujourd'hui majoritaire."
+      "majorRites": "La cérémonie Kulamba Kubwalo est une fête d'action de grâce tenue à la fin des récoltes, selon Rhoda Kachali (2008). Selon Kenneth Ngalamika (2022), elle a lieu chaque année en octobre au lieu sacré de Likonde Lya Ba Nkanga, à Chibombo, pour honorer le chef supérieur Mukuni Ng'ombe et les autres chefs. Un article publié en 2025 dans le World Journal of Advanced Research and Reviews décrit la chisungu, l'initiation des jeunes filles lenje à Chibombo : la jeune fille est d'abord retirée dans une maison, puis reçoit un enseignement sur sa vie d'adulte, avant d'être présentée publiquement comme une femme.",
+      "symbols": "En 1920, Edwin W. Smith et Andrew Murray Dale notent que les Walenje s'ôtent trois dents de devant, alors que leurs voisins batema se taillent les deux incisives en V renversé. Les clans lenje portent chacun le nom d'un animal ou d'une chose, comme le lion ou le bétail.",
+      "artsAndMusic": "Le site Explore Lusaka présente la danse mooba, liée à la possession par les esprits et à la guérison, comme l'expression culturelle la plus connue des Lenje. Selon le même site, les Soli partagent avec eux la danse cibitiko.",
+      "spiritualities": "Selon Rhoda Kachali (2008), les marais de Lukanga sont pour les Lenje un lieu de prière pour la pluie, et la cérémonie Kulamba Kubwalo rend hommage aux esprits du marais. Selon une estimation de Joshua Project, non datée, 70 % des Lenje sont chrétiens."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Systeme de sept chefferies lenje reconnues par l'Etat zambien : Mukuni Ng'ombe (chef superieur), Liteta, Mungule, Chitanda, Mukubwe, Ng'abwe et Chamuka. Les sept chefferies s'etendent sur trois provinces : Lusaka, Centrale et Copperbelt.",
-      "relationsWithNeighbors": "Les Lenje sont apparentes aux Tonga voisins et aux Ila (groupe Botatwe). Ils sont en contact historique avec les Soli (groupe lala-lamba), occupant une zone tampon entre les Ila-Tonga et les Lala-Lamba selon Britannica. Ils partagent la langue cibitiko avec les Soli.",
-      "conflictsOrAlliances": "Les Bene Mukuni (faction lenje) chassa les Lenje-Balenge de Chisamba vers 1700 lors de leur migration depuis le Congo. Les Lenje de Namayani se deplacerent vers le sud et devinrent les Sala. Alliance ceremonielle et culturelle avec les Soli dans les ceremonies communes.",
-      "diaspora": "Urbanisation importante dans les villes de Lusaka, Kabwe et dans la province du Copperbelt."
+      "kingdomsOrChiefdoms": "Les Lenje reconnaissent un chef supérieur, Mukuni Ng'ombe, et plusieurs chefs : Liteta, Mungule, Chitanda, Mukubwe, Ngabwe et Chamuka, selon Kenneth Ngalamika (2022). Rhoda Kachali (2008) étudie le territoire du chef Chipepo, dans le district de Kapiri Mposhi.",
+      "relationsWithNeighbors": "En 1908, A. C. Madan situe les Lamba au nord des Lenje, les Lala, les Soli et les Luano à l'est, les Ila à l'ouest et les Tonga au sud ; c'est des Ila et des Tonga que leur langue est la plus proche. En 1920, Edwin W. Smith et Andrew Murray Dale décrivent les Walenje et les Batema comme des peuples très proches. Selon le site Explore Lusaka, les Lenje partagent la danse cibitiko avec les Soli.",
+      "conflictsOrAlliances": "Selon Elliot Machinyise, Martin Chabu et Mercy Zemba (2023), les Bene Mukuni chassèrent vers 1700 les Lenje de Chisamba et en prirent les biens, dont le bétail, et les femmes. Aujourd'hui, Rhoda Kachali (2008) décrit des conflits dans les marais de Lukanga entre les Lenje, qui se voient comme les premiers habitants, et les pêcheurs de langue bemba arrivés depuis les années 1960.",
+      "diaspora": "Au recensement de 2010, les Lenje sont 1,7 % des habitants des campagnes et 1,4 % de ceux des villes. Ils forment 9,5 % de la population de la province Centrale, 2,2 % de celle de la province de Lusaka et 1,2 % de celle du Copperbelt."
     },
     "demography": {
-      "totalPopulation": 395000,
-      "referenceYear": 2025,
-      "source": "PeopleGroups.org PGID PG015590 (395 000) ; Wikipedia EN (240 000 - 310 000)",
+      "totalPopulation": 200000,
+      "referenceYear": 2010,
+      "source": "Recensement zambien de 2010, rapport analytique national publié en 2012 par le Central Statistical Office : 1,6 % des 12 526 314 habitants se disent lenje, soit environ 200 000 personnes selon notre calcul. Les bases missionnaires donnent des estimations plus hautes, sans date : 290 000 pour Joshua Project et 407 000 pour PeopleGroups.org, lues le 3 novembre 2026.",
       "distributionByCountry": [
         {
           "country": "ZMB",
-          "population": 395000
+          "population": 200000,
+          "note": "Surtout la province Centrale (9,5 % de ses habitants en 2010), puis les provinces de Lusaka et du Copperbelt."
         }
       ]
     },
@@ -81,18 +95,21 @@
         "title": "Lenje in Zambia – Joshua Project, PGID 13039",
         "url": "https://joshuaproject.net/people_groups/13039",
         "tier": "unverified",
-        "source_kind": "missionary_database"
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire, lue le 3 novembre 2026 : 290 000 personnes, sans date ni source ; autre nom Bene Mukuni ; 70 % de chrétiens selon son estimation ; venue supposée de la région du Cameroun."
       },
       {
         "title": "Lenje of Zambia – PeopleGroups.org, PGID PG015590",
         "url": "https://peoplegroups.org/people_groups/pg015590/",
         "tier": "unverified",
-        "source_kind": "missionary_database"
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire, lue le 3 novembre 2026 : environ 407 000 personnes, sans date."
       },
       {
         "title": "Before Lusaka: A Brief History of the Soli and Lenje Peoples – Explore Lusaka, 2025",
         "url": "https://www.explorelusaka.com/post/before-lusaka-a-brief-history-of-the-soli-and-lenje-peoples",
-        "tier": "unverified"
+        "tier": "unverified",
+        "notes": "Article sans auteur d'un site de découverte de Lusaka, publié le 4 août 2025, lu le 3 novembre 2026. Il ne cite pas de sources. Il parle de clans patrilinéaires, de la danse mooba et de la danse cibitiko partagée avec les Soli."
       },
       {
         "title": "A case of Chisungu tradition of the Lenje people in Chibombo district – World Journal of Advanced Research and Reviews, 2025",
@@ -103,24 +120,89 @@
         "title": "The Birth and Sociolinguistic Features of Sala Language of Zambia – RSIS International, 2023",
         "url": "https://rsisinternational.org/journals/ijriss/Digital-Library/volume-7-issue-8/993-1000.pdf",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Elliot Machinyise, Martin Chabu et Mercy Zemba, International Journal of Research and Innovation in Social Science, vol. 7, n° 8, 2023, p. 993-1000, lu le 3 novembre 2026. Page 994 : d'après des récits et les documents de la cérémonie Kulamba Kubwalo (2016), les Bene Mukuni seraient venus de Kola, au Congo, vers 1700 ; ils auraient chassé les Lenje de Chisamba, et les femmes lenje qu'ils épousèrent les auraient appelés Lenje."
       },
       {
         "title": "Lenje – Glottolog 5.3, SIL International",
         "url": "https://glottolog.org/resource/languoid/id/lenj1248",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde tenu à l'Institut Max Planck d'anthropologie évolutionniste, lu le 3 novembre 2026 : la langue lenje (leh), parlée en Zambie, classée dans le groupe botatwe, branche kafue ; autres noms Chilenje, Chinamukuni, Ciina, Lengi, Lenji, Mukuni."
       },
       {
         "title": "Boswell, D. – Chipimpi, Vulgar Clans, and Lala-Lamba Ethnohistory (reference aux Lenje), 2008",
         "url": "https://scholarexchange.furman.edu/cgi/viewcontent.cgi?article=1001&context=ant-publications",
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "2010 Census of Population and Housing: National Analytical Report",
+        "author": "Central Statistical Office (Zambie)",
+        "year": 2012,
+        "url": "https://catalog.ihsn.org//catalog/4124/download/55311",
+        "tier": "unverified",
+        "source_kind": "official_statistics",
+        "page": "p. 63-68",
+        "notes": "Rapport du recensement national de 2010, publié à Lusaka en décembre 2012 et diffusé par le catalogue d'enquêtes de l'International Household Survey Network, lu le 3 novembre 2026. Tableaux 10.1, 10.4, 10.6 et 10.8 : 1,6 % des habitants se disent lenje, 9,5 % dans la province Centrale ; 1,2 % emploient surtout le lenje pour communiquer. Le rapport compte officiellement 73 groupes ethniques."
+      },
+      {
+        "title": "Stakeholder Interactions in Wetlands: Implications for Social Ecological System Sustainability. A Case of Lukanga Swamps, Zambia",
+        "author": "Rhoda Nthena Kachali",
+        "year": 2008,
+        "url": "https://www.lumes.lu.se/sites/lumes.lu.se/files/rhoda_kachali.pdf",
+        "tier": "unverified",
+        "source_kind": "academic",
+        "page": "p. 8, 23-24, 30",
+        "notes": "Mémoire de master en études environnementales, université de Lund, Suède, fondé sur une enquête de terrain faite en janvier et février 2008 dans le territoire du chef Chipepo. Lu le 3 novembre 2026. Page 23 : les Lenje, premiers habitants des abords des marais de Lukanga. Page 30 : le conseil des ndunas, le rôle spirituel du chef et la cérémonie Kulamba Kubwalo."
+      },
+      {
+        "title": "The Lenje People of Central Province",
+        "author": "Kenneth Ngalamika",
+        "year": 2022,
+        "url": "https://zambianobserver.com/the-lenje-people-of-central-province/",
+        "tier": "unverified",
+        "source_kind": "press",
+        "notes": "Article du journal en ligne The Zambian Observer, publié le 27 mars 2022, lu le 3 novembre 2026. Il présente les chefs lenje, le récit de la femme Nkanga et la cérémonie Kulamba ku Bwalo, tenue chaque année en octobre."
+      },
+      {
+        "title": "Lenje Handbook: A Short Introduction to the Lenje Dialect Spoken in North-West Rhodesia",
+        "author": "A. C. Madan",
+        "year": 1908,
+        "url": "https://archive.org/details/lenjehandbookas02madagoog",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "page": "p. 3-4, 13-14",
+        "notes": "Oxford, Clarendon Press, 1908, lu dans la numérisation d'Internet Archive. Préface, p. 3-4 : le nom du district, de ses habitants et de leur langue, les peuples voisins et le parler Chine Mukuni. Grammaire, p. 13-14 : les préfixes chi- pour la langue (chilenje) et wu- pour le pays (Wulenje)."
+      },
+      {
+        "title": "The Ila-Speaking Peoples of Northern Rhodesia, vol. I",
+        "author": "Edwin W. Smith et Andrew Murray Dale",
+        "year": 1920,
+        "url": "https://archive.org/details/ilaspeakingpeopl00smit",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. xxvii, 289, 313",
+        "notes": "Londres, Macmillan, 1920, lu dans la numérisation d'Internet Archive. Note d'introduction, p. xxvii : les Walenje, ou Beni Mukuni, et leur coutume de s'ôter trois dents de devant. Chapitre XI, p. 289 et annexe : des clans des Batema et des Walenje, avec l'animal ou la chose qui leur est liée."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Lenje, ou Balenje, sont un peuple de langue bantoue de la province Centrale de la Zambie, autour de Chibombo. On les appelle aussi Bene Mukuni, du nom du chef Mukuni et de son peuple.",
+      "followUp": "Comment les Bene Mukuni ont-ils fini par porter le nom de Lenje ?"
+    },
+    "gaps": [
+      {
+        "field": "content.appellations.whyProblematic",
+        "reason": "Nous n'avons pas trouvé de source qui dise que l'un de ces noms est jugé blessant ou refusé par les Lenje ; nous avons consulté Glottolog, le manuel de A. C. Madan, l'ouvrage de Smith et Dale et l'article de Machinyise, Chabu et Zemba."
+      },
+      {
+        "field": "content.organization.ageClassSystems",
+        "reason": "Nous n'avons pas trouvé de source qui décrive des classes d'âge chez les Lenje ; nous avons consulté le manuel de A. C. Madan, l'ouvrage de Smith et Dale, le mémoire de Rhoda Kachali et l'article de Kenneth Ngalamika."
       }
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Lenje désigne un peuple bantou de la Province centrale de la Zambie, qui se nomme lui-même Lenje, au pluriel Balenje ou Walenje. On l'appelle aussi Bene Mukuni, un nom qui renverrait au chef Mukuni et à son peuple. On ne sait pas avec certitude d'où vient le nom Lenje ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Lenje désigne un peuple de langue bantoue de la province Centrale de la Zambie, qui se nomme lui-même Lenje, au pluriel Balenje ou Walenje. On l'appelle aussi Bene Mukuni, un nom qui renverrait au chef Mukuni et à son peuple. Une explication publiée en 2023 fait passer le nom Lenje d'un peuple plus ancien aux Bene Mukuni ; nous présentons plus bas ces explications et leurs sources.",
     "names": [
       {
         "nameText": "Lenje",
@@ -128,9 +210,63 @@
         "selfGiven": true,
         "languageOfOrigin": "leh",
         "namedBy": null,
-        "shortLine": "Le nom de ce peuple, de son pays et de sa langue, écrit dès 1908 ; son origine n'est pas expliquée.",
+        "shortLine": "Le nom de ce peuple, de son pays et de sa langue, écrit dès 1908 par A. C. Madan.",
         "periodLabel": "Écrit depuis 1908 ; en usage aujourd'hui",
         "accounts": [
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "Recensement de 2010"
+            },
+            "era": "modern",
+            "statement": "Le nom Lenje est celui que retient le recensement zambien de 2010 : 1,6 % des habitants du pays se disent lenje, presque tous dans la province Centrale et autour de Lusaka.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "2010 Census of Population and Housing: National Analytical Report",
+                "author": "Central Statistical Office (Zambie)",
+                "year": 2012,
+                "url": "https://catalog.ihsn.org//catalog/4124/download/55311",
+                "tier": "unverified",
+                "source_kind": "official_statistics",
+                "page": "p. 67-68",
+                "notes": "Rapport du recensement national de 2010, publié à Lusaka en décembre 2012, lu le 3 novembre 2026. Tableaux 10.6 et 10.8 : la part des Lenje dans le pays, en ville et à la campagne, et dans chaque province."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1700,
+              "to": 1700,
+              "label": "Vers 1700, selon une explication publiée en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Lenje aurait d'abord été celui d'un peuple plus ancien de la région de Chisamba, selon Elliot Machinyise, Martin Chabu et Mercy Zemba. D'après des récits et les documents de la cérémonie Kulamba Kubwalo, les Bene Mukuni, venus de Kola au Congo vers 1700, chassèrent ces Lenje et épousèrent leurs femmes ; ce seraient ces femmes qui auraient donné aux Bene Mukuni le nom de Lenje. Les Lenje partis vers le sud auraient pris le nom de Sala.",
+            "aspect": "meaning",
+            "actors": [
+              {
+                "name": "Les Bene Mukuni",
+                "role": "groupe venu de Kola, au Congo, selon ce récit"
+              },
+              {
+                "name": "Nakandanga",
+                "role": "chef des Lenje de Chisamba à l'arrivée des Bene Mukuni, selon ce récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Birth and Sociolinguistic Features of Sala Language of Zambia – RSIS International, 2023",
+                "author": "Elliot Machinyise, Martin Chabu et Mercy Zemba",
+                "year": 2023,
+                "url": "https://rsisinternational.org/journals/ijriss/Digital-Library/volume-7-issue-8/993-1000.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 994",
+                "notes": "International Journal of Research and Innovation in Social Science, vol. 7, n° 8, 2023, lu le 3 novembre 2026. Les auteurs s'appuient sur des récits, sur les documents de la cérémonie Kulamba Kubwalo de 2016 et sur Manchishi (1990)."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1920,
@@ -160,7 +296,7 @@
               "label": "1908"
             },
             "era": "colonial",
-            "statement": "Le nom Lenje ne correspond pas alors à une forte unité : les gens du district semblent se désigner entre eux par les noms de leurs clans, selon A. C. Madan. Les sources que nous avons lues n'expliquent pas d'où vient ce nom.",
+            "statement": "Le nom Lenje ne correspond pas alors à une forte unité : les gens du district semblent se désigner entre eux par les noms de leurs clans, selon A. C. Madan.",
             "aspect": "usage",
             "sources": [
               {
@@ -209,6 +345,49 @@
         "shortLine": "Un nom qui renverrait au chef Mukuni et à son peuple ; écrit Beni Mukuni en 1920.",
         "periodLabel": "Écrit depuis 1908",
         "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Bene Mukuni reste en usage : les Lenje sont « parfois appelés Bene Mukuni », écrit Kenneth Ngalamika en 2022 dans le journal en ligne The Zambian Observer.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Lenje People of Central Province",
+                "author": "Kenneth Ngalamika",
+                "year": 2022,
+                "url": "https://zambianobserver.com/the-lenje-people-of-central-province/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article du journal en ligne The Zambian Observer, publié le 27 mars 2022, lu le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1700,
+              "to": 1700,
+              "label": "Vers 1700, selon une explication publiée en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Bene Mukuni aurait été donné à Mukuni, à sa famille, à ses proches et aux clans qui lui étaient liés, à leur arrivée à Chibombo, selon Elliot Machinyise, Martin Chabu et Mercy Zemba, qui s'appuient sur les documents de la cérémonie Kulamba Kubwalo.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Birth and Sociolinguistic Features of Sala Language of Zambia – RSIS International, 2023",
+                "author": "Elliot Machinyise, Martin Chabu et Mercy Zemba",
+                "year": 2023,
+                "url": "https://rsisinternational.org/journals/ijriss/Digital-Library/volume-7-issue-8/993-1000.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 994",
+                "notes": "International Journal of Research and Innovation in Social Science, vol. 7, n° 8, 2023, lu le 3 novembre 2026."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1920,
