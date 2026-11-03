@@ -3,11 +3,11 @@
   "nameFr": "Angola",
   "nameEn": "Angola",
   "nameOfficial": "République d'Angola (República de Angola)",
-  "summary": "L'Angola est un pays d'Afrique australe façonné par les royaumes Kongo, Ndongo et Matamba, puis par quatre siècles de colonisation portugaise. Son nom vient de « ngola », le titre porté par les rois du Ndongo : les Portugais ont fait un pays d'un titre royal. Sa culture croise traditions bantoues, khoïsan et lusophones.",
-  "etymology": "Le nom \"Angola\" viendrait de \"Ngola\", titre des rois du royaume Ndongo. Les Portugais ont utilisé ce terme pour désigner la région qu'ils colonisaient à partir du XVIe siècle. \"Ngola\" était le titre royal du souverain du royaume Ndongo, l'un des royaumes précoloniaux les plus puissants de la région.",
-  "nameOriginActor": "Le nom provient du royaume Ndongo et de son titre royal \"Ngola\". Les Portugais ont adopté et généralisé ce terme lors de la colonisation à partir de 1575. Le nom a été officialisé comme \"Colónia de Angola\" pendant la période coloniale portugaise (1575-1975).",
+  "summary": "L'Angola est un pays d'Afrique australe, au bord de l'Atlantique. Son nom viendrait de ngola, le titre du roi du Ndongo, un royaume mbundu que les Portugais appelaient royaume d'Angola dès 1520. Le nom a ensuite désigné la colonie portugaise fondée en 1575, puis l'État devenu indépendant le 11 novembre 1975.",
+  "etymology": "Le nom Angola viendrait de ngola, le titre que portait le roi du Ndongo, un royaume des Mbundu situé au sud du royaume du Kongo, selon l'historien Jan Vansina. L'étude sur l'Angola publiée par la Bibliothèque du Congrès des États-Unis précise que ce roi portait le titre de ngola a kiluanje : les Portugais auraient repris la première partie de ce titre, prononcée Angola, pour désigner toute la région. Selon l'historienne Flávia Maria de Carvalho, les Portugais appelaient « terres du Ngola » les territoires situés entre les fleuves Kwanza et Lukala. Le nom est écrit pour la première fois sous la forme Amgola, dans des instructions du roi du Portugal datées de 1520.",
+  "nameOriginActor": "Le titre ngola appartient aux rois du Ndongo, un royaume mbundu. Ce sont les Portugais qui en ont fait le nom d'un pays : leurs textes parlent du « royaume d'Angola » dès 1520, puis ils donnent ce nom à la colonie fondée en 1575. Le nom passe ensuite à l'État indépendant proclamé le 11 novembre 1975, qui s'appelle République populaire d'Angola jusqu'en 1992, puis République d'Angola.",
   "nameHistory": {
-    "summary": "Le nom Angola désigne un pays d'Afrique australe, la République d'Angola, qui se nomme ainsi elle-même. De 1975 à 1992, l'État s'appelait République populaire d'Angola. Les sources rattachent le nom Angola au titre des rois du Ndongo ; nous présentons leur explication plus bas.",
+    "summary": "Le nom Angola désigne un pays d'Afrique australe, la République d'Angola, qui se nomme ainsi elle-même. De 1975 à 1992, l'État s'appelait République populaire d'Angola ; à l'indépendance, deux mouvements rivaux ont aussi appelé République populaire démocratique d'Angola le territoire qu'ils tenaient. Les sources rattachent le nom Angola au titre des rois du Ndongo, et nous présentons leur explication plus bas.",
     "names": [
       {
         "nameText": "Angola",
@@ -151,7 +151,7 @@
               "label": "1575"
             },
             "era": "colonial",
-            "statement": "Le nom Angola devient celui d'une colonie portugaise : en 1575, après la guerre des Jaga contre le royaume du Kongo, est fondée la colonie de l'Angola, selon Jan Vansina.",
+            "statement": "Le nom Angola devient celui d'une colonie portugaise : en 1575, après la guerre des Jaga contre le royaume du Kongo, est fondée la colonie de l'Angola, selon Jan Vansina. L'étude de la Bibliothèque du Congrès des États-Unis place en 1576 la fondation de Luanda, qui établit dans les faits la colonie.",
             "sources": [
               {
                 "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
@@ -162,6 +162,15 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 613",
                 "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot. Après la guerre des Jaga, « en 1575, fut fondée la colonie de l'Angola »."
+              },
+              {
+                "title": "Angola: A Country Study, section « Kongo Kingdom »",
+                "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+                "year": 1991,
+                "url": "https://countrystudies.us/angola/5.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Le royaume du Kongo naît à la fin du XIVe siècle, quand des Bakongo venus du nord du fleuve Congo fondent Mbanza Kongo ; au milieu du XVe siècle, il est le plus puissant des États de la côte ouest de l'Afrique centrale. Les Portugais atteignent l'embouchure du fleuve en 1483. Le roi Afonso, au pouvoir en 1506, adopte le christianisme et se plaint en vain de la traite des esclaves, envoyés d'abord vers les îles portugaises voisines puis surtout vers le Brésil. La capitale est renommée São Salvador. Le roi Sébastien du Portugal accorde à Paulo Dias de Novais le territoire au sud du Kongo, et en 1576 les Portugais fondent Luanda, « établissant dans les faits la colonie de l'Angola ». Les Portugais ne tiennent d'abord que des positions fragiles sur la côte, et la couronne prend la colonie en main en 1590."
               }
             ]
           },
@@ -172,7 +181,7 @@
               "label": "16 février 1520"
             },
             "era": "polity",
-            "statement": "Le nom Angola apparaît par écrit, sous la forme Amgola, dans les instructions du roi du Portugal Manuel Ier à deux envoyés : leur navire part vers le « Regno dAmgola », le royaume d'Angola, dont le roi souhaiterait se faire chrétien, selon le recueil d'António Brásio. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume qu'il désigne existait déjà avant ce texte.",
+            "statement": "Le nom Angola apparaît par écrit, sous la forme Amgola, dans les instructions du roi du Portugal Manuel Ier à deux envoyés : leur navire part vers le « Regno dAmgola », le royaume d'Angola, dont le roi souhaiterait se faire chrétien, selon le recueil d'António Brásio. C'est la plus ancienne trace de ce nom que nous connaissons. Le royaume qu'il désigne existait déjà avant ce texte.",
             "formAsWritten": "Regno dAmgola",
             "birth": true,
             "actors": [
@@ -220,9 +229,10 @@
             "period": {
               "from": null,
               "to": null,
-              "label": "Origine non datée"
+              "label": "Explications publiées de 1991 à 2011"
             },
-            "statement": "Le nom Angola viendrait de ngola, le titre que portait le roi du Ndongo, selon Jan Vansina. Les Portugais auraient appelé « terres du Ngola » le pays situé entre le Kwanza et le Lukala, d'où viendrait le nom, selon Flávia Maria de Carvalho.",
+            "era": "modern",
+            "statement": "Le nom Angola viendrait de ngola, le titre que portait le roi du Ndongo, selon Jan Vansina. L'étude de la Bibliothèque du Congrès des États-Unis donne le titre complet, ngola a kiluanje, dont les Portugais auraient repris la première partie pour nommer toute la région. Les Portugais auraient appelé « terres du Ngola » le pays situé entre le Kwanza et le Lukala, d'où viendrait le nom, selon Flávia Maria de Carvalho.",
             "hypothesisGroup": "origine du nom Angola",
             "sources": [
               {
@@ -244,6 +254,15 @@
                 "source_kind": "academic",
                 "page": "p. 1, note 2",
                 "notes": "Communication publiée dans les actes du XXVIe Simpósio Nacional de História de l'ANPUH, São Paulo, juillet 2011. La note 2 écrit que le nom Angola dérive du titre du souverain du Ndongo, Ngola, et que les Portugais appelaient « terres du Ngola » les territoires entre le Kwanza et le Lukala."
+              },
+              {
+                "title": "Angola: A Country Study, section « Ndongo Kingdom »",
+                "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+                "year": 1991,
+                "url": "https://countrystudies.us/angola/6.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Le Ndongo est un État de langue kimbundu, peuplé de Mbundu et d'abord tributaire du roi du Kongo. Son souverain portait le titre de « ngola a kiluanje » : c'est la première partie de ce titre, prononcée « Angola », que les Portugais ont employée pour désigner toute la région. En 1556, le ngola bat une armée du Kongo et se déclare indépendant. Après 1576, Paulo Dias de Novais mène des campagnes sanglantes contre le Ndongo ; en 1604, les Portugais remontés le long du Cuanza comprennent que les mines d'argent espérées n'existent pas, et la capture d'esclaves devient le moteur principal de leur expansion."
               }
             ]
           }
@@ -264,7 +283,7 @@
               "label": "Du 11 novembre 1975 au 16 septembre 1992"
             },
             "era": "modern",
-            "statement": "Le nom République populaire d'Angola est celui de l'État de l'indépendance jusqu'à la révision constitutionnelle de 1992, qui le remplace par République d'Angola, selon le texte de cette loi.",
+            "statement": "Le nom République populaire d'Angola est celui que le Mouvement populaire de libération de l'Angola (MPLA), installé à Luanda, donne au territoire qu'il contrôle à l'indépendance, selon l'étude de la Bibliothèque du Congrès des États-Unis. Il reste celui de l'État jusqu'à la révision constitutionnelle de 1992, qui le remplace par République d'Angola, selon le texte de cette loi.",
             "aspect": "usage",
             "sources": [
               {
@@ -286,6 +305,15 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 132, tableau 5.1",
                 "notes": "Tableau chronologique des indépendances : l'Angola, Cabinda compris, devient indépendant du Portugal le 11 novembre 1975."
+              },
+              {
+                "title": "Angola: A Country Study, section « Independence and the Rise of the MPLA Government »",
+                "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+                "year": 1991,
+                "url": "https://countrystudies.us/angola/39.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Le 11 novembre 1975, le Portugal remet l'indépendance au peuple angolais sans reconnaître aucun mouvement. Le MPLA établit son gouvernement à Luanda et appelle le territoire qu'il contrôle « People's Republic of Angola », la République populaire d'Angola. Le FNLA et l'UNITA annoncent un régime rival installé à Huambo et appellent leur territoire « Democratic People's Republic of Angola », la République populaire démocratique d'Angola ; aucun État ne le reconnaît. Avec 10 000 à 12 000 soldats cubains et des armes soviétiques, le MPLA domine dès janvier 1976 ; le FNLA est battu dans le nord en février 1976, et l'Afrique du Sud, qui soutenait le FNLA et l'UNITA, retire ses troupes. L'Organisation de l'unité africaine, l'ONU et le Portugal reconnaissent le gouvernement du MPLA."
               }
             ]
           },
@@ -296,7 +324,7 @@
               "label": "1975"
             },
             "era": "modern",
-            "statement": "Le nom République populaire d'Angola figure à l'article 1 de la loi constitutionnelle de 1975, en portugais : « A República Popular de Angola é um Estado soberano, independente e democrático ». C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "statement": "Le nom République populaire d'Angola figure à l'article 1 de la loi constitutionnelle de 1975, en portugais : « A República Popular de Angola é um Estado soberano, independente e democrático ». C'est la plus ancienne trace de ce nom que nous connaissons.",
             "formAsWritten": "A República Popular de Angola",
             "birth": true,
             "sources": [
@@ -313,96 +341,146 @@
             ]
           }
         ]
+      },
+      {
+        "nameText": "République populaire démocratique d'Angola",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le FNLA et l'UNITA, deux mouvements de libération",
+        "periodLabel": "À l'indépendance, en 1975",
+        "accounts": [
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "Novembre 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom République populaire démocratique d'Angola est celui que deux mouvements, le Front national de libération de l'Angola (FNLA) et l'Union nationale pour l'indépendance totale de l'Angola (UNITA), donnent au territoire qu'ils tiennent à l'indépendance, avec Huambo pour siège, selon l'étude de la Bibliothèque du Congrès des États-Unis. Aucun État ne reconnaît ce régime, et le FNLA est battu dans le nord dès février 1976.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Angola: A Country Study, section « Independence and the Rise of the MPLA Government »",
+                "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+                "year": 1991,
+                "url": "https://countrystudies.us/angola/39.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Le 11 novembre 1975, le Portugal remet l'indépendance au peuple angolais sans reconnaître aucun mouvement. Le MPLA établit son gouvernement à Luanda et appelle le territoire qu'il contrôle « People's Republic of Angola », la République populaire d'Angola. Le FNLA et l'UNITA annoncent un régime rival installé à Huambo et appellent leur territoire « Democratic People's Republic of Angola », la République populaire démocratique d'Angola ; aucun État ne le reconnaît. Avec 10 000 à 12 000 soldats cubains et des armes soviétiques, le MPLA domine dès janvier 1976 ; le FNLA est battu dans le nord en février 1976, et l'Afrique du Sud, qui soutenait le FNLA et l'UNITA, retire ses troupes. L'Organisation de l'unité africaine, l'ONU et le Portugal reconnaissent le gouvernement du MPLA."
+              }
+            ]
+          }
+        ]
       }
     ]
   },
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Colónia de Angola (1575-1975)",
-        "République populaire d'Angola (1975-1990)"
+        "Royaume d'Angola, écrit Regno dAmgola (1520)",
+        "Colonie de l'Angola (1575-1975)",
+        "République populaire d'Angola (1975-1992)",
+        "République populaire démocratique d'Angola (1975)"
       ],
-      "antiquity": "Le territoire actuel de l'Angola était peuplé de peuples Khoisan (San et Khoikhoi), premiers habitants de la région, sans nom unifié pour l'ensemble du territoire. Les peuples autochtones avaient leurs propres noms pour leurs territoires et royaumes.",
-      "middleAges": "Développement de royaumes bantous puissants : royaume Kongo (XIVe-XVIIe siècles), royaume Ndongo (XVe-XVIIe siècles), royaume Matamba, royaumes Ovimbundu, et Empire Lunda (XVIe-XIXe siècles). Pas de nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Mosaïque de royaumes et chefferies autonomes : royaume Kongo, royaume Ndongo, royaume Matamba, royaumes Ovimbundu, Empire Lunda. Les Portugais utilisaient le terme \"Angola\" basé sur le titre \"Ngola\" des rois du Ndongo.",
-      "colonization": "1575-1975 : Colónia de Angola (période coloniale portugaise). Les Portugais ont fondé la colonie d'Angola en 1575 avec Luanda comme capitale. Le territoire était administré comme une colonie portugaise pendant près de 400 ans.",
-      "contemporary": "1975 : République populaire d'Angola (proclamée à l'indépendance le 11 novembre 1975). Depuis les années 1990 : République d'Angola (nom officiel actuel). Le pays a connu une longue guerre civile (1975-2002) entre le MPLA (Mouvement populaire de libération de l'Angola) et l'UNITA (Union nationale pour l'indépendance totale de l'Angola)."
+      "antiquity": "Les sources consultées ne donnent aucun nom ancien pour l'ensemble du territoire de l'Angola actuel. Selon l'étude de la Bibliothèque du Congrès des États-Unis, ses premiers habitants étaient des chasseurs-cueilleurs qui parlaient des langues à clics, dites khoïsan, et que les Européens appelaient « Bushmen ». Des peuples de langues bantoues se sont répandus dans la région au cours du premier millénaire de notre ère.",
+      "middleAges": "Les noms connus pour cette période sont ceux des royaumes. Le royaume du Kongo naît à la fin du XIVe siècle, quand des Bakongo venus du nord du fleuve Congo fondent sa capitale, Mbanza Kongo. Plus au sud, l'État du Ndongo est en formation vers 1500. Son roi porte le titre de ngola, d'où viendra le nom Angola, selon l'historien Jan Vansina.",
+      "precolonial": "Les Portugais atteignent l'embouchure du fleuve Congo en 1483. En 1520, des instructions du roi du Portugal Manuel Ier parlent du « Regno dAmgola », le royaume d'Angola : c'est le Ndongo, nommé d'après le titre de son roi. Selon l'historienne Flávia Maria de Carvalho, les Portugais appellent « terres du Ngola » le pays situé entre les fleuves Kwanza et Lukala. D'autres royaumes portent leur propre nom : le Matamba et le Kasanje à l'est du Ndongo, le royaume lunda plus loin à l'est, et les royaumes ovimbundu du plateau de Benguela, comme le Bailundu, le Bié et le Ciyaka.",
+      "colonization": "Le nom Angola devient celui d'une colonie portugaise en 1575, selon Jan Vansina. L'étude de la Bibliothèque du Congrès des États-Unis date de 1576 la fondation de Luanda, qui établit dans les faits la colonie de l'Angola. Pendant longtemps, la colonie se limite à des positions sur la côte et le long du fleuve Cuanza (Kwanza). Les Portugais ne soumettent la plupart des royaumes ovimbundu qu'à la fin du XIXe siècle, et le royaume kwanyama du sud qu'en 1915.",
+      "contemporary": "L'ancienne colonie, Cabinda comprise, devient indépendante le 11 novembre 1975. Le Mouvement populaire de libération de l'Angola (MPLA), installé à Luanda, appelle République populaire d'Angola le territoire qu'il contrôle. Le Front national de libération de l'Angola (FNLA) et l'Union nationale pour l'indépendance totale de l'Angola (UNITA) appellent République populaire démocratique d'Angola celui qu'ils tiennent depuis Huambo. Seul le gouvernement du MPLA est reconnu par l'Organisation de l'unité africaine, l'ONU et le Portugal. La révision constitutionnelle du 16 septembre 1992 remplace le nom République populaire d'Angola par République d'Angola, que garde la Constitution de 2010."
     },
     "kingdoms": [
       {
-        "name": "Royaume Kongo",
-        "period": "XIVe siècle - XVIIe siècle (apogée), déclin progressif jusqu'au XIXe siècle",
+        "name": "Royaume du Kongo",
+        "period": "Fin du XIVe siècle - XVIIIe siècle",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1301,
+          "startYear": 1375,
+          "endYear": 1700,
+          "precision": "approximate",
+          "datingNote": "Le royaume naît à la fin du XIVe siècle ; il perd son unité après la défaite de Mbwila en 1665 et n'est plus, au XVIIIe siècle, qu'un ensemble de petits États qui reconnaissent le roi. Les bornes s'arrêtent à ce moment-là."
+        },
+        "dominantPeoples": ["Bakongo"],
+        "politicalCenters": [
+          "Mbanza Kongo, renommée São Salvador par les Portugais"
+        ],
+        "historicalRole": "Le royaume du Kongo naît à la fin du XIVe siècle, quand des Bakongo venus du nord du fleuve Congo s'installent dans le nord de l'Angola actuel et fondent Mbanza Kongo. Au milieu du XVe siècle, il est l'État le plus puissant de la côte ouest de l'Afrique centrale, et le premier de cette côte à rencontrer les Portugais, en 1483. Son roi Afonso, au pouvoir à partir de 1506, adopte le christianisme et se plaint en vain auprès du Portugal de la traite des esclaves. La défaite face aux Portugais à Mbwila, le 29 octobre 1665, met fin à son unité."
+      },
+      {
+        "name": "Royaume du Ndongo",
+        "period": "Vers 1500 - 1671",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1500,
+          "endYear": 1671,
+          "precision": "approximate",
+          "datingNote": "Vers 1500, l'État est en formation selon Jan Vansina ; en 1671, les Portugais prennent sa capitale et soumettent le royaume."
+        },
+        "dominantPeoples": ["Mbundu (Ambundu)"],
+        "politicalCenters": [
+          "Pungu-a-Ndongo (aujourd'hui Pungo Andongo), capitale en 1671"
+        ],
+        "historicalRole": "Le Ndongo est un État des Mbundu, de langue kimbundu, en formation vers 1500 au sud du Kongo, dont il est d'abord tributaire. Son roi porte le titre de ngola, d'où vient le nom Angola. En 1556, il bat une armée du Kongo et se déclare indépendant. Après la fondation de Luanda, les Portugais lui font la guerre pour capturer des esclaves. Au début des années 1620, Njinga, sœur du roi Ngola-a-Mbandi, négocie avec eux à Luanda, puis prend le pouvoir et leur résiste depuis l'exil. En 1671, les Portugais prennent la capitale, Pungu-a-Ndongo, tuent le roi et soumettent le royaume."
+      },
+      {
+        "name": "Royaume du Matamba",
+        "period": "XVIIe siècle",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1601,
+          "endYear": 1700,
+          "precision": "approximate",
+          "datingNote": "Les sources consultées décrivent le Matamba au XVIIe siècle, du règne de Njinga au traité de 1683 ; elles ne datent ni sa fondation ni sa fin."
+        },
+        "dominantPeoples": ["Mbundu (Ambundu)"],
+        "politicalCenters": [],
+        "historicalRole": "Le Matamba est un royaume mbundu de l'intérieur, à l'est du Ndongo. L'étude de la Bibliothèque du Congrès des États-Unis indique qu'on connaît peu son histoire avant le XVIIe siècle. Chassée du Ndongo par les Portugais, la reine Njinga prend le trône du Matamba, s'allie aux Hollandais, qui occupent Luanda de 1641 à 1648, et domine la politique des Mbundu jusqu'à sa mort en 1663. L'historienne Linda Heywood appelle Ndongo-Matamba le royaume qu'elle gouverne alors. En 1683, le Portugal obtient de la nouvelle reine du Matamba qu'elle commerce avec lui seul."
+      },
+      {
+        "name": "Royaumes ovimbundu",
+        "period": "XVIIIe siècle - fin du XIXe siècle",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1701,
+          "endYear": 1900,
+          "precision": "century"
+        },
+        "dominantPeoples": ["Ovimbundu"],
+        "politicalCenters": ["Bailundu", "Bié (Bihe)", "Wambu", "Ciyaka"],
+        "historicalRole": "Les Ovimbundu s'installent sur le plateau de Benguela entre 1500 et 1700. Au XVIIIe siècle, vingt-deux royaumes y existent : treize sont indépendants, dont le Bailundu, le Bié et le Ciyaka, et les neuf autres paient un tribut à l'un d'eux. Les Ovimbundu deviennent les commerçants les plus actifs de l'intérieur, dans le commerce des esclaves, de l'ivoire et de la cire, puis du caoutchouc. Les Portugais conquièrent la plupart de ces royaumes à la fin du XIXe siècle et nomment ensuite leurs rois."
+      },
+      {
+        "name": "Empire lunda",
+        "period": "XVIIe siècle - 1900",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1601,
           "endYear": 1900,
           "precision": "approximate",
-          "datingNote": "Le libellé couvre plusieurs périodes distinctes ; les bornes retenues encadrent l'ensemble."
+          "datingNote": "Le royaume se développe au XVIIe siècle ; l'étude de la Bibliothèque du Congrès des États-Unis date sa destruction par les Tshokwe de 1900."
         },
-        "dominantPeoples": ["Kongo (Bakongo)"],
+        "dominantPeoples": ["Ruund (Lunda du Nord)", "Lunda du Sud"],
         "politicalCenters": [
-          "Mbanza Kongo (capitale historique",
-          "aujourd'hui en Angola)",
-          "São Salvador"
+          "Capitale située dans l'actuel Katanga, en République démocratique du Congo"
         ],
-        "historicalRole": "Royaume Kongo puissant et centralisé, contacts précoces avec les Portugais dès le XVe siècle, conversion au christianisme, commerce avec l'Europe, déclin progressif face à la traite des esclaves et aux conflits internes."
+        "historicalRole": "Le royaume lunda se forme au XVIIe siècle autour d'un centre situé dans l'actuel Katanga. Il s'étend en intégrant les chefs des peuples voisins au lieu de les remplacer, et contrôle les caravanes de commerce. Le peuple qui le domine se nomme Ruund ; Lunda est le nom que lui donnent ses voisins du sud. Dans les années 1760, il attaque le Matamba et le Kasanje. À la fin du XIXe siècle, les Tshokwe, armés de fusils obtenus des Ovimbundu, envahissent sa capitale et détruisent le royaume."
       },
       {
-        "name": "Royaume Ndongo",
-        "period": "XVe siècle - XVIIe siècle",
+        "name": "Royaume kwanyama",
+        "period": "Début du XIXe siècle - 1915",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1401,
-          "endYear": 1700,
-          "precision": "century"
+          "startYear": 1801,
+          "endYear": 1915,
+          "precision": "approximate",
+          "datingNote": "Les sources consultées placent la fondation au début du XIXe siècle, sans année précise ; la conquête portugaise date de 1915."
         },
-        "dominantPeoples": ["Ambundu (Mbundu)"],
-        "politicalCenters": ["Kabasa (capitale)", "région de Luanda"],
-        "historicalRole": "Royaume Ndongo puissant, résistance à la colonisation portugaise sous la reine Nzinga (Njinga Mbande, 1583-1663), guerre contre les Portugais, alliance avec le royaume Matamba, source du nom \"Angola\" (dérivé de \"Ngola\", titre royal)."
+        "dominantPeoples": ["Kwanyama (Ovambo)"],
+        "politicalCenters": [],
+        "historicalRole": "Le royaume kwanyama, aussi écrit Kwanhama, est fondé au début du XIXe siècle près de l'actuelle frontière avec la Namibie. Les Kwanyama, le plus grand sous-groupe des Ovambo, commercent avec des marchands portugais et allemands. Le royaume résiste jusqu'en 1915, quand une grande armée portugaise le soumet."
       },
       {
-        "name": "Royaume Matamba",
-        "period": "XVIe siècle - XIXe siècle",
-        "entryType": "polity",
-        "timeRange": {
-          "startYear": 1501,
-          "endYear": 1900,
-          "precision": "century"
-        },
-        "dominantPeoples": ["Ambundu", "populations locales"],
-        "politicalCenters": ["Matamba (capitale)"],
-        "historicalRole": "Royaume Matamba, refuge de la reine Nzinga après la chute du Ndongo, résistance à la colonisation portugaise, maintien de l'indépendance jusqu'au XIXe siècle."
-      },
-      {
-        "name": "Royaumes Ovimbundu",
-        "period": "Précolonial - présent",
-        "entryType": "polity",
-        "dominantPeoples": ["Ovimbundu"],
-        "politicalCenters": [
-          "Hauts plateaux du centre-sud de l'Angola",
-          "chefferies traditionnelles"
-        ],
-        "historicalRole": "Royaumes Ovimbundu organisés en chefferies, agriculture développée, commerce régional, résistance à la colonisation, groupe ethnique le plus nombreux de l'Angola contemporain."
-      },
-      {
-        "name": "Empire Lunda",
-        "period": "XVIe siècle - XIXe siècle",
-        "entryType": "polity",
-        "timeRange": {
-          "startYear": 1501,
-          "endYear": 1900,
-          "precision": "century"
-        },
-        "dominantPeoples": ["Lunda", "Tshokwe (Chokwe)"],
-        "politicalCenters": [
-          "Mwata Yamvo (capitale)",
-          "expansion sur Angola",
-          "RDC et Zambie"
-        ],
-        "historicalRole": "Empire Lunda puissant et expansionniste, contrôle d'un vaste territoire transfrontalier, commerce à longue distance, art chokwe renommé, déclin face à la colonisation européenne."
-      },
-      {
-        "name": "Colónia de Angola",
+        "name": "Colonie de l'Angola",
         "period": "1575 - 1975",
         "entryType": "colonial",
         "timeRange": {
@@ -411,113 +489,106 @@
           "precision": "year"
         },
         "dominantPeoples": [
-          "Tous les peuples angolais sous domination portugaise"
+          "Tous les peuples de l'Angola actuel, sous domination portugaise"
         ],
-        "politicalCenters": ["Luanda (capitale coloniale)"],
-        "historicalRole": "Colonie portugaise pendant près de 400 ans, exploitation économique (esclavage, ressources naturelles), résistance des peuples autochtones, développement du mouvement indépendantiste au XXe siècle."
+        "politicalCenters": ["Luanda"],
+        "historicalRole": "Le roi Sébastien du Portugal accorde le territoire situé au sud du Kongo à Paulo Dias de Novais. La colonie de l'Angola est fondée en 1575 selon Jan Vansina, et Luanda en 1576 selon l'étude de la Bibliothèque du Congrès des États-Unis. La couronne portugaise prend la colonie en main en 1590. À partir de 1604, la capture d'esclaves, envoyés surtout au Brésil, devient le moteur principal de l'expansion portugaise. La conquête de l'intérieur ne s'achève qu'au début du XXe siècle, et la colonie devient indépendante le 11 novembre 1975."
       }
     ],
     "majorPeoples": [
       {
         "name": "Ovimbundu",
         "selfAppellation": "Ovimbundu",
-        "exonyms": [
-          "Ovimbundu (terme utilisé par les Européens et les Portugais)"
-        ],
+        "exonyms": ["Umbundu (dans le recensement de 2024)"],
         "peopleId": "PPL_OVIMBUNDU",
-        "mainRegion": "Hauts plateaux du centre-sud de l'Angola",
-        "languages": ["Umbundu (umb", "ISO 639-3)", "portugais"],
+        "mainRegion": "Plateau de Benguela, dans le centre-ouest de l'Angola, autour de Huambo",
+        "languages": ["Umbundu (umb)", "portugais (por)"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Ovimbundu\" est l'auto-appellation du peuple et est utilisé de manière respectueuse. Pas de terme péjoratif connu."
+        "appellationRemarks": "Les Ovimbundu parlent l'umbundu. Le recensement de 2024 les compte sous les deux noms, Umbundu ou Ovimbundu. Les sources consultées ne signalent pas de sens insultant pour ces noms."
       },
       {
         "name": "Ambundu",
-        "selfAppellation": "Ambundu",
+        "selfAppellation": "Ambundu ou Akwaluanda, à Luanda",
         "exonyms": [
-          "Ambundu",
-          "Mbundu (termes utilisés par les Européens et les Portugais)"
+          "Mbundu",
+          "Quimbundu ou Kimbundu (dans le recensement de 2024)"
         ],
         "peopleId": "PPL_AMBUNDU",
-        "mainRegion": "Région de Luanda et centre-nord de l'Angola",
-        "languages": ["Kimbundu (kmb", "ISO 639-3)", "portugais"],
+        "mainRegion": "Provinces de Luanda, Bengo, Cuanza Norte et Malanje, et nord du Cuanza Sul",
+        "languages": ["Kimbundu (kmb)", "portugais (por)"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le peuple se nomme Ambundu. Mbundu est une autre forme, donnée de l'extérieur et acceptée. Les sources ne signalent pas de sens insultant pour ces noms."
+        "appellationRemarks": "Selon l'étude de la Bibliothèque du Congrès des États-Unis, le nom Mbundu aurait d'abord été donné par leurs voisins bakongo. À Luanda, les locuteurs du kimbundu de l'ouest se nomment Ambundu ou Akwaluanda, pour se distinguer des Mbundu des campagnes. Le recensement de 2024 les compte sous le nom de leur langue, Quimbundu ou Kimbundu."
       },
       {
         "name": "Kongo",
         "selfAppellation": "Bakongo",
-        "exonyms": [
-          "Kongo",
-          "Bakongo (termes utilisés par les Européens et les Portugais)"
-        ],
+        "exonyms": ["Kongo", "Quicongo (dans le recensement de 2024)"],
         "peopleId": "PPL_KONGO",
-        "mainRegion": "Nord de l'Angola (notamment Cabinda), frontière avec la RDC et le Congo",
-        "languages": ["Kikongo (kon", "ISO 639-3)", "portugais"],
+        "mainRegion": "Provinces d'Uíge, du Zaire et de Cabinda, dans le nord-ouest de l'Angola",
+        "languages": ["Kikongo (kon)", "portugais (por)"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le peuple se nomme Bakongo, au pluriel. Kongo est le nom donné de l'extérieur le plus courant. Les sources ne signalent pas de sens insultant pour ces noms."
+        "appellationRemarks": "Les sources consultées emploient Bakongo pour le peuple et kikongo pour sa langue. Le recensement de 2024 les compte sous le nom Quicongo. Les Mayombe de Cabinda parlent un dialecte du kikongo, mais ne faisaient pas partie de l'ancien royaume du Kongo."
       },
       {
         "name": "Lunda",
-        "selfAppellation": "Lunda",
-        "exonyms": ["Lunda (terme utilisé par les Européens)"],
+        "selfAppellation": "Ruund (Lunda du Nord) ; Lunda (Lunda du Sud)",
+        "exonyms": ["Lunda, pour les Ruund"],
         "peopleId": "PPL_LUNDA",
-        "mainRegion": "Nord-est de l'Angola (Lunda Norte, Lunda Sul), frontière avec la RDC et la Zambie",
-        "languages": ["Lunda (lun", "ISO 639-3)", "portugais"],
+        "mainRegion": "Nord-est de l'Angola, notamment autour de la province de Lunda Norte",
+        "languages": ["Lunda (lun)", "ruund", "portugais (por)"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Lunda\" est l'auto-appellation du peuple. Pas de terme péjoratif connu."
+        "appellationRemarks": "Selon l'étude de la Bibliothèque du Congrès des États-Unis, le peuple qui dominait l'empire lunda se nommait Ruund. Lunda est la forme que leurs voisins du sud employaient pour eux et pour eux-mêmes, d'où la distinction entre Lunda du Nord, les Ruund, et Lunda du Sud. Le recensement de 2024 compte les Lunda avec les Tshokwe, sous le nom Lunda-Quioco."
       },
       {
         "name": "Tshokwe",
         "selfAppellation": "Tshokwe",
-        "exonyms": ["Tshokwe", "Chokwe (termes utilisés par les Européens)"],
+        "exonyms": [
+          "Chokwe",
+          "Cokwe",
+          "Quioco ou Kioko (dans le recensement de 2024)"
+        ],
         "peopleId": "PPL_CHOKWE",
-        "mainRegion": "Est de l'Angola, frontière avec la RDC et la Zambie",
-        "languages": ["Tshokwe / Chokwe (cjk", "ISO 639-3)", "portugais"],
+        "mainRegion": "Nord-est et est de l'Angola",
+        "languages": ["Tshokwe ou cokwe (cjk)", "portugais (por)"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le peuple se nomme Tshokwe. Chokwe est une autre forme, donnée de l'extérieur et acceptée. Les sources ne signalent pas de sens insultant pour ces noms."
+        "appellationRemarks": "Le nom s'écrit de plusieurs façons : Tshokwe, Chokwe, Cokwe, Tchokwe, ou Quioco dans le recensement de 2024. Selon l'étude de la Bibliothèque du Congrès des États-Unis, les Tshokwe étaient d'abord un petit groupe de chasseurs et de commerçants près des sources du Cuango et du Kasaï, qui payait tribut à l'empire lunda. Le nom composé Lunda-Chokwe, qui les réunit aux Lunda, n'apparaît qu'après 1920."
       },
       {
         "name": "Nyaneka-Nkhumbi",
         "selfAppellation": "Nyaneka, Nkhumbi",
         "exonyms": [
-          "Nyaneka-Nkhumbi (terme utilisé par les Européens et les Portugais)"
+          "Nyaneka-Humbe",
+          "Haneca",
+          "Nhaneca-Humbe (dans le recensement de 2024)"
         ],
         "peopleId": "PPL_NYANEKA_NKHUMBI",
         "mainRegion": "Sud-ouest de l'Angola",
-        "languages": ["Nyaneka", "Nkhumbi", "portugais"],
+        "languages": ["Nyaneka (nyk)", "Nkhumbi (khu)", "portugais (por)"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "\"Nyaneka\" et \"Nkhumbi\" sont les auto-appellations des deux groupes principaux. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le nom réunit deux groupes, les Nyaneka, aussi écrits Haneca, et les Humbe, aussi écrits Nkumbi ou Nkhumbi. Selon l'étude de la Bibliothèque du Congrès des États-Unis, ils ne se sont pas dispersés hors d'Angola. Le recensement de 2024 les compte sous le nom Nhaneca-Humbe."
       },
       {
-        "name": "Ganguela",
-        "selfAppellation": "Ganguela (terme générique pour plusieurs groupes)",
-        "exonyms": [
-          "Ganguela (terme utilisé par les Européens et les Portugais)"
-        ],
+        "name": "Nganguela",
+        "selfAppellation": "Chaque groupe porte son propre nom : Lwena (ou Luvale), Mbunda, Luchazi, entre autres",
+        "exonyms": ["Nganguela", "Ganguela"],
         "peopleId": "PPL_NGANGUELA",
-        "mainRegion": "Est de l'Angola",
-        "languages": [
-          "Langues ganguela (plusieurs langues bantoues)",
-          "portugais"
-        ],
+        "mainRegion": "Est et sud-est de l'Angola, jusqu'à la frontière zambienne",
+        "languages": ["Luvale (lue)", "mbunda", "luchazi", "portugais (por)"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "\"Ganguela\" est un terme générique utilisé pour désigner plusieurs groupes ethniques de l'est de l'Angola. Chaque groupe a sa propre auto-appellation. Les Ovimbundu l'ont appliqué avec une nuance péjorative aux peuples de l'est et du sud-est, et les Portugais en ont fait une catégorie de recensement."
+        "appellationRemarks": "Selon l'étude de la Bibliothèque du Congrès des États-Unis, Nganguela, aussi écrit Ganguela, est un terme au sens péjoratif que les Ovimbundu appliquaient aux peuples vivant à leur est et sud-est. Les Portugais en ont fait une catégorie de recensement. Seuls deux groupes de l'ouest acceptaient ce nom ; les autres se nomment Lwena, Mbunda ou Luchazi."
       },
       {
         "name": "Khoisan",
-        "selfAppellation": "San, Khoikhoi (selon les groupes)",
-        "exonyms": [
-          "\"Bushmen\" (terme colonial péjoratif",
-          "à éviter)",
-          "\"Hottentots\" (terme colonial péjoratif",
-          "à éviter)",
-          "Khoisan (terme académique)"
-        ],
+        "selfAppellation": "Les sources consultées ne donnent pas le nom que ces groupes se donnent en Angola",
+        "exonyms": ["« Bushmen », nom donné par les Européens", "Khoisan"],
         "peopleId": null,
-        "mainRegion": "Sud de l'Angola, zones arides et semi-arides",
-        "languages": ["Langues khoïsan (plusieurs langues)", "portugais"],
+        "mainRegion": "Sud de l'Angola, surtout la province du Cuando Cubango",
+        "languages": [
+          "Langues khoïsan de l'ensemble !Xu-Angola",
+          "portugais (por)"
+        ],
         "languageFamily": "FLG_KHOE",
-        "appellationRemarks": "Les noms \"Bushmen\" et \"Hottentots\", donnés pendant la colonisation, sont méprisants et à éviter. Les groupes concernés se nomment respectivement San et Khoikhoi. Les chercheurs emploient Khoisan pour les réunir dans une même classification de langues. Ces peuples sont présentés comme les premiers habitants de l’Angola et de l’Afrique australe."
+        "appellationRemarks": "Khoisan désigne des langues à clics et les petits groupes de chasseurs-cueilleurs du sud de l'Angola qui les parlent. Les Européens les appelaient « Bushmen ». L'étude de la Bibliothèque du Congrès des États-Unis rattache leurs langues à l'ensemble !Xu-Angola, ou Maligo. Au recensement de 2024, 27 980 personnes de 2 ans ou plus se déclarent Khoisan."
       }
     ],
     "culture": {
@@ -536,43 +607,56 @@
           "isoCode": "kmb"
         },
         {
+          "name": "Tshokwe (cokwe)",
+          "isoCode": "cjk"
+        },
+        {
           "name": "Kikongo",
           "isoCode": "kon"
+        },
+        {
+          "name": "Nyaneka (olunyaneka)",
+          "isoCode": "nyk"
+        },
+        {
+          "name": "Kwanyama (oxikwanyama)",
+          "isoCode": "kua"
+        },
+        {
+          "name": "Langues nganguela"
+        },
+        {
+          "name": "Fiote"
+        },
+        {
+          "name": "Nkhumbi (muhumbi)",
+          "isoCode": "khu"
+        },
+        {
+          "name": "Luvale",
+          "isoCode": "lue"
         },
         {
           "name": "Lunda",
           "isoCode": "lun"
         },
         {
-          "name": "Tshokwe / Chokwe",
-          "isoCode": "cjk"
-        },
-        {
-          "name": "Nyaneka"
-        },
-        {
-          "name": "Nkhumbi"
-        },
-        {
-          "name": "langues ganguela"
-        },
-        {
-          "name": "langues khoïsan"
+          "name": "Langues khoïsan"
         }
       ],
-      "culturalTraditions": "Diversité culturelle importante reflétant la mosaïque ethnique de l'Angola. Traditions bantoues (Ovimbundu, Ambundu, Kongo, Lunda, Tshokwe), traditions khoïsan (San, Khoikhoi). Art chokwe renommé (sculptures, masques). Musique et danse traditionnelles variées. Cérémonies de passage, rites d'initiation, fêtes traditionnelles.",
-      "dominantReligions": "Christianisme (catholicisme majoritaire, protestantisme en croissance), croyances traditionnelles africaines (syncrétisme fréquent), islam (minoritaire, surtout dans les zones urbaines)",
-      "lifestyles": "Agriculture (hauts plateaux, Ovimbundu), élevage (Nyaneka-Nkhumbi), chasse-cueillette (Khoisan), commerce et activités urbaines (zones côtières, Luanda). Urbanisation croissante depuis l'indépendance. Économie basée sur le pétrole et les diamants.",
-      "socialOrganization": "Organisation en chefferies traditionnelles (Ovimbundu, Ambundu), royaumes historiques (Kongo, Ndongo, Lunda), structures claniques patrilinéaires et matrilinéaires selon les groupes. Importance des lignages et des familles étendues. Rôle des conseils d'anciens.",
-      "regionalRelations": "Relations historiques avec la RDC (Kongo, Lunda, Tshokwe), le Congo, la Zambie (Lunda, Tshokwe), la Namibie (Ovambo, Khoisan). Intégration dans la SADC (Communauté de développement de l'Afrique australe). Relations commerciales et culturelles transfrontalières."
+      "culturalTraditions": "Le portugais est la langue officielle de l'Angola, et la Constitution de 2010 demande à l'État de promouvoir l'étude et l'usage des autres langues du pays. Au recensement de 2024, le portugais est la langue maternelle de 45,5 % des habitants de 2 ans ou plus, devant l'umbundu (17,1 %), le kimbundu (10,8 %), le tshokwe (6,9 %) et le kikongo (6,8 %). À Luanda et à Ambaca, deux formes du kimbundu ont intégré des mots portugais. Les traditions religieuses africaines sont aussi nombreuses que les peuples, selon l'étude de la Bibliothèque du Congrès des États-Unis : la plupart reconnaissent un dieu suprême, mais les rites s'adressent surtout aux esprits des ancêtres et aux esprits de la nature, qui résident dans des rochers, des arbres ou le vent.",
+      "dominantReligions": "Au recensement de 2024, 44,2 % des habitants de 2 ans ou plus se déclarent catholiques et 34,9 % protestants. 11,5 % se disent sans religion, 6,4 % d'une autre religion et 0,4 % musulmans. En 2014, les catholiques étaient 41,1 % et les protestants 38,1 %. La Constitution de 2010 fait de l'Angola un État laïque, où l'État et les Églises sont séparés. Selon l'étude de la Bibliothèque du Congrès des États-Unis, beaucoup de chrétiens partagent aussi des croyances des religions africaines. Les missionnaires protestants, arrivés à la fin du XIXe siècle, apprenaient les langues locales pour traduire la Bible.",
+      "lifestyles": "Au recensement de 2024, 23 991 388 personnes vivent en ville et 12 613 292 à la campagne : près des deux tiers des Angolais sont des citadins. Dans les campagnes, la plupart des peuples cultivent la terre. Les Ovimbundu du plateau de Benguela ont longtemps été des commerçants et des porteurs de caravanes, avant de se tourner au XXe siècle vers des cultures destinées à la vente, comme le café. Dans le sud, les Ovambo, les Herero et les Nyaneka-Humbe vivent en partie ou entièrement de l'élevage, et chez les Ovambo le bétail est la principale mesure de la richesse. Selon l'étude de la Bibliothèque du Congrès des États-Unis, les Solongo de la côte et les Ashiluanda de l'île de Luanda étaient les seuls pêcheurs en mer parmi les peuples africains de l'Angola.",
+      "socialOrganization": "Dans les campagnes, la vie s'organise autour du village et du groupe de parenté qui en forme le noyau, selon l'étude de la Bibliothèque du Congrès des États-Unis. Chez la plupart des peuples de l'Angola, on appartient au groupe de parenté de sa mère, mais l'autorité revient presque toujours à des hommes, parfois au frère de la mère. Cette règle est décrite chez les Bakongo, les Mbundu, les Tshokwe et les Ovambo. Les Ovimbundu suivaient une double filiation : les biens passaient par la lignée de la mère et l'autorité politique par celle du père. Chez les Mbundu, le lignage est pensé comme une suite de titres que des personnes vivantes occupent tour à tour.",
+      "regionalRelations": "Plusieurs peuples de l'Angola vivent aussi dans les pays voisins. La plupart des Bakongo vivent en République démocratique du Congo, et d'autres au Congo. Les Ovambo et les Herero sont plus nombreux en Namibie, et beaucoup d'Herero d'Angola y sont partis après une expédition militaire portugaise lancée contre eux en 1940. Les Lunda du Sud vivent aussi en République démocratique du Congo et en Zambie. Pendant les guerres, de nombreux Angolais se sont réfugiés dans ces pays : selon l'étude de la Bibliothèque du Congrès des États-Unis, 400 000 Bakongo ont fui vers l'actuelle République démocratique du Congo, alors appelée Zaïre, après la révolte de 1961."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement initial par les peuples Khoisan (San et Khoikhoi), premiers habitants de la région. Arrivée des peuples bantous à partir du Ier millénaire de notre ère, expansion progressive vers le sud et l'est.",
-      "middleAges": "Formation et apogée du royaume Kongo (XIVe-XVIIe siècles), royaume Ndongo (XVe-XVIIe siècles), royaume Matamba, royaumes Ovimbundu, Empire Lunda (XVIe-XIXe siècles). Développement de réseaux commerciaux régionaux et transatlantiques.",
-      "precolonial": "Contacts précoces avec les Portugais dès le XVe siècle (royaume Kongo). Commerce avec l'Europe, introduction du christianisme. Résistance à la colonisation portugaise (reine Nzinga du Ndongo et Matamba, XVIIe siècle). Traite des esclaves transatlantique, impact démographique et social majeur.",
-      "colonization": "1575 : Fondation de la colonie portugaise d'Angola par Paulo Dias de Novais, établissement de Luanda. Période coloniale portugaise longue (1575-1975), exploitation économique, résistance des peuples autochtones. XXe siècle : Développement du mouvement indépendantiste, formation du MPLA (Mouvement populaire de libération de l'Angola) et de l'UNITA (Union nationale pour l'indépendance totale de l'Angola).",
-      "independenceStruggle": "1961-1974 : Guerre d'indépendance contre le Portugal, menée par le MPLA, l'UNITA et le FNLA (Front national de libération de l'Angola). 1974 : Révolution des Œillets au Portugal, fin de la dictature portugaise. 1975 : Indépendance de l'Angola (11 novembre 1975), proclamation de la République populaire d'Angola.",
-      "postIndependence": "1975-2002 : Guerre civile angolaise entre le MPLA (soutenu par l'URSS et Cuba) et l'UNITA (soutenu par les États-Unis et l'Afrique du Sud). Conflit long et destructeur, millions de déplacés et de réfugiés. 2002 : Fin de la guerre civile après la mort de Jonas Savimbi (leader de l'UNITA). Période de reconstruction et de développement économique (pétrole, diamants). Défis de développement, pauvreté, inégalités sociales."
+      "ancientPeriods": "Les premiers habitants connus de l'Angola actuel étaient des chasseurs-cueilleurs qui parlaient des langues à clics, dites khoïsan, selon l'étude de la Bibliothèque du Congrès des États-Unis. Au cours du premier millénaire de notre ère, des peuples de langues bantoues, venus probablement de la forêt située vers l'actuelle frontière du Nigeria et du Cameroun, se sont répandus vers le sud. Ils se sont installés en Angola entre 1300 et 1600, certains peut-être plus tôt. Les historiens ne s'accordent pas sur le sort des Khoïsan : pour les uns, ils ont été absorbés par les nouveaux venus, pour les autres, ils se sont retirés vers le sud.",
+      "middleAges": "Le royaume du Kongo se forme à la fin du XIVe siècle autour de sa capitale, Mbanza Kongo, dans le nord de l'Angola actuel. Au milieu du XVe siècle, il est l'État le plus puissant de la côte ouest de l'Afrique centrale. Plus au sud, l'État du Ndongo, peuplé de Mbundu de langue kimbundu, est en formation vers 1500 et paie d'abord tribut au roi du Kongo. Les Portugais atteignent l'embouchure du fleuve Congo en 1483.",
+      "precolonial": "Le roi du Kongo Afonso, au pouvoir à partir de 1506, adopte le christianisme et demande au Portugal des prêtres et des enseignants, mais la traite des esclaves, vers les îles portugaises voisines puis vers le Brésil, désorganise son royaume. En 1556, le Ndongo bat une armée du Kongo et se déclare indépendant. Au début des années 1620, Njinga, sœur du roi du Ndongo, négocie avec les Portugais à Luanda. Elle leur résiste ensuite pendant plus de trente ans depuis le Matamba, en s'alliant aux Imbangala et aux Hollandais, qui occupent Luanda de 1641 à 1648, et meurt en 1663. La défaite du Kongo à Mbwila en 1665 et la prise de la capitale du Ndongo en 1671 mettent fin à ces deux royaumes en tant que puissances indépendantes. Sur le plateau de Benguela, vingt-deux royaumes ovimbundu existent au XVIIIe siècle.",
+      "colonization": "En 1575, la colonie portugaise de l'Angola est fondée, selon Jan Vansina. Paulo Dias de Novais, qui a reçu ce territoire du roi Sébastien du Portugal, fonde Luanda en 1576, et la couronne portugaise prend la colonie en main en 1590. Les Portugais remontent le fleuve Cuanza à la recherche de mines d'argent ; quand ils comprennent, en 1604, qu'il n'y en a pas, la capture d'esclaves devient le moteur principal de leur expansion. Selon la biographie de Njinga écrite par Linda Heywood, résumée par Catherine Gallouët, 50 000 Mbundu auraient été envoyés comme esclaves au Brésil entre 1575 et 1590. Les Portugais ne conquièrent la plupart des royaumes ovimbundu qu'à la fin du XIXe siècle, et le royaume kwanyama du sud qu'en 1915.",
+      "independenceStruggle": "Le Mouvement populaire de libération de l'Angola (MPLA) est fondé à Luanda en décembre 1956. L'Union des populations du nord de l'Angola, créée en 1954 pour défendre les intérêts des Bakongo, devient en 1958 l'Union des populations de l'Angola (UPA), qui forme en 1962 le Front national de libération de l'Angola (FNLA). Au début de 1961, des attaques à Luanda, une révolte de cultivateurs de coton dans la province de Malanje et des raids dans le nord-ouest ouvrent la guerre contre le Portugal ; les pertes africaines sont estimées jusqu'à 40 000 personnes, dont beaucoup sont mortes de maladie ou de faim. En 1966 apparaît un troisième mouvement, l'Union nationale pour l'indépendance totale de l'Angola (UNITA), fondée par Jonas Savimbi. Le coup d'État militaire du 25 avril 1974 à Lisbonne ouvre la voie à l'indépendance, obtenue le 11 novembre 1975.",
+      "postIndependence": "À l'indépendance, le MPLA forme son gouvernement à Luanda, tandis que le FNLA et l'UNITA annoncent un régime rival à Huambo. Avec l'aide de 10 000 à 12 000 soldats cubains et d'armes soviétiques, le MPLA prend le dessus dès le début de 1976, et l'Afrique du Sud, qui soutenait ses adversaires, retire ses troupes. L'Organisation de l'unité africaine, l'ONU et le Portugal reconnaissent son gouvernement. La révision constitutionnelle de 1992 renomme l'État République d'Angola. Après l'échec du protocole de paix de Lusaka, signé en 1994, la guerre civile entre le gouvernement et l'UNITA reprend en 1998. Le 22 février 2002, l'armée angolaise tue le chef de l'UNITA, Jonas Savimbi. Un accord signé à Luena à la fin de mars 2002, puis le mémorandum de Luena du 4 avril 2002, mettent fin à la guerre civile."
     },
     "sources": [
       {
@@ -591,7 +675,8 @@
         "title": "UNFPA – World Population Dashboard — Angola",
         "url": "https://www.unfpa.org/data/world-population/AO",
         "tier": "official",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": "Tableau de bord de la population mondiale du Fonds des Nations unies pour la population, consulté le 3 novembre 2026 : population totale de l'Angola en 2025, 39 000 000 habitants."
       },
       {
         "title": "Governance in West Central Africa Before 1600\"",
@@ -643,7 +728,310 @@
         "url": "https://web.archive.org/web/20260120134255/https://www.cia.gov/the-world-factbook/page-data/countries/angola/page-data.json",
         "tier": "official",
         "source_kind": "government",
-        "notes": "Estimation, sans année indiquée dans l'entrée : « Ovimbundu 37 %, Kimbundu 25 %, Bakongo 13 %, Mestico (mixte européen et africain) 2 %, Européens 1 %, autres 22 % ». Les Kimbundu sont portés sur les Ambundu et les Bakongo sur les Kongo. « Autres » (25 %) est le complément des trois parts listées : il regroupe les Mestico, les Européens et les 22 % d'autres. Le Factbook a cessé de paraître le 4 février 2026 ; copie lue le 6 octobre 2026."
+        "notes": "Estimation, sans année indiquée dans l'entrée : « Ovimbundu 37 %, Kimbundu 25 %, Bakongo 13 %, Mestico (mixte européen et africain) 2 %, Européens 1 %, autres 22 % ». Le Factbook a cessé de paraître le 4 février 2026 ; copie lue le 6 octobre 2026."
+      },
+      {
+        "title": "Resultados Definitivos do Recenseamento Geral da População e Habitação 2024 (RGPH-2024)",
+        "author": "Instituto Nacional de Estatística, République d'Angola",
+        "year": 2025,
+        "url": "https://ine.gov.ao/Arquivos/arquivosCarregados/Carregados/Publicacao_638996687409619846.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. 53 à 55 (sections 7.8 à 7.11)",
+        "notes": "Rapport national des résultats définitifs du recensement de 2024, publié à Luanda en 2025 par l'Institut national de la statistique de l'Angola. Le pays compte 36 604 681 habitants, dont 23 991 388 en ville et 12 613 292 à la campagne (tableau 23). Pour les 34 492 888 personnes de 2 ans ou plus, le tableau 22 donne les groupes ethniques déclarés : Umbundu ou Ovimbundu 29,1 % ; Quimbundu ou Kimbundu 27 % ; Quicongo 14,4 % ; Lunda-Quioco ou Lunda-Tchokwe 8,9 % ; Nhaneca-Humbe 5,8 % ; Ambó (Vahambo ou Xikwanyama) 2,6 % ; Herero 0,4 % ; Khoisan 0,1 % (27 980 personnes) ; autre groupe 3,2 % ; Cuangar, Vátua, Kwoi et Xindonga moins de 0,3 % à eux quatre ; 8,3 % ne savent pas. Le graphique 18 donne les langues maternelles : portugais 45,5 %, umbundu 17,1 %, kimbundu 10,8 %, cokwe 6,9 %, kikongo 6,8 %, olunyaneka 4,3 %, oxikwanyama 2,9 %, nganguela 2 %, fiote 1,1 %, muhumbi 0,7 %, luvale 0,5 %. Le tableau 24 donne les religions déclarées : catholique 44,2 %, protestante 34,9 %, sans religion 11,5 %, autre 6,4 %, musulmane 0,4 % ; en 2014, les catholiques étaient 41,1 % et les protestants 38,1 % (graphique 20)."
+      },
+      {
+        "title": "Constitution de la République d'Angola de 2010, version anglaise, Constitute Project",
+        "author": "République d'Angola",
+        "year": 2010,
+        "url": "https://www.constituteproject.org/constitution/Angola_2010",
+        "tier": "official",
+        "source_kind": "government",
+        "page": "articles 10 et 19",
+        "notes": "Traduction anglaise publiée par le Constitute Project. Article 10 : « The Republic of Angola shall be a secular state and there shall be separation between state and church ». Article 19 : « The official language of the Republic of Angola is Portuguese » ; l'État doit valoriser et promouvoir l'étude, l'enseignement et l'usage des autres langues de l'Angola."
+      },
+      {
+        "title": "Angola: A Country Study, section « Precolonial Angola and the Arrival of the Portuguese »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/4.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Les premiers habitants de l'Angola actuel étaient des chasseurs-cueilleurs de langues khoïsan, que les Européens appelaient « Bushmen ». Des peuples de langues bantoues se sont répandus vers le sud au cours du premier millénaire de notre ère, probablement depuis la forêt située vers l'actuelle frontière du Nigeria et du Cameroun, et se sont installés en Angola entre 1300 et 1600, certains peut-être plus tôt. Certains historiens pensent que les Khoïsan ont été absorbés, d'autres qu'ils se sont retirés vers le sud. Le texte nomme ensuite les royaumes du Kongo, du Ndongo, du Matamba, du Kasanje, des Lunda, ceux du plateau de Benguela (Bié, Bailundu et Ciyaka) et le royaume kwanyama."
+      },
+      {
+        "title": "Angola: A Country Study, section « Kongo Kingdom »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/5.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Le royaume du Kongo naît à la fin du XIVe siècle, quand des Bakongo venus du nord du fleuve Congo fondent Mbanza Kongo ; au milieu du XVe siècle, il est le plus puissant des États de la côte ouest de l'Afrique centrale. Les Portugais atteignent l'embouchure du fleuve en 1483. Le roi Afonso, au pouvoir en 1506, adopte le christianisme et se plaint en vain de la traite des esclaves, envoyés d'abord vers les îles portugaises voisines puis surtout vers le Brésil. La capitale est renommée São Salvador. Le roi Sébastien du Portugal accorde à Paulo Dias de Novais le territoire au sud du Kongo, et en 1576 les Portugais fondent Luanda, « établissant dans les faits la colonie de l'Angola ». Les Portugais ne tiennent d'abord que des positions fragiles sur la côte, et la couronne prend la colonie en main en 1590."
+      },
+      {
+        "title": "Angola: A Country Study, section « Ndongo Kingdom »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/6.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Le Ndongo est un État de langue kimbundu, peuplé de Mbundu et d'abord tributaire du roi du Kongo. Son souverain portait le titre de « ngola a kiluanje » : c'est la première partie de ce titre, prononcée « Angola », que les Portugais ont employée pour désigner toute la région. En 1556, le ngola bat une armée du Kongo et se déclare indépendant. Après 1576, Paulo Dias de Novais mène des campagnes sanglantes contre le Ndongo ; en 1604, les Portugais remontés le long du Cuanza comprennent que les mines d'argent espérées n'existent pas, et la capture d'esclaves devient le moteur principal de leur expansion."
+      },
+      {
+        "title": "Angola: A Country Study, section « The Defeat of Kongo and Ndongo »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/7.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. La victoire portugaise à Mbwila (ou Ambuila), le 29 octobre 1665, met fin à l'unité du Kongo : au XVIIIe siècle, il n'est plus qu'un ensemble de petits États qui reconnaissent le roi. En 1671, les Portugais assiègent la capitale du Ndongo, Pungu-a-Ndongo (aujourd'hui Pungo Andongo), tuent le ngola et soumettent entièrement le royaume."
+      },
+      {
+        "title": "Angola: A Country Study, section « Matamba and Kasanje Kingdoms »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/8.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Le Matamba et le Kasanje sont deux États mbundu de l'intérieur ; on connaît peu le Matamba avant le XVIIe siècle. Nzinga, sœur du roi du Ndongo, négocie avec les Portugais en 1621, succède à son frère, puis prend le trône du Matamba. Elle s'allie aux Hollandais, qui occupent la région de 1641 à 1648, et domine la politique des Mbundu jusqu'à sa mort en 1663. En 1683, le Portugal obtient de la nouvelle reine du Matamba qu'elle commerce avec lui seul."
+      },
+      {
+        "title": "Angola: A Country Study, section « Lunda and Chokwe Kingdoms »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/9.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Le royaume lunda se développe au XVIIe siècle autour d'un centre situé dans l'actuel Katanga. Il s'étend en intégrant les chefs voisins au lieu de les déposer et contrôle les caravanes de commerce. Les Lunda attaquent le Matamba et le Kasanje dans les années 1760. Les Tshokwe (Chokwe), armés de fusils obtenus des Ovimbundu, détruisent le royaume lunda en 1900."
+      },
+      {
+        "title": "Angola: A Country Study, section « Ovimbundu and Kwanhama Kingdoms »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/10.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Entre 1500 et 1700, les Ovimbundu s'installent sur le plateau de Benguela ; vingt-deux royaumes y apparaissent au XVIIIe siècle, dont treize puissants comme le Bié, le Bailundu et le Ciyaka. Les Portugais conquièrent la plupart de ces États à la fin du XIXe siècle et nomment ensuite leurs rois. Le royaume kwanyama, fondé au début du XIXe siècle près de l'actuelle frontière namibienne, commerce avec des marchands portugais et allemands et tient jusqu'en 1915, quand une grande armée portugaise le soumet."
+      },
+      {
+        "title": "Angola: A Country Study, section « The Popular Movement for the Liberation of Angola »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/25.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. En décembre 1956, le Parti de la lutte unie des Africains d'Angola et d'autres organisations de Luanda forment le Mouvement populaire de libération de l'Angola (MPLA), dont le but est l'indépendance."
+      },
+      {
+        "title": "Angola: A Country Study, section « The National Front for the Liberation of Angola »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/26.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Le FNLA est né en 1954 sous le nom d'Union des populations du nord de l'Angola (UPNA), fondée pour défendre les intérêts des Bakongo ; en 1958, elle devient l'Union des populations de l'Angola (UPA) et se donne pour but l'indépendance de tout l'Angola."
+      },
+      {
+        "title": "Angola: A Country Study, section « Beginning of Revolution »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/28.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Au début de 1961, des attaques contre des postes de police et des prisons de Luanda, une révolte de cultivateurs de coton dans la province de Malanje et des raids dans le nord-ouest ouvrent la révolte contre le Portugal. Les pertes africaines sont estimées jusqu'à 40 000 personnes, dont beaucoup sont mortes de maladie ou de faim."
+      },
+      {
+        "title": "Angola: A Country Study, section « Emergence of UNITA »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/31.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Un troisième mouvement, l'UNITA, apparaît en 1966. Il est fondé par Jonas Savimbi, ancien représentant des Ovimbundu au sein du FNLA."
+      },
+      {
+        "title": "Angola: A Country Study, section « Independence and the Rise of the MPLA Government »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/39.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Le 11 novembre 1975, le Portugal remet l'indépendance au peuple angolais sans reconnaître aucun mouvement. Le MPLA établit son gouvernement à Luanda et appelle le territoire qu'il contrôle « People's Republic of Angola », la République populaire d'Angola. Le FNLA et l'UNITA annoncent un régime rival installé à Huambo et appellent leur territoire « Democratic People's Republic of Angola », la République populaire démocratique d'Angola ; aucun État ne le reconnaît. Avec 10 000 à 12 000 soldats cubains et des armes soviétiques, le MPLA domine dès janvier 1976 ; le FNLA est battu dans le nord en février 1976, et l'Afrique du Sud, qui soutenait le FNLA et l'UNITA, retire ses troupes. L'Organisation de l'unité africaine, l'ONU et le Portugal reconnaissent le gouvernement du MPLA."
+      },
+      {
+        "title": "Angola: A Country Study, section « Ovimbundu »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/59.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Les Ovimbundu, de langue umbundu, vivent dans le centre-ouest de l'Angola ; le cœur de leurs royaumes est la partie du plateau de Benguela au nord de Huambo. Au XVIIIe siècle, treize royaumes sont indépendants et neuf autres paient tribut, le plus souvent au Bailundu, parfois au Wambu ou au Ciyaka. Les Ovimbundu servent d'intermédiaires dans le commerce des esclaves, de l'ivoire et de la cire, puis du caoutchouc, avant de se tourner au XXe siècle vers les cultures commerciales comme le café."
+      },
+      {
+        "title": "Angola: A Country Study, section « Mbundu »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/60.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Les Mbundu parlent le kimbundu. Le nom Mbundu aurait d'abord été donné par leurs voisins bakongo. À Luanda, les locuteurs du dialecte de l'ouest se nomment Ambundu ou Akwaluanda, pour se distinguer des Mbundu des campagnes ; le dialecte de l'est, dit ambakista, est né au XVIIIe siècle à Ambaca. Ces deux dialectes intègrent des mots portugais. Dans les années 1980, les Mbundu sont majoritaires dans les provinces de Luanda, Bengo, Cuanza Norte, Malanje et dans le nord du Cuanza Sul."
+      },
+      {
+        "title": "Angola: A Country Study, section « Bakongo »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/61.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Les Bakongo, de langue kikongo, sont concentrés dans les provinces d'Uíge, du Zaire et de Cabinda ; la plupart vivent au Zaïre, l'actuelle République démocratique du Congo, et d'autres au Congo. São Salvador, renommée Mbanza Congo, était la capitale de leur ancien royaume. Les Mayombe de Cabinda parlent un dialecte du kikongo mais ne faisaient pas partie de ce royaume. Les Solongo de la côte et les Ashiluanda de l'île de Luanda étaient les seuls pêcheurs en mer parmi les peuples africains de l'Angola. Après la révolte de mars 1961, 400 000 Bakongo fuient au Zaïre."
+      },
+      {
+        "title": "Angola: A Country Study, section « Lunda-Chokwe »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/62.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. L'empire lunda réunissait de nombreux peuples sous la domination d'un peuple qui se nommait lui-même Ruund. Lunda est la forme du nom que les peuples voisins du sud employaient pour les Ruund et pour eux-mêmes ; on parle donc de Lunda du Nord (les Ruund) et de Lunda du Sud, dont les Ndembu, qui vivent au Zaïre et en Zambie. Les Tshokwe (Chokwe, aussi écrit Cokwe), petit groupe de chasseurs et de commerçants des sources du Cuango et du Kasaï, payaient tribut à l'empire ; à la fin du XIXe siècle, ils envahissent sa capitale. Le nom composé Lunda-Chokwe n'apparaît qu'après 1920. Beaucoup vivent dans la province de Lunda Norte ou près d'elle."
+      },
+      {
+        "title": "Angola: A Country Study, section « Nganguela »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/63.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Nganguela, aussi écrit Ganguela, est un terme au sens péjoratif que les Ovimbundu appliquaient aux peuples vivant à leur est et sud-est ; ce n'était qu'une catégorie de recensement portugaise. Seuls deux groupes de l'ouest acceptaient ce nom ; les autres se nomment Lwena (ou Lovale), Mbunda ou Luchazi. Les groupes de l'est pêchent aussi dans les rivières du haut Zambèze."
+      },
+      {
+        "title": "Angola: A Country Study, section « Ovambo, Nyaneka-Humbe, Herero, and Others »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/64.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Les Ovambo, dont les Kwanyama (aussi écrit Kwanhama) sont le plus grand sous-groupe, et les Herero vivent surtout en Namibie. Les Nyaneka-Humbe (aussi écrits Haneca et Nkumbi) ne se sont pas dispersés hors d'Angola. Beaucoup d'Herero d'Angola sont partis en Namibie après une expédition militaire portugaise lancée contre eux en 1940. Tous ces peuples du sud vivent en partie ou entièrement de l'élevage, et chez les Ovambo le bétail est la principale mesure de la richesse."
+      },
+      {
+        "title": "Angola: A Country Study, section « Hunters, Gatherers, Herders, and Others »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/65.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. De petits groupes nomades vivent dans le tiers sud de l'Angola, surtout dans la province du Cuando Cubango ; ils parlent des langues de l'ensemble !Xu-Angola, ou Maligo, rangées parmi les langues khoïsan, ou langues à clics."
+      },
+      {
+        "title": "Angola: A Country Study, section « Social Structure in Rural Communities »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/68.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Dans les campagnes, les unités de base sont le village et le groupe de parenté qui en forme le noyau. Les groupes de parenté se transmettent traditionnellement par les femmes, mais l'autorité revient presque toujours à des hommes, parfois au frère de la mère. Cette règle est décrite chez les Bakongo, les Mbundu, les Tshokwe et les Ovambo ; les Ovimbundu suivent une double filiation."
+      },
+      {
+        "title": "Angola: A Country Study, section « Ovimbundu Social Structure »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/69.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Chez les Ovimbundu, avant le XXe siècle, les droits sur les biens passaient par la lignée de la mère et l'autorité politique par celle du père."
+      },
+      {
+        "title": "Angola: A Country Study, section « Mbundu Social Structure »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/70.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Chez les Mbundu, le lignage maternel est pensé comme un ensemble de statuts ou de titres que des personnes vivantes occupent tour à tour."
+      },
+      {
+        "title": "Angola: A Country Study, section « Christianity »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/78.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Beaucoup d'Angolais membres d'une Église chrétienne partagent aussi des croyances des religions africaines. Les missionnaires protestants, arrivés à la fin du XIXe siècle, apprenaient les langues locales pour traduire la Bible, alors que le pouvoir colonial exigeait l'enseignement en portugais."
+      },
+      {
+        "title": "Angola: A Country Study, section « Indigenous Religious Systems »",
+        "author": "Thomas Collelo (dir.), Federal Research Division, Library of Congress",
+        "year": 1991,
+        "url": "https://countrystudies.us/angola/79.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude publiée en 1991 par la division de recherche fédérale de la Bibliothèque du Congrès des États-Unis, sous la direction de Thomas Collelo, lue sur le site countrystudies.us. Il existe autant de religions africaines en Angola que de groupes. La plupart reconnaissent un dieu suprême, mais les cultes s'adressent surtout aux esprits des ancêtres, honorés par des rites, et aux esprits de la nature, qui résident dans des rochers, des arbres ou des forces comme le vent et la foudre."
+      },
+      {
+        "title": "Reine d'Afrique, compte rendu de Linda M. Heywood, Njinga, histoire d'une reine guerrière (1582-1663)",
+        "author": "Catherine Gallouët",
+        "year": 2019,
+        "url": "https://laviedesidees.fr/IMG/pdf/20190826_africanqueen.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Compte rendu publié le 26 août 2019 par La Vie des idées, revue en ligne de l'Institut du Collège de France, sur la biographie de Njinga par l'historienne Linda M. Heywood (La Découverte, 2018). Il résume : en 1622, Njinga négocie à Luanda au nom de son frère, Ngola-a-Mbandi, roi du Ndongo, puis prend le trône ; chassée par les Portugais, elle mène de 1624 à 1655 une longue résistance en s'alliant aux Imbangala et aux Hollandais ; elle meurt en 1663 à la tête du Ndongo-Matamba. Entre 1575 et 1590, 50 000 Mbundu auraient été envoyés comme esclaves au Brésil."
+      },
+      {
+        "title": "Luena Memorandum of Understanding, Peace Accords Matrix",
+        "author": "Kroc Institute for International Peace Studies, Université de Notre-Dame",
+        "year": null,
+        "url": "https://peaceaccords.nd.edu/accord/luena-memorandum-of-understanding",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Base de données universitaire sur les accords de paix. Après l'échec du protocole de Lusaka de 1994, le gouvernement et l'UNITA reprennent la guerre civile en 1998. Le 22 février 2002, l'armée angolaise tue Jonas Savimbi, chef de l'UNITA ; un accord signé à Luena à la fin de mars 2002 met fin à la guerre civile, puis le gouvernement et l'UNITA signent le mémorandum de Luena le 4 avril 2002."
+      },
+      {
+        "title": "Glottolog — Umbundu (umbu1257)",
+        "url": "https://glottolog.org/resource/languoid/id/umbu1257",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue dans Glottolog, catalogue des langues tenu par l'Institut Max-Planck d'anthropologie évolutionniste, lue le 3 novembre 2026. Umbundu, code ISO 639-3 umb, classé parmi les langues atlantico-congolaises."
+      },
+      {
+        "title": "Glottolog — Kimbundu",
+        "url": "https://glottolog.org/resource/languoid/id/kimb1241",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue dans Glottolog, catalogue des langues tenu par l'Institut Max-Planck d'anthropologie évolutionniste, lue le 3 novembre 2026. Kimbundu, code ISO 639-3 kmb, classé parmi les langues atlantico-congolaises."
+      },
+      {
+        "title": "Glottolog — Chokwe (chok1245)",
+        "url": "https://glottolog.org/resource/languoid/id/chok1245",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue dans Glottolog, catalogue des langues tenu par l'Institut Max-Planck d'anthropologie évolutionniste, lue le 3 novembre 2026. Chokwe, code ISO 639-3 cjk, classé parmi les langues atlantico-congolaises."
+      },
+      {
+        "title": "Glottolog – Nyaneka [nyan1305]",
+        "url": "https://glottolog.org/resource/languoid/id/nyan1305",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue dans Glottolog, catalogue des langues tenu par l'Institut Max-Planck d'anthropologie évolutionniste, lue le 3 novembre 2026. Nyaneka, code ISO 639-3 nyk."
+      },
+      {
+        "title": "Glottolog — Kuanyama (kuan1247)",
+        "url": "https://glottolog.org/resource/languoid/id/kuan1247",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue dans Glottolog, catalogue des langues tenu par l'Institut Max-Planck d'anthropologie évolutionniste, lue le 3 novembre 2026. Kuanyama, code ISO 639-3 kua."
+      },
+      {
+        "title": "Glottolog 5.3 – Nkhumbi, glottolog.org/resource/languoid/id/nkhu1238 (2025)",
+        "url": "https://glottolog.org/resource/languoid/id/nkhu1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue dans Glottolog, catalogue des langues tenu par l'Institut Max-Planck d'anthropologie évolutionniste, lue le 3 novembre 2026. Nkhumbi, code ISO 639-3 khu."
+      },
+      {
+        "title": "Glottolog — Luvale (luva1239)",
+        "url": "https://glottolog.org/resource/languoid/id/luva1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue dans Glottolog, catalogue des langues tenu par l'Institut Max-Planck d'anthropologie évolutionniste, lue le 3 novembre 2026. Luvale, code ISO 639-3 lue."
       }
     ],
     "demographics": {
@@ -653,30 +1041,94 @@
       "peoples": [
         {
           "name": "Ovimbundu",
-          "percentageInCountry": 37,
+          "percentageInCountry": 29.1,
           "peopleId": "PPL_OVIMBUNDU",
-          "region": "Hauts plateaux du centre-sud de l'Angola"
+          "region": "Plateau de Benguela, centre-ouest de l'Angola",
+          "languageFamily": "FLG_NIGERCONGO",
+          "mainLanguageCode": "umb",
+          "referenceYear": 2024
         },
         {
           "name": "Ambundu",
-          "percentageInCountry": 25,
+          "percentageInCountry": 27,
           "peopleId": "PPL_AMBUNDU",
-          "region": "Région de Luanda et centre-nord de l'Angola"
+          "region": "Luanda, Bengo, Cuanza Norte, Malanje",
+          "languageFamily": "FLG_NIGERCONGO",
+          "mainLanguageCode": "kmb",
+          "referenceYear": 2024
         },
         {
           "name": "Kongo",
-          "percentageInCountry": 13,
+          "percentageInCountry": 14.4,
           "peopleId": "PPL_KONGO",
-          "region": "Nord de l'Angola (notamment Cabinda), frontière avec la RDC et le Congo"
+          "region": "Uíge, Zaire et Cabinda",
+          "languageFamily": "FLG_NIGERCONGO",
+          "mainLanguageCode": "kon",
+          "referenceYear": 2024
+        },
+        {
+          "name": "Lunda-Tchokwe",
+          "percentageInCountry": 8.9,
+          "peopleId": null,
+          "region": "Nord-est et est de l'Angola",
+          "languageFamily": "FLG_NIGERCONGO",
+          "referenceYear": 2024
+        },
+        {
+          "name": "Nyaneka-Nkhumbi",
+          "percentageInCountry": 5.8,
+          "peopleId": "PPL_NYANEKA_NKHUMBI",
+          "region": "Sud-ouest de l'Angola",
+          "languageFamily": "FLG_NIGERCONGO",
+          "mainLanguageCode": "nyk",
+          "referenceYear": 2024
+        },
+        {
+          "name": "Ovambo",
+          "percentageInCountry": 2.6,
+          "peopleId": "PPL_OVAMBO",
+          "region": "Sud de l'Angola, près de la frontière namibienne",
+          "languageFamily": "FLG_BANTU",
+          "mainLanguageCode": "kua",
+          "referenceYear": 2024
+        },
+        {
+          "name": "Herero",
+          "percentageInCountry": 0.4,
+          "peopleId": "PPL_HERERO",
+          "region": "Sud-ouest de l'Angola",
+          "languageFamily": "FLG_BANTU",
+          "referenceYear": 2024
+        },
+        {
+          "name": "Khoisan",
+          "percentageInCountry": 0.1,
+          "peopleId": null,
+          "region": "Sud de l'Angola",
+          "languageFamily": "FLG_KHOE",
+          "referenceYear": 2024
         },
         {
           "name": "Autres groupes ethniques",
+          "percentageInCountry": 3.5,
           "peopleId": null,
           "region": "Divers",
           "languageFamily": null,
-          "percentageInCountry": 25
+          "referenceYear": 2024
+        },
+        {
+          "name": "Personnes qui ne déclarent pas de groupe",
+          "percentageInCountry": 8.3,
+          "peopleId": null,
+          "region": null,
+          "languageFamily": null,
+          "referenceYear": 2024
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "L'Angola est un pays d'Afrique australe, au bord de l'Atlantique. Son nom viendrait de ngola, le titre du roi du Ndongo, un royaume mbundu.",
+      "followUp": "Comment le titre d'un roi est-il devenu le nom d'un pays ?"
     }
   }
 }
