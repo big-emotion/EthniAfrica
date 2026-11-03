@@ -125,6 +125,7 @@ describe("LanguageFamilyDetailViewV2 — a long prose chapter folds after its fi
       "Diffusion",
       "Ruptures historiques",
       "Zones de contact",
+      "Événements majeurs",
     ]);
   });
 
