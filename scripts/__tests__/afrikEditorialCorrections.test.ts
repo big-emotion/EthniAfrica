@@ -193,7 +193,7 @@ describe("AFRIK editorial corrections from community review", () => {
     ).toBe(true);
 
     const beteLanguage = coteDIvoire.content.culture?.mainLanguages?.find(
-      (language) => language.name === "Bété"
+      (language) => language.name === "Bété de Gagnoa"
     );
     expect(beteLanguage?.isoCode).toBe("btg");
 

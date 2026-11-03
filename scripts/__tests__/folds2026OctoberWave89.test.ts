@@ -202,11 +202,24 @@ describe("what the people keepers carry over", () => {
   });
 
   // @req REQ-178
-  it("repoints the Central African and Congolese rows to PPL_SANGO_SCT", () => {
-    for (const country of ["CAF", "COG"]) {
-      const text = readFileSync(resolve(AFRIK, `pays/${country}.json`), "utf8");
-      expect(text).toContain('"PPL_SANGO_SCT"');
-    }
+  it("repoints the Central African row to PPL_SANGO_SCT", () => {
+    const text = readFileSync(resolve(AFRIK, "pays/CAF.json"), "utf8");
+    expect(text).toContain('"PPL_SANGO_SCT"');
+  });
+
+  // @req REQ-178
+  it("leaves the Congolese Sangha estimate unlinked to the Sango fiche", () => {
+    // The UN rapporteur's « Sangha » share (A/HRC/18/35/Add.5) groups peoples
+    // of the north of the Republic of the Congo; no source read identifies
+    // them with the Sango of the Ubangi.
+    const congo = JSON.parse(
+      readFileSync(resolve(AFRIK, "pays/COG.json"), "utf8")
+    );
+    const sangha = congo.content.demographics.peoples.find(
+      (row: { name: string }) => row.name === "Sangha"
+    );
+    expect(sangha).toBeDefined();
+    expect(sangha.peopleId).toBeNull();
   });
 
   // @req REQ-178

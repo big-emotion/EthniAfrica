@@ -4871,7 +4871,10 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // Burundi and the Republic of the Congo from an official toponymic factfile.
   // 9 -> 8 on 2026-10-26: `culture.mainLanguages` added on the DR Congo, its
   // four constitutional national languages beside French.
-  pays: 8,
+  // 8 -> 7 on 2026-11-03: `culture.mainLanguages` added on the Comoros, its
+  // three Comorian languages, French and Arabic, after article 9 of the 2018
+  // Constitution and Glottolog.
+  pays: 7,
 };
 
 // Authoring blocks no model declares: `_meta` is curator metadata, exempt
