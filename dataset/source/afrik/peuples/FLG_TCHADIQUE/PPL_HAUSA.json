@@ -2,140 +2,802 @@
   "id": "PPL_HAUSA",
   "nameMain": "Hausa",
   "languageFamilyId": "FLG_TCHADIQUE",
-  "currentCountries": ["NGA", "NER", "CMR", "GHA", "TCD", "SDN", "BEN", "CIV"],
+  "currentCountries": ["NGA", "NER", "BEN", "BFA", "CMR", "TCD"],
   "classificationStatus": "contested",
+  "nameHistory": {
+    "summary": "Le nom Hausa désigne un peuple d'Afrique de l'Ouest, surtout du nord du Nigeria et du sud du Niger, et sa langue. Ce peuple se nomme lui-même Hausawa, et Bahaushe pour une seule personne. Il porte d'autres noms : Haoussa en français, Afunu chez les Kanuri, Habe chez les Fulɓe, et Hausa-Fulani au Nigeria. L'origine du nom Hausa est discutée ; nous présentons plus bas les explications des sources.",
+    "names": [
+      {
+        "nameText": "Hausawa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hau",
+        "namedBy": null,
+        "shortLine": "Ils se nomment Hausawa, « ceux qui parlent hausa » ; pour une seule personne, Bahaushe.",
+        "usedIn": ["hau"],
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Hausawa est celui que se donnent les gens du pays hausa. Il veut dire « ceux qui parlent hausa », selon l'historien Mahdi Adamu. Pour une seule personne, ils disent Bahaushe, écrit Ba haushe par l'anthropologue Guy Nicolas.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "General History of Africa, IV, ch. 11 : The Hausa and their neighbours in the central Sudan, pp. 266-300",
+                "author": "M. Adamu",
+                "year": 1984,
+                "url": "https://archive.org/details/general-history-of-africa-vol-4",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 269",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise de 1984, lue dans la numérisation d'Internet Archive. Le chapitre a été revu avec une contribution d'André Salifou. Pages 266 à 269 : le pays hausa, les explications de l'origine des Hausa, l'histoire du nom Hausa et du nom Hausawa, les Maguzawa et les Azna."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 11 : Les Hawsa et leurs voisins du Soudan central",
+                "author": "Mahdi Adamu",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane. Page 295 : le mot Hawsa désignait d'abord la langue ; les gens du pays hawsa s'appelaient eux-mêmes Hausawa, « ceux qui parlent hawsa »."
+              },
+              {
+                "title": "Les catégories d'ethnie et de fraction ethnique au sein du système social hausa, Cahiers d'études africaines, vol. 15, n° 59",
+                "author": "Guy Nicolas",
+                "year": 1975,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1975_num_15_59_2578",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 399",
+                "notes": "Article de revue savante, pages 399 à 441, mis en ligne par Persée. Seule la page 399 a été lue : les noms Hausa, Hausawa et Ba haushe, les graphies haoussa et hawsa, et le nom Hausa donné à tout commerçant."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1810,
+              "to": 1820,
+              "label": "Vers 1810-1820, à Kano"
+            },
+            "era": "polity",
+            "statement": "Le nom Hausawa servait aussi, à Kano, à désigner les anciens agents des rois hausa que le nouveau pouvoir avait gardés en poste après la guerre de 1804-1809, selon l'historien Murray Last.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "General History of Africa, VI, ch. 22 : The Sokoto caliphate and Borno",
+                "author": "Murray Last",
+                "year": 1989,
+                "url": "https://archive.org/details/general-history-of-africa-vol-6",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 560",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition anglaise de 1989, lue dans la numérisation d'Internet Archive. Page 560 : à Kano, les anciens agents du régime renversé étaient appelés Hausawa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1851,
+              "to": 1857,
+              "label": "Voyage de 1851 (récit publié en 1857), à Kano"
+            },
+            "era": "polity",
+            "statement": "Le nom Hausawa est écrit au singulier « Ba-Háushe » par Heinrich Barth, voyageur allemand. C'est la plus ancienne trace écrite de ce nom que nous connaissons ; elle dit quand un voyageur l'a noté, pas depuis quand le peuple l'emploie.",
+            "formAsWritten": "Ba-Háushe",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Heinrich Barth",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://www.gutenberg.org/ebooks/76317",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 111",
+                "notes": "Londres, Longman, 1857 ; récit du voyage de 1849-1855. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg. Page 111 : « Ba-Háushe woman » ; page 163 : « the ba-Háushe and the Kanúri »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1862,
+              "to": 1862,
+              "label": "Grammaire publiée en 1862"
+            },
+            "era": "polity",
+            "statement": "Le nom Hausawa est écrit « hausawa », pluriel de « bahause », par le missionnaire James Frederick Schön.",
+            "formAsWritten": "hausawa",
+            "actors": [
+              {
+                "name": "James Frederick Schön",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Grammar of the Hausa Language",
+                "author": "James Frederick Schön",
+                "year": 1862,
+                "url": "https://archive.org/details/grammarofhausal00sch",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. i (Prefatory remarks)",
+                "notes": "Londres, Church Missionary House, 1862, lu dans la numérisation d'Internet Archive. L'auteur était missionnaire de la Church Missionary Society. Page i : un Hausa se dit « bahause », au pluriel « hausawa »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hausa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom courant du peuple et de sa langue ; il a d'abord désigné la langue.",
+        "periodLabel": "Attesté depuis le XIIIe siècle sous une forme proche",
+        "accounts": [
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "Selon un ouvrage de 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Hausa désignait d'abord seulement la langue maternelle des habitants du pays hausa, selon l'historien Mahdi Adamu. Comme nom de peuple, il n'apparaît dans les écrits qu'aux XVIe et XVIIe siècles. Avant, on nommait ces gens d'après leur ville ou leur royaume : Kanawa à Kano, Katsinawa à Katsina, Gobirawa au Gobir.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "General History of Africa, IV, ch. 11 : The Hausa and their neighbours in the central Sudan, pp. 266-300",
+                "author": "M. Adamu",
+                "year": 1984,
+                "url": "https://archive.org/details/general-history-of-africa-vol-4",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 268-269",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise de 1984, lue dans la numérisation d'Internet Archive. Le chapitre a été revu avec une contribution d'André Salifou. Pages 266 à 269 : le pays hausa, les explications de l'origine des Hausa, l'histoire du nom Hausa et du nom Hausawa, les Maguzawa et les Azna."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "Usage décrit en 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Hausa est souvent donné, hors du pays hausa, à n'importe quel commerçant, comme on dit Dyula ailleurs, selon l'anthropologue Guy Nicolas.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les catégories d'ethnie et de fraction ethnique au sein du système social hausa, Cahiers d'études africaines, vol. 15, n° 59",
+                "author": "Guy Nicolas",
+                "year": 1975,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1975_num_15_59_2578",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 399",
+                "notes": "Article de revue savante, pages 399 à 441, mis en ligne par Persée. Seule la page 399 a été lue : les noms Hausa, Hausawa et Ba haushe, les graphies haoussa et hawsa, et le nom Hausa donné à tout commerçant."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "Proposée en 1960"
+            },
+            "statement": "Le nom Hausa viendrait du mot hausa, « langue, parler », comme dans na gane hausarka, « je comprends ta langue », selon le linguiste Dmitri Olderogge, cité par Mahdi Adamu.",
+            "hypothesisGroup": "origine du nom Hausa",
+            "sources": [
+              {
+                "title": "General History of Africa, IV, ch. 11 : The Hausa and their neighbours in the central Sudan, pp. 266-300",
+                "author": "M. Adamu",
+                "year": 1984,
+                "url": "https://archive.org/details/general-history-of-africa-vol-4",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 269, note 14",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise de 1984, lue dans la numérisation d'Internet Archive. Le chapitre a été revu avec une contribution d'André Salifou. Pages 266 à 269 : le pays hausa, les explications de l'origine des Hausa, l'histoire du nom Hausa et du nom Hausawa, les Maguzawa et les Azna."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1968,
+              "to": 1968,
+              "label": "Proposée en 1968"
+            },
+            "era": "modern",
+            "statement": "Le nom Hausa viendrait du mot songhay hausa, « est » : les Songhay auraient ainsi nommé les gens qui vivaient à l'est de chez eux, selon le linguiste Neil Skinner.",
+            "hypothesisGroup": "origine du nom Hausa",
+            "sources": [
+              {
+                "title": "The Origin of the Name 'Hausa', Africa, vol. 38, n° 3",
+                "author": "Neil Skinner",
+                "year": 1968,
+                "url": "https://www.cambridge.org/core/journals/africa/article/abs/origin-of-the-name-hausa/1B6D444C319C498A9C63AE509EA7BF2B",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 253",
+                "notes": "Revue de l'International African Institute, pages 253 à 257. Seuls l'extrait de la première page et le résumé en français affichés par Cambridge Core ont été lus, pas l'article entier."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Rapportée en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Hausa serait venu du nord, comme le peuple du Gobir, d'après ce qu'on a affirmé à Heinrich Barth. Barth se demande s'il est le même mot que « Áusa », nom que les Touaregs de l'Ouest et les gens de Tombouctou donnent au pays situé au nord du fleuve Niger, sans pouvoir le dire.",
+            "hypothesisGroup": "origine du nom Hausa",
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://www.gutenberg.org/ebooks/76317",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 70",
+                "notes": "Londres, Longman, 1857 ; récit du voyage de 1849-1855. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg. Pages 69 et 70 : le nom Háusa, inconnu de Léon l'Africain, et son lien possible avec le mot Áusa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1201,
+              "to": 1300,
+              "label": "XIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Hausa apparaît pour la première fois chez Ibn Saʿīd, écrivain andalou du XIIIe siècle, selon le linguiste Neil Skinner, qui juge ses informations de seconde main. C'est la plus ancienne trace de ce nom que nous connaissons ; le peuple et sa langue existaient déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Origin of the Name 'Hausa', Africa, vol. 38, n° 3",
+                "author": "Neil Skinner",
+                "year": 1968,
+                "url": "https://www.cambridge.org/core/journals/africa/article/abs/origin-of-the-name-hausa/1B6D444C319C498A9C63AE509EA7BF2B",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 253",
+                "notes": "Revue de l'International African Institute, pages 253 à 257. Seuls l'extrait de la première page et le résumé en français affichés par Cambridge Core ont été lus, pas l'article entier."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1445,
+              "to": 1505,
+              "label": "Vie d'as-Suyūṭī (1445-1505)"
+            },
+            "era": "polity",
+            "statement": "Le nom Hausa désigne un territoire chez le savant égyptien as-Suyūṭī, dans ses Épîtres aux rois du Soudan, de Hausa et du Takrur, selon Mahdi Adamu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "General History of Africa, IV, ch. 11 : The Hausa and their neighbours in the central Sudan, pp. 266-300",
+                "author": "M. Adamu",
+                "year": 1984,
+                "url": "https://archive.org/details/general-history-of-africa-vol-4",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 268",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise de 1984, lue dans la numérisation d'Internet Archive. Le chapitre a été revu avec une contribution d'André Salifou. Pages 266 à 269 : le pays hausa, les explications de l'origine des Hausa, l'histoire du nom Hausa et du nom Hausawa, les Maguzawa et les Azna."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1530,
+              "label": "Début du XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Hausa n'est pas employé par Léon l'Africain : il écrit que la langue commune de Zaria, de Katsina et de Kano est celle du Gobir, selon Mahdi Adamu et Heinrich Barth.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "General History of Africa, IV, ch. 11 : The Hausa and their neighbours in the central Sudan, pp. 266-300",
+                "author": "M. Adamu",
+                "year": 1984,
+                "url": "https://archive.org/details/general-history-of-africa-vol-4",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 268",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise de 1984, lue dans la numérisation d'Internet Archive. Le chapitre a été revu avec une contribution d'André Salifou. Pages 266 à 269 : le pays hausa, les explications de l'origine des Hausa, l'histoire du nom Hausa et du nom Hausawa, les Maguzawa et les Azna."
+              },
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://www.gutenberg.org/ebooks/76317",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 69",
+                "notes": "Londres, Longman, 1857 ; récit du voyage de 1849-1855. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg. Page 69 : Léon l'Africain ne connaissait pas, semble-t-il, le nom Háusa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1699,
+              "label": "XVIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Hausa est employé régulièrement par les chroniques de Tombouctou, le Tarikh al-fattash et le Tarikh al-Sudan, pour les pays de la rive gauche du Niger, par opposition au Gurma, sur la rive droite, selon Mahdi Adamu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "General History of Africa, IV, ch. 11 : The Hausa and their neighbours in the central Sudan, pp. 266-300",
+                "author": "M. Adamu",
+                "year": 1984,
+                "url": "https://archive.org/details/general-history-of-africa-vol-4",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 268-269",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise de 1984, lue dans la numérisation d'Internet Archive. Le chapitre a été revu avec une contribution d'André Salifou. Pages 266 à 269 : le pays hausa, les explications de l'origine des Hausa, l'histoire du nom Hausa et du nom Hausawa, les Maguzawa et les Azna."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1820,
+              "to": 1820,
+              "label": "Livre publié en 1820"
+            },
+            "era": "polity",
+            "statement": "Le nom Hausa est écrit « Housa » dans le titre du récit d'El Hage Abd Salam Shabeeny, marchand de Tétouan, publié à Londres par James Grey Jackson. Il y désigne un territoire.",
+            "formAsWritten": "Housa",
+            "actors": [
+              {
+                "name": "James Grey Jackson",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "An Account of Timbuctoo and Housa, Territories in the Interior of Africa",
+                "author": "El Hage Abd Salam Shabeeny et James Grey Jackson",
+                "year": 1820,
+                "url": "https://www.gutenberg.org/ebooks/22631",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Londres, Longman, 1820, lu dans l'édition numérique du projet Gutenberg. Jackson, négociant anglais installé au Maroc, publie le récit d'un marchand de Tétouan qui avait vécu deux ans au pays qu'il nomme Housa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1843,
+              "to": 1843,
+              "label": "Livre publié en 1843"
+            },
+            "era": "polity",
+            "statement": "Le nom Hausa est écrit « Haussa » dans le titre du vocabulaire que le missionnaire James Frederick Schön publie à Londres. Il y désigne la langue.",
+            "formAsWritten": "Haussa",
+            "actors": [
+              {
+                "name": "James Frederick Schön",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulary of the Haussa Language",
+                "author": "James Frederick Schön",
+                "year": 1843,
+                "url": "https://archive.org/details/vocabularyofhau00sch",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre",
+                "notes": "Londres, Church Missionary Society, 1843, lu dans la numérisation d'Internet Archive. L'auteur était missionnaire de la Church Missionary Society."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1851,
+              "to": 1857,
+              "label": "Voyage de 1851 (récit publié en 1857)"
+            },
+            "era": "polity",
+            "statement": "Le nom Hausa est écrit « Háusa » par Heinrich Barth, pour la langue et pour l'ensemble des pays où elle domine.",
+            "formAsWritten": "Háusa",
+            "actors": [
+              {
+                "name": "Heinrich Barth",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://www.gutenberg.org/ebooks/76317",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 69",
+                "notes": "Londres, Longman, 1857 ; récit du voyage de 1849-1855. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg. Page 69 : titre du chapitre XXIV, « Háusa », et explication du nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Haoussa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "shortLine": "La graphie française du nom Hausa.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "Usage décrit en 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Haoussa est la forme française du nom Hausa, employée dans les travaux africanistes, selon Guy Nicolas.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les catégories d'ethnie et de fraction ethnique au sein du système social hausa, Cahiers d'études africaines, vol. 15, n° 59",
+                "author": "Guy Nicolas",
+                "year": 1975,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1975_num_15_59_2578",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 399",
+                "notes": "Article de revue savante, pages 399 à 441, mis en ligne par Persée. Seule la page 399 a été lue : les noms Hausa, Hausawa et Ba haushe, les graphies haoussa et hawsa, et le nom Hausa donné à tout commerçant."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hawsa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "shortLine": "Une graphie du nom Hausa employée au Niger.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "Usage décrit en 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Hawsa est une graphie du nom Hausa employée depuis peu au Niger, selon Guy Nicolas. L'édition française de l'Histoire générale de l'Afrique l'emploie aussi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les catégories d'ethnie et de fraction ethnique au sein du système social hausa, Cahiers d'études africaines, vol. 15, n° 59",
+                "author": "Guy Nicolas",
+                "year": 1975,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1975_num_15_59_2578",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 399",
+                "notes": "Article de revue savante, pages 399 à 441, mis en ligne par Persée. Seule la page 399 a été lue : les noms Hausa, Hausawa et Ba haushe, les graphies haoussa et hawsa, et le nom Hausa donné à tout commerçant."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 11 : Les Hawsa et leurs voisins du Soudan central",
+                "author": "Mahdi Adamu",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane. Page 295 : le mot Hawsa désignait d'abord la langue ; les gens du pays hawsa s'appelaient eux-mêmes Hausawa, « ceux qui parlent hawsa »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Afunu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les Kanuri du Bornou",
+        "shortLine": "Le nom que les Kanuri, voisins de l'est, donnent aux Hausa.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1968,
+              "to": 1968,
+              "label": "Usage décrit en 1968"
+            },
+            "era": "modern",
+            "statement": "Le nom Afunu est celui que les Kanuri donnent encore aux Hausa, selon le linguiste Neil Skinner. L'auteur égyptien al-Maqrīzī, mort en 1442, l'employait déjà, écrit Afnū.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Origin of the Name 'Hausa', Africa, vol. 38, n° 3",
+                "author": "Neil Skinner",
+                "year": 1968,
+                "url": "https://www.cambridge.org/core/journals/africa/article/abs/origin-of-the-name-hausa/1B6D444C319C498A9C63AE509EA7BF2B",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 253",
+                "notes": "Revue de l'International African Institute, pages 253 à 257. Seuls l'extrait de la première page et le résumé en français affichés par Cambridge Core ont été lus, pas l'article entier."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1387,
+              "to": 1390,
+              "label": "Règne d'ʿOthmán au Kanem (1387-1390), d'après al-Maqrīzī"
+            },
+            "era": "polity",
+            "statement": "Le nom Afunu est écrit « Afunú » par Heinrich Barth, qui suit al-Maqrīzī : il parle d'un prince « en Háusa, ou Afunú ».",
+            "formAsWritten": "Afunú",
+            "actors": [
+              {
+                "name": "Heinrich Barth",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://www.gutenberg.org/ebooks/76317",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 640",
+                "notes": "Londres, Longman, 1857 ; récit du voyage de 1849-1855. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg. Pages 640 à 642, tableau chronologique des rois du Bornou : « Háusa, or Afunú » et « the Áfnó (Háusa) province of Kanó »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Habe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les Fulɓe (Peuls)",
+        "shortLine": "Le nom que les Fulɓe vainqueurs donnaient aux Hausa ; au singulier, Kado.",
+        "periodLabel": "Noté au milieu du XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1851,
+              "to": 1857,
+              "label": "Voyage de 1851 (récit publié en 1857), à Kano"
+            },
+            "era": "polity",
+            "statement": "Le nom Habe est écrit « Hábe », au singulier « Kádo », par Heinrich Barth : c'est ainsi que les Fulɓe, devenus maîtres de Kano, appellent les Hausa.",
+            "formAsWritten": "Hábe",
+            "actors": [
+              {
+                "name": "Heinrich Barth",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://www.gutenberg.org/ebooks/76317",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 121",
+                "notes": "Londres, Longman, 1857 ; récit du voyage de 1849-1855. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg. Page 121 : « Háusa people, or, as they are called by their conquerors, “Hábe,” from the singular “Kádo” »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Proposée en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Habe aurait d'abord désigné une seule dynastie de Katsina, puis les vainqueurs fulɓe l'auraient étendu à tout le peuple vaincu, selon Heinrich Barth.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://www.gutenberg.org/ebooks/76317",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 76, note 20",
+                "notes": "Londres, Longman, 1857 ; récit du voyage de 1849-1855. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg. Note 20 de la page 76 : « Hábe », pluriel de « Kádo », nom général donné par les Fulɓe au peuple conquis."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hausa-Fulani",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom qui réunit Hausa et Fulɓe du nord du Nigeria en un seul groupe.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Usage décrit en 2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Hausa-Fulani désigne l'un des trois grands groupes du Nigeria, au nord du pays, dans un rapport de l'Agence de l'Union européenne pour l'asile. Le même rapport précise que les Fulɓe des campagnes restent distincts et parlent leur propre langue.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "European Union Agency for Asylum — Nigeria Country Focus",
+                "author": "Agence de l'Union européenne pour l'asile",
+                "year": 2026,
+                "url": "https://www.euaa.europa.eu/nigeria-country-focus/13-demographics",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Rapport « Nigeria: Country Focus », janvier 2026, section 1.3 sur la population. Les phrases sur les Hausa-Fulani n'y renvoient à aucune source."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Hausa",
       "selfAppellation": "Hausawa",
       "exonyms": [
-        "Ausa (ancien nom européen employé dans certaines sources)",
-        "Hausa-Fulani (terme politique moderne designant la classe dirigeante islamisee du nord du Nigeria, fruit de l'integration post-jihad de Sokoto)"
+        "Afunu (nom donné par les Kanuri du Bornou)",
+        "Habe (nom donné aux Hausa par les Fulɓe après leur victoire du début du XIXe siècle ; au singulier Kado)",
+        "Hausa-Fulani (nom qui réunit Hausa et Fulɓe du nord du Nigeria)"
       ],
-      "originOfExonyms": "Hausa, écrit aussi Haoussa en français, désigne le peuple et sa langue. Ausa est une ancienne manière européenne de transcrire le nom à partir de sa prononciation. Hausa-Fulani est apparu après le jihad d'Usman dan Fodio, de 1804 à 1808. Il désigne les groupes dirigeants musulmans bilingues du nord du Nigeria. Ce nom décrit une position sociale et politique ; il ne signifie pas que les deux peuples se seraient fondus en un seul ni qu'ils auraient une même origine génétique.",
-      "whyProblematic": "L'amalgame entre Hausa et Fulani (Hausa-Fulani) est un raccourci politique courant dans le discours nigerian contemporain. Les Haoussa sont fondamentalement des agriculteurs sedentaires d'origine tchadique, tandis que les Peuls sont des pasteurs d'origine ouest-sahelienne. Leur integration politique post-jihad masque des distinctions culturelles, linguistiques et genetiques importantes.",
-      "contemporaryUsage": "Hausa est utilise en francais (Haoussa), en anglais, en haoussa et dans toutes les langues de l'Afrique de l'Ouest comme designation standard. Hausawa est le terme que les locuteurs utilisent pour se designer eux-memes. Le haoussa est une des trois langues nationales du Nigeria et la deuxieme langue vehiculaire d'Afrique subsaharienne apres le swahili. Hausawa est la forme plurielle ; Bahaushe est le singulier masculin et Bahaushiya le singulier féminin.",
-      "linguisticFamily": "FLG_TCHADIQUE",
-      "ethnoLinguisticGroup": "Tchadique occidental (West Chadic A.1, groupe Hausa-Gwandara)",
-      "historicalRegion": "Hausaland (Kasar Hausa) — nord du Nigeria et sud du Niger, des villes historiques de Kano, Katsina, Zaria (Zazzau), Sokoto, Daura, Gobir, Biram",
-      "currentCountries": [
-        "NGA",
-        "NER",
-        "CMR",
-        "GHA",
-        "TCD",
-        "SDN",
-        "BEN",
-        "CIV"
-      ],
-      "spellingAliases": ["Bahaushe", "Bahaushiya"]
+      "spellingAliases": ["Haoussa", "Hawsa", "Haussa", "Housa", "Bahaushe"],
+      "originOfExonyms": "Le nom Hausa désignait d'abord la langue. Les gens du pays se nommaient Hausawa, « ceux qui parlent hausa », selon l'historien Mahdi Adamu. Le français l'écrit Haoussa, et la graphie Hawsa est employée au Niger depuis les années 1970, selon l'anthropologue Guy Nicolas. Les Kanuri du Bornou, voisins de l'est, appellent les Hausa Afunu ; l'auteur égyptien al-Maqrīzī employait déjà ce nom au XVe siècle, selon le linguiste Neil Skinner. Au milieu du XIXe siècle, Heinrich Barth note que les Fulɓe (Peuls), vainqueurs de la guerre de 1804-1809, appellent les Hausa Habe, au singulier Kado. Il rapporte aussi le mot Áusa, nom que les Touaregs de l'Ouest et les gens de Tombouctou donnent au pays situé au nord du fleuve Niger, sans savoir s'il est lié au nom Hausa. Aujourd'hui, le nom Hausa-Fulani désigne l'un des grands groupes du nord du Nigeria.",
+      "whyProblematic": "Le nom Hausa-Fulani réunit deux peuples sous un seul nom. Un rapport de l'Agence de l'Union européenne pour l'asile, publié en 2026, explique que les Fulɓe des villes se marient avec des Hausa et occupent des fonctions dans leurs régions, mais que les Fulɓe des campagnes restent distincts et parlent la langue peule. Le nom Hausa lui-même ne couvre pas tous ceux qui parlent la langue. Au Nigeria, des personnes non musulmanes qui ne parlent que le hausa se nomment Maguzawa, ou Bamaguje, et refusent d'être appelées Hausa. Au Niger, on les appelle Azna, ou Arna, mot hausa qui veut dire « païen », selon Mahdi Adamu. Enfin, hors du pays hausa, on appelle souvent Hausa n'importe quel commerçant, selon Guy Nicolas.",
+      "contemporaryUsage": "Hausa est le nom courant du peuple et de sa langue en anglais et dans les travaux savants ; le français dit aussi Haoussa. Les intéressés se nomment Hausawa au pluriel et Bahaushe au singulier, selon Guy Nicolas. La langue hausa sert aussi de langue commune à d'autres peuples : tous ceux qui la parlent ne sont donc pas hausa.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Habe (Haoussa purs, autochtones de Kasar Hausa) : Gobirawa, Kabawa, Rumawa, Adarawa, Maouri et autres — dirigeants des royaumes haoussa avant le jihad de 1804",
-      "Hausa-Fulani ou Kado (Peuls hausanises, d'origine mixte Haoussa-Peule, parlant une variante haoussa) : Jobawa, Dambazawa, Mudubawa, Mallawa, Sullubawa — issus des migrations peules (XVe-XIXe siecles) et du califat de Sokoto",
-      "Banza (tribus anciennes aux langues eteintes integrees dans Hausaland) : Ajawa, Gere, Bankal et autres",
-      "Maguzawa (Haoussa non-islamises, pratiquants de la religion traditionnelle Bori)"
+      "Kanawa, Katsinawa, Gobirawa et autres groupes nommés d'après leur ville ou leur royaume : on désignait ainsi les gens du pays hausa avant que le nom Hausa ne s'impose",
+      "Adarawa : groupes hausaphones venus de l'Aïr et installés dans la plaine de l'Adar, au Niger",
+      "Maguzawa ou Bamaguje : au Nigeria, personnes non musulmanes de langue hausa qui refusent d'être appelées Hausa",
+      "Azna ou Arna : au Niger, nom donné aux personnes non musulmanes de langue hausa"
     ],
     "origins": {
-      "ancientOrigins": "Les Haoussa sont un peuple autochtone d'Afrique de l'Ouest dont les ancetres tchadiques peuplaient la region du lac Tchad et du Sahel central depuis des millenaires. Au VIIe siecle apres J.-C., une communaute haoussa etablie sur la colline Dalla de Kano (venue de Gaya) pratiquait la forge. Selon la legende de Bayajidda, les etats haoussa furent fondes par les fils et petits-fils de Bayajidda, un prince de Bagdad qui tua un serpent dans le puits de Daura (Kusugu) et epousa la reine Daurama, derniere souveraine matriarcale. Les sept etats issus de cette union (Hausa Bakwai) sont : Daura (ville-mere), Kano, Katsina, Zazzau (Zaria), Gobir, Rano et Biram. Les erudits considerent generalement la legende de Bayajidda comme un mythe de fondation et non comme un recit historique.",
-      "formationPeriod": "Les royaumes haoussa se formerent entre le VIIe et le XIe siecle apres J.-C. L'urbanisation du nord du Nigeria crea des centres de pouvoir fortifies (birane). L'islam fut introduit vers le XIVe siecle via le commerce avec les Wangara (Soninke) ; Muhammad Korau de Gobir fut le premier souverain haoussa converti (milieu XIVe siecle). Le XVe et le XVIe siecle virent l'apogee des etats haoussa en tant que puissantes cites marchandes du commerce transsaharien (cuir, or, tissus, sel, noix de kola, esclaves). En 1804-1808, le jihad de Usman dan Fodio renversa les royaumes haoussa et crea le califat de Sokoto, transformant profondement la structure politique haoussa.",
+      "ancientOrigins": "Plusieurs explications de l'origine des Hausa ont été proposées, selon l'historien Mahdi Adamu, dans l'Histoire générale de l'Afrique publiée par l'UNESCO. La première, tirée de la légende de Bayajidda, fait venir leurs ancêtres de Bagdad ; les historiens ne la retiennent plus. La deuxième les fait venir du sud du Sahara, avant qu'il ne devienne un désert ; elle reste une hypothèse sans preuve. La troisième voit leurs ancêtres chez les chasseurs, pêcheurs et cultivateurs de la rive ouest de l'ancien lac Tchad. Pour l'archéologue John Sutton, l'identité hausa se serait d'abord formée autour de Hadejia, Daura et Kano, puis étendue vers l'ouest. La quatrième, proposée par Adamu lui-même, s'appuie sur des traditions qui disent que les ancêtres sont « sortis de trous dans le sol » : les Hausa seraient nés sur place. La légende de Bayajidda, connue dans tout le pays, raconte qu'un prince venu de Bagdad tua à Daura un serpent qui empêchait les habitants de puiser l'eau, puis épousa la reine Daura ; ses descendants auraient régné sur les sept États hausa. Adamu y voit le reflet de la situation du XVIe siècle plutôt qu'un récit des origines.",
+      "formationPeriod": "Les États hausa se sont formés autour de grandes villes fortifiées, les birane (au singulier birni), selon Mahdi Adamu. À Kano, la Chronique de Kano attribue à Gijimasu (1095-1134) la fondation de la ville au pied de la colline de Dala et le début de ses murailles, achevées sous son fils Tsaraki (1136-1194). Adamu rappelle que la chronologie de cette chronique, établie par Herbert Richmond Palmer, reste très approximative. Le royaume de Katsina prend forme sous Muhammad Korau (1445-1495), qui fonde la ville fortifiée de Katsina. Le royaume de Zazzau naît à la fin du XVe siècle de l'union de deux villes, Turunku et Kufena ; sa nouvelle capitale prend le nom de Zaria, une fille du roi Bakwa.",
       "migrationRoutes": [
-        "Peuplement autochtone de la zone sahelo-soudanienne entre le lac Tchad et le fleuve Niger",
-        "VIIe siecle : migration de Gaya vers la colline Dalla (Kano)",
-        "Expansion commerciale du XIVe au XVIe siecle le long des routes transsahariennes (Kano, Katsina, Agadez, Tripoli, Le Caire)",
-        "Dispersion progressive vers le Ghana, la Cote d'Ivoire, le Benin, le Togo, le Soudan (XIVe-XXe siecles) via le commerce et le hajj",
-        "Migrations modernes vers les cotes ouest-africaines (Lagos, Accra, Abidjan, Cotonou)"
+        "De l'Aïr (Azbin) vers le Gobir, au sud : selon Mahdi Adamu, la pression des Touaregs aurait poussé la plupart des habitants hausaphones de l'Aïr vers le sud aux XIVe et XVe siècles",
+        "Des Gobirawa, de la région d'Agadez vers le sud : leur royaume se trouvait jusque vers 1405 dans l'actuel Niger, puis s'est déplacé",
+        "De la région de Hadejia, Daura et Kano vers l'ouest et Sokoto, selon l'hypothèse de John Sutton",
+        "Du pays hausa vers le sud, dans le pays appelé Bauchi, dès le XIVe siècle, pour le commerce, à la suite des armées ou comme réfugiés",
+        "De Kuyambana, au sud du Katsina, vers le Yawuri, où des commerçants hausa prennent le pouvoir dans la seconde moitié du XIVe siècle",
+        "De Kano vers le Bornou, au début du XVe siècle, selon la Chronique de Kano"
       ],
       "historicalSettlementZones": [
-        "Kano — ancienne capitale de la forge, du commerce et de l'artisanat (textile, teinture a l'indigo)",
-        "Katsina — grand centre islamique et commercial du Hausaland medieval",
-        "Zazzau (Zaria) — fournisseur de main-d'oeuvre servile pour les autres etats haoussa",
-        "Daura — ville-mere mythique, berceau de la civilisation haoussa",
-        "Gobir — etat le plus septentrional, gardien militaire du Hausaland",
-        "Sokoto — capitale du califat de Sokoto depuis 1809",
-        "Agadez (Niger) — relais majeur du commerce haoussa au Sahara"
+        "Le pays hausa (kasar hausa), de l'Aïr au nord jusqu'au bord nord du plateau de Jos au sud, et du Bornou à l'est jusqu'à la vallée du Niger à l'ouest",
+        "Kano, au pied de la colline de Dala, dont le fer attira les premiers habitants",
+        "Katsina, fondée sur un carrefour de routes, près d'une mine de fer",
+        "Zazzau, avec les villes de Turunku, Kufena puis Zaria",
+        "Gobir, l'État hausa le plus au nord",
+        "Daura, Rano et Biram, comptés parmi les sept États hausa",
+        "Kebbi, avec sa capitale Surame sous Muhammad Kanta",
+        "Sokoto, capitale du califat au XIXe siècle",
+        "La région de Maradi, au Niger, où les Haoussa forment 83 % de la population selon l'Institut national de la statistique"
       ],
-      "unificationsOrDivisions": "Les sept etats Hausa Bakwai (Daura, Kano, Katsina, Zazzau, Gobir, Rano, Biram) et les sept etats Banza Bakwai (Zamfara, Kebbi, Yauri, Gwari, Kwararafa, Nupe, Yoruba) n'ont jamais forme une unite politique unique. Ils partageaient une langue, une culture et l'islam, mais restaient des entites independantes. Le califat de Sokoto (1804-1808) crea une structure imperiale unificatrice sous domination peule, abolissant de fait les anciens royaumes haoussa souverains. En 1903, la conquete britannique incorpora le Nord-Nigeria dans le Protectorat du Nord-Nigeria.",
-      "externalInfluences": "Commerce transsaharien (XIVe-XIXe siecles) avec l'Afrique du Nord, l'Egypte, le Maroc. Influence islamique via les Wangara (Soninke), les ulemas du Caire, de Tunis et du Maroc invites a Kano par Muhammad Rumfa (1463-1499). Expansion du Califat de Bornou (XVe siecle) : vassalisation temporaire des etats haoussa. Ascendant de Songhai (XVIe siecle) selon Leo Africanus. Jihad peul de Usman dan Fodio (1804-1808) : renversement de l'elite haoussa et creation du califat de Sokoto. Colonisation britannique (1903) : administration indirecte via le systeme des emirs.",
-      "majorHistoricalEvents": "VIIe siecle : installation sur la colline Dalla, Kano. XIVe siecle : Yaji Ier de Kano (r. 1349-1385) se convertit a l'islam. Vers 1463-1499 : Muhammad Rumfa, sultan de Kano, etend les murailles, fonde le Gidan Rumfa (palais), etablit le marche Kurmi (toujours en activite), invite des erudits islamiques d'Egypte et du Maroc. Milieu XVIe siecle : la reine Amina de Zazzau (Zaria) regna 34 ans, etendit le territoire haoussa du Kwararafa au Nupe, fit construire les murailles en tubali (Ganuwar Amina). 1804-1808 : jihad de Usman dan Fodio, creation du califat de Sokoto sous direction peule. 1903 : conquete britannique, mort du calife Muhammadu Attahiru Ier. 1930 : officialisation de l'alphabet boko (latin) pour le haoussa par les administrations britannique et francaise. 2024 : le festival Durbar inscrit par l'UNESCO au patrimoine culturel immateriel."
+      "unificationsOrDivisions": "Selon la légende, les fils et petits-fils de Bayajidda fondèrent les sept États hausa (hausa bakwai) : Daura, Kano, Katsina, Zazzau, Gobir, Rano et Biram. Sept autres pays, où la langue hausa s'est répandue sans être celle des premiers habitants, forment les banza bakwai, « les sept bâtards » : Kebbi, Zamfara, Gwari, Kwararafa (le pays jukun), Yoruba, Nupe et Yawuri. Les listes varient selon les versions, d'après Mahdi Adamu ; Heinrich Barth en donne une au XIXe siècle. Ces États n'ont jamais formé un seul royaume. Au XVIe siècle, Muhammad Kanta, roi du Kebbi, imposa sa domination à certains d'entre eux. Entre 1804 et janvier 1809, la guerre menée par Usman dan Fodio fit capituler tous les grands États hausa, dont les rois partirent en exil, selon l'historien Murray Last. En 1820, le califat de Sokoto né de cette guerre comptait sept grands émirats et dix autres en formation. En 1903, les troupes britanniques menèrent campagne contre Kano et Sokoto.",
+      "externalInfluences": "Le Bornou, à l'est, a fortement marqué le pays hausa, selon Mahdi Adamu. Au XVe siècle, Kano et d'autres villes durent lui payer tribut, et Katsina lui envoyait chaque année cent esclaves. Sous Dauda de Kano (1421-1438), un prince réfugié du Bornou fit entrer à Kano des titres comme galadima, chiroma et kaigama. Beaucoup de mots arabes liés à la religion sont entrés dans la langue hausa par le kanuri. De l'ouest vinrent des Wangarawa (Dioula) musulmans, arrivés à Kano sous Yaji (1349-1385) selon la Chronique de Kano, puis des lettrés fulɓe dans les années 1450. Le savant al-Maghīlī, venu du Touat, visita Kano et Katsina dans les années 1490 et écrivit pour Muhammad Rumfa un texte sur les devoirs des princes. Selon Léon l'Africain, l'empire songhay aurait conquis les États hausa au début du XVIe siècle ; Adamu, après l'historien H. J. Fisher, juge que cette conquête n'a sans doute jamais eu lieu.",
+      "majorHistoricalEvents": "1349-1385 : règne de Yaji à Kano ; selon la Chronique de Kano, des Wangarawa musulmans arrivent alors du Mali. 1463-1499 : règne de Muhammad Rumfa à Kano ; la chronique lui attribue l'agrandissement des murailles, le palais Gidan Rumfa, le marché de Kurmi et la célébration officielle de la fin du ramadan. Vers 1491-1492 : visite d'al-Maghīlī à Kano. XVe ou XVIe siècle : selon la tradition, la princesse Amina de Zazzau, fille du roi Bakwa, mène des campagnes et fortifie Zaria ; elle ne figure sur aucune liste de rois. La Chronique de Kano la place au XVe siècle, les auteurs du chapitre de l'UNESCO au début du XVIe siècle. 1556 : mort de Muhammad Kanta, roi du Kebbi. 1804 : début de la guerre menée par Usman dan Fodio. Janvier 1809 : tous les grands États hausa ont capitulé. 1903 : campagnes britanniques contre Kano et Sokoto. 2024 : l'UNESCO inscrit le Durbar de Kano sur la Liste représentative du patrimoine culturel immatériel de l'humanité."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Systeme emiral (Sarauta) profondement hierarchise : Sultan de Sokoto (Sarkin Musulmi, leader spirituel supreme des Haoussa-Peuls sunnites) ; emirs de premiere et deuxieme classe (Sarki) dans chaque emirat ; chefs de district (Hakimi) ; chefs de village (Dagaci) ; chefs de quartier (Mai-unguwa) ; masse populaire (Talakawa). L'emir cumule autorite religieuse, judiciaire et executive. La Sharia est le droit applicable. La succession a l'emirat est hereditaire.",
-      "clanOrganization": "Distinction fondamentale entre la classe dirigeante (masusarauta) et le peuple (talakawa). Trois sous-groupes historiques : Habe (Haoussa purs), Hausa-Fulani ou Kado (Peuls hausanises), Banza (peuples assimiles). Organisation en groupes d'occupation avec leurs propres titres et hierarchies internes.",
+      "traditionalPoliticalSystem": "Dans les anciens États hausa, le pouvoir s'organisait par niveaux, selon Mahdi Adamu. Les hameaux (kauyuka) réunissaient des familles (gidaje) sous un chef, le maigari. Les villages (garuruwa) avaient à leur tête un sarkin gari ou magajin gari, parfois aidé de chefs de quartier (masu-unguwa). Au sommet, la ville fortifiée (birni) était le siège du sarki, le roi, dont le pouvoir était absolu et la personne sacrée. Il gouvernait avec de hauts dignitaires, dont le galadima, sorte de premier ministre, et avec un conseil, comme « les neuf de Kano » (tara ta Kano) ou « les neuf de Gobir ». Au XIXe siècle, le califat de Sokoto plaça les émirats sous l'autorité du calife, qui se voulait au-dessus de toute appartenance locale ou ethnique, selon l'historien Murray Last.",
+      "clanOrganization": "Les gens du pays hausa se nommaient d'abord d'après leur ville ou leur royaume : Kanawa pour ceux de Kano, Katsinawa pour ceux de Katsina, Gobirawa pour ceux du Gobir, selon Mahdi Adamu. Beaucoup de nouveaux venus sont devenus hausa. Les Wangarawa installés dans le pays cessèrent d'employer leurs noms de clan, si bien que des noms comme Kamara, Cissé, Traoré ou Watara n'y ont jamais été courants. Des pêcheurs songhay de la vallée de la Rima perdirent eux aussi leur culture d'origine.",
       "ageClassSystems": null,
-      "roleOfLineages": "Les lignages patrilineaires determinent l'appartenance a la noblesse (sarautun gargajiya) ou au peuple. Les titres occupationnels (sarautu) sont souvent hereditaires et transmis dans les familles specialisees. L'unite sociale de base est le foyer (gida) sous l'autorite du mai gida.",
-      "religiousAuthority": "Islam sunnite malekite predominant depuis le XIe siecle, renforce par le jihad de Sokoto. Le Sultan de Sokoto est le Sarkin Musulmi, chef spirituel de tous les Haoussa-Peuls sunnites du Nigeria. Influence soufie (saints Wali Muhammad dan Masani, d.1667 ; Wali Muhammad dan Marina, d.1655). Pre-islam : religion Maguzanci (religion traditionnelle africaine) avec le culte de possession des esprits (Bori) et les sacrifices animaux."
+      "roleOfLineages": "Le sarki était choisi parmi les membres du lignage royal, selon Mahdi Adamu. La succession de père en fils était courante, mais la Chronique de Kano donne le nom de la mère de chaque roi, ce qui pourrait être la trace d'une ancienne transmission par les femmes. Les lignages dirigeants de l'ancien régime formaient autour du roi une aristocratie héréditaire. À partir de Muhammad Rumfa, des esclaves et des eunuques reçurent de hautes charges, ce qui affaiblissait ces lignages et renforçait le pouvoir du roi.",
+      "religiousAuthority": "Avant l'islam, le pouvoir des petits chefs reposait sur la garde des grands lieux de culte ; les rois de Kano les firent détruire, comme Santolo sous Yaji (1349-1385), selon Mahdi Adamu. Des lettrés venus d'ailleurs, comme al-Maghīlī, conseillaient les rois. Au XIXe siècle, le calife de Sokoto tenait son autorité de l'islam et la déléguait aux émirs, selon Murray Last."
     },
     "languages": {
-      "mainLanguage": "Haoussa (Hausa)",
+      "mainLanguage": "Hausa ou haoussa (hau)",
       "isoCodes": ["hau"],
       "dialects": [
-        "Kano Hausa — variete de prestige, standard de reference",
-        "Sokoto Hausa",
-        "Katsina Hausa",
-        "Zaria Hausa",
-        "Niger Hausa (varietes du Niger, influence de l'administration francaise)",
-        "Shuwa Hausa (parle au Soudan, Blue Nile area)",
-        "Ajami (haoussa ecrit en script arabe, pre-colonial et islamique)"
+        "Hausa de l'Est : parlers de Kano, de Hadejiya et de Katagum",
+        "Hausa de l'Ouest : parlers de Sokoto, de Katsina, des Gobirawa, des Kebbawa, des Zamfarawa et des Adarawa",
+        "Hausa du Nord : parlers arewa et arawa",
+        "Parler du Damagaram",
+        "Parler de Daura (Dawra)",
+        "Parler de Gaya",
+        "Parler kurfey",
+        "Parler des Aderawa"
       ],
-      "vehicularRole": "Le haoussa est la deuxieme langue la plus parlee dans la famille afro-asiatique apres l'arabe. Il compte environ 50 millions de locuteurs natifs et 30 millions de locuteurs secondaires. C'est la lingua franca du nord du Nigeria et du sud du Niger, et une langue vehiculaire majeure en Afrique de l'Ouest. Officiel dans les etats du nord du Nigeria ; vehicule de l'enseignement, de la radiodiffusion (BBC Hausa, VOA Hausa, Radio Nigeria), de la litterature et de la presse. L'alphabet boko (latin) est officiel depuis 1930 ; l'ajami (arabe) est toujours utilise dans les ecoles islamiques. Le haoussa est visible sur les billets de naira nigerians."
+      "vehicularRole": "Le hausa est la langue dominante de la savane du Soudan central, selon Mahdi Adamu. D'autres peuples l'emploient aussi comme langue commune, si bien que tous ceux qui le parlent ne sont pas hausa, selon Guy Nicolas. Avec l'islam, il s'est écrit en caractères arabes, sous une forme appelée ajami."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q33938",
+      "glottocode": "haus1257",
+      "iso639_3": "hau"
     },
     "culture": {
-      "majorRites": "Durbar (Hawan Sallah) : festival equestre annuel celebre dans les grandes villes emirales (Kano, Katsina, Sokoto, Zaria, Bauchi) apres le Ramadan (Aid al-Fitr) et pour Aid al-Adha. Inscrit au patrimoine culturel immateriel de l'UNESCO en decembre 2024. Le festival commence par la priere a l'aube, suivi d'une somptueuse cavalcade de l'emir et de sa suite (cavaliers, musiciens, artilleurs). Le clou est le Jahi (salut des cavaliers). Rites de passage islamiques : naissance (akika, sacrifice), circoncision (kaciya), mariage (aure avec dot et ceremonies familiales), funerailles (inhumation dans les 24h, prieres). Hajj (pelerinage a La Mecque) : obligation pour les musulmans en capacite.",
-      "symbols": "Architecture en tubali (briques de terre seche, bâtiments cubiques multi-etages, creneaux, stuc blanc, reliefs abstraits) — les murailles de Kano (fondees vers 1095-1134) et les murailles de la reine Amina (Ganuwar Amina) sont des symboles culturels majeurs. Le cheval est un symbole de statut et de noblesse (present lors des ceremonies de l'Aid). Le noeud Dagin Arewa (etoile geometrique du Nord) orne l'architecture, la broderie et les tissus. Le marche Kurmi de Kano (fonde par Muhammad Rumfa, XVe siecle, toujours en activite) symbolise la tradition commerciale haoussa. Habillement : grand boubou (babban riga), turban Alasho, coiffe hula.",
-      "artsAndMusic": "Musique : griots (mawaka), instruments traditionnels (luth gurmi, luth garaya, vielle goje, hautbois algaita, trompette kakaki). Architecture en tubali (brique d'argile seche, style Hausa). Textiles : tissage et teinture a l'indigo (les Haoussa etaient appeles bluemen par les Europeens en raison de leur peau teintee d'indigo). Broderie et travail du cuir. Boxe Dambe : sport traditionnel (origine chez les bouchers ; le poing dominant enroule de tissu est la lance, le bras faible est le bouclier ; victoire par KO, mise a terre ou inactivite ; recompenses en argent, betail, bijoux). Litterature en ajami depuis la periode pre-coloniale (ex. Ruwayar Annabi Musa, XVIIe siecle par Abdullah Suka) ; marche litteraire de Kano (littattafan soyayya). Gastronomie : tuwo (bouillie) avec miya (sauce), suya (brochettes), kilishi (suya sechee), kosai (galettes de haricots), kunu (boisson de millet).",
-      "spiritualities": "Islam sunnite malekite : religion dominante depuis le XIe siecle, renforce par le califat de Sokoto (1804-1808). Confréries soufies influentes. Pre-islam : Maguzanci (religion traditionnelle haoussa) incluant le culte de possession Bori (invocation des esprits iskoki), les sacrifices animaux et les ceremonies de guerison. Les Maguzawa (Haoussa non-islamises) maintiennent ces pratiques. La langue haoussa elle-meme conserve des traces de la cosmologie pre-islamique dans son vocabulaire des esprits (iskoki)."
+      "majorRites": "Le Durbar de Kano est un grand défilé d'environ 10 000 cavaliers, accompagnés d'hommes et de femmes à pied, autour de l'émir. Il a lieu chaque année pendant le neuvième et le douzième mois du calendrier musulman, pour les deux grandes fêtes de l'islam. L'UNESCO l'a inscrit en 2024 sur la Liste représentative du patrimoine culturel immatériel de l'humanité. La Chronique de Kano attribue déjà à Muhammad Rumfa (1463-1499) des fêtes officielles pour la fin du ramadan, selon Mahdi Adamu.",
+      "symbols": "Les murailles des villes protégeaient les habitants et les champs ; celles de Kano, commencées sous Gijimasu et achevées sous Tsaraki, furent agrandies par Muhammad Rumfa, selon Mahdi Adamu. Selon la Chronique de Kano, Rumfa adopta comme insignes royaux de longues trompettes et des éventails en plumes d'autruche. Kano eut aussi, dès Yaji, un chant de ralliement : « Zauna daidai Kano garinkine », « Tiens bon, Kano est ta ville ».",
+      "artsAndMusic": "Selon la légende de Bayajidda, Kano et Rano étaient les « rois de l'indigo » (sarakunan babba), tournés vers le tissage et la teinture, et Katsina et Daura les « rois du marché », selon Mahdi Adamu. Autour du Durbar de Kano, le travail du cuir, le tissage, la teinture, la broderie et la forge se transmettent par la pratique en groupe, et le tambour et l'équitation s'apprennent régulièrement, selon l'UNESCO. Les lettrés ont écrit le hausa en caractères arabes, l'ajami.",
+      "spiritualities": "L'islam est présent depuis longtemps dans le pays hausa. La Chronique de Kano date son arrivée du XIVe siècle, avec des Wangarawa venus du Mali ; Mahdi Adamu pense qu'il était arrivé plus tôt, surtout par le Bornou. Il resta longtemps la religion des villes, des commerçants et des élites, mêlée à d'autres croyances, tandis que les campagnes gardaient la religion traditionnelle, avec ses lieux de culte près des rochers et des arbres sacrés. Au Nigeria, les Maguzawa sont des Hausaphones non musulmans ; au XIXe siècle, ils payaient à Kano un impôt plus élevé, selon Murray Last. En 1914, l'officier britannique Arthur Tremearne décrit les bori, des esprits aussi appelés iskoki (au singulier iska, qui veut dire aussi « vent »)."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Les Hausa Bakwai (sept etats haoussa authentiques) : Daura (ville-mere, berceau de la legende Bayajidda), Kano (centre textile et commercial, fondateur Bagauda), Katsina (centre du savoir islamique, fondateur Kumayau), Zazzau/Zaria (fournisseur de main-d'oeuvre, fondateur Gunguma), Gobir (gardien militaire du Nord, fondateur Duma), Rano (centre textile, fondateur Zamna Kogi), Biram (fondateur Biram, fils de Bayajidda et de la princesse kanuri Magira). Les Hausa Banza (sept etats annexes) : Zamfara, Kebbi, Yauri, Gwari, Kwararafa, Nupe, Yoruba. Apogee au XVIe siecle comme puissants etats-villes marchands du commerce transsaharien. Califat de Sokoto (1809) : empire islamique sous direction peule, incluant tous les anciens royaumes haoussa transformes en emirats.",
-      "relationsWithNeighbors": "Alliances commerciales avec les marches du Maghreb (Tripoli, Tunis, Le Caire) via les routes transsahariennes. Relations tributaires avec Bornou (XVe siecle) et Songhai (XVIe siecle). Assimilation des groupes Peuls migrants (XVe-XIXe siecles). Jihad de Sokoto : transformation des relations avec les Peuls d'une domination haoussa vers une domination peule. Commerce avec les Yoruba au sud (tissu, cola, sel). Relations avec les Touaregs a Agadez.",
-      "conflictsOrAlliances": "Vassalisation par Bornou (XVe siecle). Tributaires de Songhai (XVIe siecle selon Leo Africanus). Jihad de Usman dan Fodio (1804-1808) : defaite des royaumes haoussa, creation du califat de Sokoto. Conquete britannique (1903) : mort du calife Muhammadu Attahiru Ier, fin du califat ; resistance finale a Hadejia (1906). Les emirs haoussa-peuls sont maintenus sous administration indirecte britannique.",
-      "diaspora": "La diaspora haoussa est l'une des plus etendues d'Afrique de l'Ouest. Depuis 1000 ans, les Haoussa ont traversé l'Afrique pour le commerce, le service militaire, la chasse, le hajj et la fuite des rois oppressifs. Communautes importantes au Ghana, Cote d'Ivoire, Togo, Benin, Cameroun, Tchad, Soudan (Blue Nile area), Eritree. Agadez (Niger) est un grand centre haoussa sur la route du hajj. Presence dans les grandes villes cotieres (Lagos, Port Harcourt, Accra, Abidjan, Cotonou) et en Libye."
+      "kingdomsOrChiefdoms": "Les sept États hausa (hausa bakwai) sont Daura, Kano, Katsina, Zazzau (Zaria), Gobir, Rano et Biram. Kano est le mieux connu grâce à sa chronique, écrite en arabe vers 1890 à partir de documents plus anciens, qui suit 48 rois depuis Bagauda, selon Mahdi Adamu. Au XVIe siècle, le Kebbi de Muhammad Kanta devint l'État le plus guerrier de la région. Au XIXe siècle, le califat de Sokoto remplaça les anciens royaumes par des émirats ; en 1820, il en comptait sept grands et dix autres en formation, selon Murray Last.",
+      "relationsWithNeighbors": "Les Hausa n'ont jamais vu le Bornou comme un ennemi, malgré ses attaques et les tributs, contrairement au Songhay, au Kebbi ou au Kwararafa, selon Mahdi Adamu. Avec les Jukun du Kwararafa, au sud-est, Kano échangeait des chevaux contre des esclaves sous Kananeji (1390-1410). Entre le XIVe et le XVIe siècle, des éleveurs fulɓe, des Touaregs, des gens du Bornou, des Wangarawa et des pêcheurs songhay se sont installés dans le pays hausa, et beaucoup sont devenus hausa. Les Touaregs fondèrent leur sultanat à Agadez en 1495, après avoir chassé de l'Aïr le roi hausa du Gobir.",
+      "conflictsOrAlliances": "Au XVe siècle, Kano et Katsina se firent la guerre pendant près d'un siècle ; la première guerre, sous Muhammad Rumfa, dura onze ans, selon Mahdi Adamu. Kano soumit Zazzau sous Kananeji (1390-1410). Le Kebbi de Muhammad Kanta lutta contre le Songhay, puis contre le Bornou pour le contrôle de l'Aïr. Entre 1804 et 1809, la guerre menée par Usman dan Fodio renversa les rois hausa. Des lettrés du Bornou la présentaient comme une guerre des Fellata, c'est-à-dire des Fulɓe ; Murray Last y voit l'origine du cliché d'un « empire peul ». En 1903, les émirs de Kano et de Sokoto résistèrent aux troupes britanniques, mais ne purent rien contre leurs mitrailleuses et leurs canons.",
+      "diaspora": "Des Hausa ont quitté leur pays dès le XIVe siècle : soldats, commerçants et lettrés, ou gens qui suivaient les armées de Kano, de Katsina et de Zazzau ; beaucoup ne sont pas revenus, selon Mahdi Adamu. Cette émigration ne devient une grande diaspora dans plusieurs régions d'Afrique de l'Ouest qu'après le XVIe siècle. En 1975, Guy Nicolas signale des colonies hausa dans les villes du pourtour du golfe de Guinée et dans des pays arabes."
     },
     "demography": {
-      "totalPopulation": 86000000,
-      "referenceYear": 2025,
-      "source": "Wikipedia EN (Hausa people) : environ 86 millions. Niger : ~15,8 millions (60% de la population). Soudan : ~9 millions. Cameroun : ~8 millions. Nigeria : majorite dans les etats du nord (Kano, Katsina, Sokoto, Zamfara, Jigawa, Kebbi, etc.). Source : Ethnologue (hau), CIA World Factbook, UNFPA Nigeria et Niger, projections 2025.",
+      "totalPopulation": null,
+      "referenceYear": 2001,
+      "source": "Aucune source lue ne donne un chiffre récent pour l'ensemble des Hausa. Au Niger, le recensement de 2001 comptait 55,4 % de Haoussa, d'après le World Factbook de la CIA cité par le Refugee Documentation Centre of Ireland ; le pays avait alors 11 060 291 habitants, selon l'Institut national de la statistique du Niger. Au Nigeria, le recensement de 2006 n'a pas posé de question sur l'origine ethnique, selon le Population Reference Bureau. En 1975, l'anthropologue Guy Nicolas parlait de quinze à vingt millions de Hausa.",
       "distributionByCountry": [
         {
-          "country": "NGA",
-          "population": 50000000,
-          "note": "Nord du Nigeria : etats de Kano, Katsina, Sokoto, Zamfara, Jigawa, Kebbi, Kaduna, ainsi que diaspora a Lagos et autres grandes villes"
-        },
-        {
           "country": "NER",
-          "population": 15800000,
-          "note": "Sud du Niger, environ 60% de la population nationale ; diaspora majeure a Agadez"
+          "population": 6127401,
+          "percentage": 55.4,
+          "note": "Recensement de 2001 : 55,4 % de 11 060 291 habitants, soit environ 6,1 millions de personnes (calcul fait par nous). Surtout dans le sud du pays ; les Haoussa forment 83 % de la population de la région de Maradi selon la monographie du recensement de 2012."
         },
         {
-          "country": "CMR",
-          "population": 8000000,
-          "note": "Villes du nord : Garoua, Maroua, Ngaounderé"
-        },
-        {
-          "country": "SDN",
-          "population": 9000000,
-          "note": "Darfour, Kordofan, Khartoum — diaspora historique"
-        },
-        {
-          "country": "GHA",
-          "population": 1500000,
-          "note": "Nord du Ghana et grandes villes (Accra, Kumasi)"
-        },
-        {
-          "country": "TCD",
-          "population": 1000000,
-          "note": "Tchad occidental, route du hajj"
+          "country": "NGA",
+          "population": null,
+          "percentage": null,
+          "note": "Surtout dans le nord du pays. Le recensement de 2006 n'a pas posé de question sur l'origine ethnique."
         },
         {
           "country": "BEN",
-          "population": 500000,
-          "note": "Nord du Benin et Cotonou"
+          "population": null,
+          "percentage": null,
+          "note": "Présence de la langue hausa attestée par Glottolog."
         },
         {
-          "country": "CIV",
-          "population": 200000,
-          "note": "Communautes commercantes a Abidjan et dans le nord"
+          "country": "BFA",
+          "population": null,
+          "percentage": null,
+          "note": "Présence de la langue hausa attestée par Glottolog."
+        },
+        {
+          "country": "CMR",
+          "population": null,
+          "percentage": null,
+          "note": "Présence de la langue hausa attestée par Glottolog."
+        },
+        {
+          "country": "TCD",
+          "population": null,
+          "percentage": null,
+          "note": "Présence de la langue hausa attestée par Glottolog."
         }
       ]
     },
@@ -161,7 +823,8 @@
         "title": "European Union Agency for Asylum — Nigeria Country Focus",
         "url": "https://www.euaa.europa.eu/nigeria-country-focus/13-demographics",
         "tier": "official",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": "Agence de l'Union européenne pour l'asile, rapport « Nigeria: Country Focus », janvier 2026, section 1.3 sur la population. Il appuie l'usage du nom Hausa-Fulani et la description des liens entre Hausa et Fulɓe."
       },
       {
         "title": "Last Places — Durbar Festival",
@@ -186,52 +849,144 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "Soumission du Niger à la liste indicative hébergée par l'UNESCO (26 mai 2006) ; elle décrit l'architecture haoussa du quartier de Birni et des murailles en terre de 9 à 10 m de hauteur, sans constituer une inscription au patrimoine mondial."
-      }
-    ]
-  },
-  "nameHistory": {
-    "summary": "Hausawa est le nom que ce peuple se donne. Son histoire est présentée plus bas.",
-    "names": [
+      },
       {
-        "nameText": "Hausawa",
-        "nameStatus": "current",
-        "selfGiven": true,
-        "languageOfOrigin": "hau",
-        "namedBy": null,
-        "shortLine": "Le nom que les Haoussa se donnent au pluriel ; ceux qui parlent haoussa.",
-        "periodLabel": "Usage contemporain",
-        "accounts": [
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Usage contemporain"
-            },
-            "era": "modern",
-            "statement": "Terme employé par les locuteurs eux-mêmes ; « Hausa » (Haoussa en français) est la désignation standard dans toutes les langues d'Afrique de l'Ouest.",
-            "aspect": "usage",
-            "sources": [
-              {
-                "title": "SIL Ethnologue — Hausa (hau)",
-                "author": "SIL International",
-                "year": 2024,
-                "url": "https://www.ethnologue.com/language/hau/",
-                "tier": "official",
-                "source_kind": "linguistic_reference",
-                "notes": ""
-              },
-              {
-                "title": "Histoire générale de l'Afrique, IV, ch. 11 : Les Hawsa et leurs voisins du Soudan central",
-                "author": "Mahdi Adamu",
-                "year": 1985,
-                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
-                "tier": "official",
-                "source_kind": "intergovernmental",
-                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane. Page 295 : le mot Hawsa désignait d'abord la langue ; les gens du pays hawsa s'appelaient eux-mêmes Hausawa, « ceux qui parlent hawsa »."
-              }
-            ]
-          }
-        ]
+        "title": "General History of Africa, IV, ch. 11 : The Hausa and their neighbours in the central Sudan, pp. 266-300",
+        "url": "https://archive.org/details/general-history-of-africa-vol-4",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, Histoire générale de l'Afrique, volume IV dirigé par Djibril Tamsir Niane, édition anglaise de 1984, lue dans la numérisation d'Internet Archive. Chapitre de M. Adamu, revu avec une contribution d'André Salifou. Il appuie l'histoire du nom Hausa et du nom Hausawa (p. 268-269), les explications de l'origine des Hausa (p. 266-268), la légende de Bayajidda et les deux groupes de sept États (p. 269-270), l'histoire de Kano, Katsina, Zazzau et Gobir (p. 271-275), les relations avec le Bornou et le Songhay (p. 279-281), les migrations (p. 285-288), l'islam (p. 288-293) et l'organisation politique (p. 293-294)."
+      },
+      {
+        "title": "General History of Africa, VI, ch. 22 : The Sokoto caliphate and Borno",
+        "url": "https://archive.org/details/general-history-of-africa-vol-6",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, Histoire générale de l'Afrique, volume VI dirigé par J. F. Ade Ajayi, édition anglaise de 1989, lue dans la numérisation d'Internet Archive. Chapitre de l'historien Murray Last. Il appuie la guerre de 1804-1809 et le cliché d'un « empire peul » (p. 558-559), le nom Hausawa donné à Kano aux anciens agents du régime renversé (p. 560), les émirats et le rôle du calife (p. 562-564) et l'impôt des Maguzawa (p. 578)."
+      },
+      {
+        "title": "General History of Africa, VII, ch. 6 : African initiatives and resistance in West Africa, 1880-1914",
+        "url": "https://archive.org/details/general-history-of-africa-vol-7",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, Histoire générale de l'Afrique, volume VII dirigé par A. Adu Boahen, édition anglaise de 1985, lue dans la numérisation d'Internet Archive. Pages 137 et 138 : les campagnes britanniques de 1903 contre Kano et Sokoto."
+      },
+      {
+        "title": "Glottolog 5.3 — Hausa (haus1257)",
+        "url": "https://glottolog.org/resource/languoid/id/haus1257",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog name: Hausa; classification includes Chadic. Les dialectes listés sont les sous-languoids que Glottolog rattache à haus1257, hors languoids portant leur propre code ISO 639-3."
+      },
+      {
+        "title": "Durbar in Kano — Liste représentative du patrimoine culturel immatériel de l'humanité",
+        "url": "https://ich.unesco.org/en/RL/durbar-in-kano-01895",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche d'inscription de l'UNESCO, élément n° 01895, inscrit en 2024 par le Comité intergouvernemental lors de sa 19e session, à la demande du Nigeria. Elle décrit le défilé, son calendrier et les savoir-faire transmis autour de lui."
+      },
+      {
+        "title": "Recensement général de la population et de l'habitat 2012 — État et structure de la population du Niger en 2012",
+        "url": "https://www.stat-niger.org/wp-content/uploads/2020/05/ETAT_STRUCTURE_POPULATION.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Institut national de la statistique du Niger, novembre 2015. Page 1 : le Niger comptait 11 060 291 habitants au recensement de 2001. Le rapport ne donne pas de répartition par ethnie."
+      },
+      {
+        "title": "Recensement général de la population et de l'habitat 2012 — Monographie régionale de Maradi",
+        "url": "https://www.stat-niger.org/wp-content/uploads/2020/05/Monographie_Regionale_Maradi.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Institut national de la statistique du Niger, octobre 2016. Page 4 : la population de la région de Maradi est composée à 83 % de Haoussa, à 10 % de Peuls et à 6 % de Touaregs."
+      },
+      {
+        "title": "Niger — General information including: Population; Capital city; Landmarks; Famous people (29 avril 2014)",
+        "url": "https://www.ecoi.net/en/file/local/2007160/96151.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Compilation du Refugee Documentation Centre of Ireland, service public irlandais, publiée sur ecoi.net. Elle cite le World Factbook de la CIA du 14 avril 2014 : « Haoussa 55.4 % » au recensement de 2001. Le Factbook lui-même n'a pas été consulté."
+      },
+      {
+        "title": "In the News: Results Trickle Out From the Nigerian Census",
+        "url": "https://scorecard.prb.org/?p=1232",
+        "tier": "unverified",
+        "source_kind": "ngo",
+        "notes": "Article du Population Reference Bureau, organisation américaine de recherche sur la population, 17 janvier 2007. Il indique que le questionnaire du recensement nigérian de 2006 ne posait pas de question sur la religion ni sur l'origine ethnique."
+      },
+      {
+        "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+        "url": "https://www.gutenberg.org/ebooks/76317",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Heinrich Barth, Londres, Longman, 1857 ; récit du voyage de 1849-1855, lu dans l'édition numérique du projet Gutenberg, qui reproduit la pagination d'origine. Pages 69 à 73 : le nom Háusa, le mot Áusa et les deux groupes de sept États ; page 111 : « Ba-Háushe » ; page 121 : « Hábe », au singulier « Kádo » ; pages 640 à 642 : « Háusa, or Afunú »."
+      },
+      {
+        "title": "Grammar of the Hausa Language",
+        "url": "https://archive.org/details/grammarofhausal00sch",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "James Frederick Schön, Londres, Church Missionary House, 1862, lu dans la numérisation d'Internet Archive. L'auteur était missionnaire de la Church Missionary Society. Page i : « bahause », pluriel « hausawa »."
+      },
+      {
+        "title": "Vocabulary of the Haussa Language",
+        "url": "https://archive.org/details/vocabularyofhau00sch",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "James Frederick Schön, Londres, Church Missionary Society, 1843, lu dans la numérisation d'Internet Archive. Le titre écrit le nom de la langue « Haussa »."
+      },
+      {
+        "title": "An Account of Timbuctoo and Housa, Territories in the Interior of Africa",
+        "url": "https://www.gutenberg.org/ebooks/22631",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Londres, Longman, 1820, lu dans l'édition numérique du projet Gutenberg. Récit d'El Hage Abd Salam Shabeeny, marchand de Tétouan, publié avec des notes de James Grey Jackson, négociant anglais installé au Maroc. Le titre écrit « Housa »."
+      },
+      {
+        "title": "The Origin of the Name 'Hausa', Africa, vol. 38, n° 3",
+        "url": "https://www.cambridge.org/core/journals/africa/article/abs/origin-of-the-name-hausa/1B6D444C319C498A9C63AE509EA7BF2B",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Neil Skinner, revue Africa de l'International African Institute, 1968, pages 253 à 257. Seuls l'extrait de la première page et le résumé en français affichés par Cambridge Core ont été lus. Ils appuient la trace chez Ibn Saʿīd, le nom Afnū chez al-Maqrīzī et chez les Kanuri, et l'hypothèse du mot songhay hausa, « est »."
+      },
+      {
+        "title": "Les catégories d'ethnie et de fraction ethnique au sein du système social hausa, Cahiers d'études africaines, vol. 15, n° 59",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1975_num_15_59_2578",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Guy Nicolas, Cahiers d'études africaines, 1975, pages 399 à 441, mis en ligne par Persée. Seule la page 399 a été lue : les noms Hausa, Hausawa et Ba haushe, l'estimation de quinze à vingt millions, les graphies haoussa et hawsa, et l'usage du nom Hausa pour tout commerçant."
+      },
+      {
+        "title": "The Ban of the Bori: Demons and Demon-Dancing in West and North Africa",
+        "url": "https://archive.org/details/banofboridemonsd00trem",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Arthur John Newman Tremearne, Londres, Heath, Cranton & Ouseley, 1914, lu dans la numérisation d'Internet Archive. Ouvrage d'époque coloniale : l'auteur, officier de l'armée britannique, enseignait le hausa à Cambridge. Page 243 : les bori et leurs autres noms, dont iskoki."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Hausa, qui se nomment eux-mêmes Hausawa, sont un grand peuple d'Afrique de l'Ouest, surtout au nord du Nigeria et au sud du Niger. Leur langue sert aussi de langue commune.",
+      "followUp": "D'où vient le nom Hausa, qui désignait d'abord une langue ?"
+    },
+    "gaps": [
+      {
+        "field": "demography.totalPopulation",
+        "reason": "Nous n'avons pas trouvé de recensement récent qui compte les Hausa dans tous les pays où ils vivent."
+      },
+      {
+        "field": "demography.distributionByCountry[1]",
+        "reason": "Le recensement du Nigeria ne demande pas l'origine ethnique : nous n'avons pas de chiffre officiel pour les Hausa de ce pays."
+      },
+      {
+        "field": "organization.ageClassSystems",
+        "reason": "Nous n'avons pas trouvé de source qui parle de classes d'âge chez les Hausa."
+      },
+      {
+        "field": "nameHistory.names[4]",
+        "reason": "Nous n'avons pas trouvé de source qui explique le sens du nom Afunu."
+      },
+      {
+        "field": "nameHistory.names[6]",
+        "reason": "Nous n'avons pas trouvé de source qui date l'apparition du nom Hausa-Fulani."
       }
     ]
   }
