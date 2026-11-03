@@ -4,7 +4,7 @@
   "nameEn": "Central Sudanic",
   "classificationStatus": "colonial-legacy",
   "nameHistory": {
-    "summary": "Le nom soudanique central désigne un groupe de langues parlées en groupes dispersés autour de la lisière nord-est de la forêt équatoriale et jusqu'au Tchad, comme le baguirmi, le moru, le madi, le mangbetu ou le lendu. C'est un nom de savants, formé sur le nom de région Soudan ; on a aussi dit soudanais central. Les sources ne s'accordent pas sur sa place dans un ensemble plus large ; nous les présentons plus bas.",
+    "summary": "Le nom soudanique central désigne une soixantaine de langues parlées du sud du Tchad au nord-est de la République démocratique du Congo, comme le baguirmi, le ngambay, le moru, le lugbara, le mangbetu ou le lendu. C'est un nom de savants, formé sur le nom de région Soudan ; on a aussi dit soudanais central, et le linguiste Lionel Bender l'a remplacé un temps par famille F. Les sources ne s'accordent ni sur l'unité de ce groupe, ni sur sa place dans un ensemble plus large ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Soudanique central",
@@ -56,6 +56,128 @@
                 "source_kind": "intergovernmental",
                 "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
                 "page": "p. 638"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Usage décrit en 2020"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom soudanique central s'applique, selon Pascal Boyeldieu, à une soixantaine de langues parlées au Tchad, au Soudan, en Centrafrique, en République démocratique du Congo et en Ouganda. La plupart comptent moins de 100 000 locuteurs, et plusieurs reculent devant l'arabe du Tchad ou du Soudan.",
+            "sources": [
+              {
+                "title": "Central Sudanic Languages, dans The Oxford Handbook of African Languages",
+                "author": "Pascal Boyeldieu",
+                "year": 2020,
+                "url": "https://shs.hal.science/halshs-03097024",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 408-418",
+                "notes": "Chapitre du volume dirigé par Rainer Vossen et Gerrit J. Dimmendaal, Oxford University Press, 2020. Version de l'auteur déposée sur l'archive ouverte HAL, lu le 3 novembre 2026. Introduction : « The label Central Sudanic traditionally applies to a group of some 60 languages » ; « Several languages are declining, namely under the influence of Chadian or Sudanese Arabic »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1963,
+              "label": "1963"
+            },
+            "era": "modern",
+            "aspect": "imposition",
+            "statement": "Le nom soudanique central aurait été forgé en 1963 par Joseph Greenberg, qui réunit alors toutes ces langues et les place dans sa famille nilo-saharienne, selon Pascal Boyeldieu. Greenberg date lui-même ses premiers emplois du nom de 1949-1950, et Diedrich Westermann l'écrivait déjà en 1912 dans un autre sens.",
+            "actors": [
+              {
+                "name": "Joseph H. Greenberg",
+                "role": "linguiste américain auteur de The Languages of Africa"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Central Sudanic Languages, dans The Oxford Handbook of African Languages",
+                "author": "Pascal Boyeldieu",
+                "year": 2020,
+                "url": "https://shs.hal.science/halshs-03097024",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 408-418",
+                "notes": "Chapitre du volume dirigé par Rainer Vossen et Gerrit J. Dimmendaal, Oxford University Press, 2020. Version de l'auteur déposée sur l'archive ouverte HAL, lu le 3 novembre 2026. Introduction : « Greenberg (1963) coined the term Central Sudanic (henceforth CSD) and brought all the languages together —first as a part of Chari-Nile, then directly (Greenberg 1971)— within his Nilo-Saharan family »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1956,
+              "to": 1966,
+              "label": "1956-1966"
+            },
+            "era": "colonial",
+            "hypothesisGroup": "unite-du-soudanique-central",
+            "statement": "Le nom soudanique central ne recouvrirait pas un seul ensemble, selon Archibald Tucker et Margaret Bryan : en 1956, ils répartissent ces langues entre un groupe moru-mangbetu et un groupe bongo-baguirmi, d'après Pascal Boyeldieu et Pierre Nougayrol. Ils jugent trop faibles les ressemblances de vocabulaire et de grammaire entre les deux.",
+            "actors": [
+              {
+                "name": "Archibald N. Tucker et Margaret A. Bryan",
+                "role": "auteurs d'un manuel des langues non bantoues du nord-est de l'Afrique"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les langues soudaniques centrales : essai d'évaluation",
+                "author": "Pascal Boyeldieu et Pierre Nougayrol",
+                "year": 2008,
+                "url": "https://shs.hal.science/halshs-00348133",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9-30",
+                "notes": "Chapitre de Problems of Linguistic-Historical Reconstruction in Africa, Cologne, Rüdiger Köppe, 2008. Version des auteurs déposée sur l'archive ouverte HAL, lu le 3 novembre 2026. Page 1 : « Tucker et Bryan (1956, 1966) répartissent ces langues en deux « larger units », Moru-Mangbetu et Bongo-Bagirmi » ; page 2 : ils font ce choix en « jugeant ces arguments insuffisants »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "2008"
+            },
+            "era": "modern",
+            "hypothesisGroup": "unite-du-soudanique-central",
+            "statement": "Le nom soudanique central désignerait un ensemble dont la parenté n'est pas prouvée, selon Pascal Boyeldieu et Pierre Nougayrol. Pour eux, les ressemblances entre ses groupes peuvent venir d'une origine commune, ou de contacts anciens entre des langues voisines.",
+            "sources": [
+              {
+                "title": "Les langues soudaniques centrales : essai d'évaluation",
+                "author": "Pascal Boyeldieu et Pierre Nougayrol",
+                "year": 2008,
+                "url": "https://shs.hal.science/halshs-00348133",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9-30",
+                "notes": "Chapitre de Problems of Linguistic-Historical Reconstruction in Africa, Cologne, Rüdiger Köppe, 2008. Version des auteurs déposée sur l'archive ouverte HAL, lu le 3 novembre 2026. Page 5 : « la parenté historique des différents groupes constitutifs du soudanique central n'est, dans l'état actuel des choses, pas prouvée » ; la question reste de savoir si les ressemblances « ne résultent pas plutôt de phénomènes de contact et de diffusion — peut-être anciens »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "2020"
+            },
+            "era": "modern",
+            "hypothesisGroup": "unite-du-soudanique-central",
+            "statement": "Le nom soudanique central désignerait probablement une seule famille, issue d'une même langue et formée de cinq sous-groupes à peu près équidistants, selon Pascal Boyeldieu. Il ajoute qu'un travail considérable reste nécessaire pour le confirmer, et laisse de côté le kresh, l'aja, le birri et le sinyar, dont la place reste incertaine.",
+            "sources": [
+              {
+                "title": "Central Sudanic Languages, dans The Oxford Handbook of African Languages",
+                "author": "Pascal Boyeldieu",
+                "year": 2020,
+                "url": "https://shs.hal.science/halshs-03097024",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 408-418",
+                "notes": "Chapitre du volume dirigé par Rainer Vossen et Gerrit J. Dimmendaal, Oxford University Press, 2020. Version de l'auteur déposée sur l'archive ouverte HAL, lu le 3 novembre 2026. Introduction : « they probably constitute a genetic, historical unit, made of five, more or less equidistant subgroups » ; conclusion : « considerable work is still necessary to confirm this assumption »."
               }
             ]
           },
@@ -119,7 +241,7 @@
                 "url": "https://glottolog.org/resource/languoid/id/cent2225",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 10 octobre 2026. Commentaire sur l'appartenance de la famille : « No conclusive, methodologically sound basis for assigning Central Sudanic to an alleged full or partial Nilo-Saharan has been presented »."
+                "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 10 octobre 2026. Commentaire sur l'appartenance de la famille : « No conclusive, methodologically sound basis for assigning Central Sudanic to an alleged full or partial Nilo-Saharan has been presented ». Relu le 3 novembre 2026 : le commentaire n'a pas changé."
               }
             ]
           },
@@ -174,9 +296,10 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "page": "p. 35-36",
-                "notes": "Philadelphie, Board of Foreign Missions of the United Presbyterian Church of N. A., et Berlin, Dietrich Reimer, 1912 ; d'après une enquête menée au Soudan en 1910. Lu dans la numérisation d'Internet Archive. Page 35 : « The Eastern together with the Central and Western Sudan-languages form the family of the Sudan Languages » ; page 36 : le bongo « shows remarkable connections with Central Sudanic languages, particularly with Bagirmi »."
+                "notes": "Ouvrage de l'époque coloniale. Philadelphie, Board of Foreign Missions of the United Presbyterian Church of N. A., et Berlin, Dietrich Reimer, 1912 ; d'après une enquête menée au Soudan en 1910. Lu dans la numérisation d'Internet Archive. Page 35 : « The Eastern together with the Central and Western Sudan-languages form the family of the Sudan Languages » ; page 36 : le bongo « shows remarkable connections with Central Sudanic languages, particularly with Bagirmi »."
               }
-            ]
+            ],
+            "era": "colonial"
           },
           {
             "period": {
@@ -196,7 +319,46 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "page": "p. 35",
-                "notes": "Philadelphie, Board of Foreign Missions of the United Presbyterian Church of N. A., et Berlin, Dietrich Reimer, 1912 ; d'après une enquête menée au Soudan en 1910. Lu dans la numérisation d'Internet Archive. Page 35 : « The High Nilotic Group, comprising Mittu, Madi, Madi-Kaya, Abo-Kaya, Abaka, Luba, Wira, Lendu, Moru »."
+                "notes": "Ouvrage de l'époque coloniale. Philadelphie, Board of Foreign Missions of the United Presbyterian Church of N. A., et Berlin, Dietrich Reimer, 1912 ; d'après une enquête menée au Soudan en 1910. Lu dans la numérisation d'Internet Archive. Page 35 : « The High Nilotic Group, comprising Mittu, Madi, Madi-Kaya, Abo-Kaya, Abaka, Luba, Wira, Lendu, Moru »."
+              }
+            ],
+            "era": "colonial"
+          }
+        ]
+      },
+      {
+        "nameText": "Family F",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste Lionel Bender, en 1992",
+        "shortLine": "Le nom que Lionel Bender donne en 1992 au groupe soudanique central.",
+        "periodLabel": "Employé à partir de 1992",
+        "accounts": [
+          {
+            "period": {
+              "from": 1992,
+              "to": 1992,
+              "label": "1992"
+            },
+            "era": "modern",
+            "statement": "Le nom Family F, « famille F », remplace soudanique central chez Lionel Bender en 1992. Il partage le groupe en un ensemble « périphérique » et un ensemble « central », qui recoupent à peu près les deux groupes de Tucker et Bryan, selon Pascal Boyeldieu.",
+            "actors": [
+              {
+                "name": "Lionel M. Bender",
+                "role": "auteur d'une reconstruction comparée de ces langues"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Central Sudanic Languages, dans The Oxford Handbook of African Languages",
+                "author": "Pascal Boyeldieu",
+                "year": 2020,
+                "url": "https://shs.hal.science/halshs-03097024",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 408-418",
+                "notes": "Chapitre du volume dirigé par Rainer Vossen et Gerrit J. Dimmendaal, Oxford University Press, 2020. Version de l'auteur déposée sur l'archive ouverte HAL, lu le 3 novembre 2026. Introduction : « Bender (1992) divided Central Sudanic (renamed ‘Family F’) in two subgroups (‘Peripheral’ and ‘Central’) that roughly correspond to Tucker & Bryan’s ‘larger units’ »."
               }
             ]
           }
@@ -206,19 +368,27 @@
   },
   "content": {
     "searchAnswer": {
-      "lead": "Des langues du nord-est de la RDC, du Soudan du Sud, de l'Ouganda et du Tchad. Le nom vient de Joseph Greenberg (1963) ; que ces langues forment un seul ensemble reste à confirmer.",
-      "followUp": "Pourquoi l'unité de ces langues reste-t-elle à confirmer ?"
+      "lead": "Une soixantaine de langues parlées du sud du Tchad au nord-est de la RDC, comme le ngambay, le lugbara ou le mangbetu. Le nom vient du mot Soudan, repris par des linguistes européens et américains.",
+      "followUp": "Ces langues forment-elles vraiment une seule famille ?"
     },
     "decolonialHeader": {
-      "whyProblematic": " Auteurs coloniaux problématiques : - Carl Meinhof (début XXe siècle) utilisait « Sudanic » comme terme géographique colonial, sans fondement linguistique rigoureux. - Les classifications de Greenberg (1955-1963) s'inscrivent dans un contexte post-colonial mais reposent sur la méthode « mass-comparison » (comparaison de masse), critiquée par des linguistes contemporains pour son manque de rigueur dans certaines classifications, notamment le phylum Nilo-Saharan dont dépend Central Sudanic. - Les priorités coloniales de cartographie linguistique ont influencé les cadres de classification, souvent sans consultation des communautés locales. Auteurs locaux / défense de l'africanité : - Certains linguistes africains et contemporains critiquent l'hypothèse du phylum Nilo-Saharien (dont Central Sudanic dépend) comme peu fondée ou trop similaire aux constructions extérieures imposées. - Pascal Boyeldieu (2020) note dans *The Oxford Handbook of African Languages* que l'unité génétique du Central Sudanic reste « à confirmer » par la méthode comparative stricte. - George Starostin (2016) remet en question certaines subdivisions, notamment la division Est/Ouest, estimant que la branche ouest (Bongo-Bagirmi) est moins bien fondée que la branche est (Moru-Madi, Lendu). Études génétiques modernes : - Les analyses génétiques récentes montrent une grande diversité parmi les populations d'Afrique centrale, incluant les locuteurs de langues Central Sudanic, mais ne confirment pas nécessairement l'unicité génétique correspondant strictement à la famille linguistique. - Fan et al. (2019) dans *Genome Biology* montrent des clines de similarité selon la langue et la géographie, mais pas toujours un « cluster linguistique » Central Sudanic clairement délimité. - Des études sur les populations d'Afrique de l'Est et du Soudan montrent un composant génétique distinct lié aux groupes parlants du Nilo-Saharan, incluant les locuteurs de langues Central Sudanic, ce qui corrobore une certaine cohésion linguistique, mais aussi des mélanges importants avec des populations voisines. → Le terme « soudanique » évoque le « Soudan » colonial, un espace géographique et administratif fortement marqué par la colonisation, non par les locuteurs eux-mêmes. L'amalgame entre groupes du « Soudan » (au sens colonial) a contribué à effacer des identités linguistiques distinctes. → Afrik utilise la version **scientifiquement définie : Central Sudanic**, tout en reconnaissant les débats académiques sur son unité et son placement dans Nilo-Saharan.",
-      "selfAppellation": null,
-      "contemporaryUsage": " Regroupe des langues parlées en RDC (nord-est), Ouganda, Soudan du Sud, Tchad (sud), et République centrafricaine (centre et sud). La famille inclut cinq sous-groupes principaux : Bongo-Bagirmi, Moru-Madi, Lendu, Mangbetu-Asoa, et Kresh. Classification linguistique moderne contestée quant à l'unité génétique du groupe.",
+      "linkWithFamily": "Joseph Greenberg range le soudanique central dans sa famille nilo-saharienne, d'abord dans une branche appelée chari-nil, puis directement. Les éditeurs du catalogue Glottolog le traitent au contraire comme une famille à part, faute de preuve solide d'une parenté nilo-saharienne.",
       "historicalAppellations": [
-        "Langues soudaniques",
+        "Sudan Languages",
+        "Niloto-Sudanic",
+        "High Nilotic Group",
         "Eastern Sudanic",
-        "Niloto-Sudanic"
+        "Moru-Mangbetu",
+        "Bongo-Bagirmi",
+        "Family F"
       ],
-      "originOfHistoricalTerm": " Le terme « Central Sudanic » (Soudanique central) a été introduit par Joseph H. Greenberg dans *The Languages of Africa* (1963, Indiana University Press / Mouton), pour désigner une branche du phylum proposé Nilo-Saharan. Greenberg classe Central Sudanic au sein du groupe « Chari-Nile » de sa classification. Prédécesseurs : Diedrich Westermann (début XXe siècle) incluait certaines langues aujourd'hui Central Sudanic dans son concept « Niloto-Sudanic ». Carl Meinhof utilisait le terme « Sudanic » comme un fourre-tout géographique colonial plutôt que sur des bases linguistiques internes rigoureuses."
+      "originOfHistoricalTerm": "Le mot soudanique vient du nom de région Soudan. François de Medeiros rappelle que ce nom reprend le « pays des Noirs » (bilād al-Sūdān) des auteurs arabes, qui couvre les bassins du Sénégal, du Niger et du Tchad et les pays plus au sud.\n\nEn 1911, le linguiste allemand Diedrich Westermann publie à Hambourg Die Sudansprachen, « les langues soudanaises ». L'année suivante, dans un livre sur le shilluk, il décrit une grande famille des « Sudan Languages » qui s'étend de la mer Rouge à l'Atlantique et qu'il divise en langues du Soudan oriental, central et occidental. Il y emploie déjà l'expression « Central Sudanic languages », mais pour des langues du Soudan central comme le baguirmi. Il range à part le madi, le moru et le lendu, dans un « High Nilotic Group » rattaché à un ensemble « Niloto-Sudanic », lui-même compté parmi les langues du Soudan oriental.\n\nEn 1940, Archibald Tucker décrit le moru dans un livre intitulé The Eastern Sudanic Languages, que cite Pascal Boyeldieu. Le nom soudanique oriental désigne aujourd'hui un autre groupe de langues, que Joseph Greenberg place à côté du soudanique central. En 1956, Archibald Tucker et Margaret Bryan répartissent ces langues entre deux ensembles, moru-mangbetu et bongo-baguirmi.\n\nJoseph Greenberg emploie soudanique central dès ses articles de 1949-1950 pour une famille à part, la range en 1954 dans un ensemble macro-soudanique, puis en 1963 dans sa famille nilo-saharienne. Pascal Boyeldieu écrit que Greenberg a forgé le terme en 1963 en réunissant toutes ces langues. En 1992, Lionel Bender le remplace par « Family F ».",
+      "whyProblematic": "Le nom soudanique central vient d'une classification des langues africaines construite à l'époque coloniale. En 1912, le linguiste allemand Diedrich Westermann range dans une famille des « langues soudanaises » des langues parlées de la mer Rouge à l'Atlantique, du nord du Cameroun à la Sénégambie. Il les décrit comme plus ou moins éloignées d'un état d'origine qu'il appelle « the primitive stage », le stade primitif, et explique une partie des différences entre langues nilotiques par l'influence de langues « généralement appelées hamitiques ». Il a réuni ses données en 1910 au Soudan, alors sous administration anglo-égyptienne, lors d'un voyage financé par le ministère prussien de l'Éducation et par une mission presbytérienne américaine, comme il l'écrit dans sa préface.\n\nLe nom de région Soudan reprend le « pays des Noirs » des auteurs arabes, selon François de Medeiros. Joseph Greenberg garde ensuite l'adjectif soudanique pour nommer ce groupe, de 1949 à 1963. Ce nom de savants ne vient pas des personnes qui parlent ces langues, et nous n'avons pas trouvé de nom qu'elles donnent à l'ensemble.",
+      "selfAppellation": null,
+      "contemporaryUsage": "Le soudanique central désigne aujourd'hui une soixantaine de langues de l'Afrique centrale. Pascal Boyeldieu les répartit en cinq sous-groupes : le moru-madi (moru, avokaya, logo, lugbara, ma'di), le lendu (lendu, ngiti), le mangbetu (mangbetu, meje, lombi, asua), le mangbutu-efe (mangbutu, ndo, mamvu, lese, efe) et le sara-bongo-baguirmi, le plus étendu, qui va du modo et du bongo jusqu'au baguirmi et aux langues sara du Tchad. Le catalogue Glottolog, dans son édition 5.3, retient les mêmes cinq branches et y compte 63 langues.\n\nLes deux sources divergent sur quelques langues. Pascal Boyeldieu met à part le kresh, le dongo, le woro, l'aja, le birri et le sinyar, parce que leurs ressemblances avec les cinq sous-groupes pourraient venir de contacts. Glottolog range le birri parmi les langues mangbutu-efe et le sinyar parmi les langues sara-bongo-baguirmi, mais classe le groupe kresh-aja comme une famille distincte.\n\nLe rattachement du soudanique central à une famille nilo-saharienne, proposé par Joseph Greenberg, reste discuté. Les éditeurs de Glottolog jugent qu'aucune base solide n'a été présentée pour ce rattachement.",
+      "geographicArea": "Sud du Tchad, nord de la République centrafricaine, Soudan du Sud, ouest du Soudan, nord-est de la République démocratique du Congo, nord-ouest de l'Ouganda",
+      "numberOfLanguages": 63,
+      "totalSpeakers": 16858449
     },
     "generalInfo": {
       "branches": [
@@ -228,9 +398,18 @@
         "Membi-Mangbutu-Efe",
         "Lenduic"
       ],
-      "geographicArea": "Nord-est de la RDC, Soudan du Sud, Ouganda, Tchad central",
-      "numberOfLanguages": 40,
-      "totalSpeakers": 10000000
+      "geographicArea": "Sud du Tchad, nord de la République centrafricaine, Soudan du Sud, ouest du Soudan, nord-est de la République démocratique du Congo, nord-ouest de l'Ouganda",
+      "numberOfLanguages": 63,
+      "totalSpeakers": 16858449,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "63 langues selon Glottolog, édition 5.3 ; une soixantaine selon Pascal Boyeldieu, 2020"
+        },
+        "totalSpeakers": {
+          "note": "Notre addition, environ 17 millions : le recensement ougandais de 2014 pour l'Ouganda et les estimations de Joshua Project pour les autres pays. Ces chiffres comptent des personnes appartenant aux groupes concernés, pas des locuteurs.",
+          "unsourced": false
+        }
+      }
     },
     "associatedPeoples": [
       {
@@ -244,29 +423,150 @@
       {
         "name": "Mangbetu",
         "peopleId": "PPL_MANGBETU"
+      },
+      {
+        "name": "Aringa",
+        "peopleId": "PPL_ARINGA"
+      },
+      {
+        "name": "Madi",
+        "peopleId": "PPL_MADI"
+      },
+      {
+        "name": "Moru",
+        "peopleId": "PPL_MORU"
+      },
+      {
+        "name": "Bongo",
+        "peopleId": "PPL_BONGO"
+      },
+      {
+        "name": "Yulu",
+        "peopleId": "PPL_YULI"
+      },
+      {
+        "name": "Barma",
+        "peopleId": "PPL_BARMA"
+      },
+      {
+        "name": "Sara",
+        "peopleId": "PPL_SARA"
+      },
+      {
+        "name": "Furu",
+        "peopleId": "PPL_FURU"
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " Ordre des mots : Plusieurs langues Central Sudanic ont ordre Sujet-Verbe-Objet (SVO). Exemples :",
-      "phonologicalFeatures": " Systèmes tonals : La plupart des langues ont 2 à 4 niveaux tonals. Exemples :",
-      "relationsWithNeighbors": " Emprunts lexicaux :",
-      "keyInnovations": " Innovations phonétiques : - Changements réguliers dans des correspondances consonantiques entre les sous-groupes (étudiées par Lionel Bender, 1992)."
+      "typology": "Les langues soudaniques centrales ont des mots courts, souvent d'une ou deux syllabes, selon Pascal Boyeldieu. L'ordre des mots varie d'un sous-groupe à l'autre. Les langues sara-bongo-baguirmiennes, comme le bongo, le jur modo ou le ngambay, placent en général le sujet, puis le verbe, puis l'objet, mettent le nom avant son complément et emploient des prépositions. Le lugbara, le ma'di ou le lendu admettent l'objet avant ou après le verbe et emploient des postpositions, des mots placés après le nom qu'ils relient. Le mangbetu et le mamvu suivent pourtant l'ordre sujet, verbe, objet, comme les langues sara-bongo-baguirmiennes. Pour Pascal Boyeldieu, ces différences ne suffisent donc pas à séparer nettement deux grands ensembles.\n\nArchibald Tucker et Margaret Bryan avaient relevé dans la plupart des sous-groupes trois préfixes, c'est-à-dire des éléments placés au début du verbe : un préfixe en t qui marque une action répétée ou intense, un préfixe en k qui forme des noms ou des adjectifs à partir de verbes, et une alternance entre une voyelle o ou a et une voyelle e, qui oppose par exemple « partir » et « revenir ». Pascal Boyeldieu y voit l'un des indices d'une origine commune.",
+      "phonologicalFeatures": "Ces langues sont à tons : la hauteur de la voix sur une syllabe suffit à distinguer deux mots, comme en yulu, où kòoy désigne une racine comestible et kóoy un manche de houe. Elles peuvent compter jusqu'à quatre hauteurs distinctes, selon Pascal Boyeldieu (2020). Dans le sud-est de la zone, beaucoup de langues opposent deux séries de voyelles selon la position de la racine de la langue, avancée ou reculée : les linguistes parlent en anglais d'advanced tongue root et de retracted tongue root, abrégés en ATR.\n\nLes consonnes glottalisées, prononcées avec un mouvement du larynx, sont répandues. Les langues lendu en ont une série sourde et une série sonore, une distinction que Pascal Boyeldieu attribue à la langue d'origine et que les autres sous-groupes ont perdue. Lionel Bender avait tenté en 1992 d'établir des correspondances de sons entre toutes ces langues, sans convaincre Pascal Boyeldieu. Celui-ci établit des correspondances régulières pour les consonnes labio-vélaires, prononcées à la fois avec les lèvres et le fond de la bouche : là où le sara-bongo-baguirmi et le mangbutu-efe ont kp, le moru-madi et le mangbetu ont kw.",
+      "relationsWithNeighbors": "Les langues sara-bongo-baguirmiennes sont dispersées au milieu de langues d'autres familles : des langues nilotiques à l'est, d'autres langues soudaniques centrales au sud-est, des langues tchadiques et adamawa au nord et des langues oubanguiennes au centre et au sud, selon Pascal Boyeldieu. Les langues de l'ouest de ce sous-groupe ont renouvelé une grande part de leur vocabulaire, surtout pour les poissons, les oiseaux, les plantes et les techniques. Pascal Boyeldieu y voit l'effet probable de leur déplacement et du contact avec de nouvelles langues.\n\nIl note aussi que les consonnes et les voyelles des langues sara du centre, comme le sar, le mbay ou le ngambay, ressemblent beaucoup à celles des langues adamawa et tchadiques voisines, et que le vocabulaire yulu des relations sociales est inhabituel. Il en conclut que certains de ces groupes parlaient peut-être d'abord une autre langue.\n\nAujourd'hui, plusieurs langues soudaniques centrales reculent devant l'arabe du Tchad ou du Soudan. Pour quelques langues voisines, comme le kresh, l'aja ou le birri, les ressemblances avec le soudanique central pourraient venir de contacts plutôt que d'une parenté, selon Pascal Boyeldieu.",
+      "keyInnovations": "Dans le sara-bongo-baguirmi, la branche de l'ouest est passée de deux à trois hauteurs de ton, selon Pascal Boyeldieu. Elle a aussi renouvelé son vocabulaire par étapes. Sur environ 1 300 séries de mots comparés, 208 remontent à la langue commune du sous-groupe, et les autres apparaissent plus tard dans l'une de ses branches.\n\nLe yulu, parlé en Centrafrique et au Soudan, associe deux, trois ou même quatre verbes en un seul verbe composé, dans lequel aucun autre élément ne peut s'insérer. Dans un conte étudié par Pascal Boyeldieu, on compte environ trois de ces verbes composés pour quatre verbes simples.\n\nÀ l'échelle de toute la famille, Pascal Boyeldieu relève peu de mots communs aux cinq sous-groupes : 20 seulement sur 267 mots probablement apparentés. C'est l'une des raisons pour lesquelles l'unité du groupe reste discutée."
     },
     "historyAndOrigins": {
-      "probableOrigin": " Théorie linguistique 1 (Greenberg, 1963 / Bender, 1992) : - Joseph H. Greenberg (1963) dans *The Languages of Africa* (Indiana University Press / Mouton) est le premier à codifier *Central Sudanic* comme branche du phylum Nilo-Saharan. - Greenberg classe Central Sudanic au sein du groupe « Chari-Nile » de sa classification.",
-      "emergencePeriod": " (1) Émergence historique de la famille linguistique : - Le proto-Central Sudanic aurait divergé il y a plusieurs milliers d'années.",
-      "diffusion": " Théorie 1 : Diffusion depuis le Bahr el Ghazal (homeland proposé) : - Diffusion à partir du centre-nord de l'Afrique (zone de Bahr el Ghazal, Soudan du Sud actuel). - Propagation vers le sud-est (vers le nord-est de la RDC, région de l'Ituri). - Expansion vers le nord (vers le Tchad, la République centrafricaine) et l'est (vers l'Ouganda). - Expansion par mobilité agricole et pastorale. Théorie 2 : Diversification locale multiple : - Diversification locale liée à des processus de bifurcation linguistique et remaniement par contact. - Plusieurs sous-groupes se seraient différenciés dès l'antiquité, avec contacts intensifs avec langues Nilotiques et Niger-Congo. - Traits partagés résultant davantage de contact areal que d'héritage génétique commun. - Influence forte et emprunts avec langues voisines (Niger-Congo, Afro-asiatique) imposant des traits typologiques partagés sans lien génétique strict. Théorie 3 : Diversification depuis le bassin du Chari : - Homeland proposé dans le bassin de la rivière Chari ou zones entre République centrafricaine et sud-Tchad. - Expansion vers l'est depuis le bassin de la rivière Chari ou vers le sud-est dans ce qui est aujourd'hui l'Ouganda, RDC, Soudan du Sud.",
-      "historicalBreaks": " - Diversification ancienne des branches (Lendu, Moru-Madi, Bongo-Bagirmi, Mangbetu, Kresh) par séparation géographique et différenciation linguistique progressive.",
-      "contactZones": " Géographiquement : - Bassin du Chari, régions frontalières entre République centrafricaine, Tchad, Soudan du Sud, Ouganda, et nord-est de la République démocratique du Congo. - Zones autour du lac Albert (frontière RDC/Ouganda).",
-      "majorEvents": " Chronologie :"
+      "probableOrigin": "Plusieurs positions coexistent sur l'origine de ces langues et sur leur parenté.\n\nJoseph Greenberg réunit en 1963 toutes ces langues dans le soudanique central, qu'il place dans sa famille nilo-saharienne, d'abord dans une branche appelée chari-nil, puis directement en 1971. Archibald Tucker et Margaret Bryan, en 1956, y voyaient au contraire deux ensembles distincts, moru-mangbetu et bongo-baguirmi. Lionel Bender reprend en 1992 une partition proche, entre un groupe « périphérique » et un groupe « central ». Bender et Christopher Ehret ont chacun proposé des reconstructions de la langue commune ; Pascal Boyeldieu et Pierre Nougayrol jugent ces deux tentatives peu convaincantes, et le travail d'Ehret n'a pas été publié.\n\nEn 2008, Pascal Boyeldieu et Pierre Nougayrol estiment que la parenté des groupes n'est pas prouvée et que leurs ressemblances pourraient venir de contacts anciens. En 2020, Pascal Boyeldieu juge probable que les cinq sous-groupes descendent d'une seule langue, tout en écrivant qu'un travail considérable reste à faire pour le confirmer. Il ne traite pas du lien avec le nilo-saharien. Les éditeurs de Glottolog, eux, ne retiennent aucune parenté nilo-saharienne et traitent le soudanique central comme une famille à part.\n\nSur le lieu d'origine, Pascal Boyeldieu situe le point de départ des langues sara-bongo-baguirmiennes dans la province du Bahr el-Ghazal, dans l'actuel Soudan du Sud. Il note que cette hypothèse s'accorde avec la position des autres langues soudaniques centrales, parlées surtout dans le nord-est de la République démocratique du Congo. Selon J. E. G. Sutton, ces langues étaient bien plus répandues dans le bassin du haut Nil et autour du lac Victoria avant l'arrivée des langues bantoues et lwoo.",
+      "emergencePeriod": "Les sources que nous avons lues ne donnent pas de date pour la langue d'origine. Pascal Boyeldieu établit pour le sara-bongo-baguirmi un ordre des séparations, sans date : d'abord trois branches, puis, à l'ouest, le yulu, puis plusieurs sous-groupes, enfin les langues sara.\n\nLa classification savante a ses propres dates. Diedrich Westermann publie Die Sudansprachen en 1911 et décrit en 1912 ses langues soudanaises. Archibald Tucker publie The Eastern Sudanic Languages en 1940. Joseph Greenberg emploie le nom soudanique central en 1949-1950, le range dans un ensemble macro-soudanique en 1954, puis dans le nilo-saharien en 1963. Archibald Tucker et Margaret Bryan proposent leurs deux ensembles en 1956 et 1966. Lionel Bender publie sa reconstruction en 1992, Pascal Boyeldieu et Pierre Nougayrol leur évaluation en 2008, et Pascal Boyeldieu son bilan en 2020.",
+      "diffusion": "Pour les langues sara-bongo-baguirmiennes, Pascal Boyeldieu propose un scénario d'expansion. Il suit un principe énoncé par le linguiste Edward Sapir : le point de départ d'une famille se cherche là où ses langues sont les plus différentes entre elles.\n\nSelon ce scénario, la langue commune naît dans le sud-ouest du Soudan d'alors, dans la province du Bahr el-Ghazal. Elle se divise en trois branches. La première s'installe vers le sud-est, avec le modo, le beli et le baka. La deuxième, le bongo, reste près du centre. La troisième part vers le nord-ouest, jusqu'à la zone où se rejoignent aujourd'hui le Tchad, la Centrafrique et le Soudan. Le yulu s'en détache d'abord, puis plusieurs sous-groupes, dont les langues sara. Celles-ci se multiplient dans le sud du Tchad, et certaines atteignent les lacs Tchad et Fitri au nord et l'Oubangui au sud.\n\nPascal Boyeldieu précise que ce mouvement vers l'ouest a sans doute connu plusieurs étapes, et qu'il a dû inclure l'adoption de ces langues par des populations déjà installées.",
+      "historicalBreaks": "Les langues soudaniques centrales forment aujourd'hui des groupes séparés les uns des autres. Selon J. E. G. Sutton, ces groupes séparés se trouvent autour de la lisière nord-est de la forêt équatoriale, et les langues étaient bien plus répandues dans le bassin du haut Nil et du lac Victoria avant l'arrivée des langues bantoues et lwoo.\n\nDans le sara-bongo-baguirmi, Pascal Boyeldieu décrit une série de séparations successives, du sud-ouest du Soudan jusqu'au sud du Tchad. Il relève un paradoxe : les langues sara-bongo-baguirmiennes, dispersées sur un grand territoire, ont une parenté mieux établie que les langues moru-mangbetu, pourtant voisines les unes des autres.",
+      "contactZones": "Le sud du Tchad, le nord de la Centrafrique et le sud-ouest du Soudan forment une zone de contact entre les langues sara-bongo-baguirmiennes et des langues tchadiques, adamawa et oubanguiennes, selon Pascal Boyeldieu. Plus à l'est, dans l'actuel Soudan du Sud, ces langues côtoient des langues nilotiques.\n\nLe nord-est de la République démocratique du Congo, avec les régions proches de l'Ouganda et du Soudan du Sud, réunit les langues moru-madi, lendu, mangbetu et mangbutu-efe. Plusieurs langues de la famille reculent aussi devant l'arabe du Tchad ou du Soudan.",
+      "majorEvents": "Ces langues étaient bien plus répandues dans le bassin du haut Nil et du lac Victoria avant l'arrivée des langues bantoues et lwoo, selon J. E. G. Sutton. Aujourd'hui, l'extension de l'arabe du Tchad et du Soudan en fait reculer plusieurs, selon Pascal Boyeldieu.\n\nUne partie de la classification de ces langues s'est faite à l'époque coloniale. Diedrich Westermann recueille ses données en 1910 au Soudan anglo-égyptien, avec l'aide de missionnaires presbytériens américains installés sur le Sobat, comme il l'écrit dans sa préface."
     },
     "distribution": {
-      "totalSpeakers": 10000000,
+      "totalSpeakers": 16858449,
       "distributionByCountry": {
-        "COD": 2210000,
-        "UGA": 808100,
-        "SSD": 70000
+        "COD": 7407800,
+        "TCD": 6162400,
+        "UGA": 1963249,
+        "SSD": 845700,
+        "CAF": 323300,
+        "CMR": 114500,
+        "SDN": 27300,
+        "NGA": 14200
       }
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "COD",
+          "speakers": 7407800,
+          "source": {
+            "title": "Joshua Project — pages des langues soudaniques centrales, République démocratique du Congo",
+            "url": "https://joshuaproject.net/languages/mdj",
+            "tier": "unverified",
+            "notes": "Base de données missionnaire chrétienne, consultée en ligne le 3 novembre 2026, page par page pour chaque langue que Glottolog range dans le soudanique central. Elle donne la population des groupes qui parlent chaque langue comme première langue, pas un compte de locuteurs. Nous avons additionné les chiffres donnés pour ce pays : mangbetu 2 278 000, lendu 1 924 000, lugbara 814 000, logo 676 000, ngiti 300 000, kebu 299 000, mamvu 180 000, omi 179 000, lese 150 000, ndrulo 147 000, bendi 96 000, avokaya 80 000, efe 60 000, asoa 58 000, mangbutu 45 000, fulu 45 000, lombi 33 000, keliko 24 000, mvuba 8 400, yulu 5 200, baka 3 600 et ma'di 2 600."
+          }
+        },
+        {
+          "country": "TCD",
+          "speakers": 6162400,
+          "source": {
+            "title": "Joshua Project — pages des langues soudaniques centrales, Tchad",
+            "url": "https://joshuaproject.net/languages/sba",
+            "tier": "unverified",
+            "notes": "Base de données missionnaire chrétienne, consultée en ligne le 3 novembre 2026, page par page pour chaque langue que Glottolog range dans le soudanique central. Elle donne la population des groupes qui parlent chaque langue comme première langue, pas un compte de locuteurs. Nous avons additionné les chiffres donnés pour ce pays : ngambay 2 157 000, gulay 659 000, sar 596 000, naba 546 000 (groupes bilala, kuka et medogo), mbay 352 000, bedjond 254 000, laka 236 000, gor 206 000, baguirmi 182 100, ngam 176 000, kaba deme 161 000, kenga 143 000, kaba naa 141 000, mango 133 000, kaba 75 000, sinyar 38 000, gula 32 000, dagba 23 000, kulfa 16 000, morom 12 000, jaya 8 900, luto 8 000 et disa 7 400."
+          }
+        },
+        {
+          "country": "UGA",
+          "speakers": 1963249,
+          "source": {
+            "title": "The National Population and Housing Census 2014 – Main Report",
+            "url": "https://uganda.unfpa.org/sites/default/files/pub-pdf/CENSUS%202014%20Final%20Results_0.pdf",
+            "tier": "official",
+            "notes": "Rapport principal du recensement de 2014, publié en 2016 par le Bureau des statistiques de l'Ouganda (UBOS), lu le 3 novembre 2026 dans la copie mise en ligne par le bureau ougandais du Fonds des Nations unies pour la population. Le tableau A8, pages 71 et 72, compte la population par groupe ethnique, pas par langue. Nous avons additionné les groupes dont la langue est rangée dans le soudanique central par Glottolog : Lugbara 1 099 733, Aringa 494 626, Madi 292 983, Kebu (Okebu) 54 109, Lendu 18 919 et Mvuba 2 879. Pour l'Ouganda, Joshua Project donne un total plus élevé, 3 204 300."
+          }
+        },
+        {
+          "country": "SSD",
+          "speakers": 845700,
+          "source": {
+            "title": "Joshua Project — pages des langues soudaniques centrales, Soudan du Sud",
+            "url": "https://joshuaproject.net/languages/mgd",
+            "tier": "unverified",
+            "notes": "Base de données missionnaire chrétienne, consultée en ligne le 3 novembre 2026, page par page pour chaque langue que Glottolog range dans le soudanique central. Elle donne la population des groupes qui parlent chaque langue comme première langue, pas un compte de locuteurs. Nous avons additionné les chiffres donnés pour ce pays : moru 232 000, jur modo 210 000, beli 88 000, avokaya 75 000, baka 71 000, morokodo 47 000, olu'bo 33 000, ma'di 33 000, keliko 30 000, bongo 21 000, yulu 2 800, nyamusa-molo 1 500 et mo'da 1 400."
+          }
+        },
+        {
+          "country": "CAF",
+          "speakers": 323300,
+          "source": {
+            "title": "Joshua Project — pages des langues soudaniques centrales, République centrafricaine",
+            "url": "https://joshuaproject.net/languages/ksp",
+            "tier": "unverified",
+            "notes": "Base de données missionnaire chrétienne, consultée en ligne le 3 novembre 2026, page par page pour chaque langue que Glottolog range dans le soudanique central. Elle donne la population des groupes qui parlent chaque langue comme première langue, pas un compte de locuteurs. Nous avons additionné les chiffres donnés pour ce pays : kaba 115 000, dagba 47 000, ngam 29 000, luto 28 000, sara kaba 22 000, gula 21 000, mbay 14 000, vale 8 900, kara 7 900, birri 7 300, yulu 6 600, kaba naa 6 600, fulu 6 600 et laka 3 400."
+          }
+        },
+        {
+          "country": "CMR",
+          "speakers": 114500,
+          "source": {
+            "title": "Joshua Project — pages des langues soudaniques centrales, Cameroun",
+            "url": "https://joshuaproject.net/languages/sba",
+            "tier": "unverified",
+            "notes": "Base de données missionnaire chrétienne, consultée en ligne le 3 novembre 2026, page par page pour chaque langue que Glottolog range dans le soudanique central. Elle donne la population des groupes qui parlent chaque langue comme première langue, pas un compte de locuteurs. Nous avons additionné les chiffres donnés pour ce pays : ngambay 98 000, laka 10 000 et mbay 6 500."
+          }
+        },
+        {
+          "country": "SDN",
+          "speakers": 27300,
+          "source": {
+            "title": "Joshua Project — pages des langues soudaniques centrales, Soudan",
+            "url": "https://joshuaproject.net/languages/yul",
+            "tier": "unverified",
+            "notes": "Base de données missionnaire chrétienne, consultée en ligne le 3 novembre 2026, page par page pour chaque langue que Glottolog range dans le soudanique central. Elle donne la population des groupes qui parlent chaque langue comme première langue, pas un compte de locuteurs. Nous avons additionné les chiffres donnés pour ce pays : ngambay 16 000, yulu 8 600 et gula 2 700."
+          }
+        },
+        {
+          "country": "NGA",
+          "speakers": 14200,
+          "source": {
+            "title": "Joshua Project — pages des langues soudaniques centrales, Nigeria",
+            "url": "https://joshuaproject.net/languages/ksp",
+            "tier": "unverified",
+            "notes": "Base de données missionnaire chrétienne, consultée en ligne le 3 novembre 2026, page par page pour chaque langue que Glottolog range dans le soudanique central. Elle donne la population des groupes qui parlent chaque langue comme première langue, pas un compte de locuteurs. Nous avons additionné les chiffres donnés pour ce pays : kaba 11 000 et mbay 3 200."
+          }
+        }
+      ]
     },
     "sources": [
       {
@@ -285,7 +585,8 @@
         "title": "Boyeldieu, Pascal (2020) – \"Central Sudanic\", dans *The Oxford Handbook of African Languages*, éd. M. Hafri, P. Boyeldieu, etc. Oxford University Press. URL",
         "url": "https://academic.oup.com/edited-volume/38608/chapter/334726296",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Le volume est dirigé par Rainer Vossen et Gerrit J. Dimmendaal ; le chapitre occupe les pages 408 à 418. Nous l'avons lu dans la version de l'auteur déposée sur l'archive ouverte HAL."
       },
       {
         "title": "Fan, Shaohua et al. (2019) – \"African evolutionary history inferred from whole genome sequence data of 44 indigenous African populations.\" *Genome Biology*, 20:82. URL",
@@ -354,7 +655,8 @@
         "title": "Glottolog 5.3 (2025) – \"Central Sudanic\" (glottocode cent2225) : arbre de classification confirmant 5 branches immédiates – Sara-Bongo-Bagirmi, Moru-Madi, Mangbetu-Asua, Membi-Mangbutu-Efe, Lenduic",
         "url": "https://glottolog.org/resource/languoid/id/cent2225",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue publié par l'Institut Max-Planck d'anthropologie évolutionniste, relu le 3 novembre 2026 : les cinq branches comptent 3, 3, 8, 10 et 39 langues, soit 63 langues."
       },
       {
         "title": "SIL Ethnologue, 19e éd. (Lewis, M.P., Simons, G.F. & Fennig, C.D., eds., 2016), page consultée via version archivée (Internet Archive, 20 juin 2016) – \"Lugbara [lgg]\": 797 000 locuteurs en Ouganda (2004), 840 000 en RDC (Johnstone & Mandryk 2001)",
@@ -379,6 +681,94 @@
         "url": "https://www.ethnologue.com/language/mgd",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Central Sudanic Languages, dans The Oxford Handbook of African Languages",
+        "url": "https://shs.hal.science/halshs-03097024",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre du volume dirigé par Rainer Vossen et Gerrit J. Dimmendaal, Oxford University Press, 2020. Version de l'auteur déposée sur l'archive ouverte HAL, lu le 3 novembre 2026. Le chapitre décrit les cinq sous-groupes, les langues de place incertaine, les traits de prononciation, l'ordre des mots et les arguments pour et contre l'unité du groupe."
+      },
+      {
+        "title": "Les langues soudaniques centrales : essai d'évaluation",
+        "url": "https://shs.hal.science/halshs-00348133",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre de Problems of Linguistic-Historical Reconstruction in Africa, Cologne, Rüdiger Köppe, 2008. Version des auteurs déposée sur l'archive ouverte HAL, lu le 3 novembre 2026. Le texte discute les regroupements de Tucker et Bryan, de Greenberg et de Bender, et conclut que la parenté des groupes n'est pas prouvée."
+      },
+      {
+        "title": "Entre lac Albert et lac Tchad : l'expansion sara-bongo-baguirmienne",
+        "url": "https://shs.hal.science/halshs-00348136",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Communication publiée dans Migrations et mobilité dans le bassin du lac Tchad, IRD Éditions, 2009, actes du colloque Méga-Tchad tenu à Maroua en 2005. Version de l'auteur déposée sur l'archive ouverte HAL, lu le 3 novembre 2026. Le texte établit la parenté des langues sara-bongo-baguirmiennes et propose un scénario d'expansion depuis le Bahr el-Ghazal."
+      },
+      {
+        "title": "Reflexes of a Labiovelar Series in Central Sudanic",
+        "url": "https://shs.hal.science/halshs-00331321",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Pascal Boyeldieu, 2006, dans Insights into Nilo-Saharan Language, History and Culture, Cologne, Rüdiger Köppe, p. 129-151. Version de l'auteur déposée sur l'archive ouverte HAL, lu le 3 novembre 2026. L'auteur y juge les reconstructions de Bender et d'Ehret « rather unconvincing » et établit des correspondances pour les consonnes labio-vélaires."
+      },
+      {
+        "title": "Compound Verbs and Modalities of Process in Yulu (Central Sudanic)",
+        "url": "https://shs.hal.science/halshs-00331316",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Pascal Boyeldieu, 2007, dans Advances in Nilo-Saharan Linguistics, Cologne, Rüdiger Köppe, p. 25-39. Version de l'auteur déposée sur l'archive ouverte HAL, lu le 3 novembre 2026. Le texte décrit les verbes composés du yulu, formés de deux à quatre verbes."
+      },
+      {
+        "title": "Glottolog 5.3 — Family: Central Sudanic",
+        "url": "https://glottolog.org/resource/languoid/id/cent2225",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu le 3 novembre 2026. Il range 63 langues en cinq branches et juge que « No conclusive, methodologically sound basis for assigning Central Sudanic to an alleged full or partial Nilo-Saharan has been presented » ; il ajoute que « The Kresh-Aja group has not yet been shown to be bona fide Central Sudanic »."
+      },
+      {
+        "title": "Glottolog 5.3 — Family: Kresh-Aja",
+        "url": "https://glottolog.org/resource/languoid/id/kres1240",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu le 3 novembre 2026. Le groupe kresh-aja, qui réunit l'aja, le dongo kresh et le kresh-woro, y forme une famille distincte du soudanique central."
+      },
+      {
+        "title": "The Shilluk People, Their Language and Folklore",
+        "url": "https://archive.org/details/shillukpeoplethe00west",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Ouvrage de l'époque coloniale. Philadelphie, Board of Foreign Missions of the United Presbyterian Church of N. A., et Berlin, Dietrich Reimer, 1912. Lu dans la numérisation d'Internet Archive le 3 novembre 2026. Préface : le voyage de 1910 est financé par « the Prussian Board of Education » et par la mission de l'Église presbytérienne unie d'Amérique du Nord. Page 35 : les langues soudanaises montrent « some marks of development from the primitive stage to a more developed state ». La liste des ouvrages cités mentionne « D. Westermann, Die Sudansprachen. Hamburg 1911 »."
+      },
+      {
+        "title": "The National Population and Housing Census 2014 – Main Report",
+        "url": "https://uganda.unfpa.org/sites/default/files/pub-pdf/CENSUS%202014%20Final%20Results_0.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Bureau des statistiques de l'Ouganda (UBOS), 2016, lu dans la copie mise en ligne par le bureau ougandais du Fonds des Nations unies pour la population le 3 novembre 2026. Tableau A8, population par groupe ethnique."
+      },
+      {
+        "title": "Joshua Project — pages des langues soudaniques centrales",
+        "url": "https://joshuaproject.net/languages/lgg",
+        "tier": "unverified",
+        "source_kind": "missionary_database",
+        "notes": "Base de données missionnaire chrétienne, consultée en ligne le 3 novembre 2026, page par page pour chaque langue que Glottolog range dans le soudanique central. Elle donne la population des groupes qui parlent chaque langue comme première langue, pas un compte de locuteurs."
+      }
+    ],
+    "gaps": [
+      {
+        "field": "content.decolonialHeader.selfAppellation",
+        "reason": "Nous n'avons pas trouvé de nom que les personnes qui parlent ces langues donnent à l'ensemble du groupe. Nous avons cherché chez Pascal Boyeldieu (2008, 2009 et 2020), dans le catalogue Glottolog et chez Diedrich Westermann (1912). Chaque langue porte son propre nom, comme le lugbara, le mangbetu ou le ngambay."
+      },
+      {
+        "field": "content.historyAndOrigins.emergencePeriod",
+        "reason": "Nous n'avons pas trouvé de date pour la langue dont viendraient ces langues. Les travaux de Pascal Boyeldieu donnent un ordre des séparations sans le dater. Nous n'avons pas pu lire les travaux de Christopher Ehret, qui propose des reconstructions de cette histoire."
+      },
+      {
+        "field": "content.historyAndOrigins.majorEvents",
+        "reason": "Nous n'avons pas encore étudié, avec des sources, les effets de la colonisation belge et britannique, des guerres du Soudan du Sud et des conflits de l'Ituri sur ces langues."
+      },
+      {
+        "field": "content.speakers.byCountry",
+        "reason": "Nous n'avons pas trouvé de recensement qui compte les locuteurs de ces langues. Les chiffres présentés comptent des membres de groupes : le recensement ougandais de 2014 pour l'Ouganda, et la base Joshua Project pour les autres pays. Nous n'avons pas pu consulter les pages d'Ethnologue."
       }
     ]
   }
