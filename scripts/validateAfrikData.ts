@@ -4866,7 +4866,12 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
   // day, when FLG_BERBERE gained `originOfHistoricalTerm` the same way.
-  famille_linguistique: 104,
+  // 104 -> 81 on 2026-11-03: the premium pass on FLG_MANDE, FLG_BERBERE,
+  // FLG_AFROASIATIQUE, FLG_ATLANTIQUE and FLG_AUSTRONESIENNE filled the four
+  // decolonialHeader keys every family lacked (linkWithFamily,
+  // geographicArea, numberOfLanguages, totalSpeakers), and FLG_MANDE and
+  // FLG_BERBERE gained whyProblematic, FLG_BERBERE classificationStatus.
+  famille_linguistique: 81,
   // 13 -> 9 on 2026-09-29: `culture.mainLanguages` added on Mali, Senegal,
   // Burundi and the Republic of the Congo from an official toponymic factfile.
   // 9 -> 8 on 2026-10-26: `culture.mainLanguages` added on the DR Congo, its

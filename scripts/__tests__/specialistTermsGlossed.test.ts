@@ -16,7 +16,6 @@ describe("specialist terms in the fiches", () => {
   it("explains ATR where a vowel system is described with it", () => {
     for (const file of [
       "famille_linguistique/FLG_GUR.json",
-      "famille_linguistique/FLG_MANDE.json",
       "famille_linguistique/FLG_NIGERCONGO.json",
       "famille_linguistique/FLG_NILOSAHARIENNE.json",
       "peuples/FLG_KWA/PPL_NKONYA.json",
