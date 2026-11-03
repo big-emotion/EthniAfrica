@@ -2,12 +2,7 @@
   "id": "PPL_BISSA",
   "nameMain": "Bissa",
   "languageFamilyId": "FLG_MANDE",
-  "currentCountries": [
-    "BFA",
-    "GHA",
-    "TGO",
-    "CIV"
-  ],
+  "currentCountries": ["BFA", "GHA", "TGO", "CIV"],
   "nameHistory": {
     "summary": "Le nom Bissa désigne un peuple de langue mandé du centre-est du Burkina Faso, qui se nomme lui-même ainsi ; dans sa langue, il s'écrit bɩ́sá. Ce peuple porte aussi d'autres noms : Busansi, que les auteurs écrivent Boussangsi, Boussansé ou Boussanga, et Barɩk chez les Kusasi. Les sources présentées plus bas montrent quand et par qui ces noms ont été écrits.",
     "names": [
@@ -318,40 +313,6 @@
             ]
           }
         ]
-      },
-      {
-        "nameText": "Barɩk",
-        "nameStatus": "current",
-        "selfGiven": false,
-        "languageOfOrigin": "kus",
-        "namedBy": "Les Kusasi, qui parlent le kusaal",
-        "shortLine": "Le nom qui désigne une personne bissa en kusaal, la langue des Kusasi.",
-        "periodLabel": "Attesté en 2014",
-        "accounts": [
-          {
-            "period": {
-              "from": 2014,
-              "to": 2014,
-              "label": "2014"
-            },
-            "era": "modern",
-            "statement": "Le nom Barɩk, au pluriel barɩs, désigne une personne bissa en kusaal, la langue des Kusasi, selon le dictionnaire kusaal-français-anglais publié par la SIL au Burkina Faso en 2014. La langue bissa s'y dit batɩt. C'est la plus ancienne trace de ce nom que le projet connaît.",
-            "formAsWritten": "barɩk",
-            "birth": true,
-            "sources": [
-              {
-                "title": "Dictionnaire kusaal-français-anglais",
-                "author": "Société internationale de linguistique (SIL) Burkina Faso, avec l'Association Win Nongete, l'ANTBA et la Sous-commission kusaal",
-                "year": 2014,
-                "url": "https://sil-burkina.org/sites/default/files/Dictionnaire%20kusaal%20-%20francais%20-%20anglais.pdf",
-                "tier": "referenced",
-                "source_kind": "linguistic_reference",
-                "page": "p. 36",
-                "notes": "Ouagadougou, SIL, édition préliminaire, 2014. Lu le 3 novembre 2026. Entrées : « barɩk2 pl. : barɩs. n. personne bissa; Bissa person » et « batɩt2 n. langue bissa; Bissa language »."
-              }
-            ]
-          }
-        ]
       }
     ]
   },
@@ -368,21 +329,14 @@
         "Busanga",
         "Barɩk (en kusaal)"
       ],
-      "spellingAliases": [
-        "Bisa",
-        "Bɩ́sá"
-      ],
+      "spellingAliases": ["Bisa", "Bɩ́sá"],
       "originOfExonyms": "Le nom Busansi et ses formes proches apparaissent d'abord chez des voyageurs et des auteurs français qui décrivent le pays mossi : Louis-Gustave Binger parle du « Boussangsi » à l'est du Mossi dans le récit de son voyage de 1888, puis Louis Tauxier écrit « Boussansé » en 1912. En 1965, Sœur Jean Bernard (Odette Pégard) rappelle que les Bisa sont mentionnés sous le nom de Boussancé dans les ouvrages de Maurice Delafosse et de Louis Tauxier. Le site communautaire 101 Last Tribes présente Busansi ou Busanga comme le nom que leur donnent les Mossi. Les Kusasi, eux, appellent une personne bissa barɩk dans leur langue, le kusaal, selon un dictionnaire publié en 2014. Il ne faut pas confondre les Bissa avec les Busa, aussi appelés Boko : le linguiste André Prost les compte comme deux peuples distincts, dont les langues sont parentes.",
       "whyProblematic": null,
       "contemporaryUsage": "Au Burkina Faso, le recensement de 2019 nomme la langue « Bissa », et les linguistes du pays l'écrivent bɩ́sá. En Côte d'Ivoire, les Bissa installés à Dabou sont aussi appelés Boussanga, et un quartier de la ville porte le nom de Boussangabougou. La base de données missionnaire Joshua Project désigne ce peuple sous le nom de Busanga.",
       "peopleGroupId": null,
       "peopleGroupLabel": null
     },
-    "ethnicities": [
-      "Bissa barka",
-      "Bissa lebir (ou lebri)",
-      "Bissa lere"
-    ],
+    "ethnicities": ["Bissa barka", "Bissa lebir (ou lebri)", "Bissa lere"],
     "origins": {
       "ancientOrigins": "Les Bissa appartiennent aux peuples de langue mandé, une grande famille de langues d'Afrique de l'Ouest. Sœur Jean Bernard (Odette Pégard) rappelle en 1965 que les premiers auteurs coloniaux les avaient classés parmi les peuples voltaïques, avant qu'on montre leur appartenance au groupe mandé. Une tradition orale recueillie par Jean-Paul Lahuec et Jean-Yves Marchal, et citée par l'historien Mamadou Fofana, raconte que les ancêtres des Samo et des Bissa se sont séparés près de la montagne de Garango, après une querelle sur la tête d'un chien sacrifié.",
       "formationPeriod": "Selon Jean-Paul Lahuec et Jean-Yves Marchal, cités par Mamadou Fofana, le peuplement du pays bissa s'est fait du XIIIe au XVIIIe siècle, en trois grandes vagues de migration.",
@@ -414,16 +368,8 @@
     },
     "languages": {
       "mainLanguage": "Bissa (bib)",
-      "isoCodes": [
-        "bib"
-      ],
-      "dialects": [
-        "Baraka",
-        "Barka",
-        "Lebir (ou lebri)",
-        "Lere",
-        "Gɔ̀rmı̀ñnẽ̀"
-      ],
+      "isoCodes": ["bib"],
+      "dialects": ["Baraka", "Barka", "Lebir (ou lebri)", "Lere", "Gɔ̀rmı̀ñnẽ̀"],
       "vehicularRole": "Au recensement de 2019, 3,3 % des habitants du Burkina Faso âgés de 3 ans et plus parlent le bissa comme langue principale, selon l'INSD. La langue sert de langue d'enseignement dans les écoles bilingues et les centres d'alphabétisation. Les Bissa emploient aussi des mots du mooré, la langue des Mossi, et à Dabou, en Côte d'Ivoire, la communauté parle surtout le barka et le lebir entre elle."
     },
     "externalIdentifiers": {

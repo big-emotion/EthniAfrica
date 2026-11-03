@@ -2,18 +2,13 @@
   "id": "PPL_YAKA",
   "nameMain": "Yaka",
   "languageFamilyId": "FLG_BANTU",
-  "currentCountries": [
-    "COD",
-    "AGO"
-  ],
+  "currentCountries": ["COD", "AGO"],
   "classificationStatus": "contested",
   "content": {
     "appellations": {
       "mainName": "Yaka",
       "selfAppellation": "Yaka",
-      "exonyms": [
-        "Jaga"
-      ],
+      "exonyms": ["Jaga"],
       "spellingAliases": [
         "Bayaka",
         "Muyaka",
@@ -66,9 +61,7 @@
     },
     "languages": {
       "mainLanguage": "Yaka, ou kiyaka (yaf)",
-      "isoCodes": [
-        "yaf"
-      ],
+      "isoCodes": ["yaf"],
       "dialects": [
         "Pelende, de code ISO ppp, compté comme un dialecte du yaka par Glottolog.",
         "Lonzo, de code ISO lnz, compté comme un dialecte du yaka par Glottolog."

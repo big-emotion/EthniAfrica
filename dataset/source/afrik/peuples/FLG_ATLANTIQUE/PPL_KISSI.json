@@ -2,11 +2,7 @@
   "id": "PPL_KISSI",
   "nameMain": "Kissi",
   "languageFamilyId": "FLG_ATLANTIQUE",
-  "currentCountries": [
-    "GIN",
-    "SLE",
-    "LBR"
-  ],
+  "currentCountries": ["GIN", "SLE", "LBR"],
   "nameHistory": {
     "summary": "Le nom Kissi désigne un peuple de Guinée forestière, de l'est de la Sierra Leone et du Liberia voisin, qui se nomme lui-même ainsi, et aussi sa langue. On l'écrit souvent Kisi. Sa plus ancienne trace écrite connue du projet date de 1827, chez l'explorateur René Caillié ; nous présentons plus bas cette trace et les suivantes.",
     "names": [
@@ -17,10 +13,7 @@
         "languageOfOrigin": null,
         "namedBy": null,
         "shortLine": "Le nom que ce peuple se donne, en Guinée, en Sierra Leone et au Liberia ; on écrit aussi Kisi.",
-        "usedIn": [
-          "fra",
-          "eng"
-        ],
+        "usedIn": ["fra", "eng"],
         "periodLabel": "Écrit dès 1827 ; en usage aujourd'hui",
         "accounts": [
           {
@@ -235,23 +228,14 @@
       "exonyms": [
         "les gens du riz (nom que leur donnent leurs voisins du nord, selon Denise Paulme)"
       ],
-      "spellingAliases": [
-        "Kisi",
-        "Kísi",
-        "Kissia",
-        "Gizi",
-        "Kisie",
-        "Kissien"
-      ],
+      "spellingAliases": ["Kisi", "Kísi", "Kissia", "Gizi", "Kisie", "Kissien"],
       "originOfExonyms": "Les Kissi se donnent eux-mêmes ce nom, selon l'ethnologue Denise Paulme, qui a vécu chez eux de 1945 à 1949. Leurs voisins du nord les appellent « les gens du riz » : le riz occupe chez eux presque toute l'année agricole, et le mil, si important pour les gens de la savane, y est traité de « nourriture des chevaux ». Les formes Kisi, Kísi, Gizi, Kisie ou Kissien sont d'autres façons d'écrire le même nom, relevées par le linguiste Sigismund Koelle en 1854 et par la base Glottolog ; un auteur guinéen écrit Kissias.",
       "whyProblematic": null,
       "contemporaryUsage": "Le nom Kissi désigne aujourd'hui à la fois le peuple et sa langue, en Guinée, en Sierra Leone et au Liberia. Les recensements l'emploient : celui de la Sierra Leone, en 2015, compte 175 843 Kissi, et celui de la Guinée, en 2014, range le kissi parmi les principales langues parlées dans le pays. Les textes en anglais écrivent souvent Kisi.",
       "peopleGroupId": null,
       "peopleGroupLabel": null
     },
-    "ethnicities": [
-      "Kissi"
-    ],
+    "ethnicities": ["Kissi"],
     "origins": {
       "ancientOrigins": "Les sources lues donnent deux récits différents de l'origine lointaine des Kissi. Selon l'historien Christophe Wondji, les Kissi et les Bulom auraient d'abord formé un seul groupe, venu en suivant le fleuve Niger jusqu'à sa source ; les Kissi seraient restés à l'intérieur quand les Bulom gagnaient la mer. Selon l'ethnologue Denise Paulme, quelques vieillards parlaient en 1945 d'une grande migration qui les aurait détachés des peuples de langue mandé et installés dans l'actuelle Sierra Leone, d'où leurs descendants seraient revenus vers le nord-est par petits groupes. Paulme conclut que leurs origines sont multiples : des familles du nord se disent d'origine mandé, d'autres placent leur ancêtre à l'est ou au sud.",
       "formationPeriod": "Le pays kissi est ancien : l'historien Yves Person date du XIVe siècle l'installation des Malinké du Sankaran et du Toron au contact des Kissi, et l'explorateur René Caillié décrit le pays de Kissi en 1827. Denise Paulme estime pourtant que la société kissi qu'elle observe vers 1950 s'est reconstruite à la fin du XIXe siècle. Les raids des troupes de Samory, puis la conquête française en 1893, ont effacé presque tout souvenir plus ancien, et les généalogies ne remontent qu'à trois ou quatre générations.",
@@ -278,10 +262,7 @@
     },
     "languages": {
       "mainLanguage": "Kissi (kqs, kss)",
-      "isoCodes": [
-        "kqs",
-        "kss"
-      ],
+      "isoCodes": ["kqs", "kss"],
       "dialects": [
         "Kissi du Nord (code ISO kqs)",
         "Kissi du Sud (code ISO kss)"

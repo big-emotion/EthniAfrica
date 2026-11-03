@@ -2,28 +2,15 @@
   "id": "PPL_BOLIWA",
   "nameMain": "Boliwa",
   "languageFamilyId": "FLG_TCHADIQUE",
-  "currentCountries": [
-    "NGA"
-  ],
+  "currentCountries": ["NGA"],
   "classificationStatus": "contested",
   "content": {
     "appellations": {
       "mainName": "Boliwa",
       "selfAppellation": "Anim Pikka",
-      "exonyms": [
-        "Bole",
-        "Bolewa",
-        "Bolawa",
-        "Bolea"
-      ],
-      "spellingAliases": [
-        "Boliwa",
-        "Borlawa",
-        "Pika",
-        "Ampika",
-        "Borpika"
-      ],
-      "originOfExonyms": "Les Bole se nomment eux-mêmes anim Pikka, « ceux de Fika », et appellent leur langue bo Pikka. Le nom Bole vient de leurs voisins : le haoussa dit Bolawa pour le peuple et bolanci pour la langue, le kanouri dit Bolea, selon Russell G. Schuh, de l'université de Californie. Deux explications de ce nom sont proposées. Il viendrait de la question « bo le ? », « pourquoi ? » ou « quelle langue ? », souvent entendue par ceux qui ne parlaient pas la langue ; C. K. Meek, en 1931, le rattachait plutôt à un mot voulant dire « mâle », ce que Schuh rejette. Le nom apparaît par écrit sous la forme Pika chez Koelle en 1854, puis sous les formes Bolanchi, Borlawa et Bolewa chez P. A. Benton en 1912, et Bole et Bolewa chez Temple en 1919. La forme Boliwa n'apparaît dans aucune de ces sources. Le code de langue blv, qu'on ne doit pas confondre avec celui du bole, désigne le kibala, une langue de l'Angola ; la langue bole porte le code bol.",
+      "exonyms": ["Bole", "Bolewa", "Bolawa", "Bolea"],
+      "spellingAliases": ["Boliwa", "Borlawa", "Pika", "Ampika", "Borpika"],
+      "originOfExonyms": "Les Bole se nomment eux-mêmes anim Pikka, « ceux de Fika », et appellent leur langue bo Pikka. Le nom Bole vient de leurs voisins : le haoussa dit Bolawa pour le peuple et bolanci pour la langue, le kanouri dit Bolea, selon Russell G. Schuh, de l'université de Californie. Deux explications de ce nom sont proposées. Il viendrait de la question « bo le ? », « pourquoi ? » ou « quelle langue ? », souvent entendue par ceux qui ne parlaient pas la langue. En 1931, Meek proposait plutôt de le rattacher à un mot voulant dire « mâle », une explication que Schuh rejette. Le nom apparaît par écrit sous la forme Pika chez Koelle en 1854, puis sous les formes Bolanchi, Borlawa et Bolewa chez P. A. Benton en 1912, et Bole et Bolewa chez Temple en 1919. La forme Boliwa n'apparaît dans aucune de ces sources. Le code de langue blv, qu'on ne doit pas confondre avec celui du bole, désigne le kibala, une langue de l'Angola ; la langue bole porte le code bol.",
       "whyProblematic": "Le nom Bole, et ses formes Bolewa ou Bolawa, n'est pas le nom que ce peuple se donne : il se nomme anim Pikka, « ceux de Fika », et ce sont le haoussa et le kanouri qui forment leurs noms sur la racine bole, selon Russell G. Schuh. En 1931, C. K. Meek a voulu lire dans ce nom un mot signifiant « pénis » ou « mâle » ; Schuh juge cette explication absurde, puisque Bole n'est même pas le nom que se donne le peuple. Quant au titre de cette fiche, Boliwa, nous ne l'avons trouvé dans aucune des sources lues.",
       "contemporaryUsage": "Aujourd'hui, les linguistes et l'organisme qui gère les codes de langues emploient le nom Bole, avec le code bol. Le nom Bolewa reste courant au Nigeria, par exemple dans une enquête de 2018 sur les langues du nord-est du pays, et le haoussa dit Bolawa. Les livres publiés dans la langue depuis 2000 emploient les deux noms, Bo Pikka et Bole : Dindi Bo Pikka (contes, 2000), Komno Bo Bolewa (proverbes, 2004), Aru Bo Bole (chants, 2009). Fika reste la capitale traditionnelle, mais la cour du Moi Pikka, l'émir de Fika, siège à Potiskum depuis 1924.",
       "peopleGroupId": null,
@@ -65,9 +52,7 @@
     },
     "languages": {
       "mainLanguage": "Bole (bol)",
-      "isoCodes": [
-        "bol"
-      ],
+      "isoCodes": ["bol"],
       "dialects": [
         "Fika, le parler de la capitale traditionnelle",
         "Gadam-Bara, selon le catalogue Glottolog ; en 1912, P. A. Benton distinguait déjà le parler de Bara de celui de Fika",
