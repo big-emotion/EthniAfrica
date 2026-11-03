@@ -8,122 +8,167 @@
     "appellations": {
       "mainName": "Mbunda",
       "selfAppellation": "Vambunda",
-      "exonyms": ["Vambunda", "Kambunda", "Chimbunda (langue)"],
-      "originOfExonyms": "Le nom Mbunda designe a la fois le peuple et la couleur de la terre rouge (rougeâtre) caracteristique de leur territoire d'origine. Ce detail etymologique est confirme par la tradition orale : les Mbunda cherchaient a s'etablir sur des terres rouges similaires a celles du Soudan dont ils venaient. Le prefixe Va- (Vambunda) est le prefixe Bantu du pluriel humain. Kambunda est la forme singulier. Chimbunda ou Ki-mbunda designe la langue.",
-      "whyProblematic": "Le nom Mbunda peut etre confondu avec Ambundu (ou Mbundu), qui designe un groupe ethnique distinct d'Angola parlant le Kimbundu. Les Mbunda (parlant le Chimbunda) et les Ambundu (parlant le Kimbundu) sont deux peuples differents. Cette confusion apparait dans certaines sources moins rigoureuses.",
-      "contemporaryUsage": "Mbunda est l'appellation standard dans les sources academiques et gouvernementales angolaises et zambiennes. En Zambie, Chimbunda est reconnu comme l'une des langues locales avec utilisation dans la radio locale et certains niveaux d'enseignement. Le terme Ganguela est parfois employe de maniere generique pour inclure les Mbunda avec d'autres groupes apparentes.",
+      "exonyms": ["ma-Mbounda", "Mombunda", "Bambunda", "Mambunda"],
+      "spellingAliases": ["Mbuunda", "Kambunda"],
+      "originOfExonyms": "Le nom Mbunda viendrait du mot mbunda, qui désigne une terre rougeâtre et aussi la viande rouge, selon l'histoire publiée en 2017 par l'établissement royal mbunda de Zambie. Les missionnaires et les administrateurs du Barotseland, l'ancien royaume lozi de l'ouest de la Zambie, ont écrit le nom avec des préfixes de la langue lozi : Mombunda et ma-Mbounda chez le missionnaire François Coillard à partir de 1888, ma-Mbunda chez Marthe Kuntz en 1932, Bambunda et Mambunda chez l'administrateur colonial Douglas Stirke. La langue se nomme chimbunda, gimbunda ou kimbunda, selon les noms recensés par le catalogue Glottolog.",
+      "whyProblematic": "Le nom Mbunda ressemble à celui des Ambundu d'Angola, qui parlent le kimbundu, un autre peuple et une autre langue. Sir Harry Johnston le remarquait déjà en 1922 : la racine bunda revient en Angola et dans l'ouest de la Zambie sous les formes bundu, bundo et bunda, sans que les langues ainsi nommées soient proches. C'est pourquoi le nom Ambonda noté par David Livingstone en 1857 peut désigner les uns ou les autres. Les branches que l'établissement royal mbunda présente comme mbunda, comme les Mbunda Nkangala, ne sont pas classées de la même façon partout : le catalogue Glottolog compte le nkangala comme une langue distincte, voisine du mbunda.",
+      "contemporaryUsage": "Mbunda est le nom courant aujourd'hui, en Angola comme en Zambie. Le recensement zambien de 2010 compte les Mbunda parmi les groupes ethniques du pays et le mbunda parmi les langues de communication. Il ne fait pas partie des sept langues que la Zambie emploie, à côté de l'anglais, pour la radio, la télévision et l'alphabétisation : le bemba, le kaonde, le lozi, le lunda, le luvale, le nyanja et le tonga. En Angola, le linguiste Boubacar Diarra a publié dans les années 1980 un alphabet, des lexiques et une grammaire du mbunda.",
       "linguisticFamily": "FLG_NIGERCONGO",
-      "ethnoLinguisticGroup": "Bantu central-occidental, sous-groupe Ngangela-Nyemba (Ganguela)",
-      "historicalRegion": "Sud-est de l'Angola (Mbundaland : provinces de Moxico et Cuando Cubango), Province occidentale de la Zambie (Barotseland)",
+      "ethnoLinguisticGroup": "Bantou, groupe ngangela-nyemba (groupe K.20 de la classification de Guthrie)",
+      "historicalRegion": "Sud-est de l'Angola, entre les rivières Lungwevungu et Kwandu (provinces du Moxico et du Cuando Cubango) ; provinces de l'Ouest et du Nord-Ouest de la Zambie.",
       "currentCountries": ["AGO", "ZMB", "NAM", "COD"]
     },
     "ethnicities": [
-      "Mbunda",
-      "Vambunda",
-      "Mbunda Mathzi (Katavola)",
-      "Yauma",
-      "Nkangala",
-      "Mbalango",
-      "Sango",
-      "Shamuka (Chiyengele)",
-      "Ndundu"
+      "Mbunda Mathzi",
+      "Mbunda Shamuka",
+      "Mbunda Mbalango",
+      "Mbunda Yauma",
+      "Mbunda Nkangala",
+      "Mbunda Ndundu",
+      "Mbunda Mashaka",
+      "Mbunda Thango"
     ],
     "origins": {
-      "ancientOrigins": "Selon la tradition orale des Vambunda, les Mbunda ont migre depuis une region situee dans l'actuel Soudan du Sud, traversant l'Ouganda, le Kenya, le Burundi, le Rwanda, et les forets equatoriales du Congo, a la recherche de terres rouges (mbunda) similaires a celles de leur terre d'origine. Ils s'etablirent d'abord dans la region de Kola (Congo actuel) ou ils rencontrerent les peuples Luba et Ruund, avant de poursuivre vers le sud-est de l'Angola. Le premier monarque Mbunda etait le roi Mwene Nkuungu.",
-      "formationPeriod": "Vers 1500 de notre ere selon les traditions orales. Le Mbundaland, territoire entre les rivieres Lungwevungu et Kwandu, se developpa comme entite politique distincte sous la direction de rois successifs. Le 12e et 13e monarques Mbunda (Mwene Kathangila ka Mukenge et Yambayamba Kapanda) entreprirent des expeditions d'expansion qui donnerent naissance a 13 ethnies descendantes dont les Luimbi, Nyemba, Luchazi, et d'autres.",
+      "ancientOrigins": "Selon l'histoire publiée par l'établissement royal mbunda de Zambie, les ancêtres des Mbunda seraient venus de l'actuel Soudan du Sud. Ils auraient traversé les pays qui forment aujourd'hui l'Ouganda, le Kenya, le Burundi et le Rwanda, à la recherche d'une terre rouge semblable à celle qu'ils avaient quittée. Ils se seraient arrêtés à Kola, à l'est des rivières Kwilu et Kasaï, dans l'actuelle République démocratique du Congo, où vivaient des Luba et des Ruund. Le même récit nomme Nkuungu comme le premier chef des Mbunda, et sa fille Naama comme la deuxième.",
+      "formationPeriod": "Le même récit communautaire situe vers 1500 le départ du Soudan et décrit ensuite le Mbundaland, le pays des Mbunda, entre les rivières Lungwevungu et Kwandu, dans le sud-est de l'actuelle Angola. Les divisions auraient commencé sous le treizième chef, Yambayamba Kapanda.",
       "migrationRoutes": [
-        "Du Soudan actuel vers le Congo via l'Ouganda, le Kenya, le Burundi et le Rwanda",
-        "Du Congo (region de Kola, entre les rivieres Kwilu et Kasai) vers le Haut-Zambeze",
-        "Installation le long des rivieres Mithimoyi, Lunchathzi, Lungwevungu (Angola sud-est)",
-        "Migration de la fin du 18e siecle vers le Barotseland (Province occidentale de Zambie)",
-        "Migration au debut du 20e siecle vers la Zambie sous pression coloniale portugaise",
-        "Migrations de guerre (1975-2002) vers la Zambie occidentale, la Namibie du nord (Rundu) et le Congo-Kinshasa"
+        "De l'actuel Soudan du Sud vers le Congo, par l'Ouganda, le Kenya, le Burundi et le Rwanda, selon l'établissement royal mbunda de Zambie",
+        "De Kola, à l'est des rivières Kwilu et Kasaï, vers la source du Zambèze à Mithimoyi, puis vers la Lungwevungu et le Kwandu, selon le même récit",
+        "Vers le Barotseland, sous le règne du roi lozi Mulambwa, selon le même récit",
+        "Vers le Barotseland, sous le règne du roi lozi Lewanika, selon Marthe Kuntz (1932)"
       ],
       "historicalSettlementZones": [
-        "Mbundaland : provinces de Moxico et Cuando Cubango (Angola sud-est)",
-        "Capital Lumbala Nguimbo (Angola)",
-        "Province occidentale de Zambie : districts de Mongu, Kaoma, Kalabo, Senanga, Lukulu, Kabompo",
-        "Province nord-occidentale de Zambie (district de Kabompo, Manyinga, Kayombo)",
-        "Region de Rundu et Nkurenkuru, Kavango (Namibie)",
-        "Entre les rivieres Kwilu et Kasai (Congo-Kinshasa)"
+        "Mbundaland, entre les rivières Lungwevungu et Kwandu, dans le sud-est de l'Angola",
+        "Provinces angolaises du Moxico et du Cuando Cubango",
+        "Province de l'Ouest de la Zambie, où les Mbunda forment 14,7 % des habitants au recensement de 2010",
+        "Province du Nord-Ouest de la Zambie, notamment à Manyinga, dans le district de Kabompo",
+        "District de Rundu, en Namibie, selon l'établissement royal mbunda de Zambie",
+        "Entre les rivières Kwilu et Kasaï, en République démocratique du Congo, selon la même source"
       ],
-      "unificationsOrDivisions": "Le royaume Mbunda fut divise en 6 dialectes distincts apres la mort du roi Katavola I Mwechela et les conflits qui s'ensuivirent. Les expansions sous les 12e et 13e monarques produisirent 13 ethnies descendantes. La migration vers le Barotseland a la fin du 18e siecle crea une diaspora Mbunda structuree en plusieurs chefferies en Zambie. Le traite Mulambwa-Chiyengele scella l'alliance entre les Mbunda et les Aluyi (Lozi).",
-      "externalInfluences": "Influence Luba et Ruund lors du passage par le Congo. Conflits avec les Chokwe au 19e siecle (guerre Mbunda-Chokwe). Conflits avec les Luvale. Alliance strategique avec les Lozi de Barotseland (Aluyi) : les Mbunda participent a la defense du royaume Lozi contre les Makololo (1830), les Tonga (1880s) et les Kaonde. Resistance a la colonisation portugaise (capture du roi Mbandu I Kapova par les Portugais). Guerre civile angolaise (1975-2002) : deplacements massifs.",
-      "majorHistoricalEvents": "Vers 1500 : debut du Mbundaland. 19e siecle : guerres avec les Chokwe et les Luvale. Fin 18e siecle : premiere migration vers le Barotseland, traite Mulambwa-Chiyengele. 1830 : participation decisive a la guerre Aluyi-Makololo. 1880s : guerre aux cotes des Lozi contre les Tonga. Debut 20e siecle : resistance a la colonisation portugaise et capture du roi Mbandu I Kapova. 1961-1974 : guerre d'independance angolaise. 1975-2002 : guerre civile angolaise et vagues de migration vers la Zambie, la Namibie et la RDC. 2002 : retour de la paix et retour progressif des deplaces."
+      "unificationsOrDivisions": "Selon l'établissement royal mbunda de Zambie, les Mbunda sont restés unis jusqu'au règne de Yambayamba Kapanda, puis se sont divisés en plusieurs branches, chacune avec son parler. Après le meurtre du chef Katavola I Mwechela, six groupes se seraient détachés des Mbunda Mathzi. L'établissement présente aussi un traité d'amitié conclu oralement en 1795 entre Mulambwa, roi des Lozi, et le chef mbunda Chiyengele.",
+      "externalInfluences": "Le récit communautaire place une étape ancienne chez les Luba et les Ruund de Kola. Au Barotseland, les Mbunda vivent au contact des Lozi et des Nkoya. Le missionnaire François Coillard décrit en décembre 1892 des devins ma-Mbounda qui consultent les osselets à la cour du roi lozi Lewanika pendant une épidémie de variole ; leur oracle accuse le missionnaire lui-même. En Angola, l'établissement royal mbunda rapporte une guerre contre les Portugais et la capture du roi Mbandu Lyonthzi Kapova, dont le règne s'achève en 1914.",
+      "majorHistoricalEvents": "1795 : traité d'amitié oral entre le roi lozi Mulambwa et le chef mbunda Chiyengele, selon l'établissement royal mbunda de Zambie. Sous Mubukwanu, fils de Mulambwa : les Mbunda combattent avec les Lozi contre les Kololo, souvenir que commémore la cérémonie Lukwakwa. 1888 : François Coillard écrit le nom Mombunda au Barotseland. 1914 : fin du règne de Mbandu Lyonthzi Kapova, capturé par les Portugais, selon la liste royale publiée par l'établissement royal mbunda. 2008 : début du règne de Mbandu III Mbandu Lifuti, selon la même liste."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Royaume Mbunda avec un roi (Mwene) a la tete, detenant une autorite absolue. Le roi legifere et gouverne ; ses decisions ne sont pas remises en question. Systeme decentralise de chefferies locales dans les zones et localites. La lignee royale est matrilineaire. En Zambie, les chefferies Mbunda s'inscrivent dans la structure du Conseil National Barotse (Barotse National Council). Le roi actuel est Sa Majeste Mbandu III Mbandu Lifuti a Lumbala Nguimbo (Angola).",
-      "clanOrganization": "Societe historiquement matrilineaire avec transmission du titre royal par la ligne centrale matrilineaire royale (ce qui limitait le nombre de pretendants au trone). Contacts avec des systemes patrilineaires voisins ont introduit certaines influences. Les Mbunda se divisent en plusieurs sous-groupes dialectaux (Katavola, Yauma, Nkangala, Mbalango, Sango, Shamuka, Ndundu) chacun avec sa propre chefferie.",
-      "ageClassSystems": "Mukanda : ceremonie d'initiation masculine (circoncision) avec retraite au camp pendant plusieurs mois, apprentissage des lois de la communaute, des techniques de chasse, des regles du comportement adulte. Les Mbunda sont consideres comme les principaux acteurs du systeme Makishi avec plus de 50 masques et artefacts exclusifs Mbunda. Litungu ou Bwali : initiation feminine liee a la puberte.",
-      "roleOfLineages": "Les lignages matrilineaires royaux structurent la succession au trone. Les lignages dans les localites gerent l'acces aux terres et la resolution des conflits. L'appartenance clanique determine le statut social et les droits coutumiers.",
-      "religiousAuthority": "Respect des ancetres comme pilier spiritual fondamental. Rites religieux lies aux ceremonials saisonniers et aux initiations. Le christianisme a penetre progressivement les communautes Mbunda tout en coexistant avec les pratiques traditionnelles dans de nombreux villages."
+      "traditionalPoliticalSystem": "Les Mbunda ont un roi, le mwene. La liste royale publiée par l'établissement royal mbunda de Zambie compte vingt-deux souverains, de Nkuungu à Mbandu III Mbandu Lifuti, roi depuis le 16 août 2008 ; plusieurs de ces souverains sont des reines, comme Naama, Yamvu ou Mukenge. En 2017, ce roi réside au palais de Yambayamba, à Lumbala Nguimbo, dans la province angolaise du Moxico. En Zambie, des chefs mbunda reconnus tiennent leurs propres cérémonies, comme le chef principal Sikufele à Manyinga et Mwene Chiyengele Nyumbu au palais de Mushuwa, à Limulunga.",
+      "clanOrganization": "L'établissement royal mbunda de Zambie décrit huit branches mbunda, chacune avec son parler : Mbunda Mathzi, Shamuka, Mbalango, Yauma, Nkangala, Ndundu, Mashaka et Thango. Chaque branche est rattachée à une lignée de chefs.",
+      "ageClassSystems": "Le mukanda est la cérémonie qui fait passer les garçons à l'âge d'homme ; le bwali est celle des filles devenues adultes, selon l'établissement royal mbunda de Zambie. L'UNESCO décrit le mukanda comme un rite annuel pour les garçons de huit à douze ans, qui passent un à trois mois dans un camp isolé en brousse et y sont circoncis. Le rite se termine par la mascarade makishi.",
+      "roleOfLineages": null,
+      "religiousAuthority": "Selon l'établissement royal mbunda de Zambie, la prière Ng'ombelo s'adresse à Dieu et aux esprits des ancêtres, en particulier aux fondateurs Nkuungu et Naama. Lors de la cérémonie Cheke, le chef dédie les masques matotola aux esprits des ancêtres devant le miyombo, l'arbre sacré et le sanctuaire des Mbunda. Au Barotseland, en 1892, des devins ma-Mbounda consultent les osselets à la cour du roi lozi Lewanika pendant une épidémie de variole, selon François Coillard."
     },
     "languages": {
-      "mainLanguage": "Mbunda (Chimbunda)",
+      "mainLanguage": "Mbunda, ou chimbunda (mck)",
       "isoCodes": ["mck"],
       "dialects": [
-        "Katavola (Mbunda Mathzi)",
-        "Yauma",
-        "Nkangala",
-        "Mbalango",
-        "Sango",
-        "Shamuka (Chiyengele)",
-        "Ndundu"
+        "Mbunda Mathzi",
+        "Mbunda Shamuka",
+        "Mbunda Mbalango",
+        "Mbunda Yauma",
+        "Mbunda Nkangala",
+        "Mbunda Ndundu",
+        "Mbunda Mashaka",
+        "Mbunda Thango"
       ],
-      "vehicularRole": "Le Chimbunda (Ki-mbunda ou Gimbunda) est reconnu comme l'une des langues locales en Zambie, utilise dans les emissions de radio locale et partiellement dans l'enseignement de base. Les linguistes du groupe ont fourni d'importants efforts pour documenter et codifier la langue. En Angola, le portugais est la langue officielle. En Zambie, l'anglais et le Lozi (Silozi) servent de vehiculaires dans la Province occidentale."
+      "vehicularRole": "Le mbunda est une langue bantoue du groupe ngangela-nyemba, proche du luimbi et du mbwela selon le catalogue Glottolog. En 1922, Sir Harry Johnston le décrit parlé de part et d'autre du haut Zambèze. Au recensement zambien de 2010, 0,7 % de la population l'emploie comme langue de communication, et 10,1 % dans la province de l'Ouest, où le lozi est la langue la plus parlée (69,6 %)."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q15077462",
+      "glottocode": "mbun1249",
+      "iso639_3": "mck"
     },
     "culture": {
-      "majorRites": "Mukanda : rite d'initiation masculine central, avec circoncision et retraite prolongee (plusieurs mois), suivi d'une grande ceremonie de reintegration dans la communaute symbolisant la renaissance du garcon en homme adulte. Ce rite est aussi pratique par les Chokwe, Luvale et Luchazi, les Mbunda etant consideree comme les principaux depositaires avec plus de 50 artefacts Makishi exclusifs. Litungu (Bwali) : initiation feminine. Calendrier rituel saisonnier (Kuwana en mars : fete des nouvelles recoltes ; ceremonie de Mars marquant le Nouvel An Mbunda).",
-      "symbols": "Masques Makishi (plus de 50 artefacts pantomimes exclusifs Mbunda) utilises lors des initiations. Marimba et tambours comme instruments rituels et festifs. Lances, arcs et fleches : attributs traditionnels des guerriers et chasseurs Mbunda. Le nom Mbunda signifie 'terre rouge' : symbole identitaire fondamental.",
-      "artsAndMusic": "Vannerie decorative a partir des racines de makenge. Instruments de musique (tambours, marimbas). Sculpture et construction. Art de la chasse (celebrated elephant hunters). Metallurgie. Les danseurs Makishi executent des spectacles pantomimes lors des ceremonies d'initiation. Marimba et percussions lors des celebrations communautaires.",
-      "spiritualities": "Respect profond des ancetres, pilier de la vie spirituelle Mbunda. Ceremonies de propitiation ancestrale. Pratiques chamaniques et guerison traditionnelle. Commerce spirituel avec les forces de la nature (riviers, forets). Le christianisme est aujourd'hui present dans de nombreuses communautes, en particulier en Zambie, souvent en syncretisme avec les croyances ancestrales."
+      "majorRites": "Le mukanda est la plus importante des cérémonies mbunda, selon l'établissement royal mbunda de Zambie : les garçons y passent à l'âge d'homme, et la mascarade makishi en marque la fin. L'UNESCO a inscrit en 2008 la mascarade makishi sur la Liste représentative du patrimoine culturel immatériel de l'humanité, après l'avoir proclamée en 2005 ; elle la rattache aux Luvale, aux Chokwe, aux Luchazi et aux Mbunda des provinces de l'Ouest et du Nord-Ouest de la Zambie. En Zambie, la cérémonie Lukwakwa a lieu chaque année, la première semaine d'octobre, à Manyinga, et la cérémonie Cheke, fête de la lumière, a lieu le dernier week-end de septembre au palais de Mushuwa, à Limulunga, depuis sa reprise en 2011.",
+      "symbols": "La terre rouge, mbunda, est présentée par l'établissement royal mbunda de Zambie comme le symbole du Mbundaland. La palissade Lukwakwa, dressée au centre de la cérémonie du même nom, rappelle les clôtures qui protégeaient les villages mbunda de Kabompo. Les masques makithi, ou matotola, sont plus de cinquante, selon la même source.",
+      "artsAndMusic": "Douglas Stirke, administrateur colonial au Barotseland, compte les Bambunda parmi les meilleurs fabricants de nattes et décrit leurs petites figurines de bois représentant des hommes, des femmes, des animaux et des bateaux. Lors de la cérémonie Lukwakwa, les Mbunda dansent le kalukuta, le shombe, le chinjangila, le chisho et le nduko, et présentent leur fonte du fer, leurs sculptures sur bois et leur vannerie, selon l'établissement royal mbunda de Zambie.",
+      "spiritualities": "La prière Ng'ombelo honore Dieu et les esprits des ancêtres, selon l'établissement royal mbunda de Zambie. Douglas Stirke décrit le ngombo, une forme de divination des Bambunda : le devin agite un plateau d'écorce garni de quarante ou cinquante figurines et symboles, après avoir invoqué des esprits. Il note aussi que les Bambunda placent un roseau près de l'oreille du défunt dans la tombe."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Royaume Mbunda de Mbundaland (Angola sud-est), avec Lumbala Nguimbo comme capitale royale. Plus de 21 rois successifs documentes dans la tradition orale. Chefferies Mbunda etablies en Zambie : Senior Chief Mwene Sikufele a Lukwakwa (Kabompo District), Chief Mwene Kasimba a la confluence de Lalafuta et Kyamenge, Senior Chief Chikufele a Manyinga, Chief Chingumbe Chiyengele a Kayombo.",
-      "relationsWithNeighbors": "Alliance strategique durable avec les Lozi (Aluyi) de Barotseland : les Mbunda servirent comme force militaire d'elite du royaume Lozi. Inclus dans le Barotse National Council. Conflits historiques avec les Chokwe (guerre Mbunda-Chokwe au 19e siecle) et les Luvale (invasion repousse par le roi Mbandu I). Relations de voisinage avec les Luchazi, Luimbi, Nyemba, Nkangala, Yauma (ethnies descendantes du tronc Mbunda).",
-      "conflictsOrAlliances": "Guerre Mbunda-Chokwe (19e siecle) : victoire Mbunda apres l'elimination du chef Chokwe Musangu. Guerre contre les Luvale : victoire Mbunda sous le roi Mbandu I Lyondthzi Kapova. Alliance Mulambwa-Chiyengele avec les Aluyi (Lozi) fin 18e siecle. Guerre Aluyi-Makololo (1830) : participation decisive des Mbunda. Guerre contre les Tonga (1880s). Guerre Lozi-Kaonde (fin 19e siecle). Resistance a la colonisation portugaise : le roi Mbandu I Kapova est fait prisonnier par les Portugais.",
-      "diaspora": "Quatre vagues migratoires documentees : (1) fin 18e siecle vers Barotseland (Mongu) ; (2) debut 20e siecle sous pression coloniale portuguaise ; (3-4) periodes de la guerre civile angolaise (1975-2002) vers la Province occidentale de Zambie, la Namibie du nord (Rundu, Nkurenkuru, bande de Caprivi) et le Congo-Kinshasa. Presence aujourd'hui dans les provinces Zambiennes de l'Ouest et du Nord-Ouest, en Namibie, en RDC et dans des villes comme Lusaka et Luanda."
+      "kingdomsOrChiefdoms": "Le royaume mbunda du Mbundaland, dans le sud-est de l'Angola, est dirigé par le mwene ; l'établissement royal mbunda de Zambie publie une liste de vingt-deux souverains. En Zambie, les chefferies mbunda comprennent celle du chef principal Sikufele à Manyinga, dans le district de Kabompo, et celle de Mwene Chiyengele, au palais de Mushuwa, à Limulunga.",
+      "relationsWithNeighbors": "Les sources que nous avons consultées parlent surtout des relations avec les Lozi du Barotseland. L'établissement royal mbunda de Zambie rapporte un traité d'amitié oral conclu en 1795 entre le roi lozi Mulambwa et le chef Chiyengele, et décrit les Mbunda vivant avec les Lozi et les Nkoya. En décembre 1888, François Coillard raconte qu'une femme, à qui le roi Lewanika laisse le choix d'un nouveau mari, choisit un Mombunda.",
+      "conflictsOrAlliances": "Les Mbunda ont combattu aux côtés des Lozi, pour le prince Mubukwanu, fils du roi Mulambwa, contre les Kololo ; la cérémonie Lukwakwa commémore ces combats, selon l'établissement royal mbunda de Zambie. La même source rapporte une guerre contre les Portugais en Angola, qui s'achève par la capture du roi Mbandu Lyonthzi Kapova vers 1914.",
+      "diaspora": "Au recensement zambien de 2010, les Mbunda représentent 1,6 % de la population rurale et 0,6 % de la population urbaine ; ils sont 0,3 % dans la province de Lusaka. L'établissement royal mbunda de Zambie signale aussi des Mbunda dans le district de Rundu, en Namibie, et entre les rivières Kwilu et Kasaï, en République démocratique du Congo."
     },
     "demography": {
-      "totalPopulation": 563000,
-      "referenceYear": 2025,
-      "source": "Joshua Project 2025 : 380 000 en Angola et 183 000 en Zambie, total 563 000. Des communautes supplementaires existent en Namibie (region de Kavango) et en RDC (entre Kwilu et Kasai).",
+      "totalPopulation": 580000,
+      "referenceYear": 2026,
+      "source": "Joshua Project, une base de données missionnaire consultée le 3 novembre 2026, estime à 580 000 le nombre de Mbunda : 392 000 en Angola et 188 000 en Zambie. Le recensement zambien de 2010 compte 1,2 % de Mbunda parmi les 12 526 314 habitants recensés, et 14,7 % dans la province de l'Ouest. Le recensement angolais ne publie pas de chiffre pour les Mbunda dans les sources que nous avons consultées. L'établissement royal mbunda de Zambie signale des Mbunda en Namibie et en République démocratique du Congo, sans donner de chiffre : la répartition par pays reste donc incomplète.",
       "distributionByCountry": [
         {
           "country": "AGO",
-          "population": 380000
+          "population": 392000,
+          "note": "Estimation de Joshua Project (2026) ; provinces du Moxico et du Cuando Cubango"
         },
         {
           "country": "ZMB",
-          "population": 183000
-        },
-        {
-          "country": "NAM",
-          "population": 8000
-        },
-        {
-          "country": "COD",
-          "population": 5000
+          "population": 188000,
+          "note": "Estimation de Joshua Project (2026). Le recensement de 2010 compte 1,2 % de Mbunda dans le pays, 14,7 % dans la province de l'Ouest et 1,6 % dans celle du Nord-Ouest."
         }
       ]
     },
+    "gaps": [
+      {
+        "field": "content.organization.roleOfLineages",
+        "reason": "Les sources que nous avons consultées ne décrivent pas le rôle des lignages chez les Mbunda."
+      },
+      {
+        "field": "content.demography.distributionByCountry",
+        "reason": "Les sources que nous avons consultées ne donnent pas de chiffre pour les Mbunda de Namibie et de République démocratique du Congo."
+      }
+    ],
     "sources": [
       {
         "title": "Joshua Project – Mbunda in Angola, 2025",
         "url": "https://joshuaproject.net/people_groups/13643/AO",
         "tier": "unverified",
-        "source_kind": "missionary_database"
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire. Page consultée le 3 novembre 2026 : elle indique 392 000 Mbunda en Angola et 580 000 dans les deux pays où elle les recense."
       },
       {
         "title": "Joshua Project – Mbunda in Zambia, 2025",
         "url": "https://joshuaproject.net/people_groups/13643/ZA",
         "tier": "unverified",
-        "source_kind": "missionary_database"
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire. Page consultée le 3 novembre 2026 : elle indique 188 000 Mbunda en Zambie."
       },
       {
         "title": "The Mbunda Royal Establishment Zambia – The History of the Mbunda People",
         "url": "https://mbundaroyalestablishmentzambia.wordpress.com/the-history-of-the-mbunda-people/",
-        "tier": "unverified"
+        "tier": "unverified",
+        "source_kind": "community",
+        "notes": "Histoire publiée en 2017 par l'établissement royal mbunda de Zambie, relue le 3 novembre 2026. Elle rapporte le récit de migration depuis le Soudan, l'étape de Kola, les huit branches mbunda, la prière Ng'ombelo et le sens du mot mbunda, « soil that is reddish ». Elle s'appuie sur Chikota cha VaMbunda Ku Thang'ulu na Chithemwa Chavo (Cheke cha Mbunda Cultural and Writers Association, Lusaka, 2011), que nous n'avons pas lu."
+      },
+      {
+        "title": "The Culture and Traditions of the Mbunda People",
+        "author": "The Mbunda Royal Establishment Zambia",
+        "url": "https://mbundaroyalestablishmentzambia.wordpress.com/the-culture-and-traditions-of-the-mbunda-people/",
+        "tier": "unverified",
+        "source_kind": "community",
+        "notes": "Page de l'établissement royal mbunda de Zambie, lue le 3 novembre 2026. Elle présente le mukanda comme « the most important Mbunda Ceremony » et décrit le bwali, la cérémonie des jeunes filles."
+      },
+      {
+        "title": "Mbunda Traditional Ceremonies",
+        "author": "The Mbunda Royal Establishment Zambia",
+        "url": "https://mbundaroyalestablishmentzambia.wordpress.com/mbunda-traditional-ceremonies/",
+        "tier": "unverified",
+        "source_kind": "community",
+        "notes": "Page de l'établissement royal mbunda de Zambie, lue le 3 novembre 2026. Elle décrit la cérémonie Lukwakwa du chef principal Sikufele à Manyinga, qui commémore les combats menés avec les Lozi « in support of Prince Mubukwanu », et la cérémonie Cheke au palais de Mushuwa, reprise en 2011."
+      },
+      {
+        "title": "The Royal Mbunda Kingdom Lineage",
+        "author": "The Mbunda Royal Establishment Zambia",
+        "url": "https://mbundaroyalestablishmentzambia.wordpress.com/the-royal-mbunda-kingdom-lineage/",
+        "tier": "unverified",
+        "source_kind": "community",
+        "notes": "Liste des vingt-deux souverains mbunda, lue le 3 novembre 2026. Elle cite comme source The First Mbunda-English Dictionary and Thesaurus (2015), que nous n'avons pas lu, et indique pour Mbandu Lyonthzi Kapova « captured by the Portuguese »."
+      },
+      {
+        "title": "The MRE Responds to Mwene Mbandu",
+        "author": "The Mbunda Royal Establishment Zambia",
+        "year": 2017,
+        "url": "https://mbundaroyalestablishmentzambia.wordpress.com/the-mre-responds-to-mwene-mbandu/",
+        "tier": "unverified",
+        "source_kind": "community",
+        "notes": "Lettre datée du 18 avril 2017, adressée à Mwene Mbandu Lifuti au palais de Yambayamba, à Lumbala Nguimbo, lue le 3 novembre 2026. Elle mentionne « the Mulambwa/Chiyengele Friendship Treaty of 1795 entered into orally »."
       },
       {
         "title": "Qiraat Africa – Mbunda people of Angola and Zambia",
@@ -135,12 +180,66 @@
         "title": "Glottolog — Mbunda (mbun1249)",
         "url": "https://glottolog.org/resource/languoid/id/mbun1249",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu le 3 novembre 2026. Il classe le mbunda dans le groupe ngangela-nyemba, avec le luimbi et le mbwela, et compte le nkangala comme une langue distincte. Il recense les noms Chimbunda, Gimbunda, Kimbunda et Mbuunda, et les travaux de Boubacar Diarra sur la langue, dont une Gramática Mbunda (1990)."
+      },
+      {
+        "title": "2010 Census of Population and Housing: National Analytical Report",
+        "author": "Central Statistical Office, Zambie",
+        "year": 2012,
+        "url": "https://catalog.ihsn.org/catalog/4124",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. 63-68",
+        "notes": "Rapport du recensement zambien de 2010, publié à Lusaka en décembre 2012, lu le 3 novembre 2026 dans la copie diffusée par le catalogue international des enquêtes IHSN. Tableau 10.6 : Mbunda, 1,2 % de 12 526 314 habitants ; tableau 10.8 : 14,7 % dans la province de l'Ouest ; tableaux 10.1 et 10.4 : le mbunda, langue de communication de 0,7 % de la population et de 10,1 % dans la province de l'Ouest."
+      },
+      {
+        "title": "La mascarade Makishi",
+        "author": "UNESCO",
+        "year": 2008,
+        "url": "https://ich.unesco.org/fr/RL/la-mascarade-makishi-00140",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche de la Liste représentative du patrimoine culturel immatériel de l'humanité, lue en français le 3 novembre 2026 : « La mascarade Makishi marque la fin du mukanda, un rituel annuel d'initiation pour les garçons de huit à douze ans. » L'élément est inscrit en 2008, après avoir été proclamé en 2005."
+      },
+      {
+        "title": "Les rites occultes de la sorcellerie sur le Haut-Zambèse",
+        "author": "Marthe Kuntz",
+        "year": 1932,
+        "url": "https://www.persee.fr/doc/jafr_0037-9166_1932_num_2_2_1530",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 123",
+        "notes": "Journal de la Société des Africanistes, tome 2, fascicule 2, p. 123-138, lu sur Persée le 3 novembre 2026. L'autrice y présente les observations qu'elle a faites dans le nord-ouest de la Rhodésie, notamment « parmi la tribu des ma-Mbunda, immigrée sous le règne de Lewanika, roi des ma-Lozi »."
+      },
+      {
+        "title": "Barotseland: Eight Years among the Barotse",
+        "author": "D. W. Stirke",
+        "year": 1922,
+        "url": "https://archive.org/details/barotselandeight00stir",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 20-21, 53, 61, 69, 122-123",
+        "notes": "Londres, John Bale, Sons & Danielsson, ouvrage d'un administrateur colonial de la Rhodésie du Nord, avec un chapitre d'introduction de Sir Harry Johnston. La page de titre ne porte pas de date ; le livre cite un article de juin 1922. Lu dans la numérisation d'Internet Archive le 3 novembre 2026. Johnston écrit p. 21 que « bunda » revient sous les formes bundu, bundo et bunda « without implying close relationship between the different forms of speech thus termed »."
+      },
+      {
+        "title": "Sur le Haut-Zambèze : voyages et travaux de mission",
+        "author": "François Coillard",
+        "year": 1899,
+        "url": "https://archive.org/details/surlehautzambeze00coil",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 364, 520-521",
+        "notes": "Paris, Berger-Levrault, 1899, lettres d'un missionnaire au Barotseland. Relu dans l'exemplaire numérisé par Internet Archive le 3 novembre 2026 : « Elle se choisit un Mombunda »."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Un peuple bantou du sud-est de l'Angola et de l'ouest de la Zambie, qui se nomme Vambunda et parle le mbunda. Il ne faut pas le confondre avec les Ambundu, qui parlent le kimbundu.",
+      "followUp": "D'où vient le nom Mbunda, que les Mbunda relient à une terre rouge ?"
+    }
   },
   "nameHistory": {
-    "summary": "Le nom Mbunda désigne un peuple du sud-est de l'Angola, établi aussi dans l'ouest de la Zambie, qui se nomme lui-même Vambunda ; sa langue est le chimbunda. Il ne faut pas le confondre avec les Ambundu, qui parlent le kimbundu. Les Mbunda donnent eux-mêmes une explication de leur nom ; nous la présentons plus bas avec ce que disent les autres sources.",
+    "summary": "Le nom Mbunda désigne un peuple du sud-est de l'Angola, établi aussi dans l'ouest de la Zambie, qui se nomme lui-même Vambunda ; sa langue est le chimbunda. Il ne faut pas le confondre avec les Ambundu, qui parlent le kimbundu. Les missionnaires l'ont écrit Mombunda ou ma-Mbounda. Les Mbunda donnent eux-mêmes une explication de leur nom ; nous la présentons plus bas avec ce que disent les autres sources.",
     "names": [
       {
         "nameText": "Mbunda",
@@ -190,6 +289,72 @@
                 "tier": "unverified",
                 "source_kind": "community",
                 "notes": "Page publiée le 29 mars 2017 par l'établissement royal mbunda de Zambie, lue le 11 octobre 2026. Elle s'appuie notamment sur Chikota cha VaMbunda Ku Thang'ulu na Chithemwa Chavo (Cheke cha Mbunda Cultural and Writers Association, Lusaka, 2011), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2010,
+              "to": 2012,
+              "label": "Recensement de 2010, publié en 2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbunda figure dans le recensement zambien de 2010 à la fois comme nom d'un groupe ethnique, qui réunit 1,2 % des habitants, et comme nom d'une langue de communication, selon le Central Statistical Office de Zambie.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "2010 Census of Population and Housing: National Analytical Report",
+                "author": "Central Statistical Office, Zambie",
+                "year": 2012,
+                "url": "https://catalog.ihsn.org/catalog/4124",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "p. 64-68",
+                "notes": "Rapport du recensement zambien de 2010, publié à Lusaka en décembre 2012, lu le 3 novembre 2026 dans la copie diffusée par le catalogue international des enquêtes IHSN. Tableaux 10.1 et 10.6."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mbunda s'écrit ma-Mbunda chez Marthe Kuntz, qui présente les ma-Mbunda du nord-ouest de la Rhodésie comme une tribu « immigrée sous le règne de Lewanika, roi des ma-Lozi ».",
+            "formAsWritten": "ma-Mbunda",
+            "sources": [
+              {
+                "title": "Les rites occultes de la sorcellerie sur le Haut-Zambèse",
+                "author": "Marthe Kuntz",
+                "year": 1932,
+                "url": "https://www.persee.fr/doc/jafr_0037-9166_1932_num_2_2_1530",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 123",
+                "notes": "Journal de la Société des Africanistes, tome 2, fascicule 2, p. 123-138, lu sur Persée le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Vers 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mbunda partage sa racine bunda avec d'autres noms d'Angola et de l'ouest de la Zambie, écrits bundu ou bundo, sans que les langues ainsi nommées soient proches, selon Sir Harry Johnston. Il décrit le mbunda comme une langue parlée de part et d'autre du haut Zambèze.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Barotseland: Eight Years among the Barotse",
+                "author": "D. W. Stirke",
+                "year": 1922,
+                "url": "https://archive.org/details/barotselandeight00stir",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 20-21",
+                "notes": "Londres, John Bale, Sons & Danielsson, ouvrage d'un administrateur colonial de la Rhodésie du Nord ; le passage cité appartient au chapitre d'introduction de Sir Harry Johnston. Lu dans la numérisation d'Internet Archive le 3 novembre 2026 : « Bunda » est « a language and tribal name which in the shapes of -bundu, -bundo, and -bunda haunts Angola and Western Zambezia »."
               }
             ]
           },

@@ -8,95 +8,92 @@
     "appellations": {
       "mainName": "Punu",
       "selfAppellation": "Bapunu",
-      "exonyms": [
-        "Punu (terme occidental issu de l'administration coloniale francaise du 19e siecle)",
-        "Bapounou (variante orthographique francaise)",
-        "Sira",
-        "Ban Sira",
-        "Ipunu (nom de la langue dans la denomination interne)"
-      ],
-      "originOfExonyms": "Le nom 'Punu' apparaît dans l'administration coloniale française du Gabon au XIXe siècle. Le premier contact documenté avec un Européen date de juin 1865. Sira ou Ban Sira renvoie à la langue Yipunu, aussi appelée Yisira, et rassemble des groupes proches, dont les Ghisir. Dans Bapunu, le début Ba- vient des langues bantoues et signifie 'peuple de'.",
-      "whyProblematic": "Le terme Punu recouvre une realite de meta-ethnie plutot que d'un groupe homogene. Il englobe plusieurs clans distincts (neuf clans symbolises par les neufs points sur le front des masques blancs) vivant dans le sud du Gabon et le nord du Congo, unis par la langue et une culture commune mais pas par une organisation politique centralisee.",
-      "contemporaryUsage": "Punu et Bapunu sont les termes courants en francais et en yipunu. La langue Yipunu est officiellement reconnue au Gabon. Le groupe Shira-Punu constitue l'un des quatre grands groupes ethniques du Gabon, representant environ 18,9% de la population selon le recensement de 2012.",
+      "exonyms": ["Apono", "Pounou"],
+      "originOfExonyms": "La forme Apono apparaît chez l'explorateur Paul Du Chaillu, qui traverse leur pays en 1865 ; l'anthropologue Julien Bonhomme reconnaît des Bapunu dans les gens qu'il décrit. Les missionnaires catholiques écrivent Pounou, comme le père Joseph Bonneau dans sa grammaire de 1940. Selon une explication recueillie auprès de sources orales par Amevi Christine Cerena Tomba Diogo, le nom viendrait de puni, qui signifie « assassin » ou « tueur » : il rappellerait la crainte que les Punu inspiraient à leurs voisins, et cette explication est aujourd'hui un motif de fierté.",
+      "whyProblematic": "Le nom Punu désigne un peuple, mais certains auteurs le rattachent à un ensemble plus large. Selon Magang-Ma-Mbuju Wisi et Florent Mbumb-Bwas (1974), cités par Tomba Diogo, les Punu seraient un sous-groupe d'une entité appelée Bajag, qui comprenait aussi les Gisir, les Varama, les Vungu, les Lumbu ou les Vili ; l'administration coloniale n'aurait pas conservé ce nom. Les langues de ces voisins, comme le sira, le barama ou le vumbu, sont proches du yipunu mais distinctes de lui, selon le catalogue Glottolog.",
+      "contemporaryUsage": "Punu et Bapunu sont les formes courantes aujourd'hui ; la langue se nomme yipunu ou ipunu. Hors de leurs provinces d'origine, la Ngounié et la Nyanga, des Punu vivent le long de la route nationale et dans les grandes villes, à Lambaréné, à Libreville et à Port-Gentil, selon Tomba Diogo (2015).",
       "linguisticFamily": "FLG_NIGERCONGO",
-      "ethnoLinguisticGroup": "Bantou (Zone B, B.43, sous-groupe Shira-Punu)",
-      "historicalRegion": "Bassin de la Ngounie et province de Nyanga au Gabon meridional ; departement du Niari en Republique du Congo. Centres historiques : Mouila, Ndende, Tchibanga (Gabon).",
+      "ethnoLinguisticGroup": "Bantou, groupe B40 (sira-punu) de la classification de Guthrie, où le yipunu porte le code B43",
+      "historicalRegion": "Provinces de la Ngounié et de la Nyanga, au sud du Gabon, autour de Mouila et de Tchibanga ; sud de la République du Congo.",
       "currentCountries": ["GAB", "COG"],
-      "spellingAliases": ["Bapounou"]
+      "spellingAliases": ["Bapounou", "Pounou"]
     },
-    "ethnicities": [
-      "Bapunu proprement dits — groupe principal du sud du Gabon (provinces de Ngounie et Nyanga)",
-      "Ghisir (Bughisir) — groupe apparente parlant le Yipunu / Yisira, considere comme frere des Punu",
-      "Varama — clan punu du bassin de la Ngounie",
-      "Bavarama — sous-groupe regional",
-      "Bapindji — groupe rattache au complexe Shira-Punu",
-      "Bavungu — clan du littoral congolais",
-      "Membres des neuf clans symbolises par les neuf points sur les masques okuyi (mukudj)"
-    ],
+    "ethnicities": ["Punu (Bapunu)"],
     "origins": {
-      "ancientOrigins": "Selon la tradition orale et les travaux de Magang-Ma-Mbuju et Mbumb Bwass, les Punu descendent d'un peuple appele 'Jagas', originaire du Kasai et du bassin du Zambeze. Ces ancetres auraient envahi le royaume du Kongo en 1568. Les historiens Batsikama et Ipari ont toutefois conteste cette these en concluant que les envahisseurs de 1568 etaient plutot d'origine kongo. En tout etat de cause, les etudes montrent que les ancetres punu ont migre depuis le Congo vers le sud-Gabon, en fuyant les guerres et l'influence portugaise, pendant plusieurs siecles. La tradition orale decrit une longue serie de migrations depuis le Congo.",
-      "formationPeriod": "Les Punu ont migre vers la Republique du Congo au 16e siecle, puis vers le sud du Gabon au 18e siecle. Le nom Punu s'est fixe avec l'administration coloniale francaise au 19e siecle. Les Europeens ont eu leur premier contact avec la societe punu en juin 1865 ; un acces plus large n'a ete obtenu qu'entre 1925 et 1930 avec l'affaiblissement du secret des societes.",
+      "ancientOrigins": "Les récits de l'origine des Punu ne concordent pas. Selon Magang-Ma-Mbuju Wisi et Florent Mbumb-Bwas (1974), leurs ancêtres feraient partie des guerriers que les sources portugaises appellent Jagas, qui envahirent le royaume du Kongo au milieu du XVIe siècle avant d'être repoussés. L'historienne Monique Koumba Manfoumbi (1987) situe leur point de départ au Kasaï, dans l'actuelle République démocratique du Congo. Un récit recueilli en 2013 auprès de Florent Mbadinga fait venir du Kasaï l'ancêtre Ngeli Ilagou, père des neuf ancêtres des clans punu. Ces trois explications sont rapportées par Tomba Diogo (2015).",
+      "formationPeriod": "Selon Monique Koumba Manfoumbi (1987), qui a reconstitué sur dix générations la généalogie du clan Budjal, les Punu auraient achevé leurs migrations et se seraient installés dans leur pays actuel au début du XVIIIe siècle. En 1940, le père Joseph Bonneau écrit qu'ils ont quitté la région de Divenié plus d'un siècle et demi auparavant.",
       "migrationRoutes": [
-        "Bassin du Congo (Kasai, Zambeze) — point d'origine selon la tradition orale",
-        "Migration vers le bassin du Congo meridional au 16e siecle",
-        "Migration vers le sud du Gabon (Ngounie, Nyanga) au 18e siecle",
-        "Installation definitive dans le couloir de la Ngounie et les provinces meridionales du Gabon"
+        "Du Kasaï, dans l'actuelle République démocratique du Congo, vers le sud de l'actuelle République du Congo, selon Koumba Manfoumbi (1987)",
+        "Premiers villages au Congo, Ndunda et Bibake, puis dispersion à partir de Divenié, selon le récit de Jean Christian Mackaya Mboumba recueilli en 2013",
+        "De la région de Divenié vers les fleuves Nyanga et Ngounié, selon le père Joseph Bonneau (1940)"
       ],
       "historicalSettlementZones": [
-        "Province de la Ngounie (Gabon) — coeur du territoire Punu, avec Mouila et Fougamou",
-        "Province de la Nyanga (Gabon) — Tchibanga et le bassin de la Nyanga",
-        "Departement du Niari (Republique du Congo) — environ 16 500 locuteurs",
-        "Bassin de la riviere Ngounie — corridor de migration et habitat historique"
+        "Province de la Ngounié (Gabon), autour de Mouila",
+        "Province de la Nyanga (Gabon), autour de Tchibanga",
+        "Territoires de Mouila, d'Ibanga, de Divenié et de Mayoumba, cités par Joseph Bonneau en 1940",
+        "Sud de la République du Congo"
       ],
-      "unificationsOrDivisions": "La societe Punu n'a jamais forme un Etat centralise : elle est organisee en chefferies autonomes et en grands groupes claniques decentralises. Neuf clans principaux structurent l'identite collective, symbolises par les neuf points sur le front des masques rituels. La societe secrete Okuyi (et la societe feminine Ndjembe) joue un role unificateur a travers les villages et les clans.",
-      "externalInfluences": "Colonisation francaise du Gabon (a partir de 1839, effective au 19e siecle) : reorganisation administrative, christianisation, suppression partielle des societes secretes. Commerce precolonial de l'ivoire et de l'huile de palme avec les negociants cotieres. L'influence du christianisme catholique et protestant est aujourd'hui dominante : environ les trois quarts des Punu sont chretiens. Contact avec les groupes voisins Fang, Nzebi et Teke par le commerce et les mariages interethniques."
+      "unificationsOrDivisions": "Les Punu se répartissent en clans, appelés ifumb ou ibandu. Au XVIIIe siècle, selon la carte de Monique Koumba Manfoumbi, les clans Bujal, Micimba, Bumweli, Dibamb-Kadi et Bagambou sont installés dans la Ngounié, et les clans Mincumba, Badoumbi, Dikanda et Ndingi dans la Nyanga. La tradition limite la liste à neuf clans, mais les auteurs ne donnent pas la même liste : celles de l'anthropologue Raymond Mayer et de l'historien Hugues Mouckaga n'ont que cinq clans en commun, selon Tomba Diogo (2015).",
+      "externalInfluences": "Les Punu sont décrits comme des commerçants très actifs et des guerriers réputés dans les travaux que cite Tomba Diogo (2015). Paul Du Chaillu, qui arrive chez eux en 1865, est le premier Européen que voient beaucoup de villages : il trouve le village du chef Nchiengain frappé par la variole. À l'époque coloniale, des missionnaires catholiques et protestants étudient leur histoire et leur langue, comme le père Joseph Bonneau. Joshua Project, une base de données missionnaire, compte en 2026 environ 76 % de chrétiens parmi les Punu du Gabon.",
+      "majorHistoricalEvents": "Milieu du XVIe siècle : invasion du royaume du Kongo par les Jagas, dont les Punu descendraient selon Magang-Ma-Mbuju Wisi et Florent Mbumb-Bwas. Début du XVIIIe siècle : fin des migrations et installation dans la Ngounié et la Nyanga, selon Monique Koumba Manfoumbi. Mai et juin 1865 : Paul Du Chaillu séjourne chez le chef apono Nchiengain, puis à Mokaba. Lors de la pénétration coloniale, les Punu prennent les armes contre elle, selon Tomba Diogo (2015). 17 août 1960 : indépendance du Gabon."
     },
     "organization": {
-      "traditionalPoliticalSystem": "La societe Punu est organisee en chefferies autonomes decentralisees. Il n'existe pas de structure politique englobante. La chefferie (nganga nkosi) est detenue par un homme age, chef de lignage, dont l'autorite repose sur la seniority et le controle des rites. Les villages sont des portions temporaires de groupes de parente qui cohabitent. Les grands groupes de parente et de clans s'etendent sur tout le sud du Gabon, transcendant les limites villageoises.",
-      "clanOrganization": "La societe Punu est structuree en neuf clans principaux (symbolises par les neuf points sur le front des masques okuyi), chacun ayant ses propres totems alimentaires et ses tabous specifiques. Les clans sont patrilineaires. L'habitat est patrilocal (la femme rejoint la famille du mari apres le mariage). Les grandes unites de parente (ibadu = clan en yipunu) regissent les droits fonciers, les mariages et les obligations rituelles. La societe secrete feminine Ndjembe organise l'agriculture et renforce le pouvoir des femmes dans le domaine spirituel.",
+      "traditionalPoliticalSystem": "Chez les Punu, le pouvoir se transmet par la lignée maternelle : le neveu, fils de la sœur, hérite du pouvoir de son oncle maternel, selon Tomba Diogo (2015). En 1865, Paul Du Chaillu présente Nchiengain, qu'il rencontre au village de Mouendi, comme le principal chef apono de la région.",
+      "clanOrganization": "Le clan, ifumb ou ibandu, est le groupe de parenté principal : on se définit d'abord par son clan. Les Punu ont un régime de filiation matrilinéaire : seule l'ascendance maternelle compte pour transmettre le nom, les privilèges et l'appartenance au clan, selon Tomba Diogo (2015), qui s'appuie sur l'historien Nicolas Metegue N'nah. La tradition compte neuf clans, issus des neuf enfants d'un ancêtre commun.",
       "ageClassSystems": null,
-      "roleOfLineages": "Les lignages patrilineaires (ibadu) constituent le cadre de la vie sociale, economique et rituelle. Les droits sur la terre sont communaux et geres par les anciens du lignage. Les reliques ancestrales (os conserves dans des paniers en rotin plaques de cuivre) sont les symboles les plus sacres des lignages ; elles sont utilisees dans les rituels pour invoquer la protection et la puissance des ancetres. Les hommes ages deviennent pretres (nganga), maitres des forces occultes.",
-      "religiousAuthority": "La religion traditionnelle Punu est centree sur le culte du dieu supreme Nyambye et des esprits ancestraux. Les nganga (pretres-guerisseurs, generalement des anciens) sont les intermediaires entre le monde des vivants et celui des esprits. Les maladies sont attribuees a l'action d'esprits malefiques (mulosi, sorcier du cercle familial). Les rites de guerison visent a chasser l'esprit mauvais. Les societes secretes masculines (notamment l'Okuyi, associe aux masques et aux danses) et feminines (Ndjembe) structurent la vie spirituelle. Le christianisme (catholicisme et protestantisme) est aujourd'hui majoritaire, mais coexiste avec les pratiques traditionnelles."
+      "roleOfLineages": "Le lignage, désigné par les mots modji, kane, dibure ou ndawu, est la plus petite subdivision du clan ; il se réfère généralement à une femme. Les Punu pratiquent l'exogamie : on choisit son conjoint hors de son groupe de parenté, et les époux s'installent ensuite chez le mari. Tomba Diogo (2015) précise que ce système s'est beaucoup transformé aujourd'hui.",
+      "religiousAuthority": "Nzambi Pungu est l'un des noms de Dieu chez les Punu, selon Tomba Diogo (2015). Les masques blancs appartenaient au bwiri, la société secrète des hommes, et seuls des initiés pouvaient les porter, selon Louis Perrois et Charlotte Grand-Dufay. Un informateur de Tomba Diogo, Lié Luc Mounguengui Nyonda, affirme que les Punu n'ont pas de rite d'initiation propre : le bwiti ou le nyembe viendraient de sociétés voisines."
     },
     "languages": {
-      "mainLanguage": "Yipunu / Yisira (Punu)",
+      "mainLanguage": "Yipunu, ou ipunu (puu)",
       "isoCodes": ["puu"],
-      "dialects": [
-        "Yipunu proprement dit — dialecte du groupe Punu du Gabon (Ngounie, Nyanga)",
-        "Yisira — variante liee aux Ghisir, tres proche du Yipunu et souvent considere comme un dialecte du meme continuum",
-        "Variante du Niari — parlee par les environ 16 500 locuteurs de la Republique du Congo"
-      ],
-      "vehicularRole": "Le Yipunu compte environ 152 000 locuteurs au Gabon (principalement dans les provinces de Ngounie et Nyanga) et environ 16 500 au Congo (departement du Niari), soit environ 168 500 locuteurs au total selon Omniglot (2022). C'est l'une des principales langues du Gabon meridional. Il est classe B.43 dans la classification de Guthrie. La langue Yipunu est utilisee dans l'enseignement primaire et les medias regionaux du Gabon. Le francais est la langue officielle et vehiculaire nationale."
+      "dialects": [],
+      "vehicularRole": "Le yipunu est une langue bantoue, classée B43 par le linguiste Malcolm Guthrie. Le catalogue Glottolog le rapproche du vumbu, puis du sangu, du sira et du barama. Selon Tomba Diogo (2015), les locuteurs du yipunu représentent un peu plus du quart de la population gabonaise et vivent dans tout le pays, mais la langue a son foyer dans la Ngounié et la Nyanga, où l'on parle aussi le yisira, le yisangu, le yilumbu et le yivungu."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q2576790",
+      "glottocode": "punu1239",
+      "iso639_3": "puu"
     },
     "culture": {
-      "majorRites": "Le rite le plus emblematique est la danse de l'Okuyi, performed par des danseurs masculins portant les masques mukudj (blancs) sur des echasses lors des funerailles et des ceremonies d'initiation. Des masques noirs (masques d'entrainement) sont utilises d'abord pour annoncer l'arrivee du porteur de masque blanc. Les funerailles comprennent des operations rituelles pour determiner la cause du deces : si la cause reste inconnue, un mulosi (sorcier) de la famille est designé responsable. Les rites de guerison visent a chasser les esprits malefiques par des ceremonies specifiques. La scarification des femmes (motifs en losanges sur le front et les tempes) est un rite de beaute et de passage qui marque l'appartenance au groupe et atteste du courage. Les reliques ancestrales (os dans des paniers en rotin plaques de cuivre) sont utilisees lors des rituels de lignage.",
-      "symbols": "Le masque mukudj (okuyi) blanc est le symbole le plus iconique de la culture Punu : il represente une femme ancestrale idealisee, avec les neufs points sur le front symbolisant les neuf clans punu. La couleur blanche (kaolin) symbolise la paix, l'au-dela et les esprits des morts. Les motifs de scarification en losanges (diamonds) sur le front et les tempes des femmes sont a la fois un rite de beaute et un marqueur identitaire. La calebasse de vin de palme (malamu) est associee aux ceremonies collectives. Les reliques ancestrales (paniers plaques de cuivre) representent le lien entre les vivants et les ancetres.",
-      "artsAndMusic": "La sculpture sur bois est l'art majeur des Punu, principalement sous forme de masques. Les masques mukudj (okuyi) sont sculptes en bois et recouverts de kaolin blanc ; leurs traits representent une femme consideree comme idealement belle dans le village. Les sculpteurs punu integrent les motifs de scarification (losanges sur le front et les tempes) dans leurs masques, temoignant d'une esthetique de la beaute feminine liee au courage. Ces masques ont exerce une influence decisive sur l'art occidental : Pablo Picasso possedait un masque Punu des 1910 (visible dans son atelier au 11 boulevard de Clichy), et Matisse s'en est inspire pour son Portrait de Madame Matisse (1913). Les masques noirs (mukudj noirs) sont plus rares car caches comme dangereux. La musique de danse Punu accompagne les ceremonies de l'Okuyi avec des percussions et des chants collectifs. La poterie (jugs, assiettes en terre) et la joaillerie sont pratiques par les femmes. La sculpture rituelle (bois, metal, reliques) est associee aux societes secretes.",
-      "spiritualities": "La cosmologie Punu est animiste : Nyambye est le dieu supreme createur, mais l'interaction quotidienne se fait principalement avec les esprits des ancetres et les esprits de la nature. Les esprits des morts (inyunyi = ame/esprit en yipunu) continuent d'agir sur le monde des vivants. Les maladies et malheurs sont interpretes comme l'oeuvre d'esprits malefiques, souvent envoyes par un mulosi (sorcier jaloux dans le cercle familial). Les nganga (pretres-guerisseurs-anciens) channelisent les esprits feminins anciens a travers les grands masques mukudj lors des ceremonies de l'Okuyi, maintenant ainsi l'ordre social et spirituel. La societe Ndjembe (feminine) organise l'agriculture et detient un pouvoir spirituel parallele. L'objet de culte Mbumba (richesse, commerce) est l'une des reliques cultuelles notables. Le christianisme (catholique et protestant, environ trois quarts de la population) coexiste avec ces pratiques dans un syncretisme courant."
+      "majorRites": "Les masques blancs sortaient pour des danses acrobatiques sur échasses, appelées entre autres mukuyi, le plus souvent lors des funérailles et en l'honneur des ancêtres que les masques incarnaient, selon Louis Perrois et Charlotte Grand-Dufay. Le Saint Louis Art Museum précise que ces masques mukudj de la société okuyi étaient dansés lors des funérailles dans le bassin de la Ngounié, et qu'ils sortent aujourd'hui surtout pour le divertissement. Les initiations du bwiti et du nyembe sont aussi pratiquées, selon Tomba Diogo (2015).",
+      "symbols": "Le masque blanc est le symbole le plus connu des Punu. Selon le Saint Louis Art Museum, sa couleur blanche symbolise la paix, l'au-delà et les esprits des morts. Le chiffre neuf a un sens particulier : il renvoie aux neuf symboles visibles sur le masque itengi i mukudji et aux neuf clans, et la tradition parle de neuf routes à l'entrée du pays punu, selon Tomba Diogo (2015). En 1865, Paul Du Chaillu note que des femmes du village de Nchiengain portent de longues cicatrices sur le front, entre les sourcils et sur les joues.",
+      "artsAndMusic": "Les masques blancs sont connus pour leur visage couvert d'argile blanche, leurs yeux légèrement bridés, leurs lèvres rouges et leur coiffure à plusieurs coques de cheveux tressés, selon Louis Perrois et Charlotte Grand-Dufay ; Picasso en possédait un. Les mêmes auteurs décrivent aussi des statues qui gardaient les ossements des défunts, des amulettes et des instruments de musique. La devise, kûmbù, est un genre de la littérature orale punu : elle donne l'identité d'un clan ou d'une personne, et chaque clan a la sienne, selon Tomba Diogo (2015).",
+      "spiritualities": "Les masques blancs incarnaient les ancêtres ; ils avaient aussi un rôle de police et pouvaient éloigner les forces du mal, selon Louis Perrois et Charlotte Grand-Dufay. Dans les contes punu étudiés par Tomba Diogo (2015), le couple Papa Nzambi et Maman Pungu représente le couple humain, et Nzambi Pungu est l'un des noms de Dieu."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Les Punu n'ont pas forme de royaume centralise. Leur organisation traditionnelle est celle de chefferies claniques autonomes. Les plus importantes se situaient dans le bassin de la Ngounie et de la Nyanga au sud du Gabon. La societe secrete de l'Okuyi jouait un role unificateur au-dela des frontieres des chefferies. Sous la colonisation francaise, les chefferies ont ete reorganisees dans les cadres administratifs des cercles coloniaux.",
-      "relationsWithNeighbors": "Les Punu ont entretenu des relations commerciales avec les Fang (ivoire, esclaves, sel), les Nzebi et les Teke. Des mariages interethniques ont favorise des echanges culturels. La societe Punu etait historiquement impliquee dans la traite des esclaves et le commerce du sel comme activites economiques masculines principales. Les contacts avec les missionnaires protestants (Mission romande suisse) et catholiques ont commence au 19e siecle.",
-      "conflictsOrAlliances": "Les migrations historiques des Punu depuis le Congo vers le Gabon ont ete en partie motivees par la fuite de guerres et de l'influence portugaise. En 1568, des groupes ancetres potentiels (dits Jagas dans les sources europeennes) ont participe a des conflits dans le royaume du Kongo. La colonisation francaise du Gabon (19e-20e siecles) a mis fin aux structures politiques independantes des chefferies Punu. La diaspora esclavagiste a touche les Punu : un document de 1706 a Londres decrit une jeune femme punu (identifiee par ses scarifications en losanges) en situation d'esclavage qui a reussi a s'echapper.",
-      "diaspora": "La diaspora punu dans les grandes villes gabonaises (Libreville, Port-Gentil) est significative depuis l'independance (1960). Une communaute punu existe aussi a Brazzaville et Pointe-Noire en Republique du Congo. La traite atlantique a emmene des Punu jusqu'en Europe des le 18e siecle, comme en temoigne le document londonien de 1706. Aujourd'hui, la diaspora gabonaise en France (notamment a Paris) comprend des personnes d'origine punu."
+      "kingdomsOrChiefdoms": "Au XIXe siècle, les Punu forment l'une des confédérations du Gabon, à côté de celles des Mpongwé, des Gisir et des Obamba, selon l'historien Nicolas Metegue N'nah. En 1865, Paul Du Chaillu rencontre le chef Nchiengain, qu'il présente comme le principal chef apono de la région.",
+      "relationsWithNeighbors": "En 1865, Paul Du Chaillu décrit les Apono entre les Otando, dont le chef Mayolo est l'ami de Nchiengain, et les Ishogo, qui parlent une langue entièrement différente. Il note que les Apono font un grand commerce de sel, qu'ils paient en esclaves. Selon les travaux que cite Tomba Diogo (2015), les Punu étaient aussi des mercenaires au service des chefs de la cuvette congolaise.",
+      "conflictsOrAlliances": "Selon Magang-Ma-Mbuju Wisi et Florent Mbumb-Bwas (1974), les ancêtres des Punu auraient participé à l'invasion du royaume du Kongo par les Jagas au XVIe siècle. Lors de la pénétration coloniale, les Punu sont les premiers à prendre les armes contre elle, selon Tomba Diogo (2015).",
+      "diaspora": "Des Punu vivent aujourd'hui hors de la Ngounié et de la Nyanga, le long de la route nationale et dans les grandes villes gabonaises, à Lambaréné, à Libreville et à Port-Gentil, selon Tomba Diogo (2015)."
     },
     "demography": {
-      "totalPopulation": 450000,
-      "referenceYear": 2025,
-      "source": "Omniglot (2022) : 168 500 locuteurs de Yipunu ; Gabon recensement 2012 (Shira-Punu/Vili representent 18,9% de la population gabonaise). La population Punu au sens ethnique (groupe Shira-Punu dans son ensemble, dont les Ghisir et groupes apparentes) est estimee a 450 000 personnes en 2025, en tenant compte de la croissance demographique gabonaise (3,5% par an) et congolaise.",
+      "totalPopulation": 317000,
+      "referenceYear": 2026,
+      "source": "Joshua Project, une base de données missionnaire consultée le 3 novembre 2026, estime à 317 000 le nombre de Punu : 296 000 au Gabon et 21 000 en République du Congo. Les résultats globaux du recensement gabonais de 2013 ne donnent pas de répartition par peuple. En 1940, le père Joseph Bonneau estimait la population pounou à environ 160 000 personnes.",
       "distributionByCountry": [
         {
           "country": "GAB",
-          "population": 430000,
-          "note": "Principalement dans les provinces de Ngounie (Mouila, Fougamou) et Nyanga (Tchibanga, Ndende) ; presence a Libreville et Port-Gentil"
+          "population": 296000,
+          "note": "Estimation de Joshua Project (2026) ; provinces de la Ngounié et de la Nyanga, et grandes villes"
         },
         {
           "country": "COG",
-          "population": 20000,
-          "note": "Departement du Niari (sud de la Republique du Congo), region de Dolisie"
+          "population": 21000,
+          "note": "Estimation de Joshua Project (2026) ; sud du pays"
         }
       ]
     },
+    "gaps": [
+      {
+        "field": "content.organization.ageClassSystems",
+        "reason": "Les sources que nous avons consultées ne décrivent pas de classes d'âge chez les Punu."
+      },
+      {
+        "field": "content.languages.dialects",
+        "reason": "Les sources que nous avons consultées ne décrivent pas de dialectes du yipunu."
+      }
+    ],
     "sources": [
       {
         "title": "SIL Ethnologue — Punu (puu)",
@@ -119,7 +116,8 @@
       {
         "title": "Saint Louis Art Museum — Mask (mukudj) for the Okuyi Society",
         "url": "https://www.slam.org/collection/objects/2383/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "notes": "Fiche du musée pour un masque d'un artiste punu de la province de la Nyanga, fin du XIXe ou début du XXe siècle, numéro 542:1956, lue le 3 novembre 2026 : « This mask's white coloring symbolizes peace, the afterlife, and the spirits of the dead »."
       },
       {
         "title": "Christie's — Punu Mask, Gabon, Okuyi/Mukuyi",
@@ -130,18 +128,97 @@
         "title": "DICE Missouri — Punu cultural database",
         "url": "https://dice.missouri.edu/assets/docs/niger-congo/Punu.pdf",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Fiche de trois pages d'une base de données de l'université du Missouri, lue le 3 novembre 2026. Elle décrit la filiation comme « mainly matrilineal »."
       },
       {
         "title": "Joshua Project — Punu in Gabon",
         "url": "https://joshuaproject.net/people_groups/14484/GB",
         "tier": "unverified",
-        "source_kind": "missionary_database"
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire. Page consultée le 3 novembre 2026 : elle indique 296 000 Punu au Gabon, 317 000 en tout, et 76 % de chrétiens."
+      },
+      {
+        "title": "Joshua Project — Punu in Congo, Republic of the",
+        "url": "https://joshuaproject.net/people_groups/14484/CF",
+        "tier": "unverified",
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire. Page consultée le 3 novembre 2026 : elle indique 21 000 Punu en République du Congo."
+      },
+      {
+        "title": "Glottolog — Punu (punu1239)",
+        "url": "https://glottolog.org/resource/languoid/id/punu1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu le 3 novembre 2026. Il classe le punu avec le vumbu, puis avec le sangu, le sira et le barama, recense les noms Ipunu, Ipounou, Yipunu et Yipounou, et situe la langue au Gabon et au Congo."
+      },
+      {
+        "title": "Étude d'un genre de la littérature orale : la devise (kûmbù) chez les Punu du Gabon",
+        "author": "Amevi Christine Cerena Tomba Diogo",
+        "year": 2015,
+        "url": "https://theses.hal.science/tel-01368245v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 9-26, 75, 96-97",
+        "notes": "Thèse de doctorat soutenue le 27 février 2015 à l'Institut national des langues et civilisations orientales (université Sorbonne Paris Cité), lue sur HAL le 3 novembre 2026. Elle rassemble des récits recueillis en 2013 à Mouila, Tchibanga, Moabi et Libreville, et des travaux d'historiens gabonais. P. 13 : le nom serait « une déformation du terme puni qui signifie ''assassin'' ou ''tueur'' », selon des sources orales ; p. 22 : « seule l'ascendance maternelle est prise en compte pour la transmission du nom, des privilèges, de l'appartenance au clan ou à la classe »."
+      },
+      {
+        "title": "Grammaire Pounou",
+        "author": "Joseph Bonneau",
+        "year": 1940,
+        "url": "https://www.persee.fr/doc/jafr_0037-9166_1940_num_10_1_2490",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 131",
+        "notes": "Journal de la Société des Africanistes, tome 10, 1940, p. 131-162, lu sur Persée le 3 novembre 2026 ; grammaire d'un missionnaire catholique, publiée à l'époque coloniale. P. 131 : « La tribu pounou, dont cette grammaire étudie le dialecte, appartient à la grande famille bantou. » L'auteur la dit « une des plus nombreuses tribus du sud du Gabon », forte d'environ 160 000 personnes."
+      },
+      {
+        "title": "Les tribulations de l'esprit blanc (et de ses marchandises). Voyages et aventures de Paul du Chaillu en Afrique équatoriale",
+        "author": "Julien Bonhomme",
+        "year": 2006,
+        "url": "https://shs.hal.science/halshs-00801592v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 493-512",
+        "notes": "Cahiers d'études africaines, n° 183, 2006, lu sur HAL le 3 novembre 2026. L'auteur situe l'expédition de 1863-1865 « chez les Mitsogo, Bapunu et Masangu » et appelle Nchiengain « le chef bapunu »."
+      },
+      {
+        "title": "Punu",
+        "author": "Louis Perrois et Charlotte Grand-Dufay",
+        "year": 2008,
+        "url": "https://www.fivecontinentseditions.com/documents/title/attachment/9788874394005_FR.pdf",
+        "tier": "unverified",
+        "source_kind": "academic",
+        "notes": "Présentation de l'ouvrage par son éditeur, 5 Continents Editions (Milan), lue le 3 novembre 2026 ; nous n'avons pas lu le livre lui-même. Les masques « appartenaient au bwiri, la société secrète des hommes » et leurs porteurs « exécutaient des danses acrobatiques sur échasses »."
+      },
+      {
+        "title": "Explorations and Adventures in Equatorial Africa",
+        "author": "Paul B. Du Chaillu",
+        "year": 1861,
+        "url": "https://archive.org/details/explorationsand01chaigoog",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 510",
+        "notes": "New York, Harper & Brothers, 1861, récit d'un explorateur. Lu dans la numérisation d'Internet Archive le 3 novembre 2026 : « Next to the Apingi, up the river, are the Aponon. They are said to speak the Ashira dialect »."
+      },
+      {
+        "title": "A Journey to Ashango-Land: And Further Penetration into Equatorial Africa",
+        "author": "Paul B. Du Chaillu",
+        "year": 1867,
+        "url": "https://archive.org/details/journeytoashango00duch",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 189, 231-234",
+        "notes": "Londres, John Murray, 1867, récit d'un explorateur. Relu dans la numérisation d'Internet Archive le 3 novembre 2026. P. 189 : « the Apono trade a good deal in salt, paying for it in slaves »."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Un peuple bantou du sud du Gabon et du sud du Congo, qui se nomme Bapunu et parle le yipunu. Le nom apparaît par écrit en 1865, sous la forme Apono, chez l'explorateur Paul Du Chaillu.",
+      "followUp": "D'où vient le nom Punu, que des récits relient au mot puni ?"
+    }
   },
   "nameHistory": {
-    "summary": "Le nom Punu désigne un peuple bantou du sud du Gabon et du sud-ouest de la République du Congo, qui se nomme lui-même Bapunu. Il apparaît par écrit en 1865, sous la forme Apono. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Punu désigne un peuple bantou du sud du Gabon et du sud de la République du Congo, qui se nomme lui-même Bapunu ; sa langue est le yipunu. Il apparaît par écrit en 1865, sous la forme Apono, et les missionnaires l'ont écrit Pounou. Une explication recueillie auprès de sources orales le relie au mot puni ; nous la présentons plus bas avec ce que disent les autres sources.",
     "names": [
       {
         "nameText": "Punu",
@@ -149,16 +226,83 @@
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Un nom écrit en 1865 sous la forme Apono ; son origine reste inconnue.",
+        "shortLine": "Le nom des Bapunu du sud du Gabon et du Congo, écrit Apono en 1865 et Pounou en 1940.",
         "periodLabel": "Écrit depuis 1865 ; en usage aujourd'hui",
         "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2015,
+              "label": "Recueillie en 2013, publiée en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Punu viendrait de puni, qui signifie « assassin » ou « tueur » : les Punu, guerriers redoutés, auraient reçu ce nom de la crainte qu'ils inspiraient à leurs voisins, selon des sources orales recueillies par Amevi Christine Cerena Tomba Diogo. Elle note que cette explication est encore très répandue et constitue un motif de fierté pour les Punu.",
+            "hypothesisGroup": "origine du nom Punu",
+            "sources": [
+              {
+                "title": "Étude d'un genre de la littérature orale : la devise (kûmbù) chez les Punu du Gabon",
+                "author": "Amevi Christine Cerena Tomba Diogo",
+                "year": 2015,
+                "url": "https://theses.hal.science/tel-01368245v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13",
+                "notes": "Thèse de doctorat soutenue le 27 février 2015 à l'Institut national des langues et civilisations orientales, lue sur HAL le 3 novembre 2026 : l'appellation « punu » ne serait « qu'une déformation du terme puni qui signifie ''assassin'' ou ''tueur'' », une version « recueillie auprès de sources orales »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1974,
+              "to": 1974,
+              "label": "Proposée en 1974"
+            },
+            "era": "modern",
+            "statement": "Le nom Punu désignerait un sous-groupe d'un ensemble plus ancien, les Bajag, qui comprenait aussi les Gisir, les Varama, les Vungu, les Lumbu ou les Vili, selon Magang-Ma-Mbuju Wisi et Florent Mbumb-Bwas, cités par Tomba Diogo. L'administration coloniale n'aurait pas conservé le nom Bajag.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Étude d'un genre de la littérature orale : la devise (kûmbù) chez les Punu du Gabon",
+                "author": "Amevi Christine Cerena Tomba Diogo",
+                "year": 2015,
+                "url": "https://theses.hal.science/tel-01368245v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "Thèse lue sur HAL le 3 novembre 2026. Elle cite Magang-Ma-Mbuju Wisi et Florent Mbumb-Bwas, Les Bajag du Gabon, essai d'étude historique et linguistique (Paris, 1974), que nous n'avons pas lu : les Punu seraient « un sous-groupe de l'entité ethnique Bajag »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1940,
+              "to": 1940,
+              "label": "1940"
+            },
+            "era": "colonial",
+            "statement": "Le nom Punu s'écrit pounou chez le père Joseph Bonneau, missionnaire catholique, qui présente la « tribu pounou » comme l'une des plus nombreuses du sud du Gabon, dans les territoires de Mouila, d'Ibanga, de Divenié et de Mayoumba.",
+            "formAsWritten": "pounou",
+            "sources": [
+              {
+                "title": "Grammaire Pounou",
+                "author": "Joseph Bonneau",
+                "year": 1940,
+                "url": "https://www.persee.fr/doc/jafr_0037-9166_1940_num_10_1_2490",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 131",
+                "notes": "Journal de la Société des Africanistes, tome 10, 1940, lu sur Persée le 3 novembre 2026."
+              }
+            ]
+          },
           {
             "period": {
               "from": null,
               "to": null,
               "label": "XIXe siècle"
             },
-            "statement": "Le nom Punu désigne, au XIXe siècle, l'une des confédérations du Gabon, à côté de celles des Mpongwé, des Gisir et des Obamba, selon Nicolas Metegue N'nah. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "era": "polity",
+            "statement": "Le nom Punu désigne, au XIXe siècle, l'une des confédérations du Gabon, à côté de celles des Mpongwé, des Gisir et des Obamba, selon Nicolas Metegue N'nah.",
             "aspect": "meaning",
             "sources": [
               {
@@ -180,7 +324,7 @@
               "label": "1865"
             },
             "era": "polity",
-            "statement": "Le nom Punu apparaît sous une forme proche, Apono, dans le récit de l'explorateur Paul Du Chaillu : le 30 mai 1865, il arrive à Mouendi, le village du chef apono Nchiengain, et note que le territoire de ce peuple s'étend surtout au sud-est. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant elle.",
+            "statement": "Le nom Punu apparaît sous une forme proche, Apono, dans le récit de l'explorateur Paul Du Chaillu : le 30 mai 1865, il arrive à Mouendi, le village du chef apono Nchiengain, et note que le territoire de ce peuple s'étend surtout au sud-est. L'anthropologue Julien Bonhomme appelle Nchiengain « le chef bapunu ». C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant elle.",
             "formAsWritten": "Apono",
             "birth": true,
             "actors": [
@@ -199,6 +343,44 @@
                 "source_kind": "archive",
                 "page": "p. 135 et p. 231",
                 "notes": "Londres, John Murray, 1867. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. L'auteur quitte le village de Mayolo le 30 mai 1865 et arrive le soir même à Mouendi, « the village of the Apono chief Nchiengain »."
+              },
+              {
+                "title": "Les tribulations de l'esprit blanc (et de ses marchandises). Voyages et aventures de Paul du Chaillu en Afrique équatoriale",
+                "author": "Julien Bonhomme",
+                "year": 2006,
+                "url": "https://shs.hal.science/halshs-00801592v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 493-512",
+                "notes": "Cahiers d'études africaines, n° 183, 2006, lu sur HAL le 3 novembre 2026. L'auteur cite la parole du « chef bapunu Nchiengain » au chef gapinzi Mayolo, d'après le récit de Du Chaillu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "Fin décembre 1858, récit publié en 1861"
+            },
+            "era": "polity",
+            "statement": "Le nom Aponon figure chez Paul Du Chaillu, qui l'entend chez les Apingi : les Aponon vivent en amont du fleuve, parlent, lui dit-on, le dialecte ashira et habitent de vastes prairies. Les sources ne disent pas s'il s'agit du même peuple que les Apono qu'il rencontre en 1865.",
+            "formAsWritten": "Aponon",
+            "actors": [
+              {
+                "name": "Paul Du Chaillu",
+                "role": "explorateur, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Explorations and Adventures in Equatorial Africa",
+                "author": "Paul B. Du Chaillu",
+                "year": 1861,
+                "url": "https://archive.org/details/explorationsand01chaigoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 510",
+                "notes": "New York, Harper & Brothers, 1861, récit d'un explorateur. Lu dans la numérisation d'Internet Archive le 3 novembre 2026. Le passage se situe entre le 19 décembre 1858 et le 1er janvier 1859 dans le journal de l'auteur : « Next to the Apingi, up the river, are the Aponon »."
               }
             ]
           }
