@@ -2018,5 +2018,10 @@
     "id": "PPL_AKYE",
     "status": "colonial-legacy",
     "rationale": "Attié est, selon la fiche, « une écriture fixée par les colons, selon Dian Boni, géographe originaire du pays akyé, qui lui préfère en 1970 la forme Akié », et les rapports de la conquête française de 1908 à 1913 emploient ce nom."
+  },
+  {
+    "id": "PPL_KONGO",
+    "status": "consensual",
+    "rationale": "« Les sources consultées ne disent pas que les Kongo rejettent ce nom : c'est celui qu'ils se donnent » ; seule son étendue pose question, Laman attribuant aux Européens l'extension du nom des gens de la capitale à plusieurs peuples parents."
   }
 ]
