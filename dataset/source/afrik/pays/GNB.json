@@ -3,11 +3,11 @@
   "nameFr": "Guinée-Bissau",
   "nameEn": "Guinea-Bissau",
   "nameOfficial": "République de Guinée-Bissau (República da Guiné-Bissau)",
-  "summary": "La Guinée-Bissau associe le mot portugais « Guiné », employé pour la côte ouest-africaine, au nom de sa capitale. Elle fut le royaume mandinka de Kaabu et le territoire des peuples côtiers et bijagó, avant quatre siècles de présence portugaise. Balante, Fula, Mandinka, Papel et Manjak y parlent, outre le portugais, un créole largement répandu.",
-  "etymology": "Le nom \"Guinée-Bissau\" combine \"Guinée\" (du portugais \"Guiné\", terme utilisé pour désigner la côte ouest-africaine) et \"Bissau\" (nom de la capitale, qui viendrait du nom d'un chef local ou d'un terme local). Le nom \"Bissau\" a été ajouté en 1973 lors de l'indépendance pour différencier le pays de la Guinée-Conakry (Guinée).",
-  "nameOriginActor": "Le nom \"Guinée\" a été donné par les navigateurs portugais au XVe siècle. Le nom \"Guiné Portuguesa\" (Guinée portugaise) a été utilisé pendant la colonisation. Le nom \"Guinée-Bissau\" a été officialisé lors de l'indépendance en 1973 par le PAIGC (Parti africain pour l'indépendance de la Guinée et du Cap-Vert) pour différencier le pays de la Guinée-Conakry.",
+  "summary": "Le nom Guinée-Bissau joint le mot Guinée, que les Portugais donnaient à la côte ouest de l'Afrique, au nom de la capitale, Bissau. Il apparaît en 1968 dans un entretien d'Amílcar Cabral et devient celui de la République proclamée en 1973. Au recensement de 2009, les Fula, les Balanta et les Mandinga sont les groupes les plus nombreux, et le kriol est parlé par neuf habitants sur dix.",
+  "etymology": "Le nom Guinée-Bissau joint deux mots. Le premier vient du portugais Guiné : les premiers navigateurs portugais nommaient ainsi la côte occidentale de l'Afrique, selon l'historien Yves Person. Son origine plus lointaine est discutée. Il viendrait du berbère akal n ignaoun, « la terre des Ignaoun », selon Rachid Agrour, ou du berbère agnau, celui dont on ne comprend pas la langue, selon Claude Rivière. Le second mot est le nom de la capitale, Bissau. Il viendrait du pepel N'sasu, nom de l'une des lignées du peuple pepel, selon les linguistes Baticã Braima Ença Mané et Amanda Macedo Balduino.",
+  "nameOriginActor": "Le mot Guiné vient des navigateurs et des chroniqueurs portugais du XVe siècle : Gomes Eanes de Zurara l'emploie dans une chronique achevée en 1453. Pendant la colonisation, l'administration portugaise parle de Guiné Portuguesa, la Guinée portugaise. La forme Guinea-Bissao apparaît dans un entretien d'Amílcar Cabral, chef du PAIGC (Parti africain pour l'indépendance de la Guinée et du Cap-Vert), publié par la revue Tricontinental en 1968 et repris dans un recueil anglais de 1969. Le PAIGC écrit Guinée-Bissao en juillet 1973, puis proclame la République de Guinée-Bissau le 24 septembre 1973 à Boé.",
   "nameHistory": {
-    "summary": "Le nom Guinée-Bissau désigne un pays d'Afrique de l'Ouest, la République de Guinée-Bissau, qui joint au mot Guinée le nom de sa capitale, Bissau. Pendant la colonisation, le pays s'appelait Guinée portugaise. L'origine du mot Guinée est discutée ; nous présentons plus bas l'explication que donnent les sources.",
+    "summary": "Le nom Guinée-Bissau désigne un pays d'Afrique de l'Ouest, la République de Guinée-Bissau. Il joint au mot Guinée, nom portugais de la côte, le nom de sa capitale, Bissau. Pendant la colonisation, le pays s'appelait Guinée portugaise. L'origine des mots Guinée et Bissau est discutée ; nous présentons plus bas les explications que donnent les sources.",
     "names": [
       {
         "nameText": "Guinée-Bissau",
@@ -15,8 +15,8 @@
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le mot Guinée, nom portugais de la côte ouest de l'Afrique, joint au nom de la capitale depuis 1973.",
-        "periodLabel": "Proclamé en 1973 ; nom de l'État indépendant depuis 1974",
+        "shortLine": "Le mot Guinée, nom portugais de la côte ouest de l'Afrique, joint au nom de la capitale, Bissau.",
+        "periodLabel": "Attesté depuis 1968 ; nom de l'État proclamé en 1973",
         "accounts": [
           {
             "period": {
@@ -104,11 +104,48 @@
             "period": {
               "from": 1973,
               "to": 1973,
+              "label": "2 novembre 1973"
+            },
+            "era": "colonial",
+            "statement": "Le nom République de Guinée-Bissau entre dans les textes des Nations unies le 2 novembre 1973. Ce jour-là, l'Assemblée générale salue l'indépendance récente du peuple de la Guinée-Bissau, alors que le Portugal tient encore une partie du pays.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Assemblée générale des Nations unies",
+                "role": "emploie le nom dans une résolution"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Résolution 3061 (XXVIII) de l'Assemblée générale des Nations unies, 2 novembre 1973",
+                "author": "Assemblée générale des Nations unies",
+                "year": 1973,
+                "url": "https://digitallibrary.un.org/record/190987/files/A_RES_3061%28XXVIII%29-FR.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 3, paragraphe 1",
+                "notes": "Texte français lu dans la bibliothèque numérique des Nations unies. L'Assemblée générale « se félicite de l'accession récente à l'indépendance du peuple de la Guinée-Bissau, qui a créé l'Etat souverain qu'est la République de Guinée-Bissau »."
+              },
+              {
+                "title": "Introduction to the Constitution of the Republic of Guinea-Bissau",
+                "author": "Fernando Loureiro Bastos, Institute for International and Comparative Law in Africa, Université de Pretoria",
+                "year": 2013,
+                "url": "https://www.icla.up.ac.za/images/country_reports/guinea_bissau_country_report.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1-3 et note 1",
+                "notes": "Étude d'un professeur de droit de l'Université de Lisbonne, datée du 19 juin 2013. L'auteur écrit que le nom Guinea-Bissau est récent et date de l'indépendance de 1973. En 1960, l'ONU nommait le territoire « Guinea, called Portuguese Guinea » ; les résolutions du 2 novembre 1973 et du 17 septembre 1974 emploient « Republic of Guinea-Bissau ». La première Constitution a été adoptée à Boé le 24 septembre 1973, jour de la proclamation de l'indépendance."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1973,
+              "to": 1973,
               "label": "24 septembre 1973"
             },
             "era": "colonial",
-            "statement": "Le nom Guinée-Bissau est celui de la République proclamée le 24 septembre 1973 dans les zones libérées par le PAIGC, selon le préambule de la Constitution de 1984 et la Digithèque MJP. C'est la plus ancienne trace de ce nom que le projet connaît ; nous n'avons pas lu le texte de la proclamation lui-même. Le pays et ses peuples existaient bien avant lui.",
-            "birth": true,
+            "statement": "Le nom Guinée-Bissau est celui de la République proclamée le 24 septembre 1973 à Boé, dans les régions que contrôle le PAIGC, selon le préambule de la Constitution de 1984 et Fernando Loureiro Bastos. La première Constitution du pays est adoptée le même jour.",
             "sources": [
               {
                 "title": "Constitution de la République de Guinée-Bissau, 16 mai 1984",
@@ -128,6 +165,77 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "notes": "Page consultée le 10 octobre 2026. Ses repères historiques donnent : « 1879 - Colonie séparée du Cap-Vert. 1951 - Statut de province d'outre-mer », la proclamation de l'indépendance dans les zones libérées le 24 septembre 1973 et sa proclamation à Bissau le 10 septembre 1974."
+              },
+              {
+                "title": "Introduction to the Constitution of the Republic of Guinea-Bissau",
+                "author": "Fernando Loureiro Bastos, Institute for International and Comparative Law in Africa, Université de Pretoria",
+                "year": 2013,
+                "url": "https://www.icla.up.ac.za/images/country_reports/guinea_bissau_country_report.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1-3 et note 1",
+                "notes": "Étude d'un professeur de droit de l'Université de Lisbonne, datée du 19 juin 2013. L'auteur écrit que le nom Guinea-Bissau est récent et date de l'indépendance de 1973. En 1960, l'ONU nommait le territoire « Guinea, called Portuguese Guinea » ; les résolutions du 2 novembre 1973 et du 17 septembre 1974 emploient « Republic of Guinea-Bissau ». La première Constitution a été adoptée à Boé le 24 septembre 1973, jour de la proclamation de l'indépendance."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1973,
+              "to": 1973,
+              "label": "Juillet 1973"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guinée-Bissau est écrit « Guinée-Bissao » par le PAIGC dans le communiqué de son deuxième congrès, tenu du 18 au 22 juillet 1973 dans les régions libérées de l'Est. Le texte annonce la proclamation prochaine de l'État ; la même brochure nomme le pays voisin Guinée-Conakry.",
+            "formAsWritten": "Guinée-Bissao",
+            "actors": [
+              {
+                "name": "PAIGC (Parti africain pour l'indépendance de la Guinée et du Cap-Vert)",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le II Congrès du Parti, communiqué spécial",
+                "author": "Comité exécutif de la lutte du PAIGC",
+                "year": 1973,
+                "url": "https://archive.org/details/paigc.-le-ii-congres-du-parti",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Brochure du PAIGC en français, lue dans la numérisation d'Internet Archive. Le communiqué dit que le deuxième congrès s'est tenu « du 18 au 22 juillet 1973 » dans les régions libérées de l'Est « de la Guinée-Bissao ». Il annonce la réunion de l'Assemblée nationale populaire pour « la proclamation de l'Etat en Guinée-Bissao ». La même brochure nomme le pays voisin « Guinée-Conakry » (p. 42).",
+                "page": "p. 7 et 12 de la numérisation"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1968,
+              "to": 1968,
+              "label": "Septembre 1968"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guinée-Bissau est écrit « Guinea-Bissao » dans un entretien d'Amílcar Cabral, chef du PAIGC, avec la revue Tricontinental, publié en septembre 1968 et repris en anglais dans un recueil paru à Londres en 1969. La même revue parle encore de la Guinée dite portugaise. C'est la plus ancienne trace de ce nom que nous ayons lue ; le pays et ses peuples sont bien plus anciens que lui.",
+            "formAsWritten": "Guinea-Bissao",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Revue Tricontinental",
+                "role": "pose la question où la forme apparaît"
+              },
+              {
+                "name": "Amílcar Cabral",
+                "role": "répond à l'entretien"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Revolution in Guinea: An African People's Struggle, « Practical problems and tactics »",
+                "author": "Amílcar Cabral",
+                "year": 1969,
+                "url": "https://archive.org/details/revolution-in-guinea",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 107 et 115",
+                "notes": "Recueil de textes d'Amílcar Cabral publié à Londres par Stage 1 en 1969, lu dans la numérisation d'Internet Archive. Le chapitre reprend un entretien donné à la revue Tricontinental et publié dans son numéro 8, en septembre 1968. La revue y parle de « so-called Portuguese Guinea » (la Guinée dite portugaise), puis pose une question sur les difficultés de la lutte « in Guinea-Bissao »."
               }
             ]
           },
@@ -183,6 +291,27 @@
                 "notes": "Ithaca, Cornell University Press. Préface lue en ligne le 10 octobre 2026 sur le site webGuinée. L'auteur écrit que le nom Guinée viendrait « probablement » du berbère aginau ou agnau, celui dont la langue est incompréhensible, et qu'à la fin du XIXe siècle plusieurs puissances coloniales se taillent chacune leur Guinée : celle du Portugal, avec Bissau pour capitale, et la Guinée espagnole, en partie insulaire (Fernando Po) et en partie continentale (Río Muni), avec Santa Isabel pour capitale."
               }
             ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Guinée-Bissau tient son second mot de Bissau, la capitale. Ce nom viendrait du pepel N'sasu, nom de l'une des lignées du peuple pepel, selon Baticã Braima Ença Mané et Amanda Macedo Balduino.",
+            "hypothesisGroup": "origine du mot Bissau",
+            "sources": [
+              {
+                "title": "Uma descrição inicial dos topônimos do Setor Autônomo de Bissau, Linha D'Água, vol. 36, n° 1",
+                "author": "Baticã Braima Ença Mané et Amanda Macedo Balduino",
+                "year": 2023,
+                "url": "https://doi.org/10.11606/issn.2236-4242.v36i1p130-159",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 146-147",
+                "notes": "Article de linguistes de l'Université de São Paulo et de l'Université de Campinas, lu en texte intégral. Les auteurs écrivent que Bissau « deriva do pepel N´sasu », nom de l'une des nombreuses lignées du peuple pepel, devenu ensuite Bissau. Ils rappellent que le peuple pepel est, selon sa mémoire collective et l'histoire officielle, le premier habitant de Bissau."
+              }
+            ]
           }
         ]
       },
@@ -191,7 +320,7 @@
         "nameStatus": "former",
         "selfGiven": false,
         "languageOfOrigin": null,
-        "namedBy": null,
+        "namedBy": "L'administration coloniale portugaise",
         "periodLabel": "Jusqu'en 1974",
         "accounts": [
           {
@@ -214,6 +343,100 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 131, tableau 5.1",
                 "notes": "Tableau chronologique des indépendances, lu dans l'exemplaire numérisé. Ligne Guinée-Bissau : « Guiné-Bissau, anciennement Guiné Portuguesa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1968,
+              "to": 1969,
+              "label": "Textes de 1968 et 1969"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guinée portugaise est mis à distance par Amílcar Cabral, qui écrit « ‘Portuguese’ Guinea » avec des guillemets. L'entretien qu'il donne en 1968 parle de la Guinée « dite portugaise ».",
+            "aspect": "imposition",
+            "actors": [
+              {
+                "name": "Amílcar Cabral",
+                "role": "conteste ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Revolution in Guinea: An African People's Struggle, « Brief analysis of the social structure in Guinea »",
+                "author": "Amílcar Cabral",
+                "year": 1969,
+                "url": "https://archive.org/details/revolution-in-guinea",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 46 et 107",
+                "notes": "Recueil de textes d'Amílcar Cabral publié à Londres par Stage 1 en 1969, lu dans la numérisation d'Internet Archive. Cabral écrit « our country, ‘Portuguese’ Guinea », en mettant le mot Portuguese entre guillemets. Dans l'entretien de 1968 repris plus loin, la question parle de « so-called Portuguese Guinea », la Guinée dite portugaise."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "15 décembre 1960"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guinée portugaise apparaît entre guillemets dans une résolution des Nations unies de 1960, qui parle de « Guinée, ou “Guinée portugaise” ». Elle range ce territoire parmi les territoires non autonomes que le Portugal administre.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Assemblée générale des Nations unies",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Résolution 1542 (XV) de l'Assemblée générale des Nations unies, 15 décembre 1960",
+                "author": "Assemblée générale des Nations unies",
+                "year": 1960,
+                "url": "https://digitallibrary.un.org/record/205905/files/A_RES_1542%28XV%29-FR.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 33, paragraphe 1",
+                "notes": "Texte français lu dans la bibliothèque numérique des Nations unies. L'Assemblée générale range parmi les territoires non autonomes administrés par le Portugal la « Guinée, ou “Guinée portugaise” » et demande au Portugal d'en rendre compte."
+              },
+              {
+                "title": "Introduction to the Constitution of the Republic of Guinea-Bissau",
+                "author": "Fernando Loureiro Bastos, Institute for International and Comparative Law in Africa, Université de Pretoria",
+                "year": 2013,
+                "url": "https://www.icla.up.ac.za/images/country_reports/guinea_bissau_country_report.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1-3 et note 1",
+                "notes": "Étude d'un professeur de droit de l'Université de Lisbonne, datée du 19 juin 2013. L'auteur écrit que le nom Guinea-Bissau est récent et date de l'indépendance de 1973. En 1960, l'ONU nommait le territoire « Guinea, called Portuguese Guinea » ; les résolutions du 2 novembre 1973 et du 17 septembre 1974 emploient « Republic of Guinea-Bissau ». La première Constitution a été adoptée à Boé le 24 septembre 1973, jour de la proclamation de l'indépendance."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": 1950,
+              "label": "Document imprimé en 1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guinée portugaise est écrit « Guiné Portuguesa » dans un questionnaire publié en 1950 à Bolama par le Centro de Estudos da Guiné Portuguesa. Son auteur, António Carreira, fonctionnaire colonial, appelle le territoire « la Colonie ».",
+            "formAsWritten": "Guiné Portuguesa",
+            "actors": [
+              {
+                "name": "António Carreira",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Mutilações corporais e pinturas cutâneas rituais dos negros da Guiné Portuguesa",
+                "author": "António Carreira",
+                "year": 1950,
+                "url": "https://archive.org/details/dli.ernet.535200",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre et note explicative",
+                "notes": "Document colonial : questionnaire d'enquête publié par le Centro de Estudos da Guiné Portuguesa et imprimé à Bolama par l'Imprensa Nacional da Guiné, lu dans la numérisation d'Internet Archive. L'auteur, fonctionnaire de l'administration coloniale, emploie le nom Guiné Portuguesa et appelle le territoire « a Colónia »."
               }
             ]
           },
@@ -264,160 +487,217 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Guiné de Cabo Verde (1446-1879)",
-        "Guiné Portuguesa (1879-1973)"
+        "Guiné, nom portugais de la côte (XVe siècle)",
+        "Guinée portugaise, Guiné Portuguesa (jusqu'en 1974)"
       ],
-      "antiquity": "Le territoire actuel de la Guinée-Bissau était peuplé de diverses sociétés sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs territoires.",
-      "middleAges": "XIIe-XVIe siècle : Zones d'influence des royaumes mandé (Mali, Kaabu). Développement du royaume mandinka de Kaabu (grand royaume mandinka installé en Casamance et Guinée-Bissau). Pas de nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Mosaïque de royaumes et peuples autonomes : royaume mandinka de Kaabu (dominant), peuples côtiers (Papel, Manjak), peuples forestiers et insulaires (Bijagó), Balante, Fula, Mandinka. Les Portugais utilisaient le terme \"Guiné\" pour désigner la région.",
-      "colonization": "1446-1879 : Arrivée des Portugais (1446), la région est nommée \"Guiné de Cabo Verde\" (Guinée du Cap-Vert). Les Portugais implantent des comptoirs dès le XVe siècle mais ne contrôlent l'intérieur qu'au XIXe siècle. 1879 : Colonie distincte du Cap-Vert, nommée \"Guiné Portuguesa\" (Guinée portugaise). Le territoire était administré comme une colonie portugaise jusqu'à l'indépendance en 1973.",
-      "contemporary": "1973 : Indépendance de la Guinée-Bissau (24 septembre 1973), proclamation de la République de Guinée-Bissau. Le nom \"Bissau\" a été ajouté pour différencier le pays de la Guinée-Conakry. Indépendance obtenue après la lutte du PAIGC (Parti africain pour l'indépendance de la Guinée et du Cap-Vert)."
+      "antiquity": "Nous n'avons pas encore étudié l'histoire ancienne du territoire de l'actuelle Guinée-Bissau. Les sources que nous avons lues commencent avec les récits portugais du XVe siècle et les traditions du royaume du Kaabu.",
+      "middleAges": "Une partie de la région appartenait au Kaabu, un royaume mandingue. Les historiens placent souvent sa naissance au XIIIe siècle, lors d'une conquête de Tiramakan, envoyé de Sunjata Keita, roi du Mali. Cette histoire repose surtout sur les chants des djidius, les griots, et sur des chroniques écrites par des marabouts, en mandinka et en peul, selon Manuel Bívar et Sadjo Papis Mariama Turé. Ces deux auteurs pensent que beaucoup d'habitants du Kaabu n'ont pris l'identité mandingue qu'au XIXe siècle.",
+      "precolonial": "Au XVIe siècle, le capitaine portugais André Álvares de Almada nomme les peuples de cette côte. Il décrit les Falupos, les Buramos, « que l'on appelle aussi Papeis », les Balantas, les Beafares, les Bijagós des îles et les Mandingas de l'intérieur. Pour lui, la Guinée commence au fleuve Sénégal, s'arrête à la Sierra Leone et dépend de la capitainerie du Cap-Vert, dont le chef-lieu est l'île de Santiago.",
+      "colonization": "Selon Fernando Loureiro Bastos, les Portugais datent de 1446 leur premier contact avec les peuples de cette côte. Jusqu'en 1879, la Guinée dépend du Cap-Vert ; elle devient alors une colonie séparée, la Guinée portugaise, avec Bolama pour capitale. La conquête de l'intérieur n'est achevée qu'avec les campagnes de 1913 à 1915, et les îles Bijagós résistent jusque dans les années 1930. Bissau devient la capitale en 1941, selon Baticã Braima Ença Mané et Amanda Macedo Balduino.",
+      "contemporary": "Le PAIGC proclame la République de Guinée-Bissau le 24 septembre 1973 à Boé. Les Nations unies emploient ce nom dès le 2 novembre 1973. Le Portugal reconnaît l'indépendance le 10 septembre 1974."
     },
     "kingdoms": [
       {
-        "name": "Royaume mandinka de Kaabu",
-        "period": "XIIe siècle - XIXe siècle",
+        "name": "Royaume du Kaabu",
+        "period": "XIIIe siècle, selon les traditions - vers 1867",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1101,
-          "endYear": 1900,
-          "precision": "century"
+          "startYear": 1201,
+          "endYear": 1867,
+          "precision": "approximate",
+          "datingNote": "Le début suit les historiens qui, selon Manuel Bívar et Sadjo Papis Mariama Turé, placent au XIIIe siècle la conquête de Tiramakan, envoyé de Sunjata Keita. La fin correspond à la chute de Cansala, vers 1867, que la tradition donne comme la fin du pouvoir mandingue au Kaabu."
         },
-        "dominantPeoples": ["Mandinka"],
-        "politicalCenters": ["Kaabu (capitale historique)"],
-        "historicalRole": "Grand royaume mandinka installé en Casamance et Guinée-Bissau, héritier de l'empire du Mali. État puissant et structuré, système monarchique, traditions mandé. Domination de la région jusqu'au XIXe siècle. Résistance à la colonisation portugaise."
+        "dominantPeoples": ["Mandinga", "Biafada", "Bainouk"],
+        "politicalCenters": ["Cansala (Kansala)"],
+        "historicalRole": "Le Kaabu est un royaume mandingue dont la fin est souvent racontée comme une guerre entre Mandingues et Peuls : Janque Wali se serait donné la mort en faisant sauter la poudrière de Cansala, vers 1867. Manuel Bívar et Sadjo Papis Mariama Turé jugent ce récit trop simple. Ils montrent que des Biafada, des Bainouk et d'autres peuples faisaient partie du Kaabu, et que les alliances changeaient souvent."
       },
       {
-        "name": "Peuples côtiers",
-        "period": "Précolonial - présent",
+        "name": "Royaumes des Papel (Buramos)",
+        "period": "Décrits au XVIe siècle",
         "entryType": "polity",
-        "dominantPeoples": ["Papel", "Manjak", "Mancanha"],
-        "politicalCenters": ["Chefferies traditionnelles côtières"],
-        "historicalRole": "Peuples côtiers et forestiers, rôle commercial important, traditions maritimes. Relations avec la Casamance (Sénégal). Résistance à la colonisation portugaise."
+        "dominantPeoples": ["Papel"],
+        "politicalCenters": ["Rives du fleuve São Domingos"],
+        "historicalRole": "André Álvares de Almada décrit les Buramos, « que l'on appelle aussi Papeis », le long du fleuve São Domingos. Ils obéissent à plusieurs rois, les moins puissants suivant les plus puissants ; le principal se nomme Chapala. Selon Baticã Braima Ença Mané et Amanda Macedo Balduino, le peuple pepel est le premier habitant de Bissau."
       },
       {
-        "name": "Peuples Bijagó",
-        "period": "Précolonial - présent",
+        "name": "Badora, pays biafada",
+        "period": "Avant le XVe siècle - fin du XIXe siècle",
         "entryType": "polity",
-        "dominantPeoples": ["Bijagó / Bidyogo"],
-        "politicalCenters": ["Îles Bijagó (archipel)"],
-        "historicalRole": "Peuple insulaire, société matrilinéaire, traditions maritimes, résistance à la colonisation portugaise. Organisation sociale unique (matrilinéaire)."
+        "dominantPeoples": ["Biafada"],
+        "politicalCenters": ["Bricama"],
+        "historicalRole": "Badora, avec Bricama pour capitale, garde une identité biafada marquée jusqu'à la fin du XIXe siècle, selon Manuel Bívar et Sadjo Papis Mariama Turé. Ces auteurs rapportent l'hypothèse de Stephan Bühnen : les lignées qui vivent à Bricama et dans les lieux de même nom auraient gouverné avant le XVe siècle. C'est le pays de Kelefa Sane, héros chanté par les griots du Kaabu."
       },
       {
-        "name": "Colonie portugaise de Guinée",
-        "period": "1879 - 1973",
+        "name": "Îles Bijagós",
+        "period": "Décrites au XVIe siècle - années 1930",
+        "entryType": "polity",
+        "dominantPeoples": ["Bijagó"],
+        "politicalCenters": ["Archipel des Bijagós"],
+        "historicalRole": "André Álvares de Almada décrit les Bijagós comme un peuple de guerriers et de marins, qui parcourent la mer en pirogues et font des captifs chez les Beafares et les Papel voisins. Selon Fernando Loureiro Bastos, les îles résistent à la domination portugaise jusque dans les années 1930."
+      },
+      {
+        "name": "Guinée portugaise",
+        "period": "1879 - 1974",
         "entryType": "colonial",
         "timeRange": {
           "startYear": 1879,
-          "endYear": 1973,
+          "endYear": 1974,
           "precision": "year"
         },
-        "dominantPeoples": [
-          "Tous les peuples guinéens-bissau sous domination portugaise"
+        "dominantPeoples": ["Administration coloniale portugaise"],
+        "politicalCenters": [
+          "Bolama (capitale après 1879)",
+          "Bissau (capitale à partir de 1941)"
         ],
-        "politicalCenters": ["Bissau (capitale coloniale)"],
-        "historicalRole": "Colonie portugaise, exploitation économique, développement de l'administration coloniale, résistance des peuples autochtones (notamment résistance des Balante). Développement du mouvement indépendantiste au XXe siècle, formation du PAIGC (Parti africain pour l'indépendance de la Guinée et du Cap-Vert) en 1956."
+        "historicalRole": "La Guinée portugaise devient en 1879 une colonie séparée du Cap-Vert, avec Bolama pour capitale. Le PAIGC, fondé en septembre 1956, y engage la lutte armée en janvier 1963. Le Portugal reconnaît l'indépendance le 10 septembre 1974."
+      },
+      {
+        "name": "République de Guinée-Bissau",
+        "period": "1973 - aujourd'hui",
+        "entryType": "modern",
+        "timeRange": {
+          "startYear": 1973,
+          "ongoing": true,
+          "precision": "year"
+        },
+        "dominantPeoples": ["Fula", "Balanta", "Mandinga", "Papel", "Manjak"],
+        "politicalCenters": ["Bissau"],
+        "historicalRole": "La République est proclamée le 24 septembre 1973 à Boé et reconnue par le Portugal le 10 septembre 1974. Selon Fernando Loureiro Bastos, sa vie politique est marquée par des coups d'État répétés, dont ceux de 1980, 1998, 2003 et 2012."
       }
     ],
     "majorPeoples": [
-      {
-        "name": "Balante",
-        "selfAppellation": "Balanta",
-        "exonyms": ["Balante (terme utilisé par les Européens)"],
-        "peopleId": "PPL_BALANTA",
-        "mainRegion": "Centre et littoral de la Guinée-Bissau",
-        "languages": ["Balanta (ble", "ISO 639-3)", "portugais", "créole"],
-        "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Balanta\" est l'auto-appellation. Pas de terme péjoratif connu. Peuple agro-forestier et égalitaire, très présent au centre et littoral. Rôle central dans l'histoire de Guinée-Bissau. Résistance notable au colonialisme portugais."
-      },
       {
         "name": "Fula / Peul",
         "selfAppellation": "Fulɓe (pluriel), Pullo (singulier)",
         "exonyms": [
           "Peul (terme français)",
           "Fulani (terme haoussa)",
-          "Fula (terme anglophone)",
-          "\"Fellata\" (terme haoussa parfois péjoratif",
-          "à éviter)"
+          "Fula (nom employé en Guinée-Bissau et en anglais)",
+          "Fulos (forme portugaise du XVIe siècle)",
+          "Fellata (terme haoussa parfois méprisant, à éviter)"
         ],
         "peopleId": "PPL_FULA",
-        "mainRegion": "Toutes les régions de la Guinée-Bissau",
-        "languages": ["Fulfulde (ful", "ISO 639-3)", "portugais", "créole"],
+        "mainRegion": "Est du pays : 60 % des habitants de la région de Bafatá et près de 80 % de celle de Gabú au recensement de 2009",
+        "languages": ["Pulaar (fuc)", "kriol", "portugais"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "Le peuple se nomme Fulɓe. Peul et Fulani sont aussi des noms acceptés, donnés de l'extérieur. Fellata peut être méprisant dans certains contextes ; il est donc à éviter. Les groupes décrits ici sont musulmans et pratiquent l'élevage et le commerce."
+        "appellationRemarks": "Le peuple se nomme Fulɓe. En Guinée-Bissau, le recensement l'appelle Fula ; André Álvares de Almada écrivait déjà Fulos au XVIe siècle. Peul et Fulani sont d'autres noms donnés de l'extérieur. Fellata peut être méprisant dans certains contextes ; il est donc à éviter."
+      },
+      {
+        "name": "Balanta",
+        "selfAppellation": "Balanta",
+        "exonyms": [
+          "Balante (forme française)",
+          "Balantas (forme portugaise du XVIe siècle)"
+        ],
+        "peopleId": "PPL_BALANTA",
+        "mainRegion": "Centre, sud et nord-ouest : 46,9 % des habitants de Tombali et 43,6 % de ceux d'Oio au recensement de 2009",
+        "languages": ["Balanta (ble)", "kriol", "portugais"],
+        "languageFamily": "FLG_ATLANTIQUE",
+        "appellationRemarks": "Le recensement de 2009 emploie le nom Balanta et compte à part les Balanta Mane. André Álvares de Almada écrit déjà Balantas au XVIe siècle. Les sources consultées ne signalent pas de sens méprisant pour ce nom."
       },
       {
         "name": "Mandinka",
         "selfAppellation": "Mandinka / Mandiŋka",
         "exonyms": [
-          "Mandinka (terme utilisé par les Européens)",
+          "Mandinga (nom employé en Guinée-Bissau)",
           "Mandingue (forme française)",
-          "\"Mandingo\" (terme historique",
-          "parfois péjoratif)"
+          "Mandingas (forme portugaise du XVIe siècle)",
+          "Mandingo (terme historique, parfois méprisant)"
         ],
         "peopleId": "PPL_MALINKE",
-        "mainRegion": "Toutes les régions de la Guinée-Bissau",
-        "languages": ["Mandinka (mnk", "ISO 639-3)", "portugais", "créole"],
+        "mainRegion": "Nord et est : 32,9 % des habitants d'Oio et 22,9 % de ceux de Bafatá au recensement de 2009",
+        "languages": ["Mandinka (mnk)", "kriol", "portugais"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "Les personnes concernées se nomment Mandinka ou Mandiŋka. Mandingue est un nom français donné de l'extérieur et accepté. Mandingo est un terme historique qui peut être méprisant dans certains contextes ; il est donc à éviter. Les groupes présentés ici sont les héritiers du royaume de Kaabu."
+        "appellationRemarks": "Les personnes concernées se nomment Mandinka ou Mandiŋka. Le recensement de 2009 les appelle Mandinga, la forme qu'employait déjà André Álvares de Almada. Mandingue est le nom français. Mandingo est un terme historique qui peut être méprisant dans certains contextes ; il est donc à éviter."
       },
       {
         "name": "Papel",
         "selfAppellation": "Papel",
-        "exonyms": ["Papel (terme utilisé par les Européens)"],
+        "exonyms": [
+          "Pepel",
+          "Buramos (nom portugais du XVIe siècle)",
+          "Papeis (pluriel portugais)"
+        ],
         "peopleId": "PPL_PAPEL",
-        "mainRegion": "Zone de Bissau (littoral)",
-        "languages": ["Papel (pbo", "ISO 639-3)", "portugais", "créole"],
+        "mainRegion": "Région de Biombo, où ils forment 64,7 % des habitants en 2009, et ville de Bissau",
+        "languages": ["Papel (pbo)", "kriol", "portugais"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Papel\" est l'auto-appellation. Pas de terme péjoratif connu. Peuple autochtone de la zone de Bissau."
+        "appellationRemarks": "Au XVIe siècle, André Álvares de Almada parle des Buramos, « que l'on appelle aussi Papeis ». Le recensement de 2009 emploie le nom Papel. Selon la mémoire collective de ce peuple, il est le premier habitant de Bissau."
       },
       {
         "name": "Manjak",
         "selfAppellation": "Manjak",
-        "exonyms": ["Manjak (terme utilisé par les Européens)"],
+        "exonyms": [
+          "Manjaco (nom employé en Guinée-Bissau)",
+          "Mandjak",
+          "Mandjacks (forme anglaise employée par Amílcar Cabral)"
+        ],
         "peopleId": "PPL_MANJAK",
-        "mainRegion": "Littoral et zones côtières",
-        "languages": ["Manjak (mfv", "ISO 639-3)", "portugais", "créole"],
+        "mainRegion": "Région de Cacheu, où ils forment 36,8 % des habitants en 2009",
+        "languages": ["Manjak (mfv)", "kriol", "portugais"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Manjak\" est l'auto-appellation. Pas de terme péjoratif connu. Peuple côtier et forestier lié à la Casamance."
+        "appellationRemarks": "Le recensement de 2009 emploie le nom Manjaco. Amílcar Cabral note que les Manjak avaient, à l'arrivée des Portugais, des rapports sociaux qu'il juge proches de la féodalité."
+      },
+      {
+        "name": "Beafada",
+        "selfAppellation": "Djola (bidjola au singulier, gandjola au pluriel)",
+        "exonyms": ["Biafada", "Beafares (forme portugaise du XVIe siècle)"],
+        "mainRegion": "Région de Quinara, où ils forment 36,7 % des habitants en 2009",
+        "languages": ["Biafada (bif)", "kriol", "portugais"],
+        "languageFamily": "FLG_ATLANTIQUE",
+        "appellationRemarks": "Selon Manuel Bívar et Sadjo Papis Mariama Turé, les Biafada se nomment eux-mêmes djola. Le recensement de 2009 les appelle Beafada, et André Álvares de Almada écrivait Beafares au XVIe siècle."
       },
       {
         "name": "Mancanha",
         "selfAppellation": "Mancanha",
-        "exonyms": ["Mancanha (terme utilisé par les Européens)"],
+        "exonyms": ["Mankanya", "Mancagne (forme française)"],
         "peopleId": "PPL_MANKANYA",
-        "mainRegion": "Littoral et zones côtières",
-        "languages": ["Mancanha (mcs", "ISO 639-3)", "portugais", "créole"],
+        "mainRegion": "Région non précisée par les sources que nous avons lues",
+        "languages": ["Mankanya (knf)", "kriol", "portugais"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Mancanha\" est l'auto-appellation. Pas de terme péjoratif connu. Famille proche des Manjak."
+        "appellationRemarks": "Le recensement de 2009 emploie le nom Mancanha. Glottolog range leur langue, le mankanya, avec le manjak et le papel dans un même groupe de langues atlantiques."
       },
       {
-        "name": "Bijagó / Bidyogo",
+        "name": "Bijagó",
         "selfAppellation": "Bijagó / Bidyogo",
-        "exonyms": ["Bijagó", "Bidyogo (termes utilisés par les Européens)"],
+        "exonyms": ["Bijagós (forme portugaise)", "Bidyogo"],
         "peopleId": "PPL_BIDYOGO",
-        "mainRegion": "Îles Bijagó (archipel)",
-        "languages": ["Bijagó (bjg", "ISO 639-3)", "portugais", "créole"],
+        "mainRegion": "Archipel des Bijagós, où ils forment 64,3 % des habitants de la région de Bolama-Bijagós en 2009",
+        "languages": ["Bijago (bjg)", "kriol", "portugais"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Bijagó\" ou \"Bidyogo\" est l'auto-appellation. Pas de terme péjoratif connu. Peuple insulaire, société matrilinéaire."
+        "appellationRemarks": "André Álvares de Almada écrit déjà Bijagós au XVIe siècle, et le recensement de 2009 emploie la même forme. Les sources consultées ne signalent pas de sens méprisant pour ce nom."
+      },
+      {
+        "name": "Felupe",
+        "selfAppellation": "Ajamat",
+        "exonyms": [
+          "Falupos (forme portugaise du XVIe siècle)",
+          "Diola",
+          "Jola"
+        ],
+        "peopleId": "PPL_DIOLA",
+        "mainRegion": "Nord-ouest, à la frontière de la Casamance : 9,1 % des habitants de Cacheu en 2009",
+        "languages": ["Jola-Felupe", "kriol", "portugais"],
+        "languageFamily": "FLG_ATLANTIQUE",
+        "appellationRemarks": "Le recensement de 2009 emploie le nom Felupe. André Álvares de Almada écrivait Falupos au XVIe siècle. Au Sénégal, les peuples proches sont appelés Diola."
       },
       {
         "name": "Nalu",
         "selfAppellation": "Nalu",
-        "exonyms": ["Nalu (terme utilisé par les Européens)"],
+        "exonyms": ["Nalu (forme employée par le recensement)"],
         "peopleId": "PPL_NALU",
         "mainRegion": "Sud du pays",
-        "languages": ["Nalu (naj", "ISO 639-3)", "portugais", "créole"],
+        "languages": ["Nalu (naj)", "kriol", "portugais"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Nalu\" est l'auto-appellation. Pas de terme péjoratif connu. Sud du pays, sociétés anciennes."
+        "appellationRemarks": "Le recensement de 2009 compte 13 420 Nalu. Près d'un quart d'entre eux disent parler surtout la langue soussou."
       },
       {
         "name": "Autres peuples",
-        "selfAppellation": "Variées selon les groupes (Beafada, Felupe, Tanda, Soussou)",
-        "exonyms": ["Variées selon les groupes"],
+        "selfAppellation": "Variables selon les groupes",
+        "exonyms": ["Mansoanca", "Balanta Mane", "Sosso", "Saracole"],
         "mainRegion": "Diverses régions de la Guinée-Bissau",
-        "languages": ["Langues diverses", "portugais", "créole"],
-        "appellationRemarks": "Chaque groupe a sa propre auto-appellation (Beafada, Felupe, Tanda, Soussou, etc.). Pas de terme péjoratif connu. Minorités transfrontalières."
+        "languages": ["Langues de chaque groupe", "kriol", "portugais"],
+        "appellationRemarks": "Le recensement de 2009 compte aussi les Mansoanca, les Balanta Mane, les Saracole (Soninké) et les Sosso (Soussou). Chacun de ces groupes réunit moins de 1,5 % de la population de nationalité guinéenne."
       }
     ],
     "culture": {
@@ -428,15 +708,16 @@
           "isPrimary": true
         },
         {
-          "name": "Créole guinéen-bissau"
+          "name": "Kriol (créole de Guinée-Bissau)",
+          "isoCode": "pov"
+        },
+        {
+          "name": "Pulaar (peul)",
+          "isoCode": "fuc"
         },
         {
           "name": "Balanta",
           "isoCode": "ble"
-        },
-        {
-          "name": "Fulfulde",
-          "isoCode": "ful"
         },
         {
           "name": "Mandinka",
@@ -451,11 +732,15 @@
           "isoCode": "mfv"
         },
         {
-          "name": "Mancanha",
-          "isoCode": "mcs"
+          "name": "Mankanya",
+          "isoCode": "knf"
         },
         {
-          "name": "Bijagó",
+          "name": "Biafada",
+          "isoCode": "bif"
+        },
+        {
+          "name": "Bijago",
           "isoCode": "bjg"
         },
         {
@@ -463,19 +748,19 @@
           "isoCode": "naj"
         }
       ],
-      "culturalTraditions": "Diversité culturelle importante reflétant la mosaïque ethnique de la Guinée-Bissau. Traditions atlantiques (Balante, Papel, Manjak, Mancanha, Bijagó, Nalu, rites d'initiation, musiques polyrythmiques, cérémonies agricoles). Traditions mandé (Mandinka, héritiers du royaume de Kaabu, griots, kora). Traditions peules (Fula, poésie peule, traditions islamiques). Traditions insulaires (Bijagó, société matrilinéaire, traditions maritimes). Musique et danse traditionnelles variées. Cérémonies de passage, rites d'initiation, fêtes traditionnelles.",
-      "dominantReligions": "Islam sunnite (majoritaire, 45%+), christianisme (minorité), religions traditionnelles africaines (syncrétisme fréquent, culte des ancêtres, rites d'initiation)",
-      "lifestyles": "Agriculture (riz, arachides, cultures vivrières), élevage (Fula, bovins), pêche (côtière et fluviale), commerce et activités urbaines (zones urbaines, Bissau). Urbanisation modérée. Économie basée sur l'agriculture (arachides, riz, principale exportation), la pêche, et les services. Dépendance économique importante.",
-      "socialOrganization": "Organisation en royaumes historiques (Kaabu, système monarchique mandé), chefferies traditionnelles (Balante, société égalitaire sans chefferie héréditaire, décisions prises collectivement par les anciens), structures claniques patrilinéaires et matrilinéaires (Bijagó, société matrilinéaire). Importance des lignages et des familles étendues. Rôle des conseils d'anciens. Traditions d'initiation et de passage à l'âge adulte.",
-      "regionalRelations": "Relations historiques avec le Sénégal (Casamance, Manjak, commerce, frontière), la Guinée (Fula, Mandinka, commerce, frontière), le Cap-Vert (PAIGC, lutte commune pour l'indépendance). Intégration dans la CEDEAO (Communauté économique des États de l'Afrique de l'Ouest) et l'UEMOA (Union économique et monétaire ouest-africaine). Relations commerciales et culturelles transfrontalières. Relations avec le Cap-Vert (lutte commune pour l'indépendance, PAIGC)."
+      "culturalTraditions": "La vie culturelle se partage entre plusieurs langues. Le kriol, créole à base portugaise, est parlé par 90,4 % des habitants de nationalité guinéenne au recensement de 2009, quel que soit leur groupe. Ses locuteurs l'appellent kriol, et il sert de langue commune entre les peuples, selon Baticã Braima Ença Mané et Amanda Macedo Balduino. Le portugais, langue officielle et langue de l'école, est parlé par 27,1 % des habitants. Chaque groupe garde aussi sa propre langue : chez les Fula, les Balanta et les Manjak, plus de 83 % des personnes la déclarent comme langue principale. Nous n'avons pas encore étudié les musiques, les rites et les fêtes propres à chaque peuple.",
+      "dominantReligions": "Au recensement de 2009, 45,1 % des habitants de nationalité guinéenne se déclarent musulmans, 22,1 % chrétiens et 14,9 % animistes, c'est-à-dire fidèles aux religions africaines traditionnelles. Près de 16 % n'ont pas répondu, et l'institut de statistique note que beaucoup de personnes pratiquent deux religions. L'islam domine chez les Fula (88 %), les Mandinga (86,9 %) et les Beafada. Chez les Balanta, les Manjak et les Papel, les chrétiens et les animistes sont les plus nombreux.",
+      "lifestyles": "Au recensement de 2009, 29,1 % des actifs de nationalité guinéenne travaillent dans l'agriculture, l'élevage ou la pêche. Amílcar Cabral décrivait une économie coloniale fondée sur la seule culture de l'arachide. Au XVIe siècle, André Álvares de Almada notait déjà la culture du riz chez les Falupos et le commerce de la noix de cola chez les Balantas.",
+      "socialOrganization": "Amílcar Cabral distinguait deux formes d'organisation à la campagne. Chez les Fula, il voyait une société hiérarchisée, avec des chefs, des nobles et des religieux, puis des artisans et des marchands ambulants, et enfin des paysans. Chez les Balanta, il décrivait une société sans hiérarchie, où un conseil d'anciens règle les affaires de chaque village et où la terre appartient au village. Il notait aussi que les femmes balanta possèdent ce qu'elles produisent. Au XVIe siècle, André Álvares de Almada décrivait des Papel gouvernés par plusieurs rois, les moins puissants obéissant aux plus puissants.",
+      "regionalRelations": "La Guinée-Bissau a des frontières avec le Sénégal au nord et la Guinée au sud. Son histoire est liée à celle du Cap-Vert : jusqu'en 1879, la Guinée dépendait de cet archipel, et le PAIGC a mené la lutte pour l'indépendance des deux pays, selon Fernando Loureiro Bastos. Amílcar Cabral signalait pendant la guerre coloniale que des milliers de Balanta partaient en République de Guinée, et que des cultivateurs d'arachide s'installaient au Sénégal."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement initial par les peuples atlantiques, mandé et forestiers. Développement de chefferies et royaumes locaux.",
-      "middleAges": "XIIe-XVIe siècle : Zones d'influence des royaumes mandé (Mali, Kaabu). Développement du royaume mandinka de Kaabu, grand royaume mandinka installé en Casamance et Guinée-Bissau, héritier de l'empire du Mali. Domination de la région. Commerce régional et transsaharien.",
-      "precolonial": "Consolidation du royaume mandinka de Kaabu, peuples côtiers (Papel, Manjak), peuples forestiers et insulaires (Bijagó), Balante, Fula. Commerce régional et côtier. Contacts avec les Européens (Portugais, dès 1446).",
-      "colonization": "1446 : Arrivée des Portugais, la région est nommée \"Guiné de Cabo Verde\". Les Portugais implantent des comptoirs dès le XVe siècle mais ne contrôlent l'intérieur qu'au XIXe siècle. 1879 : Colonie distincte du Cap-Vert, nommée \"Guiné Portuguesa\". Période coloniale portugaise (1879-1973), exploitation économique, développement de l'administration coloniale, résistance des peuples autochtones (notamment résistance des Balante). XXe siècle : Développement du mouvement indépendantiste, formation du PAIGC (Parti africain pour l'indépendance de la Guinée et du Cap-Vert) en 1956.",
-      "independenceStruggle": "1956-1973 : Lutte pour l'indépendance menée par le PAIGC (Parti africain pour l'indépendance de la Guinée et du Cap-Vert), dirigé par Amílcar Cabral. Lutte armée contre le Portugal. 1973 : Indépendance de la Guinée-Bissau (24 septembre 1973), proclamation de la République de Guinée-Bissau. Assassinat d'Amílcar Cabral en 1973. Le nom \"Bissau\" a été ajouté pour différencier le pays de la Guinée-Conakry.",
-      "postIndependence": "1973-1980 : Présidence de Luís Cabral (frère d'Amílcar Cabral). 1980-présent : Coup d'État, présidence de João Bernardo Vieira (1980-1999, 2005-2009), puis périodes d'instabilité politique, coups d'État récurrents. Défis : pauvreté, instabilité politique, développement économique, trafic de drogue. La Guinée-Bissau est l'un des pays les plus pauvres d'Afrique."
+      "ancientPeriods": "Nous n'avons pas encore étudié le peuplement ancien de la Guinée-Bissau. Selon Stephan Bühnen, cité par Manuel Bívar et Sadjo Papis Mariama Turé, les lignées biafada, padjadinca, bainouk et cassanga gouvernaient déjà avant le XVe siècle une grande partie des terres entre les fleuves Gambie et Cogon.",
+      "middleAges": "Le Kaabu, un royaume mandingue, domine une partie de la région. Les historiens racontent sa fondation à partir des traditions chantées par les griots, qui la rattachent à Tiramakan, envoyé de Sunjata Keita, roi du Mali. Selon Manuel Bívar et Sadjo Papis Mariama Turé, des Biafada, des Bainouk et d'autres peuples faisaient partie de ce royaume.",
+      "precolonial": "Au XVIe siècle, André Álvares de Almada décrit des peuples nombreux et des ports de traite : les Papel et leurs rois, les Balantas, les Beafares de Guinala, les Bijagós des îles. Au XIXe siècle, selon le récit le plus répandu, des guerres opposent le Kaabu aux Peuls du Fouta-Djalon jusqu'à la chute de Cansala vers 1867 ; les Fula du Firdu, sous Alfa Molo, forment ensuite le Fuladu et le dirigent jusqu'en 1903. Manuel Bívar et Sadjo Papis Mariama Turé jugent ce récit trop simple : selon eux, les alliances réunissaient de nombreux peuples et changeaient souvent.",
+      "colonization": "Les Portugais datent de 1446 leur premier contact avec les peuples de cette côte, selon Fernando Loureiro Bastos. Pendant longtemps, ils tiennent des comptoirs et la Guinée dépend du Cap-Vert. En 1879, elle devient la Guinée portugaise, une colonie séparée avec Bolama pour capitale. Les campagnes militaires de 1913 à 1915 achèvent la conquête du continent, et les îles Bijagós résistent jusque dans les années 1930. Amílcar Cabral rappelle que les Portugais se sont alliés aux chefs fula au début de la conquête.",
+      "independenceStruggle": "Le PAIGC, Parti africain pour l'indépendance de la Guinée et du Cap-Vert, naît en septembre 1956, selon Amílcar Cabral. Le 3 août 1959, les soldats portugais tirent sur des dockers en grève au quai de Pijiguiti, à Bissau, et tuent environ cinquante personnes. La lutte armée commence le 23 janvier 1963. Amílcar Cabral est assassiné le 20 janvier 1973. Le PAIGC proclame la République de Guinée-Bissau le 24 septembre 1973 à Boé, et le Portugal reconnaît l'indépendance le 10 septembre 1974.",
+      "postIndependence": "Selon Fernando Loureiro Bastos, le coup d'État du 14 novembre 1980 met fin à la première période de l'État. João Bernardo « Nino » Vieira domine ensuite la vie politique de 1980 à 1999, puis de 2005 à son assassinat en 2009. Le pays connaît une guerre civile en 1998 et 1999, puis des coups d'État en 2003 et 2012. Baticã Braima Ença Mané et Amanda Macedo Balduino notent que l'État affaibli est devenu une étape du trafic de drogue entre l'Amérique latine et l'Europe."
     },
     "sources": [
       {
@@ -528,48 +813,318 @@
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Instituto Nacional de Estatística (Guinée-Bissau) — Troisième recensement général de la population et de l'habitat 2009 : caractéristiques socioculturelles",
+        "url": "https://www.stat-guinebissau.com/Menu_principal/IV_RGPH/rgph1/caracteristicas_socio_cultural.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Publication de l'Institut national de la statistique de Guinée-Bissau sur la population de nationalité guinéenne, soit 1 442 227 personnes recensées en 2009. Graphique 2 et tableau 2 (p. 22 et 25) : Fula 410 560 personnes (28,5 %), Balanta 22,5 %, Mandinga 14,7 %, Papel 9,1 %, Manjaco 8,3 %, puis Beafada, Mancanha, Bijagós, Felupe, Mansoanca, Balanta Mane, Nalu, Saracule et Sosso ; 2,2 % ne se rattachent à aucun groupe. Tableaux 3 et 5 (p. 27 et 31) : 45,1 % de musulmans, 22,1 % de chrétiens, 14,9 % d'animistes et 15,9 % sans réponse. Tableau 6 (p. 38) : le kriol est parlé par 90,4 % des personnes, le portugais par 27,1 %. L'institut signale une omission de 4,6 % au recensement."
+      },
+      {
+        "title": "Instituto Nacional de Estatística (Guinée-Bissau) — Projections de la population de la Guinée-Bissau 2014-2063 (2022)",
+        "url": "https://www.stat-guinebissau.com/Menu_principal/IV_RGPH/rgph1/projecoes/relatorio_projecao_2014_2063.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport bilingue portugais et français de l'Institut national de la statistique, daté de novembre 2022. Le tableau 7 (p. 21) donne 1 852 784 habitants en 2025 selon l'hypothèse de tendance, à partir du recensement de 2009."
+      },
+      {
+        "title": "Banque mondiale — Population totale, Guinée-Bissau (indicateur SP.POP.TOTL)",
+        "url": "https://api.worldbank.org/v2/country/GNB/indicator/SP.POP.TOTL?format=json&date=2023:2025",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Série consultée le 3 novembre 2026, mise à jour le 8 octobre 2026. Elle donne 2 249 515 habitants en 2025, d'après les estimations des Nations unies. Cette estimation est plus haute que la projection de l'institut national de la statistique pour la même année."
+      },
+      {
+        "title": "Mané, Baticã Braima Ença ; Balduino, Amanda Macedo — Uma descrição inicial dos topônimos do Setor Autônomo de Bissau (2023)",
+        "url": "https://doi.org/10.11606/issn.2236-4242.v36i1p130-159",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de la revue Linha D'Água (Université de São Paulo), vol. 36, n° 1, p. 130-159, lu en texte intégral. Bissau, fondée en 1686 ou 1697, est la capitale depuis 1941 (p. 134). Le kriol est la langue de tous les jours et de la communication entre les peuples ; il n'est ni langue officielle ni langue d'enseignement (p. 135 et 139). Les auteurs écrivent que Bissau vient du pepel N'sasu, nom d'une lignée pepel (p. 147)."
+      },
+      {
+        "title": "Bívar, Manuel ; Turé, Sadjo Papis Mariama — Algumas considerações sobre o fim do Kaabu e as relações entre fulas e mandingas (2018)",
+        "url": "https://repositorio.ensinolusofona.pt/bitstream/10437.1/12019/1/S2_2018_Bivar%20%26%20Ture_O%20fim%20do%20Kaabu.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de la revue Sintidus, n° 1, p. 21-40, lu en texte intégral sur le dépôt de l'Université Lusófona. Sadjo Papis Mariama Turé travaille aux Archives historiques nationales de l'INEP, à Bissau. Les auteurs étudient les versions de l'épopée de Kelefa Sane et des traditions orales recueillies depuis les années 1970. Ils rapportent la fin du pouvoir mandingue à Cansala vers 1867 et le Fuladu d'Alfa Molo de 1867 à 1903 (p. 22). Ils notent que les Biafada se nomment djola et que Badora garde une identité biafada jusqu'à la fin du XIXe siècle (p. 25-26)."
+      },
+      {
+        "title": "Cabral, Amílcar — Revolution in Guinea: An African People's Struggle (1969)",
+        "url": "https://archive.org/details/revolution-in-guinea",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Recueil de textes du chef du PAIGC, publié à Londres par Stage 1, lu dans la numérisation d'Internet Archive. Il date la fondation du PAIGC de septembre 1956 et le massacre de Pijiguiti du 3 août 1959 (p. 18 et 30). Il décrit la société fula comme hiérarchisée et la société balanta comme sans hiérarchie, avec un conseil d'anciens (p. 46-47), et l'alliance des Portugais avec les chefs fula (p. 49). L'entretien de septembre 1968 avec la revue Tricontinental emploie la forme « Guinea-Bissao » (p. 115)."
+      },
+      {
+        "title": "PAIGC — Le II Congrès du Parti (1973)",
+        "url": "https://archive.org/details/paigc.-le-ii-congres-du-parti",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Brochure du PAIGC en français, lue dans la numérisation d'Internet Archive. Le communiqué du Comité exécutif de la lutte rapporte le congrès tenu du 18 au 22 juillet 1973 « dans les régions libérées de l'Est de la Guinée-Bissao ». Il annonce la proclamation de l'État et rappelle l'assassinat d'Amílcar Cabral le 20 janvier 1973. Ailleurs, la brochure nomme le pays voisin « Guinée-Conakry »."
+      },
+      {
+        "title": "Almada, André Álvares de — Relação e descripção de Guiné (édition de 1733)",
+        "url": "https://archive.org/details/relaaedescri00alma",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Récit d'un capitaine portugais témoin de la traite, imprimé à Lisbonne par Miguel Rodrigues en 1733, lu dans la numérisation d'Internet Archive. Le chapitre I place la Guinée entre le fleuve Sénégal et la Sierra Leone, dans le district de la capitainerie du Cap-Vert. Le chapitre IV décrit les Falupos, le chapitre V les Buramos, « a que também chamam Papeis », et leur roi Chapala (p. 31). Les chapitres suivants nomment les Bijagós, les Balantas et les Beafares (p. 37-38)."
+      },
+      {
+        "title": "Carreira, António — Mutilações corporais e pinturas cutâneas rituais dos negros da Guiné Portuguesa (1950)",
+        "url": "https://archive.org/details/dli.ernet.535200",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Document colonial : questionnaire d'enquête du Centro de Estudos da Guiné Portuguesa, imprimé à Bolama par l'Imprensa Nacional da Guiné, lu dans la numérisation d'Internet Archive. L'auteur, fonctionnaire colonial, emploie le nom Guiné Portuguesa et appelle le territoire « a Colónia »."
+      },
+      {
+        "title": "Loureiro Bastos, Fernando — Introduction to the Constitution of the Republic of Guinea-Bissau (2013)",
+        "url": "https://www.icla.up.ac.za/images/country_reports/guinea_bissau_country_report.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Étude publiée par l'Institute for International and Comparative Law in Africa de l'Université de Pretoria, datée du 19 juin 2013. Elle donne 1446 comme date du premier contact portugais, la dépendance envers le Cap-Vert jusqu'en 1879, la conquête du continent de 1913 à 1915, la résistance des Bijagós jusqu'aux années 1930 et le début de la lutte armée le 23 janvier 1963 (p. 1-2). Elle rapporte la proclamation et la Constitution du 24 septembre 1973 à Boé, la reconnaissance portugaise du 10 septembre 1974 et les coups d'État de 1980, 1998, 2003 et 2012."
+      },
+      {
+        "title": "Nations unies — Résolution 3061 (XXVIII) de l'Assemblée générale, 2 novembre 1973",
+        "url": "https://digitallibrary.un.org/record/190987/files/A_RES_3061%28XXVIII%29-FR.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Texte français lu dans la bibliothèque numérique des Nations unies. L'Assemblée générale salue « l'accession récente à l'indépendance du peuple de la Guinée-Bissau, qui a créé l'Etat souverain qu'est la République de Guinée-Bissau »."
+      },
+      {
+        "title": "Nations unies — Résolution 1542 (XV) de l'Assemblée générale, 15 décembre 1960",
+        "url": "https://digitallibrary.un.org/record/205905/files/A_RES_1542%28XV%29-FR.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Texte français lu dans la bibliothèque numérique des Nations unies. La résolution range la « Guinée, ou “Guinée portugaise” » parmi les territoires non autonomes administrés par le Portugal (p. 33)."
+      },
+      {
+        "title": "Agrour, Rachid — Contribution à l'étude d'un mot voyageur : Chleuh, Cahiers d'études africaines, 208 (2012)",
+        "url": "https://doi.org/10.4000/etudesafricaines.17161",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article lu en texte intégral sur OpenEdition. Au paragraphe 74, l'auteur écrit que les berbérophones nommaient au Moyen Âge l'Afrique sahélienne akal n ignaoun, la terre des Ignaoun, et qu'il faut « peut-être » y voir l'origine des noms Guinée, Guinée-Bissau et Guinée équatoriale."
+      },
+      {
+        "title": "Rivière, Claude — Guinea: The Mobilization of a People, préface",
+        "url": "https://webguine.site/bibliotheque/sociology/riviere/mobilization_people/preface.html",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Livre publié par Cornell University Press, préface lue sur le site webGuinée. L'auteur écrit que le nom Guinée vient « probablement » du berbère aginau ou agnau, celui dont la langue est incompréhensible, et que les Portugais reprennent ce nom au XVe siècle."
+      },
+      {
+        "title": "Glottolog — Upper Guinea Crioulo (uppe1455)",
+        "url": "https://glottolog.org/resource/languoid/id/uppe1455",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues de l'Institut Max Planck, consultée le 3 novembre 2026. Code ISO 639-3 : pov. Classement : langue créole rattachée aux langues romanes, dans le sous-groupe portugais."
+      },
+      {
+        "title": "Glottolog — Balanta-Kentohe (bala1301)",
+        "url": "https://glottolog.org/resource/languoid/id/bala1301",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues de l'Institut Max Planck, consultée le 3 novembre 2026. Code ISO 639-3 : ble. Classement : langue atlantique du groupe bak, sous-groupe balanta."
+      },
+      {
+        "title": "Glottolog — Mandjak (mand1419)",
+        "url": "https://glottolog.org/resource/languoid/id/mand1419",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues de l'Institut Max Planck, consultée le 3 novembre 2026. Code ISO 639-3 : mfv. Classement : langue atlantique du groupe bak, avec le papel et le mankanya."
+      },
+      {
+        "title": "Glottolog — Papel (pape1239)",
+        "url": "https://glottolog.org/resource/languoid/id/pape1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues de l'Institut Max Planck, consultée le 3 novembre 2026. Code ISO 639-3 : pbo. Classement : langue atlantique du groupe bak, avec le manjak et le mankanya."
+      },
+      {
+        "title": "Glottolog — Mankanya (mank1251)",
+        "url": "https://glottolog.org/resource/languoid/id/mank1251",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues de l'Institut Max Planck, consultée le 3 novembre 2026. Code ISO 639-3 : knf. Classement : langue atlantique du groupe bak, avec le manjak et le papel."
+      },
+      {
+        "title": "Glottolog — Biafada (biaf1240)",
+        "url": "https://glottolog.org/resource/languoid/id/biaf1240",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues de l'Institut Max Planck, consultée le 3 novembre 2026. Code ISO 639-3 : bif. Classement : langue atlantique."
+      },
+      {
+        "title": "Glottolog — Mandinka (mand1436)",
+        "url": "https://glottolog.org/resource/languoid/id/mand1436",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues de l'Institut Max Planck, consultée le 3 novembre 2026. Code ISO 639-3 : mnk. Classement : langue mandée de l'Ouest, du groupe manding."
       }
     ],
     "demographics": {
-      "totalPopulation": 2300000,
+      "totalPopulation": 1852784,
       "referenceYear": 2025,
-      "source": "UNFPA – World Population Dashboard",
+      "source": "Instituto Nacional de Estatística (Guinée-Bissau) — Projections de la population de la Guinée-Bissau 2014-2063 (2022)",
       "peoples": [
         {
-          "name": "Balante",
-          "percentageInCountry": 30,
-          "peopleId": "PPL_BALANTA",
-          "region": "Centre et littoral de la Guinée-Bissau",
-          "languageFamily": "FLG_ATLANTIQUE"
-        },
-        {
-          "name": "Fula / Peul",
-          "percentageInCountry": 30,
+          "name": "Fula",
           "peopleId": "PPL_FULA",
-          "region": "Toutes les régions de la Guinée-Bissau",
-          "languageFamily": "FLG_ATLANTIQUE"
+          "population": 410560,
+          "referenceYear": 2009,
+          "percentageInCountry": 28.47,
+          "region": "Est (Bafatá, Gabú)",
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "fuc"
         },
         {
-          "name": "Mandinka",
-          "percentageInCountry": 13,
+          "name": "Balanta",
+          "peopleId": "PPL_BALANTA",
+          "population": 323948,
+          "referenceYear": 2009,
+          "percentageInCountry": 22.46,
+          "region": "Centre, sud et nord-ouest (Oio, Tombali, Cacheu)",
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "ble"
+        },
+        {
+          "name": "Mandinga",
           "peopleId": "PPL_MALINKE",
-          "region": "Toutes les régions de la Guinée-Bissau",
-          "languageFamily": "FLG_MANDE"
+          "population": 212269,
+          "referenceYear": 2009,
+          "percentageInCountry": 14.72,
+          "region": "Nord et est (Oio, Bafatá, Gabú)",
+          "languageFamily": "FLG_MANDE",
+          "mainLanguageCode": "mnk"
         },
         {
           "name": "Papel",
-          "percentageInCountry": 7,
           "peopleId": "PPL_PAPEL",
-          "region": ""
+          "population": 130651,
+          "referenceYear": 2009,
+          "percentageInCountry": 9.06,
+          "region": "Biombo et Bissau",
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "pbo"
         },
         {
-          "name": "Autres groupes ethniques",
+          "name": "Manjaco",
+          "peopleId": "PPL_MANJAK",
+          "population": 119808,
+          "referenceYear": 2009,
+          "percentageInCountry": 8.31,
+          "region": "Cacheu",
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "mfv"
+        },
+        {
+          "name": "Beafada",
           "peopleId": null,
-          "region": "Divers",
-          "languageFamily": null,
-          "percentageInCountry": 20
+          "population": 50543,
+          "referenceYear": 2009,
+          "percentageInCountry": 3.5,
+          "region": "Quinara",
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "bif"
+        },
+        {
+          "name": "Mancanha",
+          "peopleId": "PPL_MANKANYA",
+          "population": 44829,
+          "referenceYear": 2009,
+          "percentageInCountry": 3.11,
+          "region": null,
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "knf"
+        },
+        {
+          "name": "Bijagós",
+          "peopleId": "PPL_BIDYOGO",
+          "population": 30294,
+          "referenceYear": 2009,
+          "percentageInCountry": 2.1,
+          "region": "Archipel des Bijagós",
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "bjg"
+        },
+        {
+          "name": "Felupe",
+          "peopleId": "PPL_DIOLA",
+          "population": 24892,
+          "referenceYear": 2009,
+          "percentageInCountry": 1.73,
+          "region": "Cacheu",
+          "languageFamily": "FLG_ATLANTIQUE"
+        },
+        {
+          "name": "Mansoanca",
+          "peopleId": null,
+          "population": 20456,
+          "referenceYear": 2009,
+          "percentageInCountry": 1.42,
+          "region": null,
+          "languageFamily": null
+        },
+        {
+          "name": "Balanta Mane",
+          "peopleId": null,
+          "population": 14460,
+          "referenceYear": 2009,
+          "percentageInCountry": 1.0,
+          "region": null,
+          "languageFamily": "FLG_ATLANTIQUE"
+        },
+        {
+          "name": "Nalu",
+          "peopleId": "PPL_NALU",
+          "population": 13420,
+          "referenceYear": 2009,
+          "percentageInCountry": 0.93,
+          "region": "Sud",
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "naj"
+        },
+        {
+          "name": "Saracole",
+          "peopleId": "PPL_SONINKE",
+          "population": 7407,
+          "referenceYear": 2009,
+          "percentageInCountry": 0.51,
+          "region": null,
+          "languageFamily": "FLG_MANDE"
+        },
+        {
+          "name": "Sosso",
+          "peopleId": "PPL_SOUSSOU",
+          "population": 5318,
+          "referenceYear": 2009,
+          "percentageInCountry": 0.37,
+          "region": null,
+          "languageFamily": "FLG_MANDE"
+        },
+        {
+          "name": "Sans groupe déclaré",
+          "peopleId": null,
+          "population": 32098,
+          "referenceYear": 2009,
+          "percentageInCountry": 2.23,
+          "region": null,
+          "languageFamily": null
+        },
+        {
+          "name": "Non déclaré",
+          "peopleId": null,
+          "population": 1274,
+          "referenceYear": 2009,
+          "percentageInCountry": 0.09,
+          "region": null,
+          "languageFamily": null
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "La Guinée-Bissau est un pays d'Afrique de l'Ouest dont le nom joint Guinée, mot portugais pour la côte, et Bissau, sa capitale ; elle s'appelait Guinée portugaise.",
+      "followUp": "D'où viennent les mots Guinée et Bissau ?"
     }
   }
 }
