@@ -362,17 +362,16 @@ describe("two peoples whose hero and history disagreed on the self-name", () => 
 
 describe("PPL_ZARMA — one account of where the name Zarma comes from", () => {
   // No source the fiche cites carries « Za-Hama, the descendants of Za »:
-  // not the pages it lists, not the works its history reads. The history
-  // says the sources read do not explain the name, and that stays true.
+  // not the pages it lists, not the works its history reads.
   // @req REQ-178
   it("drops the unsourced Za-Hama derivation that contradicted its history", () => {
     const zarma = read(ZARMA);
     const prose = JSON.stringify({ ...zarma.content, sources: [] });
 
     expect(prose).not.toMatch(/Za-Hama/);
-    expect(zarma.nameHistory.summary).toMatch(
-      /ne disent pas d'où vient le nom Zarma/
-    );
+    // Premium batch 08 found a sourced origin: a griot's account published
+    // by Sandra Bornand (2009). The summary points to it as an account.
+    expect(zarma.nameHistory.summary).toMatch(/récit de griot/);
   });
 
   // @req REQ-178

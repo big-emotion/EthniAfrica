@@ -122,7 +122,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // headlines, Mucuval and Wiyana, moved to the exonyms, where a reader who searches them still finds the fiche.
     // 2703 -> 2745 on 2026-10-19: ETNI-2135 split packed exonym entries into
     // one entry per name, preserving the names and their existing glosses.
-    value: 2745,
+    value: 2712, // 2745 -> 2712 on 2026-11-03: premium batch 08 kept only the exonyms its sources attest on the Zarma, Kera, Atlantic macro-group, Baga, Bainouk, Balanta, Bijago and Dei fiches (Baga dropped twelve unsourced forms for three sourced ones).
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -251,7 +251,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // research for series 2 n° 1, dates the French spelling (Targui, 19th
     // century) instead of saying « à l'époque coloniale ».
     // 199 -> 197 on 2026-10-18: the Taal and Mbogo fiches, which counted, withdrawn after wave 24.
-    value: 197,
+    value: 196, // 197 -> 196 on 2026-11-03: premium batch 08 rewrote the appellations of eight fiches from their sources; one no longer uses the word.
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -283,7 +283,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 163 -> 156 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 156 -> 155 on 2026-10-14: the Nabt fiche, which counted, was folded.
     // 155 -> 152 on 2026-10-18: the Taal, Mbogo and « Africains d'origine récente » fiches, which counted, withdrawn after wave 24.
-    value: 152,
+    value: 151, // 152 -> 151 on 2026-11-03: premium batch 08 rewrote the appellations of eight fiches (Zarma, Kera, Atlantic macro-group, Baga, Bainouk, Balanta, Bijago, Dei) from the sources read.
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -332,7 +332,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 103 -> 102 on 2026-10-18: the Taal fiche, which counted, withdrawn after wave 24.
     // 102 -> 101 the same day: PPL_WIYANA's whyProblematic no longer says the Mossi
     // neighbours imposed Gurunsi; it tells Jacob's hypothesis of a Moore nickname instead.
-    value: 101,
+    value: 103, // 101 -> 103 on 2026-11-03: premium batch 08 rewrote the appellations of eight fiches (Zarma, Kera, Atlantic macro-group, Baga, Bainouk, Balanta, Bijago, Dei) from the sources read.
     method: "radical voisin dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -349,7 +349,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 67 -> 65 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 65 -> 63 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 63 -> 61 on 2026-10-18: the Mucubal fiche, folded into PPL_MUCUVAL, and the « Africains d'origine récente » fiche, withdrawn, both counted.
-    value: 61,
+    value: 59, // 61 -> 59 on 2026-11-03: premium batch 08 rewrote the appellations of eight fiches (Zarma, Kera, Atlantic macro-group, Baga, Bainouk, Balanta, Bijago, Dei) from the sources read.
     method: "radical portugais dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -423,7 +423,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 25 -> 24 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
     // 24 -> 23 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
-    value: 23,
+    value: 26, // 23 -> 26 on 2026-11-03: premium batch 08 rewrote the appellations of eight fiches (Zarma, Kera, Atlantic macro-group, Baga, Bainouk, Balanta, Bijago, Dei) from the sources read.
     method: "radical missionn dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
