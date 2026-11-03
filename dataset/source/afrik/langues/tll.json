@@ -13,9 +13,14 @@
   "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
-  "peoples": [{ "name": "Tetela", "peopleId": "PPL_TETELA" }],
+  "peoples": [
+    {
+      "name": "Tetela",
+      "peopleId": "PPL_TETELA"
+    }
+  ],
   "nameHistory": {
-    "summary": "Le nom otetela désigne la langue des Tetela, au centre de la République démocratique du Congo. On y retrouve le nom du peuple, Tetela, précédé de o- ; le peuple se dit Atetela, et l'on a longtemps écrit Batetela. Les sources que nous avons lues n'expliquent pas l'origine du nom Tetela.",
+    "summary": "Le nom otetela désigne la langue des Tetela, au centre de la République démocratique du Congo. On y retrouve le nom du peuple, Tetela, précédé de o- ; le peuple se dit Atetela, et l'on a longtemps écrit Batetela. Deux explications du nom Tetela ont été publiées en 1922 ; nous les présentons avec le nom Batetela.",
     "names": [
       {
         "nameText": "Otetela",
@@ -54,7 +59,7 @@
               "to": null,
               "label": "Sens à partir des formes"
             },
-            "statement": "Le nom otetela se distingue de celui du peuple par sa première lettre : le dictionnaire de 1925 dit « la langue otetela » et nomme le peuple Atetela. Nous n'avons pas trouvé de source qui explique le nom Tetela lui-même.",
+            "statement": "Le nom otetela se distingue de celui du peuple par sa première lettre : le dictionnaire de 1925 dit « la langue otetela » et nomme le peuple Atetela. Les explications du nom Tetela lui-même sont présentées avec le nom Batetela.",
             "aspect": "meaning",
             "sources": [
               {
@@ -100,6 +105,84 @@
                 "notes": "UNESCO, volume dirigé par A. Adu Boahen, édition française lue dans l'exemplaire numérisé du volume le 11 octobre 2026."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Publiée en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom batetela aurait été inventé par les Arabes, selon les Sungu, l'un des groupes tetela du sud, « parce que nous possédions peu des choses qu'ils regardent comme indispensables à la vie ». Emil Torday et Thomas Athol Joyce rapportent cette explication.",
+            "hypothesisGroup": "origine du nom tetela",
+            "actors": [
+              {
+                "name": "Les Sungu",
+                "role": "donnent cette explication du nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Notes ethnographiques sur des populations habitant les bassins du Kasai et du Kwango oriental : 1. Peuplades de la forêt, 2. Peuplades des prairies",
+                "author": "Emil Torday et Thomas Athol Joyce",
+                "year": 1922,
+                "url": "https://archive.org/details/notesethnographi00tord",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 4",
+                "notes": "Annales du Musée du Congo belge, publiées par le ministère des Colonies, Bruxelles, 1922 : un ouvrage de l'administration coloniale belge. Lu dans la numérisation d'Internet Archive le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Publiée en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom tetela viendrait de Matetela, un dieu suprême dont le nom voudrait dire « celui qui ne rit pas » ou « celui de qui on ne doit pas rire », selon Emil Torday et Thomas Athol Joyce. Ils ont trouvé cette croyance chez les Olemba, un groupe tetela du nord ; les Sungu l'avaient oubliée.",
+            "hypothesisGroup": "origine du nom tetela",
+            "actors": [
+              {
+                "name": "Les Olemba",
+                "role": "groupe chez qui la croyance est relevée"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Notes ethnographiques sur des populations habitant les bassins du Kasai et du Kwango oriental : 1. Peuplades de la forêt, 2. Peuplades des prairies",
+                "author": "Emil Torday et Thomas Athol Joyce",
+                "year": 1922,
+                "url": "https://archive.org/details/notesethnographi00tord",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 4",
+                "notes": "Annales du Musée du Congo belge, publiées par le ministère des Colonies, Bruxelles, 1922 : un ouvrage de l'administration coloniale belge. Lu dans la numérisation d'Internet Archive le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Décrit en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom batetela n'est pas employé partout au début du XXe siècle, selon Emil Torday et Thomas Athol Joyce : sur la rive droite du Lubefu, les habitants se disent Akuchu, sur la rive gauche Sungu, et sur le Lomami Udya.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Notes ethnographiques sur des populations habitant les bassins du Kasai et du Kwango oriental : 1. Peuplades de la forêt, 2. Peuplades des prairies",
+                "author": "Emil Torday et Thomas Athol Joyce",
+                "year": 1922,
+                "url": "https://archive.org/details/notesethnographi00tord",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5",
+                "notes": "Annales du Musée du Congo belge, publiées par le ministère des Colonies, Bruxelles, 1922 : un ouvrage de l'administration coloniale belge. Lu dans la numérisation d'Internet Archive le 3 novembre 2026."
+              }
+            ]
           }
         ]
       }
@@ -107,12 +190,13 @@
   },
   "content": {
     "vehicularRole": "non_vehicular",
-    "dialects": [],
+    "dialects": ["Ewangu"],
     "vitalityStatus": {
       "status": "Vigorous",
       "scale": "EGIDS (Ethnologue)",
       "asOf": 2025
     },
+    "originDebated": true,
     "sources": [
       {
         "title": "Glottolog 5.3 — Tetela (tete1250)",
@@ -120,7 +204,28 @@
         "tier": "official",
         "source_kind": "linguistic_reference",
         "notes": "Notice directe pour le code ISO 639-3 tll et le glottocode tete1250. Elle situe la langue en République démocratique du Congo, atteste notamment les variantes Otetela et Sungu et publie le statut EGIDS 6a en 2025. Kitetela est conservé comme variante déjà déclarée par la fiche peuple réconciliée."
+      },
+      {
+        "title": "Otetela and English Dictionary",
+        "url": "https://archive.org/details/20240917_20240917_0151",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "C. C. Bush et le comité de langue de la mission, Wembo-Nyama, Methodist Episcopal Congo Mission, 1925. Relu le 3 novembre 2026 dans une numérisation déposée sur Internet Archive par un particulier, copie non officielle. La préface dit que les mots du dictionnaire appartiennent surtout au dialecte ewangu de la langue otetela."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers",
+        "reason": "Nous n'avons pas trouvé de recensement ni d'étude publiée qui compte les personnes qui parlent l'otetela."
+      },
+      {
+        "field": "nameHistory.names[0].pronunciation",
+        "reason": "Nous n'avons pas encore trouvé de dictionnaire qui indique comment se prononce le nom otetela."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "L'otetela est la langue des Tetela, parlée au centre de la République démocratique du Congo.",
+      "followUp": "D'où vient le nom Tetela, que l'on écrivait autrefois Batetela ?"
+    }
   }
 }
