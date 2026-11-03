@@ -71,6 +71,8 @@ were referenced by nothing at all, two of them written that same week.
 - [Editorial personas](editorial/audience-personas.md)
 - [Editorial classification status](editorial/classification-status.md)
 - [Contribution forms — a draft per fiche category](editorial/contribution-forms-draft-2026-09-22.md)
+- [AFRIK corpus consistency report, November 2026: full lists](editorial/corpus-consistency-2026-11-full-lists.md)
+- [AFRIK corpus consistency report, November 2026](editorial/corpus-consistency-2026-11.md)
 - [EthniAfrica doctrine](editorial/doctrine.md)
 - [Essays](editorial/essais/README.md)
 - [« L'Afrique n'est pas un tout » — the ideological base of the series](editorial/essais/afrique-nest-pas-un-tout-2026-10-13.md)
