@@ -2,23 +2,14 @@
   "id": "PPL_KIRUNDI_HUTU",
   "nameMain": "Hutu du Burundi",
   "languageFamilyId": "FLG_NIGERCONGO",
-  "currentCountries": [
-    "BDI"
-  ],
+  "currentCountries": ["BDI"],
   "classificationStatus": "colonial-legacy",
   "content": {
     "appellations": {
       "mainName": "Hutu du Burundi",
       "selfAppellation": "Abahutu",
-      "exonyms": [
-        "Wahutu (forme swahilie des voyageurs et des missionnaires)"
-      ],
-      "spellingAliases": [
-        "Bahutu",
-        "Muhutu",
-        "Umuhutu",
-        "Hutus"
-      ],
+      "exonyms": ["Wahutu (forme swahilie des voyageurs et des missionnaires)"],
+      "spellingAliases": ["Bahutu", "Muhutu", "Umuhutu", "Hutus"],
       "originOfExonyms": "La forme Wahutu porte le préfixe swahili wa-, qui marque les habitants d'un pays, comme dans Warundi. Elle est écrite par le comte allemand Gustav Adolf von Götzen, qui traverse le Rwanda en 1894, puis par le missionnaire Jean-Michel van der Burgt en 1903. Le sens premier du nom Hutu est discuté. Selon von Götzen, les éleveurs du pays lui donneraient le sens de « serfs ». Van der Burgt propose « serf, esclave ». Le rapport de Human Rights Watch de 1999 y voit d'abord une personne subordonnée, ou la personne qui suit un homme plus puissant.",
       "whyProblematic": "Le nom Hutu a été transformé en nom de race par l'administration coloniale. Selon l'accord d'Arusha de 2000, la colonisation allemande puis belge a imposé une vision caricaturale et raciste de la société burundaise, fondée sur l'apparence physique, et introduit une carte d'identité qui indiquait l'origine ethnique. L'historien Jean-Pierre Chrétien montre que des missionnaires et des administrateurs présentaient les Hutu comme des « Bantu orientaux » et les Tutsi comme des « Chamites sémitisés » venus d'ailleurs, une thèse reprise dans un manuel scolaire publié vers 1958 et longtemps utilisé dans les écoles du Burundi. Pour les historiens de l'Histoire générale de l'Afrique de l'UNESCO, la colonisation a fait de ces deux catégories « des castes à substrat racial ». Après l'indépendance, selon la commission d'enquête de l'ONU, des massacres ont visé des personnes pour leur appartenance hutu ou tutsi, en 1965, 1972, 1988 et 1993.",
       "contemporaryUsage": "Le nom Hutu reste employé au Burundi, en kirundi sous la forme Bahutu au pluriel. L'accord d'Arusha de 2000 reconnaît les Bahutu, les Batutsi et les Batwa, qui forment ensemble la nation burundaise, et fixe à 50 % au plus la part d'un même groupe dans l'armée. Le recensement de 2008 ne pose pourtant aucune question sur cette appartenance. En 1996, la commission d'enquête de l'ONU notait que ces groupes sont souvent appelés « groupes ethniques », bien qu'ils partagent la même culture, la même histoire et la même langue. Des historiens comme Jean-Pierre Chrétien y voient plutôt d'anciennes catégories sociales.",
@@ -27,13 +18,9 @@
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Bantou des Grands Lacs, sous-groupe rundique (rwanda-rundi)",
       "historicalRegion": "Burundi, dans la région des Grands Lacs — hauts plateaux, collines et plaine de l'Imbo",
-      "currentCountries": [
-        "BDI"
-      ]
+      "currentCountries": ["BDI"]
     },
-    "ethnicities": [
-      "Hutu du Burundi (Abahutu)"
-    ],
+    "ethnicities": ["Hutu du Burundi (Abahutu)"],
     "origins": {
       "ancientOrigins": "Les Hutu du Burundi parlent le kirundi, comme les Tutsi et les Twa du même pays. Glottolog classe cette langue parmi les langues bantoues des Grands Lacs. Un récit répandu à l'époque coloniale faisait des Hutu des agriculteurs bantous arrivés les premiers, puis dominés par des éleveurs tutsi venus du nord. Jean-Pierre Chrétien le décrit en 1992 comme un cliché hérité des écrits missionnaires et coloniaux, sans véritable fondement historique. Selon l'Histoire générale de l'Afrique de l'UNESCO, les hypothèses d'une rencontre ancienne entre groupes de langues bantoues, couchitiques et soudaniques centrales portent sur le premier millénaire. Elles sont trop lointaines pour expliquer la société du XVIe siècle.",
       "formationPeriod": "Selon les historiens de l'Histoire générale de l'Afrique, on ne sait pas exactement ce que représentaient les catégories hutu et tutsi il y a quatre siècles. Ils écrivent que les changements des XVIIe-XIXe siècles ont fait passer les relations entre Hutu et Tutsi d'échanges locaux à une hiérarchie plus large, plus ou moins souple selon les États et les époques. Jean-Pierre Chrétien ajoute que la mainmise des Tutsi sur le pouvoir était beaucoup moins nette au Burundi qu'au Rwanda. Ces deux sources jugent que la colonisation a ensuite donné à ces catégories un caractère racial.",
@@ -61,9 +48,7 @@
     },
     "languages": {
       "mainLanguage": "Kirundi (run)",
-      "isoCodes": [
-        "run"
-      ],
+      "isoCodes": ["run"],
       "dialects": [],
       "vehicularRole": "Le kirundi est la langue de tous les Burundais, Hutu, Tutsi et Twa. Selon la commission d'enquête de l'ONU, la population rurale ne parle que le kirundi, le français est une langue officielle que seuls les Burundais instruits parlent couramment, et de nombreux citadins parlent aussi le swahili. Le recensement de 2008 interroge les habitants sur leur capacité à lire et écrire le kirundi, le français, le swahili et l'anglais. Glottolog classe le kirundi dans le même ensemble de langues bantoues des Grands Lacs que le kinyarwanda du Rwanda voisin."
     },
@@ -260,11 +245,7 @@
         "languageOfOrigin": "run",
         "namedBy": null,
         "shortLine": "Le nom d'une des catégories de la société burundaise ; Bahutu au pluriel.",
-        "usedIn": [
-          "run",
-          "kin",
-          "fra"
-        ],
+        "usedIn": ["run", "kin", "fra"],
         "periodLabel": "Écrit dès 1894 ; en usage aujourd'hui",
         "accounts": [
           {
@@ -605,11 +586,7 @@
         "languageOfOrigin": "swa",
         "namedBy": null,
         "shortLine": "La forme du nom avec le préfixe swahili wa-, celle des voyageurs et missionnaires.",
-        "usedIn": [
-          "swa",
-          "deu",
-          "fra"
-        ],
+        "usedIn": ["swa", "deu", "fra"],
         "periodLabel": "Écrit dès 1894 ; vieilli",
         "variantSpelling": true,
         "accounts": [
