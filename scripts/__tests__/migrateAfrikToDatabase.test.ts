@@ -281,8 +281,11 @@ describe("migrateAfrikToDatabase", () => {
     vi.mocked(loadLanguages).mockResolvedValue(emptyLanguageReport());
     vi.mocked(loadAllPeoples).mockResolvedValue([peopleFixture]);
     // A JSON import widens every string to `string`, so the fiche's
-    // `sources[].tier` loses its literal type against FicheSource.
-    vi.mocked(loadAllCountries).mockResolvedValue([coteDIvoire as Country]);
+    // `sources[].tier` and `nameHistory` lose their literal types against
+    // Country; the fiche is only a fixture here, hence the cast via unknown.
+    vi.mocked(loadAllCountries).mockResolvedValue([
+      coteDIvoire as unknown as Country,
+    ]);
     vi.mocked(loadAllDossiers).mockReturnValue({ dossiers: [], errors: [] });
     vi.mocked(loadDossiers).mockResolvedValue({
       total: 0,
