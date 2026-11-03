@@ -3,7 +3,7 @@
   "nameFr": "Congo",
   "nameEn": "Republic of the Congo",
   "nameOfficial": "République du Congo",
-  "summary": "La République du Congo porte le même nom que le fleuve Congo, que l'on relie à celui de l'ancien royaume Kongo. Son territoire fut celui du royaume Tio et des chefferies mbochi avant de devenir colonie française. Le kikongo et le lingala y accompagnent le français, et la rumba congolaise y a trouvé l'un de ses foyers.",
+  "summary": "La République du Congo porte le même nom que le fleuve Congo, que l'on relie à celui de l'ancien royaume Kongo. Son territoire fut celui du royaume tio, du royaume de Loango et des chefferies mbosi avant de devenir une colonie française. Le kituba et le lingala, langues nationales, y accompagnent le français, et la rumba congolaise y a l'un de ses foyers.",
   "etymology": "La République du Congo porte le même nom que le fleuve Congo, et que son voisin, la République démocratique du Congo. Une explication relie le nom du fleuve à celui de l'ancien royaume Kongo (Bentley, 1886, p. vii). Bentley rapporte que les riverains appellent le fleuve Nzadi, ou un terme voisin, qu'il traduit par « le Grand Fleuve », et que les Européens en ont fait Zaïre (même page). D'où vient le mot Kongo lui-même n'est pas établi : Bentley ne se prononce pas avec certitude ; il cite seulement, sans les relier au nom, les mots kikongo konga, nkongo et kinkongo. Nous n'avons lu qu'une seule explication de l'ordre entre le royaume et le fleuve, celle d'un missionnaire étranger ; nous n'en avons pas lu de la part de Kongo eux-mêmes. Le pays est aussi appelé « Congo-Brazzaville » pour le distinguer de la République démocratique du Congo (Congo-Kinshasa).",
   "nameOriginActor": "Le texte que nous avons lu ne dit pas qui a donné son nom au fleuve, ni quand. L'explication qui le relie au royaume Kongo décrit celui-ci comme un État ancien et puissant ; le même texte rapporte que le navigateur portugais Diogo Cam atteignit l'embouchure du fleuve en 1484 et qu'une expédition atteignit la capitale du royaume en 1491, dates qui ne disent pas quand le nom a été donné. Le nom « Congo-Brazzaville » a été utilisé pour distinguer ce pays de la République démocratique du Congo (Congo-Kinshasa) après l'indépendance des deux pays en 1960.",
   "nameHistory": {
@@ -510,56 +510,70 @@
   },
   "content": {
     "historicalNames": {
-      "formerNames": ["Congo français (1880-1960)", "Congo-Brazzaville"],
-      "antiquity": "Le territoire actuel de la République du Congo était peuplé de diverses sociétés bantoues sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs territoires.",
-      "middleAges": "Développement des royaumes et chefferies bantoues (Royaume Kongo, chefferies Teke) sans nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Mosaïque de royaumes et chefferies indépendants : Royaume Kongo (partie ouest), royaume Tio (Teke), chefferies Mbochi, et autres peuples bantous.",
-      "colonization": "1880-1960 : Colonie française du Congo (partie de l'Afrique-Équatoriale française, AEF). Les Français ont créé la colonie du Congo français en 1880. Le territoire était administré comme une colonie française jusqu'à l'indépendance en 1960. Brazzaville était la capitale de l'AEF.",
-      "contemporary": "1960 : Indépendance du Congo (15 août 1960), proclamation de la République du Congo. Le nom \"République du Congo\" est officialisé. Le pays est aussi appelé \"Congo-Brazzaville\" pour le distinguer de la République démocratique du Congo (Congo-Kinshasa). \"Congo\" est son nom court, \"République du Congo\" son titre officiel."
+      "formerNames": [
+        "Congo français",
+        "Moyen-Congo",
+        "République populaire du Congo"
+      ],
+      "antiquity": "Nous n'avons pas encore de source sur les noms que portaient les régions du pays avant le XVe siècle.",
+      "middleAges": "Les plus anciens noms connus sont ceux des royaumes. Le royaume Kongo naît dans la chefferie vungu, au nord du fleuve, et son fondateur, Nimi Lukeni, fonde la ville de Mbanza Kongo, selon l'historien Jan Vansina. La date de cette fondation est inconnue : certains auteurs la placent vers 1400 au plus tard, et un siècle plus tôt au plus tôt. Toujours selon Jan Vansina, le royaume teke, dont les textes parlent à partir de 1507, était peut-être le plus ancien de tous ; au XVIIe siècle, il passait pour l'être.",
+      "precolonial": "Au début du XVIe siècle, les voyageurs européens nomment déjà le roi de Loango, le Mani Loango, et sa capitale, Mbanza Loango, selon l'historien Elikia M'Bokolo. Le roi des Tio porte le titre d'ɔkoo, que les Européens ont déformé en makoko, selon le même auteur. Les Européens donnent aussi leurs propres noms aux Teke. Au milieu du XVIe siècle, les Anzikos, c'est-à-dire les Tio ou Teke du Pool, sont nombreux parmi les captifs vendus comme esclaves au Pérou, en Colombie et au Brésil. Au XVIIIe siècle, les livres de comptes des capitaines négriers appellent Monteques les Teke du Malebo Pool, selon Elikia M'Bokolo.",
+      "colonization": "Entre 1879 et 1880, la France envoie Pierre Savorgnan de Brazza au Congo, puis ratifie les traités qu'il a passés avec le Makoko, roi des Teke, selon l'historien Godfrey Uzoigwe. Le territoire s'appelle alors le Congo français : c'est sous ce nom que l'historien Walter Rodney en parle au temps des compagnies concessionnaires, en précisant qu'il s'agit de l'actuel Congo. Il devient ensuite le Moyen-Congo, l'une des colonies de l'Afrique-Équatoriale française avec le Tchad, l'Oubangui-Chari et le Gabon. Brazzaville est la capitale de cette fédération, selon l'Histoire générale de l'Afrique.",
+      "contemporary": "Le pays devient indépendant le 15 août 1960 sous le nom de République du Congo, selon le Centre national de la statistique et des études économiques. Une dizaine d'années plus tard, le Parti congolais du travail le rebaptise République populaire du Congo. Le retour au multipartisme, au début des années 1990, lui rend le nom de République du Congo. On l'appelle aussi Congo-Brazzaville, du nom de sa capitale, pour le distinguer de son voisin, la République démocratique du Congo, que l'on appelle parfois Congo-Kinshasa, selon la commission britannique des noms géographiques."
     },
     "kingdoms": [
       {
         "name": "Royaume Kongo",
-        "period": "XIVe - XIXe siècles",
+        "period": "Vers 1400 ou un siècle plus tôt - XIXe siècle",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1301,
+          "startYear": 1300,
           "endYear": 1900,
-          "precision": "century"
+          "precision": "approximate",
+          "datingNote": "Le début suit Jan Vansina (Histoire générale de l'Afrique, V), pour qui la date de fondation est inconnue : certains auteurs la placent vers 1400 au plus tard, et un siècle plus tôt au plus tôt. La fin encadre la conquête coloniale ; nous n'avons pas lu de source qui date la fin du royaume."
         },
-        "dominantPeoples": ["Kongo (Bakongo)"],
-        "politicalCenters": [
-          "Mbanza Kongo (capitale historique)",
-          "région du Pool"
-        ],
-        "historicalRole": "Royaume puissant qui a établi des relations avec les Portugais dès le XVe siècle. Influence majeure sur la région ouest du Congo-Brazzaville."
+        "dominantPeoples": ["Kongo"],
+        "politicalCenters": ["Mbanza Kongo (capitale)"],
+        "historicalRole": "Selon Jan Vansina, le Kongo est aux XVe et XVIe siècles le seul grand État de la région, du plateau de Benguela aux plateaux teke et de la mer jusqu'au-delà du Kwango. Vers 1500, ses frontières suivent le fleuve depuis son embouchure et passent, par endroits, au nord du fleuve, par exemple à Manyanga. Il exerce son influence sur toutes les entités politiques voisines, et leur impose parfois un tribut, sauf sur le royaume tio. Entre Loango et le Pool, dans la région des mines de cuivre de Mindouli, des nobles kongo s'installent plus tard et repoussent les villages teke."
       },
       {
-        "name": "Royaume Tio (Teke)",
-        "period": "Précolonial - XIXe siècle",
+        "name": "Royaume tio (teke)",
+        "period": "Attesté dès 1507 - 1880",
         "entryType": "polity",
-        "dominantPeoples": ["Teke (Bateke)"],
-        "politicalCenters": ["Région de la Cuvette", "Plateaux"],
-        "historicalRole": "Royaume Tio puissant, organisation politique structurée, commerce avec les Européens. Résistance à la colonisation française."
+        "timeRange": {
+          "startYear": 1507,
+          "endYear": 1880,
+          "precision": "approximate",
+          "datingNote": "Le début est la première mention du royaume dans les textes, en 1507, selon Jan Vansina (Histoire générale de l'Afrique, V) ; le royaume est sans doute plus ancien. La fin encadre les traités passés par Pierre Savorgnan de Brazza avec le Makoko, que Godfrey Uzoigwe (Histoire générale de l'Afrique, VII) range dans la politique française de 1879-1880."
+        },
+        "dominantPeoples": ["Teke (Tio)"],
+        "politicalCenters": ["Mbé (résidence du roi)", "Malebo Pool"],
+        "historicalRole": "Selon Elikia M'Bokolo, le royaume tio se trouve au plus grand carrefour du commerce du bassin du Congo. Il est très décentralisé : il réunit des chefferies presque autonomes. Le roi, l'ɔkoo, a surtout un rôle spirituel ; le pouvoir temporel appartient à quelques grands notables, comme le ngaailiino, qui lève le tribut et dirige l'administration. Le roi n'est pas héréditaire : onze grands électeurs le choisissent parmi les principaux chefs. Il réside à Mbé, à plus de cent kilomètres au nord du Pool. Selon Jan Vansina, le royaume connaît une guerre civile de 1780 environ à 1830 environ. Pierre Savorgnan de Brazza, envoyé par la France en 1879-1880, passe des traités avec le Makoko, que la France ratifie ensuite, selon Godfrey Uzoigwe."
       },
       {
         "name": "Royaume de Loango",
-        "period": "Fondation non datée - 1787 (plus de roi nommé)",
+        "period": "Établi vers 1500 - 1787 (plus de roi nommé)",
         "entryType": "polity",
+        "timeRange": {
+          "startYear": 1500,
+          "endYear": 1787,
+          "precision": "approximate",
+          "datingNote": "Le début suit Elikia M'Bokolo (Histoire générale de l'Afrique, V), pour qui le royaume est bien établi vers 1500 ; sa fondation n'est pas datée. La fin est l'année après laquelle on ne nomme plus de roi, selon Jan Vansina."
+        },
         "dominantPeoples": ["Vili"],
-        "politicalCenters": ["Loango (cour royale)"],
-        "historicalRole": "Royaume de la côte atlantique, voisin du Kongo, comme Ngoyo et Kakongo. Au XVIIIe siècle, des notables enrichis prennent la place de l'ancienne noblesse à la cour, et le pouvoir royal s'affaiblit. Vers 1750 ou un peu avant, la lignée royale s'éteint ; après 1787, on ne nomme plus de roi, selon Jan Vansina (HGA V)."
+        "politicalCenters": ["Mbanza Loango (capitale)"],
+        "historicalRole": "Selon Elikia M'Bokolo, le royaume de Loango est bien établi vers 1500. Certaines traditions en font un État issu du Kongo, d'autres le font naître de la société vili elle-même. Le roi y a surtout des fonctions rituelles. Les commerçants vili organisent des caravanes vers l'intérieur et vont jusqu'au Pool, à Mbanza Kongo et au Gabon au XVIIe siècle, selon Jan Vansina. La côte de Loango exporte une centaine de captifs par an vers 1639, et 12 500 par an entre 1762 et 1778. Vers 1780, Loango perd son importance au profit des ports de Malemba et de Cabinda. Au XVIIIe siècle, le pouvoir royal s'affaiblit : vers 1750 ou un peu avant, la lignée royale s'éteint ; après 1787, on ne nomme plus de roi, selon Jan Vansina."
       },
       {
-        "name": "Chefferies Mbochi",
-        "period": "Précolonial - présent",
+        "name": "Chefferies mbosi (mbochi)",
+        "period": "Époque précoloniale - milieu du XXe siècle",
         "entryType": "polity",
-        "dominantPeoples": ["Mbochi"],
-        "politicalCenters": ["Cuvette", "Likouala"],
-        "historicalRole": "Chefferies Mbochi, organisation lignagère, traditions forestières."
+        "dominantPeoples": ["Mbosi (Mbochi)"],
+        "politicalCenters": ["Cuvette", "Plateaux"],
+        "historicalRole": "Selon le chercheur congolais Vianney Jean Wolfgon Yoka Elongo, de l'Université Marien-Ngouabi, le chef investi, le kani, exerce son pouvoir sur un territoire délimité, l'okani. Il y répartit les terres, prend les décisions pour la communauté du village, lève des troupes pour la défendre et rend la justice. Les titres de yombi, de kani et de mwènè désignent ce maître de la justice, assisté de ses porte-parole, les ibela. L'auteur décrit cette organisation avant l'arrivée des Français dans la Cuvette, à la fin du XIXe siècle, et jusque vers le milieu du XXe siècle."
       },
       {
-        "name": "Colonie française du Congo",
+        "name": "Congo français et Moyen-Congo (colonie française)",
         "period": "1880 - 1960",
         "entryType": "colonial",
         "timeRange": {
@@ -568,12 +582,12 @@
           "precision": "year"
         },
         "dominantPeoples": [
-          "Tous les peuples congolais sous domination française"
+          "Tous les peuples du territoire, sous domination française"
         ],
         "politicalCenters": [
-          "Brazzaville (capitale coloniale et capitale de l'AEF)"
+          "Brazzaville (capitale de l'Afrique-Équatoriale française)"
         ],
-        "historicalRole": "Colonie française, intégration dans l'AEF. Exploitation économique (caoutchouc, bois, puis pétrole), développement de l'administration coloniale, résistance des peuples autochtones. Développement du mouvement indépendantiste au XXe siècle."
+        "historicalRole": "Selon l'historienne Catherine Coquery-Vidrovitch, quarante décrets de 1899 et 1900 livrent le territoire à des compagnies concessionnaires qui commercent surtout l'ivoire et le caoutchouc. L'impôt par tête, la capitation, sert à imposer un travail forcé à peine caché. Walter Rodney souligne la brutalité de ces compagnies au Congo français. L'une d'elles, la Compagnie forestière Sangha-Oubangui, garde le monopole de la récolte du caoutchouc sauvage jusqu'en 1935. Sur le chantier du chemin de fer de Brazzaville à la mer, le taux de mortalité des travailleurs forcés est estimé à 100 pour 1 000 en 1922, selon John Caldwell. Brazzaville est la capitale de l'Afrique-Équatoriale française, puis la capitale symbolique de la France libre de 1940 à 1943, selon l'Office of the Historian."
       },
       {
         "name": "République du Congo",
@@ -584,85 +598,99 @@
           "ongoing": true,
           "precision": "year"
         },
-        "dominantPeoples": ["Tous les peuples congolais"],
+        "dominantPeoples": ["Tous les peuples du pays"],
         "politicalCenters": ["Brazzaville (capitale)"],
-        "historicalRole": "Indépendance en 1960. Histoire politique mouvementée : période socialiste (1969-1991), transition démocratique (1991), guerres civiles (1993-1999, 2016-2017), développement économique basé sur le pétrole."
+        "historicalRole": "Le pays devient indépendant le 15 août 1960. Selon le Centre national de la statistique et des études économiques, il connaît ensuite plusieurs changements de régime, un parti unique, puis une période marxiste sous le nom de République populaire du Congo, jusqu'au retour au multipartisme au début des années 1990. Un conflit armé le frappe du 5 juin au 15 octobre 1997, et l'insécurité dure jusqu'en 1999. Selon la commission britannique des noms géographiques, un cessez-le-feu est conclu en 2017. L'économie dépend fortement du pétrole."
       }
     ],
     "majorPeoples": [
       {
-        "name": "Kongo (Brazzaville)",
+        "name": "Kongo",
         "selfAppellation": "Bakongo",
-        "exonyms": ["Kongo (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_KONGO",
-        "mainRegion": "Pool, région de Brazzaville",
-        "languages": ["Kikongo", "français", "lingala"],
+        "mainRegion": "Sud du pays, entre la côte et le Pool, et Brazzaville",
+        "languages": ["Laari (ldi)", "Kituba (mkw)", "Français (fra)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Kongo\" est neutre et accepté. L'auto-appellation \"Bakongo\" (pluriel de Mukongo) est préférée."
+        "appellationRemarks": "Le rapport des Nations unies de 2011 écrit « Kongo ou Bacongo ». Parmi les Kongo, l'Histoire générale de l'Afrique nomme les Lari, qui ont été les plus sensibles au message d'André Matsoua. Le catalogue Glottolog donne pour leur parler les noms Laari, Lari, Laadi et Kilari. Nous n'avons pas encore de source sur la forme que les Kongo du pays préfèrent eux-mêmes."
       },
       {
         "name": "Teke",
         "selfAppellation": "Bateke",
         "exonyms": [
-          "Teke (terme utilisé par les Européens)",
-          "Tio (nom du royaume historique)"
+          "Anzikos (nom donné par les sources européennes du XVIe siècle)",
+          "Monteques (nom des livres de comptes des négriers au XVIIIe siècle)"
         ],
         "peopleId": "PPL_TEKE",
-        "mainRegion": "Plateaux, Cuvette",
-        "languages": ["Teke (teg", "teo", "tbz)", "français", "lingala"],
-        "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Teke\" est neutre et accepté. L'auto-appellation \"Bateke\" est préférée."
+        "mainRegion": "Plateaux teke et région du Pool",
+        "languages": [
+          "Teke-tyee (tyx)",
+          "Latege, ou teke-tege (teg)",
+          "Français (fra)"
+        ],
+        "languageFamily": "FLG_BANTU",
+        "appellationRemarks": "Le rapport des Nations unies de 2011 écrit « Teke ou Bateke ». Tio est le nom du royaume teke et de ses habitants dans l'Histoire générale de l'Afrique. Les noms Anzikos et Monteques sont ceux que leur donnaient les Européens, selon Elikia M'Bokolo."
       },
       {
         "name": "Mbochi",
-        "selfAppellation": "Mbochi",
-        "exonyms": ["Mbochi (terme utilisé par les Européens)"],
+        "selfAppellation": "Mbosi",
+        "exonyms": [],
         "peopleId": "PPL_MBOCHI",
-        "mainRegion": "Cuvette, Likouala",
-        "languages": ["Mbochi (mdx)", "français", "lingala"],
-        "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Mbochi\" est neutre et accepté."
-      },
-      {
-        "name": "Sangha",
-        "selfAppellation": "Sangha",
-        "exonyms": ["Sangha (terme utilisé par les Européens)"],
-        "peopleId": "PPL_SANGO_SCT",
-        "mainRegion": "Sangha, Likouala",
-        "languages": ["Sangha", "français", "lingala"],
-        "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Sangha\" est neutre et accepté."
+        "mainRegion": "Départements de la Cuvette et des Plateaux",
+        "languages": ["Mbosi (mdw)", "Lingala (lin)", "Français (fra)"],
+        "languageFamily": "FLG_BANTU",
+        "appellationRemarks": "Le chercheur congolais Vianney Jean Wolfgon Yoka Elongo écrit Mbosi, comme le catalogue Glottolog pour la langue ; le rapport des Nations unies de 2011 écrit M'Bochi. Selon Vianney Yoka Elongo, les Akwa, les Koyo, les Mbosi et les Ngaré comptent parmi les sous-groupes de la Cuvette. Nous n'avons pas encore de source qui dise laquelle de ces formes le peuple préfère."
       },
       {
         "name": "Vili",
-        "selfAppellation": "Bavili",
-        "exonyms": ["Vili (terme utilisé par les Européens)"],
+        "selfAppellation": "Vili",
+        "exonyms": [],
         "peopleId": "PPL_VILI",
-        "mainRegion": "Kouilou, Pointe-Noire",
-        "languages": ["Vili", "français", "lingala"],
-        "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Vili\" est neutre et accepté. L'auto-appellation \"Bavili\" est préférée."
+        "mainRegion": "Côte de Loango, autour de Pointe-Noire",
+        "languages": ["Vili (vif)", "Français (fra)"],
+        "languageFamily": "FLG_BANTU",
+        "appellationRemarks": "L'Histoire générale de l'Afrique écrit Vili, et le catalogue Glottolog nomme ainsi leur langue. Nous n'avons pas encore de source sur la forme que les Vili emploient eux-mêmes."
+      },
+      {
+        "name": "Peuples autochtones",
+        "selfAppellation": null,
+        "exonyms": ["Pygmées (terme péjoratif, interdit par la loi de 2011)"],
+        "peopleId": "PPL_PYGMEES_AUTOCHTONES",
+        "mainRegion": "Likouala, Sangha, Cuvette, Plateaux, Lékoumou, Niari et Kouilou",
+        "languages": [],
+        "languageFamily": null,
+        "appellationRemarks": "Selon le Rapporteur spécial des Nations unies, ces peuples comprennent les Baaka, les Mbendjele, les Mikaya, les Gyeli, les Luma, les Twa et les Babongo. Ils parlent des langues différentes. Au Congo, le terme « pygmée » est péjoratif : la loi n° 5-2011 du 25 février 2011 en interdit l'usage et parle de populations autochtones. Faute de recensement fiable, leur part dans la population est estimée entre 1,4 % et 10 %."
       }
     ],
     "culture": {
       "mainLanguages": [
-        { "name": "Français", "isoCode": "fra", "isPrimary": true },
-        { "name": "Kituba", "isoCode": "mkw" },
-        { "name": "Lingala", "isoCode": "lin" }
+        {
+          "name": "Français",
+          "isoCode": "fra",
+          "isPrimary": true
+        },
+        {
+          "name": "Kituba",
+          "isoCode": "mkw"
+        },
+        {
+          "name": "Lingala",
+          "isoCode": "lin"
+        }
       ],
-      "culturalTraditions": "Musique congolaise (soukous, rumba), danse traditionnelle, poésie orale, artisanat (poterie, tissage, sculpture), masques traditionnels, tambours royaux",
-      "dominantReligions": "Christianisme (catholique majoritaire, protestant, kimbanguiste), croyances traditionnelles (syncrétisme), islam (minorité)",
-      "lifestyles": "Vie principalement urbaine (Brazzaville, Pointe-Noire), agriculture (manioc, bananes, arachides), pêche (fleuve Congo, océan Atlantique), commerce, industrie pétrolière",
-      "socialOrganization": "Système de chefferies traditionnelles (historique), structure clanique patrilinéaire, organisation en familles étendues et lignages, importance des ancêtres, système de conseils d'anciens",
-      "regionalRelations": "Relations historiques avec les peuples de la RDC, du Gabon, de la RCA, de l'Angola. Diaspora importante en France, en RDC, au Gabon, et dans les pays occidentaux."
+      "culturalTraditions": "La rumba congolaise est inscrite en 2021 sur la liste du patrimoine culturel immatériel de l'humanité, à la demande des deux Congo. Selon l'UNESCO, c'est une musique et une danse populaires des villes, dansées le plus souvent par un homme et une femme. Elle vient d'une danse plus ancienne, la nkumba, mot kikongo qui veut dire « taille ». On la joue pour les fêtes comme pour les deuils. Dans l'ancien royaume Kongo, des associations comme le khimba, le nzo longo ou le kimpasi servaient à initier les garçons ou à soigner, selon Jan Vansina.",
+      "dominantReligions": "La Constitution dit que le pays est laïc. Le christianisme domine, mais les chiffres varient selon la source. Le rapport du Département d'État des États-Unis pour 2023 cite le recensement de 2012 : 55 % de catholiques, 32 % de protestants et 2 % de musulmans parmi les personnes nées au Congo. Il cite aussi une enquête du ministère du Plan de la même année qui inverse les deux premiers chiffres, avec 9 % de fidèles d'autres Églises, dont les kimbanguistes. Dans l'enquête démographique et de santé de 2011-2012, un tiers des femmes interrogées se disent membres d'une Église de réveil, 31 % catholiques et 22 % protestantes ; 4,5 % se rattachent aux mouvements zéphiriste, matsouaniste ou ngunza. Selon le Département d'État, les croyances traditionnelles influencent les pratiques religieuses, avec le culte des ancêtres et la croyance répandue en la sorcellerie, le kindoki.",
+      "lifestyles": "La population vit surtout en ville. Selon les premiers résultats du recensement de 2023, Brazzaville et Pointe-Noire réunissent 58,1 % des 6 142 180 habitants. Dans l'enquête démographique et de santé de 2011-2012, plus de la moitié des femmes qui travaillent sont dans le commerce et les services ; à la campagne, 68 % travaillent dans l'agriculture. Un homme sur cinq travaille dans l'agriculture. Selon la même enquête, l'économie dépend fortement du pétrole, et la forêt couvre près des deux tiers du pays.",
+      "socialOrganization": "Chez les Kongo, le mot kanda désigne aujourd'hui le clan ou le lignage maternel, selon Jan Vansina. Dans l'ancien royaume, le village appartenait en principe au lignage maternel de son fondateur, représenté par le chef du village, le nkuluntu, qui prenait conseil auprès des autres clans. Chez les Mbosi de la Cuvette, le chef investi, le kani, rend la justice avec ses porte-parole, selon Vianney Jean Wolfgon Yoka Elongo. Chez les Tio, le roi était élu par onze grands électeurs, selon Elikia M'Bokolo. Les peuples autochtones ont une organisation sociale égalitaire, selon le Rapporteur spécial des Nations unies.",
+      "regionalRelations": "Le pays partage avec la République démocratique du Congo le nom du fleuve et la rumba, inscrite en 2021 par les deux États. Au XVIIe siècle, les caravanes vili relient la côte de Loango au Pool, à Mbanza Kongo et au Gabon, selon Jan Vansina. Selon le Département d'État des États-Unis, le pays accueille en 2023 environ 58 530 réfugiés et demandeurs d'asile venus de République centrafricaine et de République démocratique du Congo."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement du territoire par les peuples bantous (Kongo, Teke, Mbochi). Développement de royaumes et chefferies indépendants.",
-      "middleAges": "Développement du royaume Kongo (XIVe-XIXe siècles) et du royaume Tio (Teke). Expansion territoriale et unification culturelle partielle.",
-      "precolonial": "Apogée du royaume Kongo et du royaume Tio. Commerce avec les Portugais et autres Européens. Résistance à la colonisation.",
-      "colonization": "1880 : Création de la colonie française du Congo. 1910 : Intégration dans l'Afrique-Équatoriale française (AEF) avec Brazzaville comme capitale. Exploitation économique (caoutchouc, bois). Résistance des peuples autochtones.",
-      "independenceStruggle": "Mouvements nationalistes dans les années 1950. Indépendance en 1960 (15 août) sous la présidence de Fulbert Youlou.",
-      "postIndependence": "Première République (1960-1969) : régime de Fulbert Youlou. République populaire du Congo (1969-1991) : période socialiste sous Marien Ngouabi puis Denis Sassou-Nguesso. Transition démocratique (1991) : multipartisme. Guerres civiles (1993-1999, 2016-2017) : conflits politiques et ethniques. République du Congo depuis 1991 : développement économique basé sur le pétrole, défis de démocratisation et de réconciliation."
+      "ancientPeriods": "Nous n'avons pas encore de source sur le peuplement ancien du territoire. Selon Jan Vansina, la région du bas fleuve, où naît la civilisation kongo, produit du cuivre et du plomb de Mboko Songho à Mindouli et du fer dans la région de Manyanga.",
+      "middleAges": "Le royaume Kongo est fondé vers 1400 au plus tard, ou un siècle plus tôt, selon Jan Vansina. Le royaume teke, mentionné dès 1507, était peut-être plus ancien. Le royaume de Loango est bien établi vers 1500, selon Elikia M'Bokolo.",
+      "precolonial": "Dès 1529, des documents portugais montrent que la région du Malebo Pool est l'une des principales sources de captifs vendus comme esclaves, selon Elikia M'Bokolo. La côte de Loango exporte une centaine de captifs par an vers 1639, puis 12 500 par an entre 1762 et 1778. Au Pool, les chefs tio riverains profitent le plus de ce commerce, car ils ont seuls le droit de vendre les captifs et l'ivoire. Au XVIIIe siècle, les Bobangi prennent le contrôle de tout l'axe du Congo et de l'Oubangui ; ils ne concluent une paix durable avec les Tio qu'au début du XIXe siècle. Au Loango, la lignée royale s'éteint vers 1750, et l'on ne nomme plus de roi après 1787. Le royaume tio connaît une guerre civile de 1780 environ à 1830 environ, selon Jan Vansina.",
+      "colonization": "Entre 1879 et 1880, la France envoie Pierre Savorgnan de Brazza au Congo ; elle ratifie ensuite ses traités avec le Makoko, roi des Teke, selon Godfrey Uzoigwe. En 1899 et 1900, quarante décrets livrent le territoire à des compagnies concessionnaires, qui imposent un travail forcé par le biais de l'impôt par tête, selon Catherine Coquery-Vidrovitch. Le Moyen-Congo est l'une des colonies de l'Afrique-Équatoriale française, dont Brazzaville est la capitale. En 1922, le chantier du chemin de fer de Brazzaville à la mer fait mourir environ un travailleur forcé sur dix, selon John Caldwell. Brazzaville est la capitale symbolique de la France libre de 1940 à 1943, selon l'Office of the Historian.",
+      "independenceStruggle": "Dans l'entre-deux-guerres, André Matsoua fonde une association, l'Amicale des originaires de l'Afrique-Équatoriale française, qui a des membres à Libreville, Bangui et Brazzaville. Après sa mort en 1942 et la répression de ses partisans, les Lari, qui avaient été les plus sensibles à son message, refusent de prendre part aux élections jusqu'en 1956, selon Elikia M'Bokolo. L'abbé Fulbert Youlou est élu maire de Brazzaville en 1956, devient Premier ministre en 1958, puis président en 1960. Le pays connaît une première guerre civile en 1959 et devient indépendant le 15 août 1960, selon le Centre national de la statistique et des études économiques.",
+      "postIndependence": "Selon le Centre national de la statistique et des études économiques, Fulbert Youlou est renversé en 1963 après une insurrection. Alphonse Massamba-Débat met fin au multipartisme et crée un parti unique. Marien Ngouabi arrive au pouvoir en 1968 et instaure un régime marxiste ; le pays prend le nom de République populaire du Congo. Marien Ngouabi est assassiné le 18 mars 1977. Joachim Yhombi-Opango lui succède, puis Denis Sassou-Nguesso le 5 février 1979. Pascal Lissouba est élu en 1992 lors de la première élection présidentielle générale. Un conflit armé a lieu du 5 juin au 15 octobre 1997 ; Pascal Lissouba part en exil et Denis Sassou-Nguesso revient au pouvoir. L'insécurité dure jusqu'en 1999. Selon la commission britannique des noms géographiques, un cessez-le-feu est conclu en 2017."
     },
     "searchAnswer": {
       "lead": "La République du Congo, capitale Brazzaville. On dit parfois Congo-Brazzaville pour la distinguer de sa voisine, la République démocratique du Congo.",
@@ -741,6 +769,125 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre de Jan Vansina, à partir d'une contribution de Théophile Obenga (1999), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 636. Au Loango, « vers ou avant 1750, la lignée royale s'éteignit » ; la royauté devint si faible « qu'après 1787, on ne nomma plus de roi »."
+      },
+      {
+        "title": "CNSEE et ICF International, Enquête démographique et de santé du Congo (EDSC-II) 2011-2012, Brazzaville, 2013",
+        "url": "https://www.dhsprogram.com/pubs/pdf/FR267/FR267.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport de l'enquête démographique et de santé conduite par le Centre national de la statistique et des études économiques (CNSEE), avec ICF International, publié par le programme DHS ; lu le 3 novembre 2026. P. 1-2 : le pays « a accédé à la souveraineté nationale le 15 août 1960 » ; l'auteur énumère « la première guerre civile en 1959 », la chute de Fulbert Youlou en 1963, Alphonse Massamba-Débat « qui mit fin au multipartisme », l'arrivée de Marien Ngouabi en 1968, « l'assassinat, le 18 mars 1977 », l'arrivée de Denis Sassou-Nguesso le 5 février 1979, l'élection de Pascal Lissouba et « un conflit armé […] entre le 5 juin et le 15 octobre 1997 » ; la République « a été rebaptisée « République Populaire du Congo » par le Parti Congolais du Travail » et le retour au multipartisme « a restauré le nom de « République du Congo » ». P. 2 : « La langue officielle du Congo est le Français ; les langues nationales sont le Lingala et le Kituba. » P. 1 : la forêt « couvre près des deux tiers du territoire national (65 %) ». P. 3 : l'économie « reste très vulnérable du fait de sa forte dépendance au secteur pétrolier ». P. 33-34, tableau 3.1, femmes de 15 à 49 ans : Kongo 54,2 %, Téké 13,3 %, Mbochi 11,3 %, Punu 4,7 %, Sangha 2,8 %, étrangers 8,4 % ; Église de réveil 33,4 %, catholiques 31,4 %, protestantes 21,6 %, « Zéphirin/matsouaniste/ngunza » 4,5 % ; urbaines 68,6 %. P. 48-49 : 53 % des femmes qui travaillent sont dans les ventes et services ; en milieu rural, « 68 % des femmes sont employées dans l'agriculture » ; chez les hommes, « un sur cinq (20 %) travaillait dans l'agriculture »."
+      },
+      {
+        "title": "Nations unies, A/HRC/18/35/Add.5 : la situation des peuples autochtones dans la République du Congo, rapport du Rapporteur spécial James Anaya, 2011",
+        "url": "https://digitallibrary.un.org/record/710403/files/A_HRC_18_35_Add.5-FR.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Rapport du Conseil des droits de l'homme des Nations unies, 11 juillet 2011, version française ; lu le 3 novembre 2026. P. 5, § 7 : les peuples autochtones du pays « incluent les Baaka », les Mbendjele, les Mikaya, les Gyeli, les Luma, les Twa et les Babongo, avec leurs départements ; « les estimations de leur pourcentage dans la population totale du pays varient entre 1,4 % et 10 % ». § 8 : « Les quatre principaux groupes ethniques bantous sont les Kongo ou Bacongo (48 %), les Sangha (20 %), les Teke ou Bateke (17 %) et les M'Bochi (12 %) » ; le rapport ne dit pas d'où viennent ces estimations. § 9 : leur structure sociale « est typiquement égalitaire ». § 11 : le terme pygmée « a une connotation péjorative ». § 12 : la loi n° 5-2011, promulguée en février 2011, « interdit l'utilisation du terme « pygmée » »."
+      },
+      {
+        "title": "Département d'État des États-Unis, 2023 Report on International Religious Freedom: Republic of the Congo",
+        "url": "https://www.ecoi.net/en/document/2111945.html",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Rapport annuel du Département d'État des États-Unis sur la liberté religieuse, publié en 2024 pour l'année 2023, lu le 3 novembre 2026 dans la copie de la base ecoi.net. Section I : « According to the most recent 2012 census, 55 percent of the native-born population is Catholic, 32 percent Protestant […] and 2 percent Muslim » ; une enquête du ministère du Plan de 2012 « estimates that 55 percent of the native-born population is Protestant […] 32 percent Catholic » et 9 % d'autres Églises, dont les kimbanguistes ; « traditional beliefs influence religious practices, including ancestor worship and a widespread belief in witchcraft, or kindoki » ; le pays accueille « an estimated 58,530 refugees and asylum seekers from the Central African Republic and the Democratic Republic of the Congo ». « The constitution states that the country is secular. »"
+      },
+      {
+        "title": "Direction générale du Trésor (France), Recensement 2023 au Congo-Brazzaville, 27 février 2024",
+        "url": "https://www.tresor.economie.gouv.fr/Pays/CG/recensement-2023-au-congo-brazzaville",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Note du service économique du ministère français de l'Économie, lue le 3 novembre 2026. Elle reprend les premiers résultats du cinquième recensement général de la population et de l'habitation (RGPH-5), présentés par la ministre du Plan et publiés le 29 décembre 2023 : au 17 mai 2023, « la population du Congo comptait 6 142 180 habitants » ; Brazzaville compte 2 145 783 habitants (34,9 %) et Pointe-Noire 1 420 612 (23,1 %) ; « Ces deux villes de Brazzaville et Pointe-Noire hébergent donc ensemble 58,1% de la population totale »."
+      },
+      {
+        "title": "UNESCO, La rumba congolaise, Liste représentative du patrimoine culturel immatériel de l'humanité, 2021",
+        "url": "https://ich.unesco.org/fr/RL/la-rumba-congolaise-01711",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche de l'élément sur le site du patrimoine culturel immatériel de l'UNESCO, lue le 3 novembre 2026. Inscrit en 2021 (16.COM) pour la République démocratique du Congo et la République du Congo. La rumba est « un genre musical et une danse populaire dans les zones urbaines », dansée le plus souvent par un couple homme-femme ; elle vient d'une danse plus ancienne, la nkumba, mot kikongo qui veut dire « taille » ; on la pratique pour les fêtes et les deuils, « dans les espaces publics, privés et religieux »."
+      },
+      {
+        "title": "Catherine Coquery-Vidrovitch, Le Congo au temps des grandes compagnies concessionnaires 1898-1930, tome 1, introduction, Éditions de l'EHESS, 2001",
+        "url": "https://books.openedition.org/editionsehess/370",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse d'histoire publiée chez Mouton en 1972, rééditée en ligne par les Éditions de l'EHESS en 2001 sur OpenEdition Books ; introduction lue le 3 novembre 2026. § 8 : un régime « entériné finalement par les quarante décrets de 1899-1900 ». § 9 : des sociétés fondées sur « les produits de cueillette dits « riches » (ivoire et caoutchouc) ». § 10 : « un travail forcé à peine dissimulé, imposé par le biais d'une taxe de capitation »."
+      },
+      {
+        "title": "General History of Africa, V (UNESCO, 1992), exemplaire numérisé d'Internet Archive : ch. 18 (E. M'Bokolo) et ch. 19 (J. Vansina, d'après T. Obenga)",
+        "url": "https://archive.org/details/unesco_general_history_africa_v",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, Histoire générale de l'Afrique, vol. V, dir. B. A. Ogot, édition anglaise, lue le 3 novembre 2026 sur le texte intégral de l'exemplaire numérisé. Ch. 18, Elikia M'Bokolo : p. 525, « the Kingdom of Loango was well established by about 1500, since all the voyagers' accounts of the early sixteenth century refer to the Mani Loango and Mbanza Loango by name », et deux traditions sur sa fondation ; p. 529, exportations de la côte de Loango, « a hundred a year in about 1639 » puis « 12500 a year in the period 1762-78 », les « Monteques (Teke from Malebo Pool) », et le déclin de Loango vers 1780 ; p. 540, les intermédiaires « Kukuya and Tio » ; p. 542, « It was only during the eighteenth century that the Bobangi began to control all the Congo-Ubangi axis » et l'accord durable entre Bobangi et Tio « in the early 1800s » ; p. 536, « the Anzikos (Tio, Pool Teke) made up large contingents of the slave population of Peru, Colombia and Brazil » et les documents portugais de 1529 sur le Pool ; p. 544, « The ɔkoo (deformed by the Europeans into makoko but meaning king) had above all a spiritual role », le ngaailiino, l'élection du roi par « a college of eleven electors », le roi « who resided at Mbe more than one hundred kilometres to the north », et les chefs du Pool qui exploitent « their exclusive right to sell men and ivory ». Ch. 19, Jan Vansina d'après Théophile Obenga : p. 546-547, cuivre et plomb « from Mboko Songho to Mindouli », fer à Manyanga, « This was the birthplace of the Kongo civilization », « The Teke kingdom, mentioned in literature from 1507 onwards, was perhaps the oldest of all » ; p. 548, Nimi Lukeni fonde Mbanza Kongo et la fondation est placée « around 1400 at the latest, and at least a century before that at the earliest » ; p. 550, l'hégémonie du Kongo « except the Tio kingdom » et ses frontières vers 1500 ; p. 562, les caravanes vili jusqu'au Pool, à Mbanza Kongo et au Gabon ; p. 570, « The term ekanda (root: kanda) […] today means 'matriclan' or 'matrilineage' », le nkuluntu et les associations khimba, nzo longo et kimpasi ; p. 581, au Loango « in or before 1750, the royal line became extinct » et « after 1787 no more kings were appointed », et la guerre civile tio « From about 1780 onwards » jusque « about 1830 » ; p. 582, des nobles kongo s'installent près de Mindouli et repoussent les villages teke."
+      },
+      {
+        "title": "General History of Africa, VII (UNESCO, 1985), exemplaire numérisé d'Internet Archive : ch. 2, 14, 15, 18 et 23",
+        "url": "https://archive.org/details/unesco_general_history_africa_vii",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, Histoire générale de l'Afrique, vol. VII, dir. A. Adu Boahen, édition anglaise, lue le 3 novembre 2026 sur le texte intégral de l'exemplaire numérisé. Ch. 2, Godfrey Uzoigwe, p. 28 : la politique française de 1879-1880, marquée par « the dispatch of Savorgnan de Brazza into the Congo and the ratification of his treaties with Chief Makoko of the Bateke ». Ch. 14, Walter Rodney, p. 337 : des compagnies « unrestrained in their brutality […] as in French Congo (now Congo) ». Ch. 15, Catherine Coquery-Vidrovitch, p. 375-376 : l'AEF « paralysed since 1900 by an unfortunate thirty-year concessionary scheme », et la Compagnie forestière Sangha-Oubangui qui « imposed its monopoly over wild rubber harvesting until 1935 ». Ch. 18, John Caldwell, p. 475 : un taux de mortalité de 100 pour 1 000 « has been calculated for forced labour on the railway from Brazzaville to the sea in 1922 ». Ch. 23, p. 574 : « André Matswa's Société Amicale des Originaires de l'Afrique Equatoriale Française with membership from Libreville, Bangui and Brazzaville »."
+      },
+      {
+        "title": "General History of Africa, VIII (UNESCO, 1993), exemplaire numérisé d'Internet Archive : ch. 3, 8 et 15",
+        "url": "https://archive.org/details/general_history_africa_viii",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, Histoire générale de l'Afrique, vol. VIII, dir. A. A. Mazrui, édition anglaise, lue le 3 novembre 2026 sur le texte intégral de l'exemplaire numérisé. Ch. 3, p. 60 : « French Equatorial Africa covered 2 510000 sq km with Brazzaville as its capital, and embraced the colonies of the Middle Congo (now Congo), Chad, Ubangui-Chari […] and Gabon ». Ch. 8, Elikia M'Bokolo, p. 193, note 3 : Fulbert Youlou « entered politics in 1956 when he was elected mayor of Brazzaville. He became prime minister in 1958, then president in 1960, only to be overthrown in 1963 » ; p. 197 : le mouvement « Amicalism, or Matsouanism, started by André Matsoua. After Matsoua's death in 1942 and the terrible repression launched against his supporters, the Lari populations, who had been most receptive to his message […] refused to take part in any way in elections or in modern political life up to 1956 ». Ch. 15, tableau 15.1, p. 456-457 : les chefs d'État successifs, de Fulbert Youlou (1960-1963) à Pascal Lissouba (1992)."
+      },
+      {
+        "title": "Vianney Jean Wolfgon Yoka Elongo, « La justice sociale : de la Maât pharaonique à Otwèrè mbosi de la Cuvette congolaise en République du Congo », Relecture d'Afrique, vol. 2, n° 6, 2025",
+        "url": "https://edition-efua.acaref.net/wp-content/uploads/sites/6/2025/11/9-Vianney-Jean-Wolfgon-YOKA-ELONGO.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'un assistant du laboratoire d'égyptologie de la Faculté des lettres de l'Université Marien-Ngouabi, à Brazzaville, paru dans la revue Relecture d'Afrique en octobre 2025 ; lu le 3 novembre 2026. P. 252 : « les Mbosi habitent la partie septentrionale du Congo. Ils occupent […] les départements des Plateaux et de la Cuvette » ; sous-groupes « Akwa, Koyo, Mbosi, Ngaré » ; la période étudiée va jusqu'à l'arrivée des Français « vers la fin du XIXe, jusqu'à vers le milieu du XXe ». P. 256, note 12 : « L'okani est un espace géo-politique délimité […] sur lequel s'exercent tous les pouvoirs d'un chef investi, kani », pouvoirs agraires, politiques, administratifs, dont « la levée de troupes », mystiques et judiciaires. P. 261, note 17 : « le yombi, kani ou mwènè est le maître de la justice » et il rend justice avec ses assesseurs, les ibela. L'auteur s'appuie en partie sur des entretiens menés à Brazzaville en 2025."
+      },
+      {
+        "title": "Glottolog, fiche Mbosi (mbos1242, ISO 639-3 mdw)",
+        "url": "https://glottolog.org/resource/languoid/iso/mdw",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max-Planck, lu le 3 novembre 2026 : la langue Mbosi, parlée au Congo, est classée dans le bantou (nœud bant1294 de son arbre de classification)."
+      },
+      {
+        "title": "Glottolog, fiche Teke-Tyee (teke1276, ISO 639-3 tyx)",
+        "url": "https://glottolog.org/resource/languoid/iso/tyx",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max-Planck, lu le 3 novembre 2026 : Teke-Tyee, aussi appelé West Teke, parlé au Congo, classé dans le bantou."
+      },
+      {
+        "title": "Glottolog, fiche Latege (teke1275, ISO 639-3 teg)",
+        "url": "https://glottolog.org/resource/languoid/iso/teg",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max-Planck, lu le 3 novembre 2026 : Latege, aussi appelé Teke-Tege, parlé au Congo et au Gabon, classé dans le bantou."
+      },
+      {
+        "title": "Glottolog, fiche Vili (vili1238, ISO 639-3 vif)",
+        "url": "https://glottolog.org/resource/languoid/iso/vif",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max-Planck, lu le 3 novembre 2026 : Vili, parlé en Angola, au Congo et au Gabon, classé dans le bantou, dans le groupe kikongo."
+      },
+      {
+        "title": "Glottolog, fiche Kituba (Congo) (kitu1245, ISO 639-3 mkw)",
+        "url": "https://glottolog.org/resource/languoid/iso/mkw",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max-Planck, lu le 3 novembre 2026 : Kituba (Congo), parlé au Congo, aussi appelé Kikoongo, Kituba ou Munukutuba, classé dans le groupe kikongo du bantou."
+      },
+      {
+        "title": "Glottolog, fiche Laari (laar1238, ISO 639-3 ldi)",
+        "url": "https://glottolog.org/resource/languoid/iso/ldi",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max-Planck, lu le 3 novembre 2026 : Laari, parlé en Angola, en République démocratique du Congo et au Congo ; autres noms : Kilari, Kongo, Laadi, Laari, Ladi, Lari ; classé dans le groupe kikongo du bantou."
+      },
+      {
+        "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Republic of the Congo",
+        "url": "https://history.state.gov/countries/congo-republic",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Notice de l'Office of the Historian du Département d'État des États-Unis, lue le 3 novembre 2026. Avant 1960, le pays fait partie de l'Afrique-Équatoriale française, et Brazzaville est « the symbolic capital of Free France in 1940-43 » ; les États-Unis reconnaissent la République du Congo le 15 août 1960, par un message au président Fulbert Youlou."
       }
     ],
     "demographics": {
@@ -749,16 +896,33 @@
       "source": "UNFPA – World Population Dashboard",
       "peoples": [
         {
-          "name": "Kongo (Brazzaville)",
+          "name": "Kongo",
           "peopleId": "PPL_KONGO",
-          "percentageInCountry": 40
+          "referenceYear": 2011,
+          "percentageInCountry": 48,
+          "languageFamily": "FLG_BANTU"
         },
         {
-          "name": "Autres groupes ethniques",
+          "name": "Sangha",
           "peopleId": null,
-          "region": "Divers",
-          "languageFamily": null,
-          "percentageInCountry": 60
+          "referenceYear": 2011,
+          "percentageInCountry": 20,
+          "languageFamily": null
+        },
+        {
+          "name": "Teke",
+          "peopleId": "PPL_TEKE",
+          "referenceYear": 2011,
+          "percentageInCountry": 17,
+          "languageFamily": "FLG_BANTU"
+        },
+        {
+          "name": "Mbochi",
+          "peopleId": "PPL_MBOCHI",
+          "referenceYear": 2011,
+          "percentageInCountry": 12,
+          "languageFamily": "FLG_BANTU",
+          "mainLanguageCode": "mdw"
         }
       ]
     }
