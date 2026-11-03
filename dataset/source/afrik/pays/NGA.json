@@ -3,9 +3,9 @@
   "nameFr": "Nigeria",
   "nameEn": "Nigeria",
   "nameOfficial": "République fédérale du Nigeria (Federal Republic of Nigeria)",
-  "summary": "Le Nigeria porte un nom proposé en 1897 par la journaliste Flora Shaw, à partir du fleuve Niger et du suffixe « -ia ». Califat de Sokoto, royaume d'Oyo, royaume du Bénin et sultanats haoussa s'y étaient épanouis avant l'unification coloniale. Hausa-Fulani, Yoruba, Igbo, Ijaw, Kanuri et Tiv font du pays le plus peuplé du continent l'un des plus divers.",
-  "etymology": "Le nom « Nigeria » est proposé le 8 janvier 1897 par Flora Shaw, correspondante coloniale du Times de Londres, pour désigner d'un seul mot la « Niger Area » administrée par la Royal Niger Company : « Niger », le fleuve, et le suffixe latin « -ia », le pays. Il n'est officialisé que seize ans plus tard, en 1914, par Lord Lugard lors de l'unification des protectorats du Nord et du Sud. Des occurrences antérieures de « Nigerian » sont signalées chez William Cole (1862) et Richard Burton (1863), sans qu'il soit établi qu'elles soient contemporaines plutôt qu'ajoutées à l'édition.",
-  "nameOriginActor": "Le nom est proposé par une journaliste, Flora Shaw, dans un article du Times du 8 janvier 1897, puis officialisé en 1914 par l'administration coloniale britannique lors de l'« Amalgamation » des protectorats du Nord et du Sud. C'est un nom colonial qui ne reflète aucune appellation précoloniale — et l'attribution elle-même demande une nuance : Shaw a suggéré le nom, elle ne l'a pas imposé ; elle épousera plus tard Frederick Lugard, l'administrateur qui réunit les deux protectorats en 1914. Dubawa relève que c'est le gouvernement britannique qui a adopté et imposé la désignation lors de l'Amalgamation.",
+  "summary": "Le Nigeria porte un nom tiré de celui du fleuve Niger. Le mot paraît en 1897 en titre d'un article du Times de Londres, attribué à la journaliste Flora Shaw, pour désigner les territoires de la Royal Niger Company ; il devient le nom du pays réuni en 1914, puis celui de l'État indépendant en 1960. Avant lui, la région a connu les villes haoussa, le Kanem-Borno, Ife, Oyo, le Bénin et le califat de Sokoto, et le pays le plus peuplé d'Afrique compte aujourd'hui plus de 250 peuples.",
+  "etymology": "Le nom Nigeria est formé sur celui du fleuve Niger. Il paraît le 8 janvier 1897 en titre d'un article non signé du Times de Londres. L'auteur juge malcommode le titre « Royal Niger Company's Territories » et propose un nom plus court pour les États que la compagnie a réunis sous protectorat britannique, qui n'avaient jamais eu de nom commun ; il écarte « Soudan central », qui ne tient pas compte des frontières. En 1960, dans The Journal of African History, C. K. Meek attribue cet article à Flora Shaw, qui écrivait alors sur les colonies pour le Times. Selon l'historien Ozibo Ozibo, cité par Dubawa en 2020, le mot serait une forme abrégée de « Niger Area ». L'adjectif « Nigerian » s'écrivait déjà avant 1897, chez le commerçant William Cole en 1862 et chez l'explorateur Richard Burton en 1863. En 1905, Flora Shaw écrit elle-même que Nigeria n'est pas vraiment un nom, mais une expression anglaise faite pour réunir de nombreux États africains.",
+  "nameOriginActor": "Le nom vient d'un article non signé du Times du 8 janvier 1897, que C. K. Meek attribue à la journaliste Flora Shaw. L'administration coloniale britannique le reprend en 1900 pour les protectorats du Nigeria du Nord et du Nigeria du Sud, puis en 1914 pour le pays que Frederick Lugard réunit ; Flora Shaw épouse plus tard Lugard. Dubawa rapporte que c'est le gouvernement britannique qui adopte alors le nom. C'est un nom colonial : l'article de 1897 note lui-même que ces États n'avaient encore jamais été désignés par un nom commun.",
   "nameHistory": {
     "summary": "Le nom Nigeria désigne un pays d'Afrique de l'Ouest, la République fédérale du Nigeria, qui porte ce nom depuis son indépendance en 1960. Il a d'abord désigné les territoires britanniques le long du fleuve Niger ; d'autres noms ont existé, comme Nigeria du Nord, Nigeria du Sud, colonie et protectorat du Nigeria ou Fédération du Nigeria. Les sources ne s'accordent pas toujours sur l'origine du nom Nigeria ; nous les présentons plus bas.",
     "names": [
@@ -47,6 +47,37 @@
                 "source_kind": "government",
                 "page": "p. 1",
                 "notes": "Nom du pays : Nigeria ; nom de l'État : Federal Republic of Nigeria. Le pays est devenu indépendant du Royaume-Uni en 1960 ; le fleuve Niger se jette dans l'Atlantique sur sa côte sud."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1963,
+              "label": "1er octobre 1963"
+            },
+            "era": "modern",
+            "statement": "Le nom Nigeria devient celui d'une république le 1er octobre 1963 : la Constitution de 1963 fait du pays une fédération de régions et une république « by the name of the Federal Republic of Nigeria ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution of the Federation, 1963 (Act No. 20 of 1963)",
+                "author": "Parlement de la Fédération du Nigeria",
+                "year": 1963,
+                "url": "https://data.globalcit.eu/NationalDB/docs/1963%20Constitution%20of%20Nigeria.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 2",
+                "notes": "Texte de la Constitution nigériane de 1963, entrée en vigueur le 1er octobre 1963, lu le 3 novembre 2026 dans la copie mise en ligne par l'observatoire GLOBALCIT de l'Institut universitaire européen. Section 2 : « Nigeria shall be a Federation comprising of Regions and a Federal territory and shall be a Republic by the name of the Federal Republic of Nigeria ». Section 3 : quatre régions, Northern Nigeria, Eastern Nigeria, Western Nigeria et Mid-Western Nigeria."
+              },
+              {
+                "title": "Nigeria: A Country Study, « Independent Nigeria » (Library of Congress)",
+                "url": "https://countrystudies.us/nigeria/21.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. « Later in 1963, Nigeria became a republic within the Commonwealth ».",
+                "author": "Library of Congress, Federal Research Division",
+                "year": 1991
               }
             ]
           },
@@ -114,6 +145,43 @@
                 "tier": "referenced",
                 "source_kind": "press",
                 "notes": "Article de vérification des faits publié le 1er octobre 2020. Selon l'article, la suggestion de Flora Shaw est adoptée seize ans plus tard, lors de la réunion des protectorats du Nord et du Sud en 1914 ; l'historien Ozibo Ozibo dit que le nom a alors été imposé à la « Niger Area »."
+              },
+              {
+                "title": "Nigeria: A Country Study, « Unification of Nigeria » (Library of Congress)",
+                "author": "Library of Congress, Federal Research Division",
+                "year": 1991,
+                "url": "https://countrystudies.us/nigeria/18.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. Lugard revient au Nigeria en 1912 pour préparer la fusion des protectorats du Nord et du Sud, achevée deux ans plus tard, à la veille de la Première Guerre mondiale."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nigeria n'est pas vraiment un nom, écrit Flora Shaw, devenue Lady Lugard, dans un livre de 1905 : selon elle, c'est une expression anglaise faite pour réunir de nombreux États africains, que l'on ne trouve sur aucune carte vieille de dix ans.",
+            "aspect": "meaning",
+            "actors": [
+              {
+                "name": "Flora Shaw",
+                "role": "autrice du livre, épouse de Frederick Lugard"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Tropical Dependency: An Outline of the Ancient History of the Western Soudan with an Account of the Modern Settlement of Northern Nigeria",
+                "author": "Flora L. Shaw (Lady Lugard)",
+                "year": 1905,
+                "url": "https://archive.org/details/tropicaldependen00shaw",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 7",
+                "notes": "Flora L. Shaw (Lady Lugard), Londres, James Nisbet, 1905, lu le 3 novembre 2026 dans l'exemplaire numérisé. Document de l'époque coloniale, écrit par l'épouse du haut-commissaire du Nigeria du Nord. Page 7 : l'administration du territoire n'a été reprise par le gouvernement britannique que le 1er janvier 1900 ; le nom « is not properly a name. It cannot be found upon a map that is ten years old. It is only an English expression which has been made to comprehend a number of native states ». Page 447 : le 15 mars 1903, les troupes de Sokoto sont battues par la colonne britannique."
               }
             ]
           },
@@ -154,15 +222,35 @@
               "to": 1897,
               "label": "8 janvier 1897"
             },
-            "statement": "Le nom Nigeria apparaît dans un article du Times de Londres signé par la journaliste Flora Shaw : elle le propose pour les territoires où la Royal Niger Company a étendu l'influence britannique, pour les distinguer de la colonie de Lagos, du protectorat de la côte du Niger et des territoires français du haut Niger, selon Dubawa, qui cite l'article. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples et les royaumes de ces territoires existaient bien avant ce nom.",
+            "statement": "Le nom Nigeria est le titre d'un article non signé du Times de Londres, le 8 janvier 1897. Son auteur le propose, à la place de « Royal Niger Company's Territories », pour les territoires où la Royal Niger Company a étendu l'influence britannique, et pour les distinguer de la colonie de Lagos, du protectorat de la côte du Niger et des territoires français du haut Niger. C. K. Meek attribue l'article à la journaliste Flora Shaw. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples et les royaumes de ces territoires existaient bien avant ce nom.",
             "birth": true,
             "actors": [
               {
                 "name": "Flora Shaw",
-                "role": "journaliste du Times, autrice de l'article"
+                "role": "journaliste du Times, à qui C. K. Meek attribue l'article"
               }
             ],
             "sources": [
+              {
+                "title": "« Nigeria », The Times (Londres), 8 janvier 1897, p. 6",
+                "author": "The Times (article non signé)",
+                "year": 1897,
+                "url": "https://www.farooqkperogi.com/2019/10/the-first-article-that-proposed-name.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 6",
+                "notes": "Article non signé paru en page 6 du Times du vendredi 8 janvier 1897, lu le 3 novembre 2026 dans le fac-similé de la page reproduit par le journaliste et universitaire Farooq A. Kperogi sur son blog. Document de l'époque coloniale. L'auteur juge le titre « Royal Niger Company's Territories » malcommode et propose de « coin a shorter title » pour ces États, qui ont besoin « for the first time in their history » d'un nom commun ; il écarte « Central Sudan ». Il écrit : « The name “Nigeria” applying to no other portion of Africa may, without offence to any neighbours, be accepted as co-extensive with the territories over which the Royal Niger Company has extended British influence », pour les distinguer « from the British colonies of Lagos and the Niger Protectorate on the coast and from the French territories of the Upper Niger »."
+              },
+              {
+                "title": "The Niger and the Classics: the History of a Name",
+                "author": "C. K. Meek",
+                "year": 1960,
+                "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/niger-and-the-classics-the-history-of-a-name/1820D993049CA8865D93B1EAE5B8A2BC",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "C. K. Meek, The Journal of African History, vol. 1, no 1, 1960, p. 1-17, lu le 3 novembre 2026 dans l'extrait de la première page publié par Cambridge University Press. « On 8 January 1897 the name of 'Nigeria' appeared in print for the first time. It was the title of an article in our leading newspaper, written by Miss Flora Shaw », qui « did the Colonies for The Times » et épousa plus tard Lord Lugard. La note 2 précise que l'article cité parut dans le numéro du 8 janvier 1897."
+              },
               {
                 "title": "#Nigeria60: How true is claim that Flora Shaw, British journalist, coined the name Nigeria?",
                 "author": "Francis Arinze Iloani, Dubawa",
@@ -170,7 +258,7 @@
                 "url": "https://dubawa.org/nigeria60-how-true-is-claim-that-flora-shaw-british-journalist-coined-the-name-nigeria/",
                 "tier": "referenced",
                 "source_kind": "press",
-                "notes": "Article de vérification des faits publié le 1er octobre 2020. L'article cite Flora Shaw : « The name Nigeria applying to no other part of Africa may without offence to any neighbours be accepted as coextensive with the territories over which the Royal Niger Company has extended British influence ». Nous n'avons pas lu l'article du Times lui-même."
+                "notes": "Article de vérification des faits publié le 1er octobre 2020. L'article cite Flora Shaw : « The name Nigeria applying to no other part of Africa may without offence to any neighbours be accepted as coextensive with the territories over which the Royal Niger Company has extended British influence »."
               }
             ]
           },
@@ -439,6 +527,16 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 345",
                 "notes": "UNESCO, volume dirigé par A. Adu Boahen, lu dans l'exemplaire numérisé. Lugard est « chargé d'administrer le vaste territoire du Nigéria du Nord à la suite de la cession à l'État des pouvoirs de la Compagnie royale du Niger »."
+              },
+              {
+                "title": "A Tropical Dependency: An Outline of the Ancient History of the Western Soudan with an Account of the Modern Settlement of Northern Nigeria",
+                "author": "Flora L. Shaw (Lady Lugard)",
+                "year": 1905,
+                "url": "https://archive.org/details/tropicaldependen00shaw",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 7",
+                "notes": "Flora L. Shaw (Lady Lugard), Londres, James Nisbet, 1905, lu le 3 novembre 2026 dans l'exemplaire numérisé. Document de l'époque coloniale, écrit par l'épouse du haut-commissaire du Nigeria du Nord. Page 7 : l'administration du territoire n'a été reprise par le gouvernement britannique que le 1er janvier 1900 ; le nom « is not properly a name. It cannot be found upon a map that is ten years old. It is only an English expression which has been made to comprehend a number of native states ». Page 447 : le 15 mars 1903, les troupes de Sokoto sont battues par la colonne britannique."
               }
             ]
           }
@@ -545,24 +643,24 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Protectorats du Nord et du Sud Nigeria (XIXe siècle)",
-        "Nigeria (nom proposé par Flora Shaw en 1897, officialisé en 1914)",
+        "Nigeria du Nord et Nigeria du Sud (1900-1914)",
+        "Colonie et protectorat du Nigeria (1914-1960)",
         "Fédération du Nigeria (1960-1963)"
       ],
-      "antiquity": "Le territoire était peuplé de nombreux royaumes et entités politiques indépendantes sans nom unifié : sultanats haoussa, empire Kanem-Bornou, royaume d'Oyo, Ile-Ife, chefferies igbo, royaumes ijaw, royaume du Bénin.",
-      "middleAges": "Développement des sultanats haoussa (Kano, Katsina, Zaria), empire Kanem-Bornou, royaume d'Oyo, civilisation yoruba d'Ife, royaumes igbo décentralisés, royaume du Bénin.",
-      "precolonial": "Mosaïque de royaumes puissants : califat de Sokoto, royaume d'Oyo, royaume du Bénin, cités-États haoussa, chefferies igbo. Commerce transsaharien et commerce côtier (or, esclaves, ivoire).",
-      "colonization": "XVe-XVIe siècles : premiers contacts portugais sur les côtes (Lagos, Bénin, Calabar). XIXe siècle : expansion britannique, création des protectorats Nord et Sud. 1914 : \"Amalgamation\" - unification Nord/Sud sous le nom de \"Nigeria\" (proposé en 1897 par Flora Shaw, adopté par l'administration britannique).",
-      "contemporary": "1960 : Fédération du Nigeria (indépendance). 1963 : République fédérale du Nigeria (nom actuel)."
+      "antiquity": "Aucun nom ne désignait alors l'ensemble du territoire. La plus ancienne culture qu'on y reconnaît à ses objets est celle de Nok, connue pour ses sculptures en terre cuite et ses fourneaux de fer, entre le IVe siècle avant notre ère et le IIe siècle de notre ère.",
+      "middleAges": "Plusieurs États se forment, chacun sous son propre nom. Au XIIIe siècle, le Kanem est un empire du bassin du lac Tchad ; le Borno, sa province occidentale, devient indépendant à la fin du XIVe siècle. Au nord, des villes haoussa comme Kano, Katsina et Gobir s'entourent de murailles. Au sud, Ife est une grande ville yoruba, que dépassent en puissance Oyo et le Bénin au XVe siècle.",
+      "precolonial": "À partir de 1804, le jihad d'Usman dan Fodio, parti du Gobir, donne naissance au califat de Sokoto, du nom de sa capitale fondée en 1809. Le Borno, le pays yoruba et le Bénin gardent leurs propres noms. Aucun nom ne réunit encore ces États.",
+      "colonization": "Les Britanniques forment sur la côte le protectorat des Oil Rivers, appelé Niger Coast Protectorate à partir de 1894, et conquièrent le Bénin en 1897. Le nom Nigeria paraît la même année dans le Times. Le 1er janvier 1900, l'État britannique reprend à la Royal Niger Company l'administration du Nigeria du Nord ; le sud devient le Nigeria du Sud. En 1914, Frederick Lugard réunit les deux sous le nom de Nigeria.",
+      "contemporary": "Le pays devient indépendant le 1er octobre 1960 sous le nom de Fédération du Nigeria. La Constitution de 1963 en fait une république, la République fédérale du Nigeria, nom que reprend la Constitution de 1999."
     },
     "kingdoms": [
       {
-        "name": "Sultanats haoussa",
-        "period": "Premier millénaire - XIXe siècle",
+        "name": "États haoussa",
+        "period": "Avant le XVe siècle - début du XIXe siècle",
         "entryType": "polity",
         "dominantPeoples": ["Hausa"],
-        "politicalCenters": ["Kano", "Katsina", "Zaria (Zazzau)"],
-        "historicalRole": "Cités-États haoussa puissantes, centres commerciaux et intellectuels. Islamisation ancienne par les routes transsahariennes."
+        "politicalCenters": ["Kano", "Katsina", "Gobir"],
+        "historicalRole": "Petits États dont les villes, comme Kano, Katsina et Gobir, s'entourent de murailles. Jusqu'au XVe siècle, ils restent en marge des grands empires de la région ; aux XVIIe et XVIIIe siècles, ils se disputent la prééminence. Le jihad parti du Gobir en 1804 les fait entrer dans le califat de Sokoto."
       },
       {
         "name": "Califat de Sokoto",
@@ -574,8 +672,8 @@
           "precision": "year"
         },
         "dominantPeoples": ["Hausa", "Fulani"],
-        "politicalCenters": ["Sokoto (capitale)", "Kano", "Katsina"],
-        "historicalRole": "Califat islamique puissant fondé par Usman dan Fodio. Unification politique et religieuse du nord du Nigeria. Résistance à la colonisation britannique."
+        "politicalCenters": ["Sokoto (capitale)"],
+        "historicalRole": "Né du jihad lancé en 1804 dans le Gobir par Usman dan Fodio, le califat prend le nom de sa capitale, Sokoto, fondée en 1809. Au milieu du XIXe siècle, il s'étend sur 1 500 kilomètres, de Dori, dans l'actuel Burkina Faso, au sud de l'Adamawa, au Cameroun. Ses troupes sont battues par une colonne britannique le 15 mars 1903, selon Flora Shaw."
       },
       {
         "name": "Ife",
@@ -602,7 +700,7 @@
         },
         "dominantPeoples": ["Yoruba"],
         "politicalCenters": ["Oyo (capitale)"],
-        "historicalRole": "Royaume yoruba puissant, expansion territoriale, commerce transsaharien. Influence culturelle majeure."
+        "historicalRole": "Royaume yoruba qui dépasse Ife en puissance au XVe siècle. Le roi y règne, mais le gouvernement est aux mains du basorun, une sorte de premier ministre."
       },
       {
         "name": "Royaume du Bénin",
@@ -615,7 +713,7 @@
         },
         "dominantPeoples": ["Edo (Bini)"],
         "politicalCenters": ["Bénin City (capitale)"],
-        "historicalRole": "Royaume réputé pour ses bronzes et son art. Commerce avec les Européens. Résistance à la colonisation."
+        "historicalRole": "Royaume en contact avec les Portugais dès la fin du XVe siècle. À son apogée, aux XVIe et XVIIe siècles, il englobe une partie du sud-est du pays yoruba. Les Britanniques le conquièrent en 1897."
       },
       {
         "name": "Empire Kanem-Bornou",
@@ -627,8 +725,8 @@
           "precision": "century"
         },
         "dominantPeoples": ["Kanuri"],
-        "politicalCenters": ["Kanem", "Bornou"],
-        "historicalRole": "Empire puissant du Sahel, commerce transsaharien, centre intellectuel."
+        "politicalCenters": ["Kanem", "Borno"],
+        "historicalRole": "Le Kanem est un empire du bassin du lac Tchad au XIIIe siècle. Le Borno, d'abord sa province occidentale, devient indépendant à la fin du XIVe siècle et atteint son apogée sous le mai Idris Aloma, vers 1569-1600. Les Kanuri se forment en groupe ethnique aux XIVe et XVe siècles."
       },
       {
         "name": "Nigeria colonial",
@@ -643,7 +741,7 @@
           "Tous les peuples nigérians sous administration coloniale britannique"
         ],
         "politicalCenters": ["Lagos (capitale coloniale)"],
-        "historicalRole": "Unification administrative par les Britanniques. Résistance nigériane et mouvements nationalistes."
+        "historicalRole": "Frederick Lugard achève en 1914 la réunion des protectorats du Nord et du Sud, qui restent pourtant administrés différemment. Des partis politiques naissent à partir des années 1920 ; les régions obtiennent l'autonomie en 1957 et 1959."
       },
       {
         "name": "République fédérale du Nigeria",
@@ -659,138 +757,161 @@
           "Abuja (capitale depuis 1991)",
           "Lagos (ancienne capitale)"
         ],
-        "historicalRole": "Indépendance en 1960. Guerre du Biafra (1967-1970). Histoire politique mouvementée avec alternance démocratique et régimes militaires. Développement économique et défis de gouvernance."
+        "historicalRole": "Indépendant le 1er octobre 1960, le pays devient une république en 1963. La sécession du Biafra, proclamée le 30 mai 1967, ouvre une guerre civile qui s'achève en janvier 1970 et fait entre un et trois millions de morts selon les estimations. Les militaires gouvernent de 1966 à 1979, puis de nouveau à partir du 31 décembre 1983 ; la Constitution actuelle date de 1999. Abuja remplace Lagos comme capitale en décembre 1991."
       }
     ],
     "majorPeoples": [
       {
-        "name": "Hausa-Fulani",
-        "selfAppellation": "Hausawa (Hausa), Fulɓe (Peul)",
-        "exonyms": [
-          "Hausa (terme utilisé par les Européens)",
-          "\"Haoussa\" (transcription coloniale française)",
-          "Peul/Fulani"
-        ],
+        "name": "Hausa",
+        "selfAppellation": "Hausawa",
+        "exonyms": ["Haoussa (graphie française)"],
         "peopleId": "PPL_HAUSA",
         "mainRegion": "Nord",
-        "languages": ["Hausa", "Pulaar", "anglais"],
+        "languages": ["Hausa", "anglais"],
         "languageFamily": "FLG_TCHADIQUE",
-        "appellationRemarks": "Les termes \"Hausa\" et \"Peul/Fulani\" sont neutres et acceptés. L'auto-appellation \"Hausawa\" (pluriel de Bahaushe) est préférée pour les Hausa."
+        "appellationRemarks": "Le World Factbook compte à part les Hausa (30 %) et les Fulani, nom anglais des Peuls (6 %). L'expression « Hausa-Fulani », courante pour le nord du pays, réunit donc deux peuples que ces chiffres distinguent."
+      },
+      {
+        "name": "Peuls (Fulani)",
+        "selfAppellation": "Fulɓe",
+        "exonyms": [
+          "Fulani (usage anglais au Nigeria)",
+          "Peuls (usage français)"
+        ],
+        "peopleId": "PPL_FULA",
+        "mainRegion": "Nord",
+        "languages": ["Fulfulde", "Hausa", "anglais"],
+        "languageFamily": "FLG_ATLANTIQUE",
+        "appellationRemarks": "Au Nigeria, l'anglais les appelle Fulani. La Country Study de la Bibliothèque du Congrès décrit les pasteurs nomades du nord comme « mostly Fulani »."
       },
       {
         "name": "Yoruba",
         "selfAppellation": "Yorùbá (Yorùbá ènìyàn)",
-        "exonyms": [
-          "\"Nago\" (terme colonial réducteur",
-          "éviter)",
-          "\"Aku\" (diaspora",
-          "Sierra Leone)"
-        ],
+        "exonyms": ["Nago", "Aku"],
         "peopleId": "PPL_YORUBA",
         "mainRegion": "Sud-Ouest",
         "languages": ["Yoruba", "anglais"],
         "languageFamily": "FLG_BENOUECONGO",
-        "appellationRemarks": "Le terme \"Nago\" est colonial et réducteur. L'auto-appellation \"Yorùbá\" est préférée."
+        "appellationRemarks": null
       },
       {
         "name": "Igbo",
         "selfAppellation": "Ǹdị́ Ìgbò",
-        "exonyms": ["\"Ibo\" (terme colonial réducteur", "éviter)"],
+        "exonyms": ["Ibo"],
         "peopleId": "PPL_IGBO",
         "mainRegion": "Sud-Est",
         "languages": ["Igbo", "anglais"],
         "languageFamily": "FLG_BENOUECONGO",
-        "appellationRemarks": "Le terme \"Ibo\" est colonial et réducteur. L'auto-appellation \"Ǹdị́ Ìgbò\" est préférée."
+        "appellationRemarks": "La graphie Ibo se rencontre aussi, selon le comité britannique des noms géographiques (PCGN) et le World Factbook."
       },
       {
         "name": "Ijaw",
         "selfAppellation": "Izon / Ijo",
-        "exonyms": ["Ijaw (terme utilisé par les Européens)", "Ijo (variante)"],
+        "exonyms": ["Ijaw", "Ijo"],
         "peopleId": "PPL_IJAW",
         "mainRegion": "Delta du Niger",
         "languages": ["Ijaw", "anglais"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Les termes \"Ijaw\" et \"Ijo\" sont neutres et acceptés. L'auto-appellation \"Izon\" est préférée."
+        "appellationRemarks": "Le World Factbook écrit « Ijaw/Izon »."
       },
       {
         "name": "Kanuri",
         "selfAppellation": "Kanuri",
-        "exonyms": ["Kanuri (terme utilisé par les Européens)"],
+        "exonyms": ["Beriberi"],
         "peopleId": "PPL_KANURI",
         "mainRegion": "Nord-Est (Borno)",
         "languages": ["Kanuri", "haoussa", "anglais"],
         "languageFamily": "FLG_SAHARIEN",
-        "appellationRemarks": "Le terme \"Kanuri\" est neutre et accepté."
+        "appellationRemarks": "Le World Factbook écrit « Kanuri/Beriberi »."
       },
       {
         "name": "Tiv",
         "selfAppellation": "Tiv",
-        "exonyms": ["Tiv (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_TIV",
         "mainRegion": "Centre-Est (Benue)",
         "languages": ["Tiv", "anglais"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Tiv\" est neutre et accepté."
+        "appellationRemarks": null
       },
       {
         "name": "Ibibio-Efik",
         "selfAppellation": "Ibibio, Efik",
-        "exonyms": [
-          "Ibibio",
-          "Efik",
-          "parfois regroupés sous le terme \"Calabar\" (terme géographique)"
-        ],
+        "exonyms": [],
         "peopleId": "PPL_IBIBIO",
         "mainRegion": "Sud-Est (Cross River, Akwa Ibom)",
         "languages": ["Ibibio", "Efik", "anglais"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Les termes \"Ibibio\" et \"Efik\" sont neutres et acceptés."
+        "appellationRemarks": "Le World Factbook compte les Ibibio seuls ; la Country Study cite à part les Ibibio, les Anang et les Efik."
       },
       {
         "name": "Edo / Bini",
         "selfAppellation": "Edo, Bini",
-        "exonyms": ["Edo", "Bini (terme utilisé par les Européens)"],
+        "exonyms": ["Bini"],
         "peopleId": "PPL_EDO",
         "mainRegion": "Sud (Edo State)",
         "languages": ["Edo", "anglais"],
         "languageFamily": "FLG_BENOUECONGO",
-        "appellationRemarks": "Les termes \"Edo\" et \"Bini\" sont neutres et acceptés."
+        "appellationRemarks": null
       },
       {
         "name": "Nupe",
         "selfAppellation": "Nupe",
-        "exonyms": ["Nupe (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_NUPE",
         "mainRegion": "Centre (Niger State)",
         "languages": ["Nupe", "haoussa", "anglais"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Nupe\" est neutre et accepté."
+        "appellationRemarks": null
       },
       {
         "name": "Gbagyi / Gwari",
         "selfAppellation": "Gbagyi",
-        "exonyms": ["Gbagyi", "Gwari (variante)"],
+        "exonyms": ["Gwari"],
         "peopleId": "PPL_GBAGYI",
         "mainRegion": "Centre (FCT Abuja, Niger State, Kaduna)",
         "languages": ["Gbagyi", "haoussa", "anglais"],
         "languageFamily": "FLG_BENOUECONGO",
-        "appellationRemarks": "Les termes \"Gbagyi\" et \"Gwari\" sont neutres et acceptés. L'auto-appellation \"Gbagyi\" est préférée."
+        "appellationRemarks": null
       }
     ],
     "culture": {
-      "culturalTraditions": "Art yoruba (sculptures, masques), bronzes du Bénin, musique traditionnelle (juju, afrobeat), danse traditionnelle, poésie orale (griot), artisanat (tissage, poterie, vannerie), architecture traditionnelle",
-      "dominantReligions": "Islam (nord, majoritaire), christianisme (sud, majoritaire), croyances traditionnelles (syncrétisme)",
-      "lifestyles": "Vie principalement rurale, agriculture (cacao, arachides, manioc, igname, riz), élevage (bovins, caprins), pêche (côtes et fleuves), exploitation pétrolière (delta du Niger), commerce, urbanisation croissante",
-      "socialOrganization": "Système de chefferies traditionnelles, structure clanique (patrilinéaire ou matrilinéaire selon les groupes), organisation en familles étendues et lignages, importance des ancêtres, système de confréries religieuses",
-      "regionalRelations": "Relations historiques avec les peuples du Cameroun, du Niger, du Tchad, du Bénin. Diaspora importante au Royaume-Uni, aux États-Unis, et dans les pays occidentaux."
+      "mainLanguages": [
+        {
+          "name": "Anglais",
+          "isoCode": "eng",
+          "isPrimary": true
+        },
+        {
+          "name": "Hausa",
+          "isoCode": "hau"
+        },
+        {
+          "name": "Yoruba",
+          "isoCode": "yor"
+        },
+        {
+          "name": "Igbo",
+          "isoCode": "ibo"
+        },
+        {
+          "name": "Fulfulde",
+          "isoCode": "ful"
+        }
+      ],
+      "culturalTraditions": "Les sculptures en terre cuite de Nok, faites entre le IVe siècle avant notre ère et le IIe siècle de notre ère, sont la plus ancienne tradition artistique reconnue sur le territoire. Le pays compte environ 500 langues selon la plupart des estimations ; l'anglais est la langue officielle, et le hausa, l'igbo et le yoruba sont les langues nationales. Nous n'avons pas encore réuni de sources sur les arts de cour, comme les bronzes du Bénin, ni sur les musiques du pays.",
+      "dominantReligions": "L'islam domine au nord et le christianisme au sud, tandis que la ceinture centrale est plus mêlée. Le World Factbook estime en 2018 la part des musulmans à 53,5 %, celle des catholiques à 10,6 % et celle des autres chrétiens à 35,3 %. Au recensement de 1963, 18 % des habitants se rattachaient à des cultes locaux, chiffre à prendre avec prudence.",
+      "lifestyles": "Au sud, plus arrosé, les cultures de base sont des tubercules : manioc, igname, taro et patate douce. Au nord, plus sec, ce sont le mil, le niébé et le sorgho, avec du maïs, et du riz dans les bas-fonds. Le cacao vient surtout du sud-ouest, le palmier à huile du sud-est, le coton et l'arachide du nord. Sur la côte, les Ijaw, les Ibibio, les Anang et les Efik vivent à la fois de l'agriculture et de la pêche.",
+      "socialOrganization": "Les Igbo formaient traditionnellement plus de 200 groupes nommés. Leurs villages étaient dirigés par un conseil des anciens les plus respectés, et les descendants des fondateurs avaient un rang plus élevé. En pays yoruba, l'autorité est partagée entre les souverains traditionnels, les chefs locaux et des conseils élus.",
+      "regionalRelations": "Le pays yoruba déborde la frontière ouest du Nigeria. Au milieu du XIXe siècle, le califat de Sokoto allait de Dori, dans l'actuel Burkina Faso, au sud de l'Adamawa, au Cameroun. La péninsule de Bakassi, longtemps disputée avec le Cameroun, a été attribuée à ce pays par la Cour internationale de justice en 2002."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement du territoire par de nombreux groupes ethniques. Développement de civilisations sophistiquées (Ife, Bénin, haoussa).",
-      "middleAges": "Apogée des sultanats haoussa, empire Kanem-Bornou, royaume d'Oyo, royaume du Bénin. Commerce transsaharien et commerce côtier. Islamisation du nord.",
-      "precolonial": "Califat de Sokoto (1804-1903) : unification islamique du nord. Royaumes yoruba et igbo. Commerce avec les Européens (or, esclaves, ivoire).",
-      "colonization": "XVe-XVIe siècles : premiers contacts portugais. XIXe siècle : expansion britannique. 1914 : \"Amalgamation\" - unification administrative. Résistance nigériane.",
-      "independenceStruggle": "Mouvements nationalistes dans les années 1950. Indépendance obtenue en 1960. Première République (1960-1966).",
-      "postIndependence": "Guerre du Biafra (1967-1970) : sécession igbo, conflit meurtrier. Régimes militaires (1966-1979, 1983-1999). Transition démocratique depuis 1999. Développement économique (pétrole), défis de gouvernance et de sécurité."
+      "ancientPeriods": "Le territoire est peuplé depuis des millénaires. La culture de Nok, entre le IVe siècle avant notre ère et le IIe siècle de notre ère, est la plus ancienne qu'on y reconnaisse à ses objets : sculptures en terre cuite et fourneaux de fer de Taruga.",
+      "middleAges": "Au XIIIe siècle, le Kanem est un empire du bassin du lac Tchad ; le Borno s'en détache à la fin du XIVe siècle. Les villes haoussa de Kano, Katsina et Gobir s'entourent de murailles. Au XVe siècle, Oyo et le Bénin dépassent Ife en puissance, et le Bénin entre en contact avec les Portugais.",
+      "precolonial": "Le Borno atteint son apogée sous le mai Idris Aloma, vers 1569-1600. Aux XVIIe et XVIIIe siècles, les États haoussa se disputent la prééminence. En 1804, Usman dan Fodio lance un jihad dans le Gobir ; il en naît le califat de Sokoto, dont la capitale est fondée en 1809.",
+      "colonization": "Les Britanniques forment sur la côte le protectorat des Oil Rivers, appelé Niger Coast Protectorate à partir de 1894, et conquièrent le Bénin en 1897. Le 31 décembre 1899, ils retirent sa charte à la Royal Niger Company et reprennent l'administration du nord le 1er janvier 1900. Les troupes de Sokoto sont battues en mars 1903. Frederick Lugard réunit le nord et le sud en 1914.",
+      "independenceStruggle": "Au début des années 1920, Herbert Macaulay fonde à Lagos le premier parti nigérian. Le NCNC, fondé en 1944, est le premier parti à audience nationale ; le Northern People's Congress naît à la fin des années 1940 et l'Action Group en 1951. Les régions de l'Ouest et de l'Est se gouvernent elles-mêmes en 1957, celle du Nord en 1959. Le Nigeria devient indépendant le 1er octobre 1960.",
+      "postIndependence": "Le Nigeria devient une république en 1963. Des officiers tentent de prendre le pouvoir en janvier 1966, puis des officiers du Nord mènent un contre-coup d'État en juillet. Le 30 mai 1967, la région de l'Est proclame la république du Biafra ; la guerre civile qui suit s'achève en janvier 1970 et fait entre un et trois millions de morts selon les estimations. Les militaires rendent le pouvoir aux civils le 1er octobre 1979, le reprennent le 31 décembre 1983, et la Constitution actuelle date de 1999. Abuja devient la capitale en décembre 1991. Le recensement de mars 2006 compte 140 431 790 habitants ; comme celui de 1991, il ne pose aucune question sur l'appartenance ethnique ni sur la religion. Les parts de chaque peuple données plus bas sont donc des estimations du World Factbook pour 2018 ; nous n'avons trouvé aucune part publiée pour les Edo, les Nupe et les Gbagyi."
     },
     "sources": [
       {
@@ -865,6 +986,181 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "UNESCO, volume dirigé par M. El Fasi et I. Hrbek, chapitre de Thurstan Shaw (1990), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 514. Vingt-cinq datations au carbone 14 placent « du milieu du XIIe siècle au milieu du XVe siècle » l'époque par excellence des dallages en tessons d'Ife."
+      },
+      {
+        "title": "« Nigeria », The Times (Londres), 8 janvier 1897, p. 6",
+        "url": "https://www.farooqkperogi.com/2019/10/the-first-article-that-proposed-name.html",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Article non signé paru en page 6 du Times du vendredi 8 janvier 1897, lu le 3 novembre 2026 dans le fac-similé de la page reproduit par le journaliste et universitaire Farooq A. Kperogi sur son blog. Document de l'époque coloniale. L'auteur juge le titre « Royal Niger Company's Territories » malcommode et propose de « coin a shorter title » pour ces États, qui ont besoin « for the first time in their history » d'un nom commun ; il écarte « Central Sudan ». Il écrit : « The name “Nigeria” applying to no other portion of Africa may, without offence to any neighbours, be accepted as co-extensive with the territories over which the Royal Niger Company has extended British influence », pour les distinguer « from the British colonies of Lagos and the Niger Protectorate on the coast and from the French territories of the Upper Niger »."
+      },
+      {
+        "title": "The Niger and the Classics: the History of a Name",
+        "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/niger-and-the-classics-the-history-of-a-name/1820D993049CA8865D93B1EAE5B8A2BC",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "C. K. Meek, The Journal of African History, vol. 1, no 1, 1960, p. 1-17, lu le 3 novembre 2026 dans l'extrait de la première page publié par Cambridge University Press. « On 8 January 1897 the name of 'Nigeria' appeared in print for the first time. It was the title of an article in our leading newspaper, written by Miss Flora Shaw », qui « did the Colonies for The Times » et épousa plus tard Lord Lugard. La note 2 précise que l'article cité parut dans le numéro du 8 janvier 1897."
+      },
+      {
+        "title": "A Tropical Dependency: An Outline of the Ancient History of the Western Soudan with an Account of the Modern Settlement of Northern Nigeria",
+        "url": "https://archive.org/details/tropicaldependen00shaw",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Flora L. Shaw (Lady Lugard), Londres, James Nisbet, 1905, lu le 3 novembre 2026 dans l'exemplaire numérisé. Document de l'époque coloniale, écrit par l'épouse du haut-commissaire du Nigeria du Nord. Page 7 : l'administration du territoire n'a été reprise par le gouvernement britannique que le 1er janvier 1900 ; le nom « is not properly a name. It cannot be found upon a map that is ten years old. It is only an English expression which has been made to comprehend a number of native states ». Page 447 : le 15 mars 1903, les troupes de Sokoto sont battues par la colonne britannique."
+      },
+      {
+        "title": "Legal Notice on Publication of 2006 Census Final Results, Federal Republic of Nigeria Official Gazette, no 2, vol. 96, 2 février 2009",
+        "url": "https://archive.gazettes.africa/archive/ng/2009/ng-government-gazette-dated-2009-02-02-no-2.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Journal officiel de la République fédérale du Nigeria, numéro extraordinaire publié à Abuja, lu le 3 novembre 2026 dans la copie numérisée de Gazettes.Africa. Page B 2 : rapport de la National Population Commission du 24 septembre 2008 ; le recensement tenu du 21 au 27 mars 2006 compte 140 431 790 habitants, dont 71 345 488 hommes et 69 086 302 femmes. Page B 6 : le recensement de 1962 est annulé, celui de 1963 accepté « with much rancour », celui de 1973 annulé, et les résultats de celui de 1991 ne sont acceptés qu'en octobre 1997. Pages B 9 et B 10 : les questions sur la religion et l'appartenance ethnique sont écartées du recensement de 2006, en raison de « its potential to divide the country »."
+      },
+      {
+        "title": "Toponymic Factfile: Nigeria",
+        "url": "https://assets.publishing.service.gov.uk/media/6672f27c7d0f95cd08d0db58/Nigeria_Toponymic_Factfile.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Permanent Committee on Geographical Names (Royaume-Uni), 2023, lu le 3 novembre 2026. Pays le plus peuplé d'Afrique ; population à peu près partagée entre musulmans au nord et chrétiens au sud. Langues : environ 500 selon la plupart des estimations ; l'anglais est la langue officielle ; le hausa, l'igbo (parfois écrit Ibo) et le yoruba sont les langues nationales reconnues, chacune parlée en première langue par 13 à 14 % de la population environ. Lagos est la capitale jusqu'en décembre 1991. Le Biafra, État sécessionniste du sud-est, existe de mai 1967 à janvier 1970. La Cour internationale de justice attribue en 2002 la péninsule de Bakassi au Cameroun."
+      },
+      {
+        "title": "Constitution of the Federation, 1963 (Act No. 20 of 1963)",
+        "url": "https://data.globalcit.eu/NationalDB/docs/1963%20Constitution%20of%20Nigeria.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte de la Constitution nigériane de 1963, entrée en vigueur le 1er octobre 1963, lu le 3 novembre 2026 dans la copie mise en ligne par l'observatoire GLOBALCIT de l'Institut universitaire européen. Section 2 : « Nigeria shall be a Federation comprising of Regions and a Federal territory and shall be a Republic by the name of the Federal Republic of Nigeria ». Section 3 : quatre régions, Northern Nigeria, Eastern Nigeria, Western Nigeria et Mid-Western Nigeria."
+      },
+      {
+        "title": "Constitution of the Federal Republic of Nigeria 1999",
+        "url": "https://hrlibrary.umn.edu/research/nigeria-constitution.html",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte lu sur la bibliothèque des droits de l'homme de l'université du Minnesota le 3 novembre 2026. Section 2 (1) : « Nigeria is one indivisible and indissoluble sovereign state to be known by the name of the Federal Republic of Nigeria ». Section 3 (1) : 36 États. Section 55 : les débats de l'Assemblée nationale se tiennent en anglais, et en hausa, en igbo (« Ibo ») et en yoruba quand les dispositions nécessaires auront été prises."
+      },
+      {
+        "title": "CIA World Factbook, Nigeria, rubriques Ethnic groups, Languages et Religions (estimations de 2018), copie du dépôt factbook.json",
+        "url": "https://raw.githubusercontent.com/factbook/factbook.json/master/africa/ni.json",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Dépôt public qui recopiait chaque semaine les fiches du World Factbook, publication de l'agence de renseignement américaine qui a cessé de paraître en février 2026 ; fiche du Nigeria lu le 3 novembre 2026. Ethnic groups : « Hausa 30%, Yoruba 15.5%, Igbo (Ibo) 15.2%, Fulani 6%, Tiv 2.4%, Kanuri/Beriberi 2.4%, Ibibio 1.8%, Ijaw/Izon 1.8%, other 24.9% (2018 est.) », avec la note : plus de 250 groupes ethniques. Languages : « English (official), Hausa, Yoruba, Igbo (Ibo), Fulani, over 500 additional indigenous languages ». Religions : « Muslim 53.5%, Roman Catholic 10.6%, other Christian 35.3%, other 0.6% (2018 est.) »."
+      },
+      {
+        "title": "Nigeria: A Country Study, « Early History » (Library of Congress)",
+        "url": "https://countrystudies.us/nigeria/4.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. La culture de Nok, connue par ses sculptures en terre cuite et les fourneaux de fer de Taruga, « flourished between the fourth century B.C. and the second century A.D. »."
+      },
+      {
+        "title": "Nigeria: A Country Study, « Early States Before 1500 » (Library of Congress)",
+        "url": "https://countrystudies.us/nigeria/5.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. Le Kanem a « achieved imperial status in the Lake Chad basin by the thirteenth century » ; le Borno, sa province occidentale, devient indépendant à la fin du XIVe siècle ; les Kanuri se forment en groupe ethnique aux XIVe et XVe siècles. Kano, Katsina et Gobir deviennent des villes fortifiées. « During the fifteenth century, Oyo and Benin surpassed Ife as political and economic powers » ; à Oyo, le gouvernement est aux mains du basorun ; le Bénin est en contact avec le Portugal à la fin du XVe siècle et englobe à son apogée, aux XVIe et XVIIe siècles, une partie du sud-est du pays yoruba."
+      },
+      {
+        "title": "Nigeria: A Country Study, « The Savanna States, 1500-1800 » (Library of Congress)",
+        "url": "https://countrystudies.us/nigeria/6.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. « Borno reached its apogee under mai Idris Aloma (ca. 1569-1600) » ; aux XVIIe et XVIIIe siècles, les États haoussa se disputent la prééminence."
+      },
+      {
+        "title": "Nigeria: A Country Study, « Usman dan Fodio and the Sokoto Caliphate » (Library of Congress)",
+        "url": "https://countrystudies.us/nigeria/9.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. Le jihad « began in Gobir in 1804 » ; le califat porte le nom de sa capitale, Sokoto, « founded in 1809 », et s'étend au milieu du XIXe siècle sur 1 500 kilomètres, de Dori, dans l'actuel Burkina Faso, au sud de l'Adamawa, au Cameroun."
+      },
+      {
+        "title": "Nigeria: A Country Study, « Extension of British Control » (Library of Congress)",
+        "url": "https://countrystudies.us/nigeria/16.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. Formation de l'Oil Rivers Protectorate, « redesignated the Niger Coast Protectorate » en 1894 ; « The conquest of Benin in 1897 completed the British occupation of southwestern Nigeria » ; le 31 décembre 1899, la Grande-Bretagne met fin à la charte de la Royal Niger Company."
+      },
+      {
+        "title": "Nigeria: A Country Study, « Unification of Nigeria » (Library of Congress)",
+        "url": "https://countrystudies.us/nigeria/18.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. Lugard revient au Nigeria en 1912 pour préparer la fusion des protectorats du Nord et du Sud, achevée deux ans plus tard, à la veille de la Première Guerre mondiale."
+      },
+      {
+        "title": "Nigeria: A Country Study, « Emergence of Nigerian Nationalism » (Library of Congress)",
+        "url": "https://countrystudies.us/nigeria/20.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. Herbert Macauley fonde son parti en 1922 ; le NCNC, fondé en 1944, est le premier parti à audience nationale ; le Northern People's Congress est organisé à la fin des années 1940, l'Action Group naît en 1951. Les régions de l'Ouest et de l'Est se gouvernent elles-mêmes en 1957, celle du Nord deux ans plus tard ; « Independence was achieved on October 1, 1960 »."
+      },
+      {
+        "title": "Nigeria: A Country Study, « Independent Nigeria » (Library of Congress)",
+        "url": "https://countrystudies.us/nigeria/21.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. « Later in 1963, Nigeria became a republic within the Commonwealth »."
+      },
+      {
+        "title": "Nigeria: A Country Study, « The 1964-65 Elections » (Library of Congress)",
+        "url": "https://countrystudies.us/nigeria/22.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. « In January 1966, army officers attempted to seize power » ; en juillet, des officiers du Nord mènent un contre-coup d'État."
+      },
+      {
+        "title": "Nigeria: A Country Study, « Civil War » (Library of Congress)",
+        "url": "https://countrystudies.us/nigeria/23.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. Le 30 mai 1967, Ojukwu proclame la république indépendante du Biafra ; la résistance biafraise s'effondre après la chute d'Owerri, le 6 janvier 1970 ; les estimations des morts de la guerre vont de un à trois millions."
+      },
+      {
+        "title": "Nigeria: A Country Study, « The Second Republic, 1979-83 » (Library of Congress)",
+        "url": "https://countrystudies.us/nigeria/29.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. Le gouvernement militaire remet le pouvoir à un gouvernement civil dirigé par Shehu Shagari le 1er octobre 1979."
+      },
+      {
+        "title": "Nigeria: A Country Study, « Return to Military Rule » (Library of Congress)",
+        "url": "https://countrystudies.us/nigeria/30.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. « On December 31, 1983, the military seized power once again » ; en août 1985, Ibrahim Babangida écarte Muhammadu Buhari."
+      },
+      {
+        "title": "Nigeria: A Country Study, « Census History » (Library of Congress)",
+        "url": "https://countrystudies.us/nigeria/35.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. Le recensement de 1963 donne 55,6 millions d'habitants, chiffre jugé gonflé ; celui de 1973 est annulé ; pour le recensement de 1991, « religious and ethnic identification would be excluded from the census forms »."
+      },
+      {
+        "title": "Nigeria: A Country Study, « Ethnicity » (Library of Congress)",
+        "url": "https://countrystudies.us/nigeria/37.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. « Estimates of the number of distinct ethnic groupings varied from 250 to as many as 400 » ; groupes de langue hausa au nord, pasteurs « mostly Fulani », Kanuri au nord-est, Yoruba au sud-ouest, Igbo au sud-est, peuples du delta du Niger sur la côte."
+      },
+      {
+        "title": "Nigeria: A Country Study, « The Southern Area » (Library of Congress)",
+        "url": "https://countrystudies.us/nigeria/39.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. Le pays yoruba couvre la plus grande partie du sud-ouest et les peuples situés juste à l'ouest de la frontière. Les Igbo formaient plus de 200 groupes nommés ; les villages étaient dirigés par un conseil des anciens les plus respectés. Les Ijaw, Ibibio, Anang et Efik vivent en partie de l'agriculture, en partie de la pêche. Les Bini et les Urhobo sont cités à l'ouest du delta."
+      },
+      {
+        "title": "Nigeria: A Country Study, « Religion » (Library of Congress)",
+        "url": "https://countrystudies.us/nigeria/44.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. L'islam domine au nord, le christianisme au sud, la ceinture centrale est plus mêlée ; au recensement de 1963, 47 % de musulmans, 35 % de chrétiens et 18 % de membres de cultes locaux, chiffres que le texte invite à prendre avec prudence."
+      },
+      {
+        "title": "Nigeria: A Country Study, « Crops » (Library of Congress)",
+        "url": "https://countrystudies.us/nigeria/58.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Bibliothèque du Congrès des États-Unis, Federal Research Division, Nigeria: A Country Study, 5e édition dirigée par Helen Chapin Metz, 1991. Copie non officielle du texte, mise en ligne par countrystudies.us, lu le 3 novembre 2026. Tubercules au sud (manioc, igname, taro, patate douce) ; mil, niébé et sorgho au nord, avec du maïs et du riz dans les bas-fonds ; cacao surtout au sud-ouest, palmier à huile au sud-est, coton et arachide au nord."
       }
     ],
     "demographics": {
@@ -873,11 +1169,11 @@
       "source": "UNFPA – World Population Dashboard",
       "peoples": [
         {
-          "name": "Hausa-Fulani",
+          "name": "Hausa",
           "peopleId": "PPL_HAUSA",
           "region": "Nord",
           "languageFamily": "FLG_TCHADIQUE",
-          "percentageInCountry": 36
+          "percentageInCountry": 30
         },
         {
           "name": "Yoruba",
@@ -894,18 +1190,11 @@
           "percentageInCountry": 15.2
         },
         {
-          "name": "Ijaw",
-          "peopleId": "PPL_IJAW",
-          "region": "Delta du Niger",
-          "languageFamily": "FLG_NIGERCONGO",
-          "percentageInCountry": 1.8
-        },
-        {
-          "name": "Kanuri",
-          "peopleId": "PPL_KANURI",
-          "region": "Nord-Est (Borno)",
-          "languageFamily": "FLG_SAHARIEN",
-          "percentageInCountry": 2.4
+          "name": "Peuls (Fulani)",
+          "peopleId": "PPL_FULA",
+          "region": "Nord",
+          "languageFamily": "FLG_ATLANTIQUE",
+          "percentageInCountry": 6
         },
         {
           "name": "Tiv",
@@ -915,41 +1204,38 @@
           "percentageInCountry": 2.4
         },
         {
-          "name": "Ibibio-Efik",
+          "name": "Kanuri",
+          "peopleId": "PPL_KANURI",
+          "region": "Nord-Est (Borno)",
+          "languageFamily": "FLG_SAHARIEN",
+          "percentageInCountry": 2.4
+        },
+        {
+          "name": "Ibibio",
           "peopleId": "PPL_IBIBIO",
           "region": "Sud-Est (Cross River, Akwa Ibom)",
           "languageFamily": "FLG_NIGERCONGO",
           "percentageInCountry": 1.8
         },
         {
-          "name": "Edo / Bini",
-          "peopleId": "PPL_EDO",
-          "region": "Sud (Edo State)",
-          "languageFamily": "FLG_BENOUECONGO",
-          "percentageInCountry": 1.7
-        },
-        {
-          "name": "Nupe",
-          "peopleId": "PPL_NUPE",
-          "region": "Centre (Niger State)",
+          "name": "Ijaw",
+          "peopleId": "PPL_IJAW",
+          "region": "Delta du Niger",
           "languageFamily": "FLG_NIGERCONGO",
-          "percentageInCountry": 1.5
-        },
-        {
-          "name": "Gbagyi / Gwari",
-          "peopleId": "PPL_GBAGYI",
-          "region": "Centre (FCT Abuja, Niger State, Kaduna)",
-          "languageFamily": "FLG_BENOUECONGO",
-          "percentageInCountry": 1.2
+          "percentageInCountry": 1.8
         },
         {
           "name": "Autres groupes ethniques",
           "peopleId": null,
           "region": "Divers",
           "languageFamily": null,
-          "percentageInCountry": 20.5
+          "percentageInCountry": 24.9
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "Le Nigeria, pays d'Afrique de l'Ouest et le plus peuplé du continent, tire son nom du fleuve Niger ; ce nom paraît en 1897 dans le Times de Londres.",
+      "followUp": "Qui a proposé le nom Nigeria en 1897, et pour quels territoires ?"
     }
   }
 }

@@ -481,7 +481,7 @@
       "precolonial": "Au XIXe siècle, le roi Rwabugiri mène de nombreuses campagnes contre les pays voisins, selon Jan Vansina ; c'est sous son règne que le premier Européen visite le Rwanda, en 1894. Avant la colonisation, la frontière entre Hutu et Tutsi restait souple et franchissable, tandis que celle qui séparait les Twa des deux autres groupes était bien plus rigide, selon Human Rights Watch.",
       "colonization": "L'administration allemande s'installe au tournant du XXe siècle, sous le règne de Musinga. Après la Première Guerre mondiale, la Belgique la remplace : l'armée belge occupe le pays en 1916, puis la Belgique l'administre avec l'Urundi, sous mandat de la Société des Nations, puis sous tutelle des Nations unies. Dans les années 1930, l'administration belge inscrit le groupe de chaque Rwandais, hutu, tutsi ou twa, sur sa carte d'identité, selon Human Rights Watch.",
       "independenceStruggle": "En novembre 1959, des violences éclatent : selon les Nations unies, un soulèvement hutu fait des centaines de morts parmi les Tutsi. En septembre 1961, environ 80 % des Rwandais votent la fin de la monarchie, selon Human Rights Watch. Le Rwanda devient indépendant le 1er juillet 1962 ; à cette date, 120 000 personnes, surtout des Tutsi, se sont réfugiées dans les pays voisins, selon les Nations unies.",
-      "postIndependence": "En 1994, avant le génocide, les Nations unies estiment que le Rwanda compte plus de 7 millions d'habitants, dont environ 85 % de Hutu, 14 % de Tutsi et 1 % de Twa. Le génocide contre les Tutsi commence le 6 avril 1994 ; des responsables hutu modérés sont aussi assassinés, et plus d'un million de personnes y perdent la vie, selon les Nations unies. La Constitution de 2003, révisée en 2015, interdit la discrimination fondée notamment sur l'origine ethnique et fait de la lutte contre le divisionnisme un principe de l'État. Le recensement de 2022 compte 13 246 394 habitants, selon l'Institut national de la statistique du Rwanda."
+      "postIndependence": "En 1994, avant le génocide, les Nations unies estiment que le Rwanda compte plus de 7 millions d'habitants, dont environ 85 % de Hutu, 14 % de Tutsi et 1 % de Twa. Le génocide contre les Tutsi commence le 6 avril 1994 ; des responsables hutu modérés sont aussi assassinés, et plus d'un million de personnes y perdent la vie, selon les Nations unies. La Constitution de 2003, révisée en 2015, interdit la discrimination fondée notamment sur l'origine ethnique et fait de la lutte contre le divisionnisme un principe de l'État. Le recensement de 2022 compte 13 246 394 habitants, selon l'Institut national de la statistique du Rwanda ; il ne donne pas de répartition entre Hutu, Tutsi et Twa."
     },
     "sources": [
       {
@@ -608,16 +608,6 @@
         "tier": "referenced",
         "source_kind": "academic",
         "notes": "Site hébergé par la Chaire pour le développement de la recherche sur la culture d'expression française en Amérique du Nord (CEFAN), Université Laval, dernière mise à jour le 3 novembre 2024, lu le 3 novembre 2026. Sous l'administration allemande, le pays est « appelé alors Ruanda » ; le français est introduit « au moment de l'occupation par l'armée belge en 1916 » ; les Belges imposent une carte d'identité portant la mention ethnique (1933-1934) ; vote des députés, le 8 février 2017, d'une loi faisant du swahili la quatrième langue officielle. Les pourcentages de groupes donnés sur cette page ne citent pas de source et ne sont pas repris ici."
-      }
-    ],
-    "gaps": [
-      {
-        "field": "content.demographics.peoples",
-        "reason": "Le Rwanda ne compte plus les Hutu, les Tutsi et les Twa dans ses recensements depuis le génocide de 1994 : le recensement de 2022 ne donne aucune répartition de ce type. Nous ne donnons donc pas de part actuelle pour chacun de ces groupes. Les seules parts que nous avons trouvées sont anciennes : environ 84 % de Hutu et 15 % de Tutsi lors de l'enregistrement des années 1930, selon Human Rights Watch, et environ 85 % de Hutu, 14 % de Tutsi et 1 % de Twa en 1994, avant le génocide, selon les Nations unies."
-      },
-      {
-        "field": "content.culture",
-        "reason": "Nous n'avons pas encore trouvé de source publiée par le Rwanda qui décrive la répartition actuelle des religions ; les résultats détaillés du recensement de 2022 sur ce point n'étaient pas accessibles."
       }
     ],
     "demographics": {

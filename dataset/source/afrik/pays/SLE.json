@@ -3,9 +3,9 @@
   "nameFr": "Sierra Leone",
   "nameEn": "Sierra Leone",
   "nameOfficial": "République de Sierra Leone (Republic of Sierra Leone)",
-  "summary": "La Sierra Leone porte un nom espagnol donné par un Portugais : « Sierra Leona », les montagnes du lion, que Pedro de Sintra crut y reconnaître en 1462. Freetown fut fondée en 1787 pour y installer des esclaves affranchis. Temne, Mende, Limba et Krio y font coexister traditions atlantiques, mandé et créoles.",
-  "etymology": "Le nom \"Sierra Leone\" viendrait de l'espagnol \"Sierra Leona\" (montagnes du lion), un nom que l'explorateur portugais Pedro de Sintra aurait donné en 1462. Il aurait vu des montagnes qui ressemblaient à des lions rugissants, d'où le nom \"Serra Lyoa\" (montagnes du lion) en portugais, qui est devenu \"Sierra Leone\" en espagnol puis en anglais. Le nom a été conservé par les Britanniques lors de la colonisation.",
-  "nameOriginActor": "L'explorateur portugais Pedro de Sintra a nommé la région \"Serra Lyoa\" (montagnes du lion) en 1462, en référence aux montagnes qui ressemblaient à des lions rugissants. Le nom a été anglicisé en \"Sierra Leone\" par les Britanniques.",
+  "summary": "La Sierra Leone porte le nom d'une montagne de sa côte, que des marins portugais appellent Serra Leoa, la montagne de la Lionne, dans les années 1460 ; les auteurs anciens donnent plusieurs raisons à ce nom. Freetown reçoit son nom en 1792, là où des colons venus d'Angleterre s'étaient installés en 1787. Selon le recensement de 2015, les Mende et les Temne sont les deux peuples les plus nombreux, et le krio sert de langue commune.",
+  "etymology": "Le nom Sierra Leone vient de Serra Leoa, en portugais la montagne de la Lionne, nom donné à une montagne de la côte. Vers 1505-1508, Duarte Pacheco Pereira l'écrit Serra Leoa ; en 1507, le récit d'Alvise Cadamosto imprimé à Vicence l'écrit montagna Liona. Les auteurs anciens expliquent ce nom de plusieurs façons. Selon Pacheco Pereira, qui dit tenir le récit de Pero de Sintra lui-même, Sintra aurait appelé ainsi cette terre parce qu'elle était âpre et sauvage ; Pacheco Pereira rejette l'idée, déjà répandue, qu'il y aurait eu des lions. Dans l'édition de Giovanni Battista Ramusio, vers 1550, le récit de Cadamosto parle du grand bruit du tonnerre au sommet de la montagne. En 1668, Olfert Dapper y voit un mot espagnol et l'explique par le bruit des vagues sur un écueil, semblable au rugissement d'une lionne. Le nom passe ensuite à la colonie britannique, puis à l'État indépendant en 1961.",
+  "nameOriginActor": "Des marins portugais du XVe siècle, ceux de Pero de Sintra (Pedro de Sintra), selon Duarte Pacheco Pereira, qui dit tenir le récit de Sintra lui-même, et selon le récit d'Alvise Cadamosto imprimé en 1507. J. J. Crooks date ce voyage de 1462 ou 1463. La Grande-Bretagne garde ce nom pour sa colonie, et la loi de 1961 en fait celui de l'État indépendant.",
   "nameHistory": {
     "summary": "Le nom Sierra Leone désigne un pays d'Afrique de l'Ouest, la République de Sierra Leone. Il vient d'un nom portugais, Serra Leoa, donné à une montagne de la côte ; on le trouve aussi écrit Serra Liona. Le pays s'est appelé Colonie et Protectorat de la Sierra Leone jusqu'en 1961. Les sources ne s'accordent pas sur l'origine du nom ; nous les présentons plus bas.",
     "names": [
@@ -98,7 +98,7 @@
               "label": "1507"
             },
             "era": "polity",
-            "statement": "Le nom Sierra Leone est écrit montagna Liona, la montagne Lionne, dans le récit d'Alvise Cadamosto sur le voyage de Pietro di Cintra, imprimé à Vicence en 1507 ; le texte ne dit pas pourquoi ce nom a été choisi.",
+            "statement": "Le nom Sierra Leone est écrit montagna Liona, la montagne Lionne, dans le récit d'Alvise Cadamosto sur le voyage de Pietro di Cintra, imprimé à Vicence en 1507. Le nom y est donné à une très haute montagne, que le texte décrit couverte de grands arbres toujours verts.",
             "formAsWritten": "montagna Liona",
             "actors": [
               {
@@ -115,7 +115,7 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "page": "livre II, vue 106 de l'exemplaire numérisé",
-                "notes": "Vicence, 1507, lu dans l'exemplaire numérisé. Récit d'Alvise Cadamosto sur le voyage de Pietro di Cintra : « ala dicta montagna li messeno nome la montagna Liona », sans en donner la raison."
+                "notes": "Vicence, 1507, lu dans l'exemplaire numérisé le 3 novembre 2026. Récit d'Alvise Cadamosto sur le voyage de Pietro di Cintra. Le texte décrit d'abord « una montagna molto alta coperta tuta de arbori verdi sempre & altissimi », puis : « ala dicta montagna li messeno nome la montagna Liona »."
               }
             ]
           },
@@ -230,11 +230,11 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Texte de Cadamosto, édition de Ramusio"
+              "from": 1550,
+              "to": 1550,
+              "label": "Publiée par Ramusio vers 1550"
             },
-            "statement": "Le nom Sierra Leone viendrait du grand bruit du tonnerre qu'on entend sans cesse au sommet de la montagne, toujours entouré de nuages, selon le récit de Cadamosto dans l'édition de Giovanni Battista Ramusio.",
+            "statement": "Le nom Sierra Leone viendrait du grand bruit du tonnerre qu'on entend sans cesse au sommet de la montagne, toujours entouré de nuages, selon le récit de Cadamosto publié par Giovanni Battista Ramusio vers 1550. J. J. Crooks reprend cette explication en 1903.",
             "hypothesisGroup": "origine du nom Sierra Leone",
             "sources": [
               {
@@ -245,7 +245,7 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "page": "p. 200",
-                "notes": "Venise, 1837, réédition du recueil de Ramusio, lue dans l'exemplaire numérisé. Navigation de Pietro di Cintra : « alla detta montagna, Serra-Liona ; e questo per il gran rumor che di continuo si sente per causa de' tuoni che sono sempre nella cima ch'è circondata da nebbie »."
+                "notes": "Venise, 1837, réédition du recueil de Ramusio, lue dans l'exemplaire numérisé le 3 novembre 2026. Navigation de Pietro di Cintra, p. 200 : « alla detta montagna, Serra-Liona ; e questo per il gran rumor che di continuo si sente per causa de' tuoni che sono sempre nella cima ch'è circondata da nebbie ». La préface de l'éditeur indique que Ramusio ouvre son recueil avec la Description de l'Afrique de Jean Léon, dont il retrouve le manuscrit en 1550."
               },
               {
                 "title": "Relation des voyages à la côte occidentale d'Afrique d'Alvise de Ca' da Mosto, 1455-1457",
@@ -256,18 +256,49 @@
                 "source_kind": "archive",
                 "page": "p. 188",
                 "notes": "Paris, Ernest Leroux, 1895, lu dans l'exemplaire numérisé. Traduction française ancienne du même passage : la montagne est nommée Serre-Lionne « à cause du grand bruit qui s'y fait par l'horrible son et éclatement des tonnerres »."
+              },
+              {
+                "title": "A History of the Colony of Sierra Leone, Western Africa",
+                "author": "J. J. Crooks",
+                "year": 1903,
+                "url": "https://archive.org/details/in.ernet.dli.2015.506192",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 6",
+                "notes": "Document de l'époque coloniale, écrit par un officier britannique : Dublin, Browne and Nolan, 1903, lu dans la réimpression numérisée le 3 novembre 2026. Page 6 : la haute montagne couverte d'arbres est appelée Sierra Leona « on account of the tremendous roaring of the thunder about the summit of it, which was constantly wrapped up in cloud and mist »."
               }
-            ]
+            ],
+            "era": "polity"
           },
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Rapportée par Olfert Dapper"
+              "from": 1668,
+              "to": 1668,
+              "label": "Publiée par Olfert Dapper en 1668"
             },
-            "statement": "Le nom Sierra Leone viendrait du bruit des vagues sur un écueil de la côte, qui ressemble au rugissement d'une lionne, selon Olfert Dapper, cité par Charles Schefer ; Dapper y ajoute le tonnerre des sommets.",
+            "statement": "Le nom Sierra Leone viendrait du bruit des vagues sur un écueil de la côte, qui ressemble au rugissement d'une lionne, selon Olfert Dapper en 1668. Dapper y voit un mot espagnol, montagne de la Lionne, et ajoute le tonnerre des sommets.",
             "hypothesisGroup": "origine du nom Sierra Leone",
             "sources": [
+              {
+                "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+                "author": "Olfert Dapper",
+                "year": 1668,
+                "url": "https://archive.org/details/gri_33125009359999",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 372-373",
+                "notes": "Amsterdam, Jacob van Meurs, 1668, lu dans l'exemplaire numérisé le 3 novembre 2026. Chapitre sur la montagne et le royaume de Serre-Lions : « Sierra » serait en espagnol une montagne et « Liona » une lionne ; l'auteur explique le nom par le grondement des vagues dans les creux d'un rocher, semblable au rugissement d'une lionne, et par les nuages qui couvrent les sommets."
+              },
+              {
+                "title": "Description de l'Afrique",
+                "author": "Olfert Dapper",
+                "year": 1686,
+                "url": "https://archive.org/details/bub_gb_lVFFVLhxVsEC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chapitre « Du royaume de Sierra-Liona ou Bolmberre »",
+                "notes": "Traduction française, Amsterdam, Wolfgang, Waesberge, Boom et van Someren, 1686, lue dans l'exemplaire numérisé le 3 novembre 2026. « Quoique ce mot Espagnol ne signifie proprement que montagne de la Lionne, l'origine de ce nom est que les flots donnant sur un des écueils qui est sur cette côte, font un bruit qui s'entend de fort loin, et qui ressemble fort au rugissement d'une Lionne. » L'auteur ajoute les tonnerres des sommets, toujours couverts de nuées. Bolmberre serait un mot du pays qui désigne une terre basse et fertile. Le chapitre nomme aussi le royaume de Mitombo, qui donnait son nom à la rivière, appelée depuis rivière de Sierra Leone."
+              },
               {
                 "title": "Relation des voyages à la côte occidentale d'Afrique d'Alvise de Ca' da Mosto, 1455-1457",
                 "author": "Charles Schefer (éditeur)",
@@ -278,7 +309,8 @@
                 "page": "p. 189, note 1",
                 "notes": "Paris, Ernest Leroux, 1895, lu dans l'exemplaire numérisé. Note de l'éditeur citant la Description de l'Afrique d'Olfert Dapper, p. 246 : l'origine du mot serait que « les flots donnant sur un des écueils qui est sur cette côte, font un bruit [...] qui ressemble fort au rugissement d'une lionne »."
               }
-            ]
+            ],
+            "era": "polity"
           }
         ]
       },
@@ -351,49 +383,47 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Sierra Leona (portugais, 1462)",
-        "Colonie de Freetown (1787-1808)",
-        "Colonie britannique de Sierra Leone (1808-1961)"
+        "Serra Leoa (forme portugaise, vers 1505-1508)",
+        "Colonie de la Sierra Leone (1808-1961)",
+        "Protectorat de la Sierra Leone (1896-1961)"
       ],
-      "antiquity": "Pas de présence humaine documentée dans la région avant l'arrivée des peuples atlantiques et mandé.",
-      "middleAges": "Présence de peuples atlantiques (Temne, Limba) et mandé (Mende, Kuranko, Yalunka) dans la région. Développement de chefferies et de royaumes locaux.",
-      "precolonial": "Présence de peuples atlantiques (Temne, Limba) et mandé (Mende, Kuranko, Yalunka) dans la région. Développement de chefferies et de royaumes locaux. Contacts avec les commerçants européens (Portugais, Britanniques) à partir du XVe siècle. La région était connue sous le nom de \"Serra Lyoa\" (montagnes du lion) par les Portugais.",
-      "colonization": "1787-1808 : Colonie de Freetown (établissement pour esclaves libérés). 1808-1961 : Colonie britannique de Sierra Leone. Développement de la colonie de Freetown pour les esclaves libérés (Nova Scotians, Maroons de Jamaïque), formation du peuple Krio, expansion coloniale britannique, développement de l'économie de plantation (palmier à huile, café, cacao), exploitation minière (diamants, or). Le nom \"Sierra Leone\" est officialisé par les Britanniques.",
-      "contemporary": "1961 : Indépendance (27 avril 1961), proclamation de la République de Sierra Leone. Le nom \"Sierra Leone\" est officiel."
+      "antiquity": null,
+      "middleAges": "Avant l'arrivée des Portugais dans les années 1460, des Manden, les Kono et les Vai, vivent déjà dans la zone forestière de l'actuelle Sierra Leone et du Libéria, selon Yves Person. Sur la côte, les Temne tiennent alors la région, depuis la hauteur de l'actuelle Conakry.",
+      "precolonial": "Des marins portugais longent cette côte dans les années 1460 et donnent à une montagne le nom de Serra Leoa. Au XVIIe siècle, Olfert Dapper décrit un royaume de Sierra-Liona, aussi appelé Bolmberre, et le royaume de Mitombo, qui donnait son nom à la rivière. En 1788, le roi Naimbanna, que J. J. Crooks appelle le chef de la Sierra Leone, confirme la cession de terres faite l'année précédente par le roi Tom aux colons britanniques.",
+      "colonization": "Le 14 mai 1787, des colons noirs venus d'Angleterre débarquent sur la péninsule, sur une terre cédée par le roi Tom. En 1792, la Sierra Leone Company y installe 1 131 Noirs libres venus de Nouvelle-Écosse, au Canada, et la ville reçoit le nom de Freetown ; 660 Marrons de la Jamaïque arrivent en 1800. La colonie passe à la Couronne britannique le 1er janvier 1808. Des Africains libérés des navires négriers sont ensuite installés dans des villages de la péninsule. Le 31 août 1896, la Grande-Bretagne proclame un protectorat sur l'intérieur du pays. En 1898, le refus de l'impôt sur les cases, mené par le chef Bai Bureh, déclenche un soulèvement.",
+      "contemporary": "Depuis le 27 avril 1961, le nom Sierra Leone est celui de l'État indépendant, qui réunit l'ancienne colonie et l'ancien protectorat. Le pays devient une république le 19 avril 1971. Le recensement de 2015 compte 7 092 113 habitants, et celui de 2021 en compte 7 548 702."
     },
     "kingdoms": [
       {
-        "name": "Chefferies Temne",
-        "period": "XVe siècle - XIXe siècle",
+        "name": "Chefferies temne",
+        "period": "Vers 1460 - 1898",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1401,
-          "endYear": 1900,
-          "precision": "century"
+          "startYear": 1460,
+          "endYear": 1898,
+          "precision": "approximate",
+          "datingNote": "Les bornes sont celles des documents lus : l'arrivée des Portugais dans les années 1460, quand les Temne tiennent déjà la côte, et le soulèvement de 1898 contre le protectorat. Les chefferies temne sont plus anciennes que la première date."
         },
         "dominantPeoples": ["Temne"],
-        "politicalCenters": [
-          "Chefferies indépendantes (Rokel",
-          "Port Loko",
-          "etc.)"
-        ],
-        "historicalRole": "Organisation politique traditionnelle des Temne, chefferies indépendantes, résistance à la colonisation britannique."
+        "politicalCenters": ["Rive de la rivière de Sierra Leone"],
+        "historicalRole": "À l'arrivée des Portugais, les Temne tiennent la côte, selon Yves Person. En 1787, le roi Tom cède aux colons britanniques la terre de la future Freetown ; en 1788, le roi Naimbanna confirme cette cession. En 1898, le chef Bai Bureh refuse l'impôt sur les cases imposé par le protectorat, et un soulèvement éclate, selon J. J. Crooks."
       },
       {
-        "name": "Chefferies Mende",
-        "period": "XVIe siècle - XIXe siècle",
+        "name": "Chefferies mende",
+        "period": "1875 - 1896",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1501,
-          "endYear": 1900,
-          "precision": "century"
+          "startYear": 1875,
+          "endYear": 1896,
+          "precision": "approximate",
+          "datingNote": "Les bornes sont celles des documents lus : les traités signés par les chefs mende et sherbro en décembre 1875, puis le protectorat britannique de 1896. Les chefferies mende sont plus anciennes que ces dates."
         },
         "dominantPeoples": ["Mende"],
-        "politicalCenters": ["Chefferies indépendantes (Bo", "Kenema", "etc.)"],
-        "historicalRole": "Organisation politique traditionnelle des Mende, chefferies indépendantes, sociétés initiatiques (Poro, Sande/Bundu), résistance à la colonisation britannique."
+        "politicalCenters": ["Pays mende, au sud et à l'est"],
+        "historicalRole": "En décembre 1875, les chefs mende et sherbro signent avec le gouverneur de la Sierra Leone des traités qui confient leurs différends à son arbitrage. En 1896, le pays mende est réparti entre plusieurs districts du protectorat, selon J. J. Crooks."
       },
       {
-        "name": "Colonie de Freetown",
+        "name": "Colonie de la Sierra Leone Company",
         "period": "1787 - 1808",
         "entryType": "colonial",
         "timeRange": {
@@ -401,12 +431,16 @@
           "endYear": 1808,
           "precision": "year"
         },
-        "dominantPeoples": ["Krio (esclaves libérés)", "Britanniques"],
-        "politicalCenters": ["Freetown (capitale coloniale)"],
-        "historicalRole": "Établissement de la colonie de Freetown pour les esclaves libérés (Nova Scotians, Maroons de Jamaïque), formation du peuple Krio, développement de la société créole."
+        "dominantPeoples": [
+          "Colons venus d'Angleterre",
+          "Colons venus de Nouvelle-Écosse",
+          "Marrons de la Jamaïque"
+        ],
+        "politicalCenters": ["Freetown"],
+        "historicalRole": "Établissement fondé en 1787 pour des colons noirs venus d'Angleterre, puis géré par la Sierra Leone Company, qui donne à la ville le nom de Freetown en 1792 et y installe des Noirs libres venus de Nouvelle-Écosse, puis des Marrons de la Jamaïque en 1800."
       },
       {
-        "name": "Colonie britannique de Sierra Leone",
+        "name": "Colonie et protectorat de la Sierra Leone",
         "period": "1808 - 1961",
         "entryType": "colonial",
         "timeRange": {
@@ -415,80 +449,76 @@
           "precision": "year"
         },
         "dominantPeoples": [
-          "Britanniques",
           "Krio",
           "Temne",
           "Mende",
           "Limba",
           "autres peuples"
         ],
-        "politicalCenters": ["Freetown (capitale coloniale)"],
-        "historicalRole": "Colonisation britannique, expansion coloniale, développement de l'économie de plantation (palmier à huile, café, cacao), exploitation minière (diamants, or), mouvements nationalistes (XXe siècle)."
+        "politicalCenters": ["Freetown"],
+        "historicalRole": "Colonie de la Couronne britannique à partir du 1er janvier 1808, où sont installés des Africains libérés des navires négriers ; protectorat sur l'intérieur du pays à partir de 1896 ; les deux territoires forment ensemble la Sierra Leone indépendante le 27 avril 1961."
       }
     ],
     "majorPeoples": [
       {
         "name": "Temne",
         "selfAppellation": "Temne",
-        "exonyms": ["Temne (terme utilisé par les Européens)"],
+        "exonyms": ["Timinis (J. J. Crooks, 1903)"],
         "peopleId": "PPL_TEMNE",
         "mainRegion": "Nord et centre de la Sierra Leone",
-        "languages": ["Temne (tem", "ISO 639-3)", "anglais", "krio"],
+        "languages": ["temne (tem)", "krio", "anglais"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "\"Temne\" est l'auto-appellation. Pas de terme péjoratif connu. Groupe atlantique majoritaire, originaire de la région de la Sierra Leone."
+        "appellationRemarks": "J. J. Crooks écrit Timinis en 1903 ; le catalogue Glottolog nomme la langue Timne. Selon le recensement de 2015, les Temne vivent surtout dans le nord du pays."
       },
       {
         "name": "Mende",
         "selfAppellation": "Mende",
-        "exonyms": ["Mende (terme utilisé par les Européens)"],
+        "exonyms": ["Mendis (J. J. Crooks, 1903)"],
         "peopleId": "PPL_MENDE",
         "mainRegion": "Sud-Est de la Sierra Leone",
-        "languages": ["Mende (men", "ISO 639-3)", "anglais", "krio"],
+        "languages": ["mende (men)", "krio", "anglais"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Mende\" est l'auto-appellation. Pas de terme péjoratif connu. Groupe mandé majoritaire, lié aux peuplements forestiers guinéens."
+        "appellationRemarks": "J. J. Crooks écrit Mendis en 1903. Selon le recensement de 2015, les Mende sont le groupe le plus nombreux et vivent surtout dans le sud et l'est."
       },
       {
         "name": "Limba",
         "selfAppellation": "Limba",
-        "exonyms": ["Limba (terme utilisé par les Européens)"],
+        "exonyms": ["Limbas (J. J. Crooks, 1903)"],
         "peopleId": "PPL_LIMBA",
         "mainRegion": "Nord de la Sierra Leone",
-        "languages": ["Limba (lia", "ISO 639-3)", "anglais", "krio", "temne"],
+        "languages": ["limba (lia)", "krio", "anglais"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "\"Limba\" est l'auto-appellation. Pas de terme péjoratif connu. Probablement l'un des peuples autochtones les plus anciens de Sierra Leone."
+        "appellationRemarks": "Selon le recensement de 2015, les Limba sont le troisième groupe du pays et vivent surtout dans le nord."
       },
       {
         "name": "Krio",
         "selfAppellation": "Krio",
-        "exonyms": [
-          "Krio (terme utilisé pour les créoles de Sierra Leone)",
-          "\"Creole\" (terme générique)"
-        ],
+        "exonyms": ["Creole"],
         "peopleId": "PPL_KRIO",
         "mainRegion": "Freetown et zones côtières",
-        "languages": ["Krio (kri", "ISO 639-3)", "anglais"],
+        "languages": ["krio (kri)", "anglais"],
         "languageFamily": "FLG_CREOLE",
-        "appellationRemarks": "\"Krio\" est l'auto-appellation. Pas de terme péjoratif connu. Peuple créole formé à partir du contact entre les populations africaines libérées (Nova Scotians, Maroons de Jamaïque) et les colons britanniques à partir du XVIIIe siècle."
+        "appellationRemarks": "Le nom Krio viendrait de l'anglais creole, ou du yoruba Akiriyo, « ceux qui vont rendre visite après l'office », selon les hypothèses rapportées par Malcolm Awadajin Finney. Selon Magnus Huber, cité par Finney, leur langue s'est formée à Freetown chez les Africains libérés des navires négriers, au contact des colons arrivés à partir de 1787."
       },
       {
         "name": "Kuranko",
         "selfAppellation": "Kuranko",
-        "exonyms": ["Kuranko (terme utilisé par les Européens)"],
+        "exonyms": ["Koranko (recensement de 2015)"],
         "peopleId": "PPL_KURANKO",
         "mainRegion": "Nord de la Sierra Leone",
-        "languages": ["Kuranko (knk", "ISO 639-3)", "anglais", "krio"],
+        "languages": ["kuranko (knk)", "krio", "anglais"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Kuranko\" est l'auto-appellation. Pas de terme péjoratif connu. Groupe mandé, lié aux peuplements forestiers guinéens."
+        "appellationRemarks": "Le recensement de 2015 écrit Koranko ; J. J. Crooks parle en 1903 du pays kuranko."
       },
       {
         "name": "Yalunka",
         "selfAppellation": "Yalunka",
-        "exonyms": ["Yalunka (terme utilisé par les Européens)"],
+        "exonyms": ["Jalunka (J. J. Crooks, 1903)"],
         "peopleId": "PPL_YALUNKA",
         "mainRegion": "Nord de la Sierra Leone",
-        "languages": ["Yalunka (yal", "ISO 639-3)", "anglais", "krio"],
+        "languages": ["yalunka (yal)", "krio", "anglais"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Yalunka\" est l'auto-appellation. Pas de terme péjoratif connu. Groupe mandé, lié aux peuplements forestiers guinéens."
+        "appellationRemarks": "J. J. Crooks écrit Jalunka en 1903, dans le district de Koinadugu."
       },
       {
         "name": "Autres groupes",
@@ -497,7 +527,7 @@
         "peopleId": null,
         "mainRegion": "Toutes les régions de la Sierra Leone",
         "languages": ["Langues diverses", "anglais", "krio"],
-        "appellationRemarks": "Chaque groupe a sa propre auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le recensement de 2015 compte aussi les Kono, les Fullah (Peuls), les Susu, les Kissi, les Loko, les Madingo, les Sherbro, les Krim et les Vai."
       }
     ],
     "culture": {
@@ -532,19 +562,19 @@
           "isoCode": "yal"
         }
       ],
-      "culturalTraditions": "Traditions atlantiques (Temne, Limba) : masques Ragbenle, musiques polyphoniques, récoltes rituelles, sociétés initiatiques. Traditions mandé (Mende, Kuranko, Yalunka) : masques Sowei (Sande), musiques polyrythmiques, artisanat de la forêt, sociétés initiatiques (Poro, Sande/Bundu). Traditions créoles (Krio) : musique traditionnelle créole, danse traditionnelle, poésie orale, artisanat. Festivals traditionnels variés. Cérémonies de passage, rites d'initiation, fêtes traditionnelles. La culture sierra-léonaise est riche et préservée.",
-      "dominantReligions": "Islam (majoritaire, environ 60%), christianisme (environ 30%, protestantisme majoritaire), religions traditionnelles africaines (syncrétisme fréquent, environ 10%)",
-      "lifestyles": "Agriculture (riz, sorgho, palmier à huile, café, cacao, cultures vivrières), élevage (bovins, caprins, ovins), pêche (océan Atlantique, importante source de protéines), exploitation minière (diamants, or, bauxite, rutile), commerce et activités urbaines (zones urbaines, Freetown). Urbanisation importante. Économie basée sur l'exploitation minière (diamants, or), l'agriculture (palmier à huile, café, cacao), et les services. La Sierra Leone est l'un des pays les plus pauvres d'Afrique, avec un IDH faible et une économie dépendante des ressources naturelles.",
-      "socialOrganization": "Société multiethnique et multiculturelle. Structures familiales traditionnelles (patrilinéaires, matrilinéaires). Organisation communautaire (chefferies, communautés créoles). Structures étatiques modernes (république démocratique). Sociétés initiatiques (Poro, Sande/Bundu, Ragbenle). Système politique démocratique, mais instabilité politique et conflits récents (guerre civile 1991-2002).",
-      "regionalRelations": "Relations avec l'Afrique de l'Ouest (CEDEAO, Union du fleuve Mano), relations avec l'Europe (Union européenne, Royaume-Uni), relations avec les États-Unis. La Sierra Leone est membre de la CEDEAO et de l'Union africaine."
+      "culturalTraditions": "Le Poro, que J. J. Crooks écrit Purrah en 1903, est une société d'hommes dont les rites restent secrets ; il la décrit chez les Temne autour de Freetown et situe son foyer dans le pays sherbro. D'après Thomas Winterbottom, Crooks cite aussi une institution de femmes appelée Bondoo, ou Bundu. Ces descriptions viennent d'un auteur de l'époque coloniale, qui juge ces sociétés avec mépris. Le krio, créole à base anglaise, sert de langue commune dans tout le pays.",
+      "dominantReligions": "Selon le recensement de 2015, 77 % des habitants sont musulmans et 21,9 % chrétiens ; 0,1 % déclarent une religion traditionnelle et 0,3 % aucune religion.",
+      "lifestyles": "Selon le recensement de 2015, près de six actifs occupés sur dix travaillent dans l'agriculture ou la pêche. Le riz, cultivé sur les hauteurs et dans les bas-fonds, occupe plus de la moitié des surfaces cultivées ; le manioc, le café, le cacao et le palmier à huile sont les autres cultures principales. Le pays vit aussi des mines : diamants, titane, bauxite, or et rutile, selon Statistics Sierra Leone.",
+      "socialOrganization": "Le recensement de 2015 classe les Sierra-Léonais en 15 groupes ethniques ; aucun ne forme à lui seul la majorité. En 1896, l'administration coloniale découpe l'intérieur du pays en cinq districts en évitant de couper les territoires des chefs suprêmes, et partage la justice entre ces chefs et les commissaires de district, selon J. J. Crooks.",
+      "regionalRelations": "Selon Statistics Sierra Leone, la Sierra Leone est membre des Nations unies, de l'Union africaine, de la Communauté économique des États de l'Afrique de l'Ouest (CEDEAO), de l'Union du fleuve Mano, du Commonwealth, de la Banque africaine de développement et de l'Organisation de la coopération islamique."
     },
     "historicalFacts": {
-      "ancientPeriods": "Présence de peuples atlantiques (Temne, Limba) et mandé (Mende, Kuranko, Yalunka) dans la région. Développement de chefferies et de royaumes locaux.",
-      "middleAges": "Présence de peuples atlantiques (Temne, Limba) et mandé (Mende, Kuranko, Yalunka) dans la région. Développement de chefferies et de royaumes locaux. Contacts avec les commerçants européens (Portugais, Britanniques) à partir du XVe siècle.",
-      "precolonial": "Présence de peuples atlantiques (Temne, Limba) et mandé (Mende, Kuranko, Yalunka) dans la région. Développement de chefferies et de royaumes locaux. Contacts avec les commerçants européens (Portugais, Britanniques) à partir du XVe siècle. La région était connue sous le nom de \"Serra Lyoa\" (montagnes du lion) par les Portugais.",
-      "colonization": "1787-1808 : Colonie de Freetown (établissement pour esclaves libérés), formation du peuple Krio. 1808-1961 : Colonie britannique de Sierra Leone, expansion coloniale, développement de l'économie de plantation (palmier à huile, café, cacao), exploitation minière (diamants, or), mouvements nationalistes (XXe siècle).",
-      "independenceStruggle": "1950s-1961 : Mouvements nationalistes, SLPP (Sierra Leone People's Party), APC (All People's Congress), indépendance (27 avril 1961), proclamation de la République de Sierra Leone. Milton Margai devient premier Premier ministre.",
-      "postIndependence": "République de Sierra Leone (1961), présidence de Siaka Stevens (1968-1985, régime autoritaire, parti unique), présidence de Joseph Momoh (1985-1992), coup d'État (1992), guerre civile (1991-2002, conflit sanglant, diamants de sang, crimes de guerre), transition démocratique (2002), élections multipartites, présidence d'Ahmed Tejan Kabbah (1996-1997, 1998-2007), Ernest Bai Koroma (2007-2018), Julius Maada Bio (depuis 2018). Stabilité politique fragile, démocratie multipartite, reconstruction post-conflit, développement économique (exploitation minière, agriculture). La Sierra Leone est l'un des pays les plus pauvres d'Afrique, avec un IDH faible et une économie dépendante des ressources naturelles."
+      "ancientPeriods": null,
+      "middleAges": "Avant l'arrivée des Portugais dans les années 1460, des Manden, les Kono et les Vai, vivent déjà dans la zone forestière de l'actuelle Sierra Leone et du Libéria, selon Yves Person. Sur la côte, les Temne tiennent alors la région, depuis la hauteur de l'actuelle Conakry.",
+      "precolonial": "Des marins portugais longent cette côte dans les années 1460 et donnent à une montagne le nom de Serra Leoa. Au XVIIe siècle, Olfert Dapper décrit un royaume de Sierra-Liona, aussi appelé Bolmberre, et le royaume de Mitombo, qui donnait son nom à la rivière. En 1788, le roi Naimbanna, que J. J. Crooks appelle le chef de la Sierra Leone, confirme la cession de terres faite l'année précédente par le roi Tom aux colons britanniques.",
+      "colonization": "Le 14 mai 1787, des colons noirs venus d'Angleterre débarquent sur la péninsule, sur une terre cédée par le roi Tom. En 1792, la Sierra Leone Company y installe 1 131 Noirs libres venus de Nouvelle-Écosse, au Canada, et la ville reçoit le nom de Freetown ; 660 Marrons de la Jamaïque arrivent en 1800. La colonie passe à la Couronne britannique le 1er janvier 1808. Des Africains libérés des navires négriers sont ensuite installés dans des villages de la péninsule. Le 31 août 1896, la Grande-Bretagne proclame un protectorat sur l'intérieur du pays. En 1898, le refus de l'impôt sur les cases, mené par le chef Bai Bureh, déclenche un soulèvement.",
+      "independenceStruggle": "La Sierra Leone devient indépendante le 27 avril 1961 : la colonie et le protectorat forment alors un seul pays, sous le nom de Sierra Leone, selon la loi britannique sur l'indépendance. Les États-Unis la reconnaissent le même jour. Selon Statistics Sierra Leone, la vie politique est dominée par deux grands partis, le Sierra Leone People's Party (SLPP) et l'All People's Congress (APC).",
+      "postIndependence": "La Sierra Leone devient une république le 19 avril 1971, date que retient la loi britannique de 1972. En mars 1991, le Front révolutionnaire uni (RUF) lance depuis l'est du pays une guerre contre le gouvernement ; l'année suivante, l'armée renverse elle-même le gouvernement. Ahmed Tejan Kabbah gagne les élections de février 1996 ; un nouveau coup d'État, en mai 1997, unit l'armée et le RUF, et Kabbah ne revient au pouvoir qu'en mars 1998. Pendant la guerre, les rebelles achètent des armes avec l'argent des diamants. Début 2002, la mission des Nations unies a désarmé plus de 75 000 combattants, et le gouvernement déclare la guerre terminée. Le recensement prévu en 2014 est reporté à décembre 2015 à cause de l'épidémie d'Ebola."
     },
     "sources": [
       {
@@ -592,6 +622,104 @@
         "url": "https://www.unfpa.org/data/world-population/SL",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Sierra Leone 2015 Population and Housing Census: National Analytical Report",
+        "url": "https://www.statistics.sl/images/StatisticsSL/Documents/Census/2015/2015_census_national_analytical_report.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Statistics Sierra Leone. Rapport d'analyse du recensement de décembre 2015, publié par l'office national de la statistique en octobre 2017, lu le 3 novembre 2026. Page 2 : le recensement compte 7 092 113 habitants ; l'islam rassemble 77 % de la population. Page 8 : « Sixteen ethnic groups inhabit Sierra Leone » ; les Temne vivent surtout dans le nord, les Mende dans le sud-est ; le pays est membre de l'Union africaine, de la CEDEAO, de l'Union du fleuve Mano et du Commonwealth ; il vit des mines (diamants, titane, bauxite, or, rutile) ; le recensement, prévu en 2014, a été reporté à cause d'Ebola. Pages 90 et 91, tableaux 3.20 et 3.21 : sur 7 016 957 personnes classées en 15 groupes ethniques, Mende 32,2 %, Temne 31,6 %, Limba 8,4 %, Kono 5,2 %, Koranko 4,5 %, Krio 1,3 %, Yalunka 0,7 %. Pages 91 et 92 : l'anglais est la langue officielle ; le krio est la langue principale de 18,2 % des habitants, alors que 1,3 % seulement sont krio d'origine. Page 94 : 77 % de musulmans, 21,9 % de chrétiens ; tableau 3.25 : 0,1 % de religion traditionnelle, 0,3 % sans religion. Page 314 : riz, manioc, café, cacao et palmier à huile sont les cultures dominantes ; le riz couvre plus de la moitié des surfaces cultivées."
+      },
+      {
+        "title": "2021 Mid-Term Population and Housing Census: Final Preliminary Report",
+        "url": "https://www.statistics.sl/images/StatisticsSL/Documents/Census/MTPHC_Preliminary_Report/Final_Preliminary_Report_2021_MTPHC.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Statistics Sierra Leone. Rapport préliminaire du recensement de mi-parcours de 2021, premier recensement numérique du pays, publié en septembre 2022, lu le 3 novembre 2026. Page 11 : « The size of the population of Sierra Leone in 2021 is 7,548,702 ». Page 12 : 7 533 567 personnes vivent en ménage et 15 135 en institution."
+      },
+      {
+        "title": "Glottolog 5.3 — Krio (krio1253)",
+        "url": "https://glottolog.org/resource/languoid/id/krio1253",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue du catalogue Glottolog, lue le 3 novembre 2026. Le krio (code ISO kri) est classé parmi les créoles anglais d'Afrique de l'Ouest (West African Creole English)."
+      },
+      {
+        "title": "Glottolog 5.3 — Timne (timn1235)",
+        "url": "https://glottolog.org/resource/languoid/id/timn1235",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue du catalogue Glottolog, lue le 3 novembre 2026. Le temne, écrit Timne (code ISO tem), est classé dans la famille Atlantique-Congo, groupe mel du Nord."
+      },
+      {
+        "title": "Glottolog 5.3 — Mende (Sierra Leone) (mend1266)",
+        "url": "https://glottolog.org/resource/languoid/id/mend1266",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue du catalogue Glottolog, lue le 3 novembre 2026. Le mende (code ISO men) est classé dans la famille mandé, branche mandé du Sud-Ouest."
+      },
+      {
+        "title": "Glottolog 5.3 — West-Central Limba (west2450)",
+        "url": "https://glottolog.org/resource/languoid/id/west2450",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue du catalogue Glottolog, lue le 3 novembre 2026. Le limba du Centre-Ouest (code ISO lia) forme à lui seul un groupe limba dans la famille Atlantique-Congo."
+      },
+      {
+        "title": "Survey chapter: Krio",
+        "url": "https://apics-online.info/surveys/15",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Malcolm Awadajin Finney. Atlas of Pidgin and Creole Language Structures Online, sous la direction de Susanne Maria Michaelis, Philippe Maurer, Martin Haspelmath et Magnus Huber, lu le 3 novembre 2026. Le krio est un créole à base lexicale anglaise ; « over 4 million people probably use it, non-natively, as lingua franca ». Les premiers colons, les Black Poor, arrivent d'Angleterre en 1787 ; suivent les Nova Scotians, les Marrons de la Jamaïque, puis les Africains libérés des navires négriers. Selon Magnus Huber, ces derniers forment un nouveau créole ; selon Ian Hancock, un créole est né plus tôt sur la côte de Haute-Guinée. Le nom Krio viendrait de creole, ou du yoruba Akiriyo, « ceux qui vont rendre visite après l'office » (Fyle et Jones, 1980)."
+      },
+      {
+        "title": "A History of the Colony of Sierra Leone, Western Africa",
+        "url": "https://archive.org/details/in.ernet.dli.2015.506192",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "J. J. Crooks. Document de l'époque coloniale, écrit par un officier britannique : Dublin, Browne and Nolan, 1903, lu dans la réimpression numérisée, lu le 3 novembre 2026. Page 6 : Piedro de Cintra atteint la Sierra Leone en 1463 (1462 à la page suivante) ; la haute montagne couverte d'arbres est appelée Sierra Leona « on account of the tremendous roaring of the thunder about the summit of it ». Pages 30 et 31 : les colons débarquent le 14 mai 1787 sur une terre cédée par le roi Tom ; le roi Naimbanna, « the chief of Sierra Leone », confirme la cession le 22 août 1788. Pages 37 et 38 : en 1792, la première ville reçoit le nom de Freetown ; 1 131 Noirs libres venus de Nouvelle-Écosse débarquent au début de mars 1792. Page 66 : la Couronne reprend les possessions de la Sierra Leone Company le 1er janvier 1808. Pages 68 et 69 : l'auteur décrit avec mépris le Purrah (Poro) chez les Temne et, d'après Winterbottom, une institution de femmes appelée Bondoo. Page 77 : Leicester, premier village de la montagne, peuplé d'Africains libérés. Page 240 : traités signés en décembre 1875 par les chefs sherbro et mende. Pages 325 et 326 : protectorat proclamé le 31 août 1896 ; cinq districts, où vivent notamment Timinis, Limbas, Mendis et Jalunka. Page 328 : le refus de l'impôt sur les cases par le chef Bai Bureh déclenche un soulèvement en 1898. Annexe E : arrivée de 660 Marrons en 1800."
+      },
+      {
+        "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+        "url": "https://archive.org/details/gri_33125009359999",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Olfert Dapper. Amsterdam, Jacob van Meurs, 1668, lu dans l'exemplaire numérisé le 3 novembre 2026. Chapitre sur la montagne et le royaume de Serre-Lions : « Sierra » serait en espagnol une montagne et « Liona » une lionne ; l'auteur explique le nom par le grondement des vagues dans les creux d'un rocher, semblable au rugissement d'une lionne, et par les nuages qui couvrent les sommets."
+      },
+      {
+        "title": "Description de l'Afrique",
+        "url": "https://archive.org/details/bub_gb_lVFFVLhxVsEC",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Olfert Dapper. Traduction française, Amsterdam, Wolfgang, Waesberge, Boom et van Someren, 1686, lue dans l'exemplaire numérisé le 3 novembre 2026. « Quoique ce mot Espagnol ne signifie proprement que montagne de la Lionne, l'origine de ce nom est que les flots donnant sur un des écueils qui est sur cette côte, font un bruit qui s'entend de fort loin, et qui ressemble fort au rugissement d'une Lionne. » L'auteur ajoute les tonnerres des sommets, toujours couverts de nuées. Bolmberre serait un mot du pays qui désigne une terre basse et fertile. Le chapitre nomme aussi le royaume de Mitombo, qui donnait son nom à la rivière, appelée depuis rivière de Sierra Leone."
+      },
+      {
+        "title": "Sierra Leone Independence Act 1961",
+        "url": "https://www.legislation.gov.uk/ukpga/Eliz2/9-10/16/enacted",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte de la loi, lu sur le site officiel de la législation britannique le 3 novembre 2026. Section 1(1) : le 27 avril 1961, la colonie et le protectorat de la Sierra Leone forment ensemble un dominion « under the name of Sierra Leone »."
+      },
+      {
+        "title": "Sierra Leone Republic Act 1972",
+        "url": "https://www.legislation.gov.uk/ukpga/1972/1/enacted",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Parlement du Royaume-Uni. Texte de la loi, lu sur le site officiel de la législation britannique le 3 novembre 2026. La loi règle le droit britannique applicable à la Sierra Leone devenue une république au sein du Commonwealth ; elle prend effet au 19 avril 1971, date à laquelle la Sierra Leone est devenue une république."
+      },
+      {
+        "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Sierra Leone",
+        "url": "https://history.state.gov/countries/sierra-leone",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Office of the Historian, Département d'État des États-Unis, lu le 3 novembre 2026. Les États-Unis reconnaissent la Sierra Leone à son indépendance, le 27 avril 1961 ; ils ont soutenu les efforts pour mettre fin à la longue guerre civile et au commerce illicite des diamants qui la finançait."
+      },
+      {
+        "title": "UNAMSIL: United Nations Mission in Sierra Leone, Background",
+        "url": "https://peacekeeping.un.org/sites/default/files/past/unamsil/background.html",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Page d'archive de la mission des Nations unies en Sierra Leone, lue le 3 novembre 2026. Le conflit commence en mars 1991, quand le Front révolutionnaire uni (RUF) lance une guerre depuis l'est du pays ; l'armée renverse le gouvernement l'année suivante. Ahmed Tejan Kabbah gagne les élections de février 1996 ; un coup d'État, en mai 1997, unit l'armée et le RUF ; Kabbah revient au pouvoir le 10 mars 1998. Les rebelles achètent des armes avec l'argent des diamants. Début 2002, plus de 75 000 combattants sont désarmés et le gouvernement déclare la guerre terminée."
       }
     ],
     "demographics": {
@@ -600,58 +728,72 @@
       "source": "UNFPA – World Population Dashboard",
       "peoples": [
         {
-          "name": "Temne",
-          "percentageInCountry": 30,
-          "peopleId": "PPL_TEMNE",
-          "region": "Nord et centre de la Sierra Leone",
-          "languageFamily": "FLG_NIGERCONGO"
+          "name": "Mende",
+          "percentageInCountry": 32.2,
+          "peopleId": "PPL_MENDE",
+          "region": "Sud et est de la Sierra Leone",
+          "languageFamily": "FLG_MANDE",
+          "population": 2258232,
+          "referenceYear": 2015
         },
         {
-          "name": "Mende",
-          "percentageInCountry": 24,
-          "peopleId": "PPL_MENDE",
-          "region": "Sud-Est de la Sierra Leone",
-          "languageFamily": "FLG_MANDE"
+          "name": "Temne",
+          "percentageInCountry": 31.6,
+          "peopleId": "PPL_TEMNE",
+          "region": "Nord de la Sierra Leone",
+          "languageFamily": "FLG_NIGERCONGO",
+          "population": 2220211,
+          "referenceYear": 2015
         },
         {
           "name": "Limba",
-          "population": 540000,
-          "percentageInCountry": 7.2,
+          "population": 592190,
+          "percentageInCountry": 8.4,
           "peopleId": "PPL_LIMBA",
           "region": "Nord de la Sierra Leone",
-          "languageFamily": "FLG_NIGERCONGO"
-        },
-        {
-          "name": "Krio",
-          "population": 600000,
-          "percentageInCountry": 8,
-          "peopleId": "PPL_KRIO",
-          "region": "Freetown et zones côtières",
-          "languageFamily": "FLG_CREOLE"
+          "languageFamily": "FLG_NIGERCONGO",
+          "referenceYear": 2015
         },
         {
           "name": "Kuranko",
-          "population": 450000,
-          "percentageInCountry": 6,
+          "population": 313384,
+          "percentageInCountry": 4.5,
           "peopleId": "PPL_KURANKO",
           "region": "Nord de la Sierra Leone",
-          "languageFamily": "FLG_MANDE"
+          "languageFamily": "FLG_MANDE",
+          "referenceYear": 2015
+        },
+        {
+          "name": "Krio",
+          "population": 94593,
+          "percentageInCountry": 1.3,
+          "peopleId": "PPL_KRIO",
+          "region": "Péninsule de Freetown",
+          "languageFamily": "FLG_CREOLE",
+          "referenceYear": 2015
         },
         {
           "name": "Yalunka",
-          "population": 300000,
-          "percentageInCountry": 4,
+          "population": 51781,
+          "percentageInCountry": 0.7,
           "peopleId": "PPL_YALUNKA",
           "region": "Nord de la Sierra Leone",
-          "languageFamily": "FLG_MANDE"
+          "languageFamily": "FLG_MANDE",
+          "referenceYear": 2015
         },
         {
           "name": "Autres groupes",
-          "percentageInCountry": 20.8,
+          "percentageInCountry": 21.3,
           "peopleId": null,
-          "region": "Toutes les régions de la Sierra Leone"
+          "region": "Toutes les régions de la Sierra Leone",
+          "referenceYear": 2015,
+          "population": 1486566
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "La Sierra Leone est un pays d'Afrique de l'Ouest, sur l'Atlantique, dont la capitale est Freetown. Son nom vient du portugais Serra Leoa, la montagne de la Lionne.",
+      "followUp": "Pourquoi des marins portugais ont-ils appelé cette montagne la Lionne ?"
     }
   }
 }
