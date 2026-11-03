@@ -250,7 +250,7 @@
     "gaps": [
       {
         "field": "content.speakers.byCountry",
-        "reason": "Nous n'avons pas trouvé de chiffre officiel pour la Côte d'Ivoire ni pour le Mali. Les résultats publiés du recensement ivoirien de 2021 ne donnent pas de tableau des langues. Au Mali, le dioula est le plus souvent compté avec le bambara. Les enquêtes de Yaya Konaté auprès d'élèves et d'étudiants d'Abidjan donnent des pourcentages, mais pas un nombre de locuteurs pour le pays."
+        "reason": "Nous n'avons pas trouvé de chiffre officiel pour la Côte d'Ivoire ni pour le Mali. Les résultats publiés du recensement ivoirien de 2021 ne donnent pas de tableau des langues. Au Mali, le dioula est le plus souvent compté avec le bambara. Les enquêtes de Yaya Konaté auprès d'élèves et d'étudiants ivoiriens donnent des pourcentages, mais pas un nombre de locuteurs pour le pays."
       },
       {
         "field": "nameHistory.names[0].pronunciation",
