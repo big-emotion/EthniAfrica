@@ -7,96 +7,114 @@
   "content": {
     "appellations": {
       "mainName": "Bono",
-      "selfAppellation": "Abono woo",
-      "exonyms": ["Brong", "Abron", "Akan piesie (premiers Akan)"],
-      "originOfExonyms": "Le groupe se nomme lui-même Bono. Les administrateurs coloniaux britanniques employaient la forme anglaise Brong, reprise dans l'ancien nom de la région Brong-Ahafo. Celle-ci a depuis été divisée en Bono, Bono East et Ahafo. En Côte d'Ivoire, Abron désigne les Bono installés dans l'est du pays. En bono-twi, Abono woo signifierait pionniers ou premier-né de la terre.",
-      "whyProblematic": "Le terme Brong recouvre a la fois un groupe ethnique specifique (les Bono) et une notion geographico-politique plus large. L'administration coloniale britannique a cree en 1959 la region Brong-Ahafo, amalgamant des peuples de differentes origines. Les Bono eux-memes preferent le terme Bono ou Bonofoɔ.",
-      "contemporaryUsage": "Le nom Bono est officialise au Ghana depuis la creation de la region Bono en 2018 (anciennement partie de Brong-Ahafo). Les Bono se designent eux-memes comme Bonofoɔ. Le terme Brong reste present dans les anciens textes historiques.",
+      "selfAppellation": "Bono",
+      "exonyms": ["Brong", "Abron", "Gyaman", "Boghãbo"],
+      "spellingAliases": [
+        "Bron",
+        "Brõ",
+        "Abrõ",
+        "Abonõ",
+        "Booroom",
+        "Gyaaman",
+        "Gaman",
+        "Jaman"
+      ],
+      "originOfExonyms": "Selon Nana Kwakye Ameyaw, chef suprême de Techiman, le nom Brong vient de Bono, et l'historien Kwame Arhin lui donne raison. Arhin pense que ce nom a pu être étendu par leurs voisins, les Gonja au nord et les Asante au sud, à tous les peuples installés près de l'ancien royaume de Bono-Manso. En Côte d'Ivoire, Maurice Delafosse, administrateur colonial, écrit en 1904 que la région de Bondoukou a pris le nom de ses conquérants, « Borõ, Brõ, Abrõ ou Abonõ », d'où vient la forme Abron. Toujours selon les traditions qu'il recueille à Bondoukou, les Asante l'auraient appelée Gyamã, pour la distinguer du pays des Bron de l'est. Il note enfin que les Koulango appellent les Abron Boghãbo.",
+      "whyProblematic": "Le nom Brong ne désigne pas toujours le même groupe. À Techiman, seul celui qui vient de Techiman est un « vrai Brong », selon son chef, Nana Kwakye Ameyaw. À partir de la fin du XIXe siècle, le nom devient au contraire un mot de protestation contre l'autorité du roi asante, selon Kwame Arhin : il couvre alors des peuples qui ne parlent pas une langue akan, comme les Nafana et les Koulango, qui refuseraient d'être appelés Brong pour des raisons de langue ou de culture. Le nom Gyaman pose une difficulté proche : il désigne un royaume où les Abron étaient une petite minorité. Selon un recensement colonial mené entre 1901 et 1904 et cité par Emmanuel Terray, la partie française du royaume comptait 11 500 Abron sur 49 000 habitants.",
+      "contemporaryUsage": "Au Ghana, les Bono se disent Bono ou Brong ; le nom Brong reste celui de la région Brong-Ahafo, créée en 1959. Dans le recensement de 2021, cette ancienne région apparaît divisée en trois régions : Bono, Bono East et Ahafo. En Côte d'Ivoire, le nom usuel est Abron. Le catalogue des langues Glottolog et la norme ISO 639-3 appellent la langue Abron, sous le code abr.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null,
       "linguisticFamily": "FLG_BENOUECONGO",
       "ethnoLinguisticGroup": "Akan",
-      "historicalRegion": "Zone de transition foret-savane du centre du Ghana, bassin du Tain et du Volta Noir",
+      "historicalRegion": "Zone de passage entre la forêt et la savane, au centre du Ghana, entre la Volta et la Comoé",
       "currentCountries": ["GHA", "CIV"]
     },
     "ethnicities": [
       "Bono",
       "Brong",
       "Abron",
-      "Techiman (Brong du Ghana, successeurs du royaume de Bono-Manso, capital spirituelle a Techiman)",
-      "Dormaa (Brong du Ghana occidental, Dormaahene)",
-      "Wenchi (Brong du Ghana central)",
-      "Berekum (Brong du Ghana)",
-      "Nkoranza (Brong du Ghana)",
-      "Drobo (Brong du Ghana)",
-      "Gyaman / Abron de Cote d'Ivoire (fondes par la branche partie vers 1690 fonder le royaume de Gyaman, actuellement dans l'Indenie et le Zanzan en CIV)",
-      "Sept ou huit abusua (clans matrilineaires), chacun avec ses propres totems, tabous et recits d'origine"
+      "Techiman-Bono (État de Techiman, successeur de Bono-Manso)",
+      "Nkoranza",
+      "Wenchi",
+      "Dormaa",
+      "Berekum",
+      "Drobo",
+      "Atebubu",
+      "Abron du Gyaman (région de Bondoukou en Côte d'Ivoire, et Sampa au Ghana)",
+      "Doma (région de Wam, au Ghana)"
     ],
     "origins": {
-      "ancientOrigins": "Les Bono constituent l'un des premiers foyers de developpement de la civilisation akan. Leur origine est tracee a une grotte sacree appelee Amowi, situee pres de la ville moderne de Techiman, sous la direction d'Asaman, premier chef. Le groupe fonda le premier etablissement connu sous le nom de Yefiri (nous sortons). Les traditions orales insistent sur l'autochthonie et le developpement indigene dans la zone foret-savane, rejetant les theories coloniales d'origine saharienne, egyptienne ou nord-africaine. Les preuves archeologiques attestent d'une presence longue duree, d'une activite de fonte du fer et d'un developpement culturel datant d'au moins 300 de notre ere sur les sites d'Amowi, Bono Manso et Begho.",
-      "formationPeriod": "Developpement culturel dari au moins 300 CE. Bono Manso et Begho emergent comme sites majeurs a partir du XIIe siecle. Begho connait son apogee entre le XIIe et le XVIIIe siecle. En 1471, lorsque les Portugais visitent la cote du Ghana, Bono Manso et Begho sont deja des villes importantes d'Afrique de l'Ouest.",
+      "ancientOrigins": "Selon la tradition de Techiman, les ancêtres des Bono sont sortis d'une grotte appelée Amowi, près de Pinihi, dans la région de Nkoranza, conduits par leur premier roi, Asaman. L'anthropologue Dennis Warren a entendu cette tradition à Techiman entre 1969 et 1971 : elle présente les Bono comme les premiers habitants du pays. Dans les années 1950, Eva Meyerowitz, une chercheuse de l'époque coloniale, a rapporté au contraire une origine saharienne et a cherché à relier les Bono à Tombouctou, à Carthage et à l'Égypte ancienne, selon Warren. Kwame Arhin juge sa chronologie inexacte.",
+      "formationPeriod": "Le royaume de Bono apparaît au milieu du XVe siècle, selon l'historien Adu Boahen. Dennis Warren cite Adu Boahen et Ivor Wilks, qui placent sa fondation dans la première moitié du XVe siècle, et Eva Meyerowitz, qui la plaçait en 1295. L'archéologue Kwaku Effah-Gyamfi pense que l'État était bien établi au début du XVe siècle, sinon plus tôt. Le royaume est détruit par les Asante en 1722-1723.",
       "migrationRoutes": [
-        "Emergence depuis la grotte d'Amowi (pres de Techiman actuel)",
-        "Etablissement initial a Yefiri (nous sortons)",
-        "Fondation de Bono Manso comme capital politique et rituel",
-        "Creation du centre commercial de Begho au carrefour des routes transsahariennes",
-        "Populations autochtones de la zone foret-savane de l'actuel Ghana central — pas de migration fondatrice externe documentee",
-        "Branche Abron : migration vers la Cote d'Ivoire vers 1690 sous la conduite de Tan Date pour fonder le royaume de Gyaman",
-        "Akwamu (Gold Coast, pres de la riviere Volta) -> Kumasi (refuge temporaire chez les Ashanti) -> region de Doma/Wam (Ghana) -> Bondoukou (Cote d'Ivoire actuelle, vers 1680)"
+        "Selon la tradition de Techiman : sortie de la grotte d'Amowi près de Pinihi, puis installation à Yefri, puis à Bono-Manso.",
+        "Après la défaite de 1722-1723 face aux Asante, la capitale passe de Bono-Manso à Techiman.",
+        "Vers 1877, après une nouvelle défaite, les gens de Techiman s'exilent une vingtaine d'années au Gyaman, autour de Bondoukou, puis reviennent en 1896.",
+        "Les Abron du Gyaman descendent de migrants akan réunis autour d'un groupe venu d'Akwamu, au nord d'Accra ; ils arrivent dans la région de Bondoukou à partir de 1680 environ, selon Emmanuel Terray.",
+        "Selon les traditions recueillies à Bondoukou par Maurice Delafosse, les Abron passent par le pays des Kwahu, par Nzùta sur le haut Tano, puis par Wam, où les Doma restent, avant de gagner Yakassé et Bondoukou."
       ],
       "historicalSettlementZones": [
-        "Techiman et ses environs (Ghana central)",
-        "Bono Manso (site archeologique du berceau akan)",
-        "Begho (ancienne cite commerciale, XVIIe-XVIIIe siecles)",
-        "Region Bono du Ghana actuel: Sunyani, Techiman, Dormaa",
-        "Est de la Cote d'Ivoire (communautes abron)",
-        "Nord-est de la Cote d'Ivoire : Bondoukou et region de l'Indenie-Djuablin (Gyaman/Abron)",
-        "Corridor entre la riviere Komoe et la Volta Noire"
+        "Bono-Manso et Techiman, au centre du Ghana",
+        "Nkoranza, Wenchi, Dormaa, Berekum et Atebubu, dans l'ancienne région Brong-Ahafo",
+        "Le quartier brong de l'ancienne ville marchande de Begho, près de l'actuel village de Hani",
+        "La région de Bondoukou, au nord-est de la Côte d'Ivoire, entre la Comoé et la Volta noire (royaume du Gyaman)",
+        "Sampa, principale ville abron du Ghana"
       ],
-      "unificationsOrDivisions": "Organisation initiale en confederation de clans matrilineaires autour de centres rituels. Apres la destruction de Bono Manso par les forces asante en 1722-1723, le capital se deplace a Techiman. Sous l'epoque coloniale britannique, les Etats bono (Techiman, Dormaa, Wenchi) sont reconnus comme paramountcies. En 1952, les chefs bono (Techiman, Dormaa, Drobo) se retirent du Conseil de la Confederation asante pour protester contre la domination asante.",
-      "externalInfluences": "Contacts avec les marchands mande et haoussa via Begho (routes transsahariennes). Influences islamiques via le quartier des marchands musulmans (Kramo) a Begho. Commerce avec les Portugais sur la cote des le XVe siecle. Invasion asante en 1722-1723 (destruction de Bono Manso) et en 1877 (destruction de Techiman). Creation de la region Brong-Ahafo par les Britanniques en 1959, separant les Bono de la region Ashanti.",
-      "majorHistoricalEvents": "Au moins 300 CE: Etablissements d'Amowi et Bono Manso. XIIe siecle: Essor de Begho comme cite commerciale. 1471: Visite des Portugais sur la cote du Ghana. 1722-1723: Destruction de Bono Manso par Opoku Ware I (Asante). 1877: Deuxieme invasion asante; destruction de Techiman. 1935-1938: La plupart des Etats bono rejoignent le Conseil de la Confederation asante. 1952: Retrait des chefs bono du Conseil asante. 1959: Creation de la region Brong-Ahafo, separation administrative de la region Ashanti."
+      "unificationsOrDivisions": "À Bono-Manso, le roi installe les familles sous l'autorité d'anciens dans différentes parties du territoire, ce qui étend le royaume, selon Nana Kwakye Ameyaw. Le royaume abron du Gyaman est une sorte de confédération : il compte cinq provinces, et le roi doit décider avec ses chefs de la guerre et des alliances, selon Emmanuel Terray. Au XXe siècle, les États bono rejoignent entre 1935 et 1938 le conseil de la Confédération ashanti, rétabli sous l'autorité britannique. Techiman, Dormaa, Drobo et d'autres États le quittent en 1952, selon Kwame Arhin. Cette séparation aboutit en 1959 à la région Brong-Ahafo, aujourd'hui divisée en trois régions : Bono, Bono East et Ahafo.",
+      "externalInfluences": "Bono-Manso se trouve entre la forêt et la savane, là où se faisait une grande partie du commerce entre les marchands mandé du Soudan et les États de la côte, selon Dennis Warren. La ville de Begho comptait, selon les traditions de Hani, un quartier brong, un quartier de marchands musulmans et un quartier de forgerons numu, rapporte l'archéologue Merrick Posnansky. Au Gyaman, les marabouts dioula prient pour le roi et lui fournissent des amulettes, selon Emmanuel Terray. Les Asante dominent Bono à partir de 1722-1723 et le Gyaman de 1740 à 1875 environ ; à la fin de 1897, le Gyaman est partagé entre les Français à l'ouest et les Britanniques à l'est.",
+      "majorHistoricalEvents": "Milieu du XVe siècle : apparition du royaume de Bono, selon Adu Boahen. Vers 1690 : fondation du royaume abron du Gyaman par Tan Date, selon Emmanuel Terray. 1722-1723 : le roi asante Opoku Ware détruit Bono-Manso ; Techiman devient la capitale. 1740 : le Gyaman passe sous la domination asante ; Maurice Delafosse date cette conquête de 1745-1746. 1818 : révolte du Gyaman contre les Asante. 1875 : le Gyaman retrouve son indépendance. Vers 1877 : nouvelle guerre entre Techiman et les Asante, et exil de Techiman au Gyaman jusqu'en 1896. 1895 : les troupes de Samori Touré envahissent le Gyaman. 1897 : le Gyaman est partagé entre la France et la Grande-Bretagne. 1935-1938 : les États bono entrent dans la Confédération ashanti. 1952 : plusieurs États bono la quittent. 1959 : création de la région Brong-Ahafo."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Monarchie matrilineaire: la reine mere (ɔhemaa) nomme le roi (ɔhene) et garantit la maintenance de la lignee royale (abusua). Le roi et la reine mere sont les chefs spirituels et administratifs. Le systeme repose sur la veneration des tabourets ancestraux, les libations et les maisons rituelles pour la legitimite de l'Etat. Apres la conquete asante, relocalisation du capital a Techiman, preservation de la chefferie, de la succession matrilineaire et des pratiques rituelles.",
-      "clanOrganization": "Sept ou huit clans matrilineaires (abusua), chacun avec des totems, des tabous et des recits d'origine. Les premiers abusua etablirent des etablissements autonomes autour de centres rituels. Le systeme abusua (clan matrilineaire) et ntoro (heritage spirituel paternel) sont les elements fondamentaux de l'organisation akan, consideres comme originaires des Bono.",
-      "ageClassSystems": null,
-      "roleOfLineages": "Les clans matrilineaires structurent la selection des dirigeants, la maintenance des sanctuaires et les obligations sociales. Les abusua fondateurs assignent des roles specifiques: pretres, guerriers, administrateurs. Le ntoro (heritage spirituel transmis par le pere) complete le systeme d'organisation sociale.",
-      "religiousAuthority": "Veneration des tabourets ancestraux, libations et maisons de sanctuaires comme fondements de la legitimite de l'Etat. Sites comme Amowi, Bono Manso et Begho sont consideres comme des points d'origine sacree. L'islam est present depuis le contact avec les marchands mande-musulmans via Begho."
+      "traditionalPoliticalSystem": "À Techiman, le chef suprême, appelé Omanhene ou Techimanhene, siège avec un conseil de vingt et un chefs. La reine mère, l'ahemmaa, détient en réalité le pouvoir le plus fort : elle a un droit de veto et le dernier mot dans le choix d'un nouveau chef suprême, selon Dennis Warren. Dans le royaume abron du Gyaman, le roi, le Gyamanhene, gouverne directement son domaine, tandis que les chefs de province sont presque aussi puissants que lui chez eux, selon Emmanuel Terray.",
+      "clanOrganization": "Chez les Bono, la filiation par la mère, l'abusua, règle l'héritage des biens, la succession aux tabourets des chefs et le mariage, selon Dennis Warren. Il note que le système des ntoro, transmis par le père, est moins net chez les Bono que chez les Asante. À Techiman, le clan royal est celui des Ayokoo ; on y trouve aussi les Aduana, les Bretuo et les Asakyiri, selon Nana Kwakye Ameyaw, qui ne sait pas si ces clans remontent aux premiers temps du royaume.",
+      "ageClassSystems": "Les sources consultées ne décrivent pas de classes d'âge chez les Bono. Dennis Warren, qui a enquêté à Techiman de 1969 à 1971, écrit qu'il n'existe chez eux ni cérémonie de puberté, ni initiation, ni école de brousse pour les garçons. Les filles peuvent passer par le Bragoro, une cérémonie qui les déclarait en âge de se marier. Les textes de Maurice Delafosse et d'Emmanuel Terray sur les Abron ne parlent pas non plus de classes d'âge.",
+      "roleOfLineages": "Dans chaque famille, l'abusua panin, le plus âgé de la lignée maternelle, a autorité sur ses membres, selon Dennis Warren. À Techiman, des lignées venues d'ailleurs ont été intégrées par un mariage entre le chef suprême et la reine mère du groupe réfugié. Au Gyaman, chaque charge de la cour, comme celle de porte-parole ou de chef des serviteurs du roi, appartient à une lignée particulière, souvent transmise par le père, selon Emmanuel Terray.",
+      "religiousAuthority": "Les prêtres des divinités Tano tiennent une grande place chez les Bono. Le plus haut sanctuaire Tano des Akan, Taa Kora, se trouve à Tanoboase, et la divinité principale de Techiman est Taa Kese, ou Taa Mensah, selon Dennis Warren. Pour les Brong, la religion passe d'abord par les divinités de l'État et leurs prêtres, alors que les Asante honorent surtout leurs ancêtres, selon Nana Kwakye Ameyaw cité par Kwame Arhin. Au Gyaman, les rois consultent les prêtres de Tano avant toute entreprise importante et s'appuient aussi sur les prières des marabouts dioula, selon Emmanuel Terray."
     },
     "languages": {
-      "mainLanguage": "Bono Twi (Abron)",
+      "mainLanguage": "Abron, ou bono-twi (abr)",
       "isoCodes": ["abr"],
       "dialects": [
-        "Bono Twi",
-        "Abron (Cote d'Ivoire)",
-        "Brong",
-        "Le bono est mutuellement intelligible avec les autres dialectes Akan (Asante Twi, Fante) mais en constitue une variete distincte"
+        "Bono-twi de Nkoranza, le plus proche de l'asante",
+        "Bono-twi de Dormaa et Berekum",
+        "Bono-twi de Techiman et Wenchi",
+        "Abron du Gyaman, en Côte d'Ivoire"
       ],
-      "vehicularRole": "Le bono twi est parle par environ 1,2 million de personnes au Ghana, principalement dans les regions Bono, Bono East et Ahafo, et par plus de 300 000 locuteurs dans l'est de la Cote d'Ivoire. C'est un dialecte du continuum akan. La Bible Society du Ghana a entrepris la traduction de la Bible en bono. L'anglais est la langue officielle de l'education et de l'administration."
+      "vehicularRole": "La linguiste Florence Dolphyne présente le brong, ou bono, comme un ensemble de parlers akan compris par les autres Akan, mais si variés qu'on se comprend parfois mal d'un village à l'autre. Elle compte environ 320 000 locuteurs au recensement du Ghana de 1960. Le prestige de l'asante poussait les Brong instruits à parler asante entre eux, une tendance qui a reculé depuis la création de la région Brong-Ahafo. Au Gyaman, au début du XXe siècle, la langue des Abron était comprise par une partie des Koulango et des Dioula, et par la plupart des Nafana, selon Maurice Delafosse. Le catalogue Glottolog classe l'abron dans le groupe akan des langues tano centrales."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q927326",
+      "glottocode": "abro1238",
+      "iso639_3": "abr"
     },
     "culture": {
-      "majorRites": "Festivals royaux associes aux tabourets ancestraux. Rites de libation et de veneration des ancetres dans les maisons de sanctuaires. Funerailles avec ceremonies de cour royale et musique. Ceremonies d'investiture royale. Festival de l'igname (Yam festival) celebre la recolte et renforce la cohesion communautaire.",
-      "symbols": "Regalia royaux: parapluies ceremonials, tabourets, insignes en or, trompes en ivoire, chasse-mouches, epees en or. Symboles adinkra: ideogrammes philosophiques originaires des Bono (la tradition orale attribue la creation des adinkra au roi des Jaman, en Cote d'Ivoire actuelle). Poids a or (goldweights) et balances. Poterie et metallurgie locales.",
-      "artsAndMusic": "Les Bono tissent notamment le gagawuga, le kyenkyen et le kente, dont le tissage serait né chez les Bono-Akan. Le Kete, l'Adowa et les tambours parlants fontomfrom accompagnent les festivals, les funérailles et les cérémonies royales. Les artisans fabriquent aussi des poteries, des objets en métal, des balances et des poids pour l'or. Les fontomfrom et la seperewa, une harpe-luth, sont présentés comme des instruments bono-akan adoptés par les Ashanti. Les proverbes akan sont appelés mmebusem. Dès 1879, le linguiste missionnaire Johann Gottlieb Christaller en a réuni plus de 3 600 en twi et en fante. L'usage des proverbes est partagé par les groupes de langue akan.",
-      "spiritualities": "Religion akan traditionnelle: veneration d'Amowi comme lieu d'origine sacre, des ancetres (nsamanfo), libations regulieres. Expansion de l'islam depuis le contact avec les marchands mande (quartier Kramo a Begho). Christianisme present depuis la periode coloniale. Syncretsime entre traditions ancestrales akan et pratiques des religions monotheistes."
+      "majorRites": "À Techiman, deux fêtes publiques rythment l'année, selon Dennis Warren. L'Apoo, en mars, dure onze jours et serait née à Manso, l'ancienne capitale : chacun peut alors critiquer en chansons les fautes de tous, chefs compris, pour ramener la paix dans l'État. La fête de l'igname, en octobre, remercie Dieu, Onyame, pour la récolte. Selon un récit de Techiman, elle rappelle le jour où les ancêtres sortis d'Amowi ont découvert l'igname. Au Gyaman, la fête de l'igname n'était célébrée que par les Abron ; les villages koulango y apportaient des ignames, des moutons et du gibier au roi et aux chefs, et l'on sacrifiait du bétail à la divinité Tano, selon Emmanuel Terray.",
+      "symbols": "Le tabouret est le symbole bono de l'autorité politique : les chefs comme les sanctuaires « résident » sur des tabourets, selon Dennis Warren. En 1820, les Asante prennent aux Abron le tabouret couvert de feuilles d'or qui servait à l'investiture de leurs rois ; les Abron en font ensuite un semblable, selon Maurice Delafosse. Nana Kwakye Ameyaw rapporte que les balances et les poids à peser l'or de Bono-Manso ont été emportés à Kumasi après la conquête asante. Les étoffes adinkra se sont fait connaître dans la région de Brong avant d'être reprises par les Ashanti, selon Adu Boahen.",
+      "artsAndMusic": "Les Bono disent avoir créé l'orfèvrerie, le tissage du kente et les poids à peser l'or des Akan, et des traditions d'autres peuples akan le confirment, selon Dennis Warren. Les tisserands de Bonwire, la ville du kente en pays asante, viendraient de Techiman : après la défaite de 1723, les Asante auraient emmené des artisans bono à Kumasi. Nana Kwakye Ameyaw cite aussi le tissage du kyekye et une étoffe appelée gagawuga, qui aurait été créée à Techiman. Les tambours parleurs de Techiman « parlent » en bono-twi. Les proverbes akan sont appelés mmebusem. Dès 1879, le missionnaire et linguiste Johann Gottlieb Christaller en a réuni plus de 3 600 en twi et en fante ; leur usage est partagé par les peuples de langue akan.",
+      "spiritualities": "À Techiman, trois religions vivent côte à côte, selon Dennis Warren : la religion bono, appelée Abosomsom, « le service des divinités », l'islam et le christianisme. Les Bono appellent l'islam Nkramosom, d'après un mot mandé qui désigne les musulmans. Les divinités Tano, les ancêtres et les esprits de la forêt tiennent une grande place dans la religion bono. Au Gyaman, les marabouts dioula de Bondoukou, de Barabo et de Kong prient pour le roi, et leur aide passait pour indispensable à la prospérité du royaume, selon Emmanuel Terray."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Etat Bono (ou Bonoman): premier Etat akan constitue, considere par les historiens comme le berceau de la civilisation akan. Capital politique et rituel: Bono Manso (ville urbaine deja etablie en 1471). Centre commercial: Begho (XIIe-XVIIIe siecles). Etats contemporains reconnus: Techiman, Dormaa, Wenchi, et autres paramountcies de la region Bono.",
-      "relationsWithNeighbors": "Commerce avec les marchands mande et haoussa via Begho sur les routes transsahariennes. Echanges de l'or, des noix de kola et de l'ivoire contre du sel, des textiles, des perles et des alliages de cuivre provenant de Djenne, Tombouctou, l'Afrique du Nord, le pays haoussa et le coude du Niger. Relations d'autorite sur les autres groupes akan emergents (les Ashanti adoptent des instruments musicaux et des symboles culturels bono-akan).",
-      "conflictsOrAlliances": "Destruction de Bono Manso par les Asante sous Opoku Ware I (1722-1723). Deuxieme destruction de Techiman par les Asante en 1877. Withdrawal from the Asante Confederacy Council in 1952. Creation d'une region distincte en 1959 (Brong-Ahafo) separant les Bono des Asante administrativement.",
-      "diaspora": "Communautes abron etablies dans l'est de la Cote d'Ivoire (plus de 300 000 locuteurs). Bono Manso est un site de memoire pour les Africains de la diaspora (presence dans la route de la traite atlantique des esclaves). Migrations internes vers les villes ghanéennes (Kumase, Accra)."
+      "kingdomsOrChiefdoms": "Le royaume de Bono, avec sa capitale Bono-Manso, est le premier État akan centralisé, et le plus au nord, selon les historiens que cite Dennis Warren. Techiman lui succède après 1723. Plusieurs États bono existent aujourd'hui, dont Techiman, Nkoranza, Wenchi, Dormaa, Berekum et Drobo. À l'ouest, le royaume abron du Gyaman, fondé vers 1690 par Tan Date selon Emmanuel Terray, a pour capitale Bondoukou, en Côte d'Ivoire.",
+      "relationsWithNeighbors": "Techiman était la principale ville entre Kumasi et Begho, la ville marchande des Mandé et des Dioula, sur la route qui menait à Djenné, selon Dennis Warren. Bono-Manso a combattu les Gonja et les a repoussés au-delà de la Volta, selon Nana Kwakye Ameyaw. Au Gyaman, les Abron, arrivés les derniers, ont établi peu à peu leur pouvoir sur les Koulango, les Nafana, les Dioula et les Agni, en mêlant la force et la diplomatie, selon Emmanuel Terray. Les Bono et les Abron ont toujours entretenu des relations étroites, écrit Dennis Warren.",
+      "conflictsOrAlliances": "En 1722-1723, le roi asante Opoku Ware détruit Bono-Manso. Les Bono combattent ensuite aux côtés des Asante contre les Gonja, Banda et le Gyaman, avant de se révolter, selon Nana Kwakye Ameyaw. Le Gyaman, dominé par les Asante à partir de 1740, se soulève plusieurs fois, en 1750, en 1764, en 1802-1804 et en 1818, et retrouve son indépendance en 1875, selon Emmanuel Terray. Vers 1877, Techiman est vaincu à nouveau par les Asante. En 1895, les Abron résistent aux troupes de Samori Touré. Au XXe siècle, l'opposition des États bono à l'autorité du roi asante aboutit à leur départ de la Confédération ashanti en 1952.",
+      "diaspora": "Les sources consultées (Dennis Warren, Kwame Arhin, Emmanuel Terray) ne décrivent pas de communauté bono installée hors du Ghana et de la Côte d'Ivoire. Elles parlent de déplacements dans la région : des artisans bono emmenés à Kumasi après 1723, et l'exil des gens de Techiman au Gyaman de 1877 environ à 1896."
     },
     "demography": {
-      "totalPopulation": 1500000,
-      "referenceYear": 2025,
-      "source": "Recensement Ghana 2021: Region Bono 1 208 965 habitants (Bono constitute 73,3% de la population, soit environ 886 000). Locuteurs du bono twi: environ 1,2 million au Ghana + 300 000 en Cote d'Ivoire (Wikipedia bono dialect). Estimation totale groupe ethnique: 1,5 million. Une autre estimation donne 1 300 000 personnes (Ethnologue, recensements du Ghana et de la Cote d'Ivoire 2021, Joshua Project) : 900 000 au Ghana et 400 000 en Cote d'Ivoire.",
+      "totalPopulation": 1947000,
+      "referenceYear": 2026,
+      "source": "Aucun recensement récent ne compte les Bono à part. Le dernier chiffre de recensement que nous ayons lu date de 1960 : environ 320 000 Bono, soit 4,8 % de la population du Ghana, selon Dennis Warren et Florence Dolphyne. Le recensement du Ghana de 2021 ne donne que les grands groupes : il compte 880 563 Akan parmi les 1 200 769 Ghanéens de la région Bono, soit 73,3 %, sans distinguer les Bono des autres Akan. Le total retenu ici est une estimation de la base de données missionnaire Joshua Project, consultée le 3 novembre 2026 : 1 649 000 au Ghana et 298 000 en Côte d'Ivoire. La Côte d'Ivoire ne publie pas de chiffre par peuple que nous ayons pu lire.",
       "distributionByCountry": [
         {
           "country": "GHA",
-          "population": 1200000
+          "population": 1649000,
+          "percentage": 84.7,
+          "note": "Régions Bono, Bono East et Ahafo, autour de Techiman, Sunyani, Nkoranza, Wenchi, Dormaa et Berekum ; estimation Joshua Project"
         },
         {
           "country": "CIV",
-          "population": 300000
+          "population": 298000,
+          "percentage": 15.3,
+          "note": "Nord-est du pays, autour de Bondoukou ; estimation Joshua Project"
         }
       ]
     },
@@ -117,7 +135,8 @@
         "title": "Ghana Statistical Service, Population and Housing Census 2021",
         "url": "https://census2021.statsghana.gov.gh",
         "tier": "official",
-        "source_kind": "official_statistics"
+        "source_kind": "official_statistics",
+        "notes": "Site du recensement de 2021 du Ghana Statistical Service, consulté le 3 novembre 2026."
       },
       {
         "title": "Posnansky, Merrick – Aspects of Early West African Trade, World Archaeology, 5(2), 1973",
@@ -158,26 +177,95 @@
         "title": "Joshua Project — Brong people group profile",
         "url": null,
         "tier": "needs_review",
-        "source_kind": "missionary_database"
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire évangélique, consultée le 3 novembre 2026 sur joshuaproject.net : 1 649 000 Brong au Ghana et 298 000 en Côte d'Ivoire, tous de langue abron (abr). Ces chiffres sont des estimations, non des résultats de recensement."
       },
       {
         "title": "Terray, Emmanuel - A History of the Abron Kingdom of Gyaman, Michigan State University, 1980",
         "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F1980v12n1%2Fasrv012001002.pdf",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Article d'Emmanuel Terray, « The Political Economy of the Abron Kingdom of Gyaman », Research Review (Institute of African Studies, Université du Ghana, Legon), 1980, vol. 12, n° 1, lu le 3 novembre 2026 dans les archives numérisées de la bibliothèque de l'Université d'État du Michigan. L'article situe le royaume entre la Comoé et la Volta noire, le dit fondé vers 1690 par Taa Date et dominé par les Asante de 1740 à 1875, et décrit ses provinces, ses impôts, la fête de l'igname et le rôle des marabouts dioula."
+      },
+      {
+        "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+        "url": "https://archive.org/details/vocabulairescomp00delauoft",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Maurice Delafosse, Paris, Ernest Leroux, 1904. L'auteur était administrateur colonial en Côte d'Ivoire. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Les pages 100-105 décrivent les Abron de l'est et de l'ouest, les noms Abrõ, Brõ, Gyamã et Boghãbo, et l'histoire du royaume de Bondoukou d'après les traditions et les écrits en arabe recueillis sur place en 1902 et 1903."
+      },
+      {
+        "title": "The Techiman-Bono of Ghana: An Ethnography of an Akan Society",
+        "url": "https://archive.org/details/the-techiman-bono-of-ghana-by-dennis-m-warren",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Dennis M. Warren, Dubuque (Iowa), Kendall/Hunt, 1975. Ethnographie des Bono de Techiman, fondée sur une enquête de 1969 à 1971. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive : histoire (p. 1-5), filiation (p. 20-22), puberté (p. 29), gouvernement (p. 43), religion et fêtes (p. 48-56)."
+      },
+      {
+        "title": "Traditional History of the Bono State: An Archaeological Approach",
+        "url": "https://archive.org/details/traditional-history-of-the-bono-state-an-archaeological-approach-by-kwaku-effah-gyamfi",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Kwaku Effah-Gyamfi, département d'archéologie, Université du Ghana, Legon, octobre 1975. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Les pages 14-15 rapportent les explications du nom Bono et la tradition d'Amowi."
+      },
+      {
+        "title": "A Profile of Brong Kyempim: Essays on the Archaeology, History, Language and Politics of the Brong Peoples of Ghana",
+        "url": "https://archive.org/details/a-profile-of-the-brong-kyempim-by-kwame-arhin",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Recueil dirigé par Kwame Arhin, Accra, Afram Publications, avec l'Institute of African Studies de l'Université du Ghana, 1979. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive : introduction de Kwame Arhin sur le nom Brong (p. 9-15), chapitre de Merrick Posnansky sur Begho (p. 22-24), entretien avec Nana Kwakye Ameyaw (p. 49-54), chapitre de Florence Dolphyne sur les parlers brong (p. 88)."
+      },
+      {
+        "title": "L'économie politique du royaume abron du Gyaman",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1982_num_22_87_3378",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Emmanuel Terray, Cahiers d'études africaines, vol. 22, n° 87-88, 1982, p. 251-275, consulté sur Persée le 3 novembre 2026. La première page situe le royaume abron entre la Comoé et la Volta noire et le dit fondé vers 1690 par Tan Date."
+      },
+      {
+        "title": "Ghana 2021 Population and Housing Census, General Report Volume 3C: Background Characteristics",
+        "url": "https://census2021.statsghana.gov.gh/gssmain/fileUpload/reportthemelist/2021%20PHC%20General%20Report%20Vol%203C_Background%20Characteristics_181121.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Ghana Statistical Service, Accra, novembre 2021, consulté le 3 novembre 2026. Le tableau 5.5 (p. 50) donne les Ghanéens par grand groupe ethnique et par région : 880 563 Akan sur 1 200 769 habitants dans la région Bono, et 411 473 sur 1 193 388 dans la région Bono East. Il ne distingue pas les Bono des autres Akan."
+      },
+      {
+        "title": "Glottolog 5.3 — Abron (abro1238)",
+        "url": "https://glottolog.org/resource/languoid/id/abro1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue Glottolog, consulté le 3 novembre 2026. Il classe l'abron (code ISO abr) parmi les langues akan du groupe tano central, dans la famille atlantique-congo, et cite la grammaire de l'abron de Côte d'Ivoire de Kouabena Théodore Kossonou (2015)."
+      },
+      {
+        "title": "ISO 639-3 — Abron [abr]",
+        "url": "https://iso639-3.sil.org/code/abr",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du code abr tenue par SIL Global, autorité d'enregistrement de la norme ISO 639-3, consultée le 3 novembre 2026 : nom de langue « Abron », code actif, langue individuelle et vivante."
+      },
+      {
+        "title": "Mission from Cape Coast Castle to Ashantee, with a Statistical Account of that Kingdom, and Geographical Notices of Other Parts of the Interior of Africa",
+        "url": "https://archive.org/details/missionfromcapec00bowd",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Thomas Edward Bowdich, Londres, John Murray, 1819, lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Le livre décrit le royaume de « Gaman » (p. 169) et le pays de « Booroom » (p. 173 et 233)."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Les Bono sont un peuple akan du centre du Ghana et de l'est de la Côte d'Ivoire ; on les appelle aussi Brong au Ghana et Abron en Côte d'Ivoire.",
+      "followUp": "Pourquoi le royaume abron de Bondoukou s'appelait-il aussi Gyaman ?"
+    }
   },
   "nameHistory": {
-    "summary": "Le nom Bono désigne un peuple akan du centre du Ghana, autour de Techiman, et de l'est de la Côte d'Ivoire, qui se nomme lui-même Bono. D'autres noms existent : Brong, Abron en Côte d'Ivoire, et Gyaman, le nom du royaume abron de Bondoukou. On ne sait pas avec certitude quand le nom Bono a été écrit pour la première fois, ni d'où viennent ces noms : les sources que nous avons lues n'en proposent pas d'explication.",
+    "summary": "Le nom Bono désigne un peuple akan du centre du Ghana, autour de Techiman, et de l'est de la Côte d'Ivoire. Ses membres se nomment eux-mêmes Bono, ou Bonofoo, « les gens de Bono ». Ils portent aussi d'autres noms : Brong, la forme anglaise employée au Ghana, Abron en Côte d'Ivoire, Gyaman pour le royaume abron de Bondoukou, et Boghãbo chez leurs voisins koulango. L'origine du nom Bono est discutée : plusieurs explications venues de Techiman sont présentées plus bas, avec l'histoire de chacun de ces noms.",
     "names": [
       {
         "nameText": "Bono",
         "nameStatus": "current",
         "selfGiven": true,
-        "languageOfOrigin": null,
+        "languageOfOrigin": "abr",
         "namedBy": null,
-        "shortLine": "Le nom qu'ils se donnent, celui aussi du premier royaume akan.",
+        "shortLine": "Le nom qu'ils se donnent, celui aussi du premier royaume akan, Bono-Manso.",
         "periodLabel": "Usage contemporain",
         "accounts": [
           {
@@ -187,8 +275,8 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Bono désigne l'un des peuples akan du Ghana, à côté des Ashanti, des Kwahu ou des Akyem, selon Pierre Kipré. En Côte d'Ivoire, il cite parmi les Akan les Abron, ou Bron. Les sources que nous avons lues ne disent pas d'où vient le nom Bono.",
-            "aspect": "meaning",
+            "statement": "Le nom Bono désigne l'un des peuples akan du Ghana, à côté des Ashanti, des Kwahu ou des Akyem, selon l'historien Pierre Kipré. En Côte d'Ivoire, il range parmi les Akan les Abron, qu'il appelle aussi Bron.",
+            "aspect": "usage",
             "sources": [
               {
                 "title": "Histoire générale de l'Afrique, IV, ch. 13 : Des lagunes ivoiriennes à la Volta",
@@ -199,6 +287,152 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 363",
                 "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. La page cite parmi les Akan du Ghana « les Bono, les Ashanti, les Kwahu, les Akyem » et d'autres, et « en Côte-d'Ivoire […] les Abron (Bron), les Agni, les Sanwi, les Baoulé »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1969,
+              "to": 1979,
+              "label": "Explications recueillies à Techiman entre 1969 et 1979"
+            },
+            "era": "modern",
+            "statement": "Le nom Bono voudrait dire « le pionnier », ce qui vient en premier, selon l'explication que Nana Kwakye Ameyaw, chef de Techiman, tient de ses ancêtres. Il rapproche ce nom du mot abonowoo, qui désigne chez les Akan le premier enfant d'une femme. Les Bonofoo seraient ainsi « les premiers à s'installer » dans la région. L'archéologue Kwaku Effah-Gyamfi rapporte la même explication à Techiman.",
+            "hypothesisGroup": "sens-du-nom-bono",
+            "aspect": "meaning",
+            "actors": [
+              {
+                "name": "Nana Kwakye Ameyaw",
+                "role": "chef suprême de Techiman, qui transmet l'explication de ses ancêtres"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Bono-Manso and Techiman : entretien avec Nana Kwakye Ameyaw, chef suprême de Techiman",
+                "author": "Nana Kwakye Ameyaw, Techimanhene",
+                "year": 1979,
+                "url": "https://archive.org/details/a-profile-of-the-brong-kyempim-by-kwame-arhin",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "page": "p. 49",
+                "narrative": "À la question « Que veut dire Bono ou Brong ? », Nana Kwakye Ameyaw répond que, selon ses ancêtres, Bono veut dire « pionnier », ce qui vient en premier. Chez les Akan, le premier enfant d'une femme s'appelle son abonowoo ; « nous avons été appelés Bonofoo parce que nous avons été les premiers à nous installer ».",
+                "carrier": "Nana Kwakye Ameyaw, chef suprême (Omanhene) de Techiman, qui rapporte l'explication de ses ancêtres",
+                "place": "Techiman (Ghana)",
+                "notes": "Entretien mené par Kwame Arhin, traduit par C. E. Agyenim-Boateng et publié au chapitre III du recueil A Profile of Brong Kyempim (Accra, Afram Publications, 1979). Lu le 3 novembre 2026 dans la numérisation d'Internet Archive."
+              },
+              {
+                "title": "Traditional History of the Bono State: An Archaeological Approach",
+                "author": "Kwaku Effah-Gyamfi",
+                "year": 1975,
+                "url": "https://archive.org/details/traditional-history-of-the-bono-state-an-archaeological-approach-by-kwaku-effah-gyamfi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14",
+                "notes": "Institute of African Studies, Université du Ghana, Legon ; texte daté d'octobre 1975 par son auteur, archéologue originaire de la région. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. La page écrit que, selon les traditions de Takyiman (Techiman), le mot « Bono » (Brong) veut dire « pionnier », quelque chose de premier en son genre, et qu'un premier accouchement est appelé abonowo chez les Akan."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1969,
+              "to": 1979,
+              "label": "Explications recueillies à Techiman entre 1969 et 1979"
+            },
+            "era": "modern",
+            "statement": "Le nom Bono voudrait dire « les premiers à avoir été créés », de bo, « créer », et no, « le », selon ce que l'anthropologue Dennis Warren a entendu à Techiman. Les tambours parleurs de la ville disent en bono-twi que Dieu a créé les Bono avant toute autre chose.",
+            "hypothesisGroup": "sens-du-nom-bono",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Techiman-Bono of Ghana: An Ethnography of an Akan Society",
+                "author": "Dennis M. Warren",
+                "year": 1975,
+                "url": "https://archive.org/details/the-techiman-bono-of-ghana-by-dennis-m-warren",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Dubuque (Iowa), Kendall/Hunt, 1975. L'auteur, anthropologue, a enquêté à Techiman de 1969 à 1971. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. La page écrit : « “Bono” is explained to mean “the first ones to be created” (bo, to create; no, the) », et cite les tambours parleurs de Techiman : Dieu a créé les Bono avant toute chose."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1969,
+              "to": 1979,
+              "label": "Explications recueillies à Techiman entre 1969 et 1979"
+            },
+            "era": "modern",
+            "statement": "Le nom Bono viendrait du mot bon, « trou », en souvenir des ancêtres sortis d'un trou, la grotte d'Amowi : ce serait « les gens qui vivaient dans un trou ». Kwaku Effah-Gyamfi rapporte que certains habitants de Techiman le disent. Interrogé sur ce rapprochement, Nana Kwakye Ameyaw le rejette.",
+            "hypothesisGroup": "sens-du-nom-bono",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Traditional History of the Bono State: An Archaeological Approach",
+                "author": "Kwaku Effah-Gyamfi",
+                "year": 1975,
+                "url": "https://archive.org/details/traditional-history-of-the-bono-state-an-archaeological-approach-by-kwaku-effah-gyamfi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14",
+                "notes": "Institute of African Studies, Université du Ghana, Legon ; texte daté d'octobre 1975 par son auteur, archéologue originaire de la région. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. La page rapporte que certains affirment que le nom ne veut pas dire « pionnier » mais vient du fait que les ancêtres de Techiman sont sortis d'un trou, appelé bon dans le dialecte bono : les Bono seraient « les gens qui vivaient dans un trou »."
+              },
+              {
+                "title": "Bono-Manso and Techiman : entretien avec Nana Kwakye Ameyaw, chef suprême de Techiman",
+                "author": "Nana Kwakye Ameyaw, Techimanhene",
+                "year": 1979,
+                "url": "https://archive.org/details/a-profile-of-the-brong-kyempim-by-kwame-arhin",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "page": "p. 49",
+                "narrative": "À la question de savoir si « Bono » pourrait venir de la croyance en une sortie de la grotte (bone, « trou »), Nana Kwakye Ameyaw répond : « Non. »",
+                "carrier": "Nana Kwakye Ameyaw, chef suprême (Omanhene) de Techiman, qui rapporte l'explication de ses ancêtres",
+                "place": "Techiman (Ghana)",
+                "notes": "Entretien mené par Kwame Arhin, traduit par C. E. Agyenim-Boateng et publié au chapitre III du recueil A Profile of Brong Kyempim (Accra, Afram Publications, 1979). Lu le 3 novembre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1450,
+              "label": "Avant le royaume de Bono"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Bono, les ancêtres de Techiman seraient sortis d'une grotte appelée Amowi, près de Pinihi, dans la région de Nkoranza, conduits par leur premier roi, Asaman. Ils se seraient installés à Yefri, puis à Manso, selon la tradition de Techiman. Un chant de la fête de l'Apoo répète encore « Ye firi Amuowi », « nous venons d'Amowi ».",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Techiman-Bono of Ghana: An Ethnography of an Akan Society",
+                "author": "Dennis M. Warren",
+                "year": 1975,
+                "url": "https://archive.org/details/the-techiman-bono-of-ghana-by-dennis-m-warren",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Dubuque (Iowa), Kendall/Hunt, 1975. L'auteur, anthropologue, a enquêté à Techiman de 1969 à 1971. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. La page rapporte la tradition recueillie par l'auteur : les Bono sont autochtones et ont été conduits hors d'une caverne appelée Amowi, près de Pinihi, par le premier roi de Bono-Manso, Asaman."
+              },
+              {
+                "title": "Traditional History of the Bono State: An Archaeological Approach",
+                "author": "Kwaku Effah-Gyamfi",
+                "year": 1975,
+                "url": "https://archive.org/details/traditional-history-of-the-bono-state-an-archaeological-approach-by-kwaku-effah-gyamfi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15",
+                "notes": "Institute of African Studies, Université du Ghana, Legon ; texte daté d'octobre 1975 par son auteur, archéologue originaire de la région. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. La page situe le trou d'Amuowi à environ 2 kilomètres au sud-est du village de Pinihene, près de Nkoranza, et cite le chant de l'Apoo « Ye firi Amuowi », traduit « We came from Amuowi »."
+              },
+              {
+                "title": "Bono-Manso and Techiman : entretien avec Nana Kwakye Ameyaw, chef suprême de Techiman",
+                "author": "Nana Kwakye Ameyaw, Techimanhene",
+                "year": 1979,
+                "url": "https://archive.org/details/a-profile-of-the-brong-kyempim-by-kwame-arhin",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "page": "p. 49-50",
+                "narrative": "Nana Kwakye Ameyaw dit tenir de ses aînés que les ancêtres sont sortis d'un trou appelé Amoowi, à Pinihi près de Nkoranza, puis se sont installés à Yefri et enfin à Manso.",
+                "carrier": "Nana Kwakye Ameyaw, chef suprême (Omanhene) de Techiman, qui rapporte l'explication de ses ancêtres",
+                "place": "Techiman (Ghana)",
+                "notes": "Entretien mené par Kwame Arhin, traduit par C. E. Agyenim-Boateng et publié au chapitre III du recueil A Profile of Brong Kyempim (Accra, Afram Publications, 1979). Lu le 3 novembre 2026 dans la numérisation d'Internet Archive."
               }
             ]
           },
@@ -244,7 +478,8 @@
               }
             ]
           }
-        ]
+        ],
+        "usedIn": ["abr"]
       },
       {
         "nameText": "Brong",
@@ -252,7 +487,7 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "L'ancien nom, en anglais, des Bono et de leur région ; Pacheco Pereira écrivait peut-être Boroes.",
+        "shortLine": "L'ancien nom anglais des Bono ; Pacheco Pereira écrivait peut-être Boroes, et Bowdich Booroom.",
         "periodLabel": "Écrit vers 1506, sous une forme proche",
         "accounts": [
           {
@@ -308,6 +543,84 @@
                 "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. La page écrit que les étoffes adinkra « acquirent leur renommée dans la région de Brong » et qu'aux XVIIe et XVIIIe siècles « les Brong d'abord puis les Denkyira, et plus particulièrement les Ashanti » portèrent l'orfèvrerie « à un degré de perfection inégalé »."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1817,
+              "to": 1817,
+              "label": "Séjour de 1817, livre de 1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Brong est écrit « Booroom » par Thomas Edward Bowdich, envoyé britannique à Kumasi en 1817. Il décrit le pays de Booroom, au nord de l'Ashanti, où la langue ashanti est très parlée, et note qu'il a été soumis par le roi ashanti Osei Tutu.",
+            "formAsWritten": "Booroom",
+            "actors": [
+              {
+                "name": "Thomas Edward Bowdich",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Mission from Cape Coast Castle to Ashantee, with a Statistical Account of that Kingdom, and Geographical Notices of Other Parts of the Interior of Africa",
+                "author": "Thomas Edward Bowdich",
+                "year": 1819,
+                "url": "https://archive.org/details/missionfromcapec00bowd",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 173 et p. 233",
+                "notes": "Londres, John Murray, 1819, lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Bowdich, envoyé britannique, séjourne à Kumasi en 1817. La page 173 écrit qu'une montagne marque « the boundary of Ashantee and Booroom » et que « The Ashantee language is spoken very commonly in Booroom ». La page 233 écrit, à propos des conquêtes de Sai Tootoo (Osei Tutu) : « Booroom was subjugated soon after »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Explications données en 1979"
+            },
+            "era": "modern",
+            "statement": "Le nom Brong viendrait de Bono, le nom du premier État akan du nord, selon Nana Kwakye Ameyaw, chef de Techiman, et l'historien Kwame Arhin lui donne raison. Arhin ajoute que les mots Abronfo et Bronni, « les gens » et « l'homme de Bono », désignent les sujets de ce royaume. Selon lui, le nom a pu être appliqué ensuite par leurs voisins, les Gonja au nord et les Asante au sud, à tous les peuples installés près de Bono-Manso.",
+            "aspect": "imposition",
+            "actors": [
+              {
+                "name": "Les Gonja et les Asante",
+                "role": "voisins qui, selon Kwame Arhin, ont pu étendre ce nom aux peuples voisins de Bono-Manso"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Profile of Brong Kyempim: Essays on the Archaeology, History, Language and Politics of the Brong Peoples of Ghana",
+                "author": "Kwame Arhin",
+                "year": 1979,
+                "url": "https://archive.org/details/a-profile-of-the-brong-kyempim-by-kwame-arhin",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Accra, Afram Publications, avec l'Institute of African Studies de l'Université du Ghana, 1979 ; recueil dirigé par Kwame Arhin. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Dans son introduction, Kwame Arhin écrit que, selon Nana Ameyaw, le terme « Brong » vient de « Bono », nom du premier État akan du nord, et que Nana Ameyaw a probablement raison. « Abronfo (pl. of Bronni sing = men or man of Bono) » désigne les citoyens du royaume de Bono. Il avance que le terme a pu être imposé à des peuples comme ceux du Gyaman, de Dormaa, d'Atebubu ou de Nkoranza par leurs voisins du nord (les Gonja) et du sud (les Asante)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1875,
+              "to": 1959,
+              "label": "De la fin du XIXe siècle à 1959"
+            },
+            "era": "colonial",
+            "statement": "Le nom Brong devient, à partir de la fin du XIXe siècle, un mot de protestation pour les peuples qui refusent l'autorité du roi asante, selon Kwame Arhin. Il couvre alors aussi des peuples qui ne parlent pas une langue akan, comme les Nafana et les Koulango. Cette lutte aboutit en 1959 à la création de la région Brong-Ahafo, séparée de la région ashanti.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Profile of Brong Kyempim: Essays on the Archaeology, History, Language and Politics of the Brong Peoples of Ghana",
+                "author": "Kwame Arhin",
+                "year": 1979,
+                "url": "https://archive.org/details/a-profile-of-the-brong-kyempim-by-kwame-arhin",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10 et p. 15",
+                "notes": "Accra, Afram Publications, avec l'Institute of African Studies de l'Université du Ghana, 1979 ; recueil dirigé par Kwame Arhin. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. La page 10 écrit que, depuis le dernier quart du XIXe siècle, « Brong » a pris un sens politique : « It has become a protest word adopted by those living northeast, north and northwest of Asante who deny political allegiance to the Asantehene », y compris les Nafana et les Koulango. La page 15 date de 1959 la création de la région Brong-Ahafo et d'une chambre des chefs."
+              }
+            ]
           }
         ]
       },
@@ -317,8 +630,8 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom employé en Côte d'Ivoire pour les Bono de la région de Bondoukou.",
-        "periodLabel": "Usage contemporain",
+        "shortLine": "Le nom employé en Côte d'Ivoire pour les Bono de la région de Bondoukou ; Delafosse écrivait Abrõ.",
+        "periodLabel": "Écrit depuis 1904 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
@@ -327,7 +640,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Abron désigne en Côte d'Ivoire un peuple akan, appelé aussi Bron, selon Pierre Kipré. On ne sait pas avec certitude quand la forme Abron a été écrite pour la première fois.",
+            "statement": "Le nom Abron désigne en Côte d'Ivoire un peuple akan, appelé aussi Bron, selon l'historien Pierre Kipré. Le catalogue des langues Glottolog et la norme ISO 639-3 appellent aussi Abron la langue de ce peuple.",
             "aspect": "usage",
             "sources": [
               {
@@ -339,6 +652,15 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 363",
                 "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. La page cite parmi les Akan du Ghana « les Bono, les Ashanti, les Kwahu, les Akyem » et d'autres, et « en Côte-d'Ivoire […] les Abron (Bron), les Agni, les Sanwi, les Baoulé »."
+              },
+              {
+                "title": "ISO 639-3 — Abron [abr]",
+                "author": "SIL Global, autorité d'enregistrement de la norme ISO 639-3",
+                "year": 2026,
+                "url": "https://iso639-3.sil.org/code/abr",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code abr, consultée le 3 novembre 2026 : nom de langue « Abron », code actif, langue individuelle et vivante."
               }
             ]
           },
@@ -362,6 +684,35 @@
                 "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. La page écrit : « les Abron du groupe akan, après s'être imposés aux Koulango méridionaux, disputaient à Bouna le contrôle de la route du Nord par la Comoé »."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1904,
+              "label": "Notes de 1902-1903, livre de 1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Abron est écrit « Abrõ » ou « Brõ » par l'administrateur colonial Maurice Delafosse, qui distingue les Abrõ de l'est, « Brong sur les cartes », et les Abrõ de l'ouest, ou Gyamã, autour de Bondoukou. D'après les traditions qu'il recueille à Bondoukou, la région prend alors le nom de ses conquérants : « Borõ, Brõ, Abrõ ou Abonõ ». C'est la plus ancienne trace de la forme Abron que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Abrõ",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 101-103",
+                "notes": "Paris, Ernest Leroux. Maurice Delafosse était administrateur colonial en Côte d'Ivoire. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. La page 101 nomme « les Abrõ ou Brõ de l'est (Brong sur les cartes) » et « les Abrõ ou Brõ de l'ouest, ou Gyamã ». Les pages 102-103 écrivent que la région de Bondoukou « fut dès lors désignée par le nom de ses conquérants, Borõ, Brõ, Abrõ ou Abonõ »."
+              }
+            ]
           }
         ]
       },
@@ -370,7 +721,7 @@
         "nameStatus": "former",
         "selfGiven": false,
         "languageOfOrigin": null,
-        "namedBy": null,
+        "namedBy": "Les Asante, selon Maurice Delafosse",
         "shortLine": "Le nom du royaume abron, autour de Bondoukou ; Bowdich écrivait Gaman.",
         "periodLabel": "Écrit dès 1819, sous une forme proche",
         "accounts": [
@@ -415,6 +766,106 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 451",
                 "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. La page écrit que les Ashanti « conquirent Gyaaman (ou Abron), Banda et Bono au cours des premières décennies du XVIIIe siècle »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1904,
+              "label": "Traditions recueillies à Bondoukou en 1902-1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gyaman aurait été donné par les Asante au royaume abron de Bondoukou, pour le distinguer du pays des Bron de l'est, selon les traditions que Maurice Delafosse, administrateur colonial, recueille à Bondoukou. Il écrit « Gyamã » et note que les cartes anglaises disent Gaman ou Jaman.",
+            "aspect": "imposition",
+            "actors": [
+              {
+                "name": "Les Asante",
+                "role": "voisins qui, selon cette tradition, ont donné ce nom au royaume"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 103",
+                "notes": "Paris, Ernest Leroux. Maurice Delafosse était administrateur colonial en Côte d'Ivoire. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. La page écrit que les conquérants abron ont donné leur nom à la région, « mais les Assanti lui donnèrent le nom de Gyamã (Gaman ou Jaman des cartes anglaises) pour la distinguer du Bron ou Abron de l'est »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1700,
+              "label": "Avant le royaume abron"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Gyaman, la région de Bondoukou s'appelait Awasu ou Awòsu, « pays désert, ou pays des calebasses », selon les traditions recueillies par Maurice Delafosse. Les Nafana, les Gbin, les Koulango et les Dioula y vivaient déjà avant l'arrivée des Abron, qui y entrent à partir de 1680 environ selon l'anthropologue Emmanuel Terray.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 102",
+                "notes": "Paris, Ernest Leroux. Maurice Delafosse était administrateur colonial en Côte d'Ivoire. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. La page écrit que la région, « connue jusque-là sous le nom d'Awasu ou Awòsu (pays désert, ou pays des calebasses) », a ensuite été désignée par le nom de ses conquérants, et nomme les Nafana et les Gbin « autochtones du pays »."
+              },
+              {
+                "title": "L'économie politique du royaume abron du Gyaman",
+                "author": "Emmanuel Terray",
+                "year": 1982,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1982_num_22_87_3378",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 251",
+                "notes": "Cahiers d'études africaines, vol. 22, n° 87-88, 1982, p. 251-275, consulté sur Persée le 3 novembre 2026. La première page écrit que le royaume, situé entre la Comoé et la Volta noire, a été « fondé vers 1690 par le Gyamanhene Tan Date » et qu'il tombe en 1740 sous la domination des Asante."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Boghãbo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Koulango, selon Maurice Delafosse",
+        "shortLine": "Le nom que les Koulango, voisins des Abron autour de Bondoukou, leur donnaient en 1904.",
+        "periodLabel": "Attesté en 1904",
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Boghãbo est celui que les Koulango donnent aux Abron, selon l'administrateur colonial Maurice Delafosse. Dans le royaume abron, les Koulango sont alors bien plus nombreux que les Abron, qui les dominent.",
+            "formAsWritten": "Boghãbo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 103",
+                "notes": "Paris, Ernest Leroux. Maurice Delafosse était administrateur colonial en Côte d'Ivoire. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. La page écrit : « Les Abron sont appelés Boghãbo par les Koulango », et note que les vassaux koulango « sont bien plus nombreux que leurs maîtres »."
               }
             ]
           }
