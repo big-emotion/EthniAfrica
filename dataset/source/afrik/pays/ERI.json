@@ -3,9 +3,9 @@
   "nameFr": "Érythrée",
   "nameEn": "Eritrea",
   "nameOfficial": "État d'Érythrée (State of Eritrea, Hagere Ertra)",
-  "summary": "L'Érythrée porte un nom grec : « Erythraia », de la mer Rouge qui la borde, repris par la colonisation italienne en 1890. Le territoire relevait du royaume d'Aksoum, puis de chefferies tigrigna, beja et afar. Neuf peuples y sont reconnus, du Tigrinya des hauts plateaux aux Rashaida de la côte.",
-  "etymology": "Le nom \"Érythrée\" viendrait du grec \"Erythraia\" (Ἐρυθραία), qui serait dérivé de \"Mare Erythraeum\" (mer Érythrée), nom donné par les Grecs à la mer Rouge. Le terme viendrait du mot grec pour \"rouge\", en référence à la couleur de la mer Rouge. Les Italiens ont adopté ce nom pour leur colonie en 1890.",
-  "nameOriginActor": "Le nom \"Érythrée\" a été donné par les Italiens lors de la création de la colonie italienne en 1890, en référence à la \"mer Érythrée\" (mer Rouge) mentionnée par les Grecs anciens. Le nom a été officialisé à l'indépendance en 1993.",
+  "summary": "L'Érythrée porte le nom de la colonie italienne créée en 1890, Eritrea, que l'État indépendant a gardé en 1993 ; en tigrigna, le pays se nomme Ertra, et l'origine du nom italien reste discutée. Ce pays de la Corne de l'Afrique, au bord de la mer Rouge, réunit neuf grands groupes de peuples et de langues, qu'aucun recensement national n'a encore comptés.",
+  "etymology": "Le nom Érythrée reprend celui de la colonie que l'Italie a formée le 1er janvier 1890 sur la côte et le plateau de la mer Rouge, Eritrea. Son origine est discutée. Selon Haile S., il viendrait de Mare Erythraeum, le nom latin, tiré du grec, de la mer qui borde le pays. Un auteur nommé Johar propose plutôt la cité grecque d'Érétrie. Une autre idée, que Haile S. juge peu probable, le rattache à l'inscription « ERITRAEA » placée sous une sibylle peinte par Michel-Ange. Bien avant la colonie, les géographes grecs et romains appelaient mer Érythrée l'océan Indien, selon A. M. H. Sheriff.",
+  "nameOriginActor": "Le nom Eritrea a été donné par l'État italien : le 1er janvier 1890, ses possessions de la mer Rouge sont réunies en une seule colonie sous ce nom, selon Tekeste Negash et le décret royal que cite Haile S. L'État indépendant l'a gardé en 1993. En tigrigna, il se nomme Ertra.",
   "nameHistory": {
     "summary": "Le nom Érythrée désigne un pays de la Corne de l'Afrique, l'État d'Érythrée, qui se nomme lui-même Ertra en tigrigna. Il reprend le nom de la colonie italienne créée en 1890, la colonia Eritrea. Les sources ne s'accordent pas sur l'origine de ce nom ; nous les présentons plus bas.",
     "names": [
@@ -236,6 +236,7 @@
               "to": 99,
               "label": "Du Ve siècle avant notre ère au Ier siècle"
             },
+            "era": "polity",
             "statement": "Avant le nom Érythrée, les géographes grecs et romains parlent de mer Érythrée pour désigner l'océan Indien, au moins depuis Hérodote, selon A. M. H. Sheriff. Un guide de navigation grec de la fin du Ier siècle, le Périple de la mer Érythrée, décrit déjà Adoulis, port de la côte de l'actuelle Érythrée, selon F. Anfray.",
             "before": true,
             "sources": [
@@ -355,56 +356,70 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Mare Erythraeum (grec, « mer Rouge »)",
-        "Colonie italienne d'Eritrea (1890-1941)",
-        "Fédération Éthiopie-Érythrée (1952-1962)"
+        "Colonia Eritrea (1890-1941)",
+        "Érythrée, unité autonome fédérée à l'Éthiopie (1952-1962)"
       ],
-      "antiquity": "Partie du royaume d'Aksoum (Axumite Empire). Le territoire était intégré dans l'empire aksoumite, centre de la civilisation éthiopienne ancienne.",
-      "middleAges": "Provinces tigrigna et afar liées à l'Éthiopie historique. Développement des royaumes et chefferies du haut plateau (Tigrinya), zones Beja (Bilen, Hedareb), et peuples Afar du littoral.",
-      "precolonial": "XVe-XVIIIe siècle : entités Beja (Beni Amer, Hadarib). Mosaïque de royaumes et chefferies : royaumes tigrigna (haut plateau), chefferies Beja (centre), peuples Afar (littoral). Pas de nom unifié pour l'ensemble du territoire.",
-      "colonization": "1890-1941 : Colonie italienne \"Eritrea\" (nom dérivé de Mare Erythraeum : \"mer Érythrée\" / mer Rouge). Les Italiens ont créé la colonie d'Érythrée en 1890. 1941-1952 : Administration britannique (après la défaite italienne). 1952-1962 : Fédération Éthiopie-Érythrée (autonomie sous l'Éthiopie). 1962-1991 : Annexion par l'Éthiopie, province éthiopienne.",
-      "contemporary": "1991 : Libération de l'Érythrée par le Front populaire de libération de l'Érythrée (FPLE). 1993 : Indépendance de l'Érythrée (24 mai 1993), proclamation de l'État d'Érythrée (State of Eritrea)."
+      "antiquity": "À la fin du Ier siècle, un guide de navigation grec, le Périple de la mer Érythrée, décrit Adoulis, un port de la côte de l'actuelle Érythrée. De là, on gagne en trois jours Coloé, premier marché de l'ivoire, puis en cinq jours de plus la ville des Auxumites, c'est-à-dire Aksoum. Un roi nommé Zoscalès gouverne alors ces régions. Sur le plateau, près de Sénafé, l'archéologue Francis Anfray a fouillé Matara, une ville de l'époque d'Aksoum bâtie sur des traces plus anciennes.",
+      "middleAges": "À Matara, les dernières maisons habitées datent des VIe et VIIe siècles, selon les fouilles de Francis Anfray, qui appelle « post-aksoumite » la période suivante, après l'an 700 environ. Nous n'avons pas encore étudié l'histoire du territoire entre le VIIIe et le XVIIIe siècle.",
+      "precolonial": "À la veille de la colonisation, le plateau où l'on parle tigrigna fait partie de l'État éthiopien, selon Tekeste Negash. Avant les années 1840, cette région était désignée par le nom Tigrai. Elle compte environ 800 villages, répartis en trente-quatre unités qui paient un tribut, appelées medri. Dans les basses terres, d'autres peuples vivent sous l'autorité d'aristocraties héréditaires, tandis que les Saho, les Baria et les Kunama se gouvernent par des conseils d'anciens. Aucun nom ne désignait alors l'ensemble du territoire.",
+      "colonization": "L'Italie prend pied sur la côte en 1869, quand une compagnie de navigation achète la baie d'Assab ; Assab devient une colonie italienne en juillet 1882, puis l'Italie occupe Massaoua en 1885. Le 1er janvier 1890, ces possessions sont réunies en une seule colonie, appelée Eritrea, selon Tekeste Negash. La colonie, dont Asmara devient la capitale, dure jusqu'en 1941. En 1950, l'Assemblée générale des Nations unies décide que l'Érythrée formera une unité autonome fédérée à l'Éthiopie, sous la souveraineté de la couronne éthiopienne. Pendant la transition, qui doit s'achever au plus tard le 15 septembre 1952, la puissance qui administre le territoire depuis 1941, le Royaume-Uni, reste en place. L'union totale avec l'Éthiopie suit le 14 novembre 1962, selon l'Histoire générale de l'Afrique.",
+      "contemporary": "Après trente années de guerre, une conférence réunie à Addis-Abeba en juillet 1991 reconnaît aux Érythréens le droit de choisir leur avenir par un référendum, selon un rapport du Secrétaire général des Nations unies. Le référendum a lieu en avril 1993 et l'indépendance est proclamée le 24 mai 1993 ; l'Organisation des Nations unies admet l'Érythrée le 28 mai 1993. L'État garde le nom d'Érythrée, Ertra en tigrigna."
     },
     "kingdoms": [
       {
         "name": "Royaume d'Aksoum",
-        "period": "Antiquité - VIIe siècle",
-        "entryType": "polity",
-        "dominantPeoples": ["Tigrinya", "Tigré", "autres peuples érythréens"],
-        "politicalCenters": [
-          "Aksoum (capitale historique",
-          "aujourd'hui en Éthiopie)"
-        ],
-        "historicalRole": "Royaume d'Aksoum puissant, centre de la civilisation éthiopienne ancienne, christianisation précoce, commerce avec l'Inde et la Méditerranée. L'Érythrée était partie intégrante de l'empire aksoumite."
-      },
-      {
-        "name": "Royaumes et chefferies tigrigna",
-        "period": "Moyen Âge - présent",
-        "entryType": "polity",
-        "dominantPeoples": ["Tigrinya"],
-        "politicalCenters": ["Hauts plateaux (Asmara", "Mendefera)"],
-        "historicalRole": "Royaumes et chefferies tigrigna sur les hauts plateaux, héritiers d'Aksoum, christianisme orthodoxe, structures villageoises lignagères. Rôle central de l'Église Tewahedo."
-      },
-      {
-        "name": "Chefferies Beja",
-        "period": "XVe siècle - présent",
+        "period": "Ier siècle - VIIe siècle environ",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1401,
-          "ongoing": true,
-          "precision": "century"
+          "startYear": 1,
+          "endYear": 700,
+          "precision": "approximate",
+          "datingNote": "Les bornes résument les sources lues : le Périple de la mer Érythrée décrit les Auxumites à la fin du Ier siècle, et la dernière occupation de Matara date des VIe et VIIe siècles. Le royaume est plus ancien que sa première mention, et sa fin n'a pas de date précise."
         },
-        "dominantPeoples": ["Beja (Bilen", "Hedareb", "Beni Amer)"],
-        "politicalCenters": ["Keren", "régions centrales"],
-        "historicalRole": "Chefferies Beja, organisation tribale, islam et christianisme mixte (Bilen). Relations avec le Soudan."
+        "dominantPeoples": ["Auxumites, selon le Périple de la mer Érythrée"],
+        "politicalCenters": [
+          "Aksoum, dans l'Éthiopie actuelle",
+          "Adoulis, port de la mer Rouge",
+          "Matara, sur le plateau près de Sénafé"
+        ],
+        "historicalRole": "Le royaume d'Aksoum reliait la mer Rouge et l'intérieur : par le port d'Adoulis arrivaient sur le plateau des poteries venues de la Méditerranée, selon Francis Anfray. La ville de Matara, sur le plateau érythréen, en était l'un des centres urbains."
       },
       {
-        "name": "Peuples Afar",
-        "period": "Précolonial - présent",
+        "name": "Région tigrigna du plateau",
+        "period": "XIXe siècle, à la veille de la colonisation",
         "entryType": "polity",
-        "dominantPeoples": ["Afar"],
-        "politicalCenters": ["Littoral et sud-est"],
-        "historicalRole": "Peuples Afar nomades pastoraux, sultanat d'Aussa, traditions couchitiques, pastoralisme de dromadaires."
+        "timeRange": {
+          "startYear": 1800,
+          "endYear": 1889,
+          "precision": "approximate",
+          "datingNote": "Les bornes ne datent que l'état que décrit Tekeste Negash à la veille de la colonisation ; il ne date pas l'origine des medri, et la région passe sous domination italienne en 1889."
+        },
+        "dominantPeoples": ["Tigrinya"],
+        "politicalCenters": [
+          "Hauts plateaux de l'actuelle Érythrée, divisés en trente-quatre medri"
+        ],
+        "historicalRole": "La région tigrigna du plateau faisait partie de l'État éthiopien. Les villages payaient un tribut annuel, réparti entre trente-quatre unités appelées medri. De 1875 à 1888, l'entretien de l'armée éthiopienne, face aux Égyptiens puis aux Italiens, pèse lourdement sur les paysans, selon Tekeste Negash."
+      },
+      {
+        "name": "Aristocraties des basses terres",
+        "period": "XIXe siècle - années 1940",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1800,
+          "endYear": 1949,
+          "precision": "approximate",
+          "datingNote": "Tekeste Negash décrit ce système à la veille de la colonisation et dit qu'il s'est maintenu jusque dans les années 1940 ; il n'en date pas l'origine."
+        },
+        "dominantPeoples": [
+          "Habab",
+          "Marya",
+          "Mensa",
+          "Beni Amer",
+          "Bogos",
+          "Afar"
+        ],
+        "politicalCenters": ["Basses terres du nord, de l'ouest et de la côte"],
+        "historicalRole": "Chez six groupes des basses terres, une aristocratie héréditaire faisait face à des serfs liés à elle par des obligations fixées par le droit coutumier. Chez les Bogos, les aristocrates s'appelaient shumagle et les serfs tigre. Sous la colonisation, des serfs ont demandé à l'administration italienne de les libérer de ces obligations, selon Tekeste Negash."
       },
       {
         "name": "Colonie italienne d'Érythrée",
@@ -415,14 +430,25 @@
           "endYear": 1941,
           "precision": "year"
         },
-        "dominantPeoples": [
-          "Tous les peuples érythréens sous domination italienne"
-        ],
-        "politicalCenters": ["Asmara (capitale coloniale)"],
-        "historicalRole": "Colonie italienne, développement d'Asmara comme ville coloniale, exploitation économique, résistance des peuples autochtones. Défaite italienne en 1941."
+        "dominantPeoples": ["Administration coloniale italienne"],
+        "politicalCenters": ["Massaoua", "Asmara, capitale de la colonie"],
+        "historicalRole": "La colonie Eritrea réunit à partir de 1890 les possessions italiennes de la mer Rouge. Des terres sont confisquées pour des colons italiens entre 1893 et 1895, ce qui provoque une révolte menée par Bahta Hagos à la fin de 1894. L'Italie est ensuite battue à Adoua en 1896. La colonie fournit ensuite des soldats pour la Somalie et la Libye. À partir de 1932, elle sert à préparer l'invasion de l'Éthiopie, selon Tekeste Negash."
       },
       {
-        "name": "Fédération Éthiopie-Érythrée",
+        "name": "Administration britannique",
+        "period": "1941 - 1952",
+        "entryType": "colonial",
+        "timeRange": {
+          "startYear": 1941,
+          "endYear": 1952,
+          "precision": "year"
+        },
+        "dominantPeoples": ["Administration britannique"],
+        "politicalCenters": ["Asmara"],
+        "historicalRole": "Après la fin de la colonie italienne en 1941, le Royaume-Uni administre l'Érythrée. La résolution 390 (V) des Nations unies de 1950 le charge de préparer une administration érythréenne et une assemblée élue, pendant une transition qui doit finir au plus tard le 15 septembre 1952."
+      },
+      {
+        "name": "Érythrée fédérée à l'Éthiopie",
         "period": "1952 - 1962",
         "entryType": "modern",
         "timeRange": {
@@ -431,169 +457,174 @@
           "precision": "year"
         },
         "dominantPeoples": [
-          "Tous les peuples érythréens sous fédération éthiopienne"
+          "Gouvernement érythréen, sous la couronne éthiopienne"
         ],
-        "politicalCenters": ["Asmara (capitale fédérale)"],
-        "historicalRole": "Fédération avec l'Éthiopie, autonomie limitée, développement du mouvement indépendantiste."
+        "politicalCenters": ["Asmara"],
+        "historicalRole": "Selon la résolution 390 (V) des Nations unies, l'Érythrée forme une unité autonome, avec ses propres pouvoirs législatif, exécutif et judiciaire pour ses affaires intérieures. La défense, les affaires étrangères, la monnaie et les ports relèvent du gouvernement fédéral. L'union totale avec l'Éthiopie met fin à la fédération le 14 novembre 1962."
       },
       {
         "name": "Province éthiopienne",
         "period": "1962 - 1991",
-        "entryType": "polity",
+        "entryType": "modern",
         "timeRange": {
           "startYear": 1962,
           "endYear": 1991,
           "precision": "year"
         },
-        "dominantPeoples": [
-          "Tous les peuples érythréens sous domination éthiopienne"
-        ],
-        "politicalCenters": ["Asmara (capitale provinciale)"],
-        "historicalRole": "Annexion par l'Éthiopie, guerre d'indépendance (1961-1991), lutte menée par le Front populaire de libération de l'Érythrée (FPLE)."
+        "dominantPeoples": ["Administration éthiopienne"],
+        "politicalCenters": ["Asmara"],
+        "historicalRole": "Après l'union de 1962, l'Érythrée est rattachée à l'Éthiopie. Trente années de guerre suivent. En juillet 1991, une conférence réunie à Addis-Abeba reconnaît le droit des Érythréens à décider de leur avenir par un référendum, et un gouvernement provisoire érythréen se met en place."
       }
     ],
     "majorPeoples": [
       {
         "name": "Tigrinya",
-        "selfAppellation": "ትግራይ (Təgray)",
-        "exonyms": [
-          "Tigrinya (terme utilisé par les Européens)",
-          "Tigréens (terme parfois utilisé",
-          "mais à distinguer de Tigré)",
-          "\"Abyssins\" (terme oriental/colonial englobant",
-          "imprécis",
-          "à éviter)"
-        ],
+        "selfAppellation": null,
+        "exonyms": ["Abyssins"],
         "peopleId": "PPL_TIGRAY",
-        "mainRegion": "Hauts plateaux (Asmara, Mendefera)",
-        "languages": ["Tigrinya (tir", "ISO 639-3)", "anglais", "arabe"],
+        "mainRegion": "Hauts plateaux du centre et du sud, autour d'Asmara",
+        "languages": ["Tigrinya (tir)"],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "Les personnes concernées se nomment Təgray. Tigrinya est le nom donné de l'extérieur le plus courant. Abyssins est une ancienne désignation orientale et coloniale qui réunit plusieurs peuples sans les distinguer ; elle est à éviter. Les Tigré, musulmans, forment un autre peuple et parlent une autre langue."
+        "appellationRemarks": "Tigrinya est d'abord le nom de la langue. Selon Tekeste Negash, avant les années 1840, la région où l'on parlait tigrigna était désignée par le nom Tigrai. Comme Tigrai désigne aussi une province d'Éthiopie, il appelle « Tigrinyans » les seuls locuteurs du tigrigna d'Érythrée. Il rappelle aussi que le récit de voyage de C. Plowden, paru en 1868, portait sur les « Abyssins », un nom plus large qui les englobait."
       },
       {
         "name": "Tigré",
-        "selfAppellation": "Tigré (ትግረ) / Tigrayit",
-        "exonyms": [
-          "Tigré (terme utilisé par les Européens)",
-          "parfois confondu avec Tigréens (Tigray)"
-        ],
+        "selfAppellation": null,
+        "exonyms": [],
         "peopleId": "PPL_TIGRE",
-        "mainRegion": "Nord-ouest, Sahel (régions côtières et basses terres)",
-        "languages": ["Tigré (tig", "ISO 639-3)", "arabe", "tigrinya"],
+        "mainRegion": "Nord du pays",
+        "languages": ["Tigré (tig)"],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "Les personnes concernées se nomment Tigré ou Tigrayit. Tigré est aussi le nom le plus courant à l'extérieur du groupe. Elles se distinguent des Tigréens, ou Tigray, qui parlent tigrinya et vivent sur les hauts plateaux. Les Tigré sont majoritairement musulmans, tandis que les Tigréens sont présentés ici comme chrétiens."
-      },
-      {
-        "name": "Afar",
-        "selfAppellation": "Qafár",
-        "exonyms": [
-          "Afar (terme utilisé par les Européens)",
-          "\"Danakil\" (terme européen et arabe ancien",
-          "connotation péjorative",
-          "à éviter)"
-        ],
-        "peopleId": "PPL_AFAR",
-        "mainRegion": "Littoral et sud-est",
-        "languages": ["Afar (aar", "ISO 639-3)", "arabe"],
-        "languageFamily": "FLG_COUCHITIQUE",
-        "appellationRemarks": "Les personnes concernées se nomment Qafár. Afar est le nom donné de l'extérieur le plus courant et accepté. Danakil, ancien nom européen et arabe, peut être méprisant ; il est donc à éviter."
+        "appellationRemarks": "Le tigré est une autre langue que le tigrigna, malgré la ressemblance des noms, et ceux qui le parlent forment un autre peuple. Chez les Bogos, décrits par Werner Munzinger au XIXe siècle, le mot tigre désignait aussi les serfs, face aux aristocrates appelés shumagle, selon Tekeste Negash."
       },
       {
         "name": "Saho",
-        "selfAppellation": "Saho",
-        "exonyms": ["Saho (terme utilisé par les Européens)"],
+        "selfAppellation": null,
+        "exonyms": ["Shiho", "Shoho"],
         "peopleId": "PPL_SAHO",
-        "mainRegion": "Centre-sud et côtes",
-        "languages": ["Saho (ssy", "ISO 639-3)", "arabe", "tigrinya"],
+        "mainRegion": "Entre le plateau du sud et la côte",
+        "languages": ["Saho (ssy)"],
         "languageFamily": "FLG_COUCHITIQUE",
-        "appellationRemarks": "\"Saho\" est l'auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Glottolog relève plusieurs graphies du nom de la langue : Saho, Shaho, Shiho et Shoho."
+      },
+      {
+        "name": "Afar",
+        "selfAppellation": "Qafar",
+        "exonyms": ["Danakil", "Denkel", "Adal"],
+        "peopleId": "PPL_AFAR",
+        "mainRegion": "Sud-est, région de la mer Rouge méridionale",
+        "languages": ["Afar (aar)"],
+        "languageFamily": "FLG_COUCHITIQUE",
+        "appellationRemarks": "Glottolog recense pour la langue afar les noms Qafar et Afaraf, ainsi que Danakil, Denkel et Adal. Le désert Danakil, partagé entre l'Éthiopie, l'Érythrée et Djibouti, porte l'un de ces noms."
+      },
+      {
+        "name": "Beja",
+        "selfAppellation": null,
+        "exonyms": ["Bedawiyet", "To-Bedawie"],
+        "peopleId": "PPL_BEJA",
+        "mainRegion": "Ouest du pays, vers la frontière du Soudan",
+        "languages": ["Beja ou bedawiyet (bej)"],
+        "languageFamily": "FLG_COUCHITIQUE",
+        "appellationRemarks": "La fiche toponymique britannique appelle la langue bedawiyet ; Glottolog la classe sous le nom beja et cite aussi To-Bedawie. La langue est aussi parlée au Soudan et en Égypte."
       },
       {
         "name": "Bilen",
-        "selfAppellation": "Bilen",
-        "exonyms": ["Bilen (terme utilisé par les Européens)"],
+        "selfAppellation": null,
+        "exonyms": ["Bogos"],
         "peopleId": "PPL_BILEN",
-        "mainRegion": "Keren (centre)",
-        "languages": ["Bilen (znl", "ISO 639-3)", "tigrinya", "arabe"],
+        "mainRegion": "Région d'Anseba, autour de Keren",
+        "languages": ["Bilen (byn)"],
         "languageFamily": "FLG_COUCHITIQUE",
-        "appellationRemarks": "\"Bilen\" est l'auto-appellation. Pas de terme péjoratif connu. Peuple agaw d'Érythrée, bilinguisme bilen/tigrinya."
+        "appellationRemarks": "Glottolog donne Bogo et Bogos parmi les autres noms de la langue bilen, qu'il écrit aussi Blin ou Bilin. Tekeste Negash parle des Bogos, décrits au XIXe siècle par Werner Munzinger, et emploie aussi le nom Bilen."
       },
       {
-        "name": "Hedareb / Beja",
-        "selfAppellation": "Bega / Hadendowa",
-        "exonyms": ["Beja", "Hedareb (terme utilisé pour les Beja d'Érythrée)"],
-        "peopleId": "PPL_BEJA",
-        "mainRegion": "Régions frontalières avec le Soudan",
-        "languages": ["Beja (bej", "ISO 639-3)", "tigré", "arabe"],
-        "languageFamily": "FLG_COUCHITIQUE",
-        "appellationRemarks": "Les personnes concernées emploient les noms Bega ou Hadendowa. Beja est le nom donné de l'extérieur le plus courant. Hedareb désigne plus précisément les Beja d'Érythrée. Ce peuple vit de part et d'autre de la frontière entre le Soudan et l'Érythrée. Les sources ne signalent pas de sens insultant pour ces noms."
+        "name": "Kunama",
+        "selfAppellation": null,
+        "exonyms": ["Cunama", "Baza"],
+        "peopleId": "PPL_KUNAMA",
+        "mainRegion": "Région de Gash-Barka, vers Barentu",
+        "languages": ["Kunama (kun)"],
+        "languageFamily": "FLG_NILOSAHARIENNE",
+        "appellationRemarks": "Glottolog recense Cunama, Baza et Bazen parmi les autres noms de la langue kunama. Le livre d'Alberto Pollera de 1913, cité par Tekeste Negash, s'intitule I Baria e i Cunama."
+      },
+      {
+        "name": "Nara",
+        "selfAppellation": null,
+        "exonyms": ["Baria", "Barya", "Barea"],
+        "peopleId": null,
+        "mainRegion": "Région de Gash-Barka",
+        "languages": ["Nara (nrb)"],
+        "languageFamily": "FLG_NILOSAHARIENNE",
+        "appellationRemarks": "Glottolog range Barea, Baria et Barya parmi les autres noms de la langue nara. Tekeste Negash, comme Alberto Pollera dans son livre de 1913, parle des Baria."
       },
       {
         "name": "Rashaida",
-        "selfAppellation": "Rashaida",
-        "exonyms": ["Rashaida (terme utilisé par les Européens)"],
+        "selfAppellation": null,
+        "exonyms": [],
         "peopleId": "PPL_RASHAIDA",
-        "mainRegion": "Désert, régions frontalières",
-        "languages": ["Arabe bedawi (arabe dialectal)", "arabe standard"],
+        "mainRegion": null,
+        "languages": ["Arabe (ara)"],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "\"Rashaida\" est l'auto-appellation. Arabes venus d'Arabie au XIXe siècle. Pas de terme péjoratif connu."
-      },
-      {
-        "name": "Autres peuples",
-        "selfAppellation": "Variées selon les groupes (Nara, Kunama)",
-        "exonyms": ["Variées selon les groupes"],
-        "mainRegion": "Diverses régions d'Érythrée",
-        "languages": ["Langues diverses (Nara", "Kunama)", "tigrinya", "arabe"],
-        "appellationRemarks": "Chaque groupe a sa propre auto-appellation (Nara, Kunama, etc.). Pas de terme péjoratif connu."
+        "appellationRemarks": "La fiche toponymique britannique présente les Rashaida comme le groupe qui parle arabe en Érythrée."
       }
     ],
     "culture": {
       "mainLanguages": [
         {
-          "name": "Tigrinya"
+          "name": "Tigrinya",
+          "isoCode": "tir",
+          "isPrimary": true
         },
         {
           "name": "Tigré",
           "isoCode": "tig"
         },
         {
-          "name": "Afar",
-          "isoCode": "aar"
+          "name": "Arabe",
+          "isoCode": "ara"
+        },
+        {
+          "name": "Anglais",
+          "isoCode": "eng"
         },
         {
           "name": "Saho",
           "isoCode": "ssy"
         },
         {
-          "name": "Bilen",
-          "isoCode": "znl"
+          "name": "Afar",
+          "isoCode": "aar"
         },
         {
-          "name": "Beja",
+          "name": "Beja (bedawiyet)",
           "isoCode": "bej"
         },
         {
-          "name": "Arabe",
-          "isoCode": "arb"
+          "name": "Bilen",
+          "isoCode": "byn"
         },
         {
-          "name": "Anglais",
-          "isPrimary": true
+          "name": "Kunama",
+          "isoCode": "kun"
+        },
+        {
+          "name": "Nara",
+          "isoCode": "nrb"
         }
       ],
-      "culturalTraditions": "Diversité culturelle importante reflétant la mosaïque ethnique de l'Érythrée. Traditions tigrigna (hauts plateaux, christianisme orthodoxe, héritage d'Aksoum). Traditions tigré (basses terres, islam, organisation tribale). Traditions couchitiques (Afar, Saho, Bilen, Beja, pastoralisme nomade). Traditions arabes (Rashaida, commerce). Musique et danse traditionnelles variées. Cérémonies de passage, rites d'initiation, fêtes traditionnelles. Architecture rupestre (Tigrinya). Poésie orale (Afar, Tigré).",
-      "dominantReligions": "Christianisme orthodoxe (Tigrinya, majoritaire), islam sunnite (Tigré, Afar, Saho, Rashaida, Beja), christianisme catholique et protestant (minorités)",
-      "lifestyles": "Agriculture (hauts plateaux, Tigrinya, cultures vivrières), pastoralisme nomade (Afar, Beja, élevage de dromadaires et bovins), commerce et activités urbaines (zones urbaines, Asmara). Urbanisation modérée. Économie basée sur l'agriculture, l'élevage pastoral, les services, et les transferts de la diaspora.",
-      "socialOrganization": "Organisation en royaumes historiques (Tigrinya, héritage d'Aksoum), chefferies traditionnelles (Tigré, Beja, organisation tribale), sultanats (Afar, sultanat d'Aussa), structures claniques patrilinéaires. Importance des lignages et des familles étendues. Rôle des conseils d'anciens. Rôle central de l'Église Tewahedo (Tigrinya).",
-      "regionalRelations": "Relations historiques avec l'Éthiopie (Tigrinya, Tigray, commerce, conflits), le Soudan (Beja, Tigré, frontière, réfugiés), Djibouti (Afar, frontière). Intégration dans l'IGAD (Autorité intergouvernementale pour le développement). Relations commerciales et culturelles transfrontalières. Diaspora importante (États-Unis, Europe, Moyen-Orient)."
+      "culturalTraditions": "La Constitution de 1997 fait de la diversité du pays un principe, « l'unité dans la diversité », et garantit l'égalité de toutes les langues érythréennes. Aucune langue n'y est déclarée officielle ; le tigrigna, l'anglais et l'arabe servent de langues nationales dans les faits, selon la fiche toponymique britannique. La poésie en tigrigna a laissé des témoignages sur la colonisation : Tekeste Negash cite des poèmes anonymes publiés en 1910, les uns hostiles au pouvoir italien, les autres favorables.",
+      "dominantReligions": "Au début de la colonisation, selon Tekeste Negash, les Tigrinya du plateau relevaient de l'Église éthiopienne, les Saho étaient musulmans, et les Baria et les Kunama ne pratiquaient ni le christianisme ni l'islam. La Constitution de 1997 garantit la liberté de pratiquer toute religion. Nous n'avons pas trouvé de chiffres récents et vérifiables sur la part de chaque religion.",
+      "lifestyles": "Au début de la période coloniale, selon Tekeste Negash, les Baria, les Kunama et les Tigrinya étaient des agriculteurs sédentaires. Les Bogos, les Tigré et les Saho vivaient en partie de l'élevage, et les Beja et les Afar surtout de l'élevage. Sur le plateau, les paysans vivaient dans environ 800 villages.",
+      "socialOrganization": "Tekeste Negash distingue trois formes d'organisation à la veille de la colonisation. Sur le plateau, les paysans tigrigna payaient un tribut à une élite dont le rang se gagnait par la valeur militaire. Chez les Bogos, les Tigré, les Beja et les Afar, une aristocratie héréditaire dominait des serfs. Les Saho, les Baria et les Kunama n'avaient ni chefs ni castes dirigeantes : des conseils d'anciens réglaient la vie des clans, et les Baria et les Kunama transmettaient biens et parenté par les femmes.",
+      "regionalRelations": "L'Érythrée a des frontières avec l'Éthiopie, le Soudan et Djibouti. Elle a été fédérée à l'Éthiopie de 1952 à 1962, puis rattachée à elle jusqu'à la fin de la guerre. De 1998 à 2000, les deux pays se font de nouveau la guerre, surtout autour de la ville frontalière de Badme. Une commission créée sous l'égide des Nations unies donne raison à l'Érythrée en 2002, mais la paix n'est signée qu'en 2018, selon la fiche toponymique britannique. Les îles Hanish, en mer Rouge, ont fait l'objet d'un différend avec le Yémen, réglé en grande partie en faveur du Yémen."
     },
     "historicalFacts": {
-      "ancientPeriods": "Partie du royaume d'Aksoum (Antiquité - VIIe siècle), centre de la civilisation éthiopienne ancienne, christianisation précoce, commerce avec l'Inde et la Méditerranée. Développement des royaumes et chefferies tigrigna sur les hauts plateaux.",
-      "middleAges": "Provinces tigrigna et afar liées à l'Éthiopie historique. Développement des chefferies Beja (XVe-XVIIIe siècle). Relations avec les empires éthiopiens et les sultanats de la Corne de l'Afrique.",
-      "precolonial": "Consolidation des royaumes tigrigna, chefferies Beja, peuples Afar nomades. Commerce régional et transsaharien. Contacts avec les Européens (Italiens, Britanniques).",
-      "colonization": "1890 : Création de la colonie italienne d'Érythrée. Période coloniale italienne (1890-1941), développement d'Asmara comme ville coloniale, exploitation économique, résistance des peuples autochtones. 1941 : Défaite italienne, administration britannique. 1952 : Fédération Éthiopie-Érythrée (autonomie limitée). 1962 : Annexion par l'Éthiopie, province éthiopienne.",
-      "independenceStruggle": "1961-1991 : Guerre d'indépendance de l'Érythrée, lutte menée par le Front populaire de libération de l'Érythrée (FPLE). Résistance armée contre l'Éthiopie. 1991 : Libération de l'Érythrée par le FPLE. 1993 : Indépendance de l'Érythrée (24 mai 1993), proclamation de l'État d'Érythrée (State of Eritrea).",
-      "postIndependence": "1993-présent : État d'Érythrée, présidence d'Isaias Afwerki (depuis 1993). Guerre frontalière avec l'Éthiopie (1998-2000). Défis : pauvreté, développement économique, relations avec l'Éthiopie, diaspora importante. L'Érythrée est un État autoritaire avec un service militaire obligatoire prolongé."
+      "ancientPeriods": "Le Périple de la mer Érythrée, un guide de navigation grec de la fin du Ier siècle, décrit le port d'Adoulis et la route qui mène, par Coloé, à la ville des Auxumites. Sur le plateau, la ville de Matara, fouillée par Francis Anfray, montre une occupation plus ancienne que le royaume d'Aksoum, puis une ville aksoumite avec une basilique et des résidences.",
+      "middleAges": "Matara est encore habitée aux VIe et VIIe siècles, selon Francis Anfray. Nous n'avons pas encore étudié la période qui suit, jusqu'au XVIIIe siècle.",
+      "precolonial": "Dans la seconde moitié du XIXe siècle, le plateau tigrigna fait partie de l'État éthiopien. De 1875 à 1879, cet État fait face à des incursions armées égyptiennes, puis italiennes. L'empereur Yohannes meurt en mars 1889, après la sécheresse de 1888, suivie de famines et d'épidémies, selon Tekeste Negash.",
+      "colonization": "L'Italie achète la baie d'Assab en 1869 par l'intermédiaire d'une compagnie de navigation, occupe Massaoua en 1885, est battue à Dogali en 1887, puis s'étend sur le plateau en 1889 après le traité de Wichale avec l'empereur Ménélik II. La colonie Eritrea naît le 1er janvier 1890. Selon un recensement italien de 1931 que cite Tekeste Negash, les Baria et les Kunama forment ensemble 4,2 % de la population et les Saho 6,9 %. De 1932 à 1941, la colonie sert de base à l'invasion de l'Éthiopie et les Italiens y représentent jusqu'à 12 % de la population. Le Royaume-Uni administre ensuite le territoire jusqu'à la fédération avec l'Éthiopie, décidée par les Nations unies le 2 décembre 1950.",
+      "independenceStruggle": "Après l'union totale avec l'Éthiopie, le 14 novembre 1962, trente années de guerre suivent. Pendant ce temps, les Érythréens demandent à plusieurs reprises un référendum suivi par des observateurs internationaux, selon le Secrétaire général des Nations unies. En juillet 1991, la conférence d'Addis-Abeba reconnaît ce droit. Le Secrétaire général propose d'envoyer une mission d'observation, l'ONUVER, et le référendum se tient en avril 1993.",
+      "postIndependence": "L'indépendance est proclamée le 24 mai 1993, et l'Érythrée entre aux Nations unies le 28 mai 1993. Sa Constitution est adoptée le 23 mai 1997. La guerre reprend avec l'Éthiopie de 1998 à 2000 ; la paix est signée en 2018. Le pays n'a jamais mené de recensement de sa population, selon le Fonds des Nations unies pour la population en 2021. Les parts de chaque peuple ne sont donc que des estimations par langue. La seule que nous avons lue réunit les Tigrinya et les Tigré, « peut-être 80 % » de la population, sans donner la part de chacun."
     },
     "sources": [
       {
@@ -612,7 +643,8 @@
         "title": "UNFPA – World Population Dashboard — Érythrée",
         "url": "https://www.unfpa.org/data/world-population/ER",
         "tier": "official",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": "Tableau de bord du Fonds des Nations unies pour la population, consulté le 3 novembre 2026 : 3,6 millions d'habitants en 2025, d'après les World Population Prospects 2024 de la Division de la population des Nations unies. C'est une estimation, faite sans recensement national."
       },
       {
         "title": "A Chronicle of the Eritrean Revolution\"",
@@ -651,72 +683,254 @@
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Toponymic Factfile: Eritrea",
+        "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+        "year": 2021,
+        "url": "https://assets.publishing.service.gov.uk/media/6672f1e9c087fbe40855ce76/Eritrea_Toponymic_Factfile.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Fiche du comité britannique des noms géographiques, consultée le 3 novembre 2026. P. 1 : nom du pays en tigrigna ኤርትራ (Iertra), capitale Asmara, environ 3,5 millions d'habitants selon une estimation des Nations unies de 2020, « les estimations diffèrent sensiblement ». P. 2 : pas de langue officielle, la Constitution de 1997 établit l'égalité des langues ; le tigrigna, l'anglais et l'arabe peuvent être vus comme langues nationales ; « neuf groupes ethnolinguistiques importants » ; tigrigna et tigré réunis « peut-être 80 % » de la population ; arabe 1 % (Rashaida), saho 5 %, afar 5 %, bedawiyet 4 %, bilen 2 %, kunama 3 %, nara 2 %. P. 3-4 : six régions, guerre de 1998-2000 autour de Badme, décision de la commission des frontières en 2002, paix en 2018, îles Hanish."
+      },
+      {
+        "title": "Eritrea's Constitution of 1997 — Constitute Project",
+        "author": "État d'Érythrée ; texte publié par le Constitute Project",
+        "year": 1997,
+        "url": "https://www.constituteproject.org/constitution/Eritrea_1997",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte anglais de la Constitution ratifiée le 23 mai 1997, consulté le 3 novembre 2026. Article 4 : « The equality of all Eritrean languages is guaranteed. » Article 6 : la diversité de l'Érythrée et le principe de « l'unité dans la diversité ». Article 19 : liberté de pratiquer toute religion. Le texte ne nomme aucun groupe ethnique."
+      },
+      {
+        "title": "United Nations Population Fund: Country programme document for Eritrea (DP/FPA/CPD/ERI/6)",
+        "author": "Fonds des Nations unies pour la population",
+        "year": 2021,
+        "url": "https://aa.unfpa.org/sites/default/files/portal-document/ENG%20-%20DP.FPA_.CPD_.ERI_.6%20-%20Eritrea%20CPD%20-%202022%20FRS%20-%20FINAL%20-%201Dec21.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 2-3",
+        "notes": "Document du conseil d'administration, daté du 1er décembre 2021, pour le programme 2022-2026. P. 2 : population de 3 452 786 habitants, d'après le Département des affaires économiques et sociales des Nations unies (2018). P. 3 : « Eritrea has not undertaken a population and housing census »."
+      },
+      {
+        "title": "Résolution 390 (V) de l'Assemblée générale des Nations unies : Érythrée (1950)",
+        "author": "Assemblée générale des Nations unies",
+        "year": 1950,
+        "url": "https://documents.un.org/doc/resolution/gen/nr0/059/88/pdf/nr005988.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 20-21 des résolutions de la cinquième session",
+        "notes": "Adoptée le 2 décembre 1950, lue en anglais. Paragraphe A.1 : « Eritrea shall constitute an autonomous unit federated with Ethiopia under the sovereignty of the Ethiopian Crown. » Paragraphe 2 : pouvoirs législatif, exécutif et judiciaire érythréens pour les affaires intérieures. Paragraphes 9 et 11 : transition jusqu'au 15 septembre 1952 au plus tard, pendant laquelle la puissance administrante reste en place."
+      },
+      {
+        "title": "Demande adressée à l'Organisation des Nations Unies pour qu'elle observe le processus référendaire en Érythrée (A/47/544)",
+        "author": "Secrétaire général des Nations unies",
+        "year": 1992,
+        "url": "https://documents.un.org/doc/undoc/gen/n92/511/29/pdf/n9251129.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 1-2",
+        "notes": "Rapport du Secrétaire général daté du 19 octobre 1992. Paragraphe 1 : « Durant les 30 années de guerre qu'ils ont subies, les Erythréens ont demandé à maintes reprises qu'il soit procédé en Erythrée à un référendum » ; le processus doit aller de juillet 1992 à avril 1993. Paragraphe 2 : la conférence d'Addis-Abeba du 1er au 5 juillet 1991 reconnaît ce droit. Le rapport mentionne le gouvernement provisoire érythréen et propose la mission ONUVER."
+      },
+      {
+        "title": "Admission de l'Érythrée à l'Organisation des Nations Unies (A/RES/47/230)",
+        "author": "Assemblée générale des Nations unies",
+        "year": 1993,
+        "url": "https://documents.un.org/doc/undoc/gen/n93/407/40/img/n9340740.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Résolution adoptée à la 104e séance plénière, le 28 mai 1993 : l'Assemblée générale « décide d'admettre l'Erythrée à l'Organisation des Nations Unies »."
+      },
+      {
+        "title": "Italian Colonialism in Eritrea, 1882-1941: Policies, Praxis and Impact",
+        "author": "Tekeste Negash",
+        "year": 1987,
+        "url": "https://archive.org/details/italiancolonialismineritrea",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 1-7, 23-24, 132-134",
+        "notes": "Thèse de l'université d'Uppsala, Studia Historica Upsaliensia 148, Almqvist & Wiksell, lue dans la copie numérisée d'Internet Archive. P. 1-2 : Assab achetée en 1869, colonie en juillet 1882, Massaoua en 1885 ; le 1er janvier 1890, les possessions sont réunies en une seule entité « henceforth to be called Eritrea ». P. 4-7 : environ 800 villages tigrigna, trente-quatre medri ; six groupes à aristocratie héréditaire ; chez les Bogos, aristocrates shumagle et serfs tigre ; Saho, Baria et Kunama gouvernés par des conseils d'anciens ; recensement de 1931. P. 23, note 13 : avant les années 1840, la région tigrigna était appelée Tigrai. P. 132 : neuf groupes ethniques et leurs modes de vie."
+      },
+      {
+        "title": "Matara: the Archaeological Investigation of a City of Ancient Eritrea",
+        "author": "Francis Anfray",
+        "year": 2012,
+        "url": "https://journals.openedition.org/palethnologie/5690",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de la revue Palethnologie, n° 4, traduction anglaise de « Matara : enquête archéologique sur une cité antique d'Érythrée ». § 12 : Matara se trouve sur le plateau, près de Sénafé. § 17 : la couche supérieure date de la fin de l'époque aksoumite, aux VIe et VIIe siècles. § 30-36 : traces de la période pré-aksoumite. § 37 : des céramiques méditerranéennes arrivaient sur le plateau « through the port of Adulis »."
+      },
+      {
+        "title": "The Periplus of the Erythraean Sea, traduction de W. H. Schoff (1912), Internet History Sourcebooks",
+        "author": "Auteur anonyme du Ier siècle ; traduction de Wilfred H. Schoff ; Fordham University",
+        "year": 1912,
+        "url": "https://sourcebooks.fordham.edu/ancient/periplus.asp",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Traduction anglaise publiée à Londres en 1912, reprise par les Internet History Sourcebooks de l'université Fordham. § 4 : Adulis, « a fair-sized village », d'où il faut trois jours jusqu'à Coloé, puis cinq jours de plus jusqu'à « the city of the people called Auxumites ». § 5 : ces régions sont gouvernées par Zoscalès."
+      },
+      {
+        "title": "Glottolog 5.3 - Tigrinya (tigr1271)",
+        "author": "Glottolog, Max Planck Institute for Evolutionary Anthropology",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/tigr1271",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue consultée le 3 novembre 2026, code ISO 639-3 tir. Classé dans la branche éthiosémitique des langues sémitiques ; parlé en Érythrée et en Éthiopie."
+      },
+      {
+        "title": "Glottolog 5.3 - Tigre (tigr1270)",
+        "author": "Glottolog, Max Planck Institute for Evolutionary Anthropology",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/tigr1270",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue consultée le 3 novembre 2026, code ISO 639-3 tig. Classé dans la branche éthiosémitique, distinct du tigrigna ; parlé en Érythrée et au Soudan."
+      },
+      {
+        "title": "Glottolog 5.3 - Bilin (bili1260)",
+        "author": "Glottolog, Max Planck Institute for Evolutionary Anthropology",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/bili1260",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue consultée le 3 novembre 2026, code ISO 639-3 byn. Langue agaw, couchitique ; autres noms : Bilen, Blin, Bogo, Bogos."
+      },
+      {
+        "title": "Glottolog 5.3 - Saho (saho1246)",
+        "author": "Glottolog, Max Planck Institute for Evolutionary Anthropology",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/saho1246",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue consultée le 3 novembre 2026, code ISO 639-3 ssy. Langue couchitique orientale, proche de l'afar ; autres graphies : Shaho, Shiho, Shoho."
+      },
+      {
+        "title": "Glottolog 5.3 - Afar (afar1241)",
+        "author": "Glottolog, Max Planck Institute for Evolutionary Anthropology",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/afar1241",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue consultée le 3 novembre 2026, code ISO 639-3 aar. Langue couchitique orientale ; autres noms : Qafar, Afaraf, Danakil, Denkel, Adal."
+      },
+      {
+        "title": "Glottolog 5.3 - Beja (beja1238)",
+        "author": "Glottolog, Max Planck Institute for Evolutionary Anthropology",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/beja1238",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue consultée le 3 novembre 2026, code ISO 639-3 bej. Langue couchitique ; autres noms : Bedawiyet, To-Bedawie ; parlée en Égypte, en Érythrée et au Soudan."
+      },
+      {
+        "title": "Glottolog 5.3 - Kunama (kuna1268)",
+        "author": "Glottolog, Max Planck Institute for Evolutionary Anthropology",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/kuna1268",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue consultée le 3 novembre 2026, code ISO 639-3 kun. Langue que Glottolog ne rattache à aucune famille plus large ; autres noms : Cunama, Baza, Bazen."
+      },
+      {
+        "title": "Glottolog 5.3 - Nara (nara1262)",
+        "author": "Glottolog, Max Planck Institute for Evolutionary Anthropology",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/nara1262",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue consultée le 3 novembre 2026, code ISO 639-3 nrb. Langue que Glottolog ne rattache à aucune famille plus large ; autres noms : Barea, Baria, Barya, Nera."
       }
     ],
     "demographics": {
       "totalPopulation": 3600000,
       "referenceYear": 2025,
-      "source": "UNFPA – World Population Dashboard",
+      "source": "UNFPA – World Population Dashboard — Érythrée",
       "peoples": [
         {
           "name": "Tigrinya",
-          "percentageInCountry": 55,
           "peopleId": "PPL_TIGRAY",
-          "region": "Hauts plateaux (Asmara, Mendefera)",
-          "languageFamily": "FLG_SEMITIQUE"
+          "referenceYear": null,
+          "region": "Hauts plateaux du centre et du sud",
+          "languageFamily": "FLG_SEMITIQUE",
+          "mainLanguageCode": "tir"
         },
         {
           "name": "Tigré",
-          "percentageInCountry": 30,
           "peopleId": "PPL_TIGRE",
-          "region": "Nord-ouest, Sahel (régions côtières et basses terres)",
-          "languageFamily": "FLG_SEMITIQUE"
-        },
-        {
-          "name": "Afar",
-          "percentageInCountry": 5,
-          "peopleId": "PPL_AFAR",
-          "region": "Littoral et sud-est",
-          "languageFamily": "FLG_COUCHITIQUE"
+          "referenceYear": null,
+          "region": "Nord du pays",
+          "languageFamily": "FLG_SEMITIQUE",
+          "mainLanguageCode": "tig"
         },
         {
           "name": "Saho",
-          "percentageInCountry": 4,
           "peopleId": "PPL_SAHO",
-          "region": "Centre-sud et côtes",
-          "languageFamily": "FLG_COUCHITIQUE"
+          "referenceYear": null,
+          "percentageInCountry": 5,
+          "region": "Entre le plateau du sud et la côte",
+          "languageFamily": "FLG_COUCHITIQUE",
+          "mainLanguageCode": "ssy"
+        },
+        {
+          "name": "Afar",
+          "peopleId": "PPL_AFAR",
+          "referenceYear": null,
+          "percentageInCountry": 5,
+          "region": "Sud-est",
+          "languageFamily": "FLG_COUCHITIQUE",
+          "mainLanguageCode": "aar"
+        },
+        {
+          "name": "Beja",
+          "peopleId": "PPL_BEJA",
+          "referenceYear": null,
+          "percentageInCountry": 4,
+          "region": "Ouest, vers la frontière du Soudan",
+          "languageFamily": "FLG_COUCHITIQUE",
+          "mainLanguageCode": "bej"
+        },
+        {
+          "name": "Kunama",
+          "peopleId": "PPL_KUNAMA",
+          "referenceYear": null,
+          "percentageInCountry": 3,
+          "region": "Gash-Barka",
+          "languageFamily": "FLG_NILOSAHARIENNE",
+          "mainLanguageCode": "kun"
         },
         {
           "name": "Bilen",
-          "population": 140000,
-          "percentageInCountry": 2,
           "peopleId": "PPL_BILEN",
-          "region": "Keren (centre)",
-          "languageFamily": "FLG_COUCHITIQUE"
+          "referenceYear": null,
+          "percentageInCountry": 2,
+          "region": "Anseba, autour de Keren",
+          "languageFamily": "FLG_COUCHITIQUE",
+          "mainLanguageCode": "byn"
         },
         {
-          "name": "Hedareb / Beja",
-          "population": 140000,
+          "name": "Nara",
+          "peopleId": null,
+          "referenceYear": null,
           "percentageInCountry": 2,
-          "peopleId": "PPL_BEJA",
-          "region": "Régions frontalières avec le Soudan",
-          "languageFamily": "FLG_COUCHITIQUE"
+          "region": "Gash-Barka",
+          "languageFamily": "FLG_NILOSAHARIENNE",
+          "mainLanguageCode": "nrb"
         },
         {
           "name": "Rashaida",
-          "population": 70000,
-          "percentageInCountry": 1,
           "peopleId": "PPL_RASHAIDA",
-          "region": "Désert, régions frontalières",
-          "languageFamily": "FLG_SEMITIQUE"
-        },
-        {
-          "name": "Autres peuples",
-          "population": 70000,
+          "referenceYear": null,
           "percentageInCountry": 1,
-          "region": "Diverses régions d'Érythrée"
+          "region": null,
+          "languageFamily": "FLG_SEMITIQUE",
+          "mainLanguageCode": "ara"
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "L'Érythrée est un pays de la Corne de l'Afrique, au bord de la mer Rouge, indépendant depuis 1993. Son nom reprend celui d'une colonie italienne de 1890 ; en tigrigna, il se dit Ertra.",
+      "followUp": "D'où vient le nom que l'Italie a donné à sa colonie de la mer Rouge en 1890 ?"
     }
   }
 }
