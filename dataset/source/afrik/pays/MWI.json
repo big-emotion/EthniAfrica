@@ -4,7 +4,7 @@
   "nameEn": "Malawi",
   "nameOfficial": "République du Malawi (Republic of Malawi, Dziko la Malaŵi)",
   "summary": "Le nom Malawi, donné au pays à son indépendance en 1964, reprend celui des Maravi, un royaume et un peuple de la région du lac que des écrits portugais décrivent dès 1624 ; selon l'archéologue Yusuf M. Juwayeyi, Maravi serait la forme portugaise de Malawi, le nom que se donnaient les Chewa. Avant 1964, le pays était le protectorat britannique du Nyasaland, un nom formé sur nyasa, un mot qui veut dire « eau » ou « lac ». Le sens de « flamme » qu'on prête parfois à malawi figure dans un dictionnaire chinyanja de 1979, mais pas dans le grand dictionnaire mang'anja de 1892.",
-  "etymology": "Le nom Malawi reprend celui des Maravi, un royaume et un peuple de la région du lac. Un Portugais installé à Sena, sur le Zambèze, décrit en 1624 « l'Empire maravi » et la capitale de son roi, le Kalonga ; cet empire se désintègre au XVIIIe siècle. Selon l'archéologue Yusuf M. Juwayeyi, Maravi serait la manière dont les Portugais rendaient Malawi, le nom que les Chewa se donnaient eux-mêmes.\n\nLa forme Maravi circulait en Europe bien avant 1964. Les jésuites portugais appelaient le grand lac « lac Maravi », c'est-à-dire « le lac du pays des Maravi », selon Harry H. Johnston, et David et Charles Livingstone mentionnent encore ce nom en 1865. Selon une biographie publiée par Philip Short en 1974, Hastings Kamuzu Banda aurait choisi le nom du pays indépendant en le voyant sur une carte ancienne de ce type.\n\nLe sens qu'on prête au mot est moins assuré. Le dictionnaire chinyanja de Jan Vermeullen donne, sous la racine lawi, la forme malawi pour « flamme de feu ». Mais le grand dictionnaire mang'anja de David Clement Scott, publié à Édimbourg en 1892, ne connaît pas cette racine : il donne chirangali et kwiri pour la flamme, et présente Malawi comme le mot yao qui veut dire « demain ».\n\nLe nom colonial Nyasaland est formé sur nyasa. Selon Scott, nyanja, nyasa et nyanza sont des formes d'un même mot qui veut dire « eau », « lac » ou « rivière ». Livingstone raconte en 1865 que ses compagnons, demandant qu'on les mène au « Nyanja Mukulu », le grand lac, furent conduits à un marécage qui portait ce nom pour leur guide : le voyageur demandait un nom propre, on lui répondait par un nom commun.",
+  "etymology": "Le nom Malawi reprend celui des Maravi, un royaume et un peuple de la région du lac. Un Portugais installé à Sena, sur le Zambèze, décrit en 1624 « l'Empire maravi » et la capitale de son roi, le Kalonga ; cet empire se désintègre au XVIIIe siècle. Selon l'archéologue Yusuf M. Juwayeyi, Maravi serait la manière dont les Portugais rendaient Malawi, le nom que les Chewa se donnaient eux-mêmes.\n\nLa forme Maravi circulait en Europe bien avant 1964. Les jésuites portugais appelaient le grand lac « lac Maravi », c'est-à-dire « le lac du pays des Maravi », selon Harry H. Johnston, et David et Charles Livingstone mentionnent encore ce nom en 1865. Selon une biographie publiée par Philip Short en 1974, Hastings Kamuzu Banda aurait choisi le nom du pays indépendant en le voyant sur une carte ancienne de ce type.\n\nLe sens qu'on prête au mot est moins assuré. Le dictionnaire chinyanja de Jan Vermeullen donne, sous la racine lawi, la forme malawi pour « flamme de feu ». Mais le grand dictionnaire mang'anja de David Clement Scott, publié à Édimbourg en 1892, ne connaît pas cette racine : il donne chirangali et kwiri pour la flamme, et, selon lui, Malawi est le mot yao pour « demain ».\n\nLe nom colonial Nyasaland est formé sur nyasa. Selon Scott, nyanja, nyasa et nyanza sont des formes d'un même mot qui veut dire « eau », « lac » ou « rivière ». Livingstone raconte en 1865 que ses compagnons, demandant qu'on les mène au « Nyanja Mukulu », le grand lac, furent conduits à un marécage qui portait ce nom pour leur guide : le voyageur demandait un nom propre, on lui répondait par un nom commun.",
   "nameOriginActor": "Le nom Malawi devient celui du pays le 6 juillet 1964, par la loi britannique sur l'indépendance. Hastings Kamuzu Banda, chef du Malawi Congress Party qui obtient l'indépendance, l'aurait choisi sur une carte ancienne portant un lac Maravi, selon son biographe Philip Short. Le nom Nyasaland était celui que l'administration britannique donnait au protectorat, et le nom Afrique centrale britannique a été proposé en 1890 par le consul Harry H. Johnston. Le nom Maravi apparaît dans des écrits portugais ; selon l'archéologue Yusuf M. Juwayeyi, il rendrait le nom que les Chewa se donnaient eux-mêmes.",
   "nameHistory": {
     "summary": "Le nom Malawi désigne un pays sans accès à la mer du sud-est de l'Afrique, la République du Malawi, qui se nomme ainsi elle-même ; c'est aussi le nom que le pays donne au lac Nyasa. Le pays s'est d'abord appelé Afrique centrale britannique, puis Nyasaland ; une forme proche, Maravi, désignait un royaume et un peuple de la région. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
@@ -115,7 +115,7 @@
               "label": "10 juin 1964"
             },
             "era": "colonial",
-            "statement": "Le nom Malawi figure dans la loi britannique du 10 juin 1964, qui donne ce nom aux territoires du protectorat du Nyasaland à partir du 6 juillet suivant. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples et le lac existaient bien avant lui.",
+            "statement": "Le nom Malawi figure dans la loi britannique du 10 juin 1964, qui donne ce nom aux territoires du protectorat du Nyasaland à partir du 6 juillet suivant. C'est la plus ancienne trace de ce nom que nous connaissons. Les peuples et le lac existaient bien avant lui.",
             "formAsWritten": "Malawi",
             "birth": true,
             "sources": [
@@ -215,7 +215,7 @@
               "label": "1624"
             },
             "era": "polity",
-            "statement": "Le nom Maravi apparaît dans les observations de Luiz Marianno, un Portugais installé à Sena, sur l'état de « l'Empire maravi » en 1624 ; il décrit la capitale du Kalonga comme un lieu très peuplé, près du lac, selon K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume et ses habitants existaient avant ce texte.",
+            "statement": "Le nom Maravi apparaît dans les observations de Luiz Marianno, un Portugais installé à Sena, sur l'état de « l'Empire maravi » en 1624 ; il décrit la capitale du Kalonga comme un lieu très peuplé, près du lac, selon K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila. C'est la plus ancienne trace de ce nom que nous connaissons. Le royaume et ses habitants existaient avant ce texte.",
             "birth": true,
             "sources": [
               {
@@ -395,7 +395,7 @@
               "label": "1897"
             },
             "era": "colonial",
-            "statement": "Le nom Nyasaland revient sans cesse dans le livre de Harry H. Johnston, qui y parle du « Nyasaland proper », le Nyasaland proprement dit. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays et ses habitants existaient bien avant lui.",
+            "statement": "Le nom Nyasaland revient sans cesse dans le livre de Harry H. Johnston, qui y parle du « Nyasaland proper », le Nyasaland proprement dit. C'est la plus ancienne trace de ce nom que nous connaissons. Le pays et ses habitants existaient bien avant lui.",
             "formAsWritten": "Nyasaland",
             "birth": true,
             "sources": [
@@ -451,7 +451,7 @@
               "label": "Début de 1890"
             },
             "era": "colonial",
-            "statement": "Le nom British Central Africa est, selon le récit que Harry H. Johnston publie en 1897, le terme qu'il propose dans son rapport au Foreign Office pour les territoires que des traités viennent de placer sous influence britannique. C'est la plus ancienne trace de ce nom que le projet connaît. Ces territoires et leurs habitants existaient bien avant lui.",
+            "statement": "Le nom British Central Africa est, selon le récit que Harry H. Johnston publie en 1897, le terme qu'il propose dans son rapport au Foreign Office pour les territoires que des traités viennent de placer sous influence britannique. C'est la plus ancienne trace de ce nom que nous connaissons. Ces territoires et leurs habitants existaient bien avant lui.",
             "formAsWritten": "British Central Africa",
             "birth": true,
             "actors": [

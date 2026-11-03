@@ -4,7 +4,7 @@
   "nameEn": "Mauritius",
   "nameOfficial": "République de Maurice (Republic of Mauritius ; Repiblik Moris en créole mauricien)",
   "summary": "Maurice tient son nom de Mauritius, le nom qu'une flotte néerlandaise donne à l'île en 1598 en l'honneur du prince Maurice de Nassau. Avant ce nom, une carte de 1502 la montre sous le nom arabe de Dina Arobi, les Portugais l'appellent Cerne, puis les Français Île de France de 1715 à 1810. L'île était déserte avant l'arrivée des Européens : ses habitants descendent notamment de colons, d'esclaves venus de Madagascar et d'Afrique, et de travailleurs engagés venus surtout d'Inde.",
-  "etymology": "Le nom Maurice vient de Mauritius, le nom que la flotte néerlandaise de l'amiral Van Neck donne à l'île en septembre 1598. Selon Charles Grant, qui écrit en 1801, ce nom honore le prince d'Orange ; le rapport colonial britannique de 1952 précise qu'il s'agit de Maurice de Nassau, qui dirigeait alors les Néerlandais. En créole mauricien, la langue la plus parlée dans l'île, le pays s'appelle Moris.",
+  "etymology": "Selon Charles Grant, qui écrit en 1801, le nom Maurice reprend Mauritius, le nom que la flotte néerlandaise de l'amiral Van Neck donne à l'île en septembre 1598, en l'honneur du prince d'Orange ; le rapport colonial britannique de 1952 précise qu'il s'agit de Maurice de Nassau, qui dirigeait alors les Néerlandais. En créole mauricien, la langue la plus parlée dans l'île, le pays s'appelle Moris.",
   "nameOriginActor": "Selon Charles Grant, c'est l'amiral néerlandais Jacob Corneliszoon van Neck qui nomme l'île Mauritius en 1598, en l'honneur du prince d'Orange. Selon le même auteur, un capitaine de la marine royale française, M. du Fresne, lui donne en 1715 le nom d'Île de France. Après la conquête britannique de 1810, le nom Mauritius redevient celui de l'île.",
   "nameHistory": {
     "summary": "Le nom Maurice désigne un pays insulaire de l'océan Indien, la République de Maurice, Mauritius en anglais et Moris en créole mauricien. L'île a porté d'autres noms avant celui-ci : Dina Arobi sur une carte de 1502, Cerne chez les Portugais, puis Île de France de 1715 à 1810. L'île était déserte quand les Européens y sont arrivés. Les sources que nous avons lues datent et expliquent ces noms ; nous les présentons plus bas.",
@@ -184,7 +184,7 @@
               "to": 1598,
               "label": "Septembre 1598"
             },
-            "statement": "Le nom Mauritius est donné à l'île en septembre 1598, lors du passage d'une flotte néerlandaise commandée par l'amiral Van Neck, en l'honneur du prince d'Orange, selon Charles Grant, qui le tient des récits de ce voyage. Le rapport colonial britannique de 1952 dit que ce nom honore le prince Maurice de Nassau. C'est la plus ancienne trace de ce nom que le projet connaît. L'île existait avant ce nom ; elle était alors déserte.",
+            "statement": "Le nom Mauritius est donné à l'île en septembre 1598, lors du passage d'une flotte néerlandaise commandée par l'amiral Van Neck, en l'honneur du prince d'Orange, selon Charles Grant, qui le tient des récits de ce voyage. Le rapport colonial britannique de 1952 dit que ce nom honore le prince Maurice de Nassau. C'est la plus ancienne trace de ce nom que nous connaissons. L'île existait avant ce nom ; elle était alors déserte.",
             "formAsWritten": "Mauritius",
             "birth": true,
             "actors": [
@@ -275,7 +275,7 @@
               "label": "1715"
             },
             "era": "colonial",
-            "statement": "Le nom Île de France apparaît en 1715, quand un capitaine de la marine royale française, M. du Fresne, aborde au port du nord-ouest, selon Charles Grant, qui s'appuie sur les journaux publiés dans l'île de 1785 à 1788. Le rapport colonial britannique de 1952 date lui aussi de 1715 ce nom donné par les Français. C'est la plus ancienne trace de ce nom que le projet connaît. L'île portait déjà le nom de Mauritius.",
+            "statement": "Le nom Île de France apparaît en 1715, quand un capitaine de la marine royale française, M. du Fresne, aborde au port du nord-ouest, selon Charles Grant, qui s'appuie sur les journaux publiés dans l'île de 1785 à 1788. Le rapport colonial britannique de 1952 date lui aussi de 1715 ce nom donné par les Français. C'est la plus ancienne trace de ce nom que nous connaissons. L'île portait déjà le nom de Mauritius.",
             "formAsWritten": "Isle of France",
             "birth": true,
             "actors": [
@@ -352,7 +352,7 @@
               "to": 1505,
               "label": "1505"
             },
-            "statement": "Le nom Cerne est le nom portugais de l'île en 1505, selon Charles Grant, qui le lie à sa découverte par Pedro Mascarenhas sous le gouvernement de Francisco de Almeida. C'est la plus ancienne trace de ce nom que le projet connaît. Grant ajoute que les Portugais ne s'y sont pas installés.",
+            "statement": "Le nom Cerne est le nom portugais de l'île en 1505, selon Charles Grant, qui le lie à sa découverte par Pedro Mascarenhas sous le gouvernement de Francisco de Almeida. C'est la plus ancienne trace de ce nom que nous connaissons. Grant ajoute que les Portugais ne s'y sont pas installés.",
             "formAsWritten": "Cerne",
             "birth": true,
             "actors": [
@@ -435,7 +435,7 @@
               "to": 1502,
               "label": "1502"
             },
-            "statement": "Le nom Dina Arobi est celui de l'île Maurice sur la carte dite de Cantino, en 1502, selon le ministère français de la Culture : c'est la première carte qui montre les Mascareignes, sous des noms arabes. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "statement": "Le nom Dina Arobi est celui de l'île Maurice sur la carte dite de Cantino, en 1502, selon le ministère français de la Culture : c'est la première carte qui montre les Mascareignes, sous des noms arabes. C'est la plus ancienne trace de ce nom que nous connaissons.",
             "formAsWritten": "Dina Arobi",
             "birth": true,
             "sources": [
