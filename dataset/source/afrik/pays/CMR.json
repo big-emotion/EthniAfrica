@@ -3,7 +3,7 @@
   "nameFr": "Cameroun",
   "nameEn": "Cameroon",
   "nameOfficial": "République du Cameroun (Republic of Cameroon)",
-  "summary": "Le Cameroun doit son nom aux crevettes du fleuve Wouri, que les Portugais nommèrent « Rio dos Camarões » au XVIe siècle. Colonisé successivement par l'Allemagne, la France et la Grande-Bretagne, il en garde un bilinguisme officiel. Plus de 280 peuples s'y côtoient, du royaume Bamoun aux chefferies bamiléké, des Sawa côtiers aux peuples des forêts du Sud.",
+  "summary": "Le Cameroun doit son nom à un fleuve que les navigateurs portugais appelaient « Rio dos Camarões », la rivière des crevettes, au XVIe siècle. Le pays a connu trois colonisations, allemande, française et britannique, et il en garde deux langues officielles, le français et l'anglais. Plus de 230 groupes y vivent, du royaume bamoun aux chefferies bamiléké, des lamidats peuls du Nord aux peuples de la côte et des forêts du Sud.",
   "etymology": "Le nom \"Cameroun\" viendrait du portugais \"Rio dos Camarões\" (Rivière des crevettes), selon l'Online Etymology Dictionary. Les navigateurs portugais auraient donné ce nom au fleuve Wouri au XVIe siècle, parce qu'il était riche en crevettes. Le terme \"Camarões\" a été adapté en \"Cameroun\" par les Français et \"Cameroons\" par les Britanniques. Le nom anglais est déjà écrit dans le traité de protection du 12 juillet 1884, où les rois douala Bell et Akwa parlent du pays appelé \"Cameroons\", avant que l'administration allemande n'en fasse \"Kamerun\".",
   "nameOriginActor": "Le nom \"Cameroun\" provient des navigateurs portugais qui ont exploré la côte camerounaise. Le terme \"Rio dos Camarões\" (Rivière des crevettes) a été donné au fleuve Wouri et a ensuite été généralisé pour désigner l'ensemble du territoire. Les colonisateurs allemands, français et britanniques ont adapté ce nom. Ni l'auteur précis du baptême ni la date exacte ne sont établis ici par une source d'époque : l'Online Etymology Dictionary date ce nom portugais du XVIe siècle.",
   "nameHistory": {
@@ -109,7 +109,7 @@
               "label": "1505-1508"
             },
             "era": "polity",
-            "statement": "Le nom Cameroun apparaît, sous la forme « rio que se chama dos Camarões », dans le routier du navigateur portugais Duarte Pacheco Pereira : un fleuve situé à deux lieues de la montagne de Fernão do Pó. C'est la plus ancienne trace de ce nom que le projet connaît. Le nom désigne alors un fleuve, pas encore un pays.",
+            "statement": "Le nom Cameroun apparaît, sous la forme « rio que se chama dos Camarões », dans le routier du navigateur portugais Duarte Pacheco Pereira : un fleuve situé à deux lieues de la montagne de Fernão do Pó. C'est la plus ancienne trace de ce nom que nous connaissons. Le nom désigne alors un fleuve, pas encore un pays.",
             "formAsWritten": "rio que se chama dos Camarões",
             "birth": true,
             "sources": [
@@ -182,9 +182,19 @@
               "label": "Du 20 mai 1972 au 4 février 1984"
             },
             "era": "modern",
-            "statement": "Le nom République unie du Cameroun est celui de l'État à partir du 20 mai 1972, selon l'article Cameroun de Wikipédia, jusqu'à la loi du 4 février 1984 qui le remplace par République du Cameroun, selon l'article 1 de la Constitution.",
+            "statement": "Le nom République unie du Cameroun est celui de l'État à partir du 20 mai 1972, date à laquelle la République fédérale prend ce nom, selon l'historien Martin Mbengué Nguimè. Il le reste jusqu'à la loi du 4 février 1984, qui le remplace par République du Cameroun, selon l'article 1 de la Constitution.",
             "aspect": "usage",
             "sources": [
+              {
+                "title": "Martin Mbengué Nguimè, « Pratiques démocratiques au Cameroun actuel : étude comparée avec la période de l'accession à l'indépendance », Outre-Mers, t. 97, n° 368-369, 2010",
+                "author": "Martin Mbengué Nguimè",
+                "year": 2010,
+                "url": "https://www.persee.fr/doc/outre_1631-0438_2010_num_97_368_4493",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 115",
+                "notes": "Article de revue d'histoire, p. 115-135, sur Persée ; première page lue, lu le 3 novembre 2026. Page 115 : « Le 20 mai 1972, la République fédérale du Cameroun devient la \"République unie du Cameroun\" » ; les deux Cameroun sont « réunifiés le Ier octobre 1961 sous la dénomination de \"République fédérale du Cameroun\" »."
+              },
               {
                 "title": "Cameroun — Wikipédia",
                 "author": "Contributeurs de Wikipédia",
@@ -296,50 +306,80 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Kamerun (allemand, 1884-1916)",
-        "Cameroun français et Cameroons britanniques (1916-1960)",
+        "Kamerun (1884-1916)",
+        "Cameroun sous mandat puis sous tutelle, français et britannique (1919-1961)",
+        "République fédérale du Cameroun (1961-1972)",
         "République unie du Cameroun (1972-1984)"
       ],
-      "antiquity": "Le territoire actuel du Cameroun était peuplé de diverses sociétés sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs royaumes et territoires (royaume Bamoun, chefferies Bamiléké, etc.).",
-      "middleAges": "Développement de royaumes et chefferies : royaume Bamoun, chefferies Bamiléké, royaumes Beti-Fang-Bulu, sultanats Mandara et Kotoko, peuples Sawa. Pas de nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Mosaïque de royaumes et chefferies autonomes : royaume Bamoun, chefferies Bamiléké (Grassfields), royaumes Beti-Fang-Bulu, sultanats Mandara et Kotoko, peuples Sawa (côtiers), peuples forestiers, pygmées Baka. Les Portugais utilisaient le terme \"Rio dos Camarões\" pour désigner la région du fleuve Wouri.",
-      "colonization": "1884-1916 : Kamerun (colonie allemande). Les Allemands ont établi la colonie du Kamerun en 1884. 1916-1960 : Cameroun français et Cameroons britanniques (mandats de la SDN puis de l'ONU après la Première Guerre mondiale). Le territoire était divisé entre la France (Cameroun français) et le Royaume-Uni (Cameroons britanniques).",
-      "contemporary": "1960 : République du Cameroun (indépendance du Cameroun français, 1er janvier 1960). 1961 : République fédérale du Cameroun (réunification avec le Cameroun britannique, 1er octobre 1961). 1972 : République unie du Cameroun (abolition du fédéralisme). 1984 : République du Cameroun (nom actuel)."
+      "antiquity": "Nous n'avons pas encore de source sur les noms que portaient ces régions dans l'Antiquité. Selon le géographe Paul Tchawa, le groupe pygmée est considéré, « à tort ou à raison », comme le plus ancien du Cameroun.",
+      "middleAges": "Aucun nom ne désigne alors l'ensemble du pays actuel. Le royaume bamoun aurait été fondé vers le XVe siècle, selon Jean-Paul Notué, qui date aussi de nombreux royaumes de la région de l'Ouest entre le XIVe et le XVIe siècle. Au nord, Doulo est la capitale historique du royaume du Wandala, selon le géographe Christian Seignobos. La géographe Antoinette Hallaire parle du « petit royaume du Mandara », au bord nord des monts du même nom.",
+      "precolonial": "Dans l'Ouest, une centaine de chefferies se partagent le plateau bamiléké, selon Jean-Paul Notué. Le nom anglais Grassland, donné à toute la région, vient de ses paysages ouverts, selon le même auteur. Au nord, les Peuls conduits par Modibo Adama fondent au début du XIXe siècle l'émirat de l'Adamawa, dont la capitale est Yola, selon l'historien Théodore Takou. Sur la côte, les Portugais sont les premiers Européens à arriver, en 1472, selon Paul Tchawa. Le plus ancien texte que nous ayons lu, écrit entre 1505 et 1508, nomme le fleuve « rio dos Camarões ». En anglais, la forme Camarones devient ensuite Camaroons, puis Cameroons, selon l'anthropologue Franck Beuvier.",
+      "colonization": "1884-1916 : Kamerun, colonie allemande. Le traité du 12 juillet 1884, signé à Douala par les rois Bell et Akwa, parle encore du pays « appelé Cameroons ». Les Allemands en font Kamerun. Douala est la capitale de 1885 à 1901, puis Buea jusqu'en 1909, avant Yaoundé, selon Marc Pabois. En 1916, les troupes britanniques entrent à Foumban et les Français prennent le contrôle du pays, selon Anne-Sandra Lobisommer. Après le traité de Versailles de 1919, le territoire est placé sous mandat de la Société des Nations, puis sous tutelle des Nations unies en 1946. La France et le Royaume-Uni l'administrent, chacun sur sa partie, selon Marc Pabois.",
+      "contemporary": "Le 1er janvier 1960, la partie française devient un État indépendant, selon l'Institut national de la statistique. Le 1er octobre 1961, elle s'unit à une partie de l'ancien Cameroun britannique pour former la République fédérale du Cameroun. Le 20 mai 1972, la République fédérale devient la République unie du Cameroun, selon l'historien Martin Mbengué Nguimè. Depuis la loi du 4 février 1984, le pays s'appelle de nouveau République du Cameroun, selon l'article 1 de la Constitution."
     },
     "kingdoms": [
       {
-        "name": "Royaume Bamoun",
-        "period": "Précolonial - présent",
+        "name": "Royaume bamoun",
+        "period": "Vers le XVe siècle - présent",
         "entryType": "polity",
+        "timeRange": {
+          "startYear": 1400,
+          "ongoing": true,
+          "precision": "approximate",
+          "datingNote": "Le début suit Jean-Paul Notué, qui date la fondation du royaume « vers le xve siècle ». Nous n'avons pas lu de source qui donne une année précise."
+        },
         "dominantPeoples": ["Bamoun"],
-        "politicalCenters": ["Foumban (capitale du royaume)"],
-        "historicalRole": "Royaume Bamoun puissant et structuré, système monarchique (sultan), résistance à la colonisation allemande et française. Traditions artistiques et culturelles riches (écriture bamoun, art royal). Autorité coutumière encore active aujourd'hui."
+        "politicalCenters": ["Foumban (capitale)"],
+        "historicalRole": "Royaume de l'Ouest du Cameroun, qui couvre tout le plateau bamoun, selon Jean-Paul Notué. Les Allemands arrivent à Foumban vers 1902. Le roi Njoya invente une écriture, le shü-môm, qui lui permet de transcrire les traditions du royaume. Sous son règne, Foumban attire des artisans de toute la région. Les sources ne donnent pas les mêmes dates pour ce règne : de 1889 à 1933 selon Anne-Sandra Lobisommer, de 1894 à 1932 selon Claude Tardits, cité par Michèle Coquet. Les Français déposent Njoya en 1932, selon Claude Tardits ; Anne-Sandra Lobisommer date de 1931 son départ en exil à Yaoundé. Le palais des rois bamoum abrite aujourd'hui un musée."
       },
       {
-        "name": "Chefferies Bamiléké",
+        "name": "Chefferies bamiléké",
         "period": "Précolonial - présent",
         "entryType": "polity",
         "dominantPeoples": ["Bamiléké"],
         "politicalCenters": [
-          "Chefferies traditionnelles de l'Ouest (Grassfields)"
+          "Bandjoun, la plus importante des chefferies",
+          "Une centaine de chefferies du plateau bamiléké"
         ],
-        "historicalRole": "Chefferies Bamiléké puissantes et structurées, système de chefferies traditionnelles, traditions agricoles et artisanales développées. Résistance à la colonisation. Rôle économique majeur dans le Cameroun contemporain."
+        "historicalRole": "Le plateau bamiléké compte une centaine de chefferies ou royaumes, dont le plus important est Bandjoun, selon Jean-Paul Notué. Chaque chefferie a un souverain sacré, le fon. Son pouvoir est limité par des notables, réunis en conseils et en sociétés dites secrètes. Sous les Allemands, cette organisation reste en grande partie la même. Sous les Français, les chefs deviennent des agents de l'administration coloniale, selon Denis Gautier et ses coauteurs."
       },
       {
-        "name": "Royaumes Beti-Fang-Bulu",
-        "period": "Précolonial - présent",
+        "name": "Royaume du Wandala (Mandara)",
+        "period": "Précolonial",
         "entryType": "polity",
-        "dominantPeoples": ["Beti", "Fang", "Bulu", "Ewondo"],
-        "politicalCenters": ["Chefferies traditionnelles du Centre-Sud"],
-        "historicalRole": "Royaumes et chefferies Beti-Fang-Bulu, traditions forestières, culte des ancêtres, masques et sculptures. Rôle politique majeur dans le Cameroun contemporain."
+        "dominantPeoples": ["Wandala (Mandara)"],
+        "politicalCenters": ["Doulo (capitale historique)"],
+        "historicalRole": "Doulo est la capitale historique du royaume du Wandala, selon Christian Seignobos. Antoinette Hallaire décrit le « petit royaume du Mandara », au bord nord des monts Mandara, qui lançait des expéditions contre les massifs voisins."
       },
       {
-        "name": "Sultanats Mandara et Kotoko",
+        "name": "Principautés kotoko",
         "period": "Précolonial - présent",
         "entryType": "polity",
-        "dominantPeoples": ["Mandara", "Kotoko", "peuples du Nord"],
-        "politicalCenters": ["Maroua", "Garoua", "sultanats traditionnels"],
-        "historicalRole": "Sultanats Mandara et Kotoko, influence islamique, commerce transsaharien. Traditions politiques et religieuses islamiques."
+        "dominantPeoples": ["Kotoko"],
+        "politicalCenters": ["Logone-Birni", "Kousséri"],
+        "historicalRole": "Petites principautés du Nord, au sud du Bornou. Selon l'anthropologue Jean Bazin, certaines ont été soumises au Bornou, et certaines le sont encore. Le voyageur allemand Gustav Nachtigal est reçu à Logone-Birni le 14 mars 1872 par un roi caché derrière un écran. Christian Seignobos présente les Kotoko comme les héritiers des Saw."
+      },
+      {
+        "name": "Émirat de l'Adamawa et lamidats peuls",
+        "period": "1809 - présent",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1809,
+          "ongoing": true,
+          "precision": "year"
+        },
+        "dominantPeoples": ["Peuls (Ful'be)"],
+        "politicalCenters": [
+          "Yola, sur la Bénoué (capitale de l'émirat)",
+          "Ngaoundéré",
+          "Garoua",
+          "Maroua",
+          "Rey Bouba",
+          "Tibati",
+          "Banyo",
+          "Tignère"
+        ],
+        "historicalRole": "En 1809, Modibo Adama reçoit l'étendard de la guerre sainte lancée en 1804 par Ousman Dan Fodio, chef de Sokoto, selon Théodore Takou. Les Peuls conquièrent alors un territoire dont la capitale est Yola. Ils fondent les lamidats de Tibati, Banyo, Tignère, Rey Bouba et Garoua dans le premier tiers du XIXe siècle, puis celui de Ngaoundéré vers 1830, après le siège des Mbum de Ngawkor. Le nom Adamaoua viendrait de Modibo Adama, selon le même auteur. À Maroua, Sali est le premier à porter le titre de lamido, de 1846 à 1896, selon Christian Seignobos. Les lamidats existent encore : celui de Ngaoundéré est pluriethnique, selon le même auteur."
       },
       {
         "name": "Colonie du Kamerun",
@@ -351,175 +391,140 @@
           "precision": "year"
         },
         "dominantPeoples": [
-          "Tous les peuples camerounais sous domination allemande"
+          "Tous les peuples du Cameroun sous domination allemande"
         ],
-        "politicalCenters": ["Douala (capitale coloniale)"],
-        "historicalRole": "Colonie allemande, développement de l'infrastructure (chemins de fer, ports), exploitation économique, résistance des peuples autochtones. Défaite allemande en 1916, partition du territoire."
+        "politicalCenters": [
+          "Douala (capitale de 1885 à 1901)",
+          "Buea (capitale de 1901 à 1909)",
+          "Yaoundé (capitale à partir de 1909)"
+        ],
+        "historicalRole": "Colonie allemande née du traité signé à Douala le 12 juillet 1884. Les Allemands arrivent à Foumban vers 1902. La bataille de Maroua a lieu la même année. La colonie prend fin en 1916 : les Britanniques entrent à Foumban et les Français prennent le contrôle du pays."
       },
       {
-        "name": "Cameroun français et Cameroons britanniques",
+        "name": "Cameroun sous mandat puis sous tutelle, français et britannique",
         "period": "1916 - 1960/1961",
         "entryType": "colonial",
         "timeRange": {
           "startYear": 1916,
           "endYear": 1961,
           "precision": "approximate",
-          "datingNote": "La fin est donnée à une année près dans les sources ; la borne retenue est la plus tardive."
+          "datingNote": "Le début suit l'occupation de 1916 ; le mandat de la Société des Nations date de 1919. La fin est double : 1960 pour la partie française, 1961 pour la partie britannique. La borne retenue est la plus tardive."
         },
         "dominantPeoples": [
-          "Tous les peuples camerounais sous mandats français et britannique"
+          "Tous les peuples du Cameroun sous administration française et britannique"
         ],
-        "politicalCenters": [
-          "Yaoundé (Cameroun français)",
-          "Buea (Cameroons britanniques)"
-        ],
-        "historicalRole": "Mandats de la SDN puis de l'ONU, administration française et britannique, développement du mouvement indépendantiste au XXe siècle. Indépendance du Cameroun français (1960) puis réunification avec le Cameroun britannique (1961)."
+        "politicalCenters": ["Yaoundé"],
+        "historicalRole": "Après le traité de Versailles, la France et le Royaume-Uni administrent chacun une partie du Cameroun, sous mandat de la Société des Nations puis, à partir de 1946, sous tutelle des Nations unies, selon Marc Pabois. La partie française devient indépendante en 1960. En 1961, le sud de la partie britannique la rejoint."
       }
     ],
     "majorPeoples": [
       {
-        "name": "Beti-Fang-Bulu",
-        "selfAppellation": "Beti, Fang, Bulu, Ewondo",
+        "name": "Beti, Bulu et Fang",
+        "selfAppellation": "Beti, Búlù (Bulu), Fang ; les Beti de la région de Yaoundé sont aussi appelés Ewondo",
         "exonyms": [
-          "\"Beti-Pahouin\" (catégorie coloniale englobante",
-          "terme problématique)",
-          "\"Pahouins\" (ancienne étiquette coloniale pour les Fang)"
+          "Pahouin (nom donné de l'extérieur à l'ensemble, dans l'expression « groupe dit pahouin »)"
         ],
         "peopleId": "PPL_BETI",
-        "mainRegion": "Centre-Sud du Cameroun (forêts équatoriales)",
-        "languages": [
-          "Ewondo (ewo",
-          "ISO 639-3)",
-          "Bulu (bum",
-          "ISO 639-3)",
-          "Fang (fan",
-          "ISO 639-3)",
-          "français"
-        ],
+        "mainRegion": "Centre et Sud du Cameroun : région de Yaoundé pour les Beti-Ewondo, région du Sud pour les Búlù",
+        "languages": ["Ewondo (ewo)", "Bulu (bum)", "Fang (fan)", "français"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Beti\", \"Fang\", \"Bulu\" et \"Ewondo\" sont les auto-appellations respectives. \"Beti-Pahouin\" est une catégorie coloniale englobante qui regroupe artificiellement plusieurs peuples distincts et doit être évitée. \"Pahouins\" est une ancienne étiquette coloniale pour les Fang et doit être évitée."
+        "appellationRemarks": "Les sources lues nomment ces peuples Beti, Búlù et Fang. Pierre Alexandre et Jacques Binet les ont réunis en 1958 sous le nom de « groupe dit pahouin », selon Marie-Rose Abomo-Maurin. Le mot « dit » montre que ce nom vient de l'extérieur. Pour cette autrice, les Fang et les Beti sont des « voisins et cousins très éloignés » des Búlù."
       },
       {
         "name": "Bamiléké",
-        "selfAppellation": "Bamiléké",
+        "selfAppellation": "Nos sources ne donnent pas de nom que l'ensemble se donne lui-même ; chaque chefferie porte son nom",
         "exonyms": [
-          "Bamiléké (terme utilisé par les Européens et les colonisateurs)"
+          "Bamiléké (nom qui s'impose pendant la colonisation française)",
+          "Grassfields (nom donné aux habitants des chefferies de l'Ouest)"
         ],
         "peopleId": "PPL_BAMILEKE",
-        "mainRegion": "Ouest du Cameroun (Grassfields)",
+        "mainRegion": "Ouest du Cameroun, plateau bamiléké",
         "languages": [
-          "Bamiléké (bax",
-          "ISO 639-3",
-          "code générique)",
-          "français",
-          "anglais"
+          "Ghomálá' (bbj)",
+          "Yemba (ybb)",
+          "autres langues bamiléké",
+          "français"
         ],
-        "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Bamiléké\" est l'auto-appellation du peuple. Pas de terme péjoratif connu."
+        "languageFamily": "FLG_BENOUECONGO",
+        "appellationRemarks": "Le nom Bamiléké s'impose pendant la colonisation française, selon l'historien Mä Tchouake Noumbissie. Il prend un sens péjoratif pendant une « période agitée de l'histoire du Cameroun », selon le même auteur. Le même auteur note qu'on appelle aussi ces habitants des « grassfields ». Glottolog range les langues bamiléké parmi les langues des Grassfields, à côté des langues bantoues."
       },
       {
-        "name": "Peul / Fulani",
-        "selfAppellation": "Fulɓe (pluriel), Pullo (singulier)",
-        "exonyms": [
-          "Peul (terme français)",
-          "Fulani (terme haoussa)",
-          "Fula (terme anglophone)",
-          "\"Fellata\" (terme haoussa parfois péjoratif",
-          "à éviter)"
-        ],
+        "name": "Peuls",
+        "selfAppellation": "Ful'be ou Fulɓe (pluriel), Pullo (singulier)",
+        "exonyms": ["Peul (nom français)"],
         "peopleId": "PPL_FULA",
-        "mainRegion": "Nord du Cameroun, Adamaoua (pasteurs nomades et sédentaires)",
-        "languages": ["Fulfulde (ful", "ISO 639-3)", "français"],
+        "mainRegion": "Nord du Cameroun : régions de l'Adamaoua, du Nord et de l'Extrême-Nord",
+        "languages": ["Fulfulde de l'Adamaoua (fub)", "français"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "Le peuple se nomme Fulɓe. Peul et Fulani sont aussi des noms acceptés, donnés de l'extérieur. Fellata peut être méprisant dans certains contextes ; il est donc à éviter."
+        "appellationRemarks": "Le peuple se nomme Ful'be, au singulier Pullo, selon Christian Seignobos. Peul est le nom français. Dans l'Adamaoua, les Peuls appelaient les non-musulmans habe, « païens », selon Jean-Claude Muller."
       },
       {
-        "name": "Kirdi",
-        "selfAppellation": "Variées selon les groupes (Mafa, Mofu, Kapsiki, etc.)",
+        "name": "Peuples non musulmans du Nord, dits « Kirdi »",
+        "selfAppellation": "Chaque groupe a son nom : Mafa, Mofou, Podoko, Kapsiki, entre autres",
         "exonyms": [
-          "\"Kirdi\" (terme haoussa signifiant \"païen\"",
-          "utilisé pour désigner les peuples non islamisés du Nord)"
+          "Kirdi (nom d'ensemble qui signifie « païen » et a pris un sens péjoratif)",
+          "Matakam (nom employé à côté de Mafa)"
         ],
         "peopleId": null,
-        "mainRegion": "Extrême-Nord du Cameroun (montagnes)",
-        "languages": ["Langues tchadiques (plusieurs langues)", "français"],
+        "mainRegion": "Nord et Extrême-Nord du Cameroun, monts Mandara et plaines voisines",
+        "languages": ["Mafa (maf)", "autres langues tchadiques", "français"],
         "languageFamily": "FLG_TCHADIQUE",
-        "appellationRemarks": "\"Kirdi\" est un terme haoussa signifiant \"païen\" utilisé pour désigner les peuples non islamisés du Nord. Ce terme peut avoir une connotation péjorative et doit être utilisé avec précaution. Chaque groupe a sa propre auto-appellation (Mafa, Mofu, Kapsiki, etc.)."
+        "appellationRemarks": "Kirdi est le nom que l'on donne, dans le nord et l'extrême nord du pays, aux populations qui ne sont pas musulmanes, selon Jean-Claude Muller. Le mot signifie « païen » et a pris un sens péjoratif, selon Antoinette Hallaire. Muller note qu'il n'était pas employé dans l'Adamaoua, où les Peuls disaient habe. Chaque groupe porte son propre nom. Les montagnards ont subi les expéditions du royaume du Mandara, puis la domination peule."
       },
       {
-        "name": "Sawa / Peuples côtiers",
-        "selfAppellation": "Sawa, Duala, Bassa, Bakoko, Bakweri",
+        "name": "Duala et peuples de la côte",
+        "selfAppellation": "Duala (Douala)",
         "exonyms": [
-          "Sawa (terme générique pour les peuples côtiers)",
-          "Duala",
-          "Bassa",
-          "Bakoko",
-          "Bakweri"
+          "Dualla (forme écrite par un officier anglais au XIXe siècle)"
         ],
         "peopleId": "PPL_DUALA",
-        "mainRegion": "Littoral du Cameroun (Douala, côte atlantique)",
-        "languages": [
-          "Duala (dua",
-          "ISO 639-3)",
-          "Bassa (bas",
-          "ISO 639-3)",
-          "français"
-        ],
+        "mainRegion": "Littoral du Cameroun, estuaire du Wouri",
+        "languages": ["Duala (dua)", "Basaa (bas)", "français"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Sawa\" est un terme générique pour les peuples côtiers. \"Duala\", \"Bassa\", \"Bakoko\", \"Bakweri\" sont les auto-appellations respectives. Pas de terme péjoratif connu."
+        "appellationRemarks": "Glottolog range le duala dans un groupe de langues de la côte qu'il nomme sawabantu. Au XIXe siècle, les « villes » des rois Bell et Akwa se trouvent à l'embouchure du Wouri ; elles sont devenues Douala, selon Franck Beuvier. Un officier anglais écrit alors leur nom « Dualla »."
       },
       {
-        "name": "Peuples forestiers du Sud et de l'Est",
-        "selfAppellation": "Maka, Kaka, Koonzime, etc.",
-        "exonyms": [
-          "Maka",
-          "Kaka",
-          "Koonzime (termes utilisés par les Européens)"
-        ],
+        "name": "Peuples des forêts du Sud et de l'Est",
+        "selfAppellation": "Makaa, entre autres ; chaque groupe a son nom",
+        "exonyms": [],
         "peopleId": null,
-        "mainRegion": "Sud et Est du Cameroun (forêts équatoriales)",
-        "languages": ["Langues bantoues (plusieurs langues)", "français"],
+        "mainRegion": "Sud et Est du Cameroun",
+        "languages": ["Makaa (mcp)", "autres langues bantoues", "français"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Chaque groupe a sa propre auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Chaque groupe a son propre nom. Glottolog classe le makaa parmi les langues bantoues du groupe A80. Nous n'avons pas encore de source sur l'histoire de ces noms."
       },
       {
-        "name": "Pygmées / Autochtones",
-        "selfAppellation": "Baka, Bagyeli, Medzan",
-        "exonyms": [
-          "\"Pygmées\" (terme anthropologique",
-          "parfois considéré comme péjoratif)",
-          "\"Baka\"",
-          "\"Bagyeli\"",
-          "\"Medzan\""
-        ],
+        "name": "Baka, Bakola et Bedzan",
+        "selfAppellation": "Baka, Bakola ou Bagyeli, Bedzan",
+        "exonyms": ["Pygmées (nom souvent péjoratif)"],
         "peopleId": "PPL_PYGMEES_AUTOCHTONES",
-        "mainRegion": "Forêts du Sud et de l'Est du Cameroun",
+        "mainRegion": "Est du Cameroun pour les Baka ; département de l'Océan, près de la côte, pour les Bakola (Lolodorf, Bipindi, Kribi, Campo)",
         "languages": [
-          "Langues bantoues (plusieurs langues)",
-          "langues oubanguiennes",
+          "Baka (bkc)",
+          "parler des Bakola, proche du ngumba",
           "français"
         ],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Pygmées\" est un terme anthropologique qui peut être considéré comme péjoratif par certains groupes. \"Baka\", \"Bagyeli\" et \"Medzan\" sont les auto-appellations respectives. Il est préférable d'utiliser les auto-appellations spécifiques."
+        "appellationRemarks": "Les Baka, les Bakola, aussi appelés Bagyeli, et les Bedzan sont les trois principaux groupes que l'on appelle Pygmées au Cameroun, selon Bernard Aristide Bitouga. Pour le chercheur Bahuchet, cité par le même auteur, ce nom est souvent péjoratif. Les noms propres à chaque groupe sont donc préférables. Le baka n'est pas une langue bantoue : Glottolog le range parmi les langues oubanguiennes. Le parler des Bakola est très proche de celui de leurs voisins ngumba."
       },
       {
-        "name": "Hausa",
+        "name": "Haoussa",
         "selfAppellation": "Hausa",
-        "exonyms": ["Hausa (terme utilisé par les Européens)"],
+        "exonyms": ["Haoussa (graphie française)"],
         "peopleId": "PPL_HAUSA",
-        "mainRegion": "Nord du Cameroun, zones urbaines",
-        "languages": ["Hausa (hau", "ISO 639-3)", "français"],
+        "mainRegion": "Nous n'avons pas encore de source sur leurs régions au Cameroun",
+        "languages": ["Hausa (hau)", "français"],
         "languageFamily": "FLG_TCHADIQUE",
-        "appellationRemarks": "Le terme \"Hausa\" est l'auto-appellation du peuple. Pas de terme péjoratif connu."
+        "appellationRemarks": "Glottolog classe le haoussa parmi les langues tchadiques de l'Ouest. Nous n'avons pas encore de source sur l'histoire de la présence haoussa au Cameroun."
       },
       {
         "name": "Autres peuples",
-        "selfAppellation": "Variées selon les groupes",
-        "exonyms": ["Variées selon les groupes"],
-        "peopleId": "PPL_TIV",
-        "mainRegion": "Diverses régions du Cameroun",
+        "selfAppellation": "Chaque groupe a son nom",
+        "exonyms": ["Variables selon les groupes"],
+        "peopleId": null,
+        "mainRegion": "Toutes les régions du Cameroun",
         "languages": ["Langues diverses", "français", "anglais"],
-        "appellationRemarks": "Chaque groupe a sa propre auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "L'Institut national de la statistique compte plus de 230 groupes au Cameroun. Ce chapitre ne présente que les plus connus."
       }
     ],
     "culture": {
@@ -530,9 +535,17 @@
           "isPrimary": true
         },
         {
-          "name": "anglais",
+          "name": "Anglais",
           "isoCode": "eng",
           "isPrimary": true
+        },
+        {
+          "name": "Pidgin camerounais",
+          "isoCode": "wes"
+        },
+        {
+          "name": "Fulfulde de l'Adamaoua",
+          "isoCode": "fub"
         },
         {
           "name": "Ewondo",
@@ -547,45 +560,55 @@
           "isoCode": "fan"
         },
         {
-          "name": "Bamiléké",
-          "isoCode": "bax"
-        },
-        {
-          "name": "Fulfulde",
-          "isoCode": "ful"
-        },
-        {
           "name": "Duala",
           "isoCode": "dua"
         },
         {
-          "name": "Bassa",
+          "name": "Basaa",
           "isoCode": "bas"
+        },
+        {
+          "name": "Ghomálá'",
+          "isoCode": "bbj"
+        },
+        {
+          "name": "Yemba",
+          "isoCode": "ybb"
+        },
+        {
+          "name": "Bamoun",
+          "isoCode": "bax"
+        },
+        {
+          "name": "Makaa",
+          "isoCode": "mcp"
+        },
+        {
+          "name": "Mafa",
+          "isoCode": "maf"
         },
         {
           "name": "Hausa",
           "isoCode": "hau"
         },
         {
-          "name": "langues tchadiques"
-        },
-        {
-          "name": "langues bantoues"
+          "name": "Baka",
+          "isoCode": "bkc"
         }
       ],
-      "culturalTraditions": "Diversité culturelle importante reflétant la mosaïque ethnique du Cameroun (plus de 280 ethnies). Traditions bantoues (Beti-Fang-Bulu, Bamiléké, Sawa). Traditions peules (pastoralisme, poésie). Traditions islamiques (Nord, sultanats). Traditions pygmées (chasse-cueillette, forêts). Art royal (royaume Bamoun, écriture bamoun). Masques et sculptures (Beti-Fang, Bamiléké). Musique et danse traditionnelles variées. Cérémonies de passage, rites d'initiation, fêtes traditionnelles. Le pays est souvent présenté comme une « Afrique en miniature » : une étude de 2012 relève que la formule, très répétée dans la promotion touristique, est illusoire prise à la lettre, même si de nombreux éléments physiques, sociolinguistiques et historiques semblent la soutenir. Sur les six grandes familles linguistiques définies par Greenberg, seules la khoïsan et l'austronésienne n'y sont pas représentées.",
-      "dominantReligions": "Christianisme (catholicisme et protestantisme, surtout dans le sud), islam (surtout dans le nord), religions traditionnelles africaines (syncrétisme fréquent, culte des ancêtres, masques)",
-      "lifestyles": "Agriculture (Bamiléké, Beti-Fang, cultures vivrières, cacao, café), élevage (Peuls, bovins), chasse-cueillette (Pygmées), commerce et activités urbaines (zones urbaines, Douala, Yaoundé). Urbanisation croissante. Économie basée sur l'agriculture (cacao, café, coton, bananes), l'exploitation pétrolière, et les services.",
-      "socialOrganization": "Organisation en royaumes historiques (Bamoun, système monarchique), chefferies traditionnelles (Bamiléké, Grassfields), sultanats (Mandara, Kotoko), structures claniques patrilinéaires. Importance des lignages et des familles étendues. Rôle des conseils d'anciens. Organisation égalitaire chez les Pygmées (chasseurs-cueilleurs).",
-      "regionalRelations": "Relations historiques avec le Nigeria (commerce, peuples transfrontaliers), le Tchad (commerce, peuples transfrontaliers), la RCA (commerce, peuples transfrontaliers), la Guinée équatoriale (Fang, commerce). Intégration dans la CEMAC (Communauté économique et monétaire de l'Afrique centrale) et la CEDEAO (Communauté économique des États de l'Afrique de l'Ouest). Relations commerciales et culturelles transfrontalières. Bilinguisme officiel français-anglais."
+      "culturalTraditions": "Le Cameroun compte plus de 230 groupes, selon l'Institut national de la statistique, et environ 250 langues, selon l'Organisation suisse d'aide aux réfugiés. Le pays est souvent présenté comme une « Afrique en miniature ». Selon le géographe Paul Tchawa, la formule, très répétée par la promotion touristique, est illusoire prise à la lettre, même si de nombreux éléments physiques, linguistiques et historiques semblent la soutenir. Sur les six grandes familles de langues définies par Greenberg, seules la khoïsan et l'austronésienne n'y sont pas représentées. À Foumban, le roi Njoya invente une écriture, le shü-môm, et sa cour attire des artisans de toute la région. Chez les Búlù, les Fang et les Beti, la parole orale est au centre de la vie commune, selon Marie-Rose Abomo-Maurin . Elle a aussi publié, avec Towo Atangana, un mvet boulou dit par Asomo Ngono Ela, une œuvre de la tradition orale.",
+      "dominantReligions": "Selon le recensement de 2005, cité par l'Organisation suisse d'aide aux réfugiés, 38,4 % des habitants se disent catholiques, 26,3 % protestants et 20,9 % musulmans. 5,6 % se disent « animistes », c'est-à-dire fidèles aux religions africaines, et 8,8 % suivent d'autres religions ou n'en ont pas. L'islam est surtout présent au nord, où il était déjà installé avant la colonisation, selon Paul Tchawa.",
+      "lifestyles": "Dans les savanes du Nord, les Peuls sont surtout des éleveurs, selon Paul Tchawa. Les monts Mandara portent des massifs très peuplés de paysans montagnards, selon Antoinette Hallaire. Sur le plateau bamiléké, les haies vives marquent les champs et les droits sur la terre. Après 1945, le café s'y répand. Faute de terres, beaucoup de Bamiléké partent vers le Moungo et vers les villes, selon Denis Gautier et ses coauteurs.",
+      "socialOrganization": "Dans l'Ouest, chaque chefferie bamiléké a un souverain sacré, le fon, dont le pouvoir est limité par des notables réunis en conseils et en sociétés dites secrètes, selon Jean-Paul Notué. Dans le Nord, le lamido est le chef peul ; le titre est donné aujourd'hui aux chefs de canton peuls ou musulmans, selon Antoinette Hallaire. Les lamidats réunissent plusieurs peuples. À Ngaoundéré, les Mbum paient tribut au lamido mais gardent leur propre organisation sous leur chef, le Belaka, selon Théodore Takou. La Constitution reconnaît les valeurs traditionnelles conformes aux principes démocratiques et protège les droits des populations autochtones.",
+      "regionalRelations": "Le Cameroun est membre de la Communauté économique et monétaire de l'Afrique centrale (CEMAC), créée en 1994 avec la Centrafrique, le Congo, le Gabon, la Guinée équatoriale et le Tchad. Au XIXe siècle, l'émirat peul de l'Adamawa, centré sur Yola, couvrait une partie du Nigeria actuel et du Nord-Cameroun, selon Théodore Takou. Les principautés kotoko vivaient au voisinage du Bornou et du Baguirmi, selon Jean Bazin. Le groupe pygmée vit aussi en Centrafrique, au Gabon, en République démocratique du Congo et au Rwanda, selon Paul Tchawa. Le français et l'anglais sont les deux langues officielles, avec le même statut, selon la Constitution. Lors de la réunification de 1961, les francophones forment environ 70 % de la population et les anglophones 30 %, selon Félix Nicodème Bikoï."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement initial par diverses sociétés sans nom unifié. Développement de chefferies et royaumes locaux. Arrivée et expansion des peuples bantous dans le sud et de l'est.",
-      "middleAges": "Formation et développement du royaume Bamoun, chefferies Bamiléké (Grassfields), royaumes Beti-Fang-Bulu. Développement de réseaux commerciaux régionaux et transsahariens. Arrivée de l'islam dans le nord (sultanats Mandara et Kotoko).",
-      "precolonial": "Consolidation du royaume Bamoun, chefferies Bamiléké puissantes, royaumes Beti-Fang-Bulu. Développement des sultanats islamiques dans le nord. Peuples Sawa (côtiers) actifs dans le commerce côtier. Contacts avec les Européens (Portugais, puis Allemands, Français, Britanniques).",
-      "colonization": "1884 : Établissement de la colonie allemande du Kamerun, à la suite du traité de protection du 12 juillet 1884 signé à Douala par les rois Bell et Akwa avec des agents des maisons de commerce Woermann et Jantzen & Thormählen. Période coloniale allemande (1884-1916), développement de l'infrastructure, exploitation économique, résistance des peuples autochtones. 1916 : Défaite allemande, partition du territoire entre la France et le Royaume-Uni. 1916-1960/1961 : Mandats français et britannique (SDN puis ONU). Développement du mouvement indépendantiste au XXe siècle.",
-      "independenceStruggle": "1960 : Indépendance du Cameroun français (1er janvier 1960), proclamation de la République du Cameroun. 1961 : Réunification avec le Cameroun britannique (1er octobre 1961), création de la République fédérale du Cameroun. 1972 : Abolition du fédéralisme, création de la République unie du Cameroun.",
-      "postIndependence": "1984 : Changement de nom pour \"République du Cameroun\" (nom actuel). Période de stabilité politique relative sous la présidence de Paul Biya (depuis 1982). Défis : pauvreté, inégalités sociales, tensions anglophones/francophones, corruption. Le Cameroun est un pays officiellement bilingue (français-anglais)."
+      "ancientPeriods": "Nous n'avons pas encore de source lue sur le premier peuplement du pays. Selon Paul Tchawa, le groupe pygmée est considéré, « à tort ou à raison », comme le plus ancien du Cameroun. Le même auteur situe l'origine des éleveurs peuls vers le bassin du Niger.",
+      "middleAges": "Le royaume bamoun aurait été fondé vers le XVe siècle, selon Jean-Paul Notué. Le même auteur date la fondation de nombreux royaumes de l'Ouest entre le XIVe et le XVIe siècle, et d'autres entre le XVIIe et le XIXe siècle. Au nord, le royaume du Wandala a pour capitale historique Doulo, selon Christian Seignobos.",
+      "precolonial": "Les Portugais sont les premiers Européens à aborder la côte, en 1472, selon Paul Tchawa. Vers 1800, Bimbia est une place de commerce. Les « villes » des rois Bell et Akwa, à l'embouchure du Wouri, deviendront Douala. En 1840 et 1841, des traités entre les Britanniques et les Duala visent à mettre fin à la traite des esclaves, selon Franck Beuvier. Au nord, après l'appel de 1804 d'Ousman Dan Fodio, les Peuls conduits par Modibo Adama conquièrent un vaste territoire. Ils y fondent des lamidats, dont Garoua et, vers 1830, Ngaoundéré, selon Théodore Takou. À Maroua, le chef giziga est chassé entre 1792 et 1794 ; Sali y porte le premier le titre de lamido, de 1846 à 1896, selon Christian Seignobos. Les peuples des monts Mandara subissent les expéditions du royaume du Mandara, puis la domination peule, selon Antoinette Hallaire.",
+      "colonization": "1884 : le 12 juillet, les rois douala Bell et Akwa signent à Douala un traité de protection avec des agents des maisons de commerce allemandes Woermann et Jantzen & Thormählen. La colonie allemande du Kamerun commence. Douala en est la capitale de 1885 à 1901, puis Buea jusqu'en 1909, et enfin Yaoundé, selon Marc Pabois. Les Allemands arrivent à Foumban vers 1902. La bataille de Maroua a lieu la même année. Sur le plateau bamiléké, ils laissent en place l'organisation des chefferies. 1916 : les Britanniques entrent à Foumban et les Français prennent le contrôle du pays. 1919 : après le traité de Versailles, le Cameroun est placé sous mandat de la Société des Nations, puis sous tutelle des Nations unies en 1946. La France et le Royaume-Uni en administrent chacun une partie. Les Français font des chefs bamiléké des agents de l'administration. Ils déposent le roi bamoun Njoya, qui part en exil à Yaoundé, en 1931 ou en 1932 selon les auteurs. Selon Félix Nicodème Bikoï, le pays a ainsi connu « trois colonisations successives et parfois concomitantes ».",
+      "independenceStruggle": "Autour de l'indépendance, de 1958 à 1962, des conflits touchent la région bamiléké. Beaucoup d'habitants des zones isolées doivent partir vers les villes, selon Denis Gautier et ses coauteurs. Le 1er janvier 1960, la partie française devient indépendante. Le 1er octobre 1961, elle s'unit à une partie de l'ancien Cameroun britannique dans la République fédérale du Cameroun. Nous n'avons pas encore lu de source sur les mouvements politiques qui ont conduit à l'indépendance.",
+      "postIndependence": "Le 20 mai 1972, après un référendum qui supprime les États fédérés, la République fédérale devient la République unie du Cameroun. Le 20 mai est depuis la fête nationale. La loi du 4 février 1984 rend au pays le nom de République du Cameroun. La Constitution en vigueur date de 1996 et divise le pays en dix régions. Paul Biya dirige le pays depuis 1982. Selon l'Organisation suisse d'aide aux réfugiés, en 2026, des séparatistes sont actifs dans les régions anglophones, et le groupe Boko Haram dans l'Extrême-Nord."
     },
     "sources": [
       {
@@ -650,7 +673,259 @@
         "url": "https://journals.openedition.org/com/6640",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Article scientifique en accès ouvert sur OpenEdition ; lu pour la formule « Afrique en miniature » et la représentation des familles linguistiques."
+        "notes": "Article scientifique en accès ouvert sur OpenEdition, de Paul Tchawa, géographe à l'université de Yaoundé I ; lu pour la formule « Afrique en miniature » et la représentation des familles linguistiques, relu le 3 novembre 2026. § 4 : « seules le Khoïsan (minoritaire) et l'austronésien ne sont pas représentées au Cameroun » ; § 35 : « Les vastes savanes du Nord du pays offrent un cadre particulièrement propice à l'activité du groupe des pasteurs peuls » ; § 37 : le groupe dit pahouin réunit « Béti, Bulu et Fang » ; § 40 : « le groupe pygmée considéré, à tort ou à raison, comme le plus ancien du Cameroun », présent aussi en Centrafrique, au Gabon, en RD Congo et au Rwanda ; § 44 : avant la colonisation, « l'islam du groupe soudanais du Nord » côtoie les religions des peuples bantous de la forêt ; § 45 : « les Portugais aient été les premiers Européens à aborder les côtes camerounaises en 1472 », protectorat allemand reconnu en 1884, partage entre Français et Britanniques « dès 1919 », bilinguisme officiel ; § 46 : le pidgin « a au moins trois millions de locuteurs au Cameroun »."
+      },
+      {
+        "title": "Joseph Tedou, Évolution des systèmes statistiques nationaux : expérience du Cameroun, Institut national de la statistique du Cameroun, Commission de statistique des Nations unies, 2007",
+        "url": "https://unstats.un.org/unsd/statcom/statcom_seminar/Cameroun.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Communication du directeur général de l'Institut national de la statistique du Cameroun, New York, février 2007, publiée par la Division de statistique des Nations unies ; lu le 3 novembre 2026. Section 2, « Brève présentation du Cameroun » : « Indépendant depuis le 1er janvier 1960, la Constitution en vigueur date de 1996 » ; « la population est estimée en 2005 à environ 17 millions d'habitants » ; « Le Cameroun se caractérise par une riche diversité culturelle représentée par plus de 230 ethnies réparties en grands groupes »."
+      },
+      {
+        "title": "Constitution du Cameroun de 1972, révisée en 2008, version anglaise, Constitute Project",
+        "url": "https://www.constituteproject.org/constitution/Cameroon_2008",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte de la Constitution en anglais, lu le 3 novembre 2026. Article 1 (3) : « The Official languages of the Republic of Cameroon shall be English and French, both languages having the same status » ; l'État « shall endeavour to protect and promote national languages ». Article 61 (1) : dix régions, « Adamaoua; Centre; East; Far North; Littoral; North; North West; West; South; South West ». Préambule : l'État « shall ensure the protection of minorities and shall preserve the rights of indigenous populations ». Article 1 : la loi du 4 février 1984 donne le nom de « Republic of Cameroon »."
+      },
+      {
+        "title": "Organisation suisse d'aide aux réfugiés (OSAR), Factsheet : Cameroun, février 2026",
+        "url": "https://www.osar.ch/fileadmin/user_upload/Publikationen/Factsheets/260213_KAM_Factsheet_web_FR.pdf",
+        "tier": "unverified",
+        "source_kind": "ngo",
+        "notes": "Fiche de synthèse d'une organisation non gouvernementale suisse, lu le 3 novembre 2026. Page 1 : « 38,4% se considèrent comme catholiques romains, 26,3% comme protestants et 20,9% comme musulmans (sunnites). 5,6% se considèrent animistes et 8,8% se sentent appartenir à d'autres religions ou ne sont pas croyants (dernier recensement en 2005) » ; « plus de 200 groupes ethniques et 250 langues ». Page 2 : « Le président Paul Biya [...] dirige le Cameroun depuis 1982 ». La fiche cite aussi des séparatistes dans les régions anglophones et Boko Haram dans l'Extrême-Nord. Les chiffres du recensement sont rapportés, pas tirés des tableaux du recensement lui-même."
+      },
+      {
+        "title": "Marc Pabois, « Cameroun », In Situ. Revue des patrimoines, n° 3, 2003",
+        "url": "https://journals.openedition.org/insitu/1888",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Rapport de mission publié dans la revue du ministère français de la Culture, en accès ouvert sur OpenEdition, lu le 3 novembre 2026. § 3 : Douala « devient la capitale du pays de 1885 à 1901 », Buea l'est de 1901 à 1909, puis « la capitale se déplace à Yaoundé » ; après le traité de Versailles (1919), le pays est « placé sous le régime de mandat international » de la Société des Nations, puis sous tutelle en 1946 ; « La France et l'Angleterre administrent alors le Cameroun » ; « La partie française du Cameroun devient indépendante en 1960 et la partie anglaise en 1961 » ; la république devient unitaire en 1972. § 5 : « le musée du palais des rois Bamoum à Foumban »."
+      },
+      {
+        "title": "Félix Nicodème Bikoï, « L'aventure ambiguë d'un pays bilingue. Le cas du Cameroun », Documents pour l'histoire du français langue étrangère ou seconde, n° 40/41, 2008",
+        "url": "https://journals.openedition.org/dhfles/451",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de revue scientifique en accès ouvert sur OpenEdition, p. 231-240, lu le 3 novembre 2026. § 3 : « Le Cameroun a connu trois colonisations successives et parfois concomitantes en moins d'un siècle de son histoire » ; § 28 : en 1961, « Un État où les francophones représentent 70 % de la population et les anglophones 30 % » ; § 31 : la minorité anglophone est « jalouse de préserver son héritage anglo-saxon »."
+      },
+      {
+        "title": "Anne-Sandra Lobisommer, « Le dessin d'art bamum (Grassland-Cameroun) : une mise en image de l'histoire », Afrique : Archéologie & Arts, n° 2, 2002-2003",
+        "url": "https://journals.openedition.org/aaa/4439",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de revue scientifique en accès ouvert sur OpenEdition, lu le 3 novembre 2026. § 1 : Njoya « régna sur le royaume de 1889 à 1933 » ; § 3 : il invente « l'écriture shü-môm » ; § 4 : « Foumban la capitale » ; § 5 : « le départ du roi en exil à Yaoundé (1931) » ; note 3 : « Les Allemands arrivent au royaume vers 1902 », les Anglais entrent à Foumban en 1916 et les Français prennent ensuite le contrôle du pays."
+      },
+      {
+        "title": "Michèle Coquet, compte rendu de Claude Tardits, Histoire singulière de l'art bamoum (Cameroun), L'Homme, n° 181, 2007",
+        "url": "https://journals.openedition.org/lhomme/3023",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Compte rendu publié dans la revue d'anthropologie L'Homme, en accès ouvert sur OpenEdition, lu le 3 novembre 2026. Njoya règne « de 1894 à 1932, date de sa déposition par les Français » ; son écriture « lui permit de transcrire les témoignages » sur les traditions bamoum ; « Foumban est alors une cité de 15 000 à 20 000 habitants » à l'arrivée des Allemands en 1902 ; « Foumban devint sous le règne de ce monarque un lieu réputé de rassemblement d'artisans venus de toute la région »."
+      },
+      {
+        "title": "Jean-Paul Notué, « Le mégalithisme au Grassland (Cameroun occidental) », Afrique : Archéologie & Arts, n° 5, 2007-2009",
+        "url": "https://journals.openedition.org/aaa/843",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de revue scientifique en accès ouvert sur OpenEdition, p. 27-64, lu le 3 novembre 2026. § 15 : le paysage ouvert explique « le terme de « Grassland » utilisé pour dénommer toute la zone » ; § 17 : nombreux royaumes fondés entre le XIVe et le XVIe siècle ; § 19 : le souverain sacré, le fon, voit son pouvoir limité par des notables réunis en conseils et en sociétés mkem « dites secrètes » ; § 22 : le plateau bamiléké est « organisé en une centaine de chefferies ou royaumes dont le plus important est Bandjoun » ; § 27 : « Le royaume bamoum fondé vers le xve siècle après J.-C., couvre tout le plateau du même nom »."
+      },
+      {
+        "title": "Mä Tchouake Noumbissie, « La construction de l'imaginaire socio-politique bamiléké et les prémices de la rébellion dans l'Ouest-Cameroun », Outre-Mers, t. 94, n° 354-355, 2007",
+        "url": "https://www.persee.fr/doc/outre_1631-0438_2007_num_94_354_4262",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de revue d'histoire, p. 243-269, sur Persée ; seule la première page a pu être lue, lu le 3 novembre 2026. Page 243 : les habitants des chefferies de l'Ouest sont « aussi appelés des « grassfields » » ; ils forment « une communauté de chefferies disparates » ; note 2 : le nom Bamiléké « s'imposa durant la colonisation française » et « aura un sens péjoratif durant la période agitée de l'histoire du Cameroun »."
+      },
+      {
+        "title": "Denis Gautier, Dirk Verboven et David Andrew Wardell, « The origins of the Bamiléké hedgescape \"bocage\". Development from 1900 to 1960 », Cybergeo, 2017",
+        "url": "https://journals.openedition.org/cybergeo/28896",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de revue de géographie en accès ouvert sur OpenEdition, en anglais, lu le 3 novembre 2026. § 11 : sous les Allemands, « The traditional political organisation remained mostly unchanged » ; § 34 : sous les Français, les chefs deviennent des agents de l'administration coloniale ; § 37 : sous la pression démographique, « the Bamiléké started emigrating to the Moungo region and to the cities » ; § 62 : le café, après 1945, est d'abord le domaine des notables ; § 75 : pendant les conflits de l'indépendance (1958-1962), des habitants doivent partir vers les villes."
+      },
+      {
+        "title": "Théodore Takou, « Guerre, pouvoir et société dans les lamidats peuls du Nord-Cameroun : le cas du lamidat de Ngaoundéré au XIXe siècle », dans Bernard Salvaing (dir.), Pouvoirs anciens, pouvoirs modernes de l'Afrique d'aujourd'hui, Presses universitaires de Rennes, 2015",
+        "url": "https://books.openedition.org/pur/62380",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre d'ouvrage universitaire, p. 93-106, en accès ouvert sur OpenEdition, lu le 3 novembre 2026. § 2 : « Sous la conduite de Modibo Adama, les Peuls se transformèrent en guerriers » après l'appel de 1804 d'Ousman Dan Fodio ; « Le territoire conquis a pour capitale Yola » ; les lamidats de Tibati, Banyo, Tignère, Rey Bouba et Garoua sont fondés dans le premier tiers du XIXe siècle ; note 9 : Modibo Adama reçoit l'étendard du jihad en 1809 ; note 10 : l'Adamawa, centré sur Yola, couvre une partie du Nigeria et du Nord-Cameroun ; § 7 et 14 : le lamidat de Ngaoundéré est créé « vers 1830 » sous Ardo Ndjobdi, après le siège des Mbum de Ngawkor ; § 22 : les Mbum paient tribut mais gardent leur organisation sous leur Belaka."
+      },
+      {
+        "title": "Christian Seignobos, « Maroua. Évolution historique », dans Atlas de la province Extrême-Nord Cameroun, IRD Éditions",
+        "url": "https://books.openedition.org/irdeditions/11598",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Planche d'un atlas publié par l'IRD, p. 151-155, en accès ouvert sur OpenEdition, lu le 3 novembre 2026. § 6 : « Doulo, capitale du royaume du Wandala » ; § 9 : la ville double se retrouve « chez les Kotoko, héritiers des Saw » ; § 30 : entre 1792 et 1794, le chef giziga est chassé de Maroua ; § 32 : « un vaste mouvement religieux animé par Sokoto et relayé par Yola » ; § 36 : le premier à recevoir le titre de lamido « est Sali » ; § 54 : « Sous Lamido Sali (1846-1896) » ; § 79 : « la bataille de Maroua (1902) »."
+      },
+      {
+        "title": "Christian Seignobos, compte rendu de Mahmoudou Djingui, Le pouvoir, le savoir et la richesse. Les Fulbe de Ngaoundéré face au processus de modernisation, Journal des africanistes, 81-1, 2011",
+        "url": "https://journals.openedition.org/africanistes/3838",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Compte rendu en accès ouvert sur OpenEdition, p. 230-235, lu le 3 novembre 2026. « C'est la lutte des Ful'be (sing. Pullo) pour sauvegarder leur identité » ; à propos du lamido de Ngaoundéré : « Il a modernisé son lamidat » et « son lamidat est pluriethnique »."
+      },
+      {
+        "title": "Antoinette Hallaire, Paysans montagnards du Nord-Cameroun, ch. « Les caractères généraux des monts Mandara », IRD Éditions, 1991",
+        "url": "https://books.openedition.org/irdeditions/15063",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Monographie de l'ORSTOM (aujourd'hui IRD), p. 13-67, en accès ouvert sur OpenEdition, lu le 3 novembre 2026. § 55 : les montagnards sont « Souvent désignés globalement par le terme de kirdi, qui signifie païen et qui a pris une connotation péjorative » ; § 53, 59, 68 et tableau IV : Podoko, Mouktélé, Mofou, Kapsiki, « Matakam ou Mafa » ; § 82-83 : « Le royaume du Mandara lançait des expéditions ou des coups de main contre les massifs du voisinage » ; § 92 : « Les montagnards du sud ont subi plus durement les effets de la domination peul ». Glossaire : « lamido : chef peul ; titre donné aujourd'hui aux chefs de canton peul ou islamisés »."
+      },
+      {
+        "title": "Jean-Claude Muller, Les chefferies dìì de l'Adamaoua (Nord-Cameroun), ch. VI « Colonialismes, regroupement et identité », Éditions de la Maison des sciences de l'homme, 2006",
+        "url": "https://books.openedition.org/editionsmsh/9653",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Monographie d'anthropologie, p. 133-158, en accès ouvert sur OpenEdition, lu le 3 novembre 2026. § 54 : kirdi est le « terme par lequel sont désignées dans le nord et l'extrême nord du Cameroun les populations non islamisées » ; « ce terme n'a jamais été employé dans la région », « les Peuls utilisant dans l'Adamaoua le terme habe, « païen » »."
+      },
+      {
+        "title": "Jean Bazin, « Le roi sans visage », L'Homme, n° 170, 2004",
+        "url": "https://journals.openedition.org/lhomme/24776",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de revue d'anthropologie en accès ouvert sur OpenEdition, p. 11-23, lu le 3 novembre 2026. § 19 : parmi les voisins du Bornou figurent « le Baguirmi et les petites principautés kotoko de Logone-Birni et de Kousséri vers le sud », dont certains lui « ont été et pour certains lui sont encore assujettis » ; § 20 : le voyageur Gustav Nachtigal entre à Logone-Birni le 14 mars 1872 et y est reçu par un roi caché derrière un écran."
+      },
+      {
+        "title": "Franck Beuvier, « La côte du Cameroun et ses mondes imaginaires. Chronique d'une barbarie annoncée (xviie-xixe siècles) », Journal des africanistes, 91-1, 2021",
+        "url": "https://journals.openedition.org/africanistes/10718",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de revue scientifique en accès ouvert sur OpenEdition, p. 6-37, lu le 3 novembre 2026. Note 7 : Bimbia est une place commerciale vers 1800 ; à l'embouchure de la rivière Cameroons (le Wouri) se trouvent les « villes » des rois Bell et Akwa, devenues Douala ; § 35 : un officier anglais se méfie « des Bimbia et des « Dualla » » ; § 38 et 39 : traités anglo-douala de 1840 et 1841 « mettant un terme à la traite des esclaves », puis traité de 1852 ; note 24 : « Camarones » devient « Camaroons » puis « Cameroons »."
+      },
+      {
+        "title": "Marie-Rose Abomo-Maurin, « Oralité et art de la communication chez les Búlù », Journal des africanistes, 85-1/2, 2015",
+        "url": "https://journals.openedition.org/africanistes/4530",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de revue scientifique en accès ouvert sur OpenEdition, p. 80-102, lu le 3 novembre 2026. § 1 : les Búlù « occupent les quatre départements de la région du Sud, au Cameroun » et forment avec les Fang et les Beti « le groupe dit pahouin », d'après Pierre Alexandre et Jacques Binet (1958) ; § 35 : les Fang et les Beti sont des « voisins et cousins très éloignés » des Búlù, et la parole orale est au centre de la communication chez les trois peuples. La bibliographie cite « un mvet boulou »."
+      },
+      {
+        "title": "Alfred Schwartz, compte rendu de Jean-Marie Essono et Philippe Laburthe-Tolra, L'ancien pays de Yaoundé, Journal des africanistes, 77-1, 2007",
+        "url": "https://journals.openedition.org/africanistes/1872",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Compte rendu en accès ouvert sur OpenEdition, p. 160-162, lu le 3 novembre 2026. Le livre édite des textes écrits en 1913 par Atangana Ntsama dans « la langue des Beti-Ewondo de la région de Yaoundé, au Cameroun » ; Atangana est « fils d'un chef de clan beti-ewondo » et « l'administration allemande apprécie ses services »."
+      },
+      {
+        "title": "Bernard Aristide Bitouga, « Projets de développement et réactivation des conflits entre les Pygmées Bakola/Bagyeli et leurs voisins Ngumba et Ewondo », Journal des africanistes, 84-2, 2014",
+        "url": "https://journals.openedition.org/africanistes/4010",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de revue scientifique en accès ouvert sur OpenEdition, p. 124-136, lu le 3 novembre 2026. Note 1 : les Bakola/Bagyeli sont « l'un des trois principaux groupes de Pygmées du Cameroun » ; § 15 : Baka, Bakola/Bagyeli et Bedzan ; § 13 : pour Bahuchet, le nom « Pygmée » est « fréquemment péjoratif » ; § 22 : les Bakola occupent « la position la plus occidentale du Sud-Ouest camerounais », surtout dans le département de l'Océan (Lolodorf, Bipindi, Kribi, Campo) ; § 31 : leur parler est « très proche » de celui des Ngumba et des Mabea ; § 34 : « les Baka de l'Est-Cameroun »."
+      },
+      {
+        "title": "Martin Mbengué Nguimè, « Pratiques démocratiques au Cameroun actuel : étude comparée avec la période de l'accession à l'indépendance », Outre-Mers, t. 97, n° 368-369, 2010",
+        "url": "https://www.persee.fr/doc/outre_1631-0438_2010_num_97_368_4493",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de revue d'histoire, p. 115-135, sur Persée ; première page lue, lu le 3 novembre 2026. Page 115 : « Le 20 mai 1972, la République fédérale du Cameroun devient la \"République unie du Cameroun\" » ; les deux Cameroun sont « réunifiés le Ier octobre 1961 sous la dénomination de \"République fédérale du Cameroun\" »."
+      },
+      {
+        "title": "Présidence de la République du Cameroun, « Cameroon Celebrates Golden Jubilee of Unitary State », mai 2022",
+        "url": "https://www.prc.cm/en/news/5825-cm-celebrates-golden-jubilee-of-unitary-state",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Article du site officiel de la présidence camerounaise sur la fête nationale du 20 mai 2022, lu le 3 novembre 2026. L'État unitaire est « established after the 20 May 1972 referendum that dissolved the Federated States »."
+      },
+      {
+        "title": "Communauté économique et monétaire de l'Afrique centrale (CEMAC), site officiel, page d'accueil",
+        "url": "https://www.cemac.int/",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Site de l'organisation régionale, lu le 3 novembre 2026. États membres : « Cameroun », « Centrafrique », « Congo », « Gabon », « Guinée Equatoriale », « Tchad » ; la CEMAC existe « dès sa création en 1994 » et succède à l'Union douanière et économique de l'Afrique centrale."
+      },
+      {
+        "title": "Glottolog 5.3 — Bamun (bamu1253)",
+        "url": "https://glottolog.org/resource/languoid/id/bamu1253",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues Glottolog, version 5.3, lu le 3 novembre 2026. Code ISO 639-3 : bax. Classification : Atlantic-Congo > Benue-Congo > Bantoid > Wide Grassfields > Narrow Grassfields > Mbam-Nkam > Mbam-Nkam Nun."
+      },
+      {
+        "title": "Glottolog 5.3 — Ghomálá' (ghom1247)",
+        "url": "https://glottolog.org/resource/languoid/id/ghom1247",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues Glottolog, version 5.3, lu le 3 novembre 2026. Code ISO 639-3 : bbj. Classification : Atlantic-Congo > Benue-Congo > Bantoid > Wide Grassfields > Narrow Grassfields > Mbam-Nkam > Southern Mbam-Nkam > Bamileke > East Bamileke."
+      },
+      {
+        "title": "Glottolog 5.3 — Yemba (yemb1246)",
+        "url": "https://glottolog.org/resource/languoid/id/yemb1246",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues Glottolog, version 5.3, lu le 3 novembre 2026. Code ISO 639-3 : ybb. Classification : Atlantic-Congo > Benue-Congo > Bantoid > Wide Grassfields > Mbam-Nkam > Bamileke > West Bamileke > Bamboutos."
+      },
+      {
+        "title": "Glottolog 5.3 — Adamawa Fulfulde (adam1253)",
+        "url": "https://glottolog.org/resource/languoid/id/adam1253",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues Glottolog, version 5.3, lu le 3 novembre 2026. Code ISO 639-3 : fub. Classification : Atlantic-Congo > North-Central Atlantic > Fula-Sereer > Fula > Eastern Fula > Adamawa-Bagirmi Fulfulde."
+      },
+      {
+        "title": "Glottolog 5.3 — Ewondo (ewon1239)",
+        "url": "https://glottolog.org/resource/languoid/id/ewon1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues Glottolog, version 5.3, lu le 3 novembre 2026. Code ISO 639-3 : ewo. Classification : Atlantic-Congo > Benue-Congo > Bantoid > Narrow Bantu > Basaa-Yaunde (A40-70) > Yaunde-Fang (A.70) > Ewondo-Bebele."
+      },
+      {
+        "title": "Glottolog 5.3 — Bulu (Cameroon) (bulu1251)",
+        "url": "https://glottolog.org/resource/languoid/id/bulu1251",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues Glottolog, version 5.3, lu le 3 novembre 2026. Code ISO 639-3 : bum. Classification : Atlantic-Congo > Benue-Congo > Bantoid > Narrow Bantu > Basaa-Yaunde (A40-70) > Yaunde-Fang (A.70)."
+      },
+      {
+        "title": "Glottolog 5.3 — Duala (dual1243)",
+        "url": "https://glottolog.org/resource/languoid/id/dual1243",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues Glottolog, version 5.3, lu le 3 novembre 2026. Code ISO 639-3 : dua. Classification : Atlantic-Congo > Benue-Congo > Bantoid > Narrow Bantu > Bantu A-B10-B20-B30 > Sawabantu > Dualaic > Duala-Malimba."
+      },
+      {
+        "title": "Glottolog — Basaa (basa1284)",
+        "url": "https://glottolog.org/resource/languoid/id/basa1284",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues Glottolog, lu le 3 novembre 2026. Langue de code ISO 639-3 bas, nommée « Basa (Cameroon) » ; classification : Atlantic-Congo > Benue-Congo > Bantoid > Narrow Bantu > Basaa-Yaunde (A40-70) > Basaa (A.40) > Basaa-Bakoko."
+      },
+      {
+        "title": "Glottolog 5.3 — Makaa (maka1304)",
+        "url": "https://glottolog.org/resource/languoid/id/maka1304",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues Glottolog, version 5.3, lu le 3 novembre 2026. Code ISO 639-3 : mcp. Classification : Atlantic-Congo > Benue-Congo > Bantoid > Narrow Bantu > Makaa-Kako (A.80-90) > Makaa-Njem (A.80) > Makaaic."
+      },
+      {
+        "title": "Glottolog 5.3 — Mafa (mafa1239)",
+        "url": "https://glottolog.org/resource/languoid/id/mafa1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues Glottolog, version 5.3, lu le 3 novembre 2026. Code ISO 639-3 : maf. Classification : Afro-Asiatic > Chadic > Biu-Mandara > South Biu-Mandara > Matakam."
+      },
+      {
+        "title": "Glottolog 5.3 — Hausa (haus1257)",
+        "url": "https://glottolog.org/resource/languoid/id/haus1257",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues Glottolog, version 5.3, lu le 3 novembre 2026. Code ISO 639-3 : hau. Classification : Afro-Asiatic > Chadic > West Chadic > West Chadic A > West Chadic A.1."
+      },
+      {
+        "title": "Glottolog 5.3 — Baka (Cameroon) (baka1272)",
+        "url": "https://glottolog.org/resource/languoid/id/baka1272",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues Glottolog, version 5.3, lu le 3 novembre 2026. Code ISO 639-3 : bkc. Classification : Atlantic-Congo > Volta-Congo > North Volta-Congo > Cameroun-Ubangian > Ubangi > Mundu-Baka > Baka-Gundi."
+      },
+      {
+        "title": "Glottolog 5.3 — Cameroon Pidgin (came1254)",
+        "url": "https://glottolog.org/resource/languoid/id/came1254",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue de langues Glottolog, version 5.3, lu le 3 novembre 2026. Code ISO 639-3 : wes. Classification : Indo-European > Germanic > Guinea Coast Creole English > West African Creole English."
       }
     ],
     "demographics": {
@@ -659,19 +934,43 @@
       "source": "UNFPA – World Population Dashboard",
       "peoples": [
         {
-          "name": "Beti-Fang-Bulu",
-          "percentageInCountry": 22,
+          "name": "Beti, Bulu et Fang",
           "peopleId": "PPL_BETI",
-          "region": "Centre-Sud du Cameroun (forêts équatoriales)"
+          "population": null,
+          "referenceYear": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
+          "region": "Centre et Sud du Cameroun",
+          "languageFamily": "FLG_BANTU",
+          "mainLanguageCode": "ewo"
         },
         {
-          "name": "Autres groupes ethniques",
-          "peopleId": null,
-          "region": "Divers",
-          "languageFamily": null,
-          "percentageInCountry": 78
+          "name": "Bamiléké",
+          "peopleId": "PPL_BAMILEKE",
+          "population": null,
+          "referenceYear": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
+          "region": "Ouest du Cameroun",
+          "languageFamily": "FLG_BENOUECONGO",
+          "mainLanguageCode": "bbj"
+        },
+        {
+          "name": "Peuls",
+          "peopleId": "PPL_FULA",
+          "population": null,
+          "referenceYear": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
+          "region": "Adamaoua, Nord et Extrême-Nord",
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "fub"
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "Le Cameroun est un pays d'Afrique centrale. Son nom vient du « rio dos Camarões », la rivière des crevettes, nom portugais du Wouri au XVIe siècle.",
+      "followUp": "Comment le nom d'un fleuve est-il devenu celui de tout un pays ?"
     }
   }
 }
