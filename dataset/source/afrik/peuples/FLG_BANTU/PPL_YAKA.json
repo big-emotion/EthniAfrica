@@ -2,165 +2,194 @@
   "id": "PPL_YAKA",
   "nameMain": "Yaka",
   "languageFamilyId": "FLG_BANTU",
-  "currentCountries": ["COD", "AGO"],
+  "currentCountries": [
+    "COD",
+    "AGO"
+  ],
   "classificationStatus": "contested",
   "content": {
     "appellations": {
       "mainName": "Yaka",
       "selfAppellation": "Yaka",
-      "exonyms": ["Iyaka", "Iaca", "Kiyaka", "Bayaka", "Yaga"],
-      "originOfExonyms": "Le terme Yaka serait un titre donne par les Kongo a leurs guerriers conquis, adopte par les Lunda comme titre de noblesse signifiant les attrapeurs de flèches et de boulets ou invincible. Les variantes Iyaka et Kiyaka designent la langue. Iaca est une transcription portugaise ancienne. Bayaka est parfois utilise mais peut creer une confusion avec les Aka (Pygmees d'Afrique centrale, groupe entierement distinct).",
-      "whyProblematic": "Le terme Bayaka peut creer confusion avec le peuple Aka (Mbenga), groupe pygmee d'Afrique centrale qui parle une langue bantoue differente (ISO axk). Ces deux peuples n'ont aucun lien historique.",
-      "contemporaryUsage": "Yaka est le terme de reference courant en francais et en anglais. Kiyaka designe la langue. Le gouvernement de la RDC reconnait les Yaka comme communaute ethnique distincte dans les provinces du Kwango et de la Kwilu.",
-      "linguisticFamily": "FLG_BANTU",
-      "ethnoLinguisticGroup": "Bantou Zone H (H.31, Guthrie), proche du groupe Kongo",
-      "historicalRegion": "Province du Kwango (RDC) — region entre les rivières Kwango et Wamba ; nord de l'Angola",
-      "currentCountries": ["COD", "AGO"]
+      "exonyms": [
+        "Jaga"
+      ],
+      "spellingAliases": [
+        "Bayaka",
+        "Muyaka",
+        "Mayaka",
+        "Ngiaka",
+        "Giachas",
+        "Jacas",
+        "Giachi",
+        "Aiaccki"
+      ],
+      "originOfExonyms": "Le nom Jaga est la forme que les Portugais ont donnée à des bandes guerrières qui envahirent le royaume du Kongo en 1568. Selon l'historien Jan Vansina, Jaga correspond à Yaka en kikongo, la langue du Kongo, et les sources de l'époque l'emploient comme synonyme de « barbare ». Le missionnaire jésuite Michel Plancquaert relève en 1932 plusieurs graphies de ce nom : Giachas chez l'Italien Pigafetta, Jacas chez Rebello de Aragão en 1618, Giachi ou Giaki chez le capucin Cavazzi, qui écrit aussi que ces guerriers s'appelaient autrefois Aiaccki. Plancquaert y voit une transcription maladroite du nom kikongo Bayaka, au singulier Muyaka. Il ajoute que les Portugais ont ensuite étendu le nom Jaga à d'autres envahisseurs, et que les cartes anciennes en ont fait le synonyme d'une troupe nomade, guerrière et mangeuse d'hommes.",
+      "whyProblematic": "Le nom Yaka pose deux problèmes. Le premier vient du nom Jaga qui lui est lié : l'historien Joseph C. Miller écrit en 1973 que ces Jaga, décrits comme des cannibales, n'ont peut-être existé que dans l'imagination des missionnaires, des marchands d'esclaves et des fonctionnaires qui les ont décrits, et les historiens discutent encore du lien entre ces guerriers et les Yaka du Kwango. Le second vient d'un même nom porté par deux peuples : le nom Yaka désigne aussi des chasseurs-cueilleurs de la forêt appelés Aka, qui vivent en Centrafrique, au Congo et au Cameroun et parlent une autre langue, de code ISO axk, selon le catalogue des langues Glottolog. Les deux peuples sont parfois confondus : la base de données missionnaire Joshua Project donne « Aka Pygmy » parmi les autres noms des Yaka de la République démocratique du Congo.",
+      "contemporaryUsage": "Le nom Yaka est employé aujourd'hui par les chercheurs, comme l'anthropologue belge René Devisch, qui a vécu chez les Yaka du nord du Kwango de 1972 à 1974. Le catalogue Glottolog appelle leur langue yaka-pelende-lonzo, lui donne le code ISO 639-3 yaf et cite aussi les noms Kiyaka, Iyaka et Iaca.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Yaka de Kabamba-Lunda — groupe central autour du chef supreme (kiambv)",
-      "Yaka de Kenge — groupe du territoire de Kenge (Kwango, RDC)",
-      "Yaka de Popokabaka — groupe du territoire de Popokabaka (Kwango, RDC)",
-      "Basuku de Feshi — branche Kongo dissidente sous Meni Kongo, territoire de Feshi",
-      "Lunda de Nzofu (Kahemba) — Lunda ayant conserve une identite separee dans le territoire de Kahemba",
-      "Yaka d'Angola septentrional — groupes etablis au nord de l'Angola depuis les migrations du XVIIe siecle"
+      "Bayaka, le groupe qui porte le nom au sens strict ; selon Michel Plancquaert en 1932, le nom Bayaka réunit pourtant plusieurs groupes d'origines différentes, qui se distinguent encore et se connaissent entre eux comme Bayaka, Baluwa, Basuku, Batsamba et Bapindi.",
+      "Baluwa, les descendants des conquérants venus de l'empire lunda, dont sont issus les grands chefs appelés Kiamfu, selon Plancquaert.",
+      "Basuku, ou Suku, un groupe parent qui, selon Plancquaert, se disait Bayaka devant les étrangers, mais que les Yaka refusaient de compter parmi eux ; Jan Vansina décrit un royaume suku né de la résistance aux Yaka.",
+      "Batsamba et Bapindi, deux autres groupes que Plancquaert range sous le nom de Bayaka au sens large.",
+      "Pelende, un État à demi indépendant né au nord du royaume yaka, selon Ndaywel è Nziem ; Glottolog compte leur parler parmi les dialectes du yaka."
     ],
     "origins": {
-      "ancientOrigins": "Le peuple Yaka est né de la fusion entre des conquérants Lunda et des populations Kongo préexistantes. Le nom Yaka est un titre donné par les Kongo à leurs guerriers et repris par les Lunda comme titre de noblesse. Les Lunda avaient auparavant été défaits et subordonnés par l'expansion de l'Empire Lunda vers les années 1730, selon certaines sources. La région du Kwango était occupée par des nations Kongo (Mbala, Tsamba, Hungana, Pindi, Ngongo) avant l'arrivée des Lunda.",
-      "formationPeriod": "XVIIe siècle. Le roi Kabamba mena un exode Lunda vers l'ouest pour conquérir la région du Kwango, dans le royaume de Kongo. Par diplomatie plutôt que par la force, les Lunda s'intégrèrent aux nations Kongo locales. Les chefs Lunda épousèrent des femmes Kongo ; leurs enfants s'identifièrent comme Yaka. La langue kiyaka se développa comme une ramification du kikongo.",
+      "ancientOrigins": "Les Yaka vivent dans la vallée du Kwango, une région du sud-ouest de la République démocratique du Congo, le long de la frontière de l'Angola. Selon l'historien Ndaywel è Nziem, quand des conquérants venus de l'empire lunda arrivèrent dans cette vallée au XVIIIe siècle, ils y trouvèrent déjà des Yaka, des Suku et d'autres chefferies organisées sur le modèle du royaume du Kongo. En 1932, le missionnaire Michel Plancquaert rattachait ces premiers Yaka aux Jaga, des guerriers qui envahirent le royaume du Kongo en 1568. D'après les traditions qu'il avait recueillies, les Yaka situaient leur premier pays au sud-ouest, vers l'ancien royaume du Matamba. Les historiens discutent encore ce lien avec les Jaga.",
+      "formationPeriod": "Selon l'anthropologue René Devisch, la culture yaka est née de la rencontre entre des traditions familiales proches de celles des Kongo voisins et des institutions politiques lunda, imposées par des conquérants venus de l'est environ trois siècles plus tôt. Les sources ne datent pas cette conquête de la même façon. Plancquaert la place au plus tard au début du XVIIIe siècle, et probablement dans la seconde moitié du XVIIe siècle. Jan Vansina date la fondation du royaume yaka entre 1740 et 1760.",
       "migrationRoutes": [
-        "Exode Lunda sous le roi Kabamba depuis l'est vers la région du Kwango (XVIIe siècle)",
-        "Integration progressive des populations Kongo (Mbala, Tsamba, Hungana, Pindi, Ngongo)",
-        "Emigration des Basuku (Kongo) vers le territoire de Feshi sous Meni Kongo",
-        "Expansion vers le nord de l'Angola par des groupes Yaka"
+        "Selon les traditions recueillies par Plancquaert en 1932, les ancêtres des Yaka venaient du sud-ouest, de la région de l'ancien royaume du Matamba, avant de s'installer le long du moyen Kwango.",
+        "Selon la même source, des conquérants lunda, appelés Baluwa, partirent de la capitale de l'empire lunda sous la conduite d'un chef nommé Kasongo, firent halte à Nzofo Lukunda, près des sources du Kwenge, puis s'établirent au bord du Kwango, entre la Yonso et la Fufu.",
+        "Selon Jan Vansina, les conquêtes et les razzias du royaume yaka poussèrent beaucoup d'habitants à fuir du Kwango vers le Kwilu, à la fin du XVIIIe siècle et surtout au XIXe siècle.",
+        "Selon René Devisch, de nombreux Yaka ont émigré vers Kinshasa, la capitale de la République démocratique du Congo."
       ],
       "historicalSettlementZones": [
-        "Kwango entre les rivieres Kwango et Wamba (province du Kwango, RDC)",
-        "Territoire de Kenge (province du Kwango, RDC)",
-        "Territoire de Popokabaka (province du Kwango, RDC)",
-        "Territoire de Kahemba (province du Kwango, RDC)",
-        "Territoire de Feshi (province de la Kwilu, RDC)",
-        "Nord de l'Angola (province de l'Uige et de la Zaire)"
+        "La vallée moyenne du Kwango, entre le 4e et le 8e degré de latitude sud, selon Plancquaert (1932).",
+        "La savane du Kwango, dans le sud-ouest de la République démocratique du Congo, le long de la frontière de l'Angola, selon Devisch (2005).",
+        "Les deux rives du Kwango : Torday et Joyce signalent en 1922 des Yaka sur la rive angolaise aussi.",
+        "Kasongo-Lunda, où résidaient les grands chefs yaka au début du XXe siècle, selon Plancquaert.",
+        "Quelques groupes de Bayaka dans la vallée du Kwilu-Niari, alors en Afrique équatoriale française, selon Plancquaert."
       ],
-      "unificationsOrDivisions": "L'unité Yaka fut construite par Kabamba autour d'une identité mixte Lunda-Kongo. La dissidence des Basuku de Meni Kongo (qui refusèrent la soumission à Kabamba) et le maintien de l'identité Lunda par les Lunda de Nzofu/Kahemba illustrent les divisions persistantes. La paix entre les clans Tsamba de Feshi et les chefs Lunda fut scellée au XIXe siècle par une cérémonie rituelle (partage de viande crue de perroquet, de chien et de chat ; enterrement des armes).",
-      "externalInfluences": "Expansion de l'Empire Lunda depuis l'est. Contact avec le royaume de Kongo à l'ouest. Administration coloniale belge (Congo belge) à partir de 1885 : guerres avec les forces de Léopold II en 1892 et 1893 ; déportation et assassinat de chefs yaka. Résistance passive pendant toute la période coloniale. Implication dans le mouvement nationaliste congolais via la LUKA (Union kwangolaise pour la liberté et l'indépendance).",
-      "majorHistoricalEvents": "Conquete Lunda-Kongo du Kwango (XVIIe s.). Guerres contre l'administration Leopold II en 1892 et 1893 : Kabamba Faustin et Kabamba Tsiimba Nkumbi assassines en 1893. Deportation de Mulombo Desire Nkulu et du chef Munene Nkenzi. Refuge en Angola de Kabamba Koko Kodia Puanga (1915). Independence du Congo-Belge (30 juin 1960) avec forte contribution des nationalistes Yaka."
+      "unificationsOrDivisions": "Le royaume yaka n'a jamais réuni tous ceux qui portent ce nom. Selon Ndaywel è Nziem, le grand chef, le Kiamfu, ne put tenir tous ses hommes : au nord naquit l'État à demi indépendant des Pelende, et un groupe appelé Sonde-Luwa partit fonder ses propres chefferies à l'est du moyen Kwango. En 1922, Torday et Joyce décrivent une partie des Yaka révoltée contre le Kiamfu et gouvernée par son propre chef, Muri Kongo. En 1932, Plancquaert note que les Suku se disaient Bayaka devant les étrangers, mais que les Yaka refusaient de les reconnaître comme membres de leur peuple.",
+      "externalInfluences": "Deux influences extérieures ont marqué les Yaka. La première vient de l'empire lunda, à l'est : selon Ndaywel è Nziem, les conquérants lunda ne détruisirent pas les chefferies qu'ils trouvèrent, mais placèrent au-dessus ou à côté d'elles leurs propres chefs, les kilolo. La seconde vient de l'Europe. En 1890, le roi des Belges Léopold II, souverain de l'État indépendant du Congo, envoya le lieutenant Dhanis occuper l'est du Kwango, et en 1891 un traité signé à Lisbonne partagea le pays lunda entre cet État et le Portugal, selon Plancquaert. Le premier missionnaire catholique s'installa chez les Yaka en 1915.",
+      "majorHistoricalEvents": "En 1568, des guerriers appelés Jaga envahirent le royaume du Kongo et en chassèrent le roi ; Plancquaert voit en eux les ancêtres des Yaka, ce que d'autres historiens contestent. Entre 1740 et 1760, selon Jan Vansina, un capitaine venu de l'empire lunda fonda le royaume yaka. En 1890, les troupes de l'État indépendant du Congo arrivèrent au Kwango. Le Kiamfu se révolta en 1893 ; dans la nuit du 24 au 25 décembre 1893, les troupes de l'État l'attaquèrent, et le Kiamfu Nsimba Nkumbi fut tué avec son frère, selon Plancquaert. L'État installa ensuite des chefs de son choix, dont plusieurs s'enfuirent, l'un d'eux en Angola."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Systeme politique hierarchique matrilineaire a tendance mixte. A la tete : le kiambv (paramount chief, pl. biambv), chef supreme qui gouverne les royaumes physique et spirituel, percu comme voyant les sorciers. Il est entoure de 41 nobles (bilio, sing. yilolo) gouvernant des regroupements de villages. Chaque village est administre par un chef de terre (tulamba, pl. kalamba). Les tributs incluent des parties d'animaux puissants (leopard, elephant) verses au kiambv, et la monnaie en coquillages ndzimbu.",
-      "clanOrganization": "Societe matrilineaire incluant le nom de famille patrilineaire. Les clans sont identifies par des chefferies territoriales. Les nobles (bilio) portent des chapeaux de perles a plumes (tsala) dont la couleur indique le rang (plumes blanches tsala zi kanaangi = rang superieur, plumes rouges tsala zi nduwa = rang inferieur). Les chefs de terre (tulamba) portent des coiffes tissees en raphia (bweni) a 1 a 3 cretes, et dorment avec des appur-tete sculptee (musaw ou m-baambu).",
-      "ageClassSystems": "Le nkanda (initiation des jeunes garcons) constitue le principal systeme de classes d'age. Les tundansi (inities) passent 1 a 3 ans en reclusion, apprenant les codes de la virilite, et participent aux ceremonies masquees. Ce rite structure le passage de l'enfance a l'age adulte masculin.",
-      "roleOfLineages": "La matrilinearite determine la succession et la transmission des biens symboliques et rituels. Les chefs de lignage matrilineaire portent des hachettes khaandu et utilisent des coupes rituelles en bois a double embouchure (kyopa) pour le vin de palme, transmises de generation en generation. La terre est geree collectivement par les lignages.",
-      "religiousAuthority": "Autorite des devins (ngoombu) qui utilisent des paquets rituels, des statuettes mbwoolo, des miroirs, des herbes et des tambours slit (mukoku) pour les seances de divination. Le paramount chief (kiambv) detient aussi une autorite spirituelle : il est cense voir les sorciers (baloki) et participe a des pratiques magiques limitees au bien communautaire. Culte des ancetres (venerés aux tombes, dans les arbres n-saanda et n-yoombu plantes pres des sepultures)."
+      "traditionalPoliticalSystem": "Le royaume yaka avait à sa tête un grand chef, le Kiamfu. Selon l'historien Ndaywel è Nziem, ce titre vient de Yav, le titre de l'empereur lunda, et les conquérants lunda installèrent leurs propres chefs, les kilolo, au-dessus ou à côté des chefs locaux, ce qui donna un pouvoir à trois étages. Selon Plancquaert, le fondateur, Kasongo, organisa son État sur le modèle de celui de l'empereur lunda, avec un pouvoir très hiérarchisé et une succession qui passait d'un frère ou d'un cousin à l'autre dans la lignée masculine. On remettait au nouveau Kiamfu un couteau, signe de son pouvoir.",
+      "clanOrganization": "Les Yaka se rattachent à la fois à la lignée de leur père et à celle de leur mère. Selon René Devisch, la lignée du père, issue d'un ancêtre fondateur et dirigée par les hommes âgés, donne à chacun son identité sociale. La lignée de la mère est celle par laquelle se transmet la vie. En 1922, Torday et Joyce écrivaient qu'un enfant yaka appartient au village de son oncle maternel et que seuls les parents par le sang forment la communauté du village.",
+      "ageClassSystems": "Nous n'avons pas trouvé de source qui décrive un système de classes d'âge chez les Yaka. Les garçons passent en revanche par une initiation appelée n-khanda, qui comprend la circoncision et marque leur entrée dans l'âge adulte, selon le musée d'art de Cleveland. En 1922, Torday et Joyce notaient que tout homme adulte, c'est-à-dire circoncis, était un guerrier.",
+      "roleOfLineages": "La lignée de la mère compte pour l'héritage et pour certains cultes. Selon Torday et Joyce en 1922, le principal héritier d'un Yaka est son frère aîné encore en vie, ou à défaut le fils de sa sœur. Selon René Devisch, les cultes de guérison comme le mbwoolu se transmettent aussi par la lignée de la mère. Plancquaert rapporte qu'en 1894 l'État installa comme Kiamfu un certain Lukokisa, qui ne descendait des Kiamfu que par sa mère : pour beaucoup d'habitants, il n'avait donc aucun droit au pouvoir.",
+      "religiousAuthority": "Les guérisseurs et les cultes de guérison tiennent une grande place. René Devisch en compte une quinzaine en pays yaka. Le plus répandu, le mbwoolu, se pratique dans presque tous les villages du nord du Kwango et chez les Yaka âgés installés à Kinshasa. Il soigne surtout les enfants qui tardent à se tenir debout, les problèmes de mouvement et certaines fièvres graves. Les initiés s'adressent à ses statuettes avec le titre respectueux réservé aux chefs."
     },
     "languages": {
-      "mainLanguage": "Kiyaka / Yiyaka (yaf)",
-      "isoCodes": ["yaf"],
-      "dialects": [
-        "Yaka propre — dialecte central parle dans le Kwango (RDC)",
-        "Ngoongo — dialecte septentrional dans la zone de transition vers le Kwilu"
+      "mainLanguage": "Yaka, ou kiyaka (yaf)",
+      "isoCodes": [
+        "yaf"
       ],
-      "vehicularRole": "Le kiyaka est parle par environ 900 000 personnes principalement dans le sud-ouest de la RDC (province du Kwango) et au nord de l'Angola. C'est une ramification du kikongo (groupe H). Le francais est la langue officielle de la RDC et langue de l'administration. Le lingala est utilise comme lingua franca dans les zones urbaines de RDC. Le portugais est langue officielle en Angola."
+      "dialects": [
+        "Pelende, de code ISO ppp, compté comme un dialecte du yaka par Glottolog.",
+        "Lonzo, de code ISO lnz, compté comme un dialecte du yaka par Glottolog."
+      ],
+      "vehicularRole": "Le yaka est une langue bantoue. Glottolog la range avec le suku dans un petit groupe yaka-suku, qui fait partie de l'ensemble des parlers kikongo, et cite le classement de Moseley et Asher (1994), qui la place dans la zone H des langues bantoues. René Devisch note que le kikongo est très proche du yaka. Nous n'avons pas trouvé de source récente qui décrive l'usage du yaka comme langue d'échange avec les peuples voisins."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q2749225",
+      "glottocode": "yaka1269",
+      "iso639_3": "yaf"
     },
     "culture": {
-      "majorRites": "Nkanda : initiation masculine des garcons (tundansi), comprenant la circoncision, une reclusion de 1 a 3 ans, l'enseignement des codes de la virilite, et une serie de performances masquees impliquant 5 types de masques (mondo, ndemba, kapita, mbala par le tulombusi, chef de la ceremonie). Historiquement, les masques etaient detruits a la fin de l'initiation. Rites funeraires comportant veneration des ancetres aux tombes. Seances de divination par le ngoombu pour diagnostiquer maladies et conflits. Rituels de chasse (abstinence pre-chasse, partage rituel des prises, tributs au chef).",
-      "symbols": "Masques : element le plus caracteristique de la culture Yaka, reconnus pour leurs yeux globulaires, nez retrousse, bouche ouverte ; utilises lors des initiations nkanda et des ceremonies religieuses. Coiffe a plumes des nobles (tsala). Anneaux enroules (kazekedi ou lukano) portes a la cheville ou au bras par le chef supreme. Epee double face (mbeele phoko) dans un fourreau en forme de phallus, symbole du pouvoir du chef.",
-      "artsAndMusic": "Sculpture sur bois tres elaborate : masques cerimonials (mbala, kholuka, kakuungu), statuettes de divination (mbwoolo) aux membres greles et torses gonfles, appui-tetes sculptees. Vannerie et paniers. Tambours slit (mukoku) couronnes de tetes sculptees, employes dans les ceremonies et la medecine. La sculpture Yaka est reconnue dans les grandes collections museales mondiales (Metropolitan Museum of Art de New York, Tervuren). Musique : tambours et percussions lors des ceremonies d'initiation.",
-      "spiritualities": "Religion traditionnelle fondée sur le culte des ancêtres, la divination (ngoombu), et la croyance aux esprits et aux sorciers (baloki). Les statuettes mbwoolo servent de supports de divination, de guérison et de protection. Croyance en la capacité des chefs à voir les sorciers et à interagir avec le monde spirituel. Christianisme (catholicisme et protestantisme) largement répandu depuis la colonisation belge et portugaise, conduisant à un syncrétisme religieux."
+      "majorRites": "Le principal rite de passage des garçons est le n-khanda, une initiation qui comprend la circoncision. À la fin de l'initiation, un groupe de huit masques apparaît pour marquer le nouveau statut des garçons devenus hommes et leur retour au village, selon le musée d'art de Cleveland. Les cultes de guérison ont aussi leurs rites : dans le culte mbwoolu, décrit par René Devisch, le malade entre en initiation et vit un temps dans une maison à part, avec d'autres initiés.",
+      "symbols": "Le couteau était l'insigne du grand chef : selon Plancquaert, « donner le couteau » voulait dire installer un nouveau Kiamfu. Les masques de l'initiation n-khanda sont aussi exposés dans des musées hors d'Afrique : le musée d'art de Cleveland, aux États-Unis, présente le sien depuis 1962.",
+      "artsAndMusic": "Les sculpteurs yaka ont produit des masques et des statuettes que l'on trouve dans les musées. Le musée d'art de Cleveland conserve un masque ndeemba du début du XXe siècle, porté à la fin de l'initiation n-khanda. Les statuettes du culte mbwoolu sont minces, de vingt à quarante centimètres de haut, selon René Devisch. Nous n'avons pas trouvé de source que nous ayons pu lire sur la musique des Yaka.",
+      "spiritualities": "Pour les Yaka, une bonne santé dépend de bonnes relations dans la famille, selon René Devisch. Des statuettes appelées biteki, une fois chargées par un spécialiste du rituel, deviennent des objets de pouvoir capables de guérir ou de nuire et peuvent protéger une maison contre les sorciers, selon le musée d'art de Cleveland. Le christianisme est arrivé avec la colonisation : selon Plancquaert, le premier missionnaire catholique s'installa chez les Yaka en 1915."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Royaume Yaka fondé au XVIIe siècle par Kabamba, intégrant Lunda et Kongo (Mbala, Tsamba, Hungana, Pindi, Ngongo). Ce royaume fut l'un des mieux organisés et des plus résistants à la pénétration occidentale dans l'histoire coloniale belge. Il s'étendait de Kabamba-Lunda à Popokabaka en passant par Kenge.",
-      "relationsWithNeighbors": "Peuple proche des Suku (groupe frère). Intégration diplomatique des Kongo (Mbala, Tsamba, Hungana, Pindi, Ngongo). Tension et scission avec les Basuku de Meni Kongo (Feshi). Paix rituelle scellée avec les clans Tsamba au XIXe siècle. Les colonisateurs belges dénigrèrent les Yaka comme guerriers et sauvages pour les séparer des Bas-Congo et de Kwilu. Résistance notable contre Léopold II (1892-1893).",
-      "conflictsOrAlliances": "Guerres contre l'administration coloniale belge de Leopold II (1892-1893) ; chefs assassines ou deportes. Resistance passive durant la periode coloniale. Contribution au mouvement nationaliste congolais 1959-1960 via la LUKA. En Angola, les Yaka furent pris dans les conflits de la guerre d'independance (1961-1975) et de la guerre civile angolaise (1975-2002).",
-      "diaspora": "Presence significative a Kinshasa et dans les autres grandes villes de la RDC, liee aux migrations economiques depuis la province du Kwango. Petite communaute en Angola dans les provinces du nord."
+      "kingdomsOrChiefdoms": "Selon Jan Vansina, le royaume yaka fut fondé entre 1740 et 1760 par un capitaine venu de l'empire lunda. Il occupait une grande partie de la vallée du Kwango, en aval du royaume de Kasanje, et s'étendait vers l'est, en direction du Kwilu. Plancquaert nomme son fondateur Kasongo, qui prit le titre de Kiamfu Mwene Mputu Kasongo. En 1892, la résidence du Kiamfu comptait de 1 500 à 2 000 cases et de 2 500 à 3 000 habitants, selon la même source.",
+      "relationsWithNeighbors": "Selon Jan Vansina, les rois yaka lançaient des razzias vers le Kwilu pour capturer des esclaves, qu'ils vendaient aux marchands zombo, soso et vili, aux Imbangala et aux caravanes de passage. Ces razzias poussèrent des peuples comme les Mbala et les Ngongo à fuir vers le nord, tandis que le royaume suku naquit de la résistance aux Yaka. Les Kongo de la région de l'Inkisi gardaient eux aussi, selon le missionnaire Van Wing cité par Plancquaert, le souvenir des luttes féroces contre les Bayaka.",
+      "conflictsOrAlliances": "Le Kiamfu résista à l'occupation de l'État indépendant du Congo. En mars 1892, il menaça de chasser les Blancs de son pays ; en 1893, il leur fit la guerre, et le Kiamfu Nsimba Nkumbi fut tué après une attaque de nuit, selon Plancquaert. L'État installa ensuite des chefs de son choix, mais plusieurs d'entre eux s'enfuirent, l'un d'eux en Angola, et la plupart des chefs vassaux furent un jour déportés ou emprisonnés. Torday et Joyce écrivent en 1922 que l'autorité du Kiamfu fut supprimée au début de 1905 et que le Kiamfu lui-même fut emprisonné à Léopoldville, l'actuelle Kinshasa.",
+      "diaspora": "Beaucoup de Yaka vivent aujourd'hui à Kinshasa. René Devisch estimait en 2005 leur nombre à environ 300 000 personnes, qui forment le groupe principal de quelques quartiers périphériques. Selon Plancquaert, des groupes de Bayaka vivaient aussi en 1932 dans la vallée du Kwilu-Niari, alors en Afrique équatoriale française."
     },
     "demography": {
-      "totalPopulation": 1800000,
-      "referenceYear": 2025,
-      "source": "Omniglot (2025) : environ 900 000 locuteurs kiyaka principalement en RDC et nord de l'Angola. Joshua Project : 1 625 000 Yaka en RDC et 2 207 000 dans tous les pays. Wikipedia EN : environ 300 000 (donnee probablement sous-estimee et ancienne). Estimation 2025 : environ 1,8 million en combinant les sources, avec une forte croissance demographique en RDC.",
+      "totalPopulation": 700000,
+      "referenceYear": 2005,
+      "source": "Estimation de l'anthropologue René Devisch, publiée en 2005 : environ 400 000 Yaka dans la région du Kwango et environ 300 000 à Kinshasa, soit environ 700 000 en République démocratique du Congo. Nous n'avons pas trouvé de recensement récent, ni de chiffre pour l'Angola. Joshua Project, une base de données missionnaire consultée en 2026, donne 1 677 000 Yaka en République démocratique du Congo et 2 276 000 dans tous les pays, mais sa page mêle aux Yaka des noms d'un autre peuple, les Aka de la forêt.",
       "distributionByCountry": [
         {
           "country": "COD",
-          "population": 1600000,
-          "note": "Province du Kwango (Kenge, Popokabaka, Kahemba) et province de la Kwilu (Feshi)"
-        },
-        {
-          "country": "AGO",
-          "population": 200000,
-          "note": "Nord de l'Angola, provinces de l'Uige et de la Zaire"
+          "population": 700000,
+          "note": "Environ 400 000 dans la région du Kwango et environ 300 000 à Kinshasa, selon René Devisch (2005)."
         }
       ]
     },
     "sources": [
       {
-        "title": "Omniglot — Yaka language and alphabet",
-        "url": "https://www.omniglot.com/writing/yaka.htm",
-        "tier": "unverified",
-        "source_kind": "linguistic_reference"
-      },
-      {
         "title": "WALS Online — Language Yaka (ISO yaf)",
         "url": "https://wals.info/languoid/lect/wals_code_yak",
         "tier": "official",
-        "source_kind": "linguistic_reference"
-      },
-      {
-        "title": "Smarthistory — Headdress Yaka peoples (Metropolitan Museum)",
-        "url": "https://smarthistory.org/headdress-yaka/",
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "Metropolitan Museum of Art — Headdress Ndeemba Yaka",
-        "url": "https://www.metmuseum.org/art/collection/search/310954",
-        "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "linguistic_reference",
+        "notes": "World Atlas of Language Structures. Lu le 3 novembre 2026. La fiche donne le code ISO 639-3 yaf, le genre bantou, l'Angola et la République démocratique du Congo."
       },
       {
         "title": "Joshua Project — Yaka in Congo DRC",
         "url": "https://joshuaproject.net/people_groups/15953/CG",
         "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "SIL Ethnologue — Yaka H.31",
-        "url": "https://www.ethnologue.com/subgroup/3342/",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
-      },
-      {
-        "title": "ShareOK — Yaka Mbaala Masks During and After Colonization",
-        "url": "https://shareok.org/items/53a62f67-eec5-4a59-b5b8-8b3133d8ae9a",
-        "tier": "referenced"
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire chrétienne. Lu le 3 novembre 2026. La page situe ce peuple dans les territoires de Popokabaka et de Kasongo-Lunda, donne la langue de code yaf, une population de « 1,677,000 » en RDC et de « 2,276,000 » dans tous les pays, et les autres noms « Aka Pygmy; Beyele; Beyele Pygm; Binga; Laka »."
       },
       {
         "title": "Glottolog — Yaka (yaka1269)",
         "url": "https://glottolog.org/resource/languoid/id/yaka1269",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog 5.3, catalogue de référence des langues du monde. Lu le 3 novembre 2026. La fiche s'intitule « Yaka-Pelende-Lonzo », donne le code ISO 639-3 yaf, l'Angola et la République démocratique du Congo, les dialectes Lonzo (lnz) et Pelende (ppp), le classement dans le groupe « Yaka-Suku » du « Kikongo Language Cluster », et les autres noms « Iaca, Iaka, Iyaka, Kiyaka, Yaka » et « Yaka (Bantu, Zone H) »."
       },
       {
-        "title": "UNFPA — DRC Population 2025",
-        "url": "https://www.unfpa.org/data/world-population/CD",
+        "title": "Glottolog 5.3 — Yaka (Central African Republic) (yaka1272)",
+        "url": "https://glottolog.org/resource/languoid/id/yaka1272",
         "tier": "official",
-        "source_kind": "intergovernmental"
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog 5.3. Lu le 3 novembre 2026. Fiche d'une autre langue, de code ISO 639-3 axk, parlée en Centrafrique, au Congo et au Cameroun, dont les autres noms incluent « Aka, Babinga, Bambenga, […] Yaka »."
       },
       {
-        "title": "CIA World Factbook — Congo DRC",
-        "url": "https://www.cia.gov/the-world-factbook/countries/congo-democratic-republic-of-the/",
-        "tier": "official",
-        "source_kind": "government"
+        "title": "Les Jaga et les Bayaka du Kwango. Contribution historico-ethnographique",
+        "url": "https://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(IRCB)_T.III,1_PLANCQUAERT%20M._Les%20jaga%20et%20les%20bayaka%20du%20Kwango_1932.pdf",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Ouvrage du missionnaire jésuite Michel Plancquaert, publié à l'époque coloniale par l'Institut royal colonial belge (Mémoires, section des sciences morales et politiques, tome III, fascicule 1), Bruxelles, 1932. Lu le 3 novembre 2026 dans la numérisation de l'Académie royale des sciences d'outre-mer. Passage lu : « Ce nom leur est unanimement attribué par tous leurs voisins »"
       },
       {
-        "title": "CIA World Factbook — Angola",
-        "url": "https://www.cia.gov/the-world-factbook/countries/angola/",
+        "title": "Notes ethnographiques sur des populations habitant les rives du Kasai, de la Lukenie et du Kwango oriental",
+        "url": "https://archive.org/details/notesethnographi00tord",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Bruxelles, Annales du Musée du Congo belge, publiées par le ministère des Colonies, 1922 ; ouvrage de l'époque coloniale. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Passage lu : « Ils sont gouvernés par un grand-chef appelé le Kiamfu »"
+      },
+      {
+        "title": "Requiem for the « Jaga »",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1973_num_13_49_2728",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Cahiers d'études africaines, vol. 13, n° 49, 1973, p. 121-149. Lu le 3 novembre 2026 sur Persée, qui ne laisse lire en ligne que la première page de l'article. Passage lu : « no such Jaga ever existed outside the imaginations of missionaries slave dealers and Government officials »"
+      },
+      {
+        "title": "Cultural Modes of Comprehending and Healing Insanity: The Yaka of DR Congo",
+        "url": "https://www.journals.codesria.org/index.php/ad/article/view/2223",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Africa Development, vol. XXX, n° 3, 2005, p. 93-111, revue du Conseil pour le développement de la recherche en sciences sociales en Afrique (CODESRIA). Lu le 3 novembre 2026 dans le PDF publié par la revue. Passage lu : « Approximately 400,000 Yaka presently inhabit the savannah land of the Kwaango region of southwestern Congo bordering Angola »"
+      },
+      {
+        "title": "Cleveland Museum of Art — Mask (ndeemba), 1969.8",
+        "url": "https://www.clevelandart.org/art/1969.8",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice du musée d'art de Cleveland (États-Unis) pour un masque yaka du début du XXe siècle, lue le 3 novembre 2026 par l'interface de données ouvertes du musée. Passage lu : « part of a group of eight masks that appear at the end of the circumcision and puberty ritual (n-khanda) for Yaka boys ». Notice voisine du même musée (1974.201, Figure kiteki) : « Biteki is the generic name for Yaka figures used as containers for magical ingredients. After being charged by a ritual specialist, they become minkisi, or power objects »."
+      },
+      {
+        "title": "General History of Africa, V, ch. 19: The Kongo kingdom and its neighbours",
+        "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
         "tier": "official",
-        "source_kind": "government"
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, Histoire générale de l'Afrique, volume V dirigé par B. A. Ogot, 1992, chapitre de Jan Vansina d'après une contribution de Théophile Obenga. Lu le 3 novembre 2026 dans la copie que publie South African History Online (copie non officielle), p. 558 et 587. Passage lu : « a captain founded the Yaka kingdom between 1740 and 1760 »."
+      },
+      {
+        "title": "General History of Africa, V, ch. 20: The political system of the Luba and Lunda: its emergence and expansion",
+        "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, Histoire générale de l'Afrique, volume V dirigé par B. A. Ogot, 1992, chapitre de Ndaywel è Nziem. Lu le 3 novembre 2026 dans la copie que publie South African History Online (copie non officielle), p. 606. Passage lu : « the leader of the Yaka, the kiamfu (a term derived from Yav, the imperial title), could not control all his own men »."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Les Yaka sont un peuple bantou de la vallée du Kwango, au sud-ouest de la République démocratique du Congo et au nord de l'Angola ; leur nom se rattache peut-être aux Jaga des récits portugais.",
+      "followUp": "Les Jaga qui envahirent le royaume du Kongo en 1568 étaient-ils les ancêtres des Yaka ?"
+    }
   },
   "nameHistory": {
-    "summary": "Le nom Yaka, ou Bayaka, désigne un peuple bantou de la vallée du Kwango, dans le sud-ouest de la République démocratique du Congo et le nord de l'Angola, qui se nomme lui-même Yaka. En kikongo, le mot yaka a aussi servi à nommer des guerriers que les Portugais appelaient Jaga. Les sources ne s'accordent pas sur le lien entre ces Jaga et les Yaka du Kwango ; nous les présentons plus bas.",
+    "summary": "Le nom Yaka, ou Bayaka au pluriel, désigne un peuple bantou de la vallée du Kwango, dans le sud-ouest de la République démocratique du Congo et le nord de l'Angola, qui se nomme lui-même Yaka. En kikongo, le même mot a servi à nommer des guerriers que les Portugais appelaient Jaga. Les sources ne s'accordent pas sur le lien entre ces Jaga et les Yaka du Kwango, et le nom Yaka désigne aussi un autre peuple, les Aka de la forêt ; nous présentons plus bas ces explications.",
     "names": [
       {
         "nameText": "Yaka",
@@ -168,9 +197,149 @@
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom du peuple du Kwango ; en kikongo, le même mot a désigné des guerriers.",
+        "shortLine": "Le nom du peuple du Kwango ; en kikongo, le même mot a désigné des guerriers que les Portugais appelaient Jaga.",
         "periodLabel": "Écrit dès 1591 sous la forme Jaga ; en usage aujourd'hui",
         "accounts": [
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Yaka désigne aujourd'hui environ 400 000 personnes dans la région du Kwango et environ 300 000 à Kinshasa, selon l'anthropologue René Devisch, qui décrit une culture née de traditions proches de celles des Kongo et d'institutions apportées par les conquérants lunda.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Cultural Modes of Comprehending and Healing Insanity: The Yaka of DR Congo",
+                "author": "René Devisch",
+                "year": 2005,
+                "url": "https://www.journals.codesria.org/index.php/ad/article/view/2223",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 96",
+                "notes": "Africa Development, vol. XXX, n° 3, 2005, p. 93-111, revue du Conseil pour le développement de la recherche en sciences sociales en Afrique (CODESRIA). Lu le 3 novembre 2026 dans le PDF publié par la revue. Passage lu : « Approximately 400,000 Yaka presently inhabit the savannah land of the Kwaango region of southwestern Congo bordering Angola »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Proposée en 1981"
+            },
+            "era": "modern",
+            "statement": "Le nom Yaka relierait les Yaka du Kwango aux Jaga du XVIe siècle : Anne Hilton, en 1981, voit dans ces guerriers leurs ancêtres, selon Jan Vansina.",
+            "hypothesisGroup": "Jaga et Yaka du Kwango",
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 19: The Kongo kingdom and its neighbours",
+                "author": "Jan Vansina, d'après une contribution de Théophile Obenga",
+                "year": 1992,
+                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 558, note 22",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1973,
+              "to": 1973,
+              "label": "Proposée en 1973"
+            },
+            "statement": "Le nom Jaga, selon l'historien Joseph C. Miller, ne désigne aucun peuple réel : ces cannibales venus de l'intérieur seraient une invention des missionnaires, des marchands d'esclaves et des fonctionnaires, qui cachaient ou justifiaient ainsi leurs propres activités, et l'attaque de 1568 contre le Kongo aurait d'autres causes.",
+            "hypothesisGroup": "Jaga et Yaka du Kwango",
+            "sources": [
+              {
+                "title": "Requiem for the « Jaga »",
+                "author": "Joseph C. Miller",
+                "year": 1973,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1973_num_13_49_2728",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 121",
+                "notes": "Cahiers d'études africaines, vol. 13, n° 49, 1973, p. 121-149. Lu le 3 novembre 2026 sur Persée, qui ne laisse lire en ligne que la première page de l'article. Passage lu : « careful analysis of the sources for early Kongo and Angola history suggests that no such Jaga ever existed outside the imaginations of missionaries slave dealers and Government officials who created these mythical cannibals to justify or conceal their own activities in Africa »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1981,
+              "label": "Débat de 1963 à 1981"
+            },
+            "statement": "Le nom Yaka, sous sa forme Jaga, ne désignerait peut-être aucun peuple précis : pour certains auteurs, il n'y a jamais eu de Jaga, et les Portugais auraient inventé cette invasion pour intervenir dans une querelle de succession au Kongo ; d'autres y voient surtout des paysans kongo révoltés, selon Jan Vansina, qui juge qu'on ne le saura peut-être jamais.",
+            "hypothesisGroup": "Jaga et Yaka du Kwango",
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 3: Population movements and emergence of new socio-political forms in Africa",
+                "author": "Jan Vansina",
+                "year": 1992,
+                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 66",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
+              },
+              {
+                "title": "General History of Africa, V, ch. 19: The Kongo kingdom and its neighbours",
+                "author": "Jan Vansina, d'après une contribution de Théophile Obenga",
+                "year": 1992,
+                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 558",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Yaka, au singulier Muyaka ou Myaka et au pluriel Bayaka ou Mayaka, est donné aux habitants du moyen Kwango par tous leurs voisins, écrit le missionnaire Michel Plancquaert. Il réunit selon lui des groupes d'origines différentes, qui se connaissent entre eux comme Bayaka, Baluwa, Basuku, Batsamba et Bapindi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Jaga et les Bayaka du Kwango. Contribution historico-ethnographique",
+                "author": "Michel Plancquaert",
+                "year": 1932,
+                "url": "https://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(IRCB)_T.III,1_PLANCQUAERT%20M._Les%20jaga%20et%20les%20bayaka%20du%20Kwango_1932.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3",
+                "notes": "Ouvrage du missionnaire jésuite Michel Plancquaert, publié à l'époque coloniale par l'Institut royal colonial belge (Mémoires, section des sciences morales et politiques, tome III, fascicule 1), Bruxelles, 1932. Lu le 3 novembre 2026 dans la numérisation de l'Académie royale des sciences d'outre-mer. Passage lu : « habitent des populations connues sous le nom de myaka ou muyaka, au pluriel : mayaka ou bayaka. Ce nom leur est unanimement attribué par tous leurs voisins »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "Proposée en 1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Yaka serait celui des Jaga eux-mêmes : pour Michel Plancquaert, le nom ancien Aiaccka n'est qu'une mauvaise transcription du nom kikongo Bayaka, et les Yaka du Kwango descendent des guerriers qui envahirent le Kongo. Il s'appuie aussi sur les traditions des Kongo, qui gardaient le souvenir de luttes contre les Bayaka.",
+            "hypothesisGroup": "Jaga et Yaka du Kwango",
+            "sources": [
+              {
+                "title": "Les Jaga et les Bayaka du Kwango. Contribution historico-ethnographique",
+                "author": "Michel Plancquaert",
+                "year": 1932,
+                "url": "https://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(IRCB)_T.III,1_PLANCQUAERT%20M._Les%20jaga%20et%20les%20bayaka%20du%20Kwango_1932.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 54-55",
+                "notes": "Ouvrage du missionnaire jésuite Michel Plancquaert, publié à l'époque coloniale par l'Institut royal colonial belge (Mémoires, section des sciences morales et politiques, tome III, fascicule 1), Bruxelles, 1932. Lu le 3 novembre 2026 dans la numérisation de l'Académie royale des sciences d'outre-mer. Passage lu : « Il paraît donc clairement que le nom primitif des envahisseurs de San Salvador fut Aiaccka, dans lequel il ne faut voir qu'une orthographe défectueuse du nom kikongo : Bayaka pl. Muyaka sg. »"
+              }
+            ]
+          },
           {
             "period": {
               "from": 1922,
@@ -178,8 +347,8 @@
               "label": "1922"
             },
             "era": "colonial",
-            "statement": "Le nom Bayaka désigne, selon Emil Torday et Thomas Athol Joyce, un peuple installé depuis des siècles dans le Kwango et gouverné par un grand chef, le Kiamfu, dont l'autorité fut supprimée par l'État du Congo au début de 1905. L'origine de ce nom est discutée.",
-            "aspect": "meaning",
+            "statement": "Le nom Bayaka désigne, selon Emil Torday et Thomas Athol Joyce, un peuple installé depuis des siècles dans le Kwango et gouverné par un grand chef, le Kiamfu, dont l'autorité fut supprimée par l'État du Congo au début de 1905.",
+            "aspect": "usage",
             "sources": [
               {
                 "title": "Notes ethnographiques sur des populations habitant les rives du Kasai, de la Lukenie et du Kwango oriental",
@@ -189,7 +358,51 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 255",
-                "notes": "Bruxelles, Annales du Musée du Congo belge. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+                "notes": "Bruxelles, Annales du Musée du Congo belge, 1922. Lu dans la numérisation d'Internet Archive le 11 octobre 2026 et relu le 3 novembre 2026. Passage lu : « Ils sont gouvernés par un grand-chef appelé le Kiamfu, et dont l'autorité, au début de 1905, fut complètement annulée par les autorités du Congo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Jaga viendrait du titre des petits chefs qui commandaient ces bandes de pillards, selon Emil Torday et Thomas Athol Joyce, qui parlent des bandes apparues en Angola au début du XVIIe siècle.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notes ethnographiques sur des populations habitant les rives du Kasai, de la Lukenie et du Kwango oriental",
+                "author": "Emil Torday et Thomas Athol Joyce",
+                "year": 1922,
+                "url": "https://archive.org/details/notesethnographi00tord",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 233-234",
+                "notes": "Bruxelles, Annales du Musée du Congo belge, publiées par le ministère des Colonies, 1922 ; ouvrage de l'époque coloniale. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Passage lu : « étaient généralement connus par les Portugais sous le nom de Jaga, d'après le titre des petits chefs par lesquels ils étaient dominés »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1929,
+              "label": "Défendue de 1901 à 1929"
+            },
+            "era": "colonial",
+            "statement": "Le nom Yaka serait le seul point commun entre les Yaka du Kwango et les anciens Jaga, selon plusieurs auteurs européens, dont Ernest George Ravenstein et Harry Johnston, que cite et critique Michel Plancquaert en 1932.",
+            "hypothesisGroup": "Jaga et Yaka du Kwango",
+            "sources": [
+              {
+                "title": "Les Jaga et les Bayaka du Kwango. Contribution historico-ethnographique",
+                "author": "Michel Plancquaert",
+                "year": 1932,
+                "url": "https://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(IRCB)_T.III,1_PLANCQUAERT%20M._Les%20jaga%20et%20les%20bayaka%20du%20Kwango_1932.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 56",
+                "notes": "Ouvrage du missionnaire jésuite Michel Plancquaert, publié à l'époque coloniale par l'Institut royal colonial belge (Mémoires, section des sciences morales et politiques, tome III, fascicule 1), Bruxelles, 1932. Lu le 3 novembre 2026 dans la numérisation de l'Académie royale des sciences d'outre-mer. Passage lu : « Aussi ne comprenons-nous pas comment E. G. Ravenstein, H. Johnston, H. Marquardsen et le Dr Ihle puissent affirmer que les Bayaka du Kwango n'auraient que le nom de commun avec les anciens Jaga »"
               }
             ]
           },
@@ -226,6 +439,61 @@
           },
           {
             "period": {
+              "from": 1687,
+              "to": 1687,
+              "label": "1687"
+            },
+            "era": "polity",
+            "statement": "Le nom Yaka est écrit « Giachi » ou « Giaki » par le capucin italien Giovanni Antonio Cavazzi, qui vécut longtemps chez les Jaga du haut Kwango ; il écrit que ces Jaga s'appelaient autrefois « Aiaccki », selon Michel Plancquaert.",
+            "formAsWritten": "Giachi",
+            "actors": [
+              {
+                "name": "Giovanni Antonio Cavazzi",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les Jaga et les Bayaka du Kwango. Contribution historico-ethnographique",
+                "author": "Michel Plancquaert",
+                "year": 1932,
+                "url": "https://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(IRCB)_T.III,1_PLANCQUAERT%20M._Les%20jaga%20et%20les%20bayaka%20du%20Kwango_1932.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 53",
+                "notes": "Ouvrage du missionnaire jésuite Michel Plancquaert, publié à l'époque coloniale par l'Institut royal colonial belge (Mémoires, section des sciences morales et politiques, tome III, fascicule 1), Bruxelles, 1932. Lu le 3 novembre 2026 dans la numérisation de l'Académie royale des sciences d'outre-mer. Passage lu : « le capucin italien Gio. Cavazzi da Montecuculo écrit ce nom : Giachi ou Giaki. […] affirme que ceux-ci s'appelaient anciennement Aiaccki »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1618,
+              "to": 1618,
+              "label": "1618"
+            },
+            "statement": "Le nom Yaka est écrit « Jacas » en 1618 par Baltasar Rebello de Aragão, qui dit de ces guerriers qu'ils viennent de l'extérieur et vivent de guerre et de pillage, selon Michel Plancquaert.",
+            "formAsWritten": "Jacas",
+            "actors": [
+              {
+                "name": "Baltasar Rebello de Aragão",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les Jaga et les Bayaka du Kwango. Contribution historico-ethnographique",
+                "author": "Michel Plancquaert",
+                "year": 1932,
+                "url": "https://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(IRCB)_T.III,1_PLANCQUAERT%20M._Les%20jaga%20et%20les%20bayaka%20du%20Kwango_1932.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 53",
+                "notes": "Ouvrage du missionnaire jésuite Michel Plancquaert, publié à l'époque coloniale par l'Institut royal colonial belge (Mémoires, section des sciences morales et politiques, tome III, fascicule 1), Bruxelles, 1932. Lu le 3 novembre 2026 dans la numérisation de l'Académie royale des sciences d'outre-mer. Passage lu : « En 1618, Balthazar Rebello de Aragão les appelle Jacas et nous apprend que venus de l'extérieur ils vivent de guerre et de rapine »"
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1591,
               "to": 1591,
               "label": "1591"
@@ -254,59 +522,115 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 558",
                 "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": 1981,
-              "to": 1981,
-              "label": "Proposée en 1981"
-            },
-            "era": "modern",
-            "statement": "Le nom Yaka relierait les Yaka du Kwango aux Jaga du XVIe siècle : Anne Hilton, en 1981, voit dans ces guerriers leurs ancêtres, selon Jan Vansina.",
-            "hypothesisGroup": "Jaga et Yaka du Kwango",
-            "sources": [
-              {
-                "title": "General History of Africa, V, ch. 19: The Kongo kingdom and its neighbours",
-                "author": "Jan Vansina, d'après une contribution de Théophile Obenga",
-                "year": 1992,
-                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
-                "tier": "official",
-                "source_kind": "intergovernmental",
-                "page": "p. 558, note 22",
-                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": 1963,
-              "to": 1981,
-              "label": "Débat de 1963 à 1981"
-            },
-            "statement": "Le nom Yaka, sous sa forme Jaga, ne désignerait peut-être aucun peuple précis : pour certains auteurs, il n'y a jamais eu de Jaga, et les Portugais auraient inventé cette invasion pour intervenir dans une querelle de succession au Kongo ; d'autres y voient surtout des paysans kongo révoltés, selon Jan Vansina, qui juge qu'on ne le saura peut-être jamais.",
-            "hypothesisGroup": "Jaga et Yaka du Kwango",
-            "sources": [
-              {
-                "title": "General History of Africa, V, ch. 3: Population movements and emergence of new socio-political forms in Africa",
-                "author": "Jan Vansina",
-                "year": 1992,
-                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
-                "tier": "official",
-                "source_kind": "intergovernmental",
-                "page": "p. 66",
-                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
               },
               {
-                "title": "General History of Africa, V, ch. 19: The Kongo kingdom and its neighbours",
-                "author": "Jan Vansina, d'après une contribution de Théophile Obenga",
-                "year": 1992,
-                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "title": "Les Jaga et les Bayaka du Kwango. Contribution historico-ethnographique",
+                "author": "Michel Plancquaert",
+                "year": 1932,
+                "url": "https://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(IRCB)_T.III,1_PLANCQUAERT%20M._Les%20jaga%20et%20les%20bayaka%20du%20Kwango_1932.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 52-53",
+                "notes": "Ouvrage du missionnaire jésuite Michel Plancquaert, publié à l'époque coloniale par l'Institut royal colonial belge (Mémoires, section des sciences morales et politiques, tome III, fascicule 1), Bruxelles, 1932. Lu le 3 novembre 2026 dans la numérisation de l'Académie royale des sciences d'outre-mer. Passage lu : « Ainsi que nous venons de le voir, Pigafetta, d'après une orthographe italienne, les appelle Giachas »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bayaka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le pluriel de Yaka en kikongo ; le nom Yaka désigne aussi un autre peuple, les Aka de la forêt.",
+        "periodLabel": "Écrit dès 1922 ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom Bayaka peut prêter à confusion, car le nom Yaka sert aussi pour un autre peuple : des chasseurs-cueilleurs de la forêt, appelés Aka, qui vivent en Centrafrique, au Congo et au Cameroun et parlent une langue distincte, de code ISO axk, selon Glottolog. La base de données missionnaire Joshua Project mélange les deux peuples, puisqu'elle donne « Aka Pygmy » parmi les autres noms des Yaka du Kwango.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Yaka (Central African Republic) (yaka1272)",
+                "author": "Glottolog",
+                "year": 2026,
+                "url": "https://glottolog.org/resource/languoid/id/yaka1272",
                 "tier": "official",
-                "source_kind": "intergovernmental",
-                "page": "p. 558",
-                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
+                "source_kind": "linguistic_reference",
+                "notes": "Glottolog 5.3. Lu le 3 novembre 2026. Fiche d'une autre langue, de code ISO 639-3 axk, parlée en Centrafrique, au Congo et au Cameroun, dont les autres noms incluent « Aka, Babinga, Bambenga, […] Yaka »."
+              },
+              {
+                "title": "Joshua Project — Yaka in Congo DRC",
+                "author": "Joshua Project",
+                "year": 2026,
+                "url": "https://joshuaproject.net/people_groups/15953/CG",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "notes": "Base de données d'une organisation missionnaire chrétienne. Lu le 3 novembre 2026. La page situe ce peuple dans les territoires de Popokabaka et de Kasongo-Lunda, donne la langue de code yaf, une population de « 1,677,000 » en RDC et de « 2,276,000 » dans tous les pays, et les autres noms « Aka Pygmy; Beyele; Beyele Pygm; Binga; Laka »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bayaka est écrit « bayaka » par le missionnaire Michel Plancquaert, qui le donne comme le pluriel de muyaka ou myaka.",
+            "formAsWritten": "bayaka",
+            "actors": [
+              {
+                "name": "Michel Plancquaert",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les Jaga et les Bayaka du Kwango. Contribution historico-ethnographique",
+                "author": "Michel Plancquaert",
+                "year": 1932,
+                "url": "https://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(IRCB)_T.III,1_PLANCQUAERT%20M._Les%20jaga%20et%20les%20bayaka%20du%20Kwango_1932.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3",
+                "notes": "Ouvrage du missionnaire jésuite Michel Plancquaert, publié à l'époque coloniale par l'Institut royal colonial belge (Mémoires, section des sciences morales et politiques, tome III, fascicule 1), Bruxelles, 1932. Lu le 3 novembre 2026 dans la numérisation de l'Académie royale des sciences d'outre-mer. Passage lu : « connues sous le nom de myaka ou muyaka, au pluriel : mayaka ou bayaka »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bayaka est écrit « Bayaka » par Emil Torday et Thomas Athol Joyce, qui l'emploient pour tout le peuple du Kwango.",
+            "formAsWritten": "Bayaka",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Emil Torday et Thomas Athol Joyce",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Notes ethnographiques sur des populations habitant les rives du Kasai, de la Lukenie et du Kwango oriental",
+                "author": "Emil Torday et Thomas Athol Joyce",
+                "year": 1922,
+                "url": "https://archive.org/details/notesethnographi00tord",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 255",
+                "notes": "Bruxelles, Annales du Musée du Congo belge, publiées par le ministère des Colonies, 1922 ; ouvrage de l'époque coloniale. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Passage lu : « Ainsi qu'il a été dit plus haut, les Bayaka se sont installés dans le Kwango depuis des siècles »"
               }
             ]
           }

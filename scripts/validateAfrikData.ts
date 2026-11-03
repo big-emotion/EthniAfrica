@@ -2591,7 +2591,7 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
 // withdrawn that day took four Factbook citations with them.
 // 115 -> 112 on 2026-10-18: the Guwa, Mbogo and Mobe fiches, withdrawn after
 // wave 24 as unattested, took their Factbook citations with them.
-export const RETIRED_CIA_FACTBOOK_URL_CEILING = 112;
+export const RETIRED_CIA_FACTBOOK_URL_CEILING = 110;
 
 const LIVE_CIA_FACTBOOK =
   /cia\.gov\/(?:library\/publications\/)?the-world-factbook/i;
@@ -4861,7 +4861,7 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // which it says to leave out until the fiche has been reviewed.
   // 5968 -> 5920 on 2026-10-19: ETNI-2135 records `spellingAliases` on 48
   // people fiches whose sources already attest those forms.
-  peuple: 5904,
+  peuple: 5896,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
