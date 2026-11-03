@@ -2,151 +2,10 @@
   "id": "PPL_GBAYA",
   "nameMain": "Gbaya",
   "languageFamilyId": "FLG_BANTU",
-  "currentCountries": ["CAF", "CMR", "COG", "COD", "SSD"],
+  "currentCountries": ["CAF", "CMR", "COG"],
   "classificationStatus": "contested",
-  "content": {
-    "appellations": {
-      "mainName": "Gbaya",
-      "selfAppellation": "Gbaya",
-      "exonyms": [
-        "Gbaya",
-        "Gbeya",
-        "Baya",
-        "Gbaya-Manza-Ngbaka (designation linguistique)"
-      ],
-      "originOfExonyms": "Gbaya est utilisé par les personnes concernées et par d'autres peuples. Les groupes se nomment aussi Bokoto, Kara, Kaka, Buli ou Bwaka. En République centrafricaine, les documents administratifs en français emploient souvent Baya.",
-      "whyProblematic": "Le terme Gbaya designe un ensemble de groupes linguistiquement et culturellement apparentes mais non completement homogenes. La famille linguistique Gbaya-Manza-Ngbaka appartient aux langues oubanguiennes (Niger-Congo), ce qui remet en question leur classification dans le bantou au sens strict. Certains linguistes les classent parmi les langues adamawa-oubanguiennes.",
-      "contemporaryUsage": "Les Gbaya (Baya) sont officiellement reconnus comme le plus grand groupe ethnique de la Republique centrafricaine, representant environ 33% de la population. Le terme Gbaya est utilise dans les recensements officiels et les analyses politiques du pays.",
-      "linguisticFamily": "Niger-Congo, sous-groupe Adamawa-Oubanguien",
-      "ethnoLinguisticGroup": "Gbaya-Manza-Ngbaka",
-      "historicalRegion": "Ouest et centre de la Republique centrafricaine, est-centre du Cameroun",
-      "currentCountries": ["CAF", "CMR", "COG", "COD", "SSD"]
-    },
-    "ethnicities": [
-      "Gbaya Bokoto",
-      "Gbaya Kara",
-      "Gbaya Kaka",
-      "Gbaya Buli",
-      "Gbaya Bwaka",
-      "Gbaya-Bossangoa",
-      "Gbaya du Sud-Ouest"
-    ],
-    "origins": {
-      "ancientOrigins": "Les Gbaya sont presents en Afrique centrale depuis au moins le XVIe siecle. Des recherches archeologiques ont determine leur lieu d'origine dans la basse vallee du fleuve Lobaye. Des traditions orales plus recentes indiquent que les Gbeya seraient venus de l'est de l'Afrique, a travers le Soudan, pour fuir les conquetes arabes des XVe-XVIe siecles.",
-      "formationPeriod": "XVIe-XIXe siecles. Au debut du XIXe siecle, plusieurs tribus gbaya migrerent vers l'est de l'actuel Cameroun.",
-      "migrationRoutes": [
-        "Migration depuis la basse vallee du Lobaye vers l'ouest de la RCA (origine archeologique)",
-        "Migrations vers le Cameroun oriental au debut du XIXe siecle",
-        "Fuite vers le sud depuis le nord du Nigeria haoussa au debut du XIXe siecle sous la pression du djihad d'Usman dan Fodio"
-      ],
-      "historicalSettlementZones": [
-        "Ouest et centre de la Republique centrafricaine (region de Bossangoa, Bouar, Berberati, Carnot)",
-        "Cameroun oriental (region de l'Est, Bertoua)",
-        "Nord du Congo-Brazzaville",
-        "Nord-ouest de la RDC",
-        "Sud du Soudan du Sud"
-      ],
-      "unificationsOrDivisions": "Les guerres du XIXe siecle contre les Foulani du califat de Sokoto (razzias esclavagistes) ont contraint certains clans gbaya a accepter la hegemonie foulanie, tandis que d'autres se federaient sous des chefs de guerre comme Bafio pour resister. L'arrivee des Europeens crea de nouvelles fragmentations. Les sous-groupes contemporains (Bokoto, Kara, Buli, Kaka, Bwaka) refletent l'integration de peuples vaincus ou assimiles lors des migrations.",
-      "externalInfluences": "XIXe siecle : razzias esclavagistes foulanes depuis le nord du Cameroun actuel. 1892 : premier contact avec les Europeens lors de l'exploration de l'explorateur francais Antoine Mizon remontant la Sangha. Debut XXe siecle : incorporation dans le Kamerun allemand, repression des resistances, urbanisation forcee et collecte du caoutchouc obligatoire (a partir de 1912). 1914-1918 : la France, la Grande-Bretagne et la Belgique envahissent le Kamerun allemand.",
-      "majorHistoricalEvents": "XVIe s. : presence attestee en Afrique centrale. XIXe s. : guerres contre les Foulani, raides esclavagistes intenses. 1892 : premier contact europeen (Antoine Mizon). 1910 : toutes les tribus resistantes sont soumises par l'Allemagne, leurs chefs pendus. 1912 : introduction de la collecte obligatoire du caoutchouc. 1914-1918 : la Premiere Guerre mondiale detruit villages et structures sociales. 1928-1931 : grande revolte Gbaya sous la direction du prophete Karnu (aussi appele Barka Ngainoumbey) contre le travail force pour le chemin de fer Congo-Ocean ; Karnu tue rapidement mais la revolte dura trois ans. 1949 : dernier cas documente de cannibalisme rituel pres de Bertoua. Annees 1990 : integration accrue de leaders gbaya dans les administrations gouvernementales."
-    },
-    "organization": {
-      "traditionalPoliticalSystem": "Organisation en clans au sein d'une structure communautaire hierarchique. Les Gbaya n'ont pas developpe de royaume centralise ; leur organisation politique traditionnelle reposait sur des chefs de clan et des conseils d'anciens. Les decisions importantes etaient prises collectivement. La guerre et la resistance etaient coordonnees par des chefs de guerre ponctuels (comme Bafio et Karnu au XIXe et XXe siecles).",
-      "clanOrganization": "Societe divisee en clans patrilineaires. Les sous-groupes principaux (Bokoto, Kara, Kaka, Buli, Bwaka) correspondent a des entites claniques et refletent l'integration de peuples vaincus lors des migrations du XIXe siecle.",
-      "roleOfLineages": "Les lineages patrilineaires structurent l'acces a la terre et les alliances matrimoniales. Les anciens de lignage jouent un role central dans la resolution des conflits et dans la transmission des savoirs traditionnels.",
-      "religiousAuthority": "Avant le christianisme, les Gbaya pratiquaient l'animisme sous differentes formes : ngaanga (contact avec les esprits), zembe, sereze et unzimara. Les guerisseurs-devins (ngaanga) detenaient l'autorite religieuse. Aujourd'hui, environ 50% sont protestants, 33% catholiques, 12% suivent les croyances indigenes et 3% sont musulmans. La sorcellerie (dua) reste pratiquee. Le prophetisme (Karnu, 1928) montre la permanence des figures d'autorite religieuse charismatique."
-    },
-    "languages": {
-      "mainLanguage": "Gbaya (langue oubanguienne)",
-      "isoCodes": ["gba", "gbp"],
-      "dialects": [
-        "Gbaya-Bossangoa (gbp) - code Ethnologue specifique",
-        "Gbaya du Sud-Ouest",
-        "Gbaya du Nord-Ouest (Cameroun)",
-        "Kaka",
-        "Bwaka"
-      ],
-      "vehicularRole": "Le gbaya est parle par environ 23,8% de la population de la RCA, en faisant la langue la plus parlee dans ce pays devant le banda (23,5%) et le mandjia (14,8%). Le sango est la langue vehiculaire nationale de la RCA. En Cameroun, le gbaya est pratique dans la region de l'Est."
-    },
-    "culture": {
-      "majorRites": "Agriculture en essarts (slash and burn/swidden) : la foret est defrichee, brulee puis abandonnee apres quelques annees. Pratiques martiales : les recits et rituels emploient des armes a double tranchant (epees) et des couteaux a lancer (kuiga) ; la culture gbaya valorise les traditions d'arts martiaux de combat a mains nues et avec armes de poing. Fabrication de biere de miel (kuri). Prophetisme de Karnu comme rite de resistance collective memorise dans la tradition orale.",
-      "symbols": "Les armes traditionnelles (epees a double tranchant, couteaux de jet) sont des symboles de la culture martiale gbaya et de la resistance aux envahisseurs. Le miel et sa transformation en kuri symbolisent l'hospitalite et les moments de celebration communautaire.",
-      "artsAndMusic": "Agriculture vivriere centree sur le manioc (aliment de base, prepare en bouillie : kam), le mais, l'igname, les arachides, le tabac, le cafe et le riz. Artisanat textile et forge. Traditions orales riches incluant des recits de migrations et de guerres. Les techniques de combat (arts martiaux avec armes locales) constituent un patrimoine culturel transmis.",
-      "spiritualities": "Animisme traditionnel (ngaanga, zembe, sereze, unzimara) avec guerisseurs-devins. Cannibalisme rituel cible sur les ennemis vaincus ou les esclaves, consider disparu au XXe siecle (dernier cas documente 1949). Synchretisme chretien-animiste predominant aujourd'hui. Prophetisme messianique (Karnu, 1928) lie a la resistance anticoloniale. La sorcellerie (dua) est socialement reconnue comme explication du malheur."
-    },
-    "historicalRole": {
-      "kingdomsOrChiefdoms": "Les Gbaya n'ont pas forme de royaume centralise. Leur organisation politique en chefferies de clans etait decentralisee. Des chefs de guerre ponctuels (Bafio au XIXe s., Karnu en 1928) emergeaient lors de crises. Depuis l'independance, des personnalites gbaya ont accede aux plus hautes fonctions de l'Etat centrafricain (Francois Bozize, president ; Alexandre Banza, ministre ; Michel Gbezera-Bria, Premier ministre).",
-      "relationsWithNeighbors": "Relations conflictuelles avec les Foulani esclavagistes du nord du Cameroun au XIXe siecle. Assimilation et integration de peuples vaincus (Bokoto, Kaka, Bwaka) lors des migrations. Relations avec les Banda et Mandjia en RCA. Tensions contemporaines liees aux conflits armes en RCA.",
-      "conflictsOrAlliances": "Guerres recurrentes contre les Foulani du califat de Sokoto (XIXe s.). Resistance a la colonisation allemande (annees 1900-1910). Grande revolte anti-coloniale de 1928-1931 (Guerre de Kongo-Wara, du nom du couteau de jet) sous Karnu contre le travail force pour le chemin de fer Congo-Ocean. Participation aux guerres civiles contemporaines en RCA (groupes armes Seleka et anti-Balaka, 2012-2023).",
-      "diaspora": "Presence gbaya dans plusieurs pays d'Afrique centrale : RCA, Cameroun, Congo-Brazzaville, RDC et Soudan du Sud. La diaspora est essentiellement sous-regionale ; migration interne vers Bangui et les centres urbains de RCA."
-    },
-    "demography": {
-      "totalPopulation": 1200000,
-      "referenceYear": 2025,
-      "source": "Wikipedia EN (estimation haute) : 1,2 million (estimations basses : 685 100 dont 358 000 au Cameroun). CAR : ~33% de la population centrafricaine de ~5,6M = ~1,8M selon World Atlas/UNFPA",
-      "distributionByCountry": [
-        {
-          "country": "CAF",
-          "population": 1000000,
-          "note": "Plus grand groupe ethnique de la RCA (~33% de la population)"
-        },
-        {
-          "country": "CMR",
-          "population": 220000,
-          "note": "Region de l'Est, principalement Gbaya du Nord-Ouest (Joshua Project 2025)"
-        },
-        {
-          "country": "COG",
-          "population": 30000,
-          "note": "Nord de la Republique du Congo"
-        },
-        {
-          "country": "COD",
-          "population": 20000,
-          "note": "Nord-ouest de la RDC"
-        }
-      ]
-    },
-    "sources": [
-      {
-        "title": "Gbaya – Encyclopaedia Britannica",
-        "url": "https://www.britannica.com/topic/Gbaya",
-        "tier": "unverified",
-        "source_kind": "encyclopedia"
-      },
-      {
-        "title": "Gbaya-Bossangoa in Central African Republic – Joshua Project, 2025",
-        "url": "https://joshuaproject.net/people_groups/11844",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "Gbaya, Northwest in Cameroon – Joshua Project, 2025",
-        "url": "https://joshuaproject.net/people_groups/10742/CM",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "Gbaya, Southwest in Central African Republic – Joshua Project",
-        "url": "https://joshuaproject.net/people_groups/11843",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "What Is The Ethnic Composition of the Central African Republic – WorldAtlas, 2019",
-        "url": "https://www.worldatlas.com/articles/what-is-the-ethnic-composition-of-the-population-of-central-african-republic.html",
-        "tier": "unverified"
-      },
-      {
-        "title": "Gbaya-Bossangoa Language (GBP) – Ethnologue",
-        "url": "https://www.ethnologue.com/language/gbp/",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
-      }
-    ]
-  },
   "nameHistory": {
-    "summary": "Le nom Gbaya désigne un peuple de l'ouest de la Centrafrique et de l'est du Cameroun, qui se nomme lui-même Gbaya, comme sa langue. Un autre nom existe : Baya. Les sources lues n'expliquent pas l'origine de ces noms ; nous présentons plus bas ce qu'elles en disent.",
+    "summary": "Le nom Gbaya est celui que se donne un peuple de l'ouest de la Centrafrique et de l'est du Cameroun, et le nom de sa langue. Les voyageurs et les administrateurs européens l'ont d'abord écrit Baya ou Baia. Plusieurs explications de son origine circulent ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Gbaya",
@@ -154,7 +13,7 @@
         "selfGiven": true,
         "languageOfOrigin": "gba",
         "namedBy": null,
-        "shortLine": "Le nom du peuple et de sa langue ; son origine n'est pas expliquée.",
+        "shortLine": "Le nom que se donne le peuple, et celui de sa langue ; plusieurs explications de son origine circulent.",
         "usedIn": ["gba"],
         "periodLabel": "En usage aujourd'hui",
         "accounts": [
@@ -165,8 +24,8 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Gbaya désigne un ensemble de groupes, dont les Gbaya 'bodoe de Centrafrique et les Gbaya yaayuuwee du Cameroun, qu'ont étudiés Paulette Roulon-Doko et Philip Burnham. Les sources lues ne disent pas d'où vient ce nom.",
-            "aspect": "meaning",
+            "statement": "Le nom Gbaya désigne un ensemble de groupes, dont les Gbaya 'bodoe de Centrafrique et les Gbaya yaayuuwee du Cameroun, qu'ont étudiés Paulette Roulon-Doko et Philip Burnham.",
+            "aspect": "usage",
             "sources": [
               {
                 "title": "La notion de « migration » dans l'aire gbaya",
@@ -199,6 +58,186 @@
                 "source_kind": "academic",
                 "page": "p. 1 de la version déposée",
                 "notes": "Dans H. Tourneux et N. Woïn (dir.), Migrations et mobilité dans le bassin du lac Tchad, IRD, 2009, p. 543-553. Version déposée sur HAL, lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gbaya est celui que la norme ISO 639-3 donne à une macrolangue, notée gba, qui regroupe six langues : le bokoto, le gbaya de Bossangoa, le gbaya de Bozoum, le gbaya-mbodomo, le gbaya du Sud-Ouest et le gbaya du Nord-Ouest.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "gba | ISO 639-3",
+                "author": "SIL International, autorité d'enregistrement de la norme ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/gba",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 3 novembre 2026. Le code gba désigne la macrolangue gbaya, en usage. Elle regroupe le bokoto (bdt), le gbaya-bossangoa (gbp), le gbaya-bozoum (gbq), le gbaya-mbodomo (gmm), le gbaya du Sud-Ouest (gso) et le gbaya du Nord-Ouest (gya)."
+              },
+              {
+                "title": "Glottolog 5.3 — Gbaya-Manza-Ngbaka (gbay1279)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/gbay1279",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 3 novembre 2026. Glottolog classe la famille gbaya-manza-ngbaka directement sous le groupe Volta-Congo du Nord, dans l'Atlantique-Congo, et non dans les langues oubanguiennes. Elle y réunit le gbaya méridional-occidental (bokoto, gbaya-bozoum, gbaya-bossangoa, gbaya du Sud-Ouest, gbaya du Nord-Ouest, dont les parlers 'bodoe, kara et yaáyuwee) et le gbaya oriental, qui comprend aussi le gbaya-mbodomo, le manza et le ngbaka."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gbaya est aussi celui que se donne, au Soudan du Sud, un peuple que ses voisins appellent Kresh. Sa langue, le kresh-woro, appartient à une autre famille que les langues gbaya, selon Glottolog.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Kresh-Woro (gbay1288)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/gbay1288",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Gbaya (Sudan), Gbaya, Kpala, Kpara, Kparla, Kredj, Kreich, Kreish et Kresh."
+              },
+              {
+                "title": "Glottolog 5.3 — Gbaya-Manza-Ngbaka (gbay1279)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/gbay1279",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 3 novembre 2026. Glottolog classe la famille gbaya-manza-ngbaka directement sous le groupe Volta-Congo du Nord, dans l'Atlantique-Congo, et non dans les langues oubanguiennes. Elle y réunit le gbaya méridional-occidental (bokoto, gbaya-bozoum, gbaya-bossangoa, gbaya du Sud-Ouest, gbaya du Nord-Ouest, dont les parlers 'bodoe, kara et yaáyuwee) et le gbaya oriental, qui comprend aussi le gbaya-mbodomo, le manza et le ngbaka."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1962,
+              "to": 1962,
+              "label": "Rapportée en 1962"
+            },
+            "era": "modern",
+            "statement": "Le nom Gbaya viendrait de gbea, « rouge », selon une explication que rapporte John Hilberth. Il renvoie à un récit de voyage publié en 1896, où Ed. Ponel appelle « les rouges » les N'Dérés de la Haute-Sangha, à cause de leur peau « rouge sombre » ; ce récit ne parle pas du nom Gbaya.",
+            "hypothesisGroup": "origine du nom gbaya",
+            "sources": [
+              {
+                "title": "Les Gbaya",
+                "author": "John Hilberth",
+                "year": 1962,
+                "url": "https://www.samorini.it/doc1/alt_aut/ek/hilberth-les-gbaya.pdf",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "page": "p. 2, note 1",
+                "notes": "Studia Ethnographica Upsaliensia XIX, Lund, Håkan Ohlssons, 1962. Monographie fondée sur des enquêtes menées dans les années 1950 dans la Haute-Sangha et autour de Bouar. Lue dans une copie numérisée mise en ligne par un particulier, le 3 novembre 2026. Note 1 : « L'étymologie du nom Gbaya est incertaine et interprétée différemment : 1. gbea = rouge »."
+              },
+              {
+                "title": "La Haute Sangha (Congo français), Bulletin de la Société de géographie, 1896",
+                "author": "Ed. Ponel",
+                "year": 1896,
+                "url": "https://archive.org/details/bulletin-de-la-societe-de-geographie-paris-1896",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 192",
+                "notes": "Paris, Société de géographie, 1896 ; communication lue en séance le 17 mai 1895. Le sommaire attribue d'abord l'article à Ed. Cholet ; un erratum du même volume rectifie : « par Ed. Ponel ». Récit d'un voyage fait en 1892 avec la mission de Brazza. Page 192 : « les rouges, c'est-à-dire les N'Dérés, qui ont la peau rouge sombre ». Page 200 : « la haute coiffure des dames Bayas ». Lu dans la numérisation de Gallica déposée sur Internet Archive, le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1962,
+              "to": 1962,
+              "label": "Rapportée en 1962"
+            },
+            "era": "modern",
+            "statement": "Le nom Gbaya signifierait « les hommes qui restent en arrière », selon une explication publiée par M. Faure dans le Bulletin de la Société des recherches congolaises et rapportée par John Hilberth.",
+            "hypothesisGroup": "origine du nom gbaya",
+            "sources": [
+              {
+                "title": "Les Gbaya",
+                "author": "John Hilberth",
+                "year": 1962,
+                "url": "https://www.samorini.it/doc1/alt_aut/ek/hilberth-les-gbaya.pdf",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "page": "p. 2, note 1",
+                "notes": "Studia Ethnographica Upsaliensia XIX, Lund, Håkan Ohlssons, 1962. Monographie fondée sur des enquêtes menées dans les années 1950 dans la Haute-Sangha et autour de Bouar. Lue dans une copie numérisée mise en ligne par un particulier, le 3 novembre 2026. Note 1, deuxième explication, d'après M. Faure, « Les races de la région de Carnot », Bulletin de la Société des recherches congolaises, n° 21, p. 100."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1958,
+              "to": 1958,
+              "label": "Proposée en 1958"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gbaya viendrait de « Gbe-An », « tuez-le », selon une explication parue en 1958 dans la revue Liaison, dans un article de L. Namfei sur l'éducation chez les Baya de Bossangoa, et rapportée par John Hilberth.",
+            "hypothesisGroup": "origine du nom gbaya",
+            "sources": [
+              {
+                "title": "Les Gbaya",
+                "author": "John Hilberth",
+                "year": 1962,
+                "url": "https://www.samorini.it/doc1/alt_aut/ek/hilberth-les-gbaya.pdf",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "page": "p. 2, note 1",
+                "notes": "Studia Ethnographica Upsaliensia XIX, Lund, Håkan Ohlssons, 1962. Monographie fondée sur des enquêtes menées dans les années 1950 dans la Haute-Sangha et autour de Bouar. Lue dans une copie numérisée mise en ligne par un particulier, le 3 novembre 2026. Note 1, troisième explication, d'après Liaison, n° 64, 1958, p. 32."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1962,
+              "to": 1962,
+              "label": "Rapportée en 1962"
+            },
+            "era": "modern",
+            "statement": "Le nom Gbaya réunirait gba, « grand, important », et ya, « frère », et voudrait dire « grand frère », selon une analyse linguistique que rapporte John Hilberth. Il note que, dans la plupart des clans gbaya, ya veut dire « frère ».",
+            "hypothesisGroup": "origine du nom gbaya",
+            "sources": [
+              {
+                "title": "Les Gbaya",
+                "author": "John Hilberth",
+                "year": 1962,
+                "url": "https://www.samorini.it/doc1/alt_aut/ek/hilberth-les-gbaya.pdf",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "page": "p. 2, note 1",
+                "notes": "Studia Ethnographica Upsaliensia XIX, Lund, Håkan Ohlssons, 1962. Monographie fondée sur des enquêtes menées dans les années 1950 dans la Haute-Sangha et autour de Bouar. Lue dans une copie numérisée mise en ligne par un particulier, le 3 novembre 2026. Note 1, quatrième explication, donnée comme une analyse linguistique, sans nom d'auteur."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1943,
+              "to": 1943,
+              "label": "Proposée en 1943"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gbaya voudrait dire « ceux qui disent ya », selon G. Grabbeck, qui écrit en 1943 sur les Gbwaka : chez eux, ya est un pronom qui veut dire « je » et ba veut dire « ceux », et ils auraient l'habitude de répéter ce pronom en début de phrase. John Hilberth rapporte cette explication.",
+            "hypothesisGroup": "origine du nom gbaya",
+            "sources": [
+              {
+                "title": "Les Gbaya",
+                "author": "John Hilberth",
+                "year": 1962,
+                "url": "https://www.samorini.it/doc1/alt_aut/ek/hilberth-les-gbaya.pdf",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "page": "p. 2, note 1",
+                "notes": "Studia Ethnographica Upsaliensia XIX, Lund, Håkan Ohlssons, 1962. Monographie fondée sur des enquêtes menées dans les années 1950 dans la Haute-Sangha et autour de Bouar. Lue dans une copie numérisée mise en ligne par un particulier, le 3 novembre 2026. Note 1, d'après G. Grabbeck, « Les Gbwaka », Bulletin des juridictions indigènes et du droit coutumier congolais, n° 5, 1943, p. 85."
               }
             ]
           },
@@ -265,7 +304,8 @@
                 "page": "p. 575",
                 "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
               }
-            ]
+            ],
+            "era": "polity"
           }
         ]
       },
@@ -275,10 +315,87 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Une forme du nom employée surtout en français ; elle apparaît dès 1857.",
-        "usedIn": ["fra"],
+        "shortLine": "La forme du nom écrite par les voyageurs et les colonisateurs ; on la trouve dès 1857.",
+        "usedIn": ["fra", "eng", "deu"],
         "periodLabel": "Écrit dès 1857",
         "accounts": [
+          {
+            "period": {
+              "from": 1900,
+              "to": 1958,
+              "label": "De 1900 à 1958"
+            },
+            "era": "colonial",
+            "statement": "Le nom Baya est la forme qu'emploient la plupart des travaux coloniaux en français que cite John Hilberth en 1962, comme le vocabulaire de Léopold Landréau (1900), l'ouvrage de F. Éboué sur les langues sango, baya et mandjia (1918) ou l'étude d'A. Poupon sur les Baya. Hilberth, lui, écrit Gbaya.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Gbaya",
+                "author": "John Hilberth",
+                "year": 1962,
+                "url": "https://www.samorini.it/doc1/alt_aut/ek/hilberth-les-gbaya.pdf",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "page": "p. VIII",
+                "notes": "Studia Ethnographica Upsaliensia XIX, Lund, Håkan Ohlssons, 1962. Monographie fondée sur des enquêtes menées dans les années 1950 dans la Haute-Sangha et autour de Bouar. Lue dans une copie numérisée mise en ligne par un particulier, le 3 novembre 2026. Page VIII : bibliographie de l'ouvrage."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Baya désigne un pays et une langue dans le vocabulaire publié en 1900 par Léopold Landréau, ancien chef de poste du Congo français. Il situe le « pays des Bayas » dans la Haute-Sangha, entre la Mambéré, la Kadéï et la rivière Wôm.",
+            "formAsWritten": "Baya",
+            "actors": [
+              {
+                "name": "Léopold Landréau",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulaire de la langue Baya (Haute Sanga)",
+                "author": "Léopold Landréau",
+                "year": 1900,
+                "url": "https://archive.org/details/vocabulairedelal00landuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5-7",
+                "notes": "Paris, Augustin Challamel, 1900. L'auteur se présente comme ancien chef de poste du Congo français. L'introduction, « Le pays des Bayas », situe ce pays dans un triangle entre le confluent de la Mambéré et de la Kadéï et la rivière Wôm. Ouvrage colonial, cité ici pour la forme du nom qu'il emploie. Lu dans la numérisation d'Internet Archive le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1934,
+              "to": 1937,
+              "label": "Publiée en 1934-1937"
+            },
+            "statement": "Le nom Baya s'écrit Baja dans la monographie allemande de G. Tessmann, Die Baja, parue à Stuttgart en 1934-1937, que mentionne l'avant-propos du livre de John Hilberth.",
+            "formAsWritten": "Baja",
+            "actors": [
+              {
+                "name": "G. Tessmann",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les Gbaya",
+                "author": "John Hilberth",
+                "year": 1962,
+                "url": "https://www.samorini.it/doc1/alt_aut/ek/hilberth-les-gbaya.pdf",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "page": "p. VII",
+                "notes": "Studia Ethnographica Upsaliensia XIX, Lund, Håkan Ohlssons, 1962. Monographie fondée sur des enquêtes menées dans les années 1950 dans la Haute-Sangha et autour de Bouar. Lue dans une copie numérisée mise en ligne par un particulier, le 3 novembre 2026. Page VII : avant-propos de Sture Lagercrantz, daté d'octobre 1961."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1893,
@@ -308,7 +425,7 @@
               "label": "Itinéraires recueillis vers 1851, publiés en 1857"
             },
             "era": "polity",
-            "statement": "Le nom Baya figure chez l'explorateur Heinrich Barth, d'après des itinéraires que lui décrivent des informateurs : c'est le chef-lieu d'un pays du même nom, au sud de l'Adamawa. C'est la plus ancienne trace de ce nom que le projet connaît ; on ne sait pas avec certitude s'il s'agit du même peuple.",
+            "statement": "Le nom Baya figure chez l'explorateur Heinrich Barth, dans des itinéraires que lui décrivent des informateurs : c'est le chef-lieu d'un pays du même nom, au sud de l'Adamawa, dont le chef dépend du gouverneur de Bundang. C'est la plus ancienne trace de ce nom que nous connaissons. Barth rapproche ces Baya des « Bayong » décrits par Koelle et par Baikie.",
             "formAsWritten": "Baya",
             "birth": true,
             "actors": [
@@ -325,12 +442,339 @@
                 "url": "https://archive.org/details/travelsdiscoveri02bart_2",
                 "tier": "referenced",
                 "source_kind": "archive",
-                "page": "p. 613",
-                "notes": "Londres, Longman, 1857. Appendice : itinéraires recueillis auprès d'informateurs à partir de l'Adamawa. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+                "page": "p. 613-614",
+                "notes": "Londres, Longman, 1857. Appendice : itinéraires recueillis auprès d'informateurs à partir de l'Adamawa. Page 613 : « Baya, the principal place of the district or country of the same name » ; page 614 : « The Baya are evidently identical with Koelle's and Dr. Baikie's Bayong ». Page 513 : la langue des Mbum « and of the people of Baya ». Relu dans la numérisation d'Internet Archive le 3 novembre 2026."
               }
             ]
           }
         ]
+      }
+    ]
+  },
+  "content": {
+    "appellations": {
+      "mainName": "Gbaya",
+      "selfAppellation": "Gbaya",
+      "exonyms": ["Baya"],
+      "spellingAliases": ["Gbeya", "Baia", "Baja"],
+      "originOfExonyms": "Le nom Baya est la forme qu'ont d'abord écrite les voyageurs et les administrateurs européens. Heinrich Barth l'écrit en 1857 d'après des informateurs de l'Adamawa, Siegfried Passarge écrit Baia en 1895, et Léopold Landréau, ancien chef de poste du Congo français, publie en 1900 un vocabulaire de la « langue Baya ». La plupart des travaux coloniaux en français gardent cette forme. Selon John Hilberth, les Gbaya du Nord appellent Kaka les clans de la Haute-Sangha, qui refusent ce nom.",
+      "whyProblematic": "Le nom Gbaya ne désigne pas un groupe uni. En 1962, John Hilberth décrit de nombreux clans sans pouvoir politique commun, dont une partie seulement porte un nom formé sur Gbaya. Le même nom est porté au Soudan du Sud par un autre peuple, que ses voisins appellent Kresh, et dont la langue appartient à une autre famille, selon Glottolog. Enfin, le classement des langues gbaya varie : Paulette Roulon-Doko les range parmi les langues oubanguiennes, tandis que Glottolog fait de la famille gbaya-manza-ngbaka un groupe à part.",
+      "contemporaryUsage": "Le nom Gbaya sert aujourd'hui aux linguistes et aux ethnologues pour le peuple et pour ses langues. La norme ISO 639-3 l'emploie pour une macrolangue qui regroupe six langues de Centrafrique, du Cameroun et du Congo. En Centrafrique, un décret de 1966 interdit de mentionner l'ethnie dans les actes officiels, selon Jacques Leclerc ; les recensements ne publient donc pas de chiffre pour les Gbaya.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
+    },
+    "ethnicities": [
+      "Gbaya du Nord-Ouest ou Gbaya kara, dont les Gbaya 'bodoe de la région de Bouar",
+      "Gbaya yaáyuwee du Cameroun",
+      "Gbaya de Bossangoa",
+      "Gbaya de Bozoum",
+      "Gbaya du Sud-Ouest",
+      "Bokoto",
+      "Gbaya-Mbodomo",
+      "Kala, Gbógótó, Biyanda, Gbóli, Boundamono, Mbómbéléng, Boukaré, Ngómbé et Gbósókó, clans de la Haute-Sangha et de Bouar décrits par John Hilberth"
+    ],
+    "origins": {
+      "ancientOrigins": "Selon une reconstitution que rapporte Elikia M'Bokolo dans l'Histoire générale de l'Afrique de l'UNESCO, les ancêtres des peuples gbaya et manza se seraient établis dans l'ouest de la région dès le premier millénaire avant notre ère. Dans le même ouvrage, Jan Vansina décrit un lent déplacement des Gbaya dans les prairies de l'actuelle Centrafrique et du Cameroun entre le XVIe et le XVIIIe siècle, qu'il juge encore très mal connu. Les Gbaya interrogés par John Hilberth dans les années 1950 situent leur origine « vers le lever du soleil », à l'est ; quelques clans disent venir de l'ouest, du nord ou du sud.",
+      "formationPeriod": "Le peuple gbaya apparaît dans les écrits et les sources orales au début du XIXe siècle, selon Philip Burnham, cité par Paulette Roulon-Doko.",
+      "migrationRoutes": [
+        "Du XVIe au XVIIIe siècle, lent déplacement dans les prairies de l'actuelle Centrafrique et du Cameroun, selon Jan Vansina",
+        "Au début du XIXe siècle, départ de la région du Bornou vers le sud-est et le haut bassin de la Sangha, sous la pression des troupes d'Ousmane dan Fodio, selon Erik Andersson, cité par John Hilberth"
+      ],
+      "historicalSettlementZones": [
+        "Ouest de la Centrafrique, à l'ouest du 17e degré de longitude est : régions de Bozoum, Paoua, Bossangoa, Bouar, Carnot, Berbérati et Boda",
+        "Est du Cameroun, jusqu'à Bertoua et Ngaoundéré",
+        "Plateau de l'Adamaoua au Cameroun, autour de Meiganga",
+        "Haute-Sangha, entre la Mambéré, la Kadéï et la rivière Wôm, selon Léopold Landréau en 1900"
+      ],
+      "unificationsOrDivisions": "Les Gbaya n'ont pas formé d'État sous une même autorité, écrit John Hilberth en 1962 : leur unité tient au sentiment de descendre d'ancêtres communs, et ils se répartissent en nombreux clans. Philip Burnham et Thomas Christensen décrivent eux aussi, avant et au début de la colonisation, des groupes de clans très locaux, où le pouvoir se disputait entre hommes influents. À la fin du XIXe siècle, dans l'ouest du pays gbaya, quelques chefs comme Dogo Lokoti, Bafio et Mbartua, dont la ville de Bertoua porte le nom, se sont renforcés grâce à leurs liens avec les États fulbe de l'Adamaoua.",
+      "externalInfluences": "Au XIXe siècle, les Fulbe de l'Adamaoua lancent des razzias pour capturer des esclaves parmi les Gbaya, ou passent avec eux des traités : en échange de la paix, les Gbaya livrent des esclaves en tribut, selon John Hilberth. En 1893-1894, Siegfried Passarge décrit les Baia comme déjà soumis aux Fulbe. Des missions françaises parcourent la Haute-Sangha à partir de 1890, selon le récit d'Ed. Ponel ; d'après les Boundamono interrogés par Hilberth, Brazza fit en 1892 de Zaóróyanga le chef des autres responsables de clan. Sous la colonisation, l'administration regroupe les villages, selon Philip Burnham, et nomme des chefs chargés surtout de collecter l'impôt, selon Paulette Roulon-Doko. Des missionnaires baptistes américains et catholiques italiens et français ont ensuite christianisé les Gbaya.",
+      "majorHistoricalEvents": "Vers 1851 : Heinrich Barth recueille le nom d'un pays Baya au sud de l'Adamawa. 1890-1892 : des missions françaises, dont celle de Brazza, parcourent la Haute-Sangha. 1893-1894 : l'expédition allemande de Siegfried Passarge décrit les Baia soumis aux Fulbe. 1928-1931 : soulèvement des Gbaya et de leurs voisins en Afrique-Équatoriale française et au Cameroun, contre le recrutement forcé et l'impôt ; c'est la guerre du Kongo-Wara, ou « guerre du manche de houe », liée au nom de Karnou."
+    },
+    "organization": {
+      "traditionalPoliticalSystem": "Les Gbaya n'avaient pas d'autorité commune au-dessus des clans et des villages ; Paulette Roulon-Doko décrit une société « sans hiérarchie ». Avant l'arrivée des Européens, selon John Hilberth, la famille élargie vivait sous l'autorité d'un mata, qui représente l'ancêtre du clan, et le chef jugeait les différends avec les anciens du village. Les chefs de village ont ensuite été désignés par l'administration coloniale. Dans chaque village, un « maître de terre » est responsable des chasses et honore les ancêtres.",
+      "clanOrganization": "Un clan réunit plusieurs familles, appelées nam, qui descendent d'un même ancêtre. Selon John Hilberth, cet ancêtre se serait changé en un animal, appelé zim, qui devient celui du clan entier : les Gbógótó ne mangent pas la gazelle mbalé, les Gbóli et les Boukaré ne mangent pas le phacochère, les Biyanda ont pour animal une panthère et les Kala le lion.",
+      "ageClassSystems": "Les sources lues décrivent des initiations plutôt que des classes d'âge. John Hilberth présente le lagbi comme un rite qui fait des garçons des hommes ; dans les années 1950, il existe encore autour de Bouar mais a disparu ailleurs, et il était aussi pratiqué par les Kaka, les Yanguéré, les Pandé, les Mboum, les Laka et les Kare. Paulette Roulon-Doko cite les initiations la'bi pour les hommes et bana pour les femmes, sans doute empruntées aux Sara du Tchad et abandonnées depuis une soixantaine d'années.",
+      "roleOfLineages": "La filiation passe par le père, et l'épouse vient vivre chez son mari et chez le père de celui-ci, selon Paulette Roulon-Doko. Chaque village dispose d'un territoire, celui où vivent les ancêtres du lignage fondateur. Le mata, qui représente l'ancêtre, règle la vie de la parenté et gère ses biens ; en 1958, au village de Barka, John Hilberth compte dix-huit mata, dont huit femmes.",
+      "religiousAuthority": "Les devins-guérisseurs, appelés wanganga, les wanyina et les mata portent comme signe de leur rang le couteau za, selon John Hilberth. Le « maître de terre » de chaque village honore les ancêtres, selon Paulette Roulon-Doko."
+    },
+    "languages": {
+      "mainLanguage": "Gbaya (gba)",
+      "isoCodes": ["gba", "gbp", "gya", "gso", "gbq", "bdt", "gmm"],
+      "dialects": [
+        "Gbaya du Nord-Ouest (gya), avec les parlers kara, 'bodoe, yaáyuwee et mbere",
+        "Gbaya de Bossangoa (gbp)",
+        "Gbaya de Bozoum (gbq)",
+        "Gbaya du Sud-Ouest (gso)",
+        "Bokoto (bdt)",
+        "Gbaya-Mbodomo (gmm)"
+      ],
+      "vehicularRole": "En Centrafrique, le sango est langue officielle avec le français, selon Jacques Leclerc. Parmi les langues de plus de 60 000 locuteurs, il cite le gbaya du Nord-Ouest (200 000), le gbaya de Bossangoa (176 000), le gbaya du Sud-Ouest (164 000) et le bokoto (130 000)."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q1496762",
+      "iso639_3": "gba"
+    },
+    "culture": {
+      "majorRites": "Le culte des ancêtres passe surtout par des rites liés à la consommation du gibier et par une prière annuelle aux ancêtres, selon Paulette Roulon-Doko. Les initiations des jeunes, lagbi ou la'bi pour les garçons et bana pour les filles, sont longtemps restées les rites gbaya les plus connus ; Roulon-Doko les dit abandonnées depuis une soixantaine d'années.",
+      "symbols": "La double cloche kénge est une cloche d'honneur et un signe d'autorité, et le couteau za marque le rang des devins-guérisseurs et des mata, selon John Hilberth. Le nom de la guerre de 1928-1931, Kongo-Wara, désigne le manche coudé de la houe.",
+      "artsAndMusic": "Les Gbaya aiment chanter et danser, écrit John Hilberth : ils jouent de plusieurs tambours, de la sanza appelée nzanga, d'une harpe-arc, de cornes et de flûtes, et la danse prend souvent le nom de l'instrument. Les contes ont pour héros Tô, appelé Wanto par les Gbaya de l'Est, qui aurait montré aux hommes les plantes à manger et leur aurait appris à bâtir des cases et à danser. Le manioc est la base des repas ; sa farine sert à préparer le plat appelé zika ou kam.",
+      "spiritualities": "Selon John Hilberth, la religion gbaya fait place à des génies, à So ou Gbaso, père de Tô, et à doua, l'esprit le plus redouté, qui habiterait le ventre de certaines personnes et servirait à tuer. Le culte des ancêtres reste vivant. Des missionnaires baptistes et catholiques ont christianisé les Gbaya, avec une influence limitée selon Paulette Roulon-Doko ; Joshua Project estime la part des chrétiens à 93 % chez les Gbaya de Bossangoa et à 63 % chez les Gbaya du Nord-Ouest au Cameroun."
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": "Les Gbaya n'ont pas formé de royaume. À la fin du XIXe siècle, quelques chefs se renforcent dans l'ouest du pays gbaya grâce à leurs liens avec les Fulbe, comme Dogo Lokoti, Bafio et Mbartua, selon Philip Burnham et Thomas Christensen. Chez les Boundamono, plusieurs mata dépendaient d'un chef de guerre appelé konga wan, selon John Hilberth.",
+      "relationsWithNeighbors": "Les Gbaya ont subi les razzias des Fulbe de l'Adamaoua et leur ont payé tribut au XIXe siècle. Des villages yanguéré se sont installés en îlots dans leur territoire. Ils partagent la famille de langues gbaya-manza-ngbaka avec les Manza et les Ngbaka, mais John Hilberth juge peu fondé de les ranger dans une « famille Manja ».",
+      "conflictsOrAlliances": "De 1928 à 1931, les Gbaya et leurs voisins se soulèvent contre l'administration de l'Afrique-Équatoriale française et du Cameroun, contre le recrutement forcé et l'impôt : c'est la guerre du Kongo-Wara. Elle est liée à Karnou, dont le message appelait à résister sans verser le sang ; ses partisans ont pourtant combattu les Français et leurs alliés fulbe, selon Philip Burnham et Thomas Christensen. Thomas O'Toole se demande si ce fut un mouvement messianique ou une autodéfense des villages.",
+      "diaspora": null
+    },
+    "demography": {
+      "totalPopulation": null,
+      "referenceYear": 2026,
+      "source": "Aucun recensement récent ne compte les Gbaya : en Centrafrique, un décret de 1966 interdit de mentionner l'ethnie dans les actes officiels, selon Jacques Leclerc. En 1983, Philip Burnham et Thomas Christensen estiment les peuples de langue gbaya à environ un demi-million de personnes, et Paulette Roulon-Doko donne le même ordre de grandeur. Selon Leclerc, un dépouillement partiel du recensement centrafricain de 1988 compte 705 000 locuteurs des langues gbaya-manza, manza compris. Joshua Project, une base de données missionnaire, donne en 2026 des estimations par groupe : en Centrafrique, 321 000 Gbaya du Nord-Ouest, 282 000 Gbaya de Bossangoa et 303 000 Gbaya du Sud-Ouest.",
+      "distributionByCountry": [
+        {
+          "country": "CAF",
+          "population": null,
+          "note": "Environ les quatre cinquièmes des Gbaya vivent dans l'ouest du pays, selon Paulette Roulon-Doko. Les trois estimations de Joshua Project pour ce pays font ensemble 906 000 personnes."
+        },
+        {
+          "country": "CMR",
+          "population": 226000,
+          "note": "Estimation de Joshua Project pour les Gbaya du Nord-Ouest, dans l'Est et l'Adamaoua."
+        },
+        {
+          "country": "COG",
+          "population": 7300,
+          "note": "Estimation de Joshua Project pour les Gbaya du Nord-Ouest."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Gbaya – Encyclopaedia Britannica",
+        "url": "https://www.britannica.com/topic/Gbaya",
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
+      },
+      {
+        "title": "Gbaya-Bossangoa in Central African Republic – Joshua Project, 2025",
+        "url": "https://joshuaproject.net/people_groups/11844",
+        "tier": "unverified",
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire, relue le 3 novembre 2026 : 282 000 personnes, chrétiennes à 93 % selon son estimation."
+      },
+      {
+        "title": "Gbaya, Northwest in Cameroon – Joshua Project, 2025",
+        "url": "https://joshuaproject.net/people_groups/10742/CM",
+        "tier": "unverified",
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire, relue le 3 novembre 2026 : 226 000 personnes au Cameroun, chrétiennes à 63 % selon son estimation."
+      },
+      {
+        "title": "Gbaya, Southwest in Central African Republic – Joshua Project",
+        "url": "https://joshuaproject.net/people_groups/11843",
+        "tier": "unverified",
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire, relue le 3 novembre 2026 : 303 000 personnes, en Centrafrique seulement."
+      },
+      {
+        "title": "What Is The Ethnic Composition of the Central African Republic – WorldAtlas, 2019",
+        "url": "https://www.worldatlas.com/articles/what-is-the-ethnic-composition-of-the-population-of-central-african-republic.html",
+        "tier": "unverified",
+        "source_kind": "encyclopedia",
+        "notes": "Article de John Misachi, 26 juillet 2019, relu le 3 novembre 2026. Il présente les Baya ou Gbaya comme environ 33 % de la population centrafricaine, sans indiquer d'où vient ce chiffre."
+      },
+      {
+        "title": "Gbaya-Bossangoa Language (GBP) – Ethnologue",
+        "url": "https://www.ethnologue.com/language/gbp/",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Les Gbaya",
+        "author": "John Hilberth",
+        "year": 1962,
+        "url": "https://www.samorini.it/doc1/alt_aut/ek/hilberth-les-gbaya.pdf",
+        "tier": "unverified",
+        "source_kind": "academic",
+        "page": "p. 1-3, 27-32, 48, 64-72",
+        "notes": "Studia Ethnographica Upsaliensia XIX, Lund, Håkan Ohlssons, 1962. Monographie fondée sur des enquêtes menées dans les années 1950 dans la Haute-Sangha et autour de Bouar. Lue dans une copie numérisée mise en ligne par un particulier, le 3 novembre 2026. Pages 1 à 3 : habitat, origine racontée vers l'est, razzias fulbe, clans et explications du nom ; pages 27 à 32 : mata, familles nam, clans et animaux interdits ; page 48 : initiations ; pages 64 à 72 : génies, Tô et doua."
+      },
+      {
+        "title": "Travels and Discoveries in North and Central Africa, vol. II",
+        "author": "Heinrich Barth",
+        "year": 1857,
+        "url": "https://archive.org/details/travelsdiscoveri02bart_2",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 613-614",
+        "notes": "Londres, Longman, 1857. Appendice : itinéraires recueillis auprès d'informateurs à partir de l'Adamawa. Page 613 : « Baya, the principal place of the district or country of the same name » ; page 614 : « The Baya are evidently identical with Koelle's and Dr. Baikie's Bayong ». Page 513 : la langue des Mbum « and of the people of Baya ». Relu dans la numérisation d'Internet Archive le 3 novembre 2026."
+      },
+      {
+        "title": "Vocabulaire de la langue Baya (Haute Sanga)",
+        "author": "Léopold Landréau",
+        "year": 1900,
+        "url": "https://archive.org/details/vocabulairedelal00landuoft",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 5-7",
+        "notes": "Paris, Augustin Challamel, 1900. L'auteur se présente comme ancien chef de poste du Congo français. L'introduction, « Le pays des Bayas », situe ce pays dans un triangle entre le confluent de la Mambéré et de la Kadéï et la rivière Wôm. Ouvrage colonial, cité ici pour la forme du nom qu'il emploie. Lu dans la numérisation d'Internet Archive le 3 novembre 2026."
+      },
+      {
+        "title": "La Haute Sangha (Congo français), Bulletin de la Société de géographie, 1896",
+        "author": "Ed. Ponel",
+        "year": 1896,
+        "url": "https://archive.org/details/bulletin-de-la-societe-de-geographie-paris-1896",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 192",
+        "notes": "Paris, Société de géographie, 1896 ; communication lue en séance le 17 mai 1895. Le sommaire attribue d'abord l'article à Ed. Cholet ; un erratum du même volume rectifie : « par Ed. Ponel ». Récit d'un voyage fait en 1892 avec la mission de Brazza. Page 192 : « les rouges, c'est-à-dire les N'Dérés, qui ont la peau rouge sombre ». Page 200 : « la haute coiffure des dames Bayas ». Lu dans la numérisation de Gallica déposée sur Internet Archive, le 3 novembre 2026."
+      },
+      {
+        "title": "Karnu's Message and the 'War of the Hoe Handle': Interpreting a Central African resistance movement",
+        "author": "Philip Burnham et Thomas Christensen",
+        "year": 1983,
+        "url": "https://www.cambridge.org/core/journals/africa/article/abs/karnus-message-and-the-war-of-the-hoe-handle-interpreting-a-central-african-resistance-movement/B74111E91CBB6F3DC5AC0BE855177D10",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 3",
+        "notes": "Africa, revue de l'International African Institute, vol. 53, n° 4, 1983, p. 3-22. Lu sur la page de l'éditeur Cambridge University Press le 3 novembre 2026 : le premier paragraphe et le résumé. Les auteurs évaluent les peuples de langue gbaya à environ un demi-million de personnes, dans le centre-est du Cameroun et le tiers ouest de la Centrafrique. Ils écrivent qu'avant et au début de la colonisation, les Gbaya n'étaient pas organisés au-delà de groupes de clans très locaux, et que quelques chefs, comme Dogo Lokoti, Bafio et Mbartua (Bertoua), se sont renforcés grâce à leurs liens avec les États fulbe de l'Adamaoua. Karnu, qui inspira la « guerre du manche de houe », est selon eux le nom le plus connu de l'histoire gbaya ; son message appelait à résister sans verser le sang, mais ses partisans ont combattu les Français et leurs alliés fulbe."
+      },
+      {
+        "title": "'Regroupement' and Mobile Societies: Two Cameroon Cases",
+        "author": "Philip Burnham",
+        "year": 1975,
+        "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/regroupement-and-mobile-societies-two-cameroon-cases/88BC3BC3260E566A3DFE742DA7E0F613",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Journal of African History, vol. 16, n° 4, 1975, p. 577-594. Lu le résumé sur la page de l'éditeur Cambridge University Press le 3 novembre 2026. L'article compare les Gbaya et les Peuls pasteurs du plateau de l'Adamaoua, au Cameroun : leur mobilité servait à régler les conflits, et la politique française de regroupement des villages s'y est heurtée sans les transformer."
+      },
+      {
+        "title": "The 1928-1931 Gbaya Insurrection in Ubangui-Shari: Messianic Movement or Village Self-Defense?",
+        "author": "Thomas O'Toole",
+        "year": 1984,
+        "url": "https://www.africabib.org/rec.php?RID=190101016",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Canadian Journal of African Studies, vol. 18, n° 2, 1984, p. 329-344. Lu la notice et le résumé dans la base bibliographique AfricaBib le 3 novembre 2026. Le résumé décrit un soulèvement rural des Gbaya et de leurs voisins, de 1928 à 1931, en Afrique-Équatoriale française et au Cameroun, contre le recrutement de main-d'œuvre et l'impôt, qu'il a fallu de grandes forces armées pour réprimer."
+      },
+      {
+        "title": "L'espace gbaya",
+        "author": "Paulette Roulon-Doko",
+        "year": 2009,
+        "url": "https://journals.openedition.org/africanistes/2361",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Journal des africanistes, 79-1, 2009, p. 33-44. Lu sur OpenEdition le 3 novembre 2026. Paragraphe 1 : les Gbaya 'bodoe forment « un groupe homogène d'environ 5000 personnes » au sud-ouest de Bouar. Paragraphe 11 : chaque village a un territoire, celui où vivent les ancêtres « du groupe lignager fondateur ». Paragraphe 12 : chaque village reconnaît un « maître de terre », responsable des chasses et devant les ancêtres. Paragraphe 16 : à l'époque coloniale, les villages reçurent un nom et « furent désignés les premiers chefs assurant essentiellement la collecte de l'impôt »."
+      },
+      {
+        "title": "« La société gbaya » (Paulette Roulon-Doko)",
+        "author": "Paulette Roulon-Doko",
+        "year": null,
+        "url": "https://llacan.cnrs.fr/expo/bonus-notices/paroles-au-quotidien/apprendre-a-parler/la-societe-gbaya.html",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'exposition en ligne du laboratoire Langage, langues et cultures d'Afrique (LLACAN, CNRS), lue le 3 novembre 2026. Elle compte environ un demi-million de Gbaya, aux quatre cinquièmes dans l'ouest de la Centrafrique et pour le reste dans le centre-est du Cameroun. Elle décrit une société de chasseurs, cueilleurs et cultivateurs « sans hiérarchie », à filiation patrilinéaire, et classe le gbaya parmi les langues oubanguiennes. Elle mentionne les premiers contacts avec les Européens en 1904, la guerre de 1929 dite « guerre de Kongo wara », « celle du manche coudé de houe-bêche », ou « guerre de Karnou », le culte des ancêtres, et les initiations la'bi (hommes) et bana (femmes), « sans doute empruntées aux Sara du Tchad et abandonnées depuis 60 ans »."
+      },
+      {
+        "title": "Jacques Leclerc, « République centrafricaine », L'aménagement linguistique dans le monde, CEFAN, Université Laval — ethnies et langues",
+        "url": "https://axl.cefan.ulaval.ca/afrique/centrafrique.htm",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "author": "Jacques Leclerc",
+        "year": null,
+        "notes": "Lu le 3 novembre 2026, section 2 sur les ethnies et les langues, et section historique. L'auteur écrit qu'un décret de 1966 interdit de mentionner l'ethnie dans les actes officiels, et qu'un dépouillement partiel du recensement de 1988 compte 705 000 locuteurs des langues gbaya-manza. Il cite le gbaya du Nord-Ouest (200 000 locuteurs), le gbaya du Sud-Ouest (164 000), le gbaya de Bossangoa (176 000) et le bokoto (130 000), sans date pour ces chiffres. Il écrit aussi que de 1928 à 1931 les Gbaya se révoltèrent contre le recrutement forcé pour le chemin de fer Congo-Océan et refusèrent de payer l'impôt."
+      },
+      {
+        "title": "Glottolog 5.3 — Gbaya-Manza-Ngbaka (gbay1279)",
+        "author": "Glottolog",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/gbay1279",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Lu le 3 novembre 2026. Glottolog classe la famille gbaya-manza-ngbaka directement sous le groupe Volta-Congo du Nord, dans l'Atlantique-Congo, et non dans les langues oubanguiennes. Elle y réunit le gbaya méridional-occidental (bokoto, gbaya-bozoum, gbaya-bossangoa, gbaya du Sud-Ouest, gbaya du Nord-Ouest, dont les parlers 'bodoe, kara et yaáyuwee) et le gbaya oriental, qui comprend aussi le gbaya-mbodomo, le manza et le ngbaka."
+      },
+      {
+        "title": "Glottolog 5.3 — Kresh-Woro (gbay1288)",
+        "author": "Glottolog",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/gbay1288",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice de la langue : elle recense les formes Gbaya (Sudan), Gbaya, Kpala, Kpara, Kparla, Kredj, Kreich, Kreish et Kresh."
+      },
+      {
+        "title": "gba | ISO 639-3",
+        "author": "SIL International, autorité d'enregistrement de la norme ISO 639-3",
+        "year": null,
+        "url": "https://iso639-3.sil.org/code/gba",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Lu le 3 novembre 2026. Le code gba désigne la macrolangue gbaya, en usage. Elle regroupe le bokoto (bdt), le gbaya-bossangoa (gbp), le gbaya-bozoum (gbq), le gbaya-mbodomo (gmm), le gbaya du Sud-Ouest (gso) et le gbaya du Nord-Ouest (gya)."
+      },
+      {
+        "title": "Gbaya, Northwest – Joshua Project, tous pays, 2026",
+        "url": "https://joshuaproject.net/people_groups/10742",
+        "tier": "unverified",
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire, lue le 3 novembre 2026. Elle estime les Gbaya du Nord-Ouest à 226 000 au Cameroun, 321 000 en Centrafrique, 7 300 au Congo et 18 000 au Soudan."
+      },
+      {
+        "title": "La notion de « migration » dans l'aire gbaya",
+        "author": "Paulette Roulon-Doko",
+        "year": 2009,
+        "url": "https://shs.hal.science/halshs-00720191v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 1 de la version déposée",
+        "notes": "Dans H. Tourneux et N. Woïn (dir.), Migrations et mobilité dans le bassin du lac Tchad, IRD, 2009, p. 543-553. Version déposée sur HAL, lue le 11 octobre 2026."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 3 : Les mouvements de population et l'émergence de nouvelles formes sociopolitiques en Afrique",
+        "author": "Jan Vansina",
+        "year": 1999,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 93",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 18 : Des savanes du Cameroun au haut Nil",
+        "author": "Elikia M'Bokolo",
+        "year": 1999,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 575",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+      },
+      {
+        "title": "Adamaua. Bericht über die Expedition des Deutschen Kamerun-Komitees in den Jahren 1893/94",
+        "author": "Siegfried Passarge",
+        "year": 1895,
+        "url": "https://archive.org/details/adamauabericht00pass",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 285",
+        "notes": "Berlin, Dietrich Reimer, 1895. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Gbaya est le nom que se donne un peuple de l'ouest de la Centrafrique et de l'est du Cameroun, et celui de sa langue. Les voyageurs et les textes coloniaux l'écrivaient Baya.",
+      "followUp": "Qui a écrit le nom Baya le premier, et d'où viendrait le nom Gbaya ?"
+    },
+    "gaps": [
+      {
+        "field": "content.origins.formationPeriod",
+        "reason": "Nous n'avons pas trouvé de source qui date la formation du peuple gbaya. Nous avons consulté l'Histoire générale de l'Afrique de l'UNESCO, la monographie de John Hilberth et les travaux de Paulette Roulon-Doko et de Philip Burnham."
+      },
+      {
+        "field": "content.historicalRole.diaspora",
+        "reason": "Nous n'avons pas trouvé de source sur des Gbaya installés hors d'Afrique centrale."
+      },
+      {
+        "field": "content.demography.totalPopulation",
+        "reason": "Nous n'avons pas trouvé de chiffre récent pour l'ensemble des Gbaya qui vienne d'un recensement ou d'une étude datée ; les estimations disponibles sont données avec leur auteur."
       }
     ]
   }
