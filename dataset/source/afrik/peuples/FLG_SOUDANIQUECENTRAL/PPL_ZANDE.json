@@ -60,6 +60,50 @@
                 "page": "p. 3"
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "Décrit en 1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Azande a deux sens, selon les ethnologues Charles et Brenda Seligman, qui s'appuient sur les notes d'Edward Evans-Pritchard. Il désigne parfois les gens du commun, par opposition aux chefs du clan avongara. Il désigne aussi l'ensemble des personnes qui parlent le zande, chefs compris, par opposition aux étrangers.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "C. G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 496",
+                "notes": "Londres, George Routledge & Sons, 1932. Lu dans la numérisation d'Internet Archive. Le chapitre sur les Azande du Soudan reprend surtout les notes d'enquête d'Edward Evans-Pritchard, recueillies dans le district de Yambio de 1926 à 1929. Passage lu, p. 496 : le terme Azande sert souvent pour tous les membres du groupe sauf les Avongara, mais aussi, dans un sens plus large, pour les Avongara et les gens du commun ensemble. Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Décrit en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Azande désigne aujourd'hui, au pluriel, les personnes qui se disent zande et qui ont le plus souvent le pazande pour langue maternelle, selon les chercheurs Bruno Braak et John Justin Kenyi. Zande sert au singulier et comme adjectif.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Zande chieftaincy and kingship: Historical memories, future visions and reinstatement of a Zande kingdom",
+                "author": "Bruno Braak et John Justin Kenyi",
+                "year": 2023,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:3718381/view",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 226",
+                "notes": "Chapitre 24 du livre A Touch of Genius: The Life and Legacy of E. E. Evans-Pritchard, dirigé par André Singer, Canon Pyon, Sean Kingston Publishing, 2023, p. 225-235, en libre accès. Notice lue dans le dépôt de l'université de Leyde et texte lu dans le PDF de l'éditeur. Les auteurs ont enquêté de 2014 à 2019 auprès d'Azande du Soudan du Sud et de réfugiés en Ouganda. Passage lu, p. 226 : ils écrivent « Azande » au pluriel et « Zande » au singulier ou comme adjectif, pour des personnes qui se disent zande et parlent le pazande comme langue maternelle. Consulté le 3 novembre 2026."
+              }
+            ]
           }
         ]
       },
@@ -156,6 +200,28 @@
                 "page": "p. 3"
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "Proposée en 1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Niam-Niam serait une onomatopée, qui imiterait le bruit de lèvres de mangeurs de chair humaine, selon Charles et Brenda Seligman. D'après eux, des formes proches comme Lem-Lem, Dem-Dem, Gnem-Gnem ou Jem-Jem désignaient déjà, chez des géographes arabes du Moyen Âge et sur des cartes anciennes, des peuples qu'on disait anthropophages, au sud des pays musulmans.",
+            "hypothesisGroup": "origine du nom Niam-Niam",
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "C. G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 495",
+                "notes": "Londres, George Routledge & Sons, 1932. Lu dans la numérisation d'Internet Archive. Passage lu, p. 495 : le nom Nyam-Nyam serait onomatopéique et évoquerait le claquement des lèvres ; ses variantes Lem-Lem, Dem-Dem, Gnem-Gnem et Jem-Jem se trouvent chez les géographes arabes médiévaux et sur des cartes anciennes. Les auteurs ne citent pas ces géographes en détail. Consulté le 3 novembre 2026."
+              }
+            ]
           }
         ]
       },
@@ -189,6 +255,48 @@
                 "page": "p. 3"
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "Décrit en 1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Makaraka désigne en 1932, selon Charles et Brenda Seligman, un groupe qui se nomme plus exactement Adio et qui parle un dialecte du zande. Les auteurs le comptent parmi les Azande et rapportent qu'il se serait séparé des chefs avongara un siècle plus tôt ou davantage.",
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "C. G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 497",
+                "notes": "Londres, George Routledge & Sons, 1932. Lu dans la numérisation d'Internet Archive. Passage lu, p. 497 : « The Makaraka, properly Adio, who speak a dialect of Zande, are to be regarded as essentially Azande ». Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Makaraka sert aujourd'hui, dans le catalogue Glottolog, à l'un des deux dialectes du zande, à côté du dio.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Zande",
+                "author": "Glottolog",
+                "year": 2026,
+                "url": "https://glottolog.org/resource/languoid/id/zand1248",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde tenu par l'Institut Max Planck d'anthropologie évolutionniste. La fiche de la langue zande (code zne) lui rattache deux dialectes, Dio et Makaraka. Consulté le 3 novembre 2026."
+              }
+            ]
           }
         ]
       }
@@ -199,111 +307,111 @@
       "mainName": "Azande",
       "selfAppellation": "Azande",
       "exonyms": [
-        "Zande (terme anglophone courant)",
-        "Nzakara (designation d'un sous-groupe)",
-        "A-Zande (graphie avec prefixe du pluriel bantou adopte par les premiers voyageurs europeens)",
-        "Azandeh",
-        "Azende",
-        "Bazende",
-        "Niam-Niam (pejoratif, suggere le cannibalisme, employe par les Arabes et les Occidentaux aux 18e-19e siecles)",
-        "Nyam nyam",
-        "Neam Nam"
+        "Niam-Niam",
+        "Nyam-Nyam",
+        "Gnam-Gnam",
+        "Makarakka",
+        "Mundo",
+        "Manyanya",
+        "O-Madyaka",
+        "Kunda",
+        "Babungera"
       ],
-      "originOfExonyms": "Azande signifierait ceux qui possèdent beaucoup de terres, en référence aux conquêtes du peuple et à l'extension de son territoire. Le nom est employé par le peuple lui-même et à l'extérieur. Les textes en anglais et les recherches emploient Zande. Nzakara désigne un groupe de la branche Bandia.",
-      "whyProblematic": "La confusion entre Azande (peuple) et Zande (langue) est frequente. De plus, le terme Azande designe un macro-groupe constitue de nombreux peuples assimiles par la conquete Avungara : tous les Azande ne partagent pas les memes origines, mais ont adopte la langue et la culture zande.",
-      "contemporaryUsage": "Le terme Azande est employe dans toute la litterature anthropologique et ethnographique, notamment depuis l'oeuvre fondatrice d'E.E. Evans-Pritchard (1937). Il est utilise par les membres du groupe pour se designer collectivement. Zande et Manzande sont les formes du singulier.",
+      "spellingAliases": [
+        "Zande",
+        "Zandey",
+        "Asande",
+        "Sande",
+        "Zandi",
+        "Badjande",
+        "Bazenda"
+      ],
+      "originOfExonyms": "Le nom Niam-Niam viendrait de la langue des Dinka, où il signifierait « mangeurs », selon le voyageur allemand Georg Schweinfurth en 1874. Les marchands du Soudan l'auraient repris des Dinka. Selon les ethnologues Charles et Brenda Seligman, en 1932, ce serait plutôt une onomatopée qui évoque le bruit des lèvres. Schweinfurth relève aussi les noms que donnent les voisins de ce peuple : Makarakka chez les Mittou, Mundo ou Manyanya chez les Bongo, O-Madyaka chez les Dyoor, Kunda chez les Golo et Babungera chez les Mangbetu. Le nom Azande lui-même signifierait « les gens qui possèdent beaucoup de terres », selon la base de données missionnaire Joshua Project.",
+      "whyProblematic": "Le nom Niam-Niam liait tout un peuple à une accusation de cannibalisme. Schweinfurth note que les musulmans du Soudan donnaient aussi ce nom à d'autres peuples pour cette seule raison. Le nom Azande, lui, réunit des gens d'origines très diverses. Selon l'administrateur colonial belge Adolphe de Calonne-Beaufaict, la conquête menée par les chefs avungara a rassemblé des populations différentes, qui ont pris la langue et les coutumes zande. Les Seligman ajoutent que le mot peut désigner tantôt les gens du commun, tantôt l'ensemble des personnes qui parlent le zande.",
+      "contemporaryUsage": "Aujourd'hui, Azande désigne le peuple au pluriel, et Zande une personne ou ce qui se rapporte à ce peuple. Les chercheurs Bruno Braak et John Justin Kenyi appellent la langue pazande. Le catalogue Glottolog range cette langue sous le nom Zande, avec le code zne. Des Azande vivant hors d'Afrique gardent ce nom pour se réunir : à Londres, l'association Azande Community UK a organisé en 2018 une journée en mémoire du roi Gbudue.",
       "linguisticFamily": "FLG_SOUDANIQUECENTRAL",
-      "ethnoLinguisticGroup": "Langues zande (branche Ubangienne du Niger-Congo selon certains linguistes ; position dans les langues soudaniques centrales debattue)",
-      "historicalRegion": "Savanes du sud-est de la Republique centrafricaine, nord-est de la RDC (Haut-Uele, Bas-Uele), Soudan du Sud occidental (Equatoria occidental)",
-      "currentCountries": ["COD", "CAF", "SSD"]
+      "ethnoLinguisticGroup": "Langues zande-nzakara, rangées par le catalogue Glottolog dans les langues oubanguiennes, elles-mêmes rattachées aux langues atlantiques-congo ; d'autres classements les placent ailleurs.",
+      "historicalRegion": "Bassins de la rivière Mbomu et de l'Uele, et ligne de partage des eaux entre le Nil et le Congo, entre l'actuelle Centrafrique, le nord-est de la RD Congo et l'ouest du Soudan du Sud",
+      "currentCountries": ["COD", "CAF", "SSD"],
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Vungara (Avungara) — clan noble dirigeant, fondateur de la dynasty royale",
-      "Bandia — dynasty non-zande ayant adopte les coutumes zande et fusionne avec les Vungara",
-      "Adio — sous-groupe linguistique zande",
-      "Barambu — sous-groupe assimile",
-      "Apambia — sous-groupe assimile",
-      "Geme — sous-groupe assimile",
-      "Kpatiri — sous-groupe assimile",
-      "Nzakara — sous-groupe de la branche Bandia en RCA",
-      "Makaraka (sous-groupe azande du Soudan du Sud, cite parmi les noms alternatifs)",
-      "Mbomu (sous-groupe azande de la region de la riviere Mbomu, entre RCA et RDC)"
+      "Avongara, ou Avungara : le clan dont sont issus les chefs et les rois",
+      "Ambomu, ou Ambamu : les clans associés aux premières conquêtes des Avongara",
+      "Auro : nom donné aux clans et aux peuples absorbés au fil des conquêtes",
+      "Abandya, ou Bandia : une dynastie voisine qui a adopté la langue et les coutumes zande",
+      "Adio, aussi appelés Makaraka : un groupe qui parle un dialecte du zande",
+      "Abarambo : un peuple voisin, en partie rallié à la langue et aux coutumes zande"
     ],
     "origins": {
-      "ancientOrigins": "Les Azande ont ete formes par une conquete militaire dans la premiere moitie du 18e siecle. Deux dynasties d'origines differentes les ont constitues : les Vungara (Avungara) qui ont cree l'identite politique, linguistique et culturelle du groupe, et les Bandia, une dynasty non-zande qui s'est etendue vers le nord de l'actuelle République démocratique du Congo en adoptant les coutumes zande. Au debut du 19e siecle, les Bandia etaient devenus suzerains des Vungara et les deux groupes formerent ensemble le peuple Azande. Ils habitaient les savanes de ce qui est aujourd'hui le sud-est de la Republique centrafricaine.",
-      "formationPeriod": "L'expansion azande a debute sous le regne de Ngura, descendant de Basanginonga (fondateur de la dynasty Avungara). Basanginonga avait renverse le tyran Ngara de la dynasty precedente Abakundo, recevant le nom Vongara (celui qui a ficele Ngara), origine du nom Avungara. L'expansion s'est faite par assimilation et conquete, les Avungara envoyant un prince dans chaque nouveau territoire pour etablir un royaume autonome, garantissant l'unite par la regle d'un clan mais decentralisant le gouvernement.",
+      "ancientOrigins": "Les anciens du clan avungara interrogés par Adolphe de Calonne-Beaufaict, au Congo belge, disaient venir de très loin, en aval d'une très grande eau sans courant. Selon cet auteur, les Azande au sens strict, c'est-à-dire les Avungara et ceux qu'ils menaient, ont franchi la rivière Mbomu au début du XVIIIe siècle. Charles et Brenda Seligman écrivent que les Azande ont ensuite conquis la savane du Soudan depuis la région de la Mbomu, sous la conduite de leurs chefs avongara. Selon Edward Evans-Pritchard, cité par Bruno Braak et John Justin Kenyi, les Ambomu ont migré vers l'est à partir du milieu du XVIIIe siècle, sous la conduite de leur maison royale avongara.",
+      "formationPeriod": "Plusieurs récits expliquent l'origine des chefs avongara. Selon un récit rapporté par les Seligman, un jeune homme nommé Basenginonga, fils d'une femme du clan abokunde, aurait gagné la confiance des gens par la justesse de ses jugements et sa générosité ; de lui viendrait la lignée des chefs. Le site du royaume azande, rétabli en 2022, dit que Basanginonga a vaincu en duel un chef tyrannique, Ngara, et l'a ligoté ; il aurait reçu pour cela le nom Vongara, « celui qui a ligoté Ngara ». Un récit recueilli par Calonne-Beaufaict auprès d'un certain Bekia raconte de son côté que les Avungara s'appelaient autrefois Akegobili, « les rusés de la montagne », et qu'ils ont soumis les Abokunda en terrassant leur chef Gara à la lutte. Selon l'administrateur britannique Larken, cité par les Seligman, les Azande vivaient sous l'autorité de cette dynastie depuis treize ou quatorze générations dans les années 1920.",
       "migrationRoutes": [
-        "Expansion depuis le sud-est de la RCA (berceau originel dans les savanes) vers l'est",
-        "Extension vers le nord-est de la RDC (Haut-Uele, Bas-Uele) sous les Avungara et Bandia",
-        "Penetration vers le nord dans l'actuel Soudan du Sud (Equatoria occidental) jusqu'a ce que les razzias soudanaises du 19e siecle stoppent l'expansion",
-        "Migrations de populations liees aux raids soudanais et aux perturbations coloniales du 19e siecle"
+        "Traversée de la rivière Mbomu au début du XVIIIe siècle, selon Calonne-Beaufaict",
+        "Expansion vers l'est, dans l'actuel Soudan du Sud, à partir du milieu du XVIIIe siècle, selon Evans-Pritchard",
+        "Dernières vagues avungara vers le sud et l'Uele, vers 1830, selon Calonne-Beaufaict",
+        "Départs de réfugiés vers la RD Congo, la Centrafrique et l'Ouganda pendant les guerres du Soudan et du Soudan du Sud, selon Braak et Kenyi"
       ],
       "historicalSettlementZones": [
-        "Savanes du sud-est de la RCA (zone de la Haute-Sangha et de la Haute-Kotto)",
-        "Province du Haut-Uele (nord-est de la RDC)",
-        "Province du Bas-Uele (nord de la RDC)",
-        "Equatoria occidental (Soudan du Sud) : region de Yambio",
-        "Equatoria central (Soudan du Sud) : Yei, Momoi",
-        "Bahr el Ghazal occidental (Soudan du Sud) : Wau Town"
+        "Bassin de la rivière Mbomu, entre la Centrafrique et la RD Congo",
+        "Bassin de l'Uele, au nord-est de la RD Congo",
+        "Ligne de partage des eaux entre le Nil et le Congo, dans l'actuel Soudan du Sud",
+        "Ouest de l'Équatoria-Occidental, au Soudan du Sud : Yambio, Nzara, Tambura et Ezo"
       ],
-      "unificationsOrDivisions": "L'empire Azande etait un systeme de royaumes autonomes lies par la communaute de la dynasty Avungara. A la mort d'un roi, ses fils se disputaient la succession : le fils perdant etablissait souvent un royaume dans une region voisine, propageant ainsi l'empire vers l'est et le nord. A l'apogee, plusieurs royaumes autonomes coexistaient (Tamburo, Ezo, Gbudue au Soudan ; Ndoromo, Wandu, Ngima au Congo belge ; Kipa en AEF francaise). La colonisation europeenne a divise ces royaumes entre la Belgique, la France et l'Anglo-Egypte soudanaise.",
-      "externalInfluences": "Razzias soudanaises (marchands d'esclaves du nord) au 19e siecle qui ont stoppe l'expansion nordique. Partage colonial entre Belgique (Congo belge), France (AEF) et Anglo-Egypte (Soudan) apres 1884. Tentative britannique de modernisation agricole : le Zande Scheme (1944-1950s) imposant la resettlement et la culture du coton a echoue. Christianisation depuis les missions catholiques et protestantes ; 85% des Azande se declarent aujourd'hui chretiens.",
-      "majorHistoricalEvents": "18e siecle : formation de l'empire Azande sous la dynasty Avungara. 19e siecle : expansion vers l'est et le nord ; razzias soudanaises. Annees 1870-1879 : voyages du photographe autrichien Richard Buchta fournissant les premieres documentations photographiques des Azande. 1884-1905 : partage colonial. Fevrier 1905 : mort du roi Gbudue (Yambio), qui resistait a la domination britannique. Ce moment est considere par les Azande comme le debut du declin de leur civilisation. Annees 1920 : resettlement de 60 000 Azande pour combattre la maladie du sommeil. 1944-1960s : echec du Zande Scheme agricole britannique. 2011 : independance du Soudan du Sud. 2015 et 2021 : violences interethniques entre Azande et Dinka dans la region de Yambio."
+      "unificationsOrDivisions": "Les Azande n'ont pas formé un seul État. Selon les Seligman, des fils et des frères de chefs se taillaient des royaumes indépendants en conquérant de nouveaux territoires. À la mort d'un roi, le pays entrait souvent en guerre jusqu'à ce qu'un de ses fils s'impose. Calonne-Beaufaict décrit le même mouvement : le chef confiait des provinces à ses fils et à ses frères, qui réclamaient leur indépendance à sa mort. La colonisation a ensuite partagé les Azande entre trois administrations : belge, française et anglo-égyptienne. Au Soudan du Sud, entre 2015 et 2020, l'Équatoria-Occidental a été divisé en quatre États, dont deux portaient le nom d'anciens rois zande, Gbudue et Tombura.",
+      "externalInfluences": "Selon Evans-Pritchard, cité par Braak et Kenyi, des marchands arabes et des Européens arrivent dans le pays zande dès 1858. Au XXe siècle, l'administration coloniale du Soudan déplace des centaines de milliers d'Azande : d'abord dans les années 1920 pour lutter contre la maladie du sommeil, puis dans les années 1940 pour un projet agricole appelé Zande Scheme. Les missions chrétiennes ont aussi transformé la vie religieuse : la base de données missionnaire Joshua Project compte 85 % de chrétiens parmi les Azande du Soudan du Sud.",
+      "majorHistoricalEvents": "Février 1905 : le roi Gbudue, aussi appelé Yambio, meurt face aux forces anglo-égyptiennes. Beaucoup d'Azande y voient le début de la domination coloniale, selon Braak et Kenyi. 1914 : des fils de Gbudue sont accusés de préparer un soulèvement contre l'administration ; trois chefs sont exilés à Khartoum. Années 1920 et 1940 : déplacements forcés pour la lutte contre la maladie du sommeil, puis pour le Zande Scheme. 1956-1972 et 1983-2005 : les guerres civiles du Soudan poussent de nombreux Azande vers la RD Congo et la Centrafrique. 2011 : indépendance du Soudan du Sud. 2015 : la guerre civile atteint l'Équatoria-Occidental. 2021 : les violences autour de Tambura font au moins 440 morts civils et environ 80 000 déplacés, selon les Nations unies. Février 2022 : un royaume zande est rétabli à Yambio, avec Wilson Peni, petit-fils de Gbudue, pour roi."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Les Azande etaient organises en chefferies pouvant etre appelees royaumes. Les Avungara formaient la noblesse, transmettant leur statut par heredite. Les chefs cumulaient les roles militaire, economique et politique. Les jeunes hommes non-maries etaient a la fois travailleurs et guerriers. L'empire fonctionnait par decentralisation : chaque prince Avungara gouvernait un territoire autonome mais les royaumes cooperaient pour la defense collective. Dans les chefferies, l'affiliation clanique n'etait pas soulignee au niveau local; les groupes locaux ressemblaient davantage a des organisations politiques territoriales.",
-      "clanOrganization": "Division fondamentale entre la class nobiliaire Avungara (heredite royale) et le reste de la population (communs). Les Avungara refusaient le cannibalisme et le condamnaient chez les autres, mais punissaient les criminels en les vendant a des peuples cannibales voisins. La class noble monopolisait les femmes et le pouvoir politique.",
-      "ageClassSystems": "Les jeunes hommes non-maries formaient la base des guerriers. En raison d'une penurie de femmes (polygamie des chefs et nobles), les guerriers entre 20 et 30 ans prenaient couramment de jeunes hommes comme partenaires intimes, pratique qui s'est largement etinte au 19e siecle avec l'influence coloniale.",
-      "roleOfLineages": "Les lignages etaient moins importants au niveau local que la structure royale. Le systeme prioritaire etait l'appartenance au territoire d'un prince Avungara plutot qu'a un lignage specifique. Les familles etaient etablies dans des homesteads agricoles.",
-      "religiousAuthority": "Le chef royal (prince Avungara) avait autorite sur le recours aux oracles. La consultation du benge (oracle de la potion de poulet) etait reservee aux hommes et necessitait l'autorisation du prince. Les devins (aborutu) jouaient un role dans l'identification des sorciers. Depuis la colonisation, 85% des Azande se declarent chretiens (catholiques en majorite : plus de la moitie des Azande est catholique romaine). 15% maintiennent la religion traditionnelle."
+      "traditionalPoliticalSystem": "Selon les Seligman, seuls les membres du clan avongara pouvaient devenir chefs avant la colonisation, et le pouvoir passait d'un chef à un fils ou à un frère. Le chef gouvernait avec des adjoints, les bakumba, qui n'étaient pas avongara. Ils levaient les redevances, appelaient les hommes à la guerre et entretenaient les chemins. Calonne-Beaufaict précise que les chefs étaient maîtres du sol, qu'ils déclaraient la guerre et qu'ils confiaient les grandes provinces à leurs fils et à leurs frères. Un chef gagnait ses partisans par sa justice et sa générosité ; en zande, on appelle cela ka loga aboro, selon les Seligman.",
+      "clanOrganization": "Les Seligman distinguent trois groupes dans la société zande : les Avongara, qui fournissent les chefs ; les Ambomu, clans anciens associés à leurs premières victoires ; et les Auro, clans et peuples absorbés plus tard. Les clans zande sont très nombreux, et chacun porte un nom. Un homme ne peut épouser une femme ni de son clan ni du clan de sa mère ; seuls les Avongara échappent à cette règle. Au Soudan du Sud, les clans comptent encore aujourd'hui pour la répartition des terres, selon Braak et Kenyi.",
+      "ageClassSystems": "Calonne-Beaufaict décrit un système d'éducation des garçons plutôt que des classes d'âge. Vers la puberté, les garçons étaient retirés à leur mère et confiés au chef, à un adjoint ou à un voisin jusqu'à leur mariage. Sous le nom de palanka, ils servaient de gardes du corps et de serviteurs. L'auteur y voit l'origine de l'unité de pensée et de mœurs du peuple azande.",
+      "roleOfLineages": "Selon les Seligman, la parenté du côté du père et celle du côté de la mère comptaient toutes deux : les membres du clan de la mère se considéraient aussi comme des parents. Un clan n'agissait vraiment ensemble que là où ses membres vivaient proches les uns des autres. Chaque famille habitait une concession isolée, appelée kpolo, entourée de ses champs et reliée aux autres par des sentiers.",
+      "religiousAuthority": "Le chef tenait une place centrale dans la vie religieuse. Selon les Seligman, une accusation de sorcellerie devait être confirmée par l'oracle du poison, le benge, consulté au nom du chef, et les chefs eux-mêmes ne pouvaient pas être accusés de sorcellerie. En cas de sécheresse ou d'épidémie, le chef faisait faire une cérémonie si les oracles étaient favorables. Les chefs avongara faisaient chaque jour des offrandes à leurs ancêtres. Selon l'anthropologue Ferenc Dávid Markó, les chefs se servent aujourd'hui d'un nouvel oracle, le dabaya, pour étendre leur rôle de juges."
     },
     "languages": {
-      "mainLanguage": "Zande (Pa-Zande / Pazande)",
+      "mainLanguage": "Zande (zne)",
       "isoCodes": ["zne"],
-      "dialects": [
-        "Pa-Zande (dialecte central, langue principale, ISO zne)",
-        "Adio (dialecte ou langue proche)",
-        "Barambu (dialecte ou langue proche)",
-        "Apambia",
-        "Geme",
-        "Kpatiri",
-        "Nzakara (sous-groupe Bandia en RCA, parfois considere comme langue distincte)",
-        "Dio (dialecte principal, parle au Soudan du Sud et en RDC)",
-        "Makaraka (dialecte du sous-groupe Makaraka au Soudan du Sud)"
-      ],
-      "vehicularRole": "Le zande (Pa-Zande) est parle par environ 1,1 million de locuteurs dont 730 000 en RDC, 62 000 en RCA et 350 000 au Soudan du Sud (SIL Ethnologue). C'est une langue stable et transmise a toutes les generations. Il est enseigne dans certaines ecoles. Le francais est utilise en RCA et en RDC ; l'anglais au Soudan du Sud."
+      "dialects": ["Dio", "Makaraka"],
+      "vehicularRole": "Le zande est parlé en RD Congo, en Centrafrique et au Soudan du Sud, selon le catalogue Glottolog, qui le range parmi les langues oubanguiennes. Selon les Seligman, la langue et les institutions zande s'étendaient en 1932 du Nil jusqu'aux abords du fleuve Congo. Des peuples conquis ou voisins l'ont adoptée : Calonne-Beaufaict cite les Abandya, qui ont pris la langue de leurs rivaux zande. Aujourd'hui, des Azande craignent que les enfants nés en exil ne parlent plus la langue, selon Braak et Kenyi."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q793575",
+      "glottocode": "zand1248",
+      "iso639_3": "zne"
     },
     "culture": {
-      "majorRites": "Le systeme de la sorcellerie (mangu) est central dans la vie culturelle azande : la mangu est une substance hereditaire (fluide noir dans l'abdomen) transmise du pere aux fils et de la mere aux filles. Elle peut agir de maniere autonome et causer le malheur des ennemis. Les Azande consultent des oracles pour identifier les sorciers responsables de leurs infortunes. Le benge (oracle de la potion de poulet) est le plus puissant et le plus prestigieux des oracles, reserve aux hommes : une potion extraite d'une plante liane est administree a un poulet pendant qu'on lui pose des questions ; sa survie ou sa mort indique la reponse. D'autres oracles incluent les termites et la planche a friction. Les ceremonies royales lors de la succession et d'evenements importants etaient conduites par les chefs Avungara. Rites funeraires etendus selon le statut social.",
-      "symbols": "Le couteau de jet (shongo ou sabe) multi-lames en acier forge est le symbole guerrier le plus emblematique des Azande, reconnu dans le monde entier pour sa forme complexe courbe et ses multiples lames tranchantes. Il constitue egalement un instrument de prestige. Le tambour royal symbolise l'autorite du prince Avungara. Les sculptures en bois et argile (ancetres, animaux importants) symbolisent la connection au monde spirituel.",
-      "artsAndMusic": "Les Azande sont celebres pour leurs couteaux de jet (shongo) qui temoignent de leur maitrise du travail du metal (ils etaient consideres comme des metallurgistes habiles en periode precoloniale). Sculpture sur bois et argile : figures anthropomorphes et zoomorphes, recipients en forme de tete humaine. Instruments de musique : sanza (piano a pouces, parfois en forme d'animaux ou de personnages), tambours utilises lors des mariages et danses communautaires. Le personnage du filou Ture dans la litterature orale azande sert de guide moral en illustrant les consequences des mauvais choix. Contes oraux publies partiellement par des missionnaires au debut du 20e siecle.",
-      "spiritualities": "Croyance en Mbori, dieu omnipotent createur du monde. Systeme elabore de sorcellerie (mangu) : toute misfortune est potentiellement l'oeuvre d'un sorcier dont la substance s'est activee. Les oracles (benge, termites, planche a friction) permettent d'identifier le responsable. Une autopsie du sorcier presume peut confirmer la presence de mangu dans ses intestins. La sorcellerie est consideree comme une action psychique (l'ame de la mangu quitte le corps du sorcier la nuit pour atteindre la victime, brillant d'une lumiere visible). Les vengeurs font appel au magie de vengeance (mbisimo mangu). Les specialistes religieux (devins, aborutu) identifient les sorciers. La magie protectrice est pratiquee quotidiennement. Aujourd'hui, 85% des Azande se declarent chretiens (catholiques en majorite) avec un fort syncretisme avec les croyances traditionnelles."
+      "majorRites": "La vie rituelle tournait autour des oracles. Selon les Seligman, un homme consultait l'oracle du poison, le benge, avant de se marier : sans réponse favorable, ni lui ni les parents de la fiancée n'acceptaient l'union. Quand un malheur arrivait, la victime consultait un oracle pour savoir qui en était responsable. Elle pouvait ensuite lancer une accusation publique sans nommer personne, ou envoyer au suspect une aile de la poule tuée par le benge. En cas de sécheresse, les femmes portaient des feuilles des principales plantes cultivées à la source d'un ruisseau en chantant ; cette cérémonie s'appelle baeti. Selon Ferenc Dávid Markó, le benge a disparu depuis et les Azande l'ont remplacé par le dabaya, un oracle venu d'un peuple voisin, où l'on égorge une poule.",
+      "symbols": "Le couteau de jet à plusieurs lames de fer, que Georg Schweinfurth appelle trumbash d'après l'arabe du Soudan, était l'arme des guerriers zande avec la lance. Ils le fixaient à l'intérieur de grands boucliers ovales en vannerie, décorés de croix noires et blanches. L'autel des ancêtres, appelé tuka, était un pieu fendu en forme de panier planté près de la maison, selon les Seligman. Aujourd'hui, la tombe du roi Gbudue à Yambio est un lieu de mémoire : la fête de l'indépendance du Soudan du Sud y a commencé en 2011, selon Braak et Kenyi.",
+      "artsAndMusic": "Georg Schweinfurth décrit des jeux rythmés par les tambours de guerre et par des instruments à cordes qu'il compare à des mandolines. Les Seligman signalent que les Makaraka modelaient des têtes humaines sur le col de leurs jarres à eau. Schweinfurth note aussi que les Mangbetu, voisins du sud, fournissaient aux Azande une grande partie de leurs couteaux, car ils étaient plus habiles forgerons.",
+      "spiritualities": "Les Azande nomment Mboli un être supérieur, à l'origine de la magie, selon les Seligman. Evans-Pritchard estimait toutefois que l'expression « c'est l'affaire de Mboli » n'avait pas de sens théologique précis. Dans la vie de tous les jours, la sorcellerie, mangu, comptait davantage. Selon les mêmes auteurs, c'est une qualité héritée : un père la transmet à ses fils et une mère à ses filles. Elle se loge dans le ventre et agit la nuit. Pour s'en protéger, on recourait à la magie, ngwa, et aux oracles. Les esprits des morts, atoro, recevaient aussi des offrandes. La base de données missionnaire Joshua Project compte aujourd'hui 85 % de chrétiens et 15 % de fidèles des religions traditionnelles parmi les Azande du Soudan du Sud."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "L'empire Azande constitue l'une des entites politiques les plus etendues d'Afrique centrale precoloniale. Fonde sous la dynasty Avungara au 18e siecle, il s'est etendu sur une vaste zone de savane couvrant parties de l'actuelle RCA, RDC et Soudan du Sud. Les royaumes etaient decentralises : chaque fils de roi recevait un territoire a gouverner de maniere autonome. A la fin du 19e siecle, les principaux royaumes etaient ceux de Tamburo, Ezo et Gbudue (Soudan britannique), Ndoromo, Wandu et Ngima (Congo belge) et Kipa (AEF francaise). Le roi Gbudue (aussi appele Yambio, ne vers 1835, mort en 1905) est la figure royale azande la plus celebre.",
-      "relationsWithNeighbors": "L'expansion azande s'est faite par assimilation et conquete de nombreux peuples voisins (Moru, Dinka, Nzakara, Banda et autres). Les voisins assimiles ont adopte la langue et la culture azande. Relations conflictuelles avec les marchands d'esclaves arabes du nord au 19e siecle. Tensions postcoloniales avec les Dinka dans la region de Yambio (Soudan du Sud), notamment en 2015 et 2021.",
-      "conflictsOrAlliances": "18e-19e siecles : expansion conquérante sous la dynasty Avungara. 19e siecle : razzias soudanaises stoppant l'expansion nordique. 1905 : mort du roi Gbudue apres avoir resiste a la domination britannique. Partage de l'empire entre Belgique, France et Angleterre (1884-1910). 1938-1950s : imposition britannique du Zande Scheme (echec economique et social). 2015 : tensions interethniques Azande-Dinka a Yambio. 2021 : violations documentees par Amnesty International lors des conflits dans l'Equatoria occidental.",
-      "diaspora": "Communautes azande dans les grandes villes (Kinshasa, Bangui, Djouba). Diaspora de guerre dans des pays voisins suite aux conflits du Soudan du Sud. Rencontre en Ouganda de representants azande lors de reunions sur la restauration de la royaute (convocation a Kampala mentionnee dans les sources recentes)."
+      "kingdomsOrChiefdoms": "Calonne-Beaufaict estime à 120 000 kilomètres carrés les territoires réunis sous l'autorité des Avungara. Les chefs du Soudan faisaient remonter leur lignée à Mabenge, ou à Ngura plus avant, selon les Seligman. Le plus connu des rois est Gbudue, aussi appelé Yambio, né vers 1835 et mort en 1905. Sa résidence s'étendait, dit-on, sur huit kilomètres. Les Nations unies citent Tambura, Ezo et Gbudue comme les rois dont descend la famille royale avongara du Soudan du Sud. En février 2022, un royaume zande a été rétabli à Yambio, avec pour roi Wilson Peni, petit-fils de Gbudue, selon Braak et Kenyi.",
+      "relationsWithNeighbors": "Le règne de Gbudue est marqué par des combats contre les Dinka, les Moru, des Arabes et des Britanniques, selon Braak et Kenyi. Les Mangbetu disaient être frères des Avungara, selon un récit recueilli par Calonne-Beaufaict. Dans l'Équatoria-Occidental, les Azande et les Balanda vivent mêlés, et beaucoup de familles ont des ancêtres des deux peuples. Des tensions pour le pouvoir et pour la terre les opposent pourtant depuis plusieurs années, selon les Nations unies. Les relations entre les Azande et les soldats de l'armée nationale, surtout dinka, ont aussi été tendues, selon un profil du comté d'Ezo.",
+      "conflictsOrAlliances": "Selon Evans-Pritchard, cité par Braak et Kenyi, la chute de Gbudue en 1905 doit beaucoup à des alliances entre princes zande et colonisateurs : le prince Renzi, fils de Wando, a aidé les forces belges, et le roi Tambura et les fils du roi Ndoruma ont aidé les forces anglo-égyptiennes. Pendant les guerres du Soudan du Sud, des groupes d'autodéfense appelés Arrow Boys ont combattu la rébellion ougandaise de la Lord's Resistance Army. En 2015, des combats opposent les Arrow Boys à l'armée nationale dans le comté d'Ezo. De juin à septembre 2021, les affrontements autour de Tambura, où s'opposent des milices liées aux Azande et aux Balanda, font au moins 440 morts civils, selon les Nations unies.",
+      "diaspora": "Selon Braak et Kenyi, de nombreux Azande du Soudan du Sud vivent comme réfugiés en Ouganda, dans les camps de Rhino Camp et de Kiryandongo, et dans les villes d'Arua et de Kampala. Des communautés zande organisées existent aussi au Soudan, et de plus petites au Royaume-Uni, au Canada, en Australie et aux États-Unis. Joshua Project compte environ 13 000 Azande aux États-Unis."
     },
     "demography": {
-      "totalPopulation": 2000000,
-      "referenceYear": 2025,
-      "source": "SIL Ethnologue (2024) : 1,1 million de locuteurs du zande (730 000 en RDC, 62 000 en RCA, 350 000 au Soudan du Sud). Wikipedia Azande people : estimations totales de 1,1 million de locuteurs. Liste ethnique du Soudan du Sud : 878 000 Zande. Estimation totale en 2025 (incluant locuteurs dans les 3 pays et croissance demographique) : environ 2 millions. Une autre estimation compte 1 200 000 Azande en 2025, dont 600 000 au Soudan du Sud (Ethnologue, Joshua Project).",
+      "totalPopulation": 3646000,
+      "referenceYear": 2026,
+      "source": "Estimation de la base de données missionnaire Joshua Project, consultée le 3 novembre 2026 : 3 646 000 Azande dans quatre pays, dont environ 13 000 aux États-Unis. Ce n'est pas un recensement. En 1932, Evans-Pritchard estimait leur nombre à environ deux millions, selon les Seligman.",
       "distributionByCountry": [
         {
           "country": "COD",
-          "population": 1100000,
-          "note": "Provinces du Haut-Uele et du Bas-Uele, nord-est de la RDC"
+          "population": 2598000,
+          "note": "Nord-est de la RD Congo, bassin de l'Uele ; estimation de Joshua Project"
         },
         {
           "country": "SSD",
-          "population": 750000,
-          "note": "Equatoria occidental (region de Yambio), Soudan du Sud"
+          "population": 933000,
+          "note": "Ouest de l'Équatoria-Occidental (Yambio, Nzara, Tambura, Ezo) ; estimation de Joshua Project"
         },
         {
           "country": "CAF",
-          "population": 150000,
-          "note": "Est de la Republique centrafricaine, regions frontalières"
+          "population": 102000,
+          "note": "Sud-est de la Centrafrique, bassin de la Mbomu ; estimation de Joshua Project"
         }
       ]
     },
@@ -317,7 +425,9 @@
       {
         "title": "Azande Royal — History of the Avongara Dynasty",
         "url": "https://www.azanderoyal.org/history.html",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "community",
+        "notes": "Site du royaume azande rétabli au Soudan du Sud, avec un bureau à Juba. Passage lu : Basanginonga « defeated Ngara and bound him up » et reçut le nom « Vongara – the man who bound up Ngara » ; l'expansion commence sous Ngura, son descendant. Consulté le 3 novembre 2026."
       },
       {
         "title": "SIL Ethnologue — Zande (zne)",
@@ -329,18 +439,27 @@
         "title": "Glottolog — Zande",
         "url": "https://glottolog.org/resource/languoid/id/zand1248",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde tenu par l'Institut Max Planck d'anthropologie évolutionniste. Fiche de la langue zande, code zne : pays RD Congo, Centrafrique et Soudan du Sud ; dialectes Dio et Makaraka ; classement dans les langues zande-nzakara, oubanguiennes, puis atlantiques-congo. Consulté le 3 novembre 2026."
       },
       {
-        "title": "HAU Journal — New oracles among the Azande (2024)",
+        "title": "“Deaths by guns will never outnumber magic”: New oracles among the Azande",
         "url": "https://www.haujournal.org/index.php/hau/article/view/1895",
-        "tier": "referenced"
+        "tier": "referenced",
+        "author": "Ferenc Dávid Markó",
+        "year": 2024,
+        "source_kind": "academic",
+        "notes": "Article de HAU: Journal of Ethnographic Theory, vol. 14, n° 3, 2024, DOI 10.1086/732910. Résumé lu : le benge, l'oracle du poison décrit par Evans-Pritchard, a disparu ; les Azande ont adopté le dabaya, l'oracle d'un peuple voisin, où l'on égorge une poule ; les chefs s'en servent pour étendre leur contrôle judiciaire. Consulté le 3 novembre 2026."
       },
       {
-        "title": "Leiden University — Zande chieftaincy and kingship (2024)",
+        "title": "Zande chieftaincy and kingship: Historical memories, future visions and reinstatement of a Zande kingdom",
         "url": "https://scholarlypublications.universiteitleiden.nl/access/item:3718381/view",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "author": "Bruno Braak et John Justin Kenyi",
+        "year": 2023,
+        "page": "p. 225-235",
+        "notes": "Chapitre 24 du livre A Touch of Genius: The Life and Legacy of E. E. Evans-Pritchard, dirigé par André Singer, Canon Pyon, Sean Kingston Publishing, 2023, en libre accès. Notice lue dans le dépôt de l'université de Leyde, texte lu dans le PDF de l'éditeur. Passages lus : p. 225, communautés zande en Ouganda, au Soudan, au Royaume-Uni, au Canada, en Australie et aux États-Unis ; p. 226, migration des Ambomu vers l'est sous leur maison royale avongara à partir du milieu du XVIIIe siècle, d'après Evans-Pritchard ; p. 228, mort du roi Gbudue en février 1905, partage entre administrations belge, française et anglo-égyptienne, déplacements des années 1920 et du Zande Scheme ; p. 229, Arrow Boys ; p. 230-231, Wilson Peni couronné roi en février 2022. Consulté le 3 novembre 2026."
       },
       {
         "title": "HistoryFiles — Kingdoms of Central Africa : Zande State of Vungara",
@@ -351,19 +470,72 @@
         "title": "Joshua Project — Azande in South Sudan",
         "url": "https://joshuaproject.net/people_groups/10526/od",
         "tier": "unverified",
-        "source_kind": "missionary_database"
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire évangélique. Page lue : 933 000 Azande au Soudan du Sud et 3 646 000 dans quatre pays (RD Congo 2 598 000, Centrafrique 102 000, États-Unis 13 000) ; 85 % de chrétiens ; le nom Azande y signifierait « the people who possess much land ». Les sources des chiffres ne sont pas précisées. Consulté le 3 novembre 2026."
       },
       {
         "title": "Conflict Sensitivity Resource Facility — Ezo County, Western Equatoria",
         "url": "https://csrf-southsudan.org/county_profile/ezo/",
-        "tier": "needs_review"
+        "tier": "needs_review",
+        "source_kind": "ngo",
+        "notes": "Profil du comté d'Ezo publié par un centre de ressources sur les conflits au Soudan du Sud. Passages lus : combats entre les Arrow Boys et l'armée nationale à Ezo en novembre 2015 ; relations parfois tendues entre les Azande et les soldats, surtout dinka. Consulté le 3 novembre 2026."
       },
       {
         "title": "CIA World Factbook — South Sudan",
         "url": "https://www.cia.gov/the-world-factbook/countries/south-sudan/",
         "tier": "official",
         "source_kind": "government"
+      },
+      {
+        "title": "Pagan Tribes of the Nilotic Sudan",
+        "author": "C. G. Seligman et Brenda Z. Seligman",
+        "year": 1932,
+        "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 495-524",
+        "notes": "Londres, George Routledge & Sons, 1932. Lu dans la numérisation d'Internet Archive. Le chapitre sur les Azande reprend surtout les notes d'Edward Evans-Pritchard, recueillies dans le district de Yambio de 1926 à 1929. Passages lus : p. 495-496, les trois groupes Avongara, Ambamu et Auro, et les deux sens du mot Azande ; p. 497, Gbudwe tué en 1905 et les Makaraka « properly Adio » ; p. 498, homesteads et regroupements contre la maladie du sommeil ; p. 501-504, clans, récit de Basenginonga, conquêtes et rôle des bakumba ; p. 512, consultation du benge avant le mariage ; p. 519-524, Mboli, atoro, mangu et accusations de sorcellerie. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Azande : introduction à une ethnographie générale des bassins de l'Ubangi-Uele et de l'Aruwimi",
+        "author": "Adolphe de Calonne-Beaufaict",
+        "year": 1921,
+        "url": "https://archive.org/details/azandeintroducti00calo",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. X-XI, XXIII-XXIV, 5, 13-14, 32-33, 136",
+        "notes": "Bruxelles, Maurice Lamertin, 1921. Lu dans la numérisation des bibliothèques de la Smithsonian Institution sur Internet Archive. Le texte porte le regard de l'administration coloniale. Passages lus : p. X-XI, les Azande proprement dits (Avungara) franchissent le M'Bomu au début du XVIIIe siècle et les dernières vagues arrivent vers 1830, sur 120 000 km² ; p. XXIII-XXIV, les palanka, les chefs avungara « propriétaires du sol » et la délégation aux fils et aux frères ; p. 13-14, l'« azandéisation » de populations diverses et les Abandya ; p. 32-33, le récit de Bekia sur les Akegobili et le chef Gara ; p. 136, les Abarambo du nord du M'Bomu, « très azandéisés ». Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Attacks on Civilians in Tambura County, June – September 2021",
+        "author": "Mission des Nations unies au Soudan du Sud (UNMISS) et Haut-Commissariat des Nations unies aux droits de l'homme",
+        "year": 2022,
+        "url": "https://www.ecoi.net/en/file/local/2068825/Tambura-Report.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 3-5",
+        "notes": "Rapport conjoint de la division des droits de l'homme de l'UNMISS et du Haut-Commissariat, lu dans la copie du centre de documentation ecoi.net. Passages lus : p. 3, au moins 440 civils tués et environ 80 000 déplacés autour de Tambura entre juin et septembre 2021 ; p. 4-5, tensions entre le clan avongara des Azande et les Balanda pour les postes politiques et l'autorité coutumière, querelles foncières, et nombreuses familles d'ascendance azande et balanda. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "The Heart of Africa: Three Years' Travels and Adventures in the Unexplored Regions of Central Africa, from 1868 to 1871, vol. II",
+        "author": "Georg Schweinfurth",
+        "year": 1874,
+        "url": "https://archive.org/details/heartofafrica02schw_0",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 2-3, 9",
+        "notes": "New York, Harper & Brothers, 1874, traduction anglaise d'Ellen E. Frewer. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un voyageur européen. Passages lus : p. 2, tambours de guerre et instruments à cordes ; p. 3, les noms Niam-Niam et Zandey et les noms donnés par les voisins ; p. 9, les trumbash et les boucliers, et les Monbuttoo, forgerons plus habiles, qui fournissent les couteaux. Consulté le 3 novembre 2026."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "languages.vehicularRole",
+        "reason": "Nous n'avons pas pu consulter la fiche de l'Ethnologue sur le zande ; nous ne donnons donc pas ici de nombre de locuteurs."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Azande, au singulier Zande, sont un peuple qui vit entre le Soudan du Sud, la Centrafrique et la RD Congo. Les marchands du Soudan et les voyageurs les ont longtemps appelés Niam-Niam.",
+      "followUp": "D'où vient le nom Niam-Niam, donné aux Azande ?"
+    }
   }
 }
