@@ -9,13 +9,18 @@
   "glottocode": "dink1262",
   "nameFr": "Dinka",
   "nameEn": "Dinka",
-  "alternateNames": [],
-  "whyProblematic": "Les Dinka se nomment eux-mêmes Jieng ou Muonjang. « Dinka » est un nom donné de l'extérieur. Les sources consultées ne permettent pas de savoir d'où il vient. Selon Jok (2018), seule une minorité instruite parmi les Dinka sait que d'autres les appellent ainsi.",
+  "alternateNames": ["Thuɔŋjäŋ", "Jieng"],
+  "whyProblematic": "Les Dinka se nomment eux-mêmes Jieng ou Muonjang, et appellent leur langue thuɔŋjäŋ. Le nom dinka leur a été donné de l'extérieur. Selon l'historien sud-soudanais Jok Madut Jok, seule une minorité instruite parmi les Dinka sait que d'autres les appellent ainsi. Deux sources font venir ce nom de Jang ou jieŋ, le nom que se donne le peuple.",
   "spellingAliases": [],
   "familyId": "FLG_NILOTIQUE",
-  "peoples": [{ "name": "Dinka", "peopleId": "PPL_DINKA" }],
+  "peoples": [
+    {
+      "name": "Dinka",
+      "peopleId": "PPL_DINKA"
+    }
+  ],
   "nameHistory": {
-    "summary": "Le nom dinka désigne une langue nilotique du Soudan du Sud, que ses locuteurs appellent thuɔŋjäŋ. C'est aussi le nom que d'autres donnent au peuple qui la parle, et qui se nomme lui-même Jieng. Les sources ne disent presque rien de l'origine du nom dinka ; nous présentons plus bas la seule explication que nous avons lue.",
+    "summary": "Le nom dinka désigne une langue nilotique du Soudan du Sud, que ses locuteurs appellent thuɔŋjäŋ. C'est aussi le nom que d'autres donnent au peuple qui la parle, et qui se nomme lui-même Jieng. Deux sources rattachent le nom dinka au nom que se donne ce peuple ; nous présentons leurs explications plus bas.",
     "names": [
       {
         "nameText": "Thuɔŋjäŋ",
@@ -43,7 +48,7 @@
                 "url": "https://blogs.ed.ac.uk/nilotic/?p=52",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "notes": "Lu le 11 octobre 2026 en ligne. Page de présentation d'une équipe de recherche sur les langues nilotiques : « Speakers call their language Thuɔŋjäŋ »."
+                "notes": "Page de présentation de l'équipe de recherche Nilotic@Edinburgh, à l'université d'Édimbourg. Relu le 3 novembre 2026 : « Speakers call their language Thuɔŋjäŋ »."
               },
               {
                 "title": "Pagan Tribes of the Nilotic Sudan",
@@ -53,7 +58,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 136",
-                "notes": "Londres, 1932. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+                "notes": "Londres, George Routledge & Sons, 1932. Relu le 3 novembre 2026 dans la numérisation d'Internet Archive, p. 136 : « All these, with many other tribes, call themselves Jang (pl. Jeng), corrupted by the Arabs into Denkawi, whence the English Dinka »."
               }
             ]
           }
@@ -65,16 +70,17 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom donné de l'extérieur ; il viendrait de Jang, selon une seule source.",
+        "shortLine": "Le nom donné de l'extérieur ; il viendrait du nom que se donne le peuple, selon deux sources.",
         "periodLabel": "Écrit dès 1849",
         "accounts": [
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Sens non daté"
+              "from": 1932,
+              "to": 1932,
+              "label": "Écrit en 1932"
             },
-            "statement": "Le nom dinka désigne la langue et le peuple que d'autres appellent ainsi ; le peuple se nomme lui-même Jieng. Son origine n'est presque pas documentée ; nous présentons plus bas la seule explication que nous avons trouvée.",
+            "era": "colonial",
+            "statement": "Le nom dinka désigne la langue et le peuple que d'autres appellent ainsi. Le peuple se nomme lui-même Jang, au pluriel Jeng, écrivaient C. G. et Brenda Seligman en 1932.",
             "aspect": "meaning",
             "sources": [
               {
@@ -85,7 +91,28 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 136",
-                "notes": "Londres, 1932. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+                "notes": "Londres, George Routledge & Sons, 1932. Relu le 3 novembre 2026 dans la numérisation d'Internet Archive, p. 136 : « All these, with many other tribes, call themselves Jang (pl. Jeng), corrupted by the Arabs into Denkawi, whence the English Dinka »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Notice mise à jour en 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom dinka est connu surtout d'une minorité instruite parmi les Dinka, selon l'historien sud-soudanais Jok Madut Jok. Il écrit que le nom dinka a été inventé par des étrangers, et que les Dinka se nomment eux-mêmes Muonjang ou Jieng.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Jok Madut Jok, Dinka, Encyclopedia of World Cultures Supplement, Gale, mise à jour de 2018",
+                "author": "Jok Madut Jok",
+                "year": 2018,
+                "url": "https://www.encyclopedia.com/history/asia-and-africa/middle-eastern-history/dinka",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Notice « Dinka » de l'Encyclopedia of World Cultures Supplement (Gale), signée Jok Madut Jok, publiée sur encyclopedia.com (mise à jour du 29 mai 2018). Relu le 3 novembre 2026 : « The term \"Dinka\" was invented by outsiders and no one knows the origin of the word. The people now known as the Dinka actually call themselves Muonjang or Jieng. Among the Dinka, only an educated minority knows that they are called Dinka. »"
               }
             ]
           },
@@ -118,7 +145,7 @@
               "label": "Expédition de 1840-1841, récit publié en 1849"
             },
             "era": "colonial",
-            "statement": "Le nom dinka apparaît sous la forme Dinkas dans le récit de Ferdinand Werne, qui remonte le Nil Blanc en 1840-1841 et parle de « la nation dinka » et du « dialecte des Dinkas ». C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "statement": "Le nom dinka apparaît sous la forme Dinkas dans le récit de Ferdinand Werne, qui remonte le Nil Blanc en 1840-1841 et parle de « la nation dinka » et du « dialecte des Dinkas ». C'est la plus ancienne trace de ce nom que nous connaissons. La langue existait déjà avant lui.",
             "formAsWritten": "Dinkas",
             "birth": true,
             "sources": [
@@ -152,7 +179,28 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 136",
-                "notes": "Londres, 1932. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+                "notes": "Londres, George Routledge & Sons, 1932. Relu le 3 novembre 2026 dans la numérisation d'Internet Archive, p. 136 : « All these, with many other tribes, call themselves Jang (pl. Jeng), corrupted by the Arabs into Denkawi, whence the English Dinka »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Dictionnaire consulté en 2026"
+            },
+            "era": "modern",
+            "statement": "Le nom dinka viendrait probablement du mot jieŋ, le nom que se donnent les Dinka, selon le dictionnaire américain Merriam-Webster. Le dictionnaire ne dit pas par quelle langue le mot est passé.",
+            "hypothesisGroup": "origine du nom dinka",
+            "sources": [
+              {
+                "title": "Dinka — Merriam-Webster Dictionary",
+                "author": "Merriam-Webster",
+                "year": null,
+                "url": "https://www.merriam-webster.com/dictionary/Dinka",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Article « Dinka » du dictionnaire de langue anglaise Merriam-Webster, en ligne. Lu le 3 novembre 2026, rubrique « Etymology » : « probably ultimately from Dinka jieŋ, a self-designation »."
               }
             ]
           }
@@ -161,16 +209,16 @@
     ]
   },
   "content": {
-    "vehicularRole": null,
+    "vehicularRole": "national_official",
     "dialects": [
       "Abiliang",
       "Ageer",
       "Dongjol",
-      "Luac",
+      "Luac (dinka du Nord-Est)",
       "Ngok-Sobat",
       "Rut",
       "Thoi",
-      "Alor {Nilotic}",
+      "Alor",
       "Ngok-Kordofan",
       "Pan Aru",
       "Pawany",
@@ -182,35 +230,141 @@
       "Bor",
       "Ghol",
       "Nyarweng",
-      "Tuic",
+      "Tuic (dinka du Sud-Est)",
       "Abiem",
       "Aguok",
       "Apuk",
       "Awan",
-      "Lau {Nilotic}",
-      "Luac {Southwestern Dinka}",
+      "Lau",
+      "Luac (dinka du Sud-Ouest)",
       "Malual",
       "Paliet",
       "Palioupiny",
       "Rek",
-      "Tuic {Southwestern Dinka}"
+      "Tuic (dinka du Sud-Ouest)"
     ],
-    "vitalityStatus": null,
+    "vitalityStatus": {
+      "status": "Educational",
+      "scale": "EGIDS (Ethnologue)",
+      "asOf": 2025
+    },
     "sources": [
       {
         "title": "Glottolog 5.3 — Dinka (dink1262)",
         "url": "https://glottolog.org/resource/languoid/id/dink1262",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Glottolog name: Dinka; classification includes Nilotic. Les dialectes listés sont les sous-languoids que Glottolog rattache à dink1262, hors languoids portant leur propre code ISO 639-3."
+        "notes": "Glottolog 5.3, catalogue des langues du monde publié par l'Institut Max Planck d'anthropologie évolutionnaire. Lu le 3 novembre 2026. La notice range le dinka parmi les langues nilotiques occidentales, avec le nuer, et le situe au Soudan du Sud. Elle le divise en cinq langues : dinka du Nord-Est, du Nord-Ouest, du Centre-Sud, du Sud-Est et du Sud-Ouest. Les 31 dialectes listés sont ceux que Glottolog range sous ces cinq langues. Quand deux dialectes portent le même nom, nous ajoutons entre parenthèses la langue dinka à laquelle Glottolog les rattache."
       },
       {
         "title": "Jok Madut Jok, Dinka, Encyclopedia of World Cultures Supplement, Gale, mise à jour de 2018",
-        "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/dinka",
+        "url": "https://www.encyclopedia.com/history/asia-and-africa/middle-eastern-history/dinka",
         "tier": "referenced",
         "source_kind": "encyclopedia",
-        "notes": "Notice consultée sur encyclopedia.com : le mot « Dinka » a été inventé par des étrangers et l'on n'en connaît pas l'origine ; les Dinka se disent Muonjang ou Jieng."
+        "notes": "Notice « Dinka » de l'Encyclopedia of World Cultures Supplement (Gale), signée Jok Madut Jok, publiée sur encyclopedia.com (mise à jour du 29 mai 2018). Relu le 3 novembre 2026 : « The term \"Dinka\" was invented by outsiders and no one knows the origin of the word. The people now known as the Dinka actually call themselves Muonjang or Jieng. Among the Dinka, only an educated minority knows that they are called Dinka. »"
+      },
+      {
+        "title": "ISO 639-3, Dinka [din]",
+        "url": "https://iso639-3.sil.org/code/din",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du code din tenue par SIL Global, autorité d'enregistrement de la norme ISO 639-3. Lue le 3 novembre 2026 : « Dinka is a macrolanguage ». Le code din regroupe cinq langues : dib (South Central Dinka), dik (Southwestern Dinka), dip (Northeastern Dinka), diw (Northwestern Dinka) et dks (Southeastern Dinka)."
+      },
+      {
+        "title": "Glottolog 5.3 — Southwestern Dinka (sout2832)",
+        "url": "https://glottolog.org/resource/languoid/id/sout2832",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog 5.3, catalogue des langues du monde publié par l'Institut Max Planck d'anthropologie évolutionnaire. Lu le 3 novembre 2026. Notice du dinka du Sud-Ouest (code dik). Glottolog reprend d'Ethnologue (Eberhard, Simons et Fennig, 2025) le niveau 4 « Educational » de l'échelle EGIDS, et précise : « Recognized language (2011, Transitional Constitution, Article 6(1)), primary education, literacy efforts ». Autres noms listés : Rek, West-Dinka, Western Dinka."
+      },
+      {
+        "title": "Glottolog 5.3 — Northeastern Dinka (nort2815)",
+        "url": "https://glottolog.org/resource/languoid/id/nort2815",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog 5.3, catalogue des langues du monde publié par l'Institut Max Planck d'anthropologie évolutionnaire. Lu le 3 novembre 2026. Notice du dinka du Nord-Est (code dip). Niveau 4 « Educational » de l'échelle EGIDS, repris d'Ethnologue (2025). Autres noms listés : Padang, White Nile Dinka et, d'après Ruhlen (1987), « Jieng (Dinka) »."
+      },
+      {
+        "title": "Glottolog 5.3 — Northwestern Dinka (nort2816)",
+        "url": "https://glottolog.org/resource/languoid/id/nort2816",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog 5.3, catalogue des langues du monde publié par l'Institut Max Planck d'anthropologie évolutionnaire. Lu le 3 novembre 2026. Notice du dinka du Nord-Ouest (code diw). C'est la seule des cinq langues dinka classée au niveau 6a « Vigorous » de l'échelle EGIDS, d'après Ethnologue (2025), et non au niveau 4. Autre nom listé : Ruweng."
+      },
+      {
+        "title": "Glottolog 5.3 — South Central Dinka (sout2833)",
+        "url": "https://glottolog.org/resource/languoid/id/sout2833",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog 5.3, catalogue des langues du monde publié par l'Institut Max Planck d'anthropologie évolutionnaire. Lu le 3 novembre 2026. Notice du dinka du Centre-Sud (code dib). Niveau 4 « Educational » de l'échelle EGIDS, repris d'Ethnologue (2025), avec la mention de l'article 6(1) de la Constitution de 2011. Autres noms listés : Agar, Central Dinka."
+      },
+      {
+        "title": "Glottolog 5.3 — Southeastern Dinka (sout2834)",
+        "url": "https://glottolog.org/resource/languoid/id/sout2834",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog 5.3, catalogue des langues du monde publié par l'Institut Max Planck d'anthropologie évolutionnaire. Lu le 3 novembre 2026. Notice du dinka du Sud-Est (code dks). Niveau 4 « Educational » de l'échelle EGIDS, repris d'Ethnologue (2025). Autres noms listés : Bor Dinka, Eastern Dinka."
+      },
+      {
+        "title": "Transitional Constitution of the Republic of South Sudan, 2011 (révisée en 2013), article 6 — Constitute Project",
+        "url": "https://www.constituteproject.org/constitution/South_Sudan_2013",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte de la Constitution de transition du Soudan du Sud, lu sur Constitute le 3 novembre 2026. L'article 6(1) dit : « All indigenous languages of South Sudan are national languages and shall be respected, developed and promoted ». Le dinka est donc l'une des langues nationales du pays. L'article 6(2) fait de l'anglais la langue de travail officielle."
+      },
+      {
+        "title": "Illustrations of the IPA: Luanyjang Dinka",
+        "url": "https://doi.org/10.1017/S0025100308003605",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de Bert Remijsen (université d'Édimbourg) et Caguor Adong Manyang (université du Bahr el-Ghazal), Journal of the International Phonetic Association, vol. 39, no 1, 2009, p. 113-124, Cambridge University Press. Lu le 3 novembre 2026, p. 113 : le dinka compte « over two million speakers (Gordon 2005) » ; quatre grands groupes de dialectes sont distingués, « Padang, Rek, Agar, and Bor ». L'article décrit les sons du dinka luanyjang, qui appartient au groupe rek."
+      },
+      {
+        "title": "Languages — Nilotic@Edinburgh",
+        "url": "https://blogs.ed.ac.uk/nilotic/?p=52",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Page de présentation de l'équipe de recherche Nilotic@Edinburgh, à l'université d'Édimbourg. Relu le 3 novembre 2026 : « Speakers call their language Thuɔŋjäŋ ». La page distingue quatre groupes de dialectes, « Rek, Agar, Padang, and Bor »."
       }
-    ]
+    ],
+    "originDebated": false,
+    "gaps": [
+      {
+        "field": "nameHistory.names[0].pronunciation",
+        "reason": "Nous avons cherché une prononciation du nom thuɔŋjäŋ, écrite à la française ou enregistrée, dans les pages de l'équipe Nilotic@Edinburgh et dans la description des sons du dinka publiée en 2009 par Bert Remijsen et Caguor Adong Manyang. Nous n'en avons pas trouvé pour ce nom."
+      },
+      {
+        "field": "content.speakers",
+        "reason": "Nous avons cherché un nombre de locuteurs du dinka pour le Soudan, l'Ouganda, le Kenya et l'Éthiopie, où vivent aussi des Dinka. Les pages d'Ethnologue ne nous étaient pas accessibles, et les sources lues ne donnent pas de chiffre pour ces pays. Les chiffres présentés pour le Soudan du Sud et l'Australie ne sont pas datés par la source."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Une langue nilotique du Soudan du Sud, l'une des langues nationales du pays. Ses locuteurs l'appellent thuɔŋjäŋ ; « dinka » est le nom donné de l'extérieur.",
+      "followUp": "D'où vient le nom dinka, que ses locuteurs n'emploient pas pour eux-mêmes ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "SSD",
+          "speakers": 1300000,
+          "source": {
+            "title": "Languages — Nilotic@Edinburgh",
+            "url": "https://blogs.ed.ac.uk/nilotic/?p=52",
+            "tier": "referenced",
+            "notes": "Page de l'équipe de recherche Nilotic@Edinburgh, à l'université d'Édimbourg, lue le 3 novembre 2026 : le dinka est « spoken in South Sudan by approximately 1.3 million people (Ethnologue) ». La page ne dit pas de quelle année date ce chiffre d'Ethnologue, ni s'il compte seulement les personnes dont c'est la langue maternelle. Une autre estimation d'Ethnologue, de 2005, citée par Bert Remijsen et Caguor Adong Manyang en 2009, donne plus de deux millions de locuteurs pour l'ensemble de la langue, sans détail par pays."
+          }
+        },
+        {
+          "country": "AUS",
+          "speakers": 12000,
+          "source": {
+            "title": "Languages — Nilotic@Edinburgh",
+            "url": "https://blogs.ed.ac.uk/nilotic/?p=52",
+            "tier": "referenced",
+            "notes": "Même page, lue le 3 novembre 2026 : de grandes communautés vivent à l'étranger, notamment en Australie, « the latter of which has over 12,000 speakers ». Le chiffre est un minimum ; la page ne dit pas d'où il vient ni de quelle année il date."
+          }
+        }
+      ]
+    }
   }
 }
