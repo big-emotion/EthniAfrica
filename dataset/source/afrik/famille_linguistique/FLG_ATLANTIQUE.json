@@ -1,4 +1,16 @@
 {
+  "_meta": {
+    "research": [
+      "2026-11-03 : Glottolog 5.3, notices JSON de nort3146, mela1257, atla1278 (arbre Newick compté langue par langue) et références de sous-classification (Pozdniakov et Segerer 2024, Merrill 2018 et 2023).",
+      "2026-11-03 : Pozdniakov 2022, Proto-Fula–Sereer, PDF Zenodo lu en entier (p. 1-2, 7-8, 17).",
+      "2026-11-03 : Oxford Guide to the Atlantic Languages of West Africa (Lüpke 2024), résumés des chapitres 1, 2, 3 et 25 lus sur academic.oup.com ; textes complets payants.",
+      "2026-11-03 : Segerer 2016, diaporama ACAL 47 lu sur guillaumesegerer.fr ; HAL halshs-01427500 et halshs-01671284 sans fichier déposé (API HAL), page HAL bloquée par un contrôle anti-robot.",
+      "2026-11-03 : Koelle 1854 (archive.org polyglottaafrica00koel), Delafosse 1924 (archive.org LanguesDuMondeMeilletCohen, p. 552-554), Histoire générale de l'Afrique en anglais, vol. I (ch. 10-12) et III (ch. 18) sur archive.org. unesdoc.unesco.org renvoie 403 : l'édition française citée dans l'historique du nom n'a pas pu être rouverte.",
+      "2026-11-03 : nombre total de locuteurs non retrouvé : Ethnologue (403), Britannica (403, copie web.archive.org injoignable), Merrill 2018 sur eScholarship (page vide).",
+      "2026-11-03 : ANSD, RGPH-5, chapitre 1 : certificat TLS du serveur non vérifiable puis erreur 503 ; le chiffre wolof du Sénégal n'a pas été revérifié.",
+      "Retiré : l'hypothèse « égyptologues » de l'origine (aucune source lue ne la soutient), l'hégémonie wolof et l'impact de l'islam et du commerce atlantique sans source, la mention « langues de la côte de Guinée »."
+    ]
+  },
   "id": "FLG_ATLANTIQUE",
   "nameFr": "Atlantique",
   "nameEn": "Atlantic (anciennement West Atlantic)",
@@ -52,9 +64,9 @@
         "nameStatus": "former",
         "selfGiven": false,
         "languageOfOrigin": null,
-        "namedBy": "Le linguiste allemand Diedrich Westermann",
-        "shortLine": "Le nom que le linguiste Diedrich Westermann a donné à ce groupe à la fin des années 1920.",
-        "periodLabel": "Depuis 1927-1928",
+        "namedBy": "Le missionnaire Sigismund Koelle, puis le linguiste allemand Diedrich Westermann",
+        "shortLine": "Le nom que Sigismund Koelle emploie dès 1854 et que Diedrich Westermann reprend vers 1928.",
+        "periodLabel": "Depuis 1854",
         "accounts": [
           {
             "period": {
@@ -136,8 +148,7 @@
               "to": 1928,
               "label": "1927-1928"
             },
-            "statement": "Le nom ouest-atlantique est proposé par le linguiste allemand Diedrich Westermann pour un sous-groupe de ses langues soudanaises occidentales, selon Joseph Greenberg. Celui-ci date le nom de 1928, et range déjà l'« atlantique occidental » parmi les sous-groupes de l'étude de Westermann de 1927. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
-            "birth": true,
+            "statement": "Le nom ouest-atlantique est proposé par le linguiste allemand Diedrich Westermann pour un sous-groupe de ses langues soudanaises occidentales, selon Joseph Greenberg. Celui-ci date le nom de 1928, et range déjà l'« atlantique occidental » parmi les sous-groupes de l'étude de Westermann de 1927.",
             "actors": [
               {
                 "name": "Diedrich Westermann",
@@ -164,6 +175,44 @@
                 "source_kind": "intergovernmental",
                 "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
                 "page": "p. 319"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "statement": "Le nom ouest-atlantique apparaît sous la forme « North-West Atlantic Languages », « langues atlantiques du nord-ouest », chez le missionnaire Sigismund Koelle, en 1854. Il y range des langues qui changent le début des mots, d'après les listes qu'il recueille à Freetown auprès d'Africains libérés de la traite, selon Pathé Diagne. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "formAsWritten": "North-West Atlantic Languages",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Sigismund Wilhelm Koelle",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/polyglottaafrica00koel",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "Remarques d'introduction, début de la partie I",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la numérisation d'Internet Archive. Le missionnaire y titre son premier groupe « North-West Atlantic Languages » et le définit par des changements au début des mots, comme dans les langues d'Afrique du Sud. Ses informateurs sont des Africains libérés de la traite, installés à Freetown ; il raconte par exemple qu'un locuteur falup a été enlevé, vendu à un Portugais, puis amené en Sierra Leone par un navire britannique."
+              },
+              {
+                "title": "General History of Africa, I: Methodology and African Prehistory, ch. 10 : History and linguistics",
+                "author": "Pathé Diagne",
+                "year": 1981,
+                "url": "https://archive.org/details/unesco_general_history_africa_i",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 244",
+                "notes": "UNESCO, édition anglaise de 1981, lue dans la numérisation d'Internet Archive. Le passage dit que Koelle range ces langues sous le titre West Atlantic en 1854, puis les tient pour non classées ; que Delafosse en 1924, Westermann en 1928 et Greenberg en 1963 y voient un groupe apparenté ; que Wilson et Dalby le contestent ; et que, d'après les travaux de David Sapir, la plupart de ces langues ne partagent que 5 à 10 % de leur vocabulaire, la géographie restant souvent leur seul point commun."
               }
             ]
           }
@@ -231,19 +280,23 @@
   },
   "content": {
     "searchAnswer": {
-      "lead": "Les langues du Sénégal à la Sierra Leone, dont le peul et le wolof. Le nom est géographique : il a souvent servi pour les langues de la côte qui n'entraient pas dans les autres groupes.",
-      "followUp": "Pourquoi certains linguistes doutent-ils que ces langues forment un seul ensemble ?"
+      "lead": "Les langues de la côte ouest de l'Afrique, du Sénégal à la Sierra Leone, dont le peul, le wolof et le diola. Leur nom vient de l'océan qui borde cette côte.",
+      "followUp": "Pourquoi les linguistes discutent-ils encore de l'unité de ces langues ?"
     },
     "decolonialHeader": {
-      "whyProblematic": " L'appellation est critiquée car elle est purement géographique et ne garantit pas une unité génétique cohérente. Historiquement, le terme \"West Atlantic\" a souvent servi de catégorie résiduelle pour classer les langues de la côte ouest-africaine qui ne correspondaient pas aux familles Mandé ou Kwa, créant des confusions avec d'autres groupes côtiers comme les langues Krou (Kru) ou les langues lagunaires. De plus, la diversité interne est telle que certains linguistes (comme Dalby) ont remis en question l'existence de cette famille comme une unité génétique valide, la considérant parfois davantage comme une aire de convergence linguistique. vers Aujourd'hui, le terme est conservé par convention scientifique pour désigner ce regroupement géographique spécifique.",
-      "selfAppellation": null,
-      "contemporaryUsage": " Regroupe les langues du Sénégal, Gambie, Guinée-Bissau et Guinée (Fula, Wolof, Serer, Diola, Temne, etc.).",
+      "linkWithFamily": "Rattachée au niger-congo par Joseph Greenberg en 1963, comme sa branche la plus à l'ouest ; l'unité de ce groupe est discutée.",
       "historicalAppellations": [
-        "Langues atlantique-occidentales",
+        "Ouest-atlantique",
         "West Atlantic",
-        "langues de la côte de Guinée"
+        "Sénégalo-guinéen"
       ],
-      "originOfHistoricalTerm": " Le terme est purement géographique, créé par les linguistes (Koelle, puis Westermann et Greenberg) pour désigner les langues \"non-mandé\" de la côte ouest-africaine (Sénégal à Libéria)."
+      "originOfHistoricalTerm": "Le nom vient de l'océan Atlantique, qui borde la côte où l'on parle ces langues, du sud de la Mauritanie à la Sierra Leone. En 1854, le missionnaire Sigismund Koelle range déjà une partie d'entre elles sous le titre « North-West Atlantic Languages » dans sa Polyglotta Africana. Il les reconnaît à un trait commun : le début des mots change selon leur rôle. Il les tient plus tard pour non classées, selon Pathé Diagne. En 1924, l'administrateur colonial Maurice Delafosse les réunit sous le nom de groupe sénégalo-guinéen. Le linguiste allemand Diedrich Westermann leur donne le nom ouest-atlantique vers 1928. Joseph Greenberg reprend ce nom en 1963 pour la branche la plus à l'ouest du niger-congo. Konstantin Pozdniakov et Guillaume Segerer emploient aujourd'hui le nom atlantique, sans « ouest ».",
+      "whyProblematic": "Le nom atlantique est un nom de lieu : il désigne des langues parlées près de l'océan, pas une parenté prouvée. Les linguistes discutent depuis longtemps de l'unité de ce groupe. En 1965, David Dalby propose d'abandonner le nom ouest-atlantique et de mettre à part les langues mel, comme le temné et le kissi, selon Joseph Greenberg. David Sapir défend au contraire l'unité du groupe, en comptant les mots que ces langues ont en commun. D'après ses travaux, la plupart d'entre elles ne partagent pourtant que 5 à 10 % de leur vocabulaire, et la géographie reste souvent leur seul point commun, selon Pathé Diagne. Aujourd'hui, Konstantin Pozdniakov et Guillaume Segerer gardent le nom atlantique pour un ensemble plus étroit, sans les langues mel, ni le gola, le limba et le sua. G. Tucker Childs juge pour sa part que ces langues ne forment pas une seule famille issue d'une même langue ancienne.",
+      "selfAppellation": null,
+      "contemporaryUsage": "Le nom atlantique désigne aujourd'hui, chez Konstantin Pozdniakov et Guillaume Segerer, une famille de langues formée de deux groupes. Le groupe du nord réunit le wolof, le peul, le sérère, les langues nyun et buy, les langues tenda, le jaad et le biafada, les langues cangin et le nalu. Le groupe bak réunit le diola, le manjak, le balante et le bijago. Ces auteurs mettent à part les langues mel, comme le temné et le kissi, ainsi que le gola, le limba et le sua. Le catalogue Glottolog ne garde pas de groupe atlantique commun : il place côte à côte, dans un ensemble plus large appelé atlantique-congo, le groupe North-Central Atlantic, les langues cangin, les langues mel, le gola, le limba et le sua.",
+      "geographicArea": "Sénégal, Gambie, Guinée-Bissau, Guinée, Sierra Leone, Liberia, Mauritanie, Cameroun, Tchad",
+      "numberOfLanguages": 65,
+      "totalSpeakers": 40000000
     },
     "generalInfo": {
       "branches": [
@@ -252,11 +305,25 @@
         "Jaad",
         "Naluic",
         "Tenda",
-        "Wolof-BKK"
+        "Wolof-BKK",
+        "Cangin",
+        "Mel",
+        "Gola",
+        "Limba",
+        "Sua"
       ],
-      "geographicArea": "Sénégal, Gambie, Guinée-Bissau, Guinée, Sierra Leone, Libéria.",
-      "numberOfLanguages": 45,
-      "totalSpeakers": 40000000
+      "geographicArea": "Sénégal, Gambie, Guinée-Bissau, Guinée, Sierra Leone et Liberia, de la frontière mauritanienne à la frontière libérienne ; le peul s'étend en plus à travers le Sahel, du nord du Sénégal au nord du Cameroun et à la région du Tchad.",
+      "numberOfLanguages": 65,
+      "totalSpeakers": 40000000,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "Selon Glottolog 5.3 : 46 langues du groupe North-Central Atlantic, 5 langues cangin, 10 langues mel, 2 langues limba, le gola et le sua. Sans les langues mel, le gola, le limba et le sua, l'atlantique de Pozdniakov et Segerer compte 51 langues."
+        },
+        "totalSpeakers": {
+          "note": "Un ordre de grandeur que nous n'avons retrouvé dans aucune des sources consultées.",
+          "unsourced": true
+        }
+      }
     },
     "associatedPeoples": [
       {
@@ -285,17 +352,18 @@
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " Langues à classes nominales marquées (préfixes/suffixes/alternances), flexionnelles et agglutinantes (les mots se construisent en ajoutant des éléments à la suite les uns des autres).",
-      "phonologicalFeatures": " - Mutation consonantique initiale (alternance de consonnes selon la classe ou le contexte grammatical). - Richesse du système vocalique et consonantique (implosives, prénasalisées).",
-      "relationsWithNeighbors": " Forte interaction avec le Mandé (emprunts lexicaux) mais structure grammaticale distincte."
+      "typology": "La plupart des langues atlantiques ont des classes nominales : chaque nom appartient à une classe, marquée par un élément placé au début ou à la fin du mot, et les mots qui l'accompagnent s'accordent avec elle. Maurice Delafosse notait en 1924 que le peul marque ses classes à la fin du mot, et la plupart des autres langues au début. Il relevait aussi que le sujet se place avant le verbe et que l'adjectif suit le nom. David Sapir signale en plus des suffixes qui modifient le sens du verbe, selon Bassey W. Andah. En dehors de ces traits, Sapir trouve peu de points communs à tout le groupe.",
+      "phonologicalFeatures": "Le trait le plus connu de ces langues est la mutation consonantique : la consonne du début d'un mot change selon son rôle dans la phrase. En peul, le mot feɗoo-de, « bouton », devient peɗoo-ɗe au pluriel. Ce changement ne dépend pas des sons voisins. Il marque la classe d'un nom, le singulier ou le pluriel du sujet d'un verbe, et parfois la négation, comme en biafada, selon Konstantin Pozdniakov. Dans les langues tenda, toutes les consonnes peuvent changer ainsi. Fiona McLaughlin y voit l'un des traits les plus marquants des langues atlantiques. Delafosse l'avait déjà décrit en 1924 pour le peul, le wolof et le sérère.",
+      "relationsWithNeighbors": "Les langues atlantiques vivent depuis longtemps au contact des langues mandé, comme le soso. Bassey W. Andah rapporte que les Baga de Guinée sont peu à peu absorbés par les Soso, alors que les Temné de Sierra Leone ont absorbé à leur tour des voisins de langue bullom, loko, kouranko, peule et soso. Il signale aussi une ressemblance de vocabulaire entre les langues mel et l'akan du Ghana, qui ne sont pas voisines. Friederike Lüpke décrit cet espace comme un lieu de multilinguisme ancien, où ce mélange pèse sur la façon de classer les langues.",
+      "keyInnovations": "Pour classer ces langues, Konstantin Pozdniakov et Guillaume Segerer s'appuient sur des innovations partagées, c'est-à-dire des changements que plusieurs langues ont connus ensemble, plutôt que sur de simples ressemblances. Ils travaillent à partir de plus de 3 000 séries de mots apparentés. Selon Pozdniakov, la mutation consonantique est une innovation du groupe du nord : on la trouve, entière ou en traces, dans cinq de ses six sous-groupes, et dans aucun sous-groupe bak. John Merrill soutient en 2018 que ces alternances sont nées séparément dans plusieurs langues ; Pozdniakov juge ses arguments peu convaincants. En 2016, Segerer présente aussi deux changements communs à toutes les branches atlantiques et absents des langues mel."
     },
     "historyAndOrigins": {
-      "probableOrigin": " Sénégambie ou zone côtière guinéenne. Certains égyptologues situent ces langues dans la continuité des migrations post-pharaoniques vers l'Ouest.",
-      "emergencePeriod": " Non spécifiée dans les sources disponibles.",
-      "diffusion": " Expansion majeure via le pastoralisme peul (Fula) à travers tout le Sahel, et l'hégémonie politique wolof au Sénégal.",
-      "historicalBreaks": " - Commerce atlantique et colonisation (impact sur les zones côtières). - Islamisation ancienne (impact lexical arabe sur le Wolof et le Pulaar).",
-      "contactZones": " Rivières du Sud, Casamance, Fouta-Djalon (contact Peul-Mandingue).",
-      "majorEvents": " Non spécifiés dans les sources disponibles."
+      "probableOrigin": "Les sources consultées ne situent pas le lieu d'origine de ces langues ; elles en donnent des explications anciennes. En 1924, l'administrateur colonial Maurice Delafosse écrit que ces langues ont été « acculées à la côte » par de grandes migrations venues de l'est. Il place le premier territoire du peul entre Nioro et Tombouctou, avant l'installation au Fouta-Toro. Dmitri Olderogge décrit de même l'extrême ouest de l'Afrique comme un lieu de refuge, où de petits peuples se sont serrés sous la poussée de nouveaux venus. Bassey W. Andah rapporte une autre thèse, selon laquelle des États du Soudan occidental auraient poussé des populations vers la côte dès le IIIe siècle.",
+      "emergencePeriod": "Nous n'avons pas trouvé de source qui date la langue d'origine de tout le groupe. Pour deux de ses langues, le peul et le sérère, Konstantin Pozdniakov estime leur séparation à 3 500 ou 4 000 ans, à partir des 37 % de mots de base qu'elles partagent selon David Sapir. Il en conclut que l'atlantique est un ensemble plus ancien qu'une famille ordinaire. Le classement de ces langues en un groupe commence avec Sigismund Koelle en 1854 ; Delafosse le reprend en 1924, Westermann vers 1928, puis Greenberg en 1963.",
+      "diffusion": "La plupart des langues atlantiques sont parlées sur un petit territoire, par quelques centaines de personnes, comme le kobiana, à plus de 200 000, comme le kissi, selon David Sapir cité par Bassey W. Andah. Le wolof au Sénégal et le temné en Sierra Leone comptent davantage de locuteurs. Le peul est la grande exception : il est parlé du nord du Sénégal jusqu'au nord du Cameroun et à la région du Tchad. Delafosse notait déjà en 1924 que le peul s'était étendu vers le sud, au Fouta-Djalon, et vers l'est.",
+      "historicalBreaks": "Bassey W. Andah rapporte que les Temné, les Kissi, les Limba, les Baga et les Landouma vivaient d'abord au Fouta-Djalon, en Guinée. Vers le XIIIe siècle, l'arrivée des Soso, de langue mandé, les pousse vers l'ouest et le sud, vers la côte. Le même auteur ajoute que les Baga, les Landouma et les Temné ont peut-être formé un seul peuple avant que les Soso ne s'installent entre eux. Au XVIe siècle, les Temné atteignent l'estuaire de la Sierra Leone et coupent en deux le pays bullom.",
+      "contactZones": "Le Fouta-Djalon, en Guinée, où vivaient des peuples de langue mel avant l'arrivée des Soso, selon Bassey W. Andah. La Sénégambie, que George Murdock, cité par le même auteur, décrit comme un bloc de langues atlantiques ouvert aux contacts avec le Soudan. La côte qui va de la Guinée à la Côte d'Ivoire, où Murdock décrit des peuples mêlés qui parlent des langues mandé, krou et mel. La Basse-Casamance, au Sénégal, où le guide d'Oxford dirigé par Friederike Lüpke consacre des études au multilinguisme de villages comme Essyl.",
+      "majorEvents": "La traite atlantique marque la première description de ces langues. En 1854, Sigismund Koelle recueille ses listes de mots à Freetown auprès d'Africains libérés, comme un locuteur falup enlevé, vendu à un Portugais, puis amené en Sierra Leone par un navire britannique. Plus tôt, vers le XIIIe siècle, l'arrivée des Soso au Fouta-Djalon déplace vers la côte plusieurs peuples de langue mel, selon Bassey W. Andah. La colonisation française pèse ensuite sur la manière de décrire ces peuples : Maurice Delafosse, administrateur colonial, classe en 1924 leurs langues en même temps qu'il juge leurs locuteurs d'après la « race »."
     },
     "distribution": {
       "totalSpeakers": 40000000,
@@ -341,6 +409,152 @@
         "url": "https://www.ansd.sn/sites/default/files/recensements/rapport/Chapitre-1_ETAT-STRUCTURE-POPULATION-Rapport-def-RGPH-5.pdf",
         "tier": "official",
         "source_kind": "official_statistics"
+      },
+      {
+        "title": "Glottolog 5.3 — Atlantic-Congo (atla1278)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/atla1278",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice consultée le 3 novembre 2026. Le catalogue place directement sous l'atlantique-congo, sans nœud atlantique commun, six ensembles autrefois dits ouest-atlantiques : Cangin (5 langues), Gola (1), Limba (2), Mansoanka ou sua (1), Mel (10) et North-Central Atlantic (46)."
+      },
+      {
+        "title": "Glottolog 5.3 — North-Central Atlantic (nort3146)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/nort3146",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice consultée le 3 novembre 2026. Le catalogue range sous ce nom 46 langues, en six sous-groupes : Central Atlantic (bak et bijago), Fula-Sereer, Jaad, Naluic, Tenda et Wolof-BKK."
+      },
+      {
+        "title": "Glottolog 5.3 — Mel (mela1257)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/mela1257",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice consultée le 3 novembre 2026. Le catalogue range sous ce nom 10 langues, dont le temné et le kissi, à part du groupe North-Central Atlantic."
+      },
+      {
+        "title": "Proto-Fula–Sereer: Lexicon, morphophonology, and noun classes",
+        "author": "Konstantin Pozdniakov",
+        "year": 2022,
+        "url": "https://doi.org/10.5281/zenodo.5820515",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 1-2, 7-8 et 17",
+        "notes": "Berlin, Language Science Press, collection Niger-Congo Comparative Studies, livre en accès libre lu en entier dans sa version PDF. La page 1 présente la classification de Pozdniakov et Segerer : une famille atlantique formée d'un groupe du nord et du groupe bak, branche à part du niger-congo. La page 2 date la séparation du peul et du sérère de 3 500 à 4 000 ans. Les pages 7-8 décrivent la mutation consonantique, et la page 17 la situe dans le seul groupe du nord."
+      },
+      {
+        "title": "A genealogical classification of Atlantic languages, dans The Oxford Guide to the Atlantic Languages of West Africa, résumé du chapitre",
+        "author": "Konstantin Pozdniakov et Guillaume Segerer",
+        "year": 2024,
+        "url": "https://doi.org/10.1093/oso/9780198736516.003.0002",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 16-47",
+        "notes": "Oxford University Press, ouvrage dirigé par Friederike Lüpke. Résumé lu sur la page de l'éditeur. Les auteurs proposent une classification fondée sur les changements partagés, à partir de plus de 3 000 séries de mots apparentés. Ils ne trouvent pas encore de preuve solide pour réunir les langues mel et les langues atlantiques, et traitent le sua, le limba et le gola comme des langues isolées du niger-congo."
+      },
+      {
+        "title": "Genetically motivated clusters within Atlantic, dans The Oxford Guide to the Atlantic Languages of West Africa, résumé du chapitre",
+        "author": "G. Tucker Childs",
+        "year": 2024,
+        "url": "https://academic.oup.com/book/59850/chapter/511368053",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 48-58",
+        "notes": "Oxford University Press, ouvrage dirigé par Friederike Lüpke. Résumé lu sur la page de l'éditeur. L'auteur répond que l'atlantique ne forme pas une unité généalogique, que la division entre atlantique du nord et du sud n'est plus retenue, que le bijago appartient désormais à l'un des sous-groupes, et propose une structure plus plate, faite de groupes proches à l'échelle locale."
+      },
+      {
+        "title": "Atlantic consonant mutation, dans The Oxford Guide to the Atlantic Languages of West Africa, résumé du chapitre",
+        "author": "Fiona McLaughlin",
+        "year": 2024,
+        "url": "https://academic.oup.com/book/59850/chapter/511382748",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 577-592",
+        "notes": "Oxford University Press, ouvrage dirigé par Friederike Lüpke. Résumé lu sur la page de l'éditeur. L'autrice présente la mutation consonantique comme l'un des traits les plus marquants des langues atlantiques : elle distingue le singulier et le pluriel des verbes, marque les classes de noms et l'accord, et sert à former des noms. Le peul en offre l'un des systèmes les plus réguliers."
+      },
+      {
+        "title": "Language, land, and languaging in the Atlantic space, dans The Oxford Guide to the Atlantic Languages of West Africa, résumé du chapitre",
+        "author": "Friederike Lüpke",
+        "year": 2024,
+        "url": "https://academic.oup.com/book/59850/chapter/511367161",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 3-15",
+        "notes": "Oxford University Press, chapitre d'introduction de l'ouvrage. Résumé lu sur la page de l'éditeur. L'autrice décrit les langues de cet espace comme nommées d'après des lieux et des noms de groupes, et montre comment un multilinguisme ancien pèse sur la façon de classer leurs traits."
+      },
+      {
+        "title": "A new, innovation-based classification of Atlantic languages",
+        "author": "Guillaume Segerer, avec Konstantin Pozdniakov",
+        "year": 2016,
+        "url": "http://www.guillaumesegerer.fr/Ling/Documents/Pub/Segerer-ACAL47-final.ppsx",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Diaporama présenté au 47e congrès annuel de linguistique africaine (ACAL 47), à Berkeley, le 25 mars 2016, lu en entier sur le site de l'auteur (laboratoire LLACAN, CNRS et Inalco). Les diapositives 17 et 18 résument la classification : division principale entre le nord et le bak, langues mel hors de l'atlantique, bijago dans le bak, gola, limba et sua tenus pour isolés. La diapositive 20 montre deux changements présents dans toutes les branches atlantiques et absents des langues mel."
+      },
+      {
+        "title": "Polyglotta Africana",
+        "author": "Sigismund Wilhelm Koelle",
+        "year": 1854,
+        "url": "https://archive.org/details/polyglottaafrica00koel",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "Remarques d'introduction, début de la partie I",
+        "notes": "Londres, Church Missionary House, 1854. Lu dans la numérisation d'Internet Archive. Le missionnaire y titre son premier groupe « North-West Atlantic Languages » et le définit par des changements au début des mots, comme dans les langues d'Afrique du Sud. Ses informateurs sont des Africains libérés de la traite, installés à Freetown ; il raconte par exemple qu'un locuteur falup a été enlevé, vendu à un Portugais, puis amené en Sierra Leone par un navire britannique."
+      },
+      {
+        "title": "Langues du Soudan et de la Guinée, dans Les langues du monde, sous la direction d'A. Meillet et Marcel Cohen",
+        "author": "Maurice Delafosse",
+        "year": 1924,
+        "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 552-554",
+        "notes": "Paris, Édouard Champion, 1924. Lu dans la numérisation d'Internet Archive. Le texte porte le regard d'un administrateur colonial français et classe les peuples d'après la « race ». Les pages 553-554 décrivent les classes nominales du groupe sénégalo-guinéen, l'alternance de la consonne du début de la racine en peul, en wolof et en sérère, et l'ordre des mots."
+      },
+      {
+        "title": "General History of Africa, I: Methodology and African Prehistory, ch. 10 : History and linguistics",
+        "author": "Pathé Diagne",
+        "year": 1981,
+        "url": "https://archive.org/details/unesco_general_history_africa_i",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 244",
+        "notes": "UNESCO, édition anglaise de 1981, lue dans la numérisation d'Internet Archive. Le passage dit que Koelle range ces langues sous le titre West Atlantic en 1854, puis les tient pour non classées ; que Delafosse en 1924, Westermann en 1928 et Greenberg en 1963 y voient un groupe apparenté ; que Wilson et Dalby le contestent ; et que, d'après les travaux de David Sapir, la plupart de ces langues ne partagent que 5 à 10 % de leur vocabulaire, la géographie restant souvent leur seul point commun."
+      },
+      {
+        "title": "General History of Africa, I: Methodology and African Prehistory, ch. 11 : Migrations and ethnic and linguistic differentiations",
+        "author": "D. Olderogge",
+        "year": 1981,
+        "url": "https://archive.org/details/unesco_general_history_africa_i",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 283",
+        "notes": "UNESCO, édition anglaise de 1981, lue dans la numérisation d'Internet Archive. L'auteur juge les langues ouest-atlantiques moins homogènes que les langues mandé, rappelle que des linguistes britanniques y ont distingué les langues mel, et décrit l'extrême ouest de l'Afrique comme un lieu de refuge où de petits peuples se sont serrés sous la poussée de nouveaux venus."
+      },
+      {
+        "title": "General History of Africa, I: Methodology and African Prehistory, ch. 12 : African linguistic classification",
+        "author": "Joseph H. Greenberg",
+        "year": 1981,
+        "url": "https://archive.org/details/unesco_general_history_africa_i",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 303",
+        "notes": "UNESCO, édition anglaise de 1981, lue dans la numérisation d'Internet Archive. L'auteur range l'ouest-atlantique parmi les cinq branches du niger-congo de sa classification de 1963, attribue le nom à Westermann en 1928, le rapproche du sénégalo-guinéen de Delafosse, et résume le débat entre Dalby, qui propose de mettre à part les langues mel, et Sapir, qui défend l'unité du groupe."
+      },
+      {
+        "title": "General History of Africa, III: Africa from the Seventh to the Eleventh Century, ch. 18 : The peoples of Upper Guinea (between the Ivory Coast and the Casamance)",
+        "author": "Bassey W. Andah",
+        "year": 1988,
+        "url": "https://archive.org/details/unesco_general_history_africa_iii",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 538-539 et 541-543",
+        "notes": "UNESCO, édition anglaise de 1988, lue dans la numérisation d'Internet Archive. Les pages 538-539 résument David Sapir : des langues diverses, de la frontière entre le Sénégal et la Mauritanie à celle entre la Sierra Leone et le Liberia, souvent parlées par quelques centaines à quelques centaines de milliers de personnes, le peul faisant exception ; des classes nominales et des suffixes verbaux communs ; une ressemblance de vocabulaire entre les langues mel et l'akan. Les pages 541-543 rapportent le départ des Temné, Kissi, Limba, Baga et Landouma du Fouta-Djalon vers le XIIIe siècle, sous la poussée des Soso, puis l'avancée des Temné jusqu'à l'estuaire de la Sierra Leone au XVIe siècle."
       }
     ]
   }
