@@ -811,6 +811,37 @@
         ]
       },
       {
+        "nameText": "Pygmées",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "Inscription de 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Pygmées, au pluriel, figure dans le titre de la fiche de l'UNESCO « Les chants polyphoniques des pygmées Aka de Centrafrique », inscrite en 2008 sur la liste du patrimoine culturel immatériel.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "UNESCO – Les chants polyphoniques des pygmées Aka de Centrafrique, Liste représentative du patrimoine culturel immatériel de l'humanité",
+                "author": "UNESCO",
+                "year": 2008,
+                "url": "https://ich.unesco.org/fr/RL/les-chants-polyphoniques-des-pygmees-aka-de-centrafrique-00082",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Fiche de l'élément sur le site du patrimoine culturel immatériel de l'UNESCO : proclamé chef-d'œuvre en 2003, inscrit sur la Liste représentative en 2008."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "nameText": "Baaka",
         "nameStatus": "current",
         "selfGiven": false,
@@ -861,6 +892,7 @@
         "Mbenga",
         "Babinga",
         "Pygmée",
+        "Pygmées",
         "Biaka",
         "Bayaka",
         "Babenzele"
@@ -872,7 +904,7 @@
         "Bambenzele",
         "Pigmée"
       ],
-      "originOfExonyms": "Le nom Mbenga, écrit ba.mbenga, est celui que des villageois voisins, les Ngando et les Ngbaka de Centrafrique, donnent aux Aka, selon Serge Bahuchet et Henri Guillaume, cités par Marine Robillard et Serge Bahuchet. Des colons français en ont tiré la forme Babinga. Le mot Pygmée vient du grec ancien, où il désignait un peuple de légende haut d'une coudée. L'explorateur allemand Georg Schweinfurth l'a appliqué en 1870 à des peuples d'Afrique centrale, et il a ensuite servi pour de nombreux peuples de forêt, dont les Aka. Nous n'avons pas trouvé de source qui explique l'origine des noms Aka, Biaka, Bayaka ou Babenzele.",
+      "originOfExonyms": "Le nom Mbenga, écrit ba.mbenga, est celui que des villageois voisins, les Ngando et les Ngbaka de Centrafrique, donnent aux Aka, selon Serge Bahuchet et Henri Guillaume, cités par Marine Robillard et Serge Bahuchet. Des colons français en ont tiré la forme Babinga. Selon Serge Bahuchet, le mot Pygmée viendrait du grec ancien, où il aurait désigné un peuple de légende haut d'une coudée. L'explorateur allemand Georg Schweinfurth l'a appliqué en 1870 à des peuples d'Afrique centrale, et il a ensuite servi pour de nombreux peuples de forêt, dont les Aka. Nous n'avons pas trouvé de source qui explique l'origine des noms Aka, Biaka, Bayaka ou Babenzele.",
       "whyProblematic": "Le mot Pygmée réunit sous un seul nom des peuples différents par leur langue, leur culture et leur histoire, et il met en avant la taille des personnes, selon Robillard et Bahuchet et l'encyclopédie Worldmark. Beaucoup le jugent péjoratif. En République centrafricaine, des villageois parlent de « mes Pygmées » pour des Aka qu'ils tiennent sous leur dépendance, selon la Commission africaine des droits de l'homme et des peuples. En République du Congo, une loi de 2011 interdit ce mot et assimile son emploi à une injure.",
       "contemporaryUsage": "Les chercheurs et les organisations internationales écrivent aujourd'hui Aka ou BaAka ; le rapport de l'ONU de 2011 sur le Congo écrit Baaka. Le mot Pygmée reste pourtant courant : l'UNESCO l'emploie dans le titre des chants polyphoniques des Aka, et la Commission africaine l'utilise dans son rapport de 2007, tout en le disant péjoratif. Les catalogues de langues appellent la langue yaka (République centrafricaine).",
       "peopleGroupId": null,

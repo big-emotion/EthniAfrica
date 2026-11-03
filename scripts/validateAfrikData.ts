@@ -4861,7 +4861,12 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // which it says to leave out until the fiche has been reviewed.
   // 5968 -> 5920 on 2026-10-19: ETNI-2135 records `spellingAliases` on 48
   // people fiches whose sources already attest those forms.
-  peuple: 5920,
+  // 5920 -> 5865 on 2026-11-03: eight people fiches brought to the strict
+  // model (Adioukrou, Aowin, Mano, Wan, Vili, Hausa, Wolof, Aka) lost the four
+  // appellation keys the model moved elsewhere and gained the keys they lacked.
+  // Adioukrou, Aowin and Vili still omit `classificationStatus`: their sources
+  // argue no problem with the name, and the model says to leave it out then.
+  peuple: 5865,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
