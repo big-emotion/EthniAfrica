@@ -3,9 +3,9 @@
   "nameFr": "République-Unie de Tanzanie",
   "nameEn": "Tanzania",
   "nameOfficial": "République unie de Tanzanie (Jamhuri ya Muungano wa Tanzania)",
-  "summary": "La Tanzanie est un mot composé : « Tanganyika » et « Zanzibar », soudés à l'unification de 1964. Cités-États swahilies de la côte, sultanat de Zanzibar et royaumes bantous de l'intérieur en composent l'histoire. Sukuma, Chaga, Haya, Nyamwezi et Maasai y ont le swahili pour langue commune.",
-  "etymology": "Le nom \"Tanzanie\" est une combinaison de \"Tanganyika\" et \"Zanzibar\", créé lors de l'unification en 1964. \"Tanganyika\" viendrait du swahili \"tanga\" (voile) et \"nyika\" (plaine désertique), ou de \"tanga\" (voile) et \"hika\" (étendre). \"Zanzibar\" viendrait de l'arabe \"Zanj\" (noir) et \"barr\" (côte), et voudrait dire \"côte des Noirs\".",
-  "nameOriginActor": "Le nom \"Tanzanie\" a été créé en 1964 lors de l'unification du Tanganyika et de Zanzibar. \"Tanganyika\" était le nom colonial allemand puis britannique. \"Zanzibar\" était le nom du sultanat puis protectorat.",
+  "summary": "Le nom Tanzanie réunit, depuis 1964, le début des noms Tanganyika et Zanzibar, les deux États qui se sont unis cette année-là. Le pays a connu les cités swahilies de la côte, le sultanat de Zanzibar et les chefferies et royaumes de l'intérieur, avant la colonisation allemande puis britannique. Plus de cent langues y sont parlées, et le swahili, langue nationale, est compris presque partout.",
+  "etymology": "Le nom Tanzanie est formé en 1964 avec le début des noms Tanganyika et Zanzibar ; l'explication de ses dernières lettres varie selon les sources. Le nom Tanganyika est d'abord celui d'un grand lac : selon l'explorateur Richard Burton, il viendrait du verbe ku tanganyika, « se joindre, se rencontrer ». Le nom Zanzibar viendrait du persan zang, « noir », et bar, « pays », selon Richard Burton et Henry Yule. Une autre explication, que Burton attribue aux Arabes et range parmi les légendes, le tire de l'exclamation « que ce pays est beau ! ».",
+  "nameOriginActor": "Le nom Tanzanie est choisi en 1964 pour l'État né de l'union du Tanganyika et de Zanzibar. Selon le journal tanzanien The Citizen, il vient d'un concours lancé par le journal The Standard, et la proposition retenue est celle d'un élève, Mohammed Iqbal Dar. Le nom Tanganyika est d'abord celui que les peuples des rives donnent au lac, selon Richard Burton ; un texte britannique de 1920 en fait le nom du territoire. Le nom Zanzibar désigne d'abord une côte chez les géographes arabes.",
   "nameHistory": {
     "summary": "Le nom Tanzanie désigne un pays d'Afrique de l'Est, la République-Unie de Tanzanie, qui s'appelle Tanzania en swahili et en anglais. Ce nom réunit en 1964 ceux de deux États, le Tanganyika et Zanzibar ; le pays continental s'est aussi appelé Afrique-Orientale allemande. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
     "names": [
@@ -629,80 +629,117 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Afrique orientale allemande (1885-1918)",
-        "Tanganyika (1919-1964)",
-        "Sultanat de Zanzibar (jusqu'en 1964)"
+        "Afrique-Orientale allemande (années 1880-1918)",
+        "Tanganyika (1920-1964)",
+        "Zanzibar (1890-1964)",
+        "République-Unie du Tanganyika et de Zanzibar (avril-octobre 1964)"
       ],
-      "antiquity": "Le territoire était peuplé de groupes bantous, nilotiques et couchitiques sans nom unifié. Les peuples autochtones (Sukuma, Chaga, Maasai, etc.) avaient leurs propres noms pour leurs territoires.",
-      "middleAges": "Développement des cités-États swahili sur la côte (Kilwa, Zanzibar, Pemba). Commerce avec les Arabes, les Indiens et les Perses.",
-      "precolonial": "Mosaïque de peuples bantous (Sukuma, Chaga, Nyamwezi, Haya), nilotiques (Maasai, Luo) et couchitiques. Cité-États swahili sur la côte. Sultanat de Zanzibar. Pas de nom unifié pour l'ensemble du territoire.",
-      "colonization": "1885-1918 : Afrique orientale allemande (Deutsch-Ostafrika), incluant le Tanganyika. 1919-1961 : Territoire sous mandat britannique (Tanganyika). 1890-1963 : Protectorat britannique de Zanzibar.",
-      "contemporary": "1961 : Indépendance du Tanganyika. 1963 : Indépendance de Zanzibar. 1964 : Unification sous le nom de \"République unie de Tanzanie\". Le nom officiel en swahili est \"Jamhuri ya Muungano wa Tanzania\"."
+      "antiquity": "Pour l'Antiquité, les historiens Fidel T. Masao et Henry W. Mutoro citent le Périple, un ancien récit de navigation qui ne nomme sur cette côte que deux établissements, Rhapta et Menouthias. Ce texte décrit des peuples où chaque localité obéit à son propre chef, sans dire quelle langue ils parlent.",
+      "middleAges": "Les géographes arabes appellent pays des Zandj, Bilād al-Zandj, la côte qui va du fleuve Webi Shebele jusqu'à la hauteur de Zanzibar, selon Fidel T. Masao et Henry W. Mutoro. Au Xe siècle, l'auteur arabe al-Masʿūdī décrit l'île de Ḳanbalū, sans doute Pemba. Entre le XIIe et le XVe siècle se forme sur la côte et dans les îles une population à laquelle le nom de swahili convient le mieux, selon l'historien Victor V. Matveiev.",
+      "precolonial": "À l'intérieur, chaque pays porte son propre nom. L'explorateur Richard Burton écrit en 1860 que les missionnaires Krapf et Rebmann traduisent le nom Unyamwezi par « possessions de la Lune » : u désigne le pays, nya veut dire « de » et mwezi « la lune ». Il ajoute qu'en kinyamwezi, sukuma veut dire « le nord » : l'Usukuma est la partie nord de ce pays, au sud du lac Victoria.",
+      "colonization": "Le nom Afrique-Orientale allemande désigne la colonie que l'Allemagne annexe dans les années 1880, selon l'historien Godfrey N. Uzoigwe. Après la première guerre mondiale, la plus grande partie de ce territoire prend le nom de Tanganyika : un texte britannique de 1920 le délimite, et il est placé sous mandat puis sous tutelle. Zanzibar est un protectorat britannique de 1890 à décembre 1963, selon l'historien Michael Twaddle. Julius Nyerere a dit que la colonisation avait donné une loi commune à ces peuples : « avant que nous ne soyons colonisés, cette “nation” n'existait pas ».",
+      "contemporary": "Le Tanganyika devient indépendant le 9 décembre 1961, et Zanzibar le 10 décembre 1963. Après la révolution du 12 janvier 1964 à Zanzibar, les deux États s'unissent en avril 1964 sous le nom de République-Unie du Tanganyika et de Zanzibar. Le nom Tanzanie le remplace le 29 octobre 1964, selon la loi britannique de 1969 qui en prend acte. En swahili, le nom officiel du pays est Jamhuri ya Muungano wa Tanzania, écrit la linguiste Malin Petzell."
     },
     "kingdoms": [
       {
-        "name": "Cités-États swahili",
-        "period": "VIIIe - XIXe siècles",
+        "name": "Cités-États swahilies",
+        "period": "IXe - XVIe siècle",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 701,
-          "endYear": 1900,
+          "startYear": 801,
+          "endYear": 1600,
           "precision": "century"
         },
         "dominantPeoples": ["Swahili"],
-        "politicalCenters": ["Kilwa", "Zanzibar", "Pemba", "Mombasa"],
-        "historicalRole": "Cités-États swahili puissantes sur la côte, commerce avec les Arabes, les Indiens et les Européens. Civilisation swahili ancienne."
+        "politicalCenters": ["Kilwa Kisiwani", "Zanzibar", "Pemba", "Mafia"],
+        "historicalRole": "Dès le IXe siècle, la plupart des agglomérations de la côte sont peuplées de Swahili, selon Fidel T. Masao et Henry W. Mutoro. Les cités vivent de l'agriculture, de la pêche en mer et du commerce, selon Victor V. Matveiev. Au XIIIe siècle, Kilwa l'emporte dans une lutte pour le commerce de la région ; elle frappe des pièces de bronze et d'argent, comme Zanzibar et Pemba. Ces cités bâtissent en pierre à partir du XIIe siècle. Au début du XVIe siècle, les Portugais détruisent leur commerce maritime et pillent plusieurs villes, dont Kilwa."
       },
       {
         "name": "Sultanat de Zanzibar",
-        "period": "XIXe - XXe siècles",
+        "period": "XIXe siècle - 1964",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1801,
-          "endYear": 2000,
-          "precision": "century"
+          "startYear": 1837,
+          "endYear": 1964,
+          "precision": "approximate",
+          "datingNote": "Le début est approché : selon Ahmed Idha Salim, Saïd ibn Sultan semblait déjà décidé à faire de Zanzibar sa capitale quand il prit Mombasa, en 1837, mais l'historien ne donne pas d'année pour ce transfert. La fin est la révolution du 12 janvier 1964."
         },
-        "dominantPeoples": ["Swahili", "Arabes"],
-        "politicalCenters": ["Zanzibar (capitale)"],
-        "historicalRole": "Sultanat puissant, commerce d'esclaves et d'épices. Influence sur la côte est-africaine."
+        "dominantPeoples": ["Arabes omanais", "Swahili"],
+        "politicalCenters": ["Zanzibar"],
+        "historicalRole": "Saïd ibn Sultan, souverain d'Oman, fait de Zanzibar sa capitale. L'île devient le plus grand marché de la côte pour l'ivoire, les esclaves et les clous de girofle, selon l'historien Ahmed Idha Salim. Saïd y développe la culture du giroflier dans des plantations où travaillent des esclaves ; vers 1850, Zanzibar domine presque tout le marché mondial du clou de girofle. L'île devient un protectorat britannique en 1890, selon Michael Twaddle. La révolution du 12 janvier 1964 renverse le sultan, selon Elliott Green."
       },
       {
-        "name": "Royaumes bantous",
-        "period": "Précolonial - présent",
+        "name": "Chefferies du ntemi",
+        "period": "XVIIe - XIXe siècle",
         "entryType": "polity",
-        "dominantPeoples": ["Sukuma", "Chaga", "Nyamwezi", "Haya"],
-        "politicalCenters": ["Régions centrales et occidentales"],
-        "historicalRole": "Royaumes et chefferies bantous, organisation politique traditionnelle, agriculture."
+        "timeRange": {
+          "startYear": 1600,
+          "endYear": 1900,
+          "precision": "approximate",
+          "datingNote": "Les dates sont approchées : selon W. R. Ochieng', ces chefferies se sont déjà multipliées dans toute la Tanzanie vers 1600 ; elles passent sous l'autorité coloniale avec la conquête allemande, à la fin du XIXe siècle."
+        },
+        "dominantPeoples": ["Nyamwezi"],
+        "politicalCenters": ["Unyamwezi"],
+        "historicalRole": "Vers 1600, la Tanzanie compte de nombreuses chefferies qui se ressemblent : chacune réunit quelques villages sous un chef choisi dans le lignage dirigeant, le ntemi ou mtemi, selon l'historien W. R. Ochieng'. Le ntemi préside les conseils et la cour de justice, garde des lances sacrées et entretient le feu royal. Chez les Nyamwezi, ces petites chefferies se multiplient, et le pays ne se rassemble qu'au XIXe siècle, avec le commerce et des chefs comme Mirambo."
+      },
+      {
+        "name": "Karagwe et États buhaya",
+        "period": "XVIIe - XIXe siècle",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1601,
+          "endYear": 1900,
+          "precision": "approximate",
+          "datingNote": "Les dates sont approchées : W. R. Ochieng' fait remonter ces États au début du XVIIe siècle, et la fin correspond à la conquête coloniale de la fin du XIXe siècle."
+        },
+        "dominantPeoples": ["Haya", "Ha"],
+        "politicalCenters": ["Karagwe", "Buhaya", "Buzinza"],
+        "historicalRole": "Dès le début du XVIIe siècle, la région des Grands Lacs compte les États les plus centralisés de la Tanzanie : le Karagwe, les États buhaya, le Buzinza et les États ha. Leur pouvoir repose sur le contrôle de la terre et des troupeaux, et le tribut y est plus lourd qu'ailleurs, selon l'historien W. R. Ochieng'."
+      },
+      {
+        "name": "Royaume hehe",
+        "period": "XIXe siècle - 1898",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1850,
+          "endYear": 1898,
+          "precision": "approximate",
+          "datingNote": "Le début est approché : Isaria N. Kimambo situe l'essor du royaume dans la seconde moitié du XIXe siècle, et les Hehe dominent les hautes terres du sud à partir de 1875. La fin est la mort de Mkwawa, quatre ans après la prise de sa capitale en 1894, selon Henry A. Mwanzi."
+        },
+        "dominantPeoples": ["Hehe"],
+        "politicalCenters": ["Hautes terres du sud de la Tanzanie"],
+        "historicalRole": "À partir de 1875, les Hehe prennent aux Sango la plus grande partie des hautes terres du sud, sous leur chef Mwinyigumba, puis sous son fils Mkwawa, selon l'historien Isaria N. Kimambo. Ce sont eux qui opposent aux Allemands la résistance armée la plus dure : en 1891, ils tuent près de 290 hommes des troupes allemandes. En 1894, les Allemands prennent leur capitale ; Mkwawa s'enfuit et se donne la mort quatre ans plus tard pour ne pas être capturé, selon l'historien Henry A. Mwanzi."
       },
       {
         "name": "Afrique orientale allemande",
-        "period": "1885 - 1918",
+        "period": "Années 1880 - 1918",
         "entryType": "colonial",
         "timeRange": {
           "startYear": 1885,
           "endYear": 1918,
-          "precision": "year"
+          "precision": "approximate",
+          "datingNote": "Le début est approché : l'Allemagne annexe ses territoires d'Afrique à partir de 1883, et un traité anglo-allemand fixe en 1885 les zones d'influence des deux pays, selon Godfrey N. Uzoigwe. La fin correspond à la défaite allemande de la première guerre mondiale."
         },
         "dominantPeoples": [
           "Tous les peuples tanzaniens sous administration coloniale allemande"
         ],
-        "politicalCenters": ["Dar es Salaam (capitale coloniale)"],
-        "historicalRole": "Colonie allemande, résistance tanzanienne (guerre Maji Maji, 1905-1907)."
+        "politicalCenters": ["Dar es Salaam"],
+        "historicalRole": "L'Allemagne annexe ce territoire dans les années 1880, selon Godfrey N. Uzoigwe. La conquête rencontre des résistances : sur la côte autour d'Abushiri en 1888 et 1889, puis chez les Hehe et les Makonde, selon Henry A. Mwanzi. De juillet 1905 à août 1907, le soulèvement maji maji réunit plus de vingt groupes ethniques contre le travail forcé dans les champs de coton. Kinjikitile Ngwale, qui le lance, prépare une eau médicinale censée rendre invulnérables aux balles ceux qui la boivent. Pendant la première guerre mondiale, Britanniques et Allemands se battent dans la colonie, selon Michael Crowder."
       },
       {
         "name": "Tanganyika",
-        "period": "1919 - 1961",
+        "period": "1920 - 1961",
         "entryType": "colonial",
         "timeRange": {
-          "startYear": 1919,
+          "startYear": 1920,
           "endYear": 1961,
           "precision": "year"
         },
         "dominantPeoples": [
           "Tous les peuples tanzaniens sous mandat britannique"
         ],
-        "politicalCenters": ["Dar es Salaam (capitale)"],
-        "historicalRole": "Mandat britannique puis tutelle de l'ONU. Mouvements nationalistes."
+        "politicalCenters": ["Dar es Salaam"],
+        "historicalRole": "Après la première guerre mondiale, la Société des Nations confie à la Grande-Bretagne les anciennes colonies allemandes de la région, dont le Tanganyika ; il devient ensuite un territoire sous tutelle des Nations unies. La Tanganyika African National Union (TANU) naît le 7 juillet 1954, et Julius Nyerere en est le vrai fondateur, selon Michael Twaddle. En septembre 1960, elle gagne 70 sièges sur 71 au Conseil législatif ; Nyerere devient Premier ministre, et le pays obtient son indépendance en décembre 1961."
       },
       {
         "name": "République unie de Tanzanie",
@@ -714,108 +751,119 @@
           "precision": "year"
         },
         "dominantPeoples": ["Tous les peuples tanzaniens"],
-        "politicalCenters": [
-          "Dodoma (capitale depuis 1996)",
-          "Dar es Salaam (ancienne capitale)"
-        ],
-        "historicalRole": "Unification du Tanganyika et de Zanzibar en 1964. Histoire politique stable avec parti unique puis multipartisme. Développement économique, hub est-africain."
+        "politicalCenters": ["Dodoma (capitale officielle)", "Dar es Salaam"],
+        "historicalRole": "Le Tanganyika et Zanzibar s'unissent en avril 1964, après la révolution de Zanzibar, selon Michael Twaddle. En 1967, la déclaration d'Arusha de Julius Nyerere fait de l'ujamaa, « l'esprit de famille » en swahili, la base d'un socialisme africain, selon Elliott Green. Nyerere décide en 1973 de déplacer la capitale de Dar es Salaam à Dodoma, au centre du pays. En 2012, Malin Petzell écrit que Dodoma est la capitale officielle, mais que Dar es Salaam reste le siège de la plupart des institutions et la plus grande ville."
       }
     ],
     "majorPeoples": [
       {
         "name": "Sukuma",
-        "selfAppellation": "Sukuma",
-        "exonyms": ["Sukuma (terme utilisé par les Européens)"],
+        "selfAppellation": "Banasukuma",
+        "exonyms": [],
         "peopleId": "PPL_SUKUMA",
-        "mainRegion": "Nord-Ouest (région du lac Victoria)",
-        "languages": ["Sukuma", "swahili", "anglais"],
-        "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Sukuma\" est neutre et accepté."
+        "mainRegion": "Usukuma, au sud du lac Victoria",
+        "languages": ["sukuma (suk)", "swahili (swh)"],
+        "languageFamily": "FLG_BANTU",
+        "appellationRemarks": "Le nom Sukuma voudrait dire « le nord » en kinyamwezi, selon l'explorateur Richard Burton, qui écrit en 1860 Wasukuma pour les gens du nord du pays nyamwezi. Le sukuma est la langue qui compte le plus de locuteurs de naissance en Tanzanie, environ cinq millions, selon l'atlas des langues préparé à l'université de Dar es Salaam."
       },
       {
         "name": "Swahili (Tanzanie)",
-        "selfAppellation": "Swahili",
-        "exonyms": ["Swahili (terme utilisé par les Européens)"],
+        "selfAppellation": "Waswahili",
+        "exonyms": [],
         "peopleId": "PPL_SWAHILI",
-        "mainRegion": "Côte (Zanzibar, Pemba, Dar es Salaam)",
-        "languages": ["Swahili", "arabe", "anglais"],
-        "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Swahili\" est neutre et accepté."
+        "mainRegion": "Côte et îles de Zanzibar et de Pemba",
+        "languages": ["swahili (swh)"],
+        "languageFamily": "FLG_BANTU",
+        "appellationRemarks": "Le nom Swahili viendrait du pluriel du mot arabe qui veut dire « côte », sawahil, selon la linguiste Malin Petzell. En swahili, la langue s'appelle kiswahili. Elle est la langue maternelle d'environ un Tanzanien sur dix, selon l'estimation que Petzell reprend au chercheur Casmir Rubagumya."
       },
       {
         "name": "Chaga",
-        "selfAppellation": "Chaga",
-        "exonyms": [
-          "Chaga (terme utilisé par les Européens)",
-          "Chagga (variante)"
-        ],
+        "selfAppellation": "Wachagga",
+        "exonyms": [],
         "peopleId": "PPL_CHAGA",
-        "mainRegion": "Nord (mont Kilimandjaro)",
-        "languages": ["Chaga", "swahili", "anglais"],
+        "mainRegion": "Pentes du Kilimandjaro",
+        "languages": [
+          "mashami",
+          "mochi",
+          "vunjo",
+          "woso",
+          "rombo",
+          "uru",
+          "swahili (swh)"
+        ],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Chaga\" est neutre et accepté."
+        "appellationRemarks": "Au pied du Kilimandjaro, les chercheurs de l'université de Dar es Salaam distinguent six langues chagga : le mashami, le mochi, le vunjo, le woso, le rombo et l'uru. Ils y voient l'un des meilleurs exemples d'une même identité qui ne correspond pas à une seule langue. Après le swahili, le chagga est la langue la plus répandue dans le pays : on la trouve dans 63 districts."
       },
       {
         "name": "Haya",
-        "selfAppellation": "Haya",
-        "exonyms": ["Haya (terme utilisé par les Européens)"],
+        "selfAppellation": "Bahaya",
+        "exonyms": [],
         "peopleId": "PPL_HAYA",
-        "mainRegion": "Nord-Ouest (région du lac Victoria)",
-        "languages": ["Haya", "swahili", "anglais"],
+        "mainRegion": "Région des Grands Lacs",
+        "languages": ["haya", "swahili (swh)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Haya\" est neutre et accepté."
+        "appellationRemarks": "Le ziba est un dialecte du haya, et non une langue à part, selon les linguistes Henry Muzale et Josephat Rugemalira. Les États buhaya comptent, dès le début du XVIIe siècle, parmi les États les plus centralisés de la Tanzanie, selon l'historien W. R. Ochieng'."
       },
       {
         "name": "Nyamwezi",
-        "selfAppellation": "Nyamwezi",
-        "exonyms": [
-          "Nyamwezi (terme utilisé par les Européens",
-          "signifiant \"peuple de la lune\")"
-        ],
+        "selfAppellation": "Wanyamwezi",
+        "exonyms": ["Mwezi"],
         "peopleId": "PPL_NYAMWEZI",
-        "mainRegion": "Centre-Ouest",
-        "languages": ["Nyamwezi", "swahili", "anglais"],
+        "mainRegion": "Unyamwezi, dans l'ouest de la Tanzanie",
+        "languages": ["nyamwezi", "swahili (swh)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Nyamwezi\" est neutre et accepté."
+        "appellationRemarks": "Le nom Wanyamwezi est la forme juste au pluriel, et Mnyamwezi au singulier, selon l'explorateur Richard Burton. Les Arabes et les habitants de Zanzibar disent plus vite Mwezi pour le pays et ses habitants. Le nom du pays, Unyamwezi, est traduit « possessions de la Lune » par les missionnaires Krapf et Rebmann."
       },
       {
         "name": "Maasai",
         "selfAppellation": "Maasai",
-        "exonyms": [
-          "Maasai (terme utilisé par les Européens)",
-          "Masai (variante)"
-        ],
+        "exonyms": [],
         "peopleId": "PPL_MAASAI",
-        "mainRegion": "Nord (région d'Arusha)",
-        "languages": ["Maasai", "swahili", "anglais"],
+        "mainRegion": "Vallée du Rift, du centre de la Tanzanie au centre du Kenya",
+        "languages": ["maasai", "swahili (swh)"],
         "languageFamily": "FLG_NILOTIQUE",
-        "appellationRemarks": "Le terme \"Maasai\" est neutre et accepté."
+        "appellationRemarks": "L'Histoire générale de l'Afrique écrit ce nom Masaï ou Masai. Le maasai est une langue nilotique, de la famille nilo-saharienne, selon Henry Muzale et Josephat Rugemalira. Au milieu du XIXe siècle, les Maasai éleveurs occupent les pâturages de la vallée du Rift, selon l'historien Isaria N. Kimambo."
       },
       {
         "name": "Hehe",
-        "selfAppellation": "Hehe",
-        "exonyms": ["Hehe (terme utilisé par les Européens)"],
+        "selfAppellation": "Wahehe",
+        "exonyms": [],
         "peopleId": "PPL_HEHE",
-        "mainRegion": "Centre-Sud (Iringa)",
-        "languages": ["Hehe", "swahili", "anglais"],
+        "mainRegion": "Hautes terres du sud",
+        "languages": ["hehe", "swahili (swh)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Hehe\" est neutre et accepté."
+        "appellationRemarks": "Le dzungwa est un dialecte du hehe, selon Henry Muzale et Josephat Rugemalira. Sous leur chef Mkwawa, les Hehe opposent aux Allemands la résistance armée la plus dure de la Tanzanie, selon l'historien Isaria N. Kimambo."
       }
     ],
     "culture": {
-      "culturalTraditions": "Musique traditionnelle (taarab, ngoma), danse traditionnelle, poésie orale, artisanat (vannerie, poterie, bijoux), architecture traditionnelle, élevage pastoral (Maasai)",
-      "dominantReligions": "Christianisme (catholique majoritaire, protestant), islam (minorité, surtout sur la côte et à Zanzibar), croyances traditionnelles (syncrétisme)",
-      "lifestyles": "Vie principalement rurale, agriculture (café, thé, coton, manioc, maïs), élevage (bovins, caprins), pêche (lacs et côtes), tourisme, commerce, urbanisation croissante",
-      "socialOrganization": "Système de chefferies traditionnelles, structure clanique (patrilinéaire ou matrilinéaire selon les groupes), organisation en familles étendues et lignages, groupes d'âge (Maasai), importance des ancêtres",
-      "regionalRelations": "Relations historiques avec les peuples du Kenya, de l'Ouganda, du Rwanda, du Burundi, de la RDC, du Mozambique. Diaspora importante au Royaume-Uni, aux États-Unis, et dans les pays occidentaux."
+      "mainLanguages": [
+        {
+          "name": "Swahili",
+          "isoCode": "swh",
+          "isPrimary": true
+        },
+        {
+          "name": "Anglais",
+          "isoCode": "eng"
+        },
+        {
+          "name": "Sukuma",
+          "isoCode": "suk"
+        }
+      ],
+      "culturalTraditions": "Le swahili s'écrit depuis longtemps : les Swahili ont eux-mêmes créé une écriture fondée sur l'alphabet arabe, entre le Xe et le XIIIe siècle selon le chercheur V. M. Misjugin, que cite Victor V. Matveiev. Sur la côte, on bâtit en pierre dès le XIIe siècle, à Kilwa et à Zanzibar ; une inscription de la mosquée de Kizimkazi, à Zanzibar, porte la date de 1107. Julius Nyerere a lui-même traduit en swahili la pièce Jules César de Shakespeare, rappelle Malin Petzell.",
+      "dominantReligions": "L'islam s'implante d'abord dans les îles de la côte, avant de gagner le continent, selon Fidel T. Masao et Henry W. Mutoro ; dans les cités swahilies, les riches marchands sont les premiers à l'adopter, selon Victor V. Matveiev. Le christianisme arrive avec les missions du XIXe siècle : le missionnaire Johann Ludwig Krapf débarque à Mombasa en 1844, puis visite le royaume shambaa de Kimweri, et les missions s'installent d'abord sur la côte, selon Isaria N. Kimambo. La Constitution définit la République-Unie comme un État laïque et garantit la liberté de religion.",
+      "lifestyles": "Au recensement de 2022, la Tanzanie compte 61 741 120 habitants : 65 % vivent à la campagne et 35 % en ville. Parmi les personnes qui travaillent, 43 % le font dans l'agriculture ou la pêche, la plus grande part. Au XVIe siècle déjà, l'agriculture et l'élevage sont les deux grandes activités de l'intérieur, selon l'historien W. R. Ochieng', tandis que la côte vit aussi de la pêche et du commerce maritime.",
+      "socialOrganization": "Au début du XVIIIe siècle, l'intérieur connaît deux formes de sociétés, selon W. R. Ochieng'. Certaines, comme celles des Maasai, forment des communautés dispersées de familles et de clans patrilinéaires, sans pouvoir central, mais avec des conseils de famille, de village et d'anciens. D'autres sont des chefferies dirigées par un ntemi, choisi dans le lignage dirigeant. Après l'indépendance, Julius Nyerere supprime les chefferies traditionnelles, interdit de mentionner les groupes ethniques dans les journaux et cesse de les compter au recensement, selon le chercheur Elliott Green.",
+      "regionalRelations": "Le swahili relie la Tanzanie à ses voisins : il est aussi une langue maternelle au Kenya, et une langue commune au Burundi, au Rwanda, en Ouganda et en République démocratique du Congo, selon Malin Petzell. Ces liens sont anciens. En 1831, Lief bin Saʿīd, à moitié arabe et à moitié nyamwezi, gagne le lac Tanganyika, et vers 1845 des marchands de la côte atteignent le Buganda, selon Ahmed Idha Salim. En 1876 et en 1881, Mirambo envoie des ambassadeurs auprès de Mutesa, souverain du Buganda, selon Isaria N. Kimambo."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement du territoire par des groupes bantous, nilotiques et couchitiques. Développement de royaumes et chefferies indépendants.",
-      "middleAges": "Développement des cités-États swahili sur la côte (VIIIe-XIXe siècles). Commerce avec les Arabes, les Indiens et les Perses. Civilisation swahili ancienne.",
-      "precolonial": "Sultanat de Zanzibar (XIXe siècle) : commerce d'esclaves et d'épices. Royaumes bantous de l'intérieur. Pas d'unification politique.",
-      "colonization": "1885 : Afrique orientale allemande. Résistance tanzanienne (guerre Maji Maji, 1905-1907). 1919 : Mandat britannique (Tanganyika). 1890 : Protectorat britannique de Zanzibar.",
-      "independenceStruggle": "Mouvements nationalistes dans les années 1950. Indépendance du Tanganyika en 1961. Indépendance de Zanzibar en 1963. Julius Nyerere devient premier président. Sous sa direction, le swahili est déclaré langue nationale ; la Tanzanie est le premier pays d'Afrique à faire d'une langue africaine sa langue nationale, selon Malin Petzell (2012).",
-      "postIndependence": "1964 : Unification du Tanganyika et de Zanzibar. Première République (1964-1992) : parti unique, socialisme africain (Ujamaa). Deuxième République depuis 1992 : multipartisme, développement économique, stabilité politique, hub est-africain."
+      "ancientPeriods": "Les historiens Fidel T. Masao et Henry W. Mutoro pensent que la côte comptait d'abord de petits villages de boue et d'argile, devenus plus tard de grandes villes comme Kilwa. Dès le IXe siècle, la plupart des agglomérations de la côte sont peuplées de Swahili. À l'intérieur, des communautés de langues couchitiques, nilotiques et bantoues occupent le pays vers 1800, selon W. R. Ochieng'.",
+      "middleAges": "Entre 800 et 1300, des cités comme Zanzibar, Pemba et Kilwa se développent et favorisent l'essor du kiswahili, une langue bantoue proche du pokomo et du mijikenda, selon Fidel T. Masao et Henry W. Mutoro. Du XIIe au XVe siècle, la civilisation swahili connaît son apogée, selon Victor V. Matveiev : Kilwa l'emporte au XIIIe siècle dans une lutte pour le commerce de la région, et le commerce de la côte atteint son plus haut niveau au XIVe siècle. Au début du XVIe siècle, les Portugais détruisent ce commerce maritime.",
+      "precolonial": "Vers 1600, l'intérieur compte de nombreuses chefferies dirigées par un ntemi, et des États plus centralisés dans la région des Grands Lacs, comme le Karagwe et les États buhaya, selon W. R. Ochieng'. Au XIXe siècle, Saïd ibn Sultan fait de Zanzibar sa capitale et le plus grand marché de la côte pour l'ivoire et les esclaves, selon Ahmed Idha Salim. Des caravanes partent de la côte vers l'intérieur : la première caravane non africaine atteint l'Unyamwezi en 1824. Dans les années 1870, Mirambo se taille un vaste État et contrôle la route de Tabora à Ujiji, tandis que les Hehe dominent les hautes terres du sud, selon Isaria N. Kimambo.",
+      "colonization": "L'Allemagne annexe l'Afrique-Orientale allemande dans les années 1880, selon Godfrey N. Uzoigwe. Sur la côte, la résistance s'organise autour d'Abushiri en 1888 et 1889 ; les Hehe de Mkwawa tuent près de 290 hommes des troupes allemandes en 1891, et les Makonde repoussent l'invasion jusqu'en 1899, selon Henry A. Mwanzi. De juillet 1905 à août 1907, le soulèvement maji maji, lancé par Kinjikitile Ngwale, réunit plus de vingt groupes ethniques contre le travail forcé dans les champs de coton ; les autorités allemandes l'écrasent. Après la première guerre mondiale, le Tanganyika passe sous mandat britannique. Zanzibar est un protectorat britannique depuis 1890.",
+      "independenceStruggle": "La Tanganyika African National Union (TANU) naît le 7 juillet 1954 ; son vrai fondateur est un enseignant, Julius Nyerere, selon Michael Twaddle. Elle emploie le swahili pour rassembler la population, car presque tout le monde le comprend déjà, selon Malin Petzell. En septembre 1960, la TANU gagne 70 sièges sur 71 au Conseil législatif, et Nyerere devient Premier ministre, puis le premier président du pays. Le Tanganyika est indépendant en décembre 1961, et Zanzibar le 10 décembre 1963. Sous sa direction, le swahili est déclaré langue nationale ; la Tanzanie est le premier pays d'Afrique à faire d'une langue africaine sa langue nationale, selon Malin Petzell (2012).",
+      "postIndependence": "Le 12 janvier 1964, une révolution renverse le sultan de Zanzibar. En avril 1964, Abeid Karume négocie l'union de Zanzibar avec le Tanganyika, d'où naît la République-Unie, selon Michael Twaddle. Le Tanganyika est un État à parti unique depuis 1963. En 1967, la déclaration d'Arusha fait de l'ujamaa, « l'esprit de famille » en swahili, la base d'un socialisme africain, avec des nationalisations et des villages collectifs, selon Elliott Green. Au début des années 1980, la crise économique pousse Nyerere à abandonner cette politique, et Green date de 1995 le retour à un régime à plusieurs partis. La Constitution en vigueur définit la République-Unie comme un État démocratique, laïque et socialiste, attaché au multipartisme."
     },
     "sources": [
       {
@@ -823,7 +871,7 @@
         "url": "https://publicera.kb.se/mosp/article/view/8233",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Swahili déclaré langue nationale sous Nyerere ; la Tanzanie, premier pays d'Afrique à faire d'une langue africaine sa langue nationale : section 2, p. 137. L'article date la déclaration de 1964, d'autres travaux de 1962 ou 1967 : la fiche ne fixe pas d'année."
+        "notes": "Swahili déclaré langue nationale sous Nyerere ; la Tanzanie, premier pays d'Afrique à faire d'une langue africaine sa langue nationale : section 2, p. 137. L'article date la déclaration de 1964, d'autres travaux de 1962 ou 1967 : la fiche ne fixe pas d'année. Le même article, publié dans la revue Moderna Språk de l'université de Göteborg, donne le nom officiel Jamhuri ya Muungano wa Tanzania et dit que Dodoma est la capitale officielle et Dar es Salaam le siège de la plupart des institutions (p. 136). Il compte de 128 à 164 langues selon les inventaires, explique que le swahili sert de langue commune au Burundi, au Rwanda, en Ouganda et en République démocratique du Congo, et qu'il est la langue maternelle d'environ 10 % des Tanzaniens selon Rubagumya (p. 136-137). Il rattache le nom Swahili au pluriel arabe sawahil, « côte », rapporte que la TANU, fondée en 1954, employait le swahili pour mobiliser la population, et que Nyerere a traduit Jules César en swahili (p. 137-138)."
       },
       {
         "title": "CIA World Factbook – Tanzania",
@@ -876,33 +924,122 @@
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "The 2022 Population and Housing Census: Tanzania Basic Demographic and Socio-Economic Profile Report",
+        "url": "https://www.nbs.go.tz/uploads/statistics/documents/en-1738321655-01.%20URT_Demographic%20and%20Socioeconomic%20Profile.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport du Bureau national de la statistique de Tanzanie et du statisticien en chef de Zanzibar, publié en avril 2024. Le recensement du 22 au 23 août 2022 compte 61 741 120 habitants, dont 65 % à la campagne et 35 % en ville (résumé, p. vi, et résultats en bref, p. x). Parmi les actifs, 43,2 % travaillent dans l'agriculture et la pêche (tableau des indicateurs, p. xii). C'est le sixième recensement depuis l'union de 1964, après ceux de 1967, 1978, 1988, 2002 et 2012 (p. 1). La liste des thèmes du recensement, dans les remerciements (p. v), ne comprend ni l'appartenance ethnique ni la religion."
+      },
+      {
+        "title": "Elliott Green, « The Political Economy of Nation Formation in Modern Tanzania: Explaining Stability in the Face of Diversity », Commonwealth and Comparative Politics 49 (2), 2011, p. 223-244",
+        "url": "https://personal.lse.ac.uk/greened/Tanzania%20CCP.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'un chercheur de la London School of Economics, lu dans la version de l'auteur. La section 2.2 date de 1963 le parti unique, de 1967 la déclaration d'Arusha et l'ujamaa, et de 1995 le retour à plusieurs partis ; elle dit que Nyerere a abandonné sa politique socialiste au début des années 1980. La section 4.1 dit que le recensement de 1967 est le dernier à demander leur appartenance ethnique aux Tanzaniens, et qu'il compte 125 groupes de plus de 1 000 membres. La section 4.3 dit que Nyerere a supprimé les chefferies, interdit de mentionner les groupes ethniques dans les journaux, cessé de les compter au recensement et décidé en 1973 de déplacer la capitale à Dodoma. La section 4.4 rapporte le renversement du sultan de Zanzibar lors de la révolution de janvier 1964."
+      },
+      {
+        "title": "Henry R. T. Muzale et Josephat M. Rugemalira, « Researching and Documenting the Languages of Tanzania », Language Documentation & Conservation 2 (1), 2008, p. 68-108",
+        "url": "https://hdl.handle.net/10125/1802",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de deux linguistes de l'université de Dar es Salaam qui présente les premiers résultats de l'atlas des langues de Tanzanie. Les quatre grandes familles de langues d'Afrique y sont représentées : bantoue avec le kiswahili et le sukuma, couchitique avec l'iraqw, nilotique avec le maasai et le luo, khoisan avec le sandawe et le hadza (p. 74). L'atlas compte 156 langues ; le sukuma, avec environ 5 millions de locuteurs, en a le plus, devant le kiswahili et le ha (p. 80). Le ziba est un dialecte du haya et le dzungwa un dialecte du hehe (p. 80-81). Au pied du Kilimandjaro, six langues chagga se distinguent : mashami, mochi, vunjo, woso, rombo et uru ; le chagga est présent dans 63 districts (p. 83)."
+      },
+      {
+        "title": "Constitution of the United Republic of Tanzania, 1977 (révisée en 2005) — Constitute Project",
+        "url": "https://www.constituteproject.org/constitution/Tanzania_2005",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte anglais de la Constitution de 1977, dans sa version révisée en 2005, publié par le Constitute Project. L'article 1 dit que la Tanzanie est un seul État, une République unie et souveraine. L'article 3 la définit comme un État démocratique, laïque et socialiste, attaché au multipartisme. L'article 19 garantit la liberté de religion. L'article 67 demande aux députés de savoir lire et écrire le kiswahili ou l'anglais."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, III, ch. 21 : La côte d'Afrique orientale et les Comores",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de Fidel T. Masao et Henry W. Mutoro, publié par l'UNESCO. Les géographes arabes appellent pays des Zandj la côte qui va du Webi Shebele à la hauteur de Zanzibar (p. 640). Le Périple ne nomme sur cette côte que Rhapta et Menouthias, et dès le IXe siècle la plupart des agglomérations sont peuplées de Swahili (p. 642). Entre 800 et 1300, des cités comme Zanzibar, Pemba et Kilwa favorisent l'essor du kiswahili, langue bantoue proche du pokomo et du mijikenda (p. 644). L'islam s'implante dans les îles avant le continent (p. 646)."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, IV, ch. 18 : L'essor de la civilisation swahili",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de Victor V. Matveiev, publié par l'UNESCO. La communauté swahili se forme du XIIe au XVe siècle (p. 491) et vit de l'agriculture, de la pêche en mer et du commerce ; al-Masʿūdī est un auteur du Xe siècle (p. 492). Kilwa l'emporte au XIIIe siècle et le commerce culmine au XIVe siècle (p. 499) ; des pièces sont frappées à Kilwa et trouvées à Zanzibar et à Pemba (p. 503). Les marchands adoptent l'islam les premiers ; l'écriture du swahili en caractères arabes, la construction en pierre dès le XIIe siècle et l'inscription de Kizimkazi datée de 1107 sont décrites p. 507. Les Portugais ruinent ce commerce au début du XVIe siècle (p. 491, 517-518)."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 27 : L'intérieur de l'Afrique de l'Est : les peuples du Kenya et de la Tanzanie (1500-1800)",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de W. R. Ochieng', publié par l'UNESCO. L'agriculture et l'élevage sont les deux grandes activités de l'intérieur au début du XVIe siècle (p. 901). Au début du XVIIIe siècle, des sociétés comme celles des Masaï sont faites de familles et de clans patrilinéaires sans pouvoir central (p. 913). Le Karagwe, les États buhaya, le Buzinza et les États ha sont les plus centralisés dès le début du XVIIe siècle ; vers 1600, les chefferies dirigées par un ntemi se sont multipliées (p. 914-915). Vers 1800, le pays compte des communautés de langues couchitiques, nilotiques et bantoues (p. 919)."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VI, ch. 9 : La côte et l'hinterland de l'Afrique orientale de 1800 à 1845",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre d'Ahmed Idha Salim, publié par l'UNESCO. Saïd ibn Sultan semblait décidé à faire de Zanzibar sa capitale quand il prit Mombasa en 1837, et l'île devint le plus grand marché de la côte pour l'ivoire, les esclaves et les clous de girofle (p. 254-255). La première caravane non africaine atteint l'Unyamwezi en 1824, Lief bin Saʿīd le lac Tanganyika en 1831, et des négociants de la côte le Buganda vers 1845 (p. 257). Saïd développe le giroflier avec une main-d'œuvre servile, et Zanzibar domine le marché mondial du clou de girofle vers 1850 (p. 264)."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VI, ch. 10 : La côte et l'hinterland de l'Afrique orientale de 1845 à 1880",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre d'Isaria N. Kimambo, publié par l'UNESCO. Il décrit le royaume shambaa de Kimweri (p. 283), l'État de Mirambo, qui contrôle la route de Tabora à Ujiji et envoie en 1876 et 1881 des ambassadeurs à Mutesa du Buganda (p. 286), l'essor des Hehe de Mwinyigumba et de Mkwawa à partir de 1875 et les Masaï de la vallée du Rift (p. 294). Le missionnaire Krapf arrive à Mombasa en 1844 et visite le royaume shambaa ; les missions s'implantent d'abord sur la côte (p. 301-302)."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VII, ch. 2 : Partage européen et conquête de l'Afrique : aperçu général",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de Godfrey N. Uzoigwe, publié par l'UNESCO. L'Allemagne annexe à partir de 1883 plusieurs territoires, dont l'Afrique-Orientale allemande, et le traité anglo-allemand de 1885 définit les zones d'intervention des deux pays."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VII, ch. 7 : Initiatives et résistances africaines en Afrique orientale de 1880 à 1914",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre d'Henry A. Mwanzi, publié par l'UNESCO. Les Makonde repoussent l'invasion allemande jusqu'en 1899 ; les Hehe de Mkwawa tuent près de 290 hommes en 1891, les Allemands prennent leur capitale en 1894 et Mkwawa se donne la mort quatre ans plus tard (p. 179). Abushiri dirige la résistance de la côte en 1888 et 1889 (p. 180-181). Le soulèvement maji maji, de juillet 1905 à août 1907, lancé par Kinjikitile Ngwale, réunit plus de vingt groupes ethniques contre la culture forcée du coton (p. 189-190)."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VII, ch. 12 : La première guerre mondiale et ses conséquences",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de Michael Crowder, publié par l'UNESCO. Il décrit la campagne de la première guerre mondiale en Afrique-Orientale allemande, l'actuelle Tanzanie, et le bombardement de Dar es Salaam et de Tanga par les Britanniques en 1914."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VIII, ch. 4 : L'Afrique sous domination britannique et belge",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de Michael Crowder, publié par l'UNESCO. Il explique que les anciennes colonies allemandes, dont le Tanganyika, ont été placées par la Société des Nations sous mandat britannique ou belge après la première guerre mondiale (p. 104)."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VIII, ch. 9 : L'Afrique orientale",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de Michael Twaddle, publié par l'UNESCO. La TANU naît le 7 juillet 1954, et Julius Nyerere, un enseignant, en est le vrai fondateur (p. 255). En septembre 1960, elle gagne 70 sièges sur 71, Nyerere devient Premier ministre et le pays est indépendant en décembre 1961 ; le Tanganyika est alors sous tutelle des Nations unies (p. 256-257). Zanzibar est un protectorat britannique de 1890 à décembre 1963, devient indépendant le 10 décembre 1963 et connaît une révolution le 12 janvier 1964 (p. 266-267). Abeid Karume négocie l'union d'avril 1964 ; la page cite Nyerere sur la « nation » qui n'existait pas avant la colonisation (p. 268)."
+      },
+      {
+        "title": "The Lake Regions of Central Africa: A Picture of Exploration, volume II",
+        "url": "https://archive.org/details/lakeregionsofcen21860burt",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Récit de l'explorateur britannique Richard F. Burton, publié à Londres en 1860, lu dans la copie numérisée d'Internet Archive. Burton rapporte que Krapf et Rebmann traduisent Unyamwezi par « possessions de la Lune », donne les formes Mnyamwezi et Wanyamwezi, et note que les Arabes et les gens de Zanzibar disent Mwezi (p. 3-4). Il écrit qu'en kinyamwezi sukuma veut dire « le nord » et appelle Wasukuma les gens du nord (p. 5-6), et place l'Usukuma au sud du lac Victoria (p. 212-213). Ce récit est celui d'un explorateur de l'époque coloniale."
       }
     ],
     "demographics": {
       "totalPopulation": 70600000,
       "referenceYear": 2025,
       "source": "UNFPA – World Population Dashboard",
-      "peoples": [
-        {
-          "name": "Sukuma",
-          "peopleId": "PPL_SUKUMA",
-          "region": "Nord-Ouest (région du lac Victoria)",
-          "languageFamily": "FLG_NIGERCONGO",
-          "percentageInCountry": 16
-        },
-        {
-          "name": "Swahili (Tanzanie)",
-          "peopleId": "PPL_SWAHILI",
-          "percentageInCountry": 5
-        },
-        {
-          "name": "Autres groupes ethniques",
-          "peopleId": null,
-          "region": "Divers",
-          "languageFamily": null,
-          "percentageInCountry": 79
-        }
-      ]
+      "peoples": []
+    },
+    "searchAnswer": {
+      "lead": "La Tanzanie est un pays d'Afrique de l'Est, né en 1964 de l'union du Tanganyika et de Zanzibar ; son nom réunit le début de ces deux noms.",
+      "followUp": "D'où viennent les noms Tanganyika et Zanzibar ?"
     }
   }
 }

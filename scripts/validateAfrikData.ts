@@ -4871,7 +4871,9 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // Burundi and the Republic of the Congo from an official toponymic factfile.
   // 9 -> 8 on 2026-10-26: `culture.mainLanguages` added on the DR Congo, its
   // four constitutional national languages beside French.
-  pays: 8,
+  // 8 -> 6 on 2026-11-03: `culture.mainLanguages` added on South Africa and
+  // Tanzania, each language read in the census or the constitution.
+  pays: 6,
 };
 
 // Authoring blocks no model declares: `_meta` is curator metadata, exempt
@@ -5391,7 +5393,9 @@ export function checkCountryFamilyReferences(
 // Ghana; the fiche was folded into PPL_GOURMANTCHE, which counts Ghana.
 // 7 -> 6 on 2026-10-11: COG listed PPL_SANGO, whose currentCountries omitted
 // Congo; the fiche was folded into PPL_SANGO_SCT, which counts it.
-export const COUNTRY_PEOPLE_MEMBERSHIP_CEILING = 6;
+// 6 -> 5 on 2026-11-03: ZAF listed PPL_NDEBELE, the Ndebele of Zimbabwe;
+// it now lists PPL_NDEBELE_SA, the South African Ndebele, which counts ZAF.
+export const COUNTRY_PEOPLE_MEMBERSHIP_CEILING = 5;
 
 export function checkCountryPeopleMembership(
   datasetRoot: string,
