@@ -364,6 +364,16 @@
         "languages": ["Kota ou ikota (koq)", "français"],
         "languageFamily": "FLG_BANTU",
         "appellationRemarks": "Kota désigne un ensemble de peuples ; l'un d'eux se nomme lui-même Bakota. Sa langue, le kota, s'écrit aussi ikota ; elle est parlée au Gabon et en République du Congo."
+      },
+      {
+        "name": "Autres peuples bantous",
+        "selfAppellation": null,
+        "exonyms": [],
+        "peopleId": null,
+        "mainRegion": null,
+        "languages": [],
+        "languageFamily": "FLG_BANTU",
+        "appellationRemarks": "D'autres peuples de langue bantoue vivent au Gabon, comme les Shira, les Vili, les Duma, les Kele, les Okande et les Tsogho. L'estimation de 2021 citée plus bas les compte avec leurs voisins, et chacun a son propre nom."
       }
     ],
     "culture": {

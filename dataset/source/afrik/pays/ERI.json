@@ -770,74 +770,74 @@
         "notes": "Traduction anglaise publiée à Londres en 1912, reprise par les Internet History Sourcebooks de l'université Fordham. § 4 : Adulis, « a fair-sized village », d'où il faut trois jours jusqu'à Coloé, puis cinq jours de plus jusqu'à « the city of the people called Auxumites ». § 5 : ces régions sont gouvernées par Zoscalès."
       },
       {
-        "title": "Glottolog 5.3 - Tigrinya (tigr1271)",
+        "title": "Glottolog 5.3 — Tigrinya (tigr1271)",
         "author": "Glottolog, Max Planck Institute for Evolutionary Anthropology",
         "year": 2025,
         "url": "https://glottolog.org/resource/languoid/id/tigr1271",
-        "tier": "referenced",
+        "tier": "official",
         "source_kind": "linguistic_reference",
         "notes": "Fiche de langue consultée le 3 novembre 2026, code ISO 639-3 tir. Classé dans la branche éthiosémitique des langues sémitiques ; parlé en Érythrée et en Éthiopie."
       },
       {
-        "title": "Glottolog 5.3 - Tigre (tigr1270)",
+        "title": "Glottolog 5.3 — Tigre (tigr1270)",
         "author": "Glottolog, Max Planck Institute for Evolutionary Anthropology",
         "year": 2025,
         "url": "https://glottolog.org/resource/languoid/id/tigr1270",
-        "tier": "referenced",
+        "tier": "official",
         "source_kind": "linguistic_reference",
         "notes": "Fiche de langue consultée le 3 novembre 2026, code ISO 639-3 tig. Classé dans la branche éthiosémitique, distinct du tigrigna ; parlé en Érythrée et au Soudan."
       },
       {
-        "title": "Glottolog 5.3 - Bilin (bili1260)",
+        "title": "Glottolog 5.3 — Bilin (bili1260)",
         "author": "Glottolog, Max Planck Institute for Evolutionary Anthropology",
         "year": 2025,
         "url": "https://glottolog.org/resource/languoid/id/bili1260",
-        "tier": "referenced",
+        "tier": "official",
         "source_kind": "linguistic_reference",
         "notes": "Fiche de langue consultée le 3 novembre 2026, code ISO 639-3 byn. Langue agaw, couchitique ; autres noms : Bilen, Blin, Bogo, Bogos."
       },
       {
-        "title": "Glottolog 5.3 - Saho (saho1246)",
+        "title": "Glottolog 5.3 — Saho (saho1246)",
         "author": "Glottolog, Max Planck Institute for Evolutionary Anthropology",
         "year": 2025,
         "url": "https://glottolog.org/resource/languoid/id/saho1246",
-        "tier": "referenced",
+        "tier": "official",
         "source_kind": "linguistic_reference",
         "notes": "Fiche de langue consultée le 3 novembre 2026, code ISO 639-3 ssy. Langue couchitique orientale, proche de l'afar ; autres graphies : Shaho, Shiho, Shoho."
       },
       {
-        "title": "Glottolog 5.3 - Afar (afar1241)",
+        "title": "Glottolog 5.3 — Afar (afar1241)",
         "author": "Glottolog, Max Planck Institute for Evolutionary Anthropology",
         "year": 2025,
         "url": "https://glottolog.org/resource/languoid/id/afar1241",
-        "tier": "referenced",
+        "tier": "official",
         "source_kind": "linguistic_reference",
         "notes": "Fiche de langue consultée le 3 novembre 2026, code ISO 639-3 aar. Langue couchitique orientale ; autres noms : Qafar, Afaraf, Danakil, Denkel, Adal."
       },
       {
-        "title": "Glottolog 5.3 - Beja (beja1238)",
+        "title": "Glottolog 5.3 — Beja (beja1238)",
         "author": "Glottolog, Max Planck Institute for Evolutionary Anthropology",
         "year": 2025,
         "url": "https://glottolog.org/resource/languoid/id/beja1238",
-        "tier": "referenced",
+        "tier": "official",
         "source_kind": "linguistic_reference",
         "notes": "Fiche de langue consultée le 3 novembre 2026, code ISO 639-3 bej. Langue couchitique ; autres noms : Bedawiyet, To-Bedawie ; parlée en Égypte, en Érythrée et au Soudan."
       },
       {
-        "title": "Glottolog 5.3 - Kunama (kuna1268)",
+        "title": "Glottolog 5.3 — Kunama (kuna1268)",
         "author": "Glottolog, Max Planck Institute for Evolutionary Anthropology",
         "year": 2025,
         "url": "https://glottolog.org/resource/languoid/id/kuna1268",
-        "tier": "referenced",
+        "tier": "official",
         "source_kind": "linguistic_reference",
         "notes": "Fiche de langue consultée le 3 novembre 2026, code ISO 639-3 kun. Langue que Glottolog ne rattache à aucune famille plus large ; autres noms : Cunama, Baza, Bazen."
       },
       {
-        "title": "Glottolog 5.3 - Nara (nara1262)",
+        "title": "Glottolog 5.3 — Nara (nara1262)",
         "author": "Glottolog, Max Planck Institute for Evolutionary Anthropology",
         "year": 2025,
         "url": "https://glottolog.org/resource/languoid/id/nara1262",
-        "tier": "referenced",
+        "tier": "official",
         "source_kind": "linguistic_reference",
         "notes": "Fiche de langue consultée le 3 novembre 2026, code ISO 639-3 nrb. Langue que Glottolog ne rattache à aucune famille plus large ; autres noms : Barea, Baria, Barya, Nera."
       }
@@ -845,7 +845,7 @@
     "demographics": {
       "totalPopulation": 3600000,
       "referenceYear": 2025,
-      "source": "UNFPA – World Population Dashboard — Érythrée",
+      "source": "UNFPA – World Population Dashboard",
       "peoples": [
         {
           "name": "Tigrinya",
