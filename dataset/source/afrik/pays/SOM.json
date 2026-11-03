@@ -3,9 +3,9 @@
   "nameFr": "Somalie",
   "nameEn": "Somalia",
   "nameOfficial": "République fédérale de Somalie (Federal Republic of Somalia, Jamhuuriyadda Federaalka Soomaaliya)",
-  "summary": "La Somalie porte le nom que les Somali se donnent eux-mêmes, « Soomaali ». Les sultanats d'Ajuran, d'Ifat, d'Adal et de Mogadiscio s'y sont succédé avant les partages britannique et italien de la fin du XIXe siècle. La poésie orale, le gabay, y tient le rang d'art majeur.",
-  "etymology": "Le nom \"Somalie\" viendrait du peuple Somali (Soomaali), majoritaire dans le pays. Le terme \"Somali\" est utilisé par ce peuple pour se désigner lui-même. Le nom \"Somalie\" a été officialisé lors de l'indépendance en 1960, fusionnant les territoires britannique (Somaliland britannique) et italien (Somalie italienne). Le nom \"Somaliland\" (terre des Somalis) était utilisé par les Britanniques.",
-  "nameOriginActor": "Le peuple Somali (Soomaali) est à l'origine du nom. Le nom \"Somalie\" a été officialisé lors de l'indépendance en 1960 par le gouvernement somalien, fusionnant les territoires britannique et italien.",
+  "summary": "La Somalie porte le nom du peuple somali, qui se nomme lui-même Soomaali et forme l'essentiel de sa population. D'où vient ce nom, les sources proposent plusieurs explications : un ancêtre fondateur, Samaale, ou des noms et des mots arabes ou éthiopiens que rapporte au XIXe siècle le voyageur Richard Burton ; la plus ancienne trace écrite connue est un hymne éthiopien du XVe siècle. Partagé à la fin du XIXe siècle entre la Grande-Bretagne et l'Italie, le pays devient indépendant le 1er juillet 1960 par l'union des deux territoires.",
+  "etymology": "Le nom Somalie est celui du peuple somali, Soomaali en somali ; dans cette langue, le pays s'appelle Soomaaliya. D'où vient le mot Somali lui-même, les sources proposent plusieurs explications. Selon l'étude pays publiée en 1992 par la Bibliothèque du Congrès des États-Unis, il renverrait à Samaale, ou Samaal, l'ancêtre fondateur auquel la plupart des clans somali rattachent leur généalogie. En 1856, le voyageur britannique Richard Burton rapporte trois autres explications : Samal, père d'une tribu selon le dictionnaire arabe Qamus ; le mot arabe Saumal, qui ferait allusion à la rudesse, explication que les lettrés somali écartent selon lui ; et un mot d'une langue d'Éthiopie, Soumahe, « païens », qu'il juge peu recommandable. La plus ancienne trace écrite du nom que nous connaissons, Sōmāli, se trouve dans un hymne composé pour le roi éthiopien Yeshaq (Isaac) au début du XVe siècle.",
+  "nameOriginActor": "Le nom Somalie vient du peuple somali, qui se nomme lui-même Soomaali. Selon les généalogies que rapporte l'étude pays de la Bibliothèque du Congrès, ce nom renverrait à Samaale, l'ancêtre fondateur de la plupart des clans ; d'autres explications existent, présentées dans l'histoire du nom. L'État indépendant prend ce nom le 1er juillet 1960, quand le Somaliland britannique et la Somalie sous tutelle italienne s'unissent : la Constitution de 1960 commence par « La Somalie est un État indépendant et pleinement souverain ».",
   "nameHistory": {
     "summary": "Le nom Somalie désigne un pays de la Corne de l'Afrique, la République fédérale de Somalie, qui se nomme elle-même Soomaaliya, d'après le peuple somali. D'autres noms existent : le pays est né en 1960 de l'union du Somaliland britannique et de la Somalie italienne, sous le nom de République de Somalie. Les sources ne s'accordent pas sur l'origine du nom Somali ; nous les présentons plus bas.",
     "names": [
@@ -25,7 +25,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Somalie s'écrit Soomaaliya en somali, langue officielle du pays avec l'arabe ; l'État s'appelle République fédérale de Somalie, selon le Permanent Committee on Geographical Names.",
+            "statement": "Le nom Somalie s'écrit Soomaaliya en somali ; l'État s'appelle République fédérale de Somalie, Jamhuuriyadda Federaalka Soomaaliya, selon le Permanent Committee on Geographical Names. La Constitution provisoire de 2012 fait du somali la langue officielle et de l'arabe la deuxième langue.",
             "aspect": "usage",
             "formAsWritten": "Soomaaliya",
             "sources": [
@@ -38,6 +38,16 @@
                 "source_kind": "government",
                 "page": "p. 1",
                 "notes": "Nom du pays en somali : Soomaaliya ; nom de l'État : Jamhuuriyadda Federaalka Soomaaliya, en anglais Federal Republic of Somalia. Environ 85 % des habitants sont des Somali."
+              },
+              {
+                "title": "Provisional Constitution of the Federal Republic of Somalia, 2012, article 5",
+                "author": "République fédérale de Somalie",
+                "year": 2012,
+                "url": "https://www.constituteproject.org/constitution/Somalia_2012",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 5",
+                "notes": "Traduction anglaise publiée par le Constitute Project, lu le 3 novembre 2026. Article 5 : « The official language of the Federal Republic of Somalia is Somali (Maay and Maxaa-tiri), and Arabic is the second language. »"
               }
             ]
           },
@@ -130,7 +140,7 @@
               "label": "Règne du négus Isaac, 1413-1430"
             },
             "era": "polity",
-            "statement": "Le nom Somalie a une forme proche, Sōmāli, qui apparaît pour la première fois au début du XVe siècle dans un hymne éthiopien du règne du négus Isaac, selon Tadesse Tamrat, qui renvoie à l'Encyclopédie de l'Islam. C'est la plus ancienne trace de ce nom que le projet connaît. Nous n'avons pas lu cet hymne nous-mêmes. Le peuple qu'il nomme vivait là bien avant ce texte.",
+            "statement": "Le nom Somalie a une forme proche, Sōmāli, qui apparaît pour la première fois au début du XVe siècle dans un hymne éthiopien du règne du négus Isaac, selon Tadesse Tamrat, qui renvoie à l'Encyclopédie de l'Islam. Selon l'étude pays de la Bibliothèque du Congrès, ce roi, Yeshaq, fait composer l'hymne par ses chanteurs après avoir envahi le royaume musulman d'Ifat en 1415. C'est la plus ancienne trace de ce nom que le projet connaît. Nous n'avons pas lu cet hymne nous-mêmes. Le peuple qu'il nomme vivait là bien avant ce texte.",
             "birth": true,
             "sources": [
               {
@@ -152,6 +162,16 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 485",
                 "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, lu dans l'exemplaire numérisé. Le chapitre date le règne de l'empereur Isaac de 1413 à 1430."
+              },
+              {
+                "title": "Somalia: A Country Study, chapitre « Emergence of Adal »",
+                "author": "Helen Chapin Metz (dir.), Federal Research Division, Bibliothèque du Congrès",
+                "year": 1992,
+                "url": "https://countrystudies.us/somalia/5.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "chapitre « Emergence of Adal »",
+                "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. Yeshaq, qui règne de 1414 à 1429 selon ce chapitre, envahit le royaume musulman d'Ifat en 1415 et fait composer par ses chanteurs un hymne d'action de grâce pour sa victoire : « In the hymn's lyrics, the word Somali appears for the first time in written record. »"
               }
             ]
           },
@@ -196,6 +216,47 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 640",
                 "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek, lu dans l'exemplaire numérisé. Les géographes arabes divisent la côte orientale en trois : le pays des Barbares (Bilād al-Barbar) au nord, qui recouvre à peu près le territoire de l'actuelle Somalie, le pays des Zandj et le pays de Sofala. Les Arabes donnaient ce nom à l'ensemble des Somali et des autres peuples de la Corne parlant des langues kushitiques."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Somali viendrait de Samaale, ou Samaal, l'ancêtre fondateur auquel la plupart des clans somali rattachent leur généalogie, selon l'étude pays de la Bibliothèque du Congrès. Dans la généalogie d'ensemble des clans dressée par l'anthropologue Jan Abbink, Samaale est l'ancêtre des Dir, des Isaaq, des Hawiye et des Darod ; les Digil et les Rahanweyn se rattachent à un autre ancêtre, Sab.",
+            "hypothesisGroup": "origine du nom Somali",
+            "sources": [
+              {
+                "title": "Somalia: A Country Study, chapitre « Origins, Migrations, and Settlement »",
+                "author": "Helen Chapin Metz (dir.), Federal Research Division, Bibliothèque du Congrès",
+                "year": 1992,
+                "url": "https://countrystudies.us/somalia/3.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "chapitre « Origins, Migrations, and Settlement »",
+                "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. Les membres du groupe proto-Sam installés dans la péninsule somalie « were known as the so-called Samaale, or Somaal, a clear reference to the mythical father figure of the main Somali clan-families, whose name gave rise to the term Somali »."
+              },
+              {
+                "title": "Somalia: A Country Study, chapitre « The Social Order »",
+                "author": "Helen Chapin Metz (dir.), Federal Research Division, Bibliothèque du Congrès",
+                "year": 1992,
+                "url": "https://countrystudies.us/somalia/37.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "chapitre « The Social Order »",
+                "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. « The overwhelming majority of Somalis trace their genealogical origin to the mythical founding father, Samaale or Samaal. » Les Digil et les Rahanweyn, qui souvent ne remontent pas directement à Samaal, « readily identify themselves as Somalis »."
+              },
+              {
+                "title": "The Total Somali Clan Genealogy (second edition)",
+                "author": "Jan Abbink",
+                "year": 2009,
+                "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/14007",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1, 10 et 11",
+                "notes": "Leyde, African Studies Centre, ASC Working Paper 84, 2009, texte intégral lu le 3 novembre 2026. P. 1 : la généalogie s'appelle en somali abtirsinyo ou abtirsiimo, « the counting of fathers » ; l'auteur ne prétend pas trancher sur le caractère historique des lignes de descendance. P. 10, tableau des grandes lignes de la généalogie, et p. 11 : d'un premier ancêtre mythique descendent Samaale et, souvent au même niveau, Sab ; de Samaale descendent Irir, d'où viennent les Dir, les Isaaq et les Hawiye, et Darod ; les Digil et les Rahanweyn se rattachent à Sab, que l'auteur, après I. M. Lewis, dit ne pas être classés comme « Somali » au sens de cette généalogie."
               }
             ]
           },
@@ -490,67 +551,86 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Somaliland britannique (1884-1960)",
-        "Somalie italienne (1889-1941)"
+        "Somaliland britannique (1887-1960)",
+        "Somalie italienne (1888-1960)",
+        "République de Somalie (proclamée en 1960)"
       ],
-      "antiquity": "Présence de peuples couchitiques dans la région. Contacts avec les civilisations égyptiennes et nubiennes. Développement de royaumes et de sultanats locaux.",
-      "middleAges": "Présence de peuples couchitiques (Somali) dans la région. Développement de sultanats (Ajuran, Ifat, Adal, Mogadiscio). Contacts avec les commerçants arabes et persans. La région était connue sous le nom de \"Bilad al-Barbar\" (pays des Berbères) par les Arabes, mais les Somali se désignaient comme \"Soomaali\".",
-      "precolonial": "Présence de peuples couchitiques (Somali) dans la région. Développement de sultanats (Ajuran, Ifat, Adal, Mogadiscio). Contacts avec les commerçants arabes, persans et européens. La région était connue sous le nom de \"Somalie\" par les Européens, mais les Somali se désignaient comme \"Soomaali\".",
-      "colonization": "1884-1960 : Somaliland britannique (nord). 1889-1941 : Somalie italienne (sud). 1941-1950 : Administration britannique (toute la Somalie). 1950-1960 : Territoire sous tutelle italienne (Somalie italienne). Développement de l'économie de plantation (bananes, canne à sucre), exploitation minière, mouvements nationalistes (XXe siècle). Le nom \"Somalie\" est officialisé par les colonisateurs.",
-      "contemporary": "1960 : Indépendance (1er juillet 1960), fusion des territoires britannique et italien, proclamation de la République de Somalie. 2012 : Proclamation de la République fédérale de Somalie. Le nom \"Somalie\" est officiel."
+      "antiquity": "Selon l'étude pays de la Bibliothèque du Congrès, les Somali appartiennent aux peuples de langue couchitique de l'Est, dont le berceau se trouverait dans les hautes terres du sud de l'Éthiopie. Un groupe que les linguistes appellent proto-Sam se serait séparé des autres Couchites vers la première moitié du Ier millénaire avant notre ère, puis aurait atteint la côte de l'océan Indien avant le Ier siècle. Selon l'historien allemand Bernd Heine, cité par la même étude, les Samaale occupaient toute la Corne de l'Afrique vers l'an 100.",
+      "middleAges": "Les Arabes du Moyen Âge appellent Berberi les peuples couchitiques de l'Est, dont les Somali. Du VIIIe au Xe siècle, des marchands persans et arabes commercent depuis des comptoirs de la côte. Saylac (Zeila), sur le golfe d'Aden, devient un grand centre de commerce et de savoir musulman. Mogadiscio remonte au moins au IXe siècle, et le voyageur Ibn Battuta la trouve à son apogée en 1331. Au début du XVe siècle, un hymne composé pour le roi éthiopien Yeshaq, après sa victoire de 1415 sur le royaume musulman d'Ifat, porte la plus ancienne trace écrite connue du nom Somali.",
+      "precolonial": "Au XVIe siècle, l'État d'Adal, dont la capitale est Saylac, étend son influence jusqu'au plateau du Harar ; sous la conduite de l'imam Ahmad Guray, ses troupes envahissent les hautes terres éthiopiennes. Entre 1550 et 1650 prospère, entre le Shabeelle et le Jubba, l'État de l'Ujuuraan (ou Ajuuraan), dirigé par le clan des Gareen. Au XIXe siècle, la côte du Banaadir, autour de Mogadiscio, relève de l'autorité lointaine des sultans de Zanzibar ; la côte nord dépend depuis le milieu du XVIIIe siècle des chérifs de Moka. Au nord-est naissent deux petits royaumes : le sultanat majeerteen de Boqor Ismaan Mahamuud et celui de Hobyo, fondé dans les années 1870 par Yuusuf Ali Keenadiid.",
+      "colonization": "Les Britanniques s'installent à Berbera en février 1884 et établissent en 1887 un protectorat sur la côte nord, le Somaliland britannique. En 1888 et 1889, les sultans de Hobyo et des Majeerteen acceptent la protection de l'Italie, qui prend ensuite la côte du Banaadir pour former la Somalie italienne. De 1899 à 1920, les derviches de Mahammad Abdille Hasan combattent les Éthiopiens et les Britanniques. Après la défaite italienne de 1941, les Britanniques administrent les deux territoires jusqu'en 1949 ; en novembre 1949, les Nations unies confient le sud à l'Italie, sous tutelle, pour dix ans.",
+      "contemporary": "Le Somaliland britannique devient indépendant le 26 juin 1960 et s'unit le 1er juillet à l'ancien territoire sous tutelle italienne pour former la République de Somalie, dont Aden Abdulla Osman est le président. En 1969, l'armée prend le pouvoir et place Mahammad Siad Barre à la tête d'un Conseil révolutionnaire suprême. Siad Barre fuit le pays en janvier 1991 ; la guerre civile commence, et le Somaliland se déclare indépendant le 18 mai 1991, sans reconnaissance internationale. Le pays reste sans gouvernement central jusqu'en 2012, année du gouvernement fédéral et de la Constitution provisoire de la République fédérale de Somalie."
     },
     "kingdoms": [
       {
-        "name": "Sultanat d'Ajuran",
-        "period": "XIIIe siècle - XVIIe siècle",
-        "entryType": "polity",
-        "timeRange": {
-          "startYear": 1201,
-          "endYear": 1700,
-          "precision": "century"
-        },
-        "dominantPeoples": ["Somali (clans Hawiye", "Darod)"],
-        "politicalCenters": ["Mogadiscio", "Merca", "Barawa"],
-        "historicalRole": "Sultanat somali puissant, contrôle du commerce dans la Corne de l'Afrique, résistance aux Portugais, développement de l'islam."
-      },
-      {
-        "name": "Sultanat d'Ifat",
-        "period": "XIIIe siècle - XVe siècle",
-        "entryType": "polity",
-        "timeRange": {
-          "startYear": 1201,
-          "endYear": 1500,
-          "precision": "century"
-        },
-        "dominantPeoples": ["Somali (clans Dir", "Hawiye)"],
-        "politicalCenters": ["Ifat (Éthiopie actuelle)"],
-        "historicalRole": "Sultanat somali, expansion vers l'Éthiopie, conflits avec l'empire d'Éthiopie, développement de l'islam."
-      },
-      {
-        "name": "Sultanat d'Adal",
+        "name": "État d'Adal",
         "period": "XVe siècle - XVIe siècle",
         "entryType": "polity",
         "timeRange": {
           "startYear": 1401,
           "endYear": 1600,
-          "precision": "century"
+          "precision": "approximate",
+          "datingNote": "L'étude pays de la Bibliothèque du Congrès fait apparaître Adal à partir du XVe siècle et place son apogée au XVIe ; entre 1560 et 1660, les expéditions éthiopiennes ruinent peu à peu sa capitale, Saylac."
         },
-        "dominantPeoples": ["Somali (clans Dir", "Hawiye", "Darod)"],
-        "politicalCenters": ["Zeila", "Harar"],
-        "historicalRole": "Sultanat somali puissant, expansion vers l'Éthiopie, guerre avec l'empire d'Éthiopie, développement de l'islam."
+        "dominantPeoples": ["Somali"],
+        "politicalCenters": ["Saylac (Zeila)"],
+        "historicalRole": "Adal est le plus important des États de la Corne de l'Afrique au Moyen Âge, selon l'étude pays de la Bibliothèque du Congrès. Au XVIe siècle, son influence s'étend de Saylac, sa capitale, jusqu'au plateau du Harar. Sous la conduite de l'imam Ahmad Guray, ses troupes envahissent les hautes terres éthiopiennes."
       },
       {
-        "name": "Sultanat de Mogadiscio",
-        "period": "Xe siècle - XIXe siècle",
+        "name": "État de l'Ujuuraan (Ajuuraan)",
+        "period": "vers 1550 - vers 1650",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 901,
-          "endYear": 1900,
-          "precision": "century"
+          "startYear": 1550,
+          "endYear": 1650,
+          "precision": "approximate",
+          "datingNote": "Les bornes sont celles que l'étude pays de la Bibliothèque du Congrès donne pour l'essor de cet État, entre 1550 et 1650."
         },
-        "dominantPeoples": ["Somali (clans Hawiye)", "Arabes", "Persans"],
+        "dominantPeoples": ["Somali (clan des Gareen)"],
+        "politicalCenters": ["Région entre le Shabeelle et le Jubba"],
+        "historicalRole": "L'Ujuuraan prospère sur le cours inférieur de la région entre les fleuves Shabeelle et Jubba, sous le clan des Gareen. Son essor montre, selon l'étude pays de la Bibliothèque du Congrès, que l'initiative passe alors de la côte à l'intérieur des terres."
+      },
+      {
+        "name": "Cité de Mogadiscio (Muqdisho)",
+        "period": "IXe siècle - fin du XIXe siècle",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 801,
+          "endYear": 1899,
+          "precision": "approximate",
+          "datingNote": "Le début suit l'étude pays de la Bibliothèque du Congrès, selon laquelle la ville remonte « au moins » au IXe siècle ; la fin lisse la cession de la côte du Banaadir à l'Italie par le sultan de Zanzibar, que cette étude ne date pas."
+        },
+        "dominantPeoples": ["Somali", "Immigrants persans et arabes"],
         "politicalCenters": ["Mogadiscio"],
-        "historicalRole": "Sultanat somali, centre commercial important, contacts avec les commerçants arabes et persans, développement de l'islam."
+        "historicalRole": "Mogadiscio naît du mélange entre des immigrants persans et arabes et des Somali, selon l'étude pays de la Bibliothèque du Congrès. Le voyageur Ibn Battuta la trouve à son apogée en 1331. Elle seule, parmi les villes somali, résiste aux attaques des Portugais ; la côte du Banaadir passe ensuite sous l'autorité lointaine d'Oman, puis de Zanzibar."
+      },
+      {
+        "name": "Sultanat majeerteen",
+        "period": "milieu du XVIIIe siècle - 1889",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1750,
+          "endYear": 1889,
+          "precision": "approximate",
+          "datingNote": "Le début lisse « au milieu du XVIIIe siècle », selon l'étude pays de la Bibliothèque du Congrès ; la fin retient 1889, quand le sultan accepte la protection de l'Italie."
+        },
+        "dominantPeoples": ["Somali (Majeerteen)"],
+        "politicalCenters": ["Côte majeerteen (Bari)"],
+        "historicalRole": "Le sultanat majeerteen prend son essor au XIXe siècle sous Boqor Ismaan Mahamuud. Il joue un rôle politique important dans la péninsule somalie avant la colonisation, puis passe sous protection italienne en 1889."
+      },
+      {
+        "name": "Sultanat de Hobyo",
+        "period": "années 1870 - 1889",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1870,
+          "endYear": 1889,
+          "precision": "approximate",
+          "datingNote": "Le début lisse « dans les années 1870 », selon l'étude pays de la Bibliothèque du Congrès ; la fin retient 1889, quand le sultan place ses terres sous protection italienne."
+        },
+        "dominantPeoples": ["Somali"],
+        "politicalCenters": ["Hobyo (Obbia)"],
+        "historicalRole": "Yuusuf Ali Keenadiid, parent de Boqor Ismaan Mahamuud, fonde le petit royaume de Hobyo dans les années 1870, après avoir soumis des clans hawiye de la région. En 1888, il est le premier sultan somali à accepter la protection de l'Italie."
       },
       {
         "name": "Somaliland britannique",
@@ -561,32 +641,22 @@
           "endYear": 1960,
           "precision": "year"
         },
-        "dominantPeoples": [
-          "Britanniques",
-          "Somali (clans Isaaq",
-          "Dir",
-          "Darod)"
-        ],
-        "politicalCenters": ["Hargeisa (capitale coloniale)"],
-        "historicalRole": "Colonisation britannique, développement de l'économie pastorale, mouvements nationalistes (XXe siècle)."
+        "dominantPeoples": ["Somali (Isaaq, Dir, Darod)"],
+        "politicalCenters": ["Berbera", "Hargeysa"],
+        "historicalRole": "L'occupation britannique de la côte nord commence en février 1884, quand le major A. Hunter arrive à Berbera pour signer des traités avec des clans somali. Le protectorat est établi en 1887. Sous l'administration militaire britannique (1941-1949), la capitale passe de Berbera à Hargeysa. Le territoire devient indépendant le 26 juin 1960."
       },
       {
         "name": "Somalie italienne",
-        "period": "1889 - 1960",
+        "period": "1888 - 1960",
         "entryType": "colonial",
         "timeRange": {
-          "startYear": 1889,
+          "startYear": 1888,
           "endYear": 1960,
           "precision": "year"
         },
-        "dominantPeoples": [
-          "Italiens",
-          "Somali (clans Hawiye",
-          "Darod",
-          "Rahanweyn)"
-        ],
-        "politicalCenters": ["Mogadiscio (capitale coloniale)"],
-        "historicalRole": "Colonisation italienne, développement de l'économie de plantation (bananes, canne à sucre), exploitation minière, mouvements nationalistes (XXe siècle)."
+        "dominantPeoples": ["Somali"],
+        "politicalCenters": ["Mogadiscio"],
+        "historicalRole": "L'Italie acquiert sa première possession en 1888, quand le sultan de Hobyo accepte sa protection, puis s'empare de la côte du Banaadir. Occupée par les Britanniques en 1941, la Somalie italienne est confiée en novembre 1949 par les Nations unies à l'Italie, sous tutelle, pour dix ans. Elle devient indépendante le 1er juillet 1960."
       }
     ],
     "majorPeoples": [
@@ -594,55 +664,47 @@
         "name": "Somali",
         "selfAppellation": "Soomaali",
         "exonyms": [
-          "\"Somalies\" (forme coloniale française",
-          "connotation réductrice)",
-          "\"Somali\" (terme utilisé par les Européens)"
+          "Berberi, nom que les Arabes du Moyen Âge donnaient aux peuples couchitiques de l'Est"
         ],
         "peopleId": "PPL_SOMALI",
         "mainRegion": "Toute la Somalie",
-        "languages": [
-          "Somali (som",
-          "ISO 639-3)",
-          "arabe",
-          "anglais",
-          "italien"
-        ],
+        "languages": ["somali (som)", "maay (ymm)"],
         "languageFamily": "FLG_COUCHITIQUE",
-        "appellationRemarks": "\"Soomaali\" est l'auto-appellation. Le terme \"Somalies\" est une forme coloniale française qui peut être considérée comme réductrice. Le terme \"Somali\" est utilisé par les Européens et est généralement accepté. Groupe couchitique majoritaire, originaire de la Corne de l'Afrique. Organisation en clans (Darod, Hawiye, Dir, Isaaq, Rahanweyn)."
+        "appellationRemarks": "Soomaali est le nom que ce peuple se donne. Selon l'étude pays de la Bibliothèque du Congrès, les Somali se répartissent en familles de clans : les Dir, les Darod, les Isaaq et les Hawiye, surtout éleveurs et réunis sous le nom de Samaal, et les Digil et les Rahanweyn, surtout cultivateurs, au sud. La Constitution provisoire de 2012 nomme deux formes de la langue somali, le maay et le maxaa-tiri."
       },
       {
         "name": "Bantous somaliens",
-        "selfAppellation": "Variées selon les groupes (Bantu, Jareer, Gosha)",
+        "selfAppellation": "Bantu ; Shanbara, Shangama ou Wagosha ; Mushunguli",
         "exonyms": [
-          "\"Bantous\" (terme générique)",
-          "\"Jareer\" (terme somali",
-          "peut être péjoratif)",
-          "\"Gosha\" (terme historique)"
+          "Wagosha, « gens de la forêt »",
+          "Jareer, mot qui désigne des cheveux crépus",
+          "adoon et habash, termes péjoratifs qui veulent dire « esclave »"
         ],
         "peopleId": "PPL_BANTOUS_SOMALIENS",
-        "mainRegion": "Sud de la Somalie (vallée du Juba, vallée du Shabelle)",
-        "languages": ["Langues bantoues (swh", "ISO 639-3)", "somali", "arabe"],
+        "mainRegion": "Sud de la Somalie (vallées du Jubba et du Shabeelle)",
+        "languages": ["somali (som)", "swahili (swh)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Les Bantous somaliens sont descendants d'esclaves bantous importés d'Afrique de l'Est. Le terme \"Jareer\" (cheveux crépus) peut être considéré comme péjoratif. Le terme \"Gosha\" (forêt) est historique. Chaque groupe a sa propre auto-appellation. Groupe bantou minoritaire, historiquement marginalisé."
+        "appellationRemarks": "Selon Dan Van Lehman et Omar Eno (2003), les Bantous somaliens réunissent des communautés installées en Somalie avant les Somali et des descendants de personnes amenées comme esclaves depuis l'Afrique de l'Est au XIXe siècle ; une partie d'entre eux a gardé ses langues bantoues et sa culture. Ceux qui se rattachent aux Zigua de Tanzanie se nomment Mushunguli. Les noms Wagosha et Jareer sont jugés polis ; adoon et habash sont des termes péjoratifs."
       },
       {
         "name": "Arabes somaliens",
-        "selfAppellation": "Variées selon les groupes (Arabes somaliens)",
-        "exonyms": ["\"Arabes\" (terme générique)"],
+        "selfAppellation": null,
+        "exonyms": [],
         "peopleId": "PPL_ARABES_SOMALIENS",
-        "mainRegion": "Zones côtières (Mogadiscio, Merca, Barawa)",
-        "languages": ["Arabe (arb", "ISO 639-3)", "somali"],
+        "mainRegion": "Villes de la côte (Mogadiscio, Merca, Baraawe)",
+        "languages": ["arabe (arb)", "somali (som)"],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "Les Arabes somaliens sont descendants d'immigrants arabes arrivés au Moyen Âge. Pas de terme péjoratif connu. Groupe sémitique minoritaire, historiquement commerçants."
+        "appellationRemarks": "Le Permanent Committee on Geographical Names compte des Arabes parmi les habitants de la Somalie qui ne sont pas somali. Selon l'étude pays de la Bibliothèque du Congrès, des immigrants persans et arabes se sont mêlés aux Somali à Mogadiscio dès le IXe siècle."
       },
       {
-        "name": "Autres groupes",
-        "selfAppellation": "Variées selon les groupes",
-        "exonyms": ["Variées selon les groupes"],
-        "peopleId": null,
-        "mainRegion": "Toutes les régions de la Somalie",
-        "languages": ["Langues diverses", "somali", "arabe"],
-        "appellationRemarks": "Chaque groupe a sa propre auto-appellation. Pas de terme péjoratif connu."
+        "name": "Bajuni et Amarani",
+        "selfAppellation": null,
+        "exonyms": [],
+        "peopleId": "PPL_SWAHILI_SOMALIE",
+        "mainRegion": "Côte du sud (îles Bajuni près de Kismaayo, Baraawe, Merca, Mogadiscio)",
+        "languages": ["swahili (swh)"],
+        "languageFamily": "FLG_NIGERCONGO",
+        "appellationRemarks": "Selon l'étude pays de la Bibliothèque du Congrès, les Bajuni et les Amarani sont des pêcheurs, des marins et des marchands de la côte, qui parlent des dialectes du swahili. Les Amarani étaient moins de 1 000 au début des années 1990."
       }
     ],
     "culture": {
@@ -658,27 +720,23 @@
           "isPrimary": true
         },
         {
-          "name": "anglais",
-          "isoCode": "eng"
-        },
-        {
-          "name": "italien",
-          "isoCode": "ita"
+          "name": "maay",
+          "isoCode": "ymm"
         }
       ],
-      "culturalTraditions": "Traditions couchitiques (Somali) : poésie orale (gabay), musiques traditionnelles, danse traditionnelle, artisanat (tissage, poterie), élevage pastoral de chameaux, rituels liés aux pluies et à la mobilité pastorale. Traditions bantoues (Bantous somaliens) : musiques traditionnelles, danse traditionnelle, artisanat, agriculture. Traditions arabes (Arabes somaliens) : musiques traditionnelles, danse traditionnelle, artisanat, commerce. Festivals traditionnels variés. Cérémonies de passage, rites d'initiation, fêtes traditionnelles. La culture somalienne est riche et préservée, avec une forte tradition orale (poésie).",
-      "dominantReligions": "Islam sunnite (quasi-totalité de la population, environ 99%), religions traditionnelles africaines (syncrétisme rare, moins de 1%)",
-      "lifestyles": "Élevage pastoral (chameaux, bovins, caprins, ovins, mode de vie nomade), agriculture (maïs, sorgho, bananes, canne à sucre, cultures vivrières), pêche (océan Indien, importante source de protéines), commerce et activités urbaines (zones urbaines, Mogadiscio). Urbanisation importante. Économie basée sur l'élevage pastoral (secteur majeur), l'agriculture (bananes, canne à sucre), la pêche, et les envois de fonds de la diaspora. La Somalie est l'un des pays les plus pauvres d'Afrique, avec un IDH faible et une économie dépendante de l'élevage et de l'agriculture.",
-      "socialOrganization": "Société clanique très structurée (clans Somali : Darod, Hawiye, Dir, Isaaq, Rahanweyn). Structures familiales traditionnelles (patrilinéaires). Organisation communautaire (assemblées shir, chefs traditionnels : ugaas, suldaan). Structures étatiques modernes (république fédérale, mais instabilité politique et conflits récents). Système politique fédéral, mais instabilité politique et conflits récents (guerre civile depuis 1991, État fragile).",
-      "regionalRelations": "Relations avec l'Afrique de l'Est (IGAD, Union africaine), relations avec le Moyen-Orient (Ligue arabe, pays du Golfe), relations avec l'Europe (Union européenne, Italie, Royaume-Uni), relations avec les États-Unis. La Somalie est membre de l'IGAD, de l'Union africaine et de la Ligue arabe."
+      "culturalTraditions": "La poésie et l'art oratoire sont très estimés dans la société somalie, selon l'étude pays de la Bibliothèque du Congrès : c'est en partie par ses talents de poète et d'orateur que Mahammad Abdille Hasan rallie des partisans au début du XXe siècle. Le somali s'écrit en alphabet latin depuis la décision annoncée en 1972 et appliquée à partir du 1er janvier 1973 ; elle est suivie d'une grande campagne d'alphabétisation.",
+      "dominantReligions": "L'islam est la religion de l'État, selon l'article 2 de la Constitution provisoire de 2012. La plupart des Somali sont des musulmans sunnites, et moins de 1 % des Somali sont chrétiens, selon l'étude pays de la Bibliothèque du Congrès (1992).",
+      "lifestyles": "Selon l'enquête d'estimation de la population de 2014, 42 % des habitants vivent en ville, 23 % à la campagne, 26 % sont nomades et 9 % vivent dans des camps de personnes déplacées. Lors du recensement de 1975, les nomades formaient près de 59 % de la population. Les Dir, les Darod, les Isaaq et les Hawiye sont surtout des éleveurs de chameaux, de moutons et de chèvres, les Digil et les Rahanweyn surtout des cultivateurs, selon l'étude pays de la Bibliothèque du Congrès. La Somalie n'a pas publié de recensement depuis 1975, et l'enquête de 2014 ne compte pas les habitants par peuple : le Permanent Committee on Geographical Names estime qu'environ 85 % des habitants sont somali, les autres étant bantous ou arabes, sans donner la part de chacun.",
+      "socialOrganization": "La société somalie s'organise selon la généalogie, que les Somali appellent abtirsiimo, « le compte des pères », selon Jan Abbink. L'étude pays de la Bibliothèque du Congrès distingue six familles de clans : quatre surtout pastorales, les Dir, les Darod, les Isaaq et les Hawiye, réunies sous le nom de Samaal, et deux surtout agricoles, les Digil et les Rahanweyn. Des lignages apparentés s'unissent par contrat en groupes qui paient et reçoivent ensemble le prix du sang, la diya.",
+      "regionalRelations": "La Constitution provisoire de 2012 présente la République fédérale de Somalie comme un pays musulman, membre des nations africaines et arabes (article 3). Le pays a pour voisins l'Éthiopie, Djibouti et le Kenya, selon le Permanent Committee on Geographical Names, et le somali se parle aussi dans ces trois pays, selon Glottolog."
     },
     "historicalFacts": {
-      "ancientPeriods": "Présence de peuples couchitiques dans la région. Contacts avec les civilisations égyptiennes et nubiennes. Développement de royaumes et de sultanats locaux.",
-      "middleAges": "Présence de peuples couchitiques (Somali) dans la région. Développement de sultanats (Ajuran, Ifat, Adal, Mogadiscio). Contacts avec les commerçants arabes et persans. La région était connue sous le nom de \"Bilad al-Barbar\" (pays des Berbères) par les Arabes, mais les Somali se désignaient comme \"Soomaali\".",
-      "precolonial": "Présence de peuples couchitiques (Somali) dans la région. Développement de sultanats (Ajuran, Ifat, Adal, Mogadiscio). Contacts avec les commerçants arabes, persans et européens. La région était connue sous le nom de \"Somalie\" par les Européens, mais les Somali se désignaient comme \"Soomaali\".",
-      "colonization": "1884-1960 : Somaliland britannique (nord), développement de l'économie pastorale. 1889-1941 : Somalie italienne (sud), développement de l'économie de plantation (bananes, canne à sucre), exploitation minière. 1941-1950 : Administration britannique (toute la Somalie). 1950-1960 : Territoire sous tutelle italienne (Somalie italienne), mouvements nationalistes (XXe siècle).",
-      "independenceStruggle": "1950s-1960 : Mouvements nationalistes, SYL (Somali Youth League), indépendance (1er juillet 1960), fusion des territoires britannique et italien, proclamation de la République de Somalie. Aden Abdullah Osman Daar devient premier président.",
-      "postIndependence": "République de Somalie (1960), présidence d'Aden Abdullah Osman Daar (1960-1967), Abdirashid Ali Shermarke (1967-1969), coup d'État (1969), présidence de Siad Barre (1969-1991, régime socialiste, guerre avec l'Éthiopie, 1977-1978), guerre civile (depuis 1991, État effondré, conflits claniques, famine, interventions internationales), transition fédérale (2012), proclamation de la République fédérale de Somalie, Hassan Sheikh Mohamud (2012-2017, 2022-), Mohamed Abdullahi Mohamed (2017-2022). Stabilité politique fragile, État fédéral, reconstruction post-conflit, développement économique (élevage, agriculture, pêche). La Somalie est l'un des pays les plus pauvres d'Afrique, avec un IDH faible et une économie dépendante de l'élevage et de l'agriculture."
+      "ancientPeriods": "Selon l'étude pays de la Bibliothèque du Congrès, les Somali appartiennent aux peuples de langue couchitique de l'Est, dont le berceau se trouverait dans les hautes terres du sud de l'Éthiopie. Un groupe que les linguistes appellent proto-Sam se serait séparé des autres Couchites vers la première moitié du Ier millénaire avant notre ère, puis aurait atteint la côte de l'océan Indien avant le Ier siècle. Selon l'historien allemand Bernd Heine, cité par la même étude, les Samaale occupaient toute la Corne de l'Afrique vers l'an 100.",
+      "middleAges": "Saylac (Zeila), sur le golfe d'Aden, est au Moyen Âge le plus grand comptoir de la côte somalie et un centre de savoir musulman, selon l'étude pays de la Bibliothèque du Congrès. Mogadiscio, Merca et Baraawe sont alors les grandes villes de la côte de l'océan Indien ; Ibn Battuta décrit en 1331 Mogadiscio comme une très grande ville dont les marchands exportent le tissu jusqu'en Égypte. À partir du XVe siècle naissent des États centralisés, dont Adal.",
+      "precolonial": "Au XVIe siècle, l'État d'Adal, dont la capitale est Saylac, étend son influence jusqu'au plateau du Harar ; sous la conduite de l'imam Ahmad Guray, ses troupes envahissent les hautes terres éthiopiennes. Entre 1550 et 1650 prospère, entre le Shabeelle et le Jubba, l'État de l'Ujuuraan (ou Ajuuraan), dirigé par le clan des Gareen. Au XIXe siècle, la côte du Banaadir, autour de Mogadiscio, relève de l'autorité lointaine des sultans de Zanzibar ; la côte nord dépend depuis le milieu du XVIIIe siècle des chérifs de Moka. Au nord-est naissent deux petits royaumes : le sultanat majeerteen de Boqor Ismaan Mahamuud et celui de Hobyo, fondé dans les années 1870 par Yuusuf Ali Keenadiid.",
+      "colonization": "Le partage du pays somali commence en 1884. Au nord, le major A. Hunter signe à partir de février 1884 des traités avec des clans somali, et le Somaliland britannique devient un protectorat en 1887. Au sud, l'Italie obtient en 1888 et 1889 la protection des sultanats de Hobyo et des Majeerteen, puis prend la côte du Banaadir. De 1899 à 1920, la guerre des derviches de Mahammad Abdille Hasan contre les Éthiopiens et les Britanniques coûte la vie, selon une estimation, à un tiers de la population du nord. Les Italiens occupent tout le pays somali en 1940-1941, puis les Britanniques l'administrent de 1941 à 1949.",
+      "independenceStruggle": "En 1943 naît à Mogadiscio le Somali Youth Club, premier parti politique somali moderne, qui prend en 1947 le nom de Somali Youth League (SYL). Il veut réunir tous les territoires somali, développer l'enseignement et donner au somali une écriture commune. En novembre 1949, les Nations unies placent le sud sous tutelle italienne pour dix ans, avant l'indépendance. Le Somaliland britannique devient indépendant le 26 juin 1960, puis s'unit le 1er juillet à l'ancien territoire sous tutelle pour former la République de Somalie, dont Aden Abdulla Osman est le président.",
+      "postIndependence": "Le 21 octobre 1969, quelques jours après l'assassinat du président Shermaarke, l'armée prend le pouvoir ; le Conseil révolutionnaire suprême place Mahammad Siad Barre à sa tête. Son régime adopte en 1972 l'écriture du somali en alphabet latin. Après la guerre de l'Ogaden contre l'Éthiopie, en 1977-1978, le pays dépend largement de l'aide extérieure. Siad Barre fuit en janvier 1991 et la guerre civile commence ; le Somaliland se déclare indépendant le 18 mai 1991, sans reconnaissance internationale. Le gouvernement fédéral de Somalie est établi en 2012."
     },
     "sources": [
       {
@@ -732,6 +790,181 @@
         "url": "https://www.unfpa.org/data/world-population/SO",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Population Estimation Survey 2014 for the 18 Pre-War Regions of Somalia",
+        "url": "https://somalia.un.org/en/download/6916/33489",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "République fédérale de Somalie, avec le Fonds des Nations unies pour la population (bureau de pays pour la Somalie, Nairobi), octobre 2014, rapport lu le 3 novembre 2026. P. 25 : la dernière information disponible vient d'un recensement de 1975 aux résultats limités ; ceux du recensement de 1985-1986 n'ont pas été publiés officiellement. P. 31 : population estimée des 18 régions d'avant-guerre, 12 316 895 habitants, dont 5 216 392 en ville, 2 806 787 à la campagne, 3 186 965 nomades et 1 106 751 dans des camps de personnes déplacées."
+      },
+      {
+        "title": "Provisional Constitution of the Federal Republic of Somalia, 2012, article 5",
+        "url": "https://www.constituteproject.org/constitution/Somalia_2012",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Traduction anglaise publiée par le Constitute Project, lu le 3 novembre 2026. Article 5 : « The official language of the Federal Republic of Somalia is Somali (Maay and Maxaa-tiri), and Arabic is the second language. »"
+      },
+      {
+        "title": "Provisional Constitution of the Federal Republic of Somalia, 2012",
+        "url": "https://www.constituteproject.org/constitution/Somalia_2012",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Traduction anglaise publiée par le Constitute Project, lu le 3 novembre 2026. Article 1 : la République fédérale de Somalie est « a federal, sovereign, and democratic republic ». Article 2 : « Islam is the religion of the State. » Article 3 : « The Federal Republic of Somalia is a Muslim country which is a member of the African and Arab Nations. »"
+      },
+      {
+        "title": "Toponymic Factfile: Somalia",
+        "url": "https://assets.publishing.service.gov.uk/media/6968c8ec5fd54abe6531a7a8/Somalia_Toponymic_Factfile.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Permanent Committee on Geographical Names (Royaume-Uni), 2026, lu le 3 novembre 2026. P. 1 : langues officielles, le somali et l'arabe ; frontières avec l'Éthiopie, Djibouti et le Kenya ; « About 85% of the population are ethnically Somali (the remainder being Bantu and Arab) ». P. 2 : union de juillet 1960 ; prise du pouvoir par l'armée en 1969 et présidence de Siyaad Barre jusqu'en janvier 1991 ; guerre civile à partir de 1991 et absence de gouvernement central jusqu'à l'établissement du gouvernement fédéral en 2012."
+      },
+      {
+        "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Somalia",
+        "url": "https://history.state.gov/countries/somalia",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Office of the Historian, Département d'État des États-Unis, lu le 3 novembre 2026. Les États-Unis reconnaissent la Somali Republic le 1er juillet 1960, par un message du président Eisenhower au président Aden Abdulla Osman ; elle naît de l'union de la Somalie sous tutelle des Nations unies administrée par l'Italie et du Somaliland, protectorat britannique jusqu'au 26 juin 1960."
+      },
+      {
+        "title": "Glottolog 5.3 — Somali (soma1255)",
+        "url": "https://glottolog.org/resource/languoid/id/soma1255",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche lu le 3 novembre 2026. Code ISO 639-3 som. Classement : afro-asiatique, couchitique, couchitique de l'Est, couchitique de l'Est des basses terres, omo-tana. Pays : Djibouti, Éthiopie, Kenya, Somalie."
+      },
+      {
+        "title": "Glottolog 5.3 — Maay (maay1238)",
+        "url": "https://glottolog.org/resource/languoid/id/maay1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche lu le 3 novembre 2026. Code ISO 639-3 ymm. Même branche omo-tana que le somali. Pays : Éthiopie, Kenya, Somalie."
+      },
+      {
+        "title": "The Total Somali Clan Genealogy (second edition)",
+        "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/14007",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Leyde, African Studies Centre, ASC Working Paper 84, 2009, texte intégral lu le 3 novembre 2026. P. 1 : la généalogie s'appelle en somali abtirsinyo ou abtirsiimo, « the counting of fathers » ; l'auteur ne prétend pas trancher sur le caractère historique des lignes de descendance. P. 10, tableau des grandes lignes de la généalogie, et p. 11 : d'un premier ancêtre mythique descendent Samaale et, souvent au même niveau, Sab ; de Samaale descendent Irir, d'où viennent les Dir, les Isaaq et les Hawiye, et Darod ; les Digil et les Rahanweyn se rattachent à Sab, que l'auteur, après I. M. Lewis, dit ne pas être classés comme « Somali » au sens de cette généalogie."
+      },
+      {
+        "title": "The Somali Bantu: Their History and Culture",
+        "url": "http://www.culturalorientation.net/content/download/1359/7917/version/2/file/The+Somali+Bantu.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Dan Van Lehman et Omar Eno, Washington, Center for Applied Linguistics, Cultural Orientation Resource Center, Culture Profile n° 16, février 2003, lu le 3 novembre 2026. P. 1 : les Bantous somaliens comprennent des groupes « indigenous to Somalia », des descendants d'esclaves intégrés à la société somalie et d'autres qui ont gardé leurs langues et leur culture. P. 3 : noms Wagosha (« people of the forest ») et Jareer, termes péjoratifs adoon et habash ; ceux qui gardent des liens forts avec l'Afrique du Sud-Est se nomment Mushunguli ou Zigua."
+      },
+      {
+        "title": "Somalia: A Country Study, chapitre « Origins, Migrations, and Settlement »",
+        "url": "https://countrystudies.us/somalia/3.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. Origine des Somali parmi les Couchites de l'Est ; séparation des proto-Sam vers la première moitié du Ier millénaire avant notre ère ; selon Bernd Heine, les Samaale occupent toute la Corne vers l'an 100 ; « Medieval Arabs referred to the Eastern Cushites as the Berberi »."
+      },
+      {
+        "title": "Somalia: A Country Study, chapitre « Coastal Towns »",
+        "url": "https://countrystudies.us/somalia/4.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. Comptoirs persans et arabes du VIIIe au Xe siècle ; Saylac, centre de commerce et de savoir musulman, puis capitale d'Adal ; expéditions éthiopiennes contre Saylac entre 1560 et 1660."
+      },
+      {
+        "title": "Somalia: A Country Study, chapitre « Emergence of Adal »",
+        "url": "https://countrystudies.us/somalia/5.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. Adal, principal État de la Corne au Moyen Âge, de Saylac au plateau du Harar ; invasion d'Ifat par Yeshaq en 1415 et hymne où le mot Somali apparaît pour la première fois par écrit ; campagnes de l'imam Ahmad Guray."
+      },
+      {
+        "title": "Somalia: A Country Study, chapitre « Mogadishu and Its Banaadir Hinterlands »",
+        "url": "https://countrystudies.us/somalia/6.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. Mogadiscio remonte au moins au IXe siècle ; apogée lors du passage d'Ibn Battuta en 1331 ; État de l'Ujuuraan (Ajuuraan) entre 1550 et 1650, sous le clan des Gareen ; seule ville somali à résister aux Portugais."
+      },
+      {
+        "title": "Somalia: A Country Study, chapitre « The Somali Peninsula on the Eve of Imperial Partition »",
+        "url": "https://countrystudies.us/somalia/7.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. Jusqu'au partage colonial des années 1880, les Omanais exercent une autorité lointaine sur la côte du Banaadir, qui passe ensuite dans l'orbite de Zanzibar ; la côte nord relève, à partir du milieu du XVIIIe siècle, des chérifs de Moka."
+      },
+      {
+        "title": "Somalia: A Country Study, chapitre « The Majeerteen Sultanates »",
+        "url": "https://countrystudies.us/somalia/8.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. Le sultanat majeerteen naît au milieu du XVIIIe siècle et s'affirme sous Boqor Ismaan Mahamuud ; Yuusuf Ali Keenadiid fonde Hobyo dans les années 1870."
+      },
+      {
+        "title": "Somalia: A Country Study, chapitre « Imperial Partition »",
+        "url": "https://countrystudies.us/somalia/9.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. Le major A. Hunter arrive à Berbera en février 1884 ; le sultan de Hobyo accepte la protection italienne en 1888, les deux sultans en 1889 ; l'Italie prend ensuite la côte du Banaadir."
+      },
+      {
+        "title": "Somalia: A Country Study, chapitre « Dervish Resistance to Colonial Occupation »",
+        "url": "https://countrystudies.us/somalia/10.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. Mahammad Abdille Hasan, poète et orateur, « much-valued skills in Somali society » ; guerre des derviches de 1899 à 1920, qui coûte la vie, selon une estimation, à un tiers de la population du nord."
+      },
+      {
+        "title": "Somalia: A Country Study, chapitre « British Military Administration »",
+        "url": "https://countrystudies.us/somalia/13.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. Administration militaire britannique des deux territoires de 1941 à 1949 ; capitale déplacée de Berbera à Hargeysa ; Somali Youth Club fondé à Mogadiscio en 1943, devenu Somali Youth League en 1947 ; tutelle italienne décidée par l'Assemblée générale des Nations unies en novembre 1949, pour dix ans ; au nord, la Somali National League s'appuie surtout sur les Isaaq, et l'United Somali Party sur les Dir (Gadabursi et Issa) et les Darod."
+      },
+      {
+        "title": "Somalia: A Country Study, chapitre « Coup d'Etat »",
+        "url": "https://countrystudies.us/somalia/20.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. Assassinat du président Shermaarke le 15 octobre 1969 ; prise du pouvoir par l'armée le 21 octobre ; Siad Barre à la tête du Conseil révolutionnaire suprême."
+      },
+      {
+        "title": "Somalia: A Country Study, chapitre « The Language and Literacy Issue »",
+        "url": "https://countrystudies.us/somalia/25.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. Adoption d'une écriture latine du somali, annoncée en 1972 pour le 1er janvier 1973, et campagne d'alphabétisation."
+      },
+      {
+        "title": "Somalia: A Country Study, chapitre « Somalia's Difficult Decade, 1980-90 »",
+        "url": "https://countrystudies.us/somalia/27.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. Après la guerre de l'Ogaden de 1977-1978 contre l'Éthiopie et l'afflux de réfugiés, la Somalie dépend de l'aide humanitaire."
+      },
+      {
+        "title": "Somalia: A Country Study, chapitre « Population »",
+        "url": "https://countrystudies.us/somalia/36.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. Premier recensement national en février 1975, total de 3,3 millions d'habitants ; en 1975, près de 59 % de nomades, près de 22 % de sédentaires et plus de 19 % de non-agriculteurs."
+      },
+      {
+        "title": "Somalia: A Country Study, chapitre « The Social Order »",
+        "url": "https://countrystudies.us/somalia/37.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. Six familles de clans : Dir, Daarood, Isaaq et Hawiye, réunies sous le nom de Samaal, environ 75 % de la population, et Digil et Rahanwayn, environ 20 % ; pastoralisme des Samaal, agriculture des Digil et Rahanwayn."
+      },
+      {
+        "title": "Somalia: A Country Study, chapitre « Riverine and Coastal People of Non-Somali Origin »",
+        "url": "https://countrystudies.us/somalia/40.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. Groupes des vallées et de la côte d'une autre origine que somali, « probably totaling less than 2 percent of the population » ; Bajuni et Amarani parlent des dialectes du swahili ; moins de 1 000 Amarani au début des années 1990."
+      },
+      {
+        "title": "Somalia: A Country Study, chapitre « Religion »",
+        "url": "https://countrystudies.us/somalia/44.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 3 novembre 2026. « Most Somalis are Sunni Muslims. (Less than 1 percent of ethnic Somalis are Christians.) »"
       }
     ],
     "demographics": {
@@ -748,18 +981,21 @@
         },
         {
           "name": "Bantous somaliens",
-          "percentageInCountry": 10,
           "peopleId": "PPL_BANTOUS_SOMALIENS",
-          "region": "Sud de la Somalie (vallée du Juba, vallée du Shabelle)",
+          "region": "Sud de la Somalie (vallées du Jubba et du Shabeelle)",
           "languageFamily": "FLG_BANTU"
         },
         {
           "name": "Arabes somaliens",
-          "percentageInCountry": 5,
           "peopleId": "PPL_ARABES_SOMALIENS",
-          "region": ""
+          "region": "Villes de la côte",
+          "languageFamily": "FLG_SEMITIQUE"
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "La Somalie est un pays de la Corne de l'Afrique, voisin de l'Éthiopie, de Djibouti et du Kenya. Elle porte le nom du peuple somali, qui se nomme lui-même Soomaali.",
+      "followUp": "D'où viendrait le nom Somali, selon les explications que rapportent les sources ?"
     }
   }
 }

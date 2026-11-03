@@ -3,9 +3,9 @@
   "nameFr": "Sénégal",
   "nameEn": "Senegal",
   "nameOfficial": "République du Sénégal",
-  "summary": "L'origine du nom « Sénégal » est débattue et aucune hypothèse ne fait autorité : le rattachement aux Sanhaja, confédération berbère que le français nomme Zenaga, est le plus répandu, l'explication wolof « sunu gaal », « notre pirogue », remonte à l'abbé Boilat en 1853, et l'une comme l'autre ont leurs contradicteurs. Empire du Jolof, royaumes sérères et Fouta Toro s'y sont partagé le territoire. Wolof, Peuls, Sérères, Diola, Mandinka et Soninké y perpétuent la parole des griots.",
-  "etymology": "L'origine du nom « Sénégal » n'est pas établie et reste discutée. L'hypothèse la plus répandue le rattache aux Sanhaja, confédération berbère du Sahara occidental que le français et le portugais nomment Zenaga ; Théodore Monod et Raymond Mauny la défendent en 1960 contre l'explication wolof. Cette lecture n'est d'ailleurs pas nouvelle : une carte anglaise de la Sénégambie du XVIIIe siècle, copiée d'une carte de d'Anville publiée à Paris en 1751, grave sur le Sahara « le désert habité par les Maures Zenhaga, d'où le fleuve Sénégal tire son nom », soit un siècle avant Boilat. Elle est contestée de longue date. Dans la première édition de l'Encyclopédie de l'Islam, Maurice Delafosse constate que la majorité des auteurs modernes s'y rallient, juge pourtant le rapprochement fortuit, et propose une autre source : un royaume de la basse vallée du fleuve, que les textes anciens nomment Sanghana chez al-Bakri au XIe siècle, Senegany sur un portulan de 1351, puis Sanaga et Senega chez les navigateurs du XVe siècle. L'explication wolof « sunu gaal », « notre pirogue », est plus tardive et d'origine unique : l'abbé Boilat l'avance dans ses Esquisses sénégalaises en 1853, et rien ne l'atteste avant lui. Paul Marty lui oppose en 1917 le terme hassanya Singhane, par lequel les Maures désignaient le Cayor, et tient les étymologies berbères pour fantaisistes. Saliou Kandji les récuse toutes en 2006. Reste une question que ces lectures ne posent pas : comment les peuples du fleuve l'appelaient-ils ? En 1573, le géographe espagnol Luis del Mármol Carvajal note deux réponses. Les Toucouleurs disent Mayo, qui veut simplement dire « le fleuve » en pulaar. Les Soninkés de Ngalam disent Colle. Aucun de ces deux noms n'a survécu sur les cartes, et celui qui l'a emporté leur est étranger.",
-  "nameOriginActor": "Le nom est d'abord celui du fleuve, porté par les navigateurs et les cartographes européens à partir du XVe siècle, puis étendu au territoire. Ce qu'ils ont transcrit reste discuté : un nom berbère, celui d'un royaume de la basse vallée, un terme hassanya ou une phrase wolof, selon les auteurs. Aucune de ces attributions n'est établie.",
+  "summary": "Le Sénégal porte le nom du fleuve qui le borde au nord et à l'est, et l'origine de ce nom est discutée. Selon les auteurs, il viendrait des Sanhaja, une confédération berbère que le français nomme Zenaga, d'un ancien royaume de la basse vallée, d'un mot hassanya, ou d'une phrase wolof avancée par l'abbé Boilat en 1853 et devenue courante sous la forme « sunu gaal », « notre pirogue ». Le pays est né des royaumes wolof et sérères et du Fouta Toro ; le wolof, le pulaar et le sérère y sont aujourd'hui les langues les plus parlées.",
+  "etymology": "Le nom Sénégal est d'abord celui du fleuve qui borde le pays au nord et à l'est. Son origine est discutée, et plusieurs explications coexistent. Selon Maurice Delafosse, dans la première édition de l'Encyclopédie de l'Islam, la plupart des auteurs modernes le rattachaient aux Sanhaja, une confédération berbère du Sahara occidental que le français et le portugais nomment Zenaga. Théodore Monod et Raymond Mauny défendent encore ce rattachement en 1960, selon Amady Aly Dieng. Delafosse, lui, juge la ressemblance fortuite et propose une autre origine : un royaume de la basse vallée du fleuve, que le géographe al-Bakri nomme Sanghana au XIe siècle, qu'un portulan de 1351 écrit Senegany, et que les navigateurs du XVe siècle écrivent Sanaga puis Senega. L'abbé David Boilat avance en 1853, dans ses Esquisses sénégalaises, une explication wolof : un piroguier, à qui l'on demandait le nom du fleuve, aurait cru qu'on lui demandait celui de son bateau et répondu Samagal, « mon bateau ». Cette explication est devenue courante sous la forme « sunu gaal », « notre pirogue », et Boilat en est la plus ancienne trace que le projet connaît. Paul Marty propose en 1917 le terme hassanya Singhane, par lequel les Maures désignaient le Cayor, et tient les étymologies berbères pour fantaisistes, selon Amady Aly Dieng. En 2006, Saliou Kandji récuse toutes ces explications. Les peuples du fleuve lui donnaient aussi leurs propres noms. Selon le géographe espagnol Luis del Mármol Carvajal, les Toucouleurs l'appellent Mayo, « le fleuve » en pulaar, et les Soninkés du Ngalam l'appellent Colle. Les cartes européennes ont retenu le nom Sénégal.",
+  "nameOriginActor": "Le nom est d'abord celui du fleuve, écrit par les navigateurs et les cartographes européens à partir du XVe siècle, puis étendu au territoire. Les auteurs ne s'accordent pas sur ce qu'ils ont transcrit : un nom berbère, celui d'un royaume de la basse vallée, un terme hassanya ou une phrase wolof.",
   "nameHistory": {
     "summary": "Le nom Sénégal désigne un pays d'Afrique de l'Ouest, la République du Sénégal, qui porte le nom du fleuve qui le borde au nord et à l'est. Les peuples riverains donnaient à ce fleuve d'autres noms, comme Mayo ou Colle. Les sources ne s'accordent pas sur l'origine du nom Sénégal ; nous les présentons plus bas.",
     "names": [
@@ -325,49 +325,51 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Senega (portugais, XVe siècle)",
-        "Sénégal (AOF, 1895-1960)"
+        "Sanaga (Deniz Fernandez, 1446)",
+        "Çanaga (chronique de Zurara, 1453)",
+        "Senega (navigateurs du XVe siècle)"
       ],
-      "antiquity": "Le territoire était peuplé de groupes wolof, sérère, peul, mandinka, jola sans nom unifié. Les empires régionaux (Ghana, Mali, Songhai) ont influencé la région.",
-      "middleAges": "XIIIe-XVIe siècles : Empire du Jolof (Wolof) avec royaumes vassaux (Cayor, Baol, Waalo, Sine, Saloum). Fouta Toro (théocratie peule).",
-      "precolonial": "Royaumes wolof (Jolof, Cayor, Baol, Waalo), royaumes sérères (Sine, Saloum), théocratie peule du Fouta Toro, royaumes jola de Casamance. Commerce transsaharien et commerce côtier.",
-      "colonization": "XVe siècle : premiers contacts portugais (nom \"Senega\"). 1659 : Fondation de Saint-Louis par les Français. 1895 : Intégration à l'Afrique-Occidentale française (AOF). Le territoire est appelé \"Sénégal\" par les colonisateurs.",
-      "contemporary": "Indépendance en 1960 sous le nom de \"République du Sénégal\". Le nom officiel en français est \"République du Sénégal\"."
+      "antiquity": "La Sénégambie, c'est-à-dire les bassins des fleuves Sénégal et Gambie, dépend jusqu'au XVe siècle des États du Soudan et du Sahara, dont le Mali, selon l'historien Boubacar Barry. Elle est peuplée de Wolof, de Peuls, de Mandinka, de Sérères, de Toucouleurs et de Diola, entre autres peuples.",
+      "middleAges": "Au XIVe siècle, après la mort du mansa Souleymane du Mali en 1360, Njajaan Njaay fonde la confédération du Jolof, qui s'étend sur le nord de la Sénégambie, entre la Gambie et le Sénégal. Elle éclate au XVIe siècle : le Waalo, le Cayor, le Baol, le Sine et le Saloum s'en détachent. Dans la vallée du fleuve, la dynastie denyanke fonde dans les années 1490 le royaume du Fouta Toro.",
+      "precolonial": "Aux XVIIe et XVIIIe siècles, les royaumes wolof (Waalo, Cayor, Baol, Jolof), les royaumes sérères du Sine et du Saloum et le Fouta Toro commercent avec les comptoirs européens de la côte, dans le cadre de la traite atlantique. En 1776, le parti torodo met fin au pouvoir denyanke au Fouta Toro et fonde un régime religieux dirigé par un almamy, Abdul Kader Kane.",
+      "colonization": "Au XVe siècle, les navigateurs portugais écrivent le nom du fleuve Sanaga, Çanaga puis Senega. Les Hollandais s'installent à Gorée en 1621, les Français à Saint-Louis en 1659. La conquête française commence en 1854 ; en 1886, la mort de Lat Dior, damel du Cayor, au puits de Dekhlé, ouvre la voie à la prise du reste du pays. Le décret du 16 juin 1895 confie au gouverneur du Sénégal l'administration de toutes les colonies françaises d'Afrique de l'Ouest, qui forment l'Afrique-Occidentale française (AOF). Le territoire garde le nom de Sénégal.",
+      "contemporary": "La République du Sénégal se retire de la Fédération du Mali et proclame son indépendance le 20 août 1960. Elle garde le nom du fleuve : son nom officiel est République du Sénégal."
     },
     "kingdoms": [
       {
         "name": "Empire du Jolof",
-        "period": "XIIIe - XVIe siècles",
+        "period": "XIVe - XVIe siècles",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1201,
+          "startYear": 1301,
           "endYear": 1600,
           "precision": "century"
         },
         "dominantPeoples": ["Wolof"],
         "politicalCenters": ["Jolof (capitale)", "Cayor", "Baol", "Waalo"],
-        "historicalRole": "Empire wolof puissant qui unifiait plusieurs royaumes. Commerce transsaharien et commerce côtier. Influence culturelle majeure."
+        "historicalRole": "Confédération fondée par Njajaan Njaay après la mort du mansa Souleymane du Mali en 1360, qui domine le nord de la Sénégambie, entre la Gambie et le Sénégal. Elle éclate au XVIe siècle, affaiblie par l'invasion menée par Koly Tenguella et par le commerce portugais, qui favorise les provinces côtières, selon Boubacar Barry."
       },
       {
         "name": "Royaumes sérères",
-        "period": "Précolonial - XIXe siècle",
+        "period": "XVIe siècle - époque coloniale",
         "entryType": "polity",
         "dominantPeoples": ["Sérère"],
         "politicalCenters": ["Sine", "Saloum"],
-        "historicalRole": "Royaumes sérères indépendants réputés pour leur résistance à l'islamisation et leur organisation politique."
+        "historicalRole": "Royaumes du Sine et du Saloum, dirigés par la dynastie guelwar, venue du Kaabu selon Boubacar Barry. Ils s'affranchissent du Jolof au XVIe siècle."
       },
       {
         "name": "Fouta Toro",
-        "period": "XVIIIe - XIXe siècles",
+        "period": "Années 1490 - XIXe siècle",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1701,
+          "startYear": 1490,
           "endYear": 1900,
-          "precision": "century"
+          "precision": "approximate",
+          "datingNote": "Le début correspond à la fondation de la dynastie denyanke dans les années 1490, selon Boubacar Barry ; la fin est arrondie au tournant du XXe siècle."
         },
-        "dominantPeoples": ["Peul (Toucouleurs)"],
+        "dominantPeoples": ["Toucouleurs (Haalpulaar'en)"],
         "politicalCenters": ["Fouta Toro (vallée du fleuve Sénégal)"],
-        "historicalRole": "Théocratie peule islamisée, modèle politique et religieux pour la région."
+        "historicalRole": "Royaume de la vallée du fleuve Sénégal, gouverné à partir des années 1490 par la dynastie denyanke, qui atteint son apogée au début du XVIIe siècle. En 1776, le parti torodo met fin au pouvoir denyanke et fonde un régime religieux dirigé par un almamy élu, selon Boubacar Barry."
       },
       {
         "name": "Sénégal français",
@@ -382,7 +384,7 @@
           "Tous les peuples sénégalais sous administration coloniale française"
         ],
         "politicalCenters": ["Saint-Louis (capitale coloniale)", "Dakar"],
-        "historicalRole": "Colonie française intégrée à l'AOF. Développement de Dakar comme capitale administrative. Résistance sénégalaise et mouvements nationalistes."
+        "historicalRole": "Colonie française dont le gouverneur reçoit en 1895 l'administration de toutes les colonies françaises d'Afrique de l'Ouest, réunies dans l'Afrique-Occidentale française (AOF). Le siège de la fédération passe ensuite de Saint-Louis à Dakar ; celui du gouvernement du Sénégal reste à Saint-Louis jusqu'en 1958."
       },
       {
         "name": "République du Sénégal",
@@ -395,7 +397,7 @@
         },
         "dominantPeoples": ["Tous les peuples sénégalais"],
         "politicalCenters": ["Dakar (capitale)"],
-        "historicalRole": "Indépendance en 1960. Histoire politique stable avec démocratie multipartite. Modèle de stabilité en Afrique de l'Ouest."
+        "historicalRole": "État indépendant depuis le 20 août 1960, après son retrait de la Fédération du Mali. Léopold Sédar Senghor le préside de 1960 à 1980, puis Abdou Diouf à partir de 1981."
       }
     ],
     "majorPeoples": [
@@ -406,23 +408,22 @@
         "peopleId": "PPL_WOLOF",
         "mainRegion": "Dakar, Thiès, Saint-Louis",
         "languages": ["Wolof", "français"],
-        "languageFamily": "FLG_NIGERCONGO",
+        "languageFamily": "FLG_ATLANTIQUE",
         "appellationRemarks": "Le terme \"Wolof\" est neutre et accepté."
       },
       {
         "name": "Peul / Fulani",
         "selfAppellation": "Fulɓe (pluriel), Pullo (singulier)",
         "exonyms": [
-          "Peul (terme français)",
-          "Fulani (terme haoussa)",
-          "\"Fellata\" (terme haoussa",
-          "parfois péjoratif - éviter)"
+          "Peul (nom courant en français, qui viendrait du wolof)",
+          "Fulani (nom courant en anglais, repris du haoussa)",
+          "Fellata (nom employé au Bornou et plus à l'est)"
         ],
         "peopleId": "PPL_FULA",
         "mainRegion": "Nord, vallée du fleuve Sénégal (Fouta Toro)",
         "languages": ["Pulaar", "français"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "Le terme \"Fellata\" peut être péjoratif. L'auto-appellation \"Fulɓe\" est préférée. \"Peul\" et \"Fulani\" sont acceptés."
+        "appellationRemarks": "Ils se nomment Fulɓe au pluriel et Pullo au singulier. Dans la vallée du fleuve Sénégal, beaucoup se nomment aussi Haalpulaar'en, « ceux qui parlent le pulaar »."
       },
       {
         "name": "Sérère",
@@ -467,33 +468,55 @@
         "peopleId": "PPL_SONINKE",
         "mainRegion": "Vallée du fleuve Sénégal, Est",
         "languages": ["Soninké", "français"],
-        "languageFamily": "FLG_NIGERCONGO",
+        "languageFamily": "FLG_MANDE",
         "appellationRemarks": "Le terme \"Soninké\" est neutre et accepté. \"Sarakolé\" est une variante acceptée."
       }
     ],
     "culture": {
       "mainLanguages": [
-        { "name": "Français", "isoCode": "fra", "isPrimary": true },
-        { "name": "Wolof", "isoCode": "wol" },
-        { "name": "Pulaar", "isoCode": "fuf" },
-        { "name": "Sérère", "isoCode": "srr" },
-        { "name": "Diola / Jola", "isoCode": "dyo" },
-        { "name": "Malinké", "isoCode": "man" },
-        { "name": "Soninké", "isoCode": "snk" }
+        {
+          "name": "Français",
+          "isoCode": "fra",
+          "isPrimary": true
+        },
+        {
+          "name": "Wolof",
+          "isoCode": "wol"
+        },
+        {
+          "name": "Pulaar",
+          "isoCode": "fuc"
+        },
+        {
+          "name": "Sérère",
+          "isoCode": "srr"
+        },
+        {
+          "name": "Diola / Jola",
+          "isoCode": "dyo"
+        },
+        {
+          "name": "Mandinka (malinké)",
+          "isoCode": "mnk"
+        },
+        {
+          "name": "Soninké",
+          "isoCode": "snk"
+        }
       ],
-      "culturalTraditions": "Musique traditionnelle (sabar, mbalax), danse traditionnelle, poésie orale (griot), artisanat (vannerie, poterie, tissage), architecture traditionnelle, lutte sénégalaise",
-      "dominantReligions": "Islam (soufi majoritaire : Tidjaniya, Mouridisme), christianisme (minorité), croyances traditionnelles (syncrétisme)",
-      "lifestyles": "Vie principalement rurale, agriculture (arachides, mil, sorgho, riz), élevage (bovins, caprins), pêche (côtes et fleuves), commerce, urbanisation croissante",
-      "socialOrganization": "Système de chefferies traditionnelles, structure clanique patrilinéaire, organisation en familles étendues et lignages, importance des griots (gardiens de la tradition orale), système de confréries soufies",
-      "regionalRelations": "Relations historiques avec les peuples de la Gambie, de la Mauritanie, du Mali, de la Guinée. Diaspora importante en France, en Italie, et dans les pays occidentaux."
+      "culturalTraditions": "La tradition orale est portée par les griots, appelés gawlo dans le Fouta Toro, selon l'Histoire générale de l'Afrique. Léopold Sédar Senghor, poète et premier président du pays, a fait de la négritude sa philosophie politique.",
+      "dominantReligions": "Islam, déclaré par 97 % des femmes et des hommes interrogés lors de l'enquête démographique et de santé de 2019 ; christianisme, déclaré par environ 3 %. La confrérie soufie des mourides, fondée par le cheikh Amadou Bamba, garde une grande importance, selon l'Histoire générale de l'Afrique.",
+      "lifestyles": "Le recensement de 2023 dénombre 18 126 390 habitants, dont 54,7 % vivent en ville. La culture de l'arachide pour l'exportation s'est développée pendant la période coloniale, en particulier chez les mourides. Le recensement ne publie pas l'appartenance ethnique : les parts par peuple données dans cette fiche viennent de l'enquête démographique et de santé de 2019 : ce sont les réponses d'un échantillon de femmes de 15 à 49 ans.",
+      "socialOrganization": "Au Fouta Toro, au Cayor, au Jolof, au Sine et au Saloum, la société s'est organisée en castes de métiers, parmi lesquelles celles des forgerons, des cordonniers et des griots, selon Pathé Diagne ; la révolution torodo de la fin du XVIIIe siècle a accentué ces divisions. Aux XVIIe et XVIIIe siècles, les aristocraties guerrières, les ceddo, et les marabouts musulmans s'opposent dans les royaumes wolof, selon Boubacar Barry.",
+      "regionalRelations": "Le Sénégal entoure presque entièrement la Gambie et borde la Mauritanie, le Mali, la Guinée et la Guinée-Bissau. En 1960, il forme brièvement la Fédération du Mali avec d'autres États d'Afrique de l'Ouest, puis s'en retire le 20 août."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement du territoire par des groupes wolof, sérère, peul, mandinka, jola. Influence des empires régionaux (Ghana, Mali, Songhai).",
-      "middleAges": "Développement de l'empire du Jolof (XIIIe-XVIe siècles). Royaumes sérères du Sine et du Saloum. Théocratie peule du Fouta Toro. Commerce transsaharien et commerce côtier.",
-      "precolonial": "Apogée des royaumes wolof et sérères. Commerce avec les Européens (or, ivoire, esclaves). Résistance à l'islamisation pour certains groupes (Sérère).",
-      "colonization": "XVe siècle : premiers contacts portugais. 1659 : Fondation de Saint-Louis par les Français. 1895 : Intégration à l'AOF. Développement de Dakar comme capitale administrative. Résistance sénégalaise.",
-      "independenceStruggle": "Mouvements nationalistes dans les années 1950. Indépendance obtenue en 1960. Léopold Sédar Senghor devient premier président.",
-      "postIndependence": "Première République (1960-1980) : présidence de Senghor, stabilité politique. Deuxième République (1981-2000) : présidence d'Abdou Diouf. Troisième République depuis 2000 : alternance démocratique, stabilité politique, développement économique. En juillet 1964, les chefs d'État et de gouvernement de l'Organisation de l'unité africaine, réunis au Caire, s'engagent à respecter les frontières existant à l'accession de chaque État à l'indépendance ; le texte ne mentionne pas le consentement des populations concernées. Dans une enquête Afrobarometer de 2005 menée dans seize pays africains et analysée par Amanda Robinson, 51 % des Sénégalais interrogés se disent plus attachés à leur pays qu'à leur groupe. Cette enquête mesure des déclarations recueillies en 2005 et n'explique pas les écarts entre pays."
+      "ancientPeriods": "Jusqu'au XVe siècle, la Sénégambie dépend des États du Soudan et du Sahara, dont le Mali, selon Boubacar Barry.",
+      "middleAges": "Après 1360, Njajaan Njaay fonde la confédération du Jolof, qui domine le nord de la Sénégambie jusqu'à son éclatement au XVIe siècle. Le Sine et le Saloum s'en affranchissent, et la dynastie denyanke fonde le royaume du Fouta Toro dans les années 1490.",
+      "precolonial": "Après l'éclatement du Jolof, le damel du Cayor Amari Ngoone tente d'unir le Cayor et le Baol. Les royaumes de la côte commercent avec les Européens installés à Gorée en 1621 et à Saint-Louis en 1659, dans le cadre de la traite atlantique. En 1776, la révolution torodo renverse le pouvoir denyanke au Fouta Toro.",
+      "colonization": "La conquête française commence en 1854. Le damel du Cayor Lat Dior s'oppose à la construction du chemin de fer entre Dakar et Saint-Louis et meurt au combat à Dekhlé le 27 octobre 1886. Le décret du 16 juin 1895 place les colonies françaises d'Afrique de l'Ouest sous l'autorité du gouverneur du Sénégal, au sein de l'Afrique-Occidentale française.",
+      "independenceStruggle": "Dans les années 1950, le Bloc démocratique sénégalais de Léopold Sédar Senghor rassemble au-delà des appartenances ethniques et obtient le soutien de grands marabouts musulmans, selon l'Histoire générale de l'Afrique. La République du Sénégal proclame son indépendance le 20 août 1960, après son retrait de la Fédération du Mali.",
+      "postIndependence": "Léopold Sédar Senghor préside le pays de 1960 à 1980, puis se retire ; Abdou Diouf lui succède en 1981. En juillet 1964, les chefs d'État et de gouvernement de l'Organisation de l'unité africaine, réunis au Caire, s'engagent à respecter les frontières existant à l'accession de chaque État à l'indépendance ; le texte ne mentionne pas le consentement des populations concernées. Dans une enquête Afrobarometer de 2005 menée dans seize pays africains et analysée par Amanda Robinson, 51 % des Sénégalais interrogés se disent plus attachés à leur pays qu'à leur groupe. Cette enquête mesure des déclarations recueillies en 2005 et n'explique pas les écarts entre pays."
     },
     "sources": [
       {
@@ -615,6 +638,111 @@
         "tier": "official",
         "source_kind": "government",
         "notes": "Fiche officielle britannique de toponymie, édition 2026 : le français langue officielle, six langues nationales (wolof, pulaar, sérère, jola, malinké, soninké) avec leurs codes ISO 639-3."
+      },
+      {
+        "title": "Agence nationale de la statistique et de la démographie (ANSD), RGPH-5 2023, Rapport définitif, Thème I : État et structure, urbanisation et caractéristiques socioculturelles de la population",
+        "url": "https://vie-publique.sn/docs/f5ae8d48-de94-4dea-882b-990bdfa1958d/etat-structure-urbanisation-caracteristiques-socioculturelles-population-rgph-5-2023-ansd.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport de l'ANSD, Dakar, juillet 2025, sur le cinquième recensement général de la population et de l'habitat. Lu le 3 novembre 2026 dans la copie déposée sur le site vie-publique.sn, le site de l'ANSD ne répondant pas ce jour-là. Page 33 : « Les résultats définitifs du RGPH-5 donnent une population totale de 18 126 390 d'habitants. » Page 57, tableau I-32, langue la plus parlée au quotidien par les personnes de 3 ans et plus : wolof 53,5 %, pulaar 26,3 %, sereer 9,6 %, joola 2,8 %, màndienka 2,8 %, sóninke 1,2 %, français 0,6 %. Le rapport ne publie pas de répartition par groupe ethnique."
+      },
+      {
+        "title": "Sénégal : Enquête démographique et de santé continue (EDS-Continue) 2019, Rapport sur les indicateurs clés",
+        "url": "https://dhsprogram.com/pubs/pdf/FR368/FR368.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "ANSD et The DHS Program (ICF), novembre 2020, lu le 3 novembre 2026. Page 6, tableau 2 : répartition des femmes de 15 à 49 ans interrogées selon l'ethnie déclarée, Wolof 40,2 %, Poular 28,0 %, Serer 15,3 %, Mandingue/Socé 4,9 %, Diola 4,0 %, Soninké 2,6 %, autres et non-Sénégalais 5,1 %. Chez les hommes, Wolof 38,6 %, Poular 26,0 %, Serer 17,7 %. Religion déclarée : musulmane 97,2 % des femmes, chrétienne 2,7 %. C'est une enquête par échantillon, pas un recensement."
+      },
+      {
+        "title": "Senegal 2001 (rev. 2016), Constitute Project",
+        "url": "https://www.constituteproject.org/constitution/Senegal_2016",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Traduction anglaise de la Constitution du 22 janvier 2001 révisée en 2016, par J. J. Ruchti (William S. Hein & Co.), lue le 3 novembre 2026. Article premier : « The official language of the Republic of Senegal is French. The national languages are the Diola, the Malinké, the Pular, the Sérère, the Soninké and the Wolof and any other national languages which shall be codified. »"
+      },
+      {
+        "title": "Glottolog 5.3 — Pulaar (pula1263)",
+        "url": "https://glottolog.org/resource/languoid/id/pula1263",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice lue le 3 novembre 2026. Le pulaar, code ISO 639-3 fuc, est classé dans la branche peule des langues atlantiques du Nord et du Centre, à côté du sereer ; le pular de Guinée porte un autre code, fuf."
+      },
+      {
+        "title": "Glottolog 5.3 — Sereer (sere1260)",
+        "url": "https://glottolog.org/resource/languoid/id/sere1260",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice lue le 3 novembre 2026. Le sereer, code ISO 639-3 srr, est classé dans les langues atlantiques du Nord et du Centre."
+      },
+      {
+        "title": "Glottolog 5.3 — Jola-Fonyi (jola1263)",
+        "url": "https://glottolog.org/resource/languoid/id/jola1263",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice lue le 3 novembre 2026. Le jola-fonyi, code ISO 639-3 dyo, est classé dans les langues atlantiques du Nord et du Centre, groupe bak."
+      },
+      {
+        "title": "Glottolog 5.3 — Wolof (nucl1347)",
+        "url": "https://glottolog.org/resource/languoid/id/nucl1347",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice lue le 3 novembre 2026. Le wolof, code ISO 639-3 wol, est classé dans les langues atlantiques du Nord et du Centre."
+      },
+      {
+        "title": "Glottolog 5.3 — Mandinka (mand1436)",
+        "url": "https://glottolog.org/resource/languoid/id/mand1436",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice lue le 3 novembre 2026. Le mandinka, code ISO 639-3 mnk, est classé dans les langues mandé de l'Ouest."
+      },
+      {
+        "title": "Glottolog 5.3 — Soninke (soni1259)",
+        "url": "https://glottolog.org/resource/languoid/id/soni1259",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice lue le 3 novembre 2026. Le soninké, code ISO 639-3 snk, est classé dans les langues mandé de l'Ouest."
+      },
+      {
+        "title": "General History of Africa, V, ch. 10: Senegambia from the sixteenth to the eighteenth century: evolution of the Wolof, Sereer and 'Tukuloor'",
+        "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_v.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, édition anglaise abrégée de 1998 ; chapitre de Boubacar Barry, lu le 3 novembre 2026 dans l'exemplaire numérisé déposé par South African History Online. Page 263 : après la mort du mansa Sulaymān en 1360, Njajaan Njaay fonde la confédération du Jolof, qui étend son autorité sur le nord de la Sénégambie entre la Gambie et le Sénégal ; la dynastie guelwar du Siin et du Salum vient du Kaabu ; la dynastie denyanke du Fouta Toro naît dans les années 1490. Page 267 : après la victoire d'Amari Ngoone à Danki, le Jolof éclate, et le Siin et le Salum s'en affranchissent au XVIe siècle. Page 269 : les Hollandais s'installent à Gorée en 1621, les Français à Saint-Louis en 1659. Page 295 : en 1776, le parti torodo met fin au pouvoir denyanke ; ʿAbd al-Qādir Kan est élu almamy."
+      },
+      {
+        "title": "General History of Africa, V, ch. 2: African political, economic and social structures during this period",
+        "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_v.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, édition anglaise abrégée de 1998 ; chapitre de Pathé Diagne, lu le 3 novembre 2026. Pages 31 et 32 : le système des castes du Takrur gagne le Cayor, le Jolof, le Siin et le Salum ; la révolution torodo de la fin du XVIIIe siècle l'accentue ; parmi les castes de métiers figurent les cordonniers, les forgerons et les griots, appelés gawlo."
+      },
+      {
+        "title": "General History of Africa, VII, ch. 6: African initiatives and resistance in West Africa, 1880-1914",
+        "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_vii.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par A. Adu Boahen ; chapitre de M'Baye Gueye et A. Adu Boahen, lu le 3 novembre 2026 dans l'exemplaire numérisé déposé par South African History Online. Page 117 : « In Senegal, where the conquest had been going on since 1854 ». Pages 118 et 119 : Lat Dior, damel du Cayor, s'oppose au chemin de fer Dakar-Saint-Louis et meurt au puits de Dekhlé le 27 octobre 1886."
+      },
+      {
+        "title": "General History of Africa, VIII, ch. 15: Nation-building and changing political structures",
+        "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_viii.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par Ali A. Mazrui ; chapitre de J. Isawa Elaigwu avec Ali A. Mazrui, lu le 3 novembre 2026 dans l'exemplaire numérisé déposé par South African History Online. Page 443 : le Bloc démocratique sénégalais de Senghor dépasse les appartenances ethniques et gagne l'appui de grands marabouts. Page 452 : la négritude, philosophie de l'État de Senghor. Page 459, tableau 15.1 : Léopold Sédar Senghor, 1960-1980 ; Abdou Diouf, depuis 1981."
+      },
+      {
+        "title": "General History of Africa, VIII, ch. 17: Religion and social evolution",
+        "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_viii.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par Ali A. Mazrui ; chapitre de Tshishiku Tshibangu avec J. F. Ade Ajayi et Lemin Sanneh, lu le 3 novembre 2026. Page 511 : le cheikh Amadou Bamba fonde la confrérie soufie des mourides, dont l'expansion chez les Wolof va de pair avec la culture de l'arachide pour l'exportation ; « the continued importance of the Mourides in contemporary Senegal »."
+      },
+      {
+        "title": "Archives du gouvernement général de l'Afrique occidentale française (A.O.F.) puis du Haut-Commissariat, 183PO/1",
+        "url": "https://archivesdiplomatiques.diplomatie.gouv.fr/media/79db1165-b30a-48d6-aa0a-9bbdc1634c9e.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Inventaire du Centre des archives diplomatiques de Nantes, ministère des Affaires étrangères, 2015, lu le 3 novembre 2026. Page 5 : « Le premier statut de l'Afrique occidentale française est défini par le décret du 16 juin 1895, qui confie au Gouverneur de la colonie du Sénégal […] l'administration de l'ensemble des colonies françaises d'Afrique de l'ouest » ; le siège de la fédération passe de Saint-Louis à Dakar, celui du gouvernement du Sénégal en 1958."
       }
     ],
     "demographics": {
@@ -624,43 +752,71 @@
       "peoples": [
         {
           "name": "Wolof",
-          "percentageInCountry": 39.7,
-          "percentageInAfrica": 0.52,
+          "percentageInCountry": 40.2,
+          "percentageInAfrica": 0.53,
           "peopleId": "PPL_WOLOF",
           "region": "Dakar, Thiès, Saint-Louis",
-          "languageFamily": "FLG_NIGERCONGO"
+          "languageFamily": "FLG_ATLANTIQUE",
+          "referenceYear": 2019
         },
         {
           "name": "Peul / Fulani",
-          "percentageInCountry": 27.5,
-          "percentageInAfrica": 0.31,
+          "percentageInCountry": 28.0,
+          "percentageInAfrica": 0.32,
           "peopleId": "PPL_FULA",
           "region": "Nord, vallée du fleuve Sénégal (Fouta Toro)",
-          "languageFamily": "FLG_ATLANTIQUE"
+          "languageFamily": "FLG_ATLANTIQUE",
+          "referenceYear": 2019
         },
         {
           "name": "Sérère",
-          "percentageInCountry": 16,
-          "percentageInAfrica": 0.19,
+          "percentageInCountry": 15.3,
+          "percentageInAfrica": 0.18,
           "peopleId": "PPL_SERER",
           "region": "Centre-Ouest (Fatick, Kaolack)",
-          "languageFamily": "FLG_ATLANTIQUE"
+          "languageFamily": "FLG_ATLANTIQUE",
+          "referenceYear": 2019
         },
         {
           "name": "Diola / Jola",
-          "percentageInCountry": 4.2,
+          "percentageInCountry": 4.0,
           "percentageInAfrica": 0.06,
           "peopleId": "PPL_DIOLA",
-          "region": "Casamance ("
+          "region": "Casamance (Ziguinchor)",
+          "referenceYear": 2019,
+          "languageFamily": "FLG_ATLANTIQUE"
         },
         {
-          "name": "Autres groupes ethniques",
+          "name": "Mandingue / Socé",
+          "percentageInCountry": 4.9,
+          "percentageInAfrica": 0.06,
+          "peopleId": "PPL_MALINKE",
+          "region": "Est et Casamance",
+          "languageFamily": "FLG_MANDE",
+          "referenceYear": 2019
+        },
+        {
+          "name": "Soninké",
+          "percentageInCountry": 2.6,
+          "percentageInAfrica": 0.03,
+          "peopleId": "PPL_SONINKE",
+          "region": "Vallée du fleuve Sénégal, Est",
+          "languageFamily": "FLG_MANDE",
+          "referenceYear": 2019
+        },
+        {
+          "name": "Autres groupes et non-Sénégalais",
           "peopleId": null,
           "region": "Divers",
           "languageFamily": null,
-          "percentageInCountry": 12.6
+          "percentageInCountry": 5.1,
+          "referenceYear": 2019
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "Le Sénégal est un pays d'Afrique de l'Ouest qui tient son nom du fleuve qui le borde au nord et à l'est, un nom dont l'origine est discutée.",
+      "followUp": "Quelles explications les auteurs donnent-ils du nom Sénégal ?"
     }
   }
 }
