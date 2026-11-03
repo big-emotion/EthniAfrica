@@ -2,158 +2,10 @@
   "id": "PPL_VILI",
   "nameMain": "Vili",
   "languageFamilyId": "FLG_NIGERCONGO",
-  "currentCountries": ["COG", "GAB", "COD", "AGO"],
-  "content": {
-    "appellations": {
-      "mainName": "Vili",
-      "selfAppellation": "Vili",
-      "exonyms": [
-        "Bavili",
-        "Bavilis",
-        "Fiote (terme portugais pejoratif signifiant noir)",
-        "Loango (en reference au royaume)",
-        "Bafiote (terme utilise par les missionnaires du 19e siecle)"
-      ],
-      "originOfExonyms": "Le terme Vili, atteste des le 17e siecle sous la forme Mobili (pluriel Mobilis en portugais), deriverait du mot Piri (nom du territoire d'origine dans le Loango). Une personne de Piri etait appelee Mbanza Loango, d'ou Muvili par syncopation. Le terme Fiote (du portugais feitiço ou du mot local pour noir) est considere comme pejoratif et abandonné. Bavili est la forme bantou au pluriel.",
-      "whyProblematic": null,
-      "contemporaryUsage": "Le terme Vili est aujourd'hui le nom propre du peuple. Bavili est utilise dans les contextes anthropologiques et historiques. La langue est appellee civili (ou tshivili). Les Vili se definissent comme les heritiers du royaume de Loango.",
-      "linguisticFamily": "FLG_NIGERCONGO",
-      "ethnoLinguisticGroup": "Bantou (Zone H, sous-groupe Kongo; classification Guthrie H12)",
-      "historicalRegion": "Cote de Loango (facade atlantique de l'actuelle Republique du Congo, sud du Gabon, Cabinda/Angola), bassin des rivieres Kouilou et Niari",
-      "currentCountries": ["COG", "GAB", "COD", "AGO"]
-    },
-    "ethnicities": [
-      "Vili de la region de Kouilou (Republique du Congo), groupe principal autour de Pointe-Noire et de l'ancienne capitale Bwali/Loango",
-      "Vili de Mayumba (Gabon, environ 5 000 personnes)",
-      "Vili de Cabinda (Angola)",
-      "Vili de la RDC (zone de l'embouchure du Congo)",
-      "Clans Kondi et Nkata (famille royale du royaume de Loango)",
-      "Clan Bawoyo (dynasty fondatrice du royaume, descend de la fraternite des Forgerons du Buvandji)"
-    ],
-    "origins": {
-      "ancientOrigins": "Les Vili sont originellement une province du grand royaume de Kongo (Kongo Dia Nthotila). Ils constituent une branche du peuple Kongo etablie sur la cote atlantique au nord du fleuve Congo. Selon les sources europeennes du 17e siecle (Andrew Battel vers 1610, Olfert Dapper), le fondateur du royaume de Loango fut Njimbe, chef de la dynastic Bawoyo issu de la fraternite des Forgerons du Buvandji, dont le regne dura environ soixante ans au 16e siecle. La province de Loango se separa du royaume de Kongo, avec les provinces de Ngoyo et Kakongo, pour devenir independante au 16e siecle.",
-      "formationPeriod": "Le royaume de Loango s'etablit probablement avant 1485 (selon Britannica, c'est l'un des plus anciens et plus grands royaumes de la region). Il s'emancipe definitivement du Kongo vers 1584 et developpe ses propres structures politiques et commerciales. La langue civili se distinct progressivement du kikongo au cours des 16e-18e siecles.",
-      "migrationRoutes": [
-        "Etablissement originel issu de la migration bantou depuis l'Afrique centrale vers la cote atlantique entre le 1er et le 15e siecle",
-        "Extension du peuplement vili depuis la capitale Bwali/Loango le long de la cote vers le nord (Gabon) et vers le sud (Cabinda, Bas-Congo)",
-        "Migrations induites par le commerce cotier et les routes de caravanes vers l'interieur (Massif du Mayombe, Pool Malebo)"
-      ],
-      "historicalSettlementZones": [
-        "Bwali / Loango (capitale historique du royaume, departement de Kouilou, Republique du Congo)",
-        "Cote de Loango (entre Sette Cama au nord et Cabinda au sud)",
-        "Departement de Kouilou (plaine cotiere entre l'ocean et le Massif du Mayombe, Republique du Congo)",
-        "Mayumba (cote sud du Gabon)",
-        "Region de Cabinda (exclave angolaise, ancienne province de Ngoyo)"
-      ],
-      "unificationsOrDivisions": "Le royaume de Loango englobait sept provinces gouvernees par des gouverneurs designes par le Ma Loango (roi). Les peuples voisins Yombe, Lumbu, Vungu, Punu et Kugni vivaient harmonieusement sous l'autorite du Loango. La relation Bundiku (bon voisinage) fut developpee avec les Kugni pour eviter les conflits. La colonisation francaise (traites de 1883-1885) desintegra progressivement le royaume. La ville de Pointe-Noire (fondee en 1922) depopula les villages vili traditionnels.",
-      "externalInfluences": "Contacts precoces avec les Portugais (fin 15e siecle), puis avec les Hollandais, Anglais et Allemands qui ouvrirent des comptoirs commerciaux sur la cote. La traite negriere (17e-19e siecles) enrichit une minorite vili mais desarticule la structure sociale et reduisit considerablement la population. Les epidemies de trypanosomiase et de variole decimèrent le peuple. La colonisation francaise (traites de 1883-1885, Berlin 1885) mit fin a l'independance du Loango.",
-      "majorHistoricalEvents": "En 1849, des esclaves vili, lumbu, yaka et bongo liberes par la marine francaise furent installes aupres des Mpongwé, donnant naissance a Libreville (Gabon). Le traite de Tchimbamba (21 juin 1883) signa la cession de souverainete au lieutenant Robert Cordier (France). En 1885, le traite de Simulambuco plaça les royaumes de Kakongo, Loango et Ngoyo sous protection portugaise (Cabinda). La construction du port en eaux profondes de Pointe-Noire (1922) et du chemin de fer Congo-Ocean (CFCO) provoquerent un exode rural massif. En 1982, le palais du Ma Loango (Moe Poaty III, construit en 1952) devient musee national. La restauration symbolique du royaume de Loango fut entreprise apres 1991."
-    },
-    "organization": {
-      "traditionalPoliticalSystem": "Le royaume de Loango etait dirige par un roi (Ma Loango) entoure d'un gouvernement et de gouverneurs des sept provinces. Un mecanisme electif participait a la designation du souverain (contrairement aux monarchies purement hereditaires). Apres la colonisation, les chefferies locales subsisterent sous supervision francaise puis congolaise. Aujourd'hui, le Ma Mboma Si Loango (chef traditionnel de Bwali) represente la continuite symbolique de l'autorite royale.",
-      "clanOrganization": "La societe vili est fondamentalement matrilineaire. Les clans (likanda) sont definis par la lignee maternelle. Le clan maternel (tchifumba) determine l'appartenance sociale et les droits hereditaires, tandis que le clan paternel (tchisya) a un role secondaire. Les clans royaux sont Kondi et Nkata. L'oncle maternel (ma nkashi) detient historiquement un droit de vie et de mort sur ses neveux (bana bu nkashi) et gere le territoire clanique (si likanda).",
-      "ageClassSystems": null,
-      "roleOfLineages": "La matrilinearite est la fondation de toute l'organisation sociale vili. La succession au trone et aux titres se transmet par la lignee maternelle (seul le sang Moe/Mwe de noblesse permet d'acceder au trone). L'oncle maternel (Ma Nkashi) est la figure d'autorite clanique la plus importante, gerant les biens collectifs du clan et arbitrant les conflits. Le territoire clanique (si likanda) est delimite spirituellement par les genies ancestraux (nkisi/bakisi), pas par les hommes.",
-      "religiousAuthority": "Les pretres et pretresses associes aux sanctuaires sacres (tchibila: sources, rivieres, montagnes dont le mont Bamba, gorges de Diosso et gorges de Sunda, bosquets sacres) detiennent une autorite religieuse importante. Les nkisi (objets-fetiches) et les nkisi konde (fetiches a clous) sont les representations physiques celebres de la spiritualite vili, reconnus dans les grandes collections d'art africain mondiales. L'oncle maternel est aussi l'intercesseur aupres des ancetres. Les eglises chretiennes (catholiques, protestantes, kimbanguistes) sont tres presentes depuis le 20e siecle."
-    },
-    "languages": {
-      "mainLanguage": "Civili (Vili)",
-      "isoCodes": ["vif"],
-      "dialects": [
-        "Civili ci Luango (dialecte de Loango/Bwali, reference)",
-        "Civili ci Moongo (dialecte de Moeindji)",
-        "Civili ci Waanda (dialecte de Ouanda)",
-        "Civili ci Yombe (dialecte proche du yombe, mutuelle intelligibilite)",
-        "Tshivili / Tsivili (formes orthographiques alternatives)"
-      ],
-      "vehicularRole": "Le civili est parle par environ 50 000 personnes (estimation 2010), dont 45 000 en Republique du Congo et 5 000 au Gabon. C'est la langue maternelle des Vili du Kouilou. Il est mutuellement intelligible avec le yombe (dialecte du kikongo). Le francais est la langue officielle et vehiculaire au Congo et au Gabon. Le lingala et le kikongo sont des langues nationales du Congo. La classification Guthrie place le civili en H12 (Zone H, groupe Kongo)."
-    },
-    "culture": {
-      "majorRites": "Les rites funeraires vili sont parmi les plus elabores: apres le deces, la maison du defunt est traditionnellement demontee ou abandonnee (symbolisant la rupture avec la vie terrestre). Des manguiers et d'autres arbres fruitiers plantes par le defunt marquent l'age du village. Les rituels d'installation des nkisi (fetiches) impliquent des ceremonies de consecration avec des ingredients vegetaux, animaux et mineraux. Les rites de passage impliquent des ceremonies d'initiation pour les garcons et les filles au sein de la structure clanique. Les libations rituelles de vin de palme etaient effectuees lors des ceremonies importantes. Le proverbe fondateur: Bukulu vandu vandu (Honneurs aux Anciens!) symbolise le respect des ancetres.",
-      "symbols": "Le nkisi (objet-fetiche, singulier; bakisi au pluriel) est le symbole spirituel le plus celebre des Vili, connu dans le monde entier depuis les collections coloniales (influences reconnues par Henri Matisse et Pablo Picasso en 1906). Le Ma Loango (roi) est le symbole supreme du pouvoir et de l'unite vili. La mangrove (misenge, plante qui semble morte mais dont les rejets sont perennes) est le symbole de la resilience du peuple vili (selon le proverbe d'accueil). Les sanctuaires naturels (tchibila) - sources, gorges de Diosso, mont Bamba - sont des symboles spirituels territoriaux.",
-      "artsAndMusic": "La sculpture vili est celebre dans le monde entier, notamment les nkisi konde (fetiches a clous en bois, invoques pour reparer les injustices sociales: chaque clou marque un contrat ou une accusation). Les sculptures ont influence directement l'art moderne occidental (Picasso, Matisse). La ceramique traditionnelle et le tissage de raphia font partie des artisanats vili. La musique traditionnelle utilise des tambours, des rhombes et des chants a repondre. Les proverbes (malunga) occupent une place centrale dans la langue et la culture vili, refletant leur vision du monde et leur organisation sociale.",
-      "spiritualities": "La spiritualite vili est centree sur la notion de nkisi (force spirituelle, objet qui la materialise). Les nkisi sont des assemblages d'ingredients (os, plumes, poudres, miroirs, clous, tissus) concentrant des forces ancestrales ou naturelles. Le territoire (si ou tsi) est delimite spirituellement par des genies (nkisi/bakisi) qui en gardent les limites. Les ancetres du clan veillent sur les vivants depuis l'au-dela et peuvent etre invoques ou apaises par des rituels. Le dieu-serpent Bunzi (dieu de la pluie et de la fertilite, venere dans le sanctuaire de Tchissanga) est une divinite specifique au pantheon vili-loango. Depuis le 20e siecle, le christianisme (catholique, protestant, kimbanguiste) est tres repandu, en syncrétisme avec les pratiques traditionnelles."
-    },
-    "historicalRole": {
-      "kingdomsOrChiefdoms": "Le royaume de Loango (fonde avant 1485, capital Bwali) fut l'un des royaumes precoloniaux les plus puissants de l'Afrique centrale atlantique. Gouverne par les Ma Loango (rois), il controlait un vaste territoire de Sette Cama (Gabon) jusqu'a Cabinda (Angola), des la cote jusqu'au Massif du Mayombe. A son apogee (16e-17e siecle), il importait de l'ivoire et des esclaves depuis l'interieur via des routes commerciales atteignant le Pool Malebo. Les Ma Loango notables incluent: Moe Poaty III (couronne le 18 mars 1931, decede le 3 mai 1975) et Manimakosso-Tchinkosso (1879-1885, ayant capitule devant le lieutenant Cordier).",
-      "relationsWithNeighbors": "Les Vili developperent tres tot des relations commerciales d'egal a egal avec les Europeens (Portugais, Hollandais, Anglais, Allemands) qui etablirent des comptoirs sur la cote de Loango. Ils furent des intermediaires commerciaux essentiels entre les peuples de l'interieur et les marchands europeens. La relation Bundiku avec les Kugni voisins illustre une diplomatie de bon voisinage. Avec les Yombe (groupe ethniquement le plus proche des Vili), les Lumbu, Vungu et Punu, ils coexistaient harmonieusement au sein du Loango. Des interminages avec les pygmees Babenzi, Binga ou Baka sont documentes.",
-      "conflictsOrAlliances": "L'engagement dans la traite negriere aux 17e-19e siecles profita a une elite vili tout en bouleversant la societe. En 1849, un incident impliquant un navire bresilien fit que des esclaves vili liberes par la marine francaise fondirent la ville de Libreville au Gabon. La rivalite entre Pierre Savorgnan de Brazza et Henry Morton Stanley pour le controle de l'Afrique centrale se fit au detriment du Loango (traites imposes dans les annees 1880). La France et le Portugal se partagerent les territoires vili lors de la Conference de Berlin (1885). Des guerres civiles en Republique du Congo (1993, 1997) n'epargnerent pas la region de Kouilou.",
-      "diaspora": "Depuis les annees 1920-1960, la construction du port de Pointe-Noire et du chemin de fer Congo-Ocean a provoque une urbanisation massive des Vili, dont plus de 60% vivent desormais en ville (principalement Pointe-Noire). La diaspora vili se retrouve a Brazzaville, Libreville et dans les grandes villes d'Afrique centrale. A l'etranger, des communautes congolaises dont des Vili sont presentes en France, en Belgique et aux Etats-Unis."
-    },
-    "demography": {
-      "totalPopulation": 100000,
-      "referenceYear": 2025,
-      "source": "Ethnologue (SIL International): environ 50 000 locuteurs du civili en 2010 (45 000 en Republique du Congo, 5 000 au Gabon). Estimation demographique de Maurice Chabeuf (1957): 36 000 nationaux vili. La population totale (incluant les membres du groupe ethnique au-dela des locuteurs stricts) est estimee a environ 100 000 personnes en 2025, avec une majorite en Republique du Congo.",
-      "distributionByCountry": [
-        {
-          "country": "COG",
-          "population": 85000,
-          "note": "Principalement departement de Kouilou (cote atlantique), avec une concentration a Pointe-Noire et dans les villages autour de Bwali/Loango"
-        },
-        {
-          "country": "GAB",
-          "population": 10000,
-          "note": "Principalement la region de Mayumba (sud du Gabon)"
-        },
-        {
-          "country": "AGO",
-          "population": 4000,
-          "note": "Exclave de Cabinda (ancienne province de Ngoyo du royaume de Loango)"
-        },
-        {
-          "country": "COD",
-          "population": 1000,
-          "note": "Zone du Bas-Congo, groupes residuels"
-        }
-      ]
-    },
-    "sources": [
-      {
-        "title": "Britannica — Kingdom of Loango",
-        "url": "https://www.britannica.com/place/Kingdom-of-Loango",
-        "tier": "unverified",
-        "source_kind": "encyclopedia"
-      },
-      {
-        "title": "Britannica — Vili people",
-        "url": "https://www.britannica.com/topic/Vili-people",
-        "tier": "unverified",
-        "source_kind": "encyclopedia"
-      },
-      {
-        "title": "SIL ISO 639-3 — Vili (vif)",
-        "url": "https://iso639-3.sil.org/code/vif",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
-      },
-      {
-        "title": "Ethnologue — Vili language (vif)",
-        "url": "https://www.ethnologue.com/language/vif/",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
-      },
-      {
-        "title": "Joshua Project — Vili, Fioti in Congo, Republic of the",
-        "url": "https://joshuaproject.net/people_groups/15792/CF",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "African History Extra — A history of the Loango kingdom (ca.1500-1883)",
-        "url": "https://www.africanhistoryextra.com/p/a-history-of-the-loango-kingdom-ca1500",
-        "tier": "unverified",
-        "source_kind": "community"
-      },
-      {
-        "title": "101 Last Tribes — Vili people",
-        "url": "https://www.101lasttribes.com/tribes/vili.html",
-        "tier": "unverified",
-        "source_kind": "community"
-      }
-    ]
-  },
+  "currentCountries": ["COG", "GAB", "AGO", "COD"],
+  "classificationStatus": "consensual",
   "nameHistory": {
-    "summary": "Le nom Vili désigne un peuple de la côte de Loango, au Congo, au Gabon et dans l'enclave de Cabinda, qui se nomme lui-même Vili, au pluriel Bavili. D'autres noms existent : Fiote, que ce peuple emploie aussi pour lui-même, et Loango, le nom de l'ancien royaume. Les sources ne s'accordent pas sur leur origine ; nous les présentons plus bas.",
+    "summary": "Le nom Vili désigne un peuple de la côte de Loango, en République du Congo, au Gabon et dans l'enclave angolaise de Cabinda, qui se nomme lui-même Vili, au pluriel Bavili. Ce peuple porte d'autres noms : il se nomme aussi Fiote, et des auteurs étrangers l'ont appelé Bramas, Mouviri ou Loango, du nom de l'ancien royaume. Les sources ne s'accordent pas sur l'origine de ces noms ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Vili",
@@ -161,9 +13,9 @@
         "selfGiven": true,
         "languageOfOrigin": "vif",
         "namedBy": null,
-        "shortLine": "Le nom qu'ils se donnent ; deux explications s'opposent sur son origine.",
+        "shortLine": "Le nom qu'ils se donnent ; deux explications de son origine s'opposent.",
         "usedIn": ["vif", "fra", "eng"],
-        "periodLabel": "Écrit dès 1906 ; en usage aujourd'hui",
+        "periodLabel": "Écrit dès 1902 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
@@ -172,8 +24,8 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Vili désigne aujourd'hui une langue vivante dans la norme ISO 639-3, sous le code vif. On ne sait pas avec certitude d'où vient ce nom : deux explications sont présentées plus bas.",
-            "aspect": "meaning",
+            "statement": "Le nom Vili est aussi celui d'une langue vivante, le civili, que la norme internationale ISO 639-3 désigne par le code vif. Le catalogue Glottolog la range parmi les parlers kikongo de l'Ouest.",
+            "aspect": "usage",
             "sources": [
               {
                 "title": "ISO 639-3, code vif : Vili",
@@ -182,29 +34,66 @@
                 "url": "https://iso639-3.sil.org/code/vif",
                 "tier": "official",
                 "source_kind": "linguistic_reference"
+              },
+              {
+                "title": "Glottolog 5.3 — Vili (vili1238)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/vili1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde tenu par des linguistes. La fiche donne le code ISO vif et range le vili dans le groupe vili, lui-même placé parmi les parlers kikongo de l'Ouest."
               }
             ]
           },
           {
             "period": {
-              "from": 1906,
-              "to": 1906,
-              "label": "1906"
+              "from": 2009,
+              "to": 2009,
+              "label": "2009"
             },
-            "era": "colonial",
-            "statement": "Le nom Vili apparaît au pluriel, Bavili, chez le commerçant anglais R. E. Dennett, qui désigne ainsi les habitants du Loango, sur la côte entre la rivière Mayumba au nord et la Chiluango au sud. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait là bien avant lui.",
-            "formAsWritten": "Bavili",
-            "birth": true,
+            "era": "modern",
+            "statement": "Le nom Vili, au pluriel Bavili, désigne le peuple qui parle le civili, une langue que l'on écrit aussi tchivili. Le linguiste P. A. Mavoungou, de l'université Omar Bongo de Libreville, présente les Vili comme les principaux héritiers de l'ancien royaume de Loango.",
+            "aspect": "usage",
             "sources": [
               {
-                "title": "At the back of the black man's mind, or Notes on the kingly office in West Africa",
-                "author": "R. E. Dennett",
-                "year": 1906,
-                "url": "https://archive.org/details/atbackofblackman00dennuoft",
+                "title": "Compte rendu de ILALOK, Dictionnaire vili–français (Lexikos 19)",
+                "author": "P. A. Mavoungou",
+                "year": 2009,
+                "url": "https://lexikos.journals.ac.za/pub/article/view/454/143",
                 "tier": "referenced",
-                "source_kind": "archive",
-                "page": "p. 3",
-                "notes": "Londres, Macmillan, 1906. Lu sur sa numérisation par la bibliothèque de l'université de Toronto. L'auteur, commerçant anglais au Congo, emploie le vocabulaire racial de son époque."
+                "source_kind": "academic",
+                "notes": "Revue de lexicographie Lexikos, n° 19, 2009, p. 524-527. L'auteur appartient au département des sciences du langage de l'université Omar Bongo, à Libreville. Il présente le dictionnaire vili-français publié en 2008 chez L'Harmattan par l'Institut des langues locales au Kouilou.",
+                "page": "p. 524-525"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Vili figure dans le dictionnaire du missionnaire Christophe Marichelle. Bavili, au singulier Nvili, y désigne les habitants du bas Congo français que l'on appelait aussi Loangos, et la phrase « Ba vili tu kele » y est traduite par « nous sommes des vilis ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait là bien avant lui.",
+            "formAsWritten": "Vili",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Christophe Marichelle",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Dictionnaire Vili-Français",
+                "author": "Christophe Marichelle",
+                "year": 1902,
+                "url": "https://archive.org/details/DictionnaireViliFrancais",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Imprimé à la mission catholique de Loango en 1902. Dans sa préface, l'auteur, missionnaire, dit avoir vécu sept ans parmi les habitants du Loango. Lu sur la numérisation de Google reprise par Internet Archive ; la page 207 a été vérifiée sur l'image.",
+                "page": "p. 207"
               }
             ]
           },
@@ -255,15 +144,76 @@
         ]
       },
       {
+        "nameText": "Bavili",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "vif",
+        "namedBy": null,
+        "variantSpelling": true,
+        "shortLine": "La forme du nom Vili quand on parle de plusieurs personnes.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bavili, forme plurielle de Vili, désigne chez le commerçant anglais R. E. Dennett les habitants du Loango, sur la côte qui va de la rivière Mayumba au nord à la Chiluango au sud.",
+            "formAsWritten": "Bavili",
+            "actors": [
+              {
+                "name": "R. E. Dennett",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "At the back of the black man's mind, or Notes on the kingly office in West Africa",
+                "author": "R. E. Dennett",
+                "year": 1906,
+                "url": "https://archive.org/details/atbackofblackman00dennuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3",
+                "notes": "Londres, Macmillan, 1906. Lu sur sa numérisation par la bibliothèque de l'université de Toronto. L'auteur, commerçant anglais au Congo, emploie le vocabulaire racial de son époque."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "nameText": "Fiote",
-        "nameStatus": "former",
+        "nameStatus": "current",
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Un nom que les gens de Loango se donnaient aussi ; trois explications de son origine s'opposent.",
+        "shortLine": "Un autre nom que les Vili se donnent ; plusieurs explications de son origine existent.",
         "usedIn": ["vif", "eng", "deu", "por"],
-        "periodLabel": "Écrit sous une forme proche dès 1887",
+        "periodLabel": "Écrit dès 1887 ; encore employé aujourd'hui",
         "accounts": [
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Fiote, ou Fioti, est celui par lequel les Vili se désignent eux-mêmes, selon le linguiste P. A. Mavoungou, qui lui donne le sens d'hommes noirs.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Compte rendu de ILALOK, Dictionnaire vili–français (Lexikos 19)",
+                "author": "P. A. Mavoungou",
+                "year": 2009,
+                "url": "https://lexikos.journals.ac.za/pub/article/view/454/143",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Revue de lexicographie Lexikos, n° 19, 2009, p. 524-527. L'auteur appartient au département des sciences du langage de l'université Omar Bongo, à Libreville. Il présente le dictionnaire vili-français publié en 2008 chez L'Harmattan par l'Institut des langues locales au Kouilou.",
+                "page": "p. 525"
+              }
+            ]
+          },
           {
             "period": {
               "from": 1907,
@@ -309,13 +259,48 @@
           },
           {
             "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "1890"
+            },
+            "era": "colonial",
+            "statement": "Le nom Fiote s'écrit Fiot dans le titre du dictionnaire fiot-français du missionnaire spiritain Alexandre Visseq.",
+            "formAsWritten": "Fiot",
+            "actors": [
+              {
+                "name": "Alexandre Visseq",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Dictionnaire fiot-français",
+                "author": "Alexandre Visseq",
+                "year": 1890,
+                "url": "https://archive.org/details/dictionnairefio00vissgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre",
+                "notes": "Paris, maison mère de la Congrégation du Saint-Esprit, 1890. Dictionnaire d'un missionnaire spiritain. Lu sur la numérisation de Google reprise par Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1887,
               "to": 1887,
               "label": "1887"
             },
+            "era": "colonial",
             "statement": "Le nom Fiote a une forme proche, Fjort, dans le titre du livre du commerçant anglais R. E. Dennett sur ses sept années passées dans la région du Congo. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait là bien avant lui.",
             "formAsWritten": "Fjort",
             "birth": true,
+            "actors": [
+              {
+                "name": "R. E. Dennett",
+                "role": "écrit cette forme"
+              }
+            ],
             "sources": [
               {
                 "title": "Seven Years among the Fjort, being an English Trader's Experiences in the Congo District",
@@ -394,6 +379,60 @@
                 "notes": "Stuttgart, Strecker & Schröder, 1907. Lu sur sa numérisation par Google. Chapitre « Stämme: Art, Namen und Vermischung »."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "Donnée en 1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Fiote, au pluriel Bafiote, veut dire « les noirs » dans le dictionnaire de Christophe Marichelle, qui précise que ce nom sert pour les noirs de toutes origines. Le verbe fiota y veut dire « être noir, noircir ».",
+            "hypothesisGroup": "origine du nom Fiote",
+            "sources": [
+              {
+                "title": "Dictionnaire Vili-Français",
+                "author": "Christophe Marichelle",
+                "year": 1902,
+                "url": "https://archive.org/details/DictionnaireViliFrancais",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Imprimé à la mission catholique de Loango en 1902. Dans sa préface, l'auteur, missionnaire, dit avoir vécu sept ans parmi les habitants du Loango. Lu sur la numérisation de Google reprise par Internet Archive ; la page 207 a été vérifiée sur l'image.",
+                "page": "p. 53"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Fioti",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "shortLine": "Une autre façon d'écrire le nom Fiote.",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Rapporté en 2012"
+            },
+            "statement": "Le nom Fioti est l'autre nom que l'historienne Stacey Sommerdyk donne aux Vili, le peuple qui vivait à Loango et commerçait avec les Européens dans la baie de Loango.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Trade and the Merchant Community of the Loango Coast in the Eighteenth Century",
+                "author": "Stacey Jean Muriel Sommerdyk",
+                "year": 2012,
+                "url": "https://archive.org/details/tatmcotlcitec",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Thèse de doctorat d'histoire, université de Hull (Royaume-Uni), mai 2012. Lue dans la version déposée sur Internet Archive.",
+                "page": "p. 39"
+              }
+            ]
           }
         ]
       },
@@ -407,6 +446,28 @@
         "usedIn": ["fra", "eng", "por"],
         "periodLabel": "Écrit dès 1591 dans les sources lues",
         "accounts": [
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "Rapporté en 2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Loango, sous les formes loango, lwangu ou balwango, fait partie des noms que des missionnaires, des administrateurs coloniaux et des locuteurs d'autres langues ont donnés à la langue des Vili, selon P. A. Mavoungou. Il rappelle aussi que cette langue, celle de la cour du roi, était appelée le parler de Loango.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Compte rendu de ILALOK, Dictionnaire vili–français (Lexikos 19)",
+                "author": "P. A. Mavoungou",
+                "year": 2009,
+                "url": "https://lexikos.journals.ac.za/pub/article/view/454/143",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Revue de lexicographie Lexikos, n° 19, 2009, p. 524-527. L'auteur appartient au département des sciences du langage de l'université Omar Bongo, à Libreville. Il présente le dictionnaire vili-français publié en 2008 chez L'Harmattan par l'Institut des langues locales au Kouilou.",
+                "page": "p. 525"
+              }
+            ]
+          },
           {
             "period": {
               "from": 1907,
@@ -452,6 +513,28 @@
           },
           {
             "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Loango servait aussi à nommer les Vili eux-mêmes : Christophe Marichelle les décrit comme les habitants du bas Congo français « dits loangos ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionnaire Vili-Français",
+                "author": "Christophe Marichelle",
+                "year": 1902,
+                "url": "https://archive.org/details/DictionnaireViliFrancais",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Imprimé à la mission catholique de Loango en 1902. Dans sa préface, l'auteur, missionnaire, dit avoir vécu sept ans parmi les habitants du Loango. Lu sur la numérisation de Google reprise par Internet Archive ; la page 207 a été vérifiée sur l'image.",
+                "page": "p. 207"
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1776,
               "to": 1776,
               "label": "1776"
@@ -459,6 +542,12 @@
             "era": "polity",
             "statement": "Le nom Loango figure dans le titre de l'Histoire de Loango, Kakongo, et autres royaumes d'Afrique, que l'abbé Liévin-Bonaventure Proyart rédige d'après les mémoires des missionnaires français.",
             "formAsWritten": "Loango",
+            "actors": [
+              {
+                "name": "Liévin-Bonaventure Proyart",
+                "role": "écrit cette forme"
+              }
+            ],
             "sources": [
               {
                 "title": "Histoire de Loango, Kakongo, et autres royaumes d'Afrique",
@@ -469,6 +558,111 @@
                 "source_kind": "archive",
                 "page": "page de titre",
                 "notes": "Paris, C. P. Berton et N. Crapart, 1776. Rédigée d'après les mémoires des préfets apostoliques de la mission française. Lu sur sa numérisation par Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1776,
+              "to": 1776,
+              "label": "1776"
+            },
+            "era": "polity",
+            "statement": "Le nom Loango entre dans le titre du roi, Ma-Loango, que l'abbé Proyart traduit par « Roi de Loango ». Il précise que la capitale du royaume s'appelle Bouali et que les Français la nomment Loango.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire de Loango, Kakongo, et autres royaumes d'Afrique",
+                "author": "Liévin-Bonaventure Proyart",
+                "year": 1776,
+                "url": "https://archive.org/details/histoiredeloango00proy_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, C. P. Berton et N. Crapart, 1776. Rédigée d'après les mémoires des préfets apostoliques de la mission française. Lu sur sa numérisation par Internet Archive.",
+                "page": "p. 7-8 et p. 180"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1686,
+              "to": 1686,
+              "label": "1686, traduction d'un livre paru en 1668"
+            },
+            "era": "polity",
+            "statement": "Le nom Loango s'écrit Lovango chez Olfert Dapper. Il donne aux habitants du royaume le nom de Lovangas, et à la capitale celui de Banza Lovangiri, que les gens du pays appellent Boarie ou Buri.",
+            "formAsWritten": "Lovango",
+            "actors": [
+              {
+                "name": "Olfert Dapper",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Description de l'Afrique",
+                "author": "Olfert Dapper, traduction française",
+                "year": 1686,
+                "url": "https://archive.org/details/bub_gb_lVFFVLhxVsEC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Amsterdam, Wolfgang, Waesberge, Boom et van Someren, 1686 : traduction française du livre néerlandais d'Olfert Dapper paru en 1668. Dapper n'est pas allé en Afrique ; il rassemble les récits de voyageurs et de marchands. Lu sur la numérisation de Google reprise par Internet Archive ; les pages 320 et 321 ont été vérifiées sur l'image.",
+                "page": "p. 320-321"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1686,
+              "to": 1686,
+              "label": "Proposée en 1686"
+            },
+            "era": "polity",
+            "statement": "Le nom Loango se retrouve dans Lovangiri, la province où vit le roi. Olfert Dapper y voit une contraction de Lovango-Piri, formée quand le roi de Loango a réuni les deux peuples par ses conquêtes.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Lovangiri",
+            "sources": [
+              {
+                "title": "Description de l'Afrique",
+                "author": "Olfert Dapper, traduction française",
+                "year": 1686,
+                "url": "https://archive.org/details/bub_gb_lVFFVLhxVsEC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Amsterdam, Wolfgang, Waesberge, Boom et van Someren, 1686 : traduction française du livre néerlandais d'Olfert Dapper paru en 1668. Dapper n'est pas allé en Afrique ; il rassemble les récits de voyageurs et de marchands. Lu sur la numérisation de Google reprise par Internet Archive ; les pages 320 et 321 ont été vérifiées sur l'image.",
+                "page": "p. 321"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1625,
+              "to": 1625,
+              "label": "Publié en 1625"
+            },
+            "era": "polity",
+            "statement": "Le nom Loango s'écrit Longo dans le récit de l'Anglais Andrew Battell, qui a vécu plusieurs années sur cette côte. Il y décrit « the town of Mani Longo », la ville du roi, à trois milles de la mer.",
+            "formAsWritten": "Longo",
+            "actors": [
+              {
+                "name": "Andrew Battell",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Samuel Purchas",
+                "role": "publie le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Strange Adventures of Andrew Battell of Leigh, in Angola and the Adjoining Regions",
+                "author": "Andrew Battell, édité par E. G. Ravenstein",
+                "year": 1901,
+                "url": "https://archive.org/details/strangeadventure00battrich",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Hakluyt Society, 1901. Réédition des récits de l'Anglais Andrew Battell publiés par Samuel Purchas en 1613 et en 1625, avec les notes de l'éditeur Ernest Ravenstein. Lu dans la numérisation d'Internet Archive, dont les pages imprimées ont été relevées, et dans la transcription du projet Gutenberg.",
+                "page": "p. 43"
               }
             ]
           },
@@ -501,6 +695,518 @@
             ]
           }
         ]
+      },
+      {
+        "nameText": "Bramas",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un ancien nom des habitants de Loango chez les auteurs européens ; son origine reste discutée.",
+        "usedIn": ["ita", "eng", "nld", "fra"],
+        "periodLabel": "Écrit dès 1591 ; présenté comme un nom ancien dès cette date",
+        "accounts": [
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "Proposée en 1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bramas correspondrait au mot portugais Bramanes, qui désigne les brahmanes de l'Inde, selon l'éditeur Ernest Ravenstein. Il attribue ce nom au récit du Portugais Duarte Lopes publié par Pigafetta, et non à Andrew Battell.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Bramas",
+            "sources": [
+              {
+                "title": "The Strange Adventures of Andrew Battell of Leigh, in Angola and the Adjoining Regions",
+                "author": "Andrew Battell, édité par E. G. Ravenstein",
+                "year": 1901,
+                "url": "https://archive.org/details/strangeadventure00battrich",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Hakluyt Society, 1901. Réédition des récits de l'Anglais Andrew Battell publiés par Samuel Purchas en 1613 et en 1625, avec les notes de l'éditeur Ernest Ravenstein. Lu dans la numérisation d'Internet Archive, dont les pages imprimées ont été relevées, et dans la transcription du projet Gutenberg.",
+                "page": "p. 77, note 230"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "Rapportée en 1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bramas viendrait des bandes rouges et jaunes que les femmes de Loango se peignaient sur le front en l'honneur d'un objet rituel, semblables aux marques des fidèles de Shiva en Inde, selon l'auteur Degrandpré. Ernest Ravenstein, qui rapporte cette explication, la rejette.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Bramas",
+            "sources": [
+              {
+                "title": "The Strange Adventures of Andrew Battell of Leigh, in Angola and the Adjoining Regions",
+                "author": "Andrew Battell, édité par E. G. Ravenstein",
+                "year": 1901,
+                "url": "https://archive.org/details/strangeadventure00battrich",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Hakluyt Society, 1901. Réédition des récits de l'Anglais Andrew Battell publiés par Samuel Purchas en 1613 et en 1625, avec les notes de l'éditeur Ernest Ravenstein. Lu dans la numérisation d'Internet Archive, dont les pages imprimées ont été relevées, et dans la transcription du projet Gutenberg.",
+                "page": "p. 77, note 230"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1686,
+              "to": 1686,
+              "label": "1686, traduction d'un livre paru en 1668"
+            },
+            "era": "polity",
+            "statement": "Le nom Bramas sert de second titre au chapitre qu'Olfert Dapper consacre au royaume de Lovango, « Terre des Bramas ». Il précise que les habitants, autrefois nommés Bramas, portent à présent le nom de Lovangas.",
+            "formAsWritten": "Bramas",
+            "actors": [
+              {
+                "name": "Olfert Dapper",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Description de l'Afrique",
+                "author": "Olfert Dapper, traduction française",
+                "year": 1686,
+                "url": "https://archive.org/details/bub_gb_lVFFVLhxVsEC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Amsterdam, Wolfgang, Waesberge, Boom et van Someren, 1686 : traduction française du livre néerlandais d'Olfert Dapper paru en 1668. Dapper n'est pas allé en Afrique ; il rassemble les récits de voyageurs et de marchands. Lu sur la numérisation de Google reprise par Internet Archive ; les pages 320 et 321 ont été vérifiées sur l'image.",
+                "page": "p. 320"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1613,
+              "to": 1613,
+              "label": "Publié en 1613"
+            },
+            "era": "polity",
+            "statement": "Le nom Bramas désigne les gens de Loango chez qui l'Anglais Andrew Battell a vécu deux ans et demi, dans la description que Samuel Purchas tire de ses récits.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Samuel Purchas",
+                "role": "publie le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Strange Adventures of Andrew Battell of Leigh, in Angola and the Adjoining Regions",
+                "author": "Andrew Battell, édité par E. G. Ravenstein",
+                "year": 1901,
+                "url": "https://archive.org/details/strangeadventure00battrich",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Hakluyt Society, 1901. Réédition des récits de l'Anglais Andrew Battell publiés par Samuel Purchas en 1613 et en 1625, avec les notes de l'éditeur Ernest Ravenstein. Lu dans la numérisation d'Internet Archive, dont les pages imprimées ont été relevées, et dans la transcription du projet Gutenberg.",
+                "page": "p. 77"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1591,
+              "to": 1591,
+              "label": "1591"
+            },
+            "era": "polity",
+            "statement": "Le nom Bramas est déjà présenté comme un nom ancien dans le récit de Pigafetta : plus loin dans le livre, on lit que les gens de Loango s'appelaient ainsi autrefois et vivaient à l'intérieur des terres, vers l'est.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Report of the Kingdom of Congo and of the Surrounding Countries, drawn out of the writings and discourses of the Portuguese Duarte Lopez, by Filippo Pigafetta, in Rome, 1591",
+                "author": "Filippo Pigafetta",
+                "year": 1881,
+                "url": "https://archive.org/details/reportofkingdomo00lope",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Traduction anglaise de Margarite Hutchinson, Londres, 1881, de la Relatione del reame di Congo publiée à Rome en 1591. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 56-57"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1591,
+              "to": 1591,
+              "label": "1591"
+            },
+            "era": "polity",
+            "statement": "Le nom Bramas apparaît dans le récit de Filippo Pigafetta, publié à Rome en 1591 d'après les récits du Portugais Duarte Lopes : le peuple appelé Bramas habite le pays que l'on nomme désormais royaume de Loango. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant ce livre.",
+            "formAsWritten": "Bramas",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Duarte Lopes",
+                "role": "voyageur portugais dont Pigafetta rapporte les récits"
+              },
+              {
+                "name": "Filippo Pigafetta",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Report of the Kingdom of Congo and of the Surrounding Countries, drawn out of the writings and discourses of the Portuguese Duarte Lopez, by Filippo Pigafetta, in Rome, 1591",
+                "author": "Filippo Pigafetta",
+                "year": 1881,
+                "url": "https://archive.org/details/reportofkingdomo00lope",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Traduction anglaise de Margarite Hutchinson, Londres, 1881, de la Relatione del reame di Congo publiée à Rome en 1591. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 24"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mouviri",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit au XVIIe siècle pour les habitants de la province royale de Loango.",
+        "usedIn": ["nld", "fra"],
+        "periodLabel": "Écrit en 1686, d'après un livre de 1668",
+        "accounts": [
+          {
+            "period": {
+              "from": 1686,
+              "to": 1686,
+              "label": "Proposée en 1686"
+            },
+            "era": "polity",
+            "statement": "Le nom Mouviri serait une contraction de Moutsie-Piri, « peuple de Piri », selon Olfert Dapper. Piri est le nom d'une province du royaume, sur les terres de laquelle le roi a établi sa capitale ; Eduard Pechuël-Loesche la situe, sous le nom de Mpile, au sud du fleuve Kouilou, vers les montagnes.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Mouviri",
+            "sources": [
+              {
+                "title": "Description de l'Afrique",
+                "author": "Olfert Dapper, traduction française",
+                "year": 1686,
+                "url": "https://archive.org/details/bub_gb_lVFFVLhxVsEC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Amsterdam, Wolfgang, Waesberge, Boom et van Someren, 1686 : traduction française du livre néerlandais d'Olfert Dapper paru en 1668. Dapper n'est pas allé en Afrique ; il rassemble les récits de voyageurs et de marchands. Lu sur la numérisation de Google reprise par Internet Archive ; les pages 320 et 321 ont été vérifiées sur l'image.",
+                "page": "p. 321"
+              },
+              {
+                "title": "Volkskunde von Loango",
+                "author": "Eduard Pechuël-Loesche",
+                "year": 1907,
+                "url": "https://archive.org/details/volkskundevonlo00loegoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Stuttgart, Strecker & Schröder, 1907. Lu sur sa numérisation par Google. Chapitre « Stämme: Art, Namen und Vermischung ».",
+                "page": "p. 147"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1686,
+              "to": 1686,
+              "label": "1686, traduction d'un livre paru en 1668"
+            },
+            "era": "polity",
+            "statement": "Le nom Mouviri désigne, chez Olfert Dapper, les habitants de Lovangiri, la province où réside le roi de Loango. C'est la plus ancienne trace de ce nom que le projet connaît. Les gens qu'il désigne vivaient là avant ce livre.",
+            "formAsWritten": "Mouviri",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Olfert Dapper",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Description de l'Afrique",
+                "author": "Olfert Dapper, traduction française",
+                "year": 1686,
+                "url": "https://archive.org/details/bub_gb_lVFFVLhxVsEC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Amsterdam, Wolfgang, Waesberge, Boom et van Someren, 1686 : traduction française du livre néerlandais d'Olfert Dapper paru en 1668. Dapper n'est pas allé en Afrique ; il rassemble les récits de voyageurs et de marchands. Lu sur la numérisation de Google reprise par Internet Archive ; les pages 320 et 321 ont été vérifiées sur l'image.",
+                "page": "p. 321"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mubiri",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Kongo, au sud du fleuve Congo",
+        "variantSpelling": true,
+        "shortLine": "Une forme proche de Mouviri, employée par les Kongo pour nommer les Vili.",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Rapporté en 2012"
+            },
+            "statement": "Le nom Mubiri est celui que les Kongo, qui vivent au sud du fleuve Congo, donnaient aux Vili, et peut-être à tous les gens de la côte de Loango, selon l'historienne Stacey Sommerdyk.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Trade and the Merchant Community of the Loango Coast in the Eighteenth Century",
+                "author": "Stacey Jean Muriel Sommerdyk",
+                "year": 2012,
+                "url": "https://archive.org/details/tatmcotlcitec",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Thèse de doctorat d'histoire, université de Hull (Royaume-Uni), mai 2012. Lue dans la version déposée sur Internet Archive.",
+                "page": "p. 39"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "content": {
+    "appellations": {
+      "mainName": "Vili",
+      "selfAppellation": "Vili",
+      "exonyms": ["Bramas", "Mouviri", "Loango"],
+      "spellingAliases": [
+        "Bavili",
+        "Nvili",
+        "Bawili",
+        "Fiote",
+        "Fioti",
+        "Bafioti",
+        "Fjort",
+        "Fiot",
+        "Mubiri",
+        "Lovangas"
+      ],
+      "originOfExonyms": "Le nom Bramas est le plus ancien que nous ayons trouvé pour les habitants de Loango. Le récit de Pigafetta, publié à Rome en 1591, le donne déjà comme un nom d'autrefois. L'éditeur Ernest Ravenstein le rapproche du mot portugais Bramanes, « brahmanes ». Olfert Dapper écrit en 1668 que les habitants de la province royale s'appellent Mouviri, qu'il explique par « peuple de Piri », du nom d'une province du royaume ; les Kongo, au sud du fleuve Congo, appelaient les Vili Mubiri, selon l'historienne Stacey Sommerdyk. Le nom Loango, celui du royaume et de sa capitale, a aussi servi à nommer ses habitants et leur langue, surtout chez les missionnaires et les administrateurs coloniaux, selon le linguiste P. A. Mavoungou. Pour le nom Vili lui-même, Eduard Pechuël-Loesche propose en 1907 deux explications : un surnom de « filous » donné par les Yombe de l'arrière-pays, ou un mot qui veut dire « lier, unir ».",
+      "whyProblematic": null,
+      "contemporaryUsage": "Le nom Vili, au pluriel Bavili, est celui que ce peuple emploie aujourd'hui, et sa langue s'appelle le civili, écrit aussi tchivili. Les Vili se nomment aussi Fiote ou Fioti, selon le linguiste P. A. Mavoungou. La norme ISO 639-3 et le catalogue Glottolog nomment la langue Vili, sous le code vif.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
+    },
+    "ethnicities": [
+      "Vili de l'ancien royaume de Loango, autour de la baie de Loango (République du Congo)",
+      "Vili installés au nord, dans la région de Mayumba (Gabon), parmi les Lumbu, et plus loin jusqu'à l'Ogooué",
+      "Communautés d'origine vili établies au sud du fleuve Congo, jusqu'à l'arrière-pays de Luanda (Angola), appelées Bawili, Bawidi, Bafasi ou Batua"
+    ],
+    "origins": {
+      "ancientOrigins": "Le royaume de Loango, celui des Vili, est d'abord lié au royaume de Kongo, son voisin du sud. Le récit de Pigafetta, publié en 1591, dit que le roi de Loango était autrefois soumis au roi de Kongo, puis qu'il est devenu indépendant et se dit son ami sans être son vassal. Selon les plus vieux habitants, interrogés par les voyageurs dont Olfert Dapper rassemble les récits en 1668, le pays était d'abord partagé entre plusieurs princes en guerre, appelés Mani. L'un d'eux, venu de Zerri dans le Kakongo, les aurait tous soumis, puis se serait installé sur les terres des princes de Piri, où se trouve la capitale.",
+      "formationPeriod": "Selon la thèse de l'historienne Stacey Sommerdyk, la côte de Loango forme déjà une unité indépendante sous l'autorité des Vili quand le premier navire portugais y arrive, en 1483 ; le Kongo ne reconnaît officiellement cette séparation qu'en 1535. Le linguiste P. A. Mavoungou situe la formation du royaume au XIVe siècle.",
+      "migrationRoutes": [
+        "Départs vers le nord, dans la région de Mayumba parmi les Lumbu, et jusqu'à l'Ogooué, selon Eduard Pechuël-Loesche",
+        "Départs vers le sud, au-delà du fleuve Congo, d'artisans et de forgerons vili qui fondent des villages jusqu'à l'arrière-pays de Luanda, selon Eduard Pechuël-Loesche",
+        "Routes de commerce vers Mayumba au nord, le Pool Malebo à l'est et Luanda au sud, selon Stacey Sommerdyk"
+      ],
+      "historicalSettlementZones": [
+        "Bouali, ou Buali, capitale du royaume de Loango, que Dapper nomme aussi Boarie ou Buri ; Bwäli est l'ancien nom du village de Diosso",
+        "Les quatre provinces du royaume selon Dapper : Lovangiri, Lovangomongo, Chilongo et Piri",
+        "La côte du royaume de Loango, d'environ vingt lieues, entre le village de Makanda et la rivière Louango-Louisa, selon l'abbé Proyart",
+        "Le cours inférieur du fleuve Kouilou, au sud duquel se trouvait la province de Piri, selon Eduard Pechuël-Loesche"
+      ],
+      "unificationsOrDivisions": "Après sa victoire, le roi de Loango partage les terres conquises entre ses fidèles et installe ses frères et ses sœurs autour de sa capitale, selon Olfert Dapper. Au XVIIIe siècle, l'abbé Proyart décrit au nord le royaume de Iomba, que les marins appellent Mayumba, et au sud les royaumes de Kakongo et de Ngoyo, dont les ports sont Malimbe et Cabinda. L'historienne Stacey Sommerdyk note qu'aujourd'hui, l'ancienne côte de Loango est partagée entre le Gabon, la République du Congo, l'Angola, avec l'enclave de Cabinda, et la République démocratique du Congo.",
+      "externalInfluences": "Les premiers Portugais arrivent sur la côte en 1483, et les Hollandais en 1593, selon Stacey Sommerdyk. Les Portugais viennent d'abord y chercher des tissus de raphia et du bois rouge. Andrew Battell, un Anglais qui a vécu sur cette côte, raconte qu'il y vendait du drap et des perles de verre contre de l'ivoire et des tissus de palme. Au XVIIIe siècle, l'abbé Proyart décrit un commerce surtout tourné vers la vente de captifs aux Français, aux Anglais et aux Hollandais. Des missionnaires catholiques français sont alors présents à Loango, et d'autres y publient plus tard des dictionnaires de la langue, comme celui de Christophe Marichelle en 1902.",
+      "majorHistoricalEvents": "En 1483, un premier navire portugais arrive sur la côte de Loango, et en 1535, le Kongo reconnaît officiellement que Loango ne dépend plus de lui, selon Stacey Sommerdyk. En 1766, le roi de Loango meurt ; il faut sept ans d'interrègne avant l'élection de son successeur, et il n'est toujours pas enterré quand l'abbé Proyart écrit, en 1776, car deux villes se disputent sa sépulture. En 1898, selon une note d'Ernest Ravenstein qui s'appuie sur R. E. Dennett, les autorités françaises demandent au Mamboma et aux princes de désigner un roi, et ils élisent Mani Luemba."
+    },
+    "organization": {
+      "traditionalPoliticalSystem": "Le roi porte le titre de Ma-Loango, « roi de Loango ». Selon l'abbé Proyart, il est élu par les princes, les ministres et le régent, et non désigné par sa naissance. À la mort du roi, un régent, le Ma-Boman, gouverne jusqu'à l'élection, et le roi de Loango n'a pas le droit de désigner lui-même son successeur. Selon une note d'Ernest Ravenstein, le nouveau roi porte d'abord le titre de Nganga nvumbu et ne prend celui de Maloango qu'après une grande fête où l'on annonce la mort de son prédécesseur. Olfert Dapper décrit une femme âgée de la famille royale, la Makonde, que le roi doit consulter et qui peut l'écarter du pouvoir, ainsi qu'un conseil de princes chargés chacun d'une fonction.",
+      "clanOrganization": null,
+      "ageClassSystems": null,
+      "roleOfLineages": "Chez les Vili de Loango, la noblesse passe par les femmes. Selon l'abbé Proyart, les enfants d'une princesse sont princes même si leur père ne l'est pas, alors que les enfants d'un prince, et même ceux du roi, ne sont pas nobles si leur mère n'est pas princesse. Selon une note d'Ernest Ravenstein, le roi doit être un neveu de son prédécesseur, fils de sa sœur. L'historienne Stacey Sommerdyk montre que sur la côte de Loango, les changements liés au commerce avec les Européens passent par ces règles d'autorité transmises par les femmes.",
+      "religiousAuthority": "Le récit d'Andrew Battell, publié par Samuel Purchas, décrit des objets rituels appelés Mokissos, ou nkishi, auxquels chacun apporte une offrande selon son métier : du poisson pour le pêcheur, du tissu pour le tisserand. Le nouveau roi prend le titre de Nganga nvumbu, où nganga désigne le prêtre, selon Ernest Ravenstein. Pour obtenir la pluie, le roi de Loango envoie une demande au grand faiseur de pluie, le Nganga m Bunzi, qui vit au Ngoyo, selon ce que R. E. Dennett rapporte à Ravenstein."
+    },
+    "languages": {
+      "mainLanguage": "Civili (vif)",
+      "isoCodes": ["vif"],
+      "dialects": ["Koci", "Yombe", "Lindji"],
+      "vehicularRole": "Le civili est une langue bantoue du groupe kongo, classée H12a par le linguiste Malcolm Guthrie. Il est parlé en République du Congo, au Gabon, en République démocratique du Congo, dans l'enclave de Cabinda et au nord de l'Angola. Au temps du royaume, c'était la langue de la cour du roi, d'où son nom de parler de Loango, selon P. A. Mavoungou. Le même auteur note que le koci, le yombe et le lindji sont souvent présentés comme des dialectes du civili, mais qu'il s'agit plutôt de parlers voisins qui se comprennent plus ou moins. Le catalogue Glottolog range le vili parmi les parlers kikongo de l'Ouest."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q3558407",
+      "glottocode": "vili1238",
+      "iso639_3": "vif"
+    },
+    "culture": {
+      "majorRites": "Le récit de Pigafetta, publié en 1591, signale que les gens de Loango pratiquent la circoncision, comme ceux du Kongo. Les funérailles du roi sont un grand moment de la vie du royaume : selon l'abbé Proyart, le roi n'est enterré qu'au bout de plusieurs années, d'ordinaire à Loanguilli, le lieu de sépulture des rois.",
+      "symbols": "Le roi, le Ma-Loango, est la figure centrale du royaume. Sa capitale, Bouali, est décrite en 1668 par Olfert Dapper comme une grande ville aux rues larges et propres, bordées de palmiers et de bananiers, avec une grande place devant le palais. Le dictionnaire vili-français de 2008 explique que le nom Bwäli, l'ancien nom du village de Diosso, veut dire « deux », en souvenir d'un homme et d'une femme qui l'auraient fondé, selon P. A. Mavoungou.",
+      "artsAndMusic": "Le tissage occupe une grande place : Pigafetta, Battell et Dapper décrivent tous des tissus faits de fibres de palmier, que l'on vend sur les marchés et aux Européens. Le dictionnaire vili-français de 2008 décrit des danses comme le kobi, rythmé par un tambour que l'on frotte du talon, et le bayin', d'origine cabindaise, selon P. A. Mavoungou.",
+      "spiritualities": "Le récit d'Andrew Battell décrit des objets rituels, les Mokissos ou nkishi, auxquels on apporte des offrandes pour obtenir leur aide dans son métier. Battell parle aussi de Checocke, une image placée dans une petite maison au village de Kinga, près du port de Loango, que l'on salue en frappant des mains. Les rois s'adressent au grand faiseur de pluie, le Nganga m Bunzi, au Ngoyo."
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": "Le royaume de Loango est le principal État de la côte au nord du fleuve Congo. Au XVIIIe siècle, l'abbé Proyart lui donne une vingtaine de lieues de côte, avec Bouali pour capitale. L'historienne Stacey Sommerdyk le décrit comme le plus puissant des royaumes de la côte au début des contacts avec les Européens, à côté du Kakongo et du Ngoyo, avec des pays tributaires au nord.",
+      "relationsWithNeighbors": "Le roi de Loango est ami du roi de Kongo et fait parfois la guerre à ses voisins de l'intérieur, appelés Anziques, selon le récit de Pigafetta. Les rois de Kakongo et de Ngoyo le craignent mais restent ses amis, selon Olfert Dapper. Eduard Pechuël-Loesche décrit en 1907 les gens de la côte, qui font le commerce avec les Européens, se jugeant supérieurs aux Yombe de la forêt, tandis que ces derniers les appellent Bawili, des « filous ».",
+      "conflictsOrAlliances": "Le royaume naît d'une longue guerre entre princes, selon les récits recueillis par Dapper. Au XVIIIe siècle, l'abbé Proyart écrit que la succession d'un roi se règle souvent par les armes quand l'héritier n'a pas été désigné. Les captifs que le royaume vend aux Européens sont, selon lui, pris à la guerre dans l'intérieur. Stacey Sommerdyk a relevé, dans les registres d'une compagnie hollandaise de Middelburg, environ 10 000 captifs vendus par 640 marchands africains de la côte de Loango au XVIIIe siècle.",
+      "diaspora": "Eduard Pechuël-Loesche décrit en 1907 des Vili partis vers le nord, dans la région de Mayumba et jusqu'à l'Ogooué, et d'autres partis vers le sud, dans les territoires portugais, où ils vivent en communautés d'artisans et de forgerons jusqu'à l'arrière-pays de Luanda."
+    },
+    "demography": {
+      "totalPopulation": 25200,
+      "referenceYear": 2026,
+      "source": "Joshua Project, base de données d'une organisation missionnaire américaine, consultée en novembre 2026 : 16 000 Vili en République du Congo et 9 200 au Gabon, soit environ 25 000 personnes. Ces chiffres sont des estimations et ne viennent pas d'un recensement.",
+      "distributionByCountry": [
+        {
+          "country": "COG",
+          "population": 16000,
+          "percentage": 63.5
+        },
+        {
+          "country": "GAB",
+          "population": 9200,
+          "percentage": 36.5,
+          "note": "Région de Mayumba, au sud-ouest du Gabon"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Britannica — Kingdom of Loango",
+        "url": "https://www.britannica.com/place/Kingdom-of-Loango",
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
+      },
+      {
+        "title": "Britannica — Vili people",
+        "url": "https://www.britannica.com/topic/Vili-people",
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
+      },
+      {
+        "title": "SIL ISO 639-3 — Vili (vif)",
+        "url": "https://iso639-3.sil.org/code/vif",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Page officielle du code vif dans la norme ISO 639-3, tenue par SIL International : langue vivante, nommée Vili."
+      },
+      {
+        "title": "Ethnologue — Vili language (vif)",
+        "url": "https://www.ethnologue.com/language/vif/",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Joshua Project — Vili, Fioti in Congo, Republic of the",
+        "url": "https://joshuaproject.net/people_groups/15792/CF",
+        "tier": "unverified",
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire américaine, consultée en novembre 2026. Elle donne 16 000 Vili en République du Congo et 9 200 au Gabon, ainsi que les noms Bavili, Fiote, Fioti et Tsivili."
+      },
+      {
+        "title": "African History Extra — A history of the Loango kingdom (ca.1500-1883)",
+        "url": "https://www.africanhistoryextra.com/p/a-history-of-the-loango-kingdom-ca1500",
+        "tier": "unverified",
+        "source_kind": "community"
+      },
+      {
+        "title": "101 Last Tribes — Vili people",
+        "url": "https://www.101lasttribes.com/tribes/vili.html",
+        "tier": "unverified",
+        "source_kind": "community"
+      },
+      {
+        "title": "Glottolog 5.3 — Vili (vili1238)",
+        "url": "https://glottolog.org/resource/languoid/id/vili1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde tenu par des linguistes. La fiche donne le code ISO vif et range le vili dans le groupe vili, lui-même placé parmi les parlers kikongo de l'Ouest."
+      },
+      {
+        "title": "A Report of the Kingdom of Congo and of the Surrounding Countries, drawn out of the writings and discourses of the Portuguese Duarte Lopez, by Filippo Pigafetta, in Rome, 1591",
+        "url": "https://archive.org/details/reportofkingdomo00lope",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Traduction anglaise de Margarite Hutchinson, Londres, 1881, du livre publié à Rome en 1591 d'après les récits du Portugais Duarte Lopes. Pages 24-25 : le peuple appelé Bramas, le roi Maniloango, l'ivoire, les tissus de palmier et la circoncision. Pages 56-57 : Loango autrefois soumis au Kongo, puis indépendant."
+      },
+      {
+        "title": "The Strange Adventures of Andrew Battell of Leigh, in Angola and the Adjoining Regions",
+        "url": "https://archive.org/details/strangeadventure00battrich",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Londres, Hakluyt Society, 1901, avec les notes d'Ernest Ravenstein. Page 9 : le commerce de Battell à Loango. Page 43 : la ville du roi et son marché. Page 44, note 140 : l'élection du roi et l'élection de Mani Luemba en 1898. Page 48 et note 151 : l'image Checocke et le faiseur de pluie du Ngoyo. Page 77 et note 230 : le nom Bramas et les offrandes aux objets rituels."
+      },
+      {
+        "title": "Description de l'Afrique",
+        "url": "https://archive.org/details/bub_gb_lVFFVLhxVsEC",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Traduction française, Amsterdam, 1686, du livre néerlandais d'Olfert Dapper paru en 1668. Pages 320-321 : le royaume de Lovango ou « Terre des Bramas », ses quatre provinces, la conquête du pays par le roi, les noms Mouviri et Lovangiri, la capitale Boarie ou Buri. Pages vérifiées sur l'image de la numérisation."
+      },
+      {
+        "title": "Histoire de Loango, Kakongo, et autres royaumes d'Afrique",
+        "url": "https://archive.org/details/histoiredeloango00proy_0",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Paris, 1776, d'après les mémoires des missionnaires français de Loango. Pages 7-8 : les limites du royaume, la capitale Bouali et le titre de Ma-Loango. Pages 128-133 : la noblesse transmise par les femmes, le régent, l'élection du roi, l'interrègne ouvert en 1766 et les guerres de succession. Page 149 : le commerce des captifs."
+      },
+      {
+        "title": "Dictionnaire Vili-Français",
+        "url": "https://archive.org/details/DictionnaireViliFrancais",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Dictionnaire d'un missionnaire catholique, imprimé à la mission de Loango en 1902. Page 53 : les mots fiote et fiota. Page 207 : les mots vili et Bavili, « les habitants du Congo français inférieur, dits loangos »."
+      },
+      {
+        "title": "Dictionnaire fiot-français",
+        "url": "https://archive.org/details/dictionnairefio00vissgoog",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Dictionnaire d'un missionnaire spiritain, Paris, 1890. Son titre écrit le nom Fiot."
+      },
+      {
+        "title": "Volkskunde von Loango",
+        "url": "https://archive.org/details/volkskundevonlo00loegoog",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Stuttgart, 1907. Page 2 : les noms Bafioti et Bawili et leurs explications. Page 3 : les Vili partis vers le nord et vers le sud. Page 147 : ce que Dapper rapporte du royaume, avec la province de Piri, que l'auteur appelle Mpile."
+      },
+      {
+        "title": "Trade and the Merchant Community of the Loango Coast in the Eighteenth Century",
+        "url": "https://archive.org/details/tatmcotlcitec",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse de doctorat d'histoire, université de Hull, 2012. Page 13 : le rôle des règles d'autorité transmises par les femmes. Pages 38-39 : la côte de Loango, ses provinces et ses peuples, et le nom Mubiri. Pages 43-44 : les premiers contacts avec les Portugais et les Hollandais, et les routes de commerce des Vili. Page 103 : les agents chargés du commerce. Le résumé donne le chiffre d'environ 10 000 captifs vendus par 640 marchands africains."
+      },
+      {
+        "title": "Compte rendu de ILALOK, Dictionnaire vili–français (Lexikos 19)",
+        "url": "https://lexikos.journals.ac.za/pub/article/view/454/143",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Revue de lexicographie Lexikos, n° 19, 2009, p. 524-527, par un linguiste de l'université Omar Bongo de Libreville. Pages 524-525 : la langue civili, ses noms, la classification H12a, le nom Fiote, les parlers voisins. Pages 525-526 : les articles du dictionnaire sur Bwäli, le kobi et le bayin'."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Vili, au pluriel Bavili, sont le peuple de l'ancien royaume de Loango, sur la côte du Congo, du Gabon et de Cabinda. Ils se nomment aussi Fiote.",
+      "followUp": "Pourquoi les premiers auteurs européens appelaient-ils les gens de Loango les Bramas ?"
+    },
+    "gaps": [
+      {
+        "field": "nameHistory.names[0]",
+        "reason": "Nous n'avons pas encore de source qui indique comment se prononce le nom Vili."
+      },
+      {
+        "field": "organization.clanOrganization",
+        "reason": "Nous n'avons pas encore réuni de source sur les clans vili et sur leurs noms."
+      },
+      {
+        "field": "organization.ageClassSystems",
+        "reason": "Nous n'avons pas trouvé de source qui décrive des classes d'âge chez les Vili."
+      },
+      {
+        "field": "demography.distributionByCountry",
+        "reason": "Nous n'avons pas trouvé de chiffre pour les Vili d'Angola, dans l'enclave de Cabinda, ni pour ceux de République démocratique du Congo. Les chiffres présentés sont des estimations, pas un recensement."
+      },
+      {
+        "field": "historicalRole.diaspora",
+        "reason": "Nous n'avons pas encore de source sur l'installation des Vili à Pointe-Noire et dans les autres villes d'aujourd'hui."
       }
     ]
   }
