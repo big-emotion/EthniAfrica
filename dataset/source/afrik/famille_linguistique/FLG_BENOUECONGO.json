@@ -262,21 +262,20 @@
     ]
   },
   "content": {
-    "searchAnswer": {
-      "lead": "Un très grand ensemble d'environ 900 langues d'Afrique. Son nom réunit deux repères géographiques : la rivière Bénoué, au Nigeria et au Cameroun, et le fleuve Congo.",
-      "followUp": "Qui a rassemblé ces langues sous un même nom, et quand ?"
-    },
     "decolonialHeader": {
-      "whyProblematic": " PREUVES - Auteurs coloniaux problématiques :",
-      "selfAppellation": null,
-      "contemporaryUsage": " Position dans la classification linguistique :",
+      "linkWithFamily": "Le bénoué-congo est une branche de la famille niger-congo, selon Joseph Greenberg et John R. Watters. Le catalogue Glottolog le place dans l'ensemble atlantique-congo, à l'intérieur du groupe volta-congo.",
       "historicalAppellations": [
-        "Langues du Bénoué",
-        "Volta-Congo",
-        "Congo-kordofanien",
-        "Western Sudanese"
+        "Semi-bantou",
+        "Benue-Cross",
+        "Eastern South-Central Niger-Congo"
       ],
-      "originOfHistoricalTerm": " Le terme « Western Sudanese » a été introduit par l'ethnologue allemand Diedrich Westermann en 1927 dans son ouvrage *Die westlichen Sudansprachen und ihre Beziehungen zum Bantu* (Les langues soudanaises occidentales et leurs relations avec le bantou). Cette classification a été reprise et affinée par Joseph H. Greenberg dans les années 1940-1950, consolidant le terme « Benue-Congo » en 1963 dans *The Languages of Africa* (Indiana University Press). D'OÙ : Le terme dérive de deux repères géographiques : la rivière Bénoué (Benue River), affluent du Niger qui prend sa source dans le massif de l'Adamaoua au Cameroun et traverse le Nigeria jusqu'à Lokoja, et le fleuve Congo, deuxième plus long fleuve d'Afrique traversant l'Afrique centrale."
+      "originOfHistoricalTerm": "Le nom semi-bantou figure en 1919 dans le titre de l'ouvrage du Britannique Harry Johnston sur les langues bantoues. Johnston y rapproche du bantou beaucoup de langues d'Afrique de l'Ouest, mais il ne les appelle semi-bantoues que si elles ont des classes de noms, selon Joseph Greenberg. Le linguiste allemand Diedrich Westermann appelle ensuite ce groupe Benue-Cross ou semi-bantou. En 1963, Greenberg y ajoute les langues bantoues et donne à l'ensemble le nom de Benue-Congo, selon John R. Watters ; dans un autre passage, Greenberg attribue lui-même ce nom à Westermann. Le nom associe la Bénoué, une rivière du Nigeria, et le fleuve Congo : l'historien Théophile Obenga parle ainsi des peuples qui vivent entre la Bénoué et le Congo. En 1977, Bennett et Sterk désignent le même groupe par le nom Eastern South-Central Niger-Congo, selon Watters.",
+      "whyProblematic": "Le nom semi-bantou vient d'un ouvrage de l'époque coloniale qui mêle les langues et les traits physiques. Harry Johnston y suppose que les premiers locuteurs du bantou ont subi l'influence d'une « race » venue du nord, qu'il présente comme un type d'homme supérieur, et il décrit ces peuples par leur peau et leur visage, tout en écrivant qu'ils ne forment pas une race à part. Le nom bénoué-congo est un nom de savants, sans ce contenu. Il pose une autre question : celle de savoir si le groupe existe vraiment. En 1981, le linguiste David Dalby compare les grandes divisions de Greenberg, dont le bénoué-congo, aux frontières arbitraires que la colonisation a tracées sur la carte politique de l'Afrique. Il rapporte, d'après John M. Stewart, que Kay Williamson n'a trouvé dans le premier volume de la liste comparative de mots du bénoué-congo aucun mot qui prouve l'unité du groupe. John R. Watters met aussi en garde : le bantou compte tant de langues qu'il peut fausser l'histoire du groupe entier si on le prend pour modèle.",
+      "selfAppellation": "Aucun nom propre aux locuteurs : bénoué-congo est un nom de savants, formé sur deux cours d'eau, pour désigner un ensemble de langues apparentées. Les sources que nous avons lues ne citent aucun peuple qui se donne ce nom.",
+      "contemporaryUsage": "Le bénoué-congo désigne aujourd'hui une branche de la famille niger-congo. Pour le catalogue Glottolog, il réunit 1 001 langues réparties en treize groupes. Le plus grand, le bantoïde, compte à lui seul 729 langues et comprend le bantou. Le yoruba et l'igbo, que Greenberg classait dans le kwa, y figurent aussi. John R. Watters rattache ce changement à Bennett et Sterk, qui ont fait passer en 1977 des langues jusque-là classées dans le kwa oriental vers un « nouveau » bénoué-congo. Watters distingue donc un bénoué-congo occidental, formé de ces langues, et un bénoué-congo oriental, qui correspond au groupe de Greenberg. Il rappelle que ce classement n'est pas fixé : les limites entre plusieurs groupes, et même entre le bantou et ses voisins, restent floues.",
+      "geographicArea": "Nigeria, Cameroun, Bénin, Afrique centrale, Afrique de l'Est, Afrique australe",
+      "numberOfLanguages": 1001,
+      "totalSpeakers": 500000000
     },
     "generalInfo": {
       "branches": [
@@ -294,69 +293,79 @@
         "Oko-Eni-Osayen",
         "Ukaan"
       ],
-      "geographicArea": "Précision régionale :",
-      "numberOfLanguages": 900,
-      "totalSpeakers": 500000000
+      "geographicArea": "Les langues bénoué-congo couvrent une grande partie du Nigeria, du nord-ouest au sud-est, et tout le sud du Cameroun, selon John R. Watters. Par les langues bantoues, elles s'étendent ensuite à de nombreux pays d'Afrique centrale, orientale et australe. Le yoruba est aussi parlé au Bénin, selon Glottolog.",
+      "numberOfLanguages": 1001,
+      "totalSpeakers": 500000000,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "1 001 langues selon Glottolog 5.3 ; Ethnologue en comptait 978 en 2018, selon Watters"
+        },
+        "totalSpeakers": {
+          "note": "Un ordre de grandeur qu'aucune source lue ne donne ; Watters, 2018, écrit seulement que ces langues ont des centaines de millions de locuteurs",
+          "unsourced": true
+        }
+      }
     },
     "associatedPeoples": [
       {
-        "name": "Yoruba - Nigeria, Bénin, Togo",
-        "peopleId": null
+        "name": "Yoruba",
+        "peopleId": "PPL_YORUBA"
       },
       {
-        "name": "Igbo - Nigeria",
-        "peopleId": null
+        "name": "Igbo",
+        "peopleId": "PPL_IGBO"
       },
       {
-        "name": "Edo / Bini - Nigeria",
-        "peopleId": null
+        "name": "Edo",
+        "peopleId": "PPL_EDO"
       },
       {
-        "name": "Tiv - Nigeria, Cameroun",
-        "peopleId": null
+        "name": "Tiv",
+        "peopleId": "PPL_TIV"
       },
       {
-        "name": "Efik/Ibibio - Nigeria",
-        "peopleId": null
+        "name": "Efik",
+        "peopleId": "PPL_EFIK"
       },
       {
-        "name": "Swahili - Tanzanie, Kenya, Ouganda, RDC",
-        "peopleId": null
+        "name": "Ibibio",
+        "peopleId": "PPL_IBIBIO"
       },
       {
-        "name": "Lingala - RDC, Congo-Brazzaville",
-        "peopleId": null
+        "name": "Nupe",
+        "peopleId": "PPL_NUPE"
       },
       {
-        "name": "Kikongo - RDC, Angola, Congo-Brazzaville",
-        "peopleId": null
+        "name": "Jukun",
+        "peopleId": "PPL_JUKUN"
       },
       {
-        "name": "Zoulou - Afrique du Sud",
-        "peopleId": null
+        "name": "Zoulou",
+        "peopleId": "PPL_ZULU"
       },
       {
-        "name": "Xhosa - Afrique du Sud",
-        "peopleId": null
+        "name": "Xhosa",
+        "peopleId": "PPL_XHOSA"
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " OBLIGATOIRE - Exemples CONCRETS de structures : Les langues Bénoué-Congo sont en majorité SVO (Sujet-Verbe-Objet), tonales et présentent des systèmes de classes nominales variables. Exemple 1 - Yoruba (structure SVO + tons) : - *Mo nà ọmọ* \"Je frappe l'enfant\" vers *Mo* (je, ton haut) + *nà* (frapper, ton haut) + *ọmọ* (enfant, tons bas-moyen)",
-      "phonologicalFeatures": " Détails précis (sons, tonals, traits distinctifs) : Systèmes tonals :",
-      "relationsWithNeighbors": " Exemples concrets d'emprunts avec mots précis : Emprunts à l'arabe (via contacts commerciaux, islamisation) :",
-      "keyInnovations": " Traits spécifiques avec exemples : Innovation 1 - Expansion du système de classes nominales bantoues : Les langues bantoues utilisent des préfixes ajoutés devant les noms pour indiquer leur catégorie sémantique (humain, plante, objet, etc.) et leur nombre (singulier/pluriel). C'est comparable au genre masculin/féminin en français, mais beaucoup plus développé : le proto-bantou avait environ 20 classes nominales (Guthrie, 1948). Comment ça fonctionne - Exemples en swahili : Classe 1/2 (humains) :"
+      "typology": "Les langues bénoué-congo ont, pour la plupart, des classes de noms. Chaque nom porte une marque, le plus souvent un préfixe, qui indique sa catégorie et son nombre, et les mots qui l'accompagnent s'accordent avec lui. John R. Watters y voit sans doute le principal trait de la famille niger-congo et de ses branches. Les préfixes dominent, mais certaines langues marquent la classe par un suffixe. Dans le c'lela, une langue kainji du Nigeria, un même nom prend un préfixe ou un suffixe selon sa place dans la phrase. Dans les langues kainji, l'ordre des mots est en général sujet, verbe, complément, selon Roger Blench.",
+      "phonologicalFeatures": "Les sources que nous avons lues décrivent surtout les tons et l'usure des préfixes dans les langues kainji, au Nigeria. Roger Blench y signale des langues à trois tons, comme le reshe. Il note qu'une autre langue kainji, le shen, a perdu tous ses préfixes de classe et a développé à la place un système de tons complexe. Dans d'autres langues kainji, la chute des préfixes a laissé des consonnes longues, qui s'opposent aux consonnes brèves. Nous n'avons pas encore étudié ce point pour les autres branches.",
+      "relationsWithNeighbors": "Les langues bénoué-congo touchent à l'ouest les langues kwa, et Joseph Greenberg reconnaît que la limite entre les deux groupes n'est pas nette. Au nord du Nigeria, plusieurs langues kainji de l'ouest sont entourées par le haoussa, et pourtant toujours très parlées, selon Roger Blench. John R. Watters rappelle que la perte de classes de noms dans une langue peut venir du contact avec ses voisines, et pas seulement de son évolution propre.",
+      "keyInnovations": "Les traits propres au bénoué-congo restent discutés. Greenberg n'avait cité qu'un mot commun à ces langues, celui qui veut dire « enfant ». Kay Williamson a montré qu'on le trouve aussi hors du groupe, selon John M. Stewart, cité par David Dalby. Les travaux récents décrivent plutôt des évolutions propres à chaque branche. Dans les langues bantoues, des suffixes ajoutés au verbe changent le nombre de participants à l'action, par exemple pour dire « faire faire » ou pour former un passif. Dans plusieurs langues des Grassfields, au Cameroun, les mêmes suffixes servent surtout à dire qu'une action se répète, s'atténue ou s'intensifie. Larry Hyman y voit un changement de sens propre à ces langues."
     },
     "historyAndOrigins": {
-      "probableOrigin": " QUI a classé ? Citer linguistes/archéologues/généticiens avec œuvres et dates. Présenter TOUTES les théories :",
-      "emergencePeriod": " QUAND en deux temporalités : (1) émergence historique de la FLG, (2) date de classification académique : (1) Émergence historique de la famille linguistique :",
-      "diffusion": " Afficher l'ensemble des avis disponibles - Pluralité des perspectives : Théorie 1 - Expansion graduelle depuis le foyer Niger-Bénoué (Greenberg, 1963) :",
-      "contactZones": " Répondre à \"OÙ\" - Localiser géographiquement (régions, villes, côtes, routes précises). Zones de métissage linguistique spécifiques : Zone 1 - Vallée de la Bénoué (Nigeria-Cameroun) :",
-      "majorEvents": " Chronologie avec dates précises :"
+      "probableOrigin": "Le foyer des langues bénoué-congo serait la région où la Bénoué se jette dans le Niger, au centre du Nigeria. Kay Williamson en 1989 et Roger Blench en 2006 proposent ce foyer à la suite d'Armstrong, selon John R. Watters. Watters retient cette hypothèse parce que les langues du groupe sont les plus variées au Nigeria et au Cameroun, alors que les langues bantoues, beaucoup plus étendues, se ressemblent davantage. Pour le bantou seul, deux hypothèses se sont opposées : Joseph Greenberg plaçait son foyer dans la vallée moyenne de la Bénoué, et Malcolm Guthrie au sud du Shaba, dans une zone qu'il jugeait centrale pour le bantou.",
+      "emergencePeriod": "Roger Blench situe le début du bénoué-congo vers 5 500 ans avant le présent, celui du bantoïde vers 4 500 ans et celui du proto-bantou vers 4 000 ans, selon John R. Watters. Le proto-bantou est la langue ancêtre que les linguistes reconstruisent pour les langues bantoues ; Christopher Ehret le place vers 3000 avant notre ère. Ces dates sont des estimations. Le classement savant est bien plus récent. Harry Johnston parle de langues semi-bantoues en 1919, Diedrich Westermann regroupe une partie d'entre elles en 1927, Joseph Greenberg y ajoute le bantou en 1963, et Glottolog suit aujourd'hui le classement de Kay Williamson et Roger Blench, publié en 2000.",
+      "diffusion": "Les langues bénoué-congo se seraient répandues dans plusieurs directions depuis la confluence du Niger et de la Bénoué, selon John R. Watters, pour des raisons agricoles, écologiques, économiques et sociales. Les langues kainji se trouvent surtout au nord-ouest de ce point, celles du plateau au nord et les langues jukunoïdes à l'est, en remontant la Bénoué. Les ancêtres des langues de la Cross River et du bantoïde auraient aussi remonté la Bénoué, au sud du fleuve, vers la région des villes actuelles de Makurdi, Wukari et Gboko. Les peuples de la Cross River seraient ensuite descendus vers le sud, jusqu'à la côte atlantique. Une partie des peuples bantoïdes serait allée vers l'est, dans les montagnes du Cameroun, puis dans la vallée de la Sanaga. C'est de là que les langues bantoues auraient commencé à s'étendre vers l'Afrique centrale, orientale et australe.",
+      "historicalBreaks": "La première séparation proposée oppose deux ensembles partis de la confluence du Niger et de la Bénoué, selon John R. Watters. Les ancêtres du bénoué-congo occidental sont allés surtout vers le sud-ouest, sauf ceux des langues igboïdes, passés à l'est du Niger. Les ancêtres du bénoué-congo oriental sont allés vers le nord-ouest, le nord et l'est. Le bénoué-congo oriental s'est ensuite divisé en deux : les langues du centre du Nigeria, c'est-à-dire le kainji, le plateau et le jukunoïde, et un groupe qui réunit la Cross River et le bantoïde. Le départ des langues bantoues depuis la vallée de la Sanaga, au Cameroun, est la dernière grande séparation que décrit Watters.",
+      "contactZones": "Plusieurs zones de contact apparaissent dans les sources. À l'ouest, la limite avec le kwa n'est pas nette, selon Joseph Greenberg. Le long de la frontière entre le Nigeria et le Cameroun, plusieurs groupes bantoïdes, comme le jarawan, le tivoïde ou l'ékoïde, sont parlés des deux côtés, et la limite entre le bantou et ses voisins bantoïdes, au nord-ouest de la zone bantoue, reste floue, selon John R. Watters. Dans les Grassfields du Cameroun, Larry Hyman relève une bande de langues voisines qui partagent les mêmes suffixes verbaux alors qu'elles appartiennent à des sous-groupes différents. Au nord du Nigeria, des langues kainji sont entourées par le haoussa, selon Roger Blench.",
+      "majorEvents": "Les événements de l'époque coloniale ont pesé sur la façon dont ces langues ont été connues. Harry Johnston écrit que les campagnes de la Première Guerre mondiale en Afrique lui ont apporté de nombreuses listes de mots, et lui ont fait connaître des langues dont il n'avait pas de trace. Au Nigeria, la plupart des langues kainji de l'est sont aujourd'hui gravement menacées, et certaines ont disparu ces dernières décennies, selon Roger Blench."
     },
     "distribution": {
       "totalSpeakers": 500000000,
       "distributionByCountry": {
-        "ZAF": 5148283
+        "ZAF": 48691590
       }
     },
     "sources": [
@@ -438,10 +447,11 @@
         "tier": "referenced"
       },
       {
-        "title": "Watters, John R. (éd.) (2003) – *East Benue-Congo: Nouns, pronouns, and verbs*. Language Science Press",
+        "title": "Watters, John R. (éd.) (2018) – *East Benue-Congo: Nouns, pronouns, and verbs*. Language Science Press",
         "url": "https://langsci-press.org/catalog/book/190",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Ouvrage en libre accès de la collection Niger-Congo Comparative Studies, publié à Berlin en 2018. Lu dans la version mise en ligne par Internet Archive."
       },
       {
         "title": "Bendor-Samuel, John T. (2025) – \"Benue-Congo languages\", *Encyclopædia Britannica*",
@@ -459,7 +469,8 @@
         "title": "Glottolog (2025) – \"Benue-Congo\"",
         "url": "https://glottolog.org/resource/languoid/id/benu1247",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Notice consultée le 3 novembre 2026, version 5.3. Le catalogue range sous ce nom 1 001 langues en treize groupes et un ensemble de langues non classées ; le groupe bantoïde en compte 729. Le sous-classement suit Williamson et Blench, 2000."
       },
       {
         "title": "UNFPA (2025) – *World Population Dashboard*",
@@ -483,8 +494,108 @@
         "title": "Statistics South Africa (2025) – Census 2022 Statistical Release P0301.4, Table 2.8 (Setswana home language)",
         "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
         "tier": "official",
-        "source_kind": "official_statistics"
+        "source_kind": "official_statistics",
+        "notes": "Recensement sud-africain de 2022, tableau 2.8, page 22 : part de chaque langue parlée le plus souvent à la maison."
+      },
+      {
+        "title": "Watters, John R. (2018) – « East Benue-Congo », dans Watters, John R. (éd.), East Benue-Congo: Nouns, pronouns, and verbs, Language Science Press, p. 1-25",
+        "author": "John R. Watters",
+        "year": 2018,
+        "url": "https://doi.org/10.5281/zenodo.1314337",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre d'introduction d'un ouvrage en libre accès de Language Science Press, Berlin. Lu en entier : histoire du nom et du classement (p. 1-2), place des branches au Nigeria et au Cameroun (p. 2-4), nombre de langues d'après Ethnologue 2018 et limites floues des groupes (p. 5-6), foyer, routes d'expansion et dates proposées (p. 7-8), classes de noms (p. 9 et 13), extensions verbales (p. 19)."
+      },
+      {
+        "title": "Blench, Roger M. (2018) – « Nominal affixing in the Kainji languages of northwestern and central Nigeria », dans Watters, John R. (éd.), East Benue-Congo: Nouns, pronouns, and verbs, Language Science Press, p. 59-106",
+        "author": "Roger M. Blench",
+        "year": 2018,
+        "url": "https://doi.org/10.5281/zenodo.1314323",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre du même ouvrage en libre accès. Lu : ordre des mots sujet, verbe, complément, langue shen sans préfixes et riche en tons, consonnes longues, langues kainji entourées par le haoussa et langues kainji de l'est menacées (p. 60) ; langues à trois tons comme le reshe (p. 64)."
+      },
+      {
+        "title": "Hyman, Larry M. (2018) – « Common Bantoid verb extensions », dans Watters, John R. (éd.), East Benue-Congo: Nouns, pronouns, and verbs, Language Science Press, p. 173-198",
+        "author": "Larry M. Hyman",
+        "year": 2018,
+        "url": "https://doi.org/10.5281/zenodo.1314327",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre du même ouvrage en libre accès. Lu : résumé et introduction (p. 173-174), sur les suffixes verbaux des langues des Grassfields au Cameroun, qui marquent surtout la répétition, l'atténuation ou l'intensité de l'action."
+      },
+      {
+        "title": "General History of Africa, I: Methodology and African Prehistory, ch. 12 « African linguistic classification » (J. H. Greenberg) et annexe « The language map of Africa » (D. Dalby)",
+        "author": "Joseph H. Greenberg ; David Dalby ; J. Ki-Zerbo (éd.)",
+        "year": 1981,
+        "url": "https://archive.org/details/unesco_general_history_africa_i",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "UNESCO, Heinemann et University of California Press, 1981, édition anglaise. Lu dans la numérisation d'Internet Archive. Greenberg : Johnston et le semi-bantou (p. 297), le bénoué-congo que Westermann appelait semi-bantou (p. 299), frontière floue avec le kwa (p. 303), Benue-Cross de Westermann et quatre divisions (p. 303-304), foyer du bantou selon Greenberg et Guthrie (p. 304). Dalby : divisions de Greenberg comparées aux frontières coloniales, doutes de Stewart sur l'unité du bénoué-congo (p. 313-314)."
+      },
+      {
+        "title": "General History of Africa, I: Methodology and African Prehistory, ch. 4 « Sources and specific techniques used in African history: general outline »",
+        "author": "Théophile Obenga",
+        "year": 1981,
+        "url": "https://archive.org/details/unesco_general_history_africa_i",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "UNESCO, Heinemann et University of California Press, 1981, édition anglaise. Lu dans la numérisation d'Internet Archive, p. 81 : l'auteur parle des peuples qui vivent entre la Bénoué et le Congo."
+      },
+      {
+        "title": "A Comparative Study of the Bantu and Semi-Bantu Languages, vol. 1",
+        "author": "Harry H. Johnston",
+        "year": 1919,
+        "url": "https://archive.org/details/comparativestudy01johnuoft",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Ouvrage de l'époque coloniale, Oxford, Clarendon Press, 1919. Lu dans la numérisation d'Internet Archive : préface, sur les listes de mots reçues pendant les campagnes de la guerre en Afrique ; p. 25-26, sur l'origine supposée des langues semi-bantoues et sur une « race » venue du nord, propos racial cité ici comme document."
+      },
+      {
+        "title": "Glottolog 5.3 — Tiv (tivv1240)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/tivv1240",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice consultée le 3 novembre 2026. Le catalogue range le tiv dans le bénoué-congo, groupe bantoïde, et le situe au Nigeria et au Cameroun."
+      },
+      {
+        "title": "Glottolog 5.3 — Zulu (zulu1248)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/zulu1248",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice consultée le 3 novembre 2026. Le catalogue range le zoulou dans le bénoué-congo, par le groupe bantoïde et le bantou."
+      },
+      {
+        "title": "Glottolog 5.3 — Yoruba (yoru1245)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/yoru1245",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice consultée le 3 novembre 2026. Le catalogue range le yoruba dans le bénoué-congo, groupe défoïde, et le situe au Nigeria et au Bénin."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Le bénoué-congo est un très grand ensemble d'environ mille langues d'Afrique, dont le yoruba, l'igbo, le tiv et les langues bantoues. Son nom associe la rivière Bénoué, au Nigeria, et le fleuve Congo.",
+      "followUp": "Qui a rassemblé ces langues sous un même nom, et quand ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "ZAF",
+          "speakers": 48691590,
+          "source": {
+            "title": "Statistics South Africa (2023) – Census 2022 Statistical Release P0301.4, tableau 2.8",
+            "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
+            "tier": "official",
+            "notes": "Recensement sud-africain de 2022, tableau 2.8 (page 22), qui donne la part de chaque langue parlée le plus souvent à la maison. Somme calculée par nous à partir de ce tableau : les neuf langues bantoues officielles (isiNdebele, isiXhosa, isiZulu, sepedi, sesotho, setswana, siswati, tshivenda, xitsonga) font 78,5 % de la population, que nous avons appliqués aux 62 027 503 habitants du recensement. Le tableau exclut les enfants de moins d'un an ; le chiffre est donc un ordre de grandeur. Les autres langues bantoues parlées dans le pays, comme le shona, n'y sont pas comptées."
+          }
+        }
+      ]
+    }
   }
 }
