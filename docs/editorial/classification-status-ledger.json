@@ -87,22 +87,22 @@
   {
     "id": "FLG_SEMITIQUE",
     "status": "colonial-legacy",
-    "rationale": "« Chamito-sémitique » est dit « profondément racialiste et colonial » : Renan et Müller s'en servaient pour attribuer les civilisations africaines à des étrangers « non-nègres », au service des « discours coloniaux français, britanniques et allemands »."
+    "rationale": "Le nom sémitique sert au XIXe siècle à classer des peuples en races : Renan écrit en 1855 que « la race sémitique […] représente réellement une combinaison inférieure de la nature humaine », Müller range en 1885 les langues chamito-sémitiques sous la « race méditerranéenne », et Seligman écrit en 1930 que « les civilisations de l'Afrique sont les civilisations des Hamites »."
   },
   {
     "id": "FLG_SOUDANIQUECENTRAL",
     "status": "colonial-legacy",
-    "rationale": "« Sudanic » est chez Meinhof « un terme géographique colonial, sans fondement linguistique rigoureux », et « les priorités coloniales de cartographie linguistique ont influencé les cadres de classification, souvent sans consultation des communautés locales »."
+    "rationale": "« Le nom soudanique central vient d'une classification des langues africaines construite à l'époque coloniale » : Westermann (1912) range ces langues parmi les « langues soudanaises », décrites à partir de « the primitive stage », après une enquête au Soudan anglo-égyptien financée par le ministère prussien de l'Éducation et par une mission presbytérienne américaine."
   },
   {
     "id": "FLG_TCHADIQUE",
     "status": "colonial-legacy",
-    "rationale": "La famille est héritée du cadre « hamitique », étiquette qui « associait à tort des peuples africains à une origine non-africaine prétendument civilisatrice » au service d'« une hiérarchie raciale artificielle ». « Tchadique » est le nom qui l'a remplacée."
+    "rationale": "La fiche attribue les noms qui ont précédé tchadique à des savants de l'époque coloniale : Richard Lepsius « range le haoussa parmi les langues chamitiques, qu'il croit venues d'Asie », Carl Meinhof « oppose le « Hamite » éleveur et guerrier [...] au « Sudan Negro » cultivateur », et Johannes Lukas « nomme encore tchado-hamitique un groupe défini par le genre grammatical et « d'autres traits hamitiques » »."
   },
   {
     "id": "FLG_TUU",
     "status": "reconstructive",
-    "rationale": "Le grief vise « Southern Khoisan », « construction coloniale approximative » ; la fiche conclut elle-même « Afrik utilise Tuu comme terme strictement linguistique moderne basé sur la reconstruction scientifique », d'après le mot commun signifiant « personne » (Güldemann, 2005)."
+    "rationale": "Le grief vise Bushmen du Sud et khoïsan du Sud : ce nom géographique « fait croire que toutes les langues dites khoïsan sont parentes, ce que les méthodes habituelles de la linguistique n'ont pas démontré », et le nom tuu qui les remplace est tiré d'un mot de ces langues, tuu, « les gens » (Güldemann, 2005)."
   },
   {
     "id": "PPL_ACHOLI",
