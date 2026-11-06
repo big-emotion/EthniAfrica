@@ -11,7 +11,7 @@
         "nameStatus": "current",
         "selfGiven": false,
         "languageOfOrigin": null,
-        "namedBy": "Le linguiste allemand Diedrich Westermann",
+        "namedBy": "Des linguistes ; le nom figure dans la classification de Diedrich Westermann en 1927",
         "shortLine": "Un nom de savants pour des langues du golfe de Guinée, comme l'akan et l'éwé ; son origine reste inexpliquée.",
         "periodLabel": "Depuis 1927",
         "accounts": [
@@ -177,170 +177,319 @@
   },
   "content": {
     "searchAnswer": {
-      "lead": "Des langues du golfe de Guinée, de la Côte d'Ivoire au Bénin. « Kwa » vient d'un mot qui veut dire « les gens », employé par des linguistes dès 1927 ; selon les auteurs, le tracé du groupe n'est pas le même.",
+      "lead": "Une famille de 81 langues du golfe de Guinée, de la Côte d'Ivoire au Bénin, comme l'akan, le baoulé, l'éwé et le fon. Son nom vient des linguistes, et son tracé a beaucoup changé.",
       "followUp": "Pourquoi les linguistes ne tracent-ils pas ce groupe de la même façon ?"
     },
     "decolonialHeader": {
-      "linkWithFamily": "Sous-branche du Volta-Congo, au sein du Niger-Congo, sœur du Bénoué-Congo issue du même découpage de l'ancien « Kwa » de Greenberg",
+      "linkWithFamily": "Le kwa est une branche du volta-congo, lui-même rangé dans l'ensemble atlantique-congo, selon le catalogue Glottolog, qui s'appuie sur Kay Williamson et Roger Blench (2000) et sur Mary Esther Kropp Dakubu (2020). Glottolog ne place pas de famille nigéro-congo au-dessus. Jeff Good note que la limite entre le kwa et le bénoué-congo voisin n'est pas claire, et qu'on ignore si le kwa forme lui-même un groupe cohérent.",
       "historicalAppellations": [
-        "Kwa (sens large, Greenberg 1963)",
-        "Western Sudanic / langues soudanaises occidentales (Westermann 1927)"
+        "Groupe éburnéo-dahoméen (Delafosse, 1924)",
+        "Kwa au sens large (Greenberg, 1963)",
+        "Kwa occidental (Greenberg)",
+        "Niger-Congo centre-sud occidental (Bennett et Sterk, 1977)"
       ],
-      "originOfHistoricalTerm": "Le terme « Kwa » est introduit par le linguiste allemand Diedrich Westermann en 1927 dans Die westlichen Sudansprachen und ihre Beziehungen zum Bantu (Berlin, Walter de Gruyter) pour désigner un ensemble de langues du golfe de Guinée. Westermann reprend un mot attesté dans plusieurs des langues qu'il classe — une racine signifiant « les gens », « le peuple » — et en fait une étiquette scientifique couvrant un ensemble bien plus large que ce que le mot désignait dans chacune de ces langues. Joseph H. Greenberg reprend et élargit ce « Kwa » en 1963 dans The Languages of Africa (Indiana University Press) comme l'une des branches du Niger-Congo, y regroupant à la fois les langues aujourd'hui dites Kwa (Akan, Ga-Dangme, Gbe) et une grande partie de ce qui deviendra Bénoué-Congo (yoruboïde, igboïde, edoïde, idomoïde). Patrick R. Bennett et Jan P. Sterk proposent en 1977, dans « South Central Niger-Congo: A Reclassification » (Studies in African Linguistics 8(3), pp. 241-273), de scinder ce « Kwa » de Greenberg en deux branches sœurs sur un critère morphologique précis : les langues qui ont conservé un système de classes nominales de type bantou restent Bénoué-Congo, celles qui l'ont perdu — Akan, Ga-Dangme, Ewe/Gbe et leurs parentes — deviennent le Kwa au sens restreint, qui est celui de cette fiche. John M. Stewart formalise cette classification restreinte en 1989 dans le chapitre « Kwa » de The Niger-Congo Languages (Bendor-Samuel & Hartell éds., University Press of America, pp. 217-245), et Kay Williamson et Roger Blench la reprennent dans l'arbre du Volta-Congo qui reste la référence de synthèse en 2000 (« Niger-Congo », dans Heine & Nurse éds., African Languages: An Introduction, Cambridge University Press, pp. 11-42).",
-      "whyProblematic": "Le nom vient d'un linguiste européen qui a réutilisé un mot désignant « les gens » dans certaines des langues concernées pour nommer, de l'extérieur, un regroupement qu'aucune de ces communautés ne revendique pour elle-même. Le tracé du regroupement a de plus varié trois fois en un demi-siècle (Westermann 1927, Greenberg 1963, Bennett & Sterk 1977) selon les critères retenus par chaque auteur, et Jeff Good documente dans son chapitre de synthèse (2020, voir sources) que la frontière entre Kwa et Bénoué-Congo reste débattue : certains traits qui séparent les deux branches se recoupent partiellement, et aucune reconstruction du proto-Kwa aussi robuste que le proto-bantou n'a stabilisé la question. Aucun peuple ne se désigne par ce nom ; chaque peuple parlant une langue kwa a sa propre auto-appellation, documentée fiche par fiche (Akan, Ewe, Ga, Fon…).",
-      "selfAppellation": null,
-      "contemporaryUsage": "Dans les études sur l'histoire des langues Niger-Congo, Kwa désigne aujourd'hui un groupe restreint d'environ 81 langues, selon Glottolog (voir les sources). Elles sont parlées du sud-est de la Côte d'Ivoire au Bénin, le long du golfe de Guinée. Kwa est un terme de recherche ; les peuples concernés ne l'emploient pas pour se présenter. Certains spécialistes discutent aussi l'idée que toutes ces langues aient une origine commune (Good, 2020). Chaque peuple emploie son propre nom : Akanfoɔ chez les Akan, Eʋeawó chez les Ewe et Gãmɛi chez les Ga.",
-      "geographicArea": "Côte d'Ivoire, Ghana, Togo, Bénin, littoral et bassin de la Volta du golfe de Guinée",
+      "originOfHistoricalTerm": "Le nom kwa apparaît dans la classification du linguiste allemand Diedrich Westermann, qui distingue en 1927, parmi les langues qu'il appelle soudanaises occidentales, plusieurs sous-groupes, dont l'atlantique occidental, le kwa et le gur, selon Joseph Greenberg. Trois ans plus tôt, Maurice Delafosse parlait de groupe éburnéo-dahoméen pour quarante-huit langues de cette côte.\n\nEn 1963, Greenberg fait du kwa l'une des branches de sa famille nigéro-congo et lui donne un sens large : du krou, à l'ouest, à l'ijo, à l'est, en passant par les langues de l'éwé au fon, de l'akan, du ga-dangme, le yoruba, le nupe, l'edo et l'igbo. Il doute lui-même que le krou et l'ijo en fassent partie, et écrit que la limite avec le bénoué-congo n'est pas claire.\n\nEn 1977, Patrick Bennett et Jan Sterk proposent d'abandonner la division entre kwa et bénoué-congo, qui reposait selon eux sur le type des langues plutôt que sur leur parenté. Ils réunissent les langues de l'ouest, de l'akan à l'éwé, dans un groupe occidental, et rangent le yoruba, l'edo et l'igbo plus à l'est. Le kwa au sens étroit d'aujourd'hui, parfois appelé « nouveau kwa », correspond à peu près à ce groupe occidental ; Jeff Good indique en 2012 que c'est l'usage courant, d'après Kay Williamson et Roger Blench (2000).",
+      "whyProblematic": "Le nom kwa est une étiquette de linguistes, posée de l'extérieur sur des langues dont les locuteurs ont chacun leur propre nom. Son tracé a changé plusieurs fois, de Westermann en 1927 à Greenberg en 1963, puis à Bennett et Sterk en 1977, selon les critères de chaque auteur. Jeff Good relève que le mot sert à la fois pour un groupe de langues apparentées et pour un type de langue, ce qui crée des confusions dans les travaux. Dans le même volume de l'Histoire générale de l'Afrique que Greenberg, David Dalby jugeait que l'unité du kwa n'avait jamais été démontrée de façon satisfaisante.",
+      "selfAppellation": "Le nom kwa n'est pas celui que se donnent les locuteurs. Chaque peuple qui parle une de ces langues porte son propre nom, présenté sur sa fiche : Akan, Baoulé, Ewe, Fon, Ga et bien d'autres.",
+      "contemporaryUsage": "Chez les linguistes, le kwa désigne aujourd'hui un groupe de 81 langues selon Glottolog, dans son édition 5.3. Elles sont parlées du sud de la Côte d'Ivoire à la frontière du Nigeria, le long de la côte atlantique et assez loin dans les terres, selon Jeff Good. Glottolog les répartit en cinq branches : le nyo, qui réunit notamment l'akan, le baoulé, l'anyi, le nzema, le guang et des langues des lagunes ivoiriennes ; le ga-dangme ; le gbe, avec l'éwé, le gen, le fon et l'aja ; et deux groupes de langues des collines du Ghana et du Togo, le ka-togo et le na-togo. Mary Esther Kropp Dakubu retient cinq sous-groupes qu'elle tient pour incontestés, et présente la cohésion de l'ensemble comme une question très débattue. Certains auteurs emploient aussi le mot pour un type de langue plutôt que pour un groupe apparenté, selon Good.",
+      "geographicArea": "Côte d'Ivoire, Ghana, Togo, Bénin",
       "numberOfLanguages": 81,
-      "totalSpeakers": 32000000
+      "totalSpeakers": null
     },
     "generalInfo": {
       "branches": [
-        "Nyo (Potou-Tano : Akan, Anyi-Baoulé, Nzema, Ebrié, Adioukrou)",
-        "Ga–Dangme",
-        "Left Bank / Ka-Togo (Avatime, Nyangbo, Logba, Siwu, Lelemi, Tafi)",
-        "Right Bank / Gbe (Ewe, Fon, Aja, Mina, Gen)",
-        "Basila-Adele"
+        "Nyo (akan, baoulé, anyi, nzema, guang, ébrié, attié, abidji, adioukrou, alladian…)",
+        "Ga-dangme (ga, dangme)",
+        "Gbe (éwé, gen, fon, gun, aja…)",
+        "Ka-togo (avatime, nyangbo, tafi, akebu, ikposo…)",
+        "Na-togo (adele, anii, logba, lelemi, siwu, sekpele…)"
       ],
-      "geographicArea": "Côte d'Ivoire, Ghana, Togo, Bénin, littoral et bassin de la Volta du golfe de Guinée",
+      "geographicArea": "Du sud de la Côte d'Ivoire à la frontière entre le Bénin et le Nigeria, à travers le Ghana et le Togo, le long de la côte atlantique et assez loin dans les terres, selon Jeff Good.",
       "numberOfLanguages": 81,
-      "totalSpeakers": 32000000
+      "totalSpeakers": null,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "Selon Glottolog, édition 5.3"
+        },
+        "totalSpeakers": {
+          "note": "Pas de total des locuteurs dans les sources lues. Les recensements comptent l'appartenance déclarée : au Ghana, 21 millions de citoyens akan, ewe, ga-dangme ou guan en 2021",
+          "unsourced": true
+        }
+      }
     },
     "associatedPeoples": [
       {
-        "name": "Akan — Ghana, Côte d'Ivoire",
+        "name": "Akan",
         "peopleId": "PPL_AKAN"
       },
       {
-        "name": "Baoulé — Côte d'Ivoire",
+        "name": "Baoulé",
         "peopleId": "PPL_BAOULE"
       },
       {
-        "name": "Anyi — Côte d'Ivoire, Ghana",
+        "name": "Anyi",
         "peopleId": "PPL_ANYI"
       },
       {
-        "name": "Nzema — Ghana, Côte d'Ivoire",
+        "name": "Nzema",
         "peopleId": "PPL_NZEMA"
       },
-      { "name": "Ga — Ghana", "peopleId": "PPL_GA" },
-      { "name": "Ewe — Ghana, Togo, Bénin", "peopleId": "PPL_EWE" },
-      { "name": "Fon — Bénin, Togo", "peopleId": "PPL_FON" },
-      { "name": "Adja — Bénin, Togo", "peopleId": "PPL_ADJA" }
+      {
+        "name": "Ga",
+        "peopleId": "PPL_GA"
+      },
+      {
+        "name": "Ewe",
+        "peopleId": "PPL_EWE"
+      },
+      {
+        "name": "Fon",
+        "peopleId": "PPL_FON"
+      },
+      {
+        "name": "Adja",
+        "peopleId": "PPL_ADJA"
+      },
+      {
+        "name": "Guan",
+        "peopleId": "PPL_GUAN"
+      },
+      {
+        "name": "Ebrié",
+        "peopleId": "PPL_EBRIE"
+      }
     ],
     "linguisticCharacteristics": {
-      "typology": "Langues à ordre Sujet-Verbe-Objet (SVO), de morphologie majoritairement isolante à faiblement agglutinante, et sans système de classes nominales de type bantou — c'est précisément l'absence de ce trait qui a servi à distinguer le Kwa du Bénoué-Congo (Bennett & Sterk 1977). Construction verbale sérielle très productive : plusieurs verbes s'enchaînent dans une même proposition sans conjonction pour exprimer une séquence d'actions, un trait décrit en détail pour l'akan et l'éwé (Dolphyne 1988 ; Ameka, dans Capo 1991).",
-      "phonologicalFeatures": "Systèmes tonals de registre (2 à 3 tons lexicaux, akan et éwé notamment), harmonie vocalique fondée sur le trait racine de langue avancée (ATR), voyelles nasales phonémiques, et consonnes labio-vélaires doubles (kp, gb) partagées avec les langues gur et krou voisines — un trait aréal du bassin de la Volta plutôt qu'une innovation propre au Kwa.",
-      "relationsWithNeighbors": "Contacts anciens avec les langues gur au nord (zone de contact du bassin de la Volta) et avec les langues krou à l'ouest. Emprunts au portugais et au néerlandais entrés par le commerce côtier atlantique à partir du XVe siècle (forts commerciaux de la Côte-de-l'Or), puis à l'anglais et au français selon le découpage colonial du XIXe siècle qui a divisé l'aire kwa entre Gold Coast britannique, Togoland allemand puis franco-britannique, et Dahomey français.",
-      "keyInnovations": "Consonnes labio-vélaires (kp, gb), constructions à verbes sériels productives, et pronoms logophoriques distincts pour le discours rapporté — un trait particulièrement documenté dans les langues gbe (éwé, fon) et cité comme trait typologique du groupe dans la littérature comparatiste (Capo 1991)."
+      "typology": "Les langues kwa placent en général le sujet, puis le verbe, puis l'objet : l'atlas WALS donne cet ordre pour l'éwé, le fon, l'akan, le ga et le baoulé. Beaucoup ont perdu les classes nominales, ces séries de préfixes qui classent les noms dans les langues bantoues, et certaines n'en ont plus du tout, selon Jeff Good. D'autres en gardent un système vivant, en particulier dans les collines du Ghana et du Togo, comme le notaient déjà Patrick Bennett et Jan Sterk en 1977. Elles enchaînent aussi volontiers plusieurs verbes dans une même phrase pour décrire une seule action ; Felix Ameka le décrit pour l'éwé, le likpe et l'akan, comme un type répandu en Afrique de l'Ouest plutôt que propre au kwa.",
+      "phonologicalFeatures": "Ce sont des langues à tons, où la hauteur de la voix distingue les mots. L'atlas WALS classe l'éwé et l'akan parmi les langues à système de tons simple, et le ga parmi celles à système complexe. L'akan accorde ses voyelles entre elles dans un mot : pour John Stewart (1967), cette harmonie dépend de la position plus ou moins avancée de la racine de la langue. Les consonnes kp et gb, prononcées à la fois avec les lèvres et le fond de la bouche, existent en éwé et en ga, mais pas en akan, selon WALS.",
+      "relationsWithNeighbors": "Les langues kwa partagent de nombreux traits avec des langues d'autres familles de la même région. Les consonnes kp et gb, par exemple, sont rares dans le monde mais courantes dans une large bande d'Afrique au sud du Sahara, sans caractériser toute la famille, selon Jeff Good. Le commerce avec les Européens a laissé des emprunts : le dictionnaire de l'akan publié par le missionnaire Johann Gottlieb Christaller en 1881 tire krataa, « feuille de papier », et paano, « pain », du portugais. Nous n'avons pas encore de source sur les échanges avec les langues gur et krou voisines.",
+      "keyInnovations": "Nous n'avons pas encore de source qui liste les traits propres au kwa, par opposition à ses voisins ; Jeff Good rappelle que la famille n'a pas de critère clair qui la distingue. Certains traits souvent cités ne valent que pour une partie des langues. Un pronom spécial, qui renvoie à la personne dont on rapporte les paroles, existe en éwé, en fon, en aja et en avatime, mais pas en anufo, en nawuri, en nkonya, en selee ni en tuwuli, selon la base Grambank."
     },
     "historyAndOrigins": {
-      "probableOrigin": "Aucune reconstruction du proto-Kwa comparable en solidité au proto-bantou n'a stabilisé la question de l'origine commune. Deux positions coexistent dans la littérature : celle qui traite le Kwa restreint comme une unité généalogique réelle issue d'une divergence à partir du Volta-Congo (Stewart 1989, qui reconstruit un proto-Tano pour la branche Nyo), et celle, plus prudente, de Jeff Good (2020), qui traite Kwa et Bénoué-Congo comme des étiquettes commodes recouvrant un continuum de traits partagés par contact autant que par héritage, sans trancher sur leur statut de clades véritables.",
-      "emergencePeriod": "(1) Émergence historique : non datée avec certitude faute de reconstruction robuste ; les hypothèses glottochronologiques restent contestées et ne sont pas retenues ici comme datation. (2) Classification académique : Westermann pose le premier jalon en 1927, Greenberg élargit la catégorie en 1963, Bennett & Sterk la scindent en 1977, Stewart la formalise en 1989, et Williamson & Blench en donnent la synthèse de référence en 2000.",
-      "diffusion": "Répartition continue le long du littoral et de l'arrière-pays forestier du golfe de Guinée, du sud-est ivoirien (lagunes d'Ébrié) au sud-ouest du Nigeria, en passant par le bassin de la Volta ghanéen et le couloir togolo-béninois. Les branches Nyo et Ga-Dangme occupent le centre-ouest de cette aire (Côte d'Ivoire, Ghana), la branche Gbe son extrémité orientale (Togo, Bénin).",
-      "historicalBreaks": "Le partage colonial de la fin du XIXe siècle a coupé la continuité gbe en trois : le pays éwé s'est retrouvé scindé entre la Gold Coast britannique et le Togoland allemand (1884), puis, après 1919, entre le Togoland sous mandat britannique (annexé au Ghana en 1957) et le Togoland sous mandat français — un même peuple réparti aujourd'hui sur trois États (Ghana, Togo, Bénin) par une frontière qui ne recoupe aucune limite linguistique ou politique antérieure.",
-      "contactZones": "Bassin de la Volta (contact avec les langues gur), lagunes ivoiriennes d'Ébrié et d'Aby (contact avec les langues krou), littoral du golfe de Guinée (comptoirs commerciaux européens du XVe au XIXe siècle).",
-      "majorEvents": "Émergence de l'Empire ashanti (Akan) aux XVIIe-XIXe siècles, qui fait du twi une langue de prestige régionale ; comptoirs commerciaux portugais, néerlandais, danois et britannique sur la Côte-de-l'Or (XVe-XIXe siècles) ; partage du Togoland allemand entre la France et le Royaume-Uni après 1919, qui divise durablement l'aire gbe ; indépendance du Ghana en 1957, premier État d'Afrique subsaharienne à accéder à l'indépendance."
+      "probableOrigin": "Nous n'avons pas encore de source qui situe l'ancêtre commun des langues kwa. Les linguistes ne s'accordent ni sur la limite entre le kwa et le bénoué-congo, ni sur l'unité du kwa lui-même, selon Jeff Good. Les historiens décrivent plutôt les mouvements des peuples : entre 1500 et 1800, les Akan, les Ga et les Ewe achèvent leurs migrations depuis leurs différents berceaux vers les régions où ils vivent aujourd'hui, selon A. A. Boahen.",
+      "emergencePeriod": "Nous n'avons pas encore de source qui date la formation du groupe. La classification a sa propre chronologie : Westermann distingue un sous-groupe kwa en 1927, Greenberg l'élargit en 1963, Bennett et Sterk proposent en 1977 d'abandonner sa séparation d'avec le bénoué-congo, et Kay Williamson et Roger Blench donnent en 2000 le découpage étroit que suivent aujourd'hui Glottolog et la plupart des linguistes.",
+      "diffusion": "Les langues kwa forment une bande continue le long de la côte atlantique, de la Côte d'Ivoire à la frontière du Nigeria, qui remonte assez loin dans les terres, selon Jeff Good. Selon A. A. Boahen, la période de 1500 à 1800 voit les peuples de cette côte, entre les fleuves Bandama et Mono, s'installer dans leurs régions actuelles. À la fin du XVIe siècle ou au début du XVIIe, les Ewe quittent Notsie, dans l'actuel Togo, en deux groupes, ceux du sud et ceux de l'intérieur, pour échapper au roi Agokoli.",
+      "historicalBreaks": "Le partage colonial coupe le pays éwé, entre les fleuves Mono et Volta. Selon la déclaration de Sylvanus Olympio aux Nations unies en 1952, les Allemands en occupent les trois quarts dans la seconde moitié du XIXe siècle et les Britanniques le reste, rattaché à la Gold Coast ; après la Première Guerre mondiale, la partie allemande est partagée entre un Togo sous mandat français et un Togo sous mandat britannique. Michael Crowder note que ce partage, fait sans tenir compte de l'histoire et des peuples, a nourri l'amertume des Ewe du Togo et de la Gold Coast. Le 9 mai 1956, un plébiscite donne une majorité de 58 % pour l'union du Togo britannique avec la Gold Coast, mais la partie sud vote contre, selon les Nations unies et le département d'État américain. L'union se fait avec l'indépendance du Ghana, le 6 mars 1957. Aujourd'hui, des Ewe vivent au Ghana, au Togo et au Bénin, selon A. Adu Boahen.",
+      "contactZones": "La côte de l'actuel Ghana, l'ancienne Côte-de-l'Or, est le grand lieu de contact avec les Européens : après 1481-1482, le fort portugais d'Elmina en devient le principal comptoir, avec ceux d'Axim, de Shama et d'Accra, et les Néerlandais y prennent ensuite une grande part du commerce de l'or, selon M. Malowist. Plus à l'est, les royaumes d'Allada, de Ouidah et du Dahomey, sur la côte de l'actuel Bénin, évoluent au contact des marchands d'esclaves européens et du royaume yoruba d'Oyo, au nord-est, selon E. J. Alagoa.",
+      "majorEvents": "Après 1481-1482, le fort d'Elmina devient le principal comptoir portugais de la Côte-de-l'Or. À la fin du XVIe siècle ou au début du XVIIe, les Ewe quittent Notsie. Vers 1700, le royaume du Dahomey, formé de groupes aja comme les Gun et les Fon, devient une grande puissance, et son roi Agaja conquiert les États voisins entre 1724 et 1727, selon E. J. Alagoa. Au XVIIIe siècle naissent de nouveaux États akan, dont le Nzima, les royaumes anyi du Sanwi et du Ndenye et des chefferies baoulé, tandis que l'empire asante devient la puissance principale de la Côte-de-l'Or, selon A. A. Boahen. Au XXe siècle, le partage du Togo allemand puis le plébiscite de 1956 fixent la frontière entre le Ghana, indépendant en 1957, et le Togo."
     },
     "distribution": {
-      "totalSpeakers": 32000000,
+      "totalSpeakers": null,
       "distributionByCountry": {
-        "GHA": 18000000,
-        "CIV": 6000000,
-        "TGO": 3000000,
-        "BEN": 2500000
+        "GHA": 20963094,
+        "CIV": 8520200
       }
     },
     "sources": [
-      {
-        "title": "Westermann, Diedrich (1927) – Die westlichen Sudansprachen und ihre Beziehungen zum Bantu. Walter de Gruyter",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic",
-        "notes": "Première introduction du terme « Kwa » comme catégorie linguistique."
-      },
       {
         "title": "Greenberg, Joseph H. (1963) – The Languages of Africa. Indiana University Press",
         "url": null,
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Classe le Kwa comme branche du Niger-Congo, dans un sens plus large que la classification actuelle."
-      },
-      {
-        "title": "Bennett, Patrick R. & Sterk, Jan P. (1977) – \"South Central Niger-Congo: A Reclassification\", Studies in African Linguistics 8(3), pp. 241-273",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic",
-        "notes": "Article qui scinde le « Kwa » de Greenberg en Kwa restreint et Bénoué-Congo sur le critère des classes nominales."
-      },
-      {
-        "title": "Stewart, John M. (1989) – \"Kwa\", dans Bendor-Samuel, J. & Hartell, R. L. (éds.), The Niger–Congo Languages. University Press of America, pp. 217-245",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic",
-        "notes": "Formalise la classification restreinte du Kwa retenue par cette fiche et reconstruit un proto-Tano."
+        "notes": "Ouvrage de référence de la classification des langues d'Afrique, où le kwa est une branche du nigéro-congo au sens large ; nous en avons lu la présentation par l'auteur dans l'Histoire générale de l'Afrique."
       },
       {
         "title": "Williamson, Kay & Blench, Roger (2000) – \"Niger-Congo\", dans Heine, B. & Nurse, D. (éds.), African Languages: An Introduction. Cambridge University Press, pp. 11-42",
         "url": null,
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Synthèse de référence de l'arbre du Volta-Congo utilisée pour les branches internes du Kwa."
-      },
-      {
-        "title": "Good, Jeff (2020) – \"Niger-Congo, with a special focus on Benue-Congo\", dans Vossen, R. & Dimmendaal, G. J. (éds.), The Oxford Handbook of African Languages. Oxford University Press",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic",
-        "notes": "Discute le caractère débattu de la frontière entre Kwa et Bénoué-Congo comme unités généalogiques."
-      },
-      {
-        "title": "Dolphyne, Florence Abena (1988) – The Akan (Twi-Fante) Language: Its Sound Systems and Tonal Structure. Ghana Universities Press",
-        "url": null,
-        "tier": "referenced",
-        "notes": "Description phonologique et tonale de l'akan, langue nyo la plus parlée du groupe."
+        "notes": "Synthèse sur laquelle Glottolog et Jeff Good fondent le découpage étroit du kwa ; référence vérifiée dans la bibliographie de Glottolog."
       },
       {
         "title": "Kropp Dakubu, Mary Esther (1988) – The Languages of Ghana. Kegan Paul International, pour l'International African Institute",
         "url": null,
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Inventaire de référence des langues kwa et non-kwa du Ghana, dont le ga-dangme."
+        "notes": "Ouvrage collectif sur les langues du Ghana ; nous n'en avons pas lu le texte."
       },
       {
         "title": "Capo, Hounkpati B. C. (1991) – A Comparative Phonology of Gbe. Foris Publications",
         "url": null,
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Classification comparative interne des langues gbe (éwé, fon, aja, mina, gen)."
+        "notes": "Phonologie comparée des langues gbe, comme l'éwé, le fon, l'aja et le gen ; nous n'en avons pas lu le texte."
       },
       {
-        "title": "SIL International (2025) – Ethnologue: Languages of the World (25e édition)",
-        "url": "https://www.ethnologue.com",
-        "tier": "official",
-        "source_kind": "linguistic_reference",
-        "notes": "Fiches de langues individuelles du groupe kwa et estimations de locuteurs."
-      },
-      {
-        "title": "Glottolog 5.2 (2025) – \"Kwa Volta-Congo\" (kwav1236)",
+        "title": "Glottolog 5.3 — Kwa Volta-Congo (kwav1236)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
         "url": "https://glottolog.org/resource/languoid/id/kwav1236",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Classification de référence : Atlantic-Congo > Volta-Congo > Kwa Volta-Congo, 81 langues rattachées, consultée le 2026-09-14."
+        "notes": "Notice consultée le 10 octobre 2026. Le catalogue range sous ce nom 81 langues, dont l'akan et l'éwé, dans l'ensemble Atlantic-Congo."
       },
       {
-        "title": "UNFPA (2025) – World Population Dashboard",
-        "url": "https://www.unfpa.org/data/world-population-dashboard",
+        "title": "Bennett, Patrick R. & Sterk, Jan P. (1977) – \"South Central Niger-Congo: A Reclassification\", Studies in African Linguistics 8(3), pp. 241-273",
+        "url": "https://doi.org/10.32473/sal.v8i3.107619",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de la revue Studies in African Linguistics, lu en entier dans le numéro mis en ligne par la revue. Les auteurs proposent d'abandonner la division entre kwa et bénoué-congo, qu'ils jugent typologique à l'origine, et regroupent les langues de l'ouest en un Niger-Congo centre-sud occidental."
+      },
+      {
+        "title": "Good, Jeff (2017) – \"Niger-Congo, with a special focus on Benue-Congo\", version de travail du chapitre paru en 2020 dans The Oxford Handbook of African Languages",
+        "url": "http://www.acsu.buffalo.edu/~jcgood/jcgood-NigerCongoBenueCongo.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Version de l'auteur datée du 13 août 2017, mise en ligne sur sa page de l'université de Buffalo, du chapitre publié en 2020 par Oxford University Press. Lue en entier : limite incertaine entre kwa et bénoué-congo, double usage du mot kwa, traits répandus dans une large zone d'Afrique."
+      },
+      {
+        "title": "Good, Jeff (2012) – \"How to become a 'Kwa' noun\", Morphology 22, pp. 293-335 (manuscrit de l'auteur)",
+        "url": "http://www.acsu.buffalo.edu/~jcgood/jcgood-KwaNoun.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Manuscrit de l'auteur de l'article paru dans la revue Morphology, lu sur sa page de l'université de Buffalo. Il situe les langues kwa de la Côte d'Ivoire à la frontière du Nigeria et décrit la perte des classes nominales."
+      },
+      {
+        "title": "Kropp Dakubu, Mary Esther (2020) – \"Kwa\", dans The Oxford Handbook of African Languages, pp. 184-190",
+        "url": "https://doi.org/10.1093/oxfordhb/9780199609895.013.14",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre publié par Oxford University Press ; nous en avons lu le résumé publié par l'éditeur. Il retient cinq sous-groupes jugés incontestés et présente la cohésion de l'ensemble comme une question très débattue."
+      },
+      {
+        "title": "General History of Africa, I, ch. 12, part I : African linguistic classification",
+        "author": "Joseph H. Greenberg",
+        "year": 1981,
+        "url": "https://archive.org/details/unesco_general_history_africa_i",
         "tier": "official",
         "source_kind": "intergovernmental",
-        "notes": "Populations nationales du Ghana, de la Côte d'Ivoire, du Togo et du Bénin utilisées pour calibrer les estimations de locuteurs par pays."
+        "notes": "Édition anglaise du premier volume de l'Histoire générale de l'Afrique de l'UNESCO, lue dans sa numérisation. Greenberg y présente la classification de Westermann en 1927 et sa propre division du kwa."
       },
       {
-        "title": "Ghana Statistical Service (2021) – 2021 Population and Housing Census: General Report",
-        "url": "https://statsghana.gov.gh",
+        "title": "General History of Africa, I, ch. 12, part II : The language map of Africa",
+        "author": "David Dalby",
+        "year": 1981,
+        "url": "https://archive.org/details/unesco_general_history_africa_i",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Édition anglaise du premier volume de l'Histoire générale de l'Afrique de l'UNESCO, lue dans sa numérisation. Dalby y juge que l'unité du kwa n'a jamais été démontrée de façon satisfaisante."
+      },
+      {
+        "title": "WALS Online, valeurs des langues kwa : ordre des mots (81A), tons (13A) et consonnes rares (19A)",
+        "author": "Matthew S. Dryer et Martin Haspelmath (dir.)",
+        "url": "https://wals.info/valuesets/81A-ewe",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des structures des langues publié par l'Institut Max Planck d'anthropologie évolutionniste. Fiches de l'éwé, du fon, de l'akan, du ga et du baoulé ; le lien mène à l'ordre des mots de l'éwé."
+      },
+      {
+        "title": "Ameka, Felix K. (2013) – \"Three-place predicates in West African serializing languages\", Studies in African Linguistics 42(1), pp. 1-32",
+        "url": "https://doi.org/10.32473/sal.v42i1.107273",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de la revue Studies in African Linguistics, lu en entier. Il décrit les constructions à plusieurs verbes de l'éwé, du likpe et de l'akan comme un type répandu en Afrique de l'Ouest."
+      },
+      {
+        "title": "Stewart, John M. (1967) – \"A theory of the origin of Akan vowel harmony\", Proceedings of the 6th International Congress of Phonetic Sciences, Prague, p. 863",
+        "url": "https://www.coli.uni-saarland.de/Phonetics/icphs/ICPhS1967/p6_863.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Communication publiée dans les actes du congrès international des sciences phonétiques de Prague, lue dans les archives en ligne de l'université de la Sarre."
+      },
+      {
+        "title": "Grambank, trait GB167 : Is there a logophoric pronoun?",
+        "author": "The Grambank Consortium",
+        "url": "https://grambank.clld.org/parameters/GB167",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Base de données grammaticale publiée par l'Institut Max Planck d'anthropologie évolutionniste. Elle note ce pronom présent en éwé, en fon, en aja et en avatime, et absent en anufo, nawuri, nkonya, selee et tuwuli."
+      },
+      {
+        "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+        "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Dictionnaire publié en 1881 à Bâle par le missionnaire Johann Gottlieb Christaller, lu dans sa numérisation. Les entrées krataa (p. 257) et paano (p. 359) indiquent leur origine portugaise."
+      },
+      {
+        "title": "General History of Africa, V, ch. 1 : The struggle for international trade and its implications for Africa",
+        "author": "M. Malowist",
+        "year": 1992,
+        "url": "https://archive.org/details/unesco_general_history_africa_v",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Édition anglaise du cinquième volume de l'Histoire générale de l'Afrique de l'UNESCO, lue dans sa numérisation."
+      },
+      {
+        "title": "General History of Africa, V, ch. 14 : The states and cultures of the Lower Guinean coast",
+        "author": "A. A. Boahen",
+        "year": 1992,
+        "url": "https://archive.org/details/unesco_general_history_africa_v",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Édition anglaise du cinquième volume de l'Histoire générale de l'Afrique de l'UNESCO, lue dans sa numérisation."
+      },
+      {
+        "title": "General History of Africa, V, ch. 15 : Fon and Yoruba: the Niger Delta and the Cameroon",
+        "author": "E. J. Alagoa",
+        "year": 1992,
+        "url": "https://archive.org/details/unesco_general_history_africa_v",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Édition anglaise du cinquième volume de l'Histoire générale de l'Afrique de l'UNESCO, lue dans sa numérisation."
+      },
+      {
+        "title": "General History of Africa, VII, ch. 30 : Colonialism in Africa: its impact and significance",
+        "author": "A. Adu Boahen",
+        "year": 1985,
+        "url": "https://archive.org/details/unesco_general_history_africa_vii",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Édition anglaise du septième volume de l'Histoire générale de l'Afrique de l'UNESCO, lue dans sa numérisation."
+      },
+      {
+        "title": "General History of Africa, VII, ch. 12 : The First World War and its consequences",
+        "author": "Michael Crowder",
+        "year": 1985,
+        "url": "https://archive.org/details/unesco_general_history_africa_vii",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Édition anglaise du septième volume de l'Histoire générale de l'Afrique de l'UNESCO, lue dans sa numérisation."
+      },
+      {
+        "title": "Nations unies, Assemblée générale, Quatrième Commission, 300e séance (A/C.4/SR.300) : le problème éwé et l'unification du Togo",
+        "year": 1952,
+        "url": "https://digitallibrary.un.org/record/859835/files/A_C.4_SR.300-EN.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Compte rendu officiel de la séance du 10 décembre 1952, lu dans la bibliothèque numérique des Nations unies. Il rapporte la déclaration de Sylvanus Olympio au nom de la All-Ewe Conference."
+      },
+      {
+        "title": "Nations unies, Assemblée générale, rapport de la Quatrième Commission (A/3449) : l'avenir du Togo sous administration britannique",
+        "year": 1956,
+        "url": "https://digitallibrary.un.org/record/1304801/files/A_3449-EN.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Rapport officiel du 12 décembre 1956, lu dans la bibliothèque numérique des Nations unies. Il rend compte du plébiscite de 1956 et de la date prévue de l'indépendance de la Gold Coast."
+      },
+      {
+        "title": "Foreign Relations of the United States, 1955-1957, vol. XVIII, document 122 : note éditoriale sur le plébiscite du Togo britannique",
+        "url": "https://history.state.gov/historicaldocuments/frus1955-57v18/d122",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Publication du bureau de l'historien du département d'État des États-Unis. Elle donne les résultats du plébiscite du 9 mai 1956 : 93 095 voix, soit 58 %, pour l'union avec la Gold Coast et 67 492 contre."
+      },
+      {
+        "title": "Ghana Statistical Service (2021) – Ghana 2021 Population and Housing Census, General Report Volume 3C : Background Characteristics",
+        "url": "https://census2021.statsghana.gov.gh/gssmain/fileUpload/reportthemelist/2021%20PHC%20General%20Report%20Vol%203C_Background%20Characteristics_181121.pdf",
         "tier": "official",
         "source_kind": "official_statistics",
-        "notes": "Répartition linguistique déclarée au recensement ghanéen, dont akan et ewe."
+        "notes": "Rapport officiel du service statistique du Ghana. Le tableau 5.5, p. 50, compte les citoyens ghanéens par grand groupe ethnique déclaré : 13 925 576 Akan, 3 902 009 Ewe, 2 153 562 Ga-Dangme et 981 747 Guan. Ce sont des appartenances, pas des langues parlées."
+      },
+      {
+        "title": "Agence nationale de la statistique de Côte d'Ivoire (2021) – RGPH 2021, répartition des Ivoiriens par grand groupe ethnique",
+        "url": "https://data.gouv.ci/datasets/repartition-des-ivoiriens-par-grand-groupe-ethnique",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Données officielles du recensement de 2021, publiées sur le portail des données ouvertes de Côte d'Ivoire. Elles comptent l'appartenance ethnique déclarée des Ivoiriens : 38 % se déclarent akan, sur un total de 22 421 580 Ivoiriens dans ce jeu de données. Le nombre brut donné pour les Akan ne concorde pas avec ce pourcentage ; le chiffre retenu ici en est déduit."
+      },
+      {
+        "title": "Langues du Soudan et de la Guinée, dans Les langues du monde, sous la direction d'A. Meillet et Marcel Cohen",
+        "author": "Maurice Delafosse",
+        "year": 1924,
+        "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Paris, Édouard Champion, 1924. Lu dans la numérisation d'Internet Archive. Le texte porte le regard d'un administrateur colonial français et classe les peuples d'après la « race »."
       }
     ]
   }

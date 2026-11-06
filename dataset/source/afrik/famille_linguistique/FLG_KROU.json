@@ -208,6 +208,81 @@
                 "notes": "Paris, Ernest Leroux, 1904. Lu dans la numérisation d'Internet Archive, chapitre II : « Les langues krou ». Le texte porte le regard d'un administrateur colonial français et classe les peuples d'après la « race »."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1589,
+              "to": 1589,
+              "label": "Journal d'un voyage parti d'Angleterre fin 1588, escale datée de 1589"
+            },
+            "era": "polity",
+            "statement": "Le nom krou a peut-être une forme ancienne, Crua, que le marin anglais James Welsh écrit comme le nom d'un lieu de la côte. Alfred Schwartz, Jeffrey Gunn et Megan Crutcher y voient la première mention des Krao.",
+            "formAsWritten": "Crua",
+            "actors": [
+              {
+                "name": "James Welsh",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Principal Navigations Voyages Traffiques and Discoveries of the English Nation, vol. VI : A voyage to Benin beyond the Countrey of Guinea, written by James Welsh",
+                "author": "Richard Hakluyt (éd.), récit de James Welsh",
+                "year": 1904,
+                "url": "https://archive.org/details/principalnaviga06hakl",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 450-451",
+                "notes": "Récit d'un marin marchand anglais, imprimé pour la première fois dans la deuxième édition de Hakluyt, en 1599-1600, et lu ici dans la réédition de Glasgow, James MacLehose and Sons, 1904. La note en marge de la page 451 date l'escale de 1589."
+              },
+              {
+                "title": "Schwartz, Alfred (1980) – « Quelques repères dans l'histoire des Kroumen ». *Outre-Mers. Revue d'histoire*, tome 67, n°246-247, pp. 151-155. Persée",
+                "author": "Alfred Schwartz",
+                "year": 1980,
+                "url": "https://www.persee.fr/doc/outre_0300-9513_1980_num_67_246_2242",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 151"
+              },
+              {
+                "title": "'For King and Empire': The Changing Political, Economic, and Cultural Identities of Kru Mariners in Atlantic Africa, 1460-1945",
+                "author": "Megan Crutcher",
+                "year": 2023,
+                "url": "https://doi.org/10.1017/S0021853723000567",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 437-448",
+                "notes": "Article de The Journal of African History, vol. 64, no 3, publié en libre accès par Cambridge University Press et lu en entier."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1602,
+              "label": "Voyage de 1600, récit publié en 1602"
+            },
+            "era": "polity",
+            "statement": "Le nom krou est écrit Crou par le voyageur néerlandais Pieter de Marees, pour un lieu de la Côte des Graines. Son éditeur de 1912 y reconnaît Nana Kru et Settra Kru.",
+            "formAsWritten": "Crou",
+            "actors": [
+              {
+                "name": "Pieter de Marees",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Beschryvinghe ende historische verhael van het Gout Koninckrijck van Guinea",
+                "author": "Pieter de Marees, édité par S. P. L'Honoré Naber",
+                "year": 1912,
+                "url": "https://archive.org/details/beschryvingheend00mare",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chapitre 1, journal du voyage, et note 8 de l'éditeur",
+                "notes": "Récit d'un voyageur néerlandais publié en 1602, réédité en 1912 par la Linschoten-Vereeniging à La Haye. L'éditeur identifie le lieu nommé Crou à Nana Kru et Settra Kru."
+              }
+            ]
           }
         ]
       },
@@ -256,37 +331,56 @@
         "languageOfOrigin": null,
         "namedBy": null,
         "variantSpelling": true,
-        "accounts": []
+        "accounts": [],
+        "shortLine": "L'orthographe anglaise du nom, employée au Liberia et par les linguistes.",
+        "usedIn": ["eng"]
       }
     ]
   },
   "content": {
     "searchAnswer": {
-      "lead": "Des langues des forêts de Côte d'Ivoire et du Liberia. L'origine du nom Krou n'est pas établie : un voyageur anglais le note en 1588, et des traditions krou parlent d'un nom plus ancien.",
-      "followUp": "Que racontent les traditions krou sur l'origine de leur nom ?"
+      "lead": "Une famille d'une quarantaine de langues de Côte d'Ivoire et du Liberia, comme le bété et le bassa. Son nom vient d'un groupe de la côte libérienne, et son origine est discutée.",
+      "followUp": "Le nom krou vient-il vraiment du mot anglais crew ?"
     },
     "decolonialHeader": {
-      "whyProblematic": " Le terme « Kru/Krou » pose plusieurs problèmes décoloniaux : **Auteurs coloniaux problématiques :** - Le terme a été imposé par les navigateurs et administrateurs coloniaux européens (XVIIᵉ–XIXᵉ siècles) sans consultation des populations locales, reflétant une vision extérieure et simplificatrice. - Les colonisateurs l'ont utilisé comme catégorie professionnelle (marins, intermédiaires commerciaux), effaçant la diversité ethnolinguistique des groupes (Bété, Dida, Wè, Grebo, Godié, etc.). - Cette classification colonialiste a regroupé des peuples aux identités culturelles et linguistiques distinctes sous une même appellation générique, occultant leurs spécificités. **Auteurs locaux défendant l'africanité :** - Frédéric Bruly Bouabré (artiste et intellectuel bété, né en 1923) a œuvré pour la reconnaissance et la valorisation des identités culturelles propres aux peuples concernés, notamment à travers son syllabaire bété créé en 1958 et ses œuvres artistiques célébrant la culture bété. - Des chercheurs contemporains comme Lynell Marchese ont souligné la complexité et la diversité interne des langues krou, remettant en question les classifications simplistes héritées de l'époque coloniale. **Études génétiques modernes :** - Les études génétiques contemporaines ont montré la diversité génétique importante au sein des populations dites « Krou », confirmant que ces groupes ne constituent pas une unité génétique homogène et remettant en question les classifications coloniales simplifiées basées sur des critères externes. → Le terme moderne « Krou » est linguistiquement valide (classifié par Greenberg 1963 dans le Niger-Congo), mais son héritage colonial doit être expliqué et les auto-appellations des peuples concernés doivent être privilégiées.",
-      "selfAppellation": null,
-      "contemporaryUsage": " Le krou est une grande sous-famille du Niger-Congo regroupant environ 30–40 langues parlées en Côte d'Ivoire et au Liberia, dont le bété, le dida, le wê/guéré, le grebo, le bassa, le godié, le néyo, etc. Cette classification linguistique moderne, établie au XXᵉ siècle par des linguistes comme Joseph Greenberg (1963) et Lynell Marchese (1983–1984), est valide sur le plan scientifique mais doit être distinguée des classifications coloniales ethnonymiques. Trois réalités portent le nom sans se confondre : cette famille de langues, l'ensemble des peuples qui les parlent (fiche Krou, macro-groupe) et le peuple klao, dit aussi Kru. Les Kroumen sont les marins krou engagés sur les navires européens.",
+      "whyProblematic": "Le nom krou vient d'un seul groupe de la côte libérienne. Des navigateurs, puis des administrateurs et des linguistes, l'ont étendu de l'extérieur à des peuples qui ne se donnaient pas de nom commun, comme le note Maurice Delafosse lui-même en 1900 et en 1904. Les marins recrutés sur cette côte aux XVIIIe et XIXe siècles ont été définis par les observations et les catégories des Européens plutôt que par leurs propres traditions, leur langue et leurs archives, selon l'historienne Megan Crutcher (2023). Le même mot désigne donc aujourd'hui un peuple du Liberia, un métier, celui des Kroumen, et une famille de langues. Hannah Sande (2017) ajoute que plusieurs parlers krou sont regroupés en une seule langue pour des raisons parfois politiques ou géographiques, ce qui conduit à des erreurs de classement.",
+      "selfAppellation": "Les locuteurs de ces langues n'ont pas de nom commun pour l'ensemble, selon Maurice Delafosse en 1900. Chaque peuple a le sien ; celui des gens de Settra Kru, Krao ou Klao, a donné son nom à la famille, selon Megan Crutcher (2023).",
+      "contemporaryUsage": "Les linguistes appellent krou une famille de langues de Côte d'Ivoire et du Liberia, divisée en deux branches, orientale et occidentale, de part et d'autre de la frontière entre les deux pays, selon Hannah Sande (2017). Glottolog y compte 38 langues dans son édition 5.3 : le bété, le dida, le godié, le néyo, le kouya et le bakwé à l'est ; le grebo, l'aïzi, le wè, qui comprend le guéré et le wobé, le krahn, le sapo, le bassa et le klao à l'ouest. Le siamou du Burkina Faso, longtemps rangé parmi elles, n'en fait pas partie pour Glottolog, pas plus que l'aïzi aproumu.\n\nLe nom sert aussi aux recensements. La Côte d'Ivoire compte les Krou parmi ses grands groupes ethniques ; le Liberia compte séparément les Kru, les Bassa, les Grebo, les Krahn, les Sapo, les Belle et les Dey, qui parlent tous des langues de cette famille. Le même mot désigne enfin le peuple klao du Liberia, appelé Kru en anglais, et les Kroumen, les marins de cette côte.",
       "historicalAppellations": [
-        "Kroo",
         "Crua",
-        "Croa",
+        "Crou",
         "Crouw",
+        "Kroo",
         "Croo",
-        "Crew",
         "Krew",
+        "Crew",
         "Krus",
-        "Croos"
+        "Croos",
+        "Éburnéo-libérien"
       ],
-      "originOfHistoricalTerm": " Le terme apparaît pour la première fois en 1588 sous la forme « Crua » dans le récit de voyage de James Welsh, publié par Richard Hakluyt dans ses *Principal Navigations, Voyages, Traffiques and Discoveries of the English Nation* (1589). Ce terme faisait référence au point géographique côtier correspondant à l'actuel Settra-Kru au Liberia. La graphie « Krou » est une corruption de l'une des nombreuses appellations données à travers les âges aux ressortissants du peuple krao. Le terme a été systématisé par des chercheurs comme Pieter Jan-L. Vandenhoute (1948) dans son étude sur les masques krou, puis par Bohumil Holas après ses enquêtes au Liberia en 1948. Les linguistes ont ensuite étendu le terme pour désigner un ensemble beaucoup plus large de langues parlées en Côte d'Ivoire et au Liberia.\n\nL'explication la plus répandue rattache Krou à l'anglais crew, « équipage », parce que des hommes de cette côte servaient sur les navires européens. Gunn (2021) la conteste. Selon les traditions orales krou qu'il rapporte, Krao, aussi prononcé Klao ou Claho, était le nom d'origine du peuple avant de devenir Kru ou Kroo. Le marchand anglais James Welsh relève Crua en 1588, avant que ces hommes travaillent sur des navires britanniques, et des capitaines portugais, espagnols, néerlandais et français écrivent Crou au début du XVIIe siècle, avant les embauches en masse : pour Gunn, cela confirme que le nom n'a pas de lien avec le mot anglais crew. Le métier vient donc après le nom : Kroumen désigne plus tard les marins krou employés sur les navires européens."
+      "originOfHistoricalTerm": "Le mot krou a nommé un lieu et un groupe de la côte du Liberia avant de nommer une famille de langues. La plus ancienne forme que nous connaissons est Crua : le marin anglais James Welsh l'écrit comme le nom d'un lieu de la côte, au cours d'un voyage vers le Bénin parti d'Angleterre à la fin de 1588. Son journal paraît dans la deuxième édition des Principal Navigations de Richard Hakluyt, en 1599-1600, et la marge de l'escale porte l'année 1589. Vers 1600, le voyageur néerlandais Pieter de Marees cite un lieu appelé Crou, que son éditeur de 1912 identifie à Nana Kru et Settra Kru.\n\nPour l'historien Alfred Schwartz (1980), le terme désigne d'abord les Kra ou Krao, établis au sud-est de la rivière Sinoe. Il s'étend ensuite par étapes : à leurs voisins, à toute la côte libérienne, à la côte ouest de la Côte d'Ivoire, à une aire culturelle, enfin aux marins de toute origine appelés Kroumen.\n\nDeux explications du mot circulent. La première le tire de l'anglais crew, « équipage », parce que des hommes de cette côte s'engageaient sur les navires européens ; Maurice Delafosse la donne en 1900, puis l'abandonne en 1904. La seconde le tire de Krao ou Klao, le nom des habitants de Settra Kru selon les historiens George Brooks et Ronald Davis, que les traditions orales krou tiennent pour leur nom d'origine, selon Jeffrey Gunn (2019). Schwartz traduit Kroumen par « hommes du peuple krou » et non par « hommes d'équipage ». Gunn rappelle que des capitaines français, portugais, espagnols et néerlandais écrivaient déjà Crou au début du XVIIe siècle ; pour lui, le rapprochement avec crew est une coïncidence de l'anglais. La linguiste Lynell Marchese, qu'il cite, note que cette ressemblance a au moins nourri chez les Européens l'idée d'une « tribu » krou.\n\nMaurice Delafosse, administrateur colonial, étend le nom à une famille de peuples en 1900, puis à une famille de langues en 1904, parce que les intéressés n'avaient pas de nom commun pour l'ensemble. Il les appelle aussi langues éburnéo-libériennes en 1924.",
+      "linkWithFamily": "Le krou est classé de deux façons. Pour la linguiste Hannah Sande, en 2017, les travaux actuels en font une branche de la grande famille nigéro-congolaise, comme le proposait William Welmers en 1977, une idée confirmée par Lynell Marchese en 1979. Le catalogue Glottolog en fait au contraire une famille à part, rattachée à aucun ensemble plus vaste : les ressemblances de vocabulaire et de classes nominales avec les langues atlantique-congo ne suffiraient pas à prouver une parenté, selon Tom Güldemann et Lynell Marchese Zogbo, qu'il cite. Avant eux, des linguistes avaient rapproché le krou des langues gur, kwa ou mandé.",
+      "geographicArea": "Côte d'Ivoire, Liberia",
+      "numberOfLanguages": 38,
+      "totalSpeakers": null
     },
     "generalInfo": {
-      "branches": ["Eastern Kru", "Greater Western Kru"],
-      "geographicArea": "Côte d'Ivoire (centre-sud, sud-ouest, ouest), Liberia (est, sud-est, zones côtières), Sierra Leone (minorité à Freetown). Zone forestière guinéo-congolaise le long du littoral atlantique, s'étendant sur environ 120 000 km².",
-      "numberOfLanguages": 30,
-      "totalSpeakers": 3000000
+      "branches": [
+        "Krou oriental (12 langues, dont le bété, le dida, le godié, le néyo, le kouya et le bakwé)",
+        "Grand krou occidental (26 langues, dont le kuwaa, le grebo, l'aïzi, le wè, le krahn, le sapo, le bassa et le klao)"
+      ],
+      "geographicArea": "Côte d'Ivoire et Liberia. Maurice Delafosse décrit en 1904 une zone qui va, sur la côte, de la lagune de Grand-Lahou, à l'est, jusqu'à l'embouchure de la rivière Lofa, à l'ouest, et s'enfonce dans les terres jusque vers le septième parallèle. Au Liberia, le recensement de 2022 montre que la plupart des Krahn vivent dans le comté de Grand Gedeh et la plupart des Sapo dans celui de Sinoe, tandis que les Grebo se partagent surtout entre le Maryland, Montserrado et River Gee.",
+      "numberOfLanguages": 38,
+      "totalSpeakers": null,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "Selon Glottolog, édition 5.3 ; le compte dépend de la façon de regrouper les parlers"
+        },
+        "totalSpeakers": {
+          "note": "Pas de total des locuteurs dans les sources lues. Les recensements comptent l'appartenance déclarée : 2,1 millions de Krou en Côte d'Ivoire (2021), 1,9 million au Liberia (2022)",
+          "unsourced": true
+        }
+      }
     },
     "associatedPeoples": [
       {
@@ -302,43 +396,58 @@
         "peopleId": "PPL_GREBO"
       },
       {
-        "name": "Wé / Guéré / Krahn",
+        "name": "Wè",
         "peopleId": "PPL_WE"
       },
       {
         "name": "Godié",
         "peopleId": "PPL_GODIE"
+      },
+      {
+        "name": "Bassa",
+        "peopleId": "PPL_BASSA"
+      },
+      {
+        "name": "Kru",
+        "peopleId": "PPL_KRU"
+      },
+      {
+        "name": "Néyo",
+        "peopleId": "PPL_NEYO"
+      },
+      {
+        "name": "Bakwé",
+        "peopleId": "PPL_BAKWE"
+      },
+      {
+        "name": "Kouya",
+        "peopleId": "PPL_KOUYA"
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " Langues tonales à morphologie relativement analytique. Ordre des mots SVO (Sujet-Verbe-Objet) majoritaire, mais certaines langues présentent des structures SOV. Typologie variable selon les sous-groupes. Systèmes de dérivation morphologique complexes avec préfixes et suffixes pour indiquer les relations grammaticales (temps, aspect, modalité, classes nominales). **Exemples concrets :**",
-      "phonologicalFeatures": " **Systèmes toniques complexes :** - Les langues krou possèdent des systèmes tonaux à plusieurs niveaux (tons très hauts, hauts, bas, très bas), souvent comparés aux langues omotiques d'Éthiopie pour leur complexité.",
-      "relationsWithNeighbors": " Contacts historiques intenses avec les langues mandé (au nord) et les langues kwa (au sud-est de la Côte d'Ivoire). Ces contacts ont conduit à des emprunts lexicaux significatifs. **Emprunts aux langues mandé :**",
-      "keyInnovations": " **Systèmes toniques complexes :** - Les langues krou sont réputées pour leurs systèmes tonaux particulièrement élaborés, souvent comparés à ceux des langues omotiques d'Éthiopie, représentant une innovation distinctive dans le contexte des langues nigéro-congolaises d'Afrique de l'Ouest. **Systèmes d'écriture propres :**"
+      "typology": "Les langues krou combinent deux ordres des mots. En guébie, en bété de Gbadi et en vata, trois langues de l'est, la phrase suit l'ordre sujet, auxiliaire, objet, verbe quand un auxiliaire est présent, et l'ordre sujet, verbe, objet sinon, selon Hannah Sande (2017). L'atlas WALS, qui classe sans ordre dominant les langues où l'ordre change avec l'auxiliaire, range ainsi le dadjriwalé et le néyo, à l'est, mais classe le grebo et le klao, à l'ouest, parmi les langues sujet, verbe, objet. Le ton sert aussi la grammaire : en guébie, un verbe à l'imperfectif se prononce un ton plus bas que le même verbe au parfait.",
+      "phonologicalFeatures": "Les langues krou sont des langues à tons, où la hauteur de la voix change le sens d'un mot. Lynell Marchese reconstruit quatre hauteurs de ton pour leur ancêtre commun, le proto-krou. Le guébie et le vata en gardent quatre ; le bété n'en garderait que trois selon Marchese, alors que le dictionnaire du bété de Gbadi publié par Zogbo en compte quatre, selon Hannah Sande (2017). En guébie, la syllabe ko veut dire « rangée », « pilon », « peau » ou « cadavre » selon sa hauteur. Le guébie et le vata accordent aussi les voyelles d'un mot entre elles, ce que les linguistes appellent l'harmonie vocalique.\n\nLes consonnes kp et gb, prononcées à la fois avec les lèvres et le fond de la bouche, figurent dans les inventaires du bété, du godié, du bassa, du klao et du wobé réunis par la base PHOIBLE. Dans cette base, le klao et le wobé n'ont aucune consonne nasale comme m ou n, mais des voyelles nasales, tandis que le bété, le godié et le bassa en ont.",
+      "relationsWithNeighbors": "Les langues krou sont en contact depuis longtemps avec des langues kwa et mandé voisines. Le proto-krou oriental n'avait pas de voyelles nasales : en guébie, on ne les trouve que dans des mots qui viendraient de ces langues voisines, selon Hannah Sande (2017), qui note aussi des contacts anciens du guébie et du bété de Gbadi avec les langues kwa. Le siamou du Burkina Faso ressemble aux langues krou par sa structure, mais la comparaison menée par Lynell Marchese Zogbo et Pierre Vogler ne permet pas d'en faire une langue krou, selon Glottolog.",
+      "keyInnovations": "Nous n'avons pas encore de source qui liste les traits propres à cette famille, par opposition à ses voisines. Les linguistes décrivent surtout l'ancêtre commun qu'ils reconstruisent : quatre hauteurs de ton, sept voyelles et, pour la branche orientale, aucune voyelle nasale, selon Hannah Sande (2017), qui s'appuie sur les travaux de Lynell Marchese."
     },
     "historyAndOrigins": {
-      "probableOrigin": " **Classifications linguistiques :**",
-      "emergencePeriod": " **Émergence historique de la famille linguistique :** - Période d'installation dans les régions actuelles estimée entre le **XIIIᵉ et le XVIIᵉ siècle** selon les traditions orales et les reconstructions linguistiques. - Les peuples krou se seraient installés dans leurs régions actuelles de Côte d'Ivoire et du Liberia pendant cette période, probablement en provenance de l'actuelle Guinée (selon la théorie migratoire). **Date de classification académique :**",
-      "diffusion": " **Théorie 1 (Migration nord-sud) :** - Migration depuis l'actuelle Guinée vers le sud, à travers les forêts guinéo-congolaises, aboutissant à l'installation dans les régions actuelles de Côte d'Ivoire et du Liberia. - Route migratoire principalement forestière, adaptée à un mode de vie agro-forester.",
-      "historicalBreaks": " **Colonisation européenne :**",
-      "contactZones": " **Zones de contact géographiques précises :** **Côte d'Ivoire :**",
-      "majorEvents": " **XIIIᵉ–XVIIᵉ siècle :** - Migration estimée des peuples krou depuis l'actuelle Guinée vers les régions actuelles de Côte d'Ivoire et du Liberia."
+      "probableOrigin": "Nous n'avons pas encore de source sur le lieu d'origine de l'ancêtre commun des langues krou. Les récits connus portent sur les peuples. Dans les années 1850, le révérend Connelly recueille chez les Kru le récit d'ancêtres appelés Claho, venus de l'intérieur de l'Afrique de l'Ouest jusqu'à la côte des siècles plus tôt, selon Jeffrey Gunn (2019). Ils fondent d'abord un établissement dans la région de Bassa, puis longent la côte et s'installent à Little Kroo, Settra Kroo, Krobah, Nana Kroo et King William's Town, entre les rivières Sinoe et Dubo.",
+      "emergencePeriod": "Deux datations de l'arrivée sur la côte existent. Selon le récit recueilli par Connelly, elle a lieu vers 1600 ; d'autres historiens la placent deux cent cinquante à quatre cents ans plus tôt, selon Jeffrey Gunn, qui renvoie à George Brooks. Megan Crutcher (2023) juge probable une grande migration des groupes de langue krou vers la côte du Liberia et de la Côte d'Ivoire aux XIVe et XVe siècles.\n\nLa classification a sa propre chronologie. Maurice Delafosse réunit ces langues en une famille en 1904 ; Joseph Greenberg en fait en 1963 un sous-groupe des langues kwa ; William Welmers en fait une branche à part en 1977, ce que confirme Lynell Marchese en 1979 ; Glottolog en fait aujourd'hui une famille indépendante.",
+      "diffusion": "Selon Alfred Schwartz (1980), le nom krou et le métier de marin se diffusent par étapes le long de la côte : des Krao à leurs voisins du Liberia, puis à toute la côte libérienne, du cap Mesurado au cap des Palmes, appelée au XIXe siècle Côte des Krou, puis à la côte ouest de la Côte d'Ivoire dans la seconde moitié du XIXe siècle. Des marins krou s'installent ensuite dans les ports de l'Atlantique : à Freetown, où le quartier de Krutown est fondé en 1816, selon Jeffrey Gunn, et à Liverpool, où se forme un Kru Town, selon Megan Crutcher. Vers 1880, le travail agricole de Fernando Po, l'actuelle Bioko, repose presque entièrement sur des travailleurs migrants kru, selon la même historienne.",
+      "historicalBreaks": "Après l'abolition britannique de la traite en 1807, les marins krou servent de plus en plus dans la marine royale britannique, ce qui conduit à la fondation de Krutown à Freetown en 1816, selon Jeffrey Gunn. Au Liberia, des révoltes et des mouvements krou s'opposent au gouvernement libérien, qui restreint leur commerce et leurs migrations de travail, selon Megan Crutcher, qui renvoie à l'étude de J. Sullivan sur la révolte de la côte kru de 1915-1916. Nous n'avons pas encore de source sur la façon dont la frontière entre la Côte d'Ivoire et le Liberia a partagé ces peuples.",
+      "contactZones": "La côte libérienne entre les rivières Sinoe et Dubo, autour de Settra Kru et de Nana Kru, est le premier lieu de contact avec les navires européens. Les Kru y vendent dès 1555, et sans doute avant, des vivres, de l'ivoire, de l'eau, du bois et du poisson aux navires de passage, et des hommes s'engagent à bord dès 1645, selon Jeffrey Gunn. À l'intérieur des terres, les langues krou touchent des langues kwa et mandé, selon Hannah Sande. Plus tard, les quartiers krou de Freetown et de Liverpool deviennent des lieux de vie de la diaspora, selon Megan Crutcher.",
+      "majorEvents": "Les navires portugais atteignent la côte du Liberia dans les années 1460 ; les piroguiers krou et leurs voisins prennent déjà part au commerce de l'Atlantique, selon Megan Crutcher. Au cours d'un voyage parti d'Angleterre fin 1588, le marin anglais James Welsh note le lieu de Crua. Le 6 février 1645, le journal du fort d'Elmina mentionne un Krao à bord d'un navire espagnol, selon Jeffrey Gunn. Dans les années 1780, les Européens commencent à recruter systématiquement des hommes kru ; à partir de la guerre contre la France de 1793, ils servent sur les navires de guerre britanniques, puis sur ceux qui patrouillent contre la traite illégale, selon Crutcher. En 1816, le quartier de Krutown est fondé à Freetown. Vers 1880, ils assurent presque tout le travail agricole de Fernando Po. En 1911, une grève à Liverpool réclame pour eux de meilleurs salaires, comparés à ceux de leurs collègues blancs. Au XXe siècle, des marins kru travaillent pour des compagnies britanniques comme l'Elder Dempster et sur les navires britanniques pendant les deux guerres mondiales, selon Crutcher."
     },
     "distribution": {
-      "totalSpeakers": 3000000,
+      "totalSpeakers": null,
       "distributionByCountry": {
-        "CIV": 2091798
+        "CIV": 2092097,
+        "LBR": 1864282
       }
     },
     "sources": [
       {
         "title": "Greenberg, Joseph H. (1963) – *The Languages of Africa*. Indiana University Press",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "Marchese, Lynell (1984) – *Atlas linguistique kru*. Agence de coopération culturelle et technique, Université d'Abidjan",
         "url": null,
         "tier": "referenced",
         "source_kind": "academic"
@@ -353,7 +462,8 @@
         "title": "Schwartz, Alfred (1980) – « Quelques repères dans l'histoire des Kroumen ». *Outre-Mers. Revue d'histoire*, tome 67, n°246-247, pp. 151-155. Persée",
         "url": "https://www.persee.fr/doc/outre_0300-9513_1980_num_67_246_2242",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Article de la Revue française d'histoire d'outre-mer, lu sur Persée. Sa première page retrace les extensions successives du nom krou."
       },
       {
         "title": "Vandenhoute, Pieter Jan-L. (1948) – *Masques krou*. Anthropologie et arts africains",
@@ -362,16 +472,6 @@
       },
       {
         "title": "Duitsman, John (1986) – *Phonologie du wê/guéré*. In *Langues et cultures africaines*",
-        "url": null,
-        "tier": "referenced"
-      },
-      {
-        "title": "Hakluyt, Richard (1589) – *Principal Navigations, Voyages, Traffiques and Discoveries of the English Nation*. Londres",
-        "url": null,
-        "tier": "referenced"
-      },
-      {
-        "title": "Holas, Bohumil (1948) – Enquêtes ethnographiques au Liberia (influences sur la classification krou)",
         "url": null,
         "tier": "referenced"
       },
@@ -386,12 +486,6 @@
         "url": "https://www.ethnologue.com/",
         "tier": "official",
         "source_kind": "linguistic_reference"
-      },
-      {
-        "title": "ONU / UNFPA (2025) – Données démographiques Côte d'Ivoire, Liberia, Sierra Leone",
-        "url": null,
-        "tier": "needs_review",
-        "source_kind": "intergovernmental"
       },
       {
         "title": "Atlasocio.com (2021) – *Classement des langues krou par nombre de locuteurs*",
@@ -433,13 +527,15 @@
         "title": "Glottolog (2025) – \"Kru\"",
         "url": "https://glottolog.org/resource/languoid/id/krua1234",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max Planck d'anthropologie évolutionniste, édition 5.3 : 38 langues en deux branches, et la raison pour laquelle le krou n'est pas rattaché à l'ensemble atlantique-congo."
       },
       {
         "title": "Agence Nationale de la Statistique (ANStat), Côte d'Ivoire (2021) – Recensement Général de la Population et de l'Habitat (RGPH 2021), jeu de données \"Répartition des Ivoiriens par grand groupe ethnique selon le sexe\" (groupe ethnolinguistique Krou, classification Bouquet)",
         "url": "https://data.gouv.ci/datasets/repartition-des-ivoiriens-par-grand-groupe-ethnique",
         "tier": "official",
-        "source_kind": "government"
+        "source_kind": "government",
+        "notes": "Données officielles du recensement de 2021, publiées sur le portail des données ouvertes de Côte d'Ivoire. Elles comptent l'appartenance ethnique déclarée des Ivoiriens, pas la langue parlée : 2 092 097 Krou, soit 9,1 % des Ivoiriens. Dans ce jeu de données, les hommes et les femmes krou additionnés donnent 2 091 798 personnes."
       },
       {
         "title": "Gunn, Jeffrey (2021) – Outsourcing African Labor: Kru Migratory Workers in Global Ports, Estates and Battlefields until the End of the 19th Century. De Gruyter Oldenbourg, Berlin et Boston",
@@ -454,6 +550,111 @@
         "tier": "unverified",
         "source_kind": "encyclopedia",
         "notes": "Texte de l'édition de 1911, cité pour les graphies Krus, Croos, Kroomen et Krooboys."
+      },
+      {
+        "title": "Classification of Guébie within Kru",
+        "author": "Hannah Leigh Sande",
+        "year": 2017,
+        "url": "https://doi.org/10.5281/zenodo.1251712",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre de l'ouvrage collectif African linguistics on the prairie, publié en libre accès par Language Science Press, Berlin. Lu en entier : place du krou, tons, voyelles, ordre des mots, contacts avec les langues kwa et mandé."
+      },
+      {
+        "title": "'For King and Empire': The Changing Political, Economic, and Cultural Identities of Kru Mariners in Atlantic Africa, 1460-1945",
+        "author": "Megan Crutcher",
+        "year": 2023,
+        "url": "https://doi.org/10.1017/S0021853723000567",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de The Journal of African History, vol. 64, no 3, publié en libre accès par Cambridge University Press et lu en entier."
+      },
+      {
+        "title": "Homeland, Diasporas and Labour Networks: The Case of Kru Workers, 1792-1900",
+        "author": "Jeffrey Gunn",
+        "year": 2019,
+        "url": "https://yorkspace.library.yorku.ca/bitstreams/2c05f6bf-dec9-4daa-b10d-af069cb37512/download",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse de doctorat en histoire, université York, Toronto, 2019, lue en texte intégral dans le dépôt de l'université. Elle rapporte le récit recueilli par le révérend Connelly dans les années 1850 et discute l'origine du nom."
+      },
+      {
+        "title": "The Principal Navigations Voyages Traffiques and Discoveries of the English Nation, vol. VI : A voyage to Benin beyond the Countrey of Guinea, written by James Welsh",
+        "author": "Richard Hakluyt (éd.), récit de James Welsh",
+        "year": 1904,
+        "url": "https://archive.org/details/principalnaviga06hakl",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Récit d'un marin marchand anglais, imprimé pour la première fois dans la deuxième édition de Hakluyt, en 1599-1600, et lu ici dans la réédition de Glasgow, James MacLehose and Sons, 1904. La note en marge de la page 451 date l'escale de 1589."
+      },
+      {
+        "title": "Beschryvinghe ende historische verhael van het Gout Koninckrijck van Guinea",
+        "author": "Pieter de Marees, édité par S. P. L'Honoré Naber",
+        "year": 1912,
+        "url": "https://archive.org/details/beschryvingheend00mare",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Récit d'un voyageur néerlandais publié en 1602, réédité en 1912 par la Linschoten-Vereeniging à La Haye. L'éditeur identifie le lieu nommé Crou à Nana Kru et Settra Kru."
+      },
+      {
+        "title": "Note sur les familles Krou, Mandé et Agni-Achanti (Afrique occidentale), Bulletin du Muséum d'histoire naturelle, vol. 6",
+        "author": "Maurice Delafosse",
+        "year": 1900,
+        "url": "https://archive.org/details/biostor-268194",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 334",
+        "notes": "Lu dans la numérisation d'Internet Archive ; le numéro de page imprimé, 334, a été relu sur l'image le 18 octobre 2026. L'auteur, administrateur colonial, classe les peuples en « familles » et parle de « race »."
+      },
+      {
+        "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+        "author": "Maurice Delafosse",
+        "year": 1904,
+        "url": "https://archive.org/details/vocabulairescomp00delauoft",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 67-68",
+        "notes": "Paris, Ernest Leroux, 1904. Lu dans la numérisation d'Internet Archive, chapitre II : « Les langues krou ». Le texte porte le regard d'un administrateur colonial français et classe les peuples d'après la « race »."
+      },
+      {
+        "title": "Glottolog 5.3 — Siamou (siam1242)",
+        "url": "https://glottolog.org/resource/languoid/id/siam1242",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max Planck d'anthropologie évolutionniste. La notice explique pourquoi le siamou n'est pas rangé parmi les langues krou."
+      },
+      {
+        "title": "WALS Online, chapitre 81 : Order of Subject, Object and Verb",
+        "author": "Matthew S. Dryer et Martin Haspelmath (dir.)",
+        "url": "https://wals.info/chapter/81",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des structures des langues publié par l'Institut Max Planck d'anthropologie évolutionniste. Fiches du dadjriwalé et du néyo, sans ordre dominant, du grebo et du klao, à l'ordre sujet, verbe, objet."
+      },
+      {
+        "title": "PHOIBLE 2.0, inventaires des sons du wobé, du klao, du godié, du bété et du bassa",
+        "author": "Steven Moran et Daniel McCloy (dir.)",
+        "year": 2019,
+        "url": "https://phoible.org/inventories/view/840",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Base de données des systèmes de sons des langues, publiée par l'Institut Max Planck de Iéna. Le lien mène à l'inventaire du wobé ; ceux du klao, du godié, du bété et du bassa sont dans la même base."
+      },
+      {
+        "title": "2022 Liberia Population and Housing Census: Final Results",
+        "author": "Liberia Institute of Statistics and Geo-Information Services (LISGIS)",
+        "year": 2022,
+        "url": "https://lisgis.gov.lr/uploads/publications/liberia-census-2022-final-results.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport officiel de l'institut de statistique du Liberia. Le tableau A7 donne la population par appartenance ethnique déclarée, pas par langue parlée."
+      },
+      {
+        "title": "Marchese, Lynell (1983) – Atlas linguistique kru : essai de typologie, 3e édition. Agence de coopération culturelle et technique, Institut de linguistique appliquée, Abidjan",
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Première synthèse sur les langues krou, parue en 1979 puis rééditée. Référence vérifiée dans la bibliographie de Glottolog, qui donne la troisième édition en 1983."
       }
     ]
   }
