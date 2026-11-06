@@ -19,68 +19,84 @@
         "Adiokrou",
         "Odjukru",
         "Odzukru",
+        "Ogyukru",
+        "Agyukru",
+        "Adjyukru",
         "Lodjoukrou"
       ],
-      "originOfExonyms": "Les Odjoukrou nomment leur pays traditionnel Lodjoukrou. Leur nom de peuple en viendrait aussi : le mot renvoie au pays, au peuple et à sa culture. Leur langue est le [mɔ́ʤúkrù]. Les personnes qui transmettent les traditions, interrogées par Harris Memel-Fotê, proposent plusieurs origines pour Lodjoukrou. Elles les relient au récit d'une maladie brusquement guérie. Le pasteur Laurent Lasm propose pour sa part « qui n'accepte pas l'injustice ». Ces explications ne recueillent pas l'accord de tous. Adioukrou, Adjoukrou, Adjukru, Odjukru et Odzukru sont différentes manières d'écrire le même nom. Les sources consultées ne précisent pas qui a fixé la forme Adioukrou. Boubouri, aussi écrit Bubari, est le nom de Bobor, l'une des deux anciennes confédérations du pays avec Debrimou. Des répertoires de noms de peuples l'appliquent à l'ensemble du peuple. Lebutu, ou leboutou, désigne une tribu, c'est-à-dire ici une communauté politique de villages. Ce n'est pas un nom du peuple. Il voudrait dire littéralement « il a reçu l'étranger ».",
+      "originOfExonyms": "Les Odjoukrou nomment leur pays traditionnel Lodjoukrou. Selon le linguiste Esso Lasm Constant, leur nom de peuple vient de ce nom de pays : le mot désigne à la fois le pays, le peuple et sa culture. Leur langue se dit [mɔ́ʤúkrù]. Les personnes qui transmettent les traditions, interrogées par l'anthropologue Harris Memel-Fotê, proposent plusieurs origines pour Lodjoukrou. Elles les relient au récit d'une maladie brusquement guérie. Le pasteur Laurent Lasm propose pour sa part « qui n'accepte pas l'injustice ». Ces explications ne s'accordent pas entre elles. Adioukrou, Adjoukrou, Adjukru, Odjukru et Odzukru sont différentes manières d'écrire le même nom. En 1904, l'administrateur colonial Maurice Delafosse en donne déjà plusieurs formes : Adyukru, Agyukru, Adjyukru et Ogyukru. Les sources consultées ne disent pas qui a fixé la forme Adioukrou. Boubouri, aussi écrit Bubari, est le nom de Bobor, l'une des deux anciennes confédérations du pays avec Debrimou. Selon Delafosse, les Européens donnaient souvent ce nom à tout le peuple. Le mot lebutu, ou leboutou, désigne une tribu, c'est-à-dire ici un groupe de villages qui forme une communauté politique. Ce n'est pas un nom du peuple. Selon Esso Lasm Constant, il voudrait dire littéralement « il a reçu l'étranger ».",
       "whyProblematic": null,
-      "contemporaryUsage": "Adioukrou est la forme retenue par la Bibliothèque nationale de France et le nom de la langue chez Glottolog et Ethnologue. Adjoukrou reste courant dans les publications récentes sur le département de Dabou, tandis qu'Esso Lasm écrit Odjoukrou et l'historien Jean-Michel Egue Latte Odzukru. Le nom de Dabou, aujourd'hui celui du département, s'est substitué à Lodjoukrou pour désigner le territoire.",
-      "linguisticFamily": "FLG_BENOUECONGO",
-      "ethnoLinguisticGroup": "Akan lagunaire (Kwa)",
-      "historicalRegion": "Region des Lagunes, sud de la Cote d'Ivoire (departement de Dabou)",
-      "currentCountries": ["CIV"]
+      "contemporaryUsage": "Adioukrou est la forme retenue par la Bibliothèque nationale de France et le nom de la langue chez Glottolog. Adjoukrou reste courant dans les publications récentes sur le département de Dabou. Esso Lasm écrit Odjoukrou et l'historien Jean-Michel Egue Latte écrit Odzukru. Le nom de Dabou, aujourd'hui celui du département, a remplacé Lodjoukrou pour désigner le territoire.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
-    "ethnicities": ["Adioukrou"],
+    "ethnicities": [
+      "Orgbafu (confédération de Bobor)",
+      "Eusrou (confédération de Bobor)",
+      "Agbadjnou (confédération de Bobor)",
+      "Aklodjou (confédération de Bobor)",
+      "Oborou (confédération de Bobor)",
+      "Olokpou (confédération de Debrimou)",
+      "Armabou (confédération de Debrimou)",
+      "Dibrméign (confédération de Debrimou)"
+    ],
     "origins": {
-      "ancientOrigins": "Les Adioukrou sont un peuple d'origine composite. Ils seraient originellement un peuple Krou venu de la région de Gagnoa-Divo (centre-ouest de la Côte d'Ivoire), qui a été absorbé et transformé par des vagues de populations Akan venues du Ghana, selon les historiens. Sous la pression des Bete, ils migrent vers les lagunes et se mêlent aux peuples Akan lagunaires (Ebrie, Attie). D'autres traditions ancestrales évoquent une origine du Bénin, et des similitudes avec des peuples d'Afrique centrale ont été notées. L'identité Adioukrou est née de ce brassage culturel.",
-      "formationPeriod": "Formation progressive sur plusieurs siècles, essentiellement entre le 15e et le 18e siècle, par convergence de populations d'origines diverses vers le territoire lagunaire de Dabou.",
+      "ancientOrigins": "Les Odjoukrou seraient issus de la rencontre de plusieurs populations. Selon l'anthropologue Mel Meledje Raymond, qui s'appuie notamment sur Harris Memel-Fotê, les peuples de la lagune Ébrié viennent de deux souches : l'une venue de l'est, de langue akan, et l'autre venue de l'ouest, de langue krou. Chez les Odjoukrou, il rattache les gens d'Aklodj à la première, et ceux des tribus Oborou et Dibmein à la seconde. En 1904, Maurice Delafosse notait déjà que certaines traditions font venir ce peuple de l'ouest. Il remarquait pourtant que leur langue ne ressemble pas aux langues krou. Il proposait l'hypothèse d'une conquête : venus d'une région inconnue, les Odjoukrou auraient pris de force le pays qu'ils habitent.",
+      "formationPeriod": "Selon la présentation de l'éditeur du livre de Jean-Michel Egue Latte, le peuple odzukru s'est formé entre le XVIe et le XVIIIe siècle, par le mélange de populations venues des pays krou et akan. Ces arrivants se seraient installés sur une population plus ancienne.",
       "migrationRoutes": [
-        "Région de Gagnoa-Divo (centre-ouest CIV) -> lagunes (sous pression des Bete)",
-        "Apports Akan venus de l'est (Ghana) par migrations successives"
+        "Arrivées venues de l'est, de langue akan, selon Mel Meledje Raymond",
+        "Arrivées venues de l'ouest, de langue krou, selon le même auteur",
+        "Venue des ancêtres du village de Yassap depuis l'est de la Côte d'Ivoire, selon un récit rapporté par Esso Lasm Constant",
+        "Venue des fondateurs du village de Gbougbo depuis la région d'Abidjan, par Adjamé, Yopougon et Songon-Agban, selon le même auteur"
       ],
       "historicalSettlementZones": [
-        "Région de Dabou (Grands-Ponts, CIV)",
-        "Rive occidentale de la lagune Ebrie",
-        "49 villages dans le departement de Dabou"
+        "Département de Dabou, entre la lagune Ébrié au sud et la rivière Agnéby à l'est",
+        "Dabou, Débrimou, Lopou, Boubouri et Toupa, cités comme centres principaux en 1904"
       ],
-      "unificationsOrDivisions": "Le passage de la succession patrilineaire a la succession matrilineaire reflete l'integration progressive des traits culturels Akan. Les plus anciens villages Adioukrou sont Toupah, Akradio, Grand-Bouboury, Pkass, Mopoil et Debrimou.",
-      "externalInfluences": "Influence Akan majeure, en particulier les Ebrie et les Attie. Colonisation française à partir de la fin du 19e siècle. Christianisation massive (environ 90% de la population actuelle se déclare chrétienne). Proximité d'Abidjan (50 km) entraînant une intégration économique et une pression d'urbanisation.",
-      "majorHistoricalEvents": "Contact avec les navigateurs européens à partir du 15e-16e siècle ; colonisation française et travail forcé perturbant les structures sociales traditionnelles ; indépendance de la Côte d'Ivoire en 1960."
+      "unificationsOrDivisions": "Le pays traditionnel, Lodjoukrou, est formé de deux anciennes confédérations, appelées lok : Bobor lok et Dibrm lok, c'est-à-dire Debrimou. Chaque confédération regroupe des tribus, appelées lebutu ou sebol, et chaque tribu regroupe des villages. La confédération de Bobor comptait cinq tribus et celle de Debrimou trois, selon Esso Lasm Constant. Selon un récit qu'il rapporte, Debrimou aurait été fondé par deux frères chasseurs venus de Bobor, Amn Sess et Amn Gnagne.",
+      "externalInfluences": "En 1904, Maurice Delafosse remarquait que l'adioukrou partage beaucoup de racines de mots avec les langues des Ari, ou Abidji, et des Abè, ses voisins du nord. Il notait aussi des mots communs avec les langues des Avikam et des Alaguian, ou Alladian, et l'influence plus récente de l'agni. Selon l'étude de Jacob Ahouyao et de ses collègues, les missionnaires chrétiens sont arrivés tôt dans la région de Dabou, et la plupart des Adjoukrou sont aujourd'hui chrétiens. La même étude décrit l'arrivée du palmier à huile sélectionné, du cacao, du café puis de l'hévéa, qui occupe aujourd'hui la plupart des terres cultivées.",
+      "majorHistoricalEvents": "Selon Esso Lasm Constant, Dabou est né d'un fort construit par Faidherbe pour contrôler la lagune Ébrié ; il le date de 1843. Les Odjoukrou appellent ce fort Brogoss, d'après le mot allemand « Blockhaus ». Vers 1910, l'administration coloniale française a créé des chefs de village, à côté du pouvoir collectif des classes d'âge, selon Mel Meledje Raymond. Après la loi ivoirienne de 1964 sur les successions, les enfants ont commencé à hériter de leur père plutôt que de leur oncle maternel, selon les autorités coutumières interrogées par Jacob Ahouyao et ses collègues."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Systeme de classes d'age (sete) constituant l'organisation sociale fondamentale. La societe Adioukrou est structuree en 7 classes d'age : Sete, Ndjrouman, Abrouman, Mbedie, Mborman, Nigbessi et Bodjl. Chaque classe est subdivisee en 4 categories (Odjogba, Bago, Kata, Boman). Le pouvoir politique tourne tous les 8 ans lors de la ceremonie Ebeb, qui confie la direction du village aux Ebebu (gouvernants). Ce systeme assure une democratie rotative ou le commandement est collectif et limit dans le temps.",
-      "clanOrganization": "Organisation duale : a la naissance, l'enfant appartient au clan paternel (systeme patrilineaire initial) ; apres la ceremonie du Low pour les hommes, il integre le clan maternel (basculement vers le matrilineaire). Ce mecanisme unique combine filiation paternelle pour l'enfance et maternelle pour la vie adulte.",
-      "roleOfLineages": "Le referent social de l'adulte est l'oncle maternel. La transmission du pouvoir politique et des terres suit la lignee maternelle. Les Ebebu (anciens de la classe dirigeante) sont proprietaires terriens et garants des traditions.",
-      "religiousAuthority": "Croyance en un etre supreme createur appele Nyam (ou Nyambe), origine de l'univers (afrnunu). Culte des ancetres (esprits des defunts) maintenu par des offrandes. Existence de genies (petites divinites animant la nature). Pratiques de sorcellerie : sorciers noirs (sorciers mauvais) et sorciers blancs (agmann, protecteurs). Les cultes sont presides par les aines sociaux. Le christianisme est desormais dominant (90%)."
+      "traditionalPoliticalSystem": "Harris Memel-Fotê décrit les Odjoukrou comme une société organisée en lignages, sans État, où le pouvoir passe par les classes d'âge. Dans chaque village, le groupe d'âge des plus anciens, les Ebebu, gouverne : il décide en dernier ressort. Un groupe intermédiaire, les Niridi Ekm, propose les règles du village, et un troisième, les Mabr Essel, dirige les travaux et le maintien de l'ordre. Le chef de village, choisi par accord commun, sert d'intermédiaire avec l'administration et parle au nom des Ebebu. Ces précisions viennent de l'étude de Jacob Ahouyao et de ses collègues.",
+      "clanOrganization": "Chaque Odjoukrou appartient par son père à un patrilignage, appelé eb, et par sa mère à un matrilignage, appelé bosou sougon, selon l'étude de Jacob Ahouyao et de ses collègues. Appartenir à un patrilignage est une condition pour entrer dans une classe d'âge, selon Mel Meledje Raymond.",
+      "ageClassSystems": "La classe d'âge se dit oworn. Les sources comptent sept classes, qui se succèdent tous les huit ans. Mel Meledje Raymond les nomme obodjlou, sete, ndzroma, abrma, mbedje, mborma et nigbesi. L'étude de Jacob Ahouyao et de ses collègues écrit Bodjle, Sete, N'djourman, Abriman, M'bedie, M'borman et Nigbessi. Chaque classe se divise en quatre groupes dans la confédération de Debrimou et en trois dans celle de Bobor : Odjogba, les aînés, Bago, Kata et Boman, ce dernier groupe existant seulement à Debrimou. On entre dans une classe par l'initiation des garçons, le low, et chaque classe a un responsable appelé milow. Tous les huit ans, lors de l'Ebeb, une nouvelle génération d'hommes et de femmes de 60 à 70 ans reçoit le gouvernement du village.",
+      "roleOfLineages": "Le patrilignage compte surtout dans la vie politique et sociale. Le matrilignage forme une unité économique. Autrefois, un enfant héritait de son oncle maternel, chez qui il allait travailler. Selon les autorités coutumières interrogées par Jacob Ahouyao et ses collègues, les enfants héritent surtout de leur père depuis la loi de 1964. Mel Meledje Raymond note que les terres des matrilignages sont aujourd'hui aussi réclamées par les descendants des patrilignages.",
+      "religiousAuthority": "Les cultes sont dirigés uniquement par les aînés sociaux, de la communauté ou de la famille, selon que la cérémonie concerne tout le village ou une seule famille. C'est ce qu'écrivent Jacob Ahouyao et ses collègues."
     },
     "languages": {
       "mainLanguage": "Adioukrou (adj)",
       "isoCodes": ["adj"],
-      "dialects": [
-        "dialecte central de Dabou (forme standard)",
-        "variantes villageoises (Lopou, Debrimou, Kpass)"
-      ],
-      "vehicularRole": "Le francais est utilise comme langue officielle et d'enseignement. L'adioukrou est la langue de la vie communautaire locale, des ceremonies et de la transmission orale. La langue appartient au rameau Kwa de la famille Niger-Congo, avec une classification incertaine au sein du Kwa (position proche du Tano central ou Agneby selon les linguistes)."
+      "dialects": [],
+      "vehicularRole": "L'adioukrou, que ses locuteurs appellent [mɔ́ʤúkrù], est une langue kwa de la grande famille Niger-Congo. Glottolog la classe dans le groupe Agneby. En 1904, Maurice Delafosse la rangeait déjà dans un même groupe avec les langues des Ari, ou Abidji, et des Abè. Le français est la langue officielle de la Côte d'Ivoire. Pendant la période coloniale, quelques manuels scolaires ont été rédigés en adioukrou, selon le site L'aménagement linguistique dans le monde de l'Université Laval. En 1904, Maurice Delafosse notait qu'un certain nombre d'Alaguian, ou Alladian, installés au sud de la lagune, comprenaient l'adioukrou."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q2824498",
+      "glottocode": "adio1239",
+      "iso639_3": "adj"
     },
     "culture": {
-      "majorRites": "Fete du Low : initiation masculine durant 3 a 5 semaines pour les hommes de 18 a 25 ans, marquant le passage a l'age adulte ; confere une identite sociale et le droit de participer a la defense du village. Dediakp : ceremonie de puberte feminine vers 18-23 ans, marquant la disponibilite au mariage. Angbandji (ou Agbandji) : fete de noblesse, de partage et de solidarite, ou le candidat distribue de la nourriture et des boissons a toute la communaute. Ebeb : investiture politique transmettant le pouvoir tous les 8 ans aux Ebebu ; couronnement d'une vie accomplie. Fete de l'igname (Capul) : festival annuel de purification et de regeneration sociale.",
-      "symbols": "Le systeme des classes d'age est le symbole identitaire fondateur des Adioukrou. Le kaolin (Fefr) applique sur le front lors de l'Ebeb symbolise la consecration au pouvoir. Le bas traditionnel, le chapeau et la canne sont signes du statut d'ancien.",
-      "artsAndMusic": "Musique adjoukrou avec tambours et danses guerrieres (Yaye) lors de la fete de l'igname. Chants initiatiques du Low. Production artisanale d'attieke (semoule de manioc fermente), d'huile de palme, de palmier a raphia. Activites traditionnelles : agriculture (igname, manioc, plantain, mais), peche en lagune, chasse.",
-      "spiritualities": "Religion traditionnelle basee sur la cosmologie a trois niveaux : Nyam (etre supreme createur), genies de la nature, esprits des ancetres. Culte des ancetres materialise par des photos, offrandes de repas sur les tombes et ceremonies des classes d'age. Totems et tabous animaux specifiques par village (caiman, crocodile, varan, python en general ; cerf a Debrimou). Christianisme dominant (environ 90% de la population) avec coexistence des pratiques traditionnelles."
+      "majorRites": "Le low est l'initiation des garçons. Il se prépare pendant deux ans et la fête dure trois semaines : défilé en tenue de cérémonie, course autour du village, visite des familles. Il prépare les jeunes gens à la vie d'adulte et à la défense du village. Il se termine par une « guerre d'initiation » jouée avec des tiges de bananier, décrite par Harris Memel-Fotê. Le dediakp marque la puberté des filles et leur permet de se marier. L'angbandji est une fête de partage, où celui qui la célèbre offre à manger et à boire à tous ses visiteurs. L'Ebeb transmet le gouvernement du village tous les huit ans. La fête de l'igname purifie le village chaque année, entre juillet et décembre. Elle change de nom selon les villages : Kpol, Obidj à Lopou, Ayob à Debrimou.",
+      "symbols": "Le vêtement dit l'âge et le rang. Le jeune initié du low porte un pagne noué à la taille, celui de l'angbandji le porte sur l'épaule. Les Ebebu ajoutent un chapeau, une canne et un chasse-mouches, signes de leur pouvoir. Après la « guerre d'initiation », les jeunes guerriers prennent un bain rituel et sont peints au kaolin blanc, selon Harris Memel-Fotê.",
+      "artsAndMusic": "Pendant la fête de l'igname, les hommes des différents quartiers se défient par des chants et des danses guerrières, le yaye. Les femmes font le tour du village en chantant au son du kpakpatcha, un instrument de musique traditionnel. Chaque village et chaque quartier a une devise jouée au tambour parleur, et les femmes chantent des odes qui rappellent les fondateurs, selon Esso Lasm Constant.",
+      "spiritualities": "Selon l'étude de Jacob Ahouyao et de ses collègues, la religion traditionnelle distingue trois niveaux. Au-dessus de tout se trouve Nyam, l'être suprême qui a créé le monde. Viennent ensuite les génies, qui habitent la forêt, l'eau et les arbres et protègent ou punissent le village. Enfin, les ancêtres reçoivent des repas sur les tombes. La plupart des Adjoukrou sont aujourd'hui chrétiens, et des croyances anciennes demeurent à côté du christianisme. Dans certains villages, il était interdit de faire entrer un caïman, un crocodile, un varan ou un python. À Débrimou, c'était le cerf vivant. À Bonn, un récit fait du cerf un animal honoré, selon Esso Lasm Constant."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de royaume centralisé majeur. Organisation en villages autonomes gouvernés par des chefferies villageoises et des conseils d'anciens selon le système des classes d'âge. Le Pays Adioukrou (Lodjoukrou) forme une entité culturelle cohérente sans État centralisé.",
-      "relationsWithNeighbors": "Voisinage et melange avec les peuples lagunaires Ebrie (Tchaman) et Alladian. Relations avec les peuples Akan du Ghana via migrations. Competition historique avec les Bete, qui sont a l'origine de leur migration vers les lagunes. Integration dans l'ensemble des peuples lagunaires de Cote d'Ivoire.",
-      "conflictsOrAlliances": "Migration initiale sous pression Bete. Periode de travail force sous la colonisation francaise perturbant les structures sociales. Cohabitation generalement pacifique avec les voisins lagunaires.",
-      "diaspora": "Peu de presence significative hors de Cote d'Ivoire. Migration interne vers Abidjan importante pour des raisons economiques et educatives, ou les communautes Adioukrou maintiennent leurs pratiques culturelles."
+      "kingdomsOrChiefdoms": "Les Odjoukrou n'ont pas formé de royaume. Leur pays était organisé en deux confédérations, Bobor et Debrimou, qui regroupaient des tribus et des villages. Dans chaque village, le pouvoir revenait collectivement à une classe d'âge.",
+      "relationsWithNeighbors": "En 1904, Maurice Delafosse décrit les Odjoukrou entre la lagune Ébrié au sud, la rivière Agnéby à l'est, les Ari, ou Abidji, au nord, le fleuve Bandama et les Avikam à l'ouest. Selon Esso Lasm Constant, le site du village de Ngatty était auparavant occupé par des Ahizi de Taboth. Le village de Ndoumikro aurait été fondé par un descendant d'une femme odjoukrou, venu du pays abidji. Les Ébrié, les Alladian et les Avikam sont aujourd'hui leurs voisins dans la région de Dabou.",
+      "conflictsOrAlliances": "Selon Mel Meledje Raymond, les classes d'âge avaient d'abord un rôle militaire : elles organisaient les hommes de vingt à cinquante ans pour défendre le pays. L'enseignement donné aux initiés porte sur l'origine du peuple et sur les guerres entre tribus, selon Harris Memel-Fotê. Aujourd'hui, des villages voisins comme Lopou et Yassap s'opposent parfois au sujet de leurs limites.",
+      "diaspora": "Selon l'étude de Jacob Ahouyao et de ses collègues, les Adjoukrou font tout pour revenir au village le 1er novembre, pour la fête des saints, qui honore les ancêtres."
     },
     "demography": {
-      "totalPopulation": 155000,
-      "referenceYear": 2025,
-      "source": "Ethnologue (ADJ) : 140 000 locuteurs en 2017 ; estimation 2025 environ 155 000.",
+      "totalPopulation": 140000,
+      "referenceYear": 2017,
+      "source": "Le site L'aménagement linguistique dans le monde, de l'Université Laval, compte 140 000 Adjoukrou en 2017. Le répertoire missionnaire Joshua Project annonce 209 000 personnes, sans date.",
       "distributionByCountry": [
         {
           "country": "CIV",
-          "population": 155000
+          "population": 140000,
+          "percentage": 100,
+          "note": "Surtout dans le département de Dabou, au sud du pays, à l'ouest d'Abidjan."
         }
       ]
     },
@@ -97,33 +113,35 @@
         "url": "https://glottolog.org/resource/languoid/id/adio1239",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Classement : Atlantique-Congo, Volta-Congo, Kwa, Nyo, Agneby. Noms alternatifs : Adjukru, Adyoukrou, Adyukru, Ajukru."
+        "notes": "Catalogue international des langues. Il classe l'adioukrou dans les langues kwa, groupe Agneby, et donne ces autres noms : Adjukru, Adyoukrou, Adyukru, Ajukru."
       },
       {
         "title": "Harris Memel-Fotê, Le Système politique de Lodjoukrou : une société lignagère à classes d'âge (Côte d'Ivoire), 1980",
         "url": "https://www.presenceafricaine.com/livres-sciences-humaines-afrique-caraibes/542-le-systeme-politique-de-lodjoukrou-2708703811.html",
         "tier": "referenced",
-        "notes": "Paris, Présence Africaine et Nouvelles Éditions Africaines, 479 pages, ISBN 2-7087-0381-1. Ouvrage non consulté directement : les pages 82 et 149 à 151 sont citées d'après Esso Lasm (2021)."
+        "source_kind": "academic",
+        "notes": "Paris, Présence Africaine et Nouvelles Éditions Africaines, 479 pages, ISBN 2-7087-0381-1. Nous avons lu la présentation de l'éditeur, qui le décrit comme une étude d'une société sans État organisée en classes d'âge. Nous n'avons pas lu le livre lui-même : ses pages sont citées d'après Esso Lasm Constant (2021) et Mel Meledje Raymond (2009)."
       },
       {
         "title": "Esso Lasm Constant, Onomastique des Odjoukrou : aspects toponymique et ethnonymique, Les Cahiers de l'ACAREF, vol. 3, n° 6, tome 1, mai 2021, p. 174-188",
         "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2021/06/10ESSO-Lasm-Constant.pdf",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Étude de l'Université Félix Houphouët-Boigny sur les noms de lieux et de peuples à partir de la tradition orale. Elle rapporte les explications de l'origine de Lodjoukrou recueillies par Harris Memel-Fotê."
+        "notes": "Étude d'un chercheur de l'Université Félix Houphouët-Boigny sur les noms de lieux et de groupes, à partir de la tradition orale. Pages 177 à 178 : le nom Lodjoukrou et les explications de son origine recueillies par Harris Memel-Fotê, ainsi que l'histoire du nom Dabou. Pages 178 à 179 : les confédérations, les tribus et leurs villages. Pages 180 à 182 : récits de fondation de villages. Pages 185 à 187 : devises jouées au tambour, odes chantées et récit du cerf de Bonn."
       },
       {
         "title": "Bibliothèque nationale de France, notice d'autorité RAMEAU : Adioukrou (peuple d'Afrique)",
         "url": "https://catalogue.bnf.fr/ark:/12148/cb11952806n",
         "tier": "referenced",
         "source_kind": "repository",
-        "notes": "Notice créée en 1983 et mise à jour en 2002. Elle répertorie d'autres formes du nom, qu'elle ne retient pas comme entrée principale : Adiokrou, Adiukru, Adjoukrou, Adjukru, Adyoukrou, Adyukru, Adyukuru, Ajukru, Boubouri, Odjoukrou, Odjukru et Odzukru. Elle s'appuie sur des répertoires de noms de peuples, dont le Dictionnaire des peuples de Jean-Claude Tamisier (1998)."
+        "notes": "Notice créée en 1983 et mise à jour en 2007. Elle renvoie vers Adioukrou depuis d'autres formes du nom : Adiokrou, Adiukru, Adjoukrou, Adjukru, Adyoukrou, Adyukru, Adyukuru, Ajukru, Boubouri, Odjoukrou, Odjukru et Odzukru. Elle s'appuie sur des répertoires de noms de peuples, dont le Dictionnaire des peuples de Jean-Claude Tamisier (1998)."
       },
       {
         "title": "Jean-Michel Egue Latte, L'histoire des Odzukru, peuple du sud de la Côte d'Ivoire : des origines au XIXe siècle, 2018",
         "url": "https://www.editions-harmattan.fr/catalogue/livre/lhistoire-des-odzukru-peuple-du-sud-de-la-cote-divoire/17639",
         "tier": "referenced",
-        "notes": "L'Harmattan Côte d'Ivoire, 262 pages, ISBN 978-2-343-14449-8. Seule la présentation de l'éditeur a été lue."
+        "source_kind": "academic",
+        "notes": "L'Harmattan Côte d'Ivoire, 262 pages, ISBN 978-2-343-14449-8. Nous avons lu seulement la présentation de l'éditeur, qui situe la formation du peuple entre le XVIe et le XVIIIe siècle, par le mélange de populations venues des pays krou et akan."
       },
       {
         "title": "PHOIBLE : inventaire phonologique de l'adioukrou (inventaire 650)",
@@ -136,25 +154,68 @@
         "title": "Ahouyao, Bouafou et Amani, Cultural Identities and Food Habits in Adjoukrou Country in the Department of Dabou, Ivory Coast, 2022",
         "url": "https://ijsscfrtjournal.isrra.org/Social_Science_Journal/article/view/1115",
         "tier": "referenced",
-        "notes": "International Journal of Social Sciences: Current and Future Research Trends, vol. 14, n° 1, p. 144-160, ISSN 2790-4008. Enquête par questionnaire auprès de 261 personnes et entretiens dans le département de Dabou."
+        "source_kind": "academic",
+        "notes": "International Journal of Social Sciences: Current and Future Research Trends, vol. 14, n° 1, p. 144-160. Enquête par questionnaire et entretiens dans six villages du département de Dabou. Pages 146 à 148 : classes d'âge, gouvernement du village, lignages et héritage. Pages 148 à 150 : low, angbandji, Ebeb, dediakp, fête de l'igname et vêtements. Pages 150 à 152 : croyances, christianisme et activités. Page 155 : interdits."
+      },
+      {
+        "title": "Mel Meledje Raymond, Anthropologie des enjeux de la violence chez lagunaires de Côte d'Ivoire, African Sociological Review, vol. 13, n° 1, 2009",
+        "url": "https://doi.org/10.4314/asr.v13i1.57748",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'un anthropologue de l'Université de Bouaké, lu dans le PDF diffusé par African Journals Online. Page 79 : les deux souches, akan et krou, des peuples de la lagune. Pages 81 à 83 : noms et durée des classes d'âge, initiation et pouvoir de l'Eb-eb, avec des passages cités de Harris Memel-Fotê. Page 83 : création des chefs de village vers 1910. Page 88 : terres des matrilignages. Page 93 : conflits de limites entre Lopou et Yassap."
+      },
+      {
+        "title": "Maurice Delafosse, Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire, 1904, notice sur les Adyoukrou",
+        "url": "https://archive.org/details/vocabulairescomp00delauoft",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Ouvrage d'époque coloniale, publié à Paris. L'auteur, alors administrateur colonial en Côte d'Ivoire, y présente l'administrateur Lamblin comme son collègue. Lu dans l'exemplaire numérisé d'Internet Archive. Pages 12 à 14 : formes du nom, nom de Boubouri, territoire, traditions d'origine et hypothèse d'une conquête. Page 16 : vocabulaire recueilli en 1894 à Lopou et Akakrou."
+      },
+      {
+        "title": "Université Laval, L'aménagement linguistique dans le monde : Côte d'Ivoire, tableau des ethnies et des langues",
+        "url": "https://axl.cefan.ulaval.ca/afrique/cotiv.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Site de l'Université Laval, au Québec, page mise à jour le 19 mai 2026. Le tableau des ethnies compte 140 000 Adjoukrou en 2017, soit 0,5 % de la population ; le texte de la même page donne 1 %. La page mentionne aussi des manuels rédigés en adioukrou pendant la période coloniale."
+      },
+      {
+        "title": "Wikidata : Adyukru (Q2824498)",
+        "url": "https://www.wikidata.org/wiki/Q2824498",
+        "tier": "unverified",
+        "source_kind": "repository",
+        "notes": "Base de données libre. L'élément décrit ce peuple de Côte d'Ivoire et le relie à la notice de la Bibliothèque nationale de France 11952806n."
       },
       {
         "title": "Joshua Project : Adjoukrou in Côte d'Ivoire",
         "url": "https://joshuaproject.net/people_groups/10162/IV",
         "tier": "unverified",
         "source_kind": "missionary_database",
-        "notes": "Répertoire missionnaire. Noms alternatifs donnés : Ajukru, Bubari ; population annoncée : 209 000."
+        "notes": "Répertoire missionnaire. Noms alternatifs donnés : Ajukru, Bubari. Population annoncée : 209 000 ; 90 % de chrétiens."
       },
       {
         "title": "Lebutu Socraf : Les Adjoukrou et la démocratie, leçon d'une vie, 19 juillet 2017",
         "url": "https://lebutusocraf.wordpress.com/2017/07/19/les-adjoukrou-et-la-democratie-lecon-dune-vie/",
         "tier": "unverified",
-        "notes": "Blog consacré au patrimoine culturel adioukrou, fondé sur des témoignages oraux nommés, sans bibliographie. Variantes citées : Adjukru, Adioukrou, Adyukru, Boubouri, Odjukru."
+        "notes": "Blog consacré au patrimoine culturel adioukrou, fondé sur des témoignages oraux nommés, sans bibliographie. Variantes citées : Adjukru, Adioukrou, Adyukru, Boubouri, Odjukru. Il décrit aussi les sept classes d'âge et une cérémonie de l'Ebeb à Lopou en 2012."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Adioukrou, qui se nomment eux-mêmes Odjoukrou, vivent dans le sud de la Côte d'Ivoire, autour de Dabou. Leur nom est lié à celui de leur pays, Lodjoukrou.",
+      "followUp": "D'où viendrait le nom Lodjoukrou, que plusieurs récits relient à une maladie guérie ?"
+    },
+    "gaps": [
+      {
+        "field": "languages.dialects",
+        "reason": "Nous n'avons pas trouvé de source qui décrive les parlers de l'adioukrou selon les villages."
+      },
+      {
+        "field": "historicalRole.diaspora",
+        "reason": "Nous n'avons pas trouvé de source qui décrive des communautés adioukrou installées hors de Côte d'Ivoire."
       }
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Adioukrou désigne un peuple du sud de la Côte d'Ivoire, autour de Dabou, qui se nomme lui-même Odjoukrou, d'après le nom de son pays, Lodjoukrou. Un autre nom, Boubouri, lui a été donné par des Européens. Les sources ne s'accordent pas sur l'origine du nom Odjoukrou ; nous présentons plus bas les explications rapportées.",
+    "summary": "Le nom Adioukrou désigne un peuple du sud de la Côte d'Ivoire, qui vit autour de Dabou, au bord de la lagune Ébrié. Ce peuple se nomme lui-même Odjoukrou, d'après le nom de son pays, Lodjoukrou. Il porte d'autres noms et graphies, comme Adjoukrou, Odzukru ou Boubouri, un nom que des Européens employaient au début du XXe siècle. L'origine du nom Lodjoukrou est discutée : nous présentons plus bas les explications rapportées.",
     "names": [
       {
         "nameText": "Odjoukrou",
@@ -167,9 +228,9 @@
         "accounts": [
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Usage contemporain"
+              "from": 2021,
+              "to": 2021,
+              "label": "Rapporté en 2021"
             },
             "era": "modern",
             "statement": "Le nom Odjoukrou vient du nom du pays, Lodjoukrou, dont il est synonyme : le mot désigne à la fois le pays, le peuple et sa culture, selon le linguiste Esso Lasm Constant. Son origine est discutée.",
@@ -183,7 +244,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 177-178",
-                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue met en ligne en juin 2021, paginé p. 174-180 environ."
+                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue a mis en ligne en juin 2021, p. 174-188."
               }
             ]
           },
@@ -204,8 +265,8 @@
                 "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2021/06/10ESSO-Lasm-Constant.pdf",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 177",
-                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue met en ligne en juin 2021, paginé p. 174-180 environ. L'auteur résume Harris Memel-Fotê, Le Système politique de Lodjoukrou (1980), qui a recueilli ces récits auprès de personnes qui transmettent les traditions ; nous n'avons pas lu ce livre nous-mêmes."
+                "page": "p. 178",
+                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue a mis en ligne en juin 2021, p. 174-188. L'auteur résume Harris Memel-Fotê, Le Système politique de Lodjoukrou (1980), qui a recueilli ces récits auprès de personnes qui transmettent les traditions ; nous n'avons pas lu ce livre nous-mêmes."
               }
             ]
           },
@@ -226,8 +287,8 @@
                 "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2021/06/10ESSO-Lasm-Constant.pdf",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 177",
-                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue met en ligne en juin 2021, paginé p. 174-180 environ. L'auteur résume Harris Memel-Fotê, Le Système politique de Lodjoukrou (1980), qui a recueilli ces récits auprès de personnes qui transmettent les traditions ; nous n'avons pas lu ce livre nous-mêmes."
+                "page": "p. 178",
+                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue a mis en ligne en juin 2021, p. 174-188. L'auteur résume Harris Memel-Fotê, Le Système politique de Lodjoukrou (1980), qui a recueilli ces récits auprès de personnes qui transmettent les traditions ; nous n'avons pas lu ce livre nous-mêmes."
               }
             ]
           },
@@ -248,8 +309,8 @@
                 "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2021/06/10ESSO-Lasm-Constant.pdf",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 177",
-                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue met en ligne en juin 2021, paginé p. 174-180 environ. L'auteur résume Harris Memel-Fotê, Le Système politique de Lodjoukrou (1980), qui a recueilli ces récits auprès de personnes qui transmettent les traditions ; nous n'avons pas lu ce livre nous-mêmes."
+                "page": "p. 178",
+                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue a mis en ligne en juin 2021, p. 174-188. L'auteur résume Harris Memel-Fotê, Le Système politique de Lodjoukrou (1980), qui a recueilli ces récits auprès de personnes qui transmettent les traditions ; nous n'avons pas lu ce livre nous-mêmes."
               }
             ]
           },
@@ -270,8 +331,8 @@
                 "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2021/06/10ESSO-Lasm-Constant.pdf",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 177",
-                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue met en ligne en juin 2021, paginé p. 174-180 environ. L'auteur résume Harris Memel-Fotê, Le Système politique de Lodjoukrou (1980), qui a recueilli ces récits auprès de personnes qui transmettent les traditions ; nous n'avons pas lu ce livre nous-mêmes."
+                "page": "p. 178",
+                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue a mis en ligne en juin 2021, p. 174-188. L'auteur résume Harris Memel-Fotê, Le Système politique de Lodjoukrou (1980), qui cite à la page 82 le mémoire du pasteur Laurent Lasm ; nous n'avons pas lu ce livre nous-mêmes."
               }
             ]
           },
@@ -282,9 +343,15 @@
               "label": "1904"
             },
             "era": "colonial",
-            "statement": "Le nom Odjoukrou apparaît sous une forme proche, Ogyukru, chez Maurice Delafosse en 1904, parmi les formes qu'il donne au nom de ce peuple. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "statement": "Le nom Odjoukrou apparaît sous une forme proche, Ogyukru, chez Maurice Delafosse en 1904, parmi les formes qu'il donne au nom de ce peuple. C'est la plus ancienne trace de ce nom que nous connaissons. Le peuple existait déjà avant elle.",
             "formAsWritten": "Ogyukru",
             "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse, administrateur colonial",
+                "role": "écrit cette forme"
+              }
+            ],
             "sources": [
               {
                 "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
@@ -294,7 +361,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 13",
-                "notes": "Paris, 1904, lu dans l'exemplaire numérisé d'Internet Archive."
+                "notes": "Ouvrage d'époque coloniale, publié à Paris en 1904, lu dans l'exemplaire numérisé d'Internet Archive. L'auteur y cite les formes Adyukru, Agyukru, Adjyukru et Ogyukru."
               }
             ]
           }
@@ -317,9 +384,15 @@
               "label": "1904"
             },
             "era": "colonial",
-            "statement": "Le nom Adioukrou apparaît par écrit sous la forme Adyoukrou chez Maurice Delafosse en 1904 : il nomme ainsi le peuple qui vit entre la lagune Ébrié, l'Agnéby et le Bandama, autour de Dabou, Débrimou, Lopou et Toupa, et il appelle sa langue l'adyoukrou. Les sources que nous avons lues ne disent pas qui a fixé la graphie Adioukrou. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "statement": "Le nom Adioukrou apparaît par écrit sous la forme Adyoukrou chez Maurice Delafosse en 1904 : il nomme ainsi le peuple qui vit entre la lagune Ébrié, l'Agnéby et le Bandama, autour de Dabou, Débrimou, Lopou et Toupa, et il appelle sa langue l'adyoukrou. Les sources que nous avons lues ne disent pas qui a fixé la graphie Adioukrou. C'est la plus ancienne trace de ce nom que nous connaissons. Le peuple existait déjà avant elle.",
             "formAsWritten": "Adyoukrou",
             "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse, administrateur colonial",
+                "role": "écrit cette forme"
+              }
+            ],
             "sources": [
               {
                 "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
@@ -329,7 +402,123 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 12-13",
-                "notes": "Paris, 1904, lu dans l'exemplaire numérisé d'Internet Archive."
+                "notes": "Ouvrage d'époque coloniale, publié à Paris en 1904, lu dans l'exemplaire numérisé d'Internet Archive. L'auteur y précise qu'il a recueilli une partie de son vocabulaire en 1894 à Lopou et à Akakrou (p. 16)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Adioukrou est la forme que la Bibliothèque nationale de France retient aujourd'hui pour ce peuple, dans une notice créée en 1983. Cette notice renvoie vers lui depuis une quinzaine d'autres formes, dont Odjoukrou, Adjoukrou, Odzukru et Boubouri.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bibliothèque nationale de France, notice d'autorité RAMEAU : Adioukrou (peuple d'Afrique)",
+                "author": "Bibliothèque nationale de France",
+                "year": 2007,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb11952806n",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Notice créée en 1983 et mise à jour en 2007."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Adjoukrou",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre graphie du même nom, courante dans les études récentes.",
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Adjoukrou est la forme qu'emploient Jacob Ahouyao, Kouamé Guy Marcel Bouafou et Yao Célestin Amani en 2022, dans une étude sur le département de Dabou. Ils appellent aussi la langue de ce peuple l'adjoukrou.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Cultural Identities and Food Habits in Adjoukrou Country in the Department of Dabou, Ivory Coast",
+                "author": "Jacob Ahouyao, Kouamé Guy Marcel Bouafou et Yao Célestin Amani",
+                "year": 2022,
+                "url": "https://ijsscfrtjournal.isrra.org/Social_Science_Journal/article/view/1115",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 144-146",
+                "notes": "International Journal of Social Sciences: Current and Future Research Trends, vol. 14, n° 1, lu dans le PDF mis en ligne par la revue."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Odzukru",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre graphie du même nom, employée par des historiens et anthropologues ivoiriens.",
+        "periodLabel": "Écrit en 1980 ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Odzukru est écrit « odzukru » par Harris Memel-Fotê en 1980, dans un passage sur la fondation du village de Ndoumikro que cite Esso Lasm Constant.",
+            "formAsWritten": "odzukru",
+            "actors": [
+              {
+                "name": "Harris Memel-Fotê",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Onomastique des Odjoukrou : aspects toponymique et ethnonymique",
+                "author": "Esso Lasm Constant",
+                "year": 2021,
+                "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2021/06/10ESSO-Lasm-Constant.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 181",
+                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue a mis en ligne en juin 2021, p. 174-188. L'auteur cite Harris Memel-Fotê, Le Système politique de Lodjoukrou (1980) ; nous n'avons pas lu ce livre nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Odzukru est la forme que retient l'historien Jean-Michel Egue Latte en 2018, dans le titre de son livre sur l'histoire de ce peuple jusqu'au XIXe siècle.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "L'histoire des Odzukru, peuple du sud de la Côte d'Ivoire : des origines au XIXe siècle",
+                "author": "Jean-Michel Egue Latte",
+                "year": 2018,
+                "url": "https://www.editions-harmattan.fr/catalogue/livre/lhistoire-des-odzukru-peuple-du-sud-de-la-cote-divoire/17639",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "L'Harmattan Côte d'Ivoire, 262 pages. Nous avons lu la présentation de l'éditeur, pas le livre."
               }
             ]
           }
@@ -346,9 +535,9 @@
         "accounts": [
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Usage contemporain"
+              "from": 2021,
+              "to": 2021,
+              "label": "Rapporté en 2021"
             },
             "era": "modern",
             "statement": "Le nom Boubouri désigne Bobor lok, la confédération de Boubouri, l'une des deux anciennes confédérations du pays avec celle de Debrimou, selon Esso Lasm Constant.",
@@ -361,8 +550,8 @@
                 "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2021/06/10ESSO-Lasm-Constant.pdf",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 177-178",
-                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue met en ligne en juin 2021, paginé p. 174-180 environ."
+                "page": "p. 178-179",
+                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue a mis en ligne en juin 2021, p. 174-188."
               }
             ]
           },
@@ -373,9 +562,15 @@
               "label": "1904"
             },
             "era": "colonial",
-            "statement": "Le nom Boubouri est souvent donné à tout ce peuple par les Européens, d'après le nom de l'une de ses tribus, selon Maurice Delafosse en 1904. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "statement": "Le nom Boubouri est souvent donné à tout ce peuple par les Européens, d'après le nom de l'une de ses tribus, selon Maurice Delafosse en 1904. C'est la plus ancienne trace de ce nom que nous connaissons. Le peuple existait déjà avant elle.",
             "formAsWritten": "Boubouri",
             "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse, administrateur colonial",
+                "role": "écrit cette forme"
+              }
+            ],
             "sources": [
               {
                 "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
@@ -385,7 +580,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 13",
-                "notes": "Paris, 1904, lu dans l'exemplaire numérisé d'Internet Archive."
+                "notes": "Ouvrage d'époque coloniale, publié à Paris en 1904, lu dans l'exemplaire numérisé d'Internet Archive."
               }
             ]
           }
