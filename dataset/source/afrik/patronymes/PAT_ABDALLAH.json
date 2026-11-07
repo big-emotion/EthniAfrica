@@ -74,7 +74,13 @@
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
-  "bearers": [],
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Ahmed Abdallah Abderamane (mort en 1989), président des Comores",
+      "sourceRefs": ["elysee-condoleances-abdallah-1989"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
@@ -100,6 +106,14 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Page dédiée consultée intégralement. Elle atteste le patronyme au Soudan, en Égypte et aux Comores et reproduit deux dictionnaires anciens donnant la glose arabe « serviteur de Dieu ». Les contributions déposées par les utilisateurs n'ont pas été retenues. Forebears avertit que la distribution géographique ne permet pas d'inférer une appartenance ethnique."
+    },
+    {
+      "sourceKey": "elysee-condoleances-abdallah-1989",
+      "title": "Message de condoléances de M. François Mitterrand, adressé à M. Said Mohammed Djohar, à la suite de l'assassinat de M. Ahmed Abdallah Abderamane, président des Comores (Paris, 28 novembre 1989) — Élysée",
+      "url": "https://www.elysee.fr/francois-mitterrand/1989/11/28/message-de-condoleances-de-m-francois-mitterrand-president-de-la-republique-adresse-a-m-said-mohammed-djohar-president-de-la-cour-supreme-des-comores-a-la-suite-de-lassassinat-de-m-ahmed-abdallah-abderamane-president-des-comores-paris-le-28-nov",
+      "tier": "official",
+      "source_kind": "government",
+      "notes": "Page des archives de la présidence de la République française, lue le 8 novembre 2026. Le message, daté de Paris le 28 novembre 1989, désigne la victime comme « M. Ahmed Abdallah Abderamane, président des Comores » et parle de sa « mort violente ». Il confirme que le nom Abdallah est porté dans la chaîne de noms d'un chef d'État comorien mort en 1989. Il ne dit rien de l'origine du nom."
     }
   ],
   "gaps": [
@@ -125,7 +139,7 @@
     },
     {
       "fieldPath": "bearers",
-      "reason": "Les recherches biographiques exactes sur « Abdallah » dans les catalogues et répertoires consultés n'ont pas permis d'isoler un porteur décédé dont ce segment soit explicitement documenté dans la position anthroponymique pertinente. Les personnes vivantes repérées ont été exclues."
+      "reason": "Un porteur décédé est établi par une source officielle : Ahmed Abdallah Abderamane, président des Comores, mort en 1989. Nous n'avons pas trouvé de porteur égyptien ou soudanais dont la chaîne de noms soit assez documentée ; les personnes vivantes repérées ont été exclues."
     },
     {
       "fieldPath": "homonyms",

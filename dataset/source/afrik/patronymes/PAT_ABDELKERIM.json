@@ -45,12 +45,20 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "hanks-abdul-karim",
+      "title": "Abdulkarim Name Meaning and Abdulkarim Family History at FamilySearch (Patrick Hanks, Dictionary of American Family Names, 2003)",
+      "url": "https://www.familysearch.org/en/surname?surname=abdulkarim",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Entrée Abdul-Karim du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Muslim (also Abdul-Karim): from the Arabic personal name ʿAbdul-Karīm 'servant of the Most Generous' (see Karim) ». La page FamilySearch propre à la graphie Abdelkerim ne contient aucun texte. Lu le 8 novembre 2026. La source ne parle pas du Tchad."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Le sens du nom est établi par un dictionnaire de noms de famille (voir l'historique du nom). Nous avons cherché, sans résultat, une chronique, une tradition orale ou une étude consacrée à Abdelkerim au Tchad (recherches « Abdelkerim Chad name » et « onomastique tchadienne », pages FamilySearch ; Geneanet inaccessible). Les chapitres des traditions orales et des chroniques écrites restent donc vides."
     },
     {
       "fieldPath": "alliances",
@@ -72,5 +80,42 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Abdelkerim à un peuple au Tchad. Nous n'avons pas encore consulté de source consacrée à ce nom. Ce nom peut reprendre le prénom d'un parent. Il reste à vérifier s'il se transmet comme nom de famille dans un groupe précis."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Abdelkerim est une écriture, courante dans les pays de langue française, d'un nom personnel arabe et musulman qui veut dire « serviteur du Très Généreux ». Nous n'avons pas trouvé de travail sur son usage au Tchad : nous ne disons donc rien de ses porteurs ni de sa transmission là-bas.",
+    "names": [
+      {
+        "nameText": "Abdelkerim",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Un nom personnel arabe, « serviteur du Très Généreux ».",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Décrit en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom s'écrit aussi Abdul-Karim. Il vient du nom personnel arabe ʿAbdul-Karīm, « serviteur du Très Généreux », selon le dictionnaire de Patrick Hanks. Karim, « le Généreux », est l'un des noms que l'islam donne à Dieu.",
+            "claimStatus": "established",
+            "sources": [
+              {
+                "title": "Abdulkarim Name Meaning and Abdulkarim Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=abdulkarim",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée Abdul-Karim du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Muslim (also Abdul-Karim): from the Arabic personal name ʿAbdul-Karīm 'servant of the Most Generous' (see Karim) ». La page FamilySearch propre à la graphie Abdelkerim ne contient aucun texte. Lu le 8 novembre 2026. La source ne parle pas du Tchad."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
