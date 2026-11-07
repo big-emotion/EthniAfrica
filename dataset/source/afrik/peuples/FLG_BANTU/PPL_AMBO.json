@@ -100,6 +100,31 @@
         "url": "https://www.britannica.com/topic/Ambo-people",
         "tier": "unverified",
         "source_kind": "encyclopedia"
+      },
+      {
+        "title": "Social and ritual life of the Ambo of Northern Rhodesia (notice de la bibliothèque de l'Union africaine)",
+        "author": "Bronislaw Stefaniszyn",
+        "year": 1964,
+        "url": "https://library.au.int/node/239406",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de catalogue lue le 8 novembre 2026 : Oxford University Press, Londres et New York, 1964, xxii et 171 pages, sujets « Ambo » et « Northern Rhodesia ». Le livre lui-même n'a pas été lu."
+      },
+      {
+        "title": "Bemba and related peoples of Northern Rhodesia / Peoples of the Luapula Valley (Ethnographic survey of Africa, East Central Africa, vol. 2), avec une contribution de B. Stefaniszyn sur les Ambo",
+        "author": "Wilfred Howell Whiteley et J. Slaski",
+        "year": 1951,
+        "url": "https://glottolog.org/resource/reference/id/15378",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice Glottolog lue le 8 novembre 2026 : elle indique la contribution de Stefaniszyn sur les Ambo et rattache l'ouvrage au lala-bisa. Le texte de l'ouvrage n'a pas été lu."
+      },
+      {
+        "title": "Glottolog – Lala-Bisa (lala1264)",
+        "url": "https://glottolog.org/resource/languoid/id/lala1264",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Lue le 8 novembre 2026 : code ISO 639-3 leb, parlé en Zambie et en République démocratique du Congo. La page ne mentionne pas le nom Ambo."
       }
     ]
   },
