@@ -116,8 +116,23 @@
         "url": "https://joshuaproject.net/people_groups/13515",
         "tier": "unverified",
         "source_kind": "missionary_database"
+      },
+      {
+        "title": "Glottolog, Mankanya",
+        "url": "https://glottolog.org/resource/languoid/id/mank1251",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche Glottolog du mankanya (glottocode mank1251, code ISO knf), consultée le 8 novembre 2026. Elle donne la Guinée-Bissau et le Sénégal comme pays, et les noms Mancagne, Mankanya, Mankan, Mancanha, Mankanha et Bola."
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "mank1251",
+      "iso639_3": "knf"
+    },
+    "searchAnswer": {
+      "lead": "Les Mankanya sont un peuple de Guinée-Bissau et du Sénégal. Leur langue, le mankanya, est aussi appelée mancagne.",
+      "followUp": "Quels noms ce peuple reçoit-il dans les textes anciens ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Mankanya désigne un peuple de langue atlantique du nord-ouest de la Guinée-Bissau, de la Casamance et de la Gambie, qui se nomme lui-même Bahula, « les gens de Hula ». D'autres noms existent : Bawuh, que se donne une minorité, Mancanha en portugais, Mancagne en français, et Brame, plus ancien. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",

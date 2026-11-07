@@ -121,8 +121,23 @@
         "url": "https://www.britannica.com/place/Biombo-region-Guinea-Bissau",
         "tier": "unverified",
         "source_kind": "encyclopedia"
+      },
+      {
+        "title": "Glottolog, Papel",
+        "url": "https://glottolog.org/resource/languoid/id/pape1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche Glottolog du papel (glottocode pape1239, code ISO pbo), consultée le 8 novembre 2026. Elle donne la Guinée-Bissau et le Sénégal comme pays, et les variantes Papei, Pepel, Moium et Oium."
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "pape1239",
+      "iso639_3": "pbo"
+    },
+    "searchAnswer": {
+      "lead": "Les Papel sont un peuple de Guinée-Bissau. Leur langue, le papel, est aussi notée Pepel, Papei ou Oium.",
+      "followUp": "Comment le nom Papel est-il écrit dans les textes anciens ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Papel désigne un peuple de la côte de Guinée-Bissau, autour de Bissau et de Biombo, présent aussi au Sénégal, qui se nomme lui-même Pepel. Au XVIe siècle, les Portugais l'appelaient aussi Buramos. Les sources ne s'accordent pas sur l'origine du nom Papel ; nous les présentons plus bas.",

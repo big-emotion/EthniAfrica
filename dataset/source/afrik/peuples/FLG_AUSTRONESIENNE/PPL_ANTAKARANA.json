@@ -116,8 +116,23 @@
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
         "tier": "official",
         "source_kind": "government"
+      },
+      {
+        "title": "Glottolog, Antakarana",
+        "url": "https://glottolog.org/resource/languoid/id/anta1255",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche Glottolog de l'antankarana (glottocode anta1255, code ISO xmv), consultée le 8 novembre 2026. Elle place cette variété du malgache à Madagascar et donne les formes Antankarana et Tankarana."
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "anta1255",
+      "iso639_3": "xmv"
+    },
+    "searchAnswer": {
+      "lead": "Les Antakarana sont un peuple du nord de Madagascar. Leur parler est une variété du malgache.",
+      "followUp": "Que signifie le nom Antakarana ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Antakarana désigne un peuple de l'extrême nord de Madagascar, qui se nomme lui-même Antakarana ; on écrit aussi Antankarana. Le nom renvoie au pays de l'Ankarana. Les sources ne s'accordent pas sur son sens ; nous les présentons plus bas.",
