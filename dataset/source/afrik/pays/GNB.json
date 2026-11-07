@@ -963,9 +963,9 @@
       }
     ],
     "demographics": {
-      "totalPopulation": 1852784,
+      "totalPopulation": 2300000,
       "referenceYear": 2025,
-      "source": "Instituto Nacional de Estatística (Guinée-Bissau) — Projections de la population de la Guinée-Bissau 2014-2063 (2022)",
+      "source": "UNFPA – World Population Dashboard",
       "peoples": [
         {
           "name": "Fula",
