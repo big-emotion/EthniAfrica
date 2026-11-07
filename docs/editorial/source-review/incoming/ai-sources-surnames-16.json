@@ -1,0 +1,165 @@
+{
+  "description": "Proposals only for the ai_generated sources of the patronymes premium batch 16. A human decides each one; nothing here is applied.",
+  "verifications": [
+    {
+      "fiche": "patronymes/PAT_BOUH.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BOUH; nameMain: Bouh; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code session)"
+    },
+    {
+      "fiche": "patronymes/PAT_BOUMEDIENE.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BOUMEDIENE; nameMain: Boumediene; nameSystem: hereditary_family_name; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Algérie : 60 ans d'indépendance (2/6) - Génération Boumédiène (1965-1978)",
+          "author": "Michel Pierre",
+          "year": null,
+          "url": "https://www.herodote.net/Generation_Boumediene_1965_1978_-synthese-3387.php",
+          "source_kind": "press",
+          "quote": "Il prend alors comme nom de guerre celui de Houari Boumédiène, savant et mystique soufi de Tlemcen du XIIe siècle.",
+          "supports": "Attests Boumédiène as a name taken in the Algerian war, from a Tlemcen saint. Does not cover the family name Boumediene as an inherited surname."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code session)"
+    },
+    {
+      "fiche": "patronymes/PAT_BOUSSOUGOU.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BOUSSOUGOU; nameMain: Boussougou; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code session)"
+    },
+    {
+      "fiche": "patronymes/PAT_BOUTEFLIKA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BOUTEFLIKA; nameMain: Bouteflika; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Abdelaziz Bouteflika obituary: President of Algeria for nearly 20 years",
+          "author": null,
+          "year": 2021,
+          "url": "https://www.irishtimes.com/life-and-style/people/abdelaziz-bouteflika-obituary-president-of-algeria-for-nearly-20-years-1.4681802",
+          "source_kind": "press",
+          "quote": "He was the son of Ahmed Bouteflika and Mansouria Ghezlaoui. Both parents originally came from Algeria's Tlemcen region.",
+          "supports": "Attests the surname Bouteflika in Algeria, passed from father to son in one Tlemcen-origin family. Does not establish the name system (nisba) or its etymology. Page read in this session; the quote is the fetch tool's rendering of the page and should be checked against the live text."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code session)"
+    },
+    {
+      "fiche": "patronymes/PAT_BOUTROS.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BOUTROS; nameMain: Boutros; nameSystem: non_hereditary_patronymic; transmissionMode: other; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Botroseya Church, first church named after political family",
+          "author": "Al-Masry Al-Youm",
+          "year": 2016,
+          "url": "https://www.egyptindependent.com/botroseya-church-first-church-named-after-political-family/",
+          "source_kind": "press",
+          "quote": "Botros, the Arabic word for Peter",
+          "supports": "Botros is the Arabic word for Peter, in Egypt. Does not state the Greek etymon or the name system. Quote is the fetch tool's summary wording and should be checked against the live page."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code session)"
+    },
+    {
+      "fiche": "patronymes/PAT_BOUZID.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BOUZID; nameMain: Bouzid; nameSystem: hereditary_family_name; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code session)"
+    },
+    {
+      "fiche": "patronymes/PAT_BOZIZE.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BOZIZE; nameMain: Bozizé; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code session)"
+    },
+    {
+      "fiche": "patronymes/PAT_BUKURU.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BUKURU; nameMain: Bukuru; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code session)"
+    },
+    {
+      "fiche": "patronymes/PAT_BULCHA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BULCHA; nameMain: Bulcha; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code session)"
+    },
+    {
+      "fiche": "patronymes/PAT_BYARUHANGA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BYARUHANGA; nameMain: Byaruhanga; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code session)"
+    }
+  ]
+}
