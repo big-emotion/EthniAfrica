@@ -13,7 +13,7 @@
       "attestations": [
         {
           "countryId": "GHA",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["dafn-appiah", "gold-coast-blue-book-1921"]
         }
       ]
     }
@@ -30,14 +30,14 @@
     {
       "peopleId": "PPL_AKAN",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["dafn-appiah"]
     }
   ],
   "countries": [
     {
       "countryId": "GHA",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["dafn-appiah", "gold-coast-blue-book-1921"]
     }
   ],
   "alliances": [],
@@ -52,6 +52,30 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "dafn-appiah",
+      "title": "Dictionary of American Family Names, 2e éd. — Appiah (Patrick Hanks (dir.), 2022)",
+      "url": "https://www.ancestry.com/last-name-meaning/appiah?geo-lang=en",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 13 octobre 2026 ; le site affiche une traduction française. La notice dit : Afrique de l'Ouest (Ghana) : d'un nom personnel masculin akan d'étymologie inexpliquée ; le h final dans les noms ghanéens comme celui-ci est l'anglicisation caractéristique."
+    },
+    {
+      "sourceKey": "gold-coast-blue-book-1921",
+      "title": "Gold Coast Colony. Blue Book 1921 (Gouvernement de la colonie de la Côte-de-l'Or (Accra), 1921)",
+      "url": "https://archive.org/details/blue-book-gold-coast-1921",
+      "tier": "referenced",
+      "source_kind": "government",
+      "notes": "Passage : p. 134. Registre annuel de la colonie, avec la liste de ses fonctionnaires ; exemplaire numérisé sur archive.org. Lu le 13 octobre 2026. Page 134, liste alphabétique des fonctionnaires : « Appiah, H. » (artisan, chemins de fer), « Appiah, J. M. » (employé payeur, régiment de la Côte-de-l'Or), « Appiah, W. » (infirmier, service médical) et « Appiah, S. K. » (préparateur, service vétérinaire), avec d'autres Appiah. La liste donne les noms écrits ainsi : famille d'abord, puis initiales."
+    },
+    {
+      "sourceKey": "christaller-1881-tshi",
+      "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi) (Johann Gottlieb Christaller, 1881)",
+      "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Passage : p. 368 et p. 666-667. Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Lu le 13 octobre 2026. Page 368 : « Apea, pr. n. m. » (nom propre masculin). Annexe G, « Proper Names of Persons », p. 666-667 : chacun porte d'ordinaire deux noms, dont l'un dit le jour de naissance ; Apea figure dans la liste de la page 667 sans explication, et l'auteur note que de beaucoup de ces noms le sens premier n'est pas connu. Missionnaire de Bâle, cité pour les formes qu'il écrit."
     }
   ],
   "gaps": [
