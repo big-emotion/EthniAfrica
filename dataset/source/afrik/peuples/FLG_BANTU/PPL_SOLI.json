@@ -14,7 +14,8 @@
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantu Botatwe (groupe center-sud)",
       "historicalRegion": "Province de Lusaka, centre de la Zambie",
-      "currentCountries": ["ZMB"]
+      "currentCountries": ["ZMB"],
+      "spellingAliases": ["Chisoli", "Basoli"]
     },
     "ethnicities": ["Soli", "Basoli"],
     "origins": {
@@ -107,8 +108,23 @@
         "url": "https://glottolog.org/resource/languoid/id/soli1239",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Soli [sby], ISO 639-3",
+        "url": "https://iso639-3.sil.org/code/sby",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du code : langue vivante, étendue individuelle. Lue le 8 novembre 2026."
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "soli1239",
+      "iso639_3": "sby"
+    },
+    "searchAnswer": {
+      "lead": "Soli est le nom d'un peuple de la région de Lusaka, en Zambie, et de sa langue bantu.",
+      "followUp": "D'où vient le nom Soli ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Soli désigne un peuple de la région de Lusaka, en Zambie, et sa langue, que les sources rangent dans le groupe bantu botatwe. On ne sait pas comment ce peuple se nomme lui-même. On ne sait pas non plus avec certitude d'où vient le nom Soli ; nous présentons plus bas ses traces.",
