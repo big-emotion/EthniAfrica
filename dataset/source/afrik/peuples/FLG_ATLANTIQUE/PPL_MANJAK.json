@@ -16,8 +16,8 @@
         "Njaago",
         "Kanyop"
       ],
-      "originOfExonyms": "Manjaco est la forme portugaise, Mandjak la forme francaise, Njaago la forme wolof, Manjago la forme jola. Le terme Kanyop est egalement utilise comme designation de la langue dans certaines sources.",
-      "whyProblematic": null,
+      "originOfExonyms": "Glottolog recense, pour la langue, de nombreuses variantes : Mandjak, Mandyak, Manjaco, Manjack, Manjaku, Kanyop, Kenyop, Ndjak, Sarar, Schadal et d'autres. Nous avons gardé ici les formes Manjaco (portugais), Mandjak (français), Njaago (wolof) et Manjago (jola) telles que l'ancienne fiche les attribuait ; nous n'avons pas pu vérifier dans une source lue la langue d'origine de chacune.",
+      "whyProblematic": "Nous n'avons trouvé aucune source qui juge l'une de ces appellations péjorative : ce point n'est pas établi.",
       "contemporaryUsage": "Manjak est la forme la plus courante en contexte anglophone, Mandjak en francais, Manjaco en portugais. Le terme Mandyak est utilise par Joshua Project.",
       "linguisticFamily": "FLG_ATLANTIQUE",
       "ethnoLinguisticGroup": "Groupe Bak (sous-groupe Manjaku-Papel) de la famille atlantique du Niger-Congo",
@@ -113,7 +113,8 @@
         "title": "Glottolog - mand1419 Manjak",
         "url": "https://glottolog.org/resource/languoid/id/mand1419",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Page lue le 8 novembre 2026. Code mand1419, ISO 639-3 mfv ; pays : Gambie, Guinée-Bissau, Sénégal ; statut « Threatened » (6b) d'après l'Ethnologue ; la page donne de nombreuses variantes du nom (Mandjak, Manjaku, Kanyop, Sarar, etc.) et aucun chiffre de locuteurs."
       }
     ]
   },

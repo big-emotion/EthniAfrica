@@ -11,8 +11,8 @@
         "Hulimba (nom de leur langue)",
         "Malimba (forme utilisee dans certaines associations culturelles)"
       ],
-      "originOfExonyms": "Le terme Hulimba designe la langue parlee par le peuple Limba. Malimba est utilise par certaines organisations de developpement communautaire en Sierra Leone.",
-      "whyProblematic": null,
+      "originOfExonyms": "Hulimba est le nom de la langue, selon la fiche de l'Ethnologue. Malimba est une forme que nous avons relevée dans le discours d'organisations de développement communautaire de Sierra Leone ; nous n'avons pas lu de source qui explique d'où elle vient.",
+      "whyProblematic": "Nous n'avons trouvé aucune source qui juge le nom Limba péjoratif : ce point n'est pas établi. Les sources lues n'expliquent pas non plus l'origine du nom.",
       "contemporaryUsage": "Le terme Limba est d'usage courant en Sierra Leone. Les sous-groupes sont designes par leur dialecte ou region d'origine (Tonko Limba, Sela Limba, Wara-Wara Limba, etc.).",
       "linguisticFamily": "FLG_ATLANTIQUE",
       "ethnoLinguisticGroup": "Groupe Mel (branche meridionale des langues atlantiques), parfois classe independamment dans les langues atlantiques du Niger-Congo",
@@ -29,17 +29,18 @@
       "Kamuke Limba"
     ],
     "origins": {
-      "ancientOrigins": "Les Limba sont consideres comme le peuple le plus ancien de Sierra Leone, sans tradition migratoire connue. Ils se considerent les premiers habitants et premiers souverains du territoire. La montagne Kakoya (chefferie Wara-Wara Bafodia) est tenue pour leur foyer ancestral spirituel, lieu ou les morts retourneraient. Une figure en bois ancienne decouverte dans une grotte de Kakoya est aujourd'hui conservee au British Museum.",
-      "formationPeriod": "Presence attestee en Sierra Leone depuis des temps immemoriaux selon la tradition orale. Aucune tradition de migration depuis l'exterieur. Les historiens considerent les Limba comme un groupe autochtone formant un continuum demographique pluricentenaire dans les zones montagneuses du nord.",
-      "migrationRoutes": [],
-      "historicalSettlementZones": [
-        "Montagnes Wara Wara (district de Koinadugu)",
-        "Districts de Bombali, Port Loko, Tonkolili en Sierra Leone",
-        "Zone de Freetown et Western Area (migrations internes coloniales et post-coloniales)"
+      "ancientOrigins": "Le glossaire Sierra Leone Heritage, qui s'appuie sur Finnegan (1965), Hart (1989) et Ottenberg (1992), écrit que les Limba « n'ont pas de traditions de migration » et qu'ils « semblent installés à l'intérieur de la Sierra Leone dès le XVIe siècle ». Nous n'avons pas pu vérifier dans un ouvrage lu l'idée qu'ils seraient le plus ancien peuple du pays, ni la place de la montagne Kakoya comme foyer spirituel.",
+      "formationPeriod": "Installés dans l'intérieur de la Sierra Leone dès le XVIe siècle selon le glossaire Sierra Leone Heritage. Nous n'avons pas de source lue pour une date plus ancienne.",
+      "migrationRoutes": [
+        "Aucune migration n'est connue : le glossaire Sierra Leone Heritage précise que les Limba n'ont pas de traditions de migration."
       ],
-      "unificationsOrDivisions": "Les Limba sont organises en chefferies autonomes (chiefdoms) sans unite politique centralisee. Le chef Alimamy Suluku de Bumban (district de Bombali) est la figure politique limba la plus celebre du 19e siecle.",
-      "externalInfluences": "Pression des Susu, Fula et Mandinka aux 16e-19e siecles, ayant force les Limba a se refugier dans les zones montagneuses. Influence de l'islam via les Fula et Mandinka. Influence chretienne via les missions protestantes (Church Missionary Society) a partir du 19e siecle. Traite des esclaves atlantique : des milliers de Limba vendus a Bunce Island aux 16e-18e siecles.",
-      "majorHistoricalEvents": "Vente comme esclaves au commerce atlantique via Bunce Island (16e-18e siecles). Resistances aux expansions susu, fula et mandinka. Chefferie d'Alimamy Suluku de Bumban (19e siecle). Independance de la Sierra Leone (1961) : les Limba ont fourni plusieurs chefs d'Etat (Siaka Stevens, Joseph Momoh, Ernest Bai Koroma)."
+      "historicalSettlementZones": [
+        "Un territoire en forme d'os de souhait (« wishbone-shaped ») au nord-ouest de la Sierra Leone (Sierra Leone Heritage)",
+        "Dans le recensement de 2015, les Limba sont surtout nombreux dans la région Nord : 11,4 % de la population de cette région déclare le limba comme langue principale (Statistics Sierra Leone)"
+      ],
+      "unificationsOrDivisions": "Nous n'avons pas pu vérifier l'organisation politique ancienne des Limba ni le rôle d'Alimamy Suluku de Bumban au XIXe siècle : ces points restent à documenter.",
+      "externalInfluences": "Nous n'avons pas pu vérifier dans une source lue les pressions des voisins susu, fula et mandinka, ni l'influence des missions, ni l'ampleur de la traite à partir de Bunce Island : ces points restent à documenter.",
+      "majorHistoricalEvents": "Nous n'avons pas pu vérifier d'événement daté dans une source lue ; la rubrique reste à documenter."
     },
     "organization": {
       "traditionalPoliticalSystem": "Systeme de chefferies (chiefdoms) dirigees par des chefs supremes (paramount chiefs) et des conseils d'anciens. Les Limba predominent dans 16 des 190 chefferies rurales de Sierra Leone. Societe a structure matrilineaire : la filiation passe par les meres, qui sont les gardiennes de l'honneur familial.",
@@ -75,21 +76,42 @@
       "diaspora": "Dispersion interne en Sierra Leone : migration vers Freetown et les zones urbaines depuis l'epoque coloniale. Presence dans toutes les provinces de Sierra Leone aujourd'hui. Faible diaspora internationale. Nombreux Limba dans les milieux politiques et professionnels en Sierra Leone."
     },
     "demography": {
-      "totalPopulation": 579200,
-      "referenceYear": 2025,
-      "source": "Joshua Project (2025) : Limba Ouest (577 000 en Sierra Leone), Limba Est (2 100 en Sierra Leone et Guinee). Sierra Leone 2025 (World Population Review) : 8 819 790 habitants, Limba represente environ 8-12,4% de la population. Ethnologue : Limba Ouest-Central (lia) langue officielle regionale en Sierra Leone.",
+      "totalPopulation": 593590,
+      "referenceYear": 2015,
+      "source": "Sierra Leone : recensement de 2015, 592 190 personnes se déclarant Limba, soit 8,4 % de la population des groupes ethniques locaux, troisième groupe du pays (Statistics Sierra Leone, tableau 3.20). Guinée : 1 400 selon Joshua Project, chiffre non officiel d'une base missionnaire. Le total additionne deux chiffres d'années et de natures différentes ; il est donné à titre indicatif.",
       "distributionByCountry": [
         {
           "country": "SLE",
-          "population": 577800
+          "population": 592190,
+          "note": "Recensement de 2015, tableau 3.20."
         },
         {
           "country": "GIN",
-          "population": 1400
+          "population": 1400,
+          "note": "Estimation Joshua Project, non officielle."
         }
       ]
     },
     "sources": [
+      {
+        "title": "Sierra Leone 2015 Population and Housing Census, National Analytical Report",
+        "author": "Statistics Sierra Leone",
+        "year": 2015,
+        "url": "https://sierraleone.unfpa.org/sites/default/files/pub-pdf/National%20Analytical%20Report.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "tableau 3.20 (section 3.9) ; langue principale par région",
+        "notes": "Rapport lu le 8 novembre 2026. Tableau 3.20 : « Limba 592,190 », 8,4 % du total de 7 016 957 ; région Nord : « Limba 11.4 »."
+      },
+      {
+        "title": "Limba — glossaire",
+        "author": "Sierra Leone Heritage",
+        "year": null,
+        "url": "https://sierraleoneheritage.org/glossary/limba",
+        "tier": "referenced",
+        "source_kind": "encyclopedia",
+        "notes": "Lu le 8 novembre 2026. Passages à l'appui : « They have no traditions of migration » ; « appear to have been settled in the interior of Sierra Leone as early as the 16th century ». La notice cite Finnegan (1965), Hart (1989) et Ottenberg (1992), non lus."
+      },
       {
         "title": "Joshua Project - Limba West in Sierra Leone",
         "url": "https://joshuaproject.net/people_groups/print/16038/SL",

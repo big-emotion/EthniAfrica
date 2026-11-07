@@ -19,9 +19,9 @@
         "Kuranke",
         "Karanko"
       ],
-      "originOfExonyms": "Variantes orthographiques et phonetiques du nom Kuranko selon les langues de contact (anglais, francais, mandinka). Le terme designe egalement les locuteurs de la langue kuranko.",
-      "whyProblematic": null,
-      "contemporaryUsage": "Le terme Kuranko est utilise couramment en Sierra Leone et en Guinee. Koranko est la forme la plus repandue dans la litterature anglophone.",
+      "originOfExonyms": "Koranko, Kouranko, Kooranko et les autres formes sont des graphies du même nom, notées selon l'orthographe de chaque langue d'écriture (anglais, français). Le recensement sierra-léonais de 2015 écrit Koranko ; l'administrateur colonial André Arcin écrit Kouranko en 1907. Les sources lues ne disent pas si l'une de ces formes vient d'une langue voisine.",
+      "whyProblematic": "Nous n'avons trouvé aucune source qui juge le nom Kuranko ou l'une de ses graphies péjoratif : ce point n'est pas établi. Les sources lues ne disent pas non plus d'où vient le nom.",
+      "contemporaryUsage": "Le recensement sierra-léonais de 2015 emploie la graphie Koranko, et la littérature anglophone aussi. Kuranko est la forme que retient cette fiche, comme le glossaire Sierra Leone Heritage.",
       "linguisticFamily": "FLG_ATLANTIQUE",
       "ethnoLinguisticGroup": "Mande (branche mandingue), classe ici sous la famille atlantique",
       "historicalRegion": "Hauts plateaux du nord-est de la Sierra Leone (district de Koinadugu, chefferie de Sengbe) et sud de la Guinee",
@@ -38,21 +38,19 @@
       "Groupe de Kholifa (chefferie encore existante)"
     ],
     "origins": {
-      "ancientOrigins": "Les Kuranko sont originaires du Mande (actuel Mali), ou ils constituaient une branche de l'empire mandingue. Ils sont une branche des Malinke (Mandeka) ayant migre vers l'ouest et le sud apres des luttes de succession au sein de l'empire.",
-      "formationPeriod": "Migration principale vers le 17e siecle. Le guerrier Mansa Kama (vers 1650-1720) est considere comme le fondateur du pays kuranko en Sierra Leone, ayant etabli la ville de Kamadugu dans l'actuel Sengbe Chiefdom.",
+      "ancientOrigins": "Selon le glossaire Sierra Leone Heritage, les Kuranko appartiennent au grand ensemble mandé, dont ils se seraient dispersés en vagues successives. Nous n'avons pas lu de source qui nomme le lieu précis de départ ni les raisons du départ ; la formule selon laquelle ils seraient partis après des querelles de succession dans l'empire du Mali n'est donc pas retenue.",
+      "formationPeriod": "Les sources ne s'accordent pas sur la date. Le glossaire Sierra Leone Heritage place l'arrivée des Kuranko en Sierra Leone au XVIe siècle, dans la dispersion générale des peuples mandé. Un récit rapporté ailleurs, que nous n'avons pas pu vérifier dans un ouvrage lu, fait de Mansa Kama (vers 1650-1720) le fondateur de Kamadugu, dans la chefferie de Sengbe. Ces deux versions ne sont pas conciliées ici.",
       "migrationRoutes": [
-        "Du Mande (Mali) vers les savanes de l'Afrique de l'Ouest",
-        "Descente vers le nord-est de la Sierra Leone via la Guinee",
-        "Extension vers l'ouest sous Mansa Kama jusqu'a Koya (Freetown)"
+        "Les traditions des Kuranko disent qu'ils ont repoussé les Kisi vers le sud-est et les Limba vers l'ouest (Sierra Leone Heritage). Nous n'avons pas trouvé de source lue qui trace un itinéraire plus précis."
       ],
       "historicalSettlementZones": [
         "Hauts plateaux du nord-est de la Sierra Leone (district de Koinadugu)",
         "Chefferies de Sengbe, Kholifa, et Rowala en Sierra Leone",
         "Sud de la Guinee (region forestiere)"
       ],
-      "unificationsOrDivisions": "Mansa Kama unifia les groupes kuranko autour de Rowala, qui devint le centre du pays kuranko. Il etendit son autorite sur la Sierra Leone jusqu'a Foredugu et le port de Koya.",
-      "externalInfluences": "Contacts avec l'islam via des alfa (clercs islamiques) des la fin du 17e siecle. Influences mandingues et susu marquees. Melanges tribaux importants avec les populations voisines.",
-      "majorHistoricalEvents": "Fondation de Kamadugu par Mansa Kama (fin 17e siecle). Participation au commerce trans-regional entre le Mali et la cote ouest-africaine. Pression coloniale britannique au 19e siecle en Sierra Leone."
+      "unificationsOrDivisions": "Les traditions temne font remonter la fondation des chefferies de Kunike et de Kolifa à l'arrivée de chasseurs kuranko (Sierra Leone Heritage). L'unification du pays kuranko autour de Rowala par Mansa Kama est un récit que nous n'avons pas pu vérifier.",
+      "externalInfluences": "Nous n'avons pas lu de source qui date les premiers contacts des Kuranko avec l'islam ; le point reste à établir.",
+      "majorHistoricalEvents": "Nous n'avons pas pu vérifier les événements attribués à Mansa Kama (fondation de Kamadugu, sécurisation de la route commerciale vers Freetown). Le glossaire Sierra Leone Heritage mentionne l'expansion kuranko aux dépens des Kisi et des Limba."
     },
     "organization": {
       "traditionalPoliticalSystem": "Chaque village kuranko est dirige par un chef (chef de village) et un conseil d'anciens. Les chefferies principales (chiefdoms) sont dirigees par des chefs supremes (paramount chiefs). L'organisation est hierarchisee autour de lignages patrilineaires.",
@@ -83,21 +81,42 @@
       "diaspora": "Presence kuranko principalement en Sierra Leone (district de Koinadugu) et en Guinee du sud. Migration interne vers Freetown et d'autres villes de Sierra Leone depuis le 20e siecle. Faible diaspora internationale."
     },
     "demography": {
-      "totalPopulation": 597000,
-      "referenceYear": 2025,
-      "source": "Joshua Project (2025) : 473 000 en Sierra Leone, 124 000 en Guinee. Total estime : 597 000. Ethnologue (27e ed., 2024) : population entre 10 000 et 1 million de locuteurs.",
+      "totalPopulation": 437384,
+      "referenceYear": 2015,
+      "source": "Sierra Leone : recensement de 2015, 313 384 personnes se déclarant Koranko, soit 4,5 % de la population des groupes ethniques locaux (Statistics Sierra Leone, tableau 3.20). Guinée : 124 000 selon Joshua Project (2025), chiffre non officiel d'une base missionnaire. Le total additionne deux chiffres d'années et de natures différentes ; il est donné à titre indicatif. Nous n'avons pas trouvé de recensement guinéen distinguant les Kuranko.",
       "distributionByCountry": [
         {
           "country": "SLE",
-          "population": 473000
+          "population": 313384,
+          "note": "Recensement de 2015. Dans le district de Koinadugu, 49,3 % de la population déclare le koranko comme langue principale."
         },
         {
           "country": "GIN",
-          "population": 124000
+          "population": 124000,
+          "note": "Estimation Joshua Project (2025), non officielle."
         }
       ]
     },
     "sources": [
+      {
+        "title": "Sierra Leone 2015 Population and Housing Census, National Analytical Report",
+        "author": "Statistics Sierra Leone",
+        "year": 2015,
+        "url": "https://sierraleone.unfpa.org/sites/default/files/pub-pdf/National%20Analytical%20Report.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "tableau 3.20 (section 3.9) ; langue principale par district",
+        "notes": "Rapport lu le 8 novembre 2026. Tableau 3.20 : « Koranko 313,384 », 4,5 % du total de 7 016 957 ; Koinadugu : « 49.3 per cent speaking Koranko as the main language »."
+      },
+      {
+        "title": "Kuranko — glossaire",
+        "author": "Sierra Leone Heritage",
+        "year": null,
+        "url": "https://sierraleoneheritage.org/glossary/kuranko",
+        "tier": "referenced",
+        "source_kind": "encyclopedia",
+        "notes": "Lu le 8 novembre 2026. Passage à l'appui : « Their arrival in Sierra Leone in the 16th century is thought to have been part of the general dispersal of Mande peoples. » La notice renvoie à Michael Jackson, The Kuranko (Londres, 1977), non lu."
+      },
       {
         "title": "Joshua Project - Kuranko in Sierra Leone (2025)",
         "url": "https://joshuaproject.net/people_groups/12872/SL",
