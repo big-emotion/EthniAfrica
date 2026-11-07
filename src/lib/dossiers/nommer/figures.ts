@@ -463,7 +463,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
       "dépouillement à la main du champ nameOriginActor des 54 fiches pays",
     readOn: COUNTED_ON,
     caveat:
-      "Ces chiffres viennent d'une lecture des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
+      "Ces chiffres viennent d'un dépouillement des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
   },
   "countries-ancient-exonym": {
     kind: "read",
@@ -474,7 +474,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
       "dépouillement à la main du champ nameOriginActor des 54 fiches pays",
     readOn: COUNTED_ON,
     caveat:
-      "Ces chiffres viennent d'une lecture des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
+      "Ces chiffres viennent d'un dépouillement des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
   },
   "countries-local-kept": {
     kind: "read",
@@ -485,7 +485,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
       "dépouillement à la main du champ nameOriginActor des 54 fiches pays",
     readOn: COUNTED_ON,
     caveat:
-      "Ces chiffres viennent d'une lecture des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
+      "Ces chiffres viennent d'un dépouillement des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
   },
   "countries-african-choice": {
     kind: "read",
@@ -496,7 +496,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
       "dépouillement à la main du champ nameOriginActor des 54 fiches pays",
     readOn: COUNTED_ON,
     caveat:
-      "Ces chiffres viennent d'une lecture des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
+      "Ces chiffres viennent d'un dépouillement des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
   },
 
   "patronyme-fiches": {
