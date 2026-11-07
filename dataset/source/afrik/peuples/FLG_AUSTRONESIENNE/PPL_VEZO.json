@@ -126,6 +126,22 @@
         "url": "https://ich.unesco.org/en/state/madagascar-MG",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Glottolog – West Malagasy Sakalava (saka1291)",
+        "url": "https://glottolog.org/resource/languoid/id/saka1291",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Page lue le 8 novembre 2026 : code ISO 639-3 skg, parlé à Madagascar, nommé aussi Sakalava Malagasy. La page ne mentionne pas le nom Vezo."
+      },
+      {
+        "title": "Rita Astuti : People of the Sea. Identity and Descent among the Vezo of Madagascar (compte rendu)",
+        "author": "Quentin Gausset",
+        "year": 1999,
+        "url": "https://doi.org/10.7146/ta.v0i40.115137",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice du compte rendu dans Tidsskriftet Antropologi n° 40 (1999), lue le 8 novembre 2026. Seules les données de la notice ont été lues, pas le texte du compte rendu."
       }
     ]
   },

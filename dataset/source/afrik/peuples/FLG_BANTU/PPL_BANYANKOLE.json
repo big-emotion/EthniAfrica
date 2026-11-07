@@ -125,6 +125,13 @@
         "url": "https://www.ethnologue.com/language/nyn/",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Glottolog – Nyankole (nyan1307)",
+        "url": "https://glottolog.org/resource/languoid/id/nyan1307",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Page lue le 8 novembre 2026 : code ISO 639-3 nyn, parlé en Ouganda, au Rwanda et en Tanzanie ; noms alternatifs Nkore, Nkole, Runyankore, Runyankole."
       }
     ]
   },
