@@ -383,7 +383,7 @@
               "to": 1768,
               "label": "1768"
             },
-            "statement": "Le nom Amboalambo s'écrit « Balambous » dans un texte de 1768 sur les esclaves malgaches des îles de France et de Bourbon, qui les dit aux cheveux longs, selon la lecture d'Alfred et Guillaume Grandidier.",
+            "statement": "Le nom Amboalambo s'écrit « Balambous » dans un texte de 1768 sur les esclaves malgaches des îles de France et de Bourbon, qui les dit aux cheveux longs, selon l'identification proposée par Alfred et Guillaume Grandidier.",
             "formAsWritten": "Balambous",
             "sources": [
               {
@@ -517,6 +517,13 @@
         "url": "https://data.worldbank.org/country/madagascar",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Glottolog 5.3 — Plateau Malagasy",
+        "url": "https://glottolog.org/resource/languoid/id/plat1254",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Base de référence linguistique, version 5.3, lue le 8 novembre 2026. Code ISO 639-3 plt ; langue nationale statutaire (Constitution provisoire de 2010, art. 6) ; vitalité 1 (nationale) selon Ethnologue 2025."
       }
     ]
   }

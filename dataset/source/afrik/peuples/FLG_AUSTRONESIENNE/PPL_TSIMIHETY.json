@@ -114,6 +114,20 @@
         "url": null,
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Glottolog 5.3 — Tsimihety Malagasy",
+        "url": "https://glottolog.org/resource/languoid/id/tsim1257",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Base de référence linguistique, version 5.3, lue le 8 novembre 2026. Code ISO 639-3 xmw ; vitalité 6a (vigoureuse) selon Ethnologue 2025."
+      },
+      {
+        "title": "Rakibolana malagasy, article tsimihety",
+        "url": "https://malagasyword.org/bins/teny2/tsimihety",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Dictionnaire monolingue malgache de Régis Rajemisa-Raolison (Ambozontany, 1985), lu dans le Malagasy Dictionary and Encyclopedia en ligne le 8 novembre 2026. Passage : voisins des Antankarana au nord, des Betsimisaraka à l'est, des Sihanaka au sud et des Sakalava à l'ouest ; villes principales Mandritsara et Bealanana. Le dictionnaire français donne Mandritsara, Antsohihy et Antalaha."
       }
     ]
   },

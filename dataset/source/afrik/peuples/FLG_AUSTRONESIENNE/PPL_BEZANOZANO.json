@@ -116,6 +116,20 @@
         "url": null,
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Glottolog 5.3 — Bezanozano",
+        "url": "https://glottolog.org/resource/languoid/id/beza1235",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Base de référence linguistique, version 5.3, lue le 8 novembre 2026. La base classe le bezanozano comme dialecte du malgache, sans code ISO 639-3 propre."
+      },
+      {
+        "title": "History of Madagascar, vol. I (chapitre sur les peuples de l'île, p. 118-121)",
+        "url": "https://archive.org/details/historyofmadagas01elli",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "William Ellis, Londres, Fisher, Son & Co., 1838 ; texte missionnaire du XIXe siècle, lu dans la numérisation d'Internet Archive le 8 novembre 2026. Les découpages et les parentés qu'il avance sont ceux d'un observateur extérieur. Passage : « By some the Bezanozano, a small tribe, chiefly inhabiting Ankay, situated on the south-east of Ankova, are considered as a branch of the Sakalavas » (p. 119) ; Ellis suppose qu'ils ont été séparés des autres Sakalava par la conquête ou la guerre (p. 120). Cette parenté est une hypothèse de l'auteur."
       }
     ]
   },
