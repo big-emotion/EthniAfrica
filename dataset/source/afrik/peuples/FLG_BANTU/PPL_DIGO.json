@@ -51,6 +51,11 @@
       "dialects": [],
       "vehicularRole": "Le Chidigo (code ISO 639-3 : dig) est une langue Bantu de la famille Mijikenda (sous-groupe Sud-Mijikenda), proche du Segeju. Des clics vocaux ont ete documentes dans certains ideophonemes Digo, phenomene rare parmi les langues Bantu, possiblement lie au contact historique avec des langues cushitiques. Une traduction complete de la Bible en Chidigo est disponible. Le swahili est utilise comme lingua franca au Kenya et en Tanzanie."
     },
+    "externalIdentifiers": {
+      "wikidataId": "Q692836",
+      "glottocode": "digo1243",
+      "iso639_3": "dig"
+    },
     "culture": {
       "majorRites": "Les sacrifices de sang sont fondamentaux, notamment pour l'exorcisme des mauvais esprits. Le mariage (avec paiement de la dot en betail, chevres et vin de palme) integre le jeune epoux dans la famille de la femme. Les mariages islamiques confèrent le prestige le plus eleve aux femmes. La circoncision masculine est pratiquee. Les rites funeraires combinent pratiques islamiques et traditions animistes ancestrales.",
       "symbols": "Le kaya (village fortifie ancestral, foret sacree) est le symbole identitaire Mijikenda par excellence. Le palmier a vin (mnazi) est central dans la vie quotidienne et symbolique Digo. Les maisons en makuti (feuilles de cocotier) a toit de palme sont l'architecture traditionnelle. Les formes des maisons signalent le statut social : maisons rondes pour les anciens, rectangulaires pour les autres.",
@@ -116,8 +121,21 @@
         "url": "https://www.jstor.org/stable/42005282",
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Digo (digo1243) – Glottolog",
+        "author": "Hammarström, Forkel, Haspelmath, Bank (Glottolog)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/digo1243",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue lue le 8 novembre 2026 : code ISO 639-3 dig, pays Kenya et Tanzanie, classement d'après Nurse et Philippson 1980."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Le nom Digo désigne un peuple de la côte de l'océan Indien, entre Mombasa et Tanga, et sa langue. Il fait partie des Mijikenda.",
+      "followUp": "D'où vient le nom Digo, selon les sources que nous avons lues ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Digo désigne un peuple de la côte de l'océan Indien, entre Mombasa, au Kenya, et Tanga, en Tanzanie, qui se nomme lui-même Digo, Wadigo en swahili. Il fait partie des peuples appelés aujourd'hui Mijikenda, autrefois Nyika. On ne sait pas avec certitude d'où vient le nom Digo ; nous présentons plus bas ce que disent les sources.",

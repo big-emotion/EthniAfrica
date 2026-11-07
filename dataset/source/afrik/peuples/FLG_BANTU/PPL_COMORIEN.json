@@ -9,7 +9,7 @@
       "mainName": "Comoriens",
       "selfAppellation": "Comoriens",
       "exonyms": ["Comorians (anglais)", "Comoriens (français)"],
-      "originOfExonyms": "Le nom du pays, Comores, reprend l'arabe komr, un mot générique qui désignait de grandes terres situées sous les Nuages de Magellan ; la lecture « îles de la Lune » est plus tardive. Le gentilé Comorien viendrait de ce nom.",
+      "originOfExonyms": "Le nom du pays, Comores, reprend l'arabe komr, un mot générique qui désignait de grandes terres situées sous les Nuages de Magellan ; l'explication « îles de la Lune » est plus tardive. Le gentilé Comorien viendrait de ce nom.",
       "whyProblematic": "Les noms donnés de l'extérieur ne rendent pas compte de la diversité des Comoriens, notamment des Ngazidja, des Ndzuani, des Mwali et des Maorais. Chaque île possède sa langue, ses traditions et une forte identité locale.",
       "contemporaryUsage": "Comorien est largement accepté pour désigner l'ensemble des habitants de l'archipel. Les identités insulaires restent fortes: Ngazidja pour Grande Comore, Wandzuani pour Anjouan, Wamwali pour Mohéli, Maorais pour Mayotte.",
       "linguisticFamily": "FLG_BANTU",
@@ -117,7 +117,11 @@
         "tier": "needs_review",
         "source_kind": "ngo"
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Le nom Comoriens désigne les habitants de l'archipel des Comores, qui se nomment ainsi eux-mêmes dans leur Constitution.",
+      "followUp": "Quel est le nom de chaque île en shikomor ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Comoriens désigne les habitants de l'archipel des Comores, qui se nomment ainsi eux-mêmes dans leur Constitution. Chaque île a aussi son nom en shikomor : Ngazidja, Ndzuwani, Mwali et Maoré. Il est formé sur le nom de l'archipel, dont l'origine est discutée.",

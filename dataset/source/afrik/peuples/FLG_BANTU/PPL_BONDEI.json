@@ -46,6 +46,11 @@
       "dialects": [],
       "vehicularRole": "Le Kibondei (code ISO 639-3 : bou) est une langue bantoue du sous-groupe Seuta, proche du Kishambala, du Kizigula et du Kingulu. Les locuteurs sont progressivement en transition vers le swahili, qui est utilise comme langue vehiculaire a l'echelle nationale. La langue Bondei a egalement influence ses voisines (Doe, Kwere) et en a ete influencee."
     },
+    "externalIdentifiers": {
+      "wikidataId": "Q1613483",
+      "glottocode": "bond1247",
+      "iso639_3": "bou"
+    },
     "culture": {
       "majorRites": "La ceremonie funeraire (maziko) est l'evenement culturel central. Elle mobilise l'ensemble de la communaute pendant plusieurs jours. Quarante jours apres l'inhumation, la ceremonie de l'Arobaini rassemble a nouveau la communaute pour finaliser le deuil et permettre a l'ame du defunt de reposer en paix. L'Utani (relation a plaisanterie) est pratique intensement lors des enterrements : le Mtani (partenaire d'Utani) tient un role rituel specifique, conduisant les proches autour du feu.",
       "symbols": "L'identite Bondei est symboliquement liee aux plaines basses (bonde en swahili) entre les Usambara et l'ocean. Le concept de 'pur Bondei' etait historiquement associe aux habitants des valles.",
@@ -106,8 +111,21 @@
         "url": "https://peoplegroups.org/people_groups/pg014913/",
         "tier": "unverified",
         "source_kind": "missionary_database"
+      },
+      {
+        "title": "Bondei (bond1247) – Glottolog",
+        "author": "Hammarström, Forkel, Haspelmath, Bank (Glottolog)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/bond1247",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue lue le 8 novembre 2026 : code ISO 639-3 bou, pays Tanzanie, noms alternatifs Bonde, Bondei, Kibondei, statut « menacée » d'après Campbell et al. 2022."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Le nom Bondei désigne un peuple de la région de Tanga, en Tanzanie, et sa langue. Les sources ne disent pas comment ce peuple se nomme lui-même.",
+      "followUp": "D'où vient le nom Bondei, selon les sources que nous avons lues ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Bondei désigne un peuple des basses terres de la région de Tanga, en Tanzanie, entre les monts Usambara et la mer, et sa langue. On ne sait pas comment ce peuple se nomme lui-même. On ne sait pas non plus avec certitude d'où vient le nom Bondei ; nous présentons plus bas ses traces.",
