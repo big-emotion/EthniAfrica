@@ -104,8 +104,34 @@
         "url": "https://peoplegroups.org/people_groups/pg015618/",
         "tier": "unverified",
         "source_kind": "missionary_database"
+      },
+      {
+        "title": "ISO 639-3, Nkoya [nka]",
+        "author": "SIL International, autorité d'enregistrement ISO 639-3",
+        "year": null,
+        "url": "https://iso639-3.sil.org/code/nka",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du code, lue le 8 novembre 2026. Elle enregistre nka comme langue individuelle vivante."
+      },
+      {
+        "title": "Glottolog 5.3, Nkoya",
+        "author": "Hammarström, Forkel, Haspelmath et Bank (dir.)",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/nkoy1244",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche lue le 8 novembre 2026. Elle donne le code ISO 639-3 nka."
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "nkoy1244",
+      "iso639_3": "nka"
+    },
+    "searchAnswer": {
+      "lead": "Les Nkoya vivent dans l'ouest de la Zambie, surtout autour de Kaoma. Leur langue est le shinkoya.",
+      "followUp": "Que célèbre la cérémonie Kazanga chez les Nkoya ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Nkoya désigne un peuple de la province de l'Ouest de la Zambie, dans le district de Kaoma, anciennement Mankoya, et la langue qu'il parle. Ce peuple se nomme lui-même Nkoya. D'autres noms existent : Mashasha, celui d'un peuple dont le chef Mwene Kahare garde un titre royal. Les sources ne s'accordent pas toujours sur l'origine du nom Nkoya ; nous les présentons plus bas.",

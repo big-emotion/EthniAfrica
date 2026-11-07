@@ -147,8 +147,25 @@
         "url": "https://glottolog.org/resource/languoid/id/nyak1260",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "ISO 639-3, Nyakyusa-Ngonde [nyy]",
+        "author": "SIL International, autorité d'enregistrement ISO 639-3",
+        "year": null,
+        "url": "https://iso639-3.sil.org/code/nyy",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du code, lue le 8 novembre 2026. Elle enregistre nyy comme langue individuelle vivante."
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "nyak1260",
+      "iso639_3": "nyy"
+    },
+    "searchAnswer": {
+      "lead": "Les Nyakyusa, aussi appelés Ngonde, vivent au sud de la Tanzanie et au nord du Malawi. Leur langue porte les deux noms.",
+      "followUp": "Pourquoi ce peuple porte-t-il deux noms, Nyakyusa et Ngonde ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Nyakyusa désigne un peuple du sud-ouest de la Tanzanie, au nord du lac Nyasa, qui se nomme lui-même Nyakyusa ; en swahili, on dit Wanyakyusa. D'autres noms existent : Konde, employé par les premiers Européens, et Ngonde, le nom de leurs proches parents du Malawi. Les sources consultées ne donnent qu'une explication de l'origine du nom Nyakyusa ; nous la présentons plus bas, avec l'histoire des autres noms.",

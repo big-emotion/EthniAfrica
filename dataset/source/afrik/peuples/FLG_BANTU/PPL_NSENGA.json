@@ -118,8 +118,25 @@
         "url": "https://glottolog.org/resource/languoid/id/nsen1242",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "ISO 639-3, Nsenga [nse]",
+        "author": "SIL International, autorité d'enregistrement ISO 639-3",
+        "year": null,
+        "url": "https://iso639-3.sil.org/code/nse",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du code, lue le 8 novembre 2026. Elle enregistre nse comme langue individuelle vivante."
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "nsen1242",
+      "iso639_3": "nse"
+    },
+    "searchAnswer": {
+      "lead": "Les Nsenga vivent surtout dans l'est de la Zambie, avec des groupes au Mozambique et au Zimbabwe. Leur langue est le cinsenga.",
+      "followUp": "Comment les Nsenga se nomment-ils eux-mêmes ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Nsenga désigne un peuple de la vallée du Luangwa, dans l'est de la Zambie, et des régions voisines du Mozambique et du Zimbabwe, qui se nomme lui-même Nsenga. Les sources lues n'expliquent pas l'origine de ce nom ; nous présentons plus bas ce qu'elles en disent.",

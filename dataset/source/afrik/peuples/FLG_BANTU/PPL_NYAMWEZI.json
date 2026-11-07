@@ -313,7 +313,33 @@
         "url": "https://kwekudee-tripdownmemorylane.blogspot.com/2014/05/nyamwezi-people-africas-bantu-people-of.html",
         "tier": "unverified",
         "source_kind": "community"
+      },
+      {
+        "title": "ISO 639-3, Nyamwezi [nym]",
+        "author": "SIL International, autorité d'enregistrement ISO 639-3",
+        "year": null,
+        "url": "https://iso639-3.sil.org/code/nym",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du code, lue le 8 novembre 2026. Elle enregistre nym comme langue individuelle vivante."
+      },
+      {
+        "title": "Glottolog 5.3, Nyamwezi",
+        "author": "Hammarström, Forkel, Haspelmath et Bank (dir.)",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/nyam1276",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche lue le 8 novembre 2026. Elle donne le code ISO 639-3 nym."
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "nyam1276",
+      "iso639_3": "nym"
+    },
+    "searchAnswer": {
+      "lead": "Les Nyamwezi vivent dans le centre-ouest de la Tanzanie, autour de Tabora. Leur langue, le kinyamwezi, est proche du sukuma.",
+      "followUp": "Que veut dire le nom Nyamwezi, et qui l'a employé en premier ?"
+    }
   }
 }
