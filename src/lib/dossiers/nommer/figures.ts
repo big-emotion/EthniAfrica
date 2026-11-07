@@ -194,7 +194,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // (224) had not followed the folds since it was written; colonial-legacy
     // happened to be right again.
     method:
-      "fiches dont classificationStatus vaut contested (212) ou colonial-legacy (156)",
+      "fiches dont classificationStatus vaut contested (212) ou colonial-legacy (157)",
     countedOn: COUNTED_ON,
   },
   "status-other": {
