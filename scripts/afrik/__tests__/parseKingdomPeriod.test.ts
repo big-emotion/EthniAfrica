@@ -201,12 +201,14 @@ describe("parseKingdomPeriod", () => {
    * The corpus is the specification. This asserts the count the backfill will
    * report, so a parser change that quietly stops reading a whole family of
    * labels shows up as a number rather than as silence.
+   * 298 -> 295 on 2026-11-07: the premium pass on six country fiches removed
+   * unsourced kingdom entries and added sourced ones, three fewer in all.
    */
   // @req REQ-148
   it("derives bounds for the datable share of the real corpus", () => {
     const labels = corpusPeriodLabels();
     const parsed = labels.filter((l) => parseKingdomPeriod(l) !== null);
-    expect(labels).toHaveLength(298);
+    expect(labels).toHaveLength(295);
     expect(parsed.length).toBeGreaterThanOrEqual(180);
   });
 });

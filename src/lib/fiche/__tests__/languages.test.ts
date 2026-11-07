@@ -97,14 +97,14 @@ describe("countryLanguageTiles", () => {
     // line; the preview draws the official language across the row.
     expect(tiles.map((tile) => tile.wide)).toEqual([true, true]);
     expect(tiles[1].pills?.map((pill) => pill.label)).toEqual([
-      "Ovambo",
-      "Kavango",
-      "Herero",
-      "Damara",
-      "Nama",
-      "Langues khoïsan",
+      "Oshikwanyama",
+      "Oshindonga",
+      "Khoekhoegowab",
       "Afrikaans",
+      "Otjiherero",
+      "Rukwangali",
       "Allemand",
+      "Langues san",
     ]);
     expect(tiles.map(tileText).join("\n")).not.toMatch(
       /\p{Extended_Pictographic}/u
