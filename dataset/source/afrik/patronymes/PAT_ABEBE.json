@@ -42,7 +42,13 @@
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
-  "bearers": [],
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Abebe Bikila (1932-1973)",
+      "sourceRefs": ["olympedia-abebe-bikila"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
@@ -60,6 +66,14 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Entrée communautaire consultée le 2 septembre 2026 : elle traite Abebe comme un nom personnel amharique, donne la graphie አበበ et propose une dérivation par አበባ. Elle ne documente ni un lignage ni une appartenance ethnique. La version anglaise de Wikipédia n'a été contrôlée que comme piste et n'est pas citée."
+    },
+    {
+      "sourceKey": "olympedia-abebe-bikila",
+      "title": "Abebe Bikila — Olympedia (base de données olympique, Olympedia.org)",
+      "url": "https://www.olympedia.org/athletes/67392",
+      "tier": "referenced",
+      "source_kind": "encyclopedia",
+      "notes": "Fiche Olympedia lue le 8 novembre 2026. Nom complet « Abebe Bikila » ; né le 7 août 1932 à Jato (Amhara) ; mort le 25 octobre 1973 à Addis-Abeba, à 41 ans ; sélectionné pour l'Éthiopie ; deux victoires au marathon olympique, en 1960 et 1964. La page ne mentionne pas le nom de son père."
     }
   ],
   "gaps": [
@@ -85,7 +99,7 @@
     },
     {
       "fieldPath": "bearers",
-      "reason": "Les recherches biographiques sur « Abebe » dans les résultats de catalogues et répertoires consultés n'ont pas permis d'identifier un porteur décédé dont ce segment soit explicitement documenté dans la position patronymique pertinente. Les personnes vivantes repérées ont été exclues."
+      "reason": "Un porteur décédé est établi : le marathonien Abebe Bikila (1932-1973), dont Abebe est le nom personnel, en première position de la chaîne (Olympedia). Nous n'en avons pas trouvé d'autre dont l'état civil soit assez documenté ; les personnes vivantes repérées ont été exclues."
     },
     {
       "fieldPath": "homonyms",
