@@ -16,8 +16,8 @@
         "Ishindi-Lunda",
         "Lunda-Chokwe (catégorie ethno-politique angolaise regroupant Lunda et Chokwe)"
       ],
-      "originOfExonyms": "Les differentes denominations refletent les ramifications geographiques de l'empire Lunda. Ndembu designe la branche installee au nord-ouest de la Zambie. Kazembe-Lunda (ou Lunda orientaux) s'est etablie dans la vallee de la Luapula (Zambie orientale). Le terme Ruund designe la langue du groupe central (nord-ouest du Katanga, RDC). Une lecture historique voit dans Lunda moins un fait ethnique precis qu'un reseau politico-culturel : au sens restreint, les groupements rund ; au sens large, aussi des groupes lozi, ndembo (Ndembu), luena et imbangala.",
-      "whyProblematic": null,
+      "originOfExonyms": "Les differentes denominations refletent les ramifications geographiques de l'empire Lunda. Ndembu designe la branche installee au nord-ouest de la Zambie. Kazembe-Lunda (ou Lunda orientaux) s'est etablie dans la vallee de la Luapula (Zambie orientale). Le terme Ruund designe la langue du groupe central (nord-ouest du Katanga, RDC). Selon une analyse historique, Lunda désigne moins un fait ethnique precis qu'un reseau politico-culturel : au sens restreint, les groupements rund ; au sens large, aussi des groupes lozi, ndembo (Ndembu), luena et imbangala.",
+      "whyProblematic": "Nous n'avons pas trouvé de source qui dise que le nom Lunda ou Balunda est jugé offensant. Recherches faites : les sources déjà citées dans cette fiche, dont le chapitre 20 de l'Histoire générale de l'Afrique, volume V. Ce point reste à étudier.",
       "contemporaryUsage": "Balunda est l'appellation usuelle en RDC. Lunda est le terme courant en Zambie et en Angola. Les distinctions Kanongesha, Ishindi et Kazembe sont utilisees en Zambie pour differencier les chefferies.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantou zone L (Lunda-Nkoya, sous-groupe de la zone Luba-Lunda)",
@@ -64,7 +64,7 @@
     "organization": {
       "traditionalPoliticalSystem": "L'empire Lunda etait dirige par le Mwata Yamvo (Mwaant Yav), souverain supreme dont la cour est dite organisee sur le modele luba, les deux systemes s'etant mutuellement influences. Le Mwata Yamvo avait entre vingt et trente epouses. Les chefs conquis etaient integres comme governors regionaux relies par des obligations tributaires. Le systeme se diffusa par essaimage : des membres de la famille royale ou des allies furent installes comme chefs dans les territoires etendus (Kanongesha, Kazembe, etc.), creant un reseau de chefferies rattachees au centre.",
       "clanOrganization": "Organisation en clans et lignages : les peuples integres conservaient une structure clanique propre tout en relevant de l'autorite du Mwata Yamvo. Parmi les sous-groupes les plus documentes, les Ndembu (Zambie) presentent une organisation matrilineaire bien etudiee par l'anthropologue Victor Turner.",
-      "ageClassSystems": null,
+      "ageClassSystems": "Chez les Ndembu, branche des Lunda installée au nord-ouest de la Zambie, les garçons de 5 à 15 ans sont encore circoncis en groupe dans un enclos sacré, à l'écart du village (rite mukanda), selon Edith Turner. Cette source décrit un rite collectif, non un système de classes d'âge ; nous n'en avons pas trouvé pour les autres branches lunda.",
       "roleOfLineages": "Les lignages jouent un role central dans la transmission de l'autorite des chefferies locales. Chez les Ndembu (Zambie), la filiation matrilineaire determine l'appartenance clanique et les droits sur la terre.",
       "religiousAuthority": "Les Lunda croyaient en Nzambi (ou Nzamb Katang) comme createur supreme. La religion lunda s'adressait a Nzambi par l'intermediaire des esprits ancestraux. Les chefs et le Mwata Yamvo jouaient un role rituel et sacre. Aujourd'hui, le christianisme (catholique en RDC et Angola, protestant en Zambie) est dominant, avec maintien de pratiques traditionnelles."
     },
@@ -177,6 +177,15 @@
         "url": "https://www.cia.gov/the-world-factbook/countries/angola/",
         "tier": "official",
         "source_kind": "government"
+      },
+      {
+        "title": "Ndembu Religion, dans Encyclopedia of Religion",
+        "author": "Edith Turner",
+        "year": 1987,
+        "url": "https://encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/ndembu-religion",
+        "tier": "referenced",
+        "source_kind": "encyclopedia",
+        "notes": "« Boys from five to fifteen years of age are still circumcised in groups in a sacred enclosure away from the village. »"
       }
     ]
   },
@@ -316,7 +325,7 @@
               "label": "Rapportée en 1873"
             },
             "era": "polity",
-            "statement": "Le nom Lunda voudrait dire « montagnards » ou « gens de la brousse », selon William Desborough Cooley, qui l'explique par les langues du Kongo. Richard Burton, qui rapporte cette lecture, la juge très erronée.",
+            "statement": "Le nom Lunda voudrait dire « montagnards » ou « gens de la brousse », selon William Desborough Cooley, qui l'explique par les langues du Kongo. Richard Burton, qui rapporte cette explication, la juge très erronée.",
             "hypothesisGroup": "origine du nom Lunda",
             "sources": [
               {
