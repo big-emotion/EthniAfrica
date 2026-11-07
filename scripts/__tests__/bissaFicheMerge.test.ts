@@ -95,10 +95,10 @@ describe("Bissa fiches merged into PPL_BISSA", () => {
     expect(source).toContain("INSD");
   });
 
-  // @req REQ-178
   // Discover Burkina Faso (needs_review) left with the claims it carried in
   // the premium pass of 2026-11-03; the tiers of the citations kept are
   // unchanged.
+  // @req REQ-178
   it("keeps the retired fiches' citations it still rests on, at the tier they gave them", () => {
     const sources = readBissa().content.sources as Array<{
       title: string;
