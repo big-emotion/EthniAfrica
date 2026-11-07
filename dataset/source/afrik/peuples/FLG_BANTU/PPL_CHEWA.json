@@ -65,6 +65,11 @@
       ],
       "vehicularRole": "Le Chichewa est la langue nationale du Malawi et l'une des langues officielles. Le Chinyanja est l'une des huit langues officielles de Zambie et sert de vehiculaire dans la Province orientale. La langue figure parmi les 55 langues embarquées sur la sonde spatiale Voyager."
     },
+    "externalIdentifiers": {
+      "wikidataId": "Q1071390",
+      "glottocode": "nyan1308",
+      "iso639_3": "nya"
+    },
     "culture": {
       "majorRites": "Nyau: société secrète structurant la cosmologie et la religion Chewa. Initiations séparées pour hommes et femmes avec rôles rituels distincts selon le genre et le rang. Gule Wamkulu (Grand Danseur): performances masquées spectaculaires marquant les initiations, funérailles et intronisations de chefs. Rites de puberté féminins (chinamwali). Cérémonies de mariage matrilocal.",
       "symbols": "Masques Nyau (représentant ancêtres, animaux et esprits), tatouages rituels (mphini, marques distinctives des Chewa), le lac Malawi (Nyanja), le baobab et les espèces sacrées de la forêt.",
@@ -124,8 +129,21 @@
         "url": "https://www.dw.com/en/the-nyau-cult-unmasking-one-of-africas-secret-societies/a-38463791",
         "tier": "referenced",
         "source_kind": "press"
+      },
+      {
+        "title": "Nyanja (nyan1308) – Glottolog",
+        "author": "Hammarström, Forkel, Haspelmath, Bank (Glottolog)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/nyan1308",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue lue le 8 novembre 2026 : code ISO 639-3 nya, pays Malawi, Mozambique, Eswatini, Tanzanie, Zambie et Zimbabwe, classement d'après Bastin, Coupez et Mann 1999."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Le nom Chewa désigne un peuple du centre du Malawi et des régions voisines, dont la langue est le chichewa, rattaché à l'ensemble nyanja.",
+      "followUp": "Quel rapport y a-t-il entre les noms Chewa, Maravi et Nyanja ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Chewa désigne un peuple du centre du Malawi, de l'est de la Zambie et des régions voisines du Mozambique, qui se nomme lui-même Achewa. D'autres noms existent : Maravi, le nom d'un ancien royaume et de ses habitants dans les textes portugais, et Nyanja, un nom plus large qui veut dire « lac ». On ne sait pas avec certitude d'où vient le nom Chewa ; nous présentons plus bas ce que disent les sources.",

@@ -46,6 +46,11 @@
       "dialects": [],
       "vehicularRole": "Le Doe (code ISO 639-3 : doe, code Guthrie G.301) est une langue Bantu du sous-groupe central tanzanien, apparentee au Bondei, au Kwere et aux autres langues du groupe G.30. Ethnologue la classe comme langue stable et indigene de Tanzanie. Le swahili est utilise comme langue vehiculaire nationale et est largement parle dans la region de Pwani. La langue Bondei et le Doe se sont mutuellement influences selon les etudes linguistiques."
     },
+    "externalIdentifiers": {
+      "wikidataId": "Q3888299",
+      "glottocode": "doee1238",
+      "iso639_3": "doe"
+    },
     "culture": {
       "majorRites": "Comme les autres peuples Bantu de la cote tanzanienne, les Doe pratiquent des rites de passage (naissance, puberte, mariage, mort) combines avec des pratiques religieuses. Les ceremonies funeraires impliquent la communaute elargie et les membres des lignages. Les fetes islamiques (Aid el-Fitr, Aid el-Adha) sont celebrees dans les communautes islamisees.",
       "symbols": "Le cocotier et la terre cotiere sont des elements identitaires forts pour les populations de la region de Pwani. Les pirogues et les activites de peche sont centrales dans l'identite des Doe cotieres.",
@@ -98,8 +103,21 @@
         "url": "https://www.ethnologue.com/subgroup/54/",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Doe (doee1238) – Glottolog",
+        "author": "Hammarström, Forkel, Haspelmath, Bank (Glottolog)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/doee1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue lue le 8 novembre 2026 : code ISO 639-3 doe, pays Tanzanie, classement dans le groupe bantou du nord-est (Ruvu), références Gonzales 2002 et Campbell et al. 2022 pour le statut."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Le nom Doe désigne un peuple de la côte de Tanzanie et la langue qu'il parle. Les voyageurs du XIXe siècle écrivent Wadoe.",
+      "followUp": "Que racontent Krapf et Burton des Wadoe au milieu du XIXe siècle ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Doe désigne un peuple de la côte de Tanzanie et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Les voyageurs du XIXe siècle écrivent Wadoe. On ne sait pas avec certitude d'où vient le nom Doe ; ce que disent les sources est présenté plus bas.",

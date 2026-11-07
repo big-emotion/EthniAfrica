@@ -70,6 +70,9 @@
       ],
       "vehicularRole": "Le swahili est la langue nationale et vehiculaire en Tanzanie. Le kichagga est utilisé dans les contextes familiaux, rituels et communautaires sur les pentes du Kilimandjaro. Plusieurs variantes dialectales Chagga ont leur propre code ISO."
     },
+    "externalIdentifiers": {
+      "wikidataId": "Q920233"
+    },
     "culture": {
       "majorRites": "Ngasi: rite de passage des garçons vers l'âge adulte, cérémonie en forêt avec épreuves physiques. Circoncision collective par cohortes d'âge (rika). Mitambiko: sacrifices rituels aux ancêtres lors de Noël et des grandes fêtes. Nguvu: fête des prémices offrant les premiers fruits aux ancêtres. Mwaka Kogwa: célébration du Nouvel An traditionnel avec chants, danses et brûlis symbolique. Mariage: dot mahari, danse avec clochettes, période de réclusion de la fiancée.",
       "symbols": "Le Kilimandjaro (montagne sacrée, demeure de Ruwa), la plante masale (plante sacrée Chagga), les enclos à bétail (symbole de richesse), les canaux d'irrigation (kefala) héritage d'un génie agricole ancien.",
@@ -120,7 +123,11 @@
         "url": "https://socialscienceresearch.org/index.php/GJHSS/article/view/1401/1-Rewriting-Chagga-History-Focus_html",
         "tier": "needs_review"
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Le nom Chaga, aussi écrit Chagga, désigne un peuple bantou des pentes sud du Kilimandjaro, en Tanzanie, qui se nomme lui-même Wachagga.",
+      "followUp": "Comment les voyageurs du XIXe siècle ont-ils écrit le nom Chaga ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Chaga, aussi écrit Chagga, désigne un peuple bantou des pentes sud du Kilimandjaro, en Tanzanie, qui se nomme lui-même Wachagga. Des voyageurs du XIXe siècle l'ont écrit Jagga, Wajagga ou, en allemand, Dschagga. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",

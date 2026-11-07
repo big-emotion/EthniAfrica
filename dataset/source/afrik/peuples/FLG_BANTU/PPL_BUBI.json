@@ -65,6 +65,11 @@
       ],
       "vehicularRole": "Le Bubi (code ISO 639-3 : buw) est une langue Bantu unique a l'ile Bioko, sans equivalent sur le continent, reflet de son long developpement isole. Les linguistes le considerent comme l'un des premiers Bantu a se differencier. L'espagnol est la langue officielle de la Guinee equatoriale et est utilise comme langue vehiculaire. Le fang, langue de la majorite continentale, exerce une pression croissante sur la langue Bubi."
     },
+    "externalIdentifiers": {
+      "wikidataId": "Q41477",
+      "glottocode": "bube1242",
+      "iso639_3": "bvb"
+    },
     "culture": {
       "majorRites": "L'abira est la ceremonie collective la plus importante : elle vise a purifier la communaute du mal. La danse du balete est pratiquee tout au long de l'annee sur la cote et a Bioko autour de Noel. Les rites de puberte masculine (bain, parure, presentation au botuku pour reception d'un nom) sont fondamentaux. Le mariage existe sous deux formes : ribala r'eoto (mariage par achat de la virginite) et ribala re rijole (mariage par amour mutuel). La ceremonie funeraire implique des rites pour eloigner l'ame du corps, la communaute croyant que l'esprit pourrait sinon hanter la famille.",
       "symbols": "Les menhirs (pierres dressees) sacres disperses sur toute l'ile symbolisent l'energie spirituelle et la fertilite des lieux. Les arbres iko plantes aux entrees des villages protegent contre les esprits malefiques. Les cicatrices faciales (sillons sur le front et les joues) servaient autrefois a identifier les Bubi meme s'ils etaient enleves comme esclaves.",
@@ -127,8 +132,21 @@
         "title": "Spirits of the Forest, Guardians of the Island – Art of the Motherland",
         "url": "https://artofthemotherland.com/spirits-of-the-forest-guardians-of-the-island/",
         "tier": "unverified"
+      },
+      {
+        "title": "Bube (bube1242) – Glottolog",
+        "author": "Hammarström, Forkel, Haspelmath, Bank (Glottolog)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/bube1242",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue lue le 8 novembre 2026 : code ISO 639-3 bvb, pays Guinée équatoriale, statut « moribonde » d'après Moseley 2010."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Le nom Bubi désigne le peuple autochtone de l'île de Bioko, en Guinée équatoriale, et la langue qu'il parle, appelée aussi Bube.",
+      "followUp": "Que disent les sources de l'origine du nom Bubi ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Bubi désigne le peuple autochtone de l'île de Bioko, en Guinée équatoriale, qui emploie aujourd'hui ce nom. Des auteurs britanniques du XIXe siècle l'ont aussi appelé Edeeyah. Les sources ne s'accordent pas sur l'origine du nom Bubi ; nous les présentons plus bas.",

@@ -86,6 +86,11 @@
       ],
       "vehicularRole": "Le Chichopi (code ISO 639-3 : cce) est une langue Bantu tonale, proche du chiTonga. La Bible complete est disponible en Chopi. De nombreux locuteurs, surtout les jeunes, parlent egalement le portugais (langue officielle du Mozambique) et parfois le chiTonga. Environ 1,1 million de locuteurs natifs (recensement 2017)."
     },
+    "externalIdentifiers": {
+      "wikidataId": "Q2964471",
+      "glottocode": "chop1243",
+      "iso639_3": "cce"
+    },
     "culture": {
       "majorRites": "Les rites animes par les n'angas (guerisseurs-sorciers) sont centraux : sacrifices animaux, pratiques de guerison, ceremonies de propitiation des esprits. Le mariage et les funerailles donnent lieu a des performances de timbila. Les textes des Migodo (suites orchestrales) servent de commentaire social et de critique du pouvoir local lors des fetes communautaires.",
       "symbols": "Les Chopi s'identifient symboliquement a l'elephant. Le timbila (xylophone) est le symbole culturel majeur du peuple. Le mwenje (arbre a eternuer) dont le bois tres resonant sert a fabriquer les lames de timbila est un symbole identitaire fort, menace par la deforestation.",
@@ -175,8 +180,21 @@
         "url": "https://www.unesco.org/archives/multimedia/document-636",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Chopi (chop1243) – Glottolog",
+        "author": "Hammarström, Forkel, Haspelmath, Bank (Glottolog)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/chop1243",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue lue le 8 novembre 2026 : code ISO 639-3 cce, pays Mozambique, classement d'après Gunnink, Chousou-Polydouri et Bostoen 2023."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Le nom Chopi désigne un peuple de la côte sud du Mozambique, dans la province d'Inhambane, et sa langue.",
+      "followUp": "D'où vient le nom Chopi, selon les sources que nous avons lues ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Chopi désigne un peuple de la côte du sud du Mozambique, dans la province d'Inhambane, qui se nomme lui-même ainsi. D'autres noms existent : Ba-Lengi, et des graphies comme Tschopi, Txopi ou M'chopes. L'origine du nom Chopi n'a qu'une explication dans les sources que nous avons lues ; nous la présentons plus bas.",
