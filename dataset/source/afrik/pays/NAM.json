@@ -363,8 +363,9 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Sud-Ouest africain allemand, Deutsch-Südwestafrika (1884-1915)",
-        "Sud-Ouest africain, South West Africa (1915-1968)"
+        "Sud-Ouest africain allemand (1884-1915)",
+        "Deutsch-Südwestafrika (1884-1915)",
+        "Sud-Ouest africain (1915-1968)"
       ],
       "antiquity": "Pour ces périodes très anciennes, nous n'avons pas trouvé de nom donné à l'ensemble du territoire. Selon l'Atlas of Namibia, les San et leurs ancêtres en ont sans doute été les seuls habitants pendant des dizaines de milliers d'années.",
       "middleAges": "Selon l'Atlas of Namibia, des agriculteurs et des éleveurs de langue bantoue, ainsi que des éleveurs khoekhoe, commencent sans doute à entrer en Namibie il y a environ 1 200 ans. Nous n'avons pas trouvé de nom de cette époque pour l'ensemble du pays.",
@@ -782,8 +783,7 @@
         "url": "https://archive.org/details/deutschsdwesta00schi",
         "tier": "referenced",
         "source_kind": "archive",
-        "page": "page de titre",
-        "notes": "Récit de voyage de la période coloniale allemande, publié à Oldenburg en 1891, lu dans la numérisation d'Internet Archive faite sur l'exemplaire des bibliothèques de l'université de Californie. Le titre nomme le pays « Deutsch-Südwest-Afrika » et parle des « deutschen Schutzgebiete », les protectorats allemands, du Grand Namaland et du pays herero."
+        "notes": "Récit de voyage de la période coloniale allemande, publié à Oldenburg en 1891, lu dans la numérisation d'Internet Archive faite sur l'exemplaire des bibliothèques de l'université de Californie. Le titre nomme le pays « Deutsch-Südwest-Afrika » et parle des « deutschen Schutzgebiete », les protectorats allemands, du Grand Namaland et du pays herero. Passage lu : page de titre."
       },
       {
         "title": "Dictionary of South African English on Historical Principles, entrée « San »",
