@@ -1,0 +1,41 @@
+{
+  "description": "Proposals for batch surnames-05. Never applied to the main ledger by the batch; the operator decides each entry.",
+  "verifications": [
+    {
+      "fiche": "patronymes/PAT_NDIAYE.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_NDIAYE; nameMain: Ndiaye; nameSystem: clan_name; transmissionMode: patrilineal; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Sénégal : Ndiadiane Ndiaye, père mythique de l'Empire du Djolof",
+          "author": "P. A. Sy (Le Soleil, via AllAfrica)",
+          "year": 2025,
+          "url": "https://fr.allafrica.com/stories/202512210180.html",
+          "source_kind": "press",
+          "quote": "reconnu par les traditions orales wolof et sérère comme le fondateur et premier empereur de l'Empire du Djolof",
+          "supports": "Only the link between the name Ndiaye and the founder of the Jolof dynasty (the article mentions « la dynastie Ndiaye, dont le totem, le lion »). It does not establish that Ndiaye is a patrilineal clan name; a press article, to be completed by a scholarly work on the Jolof."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude workflow batch surnames-05)"
+    },
+    {
+      "fiche": "patronymes/PAT_RASOANAIVO.json",
+      "path": "sources[1]",
+      "claim": "id: PAT_RASOANAIVO; nameMain: Rasoanaivo; nameSystem: non_hereditary_patronymic; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude workflow batch surnames-05)"
+    }
+  ]
+}
