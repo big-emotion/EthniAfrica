@@ -101,8 +101,25 @@
         "url": "https://www.omniglot.com/writing/turu.htm",
         "tier": "unverified",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "ISO 639-3, Nyaturu [rim]",
+        "author": "SIL International, autorité d'enregistrement ISO 639-3",
+        "year": null,
+        "url": "https://iso639-3.sil.org/code/rim",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du code, lue le 8 novembre 2026. Elle enregistre rim comme langue individuelle vivante."
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "nyat1246",
+      "iso639_3": "rim"
+    },
+    "searchAnswer": {
+      "lead": "Les Nyaturu, aussi appelés Turu, vivent dans la région de Singida, au centre de la Tanzanie. Leur langue est le kinyaturu.",
+      "followUp": "Pourquoi trouve-t-on les formes Nyaturu, Turu et Rimi ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Nyaturu désigne un peuple bantou de la région de Singida, au centre de la Tanzanie, appelé aussi Turu ou Wanyaturu. Le nom Arimi est aussi donné pour ce peuple. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",

@@ -102,8 +102,25 @@
         "url": "https://joshuaproject.net/people_groups/14096/ZA",
         "tier": "unverified",
         "source_kind": "missionary_database"
+      },
+      {
+        "title": "ISO 639-3, Nyika (Malawi et Zambie) [nkv]",
+        "author": "SIL International, autorité d'enregistrement ISO 639-3",
+        "year": null,
+        "url": "https://iso639-3.sil.org/code/nkv",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du code, lue le 8 novembre 2026. Elle enregistre nkv comme langue individuelle vivante."
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "nyik1246",
+      "iso639_3": "nkv"
+    },
+    "searchAnswer": {
+      "lead": "Les Nyika vivent sur le plateau de Nyika, au nord du Malawi et à l'est de la Zambie. Leur langue est le nyika.",
+      "followUp": "Les Nyika de Zambie et du Malawi forment-ils un seul peuple ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Nyika désigne un peuple du nord du Malawi et du nord-est de la Zambie, autour du plateau du Nyika, et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : les sources que nous avons lues ne le disent pas. Le même nom sert aussi pour d'autres groupes, comme les Nyiha de Tanzanie, dont cette fiche ne retrace pas l'histoire. On ne sait pas avec certitude d'où vient le nom Nyika ; nous présentons plus bas ses traces.",

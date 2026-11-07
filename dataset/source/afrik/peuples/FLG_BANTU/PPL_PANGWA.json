@@ -93,7 +93,15 @@
         "url": "https://notesandrecords.blogspot.com/2009/04/",
         "tier": "unverified"
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "pang1287",
+      "iso639_3": "pbr"
+    },
+    "searchAnswer": {
+      "lead": "Les Pangwa vivent dans les hautes terres du sud de la Tanzanie, district de Ludewa. Leur langue, le kipangwa, est un parler bantou.",
+      "followUp": "D'où vient le nom Pangwa, écrit Wapangwa en 1881 ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Pangwa désigne un peuple des hautes terres du sud de la Tanzanie et sa langue. On ne sait pas comment ce peuple se nomme lui-même. On ne sait pas non plus avec certitude d'où vient le nom Pangwa ; nous présentons plus bas ses traces.",

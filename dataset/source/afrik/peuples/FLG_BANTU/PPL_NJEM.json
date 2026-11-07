@@ -219,6 +219,10 @@
         "source_kind": "academic",
         "notes": "Yaoundé, ORSTOM, 1968, Répertoire géographique du Cameroun, fascicule 15. Page V : la population des cantons et leur ethnie principale, en 1964-1967."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Les Njem vivent dans le sud-est du Cameroun et dans le nord du Congo. Leur langue s'appelle aussi njyem.",
+      "followUp": "Quelles formes du nom Njem les sources anciennes donnent-elles ?"
+    }
   }
 }
