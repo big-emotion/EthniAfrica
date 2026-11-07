@@ -122,7 +122,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // headlines, Mucuval and Wiyana, moved to the exonyms, where a reader who searches them still finds the fiche.
     // 2703 -> 2745 on 2026-10-19: ETNI-2135 split packed exonym entries into
     // one entry per name, preserving the names and their existing glosses.
-    value: 2745,
+    // 2745 -> 2737 on 2026-11-07: premium peoples batch 02 rewrote eight people fiches from the sources read; unsourced exonyms left and packed entries became one name each.
+    value: 2737,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -187,7 +188,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 384 -> 380 the same day: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12. All four were contested.
     // 380 -> 370 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 370 -> 368 on 2026-10-18: the Guwa and Mobe fiches, both contested, withdrawn after wave 24.
-    value: 368,
+    // 368 -> 369 on 2026-11-07: PPL_LULUA gained a whyProblematic and, read from it, colonial-legacy.
+    value: 369,
     // The breakdown in the method text recounted on 2026-10-18: contested
     // (224) had not followed the folds since it was written; colonial-legacy
     // happened to be right again.
@@ -224,7 +226,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 279 -> 278 on 2026-10-14: the Nabt fiche, which declared no status, was folded.
     // 278 -> 275 on 2026-10-18: the Mucubal, Taal and Mbogo fiches, which declared no status, folded or withdrawn after wave 24.
     // 275 -> 277 the same day: PPL_MAKA and PPL_NJEM added without a status, which the model leaves out until a fiche is reviewed.
-    value: 277,
+    // 277 -> 276 on 2026-11-07: PPL_LULUA now declares colonial-legacy.
+    value: 276,
     method: "fiches sans classificationStatus",
     countedOn: COUNTED_ON,
   },
@@ -251,7 +254,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // research for series 2 n° 1, dates the French spelling (Targui, 19th
     // century) instead of saying « à l'époque coloniale ».
     // 199 -> 197 on 2026-10-18: the Taal and Mbogo fiches, which counted, withdrawn after wave 24.
-    value: 197,
+    // 197 -> 202 on 2026-11-07: premium peoples batch 02 rewrote the origin and problem texts of eight people fiches from the sources read.
+    value: 202,
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -283,7 +287,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 163 -> 156 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 156 -> 155 on 2026-10-14: the Nabt fiche, which counted, was folded.
     // 155 -> 152 on 2026-10-18: the Taal, Mbogo and « Africains d'origine récente » fiches, which counted, withdrawn after wave 24.
-    value: 152,
+    // 152 -> 156 on 2026-11-07: premium peoples batch 02 rewrote the origin and problem texts of eight people fiches from the sources read.
+    value: 156,
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -310,7 +315,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 108 -> 107 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 107 -> 108 on 2026-10-15: PPL_TUAREG's origin text now says European
     // travellers took the name up from 1802 (Hornemann, Caillié).
-    value: 108,
+    // 108 -> 107 on 2026-11-07: premium peoples batch 02 rewrote the origin and problem texts of eight people fiches from the sources read.
+    value: 107,
     method: "radical europ dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -385,7 +391,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 68 -> 67 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers.
     // 67 -> 66 on 2026-10-11: ten duplicate people fiches of wave 8 folded into their keepers, and the Afizere fiche split from Jarawa.
     // 66 -> 65 on 2026-10-18: the Mobe fiche, which counted, withdrawn after wave 24.
-    value: 65,
+    // 65 -> 64 on 2026-11-07: premium peoples batch 02 rewrote the origin and problem texts of eight people fiches from the sources read.
+    value: 64,
     method: "radical arab dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -399,7 +406,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 63 -> 61 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
     // 61 -> 60 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
-    value: 60,
+    // 60 -> 61 on 2026-11-07: premium peoples batch 02 rewrote the origin and problem texts of eight people fiches from the sources read.
+    value: 61,
     method: "radical swahili dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -410,7 +418,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
     // 28 -> 27 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
-    value: 27,
+    // 27 -> 28 on 2026-11-07: premium peoples batch 02 rewrote the origin and problem texts of eight people fiches from the sources read.
+    value: 28,
     method: "radical esclav dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -423,7 +432,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 25 -> 24 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
     // 24 -> 23 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
-    value: 23,
+    // 23 -> 26 on 2026-11-07: premium peoples batch 02 rewrote the origin and problem texts of eight people fiches from the sources read.
+    value: 26,
     method: "radical missionn dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },

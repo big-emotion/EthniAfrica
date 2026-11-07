@@ -2013,5 +2013,10 @@
     "id": "PPL_ZENATA",
     "status": "contested",
     "rationale": "La fiche dit le macro-groupe « dont les limites sont contestees par les historiens », Yves Modéran jugeant le terme tardif et la notion de Zenata unifié « surtout une construction des sources arabes medievales »."
+  },
+  {
+    "id": "PPL_LULUA",
+    "status": "colonial-legacy",
+    "rationale": "Le whyProblematic attribue le nom Lulua a l'administration coloniale belge : selon Ngalamulume (1995, 2019), elle a elargi une identite plus ancienne et opposait des « Luba » a des « Lulua » tenus a l'ecart ; Morrison (1906) ecrit que le nom a ete donne de l'exterieur. La plainte interne sur Bashilange, jugee insultante, est moins specifique qu'un acteur colonial nomme."
   }
 ]

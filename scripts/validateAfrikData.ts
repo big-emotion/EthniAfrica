@@ -4864,7 +4864,8 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // 5920 -> 5897 on 2026-11-03: eight people fiches brought to the strict
   // model (spellingAliases, peopleGroupId/Label, externalIdentifiers,
   // searchAnswer, majorHistoricalEvents and whyProblematic where missing).
-  peuple: 5897,
+  // 5897 -> 5896 on 2026-11-07: PPL_LULUA declares its classificationStatus.
+  peuple: 5896,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
