@@ -135,6 +135,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Runbook — named-person candidate extraction](runbooks/person-extraction.md)
 - [Runbook — self-hosted Plausible Analytics](runbooks/plausible-self-hosted.md)
 - [Runbook — production deploy and rollback](runbooks/production-deploy.md)
+- [Public agent proposals](runbooks/public-agent-proposals.md)
 - [Runbook — regenerating the quiz question bank](runbooks/quiz-bank-regeneration.md)
 - [Restore drill — 2025-07-14](runbooks/restore-drill-2025-07-14.md)
 - [Restore drill — 2026-09-22](runbooks/restore-drill-2026-09-22.md)
