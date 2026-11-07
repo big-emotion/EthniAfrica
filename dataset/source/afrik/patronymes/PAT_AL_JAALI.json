@@ -49,7 +49,7 @@
     {
       "countryId": "SDN",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "macmichael-1922"]
     }
   ],
   "alliances": [],
@@ -64,6 +64,22 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "macmichael-1922",
+      "title": "A History of the Arabs in the Sudan, vol. I",
+      "url": "https://archive.org/details/historyofarabsin01macmuoft",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée relevée sur l'en-tête de page du texte numérisé ; signes de transcription omis dans les formes citées. Page 197 : début du chapitre 1 de la partie III, « The Ga'aliin and Danagla Group », premier paragraphe."
+    },
+    {
+      "sourceKey": "ibrahim-1988-jaaliyyin",
+      "title": "Breaking the Pen (of Sir Harold ibn MacMichael ibn Hicks) The Ja'aliyyin Identity Revisited",
+      "url": "https://ajis.org/index.php/ajiss/article/view/2881",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Abdullahi Ali Ibrahim, American Journal of Islamic Social Sciences, vol. 5, no 1, 1988, p. 77-89 (DOI 10.35632/ajis.v5i1.2881). Page de l'article lue le 8 novembre 2026 : seule l'introduction est visible en ligne. Elle écrit : « The indigenous tradition characterizes the Ja'aliyyin unequivocally as Arabs, who descended from al-'Abbas ». Le texte complet n'a pas été lu."
     }
   ],
   "gaps": [
@@ -216,6 +232,28 @@
                 "source_kind": "academic",
                 "page": "p. 197, 237",
                 "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée relevée sur l'en-tête de page du texte numérisé ; signes de transcription omis dans les formes citées. Page 237 : « any native is only too glad to imply a connection with the Prophet by calling himself a Ga'ali ». Page 197 : la liste des groupes auxquels le nom Ga'aliin s'applique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "Rapporté en 1988"
+            },
+            "era": "modern",
+            "statement": "Le nom Ja'aliyyin, proche de al-Jaʿali, est présenté en 1988 par l'historien Abdullahi Ali Ibrahim comme celui de gens que la tradition locale décrit « sans équivoque » comme des Arabes descendus d'al-'Abbas. Son article, dont nous n'avons lu que l'introduction, reprend cette identité pour la réexaminer.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Breaking the Pen (of Sir Harold ibn MacMichael ibn Hicks) The Ja'aliyyin Identity Revisited",
+                "author": "Abdullahi Ali Ibrahim",
+                "year": 1988,
+                "url": "https://ajis.org/index.php/ajiss/article/view/2881",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction",
+                "notes": "American Journal of Islamic Social Sciences, vol. 5, no 1, p. 77-89. Page de l'article lue le 8 novembre 2026 ; seule l'introduction est consultable en ligne. Elle écrit : « The indigenous tradition characterizes the Ja'aliyyin unequivocally as Arabs, who descended from al-'Abbas »."
               }
             ]
           }

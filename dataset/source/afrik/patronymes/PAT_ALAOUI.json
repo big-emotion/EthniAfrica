@@ -69,6 +69,46 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Article d'onomastique de Terrence M. Potter, Names, juin 1999, p. 157-172, lu en texte intégral le 14 octobre 2026. Il cite al-Alaoui parmi les noms marocains traditionnels qui peuvent venir de dynasties arabes ; cette typologie ne documente aucune généalogie individuelle. Le titre de la notice a été corrigé : il portait celui d'un autre article."
+    },
+    {
+      "sourceKey": "dafn-alaoui",
+      "title": "Dictionary of American Family Names, 2e éd. — Alaoui",
+      "url": "https://www.ancestry.com/last-name-meaning/alaoui?geo-lang=en",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 14 octobre 2026 ; le site affiche une traduction française. La notice dit : « Musulman (principalement le Maroc) : variante de Alawi. »"
+    },
+    {
+      "sourceKey": "kazimirski-1860",
+      "title": "Dictionnaire arabe-français, tome 2",
+      "url": "https://archive.org/details/dictionnairearab02bibeuoft",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Paris, Maisonneuve, 1860. Lu sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Page 354, mot ʿalawī : « Alide, appartenant ou se disant appartenir à la famille d'Ali, gendre de Mahomet », et « Rapport de parenté avec la famille d'Ali »."
+    },
+    {
+      "sourceKey": "dafn-alawi",
+      "title": "Dictionary of American Family Names, 2e éd. — Alawi",
+      "url": "https://www.ancestry.com/last-name-meaning/alawi?geo-lang=en",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 14 octobre 2026 ; le site affiche une traduction française. La notice dit : « Musulman : issu de l'arabe ʿalawī désignant un descendant ou un suiveur d'Ali, le premier imam des musulmans chiites. Le nom de famille peut également provenir du nom personnel arabe associé ʿAlawī « sublime exalté ; divin ». Comparez Alaoui et Alavi. »"
+    },
+    {
+      "sourceKey": "istiqsa-1907",
+      "title": "Kitâb el-Istiqsâ li-akhbâri doual el-Maghrib el-Aqsâ, quatrième partie : Chronique de la dynastie alaouie du Maroc, tome II (Archives marocaines, vol. X)",
+      "url": "https://archive.org/details/32882019289126-archivesmarocai",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Paris, Ernest Leroux, 1907. Chronique marocaine du XIXe siècle, lue dans la traduction française sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Pages 249-250, sous le sultan Sidi Mohammed ben Abderrahmân : un agitateur se réfugie dans le mausolée de Moulay Idrîs ; « un certain nombre de chérîfs Idrîsis et 'Alaouis se massèrent autour de lui », puis « un chérîf 'Alaoui s'avança sur lui »."
+    },
+    {
+      "sourceKey": "rmm-1908-v",
+      "title": "Revue du monde musulman, tome V — « Un rouage du gouvernement marocain »",
+      "url": "https://archive.org/details/revuedumondemusu5miss",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Paris, Ernest Leroux, 1908. Revue publiée par la Mission scientifique du Maroc, lue sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Pages 259-260, liste de décrets du sultan (« dahirs ») : « Moulay El Mahdy El Alaouï » et « Si Mouhammad El Mahdy El Alaouï »."
     }
   ],
   "gaps": [
