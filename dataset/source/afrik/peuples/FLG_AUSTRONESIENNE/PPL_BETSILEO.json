@@ -234,6 +234,27 @@
         "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
         "tier": "official",
         "source_kind": "government"
+      },
+      {
+        "title": "Glottolog 5.3 — Betsileo",
+        "url": "https://glottolog.org/resource/languoid/id/bets1235",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Base de référence linguistique, version 5.3, lue le 8 novembre 2026. La base classe le betsileo comme dialecte du malgache, sans code ISO 639-3 propre."
+      },
+      {
+        "title": "History of Madagascar, vol. I (chapitre sur les peuples de l'île, p. 118-121)",
+        "url": "https://archive.org/details/historyofmadagas01elli",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "William Ellis, Londres, Fisher, Son & Co., 1838 ; texte missionnaire du XIXe siècle, lu dans la numérisation d'Internet Archive le 8 novembre 2026. Les découpages et les parentés qu'il avance sont ceux d'un observateur extérieur. Passage : « The Betsileo are evidently one of the most ancient races in the island, and, according to their own traditions, came originally from Anteva » (p. 121) ; le pays betsileo court au sud de l'Ankaratra jusqu'à l'Imania, puis le Tatsimo (p. 120)."
+      },
+      {
+        "title": "Rakibolana malagasy, article betsileo",
+        "url": "https://malagasyword.org/bins/teny2/betsileo",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Dictionnaire monolingue malgache de Régis Rajemisa-Raolison (Ambozontany, 1985), lu dans le Malagasy Dictionary and Encyclopedia en ligne le 8 novembre 2026. Passage : « Foko lehibe monina amin' ny tany voafaritry ny ony Mania, avaratra ; ny tanin' ny Tanala, atsinanana ; ny tendrombohitr' Andringitra, atsimo, ary ny tandavan-tendrombohitr' i Bongolava, andrefana » ; le dictionnaire distingue un nord, un centre et un sud (Isandra, Ilalangina, Iarindrano)."
       }
     ]
   }
