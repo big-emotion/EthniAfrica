@@ -88,6 +88,15 @@
         "url": "https://www.britannica.com/topic/Tumbuka",
         "tier": "unverified",
         "source_kind": "encyclopedia"
+      },
+      {
+        "title": "Glottolog 5.3, Manda-Matumba [mand1423]",
+        "author": "Hammarström, Forkel, Haspelmath, Bank (eds.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/mand1423",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Page lue le 8 novembre 2026. Code ISO 639-3 mgs ; pays : Malawi, Tanzanie ; autres noms : Kimanda, Kinyasa, Nyasa ; Nurse 1988, Bernander 2017 et Ngonyani 2001 cités pour le sous-classement."
       }
     ]
   },

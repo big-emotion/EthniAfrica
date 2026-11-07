@@ -171,6 +171,15 @@
         "title": "Safaris Rwanda Safari — Cultural Heritage of the Makonde People",
         "url": "https://www.safarisrwandasafari.com/information/the-cultural-heritage-of-the-makonde-people/",
         "tier": "needs_review"
+      },
+      {
+        "title": "Glottolog 5.3, Makonde [mako1251]",
+        "author": "Hammarström, Forkel, Haspelmath, Bank (eds.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/mako1251",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Page lue le 8 novembre 2026. Code ISO 639-3 kde ; pays : Mozambique, Tanzanie ; autres noms : Chimakonde, Shimakonde, Maconde, Makonda, Matambwe ; autre nom (WALS) : Mawiha."
       }
     ]
   },
