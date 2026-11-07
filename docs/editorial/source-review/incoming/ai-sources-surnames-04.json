@@ -1,0 +1,109 @@
+{
+  "description": "Proposals for the ai_generated sources of batch surnames-04. Status proposed only; the operator decides.",
+  "verifications": [
+    {
+      "fiche": "patronymes/PAT_ADEBAYO.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_ADEBAYO; nameMain: Adebayo; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Adébáyọ̀ — YorubaNames",
+          "author": null,
+          "year": null,
+          "url": "https://www.yorubaname.com/entries/adebayo?lang=en",
+          "source_kind": "community",
+          "quote": "1. Royalty meets joy. 2. We have come to meet joy.",
+          "supports": "Attests Adebayo as a Yoruba given name with two glosses and the segmentation adé-bá-ayọ̀ / a-dé-bá-ayọ̀. Page opened 2026-11-08. It does not state that the name is non-hereditary; that rests on the Merryfield 1989 list already in the fiche (the ERIC PDF is a scanned image, so its quote could not be re-checked in this session)."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened the YorubaNames page and checked the quote. Community source, so unverified is the likely tier.",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code, premium batch surnames-04)"
+    },
+    {
+      "fiche": "patronymes/PAT_ALI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_ALI; nameMain: Ali; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "reviewNote": "No candidate opened in this session. The fiche already cites the Cairo Arabic Academy entry and Al-Jarf 2023 for the Arabic root and diffusion; neither states the transmission mode. Reviewer to decide between rejected (keep as synthesis) and a dedicated source.",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code, premium batch surnames-04)"
+    },
+    {
+      "fiche": "patronymes/PAT_BAGAYOKO.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BAGAYOKO; nameMain: Bagayoko; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Baghayogho: A Soninke Muslim Diaspora in the Mande World",
+          "author": "Andreas W. Massing",
+          "year": 2004,
+          "url": "https://journals.openedition.org/etudesafricaines/4850",
+          "source_kind": "academic",
+          "quote": "the sources are clear on their Wangara-Soninke origin",
+          "supports": "Attests Baghayogho (a close spelling of Bagayoko) as a family name of Wangara-Soninke origin, with the Bagdad etymology given as an oral claim by Wasulu elders, and Hunwick's contrary view that the family is of Malinke stock. Page opened 2026-11-08 (first 100 000 characters read). Already cited in the fiche as massing-2004-baghayogho; it does not state the transmission mode."
+        }
+      ],
+      "status": "proposed",
+      "reviewNote": "Opened the OpenEdition page and checked the quote. The spelling Baghayogho is not identical to Bagayoko.",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code, premium batch surnames-04)"
+    },
+    {
+      "fiche": "patronymes/PAT_BAMBA_CLAN.json",
+      "path": "sources[2]",
+      "claim": "id: PAT_BAMBA_CLAN; nameMain: Bamba; nameSystem: clan_name; transmissionMode: patrilineal; designatedSocialUnit: clan",
+      "original": {
+        "title": "Rapprochement établi par la rédaction d'EthniAfrica (septembre 2026)",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "reviewNote": "No candidate: the source is an editorial reading that only supports a finding of non-overlap between two naming traditions. Most likely outcome is rejected (keep as synthesis).",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code, premium batch surnames-04)"
+    },
+    {
+      "fiche": "patronymes/PAT_DOUCOURE.json",
+      "path": "sources[3]",
+      "claim": "id: PAT_DOUCOURE; nameMain: Doucouré; nameSystem: clan_name; transmissionMode: patrilineal; designatedSocialUnit: clan",
+      "original": {
+        "title": "Nom de famille DOUCOURE : origine et signification",
+        "url": "https://www.geneanet.org/nom-de-famille/DOUCOURE"
+      },
+      "candidates": [],
+      "status": "proposed",
+      "reviewNote": "No candidate opened. A search surfaced a page attributing a Soninke origin for Doucouré to Makhtar Diouf, but the work itself was not opened, so nothing is proposed. The fiche already cites Diouf 1998.",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code, premium batch surnames-04)"
+    },
+    {
+      "fiche": "patronymes/PAT_DOUCOURE.json",
+      "path": "sources[4]",
+      "claim": "id: PAT_DOUCOURE; nameMain: Doucouré; nameSystem: clan_name; transmissionMode: patrilineal; designatedSocialUnit: clan",
+      "original": {
+        "title": "Meaning of the name Doukoure",
+        "url": "https://www.wisdomlib.org/names/doukoure"
+      },
+      "candidates": [],
+      "status": "proposed",
+      "reviewNote": "No candidate opened. The two glosses the page gives (chief; heart plus drum) remain unsupported by any work read.",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code, premium batch surnames-04)"
+    }
+  ]
+}
