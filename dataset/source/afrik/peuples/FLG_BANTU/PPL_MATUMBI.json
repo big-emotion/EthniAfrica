@@ -94,6 +94,15 @@
         "url": "https://www.ethnologue.com/language/mgw/",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Glottolog 5.3, Matumbi [matu1259]",
+        "author": "Hammarström, Forkel, Haspelmath, Bank (eds.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/matu1259",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Page lue le 8 novembre 2026. Code ISO 639-3 mgw ; pays : Tanzanie ; autres noms : Kimatumbi, Kimatuumbi, Matuumbi ; Nurse 1988 et Gonzales, Waite et Ehret 2002 cités pour le sous-classement."
       }
     ]
   },

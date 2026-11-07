@@ -92,6 +92,15 @@
         "url": null,
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Glottolog 5.3, Mambwe-Lungu [mamb1296]",
+        "author": "Hammarström, Forkel, Haspelmath, Bank (eds.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/mamb1296",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Page lue le 8 novembre 2026. Code ISO 639-3 mgr ; pays : Tanzanie, Zambie ; autres noms : Mambwe, Cimambwe ; Nurse 1988 cité pour le sous-classement."
       }
     ]
   },
