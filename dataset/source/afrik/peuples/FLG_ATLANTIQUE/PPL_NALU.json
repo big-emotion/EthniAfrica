@@ -119,8 +119,24 @@
         "url": "https://www.101lasttribes.com/tribes/nalu.html",
         "tier": "unverified",
         "source_kind": "community"
+      },
+      {
+        "title": "Glottolog, Nalu",
+        "url": "https://glottolog.org/resource/languoid/id/nalu1240",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche Glottolog du nalu (glottocode nalu1240, code ISO naj), consultée le 8 novembre 2026. Elle donne la Guinée et la Guinée-Bissau comme pays, les noms Nalou et Nalu, et un statut de langue menacée d'après Campbell et d'autres (2022)."
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "wikidataId": "Q3335397",
+      "glottocode": "nalu1240",
+      "iso639_3": "naj"
+    },
+    "searchAnswer": {
+      "lead": "Les Nalu sont un peuple de la côte de Guinée et de Guinée-Bissau. Ils parlent le nalu, une langue en danger.",
+      "followUp": "D'où viennent les formes anciennes du nom Nalu, comme nanuus ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Nalu désigne un peuple de la côte de Guinée et de Guinée-Bissau, autour du rio Nunez, des îles Tristão et de l'estuaire du Cacine, ainsi que la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Une forme proche du nom, nanuus, apparaît par écrit vers 1506, puis Naluns en 1594 ; les auteurs français écrivent Nalou. Les formes Nalo et Nanum, que la fiche relève aussi, n'ont pas été retrouvées dans une source que nous avons ouverte. On ne sait pas d'où vient le nom Nalu : aucune source que nous avons lue ne l'explique. Nous présentons plus bas ce que disent les sources.",
@@ -220,7 +236,7 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "page": "livre I, chap. 32, p. 53",
-                "notes": "Texte écrit vers 1505-1508, édition de l'Imprensa Nacional, Lisbonne, 1892, lue dans l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image : « houtro Rio que ha nome dos nanuus por que este mesmo nome he o da jente da terra ». Pacheco Pereira ne dit pas que ces gens sont les Nalu : c'est la lecture de Stéphane Bouju."
+                "notes": "Texte écrit vers 1505-1508, édition de l'Imprensa Nacional, Lisbonne, 1892, lue dans l'exemplaire numérisé d'archive.org ; page vérifiée sur l'image : « houtro Rio que ha nome dos nanuus por que este mesmo nome he o da jente da terra ». Pacheco Pereira ne dit pas que ces gens sont les Nalu : c'est l'hypothèse de Stéphane Bouju."
               },
               {
                 "title": "Historique sur les populations côtières de Guinée et de Sierra Leone",

@@ -186,8 +186,23 @@
         "url": "https://qiraatafrican.com/en/19893/the-serer-people-of-west-africa/",
         "tier": "unverified",
         "source_kind": "press"
+      },
+      {
+        "title": "Glottolog, Sereer",
+        "url": "https://glottolog.org/resource/languoid/id/sere1260",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche Glottolog du sereer (glottocode sere1260, code ISO srr), consultée le 8 novembre 2026. Elle donne le Sénégal et la Gambie comme pays, et les formes Sereer, Serer, Seereer, Sérère et Serer-Sine."
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "sere1260",
+      "iso639_3": "srr"
+    },
+    "searchAnswer": {
+      "lead": "Les Sereer, aussi écrits Serer, sont un peuple du Sénégal et de la Gambie. Leur langue s'appelle le sereer.",
+      "followUp": "Pourquoi écrit-on tantôt Serer, tantôt Sereer, tantôt Sérère ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Sérère désigne un peuple du Sénégal et de la Gambie, qui se nomme lui-même Seereer. Les deux noms sont deux écritures d'un même mot, attesté depuis le XVe siècle. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",

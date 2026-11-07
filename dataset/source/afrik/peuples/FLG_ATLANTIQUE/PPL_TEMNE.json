@@ -123,8 +123,23 @@
         "url": "https://www.101lasttribes.com/tribes/temne.html",
         "tier": "unverified",
         "source_kind": "community"
+      },
+      {
+        "title": "Glottolog, Temne",
+        "url": "https://glottolog.org/resource/languoid/id/timn1235",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche Glottolog du temne (glottocode timn1235, code ISO tem), consultée le 8 novembre 2026. Elle donne la Guinée et la Sierra Leone comme pays, et les formes Temne, Timne, Themne, Temen et Timmannee."
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "timn1235",
+      "iso639_3": "tem"
+    },
+    "searchAnswer": {
+      "lead": "Les Temne sont un peuple de Sierra Leone et de Guinée. Leur langue s'appelle le temne ; on trouve aussi l'écriture Timne.",
+      "followUp": "Quelles autres écritures du nom Temne trouve-t-on ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Temne désigne un peuple du nord et du centre de la Sierra Leone, qui se nomme lui-même Temne. Il apparaît par écrit au début du XVIe siècle chez un navigateur portugais, qui écrit « teymenes ». Les Portugais ont aussi rangé ce peuple parmi les Sapes. Nous n'avons pas trouvé de source qui explique l'origine du nom Temne.",
