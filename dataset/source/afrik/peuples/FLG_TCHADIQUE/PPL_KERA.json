@@ -8,82 +8,115 @@
     "appellations": {
       "mainName": "Kera",
       "selfAppellation": "Kera",
-      "exonyms": ["Kera", "Tuburi (denomination erronee de Greenberg)"],
-      "originOfExonyms": "Le linguiste Joseph Greenberg avait employe le terme Tuburi pour designer la langue kera, un nom qui est en realite celui d'un peuple distinct (les Tupuri). Cette confusion a ete corrigee dans la classification actuelle des langues tchadiques orientales.",
-      "whyProblematic": "La confusion avec les Tupuri (parfois appeles Toupouri) a perturbe l'identification des Kera dans certaines litteratures. Les Kera sont souvent assimiles aux Toupouri dans les recensements administratifs, contribuant a l'erosion de leur identite distincte.",
-      "contemporaryUsage": "Le terme Kera est utilise de maniere standard dans la litterature linguistique et anthropologique. Les locuteurs se designent eux-memes par ce nom. Des initiatives communautaires de preservation de la langue et de la culture kera sont actives, notamment des forums sur la langue et la culture kera.",
+      "exonyms": ["Tuburi"],
+      "spellingAliases": ["Kéra"],
+      "originOfExonyms": "Le nom Tuburi est celui des Tupuri, les plus proches voisins des Kera. Le linguiste allemand Johannes Lukas l'a pourtant donné, en 1937, à des listes de mots qui sont en fait du kera, selon le catalogue Glottolog. La linguiste Karen Ebert a identifié et corrigé ces listes en 1968. Les Kera eux-mêmes se disent parfois Tupuri quand ils voyagent, selon Mary Pearce.",
+      "whyProblematic": "Les Kera et les Tupuri vivent côte à côte et partagent beaucoup de coutumes, mais leurs langues appartiennent à deux familles différentes : le kera est une langue tchadique, le tupuri une langue nigéro-congolaise, selon Mary Pearce. Certains auteurs rattachent pourtant les Kera aux Tupuri, à tort selon l'historien Balga, cité par Hayamkréo Matankamla.",
+      "contemporaryUsage": "Le nom Kera est celui de la norme internationale des codes de langues (code ker) et du catalogue Glottolog. L'Association culturelle kéra l'emploie pour parler d'un peuple « à cheval entre le Cameroun et le Tchad ». Les chercheurs de la région écrivent souvent Kéra.",
       "linguisticFamily": "FLG_TCHADIQUE",
-      "ethnoLinguisticGroup": "Tchadique oriental (East Chadic, branche A.3)",
-      "historicalRegion": "Mayo-Kebbi (region de Mayo-Kebbi Est, Tchad) et Extreme-Nord (Cameroun), pres du lac Tike et de Fianga",
-      "currentCountries": ["TCD", "CMR"]
+      "ethnoLinguisticGroup": "Tchadique oriental, sous-groupe A.3, selon la classification de Glottolog",
+      "historicalRegion": "Sud-ouest du Tchad, autour des lacs de Fianga et de Tikem et du mont Illi, dans la province du Mayo-Kebbi Est, et nord du Cameroun",
+      "currentCountries": ["TCD", "CMR"],
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Kera du Tchad (Mayo-Kebbi Est, region du Mont d'Illi, sud de Fianga, pres du lac Tike)",
-      "Kera du Cameroun (departements de Mayo-Danay et Diamare, region de l'Extreme-Nord, commune de Wina, district de Ndoukoula)",
-      "Groupes disperses et isoles dans le nord du Cameroun, pres de la frontiere, au sud de Viri"
+      "Kera des villages, autour de Fianga et du lac de Tikem, au Tchad",
+      "Kera des villes du Tchad et du Cameroun, qui vivent souvent en communautés de langue kera",
+      "Clans venus de l'est selon des récits oraux : Koupor, Gouboussia, Gamdou, Guidam, Boda, Koumarkoué, Bomélé et Guidjé"
     ],
     "origins": {
-      "ancientOrigins": "Selon les traditions orales et les etudes linguistiques, les Kera auraient migre depuis la region du Chari, traversant le pays Mouzouk et le lac Guisey avant de s'etablir dans leur territoire actuel. Les mythes fondateurs evoquent notamment le meurtre d'un fils par ses demi-freres, qui contraint le groupe a fuir en quete de nouvelles terres. Ces recits de migration sont renforces par des pressions historiques des royaumes voisins, en particulier le Kanem et le Baguirmi.",
-      "formationPeriod": "L'identite kera s'est consolidee au fil des migrations et des contacts avec les peuples voisins (Tupuri, Massa, Moussey, Mundang). Le groupe a maintenu son identite propre malgre les assimilations administratives et les pressions culturelles exterieures.",
+      "ancientOrigins": "Selon l'historien Balga, cité par Hayamkréo Matankamla, les Kera forment une couche ancienne de peuplement, faite de clans venus surtout du nord et de l'est. La vague la plus importante viendrait de l'est, des environs de Bongor et de Gounou-Gaya. Ces migrations auraient apporté la langue kera, que Hayamkréo Matankamla rapproche d'une vieille langue presque disparue, le dam. Le géographe Christian Seignobos décrit lui aussi des groupes venus du Chari et du pays dam, qui s'arrêtent près des lacs de Fianga et de Tikem. La linguiste Mary Pearce signale des indices d'une migration depuis une région proche de l'Égypte, mais juge impossible d'aller au-delà d'hypothèses.",
+      "formationPeriod": "Des récits oraux, bien que fragmentaires, placent l'installation des Kera au sud-ouest du Tchad vers le XVIIe siècle, ou plus tard, selon Hayamkréo Matankamla. Les Tupuri auraient trouvé les Kera sur place ; les deux peuples ont ensuite noué des alliances et emprunté l'un à l'autre.",
       "migrationRoutes": [
-        "Migration depuis la region du Chari vers le nord-ouest",
-        "Traversee du pays Mouzouk et du lac Guisey",
-        "Installation dans la region de Mayo-Kebbi (Tchad) et l'Extreme-Nord (Cameroun)"
+        "De l'est, des environs de Bongor et de Gounou-Gaya, vers Fianga, selon des récits oraux rapportés par Hayamkréo Matankamla",
+        "Du Chari et du pays dam (Mondo, Mafalling, Bousso) jusqu'aux lacs de Fianga et de Tikem, selon Christian Seignobos"
       ],
       "historicalSettlementZones": [
-        "Region de Mayo-Kebbi Est (Tchad), pres du lac Tike et de Fianga",
-        "Departements de Mayo-Danay et Diamare (Cameroun), region Extreme-Nord",
-        "Zone frontaliere tchadocamerounaise"
+        "Lacs de Fianga et de Tikem, au sud-ouest du Tchad",
+        "Mont Illi et montagne Maswang, près de Gamdou",
+        "Koupor, dans la sous-préfecture de Fianga",
+        "Nord du Cameroun"
       ],
-      "unificationsOrDivisions": "Les Kera partagent leur territoire avec les Tupuri, les Massa et les Moussey, avec lesquels ils entretiennent des relations de voisinage. Des liens de parente sont attestes avec les Mundang du Tchad. La proximite avec les Tupuri a engendre des confusions identitaires dans les sources administratives.",
-      "externalInfluences": "Influence du royaume de Kanem et du sultanat de Baguirmi sur les dynamiques migratoires et politiques. Islamisation partielle par contact avec les royaumes soudaniques voisins. Colonisation francaise au XXe siecle et introduction de l'administration nationale tchadienne et camerounaise.",
-      "majorHistoricalEvents": "Migration fondatrice depuis le Chari, marquee par des mythes de rupture et de fondation. Pressions et influences du Kanem et du Baguirmi sur les populations du Mayo-Kebbi. Integration dans les structures administratives coloniales francaises. Aujourd'hui, initiatives communautaires de preservation culturelle et linguistique face a l'influence des langues nationales (francais, arabe tchadien)."
+      "unificationsOrDivisions": "Les Kera vivent sur la même aire culturelle que les Tupuri. Depuis la colonisation, elle est partagée entre le Tchad et le Cameroun, selon Hayamkréo Matankamla. Les récits oraux qu'il rapporte décrivent les Kera comme un ensemble de clans d'origines diverses.",
+      "externalInfluences": "Les Kera ressentent la domination des Tupuri et ont adopté beaucoup de leurs coutumes. Des mots tupuri sont entrés dans le kera, et beaucoup d'hommes parlent aussi le tupuri, la langue de la ville la plus proche. Le français pèse de plus en plus sur la langue des villes, selon Mary Pearce.",
+      "majorHistoricalEvents": "Vers le XVIIe siècle, ou plus tard, des clans venus de l'est s'installent près de Fianga, selon des récits oraux. En 1937, des listes de mots kera paraissent sous le nom de Tuburi ; Karen Ebert les corrige en 1968, puis publie de 1975 à 1979 une étude de la langue et des traditions kera. Le Nouveau Testament en kera est distribué en 2006, selon Mary Pearce."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Organisation en chefferies villageoises traditionnelles. Des conseils d'anciens participent a la gouvernance locale et a la resolution des conflits. Les chefs de village exercent une autorite sociale et symbolique reconnue par la communaute.",
-      "clanOrganization": "Structure clanique patrilineaire. Organisation en familles etendues et lignages partageant un ancetre commun masculin.",
+      "traditionalPoliticalSystem": "Les sources lues parlent de chefs de terre et de chefs de village. À Gamdou et à Illi, les chefs de terre habitaient au pied de la montagne Maswang, et l'emplacement des cases marquait leur rang, selon Hayamkréo Matankamla.",
+      "clanOrganization": "Les Kera se répartissent en clans, comme ceux de Koupor, de Gamdou ou de Guidam, venus selon les récits oraux de différentes régions. Chaque clan a ses lieux sacrés : le clan de Gamdou se place sous la protection de Kin-Kin, une divinité honorée au pied de la montagne Maswang, selon Hayamkréo Matankamla.",
       "ageClassSystems": null,
-      "roleOfLineages": "Les lignages patrilineaires determinent les droits fonciers, les alliances matrimoniales et les obligations communautaires. L'organisation sociale maintient des distinctions identitaires face aux groupes voisins.",
-      "religiousAuthority": "Presence de leaders islamiques dans les communautes partiellement islamisees. Des pratiques traditionnelles animistes persistent. La vie ceremonielle est organisee autour de rites collectifs lies aux recoltes et aux cycles agricoles."
+      "roleOfLineages": null,
+      "religiousAuthority": null
     },
     "languages": {
-      "mainLanguage": "Kera",
+      "mainLanguage": "kera (ker)",
       "isoCodes": ["ker"],
       "dialects": [
-        "Kera du Tchad (variete principale, Mayo-Kebbi Est)",
-        "Kera du Cameroun (varietes isolees et dispersees, Extreme-Nord)"
+        "Nyimathli, le dialecte que Glottolog rattache au kera",
+        "Parlers des villages et parlers des villes, que Mary Pearce distingue par leurs tons"
       ],
-      "vehicularRole": "Le kera (ISO 639-3 : ker) est une langue tchadique orientale (East Chadic, branche A.3) parlee par environ 45 000 locuteurs au Tchad et 6 000 au Cameroun. C'est une langue SOV (sujet-verbe-objet) utilisant des prepositions et un marquage casuel borderline exclusif. Elle possede un phoneme rare, la battue labiodentale /ⱱ/, attestee dans moins de 80 langues du monde. Le francais et l'arabe tchadien servent de langues vehiculaires. Un Nouveau Testament est disponible en kera."
+      "vehicularRole": "Le kera est une langue tchadique orientale, parlée par environ 50 000 personnes au sud du Tchad et dans une partie du Cameroun, selon Mary Pearce (2007). Les Kera des villes parlent aussi le français, et beaucoup d'hommes le tupuri, qui sert surtout au marché. Le Nouveau Testament en kera a été distribué en 2006, et une trentaine d'autres livres existent dans la langue."
+    },
+    "externalIdentifiers": {
+      "glottocode": "kera1255",
+      "iso639_3": "ker"
     },
     "culture": {
-      "majorRites": "Ceremonies collectives et guerrieres frequemment liees aux recoltes et aux fetes de fin d'annee, constituent les moments rituels majeurs de l'identite kera. Rites de passage : circoncision masculine. Ceremonies de mariage impliquant le versement d'une dot. Rites agricoles marquant les semailles et la recolte du sorgho et du mil. Celebrations islamiques (Ramadan, Aïd) dans les communautes islamisees.",
-      "symbols": "Le mil et le sorgho comme cultures vivrieres centrales. Le lac Tike et les cours d'eau du Mayo-Kebbi comme reperes geographiques fondateurs. Les danses collectives et guerrieres comme expression de l'identite communautaire.",
-      "artsAndMusic": "La musique et la danse jouent un role significatif dans la vie culturelle kera, notamment lors des ceremonies de recolte et des fetes de fin d'annee. Danses collectives a caractere guerrier ou festif. Tradition orale riche : contes, mythes et recits transmettant l'histoire et les valeurs du groupe. Artisanat : poterie, tissage. Les traditions orales et musicales sont au coeur des initiatives contemporaines de preservation culturelle.",
-      "spiritualities": "Pratiques religieuses mixtes : islam (partiellement adopte), animisme traditionnel et pratiques synchretiques. Croyances en des esprits lies au territoire, aux recoltes et aux ancetres. Les Kera maintiennent des rites pre-islamiques malgre l'influence de l'islam voisin. Des initiatives communautaires cherchent a documenter et preserver ces traditions spirituelles face aux influences exterieures."
+      "majorRites": "L'initiation des jeunes compte beaucoup chez les Kera comme chez les Tupuri. Le grand tambour Ti-nding, à Guizey, au Cameroun, est le centre des lieux de retraite des initiés. À la fin de l'initiation, le garçon reçoit un nouveau nom : on garde une partie de son nom de naissance et on y ajoute un suffixe, comme Kamla ou Kréo. Ainsi, Birwé devient BirKamla, selon Hayamkréo Matankamla.",
+      "symbols": "La montagne Maswang, la plus haute de Fianga, a donné son nom au département du Mont Illi. L'ancêtre des Kera aurait vécu à son pied, et son nom signifierait « fille libre » ou « femme émancipée », selon Hayamkréo Matankamla. Le grenier marque le rang des épouses : seule la première y a d'abord accès, et c'est elle qui l'ouvre à la deuxième, selon une étude de Besané citée par le même auteur.",
+      "artsAndMusic": null,
+      "spiritualities": "À Gamdou, entre trois montagnes rocheuses et le lac de Fianga, les Kera rendaient chaque année un culte à Mô-ga, génie de l'eau : en période de crue, ils lui sacrifiaient un veau pour protéger les pêcheurs. Ce culte se perd, selon Hayamkréo Matankamla. Pour cet auteur, les Kera et les Tupuri reconnaissaient un Dieu unique avant l'arrivée des religions révélées. Le christianisme est aussi présent : le Nouveau Testament en kera a été distribué en 2006, selon Mary Pearce."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Les Kera n'ont pas fonde de royaume centralise, mais ont maintenu une organisation en chefferies villageoises autonomes. Ils ont evolue dans la sphere d'influence des royaumes du Kanem et du Baguirmi, conservant toutefois leur identite distincte.",
-      "relationsWithNeighbors": "Relations de voisinage avec les Tupuri (parfois source de confusion identitaire), les Massa, les Moussey et les Mundang du Tchad. Relations commerciales et culturelles avec ces peuples partageant les memes zones ecologiques du Mayo-Kebbi. Les Kera maintiennent des identites distinctes tout en partageant des territoires avec ces groupes.",
-      "conflictsOrAlliances": "Pressions historiques des royaumes voisins (Kanem, Baguirmi) ayant inflechi les migrations et installations kera. Relations generalement pacifiques avec les voisins Tupuri, Massa et Moussey dans le cadre d'une coexistence multietnique du Mayo-Kebbi.",
-      "diaspora": "Presence de groupes disperses et isoles au nord du Cameroun (Extreme-Nord). Migration vers les grandes villes tchadiennes et camerounaises."
+      "kingdomsOrChiefdoms": null,
+      "relationsWithNeighbors": "Les plus proches voisins des Kera sont les Tupuri, dont ils ont adopté beaucoup de coutumes. Les Kera vivent aussi près des Masa, des Musey, des Marba et des Mundang ; certains hommes kera épousent des femmes de langue musey, selon Mary Pearce.",
+      "conflictsOrAlliances": "Les Kera et les Tupuri ont noué des alliances et se sont emprunté des pratiques au fil de leur histoire commune, selon Hayamkréo Matankamla.",
+      "diaspora": "Environ 10 000 Kera vivent dans des villes du Tchad et du Cameroun, souvent en communautés où l'on parle kera et français, selon Mary Pearce (2007)."
     },
     "demography": {
-      "totalPopulation": 147000,
-      "referenceYear": 2025,
-      "source": "SIL Ethnologue : 45 000 locuteurs au Tchad et 6 000 au Cameroun (edition 2024). Joshua Project 2025 : environ 138 000 au Tchad. Peoplegroups.org 2025 : 141 000 au Tchad. Estimation globale 2025 : environ 147 000 personnes.",
+      "totalPopulation": 50000,
+      "referenceYear": 2007,
+      "source": "Mary Pearce, thèse de l'University College London, 2007 : environ 50 000 personnes parlent le kera, dont 40 000 à la campagne et 10 000 dans des villes du Tchad et du Cameroun. Nous n'avons pas trouvé de chiffre par pays.",
       "distributionByCountry": [
         {
           "country": "TCD",
-          "population": 141000,
-          "note": "Mayo-Kebbi Est, region du Mont d'Illi, pres de Fianga et du lac Tike"
+          "population": null,
+          "note": "Autour de Fianga et du lac de Tikem, province du Mayo-Kebbi Est."
         },
         {
           "country": "CMR",
-          "population": 6000,
-          "note": "Departements de Mayo-Danay et Diamare, region Extreme-Nord; groupes disperses pres de Wina et Ndoukoula"
+          "population": null,
+          "note": "Nord du Cameroun, en partie dans les villes."
         }
       ]
     },
+    "gaps": [
+      {
+        "field": "content.organization.ageClassSystems",
+        "reason": "La thèse de Mary Pearce (2007) et les études d'Hayamkréo Matankamla (2023 et 2025) décrivent l'initiation des jeunes, mais pas de classes d'âge chez les Kera."
+      },
+      {
+        "field": "content.organization.roleOfLineages",
+        "reason": "Les études d'Hayamkréo Matankamla nomment les clans kera, mais ne disent pas comment se transmettent la terre, le nom ou l'autorité."
+      },
+      {
+        "field": "content.organization.religiousAuthority",
+        "reason": "Les études d'Hayamkréo Matankamla décrivent des cultes de clan et de village, mais ne nomment pas ceux qui les dirigent."
+      },
+      {
+        "field": "content.culture.artsAndMusic",
+        "reason": "Les sources que nous avons lues ne décrivent pas la musique ni les arts des Kera. Les textes publiés par Karen Ebert en 1975 restent à consulter."
+      },
+      {
+        "field": "content.historicalRole.kingdomsOrChiefdoms",
+        "reason": "Les études d'Hayamkréo Matankamla et de Mary Pearce ne décrivent pas de royaume ni de grande chefferie kera."
+      },
+      {
+        "field": "content.demography.distributionByCountry",
+        "reason": "Mary Pearce donne un chiffre total de 50 000 locuteurs en 2007, sans le répartir entre le Tchad et le Cameroun."
+      }
+    ],
     "sources": [
       {
         "title": "SIL Ethnologue — Kera (ker)",
@@ -114,11 +147,60 @@
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
         "tier": "unverified",
         "source_kind": "community"
+      },
+      {
+        "title": "Glottolog — Kera (kera1255)",
+        "url": "https://glottolog.org/resource/languoid/id/kera1255",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues, lu le 3 novembre 2026 : le kera (ker), classé dans le tchadique oriental A.3, son dialecte nyimathli et la liste des travaux de Karen Ebert."
+      },
+      {
+        "title": "Glottolog, notice bibliographique de Johannes Lukas, « Zentralsudanische Studien », 1937",
+        "url": "https://glottolog.org/resource/reference/id/102268",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice du catalogue Glottolog pour le livre de Johannes Lukas, Hambourg, Friederichsen, de Gruyter, 1937, 204 pages. Lu le 3 novembre 2026 : parmi les langues du livre, la notice indique « Tuburi = Kera [ker] » et « Mata-Fianga probably = Tupuri [tui] ». Nous n'avons pas lu le livre lui-même."
+      },
+      {
+        "title": "Glottolog, notice bibliographique de Karen H. Ebert, « \"Tuburi\" und Kera », 1968",
+        "url": "https://glottolog.org/resource/reference/id/70023",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice du catalogue Glottolog pour l'article de Karen H. Ebert, « \"Tuburi\" und Kera : Identifikation und Korrektur der Lukas'schen \"Tuburi\"-Wortlisten », Africana Marburgensia, I, 2, 1968, p. 9-13. Lu le 3 novembre 2026. Nous n'avons pas lu l'article lui-même."
+      },
+      {
+        "title": "Suzanne Ruelland, compte rendu de Karen H. Ebert, « Sprache und Tradition der Kera (Tschad) », Journal des africanistes, 1978",
+        "url": "https://www.persee.fr/doc/jafr_0399-0346_1978_num_48_2_1818_t1_0154_0000_3",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Journal des africanistes, tome 48, fascicule 2, 1978, p. 154-155. Lu le 3 novembre 2026 sur Persée : notice du premier volume, les textes, Berlin, Dietrich Reimer, 1975, 351 pages."
+      },
+      {
+        "title": "Hayamkréo Matankamla, Les espaces de vie chez les Kéra et les Toupouri (Nord-Cameroun et Sud du Tchad), 2023",
+        "url": "https://hal.science/hal-05631685/document",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre de Paul Salatou et Assana Bello (dir.), Le patrimoine culturel des populations des sites défensifs du pourtour du lac Tchad à l'épreuve de la modernité, Monange, 2023, p. 23-38. Lu le 3 novembre 2026 dans le PDF déposé sur HAL. L'auteur s'appuie sur des enquêtes orales menées à Fianga en 2019."
+      },
+      {
+        "title": "Hayamkréo Matankamla, Les noms chez les Kéra et les Toupouri au Nord-Cameroun et au Sud du Tchad, 2025",
+        "url": "https://hal.science/hal-05600141/document",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre de l'ouvrage collectif Stigmatisation and identity (de/re) construction in glocal space, LINCOM Europa, 2025, p. 109-118, publié par un chercheur de l'université de Ngaoundéré. Lu le 3 novembre 2026 dans le PDF déposé sur HAL. L'auteur s'appuie sur des enquêtes menées de 2019 à 2021."
+      },
+      {
+        "title": "Mary Pearce, The interaction of tone with voicing and foot structure: evidence from Kera phonetics and phonology, 2007",
+        "url": "https://discovery.ucl.ac.uk/id/eprint/1445070/1/U592383.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse de doctorat, University College London, 2007. Lu le 3 novembre 2026 dans le PDF en accès libre de UCL Discovery : présentation des Kera (p. 16), migration (p. 212), contacts avec le tupuri (p. 256)."
       }
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Kera désigne un peuple de langue tchadique du sud du Tchad, autour de Fianga et du lac de Tikem, avec une partie au Cameroun. Il se nomme lui-même Kera. Nous n'avons trouvé aucun autre nom pour lui. On ne sait pas avec certitude d'où vient le nom Kera : les sources lues ne l'expliquent pas. Sa plus ancienne trace connue du projet date de 1965.",
+    "summary": "Le nom Kera désigne un peuple de langue tchadique du sud du Tchad, autour de Fianga et du lac de Tikem, présent aussi au nord du Cameroun. Il se nomme lui-même Kera, écrit aussi Kéra. Des mots de sa langue ont paru en 1937 sous le nom de Tuburi, celui de ses voisins tupuri. Sa plus ancienne trace écrite que nous connaissons date de 1965 ; nous présentons plus bas ces noms et leur histoire.",
     "names": [
       {
         "nameText": "Kera",
@@ -126,7 +208,7 @@
         "selfGiven": true,
         "languageOfOrigin": "ker",
         "namedBy": null,
-        "shortLine": "Le nom que le peuple se donne ; on ne sait pas d'où il vient. Écrit depuis 1965.",
+        "shortLine": "Le nom que se donne ce peuple du sud du Tchad et du nord du Cameroun ; écrit depuis 1965.",
         "periodLabel": "Écrit depuis 1965 ; en usage aujourd'hui",
         "accounts": [
           {
@@ -160,7 +242,7 @@
             },
             "era": "modern",
             "aspect": "usage",
-            "statement": "Le nom Kera est le nom de référence de la langue dans la norme internationale ISO 639-3, sous le code ker. On ne sait pas d'où il vient : les sources lues ne l'expliquent pas.",
+            "statement": "Le nom Kera est le nom de référence de la langue dans la norme internationale ISO 639-3, sous le code ker.",
             "sources": [
               {
                 "title": "ISO 639-3, Kera [ker]",
@@ -175,13 +257,52 @@
           },
           {
             "period": {
+              "from": 2023,
+              "to": 2025,
+              "label": "Études publiées en 2023 et 2025"
+            },
+            "era": "modern",
+            "formAsWritten": "Kéra",
+            "statement": "Le nom Kera est écrit « Kéra » par l'historien Hayamkréo Matankamla, de l'université de Ngaoundéré, qui étudie les Kéra et les Toupouri du nord du Cameroun et du sud du Tchad.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Hayamkréo Matankamla",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Hayamkréo Matankamla, Les espaces de vie chez les Kéra et les Toupouri (Nord-Cameroun et Sud du Tchad), 2023",
+                "url": "https://hal.science/hal-05631685/document",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "author": "Hayamkréo Matankamla",
+                "year": 2023,
+                "page": "p. 23",
+                "notes": "Chapitre de Paul Salatou et Assana Bello (dir.), Le patrimoine culturel des populations des sites défensifs du pourtour du lac Tchad à l'épreuve de la modernité, Monange, 2023, p. 23-38. Lu le 3 novembre 2026 dans le PDF déposé sur HAL. L'auteur s'appuie sur des enquêtes orales menées à Fianga en 2019."
+              },
+              {
+                "title": "Hayamkréo Matankamla, Les noms chez les Kéra et les Toupouri au Nord-Cameroun et au Sud du Tchad, 2025",
+                "url": "https://hal.science/hal-05600141/document",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "author": "Hayamkréo Matankamla",
+                "year": 2025,
+                "page": "p. 109",
+                "notes": "Chapitre de l'ouvrage collectif Stigmatisation and identity (de/re) construction in glocal space, LINCOM Europa, 2025, p. 109-118, publié par un chercheur de l'université de Ngaoundéré. Lu le 3 novembre 2026 dans le PDF déposé sur HAL. L'auteur s'appuie sur des enquêtes menées de 2019 à 2021."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 2007,
               "to": 2007,
               "label": "Thèse de 2007, terrain de 1992 à 2006"
             },
             "era": "modern",
-            "aspect": "meaning",
-            "statement": "Le nom Kera désigne un peuple d'environ 50 000 personnes, dans le sud du Tchad et dans des parties du Cameroun, et sa langue tchadique orientale, selon la linguiste Mary Pearce. Environ 40 000 vivent à la campagne et 10 000 dans des villes du Tchad et du Cameroun. Les sources lues n'expliquent pas l'origine du nom.",
+            "aspect": "usage",
+            "statement": "Le nom Kera désigne un peuple d'environ 50 000 personnes, dans le sud du Tchad et dans des parties du Cameroun, et sa langue tchadique orientale, selon la linguiste Mary Pearce. Environ 40 000 vivent à la campagne et 10 000 dans des villes du Tchad et du Cameroun.",
             "sources": [
               {
                 "title": "The interaction of tone with voicing and foot structure: evidence from Kera phonetics and phonology",
@@ -241,6 +362,28 @@
           },
           {
             "period": {
+              "from": 1600,
+              "to": 1699,
+              "label": "Vers le XVIIe siècle, ou plus tard, selon des récits oraux"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Kera, des clans venus surtout de l'est, des environs de Bongor et de Gounou-Gaya, s'installent au sud-ouest du Tchad, selon des récits oraux rapportés par Hayamkréo Matankamla. Parmi eux figurent les Koupor, les Gamdou et les Guidam.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Hayamkréo Matankamla, Les espaces de vie chez les Kéra et les Toupouri (Nord-Cameroun et Sud du Tchad), 2023",
+                "url": "https://hal.science/hal-05631685/document",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "author": "Hayamkréo Matankamla",
+                "year": 2023,
+                "page": "p. 25-26",
+                "notes": "Chapitre de Paul Salatou et Assana Bello (dir.), Le patrimoine culturel des populations des sites défensifs du pourtour du lac Tchad à l'épreuve de la modernité, Monange, 2023, p. 23-38. Lu le 3 novembre 2026 dans le PDF déposé sur HAL. L'auteur s'appuie sur des enquêtes orales menées à Fianga en 2019."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": null,
               "to": null,
               "label": "Peuplement des lacs Fianga et Tikem, sans date"
@@ -257,6 +400,72 @@
                 "source_kind": "academic",
                 "page": "planche 7",
                 "notes": "Dans Atlas de la province Extrême-Nord Cameroun, IRD, 2000 ; la planche n'a pas de numéro de page propre. Lu dans le PDF de l'IRD (Horizon) le 13 octobre 2026, section « Les Tupuri »."
+              }
+            ]
+          }
+        ],
+        "usedIn": ["ker", "fra"]
+      },
+      {
+        "nameText": "Tuburi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des voisins tupuri, donné par erreur en 1937 à des listes de mots kera.",
+        "periodLabel": "1937, corrigé en 1968",
+        "accounts": [
+          {
+            "period": {
+              "from": 1968,
+              "to": 1968,
+              "label": "Article de 1968"
+            },
+            "era": "modern",
+            "statement": "Le nom Tuburi des listes de Johannes Lukas est corrigé par la linguiste Karen Ebert. Son article de 1968 s'intitule « \"Tuburi\" und Kera : Identifikation und Korrektur der Lukas'schen \"Tuburi\"-Wortlisten », c'est-à-dire l'identification et la correction des listes « Tuburi » de Lukas.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Karen H. Ebert",
+                "role": "identifie et corrige les listes"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Glottolog, notice bibliographique de Karen H. Ebert, « \"Tuburi\" und Kera », 1968",
+                "url": "https://glottolog.org/resource/reference/id/70023",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "author": "Glottolog",
+                "year": null,
+                "notes": "Notice du catalogue Glottolog pour l'article de Karen H. Ebert, « \"Tuburi\" und Kera : Identifikation und Korrektur der Lukas'schen \"Tuburi\"-Wortlisten », Africana Marburgensia, I, 2, 1968, p. 9-13. Lu le 3 novembre 2026. Nous n'avons pas lu l'article lui-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1937,
+              "to": 1937,
+              "label": "Livre publié en 1937"
+            },
+            "era": "colonial",
+            "birth": true,
+            "statement": "Le nom Tuburi est donné au kera dans les « Zentralsudanische Studien » du linguiste allemand Johannes Lukas : le catalogue Glottolog identifie ses listes « Tuburi » comme du kera, et rattache au tupuri d'autres listes de Fianga. C'est la plus ancienne trace de ce nom pour les Kera que nous connaissons.",
+            "actors": [
+              {
+                "name": "Johannes Lukas",
+                "role": "publie les listes sous ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Glottolog, notice bibliographique de Johannes Lukas, « Zentralsudanische Studien », 1937",
+                "url": "https://glottolog.org/resource/reference/id/102268",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "author": "Glottolog",
+                "year": null,
+                "notes": "Notice du catalogue Glottolog pour le livre de Johannes Lukas, Hambourg, Friederichsen, de Gruyter, 1937, 204 pages. Lu le 3 novembre 2026 : parmi les langues du livre, la notice indique « Tuburi = Kera [ker] » et « Mata-Fianga probably = Tupuri [tui] ». Nous n'avons pas lu le livre lui-même."
               }
             ]
           }
