@@ -177,5 +177,6 @@ were referenced by nothing at all, two of them written that same week.
 - [EthniAfrica — Production Readiness Audit](PRODUCTION-READINESS-AUDIT.md)
 - [Language-tier catalog audit against Glottolog 5.3](data-audits/language-tier-audit-glottolog-5.3.md)
 - [The production history and its cadence](productions/README.md)
+- [Routine — daily name proposals](routines/propositions-daily.md)
 - [UNESCO reference collection — catalogue](sources/unesco/README.md)
 - [UNESCO collection × AFRIK corpus — concordance](sources/unesco/concordance-afrik.md)
