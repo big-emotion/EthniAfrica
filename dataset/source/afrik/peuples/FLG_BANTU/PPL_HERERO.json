@@ -140,6 +140,12 @@
         "url": "https://academic.oup.com/book/61440/chapter/534774683",
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Glottolog - Herero (here1253)",
+        "url": "https://glottolog.org/resource/languoid/id/here1253",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   },
