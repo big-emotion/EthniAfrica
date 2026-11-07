@@ -58,8 +58,10 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * carried to the Cabo Verde fiche is cited at the referenced tier.
  * 874 -> 873 on 2026-10-19: the Burkina Faso fiche's Ethnologue country
  * page now carries its address and the catalogue's official tier.
+ * 873 -> 870 on 2026-11-03: three needs_review citations left with the
+ * claims they carried in the premium pass of eight people fiches.
  */
-export const NEEDS_REVIEW_RATCHET = 873;
+export const NEEDS_REVIEW_RATCHET = 870;
 
 /** The doctrine's three tiers, plus the numeric tiers the name/relation/migration fiches still carry. */
 const TIERS_WITH_AUTHORITY = new Set<unknown>([

@@ -23,7 +23,8 @@ interface Fold {
   keeper: string;
   /** One item per kind that only the retired fiche held, proving the carry-over. */
   carried: {
-    sourceTitle: string;
+    /** Absent when a later review removed the citation with its claims. */
+    sourceTitle?: string;
     subGroup?: string;
     dialect?: string;
     exonym?: string;
@@ -47,9 +48,9 @@ const FOLDS: Fold[] = [
     retired: ["PPL_GURMA"],
     keeper: "FLG_GUR/PPL_GOURMANTCHE",
     carried: {
-      sourceTitle:
-        "Salif Titamba Lankoande — Les Gourmantché. Presses Africaines du Burkina, Ouagadougou, 2006",
-      subGroup: "Gurma du Bénin",
+      // Lankoande 2006 could not be read in the premium pass of 2026-11-03
+      // and left with the claims that rested on it. The country subgroups
+      // (« Gurma du Bénin ») gave way to the groups the sources name.
       exonym: "Gurmanche",
     },
   },
@@ -249,9 +250,11 @@ describe("duplicate people fiches folded on 2026-10-11", () => {
       const { sourceTitle, subGroup, dialect, exonym, isoCode, country } =
         fold.carried;
 
-      expect(
-        sources.map((source: { title: string }) => source.title)
-      ).toContain(sourceTitle);
+      if (sourceTitle) {
+        expect(
+          sources.map((source: { title: string }) => source.title)
+        ).toContain(sourceTitle);
+      }
       if (subGroup) {
         expect(
           ethnicities.some((line: string) => line.includes(subGroup)),
@@ -264,7 +267,12 @@ describe("duplicate people fiches folded on 2026-10-11", () => {
           dialect
         ).toBe(true);
       }
-      if (exonym) expect(appellations.exonyms).toContain(exonym);
+      // A spelling of the same name sits in spellingAliases, not exonyms.
+      if (exonym)
+        expect([
+          ...appellations.exonyms,
+          ...(appellations.spellingAliases ?? []),
+        ]).toContain(exonym);
       if (isoCode) expect(languages.isoCodes).toContain(isoCode);
       if (country) expect(fiche.currentCountries).toContain(country);
     }

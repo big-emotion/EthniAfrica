@@ -691,8 +691,8 @@
   },
   {
     "id": "PPL_GOURMANTCHE",
-    "status": "colonial-legacy",
-    "rationale": "Les graphies Gurma/Gourma « refletent les transcriptions coloniales francaises et britanniques plutot qu'un endonyme stable », face a l'endonyme Gulmanceba."
+    "status": "contested",
+    "rationale": "La fiche dit que « le nom Gourma viendrait des Songhay, selon Heinrich Barth en 1858, et le nom Gourmantché est, selon l'historien Diouldé Laya en 1991, le mot de l'administration pour désigner les Gulmanceba » : un nom donné par des voisins africains et un terme administratif, sans création coloniale du nom établie par les sources."
   },
   {
     "id": "PPL_GOUROUNSI",
@@ -712,7 +712,7 @@
   {
     "id": "PPL_GUERE",
     "status": "colonial-legacy",
-    "rationale": "Guere est un exonyme introduit par l'administration coloniale francaise, et la partition Guere / Wobe fut imposee par les Francais alors que la population se designait uniquement comme We."
+    "rationale": "La fiche attribue le nom à un classement colonial : « Le nom Guéré vient d'un classement fait par l'administration coloniale française », qui « a cru voir deux ethnies différentes » chez les Guéré et les Wobé, et un administrateur colonial, le capitaine Laurent, « a étendu le nom d'un petit groupe à toute la population au sud des Dan »."
   },
   {
     "id": "PPL_GUMUZ",
@@ -1347,7 +1347,7 @@
   {
     "id": "PPL_NANDE",
     "status": "colonial-legacy",
-    "rationale": "La fiche dit que Nande et Konjo designent une seule entite, les Bayira, 'separee par la frontiere coloniale', la distinction etant administrative et politique et le nom porte par les administrateurs."
+    "rationale": "La fiche dit que Banande « est celui que l'administration coloniale belge inscrit dans ses registres, alors que ce peuple se dit Bayira », qu'il sert « à nommer de 1928 à 1935 les territoires des Wanande-Nord et des Wanande-Sud », et que Johnston l'avait appliqué en 1902 « à un type humain qu'il décrivait avec mépris »."
   },
   {
     "id": "PPL_NANKANA",

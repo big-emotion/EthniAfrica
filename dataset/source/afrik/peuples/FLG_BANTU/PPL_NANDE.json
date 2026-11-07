@@ -2,143 +2,10 @@
   "id": "PPL_NANDE",
   "nameMain": "Nande",
   "languageFamilyId": "FLG_BANTU",
-  "currentCountries": ["COD"],
+  "currentCountries": ["COD", "UGA"],
   "classificationStatus": "colonial-legacy",
-  "content": {
-    "appellations": {
-      "mainName": "Nande",
-      "selfAppellation": "Yira",
-      "exonyms": [
-        "Yira",
-        "Nande",
-        "Banande",
-        "Konjo (pour la branche ougandaise)"
-      ],
-      "originOfExonyms": "Yira ou Bayira est l'autodesignation du groupe. Le terme Nande est utilise par les administrateurs et voisins swahilophones. Konjo designe le meme groupe en Ouganda.",
-      "whyProblematic": "La distinction entre Nande (RDC) et Konjo (Ouganda) est essentiellement administrative et politique : les deux populations se considerent comme une seule et meme entite ethno-culturelle, les Bayira, separee par la frontiere coloniale.",
-      "contemporaryUsage": "Nande est le terme courant en RDC et dans la litterature scientifique francophone. Bayira reste l'autodesignation preferee au sein de la communaute.",
-      "linguisticFamily": "FLG_BANTU",
-      "ethnoLinguisticGroup": "Bantou (Zone J, groupe Masaba-Luyia, J.40, sous-groupe Nande-Konjo)",
-      "historicalRegion": "Est de la RDC, territoires de Beni et Lubero dans la province du Nord-Kivu ; versants occidentaux des Monts Ruwenzori (frontiere RDC-Ouganda)",
-      "currentCountries": ["COD"]
-    },
-    "ethnicities": [
-      "Baswagha (clan du nord, territoire de Lubero)",
-      "Basukali (Basu, clan du centre)",
-      "Bamate (famille noble du territoire de Beni)",
-      "Bahira (clan de la region de Beni)",
-      "Bakira (clan central du territoire de Beni)",
-      "Bahambo (clan du versant du Ruwenzori)",
-      "Bito (clan royal, region de Lubero)",
-      "Batangi (clan de la region de Tangi)",
-      "Bahumbe (clan du territoire de Lubero)",
-      "Bakumbule (clan de Kumbule)",
-      "Batike (clan de la region de Tike)",
-      "Babinga (clan du nord, territoire de Lubero)"
-    ],
-    "origins": {
-      "ancientOrigins": "Les Bayira (Nande) tracent leurs origines aux Monts Ruwenzori, massif frontalier entre l'actuelle RDC et l'Ouganda. Selon la tradition orale et les travaux historiques, le peuple est arrive dans sa region actuelle depuis l'Ouganda, en traversant la riviere Semuliki. Cette migration les relie aux Bakonzo d'Ouganda, avec qui ils forment une seule entite ethno-culturelle.",
-      "formationPeriod": "La presence des Bayira dans les territoires de Beni et Lubero remonte a plusieurs siecles avant la colonisation europeenne. L'organisation en 12 clans independants s'est consolidee durant cette periode pre-coloniale. Les Nande ont developpe un commerce regional actif grace a leur position geographique a l'interface des zones forestieres et des hauts plateaux.",
-      "migrationRoutes": [
-        "Depuis les Monts Ruwenzori vers les vallees du Semliki et de la Rutshuru",
-        "Expansion vers le sud le long de la rift albertine vers les territoires de Beni et Lubero"
-      ],
-      "historicalSettlementZones": [
-        "Territoire de Beni (Nord-Kivu, versants du Ruwenzori)",
-        "Territoire de Lubero (hauts plateaux du Nord-Kivu)",
-        "Rutshuru (minorite)",
-        "Kasese et Bundibugyo (Ouganda, branche Bakonzo)"
-      ],
-      "unificationsOrDivisions": "Les Nande sont organises en 12 clans independants, chacun gouverne par sa propre tete de famille (omukama, omughole ou omwami). Il n'existe pas de roi supreme commun a l'ensemble des Bayira, ce qui les distingue des royaumes voisins centralises.",
-      "externalInfluences": "Influence swahilophone croissante depuis le XIXe siecle via le commerce caravanier arabo-swahili. Penetration missionnaire chretienne (catholique et protestante) pendant la colonisation belge. Presence militaire recurrente depuis les guerres du Kivu (1993-present) qui a bouleverse les equilibres demographiques et economiques de la region.",
-      "majorHistoricalEvents": "Commerce regional pre-colonial avec les populations de la foret et de la savane. Colonisation belge et creation des territoires administratifs de Beni et Lubero. Guerres du Kivu (1996-2003) et conflits armes recurrents avec des groupes rebelles (ADF, Interahamwe) qui ont fait des Nande une cible privilegiee."
-    },
-    "organization": {
-      "traditionalPoliticalSystem": "Organisation en 12 clans independants. Chaque clan est dirige par sa propre tete de famille, egalement appelee roi (omukama, omughole ou omwami), qui exerce une autorite a la fois politique et ceremonielle. Il n'existe pas de structure politique supraclanique permanente. Les decisions interclaniques se prennent par consensus lors d'assemblees d'anciens.",
-      "clanOrganization": "Structure clanique patrilineaire. Les 12 clans principaux (Baswagha, Basukali, Bamate, Bahira, Bakira, Bahambo, Bito, Batangi, Bahumbe, Bakumbule, Batike, Babinga) sont chacun independants et territorialement definis. Les femmes du clan Basu sont designees Basukali.",
-      "ageClassSystems": null,
-      "roleOfLineages": "Les lignages patrilineaires definissent l'appartenance clanique, les droits fonciers et les alliances matrimoniales. Le chef de clan (omukama) tire sa legitimite de son ancestre fondateur.",
-      "religiousAuthority": "Autorite spirituelle exercee par les chefs de clan, les devins (bamutu ou omulogo) et, depuis la colonisation, par les pretres et pasteurs chretiens. Le catholicisme et le protestantisme evangelique sont aujourd'hui les religions dominantes chez les Nande."
-    },
-    "languages": {
-      "mainLanguage": "Kinande (Nande, Olhuyira)",
-      "isoCodes": ["nnb"],
-      "dialects": [
-        "Nande proprement dit",
-        "Kumbule (Ekikumbule)",
-        "Mate (Ekimate)",
-        "Tangi (Ekitangi)",
-        "Sanza (Ekisanza)",
-        "Shu (Ekishu, avec une variete feminine historique EkiShukaali)",
-        "Songola (Ekisongoora, Nyangala)",
-        "Swaga / Kira (Ekikira)"
-      ],
-      "vehicularRole": "Le kinande est la langue maternelle de plus de 60% de la population du Nord-Kivu. Il est parle dans les territoires de Beni et Lubero comme langue de communication intra-communautaire. Le swahili est la lingua franca regionale et le francais la langue officielle de la RDC et de l'enseignement. En Ouganda, la variante konjo (kikongo) est parlee a Kasese et Bundibugyo."
-    },
-    "culture": {
-      "majorRites": "Ceremonies de mariage impliquant la negociation et le paiement de la dot (ebikoko) entre familles. Rites d'initiation masculine marques par des ceremonies communautaires sous l'autorite des anciens du clan. Rites funeraires avec veille, chants et festin communautaire. Ceremonies de premiere recolte et de benediction des semailles. Rituels de purification et d'intercession aupres des ancetres lors des crises (secheresse, epidemie, conflit).",
-      "symbols": "Le Ruwenzori (Monts de la Lune) comme montagne sacree et lieu d'origine identitaire. L'omukama (chef de clan) comme figure d'autorite et de legitimite ancestrale. La houe et les cultures maraicheres (signe du travail de la terre comme valeur cardinale). La lune comme symbole cosmologique lie au nom Ruwenzori (montagne qui fabrique la pluie).",
-      "artsAndMusic": "Tradition de sculpture sur bois et de travail du fer. Musique comprenant des tambours (ngoma), des xylophones et des instruments a cordes. Chants polyphoniques accompagnant les ceremonies de mariage et de deuil. Danse yira, pratiquee lors des fetes communautaires et des ceremonies claniques. Artisanat de poterie (ekibo) et de tissage. Tradition de commerce et de negoce comme art social valorise.",
-      "spiritualities": "Le systeme spirituel traditionnel bayira inclut la veneration des ancetres (abazimu), la croyance en des esprits de la nature lies aux montagnes et aux eaux, et le recours aux devins-guerisseurs (omulogo ou omusamyi) pour la mediation avec le monde invisible. La tres grande majorite des Nande est aujourd'hui chretienne, principalement catholique (influence des missionnaires Assomptionnistes presents depuis le debut du XXe siecle) ou protestante evangelique, avec un synchretisme marquant les pratiques quotidiennes."
-    },
-    "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de royaume unifie : 12 chefferies claniques independantes. Certains clans comme les Bito ont exerce une influence preponderante dans leur territoire. Sous la colonisation belge, des chefferies reconnues administrativement furent instaurees dans les territoires de Beni et Lubero.",
-      "relationsWithNeighbors": "Relations commerciales avec les Pygmees (Mbuti) de la foret de l'Ituri, les Hunde, les Komo et les populations swahilophones de l'est du Congo. Les Nande sont reconnus comme des commercants actifs, controlant historiquement les echanges entre zones forestieres, montagneuses et lacustres du Nord-Kivu. Relations etroites et identite partagee avec les Bakonzo d'Ouganda.",
-      "conflictsOrAlliances": "Conflits recurrents depuis les annees 1990 avec des groupes armes (Interahamwe rwandais, ADF-NALU ougandais) dans le territoire de Beni. Les Nande ont ete victimes de massacres systematiques attribues aux ADF depuis 2014, faisant de leur region l'une des plus meurtries du conflit du Kivu.",
-      "diaspora": "Diaspora nande significative a Goma, Kinshasa et dans les grandes villes de la RDC. Presence dans la diaspora congolaise en Belgique, en France et en Amerique du Nord."
-    },
-    "demography": {
-      "totalPopulation": 4000000,
-      "referenceYear": 2025,
-      "source": "SIL Ethnologue (nnb) : plus de 10 millions de locuteurs de kinande en RDC (2022), chiffre qui inclut les locuteurs non nande. PeopleGroups.org (2024) : 2 615 000 Nande en RDC. 101 Last Tribes (2024) : 2 510 500 dans deux pays. La langue est declaree parlée par plus de 60% de la population du Nord-Kivu (province d'environ 6,5 millions d'hab. en 2025). Estimation 2025 retenue : 4 millions, incluant la diaspora nationale et la branche ougandaise (Konjo : env. 1 million).",
-      "distributionByCountry": [
-        {
-          "country": "COD",
-          "population": 3000000,
-          "note": "Territoires de Beni et Lubero, Nord-Kivu"
-        },
-        {
-          "country": "UGA",
-          "population": 1000000,
-          "note": "Bakonzo des districts de Kasese et Bundibugyo"
-        }
-      ]
-    },
-    "sources": [
-      {
-        "title": "SIL Ethnologue – Nande (nnb)",
-        "url": "https://www.ethnologue.com/language/nnb/",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
-      },
-      {
-        "title": "PeopleGroups.org – Nande of DRC (2024)",
-        "url": "https://peoplegroups.org/people_groups/pg014669/",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "101 Last Tribes – Nande people",
-        "url": "https://www.101lasttribes.com/tribes/nande.html",
-        "tier": "unverified",
-        "source_kind": "community"
-      },
-      {
-        "title": "Global Press Journal – A Tribe Watches Its Language Languish (2021)",
-        "url": "https://globalpressjournal.com/africa/democratic-republic-of-congo/tribe-watches-language-languish/",
-        "tier": "referenced",
-        "source_kind": "press"
-      },
-      {
-        "title": "Swordshare Map – Kinande (nnb)",
-        "url": "https://map.swordshare.com/nnb",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      }
-    ]
-  },
   "nameHistory": {
-    "summary": "Le nom Nande désigne un peuple bantou de l'est de la République démocratique du Congo, dans les territoires de Beni et de Lubero, au Nord-Kivu ; en Ouganda, au pied du Rwenzori, les gens du même ensemble sont appelés Bakonzo. Ensemble, ils se nomment Bayira, ou Yira. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Nande désigne un peuple bantou de l'est de la République démocratique du Congo, qui vit surtout dans les territoires de Beni et de Lubero, au Nord-Kivu. Ce peuple se nomme lui-même Bayira, ou Yira. D'autres noms existent : Banande ou Wanande au Congo, Bakonzo ou Bakonjo en Ouganda, au pied du Rwenzori. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Bayira",
@@ -147,7 +14,7 @@
         "languageOfOrigin": "nnb",
         "namedBy": null,
         "shortLine": "Le nom commun que se donnent les Nande du Congo et les Konzo de l'Ouganda.",
-        "periodLabel": "En usage aujourd'hui",
+        "periodLabel": "Écrit dès 1936 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
@@ -167,7 +34,7 @@
                 "tier": "unverified",
                 "source_kind": "community",
                 "page": "introduction",
-                "notes": "Nairobi, African Proverbs Working Group. Lu en ligne le 10 octobre 2026."
+                "notes": "Nairobi, African Proverbs Working Group, mai 2017. Lu le 3 novembre 2026. Passage lu : « The Nande of Congo and the Konjo people of Uganda are a single ethnic group, called Yira (Bayira). They trace their origins to the Ruwenzori Mountains »."
               }
             ]
           },
@@ -177,8 +44,7 @@
               "to": 1830,
               "label": "Début du XIXe siècle"
             },
-            "era": "polity",
-            "statement": "Le nom Bayira désigne, selon les chercheurs que résume le programme de données sur les conflits de l'université d'Uppsala, un peuple de l'ancien royaume du Bunyoro dont descendraient les Nande et les Konzo : au début du XIXe siècle, une partie des Bayira aurait franchi le Rwenzori vers l'ouest et pris le nom de Banande, tandis que ceux restés à l'est seraient devenus les Bakonzo.",
+            "statement": "Le nom Bayira désigne, selon les chercheurs que résume le programme de données sur les conflits de l'université d'Uppsala, un peuple de l'ancien royaume du Bunyoro, dans l'actuel Ouganda, dont descendraient les Nande et les Konzo. Au début du XIXe siècle, une partie des Bayira aurait franchi le Rwenzori vers l'ouest et pris le nom de Banande, tandis que ceux restés à l'est seraient devenus les Bakonzo.",
             "sources": [
               {
                 "title": "Nande",
@@ -187,7 +53,52 @@
                 "url": "https://ucdp.uu.se/actor/2397",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "notes": "Fiche d'acteur du programme de données sur les conflits, lue en ligne le 10 octobre 2026."
+                "notes": "Fiche d'acteur du programme de données sur les conflits de l'université d'Uppsala, lue le 3 novembre 2026. Passage lu : « Researchers generally traced both Nande and Bakonzo back to the Bayira, a people who once lived in the ancient kingdom of Bunyoro »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1936,
+              "to": 1936,
+              "label": "1936"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bayira est, selon l'administrateur colonial belge Alfred Moeller, le nom que se donnent couramment les gens qu'il appelle Banande. Il désigne la masse de la population, par opposition aux Bakama, les familles régnantes : le chef, le Mukama, parle de ses sujets comme de « Bayira Bage », « mes Bayira ». Moeller ajoute qu'ils appellent leur langue Obuyira. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple se donnait sans doute ce nom bien avant que Moeller l'écrive.",
+            "formAsWritten": "Bayira",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les grandes lignes des migrations des Bantous de la Province Orientale du Congo belge",
+                "author": "Alfred Moeller",
+                "year": 1936,
+                "url": "https://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(IRCB)_T.VI,_MOELLER%20A._Les%20grandes%20lignes%20des%20migrations%20des%20bantous_1936.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 92",
+                "notes": "Ouvrage d'un administrateur colonial, publié en 1936 à Bruxelles par l'Institut royal colonial belge, Mémoires, tome VI. Lu le 3 novembre 2026 dans la numérisation de l'Académie royale des sciences d'outre-mer. Passage lu : « Ces indigènes se disent couramment Bayira, mais cette appellation désigne la masse de la population en opposition avec l'appellation Bakama »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1936,
+              "to": 1936,
+              "label": "Proposée en 1936"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bayira serait à rapprocher, selon Alfred Moeller, du nom Baïro ou Bayiro qui désigne la masse de la population dans l'Ankole, en Ouganda. Moeller s'appuie sur Harry Johnston, pour qui ce mot serait le nom que les éleveurs bahima donnaient à ceux qu'ils tenaient pour leurs serviteurs.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les grandes lignes des migrations des Bantous de la Province Orientale du Congo belge",
+                "author": "Alfred Moeller",
+                "year": 1936,
+                "url": "https://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(IRCB)_T.VI,_MOELLER%20A._Les%20grandes%20lignes%20des%20migrations%20des%20bantous_1936.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 14 et p. 92, note 3",
+                "notes": "Ouvrage d'un administrateur colonial, publié en 1936 à Bruxelles par l'Institut royal colonial belge. Lu le 3 novembre 2026. Passage lu, p. 14 : « Elle est à rapprocher de l'appellation de « baïro » donnée à la masse de la population dans l'Ankole »."
               }
             ]
           }
@@ -198,8 +109,8 @@
         "nameStatus": "current",
         "selfGiven": false,
         "languageOfOrigin": "nnb",
-        "namedBy": "leurs voisins, selon Johnston",
-        "shortLine": "Le nom courant au Congo ; Munande pour une seule personne.",
+        "namedBy": "leurs voisins selon Johnston ; les Arabes puis les Européens selon Moeller",
+        "shortLine": "Le nom courant au Congo, écrit aussi Wanande ; Munande pour une seule personne.",
         "periodLabel": "Écrit dès 1902",
         "accounts": [
           {
@@ -219,7 +130,135 @@
                 "url": "https://ucdp.uu.se/actor/2397",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "notes": "Fiche d'acteur du programme de données sur les conflits, lue en ligne le 10 octobre 2026."
+                "notes": "Fiche d'acteur du programme de données sur les conflits de l'université d'Uppsala, lue le 3 novembre 2026. Passage lu : « Estimates put the Nande population in DR Congo at around two million »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1935,
+              "label": "1928-1935"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wanande devient sous l'administration coloniale belge le nom de deux territoires : celui des Wanande-Nord, autour de Beni, et celui des Wanande-Sud, autour de Lubero. Une ordonnance de 1932 donne alors à chaque territoire de l'Ituri le nom d'un des principaux groupes ethniques, et ces deux territoires passent en 1935 au district du Nord-Kivu, selon une monographie du Musée royal de l'Afrique centrale. L'avant-propos du même ouvrage date ce changement de nom de 1928.",
+            "formAsWritten": "Wanande",
+            "aspect": "imposition",
+            "actors": [
+              {
+                "name": "L'administration coloniale belge",
+                "role": "nomme deux territoires d'après ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Ituri. Terre et identités sous tension",
+                "author": "Jean Omasombo Tshonda (dir.)",
+                "year": 2021,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/monographies-provinces/ituri.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 16, note 2, et p. 269",
+                "notes": "Tervuren, Musée royal de l'Afrique centrale, 2021, collection « Monographies des provinces de la RD Congo », volume 15. Lu le 3 novembre 2026 en texte intégral. Passages lus : p. 16, « En 1928, ces deux territoires furent dénommés Wanande-Sud (chef-lieu Lubero) et Wanande-Nord (chef-lieu Beni) » ; p. 269, « chacun portant le nom d'un des principaux groupes ethniques du Kibali-Ituri »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1936,
+              "to": 1936,
+              "label": "1936"
+            },
+            "era": "colonial",
+            "statement": "Le nom Banande est celui que retient l'administrateur colonial Alfred Moeller, parce que c'est sous ce nom que ces populations figurent dans les registres de l'administration coloniale belge, alors qu'elles se disent Bayira.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Les grandes lignes des migrations des Bantous de la Province Orientale du Congo belge",
+                "author": "Alfred Moeller",
+                "year": 1936,
+                "url": "https://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(IRCB)_T.VI,_MOELLER%20A._Les%20grandes%20lignes%20des%20migrations%20des%20bantous_1936.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 93",
+                "notes": "Ouvrage d'un administrateur colonial, publié en 1936 à Bruxelles par l'Institut royal colonial belge. Lu le 3 novembre 2026. Passage lu : « Nous continuerons à faire usage dans les présentes notes de l'appellation « Banande », puisque aussi bien c'est sous ce nom que les populations qui nous occupent figurent à l'inventaire de nos ressortissants »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1936,
+              "to": 1936,
+              "label": "Proposée en 1936"
+            },
+            "era": "colonial",
+            "statement": "Le nom Banande, ou plus exactement Bandande, aurait été donné à ce peuple par les Arabes, puis repris par les Européens et leur entourage, selon Alfred Moeller.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine-du-nom-banande",
+            "sources": [
+              {
+                "title": "Les grandes lignes des migrations des Bantous de la Province Orientale du Congo belge",
+                "author": "Alfred Moeller",
+                "year": 1936,
+                "url": "https://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(IRCB)_T.VI,_MOELLER%20A._Les%20grandes%20lignes%20des%20migrations%20des%20bantous_1936.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 91",
+                "notes": "Ouvrage d'un administrateur colonial, publié en 1936 à Bruxelles par l'Institut royal colonial belge. Lu le 3 novembre 2026. Passage lu : « Les Banande ou Wanande, ou plus exactement les Bandande ou Wandande, auraient reçu l'appellation ci-dessus […] des Arabes et, par la suite, des Européens et de l'entourage de ceux-ci »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1936,
+              "to": 1936,
+              "label": "Rapportée en 1936"
+            },
+            "era": "colonial",
+            "statement": "Le nom Banande ne serait pas d'origine européenne, selon le chercheur Bernhard Struck cité par Alfred Moeller : l'explorateur allemand Franz Stuhlmann aurait déjà entendu parler en 1891 des « Wanandi-Wakonjo », dans la forêt. Nous n'avons pas retrouvé la forme Wanandi dans le récit de voyage que Stuhlmann publie en 1894 ; il y nomme les Wakondjo.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine-du-nom-banande",
+            "sources": [
+              {
+                "title": "Les grandes lignes des migrations des Bantous de la Province Orientale du Congo belge",
+                "author": "Alfred Moeller",
+                "year": 1936,
+                "url": "https://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(IRCB)_T.VI,_MOELLER%20A._Les%20grandes%20lignes%20des%20migrations%20des%20bantous_1936.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 91, note 3",
+                "notes": "Ouvrage d'un administrateur colonial, publié en 1936 à Bruxelles par l'Institut royal colonial belge. Lu le 3 novembre 2026. Passage lu, citation de Struck : « I should, however, be disposed to doubt that this name is […] really of European origin, since Stuhlman, so long ago as 1891, heard of the « Wanandi-Wakonjo » in the forest »."
+              },
+              {
+                "title": "Mit Emin Pascha ins Herz von Afrika",
+                "author": "Franz Stuhlmann",
+                "year": 1894,
+                "url": "https://archive.org/details/miteminpaschains00stuh",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Berlin, Dietrich Reimer, 1894, récit d'un voyage fait pour le compte de l'administration coloniale allemande. Lu le 3 novembre 2026 dans le texte numérisé d'Internet Archive, où nous avons cherché les formes Wanandi et Wakondjo. Passage lu : « woselbst Wahöli-Wakondjo wohnen »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1936,
+              "to": 1936,
+              "label": "Rapporté en 1936"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wanande sert aussi, chez les Wanisanza du versant ouest du Rwenzori, à désigner dans le parler courant les peuples qui leur sont soumis, notamment les Bambuba, selon une des sources d'Alfred Moeller.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les grandes lignes des migrations des Bantous de la Province Orientale du Congo belge",
+                "author": "Alfred Moeller",
+                "year": 1936,
+                "url": "https://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(IRCB)_T.VI,_MOELLER%20A._Les%20grandes%20lignes%20des%20migrations%20des%20bantous_1936.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 91, note 2",
+                "notes": "Ouvrage d'un administrateur colonial, publié en 1936 à Bruxelles par l'Institut royal colonial belge. Lu le 3 novembre 2026. Passage lu : « le terme de Wanande sert, dans le parler courant, à désigner les peuplades soumises, notamment les Bambuba »."
               }
             ]
           },
@@ -241,8 +280,8 @@
                 "url": "https://archive.org/details/cu31924087982504",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 476 et p. 510-511",
-                "notes": "Londres, Hutchinson. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+                "page": "p. 477 et p. 510-511",
+                "notes": "Londres, Hutchinson, 1902. Ouvrage d'un administrateur colonial britannique. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Passage lu, p. 510 : « This ape-like type was generally known to the surrounding negroes as “Banande.” »."
               }
             ]
           }
@@ -259,23 +298,23 @@
         "accounts": [
           {
             "period": {
-              "from": 1890,
-              "to": 1890,
-              "label": "1890"
+              "from": 2014,
+              "to": 2014,
+              "label": "2014"
             },
-            "statement": "Le nom Bakonzo apparaît sous une forme proche, « Wakonju », chez Henry Morton Stanley en 1890 : en 1889, sur les pentes ouest du Rwenzori, il traverse le pays qu'il appelle Ukonju et recueille les informations des Wakonju, devenus ses amis. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà sur le Rwenzori avant lui.",
-            "formAsWritten": "Wakonju",
-            "birth": true,
+            "era": "modern",
+            "statement": "Le nom Bakonzo est celui sous lequel 850 646 habitants de l'Ouganda sont recensés en 2014, d'après le rapport du recensement national publié par le bureau ougandais de la statistique.",
+            "aspect": "usage",
             "sources": [
               {
-                "title": "In Darkest Africa, vol. II",
-                "author": "Henry M. Stanley",
-                "year": 1890,
-                "url": "https://www.gutenberg.org/ebooks/43655",
-                "tier": "referenced",
-                "source_kind": "archive",
-                "page": "p. 270 et p. 283",
-                "notes": "Londres, Sampson Low, Marston, Searle and Rivington. Lu dans l'édition du Projet Gutenberg, qui garde la pagination de l'original, le 10 octobre 2026."
+                "title": "Uganda Bureau of Statistics — The National Population and Housing Census 2014, Main Report",
+                "author": "Uganda Bureau of Statistics",
+                "year": 2016,
+                "url": "https://uganda.unfpa.org/sites/default/files/pub-pdf/CENSUS%202014%20Final%20Results_0.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "p. 71, tableau A8",
+                "notes": "Kampala, Uganda Bureau of Statistics, 2016, copie publiée par le Fonds des Nations unies pour la population en Ouganda. Lu le 3 novembre 2026. Ligne lue dans le tableau de la population par groupe ethnique : « Bakonzo 414,657 435,989 719,076 131,570 850,646 »."
               }
             ]
           },
@@ -297,12 +336,286 @@
                 "tier": "official",
                 "source_kind": "government",
                 "page": "Third Schedule",
-                "notes": "La troisième annexe dresse la liste des communautés autochtones de l'Ouganda au 1er février 1926. Texte tel que modifié en dernier lieu par la loi n° 13 de 2000, lu dans la base WIPO Lex de l'Organisation mondiale de la propriété intellectuelle le 10 octobre 2026."
+                "notes": "La troisième annexe dresse la liste des communautés autochtones de l'Ouganda au 1er février 1926. Texte tel que modifié en dernier lieu par la loi n° 13 de 2000, lu dans la base WIPO Lex de l'Organisation mondiale de la propriété intellectuelle le 3 novembre 2026. Entrée lue : « 16. Bakonzo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1936,
+              "to": 1936,
+              "label": "Rapporté en 1936"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bakondjo voudrait dire « montagnards », selon une des sources d'Alfred Moeller : les Banande de la plaine appellent ainsi ceux de la montagne, qui se nomment eux-mêmes Banierungu, « gens de la plaine ». Moeller ajoute que les gens du Toro et du Busongora appellent aussi Bakondjo les montagnards du versant est du Rwenzori, et que les cartes britanniques ont repris ce nom après Stanley et Johnston.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les grandes lignes des migrations des Bantous de la Province Orientale du Congo belge",
+                "author": "Alfred Moeller",
+                "year": 1936,
+                "url": "https://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(IRCB)_T.VI,_MOELLER%20A._Les%20grandes%20lignes%20des%20migrations%20des%20bantous_1936.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 14 et p. 92, note 2",
+                "notes": "Ouvrage d'un administrateur colonial, publié en 1936 à Bruxelles par l'Institut royal colonial belge. Lu le 3 novembre 2026. Passage lu, p. 92 : « les Banande de la plaine désignent les Banande de la montagne sous le nom de Bakondjo (« montagnards ») »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "1890"
+            },
+            "statement": "Le nom Wakonju se rattacherait à Mikonju, que Henry Morton Stanley présente, d'après une tradition entendue en 1889, comme le fondateur de la tribu, celui qui aurait le premier défriché la forêt et planté des bananiers.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "In Darkest Africa, vol. II",
+                "author": "Henry M. Stanley",
+                "year": 1890,
+                "url": "https://www.gutenberg.org/ebooks/43655",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chapitre XXVIII",
+                "notes": "Londres, Sampson Low, Marston, Searle and Rivington, 1890. Lu le 3 novembre 2026 dans l'édition du Projet Gutenberg. Passage lu : « A tradition exists that Mikonju, the founder of the tribe who first cleared the forest, and planted bananas, initiated this custom »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "1890"
+            },
+            "statement": "Le nom Bakonzo apparaît sous une forme proche, Wakonju, chez Henry Morton Stanley en 1890 : en 1889, sur les pentes ouest du Rwenzori, il traverse le pays qu'il appelle Ukonju et recueille les informations des Wakonju, devenus ses amis. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà sur le Rwenzori avant lui.",
+            "formAsWritten": "Wakonju",
+            "birth": true,
+            "sources": [
+              {
+                "title": "In Darkest Africa, vol. II",
+                "author": "Henry M. Stanley",
+                "year": 1890,
+                "url": "https://www.gutenberg.org/ebooks/43655",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chapitre XXVIII ; l'index renvoie aux p. 283-286",
+                "notes": "Londres, Sampson Low, Marston, Searle and Rivington, 1890. Lu le 3 novembre 2026 dans l'édition du Projet Gutenberg. Passage lu : « At Mtsora we received in a short time a good local knowledge from the Wakonju who were now our friends »."
               }
             ]
           }
         ]
       }
     ]
+  },
+  "content": {
+    "appellations": {
+      "mainName": "Nande",
+      "selfAppellation": "Bayira",
+      "exonyms": [
+        "Banande",
+        "Wanande",
+        "Bakonzo (Ouganda)",
+        "Bakondjo",
+        "Wakonju"
+      ],
+      "spellingAliases": [
+        "Banande",
+        "Wanande",
+        "Bandande",
+        "Wandande",
+        "Munande (une personne)",
+        "Bakonjo",
+        "Konjo",
+        "Konzo"
+      ],
+      "originOfExonyms": "Le nom Banande apparaît par écrit en 1902 chez Harry Johnston, qui le donne comme le nom que les peuples voisins appliquent à des gens de la lisière de la forêt, à l'ouest de la Semliki. En 1936, l'administrateur colonial Alfred Moeller écrit que ce nom aurait été donné par les Arabes, puis repris par les Européens ; il cite aussi le chercheur Bernhard Struck, qui en doute. Le nom Bakonzo, écrit Wakonju par Henry Morton Stanley en 1890, voudrait dire « montagnards » selon une des sources de Moeller.",
+      "whyProblematic": "Le nom Banande est celui que l'administration coloniale belge inscrit dans ses registres, alors que ce peuple se dit Bayira, et il sert à nommer de 1928 à 1935 les territoires des Wanande-Nord et des Wanande-Sud. Harry Johnston l'avait d'abord appliqué en 1902 à un type humain qu'il décrivait avec mépris. En Ouganda, la même population porte le nom de Bakonzo, que les cartes britanniques ont repris de Stanley et de Johnston, selon Moeller.",
+      "contemporaryUsage": "Le nom Nande, ou Banande, est le nom courant au Congo ; en Ouganda, le recensement de 2014 compte ce peuple sous le nom de Bakonzo. Le nom Bayira, ou Yira, désigne l'ensemble des deux branches, selon un recueil de proverbes nande publié en 2017. Les catalogues de langues nomment la langue nande ou kinande au Congo et konzo en Ouganda.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
+    },
+    "ethnicities": [
+      "Baswaga",
+      "Bashu",
+      "Bashukali",
+      "Wanisanza",
+      "Batangi",
+      "Bamate",
+      "Bakira",
+      "Bahera",
+      "Bahombe",
+      "Bahambo",
+      "Vitu",
+      "Bapakombe (Nande qui ont adopté la langue des Bapere)"
+    ],
+    "origins": {
+      "ancientOrigins": "Les Nande, ou du moins leurs familles dirigeantes, auraient fait partie de l'ancien royaume du Kitara, qui couvrait le Bunyoro, une partie du Toro et l'Ankole, dans l'actuel Ouganda, selon l'administrateur colonial Alfred Moeller en 1936. L'anthropologue Francesco Remotti écrit en 1987 qu'ils sont venus du Toro, du Bunyoro et du Kitara et qu'ils ont avancé vers le nord-ouest, contre la forêt. Un recueil de proverbes publié en 2017 rapporte deux traditions : l'une fait sortir les ancêtres d'une grotte du Rwenzori, l'autre fait venir deux clans du Buganda, au bord du lac Victoria.",
+      "formationPeriod": "Moeller distingue en 1936 deux vagues d'arrivée. Les Baswaga, les Batangi et les Bamate seraient venus lors de la conquête du Kitara par la dynastie des Babito ; les Bashu et les Wanisanza plus tard, vraisemblablement quand le Toro et le Busongora sont devenus indépendants du Bunyoro. Ils ont trouvé sur place des habitants plus anciens, comme les Bahera, éleveurs, et les Bakira, cultivateurs. Selon les chercheurs que résume l'université d'Uppsala, une partie des Bayira aurait franchi le Rwenzori vers l'ouest au début du XIXe siècle.",
+      "migrationRoutes": [
+        "Les Baswaga, du Kitara au Busongora, puis par un gué de la Semliki jusqu'au Ngulo, selon Moeller",
+        "Les Batangi et les Bamate, de l'est du lac Édouard en passant au sud du lac, jusqu'au mont Katale, selon Moeller",
+        "Les Bashu et les Wanisanza, par le Busongora au nord du lac Édouard, jusqu'à l'Isale et au versant ouest du Rwenzori, selon Moeller",
+        "Depuis l'époque coloniale, du Nord-Kivu vers le sud de l'Ituri, notamment le territoire de Mambasa, selon le Musée royal de l'Afrique centrale"
+      ],
+      "historicalSettlementZones": [
+        "Territoires de Beni et de Lubero, au Nord-Kivu (République démocratique du Congo)",
+        "Les monts Mitumba, au nord-ouest du lac Édouard",
+        "L'Isale, le Malio et l'Itala, au Nord-Kivu",
+        "Le versant ouest du Rwenzori et la vallée de la Semliki",
+        "Districts de Bundibugyo, Kasese, Kabarole et Ntoroko, en Ouganda",
+        "Le sud de l'Ituri, notamment le territoire de Mambasa"
+      ],
+      "unificationsOrDivisions": "Moeller décrit en 1936 plusieurs groupes, chacun avec ses chefs et ses cantons, et non un royaume unique : les Bashu dominent les Banande du Nord, et leurs familles dirigeantes se disent parentes des rois babito du Bunyoro et du Toro. Les deux branches séparées par le Rwenzori ont développé des organisations sociales et politiques différentes, tout en parlant des langues très proches, selon l'université d'Uppsala. Sous la colonisation belge, leurs terres forment deux territoires, rattachés en 1935 au district du Nord-Kivu.",
+      "externalInfluences": "Vers 1870, des Arabo-Swahilis, marchands d'esclaves et d'ivoire, s'installent à Mawambi, en Ituri, selon le Musée royal de l'Afrique centrale ; Moeller écrit que leur présence a arrêté l'avancée des Baswaga vers le nord. Au sud, les Batangi et les Bamate subissent les incursions de Lukundula, un Arabe de Walikale. Sous la colonisation belge, les Nande sont recrutés en grand nombre pour les mines de Kilo-Moto et les plantations, et l'administration encourage leur installation en Ituri. Des missionnaires adventistes s'installent dans le territoire de Lubero et y fondent plusieurs postes.",
+      "majorHistoricalEvents": "En 1914, l'administration coloniale belge installe une chefferie nande sur des terres occupées par les Mbuba ; à partir de 1942, la chefferie mbuba est placée dans le secteur des Banande de Beni. De 1928 à 1935, deux territoires portent le nom de Wanande, puis passent au district du Nord-Kivu. En 1993, de graves violences entre communautés éclatent dans le Masisi, le Rutshuru, le Kalehe et le Walikale, après des appels à mobiliser les Nande, les Hunde et les Nyanga contre les Banyarwanda, selon l'université d'Uppsala. Les Nande sont ensuite la cible répétée de persécutions et de massacres pendant les violences de 1999 à 2008."
+    },
+    "organization": {
+      "traditionalPoliticalSystem": "Chez les Baswaga, trois pouvoirs se partagent chaque canton, selon Moeller en 1936. Le Mukulu est le chef de la terre et le gardien des traditions. Le Muami s'occupe de l'administration, du tribut et de la justice. Le Ngabu est le chef de guerre. Chez les Bashu, le Muami est parfois appelé Mukama ; chez les Batangi et les Bamate, il détient presque tout le pouvoir et le partage avec son demi-frère aîné, le Shamuami, et avec le frère de la Mombo, l'épouse du chef. Le conseil des anciens, mené par le Mukaka ou Musingia, consacre le chef.",
+      "clanOrganization": "Moeller nomme en 1936 les principaux groupes : Baswaga, Bashu, Wanisanza, Batangi et Bamate, venus de l'est, et Bahera, Bakira, Bahombe, Bahambo et Vitu, plus anciens. Chaque groupe a son interdit : le petit oiseau kishu chez les Bashu, qui leur aurait donné leur nom, et le petit oiseau kasundi chez les Batangi et les Bamate. Chez les Baswaga, seuls les chefs ont un interdit, l'éléphant. Les Bashu installés hors de l'Isale et du Malio s'appellent Bashukari, ce qui voudrait dire « descendants des Bashu par les femmes ».",
+      "ageClassSystems": "Nous n'avons pas trouvé de source qui décrive un système de classes d'âge chez les Nande.",
+      "roleOfLineages": "Chez les Baswaga, chaque pouvoir revient au fils d'un fondateur de canton, de père en fils, par l'aîné de la première épouse, selon Moeller. Chez les Bashu, les Batangi et les Bamate, l'héritier est le fils de la Mombo, la femme que le conseil des anciens donne au chef le jour de son investiture. Chez les Bashu, le nouveau chef n'exerce vraiment l'autorité qu'une fois morts tous ses oncles.",
+      "religiousAuthority": "Chez les Baswaga, le Mukulu, chef de la terre, est aussi le prêtre du culte des ancêtres, selon Moeller en 1936. Les familles batangi gardent les tombeaux des premiers chefs bashu au mont Ilangira, dans l'Isale. Au XXe siècle, des évangélistes adventistes fondent plusieurs postes chez les Nande du territoire de Lubero, selon le Musée royal de l'Afrique centrale."
+    },
+    "languages": {
+      "mainLanguage": "Nande ou kinande (nnb) ; konzo (koo) en Ouganda",
+      "isoCodes": ["nnb"],
+      "dialects": [
+        "Nande proprement dit",
+        "Kumbule (ekikumbule)",
+        "Mate (ekimate)",
+        "Tangi (ekitangi)",
+        "Sanza (ekisanza)",
+        "Shu (ekishu)",
+        "Songola (ekisongoora, nyangala)",
+        "Swaga ou Kira (ekikira)"
+      ],
+      "vehicularRole": "Le kinande est une langue bantoue de l'est de la République démocratique du Congo ; selon le linguiste Ngessimo Mathe Mutaka, c'est pour l'essentiel la même langue que le konzo, ou konjo, parlé en Ouganda. Dans le territoire de Mambasa, en Ituri, le kinande, appelé aussi yira, compte parmi les langues les plus parlées, à côté du swahili populaire. Dans le territoire de Lubero, les écoles ne l'enseignent plus depuis une vingtaine d'années, et beaucoup de jeunes Nande parlent surtout le swahili, avec un peu de français et de lingala, selon un reportage de 2021."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q3335624",
+      "glottocode": "nand1264",
+      "iso639_3": "nnb"
+    },
+    "culture": {
+      "majorRites": "L'investiture du chef est un rite central chez les Bashu : le jour où toute la génération de son père est morte, le conseil des anciens le consacre, lui remet ses insignes et lui donne la Mombo, l'épouse qui lui donnera son héritier, selon Moeller. Le mariage n'était reconnu qu'après le paiement de la compensation matrimoniale, faite de douze chèvres, d'un bâton à fouir, d'une houe, d'une peau appelée omukagha et de bière locale, selon un recueil de proverbes publié en 2017. Le mot mulimu, qui veut dire « esprit des ancêtres », désigne aussi un rite secret : le novice devait nommer les parties de la trompe du même nom et savoir en jouer, et les initiés portaient en tatouage les motifs gravés sur ces trompes, selon le Musée royal de l'Afrique centrale.",
+      "symbols": "Les trompes mulimu, conservées au Musée royal de l'Afrique centrale, modifient la voix de celui qui y parle, pour symboliser la voix des ancêtres. Les Nande associent à chaque trompe une plante, la riranga, qui relie le monde des vivants et celui des esprits, selon une monographie du musée publiée en 2021.",
+      "artsAndMusic": "La flûte nyamulera, en bois, à quatre trous, est un instrument d'origine nande ; Hugh Tracey a enregistré en 1952, près de Butembo, le joueur de flûte nande Katsuba Mwongolo. D'autres collecteurs ont enregistré la musique nande dans les années 1970, selon le Musée royal de l'Afrique centrale. Le musée conserve aussi des hochets en vannerie et des trompes mulimu nande.",
+      "spiritualities": "Les Batangi et les Bamate partagent avec les autres groupes nande le même culte des morts et des tombeaux, selon Moeller en 1936, et les tombeaux des premiers chefs bashu sont gardés au mont Ilangira. Avec les trompes mulimu et la plante riranga, les vivants communiquent avec les ancêtres, selon le Musée royal de l'Afrique centrale. Stanley décrit en 1890 de petites huttes à l'entrée des villages de l'Ukonju, où l'on dépose une banane ou un œuf pour demander à l'esprit de protéger les récoltes et les volailles."
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": "Moeller décrit en 1936 des cantons dirigés par les descendants de leurs fondateurs : chez les Baswaga, le Ngulo, le Luhongo, le Bukenie, le Bulengia, le Muhenie et le Manzia ; chez les Bamate, l'Utwe, le Tama, le Luhenge et le Bilua. Les familles dirigeantes des Bashu et des Wanisanza se disent parentes des rois babito du Bunyoro et du Toro. Sous la colonisation belge, l'administration crée des chefferies et un secteur des Banande de Beni.",
+      "relationsWithNeighbors": "En arrivant à l'ouest du lac Édouard, les groupes nande ont trouvé des habitants plus anciens, dont des Bambuba, et se sont heurtés aux Bapere à l'ouest, selon Moeller. En s'installant parmi les peuples de la forêt de l'Ituri, les Nande ont introduit un système foncier qui rendait les nouveaux venus dépendants du premier défricheur, selon l'historien Randall Packard cité par le Musée royal de l'Afrique centrale. Dans les années 1970, des commerçants nande échangeaient du riz contre de la viande de brousse jusque dans les campements des chasseurs-cueilleurs. Au Nord-Kivu, les Nande se rangent souvent avec les Hunde, les Tembo et les Nyanga face aux Banyarwanda dans les conflits fonciers, selon l'université d'Uppsala.",
+      "conflictsOrAlliances": "En 1993, le gouverneur Jean-Pierre Kalumbo Mbogho, en poste à Goma et lui-même nande, appelle les forces de sécurité à aider les Nande, les Hunde et les Nyanga contre les Banyarwanda. Ses déclarations et l'action des associations ethniques, dont la principale association nande, Kyaghanda, contribuent à des violences à grande échelle, selon l'université d'Uppsala. Les Nande ont ensuite été, pour leur seule appartenance ethnique, la cible répétée de persécutions et de massacres pendant les violences de 1999 à 2008, selon le Musée royal de l'Afrique centrale. En Ituri, leur arrivée en nombre suscite encore des tensions avec les Mbuba et d'autres peuples établis avant eux.",
+      "diaspora": "Les sources lues décrivent surtout l'installation de Nande hors de leur région d'origine, en Ituri : à Eringeti, à Oicha, à Tobola et dans le territoire de Mambasa, où les Nande sont devenus nombreux depuis l'indépendance. Des négociants nande installés à Beni et à Butembo contrôlent l'essentiel des circuits d'exportation du bois d'œuvre de l'Ituri, et leurs réseaux ont longtemps attiré une partie de l'or de l'Ituri vers Beni et Butembo. Nous n'avons pas trouvé de source sur les Nande installés hors de l'Afrique centrale."
+    },
+    "demography": {
+      "totalPopulation": null,
+      "referenceYear": 2014,
+      "source": "Aucune source lue ne donne un chiffre unique pour l'ensemble des deux branches. En Ouganda, le recensement national de 2014 compte 850 646 Bakonzo. Au Congo, où aucun recensement ne compte la population par groupe ethnique, le programme de données sur les conflits de l'université d'Uppsala estime les Nande à environ deux millions, sans dater ce chiffre.",
+      "distributionByCountry": [
+        {
+          "country": "COD",
+          "population": 2000000,
+          "note": "Territoires de Beni et de Lubero, au Nord-Kivu, et une partie de l'Ituri. Estimation non datée de l'université d'Uppsala."
+        },
+        {
+          "country": "UGA",
+          "population": 850646,
+          "note": "Bakonzo recensés en 2014, surtout dans les districts de Bundibugyo, Kasese, Kabarole et Ntoroko."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Glottolog 5.3 — Nande (nand1264)",
+        "url": "https://glottolog.org/resource/languoid/id/nand1264",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice directe pour le code ISO 639-3 nnb et le glottocode nand1264. Elle situe la langue en République démocratique du Congo et en Ouganda, atteste les variantes Kinande, Kinandi et Orundande et publie le statut EGIDS 5 en 2025. Aucun rôle véhiculaire régional n'est inféré de cette notice."
+      },
+      {
+        "title": "Glottolog 5.3 — Konzo (konz1239)",
+        "url": "https://glottolog.org/resource/languoid/id/konz1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues, lu le 3 novembre 2026 : la langue konzo (koo), parlée en République démocratique du Congo et en Ouganda, classée avec le nande dans le groupe Rwenzori, et ses autres noms Konjo, Lhukonzo, Olukonjo, Olukonzo et Rukonjo."
+      },
+      {
+        "title": "Uganda Bureau of Statistics — The National Population and Housing Census 2014, Main Report",
+        "url": "https://uganda.unfpa.org/sites/default/files/pub-pdf/CENSUS%202014%20Final%20Results_0.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Kampala, Uganda Bureau of Statistics, 2016. Lu le 3 novembre 2026. Page 71, tableau A8 de la population par groupe ethnique : « Bakonzo 414,657 435,989 719,076 131,570 850,646 »."
+      },
+      {
+        "title": "Les grandes lignes des migrations des Bantous de la Province Orientale du Congo belge",
+        "url": "https://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(IRCB)_T.VI,_MOELLER%20A._Les%20grandes%20lignes%20des%20migrations%20des%20bantous_1936.pdf",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Ouvrage de l'administrateur colonial Alfred Moeller, publié en 1936 à Bruxelles par l'Institut royal colonial belge, Mémoires, tome VI. Lu le 3 novembre 2026 dans la numérisation de l'Académie royale des sciences d'outre-mer, p. 14 et p. 91 à 101, consacrées aux Banande. Moeller dit tirer l'essentiel de ses informations d'une étude du commissaire de district Absil. Passage lu, p. 96 : « Le Mukulu est le chef de la terre, gardien des traditions, prêtre du culte des ancêtres »."
+      },
+      {
+        "title": "Ituri. Terre et identités sous tension",
+        "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/monographies-provinces/ituri.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Sous la direction de Jean Omasombo Tshonda, Tervuren, Musée royal de l'Afrique centrale, 2021, collection « Monographies des provinces de la RD Congo », volume 15. Lu le 3 novembre 2026. Pages lues : 16 et 269 sur les territoires des Wanande, 95 et 126 sur les Nande en Ituri et leur langue, 150 à 152 sur les trompes mulimu et la flûte nyamulera, 206 sur les missions adventistes, 440 à 442 sur l'expansion nande, 523 et 539 sur le commerce. Passage lu, p. 440 : « par le seul fait de leur étiquette ethnique, ils furent la cible récurrente de persécutions et de massacres »."
+      },
+      {
+        "title": "Catégories sémantiques de l'éros chez les Wanande du Zaïre",
+        "url": "https://www.persee.fr/doc/hom_0439-4216_1987_num_27_103_368857",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de l'anthropologue Francesco Remotti, revue L'Homme, vol. 27, n° 103, 1987, p. 73-92. Seule la page 73 a été lue, sur Persée, le 3 novembre 2026. Passage lu : « Venus de l'est (du Toro-Bunyoro-Kitara), ils ont avancé presque uniformément vers le nord-ouest »."
+      },
+      {
+        "title": "Nande",
+        "url": "https://ucdp.uu.se/actor/2397",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Fiche d'acteur du programme de données sur les conflits de l'université d'Uppsala, lue le 3 novembre 2026. Passage lu : « The main Nande association, Kyaghanda, became an important framework for political and social mobilisation »."
+      },
+      {
+        "title": "Kinande: A Grammar Sketch (Version 1.0)",
+        "url": "https://afranaphproject.afranaphdatabase.com/images/stories/downloads/casefiles/KinandeGS.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Esquisse de grammaire du linguiste Ngessimo Mathe Mutaka, publiée en ligne par l'African Anaphora Project (Rutgers University). Lu le 3 novembre 2026, p. 1 : « It is basically the same language as Konjo (identified as KOO in Ethnologue) spoken in Uganda »."
+      },
+      {
+        "title": "Global Press Journal – A Tribe Watches Its Language Languish (2021)",
+        "url": "https://globalpressjournal.com/africa/democratic-republic-of-congo/tribe-watches-language-languish/",
+        "tier": "referenced",
+        "source_kind": "press",
+        "notes": "Reportage de Merveille Kavira Luneghe, publié le 4 novembre 2021. Lu le 3 novembre 2026. Passage lu : « Schools in Lubero territory stopped teaching Kinande about 20 years ago »."
+      },
+      {
+        "title": "A Collection of 100 Nande (D R Congo) Proverbs and Wise Sayings",
+        "url": "https://afriprov.tangaza.ac.ke/wp-content/uploads/2008/11/ebooks_alimas_nande.pdf",
+        "tier": "unverified",
+        "source_kind": "community",
+        "notes": "Recueil d'Alimas Kaluta Adrien Socrate, Nairobi, African Proverbs Working Group, mai 2017. Lu le 3 novembre 2026. L'introduction donne la liste des dialectes et deux traditions d'origine. Passage lu : « The marriage was not socially recognized until the bride wealth has been paid »."
+      },
+      {
+        "title": "The Uganda Protectorate, vol. II",
+        "url": "https://archive.org/details/cu31924087982504",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Ouvrage de l'administrateur colonial britannique Harry Johnston, Londres, Hutchinson, 1902. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive, p. 477 et p. 510-511."
+      },
+      {
+        "title": "In Darkest Africa, vol. II",
+        "url": "https://www.gutenberg.org/ebooks/43655",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Récit de l'explorateur Henry Morton Stanley, Londres, Sampson Low, Marston, Searle and Rivington, 1890. Lu le 3 novembre 2026 dans l'édition du Projet Gutenberg, chapitre XXVIII. Passage lu : « At the entrance of almost every village in Ukonju may be seen a miniature tent »."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Nande sont un peuple bantou de l'est de la République démocratique du Congo, autour de Beni et de Lubero, qui se nomme lui-même Bayira et dont la branche ougandaise est appelée Bakonzo.",
+      "followUp": "D'où vient le nom Banande, que l'administration coloniale belge a donné à deux territoires ?"
+    }
   }
 }

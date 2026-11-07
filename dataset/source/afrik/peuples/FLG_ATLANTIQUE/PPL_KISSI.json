@@ -4,7 +4,7 @@
   "languageFamilyId": "FLG_ATLANTIQUE",
   "currentCountries": ["GIN", "SLE", "LBR"],
   "nameHistory": {
-    "summary": "Le nom Kissi désigne un peuple de la Guinée forestière, du nord-est de la Sierra Leone et du nord-ouest du Liberia, qui se nomme lui-même Kissi. On écrit aussi Kisi. Les sources que nous avons lues n'expliquent pas l'origine de ce nom ; nous présentons plus bas ses plus anciennes traces.",
+    "summary": "Le nom Kissi désigne un peuple de Guinée forestière, de l'est de la Sierra Leone et du Liberia voisin, qui se nomme lui-même ainsi, et aussi sa langue. On l'écrit souvent Kisi. Sa plus ancienne trace écrite connue du projet date de 1827, chez l'explorateur René Caillié ; nous présentons plus bas cette trace et les suivantes.",
     "names": [
       {
         "nameText": "Kissi",
@@ -12,18 +12,158 @@
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom du peuple et de son pays, en Guinée, en Sierra Leone et au Liberia ; on écrit aussi Kisi.",
+        "shortLine": "Le nom que ce peuple se donne, en Guinée, en Sierra Leone et au Liberia ; on écrit aussi Kisi.",
         "usedIn": ["fra", "eng"],
-        "periodLabel": "Écrit dès 1854 ; en usage aujourd'hui",
+        "periodLabel": "Écrit dès 1827 ; en usage aujourd'hui",
         "accounts": [
+          {
+            "period": {
+              "from": 2014,
+              "to": 2015,
+              "label": "Recensements de 2014 et de 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Kissi sert aujourd'hui aux recensements pour nommer ce peuple et sa langue. En 2015, la Sierra Leone compte 175 843 Kissi. En 2014, en Guinée, 4,1 % des habitants de trois ans et plus disent parler surtout le kissi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sierra Leone 2015 Population and Housing Census, National Analytical Report, tableau 3.21",
+                "author": "Statistics Sierra Leone",
+                "year": 2017,
+                "url": "https://sierraleone.unfpa.org/sites/default/files/pub-pdf/National%20Analytical%20Report.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "p. 91",
+                "notes": "Freetown, Statistics Sierra Leone, octobre 2017, mis en ligne par le bureau de l'UNFPA en Sierra Leone. Lu le 3 novembre 2026. Ligne lue dans le tableau 3.21 : « Kissi 175,843 », soit 2,5 % de la population des ménages."
+              },
+              {
+                "title": "Troisième recensement général de la population et de l'habitation de Guinée (RGPH3, 2014), rapport « État et structure de la population »",
+                "author": "Institut national de la statistique de Guinée (Mamadou Chérif Bah et Mamadouba Alkaly Bangoura)",
+                "year": 2017,
+                "url": "https://www.stat-guinee.org/images/Documents/Publications/INS/rapports_enquetes/RGPH3/RGPH3_etat_structure.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "p. 85, tableau 5.07",
+                "notes": "Conakry, Institut national de la statistique, ministère du Plan et de la Coopération internationale, édition de décembre 2017. Lu le 3 novembre 2026. Ligne lue dans le tableau 5.07 : « Kissi 4,1 », pour un effectif total de « 9 439 468 » personnes de trois ans et plus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1945,
+              "to": 1954,
+              "label": "Enquêtes de 1945 à 1949, livre publié en 1954"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kissi est, chez l'ethnologue française Denise Paulme, celui que se donnent eux-mêmes les habitants des cercles de Kissidougou et de Guéckédou, en Guinée. Leurs voisins du nord les appellent « les gens du riz ». Selon elle, ces familles d'origines diverses ont en commun leur langue et le fait de se dire Kissi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Gens du Riz. Les Kissi de Haute-Guinée",
+                "author": "Denise Paulme",
+                "year": 1954,
+                "url": "https://webguine.site/bibliotheque/ethnographie/kisi/dpaulme/tdm.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "Avant-propos et introduction",
+                "notes": "Paris, Librairie Plon, 1954 ; rééd. 1970. Enquêtes menées avec André Schaeffner d'octobre 1945 à juin 1946 et de fin octobre 1948 à mai 1949, sous les auspices de l'Institut français d'Afrique noire. Copie non officielle du texte, sans la pagination du livre, mise en ligne par webGuinée. Lu le 3 novembre 2026. Passages lus : « L'origine de ceux qui se nomment eux-mêmes Kissi demeure obscure » et « Pour leurs voisins du nord, les Kissi sont « les gens du riz » » (introduction) ; « la langue et le fait qu'ils se disent Kissi » (avant-propos)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "modern",
+            "statement": "Le nom Kisi désigne, chez l'historien Monday B. Akpan, l'un des peuples de l'intérieur du Liberia qui se révoltent contre le gouvernement de Monrovia, en 1913 pour les Kisi.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 11 : Le Libéria et l'Éthiopie, 1880-1914 : la survie de deux États africains",
+                "author": "Monday B. Akpan",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 298"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Kissi apparaît, écrit Kísi, chez le linguiste Sigismund Koelle, qui note à Freetown la langue d'un homme de Pórūma et énumère les districts du pays kisi, où l'on parle partout la même langue avec de légères variations.",
+            "sources": [
+              {
+                "title": "Polyglotta Africana, jeu de données Lexibank",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1827,
+              "to": 1827,
+              "label": "1827, récit publié en 1830"
+            },
+            "era": "polity",
+            "statement": "Le nom Kissi apparaît chez l'explorateur français René Caillié, qui séjourne à Kankan en juin 1827. D'après son guide Lamfia, il décrit le « joli pays de Kissi », couvert de montagnes, où l'on cultive beaucoup de riz et où de petits chefs indépendants se font la guerre ; les marchands de Kankan y achètent des esclaves. Il précise qu'il ne faut pas confondre ce pays avec celui de Kissi-Kissi, près de la Sierra Leone. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Kissi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Journal d'un voyage à Temboctou et à Jenné, tome premier",
+                "author": "René Caillié",
+                "year": 1830,
+                "url": "https://archive.org/details/journaldunvoyage01cail",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 414-417",
+                "notes": "Paris, Imprimerie royale, 1830, tome premier. Récit d'un voyage commencé le 19 avril 1827. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Passage lu : « on arrive dans le joli pays de Kissi, qu'il ne faut pas confondre avec celui de Kissi-Kissi, situé aux environs de Sierra-Leone » (p. 416)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1700,
+              "to": 1799,
+              "label": "XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Kissi désigne, chez Yves Person, le peuple dont les Bulom se trouvent définitivement séparés au XVIIIe siècle, quand les Mende s'étendent vers la mer et absorbent les Bulom.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 24 : États et peuples de Sénégambie et de haute Guinée",
+                "author": "Yves Person",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 697"
+              }
+            ]
+          },
           {
             "period": {
               "from": null,
               "to": null,
               "label": "Usage décrit par l'auteur"
             },
-            "statement": "Le nom Kisi désigne, chez l'historien Yves Person, un peuple de la forêt qui parle une langue mel, à la différence de ses voisins de langue manden. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
-            "aspect": "meaning",
+            "statement": "Le nom Kisi désigne, chez l'historien Yves Person, un peuple de la forêt qui parle une langue mel, à la différence de ses voisins qui parlent des langues mandé, comme les Toma ou les Kpelle.",
+            "aspect": "usage",
             "sources": [
               {
                 "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers — premiers contacts avec les Portugais — de la Casamance aux lagunes ivoiriennes",
@@ -76,70 +216,6 @@
                 "page": "p. 351, note 14"
               }
             ]
-          },
-          {
-            "period": {
-              "from": 1700,
-              "to": 1799,
-              "label": "XVIIIe siècle"
-            },
-            "era": "polity",
-            "statement": "Le nom Kissi désigne, chez Yves Person, le peuple dont les Bulom se trouvent définitivement séparés au XVIIIe siècle, quand les Mende s'étendent vers la mer et absorbent les Bulom.",
-            "before": true,
-            "sources": [
-              {
-                "title": "Histoire générale de l'Afrique, VI, ch. 24 : États et peuples de Sénégambie et de haute Guinée",
-                "author": "Yves Person",
-                "year": 1996,
-                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
-                "tier": "official",
-                "source_kind": "intergovernmental",
-                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
-                "page": "p. 697"
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": 1854,
-              "to": 1854,
-              "label": "1854"
-            },
-            "era": "polity",
-            "statement": "Le nom Kissi apparaît, écrit Kísi, chez le linguiste Sigismund Koelle, qui note la langue d'un homme de Pórūma et énumère les districts du pays kisi, où l'on parle partout la même langue. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
-            "birth": true,
-            "sources": [
-              {
-                "title": "Polyglotta Africana, jeu de données Lexibank",
-                "author": "Sigismund Wilhelm Koelle",
-                "year": 1854,
-                "url": "https://github.com/lexibank/polyglottaafricana",
-                "tier": "referenced",
-                "source_kind": "linguistic_reference",
-                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": 1913,
-              "to": 1913,
-              "label": "1913"
-            },
-            "era": "modern",
-            "statement": "Le nom Kisi désigne, chez l'historien Monday B. Akpan, l'un des peuples de l'intérieur du Liberia qui se révoltent contre le gouvernement de Monrovia, en 1913 pour les Kisi.",
-            "sources": [
-              {
-                "title": "Histoire générale de l'Afrique, VII, ch. 11 : Le Libéria et l'Éthiopie, 1880-1914 : la survie de deux États africains",
-                "author": "Monday B. Akpan",
-                "year": 1987,
-                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
-                "tier": "official",
-                "source_kind": "intergovernmental",
-                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
-                "page": "p. 298"
-              }
-            ]
           }
         ]
       }
@@ -150,85 +226,86 @@
       "mainName": "Kissi",
       "selfAppellation": "Kissi",
       "exonyms": [
-        "Kissi (terme utilisé par les Européens et les populations voisines)",
-        "Gizi (variante orthographique utilisée en Sierra Leone et au Libéria)",
-        "Gissi (variante orthographique utilisée en Sierra Leone et au Libéria)",
-        "Kisi (orthographe alternative présente dans la littérature anglophone)"
+        "les gens du riz (nom que leur donnent leurs voisins du nord, selon Denise Paulme)"
       ],
-      "originOfExonyms": "Le terme Kissi est d'usage exogène, adopté par les colonisateurs européens et répandu dans la littérature ethnographique. Le nom est repris tel quel par les populations voisines mande (Mandingue, Soussou) et est aujourd'hui accepté par les locuteurs eux-mêmes.",
+      "spellingAliases": ["Kisi", "Kísi", "Kissia", "Gizi", "Kisie", "Kissien"],
+      "originOfExonyms": "Les Kissi se donnent eux-mêmes ce nom, selon l'ethnologue Denise Paulme, qui a vécu chez eux de 1945 à 1949. Leurs voisins du nord les appellent « les gens du riz » : le riz occupe chez eux presque toute l'année agricole, et le mil, si important pour les gens de la savane, y est traité de « nourriture des chevaux ». Les formes Kisi, Kísi, Gizi, Kisie ou Kissien sont d'autres façons d'écrire le même nom, relevées par le linguiste Sigismund Koelle en 1854 et par la base Glottolog ; un auteur guinéen écrit Kissias.",
       "whyProblematic": null,
-      "contemporaryUsage": "Kissi est le terme standard utilisé en Guinée, en Sierra Leone et au Libéria, dans les langues officielles (français et anglais) comme dans les usages locaux. Le terme ne porte pas de connotation péjorative. Gizi est également employé dans certaines variantes phonétiques locales.",
-      "linguisticFamily": "FLG_ATLANTIQUE",
-      "ethnoLinguisticGroup": "Mel (branche de la famille Niger-Congo, distincte du groupe atlantique au sens strict)",
-      "historicalRegion": "Guinée forestière (préfectures de Kissidougou, Guékédou, Macenta), nord-est Sierra Leone, nord-ouest Libéria",
-      "currentCountries": ["GIN", "SLE", "LBR"]
+      "contemporaryUsage": "Le nom Kissi désigne aujourd'hui à la fois le peuple et sa langue, en Guinée, en Sierra Leone et au Liberia. Les recensements l'emploient : celui de la Sierra Leone, en 2015, compte 175 843 Kissi, et celui de la Guinée, en 2014, range le kissi parmi les principales langues parlées dans le pays. Les textes en anglais écrivent souvent Kisi.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": ["Kissi"],
     "origins": {
-      "ancientOrigins": "Selon la tradition orale Kissi rapportée dans The Peoples of Africa, avant le XVIIe siècle, les Kissi habitaient la région du Haut Niger. Ils auraient ensuite vécu au sud du Fouta Djallon jusqu'à ce que le peuple Yalunka (Dialonké) les expulse. Cette pression les a poussés à migrer vers l'ouest à partir de 1600.",
-      "formationPeriod": "La formation du groupe Kissi en tant qu'entité distincte remonterait aux migrations du XVIIe siècle. Leur installation dans la zone forestière de Guinée, Sierra Leone et Libéria a consolidé leur identité ethnique autour d'une agriculture de riz et d'une organisation villageoise autonome.",
+      "ancientOrigins": "Les sources lues donnent deux récits différents de l'origine lointaine des Kissi. Selon l'historien Christophe Wondji, les Kissi et les Bulom auraient d'abord formé un seul groupe, venu en suivant le fleuve Niger jusqu'à sa source ; les Kissi seraient restés à l'intérieur quand les Bulom gagnaient la mer. Selon l'ethnologue Denise Paulme, quelques vieillards parlaient en 1945 d'une grande migration qui les aurait détachés des peuples de langue mandé et installés dans l'actuelle Sierra Leone, d'où leurs descendants seraient revenus vers le nord-est par petits groupes. Paulme conclut que leurs origines sont multiples : des familles du nord se disent d'origine mandé, d'autres placent leur ancêtre à l'est ou au sud.",
+      "formationPeriod": "Le pays kissi est ancien : l'historien Yves Person date du XIVe siècle l'installation des Malinké du Sankaran et du Toron au contact des Kissi, et l'explorateur René Caillié décrit le pays de Kissi en 1827. Denise Paulme estime pourtant que la société kissi qu'elle observe vers 1950 s'est reconstruite à la fin du XIXe siècle. Les raids des troupes de Samory, puis la conquête française en 1893, ont effacé presque tout souvenir plus ancien, et les généalogies ne remontent qu'à trois ou quatre générations.",
       "migrationRoutes": [
-        "Du Haut Niger vers le sud et l'ouest, au XVIIe siècle, sous pression des Yalunka",
-        "À travers les contreforts du Fouta Djallon vers la zone forestière de Guinée",
-        "Migration vers la Sierra Leone et le Libéria, avec expulsion progressive des Limba"
+        "Selon Christophe Wondji, une arrivée ancienne en suivant le Niger jusqu'à sa source, avec les Bulom, avant que les deux groupes se séparent.",
+        "Selon des vieillards interrogés par Denise Paulme, un départ vers l'actuelle Sierra Leone, puis un retour par petits groupes vers le pays actuel."
       ],
       "historicalSettlementZones": [
-        "Guinée forestière (préfectures de Kissidougou, Guékédou, Macenta)",
-        "Nord-est de la Sierra Leone (Province du Nord)",
-        "Nord-ouest du Libéria (comté de Lofa)",
-        "Zone de transition forêt-savane au pied du Fouta Djallon"
+        "Les cercles, aujourd'hui préfectures, de Kissidougou et de Guéckédou, en Guinée forestière",
+        "Quelques cantons toma du cercle de Macenta, en Guinée, selon Jacques Germain",
+        "Le district de Kailahun, à l'est de la Sierra Leone, où 22 % des habitants parlent surtout le kissi en 2015",
+        "Le Liberia voisin, au-delà de la frontière guinéenne"
       ],
-      "unificationsOrDivisions": "Avant la colonisation, les Kissi vivaient en chefferies autonomes sans autorité politique centralisée. Le guerrier Kissi Kaba Keita parvint à fédérer de nombreuses chefferies kissi au XIXe siècle pour résister à la conquête française (1892-1893), constituant une unification temporaire remarquable. Il fut néanmoins exécuté à Siguiri par les Français, entraînant la fragmentation des chefferies réunies.",
-      "externalInfluences": "La pression des peuples mande (Yalunka, Kuranko, Mandingue) au nord a été le principal moteur des migrations kissi. La colonisation française en Guinée et britannique en Sierra Leone a fragmenté le territoire kissi entre plusieurs États. L'influence islamique est restée limitée en raison de l'isolement forestier du groupe.",
-      "majorHistoricalEvents": "XVIIe siècle: expulsion du Haut Niger par les Yalunka et migration vers la zone forestière. 1892: arrivée des Français en Guinée; Kissi Kaba Keita fédère les chefferies et mène une résistance guerrière incluant des alliés Kuranko (de Morige) et Lele (de Yombiro). 1893: Kissi Kaba Keita se soumet aux Français qui le reconnaissent chef du territoire kissi septentrional. Exécution ultérieure à Siguiri. XXe siècle: Kai Londo, guerrier kissi, joue un rôle notable en Sierra Leone méridionale."
+      "unificationsOrDivisions": "Avant la conquête française, le pays kissi n'avait pas de pouvoir central. Selon Denise Paulme, le pays « n'était qu'une poussière d'agglomérations juxtaposées sans unité véritable », et quelques chefs seulement contrôlaient trois ou quatre villages. René Caillié le décrivait déjà en 1827 comme divisé en plusieurs petits États aux chefs indépendants. L'administration française a ensuite créé des cantons, dès 1898 pour celui de Toli, et Paulme juge beaucoup d'entre eux artificiels. L'historien Yves Person compte environ 80 alliances de villages dans la partie kissi de l'ancien cercle de Kissidougou, dont une trentaine n'ont jamais reçu le statut de canton. Les frontières coloniales ont partagé le pays kissi entre la Guinée française, la Sierra Leone britannique et le Liberia.",
+      "externalInfluences": "Le nord du pays kissi est ouvert à l'influence des Malinké, selon Denise Paulme. Des colporteurs malinké y viennent chercher la noix de cola, certains villages mêlent Malinké musulmans et Kissi fidèles au culte des ancêtres, et beaucoup de Kissi parlent plus ou moins le malinké. Dans le nord, des familles ont doublé leur nom kissi d'un nom malinké : les Lea se disent plus volontiers Keita ou Mansaré, les Toluna Touré, les Milimua Oularé. Deux missions catholiques des Pères du Saint-Esprit s'installent ensuite près de Kissidougou et dans le cercle de Guéckédou, mais Paulme juge alors les chrétiens peu nombreux.",
+      "majorHistoricalEvents": "En 1827, René Caillié apprend à Kankan que des marchands malinké parcourent le pays de Kissi pour y acheter des esclaves. Au XVIIIe et au XIXe siècle, des esclaves kissi sont aussi emmenés au Fouta-Djalon, selon l'historien Boubacar Barry. À la fin du XIXe siècle, les troupes de Samory ravagent le pays ; selon Denise Paulme, ce passage reste le seul repère des mémoires. La conquête française suit en 1893. Selon Sinkoun Diakité, directeur du musée préfectoral de Kissidougou, interrogé en 2019, Kissi Kaba Keïta, dernier roi du Farmaya, né à Mara en 1836, est arrêté puis fusillé à Siguiri le 25 avril 1893. En 1898, l'administration française crée les premiers cantons. En 1913, au Liberia, les Kissi se révoltent contre le gouvernement de Monrovia, selon l'historien Monday B. Akpan."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Organisation en villages autonomes de petite taille (moins de 150 habitants), chacun avec un chef de village (headman) qui offre des sacrifices au sanctuaire villageois et fait office de juge. Les villages sont regroupés en sous-chefferies indépendantes. L'autorité des anciens est centrale et le système est fortement gérontocratiqu.",
-      "clanOrganization": null,
-      "ageClassSystems": "La société kissi est fortement orientée par l'âge (age-oriented), dominée et conduite par les anciens (elderly). Les décisions collectives impliquent le respect hiérarchique des aînés.",
-      "roleOfLineages": "Les lignages patrilinéaires structurent l'organisation sociale et l'accès aux terres agricoles. L'héritage des chefferies suit la ligne paternelle.",
-      "religiousAuthority": "L'autorité religieuse est détenue par le chef de village qui maintient le sanctuaire communautaire. Les anciens jouent un rôle central dans les rituels d'offrandes aux ancêtres. Malgré des conversions au christianisme, la religion traditionnelle et le culte des ancêtres demeurent prépondérants."
+      "traditionalPoliticalSystem": "Chez les Kissi, le village est l'unité politique essentielle, selon Denise Paulme. Il compte souvent moins de cinquante habitants et rarement plus de deux cents, répartis entre deux ou trois lignages. Sur la place, un abri sans murs, le tungo, sert de lieu de réunion : on y discute des affaires importantes, on y règle les différends et le chef y prononce sa sentence. Avant la conquête, aucun pouvoir ne s'exerçait sur l'ensemble du pays ; l'administration française a ensuite nommé un chef par canton.",
+      "clanOrganization": "Les Kissi appellent kale le clan, c'est-à-dire l'ensemble des personnes qui portent le même nom de famille, selon Denise Paulme. Le clan est dispersé dans tout le pays et ne se réunit jamais ; son nom permet surtout à un voyageur de demander l'hospitalité à ses « parents ». Le mariage est interdit à l'intérieur du lignage, mais pas à l'intérieur du clan. Paulme relève, dans le canton de Farmaya, le clan dominant des Keita à côté des Toluna, Windia, Yomboa, Tengia, Kamara, Bongoa, Ifoa, Milimua et Ulare.",
+      "ageClassSystems": "Nous n'avons pas trouvé de source qui décrive un système de classes d'âge chez les Kissi. Denise Paulme décrit en revanche une initiation, décidée par chaque village tous les deux ou trois ans, qui fait entrer les jeunes de douze à dix-huit ans dans la vie adulte.",
+      "roleOfLineages": "Le lignage, appelé gbèo (pluriel gbèra), est le cadre de la vie sociale, selon Denise Paulme. Ses membres portent le même nom, respectent les mêmes interdits et descendent par les hommes du fondateur du village ou du premier de leur nom qui s'y est installé. Les hommes des lignages cultivent ensemble les terres du village, et chaque lignage possède son autel des ancêtres. Les généalogies remontent rarement à plus de trois ou quatre générations.",
+      "religiousAuthority": "Chez les Kissi, seul le descendant le plus âgé peut s'adresser aux ancêtres, selon Denise Paulme : Dieu n'entend que les ancêtres, et ceux-ci n'écoutent que le doyen de leur lignage. Le doyen est aussi le gardien du totem, l'espèce animale alliée au lignage. Le devin et guérisseur, appelé wanayawa, est très consulté, et le chef de village gravement offensé peut maudire le coupable."
     },
     "languages": {
-      "mainLanguage": "Kissi (kqs)",
+      "mainLanguage": "Kissi (kqs, kss)",
       "isoCodes": ["kqs", "kss"],
       "dialects": [
-        "Kissi Nord (Guinée, préfecture de Kissidougou)",
-        "Kissi Sud (Sierra Leone et Libéria, code ISO kss)"
+        "Kissi du Nord (code ISO kqs)",
+        "Kissi du Sud (code ISO kss)"
       ],
-      "vehicularRole": "La langue kissi est une langue d'usage communautaire interne. Dans les échanges interethniques, le français (Guinée), l'anglais (Sierra Leone, Libéria) et le krio (Sierra Leone) sont utilisés. La langue kissi appartient à la branche Mel de la famille Niger-Congo, distincte des langues atlantiques malgré la classification administrative."
+      "vehicularRole": "Le kissi est surtout la langue des Kissi eux-mêmes. En Guinée, en 2014, il est la principale langue de 15,4 % des adultes de la région de N'Zérékoré et de 13,2 % de ceux de la région de Faranah. En Sierra Leone, en 2015, 154 341 personnes le parlent comme langue principale, dont 22 % des habitants du district de Kailahun. La base linguistique Glottolog distingue le kissi du Nord et le kissi du Sud, deux langues du groupe mel, une branche de la grande famille atlantique-congo. Dans le nord du pays, beaucoup de Kissi parlent aussi le malinké, selon Denise Paulme."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q1743773",
+      "glottocode": "kiss1245"
     },
     "culture": {
-      "majorRites": "Le culte des ancêtres est central: les Kissi prient leurs défunts pour obtenir des faveurs et guider la vie collective. Les figures en stéatite taillées (pomdo, pluriel pomtan) sont associées aux ancêtres selon certains chercheurs, ou à des divinités agricoles selon d'autres; elles sont placées dans les champs pour favoriser les récoltes. Les rites d'initiation (circoncision pour les garçons, excision pour les filles dans certains groupes) marquent le passage à l'âge adulte. La société Poro (masculine) et Sande (féminine), partagée avec des peuples voisins, structure les initiations.",
-      "symbols": "Les pomdo (figures sculptées en stéatite) sont le symbole culturel le plus distinctif des Kissi. La faucille rituelle et la fameuse monnaie kissi (Kissi penny), barre de fer torsadée avec une extrémité aplatie, représentent aussi l'identité kissi.",
-      "artsAndMusic": "Les Kissi sont réputés pour la vannerie et le tissage sur métiers verticaux. Ils ont été historiquement célèbres pour leur travail du fer: le pays kissi et ses voisins possédaient de riches gisements de minerai de fer. Les forgerons kissi fabriquaient la monnaie kissi (Kissi penny), unité d'échange dans toute la région forestière. Des figures sculptées en stéatite (avant le contact colonial) témoignent d'une tradition artistique ancienne.",
-      "spiritualities": "La religion traditionnelle, incluant le culte des ancêtres et des rites agraires, demeure prépondérante malgré les conversions au christianisme depuis la période coloniale. L'islam est peu présent en raison de l'isolement forestier et de la distance culturelle avec les peuples mande islamisés. Le culte des pomdo mêle croyances animistes et vénération des ancêtres."
+      "majorRites": "Chez les Kissi, chaque semaille et chaque moisson du riz s'accompagnent d'une offrande de bouillie de riz sur les autels des ancêtres, selon Denise Paulme. L'initiation marque le passage à l'âge adulte : les garçons suivent selon les régions le birilo, le toma ou le sokuno, et les filles le birilo, le sadèndo ou le bundo. Elle comprend la circoncision dans le nord et des scarifications plus au sud pour les garçons, l'excision pour les filles, et une retraite en forêt de quelques semaines à plusieurs mois. Quand une statuette en pierre est reconnue comme l'image d'un ancêtre, une fête l'« habille » et l'installe.",
+      "symbols": "Les pierres sculptées appelées pömdo (pluriel pömta), d'un mot kissi qui veut dire « la mort », sont le symbole le plus connu du pays kissi. Le Musée de l'Homme, à Paris, en conserve plus de trois cent cinquante, selon Denise Paulme. Les Kissi en font des images de leurs ancêtres, mais ils ne les ont pas sculptées : elles sont plus anciennes, et certaines montrent des armures portugaises du XVIe siècle. Des tiges de fer tordues aux extrémités servaient aussi de monnaie avant la colonisation ; les Libériens les appellent kissi pennies, mais les Kissi disaient à Paulme qu'elles venaient du pays toma.",
+      "artsAndMusic": "Les Kissi ne sculptent ni le bois ni la pierre et ne portent pas de masques, selon Denise Paulme : pendant l'initiation, ils peignent directement le corps avec de l'ocre et de l'argile. Les femmes décorent les murs des maisons de peintures sur des modèles anciens, et les hommes tissent le coton sur un métier vertical. Les soirs de lune, tout le village danse au son d'un ou deux tambours à membrane, appelés yimbo.",
+      "spiritualities": "La religion des Kissi repose sur le culte des ancêtres, selon Denise Paulme. Un dieu du ciel, Hala, est jugé trop lointain pour recevoir prières ou offrandes ; on s'adresse plutôt aux ancêtres, sur l'autel du lignage placé au milieu du village ou dans des lieux sacrés de la forêt, rochers, arbres ou chutes d'eau. La crainte des sorciers tient une grande place, et l'on recourt aux devins et aux amulettes. Vers 1950, l'islam reste surtout celui des Malinké voisins, et les chrétiens sont peu nombreux."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Les Kissi n'ont pas formé de royaume centralisé durable. Leur organisation politique repose sur des chefferies villageoises autonomes. Kissi Kaba Keita (XIXe siècle) constitua une fédération temporaire de chefferies reconnue par les Français comme l'entité politique kissi du nord.",
-      "relationsWithNeighbors": "Les Kissi furent expulsés de leur territoire d'origine par les Yalunka au XVIIe siècle. Lors de leur migration vers l'ouest, ils expulsèrent à leur tour les Limba. Ils subirent la pression constante des Kuranko au nord. Des alliances tactiques furent nouées avec les Kuranko de Morige et les Lele de Yombiro lors de la résistance à la conquête française. Culturellement proches des Mende, Loma, Kpelle, Mano, Kono et Vai.",
-      "conflictsOrAlliances": "Résistance armée à la colonisation française (1892-1893) sous Kissi Kaba Keita, menée par des tactiques de guérilla. En Sierra Leone, Kai Londo fut un guerrier kissi influent. Les Kissi, en tant que minorité non mande dans un contexte mande dominant, ont été politiquement et économiquement marginalisés en Guinée post-indépendance.",
-      "diaspora": "Présence kissi dans les capitales de Guinée (Conakry), Sierra Leone (Freetown) et Libéria (Monrovia) dans le cadre des migrations de travail internes. Pas de diaspora internationale significative documentée."
+      "kingdomsOrChiefdoms": "Les Kissi n'ont pas formé de royaume durable : René Caillié décrit en 1827 un pays partagé entre de petits États aux chefs indépendants, et Denise Paulme une « poussière » de villages. Dans le nord, le canton de Farmaya est dominé par le clan des Keita ; selon le directeur du musée de Kissidougou, Kissi Kaba Keïta en fut le dernier roi avant la conquête française. En Sierra Leone, à la fin du XIXe siècle, la grande chefferie de Luawa, à l'est du pays mende, appartient à un conquérant d'origine kissi, Kai-Lundu, selon l'historien Yves Person.",
+      "relationsWithNeighbors": "Au nord, les Kissi voisinent avec les Kouranko et les Malinké, dont les marchands achètent chez eux la noix de cola et, autrefois, des esclaves. Un dicton malinké rapporté par Yves Person dit : « Qui veut l'huile de palme et la kola ne part pas en guerre contre le roi des Kisi. » Selon Jacques Germain, des Kouranko installés dans le nord du cercle de Kissidougou se sont mêlés aux Kissi et ont donné les Lélé. À l'est vivent les Toma ; au sud-ouest, l'expansion des Mende au XVIIIe siècle a séparé pour de bon les Kissi des Bulom, selon Person.",
+      "conflictsOrAlliances": "À la fin du XIXe siècle, les troupes de Samory ravagent le pays kissi ; en Sierra Leone, l'armée de Kai-Lundu leur tient tête, selon Yves Person. La conquête française suit en 1893, et Kissi Kaba Keïta est fusillé à Siguiri cette même année, selon le musée de Kissidougou. Au Liberia, les Kissi se révoltent en 1913 contre le gouvernement de Monrovia, selon l'historien Monday B. Akpan.",
+      "diaspora": "Le commerce des esclaves a dispersé des Kissi jusqu'en Amérique, selon Denise Paulme. Vers 1950, beaucoup de jeunes hommes partent travailler dans les plantations de bananes et les entreprises de basse Guinée, et l'armée recrute chaque année des conscrits. Nous n'avons pas trouvé de source chiffrée sur les Kissi qui vivent aujourd'hui hors de leur région."
     },
     "demography": {
-      "totalPopulation": 1224545,
-      "referenceYear": 2025,
-      "source": "Wikipedia (Kissi people) et Joshua Project 2025",
+      "totalPopulation": 794861,
+      "referenceYear": 2015,
+      "source": "Somme de trois chiffres d'origine différente. Pour la Sierra Leone, recensement de 2015 de Statistics Sierra Leone. Pour la Guinée, où aucun recensement ne compte les peuples depuis 1955, nombre calculé à partir du recensement de 2014 : 4,1 % des 9 439 468 habitants de trois ans et plus disent parler surtout le kissi. Pour le Liberia, estimation de Joshua Project, une base de données missionnaire, consultée en 2026.",
       "distributionByCountry": [
         {
           "country": "GIN",
-          "population": 798429,
-          "note": "4e groupe ethnique de Guinée, 6,2% de la population nationale"
-        },
-        {
-          "country": "LBR",
-          "population": 250273,
-          "note": "4,8% de la population libérienne"
+          "population": 387018,
+          "percentage": 4.1,
+          "note": "Personnes de trois ans et plus qui disent parler surtout le kissi au recensement de 2014, surtout dans les régions de N'Zérékoré et de Faranah. Joshua Project, une base de données missionnaire, avance 684 000 Kissi en Guinée. Vers 1950, Denise Paulme en comptait environ 140 000 dans les cercles de Kissidougou et de Guéckédou."
         },
         {
           "country": "SLE",
           "population": 175843,
-          "note": "4,5% de la population sierra-léonaise"
+          "percentage": 2.5,
+          "note": "Recensement de 2015, part de la population des ménages. Le kissi est la langue principale de 22 % des habitants du district de Kailahun. Le recensement de 1931 en comptait 35 000, selon Denise Paulme."
+        },
+        {
+          "country": "LBR",
+          "population": 232000,
+          "note": "Estimation de Joshua Project, une base de données missionnaire, consultée en 2026, pour les locuteurs du kissi du Sud. Nous n'avons pas pu consulter les tableaux du recensement libérien."
         }
       ]
     },
@@ -237,12 +314,15 @@
         "title": "Kissi in Guinea – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/12722/gv",
         "tier": "unverified",
-        "source_kind": "missionary_database"
+        "source_kind": "missionary_database",
+        "notes": "Base de données missionnaire. Consultée le 3 novembre 2026 : la page donne 684 000 Kissi en Guinée, sans date ni origine précise du chiffre (« Data is compiled from various sources »)."
       },
       {
-        "title": "The Peoples of Africa – éd. Murdock G.P., 1959, McGraw-Hill",
-        "url": null,
-        "tier": "needs_review"
+        "title": "Joshua Project – Kissi, Southern in Liberia",
+        "url": "https://joshuaproject.net/people_groups/15046/LI",
+        "tier": "unverified",
+        "source_kind": "missionary_database",
+        "notes": "Base de données missionnaire. Consultée le 3 novembre 2026 : la page donne 232 000 Kissi du Sud au Liberia, sans date ni origine précise du chiffre."
       },
       {
         "title": "Ethnologue – Kissi, Northern (kqs), SIL International, 2024",
@@ -254,7 +334,162 @@
         "title": "Supplement to a Handbook of the Kissi Language – Kilson M., 1966",
         "url": null,
         "tier": "needs_review"
+      },
+      {
+        "title": "Les Gens du Riz. Les Kissi de Haute-Guinée",
+        "author": "Denise Paulme",
+        "year": 1954,
+        "url": "https://webguine.site/bibliotheque/ethnographie/kisi/dpaulme/tdm.html",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Paris, Librairie Plon, 1954 ; rééd. 1970. Enquêtes menées avec André Schaeffner d'octobre 1945 à juin 1946 et de fin octobre 1948 à mai 1949, sous les auspices de l'Institut français d'Afrique noire. Copie non officielle du texte, sans la pagination du livre, mise en ligne par webGuinée. Lu le 3 novembre 2026. Chapitres lus : avant-propos, introduction, chapitres I, IV, V, VI, VIII, X et XI. Passage lu : « le pays presque entier n'était qu'une poussière d'agglomérations juxtaposées sans unité véritable » (chapitre V)."
+      },
+      {
+        "title": "La société kissi : son organisation politique",
+        "author": "Denise Paulme",
+        "year": 1960,
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1960_num_1_1_2941",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 73",
+        "notes": "Cahiers d'études africaines, vol. 1, n° 1, 1960, p. 73-85. Lu le 3 novembre 2026 sur Persée, où seule la première page était lisible. Passage lu : « Les Kissi forment la population la plus importante des cercles de Kissidougou et de Guéckédou en Haute-Guinée »."
+      },
+      {
+        "title": "Soixante ans d'évolution en pays kissi",
+        "author": "Yves Person",
+        "year": 1960,
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1960_num_1_1_2942",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 86",
+        "notes": "Cahiers d'études africaines, vol. 1, n° 1, 1960, p. 86-112. Lu le 3 novembre 2026 sur Persée, où seule la première page était lisible. Passages lus : « Ces alliances sont au nombre d'environ 80 pour la partie kissi de l'ancien cercle de Kissidougou » et « Une trentaine ne bénéficieront jamais du statut de canton même lors du grand émiettement de 1898 »."
+      },
+      {
+        "title": "Journal d'un voyage à Temboctou et à Jenné, tome premier",
+        "author": "René Caillié",
+        "year": 1830,
+        "url": "https://archive.org/details/journaldunvoyage01cail",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 336 et p. 413-417",
+        "notes": "Paris, Imprimerie royale, 1830, tome premier. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Passage lu : « Ce pays est divisé en plusieurs petits états, gouvernés par des chefs indépendans, qui se font souvent la guerre entre eux pour se procurer des esclaves » (p. 416)."
+      },
+      {
+        "title": "Guinée. Peuples de la Forêt",
+        "author": "Jacques Germain",
+        "year": 1984,
+        "url": "https://webguine.site/bibliotheque/ethnographie/jGermain/notePrelim.html",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "Note préliminaire",
+        "notes": "Paris, Académie des sciences d'outre-mer, 1984. Copie non officielle du texte, mise en ligne par webGuinée. Lu le 3 novembre 2026. Passages lus : « Les Kissi qui sont 55 000 dans le cercle de Kissidougou et 82 000 dans celui de Guéckédou » et « les Kouranko se sont enfoncés dans le Nord du cercle de Kissidougou et, mélangés aux Kissi, ont donné les Lélés ». L'auteur précise que ces chiffres viennent des recensements de l'immédiat après-guerre."
+      },
+      {
+        "title": "Glottolog — Northern Kissi (nort2765)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath, Sebastian Bank",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/nort2765",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du languoid. Lu le 3 novembre 2026 : nom « Northern Kissi », glottocode nort2765, code ISO 639-3 kqs, classé dans Atlantic-Congo, Mel, Southern Mel, Kissi. Autres noms relevés : « Gizi, Kisi, Kisie, Kissi, Kissi, Northern, Kissien »."
+      },
+      {
+        "title": "Glottolog — Southern Kisi (sout2778)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath, Sebastian Bank",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/sout2778",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du languoid. Lu le 3 novembre 2026 : nom « Southern Kisi », glottocode sout2778, code ISO 639-3 kss, classé dans Atlantic-Congo, Mel, Southern Mel, Kissi."
+      },
+      {
+        "title": "Glottolog — Kissi (kiss1245)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath, Sebastian Bank",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/kiss1245",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du groupe. Lu le 3 novembre 2026 : « Family: Kissi », glottocode kiss1245, qui réunit le kissi du Nord et le kissi du Sud, dans le mel du Sud (bull1245)."
+      },
+      {
+        "title": "Sierra Leone 2015 Population and Housing Census, National Analytical Report, tableau 3.21",
+        "author": "Statistics Sierra Leone",
+        "year": 2017,
+        "url": "https://sierraleone.unfpa.org/sites/default/files/pub-pdf/National%20Analytical%20Report.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. 91-92",
+        "notes": "Freetown, Statistics Sierra Leone, octobre 2017, mis en ligne par le bureau de l'UNFPA en Sierra Leone. Lu le 3 novembre 2026. Tableau 3.21 : « Kissi 175,843 », 2,5 % de la population des ménages ; tableau 3.22 : 154 341 personnes ont le kissi pour langue principale ; tableau 3.23 : « Kailahun Mende 69.8 Kissi 22.0 »."
+      },
+      {
+        "title": "Troisième recensement général de la population et de l'habitation de Guinée (RGPH3, 2014), rapport « État et structure de la population »",
+        "author": "Institut national de la statistique de Guinée (Mamadou Chérif Bah et Mamadouba Alkaly Bangoura)",
+        "year": 2017,
+        "url": "https://www.stat-guinee.org/images/Documents/Publications/INS/rapports_enquetes/RGPH3/RGPH3_etat_structure.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. 85-86",
+        "notes": "Conakry, Institut national de la statistique, édition de décembre 2017. Lu le 3 novembre 2026. Tableau 5.07 : « Kissi 4,1 » % de la population de trois ans et plus ; tableau 5.08 : 15,4 % dans la région de N'Zérékoré et 13,2 % dans celle de Faranah. Le recensement compte les langues parlées, pas les peuples."
+      },
+      {
+        "title": "COI Focus Guinée : situation ethnique, mise à jour du 17 juillet 2025 (CGRA, Cedoca), texte intégral",
+        "author": "Commissariat général aux réfugiés et aux apatrides (Belgique), service Cedoca",
+        "year": 2025,
+        "url": "https://coi.euaa.europa.eu/administration/belgium/PLib/COI_Focus_Guin%C3%A9e_Situation_ethnique_20250717.pdf",
+        "tier": "referenced",
+        "source_kind": "government",
+        "page": "p. 7",
+        "notes": "Rapport du service de documentation du Commissariat général aux réfugiés et aux apatrides de Belgique, publié sur le portail de l'Agence de l'Union européenne pour l'asile. Lu le 3 novembre 2026. Passage lu : il est « difficile d'établir des statistiques des différents groupes ethniques, car le dernier recensement officiel qui en tient compte date de 1955 ». Le rapport cite l'ouvrage d'Ismaël Barry (2022), qui écrit « les Kissias »."
+      },
+      {
+        "title": "General History of Africa, IV, ch. 12 : Coastal peoples: first contacts with the Portuguese, from Casamance to the Ivory Coast lagoons",
+        "author": "Yves Person",
+        "year": 1984,
+        "url": "https://archive.org/details/unesco_general_history_africa_iv",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Paris, UNESCO, et Londres, Heinemann, 1984, dir. D. T. Niane. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive de l'édition anglaise. Passages lus, sans la pagination imprimée : « a Mel language like the Kissi » et, en note, « If you want palm oil and kola, do not make war on the king of Kissi »."
+      },
+      {
+        "title": "General History of Africa, V, ch. 13 : The states and cultures of the Upper Guinean coast, édition numérisée sur Internet Archive",
+        "author": "Christophe Wondji",
+        "year": 1992,
+        "url": "https://archive.org/details/unesco_general_history_africa_v",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Paris, UNESCO, et Londres, Heinemann, 1992, dir. B. A. Ogot. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive de l'édition anglaise. Passages lus, sans la pagination imprimée : « Lastly came the Kisi and Bullom, two related groups, who had followed the River Niger to its source »."
+      },
+      {
+        "title": "General History of Africa, V, ch. 10 : Senegambia from the sixteenth to the eighteenth century, édition numérisée sur Internet Archive",
+        "author": "Boubacar Barry",
+        "year": 1992,
+        "url": "https://archive.org/details/unesco_general_history_africa_v",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Paris, UNESCO, et Londres, Heinemann, 1992, dir. B. A. Ogot. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive de l'édition anglaise. Passage lu, sans la pagination imprimée : le commerce a fait venir au Fouta-Djalon, aux XVIIIe et XIXe siècles, des esclaves de nombreuses régions « including Bambara, Kisi, Jallonke, Fulbe, Bassari and Koniagui »."
+      },
+      {
+        "title": "General History of Africa, VI, ch. 24 : States and peoples of Senegambia and Upper Guinea",
+        "author": "Yves Person",
+        "year": 1989,
+        "url": "https://archive.org/details/general_history_africa_vi",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Paris, UNESCO, et Oxford, Heinemann, 1989, dir. J. F. Ade Ajayi. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive de l'édition anglaise. Passages lus, sans la pagination imprimée : « absorbing the Bulom, who were thus separated for good from the Kissi » et « the great Luawa chiefdom was, at the end of the century, the domain of a powerful conqueror of Kissi origin, Kai-Lundu »."
+      },
+      {
+        "title": "Entretien : le directeur préfectoral du musée de Kissidougou à cœur ouvert à notre rédaction",
+        "author": "Souleymane Taïré Diallo (Guinéenews)",
+        "year": 2019,
+        "url": "https://guineenews.org/2019/12/28/entretien-le-directeur-prefectoral-du-musee-de-kissidougou-a-coeur-ouvert-a-notre-redaction/",
+        "tier": "unverified",
+        "source_kind": "press",
+        "notes": "Article de presse du site guinéen Guinéenews, daté du 28 décembre 2019. Lu le 3 novembre 2026. Propos de Sinkoun Diakité, directeur préfectoral du musée de Kissidougou : « Il est né en 1836 à Mara et il est mort le 25 Avril 1893 à Siguiri où il a été arrêté et fusillé » et « Kissi Kaba a été le dernier roi de Faramaya »."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Les Kissi sont un peuple de cultivateurs de riz de Guinée forestière, de l'est de la Sierra Leone et du Liberia ; ils se nomment eux-mêmes Kissi et parlent une langue mel.",
+      "followUp": "Pourquoi leurs voisins du nord les appelaient-ils « les gens du riz » ?"
+    }
   }
 }

@@ -70,36 +70,43 @@ describe("Bissa fiches merged into PPL_BISSA", () => {
   it("keeps the survivor under the Mande family its own text names", () => {
     const bissa = readBissa();
     expect(bissa.languageFamilyId).toBe("FLG_MANDE");
-    expect(bissa.content.appellations.linguisticFamily).toBe("FLG_MANDE");
+    // The family lives at the top level only: the strict model gives the
+    // appellations no family key (premium pass, 2026-11-03).
+    expect(bissa.content.appellations.linguisticFamily).toBeUndefined();
   });
 
   // @req REQ-178
-  it("carries what only a retired fiche held: the Gormine dialect and the Busanga exonym of the Kusasi", () => {
+  it("carries what only a retired fiche held: the Gormine dialect and the Busanga exonym", () => {
     const bissa = readBissa();
     const dialects = bissa.content.languages.dialects.join(" ");
     const exonyms = bissa.content.appellations.exonyms.join(" ");
-    expect(dialects).toContain("Gormine");
-    expect(exonyms).toContain("Kusasi");
+    // Written as Glottolog spells it since the premium pass of 2026-11-03.
+    expect(dialects).toContain("Gɔ̀rmı̀ñnẽ̀");
+    expect(exonyms).toContain("Busanga");
   });
 
   // @req REQ-178
-  it("records every population estimate the three fiches gave instead of silently keeping one", () => {
+  // The three merged figures had no source anyone could open; the premium
+  // pass of 2026-11-03 replaced them with the estimates it read, each named.
+  it("names the origin of every population figure it gives", () => {
     const source = readBissa().content.demography.source as string;
-    for (const figure of ["1 206 000", "1 100 000", "600 000"]) {
-      expect(source, figure).toContain(figure);
-    }
+    expect(source).toContain("Joshua Project");
+    expect(source).toContain("1 231 000");
+    expect(source).toContain("INSD");
   });
 
   // @req REQ-178
-  it("keeps the sources each retired fiche cited, at the tier it gave them", () => {
+  // Discover Burkina Faso (needs_review) left with the claims it carried in
+  // the premium pass of 2026-11-03; the tiers of the citations kept are
+  // unchanged.
+  it("keeps the retired fiches' citations it still rests on, at the tier they gave them", () => {
     const sources = readBissa().content.sources as Array<{
       title: string;
       tier: string;
     }>;
-    const titles = sources.map((s) => s.title).join(" | ");
-    expect(titles).toContain("101 Last Tribes");
-    expect(titles).toContain("Discover Burkina Faso");
-    expect(sources.some((s) => s.tier === "needs_review")).toBe(true);
+    const lastTribes = sources.find((s) => s.title.includes("101 Last Tribes"));
+    expect(lastTribes?.tier).toBe("unverified");
+    expect(sources.some((s) => s.title.includes("Glottolog"))).toBe(true);
   });
 
   // @req REQ-178
