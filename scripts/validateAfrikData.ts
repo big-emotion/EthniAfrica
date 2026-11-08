@@ -4873,7 +4873,12 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // FLG_TUU lacked (each declares `content.gaps`, counted once as unexpected;
   // FLG_SONGHAY still omits `classificationStatus`, no source finding the
   // name problematic).
-  famille_linguistique: 88,
+  // 104 -> 81 on 2026-11-03: the premium pass on FLG_MANDE, FLG_BERBERE,
+  // FLG_AFROASIATIQUE, FLG_ATLANTIQUE and FLG_AUSTRONESIENNE filled the four
+  // decolonialHeader keys every family lacked (linkWithFamily,
+  // geographicArea, numberOfLanguages, totalSpeakers), and FLG_MANDE and
+  // FLG_BERBERE gained whyProblematic, FLG_BERBERE classificationStatus.
+  famille_linguistique: 65,
   // 13 -> 9 on 2026-09-29: `culture.mainLanguages` added on Mali, Senegal,
   // Burundi and the Republic of the Congo from an official toponymic factfile.
   // 9 -> 8 on 2026-10-26: `culture.mainLanguages` added on the DR Congo, its

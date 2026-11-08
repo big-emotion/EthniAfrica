@@ -1,7 +1,17 @@
 {
+  "_meta": {
+    "research": [
+      "Glottolog 5.3, fiche JSON berb1260 : 27 langues, 66 dialectes, parent afro-asiatique.",
+      "Ethnologue (pages langue, sous-groupe et pays) : accès refusé (403) ; copies d'archive Wayback non accessibles depuis cet environnement.",
+      "Recensements : HCP Maroc RGPH 2024 (lu), INSTAT Mali RGPH5 (lu), INS Niger, État et structure de la population 2012 (lu, sans tableau de langues), rien trouvé pour l'Algérie, la Libye, la Tunisie, le Burkina Faso, la Mauritanie et l'Égypte.",
+      "Chiffres par pays retirés faute de source primaire lue : DZA 4 500 000, NER 720 000, LBY 285 890, BFA 122 000, MRT 117 200, TUN 53 100, EGY 20 000 (tous lus seulement par Wikipédia).",
+      "Non ouverts : Hanoteau et Letourneux 1872-1873 (Gallica bloqué, HathiTrust 403), IRCAM (site indisponible), Lorcin et Colonna lus seulement par comptes rendus."
+    ]
+  },
   "id": "FLG_BERBERE",
   "nameFr": "Berbère / Amazighe",
   "nameEn": "Berber / Amazigh",
+  "classificationStatus": "contested",
   "nameHistory": {
     "summary": "Le nom berbère désigne une famille de langues d'Afrique du Nord et du Sahara, que ses locuteurs nomment de plus en plus tamaziɣt. Le mot berbère vient de l'arabe Barbar ; on a aussi dit libyco-berbère. Les sources ne s'accordent pas sur son origine ni sur le sens d'Amaziɣ ; nous les présentons plus bas.",
     "names": [
@@ -488,101 +498,38 @@
       "byCountry": [
         {
           "country": "MAR",
-          "speakers": 13800000,
+          "speakers": 9133426,
           "source": {
-            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Maroc (2022)",
-            "url": "https://en.wikipedia.org/wiki/Berber_languages",
-            "tier": "unverified",
-            "notes": "Estimation d'Ethnologue pour 2022, fondée sur des chiffres de 2016-2017, rapportée par Wikipédia. Les originaux (Ethnologue, Brenzinger) n'ont pas été ouverts : le chiffre n'est lu que par l'intermédiaire de Wikipédia. Il est nettement plus élevé que la part de 24,8 % de la population qui utilise l'amazigh d'après le recensement marocain de 2024, qui est un taux d'usage et non un nombre de locuteurs (9,1 millions selon Wikipédia, sans que nous sachions si ce total est calculé). La fiche contient aussi 9 444 131 pour le Maroc, calculé à partir du taux de 24,8 % : ces trois chiffres ne se recoupent pas, et la date et la définition qui expliqueraient l'écart ne sont pas connues."
-          }
-        },
-        {
-          "country": "DZA",
-          "speakers": 4500000,
-          "source": {
-            "title": "Berber languages (Wikipedia, English edition), citant Brenzinger, Language Diversity Endangered",
-            "url": "https://en.wikipedia.org/wiki/Berber_languages",
-            "tier": "unverified",
-            "notes": "Estimation de Brenzinger (2015 dans le tableau de Wikipédia) : environ 2,5 à 3 millions pour le kabyle et 1,4 million pour le chaoui. L'estimation d'ensemble reste incertaine, et la somme de ces deux parties (3,9 à 4,4 millions) ne donne pas exactement 4 500 000. Les originaux n'ont pas été ouverts : le chiffre n'est lu que par l'intermédiaire de Wikipédia."
+            "title": "Haut-Commissariat au Plan du Maroc (2024) – Recensement Général de la Population et de l'Habitat 2024, Principaux résultats, Rabat, 17 décembre 2024, p. 19",
+            "url": "https://www.hcp.ma/file/242665/",
+            "tier": "official",
+            "source_kind": "official_statistics",
+            "notes": "Au recensement de 2024, 24,8 % de la population utilise l'une des formes de l'amazigh (tachelhit, tamazight, tarifit et autres), p. 19. Le même document donne une population légale de 36 828 330 habitants au 1er septembre 2024. Le chiffre 9 133 426 est le produit de ces deux nombres : c'est un ordre de grandeur, pas un nombre de locuteurs compté par le recensement."
           }
         },
         {
           "country": "MLI",
-          "speakers": 798000,
+          "speakers": 737383,
           "source": {
-            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Mali (2022)",
-            "url": "https://en.wikipedia.org/wiki/Berber_languages",
-            "tier": "unverified",
-            "notes": "Estimation d'Ethnologue pour 2014-2018, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé. Les originaux n'ont pas été ouverts : le chiffre n'est lu que par l'intermédiaire de Wikipédia."
-          }
-        },
-        {
-          "country": "NER",
-          "speakers": 720000,
-          "source": {
-            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Niger (2022)",
-            "url": "https://en.wikipedia.org/wiki/Berber_languages",
-            "tier": "unverified",
-            "notes": "Estimation d'Ethnologue pour 1998, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé. Les originaux n'ont pas été ouverts : le chiffre n'est lu que par l'intermédiaire de Wikipédia."
-          }
-        },
-        {
-          "country": "LBY",
-          "speakers": 285890,
-          "source": {
-            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Libye (2022)",
-            "url": "https://en.wikipedia.org/wiki/Berber_languages",
-            "tier": "unverified",
-            "notes": "Estimation d'Ethnologue pour 2020, rapportée par Wikipédia et non vérifiée dans le volume imprimé. Le tableau récapitulatif de Wikipédia donne 247 000 pour le seul nafusi. Les originaux n'ont pas été ouverts : le chiffre n'est lu que par l'intermédiaire de Wikipédia."
-          }
-        },
-        {
-          "country": "BFA",
-          "speakers": 122000,
-          "source": {
-            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Burkina Faso (2022)",
-            "url": "https://en.wikipedia.org/wiki/Berber_languages",
-            "tier": "unverified",
-            "notes": "Estimation d'Ethnologue pour 2009, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé. Les originaux n'ont pas été ouverts : le chiffre n'est lu que par l'intermédiaire de Wikipédia."
-          }
-        },
-        {
-          "country": "MRT",
-          "speakers": 117200,
-          "source": {
-            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Mauritanie (2022)",
-            "url": "https://en.wikipedia.org/wiki/Berber_languages",
-            "tier": "unverified",
-            "notes": "Estimation d'Ethnologue pour 2017-2018, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé. Les originaux n'ont pas été ouverts : le chiffre n'est lu que par l'intermédiaire de Wikipédia."
-          }
-        },
-        {
-          "country": "TUN",
-          "speakers": 53100,
-          "source": {
-            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Tunisie (2022)",
-            "url": "https://en.wikipedia.org/wiki/Berber_languages",
-            "tier": "unverified",
-            "notes": "Estimation d'Ethnologue pour 2004, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé. Les originaux n'ont pas été ouverts : le chiffre n'est lu que par l'intermédiaire de Wikipédia."
-          }
-        },
-        {
-          "country": "EGY",
-          "speakers": 20000,
-          "source": {
-            "title": "Berber languages (Wikipedia, English edition), citant Ethnologue, chapitre Égypte (2022)",
-            "url": "https://en.wikipedia.org/wiki/Berber_languages",
-            "tier": "unverified",
-            "notes": "Estimation d'Ethnologue pour 2013, telle que rapportée par Wikipédia ; non vérifiée dans le volume imprimé. Les originaux n'ont pas été ouverts : le chiffre n'est lu que par l'intermédiaire de Wikipédia."
+            "title": "Institut national de la statistique du Mali (2025) – Cinquième recensement général de la population et de l'habitat (RGPH5), Rapport d'analyse des données, thème : caractéristiques culturelles de la population, Bamako, janvier 2025",
+            "url": "https://instat-mali.org/laravel-filemanager/files/shares/rgph/rapport-caracteristiques-culturelles-population-rgph5_rpgh.pdf",
+            "tier": "official",
+            "source_kind": "official_statistics",
+            "notes": "Tableau 3.01, p. 25 : 737 383 personnes ont le tamasheq pour langue maternelle au recensement de 2022, soit 3,85 % de la population résidente de 3 ans et plus. Le chiffre ne compte que la langue maternelle."
           }
         }
       ]
     },
     "decolonialHeader": {
-      "selfAppellation": "Tamazight",
-      "contemporaryUsage": "Terme \"Amazigh/Imazighen\" officialisé dans les constitutions marocaine (2011, article 5) et algérienne (2016, article 4). Au Maroc, le recensement de 2024 compte environ une personne sur quatre (24,8 % de la population) qui utilise l'une des formes de l'amazigh (tachelhit, tamazight, tarifit et autres), plus souvent à la campagne (33,3 %) qu'en ville (19,9 %). C'est une part de la population, pas un nombre de locuteurs.",
+      "linkWithFamily": "Une branche de la famille afro-asiatique, selon Glottolog, comme dans la classification de Joseph Greenberg en 1963. Cheikh Anta Diop a contesté ce rattachement.",
       "historicalAppellations": ["Libyque", "Numide", "Maure", "Barbar"],
-      "originOfHistoricalTerm": "Libyque, Numide et Maure sont des noms donnés par d'autres peuples, que l'on trouve dans les sources grecques et latines. Selon Yves Modéran (2003), Mauri est le plus fréquent dans les sources officielles du IVe au VIIe siècle. Barbar est le nom arabe, dont viendrait le français berbère. Modéran le relie au latin barbarus, passé par la forme barbar du latin parlé, plutôt que par la forme savante barbari. Les Arabes l'auraient entendu à leur arrivée en Ifrîkiya, dans les villes et les campagnes où le latin était parlé. La plus ancienne trace écrite sûre citée ici se trouve chez Ibn al-Kalbî, dans la seconde moitié du VIIIe siècle ; des traditions remontant aux environs de 730 le mentionnent aussi. Amazigh est le nom que le peuple se donne. Son sens fait l'objet de plusieurs explications. La traduction « les hommes libres » est fréquente. Chaker (1986) la fait remonter à Jean-Léon l'Africain, puis à Stéphane Gsell. Il la juge « certainement pas fondée » et parle d'« une extrapolation indue ». Pour lui, Amazigh désigne d'abord un peuple : il est « fondamentalement un ethnonyme et non une désignation référant à une classe ou un statut social ». Il ajoute qu'il est « difficile d'établir une étymologie sûre pour cet ethnique ». Le nom apparaît dès l'Antiquité sous les formes Maxyes chez Hérodote et Mazyes chez Hécatée, puis Mazaces ou Mazices chez les auteurs latins. Chez les Touareg, amajeγ désigne bien un aristocrate nomade, mais ce sens ne s'applique pas partout. Chaker indique aussi que le terme était inconnu de la culture traditionnelle de Kabylie, du Mzab et des Aurès. Selon lui, son usage plus large se diffuse depuis la Kabylie vers 1945-1950, grâce à la chanson berbéro-nationaliste. Pour Berbère, Modéran (2010) explique que les auteurs médiévaux ont imaginé un ancêtre appelé Berr ou Berber, « fort opportunément inventé », pour expliquer le nom utilisé par les Arabes à leur arrivée. Il propose de relier ce nom au latin Barbari."
+      "originOfHistoricalTerm": "Libyque, Numide et Maure sont des noms donnés par d'autres peuples, que l'on trouve dans les sources grecques et latines. Selon Yves Modéran (2003), Mauri est le plus fréquent dans les sources officielles du IVe au VIIe siècle. Barbar est le nom arabe, dont viendrait le français berbère. Modéran le relie au latin barbarus, passé par la forme barbar du latin parlé, plutôt que par la forme savante barbari. Les Arabes l'auraient entendu à leur arrivée en Ifrîkiya, dans les villes et les campagnes où le latin était parlé. La plus ancienne trace écrite sûre citée ici se trouve chez Ibn al-Kalbî, un auteur de la seconde moitié du VIIIe siècle cité par Ibn Khaldoun ; des traditions remontant aux environs de 730 le mentionnent aussi. Amazigh est le nom que le peuple se donne. Son sens fait l'objet de plusieurs explications. La traduction « les hommes libres » est fréquente. Chaker (1986) la fait remonter à Jean-Léon l'Africain, puis à Stéphane Gsell. Il la juge « certainement pas fondée » et parle d'« une extrapolation indue ». Pour lui, Amazigh désigne d'abord un peuple : il est « fondamentalement un ethnonyme et non une désignation référant à une classe ou un statut social ». Il ajoute qu'il est « difficile d'établir une étymologie sûre pour cet ethnique ». Le nom apparaît dès l'Antiquité sous les formes Maxyes chez Hérodote et Mazyes chez Hécatée, puis Mazaces ou Mazices chez les auteurs latins. Chez les Touareg, amajeγ désigne bien un aristocrate nomade, mais ce sens ne s'applique pas partout. Chaker indique aussi que le terme était inconnu de la culture traditionnelle de Kabylie, du Mzab et des Aurès. Selon lui, son usage plus large se diffuse depuis la Kabylie vers 1945-1950, grâce à la chanson berbéro-nationaliste. Pour Berbère, Modéran (2010) explique que les auteurs médiévaux ont imaginé un ancêtre appelé Berr ou Berber, « fort opportunément inventé », pour expliquer le nom utilisé par les Arabes à leur arrivée. Il propose de relier ce nom au latin Barbari.",
+      "whyProblematic": "Le nom berbère pose problème à une partie des personnes qu'il désigne, pour deux raisons. La première tient à son origine. Il vient du nom arabe Barbar, que les Arabes auraient repris, à leur arrivée en Ifrîkiya, du latin barbari. Selon l'historien Yves Modéran, c'est le nom par lequel les Romains et les Grecs désignaient les habitants de l'Afrique qui n'étaient pas romanisés. En 1986, le linguiste Salem Chaker rapporte que certains berbérisants du Maghreb, surtout marocains, veulent remplacer en français « berbère » par Amaziɣ et tamaziɣt, parce qu'ils jugent le mot offensant : il rappelle « barbare ». Chaker doute que ce remplacement s'impose, tant le mot est ancien en français. La seconde raison tient à l'usage que la colonisation française a fait de ce nom en Algérie. Dès la prise d'Alger en 1830, des officiers, des savants et des administrateurs opposent les « Berbères », surtout les Kabyles, montagnards sédentaires jugés proches des Français et faciles à assimiler, aux « Arabes » nomades des plaines. En 1845, le médecin Eugène Bodichon écrit ainsi que la France doit entretenir l'hostilité entre Arabes et Kabyles pour s'en servir, selon le journaliste et chercheur Yassine Temlali, qui cite l'historien Charles-Robert Ageron. Ageron a donné à cet ensemble de croyances le nom de « mythe kabyle ». En 1995, l'historienne Patricia Lorcin l'étudie dans Imperial Identities: Stereotyping, Prejudice and Race in Colonial Algeria. D'après le compte rendu de Jacques Frémeaux, elle montre comment le savoir colonial a souligné une identité berbère construite contre l'identité arabe et musulmane, que l'occupant jugeait la plus menaçante. La chercheuse Nedjma Abdelfettah Lalmi ajoute en 2004 que ce mythe n'a pas inventé la singularité kabyle : il s'en est saisi et l'a fortement réinterprétée. L'école coloniale a aussi compté. La sociologue Fanny Colonna a étudié les instituteurs algériens formés entre 1883 et 1939 et le rôle de l'école française dans la sélection et la formation d'une élite « indigène », selon le compte rendu d'Ageron.",
+      "selfAppellation": "Tamazight",
+      "contemporaryUsage": "Amaziɣ (pluriel Imaziɣen) et tamaziɣt sont aujourd'hui les noms employés en berbère pour l'ensemble des Berbères et de leur langue, y compris en Kabylie et dans les Aurès, où ils n'étaient pas connus autrefois, selon Salem Chaker. Leur diffusion part de Kabylie dans les années 1945-1950, avec la chanson « berbéro-nationaliste » du mouvement national algérien. À la fin des années 1940, en 1949, la « crise berbériste » divise le principal parti indépendantiste algérien, le PPA-MTLD : une partie de ses militants défend une Algérie arabe et musulmane, l'autre une « Algérie algérienne » avec toutes ses cultures, selon l'historienne Karima Dirèche. Après l'indépendance de l'Algérie en 1962, l'Académie berbère, créée à Paris en 1966, fait connaître l'alphabet tifinagh et le drapeau berbère. En mars 1980, l'interdiction d'une conférence de l'écrivain Mouloud Mammeri à l'université de Tizi-Ouzou déclenche le « Printemps berbère », d'où naît le Mouvement culturel berbère. La loi algérienne de 1989 sur la liberté des associations favorise ensuite les associations berbères. En 1995, des associations de toute l'Afrique du Nord fondent le Congrès mondial amazigh, et l'État algérien crée le Haut-Commissariat à l'Amazighité. Après le « Printemps noir » de 2001 en Kabylie, l'Algérie reconnaît le tamazight comme langue nationale en 2002, puis comme langue nationale et officielle dans sa Constitution de 2016, à l'article 4. Au Maroc, la Constitution de 2011 fait de l'amazighe une langue officielle de l'État, comme patrimoine commun de tous les Marocains, à l'article 5. Au recensement marocain de 2024, environ une personne sur quatre (24,8 % de la population) utilise l'une des formes de l'amazigh (tachelhit, tamazight, tarifit et autres), plus souvent à la campagne (33,3 %) qu'en ville (19,9 %). C'est une part de la population, pas un nombre de locuteurs. En France, une convention signée en 2006 entre le ministère de l'Éducation nationale et l'Institut national des langues et civilisations orientales (Inalco) organise la préparation à l'épreuve facultative de berbère au baccalauréat.",
+      "geographicArea": "Maroc, Algérie, Tunisie, Libye, Égypte (oasis de Siwa), Mauritanie, Mali, Niger, Burkina Faso, France",
+      "numberOfLanguages": 27,
+      "totalSpeakers": 25000000
     },
     "generalInfo": {
       "branches": [
@@ -595,9 +542,18 @@
         "Berbère non classé (guanche, éteint)",
         "Berbère occidental (zenaga-tetserret)"
       ],
-      "geographicArea": "- Afrique du Nord (Tamazgha) et zone sahélo-saharienne.",
-      "numberOfLanguages": 25,
-      "totalSpeakers": 35000000
+      "geographicArea": "L'Afrique du Nord, de l'oasis de Siwa en Égypte jusqu'au Maroc et à la Mauritanie, ainsi que le Sahara et le Sahel, où vivent les Touaregs, de l'Algérie et de la Libye jusqu'au Niger, au Mali et au Burkina Faso. Une importante diaspora vit en France.",
+      "numberOfLanguages": 27,
+      "totalSpeakers": 25000000,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "27 langues selon Glottolog 5.3, dont le guanche, éteint. Le nombre dépend de la façon dont on sépare les langues et les dialectes."
+        },
+        "totalSpeakers": {
+          "note": "Entre 23 et 25 millions de berbérophones, une estimation de Salem Chaker en 2013. Un autre article du même bulletin parle d'environ 40 millions de Berbères. Aucun recensement ne compte tous les locuteurs.",
+          "unsourced": false
+        }
+      }
     },
     "associatedPeoples": [
       {
@@ -616,21 +572,22 @@
     "linguisticCharacteristics": {
       "typology": "Langue flexionnelle, de type fusio-agglutinant, bâtie sur une racine consonantique. La morphologie fonctionne par racine et schème, sur des racines bilitères ou trilitères : de la racine R-W (enfanter) viennent aru (accoucher), tarwa (progéniture) et arraw (fils) ; de K-R-Z (labourer), yekrez (il a labouré), takrza (le labour) et amkraz (le laboureur) ; de F-S-R (répandre), yufser, tafesra et amfasar. Le berbère a emprunté des racines arabes qu'il fait fonctionner sur le même principe. Le genre et le nombre sont marqués par circonfixe, autour du mot et non à sa seule fin : argaz (homme) donne irgazen, tamgart (femme) donne timgarin.",
       "phonologicalFeatures": "Système consonantique riche, comportant des emphatiques (ḍ, ṭ, ẓ, ṣ) et des labio-vélarisées (gw, kw). Système vocalique réduit à trois voyelles fondamentales (a, i, u) auxquelles s'ajoute un schwa neutre. Dans les parlers du Nord, une spirantisation adoucit les occlusives, le t se réalisant comme une fricative interdentale.",
-      "relationsWithNeighbors": "Cognats avec les autres branches afro-asiatiques — sémitique, couchitique, égyptien ancien, tchadique : ilès (langue) en regard de l'arabe lissan, isem (nom) en regard de ism. Emprunts au latin, comme aɣyul (âne) issu d'asinus, et à l'arabe, principalement dans le lexique religieux, comme tazallit (prière) issu de salat. Les routes transsahariennes ont produit des emprunts mutuels avec le songhay et le haoussa dans le vocabulaire pastoral, commercial et artisanal.",
+      "relationsWithNeighbors": "Dans la famille afro-asiatique, le berbère partage des mots apparentés avec les autres branches, le sémitique, le couchitique, l'égyptien ancien et le tchadique : ilès (langue) en regard de l'arabe lissan, isem (nom) en regard de ism. Emprunts au latin, comme aɣyul (âne) issu d'asinus, et à l'arabe, principalement dans le lexique religieux, comme tazallit (prière) issu de salat. Les routes transsahariennes ont produit des emprunts mutuels avec le songhay et le haoussa dans le vocabulaire pastoral, commercial et artisanal.",
       "keyInnovations": "L'état d'annexion, qui modifie la voyelle initiale du nom selon sa fonction syntaxique : aman (l'eau, sujet) devient waman en complément. L'écriture tifinagh, alphabet géométrique autochtone descendant du libyque, conservée par les Touaregs et réintroduite au Nord au XXe siècle."
     },
     "historyAndOrigins": {
-      "probableOrigin": "L'appartenance du berbère à la famille afro-asiatique est établie par Marcel Cohen (1947), qui le premier décrit systématiquement les ressemblances régulières entre les sons de ces langues et ceux des langues sémitiques, de l'égyptien et des langues couchitiques, puis confirmée par Joseph Greenberg (1963) ; Lionel Bender et Christopher Ehret situent ensuite le berbère parmi les branches qui se seraient séparées tôt des autres. Trois théories proposent des lieux d'origine différents. La théorie nord-africaine, majoritaire dans l'école occidentale, suit Gabriel Camps (1987) qui associe les personnes qui auraient parlé une forme ancienne des langues berbères aux populations du Néolithique capsien (9000-4500 av. J.-C.) en Afrique du Nord centrale, en s'appuyant sur la continuité culturelle entre le Capsien et les cultures néolithiques maghrébines. La théorie du Sahara oriental, minoritaire, suit Christopher Ehret (2002) qui propose une origine dans le Sahara ou la vallée du Nil pour la langue dont les langues afro-asiatiques seraient issues, avec une migration berbère vers l'ouest lors de l'assèchement du Sahara (6000-4000 av. J.-C.). La théorie afrocentrique de l'unité égyptienne-berbère, portée par Cheikh Anta Diop (Nations nègres et culture, 1954 ; Parenté génétique de l'égyptien pharaonique et des langues négro-africaines, 1977), conteste la séparation entre Afrique du Nord et Afrique subsaharienne : elle propose une continuité culturelle et linguistique entre l'Égypte pharaonique, les Berbères et les populations subsahariennes, tient le terme afro-asiatique pour une construction visant à détacher l'Afrique du Nord de son africanité, rapproche des mots qu’elle considère comme issus d’une même origine entre l'égyptien ancien, le berbère et des langues d'Afrique de l'Ouest (wolof, sérère, peul), et situe les Berbères dans une migration sud-nord depuis le Sahara et la vallée du Nil. Théophile Obenga (L'origine commune de l'égyptien ancien, du copte et des langues négro-africaines modernes, 1993), collaborateur de Diop, affine l'hypothèse d'un ensemble négro-égyptien incluant le berbère comme branche périphérique et conteste la méthodologie comparatiste de Greenberg. Ces travaux ont été fondateurs pour l'étude de l'histoire africaine après les indépendances et restent enseignés dans les universités africaines ; le colloque de l'UNESCO au Caire en 1974 a été le lieu d'un débat public entre Diop et les linguistes occidentaux sur la classification de l'égyptien. Les points de divergence avec le consensus académique sont explicites : la parenté berbère-égyptien-subsaharien n'est pas confirmée par la linguistique comparée moderne, qui juge les ressemblances entre les sons insuffisantes, et l'hypothèse d'une migration sud-nord est contredite par les données archéologiques et génétiques actuelles. La synthèse aujourd'hui dominante retient un développement sur place au Maghreb depuis le Paléolithique supérieur, avec la culture ibéromaurusienne (22000-9000 av. J.-C.), complété par des apports néolithiques venus du Proche-Orient et du Sahara.",
-      "emergencePeriod": "La séparation d'avec le proto-afro-asiatique est estimée par glottochronologie (méthode qui date une séparation entre langues d'après la part de vocabulaire qu'elles ont gardée en commun) entre 12000 et 8000 av. J.-C., à la fin de la dernière glaciation. Les premières attestations écrites sont indirectes puis directes : les textes égyptiens mentionnent des populations libyennes dès l'Ancien Empire, vers 2300 av. J.-C., sous les noms de Tjehenu, Tjemehu et Lebu ; les premières inscriptions en alphabet libyque, ancêtre du tifinagh, datent du IIIe siècle av. J.-C. en Numidie ; les sources puniques et grecques mentionnent les royaumes berbères (Massyles, Masaesyles, Maures) dès le IVe siècle av. J.-C.",
+      "probableOrigin": "L'appartenance du berbère à la famille afro-asiatique est établie par Marcel Cohen (1947), qui le premier décrit systématiquement les ressemblances régulières entre les sons de ces langues et ceux des langues sémitiques, de l'égyptien et des langues couchitiques, puis confirmée par Joseph Greenberg dans The Languages of Africa (1963) ; Lionel Bender et Christopher Ehret situent ensuite le berbère parmi les branches qui se seraient séparées tôt des autres. Trois théories proposent des lieux d'origine différents. La théorie nord-africaine, majoritaire dans l'école occidentale, suit Gabriel Camps (1987) qui associe les personnes qui auraient parlé une forme ancienne des langues berbères aux populations du Néolithique capsien (9000-4500 av. J.-C.) en Afrique du Nord centrale, en s'appuyant sur la continuité culturelle entre le Capsien et les cultures néolithiques maghrébines. La théorie du Sahara oriental, minoritaire, suit Christopher Ehret qui, dans The Civilizations of Africa (2002), propose une origine dans le Sahara ou la vallée du Nil pour la langue dont les langues afro-asiatiques seraient issues, avec une migration berbère vers l'ouest lors de l'assèchement du Sahara (6000-4000 av. J.-C.). La théorie afrocentrique de l'unité égyptienne-berbère, portée par Cheikh Anta Diop (Nations nègres et culture, 1954 ; Parenté génétique de l'égyptien pharaonique et des langues négro-africaines, 1977), conteste la séparation entre Afrique du Nord et Afrique subsaharienne : elle propose une continuité culturelle et linguistique entre l'Égypte pharaonique, les Berbères et les populations subsahariennes, tient le terme afro-asiatique pour une construction visant à détacher l'Afrique du Nord de son africanité, rapproche des mots qu’elle considère comme issus d’une même origine entre l'égyptien ancien, le berbère et des langues d'Afrique de l'Ouest (wolof, sérère, peul), et situe les Berbères dans une migration sud-nord depuis le Sahara et la vallée du Nil. Théophile Obenga, collaborateur de Diop, défend au colloque de l'UNESCO réuni au Caire (1974) une parenté étroite entre l'égyptien ancien et les langues d'Afrique noire, comme le wolof. Il y affirme qu'on ne pourra jamais établir le même parallèle entre le sémitique, le berbère et l'égyptien : sur ce point, il ne rattache pas le berbère à l'égyptien. Il développe ensuite l'idée d'une famille « négro-égyptienne » dans L'origine commune de l'égyptien ancien, du copte et des langues négro-africaines modernes (1993) et conteste la méthode comparative de Greenberg. Au Caire, Diop affirme que l'égyptien n'est pas une langue sémitique ; le professeur Abdalla lui répond que l'avis inverse a souvent été exprimé, selon le compte rendu des débats publié par l'UNESCO en 1978. Ces travaux ont été fondateurs pour l'étude de l'histoire africaine après les indépendances et restent enseignés dans les universités africaines. Les points de divergence avec le consensus académique sont explicites : la parenté berbère-égyptien-subsaharien n'est pas confirmée par la linguistique comparée moderne, qui juge les ressemblances entre les sons insuffisantes, et l'hypothèse d'une migration sud-nord est contredite par les données archéologiques et génétiques actuelles. La synthèse aujourd'hui dominante retient un développement sur place au Maghreb depuis le Paléolithique supérieur, avec la culture ibéromaurusienne (22000-9000 av. J.-C.), complété par des apports néolithiques venus du Proche-Orient et du Sahara.",
+      "emergencePeriod": "La séparation d'avec le proto-afro-asiatique est estimée par glottochronologie (méthode qui date une séparation entre langues d'après la part de vocabulaire qu'elles ont gardée en commun) entre 12000 et 8000 av. J.-C., à la fin de la dernière glaciation. Les premières attestations écrites sont indirectes puis directes. Les Égyptiens mentionnent dans leurs textes des populations libyennes dès l'Ancien Empire, vers 2300 av. J.-C., sous les noms de Tjehenu, Tjemehu et Lebu ; les premières inscriptions en alphabet libyque, ancêtre du tifinagh, datent du IIIe siècle av. J.-C. en Numidie ; les sources puniques et grecques mentionnent les royaumes berbères (Massyles, Masaesyles, Maures) dès le IVe siècle av. J.-C.",
       "diffusion": "Entre 6000 et 2000 av. J.-C., une expansion vers le Sahara installe les ancêtres des Touaregs dans le Sahara central et méridional. Elle commence pendant la phase humide du Sahara néolithique, qui prend fin vers 3500-3000 av. J.-C. selon les études du climat, et plus tard vers le sud. L'art rupestre du Tassili n'Ajjer et du Tibesti en garde la trace pastorale. Les zones montagneuses de l'Atlas et du Rif sont occupées sans discontinuité depuis le Néolithique, et le littoral méditerranéen connaît un contact précoce avec les navigateurs phéniciens, Carthage étant fondée en 814 av. J.-C. Après l'assèchement du Sahara, vers 2000 av. J.-C., le peuplement se replie sur les zones refuges : montagnes de l'Atlas, oasis sahariennes, littoral.",
-      "historicalBreaks": "L'arabisation, engagée à partir du VIIe siècle, est la rupture principale. Les invasions hilaliennes du XIe siècle provoquent un bouleversement linguistique et l'arabisation massive des plaines fertiles, tandis que le berbère se maintient dans les zones refuges : montagnes kabyle, rifaine et atlasique, déserts touaregs, oasis isolées. L'emprunt à l'arabe est massif dans le vocabulaire religieux, administratif et quotidien.",
+      "historicalBreaks": "L'arabisation est la rupture principale. Selon Salem Chaker, elle est lente et suit la conquête arabe et l'islamisation, au VIIIe siècle, puis l'arrivée de populations arabes nomades venues du Moyen-Orient, au XIe siècle. Le berbère devient alors minoritaire. Les invasions hilaliennes du XIe siècle provoquent un bouleversement linguistique et l'arabisation massive des plaines fertiles, tandis que le berbère se maintient dans les zones refuges : montagnes kabyle, rifaine et atlasique, déserts touaregs, oasis isolées. L'emprunt à l'arabe est massif dans le vocabulaire religieux, administratif et quotidien.",
       "contactZones": "Durant l'Antiquité, du IXe siècle av. J.-C. au Ve siècle apr. J.-C., les contacts phéniciens et puniques laissent des emprunts commerciaux et maritimes, notamment dans la toponymie côtière ; les contacts romains, du IIe siècle av. J.-C. au Ve siècle apr. J.-C., laissent des emprunts administratifs et techniques ; les contacts grecs restent limités, principalement via Cyrène. Au Moyen Âge, l'arabe devient la langue de contact dominante. Du XIe au XIXe siècle, les routes transsahariennes mettent le berbère en contact avec le songhay et le haoussa.",
-      "majorEvents": "Antiquité : royaumes numides de Massinissa, roi des Massyles (202-148 av. J.-C.), et de Jugurtha, dont la guerre contre Rome court de 112 à 105 av. J.-C. ; royaumes maures de Juba II (25 av. J.-C. - 23 apr. J.-C.) et Maurétanies Tingitane et Césarienne ; romanisation partielle, avec des villes berbères romanisées comme Timgad et Cuicul, mais maintien du berbère dans les campagnes. Moyen Âge : islamisation à partir de 647, avec des résistances dont celle de la Kahina (695-702) ; dynasties berbères almoravide (1040-1147), almohade (1121-1269) et mérinide (1244-1465), qui emploient le berbère dans l'administration et l'armée ; conversion à l'islam sans disparition de la langue. Périodes coloniale et contemporaine : résistance de Fatma N'Soumer en Kabylie (1830-1857) et d'Abd el-Krim dans le Rif (1920-1926) ; renouveau culturel amazigh au XXe siècle, avec le Printemps berbère de 1980 en Algérie, la reconnaissance constitutionnelle de la langue au Maroc en 2011 et en Algérie en 2016, et son travail de standardisation."
+      "majorEvents": "Antiquité : royaumes numides de Massinissa, roi des Massyles (202-148 av. J.-C.), et de Jugurtha, dont la guerre contre Rome court de 112 à 105 av. J.-C. ; royaumes maures de Juba II (25 av. J.-C. - 23 apr. J.-C.) et Maurétanie Tingitane et Maurétanie Césarienne ; romanisation partielle, avec des villes berbères romanisées comme Timgad et Cuicul, mais maintien du berbère dans les campagnes. Moyen Âge : islamisation à partir de 647, avec des résistances dont celle de la Kahina (695-702) ; dynasties berbères almoravide (1040-1147), almohade (1121-1269) et mérinide (1244-1465), qui emploient le berbère dans l'administration et l'armée ; conversion à l'islam sans disparition de la langue. Périodes coloniale et contemporaine : résistance de Fatma N'Soumer en Kabylie (1830-1857) et d'Abd el-Krim dans le Rif (1920-1926), qui fonde contre l'occupation espagnole l'éphémère République du Rif, datée de 1921 à 1927 par Karima Dirèche ; renouveau culturel amazigh au XXe siècle, avec le Printemps berbère de 1980 en Algérie, la reconnaissance constitutionnelle de la langue au Maroc en 2011 et en Algérie en 2016, et son travail de standardisation."
     },
     "distribution": {
-      "totalSpeakers": 35000000,
+      "totalSpeakers": 25000000,
       "distributionByCountry": {
-        "MAR": 9444131
+        "MAR": 9133426,
+        "MLI": 737383
       }
     },
     "sources": [
@@ -666,14 +623,15 @@
         "title": "Glottolog 5.2 – classification génétique \"Berber [berb1260]\", 8 branches immédiates (Awjilah, Ghadames, Greater Zenatic, Kabyle-Atlas Berber, Nafusi, Tuareg, Unclassified Berber, Western Berber)",
         "url": "https://glottolog.org/resource/languoid/id/berb1260",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la famille Berber relue dans Glottolog 5.3 : 27 langues, dont le guanche, éteint, et 66 dialectes, sous la famille afro-asiatique."
       },
       {
         "title": "Haut-Commissariat au Plan du Maroc (2024) – Recensement Général de la Population et de l'Habitat 2024, Principaux résultats, Rabat, 17 décembre 2024, p. 19",
         "url": "https://www.hcp.ma/file/242665/",
         "tier": "official",
         "source_kind": "official_statistics",
-        "notes": "Page « Expressions linguistiques utilisées par la population (%) » : « Le quart utilise les différentes expressions linguistiques de l'Amazigh (24,8%) avec une proportion plus élevée en milieu rural (33,3%) qu'en milieu urbain (19,9%) ». La légende précise « Amazigh (Tachelhit, Tamazight, Tarifit et autres) ». C'est une part de la population, pas un nombre de locuteurs ; la page ne précise ni la tranche d'âge ni le sens exact de « utilisées ». Dans cette fiche, le chiffre de 9 444 131 pour le Maroc est calculé à partir de ce taux d'usage (24,8 %) et de la population nationale (38 081 173 en 2024, chiffre de la Banque mondiale repris par la fiche et non relu ici) : c'est un ordre de grandeur, pas un nombre de locuteurs. Le total de 35 000 000 pour la famille n'a pas de source lue ; il ne correspond pas à la somme des chiffres par pays donnés plus haut (environ 20,4 millions)."
+        "notes": "Page « Expressions linguistiques utilisées par la population (%) », p. 19 : « Le quart utilise les différentes expressions linguistiques de l'Amazigh (24,8%) avec une proportion plus élevée en milieu rural (33,3%) qu'en milieu urbain (19,9%) ». La légende précise « Amazigh (Tachelhit, Tamazight, Tarifit et autres) ». La population légale du Maroc est de 36 828 330 habitants au 1er septembre 2024. Le chiffre de 9 133 426 pour le Maroc est le produit de ces deux nombres : c'est un ordre de grandeur, pas un nombre de locuteurs. La page ne précise ni la tranche d'âge ni le sens exact de « utilise »."
       },
       {
         "title": "Cohen, Marcel (1947) — Essai comparatif sur le vocabulaire et la phonétique du chamito-sémitique. Paris : Champion",
@@ -713,7 +671,7 @@
         "url": null,
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Monographie d'auteur nommé avec année ; source de l'hypothèse d'un ensemble négro-égyptien incluant le berbère comme branche périphérique."
+        "notes": "Monographie d'auteur nommé avec année, où l'auteur développe l'hypothèse d'une famille « négro-égyptienne »."
       },
       {
         "title": "Modéran, Yves (2003) — Les Maures et l'Afrique romaine (IVe-VIIe siècle). Rome : École française de Rome, Bibliothèque des Écoles françaises d'Athènes et de Rome",
@@ -735,6 +693,82 @@
         "tier": "referenced",
         "source_kind": "academic",
         "notes": "Notice de l'Encyclopédie berbère (CNRS et INALCO), passage relu dans le texte en ligne. Porte l'éponyme Berr ou Berber introduit par les généalogistes médiévaux pour expliquer le terme forgé par les Arabes."
+      },
+      {
+        "title": "Institut national de la statistique du Mali (2025) – Cinquième recensement général de la population et de l'habitat (RGPH5), Rapport d'analyse des données, thème : caractéristiques culturelles de la population, Bamako, janvier 2025",
+        "url": "https://instat-mali.org/laravel-filemanager/files/shares/rgph/rapport-caracteristiques-culturelles-population-rgph5_rpgh.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport rédigé par Safiatou Lala Bengaly et Ahamadou Diallo. Tableau 3.01, p. 25 : le tamasheq est la langue maternelle de 737 383 personnes, soit 3,85 % de la population résidente de 3 ans et plus, au recensement de 2022."
+      },
+      {
+        "title": "Langues et cité, n° 23 : Le berbère, bulletin de l'Observatoire des pratiques linguistiques, Délégation générale à la langue française et aux langues de France, août 2013",
+        "url": "https://www.culture.gouv.fr/content/download/93561/file/lc_23_berbere_def.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de Salem Chaker, « Le berbère / tamazight en France », p. 2 : le Maroc (40 % de la population) et l'Algérie (25 %) comptent 80 % des 23 à 25 millions de berbérophones ; il existe aussi des groupes berbères en Libye, en Tunisie, en Égypte (Siwa) et en Mauritanie, et des Touaregs au Niger, au Mali, en Algérie, en Libye et au Burkina Faso ; l'arabisation suit la conquête arabe (VIIIe siècle) et l'arrivée de nomades arabes (XIe siècle) ; près de 2 millions de berbérophones vivent en France. Article de Mena Lafkioui, p. 3, qui parle d'environ 40 millions de Berbères. Article de Kamal Nait-Zerrad, p. 5, sur la convention de 2006 entre le ministère de l'Éducation nationale et l'Inalco pour l'épreuve de berbère au baccalauréat."
+      },
+      {
+        "title": "Abdelfettah Lalmi, Nedjma (2004) – « Du mythe de l'isolat kabyle », Cahiers d'études africaines, 175, p. 507-531",
+        "url": "https://journals.openedition.org/etudesafricaines/4710",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de revue lu en ligne. Le résumé dit que le « mythe kabyle », nommé ainsi par Charles-Robert Ageron, n'a pas inventé la singularité kabyle mais s'en est saisi et l'a fortement réinterprétée. L'article évoque aussi le « miracle kabyle » de l'école française étudié par Fanny Colonna."
+      },
+      {
+        "title": "Frémeaux, Jacques (1996) – compte rendu de Patricia M. E. Lorcin, Imperial Identities: Stereotyping, Prejudice and Race in Colonial Algeria (1995), Revue française d'histoire d'outre-mer, 83, n° 313, p. 101-102",
+        "url": "https://www.persee.fr/doc/outre_0300-9513_1996_num_83_313_3488_t1_0101_0000_5",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Compte rendu lu en ligne. Le livre, publié à Londres en 1995, étudie le « mythe kabyle », mieux connu par les travaux de Charles-Robert Ageron, et la façon dont le savoir colonial a souligné une identité berbère construite contre l'identité arabe et islamique, jugée la plus menaçante pour l'occupant. Le livre de Lorcin n'a pas été lu directement."
+      },
+      {
+        "title": "Barrows, Leland (1999) – « Scholarly Myths and Colonial Realities », compte rendu de Patricia M. E. Lorcin, Imperial Identities, H-France, H-Net Reviews",
+        "url": "https://www.h-net.org/reviews/showrev.php?id=2910",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Compte rendu lu en ligne. Il définit le « mythe kabyle » étudié par Lorcin, de 1830 à 1900 environ : les Berbères sédentaires des montagnes, surtout les Kabyles, seraient « supérieurs » aux Arabes nomades des plaines, plus proches des Français et plus faciles à assimiler. Lorcin attribue à Ageron l'expression « mythe kabyle »."
+      },
+      {
+        "title": "Ageron, Charles-Robert (1977) – compte rendu de Fanny Colonna, Instituteurs algériens (1883-1939), Annales. Économies, sociétés, civilisations, 32, n° 4, p. 717-720",
+        "url": "https://www.persee.fr/doc/ahess_0395-2649_1977_num_32_4_293849_t1_0717_0000_002",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Compte rendu lu en ligne. Ageron présente le livre comme une réflexion sur le rôle de l'école française dans l'entreprise coloniale, en particulier sur la sélection et la formation d'une élite indigène, et juge son propos « hypercritique ». Le livre de Colonna n'a pas été lu directement."
+      },
+      {
+        "title": "Temlali, Yassine (2015) – « Kabylia: Between Colonial Myths and Algerian Realities », extrait traduit de La genèse de la Kabylie. Aux origines de l'affirmation berbère en Algérie (1830-1962), Jadaliyya",
+        "url": "https://www.jadaliyya.com/Details/32673",
+        "tier": "referenced",
+        "source_kind": "press",
+        "notes": "Extrait en anglais du chapitre « La politique berbère (kabyle) de la France en Algérie : mythes et réalités », d'un livre publié à Alger par Barzakh. L'auteur cite le docteur Eugène Bodichon, qui écrit en 1845 que la France doit développer l'hostilité entre Arabes et Kabyles, d'après Charles-Robert Ageron, Les Algériens musulmans et la France (1968), p. 269."
+      },
+      {
+        "title": "Dirèche, Karima (2021) – « Les printemps berbères. Pour en finir avec un Maghreb arabe ? », dans Entanglements of the Maghreb, HAL halshs-03072414",
+        "url": "https://shs.hal.science/halshs-03072414v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Texte de l'autrice déposé dans l'archive ouverte HAL, lu en entier. Il retrace la crise berbériste de 1949 au sein du PPA-MTLD, l'Académie berbère créée à Paris en 1966, le Printemps berbère de 1980 après l'interdiction d'une conférence de Mouloud Mammeri, le Mouvement culturel berbère, la loi de 1989 sur les associations, le Congrès mondial amazigh et le Haut-Commissariat à l'Amazighité en 1995, le Printemps noir de 2001, la reconnaissance du tamazight comme langue nationale en 2002 puis officielle en 2016, et la République du Rif (1921-1927)."
+      },
+      {
+        "title": "Le peuplement de l'Égypte ancienne et le déchiffrement de l'écriture méroïtique, actes du colloque tenu au Caire du 28 janvier au 3 février 1974, Histoire générale de l'Afrique, Études et documents, 1, UNESCO, 1978",
+        "url": "https://buv.isfad-gn.org/universitaire/Droit/histoire%20des%20institutions%20politiques%20et%20sociales/pdf/192572fo.pdf",
+        "tier": "referenced",
+        "source_kind": "intergovernmental",
+        "notes": "Volume de l'UNESCO, réimpression de 1986, lu dans une copie numérique déposée par une bibliothèque universitaire guinéenne. Contribution de Théophile Obenga, p. 69 : il affirme qu'on ne pourra jamais établir entre le sémitique, le berbère et l'égyptien le parallèle qu'il établit entre l'égyptien et les langues négro-africaines. Compte rendu des débats, p. 99-100 : discussion entre Cheikh Anta Diop et le professeur Abdalla sur le caractère sémitique ou non de l'égyptien."
+      },
+      {
+        "title": "Constitution du Royaume du Maroc de 2011, article 5 — Constitute Project",
+        "url": "https://www.constituteproject.org/constitution/Morocco_2011",
+        "tier": "referenced",
+        "notes": "Texte de la Constitution, lu en anglais : l'arabe demeure langue officielle de l'État ; le tamazight est aussi langue officielle, patrimoine commun de tous les Marocains sans exception."
+      },
+      {
+        "title": "Constitution de la République algérienne démocratique et populaire de 2016, article 4 — Constitute Project",
+        "url": "https://www.constituteproject.org/constitution/Algeria_2016",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Texte de la Constitution, lu en anglais : le tamazight est aussi langue nationale et officielle, et l'État s'emploie à le promouvoir dans toutes ses variétés."
       }
     ]
   }
