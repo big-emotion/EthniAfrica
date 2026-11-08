@@ -125,52 +125,52 @@
       "exonyms": ["Sisumbwa", "Lusumbwa", "Kisumbwa"],
       "originOfExonyms": "Sisumbwa et Lusumbwa ajoutent un élément au début du nom du peuple, comme le font les langues bantoues. Kisumbwa est le nom swahili de la langue. Ces variantes renvoient à la même communauté selon la langue utilisée.",
       "whyProblematic": null,
-      "contemporaryUsage": "Le nom Sumbwa est utilise officiellement en Tanzanie pour designer ce groupe ethnique et sa langue. Kisumbwa est employe par les locuteurs swahili pour nommer la langue.",
+      "contemporaryUsage": "Le nom Sumbwa est utilisé officiellement en Tanzanie pour désigner ce groupe ethnique et sa langue. Kisumbwa est employé par les locuteurs du swahili pour nommer la langue.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantu du Centre-Tanzanie",
-      "historicalRegion": "Nord-Ouest de la Tanzanie (region de Shinyanga, Geita, Kagera)",
+      "historicalRegion": "Nord-Ouest de la Tanzanie (région de Shinyanga, Geita, Kagera)",
       "currentCountries": ["TZA"]
     },
     "ethnicities": ["Sumbwa"],
     "origins": {
-      "ancientOrigins": "Selon la tradition orale, les Sumbwa sont originaires de la partie occidentale de la Tanzanie. Ils auraient migre vers le nord-centre du pays ou ils ont conquis les populations locales et etabli leur propre chefferie. Comme groupe bantou, leurs ancetres font partie de la grande migration bantoue depuis le Bassin du Congo.",
-      "formationPeriod": "Periode precoloniale, formation de chefferies autonomes avant le XIXe siecle",
+      "ancientOrigins": "Selon la tradition orale que rapporte la fiche de l'université du Missouri, les Sumbwa sont originaires de l'extrême ouest de la Tanzanie. Ils se seraient installés plus tard dans le nord-centre du pays, où ils auraient soumis les populations locales et fondé leur propre chefferie. Comme tous les peuples bantous, leurs ancêtres s'inscrivent dans la grande migration bantoue ; les sources lues ne précisent pas davantage.",
+      "formationPeriod": "Période précoloniale : des chefferies autonomes existent avant le XIXe siècle, mais les sources lues n'en donnent pas de date.",
       "migrationRoutes": [
         "Depuis l'ouest de la Tanzanie vers les districts de Bukombe, Kahama et Geita (nord-centre du pays)"
       ],
       "historicalSettlementZones": [
-        "District de Bukombe (region de Geita)",
-        "District de Kahama (region de Shinyanga)",
-        "District de Biharamulo (region de Kagera)",
-        "District d'Urambo (region de Tabora)"
+        "District de Bukombe (région de Geita)",
+        "District de Kahama (région de Shinyanga)",
+        "District de Biharamulo (région de Kagera)",
+        "District d'Urambo (région de Tabora)"
       ],
-      "unificationsOrDivisions": "Organisation en chefferies independantes. Le chef principal detient l'autorite politique, relayee par des chefs de district et des chefs de village.",
-      "externalInfluences": "Contacts avec les Nyamwezi et les Sukuma voisins. Influence arabe et swahili au XIXe siecle via les routes caravanieres. Influence missionnaire catholique a partir de 1891 avec les Peres Blancs (mission d'Ushirombo).",
-      "majorHistoricalEvents": "En 1891, les Peres Blancs fondent une mission a Ushirombo, introduisant le christianisme catholique dans la region. Au XXe siecle, les Sumbwa s'integrent progressivement a l'economie coloniale via la culture du coton."
+      "unificationsOrDivisions": "Organisation en chefferies indépendantes. Le chef principal détient l'autorité politique, relayée par des chefs de district et des chefs de village.",
+      "externalInfluences": "Contacts avec les Nyamwezi et les Sukuma voisins. Influence arabe et swahilie au XIXe siècle par les routes caravanières. Influence missionnaire catholique à partir de 1891, avec les Pères Blancs (mission d'Ushirombo).",
+      "majorHistoricalEvents": "En 1891, les Pères Blancs fondent une mission à Ushirombo et introduisent le christianisme catholique dans la région. Au XXe siècle, les Sumbwa entrent peu à peu dans l'économie coloniale par la culture du coton."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Systeme de chefferies. Le chef (mwene) est l'autorite supreme; le titre peut etre achete ou est reserve aux membres de la famille chiefficale. Les chefs de district relaient le pouvoir, supervises par les chefs de village (wanyapara). Le successeur est choisi parmi les fils du chef par les favoris de celui-ci.",
-      "clanOrganization": "Organisation clanique avec systeme de rang. Les biens considerables trouves appartiennent au chef; lors d'une chasse a l'elephant, une defense revient au chef.",
+      "traditionalPoliticalSystem": "Système de chefferies. Le chef (mwene) est l'autorité suprême ; son titre peut s'acheter ou est réservé aux membres de la famille du chef. Les chefs de district relaient le pouvoir, sous la surveillance des chefs de village (wanyapara). Le successeur est choisi parmi les fils du chef par ses favoris.",
+      "clanOrganization": "Organisation en clans, avec un système de rang. Tout bien de valeur trouvé appartient au chef ; lors d'une chasse à l'éléphant, une défense lui revient.",
       "ageClassSystems": null,
-      "roleOfLineages": "Transmission patrilineaire de l'heritage; l'aine agit comme administrateur pour ses freres cadets mineurs. La parente la plus proche assure la vengeance en cas de meurtre.",
-      "religiousAuthority": "L'autorite religieuse est liee au chef, qui effectue des sacrifices aux ancetres lors de periodes rituelles (mois de Kwera). Les Sumbwa pratiquent le culte des ancetres avec des autels simples formes de poteaux en bois."
+      "roleOfLineages": "L'héritage se transmet par le père ; l'aîné administre les biens pour ses frères cadets mineurs. Le parent le plus proche venge un meurtre.",
+      "religiousAuthority": "L'autorité religieuse est liée au chef, qui offre des sacrifices aux ancêtres lors des périodes rituelles (mois de Kwera). Les Sumbwa honorent les ancêtres sur des autels simples, faits de poteaux de bois."
     },
     "languages": {
       "mainLanguage": "Kisumbwa (Sumbwa)",
       "isoCodes": ["suw"],
       "dialects": [],
-      "vehicularRole": "Le swahili est la langue vehiculaire nationale utilisee dans les echanges entre groupes. Le kisumbwa est classe 25e sur 150 langues tanzaniennes (Tanzania Language Atlas, 2009). Il coexiste avec le nyamwezi langue voisine."
+      "vehicularRole": "Le swahili, langue nationale de la Tanzanie, sert aux échanges entre groupes ; les personnes scolarisées le parlent mieux que les autres. Le kisumbwa est classé 25e sur 150 langues tanzaniennes (Tanzania Language Atlas, 2009). Il coexiste avec le nyamwezi, langue voisine."
     },
     "culture": {
-      "majorRites": "Culte des ancetres avec offrandes regulieres aux esprits des defunts. Ceremonies de naissance avec peinture corporelle sur le bebe et les parents. Vengeance de sang comme pratique traditionnelle de justice. Celebrations agricoles liees aux recoltes de sorgho, mil et coton.",
-      "symbols": "Le chef porte des insignes distinctifs: un coquillage rond dans les cheveux, un bracelet en tendons de lion et deux bracelets de cuivre. Les autels des ancetres sont des poteaux de bois plantes dans la terre.",
-      "artsAndMusic": "La danse traditionnelle mulekule est la danse emblematique des Sumbwa. Le tambour est l'instrument principal de musique dans toute la region d'Unyamwezi dont les Sumbwa font partie.",
-      "spiritualities": "Religion traditionnelle centree sur le culte des ancetres: les esprits influencent uniquement leurs propres descendants. Syncretisme notable entre la religion traditionnelle, le christianisme catholique (majoritaire depuis plus d'un siecle) et l'islam (minoritaire). Les esprits ancestraux peuvent punir les vivants en rendant le betail malade ou en les rendant fous s'ils ne sont pas honores."
+      "majorRites": "Culte des ancêtres, avec des offrandes régulières aux esprits des défunts. À la naissance, on peint le corps du bébé et celui des parents. La vengeance de sang est une pratique traditionnelle de justice. Des fêtes agricoles accompagnent les récoltes de sorgho, de mil et de coton.",
+      "symbols": "Le chef porte des insignes distinctifs : un coquillage rond dans les cheveux, un bracelet en tendons de lion et deux bracelets de cuivre. Les autels des ancêtres sont des poteaux de bois plantés dans la terre.",
+      "artsAndMusic": "La danse mulekule est la danse emblématique des Sumbwa. Le tambour est l'instrument principal dans toute la région de l'Unyamwezi, dont les Sumbwa font partie.",
+      "spiritualities": "Religion traditionnelle centrée sur le culte des ancêtres : les esprits n'agissent que sur leurs propres descendants. Elle se mêle au christianisme catholique (majoritaire depuis plus d'un siècle) et à l'islam (minoritaire). Les esprits peuvent punir les vivants qui ne les honorent pas, en rendant leur bétail malade ou en les rendant fous."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Organisation en chefferies autonomes. La chefferie principale est centree sur le district de Bukombe. Les Sumbwa ont conquis les populations locales lors de leur migration et etabli leurs propres chefferies.",
-      "relationsWithNeighbors": "Relations avec les Nyamwezi (langue parente), les Sukuma (groupe dominant de la region de Shinyanga) et les Haya (region de Kagera). Coexistence pacifique decrite par les sources missionnaires.",
-      "conflictsOrAlliances": "Les Sumbwa ont conquis les populations locales lors de leur etablissement selon la tradition orale. Integres dans les reseaux commerciaux regionaux relies aux routes caravanieres vers la cote.",
+      "kingdomsOrChiefdoms": "Organisation en chefferies autonomes. La chefferie principale est centrée sur le district de Bukombe. Selon la tradition orale, les Sumbwa ont soumis les populations locales à leur arrivée et fondé leurs propres chefferies.",
+      "relationsWithNeighbors": "Relations avec les Nyamwezi (langue proche), les Sukuma (groupe dominant de la région de Shinyanga) et les Haya (région de Kagera). Les sources missionnaires décrivent une coexistence pacifique.",
+      "conflictsOrAlliances": "Selon la tradition orale, les Sumbwa ont soumis les populations locales en s'établissant. Ils sont reliés aux réseaux commerciaux régionaux des routes caravanières vers la côte.",
       "diaspora": null
     },
     "demography": {
@@ -181,7 +181,7 @@
         {
           "country": "TZA",
           "population": 626000,
-          "note": "Tanzanie - districts de Bukombe, Kahama, Geita, Biharamulo, Urambo"
+          "note": "Tanzanie, districts de Bukombe, Kahama, Geita, Biharamulo, Urambo"
         }
       ]
     },
@@ -196,13 +196,15 @@
         "title": "Sumbwa – University of Missouri Ethnographic Survey",
         "url": "https://dice.missouri.edu/assets/docs/niger-congo/Sumbwa.pdf",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Fiche d'étudiant (2012), lue le 8 novembre 2026. Elle cite la tradition d'origine à l'ouest du pays, la mission des Pères Blancs d'Ushirombo en 1891 et la coexistence pacifique avec les Sukuma et les Ha ; elle s'appuie elle-même sur Joshua Project et sur des ouvrages d'époque coloniale, d'où la prudence."
       },
       {
         "title": "Sumbwa – Glottolog 5.3, code sumb1240",
         "url": "https://glottolog.org/resource/languoid/id/sumb1240",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Page lue le 8 novembre 2026 : code suw, pays Tanzanie, noms Sumbwa et Kisumbwa ; classement dans le groupe sukuma-nyamwezi d'après Nurse (2000)."
       },
       {
         "title": "Bantu, Central-Tanzania People Cluster – Joshua Project 2025",
