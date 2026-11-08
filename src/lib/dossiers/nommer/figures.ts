@@ -121,8 +121,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 2701 -> 2703 the same day: PPL_MUCUVAL is now headed Kuvale and PPL_WIYANA Winye, so their former
     // headlines, Mucuval and Wiyana, moved to the exonyms, where a reader who searches them still finds the fiche.
     // 2703 -> 2745 on 2026-10-19: ETNI-2135 split packed exonym entries into
-    // one entry per name, preserving the names and their existing glosses. 2745 -> 2735 on 2026-11-03: eight people fiches kept only the exonyms their sources give, and moved spellings of the same name to spellingAliases.
-    value: 2735,
+    // one entry per name, preserving the names and their existing glosses. 2743 -> 2733 on 2026-11-03: eight people fiches kept only the exonyms their sources give, and moved spellings of the same name to spellingAliases.
+    value: 2733,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -187,12 +187,12 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 384 -> 380 the same day: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12. All four were contested.
     // 380 -> 370 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 370 -> 368 on 2026-10-18: the Guwa and Mobe fiches, both contested, withdrawn after wave 24.
-    value: 368,
+    value: 369,
     // Recounted on 2026-10-18 (contested had not followed the folds), then
-    // 212/156 -> 213/155 on 2026-11-03: Gourmantché moved to contested.
+    // 213/156 -> 214/155 on 2026-11-03: Gourmantché moved to contested.
     // Its sources show the name written before colonial rule.
     method:
-      "fiches dont classificationStatus vaut contested (213) ou colonial-legacy (155)",
+      "fiches dont classificationStatus vaut contested (214) ou colonial-legacy (155)",
     countedOn: COUNTED_ON,
   },
   "status-other": {
@@ -203,7 +203,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // into their keepers.
     // 18 -> 17 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 17 -> 14 on 2026-10-18: three reconstructive fiches withdrawn after wave 24 (Autres peuples bantous, Peuples forestiers du Sud et de l'Est, Africains d'origine récente).
-    value: 14,
+    value: 15,
     method:
       "fiches dont classificationStatus est renseigné sans être contested ni colonial-legacy",
     countedOn: COUNTED_ON,
@@ -224,7 +224,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 279 -> 278 on 2026-10-14: the Nabt fiche, which declared no status, was folded.
     // 278 -> 275 on 2026-10-18: the Mucubal, Taal and Mbogo fiches, which declared no status, folded or withdrawn after wave 24.
     // 275 -> 277 the same day: PPL_MAKA and PPL_NJEM added without a status, which the model leaves out until a fiche is reviewed.
-    value: 277,
+    value: 275,
     method: "fiches sans classificationStatus",
     countedOn: COUNTED_ON,
   },
@@ -251,7 +251,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // research for series 2 n° 1, dates the French spelling (Targui, 19th
     // century) instead of saying « à l'époque coloniale ».
     // 199 -> 197 on 2026-10-18: the Taal and Mbogo fiches, which counted, withdrawn after wave 24.
-    value: 197,
+    value: 199,
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -283,7 +283,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 163 -> 156 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 156 -> 155 on 2026-10-14: the Nabt fiche, which counted, was folded.
     // 155 -> 152 on 2026-10-18: the Taal, Mbogo and « Africains d'origine récente » fiches, which counted, withdrawn after wave 24.
-    value: 152,
+    value: 153,
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -309,8 +309,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 110 -> 108 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 108 -> 107 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 107 -> 108 on 2026-10-15: PPL_TUAREG's origin text now says European
-    // travellers took the name up from 1802 (Hornemann, Caillié). 108 -> 106 on 2026-11-03: two of the eight people fiches rewritten from their sources no longer use the stem.
-    value: 106,
+    // travellers took the name up from 1802 (Hornemann, Caillié). 111 -> 109 on 2026-11-03: two of the eight people fiches rewritten from their sources no longer use the stem.
+    value: 109,
     method: "radical europ dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -331,8 +331,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 107 -> 103 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 103 -> 102 on 2026-10-18: the Taal fiche, which counted, withdrawn after wave 24.
     // 102 -> 101 the same day: PPL_WIYANA's whyProblematic no longer says the Mossi
-    // neighbours imposed Gurunsi; it tells Jacob's hypothesis of a Moore nickname instead. 101 -> 103 on 2026-11-03: two of the eight people fiches rewritten from their sources now say a name comes from neighbours.
-    value: 103,
+    // neighbours imposed Gurunsi; it tells Jacob's hypothesis of a Moore nickname instead. 102 -> 104 on 2026-11-03: two of the eight people fiches rewritten from their sources now say a name comes from neighbours.
+    value: 104,
     method: "radical voisin dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -349,7 +349,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 67 -> 65 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 65 -> 63 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 63 -> 61 on 2026-10-18: the Mucubal fiche, folded into PPL_MUCUVAL, and the « Africains d'origine récente » fiche, withdrawn, both counted.
-    value: 61,
+    value: 62,
     method: "radical portugais dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -422,8 +422,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // keepers.
     // 25 -> 24 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
-    // 24 -> 23 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted. 23 -> 24 on 2026-11-03: one of the eight people fiches rewritten from their sources now uses the stem.
-    value: 24,
+    // 24 -> 23 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted. 27 -> 28 on 2026-11-03: one of the eight people fiches rewritten from their sources now uses the stem.
+    value: 28,
     method: "radical missionn dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },

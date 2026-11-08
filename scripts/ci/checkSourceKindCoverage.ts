@@ -46,10 +46,12 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * 1001 -> 991 the same day: ten untyped citations left with PPL_MUCUBAL,
  * folded into PPL_MUCUVAL, and two people fiches withdrawn after wave 24;
  * the one carried to the Cabo Verde fiche carries a source_kind.
- * 991 -> 982 on 2026-11-03: the premium pass of eight people fiches gave
- * every source it kept or added a source_kind.
+ * 991 -> 990 on 2026-11-03: premium families batch 05 removed the untyped
+ * Müller 1876 citation of FLG_SEMITIQUE, whose publisher was wrong.
+ * 990 -> 981 the same day: premium peoples batch 03 gave every source it
+ * kept or added a source_kind.
  */
-export const UNTYPED_SOURCE_RATCHET = 982;
+export const UNTYPED_SOURCE_RATCHET = 981;
 
 export interface UntypedSource {
   file: string;

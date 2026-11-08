@@ -3,7 +3,7 @@
   "nameFr": "Songhay / Sonrai",
   "nameEn": "Songhay",
   "nameHistory": {
-    "summary": "Le nom songhaï désigne un petit groupe de langues parlées le long du Niger, de Djenné à Gaya, et par quelques groupes du Sahara plus au nord. C'est d'abord le nom que se donne le peuple songhaï et celui de sa langue, écrit dès 1526 ; on écrit aussi songhay. Les linguistes ne s'accordent pas sur la famille à laquelle ces langues appartiennent ; nous présentons plus bas leurs positions.",
+    "summary": "Le nom songhaï désigne un petit groupe de langues parlées le long du Niger, de Djenné à Gaya, et par quelques groupes du Sahara plus au nord. C'est d'abord le nom d'un peuple et de sa langue, écrit dès 1526 ; on écrit aussi songhay, soŋay ou sonrhaï. Les linguistes ne s'accordent pas sur la famille à laquelle ces langues appartiennent ; nous présentons plus bas leurs positions.",
     "names": [
       {
         "nameText": "Songhaï",
@@ -55,6 +55,16 @@
                 "source_kind": "intergovernmental",
                 "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
                 "page": "p. 335 et p. 338"
+              },
+              {
+                "title": "La généalogie des langues africaines à l'épreuve du contact : l'exemple du songhay au croisement de l'histoire, de la sociologie et de la linguistique",
+                "author": "Robert Nicolaï",
+                "year": 2007,
+                "url": "https://hal.science/hal-05253068",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Communication présentée au congrès des orientalistes allemands, à Fribourg-en-Brisgau, en septembre 2007 ; texte déposé par l'auteur dans l'archive ouverte HAL. Lu le 3 novembre 2026. Passage lu : « L'hypothèse du rattachement généalogique du songhay au nilo-saharien date de 1963 (Greenberg : 1963) »."
               }
             ]
           },
@@ -77,6 +87,16 @@
                 "source_kind": "intergovernmental",
                 "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
                 "page": "p. 473, note 28"
+              },
+              {
+                "title": "Parentés linguistiques (à propos du songhay)",
+                "author": "Robert Nicolaï",
+                "year": 1990,
+                "url": "https://hal.science/hal-05271174",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21 à 23",
+                "notes": "Paris, Éditions du CNRS, 1990 ; numérisation déposée par l'auteur dans l'archive ouverte HAL. Lu le 3 novembre 2026. Nicolaï rapporte que Pierre-Francis Lacroix, en 1969, ne retient qu'un peu plus d'une trentaine des soixante-dix rapprochements de Greenberg, les plus valables reliant le songhay-jerma à la branche saharienne, et qu'il conclut qu'il faut pour l'instant écarter l'inclusion du songhay dans le nilo-saharien."
               }
             ]
           },
@@ -98,6 +118,126 @@
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
                 "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 10 octobre 2026. Commentaire sur l'appartenance de la famille : « The Nilo-Saharan affiliation à la Ehret or Bender is thoroughly dismantled by Nicolaï, and the Berber-like lexical stratum remains inconclusive »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1955,
+              "label": "De 1924 à 1955"
+            },
+            "era": "colonial",
+            "hypothesisGroup": "famille-du-songhai",
+            "statement": "Le nom songhaï désignait pour le linguiste Westermann, dans un ouvrage de 1927 écrit en allemand, une langue isolée, qui n'appartient ni au groupe gur ni à un autre groupe des langues du Soudan, mais garde des liens avec le gur et avec le kanouri, selon Robert Nicolaï. Maurice Delafosse rangeait au contraire le songhaï dans son groupe nigéro-sénégalais.",
+            "sources": [
+              {
+                "title": "Parentés linguistiques (à propos du songhay)",
+                "author": "Robert Nicolaï",
+                "year": 1990,
+                "url": "https://hal.science/hal-05271174",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Paris, Éditions du CNRS, 1990 ; numérisation déposée par l'auteur dans l'archive ouverte HAL. Lu le 3 novembre 2026. Chapitre « Premières classifications » : Westermann « a longtemps hésité, le présentant tout d'abord comme un membre du groupe Gur puis comme une langue isolée », tandis que Delafosse (1924, 1955) « l'intégrait à l'intérieur de son groupe nigéro-sénégalais »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1995,
+              "to": 2001,
+              "label": "De 1995 à 2001"
+            },
+            "era": "modern",
+            "hypothesisGroup": "famille-du-songhai",
+            "statement": "Le nom songhaï désignerait une branche de la famille nilo-saharienne pour Lionel Bender et pour Christopher Ehret, qui ne la placent pas au même endroit de leur arbre, selon Robert Nicolaï. Bender en fait une branche détachée très tôt des autres ; Ehret la rattache à une branche plus récente, qu'elle partagerait avec le groupe que les linguistes appellent soudanique oriental.",
+            "sources": [
+              {
+                "title": "Problèmes de classification et de sous-classification : la question du songhay",
+                "author": "Robert Nicolaï",
+                "year": 1995,
+                "url": "https://hal.science/hal-05680103",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3 et p. 4",
+                "notes": "Document de travail présenté à la sixième conférence sur le nilo-saharien, à Santa Monica, en mars 1995 ; texte déposé par l'auteur dans l'archive ouverte HAL. Lu le 3 novembre 2026. Passage lu : « L. Bender le situe dans la catégorie des outliers, ou isolates, ce qui impliquerait qu'il se soit détaché à une époque très ancienne ; quant à Ehret, il trouve justifié de le placer d'une façon plus intégrée à l'intérieur de la famille »."
+              },
+              {
+                "title": "La généalogie des langues africaines à l'épreuve du contact : l'exemple du songhay au croisement de l'histoire, de la sociologie et de la linguistique",
+                "author": "Robert Nicolaï",
+                "year": 2007,
+                "url": "https://hal.science/hal-05253068",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Communication présentée au congrès des orientalistes allemands, à Fribourg-en-Brisgau, en septembre 2007 ; texte déposé par l'auteur dans l'archive ouverte HAL. Lu le 3 novembre 2026. Nicolaï écrit que Bender et Ehret retiennent tous deux le songhay dans le nilo-saharien, « bien qu'en les situant à des places différentes », avec des méthodes différentes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2007,
+              "label": "Proposée en 2003, exposée en 2007"
+            },
+            "era": "modern",
+            "hypothesisGroup": "famille-du-songhai",
+            "statement": "Le nom songhaï désignerait une langue née d'un contact intense, selon Robert Nicolaï : une variété de mandé, peut-être proche de l'ancêtre du soninké, aurait pris une grande partie de son vocabulaire à une langue de contact berbéro-arabe. Pour lui, cela ne fait pas du songhaï une langue afro-asiatique, et l'idée d'un arbre généalogique ne convient pas à cette histoire.",
+            "sources": [
+              {
+                "title": "La généalogie des langues africaines à l'épreuve du contact : l'exemple du songhay au croisement de l'histoire, de la sociologie et de la linguistique",
+                "author": "Robert Nicolaï",
+                "year": 2007,
+                "url": "https://hal.science/hal-05253068",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2 et p. 3",
+                "notes": "Communication présentée au congrès des orientalistes allemands, à Fribourg-en-Brisgau, en septembre 2007 ; texte déposé par l'auteur dans l'archive ouverte HAL. Lu le 3 novembre 2026. Passage lu : « le songhay représenterait une évolution résultant d'un contact intense entre des populations qui parlaient une variété de mandé et qui utilisaient probablement aussi une forme de lingua franca berbèro-arabe » ; l'auteur précise que ce rapprochement lexical se fait « sans qu'il soit envisagé de le situer dans un rapport généalogique » avec les langues afro-asiatiques."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "Rapportée en 2007"
+            },
+            "era": "modern",
+            "hypothesisGroup": "famille-du-songhai",
+            "statement": "Le nom songhaï désignerait une langue saharienne, ou une langue isolée, qui aurait pris au mandé ses traits de structure et emprunté beaucoup de mots arabo-berbères. D'autres auteurs proposent cette hypothèse, selon Robert Nicolaï, qui la juge aussi vraisemblable que la sienne tant que le vocabulaire songhaï n'a pas été étudié de nouveau.",
+            "sources": [
+              {
+                "title": "La généalogie des langues africaines à l'épreuve du contact : l'exemple du songhay au croisement de l'histoire, de la sociologie et de la linguistique",
+                "author": "Robert Nicolaï",
+                "year": 2007,
+                "url": "https://hal.science/hal-05253068",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Communication présentée au congrès des orientalistes allemands, à Fribourg-en-Brisgau, en septembre 2007 ; texte déposé par l'auteur dans l'archive ouverte HAL. Lu le 3 novembre 2026. Passage lu : d'autres auteurs postulent « que le songhay pourrait être dérivé d'une langue saharienne ou d'une langue isolée plus ou moins résiduelle qui, au contact du mandé, aurait acquis les caractères typologiques qu'elle partage avec lui » ; l'auteur ajoute que cet énoncé est « tout aussi vraisemblable » que le sien."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "hypothesisGroup": "famille-du-songhai",
+            "statement": "Le nom songhaï désignerait une famille sans parenté confirmée, à considérer pour l'instant comme isolée, selon Lameen Souag et David Eddyshaw. Ils rapportent que Gerrit Dimmendaal, qui défend l'existence de la famille nilo-saharienne, en exclut le songhaï en 2020.",
+            "sources": [
+              {
+                "title": "A morphological borrowing from Central Gur into Songhay",
+                "author": "Lameen Souag et David Eddyshaw",
+                "year": 2023,
+                "url": "https://shs.hal.science/halshs-04867517",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 126",
+                "notes": "Africana Linguistica, volume 29, 2023 ; texte déposé dans l'archive ouverte HAL. Lu le 3 novembre 2026. Passage lu : « It has no confirmed relatives, and for the present is best considered as isolated », et « Dimmendaal (2020), while defending the validity of Nilo-Saharan as a language family, excludes Songhay from it »."
               }
             ]
           },
@@ -170,30 +310,105 @@
         "namedBy": null,
         "variantSpelling": true,
         "accounts": []
+      },
+      {
+        "nameText": "Soŋay",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "shortLine": "Le nom songhaï écrit avec la lettre ŋ, comme dans des dictionnaires de la langue.",
+        "periodLabel": "Écrit ainsi en 1978 et en 2010",
+        "accounts": [
+          {
+            "period": {
+              "from": 1978,
+              "to": 2010,
+              "label": "Titres de 1978 et de 2010"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "formAsWritten": "soŋay",
+            "statement": "Le nom soŋay est écrit avec la lettre ŋ, qui se prononce comme ng dans parking, dans le titre d'un dictionnaire français-soŋay publié à Bamako en 2010 par Y. M. Haïdara. Un lexique de 1978 consacré au parler kaado du Gorouol, au Niger, écrit soŋey, selon la bibliographie de Lameen Souag et David Eddyshaw.",
+            "sources": [
+              {
+                "title": "A morphological borrowing from Central Gur into Songhay",
+                "author": "Lameen Souag et David Eddyshaw",
+                "year": 2023,
+                "url": "https://shs.hal.science/halshs-04867517",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 146 et p. 147",
+                "notes": "Africana Linguistica, volume 29, 2023 ; texte déposé dans l'archive ouverte HAL. Lu le 3 novembre 2026. Bibliographie : « Haïdara, Y.M. 2010. Dictionnaire français-soŋay / Kalima citaabu annasaara-soŋay senni. Bamako: EDIS » et « Ducroz, J.-M. & Charles, M.-C. 1978. Lexique soŋey (songhay)-français: parler kaado du Gorouol ». Nous n'avons pas ouvert ces deux ouvrages."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sonrhaï",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "shortLine": "Une écriture du nom songhaï employée au Mali, à côté de songhoy.",
+        "periodLabel": "Recensement malien de 2022",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2025,
+              "label": "Recensement de 2022 (rapport publié en 2025)"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "formAsWritten": "Sonhrai/Songhoy/Zarma",
+            "statement": "Le nom sonrhaï figure, avec les formes songhoy et zarma, dans le recensement malien de 2022. La catégorie « Sonhrai/Songhoy/Zarma » y regroupe les personnes dont c'est la langue maternelle, et le rapport nomme cette langue songhoy quand il décrit la langue parlée au quotidien.",
+            "sources": [
+              {
+                "title": "Rapport d'analyse des données du RGPH5 : caractéristiques culturelles de la population",
+                "author": "Institut national de la statistique du Mali (INSTAT), Bureau central du recensement ; rédigé par Safiatou Lala Bengaly et Ahamadou Diallo",
+                "year": 2025,
+                "url": "https://instat-mali.org/laravel-filemanager/files/shares/rgph/rapport-caracteristiques-culturelles-population-rgph5_rpgh.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "p. 5, p. 24 et p. 28",
+                "notes": "Bamako, janvier 2025, rapport du cinquième recensement général de la population et de l'habitat, réalisé en 2022. Lu le 3 novembre 2026. Le tableau 3.01 donne « Sonhrai/Songhoy/Zarma » ; le texte du chapitre 4 parle du « Songhoy » ; la présentation des groupes du pays cite « les Sonrhaïs/Songhoy/Zarma »."
+              }
+            ]
+          }
+        ]
       }
     ]
   },
   "content": {
-    "searchAnswer": {
-      "lead": "Des langues du fleuve Niger, au Mali et au Niger. Soŋay est le nom que se donnent les Songhay et les Zarma ; une explication le relie à l'ancien empire songhay, centré sur Gao aux XVe et XVIe siècles.",
-      "followUp": "Comment les Songhay et les Zarma se nomment-ils ?"
-    },
     "decolonialHeader": {
+      "linkWithFamily": "Famille à part dans le catalogue Glottolog. Joseph Greenberg l'avait rattachée en 1963 à la famille nilo-saharienne ; Pierre-Francis Lacroix puis Robert Nicolaï ont contesté ce rattachement.",
+      "historicalAppellations": ["Sungai", "Songhai", "Songhay-jerma"],
+      "originOfHistoricalTerm": "Le nom est d'abord celui d'une langue : en 1526, Léon l'Africain écrit que les Noirs appellent Sungai l'une de leurs langues, parlée de Gualata à Gago. Robert Brown, qui édite sa traduction anglaise en 1896, note que c'est Léon qui a fait connaître le mot Songhai en Europe. Le nom devient ensuite celui d'un ensemble de langues. Pierre-Francis Lacroix intitule un travail de 1969 « L'ensemble songhay-jerma » ; jerma est une autre écriture du nom zarma. En 1963, Joseph Greenberg rattache le songhay à la famille nilo-saharienne en s'appuyant sur soixante-dix rapprochements de mots et de formes grammaticales, selon Robert Nicolaï.",
+      "whyProblematic": null,
       "selfAppellation": "Soŋay",
-      "contemporaryUsage": "Le terme est maintenant largement accepté en linguistique (SIL Ethnologue, Glottolog, UNESCO) pour désigner cette famille linguistique, bien que son affiliation génétique (Nilo-saharien vs famille indépendante) reste débattue.",
-      "historicalAppellations": [
-        "Songhai",
-        "Langues soudanaises",
-        "Nilo-saharienne",
-        "Hamitique"
-      ],
-      "originOfHistoricalTerm": " Le nom vient de l'ancien Empire Songhay (XVe–XVIe siècles) basé à Gao. Les populations zarma et songhay se nomment *Soŋay*, *Soŋai*, *Sonrai* selon les dialectes. L'origine académique du terme remonte aux classifications linguistiques modernes :"
+      "contemporaryUsage": "Le songhay désigne aujourd'hui une petite famille d'une dizaine de langues. Le catalogue Glottolog en compte dix, réparties en deux branches : le songhay oriental, qui comprend le zarma, le dendi et le koyraboro senni de Gao, et le songhay du nord-ouest, qui comprend le koyra chiini de Tombouctou et les langues du Sahara. Le cœur de la famille forme une suite de parlers proches les uns des autres, de Gao, au Mali, jusqu'au pays zarma, dans l'ouest du Niger, selon Lameen Souag et David Eddyshaw. Pour ces deux auteurs, la famille n'a pas de parenté confirmée avec d'autres langues ; les éditeurs de Glottolog la traitent aussi comme une famille à part.",
+      "geographicArea": "Mali, Niger, Bénin, Nigeria, Burkina Faso, Algérie, Soudan",
+      "numberOfLanguages": 10,
+      "totalSpeakers": 5000000
     },
     "generalInfo": {
       "branches": ["Songhay oriental", "Songhay du nord-ouest"],
-      "geographicArea": "Vallée moyenne du Niger (Mali–Niger), s'étendant vers l'est jusqu'au Bénin et le nord du Nigeria, et vers le nord dans le Sahara central (Algérie méridionale, nord du Mali).",
+      "geographicArea": "Mali, Niger, Bénin, Nigeria, Burkina Faso, Algérie, Soudan",
       "numberOfLanguages": 10,
-      "totalSpeakers": 3500000
+      "totalSpeakers": 5000000,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "Dix langues selon Glottolog, édition 5.3 : cinq dans le songhay oriental et cinq dans le songhay du nord-ouest."
+        },
+        "totalSpeakers": {
+          "note": "Un ordre de grandeur : environ cinq millions de locuteurs pour les parlers du fleuve, selon Lameen Souag. Les chiffres par pays, de dates et de méthodes différentes, donnent un total voisin.",
+          "unsourced": false
+        }
+      }
     },
     "associatedPeoples": [
       {
@@ -210,24 +425,25 @@
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " Langues majoritairement SOV (Sujet-Objet-Verb), peu de flexion, usage de particules grammaticales pour exprimer TAM (Temps-Aspect-Mode). **EXEMPLES CONCRETS** :",
-      "phonologicalFeatures": " Systèmes phonologiques variant selon les variétés, avec certaines conservant le ton et d'autres l'ayant perdu. **DÉTAILS PRÉCIS** :",
-      "relationsWithNeighbors": " Influences fortes des langues mandé (Bambara, Malinké), contacts prolongés avec les langues tchadiques (Hausa), emprunts au berbère dans les régions sahariennes. **EXEMPLES CONCRETS D'EMPRUNTS** :"
+      "typology": "Les langues songhay n'ont ni genre grammatical ni classes de noms, c'est-à-dire qu'elles ne rangent pas les noms en catégories qui changent la forme des mots voisins. Lameen Souag et David Eddyshaw décrivent leur formation des mots comme surtout agglutinante et régulière : on ajoute au mot des éléments, souvent des suffixes, qui gardent chacun leur sens. Souag précise ailleurs que les parlers du fleuve sont proches des langues isolantes, où chaque mot reste presque invariable, parce que leurs suffixes sont rares dans les textes, en dehors de l'article défini. Les langues du Sahara se sont éloignées de ce modèle. Elles ont abandonné l'ordre sujet, objet, verbe pour l'ordre sujet, verbe, objet, probablement sous l'influence du berbère, et le korandjé de l'oasis de Tabelbala, en Algérie, soude au verbe ses pronoms sujets et les petits mots qui disent si l'action est en cours, souhaitée ou niée, selon Souag.",
+      "phonologicalFeatures": "La langue commune dont viennent les langues songhay peut être reconstruite avec un système de sons très proche de celui du songhay du Niger d'aujourd'hui, selon Lameen Souag, qui s'appuie sur Robert Nicolaï. Ce système compte cinq voyelles, chacune brève ou longue, deux tons, c'est-à-dire deux hauteurs de voix qui distinguent des mots, pas de son p, et des consonnes prononcées en arrondissant les lèvres, notées kʷ, gʷ et ŋʷ. Les langues du fleuve s'en écartent peu : certaines perdent les tons ou ces consonnes arrondies, et le zarma perd les voyelles moyennes, comme é ou o, dans les syllabes terminées par une consonne. Le korandjé, au contact de l'arabe et du berbère, a perdu les tons et la longueur des voyelles, et a gagné des consonnes prononcées au fond de la gorge. Robert Nicolaï relève aussi des traits partagés avec les langues mandé voisines, comme des lacunes communes parmi les consonnes prononcées avec les lèvres et pour le son r.",
+      "relationsWithNeighbors": "Le songhay doit beaucoup aux langues mandé, la famille du bambara et du soninké. Lameen Souag écrit que la langue commune du songhay a subi une forte influence mandé, et il en retrouve des traces probables jusqu'en Algérie, comme les pronoms a- pour « il » et i- pour « ils ». Robert Nicolaï relève de nombreux traits de structure communs au songhay et au mandé, dans la formation des mots, l'ordre des phrases et les sons. Dans le Sahara, les langues songhay du Nord ont pris au berbère la plus grande partie de leur vocabulaire, et le tadaksahak et le tagdal lui ont aussi emprunté des formes grammaticales. Pour le tadaksahak, Souag montre que ces emprunts viennent surtout d'une langue berbère proche du tetserrét, une petite langue du Niger, et non seulement du touareg. Le korandjé a emprunté au berbère puis à l'arabe. Plus au sud, Souag et David Eddyshaw proposent qu'un suffixe songhay, qui sert à former des noms à partir de verbes, ait été emprunté à une langue gur voisine, probablement du groupe gurma.",
+      "keyInnovations": "Les langues songhay du Sahara partagent des formes grammaticales qu'on ne trouve pas ailleurs dans la famille, selon Lameen Souag : une marque -b- pour une action en cours, le pronom (i)ndi pour « vous », une marque -nan pour un mouvement qui s'éloigne, un petit mot n placé devant le nom pour dire « de », un suffixe -nda qui fait faire l'action, et un mot (a)ɣo qui sert de démonstratif et de relatif. Souag a fondé en 2012 sur de telles innovations communes un classement interne de la famille. Il y réunit le songhay de Tombouctou et de Djenné et les langues du Sahara dans une même branche du nord-ouest, que Glottolog reprend. Les langues du Sahara ont aussi perdu presque tous les suffixes hérités qui servaient à former des mots, et ont emprunté au berbère des formes de pluriel, selon Souag."
     },
     "historyAndOrigins": {
-      "probableOrigin": " Plusieurs théories coexistent concernant l'origine géographique et génétique des langues songhay. **QUI A CLASSÉ ? CITATIONS COMPLÈTES** :",
-      "emergencePeriod": " **DEUX TEMPORALITÉS** :",
-      "diffusion": " **TOUTES LES THÉORIES DISPONIBLES AVEC AUTEURS** :",
-      "contactZones": " **RÉPONDRE À \"OÙ\" – LOCALISER GÉOGRAPHIQUEMENT** :",
-      "majorEvents": " **CHRONOLOGIE AVEC DATES PRÉCISES** :"
+      "probableOrigin": "Les langues songhay sont probablement nées au Sahel, la bande de savane au sud du Sahara : en dehors de l'oasis de Tabelbala, toutes sont parlées en bordure du Sahel, selon Lameen Souag. Leur parenté avec d'autres langues fait l'objet de plusieurs hypothèses, que nous présentons côte à côte. En 1963, Joseph Greenberg rattache le songhay à la famille nilo-saharienne. Lionel Bender et Christopher Ehret gardent ce rattachement, mais le placent à des endroits différents de leur arbre, selon Robert Nicolaï. Pierre-Francis Lacroix conteste dès 1969 la plupart des rapprochements de Greenberg ; il n'en garde qu'une trentaine, surtout avec les langues sahariennes, et écarte pour l'instant l'inclusion du songhay. Robert Nicolaï rejette le rattachement au nilo-saharien en 2003. Il propose que le songhay soit né du contact entre une variété de mandé et une langue de contact berbéro-arabe, sans en faire pour autant une langue afro-asiatique, la famille du berbère et de l'arabe. D'autres auteurs, selon lui, voient plutôt dans le songhay une langue saharienne ou isolée qui aurait pris au mandé sa structure et emprunté des mots arabo-berbères. Le linguiste Kossmann, cité par Nicolaï, objecte qu'on trouverait autant de ressemblances avec presque n'importe quelle famille du monde. Lameen Souag et David Eddyshaw jugent en 2023 la famille sans parenté confirmée, et rapportent que Gerrit Dimmendaal, qui défend le nilo-saharien, en exclut le songhay. Ces positions divergent sur deux points : le poids à donner aux ressemblances de vocabulaire, et la possibilité qu'une langue naisse d'un mélange plutôt que d'une seule langue mère.",
+      "emergencePeriod": "Les sources que nous avons lues donnent des repères historiques plutôt qu'une date de naissance de la famille. Robert Nicolaï, en résumant les travaux des historiens, écrit que les populations songhay se seraient établies bien avant le VIIIe siècle dans la région de Gao. Il rapporte aussi l'hypothèse de l'historien Dierk Lange, pour qui des ancêtres des Songhay, les Qanda, probablement d'origine mandé, auraient été présents dès les IXe et Xe siècles bien plus à l'est qu'on ne le pense d'habitude, et jusqu'à Gao. La séparation de la branche du nord-ouest est ancienne : le korandjé est coupé des autres langues songhay depuis plus de 700 ans, selon Lameen Souag et David Eddyshaw. Le débat sur la classification commence en 1963 avec Joseph Greenberg, se poursuit avec Pierre-Francis Lacroix en 1969 et Robert Nicolaï en 1990 et en 2003, et reste ouvert.",
+      "diffusion": "Le cœur de la famille forme une suite de parlers le long du Niger, de Gao jusqu'au pays zarma. Autour de lui, Lameen Souag décrit un archipel d'îlots de langue songhay : des villes sur d'anciennes routes de commerce et des villages fondés par des migrants. Il propose des dates approximatives pour leur fondation : vers 1200 pour Tabelbala en Algérie, vers 1400 pour Agadez et In-Gall au Niger, vers 1500 pour Djenné et Hombori au Mali et pour Djougou au Bénin, vers 1850 pour les villages zarma d'Argungu au Nigeria, et vers 1900 pour les villages zabarma du Soudan. Pour Souag, une partie de ces îlots est liée à l'expansion de l'empire songhay, de 1464 à 1591, mais la langue s'est répandue avant lui et a continué après, comme le montre l'avancée du zarma vers le sud au Niger. Des groupes nomades ont aussi adopté le songhay tout en gardant leur identité : les Idaksahak et les Igdalan, d'origine berbère, vers 1700 et vers 1600 selon des estimations de Souag.",
+      "historicalBreaks": "La principale séparation passe entre les parlers du fleuve et la branche du nord-ouest, qui réunit le songhay de Tombouctou et de Djenné et les langues du Sahara, selon Lameen Souag. Au XIIIe siècle, les routes de commerce entre le Maroc et le Sahel se déplacent vers l'est ; des travailleurs agricoles de langue songhay, venus d'oasis du nord de l'actuel Niger et sans doute contraints, s'installent alors à Tabelbala, selon l'hypothèse de Souag, où leur parler devient le korandjé. Plus tard, des groupes nomades du Sahara changent de langue. Le tadaksahak garde la trace d'une langue berbère proche du tetserrét, et ce changement s'accompagne d'autres changements de coutumes, peut-être liés à des bouleversements politiques autour du XVIe siècle, selon Souag. L'empire songhay prend fin en 1591, après une invasion venue du Maroc.",
+      "contactZones": "Le long du fleuve Niger, le songhay est en contact ancien avec les langues mandé, selon Robert Nicolaï et Lameen Souag. Dans le Sahara, au nord du Mali et du Niger, les langues songhay du Nord se mêlent au touareg et à une langue berbère plus ancienne, proche du tetserrét ; des groupes berbères de l'Ouest y sont présents depuis au moins le XIIe siècle, selon Souag. À Tabelbala, dans le sud-ouest de l'Algérie, le korandjé vit au contact du berbère puis de l'arabe. Au sud du fleuve, dans l'ouest du Niger, des populations gurma et kurumba ont précédé les Zarma, et le songhay reste en contact avec des langues gur, selon Lameen Souag et David Eddyshaw. Ces deux auteurs classent aussi le dendi du Bénin parmi les parlers qui ont connu les contacts les plus intenses.",
+      "majorEvents": "Au XIe siècle, les Almoravides, une confédération berbère, pèsent sur l'empire du Ghana et sur Gao ; Robert Nicolaï y voit une raison importante de l'influence berbère sur le mandé et le songhay. Au XIIIe siècle, des locuteurs songhay s'installent dans l'oasis de Tabelbala, selon Lameen Souag. Vers 1300, l'empire du Mali domine Gao. À la fin du XIVe siècle, les Songhay s'en libèrent et commencent à bâtir leur propre empire, selon Nicolaï. Cet empire, de 1464 à 1591, s'étend jusqu'à l'océan Atlantique avant de tomber sous une invasion marocaine, selon Souag. Plus tard, le Mali devient une colonie française, le Soudan français, de 1895 à 1960, selon l'institut malien de la statistique. En 2022, le recensement du Mali compte le songhoy parmi les langues maternelles du pays."
     },
     "distribution": {
-      "totalSpeakers": 3500000,
+      "totalSpeakers": 5292313,
       "distributionByCountry": {
-        "NER": 3120000,
-        "MLI": 431700,
-        "NGA": 87800,
-        "BFA": 600
+        "NER": 4248000,
+        "MLI": 875450,
+        "BEN": 168863
       }
     },
     "sources": [
@@ -301,12 +517,6 @@
         "source_kind": "linguistic_reference"
       },
       {
-        "title": "[Glottolog] ([2025]) – *Songhay Overview*",
-        "url": "https://glottolog.org/resource/languoid/id/song1297",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
-      },
-      {
         "title": "[UNESCO] ([2025]) – *Atlas des langues en danger dans le monde*",
         "url": "https://www.unesco.org/",
         "tier": "official",
@@ -316,7 +526,8 @@
         "title": "Glottolog 5.3 (2025) – \"Songhay\" (glottocode song1307) : arbre de classification confirmant 2 branches immédiates – Eastern Songhay, Northwest Songhay",
         "url": "https://glottolog.org/resource/languoid/id/song1307",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 3 novembre 2026. L'arbre compte dix langues : Humburi Senni, Koyraboro Senni, Tondi Songway Kiini, Dendi et Zarma-Kaado dans le songhay oriental ; Koyra Chiini, Korandje, Tadaksahak, Tagdal et Tasawaq dans le songhay du nord-ouest."
       },
       {
         "title": "SIL Ethnologue, 19e éd. (Lewis, M.P., Simons, G.F. & Fennig, C.D., eds., 2016), page consultée via version archivée (Internet Archive, 11 juin 2016) – \"Zarma [dje]\": 3 120 000 locuteurs au Niger (2013 J. Leclerc), 87 800 au Nigeria (2000), 1 700 au Mali (2012 G. Davis, sous le nom Zarmaci), 600 au Burkina Faso (1987 SIL)",
@@ -329,6 +540,138 @@
         "url": "https://www.ethnologue.com/language/ses",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "La généalogie des langues africaines à l'épreuve du contact : l'exemple du songhay au croisement de l'histoire, de la sociologie et de la linguistique",
+        "url": "https://hal.science/hal-05253068",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Robert Nicolaï, communication présentée au congrès des orientalistes allemands, à Fribourg-en-Brisgau, en septembre 2007 ; texte déposé par l'auteur dans l'archive ouverte HAL. Lu le 3 novembre 2026. Historique du débat sur la classification, hypothèse du contact et repères historiques sur Gao, pages 1 à 7."
+      },
+      {
+        "title": "Parentés linguistiques (à propos du songhay)",
+        "url": "https://hal.science/hal-05271174",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Robert Nicolaï, Paris, Éditions du CNRS, 1990 ; numérisation déposée par l'auteur dans l'archive ouverte HAL. Lu le 3 novembre 2026. Chapitre « La question du songhay », pages 21 à 23 : Westermann, Delafosse, Greenberg et la critique de Lacroix."
+      },
+      {
+        "title": "Problèmes de classification et de sous-classification : la question du songhay",
+        "url": "https://hal.science/hal-05680103",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Robert Nicolaï, document de travail présenté à la sixième conférence sur le nilo-saharien, à Santa Monica, en mars 1995 ; texte déposé par l'auteur dans l'archive ouverte HAL. Lu le 3 novembre 2026. Places différentes données au songhay par Bender et par Ehret, pages 1 à 4."
+      },
+      {
+        "title": "Explaining Korandjé",
+        "url": "https://shs.hal.science/halshs-01376165",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lameen Souag, Journal of Pidgin and Creole Languages, volume 30, 2015 ; texte déposé dans l'archive ouverte HAL. Lu le 3 novembre 2026. Passage lu : « External linguistic evidence strongly indicates that Songhay originated in the Sahel » et « Proto-Songhay underwent substantial Mande influence »."
+      },
+      {
+        "title": "Non-Tuareg Berber and the Genesis of Nomadic Northern Songhay",
+        "url": "https://shs.hal.science/halshs-01376179",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lameen Souag, Journal of African Languages and Linguistics, volume 36, 2015, pages 121 à 143 ; texte déposé dans l'archive ouverte HAL. Lu le 3 novembre 2026. Résumé et introduction sur l'origine berbère de l'Ouest d'une partie du vocabulaire du tadaksahak et du tagdal, et sur la présence de groupes berbères de l'Ouest depuis au moins le XIIe siècle."
+      },
+      {
+        "title": "Korandje as a Songhay Language Island",
+        "url": "https://shs.hal.science/halshs-03995082",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lameen Souag, Journal of Language Contact, volume 16, 2023 ; version de 2019 déposée dans l'archive ouverte HAL. Lu le 3 novembre 2026. Passage lu : « With some five million speakers, the core Songhay varieties – forming a dialect continuum along the Niger river » ; tableaux des îlots de langue songhay et de leurs dates, histoire de Tabelbala et système de sons reconstruit."
+      },
+      {
+        "title": "A morphological borrowing from Central Gur into Songhay",
+        "url": "https://shs.hal.science/halshs-04867517",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lameen Souag et David Eddyshaw, Africana Linguistica, volume 29, 2023 ; texte déposé dans l'archive ouverte HAL. Lu le 3 novembre 2026. Pages 126 et 127 : présentation de la famille, de son classement et de ses contacts avec le mandé, l'afro-asiatique et les langues gur."
+      },
+      {
+        "title": "Rapport d'analyse des données du RGPH5 : caractéristiques culturelles de la population",
+        "url": "https://instat-mali.org/laravel-filemanager/files/shares/rgph/rapport-caracteristiques-culturelles-population-rgph5_rpgh.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Institut national de la statistique du Mali, Bamako, janvier 2025, rapport du recensement de 2022. Lu le 3 novembre 2026. Langues maternelles, page 24 ; langue parlée au quotidien, page 28 ; contexte historique et statut des langues, pages 2 et 5."
+      },
+      {
+        "title": "Jacques Leclerc, « Niger », L'aménagement linguistique dans le monde, CEFAN, Université Laval",
+        "url": "https://axl.cefan.ulaval.ca/afrique/niger.htm",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Page révisée le 1er janvier 2025, lue le 3 novembre 2026 : tableau des dix langues les plus parlées au Niger, estimations pour 2014."
+      },
+      {
+        "title": "Jacques Leclerc, « Bénin », L'aménagement linguistique dans le monde, CEFAN, Université Laval",
+        "url": "https://axl.cefan.ulaval.ca/afrique/benin.htm",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Page mise à jour le 19 mai 2026, lue le 3 novembre 2026 : tableau des langues du Bénin fondé sur le recensement de 2002."
+      },
+      {
+        "title": "Jacques Leclerc, « Burkina Faso », L'aménagement linguistique dans le monde, CEFAN, Université Laval",
+        "url": "https://axl.cefan.ulaval.ca/afrique/burkina.htm",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Page mise à jour le 21 juin 2024, lue le 3 novembre 2026. L'auteur range le sonrai et le zarma parmi les langues parlées au Burkina Faso."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Le songhay est un petit groupe d'une dizaine de langues parlées le long du fleuve Niger, au Mali et au Niger, et dans quelques villes et oasis du Sahara. Sa parenté avec d'autres langues reste débattue.",
+      "followUp": "Qui a écrit le nom songhaï pour la première fois ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "NER",
+          "speakers": 4248000,
+          "source": {
+            "title": "Jacques Leclerc, « Niger », L'aménagement linguistique dans le monde, CEFAN, Université Laval",
+            "url": "https://axl.cefan.ulaval.ca/afrique/niger.htm",
+            "tier": "referenced",
+            "source_kind": "linguistic_reference",
+            "notes": "Page révisée le 1er janvier 2025, lue le 3 novembre 2026. Somme de trois lignes du tableau des langues les plus parlées au Niger, estimées pour 2014 : zarma, 3,2 millions de locuteurs ; songhaï, 946 000 ; dendi, 102 000. Le même auteur compte aussi 47 000 Tagdal et 15 000 Tassawaq, sans les ranger parmi les locuteurs."
+          }
+        },
+        {
+          "country": "MLI",
+          "speakers": 875450,
+          "source": {
+            "title": "Rapport d'analyse des données du RGPH5 : caractéristiques culturelles de la population",
+            "url": "https://instat-mali.org/laravel-filemanager/files/shares/rgph/rapport-caracteristiques-culturelles-population-rgph5_rpgh.pdf",
+            "tier": "official",
+            "source_kind": "official_statistics",
+            "notes": "Bamako, janvier 2025, rapport du recensement de 2022. Lu le 3 novembre 2026. Tableau 3.01, page 24 : 875 450 personnes de 3 ans et plus ont pour langue maternelle la catégorie « Sonhrai/Songhoy/Zarma », soit 4,57 % de cette population."
+          }
+        },
+        {
+          "country": "BEN",
+          "speakers": 168863,
+          "source": {
+            "title": "Jacques Leclerc, « Bénin », L'aménagement linguistique dans le monde, CEFAN, Université Laval",
+            "url": "https://axl.cefan.ulaval.ca/afrique/benin.htm",
+            "tier": "referenced",
+            "source_kind": "linguistic_reference",
+            "notes": "Page mise à jour le 19 mai 2026, lue le 3 novembre 2026. Somme des lignes Dendi, 159 983 personnes, et Djerma, 8 880 personnes, d'un tableau fondé sur le recensement béninois de 2002. L'auteur précise que ce recensement demande l'appartenance à un groupe et non la langue parlée."
+          }
+        }
+      ]
+    },
+    "gaps": [
+      {
+        "field": "content.decolonialHeader.whyProblematic",
+        "reason": "Les sources que nous avons lues ne présentent pas le nom songhay comme un nom imposé ou rejeté : c'est le nom d'une langue et d'un peuple, écrit dès 1526. Le débat qu'elles rapportent porte sur la famille à laquelle ces langues appartiennent, pas sur leur nom. Nous avons cherché dans les travaux de Robert Nicolaï et de Lameen Souag et dans le catalogue Glottolog."
+      },
+      {
+        "field": "content.speakers.byCountry",
+        "reason": "Nous n'avons pas trouvé de chiffre de locuteurs du songhay pour le Nigeria, le Burkina Faso, l'Algérie et le Soudan, où la langue est pourtant parlée. Nous avons cherché dans les pages de Jacques Leclerc sur ces pays et dans les articles de Lameen Souag sur le korandjé."
+      },
+      {
+        "field": "content.historyAndOrigins.emergencePeriod",
+        "reason": "Nous n'avons pas trouvé de source qui date la langue commune dont viennent les langues songhay, ni la séparation de ses deux branches. Nous avons cherché dans les travaux de Robert Nicolaï et de Lameen Souag."
       }
     ]
   }
