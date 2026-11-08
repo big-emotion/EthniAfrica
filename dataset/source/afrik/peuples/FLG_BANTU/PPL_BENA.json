@@ -45,12 +45,11 @@
       "mainLanguage": "KiBena (Ekibena)",
       "isoCodes": ["bez"],
       "dialects": [
-        "Maswamu",
-        "Twangabita",
-        "dialectes des hauts plateaux de Njombe",
-        "parler des Bena Manga (Ulanga)"
+        "Les auteurs comptent de cinq à sept variétés de bena selon Morrison (2015) : Nurse (1979) en liste six, Chaula (1989) sept, Nyagava (1999) six, Hongole (2002) cinq, Muhehwa et ses collègues (2005) sept.",
+        "Noms de variétés cités : Twangabita (ou Lupembe), Ngaveta, Maswamu, Kilavugi, Sovi, Masakati, Nyikolwe, Maveemba, Ulanga (Kinamanga)",
+        "Morrison note que la variation est forte et qu'on ne peut pas tracer de zones nettement séparées ; ces listes mêlent noms de lieux et noms de clans."
       ],
-      "vehicularRole": "Le KiBena est la langue vernaculaire de la communaute Bena. Il est mutuellement intelligible avec le KiHehe. Le swahili est la langue nationale et vehiculaire de la Tanzanie, utilise dans les ecoles, l'administration et les echanges interethniques. Environ 600 000 locuteurs selon l'Ethnologue."
+      "vehicularRole": "Le KiBena est la langue vernaculaire de la communaute Bena. Il est mutuellement intelligible avec le KiHehe. Le swahili est la langue nationale et vehiculaire de la Tanzanie, utilise dans les ecoles, l'administration et les echanges interethniques. Muzale et Rugemalira (2008) estiment 592 370 locuteurs et l'Ethnologue 670 000, d'après Morrison (2015), qui prévient que ces chiffres sont peut-être gonflés, car on suppose qu'une personne bena parle le bena."
     },
     "culture": {
       "majorRites": "Rites de passage marques par trois phases (separation, transition, incorporation) selon les etapes du cycle de vie: naissance, initiation, mariage, mort. Ceremonies de mariage avec transfert de betail entre lignages. Rites funebres incluant des prieres aux ancetres, libations et rituels de deuil. Ceremonies agricoles liees aux saisons des pluies. Le Nyumbanitu est une foret traditionnelle sacree associee a des folklores et pratiques rituelles Wabena.",
@@ -93,7 +92,8 @@
         "title": "Dialect Variation in a Minority Language: The Case of Bena – Morrison, 2015",
         "url": "http://www.lingref.com/cpp/acal/44/paper3138.pdf",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": " Michelle Morrison, Selected Proceedings of the 44th Annual Conference on African Linguistics, Cascadilla, 2015, p. 199-201. Elle écrit que la grande majorité des locuteurs vivent dans le district de Njombe et qu'un petit groupe a émigré vers Ulanga et Kilombero à la fin du XIXe siècle, les « Bena Manga ». Lu le 8 novembre 2026."
       },
       {
         "title": "Inside Nyumbanitu Traditional Forest – Academia.edu, 2018",
@@ -106,6 +106,13 @@
         "url": "https://www.jstor.org/stable/183473",
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Glottolog 5.3, Bena (Tanzania) (bena1262)",
+        "url": "https://glottolog.org/resource/languoid/id/bena1262",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue de l'Institut Max-Planck d'anthropologie évolutionniste. Code ISO 639-3 bez, pays : Tanzanie, noms voisins Bena, Ekibena, Kibena ; aucun dialecte nommé. Lue le 8 novembre 2026."
       }
     ]
   },
