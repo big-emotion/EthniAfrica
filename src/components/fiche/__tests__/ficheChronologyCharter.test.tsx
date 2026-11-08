@@ -47,7 +47,7 @@ describe("fiche chronology charter", () => {
     expect(lists).toHaveLength(1);
     expect(
       Array.from(lists[0].children, (item) => item.getAttribute("data-regime"))
-    ).toEqual(["polity", "polity", "colonial", "colonial", "modern"]);
+    ).toEqual(["polity", "polity", "polity", "colonial", "colonial", "modern"]);
   });
 
   // @req REQ-148
