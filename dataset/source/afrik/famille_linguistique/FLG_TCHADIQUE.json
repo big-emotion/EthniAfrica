@@ -4,17 +4,61 @@
   "nameEn": "Chadic",
   "classificationStatus": "colonial-legacy",
   "nameHistory": {
-    "summary": "Le nom tchadique désigne une famille de langues parlées autour du lac Tchad et vers l'ouest, comme le haoussa. C'est un nom de linguiste, employé par Joseph Greenberg ; on a d'abord rangé le haoussa parmi les langues dites chamitiques, et Maurice Delafosse parlait de groupe nigéro-tchadien. Les sources que nous avons lues n'expliquent pas le choix du nom, mais racontent comment on a classé ces langues ; nous les présentons plus bas.",
+    "summary": "Le nom tchadique désigne une famille d'environ 170 langues parlées au Nigeria, au Niger, au Tchad et au Cameroun, dont le haoussa. C'est un nom donné par des linguistes, qui renvoie à la région du lac Tchad. D'autres noms l'ont précédé, comme tchado-hamitique et nigéro-tchadien, et l'on a d'abord rangé le haoussa parmi les langues dites chamitiques. Les sources ne s'accordent pas toujours sur ces classements ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Tchadique",
         "nameStatus": "current",
         "selfGiven": false,
         "languageOfOrigin": null,
-        "namedBy": "Le linguiste américain Joseph Greenberg",
-        "shortLine": "Un nom de linguiste pour le haoussa et une centaine de langues parlées autour du lac Tchad.",
-        "periodLabel": "Depuis les années 1950",
+        "namedBy": "Des linguistes, dont l'Américain Joseph Greenberg",
+        "shortLine": "Un nom de linguistes pour le haoussa et environ 170 langues parlées autour du lac Tchad.",
+        "periodLabel": "Depuis 1950",
         "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom tchadique désigne, pour le linguiste américain Paul Newman, une famille d'environ 170 langues parlées au Nigeria, au Cameroun, au Tchad et au Niger. Il la divise en quatre branches : l'ouest, le Biu-Mandara, qu'on appelle aussi tchadique central, l'est et le masa.",
+            "sources": [
+              {
+                "title": "Newman, Paul. The Chadic Language Family: Classification and Name Index. CNRS, 2013",
+                "author": "Paul Newman",
+                "year": 2013,
+                "url": "https://megatchad.cepam.cnrs.fr/publications/Newman-2013-Chadic-Classification-and-Index.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Publication électronique du réseau Méga-Tchad, sous licence Creative Commons. Lue le 3 novembre 2026. Page 2 : « Chadic, which is a constituent member of the Afroasiatic phylum, is a family of approximately 170 languages spoken in Nigeria, Cameroon, Chad, and Niger »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom tchadique sert en français à désigner des langues parlées en arc de cercle au sud du lac Tchad, selon Bernard Caron. Il écrit que, depuis les travaux de Joseph Greenberg et de Paul Newman, les spécialistes ne remettent plus en cause leur regroupement en une famille, ni leur place dans l'ensemble chamito-sémitique, qu'on appelle aussi afro-asiatique.",
+            "sources": [
+              {
+                "title": "Langues tchadiques",
+                "author": "Bernard Caron",
+                "year": 2011,
+                "url": "https://shs.hal.science/halshs-00643958",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 261",
+                "notes": "Chapitre du Dictionnaire des langues, dirigé par Emilio Bonvini, Joëlle Busuttil et Alain Peyraube, Paris, Presses universitaires de France, 2011. L'auteur est chercheur au Llacan, laboratoire du CNRS et de l'Inalco. Lu le 3 novembre 2026 dans la version déposée sur HAL. Passages : « Les langues tchadiques (Tch) se répartissent en arc de cercle au sud du lac Tchad » ; « les spécialistes des langues tchadiques ne remettent pas en cause leur regroupement au sein d'une même famille et leur appartenance à l'ensemble chamito-sémitique »."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1990,
@@ -61,18 +105,75 @@
           },
           {
             "period": {
+              "from": 1977,
+              "to": 1980,
+              "label": "1977 et 1980"
+            },
+            "era": "modern",
+            "hypothesisGroup": "place-du-masa",
+            "statement": "Le nom tchadique réunit pour Paul Newman, en 1977, plus de cent langues en trois grandes branches, l'ouest, le Biu-Mandara et l'est, et un groupe masa qu'il met à part. On rattachait jusque-là le masa au Biu-Mandara, mais il n'y trouve aucun trait propre à cette branche. Bernard Caron rapporte que Newman a confirmé cette séparation en 1980.",
+            "sources": [
+              {
+                "title": "Chadic Classification and Reconstructions",
+                "author": "Paul Newman",
+                "year": 1977,
+                "url": "https://archive.org/details/NewmanChadicClassificationAndReconstruction1977",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4 et 8",
+                "notes": "Afroasiatic Linguistics, vol. 5, n° 1, Malibu, Undena Publications, décembre 1977. Lu le 3 novembre 2026 dans la numérisation déposée sur Internet Archive. Page 8 : « I have decided therefore not to include the Masa group in any of the three major branches but rather to consider it provisionally as a separate, independent category »."
+              },
+              {
+                "title": "Langues tchadiques",
+                "author": "Bernard Caron",
+                "year": 2011,
+                "url": "https://shs.hal.science/halshs-00643958",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 262",
+                "notes": "Chapitre du Dictionnaire des langues, dirigé par Emilio Bonvini, Joëlle Busuttil et Alain Peyraube, Paris, Presses universitaires de France, 2011. L'auteur est chercheur au Llacan, laboratoire du CNRS et de l'Inalco. Lu le 3 novembre 2026 dans la version déposée sur HAL. Passage : « Newman (80) a séparé le masa du groupe central. Cette position est contestée par Tourneux (90). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": 1990,
+              "label": "1981 et 1990"
+            },
+            "era": "modern",
+            "hypothesisGroup": "place-du-masa",
+            "statement": "Le nom tchadique couvre aussi le masa, mais à l'intérieur du tchadique central, selon Herrmann Jungraithmayr et K. Shimizu en 1981, puis selon Henry Tourneux en 1990. Richard Gravina et Bernard Caron rapportent cette position, qui s'oppose à celle de Paul Newman.",
+            "sources": [
+              {
+                "title": "The phonology of Proto-Central Chadic: the reconstruction of the phonology and lexicon of Proto-Central Chadic, and the linguistic history of the Central Chadic languages",
+                "author": "Richard Gravina",
+                "year": 2014,
+                "url": "https://hdl.handle.net/1887/30139",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Thèse de doctorat de l'université de Leiden, collection LOT, soutenue le 16 décembre 2014. Lue le 3 novembre 2026 dans le dépôt en ligne de l'université. Page 21 : « Newman (1977a) separated off the Masa languages into a separate branch, coordinate with West, Central and East Chadic. This was disputed (Jungraithmayr and Shimizu 1981), with Jungraithmayr and Shimizu considering the Masa languages to be part of Central Chadic »."
+              },
+              {
+                "title": "Langues tchadiques",
+                "author": "Bernard Caron",
+                "year": 2011,
+                "url": "https://shs.hal.science/halshs-00643958",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 262",
+                "notes": "Chapitre du Dictionnaire des langues, dirigé par Emilio Bonvini, Joëlle Busuttil et Alain Peyraube, Paris, Presses universitaires de France, 2011. L'auteur est chercheur au Llacan, laboratoire du CNRS et de l'Inalco. Lu le 3 novembre 2026 dans la version déposée sur HAL. Passage : « Newman (80) a séparé le masa du groupe central. Cette position est contestée par Tourneux (90). »"
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1963,
               "to": 1963,
               "label": "1963, selon Joseph Greenberg"
             },
-            "statement": "Le nom tchadique figure dans le livre de Joseph Greenberg sur les langues d'Afrique paru en 1963, qui divise ces langues en neuf sous-groupes, selon ce qu'il en écrit lui-même en 1980. Nous n'avons pas pu lire le livre de 1963 ni des textes plus anciens qui emploieraient ce nom. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
-            "birth": true,
-            "actors": [
-              {
-                "name": "Joseph H. Greenberg",
-                "role": "a employé le nom tchadique dans sa classification des langues d'Afrique"
-              }
-            ],
+            "statement": "Le nom tchadique figure dans le livre de Joseph Greenberg sur les langues d'Afrique paru en 1963, qui divise ces langues en neuf sous-groupes, selon ce qu'il en écrit lui-même en 1980.",
             "sources": [
               {
                 "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
@@ -83,6 +184,70 @@
                 "source_kind": "intergovernmental",
                 "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
                 "page": "p. 332"
+              }
+            ],
+            "era": "modern",
+            "aspect": "usage"
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": 1950,
+              "label": "1950"
+            },
+            "era": "colonial",
+            "birth": true,
+            "formAsWritten": "Chad",
+            "statement": "Le nom tchadique apparaît sous la forme anglaise Chad chez Joseph Greenberg, en 1950, selon Richard Gravina. Greenberg en fait une branche de la famille qu'il appelle alors hamito-sémitique, et cette branche reprend le groupe tchado-hamitique de Johannes Lukas. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "actors": [
+              {
+                "name": "Joseph H. Greenberg",
+                "role": "emploie le nom Chad pour une branche de sa classification des langues d'Afrique"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The phonology of Proto-Central Chadic: the reconstruction of the phonology and lexicon of Proto-Central Chadic, and the linguistic history of the Central Chadic languages",
+                "author": "Richard Gravina",
+                "year": 2014,
+                "url": "https://hdl.handle.net/1887/30139",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17-18",
+                "notes": "Thèse de doctorat de l'université de Leiden, collection LOT, soutenue le 16 décembre 2014. Lue le 3 novembre 2026 dans le dépôt en ligne de l'université. Page 17 : « Of significance for us is his inclusion of the Chad languages as a branch within Afroasiatic. This branch corresponds to the Chad-Hamitic group proposed by Lukas (Lukas 1936) ». L'article de Greenberg cité est paru en 1950 dans le Southwestern Journal of Anthropology, vol. 6, n° 1, p. 47-63."
+              },
+              {
+                "title": "Chadic Classification and Reconstructions",
+                "author": "Paul Newman",
+                "year": 1977,
+                "url": "https://archive.org/details/NewmanChadicClassificationAndReconstruction1977",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Afroasiatic Linguistics, vol. 5, n° 1, Malibu, Undena Publications, décembre 1977. Lu le 3 novembre 2026 dans la numérisation déposée sur Internet Archive. Page 4 : « Some twenty-five years after Greenberg first advocated the unity of the Chadic family as we now know it »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1936,
+              "to": 1936,
+              "label": "1936"
+            },
+            "era": "colonial",
+            "before": true,
+            "formAsWritten": "Groupe tchado-hamitique",
+            "statement": "On parle alors de groupe tchado-hamitique pour des langues de la région du lac Tchad qui ont un genre grammatical et d'autres traits dits hamitiques, selon Johannes Lukas. Il y range notamment le boudouma, le kotoko et le mousgou, pense que le haoussa en fait aussi partie, et met à part un groupe mandara, sans genre.",
+            "sources": [
+              {
+                "title": "The Linguistic Situation in the Lake Chad Area in Central Africa",
+                "author": "Johannes Lukas",
+                "year": 1936,
+                "url": "https://doi.org/10.2307/3180624",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 332-349",
+                "notes": "Africa, revue de l'Institut africain international, vol. 9, n° 3, juillet 1936. Nous avons lu le 3 novembre 2026 l'extrait et le résumé en français publiés sur le site de Cambridge University Press, pas l'article complet. Ouvrage de l'époque coloniale. Résumé : « L'auteur a trouvé nécessaire d'introduire un groupe tchado-hamitique. Ce groupe comprend une quantité de langues, montrant assez de différence entre elles, mais ayant en commun l'existence du genre grammatical et d'autres traits hamitiques » ; « Il semble évident que le Haousa doit être rangé en quelque sorte dans ce groupe »."
               }
             ]
           },
@@ -106,7 +271,8 @@
                 "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive. L'auteur, administrateur colonial, range ces langues dans une « famille négro-africaine ».",
                 "page": "p. 474 et 511"
               }
-            ]
+            ],
+            "era": "colonial"
           },
           {
             "period": {
@@ -127,7 +293,8 @@
                 "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive.",
                 "page": "p. 84"
               }
-            ]
+            ],
+            "era": "colonial"
           },
           {
             "period": {
@@ -148,7 +315,8 @@
                 "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
                 "page": "p. 326 et 329"
               }
-            ]
+            ],
+            "era": "colonial"
           },
           {
             "period": {
@@ -169,7 +337,8 @@
                 "notes": "Berlin, Wilhelm Hertz, 1880. Lu dans la numérisation d'Internet Archive, introduction. L'auteur classe les langues d'Afrique selon des idées de race de son époque.",
                 "page": "p. XV et XVII"
               }
-            ]
+            ],
+            "era": "polity"
           },
           {
             "period": {
@@ -190,6 +359,87 @@
                 "notes": "Vienne, Alfred Hölder, 1877. Lu dans la numérisation d'Internet Archive, chapitre sur la langue haoussa. L'auteur classe les langues d'après la chevelure de leurs locuteurs.",
                 "page": "p. 223"
               }
+            ],
+            "era": "polity"
+          }
+        ]
+      },
+      {
+        "nameText": "Tchado-hamitique",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste allemand Johannes Lukas",
+        "shortLine": "Un ancien nom de linguiste pour une partie des langues tchadiques, dont le haoussa.",
+        "periodLabel": "Employé en 1936",
+        "accounts": [
+          {
+            "period": {
+              "from": 1936,
+              "to": 1936,
+              "label": "1936"
+            },
+            "era": "colonial",
+            "birth": true,
+            "formAsWritten": "tchado-hamitique",
+            "statement": "Le nom tchado-hamitique apparaît chez Johannes Lukas, dans un article de 1936 sur les langues de la région du lac Tchad. Il l'introduit pour des langues qui ont un genre grammatical et d'autres traits qu'il dit hamitiques, tout en les jugeant très différentes du berbère. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "actors": [
+              {
+                "name": "Johannes Lukas",
+                "role": "introduit le nom dans sa classification des langues de la région du lac Tchad"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Linguistic Situation in the Lake Chad Area in Central Africa",
+                "author": "Johannes Lukas",
+                "year": 1936,
+                "url": "https://doi.org/10.2307/3180624",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 332-349",
+                "notes": "Africa, revue de l'Institut africain international, vol. 9, n° 3, juillet 1936. Nous avons lu le 3 novembre 2026 l'extrait et le résumé en français publiés sur le site de Cambridge University Press, pas l'article complet. Ouvrage de l'époque coloniale. Résumé : « L'auteur a trouvé nécessaire d'introduire un groupe tchado-hamitique » ; « Ces langues diffèrent néanmoins très essentiellement du Berbère, non seulement par le vocabulaire, mais surtout par leur phonétique compliquée, connaissant des ejectives, implosives, et latéraux »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nigéro-tchadien",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "L'administrateur colonial et linguiste français Maurice Delafosse",
+        "shortLine": "Un ancien nom français pour un groupe de trente et une langues, dont le haoussa.",
+        "periodLabel": "Employé en 1924",
+        "accounts": [
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "statement": "Le nom nigéro-tchadien désigne chez Maurice Delafosse, en 1924, un groupe de trente et une langues, dont le haoussa, le kotoko, le mousgou et le mandara, qu'il range dans une grande famille « négro-africaine ». C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "formAsWritten": "Groupe nigéro-tchadien",
+            "sources": [
+              {
+                "title": "Les langues du monde, chapitre « Les langues du Soudan et de la Guinée »",
+                "author": "Maurice Delafosse",
+                "year": 1924,
+                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive. L'auteur, administrateur colonial, range ces langues dans une « famille négro-africaine ».",
+                "page": "p. 474 et 511"
+              }
+            ],
+            "era": "colonial",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "emploie ce nom dans sa classification des langues du Soudan et de la Guinée"
+              }
             ]
           }
         ]
@@ -198,31 +448,44 @@
   },
   "content": {
     "searchAnswer": {
-      "lead": "Des langues du bassin du lac Tchad, au Nigeria, au Niger, au Tchad et au Cameroun. Le nom vient du lac ; l'ancien nom « hamitique » rattachait à tort ces peuples à une origine non africaine.",
-      "followUp": "Pourquoi l'ancien nom « hamitique » est-il rejeté ?"
+      "lead": "Environ 170 langues parlées au Nigeria, au Niger, au Tchad et au Cameroun, dont le haoussa. Le nom renvoie au lac Tchad ; avant lui, on rangeait le haoussa parmi les langues dites chamitiques.",
+      "followUp": "Pourquoi a-t-on dit que le haoussa était une langue « chamitique » ?"
     },
     "decolonialHeader": {
-      "whyProblematic": " L'étiquette « hamite » associait à tort des peuples africains à une origine non-africaine prétendument « civilisatrice ». Le regroupement « hamitique » servait une hiérarchie raciale artificielle. **PREUVES** :",
-      "selfAppellation": null,
-      "contemporaryUsage": "Le terme est maintenant universellement accepté en linguistique (SIL Ethnologue, Glottolog, UNESCO) et préféré à « hamitique » pour des raisons scientifiques et décoloniales.",
+      "linkWithFamily": "Une des branches de la famille afro-asiatique, appelée aussi chamito-sémitique.",
       "historicalAppellations": [
-        "Hamitique",
-        "Langues tchadiennes",
-        "Sous-groupe tchadique",
-        "Hamito-Chadic"
+        "Chamitique",
+        "Nigéro-tchadien",
+        "Tchado-hamitique",
+        "Chad"
       ],
-      "originOfHistoricalTerm": " Le terme « tchadique » (Chadic) provient géographiquement du bassin du lac Tchad, où se concentrent les principales langues du groupe. L'origine académique du terme remonte à la classification afro-asiatique moderne :"
+      "originOfHistoricalTerm": "Les noms qui ont précédé tchadique ont été donnés par des savants européens, dans des classements des langues d'Afrique. Le mot chamitique vient de Cham, l'un des fils de Noé dans la Genèse : selon Marcel Cohen, les savants l'y ont puisé dans la seconde moitié du XIXe siècle, comme ils avaient tiré sémitique du nom de Sem. Richard Lepsius, en 1880, range le haoussa dans la branche libyque de ces langues chamitiques. En 1924, Maurice Delafosse emploie le nom de groupe nigéro-tchadien pour trente et une langues, dont le haoussa, qu'il range parmi les langues « négro-africaines ». Le même volume publie le chapitre de Marcel Cohen, qui refuse lui aussi de ranger le haoussa dans le chamito-sémitique. En 1936, Johannes Lukas introduit le nom tchado-hamitique pour un groupe de langues de la région du lac Tchad qui ont un genre grammatical. En 1950, Joseph Greenberg emploie le nom Chad pour une branche entière, d'après Richard Gravina, et le nom Chadic, tchadique en français, est celui qu'emploient aujourd'hui Paul Newman, Bernard Caron ou le catalogue Glottolog.",
+      "whyProblematic": "Le nom tchadique renvoie à une région, mais les classements qui l'ont précédé reposaient en partie sur des idées de race. Le mot chamitique, qu'on écrit aussi hamitique, a été tiré de la Bible au XIXe siècle, d'après Cham, l'un des fils de Noé, selon Marcel Cohen. En 1877, Friedrich Müller explique les ressemblances du haoussa avec les langues hamito-sémitiques par une influence ancienne des « Hamito-Semiten » sur les peuples qu'il appelle « Neger ». En 1880, Richard Lepsius range le haoussa parmi les langues chamitiques, qu'il croit venues d'Asie. Il en parle pourtant avec les langues des peuples noirs, parce que l'apparence physique des Haoussa lui semble plus proche de la leur, et il explique cet écart en faisant d'eux une ancienne colonie des « Libyer », les peuples de langue berbère du nord. En 1915, Carl Meinhof écrit que la structure du haoussa est chamitique, mais que ses locuteurs ne sont pas des « pure Hamites ». Dans le même livre, il oppose le « Hamite » éleveur et guerrier, qu'il rapproche des Arabes et des Européens, au « Sudan Negro » cultivateur, qu'il place à un stade social inférieur. Maurice Delafosse, administrateur colonial, refuse en 1924 de ranger le haoussa dans le chamito-sémitique, mais il écrit que tous ces peuples « appartiennent incontestablement à la race nègre ». En 1936, Johannes Lukas nomme encore tchado-hamitique un groupe défini par le genre grammatical et « d'autres traits hamitiques ». Le nom de branche que Joseph Greenberg emploie en 1950 ne contient plus le mot hamitique, même si la famille dont elle fait partie s'appelle encore chez lui hamito-sémitique.",
+      "selfAppellation": null,
+      "contemporaryUsage": "Les linguistes emploient aujourd'hui le nom tchadique, en anglais Chadic, pour une des branches de la famille afro-asiatique. Paul Newman y compte environ 170 langues en 2013, réparties en quatre branches : l'ouest, le Biu-Mandara ou tchadique central, l'est et le masa. Le catalogue Glottolog suit la même division en quatre branches. La plus parlée de ces langues est le haoussa, langue nationale du Niger depuis la Charte de la refondation de mars 2025.",
+      "geographicArea": "Nigeria, Niger, Tchad, Cameroun",
+      "numberOfLanguages": 170,
+      "totalSpeakers": 50000000
     },
     "generalInfo": {
       "branches": [
-        "Ouest tchadique",
-        "Tchadique central (Biu-Mandara)",
-        "Tchadique oriental",
+        "Tchadique de l'Ouest",
+        "Biu-Mandara ou tchadique central",
+        "Tchadique de l'Est",
         "Masa"
       ],
-      "geographicArea": "Bassin du lac Tchad (Sahel et savanes du centre-ouest de l'Afrique), s'étendant du Nigeria septentrional et du Niger méridional à travers le Tchad méridional et le Cameroun septentrional jusqu'au nord de la République centrafricaine.",
-      "numberOfLanguages": 150,
-      "totalSpeakers": 150000000
+      "geographicArea": "Autour du lac Tchad, surtout au sud, au Nigeria, au Niger, au Cameroun et au Tchad.",
+      "numberOfLanguages": 170,
+      "totalSpeakers": 50000000,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "Environ 170 langues selon Paul Newman (2013). Le catalogue Glottolog 5.3 en compte 210, et Ethnologue en comptait 195 en 2009 selon Richard Gravina. Newman explique que la frontière entre une langue et un dialecte n'est pas nette, ce qui fait varier le compte."
+        },
+        "totalSpeakers": {
+          "note": "Un ordre de grandeur ancien, pour le seul haoussa : environ 50 millions de locuteurs selon Bernard Caron (2011), qui cite Ethnologue (2002). Selon lui, aucune autre langue tchadique ne dépassait alors 200 000 locuteurs. Nous n'avons pas trouvé de total plus récent dans une source que nous avons pu ouvrir.",
+          "unsourced": false
+        }
+      }
     },
     "associatedPeoples": [
       {
@@ -230,33 +493,272 @@
         "peopleId": "PPL_HAUSA"
       },
       {
-        "name": "Massa",
-        "peopleId": "PPL_MASA"
+        "name": "Gwandara",
+        "peopleId": "PPL_GWANDARA"
+      },
+      {
+        "name": "Bade",
+        "peopleId": "PPL_BADE"
+      },
+      {
+        "name": "Ngizim",
+        "peopleId": "PPL_NGIZIM"
       },
       {
         "name": "Bura",
         "peopleId": "PPL_BURA"
+      },
+      {
+        "name": "Margi",
+        "peopleId": "PPL_MARGI"
+      },
+      {
+        "name": "Tera",
+        "peopleId": "PPL_TERA"
+      },
+      {
+        "name": "Mandara / Wandala",
+        "peopleId": "PPL_MANDARA"
+      },
+      {
+        "name": "Mafa",
+        "peopleId": "PPL_MAFA"
+      },
+      {
+        "name": "Giziga",
+        "peopleId": "PPL_GIZIGA"
+      },
+      {
+        "name": "Musgu",
+        "peopleId": "PPL_MUSGU"
+      },
+      {
+        "name": "Kotoko de Logone (Lagwan)",
+        "peopleId": "PPL_LAGWAN"
+      },
+      {
+        "name": "Kera",
+        "peopleId": "PPL_KERA"
+      },
+      {
+        "name": "Sokoro",
+        "peopleId": "PPL_SOKORO"
+      },
+      {
+        "name": "Massa",
+        "peopleId": "PPL_MASA"
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " Langues tonales avec structures verbales complexes et flexion nominale relativement simple. **EXEMPLES CONCRETS** :",
-      "phonologicalFeatures": " Systèmes phonologiques riches avec inventaires consonantiques complexes. **DÉTAILS PRÉCIS** :",
-      "relationsWithNeighbors": " Influence réciproque avec les langues nilo-sahariennes, les langues nigéro-congolaises voisines, et les autres branches afro-asiatiques. **EXEMPLES CONCRETS D'EMPRUNTS** :"
+      "typology": "Les langues tchadiques n'ont pas de cas, c'est-à-dire de terminaisons qui marquent la fonction du nom, ni de classes nominales, ces catégories de noms que d'autres langues africaines marquent par des préfixes, selon Bernard Caron. La plupart placent le sujet avant le verbe et l'objet après, comme le haoussa, le tera ou le pero. D'autres commencent la phrase par le verbe, comme le lamang, et d'autres encore mêlent les deux ordres, comme le bidiya et le margi. Pour Caron, l'ordre qui commence par le verbe serait l'ordre d'origine, dont le haoussa garde des traces, par exemple dans l'impératif yaa kà, « viens ! ». La conjugaison se fait autour du verbe : on trouve, dans l'ordre, un élément qui indique la personne, une marque de temps, d'aspect ou de mode, puis la base du verbe. L'aspect est la façon de présenter une action, par exemple comme achevée ou en cours. Beaucoup de ces langues distinguent un masculin et un féminin, mais certaines ont perdu cette distinction, comme le zaar.",
+      "phonologicalFeatures": "Les consonnes des langues tchadiques s'opposent souvent en trois séries : sourdes, sonores et glottalisées, c'est-à-dire prononcées avec un mouvement du larynx, selon Bernard Caron. Paul Newman reconstruit ainsi, pour la langue ancestrale qu'il appelle proto-tchadique, les consonnes ɓ et ɗ et une troisième consonne glottalisée, différente du ƙ du haoussa. Il y reconstruit aussi une seule consonne latérale, sans doute prononcée comme un l soufflé, sans vibration de la voix. Johannes Lukas notait déjà en 1936 que ces langues connaissent des éjectives, des implosives et des latérales, et qu'elles ont des tons. Les voyelles sont peu nombreuses : selon Newman, la langue ancestrale en avait au plus quatre, peut-être deux, et le modèle le plus courant dans les langues décrites en 1977 en compte six, même si le tangale en a neuf. Dans le tchadique central, Richard Gravina décrit des langues qui n'ont parfois qu'une seule voyelle distinctive, avec des harmonies vocaliques et de nombreuses consonnes palatalisées ou labialisées. Newman pense que la langue ancestrale avait des tons ou un accent de hauteur, sans pouvoir dire lequel.",
+      "relationsWithNeighbors": "Les langues tchadiques se sont mêlées aux langues de leurs voisins, qui appartiennent à d'autres familles. Bernard Caron les décrit comme des langues venues d'ailleurs, qui se sont ensuite amalgamées avec celles qui les ont précédées dans la région. Dès 1880, Richard Lepsius remarquait que le haoussa partage des mots et des formes avec le kanouri, le logone et le wandala, et l'expliquait par le voisinage. Pour Richard Gravina, les langues kotoko, au sud du lac Tchad, doivent une partie de leurs ressemblances au contact avec le kanouri. Au Cameroun, le giziga et le fulfulde, la langue des Peuls, se sont emprunté de nombreux mots, et le fulfulde a transmis au giziga des mots de l'arabe, du kanouri, du haoussa et de l'anglais, selon Henry Tourneux et Antonio Michielan. Au Tchad, une partie du pluriel du mubi reflète l'influence de l'arabe tchadien, langue de communication de la région, selon Lameen Souag. Le haoussa a lui-même emprunté beaucoup de mots à l'arabe, surtout dans le vocabulaire religieux, selon Carl Meinhof, et des langues tchadiques du sud-ouest de Bauchi, au Nigeria, lui ont emprunté des mots, comme à l'arabe, selon Bernard Caron.",
+      "keyInnovations": "Plusieurs traits sont communs aux langues tchadiques, selon Bernard Caron. Elles ont peu de prépositions et indiquent souvent la direction par des extensions ajoutées au verbe, un système très riche en lamang. Elles marquent sur le verbe la mise en relief d'un élément de la phrase. Elles marquent aussi le complément du nom sur le premier nom, celui qu'on complète, plutôt que sur le second. Elles emploient des idéophones, des mots expressifs qui évoquent une impression, comme un son ou un mouvement, une catégorie bien connue des langues africaines. D'autres traits viennent de l'héritage afro-asiatique, comme le féminin en -t, les noms de lieu ou d'instrument formés avec ma- et les verbes qui expriment une action répétée ou intense en doublant une consonne intérieure. Paul Newman relève enfin un écart avec le reste de la famille : en proto-tchadique, des mots comme « eau » et « feu » commençaient par une voyelle, alors que l'afro-asiatique veut d'ordinaire que tout mot commence par une consonne."
     },
     "historyAndOrigins": {
-      "probableOrigin": " Plusieurs théories coexistent concernant l'origine géographique et les routes migratoires des locuteurs proto-tchadiques. **QUI A CLASSÉ ? CITATIONS COMPLÈTES** :",
-      "emergencePeriod": " **DEUX TEMPORALITÉS** :",
-      "diffusion": " **TOUTES LES THÉORIES DISPONIBLES AVEC AUTEURS** :",
-      "contactZones": " **RÉPONDRE À \"OÙ\" – LOCALISER GÉOGRAPHIQUEMENT** :",
-      "majorEvents": " **CHRONOLOGIE AVEC DATES PRÉCISES** :"
+      "probableOrigin": "Deux hypothèses principales expliquent comment des langues de la famille afro-asiatique en sont venues à être parlées autour du lac Tchad. Dans une étude de génétique parue en 2009, l'équipe de Viktor Černý rappelle que plus de 2 000 kilomètres séparent le lac du nord-est de l'Afrique, où l'on situe le berceau supposé de la famille, et présente ces deux hypothèses. Selon la première, proposée par Christopher Ehret, les ancêtres des locuteurs du tchadique se seraient d'abord étendus vers l'ouest, dans la moitié nord du Sahara, avant de descendre vers le sud, à travers le Sahara central, jusqu'au bassin du lac Tchad. Selon la seconde, proposée par Roger Blench, des éleveurs seraient partis de la vallée du Nil, où l'on situerait l'ancêtre commun du couchitique et du tchadique, et auraient suivi le Wadi Howar, un ancien réseau de rivières aujourd'hui à sec, jusqu'au lac Tchad. Cette seconde hypothèse s'appuie sur des mots pour les animaux domestiques communs au couchitique et au tchadique, et sur des poteries trouvées le long du Wadi Howar, proches de celles du Néolithique de Khartoum. Les deux hypothèses divergent sur la route suivie et sur la branche la plus proche du tchadique : le berbère pour Ehret, le couchitique pour Blench, selon Andrew Lancaster. Des études génétiques sont invoquées des deux côtés. L'équipe de Viktor Černý relie à l'Afrique de l'Est une lignée maternelle qu'on trouve presque seulement chez des locuteurs du tchadique. L'équipe de Fulvio Cruciani relie une lignée paternelle, dite R-V88, à une migration à travers le Sahara central. Andrew Lancaster note que la carte de cette étude rejoint la route proposée par Ehret, mais qu'elle relie deux régions sans données entre elles. Il rappelle aussi qu'une lignée paternelle a pu se répandre avec l'élevage, sans que la langue suive le même chemin.",
+      "emergencePeriod": "Les dates proposées pour l'arrivée du tchadique autour du lac Tchad viennent de la génétique. L'équipe de Viktor Černý date d'environ 8 000 ans, à 2 500 ans près, l'expansion de la lignée maternelle qu'elle étudie, et la rapproche de la migration supposée d'éleveurs de langue tchadique. L'équipe de Fulvio Cruciani situe la lignée paternelle R-V88 au début et au milieu de l'holocène, la période ouverte il y a environ 10 000 ans. La famille, elle, a été définie par les linguistes au XXe siècle. En 1936, Johannes Lukas réunit un groupe tchado-hamitique ; en 1950, Joseph Greenberg fait du Chad une branche de la famille qu'il appelle hamito-sémitique ; en 1977, Paul Newman publie une classification complète de la famille et reconstruit 150 mots de sa langue ancestrale, le proto-tchadique.",
+      "diffusion": "La diffusion à l'intérieur de la famille est surtout reconstruite à partir des langues elles-mêmes. Pour le tchadique central, Richard Gravina propose que la langue ancestrale ait été parlée autour du lac Tchad et des monts Mandara, à la frontière du Nigeria et du Cameroun. Elle se serait divisée en une branche nord, peut-être parlée autour du lac et des rivières qui l'alimentent, et une branche sud, dans les montagnes. Des groupes du nord seraient ensuite descendus vers le sud, en plusieurs vagues. Gravina précise que ce scénario repose presque entièrement sur les langues et sur leur emplacement actuel. À l'ouest, Bernard Caron étudie les langues dites du sud-ouest de Bauchi, au Nigeria, dont les locuteurs ont dû, selon lui, migrer depuis la région du lac Tchad, et il y repère des mots empruntés aux langues rencontrées en chemin. Une langue de la famille s'est répandue bien au-delà de ses locuteurs d'origine, le haoussa. En 1915, Carl Meinhof le décrit comme un moyen de communication orale et écrite pour des millions de personnes, écrit aussi en caractères arabes. En 1924, Maurice Delafosse le décrit comme la principale langue de communication de la région qu'il appelle le Soudan central.",
+      "historicalBreaks": "Les linguistes décrivent les séparations internes de la famille sans leur donner de date. En 1966, Paul Newman et Roxana Ma Newman réunissaient l'est et l'ouest en une seule branche, appelée Plateau-Sahel. En 1977, Newman défait lui-même ce regroupement, faute d'avoir trouvé un trait nouveau que ces deux seules branches partageraient, et retient trois grandes branches et un groupe masa à part. La place du masa reste discutée : Herrmann Jungraithmayr et K. Shimizu, en 1981, puis Henry Tourneux, en 1990, le rattachent au tchadique central. Pour le tchadique central, Richard Gravina relie certaines séparations à l'histoire de la région. Les changements dans les empires du Kanem et du Bornou auraient provoqué des migrations, qui ont séparé les langues kotoko et musgum du reste de la branche. L'arrivée des Peuls à Maroua, au nord du Cameroun, en 1800, aurait renforcé cette séparation.",
+      "contactZones": "Richard Gravina distingue, pour le tchadique central, quatre zones de contact. Autour de la partie sud du lac Tchad et le long du Logone et du Chari, les langues kotoko se ressemblent par contact plus que par parenté, et ont subi l'influence du kanouri. Dans les plaines du Nigeria, à l'ouest des monts Mandara, le margi, le bata et le higi partagent des sons et des mots par contact. Dans le massif du nord des monts Mandara, les montagnes ont protégé des attaques, mais le commerce et les mariages ont rapproché les langues. Dans les plaines de l'est, au Cameroun, les langues tchadiques côtoient aujourd'hui le kanouri, le fulfulde, le moundang et le toupouri. Ailleurs dans la famille, le mubi, au Tchad, a subi l'influence de l'arabe tchadien, selon Lameen Souag. Au nord du domaine, Maurice Delafosse notait en 1924 que plusieurs groupes touareg parlaient à la fois le haoussa et le tamacheq, et que beaucoup de Kel-Oui ne parlaient guère que le haoussa.",
+      "majorEvents": "Plusieurs événements de l'histoire régionale ont marqué la famille, selon les sources que nous avons lues. Les empires du Kanem et du Bornou, autour du lac Tchad, auraient provoqué des migrations qui ont séparé des langues du tchadique central, selon Richard Gravina. Vers 1800, l'arrivée des Peuls à Maroua aurait déplacé les Mbuko et les Giziga, d'après le même auteur. Les Haoussa étant musulmans, leur langue a pris beaucoup de mots arabes et s'écrit aussi en caractères arabes, écrit Carl Meinhof en 1915. Pendant la période coloniale, des savants et des administrateurs européens, comme Carl Meinhof et Maurice Delafosse, ont classé ces langues en s'appuyant en partie sur des idées de race. En 2018, une enquête nationale sur la santé au Nigeria comptait 30 % de femmes et 31 % d'hommes de 15 à 49 ans qui se disent haoussa. Enfin, au Niger, l'article 12 de la Charte de la refondation, promulguée le 26 mars 2025, fait du haoussa la seule langue nationale et du français et de l'anglais des langues de travail, selon Maman Mallam Garba."
     },
     "distribution": {
-      "totalSpeakers": 150000000,
+      "totalSpeakers": 50000000,
       "distributionByCountry": {
         "NGA": 61481627
       }
     },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "NGA",
+          "speakers": 61481627,
+          "source": {
+            "title": "The DHS Program / ICF – Nigeria Demographic and Health Survey 2018, Final Report (FR359), p. 55 : le hausa (tchadique occidental) est l'ethnie principale de 30 % des femmes et 31 % des hommes enquêtés au Nigeria. ; taux de 30 % appliqué à la population totale du Nigeria (204 938 755 en 2018, World Bank – SP.POP.TOTL) pour estimer ~61,5 millions de locuteurs",
+            "url": "https://dhsprogram.com/pubs/pdf/FR359/FR359.pdf",
+            "tier": "official",
+            "source_kind": "official_statistics",
+            "notes": "Ce chiffre compte les personnes qui se disent haoussa, pas les locuteurs : l'enquête de 2018 demande l'ethnie, pas la langue. Nous l'avons calculé en appliquant aux 204 938 755 habitants que la Banque mondiale compte au Nigeria en 2018 la part de 30 % de femmes de 15 à 49 ans qui se disent haoussa dans l'enquête, page 43 du rapport. Il laisse de côté les autres langues tchadiques du Nigeria et les personnes qui parlent le haoussa comme seconde langue."
+          }
+        }
+      ]
+    },
     "sources": [
+      {
+        "title": "Newman, Paul. The Chadic Language Family: Classification and Name Index. CNRS, 2013",
+        "author": "Paul Newman",
+        "year": 2013,
+        "url": "https://megatchad.cepam.cnrs.fr/publications/Newman-2013-Chadic-Classification-and-Index.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Publication électronique du réseau Méga-Tchad, sous licence Creative Commons. Lue le 3 novembre 2026. Classification en quatre branches, pages 2 à 5."
+      },
+      {
+        "title": "Chadic Classification and Reconstructions",
+        "author": "Paul Newman",
+        "year": 1977,
+        "url": "https://archive.org/details/NewmanChadicClassificationAndReconstruction1977",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Afroasiatic Linguistics, vol. 5, n° 1, Malibu, Undena Publications, décembre 1977. Lu le 3 novembre 2026 dans la numérisation déposée sur Internet Archive. Classification, inventaire des sons et liste de 150 mots reconstruits du proto-tchadique."
+      },
+      {
+        "title": "The phonology of Proto-Central Chadic: the reconstruction of the phonology and lexicon of Proto-Central Chadic, and the linguistic history of the Central Chadic languages",
+        "author": "Richard Gravina",
+        "year": 2014,
+        "url": "https://hdl.handle.net/1887/30139",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse de doctorat de l'université de Leiden, collection LOT, soutenue le 16 décembre 2014. Lue le 3 novembre 2026 dans le dépôt en ligne de l'université. Histoire des classifications aux pages 17 à 22, zones de contact aux pages 31 à 40, scénario de l'histoire du tchadique central aux pages 67 à 69 et 388 à 389."
+      },
+      {
+        "title": "Langues tchadiques",
+        "author": "Bernard Caron",
+        "year": 2011,
+        "url": "https://shs.hal.science/halshs-00643958",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 261-263",
+        "notes": "Chapitre du Dictionnaire des langues, dirigé par Emilio Bonvini, Joëlle Busuttil et Alain Peyraube, Paris, Presses universitaires de France, 2011. L'auteur est chercheur au Llacan, laboratoire du CNRS et de l'Inalco. Lu le 3 novembre 2026 dans la version déposée sur HAL."
+      },
+      {
+        "title": "The Linguistic Situation in the Lake Chad Area in Central Africa",
+        "author": "Johannes Lukas",
+        "year": 1936,
+        "url": "https://doi.org/10.2307/3180624",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 332-349",
+        "notes": "Africa, revue de l'Institut africain international, vol. 9, n° 3, juillet 1936. Nous avons lu le 3 novembre 2026 l'extrait et le résumé en français publiés sur le site de Cambridge University Press, pas l'article complet. Ouvrage de l'époque coloniale."
+      },
+      {
+        "title": "Glottolog 5.3 — Chadic (chad1250)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/chad1250",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max Planck d'anthropologie évolutionniste, lu le 3 novembre 2026 dans sa page et dans ses données en ligne. La famille y compte 210 langues, réparties en quatre branches : Biu-Mandara, East Chadic, Masa et West Chadic. Le commentaire sur sa classification interne renvoie à Paul Newman (1977)."
+      },
+      {
+        "title": "Migration of Chadic speaking pastoralists within Africa based on population structure of Chad Basin and phylogeography of mitochondrial L3f haplogroup",
+        "author": "Viktor Černý, Verónica Fernandes, Marta D. Costa, Martin Hájek, Connie J. Mulligan et Luísa Pereira",
+        "year": 2009,
+        "url": "https://bmcecolevol.biomedcentral.com/articles/10.1186/1471-2148-9-63",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "BMC Evolutionary Biology, vol. 9, article 63, 23 mars 2009, en accès libre. Lu le 3 novembre 2026. Passage : « Ehret suggested a two step migration model ; proto-Chadic people expanded westward to the northern half of the Sahara and later migrated southward through the central Sahara into the Lake Chad Basin. The \"Inter-Saharan hypothesis\" was developed by Blench, who suggested that Chadic speaking herders left their Cushitic-Chadic motherland in the Nile Valley and wandered through the large dry river system of Wadi Howar towards Lake Chad »."
+      },
+      {
+        "title": "Human Y chromosome haplogroup R-V88: a paternal genetic record of early mid Holocene trans-Saharan connections and the spread of Chadic languages",
+        "author": "Fulvio Cruciani, Beniamino Trombetta, Daniele Sellitto et d'autres auteurs",
+        "year": 2010,
+        "url": "https://www.nature.com/articles/ejhg2009231",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 800-807",
+        "notes": "European Journal of Human Genetics, vol. 18, 2010. Nous avons lu le 3 novembre 2026 le résumé publié sur le site de la revue, pas l'article complet. Passage : « We suggest that R-V88 is a paternal genetic record of the proposed mid-Holocene migration of proto-Chadic Afroasiatic speakers through the Central Sahara into the Lake Chad Basin »."
+      },
+      {
+        "title": "Chadic languages and Y haplogroups",
+        "author": "Andrew Lancaster",
+        "year": 2010,
+        "url": "https://www.nature.com/articles/ejhg201088",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 1185",
+        "notes": "Lettre publiée dans le European Journal of Human Genetics, vol. 18, 2010, en réponse à l'article de Fulvio Cruciani et de son équipe. Lue le 3 novembre 2026 sur le site de la revue. Passage : « a Y haplogroup had possibly been carried by a wave of innovation in life style (pastoralism), independently of language or overall genotype »."
+      },
+      {
+        "title": "An Introduction to the Study of African Languages",
+        "author": "Carl Meinhof, traduit par Alice Werner",
+        "year": 1915,
+        "url": "https://archive.org/details/introductiontost01meinuoft",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Londres, J. M. Dent, 1915, traduction anglaise de conférences de Carl Meinhof par Alice Werner. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Ouvrage de l'époque coloniale : l'auteur classe les peuples et les langues d'Afrique selon des idées de race. Page 107 : « Its structure is Hamitic, though the people who speak it are not pure Hamites » ; pages 95 et 96, l'opposition entre le « Hamite » éleveur et guerrier et le « Sudan Negro »."
+      },
+      {
+        "title": "Loanwords in South-Bauchi-West Chadic Languages",
+        "author": "Bernard Caron",
+        "year": 2013,
+        "url": "https://shs.hal.science/halshs-00770965",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 77-85",
+        "notes": "Dans Henry Tourneux (dir.), Topics in Chadic Linguistics VII, Cologne, Rüdiger Köppe, 2013. Nous avons lu le 3 novembre 2026 le résumé déposé sur HAL. Passage : « languages that SBW speakers must have encountered during their migration from the Lake Chad area »."
+      },
+      {
+        "title": "Pattern borrowing and hybridization in Mubi (East Chadic): The importance of congruence",
+        "author": "Lameen Souag",
+        "year": 2021,
+        "url": "https://shs.hal.science/halshs-03507468",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 246-270",
+        "notes": "Word Structure, vol. 14, n° 2, 2021. Nous avons lu le 3 novembre 2026 le résumé déposé sur HAL. Passage : « others reflect the influence of Chadian Arabic, the regional lingua franca »."
+      },
+      {
+        "title": "Les relations lexicales entre le giziga – tchadique central – et le fulfulde (Cameroun)",
+        "author": "Henry Tourneux et Antonio Michielan",
+        "year": 2025,
+        "url": "https://shs.hal.science/halshs-05462734",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 98-135",
+        "notes": "Afrika und Übersee, vol. 98, 2025. Nous avons lu le 3 novembre 2026 le résumé déposé sur HAL. Passage : « leurs langues respectives en ont tiré profit en s'empruntant mutuellement de nombreux vocables »."
+      },
+      {
+        "title": "Enjeux glottopolitiques du statut actuel des langues au Niger : entre rupture et continuité",
+        "author": "Maman Mallam Garba",
+        "year": 2025,
+        "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2025/10/20-Maman-MALLAM-GARBA.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 480-481",
+        "notes": "Revue de l'ACAREF, vol. 4, n° 14, septembre 2025. L'auteur enseigne à l'université Abdou Moumouni de Niamey. Lu le 3 novembre 2026. L'article cite l'article 12 de la Charte de la refondation, promulguée par le décret n° 2025-06 du 26 mars 2025 : « La langue nationale est le Hausa. Les langues de travail sont l'Anglais et le Français. »"
+      },
+      {
+        "title": "Nubische Grammatik, mit einer Einleitung über die Völker und Sprachen Afrika's",
+        "author": "Richard Lepsius",
+        "year": 1880,
+        "url": "https://archive.org/details/nubischegrammat00lepsgoog",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Berlin, Wilhelm Hertz, 1880. Lu dans la numérisation d'Internet Archive, introduction. L'auteur classe les langues d'Afrique selon des idées de race de son époque. Relu le 3 novembre 2026. Page XV : le haoussa rattaché aux langues « hamitiques » ; page LI : le haoussa « ursprünglich Hamitische und zwar dem Libyschen Zweige desselben angehörige Sprache », et l'explication par le « physische Typus ».",
+        "page": "p. XV, XVII et LI"
+      },
+      {
+        "title": "Grundriss der Sprachwissenschaft, tome I : Die Sprachen der wollhaarigen Rassen",
+        "author": "Friedrich Müller",
+        "year": 1877,
+        "url": "https://archive.org/details/cihm_45392",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Vienne, Alfred Hölder, 1877. Lu dans la numérisation d'Internet Archive, chapitre sur la langue haoussa. L'auteur classe les langues d'après la chevelure de leurs locuteurs. Relu le 3 novembre 2026. Page 223 : le genre grammatical du haoussa ; page 235 : les ressemblances avec les langues hamito-sémitiques expliquées par « eines tief greifenden vor-historischen Einflusses der Hamito-Semiten auf die Neger ».",
+        "page": "p. 223 et 235"
+      },
+      {
+        "title": "Les langues du monde, chapitre « Les langues du Soudan et de la Guinée »",
+        "author": "Maurice Delafosse",
+        "year": 1924,
+        "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive. L'auteur, administrateur colonial, range ces langues dans une « famille négro-africaine ». Relu le 3 novembre 2026. Page 511 : « Tous les peuples qui ont comme parler national l'une des langues du groupe, y compris celui des Haoussa, appartiennent incontestablement à la race nègre ».",
+        "page": "p. 511-512"
+      },
+      {
+        "title": "Les langues du monde, chapitre « Langues chamito-sémitiques »",
+        "author": "Marcel Cohen",
+        "year": 1924,
+        "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive. Relu le 3 novembre 2026. Page 83 : l'origine biblique des termes sémitique et chamitique ; page 84 : « seul le haoussa présente quelques traits isolés d'homonymie avec des éléments grammaticaux chamito-sémitiques ».",
+        "page": "p. 83-84"
+      },
       {
         "title": "[Müller, F.] ([1876]) – *Grundriss der Sprachwissenschaft*. [Vienne]",
         "url": null,
@@ -338,18 +840,6 @@
         "source_kind": "academic"
       },
       {
-        "title": "[Blench, R. & al.] ([2009]) – *The Wadi Howar Diaspora and its role in the spread of East Sudanic languages from the fourth to the first millennia BCE*. BMC Evolutionary Biology, Vol. 9, Article 63",
-        "url": "https://bmcecolevol.biomedcentral.com/articles/10.1186/1471-2148-9-63",
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "[Cruciani, F. & al.] ([2010]) – *Human Y chromosome R1b1b2-V88 shows a parental trace within the Green Sahara*. European Journal of Human Genetics, Vol. 18. [Nature Publishing Group : ]",
-        "url": "https://www.nature.com/articles/ejhg201088",
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
         "title": "[Tishkoff, S.A. & al.] ([2009]) – *The genetic structure and history of Africans and African Americans*. Science, Vol. 324. [Washington : AAAS]",
         "url": null,
         "tier": "referenced",
@@ -383,14 +873,29 @@
         "title": "Glottolog 5.2 – classification génétique \"Chadic [chad1250]\", 4 branches immédiates (Biu-Mandara, East Chadic, Masa, West Chadic)",
         "url": "https://glottolog.org/resource/languoid/id/chad1250",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue en ligne de l'Institut Max Planck d'anthropologie évolutionniste. Nous l'avons rouvert le 3 novembre 2026 dans sa version 5.3, qui garde les quatre branches : Biu-Mandara, East Chadic, Masa et West Chadic."
       },
       {
         "title": "The DHS Program / ICF – Nigeria Demographic and Health Survey 2018, Final Report (FR359), p. 55 : le hausa (tchadique occidental) est l'ethnie principale de 30 % des femmes et 31 % des hommes enquêtés au Nigeria. ; taux de 30 % appliqué à la population totale du Nigeria (204 938 755 en 2018, World Bank – SP.POP.TOTL) pour estimer ~61,5 millions de locuteurs",
         "url": "https://dhsprogram.com/pubs/pdf/FR359/FR359.pdf",
         "tier": "official",
         "source_kind": "official_statistics",
-        "notes": "The DHS Program / ICF – Nigeria Demographic and Health Survey 2018, Final Report (FR359), p. 55 : le hausa (tchadique occidental) est l'ethnie principale de 30 % des femmes et 31 % des hommes enquêtés au Nigeria. https://dhsprogram.com/pubs/pdf/FR359/FR359.pdf ; taux de 30 % appliqué à la population totale du Nigeria (204 938 755 en 2018, World Bank – SP.POP.TOTL) pour estimer ~61,5 millions de locuteurs. https://data.worldbank.org/indicator/SP.POP.TOTL?locations=NG"
+        "notes": "Rapport final de l'enquête démographique et de santé du Nigeria de 2018, publié en 2019 par la National Population Commission du Nigeria et ICF. Relu le 3 novembre 2026. Le passage se trouve à la page 43, et le tableau 3.1 à la page 51 : « The main ethnic groups in Nigeria are Hausa (30% of women and 31% of men) ». Il s'agit de personnes qui se disent haoussa, pas d'un nombre de locuteurs. La Banque mondiale compte 204 938 755 habitants au Nigeria en 2018, chiffre vérifié le même jour dans ses données en ligne ; 30 % de ce total donne environ 61,5 millions de personnes."
+      }
+    ],
+    "gaps": [
+      {
+        "field": "content.decolonialHeader.selfAppellation",
+        "reason": "Nous n'avons pas trouvé de nom que les locuteurs de ces langues donneraient à l'ensemble de la famille. Les ouvrages que nous avons lus, de Paul Newman, Bernard Caron et Richard Gravina, et le catalogue Glottolog nomment chaque langue séparément et emploient pour l'ensemble un nom de linguistes."
+      },
+      {
+        "field": "content.speakers.byCountry",
+        "reason": "Nous n'avons pas trouvé de nombre récent de locuteurs pour le Niger, le Tchad et le Cameroun dans une source que nous avons pu ouvrir. Le volume du recensement nigérien de 2012 que nous avons lu ne donne pas la répartition par langue, et le site d'Ethnologue ne nous était pas accessible. Pour le Nigeria, le seul chiffre trouvé compte les personnes qui se disent haoussa."
+      },
+      {
+        "field": "content.historyAndOrigins.emergencePeriod",
+        "reason": "Nous n'avons pas trouvé de date proposée par des linguistes pour la langue ancestrale des langues tchadiques. Nous avons cherché chez Paul Newman, Bernard Caron et Richard Gravina. Les dates que nous citons viennent d'études génétiques."
       }
     ]
   }
