@@ -353,7 +353,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 67 -> 65 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 65 -> 63 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 63 -> 61 on 2026-10-18: the Mucubal fiche, folded into PPL_MUCUVAL, and the « Africains d'origine récente » fiche, withdrawn, both counted.
-    value: 62,
+    value: 61, // 62 -> 61 on 2026-11-08: premium peoples batch 07: the Akyem origin text no longer uses it.
     method: "radical portugais dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
