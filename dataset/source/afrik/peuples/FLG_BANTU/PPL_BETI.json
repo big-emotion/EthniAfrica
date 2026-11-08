@@ -85,7 +85,7 @@
     "demography": {
       "totalPopulation": 8000000,
       "referenceYear": 2025,
-      "source": "Estimations basees sur Wikipedia EN/Beti-Pahuin peoples (plus de 8 millions au debut du XXIe siecle pour l'ensemble des Beti-Pahuin), Joshua Project (2 299 000 pour les Ewondo/Beti seuls en 2025), Ethnologue (SIL International 2024). Le chiffre de 5 millions cite dans le fichier original se referait probablement aux seuls sous-groupes Fang/Ewondo/Bulu ; le total Beti-Pahuin est nettement plus eleve.",
+      "source": "Estimation de plus de 8 millions pour l'ensemble des Beti-Pahuin au debut du XXIe siecle, sans source primaire ouverte ; Joshua Project (2 299 000 pour les Ewondo/Beti seuls en 2025), Ethnologue (SIL International 2024). Le chiffre de 5 millions cite dans le fichier original se referait probablement aux seuls sous-groupes Fang/Ewondo/Bulu ; le total Beti-Pahuin est nettement plus eleve.",
       "distributionByCountry": [
         {
           "country": "CMR",
@@ -130,6 +130,13 @@
         "tier": "unverified",
         "source_kind": "encyclopedia",
         "notes": "Article « Fang », lu le 12 octobre 2026. Il range sous ce nom trois groupes : les Beti au nord (Yaunde ou Ewondo, Bene), les Bulu (Bulu, Fong, Zaman, Yelinda) et les Fang au sud (Fang, Ntumu, Mvae)."
+      },
+      {
+        "title": "Glottolog 5.3, Ewondo (ewon1239)",
+        "url": "https://glottolog.org/resource/languoid/id/ewon1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue de l'Institut Max-Planck d'anthropologie évolutionniste. Code ISO 639-3 ewo, pays : Cameroun, noms voisins Ewundu, Jaunde, Yaounde, Yaunde ; aucun dialecte listé. Lue le 8 novembre 2026."
       }
     ]
   },

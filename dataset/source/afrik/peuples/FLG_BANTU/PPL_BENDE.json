@@ -44,7 +44,9 @@
     "languages": {
       "mainLanguage": "Bende",
       "isoCodes": ["bdp"],
-      "dialects": [],
+      "dialects": [
+        "Tongwe et Holoholo : Tony Waters (2009, note 20) les range parmi les variantes des langues bende ; Glottolog (bend1258) ne liste aucun dialecte du bende."
+      ],
       "vehicularRole": "Le Bende est la langue maternelle de la communaute. Il appartient au groupe linguistique bantou et est lie au Tongwe et au Holoholo (zone F). Le swahili est la langue nationale tanzanienne et le vehiculaire interethnique. Les ressources bibliques disponibles sont limitees: portions de la Bible seulement (pas de Nouveau Testament ni de Bible complete). L'Ethnologue classe le Bende comme langue stable avec 10 000 a 1 million de locuteurs."
     },
     "culture": {
@@ -101,6 +103,20 @@
         "url": null,
         "tier": "needs_review",
         "source_kind": "academic"
+      },
+      {
+        "title": "Glottolog 5.3, Bende (bend1258)",
+        "url": "https://glottolog.org/resource/languoid/id/bend1258",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue de l'Institut Max-Planck d'anthropologie évolutionniste. Code ISO 639-3 bdp, pays : Tanzanie, noms voisins Kibende, Si'bende, Sibhende, aucun dialecte listé. Lue le 8 novembre 2026."
+      },
+      {
+        "title": "Tony Waters, « Social Organization and Social Status in Nineteenth and Twentieth Century Rukwa, Tanzania », African Studies Quarterly, vol. 11, n° 1, 2009, p. 60-61 et p. 75",
+        "url": "https://asq.africa.ufl.edu/wp-content/uploads/sites/168/Waters-V11Is1.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Waters écrit que les groupes de langue bende se trouvent dans le nord de la région de Rukwa, la partie la moins peuplée, jamais organisée en chefferies, et que les clans bende se réfugiaient dans la forêt devant les razzias. Lu le 8 novembre 2026."
       }
     ]
   },
