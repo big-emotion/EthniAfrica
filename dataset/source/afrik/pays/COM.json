@@ -3,8 +3,8 @@
   "nameFr": "Comores",
   "nameEn": "Comoros",
   "nameOfficial": "Union des Comores (Udzima wa Komori en comorien)",
-  "summary": "Une explication publiée rattache le nom Comores à l'arabe komr, un mot qui désignait de grandes terres de l'océan Indien situées sous les Nuages de Magellan, le repère du sud dans le ciel austral. Plus tard, le mot a été lu comme qamar, « la lune », d'où le surnom « îles de la Lune ». L'archipel s'organisa en sultanats indépendants avant le protectorat français de 1886. Sa culture croise l'Afrique de l'Est, le monde swahili et l'océan Indien.",
-  "etymology": "Le français « Comores » reprend l'arabe komr, un mot générique que des géographes arabes appliquaient à de grandes terres situées sous les Nuages de Magellan, les deux taches lumineuses du ciel austral qui marquaient le sud. Une étude publiée en 2000 juge fausse la lecture « îles de la Lune » (qamar), apparue plus tard ; une autre rappelle que la racine arabe renvoie à la clarté lumineuse, ce qui laisse « lune » dans son champ de sens. En arabe, le pays s'appelle aujourd'hui Juzur al-Qamar (جزر القمر), « îles de la Lune » ; en comorien, « Komori » ou « Udzima wa Komori » (Union des Comores).",
+  "summary": "Une explication publiée rattache le nom Comores à l'arabe komr, un mot qui désignait de grandes terres de l'océan Indien situées sous les Nuages de Magellan, le repère du sud dans le ciel austral. Plus tard, le mot a été lu comme qamar, « la lune », d'où le surnom « îles de la Lune ». Des sultans se partagent les îles jusqu'à la domination française de 1886 ; le pays est indépendant depuis 1975, et Mayotte est restée sous administration française.",
+  "etymology": "Le français « Comores » reprend l'arabe komr, un mot générique que des géographes arabes appliquaient à de grandes terres situées sous les Nuages de Magellan, les deux taches lumineuses du ciel austral qui marquaient le sud. Une étude publiée en 2000 juge fausse l'explication « îles de la Lune » (qamar), apparue plus tard ; une autre rappelle que la racine arabe renvoie à la clarté lumineuse, ce qui laisse « lune » dans son champ de sens. En arabe, le pays s'appelle aujourd'hui Juzur al-Qamar (جزر القمر), « îles de la Lune » ; en comorien, « Komori » ou « Udzima wa Komori » (Union des Comores).",
   "nameOriginActor": "L'auteur du nom n'est pas connu. Le mot komr apparaît chez des géographes arabes du Moyen Âge, dont al-Idrîsî au XIIe siècle, pour des terres de l'océan Indien occidental, Madagascar comprise. Il est resté au seul archipel avec le temps ; la date de ce resserrement n'est pas établie.",
   "nameHistory": {
     "summary": "Le nom Comores désigne un pays de l'océan Indien, l'Union des Comores, qui se nomme aussi Komori en shikomor et Al-Qamar en arabe. Le pays a porté d'autres noms : Territoire des Comores sous la colonisation française, puis État comorien et République fédérale islamique des Comores. Les sources ne s'accordent pas sur l'origine du nom Comores ; nous les présentons plus bas.",
@@ -197,7 +197,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 320-321",
-                "notes": "Article universitaire lu en entier sur Persée. Les auteurs arabes ont longtemps hésité sur la vocalisation du mot écrit kmr. Al-Idrīsī, au XIIe siècle, le lit komr ; dès le XIIIe siècle, Ibn Saʿīd met en garde contre la lecture qamar, « lune ». Ibn Khaldūn rapporte que certains lisaient al-kamar, « la lune », à cause d'une blancheur éclatante."
+                "notes": "Article universitaire lu en entier sur Persée. Les auteurs arabes ont longtemps hésité sur la vocalisation du mot écrit kmr. Al-Idrīsī, au XIIe siècle, le lit komr ; dès le XIIIe siècle, Ibn Saʿīd met en garde contre l'explication par qamar, « lune ». Ibn Khaldūn rapporte que certains lisaient al-kamar, « la lune », à cause d'une blancheur éclatante."
               },
               {
                 "title": "Claude Allibert, « Le mot Komr dans l'océan Indien et l'incidence de son interprétation sur l'ancienneté du savoir que l'on a de la région », Topoi. Orient-Occident, 10-1",
@@ -248,7 +248,7 @@
               "to": null,
               "label": "Origine non datée"
             },
-            "statement": "Le nom Comores viendrait de l'arabe qamar, « la lune » : c'est la lecture que rapportent des auteurs arabes du Moyen Âge, selon Claude Allibert, qui la juge fausse. Alain Clockers rappelle que la racine du mot renvoie à la « clarté lumineuse » et à la lune.",
+            "statement": "Le nom Comores viendrait de l'arabe qamar, « la lune » : c'est l'explication que rapportent des auteurs arabes du Moyen Âge, selon Claude Allibert, qui la juge fausse. Alain Clockers rappelle que la racine du mot renvoie à la « clarté lumineuse » et à la lune.",
             "hypothesisGroup": "origine du nom Comores",
             "sources": [
               {
@@ -259,7 +259,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 320-321",
-                "notes": "Article universitaire lu en entier sur Persée. Les auteurs arabes ont longtemps hésité sur la vocalisation du mot écrit kmr. Al-Idrīsī, au XIIe siècle, le lit komr ; dès le XIIIe siècle, Ibn Saʿīd met en garde contre la lecture qamar, « lune ». Ibn Khaldūn rapporte que certains lisaient al-kamar, « la lune », à cause d'une blancheur éclatante."
+                "notes": "Article universitaire lu en entier sur Persée. Les auteurs arabes ont longtemps hésité sur la vocalisation du mot écrit kmr. Al-Idrīsī, au XIIe siècle, le lit komr ; dès le XIIIe siècle, Ibn Saʿīd met en garde contre l'explication par qamar, « lune ». Ibn Khaldūn rapporte que certains lisaient al-kamar, « la lune », à cause d'une blancheur éclatante."
               },
               {
                 "title": "Histoire des noms anciens de Madagascar : réévaluations et nouvelles hypothèses, Études océan Indien, 51-52",
@@ -290,7 +290,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 325, note 18",
-                "notes": "Article universitaire lu en entier sur Persée. Alfred Grandidier explique komr par la langue des Makoa : ko, « où », et moro, « feu », à cause d'un volcan. L'auteur juge cette lecture fautive, car le mot désigne aussi Madagascar."
+                "notes": "Article universitaire lu en entier sur Persée. Alfred Grandidier explique komr par la langue des Makoa : ko, « où », et moro, « feu », à cause d'un volcan. L'auteur juge cette explication fautive, car le mot désigne aussi Madagascar."
               }
             ]
           }
@@ -374,7 +374,7 @@
               "to": null,
               "label": "Sens du nom"
             },
-            "statement": "Le nom Al-Qamar se lit en arabe « la lune », et le nom d'« îles de la Lune » désigne encore l'archipel, selon Alain Clockers. Claude Allibert juge cette lecture fausse pour le mot ancien komr ; les explications sont présentées avec le nom Comores.",
+            "statement": "Le nom Al-Qamar se lit en arabe « la lune », et le nom d'« îles de la Lune » désigne encore l'archipel, selon Alain Clockers. Claude Allibert juge cette explication fausse pour le mot ancien komr ; les explications sont présentées avec le nom Comores.",
             "aspect": "meaning",
             "sources": [
               {
@@ -629,37 +629,36 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Komr (arabe médiéval, nom générique de plusieurs terres de l'océan Indien occidental)",
-        "Protectorat des Comores (1886)",
-        "Territoire des Comores (1912)"
+        "Komr (mot arabe médiéval, nom de plusieurs terres de l'océan Indien occidental)",
+        "Territoire des Comores (1946)",
+        "État comorien (1975)",
+        "République fédérale islamique des Comores (1978-2001)"
       ],
-      "antiquity": "Aucun texte de l'Antiquité ne désigne l'archipel avec certitude : les identifications proposées, comme celle de l'île de Menuthias, restent discutées.",
-      "middleAges": "Au XIIe siècle, al-Idrîsî écrit le mot komr pour des îles de l'océan Indien occidental. Au XIIIe siècle, Ibn Said et d'autres auteurs arabes discutent déjà de la bonne prononciation, komr ou qamar. Les îles étaient des points d'escale importants sur les routes commerciales de l'océan Indien.",
-      "precolonial": "Les îles étaient organisées en sultanats indépendants (sultanats de Grande Comore, Anjouan, Mohéli). Chaque île avait son propre sultanat avec des dynasties locales.",
-      "colonization": "Les îles sont devenues un protectorat français en 1886 sous le nom de \"Protectorat des Comores\". En 1912, elles sont intégrées à la colonie de Madagascar sous le nom de \"Territoire des Comores\". Le français « Comores » reprend l'arabe komr.",
-      "contemporary": "Après l'indépendance en 1975, le pays prend le nom d'\"État comorien\" puis \"République fédérale islamique des Comores\" (1978), puis \"Union des Comores\" depuis 2001. Le nom officiel en français est \"Union des Comores\" et en comorien \"Udzima wa Komori\"."
+      "antiquity": "Nous n'avons pas trouvé de texte de l'Antiquité qui nomme l'archipel. L'île Menuthias, citée par le géographe Ptolémée et par le Périple de la mer Érythrée, a été rapprochée de Madagascar ; selon Claude Allibert, la question est « encore très discutée ».",
+      "middleAges": "Au XIIe siècle, le géographe al-Idrīsī écrit le mot komr pour plusieurs terres de l'océan Indien occidental, Madagascar comprise, selon Claude Allibert. Des auteurs arabes hésitent ensuite entre deux façons de lire le même mot : komr, ou qamar, « la lune ».",
+      "precolonial": "Avant la colonisation, chaque île porte son propre nom. Selon R. K. Kent, ces noms locaux étaient Ngazija pour la Grande Comore, Anzuani pour Anjouan, Muali pour Mohéli et M'samburu, parfois M'Ayata, pour Mayotte. Kent prévient que les noms des quatre îles « varient infiniment dans les sources anciennes ».",
+      "colonization": "Mayotte devient un protectorat français en 1843, et les trois autres îles passent sous domination française en 1886, selon R. K. Kent. Une loi du 25 juillet 1912 fait des Comores et de Madagascar une seule colonie française, selon le site L'aménagement linguistique dans le monde de l'université Laval. En 1946, l'archipel devient le « territoire des Comores ». Le français « Comores » reprend l'arabe komr.",
+      "contemporary": "À l'indépendance, en 1975, le pays prend le nom d'« État comorien ». La Constitution de 1978 en fait la « République fédérale islamique des Comores ». Celle du 23 décembre 2001 crée l'Union des Comores, un nom que garde la Constitution de 2018. En shikomor, la langue comorienne, le pays se nomme Udzima wa Komori."
     },
     "kingdoms": [
       {
         "name": "Sultanats des Comores",
-        "period": "IXe siècle - 1886",
+        "period": "XVe ou XVIe siècle - 1886",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 801,
+          "startYear": 1400,
           "endYear": 1886,
-          "precision": "century"
+          "precision": "approximate",
+          "datingNote": "Selon R. K. Kent (Histoire générale de l'Afrique, volume V), le début de « l'ère des sultans » pourrait remonter à 1506 ou même avant 1400, selon la façon dont on lit les rares sources ; le début retenu ici est la borne la plus ancienne. La fin suit la domination française sur la Grande Comore, Anjouan et Mohéli en 1886 ; Mayotte était protectorat français depuis 1843, selon le même auteur."
         },
-        "dominantPeoples": [
-          "Comoriens (Shimasiwa)",
-          "avec influences arabes",
-          "perses et swahilies"
-        ],
+        "dominantPeoples": ["Comoriens"],
         "politicalCenters": [
-          "Moroni (Grande Comore)",
-          "Mutsamudu (Anjouan)",
-          "Fomboni (Mohéli)"
+          "Domoni (Anjouan)",
+          "M'samudu, aujourd'hui Mutsamudu (Anjouan)",
+          "Fombony, aujourd'hui Fomboni (Mohéli)",
+          "Moroni et Ikoni, anciennes capitales du sultanat de Bambao (Grande Comore)"
         ],
-        "historicalRole": "Les sultanats comoriens étaient des entités politiques indépendantes qui contrôlaient le commerce dans l'océan Indien. Ils ont développé une culture islamique swahilie distinctive avec des influences bantoues, arabes et perses."
+        "historicalRole": "Selon R. K. Kent, les traditions comoriennes placent avant les sultans des chefs anciens, les bēdja, puis les fani, à qui l'on attribue la construction en pierre et la première mosquée. Une dynastie venue d'Anjouan, dite hassanite, aurait répandu l'islam sunnite dans les autres îles. Ensuite, chaque île a ses propres chefs, souvent rivaux, et la Grande Comore est partagée entre dix « seigneurs » en 1614. Au XVIIe siècle, les marchands comoriens servent d'intermédiaires entre Madagascar, l'Afrique et l'Arabie, notamment pour la traite des esclaves."
       },
       {
         "name": "Protectorat français des Comores",
@@ -673,8 +672,11 @@
         "dominantPeoples": [
           "Comoriens sous administration coloniale française"
         ],
-        "politicalCenters": ["Dzaoudzi (siège du protectorat", "puis Moroni)"],
-        "historicalRole": "Période de colonisation française qui a unifié administrativement les trois îles principales (Grande Comore, Anjouan, Mohéli) tout en maintenant Mayotte sous souveraineté française."
+        "politicalCenters": [
+          "Dzaoudzi (Mayotte), chef-lieu jusqu'au transfert vers Moroni",
+          "Moroni (Grande Comore), chef-lieu après un transfert échelonné entre 1958 et 1966"
+        ],
+        "historicalRole": "La France tient Mayotte depuis 1843 et étend sa domination aux trois autres îles en 1886, selon R. K. Kent. Une loi de 1912 rattache l'archipel à Madagascar ; il en est séparé en 1946. Le chef-lieu passe de Dzaoudzi, à Mayotte, à Moroni, sur la Grande Comore, entre 1958 et 1966, selon le géographe Yann Gérard."
       },
       {
         "name": "Union des Comores",
@@ -685,46 +687,69 @@
           "ongoing": true,
           "precision": "year"
         },
-        "dominantPeoples": ["Comoriens (Shimasiwa)"],
+        "dominantPeoples": ["Comoriens"],
         "politicalCenters": ["Moroni (capitale)"],
-        "historicalRole": "État indépendant depuis 1975, avec une histoire politique mouvementée incluant plusieurs coups d'État. L'Union des Comores est membre de la Ligue arabe, de l'Organisation de la coopération islamique et de l'Union africaine."
+        "historicalRole": "Le pays est indépendant depuis le 6 juillet 1975 ; Mayotte est restée sous administration française. Son histoire politique compte de nombreux coups d'État, et un soulèvement d'Anjouan et de Mohéli en 1997. L'accord de Fomboni, en 2001, met en place une présidence qui tourne entre les îles, selon l'Union africaine. La Constitution de 2018 fait de Moroni la capitale et se réfère aux chartes des Nations unies et de l'Organisation de l'unité africaine, ainsi qu'au pacte de la Ligue des États arabes."
       }
     ],
     "majorPeoples": [
       {
         "name": "Comorien",
-        "selfAppellation": "Shimasiwa (gens des îles)",
+        "selfAppellation": "Comoriens. Les habitants de la Grande Comore se nomment wa-ngazija, « les insulaires », selon Fidel T. Masao et Henry W. Mutoro.",
         "exonyms": [
-          "Comorians (terme utilisé par les Européens)",
-          "\"Qamari\" (terme arabe historique)"
+          "Comorians (anglais, dans la traduction anglaise de la Constitution de 2018)"
         ],
         "peopleId": "PPL_COMORIEN",
         "mainRegion": "Archipel des Comores (Grande Comore, Anjouan, Mohéli)",
         "languages": [
-          "Langues comoriennes (shingazidja",
-          "shindzuani",
-          "shimwali)",
-          "français",
-          "arabe"
+          "Shikomor, langue nationale",
+          "Comorien de Ngazidja (zdj)",
+          "Comorien de Ndzwani (wni)",
+          "Comorien de Mwali (wlc)",
+          "Français",
+          "Arabe"
         ],
-        "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Comorien\" est neutre et accepté. L'auto-appellation \"Shimasiwa\" (gens des îles) reflète l'identité insulaire du peuple. Le nom du pays, Comores, a une origine discutée, détaillée dans la fiche du pays."
+        "languageFamily": "FLG_BANTU",
+        "appellationRemarks": "Comorien désigne les habitants de tout l'archipel. Chaque île a sa propre variété de la langue, et les habitants de la Grande Comore se nomment aussi wa-ngazija. L'origine du nom Comores est discutée ; la fiche du pays la présente."
       }
     ],
     "culture": {
-      "culturalTraditions": "Architecture en pierre traditionnelle, mariage grand-comorien (Anda), poésie et musique orientale-swahilie, artisanat (poterie, tissage), danse traditionnelle",
-      "dominantReligions": "Islam sunnite (religion d'État depuis 2018), avec syncrétisme avec certaines croyances traditionnelles",
-      "lifestyles": "Vie principalement rurale et côtière, agriculture (vanille, ylang-ylang, clous de girofle), pêche, commerce",
-      "socialOrganization": "Système de notables (Anda, Shungu), structure clanique patrilinéaire, organisation en familles étendues et lignages, autorité des oulémas et chefs religieux",
-      "regionalRelations": "Relations historiques avec les Swahili, interactions avec les peuples malgaches, contacts commerciaux avec Arabes, Perses, Shirazi, diaspora importante en France et à Madagascar"
+      "mainLanguages": [
+        {
+          "name": "Comorien de Ngazidja (shingazidja)",
+          "isoCode": "zdj",
+          "isPrimary": true
+        },
+        {
+          "name": "Comorien de Ndzwani (shindzwani)",
+          "isoCode": "wni"
+        },
+        {
+          "name": "Comorien de Mwali (shimwali)",
+          "isoCode": "wlc"
+        },
+        {
+          "name": "Français",
+          "isoCode": "fra"
+        },
+        {
+          "name": "Arabe",
+          "isoCode": "arb"
+        }
+      ],
+      "culturalTraditions": "La langue nationale est le shikomor. Au recensement de 2017, 88,2 % des personnes du fichier publié par l'Institut national de la statistique (INSEED) parlent le shikomori, 32,9 % le français et 6,5 % l'arabe. Selon le catalogue Glottolog, le comorien forme un groupe de langues bantoues, une par île. Sur la Grande Comore, le grand mariage est une suite de cérémonies qui fait accéder à la citoyenneté, selon l'anthropologue Sophie Blanchy. Dans les vieux centres des villes, beaucoup de maisons ont des murs de pierre volcanique ; des remparts, les ngome, y ont été bâtis au début du XIXe siècle contre les raids venus de Madagascar, selon Yann Gérard.",
+      "dominantReligions": "Islam sunnite, de rite chaféite. Selon le site L'aménagement linguistique dans le monde, environ 98 % des habitants sont musulmans sunnites. La Constitution de 2018 dispose que « l'islam est la religion de l'État ». Selon R. K. Kent, une dynastie venue d'Anjouan a répandu le rite chaféite dans les îles.",
+      "lifestyles": "La majorité des Comoriens dépend de l'agriculture et de la pêche, des activités souvent vivrières, et 64 % vivent à la campagne, selon le géographe Adjimaël Halidi. Les principales cultures de rente sont la vanille, l'ylang-ylang et le girofle, et leurs prix se sont effondrés. L'argent envoyé par les Comoriens de l'étranger équivaut à 19,3 % du produit intérieur brut, selon le même auteur.",
+      "socialOrganization": "Sur la Grande Comore, la parenté passe par les femmes. Les Maisons, daho, sont des groupes matrilinéaires, et les frères donnent à leurs sœurs une maison et un champ, selon Sophie Blanchy. Les hommes sont rangés en classes d'âge, hirimu ou beya. Celui qui fait le grand mariage quitte sa classe et rejoint les « hommes accomplis ». La cité, mdji, est l'unité politique. Ce système d'âge a presque disparu à Mayotte. Avec l'islam sunnite sont venus des juges, les cadis, selon R. K. Kent.",
+      "regionalRelations": "L'archipel est un lieu de passage entre l'Afrique, Madagascar et l'Arabie. Les Comoriens parlent une langue bantoue, venue du continent selon Fidel T. Masao et Henry W. Mutoro. À la fin du XVIIIe siècle, des flottes sakalava et betsimisaraka venues de Madagascar razzient les îles jusque vers 1825, et Mayotte devient « un pays de langue malgache », selon R. K. Kent. Aujourd'hui, environ 150 000 Comoriens vivent en France, selon Adjimaël Halidi. La Constitution de 2018 fait du retour de Mayotte une priorité nationale ; en 1976, l'Assemblée générale des Nations unies avait déclaré l'île partie de l'État comorien."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement de l'archipel par des populations bantoues et swahilies dès le premier millénaire. Arrivée de l'islam au IXe siècle via les commerçants arabes et perses. Développement de sultanats indépendants sur chaque île.",
-      "middleAges": "Apogée des sultanats comoriens (XIIe-XVIe siècles) avec un commerce florissant dans l'océan Indien. Contacts intensifs avec les civilisations swahilie, arabe, perse et malgache. Architecture en pierre caractéristique (palais, mosquées).",
-      "precolonial": "Maintien des sultanats jusqu'au XIXe siècle. Résistance aux tentatives de colonisation portugaise et française. Rivalités entre sultanats des différentes îles.",
-      "colonization": "Établissement du protectorat français en 1886. Intégration à la colonie de Madagascar en 1912. Développement de plantations (vanille, ylang-ylang). Résistance passive à la colonisation.",
-      "independenceStruggle": "Mouvements nationalistes dans les années 1960-1970. Indépendance proclamée en 1975. Mayotte choisit de rester française lors du référendum de 1976, créant un contentieux territorial qui perdure.",
-      "postIndependence": "Histoire politique mouvementée avec plusieurs coups d'État (1975, 1995, 1999). Instabilité politique et séparatisme à Anjouan. Adoption de la Constitution de l'Union des Comores en 2001 établissant une fédération. Adoption de l'islam comme religion d'État en 2018. Défis économiques et sociaux persistants."
+      "ancientPeriods": "À Nzwani (Anjouan), des tessons de poterie datés d'environ 430 de notre ère montrent que des gens vivaient sur les îles avant l'arrivée des Arabes, selon Fidel T. Masao et Henry W. Mutoro. On ne sait pas s'ils venaient de Madagascar ou de la côte africaine ; ces auteurs jugent la côte plus probable, parce que les Comoriens parlent une langue bantoue.",
+      "middleAges": "Au début du XIIe siècle, des habitants installés dans le nord de Madagascar et aux Comores exportent des récipients en pierre tendre, la stéatite, vers Kilwa et Manda, sur la côte africaine, selon Fidel T. Masao et Henry W. Mutoro. Sur l'île, la céramique trouvée à Mro Deoua mêle des poteries du Moyen-Orient, de Chine et une céramique rouge locale, dite de Dembeni. L'islam a été apporté dans l'archipel par les Afro-Shirazi, selon R. K. Kent.",
+      "precolonial": "Selon R. K. Kent, l'époque des sultans commence vers 1506, ou avant 1400. Au début du XVIIe siècle, la reine d'Anjouan est tenue pour la souveraine des quatre îles, mais chaque île a son chef. Les îles sont alors un relais de la traite des esclaves pris à Madagascar, puis subissent les pirates, de 1680 à 1720. En 1775, à Anjouan, les descendants des premiers habitants, les Wamatsaha, se révoltent pour obtenir l'égalité ; leur chef, Tumpa, est tué. Des raids venus de Madagascar frappent ensuite les îles jusque vers 1825.",
+      "colonization": "Mayotte devient un protectorat français en 1843, et la France étend sa domination aux trois autres îles en 1886, selon R. K. Kent. La loi du 25 juillet 1912 rattache les Comores à Madagascar ; R. K. Kent date ce rattachement de 1914 à 1946. Ensuite, l'archipel obtient une autonomie administrative en 1946, selon le site L'aménagement linguistique dans le monde. Le chef-lieu passe de Dzaoudzi à Moroni entre 1958 et 1966. L'économie de plantation, fondée sur la vanille, l'ylang-ylang et le girofle, entre en crise, selon Adjimaël Halidi.",
+      "independenceStruggle": "Le 22 décembre 1974, un référendum montre que la grande majorité des Comoriens veut l'indépendance, selon l'Assemblée générale des Nations unies. Le 6 juillet 1975, le président Ahmed Abdallah proclame seul l'indépendance à Moroni. Mayotte reste française après deux référendums organisés par la France en février et en avril 1976. L'Assemblée générale des Nations unies déclare ces votes « nuls et non avenus » le 21 octobre 1976.",
+      "postIndependence": "En 1975, des mercenaires français interviennent en faveur d'Ali Soilih, qui mène le pays vers le socialisme. Ils le renversent le 13 mai 1978 pour ramener Ahmed Abdallah au pouvoir, selon l'historien Walter Bruyère-Ostells. Le site L'aménagement linguistique dans le monde compte près d'une vingtaine de coups d'État ou de tentatives depuis l'indépendance. En août 1997, Anjouan et Mohéli se soulèvent contre la Grande Comore. L'accord de Fomboni, signé le 17 février 2001, prévoit une présidence qui tourne entre les îles, selon l'Union africaine. La Constitution du 23 décembre 2001 crée l'Union des Comores. Celle de 2018, adoptée par référendum le 30 juillet, fait de l'islam la religion de l'État et change les règles de cette présidence tournante."
     },
     "sources": [
       {
@@ -784,7 +809,7 @@
         "url": "https://doi.org/10.3406/topoi.2000.1883",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Article universitaire sur le mot arabe komr. Il établit que komr désignait les Nuages de Magellan et servait de nom générique à plusieurs grandes terres de l'océan Indien occidental, Madagascar comprise, et que la lecture « îles de la Lune » est fausse. Il cite les mises en garde d'auteurs arabes médiévaux sur la prononciation. Article lu en entier le 16 septembre 2026 ; les textes arabes qu'il cite l'ont été à travers lui."
+        "notes": "Article universitaire sur le mot arabe komr. Il établit que komr désignait les Nuages de Magellan et servait de nom générique à plusieurs grandes terres de l'océan Indien occidental, Madagascar comprise, et que l'explication « îles de la Lune » est fausse. Il cite les mises en garde d'auteurs arabes médiévaux sur la prononciation. Article lu en entier le 16 septembre 2026 ; les textes arabes qu'il cite l'ont été à travers lui. Relu le 3 novembre 2026, p. 319, note 1 : « L'île Menutias de la Géographie de Ptolémée est présentée par Horton (1990) comme étant Madagascar » ; « La question est aujourd'hui encore très discutée. »"
       },
       {
         "title": "A. Clockers, « Histoire des noms anciens de Madagascar : réévaluations et nouvelles hypothèses », Études océan Indien, 51-52, 2014",
@@ -792,6 +817,90 @@
         "tier": "referenced",
         "source_kind": "academic",
         "notes": "Confirme le lien entre komr et les Nuages de Magellan, mais rappelle que la racine arabe renvoie à la clarté lumineuse, et donc aussi à la lune. Article lu en septembre 2026."
+      },
+      {
+        "title": "INSEED, Recensement général de la population et de l'habitat 2017 (RGPH 2017), documentation de l'Archive nationale de microdonnées des Comores",
+        "url": "https://www.nada.inseed-comores.org/index.php/catalog/8",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Documentation du recensement de 2017 publiée par l'Institut national de la statistique et des études économiques et démographiques des Comores, lu le 3 novembre 2026. Collecte du 16 décembre 2017 au 26 janvier 2018. Le fichier « DEMOGRAPHIE_REC_LONG_ANON » compte 593 762 personnes. Question B15, langues parlées : shikomori « Oui » 523 615 (88,2 %), français 195 504 (32,9 %), arabe 38 520 (6,5 %), malgache 14 134 (2,4 %), swahili 3 304 (0,6 %). Question B10, nationalité : « Comores » 590 629 (99,5 %)."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, III, ch. 21 : La côte d'Afrique orientale et les Comores",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de Fidel T. Masao et Henry W. Mutoro, volume III de l'Histoire générale de l'Afrique de l'UNESCO, 1990, lu le 3 novembre 2026 dans une copie du chapitre. P. 633 : « La découverte à Nzwani, aux Comores, d'une série de tessons datant probablement de + 430 ± 70 montre qu'avant l'arrivée des Arabes, des Afro-Indonésiens s'étaient sans doute établis sur ces îles » ; « la tradition wa-ngazija (les insulaires) veut que cette population soit venue du continent ». P. 636, figure 21.2 : « Poterie découverte à Mro Deoua, aux Comores », avec une « céramique rouge de Dembeni ». P. 654 : « Au début du XIIe siècle, des immigrants du sud de l'Asie [...] installés [...] dans le nord de Madagascar et aux Comores exportaient des récipients en stéatite vers Kilwa, Manda »."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 28 : Madagascar et les îles de l'océan Indien",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de R. K. Kent, volume V de l'Histoire générale de l'Afrique de l'UNESCO, 1999, lu le 3 novembre 2026 dans une copie du chapitre, partie « Les îles Comores », p. 960-965. Note 199 : noms locaux « Ngazija, Anzuani, Muali (parfois M'heli) et M'samburu [...], parfois aussi M'Ayata ». Note 200 : « Mayotte est devenue un protectorat français en 1843. Les autres Comores tombèrent sous la domination française en 1886. » P. 961 : « Le début de “l'ère des sultans” pourrait remonter à 1506 ou même avant 1400 ». P. 962-963 : la dynastie hassanite, le rite chaféite, les cadis, la Grande Comore « partagée entre dix “seigneurs” » en 1614. P. 964-965 : pirates de 1680 à 1720, révolte des Wamatsaha menée par Tumpa en 1775, raids sakalava et betsimisaraka qui « cessèrent vers 1825 ». P. 935 : les Comores, « plaque tournante » de la traite des esclaves de Madagascar au début du XVIIe siècle."
+      },
+      {
+        "title": "Sophie Blanchy, « Seul ou tous ensemble ? Dynamique des classes d'âge dans les cités de l'île de Ngazidja, Comores », L'Homme, 167-168, 2003, p. 153-186",
+        "url": "https://journals.openedition.org/lhomme/21511",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'anthropologie publié dans la revue L'Homme, lu le 3 novembre 2026 sur OpenEdition. Passages : « Les classes d'âge et les classes de statut masculines sont appelées indifféremment hirimu ou beya » ; le Grand Mariage « marque l'accès à la citoyenneté » ; les Maisons (daho), « groupes matrilinéaires et matrilocaux » ; les frères « dotent leurs sœurs d'une maison et d'un champ vivrier » ; « Le terme mdji, que l'on peut traduire par “cité” » ; « Le système d'âge a pratiquement disparu dans l'île de Mayotte, mais il est resté très actif à Ngazidja »."
+      },
+      {
+        "title": "Adjimaël Halidi, « Situation de crise et résilience sociale aux Comores », Les Cahiers d'Outre-Mer, 282, 2020, p. 437-464",
+        "url": "https://journals.openedition.org/com/12608",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de géographie, lu le 3 novembre 2026 sur OpenEdition. Passages : « les îles de Mohéli et d'Anjouan s'étaient soulevées en août 1997 » ; « l'effondrement des prix des produits de rente (vanille, ylang-ylang et girofle) » ; « Les secteurs de l'agriculture et de la pêche dont dépendent la majorité des Comoriens » ; « 64 % de la population comorienne vit dans les espaces ruraux » ; « environ 150 000 migrants comoriens y résident (Rich, 2008) » ; un « transfert monétaire annuel équivalent à 19,3 % du produit intérieur brut »."
+      },
+      {
+        "title": "Yann Gérard, « Étalement urbain et transformation de la structure urbaine de deux capitales insulaires : Moroni et Mutsamudu », Les Cahiers d'Outre-Mer, 248, 2009, p. 513-528",
+        "url": "https://journals.openedition.org/com/5781",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de géographie urbaine, lu le 3 novembre 2026 sur OpenEdition. Passages : « le transfert de capitale de Dzaoudzi à Moroni (échelonné entre 1958 et 1966) » ; Moroni et Ikoni, « toutes deux anciennes capitales du sultanat de Bambao » ; des « murs de pierres volcaniques » ; les remparts ngome bâtis au début du XIXe siècle contre les raids malgaches."
+      },
+      {
+        "title": "Walter Bruyère-Ostells, « Au chevet des mondes musulmans : l'infirmier dans les opérations mercenaires françaises du Yémen aux Comores (1963-1989) », Cahiers de la Méditerranée, 96, 2018",
+        "url": "https://journals.openedition.org/cdlm/11036",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'histoire, lu le 3 novembre 2026 sur OpenEdition. Passages : « les mercenaires font une première intervention en faveur d'Ali Soilih en 1975 » ; « Après avoir accédé au pouvoir en 1975, Ali Soilih a fait évoluer le pays vers le socialisme » ; ils « renversent Ali Soilih le 13 mai 1978 pour porter au pouvoir Ahmed Abdallah »."
+      },
+      {
+        "title": "Constitution de l'Union des Comores de 2018, version anglaise, Constitute Project",
+        "url": "https://www.constituteproject.org/constitution/Comoros_2018",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte de la Constitution adoptée par référendum en 2018, en traduction anglaise, lu le 3 novembre 2026. Préambule : « a sole religion (Sunni Islam) », « make of the return of the island of Mayotte in its natural whole, a national priority », et référence à la charte des Nations unies, à l'Organisation de l'unité africaine et au pacte de la Ligue des États arabes. Article 6 : les îles de « Mwali (Mohéli), Maoré (Mayotte), Ndzuwani (Anjouan) and Ngazidja (Grande Comore) ». Article 9 : « The official languages are the Shikomor national language, French, and Arabic. » Article 10 : « Moroni is the capital ». Article 97 : « Islam is the State religion. » Article 117 : elle remplace la Constitution du 23 décembre 2001."
+      },
+      {
+        "title": "Assemblée générale des Nations unies, résolution 31/4, « Question de l'île comorienne de Mayotte », 21 octobre 1976",
+        "url": "https://digitallibrary.un.org/record/188920",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Résolution adoptée à la 39e séance plénière, lu le 3 novembre 2026 (texte français). Elle rappelle que le peuple comorien, « par le référendum du 22 décembre 1974, a exprimé à une écrasante majorité sa volonté d'accéder à l'indépendance », et « Condamne les référendums du 8 février et du 11 avril 1976 organisés dans l'île comorienne de Mayotte par le Gouvernement français et les considère comme nuls et non avenus »."
+      },
+      {
+        "title": "Union africaine, Rapport de la mission d'observation électorale pour l'élection présidentielle et les élections des gouverneurs du 24 mars 2019 en Union des Comores",
+        "url": "https://au.int/sites/default/files/documents/38701-doc-rapport_de_la_mission_dobservation_electorale_de_lunion_africaine_pour_lelection_presidentielle_du_24_mars_2019_en_republique_des_comores.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Rapport publié par l'Union africaine, lu le 3 novembre 2026, p. 8 : « L'histoire des Comores est jalonnée d'instabilités politiques depuis l'indépendance acquise en 1975 » ; « d'intenses négociations ont abouti le 17 février 2001 à Fomboni sur l'île de Mohéli à un Accord Cadre de Réconciliation Nationale » ; « La présidence tournante » ; « référendum constitutionnel du 30 juillet 2018 » et « la modification du principe de la présidence tournante »."
+      },
+      {
+        "title": "Glottolog 5 – Comorian Bantu (como1260)",
+        "url": "https://glottolog.org/resource/languoid/id/como1260",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde tenu par l'Institut Max Planck, lu le 3 novembre 2026. La famille « Comorian Bantu » est classée dans Narrow Bantu, Northeast Coastal Bantu, Mijikenda-Pokomo-Comorian. Elle réunit Ngazidja Comorian (zdj), Mwali Comorian (wlc), Ndzwani Comorian (wni) et Maore Comorian (swb)."
+      },
+      {
+        "title": "L'aménagement linguistique dans le monde (CEFAN, Université Laval) — Union des Comores",
+        "url": "https://axl.cefan.ulaval.ca/afrique/comores.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Page du site de la Chaire pour le développement de la recherche sur la culture d'expression française en Amérique du Nord (CEFAN), université Laval, mise à jour le 19 décembre 2024, lu le 3 novembre 2026. Passages : « musulmans sunnites dans une proportion de 98 % » ; « Le sunnisme et le chafiisme ont été érigés en doctrine et rite officiels » ; « la loi d'annexion du 25 juillet 1912 » ; « les Comores obtinrent en 1946 une autonomie administrative » ; « Le 6 juillet 1975, le président Ahmed Abdallah proclama unilatéralement » l'indépendance ; « près d'une vingtaine de coups d'État ou tentatives de coups d'État »."
       }
     ],
     "demographics": {
@@ -803,17 +912,13 @@
           "name": "Comorien",
           "peopleId": "PPL_COMORIEN",
           "region": "Archipel des Comores (Grande Comore, Anjouan, Mohéli)",
-          "languageFamily": "FLG_NIGERCONGO",
-          "percentageInCountry": 97
-        },
-        {
-          "name": "Autres groupes ethniques",
-          "peopleId": null,
-          "region": "Divers",
-          "languageFamily": null,
-          "percentageInCountry": 3
+          "languageFamily": "FLG_BANTU"
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "Les Comores sont un pays d'îles de l'océan Indien, entre l'Afrique et Madagascar. Leur nom vient de l'arabe komr, qui désignait plusieurs terres de cette mer.",
+      "followUp": "Pourquoi appelle-t-on parfois les Comores les « îles de la Lune » ?"
     }
   }
 }

@@ -4,8 +4,8 @@
   "nameEn": "Cabo Verde",
   "nameOfficial": "République de Cabo Verde (República de Cabo Verde)",
   "summary": "Cabo Verde doit son nom au cap Vert sénégalais, près duquel les navigateurs portugais abordèrent l'archipel. Les îles étaient inhabitées : la société cap-verdienne est née de la colonisation et de la traite, et elle est créole de part en part. La morna, la coladeira, le funaná et le batuque en portent la mémoire.",
-  "etymology": "Le nom \"Cabo Verde\" (Cap-Vert en français) viendrait du portugais \"Cabo Verde\" (Cap Vert), en référence au Cap Vert continental situé au Sénégal, près duquel les îles ont été découvertes, selon la fiche de toponymie britannique Toponymic Factfile. Les navigateurs portugais ont nommé les îles \"Ilhas de Cabo Verde\" (Îles du Cap Vert) en référence à ce cap. Le nom officiel international a été normalisé en \"Cabo Verde\" en 2013.",
-  "nameOriginActor": "Le nom \"Cabo Verde\" a été donné par les navigateurs portugais et génois qui ont découvert les îles en 1456-1462. Le nom fait référence au Cap Vert continental (Sénégal), près duquel les îles sont situées. Le nom officiel international a été normalisé en \"Cabo Verde\" en 2013 par les autorités cap-verdiennes.",
+  "etymology": "Le nom Cabo Verde veut dire « cap vert » en portugais, selon la fiche de toponymie du Permanent Committee on Geographical Names, au Royaume-Uni. Selon la même fiche, il vient du cap Vert, le point le plus à l'ouest de l'Afrique, sur la côte du Sénégal. Les navigateurs portugais ont d'abord donné ce nom au cap, puis aux îles voisines, qu'ils ont appelées les îles du Cap-Vert. Selon l'explication la plus répandue, que rapportent C. Raymond Beazley et Edgar Prestage, le cap devrait son nom à sa végétation, d'un vert vif à la saison des pluies.",
+  "nameOriginActor": "Le nom vient de navigateurs portugais. Selon la chronique de Gomes Eanes de Zurara, le navigateur Dinis Dias arrive vers 1444 ou 1445 à un grand cap de la côte du Sénégal, auquel on donne le nom de cap Vert. Le nom passe ensuite aux îles, que les Portugais découvrent entre 1456 et 1462, selon le géographe Michel Lesourd. Le 24 octobre 2013, l'État fait de République de Cabo Verde son nom officiel, selon l'Organisation des Nations unies.",
   "nameHistory": {
     "summary": "Le nom Cabo Verde désigne un pays insulaire d'Afrique de l'Ouest, la République de Cabo Verde, un archipel de l'Atlantique. Il veut dire « cap vert » en portugais et vient du nom d'un cap du continent, au Sénégal. En français, le pays s'appelait aussi Cap-Vert ; depuis 2013, il demande qu'on ne traduise plus son nom. Les sources lues ne donnent qu'une explication de ce nom de cap ; nous la présentons plus bas.",
     "names": [
@@ -264,12 +264,15 @@
   },
   "content": {
     "historicalNames": {
-      "formerNames": ["Colonie portugaise du Cap-Vert (1462-1975)", "Cap-Vert"],
-      "antiquity": "Les îles du Cap-Vert étaient inhabitées avant l'arrivée des Européens. Aucune population autochtone connue. Pas de nom pour les îles.",
-      "middleAges": "Les îles étaient inconnues des Européens jusqu'au XVe siècle. Pas de nom pour les îles.",
-      "precolonial": "Les îles étaient inhabitées. Découverte par les navigateurs portugais et génois en 1456-1462. Nom donné : \"Ilhas de Cabo Verde\" (Îles du Cap Vert), en référence au Cap Vert continental (Sénégal).",
-      "colonization": "1462-1975 : Colonie portugaise du Cap-Vert. Les Portugais ont commencé la colonisation en 1462. Les îles sont devenues un centre majeur de la traite atlantique (XVIe-XVIIIe siècles), notamment l'île de Santiago. Formation d'une société créole métissée (européens portugais et africains). Le territoire était administré comme une colonie portugaise jusqu'à l'indépendance en 1975.",
-      "contemporary": "1975 : Indépendance du Cap-Vert (5 juillet 1975), proclamation de la République de Cabo Verde. 2013 : les autorités cap-verdiennes demandent aux Nations unies de n'employer que \"Cabo Verde\", sans traduction, dans toutes les langues. \"Cap-Vert\" était la forme française employée jusque-là."
+      "formerNames": [
+        "Îles du Cap-Vert (colonie portugaise, jusqu'en 1975)",
+        "Cap-Vert (forme française du nom de l'État, de 1975 à 2013)"
+      ],
+      "antiquity": "Les îles de Cabo Verde étaient désertes quand les navigateurs portugais les ont découvertes, entre 1456 et 1462, selon le géographe Michel Lesourd. Aucun peuple n'y vivait pour leur donner un nom plus ancien.",
+      "middleAges": "Le nom vient d'abord d'un cap du continent africain. Vers 1444 ou 1445, le navigateur portugais Dinis Dias arrive à un grand cap de la côte du Sénégal, « auquel on donna le nom de cap Vert », selon la chronique de Gomes Eanes de Zurara. Les îles ne portent pas encore ce nom.",
+      "precolonial": "Les Portugais découvrent les îles entre 1456 et 1462 et en prennent possession, selon Michel Lesourd. Elles reçoivent le nom du cap voisin : en portugais Ilhas de Cabo Verde, c'est-à-dire « les îles du Cap-Vert ».",
+      "colonization": "Pendant toute la colonisation portugaise, jusqu'en 1975, l'archipel garde le nom d'îles du Cap-Vert. Sur l'île de Santiago, la ville de Ribeira Grande abrite alors la douane, selon l'anthropologue Andréa Lobo.",
+      "contemporary": "L'indépendance est proclamée à Praia le 5 juillet 1975, selon l'historien José Augusto Pereira. En français, l'État s'appelle alors le Cap-Vert. Le 24 octobre 2013, il remplace son nom officiel de République du Cap-Vert par celui de République de Cabo Verde, selon l'Organisation des Nations unies."
     },
     "kingdoms": [
       {
@@ -279,54 +282,43 @@
         "timeRange": {
           "startYear": 1462,
           "endYear": 1975,
-          "precision": "year"
+          "precision": "approximate",
+          "datingNote": "Le début suit Michel Lesourd, pour qui les Portugais découvrent les îles et en prennent possession entre 1456 et 1462 ; José Carlos Gomes dos Anjos date de 1460 le début de la colonisation. La fin est l'indépendance, proclamée le 5 juillet 1975."
         },
         "dominantPeoples": [
-          "Créoles cap-verdiens (métissage afro-européen)",
-          "colons portugais",
-          "esclaves africains"
+          "Colons portugais",
+          "Africains réduits en esclavage, venus de la côte que les Portugais appelaient la Guinée",
+          "Créoles cap-verdiens"
         ],
-        "politicalCenters": [
-          "Ribeira Grande (capitale historique",
-          "île de Santiago)",
-          "puis Praia (capitale moderne)"
-        ],
-        "historicalRole": "Colonie portugaise, centre majeur de la traite atlantique (XVIe-XVIIIe siècles). Formation d'une société créole métissée unique. Développement du mouvement indépendantiste au XXe siècle (PAIGC, Parti africain pour l'indépendance de la Guinée et du Cap-Vert)."
+        "politicalCenters": ["Ribeira Grande, sur l'île de Santiago"],
+        "historicalRole": "Colonie portugaise peuplée à partir de 1460 par des Africains et des Portugais, selon José Carlos Gomes dos Anjos. L'île de Santiago sert d'entrepôt pour la traite : on y garde les captifs amenés de la côte africaine, et ce commerce dure de 1486 à 1647, selon Andréa Lobo. Les captifs sont surtout revendus vers le Brésil et les Antilles, selon Michel Lesourd. Le Parti africain pour l'indépendance de la Guinée et du Cap-Vert (PAIGC), né en 1956, mène la lutte qui aboutit à l'indépendance en 1975."
       }
     ],
     "majorPeoples": [
       {
         "name": "Créoles cap-verdiens",
-        "selfAppellation": "Crioulo / Kriolu, Caboverdiano",
+        "selfAppellation": "Kriolu, le nom de leur langue ; Kabuverdianu",
         "exonyms": [
-          "Créole cap-verdien (terme utilisé pour les créoles du Cap-Vert)",
-          "\"Crioulo\" (terme portugais)"
+          "Créoles cap-verdiens (nom français)",
+          "Crioulo (forme portugaise du nom de la langue)"
         ],
         "peopleId": "PPL_CREOLE_CABOVERDIEN",
-        "mainRegion": "Toutes les îles du Cap-Vert",
-        "languages": [
-          "Créole cap-verdien / Kriolu (kea",
-          "ISO 639-3)",
-          "portugais"
-        ],
+        "mainRegion": "Les neuf îles habitées de l'archipel",
+        "languages": ["Créole cap-verdien, ou kriolu (kea)", "Portugais (por)"],
         "languageFamily": "FLG_CREOLE",
-        "appellationRemarks": "Les personnes concernées se nomment Crioulo ou Kriolu. Créole cap-verdien est un nom donné de l'extérieur et accepté. Les sources ne signalent pas de sens insultant pour ces noms. Ce peuple s'est formé à partir du XVe siècle, au fil des contacts entre les colons portugais et des populations africaines, notamment wolof, mandinka, balante, peul et bijagó."
+        "appellationRemarks": "Les Cap-Verdiens appellent leur langue kriolu. Selon Michel Lesourd, c'est la langue maternelle de tous, et Timothy Sieber, citant Deirdre Meintel, en fait le signe le plus clair de leur identité. Ce peuple s'est formé à partir de 1460, quand les îles ont été peuplées par des Portugais et par des Africains de plusieurs peuples de la côte que l'on appelait alors la Guinée, selon José Carlos Gomes dos Anjos. Selon Christophe Pons, c'est une population très métissée, bien plus que dans toute autre colonie portugaise. Sur l'île de Santiago, la culture badiu est rattachée aux personnes réduites en esclavage qui s'étaient enfuies vers l'intérieur de l'île, selon Timothy Sieber."
       },
       {
-        "name": "Africains d'origine récente",
-        "selfAppellation": "Variées selon les groupes d'origine",
-        "exonyms": ["Migrants africains (terme descriptif)"],
-        "peopleId": null,
-        "mainRegion": "Zones urbaines, toutes les îles",
-        "languages": [
-          "Langues d'origine (wolof",
-          "mandinka",
-          "etc.)",
-          "créole cap-verdien",
-          "portugais"
+        "name": "Immigrés et étrangers",
+        "selfAppellation": "Chacun garde le nom de son propre peuple",
+        "exonyms": [
+          "Immigrés et étrangers (termes de l'enquête liée au recensement)"
         ],
-        "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "Chaque groupe a sa propre auto-appellation selon son origine (Guinée-Bissau, Sénégal, Nigeria, Ghana, etc.). Pas de terme péjoratif connu."
+        "peopleId": null,
+        "mainRegion": "Surtout les îles de Santiago, de Sal, de Boa Vista et de São Vicente",
+        "languages": ["Langues de leurs pays d'origine"],
+        "languageFamily": null,
+        "appellationRemarks": "Selon l'enquête menée en 2022 à partir du recensement de 2021 par l'Autorité de l'immigration et l'Institut national de la statistique, 10 869 immigrés et étrangers vivent à Cabo Verde, soit 2 % de la population. Ils viennent surtout des pays voisins d'Afrique de l'Ouest membres de la CEDEAO, mais aussi d'Europe et d'Asie, selon la Migration Partnership Facility. Les sources lues ne disent pas de quels peuples ils font partie."
       }
     ],
     "culture": {
@@ -337,22 +329,24 @@
           "isPrimary": true
         },
         {
-          "name": "Créole cap-verdien / Kriolu"
+          "name": "Créole cap-verdien (kriolu, kabuverdianu)",
+          "isoCode": "kea",
+          "isPrimary": true
         }
       ],
-      "culturalTraditions": "Culture créole cap-verdienne unique, résultat du métissage afro-européen. Musique traditionnelle créole (morna, coladeira, funaná, batuque). Danse traditionnelle. Poésie orale. Artisanat. Festivals traditionnels créoles (Carnaval, etc.). Traditions culinaires créoles (cachupa, etc.). Identité créole forte et distincte.",
-      "dominantReligions": "Christianisme (catholicisme majoritaire, protestantisme en croissance), religions traditionnelles africaines (syncrétisme fréquent, préservées dans certaines communautés)",
-      "lifestyles": "Agriculture (subsistance, maïs, haricots, manioc), pêche (activité économique importante), commerce et activités urbaines (zones urbaines, Praia, Mindelo). Urbanisation importante. Économie basée sur les services (tourisme, commerce), les transferts de la diaspora, l'agriculture et la pêche. Diaspora importante (États-Unis, Portugal, France, Pays-Bas).",
-      "socialOrganization": "Organisation en communautés créoles. Structure basée sur les familles créoles. Organisation en familles étendues. Importance de l'héritage créole. Rôle des conseils d'anciens. Organisation par île (Barlavento / Sotavento).",
-      "regionalRelations": "Relations historiques avec le Sénégal (commerce, migrations, origines africaines), la Guinée-Bissau (commerce, migrations, lutte pour l'indépendance commune avec le PAIGC), le Portugal (colonisation, diaspora). Intégration dans la CEDEAO (Communauté économique des États de l'Afrique de l'Ouest). Relations commerciales et culturelles transfrontalières. Diaspora importante dans les pays occidentaux."
+      "culturalTraditions": "La morna est une musique et une danse du pays. Elle se chante ou se joue seulement avec des instruments, surtout la guitare, le violon et le cavaquinho. Ses chansons, aujourd'hui composées surtout en créole, parlent d'amour, de départ, de séparation, de retour, de nostalgie, de l'océan et de la terre natale. L'UNESCO l'a inscrite en 2019 sur la liste du patrimoine culturel immatériel de l'humanité. Sur l'île de Santiago, le batuque, le funaná et la tabanka étaient proscrits à l'époque coloniale comme des formes « primitives », selon l'anthropologue Timothy Sieber, qui cite ce jugement colonial. Le batuque et le funaná n'ont été reconnus qu'après l'indépendance, selon Maria do Carmo Lorena Santos. La coladeira, un autre genre de chanson, a pris des rythmes zouk chez des musiciens cap-verdiens des Pays-Bas, selon Timothy Sieber. Le grogue, une eau-de-vie de canne à sucre, est devenu au fil des siècles une boisson liée à l'identité des îles, selon Michel Lesourd.",
+      "dominantReligions": "Le christianisme catholique domine. Selon les statistiques officielles de 2006 citées par Pierre-Joseph Laurent et Claudio Furtado, plus de 93 % des habitants sont catholiques, et l'Église catholique a joué un grand rôle dans la formation de la société et de l'identité cap-verdiennes. Ces auteurs comptent aussi, rien qu'à Praia, une dizaine d'Églises pentecôtistes et deux Églises indépendantes, à côté des nazaréens, des baptistes, des adventistes, des Témoins de Jéhovah et des mormons. Sur l'île de Santiago, les Rabelados sont des familles qui ont refusé d'écouter les nouveaux prêtres envoyés par l'Église catholique dans les années 1940, selon Christophe Pons.",
+      "lifestyles": "Les paysans cultivent surtout le maïs et le haricot, sur des terres sèches ou irriguées, et la canne à sucre, dont on tire le grogue, selon Michel Lesourd. Le climat sec provoque des sécheresses et des famines, qui ont souvent poussé les habitants à émigrer. Avant 1850 déjà, des paysans sans terre de Santo Antão partent travailler sur le port de Mindelo, à São Vicente. Selon ce géographe, la diaspora cap-verdienne compte environ 700 000 personnes en 2005, alors que 450 000 personnes vivent dans les îles. L'argent envoyé par les émigrés et l'aide publique au développement représentent ensemble plus de 24 % de la richesse produite dans le pays, selon Pierre-Joseph Laurent et Claudio Furtado. Au recensement de 2021, 29,6 % des habitants vivent à Praia, la capitale, selon l'Institut national de la statistique cité par l'agence Lusa.",
+      "socialOrganization": "L'archipel compte neuf îles habitées, selon Michel Lesourd. Il se divise en deux groupes : au nord, les îles du Barlavento, « au vent », plus sèches, et au sud, celles du Sotavento, « sous le vent », où se trouvent l'île de Santiago et la capitale, Praia, selon le géographe Frédéric Hoffmann. Les fêtes données en l'honneur des saints patrons rythment la vie de chaque village, quartier ou ville, selon Pierre-Joseph Laurent et Claudio Furtado. Comme beaucoup d'hommes partent travailler à l'étranger pendant de longues périodes, beaucoup de familles sont dirigées par des femmes, selon les mêmes auteurs.",
+      "regionalRelations": "Cabo Verde et la Guinée-Bissau ont d'abord eu le même parti, le PAIGC. Ce lien se rompt en 1980, quand un coup d'État militaire mené par Nino Vieira renverse Luís Cabral en Guinée-Bissau. Au début de 1981, les Cap-Verdiens fondent leur propre parti, le PAICV, selon Ângela Benoliel Coutinho, dont Alexsandro de Sousa e Silva présente le livre. Cabo Verde est membre de la Communauté économique des États de l'Afrique de l'Ouest (CEDEAO), et il accueille de plus en plus d'immigrés venus des pays voisins de cette communauté, selon la Migration Partnership Facility. De grandes communautés cap-verdiennes vivent au Portugal, aux États-Unis et aux Pays-Bas, notamment à Lisbonne, à Boston et à Rotterdam, selon Timothy Sieber."
     },
     "historicalFacts": {
-      "ancientPeriods": "Les îles du Cap-Vert étaient inhabitées avant l'arrivée des Européens. Aucune population autochtone connue. Pas de peuplement préhistorique identifié.",
-      "middleAges": "Les îles étaient inconnues des Européens jusqu'au XVe siècle. Pas de contacts avec les civilisations africaines ou européennes.",
-      "precolonial": "1456-1462 : Découverte des îles par les navigateurs portugais et génois. Nom donné : \"Ilhas de Cabo Verde\" (Îles du Cap Vert). 1462 : Début de la colonisation portugaise. Peuplement par les colons portugais et les esclaves africains (wolof, mandinka, balante, peul, bijagó). Formation d'une société créole métissée dès le XVe siècle.",
-      "colonization": "XVIe-XVIIIe siècles : Les îles deviennent un centre majeur de la traite atlantique, notamment l'île de Santiago. Développement de Ribeira Grande comme centre commercial. Formation progressive de l'identité créole cap-verdienne. Période coloniale portugaise longue (1462-1975). XXe siècle : Développement du mouvement indépendantiste, formation du PAIGC (Parti africain pour l'indépendance de la Guinée et du Cap-Vert) en 1956.",
-      "independenceStruggle": "1956-1975 : Lutte pour l'indépendance menée par le PAIGC (Parti africain pour l'indépendance de la Guinée et du Cap-Vert), dirigé par Amílcar Cabral. Lutte commune avec la Guinée-Bissau. 1975 : Indépendance du Cap-Vert (5 juillet 1975), proclamation de la République de Cabo Verde. Séparation du PAIGC en deux partis distincts (PAICV pour le Cap-Vert, PAIGC pour la Guinée-Bissau).",
-      "postIndependence": "1975-1990 : Régime de parti unique (PAICV). 1990 : Transition vers la démocratie multipartite, nouvelle constitution. Période de stabilité politique et de développement économique. Défis : pauvreté, dépendance aux importations, sécheresses récurrentes, émigration importante. Le Cap-Vert est considéré comme un modèle de démocratie et de stabilité en Afrique de l'Ouest. 2013 : Normalisation du nom officiel international en \"Cabo Verde\". Longtemps pays d'émigration, le Cap-Vert reçoit aussi de plus en plus d'immigrés, venus des pays voisins d'Afrique de l'Ouest, d'Europe et d'Asie. Selon l'enquête menée lors du recensement de 2021 par l'Autorité de l'immigration et l'Institut national de la statistique, 10 869 immigrés et étrangers vivent dans le pays, soit 2 % de la population, surtout dans les îles de Santiago, de Sal, de Boa Vista et de São Vicente."
+      "ancientPeriods": "Les îles étaient désertes avant l'arrivée des Portugais au XVe siècle, selon le géographe Michel Lesourd.",
+      "middleAges": "Selon Michel Lesourd, ces îles étaient désertes mais déjà connues quand les Portugais en prennent possession. Vers 1444 ou 1445, des navigateurs portugais longent la côte voisine du Sénégal et nomment le cap Vert, selon la chronique de Gomes Eanes de Zurara.",
+      "precolonial": "Les Portugais découvrent les îles entre 1456 et 1462 et en prennent possession, selon Michel Lesourd. Le peuplement commence peu après, vers 1460, avec des Africains et des Portugais, selon José Carlos Gomes dos Anjos. Les Africains appartenaient à plusieurs peuples de la côte que les Portugais appelaient la Guinée.",
+      "colonization": "L'île de Santiago devient un entrepôt de la traite : on y garde les captifs amenés de la côte africaine, et ce commerce dure de 1486 à 1647, selon Andréa Lobo. Selon Michel Lesourd, les captifs sont surtout revendus vers le Brésil et les Antilles. La canne à sucre est cultivée à Santiago et à Fogo dès 1490, par des personnes réduites en esclavage. Lesourd rappelle aussi que les sécheresses, les famines et les épidémies ont toujours frappé durement la population, parfois forcée d'émigrer.",
+      "independenceStruggle": "Le Parti africain pour l'indépendance de la Guinée et du Cap-Vert (PAIGC) naît d'une réunion de ses fondateurs en 1956, selon Ângela Benoliel Coutinho. Son secrétaire général est Amílcar Cabral. Le PAIGC mène une guérilla contre l'armée portugaise en Guinée, mais la lutte armée prévue dans l'archipel n'a jamais eu lieu, selon l'historien José Augusto Pereira. La diaspora cap-verdienne, alors de nationalité portugaise, a joué un rôle essentiel dans cette lutte, selon Michel Lesourd. L'indépendance est proclamée à Praia le 5 juillet 1975, plus d'un an après le coup d'État du 25 avril 1974 au Portugal, selon José Augusto Pereira.",
+      "postIndependence": "Après l'indépendance, un seul parti gouverne le pays : le PAIGC, puis le PAICV, selon Michel Lesourd. Le PAICV est fondé au début de 1981, après le coup d'État de 1980 en Guinée-Bissau, qui sépare les deux pays. En 1991, des élections libres mettent fin au parti unique : le PAICV quitte le pouvoir et la Deuxième République commence, selon José Augusto Pereira et Michel Lesourd. Le 24 octobre 2013, l'État change son nom officiel en République de Cabo Verde, selon l'Organisation des Nations unies. Longtemps pays d'émigration, Cabo Verde reçoit aussi de plus en plus d'immigrés, venus des pays voisins d'Afrique de l'Ouest, d'Europe et d'Asie. Selon l'enquête menée à partir du recensement de 2021 par l'Autorité de l'immigration et l'Institut national de la statistique, 10 869 immigrés et étrangers vivent dans le pays, soit 2 % de la population, surtout dans les îles de Santiago, de Sal, de Boa Vista et de São Vicente. Ce recensement compte 491 233 habitants, selon l'agence Lusa."
     },
     "sources": [
       {
@@ -415,6 +409,125 @@
         "tier": "referenced",
         "source_kind": "intergovernmental",
         "notes": "Page d'actualité de la Migration Partnership Facility, programme financé par l'Union européenne, 2024 ; lue le 18 octobre 2026. Elle cite l'enquête sur la population étrangère et immigrée (2022) menée par l'Autorité de l'immigration (AAI) et l'Institut national de la statistique (INE) du Cap-Vert à partir du recensement de 2021 : « 10,869 immigrants and foreigners residing in Cabo Verde, representing 2 per cent of the population », dont 44 % à Santiago, 21 % à Sal, 12 % à Boa Vista et 11 % à São Vicente."
+      },
+      {
+        "title": "Michel Lesourd, « En Atlantique, dans le parfum du grogú : la valorisation de la canne à sucre aux îles du Cap-Vert », Caravelle, n° 109, 2017",
+        "url": "https://journals.openedition.org/caravelle/2481",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de géographie, revue Caravelle (Presses universitaires du Midi), p. 91-108, lu le 3 novembre 2026 sur OpenEdition. Îles « découvertes » entre 1456 et 1462, « inhabitées mais connues » ; canne à sucre « signalée dès 1490 » à Santiago et à Fogo ; esclaves « surtout vendus au Cap-Vert même pour le Brésil et les Antilles » ; climat « générateur de sécheresses-famines » ; « couple nourricier maïs-haricot » ; grogue, eau-de-vie de canne devenue boisson identitaire ; Kriolu, « langue maternelle de tous » ; émigration de Santo Antão vers Mindelo avant 1850."
+      },
+      {
+        "title": "Michel Lesourd, « Insularismes et développement en République du Cap-Vert », Lusotopie, n° 1, 1994",
+        "url": "https://www.persee.fr/doc/luso_1257-0273_1994_num_1_1_945",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de géographie, Lusotopie, n° 1, p. 113-133, lu le 3 novembre 2026 sur Persée (introduction seulement). « 4 033 km2, 9 îles habitées, 10 îlots » ; « le parti-État (PAIGC puis PAICV) depuis l'indépendance et jusqu'en 1991 » ; gouvernement « issu d'élections libres ayant abouti à la naissance de la Deuxième République »."
+      },
+      {
+        "title": "Michel Lesourd, « La diaspora capverdienne et son rôle dans l'archipel du Cap-Vert », Hommes & Migrations, n° 1256, 2005",
+        "url": "https://www.persee.fr/doc/homig_1142-852x_2005_num_1256_1_4370",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de géographie, Hommes & Migrations, juillet-août 2005, p. 52-65, lu le 3 novembre 2026 sur Persée (début de l'article). « La diaspora capverdienne - quelque 700 000 personnes pour 450 000 résidant dans les îles » ; la diaspora, « de nationalité portugaise à l'époque », « a joué un rôle essentiel dans la lutte armée »."
+      },
+      {
+        "title": "Pierre-Joseph Laurent et Claudio Furtado, « Le pentecôtisme brésilien au Cap-Vert », Archives de sciences sociales des religions, n° 141, 2008",
+        "url": "https://journals.openedition.org/assr/12912",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de sociologie des religions, p. 113-131, lu le 3 novembre 2026 sur OpenEdition. Pays « catholique à plus de 93 % » d'après les statistiques officielles de 2006 ; l'Église catholique « a joué un rôle majeur dans la constitution de la société et de l'identité capverdienne » ; fêtes des saints patrons de chaque village, quartier ou ville ; à Praia, « une dizaine de dénominations pentecôtistes, ainsi que deux Églises indépendantes » ; envois des émigrés et aide publique, « plus de 24 % du PIB » ; familles souvent dirigées par des femmes « en raison des départs habituels des hommes »."
+      },
+      {
+        "title": "Christophe Pons, « L'utopie sociale des christianismes indigènes », Archives de sciences sociales des religions, n° 170, 2015",
+        "url": "https://journals.openedition.org/assr/26978",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'anthropologie, p. 283-309, lu le 3 novembre 2026 sur OpenEdition. Les Cap-Verdiens forment « une population fortement métissée - bien plus que toute autre colonie portugaise » ; dans les années 1940, l'Église reprend en main l'archipel, et « quelques groupes de familles qui, autour de leur chef Nhô Nhô Landin, refusèrent d'écouter ces nouveaux prêtres » forment le mouvement des Rabelados de l'île de Santiago."
+      },
+      {
+        "title": "Timothy Sieber, « Popular music and cultural identity in the Cape Verdean post-Colonial diaspora », Etnográfica, vol. 9, n° 1, 2005",
+        "url": "https://journals.openedition.org/etnografica/2952",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'anthropologie, p. 123-148, lu le 3 novembre 2026 sur OpenEdition. Santiago « was the site of the musical forms that were most proscribed as primitive during the colonial era - batuke, tabanka, and funana » ; culture badiu de Santiago, où « escaped black slaves in the interior resisted » ; le kriolu, « clear marker of Cape Verdean cultural distinctiveness » selon Deirdre Meintel ; communautés de Lisbonne, de Boston et de Rotterdam ; musiciens des Pays-Bas qui ont fait entrer le zouk dans la coladeira."
+      },
+      {
+        "title": "José Carlos Gomes dos Anjos, « A condição de mediador político-cultural em Cabo Verde », Etnográfica, vol. 8, n° 2, 2004",
+        "url": "https://journals.openedition.org/etnografica/2926",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'anthropologie, p. 273-295, lu le 3 novembre 2026 sur OpenEdition. « Colonizadas por Portugal desde 1460, as ilhas foram povoadas por diversas etnias » de la côte africaine alors appelée Guinée ; « O povoamento das ilhas foi iniciado, pouco depois do seu achamento (1460), com africanos e portugueses »."
+      },
+      {
+        "title": "Maria do Carmo Lorena Santos, compte rendu de « Ensaios etnográficos na ilha de Santiago de Cabo Verde », Cadernos de Estudos Africanos, n° 22, 2011",
+        "url": "https://journals.openedition.org/cea/413",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Compte rendu d'un ouvrage dirigé par Maria Elizabeth Lucas et Sérgio Baptista da Silva (Uni-CV et UFRGS, 2009), p. 190-194, lu le 3 novembre 2026 sur OpenEdition. « o batuque e o funaná - que só tiveram reconhecimento após a independência nacional »."
+      },
+      {
+        "title": "José Augusto Pereira, « A luta de libertação nacional nas ilhas de Cabo Verde na encruzilhada da(s) memória(s) », Lusotopie, vol. XIX, n° 1, 2020",
+        "url": "https://journals.openedition.org/lusotopie/4707",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'histoire, p. 76-100, lu le 3 novembre 2026 sur OpenEdition. « No caso da Guiné, o PAIGC conduziu uma guerra de guerrilha contra o exército português » ; dans l'archipel, la lutte armée « nunca se efetivou » ; « a independência foi proclamada a 5 de julho de 1975 na Cidade da Praia » ; « a entrada no multipartidarismo, consumada em 1991 com a saída do PAICV do poder »."
+      },
+      {
+        "title": "Alexsandro de Sousa e Silva, compte rendu de Ângela Benoliel Coutinho, « Os dirigentes do PAIGC. Da fundação à rutura, 1956-1980 », Lusotopie, vol. XIX, n° 1, 2020",
+        "url": "https://journals.openedition.org/lusotopie/4840",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Compte rendu d'un livre publié par l'Imprensa da Universidade de Coimbra en 2017, p. 126-129, lu le 3 novembre 2026 sur OpenEdition. Il évoque la « famosa reunião dos 'fundadores' em 1956 » et le secrétaire général Amílcar Cabral ; le « golpe militar » de 1980 en Guinée-Bissau, qui « pôs termo ao governo de Luís Cabral », est « seguido da fundação do Partido Africano pela Independência de Cabo Verde (PAICV) no início do ano seguinte »."
+      },
+      {
+        "title": "Andréa Lobo, « Construindo paisagens e pessoas: colonização, espaço e identidades em Cabo Verde », Anuário Antropológico, vol. 40, n° 2, 2015",
+        "url": "https://journals.openedition.org/aa/1421",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'anthropologie, p. 121-150, lu le 3 novembre 2026 sur OpenEdition. Sur l'île de Santiago, « era na ilha que iam sendo depositados os escravos trazidos da costa » ; la traite dure « de 1486 a 1647 » ; mention de l'« Alfândega da Ribeira Grande », la douane de Ribeira Grande."
+      },
+      {
+        "title": "Frédéric Hoffmann, « Une saline en contexte volcanique tropical : Pedra Lume (île de Sal, Cap-Vert) », Dynamiques environnementales, n° 37, 2016",
+        "url": "https://journals.openedition.org/dynenviron/893",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de géographie, p. 130-151, lu le 3 novembre 2026 sur OpenEdition. Le groupe du nord, « îles au vent » (Barlavento), compte « six îles principales dont celle de Sal » ; Praia, « la capitale », est sur l'île de Santiago, dans le groupe du sud, les « îles sous le vent » (Sotavento) ; le nord est plus sec que le sud."
+      },
+      {
+        "title": "UNESCO, Patrimoine culturel immatériel — La morna, pratique musicale de Cabo Verde (2019)",
+        "url": "https://ich.unesco.org/en/RL/morna-musical-practice-of-cabo-verde-01469",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche de la Liste représentative du patrimoine culturel immatériel de l'humanité, lu le 3 novembre 2026. La morna est « a traditional Cape Verdean musical and choreographic practice with instrumental accompaniment », jouée « mainly » à la guitare, au violon et à la guitare à dix cordes, remplacée au XXe siècle par le cavaquinho ; « nowadays it is mainly composed in Cape Verdean Creole » ; thèmes : « love, departure, separation, reunion, longing, the ocean and the motherland » ; inscrite en 2019."
+      },
+      {
+        "title": "Glottolog 5.3 - Kabuverdianu",
+        "url": "https://glottolog.org/resource/languoid/id/kabu1256",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde (Institut Max-Planck), lu le 3 novembre 2026. Fiche Kabuverdianu, code ISO 639-3 kea ; autres noms : créole du Cap-Vert, crioulo cabo-verdiano, caboverdiano."
+      },
+      {
+        "title": "Member States: Cabo Verde",
+        "url": "https://www.un.org/en/about-us/member-states/cabo-verde",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Page de l'Organisation des Nations unies, lu le 3 novembre 2026 : « The Republic of Cabo Verde changed its official name from The Republic of Cape Verde on 24 October 2013 »."
+      },
+      {
+        "title": "CEDEAO, liste des États membres (site officiel ecowas.int)",
+        "url": "https://www.ecowas.int/member-states/",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Page officielle de la Communauté économique des États de l'Afrique de l'Ouest, lu le 3 novembre 2026. Cabo Verde figure dans la liste des États membres ; la page ne donne pas la date d'adhésion."
+      },
+      {
+        "title": "RTP, avec Lusa — « INE. Cabo Verde tinha 491.233 residentes em 2021 »",
+        "url": "https://www.rtp.pt/noticias/economia/ine-cabo-verde-tinha-491233-residentes-em-2021_n1396288",
+        "tier": "unverified",
+        "source_kind": "press",
+        "notes": "Dépêche de l'agence Lusa reprise par la radio-télévision publique portugaise, lu le 3 novembre 2026 ; la page ne montre pas sa date. Elle rapporte les résultats définitifs du cinquième recensement (RGPH-2021) publiés par l'Institut national de la statistique : « Da população recenseada, 491.233 são residentes », dont « 29,6% do total concentrada a viver na Praia, capital do país »."
       }
     ],
     "demographics": {
@@ -424,14 +537,16 @@
       "peoples": [
         {
           "name": "Créoles cap-verdiens",
-          "population": 494000,
-          "referenceYear": 2025,
-          "percentageInCountry": 99,
           "peopleId": "PPL_CREOLE_CABOVERDIEN",
-          "region": "Toutes les îles du Cap-Vert",
-          "languageFamily": "FLG_CREOLE"
+          "region": "Les neuf îles habitées de l'archipel",
+          "languageFamily": "FLG_CREOLE",
+          "mainLanguageCode": "kea"
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "Cabo Verde est un pays d'Afrique de l'Ouest, un archipel de l'océan Atlantique. Son nom veut dire « cap vert » en portugais : il vient d'un cap de la côte du Sénégal.",
+      "followUp": "Pourquoi le pays demande-t-il depuis 2013 qu'on ne traduise plus son nom ?"
     }
   }
 }

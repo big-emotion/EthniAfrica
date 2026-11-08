@@ -334,7 +334,9 @@ describe("transformPeoples", () => {
 
   // The Cabo Verde fiche used to provide a headcount only for its 1% row,
   // making the country page display 6K documented residents instead of the
-  // 2025 national total already recorded in the demographic corpus.
+  // 2025 national total already recorded in the demographic corpus. Its
+  // people rows now carry no headcount at all: the census records no
+  // ethnicity, so the page must still show the national total.
   // @req REQ-001
   it("shows the complete 2025 Cabo Verde population", () => {
     const capeVerde = capeVerdeFiche.content as unknown as CountryDetail;
@@ -345,7 +347,7 @@ describe("transformPeoples", () => {
 
     expect(result.totalPopulation).toBe(500000);
     expect(result.totalPopulationFormatted).toMatch(/^500\sk$/);
-    expect(result.everyPeopleDeclaresPopulation).toBe(true);
+    expect(result.everyPeopleDeclaresPopulation).toBe(false);
     expect(result.populationReferenceYear).toBe(2025);
   });
 

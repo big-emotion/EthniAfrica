@@ -3,7 +3,7 @@
   "nameFr": "Côte d'Ivoire",
   "nameEn": "Côte d'Ivoire",
   "nameOfficial": "République de Côte d'Ivoire",
-  "summary": "La Côte d'Ivoire porte le nom d'une marchandise : des navigateurs et des marchands européens ont désigné ce littoral par ce qu'on y achetait, et l'administration française a fixé l'appellation à la fin du XIXe siècle. Le pays réunit royaumes akan, peuples krou, mandé et voltaïques, soit une soixantaine de groupes. Le baoulé, l'agni et le dioula structurent le quotidien à côté du français.",
+  "summary": "La Côte d'Ivoire porte le nom d'une marchandise : des navigateurs et des marchands européens ont désigné ce littoral par ce qu'on y achetait, et l'administration française a fixé l'appellation à la fin du XIXe siècle. Le pays réunit une soixantaine de peuples, que le recensement range en cinq grands groupes : akan, krou, mandé du Nord, mandé du Sud et gur. Selon des anthropologues, ces grands groupes viennent des classements de l'époque coloniale.",
   "etymology": "Le nom Côte d'Ivoire renvoie au commerce de l'ivoire pratiqué le long du littoral. Des navigateurs portugais passent le cap des Palmes en 1471, mais l'appellation qui a donné le nom actuel est néerlandaise : au début du XVIIe siècle, des marchands hollandais trouvent l'ivoire en abondance entre le cap des Palmes et Fresco et nomment ce littoral Tand Kust, la côte des dents. Alfred Schwartz, qui a étudié cette période, attribue à cette appellation l'origine du nom actuel. Les Français le fixent ensuite. Le décret du 17 décembre 1891 range l'ensemble des possessions françaises de la côte sous le nom de Guinée française et dépendances ; ce n'est pas lui qui crée la colonie de Côte d'Ivoire. C'est le décret du 10 mars 1893 qui la constitue en colonie distincte, aux côtés de la Guinée française et du Bénin. Avant cela, les établissements français de cette côte avaient été organisés en 1889 sous le nom d'Établissements français de la Côte d'Or, nom pris à la côte voisine (l'actuel Ghana). Les traités signés à partir de 1842 par Bouët-Willaumez ouvrent des comptoirs à Grand-Bassam et à Assinie ; ils ne nomment pas le pays. Les établissements de la Côte d'Or auraient reçu le nom de Côte d'Ivoire dès 1891, pour éviter la confusion avec la colonie britannique voisine, selon un inventaire des Archives nationales d'outre-mer ; les textes que nous avons pu lire ne permettent pas de trancher entre 1891 et 1893 pour la première désignation administrative.",
   "nameOriginActor": "Le nom a été donné depuis la mer, par des marchands et des navigateurs européens, en référence à ce qu'on achetait sur ce littoral. L'appellation néerlandaise Tand Kust, la côte des dents, employée au début du XVIIe siècle, est celle dont procède le nom actuel. L'administration française l'a ensuite fixé par décret, à la fin du XIXe siècle. Depuis 1985, la Côte d'Ivoire demande que son nom ne soit plus traduit dans les autres langues.",
   "nameHistory": {
@@ -784,55 +784,48 @@
         "Guinée française et dépendances (décret du 17 décembre 1891, ensemble des possessions françaises de la côte)",
         "Colonie de Côte d'Ivoire (1893-1960)"
       ],
-      "antiquity": "Le territoire actuel de la Côte d'Ivoire était peuplé de diverses sociétés sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs royaumes et territoires (royaumes Akan, chefferies Krou, etc.).",
-      "middleAges": "Développement de royaumes Akan (Baoulé, Agni, Abron) migrés depuis le Ghana, peuples Krou forestiers (Bété, Wé, Dida), populations Mandé du Nord (héritage de l'empire du Mali), peuples voltaiques (Sénoufo, Lobi, Koulango). Pas de nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Mosaïque de royaumes et chefferies autonomes : royaumes Akan (Baoulé, Agni, Abron), peuples Krou (Bété, Wé, Dida), Mandé du Nord (Malinké, Dioula), Mandé du Sud (Dan, Gouro, Wan), peuples voltaiques (Sénoufo, Lobi, Koulango). Les Européens utilisaient le terme \"Côte d'Ivoire\" ou \"Costa do Marfim\" pour désigner la région côtière riche en commerce d'ivoire. En 1842, les traités de Bouët-Willaumez avec des chefs de Grand-Bassam et d'Assinie ouvrent des comptoirs français sur la côte ; ils ne nomment pas un pays. À l'intérieur, il n'existe pas d'entité unique portant ce nom : des royaumes et des chefferies (Kong, Gyaman, Sanwi, pays baoulé) organisent le territoire.",
-      "colonization": "1893-1960 : Colonie de Côte d'Ivoire (partie de l'Afrique-Occidentale française, AOF). Les Français ont créé la colonie de Côte d'Ivoire par le décret du 10 mars 1893, Louis-Gustave Binger en est le premier gouverneur ; un décret du 17 décembre 1891 avait auparavant rangé les possessions de la côte sous le nom de Guinée française et dépendances. Le territoire était administré comme une colonie française jusqu'à l'indépendance en 1960.",
-      "contemporary": "1960 : Indépendance de la Côte d'Ivoire (7 août 1960), proclamation de la République de Côte d'Ivoire. Le nom \"Côte d'Ivoire\" est officiel et n'est pas traduit dans les langues étrangères pour préserver l'identité nationale. Des lieux de la côte portent encore le nom de ceux qui l'ont explorée ou administrée : Port-Bouët, commune d'Abidjan, porte le nom du commandant Bouët-Willaumez."
+      "antiquity": "Nous n'avons pas encore de source sur les noms en usage sur ce territoire pendant l'Antiquité.",
+      "middleAges": "Nous n'avons pas encore de source sur les noms en usage à l'intérieur du pays à cette époque. Sur la côte, les noms donnés par les navigateurs européens à partir de la fin du XVe siècle sont présentés dans l'histoire du nom.",
+      "precolonial": "Avant la colonie, aucun nom ne désigne l'ensemble du territoire. Les traités signés en 1842 et 1843 parlent du « pays et de la rivière du Grand-Bassam » et du « pays d'Assinie » ; ils ouvrent des comptoirs français sur la côte. À l'intérieur, chaque pays a son nom. Le royaume abron du Gyaman est fondé vers 1690, selon l'anthropologue Emmanuel Terray. Kong est un grand centre de commerce et d'islam au XVIIIe siècle. Certains noms désignaient d'abord un petit groupe. Selon l'historienne Claude-Hélène Perrot, le nom ndenye s'appliquait d'abord à un groupe non dominant installé autour de Zaranou ; il ne s'étend à tout le pays anyi qu'avec la conquête coloniale. D'autres noms sont des étiquettes commodes. En 1956, l'ethnologue Bohumil Holas écrit qu'il est « convenu de désigner par le terme Sénoufo » des groupes d'origines diverses. Sur la côte, des écrits européens appellent ce littoral Côte d'Ivoire dès 1670, d'après le commerce de l'ivoire.",
+      "colonization": "1893-1960 : colonie de Côte d'Ivoire, intégrée à l'Afrique-Occidentale française. Le décret du 10 mars 1893 crée la colonie, et Louis-Gustave Binger en est le premier gouverneur. Un décret du 17 décembre 1891 avait auparavant rangé les possessions de la côte sous le nom de Guinée française et dépendances. La colonie fixe aussi les noms des peuples. Selon les anthropologues Jean-Pierre Chauveau et Jean-Pierre Dozon, l'ethnographie coloniale de Maurice Delafosse, au début du XXe siècle, « fonde effectivement la généalogie des ethnies de la colonie » : les études suivantes n'ont changé « ni le nombre ni les appellations » des grandes familles. Les Baoulé, d'abord rangés dans la « famille agni », en ont été séparés plus tard pour former avec les Agni le groupe akan. Les noms des circonscriptions comptent aussi. Selon Claude-Hélène Perrot, le nom d'Indénié s'impose à tout le pays anyi quand Zaranou, où est bâti le premier poste colonial, devient le chef-lieu du cercle de l'Indénié.",
+      "contemporary": "Le 7 août 1960, la Côte d'Ivoire devient un État souverain et garde le nom de la colonie. En octobre 1985, le congrès du Parti démocratique de Côte d'Ivoire décide que ce nom ne doit plus être traduit, selon une note publiée par l'ONU. En 1983, Yamoussoukro, village natal de Félix Houphouët-Boigny, devient la capitale. Son nom signifie en baoulé « le village de Yamoussou », selon l'historien Thibaut Simonet. Des lieux de la côte portent encore le nom de ceux qui l'ont explorée ou administrée : Port-Bouët, commune d'Abidjan, porte le nom de l'officier de marine Bouët-Willaumez, selon le site d'information ivoirien Rezo-Ivoire."
     },
     "kingdoms": [
       {
-        "name": "Royaumes Akan",
-        "period": "Précolonial - présent",
+        "name": "Royaume abron du Gyaman",
+        "period": "Vers 1690 - 1897",
         "entryType": "polity",
-        "dominantPeoples": ["Baoulé", "Agni", "Abron", "Attié"],
-        "politicalCenters": [
-          "Chefferies traditionnelles akan",
-          "royaumes locaux"
-        ],
-        "historicalRole": "Royaumes Akan migrés depuis le Ghana, système politique traditionnel akan (matrilinéaire), traditions culturelles akan. Les Baoulé forment l'un des groupes les plus influents du pays. Résistance à la colonisation française."
+        "timeRange": {
+          "startYear": 1690,
+          "endYear": 1897,
+          "precision": "approximate",
+          "datingNote": "Le début suit Emmanuel Terray, qui date la fondation du royaume « vers 1690 » par le Gyamanhene Tan Date. La fin est l'occupation du pays, à la fin de 1897, par les Français à l'ouest et par les Britanniques à l'est."
+        },
+        "dominantPeoples": ["Abron"],
+        "politicalCenters": ["Bondoukou (ville marchande dioula du royaume)"],
+        "historicalRole": "Le royaume abron du Gyaman s'étend entre la Comoé et la Volta noire, au nord-est de l'actuelle Côte d'Ivoire et au nord-ouest de l'actuel Ghana. Selon Emmanuel Terray, il est fondé vers 1690 par des Abron venus d'Akwamu, minoritaires et arrivés tard, qui dominent des Kulango au nord et des Anyi au sud ; des commerçants dioula vivent à Bondoukou. Le royaume passe en 1740 sous la domination des Asante et ne retrouve son indépendance qu'en 1875. Les troupes de Samori l'envahissent au printemps 1895. À la fin de 1897, les Français en occupent la partie ouest et les Britanniques la partie est."
       },
       {
-        "name": "Peuples Krou",
-        "period": "Précolonial - présent",
+        "name": "Royaume anyi du Ndenye (Indénié)",
+        "period": "Début du XVIIIe siècle - 1896",
         "entryType": "polity",
-        "dominantPeoples": ["Bété", "Wé", "Dida"],
-        "politicalCenters": ["Chefferies traditionnelles krou"],
-        "historicalRole": "Peuples Krou forestiers, traditions artistiques réputées (masques, sculptures), structures lignagères, chefferies locales. Résistance à la colonisation française."
+        "timeRange": {
+          "startYear": 1701,
+          "endYear": 1896,
+          "precision": "approximate",
+          "datingNote": "Le début suit Claude-Hélène Perrot, qui place l'installation des fondateurs dans le Ndenye au début du XVIIIe siècle, après l'effondrement du Denkyira en 1701. La fin est la conquête effective du pays par les Français, en 1896."
+        },
+        "dominantPeoples": ["Anyi (Agni)"],
+        "politicalCenters": ["Zaranou (siège du premier poste colonial)"],
+        "historicalRole": "Selon Claude-Hélène Perrot, le Ndenye est peuplé au début du XVIIIe siècle par des réfugiés d'origines variées, venus de l'actuel Ghana. Ils fuient les guerres entre le Denkyira et les Asante, d'abord sous la protection du roi de l'Aowin. Un État se forme, et avec lui un peuple, les Anyi-Ndenye. Le nom ndenye désignait d'abord un seul groupe, installé autour de Zaranou. Il s'étend à tout le pays avec la conquête française, achevée en 1896, quand Zaranou devient le chef-lieu du cercle de l'Indénié."
       },
       {
-        "name": "Peuples Mandé du Nord",
-        "period": "Précolonial - présent",
+        "name": "Royaume anyi du Sanwi",
+        "period": "Avant la colonisation - XXe siècle",
         "entryType": "polity",
-        "dominantPeoples": ["Malinké", "Dioula", "Bambara"],
-        "politicalCenters": ["Chefferies traditionnelles mandé"],
-        "historicalRole": "Peuples Mandé du Nord liés historiquement à l'empire du Mali, tradition islamique, commerce transsaharien. Rôle majeur dans le commerce et l'islamisation de la région."
-      },
-      {
-        "name": "Peuples Mandé du Sud",
-        "period": "Précolonial - présent",
-        "entryType": "polity",
-        "dominantPeoples": ["Dan (Yacouba)", "Gouro", "Wan"],
-        "politicalCenters": ["Chefferies traditionnelles mandé"],
-        "historicalRole": "Peuples Mandé du Sud, traditions forestières, masques et sculptures. Relations avec les peuples Krou voisins."
-      },
-      {
-        "name": "Peuples Voltaïques / Gur",
-        "period": "Précolonial - présent",
-        "entryType": "polity",
-        "dominantPeoples": ["Sénoufo", "Lobi", "Koulango"],
-        "politicalCenters": ["Chefferies traditionnelles gur"],
-        "historicalRole": "Peuples voltaiques/gur, traditions agricoles, cérémonies d'initiation (Poro chez les Sénoufo). Résistance à la colonisation française."
+        "dominantPeoples": ["Anyi (Agni)"],
+        "politicalCenters": ["Cercle d'Assinie (nom colonial)"],
+        "historicalRole": "Les auteurs coloniaux distinguent les Agni du Sanwi, dans le cercle d'Assinie, de ceux de l'Indénié, selon Claude-Hélène Perrot. Selon Jean-Pierre Chauveau et Jean-Pierre Dozon, le Sanwi est « le plus important royaume agni ». À l'approche de l'indépendance, son roi réclame ses droits de souveraineté territoriale ; Félix Houphouët-Boigny réprime cette tentative de sécession par des centaines d'arrestations. Nous n'avons pas encore de source datant la fondation du royaume."
       },
       {
         "name": "Royaume de Kong",
@@ -861,121 +854,82 @@
           "Tous les peuples ivoiriens sous domination française"
         ],
         "politicalCenters": [
-          "Abidjan (capitale coloniale puis économique)",
-          "Yamoussoukro (capitale politique depuis 1983)"
+          "Grand-Bassam et Assinie (comptoirs français ouverts en 1842-1843)",
+          "Abidjan (capitale à l'époque coloniale)"
         ],
-        "historicalRole": "Colonie française, intégration dans l'AOF. Exploitation économique (cacao, café, bois), développement de l'administration coloniale, résistance des peuples autochtones, développement du mouvement indépendantiste au XXe siècle."
+        "historicalRole": "Colonie française créée en 1893 et intégrée à l'Afrique-Occidentale française. Selon Jean-Pierre Chauveau et Jean-Pierre Dozon, sa mise en place passe par une véritable conquête militaire. Une économie de plantation de cacao et de café s'y développe : les Agni se mettent au cacao juste après la Première Guerre mondiale, puis les Baoulé développent le café. Dans l'Ouest, l'administration impose le travail forcé. Félix Houphouët-Boigny, planteur et chef de canton baoulé, lance le Syndicat agricole africain en 1944 ; il fait voter l'abolition du travail forcé en avril 1946, selon Thibaut Simonet."
       }
     ],
     "majorPeoples": [
       {
         "name": "Akan",
-        "selfAppellation": "Akan, Baoulé, Agni, Abron, Attié",
+        "selfAppellation": "Baoulé, Anyi (Agni), Abron, Attié : chaque peuple porte son propre nom",
         "exonyms": [
-          "Akan (terme utilisé par les Européens)",
-          "Baoulé",
-          "Agni",
-          "Abron",
-          "Attié"
+          "Akan (nom d'ensemble des classifications et du recensement)",
+          "Agni (forme employée par les auteurs coloniaux pour les Anyi)"
         ],
         "peopleId": "PPL_AKAN",
-        "mainRegion": "Centre, Est et Sud de la Côte d'Ivoire",
+        "mainRegion": "Centre, Est et Sud-Est de la Côte d'Ivoire",
         "languages": [
-          "Baoulé",
-          "Agni",
-          "Abron",
-          "Attié (dialectes akan, aka, ISO 639-3)",
-          "français"
+          "Baoulé (bci)",
+          "Anyin (any)",
+          "Abron (abr)",
+          "Attié (ati)"
         ],
         "languageFamily": "FLG_KWA",
-        "appellationRemarks": "\"Akan\" est un terme générique. \"Baoulé\", \"Agni\", \"Abron\", \"Attié\" sont les auto-appellations respectives des sous-groupes. Pas de terme péjoratif connu."
+        "appellationRemarks": "Akan est un nom d'ensemble. Selon Jean-Pierre Chauveau et Jean-Pierre Dozon, l'ethnographie coloniale de Maurice Delafosse rangeait d'abord les Baoulé dans la « famille agni » ; ils en ont été séparés plus tard pour former avec les Agni le groupe akan. L'historienne Claude-Hélène Perrot écrit Anyi là où les textes coloniaux écrivent Agni. Selon le recensement de 1998, les Baoulé sont le peuple le plus nombreux du groupe akan et du pays."
       },
       {
         "name": "Voltaïques / Gur",
-        "selfAppellation": "Sénufo, Lobi, Koulango",
+        "selfAppellation": "Sénoufo, Lobi, Koulango (Kulango) : chaque peuple porte son propre nom",
         "exonyms": [
-          "Sénufo",
-          "Lobi",
-          "Koulango (termes utilisés par les Européens)"
+          "Voltaïques (nom d'ensemble du recensement)",
+          "Gur (nom d'ensemble des linguistes)"
         ],
         "peopleId": "PPL_SENUFO",
-        "mainRegion": "Nord de la Côte d'Ivoire",
+        "mainRegion": "Nord et Nord-Est de la Côte d'Ivoire",
         "languages": [
-          "Sénufo (sen, sef, seq, ISO 639-3)",
-          "Lobi (lob, ISO 639-3)",
-          "Koulango",
-          "français"
+          "Sénoufo cebaara, ou senari (sef)",
+          "Lobi (lob)",
+          "Koulango de Bondoukou (kzc)"
         ],
         "languageFamily": "FLG_GUR",
-        "appellationRemarks": "\"Sénufo\", \"Lobi\", \"Koulango\" sont les auto-appellations respectives. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le recensement de 1998 range ces peuples ensemble sous le nom de Gur ou Voltaïques. Le catalogue Glottolog classe le lobi et le koulango parmi les langues gur, mais place les langues sénoufo dans une branche distincte. En 1956, l'ethnologue Bohumil Holas écrit qu'il est « convenu de désigner par le terme Sénoufo » des groupes d'origines diverses."
       },
       {
         "name": "Mandé du Nord",
-        "selfAppellation": "Maninka / Mandinka, Dioula",
-        "exonyms": [
-          "Malinké (terme français)",
-          "Mandinka (terme anglophone)",
-          "Dioula (terme utilisé pour les commerçants mandé)",
-          "Mandingo (terme historique, parfois péjoratif)"
-        ],
+        "selfAppellation": "Malinké, Dioula",
+        "exonyms": ["Dioula (nom étendu à l'ensemble du groupe Mandé du Nord)"],
         "peopleId": "PPL_MALINKE",
-        "mainRegion": "Nord de la Côte d'Ivoire",
-        "languages": [
-          "Malinké / Mandinka (mlq, ISO 639-3)",
-          "Dioula (diu, ISO 639-3)",
-          "français"
-        ],
+        "mainRegion": "Nord-Ouest de la Côte d'Ivoire",
+        "languages": ["Malinké", "Dioula (dyu)"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "Les personnes concernées se nomment Maninka ou Mandinka. Malinké est un nom français donné de l'extérieur et accepté. Mandingo est un terme historique qui peut être méprisant dans certains contextes ; il est donc à éviter. Dioula, employé pour les commerçants mandé, est aussi accepté."
+        "appellationRemarks": "Selon le géographe Christian Bouquet, les gens du Nord sont souvent appelés Dioula, une appellation élargie à tout le groupe Mandé du Nord. Ce nom est devenu un emblème lorsque l'idée d'ivoirité s'est répandue dans les années 1990. Le recensement de 1998 décrit les Mandé du Nord comme surtout commerçants et plus urbanisés que les autres groupes."
       },
       {
         "name": "Mandé du Sud",
-        "selfAppellation": "Dan, Yacouba, Gouro, Wan",
-        "exonyms": [
-          "Dan",
-          "Yacouba (terme alternatif pour Dan)",
-          "Gouro",
-          "Wan (termes utilisés par les Européens)"
-        ],
+        "selfAppellation": "Dan, Gouro, Wan",
+        "exonyms": ["Yacouba (autre nom des Dan)"],
         "peopleId": "PPL_MANDE_DU_SUD",
         "mainRegion": "Ouest de la Côte d'Ivoire",
-        "languages": [
-          "Dan (dnj, ISO 639-3)",
-          "Gouro (goa, ISO 639-3)",
-          "Wan (wan, ISO 639-3)",
-          "français"
-        ],
+        "languages": ["Dan (dnj)", "Gouro (goa)", "Wan (wan)"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "Les Dan se nomment ainsi eux-mêmes ; Yacouba est une autre forme, donnée de l'extérieur et acceptée. Gouro et Wan sont également des noms que les peuples concernés emploient pour se présenter. Les sources ne signalent pas de sens insultant pour ces noms."
+        "appellationRemarks": "Mandé du Sud est un nom de classement. Selon Jean-Pierre Chauveau et Jean-Pierre Dozon, l'ethnographie coloniale distinguait ces peuples des « vrais Mandé du Nord ». Nous n'avons pas encore lu de source sur l'origine du nom Yacouba."
       },
       {
         "name": "Krou",
-        "selfAppellation": "Bété, Wé, Dida",
-        "exonyms": [
-          "Bété",
-          "Wé",
-          "Guéré (terme utilisé pour Wé)",
-          "Dida (termes utilisés par les Européens)"
-        ],
+        "selfAppellation": "Bété, Wè, Dida",
+        "exonyms": ["Guéré"],
         "peopleId": "PPL_KROU_MACRO",
-        "mainRegion": "Centre-Ouest et Ouest de la Côte d'Ivoire (forêts)",
+        "mainRegion": "Centre et Sud-Ouest de la Côte d'Ivoire, en zone forestière",
         "languages": [
-          "Bété (bev, bet, btg, ISO 639-3)",
-          "Wé / Guéré (wec, ISO 639-3)",
-          "Dida (gud, ISO 639-3)",
-          "français"
+          "Bété de Gagnoa (btg)",
+          "Bété de Daloa (bev)",
+          "Wè occidental (wec)",
+          "Dida de Yocoboué (gud)"
         ],
         "languageFamily": "FLG_KROU",
-        "appellationRemarks": "Les peuples concernés se nomment Bété, Wé et Dida. Guéré est un nom donné de l'extérieur aux Wé, qui est aussi accepté. Les sources ne signalent pas de sens insultant pour ces noms. Les peuples Krou sont notamment connus pour leurs masques et leurs sculptures."
-      },
-      {
-        "name": "Autres peuples",
-        "selfAppellation": "Variées selon les groupes",
-        "exonyms": ["Variées selon les groupes"],
-        "peopleId": null,
-        "mainRegion": "Diverses régions de la Côte d'Ivoire",
-        "languages": ["Langues diverses", "français"],
-        "appellationRemarks": "Chaque groupe a sa propre auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "L'anthropologue Jean-Pierre Dozon parle du « groupe ethnique dit Bete » et doute de son unité : les Bété de Gagnoa et ceux de Daloa ne se comprennent pas. Depuis Delafosse, les Krou passent pour venus du Liberia ; l'auteur A.-L. Tety Gauze en fait au contraire les plus anciens habitants du pays, selon Jean-Pierre Chauveau et Jean-Pierre Dozon. Nous n'avons pas encore lu de source sur l'origine du nom Guéré."
       }
     ],
     "culture": {
@@ -986,40 +940,46 @@
           "isPrimary": true
         },
         {
-          "name": "Baoulé"
+          "name": "Baoulé",
+          "isoCode": "bci"
         },
         {
-          "name": "Agni"
+          "name": "Anyin (agni)",
+          "isoCode": "any"
         },
         {
-          "name": "Abron"
+          "name": "Abron",
+          "isoCode": "abr"
         },
         {
           "name": "Attié",
-          "isoCode": "aka"
+          "isoCode": "ati"
         },
         {
-          "name": "Sénufo",
-          "isoCode": "seq"
+          "name": "Sénoufo cebaara (senari)",
+          "isoCode": "sef"
         },
         {
-          "name": "Malinké / Mandinka",
-          "isoCode": "mlq"
+          "name": "Malinké"
         },
         {
           "name": "Dioula",
-          "isoCode": "diu"
+          "isoCode": "dyu"
         },
         {
-          "name": "Bété",
+          "name": "Bété de Gagnoa",
           "isoCode": "btg"
         },
         {
-          "name": "Wé / Guéré",
+          "name": "Bété de Daloa",
+          "isoCode": "bev"
+        },
+        {
+          "name": "Wè occidental (guéré)",
           "isoCode": "wec"
         },
         {
-          "name": "Dida",
+          "name": "Dida de Yocoboué",
           "isoCode": "gud"
         },
         {
@@ -1037,21 +997,25 @@
         {
           "name": "Lobi",
           "isoCode": "lob"
+        },
+        {
+          "name": "Koulango de Bondoukou",
+          "isoCode": "kzc"
         }
       ],
-      "culturalTraditions": "Diversité culturelle importante reflétant la mosaïque ethnique de la Côte d'Ivoire. Traditions akan (Baoulé, Agni, Abron, système matrilinéaire, masques). Traditions krou (Bété, Wé, Dida, masques forestiers réputés, sculptures). Traditions mandé (Malinké, Dioula, Dan, Gouro, traditions islamiques et forestières). Traditions gur (Sénufo, Lobi, cérémonies d'initiation Poro, masques). Musique et danse traditionnelles variées. Cérémonies de passage, rites d'initiation, fêtes traditionnelles. Art ivoirien réputé (masques, sculptures).",
-      "dominantReligions": "Christianisme (catholicisme majoritaire, protestantisme en croissance), islam (surtout dans le nord), religions traditionnelles africaines (syncrétisme fréquent, culte des ancêtres, masques)",
-      "lifestyles": "Agriculture (cacao, café, cultures vivrières, palmiers à huile), élevage (bovins), commerce et activités urbaines (zones urbaines, Abidjan, Yamoussoukro). Urbanisation croissante. Économie basée sur l'agriculture (cacao, café, palmiers à huile, coton), l'exploitation forestière, et les services. La Côte d'Ivoire est le premier producteur mondial de cacao.",
-      "socialOrganization": "Organisation en royaumes historiques (Akan, système matrilinéaire), chefferies traditionnelles (Krou, Mandé, Gur), structures claniques patrilinéaires et matrilinéaires selon les groupes. Importance des lignages et des familles étendues. Rôle des conseils d'anciens. Traditions d'initiation (Poro chez les Sénufo).",
-      "regionalRelations": "Relations historiques avec le Ghana (Akan, commerce), le Mali (Mandé, commerce transsaharien), le Burkina Faso (Sénufo, Lobi, commerce), le Liberia (Krou, frontière). Intégration dans la CEDEAO (Communauté économique des États de l'Afrique de l'Ouest) et l'UEMOA (Union économique et monétaire ouest-africaine). Relations commerciales et culturelles transfrontalières. Immigration importante de travailleurs agricoles (Burkina Faso, Mali)."
+      "culturalTraditions": "Les traditions varient d'un peuple à l'autre. Chez les Sénoufo, l'initiation du poro, aussi appelé lo, transmet le savoir religieux le plus profond ; selon Bohumil Holas, elle est aussi pour les dirigeants « un instrument politique de toute première importance ». Chez les Baoulé, les traditions d'origine racontent la migration de la reine Abla Pokou, personnage « à la fois historique et légendaire », selon Jean-Pierre Chauveau.",
+      "dominantReligions": "Selon les résultats du recensement de 2021 annoncés par le gouvernement, 42,5 % des habitants sont musulmans et 39,8 % chrétiens ; 12,6 % ne pratiquent aucune religion et 2,2 % sont animistes. Le recensement de 1998 explique cette répartition par l'histoire : l'islam est entré par le Nord et le christianisme par la côte. Cette année-là, 95,6 % des Mandé du Nord étaient musulmans, une majorité des Akan et des Krou étaient chrétiens, et les Mandé du Sud pratiquaient plus que les autres les religions ancestrales.",
+      "lifestyles": "Selon le recensement de 1998, la plupart des Ivoiriens vivent à la campagne et travaillent la terre. Les Mandé du Nord, surtout commerçants, vivent plus souvent en ville. En 2021, 52,5 % des habitants vivent en ville, selon les résultats annoncés par le gouvernement. Depuis l'époque coloniale, l'économie repose largement sur les plantations de cacao et de café, selon Jean-Pierre Chauveau et Jean-Pierre Dozon. Le recensement de 1998 note que les Baoulé se sont installés jusque dans le Bas-Sassandra pour y trouver des terres propres à ces cultures.",
+      "socialOrganization": "Les sociétés ivoiriennes ne s'organisent pas toutes de la même façon. Chez les Anyi du Ndenye, la filiation suit la ligne maternelle, selon Claude-Hélène Perrot. Chez les Abron et les Kulango du Gyaman, la succession est matrilinéaire et la résidence patrilocale, selon Emmanuel Terray. Les Bété de la région de Gagnoa forment au contraire des sociétés patrilinéaires, sans pouvoir central ni chefferie : le village est leur unité politique, selon Jean-Pierre Dozon. Chez les Sénoufo, l'initiation du poro joue un rôle social et politique, selon Bohumil Holas.",
+      "regionalRelations": "Les Anyi du Ndenye et les Baoulé font remonter leur origine à l'actuel Ghana, d'où leurs ancêtres sont partis à la fin du XVIIe et au XVIIIe siècle, selon Claude-Hélène Perrot et Jean-Pierre Chauveau. Le royaume abron du Gyaman s'étendait des deux côtés de la frontière actuelle avec le Ghana. La Côte d'Ivoire accueille de nombreux étrangers. En 1998, ils forment 26 % des habitants, selon le géographe Christian Bouquet, qui s'appuie sur le recensement ; plus de la moitié viennent du Burkina Faso, et un étranger sur deux est né en Côte d'Ivoire. En 2021, les non-Ivoiriens représentent 22 % de la population, selon les résultats annoncés par le gouvernement. Des tensions anciennes entourent cette présence : dès 1933 se crée une Union fraternelle des originaires de Côte d'Ivoire, et l'idée d'ivoirité monte à partir des années 1990, selon Christian Bouquet."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement initial par diverses sociétés sans nom unifié. Développement de chefferies et royaumes locaux. Arrivée et expansion des peuples Akan depuis le Ghana.",
-      "middleAges": "Migrations des royaumes Akan depuis le Ghana (Baoulé, Agni, Abron). Développement des peuples Krou forestiers. Arrivée des peuples Mandé du Nord (héritage de l'empire du Mali). Développement de réseaux commerciaux régionaux et transsahariens. Commerce de l'ivoire le long de la côte.",
-      "precolonial": "Consolidation des royaumes Akan, peuples Krou forestiers, peuples Mandé (Nord et Sud), peuples voltaiques (Sénoufo, Lobi, Koulango). Commerce côtier avec les Européens (ivoire, esclaves). Résistance aux pressions extérieures. Développement des traditions artistiques (masques, sculptures).",
-      "colonization": "1893 : Création de la colonie de Côte d'Ivoire par les Français, intégration dans l'AOF. Période coloniale française (1893-1960), exploitation économique (cacao, café, bois), développement de l'administration coloniale, résistance des peuples autochtones. XXe siècle : Développement du mouvement indépendantiste, formation de partis politiques (PDCI-RDA, Parti démocratique de Côte d'Ivoire).",
-      "independenceStruggle": "1958 : Référendum sur l'autonomie, la Côte d'Ivoire vote \"oui\" à la Communauté française. 1960 : Indépendance de la Côte d'Ivoire (7 août 1960), proclamation de la République de Côte d'Ivoire. Présidence de Félix Houphouët-Boigny (1960-1993).",
-      "postIndependence": "1960-1993 : Présidence de Félix Houphouët-Boigny, période de stabilité politique et de développement économique (\"miracle ivoirien\"). 1993-2011 : Période d'instabilité politique, coups d'État, crises électorales, guerre civile (2002-2011). 2011-présent : Période de stabilisation et de reconstruction. Défis : réconciliation nationale, développement économique, gestion des migrations. La Côte d'Ivoire est le premier producteur mondial de cacao."
+      "ancientPeriods": "Nous n'avons pas encore de source sur le peuplement ancien du territoire. Selon Jean-Pierre Chauveau et Jean-Pierre Dozon, l'origine des peuples krou fait débat : depuis Delafosse, on les dit venus du Liberia, alors que l'auteur A.-L. Tety Gauze en fait les héritiers de la plus ancienne vague de peuplement du pays.",
+      "middleAges": "Nous n'avons pas encore de source sur l'histoire de ce territoire avant le XVIIe siècle.",
+      "precolonial": "À la fin du XVIIe siècle, les guerres entre le Denkyira et les Asante, dans l'actuel Ghana, poussent des réfugiés vers l'est de l'actuelle Côte d'Ivoire. Au début du XVIIIe siècle, ils fondent le Ndenye, selon Claude-Hélène Perrot. Le royaume abron du Gyaman naît vers 1690 et passe sous la domination des Asante en 1740, selon Emmanuel Terray. Entre 1730 et 1760, d'après les traditions orales, les Asabu de la reine Abla Pokou fondent le peuple baoulé ; au XIXe siècle, les Baoulé s'étendent vers l'ouest, aux dépens des Gouro, selon Jean-Pierre Chauveau. Au nord, Kong devient au XVIIIe siècle un grand centre de commerce et d'islam ; Samori Touré la détruit en mai 1897. Dans l'Ouest forestier, les Bété vivent en villages sans pouvoir central, selon Jean-Pierre Dozon.",
+      "colonization": "1893 : la colonie de Côte d'Ivoire est créée et intégrée à l'Afrique-Occidentale française. La conquête est militaire : le Ndenye est conquis en 1896, le Gyaman occupé en 1897. Les plantations de cacao, puis de café, se développent d'abord en pays agni, puis en pays baoulé ; dans l'Ouest, les habitants subissent le travail forcé, selon Jean-Pierre Chauveau et Jean-Pierre Dozon. En juillet 1944, le planteur et chef de canton baoulé Félix Houphouët lance le Syndicat agricole africain. Élu député en octobre 1945, il fait voter l'abolition du travail forcé en avril 1946, selon Thibaut Simonet. La même année, il fonde le Parti démocratique de Côte d'Ivoire, qui devient la section ivoirienne du Rassemblement démocratique africain, selon Jean-Pierre Chauveau et Jean-Pierre Dozon. Il prend ensuite le nom d'Houphouët-Boigny ; selon Jean-Pierre Chauveau et Jean-Pierre Dozon, la rumeur l'a compris comme « vainqueur des Agni » en baoulé.",
+      "independenceStruggle": "La loi-cadre du 23 juin 1956 ouvre la voie à l'autonomie. Le 4 avril 1957, la Côte d'Ivoire obtient l'autonomie financière et la personnalité civile, et la Communauté entre la France et ses colonies est instaurée le 4 octobre 1958. Le 7 août 1960, la Côte d'Ivoire devient un État souverain. Félix Houphouët-Boigny est élu président le 7 novembre suivant, selon Thibaut Simonet. À l'approche de l'indépendance, il réprime la tentative de sécession du royaume agni du Sanwi, selon Jean-Pierre Chauveau et Jean-Pierre Dozon.",
+      "postIndependence": "Félix Houphouët-Boigny dirige le pays de 1960 à sa mort, le 7 décembre 1993, selon un compte rendu des Nations unies. Pendant ces années, on parle de « miracle ivoirien » pour la croissance tirée par le cacao et le café, une image que Jean-Pierre Chauveau et Jean-Pierre Dozon discutent. Le coup d'État du 24 décembre 1999, puis le conflit armé ouvert le 19 septembre 2002, rompent avec la stabilité politique, selon le sociologue Francis Akindès. Après le second tour de l'élection présidentielle, le 28 novembre 2010, une crise violente éclate. Le Conseil de sécurité des Nations unies reconnaît, avec l'Union africaine et la CEDEAO, l'élection d'Alassane Ouattara."
     },
     "sources": [
       {
@@ -1147,6 +1111,118 @@
         "tier": "referenced",
         "source_kind": "academic",
         "notes": "Livre publié à Paris par Karthala en 2003, lu dans le texte intégral mis en ligne par l'IRD le 12 octobre 2026. Page 243. Pour l'arrivée au pouvoir de Sékou Ouatara (Wattara), l'historien N. G. Kodjo « fixe cet avènement en 1710 », avec des arguments « beaucoup plus sûrs - documents écrits et sources orales ». Page 246. Kodjo date le règne de 1710 à 1745 ; il a eu connaissance de documents écrits, « tels que la chronique de Gonja qui fixe la date de la mort de Sékou »."
+      },
+      {
+        "title": "Institut national de la statistique de Côte d'Ivoire, RGPH-98, volume IV, tome 1 : État et structures de la population (Essoh Badou)",
+        "url": "https://ireda.ceped.org/inventaire/ressources/civ-1998-rec-o1_t1_%20etat_structure_population.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport d'analyse du recensement général de la population et de l'habitation de 1998, publié par l'Institut national de la statistique et mis en ligne par l'inventaire IREDA du Centre Population et Développement ; lu le 3 novembre 2026. Tableau synoptique (p. 4) : population totale de 15 366 672 personnes, dont 11 366 625 de nationalité ivoirienne et 4 000 047 de nationalité non ivoirienne. Page 64 : « La population de nationalité ivoirienne est dominée par le groupe Akan qui compte 4 780 797 personnes, soit 42,1 % des Ivoiriens », suivi des Gur (Voltaïques) avec 2 002 625 personnes (17,6 %), des Mandé du Nord avec 1 873 200 (16,5 %), des Krou avec 1 446 790 (12,7 %) et des Mandé du Sud avec 1 142 336 (10,0 %). Page 66 : les groupes vivent « Akan : Centre, Est et Sud-Est ; Krou : Centre et Sud-Ouest ; Mandé du Nord : Nord-Ouest ; Mandé du Sud : Ouest ; Gur (Voltaïques) : Nord et Nord-Est », et les Baoulé sont « l'ethnie majoritaire au sein du groupe Akan mais aussi au plan national ». Page 65 : les Mandé du Nord et les naturalisés « sont des commerçants et par conséquent plus urbanisés », les autres groupes vivant en majorité en campagne comme agriculteurs. Page 68 : « la pénétration de la religion musulmane s'est faite à partir du Nord du pays et celle du christianisme à partir de la Basse Côte » ; tableau 3.14 : 95,6 % des Mandé du Nord sont musulmans ; 51,5 % des Akan et 52,2 % des Krou sont chrétiens ; 30,1 % des Mandé du Sud pratiquent les religions ancestrales. Page 54 : dans la population résidante, 38,6 % de musulmans et 16,7 % de personnes sans religion."
+      },
+      {
+        "title": "CICG, Résultats globaux définitifs du RGPH 2021 : 29 389 150 habitants, Abidjan.net, 13 juillet 2022",
+        "url": "https://news.abidjan.net/articles/710138/resultats-globaux-definitifs-du-rgph-2021-la-population-vivant-habituellement-sur-le-territoire-ivoirien-se-chiffre-a-29-389-150-habitants",
+        "tier": "unverified",
+        "source_kind": "press",
+        "notes": "Communiqué du Centre d'information et de communication gouvernementale repris par le site d'information Abidjan.net ; lu le 3 novembre 2026. Il rapporte les résultats globaux définitifs du recensement général de la population et de l'habitat de 2021, présentés à Abidjan le 7 juillet 2022 par la ministre du Plan et du Développement, Nialé Kaba : « la population vivant habituellement sur le territoire ivoirien se chiffre à 29 389 150 habitants », dont 22 840 169 de nationalité ivoirienne (78 %) et 6 435 835 de nationalité non ivoirienne (22 %) ; « l'Islam qui concentre 42,5% et le Christianisme 39,8% » ; « Les personnes qui ne pratiquent aucune religion représentent 12,6% et les animistes, 2,2% » ; 52,5 % de la population vit en ville. Le rapport de l'Institut national de la statistique n'a pas pu être ouvert : son site était inaccessible le 3 novembre 2026."
+      },
+      {
+        "title": "Jean-Pierre Chauveau et Jean-Pierre Dozon, « Ethnies et État en Côte-d'Ivoire », Revue française de science politique, 1988",
+        "url": "https://www.persee.fr/doc/rfsp_0035-2950_1988_num_38_5_411165",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de deux anthropologues de l'ORSTOM, Revue française de science politique, vol. 38, n° 5, p. 732-747, lu dans le texte intégral mis en ligne par Persée ; lu le 3 novembre 2026. Page 736 : l'ethnographie coloniale sépare plus tard les Baoulé de la « famille agni » de Delafosse « pour former avec eux le groupe akan », et « Le travail de Delafosse fonde effectivement la généalogie des ethnies de la colonie », les recherches suivantes ne changeant « ni le nombre ni les appellations ou encore les limites des grandes familles ». Pages 736-738 : les Agni se mettent à la culture du cacao juste après la Première Guerre mondiale ; le pays agni reste le premier pôle de plantation jusqu'à la fin des années 1930 ; les Baoulé développent ensuite le café. Pages 741-742 : le gouverneur Latrille autorise la création du Syndicat agricole africain ; Houphouët devient Houphouët-Boigny, nom que « la rumeur publique » interprète comme « Bo-agni pouvant se traduire en baoulé vainqueur des Agni ». Page 744 : à l'approche de l'indépendance, le roi du Sanwi, « le plus important royaume agni », réclame ses droits de souveraineté territoriale et Houphouët réprime cette tentative de sécession. Page 739 : depuis Delafosse, les Bété et l'ensemble des Krou sont considérés comme originaires du Liberia ; les hypothèses de A.-L. Tety Gauze en font au contraire les héritiers de la plus ancienne vague de peuplement du territoire."
+      },
+      {
+        "title": "Thibaut Simonet, « Les composantes du pouvoir de Félix Houphouët-Boigny en Côte d'Ivoire (1958-1965) », Outre-Mers, 2010",
+        "url": "https://www.persee.fr/doc/outre_1631-0438_2010_num_97_368_4512",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'histoire publié dans Outre-Mers, revue d'histoire, t. 98, n° 368-369, lu dans le texte intégral mis en ligne par Persée ; lu le 3 novembre 2026. Page 403 : la loi-cadre du 23 juin 1956 ; « Le 4 avril 1957, la Côte d'Ivoire accède à l'autonomie financière et à la personnalité civile » ; la Communauté est instaurée le 4 octobre 1958 ; « le 7 août 1960, la Côte d'Ivoire accède au statut d'État souverain » ; Houphouët est élu président le 7 novembre suivant. Pages 403-404 : le pays est décrit par son « morcellement en une soixantaine d'ethnies » ; le Syndicat agricole africain « voit le jour en juillet 1944 », Houphouët est élu député en octobre 1945, le PDCI puis le RDA naissent en 1946, et il fait voter « l'abolition du travail forcé en avril 1946 ». Page 405, note 7 : Yamoussoukro signifie en baoulé « le village de Yamoussou » ; note 8 : « en 1983, Yamoussoukro devient même la capitale de la Côte d'Ivoire »."
+      },
+      {
+        "title": "Christian Bouquet, « Le poids des étrangers en Côte d'Ivoire », Annales de géographie, 2003",
+        "url": "https://www.persee.fr/doc/geo_0003-4010_2003_num_112_630_895",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'un géographe de l'université Michel de Montaigne (Bordeaux), Annales de géographie, n° 630, p. 115-145, lu dans le texte intégral mis en ligne par Persée ; lu le 3 novembre 2026. Pages 115-116 : d'après le recensement de 1998, sur 15 366 672 habitants, 4 000 047 sont non-Ivoiriens, soit 26 % ; un étranger sur deux est né en Côte d'Ivoire ; les Burkinabè forment 56 % des étrangers. Page 120 : les populations du Nord sont « désignés sous le nom de Dioula appellation élargie aux populations du groupe Mandé du nord ». Page 135 : la flambée d'ethno-nationalisme de 2000 est liée à « la montée en puissance depuis le début des années quatre-vingt-dix du concept ivoirité ». Pages 135-136 : l'Union fraternelle des originaires de Côte d'Ivoire est créée en 1933 et l'Association de défense des intérêts des autochtones de la Côte d'Ivoire en 1937."
+      },
+      {
+        "title": "Claude-Hélène Perrot, « Formation d'États et formation d'une ethnie : le cas des Anyi-Ndenye », Cahiers d'études africaines, 1982",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1982_num_22_87_3388",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'une historienne, Cahiers d'études africaines, vol. 22, n° 87-88, p. 455-463, lu dans le texte intégral mis en ligne par Persée ; lu le 3 novembre 2026. Page 455 : les populations qui « au début du XVIIIe siècle s'installèrent dans la région du sud-est ivoirien aujourd'hui appelée le Ndenye étaient d'origines très variées » ; elles venaient de l'actuel Ghana, et leur regroupement « fut provoqué par les guerres ashanti-denkyira » de la fin du XVIIe siècle ; elles se sont d'abord placées sous la protection du roi de l'Aowin, Ano Asema. Pages 457-458 : le nom ndenye ne s'appliquait d'abord « qu'à un groupe non dominant établi autour de Zaranou » ; entre 1887 et la conquête de 1896, il s'étend à tout le territoire, quand Zaranou, « où fut édifié le premier poste colonial », devient le chef-lieu du « Cercle de l'Indénié ». Pages 460-461 : chez les Anyi-Ndenye, la filiation suit la ligne maternelle, et le mot abuswa désigne le lignage."
+      },
+      {
+        "title": "Emmanuel Terray, « L'économie politique du royaume abron du Gyaman », Cahiers d'études africaines, 1982",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1982_num_22_87_3378",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'un anthropologue, Cahiers d'études africaines, vol. 22, n° 87-88, p. 251-275, lu dans le texte intégral mis en ligne par Persée ; lu le 3 novembre 2026. Pages 251-252 : le royaume abron du Gyaman s'étend « entre le Komoé et la Volta noire » ; « Fondé vers 1690 par le Gyamanhene Tan Date, le royaume tombe en 1740 sous la domination des Asante » et ne retrouve son indépendance qu'en 1875 ; envahi par les sofas de Samori au printemps 1895, il est occupé à la fin de 1897 par les Français dans sa partie occidentale et par les Britanniques dans sa partie orientale. Pages 252-253 : les Abron, venus d'Akwamu, sont « minoritaires et tard venus » ; les Kulango dominent au nord et les Anyi au sud ; des Dyula commerçants, artisans et marabouts vivent à Bondoukou. Page 253 : chez les Abron comme chez les Kulango, « la succession est matrilinéaire » et la résidence est patrilocale."
+      },
+      {
+        "title": "Jean-Pierre Dozon, « Économie marchande et structures sociales : le cas des Bete de Côte d'Ivoire », Cahiers d'études africaines, 1977",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1977_num_17_68_2426",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'un anthropologue de l'ORSTOM, Cahiers d'études africaines, vol. 17, n° 68, lu dans le texte intégral mis en ligne par Persée ; lu le 3 novembre 2026. Page 464 : « Le groupe ethnique dit Bete occupe un territoire en forme de triangle compris entre les villes de Daloa, Soubré et Gagnoa » ; on admet généralement qu'il appartient « au grand ensemble culturel kru originaire de l'Ouest ivoirien et du Libéria », mais l'auteur émet de « sérieuses réserves » sur son homogénéité : les Bete de Gagnoa et ceux de Daloa ne se comprennent pas. Page 465 : les Bete de Gagnoa forment des « sociétés lignagères et segmentaires acéphales, sans pouvoir centralisé », « patrilinéaires et patrilocales », dont le village est l'unité économique, politique et religieuse."
+      },
+      {
+        "title": "Bohumil Holas, « Fondements spirituels de la vie sociale sénoufo (région de Korhogo, Côte d'Ivoire) », Journal de la Société des africanistes, 1956",
+        "url": "https://www.persee.fr/doc/jafr_0037-9166_1956_num_26_1_1940",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'un ethnologue, Journal de la Société des africanistes, t. 26, lu dans le texte intégral mis en ligne par Persée ; lu le 3 novembre 2026. Page 9 : l'auteur étudie « un important groupement de peuplades, d'origine diverse et parfois obscure, qu'il est convenu de désigner par le terme Sénoufo ». Pages 10-11 : le « lo ou poro » est une institution initiatique ; le savoir religieux profond n'est révélé qu'à l'initié du poro, qui est pour les dirigeants « un instrument politique de toute première importance »."
+      },
+      {
+        "title": "Jean-Pierre Chauveau, « Baoulé », Encyclopædia Universalis",
+        "url": "https://www.universalis.fr/encyclopedie/baoule/",
+        "tier": "referenced",
+        "source_kind": "encyclopedia",
+        "notes": "Notice encyclopédique signée par Jean-Pierre Chauveau, directeur de recherche à l'IRD ; seul le début de l'article est en accès libre, lu le 3 novembre 2026. Les traditions d'origine baoulé situent la fondation de l'ethnie baoulé à une époque « assez mal précisée (entre 1730 et 1760) », par les migrants « Asabu de la reine Abla Pokou, personnage à la fois historique et légendaire », partis du pays ashanti à la suite de querelles dynastiques ; les Alangira étaient « la principale entité politique que les Asabu trouvèrent en place » ; « surtout au cours du XIXe siècle », le peuplement baoulé s'étend vers l'ouest aux dépens des Gouro."
+      },
+      {
+        "title": "Francis Akindès, The Roots of the Military-Political Crises in Côte d'Ivoire, Nordic Africa Institute, Research Report 128, 2004",
+        "url": "https://store.ellibs.com/book/91-7106-531-8",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Rapport de recherche d'un sociologue publié par l'Institut nordique d'études africaines (Uppsala), 46 pages. Seul son résumé d'éditeur a pu être lu, le 3 novembre 2026 : « With the coup d'etat of 24 December 1999 and the politico-military conflict that started on 19 September 2002, Côte d'Ivoire broke with its tradition of political stability ». L'étude porte aussi sur la question de l'ivoirité."
+      },
+      {
+        "title": "Conseil de sécurité des Nations unies, résolution 1975 (2011) sur la Côte d'Ivoire, 30 mars 2011 (S/RES/1975 (2011))",
+        "url": "https://documents.un.org/api/symbol/access?s=S/RES/1975(2011)&l=fr&t=pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Résolution adoptée par le Conseil de sécurité à sa 6508e séance, lue dans sa version française, lu le 3 novembre 2026. Page 1 : le Conseil souhaite que « la crise postélectorale en Côte d'Ivoire soit réglée de manière pacifique » ; cette crise « s'aggrave rapidement depuis le deuxième tour de l'élection présidentielle, le 28 novembre 2010 » ; l'Union africaine et la CEDEAO reconnaissent « l'élection de M. Alassane Dramane Ouattara à la présidence de la République de Côte d'Ivoire »."
+      },
+      {
+        "title": "Nations unies, Troisième Commission, compte rendu A/C.3/48/SR.55 : hommage à Félix Houphouët-Boigny, 8 décembre 1993",
+        "url": "https://digitallibrary.un.org/record/182699/files/A_C.3_48_SR.55-EN.pdf?version=1",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Compte rendu analytique de la 55e séance de la Troisième Commission de l'Assemblée générale, lu dans sa version anglaise, lu le 3 novembre 2026. Paragraphe 3 : la représentante de la Côte d'Ivoire indique que « Mr. Houphouët-Boigny had died at the age of 88, in his native village, on 7 December 1993 », et qu'il dirigeait le pays « since 1960 »."
+      },
+      {
+        "title": "Glottolog 5.3 — classification des langues de Côte d'Ivoire : Baoulé (baou1238), Anyin, Abron, Attié, Senari, Lobi, Kulango de Bondoukou, Dyula, Dan, Guro, Wan, Bété, Wè, Dida",
+        "url": "https://glottolog.org/resource/languoid/id/baou1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max Planck, version 5.3, fiches lues le 3 novembre 2026. Le baoulé (bci), l'anyin (any), l'abron (abr) et l'attié (ati) sont classés parmi les langues kwa ; le lobi (lob) et le kulango de Bondoukou (kzc) parmi les langues gur ; le senari (sef) dans une branche sénoufo distincte des langues gur ; le dyula (dyu) parmi les langues mandé de l'Ouest ; le dan (dnj), le guro (goa) et le wan (wan) parmi les langues mandé de l'Est ; le bété de Daloa (bev), le wè occidental (wec) et le dida de Yocoboué (gud) parmi les langues kru."
+      },
+      {
+        "title": "SIL International, ISO 639-3 — codes des langues de Côte d'Ivoire (bci, any, abr, ati, sef, lob, kzc, dyu, dnj, goa, wan, btg, bev, wec, gud)",
+        "url": "https://iso639-3.sil.org/code/bci",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiches de l'autorité d'enregistrement de la norme ISO 639-3, lues le 3 novembre 2026 : bci Baoulé, any Anyin, abr Abron, ati Attié, sef Cebaara Senoufo, lob Lobi, kzc Bondoukou Kulango, dyu Dyula, dnj Dan, goa Guro, wan Wan, btg Gagnoa Bété, bev Daloa Bété, wec Wè Western, gud Yocoboué Dida."
+      },
+      {
+        "title": "Note verbale du Représentant permanent de la Côte d'Ivoire au Secrétaire général de l'ONU, 6 novembre 1985 (A/40/860)",
+        "url": "https://documents.un.org/api/symbol/access?s=A/40/860&l=en&t=pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Document de l'Assemblée générale de l'ONU du 7 novembre 1985, lu dans sa version anglaise (original en français). Il rapporte la décision du huitième congrès du Parti démocratique de Côte d'Ivoire, tenu à Abidjan en octobre 1985."
       }
     ],
     "demographics": {
@@ -1156,49 +1232,54 @@
       "peoples": [
         {
           "name": "Akan",
-          "percentageInCountry": 42,
+          "population": 4780797,
+          "referenceYear": 1998,
+          "percentageInCountry": 42.1,
           "peopleId": "PPL_AKAN",
-          "region": "Centre, Est et Sud de la Côte d'Ivoire",
+          "region": "Centre, Est et Sud-Est de la Côte d'Ivoire",
           "languageFamily": "FLG_KWA"
         },
         {
           "name": "Voltaïques / Gur",
-          "percentageInCountry": 17,
+          "population": 2002625,
+          "referenceYear": 1998,
+          "percentageInCountry": 17.6,
           "peopleId": "PPL_SENUFO",
-          "region": "Nord de la Côte d'Ivoire",
+          "region": "Nord et Nord-Est de la Côte d'Ivoire",
           "languageFamily": "FLG_GUR"
         },
         {
           "name": "Mandé du Nord",
-          "percentageInCountry": 16,
+          "population": 1873200,
+          "referenceYear": 1998,
+          "percentageInCountry": 16.5,
           "peopleId": "PPL_MALINKE",
-          "region": "Nord de la Côte d'Ivoire",
-          "languageFamily": "FLG_MANDE"
-        },
-        {
-          "name": "Mandé du Sud",
-          "population": 2700000,
-          "percentageInCountry": 10,
-          "peopleId": "PPL_MANDE_DU_SUD",
-          "region": "Ouest de la Côte d'Ivoire",
+          "region": "Nord-Ouest de la Côte d'Ivoire",
           "languageFamily": "FLG_MANDE"
         },
         {
           "name": "Krou",
-          "population": 2970000,
-          "percentageInCountry": 11,
+          "population": 1446790,
+          "referenceYear": 1998,
+          "percentageInCountry": 12.7,
           "peopleId": "PPL_KROU_MACRO",
-          "region": "Centre-Ouest et Ouest de la Côte d'Ivoire (forêts)",
+          "region": "Centre et Sud-Ouest de la Côte d'Ivoire",
           "languageFamily": "FLG_KROU"
         },
         {
-          "name": "Autres peuples",
-          "population": 1080000,
-          "percentageInCountry": 4,
-          "peopleId": null,
-          "region": "Diverses régions de la Côte d'Ivoire"
+          "name": "Mandé du Sud",
+          "population": 1142336,
+          "referenceYear": 1998,
+          "percentageInCountry": 10.0,
+          "peopleId": "PPL_MANDE_DU_SUD",
+          "region": "Ouest de la Côte d'Ivoire",
+          "languageFamily": "FLG_MANDE"
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "La Côte d'Ivoire est un pays d'Afrique de l'Ouest. Son nom vient du commerce de l'ivoire sur sa côte, et le pays demande depuis 1985 qu'on ne le traduise pas.",
+      "followUp": "Qui a donné son nom à la Côte d'Ivoire ?"
     }
   }
 }
