@@ -34,13 +34,33 @@
           "sourceRefs": ["afrik-candidate-queue"]
         }
       ]
+    },
+    {
+      "spelling": "Rizaykat",
+      "attestations": [
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["macmichael-1922-history-arabs"]
+        }
+      ]
     }
   ],
   "transmissionMode": "other",
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [],
+    "writtenChronicles": [
+      {
+        "claim": "MacMichael écrit en 1922 que les Rizaykat vivent tous au Darfour, à l'extrême sud-est, avec les Humr à l'est et les Dinka au sud, et qu'ils forment la tribu la plus riche et la plus puissante du pays. Il rapporte que le sultan Tirab, dans la seconde moitié du XVIIIe siècle, n'a pas réussi à les soumettre, et qu'en octobre 1913 les Rizaykat ont complètement battu le sultan Ali Dinar. Ce témoignage est celui d'un administrateur colonial.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["macmichael-1922-history-arabs"]
+      },
+      {
+        "claim": "Le même auteur juge préférable de dire que les Mahria, les Nawaiba et les Mahamid se sont unis dans le sud du Darfour pour former les Rizaykat, plutôt que de les prendre pour des rameaux d'une tribu bakkara du sud. Il note que ces trois noms désignent aussi de grandes tribus de chameliers du nord du Darfour et du Ouaddaï. C'est son avis, non un fait établi par une tradition recueillie.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["macmichael-1922-history-arabs"]
+      }
+    ],
     "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
@@ -48,14 +68,14 @@
     {
       "peopleId": "PPL_BAGGAR",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "macmichael-1922-history-arabs"]
     }
   ],
   "countries": [
     {
       "countryId": "SDN",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "macmichael-1922-history-arabs"]
     }
   ],
   "alliances": [],
@@ -70,32 +90,48 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "macmichael-1922-history-arabs",
+      "title": "A History of the Arabs in the Sudan, vol. I (Rizaykat, p. 290-292)",
+      "url": "https://archive.org/details/historyofarabsin01macmuoft",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Cambridge University Press, 1922. Texte intégral d'Internet Archive relu le 8 novembre 2026. Pages 290-292 : le paragraphe consacré aux Rizaykat décrit leur pays, leur richesse et leur résistance au sultan Ali Dinar, puis donne leurs trois divisions (Mahria, Nawaiba, Mahamid) et l'avis de l'auteur sur leur réunion dans le sud du Darfour. L'auteur était administrateur colonial britannique : son texte est un témoignage colonial."
     }
   ],
   "gaps": [
     {
+      "fieldPath": "origin.oralTraditions",
+      "reason": "Recherches du 8 novembre 2026 : chapitre sur les Rizaykat de MacMichael (1922) relu en entier, recherche web sur l'origine, les divisions et le nom des Rizeigat, rapport du Small Arms Survey (Salmon, 2007) relu sans y trouver le nom. Aucune tradition orale des Rizeigat sur leur ancêtre ou leur nom, avec transmetteur et mode de collecte nommés, n'a été trouvée."
+    },
+    {
+      "fieldPath": "origin.linguisticReconstructions",
+      "reason": "Recherches du 8 novembre 2026 : chapitre sur les Rizaykat de MacMichael (1922) relu en entier, recherche web sur l'origine, les divisions et le nom des Rizeigat, rapport du Small Arms Survey (Salmon, 2007) relu sans y trouver le nom. Aucun travail ne donne l'étymologie du nom Rizaykat ou Rizeigat ; MacMichael n'en propose pas. Nous n'en avançons aucune."
+    },
+    {
       "fieldPath": "alliances",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Recherches du 8 novembre 2026 : chapitre sur les Rizaykat de MacMichael (1922) relu en entier, recherche web sur l'origine, les divisions et le nom des Rizeigat, rapport du Small Arms Survey (Salmon, 2007) relu sans y trouver le nom. Aucune parenté à plaisanterie ni aucun pacte entre ce nom et un autre nom ayant une fiche n'a été trouvé."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Recherches du 8 novembre 2026 : chapitre sur les Rizaykat de MacMichael (1922) relu en entier, recherche web sur l'origine, les divisions et le nom des Rizeigat, rapport du Small Arms Survey (Salmon, 2007) relu sans y trouver le nom. Les sources lues décrivent un groupe d'éleveurs de bovins, sans statut professionnel héréditaire attaché au nom."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Recherches du 8 novembre 2026 : chapitre sur les Rizaykat de MacMichael (1922) relu en entier, recherche web sur l'origine, les divisions et le nom des Rizeigat, rapport du Small Arms Survey (Salmon, 2007) relu sans y trouver le nom. Aucun porteur décédé dont le nom soit documenté dans une source ouverte lue ici n'a été retenu. Les personnes vivantes sont exclues."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Recherches du 8 novembre 2026 : chapitre sur les Rizaykat de MacMichael (1922) relu en entier, recherche web sur l'origine, les divisions et le nom des Rizeigat, rapport du Small Arms Survey (Salmon, 2007) relu sans y trouver le nom. MacMichael signale que Mahamid, Mahria et Nawaiba désignent aussi des tribus du nord, mais il ne signale aucun homonyme de Rizaykat lui-même."
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "La nisba ne détermine pas à elle seule le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Recherches du 8 novembre 2026 : chapitre sur les Rizaykat de MacMichael (1922) relu en entier, recherche web sur l'origine, les divisions et le nom des Rizeigat, rapport du Small Arms Survey (Salmon, 2007) relu sans y trouver le nom. Les sources lues désignent une tribu, sans dire si le nom se transmet par le père comme nom de famille."
     },
     {
       "fieldPath": "designatedSocialUnit",
-      "reason": "La nisba ne détermine pas à elle seule l'unité sociale désignée : nous ne la documentons pas encore pour ce nom."
+      "reason": "Recherches du 8 novembre 2026 : chapitre sur les Rizaykat de MacMichael (1922) relu en entier, recherche web sur l'origine, les divisions et le nom des Rizeigat, rapport du Small Arms Survey (Salmon, 2007) relu sans y trouver le nom. MacMichael parle d'une tribu formée de trois divisions ; ce mot ne correspond à aucune unité du modèle, donc la valeur reste « autre »."
     }
   ],
   "nameHistory": {
