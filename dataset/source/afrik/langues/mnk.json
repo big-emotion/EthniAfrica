@@ -17,9 +17,10 @@
     "Mandé",
     "Manding",
     "Mande",
-    "Socé"
+    "Socé",
+    "Malinké"
   ],
-  "whyProblematic": "Mandinka est le nom des gens du Manden, la région d'origine de l'empire du Mali. D'après l'article de Wikipédia « Malinkés », mandingue déforme mandenka, « habitant du Manden », et Malinké serait d'origine peule (Bugiel, 1922 ; Delafosse, 1929). Les graphies en g, comme Mandingo, sont jugées vieillies dans les écrits récents, mais restent en usage. Pour le sens du mot Manden, une phrase de l'article de Wikipédia sur le Manding rapporte que le griot Babou Condé, recueilli par Camara Laye, y entend « enfant de l'hippopotame » : man, « hippopotame » ou « lamantin », et den, « enfant ». Cette phrase renvoie à une notice sur le livre de Laye dans le Kindlers Literatur Lexikon, que nous n'avons pas lue. C'est le récit d'un griot, et nous n'avons pas trouvé d'autre explication à lui comparer.",
+  "whyProblematic": "Mandingue et Mandingo sont des formes européennes du nom. Dès 1854, Sigismund Koelle les jugeait fautives, car les gens du pays disent Mánde et Mandénga. Malinké est la forme peule du nom selon Maurice Delafosse en 1929, mais c'est sous ce nom que la langue figure parmi les langues nationales du Sénégal. Le nom malinké désigne aussi, en Guinée et au Mali, des parlers voisins qui ont leurs propres codes de langue.",
   "spellingAliases": [],
   "familyId": "FLG_MANDE",
   "peoples": [
@@ -122,6 +123,49 @@
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
                 "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler « Mandén·ga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Explication de Denis Creissels"
+            },
+            "statement": "Le nom mandinka est formé de Màndíŋ, le nom de la région d'où est partie l'expansion manding, et du suffixe -ŋká, « gens de », selon le linguiste Denis Creissels. Ceux qui parlent la langue se nomment Màndìŋkôolú, au singulier Màndìŋkôo, et nomment leur langue Màndìŋkàkáŋò, « la langue des gens du Manding ».",
+            "hypothesisGroup": "origine du nom mandinka",
+            "sources": [
+              {
+                "title": "A sketch of Mandinka",
+                "author": "Denis Creissels",
+                "year": null,
+                "url": "http://www.deniscreissels.fr/public/Creissels-sketch_of_Mandinka.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1.1",
+                "notes": "Esquisse de grammaire à paraître dans Friederike Lüpke (dir.), The Oxford Guide to the Atlantic Languages of West Africa, Oxford University Press. Version de travail publiée par l'auteur, linguiste de l'université de Lyon, lue le 3 novembre 2026. L'auteur estime à environ 1,5 million le nombre de personnes qui parlent le mandinka, en Gambie, au Sénégal et en Guinée-Bissau."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Proposée en 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom du Mande, d'où vient le nom mandinka, serait lié à un mot qui veut dire « hippopotame » ou « lamantin », selon Harry Johnston, qui cite Binger, Delafosse et Desplagnes. Il rejette l'explication de Desplagnes, pour qui ma voudrait dire « poisson » et nde « père ».",
+            "hypothesisGroup": "origine du nom Mande",
+            "sources": [
+              {
+                "title": "Encyclopaedia Britannica, 11e édition, vol. 17, article « Mandingo »",
+                "author": "Harry Hamilton Johnston",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Mandingo",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 564",
+                "notes": "Cambridge, Cambridge University Press, 1911. Article lu dans la transcription de Wikisource, page relue et validée, le 3 novembre 2026. L'auteur décrit les peuples d'Afrique avec les catégories raciales de son époque."
               }
             ]
           }
@@ -242,19 +286,120 @@
                 "notes": "Londres, W. Bulmer pour G. Nicol, 1799 ; voyage de 1795-1797. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg, lue le 11 octobre 2026."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Proposée en 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom mandingue, en anglais Mandingo, déformerait Mande-nka ou Mande-nga, « les gens du Mande », selon Harry Johnston, qui dit l'avoir souvent entendu prononcer « Mandiña » par les intéressés.",
+            "hypothesisGroup": "origine du nom mandingue",
+            "sources": [
+              {
+                "title": "Encyclopaedia Britannica, 11e édition, vol. 17, article « Mandingo »",
+                "author": "Harry Hamilton Johnston",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Mandingo",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 564",
+                "notes": "Cambridge, Cambridge University Press, 1911. Article lu dans la transcription de Wikisource, page relue et validée, le 3 novembre 2026. L'auteur décrit les peuples d'Afrique avec les catégories raciales de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "1929"
+            },
+            "era": "colonial",
+            "statement": "Le nom mandingue a une forme, Mandingo, que prend Mandinka quand le mot est dit seul dans les parlers du nord, de l'ouest et du sud ; c'est cette forme, en usage sur la Gambie et en Sierra Leone, que les Anglais ont adoptée, selon Maurice Delafosse.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La langue mandingue et ses dialectes (malinké, bambara, dioula), tome I",
+                "author": "Maurice Delafosse",
+                "year": 1929,
+                "url": "https://archive.org/details/la-langue-mandingue-et-ses-...-delafosse-maurice-bpt-6k-3412996f",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "introduction",
+                "notes": "Paris, Paul Geuthner, Bibliothèque de l'École nationale des langues orientales vivantes, 1929. Lu dans la copie d'Internet Archive de la numérisation de la Bibliothèque nationale de France (Gallica, bpt6k3412996f), le 3 novembre 2026. L'auteur était administrateur colonial en Afrique occidentale française."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Malinké",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom officiel de la langue au Sénégal ; un mot peul selon Maurice Delafosse.",
+        "periodLabel": "Écrit dès 1901 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Proposée en 1929"
+            },
+            "era": "colonial",
+            "statement": "Le nom malinké est un mot peul, comme Mali, et veut dire « individu du Mali », selon Maurice Delafosse. Son équivalent en mandingue est Mandinka, ajoute-t-il, et le Mali tire lui-même son nom de la façon dont les Peuls prononcent Manding.",
+            "hypothesisGroup": "origine du nom malinké",
+            "sources": [
+              {
+                "title": "La langue mandingue et ses dialectes (malinké, bambara, dioula), tome I",
+                "author": "Maurice Delafosse",
+                "year": 1929,
+                "url": "https://archive.org/details/la-langue-mandingue-et-ses-...-delafosse-maurice-bpt-6k-3412996f",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "introduction",
+                "notes": "Paris, Paul Geuthner, Bibliothèque de l'École nationale des langues orientales vivantes, 1929. Lu dans la copie d'Internet Archive de la numérisation de la Bibliothèque nationale de France (Gallica, bpt6k3412996f), le 3 novembre 2026. L'auteur était administrateur colonial en Afrique occidentale française."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom malinké est, en 1901, celui que les Soninké donnent aux Malinké, selon Maurice Delafosse. Il range Malinké, Mandinkè, Mandenga et d'autres formes parmi des noms qui veulent tous dire « les gens de Mali ». C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "hypothesisGroup": "origine du nom malinké",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 215-216 et note 1",
+                "notes": "Paris, Ernest Leroux, Publications de l'École des langues orientales vivantes, 1901. Lu dans la numérisation d'Internet Archive le 3 novembre 2026. L'auteur était administrateur colonial en Afrique occidentale française."
+              }
+            ]
           }
         ]
       }
     ]
   },
   "content": {
-    "vehicularRole": null,
+    "vehicularRole": "national_official",
     "dialects": [],
     "vitalityStatus": {
       "status": "Developing",
       "scale": "EGIDS (Ethnologue)",
       "asOf": 2025
     },
+    "originDebated": true,
     "sources": [
       {
         "title": "Glottolog 5.3 — Mandinka (mand1436)",
@@ -271,26 +416,109 @@
         "notes": "Tables du 2026-07-15, consultées le 2026-09-16. La table des macrolangues rattache le code mnk à la macrolangue man, Mandingo, aux côtés notamment du maninkakan de l'Est. Les codes du bambara et du dioula, eux, n'appartiennent à aucune macrolangue. Un même continuum mandingue est donc coupé de deux façons selon le code, ce qui montre que le partage entre langue et dialecte est ici une décision de codification, prise code par code par un organisme, et non une frontière relevée sur le terrain."
       },
       {
-        "title": "Wikipédia — Malinkés",
-        "url": "https://fr.wikipedia.org/wiki/Malink%C3%A9s",
-        "tier": "unverified",
-        "source_kind": "encyclopedia",
-        "notes": "Section sur le nom, lue en ligne : mandingue, mandenka, Malinké d'origine peule ; elle renvoie à Bugiel (1922) et à Delafosse (1929), que nous n'avons pas lus."
+        "title": "A sketch of Mandinka",
+        "url": "http://www.deniscreissels.fr/public/Creissels-sketch_of_Mandinka.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Esquisse de grammaire à paraître dans Friederike Lüpke (dir.), The Oxford Guide to the Atlantic Languages of West Africa, Oxford University Press. Version de travail publiée par l'auteur, linguiste de l'université de Lyon, lue le 3 novembre 2026. L'auteur estime à environ 1,5 million le nombre de personnes qui parlent le mandinka, en Gambie, au Sénégal et en Guinée-Bissau."
       },
       {
-        "title": "Wikipédia (anglais) — Manding region",
-        "url": "https://en.wikipedia.org/wiki/Manding_region",
-        "tier": "unverified",
-        "source_kind": "encyclopedia",
-        "notes": "Section sur le nom, lue en ligne : elle reprend, par une notice du Kindlers Literatur Lexikon, le passage de Camara Laye, Le Maître de la parole. Kouma Lafôlô Kouma (Paris, Plon, 1978)."
+        "title": "La langue mandingue et ses dialectes (malinké, bambara, dioula), tome I",
+        "url": "https://archive.org/details/la-langue-mandingue-et-ses-...-delafosse-maurice-bpt-6k-3412996f",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Paris, Paul Geuthner, Bibliothèque de l'École nationale des langues orientales vivantes, 1929. Lu dans la copie d'Internet Archive de la numérisation de la Bibliothèque nationale de France (Gallica, bpt6k3412996f), le 3 novembre 2026. L'auteur était administrateur colonial en Afrique occidentale française."
       },
       {
-        "title": "Wikipédia (anglais) — Mandinka people",
-        "url": "https://en.wikipedia.org/wiki/Mandinka_people",
-        "tier": "unverified",
+        "title": "Essai de manuel pratique de la langue mandé ou mandingue",
+        "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Paris, Ernest Leroux, Publications de l'École des langues orientales vivantes, 1901. Lu dans la numérisation d'Internet Archive le 3 novembre 2026. L'auteur était administrateur colonial en Afrique occidentale française."
+      },
+      {
+        "title": "Encyclopaedia Britannica, 11e édition, vol. 17, article « Mandingo »",
+        "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Mandingo",
+        "tier": "referenced",
         "source_kind": "encyclopedia",
-        "notes": "Note sur les graphies lue en ligne : Maninka, Manding, Mandingo ; les formes en g y sont jugées anciennes."
+        "notes": "Cambridge, Cambridge University Press, 1911. Article lu dans la transcription de Wikisource, page relue et validée, le 3 novembre 2026. L'auteur décrit les peuples d'Afrique avec les catégories raciales de son époque."
+      },
+      {
+        "title": "5e Recensement général de la population et de l'habitat (RGPH-5) 2023, rapport définitif, thème I : état et structure, urbanisation et caractéristiques socioculturelles de la population",
+        "url": "https://www.vie-publique.sn/docs/f5ae8d48-de94-4dea-882b-990bdfa1958d/etat-structure-urbanisation-caracteristiques-socioculturelles-population-rgph-5-2023-ansd.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Dakar, juillet 2025 ; lu dans la copie publiée par le portail vie-publique.sn le 3 novembre 2026. Le tableau répartit les 16 432 959 habitants de 3 ans ou plus selon la langue qu'ils parlent le plus au quotidien : 465 052 pour le màndienka, 193 681 pour le sóninke. Il ne compte ni la langue maternelle ni le groupe."
+      },
+      {
+        "title": "Terceiro Recenseamento Geral da População e Habitação, 2009 : características socioculturais",
+        "url": "https://www.stat-guinebissau.com/Menu_principal/IV_RGPH/rgph1/caracteristicas_socio_cultural.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Bissau, recensement de 2009, lu le 3 novembre 2026. Les chiffres couvrent les habitants de nationalité bissau-guinéenne : 212 269 personnes se disent mandinga, et 184 220 personnes, tous groupes réunis, ont le mandinga pour principal parler ; 7 407 personnes se disent saracule, et 5 550 ont le saracule pour principal parler."
+      },
+      {
+        "title": "The Gambia 2024 Population and Housing Census, Preliminary Report",
+        "url": "https://gambia.unfpa.org/sites/default/files/pub-pdf/2024-09/Preliminary%20Report%20of%20the%202024%20Census%20in%20The%20Gambia_0.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Banjul, août 2024 ; lu dans la copie mise en ligne par le bureau du FNUAP en Gambie le 3 novembre 2026. Le rapport compte 2 422 712 habitants, dont 34,4 % de Mandinka et 8,2 % de Sarahule, nom gambien des Soninké. Il compte l'appartenance à un groupe, et non la langue parlée."
+      },
+      {
+        "title": "Constitution de la République de Gambie, 1997, telle que modifiée en 2018",
+        "url": "https://www.constituteproject.org/constitution/Gambia_2018.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte anglais publié par le Constitute Project, lu le 3 novembre 2026. La Constitution ne nomme aucune langue nationale ni officielle : l'Assemblée nationale travaille en anglais ou dans une autre langue prévue par une loi, et l'État protège les langues du pays."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.dialects",
+        "reason": "Glottolog ne divise pas le mandinka en parlers, et nous n'avons pas trouvé de liste de ses parlers dans les études que nous avons lues."
+      },
+      {
+        "field": "nameHistory.names[0]",
+        "reason": "Une explication du nom Manden est attribuée au griot Babou Condé, dont Camara Laye a recueilli la parole dans Le Maître de la parole, paru en 1978. Nous n'avons pas pu lire ce livre, et nous ne présentons donc pas cette explication."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Le mandinka est la langue des gens du Manding, parlée en Gambie, au Sénégal et en Guinée-Bissau par environ un million et demi de personnes.",
+      "followUp": "Pourquoi cette langue s'appelle-t-elle aussi mandingue, mandingo ou malinké ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "GMB",
+          "speakers": 833000,
+          "source": {
+            "title": "The Gambia 2024 Population and Housing Census, Preliminary Report",
+            "url": "https://gambia.unfpa.org/sites/default/files/pub-pdf/2024-09/Preliminary%20Report%20of%20the%202024%20Census%20in%20The%20Gambia_0.pdf",
+            "tier": "official",
+            "notes": "Recensement de 2024 : 34,4 % des 2 422 712 habitants se disent mandinka. Le nombre de personnes est notre calcul à partir de ces deux chiffres. Il compte un groupe, et non les personnes qui parlent la langue."
+          }
+        },
+        {
+          "country": "SEN",
+          "speakers": 465052,
+          "source": {
+            "title": "5e Recensement général de la population et de l'habitat (RGPH-5) 2023, rapport définitif, thème I : état et structure, urbanisation et caractéristiques socioculturelles de la population",
+            "url": "https://www.vie-publique.sn/docs/f5ae8d48-de94-4dea-882b-990bdfa1958d/etat-structure-urbanisation-caracteristiques-socioculturelles-population-rgph-5-2023-ansd.pdf",
+            "tier": "official",
+            "notes": "Recensement de 2023 : personnes de 3 ans ou plus qui parlent le màndienka plus que toute autre langue au quotidien. Ceux qui le parlent en seconde langue n'y sont pas comptés."
+          }
+        },
+        {
+          "country": "GNB",
+          "speakers": 184220,
+          "source": {
+            "title": "Terceiro Recenseamento Geral da População e Habitação, 2009 : características socioculturais",
+            "url": "https://www.stat-guinebissau.com/Menu_principal/IV_RGPH/rgph1/caracteristicas_socio_cultural.pdf",
+            "tier": "official",
+            "notes": "Recensement de 2009 : personnes de nationalité bissau-guinéenne dont le mandinga est le principal parler, tous groupes réunis."
+          }
+        }
+      ]
+    }
   }
 }

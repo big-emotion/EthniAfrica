@@ -3,11 +3,11 @@
   "nameFr": "Madagascar",
   "nameEn": "Madagascar",
   "nameOfficial": "République de Madagascar (Repoblikan'i Madagasikara)",
-  "summary": "Madagascar doit son nom à une méprise : « Madageiscar », chez Marco Polo, désignait probablement Mogadiscio, et les Portugais l'ont appliqué à l'île. Peuplée par des migrations venues d'Asie du Sud-Est et d'Afrique de l'Est, elle réunit Merina, Betsimisaraka, Betsileo, Sakalava et Antandroy autour d'une langue commune, le malgache. Le famadihana y dit le rapport aux ancêtres.",
-  "etymology": "Le nom \"Madagascar\" viendrait de \"Madageiscar\", mentionné par Marco Polo au XIIIe siècle, qui aurait désigné Mogadiscio en Somalie. Les Portugais ont ensuite appliqué ce nom à l'île qu'ils appelaient \"São Lourenço\". En malgache, le pays est appelé \"Madagasikara\".",
-  "nameOriginActor": "Le nom a été popularisé par les navigateurs européens (portugais, français) à partir du XVIe siècle. L'origine exacte est incertaine, mais pourrait provenir d'une confusion avec Mogadiscio.",
+  "summary": "Le nom Madagascar apparaît en 1298 dans le livre de Marco Polo, sous la forme Madeigascar, et désignerait d'abord Mogadiscio, selon plusieurs auteurs ; les Portugais, arrivés en 1500, appellent l'île Saint-Laurent. En malgache, le pays s'appelle Madagasikara. Peuplée au premier millénaire par des Austronésiens venus d'Asie du Sud-Est, puis par des populations de la côte d'Afrique de l'Est, l'île partage une langue, le malgache, que presque tous ses habitants déclarent parler.",
+  "etymology": "Le nom Madagascar apparaît par écrit, sous la forme Madeigascar, dans le livre de Marco Polo mis par écrit en 1298. Plusieurs explications de son origine sont proposées. Henry Yule pense que le voyageur mêle des renseignements sur Mogadiscio et sur Madagascar, et Alfred Grandidier qu'il décrit Mogadiscio sans connaître l'île. Selon Grandidier, le globe de Martin Behaim place en 1492, d'après ce récit, une île imaginaire nommée Madagascar, que les géographes ont ensuite confondue avec l'île atteinte par les Portugais en 1500. Gabriel Ferrand y voyait en 1893 « le pays des Malgaches », mal transcrit de l'arabe, selon Henri Cordier. En malgache, le pays s'appelle Madagasikara.",
+  "nameOriginActor": "Selon Alfred Grandidier, le nom ne vient pas des habitants de l'île : il apparaît chez Marco Polo, puis se fixe sur l'île dans les cartes européennes, qui l'appellent d'abord Saint-Laurent. En 1613, le père Luiz Mariano note déjà que le nom de Madagascar est « d'origine étrangère, comme celui d'île de Saint-Laurent ».",
   "nameHistory": {
-    "summary": "Le nom Madagascar désigne un pays et une île de l'océan Indien, la République de Madagascar, qui se nomme aussi Madagasikara en malgache. Le pays a porté les noms de République malgache, puis de République démocratique de Madagascar ; sur une carte du XVIe siècle, l'île s'appelle Saint-Laurent, et au nord-ouest, au début du XVIIe siècle, Ubuque. Les sources ne s'accordent pas sur l'origine du nom Madagascar ; nous les présentons plus bas.",
+    "summary": "Le nom Madagascar désigne un pays et une île de l'océan Indien, la République de Madagascar, qui se nomme aussi Madagasikara en malgache. Le pays a porté les noms de République malgache, puis de République démocratique de Madagascar. Les Portugais ont appelé l'île Saint-Laurent, Louis XIV a voulu la nommer Île Dauphine, et des récits portugais du début du XVIIe siècle l'appellent Ubuque. Les sources ne s'accordent pas sur l'origine du nom Madagascar ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Madagascar",
@@ -144,6 +144,16 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 746",
                 "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek, lu dans l'exemplaire numérisé. Le chapitre parle des « gens d'al-Ḳumr (Comores et Madagascar) » qui, à la fin du VIIe et au début du VIIIe siècle, se lancent à la conquête d'Aden sur leurs navires à balancier, d'après les sources arabes."
+              },
+              {
+                "title": "Histoire de la géographie de Madagascar",
+                "author": "Alfred Grandidier",
+                "year": 1892,
+                "url": "https://archive.org/details/histoiredelago00gran",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33 et 35",
+                "notes": "Paris, Imprimerie nationale, 1892, lu le 3 novembre 2026 en fac-similé sur Internet Archive. Page 33 : « Les Arabes d'Omân l'ont de tout temps appelé et l'appellent encore El-Komr ». Page 35 : les Grecs et les Arabes connaissaient l'île sous les noms de Ménuthias, Djalouna, Chezbezat et Komr."
               }
             ]
           },
@@ -165,6 +175,16 @@
                 "source_kind": "archive",
                 "page": "p. 411-414",
                 "notes": "Londres, John Murray, troisième édition, 1903, lu en fac-similé le 10 octobre 2026. Le texte commence par « Madeigascar is an Island towards the south, about a thousand miles from Scotra ». L'introduction du premier volume cite le préambule de Rusticiano, qui date de 1298 la mise par écrit du livre, dans la prison de Gênes. En note, Yule pense que Marco Polo mêle des renseignements sur Makdashau, Mogadiscio, et sur Madagascar ; Cordier rapporte qu'Alfred Grandidier y voit une description de Mogadiscio par un auteur qui ne connaissait pas l'île, que Gabriel Ferrand (1893) lit dans Madagascar « Country of the Malagash », mal transcrit de l'arabe, et que M. Guet (1888) le tire de Madax-Aschtoret, « île d'Astarté », étymologie que Cordier range parmi les fantaisies. La note 2 cite une carte de « S. Lorenzo (or Madagascar) » dans l'Isole de Porcacchi, en 1576."
+              },
+              {
+                "title": "Histoire de la géographie de Madagascar",
+                "author": "Alfred Grandidier",
+                "year": 1892,
+                "url": "https://archive.org/details/histoiredelago00gran",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 35-36",
+                "notes": "Paris, Imprimerie nationale, 1892, lu le 3 novembre 2026 en fac-similé sur Internet Archive. Selon l'auteur, Martin Behaim, « interprétant mal les récits de Marco Polo », place sur son globe de Nuremberg, en 1492, une île imaginaire qu'il appelle Madagascar ; quand les Portugais font connaître l'île en 1500, les géographes la confondent avec celle de Behaim. L'auteur juge que Marco Polo décrit en réalité la côte de Mogadiscio."
               }
             ]
           },
@@ -209,6 +229,61 @@
                 "notes": "Londres, John Murray, troisième édition, 1903, lu en fac-similé le 10 octobre 2026. Le texte commence par « Madeigascar is an Island towards the south, about a thousand miles from Scotra ». L'introduction du premier volume cite le préambule de Rusticiano, qui date de 1298 la mise par écrit du livre, dans la prison de Gênes. En note, Yule pense que Marco Polo mêle des renseignements sur Makdashau, Mogadiscio, et sur Madagascar ; Cordier rapporte qu'Alfred Grandidier y voit une description de Mogadiscio par un auteur qui ne connaissait pas l'île, que Gabriel Ferrand (1893) lit dans Madagascar « Country of the Malagash », mal transcrit de l'arabe, et que M. Guet (1888) le tire de Madax-Aschtoret, « île d'Astarté », étymologie que Cordier range parmi les fantaisies. La note 2 cite une carte de « S. Lorenzo (or Madagascar) » dans l'Isole de Porcacchi, en 1576."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1613,
+              "to": 1613,
+              "label": "1613"
+            },
+            "era": "polity",
+            "statement": "Le nom Madagascar ne vient pas des habitants de l'île, écrit le père Luiz Mariano en 1613 : ils ont un nom pour chaque province, mais aucun pour l'île entière, et ce nom est d'origine étrangère, comme celui de Saint-Laurent, selon Alfred Grandidier.",
+            "aspect": "meaning",
+            "actors": [
+              {
+                "name": "Luiz Mariano",
+                "role": "missionnaire portugais, auteur de la remarque"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire de la géographie de Madagascar",
+                "author": "Alfred Grandidier",
+                "year": 1892,
+                "url": "https://archive.org/details/histoiredelago00gran",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 32, note 1",
+                "notes": "Paris, Imprimerie nationale, 1892, lu le 3 novembre 2026 en fac-similé sur Internet Archive, page vérifiée sur l'image. « Le P. Luiz Mariano écrivait en 1613 : « Les naturels ont un nom pour chaque province, mais ils n'en ont pas pour désigner l'île entière ; le nom de Madagascar est d'origine étrangère, comme celui d'île de Saint-Laurent. » »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1492,
+              "to": 1500,
+              "label": "De 1492 à 1500"
+            },
+            "statement": "Le nom Madagascar passe à l'île par une confusion des cartographes, selon Alfred Grandidier : le globe de Martin Behaim, en 1492, place d'après Marco Polo une île imaginaire de ce nom, et les géographes la confondent ensuite avec l'île que les Portugais font connaître en 1500.",
+            "hypothesisGroup": "origine du nom Madagascar",
+            "actors": [
+              {
+                "name": "Martin Behaim",
+                "role": "auteur du globe de Nuremberg, 1492"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire de la géographie de Madagascar",
+                "author": "Alfred Grandidier",
+                "year": 1892,
+                "url": "https://archive.org/details/histoiredelago00gran",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 35-36",
+                "notes": "Paris, Imprimerie nationale, 1892, lu le 3 novembre 2026 en fac-similé sur Internet Archive. Selon l'auteur, Martin Behaim, « interprétant mal les récits de Marco Polo », place sur son globe de Nuremberg, en 1492, une île imaginaire qu'il appelle Madagascar ; quand les Portugais font connaître l'île en 1500, les géographes la confondent avec celle de Behaim. L'auteur juge que Marco Polo décrit en réalité la côte de Mogadiscio."
+              }
+            ]
           }
         ]
       },
@@ -239,6 +314,56 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 62",
                 "notes": "Document de la session 2025 du Groupe d'experts, daté du 23 avril 2025, lu en ligne le 10 octobre 2026. Entrée Madagascar : noms nationaux officiels, en français « Madagascar », « République de Madagascar », et en malgache « Madagasikara », « Repoblikan'i Madagasikara »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892"
+            },
+            "era": "colonial",
+            "statement": "Le nom Madagasikara est écrit Madagaskară quand le nom de Madagascar est officiellement accepté, selon Alfred Grandidier en 1892. Ce nom était jusque-là mal vu, parce que sa dernière syllabe rappelle le mot malgache kary, « chat ».",
+            "formAsWritten": "Madagaskară",
+            "sources": [
+              {
+                "title": "Histoire de la géographie de Madagascar",
+                "author": "Alfred Grandidier",
+                "year": 1892,
+                "url": "https://archive.org/details/histoiredelago00gran",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33",
+                "notes": "Paris, Imprimerie nationale, 1892, lu le 3 novembre 2026 en fac-similé sur Internet Archive, page vérifiée sur l'image. « Quant au nom de Madagascar, tout récemment encore il était honni à cause de la consonance de sa dernière syllabe avec le mot malgache Kary, qui signifie chat […] ; aujourd'hui il est officiellement accepté sous la forme de Madagaskară. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1828,
+              "label": "Début du XIXe siècle"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Madagasikara, on désigne l'île entière par des périphrases, comme Izao rehetră izao, « ce pays-ci tout entier », ou Ny anivon' ny riakă, « le pays qui est au milieu de la mer », sous les règnes d'Andrianampoinimerina et de Radama Ier, selon Alfred Grandidier.",
+            "before": true,
+            "actors": [
+              {
+                "name": "Andrianampoinimerina et Radama Ier",
+                "role": "souverains de l'Imerina à cette période"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire de la géographie de Madagascar",
+                "author": "Alfred Grandidier",
+                "year": 1892,
+                "url": "https://archive.org/details/histoiredelago00gran",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33",
+                "notes": "Paris, Imprimerie nationale, 1892, lu le 3 novembre 2026 en fac-similé sur Internet Archive, page vérifiée sur l'image. « C'est au commencement de ce siècle, sous les règnes d'Andrianampoinimerină et de son fils Radama Ier, que les Hova […] ont cherché une appellation générale et se sont servis de périphrases, telles que Izao rehetră izao (litt. : ce pays-ci tout entier) ou Ny anivon' ny riakă (litt. : le pays qui est au milieu de la mer). »"
               }
             ]
           }
@@ -367,8 +492,36 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "periodLabel": "XVIe siècle",
+        "periodLabel": "De 1500 au XVIIe siècle",
         "accounts": [
+          {
+            "period": {
+              "from": 1500,
+              "to": 1500,
+              "label": "1500"
+            },
+            "era": "polity",
+            "statement": "Le nom Saint-Laurent est celui que les Portugais donnent à l'île qu'ils atteignent en 1500, après le voyage de Diogo Dias, selon Alfred Grandidier. C'est la plus ancienne trace de ce nom que le projet connaît. L'île et ses habitants existaient bien avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Diogo Dias",
+                "role": "navigateur portugais dont le voyage fait connaître l'île en Europe"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire de la géographie de Madagascar",
+                "author": "Alfred Grandidier",
+                "year": 1892,
+                "url": "https://archive.org/details/histoiredelago00gran",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 36",
+                "notes": "Paris, Imprimerie nationale, 1892, lu le 3 novembre 2026 en fac-similé sur Internet Archive, page vérifiée sur l'image. L'auteur parle de l'île « que les Portugais ont découverte en 1500 et qu'ils ont appelée Saint-Laurent », dont l'Europe apprend l'existence par le voyage de Diogo Diaz."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1576,
@@ -390,6 +543,71 @@
                 "notes": "Londres, John Murray, troisième édition, 1903, lu en fac-similé le 10 octobre 2026. Le texte commence par « Madeigascar is an Island towards the south, about a thousand miles from Scotra ». L'introduction du premier volume cite le préambule de Rusticiano, qui date de 1298 la mise par écrit du livre, dans la prison de Gênes. En note, Yule pense que Marco Polo mêle des renseignements sur Makdashau, Mogadiscio, et sur Madagascar ; Cordier rapporte qu'Alfred Grandidier y voit une description de Mogadiscio par un auteur qui ne connaissait pas l'île, que Gabriel Ferrand (1893) lit dans Madagascar « Country of the Malagash », mal transcrit de l'arabe, et que M. Guet (1888) le tire de Madax-Aschtoret, « île d'Astarté », étymologie que Cordier range parmi les fantaisies. La note 2 cite une carte de « S. Lorenzo (or Madagascar) » dans l'Isole de Porcacchi, en 1576."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1515,
+              "to": 1627,
+              "label": "De 1515 à 1627"
+            },
+            "era": "polity",
+            "statement": "Le nom Saint-Laurent est celui que les cartographes inscrivent sur l'île de 1515 à 1627 ; ensuite, les uns écrivent Madagascar ou Saint-Laurent, d'autres un seul des deux noms, selon Alfred Grandidier.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire de la géographie de Madagascar",
+                "author": "Alfred Grandidier",
+                "year": 1892,
+                "url": "https://archive.org/details/histoiredelago00gran",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 39",
+                "notes": "Paris, Imprimerie nationale, 1892, lu le 3 novembre 2026 en fac-similé sur Internet Archive. « De 1515 à 1627, les cartographes ont inscrit le nom de Saint-Laurent sur l'île que venaient de découvrir les Portugais. À partir de cette dernière date, les uns ont mis Madagascar ou Saint-Laurent », d'autres le seul nom d'île de Saint-Laurent, d'autres enfin celui de Madagascar."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Île Dauphine",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "Louis XIV, roi de France",
+        "shortLine": "Un nom que Louis XIV impose à l'île en 1665, et qui ne dure pas.",
+        "periodLabel": "1665",
+        "accounts": [
+          {
+            "period": {
+              "from": 1665,
+              "to": 1665,
+              "label": "1er juillet 1665"
+            },
+            "statement": "Le nom Île Dauphine est celui que des lettres patentes de Louis XIV imposent à l'île Saint-Laurent, « ci-devant nommée Madagascar », pour célébrer la naissance du Dauphin, selon Alfred Grandidier. Les autres pays ne l'adoptent pas, et il n'a pas cours longtemps en France.",
+            "formAsWritten": "île Dauphine",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis XIV",
+                "role": "roi de France, auteur des lettres patentes"
+              },
+              {
+                "name": "Compagnie des Indes orientales",
+                "role": "destinataire des lettres patentes"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire de la géographie de Madagascar",
+                "author": "Alfred Grandidier",
+                "year": 1892,
+                "url": "https://archive.org/details/histoiredelago00gran",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 32, note 1 et note d",
+                "notes": "Paris, Imprimerie nationale, 1892, lu le 3 novembre 2026 en fac-similé sur Internet Archive, page vérifiée sur l'image. « Le 1er juillet 1665, Louis XIV a imposé à l'île Saint-Laurent, ci-devant nommée Madagascar, le nom d'île Dauphine », par des lettres patentes adressées à la Compagnie des Indes orientales. La note d ajoute que ce nom « n'a jamais été accepté par les autres nations, et, même en France, il n'a pas eu cours longtemps »."
+              }
+            ]
           }
         ]
       },
@@ -401,6 +619,39 @@
         "namedBy": null,
         "periodLabel": "Début du XVIIe siècle",
         "accounts": [
+          {
+            "period": {
+              "from": 1603,
+              "to": 1613,
+              "label": "De 1603 à 1613"
+            },
+            "era": "polity",
+            "statement": "Le nom Ubuque figure dans des récits portugais : Diogo do Couto l'écrit Ubuque en 1603, et le père Luiz Mariano Buques en 1613, selon Alfred Grandidier. Sur la côte d'Afrique et aux Comores, l'île s'appelle Bouky ou Boukiny, en swahili. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Ubuque",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Diogo do Couto",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Luiz Mariano",
+                "role": "écrit la forme Buques"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire de la géographie de Madagascar",
+                "author": "Alfred Grandidier",
+                "year": 1892,
+                "url": "https://archive.org/details/histoiredelago00gran",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33, note 1",
+                "notes": "Paris, Imprimerie nationale, 1892, lu le 3 novembre 2026 en fac-similé sur Internet Archive. La page 33 dit que les gens de la côte d'Afrique et des Comores donnent à l'île le nom de Bouky ou Boukiny, en swahili. La note 1 précise : « On trouve ce nom dans quelques-unes des anciennes relations portugaises (sous la forme d'Ubuque, Diogo do Couto, 1603, ou de Buques, P. Luiz Mariano, 1613) »."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1613,
@@ -430,29 +681,30 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "São Lourenço (portugais)",
-        "Colonie de Madagascar (1896-1960)",
-        "République malgache (1960-1975)"
+        "Saint-Laurent (XVIe et XVIIe siècles)",
+        "Île Dauphine (1665)",
+        "République malgache (1958-1975)",
+        "République démocratique de Madagascar (1975-1992)"
       ],
-      "antiquity": "L'île était connue des navigateurs arabes et swahilis, mais n'avait pas de nom unique. Les Grecs anciens mentionnent des îles dans cette région.",
-      "middleAges": "Les navigateurs arabes et swahilis connaissaient l'île mais sans nom spécifique. Marco Polo mentionne \"Madageiscar\" au XIIIe siècle (référence probable à Mogadiscio).",
-      "precolonial": "Les Portugais appellent l'île \"São Lourenço\" (Saint-Laurent) au XVIe siècle. Les Européens utilisent progressivement \"Madagascar\" à partir du XVIIe siècle. Les peuples autochtones utilisent des noms régionaux (Imerina, Menabe, etc.).",
-      "colonization": "Les Français établissent la \"Colonie de Madagascar\" en 1896. Le nom \"Madagascar\" devient officiel. Les Malgaches continuent d'utiliser \"Madagasikara\" en malgache.",
-      "contemporary": "Après l'indépendance en 1960, le pays prend le nom de \"République malgache\" puis \"République de Madagascar\". Le nom officiel en français est \"République de Madagascar\" et en malgache \"Repoblikan'i Madagasikara\"."
+      "antiquity": "Des auteurs grecs et arabes connaissaient l'île sous d'autres noms que Madagascar : Ménuthias chez les Grecs, Djalouna, Chezbezat ou Komr chez les Arabes, selon Alfred Grandidier, qui identifie à Madagascar l'île Ménuthias des auteurs grecs.",
+      "middleAges": "Les géographes arabes al-Edrisi, vers 1154, et Yâqût, en 1224, mentionnent l'île, selon l'historien Luís Filipe Thomaz, et les Arabes d'Oman l'appellent El-Komr, selon Alfred Grandidier. Le nom Madagascar apparaît pour la première fois par écrit, sous la forme Madeigascar, dans le livre de Marco Polo, mis par écrit en 1298. Plusieurs auteurs pensent que le voyageur y décrit en partie ou entièrement Mogadiscio, sur la côte somalienne.",
+      "precolonial": "Les Portugais atteignent l'île en 1500 et l'appellent Saint-Laurent. Les cartographes européens inscrivent ce nom sur l'île de 1515 à 1627, puis écrivent « Madagascar ou Saint-Laurent », ou un seul des deux noms. Sur la côte d'Afrique et aux Comores, l'île s'appelle Bouky ou Boukiny, en swahili, et des récits portugais du début du XVIIe siècle l'écrivent Ubuque ou Buques. En 1613, le père Luiz Mariano note que les habitants ont un nom pour chaque province, mais aucun pour l'île entière. En 1665, Louis XIV impose le nom d'île Dauphine, qui ne dure pas. Au début du XIXe siècle, sous les souverains de l'Imerina Andrianampoinimerina et Radama Ier, on désigne l'île entière par des périphrases comme Izao rehetră izao, « ce pays-ci tout entier ». Ces faits sont rapportés par Alfred Grandidier.",
+      "colonization": "La France impose un protectorat par un traité de 1885, puis une loi du 6 août 1896 fait de Madagascar une colonie, selon l'historien Alain Tirefort. Le nom Madagascar reste celui de la colonie. En 1892, Alfred Grandidier note que ce nom, longtemps mal vu parce que sa dernière syllabe rappelle le mot malgache kary, « chat », est désormais officiellement accepté sous la forme Madagaskară.",
+      "contemporary": "En 1958, l'État de Madagascar prend le nom de République malgache, qu'il garde à l'indépendance, le 26 juin 1960. La Constitution de 1975 le renomme République démocratique de Madagascar, et celle de 1992 République de Madagascar, nom que reprend la Constitution de 2010. En malgache, le pays s'appelle Madagasikara, et la République Repoblikan'i Madagasikara, selon la liste des noms de pays des Nations unies."
     },
     "kingdoms": [
       {
         "name": "Royaume Merina",
-        "period": "XVIe siècle - 1896",
+        "period": "XVIe siècle - 1897",
         "entryType": "polity",
         "timeRange": {
           "startYear": 1501,
-          "endYear": 1896,
+          "endYear": 1897,
           "precision": "century"
         },
-        "dominantPeoples": ["Merina (Hova", "Andriana)"],
-        "politicalCenters": ["Antananarivo (capitale du royaume)"],
-        "historicalRole": "Le royaume Merina a unifié une grande partie de Madagascar au XIXe siècle sous les règnes de Radama I et Ranavalona I. Il a résisté à la colonisation française jusqu'en 1896."
+        "dominantPeoples": ["Merina"],
+        "politicalCenters": ["Ambohimanga", "Antananarivo"],
+        "historicalRole": "Le royaume merina a pour cœur l'Imerina, sur les hautes terres du centre. Au XVIIIe siècle, la colline d'Ambohimanga en est une capitale fortifiée, où Andrianampoinimerina est proclamé roi ; le palais royal passe à Antananarivo vers 1794, selon l'évaluation de l'ICOMOS pour l'UNESCO. Son fils Radama Ier, roi de 1810 à 1828, mène avec l'appui des Anglais une politique de conquête : il soumet la côte est en 1817 et prend Majunga, sur la côte ouest, en 1822. Le royaume prend fin avec la colonisation française : la monarchie est abolie en 1897 et la reine Ranavalona est exilée."
       },
       {
         "name": "Royaumes Sakalava",
@@ -463,22 +715,26 @@
           "endYear": 1900,
           "precision": "century"
         },
-        "dominantPeoples": ["Sakalava (Menabe", "Boina)"],
-        "politicalCenters": ["Morondava (Menabe)", "Mahajanga (Boina)"],
-        "historicalRole": "Les royaumes Sakalava étaient des puissances maritimes qui contrôlaient le commerce sur la côte ouest. Ils ont résisté à l'expansion merina."
+        "dominantPeoples": ["Sakalava"],
+        "politicalCenters": [
+          "Morondava (Menabe)",
+          "Majunga, ou Mahajanga (Boina)"
+        ],
+        "historicalRole": "Les royaumes sakalava se forment le long de la côte ouest, du sud vers le nord : le Fiherena, le Menabe, le Boina, puis le Nord-Ouest, autour d'un groupe royal, les Maroseraña, selon l'anthropologue Marie-Pierre Ballarin. La prise de Majunga par l'armée merina, en 1822, brise la royauté du Boina. À Majunga, les reliques des rois restent honorées lors d'un grand rituel, le bain des reliques."
       },
       {
         "name": "Confédération Betsimisaraka",
-        "period": "XVIIIe siècle",
+        "period": "XVIIIe siècle - 1817",
         "entryType": "polity",
         "timeRange": {
           "startYear": 1701,
-          "endYear": 1800,
-          "precision": "century"
+          "endYear": 1817,
+          "precision": "approximate",
+          "datingNote": "La confédération se forme dans la première moitié du XVIIIe siècle, sans année plus précise ; 1817 est l'année où Radama Ier soumet la côte est."
         },
         "dominantPeoples": ["Betsimisaraka"],
-        "politicalCenters": ["Toamasina (Tamatave)"],
-        "historicalRole": "Confédération formée au XVIIIe siècle par Ratsimilaho, unifiant les peuples de la côte est pour résister aux raids malgaches et européens."
+        "politicalCenters": ["Foulpointe"],
+        "historicalRole": "Dans la première moitié du XVIIIe siècle, Ratsimilaho rassemble sous son autorité les groupes de la côte est, du nord de la baie d'Antongil jusqu'au sud de Mahanoro. Ses descendants ne parviennent pas à transformer cette confédération en royaume unifié. Les Betsimisaraka sont alors les premiers fournisseurs d'esclaves des Mascareignes. En 1817, Radama Ier, roi de l'Imerina, soumet la région, selon l'historien Manassé Esoavelomandroso."
       },
       {
         "name": "Colonie française de Madagascar",
@@ -493,7 +749,7 @@
           "Tous les peuples malgaches sous administration coloniale française"
         ],
         "politicalCenters": ["Antananarivo (capitale coloniale)"],
-        "historicalRole": "Période de colonisation française qui a unifié administrativement toute l'île. Résistance malgache (révolte de 1947)."
+        "historicalRole": "La France fait de Madagascar une colonie par une loi du 6 août 1896, après un protectorat établi en 1885. Le général Gallieni, en poste à partir du 27 septembre 1896, mène une « pacification » contre les résistances, dont la révolte des Menalamba, selon Alain Tirefort. Dans la nuit du 29 mars 1947, une insurrection éclate contre le régime colonial ; sa répression est très dure, et elle prend officiellement fin en décembre 1948, selon l'anthropologue Jennifer Cole."
       },
       {
         "name": "République de Madagascar",
@@ -506,23 +762,19 @@
         },
         "dominantPeoples": ["Tous les peuples malgaches"],
         "politicalCenters": ["Antananarivo (capitale)"],
-        "historicalRole": "État indépendant depuis 1960, avec une histoire politique mouvementée incluant plusieurs coups d'État et périodes de transition."
+        "historicalRole": "Indépendant depuis 1960, l'État connaît plusieurs changements de pouvoir. Le président Philibert Tsiranana remet le pouvoir à l'armée en mai 1972, Didier Ratsiraka installe un pouvoir autoritaire en 1975, une transition démocratique a lieu de 1991 à 1993, et Marc Ravalomanana l'emporte sur Ratsiraka au terme de la crise de 2002. En 2009, après une mutinerie militaire, Ravalomanana remet ses pouvoirs, et Andry Rajoelina dirige une Haute Autorité de la Transition ; une nouvelle Constitution est adoptée par référendum en 2010, selon l'anthropologue Didier Galibert."
       }
     ],
     "majorPeoples": [
       {
         "name": "Merina",
         "selfAppellation": "Merina",
-        "exonyms": [
-          "Hova (terme historique",
-          "parfois utilisé de manière péjorative)",
-          "Imerina"
-        ],
+        "exonyms": ["Hova"],
         "peopleId": "PPL_MERINA",
         "mainRegion": "Hautes terres centrales (Antananarivo, Analamanga)",
         "languages": ["Malgache (dialecte merina)", "français"],
         "languageFamily": "FLG_AUSTRONESIENNE",
-        "appellationRemarks": "Le terme \"Hova\" était historiquement utilisé pour désigner la classe moyenne merina, mais peut avoir des connotations péjoratives dans certains contextes. L'auto-appellation \"Merina\" est préférée."
+        "appellationRemarks": "Dans la société de l'Imerina du XIXe siècle, le mot hova désigne les hommes libres, distincts des andriana, parents des souverains, selon l'anthropologue Lolona Nathalie Razafindralambo. Alfred Grandidier, en 1892, appelle Hova le peuple dont les souverains Andrianampoinimerina et Radama Ier ont soumis une grande partie de l'île."
       },
       {
         "name": "Betsimisaraka",
@@ -590,19 +842,74 @@
       }
     ],
     "culture": {
-      "culturalTraditions": "Famadihana (retournement des morts), riziculture en terrasses (hautes terres), élevage de zébus (côtes et sud), architecture en pierre traditionnelle, musique traditionnelle (valiha, sodina), danse traditionnelle (hira gasy), poésie orale (hainteny), artisanat (tissage, vannerie)",
-      "dominantReligions": "Croyances traditionnelles (culte des ancêtres - razana), christianisme (catholique et protestant), islam (minorité, surtout dans le nord et sur les côtes), syncrétisme religieux très présent",
-      "lifestyles": "Vie principalement rurale, agriculture (riz, manioc, vanille, café), élevage (zébus), pêche (côtes), commerce",
-      "socialOrganization": "Système de fokonolona (communautés villageoises), structure clanique patrilinéaire, organisation en familles étendues et lignages, importance des ancêtres (razana), système de castes chez les Merina (andriana, hova, andevo)",
-      "regionalRelations": "Relations historiques avec les peuples swahilis, interactions avec les peuples de l'océan Indien, diaspora importante en France, Réunion, Mayotte, et dans les pays occidentaux"
+      "mainLanguages": [
+        {
+          "name": "Malgache (malagasy)",
+          "isoCode": "mlg",
+          "isPrimary": true
+        },
+        {
+          "name": "Français",
+          "isoCode": "fra"
+        },
+        {
+          "name": "Malgache des plateaux (merina, betsileo)",
+          "isoCode": "plt"
+        },
+        {
+          "name": "Malgache betsimisaraka du Nord",
+          "isoCode": "bmm"
+        },
+        {
+          "name": "Malgache betsimisaraka du Sud",
+          "isoCode": "bzc"
+        },
+        {
+          "name": "Malgache sakalava",
+          "isoCode": "skg"
+        },
+        {
+          "name": "Malgache tandroy-mahafaly",
+          "isoCode": "tdx"
+        },
+        {
+          "name": "Malgache tsimihety",
+          "isoCode": "xmw"
+        },
+        {
+          "name": "Malgache antankarana",
+          "isoCode": "xmv"
+        },
+        {
+          "name": "Malgache bara",
+          "isoCode": "bhr"
+        },
+        {
+          "name": "Malgache tanosy",
+          "isoCode": "txy"
+        },
+        {
+          "name": "Malgache tesaka",
+          "isoCode": "tkg"
+        },
+        {
+          "name": "Malgache masikoro",
+          "isoCode": "msh"
+        }
+      ],
+      "culturalTraditions": "Sur les hautes terres, le culte des ancêtres et celui des rois restent vivants : la colline royale d'Ambohimanga, inscrite au patrimoine mondial de l'UNESCO en 2001, est encore un lieu de pèlerinage. Le famadihana consiste à sortir régulièrement les corps des tombeaux collectifs de la famille avant de les inhumer de nouveau ; la plupart des auteurs en situent l'origine autour du XIXe siècle, selon une étude archéologique menée en Imerina. Sur la côte ouest, à Majunga, les reliques des rois sakalava sont honorées chaque année en septembre, lors du fanompoana.",
+      "dominantReligions": "Selon l'enquête démographique et de santé menée en 2021 par l'INSTAT, la plupart des personnes de 15 à 49 ans se disent chrétiennes : 76 % des femmes et 71 % des hommes. Environ un tiers se déclarent catholiques, et un autre tiers membres des Églises protestantes FJKM ou FLM ou de l'Église anglicane. Une femme sur cinq et un homme sur quatre se disent sans religion ; 1 à 2 % se disent musulmans, et autant de religion traditionnelle. Le culte des ancêtres reste une croyance vivante, selon l'ICOMOS. La Constitution de 2010 affirme la neutralité de l'État à l'égard des religions.",
+      "lifestyles": "Au recensement de 2018, plus de quatre habitants sur cinq vivent à la campagne : la population urbaine représente 19,3 % du total. Sur les hautes terres, on cultive le riz dans des rizières en terrasses irriguées. Selon le projet de recherche EPR de l'École polytechnique fédérale de Zurich, les Betsimisaraka de la côte est sont surtout agriculteurs, et les Sakalava de l'ouest élèvent du bétail.",
+      "socialOrganization": "La Constitution de 2010 fait du fokonolona, la communauté des habitants organisée en fokontany au sein des communes, « la base du développement et de la cohésion socio-culturelle ». En Imerina, la société du XIXe siècle était divisée en quatre groupes de statut : les andriana, parents proches ou éloignés des souverains, les hova, hommes libres, les mainty et les andevo, les esclaves. L'esclavage a été aboli au début de la colonisation, mais les descendants d'esclaves restent souvent désignés comme tels, selon l'anthropologue Lolona Nathalie Razafindralambo.",
+      "regionalRelations": "Les liens avec la côte d'Afrique de l'Est sont anciens : selon Philippe Beaujard, des populations venues de cette côte s'installent dans l'île dès le premier millénaire et y apportent des plantes cultivées. Sur la côte d'Afrique et aux Comores, l'île porte un nom swahili, Bouky, selon Alfred Grandidier. Au XVIIIe siècle, les Betsimisaraka de la côte est fournissent des esclaves aux Mascareignes, les îles de La Réunion et Maurice, à des traitants français."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement de l'île par des migrations austronésiennes (500-700 ap. J.-C.) depuis l'Asie du Sud-Est (probablement Bornéo) et migrations bantoues depuis l'Afrique de l'Est. Fusion des cultures austronésienne et bantoue créant une culture malgache unique.",
-      "middleAges": "Développement de royaumes et chefferies sur toute l'île. Contacts avec les navigateurs arabes et swahilis. Introduction de l'islam dans certaines régions côtières.",
-      "precolonial": "Apogée des royaumes Sakalava (XVIIe-XVIIIe siècles) sur la côte ouest. Formation de la confédération Betsimisaraka (XVIIIe siècle) sur la côte est. Expansion et unification du royaume Merina (XIXe siècle) sous Radama I et Ranavalona I. Tentatives de modernisation et résistance à l'influence européenne.",
-      "colonization": "Établissement du protectorat français en 1885, puis colonie en 1896. Résistance malgache à la colonisation. Révolte de 1947 violemment réprimée (tens of thousands de morts). Développement de plantations (vanille, café, girofle) et exploitation des ressources.",
-      "independenceStruggle": "Mouvements nationalistes dans les années 1950. Indépendance obtenue en 1960. Première République malgache.",
-      "postIndependence": "Histoire politique mouvementée avec plusieurs coups d'État (1972, 2009). Périodes de transition et instabilité politique. Défis économiques et sociaux persistants. Crises politiques récurrentes affectant le développement."
+      "ancientPeriods": "La langue malgache est apparentée aux langues barito du Sud-Est, parlées à Kalimantan, la partie indonésienne de Bornéo : Glottolog la range dans ce groupe de la famille austronésienne. Selon l'historien Philippe Beaujard, des Austronésiens venus d'Asie du Sud-Est s'installent à Madagascar au cours du premier millénaire de notre ère. Les chercheurs proposent des dates différentes : vers 400 ou 700 selon Otto Christian Dahl, vers le VIIIe siècle selon Alexander Adelaar. Un peu plus tard, des populations venues de la côte d'Afrique de l'Est apportent d'autres plantes, comme le sorgho ou la banane. À la fin du premier millénaire, les côtes et les hautes terres sont déjà habitées, et les cultures se mêlent.",
+      "middleAges": "Au deuxième millénaire, les migrations continuent depuis l'Asie du Sud-Est, la côte d'Afrique de l'Est et l'Inde, selon Philippe Beaujard. Les géographes arabes al-Edrisi, vers 1154, et Yâqût, en 1224, mentionnent l'île, selon Luís Filipe Thomaz. Sur les hautes terres, des seigneurs locaux recherchent à partir du XVe siècle des collines faciles à défendre, où ils construisent des enceintes fortifiées comme celle d'Ambohimanga, selon l'évaluation de l'ICOMOS pour l'UNESCO.",
+      "precolonial": "Les Portugais atteignent l'île en 1500. Sur la côte ouest, les royaumes sakalava se forment du sud vers le nord : le Fiherena, le Menabe, puis le Boina. Sur la côte est, Ratsimilaho réunit dans la première moitié du XVIIIe siècle les groupes de la côte en une confédération betsimisaraka, qui fournit des esclaves aux Mascareignes. Sur les hautes terres, le royaume de l'Imerina s'étend sous Andrianampoinimerina, puis sous son fils Radama Ier, roi de 1810 à 1828, qui soumet la côte est en 1817 avec l'appui des Anglais et prend Majunga en 1822. La reine Ranavalona Ire règne de 1828 à 1861.",
+      "colonization": "Un traité de 1885 établit un protectorat français, puis une loi du 6 août 1896 fait de Madagascar une colonie. Le général Gallieni, en poste à partir du 27 septembre 1896, mène une guerre de « pacification » contre les résistances, dont la révolte des Menalamba. En 1897, la monarchie est abolie et la reine Ranavalona est exilée ; la même année, les autorités coloniales transfèrent à Antananarivo les restes des souverains enterrés à Ambohimanga, pour ôter au site son caractère sacré. Dans la nuit du 29 mars 1947, une insurrection éclate contre le régime colonial, surtout sur la côte est ; elle prend officiellement fin en décembre 1948. Le nombre de morts reste discuté : Jacques Tronchon l'estime à plus de 100 000 du côté malgache, selon Jennifer Cole, tandis que Jean Fremigacci compte 10 000 personnes tuées par l'armée française et 20 000 à 30 000 morts de faim et de maladie, selon Guillaume Bridet.",
+      "independenceStruggle": "Après l'insurrection de 1947, les Français accusent les chefs du MDRM, le parti politique malgache dont les députés luttaient pour l'indépendance, selon Jennifer Cole. En 1958, l'État de Madagascar prend le nom de République malgache. Le pays accède à l'indépendance en juin 1960 ; les États-Unis reconnaissent la République malgache le 25 juin 1960, par une lettre adressée au président Philibert Tsiranana, selon le Département d'État américain.",
+      "postIndependence": "Après l'indépendance, le régime de Philibert Tsiranana garde des liens étroits avec la France, selon Jennifer Cole. En mai 1972, Tsiranana remet le pouvoir à l'armée ; en 1975, Didier Ratsiraka installe un pouvoir autoritaire. Une transition démocratique encadrée par les Églises a lieu de 1991 à 1993. En 2002, Marc Ravalomanana l'emporte sur Ratsiraka après plusieurs mois de conflit. En 2009, une mutinerie militaire pousse Ravalomanana à remettre ses pouvoirs, et Andry Rajoelina dirige une Haute Autorité de la Transition. La Constitution de 2010 est adoptée par référendum avec 74,19 % de « oui », selon l'anthropologue Didier Galibert."
     },
     "sources": [
       {
@@ -633,7 +940,8 @@
         "title": "UNFPA – World Population Dashboard — Madagascar",
         "url": "https://www.unfpa.org/data/world-population/MG",
         "tier": "official",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": "Tableau de bord de la population mondiale du Fonds des Nations unies pour la population, lu le 3 novembre 2026 : population totale de 32 700 000 habitants en 2025."
       },
       {
         "title": "Études anthropologiques sur les peuples malgaches",
@@ -662,7 +970,169 @@
         "url": "https://growup.ethz.ch/atlas/pdf/Madagascar.pdf",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Donne la part des cinq groupes les plus nombreux : Merina 27 %, Betsimisaraka 15 %, Betsileo 13 %, Antandroy 8 %, Sakalava 5 %. Les recensements malgaches ne relèvent pas l'appartenance ethnique — celui de 2018 a dénombré 25,7 millions d'habitants sans poser la question —, si bien qu'aucune répartition officielle n'existe et que ces parts restent des estimations. Nous rappelons que les dix-huit groupes dits officiels ont été figés par l'administration coloniale française plus que par des frontières culturelles nettes, et que les Bara et les Sihanaka relèvent des deux grands ensembles à la fois, raison pour laquelle ils ne reçoivent pas de part propre."
+        "notes": "Fiche du projet de recherche sur les relations de pouvoir ethniques, lue le 3 novembre 2026, en anglais. Elle donne la part des cinq groupes les plus nombreux, d'après des travaux des années 1990 : Merina environ 27 %, Betsimisaraka 15 %, Betsileo 13 %, Tandroy 8 % et Sakalava 5 %. Elle indique que certains comptent jusqu'à vingt groupes, que les Betsimisaraka de la côte est sont surtout agriculteurs et que les Sakalava de l'ouest élèvent du bétail. Elle distingue deux grands ensembles, les gens des hautes terres et les côtiers ; les Bara et les Sihanaka relèvent des deux à la fois. Ces parts sont des estimations : le recensement de 2018 ne publie pas de répartition par groupe ethnique."
+      },
+      {
+        "title": "Résultats globaux du troisième Recensement général de la population et de l'habitation (RGPH-3) de 2018, tome 1",
+        "author": "Institut national de la statistique (INSTAT) de Madagascar",
+        "year": 2020,
+        "url": "https://www.instat.mg/documents/upload/main/INSTAT_RGPH3-Definitif-ResultatsGlogaux-Tome1_17-2021.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport de l'INSTAT daté de décembre 2020, mis en ligne en 2021, lu le 3 novembre 2026. Page 11 : le recensement de 2018 compte 25 674 196 habitants dans les ménages ordinaires. Tableau 5, page 15 : 4 942 902 d'entre eux vivent en ville, soit un taux d'urbanisation de 19,3 %. Tableau 31, page 47 : parmi les personnes de 3 ans ou plus, 99,9 % déclarent parler le malagasy, 23,6 % le français et 8,2 % l'anglais. Le recensement ne publie pas de répartition de la population par groupe ethnique. Pages lues : p. 11, 15 et 47."
+      },
+      {
+        "title": "Constitution de la Quatrième République de Madagascar, promulguée le 11 décembre 2010, texte publié par WIPO Lex",
+        "author": "République de Madagascar",
+        "year": 2010,
+        "url": "https://www.wipo.int/wipolex/fr/legislation/details/13738",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte français diffusé par la base WIPO Lex de l'Organisation mondiale de la propriété intellectuelle, lu le 3 novembre 2026. Article 4 : « La langue nationale est le malagasy » et « Les langues officielles sont le malagasy et le français ». Article 2 : « L'État affirme sa neutralité à l'égard des différentes religions ». Article 152 : « Le Fokonolona, organisé en fokontany au sein des communes, est la base du développement et de la cohésion socio-culturelle et environnementale ». Pages lues : articles 2, 4 et 152."
+      },
+      {
+        "title": "ISO 639-3 — code mlg, Malagasy",
+        "author": "SIL International, autorité d'enregistrement de la norme ISO 639-3",
+        "year": null,
+        "url": "https://iso639-3.sil.org/code/mlg",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice lu le 3 novembre 2026. Le code mlg désigne le malgache comme une « macrolangue », qui regroupe le malgache des plateaux (plt), le betsimisaraka du Nord (bmm) et du Sud (bzc), le tsimihety (xmw), l'antankarana (xmv), le sakalava (skg), le masikoro (msh), le bara (bhr), le tanosy (txy), le tesaka (tkg) et le tandroy-mahafaly (tdx)."
+      },
+      {
+        "title": "Glottolog — Malagasic (mala1537)",
+        "author": "Glottolog",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/mala1537",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du catalogue Glottolog et arbre de classement associé, lu le 3 novembre 2026. Glottolog range les langues malgaches dans le groupe barito du Sud-Est, au sein de la famille austronésienne. Le merina, le betsileo, le sihanaka et le tañala y sont des variétés du malgache des plateaux (plt)."
+      },
+      {
+        "title": "Enquête démographique et de santé à Madagascar (EDSMD-V) 2021",
+        "author": "Institut national de la statistique (INSTAT) et ICF",
+        "year": 2022,
+        "url": "https://dhsprogram.com/pubs/pdf/FR376/FR376.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport publié en août 2022 par l'INSTAT et le programme DHS, lu le 3 novembre 2026. Parmi les personnes de 15 à 49 ans interrogées, 76 % des femmes et 71 % des hommes se disent chrétiens. Tableau 3.1, femmes puis hommes : catholiques 32,5 % et 31,8 % ; FJKM, FLM ou anglicans 34,6 % et 32,5 % ; autres chrétiens 8,5 % et 7,1 % ; musulmans 1,3 % et 1,8 % ; religion traditionnelle 2,0 % et 1,1 % ; sans religion 20,6 % et 25,0 %. Pages lues : p. 38 et tableau 3.1."
+      },
+      {
+        "title": "Histoire de la géographie de Madagascar",
+        "author": "Alfred Grandidier",
+        "year": 1892,
+        "url": "https://archive.org/details/histoiredelago00gran",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Paris, Imprimerie nationale, 1892, ouvrage écrit pendant le protectorat français ; lu le 3 novembre 2026 en fac-similé sur Internet Archive. Page 32 : le père Luiz Mariano écrit en 1613 que « les naturels ont un nom pour chaque province, mais ils n'en ont pas pour désigner l'île entière ; le nom de Madagascar est d'origine étrangère, comme celui d'île de Saint-Laurent ». Même page : le 1er juillet 1665, Louis XIV « a imposé à l'île Saint-Laurent, ci-devant nommée Madagascar, le nom d'île Dauphine ». Page 33 : les Arabes d'Oman appellent l'île El-Komr, et ceux de la côte d'Afrique et des Comores Bouky ou Boukiny, en swahili ; la note 1 relève les formes Ubuque chez Diogo do Couto (1603) et Buques chez le père Luiz Mariano (1613). Au début du XIXe siècle, sous Andrianampoinimerina et Radama Ier, on désigne l'île entière par des périphrases, comme Izao rehetră izao, « ce pays-ci tout entier », ou Ny anivon' ny riakă, « le pays qui est au milieu de la mer ». Le nom de Madagascar, longtemps mal vu à cause de sa dernière syllabe, proche du mot malgache kary, « chat », est « officiellement accepté sous la forme de Madagaskară ». Pages 35-36 : les Grecs et les Arabes connaissaient l'île sous les noms de Ménuthias, Djalouna, Chezbezat et Komr ; le globe de Martin Behaim (1492) place une île imaginaire nommée Madagascar d'après Marco Polo, et les géographes l'ont ensuite confondue avec l'île « que les Portugais ont découverte en 1500 et qu'ils ont appelée Saint-Laurent », après le voyage de Diogo Diaz. Page 39 : « De 1515 à 1627, les cartographes ont inscrit le nom de Saint-Laurent » sur l'île. Pages lues : p. 32-39."
+      },
+      {
+        "title": "Colline royale d'Ambohimanga (Madagascar), n° 950 — évaluation de l'ICOMOS et décision du Comité du patrimoine mondial",
+        "author": "UNESCO, Centre du patrimoine mondial ; ICOMOS",
+        "year": 2001,
+        "url": "https://whc.unesco.org/uploads/nominations/950.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Dossier d'inscription publié par l'UNESCO, avec l'évaluation de l'ICOMOS de septembre 2001, lu le 3 novembre 2026. Le site est inscrit le 16 décembre 2001. Ambohimanga existe depuis le XVe siècle au moins et devient au XVIIIe siècle une capitale fortifiée ; le palais royal est transféré à Antananarivo « probablement avant 1794 », et Andrianampoinimerina est proclamé roi sur le rocher de la justice. La reine Ranavalona Ire (1828-1861) fait bâtir le mur d'enceinte. En mars 1897, les autorités françaises transfèrent les restes des souverains à Antananarivo « dans le but de supprimer la signification sacrée » du site. Le texte décrit le « culte des Ancêtres » comme une croyance « toujours vivante », un lieu de pèlerinage, et les « rizières en terrasses irriguées » des hautes terres. Pages lues : p. 76-80."
+      },
+      {
+        "title": "The first migrants to Madagascar and their introduction of plants: linguistic and ethnological evidence",
+        "author": "Philippe Beaujard",
+        "year": 2011,
+        "url": "https://shs.hal.science/halshs-00706173",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article paru dans Azania: Archaeological Research in Africa, vol. 46, n° 2, 2011, déposé en accès libre dans l'archive HAL, lu le 3 novembre 2026, en anglais. L'auteur écrit que des Austronésiens s'installent à Madagascar au cours du premier millénaire de notre ère, qu'un peu plus tard des populations venues de la côte d'Afrique de l'Est apportent d'autres plantes (sorgho, niébé, pois bambara, bananes), et qu'à la fin du premier millénaire les côtes et les hautes terres sont déjà habitées. Il rappelle la parenté du malgache avec les langues barito du Sud-Est de Kalimantan, connue depuis Otto Christian Dahl (1951), et les dates proposées : vers 400 ou 700 selon Dahl, vers le VIIIe siècle selon Alexander Adelaar. Les migrations continuent au deuxième millénaire depuis l'Asie du Sud-Est, la côte d'Afrique de l'Est et l'Inde. Pages lues : p. 169-171."
+      },
+      {
+        "title": "La découverte de Madagascar par les Portugais au XVIe siècle",
+        "author": "Luís Filipe F. R. Thomaz",
+        "year": 2009,
+        "url": "https://www.persee.fr/doc/arch_0044-8613_2009_num_78_1_4147",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article paru dans la revue Archipel, n° 78, 2009, p. 153-180, première page lu le 3 novembre 2026 sur Persée. L'auteur rappelle que l'île était connue des Arabes avant les Européens : al-Edrisi, vers 1154, et Yâqût, en 1224, sont les premiers géographes à la mentionner, et l'Europe l'apprend par Marco Polo, qui mêle des renseignements sur Madagascar et sur Mogadiscio. Pages lues : p. 153."
+      },
+      {
+        "title": "Les Betsimisaraka aux XVIII-XIXe siècles : une population maritime obligée de tourner le dos à la mer",
+        "author": "Manassé Esoavelomandroso",
+        "year": 1987,
+        "url": "https://books.openedition.org/psorbonne/25971",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre de l'ouvrage Horizons marins, itinéraires spirituels (Ve-XVIIIe siècles), volume II, dirigé par Henri Dubois, Jean-Claude Hocquet et André Vauchez, Éditions de la Sorbonne, 1987, lu le 3 novembre 2026 sur OpenEdition Books. « Dans la première moitié du XVIIIe siècle, le malata (mulâtre ou métis) Ratsimilaho réussit à regrouper sous son autorité les différents groupes claniques de la côte est », du nord de la baie d'Antongil au sud de Mahanoro ; ses descendants « n'ont pas réussi à la transformer en monarchie unitaire ». Les Betsimisaraka sont alors « les premiers fournisseurs des Mascareignes en esclaves ». Iavy, petit-fils de Ratsimilaho, est roi de Foulpointe. « En 1817, Radama Ier — roi de l'Imerina — dans sa volonté d'unifier l'île, soumet cette région ». Pages lues : p. 289-294."
+      },
+      {
+        "title": "Culte des ancêtres royaux et légitimation du pouvoir dans la région de Majunga (nord-ouest de Madagascar)",
+        "author": "Marie-Pierre Ballarin",
+        "year": 2006,
+        "url": "https://journals.openedition.org/jda/509",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article paru dans le Journal des anthropologues, n° 104-105, 2006, lu le 3 novembre 2026 sur OpenEdition Journals. Les royautés sakalava se sont édifiées « en suivant un tracé migratoire du sud au nord de la côte ouest » : monarchies du Fiherena, du Menabe, du Boina et du Nord-Ouest, issues du groupe royal Maroseraña. Radama Ier règne sur les Merina de 1810 à 1828 ; « la prise de Majunga en 1822 par l'armée merina brise la structure de la royauté du Boina ». Les reliques royales de Majunga sont honorées lors du bain des reliques, au fanompoana de septembre. Pages lues : p. 191-217."
+      },
+      {
+        "title": "La « pacification » de Madagascar : septembre 1896 - mai 1905",
+        "author": "Alain Tirefort",
+        "year": 2006,
+        "url": "https://books.openedition.org/pur/26059",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre de l'ouvrage Guerres et paix en Afrique noire et à Madagascar, dirigé par Alain Tirefort, Presses universitaires de Rennes, 2006, lu le 3 novembre 2026 sur OpenEdition Books. Un traité de 1885 instaure un « protectorat fantôme » ; l'île est « annexée par voie législative — loi promulguée le 6 août 1896 » ; Gallieni prend ses fonctions le 27 septembre 1896 ; 1897 est l'« année de l'abolition de la monarchie, de la déposition et de l'exil de la reine Ranavalona ». La révolte des Menalamba (« toges rouges ») embrase l'Imerina au printemps 1896. Pages lues : p. 187-203."
+      },
+      {
+        "title": "Quand la mémoire resurgit : la rébellion de 1947 et la représentation de l'État contemporain à Madagascar",
+        "author": "Jennifer Cole",
+        "year": 1997,
+        "url": "https://journals.openedition.org/terrain/3165",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article paru dans la revue Terrain, n° 28, 1997, lu le 3 novembre 2026 sur OpenEdition Journals. « Dans la nuit du 29 mars, un large réseau constitué de groupes mécontents du régime colonial déclencha une insurrection », surtout sur la côte est ; elle prend officiellement fin en décembre 1948. Les Français accusent les chefs du MDRM, « le parti politique malgache dont les députés s'étaient battus pour l'indépendance ». Le nombre des morts est « sujet à controverse » : Jacques Tronchon (1986) l'estime à plus de 100 000 du côté malgache. Après l'indépendance de 1960, « le régime conserva des liens étroits avec la France ». Pages lues : p. 9-28."
+      },
+      {
+        "title": "1947 : Jean-Luc Raharimanana et Thierry Bedard contre l'oubli",
+        "author": "Guillaume Bridet",
+        "year": 2009,
+        "url": "https://journals.openedition.org/itineraires/313",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article paru dans la revue Itinéraires, 2009-2, lu le 3 novembre 2026 sur OpenEdition Journals. Note 16 : « Jean Fremigacci avance le chiffre de 10 000 morts pour les massacres perpétrés par l'armée française » ; les 20 000 ou 30 000 autres morts seraient dus, selon lui, à la malnutrition et à la maladie ; Jacques Tronchon avance des chiffres beaucoup plus élevés. Pages lues : p. 147-165, note 16."
+      },
+      {
+        "title": "Rigidités et « glocalisation » : un regard anthropologique sur la crise malgache (2009-2011)",
+        "author": "Didier Galibert",
+        "year": 2011,
+        "url": "https://journals.openedition.org/com/6325",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article paru dans Les Cahiers d'Outre-Mer, n° 255, 2011, lu le 3 novembre 2026 sur OpenEdition Journals. Le président Tsiranana remet les pleins pouvoirs au général Ramanantsoa le 18 mai 1972 ; Didier Ratsiraka consolide un pouvoir autoritaire en juin 1975 ; la transition démocratique de 1991-1993 est encadrée par les Églises ; Marc Ravalomanana l'emporte sur Ratsiraka entre janvier et juillet 2002. En 2009, après la mutinerie du CAPSAT le 8 mars, Ravalomanana remet ses pouvoirs à un directoire militaire le 17 mars ; Andry Rajoelina dirige la Haute Autorité de la Transition. Le référendum constitutionnel de 2010 donne 74,19 % de « oui », avec une participation officielle de 52,61 %. Pages lues : p. 413-426."
+      },
+      {
+        "title": "Les statuts sociaux dans les Hautes Terres malgaches à la lumière des archives missionnaires norvégiennes",
+        "author": "Lolona Nathalie Razafindralambo",
+        "year": 2008,
+        "url": "https://journals.openedition.org/atelierslesc/2122",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article paru dans Ateliers, n° 32, 2008, lu le 3 novembre 2026 sur OpenEdition Journals. La société de l'Imerina du XIXe siècle « a été divisée en quatre groupes statutaires » : « les andriana, parents proches ou éloignés des souverains ; les hova (hommes libres) ; les mainty ; les andevo » (esclaves). L'abolition de l'esclavage au début de la colonisation a « cristallisé » ces statuts, et les descendants d'esclaves sont « toujours appelés esclaves »."
+      },
+      {
+        "title": "Pratiques funéraires et sépultures collectives : les hautes terres de Madagascar",
+        "author": "Yann Ardagna, Andritiana Lahatra Rakotomavo, Fanilo Elise Ravokatra et al.",
+        "year": 2025,
+        "url": "https://journals.openedition.org/bmsap/14513",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article paru dans les Bulletins et mémoires de la Société d'anthropologie de Paris, vol. 37, 2025, lu le 3 novembre 2026 sur OpenEdition Journals. Le famadihana est « un rituel qui consiste à sortir régulièrement les corps des tombeaux collectifs avant leur réinhumation », étudié ici en Imerina ; la plupart des auteurs en situent l'origine « autour du XIXe siècle »."
+      },
+      {
+        "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Madagascar",
+        "author": "Office of the Historian, Département d'État des États-Unis",
+        "year": null,
+        "url": "https://history.state.gov/countries/madagascar",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Notice lu le 3 novembre 2026. « The United States recognized the Malagasy Republic on June 25, 1960 », par une lettre du président Eisenhower au président Philibert Tsiranana."
       }
     ],
     "demographics": {
@@ -709,15 +1179,12 @@
           "languageFamily": "FLG_AUSTRONESIENNE",
           "mainLanguageCode": "skg",
           "percentageInCountry": 5
-        },
-        {
-          "name": "Autres groupes ethniques",
-          "peopleId": null,
-          "region": "Divers",
-          "languageFamily": null,
-          "percentageInCountry": 32
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "Madagascar est un pays et une grande île de l'océan Indien. Son nom apparaît chez Marco Polo en 1298 ; en malgache, le pays s'appelle Madagasikara.",
+      "followUp": "Quels autres noms l'île a-t-elle portés avant Madagascar ?"
     }
   }
 }
