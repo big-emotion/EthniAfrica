@@ -244,7 +244,7 @@
     ]
   },
   "content": {
-    "vehicularRole": null,
+    "vehicularRole": "national_official",
     "dialects": [
       "Amu",
       "Bajuni",
@@ -260,14 +260,19 @@
       "Siu",
       "Unguja"
     ],
-    "vitalityStatus": null,
+    "vitalityStatus": {
+      "status": "National",
+      "scale": "EGIDS (Ethnologue)",
+      "asOf": 2025
+    },
+    "originDebated": true,
     "sources": [
       {
         "title": "Glottolog 5.3 - Swahili",
         "url": "https://glottolog.org/resource/languoid/id/swah1253",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Glottolog direct official languoid record; source of the name and glottocode. Les dialectes listés sont les sous-languoids que Glottolog rattache à swah1253, hors languoids portant leur propre code ISO 639-3."
+        "notes": "Glottolog direct official languoid record; source of the name and glottocode. Les dialectes listés sont les sous-languoids que Glottolog rattache à swah1253, hors languoids portant leur propre code ISO 639-3. Lu de nouveau le 3 novembre 2026 : la notice reprend d'Ethnologue (2025) le niveau 1, « langue nationale », et situe la langue au Burundi, au Kenya, au Mozambique, en Ouganda, au Rwanda, en Somalie et en Tanzanie."
       },
       {
         "title": "Robinson, Morgan J., « History of the Standard Swahili Language », Oxford Research Encyclopedia of African History, 2024",
@@ -290,6 +295,20 @@
         "source_kind": "academic",
         "notes": "Lu sur la numérisation d'archive.org (texte reconnu automatiquement) ; le texte arabe n'a pas été consulté. Page 378 : « the country of the Sawahil [Coastlands] », où se trouve Kilwa. Le traducteur donne au mot le sens de côte."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers",
+        "reason": "Nous n'avons pas trouvé de recensement qui compte, pays par pays, les personnes qui parlent le swahili."
+      },
+      {
+        "field": "nameHistory.names[1].pronunciation",
+        "reason": "Nous n'avons pas encore trouvé de dictionnaire qui indique comment se prononce le nom kiswahili."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Le swahili, ou kiswahili, est une langue bantoue de la côte d'Afrique de l'Est. On le parle du Kenya et de la Tanzanie jusqu'au Mozambique.",
+      "followUp": "Pourquoi le nom d'une langue bantoue vient-il d'un mot arabe ?"
+    }
   }
 }
