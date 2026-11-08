@@ -12,7 +12,7 @@ import { evaluateSourceUrl } from "@/lib/sources/authorized-source-catalog";
 
 const fullRow = {
   id: "src-1",
-  source_key: "ethnologue-2024",
+  source_key: "ethnologue",
   source_kind: "linguistic_reference",
   tier: "referenced",
   identifiers: { isbn: "978-0-00-000000-0", doi: 42, issn: null },
@@ -37,7 +37,7 @@ describe("mapRowToSource", () => {
 
     expect(source).toMatchObject({
       id: "src-1",
-      sourceKey: "ethnologue-2024",
+      sourceKey: "ethnologue",
       sourceKind: "linguistic_reference",
       tier: "referenced",
       title: "Ethnologue",
