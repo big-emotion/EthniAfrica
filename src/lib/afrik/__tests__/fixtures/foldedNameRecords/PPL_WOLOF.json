@@ -11,23 +11,197 @@
       "nameText": "Wolof",
       "nameType": "endonym",
       "languageOfOrigin": "wol",
-      "meaning": null,
-      "periodLabel": "Usage contemporain",
+      "meaning": "Le nom Wolof aurait « sans doute de l'analogie » avec celui du royaume du Oualo, le Waalo, qui faisait autrefois partie de l'empire du Jolof, selon l'avant-propos du dictionnaire de Jean Dard. La même note signale que « noir » se dit yolof en wolof, sans dire si les deux mots sont liés.",
+      "periodLabel": "Écrit dès 1757 ; en usage aujourd'hui",
       "imposedBy": null,
       "impositionPeriod": null,
       "whyProblematic": null,
-      "contemporaryUsage": "Terme universellement adopté aujourd'hui en français et en anglais, aussi bien par la communauté elle-même que par l'extérieur.",
+      "contemporaryUsage": "Le nom Wolof est celui qu'emploient aujourd'hui les statistiques officielles du Sénégal. Dans l'enquête nationale de santé de 2023, 39,3 % des femmes et 41,6 % des hommes de 15 à 49 ans interrogés se disent wolof. L'Inalco, à Paris, parle d'une « ethnie éponyme » : le peuple porte le même nom que sa langue.",
       "sortRank": 0,
       "sources": [
         {
-          "title": "SIL Ethnologue — Wolof (wol)",
-          "author": "SIL International",
-          "year": 2024,
-          "url": "https://www.ethnologue.com/language/wol/",
-          "tier": "official",
-          "notes": "Source également citée par la fiche du peuple Wolof."
+          "title": "Dictionnaire français-wolof et français-bambara, suivi du dictionnaire wolof-français",
+          "author": "Jean Dard ; avant-propos non signé",
+          "year": 1825,
+          "url": "https://archive.org/details/dictionnairefra01dardgoog",
+          "tier": "referenced",
+          "notes": "Paris, Imprimerie royale, 1825. Lue dans la numérisation d'Internet Archive. La note de l'avant-propos compare les graphies du nom et cite William Singleton.",
+          "source_kind": "archive"
         }
-      ]
+      ],
+      "attestations": [
+        {
+          "formAsWritten": "Oualofes",
+          "year": 1757,
+          "periodLabel": "1757 (séjour de 1749 à 1753)",
+          "attestedBy": "Michel Adanson",
+          "source": {
+            "title": "Histoire naturelle du Sénégal. Coquillages. Avec la relation abrégée d'un voyage fait en ce pays, pendant les années 1749, 50, 51, 52 & 53",
+            "author": "Michel Adanson",
+            "year": 1757,
+            "url": "https://archive.org/details/histoirenaturell00adan",
+            "tier": "referenced",
+            "notes": "Paris, Claude-Jean-Baptiste Bauche, 1757 : récit du séjour du naturaliste au Sénégal de 1749 à 1753. Lu dans la numérisation d'Internet Archive.",
+            "page": "p. 23"
+          }
+        }
+      ],
+      "shortLine": "Le nom que les Wolof se donnent ; il désigne aussi leur langue.",
+      "namedBy": null,
+      "originDebated": true,
+      "usedIn": ["wol", "fra", "eng"]
+    },
+    {
+      "nameText": "Jolof",
+      "nameType": "exonym",
+      "languageOfOrigin": "wol",
+      "meaning": "Le nom Jolof est d'abord celui d'un État. L'historien Boubacar Barry écrit que la confédération du Jolof s'est formée après la crise qui suivit la mort du souverain du Mali Mansa Sulayman, en 1360. Son chef, Njajaan Njaay, a étendu son pouvoir sur le nord de la Sénégambie, entre le fleuve Gambie et le fleuve Sénégal. La confédération s'est défaite au XVIe siècle.",
+      "periodLabel": "Écrit dès 1455 ; encore employé au XXe siècle",
+      "imposedBy": "Des Européens, selon Sigismund Koelle",
+      "impositionPeriod": "1854",
+      "whyProblematic": "Le nom Jolof est celui que les Européens donnent aux Wolof, écrit en 1854 le missionnaire allemand Sigismund Koelle, d'après un informateur wolof installé à Freetown, en Sierra Leone. Il précise que ce n'est pourtant que le nom d'une région wolof.",
+      "contemporaryUsage": "Le nom Jolof, écrit Jaloof ou Jol-uf, désigne le pays et non ses habitants, selon William Singleton, que cite l'avant-propos du dictionnaire de Jean Dard.",
+      "sortRank": 1,
+      "sources": [
+        {
+          "title": "General History of Africa, V, ch. 10: Senegambia from the sixteenth to the eighteenth century: evolution of the Wolof, Sereer and Tukuloor",
+          "author": "Boubacar Barry",
+          "year": 1992,
+          "url": "https://archive.org/details/unesco_general_history_africa_v",
+          "tier": "official",
+          "notes": "UNESCO et Heinemann, Histoire générale de l'Afrique, volume V, dirigé par B. A. Ogot. Lu dans la numérisation d'Internet Archive.",
+          "source_kind": "intergovernmental"
+        }
+      ],
+      "attestations": [
+        {
+          "formAsWritten": "Giloses",
+          "year": 1455,
+          "periodLabel": "Voyage de 1455, traduction publiée en 1895",
+          "attestedBy": "Alvise Ca' da Mosto",
+          "source": {
+            "title": "Relation des voyages à la côte occidentale d'Afrique d'Alvise de Ca' da Mosto, 1455-1457",
+            "author": "Charles Schefer (éditeur)",
+            "year": 1895,
+            "url": "https://archive.org/details/relationdesvoya00mostgoog",
+            "tier": "referenced",
+            "notes": "Paris, Ernest Leroux, 1895 : ancienne traduction française du récit, publiée avec des notes par Charles Schefer. Lue dans la numérisation d'Internet Archive.",
+            "page": "p. 73 et note 1"
+          }
+        },
+        {
+          "formAsWritten": "Geloffa",
+          "year": 1482,
+          "periodLabel": "Récit noté après 1482, recopié avant 1508",
+          "attestedBy": "Diogo Gomes, dans la traduction de Gabriel Pereira",
+          "source": {
+            "title": "As relações do descobrimento da Guiné e das ilhas dos Açores, Madeira e Cabo Verde",
+            "author": "Diogo Gomes ; traduction du latin par Gabriel Pereira",
+            "year": 1899,
+            "url": "https://archive.org/details/asrelaesdodescob00gome",
+            "tier": "referenced",
+            "notes": "Lisbonne, 1899. Récit de Diogo Gomes noté en latin par Martin Behaim, recopié par Valentim Fernandes, puis traduit en portugais par Gabriel Pereira, qui date le récit de 1482 ou après. Lu dans la numérisation d'Internet Archive.",
+            "page": "p. 11"
+          }
+        }
+      ],
+      "shortLine": "Le nom d'un pays et d'un ancien État wolof, que des Européens ont donné à tout le peuple.",
+      "namedBy": "Des voyageurs et auteurs européens, d'après le nom d'un pays wolof",
+      "originDebated": false,
+      "usedIn": ["por", "ita", "eng", "fra"]
+    },
+    {
+      "nameText": "Ouolof",
+      "nameType": "historical_spelling",
+      "languageOfOrigin": null,
+      "meaning": null,
+      "periodLabel": "XVIIIe et XIXe siècles",
+      "imposedBy": null,
+      "impositionPeriod": null,
+      "whyProblematic": null,
+      "contemporaryUsage": "Le nom Ouolof est la graphie du naturaliste Michel Adanson, qui écrit aussi oualof, selon l'avant-propos du dictionnaire de Jean Dard. La même note relève que les Anglais écrivent wa-loof ou jaloof, et l'orientaliste Silvestre de Sacy jolof.",
+      "sortRank": 2,
+      "sources": [
+        {
+          "title": "Dictionnaire français-wolof et français-bambara, suivi du dictionnaire wolof-français",
+          "author": "Jean Dard ; avant-propos non signé",
+          "year": 1825,
+          "url": "https://archive.org/details/dictionnairefra01dardgoog",
+          "tier": "referenced",
+          "notes": "Paris, Imprimerie royale, 1825. Lue dans la numérisation d'Internet Archive. La note de l'avant-propos compare les graphies du nom et cite William Singleton.",
+          "source_kind": "archive"
+        }
+      ],
+      "attestations": [],
+      "shortLine": "Une ancienne graphie française du nom wolof.",
+      "namedBy": null,
+      "originDebated": false
+    },
+    {
+      "nameText": "Yolof",
+      "nameType": "historical_spelling",
+      "languageOfOrigin": null,
+      "meaning": null,
+      "periodLabel": "XVIIIe et XIXe siècles",
+      "imposedBy": null,
+      "impositionPeriod": null,
+      "whyProblematic": null,
+      "contemporaryUsage": null,
+      "sortRank": 3,
+      "sources": [],
+      "attestations": [
+        {
+          "formAsWritten": "Yolofes",
+          "year": 1757,
+          "periodLabel": "1757",
+          "attestedBy": "Michel Adanson",
+          "source": {
+            "title": "Histoire naturelle du Sénégal. Coquillages. Avec la relation abrégée d'un voyage fait en ce pays, pendant les années 1749, 50, 51, 52 & 53",
+            "author": "Michel Adanson",
+            "year": 1757,
+            "url": "https://archive.org/details/histoirenaturell00adan",
+            "tier": "referenced",
+            "notes": "Paris, Claude-Jean-Baptiste Bauche, 1757 : récit du séjour du naturaliste au Sénégal de 1749 à 1753. Lu dans la numérisation d'Internet Archive.",
+            "page": "p. 23"
+          }
+        }
+      ],
+      "shortLine": "Une forme du nom wolof que Michel Adanson donnait pour une déformation.",
+      "namedBy": null,
+      "originDebated": false
+    },
+    {
+      "nameText": "Wollof",
+      "nameType": "historical_spelling",
+      "languageOfOrigin": null,
+      "meaning": null,
+      "periodLabel": "Usage contemporain en Gambie",
+      "imposedBy": null,
+      "impositionPeriod": null,
+      "whyProblematic": null,
+      "contemporaryUsage": null,
+      "sortRank": 4,
+      "sources": [],
+      "attestations": [
+        {
+          "formAsWritten": "Wollof",
+          "year": 2024,
+          "periodLabel": "Recensement de 2024",
+          "attestedBy": "Bureau gambien de la statistique (Gambia Bureau of Statistics)",
+          "source": {
+            "title": "Preliminary Report of the 2024 Population and Housing Census in The Gambia",
+            "author": "Gambia Bureau of Statistics",
+            "year": 2024,
+            "url": "https://gambia.unfpa.org/sites/default/files/pub-pdf/2024-09/Preliminary%20Report%20of%20the%202024%20Census%20in%20The%20Gambia_0.pdf",
+            "tier": "official",
+            "page": "p. 10 et p. 13"
+          }
+        }
+      ],
+      "shortLine": "La graphie des statistiques officielles de la Gambie.",
+      "namedBy": null,
+      "originDebated": false,
+      "usedIn": ["eng"]
     }
   ]
 }

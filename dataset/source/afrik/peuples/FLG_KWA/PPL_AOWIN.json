@@ -3,113 +3,8 @@
   "nameMain": "Aowin",
   "languageFamilyId": "FLG_KWA",
   "currentCountries": ["GHA", "CIV"],
-  "content": {
-    "appellations": {
-      "mainName": "Aowin",
-      "selfAppellation": "Aowin",
-      "exonyms": ["Agni", "Anyi", "Awina", "Brissa"],
-      "originOfExonyms": "Agni est une manière française de transcrire Aowin/Anyi. Ce nom désigne les groupes anyi qui ont migré en Côte d'Ivoire. Certains membres de la communauté le considèrent aujourd'hui comme un nom méprisant donné de l'extérieur. Au Ghana, Aowin désigne le peuple et son territoire, le district Aowin Municipal. Anyi/Agni désignent les groupes installés en Côte d'Ivoire, issus de l'État Aowin après sa défaite en 1715.",
-      "whyProblematic": null,
-      "contemporaryUsage": "Au Ghana, le terme Aowin est officialise dans le nom du district Aowin Municipal (Western North Region). En Cote d'Ivoire, les descendants de l'Etat Aowin sont generalement appeles Anyi ou Agni. Le Wikipedia anglophone sur Kingdom of Aowin est la principale source historique, le peuple historique et l'Etat actuel du Ghana portant le même nom.",
-      "linguisticFamily": "FLG_BENOUECONGO",
-      "ethnoLinguisticGroup": "Akan (branche Central Tano, sous-groupe Anyi-Aowin)",
-      "historicalRegion": "Forets du sud-ouest du Ghana (entre les rivieres Tano et Bia), et par extension le sud-est de la Cote d'Ivoire",
-      "currentCountries": ["GHA", "CIV"]
-    },
-    "ethnicities": ["Aowin", "Anyi (descendants en Cote d'Ivoire)"],
-    "origins": {
-      "ancientOrigins": "Les traditions orales des Aowin retracent leurs origines au nord, liees aux migrations de Bonoman (Bono) dans la zone de transition foret-savane. Ils sont l'un des premiers groupes akan producteurs d'or a s'etablir durablement dans les forets du sud-ouest. Leurs ancetres ont migre depuis Takyiman, notamment la region de Sessiman, en raison de l'instabilite politique et des menaces des Dagomba et Mamprussi. Ils se sont d'abord installes pres de la riviere Offin, puis ont migre vers le sud-ouest en direction du bassin du Bia, le long des couloirs des rivieres Tano et Bia.",
-      "formationPeriod": "Des le XVIe siecle, l'Etat Aowin est consolide en puissance regionale majeure, rivalisant avec Denkyira et Akwamu. Il est alors la principale force dans l'ouest avant la montee en puissance de Denkyira. Les groupes comme les Sahie (Sefwi) Wiawso partagent la meme origine (Assakyiri) que les Aowin.",
-      "migrationRoutes": [
-        "Migration depuis Takyiman (Sessiman) vers le sud-ouest, fuyant les pressions des Dagomba et Mamprussi",
-        "Premier etablissement pres de la riviere Offin",
-        "Migration vers le sud-ouest jusqu'au bassin du Bia, le long des rivieres Tano et Bia",
-        "Apres 1715 : migration westward des elites et populations aowin deplac??es vers le sud-est de la Cote d'Ivoire"
-      ],
-      "historicalSettlementZones": [
-        "Forets du sud-ouest du Ghana, entre les rivieres Tano et Bia (territoire central actuel)",
-        "Enchi (siege du chef paramount Omanhene)",
-        "Axes commerciaux vers Begho (nord) et Fort Apollonia et forts atlantiques (sud)",
-        "Sud-est de la Cote d'Ivoire (etats successeurs post-1715 : Moronou, Indenie, Sanwi, Djuablin)"
-      ],
-      "unificationsOrDivisions": "Avant 1677, l'Etat Aowin est unifie sous l'autorite de l'Omanhene a Enchi. Apres la defaite face a Denkyira (1677) et la conquete asante (1715), l'etat se fragmente. Les elites aowin et leurs partisans migrent vers l'ouest et fondent les etats successeurs en Cote d'Ivoire : Moronou (coalition de sept lignages), Sanwi (tres centralise avec gouvernance matrilineaire), Indenie (forte identite cheffale) et Djuablin.",
-      "externalInfluences": "Conquete par Denkyira (1677, general Agya Ananse Obooman pres de la riviere Offin), puis subjugation tributaire. Invasion asante (1715, general Amankwatia avec l'aide de Sefwi Wiawso) : pertes territoriales, fragmentation et migration de masse. Commerce avec les postes portugais et hollandais de la cote (Fort Apollonia). Accueil de populations deplac??es venues de Bono, Adansi et Denkyira. Puis, influence coloniale britannique au Ghana et française en Cote d'Ivoire.",
-      "majorHistoricalEvents": "XVIe siecle : consolidation en puissance regionale majeure. 1677 : defaite face a Denkyira, reduction en etat vassal. Entre 1680 et 1696 : conquete de polities voisins par Denkyira. 1715 : conquete par l'empire Asante (general Amankwatia), avec aide de Sefwi Wiawso, triggering une migration westward de masse. Apres 1721 : fondation des etats successeurs anyi en Cote d'Ivoire (Moronou, Indenie, Sanwi, Djuablin). Epoque coloniale : integration dans la Gold Coast britannique (Ghana actuel)."
-    },
-    "organization": {
-      "traditionalPoliticalSystem": "Structure decentralisee mais hautement coordonnee : les chefs locaux conservent leur autonomie tout en pledgeant allegeance rituelle au chef paramount (Omanhene) siege a Enchi. Le systeme accommode les populations entrantes et s'etend territorialement sans centralisation rigide a la maniere de Denkyira ou d'Asante. Des institutions militaires sont developpees pour defendre les couloirs commerciaux et les etablissements tributaires.",
-      "clanOrganization": "Organisation matrilineaire akan : la filiation, l'heritage et la succession passent par la ligne maternelle. Les etats successeurs en Cote d'Ivoire heritent de cette structure : Moronou est organise autour de sept lignages constitutifs avec roles territoriaux et defensifs ; Sanwi a une gouvernance matrilineaire centralisee avec roles militaires asafo (sahinnan).",
-      "ageClassSystems": null,
-      "roleOfLineages": "Les lignages maternels (abusua) structurent l'organisation sociale et politique. Le tabouret royal d'Ano Assinman est le symbole sacre de l'identite et de la continuite de l'autorite aowin. L'Omanhene est investi par les lignages nobles reconnus.",
-      "religiousAuthority": "Pratiques spirituelles traditionnelles akan : charms de guerre (Amuan), defenses rituelles (momome), tabouret de commandement. Festival de l'igname Elulie, preservant les elements symboliques et calendaires de la tradition aowin. Ces pratiques sont transmises aux Sefwi qui adoptent une part des structures politiques et spirituelles aowin."
-    },
-    "languages": {
-      "mainLanguage": "Aowin (Twi-Aowin)",
-      "isoCodes": ["any"],
-      "dialects": [
-        "Aowin",
-        "Dialectes anyi en Cote d'Ivoire (structurellement similaires a l'aowin, derives du twi)"
-      ],
-      "vehicularRole": "La langue aowin est une langue twi-derivee appartenant a la branche Central Tano des langues Niger-Congo (famille Kwa). Les dialectes anyi/agni parles en Cote d'Ivoire conservent des similitudes structurelles avec le twi-aowin d'origine. L'aowin/anyi est mutuellemet intelligible avec les autres varietes akan. L'anglais est la langue officielle du Ghana, le français en Cote d'Ivoire."
-    },
-    "culture": {
-      "majorRites": "Festival Elulie de l'igname : preserve les elements symboliques et calendaires de la tradition aowin, avec dimension ceremoniale communautaire. Rituels d'intronisation de l'Omanhene. Ceremonies de veneration des ancetres et de demande de protection. Festivals commemorant les liens ancestraux avec l'etat historique Aowin (dans le district Aowin Municipal du Ghana, celebration periodique selon Wikipedia EN Anyi).",
-      "symbols": "Regalia sacres aowin : tabouret royal d'Ano Assinman (symbole de l'autorite et de la continuite de l'etat), Amuan (charms de guerre), momome (defenses rituelles). Les rivieres Tano et Bia comme espaces symboliques du territoire ancestral. La tradition de l'or comme richesse fondatrice de l'identite aowin.",
-      "artsAndMusic": "Les artisans aowin pratiquent l'orfèvrerie, le tissage et la sculpture. Les récits transmis oralement racontent les ancêtres et la fondation des royaumes. Dans le district Aowin, au Ghana, les activités comprennent aussi la production de cacao et d'huile de palme et l'exploitation forestière. Les Sefwi ont adopté des éléments de l'organisation politique, des pratiques spirituelles et de la langue aowin. Les proverbes akan sont appelés mmebusem. Dès 1879, le linguiste missionnaire Johann Gottlieb Christaller en a réuni plus de 3 600 en twi et en fante. L'usage des proverbes est partagé par les groupes de langue akan.",
-      "spiritualities": "Religion traditionnelle akan : veneration des ancetres, rituel cosmologique, pratiques magico-religieuses (Amuan, momome). Le christianisme est repandu au Ghana (protestantisme, presbyterianisme, pentecotisme). En Cote d'Ivoire, les descendants anyi/agni combinent animisme traditionnel et christianisme. Culture of Ivory Coast Wikipedia note une population anyi/aowin d'environ 40 000 personnes parlant aowin en Cote d'Ivoire."
-    },
-    "historicalRole": {
-      "kingdomsOrChiefdoms": "Royaume d'Aowin (Etat Aowin), l'un des premiers et plus puissants etats akan, etabli dans les forets du sud-ouest du Ghana entre les rivieres Tano et Bia. L'Omanhene a Enchi est le chef paramount. Apres sa conquete en 1715, etats successeurs en Cote d'Ivoire : Moronou, Indenie, Sanwi (tres centralise, maintient des institutions royales symboliques a l'epoque moderne) et Djuablin.",
-      "relationsWithNeighbors": "Rivalite avec Denkyira et Akwamu pour la domination regionale. Interactions avec Nzema, Wassa et Sefwi (conflits et diffusion culturelle). Commerce avec les marches du nord (Gonja, Bouna) et les comptoirs cotieres portugais et hollandais. L'etat a ete un refuge pour les populations deplac??es de Bono, Adansi et Denkyira. Les Sefwi, migrants de Bono et Adansi, se sont installes et ont adopte les structures aowin. Le Sanwi a integre l'Asini conquis et developpe des relations diplomatiques avec les Français (a partir de 1701).",
-      "conflictsOrAlliances": "Rivalite et puis soumission a Denkyira (1677). Conquete par Asante (1715) avec aide de Sefwi Wiawso : pertes territoriales, fragmentation et migration forcee. Coalition Moronou : exiles aowin, Sefwi (Sahie) et auxiliaires ashanti. Relations diplomatiques du Sanwi avec les Français (1701). Retention d'une autonomie partielle apres l'invasion denkyira, devenant refuge pour populations deplac??es.",
-      "diaspora": "La diaspora principale est representee par les etats successeurs fondes en Cote d'Ivoire apres 1715-1721 : Moronou, Indenie, Sanwi, Djuablin. Ces royaumes sont consideres comme les heritiers directs de la tradition politique, linguistique et culturelle aowin. Le peuple anyi/agni de Cote d'Ivoire est la principale diaspora aowin."
-    },
-    "demography": {
-      "totalPopulation": 250000,
-      "referenceYear": 2025,
-      "source": "Estimation composite : Wikipedia Culture of Ivory Coast (environ 40 000 en CIV parlant aowin) ; district Aowin Municipal Ghana (157 159 en 2021 selon Wikipedia Anyi people) ; population globale Anyi/Aowin estimee par Joshua Project a 1 970 000 (englobant Anyi et Aowin). Estimation restreinte au sens strict d'Aowin Ghana : environ 250 000.",
-      "distributionByCountry": [
-        {
-          "country": "GHA",
-          "population": 210000,
-          "note": "District Aowin Municipal, Western North Region (157 159 en 2021 selon recensement, estimation 2025)"
-        },
-        {
-          "country": "CIV",
-          "population": 40000,
-          "note": "Principalement populations se reclamant directement de la tradition culturelle aowin, hors Anyi en general"
-        }
-      ]
-    },
-    "sources": [
-      {
-        "title": "Joshua Project – Anyi in Ghana",
-        "url": "https://joshuaproject.net/people_groups/10362/GH",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "Joshua Project – Ghana people groups",
-        "url": "https://joshuaproject.net/countries/gh",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "Glottolog — Anyin (anyi1245)",
-        "url": "https://glottolog.org/resource/languoid/id/anyi1245",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
-      },
-      {
-        "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",
-        "url": null,
-        "tier": "referenced",
-        "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
-      }
-    ]
-  },
   "nameHistory": {
-    "summary": "Le nom Aowin désigne un peuple akan du sud-ouest du Ghana, autour d'Enchi, près de la frontière ivoirienne, et l'ancien royaume qu'il formait ; ce peuple se nomme lui-même Aowin. Le même nom a aussi servi aux Fanti à désigner les Agni de Côte d'Ivoire. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Aowin désigne un peuple akan du sud-ouest du Ghana, installé autour de la ville d'Enchi près de la frontière ivoirienne, et l'ancien royaume qu'il formait. Ce peuple se nomme lui-même Aowin. Il porte aussi d'autres noms : Brissa, un ancien nom des cartes et des rapports coloniaux, et Anyi, ou Agni, le nom des peuples apparentés de Côte d'Ivoire. Les sources ne disent pas d'où viennent ces noms ; nous présentons plus bas leurs traces écrites.",
     "names": [
       {
         "nameText": "Aowin",
@@ -117,7 +12,7 @@
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom d'un ancien royaume, écrit Awine vers 1700 ; il nomme aujourd'hui un district du Ghana.",
+        "shortLine": "Le nom d'un ancien royaume akan, écrit Awine en 1704 ; il nomme aujourd'hui une municipalité du Ghana.",
         "periodLabel": "Écrit depuis 1704 ; en usage aujourd'hui",
         "accounts": [
           {
@@ -127,7 +22,7 @@
               "label": "Depuis 2012"
             },
             "era": "modern",
-            "statement": "Le nom Aowin désigne aujourd'hui un district de l'ouest du Ghana, créé le 15 mars 2012, qui touche la frontière de la Côte d'Ivoire et a pour chef-lieu Enchi, selon l'assemblée de ce district. On ne sait pas avec certitude d'où vient ce nom.",
+            "statement": "Le nom Aowin est aujourd'hui celui d'une municipalité de l'ouest du Ghana, dont le chef-lieu est Enchi et qui touche la Côte d'Ivoire. D'abord réunie à Suaman, elle devient le district d'Aowin le 15 mars 2012, puis une municipalité en 2017, selon son assemblée.",
             "aspect": "usage",
             "sources": [
               {
@@ -137,8 +32,18 @@
                 "url": "https://mofep.gov.gh/sites/default/files/composite-budget/2015/WR/Aowin.pdf",
                 "tier": "official",
                 "source_kind": "government",
-                "page": "p. 1",
-                "notes": "Publié par le ministère des Finances du Ghana, lu le 11 octobre 2026."
+                "page": "p. 2",
+                "notes": "Publié par le ministère des Finances du Ghana. Lu le 3 novembre 2026."
+              },
+              {
+                "title": "Composite Budget for 2025-2028, Programme Based Budget Estimates for 2025: Aowin Municipal Assembly",
+                "author": "Assemblée municipale d'Aowin",
+                "year": 2025,
+                "url": "https://mofep.gov.gh/sites/default/files/composite-budget/2025/WN/Aowin.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 5",
+                "notes": "Publié par le ministère des Finances du Ghana. Lu le 3 novembre 2026."
               }
             ]
           },
@@ -149,8 +54,14 @@
               "label": "1904"
             },
             "era": "colonial",
-            "statement": "Le nom Aowin sert aussi, sous la forme Aowim, à désigner tous les Agni : c'est le nom que leur donnent les Fanti, selon Maurice Delafosse en 1904.",
+            "statement": "Le nom Aowin sert aussi, sous la forme Aowim, à désigner tous les Agni : c'est le nom que leur donnent les Fanti, un peuple de la côte, selon Maurice Delafosse en 1904.",
             "formAsWritten": "Aowim",
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
             "sources": [
               {
                 "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
@@ -160,7 +71,63 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 106",
-                "notes": "Paris, Ernest Leroux. Lu dans l'exemplaire numérisé de l'université de Toronto le 11 octobre 2026."
+                "notes": "Paris, Ernest Leroux, 1904. Ouvrage d'époque coloniale, lu dans l'exemplaire numérisé de l'université de Toronto. Lu le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "colonial",
+            "statement": "Le nom Aowin est donné sous trois formes en 1881 par Johann Gottlieb Christaller, missionnaire et auteur d'un dictionnaire du twi, la langue des Asante et des Fante : Aṅwõṅwĩĩ, Awowin et Awini. Il situe ce pays au nord d'Apollonia, la côte nzema, et rapporte, d'après R. J. Ghartey d'Anomabo, que sa langue se parle aussi à Assinie et chez les Nzema, les Ahanta et les Wassa.",
+            "formAsWritten": "Aṅwõṅwĩĩ",
+            "actors": [
+              {
+                "name": "Johann Gottlieb Christaller",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 637",
+                "notes": "Bâle, Mission évangélique, 1881. Annexe C sur la géographie de la côte de l'Or, article 5. Lu le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1817,
+              "to": 1819,
+              "label": "Voyage de 1817, publié en 1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Aowin est écrit sous cette forme en 1819 par Thomas Edward Bowdich, un envoyé anglais reçu à Kumasi, la capitale asante, en 1817. Il décrit un pays aowin qui s'étend d'Apollonia, sur la côte, jusqu'à la rivière Assinie, gouverné par sept ou huit chefs indépendants les uns des autres.",
+            "formAsWritten": "Aowin",
+            "actors": [
+              {
+                "name": "Thomas Edward Bowdich",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Mission from Cape Coast Castle to Ashantee",
+                "author": "Thomas Edward Bowdich",
+                "year": 1819,
+                "url": "https://archive.org/details/missionfromcapec00bowd",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 168",
+                "notes": "Londres, John Murray, 1819. Récit d'un envoyé anglais reçu à Kumasi en 1817. Lu le 3 novembre 2026."
               }
             ]
           },
@@ -171,9 +138,15 @@
               "label": "1704, traduit en anglais en 1705"
             },
             "era": "polity",
-            "statement": "Le nom Aowin apparaît sous une forme proche, Awine, chez le marchand néerlandais Willem Bosman : il y décrit un pays de l'intérieur, loin au-dessus d'Axim, qui vendait autrefois beaucoup d'or aux Hollandais et que les Denkyira ont conquis. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume existait déjà avant lui.",
+            "statement": "Le nom Aowin apparaît sous une forme proche, Awine, chez le marchand néerlandais Willem Bosman. Il décrit un pays de l'intérieur, loin au-dessus d'Axim, qui vendait autrefois beaucoup d'or aux Hollandais et que les Denkyira ont conquis. C'est la plus ancienne trace de ce nom que nous connaissons ; le royaume existait déjà avant lui.",
             "formAsWritten": "Awine",
             "birth": true,
+            "actors": [
+              {
+                "name": "Willem Bosman",
+                "role": "écrit cette forme"
+              }
+            ],
             "sources": [
               {
                 "title": "A New and Accurate Description of the Coast of Guinea",
@@ -183,7 +156,7 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "page": "p. 79",
-                "notes": "Traduction anglaise, parue à Londres en 1705, de l'original néerlandais de 1704. Lu dans l'exemplaire numérisé de la Wellcome Collection le 11 octobre 2026."
+                "notes": "Traduction anglaise, parue à Londres en 1705, de l'original néerlandais de 1704. Ouvrage du chef du comptoir néerlandais du château d'Elmina, lu dans l'exemplaire numérisé de la Wellcome Collection. Lu le 3 novembre 2026."
               }
             ]
           }
@@ -195,9 +168,58 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Un nom de cartes coloniales pour une tribu agni de la Tano, autour d'Enchi.",
-        "periodLabel": "Noté en 1904",
+        "shortLine": "Un nom de cartes et de rapports coloniaux pour les Aowin installés à l'ouest de la Tano, autour d'Enchi.",
+        "periodLabel": "Écrit de 1900 à 1947 ; repris aujourd'hui par un catalogue de langues",
         "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom Brissa figure aujourd'hui, avec la forme Brosa, parmi les autres noms du parler aowin dans le catalogue de langues Glottolog, qui les reprend d'une autre base de données, Multitree.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Aowin (aowi1238)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/aowi1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde, version 5.3, tenu par l'Institut Max Planck d'anthropologie évolutionnaire. Lu le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1947,
+              "to": 1948,
+              "label": "Écrit à Enchi en 1947, publié en 1948"
+            },
+            "era": "colonial",
+            "statement": "Le nom Brissa est écrit Brissas par J. C. M. Paton, administrateur colonial britannique à Enchi. Il l'emploie comme un autre nom des Aowin restés à l'ouest de la Tano après une lourde défaite face au Denkyira.",
+            "formAsWritten": "Brissas",
+            "actors": [
+              {
+                "name": "J. C. M. Paton",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Worship of the Tano Fetish",
+                "author": "J. C. M. Paton",
+                "year": 1948,
+                "url": "https://ugspace.ug.edu.gh/handle/123456789/37902",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 4",
+                "notes": "Accra, imprimerie du gouvernement de la Gold Coast, 1948 ; texte daté d'Enchi, février 1947. Ouvrage d'époque coloniale, écrit par un administrateur adjoint de district britannique. Lu dans la copie numérisée de la bibliothèque de l'université du Ghana. Lu le 3 novembre 2026."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1904,
@@ -205,9 +227,14 @@
               "label": "1904"
             },
             "era": "colonial",
-            "statement": "Le nom Brissa a une forme proche, Broussa, sur les cartes que cite Maurice Delafosse en 1904 : il y désigne les Buresya, une tribu agni des deux rives de la Tano, autour de Nguié ou Enchy. Enchi est aujourd'hui le chef-lieu du district d'Aowin, selon l'assemblée de ce district. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "statement": "Le nom Brissa a une forme proche, Broussa, que Maurice Delafosse donne en 1904 comme la forme des cartes. Il l'écrit lui-même Buresya et désigne ainsi une tribu agni des deux rives de la Tano, autour de Nguié ou Enchy. Enchi est aujourd'hui le chef-lieu de la municipalité d'Aowin, selon son assemblée.",
             "formAsWritten": "Broussa",
-            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
             "sources": [
               {
                 "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
@@ -217,7 +244,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 107",
-                "notes": "Paris, Ernest Leroux. Lu dans l'exemplaire numérisé de l'université de Toronto le 11 octobre 2026."
+                "notes": "Paris, Ernest Leroux, 1904. Ouvrage d'époque coloniale, lu dans l'exemplaire numérisé de l'université de Toronto. Lu le 3 novembre 2026."
               },
               {
                 "title": "The Narrative Statement of the Aowin District Assembly Composite Budget for the 2015 Fiscal Year",
@@ -226,12 +253,314 @@
                 "url": "https://mofep.gov.gh/sites/default/files/composite-budget/2015/WR/Aowin.pdf",
                 "tier": "official",
                 "source_kind": "government",
-                "page": "p. 1",
-                "notes": "Publié par le ministère des Finances du Ghana, lu le 11 octobre 2026."
+                "page": "p. 2",
+                "notes": "Publié par le ministère des Finances du Ghana. Lu le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Brissa a une autre forme proche, Brusa, que Maurice Delafosse écrit en 1900 avec la forme Broussa entre parenthèses. Il place les Brusa au nord des Nzema de la côte, entre la Bogné et l'Ankobra, et les range alors parmi les peuples proches des Nzema. C'est la plus ancienne trace de ce nom que nous connaissons.",
+            "formAsWritten": "Brusa",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Essai de manuel de la langue agni, parlée dans la moitié orientale de la Côte d'Ivoire",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/essaidemanuelde00delagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 186",
+                "notes": "Paris, J. André, 1900. Ouvrage d'époque coloniale, écrit par un administrateur adjoint des colonies françaises. Lu le 3 novembre 2026."
               }
             ]
           }
         ]
+      },
+      {
+        "nameText": "Anyi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des peuples apparentés de Côte d'Ivoire, que des historiens emploient aussi pour les Aowin.",
+        "periodLabel": "Usage des historiens aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1992,
+              "to": 1992,
+              "label": "1992"
+            },
+            "era": "modern",
+            "statement": "Le nom Anyi est employé par l'historien ghanéen Adu Boahen comme un second nom des Aowin. Il écrit « les Aowin ou Anyi » et rattache à eux les royaumes anyi du Sanwi, du Ndenye, du Diabe, du Moronou et du Bettié, en Côte d'Ivoire.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 14 : The states and cultures of the Lower Guinean coast",
+                "author": "A. A. Boahen",
+                "year": 1992,
+                "url": "https://archive.org/details/general-history-of-africa-vol-5",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 417",
+                "notes": "UNESCO, Heinemann et University of California Press, 1992, volume dirigé par B. A. Ogot. Lu le 3 novembre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Agni",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Agni est l'écriture française du nom Anyi. Maurice Delafosse l'emploie en 1904 pour le grand groupe auquel il rattache les Buresya d'Enchi, et note que les Fanti appellent tous les Agni Aowim.",
+            "formAsWritten": "Agni",
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 106",
+                "notes": "Paris, Ernest Leroux, 1904. Ouvrage d'époque coloniale, lu dans l'exemplaire numérisé de l'université de Toronto. Lu le 3 novembre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "content": {
+    "appellations": {
+      "mainName": "Aowin",
+      "selfAppellation": "Aowin",
+      "exonyms": ["Brissa", "Anyi"],
+      "spellingAliases": [
+        "Awine",
+        "Aṅwõṅwĩĩ",
+        "Awowin",
+        "Aowim",
+        "Brusa",
+        "Broussa",
+        "Buresya",
+        "Brosa",
+        "Agni"
+      ],
+      "originOfExonyms": "Le nom Brissa apparaît chez Maurice Delafosse, administrateur colonial français, sous la forme Brusa en 1900, puis Buresya en 1904 ; il précise que les cartes écrivent Broussa. En 1947, l'administrateur britannique J. C. M. Paton, en poste à Enchi, l'emploie comme un autre nom des Aowin. Le nom Anyi, écrit Agni en français, est celui des peuples apparentés de Côte d'Ivoire. L'historien Adu Boahen parle des « Aowin ou Anyi ». À l'inverse, Delafosse note en 1904 que les Fanti appellent tous les Agni Aowim.",
+      "whyProblematic": null,
+      "contemporaryUsage": "Au Ghana, Aowin est le nom d'une municipalité de la région Western North, dont le chef-lieu est Enchi : d'abord réunie à Suaman, elle devient le district d'Aowin en 2012, puis une municipalité en 2017, selon son assemblée. Le nom Brissa, et sa forme Brosa, ne figurent plus que dans des catalogues de langues comme Glottolog.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
+    },
+    "ethnicities": ["Aowin", "Anyi"],
+    "origins": {
+      "ancientOrigins": "Selon l'historien Adu Boahen, les Aowin sont issus des migrations akan des XVIe et XVIIe siècles. Les guerres entre le Denkyira et l'Adansi, entre 1650 et 1670, et les guerres du Bono ont poussé des groupes akan vers le sud et l'ouest, dans la forêt où vivaient des peuples plus anciens. Ces nouveaux venus ont fondé Aowin. En 1947, l'administrateur britannique J. C. M. Paton supposait de son côté que les Aowin étaient venus du nord, et pensait que leur culte de la Tano venait peut-être de Techiman.",
+      "formationPeriod": "Adu Boahen place la fondation d'Aowin au XVIIe siècle, près de l'actuel district de Wassa Amenfi, avec pour capitale Enyini Nsu, près du village d'Anwianwia. Dans les années 1670, Aowin était devenu un royaume fort et riche, dans une région riche en or et sur la grande route qui reliait les marchés du nord, Begho et Bondoukou, à la côte.",
+      "migrationRoutes": [
+        "Des environs d'Anwianwia, près de l'actuel Wassa Amenfi, vers l'ouest au-delà de la Tano, autour d'Enchi, après la défaite face au Denkyira dans les années 1680, selon Adu Boahen",
+        "De la région d'Anwianwia vers le sud-est de l'actuelle Côte d'Ivoire, où des groupes aowin fondent le Sanwi, le Ndenye et le Diabe au début du XVIIIe siècle, selon Adu Boahen"
+      ],
+      "historicalSettlementZones": [
+        "Région d'Anwianwia et d'Enyini Nsu, près de l'actuel Wassa Amenfi, au Ghana",
+        "Rive ouest de la Tano autour d'Enchi, jusqu'à la frontière ivoirienne",
+        "Pays situé entre Apollonia, sur la côte nzema, et la rivière Assinie, selon Bowdich en 1819",
+        "Sud-est de la Côte d'Ivoire : Sanwi, Ndenye, Diabe, Moronou et Bettié"
+      ],
+      "unificationsOrDivisions": "En 1817, selon Thomas Edward Bowdich, le pays aowin était gouverné par sept ou huit chefs indépendants les uns des autres et pouvait réunir environ 5 000 soldats. Au début du XVIIIe siècle, une partie des Aowin a fondé de nouveaux royaumes en Côte d'Ivoire, selon Adu Boahen. En 1947, J. C. M. Paton écrit que les Aowin vivent des deux côtés de la frontière entre la Gold Coast britannique et la Côte d'Ivoire française, et que les deux grands sièges de chefs d'Enchi et de Krinjabo ont une origine commune.",
+      "externalInfluences": "Au XVIIe siècle, Aowin vendait de l'or aux Hollandais de la côte, selon Willem Bosman. Au début du XIXe siècle, il dépend du royaume asante : en 1817, Bowdich rapporte que les Asante lui prennent souvent de l'or et qu'une ambassade aowin est venue offrir un tribut au roi asante. À l'époque coloniale, le prêtre de la Tano était payé par l'autorité locale reconnue par l'administration britannique, selon J. C. M. Paton.",
+      "majorHistoricalEvents": "Années 1670 : Aowin devient un royaume fort et riche ; il soumet les États sehwi, au nord et à l'ouest, et s'étend vers des villes de l'actuelle Côte d'Ivoire. 1686-1690 : défaite face au Denkyira, selon Adu Boahen. Années 1680 : sous la conduite d'Amo Aseman, une partie des Aowin traverse la Tano et refonde le royaume autour d'Enchi. Années 1690 : Aowin retrouve son indépendance. 1715-1721 : conquête asante ; certains Aowin partent vers l'ouest et fondent le royaume du Sanwi. 1718-1719 : sous son chef de guerre Ebri Moro, Aowin attaque le royaume asante et pille sa capitale, Kumasi. 2012 : création du district d'Aowin, devenu municipalité en 2017."
+    },
+    "organization": {
+      "traditionalPoliticalSystem": "Selon Adu Boahen, les États aowin et sehwi ont placé le système de clans akan et la royauté élue en ligne maternelle au-dessus d'une organisation plus ancienne, fondée sur des compagnies de guerriers groupées par quartiers. En 1817, Thomas Edward Bowdich décrit un pays gouverné par sept ou huit chefs indépendants les uns des autres. En 1947, J. C. M. Paton décrit un État akan dirigé par un chef suprême, l'omanhene, qui siège à Enchi, avec un conseil d'État qui a aboli en 1946 une ancienne loi sur les chèvres.",
+      "clanOrganization": "Selon Adu Boahen, les Aowin ont adopté le système de clans akan : les clans suivent la ligne maternelle et le roi est élu dans une lignée par sa mère.",
+      "ageClassSystems": null,
+      "roleOfLineages": "Selon J. C. M. Paton en 1947, le prêtre de la Tano vient d'une famille précise ; son successeur est choisi par les aînés de cette famille, désignés par l'omanhene. La prêtresse est choisie dans la même famille.",
+      "religiousAuthority": "En 1947, selon J. C. M. Paton, le prêtre de la Tano est le seul prêtre payé par l'autorité locale reconnue par l'administration britannique. Il conduit chaque année les offrandes sur une île de la Tano, près de Jema, avec la prêtresse qui y vit. Un devin, qui jette des cordelettes, dit s'il peut continuer. L'omanhene fixe la date de la fête et ne doit jamais voir la prêtresse une fois qu'elle a pris sa charge."
+    },
+    "languages": {
+      "mainLanguage": "Anyin, parler aowin (any)",
+      "isoCodes": ["any"],
+      "dialects": ["Aowin, aussi appelé Brissa ou Brosa"],
+      "vehicularRole": "Le catalogue Glottolog classe l'aowin comme un parler de l'anyin, une langue kwa du groupe tano central, aux côtés du sanvi, de l'indenie, du moronou ou du djuablin. Adu Boahen range l'aowin parmi les parlers akan de l'ouest, qui se comprennent entre eux mais pas immédiatement avec le twi des Akan de l'est. En 1881, Johann Gottlieb Christaller rapporte que la langue aowin se parle aussi à Assinie et chez les Nzema, les Ahanta et les Wassa. En 1904, Maurice Delafosse note que le parler des Buresya a subi l'influence du nzema."
+    },
+    "externalIdentifiers": {
+      "glottocode": "aowi1238",
+      "iso639_3": "any"
+    },
+    "culture": {
+      "majorRites": "La grande fête des Aowin est la fête de l'igname. L'assemblée municipale d'Aowin l'écrit Allue en 2025 ; J. C. M. Paton l'écrivait Aloolie en 1947. Selon Paton, elle a lieu en novembre et commence à Enchi, où l'omanhene réunit les anciens, les prêtres et les fidèles. Il reste ensuite une semaine chez lui, le visage marqué d'argile blanche. Le prêtre de la Tano part alors à pied vers le sud et offre sur une île de la rivière un bélier et une igname déterrée le jour même.",
+      "symbols": "Selon J. C. M. Paton, le blanc est la couleur du culte : vêtements blancs, argile blanche et fromagers près de chaque autel. La chèvre était interdite en pays aowin. Selon le récit qu'il rapporte, les Aowin chassés par le Denkyira ont pu traverser la Tano en y poussant une chèvre ; ils l'ont tuée de l'autre côté et ont interdit les chèvres pour que leurs ennemis ne trouvent pas l'entrée de leur pays. Le conseil d'État a aboli cette loi en 1946.",
+      "artsAndMusic": "Sur l'île de la Tano, selon J. C. M. Paton, de petites figures de pierre sculptée montrent une femme qui accouche, des hommes qui jouent aux dés ou une femme qui pile le foutou. On les croit l'œuvre d'un peuple plus ancien que les Aowin. Deux grosses pierres y portent le nom des tambours parleurs, atumpan. Paton note aussi que les tambours et les trompes de la cour de la Tano réveillent les fidèles avant les offrandes.",
+      "spiritualities": "En 1947, selon J. C. M. Paton, les Aowin ont deux grandes divinités d'État : la rivière Tano et Effue, un rocher que l'on dit suspendu au-dessus du sol vers la limite du pays sefwi, lié au siège du chef. Si ce rocher tombe, dit-on, l'État tombera aussi. De plus petites divinités, comme Esongo et Nzole, sont honorées, dont beaucoup viennent de Côte d'Ivoire. Paton juge cette croyance très forte."
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": "Selon Adu Boahen, Aowin a été, avec le Denkyira et l'Akwamu, l'un des trois grands royaumes akan formés entre 1670 et 1750, avant leur réunion dans l'empire asante. Après sa défaite face au Denkyira, Amo Aseman a refondé le royaume autour d'Enchi. Des Aowin ont fondé en Côte d'Ivoire les royaumes anyi du Sanwi, avec Krinjabo pour capitale, du Ndenye et du Diabe ; d'autres ont fondé le Bettié et le Moronou. En 1947, J. C. M. Paton présente Enchi comme la capitale, où siège l'omanhene, le chef suprême.",
+      "relationsWithNeighbors": "Selon Willem Bosman, Aowin vendait autrefois beaucoup d'or aux Hollandais, qui le jugeaient honnête en affaires. Selon Adu Boahen, Aowin a soumis les États sehwi dans les années 1670 et 1680, puis s'est étendu jusqu'à Apollonia, sur la côte nzema. En 1947, J. C. M. Paton décrit un pays bordé par la Côte d'Ivoire à l'ouest, les Nzema au sud, les Wassa à l'est et les Sefwi au nord.",
+      "conflictsOrAlliances": "Selon Adu Boahen, le Denkyira a vaincu Aowin entre 1686 et 1690 ; Aowin a retrouvé son indépendance dans les années 1690. En 1718-1719, sous son chef de guerre Ebri Moro, il a attaqué le royaume asante, pillé Kumasi et ramené des captifs, dont des membres de la famille royale. Le royaume asante a conquis Aowin entre 1715 et 1721. Willem Bosman rapporte que les Aowin ont perdu face au Denkyira parce qu'ils ne se sont pas unis, malgré une victoire où leurs flèches empoisonnées ont tué plus de 2 000 soldats ennemis.",
+      "diaspora": "Selon Adu Boahen, l'attaque asante de 1715 a poussé une partie des Aowin vers l'ouest, où ils ont fondé le royaume du Sanwi, dans l'actuelle Côte d'Ivoire. Les Anyi du Ndenye ont reconnu l'autorité d'Aowin jusque vers 1715. En 1947, J. C. M. Paton écrit que les Aowin vivent des deux côtés de la frontière et que les sièges de chefs d'Enchi et de Krinjabo ont une origine commune."
+    },
+    "demography": {
+      "totalPopulation": 93000,
+      "referenceYear": 2026,
+      "source": "Joshua Project, une base de données missionnaire, compte 93 000 Anyi au Ghana et cite Aowin parmi leurs autres noms ; elle ne dit pas d'où vient ce chiffre. Ce n'est pas un recensement des personnes qui se disent aowin. Pour comparaison, la municipalité d'Aowin comptait 129 721 habitants au recensement de 2021, selon son assemblée, mais tous ne sont pas aowin.",
+      "distributionByCountry": [
+        {
+          "country": "GHA",
+          "population": 93000,
+          "percentage": 0.3,
+          "note": "Sud-ouest du Ghana, surtout dans la municipalité d'Aowin, autour d'Enchi (région Western North). Part calculée sur les 30 832 019 habitants du Ghana en 2021."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Joshua Project – Anyi in Ghana",
+        "url": "https://joshuaproject.net/people_groups/10362/GH",
+        "tier": "unverified",
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire américaine. Elle compte 93 000 Anyi au Ghana et cite Aowin parmi leurs autres noms, sans dire d'où vient ce chiffre. Lu le 3 novembre 2026."
+      },
+      {
+        "title": "Joshua Project – Ghana people groups",
+        "url": "https://joshuaproject.net/countries/gh",
+        "tier": "unverified",
+        "source_kind": "missionary_database",
+        "notes": "Liste des peuples du Ghana tenue par la même organisation missionnaire américaine."
+      },
+      {
+        "title": "Glottolog — Anyin (anyi1245)",
+        "url": "https://glottolog.org/resource/languoid/id/anyi1245",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, version 5.3, tenu par l'Institut Max Planck d'anthropologie évolutionnaire. Il range l'anyin, code any, dans les langues kwa, groupe tano central, et lui donne onze parlers, dont l'aowin, le sanvi, l'indenie, le moronou et le djuablin. Lu le 3 novembre 2026."
+      },
+      {
+        "title": "Glottolog — Aowin (aowi1238)",
+        "url": "https://glottolog.org/resource/languoid/id/aowi1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du parler aowin dans le même catalogue : elle le classe comme un parler de l'anyin et donne Brissa et Brosa comme autres noms, d'après la base Multitree. Lu le 3 novembre 2026."
+      },
+      {
+        "title": "General History of Africa, V, ch. 14 : The states and cultures of the Lower Guinean coast",
+        "url": "https://archive.org/details/general-history-of-africa-vol-5",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de l'historien ghanéen A. Adu Boahen dans l'Histoire générale de l'Afrique de l'UNESCO, volume V, Heinemann et University of California Press, 1992. Lu dans une copie numérisée déposée sur Internet Archive. Les migrations akan vers le pays aowin (p. 400), la place de l'aowin parmi les parlers akan de l'ouest (p. 401-402), la fondation d'Aowin et son organisation (p. 414), sa défaite face au Denkyira, le départ vers Enchi et la fondation des royaumes anyi (p. 417-418), l'attaque contre Kumasi en 1718-1719 (p. 419), la conquête asante de 1715-1721 (p. 420) et l'extension vers Apollonia (p. 422). Lu le 3 novembre 2026."
+      },
+      {
+        "title": "A New and Accurate Description of the Coast of Guinea",
+        "url": "https://archive.org/details/b30519032",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Londres, 1705, traduction de l'original néerlandais de 1704. Ouvrage du chef du comptoir néerlandais du château d'Elmina. La page 79 décrit le pays d'Awine, son or et sa conquête par les Denkyira. Lu le 3 novembre 2026."
+      },
+      {
+        "title": "Mission from Cape Coast Castle to Ashantee",
+        "url": "https://archive.org/details/missionfromcapec00bowd",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Londres, John Murray, 1819. Récit d'un envoyé anglais reçu à Kumasi en 1817. La page 168 décrit le pays aowin et ses chefs ; la page 244 rapporte une ambassade aowin venue offrir un tribut au roi asante. Lu le 3 novembre 2026."
+      },
+      {
+        "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+        "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Bâle, Mission évangélique, 1881. La page 637 donne les formes Aṅwõṅwĩĩ, Awowin et Awini et les lieux où, selon R. J. Ghartey, se parle la langue aowin. Lu le 3 novembre 2026."
+      },
+      {
+        "title": "Essai de manuel de la langue agni, parlée dans la moitié orientale de la Côte d'Ivoire",
+        "url": "https://archive.org/details/essaidemanuelde00delagoog",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Paris, J. André, 1900. Ouvrage d'époque coloniale. Les pages 186 et 195 nomment le Brusa ou Broussa et situent ses habitants. Lu le 3 novembre 2026."
+      },
+      {
+        "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+        "url": "https://archive.org/details/vocabulairescomp00delauoft",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Paris, Ernest Leroux, 1904. Ouvrage d'époque coloniale. Page 106 : le nom Aowim que les Fanti donnent aux Agni ; page 107 : les Buresya autour d'Enchy, jusqu'à la frontière entre colonies anglaise et française ; page 108 : leur parler. Lu le 3 novembre 2026."
+      },
+      {
+        "title": "The Worship of the Tano Fetish",
+        "url": "https://ugspace.ug.edu.gh/handle/123456789/37902",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Accra, imprimerie du gouvernement de la Gold Coast, 1948 ; texte daté d'Enchi, février 1947. Ouvrage d'époque coloniale, écrit par un administrateur adjoint de district britannique. Page 4 : le pays aowin, son histoire et le nom Brissas ; pages 4 à 9 : le culte de la Tano, la fête de l'igname et l'interdit de la chèvre. Lu le 3 novembre 2026."
+      },
+      {
+        "title": "The Narrative Statement of the Aowin District Assembly Composite Budget for the 2015 Fiscal Year",
+        "url": "https://mofep.gov.gh/sites/default/files/composite-budget/2015/WR/Aowin.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Publié par le ministère des Finances du Ghana. La page 2 donne la création du district, ses limites et son chef-lieu, Enchi. Lu le 3 novembre 2026."
+      },
+      {
+        "title": "Composite Budget for 2025-2028, Programme Based Budget Estimates for 2025: Aowin Municipal Assembly",
+        "url": "https://mofep.gov.gh/sites/default/files/composite-budget/2025/WN/Aowin.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Publié par le ministère des Finances du Ghana. La page 5 donne l'histoire de la municipalité et sa population au recensement de 2021 ; la page 12 cite la fête de l'igname Allue. Lu le 3 novembre 2026."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Aowin sont un peuple akan du sud-ouest du Ghana, autour d'Enchi, près de la Côte d'Ivoire. Leur ancien royaume a donné naissance à plusieurs royaumes anyi de Côte d'Ivoire.",
+      "followUp": "D'où viennent les noms Aowin, Brissa et Anyi ?"
+    },
+    "gaps": [
+      {
+        "field": "nameHistory.names[0]",
+        "reason": "Nous n'avons pas trouvé de source qui explique le sens du nom Aowin."
+      },
+      {
+        "field": "nameHistory.names[1]",
+        "reason": "Nous n'avons pas trouvé de source qui explique le sens du nom Brissa ni qui dit qui l'a donné en premier."
+      },
+      {
+        "field": "organization.ageClassSystems",
+        "reason": "Nous n'avons pas trouvé de source qui parle de classes d'âge chez les Aowin."
+      },
+      {
+        "field": "demography.totalPopulation",
+        "reason": "Nous n'avons pas trouvé de recensement qui compte les Aowin à part ; le chiffre donné est une estimation d'une base de données missionnaire pour les Anyi du Ghana."
+      },
+      {
+        "field": "demography.distributionByCountry",
+        "reason": "Nous n'avons pas trouvé de chiffre pour les Aowin qui vivent en Côte d'Ivoire."
       }
     ]
   }

@@ -4,129 +4,8 @@
   "languageFamilyId": "FLG_MANDE",
   "currentCountries": ["LBR", "GIN"],
   "classificationStatus": "contested",
-  "content": {
-    "appellations": {
-      "mainName": "Mano",
-      "selfAppellation": "Mah",
-      "exonyms": [
-        "Mano",
-        "Mano-Dan",
-        "Yacouba",
-        "Maan",
-        "Manon",
-        "Mawe",
-        "Maa",
-        "Mah-Yacouba"
-      ],
-      "originOfExonyms": "Mano est courant en anglais et dans l'administration libérienne. Les publications en français emploient parfois Yacouba aussi bien pour les Mano que pour les Dan (Gio). Les personnes concernées se nomment Mah. Joshua Project emploie Maan.",
-      "whyProblematic": "Les Mano sont souvent confondus avec les Dan/Gio, leurs voisins tres proches linguistiquement et culturellement. Les deux peuples partagent le comte de Nimba (Liberia) et sont parfois regroupes sous l'appellation Mano-Dan ou Yacouba. Voir aussi les fiches Gio et Dan.",
-      "contemporaryUsage": "Mano est le nom officiel au Liberia. En Guinée, les sources francophones appellent souvent ce peuple Toma ou Manon. La communauté préfère se nommer Mah.",
-      "linguisticFamily": "FLG_MANDE",
-      "ethnoLinguisticGroup": "Mande du Sud",
-      "historicalRegion": "Nimba County (nord-est du Liberia), prefecture de Nzerekore et Lola (Guinee forestiere)",
-      "currentCountries": ["LBR", "GIN"]
-    },
-    "ethnicities": ["Mano", "Mah"],
-    "origins": {
-      "ancientOrigins": "Les Mano descendent des peuples mande et, selon la tradition orale rapportee par John Gbatu (1919-2010), ont migre depuis la Nubie (actuel Soudan) vers l'empire du Mali antique, ou ils formaient le clan Soumano/Danhou Maghan de la federation Gbara. Ils sont consideres comme les freres aines des Dan (Gio).",
-      "formationPeriod": "Entre le 13e et le 17e siecle, lors des grandes migrations mande vers le sud-ouest. Une premiere vague s'installe en Guinee forestiere (region de Youmou), puis migre vers le Liberia actuel entre le 16e et le 17e siecle.",
-      "migrationRoutes": [
-        "Soudan (Nubie) vers l'empire du Mali",
-        "Empire du Mali vers la Guinee forestiere (region de Youmou)",
-        "Guinee forestiere vers le comte de Nimba (Liberia), fin 19e siecle sous pression de l'occupation francaise"
-      ],
-      "historicalSettlementZones": [
-        "Comte de Nimba (Liberia) : Ganta, Yekepa, Sanniquellie, Scalepea",
-        "Prefecture de Nzerekore, Lola et Yomou (Guinee forestiere)"
-      ],
-      "unificationsOrDivisions": "Les Mano et les Dan (Gio) forment les deux peuples dominants du comte de Nimba. Ils maintiennent des liens culturels et linguistiques etroits tout en conservant des identites distinctes.",
-      "externalInfluences": "Influence mandingue (Kpelle, Mandingo). Presence missionnaire americaine significative au 19e siecle avec le Dr George Way Harley qui fonda la Ganta United Mission. Penetration islamique moderee.",
-      "majorHistoricalEvents": "Participation a la defense de l'empire du Mali contre les envahisseurs nord-africains. Guerre civile liberienne (1989-2003) : les Mano ont ete majeure victimes de violences ethniques ; de nombreux refugies Mano ont ete accueillis en Guinee. Tension inter-ethnique avec les Gio sous le regime Samuel Doe."
-    },
-    "organization": {
-      "traditionalPoliticalSystem": "Societe decentralisee organisee en chefferies claniques. Le pouvoir politique repose sur les anciens et les chefs de lignage. Pas de royaute centralisee comparable aux grands empires voisins.",
-      "clanOrganization": "Organisation patrilineaire. Les familles sont organisees en lignages (clans) exogames. Les familles de freres vivent generalement proches les unes des autres (communautes virilocales).",
-      "ageClassSystems": "Systeme d'initiation a deux volets : le Poro pour les hommes et le Sande pour les femmes, societes secretes qui supervisent le passage a l'age adulte.",
-      "roleOfLineages": "Les anciens des lignages jouent un role central dans la resolution des conflits, la gestion des terres et les decisions communautaires.",
-      "religiousAuthority": "L'autorite religieuse traditionnelle est liee aux societes secretes Poro et Sande. Les masques du Poro sont gardes par des ainés initiés. Depuis le 19e siecle, influence chretienne (methodiste, catholique) forte au Liberia ; presence islamique en Guinee."
-    },
-    "languages": {
-      "mainLanguage": "Mah (Mano)",
-      "isoCodes": ["mev"],
-      "dialects": [
-        "Mah du Liberia (Nimba County)",
-        "Maan de Guinee (Nzerekore, Lola, Yomou)"
-      ],
-      "vehicularRole": "La langue mah est une langue vernaculaire locale, utilisee principalement dans le comte de Nimba et la Guinee forestiere. Elle est influencee par le mandingue et la langue gio (dan). Elle n'a pas de role de vehiculaire regional mais est langue de communication inter-Mano. Le mev est une des langues nationales minoritaires du Liberia."
-    },
-    "culture": {
-      "majorRites": "Initiation au Poro (hommes) et au Sande (femmes) : rites de passage a l'age adulte organises dans la foret sacree. Les masques Poro sont centraux dans ces ceremonies. Rites funeraires avec chants et danses pour honorer les defunts. Mariages traditionnels avec dote.",
-      "symbols": "Le masque du Poro, dont la gardienne est une mascarade feminine honoree comme la mere de tous les autres masques. Mt. Nimba (Niemba Tun en mano, signifiant collines ou les jeunes filles glissent et tombent), lieu de culte ancestral dedie au dieu createur Wala/Ya'ala/Nyamba.",
-      "artsAndMusic": "Les Mano sont reputes comme musiciens et artisans accomplis. Danses masquees alliant energie physique et dimension spirituelle. Transmission des traditions par la danse, les masques et les contes (folklores). Les masques drapent souvent du tissu rouge. Le Dr George Way Harley a collecte de nombreux masques Mano au 20e siecle, aujourd'hui conserves dans des musees americains.",
-      "spiritualities": "Religion traditionnelle animiste centree sur le culte du dieu createur Wala/Ya'ala/Nyamba. Societes secretes Poro et Sande comme piliers spirituels. Au Liberia, forte penetration chretienne depuis le 19e siecle (methodiste, catholique). En Guinee, influence islamique plus marquee."
-    },
-    "historicalRole": {
-      "kingdomsOrChiefdoms": "Royaume fonde dans la region de Youmou (Guinee) lors des migrations medievales. Organisation en chefferies decentralisees lors de l'installation au Liberia. Pas de royaute unique centralisee documentee a grande echelle.",
-      "relationsWithNeighbors": "Relations tres etroites avec les Dan (Gio), consideres comme freres cadets. Liens avec les Kono et les Kpelle. Tensions historiques avec les Mandingo qui ont pousse vers le sud les peuples mande, dont les Mano. Relations de voisinage avec les Guerze (Kpelle) au Liberia.",
-      "conflictsOrAlliances": "Alliance historique avec les Dan (Gio). Pendant la guerre civile liberienne, les Mano et les Gio ont ete cibles par les forces du president Samuel Doe (lui-meme Krahn), ce qui a contribue a l'escalade du conflit. Lors du siege de Ganta, des officiers Mano de l'armee guineenne ont apporte leur soutien aux defenseurs liberiens.",
-      "diaspora": "Refuge en Guinee pendant la guerre civile liberienne (1989-2003). Communautes dans les grandes villes du Liberia (Monrovia). Presence en Cote d'Ivoire et dans d'autres pays d'Afrique de l'Ouest."
-    },
-    "demography": {
-      "totalPopulation": 499000,
-      "referenceYear": 2025,
-      "source": "Joshua Project 2025 : 377 000 au Liberia, 122 000 en Guinee. Wikipedia estime 472 000 a 510 000. Mano representent environ 7,9 % de la population du Liberia (recensement 2008).",
-      "distributionByCountry": [
-        {
-          "country": "LBR",
-          "population": 377000
-        },
-        {
-          "country": "GIN",
-          "population": 122000
-        }
-      ]
-    },
-    "sources": [
-      {
-        "title": "Joshua Project – Maan in Liberia, 2025",
-        "url": "https://joshuaproject.net/people_groups/16121/LI",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "Joshua Project – Maan in Guinea, 2025",
-        "url": "https://joshuaproject.net/people_groups/16121/GV",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "101 Last Tribes – Mano people of Liberia and Guinea",
-        "url": "https://www.101lasttribes.com/tribes/mano.html",
-        "tier": "unverified",
-        "source_kind": "community"
-      },
-      {
-        "title": "IndexMundi – Liberia ethnic groups, CIA World Factbook 2021",
-        "url": "https://www.indexmundi.com/factbook/compare/guinea.liberia/demographics",
-        "tier": "unverified",
-        "source_kind": "discovery"
-      },
-      {
-        "title": "Scripture Earth – Mano [mev], SIL International",
-        "url": "https://www.scriptureearth.org/00i-Scripture_Index.php?iso=mev",
-        "tier": "referenced",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "Ethnologue – Maan language (mev), SIL International, 2024",
-        "url": "https://www.ethnologue.com/language/mev/",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
-      }
-    ]
-  },
   "nameHistory": {
-    "summary": "Le nom Mano désigne un peuple de langue mandé du nord-est du Liberia et de la Guinée forestière, qui se nomme lui-même Maa. Au Liberia, on dit Mano ; les écrits français l'ont longtemps appelé Manon. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Mano désigne un peuple de langue mandé du nord-est du Liberia et du sud-est de la Guinée, qui se nomme lui-même Maa. Au Liberia, on dit Mano, et l'on écrit parfois Mah ou Mahn ; les écrits français l'ont longtemps appelé Manon. L'origine de ces noms a été peu étudiée : nous n'avons trouvé qu'une explication, pour Mano. Nous présentons plus bas ce que disent les sources.",
     "names": [
       {
         "nameText": "Maa",
@@ -134,8 +13,22 @@
         "selfGiven": true,
         "languageOfOrigin": "mev",
         "namedBy": null,
-        "shortLine": "Le nom que ce peuple se donne, écrit en 1976 ; son origine n'est pas connue.",
-        "periodLabel": "Écrit depuis 1976 ; en usage aujourd'hui",
+        "shortLine": "Le nom que ce peuple se donne, écrit dès 1947 ; aucune source lue n'en explique le sens.",
+        "usedIn": ["mev"],
+        "pronunciation": {
+          "respelling": "maa (un a long, dit sur un ton haut)",
+          "audio": null,
+          "source": {
+            "title": "Grammaire du mano, introduction",
+            "author": "Maria Khachaturyan",
+            "year": 2015,
+            "url": "https://journals.openedition.org/mandenkan/705",
+            "tier": "referenced",
+            "source_kind": "academic",
+            "page": "p. 3, § 1"
+          }
+        },
+        "periodLabel": "Écrit depuis 1947 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
@@ -144,7 +37,7 @@
               "label": "Aujourd'hui"
             },
             "era": "modern",
-            "statement": "Le nom Maa se retrouve dans celui de la langue : la linguiste Maria Khachaturyan écrit que le mano se dit mááwèè, de máá, « mano », et wèè, « parler ». En Guinée, maa nomme aussi le dialecte du centre, parlé à Nzérékoré, qui ne s'en distingue que par le ton. On ne sait pas avec certitude d'où vient ce nom.",
+            "statement": "Le nom Maa se retrouve dans celui de la langue : la linguiste Maria Khachaturyan écrit que le mano se dit mááwèè, de máá, « mano », et wèè, « parler ». En Guinée, màá nomme aussi le dialecte du centre, parlé dans la préfecture de Nzérékoré, qui ne s'en distingue que par le ton. Aucune des sources que nous avons lues n'explique le sens de ce nom.",
             "aspect": "meaning",
             "sources": [
               {
@@ -154,8 +47,8 @@
                 "url": "https://journals.openedition.org/mandenkan/705",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 3-7, § 1-2",
-                "notes": "Mandenkan, n° 54, 2015, lu sur OpenEdition le 11 octobre 2026."
+                "page": "p. 3-4, § 1-2",
+                "notes": "Mandenkan, n° 54, 2015, lu sur OpenEdition le 11 octobre 2026, relu le 3 novembre 2026."
               }
             ]
           },
@@ -166,7 +59,8 @@
               "label": "1976"
             },
             "era": "modern",
-            "statement": "Le nom Maa se dit aussi selon la région : l'ethnologue Kjell Zetterström note qu'on appelle les Mano du nord la mia et ceux du sud bei mia, la et bei voulant dire « nord » et « sud ».",
+            "statement": "Le nom Maa se dit aussi selon la région : l'ethnologue Kjell Zetterström note que l'on appelle les Mano du nord la mia et ceux du sud bei mia, la et bei voulant dire « nord » et « sud ».",
+            "aspect": "usage",
             "sources": [
               {
                 "title": "The Yamein Mano of Northern Liberia",
@@ -175,8 +69,8 @@
                 "url": "https://archive.org/details/IA41548926_0024",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 15",
-                "notes": "Uppsala, Institutionen för allmän och jämförande etnografi, Occasional Papers VI, 1976. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+                "page": "p. 16",
+                "notes": "Uppsala, Institutionen för allmän och jämförande etnografi, Occasional Papers VI, 1976. Lu dans la numérisation d'Internet Archive le 11 octobre 2026, relu le 3 novembre 2026."
               }
             ]
           },
@@ -187,9 +81,14 @@
               "label": "1976"
             },
             "era": "modern",
-            "statement": "Le nom Maa apparaît par écrit chez l'ethnologue suédois Kjell Zetterström, qui écrit que les Mano se nomment eux-mêmes Maa ou Maa mia, mia voulant dire « gens » dans leur langue. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "statement": "Le nom Maa est écrit en 1976 par l'ethnologue suédois Kjell Zetterström, qui a vécu chez les Mano du nord du Liberia. Il note qu'ils se nomment eux-mêmes Maa ou Maa mia, mia voulant dire « gens » dans leur langue.",
             "formAsWritten": "Maa",
-            "birth": true,
+            "actors": [
+              {
+                "name": "Kjell Zetterström",
+                "role": "écrit cette forme"
+              }
+            ],
             "sources": [
               {
                 "title": "The Yamein Mano of Northern Liberia",
@@ -198,8 +97,37 @@
                 "url": "https://archive.org/details/IA41548926_0024",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 15",
-                "notes": "Uppsala, Institutionen för allmän och jämförande etnografi, Occasional Papers VI, 1976. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+                "page": "p. 16",
+                "notes": "Uppsala, Institutionen för allmän och jämförande etnografi, Occasional Papers VI, 1976. Lu dans la numérisation d'Internet Archive le 11 octobre 2026, relu le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1947,
+              "to": 1947,
+              "label": "1947"
+            },
+            "era": "modern",
+            "statement": "Le nom Maa apparaît par écrit sous la forme Ma-mia chez George Schwab, qui l'a relevé au Liberia lors d'une expédition de 1928 et l'a publié en 1947 : il précise que mia veut dire « gens ». C'est la plus ancienne trace de ce nom que nous connaissons. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Ma-mia",
+            "birth": true,
+            "actors": [
+              {
+                "name": "George Schwab",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Tribes of the Liberian Hinterland",
+                "author": "George Schwab",
+                "year": 1947,
+                "url": "https://archive.org/details/tribesofliberian00schw",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 23",
+                "notes": "Cambridge (Massachusetts), Peabody Museum, Papers vol. 31, 1947, ouvrage édité par George W. Harley d'après l'expédition de 1928. Lu dans la numérisation d'Internet Archive le 3 novembre 2026."
               }
             ]
           }
@@ -211,7 +139,7 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom courant au Liberia, noté dès 1854 ; son origine n'est pas connue.",
+        "shortLine": "Le nom courant au Liberia, noté dès 1854 ; nous n'en avons trouvé qu'une explication, de 1947.",
         "periodLabel": "Noté depuis 1854 ; en usage aujourd'hui",
         "accounts": [
           {
@@ -221,8 +149,8 @@
               "label": "1976"
             },
             "era": "modern",
-            "statement": "Le nom Mano désigne, au Liberia et chez les ethnologues, le peuple qui se nomme Maa et sa langue, selon Kjell Zetterström, qui l'emploie dans le titre de son étude. On ne sait pas avec certitude d'où vient ce nom.",
-            "aspect": "meaning",
+            "statement": "Le nom Mano désigne, au Liberia et chez les ethnologues, le peuple qui se nomme Maa et sa langue : Kjell Zetterström l'emploie dans le titre de son étude, tout en notant le nom que les Mano se donnent.",
+            "aspect": "usage",
             "sources": [
               {
                 "title": "The Yamein Mano of Northern Liberia",
@@ -231,8 +159,30 @@
                 "url": "https://archive.org/details/IA41548926_0024",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 15",
-                "notes": "Uppsala, Institutionen för allmän och jämförande etnografi, Occasional Papers VI, 1976. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+                "page": "p. 16",
+                "notes": "Uppsala, Institutionen för allmän och jämförande etnografi, Occasional Papers VI, 1976. Lu dans la numérisation d'Internet Archive le 11 octobre 2026, relu le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1947,
+              "to": 1947,
+              "label": "1947"
+            },
+            "era": "modern",
+            "statement": "Le nom Mano est, selon George Schwab en 1947, celui que donnent à ce peuple les Américano-Libériens, descendants des colons venus des États-Unis. Schwab l'explique par Ma, le nom que ce peuple se donne, suivi de no ou o, qui voudrait dire « gens ». C'est la seule explication de ce nom que nous ayons trouvée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tribes of the Liberian Hinterland",
+                "author": "George Schwab",
+                "year": 1947,
+                "url": "https://archive.org/details/tribesofliberian00schw",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 23",
+                "notes": "Cambridge (Massachusetts), Peabody Museum, Papers vol. 31, 1947, ouvrage édité par George W. Harley d'après l'expédition de 1928. Lu dans la numérisation d'Internet Archive le 3 novembre 2026."
               }
             ]
           },
@@ -243,7 +193,7 @@
               "label": "1854"
             },
             "era": "polity",
-            "statement": "Le nom Mano a été noté en 1854 par le linguiste Sigismund Koelle, qui l'écrit mano ou mana, selon Maurice Delafosse, qui rapporte ce relevé en 1904 puis en 1924. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "statement": "Le nom Mano a été noté en 1854 par le linguiste Sigismund Koelle, qui l'écrit mano ou mana, selon Maurice Delafosse, qui rapporte ce relevé en 1904 puis en 1924. C'est la plus ancienne trace de ce nom que nous connaissons. Ce peuple existait déjà avant elle.",
             "birth": true,
             "sources": [
               {
@@ -327,7 +277,7 @@
               "label": "28 mars 1899"
             },
             "era": "colonial",
-            "statement": "Le nom Manon apparaît par écrit dans le récit de la mission du lieutenant Woelffel, publié par La Géographie : le 28 mars 1899, la mission entre à Lola, « énorme village mi-Guerzé, mi-Manon », et y fonde un poste. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "statement": "Le nom Manon apparaît par écrit dans le récit de la mission du lieutenant Woelffel, publié par La Géographie : le 28 mars 1899, la mission entre à Lola, « énorme village mi-Guerzé, mi-Manon », et y fonde un poste. C'est la plus ancienne trace de ce nom que nous connaissons. Ce peuple existait déjà avant elle.",
             "formAsWritten": "Manon",
             "birth": true,
             "actors": [
@@ -350,6 +300,295 @@
             ]
           }
         ]
+      },
+      {
+        "nameText": "Mah",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "mev",
+        "namedBy": null,
+        "shortLine": "Une autre façon d'écrire Maa, employée au Liberia, jusque dans le nom de districts du comté de Nimba.",
+        "periodLabel": "Écrit depuis 1947 ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Mah s'écrit Mahn dans les résultats du recensement libérien de 2008, qui nomment ainsi plusieurs districts du comté de Nimba, comme Sanniquellie Mahn ou Meinpea-Mahn.",
+            "aspect": "usage",
+            "formAsWritten": "Mahn",
+            "sources": [
+              {
+                "title": "2008 National Population and Housing Census: Final Results",
+                "author": "Liberia Institute of Statistics and Geo-Information Services (LISGIS)",
+                "year": 2009,
+                "url": "https://catalog.ihsn.org/catalog/4325/download/56486",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "p. 4, tableau 6",
+                "notes": "Institut libérien de la statistique, mai 2009. Tableau de la population par comté et par district, lu le 3 novembre 2026 dans le catalogue d'enquêtes de l'IHSN."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Mah figure en 1976 dans celui d'une chefferie du Liberia, la chefferie Sanniquellie-Mah, dont fait partie le clan Yamein étudié par Kjell Zetterström.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Yamein Mano of Northern Liberia",
+                "author": "Kjell Zetterström",
+                "year": 1976,
+                "url": "https://archive.org/details/IA41548926_0024",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9-10",
+                "notes": "Uppsala, Institutionen för allmän och jämförande etnografi, Occasional Papers VI, 1976. Lu dans la numérisation d'Internet Archive le 11 octobre 2026, relu le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1947,
+              "to": 1947,
+              "label": "1947"
+            },
+            "era": "modern",
+            "statement": "Le nom Mah est, selon George Schwab en 1947, la forme qu'emploie une autre expédition, l'expédition africaine de l'université Harvard.",
+            "formAsWritten": "Mah",
+            "sources": [
+              {
+                "title": "Tribes of the Liberian Hinterland",
+                "author": "George Schwab",
+                "year": 1947,
+                "url": "https://archive.org/details/tribesofliberian00schw",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 23",
+                "notes": "Cambridge (Massachusetts), Peabody Museum, Papers vol. 31, 1947, ouvrage édité par George W. Harley d'après l'expédition de 1928. Lu dans la numérisation d'Internet Archive le 3 novembre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "content": {
+    "appellations": {
+      "mainName": "Mano",
+      "selfAppellation": "Maa",
+      "exonyms": ["Mano", "Manon"],
+      "spellingAliases": [
+        "Mah",
+        "Mahn",
+        "Ma-mia",
+        "Maa mia",
+        "Mann",
+        "Maan",
+        "Mawe"
+      ],
+      "originOfExonyms": "Le nom Mano est celui qu'emploient l'administration libérienne et, selon George Schwab en 1947, les Américano-Libériens, descendants des colons venus des États-Unis. Schwab l'explique par Ma, le nom que ce peuple se donne, suivi de no ou o, qui voudrait dire « gens » : c'est une hypothèse, et nous n'en avons pas trouvé d'autre. La forme Manon apparaît dans les écrits français de Guinée en 1899. Nous n'avons pas trouvé de source qui l'explique.",
+      "whyProblematic": "Ce peuple porte plusieurs noms selon la langue et le pays, et ces noms ont été mêlés à ceux de ses voisins. En 1904, le linguiste Maurice Delafosse emploie Manon pour d'autres groupes, si bien que ce nom n'a pas toujours désigné le même peuple. Les Mano sont aussi très proches des Dan, que l'on appelle Gio au Liberia : selon Kjell Zetterström, les Mano les tiennent pour leurs « petits frères », et George Schwab rapporte un récit qui donne aux deux peuples un même ancêtre, Ma. En Guinée, sous la Première République (1958-1984), le mano était même considéré comme un dialecte du kpellé, selon la linguiste Maria Khachaturyan.",
+      "contemporaryUsage": "Au Liberia, on dit Mano. Le recensement de 2008 écrit Mahn dans le nom de plusieurs districts du comté de Nimba, comme Sanniquellie Mahn. Les linguistes écrivent mano, en français comme en anglais. Les personnes concernées se nomment elles-mêmes Maa et appellent leur langue mááwèè, selon Maria Khachaturyan.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
+    },
+    "ethnicities": [
+      "Maa, le nom que ce peuple se donne",
+      "Mano du nord, appelés la mia selon Kjell Zetterström",
+      "Mano du sud, appelés bei mia selon Kjell Zetterström"
+    ],
+    "origins": {
+      "ancientOrigins": "Selon leurs propres traditions, recueillies par Kjell Zetterström vers 1970, les Mano vivaient autrefois plus au nord et ont été repoussés vers le sud par les Kpellé, eux-mêmes poussés par les Malinké, que l'on appelle Mandingo au Liberia. Un récit des Mano du nord fait venir le premier Mano, Zo Masakolo, d'une ville nommée Misalu, au sud de Kankan, en Guinée ; certains informateurs disent qu'il était malinké. Un autre récit, recueilli par George Schwab en 1928, fait descendre du ciel Zo Mia, qui aurait fondé une ville au pays du clan Yamei et établi le Poro. Ces récits disent comment les Mano se pensent eux-mêmes ; ils ne donnent pas de date.",
+      "formationPeriod": "Plusieurs auteurs cités par Kjell Zetterström placent l'arrivée des Mano dans la forêt entre le XVIe et le début du XIXe siècle. Selon l'historien Yves Person, les Malinké ont repoussé les Kpellé vers le sud du XVIe au XVIIIe siècle, ceux-ci ont repoussé les Mano, et la situation s'est stabilisée vers 1800. L'anthropologue Warren d'Azevedo parle, lui, d'un mouvement allant du XVIIe au début du XIXe siècle. Zetterström estime que Baytonwee, la plus ancienne ville du clan Yamein, aurait été fondée dans la seconde moitié du XVIIIe siècle.",
+      "migrationRoutes": [
+        "Du nord vers la forêt du sud-est de la Guinée et du nord-est du Liberia, selon les traditions rapportées par Kjell Zetterström",
+        "De la Guinée vers le Liberia à la fin du XIXe siècle, quand la France occupe la Guinée, selon Zetterström",
+        "Du Liberia vers la Guinée, retours rapportés par l'ethnologue Bohumil Holas en 1952 et cités par Zetterström",
+        "Du comté de Nimba vers la Guinée et la Côte d'Ivoire, pour fuir la guerre en 1989 et 1990, selon Human Rights Watch"
+      ],
+      "historicalSettlementZones": [
+        "Comté de Nimba, au nord-est du Liberia, autour de Sanniquellie, Ganta et Yekepa",
+        "Préfectures de Nzérékoré, Lola et Yomou, au sud-est de la Guinée"
+      ],
+      "unificationsOrDivisions": "Les Mano n'ont pas formé un seul État. Selon Kjell Zetterström, la ville était autrefois l'unité politique la plus haute. Au Liberia, l'administration les a ensuite rangés en chefferies : le clan Yamein, que Zetterström a étudié, fait partie de la chefferie Sanniquellie-Mah et date des années 1930. En 1928, des anciens réunis à Zuluyi ont nommé à George Schwab seize clans mano au Liberia, dont le Lau, le plus grand, et deux en Guinée, Kalana et Maow. Le pays mano s'étend des deux côtés de la frontière entre le Liberia et la Guinée.",
+      "externalInfluences": "Selon Kjell Zetterström, les Mano du nord ont été fortement marqués par leurs voisins malinké, que l'on appelle Mandingo au Liberia, et leurs croyances portent des traces de l'islam et, plus tard, du christianisme, plus présent au sud. Le médecin missionnaire américain George Way Harley s'est installé à Ganta, en pays mano, dans les années 1920 : en 1947, il y travaillait depuis vingt et un ans. En Guinée, beaucoup de Mano scolarisés parlent français, et beaucoup parlent aussi le maninka, selon Maria Khachaturyan.",
+      "majorHistoricalEvents": "Selon les témoins interrogés par Kjell Zetterström, des troupes françaises venues de Guinée ont brûlé Gbelay et d'autres villes du nord du pays mano, puis des soldats libériens les ont repoussées ; Zetterström rapproche ces faits d'un soulèvement de 1911 décrit par l'historien Jean Suret-Canale. Après l'échec du coup d'État de Thomas Quiwonkpa en 1985, les soldats du gouvernement de Samuel Doe tuent des centaines de soldats et de civils gio et mano, selon Human Rights Watch. Le 24 décembre 1989, le Front national patriotique du Liberia (NPFL) entre dans le comté de Nimba par Butuo ; ses premiers combattants sont surtout des Gio et des Mano, selon la Commission vérité et réconciliation du Liberia. L'armée répond par des tueries de civils, et plus de 160 000 personnes fuient vers la Guinée et la Côte d'Ivoire. Le 29 juillet 1990, plus de 500 personnes, surtout gio et mano, sont tuées dans l'église luthérienne Saint-Pierre de Monrovia, où elles s'étaient réfugiées."
+    },
+    "organization": {
+      "traditionalPoliticalSystem": "Selon Kjell Zetterström, la ville était autrefois l'unité politique la plus haute chez les Mano du nord. Gbelay avait un grand chef, appelé dom en mano : Gbia meimi, puis son fils Tugbayayu. Au Liberia, les Mano vivent aujourd'hui dans les chefferies de l'État, chefferies principales, clans et villes, chacune dirigée par un chef élu.",
+      "clanOrganization": "Chez les Mano du nord, chaque ville est divisée en quartiers, appelés gbing en mano. Selon Kjell Zetterström, un quartier réunit des familles dont les chefs descendent d'un même ancêtre par les hommes, et ses membres partagent des interdits alimentaires transmis par le père. On ne se marie pas à l'intérieur de son quartier dans une même ville, mais on peut épouser une femme d'une autre ville qui a les mêmes interdits.",
+      "ageClassSystems": "Les garçons entrent dans la société du Poro et les filles dans celle du Sande, qui tiennent chacune à leur tour l'école de brousse. Selon Kjell Zetterström, le Poro tenait autrefois la brousse quatre ans, puis le Sande trois ans, et les deux ne siégeaient jamais en même temps. Tous les Mano n'ont pas le Poro : en 1965, deux petits clans du sud qui ne l'avaient pas, Wii et Gbei, se sont heurtés à leurs voisins qui l'avaient.",
+      "roleOfLineages": "Le quartier, fondé sur la descendance par les hommes, est à la fois un groupe social et un groupe qui détient la terre. Il est dirigé par un chef de quartier, en général l'homme le plus âgé, selon Kjell Zetterström. Les objets hérités des ancêtres, appelés gono, restent dans la famille et sont gardés par un membre du quartier.",
+      "religiousAuthority": "Les sociétés du Poro et du Sande encadrent l'initiation et gardent leurs secrets : selon Kjell Zetterström, révéler les secrets du Poro était le crime le plus grave. Leurs responsables, ainsi que les guérisseurs et guérisseuses, portent le titre de zoo, que le médecin George Way Harley rapprochait du mot « docteur ». Zetterström note que le pouvoir du Poro a diminué depuis que l'État libérien contrôle la région."
+    },
+    "languages": {
+      "mainLanguage": "Mano (mev)",
+      "isoCodes": ["mev"],
+      "dialects": [
+        "Zaan, au nord, dans la préfecture de Lola, en Guinée",
+        "Maa, au centre, dans la préfecture de Nzérékoré, en Guinée",
+        "Kpenson, au sud, dans la préfecture de Yomou, en Guinée",
+        "Au moins un autre dialecte au sud du pays mano du Liberia, selon Kjell Zetterström"
+      ],
+      "vehicularRole": "Le mano n'a de statut officiel ni en Guinée ni au Liberia, selon Maria Khachaturyan. Sous la Première République de Guinée (1958-1984), il était tenu pour un dialecte du kpellé, qui était alors une des langues nationales. Aujourd'hui, la radio de Nzérékoré diffuse chaque jour un quart d'heure d'émissions en mano, et la radio nationale, à Conakry, une demi-heure par semaine. Beaucoup de Mano parlent aussi le kpellé, et de nombreux villages sont bilingues. Glottolog classe le mano parmi les langues mandé du sud-est, dans un petit groupe qu'il nomme mano-dan."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q17110031",
+      "glottocode": "mann1248",
+      "iso639_3": "mev"
+    },
+    "culture": {
+      "majorRites": "L'initiation des garçons au Poro et des filles au Sande se fait dans une forêt réservée, la brousse de la société. Selon Kjell Zetterström, les garçons y reçoivent des scarifications, puis apprennent l'histoire du peuple, le respect des aînés, les travaux des champs, la chasse et la construction des maisons. Ils reviennent en ville avec un nouveau nom, et leur retour est fêté par des repas, de la musique et des danses. À Bonah, une session du Poro a eu lieu en 1970, puis en 1974.",
+      "symbols": "Les masques tiennent une grande place : en mano, le mot ge, qui veut dire « esprit », désigne aussi les masques, selon Kjell Zetterström. Les gono, objets hérités des ancêtres comme une vieille arme ou une canne de cérémonie, passent pour abriter les esprits des ancêtres. Selon des informateurs de Zetterström, Wala, le dieu créateur, vivait dans le mont Nimba et l'aurait quitté quand la société minière LAMCO a commencé à faire sauter la montagne.",
+      "artsAndMusic": "Le médecin missionnaire George Way Harley a réuni à Ganta une collection de masques mano et gio. En 1950, il les décrit comme des instruments de l'ordre social et comme la forme visible d'un culte des ancêtres. Il cite aussi les métiers des Mano et des Gio : les tisserands font des bandes de coton, le forgeron fabrique houes et coutelas, et les femmes font les poteries. George Schwab publie en 1947 des contes et des proverbes mano recueillis par le révérend H. T. Miller.",
+      "spiritualities": "Les Mano croient en un dieu créateur, Wala, selon Kjell Zetterström ; on dit aussi Wala gbuo, « le grand Wala ». George Schwab pensait que Wala venait d'« Allah », mais Zetterström n'a jamais entendu d'autre nom. Les ancêtres tiennent une grande place : leurs esprits vivent près des eaux sacrées et dans les objets hérités. Le médecin George Way Harley voyait dans cette religion un culte des ancêtres, que l'on prie et à qui l'on offre des sacrifices sur les tombes. Zetterström relève aussi des traces de l'islam et du christianisme."
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": "Nous n'avons pas trouvé trace d'un royaume mano. Selon Kjell Zetterström, chaque ville avait son chef, et Gbelay eut un grand chef, Gbia meimi, puis son fils Tugbayayu, qui demanda la protection du gouvernement de Monrovia face aux Français. Au Liberia, l'État a ensuite organisé le pays mano en chefferies, comme la chefferie Sanniquellie-Mah.",
+      "relationsWithNeighbors": "Selon Kjell Zetterström, les Mano se disent proches des Kono et des Gio, qu'ils appellent leurs « petits frères ». Leurs relations sont moins amicales avec les Kpellé et les Mandingo, sans hostilité ouverte. Leurs traditions parlent de nombreuses guerres contre les Kpellé, menées pour des femmes et des captifs plus que pour la terre. Beaucoup de Mano parlent pourtant le kpellé, et des villages sont mixtes, selon Maria Khachaturyan. À Nzérékoré, Mano et Kpellé se disputent le titre de premier peuple de la ville.",
+      "conflictsOrAlliances": "Dans les années 1980, les Mano et les Gio du comté de Nimba se retrouvent du même côté face au régime de Samuel Doe, appuyé surtout sur les Krahn et les Mandingo, selon la Commission vérité et réconciliation du Liberia. Après le coup d'État manqué de 1985, l'armée est purgée des soldats originaires du Nimba. Pendant la guerre, en 1990, des combattants surtout gio et mano tuent à leur tour des Krahn et des Mandingo, selon la même commission.",
+      "diaspora": "Pendant la guerre civile du Liberia, plus de 160 000 habitants du comté de Nimba ont fui vers la Guinée et la Côte d'Ivoire, où ils avaient des liens familiaux, selon Human Rights Watch en 1990. Kjell Zetterström signale aussi quelques villages mano en Côte d'Ivoire. Des Gio et des Mano vivaient à Monrovia, la capitale, où beaucoup furent tués en 1990."
+    },
+    "demography": {
+      "totalPopulation": 390000,
+      "referenceYear": 2012,
+      "source": "Une estimation de 2012, citée par la linguiste Maria Khachaturyan en 2015, compte 390 000 personnes qui parlent le mano : 305 000 au Liberia et 85 000 en Guinée. Ce sont des locuteurs de la langue, pas un décompte du peuple. Au Liberia, le recensement de 2008 comptait 273 000 Mano, selon la même autrice, sur 3 476 608 habitants, soit environ 7,9 %. Celui de 1962 en comptait 72 122, un chiffre que l'ethnologue Kjell Zetterström jugeait trop bas. Joshua Project, une base de données missionnaire, donne un chiffre plus élevé : 510 000 personnes au Liberia et en Guinée, lors de notre consultation en 2026.",
+      "distributionByCountry": [
+        {
+          "country": "LBR",
+          "population": 305000,
+          "percentage": 78.2,
+          "note": "Comté de Nimba, au nord-est du pays, autour de Sanniquellie, Ganta et Yekepa"
+        },
+        {
+          "country": "GIN",
+          "population": 85000,
+          "percentage": 21.8,
+          "note": "Préfectures de Nzérékoré, Lola et Yomou, au sud-est du pays"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Grammaire du mano, introduction",
+        "url": "https://journals.openedition.org/mandenkan/705",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Revue Mandenkan, n° 54, 2015, p. 3-7, publiée par le LLACAN (CNRS). Lu le 3 novembre 2026. Paragraphes 1 à 7 : les régions où l'on parle le mano, l'estimation de 2012 du nombre de locuteurs, le chiffre du recensement libérien de 2008, les trois dialectes de Guinée, le nom de la langue, sa place à la radio et sous la Première République, et la rivalité entre Mano et Kpellé à Nzérékoré."
+      },
+      {
+        "title": "The Yamein Mano of Northern Liberia",
+        "url": "https://archive.org/details/IA41548926_0024",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Monographie de l'université d'Uppsala, 1976, tirée d'un séjour chez les Mano du nord du Liberia autour de 1970. Lu le 3 novembre 2026. Pages 9-10 : chefferies et recensement de 1962. Pages 14-16 : migrations, voisins et nom Maa. Pages 17-21 : récits d'origine des villes et arrivée des Français. Page 28 : quartiers et lignages. Pages 80-83 : Wala, les ancêtres et le mont Nimba. Pages 104-112 : Poro et Sande."
+      },
+      {
+        "title": "Tribes of the Liberian Hinterland",
+        "url": "https://archive.org/details/tribesofliberian00schw",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Monographie du Peabody Museum de l'université Harvard, 1947, d'après l'expédition de George Schwab en 1928, éditée par le médecin missionnaire George W. Harley. Lu le 3 novembre 2026. Page 23 : les noms Ma-mia, Mah et Mano, et le récit qui donne aux Mano et aux Gio un même ancêtre. Page 24 : la liste des clans mano. Avant-propos : les vingt et un ans de Harley à Ganta."
+      },
+      {
+        "title": "Masks as Agents of Social Control in Northeast Liberia",
+        "url": "https://archive.org/details/masksasagentsofs00harl",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "George W. Harley, Peabody Museum de l'université Harvard, Papers vol. 32, n° 2, 1950. Lu dans la numérisation d'Internet Archive le 3 novembre 2026. Avant-propos, p. vii-viii : l'étude porte sur les Mano et les Gio ; les masques y sont décrits comme la forme visible d'un culte des ancêtres, et les métiers du tissage, de la forge et de la poterie y sont cités."
+      },
+      {
+        "title": "Liberia: Flight from Terror. Testimony of Abuses in Nimba County",
+        "url": "https://www.hrw.org/reports/1990/liberia2/",
+        "tier": "referenced",
+        "source_kind": "ngo",
+        "notes": "Rapport d'Africa Watch, branche africaine de Human Rights Watch, mai 1990. Lu le 3 novembre 2026. Il décrit les tueries de soldats et de civils gio et mano après la tentative de coup d'État de 1985, la répression de l'armée dans le comté de Nimba en 1989-1990 et la fuite de plus de 160 000 personnes vers la Guinée et la Côte d'Ivoire."
+      },
+      {
+        "title": "Truth and Reconciliation Commission of Liberia, Final Report, Volume II: Consolidated Final Report",
+        "url": "https://reparations.qub.ac.uk/assets/uploads/trc-of-liberia-final-report-volume-ii.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Rapport final de la Commission vérité et réconciliation de la République du Liberia, 2009, copie conservée par l'université Queen's de Belfast. Lu le 3 novembre 2026. Page 117 : les camps opposés après 1985 et la purge de l'armée. Page 119 : l'entrée du NPFL à Butuo le 24 décembre 1989. Pages 123 et 176 : massacres de 1990, dont celui de l'église luthérienne Saint-Pierre de Monrovia."
+      },
+      {
+        "title": "2008 National Population and Housing Census: Final Results",
+        "url": "https://catalog.ihsn.org/catalog/4325/download/56486",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Institut libérien de la statistique et des informations géographiques, Monrovia, mai 2009. Lu le 3 novembre 2026. Tableau 6, p. 4 : population du comté de Nimba (462 026 habitants) et de ses districts, dont ceux qui portent le nom Mahn ; population totale du Liberia (3 476 608 habitants)."
+      },
+      {
+        "title": "Glottolog : Mann (mann1248)",
+        "url": "https://glottolog.org/resource/languoid/id/mann1248",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue international des langues, Institut Max Planck. Consulté le 3 novembre 2026. Il classe le mano, code mev, dans les langues mandé du sud-est, groupe mano-dan, le situe au Liberia, en Guinée et en Côte d'Ivoire, et donne ces autres noms : Maa, Mah, Mann, Mano, Manö, Mawe."
+      },
+      {
+        "title": "Joshua Project – Maan in Liberia, 2025",
+        "url": "https://joshuaproject.net/people_groups/16121/LI",
+        "tier": "unverified",
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire. Consultée le 3 novembre 2026 : elle nomme ce peuple Maan et compte 385 000 personnes au Liberia, 510 000 avec la Guinée."
+      },
+      {
+        "title": "Joshua Project – Maan in Guinea, 2025",
+        "url": "https://joshuaproject.net/people_groups/16121/GV",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "101 Last Tribes – Mano people of Liberia and Guinea",
+        "url": "https://www.101lasttribes.com/tribes/mano.html",
+        "tier": "unverified",
+        "source_kind": "community"
+      },
+      {
+        "title": "IndexMundi – Liberia ethnic groups, CIA World Factbook 2021",
+        "url": "https://www.indexmundi.com/factbook/compare/guinea.liberia/demographics",
+        "tier": "unverified",
+        "source_kind": "discovery"
+      },
+      {
+        "title": "Scripture Earth – Mano [mev], SIL International",
+        "url": "https://www.scriptureearth.org/00i-Scripture_Index.php?iso=mev",
+        "tier": "referenced",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "Ethnologue – Maan language (mev), SIL International, 2024",
+        "url": "https://www.ethnologue.com/language/mev/",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Maa, que l'on appelle Mano au Liberia et Manon dans d'anciens écrits français, vivent des deux côtés de la frontière entre le Liberia et la Guinée.",
+      "followUp": "D'où vient le nom Mano que l'on donne aux Maa ?"
+    },
+    "gaps": [
+      {
+        "field": "nameHistory.names[0]",
+        "reason": "Nous n'avons pas trouvé de source qui explique le sens du nom Maa."
+      },
+      {
+        "field": "nameHistory.names[2]",
+        "reason": "Nous n'avons pas trouvé de source qui explique d'où vient la forme Manon."
+      },
+      {
+        "field": "demography.totalPopulation",
+        "reason": "Nous n'avons pas pu lire les chiffres par peuple du recensement libérien de 2022 ; nous donnons donc une estimation de 2012, qui compte les personnes parlant le mano."
       }
     ]
   }

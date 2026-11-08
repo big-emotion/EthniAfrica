@@ -137,7 +137,7 @@
   {
     "id": "PPL_AKA",
     "status": "colonial-legacy",
-    "rationale": "« Pygmees est un terme colonial aujourd'hui considere pejoratif », qui « renvoie a une categorisation coloniale basee sur la taille et nie l'identite propre de ces peuples »."
+    "rationale": "La fiche dit que « le mot Pygmée réunit sous un seul nom des peuples différents par leur langue, leur culture et leur histoire, et il met en avant la taille des personnes », que « des colons français en ont tiré la forme Babinga » et qu'« en République du Congo, une loi de 2011 interdit ce mot »."
   },
   {
     "id": "PPL_AKAN",
@@ -792,7 +792,7 @@
   {
     "id": "PPL_HAUSA",
     "status": "contested",
-    "rationale": "« L'amalgame entre Hausa et Fulani est un raccourci politique courant dans le discours nigerian contemporain », label sociopolitique ne apres le jihad de 1804, sans invention coloniale."
+    "rationale": "La fiche dit que « le nom Hausa-Fulani réunit deux peuples sous un seul nom » et que « le nom Hausa lui-même ne couvre pas tous ceux qui parlent la langue » ; l'origine du nom Hausa est présentée par trois hypothèses concurrentes."
   },
   {
     "id": "PPL_HOA",
@@ -1227,7 +1227,7 @@
   {
     "id": "PPL_MANO",
     "status": "contested",
-    "rationale": "La fiche signale la confusion avec les Dan/Gio et l'usage indistinct de Yacouba dans la litterature francophone, alors que Mah est l'endonyme prefere par la communaute elle-meme."
+    "rationale": "La fiche dit que « ce peuple porte plusieurs noms selon la langue et le pays, et ces noms ont été mêlés à ceux de ses voisins », que Manon « n'a pas toujours désigné le même peuple » et qu'en Guinée « le mano était même considéré comme un dialecte du kpellé »."
   },
   {
     "id": "PPL_MANYIKA",
@@ -2023,6 +2023,16 @@
     "id": "PPL_ZENATA",
     "status": "contested",
     "rationale": "La fiche dit le macro-groupe « dont les limites sont contestees par les historiens », Yves Modéran jugeant le terme tardif et la notion de Zenata unifié « surtout une construction des sources arabes medievales »."
+  },
+  {
+    "id": "PPL_WAN",
+    "status": "consensual",
+    "rationale": "La fiche dit que « les formes Noua et Ouan sont des écritures du même nom par l'administration française » et que Ravenhill a retenu Wan comme « la forme sans signes particuliers la plus proche de ce que disent les Wan »."
+  },
+  {
+    "id": "PPL_WOLOF",
+    "status": "consensual",
+    "rationale": "La fiche dit que « le nom Wolof s'emploie aujourd'hui pour le peuple et pour sa langue » et que « nous n'avons pas trouvé de source qui juge le nom Wolof blessant ou rejeté »."
   },
   {
     "id": "PPL_AKYE",

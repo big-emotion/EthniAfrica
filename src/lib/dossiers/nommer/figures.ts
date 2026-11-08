@@ -203,7 +203,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // into their keepers.
     // 18 -> 17 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 17 -> 14 on 2026-10-18: three reconstructive fiches withdrawn after wave 24 (Autres peuples bantous, Peuples forestiers du Sud et de l'Est, Africains d'origine récente).
-    value: 15,
+    // 15 -> 17 on 2026-11-08: premium peoples batch 04 rewrote eight people fiches (Adioukrou, Aowin, Mano, Wan, Vili, Hausa, Wolof, Aka) from sources read one by one.
+    value: 17,
     method:
       "fiches dont classificationStatus est renseigné sans être contested ni colonial-legacy",
     countedOn: COUNTED_ON,
@@ -224,7 +225,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 279 -> 278 on 2026-10-14: the Nabt fiche, which declared no status, was folded.
     // 278 -> 275 on 2026-10-18: the Mucubal, Taal and Mbogo fiches, which declared no status, folded or withdrawn after wave 24.
     // 275 -> 277 the same day: PPL_MAKA and PPL_NJEM added without a status, which the model leaves out until a fiche is reviewed.
-    value: 275,
+    // 275 -> 273 on 2026-11-08: premium peoples batch 04 rewrote eight people fiches (Adioukrou, Aowin, Mano, Wan, Vili, Hausa, Wolof, Aka) from sources read one by one.
+    value: 273,
     method: "fiches sans classificationStatus",
     countedOn: COUNTED_ON,
   },
@@ -251,7 +253,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // research for series 2 n° 1, dates the French spelling (Targui, 19th
     // century) instead of saying « à l'époque coloniale ».
     // 199 -> 197 on 2026-10-18: the Taal and Mbogo fiches, which counted, withdrawn after wave 24.
-    value: 199,
+    // 199 -> 200 on 2026-11-08: premium peoples batch 04 rewrote eight people fiches (Adioukrou, Aowin, Mano, Wan, Vili, Hausa, Wolof, Aka) from sources read one by one.
+    value: 200,
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -283,7 +286,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 163 -> 156 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 156 -> 155 on 2026-10-14: the Nabt fiche, which counted, was folded.
     // 155 -> 152 on 2026-10-18: the Taal, Mbogo and « Africains d'origine récente » fiches, which counted, withdrawn after wave 24.
-    value: 153,
+    // 153 -> 157 on 2026-11-08: premium peoples batch 04 rewrote eight people fiches (Adioukrou, Aowin, Mano, Wan, Vili, Hausa, Wolof, Aka) from sources read one by one.
+    value: 157,
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -370,7 +374,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 49 -> 50 on 2026-10-12: the Bakwé fiche now records Tuwè, a pejorative Krou name for them, in originOfExonyms.
     // 50 -> 49 on 2026-10-18: PPL_WIYANA no longer calls Gurunsi a pejorative term of Djerma origin,
     // which no source said; it tells Jacob's « gibier de battue » hypothesis without that label.
-    value: 49,
+    // 49 -> 48 on 2026-11-08: premium peoples batch 04 rewrote eight people fiches (Adioukrou, Aowin, Mano, Wan, Vili, Hausa, Wolof, Aka) from sources read one by one.
+    value: 48,
     method: `radicaux ${PEJORATIVE_STEMS.join(", ")} dans originOfExonyms + whyProblematic`,
     countedOn: "2026-10-09",
   },
@@ -449,7 +454,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
       "dépouillement à la main du champ nameOriginActor des 54 fiches pays",
     readOn: COUNTED_ON,
     caveat:
-      "Ces chiffres viennent d'une lecture des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
+      "Ces chiffres viennent d'un dépouillement des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
   },
   "countries-ancient-exonym": {
     kind: "read",
@@ -460,7 +465,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
       "dépouillement à la main du champ nameOriginActor des 54 fiches pays",
     readOn: COUNTED_ON,
     caveat:
-      "Ces chiffres viennent d'une lecture des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
+      "Ces chiffres viennent d'un dépouillement des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
   },
   "countries-local-kept": {
     kind: "read",
@@ -471,7 +476,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
       "dépouillement à la main du champ nameOriginActor des 54 fiches pays",
     readOn: COUNTED_ON,
     caveat:
-      "Ces chiffres viennent d'une lecture des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
+      "Ces chiffres viennent d'un dépouillement des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
   },
   "countries-african-choice": {
     kind: "read",
@@ -482,7 +487,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
       "dépouillement à la main du champ nameOriginActor des 54 fiches pays",
     readOn: COUNTED_ON,
     caveat:
-      "Ces chiffres viennent d'une lecture des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
+      "Ces chiffres viennent d'un dépouillement des 54 fiches pays. Au moment de ce relevé, les explications de l'origine des noms n'étaient pas accompagnées de sources. Il s'agit d'un classement proposé à partir de ces textes.",
   },
 
   "patronyme-fiches": {
