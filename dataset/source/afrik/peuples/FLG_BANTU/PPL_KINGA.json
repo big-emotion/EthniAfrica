@@ -105,6 +105,12 @@
         "url": "https://dice.missouri.edu/assets/docs/niger-congo/Kinga.pdf",
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Glottolog — Kinga (nucl1379)",
+        "url": "https://glottolog.org/resource/languoid/id/nucl1379",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   },

@@ -97,6 +97,12 @@
         "title": "Societies, Religion, and History – Gutenberg-e, 2008",
         "url": "http://www.gutenberg-e.org/gonzales/chapter2.html",
         "tier": "referenced"
+      },
+      {
+        "title": "Glottolog — Kutu (kutu1263)",
+        "url": "https://glottolog.org/resource/languoid/id/kutu1263",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   },
