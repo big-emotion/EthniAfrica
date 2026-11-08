@@ -81,27 +81,27 @@
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "la recherche web combinant « Boricó », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « Borico Orígen de Apellido, Significado e Historia de Apellido » et « Surnames of the population — Borico » n'ont livré ni tradition attribuable, ni chronique dédiée, ni reconstruction linguistique établissant l'origine de Boricó. Les attestations géographiques ou individuelles trouvées ne sont pas transformées en étymologie."
+      "reason": "La page Forebears (graphie espagnole) ne donne aucune signification et prévient que la répartition géographique ne permet pas d'en déduire une appartenance ethnique. La page de l'Institut d'Estadística de Catalunya atteste le nom en Catalogne sans l'expliquer. Aucune étude consacrée au nom bubi de Guinée équatoriale n'a été trouvée."
     },
     {
       "fieldPath": "alliances",
-      "reason": "la recherche web combinant « Boricó », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « Borico Orígen de Apellido, Significado e Historia de Apellido » et « Surnames of the population — Borico » n'ont identifié aucune paire d'alliance ou de parenté à plaisanterie reliant Boricó à un autre nom documenté ici."
+      "reason": "Aucune source consacrée à ce nom n'a été trouvée ; aucune alliance ne peut être décrite."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "la recherche web combinant « Boricó », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « Borico Orígen de Apellido, Significado e Historia de Apellido » et « Surnames of the population — Borico » n'ont établi aucune fonction sociale ou professionnelle héréditaire propre au nom Boricó."
+      "reason": "Aucune source consacrée à ce nom n'a été trouvée ; aucune fonction héréditaire ne peut être décrite."
     },
     {
       "fieldPath": "bearers",
-      "reason": "la recherche web combinant « Boricó », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « obituary », et la lecture de « Borico Orígen de Apellido, Significado e Historia de Apellido » et « Surnames of the population — Borico », n'a identifié aucun porteur décédé documentable sans ambiguïté. Les personnes vivantes seulement attestées par les sources ne sont pas ajoutées."
+      "reason": "Aucun porteur décédé n'est documenté par les deux sources statistiques lues, qui ne comptent que des occurrences."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "la recherche web combinant « Boricó », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « homonyme », et la lecture de « Borico Orígen de Apellido, Significado e Historia de Apellido » et « Surnames of the population — Borico », n'ont pas établi de lignée homonyme d'origine distincte."
+      "reason": "L'Institut d'Estadística de Catalunya atteste le même nom en Catalogne ; rien ne montre un lien avec les occurrences de Guinée équatoriale, ni une origine distincte documentée. L'homonymie n'est donc pas établie."
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "la recherche web combinant « Boricó », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « Borico Orígen de Apellido, Significado e Historia de Apellido » et « Surnames of the population — Borico » n'ont établi aucune règle propre à Boricó permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
+      "reason": "Aucune source lue ne décrit comment le nom Borico se transmet chez les Bubi."
     }
   ]
 }

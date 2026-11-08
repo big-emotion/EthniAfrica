@@ -23,14 +23,20 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "historicalSyntheses": [],
+    "historicalSyntheses": [
+      {
+        "claim": "Selon Kofi Agyekum, les noms de famille akan sont des noms de clan donnés aux enfants par leur père et dérivés des clans patrilinéaires ; son tableau range les formes voisines Boaten (clan Bosompra) et Boate (clan Bosomtwe), mais ne cite pas Boateng. La forme Boateng n'est donc pas rattachée ici à un clan.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["boateng-agyekum-2006"]
+      }
+    ],
     "linguisticReconstructions": []
   },
   "peoples": [
     {
       "peopleId": "PPL_ASANTE",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "boateng-christaller-1881"]
     }
   ],
   "countries": [
@@ -52,28 +58,48 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "boateng-christaller-1881",
+      "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+      "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Johann Gottlieb Christaller, Bâle, Evangelical Missionary Society, 1881, annexe G « Proper Names of Persons », p. 666 : « Boateŋ » est listé parmi les noms qui s'ajoutent au nom du jour, sans sens donné. Missionnaire de Bâle, cité pour la forme qu'il écrit. Passage déjà lu pour l'historique du nom."
+    },
+    {
+      "sourceKey": "boateng-agyekum-2006",
+      "title": "The Sociolinguistic of Akan Personal Names",
+      "url": "https://www.njas.fi/njas/article/download/24/16/38",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Kofi Agyekum, Université du Ghana, Nordic Journal of African Studies 15(2), 2006, p. 206-235 ; texte intégral lu le 8 novembre 2026. Section 2.2 (p. 215-217) : les noms de famille akan sont donnés par le père et viennent des douze clans patrilinéaires (Bosom…) ; le tableau 4 range Boaten sous Bosompra et Boate sous Bosomtwe. La forme Boateng n'y figure pas."
     }
   ],
   "gaps": [
     {
       "fieldPath": "alliances",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Ni Christaller (1881, annexe G) ni Agyekum (2006, section 2.2) ne citent de parenté à plaisanterie ou de pacte attaché à ce nom ; aucune autre source consacrée n'a été trouvée."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Christaller (1881) et Agyekum (2006) ne rattachent à Boateng aucune fonction sociale héréditaire ; aucune autre source consacrée n'a été trouvée."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les recherches sur ce nom n'ont pas fourni de porteur décédé que décrirait une source consacrée ; nos fiches n'ont pas non plus de notice de personne à relier."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les sources lues n'identifient qu'un nom akan écrit Boateng. Des sites de noms de famille proposent des sens concurrents (« peser les pierres », « serviteur du roi »), sans source ; ils ne sont pas retenus."
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom Boateng est d'abord un nom de personne akan : nous ne documentons pas encore comment il passe d'une génération à l'autre comme nom de famille."
+      "reason": "Agyekum (2006) décrit les noms de famille akan comme transmis par le père selon les clans patrilinéaires, mais sa liste ne contient pas la forme Boateng ; Christaller (1881) range Boateng parmi les noms ajoutés au nom du jour. Elles ne disent donc pas comment le nom Boateng lui-même se transmet."
+    },
+    {
+      "fieldPath": "origin.linguisticReconstructions",
+      "reason": "Christaller (1881) note que le sens premier de beaucoup de ces noms est inconnu ; Agyekum (2006) ne l'analyse pas. Aucun dictionnaire ni étude consacrée à Boateng n'a été trouvé qui en donne une étymologie établie."
     }
   ],
   "nameHistory": {

@@ -64,39 +64,39 @@
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Les recherches exactes « Bouazizi anthroponymie », « Bouazizi onomastique » et « Bouazizi surname etymology » ont été menées dans Persée, ASJP, CRASC, OpenEdition, Google Scholar et des dépôts universitaires nord-africains. Aucun travail savant consacré à l’origine ou à l’histoire d’une lignée portant exactement cette graphie n’a été trouvé. La source propre au nom n’établit qu’une graphie ou une distribution et ne permet d’énoncer ni étymologie ni origine de lignée."
+      "reason": "Des recherches sur l'origine du nom Bouazizi (« Bou Azizi », « Abu Aziz », rattachement à une tribu) n'ont trouvé aucune étude ni aucun dictionnaire de noms qui l'explique. Une page de généalogie sur le nom voisin Bouaziz avance une origine algérienne, sans source ; elle n'est pas retenue."
     },
     {
       "fieldPath": "peoples",
-      "reason": "Les recherches exactes « Bouazizi anthroponymie », « Bouazizi onomastique » et « Bouazizi surname etymology » ont été menées dans Persée, ASJP, CRASC, OpenEdition, Google Scholar et des dépôts universitaires nord-africains. Aucun travail savant consacré à l’origine ou à l’histoire d’une lignée portant exactement cette graphie n’a été trouvé. La source propre au nom ne démontre pas une association exclusive avec le peuple indiqué par la file d’attente ; ce rattachement reste au niveau non vérifié."
+      "reason": "Aucune source lue ne relie Bouazizi à un peuple ou à une tribu précise de Tunisie. Un article sur Mohamed Bouazizi évoque l'honneur tribal comme valeur partagée dans sa région, sans dire à quelle tribu le nom se rattache."
     },
     {
       "fieldPath": "alliances",
-      "reason": "Les recherches « Bouazizi alliance à plaisanterie », « Bouazizi joking relationship » et « Bouazizi parenté à plaisanterie » n’ont livré aucune paire documentée dont les deux noms sont documentés ici."
+      "reason": "Aucune source consacrée à ce nom n'a été trouvée ; aucune alliance ne peut être décrite."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Les recherches « Bouazizi caste », « Bouazizi métier héréditaire » et « Bouazizi social function » n’ont livré aucune fonction sociale ou professionnelle héréditaire propre à cette graphie."
+      "reason": "Aucune source consacrée à ce nom n'a été trouvée ; aucune fonction héréditaire ne peut être décrite."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Les recherches biographiques exactes sur « Bouazizi » dans les catalogues, notices institutionnelles et archives accessibles n’ont pas permis d’isoler un porteur décédé dont ce segment soit explicitement documenté dans la position patronymique pertinente. Les personnes vivantes repérées ont été exclues."
+      "reason": "Un porteur connu, Mohamed Bouazizi, est évoqué dans un article de Jadaliyya (2014) ; cette source et le répertoire Forebears ne donnent ni la date de son décès ni une explication du nom. Il n'est pas ajouté tant qu'une source lue en entier n'a pas établi son décès."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Les recherches exactes « Bouazizi homonym surname », « Bouazizi homonyme patronyme » et les variantes graphiques de la fiche n’ont pas établi deux origines distinctes et documentées pour la même forme."
+      "reason": "Aucune source consacrée à ce nom n'a été trouvée ; aucun homonyme d'origine distincte n'est établi."
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Les sources consultées attestent la graphie « Bouazizi » sans établir assez précisément le système dénominatif ; le classement comme nisba reste donc provisoire."
+      "reason": "La fiche garde « nisba » (nom de rattachement) par défaut. Aucune source lue ne montre que Bouazizi renvoie à un lieu, à une tribu ou à un ancêtre nommé."
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Les recherches « Bouazizi transmission patronyme », « Bouazizi filiation » et « Bouazizi hereditary surname » n’ont pas établi si, ni comment, cette forme se transmet dans les communautés concernées."
+      "reason": "Aucune source consacrée à ce nom n'a décrit comment il se transmet."
     },
     {
       "fieldPath": "designatedSocialUnit",
-      "reason": "Les recherches « Bouazizi lignée », « Bouazizi clan », « Bouazizi tribe » et « Bouazizi place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
+      "reason": "Aucune source lue ne dit à quel groupe (tribu, lignée, lieu) le nom renvoie ; « other » reste la seule case sans invention."
     }
   ]
 }

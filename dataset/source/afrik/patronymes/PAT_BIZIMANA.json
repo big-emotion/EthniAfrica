@@ -24,7 +24,13 @@
     "oralTraditions": [],
     "writtenChronicles": [],
     "historicalSyntheses": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Selon Léandre Simbananiye, qui étudie les noms de personnes au Burundi, Bizimana se comprend « c'est Imana qui le sait » : le nom dit la connaissance de toute chose qu'on prête à Imana, le nom de Dieu en kirundi. L'article parle du Burundi et du kirundi, pas du Rwanda.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["simbananiye-2005-noms-burundi"]
+      }
+    ]
   },
   "peoples": [
     {
@@ -65,19 +71,19 @@
   "gaps": [
     {
       "fieldPath": "alliances",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "L'article de Simbananiye (2005) ne cite aucune parenté à plaisanterie ni aucun pacte attaché au nom Bizimana ; aucune autre source consacrée n'a été trouvée."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "L'article de Simbananiye (2005) range Bizimana parmi les noms qui disent les attributs d'Imana ; il ne lui rattache aucune fonction héréditaire."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les recherches n'ont pas fourni de porteur décédé que décrirait une source consacrée ; les personnes nommées Bizimana qui apparaissent sont contemporaines."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Aucun homonyme d'origine distincte n'est établi. Les pages de noms consultées ne donnent aucune étymologie sourcée du nom."
     }
   ],
   "nameHistory": {
