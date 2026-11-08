@@ -52,6 +52,14 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "agyekum-2006-akan-names",
+      "title": "The Sociolinguistic of Akan Personal Names",
+      "url": "https://www.njas.fi/njas/article/download/24/16/38",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Nordic Journal of African Studies 15(2), p. 206-235, PDF ouvert et lu (section 2.2, p. 215-216). L’auteur écrit que les noms de famille akan « sont des noms de clan donnés aux enfants par leurs pères » et qu’ils reposent sur les clans patrilinéaires akan. L’article ne cite pas le nom Amoah : il décrit la règle générale, non l’histoire de ce nom."
     }
   ],
   "gaps": [
@@ -77,7 +85,7 @@
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom Amoah est d'abord un nom de personne akan : nous ne documentons pas encore comment il passe d'une génération à l'autre comme nom de famille."
+      "reason": "Le nom Amoah est d’abord un nom de personne akan. Kofi Agyekum (2006) décrit, pour les Akan en général, des noms de famille donnés par le père selon son clan patrilinéaire, mais son article ne cite pas ce nom : nous ne pouvons donc pas dire comment Amoah passe d’une génération à l’autre."
     }
   ],
   "nameHistory": {
