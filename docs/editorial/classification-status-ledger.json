@@ -391,8 +391,8 @@
   },
   {
     "id": "PPL_BONO",
-    "status": "colonial-legacy",
-    "rationale": "L'administration coloniale britannique a cree en 1959 la region Brong-Ahafo amalgamant des peuples d'origines differentes, Brong etant employe par les Asante et les colonisateurs alors que les interesses disent Bono."
+    "status": "contested",
+    "rationale": "« Le nom Brong ne désigne pas toujours le même groupe » : étendu par l'autorité asante puis devenu mot de protestation (Arhin), il couvre des peuples qui le refusent, et Gyaman nomme un royaume où les Abron étaient minoritaires ; le différend tient aux voisins africains, pas à une forme forgée par le colonisateur."
   },
   {
     "id": "PPL_BUDUMA",
@@ -491,8 +491,8 @@
   },
   {
     "id": "PPL_DAN",
-    "status": "contested",
-    "rationale": "Gio est un exonyme bassa signifiant esclave, juge devalorisant par les Dan eux-memes qui preferent leur propre ethnonyme : le nom est refuse par la communaute, sans coinage colonial."
+    "status": "colonial-legacy",
+    "rationale": "La fiche écrit que « Dioula anthropophages » est un nom colonial, qui colle au peuple une accusation de cannibalisme et le nom des marchands dioula, et que Delafosse le dit venu « des cartes » coloniales ; Gio et Yacouba, contestés eux aussi, ne sont pas des formes coloniales."
   },
   {
     "id": "PPL_DANGME",
@@ -547,7 +547,7 @@
   {
     "id": "PPL_DIOLA",
     "status": "colonial-legacy",
-    "rationale": "« Diola est la translitteration francaise du nom mandinka Jola […] popularise au XIXe siecle par les colonisateurs » : la forme retenue est celle diffusee par le colonisateur."
+    "rationale": "« Le nom jóola réunit des villages qui ne formaient ni un État ni une unité politique » et « depuis l'époque coloniale, ces habitants ont été découpés en sous-groupes aux limites et aux noms changeants » (Journet-Diallo 2010, Wondji) : la forme Diola et son découpage viennent de l'époque coloniale."
   },
   {
     "id": "PPL_DIOULA",
@@ -1621,8 +1621,8 @@
   },
   {
     "id": "PPL_SENA",
-    "status": "colonial-legacy",
-    "rationale": "Le nom vient « du comptoir commercial portugais fondé en 1531 par Vicente Pegado » : « c'est donc un exonyme portugais, non un endonyme propre du groupe »."
+    "status": "contested",
+    "rationale": "« Le nom Sena est d'abord celui d'un lieu du Zambèze, dont les Portugais font en 1531 l'un de leurs principaux centres de commerce » ; ce nom a recouvert d'autres parlers (Torrend, 1900) et couvre deux langues (seh, swk) : aucune source lue ne l'attribue à un acteur colonial, le nom est débattu plutôt qu'imposé."
   },
   {
     "id": "PPL_SENGA",
@@ -1702,7 +1702,7 @@
   {
     "id": "PPL_SONGHAI",
     "status": "contested",
-    "rationale": "Le terme « amalgame des groupes distincts », ne désignait que la caste royale, et est « rejeté par d'autres qui préfèrent leur désignation sous-groupale » ; son imposition est d'abord arabe."
+    "rationale": "Le nom couvre des groupes « qui ne se donnent pas tous ce nom », et la fiche note que « le rattachement des langues songhay à la famille nilo-saharienne […] est contesté » ; selon le contexte, Songhaï « peut donc désigner une langue, un peuple ou un ancien État »."
   },
   {
     "id": "PPL_SONGHAY_GURMA",
@@ -2013,5 +2013,15 @@
     "id": "PPL_ZENATA",
     "status": "contested",
     "rationale": "La fiche dit le macro-groupe « dont les limites sont contestees par les historiens », Yves Modéran jugeant le terme tardif et la notion de Zenata unifié « surtout une construction des sources arabes medievales »."
+  },
+  {
+    "id": "PPL_AKYE",
+    "status": "colonial-legacy",
+    "rationale": "Attié est, selon la fiche, « une écriture fixée par les colons, selon Dian Boni, géographe originaire du pays akyé, qui lui préfère en 1970 la forme Akié », et les rapports de la conquête française de 1908 à 1913 emploient ce nom."
+  },
+  {
+    "id": "PPL_KONGO",
+    "status": "consensual",
+    "rationale": "« Les sources consultées ne disent pas que les Kongo rejettent ce nom : c'est celui qu'ils se donnent » ; seule son étendue pose question, Laman attribuant aux Européens l'extension du nom des gens de la capitale à plusieurs peuples parents."
   }
 ]

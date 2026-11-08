@@ -139,9 +139,11 @@ const FOLDS: Fold[] = [
     retired: ["PPL_BRONG"],
     keeper: "FLG_KWA/PPL_BONO",
     carried: {
+      // Premium batch 01 (2026-11-03) rewrote this keeper from sources read
+      // in session and dropped the folded labels no source supports; only
+      // what the sourced fiche still carries is held here.
       sourceTitle: "SIL Ethnologue — Abron language [abr]",
       subGroup: "Gyaman",
-      exonym: "Akan piesie (premiers Akan)",
     },
   },
 ];
