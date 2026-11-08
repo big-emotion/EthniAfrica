@@ -60,6 +60,14 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Page Forebears propre à Dossou, consultée directement. La base agrégée atteste la graphie et sa distribution dans BEN, mais ne donne aucun sens ; elle précise qu'une distribution géographique ne permet pas d'inférer une appartenance ethnique. Ces données sont donc conservées au niveau « unverified » et ne soutiennent aucune étymologie."
+    },
+    {
+      "sourceKey": "assogba-1973-jumeaux-fon",
+      "title": "Rites liés à la naissance des jumeaux chez les Fon (Dahomey)",
+      "url": "https://www.persee.fr/doc/ephe_0000-0002_1973_num_85_82_20845",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Z. L. Assogba, Annuaire de l'École pratique des hautes études, 5e section, tome 82, 1973, p. 114. L'article écrit : « Le premier des jumeaux se nomme zimsou ; le deuxième agossou. L'enfant né après les jumeaux, zinhoué. » Il montre que les Fon donnent des noms propres au rang de naissance autour des jumeaux, mais ne cite pas Dossou. Il ne permet donc pas d'établir le sens de Dossou, et son choix de noms diffère de celui que d'autres références donnent pour Dossou."
     }
   ],
   "gaps": [
@@ -85,7 +93,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de naissance dahoméen, donné au garçon né après des jumeaux. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de naissance dahoméen, donné au garçon né après des jumeaux. Le modèle a une case pour un nom de famille héréditaire, mais aucune source lue ne montre que ce nom se transmet de parent à enfant. La fiche reste donc parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas. Précision de la recherche : un article universitaire sur les rites fon de la naissance des jumeaux (Assogba, 1973) donne d'autres noms que Dossou pour les trois rangs de naissance autour des jumeaux ; les ouvrages anciens et le Wiktionnaire, qui rattachent Dossou à l'enfant né après des jumeaux, n'ont pas pu être ouverts ou ne sont pas retenus comme sources. Le sens du nom reste donc un point à établir."
     },
     {
       "fieldPath": "transmissionMode",

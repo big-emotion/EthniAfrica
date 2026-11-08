@@ -1,0 +1,73 @@
+{
+  "description": "Proposals for batch surnames-20. Status proposed only: the operator decides each entry and assigns ids in the main ledger.",
+  "verifications": [
+    {
+      "fiche": "patronymes/PAT_DJOUMESSI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_DJOUMESSI; nameMain: Djoumessi; nameSystem: clan_name; peoples: PPL_BAMILEKE; countries: CMR",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Djoumessi Mathias du Kumzse : personnage oublié de la lutte anticoloniale au Cameroun sous tutelle française",
+          "author": "Paul Menang Menang",
+          "year": null,
+          "url": "https://revues.imist.ma/index.php/EGSM/article/download/48524/25443/133885",
+          "source_kind": "academic",
+          "quote": "il naquit à Foréké-Dschang, en pays bamiléké sis à l'ouest Cameroun",
+          "supports": "Djoumessi borne by a chief of Foréké-Dschang (Cameroon, Bamiléké country). Supports countries CMR and a Bamiléké link for one bearer. Does NOT support nameSystem clan_name, and does not say the name belongs to the dynasty. Publication year not shown in the file."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet 5.5 (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_DOUBANE.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_DOUBANE; nameMain: Doubane; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Les ministres — Portail du Gouvernement de la République centrafricaine",
+          "author": null,
+          "year": null,
+          "url": "https://www.gouv.cf/article/62/les-ministres",
+          "source_kind": "government",
+          "quote": "S.E.M. Charles Armel DOUBANE",
+          "supports": "Only the spelling Doubane as a family name borne in the Central African Republic. It does NOT establish nameSystem clan_name, transmissionMode or designatedSocialUnit: no source opened describes the name as a clan name."
+        },
+        {
+          "title": "Charles-Armel Doubane — Berkley Center, Georgetown University",
+          "author": null,
+          "year": null,
+          "url": "https://berkleycenter.georgetown.edu/people/charles-armel-doubane",
+          "source_kind": "academic",
+          "quote": "Born in Zemio, in southeastern CAR in 1966",
+          "supports": "The spelling Doubane and a Central African birthplace for a bearer. Nothing on the name's system, transmission or social unit."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet 5.5 (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_DOSSOU.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_DOSSOU; nameMain: Dossou; peoples: PPL_FON (supposed); countries: BEN",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet 5.5 (claude code workflow)"
+    }
+  ]
+}
