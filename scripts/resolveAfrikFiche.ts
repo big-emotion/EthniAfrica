@@ -165,7 +165,15 @@ function peopleFiches(): Fiche[] {
       declare(names, "selfAppellation", appellations.selfAppellation);
       declare(names, "exonyms", appellations.exonyms);
       declare(names, "historicalNames", appellations.historicalNames);
-      declare(names, "spellingAliases", raw.spellingAliases);
+      // The model keeps a people's spelling variants under
+      // `content.appellations`, which is what the loader writes to the
+      // searched `spelling_aliases` column; no people fiche carries them at
+      // its root.
+      declare(
+        names,
+        "spellingAliases",
+        appellations.spellingAliases ?? raw.spellingAliases
+      );
 
       fiches.push({ id: raw.id, kind: "people", names });
     }
