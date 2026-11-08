@@ -3,11 +3,11 @@
   "nameFr": "Libéria",
   "nameEn": "Liberia",
   "nameOfficial": "République du Libéria (Republic of Liberia)",
-  "summary": "Le Libéria porte un nom formé sur le latin « liber », libre, attaché à la colonie que l'American Colonization Society, organisation privée américaine, fonde à partir de 1822 pour y installer des Afro-Américains affranchis ; qui l'a employé le premier n'est pas établi. Le territoire était déjà celui des chefferies kpelle, bassa, grebo, gio et de leurs voisines, et le cap où s'élève Monrovia s'appelait Ducor. La capitale porte le nom d'un président des États-Unis.",
-  "etymology": "Le nom « Libéria » est formé sur le latin « liber », libre, en référence à l'installation d'Afro-Américains affranchis sur cette côte à partir de 1822. Qui l'a employé le premier n'est pas établi. La version la plus répandue attribue le nom au juriste américain Robert Goodloe Harper, membre de l'American Colonization Society, qui l'aurait proposé à l'assemblée annuelle de février 1824 ; les archives d'État du Maryland, qui retracent sa carrière, lui rattachent la ville de Harper mais pas le nom du pays. Une étude publiée en 2026 relève des emplois du mot antérieurs à cette date, dès 1822, et conclut qu'aucun auteur identifié ne convient. Avant ce nom, le cap où fut bâtie Monrovia s'appelait Ducor, du nom que lui donnaient les Dei et les Bassa.",
-  "nameOriginActor": "L'American Colonization Society, organisation privée américaine fondée en 1816, est à l'origine de l'établissement et porte le nom dans ses publications. La personne qui a formé le mot n'est pas identifiée : l'attribution courante à Robert Goodloe Harper, pour l'assemblée de février 1824, est contredite par des emplois relevés dès 1822. Le nom devient celui d'un État souverain à la déclaration d'indépendance du 26 juillet 1847. La capitale, Monrovia, porte le nom de James Monroe, alors président des États-Unis.",
+  "summary": "Le Libéria porte un nom formé sur le latin « liber », libre : il a d'abord désigné la colonie que l'American Colonization Society, une société privée américaine, fonde à partir de 1822 pour y installer des Afro-Américains libres. Le nom apparaît dans la presse américaine dès décembre 1822, avant la proposition qu'on attribue d'ordinaire au juriste Robert Goodloe Harper, en 1824. La côte était déjà habitée par les Dei, les Bassa, les Grebo, les Kru et d'autres peuples, et la capitale, Monrovia, porte le nom du président américain James Monroe.",
+  "etymology": "Le nom « Libéria » est formé sur le latin « liber », libre. Il désigne d'abord la colonie où l'American Colonization Society installe, à partir de 1822, des Afro-Américains nés libres ou affranchis. Selon le septième rapport annuel de la société, que cite l'historien Fred van der Kraaij, le juriste Robert Goodloe Harper propose ce nom le 20 février 1824, parce qu'il « désigne un établissement de personnes rendues libres ». Les archives d'État du Maryland, qui retracent la carrière de Harper, rattachent à son nom la ville de Harper, et non celui du pays. Fred van der Kraaij relève pourtant le mot dans au moins cinq journaux américains dès décembre 1822 ; il examine le rôle de plusieurs dirigeants de la colonie et n'en retient aucun comme auteur du nom. Jusque-là, la colonie était désignée par le cap Montserado, où elle s'était établie.",
+  "nameOriginActor": "L'American Colonization Society, société privée américaine fondée en 1816, crée la colonie. Elle adopte le nom Libéria pour tous ses actes en février 1824, sur la proposition de Robert Goodloe Harper rapportée par son septième rapport annuel. Fred van der Kraaij montre que le nom circule déjà dans la presse américaine en décembre 1822, et aucun des auteurs possibles qu'il examine ne lui paraît convenir. Le nom devient celui d'un État indépendant le 26 juillet 1847. La capitale, Monrovia, porte le nom de James Monroe, président des États-Unis qui avait obtenu des fonds publics pour le projet, selon l'Office of the Historian.",
   "nameHistory": {
-    "summary": "Le nom Libéria désigne un pays d'Afrique de l'Ouest, la République du Libéria. Il a d'abord désigné la colonie fondée en 1822 par une société privée américaine pour y installer des Afro-Américains libres ; la côte s'appelait auparavant côte du Poivre ou côte des Graines. On ne sait pas avec certitude qui a formé ce nom ; nous présentons plus bas les versions des sources.",
+    "summary": "Le nom Libéria désigne un pays d'Afrique de l'Ouest, la République du Libéria. Il a d'abord désigné la colonie fondée en 1822 par une société privée américaine pour y installer des Afro-Américains libres ; la côte s'appelait auparavant côte du Poivre ou côte des Graines. Les sources ne s'accordent pas sur la personne qui a formé ce nom ; nous présentons plus bas leurs versions.",
     "names": [
       {
         "nameText": "Libéria",
@@ -63,7 +63,7 @@
                 "title": "Liberia in the 19th Century: From American Colony to African Republic",
                 "author": "Fred P. M. van der Kraaij",
                 "year": 2026,
-                "url": "https://hdl.handle.net/1887/4307890",
+                "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 3",
@@ -73,7 +73,7 @@
                 "title": "Liberia in the 19th Century: From American Colony to African Republic",
                 "author": "Fred P. M. van der Kraaij",
                 "year": 2026,
-                "url": "https://hdl.handle.net/1887/4307890",
+                "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 62-64",
@@ -94,7 +94,7 @@
                 "title": "Liberia in the 19th Century: From American Colony to African Republic",
                 "author": "Fred P. M. van der Kraaij",
                 "year": 2026,
-                "url": "https://hdl.handle.net/1887/4307890",
+                "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 59-60",
@@ -125,7 +125,7 @@
                 "title": "Liberia in the 19th Century: From American Colony to African Republic",
                 "author": "Fred P. M. van der Kraaij",
                 "year": 2026,
-                "url": "https://hdl.handle.net/1887/4307890",
+                "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 62",
@@ -148,7 +148,7 @@
                 "title": "Liberia in the 19th Century: From American Colony to African Republic",
                 "author": "Fred P. M. van der Kraaij",
                 "year": 2026,
-                "url": "https://hdl.handle.net/1887/4307890",
+                "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 60-62",
@@ -170,7 +170,7 @@
                 "title": "Liberia in the 19th Century: From American Colony to African Republic",
                 "author": "Fred P. M. van der Kraaij",
                 "year": 2026,
-                "url": "https://hdl.handle.net/1887/4307890",
+                "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 59-60",
@@ -180,7 +180,7 @@
                 "title": "Liberia in the 19th Century: From American Colony to African Republic",
                 "author": "Fred P. M. van der Kraaij",
                 "year": 2026,
-                "url": "https://hdl.handle.net/1887/4307890",
+                "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 62-64",
@@ -202,7 +202,7 @@
                 "title": "Liberia in the 19th Century: From American Colony to African Republic",
                 "author": "Fred P. M. van der Kraaij",
                 "year": 2026,
-                "url": "https://hdl.handle.net/1887/4307890",
+                "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 11",
@@ -224,7 +224,7 @@
                 "title": "Liberia in the 19th Century: From American Colony to African Republic",
                 "author": "Fred P. M. van der Kraaij",
                 "year": 2026,
-                "url": "https://hdl.handle.net/1887/4307890",
+                "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 59-60",
@@ -239,14 +239,14 @@
               "label": "Fin de 1822"
             },
             "era": "colonial",
-            "statement": "Le nom Libéria serait né entre la fin de septembre et la mi-décembre 1822, avant la proposition de Robert Goodloe Harper, sans qu'on sache qui l'a formé : aucun des hommes dont Fred van der Kraaij examine le rôle, Jehudi Ashmun, Ralph Gurley, Lott Carey ou Elijah Johnson, ne peut être retenu, selon lui.",
+            "statement": "Le nom Libéria serait né entre la fin de septembre et la mi-décembre 1822, avant la proposition de Robert Goodloe Harper, selon Fred van der Kraaij. L'auteur examine le rôle de Jehudi Ashmun, Ralph Gurley, Lott Carey et Elijah Johnson et n'en retient aucun comme auteur du nom.",
             "hypothesisGroup": "origine du nom Libéria",
             "sources": [
               {
                 "title": "Liberia in the 19th Century: From American Colony to African Republic",
                 "author": "Fred P. M. van der Kraaij",
                 "year": 2026,
-                "url": "https://hdl.handle.net/1887/4307890",
+                "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 60-62",
@@ -256,7 +256,7 @@
                 "title": "Liberia in the 19th Century: From American Colony to African Republic",
                 "author": "Fred P. M. van der Kraaij",
                 "year": 2026,
-                "url": "https://hdl.handle.net/1887/4307890",
+                "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 62-64",
@@ -270,12 +270,16 @@
   },
   "content": {
     "historicalNames": {
-      "formerNames": ["Colonie de l'American Colonization Society (1822-1847)"],
-      "antiquity": "Le territoire actuel du Libéria était peuplé de diverses sociétés sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs territoires.",
-      "middleAges": "Migrations de peuples mandé, krou et atlantiques vers la région. Développement de chefferies et royaumes locaux. Pas de nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Mosaïque de chefferies et de royaumes autonomes : chefferies kpelle, bassa, grebo, gio, mano, krahn, gola, kru, mandingue, et autres peuples autochtones. Le cap où s'élève aujourd'hui Monrovia portait le nom de Ducor. Les Européens désignaient la région par sa marchandise, la maniguette ou poivre de Guinée : la Côte des Graines.",
-      "colonization": "1822-1847 : colonie de l'American Colonization Society, organisation privée américaine qui y installe des Afro-Américains affranchis et administre le territoire jusqu'à l'indépendance. En 1821, selon le service historique du Département d'État américain, un lieutenant de la marine, Robert Stockton, contraint un dirigeant local à céder à la société la bande de terre où sera bâtie Monrovia, après l'échec des négociations pacifiques. Le nom du pays apparaît dans cette période, sans qu'on sache qui l'a formé.",
-      "contemporary": "26 juillet 1847 : déclaration d'indépendance et proclamation de la République du Libéria, première république indépendante d'Afrique. Joseph Jenkins Roberts en est le premier président. Le nom « Libéria » devient celui d'un État souverain."
+      "formerNames": [
+        "Côte du Poivre, côte de la Malaguette ou côte des Graines (avant 1822)",
+        "Colonie du cap Montserado (1822-1824)",
+        "Colonie de l'American Colonization Society (1822-1847)"
+      ],
+      "antiquity": null,
+      "middleAges": null,
+      "precolonial": "Les peuples de cette côte y vivent depuis des siècles. Ils forment des groupes divisés en clans, et chaque clan a son territoire, selon Fred van der Kraaij. À partir de 1461, les navigateurs portugais donnent aux caps et aux rivières des noms encore en usage : cap Mount (Cabo do Monte), cap Mesurado et cap Palmas (Cabo das Palmas). Le nom Mesurado viendrait d'un « Monte Serrado » mal prononcé, selon un journal new-yorkais de 1832 que cite le même auteur ; le comté de Montserrado en garde la forme. Les Européens appellent ce littoral côte de la Malaguette ou côte du Poivre, d'après le poivre malaguette qu'ils y achètent. Les Hollandais et les Britanniques nomment ce poivre « graines de paradis », d'où le nom de côte des Graines.",
+      "colonization": "En décembre 1821, deux envoyés de l'American Colonization Society, le docteur Eli Ayres et le lieutenant de marine Robert Stockton, négocient avec les chefs dei et mamba du cap Mesurado. Le roi dei King Peter et cinq autres rois leur cèdent l'île de Dozoa, le cap et une bande de terre voisine. L'acte, rédigé en anglais, est connu sous le nom de contrat de « Doukor », qu'on écrit aussi Ducor. Selon une version très répandue, Stockton aurait menacé King Peter d'un pistolet ; la Commission vérité et réconciliation du Libéria a reconnu que la terre avait été obtenue sous la menace d'une arme, selon Fred van der Kraaij. Les colons débarquent au cap Mesurado le 7 janvier 1822. On parle d'abord de « la colonie » ou de l'établissement du cap Montserado. Le nom Libéria apparaît dans la presse américaine en décembre 1822, et la société l'adopte en février 1824, en même temps que le nom de Monrovia pour la ville.",
+      "contemporary": "Le 26 juillet 1847, la colonie se déclare indépendante et devient la République du Libéria : le nom devient celui d'un État. Fred van der Kraaij la décrit comme la première république indépendante d'Afrique dirigée par des Noirs. Joseph Jenkins Roberts, né en Virginie, en devient le premier président en janvier 1848. La république de Maryland, fondée autour du cap Palmas par une autre société américaine, est dissoute en 1857 et rattachée au Libéria."
     },
     "kingdoms": [
       {
@@ -284,7 +288,7 @@
         "entryType": "polity",
         "dominantPeoples": ["Kpelle"],
         "politicalCenters": ["Chefferies traditionnelles (intérieur)"],
-        "historicalRole": "Chefferies Kpelle puissantes, système lignager, traditions forestières. Résistance à la colonisation américaine. Rôle politique majeur dans le Libéria contemporain."
+        "historicalRole": "Les Kpelle forment le peuple le plus nombreux du pays au recensement de 2008, avec environ un habitant sur cinq. Leur langue appartient au groupe mandé, selon Fred van der Kraaij."
       },
       {
         "name": "Chefferies Bassa",
@@ -292,10 +296,9 @@
         "entryType": "polity",
         "dominantPeoples": ["Bassa"],
         "politicalCenters": [
-          "Chefferies traditionnelles (côte",
-          "centre et sud)"
+          "Chefferies traditionnelles (côte, centre et sud)"
         ],
-        "historicalRole": "Chefferies Bassa, l'un des peuples les plus anciens de la côte libérienne, sociétés initiatiques traditionnelles, masques et rituels. Interaction avec les missions afro-américaines au XIXe siècle. Rôle important dans le Libéria moderne."
+        "historicalRole": "Les Bassa vivent sur la côte, autour de Grand Bassa. Une société américaine y fonde la colonie de Bassa Cove en 1834 ; six mois plus tard, le roi King Joe et ses guerriers bassa attaquent l'établissement de Port Cresson. Fred van der Kraaij compte deux guerres des Bassa contre les colons, en 1835 et en 1851-1852."
       },
       {
         "name": "Chefferies Grebo",
@@ -303,7 +306,7 @@
         "entryType": "polity",
         "dominantPeoples": ["Grebo"],
         "politicalCenters": ["Chefferies traditionnelles (côte sud-est)"],
-        "historicalRole": "Chefferies Grebo, traditions côtières, résistance à la colonisation américaine."
+        "historicalRole": "Sur la côte du sud-est, autour du cap Palmas, s'installe en 1834 la colonie de Maryland in Africa. En 1856, cette république de Maryland fait la guerre aux Grebo et aux Kru, qui refusent l'interdiction de la traite qu'elle leur impose. Fred van der Kraaij compte des guerres grebo en 1856-1857, en 1875-1876 et en 1893."
       },
       {
         "name": "Chefferies Gio",
@@ -311,7 +314,7 @@
         "entryType": "polity",
         "dominantPeoples": ["Gio"],
         "politicalCenters": ["Chefferies traditionnelles (nord)"],
-        "historicalRole": "Chefferies Gio, traditions forestières, structures lignagères."
+        "historicalRole": "Les Gio, qui se nomment eux-mêmes Dan, forment 8 % de la population au recensement de 2008. Leur langue, le dan, appartient au groupe mandé du Sud-Est et se parle aussi en Côte d'Ivoire et en Guinée, selon Glottolog."
       },
       {
         "name": "Chefferies Mano",
@@ -319,7 +322,7 @@
         "entryType": "polity",
         "dominantPeoples": ["Mano"],
         "politicalCenters": ["Chefferies traditionnelles (nord)"],
-        "historicalRole": "Chefferies Mano, traditions forestières, structures lignagères."
+        "historicalRole": "Les Mano forment près de 8 % de la population au recensement de 2008. Leur langue, que Glottolog nomme mann, appartient comme le dan au groupe mandé du Sud-Est."
       },
       {
         "name": "Chefferies Krahn",
@@ -327,7 +330,7 @@
         "entryType": "polity",
         "dominantPeoples": ["Krahn"],
         "politicalCenters": ["Chefferies traditionnelles (est)"],
-        "historicalRole": "Chefferies Krahn, traditions forestières, structures lignagères."
+        "historicalRole": "Les Krahn forment environ 4 % de la population au recensement de 2008, qui compte à part les Sapo, environ 1 %. Fred van der Kraaij range les Krahn, ou Krahn-Sapo, parmi les peuples de langue kru."
       },
       {
         "name": "Chefferies Gola",
@@ -335,7 +338,15 @@
         "entryType": "polity",
         "dominantPeoples": ["Gola"],
         "politicalCenters": ["Chefferies traditionnelles (ouest)"],
-        "historicalRole": "Chefferies Gola, traditions forestières, structures lignagères."
+        "historicalRole": "Les Gola parlent une langue du groupe mel, aussi appelé atlantique occidental, selon Fred van der Kraaij. Les colons les affrontent lors des guerres gola de 1832 et de 1840."
+      },
+      {
+        "name": "Chefferie dei du cap Mesurado",
+        "period": "Attestée en 1821",
+        "entryType": "polity",
+        "dominantPeoples": ["Dei"],
+        "politicalCenters": ["Cap Mesurado"],
+        "historicalRole": "Le roi dei King Peter est le chef suprême du cap Mesurado quand les envoyés de l'American Colonization Society y arrivent en décembre 1821. Avec cinq autres rois, il signe l'acte qui leur cède l'île de Dozoa, le cap et une bande de terre. Les habitants s'opposent ensuite à l'installation des colons : selon Fred van der Kraaij, la terre appartenait à toute la population, une partie revenait à un autre peuple, et elle comprenait un lieu sacré."
       },
       {
         "name": "Colonie de l'American Colonization Society",
@@ -351,170 +362,188 @@
           "peuples autochtones sous domination"
         ],
         "politicalCenters": ["Monrovia (capitale coloniale)"],
-        "historicalRole": "Colonie de l'ACS, installation d'esclaves affranchis des États-Unis, développement de l'administration coloniale, résistance des peuples autochtones. Développement du mouvement indépendantiste."
+        "historicalRole": "La colonie est fondée par l'American Colonization Society, une société privée américaine. Des agents blancs de la société la gouvernent jusqu'en 1842, quand Joseph Jenkins Roberts devient le premier colon à la diriger. Les colons, Afro-Américains nés libres ou affranchis, sont rejoints par environ 6 000 Africains libérés de navires négriers. Ils s'opposent à plusieurs reprises aux peuples de la côte pour la terre et l'autorité sur le territoire. La colonie devient la République du Libéria le 26 juillet 1847."
       }
     ],
     "majorPeoples": [
       {
         "name": "Kpelle",
         "selfAppellation": "Kpelle",
-        "exonyms": [
-          "Kpelle (terme utilisé par les Européens)",
-          "\"Guerzé\" (terme utilisé au Libéria",
-          "alternatif)"
-        ],
+        "exonyms": ["Guerzé (nom français, en usage en Guinée)"],
         "peopleId": "PPL_KPELLE",
         "mainRegion": "Intérieur du Libéria",
-        "languages": ["Kpelle (kpe", "ISO 639-3)", "anglais"],
+        "languages": ["Kpelle (kpe)", "anglais"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Kpelle\" est l'auto-appellation. \"Guerzé\" est un terme alternatif accepté au Libéria. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le recensement de 2008 et Fred van der Kraaij écrivent Kpelle. En Guinée, le même peuple est appelé Guerzé en français."
       },
       {
         "name": "Bassa",
         "selfAppellation": "Bassa",
-        "exonyms": ["Bassa (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_BASSA",
         "mainRegion": "Côte libérienne (centre et sud)",
-        "languages": ["Bassa (bsq", "ISO 639-3)", "anglais"],
+        "languages": ["Bassa (bsq)", "anglais"],
         "languageFamily": "FLG_KROU",
-        "appellationRemarks": "\"Bassa\" est l'auto-appellation. Pas de terme péjoratif connu. L'un des peuples les plus anciens de la côte libérienne."
+        "appellationRemarks": "Le recensement de 2008 écrit Bassa. Leur langue appartient au groupe kru."
       },
       {
         "name": "Grebo",
         "selfAppellation": "Grebo",
-        "exonyms": ["Grebo (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_GREBO",
         "mainRegion": "Côte sud-est",
-        "languages": ["Grebo (grb", "ISO 639-3)", "anglais"],
+        "languages": ["Grebo (grb)", "anglais"],
         "languageFamily": "FLG_KROU",
-        "appellationRemarks": "\"Grebo\" est l'auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le recensement de 2008 écrit Grebo. Leur langue appartient au groupe kru."
       },
       {
-        "name": "Gio",
-        "selfAppellation": "Gio",
-        "exonyms": ["Gio (terme utilisé par les Européens)"],
+        "name": "Gio / Dan",
+        "selfAppellation": "Dan",
+        "exonyms": ["Gio (nom en usage au Libéria)"],
         "peopleId": "PPL_DAN",
         "mainRegion": "Nord du Libéria",
-        "languages": ["Gio (gej", "ISO 639-3)", "anglais"],
+        "languages": ["Dan (daf)", "anglais"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Gio\" est l'auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le peuple se nomme lui-même Dan. Au Libéria, le recensement de 2008 et Fred van der Kraaij emploient le nom Gio."
       },
       {
         "name": "Mano",
         "selfAppellation": "Mano",
-        "exonyms": ["Mano (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_MANO",
         "mainRegion": "Nord du Libéria",
-        "languages": ["Mano (mev", "ISO 639-3)", "anglais"],
+        "languages": ["Mano (mev)", "anglais"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Mano\" est l'auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le recensement de 2008 écrit Mano ; Glottolog nomme la langue mann."
       },
       {
         "name": "Kru",
-        "selfAppellation": "Kru",
-        "exonyms": ["Kru (terme utilisé par les Européens)"],
+        "selfAppellation": "Klao",
+        "exonyms": ["Kru"],
         "peopleId": "PPL_KRU",
         "mainRegion": "Côte du Libéria",
-        "languages": ["Kru (klu", "ISO 639-3)", "anglais"],
+        "languages": ["Klao (klu)", "anglais"],
         "languageFamily": "FLG_KROU",
-        "appellationRemarks": "\"Kru\" est l'auto-appellation. Pas de terme péjoratif connu. Navigateurs et pêcheurs, célébrité maritime historique. Résistance forte aux Européens."
+        "appellationRemarks": "Le recensement de 2008 écrit Kru. Glottolog nomme leur langue klao, une langue du groupe kru parlée au Libéria et en Sierra Leone."
       },
       {
         "name": "Gola",
         "selfAppellation": "Gola",
-        "exonyms": ["Gola (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_GOLA",
         "mainRegion": "Ouest du Libéria",
-        "languages": ["Gola (gol", "ISO 639-3)", "anglais"],
+        "languages": ["Gola (gol)", "anglais"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Gola\" est l'auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le recensement de 2008 écrit Gola. Leur langue appartient au groupe mel, ou atlantique occidental."
       },
       {
         "name": "Vai",
         "selfAppellation": "Vai",
-        "exonyms": ["Vai (terme utilisé par les Européens)"],
+        "exonyms": ["Vey"],
         "peopleId": "PPL_VAI",
         "mainRegion": "Côte ouest du Libéria",
-        "languages": ["Vai (vai", "ISO 639-3)", "anglais"],
+        "languages": ["Vai (vai)", "anglais"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Vai\" est l'auto-appellation. Pas de terme péjoratif connu. Inventeurs de l'écriture Vai, un des rares systèmes d'écriture indigènes d'Afrique."
+        "appellationRemarks": "Le recensement de 2008 écrit Vai ; des textes du XIXe siècle écrivent Vey. Le vai s'écrit avec un syllabaire créé vers 1833 par six à huit Vai qui ne savaient pas lire."
       },
       {
         "name": "Loma",
         "selfAppellation": "Loma",
-        "exonyms": ["Loma (terme utilisé par les Européens)"],
+        "exonyms": ["Lorma"],
         "peopleId": "PPL_TOMA_LOMA",
         "mainRegion": "Nord du Libéria",
-        "languages": ["Loma (lom", "ISO 639-3)", "anglais"],
+        "languages": ["Loma (lom)", "anglais"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Loma\" est l'auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le recensement de 2008 écrit Lorma."
       },
       {
         "name": "Kissi",
         "selfAppellation": "Kissi",
-        "exonyms": ["Kissi (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_KISSI",
         "mainRegion": "Nord du Libéria",
-        "languages": ["Kissi (kqs", "ISO 639-3)", "anglais"],
+        "languages": ["Kissi (kqs)", "anglais"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Kissi\" est l'auto-appellation. Pas de terme péjoratif connu. Lié aux Kissi de Guinée/Sierra Leone."
+        "appellationRemarks": "Le recensement de 2008 écrit Kissi. Leur langue appartient au groupe mel ; elle se parle aussi en Guinée et en Sierra Leone."
       },
       {
         "name": "Mandingo / Mandinka",
-        "selfAppellation": "Mandinka / Mandiŋka",
-        "exonyms": [
-          "Mandingo (terme utilisé par les Européens)",
-          "Mandinka (terme alternatif)",
-          "\"Mandingo\" (terme historique",
-          "parfois péjoratif)"
-        ],
+        "selfAppellation": "Maninka",
+        "exonyms": ["Mandingo (nom en usage au Libéria)"],
         "peopleId": "PPL_MALINKE",
         "mainRegion": "Toutes les régions du Libéria",
-        "languages": ["Mandinka (mnk", "ISO 639-3)", "anglais"],
+        "languages": ["Maninka de l'Est (emk)", "anglais"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Mandinka\" ou \"Mandiŋka\" est l'auto-appellation. \"Mandingo\" est un terme historique qui peut avoir une connotation péjorative dans certains contextes et doit être évité."
+        "appellationRemarks": "Le recensement de 2008 écrit Mandingo. Glottolog compte Mandingo parmi les noms du maninka de l'Est, une langue mandée parlée en Guinée, au Mali, en Sierra Leone, en Côte d'Ivoire et au Libéria. Selon Fred van der Kraaij, le nord-ouest du pays est leur région d'origine, mais ils vivent aujourd'hui dans tout le pays."
       },
       {
-        "name": "Autres peuples",
-        "selfAppellation": "Variées selon les groupes (Kru, Klao, Loma, Vai, etc.)",
-        "exonyms": ["Variées selon les groupes"],
-        "mainRegion": "Diverses régions du Libéria",
-        "languages": ["Langues diverses", "anglais"],
-        "appellationRemarks": "Chaque groupe a sa propre auto-appellation (Kru, Klao, Loma, Vai, etc.). Pas de terme péjoratif connu."
+        "name": "Krahn",
+        "selfAppellation": "We",
+        "exonyms": ["Krahn (nom en usage au Libéria)"],
+        "peopleId": "PPL_WE",
+        "mainRegion": "Est du Libéria",
+        "languages": ["Krahn de l'Ouest (krw)", "anglais"],
+        "languageFamily": "FLG_KROU",
+        "appellationRemarks": "Le recensement de 2008 écrit Krahn et compte les Sapo à part. Fred van der Kraaij écrit Krahn-Sapo."
+      },
+      {
+        "name": "Gbandi",
+        "selfAppellation": "Gbandi",
+        "exonyms": ["Gbande"],
+        "peopleId": "PPL_GBANDI",
+        "mainRegion": "Nord du Libéria",
+        "languages": ["Gbandi", "anglais"],
+        "languageFamily": "FLG_MANDE",
+        "appellationRemarks": "Le recensement de 2008 écrit Gbandi ; Fred van der Kraaij écrit Gbande."
+      },
+      {
+        "name": "Belle",
+        "selfAppellation": "Kuwaa",
+        "exonyms": ["Belle"],
+        "peopleId": "PPL_BELLE",
+        "mainRegion": "Nord-ouest du Libéria",
+        "languages": ["Kuwaa", "anglais"],
+        "languageFamily": "FLG_KROU",
+        "appellationRemarks": "Le recensement de 2008 écrit Belle. Leur langue appartient au groupe kru."
+      },
+      {
+        "name": "Sapo",
+        "selfAppellation": "Sapo",
+        "exonyms": [],
+        "mainRegion": "Sud-est du Libéria",
+        "languages": ["anglais"],
+        "languageFamily": "FLG_KROU",
+        "appellationRemarks": "Le recensement de 2008 compte les Sapo à part, environ 1 % de la population. Fred van der Kraaij les rattache aux Krahn."
       },
       {
         "name": "Dei",
         "selfAppellation": "Dei",
-        "exonyms": ["Dei (terme utilisé par les Européens)"],
+        "exonyms": ["Dey"],
         "peopleId": "PPL_DEI",
         "mainRegion": "Côte du Libéria",
-        "languages": ["Dei", "anglais"],
-        "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Dei\" est l'auto-appellation. Pas de terme péjoratif connu. Anciens habitants côtiers."
+        "languages": ["Dei (dee)", "anglais"],
+        "languageFamily": "FLG_KROU",
+        "appellationRemarks": "Le recensement de 2008 écrit Dey. Glottolog nomme leur langue dewoin et la range dans le groupe kru, comme le fait Fred van der Kraaij. Le roi dei King Peter était le chef du cap Mesurado en 1821."
       },
       {
         "name": "Mende",
         "selfAppellation": "Mende",
-        "exonyms": ["Mende (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_MENDE",
         "mainRegion": "Diverses régions du Libéria",
-        "languages": ["Mende (men", "ISO 639-3)", "anglais"],
+        "languages": ["Mende (men)", "anglais"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Mende\" est l'auto-appellation. Pas de terme péjoratif connu. Migrants transfrontaliers."
+        "appellationRemarks": "Le recensement de 2008 écrit Mende. Leur langue se parle aussi en Guinée et en Sierra Leone, selon Glottolog."
       },
       {
         "name": "Américano-Libériens",
-        "selfAppellation": "Américano-Libériens / Congo People",
-        "exonyms": [
-          "Américano-Libériens (terme utilisé par les Européens)",
-          "\"Congo People\" (terme utilisé au Libéria",
-          "parfois péjoratif)"
-        ],
+        "selfAppellation": "Americo-Liberians",
+        "exonyms": ["Congo People ou Congoes", "rapatriés (repatriates)"],
         "peopleId": "PPL_AMERICANO_LIBERIENS",
         "mainRegion": "Zones urbaines, côte (Monrovia)",
-        "languages": ["Anglais (eng", "ISO 639-3)", "créole libérien"],
+        "languages": ["Anglais (eng)", "anglais libérien (lir)"],
         "languageFamily": "FLG_CREOLE",
-        "appellationRemarks": "\"Américano-Libériens\" est l'auto-appellation. \"Congo People\" est un terme utilisé au Libéria qui peut avoir une connotation péjorative dans certains contextes et doit être évité. Descendants d'esclaves affranchis des États-Unis."
+        "appellationRemarks": "Le nom Americo-Liberian est attesté dans des journaux américains dès 1858. Il désigne les descendants des colons venus des États-Unis. Le journaliste Tuan Wreh le juge impropre en 1976, et l'historien Carl Patrick Burrowes écrit en 2019 qu'il sert surtout à diviser ; plusieurs universitaires libériens lui préfèrent « repatriate ». Congo People ou Congoes désignait d'abord les Africains libérés de navires négriers débarqués dans la colonie, selon Fred van der Kraaij."
       }
     ],
     "culture": {
@@ -523,6 +552,10 @@
           "name": "Anglais",
           "isoCode": "eng",
           "isPrimary": true
+        },
+        {
+          "name": "Anglais libérien",
+          "isoCode": "lir"
         },
         {
           "name": "Kpelle",
@@ -537,15 +570,15 @@
           "isoCode": "grb"
         },
         {
-          "name": "Gio",
-          "isoCode": "gej"
+          "name": "Dan (gio)",
+          "isoCode": "daf"
         },
         {
           "name": "Mano",
           "isoCode": "mev"
         },
         {
-          "name": "Kru",
+          "name": "Klao (kru)",
           "isoCode": "klu"
         },
         {
@@ -565,30 +598,27 @@
           "isoCode": "kqs"
         },
         {
-          "name": "Mandinka",
-          "isoCode": "mnk"
+          "name": "Maninka de l'Est (mandingo)",
+          "isoCode": "emk"
         },
         {
           "name": "Mende",
           "isoCode": "men"
-        },
-        {
-          "name": "langues diverses"
         }
       ],
-      "culturalTraditions": "Diversité culturelle importante reflétant la mosaïque ethnique du Libéria (plus de 20 ethnies). Traditions mandé (Kpelle, Bassa, Gio, Mano, Vai, Loma, Mandingo, Mende, griots, kora, musique mandingue). Traditions krou (Grebo, Kru, masques, rituels). Traditions atlantiques (Gola, Kissi, Dei, traditions côtières). Traditions afro-américaines (Américano-Libériens, culture créole libérienne). Musique et danse traditionnelles variées. Cérémonies de passage, rites d'initiation, fêtes traditionnelles. Sociétés initiatiques traditionnelles (Bassa, autres peuples). Le système d'écriture Vai est un élément unique en Afrique de l'Ouest.",
-      "dominantReligions": "Christianisme (protestantisme majoritaire, catholicisme, églises indépendantes africaines), islam (minorité, Mandingo), religions traditionnelles africaines (syncrétisme fréquent, culte des ancêtres, masques, rituels)",
-      "lifestyles": "Agriculture (riz, manioc, cultures vivrières), exploitation forestière (bois précieux), exploitation minière (fer, diamants, or), pêche (côtière), commerce et activités urbaines (zones urbaines, Monrovia). Urbanisation modérée. Économie basée sur l'agriculture, l'exploitation forestière, l'exploitation minière, et les services. Dépendance économique importante.",
-      "socialOrganization": "Organisation en chefferies traditionnelles (Kpelle, Bassa, Grebo, Gio, Mano, Kru, Vai, Gola, Loma, Kissi, Mandingo, Mende, Dei), structures claniques patrilinéaires. Importance des lignages et des familles étendues. Rôle des conseils d'anciens. Sociétés initiatiques traditionnelles (Bassa, autres peuples). Traditions d'initiation et de passage à l'âge adulte. Hiérarchie sociale entre Américano-Libériens et peuples autochtones (historique, en déclin). Les Kpelle, Bassa, Grebo, Kru et Vai sont les groupes structurels anciens.",
-      "regionalRelations": "Relations historiques avec la Sierra Leone (commerce, migrations, frontière), la Guinée (Kpelle, commerce, frontière), la Côte d'Ivoire (commerce, frontière). Intégration dans la CEDEAO (Communauté économique des États de l'Afrique de l'Ouest). Relations commerciales et culturelles transfrontalières. Relations avec les États-Unis (fondation, diaspora, commerce)."
+      "culturalTraditions": "Le Libéria compte officiellement seize peuples, qu'on y appelle des « tribus ». Leurs langues se rangent en trois groupes, selon Fred van der Kraaij : le groupe kru (bassa, belle, dei, grebo, krahn, kru), le groupe mandé (gbandi, gio, kpelle, loma, mende, mandingo, mano, vai) et le groupe mel, ou atlantique occidental (gola, kissi). La langue officielle est l'anglais, et la plupart des habitants parlent une variante locale, l'anglais libérien. Les Vai écrivent leur langue avec un syllabaire, une écriture dont chaque signe note une syllabe. Six à huit locuteurs du vai qui ne savaient pas lire l'ont créé vers 1833, et il est transmis sans interruption depuis, selon Olena Tykhostup et Piers Kelly. On l'enseigne dans des écoles construites pour cela dès 1835 environ.",
+      "dominantReligions": "Au recensement de 2008, 85,8 % des habitants se déclarent chrétiens, 12,1 % musulmans et 0,6 % fidèles d'une religion traditionnelle ; 1,4 % ne se reconnaissent dans aucune religion. Les premières églises sont fondées par les colons dès leur arrivée : la Providence Baptist Church de Monrovia date de janvier 1822. Selon Fred van der Kraaij, le protestantisme est la confession la plus nombreuse, l'État est officiellement laïque, et les croyances traditionnelles restent très répandues.",
+      "lifestyles": "Le pays est riche en ressources naturelles, surtout en minerai de fer, et possède aussi de l'or et des diamants, dont une partie est extraite et exportée illégalement, selon Fred van der Kraaij. Ses rivières et ses eaux côtières sont poissonneuses. Selon la Banque mondiale, les exportations d'or et de minerai de fer et l'argent envoyé par les Libériens de l'étranger soutiennent aujourd'hui la croissance ; la production de caoutchouc a faibli.",
+      "socialOrganization": "Chaque peuple se divise en clans, et chaque clan a son territoire, selon Fred van der Kraaij. Au XIXe siècle, la république distingue les citoyens, descendants des colons installés sur la côte, et les habitants de l'intérieur, traités comme des sujets. Les descendants des colons, appelés Américano-Libériens, forment l'élite qui domine le pays jusqu'au coup d'État de 1980, selon Hélène Simon-Lorière ; ces inégalités comptent parmi les causes des guerres civiles.",
+      "regionalRelations": "Plusieurs langues du Libéria se parlent aussi en Guinée, en Côte d'Ivoire et en Sierra Leone, selon Fred van der Kraaij. Les frontières se fixent au détriment du Libéria : il perd des territoires au profit de la Grande-Bretagne en 1883 et de la France en 1892 et 1899. Pendant les guerres civiles, la Guinée, la Côte d'Ivoire, la Sierra Leone et le Ghana accueillent des réfugiés libériens, et une force de paix de la CEDEAO intervient entre 1990 et 1999, selon Hélène Simon-Lorière. Les liens avec les États-Unis restent forts : près de 70 000 Libériens y entrent entre 1989 et 2003."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement initial par les peuples mandé, krou et atlantiques. Migrations vers la région. Développement de chefferies locales.",
-      "middleAges": "Migrations continues. Développement de structures politiques locales. Contacts avec les peuples voisins.",
-      "precolonial": "Consolidation des chefferies kpelle, bassa, grebo, gio, mano, kru, vai, gola, loma, kissi, mandingue, mende et dei. Les Vai mettent au point l'un des rares systèmes d'écriture conçus en Afrique, l'écriture vai. Les Kru, connus comme marins, résistent fortement aux Européens. Commerce régional et côtier, puis contacts européens et traite le long de la côte. Les Européens désignent la région par sa marchandise, la maniguette ou poivre de Guinée : la Côte des Graines.",
-      "colonization": "1822 : fondation de la colonie par l'American Colonization Society, organisation privée américaine créée en 1816. Installation d'Afro-Américains affranchis, mise en place d'une administration coloniale, résistance des peuples autochtones, puis montée d'un mouvement indépendantiste.",
-      "independenceStruggle": "Années 1840 : mouvement pour l'indépendance mené par les dirigeants américano-libériens. 26 juillet 1847 : indépendance du Libéria et proclamation de la République, première république indépendante d'Afrique. Joseph Jenkins Roberts devient premier président.",
-      "postIndependence": "1847-1980 : Domination politique des Américano-Libériens, présidence de plusieurs présidents américano-libériens. Les Américano-Libériens ont dominé l'État pendant plus d'un siècle. 1980 : Coup d'État, présidence de Samuel Doe (1980-1990), fin de la domination américano-libérienne. 1989-2003 : Guerres civiles libériennes, conflits ethniques, instabilité politique. 2003-présent : Transition démocratique, élection d'Ellen Johnson Sirleaf (2006-2018, première femme présidente d'Afrique), puis George Weah (2018-2024). Défis : pauvreté, reconstruction post-conflit, développement économique, réconciliation nationale. Le Libéria est l'un des pays les plus pauvres d'Afrique. La société est marquée par une dualité historique entre autochtones et descendants d'esclaves affranchis."
+      "ancientPeriods": null,
+      "middleAges": null,
+      "precolonial": "Les peuples de la côte s'y sont installés au fil des siècles, bien avant l'arrivée des colons américains, selon Fred van der Kraaij. Les échanges réguliers avec les Portugais commencent dans les années 1440 sur la côte de Guinée ; vers 1600, des marchands hollandais, puis français et anglais, les suivent sur la côte des Graines. La traite atlantique des esclaves est l'événement qui marque le plus la région, selon le même auteur. Les marchands européens nomment cette côte d'après le poivre malaguette qu'ils y achètent.",
+      "colonization": "En 1816, un groupe d'Américains blancs fonde l'American Colonization Society pour installer en Afrique des Noirs libres des États-Unis, selon l'Office of the Historian. La société réunit des abolitionnistes et des notables inquiets du nombre croissant de Noirs libres, selon Hélène Simon-Lorière. En décembre 1821, ses envoyés obtiennent du roi dei King Peter, sous la menace, la cession du cap Mesurado, et les premiers colons y débarquent le 7 janvier 1822. D'autres sociétés américaines fondent des colonies voisines, comme Bassa Cove en 1834 et Maryland in Africa au cap Palmas la même année. La marine américaine débarque aussi au Libéria environ 6 000 Africains libérés de navires négriers. Les colons affrontent plusieurs fois les peuples de la côte : guerre des Gola en 1832, des Bassa en 1835, « Fish War » contre les Kru en 1838, combats contre les Vai en 1839-1840. Ces conflits portent sur la terre, l'autorité sur un territoire et le commerce, dont la traite des esclaves, selon Fred van der Kraaij.",
+      "independenceStruggle": "Les colonies américaines de la côte s'unissent, puis déclarent leur indépendance en 1847, selon Fred van der Kraaij. La déclaration du 26 juillet 1847 fait de l'ancienne colonie privée une république, selon l'Histoire générale de l'Afrique de l'UNESCO. Joseph Jenkins Roberts, gouverneur de la colonie depuis 1842, est installé comme premier président de la république en janvier 1848.",
+      "postIndependence": "Après 1847, la république étend son territoire vers l'intérieur, où elle traite les habitants comme des sujets et non comme des citoyens. À partir des années 1880, elle perd des territoires revendiqués au profit de la Grande-Bretagne et de la France, selon Fred van der Kraaij. Les descendants des colons gouvernent le pays jusqu'au coup d'État du 12 avril 1980 : le sergent-chef Samuel K. Doe devient alors le premier chef de l'État issu d'un peuple autochtone. Des rebelles menés par Charles Taylor contestent son régime et déclenchent une première guerre civile ; Fred van der Kraaij la date de 1989 à 1997, Hélène Simon-Lorière la fait commencer en 1990. Élu président en 1997, Taylor est à son tour contesté, et une seconde guerre civile dure de 1999 à 2003. Ces guerres font plus de 200 000 morts et poussent plus de 700 000 personnes à l'exil au milieu des années 1990. Après le départ de Taylor, Ellen Johnson Sirleaf préside le pays de 2006 à 2018 ; elle est la première femme élue à la tête d'un pays africain. George Weah lui succède de 2018 à 2024, puis Joseph Boakai."
     },
     "sources": [
       {
@@ -673,6 +703,106 @@
         "url": "https://liberianhistory101.blogspot.com/2011/10/ducor-contract-primary-document.html",
         "tier": "unverified",
         "notes": "Transcription de l'acte de cession du cap Mesurado, où le lieu est nommé Ducor avant la fondation de Monrovia. Aucune édition imprimée n'a été consultée."
+      },
+      {
+        "title": "IPUMS International – Liberia 2008, variable ETHNICLR (appartenance ethnique)",
+        "author": "IPUMS, université du Minnesota, d'après le recensement de 2008 de l'Institut libérien de la statistique (LISGIS)",
+        "year": 2008,
+        "url": "https://international.ipums.org/international-action/variables/ETHNICLR",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Fiche de la variable « tribal affiliation » du recensement libérien de 2008, avec le nombre de personnes de chaque catégorie dans l'échantillon diffusé par IPUMS ; lu le 3 novembre 2026. L'échantillon compte 348 057 personnes, un ménage sur dix tiré au hasard, avec le même poids pour chacun. Nous avons calculé les parts à partir de ces nombres : Kpelle 20,4 %, Bassa 13,4 %, Grebo 10,1 %, Gio 8,0 %, Mano 7,9 %, Kru 6,0 %, Lorma 5,1 %, Kissi 4,8 %, Gola 4,4 %, Vai 4,0 %, Krahn 3,9 %, Mandingo 3,1 %, Gbandi 3,0 %, Sapo 1,3 %, Mende 1,3 %, Belle 0,8 %, Dey 0,4 %, autres peuples libériens 0,6 %, autres peuples africains 1,4 %, non africains 0,1 %."
+      },
+      {
+        "title": "IPUMS International – variable RELIGION, échantillon du recensement libérien de 2008",
+        "author": "IPUMS, université du Minnesota, d'après le recensement de 2008 de l'Institut libérien de la statistique (LISGIS)",
+        "year": 2008,
+        "url": "https://international.ipums.org/international-action/variables/RELIGION",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Nombre de personnes de chaque religion dans l'échantillon de 348 057 personnes du recensement libérien de 2008 ; lu le 3 novembre 2026. Nous avons calculé les parts : chrétiens 85,8 %, musulmans 12,1 %, sans religion 1,4 %, religion traditionnelle 0,6 %, autre 0,2 %."
+      },
+      {
+        "title": "Liberia in the 19th Century: From American Colony to African Republic",
+        "author": "Fred P. M. van der Kraaij",
+        "year": 2026,
+        "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Leyde, African Studies Centre Leiden, 2026, en accès libre ; lu le 3 novembre 2026. Introduction : ressources du pays (minerai de fer, or, diamants), seize peuples officiels répartis en trois groupes de langues, anglais officiel et anglais libérien, liste des présidents de 1848 à aujourd'hui, guerres civiles de 1989-1997 et 1999-2003, place du christianisme, de l'islam et des croyances traditionnelles. Passage utilisé : p. xvi-xix, 3-4."
+      },
+      {
+        "title": "Liberia in the 19th Century: From American Colony to African Republic",
+        "author": "Fred P. M. van der Kraaij",
+        "year": 2026,
+        "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Leyde, African Studies Centre Leiden, 2026, en accès libre ; lu le 3 novembre 2026. Chapitre 1 : noms de la côte du Poivre et de la côte des Graines, noms portugais des caps et des rivières à partir de 1461, explication de Mesurado par « Monte Serrado », installation des peuples de la côte au fil des siècles. Passage utilisé : p. 11-16."
+      },
+      {
+        "title": "Liberia in the 19th Century: From American Colony to African Republic",
+        "author": "Fred P. M. van der Kraaij",
+        "year": 2026,
+        "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Leyde, African Studies Centre Leiden, 2026, en accès libre ; lu le 3 novembre 2026. Chapitres 2 et 3 : environ 6 000 Africains libérés de navires négriers, appelés « Congoes », installés dans la colonie ; négociation de décembre 1821 avec King Peter, contrat dit « Doukor » signé par six rois, Ayres et Stockton ; débarquement du 7 janvier 1822 ; guerres avec les Gola, les Bassa, les Kru, les Vai et les Grebo. Passage utilisé : p. 44-52."
+      },
+      {
+        "title": "Liberia in the 19th Century: From American Colony to African Republic",
+        "author": "Fred P. M. van der Kraaij",
+        "year": 2026,
+        "url": "https://scholarlypublications.universiteitleiden.nl/handle/1887/4307890",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Leyde, African Studies Centre Leiden, 2026, en accès libre ; lu le 3 novembre 2026. Colonies de Bassa Cove et de Maryland in Africa, Joseph Jenkins Roberts gouverneur en 1842 puis président en 1848, histoire du nom « Americo-Liberian », coup d'État du 12 avril 1980, extension du territoire et pertes au profit de la Grande-Bretagne et de la France. Passage utilisé : p. 73-79, 101, 135-137, 171-174."
+      },
+      {
+        "title": "Conakry, antichambre de Philadelphie pour les réfugiés libériens ?",
+        "author": "Hélène Simon-Lorière",
+        "year": 2016,
+        "url": "https://journals.openedition.org/nuevomundo/68936",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Nuevo Mundo Mundos Nuevos, EHESS, mis en ligne le 25 janvier 2016 ; lu le 3 novembre 2026. Fondation par l'American Colonization Society, achat de terres à King Peter en 1821, élite américano-libérienne, coup d'État de 1980, guerres civiles de 1990 à 2003 (plus de 200 000 morts, plus de 700 000 exilés), élection d'Ellen Johnson Sirleaf en 2006, force de paix de la CEDEAO de 1990 à 1999, pays d'accueil des réfugiés. Passage utilisé : § 6-11."
+      },
+      {
+        "title": "A Diachronic Comparison of the Vai Script of Liberia (1834-2005)",
+        "author": "Olena Tykhostup et Piers Kelly",
+        "year": 2018,
+        "url": "https://openhumanitiesdata.metajnl.com/articles/10.5334/johd.10",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Journal of Open Humanities Data, vol. 4, article 2 ; lu le 3 novembre 2026. Le syllabaire vai a été « créé par six à huit locuteurs du vai qui ne savaient pas lire, au Libéria, vers 1833 », il est transmis sans interruption depuis, et on l'enseigne dans des écoles construites pour cela vers 1835."
+      },
+      {
+        "title": "Glottolog 5.3 — Eastern Maninkakan (east2426)",
+        "url": "https://glottolog.org/resource/languoid/id/east2426",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Institut Max-Planck d'anthropologie évolutionniste ; lu le 3 novembre 2026. La notice compte Mandingo parmi les autres noms de la langue et la situe en Côte d'Ivoire, en Guinée, au Libéria, au Mali et en Sierra Leone."
+      },
+      {
+        "title": "Dan – Glottolog 5.3",
+        "url": "https://glottolog.org/resource/languoid/id/dann1241",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Institut Max-Planck d'anthropologie évolutionniste ; lu le 3 novembre 2026. Code ISO 639-3 daf ; langue mandée du Sud-Est parlée en Côte d'Ivoire, en Guinée et au Libéria."
+      },
+      {
+        "title": "Glottolog 5.3 — Klao (klao1243)",
+        "url": "https://glottolog.org/resource/languoid/id/klao1243",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Institut Max-Planck d'anthropologie évolutionniste ; lu le 3 novembre 2026. Code ISO 639-3 klu ; langue kru occidentale parlée au Libéria et en Sierra Leone. Les notices voisines donnent mann (mev) pour le mano, dewoin (dee) pour le dei, et « Kru Pidgin English » (lir) pour l'anglais libérien."
+      },
+      {
+        "title": "Banque mondiale – Liberia Overview",
+        "url": "https://www.worldbank.org/en/country/liberia/overview",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Présentation du pays par la Banque mondiale ; lu le 3 novembre 2026. Elle évoque l'administration Boakai, l'ancien président George Weah, la croissance minière portée par l'or et le minerai de fer, l'argent envoyé de l'étranger et le recul de la production de caoutchouc."
       }
     ],
     "demographics": {
@@ -682,124 +812,183 @@
       "peoples": [
         {
           "name": "Kpelle",
-          "percentageInCountry": 20.3,
           "peopleId": "PPL_KPELLE",
+          "percentageInCountry": 20.4,
+          "referenceYear": 2008,
           "region": "Intérieur du Libéria",
           "languageFamily": "FLG_MANDE",
-          "referenceYear": 2008
+          "mainLanguageCode": "kpe"
         },
         {
           "name": "Bassa",
-          "percentageInCountry": 13.4,
           "peopleId": "PPL_BASSA",
+          "percentageInCountry": 13.4,
+          "referenceYear": 2008,
           "region": "Côte libérienne (centre et sud)",
           "languageFamily": "FLG_KROU",
-          "referenceYear": 2008
+          "mainLanguageCode": "bsq"
         },
         {
           "name": "Grebo",
-          "percentageInCountry": 10,
           "peopleId": "PPL_GREBO",
+          "percentageInCountry": 10.1,
+          "referenceYear": 2008,
           "region": "Côte sud-est",
           "languageFamily": "FLG_KROU",
-          "referenceYear": 2008
+          "mainLanguageCode": "grb"
         },
         {
           "name": "Gio / Dan",
-          "percentageInCountry": 8,
           "peopleId": "PPL_DAN",
+          "percentageInCountry": 8.0,
+          "referenceYear": 2008,
           "region": "Nord du Libéria",
           "languageFamily": "FLG_MANDE",
-          "referenceYear": 2008
+          "mainLanguageCode": "daf"
         },
         {
           "name": "Mano",
-          "percentageInCountry": 7.9,
           "peopleId": "PPL_MANO",
+          "percentageInCountry": 7.9,
+          "referenceYear": 2008,
           "region": "Nord du Libéria",
           "languageFamily": "FLG_MANDE",
-          "referenceYear": 2008
+          "mainLanguageCode": "mev"
         },
         {
           "name": "Kru",
-          "percentageInCountry": 6,
           "peopleId": "PPL_KRU",
+          "percentageInCountry": 6.0,
+          "referenceYear": 2008,
           "region": "Côte du Libéria",
           "languageFamily": "FLG_KROU",
-          "referenceYear": 2008
-        },
-        {
-          "name": "Vai",
-          "percentageInCountry": 4,
-          "peopleId": "PPL_VAI",
-          "region": "Côte ouest du Libéria",
-          "languageFamily": "FLG_MANDE",
-          "referenceYear": 2008
-        },
-        {
-          "name": "Gola",
-          "percentageInCountry": 4.4,
-          "peopleId": "PPL_GOLA",
-          "region": "Ouest du Libéria",
-          "languageFamily": "FLG_ATLANTIQUE",
-          "referenceYear": 2008
+          "mainLanguageCode": "klu"
         },
         {
           "name": "Loma",
-          "percentageInCountry": 5.1,
           "peopleId": "PPL_TOMA_LOMA",
+          "percentageInCountry": 5.1,
+          "referenceYear": 2008,
           "region": "Nord du Libéria",
           "languageFamily": "FLG_MANDE",
-          "referenceYear": 2008
+          "mainLanguageCode": "lom"
         },
         {
           "name": "Kissi",
-          "percentageInCountry": 4.8,
           "peopleId": "PPL_KISSI",
+          "percentageInCountry": 4.8,
+          "referenceYear": 2008,
           "region": "Nord du Libéria",
           "languageFamily": "FLG_ATLANTIQUE",
-          "referenceYear": 2008
+          "mainLanguageCode": "kqs"
+        },
+        {
+          "name": "Gola",
+          "peopleId": "PPL_GOLA",
+          "percentageInCountry": 4.4,
+          "referenceYear": 2008,
+          "region": "Ouest du Libéria",
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "gol"
+        },
+        {
+          "name": "Vai",
+          "peopleId": "PPL_VAI",
+          "percentageInCountry": 4.0,
+          "referenceYear": 2008,
+          "region": "Côte ouest du Libéria",
+          "languageFamily": "FLG_MANDE",
+          "mainLanguageCode": "vai"
+        },
+        {
+          "name": "Krahn",
+          "peopleId": "PPL_WE",
+          "percentageInCountry": 3.9,
+          "referenceYear": 2008,
+          "region": null,
+          "languageFamily": "FLG_KROU",
+          "mainLanguageCode": "krw"
         },
         {
           "name": "Mandingo / Mandinka",
-          "percentageInCountry": 3.2,
           "peopleId": "PPL_MALINKE",
+          "percentageInCountry": 3.1,
+          "referenceYear": 2008,
           "region": "Toutes les régions du Libéria",
           "languageFamily": "FLG_MANDE",
-          "referenceYear": 2008
+          "mainLanguageCode": "emk"
         },
         {
-          "name": "Dei",
-          "percentageInCountry": 0.3,
-          "peopleId": "PPL_DEI",
-          "region": "Côte du Libéria",
-          "languageFamily": "FLG_ATLANTIQUE",
-          "referenceYear": 2008
+          "name": "Gbandi",
+          "peopleId": "PPL_GBANDI",
+          "percentageInCountry": 3.0,
+          "referenceYear": 2008,
+          "region": null,
+          "languageFamily": "FLG_MANDE"
+        },
+        {
+          "name": "Sapo",
+          "peopleId": null,
+          "percentageInCountry": 1.3,
+          "referenceYear": 2008,
+          "region": null,
+          "languageFamily": "FLG_KROU"
         },
         {
           "name": "Mende",
-          "percentageInCountry": 1.3,
           "peopleId": "PPL_MENDE",
+          "percentageInCountry": 1.3,
+          "referenceYear": 2008,
           "region": "Diverses régions du Libéria",
           "languageFamily": "FLG_MANDE",
-          "referenceYear": 2008
+          "mainLanguageCode": "men"
         },
         {
-          "name": "Américano-Libériens",
-          "percentageInCountry": 2.5,
-          "peopleId": "PPL_AMERICANO_LIBERIENS",
-          "region": "",
-          "referenceYear": 2008
+          "name": "Belle",
+          "peopleId": "PPL_BELLE",
+          "percentageInCountry": 0.8,
+          "referenceYear": 2008,
+          "region": null,
+          "languageFamily": "FLG_KROU"
         },
         {
-          "name": "Autres groupes ethniques",
+          "name": "Dei",
+          "peopleId": "PPL_DEI",
+          "percentageInCountry": 0.4,
+          "referenceYear": 2008,
+          "region": "Côte du Libéria",
+          "languageFamily": "FLG_KROU",
+          "mainLanguageCode": "dee"
+        },
+        {
+          "name": "Autres peuples libériens",
           "peopleId": null,
-          "region": "Divers",
-          "languageFamily": null,
-          "percentageInCountry": 8.8,
-          "referenceYear": 2008
+          "percentageInCountry": 0.6,
+          "referenceYear": 2008,
+          "region": null,
+          "languageFamily": null
+        },
+        {
+          "name": "Autres peuples africains",
+          "peopleId": null,
+          "percentageInCountry": 1.4,
+          "referenceYear": 2008,
+          "region": null,
+          "languageFamily": null
+        },
+        {
+          "name": "Personnes d'origine non africaine",
+          "peopleId": null,
+          "percentageInCountry": 0.1,
+          "referenceYear": 2008,
+          "region": null,
+          "languageFamily": null
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "Le Libéria est un pays d'Afrique de l'Ouest. Son nom, formé sur le latin « liber », libre, a d'abord désigné une colonie d'Afro-Américains libres fondée en 1822.",
+      "followUp": "Savez-vous pourquoi la capitale du Libéria s'appelle Monrovia ?"
     }
   }
 }

@@ -4861,21 +4861,30 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // which it says to leave out until the fiche has been reviewed.
   // 5968 -> 5920 on 2026-10-19: ETNI-2135 records `spellingAliases` on 48
   // people fiches whose sources already attest those forms.
-  // 5920 -> 5898 on 2026-11-03: premium batch 08 (Zarma, Kera, Atlantic
+  // 5920 -> 5893 on 2026-11-03: premium batch 01 (Kongo, Akyé, Diola, Bono,
+  // Dan, Chokwe, Sena, Songhaï) filled the model keys those fiches lacked.
+  // 5893 -> 5871 on 2026-11-03: premium batch 08 (Zarma, Kera, Atlantic
   // macro-group, Baga, Bainouk, Balanta, Bijago, Dei) adds the missing
   // appellation and `externalIdentifiers` keys; each fiche now declares
   // `content.gaps`, which the model does not list and counts once.
-  peuple: 5898,
+  peuple: 5871,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
   // day, when FLG_BERBERE gained `originOfHistoricalTerm` the same way.
-  famille_linguistique: 104,
+  // 104 -> 88 on 2026-11-03: premium batch 05 filled the model keys that
+  // FLG_SEMITIQUE, FLG_SONGHAY, FLG_SOUDANIQUECENTRAL, FLG_TCHADIQUE and
+  // FLG_TUU lacked (each declares `content.gaps`, counted once as unexpected;
+  // FLG_SONGHAY still omits `classificationStatus`, no source finding the
+  // name problematic).
+  famille_linguistique: 88,
   // 13 -> 9 on 2026-09-29: `culture.mainLanguages` added on Mali, Senegal,
   // Burundi and the Republic of the Congo from an official toponymic factfile.
   // 9 -> 8 on 2026-10-26: `culture.mainLanguages` added on the DR Congo, its
   // four constitutional national languages beside French.
-  pays: 8,
+  // 8 -> 7 on 2026-11-03: `culture.mainLanguages` added on Madagascar,
+  // Malagasy and French, from Glottolog and the Constitution.
+  pays: 7,
 };
 
 // Authoring blocks no model declares: `_meta` is curator metadata, exempt

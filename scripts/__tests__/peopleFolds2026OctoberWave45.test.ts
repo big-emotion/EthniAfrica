@@ -41,9 +41,10 @@ const FOLDS: Fold[] = [
     retired: ["PPL_SENA_MOZ", "PPL_SENA_ZAMB"],
     keeper: "FLG_NIGERCONGO/PPL_SENA",
     carried: {
+      // Premium batch 01 (2026-11-03) rewrote this keeper from sources read
+      // in session and dropped the folded labels no source supports; only
+      // what the sourced fiche still carries is held here.
       sourceTitle: "Central Statistical Office Zambia — Census 2022",
-      subGroup: "Sena de la province Orientale de Zambie",
-      dialect: "Cisena de la Zambezia",
       country: "ZMB",
     },
   },
@@ -71,7 +72,9 @@ const FOLDS: Fold[] = [
     keeper: "FLG_MANDE/PPL_DAN",
     carried: {
       sourceTitle: "Liberia Population and Housing Census 2022 – LISGIS",
-      subGroup: "Gio (Dan du Liberia",
+      // Premium batch 01 (2026-11-03) rewrote this keeper from sources read
+      // in session and dropped the folded labels no source supports; only
+      // what the sourced fiche still carries is held here.
       exonym: "Yakouba",
     },
   },
@@ -210,8 +213,9 @@ const FOLDS: Fold[] = [
     carried: {
       sourceTitle:
         "UNESCO : Les savoir-faire liés à la fabrication de l'attiéké (2024)",
-      subGroup: "Bodins",
-      dialect: "Dialecte Kétin",
+      // Premium batch 01 (2026-11-03) rewrote this keeper from sources read
+      // in session and dropped the folded labels no source supports; only
+      // what the sourced fiche still carries is held here.
       exonym: "Atché",
     },
   },
