@@ -4878,13 +4878,8 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // Burundi and the Republic of the Congo from an official toponymic factfile.
   // 9 -> 8 on 2026-10-26: `culture.mainLanguages` added on the DR Congo, its
   // four constitutional national languages beside French.
-<<<<<<< HEAD
   // 8 -> 7 on 2026-11-03: `culture.mainLanguages` added on Madagascar,
   // Malagasy and French, from Glottolog and the Constitution.
-=======
-  // 8 -> 7 on 2026-11-03: `culture.mainLanguages` added on Ethiopia, its
-  // working and regional languages, from the 2007 census and Glottolog.
->>>>>>> origin/data/premium-countries-03
   pays: 7,
 };
 
