@@ -8,62 +8,55 @@
       "mainName": "Mwera",
       "selfAppellation": "Wamwera",
       "exonyms": ["Mwela", "Chimwera", "Kimwera"],
-      "originOfExonyms": "Les variantes Chimwera et Kimwera sont des formes prefixees du nom de la langue (ki/chi = prefixe bantou de langue). Mwela est une variante dialectale. Wamwera est l'auto-designation avec le prefixe pluriel wa- des peuples bantous.",
+      "originOfExonyms": "Glottolog relève les formes Chimwera, Cimwera et Mwela pour le nom de la langue. Nous n'avons pas trouvé de source qui explique l'origine du nom Mwera. Karl Weule écrit Wamwera pour le peuple et kimwera pour sa langue.",
       "whyProblematic": null,
-      "contemporaryUsage": "Le nom Mwera est utilise officiellement en Tanzanie pour designer ce groupe ethnique. Chimwera designe couramment la langue. Wamwera est employe dans les contextes communautaires.",
+      "contemporaryUsage": "Glottolog donne Mwera (Chimwera) comme nom de la langue, dont le code ISO 639-3 est mwe.",
       "linguisticFamily": "FLG_BANTU",
-      "ethnoLinguisticGroup": "Groupe Yao-Mwera, sous-famille Rufiji-Ruvuma",
-      "historicalRegion": "Lindi, Mtwara, Ruvuma (sud-est Tanzanie)",
+      "ethnoLinguisticGroup": "Langue bantoue de la Tanzanie, classée par Derek Nurse (1988) selon Glottolog",
+      "historicalRegion": "Arrière-pays de Lindi, autour de Mtama et de Njangao, au sud-est de la Tanzanie, d'après Weule (1909)",
       "currentCountries": ["TZA"]
     },
     "ethnicities": ["Mwera"],
     "origins": {
-      "ancientOrigins": "Selon les traditions orales, les Mwera sont originaires de la region du lac Albert au nord de l'Ouganda. Ils font partie du grand mouvement de dispersion bantoue depuis l'Afrique centrale.",
-      "formationPeriod": "Epoque medievale tardive (entre le XIIe et le XVe siecle). La distinction entre Mwera du lac Nyasa et Mwera cotiers s'est etablie lors des migrations vers le sud.",
-      "migrationRoutes": [
-        "Lac Albert (nord Ouganda) vers le sud",
-        "Passage par le lac Malawi (Nyasa)",
-        "Bifurcation : une branche vers les rives du Nyasa, une autre vers la cote de l'ocean Indien"
-      ],
+      "ancientOrigins": "Iliffe (1967) estime que le groupe Ngindo-Mwera est probablement formé d'immigrants récents venus du sud. Il précise qu'aucune preuve ne permet de le démontrer.",
+      "formationPeriod": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Weule 1909, Iliffe 1967, Glottolog).",
+      "migrationRoutes": [],
       "historicalSettlementZones": [
-        "Districts de Ruangwa et Nachingwea (region de Lindi)",
-        "Nord de la region de Mtwara",
-        "Est de la region de Ruvuma",
-        "Rives du fleuve Ruvuma (frontiere Tanzanie-Mozambique)"
+        "Arrière-pays de Lindi, autour de Mtama et de Njangao, d'après Weule (1909)"
       ],
-      "unificationsOrDivisions": "Les Mwera se divisent en deux sous-groupes principaux : les Mwera du Nyasa (installes pres du lac) et les Mwera cotiers. Les Mwera cotiers sont appeles Wamwera par les autres membres du groupe.",
-      "externalInfluences": "Commerce arabe et traite negriere aux XIXe siecle. Missions chretiennes allemandes sous la colonisation allemande. Apres la Premiere Guerre mondiale, influence britannique et conversion massive a l'islam sunnite via les marchands arabes.",
-      "majorHistoricalEvents": "Participation a la rebellion Maji Maji (1905-1907) contre la colonisation allemande. Kinjekitile Ngwale, figure centrale de cette rebellion, etait d'origine Mwera. La region Mwera fut l'une des zones d'origine du mouvement."
+      "unificationsOrDivisions": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Weule 1909, Iliffe 1967, Glottolog).",
+      "externalInfluences": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Weule 1909, Iliffe 1967, Glottolog).",
+      "majorHistoricalEvents": "Karl Weule, qui parcourt la région en 1906, écrit que les Wamwera ont pris part tout entiers au soulèvement contre l'administration allemande et qu'ils ont dû se réfugier dans la brousse. Il les trouve dans un état misérable. Iliffe (1967) nomme trois chefs mwera ou matumbi du soulèvement de 1905 (Selemani Mamba, Chekenje et Abdallah Kitambi) qui figuraient sur une liste de chefs impliqués dans le programme du coton imposé par les Allemands."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Societe matrilineaire : le mariage exige que l'epoux s'installe chez l'epouse (residence uxorilocale). L'oncle maternel (frere de la mere) detient l'autorite rituelle et la responsabilite des ceremonies importantes.",
-      "clanOrganization": "Organisation clanique matrilineaire. Les enfants portent le nom de l'oncle maternel. La filiation et la succession passent par la ligne maternelle.",
+      "traditionalPoliticalSystem": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Weule 1909, Iliffe 1967, Glottolog).",
+      "clanOrganization": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Weule 1909, Iliffe 1967, Glottolog).",
       "ageClassSystems": null,
-      "roleOfLineages": "L'oncle maternel (frere de la mere) joue un role central : il est responsable des rituels de passage et des ceremonies cles du cycle de vie de ses neveux et nieces.",
-      "religiousAuthority": "Autorite religieuse liee a l'islam sunnite dans la majorite des communautes. Persistance de pratiques animistes et de croyances en la sorcellerie sous la surface de la pratique islamique (islam populaire)."
+      "roleOfLineages": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Weule 1909, Iliffe 1967, Glottolog).",
+      "religiousAuthority": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Weule 1909, Iliffe 1967, Glottolog)."
     },
     "languages": {
       "mainLanguage": "Chimwera (Mwera)",
       "isoCodes": ["mwe"],
-      "dialects": ["Mwera du Nyasa", "Mwera cotier"],
-      "vehicularRole": "Le chimwera est la langue maternelle du groupe. Le swahili est utilise comme langue vehiculaire regionale et nationale en Tanzanie."
+      "dialects": [],
+      "vehicularRole": "Glottolog reprend le niveau 5 (« en développement ») de l'Ethnologue (2025) et classe la langue comme non menacée."
     },
     "culture": {
-      "majorRites": "Rites d'initiation pour les garcons (Likomanga) et pour les filles (Chikwembo), qui forment les identites culturelles masculines et feminines. Construction de la maison comme projet familial collectif : les hommes coupent les poteaux, les femmes recoltent l'herbe pour le toit, les garcons creusent l'argile pour les murs.",
-      "symbols": "Habitations ovales recouvertes de chaume, caracteristiques de l'architecture Mwera. Certaines especes d'arbres sont taboues pour la construction.",
-      "artsAndMusic": "Le Luliimba (lamellophone a sept touches en metal) est l'instrument musical emblematique des Mwera. La narration orale et les devinettes occupent une place importante dans la vie culturelle.",
-      "spiritualities": "Religion traditionnelle animiste encore presente, surtout dans les pratiques quotidiennes. La majorite des Mwera contemporains est sunnite, mais l'islam populaire coexiste avec des croyances en la sorcellerie et les esprits (islam folk). Quelques minorites chretiennes."
+      "majorRites": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Weule 1909, Iliffe 1967, Glottolog).",
+      "symbols": "Weule note le mot kimwera itona, qui désigne le labret que portent les femmes (un disque placé dans la lèvre).",
+      "artsAndMusic": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Weule 1909, Iliffe 1967, Glottolog).",
+      "spiritualities": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Weule 1909, Iliffe 1967, Glottolog)."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Organisation en chefferies locales sans royaume centralise. La region Mwera est l'une des plus faiblement peuplees de Tanzanie (environ 10 habitants par km2).",
-      "relationsWithNeighbors": "Frontaliers avec les Matumbi au nord, les Makonde au sud (escarpement Makonde), les Yao a l'est. Relations historiques avec les populations mozambicaines le long du fleuve Ruvuma.",
-      "conflictsOrAlliances": "Les Mwera ont souffert historiquement de la traite des esclaves arabe et de la violence coloniale. Participation a la rebellion Maji Maji (1905-1907) contre la domination allemande.",
+      "kingdomsOrChiefdoms": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Weule 1909, Iliffe 1967, Glottolog).",
+      "relationsWithNeighbors": "Iliffe (1967) parle d'un groupe Ngindo-Mwera, et range des chefs mwera et matumbi dans le même épisode de 1905.",
+      "conflictsOrAlliances": "Les Wamwera ont pris part au soulèvement contre l'administration allemande, selon Weule (1909). Iliffe (1967) cite des chefs mwera parmi ceux qui ont lancé la révolte de 1905.",
       "diaspora": null
     },
     "demography": {
       "totalPopulation": 700000,
       "referenceYear": 2025,
-      "source": "Estimation basee sur Joshua Project (2024) et Wikipedia (469 000 en 2001, croissance demographique tanzanienne de ~3% par an)",
+      "source": "Estimation fondée sur Joshua Project (2024), source missionnaire non vérifiée, et sur un recensement de 2001 relayé par une encyclopédie. Aucune source officielle lue ne donne ce chiffre par ethnie.",
       "distributionByCountry": [
         {
           "country": "TZA",
@@ -92,7 +85,18 @@
         "title": "Glottolog — Mwera (Chimwera) (mwer1248)",
         "url": "https://glottolog.org/resource/languoid/id/mwer1248",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Page lue le 8 novembre 2026 : code ISO 639-3 mwe, Tanzanie, noms Chimwera, Cimwera, Mwela, Mwera ; niveau 5 « en développement » (Ethnologue 2025)."
+      },
+      {
+        "title": "The Organization of the Maji Maji Rebellion",
+        "author": "John Iliffe",
+        "year": 1967,
+        "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/organization-of-the-maji-maji-rebellion/7DD8298B261E754471EAD710BAEAFBF5",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 499, 501",
+        "notes": "Journal of African History, vol. 8, n° 3, p. 495-512. Lu en entier le 8 novembre 2026. P. 499 : « Of the Mwera and Matumbi leaders, Selemani Mamba, Chekenje, and Abdallah Kitambi appear on a list of headmen involved in the programme ». P. 501 : « the Ngindo-Mwera group are probably recent immigrants from the south »."
       }
     ]
   },

@@ -9,67 +9,61 @@
       "mainName": "Ndengereko",
       "selfAppellation": "Ndengereko",
       "exonyms": ["Warufiji", "Kindengereko", "Ndengeleko", "Rufiji"],
-      "originOfExonyms": "Warufiji est le nom swahili donne au groupe d'apres le fleuve Rufiji qui traverse leur territoire. Kindengereko designe leur langue. La variante Rufiji est utilisee dans certaines classifications linguistiques (Ethnologue, code rui) pour designer une variete dialectale du ndengereko.",
-      "whyProblematic": "La frontiere entre le peuple Ndengereko et le peuple Rufiji est linguistiquement et ethniquement floue. Les linguistes debattent si le rufiji est un dialecte du ndengereko ou une langue distincte. La designation Warufiji dans le recensement tanzanien englobe parfois l'ensemble du groupe.",
-      "contemporaryUsage": "Ndengereko est le terme ethnique reconnu en Tanzanie. La langue maternelle est en declin au profit du swahili, notamment chez les jeunes generations.",
+      "originOfExonyms": "Glottolog explique que Rufiji est le nom d'un fleuve et de la région qui l'entoure, et que Ndengereko est le nom de la langue : les deux désignent la même langue (Ström, 2009, citée par Glottolog). Warufiji est donc le nom swahili des gens du Rufiji. Kingengereko et Ndengeleko sont d'autres graphies du nom de la langue.",
+      "whyProblematic": "Warufiji et Ndengereko ne désignent pas toujours les mêmes gens : Warufiji nomme les habitants de la région du fleuve, Ndengereko un peuple et sa langue. Glottolog précise que le répertoire Ethnologue a deux entrées, Ndengereko (ndg) et Rufiji (rui), pour une seule langue.",
+      "contemporaryUsage": "Glottolog et la thèse de Ström (2013) emploient Ndengereko ou Ndengeleko pour la langue. Ström indique que la langue est menacée et qu'elle passe très peu à la génération suivante.",
       "linguisticFamily": "FLG_BANTU",
-      "ethnoLinguisticGroup": "Groupe Matumbi-Ndengereko, sous-famille Rufiji-Ruvuma (zone P bantou)",
-      "historicalRegion": "Region de Pwani (cote centrale), nord du fleuve Rufiji (Tanzanie)",
+      "ethnoLinguisticGroup": "Groupe Rufiji-Ruvuma, selon Glottolog",
+      "historicalRegion": "Côte de la Tanzanie au sud de Dar es Salaam, surtout dans le district de Rufiji, selon Ström (2013)",
       "currentCountries": ["TZA"]
     },
     "ethnicities": ["Ndengereko", "Warufiji"],
     "origins": {
-      "ancientOrigins": "Les Ndengereko sont issus d'un ancetre commun avec les Matumbi et les Rufiji, faisant partie d'un meme groupe migratoire bantou qui s'est fragmente lors de son installation dans la region cotiere du centre de la Tanzanie.",
-      "formationPeriod": "Periode precoloniale. La distinction entre Ndengereko, Rufiji et Matumbi s'est etablie lors de l'installation dans leurs zones respectives : les Rufiji se sont installes le long du fleuve et en ont pris le nom, les Matumbi se sont deplaces vers le sud dans les collines (matumbi = montagne), les Ndengereko sont restes au nord du fleuve Rufiji dans la plaine cotiere.",
-      "migrationRoutes": [
-        "Migration bantou vers la cote est-africaine",
-        "Installation au nord du fleuve Rufiji dans la region de Pwani"
-      ],
+      "ancientOrigins": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Ström 2013, Glottolog, Iliffe 1967).",
+      "formationPeriod": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Ström 2013, Glottolog, Iliffe 1967).",
+      "migrationRoutes": [],
       "historicalSettlementZones": [
-        "Pwani Region (region cotiere), au nord du fleuve Rufiji",
-        "Districts de Mkuranga, Kisarawe et Rufiji",
-        "Collines Matumbi, pres de Kibiti",
-        "Localites de Mchukivi et Bungu"
+        "Région côtière au sud de Dar es Salaam, surtout dans le district de Rufiji, selon Ström (2013)",
+        "Collines au nord du fleuve Rufiji, selon William Beardall (1880)"
       ],
-      "unificationsOrDivisions": "Appartenance au cluster Ndengereko au sens large qui inclut les Ndengereko, Rufiji, et potentiellement les Matumbi. Apres la guerre Maji Maji, des membres d'autres ethnies se sont integres au groupe en adoptant le Kindengereko comme langue commune.",
-      "externalInfluences": "Arrivee des marchands arabes et conversion a l'islam. Guerre Maji Maji (1905-1907) : de nombreux groupes se sont deplaces vers la region Ndengereko pour combattre aux cotes des Allemands, adoptant le Kindengereko comme langue de communication, puis s'y sont integres.",
-      "majorHistoricalEvents": "La guerre Maji Maji (1905-1907) a joue un role paradoxal pour les Ndengereko : des groupes tribaux venus aider les Allemands a communiquer ont adopte le Kindengereko et ont ete absorbes dans l'identite ndengereko apres la guerre. Cet evenement a contribue a l'expansion demographique du groupe."
+      "unificationsOrDivisions": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Ström 2013, Glottolog, Iliffe 1967).",
+      "externalInfluences": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Ström 2013, Glottolog, Iliffe 1967).",
+      "majorHistoricalEvents": "Le mouvement Maji Maji de 1905 a commencé dans un ensemble de peuples que John Iliffe (1967) appelle le « complexe du Rufiji ». Iliffe classe la langue ndengereko avec le ngindo et le mbunga, d'après le linguiste Bryan (1959)."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Chefferies locales. Societe tres orientee vers la communaute, vivant dans des habitations en pisé avec toits de chaume.",
+      "traditionalPoliticalSystem": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Ström 2013, Glottolog, Iliffe 1967).",
       "clanOrganization": null,
       "ageClassSystems": null,
       "roleOfLineages": null,
-      "religiousAuthority": "Islam integre dans la vie quotidienne, parfois mele de religion folk (croyances traditionnelles persistant sous la forme islamique). Les Ndengereko qui se convertissent au christianisme font souvent face a des persecutions communautaires."
+      "religiousAuthority": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Ström 2013, Glottolog, Iliffe 1967)."
     },
     "languages": {
       "mainLanguage": "Kindengereko (Ndengereko)",
       "isoCodes": ["ndg"],
-      "dialects": [
-        "Rufiji (variete dialectale proche, parfois codifiee separement sous rui)"
-      ],
-      "vehicularRole": "Le kindengereko est la langue maternelle du groupe mais est en declin face au swahili. Les locuteurs natifs adultes pratiquent encore la langue, mais les jeunes adoptent majoritairement le swahili. L'Ethnologue classe le ndengereko comme langue en danger (shifting, niveau 7 Glottolog)."
+      "dialects": [],
+      "vehicularRole": "Ström (2013) décrit une langue menacée, qui passe à la génération suivante de façon très limitée. Elle a mené une enquête sociolinguistique dans la région du Rufiji, avec des entretiens et un questionnaire dans les écoles. Glottolog reprend le niveau « en train de se perdre » de l'Ethnologue (2025)."
     },
     "culture": {
-      "majorRites": "Ceremonies incluant des chants et ngoma (musique de tambours). Traditions specifiques : spoti et kinyamtindili (chants et danses cerimoniales). Pratiques islamiques populaires melees de croyances traditionnelles.",
-      "symbols": "Le riz et le poisson sont les aliments identitaires fondamentaux des Ndengereko.",
-      "artsAndMusic": "La musique est une partie intrinseque de la vie sociale et religieuse des Ndengereko, tissee dans tous les evenements sociaux et ceremonies. Chants ngoma caracteristiques.",
-      "spiritualities": "Islam majoritaire, parfois syncrétise avec des croyances animistes traditionnelles (religion folk). Presence chretienne tres minoritaire face a des obstacles communautaires."
+      "majorRites": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Ström 2013, Glottolog, Iliffe 1967).",
+      "symbols": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Ström 2013, Glottolog, Iliffe 1967).",
+      "artsAndMusic": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Ström 2013, Glottolog, Iliffe 1967).",
+      "spiritualities": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Ström 2013, Glottolog, Iliffe 1967)."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Premier grand groupe cotier au sud de Dar es Salaam. Organisation en chefferies locales.",
-      "relationsWithNeighbors": "Au nord : Matumbi. Au sud : Rufiji. A l'est : ocean Indien. Relations avec les groupes Zigula-Zaramo plus au nord. Interactions historiques avec les Makonde au sud-est.",
-      "conflictsOrAlliances": "Implication dans la guerre Maji Maji (1905-1907). Absorption post-guerre de groupes d'autres ethnies ayant adopte le Kindengereko.",
+      "kingdomsOrChiefdoms": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Ström 2013, Glottolog, Iliffe 1967).",
+      "relationsWithNeighbors": "Beardall (1880) cite les Wandendereko et les Wazaramo parmi les tribus des collines au nord du fleuve, à part des gens du bas fleuve.",
+      "conflictsOrAlliances": "Iliffe (1967) situe le début de la révolte Maji Maji de 1905 dans le « complexe du Rufiji ». Les sources lues ne disent pas ce que les Ndengereko y ont fait.",
       "diaspora": null
     },
     "demography": {
-      "totalPopulation": 290000,
-      "referenceYear": 2025,
-      "source": "Peoplegroups.org (2024) : 290 000 ; IMB flyer (2020) : 285 000 ; Prayafrica.org : 250 000+",
+      "totalPopulation": 72000,
+      "referenceYear": 2013,
+      "source": "Ström (2013) : environ 72 000 locuteurs du ndengeleko. Les sites missionnaires donnent 250 000 à 290 000 personnes pour le peuple, sans méthode connue : ces chiffres restent non vérifiés.",
       "distributionByCountry": [
         {
           "country": "TZA",
-          "population": 290000
+          "population": 72000,
+          "note": "Locuteurs du ndengeleko, selon Ström (2013)"
         }
       ]
     },
@@ -96,7 +90,8 @@
         "title": "Ndengereko – Glottolog 5.3, code nden1248",
         "url": "https://glottolog.org/resource/languoid/id/nden1248",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Page lue le 8 novembre 2026 : Ndengereko et Rufiji désignent la même langue, Rufiji étant le nom d'un fleuve et de sa région ; noms Kingengereko, Ndengeleko, Ndengereko ; Tanzanie ; niveau 7 « en train de se perdre » (Ethnologue 2025)."
       },
       {
         "title": "Language, Tribe and Ethnic Clusters : Ndengereko – Orville Jenkins",
@@ -109,6 +104,25 @@
         "url": "https://www.ethnologue.com/language/ndg/",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "The Ndengeleko language of Tanzania",
+        "author": "Eva-Marie Ström",
+        "year": 2013,
+        "url": "https://gupea.ub.gu.se/handle/2077/32111",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse de doctorat, université de Göteborg. Nous avons lu la notice et le résumé le 8 novembre 2026, pas la thèse entière : « spoken by approximately 72,000 people », enquête menée dans la région du Rufiji, langue menacée."
+      },
+      {
+        "title": "The Organization of the Maji Maji Rebellion",
+        "author": "John Iliffe",
+        "year": 1967,
+        "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/organization-of-the-maji-maji-rebellion/7DD8298B261E754471EAD710BAEAFBF5",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 501",
+        "notes": "Journal of African History, vol. 8, n° 3, p. 495-512. Lu en entier le 8 novembre 2026. Note 16 : Bryan distingue le groupe Zaramo-Luguru-Vidunda des langues ndengereko, ngindo et mbunga."
       }
     ]
   },
