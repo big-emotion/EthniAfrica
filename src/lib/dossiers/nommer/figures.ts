@@ -122,7 +122,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // headlines, Mucuval and Wiyana, moved to the exonyms, where a reader who searches them still finds the fiche.
     // 2703 -> 2745 on 2026-10-19: ETNI-2135 split packed exonym entries into
     // one entry per name, preserving the names and their existing glosses.
-    value: 2733, // 2745 -> 2733 on 2026-11-07: the premium pass on eight people fiches keeps only the exonyms its sources attest (PPL_LENJE moved Bene Mukuni, a self-given name, to its spelling variants and dropped six unsourced forms; PPL_GBAYA, PPL_NAMWANGA and PPL_BULU lost three, two and one; PPL_PYGMEES_AUTOCHTONES gained one).
+    value: 2731, // 2743 -> 2731 on 2026-11-08: the premium pass on eight people fiches keeps only the exonyms its sources attest (PPL_LENJE moved Bene Mukuni, a self-given name, to its spelling variants and dropped six unsourced forms; PPL_GBAYA, PPL_NAMWANGA and PPL_BULU lost three, two and one; PPL_PYGMEES_AUTOCHTONES gained one).
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -187,12 +187,12 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 384 -> 380 the same day: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12. All four were contested.
     // 380 -> 370 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 370 -> 368 on 2026-10-18: the Guwa and Mobe fiches, both contested, withdrawn after wave 24.
-    value: 368,
+    value: 369,
     // The breakdown in the method text recounted on 2026-10-18: contested
     // (224) had not followed the folds since it was written; colonial-legacy
     // happened to be right again.
     method:
-      "fiches dont classificationStatus vaut contested (212) ou colonial-legacy (156)",
+      "fiches dont classificationStatus vaut contested (213) ou colonial-legacy (156)",
     countedOn: COUNTED_ON,
   },
   "status-other": {
@@ -203,7 +203,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // into their keepers.
     // 18 -> 17 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 17 -> 14 on 2026-10-18: three reconstructive fiches withdrawn after wave 24 (Autres peuples bantous, Peuples forestiers du Sud et de l'Est, Africains d'origine récente).
-    value: 14,
+    value: 15,
     method:
       "fiches dont classificationStatus est renseigné sans être contested ni colonial-legacy",
     countedOn: COUNTED_ON,
@@ -224,7 +224,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 279 -> 278 on 2026-10-14: the Nabt fiche, which declared no status, was folded.
     // 278 -> 275 on 2026-10-18: the Mucubal, Taal and Mbogo fiches, which declared no status, folded or withdrawn after wave 24.
     // 275 -> 277 the same day: PPL_MAKA and PPL_NJEM added without a status, which the model leaves out until a fiche is reviewed.
-    value: 277,
+    value: 275,
     method: "fiches sans classificationStatus",
     countedOn: COUNTED_ON,
   },
@@ -251,7 +251,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // research for series 2 n° 1, dates the French spelling (Targui, 19th
     // century) instead of saying « à l'époque coloniale ».
     // 199 -> 197 on 2026-10-18: the Taal and Mbogo fiches, which counted, withdrawn after wave 24.
-    value: 195, // 197 -> 195 on 2026-11-07: the Bulu and forest-peoples fiches, rewritten from their sources, no longer use the word in these two fields.
+    value: 197, // 199 -> 197 on 2026-11-08: the Bulu and forest-peoples fiches, rewritten from their sources, no longer use the word in these two fields.
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -283,7 +283,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 163 -> 156 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 156 -> 155 on 2026-10-14: the Nabt fiche, which counted, was folded.
     // 155 -> 152 on 2026-10-18: the Taal, Mbogo and « Africains d'origine récente » fiches, which counted, withdrawn after wave 24.
-    value: 152,
+    value: 153,
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -310,7 +310,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 108 -> 107 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 107 -> 108 on 2026-10-15: PPL_TUAREG's origin text now says European
     // travellers took the name up from 1802 (Hornemann, Caillié).
-    value: 110, // 108 -> 110 on 2026-11-07: the Gbaya and forest-peoples fiches, rewritten from their sources, now name European authors or travellers.
+    value: 113, // 111 -> 113 on 2026-11-08: the Gbaya and forest-peoples fiches, rewritten from their sources, now name European authors or travellers.
     method: "radical europ dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -332,7 +332,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 103 -> 102 on 2026-10-18: the Taal fiche, which counted, withdrawn after wave 24.
     // 102 -> 101 the same day: PPL_WIYANA's whyProblematic no longer says the Mossi
     // neighbours imposed Gurunsi; it tells Jacob's hypothesis of a Moore nickname instead.
-    value: 104, // 101 -> 104 on 2026-11-07: the Bulu, Gbaya and Twa fiches, rewritten from their sources, now mention neighbouring peoples.
+    value: 105, // 102 -> 105 on 2026-11-08: the Bulu, Gbaya and Twa fiches, rewritten from their sources, now mention neighbouring peoples.
     method: "radical voisin dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -349,7 +349,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 67 -> 65 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 65 -> 63 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 63 -> 61 on 2026-10-18: the Mucubal fiche, folded into PPL_MUCUVAL, and the « Africains d'origine récente » fiche, withdrawn, both counted.
-    value: 61,
+    value: 62,
     method: "radical portugais dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -370,7 +370,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 49 -> 50 on 2026-10-12: the Bakwé fiche now records Tuwè, a pejorative Krou name for them, in originOfExonyms.
     // 50 -> 49 on 2026-10-18: PPL_WIYANA no longer calls Gurunsi a pejorative term of Djerma origin,
     // which no source said; it tells Jacob's « gibier de battue » hypothesis without that label.
-    value: 48, // 49 -> 48 on 2026-11-07: the label is kept only where a source gives it; PPL_TWA and PPL_AMAZIGH_MACRO no longer use it, and PPL_PYGMEES_AUTOCHTONES now reports that many people, most of the peoples concerned among them, judge Pygmée pejorative.
+    value: 48, // 49 -> 48 on 2026-11-08: the label is kept only where a source gives it; PPL_TWA and PPL_AMAZIGH_MACRO no longer use it, and PPL_PYGMEES_AUTOCHTONES now reports that many people, most of the peoples concerned among them, judge Pygmée pejorative.
     method: `radicaux ${PEJORATIVE_STEMS.join(", ")} dans originOfExonyms + whyProblematic`,
     countedOn: "2026-10-09",
   },
@@ -423,7 +423,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 25 -> 24 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
     // 24 -> 23 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
-    value: 24, // 23 -> 24 on 2026-11-07: PPL_NAMWANGA's origin text now cites the form the Mwenzo missionaries wrote in 1897.
+    value: 28, // 27 -> 28 on 2026-11-08: PPL_NAMWANGA's origin text now cites the form the Mwenzo missionaries wrote in 1897.
     method: "radical missionn dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },

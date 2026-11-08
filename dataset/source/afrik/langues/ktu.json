@@ -9,13 +9,22 @@
   "glottocode": "kitu1246",
   "nameFr": "Kituba de la République démocratique du Congo",
   "nameEn": "Kituba (Democratic Republic of Congo)",
-  "alternateNames": ["Kikongo Ya Leta", "Kikongo Simplifié", "Kileta"],
-  "whyProblematic": "Ce parler a plusieurs noms selon la rive. En République démocratique du Congo, on dit Kikongo ya leta, « le kikongo de l'État », abrégé en Kileta : l'administration coloniale belge a adopté cette langue de contact là où on la parle. En République du Congo, on dit Kituba, « manière de parler », ou Munukutuba, qui veut dire à peu près « je dis ». Beaucoup de ses locuteurs, hors de la région des Bakongo, l'appellent simplement kikongo, mais ne pensent pas parler la même langue que les Bakongo (Mufwene). D'anciens noms ont presque disparu : Kibula-matadi, « la parole des casseurs de pierres », Kizabave, « ne sais pas », et « kikongo bâtard », un nom aujourd'hui péjoratif.",
+  "alternateNames": [
+    "Fiote",
+    "Kibula-matadi",
+    "Kikongo Simplifié",
+    "Kikongo Ya Leta",
+    "Kikongo commercial",
+    "Kileta",
+    "Monokutuba",
+    "Munukutuba"
+  ],
+  "whyProblematic": "Ce parler a plusieurs noms selon la rive. En République démocratique du Congo, on dit kikongo ya leta, « le kikongo de l'État », abrégé en kileta : leta vient du français « l'État », le nom local de l'administration coloniale belge, qui a adopté cette langue de contact (Mufwene). Beaucoup de ses locuteurs l'appellent simplement kikongo, mais ne pensent pas parler la même langue que les Bakongo. En République du Congo, on dit kituba, « manière de parler », ou munukutuba, d'après mono kutuba, « je dis », une tournure un peu moqueuse. Le nom kituba est surtout celui des chercheurs, et beaucoup de locuteurs ne le connaissent pas (Mufwene). D'anciens noms viennent de la colonisation : kibula-matadi, « le kikongo de l'agent colonial », littéralement « du casseur de pierres », et « kikongo bâtard », un nom méprisant écrit en 1905 (Samarin).",
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
   "peoples": [],
   "nameHistory": {
-    "summary": "Le nom kituba désigne une langue d'échange née du kikongo, parlée dans le sud-ouest de la République démocratique du Congo, le sud de la République du Congo et le nord de l'Angola. En République démocratique du Congo, on l'appelle kikongo ya leta, « le kikongo de l'administration », et beaucoup de ses locuteurs disent simplement kikongo. D'autres noms existent ; nous présentons plus bas ce que les sources disent de chacun.",
+    "summary": "Le nom kituba désigne une langue d'échange née du kikongo, parlée dans le sud-ouest de la République démocratique du Congo, le sud de la République du Congo et le nord de l'Angola. En République démocratique du Congo, on l'appelle kikongo ya leta, « le kikongo de l'administration », et beaucoup de ses locuteurs disent simplement kikongo. En République du Congo, on dit aussi munukutuba. D'autres noms, plus anciens, viennent de la colonisation ; nous présentons plus bas ce que les sources disent de chacun.",
     "names": [
       {
         "nameText": "Kikongo ya leta",
@@ -43,7 +52,50 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "section 2",
-                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse)."
+                "notes": "Chapitre de synthèse d'APiCS Online (Institut Max Planck d'anthropologie évolutionniste, 2013), relu en texte intégral le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par l'auteur"
+            },
+            "statement": "Le nom kikongo ya leta vient du mot leta, tiré du français « l'État » : c'est ainsi qu'on désignait localement l'administration coloniale belge, selon Salikoko Mufwene. Le préfixe ki- sert en bantou à former des noms de langues.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Kituba, Kileta, or Kikongo? What's in a name?",
+                "author": "Salikoko S. Mufwene",
+                "year": 2009,
+                "url": "https://mufwene.uchicago.edu/publications/KITUBA_KILETA_OR_KIKONGO.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 213, et note 1",
+                "notes": "Dans Carole de Féral (dir.), Le nom des langues III, Louvain-la-Neuve, Peeters, 2009, p. 211-222. Lu en texte intégral le 3 novembre 2026 dans la version mise en ligne par l'auteur, linguiste congolais de l'université de Chicago."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "1986"
+            },
+            "era": "modern",
+            "statement": "Le nom kikongo ya leta, « kikongo de l'État », est employé couramment au Zaïre pour souligner le caractère officiel ou semi-officiel de cette langue, selon le linguiste Mwatha Musanji Ngalasso.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "État des langues et langues de l'État au Zaïre",
+                "author": "Mwatha Musanji Ngalasso",
+                "year": 1986,
+                "url": "https://www.persee.fr/doc/polaf_0244-7827_1986_num_23_1_3828",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 16",
+                "notes": "Politique africaine, 23, 1986, p. 7-28. Lu le 3 novembre 2026 sur Persée."
               }
             ]
           }
@@ -56,7 +108,7 @@
         "languageOfOrigin": "ktu",
         "namedBy": null,
         "shortLine": "« Manière de parler », d'après munu kutuba, « je dis » ; surtout en République du Congo.",
-        "periodLabel": "Écrit dès 1966",
+        "periodLabel": "Écrit dès 1912 sous la forme Chituba",
         "accounts": [
           {
             "period": {
@@ -74,7 +126,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "section 2",
-                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse)."
+                "notes": "Chapitre de synthèse d'APiCS Online (Institut Max Planck d'anthropologie évolutionniste, 2013), relu en texte intégral le 3 novembre 2026."
               }
             ],
             "hypothesisGroup": "origine du nom kituba"
@@ -97,7 +149,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "section 1",
-                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse)."
+                "notes": "Chapitre de synthèse d'APiCS Online (Institut Max Planck d'anthropologie évolutionniste, 2013), relu en texte intégral le 3 novembre 2026."
               }
             ]
           },
@@ -108,8 +160,7 @@
               "label": "1966"
             },
             "era": "modern",
-            "statement": "Le nom kituba figure dans le titre de la thèse de Harold Fehderau, The origin and development of Kituba, soutenue à l'université Cornell en 1966, d'après la bibliographie de Salikoko Mufwene. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
-            "birth": true,
+            "statement": "Le nom kituba figure dans le titre de la thèse de Harold Fehderau, The origin and development of Kituba, soutenue à l'université Cornell en 1966, d'après la bibliographie de Salikoko Mufwene. Depuis Fehderau, ce nom est surtout employé par les chercheurs, et beaucoup de locuteurs ne le connaissent pas, écrit Mufwene en 2009.",
             "sources": [
               {
                 "title": "Kikongo-Kituba, Atlas of Pidgin and Creole Language Structures Online",
@@ -119,7 +170,61 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "bibliographie",
-                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse)."
+                "notes": "Chapitre de synthèse d'APiCS Online (Institut Max Planck d'anthropologie évolutionniste, 2013), relu en texte intégral le 3 novembre 2026."
+              },
+              {
+                "title": "Kituba, Kileta, or Kikongo? What's in a name?",
+                "author": "Salikoko S. Mufwene",
+                "year": 2009,
+                "url": "https://mufwene.uchicago.edu/publications/KITUBA_KILETA_OR_KIKONGO.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 215",
+                "notes": "Dans Carole de Féral (dir.), Le nom des langues III, Louvain-la-Neuve, Peeters, 2009, p. 211-222. Lu en texte intégral le 3 novembre 2026 dans la version mise en ligne par l'auteur, linguiste congolais de l'université de Chicago."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom kituba a une forme proche, Chituba, chez le voyageur britannique Hilton-Simpson, qui le décrit au Kasaï comme une langue de commerce entre différents peuples. William Samarin range ce passage parmi les plus anciennes mentions de la langue. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Versions of Kituba's origin: Historiography and theory",
+                "author": "William J. Samarin",
+                "year": 2013,
+                "url": "https://utoronto.scholaris.ca/server/api/core/bitstreams/fc4544d3-abed-4887-949c-de1e3682b812/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 119, tableau 2",
+                "notes": "Journal of African Languages and Linguistics, 34 (1), 2013, p. 111-181. Lu en texte intégral le 3 novembre 2026 dans le dépôt de l'université de Toronto."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": null,
+              "label": "Depuis 2015"
+            },
+            "era": "modern",
+            "statement": "Le kituba est, avec le lingala, l'une des deux langues nationales véhiculaires de la République du Congo, selon l'article 4 de sa Constitution.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de la République du Congo, adoptée par référendum le 25 octobre 2015, article 4",
+                "author": "République du Congo",
+                "year": 2015,
+                "url": "https://www.sgg.cg/fr/journal-officiel/constitution.html",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 4",
+                "notes": "Texte lu le 3 novembre 2026 sur le site du Secrétariat général du Gouvernement (Journal officiel 2015-8 spécial)."
               }
             ]
           }
@@ -152,7 +257,39 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "section 1 et section 2",
-                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse)."
+                "notes": "Chapitre de synthèse d'APiCS Online (Institut Max Planck d'anthropologie évolutionniste, 2013), relu en texte intégral le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 2013,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom kikongo, tout court, est celui qu'on donne à la langue surtout en République démocratique du Congo, selon William Samarin. Salikoko Mufwene précise qu'il y est neutre, là où aucune des langues des Bakongo n'est parlée.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Versions of Kituba's origin: Historiography and theory",
+                "author": "William J. Samarin",
+                "year": 2013,
+                "url": "https://utoronto.scholaris.ca/server/api/core/bitstreams/fc4544d3-abed-4887-949c-de1e3682b812/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 113",
+                "notes": "Journal of African Languages and Linguistics, 34 (1), 2013, p. 111-181. Lu en texte intégral le 3 novembre 2026 dans le dépôt de l'université de Toronto."
+              },
+              {
+                "title": "Kituba, Kileta, or Kikongo? What's in a name?",
+                "author": "Salikoko S. Mufwene",
+                "year": 2009,
+                "url": "https://mufwene.uchicago.edu/publications/KITUBA_KILETA_OR_KIKONGO.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 215",
+                "notes": "Dans Carole de Féral (dir.), Le nom des langues III, Louvain-la-Neuve, Peeters, 2009, p. 211-222. Lu en texte intégral le 3 novembre 2026 dans la version mise en ligne par l'auteur, linguiste congolais de l'université de Chicago."
               }
             ]
           }
@@ -164,7 +301,7 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "« Le kikongo des casseurs de pierres » : un nom de l'époque coloniale.",
+        "shortLine": "« Le kikongo de l'agent colonial », littéralement « du casseur de pierres ».",
         "periodLabel": "Époque coloniale",
         "accounts": [
           {
@@ -174,7 +311,7 @@
               "label": "Époque coloniale"
             },
             "era": "colonial",
-            "statement": "Le nom kibula-matadi, ou kikongo ya bula-matadi, veut dire « le kikongo de l'agent colonial », littéralement « des casseurs de pierres », selon Salikoko Mufwene. Pendant la colonisation, les missions chrétiennes disaient aussi kikongo commercial.",
+            "statement": "Le nom kibula-matadi, ou kikongo ya bula-matadi, veut dire « le kikongo de l'agent colonial », littéralement « du casseur de pierres », selon Salikoko Mufwene. Il rappelle la construction du chemin de fer entre Matadi et Kinshasa, de 1891 à 1898 : il fallait faire sauter des roches, matadi. Bula-matadi a fini par désigner l'administrateur colonial.",
             "sources": [
               {
                 "title": "Kikongo-Kituba, Atlas of Pidgin and Creole Language Structures Online",
@@ -184,7 +321,61 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "section 2",
-                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse)."
+                "notes": "Chapitre de synthèse d'APiCS Online (Institut Max Planck d'anthropologie évolutionniste, 2013), relu en texte intégral le 3 novembre 2026."
+              },
+              {
+                "title": "Kituba, Kileta, or Kikongo? What's in a name?",
+                "author": "Salikoko S. Mufwene",
+                "year": 2009,
+                "url": "https://mufwene.uchicago.edu/publications/KITUBA_KILETA_OR_KIKONGO.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 213-214",
+                "notes": "Dans Carole de Féral (dir.), Le nom des langues III, Louvain-la-Neuve, Peeters, 2009, p. 211-222. Lu en texte intégral le 3 novembre 2026 dans la version mise en ligne par l'auteur, linguiste congolais de l'université de Chicago."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom bula matadi désigne la langue chez l'auteur Fraser, qui y voit « un dialecte composite, la langue commune de l'État du Congo », selon le tableau de William Samarin. Samarin note que le mot bula matadi, « casse les pierres », a d'abord été employé pour l'explorateur Henry Morton Stanley. C'est la plus ancienne trace de ce nom de langue que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Versions of Kituba's origin: Historiography and theory",
+                "author": "William J. Samarin",
+                "year": 2013,
+                "url": "https://utoronto.scholaris.ca/server/api/core/bitstreams/fc4544d3-abed-4887-949c-de1e3682b812/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 113 et p. 119, tableau 2",
+                "notes": "Journal of African Languages and Linguistics, 34 (1), 2013, p. 111-181. Lu en texte intégral le 3 novembre 2026 dans le dépôt de l'université de Toronto."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom kibula-matadi est écrit Ki-Bula Matadi par l'auteur Davies, qui le décrit comme la langue des Blancs en général dans le Bas-Congo, avec mépris : un mauvais kikongo, selon le tableau de William Samarin.",
+            "formAsWritten": "Ki-Bula Matadi",
+            "sources": [
+              {
+                "title": "Versions of Kituba's origin: Historiography and theory",
+                "author": "William J. Samarin",
+                "year": 2013,
+                "url": "https://utoronto.scholaris.ca/server/api/core/bitstreams/fc4544d3-abed-4887-949c-de1e3682b812/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 119, tableau 2",
+                "notes": "Journal of African Languages and Linguistics, 34 (1), 2013, p. 111-181. Lu en texte intégral le 3 novembre 2026 dans le dépôt de l'université de Toronto."
               }
             ]
           }
@@ -217,7 +408,137 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "section 2",
-                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse)."
+                "notes": "Chapitre de synthèse d'APiCS Online (Institut Max Planck d'anthropologie évolutionniste, 2013), relu en texte intégral le 3 novembre 2026."
+              },
+              {
+                "title": "Kituba, Kileta, or Kikongo? What's in a name?",
+                "author": "Salikoko S. Mufwene",
+                "year": 2009,
+                "url": "https://mufwene.uchicago.edu/publications/KITUBA_KILETA_OR_KIKONGO.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 214",
+                "notes": "Dans Carole de Féral (dir.), Le nom des langues III, Louvain-la-Neuve, Peeters, 2009, p. 211-222. Lu en texte intégral le 3 novembre 2026 dans la version mise en ligne par l'auteur, linguiste congolais de l'université de Chicago."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Munukutuba",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "ktu",
+        "namedBy": null,
+        "shortLine": "« Je dis » : un nom employé surtout en République du Congo, d'après mono kutuba.",
+        "periodLabel": "Écrit dès 1984",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par l'auteur"
+            },
+            "statement": "Le nom munukutuba vient de mono kutuba, « je dis », une tournure qui n'est pas celle des locuteurs : eux disent mono tuba. Ce ku- ajouté au verbe rend le nom un peu moqueur, selon Salikoko Mufwene.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Kituba, Kileta, or Kikongo? What's in a name?",
+                "author": "Salikoko S. Mufwene",
+                "year": 2009,
+                "url": "https://mufwene.uchicago.edu/publications/KITUBA_KILETA_OR_KIKONGO.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 214",
+                "notes": "Dans Carole de Féral (dir.), Le nom des langues III, Louvain-la-Neuve, Peeters, 2009, p. 211-222. Lu en texte intégral le 3 novembre 2026 dans la version mise en ligne par l'auteur, linguiste congolais de l'université de Chicago."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom munukutuba désigne la langue d'échange venue du sud, à Brazzaville, chez le linguiste Louis-Jean Calvet. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Troc, marché et échange linguistique",
+                "author": "Louis-Jean Calvet",
+                "year": 1984,
+                "url": "https://www.persee.fr/doc/lsoc_0181-4095_1984_num_27_1_1978",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 66",
+                "notes": "Langage et société, 27, 1984, p. 55-81. Lu le 3 novembre 2026 sur Persée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "1996"
+            },
+            "era": "modern",
+            "statement": "Le nom monokutuba est donné, avec kituba, à une langue de commerce toujours active, par le linguiste Gabriel Manessy.",
+            "formAsWritten": "monokutuba",
+            "sources": [
+              {
+                "title": "Réflexions sur les contraintes anthropologiques de la créolisation : de l'improbabilité du métissage linguistique dans les créoles atlantiques exogènes",
+                "author": "Gabriel Manessy",
+                "year": 1996,
+                "url": "https://www.persee.fr/doc/ecreo_0708-2398_1996_num_19_1_1543",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 62",
+                "notes": "Études créoles, 19 (1), 1996, p. 61-71. Lu le 3 novembre 2026 sur Persée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kikongo bâtard",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des voyageurs et des missionnaires européens",
+        "shortLine": "Un nom méprisant donné par des Européens au début du XXe siècle.",
+        "periodLabel": "Écrit dès 1905",
+        "accounts": [
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom « kikongo bâtard », bastard Kikongo, est employé par le voyageur Emil Torday pour le parler des Bayanzi, des Bahuana et des Bambala du Kwilu, qu'il décrit comme une langue hybride. C'est la plus ancienne mention de la langue que connaît William Samarin, et la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "The origins of Kituba and Lingala",
+                "author": "William J. Samarin",
+                "year": 1990,
+                "url": "https://scispace.com/pdf/the-origins-of-kituba-and-lingala-2fzvbjd9jr.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 55",
+                "notes": "Journal of African Languages and Linguistics, 12 (1), 1990, p. 47-77. Lu en texte intégral le 3 novembre 2026."
+              },
+              {
+                "title": "Versions of Kituba's origin: Historiography and theory",
+                "author": "William J. Samarin",
+                "year": 2013,
+                "url": "https://utoronto.scholaris.ca/server/api/core/bitstreams/fc4544d3-abed-4887-949c-de1e3682b812/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 119, tableau 2",
+                "notes": "Journal of African Languages and Linguistics, 34 (1), 2013, p. 111-181. Lu en texte intégral le 3 novembre 2026 dans le dépôt de l'université de Toronto."
               }
             ]
           }
@@ -233,6 +554,7 @@
       "scale": "EGIDS (Ethnologue)",
       "asOf": 2025
     },
+    "originDebated": false,
     "sources": [
       {
         "title": "Glottolog 5.3 — Kituba (Democratic Republic of Congo) (kitu1246)",
@@ -246,15 +568,75 @@
         "url": "https://apics-online.info/surveys/58",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Étude lue en ligne en partie : les noms Kikongo ya leta, Mono kutuba et Kituba, l'adoption par l'administration belge, et la section sur les noms."
+        "notes": "Chapitre lu en texte intégral le 3 novembre 2026 : les noms kikongo ya leta, kibula-matadi, mono kutuba, kituba, ikele ve et kikongo commercial, l'adoption de la langue par l'administration belge, et une estimation de 6 à 8 millions de locuteurs, sans date ni répartition par pays."
       },
       {
-        "title": "Wikipédia (anglais) — Kituba language",
-        "url": "https://en.wikipedia.org/wiki/Kituba_language",
-        "tier": "unverified",
-        "source_kind": "encyclopedia",
-        "notes": "Page lue en ligne : le sens de Kituba, Munukutuba, Kibula-matadi et Kizabave, avec renvois à Mufwene (2009), à Samarin et à la Constitution congolaise."
+        "title": "Mufwene, Salikoko S., « Kituba, Kileta, or Kikongo? What's in a name? », dans Le nom des langues III, Peeters, 2009, p. 211-222",
+        "url": "https://mufwene.uchicago.edu/publications/KITUBA_KILETA_OR_KIKONGO.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu en texte intégral le 3 novembre 2026 : l'origine des noms leta, bula-matadi, mono kutuba et kituba, et le constat que kituba est surtout un nom de chercheurs."
+      },
+      {
+        "title": "Samarin, William J., « Versions of Kituba's origin: Historiography and theory », Journal of African Languages and Linguistics, 34 (1), 2013",
+        "url": "https://utoronto.scholaris.ca/server/api/core/bitstreams/fc4544d3-abed-4887-949c-de1e3682b812/content",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu en texte intégral le 3 novembre 2026 : la liste des noms de la langue, dont Fiote et Bula Matadi, et un tableau des descriptions de la langue de 1900 à 1951."
+      },
+      {
+        "title": "Samarin, William J., « The origins of Kituba and Lingala », Journal of African Languages and Linguistics, 12 (1), 1990",
+        "url": "https://scispace.com/pdf/the-origins-of-kituba-and-lingala-2fzvbjd9jr.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu en texte intégral le 3 novembre 2026 : la plus ancienne mention de la langue, le « kikongo bâtard » de Torday en 1905."
+      },
+      {
+        "title": "Ngalasso, Mwatha Musanji, « État des langues et langues de l'État au Zaïre », Politique africaine, 23, 1986",
+        "url": "https://www.persee.fr/doc/polaf_0244-7827_1986_num_23_1_3828",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 sur Persée : le kikongo dit couramment kikongo ya leta pour en souligner le caractère officiel."
+      },
+      {
+        "title": "Calvet, Louis-Jean, « Troc, marché et échange linguistique », Langage et société, 27, 1984",
+        "url": "https://www.persee.fr/doc/lsoc_0181-4095_1984_num_27_1_1978",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 sur Persée : le munukutuba comme langue d'échange venue du sud à Brazzaville."
+      },
+      {
+        "title": "Manessy, Gabriel, « Réflexions sur les contraintes anthropologiques de la créolisation », Études créoles, 19 (1), 1996",
+        "url": "https://www.persee.fr/doc/ecreo_0708-2398_1996_num_19_1_1543",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 sur Persée : une langue de commerce toujours active sous le nom de kituba ou de monokutuba."
+      },
+      {
+        "title": "Constitution de la République du Congo, adoptée par référendum le 25 octobre 2015, article 4",
+        "url": "https://www.sgg.cg/fr/journal-officiel/constitution.html",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte lu le 3 novembre 2026 sur le site du Secrétariat général du Gouvernement : « Les langues nationales véhiculaires sont le lingala et le kituba »."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers",
+        "reason": "Nous n'avons pas trouvé de chiffre par pays. Salikoko Mufwene estime à 6 à 8 millions le nombre de locuteurs, sans date ni répartition entre les deux Congo et l'Angola, et William Samarin note que les estimations varient d'un auteur à l'autre."
+      },
+      {
+        "field": "content.dialects",
+        "reason": "Nous n'avons pas trouvé de liste des variétés de la langue dans les sources lues. Salikoko Mufwene signale seulement des noms régionaux comme kikwango et kikwilu."
+      },
+      {
+        "field": "nameHistory.names[0]",
+        "reason": "Nous n'avons pas trouvé la plus ancienne trace écrite du nom kikongo ya leta."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Une langue d'échange née du kikongo, parlée dans les deux Congo ; en RD Congo, on l'appelle kikongo ya leta, « le kikongo de l'État ».",
+      "followUp": "Pourquoi cette langue porte-t-elle autant de noms ?"
+    }
   }
 }

@@ -16,7 +16,7 @@
     "Mangala",
     "Ngala"
   ],
-  "whyProblematic": "Le nom « lingala » est débattu entre linguistes. Selon Meeuwis, les Européens arrivés sur le fleuve Congo en 1881-1882 ont appris de façon imparfaite le bobangi, langue de commerce des riverains, et l'ont fortement simplifié. Ce parler a été porté en 1884-1885 à Bangala Station, poste de l'État, et a reçu le nom de « Bangala ». En 1901-1902, les missionnaires de Scheut à Nouvelle-Anvers l'ont rebaptisé « Lingala », nom qu'aucune source antérieure à 1902 ne mentionne : dans plusieurs langues bantoues de la région, le préfixe ba- désigne des peuples et non des langues. Mimpongo (2024) conteste que le nom soit une création missionnaire : selon lui, Lingála et Mangála sont des formes abrégées d'expressions bobangi signifiant « la langue des marchés », donc un nom d'origine bobangi. Les deux lectures s'appuient sur des sources différentes et ne sont pas départagées ici. Le nom Bangala reste en usage dans le nord-est du pays pour une variété locale. La Force publique a adopté le lingala comme langue de commandement après la mutinerie de 1893-1894, et le régime de Mobutu l'a imposé par l'usage, sans loi ni décret, selon Castillo. Le nom Bangala a d'abord été donné par des Européens aux habitants de la région de Mankanza, puis à leur poste et à leur parler, selon Meeuwis comme selon Mimpongo ; ils divergent sur l'ancienneté de Mangala et de Lingala comme noms de la langue.",
+  "whyProblematic": "Le nom « lingala » est débattu entre linguistes. Selon Meeuwis, les Européens arrivés sur le fleuve Congo en 1881-1882 ont appris de façon imparfaite le bobangi, langue de commerce des riverains, et l'ont fortement simplifié. Ce parler a été porté en 1884-1885 à Bangala Station, poste de l'État, et a reçu le nom de « Bangala ». En 1901-1902, les missionnaires de Scheut à Nouvelle-Anvers l'ont rebaptisé « Lingala », nom qu'aucune source antérieure à 1902 ne mentionne : dans plusieurs langues bantoues de la région, le préfixe ba- désigne des peuples et non des langues. Mimpongo (2024) conteste que le nom soit une création missionnaire : selon lui, Lingála et Mangála sont des formes abrégées d'expressions bobangi signifiant « la langue des marchés », donc un nom d'origine bobangi. Les deux explications s'appuient sur des sources différentes. Le nom Bangala reste en usage dans le nord-est du pays pour une variété locale. La Force publique a adopté le lingala comme langue de commandement après la mutinerie de 1893-1894, et le régime de Mobutu l'a imposé par l'usage, sans loi ni décret, selon Castillo. Le nom Bangala a d'abord été donné par des Européens aux habitants de la région de Mankanza, puis à leur poste et à leur parler, selon Meeuwis comme selon Mimpongo ; ils divergent sur l'ancienneté de Mangala et de Lingala comme noms de la langue.",
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
   "peoples": [
@@ -55,6 +55,28 @@
                 "tier": "official",
                 "source_kind": "government",
                 "notes": "Texte lu sur la Digithèque de la Faculté de droit de Perpignan. L'article 1 fixe le français comme langue officielle et le kikongo, le lingala, le swahili et le tshiluba comme langues nationales."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": null,
+              "label": "Depuis 2015"
+            },
+            "era": "modern",
+            "statement": "Le lingala est, avec le kituba, l'une des deux langues nationales véhiculaires de la République du Congo, selon l'article 4 de sa Constitution.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de la République du Congo, adoptée par référendum le 25 octobre 2015, article 4",
+                "author": "République du Congo",
+                "year": 2015,
+                "url": "https://www.sgg.cg/fr/journal-officiel/constitution.html",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 4",
+                "notes": "Texte lu le 3 novembre 2026 sur le site du Secrétariat général du Gouvernement (Journal officiel 2015-8 spécial)."
               }
             ]
           },
@@ -115,7 +137,7 @@
               "label": "1901-1902"
             },
             "era": "colonial",
-            "statement": "Le nom lingala aurait été choisi par les missionnaires de Scheut de Nouvelle-Anvers pour remplacer « Bangala » : dans plusieurs langues de la région, le préfixe ba- marque un nom de peuple, pas un nom de langue, selon Michael Meeuwis.",
+            "statement": "Le nom lingala aurait été choisi vers 1901-1902 par les missionnaires de Scheut de Nouvelle-Anvers, à l'initiative du père Egide De Boeck, pour remplacer « Bangala » : dans les langues parlées autour de Nouvelle-Anvers, le préfixe li- servait à nommer les langues, selon Michael Meeuwis. William Samarin écrit de même que ce nom a été donné par les missionnaires catholiques quand une grammaire a été écrite.",
             "hypothesisGroup": "origine du nom lingala",
             "sources": [
               {
@@ -126,7 +148,27 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "section 2",
-                "notes": "Chapitre de synthèse de l'Atlas of Pidgin and Creole Language Structures Online (APiCS Online), lu en texte intégral le 9 octobre 2026. Mpoke Mimpongo écrit en 2024 (p. 43, note 61) que Michael Meeuwis ne défend plus cette lecture et pense désormais que De Boeck a seulement officialisé un nom qui existait déjà (communication personnelle). Nous n'avons pas trouvé de texte publié où Meeuwis le dit."
+                "notes": "Chapitre de synthèse de l'Atlas of Pidgin and Creole Language Structures Online (APiCS Online), lu en texte intégral le 9 octobre 2026. Mpoke Mimpongo écrit en 2024 (p. 43, note 61) que Michael Meeuwis ne défend plus cette explication et pense désormais que De Boeck a seulement officialisé un nom qui existait déjà (communication personnelle). Nous n'avons pas trouvé de texte publié où Meeuwis le dit."
+              },
+              {
+                "title": "The Lingála-Kiswahili border in north-eastern Congo. Its origins in Belgian colonial state formation of the late nineteenth and early twentieth centuries",
+                "author": "Michael Meeuwis",
+                "year": 2006,
+                "url": "https://www.persee.fr/doc/aflin_2033-8732_2006_num_12_1_964",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 127",
+                "notes": "Africana Linguistica, 12, 2006, p. 113-135, revue du Musée royal de l'Afrique centrale (Tervuren). Lu le 3 novembre 2026 sur Persée, page par page."
+              },
+              {
+                "title": "The origins of Kituba and Lingala",
+                "author": "William J. Samarin",
+                "year": 1990,
+                "url": "https://scispace.com/pdf/the-origins-of-kituba-and-lingala-2fzvbjd9jr.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57-58",
+                "notes": "Journal of African Languages and Linguistics, 12 (1), 1990, p. 47-77. Lu en texte intégral le 3 novembre 2026."
               }
             ]
           },
@@ -134,7 +176,7 @@
             "period": {
               "from": null,
               "to": 1901,
-              "label": "Avant 1901, selon cette lecture"
+              "label": "Avant 1901, selon cette hypothèse"
             },
             "statement": "Le nom lingala viendrait du bobangi : ce serait la forme courte de mangála má libɔkɔ, « le langage des marchés ». Le père De Boeck n'aurait fait que retenir un nom que les Africains employaient déjà, selon Mpoke Mimpongo.",
             "hypothesisGroup": "origine du nom lingala",
@@ -157,7 +199,7 @@
               "to": null,
               "label": "Origine non datée"
             },
-            "statement": "Le nom lingala aurait été formé par des locuteurs du libinza, sur le modèle du préfixe li- de leur langue, selon Tshimpaka, cité par Mpoke Mimpongo, qui rejette cette lecture.",
+            "statement": "Le nom lingala aurait été formé par des locuteurs du libinza, sur le modèle du préfixe li- de leur langue, selon Tshimpaka, cité par Mpoke Mimpongo, qui rejette cette explication.",
             "hypothesisGroup": "origine du nom lingala",
             "sources": [
               {
@@ -178,7 +220,7 @@
               "to": null,
               "label": "Origine non datée"
             },
-            "statement": "Le nom lingala viendrait de mongálá, « bras de rivière » : les Européens auraient pris pour un nom de langue le mot par lequel les commerçants du fleuve disaient d'où ils venaient, selon Bokamba, cité par Mpoke Mimpongo, qui rejette cette lecture.",
+            "statement": "Le nom lingala viendrait de mongálá, « bras de rivière » : les Européens auraient pris pour un nom de langue le mot par lequel les commerçants du fleuve disaient d'où ils venaient, selon Bokamba, cité par Mpoke Mimpongo, qui rejette cette explication.",
             "hypothesisGroup": "origine du nom lingala",
             "sources": [
               {
@@ -189,7 +231,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 42",
-                "notes": "Article mis en ligne sur lingbuzz en mai 2024 (Montréal), lu en texte intégral. Il cite Bokamba (2009, p. 57), que nous n'avons pas lu, et oppose à cette lecture une différence de ton entre les deux mots."
+                "notes": "Article mis en ligne sur lingbuzz en mai 2024 (Montréal), lu en texte intégral. Il cite Bokamba (2009, p. 57), que nous n'avons pas lu, et oppose à cette explication une différence de ton entre les deux mots."
               }
             ]
           },
@@ -321,6 +363,16 @@
                 "source_kind": "academic",
                 "page": "section 2",
                 "notes": "Chapitre de synthèse de l'Atlas of Pidgin and Creole Language Structures Online (APiCS Online), lu en texte intégral le 9 octobre 2026."
+              },
+              {
+                "title": "The Lingála-Kiswahili border in north-eastern Congo. Its origins in Belgian colonial state formation of the late nineteenth and early twentieth centuries",
+                "author": "Michael Meeuwis",
+                "year": 2006,
+                "url": "https://www.persee.fr/doc/aflin_2033-8732_2006_num_12_1_964",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 127",
+                "notes": "Africana Linguistica, 12, 2006, p. 113-135, revue du Musée royal de l'Afrique centrale (Tervuren). Lu le 3 novembre 2026 sur Persée, page par page."
               }
             ]
           },
@@ -331,7 +383,7 @@
               "label": "1884-1885"
             },
             "era": "colonial",
-            "statement": "Le nom Bangala est d'abord celui d'un poste de l'État, Bangala Station, nommé d'après des habitants qu'on croyait appeler ainsi ; le parler du poste reçoit ce nom, selon Michael Meeuwis. Le poste devient Nouvelle-Anvers en 1890, aujourd'hui Mankanza. C'est la plus ancienne trace de ce nom de langue que le projet connaît ; le parler lui-même est plus ancien.",
+            "statement": "Le nom Bangala est d'abord celui d'un poste de l'État, Bangala Station, nommé d'après des habitants qu'on croyait appeler ainsi ; le parler du poste reçoit ce nom, selon Michael Meeuwis. Le poste devient Nouvelle-Anvers en 1890, aujourd'hui Mankanza. C'est la plus ancienne trace de ce nom de langue que le projet connaît ; le parler lui-même est plus ancien. Les Européens disaient aussi « la langue du fleuve », « la langue commerciale » ou « la langue du Haut-Congo », selon un article du même auteur paru en 2006.",
             "birth": true,
             "sources": [
               {
@@ -343,6 +395,16 @@
                 "source_kind": "academic",
                 "page": "section 2",
                 "notes": "Chapitre de synthèse de l'Atlas of Pidgin and Creole Language Structures Online (APiCS Online), lu en texte intégral le 9 octobre 2026."
+              },
+              {
+                "title": "The Lingála-Kiswahili border in north-eastern Congo. Its origins in Belgian colonial state formation of the late nineteenth and early twentieth centuries",
+                "author": "Michael Meeuwis",
+                "year": 2006,
+                "url": "https://www.persee.fr/doc/aflin_2033-8732_2006_num_12_1_964",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 122",
+                "notes": "Africana Linguistica, 12, 2006, p. 113-135, revue du Musée royal de l'Afrique centrale (Tervuren). Lu le 3 novembre 2026 sur Persée, page par page."
               }
             ]
           },
@@ -375,7 +437,7 @@
               "label": "Avant l'arrivée des Européens"
             },
             "era": "polity",
-            "statement": "Le nom Bangala serait un nom que les Européens ont cru entendre : les habitants de la région n'auraient pas porté ce nom, selon Michael Meeuwis, et aucun peuple Bangala n'aurait existé, selon Mpoke Mimpongo.",
+            "statement": "Le nom Bangala serait un nom que les Européens ont cru entendre : les habitants de la région n'auraient pas porté ce nom, selon Michael Meeuwis, et aucun peuple Bangala n'aurait existé, selon Mpoke Mimpongo. Salikoko Mufwene écrit que l'idée d'un peuple Bangala, « les gens de la rive », était un mythe que le missionnaire Gustaaf Hulstaert a réfuté.",
             "hypothesisGroup": "Bangala, nom d'un peuple ?",
             "sources": [
               {
@@ -397,6 +459,38 @@
                 "source_kind": "academic",
                 "page": "p. 1 et p. 43",
                 "notes": "Article mis en ligne sur lingbuzz en mai 2024 (Montréal), lu en texte intégral."
+              },
+              {
+                "title": "Kituba, Kileta, or Kikongo? What's in a name?",
+                "author": "Salikoko S. Mufwene",
+                "year": 2009,
+                "url": "https://mufwene.uchicago.edu/publications/KITUBA_KILETA_OR_KIKONGO.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 211",
+                "notes": "Dans Carole de Féral (dir.), Le nom des langues III, Louvain-la-Neuve, Peeters, 2009, p. 211-222. Lu en texte intégral le 3 novembre 2026 dans la version mise en ligne par l'auteur, linguiste congolais de l'université de Chicago. Il renvoie à deux articles de Gustaaf Hulstaert (1974 et 1989), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangala est écrit Bangalasch, en néerlandais, dans le titre d'un petit manuel publié en 1901, selon Michael Meeuwis.",
+            "formAsWritten": "Bangalasch",
+            "sources": [
+              {
+                "title": "The Lingála-Kiswahili border in north-eastern Congo. Its origins in Belgian colonial state formation of the late nineteenth and early twentieth centuries",
+                "author": "Michael Meeuwis",
+                "year": 2006,
+                "url": "https://www.persee.fr/doc/aflin_2033-8732_2006_num_12_1_964",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 128",
+                "notes": "Africana Linguistica, 12, 2006, p. 113-135, revue du Musée royal de l'Afrique centrale (Tervuren). Lu le 3 novembre 2026 sur Persée, page par page."
               }
             ]
           }
@@ -488,63 +582,19 @@
       "Lingala de Kinshasa",
       "Lingala du nord-ouest du Congo"
     ],
-    "vitalityStatus": null,
+    "vitalityStatus": {
+      "status": "Wider communication",
+      "scale": "EGIDS (Ethnologue)",
+      "asOf": 2025
+    },
     "originDebated": true,
-    "searchAnswer": {
-      "lead": "Une langue du bassin du Congo, l'une des quatre langues nationales de la RD Congo, parlée à Kinshasa et à Brazzaville.",
-      "followUp": "Comment le lingala s'est-il répandu, et d'où vient son nom ?"
-    },
-    "speakers": {
-      "byCountry": [
-        {
-          "country": "COD",
-          "speakers": 34000000,
-          "source": {
-            "title": "Estimations d'ensemble : Wikipedia (Lingala, 2024), APiCS Online (Lingala), SIL Ethnologue (lin)",
-            "url": null,
-            "tier": "unverified",
-            "notes": "Langue maternelle et langue commune d'échange confondues ; c'est la grande majorité des personnes qui parlent le lingala. Ce chiffre par pays vient de notre propre compilation antérieure (fiche du peuple lingala), que nous n'avons pas pu relier à une source lue. APiCS Online (environ 15 millions de personnes dont le lingala est la langue maternelle, 10 millions qui l'utilisent comme langue commune d'échange) et Meeuwis 2025 (environ 45 millions, les deux groupes réunis) ne donnent que des totaux pour l'ensemble de la langue et ne le recoupent pas. Ordre de grandeur, ni recensement ni comptage."
-          }
-        },
-        {
-          "country": "COG",
-          "speakers": 4500000,
-          "source": {
-            "title": "Estimations d'ensemble : Wikipedia (Lingala, 2024), APiCS Online (Lingala), SIL Ethnologue (lin)",
-            "url": null,
-            "tier": "unverified",
-            "notes": "Langue maternelle et langue commune d'échange confondues ; langue commune d'échange dans le centre et le nord, notamment à Brazzaville. Ce chiffre par pays vient de notre propre compilation antérieure (fiche du peuple lingala), que nous n'avons pas pu relier à une source lue. APiCS Online (environ 15 millions de personnes dont le lingala est la langue maternelle, 10 millions qui l'utilisent comme langue commune d'échange) et Meeuwis 2025 (environ 45 millions, les deux groupes réunis) ne donnent que des totaux pour l'ensemble de la langue et ne le recoupent pas. Ordre de grandeur, ni recensement ni comptage."
-          }
-        },
-        {
-          "country": "CAF",
-          "speakers": 800000,
-          "source": {
-            "title": "Estimations d'ensemble : Wikipedia (Lingala, 2024), APiCS Online (Lingala), SIL Ethnologue (lin)",
-            "url": null,
-            "tier": "unverified",
-            "notes": "Langue maternelle et langue commune d'échange confondues ; surtout comme langue de commerce dans les régions proches du Congo. Ce chiffre par pays vient de notre propre compilation antérieure (fiche du peuple lingala), que nous n'avons pas pu relier à une source lue. APiCS Online (environ 15 millions de personnes dont le lingala est la langue maternelle, 10 millions qui l'utilisent comme langue commune d'échange) et Meeuwis 2025 (environ 45 millions, les deux groupes réunis) ne donnent que des totaux pour l'ensemble de la langue et ne le recoupent pas. Ordre de grandeur, ni recensement ni comptage."
-          }
-        },
-        {
-          "country": "AGO",
-          "speakers": 300000,
-          "source": {
-            "title": "Estimations d'ensemble : Wikipedia (Lingala, 2024), APiCS Online (Lingala), SIL Ethnologue (lin)",
-            "url": null,
-            "tier": "unverified",
-            "notes": "Langue maternelle et langue commune d'échange confondues ; communautés lingalaphones dans la région de Cabinda et diaspora congolaise. Ce chiffre par pays vient de notre propre compilation antérieure (fiche du peuple lingala), que nous n'avons pas pu relier à une source lue. APiCS Online (environ 15 millions de personnes dont le lingala est la langue maternelle, 10 millions qui l'utilisent comme langue commune d'échange) et Meeuwis 2025 (environ 45 millions, les deux groupes réunis) ne donnent que des totaux pour l'ensemble de la langue et ne le recoupent pas. Ordre de grandeur, ni recensement ni comptage."
-          }
-        }
-      ]
-    },
     "sources": [
       {
         "title": "Glottolog 5.3 — Lingala (ling1263)",
         "url": "https://glottolog.org/resource/languoid/id/ling1263",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Notice directe pour le code ISO 639-3 lin et le glottocode ling1263. Glottolog nomme la notice Kinshasa Lingala, la classe dans le bantou central (zone C, groupes C30-40) et la situe en République démocratique du Congo, en République du Congo et en République centrafricaine. Elle relève les noms Lingala, Ngala (Multitree) et Losengo (Moseley et Asher, 1994). Aucune variété n'y est listée séparément."
+        "notes": "Notice directe pour le code ISO 639-3 lin et le glottocode ling1263, relue le 3 novembre 2026. Glottolog nomme la notice Kinshasa Lingala, la classe dans le bantou central (zone C, groupes C30-40) et la situe en République démocratique du Congo, en République du Congo et en République centrafricaine. Elle relève les noms Lingala, Ngala (Multitree) et Losengo (Moseley et Asher, 1994). Elle reprend d'Ethnologue (2025) le niveau 3 de l'échelle EGIDS, langue de communication élargie. Aucune variété n'y est listée séparément."
       },
       {
         "title": "Meeuwis, Michael, « Lingala », APiCS Online (Atlas of Pidgin and Creole Language Structures Online), chapitre de synthèse",
@@ -580,7 +630,45 @@
         "tier": "referenced",
         "source_kind": "academic",
         "notes": "Article revue par les pairs. Il rapporte qu'après la mutinerie des auxiliaires batetela de 1893-1894, les autorités ont adopté le lingala comme langue de commandement de la force coloniale pour réduire le risque de mutinerie, et que l'imposition du lingala sous Mobutu fut « une politique par les effets, et non par la loi ou le décret »."
+      },
+      {
+        "title": "Meeuwis, Michael, « The Lingála-Kiswahili border in north-eastern Congo », Africana Linguistica, 12, 2006, p. 113-135",
+        "url": "https://www.persee.fr/doc/aflin_2033-8732_2006_num_12_1_964",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 sur Persée : les noms donnés au parler du fleuve, le passage de Bangala à Lingala vers 1901-1902 à l'initiative du père De Boeck, et le nom Bangala resté en usage dans l'est."
+      },
+      {
+        "title": "Samarin, William J., « The origins of Kituba and Lingala », Journal of African Languages and Linguistics, 12 (1), 1990",
+        "url": "https://scispace.com/pdf/the-origins-of-kituba-and-lingala-2fzvbjd9jr.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu en texte intégral le 3 novembre 2026 : Bangala, nom de la langue au XIXe siècle, aussi appelée langue commerciale, et Lingala, nom donné par les missionnaires catholiques."
+      },
+      {
+        "title": "Mufwene, Salikoko S., « Kituba, Kileta, or Kikongo? What's in a name? », dans Le nom des langues III, Peeters, 2009, p. 211-222",
+        "url": "https://mufwene.uchicago.edu/publications/KITUBA_KILETA_OR_KIKONGO.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu en texte intégral le 3 novembre 2026 : l'idée d'un peuple Bangala, « les gens de la rive », présentée comme un mythe réfuté par Gustaaf Hulstaert."
+      },
+      {
+        "title": "Constitution de la République du Congo, adoptée par référendum le 25 octobre 2015, article 4",
+        "url": "https://www.sgg.cg/fr/journal-officiel/constitution.html",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte lu le 3 novembre 2026 sur le site du Secrétariat général du Gouvernement : « Les langues nationales véhiculaires sont le lingala et le kituba »."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers",
+        "reason": "Nous n'avons pas trouvé de chiffre par pays tiré d'une source lue. Michael Meeuwis compte environ 15 millions de personnes dont le lingala est la langue maternelle et 10 millions qui l'utilisent comme langue d'échange, puis environ 45 millions en tout dans un ouvrage de 2025. Ni l'un ni l'autre ne donne de date ou de répartition par pays."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Une langue du bassin du Congo, l'une des quatre langues nationales de la RD Congo, parlée à Kinshasa et à Brazzaville.",
+      "followUp": "Comment le lingala s'est-il répandu, et d'où vient son nom ?"
+    }
   }
 }

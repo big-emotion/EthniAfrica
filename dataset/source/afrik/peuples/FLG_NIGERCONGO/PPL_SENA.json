@@ -3,118 +3,98 @@
   "nameMain": "Sena",
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["MOZ", "MWI", "ZWE", "ZMB"],
-  "classificationStatus": "colonial-legacy",
+  "classificationStatus": "contested",
   "content": {
     "appellations": {
       "mainName": "Sena",
       "selfAppellation": "Sena",
-      "exonyms": [
-        "Chisena (désigne aussi la langue)",
-        "Cisena",
-        "Sena du Zambèze"
-      ],
-      "originOfExonyms": "Selon cette explication, Sena viendrait du poste de commerce portugais fondé en 1531 par Vicente Pegado dans un village musulman du Zambèze. Pegado aurait nommé ce lieu Sena. Le nom se serait ensuite étendu aux habitants de la région. Il aurait donc été donné de l'extérieur par les Portugais.",
-      "whyProblematic": "Le terme Sena recouvre à la fois un groupe ethnolinguistique bantou spécifique de la vallée du Zambèze et une catégorie plus large comprenant des sous-groupes régionaux (Rue/Barwe, Podzo, Sena du Malawi) qui peuvent être considérés comme des entités linguistiques distinctes. Le Sena du Malawi est parfois classé comme une langue distincte par les linguistes.",
-      "contemporaryUsage": "Sena est le nom courant utilisé en portugais, anglais et par les locuteurs eux-mêmes pour désigner ce groupe au Mozambique, au Malawi et au Zimbabwe. La langue s'appelle Cisena ou Chisena en langue locale.",
+      "exonyms": ["Mazenas", "ma-Zena"],
+      "spellingAliases": ["Senna", "Asena", "Chisena", "Cisena"],
+      "originOfExonyms": "Mazenas est le nom que le missionnaire français Thomas Arbousset donne, avant 1850, à un groupe d'Africains capturés qu'il rencontre au Cap, selon John W. Appleyard. En 1856, le linguiste Wilhelm Bleek écrit ce nom ma-Zena et le rapproche du parler de Sena. Senna est l'orthographe des notes sur le Zambèze traduites en 1858 par J. Lyons M'Leod. Chisena et Cisena désignent la langue : en sena, le préfixe ci- forme le nom de la langue ou des coutumes d'un peuple, selon W. G. Anderson (1897).",
+      "whyProblematic": "Le nom Sena est d'abord celui d'un lieu du Zambèze, dont les Portugais font en 1531 l'un de leurs principaux centres de commerce, selon H. H. K. Bhila. Deux grammairiens y rattachent le nom du peuple et de sa langue. Ce nom en a recouvert d'autres : en 1900, Julius Torrend écrit que le chisena remplace peu à peu le chipodzo et d'autres parlers du delta. Aujourd'hui, les catalogues de langues distinguent deux langues sous ce nom : le sena du Mozambique (seh) et le sena du Malawi (swk).",
+      "contemporaryUsage": "Le nom Sena est en usage au Mozambique et au Malawi. Au recensement de 2018 au Malawi, 670 908 personnes se sont déclarées sena, surtout dans les districts de Chikwawa et de Nsanje, dans la vallée du bas Shire. Au Mozambique, les chiffres que nous avons lus portent sur la langue : au recensement de 2007, 7,5 % de la population avait le cisena pour langue maternelle, selon Feliciano Chimbutane.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null,
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Bantou (Zone N, groupe Nyasa)",
       "historicalRegion": "Vallée du Zambèze (moyen Zambèze), provinces de Sofala et de la Zambezia (Mozambique actuel), zones frontalières du Malawi et du Zimbabwe",
       "currentCountries": ["MOZ", "MWI", "ZWE", "ZMB"]
     },
     "ethnicities": [
-      "Sena de la vallée centrale du Zambèze (Mozambique, provinces de Sofala et Tete)",
-      "Sena de la Zambezia (Mozambique, province de Zambezia)",
-      "Sena du Malawi (vallée du bas Shire, parfois classés comme langue distincte)",
-      "Sena du Zimbabwe (immigrés du 20e siècle, surtout en zones minières et agricoles)",
-      "Barwe (Chibarwe) — sous-groupe parlant un dialecte à reconnaissance officielle au Zimbabwe",
-      "Podzo — sous-groupe au dialecte divergent (centre-Mozambique)",
-      "Rue (Cibalke) — sous-groupe dialectal du Mozambique central",
-      "Sena de Manica (province orientale du Mozambique)",
-      "Sena de la province Orientale de Zambie (districts de Petauke et de Nyimba, vallée du Luangwa)"
+      "Sena de la basse vallée du Zambèze, au Mozambique, dans les prazos qui bordent le fleuve de la mer à la gorge de Lupata (Torrend, 1900)",
+      "Sena du Malawi, surtout dans les districts de Chikwawa et de Nsanje, dans la vallée du bas Shire (recensement de 2018)",
+      "Podzo de l'embouchure du Zambèze, nommés à part par W. G. Anderson (1897) ; le tableau des langues du Mozambique publié par Gregório Firmino place le podzo à côté du cisena, dans la province de Sofala",
+      "Sena du Zimbabwe, que la base de données missionnaire Joshua Project compte à part, sans dire d'où vient son chiffre"
     ],
     "origins": {
-      "ancientOrigins": "Les Sena sont un groupe ethnolinguistique bantou issu des grandes migrations bantoues qui ont peuplé l'Afrique australe et orientale entre le 1er et le 10e siècle de l'ère commune. Les Sena représentent un mélange de populations ayant absorbé des caractéristiques des cultures Shona (principale ethnie du Zimbabwe) et Nyanja-Chewa (principale ethnie du Malawi), selon Isaacman. Ils constituent historiquement un groupe intermédiaire entre ces deux grandes cultures. La vallée du Zambèze était connue pour ses richesses aurifères : dès 1514, Antonio Fernandez confirmait la présence de gisements dans la région.",
-      "formationPeriod": "L'identité sena distincte s'est consolidée dans la vallée du moyen Zambèze à partir du 16e siècle, au contact des commerçants portugais et des grands réseaux d'échange de l'océan Indien. En 1531, le comptoir de Sena fut fondé, devenant un centre majeur de commerce, de missions et de garnison coloniale, cristallisant l'identité locale autour du nom de ce lieu.",
+      "ancientOrigins": "Les Sena sont nés, selon l'historien Allen F. Isaacman, des mariages entre des migrants apparentés aux Shona et aux Lunda et les habitants de la vallée du Zambèze. Il les range parmi les « groupements tout à fait nouveaux » apparus ainsi, avec les Tonga du Zambèze et les Goba. Les sources que nous avons lues ne datent pas ces migrations.",
+      "formationPeriod": "Les sources que nous avons lues ne datent pas la naissance du groupe sena. Elles montrent le lieu de Sena au centre du commerce portugais à partir de 1531, selon H. H. K. Bhila. Les prazos, des domaines où des colons portugais ou goanais se posaient en chefs sur des terres africaines, apparaissent autour de Sena à la fin du XVIe siècle, selon K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila.",
       "migrationRoutes": [
-        "Migration bantoue depuis le nord-ouest (probable bassin du Congo) vers l'Afrique australe, entre le 1er et le 10e siècle",
-        "Installation dans la vallée du moyen Zambèze, entre les actuelles provinces de Tete et Sofala",
-        "Migrations de travail vers le Malawi et le Zimbabwe au début du 20e siècle (économie coloniale de plantation et mines)",
-        "Déplacements forcés sous le système des prazos et lors de la guerre civile mozambicaine (1977-1992)",
-        "Migration depuis la vallée du Zambèze (Mozambique) vers la Province Orientale de Zambie au XXe siècle",
-        "Mouvement de travailleurs migrants vers les fermes et mines de Rhodésie du Sud (Zimbabwe actuel) et de Zambie"
+        "Arrivée dans la vallée du Zambèze de migrants apparentés aux Shona et aux Lunda, dont les mariages avec les habitants donnent naissance aux Sena, selon Allen F. Isaacman",
+        "Départ forcé de captifs vers la côte : au Cap, avant 1850, le missionnaire Thomas Arbousset rencontre des Africains capturés qu'il appelle Mazenas, selon John W. Appleyard"
       ],
       "historicalSettlementZones": [
-        "Provinces de Sofala et Tete (Mozambique central) — zone de peuplement originel",
-        "Province de la Zambezia (Mozambique)",
-        "Province de Manica (Mozambique)",
-        "Vallée du bas Shire et rives du lac Malawi (Malawi méridional)",
-        "Zones agricoles et minières du Zimbabwe (20e siècle)",
-        "Village de Sena et environs, district de Caia (province de Sofala) — berceau historique",
-        "Villes de Beira et Quelimane (migrations internes modernes)",
-        "Province Orientale de Zambie (districts de Petauke, Nyimba, Lundazi)",
-        "Vallée du Luangwa (Zambie)"
+        "Basse vallée du Zambèze, des prazos de l'embouchure jusqu'à la gorge de Lupata (Torrend, 1900)",
+        "Rives du Zambèze de Shupanga à la gorge de Lupata, et vallée du Shire jusqu'à la rivière Ruo, où la langue est comprise (Anderson, 1897)",
+        "Provinces de Sofala et de Manica, au Mozambique, pour le cisena (tableau de Gregório Firmino)",
+        "Districts de Chikwawa et de Nsanje et ville de Blantyre, au Malawi (recensement de 2018)"
       ],
-      "unificationsOrDivisions": "Les Sena n'ont jamais constitué un État centralisé. Ils étaient organisés en chefferies indépendantes. Les divisions entre sous-groupes (Barwe, Podzo, Sena central) reflètent des histoires locales distinctes. La colonisation portugaise a fragmenté les autorités traditionnelles à travers le système des prazos (concessions foncières). L'indépendance du Mozambique (1975) et la guerre civile FRELIMO-RENAMO (1977-1992) ont profondément perturbé les communautés sena.",
-      "externalInfluences": "Contact avec les commerçants arabes swahilis de la côte avant le 16e siècle. Arrivée des Portugais (1530s) : fondation du comptoir de Sena, missions jésuites, système des prazos. Raids esclavagistes aux 17e-19e siècles (dont les armées achikunda). Influence des Nguni (Ngoni et Ndebele) lors de leurs invasions du 19e siècle. Colonisation portugaise sous Salazar : culture forcée du coton (années 1940). Construction du Trans-Zambezi Railway (TZR) entre Beira et le Nyassaland/Malawi, traversant les terres sena.",
-      "majorHistoricalEvents": "1531 : fondation du comptoir de Sena par Vicente Pegado. 1569-1575 : expédition Francisco Barreto, contrôle portugais des mines et du commerce du Zambèze. 17e-18e siècle : développement du système des prazos et essor de la traite esclavagiste. 1792 : décret du gouverneur ordonnant l'arrêt des exportations d'esclaves depuis les Rivières de Sena. 1897 : violente résistance sena contre l'impôt sur les cases et la conscription portugaise. 1975 : indépendance du Mozambique. 1977-1992 : guerre civile FRELIMO-RENAMO, dévastatrice pour les communautés de la vallée du Zambèze."
+      "unificationsOrDivisions": "À la veille de la conquête coloniale, les Sena vivaient dans de petites unités politiques, et non dans un État centralisé, selon Allen Isaacman et Jan Vansina. Plus tôt, les chefs tonga et sena du bas Zambèze avaient résisté aux efforts des souverains du Mutapa pour leur imposer leur pouvoir, selon H. H. K. Bhila.",
+      "externalInfluences": "Le commerce arabe et swahili remonte, le long du Zambèze, à avant 1500. À partir du milieu du XVIe siècle, des marchands portugais remontent le Shire depuis Sena pour échanger avec les Manganja. Les maîtres des prazos recrutent leurs serviteurs armés, les Chikunda, chez plusieurs peuples, dont les Sena, selon K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila. Au XIXe siècle, les Sena sont soumis aux Barue, selon Allen Isaacman et Jan Vansina.",
+      "majorHistoricalEvents": "1531 : les Portugais font de Sena et de Tete leurs principaux centres de commerce (Bhila). Fin du XVIe siècle : les premiers prazos apparaissent autour de Sena (Phiri, Kalinga et Bhila). 1898 : des paysans sena et tonga se rallient à Cambuemba, un chef de guerre métis, dans une révolte de la vallée du Zambèze. 1901 : les Sena combattent les Barue aux côtés des Portugais. 1917 : ils s'allient aux Barue dans un soulèvement contre le système colonial (Isaacman et Vansina)."
     },
     "organization": {
-      "traditionalPoliticalSystem": "La société sena est organisée en chefferies (mambo ou régulo) dont l'autorité est héréditaire et de nature matrilinéaire dans sa transmission. Le chef (mambo) exerce l'autorité politique et judiciaire sur un territoire délimité, assisté de conseillers (nduna). Les décisions importantes sont prises en conseil des anciens. Sous la colonisation portugaise, les chefs traditionnels furent soumis au régulo (titre colonial) et intégrés à l'administration indirecte.",
-      "clanOrganization": "La société sena est matrilinéaire : l'appartenance clanique, l'héritage et la succession passent par la mère. Les clans (mbumba) sont les unités de base de l'organisation sociale. Le neveu utérin (mwini mbumba) hérite traditionnellement de l'autorité du chef de famille maternel plutôt que de ses propres fils.",
-      "ageClassSystems": "Des groupes de travail collectifs organisés par tranche d'âge existent pour les travaux agricoles et les cérémonies communautaires. Les rites d'initiation (chinamwali pour les filles, jando pour les garçons) marquent l'entrée dans la vie adulte et constituent des moments de formation collective.",
-      "roleOfLineages": "Les lignages matrilinéaires (mbumba) structurent l'héritage foncier, les droits sur la pêche dans la rivière et les alliances matrimoniales. La résidence virilocale est pratiquée mais la descendance reste matrilinéaire. Le lobolo (dot ou bride-price) est versé par le marié à la famille de la mariée.",
-      "religiousAuthority": "Les ancêtres (mizimu) jouent un rôle central dans la religion traditionnelle sena : ils sont consultés par les devins-guérisseurs (singanga) pour les décisions importantes et lors des maladies. Les rites propitiatoires aux ancêtres précèdent les semailles et les pêches importantes. Le catholicisme s'est largement implanté sous l'influence portugaise. Les Sena du Mozambique utilisent une version africaine de la Bible en Chichewa (Buku Lopatulika). Des formes syncrétiques mêlent christianisme et pratiques traditionnelles."
+      "traditionalPoliticalSystem": "En sena, le chef se dit mfumu, au pluriel mafumu, et la chefferie ufumu, selon la grammaire de W. G. Anderson (1897). À la veille de la conquête coloniale, les Sena vivaient dans de petites unités politiques plutôt que dans un État centralisé, selon Allen Isaacman et Jan Vansina. Les sources que nous avons lues ne décrivent pas plus précisément le pouvoir de ces chefs.",
+      "clanOrganization": "Les sources consultées (Histoire générale de l'Afrique de l'UNESCO, grammaires de W. G. Anderson et de Julius Torrend, recensement du Malawi de 2018) ne décrivent pas l'organisation en clans des Sena ni la façon dont on y hérite de son appartenance.",
+      "ageClassSystems": "Les sources consultées (Histoire générale de l'Afrique de l'UNESCO, grammaires de W. G. Anderson et de Julius Torrend, recensement du Malawi de 2018) ne décrivent pas de classes d'âge ni de rites d'initiation chez les Sena.",
+      "roleOfLineages": "Les sources consultées (Histoire générale de l'Afrique de l'UNESCO, grammaires de W. G. Anderson et de Julius Torrend, recensement du Malawi de 2018) ne décrivent pas le rôle des lignages chez les Sena, ni pour la terre ni pour le mariage.",
+      "religiousAuthority": "Les sources consultées (Histoire générale de l'Afrique de l'UNESCO, grammaires de W. G. Anderson et de Julius Torrend, recensement du Malawi de 2018) ne décrivent pas d'autorité religieuse propre aux Sena."
     },
     "languages": {
-      "mainLanguage": "Cisena (Chisena / Sena)",
-      "isoCodes": ["seh"],
+      "mainLanguage": "Sena ou chisena (seh) ; sena du Malawi (swk)",
+      "isoCodes": ["seh", "swk"],
       "dialects": [
-        "Sena central (Sofala et Tete, Mozambique) — dialecte de référence",
-        "Rue / Barwe / Cibalke (sous-dialecte divergent, Mozambique) — le Chibarwe a une reconnaissance officielle au Zimbabwe",
-        "Podzo (sous-dialecte divergent, Mozambique central)",
-        "Sena du Malawi (parfois classé comme langue distincte par les linguistes)",
-        "Cisena de la Zambezia (légèrement différent, avec influences Lomwe et Chuabo)",
-        "Cisena de Tete (avec influences Nyungwe et Sena de Zambie)",
-        "Sena de Zambie orientale (variété locale influencée par le Chewa et le Nsenga)"
+        "Chipodzo, ou chikuama, parler de l'embouchure du Zambèze que le chisena remplaçait peu à peu en 1900, selon Julius Torrend",
+        "Sena du Malawi (swk), que les catalogues de langues comptent comme une langue à part, voisine du sena du Mozambique"
       ],
-      "vehicularRole": "Le cisena (ISO 639-3 : seh) est parlé par environ 900 000 locuteurs natifs au Mozambique (données 1997, estimation 2025 : 1,5 à 2 millions) et au moins 1,5 million en incluant les locuteurs secondaires. Il est parlé dans quatre provinces du centre du Mozambique : Tete, Sofala, Zambezia et Manica. Le Sena n'a pas de statut officiel mais est une des langues d'éducation de base au Mozambique. Le chibarwe (variante barwe) a une reconnaissance officielle au Zimbabwe. Le portugais est la langue officielle du Mozambique et est largement utilisé dans l'éducation et l'administration."
+      "vehicularRole": "Le chisena est parlé dans tous les prazos qui bordent le Zambèze, de la mer à la gorge de Lupata, et remplace peu à peu d'autres parlers, selon Julius Torrend (1900). À Quelimane même, peu d'habitants ne le parlent pas couramment : Torrend le présente comme la langue qui passe partout en Zambézie. En 1897, W. G. Anderson le dit parlé et compris de l'embouchure du Zambèze jusqu'à Tete, et en remontant le Shire jusqu'au Ruo. Au recensement mozambicain de 1997, 7 % des personnes de plus de quatre ans avaient le cisena pour langue maternelle, selon Gregório Firmino ; au recensement de 2007, 7,5 % de la population, selon Feliciano Chimbutane."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q3478487",
+      "glottocode": "nucl1396",
+      "iso639_3": "seh"
     },
     "culture": {
-      "majorRites": "Chinamwali (initiation des filles) : retraite cérémonielle marquant la puberté, transmission des savoirs féminins sur le mariage et la maternité, danses et chants rituels. Jando (initiation des garçons) : retraite en brousse, circoncision et transmission des codes de la virilité. Mariage (lobolo) : le versement du lobolo (dot) à la famille de la mariée est un rite central, suivi de cérémonies festives de plusieurs jours. Nyau : société secrète de danse masquée (partagée avec les Chewa voisins) comprenant des danses rituelles lors des funérailles et cérémonies saisonnières. Funérailles : veillée collective, inhumation, suivi de cérémonies de deuil aux 3e jour, 40e jour et anniversaire annuel.",
-      "symbols": "Le Zambèze est l'élément identitaire central : la rivière structure l'agriculture, la pêche, les échanges et la cosmologie sena. Le pirogue de pêche symbolise la subsistance et la mobilité le long du fleuve. Le nsalu ou chitenje (tissu wax imprimé) est le vêtement identitaire féminin. La houe (représentant l'agriculture matrilinéaire) et le filet (pêche) sont les outils symboliques du travail sena. Le masque nyau (société secrète Nyau) est le symbole rituel le plus fort, souvent sculpté en bois.",
-      "artsAndMusic": "Danse Nyau : danse masquée cérémonielle de la société secrète Nyau (partagée avec Chewa, Nyanja), classée au patrimoine culturel immatériel de l'UNESCO pour le Malawi. Les danses sena incluent des performances lors des mariages, initiations et funérailles. Musique : tambours (ng'oma), flûtes de roseau, chants polyphoniques collectifs lors des travaux agricoles et cérémonies. Artisanat : poterie, vannerie, travail du bois (pirogues, ustensiles), tissage. Oralité : contes (nthano), proverbes, généalogies chantées transmettant l'histoire clanique.",
-      "spiritualities": "Mulungu est le créateur suprême dans la cosmologie sena, conception partagée avec les peuples bantoues voisins (Chewa, Nyanja, Tonga). Les ancêtres (mizimu) sont des médiateurs actifs entre le monde des vivants et le divin, consultés par les singanga (guérisseurs-devins). Le culte de possession par les esprits (vimbuza ou équivalents) est pratiqué pour les diagnostics de maladies. Le catholicisme domine (héritage de la mission portugaise depuis le 16e siècle) ; des Églises protestantes et évangéliques sont également présentes. Le syncrétisme est courant : rites ancestraux coexistent avec la pratique chrétienne."
+      "majorRites": "Les sources consultées (Histoire générale de l'Afrique de l'UNESCO, grammaires de W. G. Anderson et de Julius Torrend, recensement du Malawi de 2018) ne décrivent pas les grands rites des Sena, ni pour le mariage ni pour les funérailles.",
+      "symbols": "Les sources consultées (Histoire générale de l'Afrique de l'UNESCO, grammaires de W. G. Anderson et de Julius Torrend, recensement du Malawi de 2018) ne décrivent pas d'objet ou d'emblème que les Sena tiennent pour un symbole de leur groupe.",
+      "artsAndMusic": "Une partie des Sena étaient tisserands : leurs tissus partaient vers la région de Zumbo et le pays chewa, à plusieurs centaines de kilomètres, où ils étaient très recherchés, selon Allen F. Isaacman. Les sources que nous avons lues ne décrivent pas la musique ni les danses des Sena.",
+      "spiritualities": "Dans la grammaire de W. G. Anderson (1897), Mulungu veut dire à la fois « Dieu » et « la pluie » : mulungu wa-ca signifie « la pluie a cessé ». Les sources que nous avons lues ne décrivent pas les cultes ni les croyances des Sena."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Les Sena n'ont pas développé un grand royaume centralisé. Leur organisation en chefferies indépendantes (mambo) leur a permis de résister de façon décentralisée à la domination portugaise. Les chefferies sena étaient intégrées au réseau commercial de la vallée du Zambèze dès le 16e siècle, échangeant or, ivoire et esclaves contre des textiles et perles indiennes via les feiras (marchés fluviaux) portugais. Les achikunda (armées d'esclaves des prazeros) constituaient une force militaire locale qui a soumis les chefferies sena aux 18e-19e siècles.",
-      "relationsWithNeighbors": "Les Sena ont entretenu des relations commerciales avec les Swahili et Arabes de la côte avant l'arrivée des Portugais. Avec les Tonga et Tawara du Zambèze, ils partagent des zones de pêche et des pratiques culturelles. Les relations avec les Shona (Zimbabwe) ont été complexes : influences mutuelles importantes (Isaacman note que les Sena présentent la plupart des caractéristiques Shona). Les Ngoni (Nguni) ont effectué des raids dévastateurs en territoire sena au 19e siècle. Les Nyanja-Chewa du Malawi partagent la société Nyau.",
-      "conflictsOrAlliances": "Rébellions répétées contre la domination portugaise depuis le 16e siècle. En 1897, résistance collective des Sena, Tonga et Cambuenda contre l'impôt sur les cases et la conscription forcée. Participation à la lutte pour l'indépendance du Mozambique (FRELIMO, 1964-1975). La guerre civile FRELIMO-RENAMO (1977-1992) a été particulièrement destructrice dans la vallée du Zambèze, région de peuplement sena. Les communautés sena ont souffert des déplacements de population massifs.",
-      "diaspora": "Les Sena du Malawi et du Zimbabwe sont le résultat de migrations de travail du début du 20e siècle vers les plantations de thé et les mines. Une diaspora mozambicaine (toutes ethnies) est présente au Portugal, en Afrique du Sud et en Tanzanie. Les déplacements internes lors de la guerre civile ont créé des communautés sena dans les grandes villes mozambicaines comme Beira et Maputo."
+      "kingdomsOrChiefdoms": "Les Sena n'ont pas formé d'État centralisé : à la veille de la conquête coloniale, ils vivaient dans de petites unités politiques, selon Allen Isaacman et Jan Vansina. Leurs chefs ont résisté aux souverains du Mutapa, selon H. H. K. Bhila, puis, au XIXe siècle, ils étaient soumis aux Barue.",
+      "relationsWithNeighbors": "Les tisserands sena vendaient leurs tissus jusqu'à Zumbo et au pays chewa, selon Allen F. Isaacman. Les maîtres portugais des prazos recrutaient chez les Sena, comme chez les Manganja, les Tonga ou les Nsenga, leurs serviteurs armés chikunda, selon Phiri, Kalinga et Bhila. Les Sena et les Tonga se sont alliés dans la révolte de 1898.",
+      "conflictsOrAlliances": "En 1898, des paysans sena et tonga se rallient à Cambuemba, un chef de guerre métis, dans une révolte qui gagne la vallée du bas Zambèze. En 1901, les Sena combattent les Barue, dont ils dépendaient, aux côtés des Portugais. En 1917, ils s'allient aux Barue dans un soulèvement de toute la vallée contre le système colonial. Ces faits sont rapportés par Allen Isaacman et Jan Vansina.",
+      "diaspora": "Avant 1850, au Cap, le missionnaire Thomas Arbousset rencontre des Africains capturés qu'il appelle Mazenas, et que Wilhelm Bleek rapproche des Sena ; le missionnaire H. Hahn y rencontre aussi des a-Sena. Au Malawi, le recensement de 2018 compte 45 680 Sena dans la ville de Blantyre. Les sources que nous avons lues ne décrivent pas les communautés sena établies hors du Mozambique et du Malawi aujourd'hui."
     },
     "demography": {
-      "totalPopulation": 2500000,
-      "referenceYear": 2025,
-      "source": "Estimations basées sur : Wikipedia — Sena people (environ 2 millions au total) ; SIL Ethnologue (seh) ; Joshua Project — Sena in Mozambique (14 848) ; données UNFPA Mozambique. Breakdown : Mozambique ~1,8 million (provinces Sofala, Tete, Zambezia, Manica) ; Malawi ~500 000 (vallée du Shire) ; Zimbabwe ~100 000 (zones agricoles et minières). Une autre estimation compte 230 000 Sena en Zambie en 2025 (Central Statistical Office Zambia, CIA World Factbook).",
+      "totalPopulation": 3729908,
+      "referenceYear": 2018,
+      "source": "Malawi : recensement de 2018 (bureau national de la statistique du Malawi), 670 908 personnes déclarées sena. Mozambique : nous n'avons pas pu lire le rapport du recensement de 2017 ; le chiffre retenu, 2 886 000, vient de la base de données missionnaire Joshua Project, qui ne le date pas et ne dit pas d'où il vient. Les chiffres de recensement que nous avons lus portent sur la langue : 7 % de cisena comme langue maternelle en 1997 selon Gregório Firmino, 7,5 % en 2007 selon Feliciano Chimbutane. Zimbabwe : 173 000, selon le Joshua Project, sans date. Le total additionne ces trois chiffres ; seul celui du Malawi est daté de 2018. Nous n'avons trouvé aucune source chiffrée pour des Sena en Zambie.",
       "distributionByCountry": [
         {
           "country": "MOZ",
-          "population": 1800000,
-          "note": "Zone principale : provinces de Sofala, Tete, Zambezia et Manica ; vallée du Zambèze"
+          "population": 2886000,
+          "note": "Basse vallée du Zambèze ; provinces de Sofala et de Manica selon le tableau de Gregório Firmino. Chiffre du Joshua Project, non daté."
         },
         {
           "country": "MWI",
-          "population": 500000,
-          "note": "Vallée du bas Shire et rives du lac Malawi ; arrivés principalement comme travailleurs migrants au début du 20e siècle"
+          "population": 670908,
+          "note": "Recensement de 2018 : 3,8 % des habitants ; surtout les districts de Chikwawa (274 356) et de Nsanje (250 855), et la ville de Blantyre (45 680)."
         },
         {
           "country": "ZWE",
-          "population": 100000,
-          "note": "Zones agricoles et minières ; migrants du 20e siècle ; le Chibarwe (Barwe) a une reconnaissance officielle au Zimbabwe"
-        },
-        {
-          "country": "ZMB",
-          "population": 230000,
-          "note": "Province Orientale (districts de Petauke, Nyimba et Lundazi) et vallée du Luangwa"
+          "population": 173000,
+          "note": "Chiffre du Joshua Project, non daté ; les sources que nous avons lues ne disent pas où vivent ces Sena au Zimbabwe."
         }
       ]
     },
@@ -188,11 +168,127 @@
         "url": "http://www.101lasttribes.com/tribes/sena.html",
         "tier": "unverified",
         "source_kind": "community"
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 22 : La région au sud du Zambèze",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue le 3 novembre 2026 dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique). Page 699 : les chefs tonga et sena du bas Zambèze résistent aux souverains du Mutapa ; page 734 : en 1531, Sena et Tete deviennent les principaux centres du commerce portugais. Le chapitre 21 du même volume, « La Zambézie du Nord : la région du lac Malawi », pages 688-689, ajoute que les marchands portugais remontent le Shire depuis Sena, que les premiers prazos naissent autour de Sena à la fin du XVIe siècle, et que les maîtres des prazos recrutent des Chikunda chez les Sena et d'autres peuples."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VI, ch. 8 : Les pays du bassin du Zambèze",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue le 3 novembre 2026 dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique). Pages 215-216 : les Sena, en majorité agriculteurs, comptent des tisserands qui vendent leurs tissus jusqu'à Zumbo ; ils sont nés de mariages entre migrants apparentés aux Shona et aux Lunda et habitants de la vallée."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VII, ch. 8 : Initiatives et résistances africaines en Afrique centrale de 1880 à 1914",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue le 3 novembre 2026 dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique). Pages 191, 201, 208, 212 et 214 : les Sena en petites unités politiques, soumis aux Barue, ralliés à Cambuemba en 1898, aux côtés des Portugais en 1901, alliés aux Barue en 1917."
+      },
+      {
+        "title": "The languages of Mosambique : vocabularies of the dialects of Lourenzo Marques, Inhambane, Sofala, Tette, Sena, Quellimane, Mosambique, Cape Delgado, Anjoane, the Maravi, Mudsau, &c.",
+        "url": "https://archive.org/details/languagesmosamb00bleegoog",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Londres, Harrison and Sons, 1856, d'après les manuscrits du naturaliste Wilhelm Peters, au Mozambique de 1842 à 1848. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive : colonne du parler de Sena, et formes ma-Zena et a-Sena à la p. xii."
+      },
+      {
+        "title": "The Kafir language : comprising a sketch of its history, which includes a general classification of South African dialects, ethnographical and geographical, remarks upon its nature, and a grammar",
+        "url": "https://archive.org/details/kafirlanguagecom00appl",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Ouvrage du missionnaire wesleyen John W. Appleyard, 1850. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Pages 61-62 : le missionnaire Thomas Arbousset rencontre au Cap des Africains capturés, dont ceux qu'il appelle Mazenas."
+      },
+      {
+        "title": "An introductory grammar of the Sena language spoken on the lower Zambesi",
+        "url": "https://archive.org/details/an-introductory-grammar-of-the-sena-language",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Londres, Society for Promoting Christian Knowledge, 1897. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Préface : aire de la langue ; p. 38 : nsena, asena, cisena ; vocabulaire : mfumu, Mulungu."
+      },
+      {
+        "title": "Grammatica do Chisena : a grammar of the language of the lower Zambezi",
+        "url": "https://archive.org/details/grammaticadochis00torruoft",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Mission de Chupanga, 1900 ; grammaire du jésuite Julius Torrend. Lue le 3 novembre 2026 dans la numérisation d'Internet Archive. Introduction : aire du chisena et parlers qu'il remplace."
+      },
+      {
+        "title": "Notes on the Zambesi, from Quillimane to Tete",
+        "url": "https://archive.org/details/jstor-1799111",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Proceedings of the Royal Geographical Society of London, vol. 2, 1858 ; notes traduites du portugais par le consul britannique J. Lyons M'Leod. Lues le 3 novembre 2026 dans la numérisation d'Internet Archive : forme Senna, p. 364."
+      },
+      {
+        "title": "Bureau national de la statistique du Malawi, 2018 Malawi Population and Housing Census, Main Report, mai 2019, tableau 3.5 « Population distribution by tribe », p. 20",
+        "url": "https://malawi.unfpa.org/sites/default/files/resource-pdf/2018%20Malawi%20Population%20and%20Housing%20Census%20Main%20Report%20%281%29.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Rapport du bureau national de la statistique du Malawi, dans une copie hébergée par le bureau de l'UNFPA au Malawi, lu le 3 novembre 2026. Tableau 3.5, p. 20 : 670 908 Sena sur 17 506 022 habitants, dont 630 788 dans la région Sud. Tableau E4, p. 133 : 274 356 Sena dans le district de Chikwawa, 250 855 dans celui de Nsanje et 45 680 à Blantyre."
+      },
+      {
+        "title": "Glottolog 5.3 — Sena (nucl1396)",
+        "url": "https://glottolog.org/resource/languoid/id/nucl1396",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice de la langue sena (seh), lue le 3 novembre 2026 : noms Chisena, Cisena et Sena ; langue parlée au Malawi et au Mozambique."
+      },
+      {
+        "title": "Glottolog 5.3 — Malawi Sena (mala1475)",
+        "url": "https://glottolog.org/resource/languoid/id/mala1475",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice du sena du Malawi (swk), lue le 3 novembre 2026 : langue distincte, rangée avec le sena dans le groupe senaic."
+      },
+      {
+        "title": "SIL International, ISO 639-3 — Sena [seh] et Malawi Sena [swk]",
+        "url": "https://iso639-3.sil.org/code/seh",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Registre des codes de langues tenu par SIL International, consulté le 3 novembre 2026 : seh pour le sena, swk pour le sena du Malawi."
+      },
+      {
+        "title": "A situação do português no contexto multilingue de Moçambique",
+        "url": "https://dlcv.fflch.usp.br/sites/dlcv.fflch.usp.br/files/06_19.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de Gregório Firmino, université Eduardo Mondlane (Maputo), mis en ligne par le département de lettres classiques et vernaculaires de l'université de São Paulo. Lu le 3 novembre 2026 : au recensement de 1997, 7 % des personnes de plus de quatre ans ont le cisena pour langue maternelle ; son tableau place le cisena dans les provinces de Sofala et de Manica, et le podzo dans celle de Sofala."
+      },
+      {
+        "title": "A língua portuguesa como barreira ao acesso à educação formal em Moçambique e as promessas de um ensino baseado na língua materna da criança",
+        "url": "https://periodicos.ufes.br/flibav/article/view/10385/7330",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Communication de Feliciano Chimbutane, université Eduardo Mondlane, à la Ire Feira Literária Brasil-África, université fédérale de l'Espírito Santo, 13-14 novembre 2013. Lue le 3 novembre 2026 : tableau 1, 7,5 % de la population a le cisena pour langue maternelle au recensement de 2007."
+      },
+      {
+        "title": "Wikidata — Sena people (Q3478487)",
+        "url": "https://www.wikidata.org/wiki/Q3478487",
+        "tier": "unverified",
+        "source_kind": "community",
+        "notes": "Élément de la base de données collaborative Wikidata, consulté le 3 novembre 2026 : groupe ethnique du Mozambique, du Malawi et du Zimbabwe."
+      },
+      {
+        "title": "Joshua Project — Sena language (seh)",
+        "url": "https://joshuaproject.net/languages/seh",
+        "tier": "unverified",
+        "source_kind": "missionary_database",
+        "notes": "Base de données missionnaire, consultée le 3 novembre 2026 : Sena du Mozambique, 2 886 000 ; Sena du Zimbabwe, 173 000. La page ne date pas ces chiffres."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Les Sena vivent dans la basse vallée du Zambèze, au Mozambique, et dans la vallée du bas Shire, au Malawi. Leur nom est aussi celui d'un lieu du Zambèze.",
+      "followUp": "Pourquoi un peuple et un lieu du Zambèze portent-ils le même nom de Sena ?"
+    }
   },
   "nameHistory": {
-    "summary": "Le nom Sena désigne un peuple de la basse vallée du Zambèze, au Mozambique et dans les régions voisines du Malawi et du Zimbabwe, qui se nomme lui-même Sena. C'est aussi le nom d'un lieu du Zambèze, connu dès 1531. Les sources que nous avons lues expliquent peu l'origine du nom ; nous présentons plus bas ce qu'elles en disent.",
+    "summary": "Le nom Sena désigne un peuple de la basse vallée du Zambèze, au Mozambique, et de la vallée du bas Shire, au Malawi, qui se nomme lui-même ainsi. Dans sa langue, le chisena, on dit asena pour parler des Sena. Sena est aussi le nom d'un lieu du Zambèze, connu dès 1531, auquel deux grammairiens rattachent le nom du peuple. Au XIXe siècle, des missionnaires ont aussi écrit Mazenas. L'histoire de chacun de ces noms est présentée plus bas.",
     "names": [
       {
         "nameText": "Sena",
@@ -200,9 +296,9 @@
         "selfGiven": true,
         "languageOfOrigin": "seh",
         "namedBy": null,
-        "shortLine": "Le nom de ce peuple et d'un lieu du Zambèze ; écrit Senna pour la langue dès 1858.",
+        "shortLine": "Le nom de ce peuple, de sa langue et d'un lieu du Zambèze ; écrit pour la langue dès 1856.",
         "usedIn": ["seh"],
-        "periodLabel": "Écrit dès 1858 pour la langue ; en usage aujourd'hui",
+        "periodLabel": "Écrit pour la langue dès 1856 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
@@ -210,7 +306,7 @@
               "to": null,
               "label": "Sens donné par les historiens"
             },
-            "statement": "Le nom Sena désigne un peuple de la basse vallée du Zambèze, en majorité agriculteur, dont un petit groupe de tisserands vendait ses tissus jusqu'à Zumbo et au pays chewa, selon Allen F. Isaacman. Il range les Sena parmi les groupements nouveaux nés des mariages entre migrants et habitants de la vallée. L'origine du nom est discutée : l'explication que nous avons lue est présentée plus bas.",
+            "statement": "Le nom Sena désigne un peuple de la basse vallée du Zambèze, en majorité agriculteur, dont un petit groupe de tisserands vendait ses tissus jusqu'à Zumbo et au pays chewa, selon Allen F. Isaacman. Il range les Sena parmi les groupements nouveaux nés des mariages entre migrants et habitants de la vallée. Deux grammairiens rattachent le nom au lieu appelé Sena ; leurs explications sont présentées plus bas.",
             "aspect": "meaning",
             "sources": [
               {
@@ -222,6 +318,37 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 215-216",
                 "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Recensement de 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Sena est celui que 670 908 personnes ont donné comme leur groupe au recensement de 2018 au Malawi, surtout dans les districts de Chikwawa et de Nsanje, dans la vallée du bas Shire. Le catalogue Glottolog range sous ce nom deux langues voisines : le sena du Mozambique et le sena du Malawi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bureau national de la statistique du Malawi, 2018 Malawi Population and Housing Census, Main Report, mai 2019, tableau 3.5 « Population distribution by tribe », p. 20",
+                "author": "National Statistical Office (Malawi)",
+                "year": 2019,
+                "url": "https://malawi.unfpa.org/sites/default/files/resource-pdf/2018%20Malawi%20Population%20and%20Housing%20Census%20Main%20Report%20%281%29.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 20 et p. 133",
+                "notes": "Rapport du bureau national de la statistique du Malawi, dans une copie hébergée par le bureau de l'UNFPA au Malawi, lu le 3 novembre 2026. Tableau 3.5, p. 20 : 670 908 Sena sur 17 506 022 habitants, dont 630 788 dans la région Sud. Tableau E4, p. 133 : 274 356 Sena dans le district de Chikwawa, 250 855 dans celui de Nsanje et 45 680 à Blantyre."
+              },
+              {
+                "title": "Glottolog 5.3 — Sena (nucl1396)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/nucl1396",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue sena (code ISO 639-3 seh), lue le 3 novembre 2026. Elle recense les noms Chisena, Cisena et Sena, et la place, avec le sena du Malawi, dans le groupe des langues senaic."
               }
             ]
           },
@@ -248,13 +375,54 @@
           },
           {
             "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "Proposée en 1897"
+            },
+            "statement": "Le nom Sena viendrait du nom du pays de Sena : en sena, on nomme l'habitant d'un pays en ajoutant au nom de ce pays le préfixe m ou n, d'où nsena, « un homme de Sena », selon W. G. Anderson. Il ajoute que cisena désigne la langue ou les coutumes des Sena.",
+            "hypothesisGroup": "origine du nom Sena",
+            "sources": [
+              {
+                "title": "An introductory grammar of the Sena language spoken on the lower Zambesi",
+                "author": "W. G. Anderson",
+                "year": 1897,
+                "url": "https://archive.org/details/an-introductory-grammar-of-the-sena-language",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 38",
+                "notes": "Londres, Society for Promoting Christian Knowledge, 1897 ; préface datée de Londres, novembre 1896, écrite après trois ans dans la région. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Page 38 : « nsena, a man of Sena; plural, asena » et « cisena, the language or customs of the Sena people »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "Proposée en 1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sena viendrait du lieu appelé Sena : le chisena serait « la langue de Sena », parlée dans tous les prazos qui bordent le Zambèze depuis la mer jusqu'à la gorge de Lupata, selon le jésuite Julius Torrend, qui note qu'elle supplante d'autres parlers.",
+            "hypothesisGroup": "origine du nom Sena",
+            "sources": [
+              {
+                "title": "Grammatica do Chisena : a grammar of the language of the lower Zambezi",
+                "author": "Julius Torrend",
+                "year": 1900,
+                "url": "https://archive.org/details/grammaticadochis00torruoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Mission de Chupanga, 1900 ; lue sur sa numérisation, introduction bilingue en portugais et en anglais."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1858,
               "to": 1858,
               "label": "1858"
             },
-            "statement": "Le nom Sena est écrit Senna dans des notes sur le Zambèze, traduites du portugais par le consul britannique J. Lyons M'Leod : elles donnent le sens d'un nom de lieu « dans la langue senna ». C'est la plus ancienne trace de ce nom pour une langue ou un peuple que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "statement": "Le nom Sena est écrit Senna dans des notes sur le Zambèze, traduites du portugais par le consul britannique J. Lyons M'Leod : elles donnent le sens d'un nom de lieu « dans la langue senna ».",
             "formAsWritten": "Senna",
-            "birth": true,
             "sources": [
               {
                 "title": "Notes on the Zambesi, from Quillimane to Tete",
@@ -265,6 +433,44 @@
                 "source_kind": "archive",
                 "page": "p. 364",
                 "notes": "Proceedings of the Royal Geographical Society of London, vol. 2, séance du 14 juin 1858 ; notes traduites du portugais par le consul britannique au Mozambique, lues sur leur numérisation."
+              }
+            ],
+            "actors": [
+              {
+                "name": "J. Lyons M'Leod",
+                "role": "écrit cette forme"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1842,
+              "to": 1856,
+              "label": "Recueilli entre 1842 et 1848, publié en 1856"
+            },
+            "statement": "Le nom Sena désigne une langue dans les listes de mots que le naturaliste allemand Wilhelm Peters recueille au Mozambique entre 1842 et 1848, avec l'aide d'habitants qui parlaient portugais. Le linguiste Wilhelm Bleek les publie en 1856 et juge que le parler de Sena ne diffère de celui de Tete que par des variantes locales. C'est la plus ancienne trace de ce nom pour une langue que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Sena",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Wilhelm Peters",
+                "role": "recueille les listes de mots"
+              },
+              {
+                "name": "Wilhelm H. I. Bleek",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The languages of Mosambique : vocabularies of the dialects of Lourenzo Marques, Inhambane, Sofala, Tette, Sena, Quellimane, Mosambique, Cape Delgado, Anjoane, the Maravi, Mudsau, &c.",
+                "author": "Wilhelm H. I. Bleek",
+                "year": 1856,
+                "url": "https://archive.org/details/languagesmosamb00bleegoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. iii-iv et xii",
+                "notes": "Londres, Harrison and Sons, 1856, ouvrage imprimé pour le Foreign Office britannique. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Le chapitre I raconte le séjour de Peters de 1842 à 1848 ; la p. xii présente la colonne du parler de Sena, à côté de celle de Tete."
               }
             ]
           },
@@ -288,16 +494,56 @@
                 "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
               }
             ]
+          }
+        ]
+      },
+      {
+        "nameText": "Asena",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "seh",
+        "namedBy": null,
+        "shortLine": "La forme du nom en sena pour parler des Sena ; écrite a-Sena dès 1856.",
+        "usedIn": ["seh"],
+        "periodLabel": "Écrit dès 1856",
+        "accounts": [
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "statement": "Le nom Asena est le pluriel de nsena, « un homme de Sena », dans la grammaire du sena publiée par W. G. Anderson. En sena, un nom d'habitant prend le préfixe m ou n au singulier et a au pluriel, comme mpodzo et apodzo pour les gens du pays podzo.",
+            "aspect": "meaning",
+            "formAsWritten": "asena",
+            "sources": [
+              {
+                "title": "An introductory grammar of the Sena language spoken on the lower Zambesi",
+                "author": "W. G. Anderson",
+                "year": 1897,
+                "url": "https://archive.org/details/an-introductory-grammar-of-the-sena-language",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 38",
+                "notes": "Londres, Society for Promoting Christian Knowledge, 1897. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Page 38 : « nsena, a man of Sena; plural, asena » et « mpodzo, a man of the Podzo country (Zambesi mouth); plural, apodzo »."
+              }
+            ]
           },
           {
             "period": {
               "from": 1900,
               "to": 1900,
-              "label": "Proposée en 1900"
+              "label": "1900"
             },
             "era": "colonial",
-            "statement": "Le nom Sena viendrait du lieu appelé Sena : le chisena serait « la langue de Sena », parlée dans tous les prazos qui bordent le Zambèze depuis la mer jusqu'à la gorge de Lupata, selon le jésuite Julius Torrend, qui note qu'elle supplante d'autres parlers.",
-            "hypothesisGroup": "origine du nom Sena",
+            "statement": "Le nom Asena est écrit par le jésuite Julius Torrend dans les questions en chisena de sa grammaire, pour parler de ceux qui parlent la langue ; la partie anglaise rend la question par « in Sena ».",
+            "formAsWritten": "Asena",
+            "actors": [
+              {
+                "name": "Julius Torrend",
+                "role": "écrit cette forme"
+              }
+            ],
             "sources": [
               {
                 "title": "Grammatica do Chisena : a grammar of the language of the lower Zambezi",
@@ -306,7 +552,106 @@
                 "url": "https://archive.org/details/grammaticadochis00torruoft",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "notes": "Mission de Chupanga, 1900 ; lue sur sa numérisation, introduction bilingue en portugais et en anglais."
+                "notes": "Mission de Chupanga, 1900 ; grammaire bilingue en portugais et en anglais, avec les questions en chisena. Lue le 3 novembre 2026 dans la numérisation d'Internet Archive. Paragraphe 109, sur la classe KA-PI : « Asena anat'imiza ni prefixo KA pa madzina? », rendu en anglais par « When and how is used in Sena the classifier KA? ».",
+                "page": "§ 109, vue 79 de la numérisation"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1856,
+              "label": "Rapporté en 1856"
+            },
+            "statement": "Le nom Asena est écrit a-Sena par le missionnaire rhénan H. Hahn, qui dit avoir rencontré au Cap quelques personnes qu'il appelle ainsi, selon une note du linguiste Wilhelm Bleek. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "a-Sena",
+            "birth": true,
+            "actors": [
+              {
+                "name": "H. Hahn",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The languages of Mosambique : vocabularies of the dialects of Lourenzo Marques, Inhambane, Sofala, Tette, Sena, Quellimane, Mosambique, Cape Delgado, Anjoane, the Maravi, Mudsau, &c.",
+                "author": "Wilhelm H. I. Bleek",
+                "year": 1856,
+                "url": "https://archive.org/details/languagesmosamb00bleegoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. xii, note",
+                "notes": "Londres, Harrison and Sons, 1856. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Note de la p. xii : « The Rhenish Missionary, Rev. H. Hahn, also met at Cape Town with some a-Sena, as he calls them »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mazenas",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le missionnaire Thomas Arbousset, selon John W. Appleyard",
+        "shortLine": "Un nom écrit en 1850 pour des captifs venus du Mozambique ; Bleek le rapproche de Sena en 1856.",
+        "periodLabel": "Écrit en 1850 et en 1856",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1850,
+              "label": "Rapporté en 1850"
+            },
+            "statement": "Le nom Mazenas est celui que le missionnaire français Thomas Arbousset, de la Société des missions de Paris, donne à l'un des groupes d'Africains capturés qu'il rencontre au Cap, selon le missionnaire wesleyen John W. Appleyard. Arbousset situe ce peuple près de la côte du Mozambique, probablement entre les Koniunkues de l'intérieur et les Makoa. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Mazenas",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Thomas Arbousset",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "John W. Appleyard",
+                "role": "rapporte le texte d'Arbousset"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Kafir language : comprising a sketch of its history, which includes a general classification of South African dialects, ethnographical and geographical, remarks upon its nature, and a grammar",
+                "author": "John W. Appleyard",
+                "year": 1850,
+                "url": "https://archive.org/details/kafirlanguagecom00appl",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 61-62",
+                "notes": "King William's Town, Wesleyan Mission Press, et Londres, 1850 ; l'auteur était missionnaire wesleyen en Cafrerie britannique. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Appleyard cite une lettre d'Arbousset parue dans un journal du Cap : « two other tribes, whom he terms Mazenas, and Koniunkues »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "statement": "Le nom Mazenas est écrit ma-Zena par le linguiste Wilhelm Bleek, qui cite le passage d'Appleyard en présentant les listes de mots du parler de Sena : il rapproche ainsi ce nom de celui de Sena.",
+            "formAsWritten": "ma-Zena",
+            "actors": [
+              {
+                "name": "Wilhelm H. I. Bleek",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The languages of Mosambique : vocabularies of the dialects of Lourenzo Marques, Inhambane, Sofala, Tette, Sena, Quellimane, Mosambique, Cape Delgado, Anjoane, the Maravi, Mudsau, &c.",
+                "author": "Wilhelm H. I. Bleek",
+                "year": 1856,
+                "url": "https://archive.org/details/languagesmosamb00bleegoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. xii",
+                "notes": "Londres, Harrison and Sons, 1856. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Page xii, au paragraphe sur les colonnes de Tete et de Sena : « natives belonging to the tribes of the ma-Zena and Ko-Nyankuë »."
               }
             ]
           }
