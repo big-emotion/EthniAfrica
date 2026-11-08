@@ -81,6 +81,7 @@ const fr = {
     score: "Score",
     accessibilite: "Accessibilité",
     admin: "Administration",
+    assistant: "Claude et ChatGPT",
     connexion: "Connexion",
     // `compte`, `inscription` and `profil` were removed with the pages
     // they named: there are no public accounts, so nothing registers, and
