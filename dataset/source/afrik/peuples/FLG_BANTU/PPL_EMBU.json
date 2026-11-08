@@ -116,6 +116,13 @@
         "url": "http://www.bluegecko.org/kenya/tribes/embu/index.htm",
         "tier": "unverified",
         "source_kind": "community"
+      },
+      {
+        "title": "Glottolog, Embu",
+        "url": "https://glottolog.org/resource/languoid/id/embu1241",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog classe le embu (ISO ebu, Kenya) dans le groupe bantou du centre du Kenya, avec les références de Nurse (1999) et de Starzmann (2016). Page lue en ligne le 8 novembre 2026."
       }
     ]
   },
@@ -220,7 +227,7 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "page": "p. 297",
-                "notes": "Londres, Trübner, 1860. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026. Récit du premier voyage au pays kamba, fin 1849. Mbe y désigne sans doute les Mbeere ; c'est notre lecture."
+                "notes": "Londres, Trübner, 1860. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026. Récit du premier voyage au pays kamba, fin 1849. Mbe y désigne sans doute les Mbeere ; c'est notre hypothèse."
               }
             ]
           }
