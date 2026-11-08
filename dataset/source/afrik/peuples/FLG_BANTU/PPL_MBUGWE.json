@@ -108,6 +108,24 @@
         "url": "https://scholarlypublications.universiteitleiden.nl/access/item:3144215/download",
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Glottolog — Mbugwe",
+        "author": "Glottolog (Max Planck Institute for Evolutionary Anthropology)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/mbug1242",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche lue le 8 novembre 2026 : la langue mbugwe (code ISO mgz) est parlée en Tanzanie ; ses autres noms sont Kimbugwe et Mbuwe. Son statut de menace est « menacée »."
+      },
+      {
+        "title": "A Linguistic Description of Mbugwe with Focus on Tone and Verbal Morphology",
+        "author": "Vera Wilhelmsen",
+        "year": 2018,
+        "url": "https://www.avhandlingar.se/avhandling/52c3a26e16/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse de l'université d'Uppsala, notice lue le 8 novembre 2026 : première description détaillée du mbugwe, langue bantoue menacée parlée dans le centre-nord de la Tanzanie. Elle compte 7 voyelles, 21 consonnes et 17 classes nominales."
       }
     ]
   },
