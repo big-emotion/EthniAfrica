@@ -206,7 +206,10 @@ describe("parseKingdomPeriod", () => {
   it("derives bounds for the datable share of the real corpus", () => {
     const labels = corpusPeriodLabels();
     const parsed = labels.filter((l) => parseKingdomPeriod(l) !== null);
-    expect(labels).toHaveLength(298);
+    // 298 -> 300 on 2026-11-08: premium countries batch 09 added Byzantine
+    // Africa to Tunisia, split Tanzania's undated Bantu kingdoms into three
+    // dated entries and removed Zambia's unsourced Tonga chiefdoms.
+    expect(labels).toHaveLength(300);
     expect(parsed.length).toBeGreaterThanOrEqual(180);
   });
 });
