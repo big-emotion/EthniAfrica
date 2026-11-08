@@ -974,6 +974,121 @@
       "w": 1440,
       "h": 900,
       "expand": "fill"
+    },
+    "agent-card-traore-390.dc.html": {
+      "x": 21028,
+      "y": 0,
+      "w": 390,
+      "h": 1900,
+      "title": "Carte de réponse · nom de famille Traoré · 390"
+    },
+    "agent-card-civ-390.dc.html": {
+      "x": 21498,
+      "y": 0,
+      "w": 390,
+      "h": 1900,
+      "title": "Carte de réponse · pays Côte d'Ivoire · 390"
+    },
+    "agent-card-baoule-390.dc.html": {
+      "x": 21968,
+      "y": 0,
+      "w": 390,
+      "h": 1900,
+      "title": "Carte de réponse · peuple Baoulé · 390"
+    },
+    "agent-card-bantu-390.dc.html": {
+      "x": 22438,
+      "y": 0,
+      "w": 390,
+      "h": 1800,
+      "title": "Carte de réponse · famille de langues bantou · 390"
+    },
+    "agent-card-daloa-390.dc.html": {
+      "x": 22908,
+      "y": 0,
+      "w": 390,
+      "h": 1800,
+      "title": "Carte de réponse · lieu Daloa, fiche courte · 390"
+    },
+    "agent-card-tribu-390.dc.html": {
+      "x": 23378,
+      "y": 0,
+      "w": 390,
+      "h": 1800,
+      "title": "Carte de réponse · mot tribu · 390"
+    },
+    "agent-card-traore-720.dc.html": {
+      "x": 21028,
+      "y": 2400,
+      "w": 720,
+      "h": 1500,
+      "title": "Carte de réponse · Traoré, fil large · 720"
+    },
+    "agent-card-traore-dark-390.dc.html": {
+      "x": 21828,
+      "y": 2400,
+      "w": 390,
+      "h": 1900,
+      "title": "Carte de réponse · Traoré, thème sombre · 390"
+    },
+    "agent-card-state-unknown-390.dc.html": {
+      "x": 22298,
+      "y": 2400,
+      "w": 390,
+      "h": 1000,
+      "title": "Carte · état : mot absent du corpus (« sauvage ») · 390"
+    },
+    "agent-card-state-typo-390.dc.html": {
+      "x": 22768,
+      "y": 2400,
+      "w": 390,
+      "h": 800,
+      "title": "Carte · état : nom presque identique (« Bawlé ») · 390"
+    },
+    "agent-card-state-multi-390.dc.html": {
+      "x": 23238,
+      "y": 2400,
+      "w": 390,
+      "h": 800,
+      "title": "Carte · état : un nom, deux fiches (« Bambara ») · 390"
+    },
+    "agent-card-state-loading-390.dc.html": {
+      "x": 23708,
+      "y": 2400,
+      "w": 390,
+      "h": 900,
+      "title": "Carte · état : chargement · 390"
+    },
+    "agent-card-state-consent-390.dc.html": {
+      "x": 24178,
+      "y": 2400,
+      "w": 390,
+      "h": 1300,
+      "title": "Carte · état : récit familial, accord puis code · 390"
+    },
+    "agent-install-430.dc.html": {
+      "x": 21028,
+      "y": 4700,
+      "w": 430,
+      "h": 2900,
+      "expand": "fill",
+      "title": "Page EthniAfrica dans Claude et ChatGPT · 430"
+    },
+    "agent-install-768.dc.html": {
+      "x": 21538,
+      "y": 4700,
+      "w": 768,
+      "h": 2300,
+      "expand": "fill",
+      "title": "Page EthniAfrica dans Claude et ChatGPT · 768"
+    },
+    "agent-install-1440.dc.html": {
+      "x": 22386,
+      "y": 4700,
+      "w": 1440,
+      "h": 1900,
+      "expand": "fill",
+      "title": "Page EthniAfrica dans Claude et ChatGPT · 1440"
     }
   },
   "order": [
@@ -1093,7 +1208,23 @@
     "home-1440.dc.html",
     "word-race-430.dc.html",
     "word-race-768.dc.html",
-    "word-race-1440.dc.html"
+    "word-race-1440.dc.html",
+    "agent-card-traore-390.dc.html",
+    "agent-card-civ-390.dc.html",
+    "agent-card-baoule-390.dc.html",
+    "agent-card-bantu-390.dc.html",
+    "agent-card-daloa-390.dc.html",
+    "agent-card-tribu-390.dc.html",
+    "agent-card-traore-720.dc.html",
+    "agent-card-traore-dark-390.dc.html",
+    "agent-card-state-unknown-390.dc.html",
+    "agent-card-state-typo-390.dc.html",
+    "agent-card-state-multi-390.dc.html",
+    "agent-card-state-loading-390.dc.html",
+    "agent-card-state-consent-390.dc.html",
+    "agent-install-430.dc.html",
+    "agent-install-768.dc.html",
+    "agent-install-1440.dc.html"
   ],
   "notes": {
     "g0": {
@@ -1144,6 +1275,27 @@
       "text": "Groupe 5 · Mots",
       "kind": "title1",
       "maxW": 2798
+    },
+    "g7": {
+      "x": 21028,
+      "y": -300,
+      "text": "Groupe 6 · Agent EthniAfrica dans Claude et ChatGPT",
+      "kind": "title1",
+      "maxW": 3540
+    },
+    "g7b": {
+      "x": 21028,
+      "y": 2100,
+      "text": "Carte : fil large, thème sombre, états",
+      "kind": "title1",
+      "maxW": 3540
+    },
+    "g7c": {
+      "x": 21028,
+      "y": 4400,
+      "text": "Page d’installation",
+      "kind": "title1",
+      "maxW": 3540
     }
   },
   "designSystems": []
