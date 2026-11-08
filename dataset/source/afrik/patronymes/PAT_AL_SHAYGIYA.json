@@ -25,13 +25,47 @@
           "sourceRefs": ["afrik-candidate-queue"]
         }
       ]
+    },
+    {
+      "spelling": "Shaikia",
+      "attestations": [
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["macmichael-1922-history-arabs"]
+        }
+      ]
+    },
+    {
+      "spelling": "Shaygiyya",
+      "attestations": [
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["shahi-1988-personal-names-sudan"]
+        }
+      ]
     }
   ],
   "transmissionMode": "other",
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [],
+    "writtenChronicles": [
+      {
+        "claim": "MacMichael rapporte, d'après des arbres généalogiques de manuscrits, que Shaik était le frère de Ghanim, l'ancêtre dont descendent tous les Ga'aliin proprement dits. Il pense que les Shaikia ont reçu en plus un élément étranger. C'est une tradition généalogique rapportée par un administrateur colonial britannique, sans transmetteur nommé.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["macmichael-1922-history-arabs"]
+      },
+      {
+        "claim": "MacMichael préférerait avancer que les Shaikia descendent en partie des mercenaires bosniaques, albanais et turcs qui tiennent garnison en Nubie depuis 1517. Il cite aussi le voyageur Werne, selon qui ces gens disent n'être pas arabes et doivent peut-être leur nom à un saint arabe. Ces explications sont des hypothèses, pas des faits établis.",
+        "claimStatus": "contested",
+        "sourceRefs": ["macmichael-1922-history-arabs"]
+      },
+      {
+        "claim": "Le pays des Shaikia s'étend, selon MacMichael, sur la riche partie de la vallée du Nil comprise entre le Gebel Dayka, dans le sud de Dongola, et le bout amont de la quatrième cataracte. Il note que les Shaikia n'ont jamais parlé un dialecte nubien, contrairement aux Danagla.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["macmichael-1922-history-arabs"]
+      }
+    ],
     "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
@@ -40,7 +74,11 @@
     {
       "countryId": "SDN",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "macmichael-1922-history-arabs",
+        "shahi-1988-personal-names-sudan"
+      ]
     }
   ],
   "alliances": [],
@@ -55,36 +93,60 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "macmichael-1922-history-arabs",
+      "title": "A History of the Arabs in the Sudan, vol. I (Shaikia, p. 213-215)",
+      "url": "https://archive.org/details/historyofarabsin01macmuoft",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Cambridge University Press, 1922. Texte intégral d'Internet Archive relu le 8 novembre 2026. Pages 213-215 : section sur les Shaikia, avec la tradition de l'ancêtre Shaik, le texte de Werne, l'hypothèse de l'auteur sur les mercenaires de 1517 et la description de leur pays. L'auteur était administrateur colonial britannique : son texte est un témoignage colonial."
+    },
+    {
+      "sourceKey": "shahi-1988-personal-names-sudan",
+      "title": "Some personal names and nicknames among the riverain people of northern Sudan",
+      "url": "https://ora.ox.ac.uk/objects/uuid%3A6cba3331-02f2-4ae9-af12-ce697e4dd5c8/files/rv979v447b",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Ahmed Al-Shahi, Journal of the Anthropological Society of Oxford 19(2), 1988, p. 131-142. Texte intégral relu le 8 novembre 2026. L'auteur remercie deux fondations pour ses recherches « among the Shaygiyya tribe of Northern Sudan » (p. 131, note) ; page 135, il cite des noms de personne portés « among the Shaygiyya and other tribes ». L'article ne dit rien de l'origine du nom Shaygiyya lui-même."
     }
   ],
   "gaps": [
     {
-      "fieldPath": "alliances",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "fieldPath": "origin.oralTraditions",
+      "reason": "Recherches du 8 novembre 2026 : section sur les Shaikia de MacMichael (1922) relue, article d'Al-Shahi (1988) relu en entier pour le mot Shaygiyya. Aucune tradition orale recueillie auprès de porteurs du nom, avec transmetteur et mode de collecte nommés, n'a été trouvée. La généalogie de Shaik vient de manuscrits cités par MacMichael."
     },
     {
-      "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "homonyms",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "transmissionMode",
-      "reason": "La nisba ne détermine pas à elle seule le mode de transmission : nous ne le documentons pas encore pour ce nom."
-    },
-    {
-      "fieldPath": "designatedSocialUnit",
-      "reason": "La nisba ne détermine pas à elle seule l'unité sociale désignée : nous ne la documentons pas encore pour ce nom."
+      "fieldPath": "origin.linguisticReconstructions",
+      "reason": "Recherches du 8 novembre 2026 : section sur les Shaikia de MacMichael (1922) relue, article d'Al-Shahi (1988) relu en entier pour le mot Shaygiyya. Aucun travail linguistique ne donne l'étymologie du nom ; MacMichael et Werne ne donnent que des hypothèses sur un saint arabe ou un ancêtre."
     },
     {
       "fieldPath": "peoples",
-      "reason": "Nos fiches ne permettent pas encore de relier le nom al-Shaygiya à un peuple au Soudan. Nous n'avons pas encore consulté de source consacrée à ce nom. La fiche générale sur les Arabes d'Afrique ne décrit pas les Ja'aliyyin et les Shaigiya séparément."
+      "reason": "Recherches du 8 novembre 2026 : section sur les Shaikia de MacMichael (1922) relue, article d'Al-Shahi (1988) relu en entier pour le mot Shaygiyya. Aucune fiche de peuple de la base ne correspond aux Shaikia ou Shaygiyya. MacMichael les range avec les Ga'aliin, mais cela ne désigne pas une fiche précise : le rattachement reste non fait."
+    },
+    {
+      "fieldPath": "alliances",
+      "reason": "Recherches du 8 novembre 2026 : section sur les Shaikia de MacMichael (1922) relue, article d'Al-Shahi (1988) relu en entier pour le mot Shaygiyya. Aucune parenté à plaisanterie ni aucun pacte entre ce nom et un autre nom ayant une fiche n'a été trouvé."
+    },
+    {
+      "fieldPath": "casteOrSocialFunction",
+      "reason": "Recherches du 8 novembre 2026 : section sur les Shaikia de MacMichael (1922) relue, article d'Al-Shahi (1988) relu en entier pour le mot Shaygiyya. MacMichael décrit des guerriers mercenaires, mais il s'agit d'un trait attribué au groupe par un auteur colonial, non d'un statut héréditaire attesté."
+    },
+    {
+      "fieldPath": "bearers",
+      "reason": "Recherches du 8 novembre 2026 : section sur les Shaikia de MacMichael (1922) relue, article d'Al-Shahi (1988) relu en entier pour le mot Shaygiyya. Aucun porteur décédé documenté dans une source ouverte lue ici n'a été retenu. Les personnes vivantes sont exclues."
+    },
+    {
+      "fieldPath": "homonyms",
+      "reason": "Recherches du 8 novembre 2026 : section sur les Shaikia de MacMichael (1922) relue, article d'Al-Shahi (1988) relu en entier pour le mot Shaygiyya. Aucun homonyme de Shaikia ou Shaygiyya, avec une origine distincte, n'a été trouvé dans les sources lues."
+    },
+    {
+      "fieldPath": "transmissionMode",
+      "reason": "Recherches du 8 novembre 2026 : section sur les Shaikia de MacMichael (1922) relue, article d'Al-Shahi (1988) relu en entier pour le mot Shaygiyya. Les sources lues décrivent un groupe et sa généalogie, sans dire comment le nom se transmet à une personne."
+    },
+    {
+      "fieldPath": "designatedSocialUnit",
+      "reason": "Recherches du 8 novembre 2026 : section sur les Shaikia de MacMichael (1922) relue, article d'Al-Shahi (1988) relu en entier pour le mot Shaygiyya. MacMichael parle d'une tribu ; ce mot ne correspond à aucune unité du modèle, donc la valeur reste « autre »."
     }
   ],
   "nameHistory": {
