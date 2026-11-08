@@ -8,64 +8,56 @@
       "mainName": "Ndamba",
       "selfAppellation": "Wandamba",
       "exonyms": ["Wandamba", "Chindamba"],
-      "originOfExonyms": "Wandamba commence par wa-, qui marque le pluriel pour désigner des personnes dans les langues bantoues. Chindamba est le nom de la langue. Le nom du peuple viendrait de celui de son premier chef, Mbuyi Undole.",
+      "originOfExonyms": "Wandamba commence par wa-, qui marque le pluriel pour désigner des personnes dans les langues bantoues. Selon A. T. et G. M. Culwick (1935), le nom voudrait dire « ceux qui habitent le pays bas ». Glottolog nomme la langue Ndamba (code ndj).",
       "whyProblematic": null,
-      "contemporaryUsage": "Ndamba et Wandamba sont utilises de maniere interchangeable en Tanzanie. Certains ethnologues incluent les Pogoro parmi les Ndamba en raison de leur forte proximite linguistique et culturelle.",
+      "contemporaryUsage": "Wandamba est le nom employé en 1965 par Blasius Undole dans une histoire de son peuple, citée par Gwassa et Iliffe. Glottolog emploie Ndamba pour la langue.",
       "linguisticFamily": "FLG_BANTU",
-      "ethnoLinguisticGroup": "Groupe Rufiji-Ruvuma, sous-famille Kilombero (langues G52)",
-      "historicalRegion": "Vallee du Kilombero, region de Morogoro (centre-sud Tanzanie)",
+      "ethnoLinguisticGroup": "Langue bantoue de la Tanzanie, classée par Derek Nurse (1999) selon Glottolog",
+      "historicalRegion": "Vallée du Kilombero, région de Morogoro, centre-sud de la Tanzanie",
       "currentCountries": ["TZA"]
     },
     "ethnicities": ["Ndamba", "Wandamba"],
     "origins": {
-      "ancientOrigins": "Selon la tradition orale, les Ndamba sont une ramification du peuple Pogoro. Le premier chef, Mbuyi Undole I, mena un petit groupe vers l'ouest en s'eloignant des Pogoro, donnant naissance a une identite distincte.",
-      "formationPeriod": "Fin du XIXe siecle comme entite formellement reconnue : Mbuyi Undole I enregistra officiellement le groupe Ndamba aupres du gouvernement allemand en 1901. Leur implantation dans la vallee du Kilombero precede cette date de plusieurs generations.",
-      "migrationRoutes": [
-        "Separation d'avec les Pogoro vers l'ouest dans la region de Morogoro",
-        "Diffusion dans la vallee du Kilombero et la region d'Ulanga"
-      ],
+      "ancientOrigins": "A. T. et G. M. Culwick (1935) écrivent que le nom Wandamba regroupait de petites communautés dispersées dans les marais de la vallée avant le règne du chef bena Mtengera : des Wamwera, des Wambowa et des réfugiés venus des hauteurs. Ce nom commun ne faisait pas d'eux un seul peuple organisé, écrivent-ils.",
+      "formationPeriod": "Selon Monson (2000), qui résume les Culwick, les Bena ont quitté les hauts plateaux d'Iringa pour la vallée du Kilombero à la fin du XIXe siècle, après la bataille de Mgodamtitu en 1874. En 1890, la plupart des Ndamba étaient devenus des sujets du chef bena.",
+      "migrationRoutes": [],
       "historicalSettlementZones": [
-        "District de Kilombero (vallee du Kilombero)",
-        "District d'Ulanga",
-        "District de Kilolo, region d'Iringa",
-        "Localites : Mlimba, Masagati, Chisano, Chita, Merera, Malinyi, Igawa, Biro, Ngombo, Mchombe, Mngeta, Lwipa, Mbingu, Mofu"
+        "Vallée du Kilombero, région de Morogoro",
+        "Vallée de l'Ulanga, d'après A. G. O. Hodgson (1926), cité par Frazer (1936)"
       ],
-      "unificationsOrDivisions": "Bien que certaines sources distinguent les Ndamba et les Mbunga comme deux groupes distincts, des travaux linguistiques recents etablissent qu'il s'agit en realite d'un seul peuple dont les varietes linguistiques constituent des dialectes du meme ensemble. Les Ndamba, Mbunga et Pogolo partagent une origine commune.",
-      "externalInfluences": "Administration coloniale allemande (enregistrement officiel en 1901). Politique ujamaa du gouvernement tanzanien (depuis les annees 1970) reorganisant les habitats traditionnels en villages collectifs pour faciliter l'education et la sante publique.",
-      "majorHistoricalEvents": "Enregistrement officiel de la tribu Ndamba par Mbuyi Undole I aupres du gouvernement colonial allemand en 1901. Publication du premier dictionnaire Chindamba en 2008 et 2010 par Agathon Kipandula, chercheur linguistique de la Banque de Tanzanie. Publication en 2022 de Historia na Maisha ya Wandamba par plusieurs auteurs dont le Rev. Fidelis Mfalanyombo (OSA)."
+      "unificationsOrDivisions": "Monson (2000) rapporte que, selon les Culwick, les Bena ont d'abord pris la place de protecteurs dans l'ouest de la vallée, puis ont voulu en prendre le contrôle politique ; vers 1890, la plupart des Ndamba et plusieurs petits groupes de la vallée étaient devenus sujets du chef bena.",
+      "externalInfluences": "Monson (2000) décrit l'arrivée des Bena dans la vallée du Kilombero à la fin du XIXe siècle et leur domination sur les petits groupes déjà installés, dont les Ndamba.",
+      "majorHistoricalEvents": "Gwassa et Iliffe racontent, d'après un texte de Blasius Undole (1965), qu'en 1905 le chef Undole a refusé l'eau du maji maji dans son pays, l'Undamba."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Chefferie hereditaire. Le premier chef enregistre etait Mbuyi Undole I. Organisation villageoise avec autorite clanique.",
-      "clanOrganization": "Descendance patrilineaire : les Ndamba tracent leur filiation par la ligne paternelle.",
+      "traditionalPoliticalSystem": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Culwick 1935, Monson 2000, Gwassa et Iliffe, Glottolog).",
+      "clanOrganization": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Culwick 1935, Monson 2000, Gwassa et Iliffe, Glottolog).",
       "ageClassSystems": null,
-      "roleOfLineages": "Les lignages patrilineaires determinent l'heritage et l'appartenance clanique.",
-      "religiousAuthority": "Majorite musulmane pratiquant un islam peu rigoriste : le port du bonnet blanc et l'adoption d'un prenom arabe constituent les principaux marqueurs religieux observes. Ramadan et autres rituels islamiques souvent non observes. Presence de l'Eglise catholique romaine dans certaines communautes."
+      "roleOfLineages": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Culwick 1935, Monson 2000, Gwassa et Iliffe, Glottolog).",
+      "religiousAuthority": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Culwick 1935, Monson 2000, Gwassa et Iliffe, Glottolog)."
     },
     "languages": {
       "mainLanguage": "Chindamba",
       "isoCodes": ["ndj"],
-      "dialects": [
-        "Mbunga (dialecte proche, similarite lexicale de 69 %)",
-        "Pogolo (similarite lexicale de 56 %)"
-      ],
-      "vehicularRole": "Le chindamba est la langue maternelle. Le swahili est utilise comme langue vehiculaire nationale. Chindamba, Mbunga et Pogolo sont des langues Rufiji-Ruvuma du groupe bantou (code Guthrie G52)."
+      "dialects": [],
+      "vehicularRole": "Glottolog reprend le niveau 6b (« menacée ») de l'Ethnologue (2025) pour le ndamba."
     },
     "culture": {
-      "majorRites": "Pratiques religieuses liees a l'islam local. Traditions d'habitat en hameaux selon un modele traditionnel remis en cause par la politique ujamaa tanzanienne des annees 1970.",
-      "symbols": "Le riz et le poisson constituent les aliments symboliques identitaires du groupe : les Ndamba sont connus pour ne consommer que du riz et du poisson.",
-      "artsAndMusic": "Traditions orales. Publication en 2022 de Historia na Maisha ya Wandamba temoigne d'une conscience culturelle vivante et d'un effort de documentation. Grammaire publiee en 2010 : Edelsten, Peter ; Lijongwa, Chiku, A Grammatical Sketch of Chindamba (Rudiger Koppe Verlag).",
-      "spiritualities": "Islam populaire predominant. Memoire historique sur les origines et le premier chef Mbuyi Undole I, transmise par voie orale et desormais documentee par ecrit."
+      "majorRites": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Culwick 1935, Monson 2000, Gwassa et Iliffe, Glottolog).",
+      "symbols": "Selon Monson (2000), qui cite les Culwick, les Bena arrivés dans la vallée y ont adopté la culture du riz, le travail de la rivière et l'usage des pirogues, alors qu'ils méprisaient auparavant les « mangeurs de riz et de poisson ».",
+      "artsAndMusic": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Culwick 1935, Monson 2000, Gwassa et Iliffe, Glottolog).",
+      "spiritualities": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Culwick 1935, Monson 2000, Gwassa et Iliffe, Glottolog)."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Chefferie fondee par Mbuyi Undole I, dont la descendance dirigeait le groupe apres l'enregistrement de 1901. Diffusion progressive du groupe dans le sud de la region de Morogoro.",
-      "relationsWithNeighbors": "Proches des Pogoro dont ils sont issus. Relations historiques complexes avec les Bena au nord-est et les Hehe a l'ouest. Les Ndamba et les Pogoro se sont dispute l'autorite sur les rizieres de la vallee du Kilombero dans les annees 1940-1950.",
-      "conflictsOrAlliances": "Dispute avec les Pogoro pour les droits sur les terres rizieres du Kilombero dans les decennies 1940-1950 (documents JSTOR, Memoria, Migration and the Authority of History in Southern Tanzania). Resistance passive a la politique de regroupement ujamaa.",
+      "kingdomsOrChiefdoms": "Monson (2000) cite le chef bena Ndaliwali, que les Culwick considèrent comme l'ancêtre fondateur d'une nouvelle lignée politique, et le royaume bena qui a absorbé la plupart des Ndamba vers 1890.",
+      "relationsWithNeighbors": "Les Ndamba sont devenus pour la plupart des sujets du chef bena vers 1890, selon les Culwick cités par Monson (2000). Les Hehe avaient attaqué les Bena en 1874, à la bataille de Mgodamtitu.",
+      "conflictsOrAlliances": "Gwassa et Iliffe rapportent que le chef Undole a refusé l'eau du maji maji en 1905, d'après Blasius Undole (1965).",
       "diaspora": null
     },
     "demography": {
       "totalPopulation": 350000,
       "referenceYear": 2025,
-      "source": "Peoplegroups.org (2024) : 295 000 ; Wikipedia (2022) : 500 000 ; estimation mediane 2025",
+      "source": "Estimation fondée sur Peoplegroups.org (2024), source missionnaire non vérifiée, et sur une encyclopédie. Aucune source officielle lue ne donne ce chiffre par ethnie.",
       "distributionByCountry": [
         {
           "country": "TZA",
@@ -89,7 +81,8 @@
         "title": "Ndamba – Glottolog 5.3, ISO 639-3: ndj",
         "url": "https://glottolog.org/resource/languoid/id/ndam1239",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Page lue le 8 novembre 2026 : code ISO 639-3 ndj, Tanzanie, niveau 6b « menacée » (Ethnologue 2025)."
       },
       {
         "title": "Ndamba – 101 Last Tribes",
@@ -101,7 +94,11 @@
         "title": "Memory, Migration and the Authority of History in Southern Tanzania – JSTOR",
         "url": "https://www.jstor.org/stable/183473",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "author": "Jamie Monson",
+        "year": 2000,
+        "page": "p. 347-372",
+        "notes": "Journal of African History, vol. 41, n° 3. Nous avons lu le résumé de l'article le 8 novembre 2026, pas le texte entier : bataille de Mgodamtitu en 1874, et vers 1890 « most of the Ndamba » devenus sujets du chef bena, selon les Culwick."
       }
     ]
   },

@@ -8,61 +8,58 @@
       "mainName": "Ngindo",
       "selfAppellation": "Wangindo",
       "exonyms": ["Wandingo", "Wangindo", "Gindo"],
-      "originOfExonyms": "Wandingo est la forme swahilie plurielle usuelle ; Gindo est la forme abreuvee utilisee dans les sources coloniales allemandes.",
+      "originOfExonyms": "Wandingo et Gindo sont des formes de ce nom relevées dans des textes ; nous n'avons pas trouvé de source qui explique comment elles sont nées. Glottolog donne aussi Kingindo, Magingo et Njindo pour la langue.",
       "whyProblematic": null,
-      "contemporaryUsage": "Le nom Ngindo est utilise dans les sources officielles tanzaniennes et academiques. Wangindo designe collectivement le peuple en swahili.",
+      "contemporaryUsage": "Le nom Ngindo désigne ce peuple dans les travaux d'histoire et de linguistique que nous avons lus. Wangindo est le nom de ses habitants, avec le préfixe wa- des langues bantoues de la côte.",
       "linguisticFamily": "FLG_BANTU",
-      "ethnoLinguisticGroup": "Groupe Rufiji-Ruvuma (Bantou du Sud-Est tanzanien)",
-      "historicalRegion": "Sud-Est de la Tanzanie (Pwani meridionale, Ruvuma orientale, Morogoro meridionale, Lindi septentrionale)",
+      "ethnoLinguisticGroup": "Groupe Rufiji-Ruvuma, selon Glottolog",
+      "historicalRegion": "Sud-est de la Tanzanie, à l'arrière-pays de Kilwa et dans l'est de la réserve de chasse du Selous",
       "currentCountries": ["TZA"]
     },
     "ethnicities": ["Ngindo"],
     "origins": {
-      "ancientOrigins": "Peuple bantou originaire du groupe linguistique Rufiji-Ruvuma, installe de longue date dans les zones forestieres et de brousse de l'est de la Tanzanie. Les ancetres Ngindo pratiquaient l'agriculture itinerante, la chasse et la cueillette dans les plaines du Selous et des districts de Liwale et Kilwa.",
-      "formationPeriod": "Identite ethnique consolidee avant la periode coloniale, documentee des le XIXe siecle par les voyageurs arabes et europeens sur la cote est-africaine.",
+      "ancientOrigins": "Iliffe (1967) estime que le groupe Ngindo-Mwera est probablement formé d'immigrants récents venus du sud, arrivés dans une région où d'autres peuples, comme les Pogoro et les Luguru, détenaient déjà l'autorité religieuse. Il précise qu'aucune preuve ne permet de le démontrer.",
+      "formationPeriod": "Le plus ancien texte qui cite les Wangindo est le récit de Richard Burton, publié en 1859 ; ils vivaient alors déjà dans l'arrière-pays de Kilwa.",
       "migrationRoutes": [
-        "Migrations internes depuis les collines cotieres vers les plaines interieures du Selous",
-        "Deplacements forces vers 1945 suite a une epidemie de maladie du sommeil dans la Reserve de chasse du Selous orientale"
+        "Selon Rongers (1975), les Wangindo ont quitté en 1945 une zone aujourd'hui située dans l'est de la réserve de chasse du Selous, à cause d'une épidémie de maladie du sommeil. Cette émigration a été imposée."
       ],
       "historicalSettlementZones": [
-        "Districts de Liwale et Kilwa (region Lindi)",
-        "Sud de la region Pwani",
-        "Est de la region Ruvuma",
-        "Nord de la region Lindi"
+        "Zone aujourd'hui comprise dans l'est de la réserve du Selous, sur les districts de Rufiji, de Kilwa et de Nachingwea, d'après Rongers (1975)",
+        "Arrière-pays de Kilwa, d'après Burton (1859)"
       ],
-      "unificationsOrDivisions": "Le peuple Ngindo n'a pas forme de royaume centralise ; il etait organise en petites communautes de clans. La pression des Ngoni voisins et les violences coloniales allemandes ont maintenu leur population a un niveau peu eleve.",
-      "externalInfluences": "Influence de la traite esclavagiste arabe par la cote, puis oppression coloniale allemande. Apres la guerre Maji Maji (1905-1907), les Ngindo ont souffert de la politique de la terre brulee allemande et d'une severe famine. Les Ngoni dominaient les Ngindo comme voisins plus puissants.",
-      "majorHistoricalEvents": "Participation active a la rebellion Maji Maji (1905-1907) : le 14 aout 1905, des combattants Ngindo attaquent un groupe de missionnaires, tuant cinq personnes dont l'eveque Spiss. Puis attaque du boma allemand de Liwale. La repression allemande et la famine subsequente deciment la population. En 1945, les Wangindo sont expulses de force de la Reserve de chasse du Selous oriental en raison d'une epidemie de maladie du sommeil."
+      "unificationsOrDivisions": "Rongers (1975) décrit les Wangindo comme un petit groupe bantou. Il explique que leur nombre est resté faible à cause des razzias d'esclaves, de la domination des Ngoni et de la répression allemande après la guerre Maji Maji.",
+      "externalInfluences": "Rongers (1975) cite trois pressions sur les Wangindo : les razzias d'esclaves, la domination des Ngoni, puis la répression allemande qui a suivi la guerre Maji Maji de 1905-1907.",
+      "majorHistoricalEvents": "Selon Iliffe (1967), les Ngindo ont porté la révolte Maji Maji jusqu'au pays des Ngoni (Ungoni) au début de septembre 1905. Selon Rongers (1975), les Wangindo ont dû quitter en 1945 une partie de l'est du Selous, à cause d'une épidémie de maladie du sommeil."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Organisation en clans autonomes sans chef centralise. Les anciens de clan (elders) assuraient la prise de decision collective. Absence de structure royale ou de chefferie hierarchisee.",
-      "clanOrganization": "Societe patrilineaire organisee en clans. Les liens familiaux etendus constituaient l'unite sociale et politique de base.",
+      "traditionalPoliticalSystem": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Iliffe 1967, Rongers 1975, Glottolog).",
+      "clanOrganization": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Iliffe 1967, Rongers 1975, Glottolog).",
       "ageClassSystems": null,
-      "roleOfLineages": "Les lignages patrilineaires determinaient l'appartenance clanique, l'acces a la terre et les obligations sociales. Les elders de lignage jouaient un role central dans la resolution des conflits.",
-      "religiousAuthority": "Croyances animistes traditionnelles centrees sur les esprits ancestraux et les rituels de la nature. L'islam sunnite s'est diffuse depuis la cote lors des siecles precedents et est aujourd'hui la religion majoritaire."
+      "roleOfLineages": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Iliffe 1967, Rongers 1975, Glottolog).",
+      "religiousAuthority": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Iliffe 1967, Rongers 1975, Glottolog)."
     },
     "languages": {
       "mainLanguage": "Kingindo (Ngindo)",
       "isoCodes": ["nnq"],
-      "dialects": ["Kingindo", "Ndendeule (langue proche apparentee)"],
-      "vehicularRole": "La langue ngindo est utilisee en contexte communautaire local. Le swahili est la langue vehiculaire nationale et d'education en Tanzanie."
+      "dialects": [],
+      "vehicularRole": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Iliffe 1967, Rongers 1975, Glottolog)."
     },
     "culture": {
-      "majorRites": "Rituels agricoles et de chasse lies aux esprits ancestraux. Ceremonies d'initiation a l'age adulte. Pratiques islamiques integrees dans la vie quotidienne (fetes religieuses, mariages).",
-      "symbols": "La tradition orale, la poesie et les pratiques de denomination constituent le coeur de l'identite culturelle Ngindo. Le nom Andanenga (anda = comme, nenga = moi) illustre la richesse de la langue.",
-      "artsAndMusic": "Tradition de poesie orale et de chant. Le poete Amir Abdallah Sudi, dit Andanenga, est une figure culturelle notable. Artisanat et vannerie courants dans les communautes rurales.",
-      "spiritualities": "Animisme traditionnel avec culte des ancetres et rituels de la nature. Islam sunnite majoritaire, profondement integre dans la vie sociale. Des croyances animistes persistent notamment dans les zones rurales isolees."
+      "majorRites": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Iliffe 1967, Rongers 1975, Glottolog).",
+      "symbols": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Iliffe 1967, Rongers 1975, Glottolog).",
+      "artsAndMusic": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Iliffe 1967, Rongers 1975, Glottolog).",
+      "spiritualities": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Iliffe 1967, Rongers 1975, Glottolog)."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de royaume ou de chefferie centralise. Les Ngindo s'organisaient en communautes de clans dispersees dans les zones forestieres et de brousse.",
-      "relationsWithNeighbors": "Relations difficiles avec les Ngoni qui les dominaient et les pillaient. Contacts commerciaux avec les populations cotieres arabes et swahilies. Voisinage avec les Matengo, Matumbi, Ndendeule et Yao.",
-      "conflictsOrAlliances": "Participation a la rebellion Maji Maji (1905-1907) aux cotes d'autres peuples du Sud tanzanien contre la colonisation allemande. Pression historique des Ngoni limitant la croissance demographique.",
+      "kingdomsOrChiefdoms": "Nous n'avons trouvé aucune source écrite sur ce point dans les travaux consultés (Iliffe 1967, Rongers 1975, Glottolog).",
+      "relationsWithNeighbors": "Rongers (1975) place les Wangindo sous la domination des Ngoni. Iliffe (1967) les montre aussi proches des Mwera : il parle d'un groupe Ngindo-Mwera.",
+      "conflictsOrAlliances": "Iliffe (1967) rapporte que les Ngindo ont porté le mouvement Maji Maji vers le pays des Ngoni en septembre 1905. Il écrit aussi que, dans les années 1926-1929, un mouvement contre la sorcellerie a été lancé par Ngoja bin Kimeta, un Ngindo, et que ses foyers principaux étaient le pays ngindo et les collines de Matumbi.",
       "diaspora": null
     },
     "demography": {
       "totalPopulation": 620000,
       "referenceYear": 2025,
-      "source": "Joshua Project / PeopleGroups.org (estimation 2025)",
+      "source": "Estimation de Joshua Project pour 2025, source missionnaire non vérifiée. Aucune source officielle ne donne ce chiffre par ethnie.",
       "distributionByCountry": [
         {
           "country": "TZA",
@@ -88,7 +85,29 @@
         "title": "Past Wangindo Settlements in the Eastern Selous Game Reserve – Tanzania Notes and Records",
         "url": "https://www.africabib.org/rec.php?RID=188857230",
         "tier": "referenced",
-        "source_kind": "repository"
+        "source_kind": "repository",
+        "author": "W. A. Rongers",
+        "year": 1975,
+        "notes": "Tanzania Notes and Records, n° 77-78, p. 21-26. Nous avons lu la notice et son résumé sur AfricaBib le 8 novembre 2026, pas l'article entier."
+      },
+      {
+        "title": "The Organization of the Maji Maji Rebellion",
+        "author": "John Iliffe",
+        "year": 1967,
+        "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/organization-of-the-maji-maji-rebellion/7DD8298B261E754471EAD710BAEAFBF5",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 496, 501, 508",
+        "notes": "Journal of African History, vol. 8, n° 3, p. 495-512. Lu en entier le 8 novembre 2026. P. 496 : le mouvement est porté « by the Ngindo to Ungoni early in September ». P. 501 : « the Ngindo-Mwera group are probably recent immigrants from the south ». P. 508 : Ngoja bin Kimeta, « a Ngindo »."
+      },
+      {
+        "title": "Ngindo",
+        "author": "Glottolog",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/ngin1244",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue, lue le 8 novembre 2026 : code ISO 639-3 nnq, Tanzanie, noms Kingindo, Magingo et Njindo, classement dans le groupe Rufiji-Ruvuma."
       }
     ]
   },
@@ -110,6 +129,7 @@
               "to": null,
               "label": "Sens non daté"
             },
+            "era": "colonial",
             "statement": "Le nom Wangindo désigne un peuple de l'arrière-pays de Kilwa, sur la côte sud de la Tanzanie, que l'explorateur Richard Burton situe déjà « derrière Kilwa ». Les sources que nous avons lues n'expliquent pas d'où vient ce nom.",
             "aspect": "meaning",
             "sources": [
