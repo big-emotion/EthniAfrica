@@ -6,7 +6,7 @@
   "content": {
     "appellations": {
       "mainName": "Kwere",
-      "selfAppellation": "Wakwere",
+      "selfAppellation": "Ngh'wele",
       "exonyms": [
         "Ngh'wele",
         "Kwele",
@@ -18,9 +18,9 @@
         "Ching'hewele",
         "Kakwere"
       ],
-      "originOfExonyms": "Wakwere est le nom en swahili (prefixe Wa- pour les personnes). Ngh'wele ou Ngh'were est le nom propre dans leur langue. Kikwere est le nom swahili pour la langue. La forme Kwele est parfois utilisee en anglais.",
+      "originOfExonyms": "Wakwere est la forme swahili du nom (préfixe Wa- pour les personnes) et Kikwere celle de la langue. Ngh'wele est le nom de la langue chez ses locuteurs, écrit ainsi par Legère (2003). Nous n'avons trouvé aucune source qui explique l'origine de ces noms.",
       "whyProblematic": null,
-      "contemporaryUsage": "Kwere est le nom employé en Tanzanie et en anglais pour désigner ce peuple. Wakwere est la forme swahili. Les personnes concernées se nomment Ngh'wele. L'ancien président tanzanien Jakaya Kikwete est la personnalité d'ascendance kwere la plus connue.",
+      "contemporaryUsage": "Kwere est le nom employé en anglais et dans les ouvrages sur la Tanzanie pour ce peuple et sa langue ; Wakwere est la forme swahili et Ngh'wele le nom de la langue chez ses locuteurs.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Groupe Ruvu, Bantu de la cote nord-est (Northeast Coast Bantu), sous-groupe G.32",
       "historicalRegion": "District de Bagamoyo, Region Pwani (cote), Tanzanie",
@@ -35,8 +35,8 @@
         "Installation dans la zone de Bagamoyo, a l'interieur depuis la cote, repoussant progressivement les chasseurs-cueilleurs San"
       ],
       "historicalSettlementZones": [
-        "District de Bagamoyo (zone principale : 35 404 personnes en 1967)",
-        "District de Kisarawe (3 857 personnes en 1967)",
+        "District de Bagamoyo",
+        "District de Kisarawe",
         "District de Chalinze, Region Pwani",
         "Zone entre Bagamoyo et la riviere Wami au nord, et jusqu'a Msata a l'ouest sur la route Dar es Salaam-Arusha"
       ],
@@ -54,7 +54,7 @@
       "mainLanguage": "Kwere (Ngh'wele, Kikwere)",
       "isoCodes": ["cwe"],
       "dialects": [],
-      "vehicularRole": "Langue maternelle des Kwere. Le swahili est dominant sur la cote est-africaine depuis des siecles et les Kwere sont generalement bilingues kwere-swahili. Des anciens de Bagamoyo ont confirme ce bilinguisme lors d'une conference en 2002 pour la nomination UNESCO de Bagamoyo."
+      "vehicularRole": "Langue maternelle des Kwere. Le swahili est dominant sur la cote est-africaine depuis des siecles et les Kwere sont generalement bilingues kwere-swahili. Legère (2003) décrit une liste de mots ngh'wele-swahili-anglais, issue de relevés des années 1970 revus en 2001 et 2002 avec des locuteurs ngh'wele. Glottolog classe le kwere (kwer1261, ISO 639-3 cwe) dans le groupe Ruvu des langues bantoues de la côte nord-est."
     },
     "culture": {
       "majorRites": "Rites d'initiation masculins : circoncision des garcons entre 5 et 7 ans dans la brousse, celebree par des danses. Rites d'initiation feminins : reclusion lors du premier cycle menstruel (mkore), serie de rites educatifs culminant dans une danse de sortie (mlao) marquant la maturite complete. Le mwana hiti est une poupee sculptee (figure de femme en bois) que les filles puberes prennent en charge comme un enfant reel pendant leur initiation, la lavant, l'huilant et la nourrissant, symbole de fertilite et de contact avec les ancetres.",
@@ -66,20 +66,29 @@
       "kingdomsOrChiefdoms": "Pas de royaume centralise. Organisation en villages independants avec un chef local (mpasi). Deux sous-chefs existerent durant la colonisation sans base dans une procedure traditionnelle etablie.",
       "relationsWithNeighbors": "Relations commerciales et de mariage avec les Zaramo (au sud), les Zigula et les Doe (au nord), les Luguru (a l'ouest) et les Swahili (sur la cote). Les differences entre ces groupes matrilineaires Bantu de la cote sont minimales ; les frontieres strictes furent etablies par les administrateurs coloniaux britanniques.",
       "conflictsOrAlliances": "Coexistence pacifique et intermariage frequents avec les groupes voisins (Zaramo, Zigula, Luguru). Relations commerciales etablies avec les pecheurs swahili. Influence de l'expedition Livingstone (XIXe siecle) sur les Kwere de Bagamoyo.",
-      "diaspora": "Petites communautes Kwere (Ngh'were) dans la region de Morogoro (3 764 en 1967) et a Dar es Salaam (2 902 en 1967)."
+      "diaspora": "Petites communautés kwere dans la région de Morogoro et à Dar es Salaam, d'après des sources de seconde main non vérifiées."
     },
     "demography": {
-      "totalPopulation": 150000,
-      "referenceYear": 2025,
-      "source": "Estimation basee sur 98 000 en 1987 (Wikipedia Kwere people) et la tendance demographique tanzanienne. Le recensement de 1967 comptait 48 132 Ngh'wele. Les recensements post-1967 en Tanzanie ne relevent plus l'appartenance ethnique.",
-      "distributionByCountry": [
-        {
-          "country": "TZA",
-          "population": 150000
-        }
-      ]
+      "totalPopulation": null,
+      "referenceYear": null,
+      "source": "Nous n'avons trouvé aucun chiffre récent et sourcé : les recensements tanzaniens ne relèvent plus l'appartenance ethnique, et les chiffres de 1967 et de 1987 que citent des sites de seconde main n'ont pas pu être vérifiés dans l'ouvrage d'origine.",
+      "distributionByCountry": []
     },
     "sources": [
+      {
+        "title": "Trilingual Ngh'wele-Swahili-English and Swahili-Ngh'wele-English wordlist",
+        "url": "https://web.archive.org/web/20120513211856/http://www.sprak.gu.se/digitalAssets/1307/1307411_nghwele.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Karsten Legère, département des langues orientales et africaines, université de Göteborg, janvier 2003 ; introduction lue dans la copie archivée le 8 novembre 2026."
+      },
+      {
+        "title": "Kwere, Glottolog (kwer1261)",
+        "url": "https://glottolog.org/resource/languoid/id/kwer1261",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue, ISO 639-3 cwe, rattachée au groupe Ruvu ; lue le 8 novembre 2026."
+      },
       {
         "title": "Kwere in Tanzania – Joshua Project, 2024",
         "url": "https://joshuaproject.net/people_groups/12923",
@@ -109,7 +118,11 @@
         "tier": "official",
         "source_kind": "linguistic_reference"
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "kwer1261",
+      "iso639_3": "cwe"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Kwere désigne un peuple de la région de Bagamoyo, sur la côte de la Tanzanie, et sa langue, le kikwere en swahili. La langue s'appelle Ngh'wele chez ses locuteurs, et le projet retient ce nom comme celui que le peuple se donne. On ne sait pas avec certitude d'où viennent les noms Kwere et Ngh'wele : les sources lues ne les expliquent pas. La plus ancienne trace de Kwere date de 1871, celle de Ngh'wele de 2003.",

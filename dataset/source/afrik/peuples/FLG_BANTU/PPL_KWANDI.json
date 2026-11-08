@@ -7,10 +7,10 @@
     "appellations": {
       "mainName": "Kwandi",
       "selfAppellation": "Kwandi",
-      "exonyms": ["Bakwandi", "BaKwandi"],
-      "originOfExonyms": "Le prefixe bantu Ba- est utilise pour designer le peuple collectivement (BaKwandi). Le nom proviendrait du fondateur Mwanabinyi, qui établit sa chefferie dans les terres precedemment occupees par les Subiya et Mbukushu.",
+      "exonyms": ["Bakwandi", "BaKwandi", "Akwandi"],
+      "originOfExonyms": "Nous n'avons trouvé aucune source qui explique l'origine du nom Kwandi. Le préfixe bantu Ba- sert à désigner un peuple au pluriel. Kamuwanga (2008) écrit que le chef Mwanambinyi s'installe dans la région de Senanga et que son peuple est connu sous le nom d'Akwandi.",
       "whyProblematic": null,
-      "contemporaryUsage": "Les Kwandi sont reconnus comme l'un des groupes proto-Lozi de la Province Occidentale de Zambie. Ils sont aujourd'hui integres dans le grand ensemble Lozi-Barotse tout en maintenant une identite distincte.",
+      "contemporaryUsage": "Kamuwanga (2008) range les Kwandi dans le groupe luyana du Barotseland, avec les Kwangwa, les Muenyi et les Mbowe, et parmi les peuples proches des premiers Lozi. Nous n'avons pas trouvé de source récente qui décrive leur identité aujourd'hui.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Groupe Luyana-Lozi, sous-groupe proto-Lozi, Bantu occidental",
       "historicalRegion": "Province Occidentale de Zambie, plaine du Barotseland",
@@ -18,84 +18,80 @@
     },
     "ethnicities": ["Kwandi", "BaKwandi"],
     "origins": {
-      "ancientOrigins": "Les Kwandi sont une ramification directe du peuple Luyi (ancetres des Lozi). Les Luyi arriverent autour de Mongu sur la plaine d'inondation du Barotseland vers le milieu du XVIIe siecle sous la conduite d'une femme nommee Mwambwa. Sa fille lui succeda avant d'etre contestee par son fils Mboo qui prit la direction. C'est lors du regne de Mboo que son parent Mwanabinyi fut envoye fonder une nouvelle chefferie au sud.",
-      "formationPeriod": "Milieu du XVIIe siecle, lors du reign de Mboo, premier roi etabli des Luyi. Mwanabinyi s'installa au sud, prenant possession des terres des Subiya et Mbukushu. Pendant plus d'un siecle, les Kwandi se developperent de facon independante sous l'autorite nominale du chef Luyi.",
+      "ancientOrigins": "Selon Kamuwanga (2008), qui suit Jalla (1954), de petits groupes de la famille royale quittent le royaume du roi Mboo, installé à Kalabo, et descendent vers le sud, peut-être après des querelles de succession. Mwanambinyi installe alors sa chefferie dans la région de Senanga.",
+      "formationPeriod": "Nous n'avons pas trouvé de date sourcée pour la fondation de la chefferie de Mwanambinyi.",
       "migrationRoutes": [
-        "Du bassin du Congo vers la plaine du Barotseland (XVIIe siecle)",
-        "De Mongu vers le sud de la plaine d'inondation du Zambezi superieur sous Mwanabinyi"
+        "Du royaume de Mboo, à Kalabo, vers la région de Senanga, plus au sud (Kamuwanga 2008, p. 26)"
       ],
       "historicalSettlementZones": [
-        "Zone sud de la plaine du Barotseland, Province Occidentale de Zambie",
-        "Terres anciennement occupees par les Subiya (qui restent presentes) et les Mbukushu (maintenant au Caprivi et nord du Botswana)"
+        "Région de Senanga, Province de l'Ouest, Zambie"
       ],
-      "unificationsOrDivisions": "Apres leur fondation au XVIIe siecle, les Kwandi vecurent independants jusqu'a l'arrivee des Kololo en 1830. Les Kololo, fuyant les guerres Zulu depuis l'Afrique du Sud, conquirent l'empire Luyi en 4 ans de combats. Durant la domination kololo (1830-1864), le Kwandi soutint un candidat rival (Mbua) pour la succession Kololo sans succes. Apres la restauration Luyi sous Sipopa, les Kwandi qui avaient soutenu la cause rivale furent persecutes et beaucoup fuirent vers le nord (Lukwakwa). Les Luyi restaures devinrent les Lozi.",
-      "externalInfluences": "Conquete Kololo dans les annees 1830 avec imposition du Sotho (kololo) comme lingua franca. Les Kwandi maintinrent leur version de la langue Luyi durant cette periode. Colonisation britannique apres 1890. L'administration britannique integra le Barotseland comme protectorat en 1900.",
-      "majorHistoricalEvents": "Fondation par Mwanabinyi au XVIIe siecle. Conquete Kololo vers 1830. Tentative echouee de soutenir Mbua contre la succession Kololo. Exil de nombreux Kwandi a Lukwakwa. Restauration Lozi sous Sipopa. Persecutions par Sipopa des Kwandi qui l'avaient conteste. Integration dans l'empire Lozi-Barotse sous administration britannique."
+      "unificationsOrDivisions": "Kamuwanga (2008) place les Kwandi, avec les Mbowe et les Kwangwa, parmi les peuples proches des premiers Lozi, qu'il distingue des peuples soumis plus tard.",
+      "externalInfluences": null,
+      "majorHistoricalEvents": "Kamuwanga (2008, p. 27) note que les tambours royaux maoma, utilisés lors de l'installation du roi lozi, ont été pris à Mwanambinyi, qui les avait lui-même repris aux Mbukushu."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Chefferie fondee par Mwanabinyi, sans chef independant apres le fondateur : les Kwandi payaient tribut au chef Luyi et etaient consideres comme proto-Lozi, c'est-a-dire appartenant au noyau de l'aristocratie du Barotseland. Dans la hierarchie tribale Lozi, les Kwangwa et les Kwandi occupaient le rang le plus eleve apres les Lozi proprement dits.",
-      "clanOrganization": "Organisation clanique liee a la descendance du fondateur Mwanabinyi. Les Kwandi forment un groupe de parenté avec des liens forts aux Kwangwa (issus de Mange, autre parent de Mboo).",
-      "roleOfLineages": "Les lignages assurent la transmission des droits fonciers et des privileges dans la hierarchie du Barotseland. La connexion a Mwanabinyi est le marqueur principal de l'identite Kwandi.",
-      "religiousAuthority": "Autorite spirituelle liee aux rites royaux Lozi, notamment la grande ceremonie Kuomboka. Les croyances traditionnelles animistes coexistent avec le christianisme introduit par les missionnaires au XIXe siecle."
+      "traditionalPoliticalSystem": "Nous n'avons pas trouvé de source qui décrive l'organisation politique des Kwandi.",
+      "clanOrganization": null,
+      "roleOfLineages": null,
+      "religiousAuthority": null
     },
     "languages": {
-      "mainLanguage": "Kwandi (dialecte Luyana)",
+      "mainLanguage": "Kwandi (parler proche du luyana)",
       "isoCodes": [],
-      "dialects": ["Kwanga (apparente, aussi note K.721 selon Maho 2009)"],
-      "vehicularRole": "Le Kwandi est un dialecte de la langue Luyana, apparente au Kwangwa. Pendant la domination Kololo, le Sotho (Kololo) devint la lingua franca et finit par donner naissance au Lozi moderne. Les Kwandi utiliserent l'ancien Luyi en parallele avec le Lozi. Aujourd'hui le Lozi est la langue vehiculaire dominante de la Province Occidentale."
+      "dialects": [],
+      "vehicularRole": "Kamuwanga (2008, p. 22) écrit que les Kwandi parlent un dialecte luyi. Johnston, dans l'introduction du livre de Stirke (1922), cite le « Si-kwandi » parmi des parlers du luyi connus seulement de nom. Nous n'avons trouvé aucune description plus récente."
     },
     "culture": {
-      "majorRites": "Participation aux ceremonies royales Lozi, notamment Kuomboka (migration annuelle du roi Lozi des plaines inondees vers les terres hautes) et Kathanga. Ces ceremonies reunissent tous les peuples du Barotseland, incluant les Kwandi.",
-      "symbols": "Appartenance au noyau proto-Lozi confere aux Kwandi un statut de prestige dans la societe du Barotseland.",
-      "artsAndMusic": "Traditions musicales et de danse communes avec les autres peuples du Barotseland. Chants et percussions lors des ceremonies royales.",
-      "spiritualities": "Croyances animistes traditionnelles centrees sur les esprits ancestraux et les forces de la nature. Introduction du christianisme par les missionnaires Paris Evangelical Missionary Society au XIXe siecle. Aujourd'hui, christianisme (protestantisme, catholicisme) et pratiques traditionnelles coexistent."
+      "majorRites": null,
+      "symbols": null,
+      "artsAndMusic": null,
+      "spiritualities": null
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Chefferie Kwandi fondee par Mwanabinyi au XVIIe siecle, integree a l'empire Luyi-Lozi. Le Kwandi ne possedait pas de chef propre apres le fondateur mais jouissait d'un statut privilegié dans la hierarchie du Barotseland comme groupe proto-Lozi.",
-      "relationsWithNeighbors": "Liens etroits avec les Kwangwa (autre groupe proto-Lozi fonde par Mange). Relations avec les Subiya (dont ils occupaient les terres) et les Mbukushu. Integration dans l'ensemble Lozi-Barotse qui comprend plus de 25 groupes Bantu de la Province Occidentale.",
-      "conflictsOrAlliances": "Alliance nominale avec les chefs Luyi. Opposition partielle a l'hegemonie Kololo dans les annees 1830-1864. Conflit avec Sipopa lors de la restauration Lozi dans les annees 1860. Reunification progressive sous l'empire Lozi-Barotse.",
+      "kingdomsOrChiefdoms": "Chefferie de Mwanambinyi, dans la région de Senanga (Kamuwanga 2008, p. 26).",
+      "relationsWithNeighbors": "Kamuwanga (2008, p. 26) écrit que les Mbukushu ont d'abord possédé les tambours maoma, que Mwanambinyi leur a repris.",
+      "conflictsOrAlliances": null,
       "diaspora": null
     },
     "demography": {
-      "totalPopulation": 15000,
-      "referenceYear": 2025,
-      "source": "Estimation. Les Kwandi sont un petit groupe de la Province Occidentale de Zambie, integres dans le recensement Lozi. Donnees specifiques non disponibles dans les sources officielles. La langue Kwangwa/Kwandi compte 2 400 locuteurs selon le recensement zambien de 2010 (source Wikipedia Kwangwa language).",
-      "distributionByCountry": [
-        {
-          "country": "ZMB",
-          "population": 15000
-        }
-      ]
+      "totalPopulation": null,
+      "referenceYear": null,
+      "source": "Nous n'avons trouvé aucun chiffre sourcé pour les Kwandi.",
+      "distributionByCountry": []
     },
     "sources": [
       {
-        "title": "Kwangwa – Zambia's Traditional History, 2020",
-        "url": "https://traditionalzambia.home.blog/tribes-of-zambia/second-bantu-invasion/luba/lozi/kwangwa/",
-        "tier": "unverified",
-        "source_kind": "community"
+        "title": "Prayer for protection: a comparative perspective on Psalms in relation to Lozi prayer traditions",
+        "url": "https://repository.up.ac.za/server/api/core/bitstreams/ade0dfa8-65e2-42d7-afcf-914a6ab8ad2f/content",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse de doctorat de Liswaniso Kamuwanga, université de Pretoria, 2008. Chapitre 2 lu en entier le 8 novembre 2026, notamment les pages 22 et 26."
       },
       {
-        "title": "History of the Kwangwa people – Facebook/Barotsenetwork, 2023",
-        "url": "https://www.facebook.com/groups/759153900821468/posts/10082861068450658/",
-        "tier": "unverified",
-        "source_kind": "community"
+        "title": "Barotseland: eight years among the Barotse, avec une introduction de Harry Johnston",
+        "url": "https://www.gutenberg.org/ebooks/71338",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "D. E. C. Stirke, Londres, John Bale, Sons et Danielsson, 1922. Livre de l'époque coloniale, lu sur l'édition numérique du Projet Gutenberg le 8 novembre 2026."
+      },
+      {
+        "title": "Kwangwa (dialecte), Glottolog",
+        "url": "https://glottolog.org/resource/languoid/id/kwan1275",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog classe le kwangwa comme dialecte du luyana. Aucune fiche propre au kwandi n'a été trouvée sur Glottolog le 8 novembre 2026."
       },
       {
         "title": "About Zambia – Western Province Provincial Administration",
         "url": "https://www.wes.gov.zm/?page_id=1186",
         "tier": "official",
         "source_kind": "government"
-      },
-      {
-        "title": "Understanding the history of Lozi people – Facebook, 2022",
-        "url": "https://www.facebook.com/groups/759153900821468/posts/8230979013638882/",
-        "tier": "unverified",
-        "source_kind": "community"
       }
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Kwandi désigne un peuple de langue luyi du Barotseland, dans l'ouest de la Zambie, voisin des Kwangwa ; on écrit aussi Akwandi. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Nous n'avons trouvé aucune explication sourcée de l'origine du nom ; nous présentons plus bas ce que disent les sources. Le nom Luyi, plus ancien, est traité sur la fiche des Lozi.",
+    "summary": "Le nom Kwandi désigne un peuple de langue luyi du Barotseland, dans l'ouest de la Zambie, voisin des Kwangwa ; on écrit aussi Akwandi, et Si-kwandi pour le parler. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Nous n'avons trouvé aucune explication sourcée de l'origine du nom ; nous présentons plus bas ce que disent les sources. Le nom Luyi, plus ancien, est traité sur la fiche des Lozi.",
     "selfNameUnknown": true,
     "names": [
       {
@@ -104,9 +100,32 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom d'un peuple luyana du Barotseland ; une forme proche, Akwandi, est citée d'après un ouvrage de 1973.",
-        "periodLabel": "Une forme proche est citée d'après un ouvrage de 1973 ; en usage aujourd'hui",
+        "shortLine": "Le nom d'un peuple luyana du Barotseland ; une forme proche, Si-kwandi, est écrite en 1922.",
+        "periodLabel": "Écrit depuis 1922 ; en usage aujourd'hui",
         "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kwandi apparaît sous la forme « Si-kwandi » dans l'introduction de Harry Johnston au livre de D. E. C. Stirke, publié en 1922. Johnston y cite le Si-kwandi parmi des parlers du luyi dont il n'a vu aucune liste de mots : on le lui a seulement signalé, au nord-ouest ou au nord-est de Lialui. C'est la plus ancienne trace de ce nom que le projet connaisse. Elle nomme un parler, pas un peuple.",
+            "formAsWritten": "Si-kwandi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Barotseland: eight years among the Barotse, avec une introduction de Harry Johnston",
+                "author": "D. E. C. Stirke",
+                "year": 1922,
+                "url": "https://www.gutenberg.org/ebooks/71338",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, John Bale, Sons et Danielsson, 1922. Lu sur l'édition numérique du Projet Gutenberg le 8 novembre 2026 ; la page imprimée n'est pas donnée par cette édition.",
+                "page": "introduction de Harry Johnston"
+              }
+            ]
+          },
           {
             "period": {
               "from": 2008,
@@ -136,9 +155,8 @@
               "label": "1973, d'après Mainga"
             },
             "era": "modern",
-            "statement": "Le nom Kwandi a une forme proche, Akwandi, que Liswaniso Kamuwanga reprend en 2008 de l'historienne Mutumba Mainga (1973, p. 28) et de Brown (1998, p. 27). Mwanambinyi, parti du royaume luyana de Kalabo, installe sa chefferie dans la région de Senanga, et son peuple « est connu » sous le nom d'Akwandi. C'est la plus ancienne trace de ce nom que le projet connaît ; elle est de seconde main, car le projet n'a lu ni Mainga ni Brown. Elle ne dit pas depuis quand ce nom est employé.",
+            "statement": "Le nom Kwandi a une forme proche, Akwandi, que Liswaniso Kamuwanga reprend en 2008 de l'historienne Mutumba Mainga (1973, p. 28) et de Brown (1998, p. 27). Mwanambinyi, parti du royaume luyana de Kalabo, installe sa chefferie dans la région de Senanga, et son peuple « est connu » sous le nom d'Akwandi. Cette trace est plus récente que celle de 1922 et de seconde main, car le projet n'a lu ni Mainga ni Brown. Elle ne dit pas depuis quand ce nom est employé.",
             "formAsWritten": "Akwandi",
-            "birth": true,
             "sources": [
               {
                 "title": "Prayer for protection: a comparative perspective on Psalms in relation to Lozi prayer traditions",
