@@ -1,0 +1,235 @@
+{
+  "description": "Proposals for the ai_generated sources of the premium surnames batch 14. Status proposed only: the operator decides each one. Quotes are verbatim; each supports line says whether the page was opened in this session or the quote comes from the fiche's own recorded reading notes.",
+  "verifications": [
+    {
+      "fiche": "patronymes/PAT_BENJELLOUN.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BENJELLOUN; nameMain: Benjelloun; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Tatouage de la Mémoire — Institut royal de la culture amazighe",
+          "author": "Lhoussain Rachid",
+          "year": 2005,
+          "url": "https://biblio.ircam.ma/pmb/uploads/publications/72.pdf",
+          "source_kind": "academic",
+          "quote": "Des noms comme « Benchekroun », « Gessous », « Bennani », « Benjelloun » […] ont été transmis de génération en génération sans le moindre problème",
+          "supports": "Benjelloun is a hereditary Moroccan family name in the towns. It does not settle nameSystem (nisba) or the social unit. Quote taken from the fiche's own reading notes (p. 100), not re-opened in this session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_BENKIRANE.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BENKIRANE; nameMain: Benkirane",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Kitâb el-Istiqsâ li-akhbâri doual el-Maghrib el-Aqsâ, quatrième partie : Chronique de la dynastie alaouie du Maroc, tome II",
+          "author": "Ahmed ben Khâled Ennâsiri Esslâoui, traduction d'Eugène Fumey",
+          "year": 1907,
+          "url": "https://archive.org/details/32882019289126-archivesmarocai",
+          "source_kind": "archive",
+          "quote": "mourut le chéïkh très docte, l'imâm, le dernier des scrutateurs du Magrib, Sîdi Mohammed Ettayyéb ben 'Abdelméjîd ben 'Abdesselâm ben Kîrân Elfèsi, auteur d'ouvrages remarquables",
+          "supports": "The form ben Kîrân is attested at Fès in the chronicle (p. 42, year 1227 of the hegira). It attests the name form, not an etymology. Quote taken from the fiche's own reading notes, not re-opened in this session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_BENNANI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BENNANI; nameMain: Bennani",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "L'artiste peintre Karim Bennani est décédé à Rabat",
+          "author": "Nisrine Zaoui",
+          "year": 2023,
+          "url": "https://fr.le360.ma/culture/lartiste-peintre-karim-bennani-est-decede-a-rabat-273236/",
+          "source_kind": "press",
+          "quote": "Karim Bennani est décédé à l'âge de 87 ans ce mardi 3 janvier 2023 à Rabat.",
+          "supports": "Bennani is borne in Morocco by a documented deceased person (Fès 1936 - Rabat 2023). Opened in this session. It says nothing about the origin of the name."
+        },
+        {
+          "title": "Tatouage de la Mémoire — Institut royal de la culture amazighe",
+          "author": "Lhoussain Rachid",
+          "year": 2005,
+          "url": "https://biblio.ircam.ma/pmb/uploads/publications/72.pdf",
+          "source_kind": "academic",
+          "quote": "Des noms comme « Benchekroun », « Gessous », « Bennani », « Benjelloun » […] ont été transmis de génération en génération sans le moindre problème",
+          "supports": "Bennani is a hereditary Moroccan family name in the towns. Quote taken from the fiche's own reading notes (p. 100), not re-opened in this session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_BENYOUCEF.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BENYOUCEF; nameMain: Benyoucef",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "L'usage des prénoms bibliques en Algérie",
+          "author": "Yamina Taibi-Maghraoui",
+          "year": 2024,
+          "url": "https://saber.unioeste.br/index.php/onomastica/article/view/32826",
+          "source_kind": "academic",
+          "quote": "Certains de ces prénoms se sont transmués en patronymes, engendrant ainsi des appellations telles que « Ben Brahim », « Ould Brahim », « Bensmail », « Bendaoud », « Benyoucef »",
+          "supports": "Benyoucef is a first name turned family name in the civil registers of Mostaganem (Algeria). Quote taken from the fiche's own reading notes (p. 7), not re-opened in this session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_BEN_BADIS.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BEN_BADIS; nameMain: Ben Badis",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Ben Badis, retour sur le parcours héroïque de l'un des pères du nationalisme algérien",
+          "author": "Farid Larbi",
+          "year": 2022,
+          "url": "https://www.algerie360.com/ben-badis-retour-sur-le-parcours-de-lun-des-peres-du-nationalisme/",
+          "source_kind": "press",
+          "quote": "né le 4 décembre 1889 à Constantine",
+          "supports": "Ben Badis is a Constantine family name borne by a documented deceased person (died 16 April 1940 in the same city). Opened in this session. It does not establish the name system."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_BEN_SALAH.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BEN_SALAH; nameMain: Ben Salah",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Décès de l'ancien ministre Ahmed Ben Salah",
+          "author": null,
+          "year": 2020,
+          "url": "https://kapitalis.com/tunisie/2020/09/16/deces-de-lancien-ministre-ahmed-ben-salah/",
+          "source_kind": "press",
+          "quote": "est décédé aujourd’hui, mercredi 16 septembre 2020",
+          "supports": "Ben Salah is borne in Tunisia by a documented deceased person. Opened in this session. The article gives his age as 96, which contradicts his 1926 birth; the age is not used."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_BERENGER.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BERENGER; nameMain: Bérenger",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Mauritius National Assembly — List of Former Leaders of the House",
+          "author": "Assemblée nationale de Maurice",
+          "year": null,
+          "url": "https://mauritiusassembly.govmu.org/mauritiusassembly/index.php/roles/",
+          "source_kind": "government",
+          "quote": "Hon. Paul Raymond Bérenger, G.C.S.K",
+          "supports": "Bérenger is borne in Mauritius, including in the National Assembly. Quote taken from the fiche's own reading notes, not re-opened in this session. It says nothing about the origin."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_BERHANE.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BERHANE; nameMain: Berhane",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Lexicon linguae aethiopicae",
+          "author": "August Dillmann",
+          "year": 1865,
+          "url": "https://archive.org/details/lexiconlinguaeae00dilluoft",
+          "source_kind": "linguistic_reference",
+          "quote": "lux, lumen",
+          "supports": "Ge'ez ብርሃን (column 500) means 'light', the word the name Berhane is read from. Dillmann does not give it as a personal name. Quote taken from the fiche's own reading notes, not re-opened in this session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_BIGIRIMANA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BIGIRIMANA; nameMain: Bigirimana",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "The Idea of God in Ruanda-Urundi (in African Ideas of God)",
+          "author": "Rosemary Guillebaud",
+          "year": 1950,
+          "url": "https://archive.org/details/dli.ernet.233313",
+          "source_kind": "academic",
+          "quote": "Bigir-imana, ‘Imana does it so’",
+          "supports": "Meaning of the name (p. 195). Quote taken from the fiche's own reading notes, not re-opened in this session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_BINDANG.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BINDANG; nameMain: Bindang; nameSystem: clan_name",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "reviewNote": "No work found that states Bindang is a clan name or ties it to the Fang. The only source read (UN Africa Renewal, already on the fiche) attests Bindang in a living person's name in Equatorial Guinea.",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    }
+  ]
+}
