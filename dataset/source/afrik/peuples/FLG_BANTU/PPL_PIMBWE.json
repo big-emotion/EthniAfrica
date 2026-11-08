@@ -51,7 +51,7 @@
       "spiritualities": "Animisme traditionnel avec culte du dieu soleil Ilyuba, du dieu de la pluie Katavi, et de divinites villageoises. Sacrifices aux sites sacres pour eviter la famine ou les maladies. Aujourd'hui, majorite musulmane et catholique romaine avec une minorite evangelique, souvent en syncrethisme avec les croyances ancestrales."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Chefferies locales avec lineages cheffaux (qualifies de Nyamwezi dans les sources coloniales du XIXe siecle). Les chefs Pimbwe etaient en interaction avec les chefs Kimbu et Konongo dans la region du Rukwa.",
+      "kingdomsOrChiefdoms": "Chefferies locales avec lineages cheffaux (qualifies de Nyamwezi dans les sources coloniales du XIXe siecle). Les chefs Pimbwe etaient en interaction avec les chefs Kimbu et Konongo dans la region du Rukwa. La tradition pimbwe garde une liste d'environ 23 chefs, rattachée à la forteresse palissadée de Maji Moto, abandonnée en 1927 (Waters, 2009).",
       "relationsWithNeighbors": "Relations complexes avec les Fipa, Bende, Kimbu et Konongo, peuples voisins du Rukwa. Multilinguisme et inter-mariages frequents. Depuis les annees 1970, cohabitation tendue avec les Sukuma (pasteurs) qui ont occupe de grandes surfaces de terres, reduisant les Pimbwe souvent au statut de travailleurs agricoles sur les fermes Sukuma.",
       "conflictsOrAlliances": "Conflits avec la faune sauvage autour du Parc national de Katavi. Tensions foncieres avec les Sukuma depuis les annees 1970. Collaboration avec le Peoples of Mpimbwe Fund (Cultural Survival) cree en 2003 pour soutenir les communautes Pimbwe et Sukuma.",
       "diaspora": null
@@ -90,7 +90,11 @@
         "title": "Social Organization and Social Status in Nineteenth and Twentieth Century Rukwa, Tanzania",
         "url": "https://asq.africa.ufl.edu/wp-content/uploads/sites/168/Waters-V11Is1.pdf",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "author": "Tony Waters",
+        "year": 2009,
+        "page": "section « The Decline of the Pimbwe Chiefs in the Early Twentieth Century » et notes 17 et 99",
+        "notes": "Article de l'African Studies Quarterly, volume 11, numéro 1 (automne 2009). Passage lu le 8 novembre 2026 : « Pimbwe tradition traces the origin of the settlement using a king-list that has approximately 23 chiefs » ; la forteresse palissadée de Maji Moto est abandonnée en 1927 et la cour pimbwe s'installe à Usevia. La note 17 précise que Mpimbwe est la forme d'usage en Tanzanie et Wapimbwe le nom des habitants. L'article classe le pimbwe, comme le fipa et le rungwa, parmi les langues dont l'origine est située en Zambie."
       },
       {
         "title": "A Description of Pimbwe (Bantu, Tanzania) – Trinity Western University / ARCA",
