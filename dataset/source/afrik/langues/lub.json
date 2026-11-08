@@ -10,15 +10,21 @@
   "nameFr": "Kiluba (luba-katanga)",
   "nameEn": "Luba-Katanga",
   "alternateNames": ["Kiluba", "Luba-Shaba"],
-  "whyProblematic": null,
+  "whyProblematic": "Le nom Luba a couvert au XIXe siècle de nombreux peuples du Katanga, du Maniema et des Kasaï, avant de se resserrer sur deux grands groupes, appelés en 1993 Luba-Shaba et Luba-Kasaï, selon l'historien Thomas Turner. Le nom luba-shaba vient de Shaba, « cuivre » en swahili, le nom donné au Katanga en 1972 sous Mobutu. Ses locuteurs appellent leur langue kiluba.",
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
   "peoples": [
-    { "name": "Luba", "peopleId": "PPL_LUBA" },
-    { "name": "Luba-Katanga", "peopleId": "PPL_LUBA_KATANGA" }
+    {
+      "name": "Luba",
+      "peopleId": "PPL_LUBA"
+    },
+    {
+      "name": "Luba-Katanga",
+      "peopleId": "PPL_LUBA_KATANGA"
+    }
   ],
   "nameHistory": {
-    "summary": "Le nom kiluba désigne la langue des Luba du Katanga, dans le sud-est de la République démocratique du Congo, et c'est le nom que ses locuteurs lui donnent. On y retrouve le nom des Luba, précédé de ki- ; au Kasaï, le même nom se dit tshiluba. Les linguistes l'appellent aussi luba-katanga. Les sources que nous avons lues n'expliquent pas l'origine du nom Luba lui-même.",
+    "summary": "Le nom kiluba désigne la langue des Luba du Katanga, dans le sud-est de la République démocratique du Congo, et c'est le nom que ses locuteurs lui donnent. On y retrouve le nom des Luba, précédé de ki- ; au Kasaï, le même nom se dit tshiluba. Les linguistes l'appellent aussi luba-katanga, et autrefois luba-shaba. Une explication du nom Luba, rapportée par un missionnaire en 1913, est présentée plus bas.",
     "names": [
       {
         "nameText": "Kiluba",
@@ -56,7 +62,7 @@
               "to": null,
               "label": "Sens donné par les auteurs"
             },
-            "statement": "Le nom kiluba est formé sur le nom des Luba, précédé d'un préfixe. Un tel préfixe sert à former le nom d'une langue, comme Buluba, « la langue des Baluba », chez William M. Morrison en 1906. Au Katanga, J.-M. Jenniges note en 1908 que ki- se prononce tshi- quand on va vers le nord : on dit tshi-tanda pour ki-tanda. Nous n'avons pas trouvé de source qui explique l'origine du nom Luba lui-même.",
+            "statement": "Le nom kiluba est formé sur le nom des Luba, précédé d'un préfixe. Un tel préfixe sert à former le nom d'une langue, comme Buluba, « la langue des Baluba », chez William M. Morrison en 1906. Au Katanga, J.-M. Jenniges note en 1908 que ki- se prononce tshi- quand on va vers le nord : on dit tshi-tanda pour ki-tanda.",
             "aspect": "meaning",
             "sources": [
               {
@@ -78,6 +84,48 @@
                 "source_kind": "linguistic_reference",
                 "page": "page de titre et prolégomènes, § 1, alphabet",
                 "notes": "Publication de l'État indépendant du Congo, 1908. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1913,
+              "label": "Explication publiée en 1913"
+            },
+            "statement": "Le nom Luba serait, selon la tradition rapportée par le missionnaire Pierre Colle chez les Luba de l'est du Katanga, celui d'un grand chef ; Baluba voudrait donc dire « les gens de Luba ». Dans la langue courante, ajoute-t-il, luba veut dire « maladie, faute, erreur », d'où ku-luba, « errer, se tromper ». Les habitants appellent leur pays Buluba.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome I, Collection de monographies ethnographiques",
+                "author": "R. P. Colle, des Pères Blancs",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongobe01colluoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chapitre A, § 1, « Etymologie »",
+                "notes": "Bruxelles, Albert Dewit et Institut international de bibliographie, 1913, collection de monographies ethnographiques dirigée par Cyr. van Overbergh. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur était missionnaire catholique chez les Luba de l'est du Katanga."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1801,
+              "to": 1993,
+              "label": "Du XIXe siècle à 1993"
+            },
+            "statement": "Le nom Luba existe déjà au XIXe siècle, chez les premiers voyageurs venus de l'extérieur, mais il s'applique alors à de nombreux peuples du Katanga, du Maniema et des deux Kasaï, selon l'historien Thomas Turner. Son sens s'est ensuite resserré : en 1993, il ne désigne plus que les grands groupes appelés Luba-Shaba et Luba-Kasaï.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "« Batetela », « Baluba », « Basonge »: Ethnogenesis in Zaire",
+                "author": "Thomas Turner",
+                "year": 1993,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1993_num_33_132_1494",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Cahiers d'études africaines, 33 (132), 1993, p. 587-612. Lu le 3 novembre 2026 sur Persée, page par page.",
+                "page": "p. 608"
               }
             ]
           },
@@ -142,7 +190,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom luba-katanga est celui que le catalogue Glottolog donne au kiluba, pour le distinguer du luba-lulua parlé au Kasaï. L'historien Ndaywel è Nziem appelle les Luba du Katanga Luba shankadi. Nous n'avons pas trouvé la plus ancienne trace de ce nom.",
+            "statement": "Le nom luba-katanga est celui que le catalogue Glottolog donne au kiluba, pour le distinguer du luba-lulua parlé au Kasaï. L'historien Ndaywel è Nziem appelle les Luba du Katanga Luba shankadi.",
             "aspect": "usage",
             "sources": [
               {
@@ -167,6 +215,81 @@
             ]
           }
         ]
+      },
+      {
+        "nameText": "Luba-Shaba",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes et des historiens, d'après le nom que le Katanga a porté sous Mobutu",
+        "shortLine": "Un nom savant du kiluba, tiré de Shaba, « cuivre » en swahili, le nom du Katanga à partir de 1972.",
+        "periodLabel": "Écrit dès 1987",
+        "accounts": [
+          {
+            "period": {
+              "from": 1972,
+              "to": 1972,
+              "label": "Janvier 1972"
+            },
+            "era": "modern",
+            "statement": "Avant le nom luba-shaba, la province du Katanga devient en janvier 1972 la province du Shaba, mot qui veut dire « cuivre » en swahili, selon le Journal de l'année Larousse.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Journal de l'année, édition 1972, « Afrique, Dieu et César »",
+                "author": "Larousse",
+                "year": 1972,
+                "url": "https://www.larousse.fr/archives/journaux_annee/1972/145/afrique",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Archives en ligne du Journal de l'année Larousse, lues le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1987,
+              "to": 1987,
+              "label": "1987"
+            },
+            "era": "modern",
+            "statement": "Le nom luba-shaba figure, écrit Luba Shaba, dans la classification des langues de Merritt Ruhlen publiée en 1987, selon le catalogue Glottolog. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Glottolog — Luba-Katanga (luba1250)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/luba1250",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche lue le 11 octobre 2026 et relue le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Luba-Shaba désigne en 1993, pour l'historien Thomas Turner, l'un des deux grands groupes que recouvre encore le nom Luba, avec les Luba-Kasaï.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "« Batetela », « Baluba », « Basonge »: Ethnogenesis in Zaire",
+                "author": "Thomas Turner",
+                "year": 1993,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1993_num_33_132_1494",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Cahiers d'études africaines, 33 (132), 1993, p. 587-612. Lu le 3 novembre 2026 sur Persée, page par page.",
+                "page": "p. 608"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -178,14 +301,82 @@
       "scale": "EGIDS (Ethnologue)",
       "asOf": 2025
     },
+    "originDebated": false,
     "sources": [
       {
         "title": "Glottolog 5.3 — Luba-Katanga (luba1250)",
         "url": "https://glottolog.org/resource/languoid/id/luba1250",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Notice directe pour le code ISO 639-3 lub et le glottocode luba1250. Elle situe la langue en République démocratique du Congo, atteste notamment les variantes Kiluba et Luba-Shaba et publie le statut EGIDS 6b en 2025. Le statut constitutionnel du tshiluba ne doit pas être transféré au kiluba."
+        "notes": "Notice directe pour le code ISO 639-3 lub et le glottocode luba1250, lue le 3 novembre 2026. Elle donne les noms Kiluba, Luba-Katanga et Luba-Shaba (ce dernier chez Ruhlen en 1987 et chez Moseley et Asher en 1994) et reprend d'Ethnologue (2025) le niveau 6b de l'échelle EGIDS, langue menacée. Elle ne liste aucun dialecte et classe le sanga et le kaonde comme des langues voisines distinctes."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre d'Isidore Ndaywel è Nziem, UNESCO, 1999, lu sur UNESDOC : le kiluba parlé au Katanga, alors appelé Shaba, et les Luba shankadi."
+      },
+      {
+        "title": "Turner, Thomas, « \"Batetela\", \"Baluba\", \"Basonge\": Ethnogenesis in Zaire », Cahiers d'études africaines, 33 (132), 1993, p. 587-612",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1993_num_33_132_1494",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 sur Persée : le nom Luba, attesté au XIXe siècle pour de nombreux peuples puis restreint aux Luba-Shaba et aux Luba-Kasaï, et l'identité lulua formée avant 1895."
+      },
+      {
+        "title": "Colle, Pierre, Les Baluba (Congo belge), tome I, Bruxelles, 1913",
+        "url": "https://archive.org/details/lesbalubacongobe01colluoft",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Monographie ethnographique d'un missionnaire des Pères Blancs, lue le 3 novembre 2026 dans la numérisation d'Internet Archive. Son chapitre sur l'étymologie rapporte que Luba serait le nom d'un grand chef selon la tradition."
+      },
+      {
+        "title": "Leclerc, Jacques, « République démocratique du Congo (ex-Zaïre) », L'aménagement linguistique dans le monde, Université Laval",
+        "url": "https://www.axl.cefan.ulaval.ca/afrique/czaire.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Page lue le 3 novembre 2026. Elle compte environ 1,5 million de locuteurs du luba-shaba, sans dater ce chiffre."
+      },
+      {
+        "title": "Larousse, Journal de l'année, édition 1972, « Afrique, Dieu et César »",
+        "url": "https://www.larousse.fr/archives/journaux_annee/1972/145/afrique",
+        "tier": "referenced",
+        "source_kind": "press",
+        "notes": "Lu le 3 novembre 2026 : le Katanga devient en janvier 1972 la province du Shaba, « cuivre » en swahili."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.dialects",
+        "reason": "Nous n'avons pas trouvé de liste des dialectes du kiluba dans les sources lues. Glottolog n'en donne aucun et classe le sanga, décrit par Jenniges en 1908 sous le nom de kiluba-sanga, comme une langue voisine distincte."
+      },
+      {
+        "field": "nameHistory.names[1]",
+        "reason": "Nous n'avons pas trouvé la plus ancienne trace écrite du nom luba-katanga."
+      },
+      {
+        "field": "content.speakers",
+        "reason": "Nous n'avons pas trouvé de chiffre daté du nombre de personnes qui parlent le kiluba."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Une langue bantoue des Luba du Katanga, dans le sud-est de la RD Congo, proche du tshiluba du Kasaï.",
+      "followUp": "Pourquoi le kiluba a-t-il aussi été appelé luba-shaba ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "COD",
+          "speakers": 1500000,
+          "source": {
+            "title": "Leclerc, Jacques, « République démocratique du Congo (ex-Zaïre) », L'aménagement linguistique dans le monde, Université Laval",
+            "url": "https://www.axl.cefan.ulaval.ca/afrique/czaire.htm",
+            "tier": "referenced",
+            "notes": "« Luba-shaba (1,5 million) ». La page ne date pas ce chiffre et ne dit pas d'où il vient. Ordre de grandeur, ni recensement ni comptage."
+          }
+        }
+      ]
+    }
   }
 }
