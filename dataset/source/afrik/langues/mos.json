@@ -64,6 +64,28 @@
           },
           {
             "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "2008"
+            },
+            "era": "modern",
+            "statement": "Le nom mòoré est celui de la langue des Moose. Benoît Beucher écrit Moaga pour une personne, Moose pour le peuple, à lire « Mossé », et Moogo pour le pays. Il préfère ces formes au mot Mossi, qu'il juge mal employé au singulier comme au pluriel.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Une royauté africaine à l'heure de la mondialisation : le royaume de Ouagadougou et la question du développement au Burkina Faso",
+                "author": "Benoît Beucher",
+                "year": 2008,
+                "url": "https://shs.hal.science/halshs-01511790/file/societespolitiquescomparees6_article.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3, avertissement",
+                "notes": "Sociétés politiques comparées, n° 6, juin 2008. Article lu en texte intégral dans l'archive HAL le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1888,
               "to": 1888,
               "label": "Voyage de 1888, publié en 1892"
@@ -114,6 +136,38 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 387",
                 "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé du volume le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "era": "modern",
+            "statement": "Le nom Mossi s'écrivait de plusieurs façons, au singulier comme au pluriel, dans les textes antérieurs à 1986, année où un décret a fixé l'écriture du mooré, rappelle Anicet Kaboré. Il écrit Moosé pour le peuple, « prononcer Mossé », et moaga au singulier ; Marc Egrot, lui, écrit « Mòosé (prononcer Mossi) ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Du sida à un « syndrome » du Fonds mondial ? L'Union des religieux et coutumiers du Burkina au cœur de l'Instance de coordination nationale de lutte contre le sida",
+                "author": "Anicet Tounwendsida Kaboré",
+                "year": 2019,
+                "url": "https://theses.hal.science/tel-03972039v1/document",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "précisions orthographiques",
+                "notes": "Thèse de doctorat en sociologie, université Paris Cité, 2019. Lue dans l'archive HAL le 3 novembre 2026. L'auteur suit le décret AN IV 001/ESRS/CAB du 30 septembre 1986 sur l'écriture du mooré, que nous n'avons pas lu."
+              },
+              {
+                "title": "Des souris, des génies et des hommes. Divination par la souris chez les Mòosé au Burkina Faso",
+                "author": "Marc Egrot",
+                "year": 2007,
+                "url": "https://shs.hal.science/halshs-00257621v1/document",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 1",
+                "notes": "Dans Edmond Dounias, Élisabeth Motte-Florac et Margaret Dunham (dir.), Le symbolisme des animaux, Éditions de l'IRD, 2007, p. 861-875. Chapitre lu en texte intégral dans l'archive HAL le 3 novembre 2026."
               }
             ]
           },
@@ -207,7 +261,7 @@
     ]
   },
   "content": {
-    "vehicularRole": null,
+    "vehicularRole": "vehicular",
     "dialects": [
       "Ouapadoupou",
       "Saremdé",
@@ -217,15 +271,90 @@
       "Yana {Mossi}",
       "Zaore"
     ],
-    "vitalityStatus": null,
+    "vitalityStatus": {
+      "status": "Wider Communication",
+      "scale": "EGIDS (Ethnologue)",
+      "asOf": 2025
+    },
+    "originDebated": true,
     "sources": [
       {
         "title": "Glottolog 5.3 — Mossi (moss1236)",
         "url": "https://glottolog.org/resource/languoid/id/moss1236",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Glottolog name: Mossi; classification includes Gur. Les dialectes listés sont les sous-languoids que Glottolog rattache à moss1236, hors languoids portant leur propre code ISO 639-3."
+        "notes": "Glottolog nomme la langue Mossi et la classe dans les langues gur. Les dialectes listés sont les sous-languoids que Glottolog rattache à moss1236, hors languoids portant leur propre code ISO 639-3. La notice, lue le 3 novembre 2026, reprend l'appréciation d'Ethnologue 2025 : niveau 3 de l'échelle EGIDS, langue de communication élargie, langue de fait de l'identité nationale, parlée par plus de la moitié de la population du Burkina Faso."
+      },
+      {
+        "title": "Cinquième Recensement général de la population et de l'habitation du Burkina Faso, synthèse des résultats définitifs",
+        "url": "https://www.insd.bf/fr/file-download/download/public/2071",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Ouagadougou, juin 2022, recensement de 2019 ; lu le 3 novembre 2026. Le tableau 11 répartit les 16 486 281 habitants de 3 ans ou plus selon la langue qu'ils parlent le plus couramment : le mooré vient en tête avec 52,9 %. Le recensement compte la langue principale de chaque personne, et non sa langue maternelle ni son groupe."
+      },
+      {
+        "title": "Officialisation des langues nationales : enjeux et défis pour le Burkina Faso",
+        "url": "https://bop.unibe.ch/LPIA/article/download/11285/15573/60333",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Language Policy in Africa, vol. 1, n° 2, 2025, université de Berne ; l'auteur est directeur de recherche à l'INSS-CNRST de Ouagadougou. Article lu en texte intégral le 3 novembre 2026. Il juge biaisée la question du recensement sur la langue parlée dans le ménage, dit que le chiffre de 52,9 % suit le poids du groupe mossi, et range le mooré parmi les langues véhiculaires, qui dominent le centre du pays."
+      },
+      {
+        "title": "Loi constitutionnelle n° 045-2023/ALT portant révision de la Constitution",
+        "url": "https://www.an.bf/storage/Loi/XzJuLCK5kHtKXgYU7Z7pADAGEPgwFV7J7DlX212n.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Loi adoptée en séance le 30 décembre 2023, lu le 3 novembre 2026. Elle remplace « La langue officielle est le français » par « Les langues nationales officialisées par loi sont les langues officielles du Burkina Faso » et fait de l'anglais et du français des langues de travail. Elle ne nomme aucune langue nationale."
+      },
+      {
+        "title": "Une royauté africaine à l'heure de la mondialisation : le royaume de Ouagadougou et la question du développement au Burkina Faso",
+        "url": "https://shs.hal.science/halshs-01511790/file/societespolitiquescomparees6_article.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Sociétés politiques comparées, n° 6, juin 2008. Article lu en texte intégral dans l'archive HAL le 3 novembre 2026."
+      },
+      {
+        "title": "Des souris, des génies et des hommes. Divination par la souris chez les Mòosé au Burkina Faso",
+        "url": "https://shs.hal.science/halshs-00257621v1/document",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Dans Edmond Dounias, Élisabeth Motte-Florac et Margaret Dunham (dir.), Le symbolisme des animaux, Éditions de l'IRD, 2007, p. 861-875. Chapitre lu en texte intégral dans l'archive HAL le 3 novembre 2026."
+      },
+      {
+        "title": "Du sida à un « syndrome » du Fonds mondial ? L'Union des religieux et coutumiers du Burkina au cœur de l'Instance de coordination nationale de lutte contre le sida",
+        "url": "https://theses.hal.science/tel-03972039v1/document",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse de doctorat en sociologie, université Paris Cité, 2019. Lue dans l'archive HAL le 3 novembre 2026. L'auteur suit le décret AN IV 001/ESRS/CAB du 30 septembre 1986 sur l'écriture du mooré, que nous n'avons pas lu."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers",
+        "reason": "Nous n'avons de chiffre que pour le Burkina Faso. Nous avons cherché les tableaux des langues des recensements du Ghana et de la Côte d'Ivoire sans les trouver."
+      },
+      {
+        "field": "nameHistory.names[1]",
+        "reason": "Pour l'origine du nom Mossi, nous n'avons trouvé qu'une explication, celle de Dim Delobsom en 1929, rapportée par Michel Izard et Joseph Ki-Zerbo. Nous avons cherché d'autres explications dans les revues en ligne de Persée, d'OpenEdition et de HAL. La grammaire de Gabriel Alexandre, La langue möré, parue en 1953, n'est pas en ligne et nous ne l'avons pas lue."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Le mooré est la langue des Moose, au Burkina Faso, où plus de la moitié des habitants la parlent le plus souvent au quotidien.",
+      "followUp": "D'où vient le nom Mossi, que le français donne à ce peuple et à sa langue ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "BFA",
+          "speakers": 8720000,
+          "source": {
+            "title": "Cinquième Recensement général de la population et de l'habitation du Burkina Faso, synthèse des résultats définitifs",
+            "url": "https://www.insd.bf/fr/file-download/download/public/2071",
+            "tier": "official",
+            "notes": "Recensement de 2019 : 52,9 % des 16 486 281 habitants de 3 ans ou plus disent parler le mooré plus que toute autre langue. Le nombre de personnes est notre calcul à partir de ces deux chiffres. Selon Mamadou Lamine Sanogo, ce chiffre suit le poids du groupe mossi plus que les usages réels."
+          }
+        }
+      ]
+    }
   }
 }
