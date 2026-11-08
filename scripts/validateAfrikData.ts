@@ -4880,7 +4880,9 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // four constitutional national languages beside French.
   // 8 -> 7 on 2026-11-03: `culture.mainLanguages` added on Madagascar,
   // Malagasy and French, from Glottolog and the Constitution.
-  pays: 7,
+  // 7 -> 6 on 2026-11-03: `culture.mainLanguages` added on Kenya, Swahili and
+  // English (Constitution of Kenya 2010, art. 7) and the main census languages.
+  pays: 6,
 };
 
 // Authoring blocks no model declares: `_meta` is curator metadata, exempt
