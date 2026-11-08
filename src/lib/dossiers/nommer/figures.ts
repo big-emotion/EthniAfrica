@@ -122,12 +122,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // headlines, Mucuval and Wiyana, moved to the exonyms, where a reader who searches them still finds the fiche.
     // 2703 -> 2745 on 2026-10-19: ETNI-2135 split packed exonym entries into
     // one entry per name, preserving the names and their existing glosses.
-    // 2743 -> 2726 on 2026-11-08: premium peoples batch 07 kept only the
-    // exonyms its sources attest (37 -> 20 on its eight fiches). Toura moved
-    // twelve village-group names to its subgroups; Akyem dropped Great Akim,
-    // Acchem and Akan Grande; Punu went from five entries to Apono and
-    // Pounou; Mbunda went from three to four written forms.
-    value: 2726,
+    value: 2726, // 2743 -> 2726 on 2026-11-08: premium peoples batch 07 kept only the exonyms its sources attest (37 -> 20 on its eight fiches).
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -256,10 +251,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // research for series 2 n° 1, dates the French spelling (Targui, 19th
     // century) instead of saying « à l'époque coloniale ».
     // 199 -> 197 on 2026-10-18: the Taal and Mbogo fiches, which counted, withdrawn after wave 24.
-    // 199 -> 196 on 2026-11-08: premium peoples batch 07 rewrote the origin
-    // texts of the Abé, Akan, Toura and Alur fiches from their sources, which
-    // no longer use the word; the Mbunda fiche's now does.
-    value: 196,
+    value: 196, // 199 -> 196 on 2026-11-08: premium peoples batch 07 rewrote the Abé, Akan, Toura, Alur and Mbunda origin texts from their sources.
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -291,8 +283,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 163 -> 156 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 156 -> 155 on 2026-10-14: the Nabt fiche, which counted, was folded.
     // 155 -> 152 on 2026-10-18: the Taal, Mbogo and « Africains d'origine récente » fiches, which counted, withdrawn after wave 24.
-    // 153 -> 152 on 2026-11-08: premium peoples batch 07 rewrote origin texts from sources; the Toura and Alur origin texts no longer use it; the Mbunda one now does.
-    value: 152,
+    value: 152, // 153 -> 152 on 2026-11-08: premium peoples batch 07: the Toura and Alur origin texts no longer use it, the Mbunda one now does.
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -319,8 +310,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 108 -> 107 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 107 -> 108 on 2026-10-15: PPL_TUAREG's origin text now says European
     // travellers took the name up from 1802 (Hornemann, Caillié).
-    // 111 -> 109 on 2026-11-08: premium peoples batch 07 rewrote origin texts from sources; the Akyem and Punu origin texts no longer use it.
-    value: 109,
+    value: 109, // 111 -> 109 on 2026-11-08: premium peoples batch 07: the Akyem and Punu origin texts no longer use it.
     method: "radical europ dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -342,8 +332,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 103 -> 102 on 2026-10-18: the Taal fiche, which counted, withdrawn after wave 24.
     // 102 -> 101 the same day: PPL_WIYANA's whyProblematic no longer says the Mossi
     // neighbours imposed Gurunsi; it tells Jacob's hypothesis of a Moore nickname instead.
-    // 102 -> 104 on 2026-11-08: premium peoples batch 07 rewrote origin texts from sources; the Mbunda and Punu origin texts now use it.
-    value: 104,
+    value: 104, // 102 -> 104 on 2026-11-08: premium peoples batch 07: the Mbunda and Punu origin texts now use it.
     method: "radical voisin dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -360,8 +349,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 67 -> 65 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 65 -> 63 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 63 -> 61 on 2026-10-18: the Mucubal fiche, folded into PPL_MUCUVAL, and the « Africains d'origine récente » fiche, withdrawn, both counted.
-    // 62 -> 61 on 2026-11-08: premium peoples batch 07 rewrote origin texts from sources; the Akyem origin text no longer uses it.
-    value: 61,
+    value: 61, // 62 -> 61 on 2026-11-08: premium peoples batch 07: the Akyem origin text no longer uses it.
     method: "radical portugais dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -422,8 +410,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
     // 28 -> 27 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
-    // 27 -> 26 on 2026-11-08: premium peoples batch 07 rewrote origin texts from sources; the Akan origin text no longer uses it.
-    value: 26,
+    value: 26, // 27 -> 26 on 2026-11-08: premium peoples batch 07: the Akan origin text no longer uses it.
     method: "radical esclav dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -436,8 +423,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 25 -> 24 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
     // 24 -> 23 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
-    // 27 -> 32 on 2026-11-08: premium peoples batch 07 rewrote origin texts from sources; the Akan, Akyem, Mbunda, Ngala and Punu origin texts now name missionaries.
-    value: 32,
+    value: 32, // 27 -> 32 on 2026-11-08: premium peoples batch 07: the Akan, Akyem, Mbunda, Ngala and Punu origin texts now name missionaries.
     method: "radical missionn dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
