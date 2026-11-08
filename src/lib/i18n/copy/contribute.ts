@@ -18,6 +18,10 @@ const fr = {
     apiDocsText:
       "Consultez la documentation complète de l'API pour comprendre comment récupérer les données de manière programmatique. Elle liste chaque famille de ressources et ses endpoints.",
     apiDocsButton: "Voir la documentation API",
+    assistantTitle: "Interroger EthniAfrica depuis un assistant",
+    assistantText:
+      "Claude et ChatGPT peuvent lire nos fiches et répondre avec leurs sources. Voici comment les relier à EthniAfrica.",
+    assistantLink: "EthniAfrica dans Claude et ChatGPT",
     downloadTitle: "Télécharger les données",
     downloadText:
       "Téléchargez toutes les données au format CSV ou Excel pour votre propre usage, analyse ou contributions.",

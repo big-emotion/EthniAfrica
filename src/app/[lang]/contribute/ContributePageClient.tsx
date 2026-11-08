@@ -174,6 +174,17 @@ export default function ContributePageClient() {
           </div>
         </section>
 
+        <section className="space-y-4">
+          <h3 className="text-afh-h2 font-semibold">{t.assistantTitle}</h3>
+          <p className="text-muted-foreground">{t.assistantText}</p>
+          <Link
+            href={getStaticPageRoute(language, "assistant")}
+            className="underline underline-offset-4"
+          >
+            {t.assistantLink}
+          </Link>
+        </section>
+
         {/* Section Download */}
         <section className="space-y-4">
           <h3 className="text-afh-h2 font-semibold flex items-center gap-2">

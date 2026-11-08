@@ -260,6 +260,11 @@ export function getSiteTree(language: Language): SiteTreeSection[] {
           label: copy.contribute.reports[0],
           note: copy.contribute.reports[1],
         },
+        {
+          href: getStaticPageRoute(language, "assistant"),
+          label: copy.contribute.assistant[0],
+          note: copy.contribute.assistant[1],
+        },
       ],
     },
     {

@@ -133,6 +133,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Anthroponym coverage plan](runbooks/anthroponym-coverage-plan.md)
 - [Anthroponym fiche research protocol](runbooks/anthroponym-fiche-research.md)
 - [Runbook — article media on the application host](runbooks/article-media.md)
+- [Runbook — submitting the public agent to the Claude and ChatGPT directories](runbooks/public-agent-directory-submission.md)
 - [Runbook — reading Facebook and Instagram audience data (read-only)](runbooks/meta-graph-readonly.md)
 - [Runbook — Supabase migration state](runbooks/migration-state.md)
 - [Moderation access](runbooks/moderation-access.md)

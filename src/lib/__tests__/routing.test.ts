@@ -481,6 +481,7 @@ describe("static pages outside the page types (REQ-141)", () => {
       reports: "signalements",
       contact: "contact",
       contribute: "contribute",
+      assistant: "assistant",
       reportError: "report-error",
       admin: "admin",
     });

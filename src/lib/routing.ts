@@ -472,6 +472,7 @@ export type StaticPageKey =
   | "reports"
   | "contact"
   | "contribute"
+  | "assistant"
   | "reportError"
   | "admin";
 
@@ -490,6 +491,7 @@ export const STATIC_PAGE_SLUGS: Record<
     // them buys nothing.
     contact: "contact",
     contribute: "contribute",
+    assistant: "assistant",
     reportError: "report-error",
     admin: "admin",
   },

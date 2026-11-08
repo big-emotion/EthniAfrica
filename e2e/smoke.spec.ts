@@ -4,6 +4,7 @@ import {
   getCountryRoute,
   getLocalizedRoute,
   getPeopleRoute,
+  getStaticPageRoute,
 } from "@/lib/routing";
 import { LOCALE } from "./support/locale";
 
@@ -26,6 +27,7 @@ const SMOKE_ROUTES = [
   { name: "country fiche SEN", path: getCountryRoute(LOCALE, "SEN") },
   { name: "people fiche PPL_WOLOF", path: getPeopleRoute(LOCALE, "PPL_WOLOF") },
   { name: "search", path: getLocalizedRoute(LOCALE, "search") },
+  { name: "assistant", path: getStaticPageRoute(LOCALE, "assistant") },
 ] as const;
 
 // @req REQ-091

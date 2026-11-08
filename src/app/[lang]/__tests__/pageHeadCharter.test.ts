@@ -163,6 +163,7 @@ const FIXTURES: Record<string, RouteFixture> = {
   about: { expectation: { surface: "about" } },
   "notre-demarche": { expectation: { surface: "approach" } },
   accessibilite: { expectation: { surface: "accessibility" } },
+  assistant: { expectation: { surface: "assistant" } },
   "atlas/appellations": { expectation: { surface: "names" } },
   "atlas/familles": { expectation: { surface: "families" } },
   "atlas/familles/[slug]": {

@@ -79,6 +79,10 @@ const fr = {
       "Signalements",
       "Les erreurs signalées et leur traitement, en public.",
     ],
+    assistant: [
+      "Claude et ChatGPT",
+      "Interroger EthniAfrica depuis votre assistant.",
+    ],
   },
   site: {
     title: "Le site",
