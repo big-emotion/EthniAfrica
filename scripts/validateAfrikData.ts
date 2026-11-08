@@ -2591,7 +2591,7 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
 // withdrawn that day took four Factbook citations with them.
 // 115 -> 112 on 2026-10-18: the Guwa, Mbogo and Mobe fiches, withdrawn after
 // wave 24 as unattested, took their Factbook citations with them.
-export const RETIRED_CIA_FACTBOOK_URL_CEILING = 112;
+export const RETIRED_CIA_FACTBOOK_URL_CEILING = 110;
 
 const LIVE_CIA_FACTBOOK =
   /cia\.gov\/(?:library\/publications\/)?the-world-factbook/i;
@@ -4863,7 +4863,10 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // people fiches whose sources already attest those forms.
   // 5920 -> 5893 on 2026-11-03: premium batch 01 (Kongo, Akyé, Diola, Bono,
   // Dan, Chokwe, Sena, Songhaï) filled the model keys those fiches lacked.
-  peuple: 5893,
+  // 5893 -> 5833 the same day: premium batch 03 (Gourmantché, Kissi, Nande,
+  // Bissa, Boliwa, Yaka, Saho, Guéré) did the same and dropped four non-model
+  // appellation keys each.
+  peuple: 5833,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
