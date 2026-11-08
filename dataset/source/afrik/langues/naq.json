@@ -46,6 +46,10 @@
     {
       "name": "Nama",
       "peopleId": "PPL_NAMA"
+    },
+    {
+      "name": "Damara",
+      "peopleId": "PPL_DAMARA"
     }
   ],
   "nameHistory": {
@@ -149,6 +153,59 @@
                 "source_kind": "academic",
                 "page": "p. 330",
                 "notes": "Lexikos, vol. 13, 2003, p. 330-333. Lu en texte intégral le 11 octobre 2026. L'auteur cite une conférence de Wilfrid Haacke donnée à l'université de Namibie en 2000 et imprimée en 2002, que nous n'avons pas lue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "Rapportées en 2011"
+            },
+            "era": "modern",
+            "statement": "Le nom khoekhoe viendrait de khoe, « personne », et khoen, « gens ». On le traduit de plusieurs façons, « les gens des gens », « les meilleurs », « notre peuple », rapporte Peter Raper, qui note que les formes anciennes ne répètent pas deux fois le même mot.",
+            "hypothesisGroup": "origine du nom khoekhoe",
+            "sources": [
+              {
+                "title": "Another look at “Khoikhoi” and related ethnonyms",
+                "author": "Peter E. Raper",
+                "year": 2011,
+                "url": "https://scholar.ufs.ac.za/server/api/core/bitstreams/1e1b803a-a39d-4e90-ae0a-5d6f6a1a58f3/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 109 et p. 113",
+                "notes": "Acta Academica, vol. 43, n° 1, 2011, p. 109-129, université de l'État-Libre (Bloemfontein). Article lu en texte intégral dans le dépôt de l'université le 3 novembre 2026."
+              },
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Khoikhoi »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/khoikhoi/e03780",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire historique en ligne de l'anglais d'Afrique du Sud, lu le 3 novembre 2026. L'entrée tire le nom de khoe, « personne », et khoen, « gens », et note que les Nama de Namibie sont le seul groupe qui parle encore une langue khoekhoe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "Proposée en 2011"
+            },
+            "era": "modern",
+            "statement": "Le nom khoekhoe voudrait dire « les gens de la montagne », propose Peter Raper. Il s'appuie sur Jan van Riebeeck, qui donne en 1660 à khoe les sens de « haute montagne », « riche » et « roi heureux ».",
+            "hypothesisGroup": "origine du nom khoekhoe",
+            "sources": [
+              {
+                "title": "Another look at “Khoikhoi” and related ethnonyms",
+                "author": "Peter E. Raper",
+                "year": 2011,
+                "url": "https://scholar.ufs.ac.za/server/api/core/bitstreams/1e1b803a-a39d-4e90-ae0a-5d6f6a1a58f3/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 109 et p. 113",
+                "notes": "Acta Academica, vol. 43, n° 1, 2011, p. 109-129, université de l'État-Libre (Bloemfontein). Article lu en texte intégral dans le dépôt de l'université le 3 novembre 2026."
               }
             ]
           }
@@ -357,6 +414,26 @@
                 "notes": "Lu le 11 octobre 2026. Citation d'I. Schapera, The Khoisan Peoples of South Africa, 1930, p. 44."
               }
             ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Hottentot imiterait un refrain chanté pendant des danses, que les premiers visiteurs européens auraient entendu au Cap, selon une explication que rapporte le Dictionary of South African English. Il renvoie au voyageur anglais John Ovington, qui l'écrit en 1696.",
+            "hypothesisGroup": "origine du nom Hottentot",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Hottentot »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/hottentot/e03109",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 11 octobre 2026. Citation d'I. Schapera, The Khoisan Peoples of South Africa, 1930, p. 44."
+              }
+            ]
           }
         ]
       }
@@ -372,20 +449,92 @@
       "Namidama",
       "Sesfontein Damara"
     ],
-    "vitalityStatus": null,
+    "vitalityStatus": {
+      "status": "Threatened",
+      "scale": "AES (Glottolog)",
+      "asOf": 2022
+    },
+    "originDebated": true,
     "sources": [
       {
         "title": "Glottolog 5.3 — Nama (nama1264)",
         "url": "https://glottolog.org/resource/languoid/id/nama1264",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Glottolog name: Nama (Namibia); classification includes Khoe. Les dialectes listés sont les sous-languoids que Glottolog rattache à nama1264, hors languoids portant leur propre code ISO 639-3."
+        "notes": "Glottolog nomme la langue Nama (Namibia) et la classe dans les langues khoe. Les dialectes listés sont les sous-languoids que Glottolog rattache à nama1264, hors languoids portant leur propre code ISO 639-3. La notice, lue le 3 novembre 2026, juge la langue menacée, d'après le Catalogue des langues en danger de Lyle Campbell et de ses coauteurs, en 2022 : bien décrite et enseignée en Namibie, elle est pourtant tenue pour menacée par Wilfrid Haacke et Eliphas Eiseb."
       },
       {
         "title": "Fauvelle-Aymar, François-Xavier (2002) – *L'Invention du Hottentot : histoire du regard occidental sur les Khoisan (XVe-XIXe siècle)*. Publications de la Sorbonne",
         "url": null,
         "tier": "referenced"
+      },
+      {
+        "title": "Namibia 2011 Population and Housing Census, Main Report",
+        "url": "https://cms.my.na/assets/documents/p19dmn58guram30ttun89rdrp1.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Windhoek, rapport principal du recensement de 2011, lu dans la copie mise en ligne par le portail my.na le 3 novembre 2026. Le recensement demande la langue principale parlée dans chaque ménage : 52 450 ménages sur 464 839, soit 11,3 %, déclarent le nama/damara. Il ne compte pas les personnes qui parlent la langue."
+      },
+      {
+        "title": "Census 2022: Cultural Dynamics in South Africa, rapport 03-01-84",
+        "url": "https://www.statssa.gov.za/publications/03-01-84/03-01-84.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Pretoria, 2025, lu le 3 novembre 2026. Le recensement de 2022 compte 6 124 personnes qui parlent chez elles des langues khoi, nama et san, réunies sous une seule rubrique, dont 2 429 dans la province du Cap-Nord. Le rapport demande de lire ce chiffre avec prudence, ces populations étant difficiles à recenser."
+      },
+      {
+        "title": "Constitution de la République de Namibie, article 3",
+        "url": "https://cjad.nottingham.ac.uk/documents/implementations/pdf/Constitution_Namibia_EN_1998.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte anglais, version de 1998, mis en ligne par l'université de Nottingham, lu le 3 novembre 2026. L'anglais est la seule langue officielle ; les autres langues peuvent servir à l'école et, si une loi le permet, dans les régions où elles sont parlées. La Constitution ne nomme pas le khoekhoegowab."
+      },
+      {
+        "title": "Constitution de la République d'Afrique du Sud, 1996, section 6",
+        "url": "https://www.justice.gov.za/legislation/constitution/SAConstitution-web-eng.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte anglais publié par le ministère de la Justice, lu le 3 novembre 2026. La Constitution charge un conseil des langues de promouvoir « the Khoi, Nama and San languages », à côté des langues officielles."
+      },
+      {
+        "title": "Views and preferences of parents, teachers and principals on the implementation of the language policy in primary schools in Namibia: an explorative study in the Khomas region",
+        "url": "https://journals.unam.edu.na/index.php/JSHSS/article/download/876/702/2829",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Journal for Studies in Humanities and Social Sciences, vol. 1, n° 2, université de Namibie, septembre 2012. Lu en texte intégral le 3 novembre 2026. Selon la politique scolaire namibienne, les élèves apprennent dans leur langue maternelle de la première à la troisième année ; les auteurs comptent environ 10 % d'élèves qui parlent le khoekhoegowab, d'après le ministère de l'Éducation, et notent que moins de la moitié d'entre eux, en 2007, apprennent dans cette langue pendant les premières années."
+      },
+      {
+        "title": "Another look at “Khoikhoi” and related ethnonyms",
+        "url": "https://scholar.ufs.ac.za/server/api/core/bitstreams/1e1b803a-a39d-4e90-ae0a-5d6f6a1a58f3/content",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Acta Academica, vol. 43, n° 1, 2011, p. 109-129, université de l'État-Libre (Bloemfontein). Article lu en texte intégral dans le dépôt de l'université le 3 novembre 2026."
+      },
+      {
+        "title": "Dictionary of South African English on Historical Principles, entrée « Khoikhoi »",
+        "url": "https://dsae.co.za/entry/khoikhoi/e03780",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Dictionnaire historique en ligne de l'anglais d'Afrique du Sud, lu le 3 novembre 2026. L'entrée tire le nom de khoe, « personne », et khoen, « gens », et note que les Nama de Namibie sont le seul groupe qui parle encore une langue khoekhoe."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers",
+        "reason": "Nous n'avons pas de nombre de personnes qui parlent la langue. En Namibie, le recensement de 2011 compte les ménages : 52 450 ménages sur 464 839, soit 11,3 %, parlent surtout le nama/damara. En Afrique du Sud, le recensement de 2022 réunit toutes les langues khoi, nama et san dans un seul chiffre, 6 124 personnes. Nous n'avons pas trouvé de chiffre pour le Botswana."
+      },
+      {
+        "field": "content.vehicularRole",
+        "reason": "Les sources que nous avons lues ne disent pas si cette langue sert de langue commune entre des groupes qui ne la parlent pas en famille."
+      },
+      {
+        "field": "nameHistory.names[3]",
+        "reason": "François-Xavier Fauvelle-Aymar retrace l'histoire du nom Hottentot dans L'Invention du Hottentot, paru en 2002. Nous n'avons pas pu lire ce livre en ligne."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Le khoekhoegowab est la langue des Nama et des Damara, parlée surtout en Namibie, où les enfants peuvent l'apprendre à l'école.",
+      "followUp": "Pourquoi le nom Hottentot, donné par les colons hollandais, a-t-il été abandonné ?"
+    }
   }
 }

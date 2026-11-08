@@ -3,11 +3,11 @@
   "nameFr": "Guinée",
   "nameEn": "Guinea",
   "nameOfficial": "République de Guinée",
-  "summary": "La Guinée porte un nom que les Portugais appliquaient au XVe siècle à toute la côte ouest-africaine. Le pays articule quatre ensembles : le Fouta-Djalon peul, la Haute-Guinée malinké héritée de l'empire du Mali, la Basse-Guinée soussou et les peuples forestiers. Griots, kora et balafon y portent une tradition orale continue.",
-  "etymology": "L'origine du nom Guinée n'est pas établie, et trois lectures coexistent. En Guinée, on rattache couramment le mot au soussou guinè, qui désigne la femme. Une deuxième lecture le fait venir de l'expression amazighe akal n ignawen, la terre des ignawen, par laquelle les berbérophones désignaient au Moyen Âge la zone sahélienne ; on la traduit d'ordinaire par pays des Noirs, d'après Maurice Delafosse en 1924. Les linguistes rattachent agnaw au verbe gnu, coudre : l'agnaw serait celui qui a la langue cousue, c'est-à-dire celui qui ne parle pas la langue de celui qui le nomme. Les navigateurs portugais, enfin, écrivent Guiné dès le XVe siècle pour toute la côte ouest-africaine au sud du Sénégal. Les Français ont repris ce nom pour leur colonie en 1891.",
-  "nameOriginActor": "Les navigateurs portugais écrivent Guiné dès le XVe siècle et répandent la forme écrite du nom en Europe, sans que son origine soit établie. Les Français la reprennent en 1891 pour la colonie de Guinée française. Le pays garde ce nom à l'indépendance, le 2 octobre 1958.",
+  "summary": "Le nom Guinée est d'abord celui que les navigateurs portugais du XVe siècle donnaient à la terre des Noirs, sur la côte ouest de l'Afrique ; plusieurs explications de son origine sont proposées. Colonie française sous le nom de Guinée française, le pays devient indépendant le 2 octobre 1958, après avoir voté non au référendum. Il compte 17 521 167 habitants en 2025, et le poular, le malinké et le soussou y sont les langues les plus parlées.",
+  "etymology": "Le nom Guinée apparaît dans les chroniques portugaises du XVe siècle. Vers 1453, le chroniqueur Gomes Eanes de Zurara appelle « terre de Guinée » la terre des Noirs, et nomme ses habitants « Guinéus », un mot qui veut dire « Noirs » selon lui. Pour l'origine du mot lui-même, plusieurs explications sont proposées. La première le fait venir de l'expression berbère akal n ignawen, « la terre des Ignawen », par laquelle les berbérophones désignaient au Moyen Âge l'Afrique sahélienne, selon Rachid Agrour, qui s'appuie sur Maurice Delafosse, et selon Claude Rivière. Au Maroc, l'agnaw est celui dont on ne comprend pas la langue ; le mot viendrait du verbe gnu, « coudre », et l'agnaw serait celui qui a « la langue cousue ». Une deuxième explication, donnée en 1907 par l'administrateur colonial André Arcin, rattache le nom à la ville de Djenné, sur le Niger : au XVIe siècle déjà, Jean-Léon l'Africain écrit que les Européens appellent « Ghinea » un royaume du Niger que les marchands d'Afrique du Nord appellent « Gheneoa ». Une troisième explication, que racontent des Guinéens selon l'historienne Emily Lynn Osborn, part du mot soussou ginè, « femme » : des Européens arrivés sur la côte auraient pris pour un nom de pays le mot par lequel des femmes se présentaient. Claude Rivière se demande aussi si le nom ne garde pas la trace du pays de Kanawa, cité au XIIe siècle, ou du nom Ghana.",
+  "nameOriginActor": "Les navigateurs et chroniqueurs portugais du XVe siècle, comme Gomes Eanes de Zurara, écrivent le nom Guinée pour la terre des Noirs. L'administration coloniale française le donne en 1891 à la colonie de Guinée française et dépendances, selon André Arcin. Le pays garde le nom de Guinée à l'indépendance, le 2 octobre 1958.",
   "nameHistory": {
-    "summary": "Le nom Guinée désigne un pays d'Afrique de l'Ouest, la République de Guinée. Il a d'abord désigné toute la côte ouest de l'Afrique pour les navigateurs portugais, et le pays s'est appelé Guinée française pendant la colonisation. L'origine du nom n'est pas établie ; nous présentons plus bas ce que les sources en disent.",
+    "summary": "Le nom Guinée désigne un pays d'Afrique de l'Ouest, la République de Guinée. Il a d'abord désigné toute la côte ouest de l'Afrique pour les navigateurs portugais. Pendant la colonisation, le pays s'est appelé Rivières du Sud puis Guinée française, et de 1978 à 1984 République populaire révolutionnaire de Guinée. Plusieurs explications de l'origine du nom Guinée sont proposées ; nous les présentons plus bas, côte à côte.",
     "names": [
       {
         "nameText": "Guinée",
@@ -98,7 +98,7 @@
               "label": "Chronique achevée en 1453"
             },
             "era": "polity",
-            "statement": "Le nom Guinée est écrit « Guinee » par le chroniqueur portugais Gomes Eanes de Zurara, qui nomme ainsi la terre des Noirs. Il précise que ce n'est pas une seule terre, mais des terres très différentes. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples de cette côte vivaient là bien avant lui.",
+            "statement": "Le nom Guinée est écrit « Guinee » par le chroniqueur portugais Gomes Eanes de Zurara, qui nomme ainsi la terre des Noirs. Il précise que ce n'est pas une seule terre, mais des terres très différentes, et que ses habitants sont appelés « Guinéus », un mot qui veut dire « Noirs ». C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples de cette côte vivaient là bien avant lui.",
             "formAsWritten": "Guinee",
             "birth": true,
             "sources": [
@@ -111,6 +111,16 @@
                 "source_kind": "archive",
                 "page": "p. 158",
                 "notes": "Chronique achevée en 1453 selon son éditeur, publiée à Paris chez J.-P. Aillaud en 1841. Lu dans la numérisation d'Internet Archive."
+              },
+              {
+                "title": "Chronica do descobrimento e conquista de Guiné",
+                "author": "Gomes Eanes de Zurara",
+                "year": 1841,
+                "url": "https://archive.org/details/chronicadodesco00zuragoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chap. LX, p. 278-279",
+                "notes": "Même édition, lue sur Internet Archive. Le chroniqueur écrit que la terre « he chamada terra dos Negros, ou terra de Guinee », et que ses habitants sont appelés « Guinéus, que quer tanto dizer como negros »."
               }
             ]
           },
@@ -173,6 +183,79 @@
                 "notes": "Ithaca, Cornell University Press. Préface lue en ligne le 9 octobre 2026 sur le site webGuinée, qui indique 1968 pour l'édition ; la préface est datée de juin 1976."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposée en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guinée viendrait de Djenné, la grande ville marchande du Niger, selon l'administrateur colonial André Arcin. Il s'appuie sur Jean-Léon l'Africain, qui écrit au XVIe siècle que les Européens appellent « Ghinea » un royaume du Niger que les marchands d'Afrique du Nord appellent « Gheneoa ».",
+            "hypothesisGroup": "origine du nom Guinée",
+            "actors": [
+              {
+                "name": "André Arcin",
+                "role": "administrateur colonial qui propose cette explication"
+              },
+              {
+                "name": "Jean-Léon l'Africain",
+                "role": "voyageur et géographe du XVIe siècle, cité par Arcin"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 1",
+                "notes": "Paris, Challamel. Document colonial. « Le nom de Guinée était anciennement donné à la Côte occidentale d'Afrique et venait de Djenné, le grand centre commercial de l'empire de Ghana », suivi d'une citation de Léon l'Africain."
+              },
+              {
+                "title": "Description de l'Afrique, tierce partie du monde, tome III",
+                "author": "Jean-Léon l'Africain, éd. Charles Schefer",
+                "year": 1898,
+                "url": "https://archive.org/details/descriptiondelaf03leoa",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 288-290",
+                "notes": "Traduction de Jean Temporal (1556), Paris, Ernest Leroux. Chapitre « Ghinée, royaume » : « Ce second royaume est appellé par nos marchans Gheneoa, mais ceux de Gennes, Portugal et Europe [...] l'appellent Ghinea ». En note, Schefer écrit que la Guinée « est appelée par les géographes arabes Djenny ou Guenny »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2001,
+              "to": 2001,
+              "label": "Rapportée en 2001"
+            },
+            "era": "modern",
+            "statement": "Le nom Guinée viendrait du mot soussou ginè, « femme », selon une explication que racontent des Guinéens, rapportée par l'historienne Emily Lynn Osborn. Des Européens arrivés sur la côte auraient rencontré des femmes qui lavaient du linge ; elles leur auraient dit qu'elles étaient des femmes, et les Européens auraient pris ce mot pour le nom du pays. Le dictionnaire soussou de Jean-Baptiste Raimbault, publié en 1923, donne bien ginè pour « femme ».",
+            "hypothesisGroup": "origine du nom Guinée",
+            "sources": [
+              {
+                "title": "Guinea, dans Countries and Their Cultures",
+                "author": "Emily Lynn Osborn",
+                "year": 2001,
+                "url": "https://www.everyculture.com/Ge-It/Guinea.html",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Article reproduit en ligne sur le site Every Culture."
+              },
+              {
+                "title": "Dictionnaire français-soso et soso-français",
+                "author": "Jean-Baptiste Raimbault",
+                "year": 1923,
+                "url": "https://archive.org/details/dictionnairefran00raim",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrées « Épouse » et « Femme »",
+                "notes": "Rome, Mission catholique de Conakry. Ouvrage missionnaire de l'époque coloniale. « Femme, ginè » ; « Épouse, ginè »."
+              }
+            ]
           }
         ]
       },
@@ -182,7 +265,7 @@
         "selfGiven": false,
         "languageOfOrigin": "fra",
         "namedBy": "L'administration coloniale française",
-        "periodLabel": "Époque coloniale, jusqu'en 1958",
+        "periodLabel": "De 1891 à 1958",
         "accounts": [
           {
             "period": {
@@ -205,6 +288,164 @@
                 "notes": "Tableau chronologique des indépendances : « Guinée », indépendante le 2 octobre 1958, avec l'ancien nom colonial entre parenthèses, « Guinée française »."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1893,
+              "label": "De 1891 à 1893"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guinée française est donné à la colonie par le décret du 17 décembre 1891, qui organise la « Guinée française et dépendances » sans tutelle du Sénégal, selon André Arcin. Après le décret du 10 mars 1893, qui sépare les Rivières du Sud, la Côte d'Ivoire et le Dahomey, seule la colonie des Rivières du Sud garde le nom de Guinée, selon Arcin et Lucien Famechon. Godfrey N. Uzoigwe date aussi de 1893 la création de la colonie, et Emily Lynn Osborn date le nom de 1895.",
+            "aspect": "imposition",
+            "actors": [
+              {
+                "name": "L'administration coloniale française",
+                "role": "crée la colonie par décret"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 586 et 590",
+                "notes": "Paris, Challamel. Document colonial. Le décret du 17 décembre 1891 organise la « Guinée française et dépendances » ; après le décret du 10 mars 1893, seule la colonie des Rivières du Sud « conserva le nom de Guinée que l'on donnait à l'ensemble de ces pays »."
+              },
+              {
+                "title": "Notice sur la Guinée française",
+                "author": "Lucien Famechon",
+                "year": 1900,
+                "url": "https://archive.org/details/noticesurlaguin00fameuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 19-21",
+                "notes": "Notice préparée pour l'Exposition universelle de 1900, document colonial. Un décret du 1er août 1889 sépare du Sénégal « les Rivières du sud et dépendances » ; le décret du 17 décembre 1891 réorganise la colonie ; le 10 mars 1893, « la colonie de la Guinée française se trouva donc constituée »."
+              },
+              {
+                "title": "General History of Africa, VII, ch. 2 : European partition and conquest of Africa: an overview",
+                "author": "Godfrey N. Uzoigwe",
+                "year": 1985,
+                "url": "https://archive.org/details/general-history-of-africa-vol-7",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 35-36",
+                "notes": "UNESCO. Les Français conquièrent « the future French Guinea where they set up colonies in 1893 »."
+              },
+              {
+                "title": "Guinea, dans Countries and Their Cultures",
+                "author": "Emily Lynn Osborn",
+                "year": 2001,
+                "url": "https://www.everyculture.com/Ge-It/Guinea.html",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Article reproduit en ligne sur le site Every Culture."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Rivières du Sud",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'administration coloniale française",
+        "periodLabel": "Jusqu'en 1891, puis nom d'une partie de la colonie jusqu'en 1893",
+        "accounts": [
+          {
+            "period": {
+              "from": 1889,
+              "to": 1893,
+              "label": "De 1889 à 1893"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rivières du Sud désigne les postes français de la côte avant la Guinée française. Un décret du 1er août 1889 sépare du Sénégal « les Rivières du sud et dépendances », placées sous un lieutenant-gouverneur, selon Lucien Famechon. Après 1891, le nom reste celui de la partie de la colonie gouvernée depuis Conakry, jusqu'à la séparation de 1893.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Notice sur la Guinée française",
+                "author": "Lucien Famechon",
+                "year": 1900,
+                "url": "https://archive.org/details/noticesurlaguin00fameuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 19-21",
+                "notes": "Notice préparée pour l'Exposition universelle de 1900, document colonial. Un décret du 1er août 1889 sépare du Sénégal « les Rivières du sud et dépendances » ; le décret du 17 décembre 1891 réorganise la colonie ; le 10 mars 1893, « la colonie de la Guinée française se trouva donc constituée »."
+              },
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 586 et 590",
+                "notes": "Paris, Challamel. Document colonial. Le décret du 17 décembre 1891 organise la « Guinée française et dépendances » ; après le décret du 10 mars 1893, seule la colonie des Rivières du Sud « conserva le nom de Guinée que l'on donnait à l'ensemble de ces pays »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "République populaire révolutionnaire de Guinée",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": "Le régime d'Ahmed Sékou Touré",
+        "periodLabel": "De 1978 à 1984",
+        "accounts": [
+          {
+            "period": {
+              "from": 1978,
+              "to": 1984,
+              "label": "De 1978 à 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom République populaire révolutionnaire de Guinée est celui de l'État sous Ahmed Sékou Touré : un communiqué officiel du 22 décembre 1978 le nomme « président de la République populaire révolutionnaire de Guinée ». Le répertoire Archontology date ce nom du 21 novembre 1978 au 23 mai 1984. Selon Emily Lynn Osborn, Lansana Conté rend ensuite au pays le nom de République de Guinée.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Ahmed Sékou Touré",
+                "role": "président de la République de 1958 à 1984"
+              },
+              {
+                "name": "Lansana Conté",
+                "role": "président à partir de 1984"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Communiqué conjoint franco-guinéen à l'issue du voyage de M. Giscard d'Estaing en Guinée",
+                "author": "Présidence de la République française",
+                "year": 1978,
+                "url": "https://www.elysee.fr/valery-giscard-d-estaing/1978/12/22/communique-conjoint-franco-guineen-a-lissue-du-voyage-de-m-giscard-destaing-en-guinee-conakry-le-22-decembre-1978",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Conakry, 22 décembre 1978. La première phrase nomme « Ahmed Sékou Touré, président de la République populaire révolutionnaire de Guinée »."
+              },
+              {
+                "title": "Guinea: Polity Style, 1958-2024",
+                "author": "Archontology.org",
+                "year": null,
+                "url": "https://archontology.org/nations/guinea/01_polity.php",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Répertoire en ligne des noms d'États. Il date ce nom du 21 novembre 1978 au 23 mai 1984 et cite une résolution du 11e congrès du Parti démocratique de Guinée."
+              },
+              {
+                "title": "Guinea, dans Countries and Their Cultures",
+                "author": "Emily Lynn Osborn",
+                "year": 2001,
+                "url": "https://www.everyculture.com/Ge-It/Guinea.html",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Article reproduit en ligne sur le site Every Culture."
+              }
+            ]
           }
         ]
       }
@@ -212,68 +453,77 @@
   },
   "content": {
     "historicalNames": {
-      "formerNames": ["Guinée française (1891-1958)"],
-      "antiquity": "Le territoire actuel de la Guinée était peuplé de diverses sociétés sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs territoires.",
-      "middleAges": "Développement de royaumes et empires : empire du Mali (XIIIe-XVIe siècle), empire Songhai, influence de l'empire du Ghana. Le territoire était au cœur du Mandé médiéval. Pas de nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Mosaïque de royaumes et entités politiques : empire du Mali (centre historique du Mandé), théocratie peule du Fouta Djallon (XVIIIe-XIXe siècle), royaumes Malinké, peuples forestiers (Kissi, Toma, Guerzé), Soussou (côte). Le nom Fouta Djallon associe deux langues : Fouta, mot fulfulde pour une région peuplée de Fulɓe, et Djallon, « montagne » en yalunka ; la région s'appelait auparavant Jallonkadu, le pays des gens de la montagne (d'après N'Daou, 1999, et les travaux qu'il cite). Les Européens utilisaient le terme \"Guinée\" pour désigner la région côtière.",
-      "colonization": "1891-1958 : Colonie française de Guinée (Guinée française). Les Français ont créé la colonie de Guinée en 1891. Le territoire était administré comme une colonie française jusqu'à l'indépendance en 1958.",
-      "contemporary": "1958 : Indépendance de la Guinée (2 octobre 1958), proclamation de la République de Guinée. La Guinée est la seule colonie française à avoir voté \"NON\" au référendum de 1958 sur la Communauté française, obtenant ainsi l'indépendance immédiate sous la direction de Sékou Touré."
+      "formerNames": [
+        "Rivières du Sud (jusqu'en 1891)",
+        "Guinée française (1891-1958)",
+        "République populaire révolutionnaire de Guinée (1978-1984)"
+      ],
+      "antiquity": "Avant le XVe siècle, les sources consultées ne donnent aucun nom pour l'ensemble du territoire de la Guinée actuelle ; chaque peuple nommait ses propres terres. Selon Yves Person, le massif du Fouta-Djalon est depuis une époque très ancienne le pays de deux peuples proches, les Djallonké et les Soussou, qui parlent deux dialectes d'une même langue mandingue.",
+      "middleAges": "Au XIIIe siècle, le nord-est de la Guinée actuelle fait partie du Manden, d'où part l'empire du Mali. Selon Djibril Tamsir Niane, Soundiata bat Soumaoro Kanté, roi du Sosso, à Kirina en 1235. Maurice Delafosse plaçait la capitale du Mali près du village de Niani, sur le Sankarani, à la frontière actuelle du Mali et de la Guinée ; cette hypothèse est aujourd'hui contestée par des historiens et des archéologues. Au XVe siècle, les navigateurs portugais appellent Guinée la terre des Noirs, sur toute la côte.",
+      "precolonial": "Vers 1725, une révolution musulmane fonde l'État du Fouta-Djalon, dirigé par un almamy installé à Timbo, selon Boubacar Barry. Le nom Fouta Djallon associe deux langues : Fouta, mot fulfulde pour une région peuplée de Fulɓe, et Djallon, « montagne » en yalunka ; la région s'appelait auparavant Jallonkadu, le pays des gens de la montagne (d'après N'Daou, 1999, et les travaux qu'il cite). Sur la côte, les Soussou repoussent les Baga et les Temne vers le Rio Pongo dès le XVIe siècle, selon Yves Person. Au XIXe siècle, Samori Touré bâtit un empire qui englobe Kankan, selon Albert Adu Boahen.",
+      "colonization": "Les postes français de la côte s'appellent d'abord Rivières du Sud ; un décret du 1er août 1889 les sépare du Sénégal, selon Lucien Famechon. Le décret du 17 décembre 1891 organise la « Guinée française et dépendances », selon André Arcin, et le décret du 10 mars 1893 en fait une colonie distincte. Les sources consultées datent donc différemment la naissance de la Guinée française : 1891 pour Arcin, 1893 pour Famechon et Godfrey N. Uzoigwe, 1895 pour Emily Lynn Osborn. Le pays garde ce nom jusqu'à l'indépendance.",
+      "contemporary": "Le 2 octobre 1958, après avoir voté non à plus de 80 % au référendum du 28 septembre, la Guinée proclame son indépendance sous le nom de République de Guinée. De 1978 à 1984, sous Ahmed Sékou Touré, l'État s'appelle République populaire révolutionnaire de Guinée ; il reprend ensuite le nom de République de Guinée. On dit aussi Guinée-Conakry, du nom de la capitale, pour la distinguer des autres pays qui portent le nom de Guinée, selon Emily Lynn Osborn."
     },
     "kingdoms": [
       {
         "name": "Empire du Mali",
-        "period": "XIIIe siècle - XVIe siècle",
+        "period": "XIIIe siècle - début du XVIIe siècle",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1201,
-          "endYear": 1600,
-          "precision": "century"
+          "startYear": 1235,
+          "endYear": 1625,
+          "precision": "approximate",
+          "datingNote": "Le début est la victoire de Soundiata à Kirina, en 1235, selon Djibril Tamsir Niane (HGA IV). La fin lisse un long déclin : vers 1600, les liaisons avec le haut Niger sont coupées, et le Mali se démembre dans les vingt-cinq années suivantes, selon Yves Person (HGA IV)."
         },
-        "dominantPeoples": ["Malinké", "autres peuples mandé"],
-        "politicalCenters": [
-          "Niani, longtemps identifiée comme la capitale, identification réfutée par l'archéologie",
-          "autres centres"
-        ],
-        "historicalRole": "Empire du Mali puissant, centre historique du Mandé, berceau de la culture mandé. La Guinée était au cœur de l'empire du Mali. Développement de l'islam, commerce transsaharien, épopée de Soundiata. Rôle majeur dans la diffusion culturelle mandé."
+        "dominantPeoples": ["Malinké (Maninka)", "autres peuples mandé"],
+        "politicalCenters": ["Niani, sur le Sankarani (hypothèse contestée)"],
+        "historicalRole": "Empire mandingue fondé par Soundiata Keïta après sa victoire sur Soumaoro Kanté, roi du Sosso, à Kirina en 1235, selon Djibril Tamsir Niane. Le nord-est de la Guinée actuelle, autour du Sankarani, est au cœur du Manden. Maurice Delafosse plaçait la capitale à Niani, à la frontière actuelle du Mali et de la Guinée ; Hadrien Collet rappelle que cette hypothèse, née en 1923, a été en partie remise en cause depuis les années 1970. Probablement dès le XIVe siècle, des Malinké s'installent au Sankaran et au Toron, au contact des Kissi et des Toma, selon Yves Person."
       },
       {
         "name": "Théocratie peule du Fouta Djallon",
-        "period": "XVIIIe siècle - XIXe siècle",
+        "period": "Vers 1725 - 1896",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1701,
-          "endYear": 1900,
-          "precision": "century"
+          "startYear": 1725,
+          "endYear": 1896,
+          "precision": "approximate",
+          "datingNote": "Le début lisse une guerre sainte longue : Boubacar Barry (HGA V) date la révolution de 1725, Yves Person (HGA IV) fait commencer le djihad de Karamoxo Alfa en 1727, et le compte rendu de Michèle Fieloux place la guerre sainte entre 1694 et 1725-1726. La fin est la perte de l'indépendance, en 1896, selon le même compte rendu."
         },
-        "dominantPeoples": ["Peul / Fula"],
-        "politicalCenters": ["Fouta Djallon (hauts plateaux)"],
-        "historicalRole": "Théocratie peule du Fouta Djallon, l'un des plus importants États peuls d'Afrique de l'Ouest. État islamique structuré, système d'émirats, résistance à la colonisation française. Traditions peules et islamiques."
-      },
-      {
-        "name": "Royaumes Malinké",
-        "period": "Précolonial - présent",
-        "entryType": "polity",
-        "dominantPeoples": ["Malinké"],
+        "dominantPeoples": ["Peuls (Fulɓe)", "Jakhanké", "Djallonké"],
         "politicalCenters": [
-          "Chefferies traditionnelles malinké (Haute-Guinée)"
+          "Timbo (capitale politique)",
+          "Fougoumba (capitale religieuse)",
+          "Labé"
         ],
-        "historicalRole": "Royaumes Malinké, héritiers du Mandé, traditions de l'empire du Mali, système lignager, castes artisanales (numu, djeli), importance des griots. Rôle majeur dans la diffusion culturelle mandé."
+        "historicalRole": "État musulman né d'une révolution menée par douze marabouts peuls et dix marabouts mandingues, jakhanké, contre les chefferies djallonké, selon Boubacar Barry ; ce n'était pas une guerre entre peuples. Ibrahima Sambegu, dit Karamokho Alfa, devient le premier almamy, à Timbo. La confédération compte neuf provinces, les diwe, dont Labé, et un conseil des Anciens siège à Fougoumba. À la fin du XIXe siècle, les troupes françaises occupent Timbo et battent l'almamy Bokar Biro près de Porédaka, selon Lucien Famechon, et le Fouta perd son indépendance."
       },
       {
-        "name": "Peuples forestiers",
-        "period": "Précolonial - présent",
+        "name": "Chefferies malinké de Haute-Guinée",
+        "period": "Depuis le XIVe siècle environ",
         "entryType": "polity",
-        "dominantPeoples": ["Kissi", "Toma", "Guerzé / Kpelle"],
-        "politicalCenters": ["Chefferies traditionnelles (Guinée forestière)"],
-        "historicalRole": "Peuples forestiers de Guinée forestière, culturellement distincts du nord mandé et du Fouta Djallon. Traditions forestières, structures lignagères. Résistance à la colonisation."
+        "dominantPeoples": ["Malinké (Maninka)", "Kouranko", "Konianké"],
+        "politicalCenters": ["Sankaran", "Toron", "Kankan"],
+        "historicalRole": "Selon Yves Person, des Malinké s'installent probablement dès le XIVe siècle au Sankaran et au Toron. Les Konianké, des Malinké du sud, occupent les hauts plateaux du sud au plus tard à la fin du XVe siècle, sous la domination des clans Camara-Diamande. Les commerçants dioula organisent probablement très tôt le commerce de la kola avec les peuples de la forêt. Au XIXe siècle, Kankan est un grand centre de commerce et d'islam dioula, intégré à l'empire de Samori Touré, selon Albert Adu Boahen."
       },
       {
-        "name": "Peuples Soussou",
-        "period": "Précolonial - présent",
+        "name": "Peuples de la Guinée forestière",
+        "period": "Avant le XIVe siècle - aujourd'hui",
         "entryType": "polity",
-        "dominantPeoples": ["Soussou"],
-        "politicalCenters": ["Chefferies traditionnelles (Basse-Guinée, côte)"],
-        "historicalRole": "Peuples Soussou de la côte, rôle commercial important, traditions maritimes. Conakry et la Basse-Guinée sont dominées par les Soussou."
+        "dominantPeoples": ["Kissi", "Toma (Loma)", "Kpelle (Guerzé)"],
+        "politicalCenters": [
+          "Villages et chefferies de la région de N'Zérékoré"
+        ],
+        "historicalRole": "Les Kissi, qui parlent une langue mel, et les Toma (Loma) et Kpelle, qui parlent des langues mandé, vivent au sud, dans la forêt. Selon Yves Person, ils produisent la kola que viennent chercher les commerçants dioula, et les Malinké installés sur les hauts plateaux du sud repoussent ou absorbent les premiers habitants kpelle de cette région. Au recensement de 2014, la région de N'Zérékoré est la seule où les musulmans sont moins de la moitié de la population."
+      },
+      {
+        "name": "Chefferies soussou de Basse-Guinée",
+        "period": "Depuis le XVIe siècle sur la côte",
+        "entryType": "polity",
+        "dominantPeoples": ["Soussou", "Baga", "Landouma", "Nalou"],
+        "politicalCenters": [
+          "Chefferies du Kaloum, de Dubréka et de la Mellacorée"
+        ],
+        "historicalRole": "Selon Yves Person, les Soussou vivent d'abord à l'ouest et au sud du Fouta-Djalon, en petits groupes, avec une société d'initiation, le Simo, d'origine baga ou temne. Avec le commerce portugais, ils descendent vers la côte et repoussent les Baga et les Temne vers le Rio Pongo au milieu du XVIe siècle ; leur langue devient peu à peu dominante sur la côte. Lucien Famechon décrit à la fin du XIXe siècle les guerres de succession entre chefs du Kaloum et de Dubréka."
       },
       {
         "name": "Empire toucouleur (Ségou)",
@@ -315,10 +565,10 @@
           "precision": "year"
         },
         "dominantPeoples": [
-          "Tous les peuples guinéens sous domination française"
+          "Tous les peuples de Guinée, sous domination française"
         ],
-        "politicalCenters": ["Conakry (capitale coloniale)"],
-        "historicalRole": "Colonie française, exploitation économique, développement de l'administration coloniale, résistance des peuples autochtones (notamment résistance du Fouta Djallon). Développement du mouvement indépendantiste au XXe siècle, leadership de Sékou Touré."
+        "politicalCenters": ["Conakry (chef-lieu de la colonie)"],
+        "historicalRole": "Colonie née du décret du 17 décembre 1891, qui organise la « Guinée française et dépendances » avec un gouverneur à Conakry, puis du décret du 10 mars 1893, selon André Arcin et Lucien Famechon. Le Fouta-Djalon, d'abord protectorat, perd son indépendance en 1896 ; Samori Touré est capturé en 1898. Dans les années 1950, le Parti démocratique de Guinée de Sékou Touré mobilise les Guinéens contre la domination française, et la colonie vote non au référendum de 1958."
       }
     ],
     "majorPeoples": [
@@ -332,79 +582,89 @@
           "\"Fellata\" (terme haoussa parfois péjoratif, à éviter)"
         ],
         "peopleId": "PPL_FULA",
-        "mainRegion": "Fouta Djallon (hauts plateaux, centre)",
-        "languages": ["Fulfulde (ful, ISO 639-3)", "français"],
+        "mainRegion": "Moyenne-Guinée, Fouta-Djalon (régions de Labé et de Mamou)",
+        "languages": ["Pular (fuf)", "français"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "Le peuple se nomme Fulɓe. Peul et Fulani sont aussi des noms acceptés, donnés de l'extérieur. Fellata peut être méprisant dans certains contextes ; il est donc à éviter. Le Fouta Djallon fut l'un des principaux États peuls d'Afrique de l'Ouest."
+        "appellationRemarks": "Le peuple se nomme Fulɓe au pluriel et Pullo au singulier. Peul et Fulani sont des noms donnés de l'extérieur. Fellata peut être méprisant dans certains contextes. Au recensement de 2014, le poular est la langue la plus parlée en Guinée (34,6 %), et presque la seule dans les régions de Labé (94,5 %) et de Mamou (92,4 %)."
       },
       {
         "name": "Malinké",
-        "selfAppellation": "Maninka / Mandinka",
+        "selfAppellation": "Maninka",
         "exonyms": [
           "Malinké (terme français)",
           "Mandinka (terme anglophone)",
           "\"Mandingo\" (terme historique, parfois péjoratif)"
         ],
         "peopleId": "PPL_MALINKE",
-        "mainRegion": "Haute-Guinée (nord-est)",
-        "languages": ["Malinké / Mandinka (mlq, ISO 639-3)", "français"],
+        "mainRegion": "Haute-Guinée (région de Kankan)",
+        "languages": ["Malinké, ou maninka de l'Est (emk)", "français"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "Les personnes concernées se nomment Maninka ou Mandinka. Malinké est un nom français donné de l'extérieur et accepté. Mandingo est un terme historique qui peut être méprisant dans certains contextes ; il est donc à éviter. Les Malinké sont les héritiers du Mandé et de l'empire du Mali."
+        "appellationRemarks": "Les personnes concernées se nomment Maninka. Malinké est un nom français, donné de l'extérieur et accepté. Mandingo est un terme ancien qui peut être méprisant dans certains contextes. Au recensement de 2014, le malinké est parlé par 24,9 % de la population, et par 87,1 % dans la région de Kankan."
       },
       {
         "name": "Soussou",
         "selfAppellation": "Soussou",
-        "exonyms": ["Soussou (terme utilisé par les Européens)"],
+        "exonyms": ["Soussou (forme française)", "Susu (forme anglaise)"],
         "peopleId": "PPL_SOUSSOU",
-        "mainRegion": "Basse-Guinée (côte, Conakry)",
-        "languages": ["Soussou (sus, ISO 639-3)", "français"],
+        "mainRegion": "Basse-Guinée (régions de Kindia et de Conakry)",
+        "languages": ["Soussou (sus)", "français"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Soussou\" est l'auto-appellation. Pas de terme péjoratif connu. Population littorale et urbaine de Basse-Guinée. Conakry et la Basse-Guinée sont dominées par les Soussou."
+        "appellationRemarks": "Le dictionnaire de Jean-Baptiste Raimbault, publié en 1923, écrit le nom de la langue « soso ». Au recensement de 2014, le soussou est parlé par 17,7 % de la population, par 54,9 % dans la région de Kindia et par 37 % à Conakry."
       },
       {
         "name": "Kissi",
         "selfAppellation": "Kissi",
         "exonyms": ["Kissi (terme utilisé par les Européens)"],
         "peopleId": "PPL_KISSI",
-        "mainRegion": "Guinée forestière (sud)",
-        "languages": ["Kissi (kqs, ISO 639-3)", "français"],
+        "mainRegion": "Guinée forestière (régions de N'Zérékoré et de Faranah)",
+        "languages": ["Kissi du Nord (kqs)", "français"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Kissi\" est l'auto-appellation. Pas de terme péjoratif connu. Peuple forestier du sud."
+        "appellationRemarks": "Kissi est le nom que le peuple se donne. Au recensement de 2014, le kissi est parlé par 4,1 % de la population, par 15,4 % dans la région de N'Zérékoré et par 13,2 % dans celle de Faranah."
       },
       {
         "name": "Guerzé / Kpelle",
         "selfAppellation": "Kpelle",
         "exonyms": [
-          "Kpelle (terme utilisé par les Européens)",
-          "Guerzé (terme alternatif)"
+          "Guerzé (nom employé par l'enquête démographique guinéenne)"
         ],
         "peopleId": "PPL_KPELLE",
-        "mainRegion": "Guinée forestière (sud)",
-        "languages": ["Kpelle (kpe, ISO 639-3)", "français"],
+        "mainRegion": "Guinée forestière (région de N'Zérékoré)",
+        "languages": ["Kpelle de Guinée (gkp)", "français"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Kpelle\" est l'auto-appellation. \"Guerzé\" est un terme alternatif accepté. Pas de terme péjoratif connu. Groupe de Guinée forestière."
+        "appellationRemarks": "Kpelle est le nom que le peuple se donne. L'enquête démographique de 2018 emploie le nom Guerzé, et le recensement de 2014 appelle la langue kpèlè. Au recensement de 2014, le kpèlè est parlé par 4,0 % de la population et par 23,4 % dans la région de N'Zérékoré."
       },
       {
         "name": "Toma / Loma",
         "selfAppellation": "Toma, Loma",
-        "exonyms": ["Toma, Loma (termes utilisés par les Européens)"],
+        "exonyms": ["Toma (nom employé par le recensement guinéen)"],
         "peopleId": "PPL_TOMA_LOMA",
-        "mainRegion": "Guinée forestière (montagnes)",
-        "languages": [
-          "Toma (tod, ISO 639-3)",
-          "Loma (lom, ISO 639-3)",
-          "français"
-        ],
+        "mainRegion": "Guinée forestière (région de N'Zérékoré)",
+        "languages": ["Toma (tod)", "Loma (lom)", "français"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Toma\" et \"Loma\" sont les auto-appellations respectives. Pas de terme péjoratif connu. Populations montagnardes de Guinée forestière."
+        "appellationRemarks": "Glottolog distingue le toma (tod), parlé en Guinée, et le loma (lom), parlé au Liberia et en Guinée. Au recensement de 2014, le toma est parlé par 1,4 % de la population et par 7,8 % dans la région de N'Zérékoré."
       },
       {
         "name": "Autres peuples",
-        "selfAppellation": "Variées selon les groupes (Bagha, Yalunka, Manon, Bassari)",
-        "exonyms": ["Variées selon les groupes"],
-        "mainRegion": "Diverses régions de la Guinée",
-        "languages": ["Langues diverses", "français"],
-        "appellationRemarks": "Chaque groupe a sa propre auto-appellation (Bagha, Yalunka, Manon, Bassari, etc.). Pas de terme péjoratif connu."
+        "selfAppellation": "Chaque peuple a son propre nom",
+        "exonyms": ["Variables selon les peuples"],
+        "mainRegion": "Toutes les régions de la Guinée",
+        "languages": [
+          "Koniaka",
+          "Kouranko",
+          "Djakanka",
+          "Djalonké",
+          "Kono",
+          "Mano",
+          "Tomamania",
+          "Landouma",
+          "Baga",
+          "Lélé",
+          "Koniagui",
+          "Bassari",
+          "Nalou",
+          "français"
+        ],
+        "appellationRemarks": "Le recensement de 2014 compte une vingtaine de langues nationales. Après le poular, le malinké et le soussou viennent le koniaka (4,5 %), le kissi, le kpèlè, le kouranko (1,9 %), le toma, le djakanka (1,1 %) et le djalonké (0,9 %) ; les autres langues sont chacune parlées par moins de 1 % de la population."
       }
     ],
     "culture": {
@@ -415,24 +675,24 @@
           "isPrimary": true
         },
         {
-          "name": "Fulfulde",
-          "isoCode": "ful"
+          "name": "Pular",
+          "isoCode": "fuf"
         },
         {
-          "name": "Malinké / Mandinka",
-          "isoCode": "mlq"
+          "name": "Malinké (maninka de l'Est)",
+          "isoCode": "emk"
         },
         {
           "name": "Soussou",
           "isoCode": "sus"
         },
         {
-          "name": "Kissi",
+          "name": "Kissi du Nord",
           "isoCode": "kqs"
         },
         {
-          "name": "Kpelle",
-          "isoCode": "kpe"
+          "name": "Kpelle de Guinée",
+          "isoCode": "gkp"
         },
         {
           "name": "Toma",
@@ -441,31 +701,29 @@
         {
           "name": "Loma",
           "isoCode": "lom"
-        },
-        {
-          "name": "langues diverses"
         }
       ],
-      "culturalTraditions": "Diversité culturelle importante reflétant la mosaïque ethnique de la Guinée. Traditions mandé (Malinké, Soussou, Kpelle, Toma, Loma, griots, kora, musique mandingue, épopée de Soundiata). Traditions peules (Fouta Djallon, poésie peule, traditions islamiques). Traditions forestières (Kissi, Toma, Loma, Guerzé, masques, traditions d'initiation). Musique et danse traditionnelles variées. Cérémonies de passage, rites d'initiation, fêtes traditionnelles. La Guinée forestière est culturellement distincte du nord mandé et du Fouta Djallon.",
-      "dominantReligions": "Islam sunnite (majoritaire, 85%+), christianisme (minorité), religions traditionnelles africaines (syncrétisme fréquent, culte des ancêtres, masques)",
-      "lifestyles": "Agriculture (riz, mil, arachides, cultures vivrières), élevage (Peuls, bovins), exploitation minière (bauxite, or, diamants), commerce et activités urbaines (zones urbaines, Conakry). Urbanisation modérée. Économie basée sur l'exploitation minière (bauxite, première source de revenus), l'agriculture, et les services. La Guinée possède d'importantes ressources minières.",
-      "socialOrganization": "Organisation en empires historiques (empire du Mali, centre du Mandé), théocraties (Fouta Djallon, système d'émirats), chefferies traditionnelles (Malinké, Soussou, peuples forestiers), structures claniques patrilinéaires. Importance des lignages et des familles étendues. Rôle des conseils d'anciens. Système de castes (Malinké, numu, djeli, griots). Traditions d'initiation et de passage à l'âge adulte.",
-      "regionalRelations": "Relations historiques avec le Mali (Malinké, héritage de l'empire du Mali), le Sénégal (Peuls, commerce), la Sierra Leone (peuples forestiers, frontière), le Liberia (Kpelle, frontière), la Côte d'Ivoire (Malinké, commerce, frontière). Intégration dans la CEDEAO (Communauté économique des États de l'Afrique de l'Ouest) et l'UEMOA (Union économique et monétaire ouest-africaine). Relations commerciales et culturelles transfrontalières."
+      "culturalTraditions": "L'épopée de Soundiata, fondateur de l'empire du Mali, se transmet par les griots. À Nyagassola, au nord de la Guinée, la famille Dökala, des griots Kouyaté, garde le Sosso-Bala, un balafon qui aurait appartenu au roi Soumaoro Kanté ; l'UNESCO a proclamé cet espace culturel en 2001 et l'a inscrit en 2008 au patrimoine culturel immatériel de l'humanité. Sur la côte, des sociétés de masques comme le Simo des Baga et des Landouma s'occupent de l'initiation, selon Yves Person. Les statuettes de pierre appelées nomoli ou pomta viennent d'anciennes sépultures de Guinée et de Sierra Leone.",
+      "dominantReligions": "Au recensement de 2014, 89,1 % des habitants se déclarent musulmans, 6,8 % chrétiens et 1,6 % animistes, selon le mot du recensement, tandis que 2,4 % se disent sans religion. Les musulmans sont plus de 94 % à Labé et à Mamou. La région de N'Zérékoré, en Guinée forestière, est la seule où ils sont moins de la moitié (46,7 %), avec 28,1 % de chrétiens et 10,4 % d'animistes. L'islam est ancien au Fouta-Djalon, où un État musulman se forme vers 1725.",
+      "lifestyles": "En 2025, 61,3 % des habitants vivent à la campagne, et un ménage compte en moyenne 6,5 personnes, selon le recensement. D'après le recensement de 2014, le secteur rural fournit l'essentiel des emplois, et le secteur rural et les mines représentent chacun près d'un cinquième de la richesse produite ; le sous-sol contient de la bauxite, du diamant, du fer et de l'or. Les hauts plateaux du Fouta-Djalon se prêtent à l'élevage, et les éleveurs peuls y sont venus dès le XVe siècle, selon Yves Person.",
+      "socialOrganization": "Le recensement de 2014 ne publie pas de répartition par peuple ; il compte les langues parlées et note que de grands groupes de langue regroupent de petits groupes qui parlent des variantes de la langue principale. Au Fouta-Djalon, l'almamy de Timbo partageait le pouvoir avec les chefs des provinces et un conseil des Anciens réuni à Fougoumba, selon Boubacar Barry. Les Djallonké vivaient en lignages paternels, en villages et en petites chefferies, selon Yves Person. Sur la côte, au XVIe siècle, le roi d'un village devait consulter les anciens avant de faire la guerre. Des familles de griots, comme les Kouyaté de Nyagassola, transmettent l'épopée de Soundiata et les chants qui l'accompagnent.",
+      "regionalRelations": "Plusieurs langues de Guinée se parlent aussi chez les voisins : le pular au Sénégal, en Guinée-Bissau, au Mali et en Sierra Leone ; le malinké au Mali, en Côte d'Ivoire, au Liberia et en Sierra Leone ; le kissi et le kpelle au Liberia, selon Glottolog. En 2014, les étrangers venus d'Afrique de l'Ouest sont surtout originaires de Sierra Leone et de Côte d'Ivoire, selon le recensement. La Guinée est membre de l'Union africaine, qui l'a suspendue de ses activités après la prise du pouvoir par la force en septembre 2021, puis réintégrée le 22 janvier 2026 ; la CEDEAO a accompagné cette transition."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement initial par les peuples mandé, atlantiques et forestiers. Développement de chefferies et royaumes locaux.",
-      "middleAges": "XIIIe-XVIe siècle : Empire du Mali, centre historique du Mandé, berceau de la culture mandé. La Guinée était au cœur de l'empire du Mali. Développement de l'islam, commerce transsaharien, épopée de Soundiata. Rôle majeur dans la diffusion culturelle mandé. Influence de l'empire Songhai et de l'empire du Ghana.",
-      "precolonial": "XVIIIe-XIXe siècle : Théocratie peule du Fouta Djallon, l'un des plus importants États peuls d'Afrique de l'Ouest. Consolidation des royaumes Malinké (Haute-Guinée). Développement des peuples Soussou (Basse-Guinée, côte). Peuples forestiers (Guinée forestière). Commerce régional et transsaharien. Résistance aux pressions extérieures.",
-      "colonization": "1891 : Création de la colonie française de Guinée. Période coloniale française (1891-1958), exploitation économique, développement de l'administration coloniale, résistance des peuples autochtones (notamment résistance du Fouta Djallon). XXe siècle : Développement du mouvement indépendantiste, leadership de Sékou Touré.",
-      "independenceStruggle": "1950s-1958 : Mouvement pour l'indépendance mené par Sékou Touré et le Parti démocratique de Guinée (PDG). 1958 : Référendum sur la Communauté française, la Guinée vote \"NON\" (seule colonie à voter NON). Indépendance de la Guinée (2 octobre 1958), proclamation de la République de Guinée. Sékou Touré devient président.",
-      "postIndependence": "1958-1984 : Présidence de Sékou Touré, régime socialiste, politique d'isolement, répression politique. 1984-2008 : Régime militaire, présidence de Lansana Conté. 2008-2010 : Régime militaire, présidence de Moussa Dadis Camara puis Sékouba Konaté. 2010-présent : Transition démocratique, élection d'Alpha Condé (2010-2021) puis de Mamady Doumbouya (depuis 2021, coup d'État). Défis : pauvreté, instabilité politique, développement économique, gestion des ressources minières. La Guinée possède d'importantes ressources minières (bauxite, or, diamants)."
+      "ancientPeriods": "Les sources consultées ne datent pas le premier peuplement de la Guinée. Selon Yves Person, le Fouta-Djalon est depuis très longtemps le pays des Djallonké et des Soussou, et les Baga et les Nalou vivaient nombreux dans ses vallées avant le XVIIIe siècle.",
+      "middleAges": "En 1235, Soundiata Keïta bat Soumaoro Kanté à Kirina et fonde l'empire du Mali, selon Djibril Tamsir Niane ; le nord-est de la Guinée actuelle appartient au Manden. Probablement dès le XIVe siècle, des Malinké s'installent au Sankaran et au Toron. Au milieu du XVe siècle, des éleveurs peuls arrivent au Fouta-Djalon, et les navigateurs portugais atteignent la côte, selon Yves Person. Le Mali se démembre au début du XVIIe siècle.",
+      "precolonial": "Au XVIe siècle, les Soussou s'installent sur la côte et repoussent les Baga et les Temne. Vers 1725, une révolution musulmane fonde l'État du Fouta-Djalon, avec Timbo pour capitale, selon Boubacar Barry. Au XIXe siècle, l'empire d'El Hadj Oumar Tall s'étend depuis les sources du Sénégal et de la Gambie, en Guinée actuelle, et Samori Touré bâtit un empire qui va du nord de la Sierra Leone et de la Guinée jusqu'à Bamako, selon Albert Adu Boahen.",
+      "colonization": "Un décret du 1er août 1889 sépare les Rivières du Sud du Sénégal. Le décret du 17 décembre 1891 organise la Guinée française et dépendances, et le décret du 10 mars 1893 en fait une colonie distincte. Les troupes françaises occupent Timbo, et le Fouta-Djalon perd son indépendance en 1896. Samori Touré est capturé en 1898, puis exilé au Gabon en 1900, selon Godfrey N. Uzoigwe.",
+      "independenceStruggle": "Dans les années 1950, le Parti démocratique de Guinée, mené par le syndicaliste Sékou Touré, gagne les campagnes en combattant la chefferie, qui servait l'administration coloniale, selon Jean Suret-Canale et A. Adu Boahen. Il rassemble des groupes ethniques et des syndicats contre la domination française, selon J. Isawa Elaigwu. Au référendum du 28 septembre 1958, le non obtient plus de 80 % des voix en Guinée, le seul territoire d'Afrique française à le choisir, et le pays proclame son indépendance le 2 octobre 1958, selon Jean Suret-Canale et A. Adu Boahen.",
+      "postIndependence": "De 1958 à 1984, Ahmed Sékou Touré gouverne avec le Parti démocratique de Guinée, parti unique d'inspiration socialiste, selon l'Institut national de la statistique. De 1984 à 2008, sous Lansana Conté, les militaires sont au pouvoir ; à sa mort, en décembre 2008, les militaires prennent le pouvoir par le Conseil national pour la démocratie et le développement (CNDD). Alpha Condé est président quand le pouvoir est pris par la force, le 5 septembre 2021 ; l'Union africaine condamne ce coup d'État. Une nouvelle Constitution est adoptée par référendum, puis une élection présidentielle a lieu le 28 décembre 2025. En janvier 2026, le Conseil de paix et de sécurité de l'Union africaine félicite Mamadi Doumbouya, président de la République, et lève la suspension de la Guinée."
     },
     "sources": [
       {
-        "title": "SIL Ethnologue - Langues de Guinee",
+        "title": "SIL Ethnologue – Langues de Guinée",
         "url": "https://www.ethnologue.com/country/GN/",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues vivantes publié par SIL International, page consacrée à la Guinée."
       },
       {
         "title": "UNFPA – World Population Dashboard — Guinée",
@@ -490,10 +748,11 @@
         "source_kind": "intergovernmental"
       },
       {
-        "title": "Institut national de la statistique (Guinee) - Recensement general de la population et de l'habitation 2025, resultats preliminaires",
+        "title": "Institut national de la statistique (Guinée) — Quatrième recensement général de la population et de l'habitation (RGPH-4), résultats préliminaires (2026)",
         "url": "https://www.stat-guinee.org/images/Documents/Publications/INS/rapports_enquetes/RGPH-4/Resultats_preliminaires_rgph_4.pdf",
         "tier": "official",
-        "source_kind": "official_statistics"
+        "source_kind": "official_statistics",
+        "notes": "Publié par l'Institut national de la statistique, ministère du Plan, de la Coopération internationale et du Développement. Le dénombrement a eu lieu du 1er au 31 juillet 2025 (p. 17). Page 22 : « L'effectif de la population résidente recensée en Guinée en 2025 est de 17 521 167 habitants », contre 10 523 261 en 2014. La synthèse (p. 2) donne 51,8 % de femmes, 61,3 % de population rurale et une taille moyenne des ménages de 6,5 personnes. Ces résultats préliminaires ne donnent pas de répartition par peuple ni par langue."
       },
       {
         "title": "Fieloux, Michele - compte rendu de Thierno Diallo, Les institutions politiques du Fouta Dyalon au XIXe siecle (Dakar, IFAN, 1972) - Cahiers d'Etudes africaines, 14 (54), 1974, p. 402-403",
@@ -518,7 +777,7 @@
         "url": "https://journals.openedition.org/afriques/1098",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Retrace comment la lecture Niani a été substituée à un tracé consonantique arabe que les manuscrits ne vocalisent pas. Accès libre."
+        "notes": "Article lu en texte intégral sur OpenEdition. Le résumé retrace l'histoire de l'hypothèse qui place la capitale du Mali à Niani : apparue en 1923 chez des historiens de l'époque coloniale, elle a été en partie remise en cause à partir des années 1970 par la critique historique et l'archéologie, et garde des partisans. Accès libre."
       },
       {
         "title": "Agrour, Rachid - Contribution à l'étude d'un mot voyageur : Chleuh - Cahiers d'Études africaines, 208, 2012, p. 767-811",
@@ -574,6 +833,146 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "UNESCO, volume dirigé par A. A. Boahen, chapitre de M'Baye Gueye et Albert Adu Boahen (1987), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 147. « En 1881, il avait déjà fait » de la partie méridionale des savanes soudanaises, entre le nord de l'actuelle Sierra Leone et la rivière Sassandra, « un empire unifié sous son autorité incontestée »."
+      },
+      {
+        "title": "Institut national de la statistique (Guinée), Bah, Mamadou Chérif et Bangoura, Mamadouba Alkaly — Troisième recensement général de la population et de l'habitation (RGPH 2014) : état et structure de la population (2017)",
+        "url": "https://www.stat-guinee.org/images/Documents/Publications/INS/rapports_enquetes/RGPH3/RGPH3_etat_structure.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport d'analyse du recensement réalisé du 1er mars au 2 avril 2014, édition de décembre 2017. Page 22 : dans toutes les régions, « on trouve de grands groupes linguistiques qui cachent derrière eux de petits groupes ethniques » ; la même page résume l'histoire politique depuis l'indépendance du 2 octobre 1958 (première République et Parti démocratique de Guinée jusqu'en 1984, deuxième République avec les militaires au pouvoir de 1984 à 2008, prise du pouvoir par le CNDD en décembre 2008). Page 23 : le secteur rural et le secteur minier font 18 % et 19 % du PIB ; le sous-sol contient bauxite, diamant, fer et or. Page 31 : 10 523 261 habitants. Pages 85-87 : langue nationale habituellement parlée, poular 34,6 %, malinké 24,9 %, soussou 17,7 %, koniaka 4,5 %, kissi 4,1 %, kpèlè 4,0 %, kouranko 1,9 %, toma 1,4 % (population de 3 ans et plus) ; le poular domine à Labé (94,5 %) et Mamou (92,4 %), le malinké à Kankan (87,1 %), le soussou à Kindia (54,9 %). Pages 87-88 : religion, musulmans 89,1 %, chrétiens 6,8 %, animistes 1,6 %, sans religion 2,4 % ; N'Zérékoré est la seule région où les musulmans sont moins de la moitié (46,7 %). Le rapport ne publie pas de répartition par groupe ethnique."
+      },
+      {
+        "title": "Institut national de la statistique (Guinée) et ICF — Enquête démographique et de santé en Guinée, EDS V 2018 (2019)",
+        "url": "https://dhsprogram.com/pubs/pdf/FR353/FR353.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Enquête par sondage menée de mars à juin 2018 par l'Institut national de la statistique avec le programme DHS, rapport publié en juillet 2019. Tableau 3.1, p. 49 : répartition pondérée des femmes de 15 à 49 ans enquêtées selon l'ethnie, Peulh 35,5 %, Malinké 28,4 %, Soussou 20,7 %, Guerzé 7,6 %, Kissi 6,0 %, Toma 1,4 %, autre ou étranger 0,4 % ; chez les hommes de 15 à 49 ans, Malinké 32,4 %, Peulh 26,9 %, Soussou 22,8 %. Ces parts décrivent l'échantillon de l'enquête, pas un recensement de toute la population."
+      },
+      {
+        "title": "General History of Africa, IV, ch. 6 : Mali and the second Mandingo expansion",
+        "url": "https://archive.org/details/unesco_general_history_africa_iv",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par D. T. Niane, chapitre de Djibril Tamsir Niane, édition anglaise de 1984 lue sur Internet Archive. Pages 131-132 : Soundiata bat Soumaoro (Sumaguru), roi du Sosso, à Kirina ; l'introduction du volume date cette bataille de 1235. Page 136 : Maurice Delafosse place la capitale, Niani, près du village actuel de Niani sur le Sankarani, « on the present border between Mali and Guinea »."
+      },
+      {
+        "title": "General History of Africa, IV, ch. 12 : The coastal peoples: from Casamance to the Ivory Coast lagoons",
+        "url": "https://archive.org/details/unesco_general_history_africa_iv",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, chapitre d'Yves Person, édition anglaise de 1984 lue sur Internet Archive. Pages 306-307 : les villages de la côte sont autonomes, le roi consulte un conseil d'anciens, des sociétés de masques comme le Simo des Baga et des Landouma s'occupent de l'initiation, et les statuettes nomoli ou pomta viennent d'anciennes sépultures de Guinée et de Sierra Leone. Page 315 : vers 1600, Kaabu est coupé du haut Niger et le Mali se démembre dans les vingt-cinq années suivantes ; le Fouta-Djalon est depuis très longtemps le pays des Djallonké et des Soussou, qui parlent deux dialectes d'une même langue mandingue ; la langue soussou devient peu à peu dominante sur la côte. Page 316 : des Peuls arrivent au milieu du XVe siècle ; le djihad de Karamoxo Alfa commence en 1727 ; les Soussou repoussent les Baga et les Temne vers le Rio Pongo au milieu du XVIe siècle. Pages 316-317 : Kouranko, Konianké et Malinké du sud s'installent au contact des Kissi, des Toma (Loma) et des Kpelle, probablement dès le XIVe siècle."
+      },
+      {
+        "title": "General History of Africa, V, ch. 10 : Senegambia from the sixteenth to the eighteenth century",
+        "url": "https://archive.org/details/general-history-of-africa-vol-5",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre de Boubacar Barry, édition anglaise lue sur Internet Archive. Pages 288-292 : la révolution musulmane de 1725 fonde l'État théocratique du Fouta-Djalon ; elle est menée par douze marabouts peuls et dix marabouts mandingues (jakhanké) et n'est pas « an ethnic war » entre Peuls et Djallonké. Ibrahima Sambegu, dit Karamokho Alfa, devient almamy à Timbo ; la confédération compte neuf provinces (diwe), dont Labé, et un conseil des Anciens siège à Fougoumba, la capitale religieuse."
+      },
+      {
+        "title": "General History of Africa, VII, ch. 2 : European partition and conquest of Africa: an overview",
+        "url": "https://archive.org/details/general-history-of-africa-vol-7",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par A. Adu Boahen, chapitre de Godfrey N. Uzoigwe, édition anglaise lue sur Internet Archive. Pages 35-36 : Samori Touré est capturé en 1898 et exilé au Gabon en 1900 ; les Français conquièrent la Côte d'Ivoire et « the future French Guinea where they set up colonies in 1893 »."
+      },
+      {
+        "title": "General History of Africa, VIII, ch. 7 : West Africa, 1945-60",
+        "url": "https://archive.org/details/general-history-of-africa-volume-8-africa-since-1935",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par Ali A. Mazrui, chapitre de Jean Suret-Canale et A. Adu Boahen, édition anglaise lue sur Internet Archive. Page 178 : dans les années 1950, le Parti démocratique de Guinée (RDA), mené par le syndicaliste Sékou Touré, étend son influence dans les campagnes en combattant la chefferie, rouage de l'administration coloniale. Page 179 : au référendum du 28 septembre 1958, l'administration obtient le oui partout en Afrique française « except in Guinea, where the ‘no’ vote totalled more than 80 per cent », et la Guinée proclame son indépendance le 2 octobre."
+      },
+      {
+        "title": "General History of Africa, VIII, ch. 15 : Nation-building and changing political structures",
+        "url": "https://archive.org/details/general-history-of-africa-volume-8-africa-since-1935",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, chapitre de J. Isawa Elaigwu avec Ali A. Mazrui, édition anglaise lue sur Internet Archive. Page 442 : le Parti démocratique de Guinée de Sékou Touré rassemble divers groupes ethniques et syndicats et mobilise les Guinéens contre la domination française. Tableau 15.1 (p. 456-459) : Ahmed Sékou Touré gouverne de 1958 à 1984, puis le général Lansana Conté à partir de 1984."
+      },
+      {
+        "title": "Jean-Léon l'Africain — Description de l'Afrique, tierce partie du monde, tome III, éd. Charles Schefer (1898)",
+        "url": "https://archive.org/details/descriptiondelaf03leoa",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Traduction française de Jean Temporal (1556), nouvelle édition annotée par Charles Schefer, Paris, Ernest Leroux, tome III, lue sur Internet Archive. Pages 288-290, chapitre « Ghinée, royaume » : « Ce second royaume est appellé par nos marchans Gheneoa, mais ceux de Gennes, Portugal et Europe [...] l'appellent Ghinea » ; ce royaume s'étend sur le Niger. En note, page 290, Schefer écrit que la Guinée « est appelée par les géographes arabes Djenny ou Guenny »."
+      },
+      {
+        "title": "Arcin, André — La Guinée française : races, religions, coutumes, production, commerce (1907)",
+        "url": "https://archive.org/details/laguinefrana00arci",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Ouvrage d'un administrateur colonial, publié à Paris chez Challamel en 1907, lu sur Internet Archive : un document colonial, qui décrit le pays du point de vue de l'administration française. Page 1 : « Le nom de Guinée était anciennement donné à la Côte occidentale d'Afrique et venait de Djenné », avec une citation de Léon l'Africain. Page 586 : le nom de Guinée, que l'on donnait à l'ensemble de ces pays, a été donné à la « Guinée française et dépendances » par le décret du 17 décembre 1891 ; après le décret du 10 mars 1893 qui sépare Rivières du Sud, Côte d'Ivoire et Dahomey, seule la première garde ce nom. Page 590 : le décret de 1891 met fin à la tutelle du Sénégal."
+      },
+      {
+        "title": "Famechon, Lucien — Notice sur la Guinée française (1900)",
+        "url": "https://archive.org/details/noticesurlaguin00fameuoft",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Notice officielle de la colonie préparée pour l'Exposition universelle de Paris de 1900, lue sur Internet Archive : un document colonial. Pages 19-21 : un décret du 1er août 1889 sépare du Sénégal « les Rivières du sud et dépendances » ; le décret du 17 décembre 1891 place la colonie sous un gouverneur résidant à Conakry ; le 10 mars 1893, chaque groupe d'établissements devient une colonie, et « la colonie de la Guinée française se trouva donc constituée » avec le protectorat du Fouta-Djallon. Pages 21-22 : les troupes françaises occupent Timbo, battent les partisans de l'almamy Bokar Biro près de Porédaka, et le Fouta « a perdu son indépendance »."
+      },
+      {
+        "title": "Osborn, Emily Lynn — Guinea, dans Countries and Their Cultures (2001)",
+        "url": "https://www.everyculture.com/Ge-It/Guinea.html",
+        "tier": "unverified",
+        "source_kind": "encyclopedia",
+        "notes": "Article de l'historienne Emily Lynn Osborn, reproduit en ligne sur le site Every Culture. Elle rapporte que « some Guineans » rattachent le mot au soussou guinè, « femme » : des femmes rencontrées sur la côte auraient dit qu'elles étaient des femmes, et les Européens auraient pris ce mot pour un nom de pays. Elle date de 1895 le nom de Guinée française, et indique que Sékou Touré nomme le pays République populaire révolutionnaire de Guinée, nom que Lansana Conté change en République de Guinée."
+      },
+      {
+        "title": "Raimbault, Jean-Baptiste — Dictionnaire français-soso et soso-français (1923)",
+        "url": "https://archive.org/details/dictionnairefran00raim",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Dictionnaire publié par la Mission catholique de Conakry en 1923, lu sur Internet Archive : un ouvrage missionnaire de l'époque coloniale. Aux entrées « Épouse » et « Femme », le mot soussou est ginè ; l'introduction cite « le mot ginè, femme »."
+      },
+      {
+        "title": "Communiqué conjoint franco-guinéen à l'issue du voyage de M. Giscard d'Estaing en Guinée, Conakry, 22 décembre 1978",
+        "url": "https://www.elysee.fr/valery-giscard-d-estaing/1978/12/22/communique-conjoint-franco-guineen-a-lissue-du-voyage-de-m-giscard-destaing-en-guinee-conakry-le-22-decembre-1978",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Texte publié dans les archives en ligne de la présidence de la République française. La première phrase nomme « Ahmed Sékou Touré, président de la République populaire révolutionnaire de Guinée »."
+      },
+      {
+        "title": "Archontology.org — Guinea: Polity Style, 1958-2024",
+        "url": "https://archontology.org/nations/guinea/01_polity.php",
+        "tier": "unverified",
+        "source_kind": "encyclopedia",
+        "notes": "Répertoire en ligne des noms d'États et des dirigeants. Il date « République de Guinée » du 2 octobre 1958 au 21 novembre 1978, « République Populaire Révolutionnaire de Guinée » du 21 novembre 1978 au 23 mai 1984, en citant une résolution du 11e congrès du Parti démocratique de Guinée, puis de nouveau « République de Guinée »."
+      },
+      {
+        "title": "Union africaine — Communiqué conjoint sur le coup d'État en Guinée (5 septembre 2021)",
+        "url": "https://au.int/en/node/40777",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Communiqué publié le 5 septembre 2021 sur le site de l'Union africaine. Le président en exercice de l'Union, Félix Tshisekedi, et le président de la Commission, Moussa Faki Mahamat, « condamnent toute prise de pouvoir par la force et demandent la libération immédiate du Président Alpha Conde »."
+      },
+      {
+        "title": "Union africaine — Le président de la Commission informe le Conseil de paix et de sécurité que la Guinée a franchi une étape décisive de sa transition (22 janvier 2026)",
+        "url": "https://au.int/en/pressreleases/20260122/auc-chairperson-informed-aupsc-guinea-has-reached-decisive-milestone",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Compte rendu publié le 22 janvier 2026 sur le site de l'Union africaine, en anglais. Le président de la Commission, Mahmoud Ali Youssouf, indique qu'après l'adoption d'une nouvelle Constitution et l'élection présidentielle, le pays est revenu à l'ordre constitutionnel, et demande la levée de la suspension de la Guinée."
+      },
+      {
+        "title": "Union africaine, Conseil de paix et de sécurité — Communiqué de la 1325e réunion, PSC/PR/COMM.1325 (2026)",
+        "url": "https://amaniafrica-et.org/wp-content/uploads/1325.comm_en.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Communiqué officiel du Conseil de paix et de sécurité de l'Union africaine, adopté le 22 janvier 2026, lu dans la copie en anglais mise en ligne par l'institut Amani Africa. Il rappelle le communiqué du 10 septembre 2021, salue l'élection présidentielle du 28 décembre 2025, félicite « H.E. Mamadi Doumbouya, President of the Republic of Guinea », lève la suspension de la Guinée et mentionne le référendum constitutionnel et le soutien de la CEDEAO à la transition."
+      },
+      {
+        "title": "UNESCO — L'espace culturel du Sosso-Bala",
+        "url": "https://ich.unesco.org/fr/RL/l-espace-culturel-du-sosso-bala-00009",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche de la Liste représentative du patrimoine culturel immatériel de l'humanité, élément proclamé en 2001 et inscrit en 2008. Le Sosso-Bala d'origine est conservé « dans le village de Nyagassola, au nord de la Guinée », par la famille Dökala, « les griots Kouyaté de Nyagassola » ; l'instrument était joué à l'origine par le roi Sumaoro Kanté et porte « principalement l'épopée Sunjata »."
+      },
+      {
+        "title": "Glottolog — Langues de Guinée : Pular, Eastern Maninkakan, Susu, Northern Kissi, Guinea Kpelle, Toma",
+        "url": "https://glottolog.org/resource/languoid/id/pula1262",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiches de Glottolog consultées pour les codes ISO 639-3 : Pular (fuf, pula1262), Eastern Maninkakan (emk, east2426), Susu (sus, susu1250), Northern Kissi (kqs, nort2765), Guinea Kpelle (gkp, guin1254), Toma (tod, toma1245) et Loma (lom, loma1260), toutes parlées en Guinée. Glottolog classe le pular et le kissi dans l'ensemble Atlantic-Congo, et les cinq autres dans les langues mandé."
       }
     ],
     "demographics": {
@@ -583,59 +982,79 @@
       "peoples": [
         {
           "name": "Peul / Fula",
-          "population": 5781985,
-          "percentageInCountry": 33,
           "peopleId": "PPL_FULA",
-          "region": "Fouta Djallon (hauts plateaux, centre)",
-          "languageFamily": "FLG_ATLANTIQUE"
+          "referenceYear": 2018,
+          "percentageInCountry": 35.5,
+          "percentageInAfrica": null,
+          "region": "Moyenne-Guinée, Fouta-Djalon",
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "fuf"
         },
         {
           "name": "Malinké",
-          "population": 5081138,
-          "percentageInCountry": 29,
           "peopleId": "PPL_MALINKE",
-          "region": "Haute-Guinée (nord-est)",
-          "languageFamily": "FLG_MANDE"
+          "referenceYear": 2018,
+          "percentageInCountry": 28.4,
+          "percentageInAfrica": null,
+          "region": "Haute-Guinée",
+          "languageFamily": "FLG_MANDE",
+          "mainLanguageCode": "emk"
         },
         {
           "name": "Soussou",
-          "population": 3679445,
-          "percentageInCountry": 21,
           "peopleId": "PPL_SOUSSOU",
-          "region": "Basse-Guinée (côte, Conakry)",
-          "languageFamily": "FLG_MANDE"
-        },
-        {
-          "name": "Kissi",
-          "population": 876058,
-          "percentageInCountry": 5,
-          "peopleId": "PPL_KISSI",
-          "region": "Guinée forestière (sud)",
-          "languageFamily": "FLG_ATLANTIQUE"
+          "referenceYear": 2018,
+          "percentageInCountry": 20.7,
+          "percentageInAfrica": null,
+          "region": "Basse-Guinée",
+          "languageFamily": "FLG_MANDE",
+          "mainLanguageCode": "sus"
         },
         {
           "name": "Guerzé / Kpelle",
-          "population": 876058,
-          "percentageInCountry": 5,
           "peopleId": "PPL_KPELLE",
-          "region": "Guinée forestière (sud)",
-          "languageFamily": "FLG_MANDE"
+          "referenceYear": 2018,
+          "percentageInCountry": 7.6,
+          "percentageInAfrica": null,
+          "region": "Guinée forestière",
+          "languageFamily": "FLG_MANDE",
+          "mainLanguageCode": "gkp"
+        },
+        {
+          "name": "Kissi",
+          "peopleId": "PPL_KISSI",
+          "referenceYear": 2018,
+          "percentageInCountry": 6.0,
+          "percentageInAfrica": null,
+          "region": "Guinée forestière",
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "kqs"
         },
         {
           "name": "Toma / Loma",
-          "population": 525635,
-          "percentageInCountry": 3,
           "peopleId": "PPL_TOMA_LOMA",
-          "region": "Guinée forestière (montagnes)",
-          "languageFamily": "FLG_MANDE"
+          "referenceYear": 2018,
+          "percentageInCountry": 1.4,
+          "percentageInAfrica": null,
+          "region": "Guinée forestière",
+          "languageFamily": "FLG_MANDE",
+          "mainLanguageCode": "tod"
         },
         {
-          "name": "Autres peuples",
-          "population": 700847,
-          "percentageInCountry": 4,
-          "region": "Diverses régions de la Guinée"
+          "name": "Autres peuples ou étrangers",
+          "peopleId": null,
+          "referenceYear": 2018,
+          "percentageInCountry": 0.4,
+          "percentageInAfrica": null,
+          "region": null,
+          "languageFamily": null,
+          "mainLanguageCode": null
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "La Guinée, ou Guinée-Conakry, est un pays d'Afrique de l'Ouest. Son nom reprend celui que les navigateurs portugais du XVe siècle donnaient à la terre des Noirs.",
+      "followUp": "Pourquoi plusieurs pays, en Afrique et en Océanie, portent-ils le nom de Guinée ?"
     }
   }
 }

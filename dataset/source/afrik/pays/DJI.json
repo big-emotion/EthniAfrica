@@ -3,9 +3,9 @@
   "nameFr": "Djibouti",
   "nameEn": "Djibouti",
   "nameOfficial": "République de Djibouti",
-  "summary": "Djibouti porte le nom de la ville fondée par les Français en 1888, dont l'origine reste incertaine — peut-être l'afar « gabouti ». Le territoire, celui du sultanat d'Adal et des chefferies somali, fut la Côte française des Somalis puis le Territoire français des Afars et des Issas. Somali et Afar y perpétuent le pastoralisme nomade et la poésie orale.",
-  "etymology": "Le nom \"Djibouti\" viendrait de la ville de Djibouti, fondée par les Français en 1888. L'origine du nom de la ville est incertaine, mais pourrait dériver du mot afar \"gabouti\" (panier en fibres de palmier) ou d'une légende locale. Le nom a été adopté pour le pays à l'indépendance en 1977.",
-  "nameOriginActor": "Le nom \"Djibouti\" a été donné par les Français lors de la fondation de la ville de Djibouti en 1888. Le nom a été officialisé pour le pays à l'indépendance en 1977, remplaçant \"Territoire français des Afars et des Issas\". Le nom reflète l'identité de la capitale et du pays.",
+  "summary": "Djibouti porte le nom de sa capitale, une ville portuaire du golfe de Tadjoura : l'État a pris ce nom à l'indépendance, en 1977. La colonie française s'était d'abord appelée Côte française des Somalis, puis Territoire français des Afars et des Issas. Les Somali, dont les Issa, et les Afar vivaient sur ces terres bien avant ces noms.",
+  "etymology": "Le nom Djibouti est celui de la capitale, que l'État a pris à l'indépendance, en 1977, selon le Permanent Committee on Geographical Names. Sa plus ancienne trace écrite que nous connaissons est « cap Jaboutil », dans le traité de 1862 par lequel la France achète Obock ; on lit ensuite « ras Djiboutil », le cap de Djiboutil, dans une note française de 1887, selon l'historien Simon Imbert-Vier. Les sources que nous avons lues n'expliquent ni le sens de ce nom ni sa langue d'origine. D'autres explications circulent, mais nous n'en avons trouvé aucune qui s'appuie sur une source vérifiable.",
+  "nameOriginActor": "Le nom Djibouti apparaît d'abord dans des textes français. Le traité du 11 mars 1862, signé à Paris avec les envoyés du sultan de Tadjoura, situe des pâturages « près du cap Jaboutil » ; une note française de 1887 parle du « ras Djiboutil ». Ces textes reprennent le nom d'un lieu de la côte sans l'expliquer. La ville de Djibouti, fondée en 1888, devient le chef-lieu de la colonie en 1896, et l'État indépendant prend son nom le 27 juin 1977.",
   "nameHistory": {
     "summary": "Le nom Djibouti désigne un pays de la Corne de l'Afrique, la République de Djibouti, qui porte le nom de sa capitale. Le territoire a d'abord porté d'autres noms : Côte française des Somalis, puis Territoire français des Afars et des Issas. Les sources que nous avons lues ne disent pas d'où vient le nom Djibouti ; nous présentons plus bas ce qu'elles en rapportent.",
     "names": [
@@ -16,7 +16,7 @@
         "languageOfOrigin": null,
         "namedBy": null,
         "shortLine": "Le nom d'une ville portuaire fondée dans les années 1880, devenu celui de l'État en 1977.",
-        "periodLabel": "Écrit dès 1887 ; nom de l'État depuis 1977",
+        "periodLabel": "Écrit dès 1862 ; nom de l'État depuis 1977",
         "accounts": [
           {
             "period": {
@@ -149,9 +149,8 @@
               "label": "13 avril 1887"
             },
             "era": "colonial",
-            "statement": "Le nom Djibouti a une forme proche, « ras Djiboutil », le cap de Djiboutil, dans une note française adressée le 13 avril 1887 à lord Salisbury, ministre britannique des Affaires étrangères : elle propose une ligne tirée de ce cap jusqu'à Harrar pour séparer les protectorats français et anglais. L'historien Simon Imbert-Vier cite cette note, conservée aux Archives nationales d'outre-mer. C'est la plus ancienne trace de ce nom que le projet connaît ; nous n'avons pas vu le document nous-mêmes.",
+            "statement": "Le nom Djibouti a une forme proche, « ras Djiboutil », le cap de Djiboutil, dans une note française adressée le 13 avril 1887 à lord Salisbury, ministre britannique des Affaires étrangères : elle propose une ligne tirée de ce cap jusqu'à Harrar pour séparer les protectorats français et anglais. L'historien Simon Imbert-Vier cite cette note, conservée aux Archives nationales d'outre-mer ; nous n'avons pas vu le document nous-mêmes.",
             "formAsWritten": "ras Djiboutil",
-            "birth": true,
             "sources": [
               {
                 "title": "Frontières et limites à Djibouti durant la période coloniale (1884-1977)",
@@ -167,10 +166,44 @@
           },
           {
             "period": {
-              "from": null,
-              "to": 1887,
-              "label": "Avant la fin du XIXe siècle"
+              "from": 1862,
+              "to": 1862,
+              "label": "11 mars 1862"
             },
+            "era": "colonial",
+            "statement": "Le nom Djibouti a une forme proche, « cap Jaboutil », dans le traité signé à Paris le 11 mars 1862, par lequel la France achète Obock aux envoyés du sultan de Tadjoura : l'article 7 permet aux Français de faire paître leurs troupeaux « à Elo, près du cap Jaboutil », selon l'historien Simon Imbert-Vier, qui reproduit le traité. C'est la plus ancienne trace de ce nom que le projet connaît ; le cap et ceux qui y vivaient existaient bien avant lui.",
+            "formAsWritten": "cap Jaboutil",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Diny Ahmed Aboubekr",
+                "role": "délégué des chefs afar de la côte, il signe le traité à Paris"
+              },
+              {
+                "name": "Thouvenel",
+                "role": "ministre français des Affaires étrangères, il signe le traité"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Frontières et limites à Djibouti durant la période coloniale (1884-1977)",
+                "author": "Simon Imbert-Vier",
+                "year": 2008,
+                "url": "https://theses.hal.science/tel-00736163",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 52, p. 66 et annexe, p. 478",
+                "notes": "Thèse de doctorat en histoire, université de Provence, 2008, lue dans l'exemplaire déposé en accès libre. Page 52 : « une ambassade du sultan de Tadjoura se rend en France et cède le 11 mars 1862 » la côte entre le ras Douméra et Raïssâli. Page 66 et texte du traité en annexe, page 478, article 7 : « Les Français établis à Obock pourront faire pâturer leurs troupeaux à Ambabou, sur la montagne de Tadjoura, à Hassazélé et à Elo, près du cap Jaboutil ». L'index de la thèse renvoie « Jaboutil » à Djibouti."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1862,
+              "label": "Avant 1862"
+            },
+            "era": "polity",
             "statement": "Avant le nom Djibouti, cet espace n'a pas de nom particulier qui le désigne en entier, écrit l'historien Simon Imbert-Vier ; Afar et Somali y vivent et y nomment leurs propres lieux.",
             "before": true,
             "sources": [
@@ -322,31 +355,97 @@
   "content": {
     "historicalNames": {
       "formerNames": [
+        "Colonie d'Obock et dépendances (1887-1896)",
         "Côte française des Somalis (1896-1967)",
         "Territoire français des Afars et des Issas (1967-1977)"
       ],
-      "antiquity": "Le territoire actuel de Djibouti était peuplé de peuples Afar et Somali sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs territoires (Adal, Dankali, etc.).",
-      "middleAges": "Développement de sultanats et chefferies : sultanat d'Adal (Afar), chefferies Somali (Issa, Gadabursi, Isaaq). Pas de nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Mosaïque de sultanats et chefferies autonomes : sultanat d'Adal (Afar, aussi appelé Dankali), chefferies Somali (Issa, Gadabursi, Isaaq). Les Européens utilisaient les termes \"Côte française des Somalis\" ou \"Pays des Afars et des Issas\" pour désigner la région.",
-      "colonization": "1862-1885 : Traités français avec les sultans afar et les chefs somali. 1896 : Côte française des Somalis (colonie française). 1967 : Territoire français des Afars et des Issas (changement de nom). Le territoire était administré comme une colonie française jusqu'à l'indépendance en 1977.",
-      "contemporary": "1977 : Indépendance de Djibouti (27 juin 1977), proclamation de la République de Djibouti. Le nom \"Djibouti\" remplace \"Territoire français des Afars et des Issas\"."
+      "antiquity": "Pour l'Antiquité, nous n'avons pas lu de source qui dise comment on nommait les côtes du golfe de Tadjoura.",
+      "middleAges": "Le nom Adal est d'abord un usage éthiopien, écrit l'historien Didier Morin, cité par Simon Imbert-Vier : les chroniques éthiopiennes mentionnent un royaume d'Adal, et Adal est aussi le nom que l'amharique donne aux Afar. Nous n'avons pas lu de source qui dise jusqu'où ce royaume s'étendait sur le territoire de l'actuel Djibouti.",
+      "precolonial": "Avant la fin du XIXe siècle, cet espace n'a pas de nom qui le désigne en entier, selon Simon Imbert-Vier. Les textes français parlent de « côte d'Adel » et de « Danakils » : le traité de 1862 lie la France aux « tribus Danakils établies sur la côte d'Adel ». Les autorités afar de Tadjoura, de Rehayto et du Gob'aad, que les Européens appellent « sultanats », et les chefs issa nomment eux-mêmes leurs terres.",
+      "colonization": "La possession française s'appelle d'abord le protectorat d'Obock. Elle devient la Colonie d'Obock et dépendances en 1887, puis la Côte française des Somalis et dépendances en 1896, selon Simon Imbert-Vier ; un texte de 1885 est le premier à parler d'une « côte des Somalis » pour le sud du golfe. Après le référendum du 19 mars 1967, la loi du 3 juillet 1967 crée le Territoire français des Afars et des Issas.",
+      "contemporary": "Le référendum du 8 mai 1977 approuve l'indépendance à 89,8 %, selon Simon Imbert-Vier. La République de Djibouti est proclamée le 27 juin 1977 et prend le nom de sa capitale."
     },
     "kingdoms": [
       {
-        "name": "Sultanat d'Adal",
-        "period": "Précolonial - XIXe siècle",
+        "name": "Royaume d'Adal",
+        "period": "Mentionné dans les chroniques éthiopiennes",
         "entryType": "polity",
-        "dominantPeoples": ["Afar"],
-        "politicalCenters": ["Aussa (capitale du sultanat)", "chefferies afar"],
-        "historicalRole": "Sultanat d'Adal (aussi appelé Dankali), État afar puissant dans la région. Pastoralisme nomade, commerce transsaharien. Relations avec les empires éthiopiens et les sultanats somali."
+        "dominantPeoples": [],
+        "politicalCenters": [],
+        "historicalRole": "Les chroniques éthiopiennes mentionnent un royaume d'Adal, écrit Simon Imbert-Vier, qui s'appuie sur le Dictionnaire historique afar de Didier Morin. En amharique, Adal est aussi un nom des Afar, et l'administration française l'a repris en 1930 pour nommer le « cercle des Adals ». Ce royaume ne se confond pas avec le sultanat afar de l'Awsa, présenté plus bas. Nous n'avons pas lu de source qui date ce royaume, qui situe sa capitale ou qui dise quels peuples le dirigeaient."
       },
       {
-        "name": "Chefferies Somali",
-        "period": "Précolonial - présent",
+        "name": "Sultanat de Tadjoura",
+        "period": "Attesté en 1862 - protectorat français en 1884",
         "entryType": "polity",
-        "dominantPeoples": ["Somali (Issa", "Gadabursi", "Isaaq)"],
-        "politicalCenters": ["Chefferies traditionnelles somali"],
-        "historicalRole": "Chefferies Somali organisées en clans patrilinéaires (Issa, Gadabursi, Isaaq). Pastoralisme nomade, système clanique très structuré. Relations avec les sultanats somali voisins."
+        "timeRange": {
+          "startYear": 1862,
+          "endYear": 1884,
+          "precision": "approximate",
+          "datingNote": "Les bornes vont du premier traité signé avec la France, en 1862, au traité de protectorat de 1884. Le sultanat est plus ancien et existe encore après ; nous n'avons pas lu de source qui date sa fondation."
+        },
+        "dominantPeoples": ["Afar"],
+        "politicalCenters": ["Tadjoura"],
+        "historicalRole": "Sultanat afar du nord du golfe de Tadjoura. En 1862, une ambassade du sultan cède à la France la côte d'Obock pour 10 000 thalers. Le 21 septembre 1884, le sultan Hamed ben Mohamed « donne son pays à la France » contre une pension mensuelle. Le groupe familial chargé du sultanat s'appelle Adâ'al, selon Simon Imbert-Vier."
+      },
+      {
+        "name": "Sultanats de Rehayto et du Gob'aad",
+        "period": "Traités avec la France de 1884 et 1885",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1884,
+          "endYear": 1885,
+          "precision": "approximate",
+          "datingNote": "Les bornes sont celles des traités signés avec la France. Ces sultanats sont plus anciens et durent au-delà, mais nous n'avons pas lu de source qui date leur fondation."
+        },
+        "dominantPeoples": ["Afar"],
+        "politicalCenters": ["Rehayto (Raheïta)", "Gob'aad"],
+        "historicalRole": "Deux autres sultanats afar. En 1884, un officier de marine français place les chefs de la côte d'Obock sous le sultan de Raheïta, lui-même investi par le sultan de l'Awsa. Le sultan du Gob'aad, Hamed Leïta, signe un traité avec la France le 9 août 1884, puis lui donne en décembre la côte qui va d'Addâli à Ambâdo, selon Simon Imbert-Vier. Le Gob'aad se trouve dans le sud du pays actuel, autour de Dikhil."
+      },
+      {
+        "name": "Sultanat de l'Awsa",
+        "period": "Attesté en 1875 - traité avec l'Italie en 1888",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1875,
+          "endYear": 1888,
+          "precision": "approximate",
+          "datingNote": "Les bornes vont de la défaite d'une armée égyptienne en Awsa, en 1875, au traité signé avec l'Italie en 1888. Le sultanat est plus ancien et dure au-delà ; nous n'avons pas lu de source qui date sa fondation."
+        },
+        "dominantPeoples": ["Afar"],
+        "politicalCenters": [
+          "Awsa, à l'ouest du territoire actuel de Djibouti"
+        ],
+        "historicalRole": "Le 14 novembre 1875, les Afar du sultan Mahamad Hanfare détruisent au bord du lac Afambo une expédition égyptienne de 400 hommes. En 1884, un officier de marine français voit dans ce sultan « le seul chef dont le pouvoir soit réellement effectif ». Le 9 décembre 1888, l'Awsa signe avec l'Italie un traité d'amitié et de commerce, selon Simon Imbert-Vier."
+      },
+      {
+        "name": "Chefferies issa",
+        "period": "Traité avec la France en 1885, confirmé en 1917",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1885,
+          "endYear": 1917,
+          "precision": "approximate",
+          "datingNote": "Les bornes vont du traité de 1885 à sa confirmation en 1917. Les chefferies issa sont plus anciennes ; nous n'avons pas lu de source qui les date."
+        },
+        "dominantPeoples": ["Somali (Issa)"],
+        "politicalCenters": [
+          "Côte sud du golfe de Tadjoura, jusqu'aux environs de Zeila"
+        ],
+        "historicalRole": "Le 26 mars 1885, des chefs issa « qui commandent sur le territoire situé au Gubbet Kharab et jusqu'au delà d'Ambaddo, près de Zeila » placent leur pays sous protection française. Le traité note qu'ils ne connaissent que la langue somali, alors non écrite, et qu'il leur a été traduit oralement. La veille, un traité semblable est signé avec Nour Roblé, ougasse des Gadabursi, selon Simon Imbert-Vier."
+      },
+      {
+        "name": "Protectorat puis Colonie d'Obock",
+        "period": "1884 - 1896",
+        "entryType": "colonial",
+        "timeRange": {
+          "startYear": 1884,
+          "endYear": 1896,
+          "precision": "year"
+        },
+        "dominantPeoples": ["Afar", "Somali (Issa)"],
+        "politicalCenters": ["Obock"],
+        "historicalRole": "La France achète Obock en 1862, mais aucun Français ne s'y installe avant 1881. Léonce Lagarde, nommé commandant à Obock en 1884, étend la possession par des traités avec les sultans afar et les chefs issa. Elle devient la Colonie d'Obock et dépendances le 5 septembre 1887. Vers 1889, le dépôt de charbon d'Obock est abandonné au profit de Djibouti, fondée en 1888, selon Simon Imbert-Vier."
       },
       {
         "name": "Côte française des Somalis",
@@ -357,11 +456,9 @@
           "endYear": 1967,
           "precision": "year"
         },
-        "dominantPeoples": [
-          "Tous les peuples djiboutiens sous domination française"
-        ],
-        "politicalCenters": ["Djibouti-ville (capitale coloniale)"],
-        "historicalRole": "Colonie française, développement de Djibouti-ville comme port stratégique. Exploitation économique, développement de l'administration coloniale, résistance des peuples autochtones. Rôle stratégique du port de Djibouti."
+        "dominantPeoples": ["Afar", "Somali (Issa)"],
+        "politicalCenters": ["Djibouti (chef-lieu)"],
+        "historicalRole": "Le décret du 20 mai 1896 réunit Obock et les protectorats de Tadjoura et des pays danakils sous le nom de Côte française des Somalis et dépendances, avec Djibouti pour chef-lieu. Le 20 mars 1897, un accord avec l'empereur éthiopien Menelik fixe une première frontière. En 1930, l'administration divise le pays entre la ville de Djibouti et un « cercle des Adals » pour le reste du territoire."
       },
       {
         "name": "Territoire français des Afars et des Issas",
@@ -372,11 +469,22 @@
           "endYear": 1977,
           "precision": "year"
         },
-        "dominantPeoples": [
-          "Tous les peuples djiboutiens sous domination française"
-        ],
-        "politicalCenters": ["Djibouti-ville (capitale administrative)"],
-        "historicalRole": "Territoire français, changement de nom pour refléter la composition ethnique (Afars et Issa). Développement du mouvement indépendantiste. Indépendance en 1977."
+        "dominantPeoples": ["Afar", "Somali (Issa)"],
+        "politicalCenters": ["Djibouti (chef-lieu)"],
+        "historicalRole": "Territoire d'outre-mer créé par la loi du 3 juillet 1967, après le référendum du 19 mars 1967. Son nom désigne deux peuples du territoire, les Afar et les Issa. Le référendum du 8 mai 1977 approuve l'indépendance, proclamée le 27 juin 1977."
+      },
+      {
+        "name": "République de Djibouti",
+        "period": "1977 - présent",
+        "entryType": "modern",
+        "timeRange": {
+          "startYear": 1977,
+          "ongoing": true,
+          "precision": "year"
+        },
+        "dominantPeoples": ["Somali", "Afar"],
+        "politicalCenters": ["Djibouti (capitale)"],
+        "historicalRole": "État indépendant depuis le 27 juin 1977, qui porte le nom de sa capitale. Le français et l'arabe y sont les langues officielles ; le somali et l'afar y sont les premières langues les plus parlées."
       }
     ],
     "majorPeoples": [
@@ -384,52 +492,50 @@
         "name": "Somali",
         "selfAppellation": "Soomaali",
         "exonyms": [
-          "Somali (terme utilisé par les Européens)",
-          "\"Somalies\" (forme coloniale française",
-          "dépassée)",
-          "Issa",
-          "Gadabursi",
-          "Isaaq (noms des clans)"
+          "Somalis (forme des textes coloniaux français)",
+          "Issas-Somalis (forme d'une note franco-britannique de 1887)"
         ],
         "peopleId": "PPL_SOMALI",
-        "mainRegion": "Sud de Djibouti (Issa majoritaires politiquement), Gadabursi, Isaaq",
-        "languages": ["Somali (som", "ISO 639-3)", "français", "arabe"],
+        "mainRegion": "Sud du pays et ville de Djibouti",
+        "languages": ["Somali (som)", "Français (fra)", "Arabe (arb)"],
         "languageFamily": "FLG_COUCHITIQUE",
-        "appellationRemarks": "Le peuple se nomme Soomaali. Somali est le nom donné de l'extérieur le plus courant. Somalies est une ancienne forme française de la période coloniale, aujourd'hui délaissée. Les Issa, les Gadabursi et les Isaaq sont des clans somali. Les sources ne signalent pas de sens insultant pour ces noms."
+        "appellationRemarks": "Les Somali se nomment Soomaali. Les textes coloniaux français écrivent « Somalis », et une note franco-britannique de 1887 parle des « Issas-Somalis ». Issa, Gadabursi et Isaaq sont des groupes somali présents à Djibouti ou près de ses frontières, selon Simon Imbert-Vier : ce sont leurs propres noms."
       },
       {
         "name": "Afar",
         "selfAppellation": "Qafár",
         "exonyms": [
-          "Afar (terme utilisé par les Européens)",
-          "\"Danakil\" (terme européen et arabe ancien",
-          "connotation péjorative",
-          "à éviter)",
-          "\"Dankali\" (terme historique)"
+          "Danakil (en arabe ; au singulier Dankali)",
+          "Adal (en amharique)",
+          "Adali (en oromo)",
+          "Teltale (en tigré)",
+          "Oudali (en somali)"
         ],
         "peopleId": "PPL_AFAR",
-        "mainRegion": "Nord et Centre de Djibouti",
-        "languages": ["Afar (aar", "ISO 639-3)", "français", "arabe"],
+        "mainRegion": "Nord du pays autour du golfe de Tadjoura, et région de Dikhil au sud-ouest",
+        "languages": ["Afar (aar)", "Français (fra)", "Arabe (arb)"],
         "languageFamily": "FLG_COUCHITIQUE",
-        "appellationRemarks": "Les personnes concernées se nomment Qafár. Afar est le nom donné de l'extérieur le plus courant et accepté. Danakil, ancien nom européen et arabe, peut être méprisant ; il est donc à éviter. Dankali peut être employé pour parler d'un usage historique, mais Afar est préféré."
+        "appellationRemarks": "Les Afar se désignent eux-mêmes comme Afar. Leurs voisins les nomment Danakil en arabe, Adal en amharique, Adali en oromo, Teltale en tigré et Oudali en somali, selon Ayalew Gebre, cité par Simon Imbert-Vier. Danakil vient d'un regard « arabisé » : Dankali est le nom d'un groupe de l'arrière-pays d'Assab, et le pluriel vient de l'arabe. L'administration française disait Danakil ; la plus ancienne mention du mot afar que l'historien a relevée dans ses archives date de 1955."
       },
       {
         "name": "Arabes",
         "selfAppellation": "Arabes",
-        "exonyms": ["Arabes (terme utilisé par les Européens)"],
+        "exonyms": [
+          "Yéménites (pays d'origine, nom employé dans les textes coloniaux)"
+        ],
         "peopleId": "PPL_ARABES_AFRIQUE",
-        "mainRegion": "Zones urbaines, Djibouti-ville",
-        "languages": ["Arabe (arabe yéménite", "arb", "ISO 639-3)", "français"],
+        "mainRegion": "Ville de Djibouti",
+        "languages": ["Arabe (arb)", "Français (fra)"],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "Le terme \"Arabes\" est l'auto-appellation. Les Arabes de Djibouti sont principalement originaires du Yémen (Hadramout). Pas de terme péjoratif connu."
+        "appellationRemarks": "Les Arabes de Djibouti sont surtout d'origine yéménite, selon Simon Imbert-Vier. Les textes coloniaux les nomment Arabes ou Yéménites."
       },
       {
         "name": "Autres peuples",
         "selfAppellation": "Variées selon les groupes d'origine",
         "exonyms": ["Migrants (terme descriptif)"],
-        "mainRegion": "Zones urbaines, Djibouti-ville",
-        "languages": ["Langues d'origine", "français", "arabe"],
-        "appellationRemarks": "Chaque groupe a sa propre auto-appellation selon son origine (Éthiopie, Somalie, Comores, etc.). Pas de terme péjoratif connu."
+        "mainRegion": "Ville de Djibouti",
+        "languages": ["Langues d'origine", "Français (fra)", "Arabe (arb)"],
+        "appellationRemarks": "Ce groupe réunit des habitants venus d'autres pays. Les Européens, par exemple, vivent dans le pays depuis la fin du XIXe siècle, presque uniquement dans la ville de Djibouti, selon Simon Imbert-Vier."
       }
     ],
     "culture": {
@@ -445,25 +551,29 @@
           "isPrimary": true
         },
         {
-          "name": "Somali"
+          "name": "Somali",
+          "isoCode": "som",
+          "isPrimary": false
         },
         {
-          "name": "Afar"
+          "name": "Afar",
+          "isoCode": "aar",
+          "isPrimary": false
         }
       ],
-      "culturalTraditions": "Traditions couchitiques (Somali, Afar) : pastoralisme nomade, système clanique patrilinéaire, poésie orale (gabay chez les Somali, poésie guerrière chez les Afar). Traditions arabes (commerce, religion). Musique et danse traditionnelles variées. Cérémonies de passage, rites d'initiation, fêtes traditionnelles. Architecture nomade (Afar). Élevage pastoral de chameaux et de bovins.",
-      "dominantReligions": "Islam (sunnite majoritaire, école chaféite), toutes les communautés sont musulmanes",
-      "lifestyles": "Pastoralisme nomade (Somali, Afar, élevage de chameaux et de bovins), commerce et activités urbaines (zones urbaines, Djibouti-ville). Urbanisation importante. Économie basée sur les services (port de Djibouti, services logistiques, bases militaires étrangères), le commerce de transit, et l'élevage pastoral.",
-      "socialOrganization": "Organisation en clans patrilinéaires (Somali, système clanique très structuré), sultanats (Afar, sultanat d'Aussa). Importance des lignages et des familles étendues. Rôle des chefs traditionnels (ugaas, suldaan chez les Somali, sultans chez les Afar). Assemblées traditionnelles (shir chez les Somali).",
-      "regionalRelations": "Relations historiques avec l'Éthiopie (commerce, peuples transfrontaliers), l'Érythrée (Afar, frontière), la Somalie (Somali, frontière). Intégration dans l'IGAD (Autorité intergouvernementale pour le développement). Relations commerciales et culturelles transfrontalières. Rôle stratégique du port de Djibouti pour l'Éthiopie (accès à la mer)."
+      "culturalTraditions": "Le somali et l'afar sont deux langues couchitiques, selon Glottolog. Tous deux s'écrivent aujourd'hui en alphabet latin : 23 lettres pour le somali, 22 pour l'afar, selon le Permanent Committee on Geographical Names. En 1885 encore, des chefs issa déclarent que le somali « n'est pas écrit » : le traité qu'ils concluent avec la France leur est traduit oralement.",
+      "dominantReligions": "L'islam, de rite chaféite, est la religion commune des Afar et des Issa, selon Simon Imbert-Vier.",
+      "lifestyles": "Avant l'arrivée des Européens, Afar et Issa mènent une vie pastorale et nomade, rythmée par les troupeaux de chèvres et de moutons, et aussi de chameaux et de bovins ; cette vie perdure encore en partie, selon Simon Imbert-Vier. Au port de Djibouti, les dockers sont d'abord des Arabes yéménites, puis des Somali à partir de 1956, puis des Afar en 1967.",
+      "socialOrganization": "Avant la colonisation, des groupes familiaux ou claniques exercent l'autorité sur des espaces aux limites changeantes ; les Européens les appellent souvent « sultanats », selon Simon Imbert-Vier. Chez les Afar, ce sont les sultanats de Tadjoura, de Rehayto et du Gob'aad ; chez les Somali, des chefs de groupe, comme l'ougasse des Gadabursi, signent les traités de 1885.",
+      "regionalRelations": "Djibouti a des frontières terrestres avec l'Éthiopie, l'Érythrée et la Somalie, à l'entrée de la mer Rouge et du golfe d'Aden, selon le Permanent Committee on Geographical Names. Le sultanat afar de l'Awsa se trouve de l'autre côté de la frontière éthiopienne, et les Gadabursi, un groupe somali, vivent près de Zeila. Après l'indépendance, le chemin de fer reste la seule voie de communication entre Djibouti et l'Éthiopie, jusqu'à la chute du gouvernement militaire éthiopien issu de la révolution de 1974, selon Simon Imbert-Vier."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement initial par les peuples Afar et Somali, populations couchitiques anciennes de la Corne de l'Afrique. Développement du pastoralisme nomade.",
-      "middleAges": "Développement du sultanat d'Adal (Afar), chefferies Somali (Issa, Gadabursi, Isaaq). Développement de réseaux commerciaux régionaux et transsahariens. Relations avec les empires éthiopiens et les sultanats somali.",
-      "precolonial": "Consolidation du sultanat d'Adal (Afar), chefferies Somali organisées en clans. Pastoralisme nomade développé. Commerce transsaharien. Contacts avec les Européens (Français, Britanniques).",
-      "colonization": "1862-1885 : Traités français avec les sultans afar et les chefs somali. 1888 : Fondation de Djibouti-ville par les Français. 1896 : Création de la colonie de Côte française des Somalis. Période coloniale française (1896-1977), développement du port de Djibouti comme port stratégique. 1967 : Changement de nom pour \"Territoire français des Afars et des Issas\". Développement du mouvement indépendantiste au XXe siècle.",
-      "independenceStruggle": "1970s : Mouvement pour l'indépendance mené par les dirigeants djiboutiens. 1977 : Indépendance de Djibouti (27 juin 1977), proclamation de la République de Djibouti. Le nom \"Djibouti\" remplace \"Territoire français des Afars et des Issas\".",
-      "postIndependence": "1977-présent : République de Djibouti, présidence de Hassan Gouled Aptidon (1977-1999) puis d'Ismaïl Omar Guelleh (depuis 1999). Stabilité politique relative. Défis : pauvreté, dépendance aux services portuaires et aux bases militaires étrangères, tensions ethniques (Afar/Somali). Le port de Djibouti est stratégique pour l'Éthiopie (accès à la mer) et accueille des bases militaires étrangères (France, États-Unis, Chine, etc.)."
+      "ancientPeriods": "Nous n'avons pas encore lu de source sur le peuplement ancien de ce territoire.",
+      "middleAges": "Les chroniques éthiopiennes mentionnent un royaume d'Adal, selon Simon Imbert-Vier, qui cite l'historien Didier Morin. Nous n'avons pas lu de source qui date ce royaume ou qui dise quelle place y tenait le territoire de l'actuel Djibouti.",
+      "precolonial": "Jusqu'aux années 1870, la seule présence étrangère est celle de l'Égypte, à Zeila puis, à partir de 1875, à Tadjoura. Le pays est parcouru par des pasteurs nomades et par des caravanes qui relient l'intérieur à la côte. Le 14 novembre 1875, les Afar du sultan de l'Awsa détruisent une expédition égyptienne au bord du lac Afambo, selon Simon Imbert-Vier.",
+      "colonization": "En 1862, la France achète Obock aux envoyés du sultan de Tadjoura, mais aucun Français ne s'y installe avant 1881. En 1884 et 1885, Léonce Lagarde signe des traités avec les sultans de Tadjoura et du Gob'aad, puis avec des chefs issa. La ville de Djibouti est fondée en 1888 et devient en 1896 le chef-lieu de la Côte française des Somalis. Le 20 mars 1897, un accord avec l'empereur Menelik fixe une frontière avec l'Éthiopie. Les traités ont souvent été compris par les chefs locaux comme de simples concessions de terrain, estime Simon Imbert-Vier.",
+      "independenceStruggle": "Le 25 et le 26 août 1966, des incidents éclatent lors du passage du général de Gaulle à Djibouti ; le 15 septembre, l'administration crée le « barrage de Djibouti ». Le référendum du 19 mars 1967 maintient le territoire dans la République française, qui prend le nom de Territoire français des Afars et des Issas. Le référendum du 8 mai 1977 approuve l'indépendance à 89,8 %, selon Simon Imbert-Vier, et la République de Djibouti est proclamée le 27 juin 1977.",
+      "postIndependence": "Le code de la nationalité djiboutienne, promulgué le 24 octobre 1981, reconnaît comme Djiboutiens ceux qui étaient Français au 27 juin 1977 par leur naissance dans le pays, selon Simon Imbert-Vier. Le deuxième recensement général a lieu en 2009 ; l'institut national de la statistique en tire une population projetée de 989 115 habitants en 2020. Le troisième, en 2024, compte 1 066 809 habitants, selon la présidence de la République, citée par la presse."
     },
     "sources": [
       {
@@ -482,7 +592,8 @@
         "title": "UNFPA – World Population Dashboard — Djibouti",
         "url": "https://www.unfpa.org/data/world-population/DJ",
         "tier": "official",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": "Tableau de bord du Fonds des Nations unies pour la population, consulté le 3 novembre 2026 : « Total Population (2025): 1,200,000 »."
       },
       {
         "title": "Recensements djiboutiens",
@@ -505,6 +616,78 @@
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Frontières et limites à Djibouti durant la période coloniale (1884-1977)",
+        "author": "Simon Imbert-Vier",
+        "year": 2008,
+        "url": "https://theses.hal.science/tel-00736163",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse de doctorat en histoire, université de Provence, 2008, lue dans l'exemplaire déposé en accès libre le 3 novembre 2026. Pages lues : 52 et 55 (achat d'Obock, défaite égyptienne en Awsa, 1875), 61 (traité italien avec l'Awsa, 1888), 65-80 (sultanats, traités de 1884 et 1885, noms de la colonie), 106-107 (accord franco-éthiopien de 1897), 151-152 (« cercle des Adals » ; « L'Adal est un royaume mentionné dans les chroniques éthiopiennes », d'après Didier Morin), 307-312 (noms des Afar, Arabes yéménites, vie nomade, islam chaféite), 298 (référendum de 1967), 350 (référendum de 1977, code de la nationalité), 401 (chemin de fer), 478 et 497 (textes des traités de 1862 et 1885), 692 (chronologie)."
+      },
+      {
+        "title": "Colonie française de Djibouti. Obock. Côte française des Somalis. Territoire français des Afars et des Issas",
+        "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+        "year": null,
+        "url": "https://mjp.univ-perp.fr/constit/dj1859.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Consulté le 10 octobre 2026. Décret du 20 mai 1896, article premier : réunion du territoire d'Obock et des protectorats de Tadjourah et des pays danakils « sous la dénomination de Côte française des Somalis et dépendances », avec Djibouti pour chef-lieu."
+      },
+      {
+        "title": "Côte française des Somalis, Territoire français des Afars et des Issas, 1945-1977",
+        "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+        "year": null,
+        "url": "https://mjp.univ-perp.fr/constit/dj1945.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Consulté le 10 octobre 2026. Loi n° 67-521 du 3 juillet 1967, article premier : « Le territoire français des Afars et des Issas forme, au sein de la République française, un territoire d'outre-mer »."
+      },
+      {
+        "title": "Toponymic Factfile: Djibouti",
+        "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+        "year": 2024,
+        "url": "https://assets.publishing.service.gov.uk/media/6634e9dbcf3b5081b14f315e/Djibouti_Toponymic_Factfile.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "page": "p. 1-2",
+        "notes": "Fiche officielle britannique de toponymie, édition 2024. Langues officielles : français et arabe ; « Somali (som) and Afar (aar) are the most widely spoken as a first language (by some 60% and 35% respectively) » ; le somali s'écrit avec 23 lettres latines, l'afar avec 22. Frontières avec l'Éthiopie, l'Érythrée et la Somalie."
+      },
+      {
+        "title": "Glottolog 5.3 — Afar (afar1241)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/afar1241",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. Afar, code ISO 639-3 aar ; classement : afro-asiatique, couchitique, couchitique oriental des basses terres, saho-afar."
+      },
+      {
+        "title": "Glottolog 5.3 — Somali (soma1255)",
+        "url": "https://glottolog.org/resource/languoid/id/soma1255",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. Somali, code ISO 639-3 som ; classement : afro-asiatique, couchitique, couchitique oriental des basses terres, omo-tana oriental."
+      },
+      {
+        "title": "Annuaire statistique, édition 2021 (Djibouti)",
+        "author": "Institut national de la statistique de Djibouti (INSTAD)",
+        "year": 2021,
+        "url": "https://ccd.dj/wp-content/uploads/2022/06/Annuaire_Statistique_2021.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. 18 et 21",
+        "notes": "Publication de l'INSTAD, mise en ligne par la Chambre de commerce de Djibouti, lue le 3 novembre 2026. Page 18 : l'année 2009 est « celle du deuxième recensement ». Tableau 2.1.2, page 21 : population totale résidente de 989 115 habitants en 2020, projection INSTAD-FNUAP à partir du recensement de 2009. L'annuaire ne donne pas de répartition par peuple."
+      },
+      {
+        "title": "Recensement général 2024 : Djibouti compte officiellement 1.066.809 habitants",
+        "author": "Le360, avec l'agence MAP",
+        "year": 2025,
+        "url": "https://afrique.le360.ma/societe/recensement-general-2024-djibouti-compte-officiellement-1066809-habitants_2BL4QIRK6FCJBHS5S7PEIPUAAY/",
+        "tier": "referenced",
+        "source_kind": "press",
+        "notes": "Article du 19 juin 2025, lu le 3 novembre 2026. Il rapporte un communiqué de la présidence djiboutienne : selon les résultats définitifs du troisième recensement général de la population et de l'habitat, réalisé en 2024, le pays compte 1 066 809 habitants. L'article ne donne pas de répartition par peuple."
       }
     ],
     "demographics": {
@@ -514,33 +697,38 @@
       "peoples": [
         {
           "name": "Somali",
-          "percentageInCountry": 60,
           "peopleId": "PPL_SOMALI",
-          "region": "Sud de Djibouti (Issa majoritaires politiquement), Gadabursi, Isaaq",
-          "languageFamily": "FLG_COUCHITIQUE"
+          "percentageInCountry": 60,
+          "region": "Sud du pays et ville de Djibouti",
+          "languageFamily": "FLG_COUCHITIQUE",
+          "mainLanguageCode": "som"
         },
         {
           "name": "Afar",
-          "percentageInCountry": 35,
           "peopleId": "PPL_AFAR",
-          "region": "Nord et Centre de Djibouti",
-          "languageFamily": "FLG_COUCHITIQUE"
+          "percentageInCountry": 35,
+          "region": "Nord du pays autour du golfe de Tadjoura, et région de Dikhil",
+          "languageFamily": "FLG_COUCHITIQUE",
+          "mainLanguageCode": "aar"
         },
         {
           "name": "Arabes",
-          "population": 35000,
-          "percentageInCountry": 3,
           "peopleId": "PPL_ARABES_AFRIQUE",
-          "region": ""
+          "region": "Ville de Djibouti",
+          "languageFamily": "FLG_SEMITIQUE",
+          "mainLanguageCode": "arb"
         },
         {
           "name": "Autres groupes ethniques",
-          "percentageInCountry": 2,
-          "region": "Divers",
           "peopleId": null,
+          "region": "Divers",
           "languageFamily": null
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "Djibouti est un pays de la Corne de l'Afrique, sur le golfe d'Aden, qui porte depuis 1977 le nom de sa capitale. Les Somali et les Afar y forment l'essentiel de la population.",
+      "followUp": "D'où vient le nom Djibouti, écrit « cap Jaboutil » dès 1862 ?"
     }
   }
 }

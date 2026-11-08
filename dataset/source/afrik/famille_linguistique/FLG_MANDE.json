@@ -1,4 +1,13 @@
 {
+  "_meta": {
+    "research": [
+      "Opened: Glottolog 5.3 mand1469 JSON (75 languages, 2 branches, no parent) and the 75 language pages (14 countries).",
+      "Opened: Vydrin 2009 jolr.ru PDF (homeland paper is 2009, not 2016); Vydrin 2016 HAL halshs-01375776; Perekhvalskaya & Vydrin 2019 and Creissels 2019 on OpenEdition Mandenkan; Sande, Baier & Jenks 2019 LangSci; Rosa et al. 2007 PMC; Massing 2000 OpenEdition; Delafosse 1901 archive.org OCR; Unicode N'Ko proposal 2004; INSTAT Mali RGPH5; ANStat CIV dataset via the Koumoul API.",
+      "Not reachable: Ethnologue and Britannica (403), ANSD Senegal PDF (TLS chain error, 503 via fetch), Khachaturyan 2020 full text (empty response), Donaldson 2017 and 2019 (403 or closed), UNESDOC (403), Greenberg 1963 (lending only on archive.org).",
+      "Removed as unsourced or misattributed: Proto-Mande 9 oral and 5 nasal vowels, Mende 5 tones, Dan 4 tones, kp/gb in Bambara, ghost admixture (Durvasula & Sankararaman 2020, actual title differs and unrelated to the language family), Tauxier 1924 classification, Welmers 1958 three subgroups, N'Ko 1949 date, Mali empire dates.",
+      "No figure found for Guinea, Burkina Faso, Liberia or Sierra Leone language census tables in this session."
+    ]
+  },
   "id": "FLG_MANDE",
   "nameFr": "Mandé",
   "nameEn": "Mande",
@@ -386,26 +395,32 @@
       "followUp": "Que veut dire le nom Manden ?"
     },
     "decolonialHeader": {
-      "selfAppellation": null,
-      "contemporaryUsage": "Le mandé est une famille linguistique de l'Afrique de l'Ouest. Glottolog en recense soixante-quinze langues dans son édition 5.3, réparties en deux branches, orientale et occidentale. Joseph Greenberg la classe en 1963 comme branche du Niger-Congo ; Gerrit Dimmendaal et Tom Güldemann contestent cette inclusion, au motif que l'absence de classes nominales et le vocabulaire fondamental divergent. La famille inclut le bambara, le maninka, le mandinka, le dioula, le soninké, le soso, le kpelle, le mende et le dan.\n\nDans la classification de Vydrin (2009, p. 107), le mandingue est un groupe de la famille mandé. Il comprend notamment le bambara, le maninka, le mandinka et plusieurs variétés de dioula ; le soninké, le soso et le kpelle relèvent d'autres groupes de cette famille. Cette classification des langues ne constitue pas une liste d'identités imposées à leurs locuteurs.\n\nLes noms ont aussi des usages historiques et identitaires. Donaldson (2019), à partir d'enquêtes menées entre 2012 et 2017, décrit des enseignants et des élèves du mouvement n'ko qui construisent des liens entre parlers mandingues, notamment à Bamako et à Bobo-Dioulasso. Leur démarche ne représente pas tous les locuteurs mandingues, ni l'ensemble des locuteurs de la famille mandé. Une parenté linguistique ne suffit ni à attribuer une identité commune, ni à invalider une appartenance revendiquée.",
+      "linkWithFamily": "Rattachée au niger-congo par Joseph Greenberg en 1963 ; ce rattachement est discuté. Tom Güldemann et Gerrit Dimmendaal le contestent depuis 2008, et le catalogue Glottolog traite le mandé comme une famille indépendante, sans parent connu.",
       "historicalAppellations": [
         "Mandingue",
         "Langues mandé",
         "Mandéga Family of Languages"
       ],
-      "originOfHistoricalTerm": "Manden est le nom d'un pays, et il circule dans les sources européennes bien avant de devenir une étiquette savante. André Álvares de Almada consacre en 1594 un chapitre au royaume des Mandingues. Mungo Park écrit en 1799 que ce peuple est appelé Mandingo parce qu'il a migré depuis l'État intérieur de Manding. René Caillié emploie Mandingues une centaine de fois dans le récit de son voyage publié en 1830. Pour le sens même du nom, nous n'avons trouvé qu'une seule explication, dans une note que Camara Laye ajoute au Maître de la parole, le livre où il transcrit le récit du griot Babou Condé : Manden viendrait de man, « lamantin », et den, « enfant », soit « l'enfant du lamantin » ; aucune autre étymologie du mot ne nous est connue, et celle-ci n'est pas établie par d'autres sources.\n\nEn 1854, le missionnaire Sigismund Wilhelm Koelle publie la Polyglotta Africana, recueillie à Freetown auprès d'Africains libérés de la traite. Il note que ses informateurs disent Mánde et Mandénga, que la graphie Mandingo portée jusque-là sur les cartes est fautive, et que la terminaison nga, souvent prononcée nka, est un suffixe de gentilé. Il utilise ces noms dans sa classification des langues. Son témoignage atteste des formes employées par ses interlocuteurs : il n'a pas inventé le nom du pays. Sa critique de la graphie Mandingo est un jugement situé en 1854, qui ne permet pas de déclarer illégitimes tous les usages ultérieurs de cette forme.\n\nC'est Maurice Delafosse qui impose mandé comme nom de famille en français, en 1901, puis distingue deux sous-groupes d'après leur mot pour dix. La classification est ensuite reprise et remaniée par Louis Tauxier, William Welmers, Joseph Greenberg, Raimund Kastenholz et Valentin Vydrin.\n\nNiane (1985, chapitre 6, p. 141 et 153-154) emploie Mande et Manden pour le pays historique du haut bassin du Niger, entre Kangaba et Siguiri, dans les actuels Mali et Guinée. Il rapporte des traditions concernant Do et Kiri antérieures à Soundiata, et emploie Mandenka, « mandingue », pour nommer un peuple. Le périmètre historique décrit par cet auteur ne se confond ni avec l'aire de toutes les langues mandé, ni avec la République du Mali.\n\nLe même chapitre distingue, avant Soundiata, deux royaumes reconstitués par la tradition orale : le Do ou Dodougou, peuplé par le clan Konde, et le Kiri, aussi appelé Manden, occupé par les Konaté et les Keita. Le clan Kamara tient Sibi et Tabön sur la rive droite du Niger ; les Traoré occupent une partie du Kiri, mais la majorité d'entre eux vit dans la province qui prendra plus tard le nom de Gangaran. Une note du même chapitre situe le berceau des Keita dans le pays des monts du Manden, autour des villages de Dakadiala, Naréna et Kiri, et donne Mellit comme variante berbère de Mali, à côté de la dérivation par les Fulɓe (Niane, 1985, p. 151-152). Après la victoire de Kirina, l'assemblée réunie à Kourou-Kan-Fouga établit des correspondances entre noms claniques mandenka et noms claniques d'autres peuples du Soudan occidental — un Traoré est reçu comme frère par les Diop, un Konde par les Ndiaye — une parenté à plaisanterie que Niane décrit sans la nommer sanankuya (Niane, 1985, p. 157-158, note 44). Avant Soundiata, le royaume soso, distinct du Manden, procède d'un clan maninka spécialisé dans le travail du fer ; la dynastie Kanté l'unifie avec le Kaniaga à la fin du XIIe siècle, dans une région où l'ancienne domination du Ghana avait déjà reculé (Niane, 1985, p. 148-149)."
+      "originOfHistoricalTerm": "Manden est le nom d'un pays, et il circule dans les sources européennes bien avant de devenir une étiquette savante. André Álvares de Almada consacre en 1594 un chapitre au royaume des Mandingues. Mungo Park écrit en 1799 que ce peuple est appelé Mandingo parce qu'il a migré depuis l'État intérieur de Manding. René Caillié emploie Mandingues une centaine de fois dans le récit de son voyage publié en 1830. Pour le sens même du nom, nous n'avons trouvé qu'une seule explication, dans une note que Camara Laye ajoute au Maître de la parole, le livre où il transcrit le récit du griot Babou Condé : Manden viendrait de man, « lamantin », et den, « enfant », soit « l'enfant du lamantin » ; aucune autre étymologie du mot ne nous est connue, et celle-ci n'est pas établie par d'autres sources.\n\nEn 1854, le missionnaire Sigismund Wilhelm Koelle publie la Polyglotta Africana, recueillie à Freetown auprès d'Africains libérés de la traite. Il note que ses informateurs disent Mánde et Mandénga, que la graphie Mandingo portée jusque-là sur les cartes est fautive, et que la terminaison nga, souvent prononcée nka, est un suffixe de gentilé. Il utilise ces noms dans sa classification des langues. Son témoignage atteste des formes employées par ses interlocuteurs : il n'a pas inventé le nom du pays. Sa critique de la graphie Mandingo est un jugement situé en 1854, qui ne permet pas de déclarer illégitimes tous les usages ultérieurs de cette forme.\n\nC'est Maurice Delafosse qui impose mandé comme nom de famille en français, en 1901, puis distingue deux sous-groupes d'après leur mot pour dix. La classification est ensuite reprise et remaniée par William Welmers, Joseph Greenberg, Raimund Kastenholz et Valentin Vydrin.\n\nNiane (1985, chapitre 6, p. 141 et 153-154) emploie Mande et Manden pour le pays historique du haut bassin du Niger, entre Kangaba et Siguiri, dans les actuels Mali et Guinée. Il rapporte des traditions concernant Do et Kiri antérieures à Soundiata, et emploie Mandenka, « mandingue », pour nommer un peuple. Le périmètre historique décrit par cet auteur ne se confond ni avec l'aire de toutes les langues mandé, ni avec la République du Mali.\n\nLe même chapitre distingue, avant Soundiata, deux royaumes reconstitués par la tradition orale : le Do ou Dodougou, peuplé par le clan Konde, et le Kiri, aussi appelé Manden, occupé par les Konaté et les Keita. Le clan Kamara tient Sibi et Tabön sur la rive droite du Niger ; les Traoré occupent une partie du Kiri, mais la majorité d'entre eux vit dans la province qui prendra plus tard le nom de Gangaran. Une note du même chapitre situe le berceau des Keita dans le pays des monts du Manden, autour des villages de Dakadiala, Naréna et Kiri, et donne Mellit comme variante berbère de Mali, à côté de la dérivation par les Fulɓe (Niane, 1985, p. 151-152). Après la victoire de Kirina, l'assemblée réunie à Kourou-Kan-Fouga établit des correspondances entre noms claniques mandenka et noms claniques d'autres peuples du Soudan occidental — un Traoré est reçu comme frère par les Diop, un Konde par les Ndiaye — une parenté à plaisanterie que Niane décrit sans la nommer sanankuya (Niane, 1985, p. 157-158, note 44). Avant Soundiata, le royaume soso, distinct du Manden, procède d'un clan maninka spécialisé dans le travail du fer ; la dynastie Kanté l'unifie avec le Kaniaga à la fin du XIIe siècle, dans une région où l'ancienne domination du Ghana avait déjà reculé (Niane, 1985, p. 148-149).",
+      "whyProblematic": null,
+      "selfAppellation": null,
+      "contemporaryUsage": "Le mandé est une famille linguistique de l'Afrique de l'Ouest. Glottolog en recense soixante-quinze langues dans son édition 5.3, réparties en deux branches, orientale et occidentale. Joseph Greenberg la classe en 1963 comme branche du Niger-Congo ; Gerrit Dimmendaal et Tom Güldemann contestent cette inclusion, au motif que l'absence de classes nominales et le vocabulaire fondamental divergent. La famille inclut le bambara, le maninka, le mandinka, le dioula, le soninké, le soso, le kpelle, le mende et le dan.\n\nDans la classification de Vydrin (2009, p. 107), le mandingue est un groupe de la famille mandé. Il comprend notamment le bambara, le maninka, le mandinka et plusieurs variétés de dioula ; le soninké, le soso et le kpelle relèvent d'autres groupes de cette famille. Cette classification des langues ne constitue pas une liste d'identités imposées à leurs locuteurs.\n\nLes noms ont aussi des usages historiques et identitaires. Donaldson (2019), à partir d'enquêtes menées entre 2012 et 2017, décrit des enseignants et des élèves du mouvement n'ko qui construisent des liens entre parlers mandingues, notamment à Bamako et à Bobo-Dioulasso. Leur démarche ne représente pas tous les locuteurs mandingues, ni l'ensemble des locuteurs de la famille mandé. Une parenté linguistique ne suffit ni à attribuer une identité commune, ni à invalider une appartenance revendiquée.",
+      "geographicArea": "Guinée, Côte d'Ivoire, Mali, Burkina Faso, Liberia, Sierra Leone, Sénégal, Nigeria, Gambie, Guinée-Bissau, Bénin, Mauritanie, Ghana, Togo",
+      "numberOfLanguages": 75,
+      "totalSpeakers": 50000000
     },
     "generalInfo": {
-      "branches": ["Eastern Mande", "Western Mande"],
-      "geographicArea": "Mali, Guinée, Côte d'Ivoire, Burkina Faso, Sierra Leone, Liberia, Sénégal, Gambie, Guinée-Bissau, Mauritanie, Ghana, Bénin, Nigeria",
+      "branches": ["Mandé oriental", "Mandé occidental"],
+      "geographicArea": "Guinée, Côte d'Ivoire, Mali, Burkina Faso, Liberia, Sierra Leone, Sénégal, Nigeria, Gambie, Guinée-Bissau, Bénin, Mauritanie, Ghana, Togo",
       "numberOfLanguages": 75,
-      "totalSpeakers": 60000000,
+      "totalSpeakers": 50000000,
       "figureNotes": {
         "numberOfLanguages": {
-          "note": "Selon Glottolog, édition 5.3"
+          "note": "Selon Glottolog, édition 5.3 ; Valentin Vydrin (2016) en compte plus de 70."
         },
         "totalSpeakers": {
-          "unsourced": true
+          "note": "Un ordre de grandeur : entre 45 et 50 millions de personnes, selon Valentin Vydrin (2016).",
+          "unsourced": false
         }
       }
     },
@@ -444,23 +459,25 @@
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " Langues majoritairement tonales, ordre des mots typique **Sujet-Objet-Verbe (SOV)** dans beaucoup de langues mandé, bien que des variations existent. Morphologie très réduite, **absence de système de classes nominales** (contrairement à beaucoup d'autres langues Niger-Congo). Le marquage du genre ou de l'animé est rarement grammaticalisé. Très peu de flexion verbale pour la personne ou le genre ; aspect / temps / polarité sont souvent rendus par des auxiliaires ou des suffixes invariants. **Exemples concrets :**",
-      "phonologicalFeatures": " **Système consonantique :** Consonnes proto-Mandé estimées incluent *p, b, t, d, k, g, kp, gb* (occlusives labio-vélaires), nasales *m, n, ɲ, ŋ*, approximantes *w, j, l*, fricatives *f, v, s, z*. Les occlusives labio-vélaires *kp, gb* sont typiques du proto-Mande et nombreux dans les langues actuelles (Bambara, Mandinka). Nasales prénasalisées en initiale dans certaines langues. **Système vocalique :** Proto-Mandé reconstruit avec **9 voyelles orales**, **5 nasales**, plus éventuellement une voyelle syllabique nasale « N ». Variation du nombre de voyelles selon langues : 5 voyelles dans les parlers mandingues de l'Ouest (ex. bambara, mandingue ouest : /i, e, a, o, u/) ; 7 voyelles dans les parlers de l'Est, ajoutant /ɛ/ et /ɔ/ entre autres. Certaines langues méridionales Mandé ont jusqu'à 9 voyelles. Mandinka manque la distinction ATR (Advanced Tongue Root, la position avancée ou rétractée de la racine de la langue, qui sépare deux séries de voyelles) que d'autres ont. **Tonalité :** Le proto-Mandé et les langues actuelles sont tonales. La plupart des langues mandé ont **deux tons** (haut vs bas), mais certaines en ont plus : Mende a **5 tons** (haut, bas, montant, descendant, montant-descendant) dans certains dialectes ; Dan (Mandé oriental) a jusqu'à **4 tons**. Les tons distinguent lexique et parfois grammaire. Alternances tonales selon poids syllabique, particulièrement étudiées dans le mandinka du Pakaawu (aperture syllabique légère ou lourde affectant contours tonals). Certaines langues Mandé occidentales ont des patrons tonals remplaçants (« word-level replacive tonal patterns »). **Structure syllabique :** Préférence pour syllabes ouvertes (CV ou V), très peu de codas consonantiques excepté éventuellement nasale finale /ŋ/. Structure typique *CVCV…* (consonne-voyelle alternante), souvent avec la deuxième voyelle identique à la première.",
-      "relationsWithNeighbors": " **Emprunts arabes :** Via l'islamisation, emprunts répandus dans les langues Mandé de tradition islamique : mots comme *salaam* (salutation), *iman* (imam), *masjid* (mosquée), *kitâbu* (arabe كتاب « livre »), *ʿilm* (« science ») dans Mandinka, Soninké, Bambara, etc. **Emprunts entre langues mandingues :** Mots partagés ou très similaires entre Bambara, Dioula, Maninka pour « eau », « maison », etc. Par exemple le mot *fila* / *fila* dans plusieurs langues Manding-Mokole pour « tisser » ou « tissu ». **Influence avec langues atlantiques :** Forte interaction historique avec les langues atlantiques (wolof, peul/fulfulde) et les langues gur. Emprunts lexicaux notamment dans le domaine du commerce ou de l'agriculture entre Mandingues et Peuls ou langues atlantiques. Influence forte du Mandé sur lexique et phonologie de certaines langues atlantiques comme Kisi. Contact prolongé avec langues non tonales telles que Wolof, Jula, influençant phonologie tonale de Mandinka. **Emprunts modernes :** Du français et anglais dans les régions colonisées ; ex. *école*, *bureau*, *train* etc. dans Bambara ou Maninka."
+      "typology": "Les langues mandé changent peu la forme des mots. Les langues mandingues, comme le bambara, sont même décrites comme « extrêmement isolantes » : chaque idée grammaticale y est portée par un mot séparé plutôt que par une terminaison, selon Valentin Vydrin (2016). Ces langues n'ont pas de classes nominales, ces séries de marques qui rangent les noms en catégories dans beaucoup d'autres langues d'Afrique. Le temps, l'aspect et la négation sont surtout exprimés par de petits mots placés juste après le sujet, que les spécialistes appellent « marques prédicatives », parfois avec un suffixe sur le verbe. Quelques suffixes changent le sens du verbe, comme le suffixe -ndi, qui veut dire « faire faire » en soninké et en mandinka, selon le même auteur.\n\nL'ordre des mots est très régulier : le sujet, puis la marque de temps, l'objet, le verbe et enfin les autres compléments. Hannah Sande, Nico Baier et Peter Jenks (2019) le montrent en marka-dafing, une langue mandé du Burkina Faso, dans une phrase qui se construit mot à mot comme « le chien passé la viande manger », pour dire « le chien a mangé la viande ». En 1901, l'administrateur colonial Maurice Delafosse décrivait déjà la langue mandé comme une langue qui forme ses mots en juxtaposant des racines ou en ajoutant des préfixes et des suffixes, et qui ne distingue pas les genres.",
+      "phonologicalFeatures": "Les langues mandé sont des langues à tons : la hauteur de la voix sur une syllabe peut changer le sens d'un mot. Selon l'hypothèse dominante que rapporte Valentin Vydrin (2016), la langue ancestrale commune, le proto-mandé, avait deux tons, un haut et un bas. Le mandinka du Pakaawu, parlé dans un groupe de villages de moyenne Casamance, au Sénégal, a lui aussi deux tons, haut et bas. Denis Creissels (2019) montre que ses tons montants ou descendants n'apparaissent que sur les syllabes longues, ou fermées par une consonne. Dans les langues mandingues, le ton d'un mot peut s'étendre au mot suivant : en bambara, só, « maison », et bìlen, « rouge », donnent só bílen, « maison rouge », selon Vydrin.\n\nLes langues du mandé du Sud, parlées en Côte d'Ivoire, en Guinée et au Liberia, ont multiplié les tons. La plupart ont trois hauteurs de ton. Plusieurs en ont quatre, comme le gban, le toura ou le yaouré, et le dan de Gweetaa en a cinq, selon Vydrin. Ces langues ont aussi des consonnes implosives, écrites ɓ et ɗ, que l'on prononce en faisant entrer l'air vers l'intérieur de la bouche. Vydrin propose que ces consonnes y prolongent un état ancien de la famille, comme l'harmonie des voyelles : dans un mot, les voyelles appartiendraient à une même série. Dans le mandé du Sud-Ouest, qui comprend le kpellé, le loma et le mende, la première consonne d'un mot change selon ce qui la précède ; en kpellé, après un son nasal, une consonne comme t se prononce d.",
+      "relationsWithNeighbors": "Les langues mandé ont emprunté des mots à leurs voisins. Valentin Vydrin (2016) indique que la plupart des emprunts de son dictionnaire étymologique viennent de l'arabe. Il relève aussi (2009) des mots qui ont voyagé d'une langue à l'autre, comme ceux du cheval et du chameau. En Guinée, les locuteurs du kakabé parlent aussi le pular, la langue peule du Fouta-Djalon, et le kakabé lui a pris des mots comme celui de « voler », dans les airs. Le mot du lait existe dans presque toute la famille, mais les locuteurs du mandé du Sud l'emploient pour le lait en boîte : chez eux, le bétail appartient surtout aux Peuls, selon Vydrin.\n\nPlusieurs langues mandé comptent par vingt. Eléna Perekhvalskaya et Valentin Vydrin (2019) y voient une évolution récente, probablement sous l'influence des langues sénoufo, gour et peut-être krou. L'influence va aussi dans l'autre sens : certaines langues krou de l'Ouest placent l'adverbe après le verbe, comme le mandé, peut-être par contact, selon Hannah Sande, Nico Baier et Peter Jenks (2019).\n\nLes voisins ont aussi leurs propres noms pour les Mandé. En 1901, Maurice Delafosse note que les Songhaï les appellent Wakore et les Peuls Wagarbe. Andreas Massing (2000) rattache le nom Wakoré à l'Awkar, une région où vivaient autrefois les Soninké.",
+      "keyInnovations": "Le mot pour « dix » sépare depuis longtemps deux grands ensembles de langues mandé. Maurice Delafosse classait déjà en 1901 les parlers mandé en deux groupes : celui de « tan », où dix se dit ta ou un mot formé sur ta, et celui de « fou », où il se dit fu ou pu. Eléna Perekhvalskaya et Valentin Vydrin (2019) reconstruisent pu ou fu comme le mot le plus ancien pour « dix ». Pour eux, tan est une innovation propre au mandé occidental, tirée d'une racine niger-congo qui voulait dire « cinq ».\n\nD'autres traits sont propres à une partie de la famille, selon Vydrin (2016) : l'extension du ton d'un mot sur le suivant dans les langues mandingues, le changement de la consonne initiale dans le mandé du Sud-Ouest, et la multiplication des tons dans le mandé du Sud. Toute la famille partage un ordre des mots rigide, sujet, marque de temps, objet, verbe, que l'on retrouve chez les voisins krou, selon Hannah Sande, Nico Baier et Peter Jenks (2019)."
     },
     "historyAndOrigins": {
-      "probableOrigin": " **Classification linguistique :** La famille mandée a été d'abord reconnue par **Sigismund Wilhelm Koelle** (1854) dans *Polyglotta Africana*, puis subdivisée par **Maurice Delafosse** (1901) qui distingue deux sous-groupes « mandé-tan » (nord) et « mandé-fu » (sud) selon leur mot pour « dix », **Louis Tauxier** (1924), **William E. Welmers** (1958) qui propose trois sous-groupes (nord-ouest, sud, est), et **Joseph Greenberg** (1963) dans *The Languages of Africa* qui formalise la classification moderne. Certains linguistes (Güldemann, Dimmendaal) considèrent Mandé comme indépendant ou très divergent dans Niger-Congo. **Gerrit Dimmendaal** (2008) et **Tom Güldemann** (2018) remettent en question l'inclusion, arguant que Mande pourrait être une famille indépendante, ou une branche très ancienne du Niger-Congo, car la typologie (absence de classes, etc.) et le vocabulaire fondamental divergent. **Théorie archéologique :** Certains suggèrent que les locuteurs proto-mandés vivaient dans le **Sahara méridional** (entre 3°-12° longitude Ouest, environ au nord de 16° ou 18° latitude Nord), dans ce qui est aujourd'hui la Mauritanie ou désert du Sahara, durant le **4ᵉ millénaire avant notre ère**. Le foyer hypothétique de Proto-Mande est localisé « dans la deuxième moitié du 4ᵉ millénaire av. J.-C. dans le Sahara-Sud, au nord d'environ 16° voire 18° de latitude Nord, entre 3° et 12° de longitude Ouest » selon **Valentin Vydrin** (2016) dans « On the Problem of the Proto-Mande Homeland ». D'autres modèles archéologiques suggèrent développement dans les bassins du Niger et de ses affluents, région du Mandé au sud-Mali / est de Guinée identifiée comme zone originelle culturelle des Malinké. **Théorie génétique :** Les études de corrélation entre langues et patrimoines génétiques montrent que les populations mandées présentent une structure génétique corrélée aux langues de la famille. Chez les Mandinka de Guinée-Bissau, le haplogroupe Y-chromosomique **E1b1a*/E3a-M2** atteint **82,2 %**, montrant une forte continuité génétique parmi les populations mandé. Les études Y-chromosomiques indiquent haplogroupe E1b1a* très fréquent chez Mandé, suggérant longue présence dans l'Afrique de l'Ouest et ancienneté des communautés parlantes. Présence d'un « ghost population » archaïque dans les génomes des Yoruba et Mende, indiquant des contacts très anciens (>100 000 ans) avec des hominidés non identifiés selon **Durvasula & Sankararaman** (2020) dans *Science Advances*.",
-      "emergencePeriod": " (1) **Émergence historique de la FLG Mandé** : estimée vers le **4ᵉ millénaire avant notre ère** (≈ 3500-2500 av. J.-C.) pour le proto-Mandé selon **Valentin Vydrin** (homeland sud-saharien). Formation progressive depuis l'Antiquité / Haut Moyen Age ; empire du Ghana vers IXe-Xe siècles, empire du Mali au XIIIe siècle — usage des langues mandingues déjà attesté. Probable émergence il y a plusieurs millénaires en Afrique de l'Ouest, avec divergence interne antérieure à l'expansion des grands empires Mali / Ghana. (2) **Date de classification académique** :",
-      "diffusion": "Plusieurs hypothèses sont proposées pour la diffusion des langues mandé : une expansion depuis le sud du Sahara, un foyer dans les bassins du Niger (sud du Mali, est de la Guinée), une diffusion par les empires médiévaux, ou plusieurs zones de divergence plutôt qu'une expansion unique. La fiche ne tranche pas entre elles ; chacune est détaillée ci-dessous.\n\n **Théorie 1 (Sahara-Sud) :** Expansion depuis le foyer saharien/prairies/milieu Sahélien vers le sud et l'ouest, via les migrations et échanges commerciaux. Foyer proto-Mandé au sud du Sahara actuel (Mauritanie, sud-Sahara) selon Vydrin. Migration-agriculture : expansion de locuteurs proto-Mandé vers régions plus sud, avec agriculture, établissement de royaumes comme Ghana, Mali, etc. **Théorie 2 (Niger-Mali intérieur) :** Certains modèles archéologiques suggèrent développement dans les bassins du Niger et de ses affluents. Région du Mandé au sud-Mali / est de Guinée identifiée comme zone originelle culturelle des Malinké, groupe mandingue. Expansion depuis une zone cœur dans le Mandé (sud-Mali, est Guinée), dispersion vers nord, est et ouest selon migrations, commerce, empire. **Théorie 3 (Diffusion culturelle via empire) :** Expansion mandingue médiévale (Mali, Kaabu, empire mandingue), migrations économiques modernes (Dioula). Via l'empire du Mali (13ᵉ–16ᵉ siècles), Soundiata Keïta etc. Formation des grands empires Soninke-Ghana, Mali, etc. **Théorie 4 (Gradient d'innovation) :** Gradient d'innovation lexicale et phonologique suggérant des zones multiples de divergence, ne pas tout attribuer à une expansion unique. Par exemple Vydrin & Kastenholz sur différenciations internes. Théorie lexicostatistique : Welmers (1958) propose trois sous-groupes internes (nord-ouest, sud, est) sur base statistique lexicale. Théorie alternative : certains linguistes affirment que la classification « nord / sud » ne rend pas compte des réalités de contact intense, de continus dialectaux, d'emprunts. **Théorie 5 (Paléo-climatique) :** Migrations poussées par assèchement du Sahara, expansions agricoles vers le sud et l'ouest en lien avec la désertification. Théorie génétique / paléo-climatique : migrations poussées par assèchement du Sahara à partir du 4ᵉ millénaire avant J.-C., entraînant dispersion des locuteurs mandé. **Théorie 6 (Contact linguistique) :** Interaction avec langues soudanaises, atlantiques, influence mutuelle, emprunts. Théorie de contact linguistique et mosaïque ethnique : interaction avec langues soudanaises, atlantiques, influence mutuelle, emprunts.",
-      "historicalBreaks": " - Chute de l'empire du Mali (vers 1600) - Islamisation successive des peuples mandé - Pressions coloniales françaises (imposition de nouvelles frontières au XIXe-XXe siècles) - Déclin de structures politiques traditionnelles (Kaabu, Empire du Mali) sous pressions coloniales au milieu XIXe siècle",
-      "contactZones": " **Géographiquement :** Afrique de l'Ouest : zones entre Guinée-Conakry, Mali, Sénégal, Gambie, Côte d'Ivoire, Liberia, Sierra Leone, Guinée-Bissau, Mauritanie, Ghana, Bénin, Nigeria. Zone nord du Mandé probable en **Mauritanie sud / Sahara méridional nord-Mali**, selon Vydrin. Savane-Sahel de l'Ouest africain (Sénégal, Gambie, Mali, Mauritanie), régions forestières de la Guinée, Côte d'Ivoire, Libéria, Sierra Leone. **Villes / routes historiques :** Villes comme **Djenné, Gao, Tombouctou, Niani, Koulikoro** étaient des pôles de contact des langues Manding / Mandé avec l'arabe, songhay. Routes commerciales historiques transsahariennes et fluviales (fleuve Niger) facilitant contact Soninké/Bambara/Dioula/Akan/etc. Routes trans-sahariennes de commerce d'or et de sel. Routes de commerce transsahariennes : villes comme Djenné, Gao, Timbuktu étaient des pôles de contact des langues Manding / Mandé avec l'arabe, songhay. **Zones de métissage linguistique :** Contact prolongé avec langues atlantiques (wolof, fulfulde), langues atlantiques de la côte, langues voltaïques (Gur), langues soudanaises. Entre Mandingues et Peuls, influence avec langues atlantique (ex : Wolof, Fula), langues forestières, contacts arabes via le commerce et l'islamisation. Pays mandingues du Mali/Guinée, Sénégambie, Sierra Leone. Manding interagit avec langues atlantiques, langues roulantes de la savane, langues négro-sahariennes selon les régions ; emprunts avec langues de contact comme le Soninke-Bozo, etc.",
-      "majorEvents": " | Date estimée / historique | Événement | |---------------------------|-----------| | ~ 4000-3000 av. J.-C. | Proto-Mandé dans la région saharienne sud, diffusion vers les savanes (théorie de Vydrin) | | ~100 – 300 ap. J.-C. à ±1000 | Royaume de Ghana (Soninke) : expansion, influence culturelle Mandé. Empire du Ghana (ŕ dominance Soninke), expansion mandée vers le sud et vers l'ouest (commerce trans-saharien) | | Vers 1000-1300 ap. J.-C. | Empire du Ghana, établissement de royaumes Mandé forts | | Vers 1235 (chronologie relative ; action de Soundiata entre 1230 et 1255) | Fondation de l'empire du Mali sous **Sundiata Keïta**, consolidation d'une culture mandée écrite et orale, usage arabe aussi. Tradition d'une assemblée à Kouroukan Fouga, dont la version écrite en quarante-quatre articles a été établie en 1998. Empire du Mali s'étend, diffusion culturelle et linguistique des langues mandingues | | XIIIᵉ-XIVᵉ siècles | Empire du Mali (fondé vers 1235 par Soundjata Kéita) : point d'expansion majeur de la culture Manding | | Vers 1599-1600 | Fin de la dépendance du Bambugu ; dislocation du Mali dans le quart de siècle suivant | | XIXᵉ siècle | Missionnaires et linguistes coloniaux commencent à documenter langues mandées (grammaires, dictionnaires) ; classification externe. Colonisation européenne, études linguistiques formalisées ; diffusion de l'alphabet latin et création de formes écrites modernes | | 1854 | Koelle publie Polyglotta Africana et emploie dans sa classification les noms Mande et Mandenga recueillis auprès de ses interlocuteurs | | 1901 | **Delafosse** propose sa classification (mandé-tan / mandé-fu) | | 1924 | **Tauxier** affine la classification | | 1949 | **Solomana Kanté** invente écriture **N'Ko** pour les langues mandingues, affirmation culturelle et linguistique endogène | | 1958 | **Welmers** publie *The Mande Languages* | | 1963 | **Greenberg** publie *The Languages of Africa*, classification standard | | 2000-2025 | Débats modernes sur la place du mandé dans Niger-Congo (Dimmendaal 2008 etc.), études génétiques (Guinée-Bissau, etc.) |"
+      "probableOrigin": "Le mandé est reconnu comme une famille de langues depuis le milieu du XIXe siècle. Selon Valentin Vydrin (2016), le missionnaire Sigismund Koelle en pose l'existence en 1854, et l'unité de la famille n'a jamais été sérieusement mise en doute. Sa place parmi les autres langues d'Afrique est plus discutée. Joseph Greenberg range le mandé dans la grande famille niger-congo. Ce classement est longtemps admis, puis contesté en 2008 par Tom Güldemann et Gerrit Dimmendaal, qui relèvent l'absence de classes nominales et le peu de vocabulaire commun. Vydrin compare vingt mots parmi les plus stables du niger-congo aux formes anciennes du mandé : quatorze lui paraissent de bons candidats à une origine commune, et deux sont nettement différents. Il juge que cette liste ne prouve pas le rattachement, et qu'il faut d'abord reconstruire en détail la langue ancestrale. Glottolog, le catalogue des langues de l'Institut Max Planck, traite le mandé comme une famille indépendante.\n\nPlusieurs auteurs ont proposé un berceau pour cette langue ancestrale. Valentin Vydrin (2009) les passe en revue. William Welmers le place en 1971 dans le nord du Bénin. Kent Bimson le situe entre la Volta Noire et le haut Niger, près de Bobo-Dioulasso, il y a plus de 4 000 ans. David Dalby pense en 1971 à la Sierra Leone et au Liberia, et Claire Grégoire, en 1994, au nord de la Côte d'Ivoire et au sud de la Guinée. Vydrin croise lui-même la comparaison des langues avec l'histoire du climat et l'archéologie. Il propose que les premiers locuteurs vivaient, dans la seconde moitié du IVe millénaire avant notre ère, au sud du Sahara, alors plus humide : au nord du 16e ou même du 18e degré de latitude nord, entre 3 et 12 degrés de longitude ouest. Il s'appuie sur deux faits. Les onze groupes de la famille ont tous des langues dans cette bande de longitude. Le vocabulaire ancien parle de riz, de fonio, de chiens, de chats, de poulets et de petit bétail. Il juge très improbable un berceau en forêt, car il faudrait alors des migrations vers le nord, à l'inverse de ce que montrent le climat et l'archéologie.\n\nLa génétique ne suit pas les frontières des langues. En Guinée-Bissau, Alexandra Rosa et ses collègues (2007) trouvent un même type de chromosome Y, nommé E3a-M2, chez 82,2 % des hommes mandenka étudiés. Ce type est partagé par tous les groupes du pays qu'ils ont étudiés, qu'ils parlent ou non une langue mandé.",
+      "emergencePeriod": "Valentin Vydrin (2016) estime l'âge de la famille mandé à plus de 5 000 ans, à peu près l'écart qui sépare les branches de l'indo-européen. Ses dates viennent de la glottochronologie, une méthode qui compte les mots de base que deux langues partagent pour estimer depuis quand elles se sont séparées. Vydrin rappelle que beaucoup de linguistes la jugent discréditée ; il emploie une version améliorée par Sergueï Starostin. Selon son calcul (2009), la langue ancestrale se divise entre 3500 et 3000 avant notre ère en deux branches, l'occidentale et la sud-orientale. La branche occidentale se divise à son tour à partir de 2100 avant notre ère environ. Le soninké et le bozo se séparent vers 1150 avant notre ère, et l'ensemble mandingue se fragmente dans le dernier siècle avant notre ère.\n\nLa classification savante a sa propre histoire. Sigismund Koelle pose la famille en 1854 et Maurice Delafosse la divise en deux groupes en 1901. Joseph Greenberg la range dans le niger-congo en 1963. Raimund Kastenholz propose ensuite un classement fondé sur les innovations que les langues partagent, et Valentin Vydrin un autre en 2009, fondé sur la glottochronologie.",
+      "diffusion": "Valentin Vydrin (2009) compare deux hypothèses sur la façon dont les langues mandé se sont étendues. Dans ce qu'il appelle l'hypothèse du Sud, les premiers locuteurs vivaient de la chasse dans les vallées du Sahel ; ils auraient ensuite absorbé des agriculteurs et des éleveurs venus du nord. Dans l'hypothèse du Nord, qu'il retient, ils vivaient au sud du Sahara. Des sécheresses, vers 3500 puis vers 2200 avant notre ère, auraient accompagné la séparation des groupes, et après 1000 avant notre ère, le climat aurait poussé tous ces groupes au sud du 18e degré de latitude. Vydrin ajoute qu'avant le premier millénaire avant notre ère, le Sahel était marécageux, infesté de mouches tsé-tsé et difficile à traverser. La grande extension des langues mandé d'est en ouest plaide donc pour lui en faveur d'un passage par le nord. Certaines langues sont descendues tôt vers la forêt : il place vers 700-600 avant notre ère la séparation du gban, qui migre vers le sud, dans l'actuelle Côte d'Ivoire.\n\nPlus tard, des réseaux marchands ont porté des locuteurs de langues mandé loin de leur région d'origine. Andreas Massing (2000) suit les Wangara, des clans soninké de marchands et de lettrés musulmans, depuis les auteurs arabes du XIe siècle : ils tenaient alors le commerce de la poudre d'or. Hannah Sande, Nico Baier et Peter Jenks (2019) appellent « Mandesphère » la région d'Afrique de l'Ouest où les langues partagent l'ordre des mots du mandé, en référence à l'influence historique de l'empire du Mali.",
+      "historicalBreaks": "Valentin Vydrin (2009) relie les grandes divisions de la famille au climat. Il associe la séparation des deux branches à un épisode sec vers 3500 avant notre ère, et les divisions de la branche occidentale à la crise aride des environs de 2200 avant notre ère. Entre le IIIe siècle avant notre ère et le Ve siècle de notre ère, une forte baisse des pluies vide le sud du Sahara de la plupart de ses habitants, sauf dans quelques oasis ; il s'appuie pour ces données sur l'archéologue Robert Vernet.\n\nAujourd'hui, les langues mandé sont réparties entre de nombreux États. Glottolog en signale dans quatorze pays, et Vydrin (2016) en compte douze. Chaque pays les compte à sa façon : le recensement du Mali de 2022 relève la langue maternelle, celui de la Côte d'Ivoire de 2021 le grand groupe ethnique.",
+      "contactZones": "Les langues mandé sont en contact avec plusieurs autres familles. À l'ouest, elles côtoient les langues atlantiques, comme le pular : en Guinée, les locuteurs du kakabé parlent tous le pular, selon Valentin Vydrin (2009). À l'est, les langues sénoufo et gour auraient donné à plusieurs langues mandé l'habitude de compter par vingt, selon Eléna Perekhvalskaya et Valentin Vydrin (2019). Au sud, les langues mandé et krou partagent le même ordre des mots, selon Hannah Sande, Nico Baier et Peter Jenks (2019). Au nord, entre le VIe et le XIe siècle, le retour des pluies permet aux habitants du Sahel de remonter vers le nord, où ils rencontrent des Berbères et des Arabes, selon Vydrin, qui cite Robert Vernet.\n\nLes locuteurs de langues mandingues se parlent aussi entre eux. Selon la proposition de codage de l'écriture n'ko déposée en 2004 par Michael Everson, Mamady Doumbouya, Baba Mamadi Diané et Karamo Kaba Jammeh, des Bambara du Mali, des Maninka de Guinée, des Dioula de Côte d'Ivoire et des Mandinka de Gambie ou du Sénégal passent souvent, quand ils se parlent, à une forme commune appelée kangbe, « la langue claire ». En 1901, l'administrateur colonial Maurice Delafosse écrivait déjà que le mandé était compris par tous les peuples de la région, et que les Toucouleurs eux-mêmes l'employaient pour parler avec des étrangers.",
+      "majorEvents": "Selon les dates proposées par Valentin Vydrin (2009), la langue ancestrale du mandé se divise en deux branches vers 3500-3000 avant notre ère, au sud du Sahara. Au XIe siècle, des auteurs arabes comme al-Bakrî décrivent les Wangara, des marchands de poudre d'or, qu'Andreas Massing (2000) rattache au royaume soninké du Ghana. Plus tard, l'influence de l'empire du Mali s'étend sur une large part de l'Afrique de l'Ouest, selon Hannah Sande, Nico Baier et Peter Jenks (2019).\n\nEn 1854, Sigismund Koelle pose l'existence de la famille. En 1901, Maurice Delafosse en publie une classification en deux groupes, d'après le mot pour « dix ». En 1963, Joseph Greenberg la range dans le niger-congo. Au XXe siècle, Solomana Kanté crée l'écriture n'ko pour les langues mandingues. Selon la proposition de codage de 2004, il l'a nommée ainsi parce que Soundiata Keita appelait « locuteurs du n'ko » les délégations venues de tout le Manden pour l'assemblée de Kurukafuwa, que l'on écrit aussi Kouroukan Fouga. Cette même année 2004, l'écriture n'ko est proposée pour entrer dans Unicode, la norme qui code les écritures du monde en informatique."
     },
     "distribution": {
-      "totalSpeakers": 60000000,
+      "totalSpeakers": 50000000,
       "distributionByCountry": {
         "SEN": 465052,
-        "CIV": 6433783
+        "CIV": 6433783,
+        "MLI": 12756650
       }
     },
     "sources": [
@@ -481,104 +498,114 @@
         "notes": "Publication de l'UNESCO. Le chapitre 6, signé Niane, suit les traditions orales des écoles de griots du Manden et les croise avec les auteurs arabes ; sa chronologie est relative. Le chapitre 12, signé Person, situe la fin de la dépendance du Bambugu vis-à-vis du Mali en 1599."
       },
       {
-        "title": "Delafosse, Maurice (1901) – *Essai de manuel pratique de la langue mandé ou mandingue*. Leroux, Paris",
-        "url": null,
-        "tier": "referenced"
+        "title": "Essai de manuel pratique de la langue mandé ou mandingue",
+        "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Ouvrage de Maurice Delafosse, administrateur colonial, publié à Paris chez E. Leroux en 1901. Lu dans la numérisation d'Internet Archive. P. 216, note 2 : les noms que les Songhaï et les Peuls donnent aux Mandé ; p. 217 : le mandé comme langue d'échange ; p. 217-218 : caractères généraux de la langue ; p. 218-220 : les groupes de « tan » et de « fou », d'après le mot pour dix. L'auteur emploie le vocabulaire racial de son époque."
       },
       {
         "title": "Tauxier, Louis (1924) – Classification des langues mandé",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "notes": "Nous n'avons pas retrouvé d'ouvrage de Louis Tauxier sous ce titre. Cet auteur a publié des études sur des peuples d'Afrique de l'Ouest, comme Le Noir de Bondoukou en 1921."
       },
       {
         "title": "Welmers, William E. (1958) – \"The Mande Languages\", article de classification lexicostatistique dans *Papers in African Languages and Linguistics*",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "notes": "Article de classification des langues mandé, sans copie en accès libre. Valentin Vydrin (2009) cite un autre texte de Welmers, de 1971, pour l'hypothèse d'un berceau dans le nord du Bénin."
       },
       {
-        "title": "Greenberg, Joseph H. (1963) – *The Languages of Africa*. Indiana University Press",
+        "title": "Greenberg, Joseph H. (1963) – The Languages of Africa. Indiana University Press",
         "url": null,
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Classement des langues d'Afrique qui range le mandé dans le niger-congo. L'exemplaire numérisé d'Internet Archive n'est disponible qu'en prêt. Ce classement est résumé par Valentin Vydrin (2016)."
       },
       {
         "title": "Vydrin, Valentin (2009) – On the Problem of the Proto-Mande Homeland, Journal of Language Relationship 1",
         "url": "https://www.jolr.ru/files/(10)jlr2009-1(107-142).pdf",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Onze groupes de bas niveau font consensus ; les désaccords portent sur les regroupements intermédiaires et sur le berceau de la famille."
+        "notes": "Article en accès libre, revue de l'Université d'État des sciences humaines de Russie. P. 107 : onze groupes de langues font consensus, les désaccords portent sur les regroupements intermédiaires ; p. 112 : emprunts du kakabé au pular ; p. 114-116 : hypothèses sur le berceau de la famille, données du climat et de l'archéologie d'après Robert Vernet, conclusion pour le sud du Sahara ; p. 115 : tableau des dates de séparation ; p. 117-118 : vocabulaire ancien du lait, des animaux et des plantes cultivées."
       },
       {
         "title": "Dimmendaal, Gerrit J. (2008) – \"Language Ecology and Linguistic Diversity on the African Continent\", *Language and Linguistics Compass*, et *Historical Linguistics and the Comparative Study of African Languages*",
         "url": null,
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Article de revue, sans copie en accès libre. Valentin Vydrin (2016) résume son objection au rattachement du mandé au niger-congo."
       },
       {
-        "title": "Güldemann, Tom (2018) – *The Languages and Linguistics of Africa*. De Gruyter Mouton",
+        "title": "Güldemann, Tom (2018) – The Languages and Linguistics of Africa. De Gruyter Mouton",
         "url": null,
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Ouvrage collectif sans copie en accès libre. Valentin Vydrin (2016) résume la position de Tom Güldemann d'après un texte de 2008."
       },
       {
-        "title": "Creissels, Denis & Sambou, Pierre (2013) – *Le mandinka : phonologie, grammaire, textes*. Karthala",
+        "title": "Creissels, Denis & Sambou, Pierre (2013) – Le mandinka : phonologie, grammaire, textes. Karthala",
         "url": null,
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Grammaire du mandinka, sans copie en accès libre. Valentin Vydrin (2016) y renvoie pour les suffixes du verbe."
       },
       {
-        "title": "Creissels, Denis (2019) – \"Tonologie du mandinka du Pakaawu\", *Mandenkan* 61",
-        "url": null,
+        "title": "Creissels, Denis (2019) – Tonologie du mandinka du Pakaawu, Mandenkan 61",
+        "url": "https://journals.openedition.org/mandenkan/1886",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Article de la revue Mandenkan, en accès libre sur OpenEdition. Le résumé et l'introduction situent le Pakaawu en moyenne Casamance ; partie 2 : un système à deux tons, haut et bas, étroitement lié à la structure des syllabes ; partie 5 : les tons modulés n'apparaissent que sur les syllabes lourdes."
       },
       {
-        "title": "Khachaturyan, Lusine (2020) – *A typological portrait of Mano, Southern Mande*. De Gruyter Brill",
-        "url": null,
+        "title": "Khachaturyan, Maria (2020) – A typological portrait of Mano, Southern Mande, Linguistic Typology 25(1), p. 123-167",
+        "url": "https://doi.org/10.1515/lingty-2020-2050",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Article de revue sur le mano, une langue du mandé du Sud parlée en Guinée et au Liberia. Nous n'en avons consulté que la notice."
       },
       {
-        "title": "Durvasula, Arun & Sankararaman, Sriram (2020) – \"Recovering signals of ghost archaic admixture in the genomes of present-day Africans\", *Science Advances*",
-        "url": null,
+        "title": "Rosa, Alexandra et al. (2007) – Y-chromosomal diversity in the population of Guinea-Bissau: a multiethnic perspective, BMC Evolutionary Biology 7:124",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1976131/",
         "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "Rosa, Alexandra et al. (2011) – \"Y-Chromosomal diversity in the population of Guinea-Bissau: a multiethnic perspective\", *Molecular Biology and Evolution* 28(3): 1255-1266",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Article de génétique en accès libre. Le résumé indique que le type E3a-M2 du chromosome Y domine dans tous les groupes étudiés en Guinée-Bissau et atteint 82,2 % chez les Mandenka."
       },
       {
         "title": "Nikitina, Tatiana (2019) – \"Missionary descriptions of Mande languages: verbal morphology…\", *Folia Linguistica* 50(2)",
         "url": null,
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Nous n'avons pas pu vérifier cette référence, ni en trouver une copie en accès libre."
       },
       {
         "title": "Ethnologue/SIL International – \"Mande languages\" entrée pour 2025",
         "url": null,
         "tier": "needs_review",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Base de données de SIL International. Valentin Vydrin (2016) y relève 73 langues mandé."
       },
       {
-        "title": "UNESCO – *Atlas des langues en danger dans le monde*",
+        "title": "UNESCO – Atlas des langues en danger dans le monde",
         "url": null,
         "tier": "needs_review",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": "Atlas de l'UNESCO sur les langues menacées."
       },
       {
         "title": "Britannica – \"Mande languages\" et \"Mande peoples\" articles",
         "url": null,
         "tier": "needs_review",
-        "source_kind": "encyclopedia"
+        "source_kind": "encyclopedia",
+        "notes": "Encyclopédie générale de langue anglaise."
       },
       {
         "title": "Glottolog (2025) – \"Mande\"",
         "url": "https://glottolog.org/resource/languoid/id/mand1469",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Notice de la famille dans l'édition 5.3, consultée le 3 novembre 2026 : 75 langues, en deux branches, mandé oriental et mandé occidental. La famille n'y est rattachée à aucun ensemble plus vaste. Les notices de ses langues indiquent quatorze pays, de la Gambie au Nigeria."
       },
       {
         "title": "Agence Nationale de la Statistique et de la Démographie (ANSD), Sénégal (2023) – RGPH-5, Rapport Chapitre 1 : État et structure de la population, Table I-32 (Mandinka / Màndienka langue courante)",
@@ -590,7 +617,8 @@
         "title": "Agence Nationale de la Statistique (ANStat), Côte d'Ivoire (2021) – Recensement Général de la Population et de l'Habitat (RGPH 2021), jeu de données \"Répartition des Ivoiriens par grand groupe ethnique selon le sexe\" (groupe ethnolinguistique Mandé du Nord + Mandé du Sud, agrégat, classification Bouquet)",
         "url": "https://data.gouv.ci/datasets/repartition-des-ivoiriens-par-grand-groupe-ethnique",
         "tier": "official",
-        "source_kind": "government"
+        "source_kind": "government",
+        "notes": "Jeu de données publié sur le portail officiel des données ouvertes de Côte d'Ivoire, mis à jour le 11 mars 2026. Il compte des Ivoiriens par grand groupe ethnique, pas des locuteurs. Le chiffre retenu additionne les hommes et les femmes des groupes Mandé du Nord (4 455 058) et Mandé du Sud (1 978 725). La colonne « effectif » du jeu de données donne d'autres valeurs, qui ne correspondent pas à cette somme."
       },
       {
         "title": "Almada, André Álvares de (1594) – Tratado breve dos rios de Guiné do Cabo Verde",
@@ -639,7 +667,7 @@
         "url": "https://journals.openedition.org/etudesafricaines/175",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Suit le réseau marchand wangara depuis les sources arabes du onzième siècle. Accès libre."
+        "notes": "Article des Cahiers d'études africaines, en accès libre sur OpenEdition. Le résumé fait des Wangara l'élément central de la diaspora soninké ; les paragraphes 4 et 10 suivent le nom chez al-Bakrî et al-Idrîsî et le commerce de la poudre d'or ; la note 18 rattache Wakoré à l'Awkar."
       },
       {
         "title": "Sanou Noël, Bationo (2021) – La charte du Mandé, Afroglobe 1",
@@ -674,7 +702,68 @@
         "url": null,
         "tier": "referenced",
         "notes": "Ouvrage sous droits, non reproduit. Transcription d'un récit du griot Babou Condé ; la note de la p. 130 donne l'étymologie de Manden par man, « lamantin », et den, « enfant ». Seul compte rendu que nous ayons trouvé de l'étymologie du mot."
+      },
+      {
+        "title": "Vydrin, Valentin (2016) – Toward a Proto-Mande reconstruction and an etymological dictionary, Faits de langues 47, p. 109-123",
+        "url": "https://shs.hal.science/halshs-01375776",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de la revue Faits de langues, déposé en accès libre sur HAL. P. 109 : plus de 70 langues, 45 à 50 millions de locuteurs dans douze pays, une profondeur de plus de 5 000 ans ; p. 110 : les onze groupes et les deux branches ; p. 112 : les consonnes implosives ; p. 114-115 : les tons et leur extension d'un mot au suivant ; p. 116-117 : une morphologie réduite, les marques prédicatives et quelques suffixes du verbe ; p. 119-120 : le mandé et le niger-congo."
+      },
+      {
+        "title": "Perekhvalskaya, Eléna & Vydrin, Valentin (2019) – Numeral systems in Mande languages, Mandenkan 61",
+        "url": "https://journals.openedition.org/mandenkan/1951",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de la revue Mandenkan, en accès libre sur OpenEdition. Le résumé juge anciens les comptes par cinq et par dix, et récent le compte par vingt, sous l'influence probable du sénoufo, des langues gour et peut-être krou ; la partie 1.7 donne pu ou fu comme le mot ancien pour dix et tan comme une innovation du mandé occidental."
+      },
+      {
+        "title": "Sande, Hannah, Baier, Nico & Jenks, Peter (2019) – The syntactic diversity of SAuxOV in West Africa, dans Theory and description in African Linguistics, Language Science Press, p. 667-701",
+        "url": "https://langsci-press.org/catalog/view/192/1511/1624-1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre d'un ouvrage collectif en accès libre. P. 667 : l'ordre sujet, auxiliaire, objet, verbe est typique des familles mandé et krou, avec un exemple en marka-dafing ; p. 671 : des langues krou de l'Ouest placent l'adverbe après le verbe, peut-être par contact avec le mandé ; p. 688 : la région nommée Mandesphère."
+      },
+      {
+        "title": "Everson, Michael, Doumbouya, Mamady, Diané, Baba Mamadi & Jammeh, Karamo Kaba (2004) – Proposal to add the N’Ko script to the BMP of the UCS",
+        "url": "https://www.unicode.org/L2/L2004/04172-n2765-nko.pdf",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Document de travail déposé auprès du groupe de normalisation des écritures, daté du 8 juin 2004. P. 3 : la forme commune kangbe, « la langue claire », et l'origine du nom n'ko donnée par les auteurs."
+      },
+      {
+        "title": "Institut national de la statistique du Mali (2025) – Cinquième recensement général de la population et de l'habitat (RGPH5), Rapport d'analyse des données, thème : caractéristiques culturelles de la population, Bamako, janvier 2025",
+        "url": "https://instat-mali.org/laravel-filemanager/files/shares/rgph/rapport-caracteristiques-culturelles-population-rgph5_rpgh.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport rédigé par Safiatou Lala Bengaly et Ahamadou Diallo. Annexe, tableau A03 : population résidente par langue maternelle au recensement de 2022. Nous avons additionné les langues mandé de ce tableau : bambara (9 517 339), malinké (1 355 223), sarakolé ou soninké (1 244 629), bozo (269 330), khassonké (209 263), samogo (101 513) et dafing (59 353), soit 12 756 650 personnes. La ligne « Bobo/Bomu » est laissée de côté, car le bomu n'est pas une langue mandé."
       }
-    ]
+    ],
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "MLI",
+          "speakers": 12756650,
+          "source": {
+            "title": "Institut national de la statistique du Mali (2025) – Cinquième recensement général de la population et de l'habitat (RGPH5), Rapport d'analyse des données, thème : caractéristiques culturelles de la population, Bamako, janvier 2025",
+            "url": "https://instat-mali.org/laravel-filemanager/files/shares/rgph/rapport-caracteristiques-culturelles-population-rgph5_rpgh.pdf",
+            "tier": "official",
+            "source_kind": "official_statistics",
+            "notes": "Rapport rédigé par Safiatou Lala Bengaly et Ahamadou Diallo. Annexe, tableau A03 : population résidente par langue maternelle au recensement de 2022. Nous avons additionné les langues mandé de ce tableau : bambara (9 517 339), malinké (1 355 223), sarakolé ou soninké (1 244 629), bozo (269 330), khassonké (209 263), samogo (101 513) et dafing (59 353), soit 12 756 650 personnes. La ligne « Bobo/Bomu » est laissée de côté, car le bomu n'est pas une langue mandé."
+          }
+        },
+        {
+          "country": "CIV",
+          "speakers": 6433783,
+          "source": {
+            "title": "Agence Nationale de la Statistique (ANStat), Côte d'Ivoire (2021) – Recensement Général de la Population et de l'Habitat (RGPH 2021), jeu de données \"Répartition des Ivoiriens par grand groupe ethnique selon le sexe\" (groupe ethnolinguistique Mandé du Nord + Mandé du Sud, agrégat, classification Bouquet)",
+            "url": "https://data.gouv.ci/datasets/repartition-des-ivoiriens-par-grand-groupe-ethnique",
+            "tier": "official",
+            "source_kind": "government",
+            "notes": "Jeu de données publié sur le portail officiel des données ouvertes de Côte d'Ivoire, mis à jour le 11 mars 2026. Il compte des Ivoiriens par grand groupe ethnique, pas des locuteurs. Le chiffre retenu additionne les hommes et les femmes des groupes Mandé du Nord (4 455 058) et Mandé du Sud (1 978 725). La colonne « effectif » du jeu de données donne d'autres valeurs, qui ne correspondent pas à cette somme."
+          }
+        }
+      ]
+    }
   }
 }

@@ -31,6 +31,7 @@ const expected = {
     familyId: "FLG_BANTU",
     role: "non_vehicular",
     vitality: "Threatened",
+    dialects: [],
     peopleLinks: [
       { name: "Luba", peopleId: "PPL_LUBA" },
       { name: "Luba-Katanga", peopleId: "PPL_LUBA_KATANGA" },
@@ -44,16 +45,30 @@ const expected = {
     familyId: "FLG_BANTU",
     role: "non_vehicular",
     vitality: "Vigorous",
+    // The 1925 Otetela-English dictionary says its words are mostly Ewangu.
+    dialects: ["Ewangu"],
     peopleLinks: [{ name: "Tetela", peopleId: "PPL_TETELA" }],
   },
   alz: {
     glottocode: "alur1250",
     nameFr: "Alur",
     nameEn: "Alur",
-    alternateNames: ["Dho Alur", "Aloro"],
+    alternateNames: [
+      "Dho Alur",
+      "Dhu Alur",
+      "Jo Alur",
+      "Aloro",
+      "Alua",
+      "Alulu",
+      "Lur",
+      "Luri",
+    ],
     familyId: "FLG_NILOTIQUE",
-    role: "non_vehicular",
+    // The premium pass (#2013) found no source for the wave-2 guess
+    // "non_vehicular" and declares vehicularRole as a gap instead.
+    role: null,
     vitality: "Developing",
+    dialects: ["Jokot", "Jonam", "Mambisa", "Wanyoro"],
     peopleLinks: [{ name: "Alur", peopleId: "PPL_ALUR" }],
   },
 } as const;
@@ -86,7 +101,7 @@ describe("DRC evidence-prioritized language dossier wave 2", () => {
         peoples: record.peopleLinks,
         content: {
           vehicularRole: record.role,
-          dialects: [],
+          dialects: record.dialects,
           vitalityStatus: {
             status: record.vitality,
             scale: "EGIDS (Ethnologue)",

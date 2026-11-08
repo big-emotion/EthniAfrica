@@ -110,8 +110,11 @@ describe("AFRIK editorial corrections from community review", () => {
         (people) => people.peopleId === "PPL_MINYANKA"
       )
     ).toMatchObject({
+      // The 2022 census (RGPH5, INSTAT, table 2.05) counts the Minianka:
+      // the share is read, not invented, and no headcount is given.
       population: null,
-      percentageInCountry: null,
+      percentageInCountry: 5.35,
+      referenceYear: 2022,
     });
     expect(
       mali.content.demographics.peoples.find(
@@ -193,7 +196,7 @@ describe("AFRIK editorial corrections from community review", () => {
     ).toBe(true);
 
     const beteLanguage = coteDIvoire.content.culture?.mainLanguages?.find(
-      (language) => language.name === "Bété"
+      (language) => language.name === "Bété de Gagnoa"
     );
     expect(beteLanguage?.isoCode).toBe("btg");
 
@@ -363,8 +366,10 @@ describe("AFRIK Zaïre name history", () => {
     expect(ngbande).toContain("qui devient le Zaïre en 1971");
     expect(bakigaRoute).not.toContain("Zaire actuel");
     expect(bakigaRoute).toContain("actuelle République démocratique du Congo");
-    expect(zande).not.toContain("Zaire actuel");
-    expect(zande).toContain("de l'actuelle République démocratique du Congo");
+    // The sourced rewrite of 2026-11-03 dropped the unsourced Bandia sentence
+    // that carried the country's name; what must hold is that the origins
+    // never call the country Zaïre outside 1971-1997.
+    expect(zande).not.toMatch(/Za[iï]re/);
   });
 });
 

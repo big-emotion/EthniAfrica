@@ -172,24 +172,43 @@ describe("peopleChronology", () => {
 describe("countryChronology", () => {
   // @req REQ-148
   it("groups entries sharing a period and a regime, and dates the rest as declared", () => {
-    const { stations } = countryChronology(countryRecord("NAM"), "fr");
+    const country = countryRecord("NAM");
+    const { stations } = countryChronology(country, "fr");
     expect(
       stations.map((station) => [station.regime, station.period, station.title])
     ).toEqual([
-      ["polity", "Préhistorique - présent", "Peuples khoïsan"],
-      ["polity", "Précolonial - présent", "3 entités politiques"],
-      ["colonial", "1884 - 1915", "Colonie allemande du Sud-Ouest africain"],
+      ["polity", "Jusqu'en 1915", "Royaume des Ovakwanyama"],
+      ["polity", "Début du XXe siècle", "Chefferie herero d'Okahandja"],
+      [
+        "polity",
+        "Années 1880 - début du XXe siècle",
+        "Nama et Oorlam du Sud sous Hendrik Witbooi",
+      ],
+      ["colonial", "1884 - 1915", "Sud-Ouest africain allemand"],
       [
         "colonial",
         "1915 - 1990",
-        "Colonie sud-africaine (Afrique du Sud-Ouest)",
+        "Sud-Ouest africain sous administration sud-africaine",
       ],
       ["modern", "Depuis 1990", "République de Namibie"],
     ]);
-    expect(stations[1].entities?.map((entity) => entity.name)).toEqual([
-      "Chefferies Ovambo",
-      "Chefferies Herero",
-      "Chefferies Kavango",
+
+    // The Namibian fiche no longer has two entries on one period, so the
+    // grouping is checked on the same record with three periods made equal.
+    const shared = {
+      ...country,
+      kingdoms: country.kingdoms!.map((kingdom) =>
+        kingdom.entryType === "polity" || !kingdom.entryType
+          ? { ...kingdom, period: "Précolonial - présent" }
+          : kingdom
+      ),
+    };
+    const grouped = countryChronology(shared, "fr").stations;
+    expect(grouped[0].title).toBe("3 entités politiques");
+    expect(grouped[0].entities?.map((entity) => entity.name)).toEqual([
+      "Royaume des Ovakwanyama",
+      "Chefferie herero d'Okahandja",
+      "Nama et Oorlam du Sud sous Hendrik Witbooi",
     ]);
   });
 
@@ -201,9 +220,12 @@ describe("countryChronology", () => {
   // @req REQ-154
   it("gives each colonial and modern station the name the territory carried", () => {
     const { stations } = countryChronology(countryRecord("NAM"), "fr");
-    expect(stations[2].namesAtTheTime).toEqual(["Deutsch-Südwestafrika"]);
-    expect(stations[3].namesAtTheTime).toEqual(["Afrique du Sud-Ouest"]);
-    expect(stations[4].namesAtTheTime).toEqual(["Namibie"]);
+    expect(stations[3].namesAtTheTime).toEqual([
+      "Sud-Ouest africain allemand",
+      "Deutsch-Südwestafrika",
+    ]);
+    expect(stations[4].namesAtTheTime).toEqual(["Sud-Ouest africain"]);
+    expect(stations[5].namesAtTheTime).toEqual(["Namibie"]);
   });
 
   // @req REQ-154
@@ -212,21 +234,19 @@ describe("countryChronology", () => {
     const { stations } = countryChronology(country, "fr");
     const facts = country.historicalFacts!;
     expect(stationText(stations[0])).toContain(facts.ancientPeriods!);
-    expect(stationText(stations[2])).toContain(facts.colonization!);
-    expect(stationText(stations[3])).toContain(facts.independenceStruggle!);
-    expect(stationText(stations[4])).toContain(facts.postIndependence!);
+    expect(stationText(stations[3])).toContain(facts.colonization!);
+    expect(stationText(stations[4])).toContain(facts.independenceStruggle!);
+    expect(stationText(stations[5])).toContain(facts.postIndependence!);
   });
 
   // @req REQ-154
   it("opens on the etymology and never repeats its preview", () => {
     const { etymology } = countryChronology(countryRecord("NAM"), "fr");
     expect(etymology?.preview).toBe(
-      'Le nom "Namibie" viendrait du désert du Namib, qui borde la côte atlantique du pays.'
+      "Le nom Namibie est formé sur Namib, le nom du désert qui longe la côte atlantique du pays."
     );
     expect(etymology?.passages).not.toContain(etymology?.preview);
-    expect(etymology?.passages.join(" ")).toContain(
-      "proposé par les nationalistes namibiens"
-    );
+    expect(etymology?.passages.join(" ")).toContain("Mburumba Kerina");
   });
 
   // The Kong preview used to end on « selon l'historien N. ».

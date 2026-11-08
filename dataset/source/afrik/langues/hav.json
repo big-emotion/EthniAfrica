@@ -20,7 +20,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom kihavu désigne une langue bantoue de la République démocratique du Congo. Il est formé du nom du peuple Havu et du préfixe ki-, qui sert à nommer les langues. Nous n'avons pas trouvé de source qui explique le nom Havu, ni sa plus ancienne trace.",
+    "summary": "Le nom kihavu désigne une langue bantoue de la République démocratique du Congo, parlée notamment sur l'île d'Idjwi, sur le lac Kivu, et à Goma. Il est formé du nom du peuple Havu et du préfixe ki-, qui sert à nommer les langues. Nous n'avons pas trouvé de source qui explique le nom Havu.",
     "names": [
       {
         "nameText": "Kihavu",
@@ -38,7 +38,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom kihavu est formé comme beaucoup de noms de langues bantoues : le préfixe ki- devant le nom du peuple, ici les Havu. Dans les langues kongo, ki- marque ainsi la langue et ba- les membres du groupe, selon Salikoko Mufwene. Glottolog recense les formes Kihavu et Haavu. On ne sait pas avec certitude d'où vient le nom Havu ; la fiche du peuple Havu présente ce peuple.",
+            "statement": "Le nom kihavu est formé comme beaucoup de noms de langues bantoues : le préfixe ki- devant le nom du peuple, ici les Havu. Dans les langues kongo, ki- marque ainsi la langue et ba- les membres du groupe, selon Salikoko Mufwene. Glottolog recense les formes Kihavu et Haavu. La fiche du peuple Havu présente ce peuple.",
             "aspect": "meaning",
             "sources": [
               {
@@ -61,6 +61,27 @@
                 "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse)."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Enquête publiée en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom havu désigne une langue parlée à la fois à Goma, grande ville du Nord-Kivu, et sur l'île d'Idjwi. Selon le résumé du mémoire de Stephanie DeWitt, la langue reste bien transmise sur l'île, mais montre à Goma des signes de recul.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Language Choice Among the Havu of the Democratic Republic of the Congo",
+                "author": "Stephanie DeWitt",
+                "year": 2019,
+                "url": "https://scripture-engagement.org/?p=1425",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "notes": "Mémoire de master, Dallas International University, 2019. Lu le 3 novembre 2026 : seul le résumé, publié en ligne, a été lu. L'enquête a interrogé 120 personnes à Goma et sur l'île d'Idjwi."
+              }
+            ]
           }
         ]
       }
@@ -74,6 +95,7 @@
       "scale": "EGIDS (Ethnologue)",
       "asOf": 2025
     },
+    "originDebated": false,
     "sources": [
       {
         "title": "Glottolog 5.3 — Havu (havu1238)",
@@ -81,13 +103,32 @@
         "tier": "official",
         "source_kind": "linguistic_reference",
         "notes": "Notice directe pour le code ISO 639-3 hav et le glottocode havu1238. Elle situe la langue en République démocratique du Congo, atteste les variantes Haavu et Kihavu et publie le statut EGIDS 6a en 2025. Aucun rôle véhiculaire régional n'est inféré de cette notice."
+      },
+      {
+        "title": "Language Choice Among the Havu of the Democratic Republic of the Congo",
+        "url": "https://scripture-engagement.org/?p=1425",
+        "tier": "unverified",
+        "source_kind": "academic",
+        "notes": "Mémoire de master, Dallas International University, 2019. Lu le 3 novembre 2026 : seul le résumé, publié en ligne, a été lu. L'enquête a interrogé 120 personnes à Goma et sur l'île d'Idjwi."
       }
     ],
     "gaps": [
       {
         "field": "nameHistory.names[0]",
-        "reason": "Nous n'avons pas trouvé de source qui explique le nom Havu, ni sa plus ancienne trace."
+        "reason": "Nous n'avons pas trouvé de source qui explique le nom Havu, ni de document ancien qui l'écrive sous une forme datée."
+      },
+      {
+        "field": "content.dialects",
+        "reason": "Nous n'avons pas trouvé de source qui décrive des dialectes du kihavu."
+      },
+      {
+        "field": "content.speakers.byCountry",
+        "reason": "Nous n'avons pas trouvé de chiffre de locuteurs publié par un recensement ou une étude que nous avons pu lire."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Une langue bantoue de l'est de la RD Congo, parlée sur l'île d'Idjwi, sur le lac Kivu, et à Goma.",
+      "followUp": "D'où vient le nom des Havu ?"
+    }
   }
 }

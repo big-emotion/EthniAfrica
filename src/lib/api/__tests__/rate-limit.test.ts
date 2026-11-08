@@ -171,7 +171,8 @@ describe("getRateLimiter", () => {
     expect(Ratelimit.slidingWindow).toHaveBeenCalledWith(600, "1 m");
     expect(Ratelimit.slidingWindow).toHaveBeenCalledWith(6000, "1 m");
     expect(Ratelimit.slidingWindow).toHaveBeenCalledWith(5, "1 h");
-    expect(Ratelimit.slidingWindow).toHaveBeenCalledTimes(4);
+    // 600 appears twice: the public tier and the agent endpoint's own bucket.
+    expect(Ratelimit.slidingWindow).toHaveBeenCalledTimes(5);
   });
 
   it("reads tier RPMs and window from env vars when set", () => {

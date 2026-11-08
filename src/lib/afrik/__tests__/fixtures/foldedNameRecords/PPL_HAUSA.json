@@ -16,16 +16,17 @@
       "imposedBy": null,
       "impositionPeriod": null,
       "whyProblematic": null,
-      "contemporaryUsage": "Terme employé par les locuteurs eux-mêmes ; « Hausa » (Haoussa en français) est la désignation standard dans toutes les langues d'Afrique de l'Ouest.",
+      "contemporaryUsage": "Le nom Hausawa est celui que se donnent les gens du pays hausa. Il veut dire « ceux qui parlent hausa », selon l'historien Mahdi Adamu. Pour une seule personne, ils disent Bahaushe, écrit Ba haushe par l'anthropologue Guy Nicolas.",
       "sortRank": 0,
       "sources": [
         {
-          "title": "SIL Ethnologue — Hausa (hau)",
-          "author": "SIL International",
-          "year": 2024,
-          "url": "https://www.ethnologue.com/language/hau/",
+          "title": "General History of Africa, IV, ch. 11 : The Hausa and their neighbours in the central Sudan, pp. 266-300",
+          "author": "M. Adamu",
+          "year": 1984,
+          "url": "https://archive.org/details/general-history-of-africa-vol-4",
           "tier": "official",
-          "notes": ""
+          "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise de 1984, lue dans la numérisation d'Internet Archive. Le chapitre a été revu avec une contribution d'André Salifou. Pages 266 à 269 : le pays hausa, les explications de l'origine des Hausa, l'histoire du nom Hausa et du nom Hausawa, les Maguzawa et les Azna.",
+          "source_kind": "intergovernmental"
         },
         {
           "title": "Histoire générale de l'Afrique, IV, ch. 11 : Les Hawsa et leurs voisins du Soudan central",
@@ -33,10 +34,304 @@
           "year": 1985,
           "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
           "tier": "official",
-          "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane. Page 295 : le mot Hawsa désignait d'abord la langue ; les gens du pays hawsa s'appelaient eux-mêmes Hausawa, « ceux qui parlent hawsa »."
+          "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane. Page 295 : le mot Hawsa désignait d'abord la langue ; les gens du pays hawsa s'appelaient eux-mêmes Hausawa, « ceux qui parlent hawsa ».",
+          "source_kind": "intergovernmental"
+        },
+        {
+          "title": "Les catégories d'ethnie et de fraction ethnique au sein du système social hausa, Cahiers d'études africaines, vol. 15, n° 59",
+          "author": "Guy Nicolas",
+          "year": 1975,
+          "url": "https://www.persee.fr/doc/cea_0008-0055_1975_num_15_59_2578",
+          "tier": "referenced",
+          "notes": "Article de revue savante, pages 399 à 441, mis en ligne par Persée. Seule la page 399 a été lue : les noms Hausa, Hausawa et Ba haushe, les graphies haoussa et hawsa, et le nom Hausa donné à tout commerçant.",
+          "source_kind": "academic"
         }
       ],
-      "shortLine": "Le nom que les Haoussa se donnent au pluriel ; ceux qui parlent haoussa."
+      "attestations": [
+        {
+          "formAsWritten": "Ba-Háushe",
+          "year": 1851,
+          "periodLabel": "Voyage de 1851 (récit publié en 1857), à Kano",
+          "attestedBy": "Heinrich Barth",
+          "source": {
+            "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+            "author": "Heinrich Barth",
+            "year": 1857,
+            "url": "https://www.gutenberg.org/ebooks/76317",
+            "tier": "referenced",
+            "notes": "Londres, Longman, 1857 ; récit du voyage de 1849-1855. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg. Page 111 : « Ba-Háushe woman » ; page 163 : « the ba-Háushe and the Kanúri ».",
+            "page": "p. 111"
+          }
+        },
+        {
+          "formAsWritten": "hausawa",
+          "year": 1862,
+          "periodLabel": "Grammaire publiée en 1862",
+          "attestedBy": "James Frederick Schön",
+          "source": {
+            "title": "Grammar of the Hausa Language",
+            "author": "James Frederick Schön",
+            "year": 1862,
+            "url": "https://archive.org/details/grammarofhausal00sch",
+            "tier": "referenced",
+            "notes": "Londres, Church Missionary House, 1862, lu dans la numérisation d'Internet Archive. L'auteur était missionnaire de la Church Missionary Society. Page i : un Hausa se dit « bahause », au pluriel « hausawa ».",
+            "page": "p. i (Prefatory remarks)"
+          }
+        }
+      ],
+      "shortLine": "Ils se nomment Hausawa, « ceux qui parlent hausa » ; pour une seule personne, Bahaushe.",
+      "namedBy": null,
+      "originDebated": false,
+      "usedIn": ["hau"]
+    },
+    {
+      "nameText": "Hausa",
+      "nameType": "exonym",
+      "languageOfOrigin": null,
+      "meaning": "Le nom Hausa désignait d'abord seulement la langue maternelle des habitants du pays hausa, selon l'historien Mahdi Adamu. Comme nom de peuple, il n'apparaît dans les écrits qu'aux XVIe et XVIIe siècles. Avant, on nommait ces gens d'après leur ville ou leur royaume : Kanawa à Kano, Katsinawa à Katsina, Gobirawa au Gobir.",
+      "periodLabel": "Attesté depuis le XIIIe siècle sous une forme proche",
+      "imposedBy": null,
+      "impositionPeriod": null,
+      "whyProblematic": null,
+      "contemporaryUsage": "Le nom Hausa est souvent donné, hors du pays hausa, à n'importe quel commerçant, comme on dit Dyula ailleurs, selon l'anthropologue Guy Nicolas.",
+      "sortRank": 1,
+      "sources": [
+        {
+          "title": "General History of Africa, IV, ch. 11 : The Hausa and their neighbours in the central Sudan, pp. 266-300",
+          "author": "M. Adamu",
+          "year": 1984,
+          "url": "https://archive.org/details/general-history-of-africa-vol-4",
+          "tier": "official",
+          "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition anglaise de 1984, lue dans la numérisation d'Internet Archive. Le chapitre a été revu avec une contribution d'André Salifou. Pages 266 à 269 : le pays hausa, les explications de l'origine des Hausa, l'histoire du nom Hausa et du nom Hausawa, les Maguzawa et les Azna.",
+          "source_kind": "intergovernmental"
+        }
+      ],
+      "attestations": [
+        {
+          "formAsWritten": "Housa",
+          "year": 1820,
+          "periodLabel": "Livre publié en 1820",
+          "attestedBy": "James Grey Jackson",
+          "source": {
+            "title": "An Account of Timbuctoo and Housa, Territories in the Interior of Africa",
+            "author": "El Hage Abd Salam Shabeeny et James Grey Jackson",
+            "year": 1820,
+            "url": "https://www.gutenberg.org/ebooks/22631",
+            "tier": "referenced",
+            "notes": "Londres, Longman, 1820, lu dans l'édition numérique du projet Gutenberg. Jackson, négociant anglais installé au Maroc, publie le récit d'un marchand de Tétouan qui avait vécu deux ans au pays qu'il nomme Housa.",
+            "page": "page de titre"
+          }
+        },
+        {
+          "formAsWritten": "Haussa",
+          "year": 1843,
+          "periodLabel": "Livre publié en 1843",
+          "attestedBy": "James Frederick Schön",
+          "source": {
+            "title": "Vocabulary of the Haussa Language",
+            "author": "James Frederick Schön",
+            "year": 1843,
+            "url": "https://archive.org/details/vocabularyofhau00sch",
+            "tier": "referenced",
+            "notes": "Londres, Church Missionary Society, 1843, lu dans la numérisation d'Internet Archive. L'auteur était missionnaire de la Church Missionary Society.",
+            "page": "page de titre"
+          }
+        },
+        {
+          "formAsWritten": "Háusa",
+          "year": 1851,
+          "periodLabel": "Voyage de 1851 (récit publié en 1857)",
+          "attestedBy": "Heinrich Barth",
+          "source": {
+            "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+            "author": "Heinrich Barth",
+            "year": 1857,
+            "url": "https://www.gutenberg.org/ebooks/76317",
+            "tier": "referenced",
+            "notes": "Londres, Longman, 1857 ; récit du voyage de 1849-1855. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg. Page 69 : titre du chapitre XXIV, « Háusa », et explication du nom.",
+            "page": "p. 69"
+          }
+        }
+      ],
+      "shortLine": "Le nom courant du peuple et de sa langue ; il a d'abord désigné la langue.",
+      "namedBy": null,
+      "originDebated": true
+    },
+    {
+      "nameText": "Haoussa",
+      "nameType": "historical_spelling",
+      "languageOfOrigin": null,
+      "meaning": null,
+      "periodLabel": null,
+      "imposedBy": null,
+      "impositionPeriod": null,
+      "whyProblematic": null,
+      "contemporaryUsage": "Le nom Haoussa est la forme française du nom Hausa, employée dans les travaux africanistes, selon Guy Nicolas.",
+      "sortRank": 2,
+      "sources": [
+        {
+          "title": "Les catégories d'ethnie et de fraction ethnique au sein du système social hausa, Cahiers d'études africaines, vol. 15, n° 59",
+          "author": "Guy Nicolas",
+          "year": 1975,
+          "url": "https://www.persee.fr/doc/cea_0008-0055_1975_num_15_59_2578",
+          "tier": "referenced",
+          "notes": "Article de revue savante, pages 399 à 441, mis en ligne par Persée. Seule la page 399 a été lue : les noms Hausa, Hausawa et Ba haushe, les graphies haoussa et hawsa, et le nom Hausa donné à tout commerçant.",
+          "source_kind": "academic"
+        }
+      ],
+      "attestations": [],
+      "shortLine": "La graphie française du nom Hausa.",
+      "namedBy": null,
+      "originDebated": false
+    },
+    {
+      "nameText": "Hawsa",
+      "nameType": "historical_spelling",
+      "languageOfOrigin": null,
+      "meaning": null,
+      "periodLabel": null,
+      "imposedBy": null,
+      "impositionPeriod": null,
+      "whyProblematic": null,
+      "contemporaryUsage": "Le nom Hawsa est une graphie du nom Hausa employée depuis peu au Niger, selon Guy Nicolas. L'édition française de l'Histoire générale de l'Afrique l'emploie aussi.",
+      "sortRank": 3,
+      "sources": [
+        {
+          "title": "Les catégories d'ethnie et de fraction ethnique au sein du système social hausa, Cahiers d'études africaines, vol. 15, n° 59",
+          "author": "Guy Nicolas",
+          "year": 1975,
+          "url": "https://www.persee.fr/doc/cea_0008-0055_1975_num_15_59_2578",
+          "tier": "referenced",
+          "notes": "Article de revue savante, pages 399 à 441, mis en ligne par Persée. Seule la page 399 a été lue : les noms Hausa, Hausawa et Ba haushe, les graphies haoussa et hawsa, et le nom Hausa donné à tout commerçant.",
+          "source_kind": "academic"
+        },
+        {
+          "title": "Histoire générale de l'Afrique, IV, ch. 11 : Les Hawsa et leurs voisins du Soudan central",
+          "author": "Mahdi Adamu",
+          "year": 1985,
+          "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+          "tier": "official",
+          "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane. Page 295 : le mot Hawsa désignait d'abord la langue ; les gens du pays hawsa s'appelaient eux-mêmes Hausawa, « ceux qui parlent hawsa ».",
+          "source_kind": "intergovernmental"
+        }
+      ],
+      "attestations": [],
+      "shortLine": "Une graphie du nom Hausa employée au Niger.",
+      "namedBy": null,
+      "originDebated": false
+    },
+    {
+      "nameText": "Afunu",
+      "nameType": "exonym",
+      "languageOfOrigin": null,
+      "meaning": null,
+      "periodLabel": null,
+      "imposedBy": null,
+      "impositionPeriod": null,
+      "whyProblematic": null,
+      "contemporaryUsage": "Le nom Afunu est celui que les Kanuri donnent encore aux Hausa, selon le linguiste Neil Skinner. L'auteur égyptien al-Maqrīzī, mort en 1442, l'employait déjà, écrit Afnū.",
+      "sortRank": 4,
+      "sources": [
+        {
+          "title": "The Origin of the Name 'Hausa', Africa, vol. 38, n° 3",
+          "author": "Neil Skinner",
+          "year": 1968,
+          "url": "https://www.cambridge.org/core/journals/africa/article/abs/origin-of-the-name-hausa/1B6D444C319C498A9C63AE509EA7BF2B",
+          "tier": "referenced",
+          "notes": "Revue de l'International African Institute, pages 253 à 257. Seuls l'extrait de la première page et le résumé en français affichés par Cambridge Core ont été lus, pas l'article entier.",
+          "source_kind": "academic"
+        }
+      ],
+      "attestations": [
+        {
+          "formAsWritten": "Afunú",
+          "year": 1387,
+          "periodLabel": "Règne d'ʿOthmán au Kanem (1387-1390), d'après al-Maqrīzī",
+          "attestedBy": "Heinrich Barth",
+          "source": {
+            "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+            "author": "Heinrich Barth",
+            "year": 1857,
+            "url": "https://www.gutenberg.org/ebooks/76317",
+            "tier": "referenced",
+            "notes": "Londres, Longman, 1857 ; récit du voyage de 1849-1855. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg. Pages 640 à 642, tableau chronologique des rois du Bornou : « Háusa, or Afunú » et « the Áfnó (Háusa) province of Kanó ».",
+            "page": "p. 640"
+          }
+        }
+      ],
+      "shortLine": "Le nom que les Kanuri, voisins de l'est, donnent aux Hausa.",
+      "namedBy": "les Kanuri du Bornou",
+      "originDebated": false
+    },
+    {
+      "nameText": "Habe",
+      "nameType": "exonym",
+      "languageOfOrigin": null,
+      "meaning": "Le nom Habe aurait d'abord désigné une seule dynastie de Katsina, puis les vainqueurs fulɓe l'auraient étendu à tout le peuple vaincu, selon Heinrich Barth.",
+      "periodLabel": "Noté au milieu du XIXe siècle",
+      "imposedBy": null,
+      "impositionPeriod": null,
+      "whyProblematic": null,
+      "contemporaryUsage": null,
+      "sortRank": 5,
+      "sources": [
+        {
+          "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+          "author": "Heinrich Barth",
+          "year": 1857,
+          "url": "https://www.gutenberg.org/ebooks/76317",
+          "tier": "referenced",
+          "notes": "Londres, Longman, 1857 ; récit du voyage de 1849-1855. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg. Note 20 de la page 76 : « Hábe », pluriel de « Kádo », nom général donné par les Fulɓe au peuple conquis.",
+          "source_kind": "archive"
+        }
+      ],
+      "attestations": [
+        {
+          "formAsWritten": "Hábe",
+          "year": 1851,
+          "periodLabel": "Voyage de 1851 (récit publié en 1857), à Kano",
+          "attestedBy": "Heinrich Barth",
+          "source": {
+            "title": "Travels and Discoveries in North and Central Africa, vol. 2",
+            "author": "Heinrich Barth",
+            "year": 1857,
+            "url": "https://www.gutenberg.org/ebooks/76317",
+            "tier": "referenced",
+            "notes": "Londres, Longman, 1857 ; récit du voyage de 1849-1855. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg. Page 121 : « Háusa people, or, as they are called by their conquerors, “Hábe,” from the singular “Kádo” ».",
+            "page": "p. 121"
+          }
+        }
+      ],
+      "shortLine": "Le nom que les Fulɓe vainqueurs donnaient aux Hausa ; au singulier, Kado.",
+      "namedBy": "les Fulɓe (Peuls)",
+      "originDebated": false
+    },
+    {
+      "nameText": "Hausa-Fulani",
+      "nameType": "exonym",
+      "languageOfOrigin": null,
+      "meaning": null,
+      "periodLabel": "Usage contemporain",
+      "imposedBy": null,
+      "impositionPeriod": null,
+      "whyProblematic": null,
+      "contemporaryUsage": "Le nom Hausa-Fulani désigne l'un des trois grands groupes du Nigeria, au nord du pays, dans un rapport de l'Agence de l'Union européenne pour l'asile. Le même rapport précise que les Fulɓe des campagnes restent distincts et parlent leur propre langue.",
+      "sortRank": 6,
+      "sources": [
+        {
+          "title": "European Union Agency for Asylum — Nigeria Country Focus",
+          "author": "Agence de l'Union européenne pour l'asile",
+          "year": 2026,
+          "url": "https://www.euaa.europa.eu/nigeria-country-focus/13-demographics",
+          "tier": "official",
+          "notes": "Rapport « Nigeria: Country Focus », janvier 2026, section 1.3 sur la population. Les phrases sur les Hausa-Fulani n'y renvoient à aucune source.",
+          "source_kind": "intergovernmental"
+        }
+      ],
+      "attestations": [],
+      "shortLine": "Un nom qui réunit Hausa et Fulɓe du nord du Nigeria en un seul groupe.",
+      "namedBy": null,
+      "originDebated": false
     }
   ]
 }

@@ -196,7 +196,7 @@ describe("CountryRecordView — the link to the story of its name", () => {
         `${selector} details.ea-fold > summary [data-when="closed"]`
       )?.textContent;
     expect(closedLabel('[data-fiche-section="Histoire"]')).toBe(
-      "+ Voir aussi : 5 entités politiques, Royaume de Kong, Colonie de Côte d'Ivoire, République de Côte d'Ivoire"
+      "+ Voir aussi : Royaume abron du Gyaman, Royaume anyi du Ndenye (Indénié), Royaume anyi du Sanwi, Royaume de Kong, Colonie de Côte d'Ivoire, République de Côte d'Ivoire"
     );
     expect(closedLabel('[data-fiche-section="Culture et société"]')).toBe(
       "+ Voir aussi : Modes de vie, Organisation, Relations, Traditions"

@@ -2,10 +2,10 @@
   "id": "CAF",
   "nameFr": "République centrafricaine",
   "nameEn": "Central African Republic",
-  "nameOfficial": "République centrafricaine (République centrafricaine, Ködörösêse tî Bêafrîka)",
-  "summary": "La République centrafricaine porte un nom purement géographique, adopté à l'indépendance en 1960 ; elle s'appelait auparavant Oubangui-Chari, du nom de deux cours d'eau. Son territoire réunit les chefferies banda, gbaya, ngbande et sango. Le sango, d'abord langue d'échange, y est devenu langue nationale, puis, depuis 1991, langue officielle avec le français.",
-  "etymology": "Le nom \"Centrafrique\" ou \"République centrafricaine\" viendrait de la position géographique du pays au centre de l'Afrique. Le nom a été adopté lors de l'indépendance en 1960. Auparavant, le territoire était appelé \"Oubangui-Chari\" pendant la colonisation française (1903-1960), du nom des deux fleuves principaux (Oubangui et Chari).",
-  "nameOriginActor": "Le nom \"République centrafricaine\" a été adopté lors de l'indépendance (1960) pour remplacer \"Oubangui-Chari\" (nom colonial français). Le nom fait référence à la position géographique du pays au centre de l'Afrique.",
+  "nameOfficial": "République centrafricaine (Ködörösêse tî Bêafrîka)",
+  "summary": "La République centrafricaine doit son nom à un projet de fédération d'Afrique centrale défendu par Barthélemy Boganda : la colonie française d'Oubangui-Chari, nommée d'après deux rivières, prend ce nom le 1er décembre 1958, puis devient indépendante en 1960. Le sango, que parlent près de neuf habitants sur dix, est, depuis 1991, langue officielle avec le français. Dans cette langue, le pays s'appelle Ködörösêse tî Bêafrîka. De 1976 à 1979, il a porté le nom d'Empire centrafricain.",
+  "etymology": "Selon l'historien Elikia M'Bokolo, le nom République centrafricaine, c'est-à-dire « république d'Afrique centrale », était d'abord celui d'une fédération des quatre colonies françaises d'Afrique équatoriale, défendue par Barthélemy Boganda comme un premier pas vers « les États-Unis de l'Afrique latine (ou centrale) ». Ce projet a échoué, et l'Assemblée territoriale de l'Oubangui-Chari a gardé le nom pour son seul territoire le 1er décembre 1958. L'ancien nom, Oubangui-Chari, viendrait de deux rivières : l'Oubangui, dont le bassin couvre les deux tiers du pays, et le Chari, qui coule vers le lac Tchad. En sango, le pays se nomme Bêafrîka. Le dictionnaire de sango de Charles Taber donne au mot bê le sens de « milieu, centre », sans parler du nom du pays.",
+  "nameOriginActor": "Le nom République centrafricaine vient du projet de fédération défendu par Barthélemy Boganda, président du Grand Conseil de l'Afrique équatoriale française, selon Elikia M'Bokolo. L'Assemblée territoriale de l'Oubangui-Chari l'a adopté pour le territoire par une délibération du 1er décembre 1958. Le nom Oubangui-Chari était celui que l'administration coloniale française donnait au territoire depuis un décret du 29 décembre 1903.",
   "nameHistory": {
     "summary": "Le nom République centrafricaine désigne un pays d'Afrique centrale, qui se nomme aussi Bêafrîka en sängö et qu'on abrège souvent en Centrafrique. Le pays a porté d'autres noms : Oubangui-Chari sous la colonisation française, puis Empire centrafricain de 1976 à 1979. Les sources disent peu de chose de l'origine de ces noms ; nous présentons ce qu'elles en disent plus bas.",
     "names": [
@@ -67,7 +67,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom République centrafricaine désigne un pays d'Afrique centrale. Il a d'abord été donné à une fédération des colonies françaises d'Afrique équatoriale, qui ne s'est pas faite et devait s'ouvrir à toute l'Afrique centrale, selon Elikia M'Bokolo. Les sources lues ne disent rien d'autre de son origine.",
+            "statement": "Le nom République centrafricaine désigne un pays d'Afrique centrale. Il a d'abord été donné à une fédération des colonies françaises d'Afrique équatoriale, qui ne s'est pas faite et devait s'ouvrir à toute l'Afrique centrale, selon Elikia M'Bokolo.",
             "aspect": "meaning",
             "sources": [
               {
@@ -141,7 +141,7 @@
               "label": "1er décembre 1958"
             },
             "era": "colonial",
-            "statement": "Le nom République centrafricaine apparaît par écrit dans la délibération de l'Assemblée territoriale de l'Oubangui-Chari du 1er décembre 1958 : l'Oubangui-Chari devient une République « qui s'intitule « République Centrafricaine » ». C'est la plus ancienne trace datée de ce nom que le projet connaît. Le pays existait déjà avant lui, sous le nom d'Oubangui-Chari.",
+            "statement": "Le nom République centrafricaine apparaît par écrit dans la délibération de l'Assemblée territoriale de l'Oubangui-Chari du 1er décembre 1958 : l'Oubangui-Chari devient une République « qui s'intitule « République Centrafricaine » ». C'est la plus ancienne trace datée de ce nom que nous connaissons. Le pays existait déjà avant lui, sous le nom d'Oubangui-Chari.",
             "formAsWritten": "République Centrafricaine",
             "birth": true,
             "sources": [
@@ -263,7 +263,7 @@
               "label": "30 mars 2016"
             },
             "era": "modern",
-            "statement": "Le nom Bêafrîka figure dans le serment que le président prête en sängö, selon l'article 38 de la Constitution de 2016 : le texte sängö parle des « âmôlengê tî Bêafrîka » là où le texte français dit « peuple centrafricain ». C'est la plus ancienne trace écrite de ce nom que le projet connaît ; il n'a pas trouvé de texte plus ancien.",
+            "statement": "Le nom Bêafrîka figure dans le serment que le président prête en sängö, selon l'article 38 de la Constitution de 2016 : le texte sängö parle des « âmôlengê tî Bêafrîka » là où le texte français dit « peuple centrafricain ». C'est la plus ancienne trace écrite de ce nom que nous connaissons.",
             "formAsWritten": "âmôlengê tî Bêafrîka",
             "birth": true,
             "sources": [
@@ -338,7 +338,7 @@
               "label": "4 décembre 1976"
             },
             "era": "modern",
-            "statement": "Le nom Empire centrafricain figure dans la Constitution adoptée le 4 décembre 1976 par le congrès du parti unique, le Mouvement pour l'évolution sociale de l'Afrique noire, et promulguée par décret impérial le même jour. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "statement": "Le nom Empire centrafricain figure dans la Constitution adoptée le 4 décembre 1976 par le congrès du parti unique, le Mouvement pour l'évolution sociale de l'Afrique noire, et promulguée par décret impérial le même jour. C'est la plus ancienne trace de ce nom que nous connaissons.",
             "formAsWritten": "Constitution de l'Empire Centrafricain",
             "birth": true,
             "actors": [
@@ -480,7 +480,7 @@
               "label": "29 décembre 1903"
             },
             "era": "colonial",
-            "statement": "Le nom Oubangui-Chari est celui du territoire que crée un décret du 29 décembre 1903, rattaché au Congo français, selon la Digithèque de l'université de Perpignan. C'est la plus ancienne trace de ce nom que le projet connaît ; il n'a pas lu le décret lui-même.",
+            "statement": "Le nom Oubangui-Chari est celui du territoire que crée un décret du 29 décembre 1903, rattaché au Congo français, selon la Digithèque de l'université de Perpignan. C'est la plus ancienne trace de ce nom que nous connaissons.",
             "birth": true,
             "sources": [
               {
@@ -522,197 +522,187 @@
   },
   "content": {
     "historicalNames": {
-      "formerNames": ["Oubangui-Chari (1903-1960)"],
-      "antiquity": "Le territoire actuel de la RCA était peuplé de diverses sociétés (Banda, Gbaya, Ngbande, Sango, Manja, Aka). Les peuples autochtones avaient leurs propres noms pour leurs territoires.",
-      "middleAges": "Migrations de peuples soudaniques centraux (Banda, Ngbande) et bantous (Gbaya, Sango, Manja). Développement de chefferies locales. Pas de nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Consolidation des chefferies (Banda, Gbaya, Ngbande, Sango, Manja, Aka). Commerce régional. Les Européens utilisaient le terme \"Oubangui-Chari\" pour désigner la région.",
-      "colonization": "1903-1960 : Colonie française de l'Oubangui-Chari (Oubangui-Chari). Les Français ont établi une colonie sur le territoire, nommée d'après les deux fleuves principaux (Oubangui et Chari). Le nom \"Oubangui-Chari\" est officialisé par les Français.",
-      "contemporary": "1960 : Indépendance (13 août 1960), proclamation de la République centrafricaine. Le nom \"République centrafricaine\" est officialisé pour remplacer \"Oubangui-Chari\"."
+      "formerNames": [
+        "Oubangui-Chari (1903-1958)",
+        "Oubangui-Chari-Tchad (1906-1920)",
+        "Empire centrafricain (1976-1979)"
+      ],
+      "antiquity": "Les sources consultées ne donnent aucun nom d'ensemble pour ce territoire dans l'Antiquité. Le recensement de 2003 rappelle seulement que des découvertes archéologiques montrent une présence humaine très ancienne.",
+      "middleAges": "Les sources consultées ne donnent pas non plus de nom d'ensemble pour cette époque. Le recensement de 2003 nomme les peuples qui s'installent alors dans le nord-est, comme les Gula, les Nzakara et les Kreich au XVIe siècle, puis les Yulu, les Kara et les Binga au XVIIe siècle.",
+      "precolonial": "Avant la colonisation, aucun nom ne couvre l'ensemble du pays actuel. Les sultanats fondés à l'est par les Nzakara et les Zandé portent le nom de leurs chefs, comme Bangassou, Rafaï et Zémio, selon le recensement de 2003. En 1894, un décret français parle encore de « la région de l'Oubanghi », rattachée au Congo français.",
+      "colonization": "Le nom Oubangui-Chari apparaît avec le territoire créé par un décret français du 29 décembre 1903. De 1906 à 1920, la colonie s'appelle Oubangui-Chari-Tchad, car le Tchad lui est rattaché ; à partir de 1910, elle fait partie de l'Afrique équatoriale française. Le 1er décembre 1958, l'Assemblée territoriale décide que l'Oubangui-Chari « s'intitule « République Centrafricaine » », du nom de la fédération que voulait Barthélemy Boganda.",
+      "contemporary": "Le pays devient indépendant le 13 août 1960 sous le nom de République centrafricaine. Du 4 décembre 1976 au 20 septembre 1979, il s'appelle Empire centrafricain, puis redevient une république. Aujourd'hui, son nom officiel est République centrafricaine en français et Ködörösêse tî Bêafrîka en sango ; on l'abrège souvent en Centrafrique."
     },
     "kingdoms": [
       {
-        "name": "Chefferies Banda",
-        "period": "Précolonial - présent",
+        "name": "Sultanats nzakara et zandé (Bangassou, Rafaï, Zémio)",
+        "period": "Fin du XVIIIe siècle - période coloniale",
         "entryType": "polity",
-        "dominantPeoples": ["Banda"],
-        "politicalCenters": ["Chefferies traditionnelles"],
-        "historicalRole": "Chefferies Banda, organisation clanique, traditions culturelles."
-      },
-      {
-        "name": "Chefferies Gbaya",
-        "period": "Précolonial - présent",
-        "entryType": "polity",
-        "dominantPeoples": ["Gbaya"],
-        "politicalCenters": ["Chefferies traditionnelles"],
-        "historicalRole": "Chefferies Gbaya, organisation clanique, traditions culturelles, résistance à la colonisation française."
-      },
-      {
-        "name": "Chefferies Ngbande",
-        "period": "Précolonial - présent",
-        "entryType": "polity",
-        "dominantPeoples": ["Ngbande"],
-        "politicalCenters": ["Chefferies traditionnelles"],
-        "historicalRole": "Chefferies Ngbande, organisation clanique, traditions culturelles."
-      },
-      {
-        "name": "Chefferies Sango",
-        "period": "Précolonial - présent",
-        "entryType": "polity",
-        "dominantPeoples": ["Sango"],
-        "politicalCenters": ["Chefferies traditionnelles"],
-        "historicalRole": "Chefferies Sango, développement du sango comme langue véhiculaire."
-      },
-      {
-        "name": "Peuples Aka",
-        "period": "Préhistorique - présent",
-        "entryType": "polity",
-        "dominantPeoples": ["Aka (Pygmées)"],
-        "politicalCenters": ["Groupes nomades et semi-nomades"],
-        "historicalRole": "Peuples autochtones de la RCA, chasseurs-cueilleurs, traditions forestières, marginalisation historique."
+        "dominantPeoples": ["Nzakara", "Zandé"],
+        "politicalCenters": ["Bangassou", "Rafaï", "Zémio"],
+        "historicalRole": "Venus de l'est vers la fin du XVIIIe siècle, les Nzakara et les Zandé fondent dans l'extrême est du pays de véritables sultanats, qui portent le nom de leurs chefs, selon le rapport du recensement de 2003. Les sources consultées ne donnent pas la date de leur fin."
       },
       {
         "name": "Colonie française de l'Oubangui-Chari",
-        "period": "1903 - 1960",
+        "period": "1903 - 1958",
         "entryType": "colonial",
         "timeRange": {
           "startYear": 1903,
-          "endYear": 1960,
+          "endYear": 1958,
           "precision": "year"
         },
         "dominantPeoples": [
-          "Tous les peuples centrafricains sous domination coloniale française"
+          "Peuples de l'Oubangui-Chari, sous domination française"
         ],
-        "politicalCenters": ["Bangui (capitale coloniale)"],
-        "historicalRole": "Colonisation française, résistance des peuples autochtones (notamment résistance des Gbaya), développement de l'administration coloniale, mouvements nationalistes (XXe siècle)."
+        "politicalCenters": ["Bangui"],
+        "historicalRole": "Le territoire de l'Oubangui-Chari naît d'un décret du 29 décembre 1903 ; il est uni au Tchad de 1906 à 1920 et entre dans l'Afrique équatoriale française en 1910. Le territoire est livré à des sociétés privées qui imposent le travail forcé, selon Jacques Leclerc. De 1928 à 1931, la guerre du Kongo Wara soulève les Gbaya de l'ouest. Le 1er décembre 1958, la colonie devient la République centrafricaine."
+      },
+      {
+        "name": "Empire centrafricain",
+        "period": "1976 - 1979",
+        "entryType": "modern",
+        "timeRange": {
+          "startYear": 1976,
+          "endYear": 1979,
+          "precision": "year"
+        },
+        "dominantPeoples": ["Tous les peuples de Centrafrique"],
+        "politicalCenters": ["Bangui"],
+        "historicalRole": "Le 4 décembre 1976, un congrès du parti unique, le Mouvement pour l'évolution sociale de l'Afrique noire (MESAN), proclame l'Empire centrafricain, avec Jean-Bedel Bokassa pour empereur. L'empire prend fin le 20 septembre 1979, après une intervention militaire française, l'opération Barracuda, selon Jacques Leclerc."
       }
     ],
     "majorPeoples": [
       {
-        "name": "Banda",
-        "selfAppellation": "Banda",
-        "exonyms": ["Banda (terme utilisé par les Européens)"],
-        "peopleId": "PPL_BANDA",
-        "mainRegion": "Centre et est de la RCA",
-        "languages": ["Banda (bpd", "ISO 639-3)", "sango", "français"],
-        "languageFamily": "FLG_SOUDANIQUECENTRAL",
-        "appellationRemarks": "\"Banda\" est l'auto-appellation. Pas de terme péjoratif connu. Groupe soudanique central majoritaire."
-      },
-      {
         "name": "Gbaya",
         "selfAppellation": "Gbaya",
-        "exonyms": [
-          "Gbaya (terme utilisé par les Européens)",
-          "\"Gbaya-Manza-Ngbaka\" (groupe linguistique)"
-        ],
+        "exonyms": ["Baya"],
         "peopleId": "PPL_GBAYA",
-        "mainRegion": "Ouest de la RCA",
-        "languages": ["Gbaya (gya", "ISO 639-3)", "sango", "français"],
-        "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Gbaya\" est l'auto-appellation. Pas de terme péjoratif connu. Groupe oubanguien, résistance à la colonisation française."
+        "mainRegion": "Ouest et nord-ouest (Nana-Mambéré, Mambéré-Kadéï, Ouham)",
+        "languages": ["gbaya (gya)", "sango (sag)", "français (fra)"],
+        "languageFamily": "FLG_NIGERCONGO",
+        "appellationRemarks": "Au recensement de 2003, le nom Gbaya regroupe une vingtaine de peuples apparentés, dont les Kara, les Lay et les Suma. C'est le groupe le plus nombreux du pays. Glottolog classe la langue gbaya dans le groupe gbaya-manza-ngbaka."
       },
       {
-        "name": "Ngbande",
-        "selfAppellation": "Ngbande",
-        "exonyms": ["Ngbande (terme utilisé par les Européens)"],
+        "name": "Banda",
+        "selfAppellation": "Banda",
+        "exonyms": [],
+        "peopleId": "PPL_BANDA",
+        "mainRegion": "Centre et est (Ouaka, Basse-Kotto, Haute-Kotto)",
+        "languages": ["banda-banda (bpd)", "sango (sag)", "français (fra)"],
+        "languageFamily": "FLG_NIGERCONGO",
+        "appellationRemarks": "Au recensement de 2003, le nom Banda regroupe une vingtaine de peuples, dont les Yakpa, les Langbassi, les Togbo et les Ngao. Glottolog classe les langues banda parmi les langues oubanguiennes."
+      },
+      {
+        "name": "Mandja",
+        "selfAppellation": "Mandja",
+        "exonyms": [],
+        "peopleId": "PPL_MANJA",
+        "mainRegion": "Centre (Kémo, Nana-Gribizi)",
+        "languages": ["manza (mzv)", "sango (sag)", "français (fra)"],
+        "languageFamily": "FLG_NIGERCONGO",
+        "appellationRemarks": "Le recensement de 2003 écrit Mandja et range dans ce groupe les Ngbaka-Mandja et les Ali. Glottolog nomme la langue Manza et la classe dans le groupe gbaya-manza-ngbaka."
+      },
+      {
+        "name": "Ngbandi",
+        "selfAppellation": "Ngbandi",
+        "exonyms": ["Yakoma-Sango"],
         "peopleId": "PPL_NGBANDE",
-        "mainRegion": "Sud-ouest de la RCA",
-        "languages": ["Ngbande (ngb", "ISO 639-3)", "sango", "français"],
-        "languageFamily": "FLG_SOUDANIQUECENTRAL",
-        "appellationRemarks": "\"Ngbande\" est l'auto-appellation. Pas de terme péjoratif connu."
+        "mainRegion": "Rives de l'Oubangui, au sud (Mbomou, Bangui)",
+        "languages": ["ngbandi (ngb)", "sango (sag)", "français (fra)"],
+        "languageFamily": "FLG_NIGERCONGO",
+        "appellationRemarks": "Le recensement de 1988 appelait ce groupe Yakoma-Sango ; celui de 2003 lui préfère le nom Ngbandi et y range les Yakoma, les Sango, les Mbangui et les Dendi, des pêcheurs et commerçants des rives de l'Oubangui."
       },
       {
         "name": "Sango",
         "selfAppellation": "Sango",
-        "exonyms": ["Sango (terme utilisé par les Européens)"],
+        "exonyms": ["Sangho"],
         "peopleId": "PPL_SANGO_SCT",
-        "mainRegion": "Toutes les régions de la RCA",
-        "languages": [
-          "Sango (sag",
-          "ISO 639-3",
-          "langue véhiculaire)",
-          "français"
-        ],
-        "languageFamily": "FLG_SOUDANIQUECENTRAL",
-        "appellationRemarks": "\"Sango\" est l'auto-appellation. Pas de terme péjoratif connu. Le sango est une langue véhiculaire importante en RCA, parlée par la majorité de la population."
+        "mainRegion": "Rives de l'Oubangui, au sud",
+        "languages": ["sango (sag)", "français (fra)"],
+        "languageFamily": "FLG_NIGERCONGO",
+        "appellationRemarks": "Les Sango font partie du groupe ngbandi dans le recensement de 2003. Leur nom est aussi celui de la langue nationale, le sango, parlé par 87,5 % des Centrafricains. Selon William J. Samarin, cette langue commune est née à la période coloniale ; selon Marcel Diki-Kidiri, elle servait déjà d'échange sous le nom de dendi avant l'arrivée des Européens."
       },
       {
-        "name": "Manja",
-        "selfAppellation": "Manja",
-        "exonyms": ["Manja (terme utilisé par les Européens)"],
-        "peopleId": "PPL_MANJA",
-        "mainRegion": "Centre de la RCA",
-        "languages": ["Manja (mzv", "ISO 639-3)", "sango", "français"],
-        "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Manja\" est l'auto-appellation. Pas de terme péjoratif connu."
+        "name": "Sara",
+        "selfAppellation": "Sara",
+        "exonyms": [],
+        "peopleId": "PPL_SARA",
+        "mainRegion": "Nord, le long de la frontière avec le Tchad (Vakaga, Bamingui-Bangoran)",
+        "languages": ["sango (sag)", "français (fra)"],
+        "languageFamily": null,
+        "appellationRemarks": "Au recensement de 2003, le nom Sara regroupe des peuples variés, dont les Kaba, les Runga, les Gula, les Yulu et les Kresh. Certains sont apparentés à des peuples du Tchad et du Soudan, selon le rapport."
+      },
+      {
+        "name": "Zandé",
+        "selfAppellation": "Azande",
+        "exonyms": [],
+        "peopleId": "PPL_ZANDE",
+        "mainRegion": "Sud-est (Haut-Mbomou, Mbomou)",
+        "languages": ["zandé (zne)", "sango (sag)", "français (fra)"],
+        "languageFamily": "FLG_NIGERCONGO",
+        "appellationRemarks": "Le recensement de 2003 réunit les Zandé et les Nzakara dans un même groupe, qui forme 87,5 % de la population du Haut-Mbomou. Glottolog classe le zandé dans le groupe zandé-nzakara des langues oubanguiennes."
       },
       {
         "name": "Aka",
-        "selfAppellation": "Aka",
-        "exonyms": [
-          "\"Aka\" (auto-appellation)",
-          "\"Pygmées\" (terme colonial",
-          "peut être problématique)",
-          "\"Baaka\" (variante)"
-        ],
+        "selfAppellation": "BaAka",
+        "exonyms": ["Babinga", "Pygmées"],
         "peopleId": "PPL_AKA",
-        "mainRegion": "Sud-ouest de la RCA (forêts)",
-        "languages": ["Aka (akf", "ISO 639-3)", "sango", "français"],
+        "mainRegion": "Forêts du sud-ouest",
+        "languages": ["aka (axk)", "sango (sag)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Aka\" est l'auto-appellation. \"Pygmées\" est un terme colonial qui peut être problématique dans certains contextes. Chasseurs-cueilleurs, peuples autochtones de la RCA, marginalisation historique."
-      },
-      {
-        "name": "Autres peuples",
-        "selfAppellation": "Variées selon les groupes",
-        "exonyms": ["Variées selon les groupes"],
-        "mainRegion": "Diverses régions de la RCA",
-        "languages": ["Langues diverses", "sango", "français"],
-        "appellationRemarks": "Chaque groupe a sa propre auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "L'UNESCO parle des « Pygmées Aka » qui vivent dans le sud-ouest du pays ; Jacques Leclerc emploie le nom Babinga. Le recensement de 2003 les range dans le groupe Ngbaka-Bantou. Glottolog nomme leur langue Yaka et donne Aka parmi ses autres noms."
       }
     ],
     "culture": {
       "mainLanguages": [
         {
-          "name": "Français",
+          "name": "français",
           "isoCode": "fra",
           "isPrimary": true
         },
         {
-          "name": "sango"
-        },
-        {
-          "name": "banda",
-          "isoCode": "bpd"
+          "name": "sango",
+          "isoCode": "sag",
+          "isPrimary": true
         },
         {
           "name": "gbaya",
           "isoCode": "gya"
         },
         {
-          "name": "ngbande",
-          "isoCode": "ngb"
+          "name": "banda-banda",
+          "isoCode": "bpd"
         },
         {
-          "name": "manja",
+          "name": "manza",
           "isoCode": "mzv"
         },
         {
+          "name": "ngbandi",
+          "isoCode": "ngb"
+        },
+        {
+          "name": "zandé",
+          "isoCode": "zne"
+        },
+        {
           "name": "aka",
-          "isoCode": "akf"
+          "isoCode": "axk"
         }
       ],
-      "culturalTraditions": "Diversité culturelle importante reflétant la mosaïque ethnique de la RCA. Traditions soudaniques centrales (Banda, Ngbande) : masques, sculptures, musiques traditionnelles, danses traditionnelles. Traditions oubanguiennes (Gbaya, Sango, Manja) : masques, sculptures, musiques traditionnelles, danses traditionnelles. Traditions aka (Pygmées) : chasse-cueillette, traditions forestières, musiques polyrythmiques, danses traditionnelles. Musique et danse traditionnelles variées. Cérémonies de passage, rites d'initiation, fêtes traditionnelles. L'art centrafricain est réputé (masques, sculptures).",
-      "dominantReligions": "Christianisme (catholicisme majoritaire, protestantisme, églises indépendantes africaines), islam (minorité, nord), religions traditionnelles africaines (syncrétisme fréquent, culte des ancêtres, masques, rituels)",
-      "lifestyles": "Agriculture (manioc, millet, sorgho, cultures vivrières), chasse-cueillette (Aka, forêts), élevage (bovins, caprins), commerce et activités urbaines (zones urbaines, Bangui). Urbanisation modérée. Économie basée sur l'agriculture, l'exploitation minière (diamants, or, uranium), et le commerce. La RCA est l'un des pays les plus pauvres d'Afrique, avec des défis de développement importants et des conflits récurrents.",
-      "socialOrganization": "Organisation en chefferies traditionnelles (Banda, Gbaya, Ngbande, Sango, Manja), structures claniques patrilinéaires (majorité des groupes). Importance des lignages et des familles étendues. Rôle des conseils d'anciens. Traditions d'initiation et de passage à l'âge adulte. Système patrilinéaire (majorité des groupes). Groupes nomades et semi-nomades (Aka, chasseurs-cueilleurs).",
-      "regionalRelations": "Relations historiques avec le Tchad (commerce, migrations, peuples transfrontaliers, frontière), le Soudan (commerce, frontière), le Soudan du Sud (commerce, frontière), la RDC (commerce, frontière), le Congo (commerce, frontière), le Cameroun (commerce, frontière). Intégration dans la CEMAC (Communauté économique et monétaire de l'Afrique centrale). Relations commerciales et culturelles transfrontalières. La RCA est un pays de transit pour le commerce régional."
+      "culturalTraditions": "Le sango, langue commune du pays, est parlé par 87,5 % des habitants selon le recensement de 2003, à côté de plus de 74 groupes de langues locales. Les Aka, qui vivent dans les forêts du sud-ouest, chantent une polyphonie à quatre voix, accompagnée notamment du tambour enzeko et de l'arc à une corde mbela. Ce chant accompagne l'installation d'un nouveau campement, la chasse et les funérailles ; l'UNESCO l'a inscrit en 2008 sur sa Liste représentative du patrimoine culturel immatériel. Chez les Gbaya, les adolescents passent par une initiation appelée Labi, selon l'historien Léonidas Bateranzigo.",
+      "dominantReligions": "Au recensement de 2003, 51,4 % des habitants se disent protestants, 28,9 % catholiques et 10,1 % musulmans. Les autres religions, où le rapport range « les sectes et les animistes », réunissent 4,5 % de la population, et 3,6 % se disent sans religion. Le groupe arabe-peul est musulman à 92 %, alors que les catholiques sont les plus nombreux chez les Ngbaka-Bantou. Jacques Leclerc donne une autre estimation, sans date ni source : environ 60 % d'animistes, 35 % de chrétiens et 5 % de musulmans.",
+      "lifestyles": "En 2003, 73,8 % des actifs occupés sont agriculteurs, éleveurs ou forestiers, et la branche qui réunit l'agriculture, la pêche et la forêt emploie 78,6 % d'entre eux, selon le recensement. La même année, 36,8 % des habitants vivent en ville, surtout à Bangui, la capitale. Dans l'ouest, les éleveurs peuls sont nombreux dans la Nana-Mambéré et la Mambéré-Kadéï. Dans les forêts du sud-ouest, les Aka vivent de la chasse, que la déforestation rend plus difficile, selon l'UNESCO.",
+      "socialOrganization": "La Centrafrique compte une centaine d'ethnies déclarées, que le recensement de 2003 regroupe en onze grands groupes selon leurs affinités. La question de l'ethnie y est sensible : un décret de 1966 interdisait « toute mention » de « race, de tribu ou d'ethnie » dans les actes officiels, et le recensement de 1975 ne l'a pas posée. En 2003, 98,2 % des habitants ont pourtant déclaré leur ethnie. Chaque groupe reste plus nombreux dans sa région d'origine, mais Bangui mêle tous les groupes.",
+      "regionalRelations": "La Centrafrique n'a pas d'accès à la mer. Elle a pour voisins le Tchad, le Cameroun, le Soudan, le Soudan du Sud, le Congo et la République démocratique du Congo. De 1906 à 1920, l'Oubangui-Chari et le Tchad ont formé une seule colonie. Plusieurs peuples vivent des deux côtés des frontières : les Gbaya sont aussi au Cameroun, où la guerre du Kongo Wara s'est étendue en 1928, et certains peuples du groupe sara sont apparentés à ceux du Tchad et du Soudan. Les Peuls sont arrivés vers les années 1920, selon le recensement, et certains viendraient du Cameroun voisin. Le sango se parle aussi dans le sud du Tchad et en République démocratique du Congo."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement initial par les peuples soudaniques centraux (Banda, Ngbande) et bantous (Gbaya, Sango, Manja). Présence des peuples Aka (Pygmées) depuis la préhistoire. Développement de chefferies locales.",
-      "middleAges": "Migrations de peuples soudaniques centraux et bantous. Développement de structures politiques locales. Commerce régional.",
-      "precolonial": "Consolidation des chefferies (Banda, Gbaya, Ngbande, Sango, Manja). Commerce régional. Développement des traditions culturelles. Développement du sango comme langue véhiculaire.",
-      "colonization": "1903-1960 : Colonie française de l'Oubangui-Chari. Résistance des peuples autochtones (notamment résistance des Gbaya). Développement de l'administration coloniale. XXe siècle : Développement du mouvement indépendantiste.",
-      "independenceStruggle": "1950s-1960 : Mouvement pour l'indépendance, Barthélemy Boganda, indépendance (13 août 1960), proclamation de la République centrafricaine. David Dacko devient premier président.",
-      "postIndependence": "République centrafricaine (1960), présidence de David Dacko (1960-1966, 1979-1981), dictature de Jean-Bédel Bokassa (1966-1979, empire centrafricain, 1976-1979), coups d'État (1979, 1981, 2003, 2013), présidence d'André Kolingba (1981-1993), Ange-Félix Patassé (1993-2003), François Bozizé (2003-2013), Michel Djotodia (2013-2014), Catherine Samba-Panza (2014-2016), Faustin-Archange Touadéra (depuis 2016). Conflits récurrents (guerres civiles, 2012-2013, 2013-2014, 2014-présent), instabilité politique, violences intercommunautaires. Défis : pauvreté, développement économique, sécurité (conflits récurrents, groupes armés), VIH/sida. La RCA est l'un des pays les plus pauvres d'Afrique, avec des défis de développement importants et des conflits récurrents."
+      "ancientPeriods": "Des découvertes archéologiques montrent que des hommes vivaient sur ce territoire bien avant les grandes migrations, selon le rapport du recensement de 2003. Ce même rapport présente les proto-Bantous, ancêtres des peuples de langue bantoue, comme les premiers arrivants, « à tort ou à raison », dans le millénaire qui précède notre ère, surtout dans la forêt du sud. Un autre rapport du même recensement présente les pygmées comme les premiers habitants du pays, installés dans la forêt depuis des siècles.",
+      "middleAges": "Selon le rapport du recensement de 2003, les Gula, des Oubanguiens, les Nzakara et les Kreich s'installent dans le nord-est au XVIe siècle, puis les Yulu, les Kara et les Binga au XVIIe siècle. Certains peuples seraient venus de la vallée du Nil, du Soudan, de la région des Grands Lacs ou du Sahel, d'autres du nord du Cameroun.",
+      "precolonial": "Au XIXe siècle, les Banda, venus du Darfour, avancent vers le sud-ouest, et les Gbaya quittent l'Adamaoua devant les attaques des Peuls de Ngaoundéré, selon le recensement de 2003. Les Nzakara et les Zandé, arrivés de l'est vers la fin du XVIIIe siècle, fondent les sultanats de Bangassou, Rafaï et Zémio. Le pays banda subit les razzias d'esclaves venues du Bahr el-Ghazal, selon Jacques Leclerc, et l'est du pays est ravagé de 1870 à 1911 par les guerres de Rabah et de Sénoussi. L'origine du sango est discutée : pour Marcel Diki-Kidiri, il servait déjà de langue d'échange le long de l'Oubangui sous le nom de dendi ; pour William J. Samarin, il naît à la fin du XIXe siècle, avec la colonisation.",
+      "colonization": "La France installe un poste à Bangui en 1889, puis crée le territoire de l'Oubangui-Chari en 1903, qui entre dans l'Afrique équatoriale française en 1910. Le territoire est confié à des sociétés privées qui imposent le travail forcé, selon Jacques Leclerc ; pour y échapper, des villages fuient, et d'autres sont regroupés le long des pistes de portage, selon le recensement de 2003. Vers 1924, un Gbaya des environs de Bouar, Karnou, prêche une résistance non violente à la colonisation. Son nom voudrait dire « celui qui peut rouler la terre comme une natte », selon l'historien Léonidas Bateranzigo. L'insurrection éclate en 1928 ; Karnou est tué par les troupes coloniales le 11 décembre 1928, mais cette guerre du Kongo Wara, la « guerre des manches de houe », dure par endroits jusqu'en 1931.",
+      "independenceStruggle": "Barthélemy Boganda (1910-1959) fonde en 1949 le Mouvement pour l'évolution sociale de l'Afrique noire (MESAN), selon Jacques Leclerc. Président du Grand Conseil de l'Afrique équatoriale française, il défend une fédération des quatre colonies françaises de la région, appelée République centrafricaine, mais le projet échoue, selon Elikia M'Bokolo. Le 1er décembre 1958, l'Oubangui-Chari prend seul ce nom. Boganda meurt dans un accident d'avion le 29 mars 1959. David Dacko proclame l'indépendance le 13 août 1960.",
+      "postIndependence": "David Dacko devient le premier président. Le sango devient langue nationale en 1963 au congrès du MESAN, selon le recensement de 2003, ou par la Constitution de 1964, selon Jacques Leclerc. En 1965, le colonel Jean-Bedel Bokassa renverse Dacko ; il proclame l'Empire centrafricain le 4 décembre 1976, qui tombe le 20 septembre 1979 après l'opération militaire française Barracuda. Dacko revient au pouvoir, puis le général André Kolingba le remplace. La loi du 8 mars 1991 fait du sango une langue officielle avec le français. En 1993, Ange-Félix Patassé est élu président. Le pays connaît des mutineries et des rébellions armées de 1996 à 2003, et François Bozizé prend Bangui le 15 mars 2003. Le 24 mars 2013, la coalition armée Séléka renverse Bozizé ; Michel Djotodia prête serment comme chef de l'État de la transition le 18 août 2013, selon les Nations unies. Le 10 avril 2014, le Conseil de sécurité autorise une mission de maintien de la paix, la MINUSCA, installée à Bangui."
     },
     "sources": [
       {
@@ -720,7 +710,7 @@
         "url": "https://axl.cefan.ulaval.ca/afrique/centrafrique.htm",
         "tier": "referenced",
         "source_kind": "linguistic_reference",
-        "notes": "La loi n°91/003 du 8 mars 1991 proclame que « les langues officielles sont le sango et le français » (§ 3.2). Le texte de la loi lui-même n'a pas été lu ; l'article premier de la Constitution du 30 août 2023, déjà cité, confirme le statut actuel."
+        "notes": "Page de l'Université Laval mise à jour le 19 mai 2026. Elle cite la loi n° 91/003 du 8 mars 1991, selon laquelle « les langues officielles sont le sango et le français » ; le texte de la loi lui-même n'a pas été consulté. Elle décrit le sango comme une langue « dérivée du ngbandi », parlée comme langue commune par presque toute la population. Elle raconte la traite des esclaves au XIXe siècle « dans le pays banda soumis aux expéditions des Arabes du Bahr el Ghazal », le travail forcé imposé par les sociétés privées, la guerre du Kongo-Wara (« guerre des manches de houes ») jusqu'en 1931, Barthélemy Boganda (1910-1959), fondateur du MESAN en 1949, mort dans un accident d'avion le 29 mars 1959, l'indépendance proclamée par David Dacko le 13 août 1960, la Constitution de 1964 qui fait du sango la « langue nationale », le coup d'État de Jean-Bedel Bokassa en 1965, l'Empire proclamé le 4 décembre 1976 et renversé par l'opération Barracuda le 20 septembre 1979, le retour de Dacko, son remplacement par André Kolingba, l'élection d'Ange-Félix Patassé en 1993 et la prise de Bangui par François Bozizé le 15 mars 2003. Elle donne aussi, sans source ni date, la répartition religieuse suivante : environ 60 % d'animistes, 35 % de chrétiens et 5 % de musulmans."
       },
       {
         "title": "ONU – World Population Prospects 2025",
@@ -766,7 +756,215 @@
         "title": "UNFPA – World Population Dashboard — République centrafricaine",
         "url": "https://www.unfpa.org/data/world-population/CF",
         "tier": "official",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": "Tableau de bord du Fonds des Nations unies pour la population, consulté le 3 novembre 2026 : « Total Population (2025): 5,500,000 »."
+      },
+      {
+        "title": "Troisième recensement général de la population et de l'habitation de 2003 : les caractéristiques socioculturelles de la population centrafricaine",
+        "author": "Faustin Yangoupandé, Bureau central du recensement, ministère du Plan de la République centrafricaine",
+        "year": 2005,
+        "url": "https://icasees.org/nada/index.php/catalog/40/related-materials",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport d'analyse du recensement de 2003, publié à Bangui en juin 2005 et diffusé par l'Institut centrafricain des statistiques et des études économiques et sociales (ICASEES) dans le lot « Rapports RGPH 2003 ». Le rapport regroupe une centaine d'ethnies déclarées en onze groupes : Gbaya 28,8 %, Banda 22,9 %, Mandja 9,9 %, Sara 7,9 %, Ngbaka-Bantou 7,9 %, Arabe-Peul 6,0 %, Mboum 6,0 %, Ngbandi 5,5 %, Zandé-Nzakara 3,0 %, autres ethnies locales 2,0 %, ethnies non centrafricaines 0,1 % (tableau soc 6.1, p. 18). Le groupe Ngbandi comprend « les Yakoma, Sango, Mbangui et Dendi » et s'appelait Yakoma-Sango au recensement de 1988 ; le groupe Ngbaka-Bantou comprend notamment les Aka (p. 16). Un décret de 1966 interdisait toute mention « de race, de tribu ou d'ethnie » dans les actes officiels, et le recensement de 1975 n'a pas posé la question (p. 9). Le sango est parlé par 87,5 % des Centrafricains ; il devient langue nationale au congrès du MESAN de 1963 (p. ii et 10). Religions déclarées : protestants 51,4 %, catholiques 28,9 %, islam 10,1 %, autres religions 4,5 %, sans religion 3,6 % (tableau soc 6.13, p. 35). Le groupe arabe-peul pratique l'islam à 92 %, et les Ngbaka-Bantou sont seuls à compter plus de catholiques (51 %) que de protestants (p. 37-38). Le peuplement se serait achevé « vers les années 1920 avec l'arrivée des Peuhls » (p. 9). Partie citée : p. ii, 9-10, 16-19 et 35-38."
+      },
+      {
+        "title": "Troisième recensement général de la population et de l'habitation de 2003 : structure et répartition spatiale de la population",
+        "author": "Direction générale de la statistique, des études économiques et sociales, Bureau central du recensement (République centrafricaine)",
+        "year": 2005,
+        "url": "https://icasees.org/nada/index.php/catalog/40/related-materials",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport d'analyse du recensement de 2003, publié à Bangui le 30 juin 2005 et diffusé par l'ICASEES dans le lot « Rapports RGPH 2003 ». Population résidente : 3 895 139 habitants, dont 36,8 % en ville (p. 8 et 35). Le pays a pour voisins le Tchad, le Cameroun, le Soudan, le Congo et la République démocratique du Congo (p. 17). Le contexte historique (p. 18) présente les pygmées comme « premiers habitants du pays », la venue des Banda depuis le Darfour et celle des Gbaya depuis l'Adamaoua au XIXe siècle, les sultanats nzakara et zandé « qui portent les noms de leurs chefs tels que : Bangassou, Rafaï, Zémio », l'est du pays « ravagé entre 1870 et 1911 par les guerres menées par Rabah et Sénoussi », et, au XXe siècle, la fuite devant le travail forcé et le regroupement des villages le long des pistes de portage. Le rapport signale aussi des mutineries et rébellions armées entre 1996 et 2003. Partie citée : p. 8, 17-18 et 35."
+      },
+      {
+        "title": "Troisième recensement général de la population et de l'habitation de 2003 : rapport de synthèse des résultats",
+        "author": "Ministère de l'Économie, du Plan et de la Coopération internationale (République centrafricaine)",
+        "year": 2005,
+        "url": "https://icasees.org/nada/index.php/catalog/40/related-materials",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport publié à Bangui en juin 2005 et diffusé par l'ICASEES dans le lot « Rapports RGPH 2003 ». Le tableau par préfecture montre où vit chaque groupe : les Gbaya font 76,1 % de la Nana-Mambéré et 74,7 % de la Mambéré-Kadéï, les Banda 83,4 % de la Ouaka, les Mandja 57,0 % de la Kémo, les Sara 83,9 % de la Vakaga, les Zandé-Nzakara 87,5 % du Haut-Mbomou et les Ngbandi 36,6 % du Mbomou. Le rapport rappelle que la loi n° 91/003 du 8 mars 1991 fait du sango la langue nationale et la seconde langue officielle, et qu'il est parlé par 87,5 % des Centrafricains. Partie citée : p. 16-17."
+      },
+      {
+        "title": "Troisième recensement général de la population et de l'habitation de 2003 : caractéristiques économiques de la population de Centrafrique",
+        "author": "Direction générale de la statistique, des études économiques et sociales, Bureau central du recensement (République centrafricaine)",
+        "year": 2005,
+        "url": "https://icasees.org/nada/index.php/catalog/40/related-materials",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport publié à Bangui le 30 juin 2005 et diffusé par l'ICASEES dans le lot « Rapports RGPH 2003 ». En décembre 2003, 73,8 % des actifs occupés sont agriculteurs, éleveurs ou forestiers (p. 21), et la branche qui réunit l'agriculture, la pêche et la forêt emploie 78,6 % des actifs occupés (p. 24). Partie citée : p. 21 et 24."
+      },
+      {
+        "title": "Toponymic Fact File: Central African Republic",
+        "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+        "year": 2023,
+        "url": "https://assets.publishing.service.gov.uk/media/654cff3dc0e068000e1b2d03/Central_African_Republic_Toponymic_Factfile.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Fiche officielle britannique de toponymie, édition 2023. Nom de l'État dans les langues officielles : République centrafricaine (français), Ködörösêse tî Bêafrîka (sango) ; la capitale s'écrit Bangui en français et Bangî en sango. Pendant la période coloniale, le pays s'appelait Oubangui-Chari, « a name derived from the Ubangi River and the Chari River » ; les deux tiers du pays sont dans le bassin de l'Oubangui, le reste dans celui du Chari, qui coule vers le lac Tchad. Le sango, une langue à tons, sert de langue commune dans tout le pays et se parle aussi dans le sud du Tchad et en République démocratique du Congo ; un accent circonflexe marque le ton haut et un tréma le ton moyen. Une orthographe officielle du sango date de 1984. Partie citée : p. 1-3."
+      },
+      {
+        "title": "Liste des noms de pays du GENUNG, GEGN.2/2025/171/CRP.171",
+        "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordination Pierre Jaillard",
+        "year": 2025,
+        "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Document du 23 avril 2025. Noms officiels nationaux : République centrafricaine en français, Ködörösêse tî Bêafrîka en sängö. Partie citée : p. 22."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VIII, ch. 8 : L'Afrique équatoriale de l'Ouest",
+        "author": "Elikia M'Bokolo",
+        "year": 1998,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Barthélemy Boganda, président du Grand Conseil de l'AEF, défend une fédération des quatre anciennes colonies françaises, « baptisée « République centrafricaine » », premier pas vers « les États-Unis de l'Afrique latine (ou centrale) ». Le projet échoue. Partie citée : p. 232."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+        "author": "Ali A. Mazrui",
+        "year": 1998,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Tableau chronologique des indépendances : la République centrafricaine, ancien Oubangui-Chari, devient indépendante de la France le 13 août 1960 ; elle s'appelle Empire centrafricain du 4 décembre 1976 au 20 septembre 1979. Partie citée : p. 130, tableau 5.1."
+      },
+      {
+        "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — L'Oubangui-Chari sous administration française",
+        "author": "Jean-Pierre Maury, Digithèque MJP",
+        "year": null,
+        "url": "https://mjp.univ-perp.fr/constit/cf1894.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chronologie juridique de la colonie : poste de Bangui établi en 1889 ; établissements de l'Oubangui placés sous un commandant supérieur en 1894 ; territoire de l'Oubangui-Chari selon le décret du 29 décembre 1903 ; colonie d'Oubangui-Chari-Tchad en 1906 ; Afrique équatoriale française en 1910 ; Tchad séparé en 1920 ; République centrafricaine le 1er décembre 1958."
+      },
+      {
+        "title": "Décret du 13 juillet 1894 et rapport au président de la République française",
+        "author": "République française, Journal officiel du 15 et 16 juillet 1894",
+        "year": 1894,
+        "url": "https://mjp.univ-perp.fr/constit/cf1894.htm",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Le rapport parle de « la région de l'Oubanghi », qui dépend alors de la colonie du Congo français, et des « établissements de l'Oubanghi ». Partie citée : p. 3423."
+      },
+      {
+        "title": "Délibération n° 199/58 proclamant le territoire de l'Oubangui-Chari État membre de la Communauté et l'intitulant « République Centrafricaine », 1er décembre 1958",
+        "author": "Assemblée territoriale de l'Oubangui-Chari",
+        "year": 1958,
+        "url": "https://mjp.univ-perp.fr/constit/cf1958.htm",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte publié au Journal officiel de l'Afrique équatoriale française du 1er janvier 1959, lu sur la Digithèque MJP de l'Université de Perpignan. Article 1 : « Le territoire de l'Oubangui-Chari opte pour le statut d'État membre de la Communauté ». Article 2 : « L'Etat de l'Oubangui-Chari est une République qui s'intitule « République Centrafricaine » ». Partie citée : articles 1 et 2."
+      },
+      {
+        "title": "Les Gbaya et les Kaka de l'Est-Cameroun, des origines à 1960 : approche historique",
+        "author": "Léonidas Bateranzigo",
+        "year": 1993,
+        "url": "https://publication.codesria.org/index.php/pub/catalog/download/1291/3005/8403?inline=1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse de doctorat de troisième cycle en histoire, Université de Yaoundé, année 1993, lue dans la copie numérisée diffusée par le CODESRIA. L'auteur raconte l'insurrection gbaya de la guerre du Kongo Wara : l'insurrection éclate en mai et juin 1928 ; Karnou, né près de Bouar et initié comme les autres adolescents gbaya au Labi, prêche à partir de 1924-1925 une doctrine anticoloniale « fondée sur la non-violence » ; il est tué par les troupes coloniales le 11 décembre 1928, et la révolte se poursuit par endroits jusqu'en 1931. Elle touche la Haute-Sangha, l'Ouham-Pendé, la Lobaye et l'est du Cameroun. Selon l'auteur, qui s'appuie sur Raphaël Nzabakomada-Yakoma, le nom Karnou signifie « celui qui ramasse la terre, qui peut la rouler comme un objet, telle une natte ». Partie citée : p. 285-289."
+      },
+      {
+        "title": "A different view of Sango",
+        "author": "William J. Samarin",
+        "year": 2008,
+        "url": "https://journals.openedition.org/africanistes/2748",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article en anglais paru dans le Journal des africanistes, tome 78, fascicule 1-2, lu sur OpenEdition. Le linguiste William J. Samarin y soutient que le sango est né à la période coloniale, à la fin du XIXe siècle, quand des Africains venus d'ailleurs sont arrivés avec la colonisation. Il cite l'avis contraire du linguiste centrafricain Marcel Diki-Kidiri : « le sango, sous l'appellation 'dendi', était déjà une langue véhiculaire avant l'arrivée des Européens dans le pays ». Partie citée : p. 305-327."
+      },
+      {
+        "title": "Polyphonic singing of the Aka Pygmies of Central Africa",
+        "author": "UNESCO, Liste représentative du patrimoine culturel immatériel de l'humanité",
+        "year": 2008,
+        "url": "https://ich.unesco.org/en/RL/polyphonic-singing-of-the-aka-pygmies-of-central-africa-00082",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche de l'UNESCO, en anglais, pour un élément proclamé en 2003 et inscrit en 2008 sur la Liste représentative, au nom de la République centrafricaine. Les Aka vivent dans le sud-ouest du pays. Leur chant est une polyphonie à quatre voix, accompagnée notamment du tambour enzeko et de l'arc à une corde mbela. Il accompagne l'installation d'un nouveau campement, la chasse et les funérailles. La fiche cite comme menaces la raréfaction du gibier due à la déforestation et la transformation de ce patrimoine en spectacle pour touristes."
+      },
+      {
+        "title": "Lettre datée du 16 septembre 2013, adressée au Président du Conseil de sécurité par le Secrétaire général (S/2013/557)",
+        "author": "Secrétaire général de l'Organisation des Nations unies",
+        "year": 2013,
+        "url": "https://digitallibrary.un.org/record/757319/files/S_2013_557-FR.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Document du Conseil de sécurité, version française, lu dans la bibliothèque numérique des Nations unies. Il rapporte « la chute du régime de l'ancien Président François Bozizé le 24 mars 2013 », quand « la coalition Séléka a envahi Bangui et pris le contrôle de la capitale ». La transition « a officiellement commencé le 18 août avec la prestation de serment de Michel Djotodia, le Chef d'État de la transition ». Partie citée : p. 1, 4 et 5."
+      },
+      {
+        "title": "MINUSCA, Mission multidimensionnelle intégrée des Nations Unies pour la stabilisation en République centrafricaine",
+        "author": "Nations unies, Opérations de maintien de la paix",
+        "year": null,
+        "url": "https://peacekeeping.un.org/fr/mission/minusca",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Page de présentation de la mission, en français. Le Conseil de sécurité a autorisé son déploiement le 10 avril 2014 par la résolution 2149 (2014). Le 15 septembre 2014, elle a pris le relais de la Mission internationale de soutien à la République centrafricaine sous conduite africaine (MISCA). Son quartier général est à Bangui."
+      },
+      {
+        "title": "Glottolog 5.3, Sango (sang1328)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/sang1328",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. Code ISO 639-3 sag. Glottolog classe le sango parmi les langues oubanguiennes, dans le groupe ngbandi, au sein de la famille Atlantique-Congo (Niger-Congo). La fiche précise qu'il est « fondé sur le ngbandi et influencé par le français »."
+      },
+      {
+        "title": "Glottolog 5.3, Northwest Gbaya (nort2775)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/nort2775",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. Code ISO 639-3 gya. Glottolog classe le gbaya du Nord-Ouest dans le groupe gbaya-manza-ngbaka, au sein de la famille Atlantique-Congo (Niger-Congo)."
+      },
+      {
+        "title": "Glottolog 5.3, Banda-Banda (band1343)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/band1343",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. Code ISO 639-3 bpd. Glottolog classe le banda-banda parmi les langues banda, dans le groupe oubanguien de la famille Atlantique-Congo (Niger-Congo)."
+      },
+      {
+        "title": "Glottolog — Manza (manz1243)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/manz1243",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. Code ISO 639-3 mzv. Glottolog nomme la langue Manza et la classe dans le groupe gbaya-manza-ngbaka, au sein de la famille Atlantique-Congo (Niger-Congo)."
+      },
+      {
+        "title": "Glottolog 5.3, Northern Ngbandi (nort2774)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/nort2774",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. Code ISO 639-3 ngb. Glottolog classe le ngbandi du Nord dans le groupe ngbandi des langues oubanguiennes, famille Atlantique-Congo (Niger-Congo), le même groupe que le sango."
+      },
+      {
+        "title": "Glottolog 5.3, Zande (zand1248)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/zand1248",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. Code ISO 639-3 zne. Glottolog classe le zandé dans le groupe zandé-nzakara des langues oubanguiennes, famille Atlantique-Congo (Niger-Congo)."
+      },
+      {
+        "title": "Glottolog 5.3, Yaka (Central African Republic) (yaka1272)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/yaka1272",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. Code ISO 639-3 axk. Glottolog nomme la langue Yaka (Central African Republic) et donne Aka et Babinga parmi ses autres noms. Il la classe parmi les langues bantoues, famille Atlantique-Congo (Niger-Congo)."
       }
     ],
     "demographics": {
@@ -775,56 +973,97 @@
       "source": "UNFPA – World Population Dashboard",
       "peoples": [
         {
-          "name": "Banda",
-          "percentageInCountry": 28.6,
-          "peopleId": "PPL_BANDA",
-          "region": "Centre et est de la RCA",
-          "languageFamily": "FLG_SOUDANIQUECENTRAL"
-        },
-        {
           "name": "Gbaya",
-          "percentageInCountry": 21.4,
           "peopleId": "PPL_GBAYA",
-          "region": "Ouest de la RCA",
-          "languageFamily": "FLG_BANTU"
+          "referenceYear": 2003,
+          "percentageInCountry": 28.8,
+          "region": "Ouest et nord-ouest",
+          "languageFamily": "FLG_NIGERCONGO",
+          "mainLanguageCode": "gya"
         },
         {
-          "name": "Ngbande",
-          "population": 500000,
-          "percentageInCountry": 7.1,
-          "peopleId": "PPL_NGBANDE",
-          "region": "Sud-ouest de la RCA",
-          "languageFamily": "FLG_SOUDANIQUECENTRAL"
+          "name": "Banda",
+          "peopleId": "PPL_BANDA",
+          "referenceYear": 2003,
+          "percentageInCountry": 22.9,
+          "region": "Centre et est",
+          "languageFamily": "FLG_NIGERCONGO",
+          "mainLanguageCode": "bpd"
         },
         {
-          "name": "Sango",
-          "percentageInCountry": 14.3,
-          "peopleId": "PPL_SANGO_SCT",
-          "region": "Toutes les régions de la RCA",
-          "languageFamily": "FLG_SOUDANIQUECENTRAL"
-        },
-        {
-          "name": "Manja",
-          "population": 300000,
-          "percentageInCountry": 4.3,
+          "name": "Mandja",
           "peopleId": "PPL_MANJA",
-          "region": "Centre de la RCA",
-          "languageFamily": "FLG_BANTU"
+          "referenceYear": 2003,
+          "percentageInCountry": 9.9,
+          "region": "Centre",
+          "languageFamily": "FLG_NIGERCONGO",
+          "mainLanguageCode": "mzv"
         },
         {
-          "name": "Aka",
-          "population": 200000,
-          "percentageInCountry": 2.9,
-          "peopleId": "PPL_AKA",
-          "region": "Sud-ouest de la RCA (forêts)",
-          "languageFamily": "FLG_BANTU"
+          "name": "Sara",
+          "peopleId": "PPL_SARA",
+          "referenceYear": 2003,
+          "percentageInCountry": 7.9,
+          "region": "Nord",
+          "languageFamily": null
         },
         {
-          "name": "Autres peuples",
-          "percentageInCountry": 21.4,
-          "region": "Diverses régions de la RCA"
+          "name": "Ngbaka-Bantou (dont les Aka)",
+          "referenceYear": 2003,
+          "percentageInCountry": 7.9,
+          "region": "Sud-ouest (Lobaye)",
+          "languageFamily": null
+        },
+        {
+          "name": "Arabe-Peul",
+          "referenceYear": 2003,
+          "percentageInCountry": 6.0,
+          "region": "Ouest (Nana-Mambéré, Mambéré-Kadéï)",
+          "languageFamily": null
+        },
+        {
+          "name": "Mboum",
+          "referenceYear": 2003,
+          "percentageInCountry": 6.0,
+          "region": "Nord-ouest (Ouham-Pendé)",
+          "languageFamily": null
+        },
+        {
+          "name": "Ngbandi (dont les Yakoma et les Sango)",
+          "peopleId": "PPL_NGBANDE",
+          "referenceYear": 2003,
+          "percentageInCountry": 5.5,
+          "region": "Rives de l'Oubangui et Bangui",
+          "languageFamily": "FLG_NIGERCONGO",
+          "mainLanguageCode": "ngb"
+        },
+        {
+          "name": "Zandé-Nzakara",
+          "referenceYear": 2003,
+          "percentageInCountry": 3.0,
+          "region": "Sud-est",
+          "languageFamily": "FLG_NIGERCONGO",
+          "mainLanguageCode": "zne"
+        },
+        {
+          "name": "Autres peuples centrafricains",
+          "referenceYear": 2003,
+          "percentageInCountry": 2.0,
+          "region": null,
+          "languageFamily": null
+        },
+        {
+          "name": "Peuples venus d'autres pays",
+          "referenceYear": 2003,
+          "percentageInCountry": 0.1,
+          "region": null,
+          "languageFamily": null
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "La République centrafricaine, ou Ködörösêse tî Bêafrîka en sango, est un pays d'Afrique centrale qui s'appelait Oubangui-Chari pendant la colonisation française.",
+      "followUp": "Pourquoi l'Oubangui-Chari a-t-il pris le nom de République centrafricaine en 1958 ?"
     }
   }
 }

@@ -13,9 +13,14 @@
   "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
-  "peoples": [{ "name": "Nande", "peopleId": "PPL_NANDE" }],
+  "peoples": [
+    {
+      "name": "Nande",
+      "peopleId": "PPL_NANDE"
+    }
+  ],
   "nameHistory": {
-    "summary": "Le nom kinande désigne la langue des Nande, dans l'est de la République démocratique du Congo, au Nord-Kivu. On y retrouve le nom du peuple, Nande, précédé d'un préfixe. En Ouganda, au pied du Rwenzori, la même langue est appelée konzo, ou konjo. On ne sait pas avec certitude d'où vient le nom Nande ; nous présentons plus bas sa plus ancienne trace écrite.",
+    "summary": "Le nom kinande désigne la langue des Nande, dans l'est de la République démocratique du Congo, au Nord-Kivu. On y retrouve le nom du peuple, Nande, précédé d'un préfixe. En Ouganda, au pied du Rwenzori, la même langue est appelée konzo, ou konjo. Les Nande se désignent aussi par le nom yira. Nous présentons plus bas la plus ancienne trace écrite du nom Nande et le sens que les sources donnent aux autres noms.",
     "names": [
       {
         "nameText": "Kinande",
@@ -51,6 +56,60 @@
         ]
       },
       {
+        "nameText": "Yira",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nnb",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Nande ; ekiyira est le nom de leur langue maternelle.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par le dictionnaire"
+            },
+            "statement": "Le nom yira, au singulier omuyira, est celui par lequel les Nande se désignent, selon le dictionnaire de Kambale Kavutirwaki et Ngessimo Mutaka. Le mot a voulu dire « le non-civilisé », précise-t-il, mais il a perdu ce sens et veut plutôt dire « autochtone ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire kinande-français avec index français-kinande",
+                "author": "Kambale Kavutirwaki et Ngessimo M. Mutaka",
+                "year": 2012,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/documents-social-sciences-humanities/dictionnaire-kinande-francais.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 172, article omuyira",
+                "notes": "Tervuren, Musée royal de l'Afrique centrale, collection numérique « Documents de sciences humaines et sociales », 2012, préface de Claire Grégoire. Dictionnaire lu en texte intégral le 3 novembre 2026. Il suit surtout le parler de Butembo, Musyenene, Lukanga, Luotu et Lubero, et tient le kinande et le konzo pour une même langue, parlée des deux côtés de la frontière entre la RD Congo et l'Ouganda."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par le dictionnaire"
+            },
+            "era": "modern",
+            "statement": "Le nom ekiyira désigne la langue maternelle : le kinande, et le kikonzo pour les Konzo, selon le même dictionnaire. Il rapporte aussi que les Bayira, c'est-à-dire les Nande et les Konzo, se répartissent en sept grands clans.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionnaire kinande-français avec index français-kinande",
+                "author": "Kambale Kavutirwaki et Ngessimo M. Mutaka",
+                "year": 2012,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/documents-social-sciences-humanities/dictionnaire-kinande-francais.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 28, article ekiyira, et p. 306",
+                "notes": "Tervuren, Musée royal de l'Afrique centrale, collection numérique « Documents de sciences humaines et sociales », 2012, préface de Claire Grégoire. Dictionnaire lu en texte intégral le 3 novembre 2026. Il suit surtout le parler de Butembo, Musyenene, Lukanga, Luotu et Lubero, et tient le kinande et le konzo pour une même langue, parlée des deux côtés de la frontière entre la RD Congo et l'Ouganda."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "nameText": "Nande",
         "nameStatus": "current",
         "selfGiven": false,
@@ -66,7 +125,7 @@
               "label": "1902"
             },
             "era": "colonial",
-            "statement": "Le nom nande apparaît sous la forme Banande chez Harry Johnston, qui le donne comme le nom que les peuples voisins appliquent à des gens vivant à la lisière de la grande forêt, à l'ouest de la Semliki. Au singulier, note-t-il, on dirait Munande, et la racine serait -nande. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple et sa langue existaient déjà avant lui.",
+            "statement": "Le nom nande apparaît sous la forme Banande chez Harry Johnston, qui le donne comme le nom que les peuples voisins appliquent à des gens vivant à la lisière de la grande forêt, à l'ouest de la Semliki. Au singulier, note-t-il, on dirait Munande, et la racine serait -nande. Il ajoute qu'il ne peut pas dire qu'un peuple précis portait ce nom. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple et sa langue existaient déjà avant lui.",
             "birth": true,
             "sources": [
               {
@@ -76,7 +135,7 @@
                 "url": "https://archive.org/details/cu31924087982504",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 510 et note",
+                "page": "p. 510-511 et note",
                 "notes": "Londres, Hutchinson, 1902. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'auteur décrit ces gens avec les catégories raciales méprisantes de son époque."
               }
             ]
@@ -89,8 +148,8 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom de la même langue en Ouganda, au pied du Rwenzori.",
-        "periodLabel": "En usage aujourd'hui",
+        "shortLine": "Le nom de la même langue en Ouganda, au pied du Rwenzori ; il veut dire « montagnard ».",
+        "periodLabel": "Écrit dès 1902 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
@@ -113,6 +172,82 @@
                 "notes": "Esquisse de grammaire publiée en ligne par l'African Anaphora Project (Rutgers University), lue en texte intégral le 11 octobre 2026. L'auteur renvoie à une grammaire de Baudet parue en 1948, que nous n'avons pas lue."
               }
             ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par le dictionnaire"
+            },
+            "statement": "Le nom konzo, au singulier omukonzo, veut dire « montagnard » : c'est le nom donné aux Nande de l'Ouganda qui vivent sur les contreforts du Rwenzori, selon le dictionnaire de Kambale Kavutirwaki et Ngessimo Mutaka.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire kinande-français avec index français-kinande",
+                "author": "Kambale Kavutirwaki et Ngessimo M. Mutaka",
+                "year": 2012,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/documents-social-sciences-humanities/dictionnaire-kinande-francais.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 157, article omukonzo",
+                "notes": "Tervuren, Musée royal de l'Afrique centrale, collection numérique « Documents de sciences humaines et sociales », 2012, préface de Claire Grégoire. Dictionnaire lu en texte intégral le 3 novembre 2026. Il suit surtout le parler de Butembo, Musyenene, Lukanga, Luotu et Lubero, et tient le kinande et le konzo pour une même langue, parlée des deux côtés de la frontière entre la RD Congo et l'Ouganda."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom konzo est écrit « Bakonjo » pour le peuple et « Lukonjo » pour la langue par Harry Johnston, qui situe cette langue dans le sud du Rwenzori. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "formAsWritten": "Lukonjo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 577",
+                "notes": "Londres, Hutchinson, 1902. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'auteur décrit ces gens avec les catégories raciales méprisantes de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "2009"
+            },
+            "era": "modern",
+            "statement": "Le nom konzo a son propre code de langue, koo, distinct du code du kinande, nnb, dans la liste des langues bantoues de Jouni Maho, qui reprend les codes ISO 639-3. Les deux auteurs du dictionnaire kinande-français tiennent pourtant le kinande et le konzo pour une même langue.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "NUGL Online: The online version of the New Updated Guthrie List, a referential classification of the Bantu languages",
+                "author": "Jouni Filip Maho",
+                "year": 2009,
+                "url": "https://brill.com/fileasset/downloads_products/35125_Bantu-New-updated-Guthrie-List.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 56",
+                "notes": "Version datée du 4 juin 2009, mise en ligne par l'éditeur Brill, lu le 3 novembre 2026. La liste range le konzo (code koo) sous JD41 et le nande (code nnb) sous JD42, qui inclut les parlers shu et yira."
+              },
+              {
+                "title": "Dictionnaire kinande-français avec index français-kinande",
+                "author": "Kambale Kavutirwaki et Ngessimo M. Mutaka",
+                "year": 2012,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/documents-social-sciences-humanities/dictionnaire-kinande-francais.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. xxxiv",
+                "notes": "Tervuren, Musée royal de l'Afrique centrale, collection numérique « Documents de sciences humaines et sociales », 2012, préface de Claire Grégoire. Dictionnaire lu en texte intégral le 3 novembre 2026. Il suit surtout le parler de Butembo, Musyenene, Lukanga, Luotu et Lubero, et tient le kinande et le konzo pour une même langue, parlée des deux côtés de la frontière entre la RD Congo et l'Ouganda."
+              }
+            ]
           }
         ]
       }
@@ -126,6 +261,7 @@
       "scale": "EGIDS (Ethnologue)",
       "asOf": 2025
     },
+    "originDebated": false,
     "sources": [
       {
         "title": "Glottolog 5.3 — Nande (nand1264)",
@@ -133,7 +269,67 @@
         "tier": "official",
         "source_kind": "linguistic_reference",
         "notes": "Notice directe pour le code ISO 639-3 nnb et le glottocode nand1264. Elle situe la langue en République démocratique du Congo et en Ouganda, atteste les variantes Kinande, Kinandi et Orundande et publie le statut EGIDS 5 en 2025. Aucun rôle véhiculaire régional n'est inféré de cette notice."
+      },
+      {
+        "title": "Dictionnaire kinande-français avec index français-kinande",
+        "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/documents-social-sciences-humanities/dictionnaire-kinande-francais.pdf",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Tervuren, Musée royal de l'Afrique centrale, collection numérique « Documents de sciences humaines et sociales », 2012, préface de Claire Grégoire. Dictionnaire lu en texte intégral le 3 novembre 2026. Il suit surtout le parler de Butembo, Musyenene, Lukanga, Luotu et Lubero, et tient le kinande et le konzo pour une même langue, parlée des deux côtés de la frontière entre la RD Congo et l'Ouganda."
+      },
+      {
+        "title": "NUGL Online: The online version of the New Updated Guthrie List, a referential classification of the Bantu languages",
+        "url": "https://brill.com/fileasset/downloads_products/35125_Bantu-New-updated-Guthrie-List.pdf",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Version datée du 4 juin 2009, mise en ligne par l'éditeur Brill, lu le 3 novembre 2026. La liste range le konzo (code koo) sous JD41 et le nande (code nnb) sous JD42, qui inclut les parlers shu et yira."
+      },
+      {
+        "title": "Les aires et les dynamiques linguistiques",
+        "url": "https://books.openedition.org/irdeditions/64818",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Dans l'Atlas des pays du Nord-Tanganyika, IRD Éditions, 2016, lu sur OpenEdition Books le 3 novembre 2026. L'auteur range le kinande parmi les langues bantoues du Nord-Kivu et écrit que le kiswahili sert de langue véhiculaire dans l'est de la RD Congo."
+      },
+      {
+        "title": "The National Population and Housing Census 2024, Final Report, Volume 1 (Main)",
+        "url": "https://statistics.ubos.org/nphc/reports/National-Population-and-Housing-Census-2024-Final-Report-Volume-1-Main.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Kampala, version définitive du rapport, lu le 3 novembre 2026. Le tableau compte 1 104 462 Bakonzo en 2024 et 850 646 en 2014. Il compte l'appartenance à un groupe, déclarée par chacun, et non la langue parlée. Le questionnaire a été traduit dans vingt langues, dont le rukonzo."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers",
+        "reason": "La RD Congo n'a pas de recensement récent des langues. Le seul chiffre que nous avons est une estimation du nombre de Nande, et non des personnes qui parlent le kinande. En Ouganda, le recensement de 2024 compte 1 104 462 Bakonzo, mais il compte un groupe, et les codes de langue rangent le konzo à part."
+      },
+      {
+        "field": "content.dialects",
+        "reason": "Glottolog ne divise pas cette langue en parlers. Le dictionnaire kinande-français nomme un parler, l'ekíserume, du côté de Bingi et de Kitsombiro, et signale un autre parler dans la région d'Irungu, au pied du Rwenzori, sans lui donner de nom."
+      },
+      {
+        "field": "nameHistory.names[2]",
+        "reason": "Nous n'avons pas trouvé d'explication du nom Nande. Le dictionnaire kinande-français donne le mot omunande, « une personne du peuple nande », sans dire d'où il vient."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Le kinande est la langue des Nande, dans le Nord-Kivu, à l'est de la RD Congo. En Ouganda, au pied du Rwenzori, la même langue s'appelle konzo.",
+      "followUp": "Que veut dire yira, le nom que les Nande se donnent ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "COD",
+          "speakers": 4000000,
+          "source": {
+            "title": "Estimation de la population nande rapportée dans le Dictionnaire kinande-français (2012)",
+            "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/documents-social-sciences-humanities/dictionnaire-kinande-francais.pdf",
+            "tier": "unverified",
+            "notes": "Le dictionnaire estime la population nande à environ 4 millions de personnes, page vii. Il précise que ce chiffre vient d'un mémorandum de l'association Kyaghanda Belgique publié sur Internet le 5 mars 2000. C'est le nombre des Nande, et non celui des personnes qui parlent le kinande."
+          }
+        }
+      ]
+    }
   }
 }

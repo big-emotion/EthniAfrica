@@ -164,7 +164,7 @@ describe("the noms/ records folded into their people fiches", () => {
       "Le nom Ovaherero est celui que ce peuple se donne. On le connaît aussi sous le nom Herero. Leur histoire est présentée plus bas."
     );
     expect(ficheNameHistory("PPL_WOLOF").summary).toBe(
-      "Le nom Wolof est celui que ce peuple se donne. Son histoire est présentée plus bas."
+      "Le nom Wolof est celui que ce peuple du Sénégal, de la Gambie et de la Mauritanie se donne lui-même ; c'est aussi le nom de sa langue. D'autres noms et graphies existent : Jolof, le nom d'un ancien État wolof que des Européens ont donné à tout le peuple, et les formes Ouolof, Yolof et Wollof. L'origine du nom Wolof reste discutée ; nous présentons plus bas ce qu'en disent les sources."
     );
   });
 });

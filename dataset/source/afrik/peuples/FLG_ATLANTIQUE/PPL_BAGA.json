@@ -8,97 +8,102 @@
     "appellations": {
       "mainName": "Baga",
       "selfAppellation": "Baga",
-      "exonyms": [
-        "Aga",
-        "Baele",
-        "Baga-Binari",
-        "Baga-Koga",
-        "Bagas",
-        "Bagga",
-        "Bago",
-        "Bailo",
-        "Barka",
-        "Boloes",
-        "Kalum",
-        "Zape Boulones"
-      ],
-      "originOfExonyms": "Baga viendrait de l'expression soussou bae raka, traduite par « gens du bord de mer » ou « peuple du rivage ». D'autres noms ont été donnés par les voisins soussous et mandingues, ainsi que par les colons portugais et français. Ils distinguaient des groupes selon leur lieu de vie ou certaines pratiques culturelles.",
-      "whyProblematic": "Le terme Baga recouvre plusieurs groupes distincts qui ne forment pas une unite linguistique homogene : leurs langues sont partiellement mutuellement inintelligibles. La denomination est avant tout geographique et culturelle plutot que strictement ethnolinguistique.",
-      "contemporaryUsage": "Le terme Baga est utilise officiellement en Guinee pour designer les populations atlantiques du littoral. En contexte artistique international, il designe le peuple createur du masque Nimba, reconnu dans les grands musees du monde.",
+      "exonyms": ["Baga Foré", "Kuba", "Baheraka"],
+      "spellingAliases": ["Bagas"],
+      "originOfExonyms": "Les groupes baga se donnent aussi des noms entre eux. En 1854, le missionnaire Sigismund Koelle note que les Baga du rio Nunez appellent Kuba ceux de Kalum, en face des îles de Los. Ceux-ci les appellent en retour Baga sintene ou Baheraka, « les gens nus ». Les Soussou, leurs voisins, nomment Baga Foré un autre groupe, de fore, « païen » en soussou, selon Denise Paulme en 1957. Ce groupe se nomme lui-même Baga bulunits, « Baga des marais », que David Berliner écrit Bulongic. Le site 101 Last Tribes fait venir le nom Baga d'une expression soussou, bae raka, « gens du bord de mer ».",
+      "whyProblematic": "Le nom Baga couvre des groupes qui ne parlent pas la même langue. Denise Paulme l'observait déjà en 1957 : les Baga Foré comprennent le parler des Baga Sitemou, mais parlent entre eux un parler plus proche de celui des Nalou. Le catalogue Glottolog range aujourd'hui le baga sitemu, le baga koga et le baga manduri avec le temné de Sierra Leone, et le baga pukur et le mbulungish avec le nalou. Selon l'historien de l'art Frederick Lamp, le nom a servi à couvrir un large ensemble de groupes culturels, un ensemble jusqu'ici mal interprété.",
+      "contemporaryUsage": "Le nom Baga est celui que ces groupes emploient entre eux, selon Sigismund Koelle en 1854 et Denise Paulme en 1957. Dans les années 1950, Paulme note qu'il reste inscrit sur les recensements des habitants du canton de Sobané, près de Boffa, alors qu'ils parlent le soussou. Il sert aussi à nommer les langues baga dans les catalogues de langues, comme Glottolog.",
       "linguisticFamily": "FLG_ATLANTIQUE",
-      "ethnoLinguisticGroup": "Sous-groupe atlantique nord (Baga), famille Niger-Congo",
-      "historicalRegion": "Littoral de Guinee (Basse Guinee) entre le Cap Verga et Conakry, zones de mangroves et d'estuaires des rios Nunez, Pongo et Boffe",
-      "currentCountries": ["GIN"]
+      "ethnoLinguisticGroup": "Parlers baga du groupe mel (baga sitemu, baga koga, baga manduri) et du groupe nalou (baga pukur, mbulungish), selon Glottolog",
+      "historicalRegion": "Côte marécageuse de Guinée, de la rive sud du rio Nunez jusqu'à la hauteur de Conakry",
+      "currentCountries": ["GIN"],
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Baga Sitemu (Citeme) — groupe le plus important, seul sous-groupe dont la langue reste vibrante",
-      "Baga Kalum — implantes pres de Conakry et de la presqu'ile de Kalum",
-      "Baga Koba — pres de la ville de Kaporo, principalement des locuteurs ages",
-      "Baga Mandori (Manduri) — sous-groupe du littoral nord",
-      "Baga Pukur (Pokur) — sous-groupe du littoral central",
-      "Baga Sobane (Kakissa) — sous-groupe, tres peu de locuteurs subsistant",
-      "Bulunits — sous-groupe apparente aux Baga, implante dans la zone cotieres"
+      "Baga Sitemou (baga sitemu) : cercle de Boké, du rio Nunez au Kapachez, environ 12 000 personnes selon Denise Paulme (1954-1955)",
+      "Baga Foré, qui se nomment eux-mêmes Baga bulunits ou Bulongic : autour de Monchon, cercle de Boffa ; moins de 9 000 selon Denise Paulme (1954-1955), environ 6 000 selon David Berliner (1998-2001)",
+      "Baga Koba : îles au sud du rio Pongo, selon Denise Paulme",
+      "Baga de Sobané : canton de Sobané, cercle de Boffa ; environ 2 000 habitants qui parlaient déjà le soussou dans les années 1950, selon Denise Paulme",
+      "Baga Kakissa : au sud des Bulongic, selon David Berliner",
+      "Baga de Kalum : en face des îles de Los, selon Sigismund Koelle (1854)",
+      "Baga Koga, Baga Manduri et Baga Pukur : groupes connus par leurs parlers, que Glottolog range dans deux groupes de langues"
     ],
     "origins": {
-      "ancientOrigins": "Selon la tradition orale baga, le peuple est originaire des hauts plateaux de l'interieur de la Guinee (region du Fouta Djallon). Ils furent pousses vers les terres cotieres marecageuses par des voisins hostiles, notamment les Peuls en expansion. Ils sont consideres comme les premiers occupants (first-comers) de nombreuses zones du littoral superieur de Guinee, ayant acquis en consequence des droits de proprietaires terriens sur ces terres.",
-      "formationPeriod": "La formation identitaire baga sur le littoral est difficile a dater precisement. Les sources europeennes mentionnent leur presence des le XVIe siecle. Leur implantation dans les zones de mangroves s'est consolidee progressivement, les rios Nunez et Pongo servant de limites a leurs territoires traditionnels.",
+      "ancientOrigins": "Les Baga se présentent comme des descendants de gens venus chercher refuge dans les marais de la côte, selon Denise Paulme. Leurs souvenirs les font venir des régions du Fouta-Djalon, à l'est : les Baga Sitemou savent que leurs ancêtres habitaient la région de Labé, et la plupart des Baga Foré disent venir de la région de Pita. Les récits des voyageurs portugais du XVIe siècle les montrent déjà sur la côte. Pour Paulme, ces deux témoignages ne s'opposent pas : cette côte aurait servi de refuge à des groupes venus à différentes époques.",
+      "formationPeriod": "Le nom Baga apparaît par écrit en 1594, chez le capitaine André Álvares de Almada, au rio Nunez. Denise Paulme rapporte que, pour les Baga eux-mêmes, sont Baga les descendants de ceux qui sont venus chercher asile dans les marais, arrivés d'horizons différents et à des moments différents.",
       "migrationRoutes": [
-        "Migration depuis les hauts plateaux du Fouta Djallon vers les basses terres cotieres",
-        "Deplacement vers les zones de mangroves et les iles du littoral sous la pression des Peuls et des Soussous",
-        "Dispersion le long de la cote entre le Rio Nunez et Conakry (environ 260 km)"
+        "De la région de Labé vers la côte, selon les souvenirs des Baga Sitemou rapportés par Denise Paulme",
+        "De la région de Pita vers les marais de Monchon, pour la plupart des Baga Foré, selon Denise Paulme"
       ],
       "historicalSettlementZones": [
-        "Zones de mangroves entre le Cap Verga et Conakry",
-        "Estuaires des rios Nunez, Pongo et Fatala",
-        "Iles et presqu'iles du littoral guineen (presqu'ile de Kalum, region de Boke et Boffa)"
+        "Côte marécageuse de Guinée, de la rive sud du rio Nunez jusqu'à la hauteur de Conakry",
+        "Cercle de Boké, du rio Nunez au Kapachez (Baga Sitemou)",
+        "Environs de Monchon et rives du Kapachez, cercle de Boffa (Baga Foré)",
+        "Îles au sud du rio Pongo (Baga Koba)",
+        "Pays de Kalum, en face des îles de Los, selon Sigismund Koelle"
       ],
-      "unificationsOrDivisions": "Les Baga n'ont jamais forme un etat centralise. Ils ont toujours constitue une serie de communautes autonomes (societe acephale), unies par des traits culturels et linguistiques communs mais sans autorite politique supra-villageoise. La colonisation francaise a introduit des chefs (chefs de canton) sans fondement dans leur organisation traditionnelle.",
-      "externalInfluences": "XVIe siecle : contact avec les marchands portugais (Lancados), dont certains epouserent des filles de chefs baga et s'integrerent. XVIIIe siecle : jihad peul du Fouta Djallon et missions mandingues conduisant a une islamisation rapide. 1958-1984 : regime marxiste de Sekou Toure menant une politique de demystification detruisant les objets rituels et interdisant les pratiques animistes. Post-1984 : reemergence culturelle.",
-      "majorHistoricalEvents": "XVIIIe siecle : malgre des siecles de resistance aux pressions religieuses et politiques peules, presque tous les Baga se convertissent a l'islam sous l'influence des missionnaires mande. 1958 : independance de la Guinee ; le gouvernement marxiste interdit les pratiques non islamiques. 1984 : mort de Sekou Toure et chute du regime ; renaissance culturelle baga, mais l'islam reste religion d'etat et les pratiques animistes restent marginalisees."
+      "unificationsOrDivisions": "Denise Paulme décrit des villages qui mènent une vie presque indépendante, de 300 à 800 personnes. Les hameaux que l'administration coloniale rattachait à un village pour le recensement se tenaient pour indépendants : leur doyen contrôlait seul l'usage des terres. Elle prévoyait en 1957 que les Baga se fondraient dans d'autres groupes. Après 1984, Ramon Sarró observe au contraire une revalorisation de la tradition baga, selon le compte rendu de J. D. Y. Peel.",
+      "externalInfluences": "Denise Paulme voit le souvenir des premiers colons portugais dans le décor des maisons. Dans les années 1950, elle décrit des villages où vivent côte à côte des familles musulmanes, des familles catholiques et des familles fidèles aux anciennes pratiques. Des commerçants soussou et foula s'y installent, et des éleveurs foula descendent du Fouta-Djalon en saison sèche. Chez les Bulongic, l'islam progresse depuis le début du XXe siècle, selon David Berliner.",
+      "majorHistoricalEvents": "En 1954, les Bulongic célèbrent leur dernière circoncision, selon David Berliner : le passage d'un maître coranique, Asékou Bokaré, met fin à ces rites. En 1956-1957, un prédicateur musulman malinké, Asekou Sayon, mène chez les Baga un mouvement qui détruit les objets rituels, selon Ramon Sarró. Le régime de Sékou Touré promeut ensuite une culture nationale qui mêle socialisme scientifique et islam rationalisé, jusqu'à sa chute en 1984, selon le compte rendu de J. D. Y. Peel."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Societe acephale : pas d'autorite politique centralisee. Le pouvoir reside dans les anciens masculins des groupes de parenteles, qui forment un conseil de village. Les chefs de village existent mais leurs pouvoirs sont limites par les coutumes et les conseillers. Les dynasties de chefs crees sous influence portugaise (Gomez, Fernandez) et francaise coexistent avec les structures traditionnelles.",
-      "clanOrganization": "Organisation patrilineaire par lignages. Les hommes et femmes appartiennent aux groupes de parentele de leur pere. La terre est transmise dans la lignee masculine. Les Portugais Lancados s'integrerent en epousant des filles de chefs et developperent des dynasties dirigeantes melees.",
-      "ageClassSystems": "Les classes d'age structurent la societe baga, en lien avec les societes secretes. L'acces aux rituels et aux responsabilites depend du passage par des etapes d'initiation successives encadrees par la societe Simo.",
-      "roleOfLineages": "Le lignage (patrilineaire) est la cellule de base de l'organisation sociale. Il controle la terre et les rituels. Les families vivent en grappes de structures cylindriques en terre, parfois reunies en petits villages. Le pouvoir politique est exerce par les anciens des lignages reunis en conseil.",
-      "religiousAuthority": "La societe secrete Simo (terme soussou signifiant sacre) est l'institution religieuse et politique centrale. Elle encadre les initiations masculines et feminines (societe A-Tekan pour les femmes). Les esprits Somtup (masculin) et A-Bol (feminin, epouse de Somtup) gouvernent les societes secretes. Le createur supreme est nomme Kanu."
+      "traditionalPoliticalSystem": "Denise Paulme ne décrit pas de pouvoir au-dessus des villages. Dans chaque quartier, le doyen, l'homme le plus âgé, garde les autels familiaux et répartit chaque année les terres du lignage. Les hameaux isolés suivent leur propre doyen et fixent eux-mêmes leurs fêtes agraires. Sous la colonisation, le chef de canton nommé par l'administration n'intervient guère que pour l'impôt.",
+      "clanOrganization": "Chez les Baga Foré, le quartier, ebene, réunit des parents qui portent le même nom, Bangoura ou Kamara, et ne se marient pas entre eux, selon Denise Paulme. À Monchon, les Kamara, venus de la montagne, occupent l'est, et les Bangoura, venus du rivage, l'ouest. Chez les Baga Sitemou, le quartier, abana, réunit des Kamara, des Bangoura ou des Keita. Les habitants se divisent aussi entre les descendants des premiers venus, asuto, et ceux de leurs gendres.",
+      "ageClassSystems": "Chez les Bulongic, chaque moitié du village avait son masque de circoncision, selon David Berliner : Mosolo Kombo, un masque masculin, pour les Kamara, et Sangaran, un masque féminin, pour les Bangoura. Les deux initiations avaient lieu en même temps, en principe tous les 24 ans. Denise Paulme note qu'un garçon qui n'est pas initié n'est pas reçu parmi les hommes adultes.",
+      "roleOfLineages": "Chez les Baga, on appartient à la famille de son père, et le couple s'installe dans la famille du mari, selon Denise Paulme. La grande famille, foke, réunit un homme âgé, ses épouses, ses fils mariés et ses filles jusqu'à leur mariage. Les premières rizières du lignage ne se vendent pas. Les autres rizières appartiennent à celui qui les a défrichées, et un membre du lignage peut racheter une terre vendue à un étranger.",
+      "religiousAuthority": "Denise Paulme décrit des autels modestes dans les villages et des lieux sacrés dans deux forêts : celle des hommes à l'ouest du village, celle des femmes à l'est. Les reliques familiales, elek, sont gardées dans la maison du doyen. Chez les Baga Sitemou, un chasseur de sorciers prépare les médecines qui protègent les rizières. Chez les Bulongic, chaque masque de circoncision, gardé dans une forêt sacrée, est détenu par un lignage et réunit les hommes circoncis de plusieurs villages parents, selon David Berliner."
     },
     "languages": {
-      "mainLanguage": "Langues baga (groupe de langues atlantiques du nord, famille Niger-Congo). La langue la plus vivante est le baga sitemu (bsp). Les autres variantes sont menacees ou eteintes.",
-      "isoCodes": ["bsp", "bgo", "bmd", "bcg", "bqf"],
+      "mainLanguage": "Langues baga (baga sitemu, bsp ; baga koga, bgo ; baga manduri, bmd ; baga pukur, bcg ; mbulungish, mbv)",
+      "isoCodes": ["bsp", "bgo", "bmd", "bcg", "bqf", "mbv"],
       "dialects": [
-        "Baga Sitemu (bsp) — la seule variete encore vigoureuse, parlee dans le sous-groupe Sitemu",
-        "Baga Koga / Koba (bgo) — variete parlee par des personnes agees uniquement",
-        "Baga Mandori (bmd) — variete du sous-groupe Mandori",
-        "Baga Pokur (bcg) — variete du sous-groupe Pukur",
-        "Baga Kaloum (bqf) — variete consideree eteinte, parlee dans une zone isolee"
+        "Baga sitemu (bsp) : groupe mel, avec le temné, selon Glottolog",
+        "Baga koga (bgo) : groupe mel, selon Glottolog",
+        "Baga manduri (bmd) : groupe mel, selon Glottolog",
+        "Baga pukur (bcg), avec le baga binari et le baga mboteni : groupe nalou, selon Glottolog",
+        "Mbulungish (mbv), le parler des Baga Foré : groupe nalou, selon Glottolog et Pozdniakov",
+        "Baga kaloum (bqf) et baga sobané (bsv) : codes que Glottolog ne retient pas comme langues distinctes"
       ],
-      "vehicularRole": "La plupart des Baga parlent aujourd'hui le soussou comme langue principale de communication et de commerce interethnique. Les jeunes ont en grande partie abandonne les langues baga pour le soussou, l'arabe coranique et le francais (langue officielle de Guinee). Le multilinguisme est la norme dans les communautes baga."
+      "vehicularRole": "Le soussou gagne du terrain chez les Baga depuis longtemps. Dès les années 1950, Denise Paulme note que les habitants du canton de Sobané ne parlent plus baga entre eux, mais soussou : « Nos pères étaient Baga, nous sommes Soussou. » Elle ajoute que les jeunes partis en ville cessent souvent de parler leur langue."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q799815"
     },
     "culture": {
-      "majorRites": "Les rites centraux de la culture baga sont lies aux societes secretes Simo (masculine) et A-Tekan (feminine). L'initiation masculine comprend une retraite dans un espace sacre, la transmission des savoirs secrets et des objets rituels Elek (symboles protegeant les lignages). Le masque D'mba (Nimba) est sorti lors des fetes de recolte, des maternites, des mariages et des ceremonies agraires (au moins deux fois par an avant les saisons des pluies). Le masque Bansonyi est utilise lors des initiations masculines. Les morts sont exposes dans un bois sacre avant inhumation selon le rite islamique, et certaines possessions et la maison du defunt sont brulees.",
-      "symbols": "Le masque Nimba (D'mba en langue baga, deforme en Nimba en soussou) est le symbole majeur du peuple baga. Il represente la deesse de la fertilite et la Grande Mere. Porter sur les epaules par un danseur masculin de grande taille (entierement cache sous des etoffes et des raphias), il mesure jusqu'a 2,40 m et peut peser plus de 35 kg. Ses seins saillants evoquent la femme ayant allaite ses enfants. Les lignes cheek (scarifications) marquent l'identite baga. Les objets Elek symbolisent la protection des lignages et les secrets de la societe Simo.",
-      "artsAndMusic": "Les Baga sont reconnus pour un art exceptionnel dont les pieces ornent les grands musees mondiaux (Musee du Quai Branly, Metropolitan Museum of Art, Art Institute of Chicago, Musee Barbier-Mueller de Geneve). Les sculptures principales sont : le masque Nimba (D'mba), masque d'epaule de fertilite ; le masque Bansonyi (pole peint de 3 a 6 m, decore de couleurs vives, termine par un drapeau et une icone triangulaire) ; les objets Elek (symboles de lignage). La poterie est une tradition feminine. La musique utilise le tambour timba, les percussions et les chants collectifs lors des ceremonies. Certaines collections ont ete detruites pendant la periode de demystification (1958-1984) mais la production artistique connait une renaissance depuis.",
-      "spiritualities": "Les Baga sont aujourd'hui majoritairement musulmans sunnites malekites, suite a leur conversion au XVIIIe siecle. Toutefois, ils maintiennent des pratiques animistes ancestrales : culte des ancetres, croyance en un createur supreme (Kanu) et en un esprit masculin superieur (Somtup), societes secretes avec leurs rituels. La mort donne lieu a une exposition en bois sacre avant l'inhumation islamique. Des groupes isoles dans les zones de Nunez et Pongo ont maintenu un animisme plus marque."
+      "majorRites": "Les fêtes des semailles et de la moisson rythment l'année, selon Denise Paulme. Chez les Baga Sitemou, les descendants des premiers venus font les premiers gestes, que leurs « gendres » complètent ensuite. Chez les Bulongic, la circoncision comprenait un combat où sortaient deux masques en forme de serpent, selon David Berliner.",
+      "symbols": "Le Metropolitan Museum of Art de New York conserve une coiffe baga en bois de plus d'un mètre, appelée d'mba, « grande mère », datée de la fin du XIXe siècle ou de la première moitié du XXe siècle.",
+      "artsAndMusic": "Les femmes montent à la main de grands silos à riz en terre crue, kele, qui peuvent atteindre 3,50 m à 4 m, et en décorent certains de rouge ou de bleu, selon Denise Paulme. Après 1984, la danse et les mascarades reviennent, même chez de jeunes musulmans, selon Ramon Sarró.",
+      "spiritualities": "Dans les années 1950, musulmans, catholiques et fidèles des anciennes pratiques vivent dans les mêmes villages, selon Denise Paulme. On n'offre aux ancêtres que le riz qu'ils cultivaient, le malo bulunits. Chez les Bulongic, l'islam a mis fin aux rites d'initiation au milieu du XXe siècle, selon David Berliner."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Les Baga n'ont pas forme de royaumes centralises. Ils ont constitue des chefferies de villages autonomes liees par des alliances. Sous la colonisation francaise, des chefs de canton furent imposes. Des dynasties dirigeantes metisses (Gomez, Fernandez) emergerent au XVIe siecle de l'union entre chefs baga et Lancados portugais.",
-      "relationsWithNeighbors": "Les Baga ont entretenu des rapports conflictuels avec les Peuls du Fouta Djallon qui exercaient une pression religieuse et politique (le Fouta stationnait un santigi a Bara pour collecter des tributs). Les Soussous ont progressivement absorbe linguistiquement de nombreux Baga. Les relations commerciales avec les Mandingues incluaient le commerce du riz, des noix de kola, et du sel contre des produits manufatures.",
-      "conflictsOrAlliances": "Les Baga ont resiste pendant des siecles aux conversions forcees et aux pressions peules avant de se convertir massivement a l'islam au XVIIIe siecle. La traite atlantique des esclaves a impacte leur littoral : des comptoirs anglais et americains utilisaient les ports guineen pour les plantations americaines. La politique de demystification du regime Sekou Toure (1958-1984) a represente la plus grave crise culturelle contemporaine.",
-      "diaspora": "Les Baga sont principalement sedentaires sur le littoral de Guinee. Une migration interne vers Conakry et les centres miniers (mines de bauxite des iles de Los) s'est developpee depuis l'independance. Pas de diaspora internationale significative documentee."
+      "kingdomsOrChiefdoms": null,
+      "relationsWithNeighbors": "Dans les années 1950, des Soussou et des Foula vivent dans presque chaque village baga, comme commerçants ou éleveurs, à côté de pêcheurs nalou ou wolof, selon Denise Paulme. À Kawas, en pays sitemou, le recensement de 1955 compte 570 Baga sur 1 131 habitants. Des Soussou venus de l'intérieur prennent possession de rizières mises en gage.",
+      "conflictsOrAlliances": "En 1956-1957, le mouvement du prédicateur Asekou Sayon détruit les objets rituels des Baga, selon Ramon Sarró. Denise Paulme décrit aussi une rivalité constante à l'intérieur de la société baga : Bangoura contre Kamara, jeunes contre vieux, hommes contre femmes.",
+      "diaspora": "Denise Paulme note en 1957 que les jeunes Baga partent vers les villes, par la route qui relie Conakry à Boké, et reviennent rarement au village."
     },
     "demography": {
-      "totalPopulation": 80000,
-      "referenceYear": 2025,
-      "source": "Estimation etablie a partir de 101 Last Tribes (environ 80 000 personnes pour l'ensemble du groupe Baga, avec une population proche de 80 000 mentionnee), des donnees Ethnologue pour les sous-groupes linguistiques, et de la proportion de la population guineenne. La population exacte est difficile a etablir en raison des processus d'assimilation en cours (de nombreux Baga se declarent Soussous dans les recensements).",
+      "totalPopulation": null,
+      "referenceYear": 1955,
+      "source": "Denise Paulme, 1957, d'après son enquête de 1954-1955 : environ 12 000 Baga Sitemou et moins de 9 000 Baga Foré, sans chiffre pour les Baga Koba ; David Berliner compte environ 6 000 Bulongic entre 1998 et 2001. Ces chiffres ne portent que sur une partie des groupes baga.",
       "distributionByCountry": [
         {
           "country": "GIN",
-          "population": 80000,
-          "note": "Totalite du groupe Baga, littoral entre Boke, Boffa et Conakry"
+          "population": null,
+          "note": "Côte de Guinée, cercles de Boké et de Boffa, jusqu'aux environs de Conakry"
         }
       ]
     },
+    "gaps": [
+      {
+        "field": "content.historicalRole.kingdomsOrChiefdoms",
+        "reason": "Les études de Denise Paulme (1957) et de David Berliner (2008) décrivent des villages et des quartiers dirigés par leurs doyens. Elles ne parlent pas d'un royaume ni d'une chefferie qui réunirait plusieurs villages baga."
+      },
+      {
+        "field": "content.demography.totalPopulation",
+        "reason": "Denise Paulme (1957) et David Berliner (2008) donnent des chiffres pour certains groupes baga seulement. Glottolog ne donne pas de chiffre, et nous n'avons pas trouvé de recensement récent qui compte l'ensemble des Baga."
+      }
+    ],
     "sources": [
       {
         "title": "Kutubu Arts. The Baga People of Guinea: History, Culture, and the Iconic Nimba Mask. (2025)",
@@ -122,11 +127,67 @@
         "url": "https://www.ethnologue.com/subgroup/1232/",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Denise Paulme, « Des riziculteurs africains : les Baga (Guinée française) », Cahiers d'outre-mer, n° 39, 1957",
+        "url": "https://www.persee.fr/doc/caoum_0373-5834_1957_num_10_39_2044",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de 22 pages (p. 257-278), fondé sur une enquête menée en 1954 et 1955. Lu le 3 novembre 2026 sur Persée, dans le texte intégral."
+      },
+      {
+        "title": "David Berliner, « Transmettre la peur et la fascination », Systèmes de pensée en Afrique noire, n° 18, 2008",
+        "url": "https://journals.openedition.org/span/774",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article fondé sur des séjours faits entre 1998 et 2001, surtout à Monchon. Lu le 3 novembre 2026 sur OpenEdition."
+      },
+      {
+        "title": "J. D. Y. Peel, compte rendu de Ramon Sarró, The Politics of Religious Change on the Upper Guinea Coast: Iconoclasm Done and Undone, Etnográfica, vol. 15, n° 2, 2011",
+        "url": "https://journals.openedition.org/etnografica/993",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Compte rendu, p. 395-399, du livre publié par Edinburgh University Press en 2009. Lu le 3 novembre 2026 sur OpenEdition."
+      },
+      {
+        "title": "Frederick John Lamp, « Naming the Baga: Problems in the Identity of a Guinean Cultural Amalgamation », History in Africa, vol. 48, 2021",
+        "url": "https://www.cambridge.org/core/journals/history-in-africa/article/naming-the-baga-problems-in-the-identity-of-a-guinean-cultural-amalgamation/378261B61C179DEE86AFB02880B07183",
+        "tier": "unverified",
+        "source_kind": "academic",
+        "notes": "Article publié par Cambridge University Press, p. 211-236. Lu le 3 novembre 2026 : résumé en anglais et en français seulement."
+      },
+      {
+        "title": "Glottolog 5.3 — Northern Mel (temn1245) et Naluic (nalu1241)",
+        "url": "https://glottolog.org/resource/languoid/id/temn1245",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue de langues de l'Institut Max Planck d'anthropologie évolutionniste. Lu le 3 novembre 2026 : fiches du baga sitemu, du baga koga, du baga manduri, du pukur, du mbulungish, du baga kaloum et du baga sobané."
+      },
+      {
+        "title": "Konstantin Pozdniakov, Proto-Fula–Sereer: Lexicon, morphophonology, and noun classes, Niger-Congo Comparative Studies 3, 2022",
+        "url": "https://hal.science/hal-03998687",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Language Science Press, 2022. Lu le 3 novembre 2026 sur HAL : introduction, p. 1-2, et la classification des langues atlantiques de Pozdniakov et Segerer."
+      },
+      {
+        "title": "Sigismund Wilhelm Koelle, Polyglotta Africana, 1854",
+        "url": "https://archive.org/details/polyglottaafrica00koel",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Londres, Church Missionary House, 1854. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive : remarques sur le baga, p. 2."
+      },
+      {
+        "title": "Metropolitan Museum of Art, D'mba (great mother) headdress, numéro d'inventaire 1979.206.17",
+        "url": "https://www.metmuseum.org/art/collection/search/312189",
+        "tier": "unverified",
+        "source_kind": "archive",
+        "notes": "Notice du musée, New York. Lu le 3 novembre 2026 dans les données ouvertes du musée."
       }
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Baga désigne des peuples de la côte de Guinée, entre le rio Nunez et Conakry, qui l'emploient eux-mêmes entre leurs groupes. Il apparaît par écrit dès 1594. On ne sait pas avec certitude d'où il vient : les sources que nous avons lues ne l'expliquent pas.",
+    "summary": "Le nom Baga désigne des peuples de la côte de Guinée, entre le rio Nunez et Conakry, qui l'emploient eux-mêmes entre leurs groupes. Il apparaît par écrit dès 1594, sous la forme « Bagas ». Il réunit des groupes aux parlers différents, que les linguistes rangent aujourd'hui dans deux groupes de langues. Nous présentons son histoire plus bas.",
     "names": [
       {
         "nameText": "Baga",
@@ -134,10 +195,62 @@
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom des peuples de la côte de Guinée ; écrit dès 1594, son origine reste inconnue.",
+        "shortLine": "Le nom des peuples de la côte de Guinée, écrit dès 1594, porté par des groupes aux parlers différents.",
         "usedIn": ["fra", "sus"],
         "periodLabel": "Écrit dès 1594 ; en usage aujourd'hui",
         "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom Baga figure aujourd'hui dans le nom de plusieurs langues du catalogue Glottolog, qui les range dans deux groupes différents. Le baga sitemu, le baga koga et le baga manduri sont rangés avec le temné, dans le groupe mel ; le baga pukur et le mbulungish, avec le nalou, dans le groupe nalou.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Northern Mel (temn1245)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/temn1245",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 3 novembre 2026 : le catalogue range sous ce nom le baga sitemu, le baga koga, le baga manduri, le landouma et le temné."
+              },
+              {
+                "title": "Glottolog 5.3 — Naluic (nalu1241)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/nalu1241",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 3 novembre 2026 : le catalogue range sous ce nom le nalou, le mbulungish et le pukur, avec ses parlers baga binari et baga mboteni."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Baga a servi, le long de la côte de Guinée, à couvrir un large ensemble de groupes culturels, selon l'historien de l'art Frederick Lamp. Lamp compte cinq groupes de parlers appelés Baga dans le groupe de langues temné. Il suit l'histoire du nom Baga à côté de celle du nom Temné, en Sierra Leone.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Naming the Baga: Problems in the Identity of a Guinean Cultural Amalgamation, History in Africa, vol. 48",
+                "author": "Frederick John Lamp",
+                "year": 2021,
+                "url": "https://www.cambridge.org/core/journals/history-in-africa/article/naming-the-baga-problems-in-the-identity-of-a-guinean-cultural-amalgamation/378261B61C179DEE86AFB02880B07183",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "page": "p. 211-236",
+                "notes": "Cambridge University Press, pour l'African Studies Association. Lu le 3 novembre 2026 : résumé en anglais et en français seulement."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1957,
@@ -145,7 +258,7 @@
               "label": "Usage décrit par l'autrice"
             },
             "era": "colonial",
-            "statement": "Le nom Baga désigne les riziculteurs qui peuplent la côte marécageuse de Guinée, de la rive sud du rio Nunez jusqu'à la hauteur de Conakry, selon l'ethnologue Denise Paulme. Pour les Baga eux-mêmes, sont Baga les descendants de ceux qui sont venus chercher refuge dans les marais. On ne sait pas avec certitude d'où vient ce nom.",
+            "statement": "Le nom Baga désigne les riziculteurs qui peuplent la côte marécageuse de Guinée, de la rive sud du rio Nunez jusqu'à la hauteur de Conakry, selon l'ethnologue Denise Paulme. Pour les Baga eux-mêmes, sont Baga les descendants de ceux qui sont venus chercher refuge dans les marais.",
             "aspect": "meaning",
             "sources": [
               {
@@ -220,6 +333,16 @@
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
                 "notes": "Londres, Church Missionary House, 1854. Lu le 11 octobre 2026 dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown ; pour le baga, son informateur, Stephen, venait du pays de Kalum."
+              },
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/polyglottaafrica00koel",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 2",
+                "notes": "Londres, Church Missionary House, 1854. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive, remarques d'introduction sur le baga. L'informateur de Koelle, Stephen, venait du village de Balanser, en face des îles de Los."
               }
             ]
           },

@@ -126,66 +126,69 @@
   },
   "content": {
     "searchAnswer": {
-      "lead": "Un tout petit ensemble de deux langues à clics, en Namibie et au Botswana. Son nom, créé en 2010, vient d'un mot commun aux deux branches, qui veut dire « terre » ou « sol ».",
+      "lead": "Une petite famille de langues à clics de Namibie, du Botswana et d'Angola, le ju et le ǂʼamkoe. Son nom, créé en 2010, vient d'un mot commun aux deux branches qui veut dire « terre ».",
       "followUp": "Pourquoi sépare-t-on ces langues des autres langues à clics ?"
     },
     "decolonialHeader": {
-      "whyProblematic": " **PREUVES - Auteurs coloniaux problématiques :** - Joseph Greenberg (1963) dans *The Languages of Africa* a créé la catégorie \"Khoisan\" comme macro-famille regroupant toutes les langues à clics d'Afrique australe sans preuve génétique solide. *(Définition : une langue à clic est une langue utilisant des consonnes à clics comme phonèmes distinctifs. Les clics sont des sons produits en créant une occlusion dans la bouche et en relâchant l'air, produisant un son distinctif. Les langues à clics sont principalement présentes en Afrique australe et orientale, avec des inventaires variant de quelques clics à plus de 50 phonèmes clics distincts.)*",
-      "selfAppellation": null,
-      "contemporaryUsage": " Petite famille linguistique à clics d'Afrique australe, reconnue académiquement en 2010, regroupant les langues Juu (dialectes Ju|'hoan et variétés apparentées) et ǂHoan. Parlée principalement par les populations autochtones Ju|'hoan et ǂHoan dans le nord du désert du Kalahari. Classification basée sur des reconstructions phonologiques systématiques démontrant une relation génétique entre les deux branches.",
-      "historicalAppellations": [],
-      "originOfHistoricalTerm": " Le terme « Kx'a » a été introduit par Henry Honken et Bernd Heine en 2010 dans leur ouvrage \"The Kx'a Family: A New Khoisan Genealogy\" publié dans le *Journal of Asian and African Studies* (vol. 79, p. 5–36). Le terme est basé sur le mot reconstruit *kxʼà* signifiant \"terre\" ou \"sol\", partagé par les deux branches de la famille (Juu et ǂHoan). Cette reconstruction phonologique systématique a démontré la relation génétique entre les langues Ju (ex. Ju|'hoan) et ǂHoan, formant une famille distincte."
+      "whyProblematic": "Le nom kx'a vient d'un mot des langues de la famille, pas de l'extérieur. Ce sont ses prédécesseurs qui posent problème : le nom de khoïsan du Nord rattachait ces langues à un ensemble khoïsan dont l'unité n'est pas démontrée, selon Brigitte Pakendorf et Mark Stoneking (2021), et dont le nom vient de l'anthropologie physique. Les noms des langues changent aussi : ǂʼAmkoe est le vrai nom de la langue des ǂHoan, mais les généticiens ont gardé l'ancien nom, selon les mêmes auteurs.",
+      "selfAppellation": "Les locuteurs n'emploient pas le nom kx'a, qui est un nom de linguistes. Chaque peuple porte son propre nom, comme les Juǀʼhoansi ; la langue des ǂHoan s'appelle ǂʼAmkoe, selon Brigitte Pakendorf et Mark Stoneking.",
+      "contemporaryUsage": "Le nom kx'a est employé par le catalogue Glottolog, par l'atlas des structures des langues WALS et par les études récentes. Glottolog y compte cinq langues : le ǂʼamkoe, au Botswana, et quatre langues ju, du nord de la Namibie et de l'Angola jusqu'au Botswana. Anne-Maria Fehn et ses collègues (2025) préfèrent parler de deux branches, l'une formée par les parlers ǃxun, l'autre par les trois parlers du ǂʼamkoe. En Namibie, le juǀʼhoan est la seule langue san que le ministère de l'Éducation utilise pour enseigner, notamment dans les écoles de village du Nyae Nyae, dans la région de Tsumkwe, selon un rapport des Nations unies de 2013.",
+      "historicalAppellations": ["Khoïsan du Nord", "Ju-ǂHõa"],
+      "originOfHistoricalTerm": "Avant 2010, les deux branches de la famille étaient classées séparément. Joseph Greenberg rangeait les langues ju, qu'il appelait langues des Auen et des Kung, dans le khoïsan du Nord ; le ǂhoan était plutôt rattaché au khoïsan du Sud, selon Bernd Heine et Henry Honken. Tom Güldemann parle déjà en 2007 d'une famille ju-ǂhõa, à la suite d'Ernst Westphal, de Bonny Sands et d'Henry Honken.\n\nEn 2010, Bernd Heine et Henry Honken proposent le nom kx'a, tiré d'une racine kxʼà, « terre, sol », commune aux deux branches. Ils suivent ainsi une habitude des linguistes, qui remplacent depuis les années 1970 les noms géographiques de ces familles, comme Nord, Centre ou Sud, par des mots tirés des langues elles-mêmes, selon Tom Güldemann (2005).",
+      "linkWithFamily": "Le kx'a est une famille indépendante, rattachée à aucun ensemble plus vaste, selon le catalogue Glottolog, qui suit Bernd Heine et Henry Honken (2010) et Tom Güldemann (2018). Il a deux branches, le ju, aussi appelé ǃxun, et le ǂʼamkoe. Le kx'a et le tuu pourraient avoir un ancêtre commun, mais ce n'est pas démontré ; leurs ressemblances peuvent aussi venir de longs contacts, selon Anne-Maria Fehn et ses collègues (2025). Le khoe-kwadi n'est apparenté ni à l'un ni à l'autre, selon Brigitte Pakendorf et Mark Stoneking (2021).",
+      "geographicArea": "Namibie, Botswana, Angola, Afrique du Sud",
+      "numberOfLanguages": 5,
+      "totalSpeakers": null
     },
     "generalInfo": {
       "branches": [
-        "ǂʼAmkoe (anciennement ǂHoan ; N!aqriaxe, Sasi)",
-        "Ju / Ju-Kung (Juǀʼhoan et variétés apparentées, !Kung, Vasekela)"
+        "Ju ou ǃxun (quatre langues pour Glottolog : ju du Nord, du Centre-Nord, du Centre et du Sud-Est, dont le juǀʼhoan)",
+        "ǂʼAmkoe (parlers nǃaqriaxe, ǂhoan et sasi)"
       ],
-      "geographicArea": "Nord du désert du Kalahari : principalement en Namibie (régions de Tsumkwe, Grootfontein, Otjozondjupa) et au Botswana (régions de Ghanzi, Kgalagadi, Ngamiland). Présence minoritaire en Angola (province de Cuando Cubango). Zones arides et semi-arides du Kalahari central et septentrional.",
-      "numberOfLanguages": 2,
-      "totalSpeakers": null
+      "geographicArea": "Les langues ju sont parlées en Namibie, au Botswana et en Angola, et le ju du Centre-Nord aussi en Afrique du Sud, selon Glottolog. Le ǂʼamkoe est parlé à la limite sud du Kalahari, au Botswana, selon Linda Gerlach.",
+      "numberOfLanguages": 5,
+      "totalSpeakers": null,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "Selon Glottolog, édition 5.3 ; d'autres auteurs parlent de deux langues, le ju et le ǂʼamkoe"
+        },
+        "totalSpeakers": {
+          "note": "Pas de chiffre vérifié pour l'ensemble. Au Botswana, 1 059 personnes parlent surtout une langue kx'a à la maison (recensement de 2022) ; le ǂʼamkoe compte une centaine de locuteurs, selon Linda Gerlach (2016). Nous n'avons pas de chiffre pour la Namibie et l'Angola",
+          "unsourced": true
+        }
+      }
     },
     "associatedPeoples": [
       {
-        "name": "Ju|'hoansi",
+        "name": "Juǀʼhoansi",
         "peopleId": "PPL_JUHOANSI"
       },
       {
         "name": "ǂHoan",
         "peopleId": "PPL_HOA"
-      },
-      {
-        "name": "Autres groupes ju minoritaires",
-        "peopleId": null
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " **OBLIGATOIRE - Exemples CONCRETS :** **Ordre des mots :** Structure généralement SVO (sujet-verbe-objet) en Ju|'hoan, avec variations selon le contexte pragmatique.",
-      "phonologicalFeatures": " **Détails précis :** **Inventaires de clics :** Extrêmement riches, parmi les plus complexes au monde.",
-      "relationsWithNeighbors": " **Exemples concrets d'emprunts avec mots précis :** **Emprunts aux langues Khoe :**",
-      "keyInnovations": " **Traits spécifiques avec exemples :** **Clics bilabiaux :** Innovation phonologique rare, particulièrement développée en ǂHoan (ǂʼAmkoe). - Le clic bilabial ʘ est présent dans ǂHoan mais absent ou rare dans d'autres familles linguistiques."
+      "typology": "Le juǀʼhoan place le sujet, puis le verbe, puis l'objet, selon l'atlas WALS. Il met l'adjectif, le démonstratif et le nombre après le nom, mais le possesseur avant lui, et emploie des postpositions. Il ajoute très peu d'éléments aux mots : pas de cas, pas de marque de temps sur le verbe, et un petit mot séparé pour le pluriel. Il range les noms en cinq classes ou plus. Le ǂhoan suit aussi l'ordre sujet, verbe, objet, avec l'adjectif après le nom. Ces langues s'opposent ainsi au khoekhoe, qui place le verbe à la fin et ajoute beaucoup de suffixes.",
+      "phonologicalFeatures": "Les langues ju et le ǂʼamkoe ont de très nombreux clics, plus de trente chacune, selon Tom Güldemann (2007), et environ 60 % des mots du juǀʼhoan contiennent un clic. L'inventaire du juǀʼhoan réuni par la base PHOIBLE compte 48 clics. Selon l'atlas WALS, le juǀʼhoan a un grand nombre de consonnes, dont des consonnes éjectives, et un système de tons complexe. À l'intérieur du ju, les parlers ont fusionné certains clics de façon différente : au sud-est avec le clic alvéolaire, au nord avec le clic latéral, selon Brigitte Pakendorf et ses collègues (2017), qui citent Bonny Sands. Nous n'avons pas encore de source sur les voyelles et les tons du ǂʼamkoe.",
+      "relationsWithNeighbors": "Au centre du Kalahari, les langues khoe des chasseurs-cueilleurs, comme le gǀui, le gǁana et le naro, donnent des mots au ǂʼamkoe et au ǃxun du Sud-Est, et en reçoivent aussi : c'est une petite zone d'échanges égaux, selon Anne-Maria Fehn et ses collègues (2025). Dans la région de l'Okavango et du Zambèze, des langues bantoues ont emprunté des mots à plusieurs parlers ju, selon Brigitte Pakendorf et ses collègues (2017). Le ǂʼamkoe recule face au bantou : les enfants ǂhoan apprennent le kgalagadi comme première langue, avec le tswana, la langue nationale du Botswana, selon Glottolog, qui cite Herman Batibo.",
+      "keyInnovations": "La parenté entre le ju et le ǂʼamkoe repose sur des mots communs aux deux branches, comme la racine kxʼà, « terre, sol », qui a donné son nom à la famille, selon Bernd Heine et Henry Honken (2010). Nous n'avons pas encore de source qui liste les autres traits propres à cette famille."
     },
     "historyAndOrigins": {
-      "probableOrigin": " **QUI a classé ? Citer linguistes/archéologues/généticiens avec œuvres et dates :** **Théorie linguistique :**",
-      "emergencePeriod": " **QUAND en deux temporalités :** **(1) Émergence historique de la FLG :** - Les langues Kx'a sont parlées depuis plusieurs millénaires en Afrique australe.",
-      "diffusion": " **Afficher TOUTES les théories disponibles (Théorie 1, Théorie 2, etc. avec auteurs) :** **Théorie 1 - Origine autochtone du Kalahari (majoritaire) :** - Les populations Kx'a sont indigènes au Kalahari central et septentrional.",
-      "contactZones": " **Répondre à \"OÙ\" - Localiser géographiquement (régions, villes, côtes, routes précises) :** **Zones de métissage linguistique spécifiques :** **Nord Botswana :**",
-      "majorEvents": " **Chronologie avec dates précises :**"
+      "probableOrigin": "Les locuteurs des langues kx'a et tuu représentent aujourd'hui la couche la plus ancienne de chasseurs-cueilleurs d'Afrique australe, selon Anne-Maria Fehn et ses collègues (2025). Ils pourraient descendre des peuples du Late Stone Age, la dernière période de l'âge de la pierre, selon Brigitte Pakendorf et ses collègues (2017). L'archéologie et la génétique suggèrent une longue continuité du peuplement de la région avant l'arrivée de l'élevage, selon Anne-Maria Fehn et ses collègues.",
+      "emergencePeriod": "Nous n'avons pas trouvé de datation de l'ancêtre commun des langues kx'a. La génétique distingue deux groupes de populations khoisan, au nord-ouest et au sud-est du Kalahari, séparés depuis moins de 30 000 ans, selon Joseph Pickrell et ses collègues (2012) ; les Juǀʼhoansi du Nord et du Sud appartiennent au premier, mais ces groupes génétiques ne correspondent pas aux familles de langues.\n\nLa famille, elle, a été reconnue récemment : le ǂʼamkoe n'a été « découvert » par les linguistes que dans les années 1970, selon Linda Gerlach, et le nom kx'a date de 2010.",
+      "diffusion": "Nous n'avons pas encore de source sur les déplacements anciens des locuteurs des langues kx'a. Les études que nous avons lues décrivent plutôt leurs contacts : au centre du Kalahari avec les langues khoe, et dans la région de l'Okavango et du Zambèze avec les langues bantoues.",
+      "contactZones": "Le centre du Kalahari, au Botswana, est une zone d'échanges entre le ǂʼamkoe, le ǃxun du Sud-Est et les langues khoe voisines, selon Anne-Maria Fehn et ses collègues (2025). La région de l'Okavango et du Zambèze, entre l'Angola, la Namibie, le Botswana et la Zambie, met en contact des parlers ju et des langues bantoues, selon Brigitte Pakendorf et ses collègues (2017).",
+      "majorEvents": "Vers 2 000 ans avant le présent, l'élevage arrive en Afrique australe. Au plus tard vers 1200, des groupes de langue tswana s'installent au Botswana. Dans les années 1970, les linguistes commencent à étudier le ǂʼamkoe. En 2010, Bernd Heine et Henry Honken proposent la famille kx'a. En 2013, le juǀʼhoan est la seule langue san que le ministère namibien de l'Éducation utilise pour enseigner, selon les Nations unies.",
+      "historicalBreaks": "Il y a environ 2 000 ans, des éleveurs venus d'Afrique de l'Est arrivent en Afrique australe, selon Anne-Maria Fehn et ses collègues, puis les peuples de langue bantoue : au Botswana, les groupes tswana s'installent au plus tard vers l'an 1200, selon un rapport des Nations unies de 2010. En Namibie, la colonisation a marginalisé les San, qui ont perdu une grande partie de leurs terres et de leurs modes de vie, selon un rapport des Nations unies de 2013. Aujourd'hui, le ǂʼamkoe est gravement menacé : ses locuteurs ont pour la plupart environ 70 ans et les enfants ne l'apprennent plus, selon Linda Gerlach."
     },
     "distribution": {
       "totalSpeakers": null,
       "distributionByCountry": {
-        "NAM": 30000,
-        "BWA": 5050
+        "BWA": 1059
       }
     },
     "sources": [
-      {
-        "title": "Honken, H. & Heine, B. (2010) – *The Kx'a Family: A New Khoisan Genealogy*. *Journal of Asian and African Studies*, vol. 79, p. 5–36",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
       {
         "title": "Sands, B. (1998) – *The Linguistic Relationship between the Khoisan Languages*. In *Language and Linguistics in Southern Africa: Studies in the History of Language and Society*. Witwatersrand University Press",
         "url": null,
@@ -193,40 +196,18 @@
         "source_kind": "academic"
       },
       {
-        "title": "Traill, A. (1998) – *The Khoisan Languages*. In *The Cambridge Encyclopedia of the World's Ancient Languages*. Cambridge University Press",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
         "title": "Westphal, E. O. J. (1963) – *The linguistic prehistory of southern Africa: Bush, Kwadi, Hottentot, and Bantu linguistic relationships*. *Africa*, vol. 33, no. 3, p. 237–265",
-        "url": null,
+        "url": "https://doi.org/10.2307/1157418",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Article de la revue Africa ; référence vérifiée dans le registre Crossref. Nous n'en avons pas lu le texte."
       },
       {
         "title": "Greenberg, J. H. (1963) – *The Languages of Africa*. Indiana University Press",
         "url": null,
         "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "SIL International (2025) – *Ethnologue: Languages of the World*",
-        "url": "https://www.ethnologue.com/",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
-      },
-      {
-        "title": "United Nations (2025) – *World Population Prospects*",
-        "url": "https://population.un.org/wpp/",
-        "tier": "official",
-        "source_kind": "intergovernmental"
-      },
-      {
-        "title": "UNESCO (2025) – *Atlas of the World's Languages in Danger*",
-        "url": "http://www.unesco.org/languages-atlas/",
-        "tier": "official",
-        "source_kind": "intergovernmental"
+        "source_kind": "academic",
+        "notes": "Ouvrage de référence de la classification des langues d'Afrique ; nous en avons lu la présentation par l'auteur dans l'Histoire générale de l'Afrique."
       },
       {
         "title": "Heine, B. & Nurse, D. (2000) – *African Languages: An Introduction*. Cambridge University Press",
@@ -235,35 +216,140 @@
         "source_kind": "academic"
       },
       {
-        "title": "Henn, B. M., Gignoux, C. R., Jobin, M., Granka, J. M., Macpherson, J. M., Kidd, J. M., ... & Mountain, J. L. (2011) – *Hunter-gatherer genomic diversity suggests a southern African origin for modern humans*. *Proceedings of the National Academy of Sciences*, vol. 108, no. 13, p. 5154–5162",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic"
+        "title": "Statistics Botswana (2022) – Botswana Population & Housing Census 2022, Analytical Report Volume 1",
+        "url": "https://statsbots.org.bw/sites/default/files/census_documents/Botswana%20Population%20%26%20Housing%20Census%202022%20Analytical%20Report%20Volume%201-Demographic%20and%20Social%20Characteristics%2CRegistration%2C%20Youth%20and%20Elderly%2CEducation.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport officiel du recensement du Botswana. L'annexe 4 donne la langue la plus parlée à la maison : 11 751 personnes pour le naro, 1 944 pour le sekhwedam, 832 pour le kua, 703 pour le gǀui, 398 pour le gǁana, 108 pour le nama, 77 pour le shua et 73 pour le tsowa, soit 15 886 personnes pour ces langues khoe. Deux tableaux du rapport échangent par erreur les totaux du sesarwa et du thimbukushu."
       },
       {
-        "title": "Tishkoff, S. A., Reed, F. A., Friedlaender, F. R., Ehret, C., Ranciaro, A., Froment, A., ... & Williams, S. M. (2009) – *The genetic structure and history of Africans and African Americans*. *Science*, vol. 324, no. 5930, p. 1035–1044",
-        "url": null,
+        "title": "The Kx'a Family: A New Khoisan Genealogy, Journal of Asian and African Studies, no 79",
+        "author": "Bernd Heine et Henry Honken",
+        "year": 2010,
+        "url": "https://doi.org/10.15026/57434",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Tokyo, Institut de recherche sur les langues et cultures d'Asie et d'Afrique. Lu en texte intégral dans la copie du dépôt de l'université des études étrangères de Tokyo."
       },
       {
-        "title": "Glottolog 5.0 (2024) – Classification du nœud \"Kxa\" [kxaa1236] : deux branches directes, \"ǂʼAmkoe\" [hoaa1235] et \"Ju-Kung\" [juku1256]",
+        "title": "Glottolog 5.3 — Kx'a (kxaa1236)",
         "url": "https://glottolog.org/resource/languoid/id/kxaa1236",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max Planck d'anthropologie évolutionniste. La famille kx'a y compte 5 langues : le ǂʼamkoe et quatre langues ju. Les fiches de chaque langue donnent les pays où elle est parlée et leur degré de menace."
       },
       {
-        "title": "SIL Ethnologue (16e éd., 2009) – Juǀʼhoan [ktz] : Namibie ≈30 000, Botswana ≈5 000 locuteurs. (chiffres vérifiés via Wikipédia FR « Juǀʼhoan », consulté en 2026 ; accès direct à ethnologue.com bloqué depuis cet environnement)",
-        "url": "https://www.ethnologue.com/language/ktz/",
+        "title": "Glottolog 5.3 — South-Eastern Ju (juho1239) et ǂʼAmkoe (hoaa1235)",
+        "url": "https://glottolog.org/resource/languoid/id/hoaa1235",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Fiches du catalogue Glottolog. Elles donnent les pays où chaque langue est parlée et son degré de menace ; celle du ǂʼamkoe cite Herman Batibo (2005) sur le passage des enfants au kgalagadi."
       },
       {
-        "title": "Gerlach, Linda (2015) – *Phonetic and phonological description of the Nǃaqriaxe variety of ǂʼAmkoe and the impact of language contact*. PhD dissertation, Humboldt University of Berlin, p. 14-15. [ǂʼAmkoe occidental : 20-50 locuteurs, Botswana]",
-        "url": null,
+        "title": "Pakendorf, Brigitte & Stoneking, Mark (2021) – \"The genomic prehistory of peoples speaking Khoisan languages\", Human Molecular Genetics 30(R1), pp. R49-R55",
+        "url": "https://doi.org/10.1093/hmg/ddaa221",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Article de synthèse en libre accès, lu en entier. Il présente les trois familles de langues à clics d'Afrique australe, les modes de vie des peuples qui les parlent et ce que la génétique dit de leur histoire."
+      },
+      {
+        "title": "Fehn, Anne-Maria et al. (2025) – \"Tracing contact and migration in pre-Bantu Southern Africa through lexical borrowing\", Evolutionary Human Sciences 7, e25",
+        "url": "https://doi.org/10.1017/ehs.2025.10014",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article en libre accès d'une équipe de linguistes et de chercheurs du Botswana, du Mozambique, du Portugal et des États-Unis, lu en entier. Il étudie les mots empruntés entre les trois familles de langues à clics d'Afrique australe."
+      },
+      {
+        "title": "Güldemann, Tom (2007) – Clicks, genetics, and \"proto-world\" from a linguistic perspective, University of Leipzig Papers on Africa, Languages and Literatures 29",
+        "url": "https://ul.qucosa.de/api/qucosa%3A33611/attachment/ATT-0/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Leipzig, université de Leipzig, 2007. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+      },
+      {
+        "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+        "author": "Tom Güldemann",
+        "year": 2005,
+        "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+      },
+      {
+        "title": "Pakendorf, Brigitte, Gunnink, Hilde, Sands, Bonny & Bostoen, Koen (2017) – \"Prehistoric Bantu-Khoisan language contact: A cross-disciplinary approach\", Language Dynamics and Change 7(1), pp. 1-46",
+        "url": "https://hal.science/hal-01960282",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de revue lu en entier dans la copie des auteurs déposée sur HAL. Il décrit les clics des langues bantoues et leurs emprunts aux langues khoisan."
+      },
+      {
+        "title": "WALS Online, valeurs du juǀʼhoan et du ǂhoan",
+        "author": "Matthew S. Dryer et Martin Haspelmath (dir.)",
+        "url": "https://wals.info/languoid/lect/wals_code_juh",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des structures des langues publié par l'Institut Max Planck d'anthropologie évolutionniste. Le lien mène aux valeurs du juǀʼhoan ; celles du ǂhoan sont à la fiche wals_code_huc."
+      },
+      {
+        "title": "PHOIBLE 2.0, inventaire des sons du juǀʼhoan (UPSID 432)",
+        "author": "Steven Moran et Daniel McCloy (dir.)",
+        "year": 2019,
+        "url": "https://phoible.org/inventories/view/432",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Base de données des systèmes de sons des langues, publiée par l'Institut Max Planck de Iéna. L'inventaire du juǀʼhoan, d'après Jan Snyman, compte 48 clics."
+      },
+      {
+        "title": "Gerlach, Linda (2016) – Nǃaqriaxe: The Phonology of an Endangered Language of Botswana. Harrassowitz, Wiesbaden",
+        "url": "https://www.harrassowitz-verlag.de/title_988.ahtml",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Livre tiré de la thèse de l'autrice à l'université Humboldt de Berlin. Nous en avons lu la présentation publiée par l'éditeur."
+      },
+      {
+        "title": "Nations unies, Conseil des droits de l'homme (2013) – Rapport du Rapporteur spécial sur les droits des peuples autochtones, James Anaya : la situation en Namibie (A/HRC/24/41/Add.1)",
+        "url": "https://documents.un.org/doc/undoc/gen/g13/151/05/pdf/g1315105.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Rapport officiel lu en entier, version anglaise. Il estime la population san de Namibie à 30 000 à 36 000 personnes et décrit l'enseignement en juǀʼhoan."
+      },
+      {
+        "title": "Nations unies, Conseil des droits de l'homme (2010) – Rapport du Rapporteur spécial sur les droits des peuples autochtones, James Anaya : la situation au Botswana (A/HRC/15/37/Add.2)",
+        "url": "https://documents.un.org/doc/undoc/gen/g10/139/68/pdf/g1013968.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Rapport officiel lu en entier, version anglaise. Il estime la population basarwa du Botswana à 50 000 à 60 000 personnes."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+        "author": "Joseph H. Greenberg",
+        "year": 1980,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, lu dans l'exemplaire numérisé du volume."
+      },
+      {
+        "title": "Pickrell, Joseph K. et al. (2012) – *The genetic prehistory of southern Africa*. *Nature Communications*. arXiv:1207.5552",
+        "url": "https://arxiv.org/abs/1207.5552",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de génétique paru dans Nature Communications, vol. 3, 1143, lu dans sa version déposée sur arXiv. Il date d'environ 1 200 ans le début des mélanges avec des populations non khoisan."
       }
-    ]
+    ],
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "BWA",
+          "speakers": 1059,
+          "source": {
+            "title": "Statistics Botswana (2022) – Botswana Population & Housing Census 2022, Analytical Report Volume 1",
+            "url": "https://statsbots.org.bw/sites/default/files/census_documents/Botswana%20Population%20%26%20Housing%20Census%202022%20Analytical%20Report%20Volume%201-Demographic%20and%20Social%20Characteristics%2CRegistration%2C%20Youth%20and%20Elderly%2CEducation.pdf",
+            "tier": "official",
+            "notes": "Personnes dont la langue la plus parlée à la maison est le juǀʼhoan (704), le ǂkx'auǁ'ein (334) ou le ǂhua (21), au recensement de 2022 (annexe 4). Le recensement ne compte pas ceux qui parlent ces langues en deuxième langue."
+          }
+        }
+      ]
+    }
   }
 }

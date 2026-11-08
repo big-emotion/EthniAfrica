@@ -2,6 +2,7 @@
   "id": "FLG_OMOTIQUE",
   "nameFr": "Omotique",
   "nameEn": "Omotic",
+  "classificationStatus": "reconstructive",
   "nameHistory": {
     "summary": "Le nom omotique désigne une famille de langues du sud-ouest de l'Éthiopie, comme le welamo, le kafa ou l'ari, parlées surtout dans le bassin de l'Omo. C'est un nom de linguiste, proposé autour de 1970 ; on disait avant couchitique occidental. Les sources ne s'accordent pas toujours sur ce regroupement ; nous les présentons plus bas.",
     "names": [
@@ -42,6 +43,7 @@
               "to": 1988,
               "label": "1988"
             },
+            "era": "modern",
             "statement": "Le nom omotique désigne pour I. M. Diakonoff une des six branches de la famille qu'il appelle afrasienne. Il signale que ce classement à part a été discuté, notamment par le linguiste Zaborski.",
             "aspect": "usage",
             "sources": [
@@ -84,7 +86,8 @@
               "to": 1973,
               "label": "Conférence de 1971, publiée en 1973"
             },
-            "statement": "Le nom omotique apparaît sous sa forme anglaise « Omotic » chez le linguiste américain Harold C. Fleming, qui écrit avoir rebaptisé ainsi le couchitique occidental et en faire une famille distincte. Les sources que nous avons lues ne disent pas pourquoi il a choisi ce nom. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "era": "modern",
+            "statement": "Le nom omotique apparaît sous sa forme anglaise « Omotic » chez le linguiste américain Harold C. Fleming, qui écrit avoir rebaptisé ainsi le couchitique occidental et en faire une famille distincte. C'est la plus ancienne trace de ce nom que nous ayons lue. Les langues qu'il réunit existaient déjà avant lui.",
             "formAsWritten": "Omotic",
             "birth": true,
             "actors": [
@@ -105,6 +108,28 @@
                 "page": "p. 88"
               }
             ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "2016"
+            },
+            "era": "modern",
+            "statement": "Le nom omotique vient du fleuve Omo, selon la linguiste Sara Petrollino : Harold Fleming l'a choisi parce que la plupart de ces langues sont parlées dans la région que traverse l'Omo, dans le sud-ouest de l'Éthiopie.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Grammar of Hamar: A South Omotic Language of Ethiopia",
+                "author": "Sara Petrollino",
+                "year": 2016,
+                "url": "https://hdl.handle.net/1887/44090",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Thèse de doctorat, université de Leiden, 2016, publiée dans la collection LOT. Lu dans l'exemplaire en accès libre, chapitre 13 sur le classement des langues omotiques.",
+                "page": "p. 267"
+              }
+            ]
           }
         ]
       },
@@ -113,9 +138,9 @@
         "nameStatus": "former",
         "selfGiven": false,
         "languageOfOrigin": null,
-        "namedBy": "Des linguistes européens",
+        "namedBy": "Le linguiste italien Martino Mario Moreno",
         "shortLine": "L'ancien nom de ces langues, quand on les rangeait parmi les langues couchitiques.",
-        "periodLabel": "Jusqu'aux années 1970",
+        "periodLabel": "De 1940 aux années 1970",
         "accounts": [
           {
             "period": {
@@ -145,6 +170,7 @@
               "to": 1973,
               "label": "Conférence de 1971, publiée en 1973"
             },
+            "era": "modern",
             "statement": "Le nom couchitique occidental ne convient plus, selon Harold C. Fleming : ses comptages de mots communs, faits sur des listes recueillies en Éthiopie, au Kenya et en Tanzanie, le conduisent à séparer ces langues du couchitique.",
             "sources": [
               {
@@ -156,6 +182,38 @@
                 "source_kind": "academic",
                 "notes": "La Haye et Paris, Mouton, 1973, actes dirigés par Isidore Dyen d'une conférence tenue à l'université Yale les 3 et 4 avril 1971. Lu dans une copie non officielle déposée sur Internet Archive.",
                 "page": "p. 85-88"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1940,
+              "to": 1940,
+              "label": "1940"
+            },
+            "era": "colonial",
+            "statement": "Le nom couchitique occidental désigne ces langues dans le classement du linguiste italien Martino Mario Moreno, publié en 1940, selon Sara Petrollino. On les appelait aussi « langues ta/ne », parce qu'elles disent ta pour « je » et ne pour « tu ». Avant lui, Enrico Cerulli les rangeait dans une branche qu'il appelait sidama, sans l'aari, le hamer, le karo et le dime.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Martino Mario Moreno",
+                "role": "classe ces langues sous le nom de couchitique occidental"
+              },
+              {
+                "name": "Enrico Cerulli",
+                "role": "les rangeait auparavant dans sa branche sidama"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Grammar of Hamar: A South Omotic Language of Ethiopia",
+                "author": "Sara Petrollino",
+                "year": 2016,
+                "url": "https://hdl.handle.net/1887/44090",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Thèse de doctorat, université de Leiden, 2016, publiée dans la collection LOT. Lu dans l'exemplaire en accès libre, chapitre 13 sur le classement des langues omotiques.",
+                "page": "p. 267"
               }
             ]
           }
@@ -189,30 +247,68 @@
                 "page": "p. 330-331"
               }
             ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Glottolog 5.3, consulté en 2026"
+            },
+            "era": "modern",
+            "statement": "Le nom ari-banna sert encore, dans la base de données Glottolog, d'autre nom pour l'omotique du Sud, le petit groupe que forment l'aari, le hamer, le karo et le dime.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — South Omotic (sout2845)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": 2025,
+                "url": "https://glottolog.org/resource/languoid/id/sout2845",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche de la famille omotique du Sud : cinq langues, l'aari, le gayil, le hamer-banna, le karo et le dime, avec un commentaire sur le rattachement de la famille."
+              }
+            ]
           }
         ]
       }
     ]
   },
   "content": {
-    "searchAnswer": {
-      "lead": "Des langues du sud-ouest de l'Éthiopie, autour de la vallée de l'Omo. Le nom a été créé par le linguiste Harold Fleming en 1969 ; l'unité du groupe est discutée.",
-      "followUp": "Pourquoi l'unité de ces langues est-elle discutée ?"
-    },
     "decolonialHeader": {
+      "linkWithFamily": "L'omotique est le plus souvent présenté comme une branche de la famille afro-asiatique, à côté du couchitique, du sémitique, du tchadique, du berbère et de l'égyptien. Ce rattachement reste discuté. La base de données Glottolog ne range pas ces langues dans l'afro-asiatique et les répartit en quatre familles sans lien établi entre elles. La base WALS, au contraire, les garde ensemble sous le nom d'omotique, dans l'afro-asiatique.",
+      "historicalAppellations": [
+        "West Cushitic",
+        "Couchitique occidental",
+        "Sidama",
+        "Ari-Banna"
+      ],
+      "originOfHistoricalTerm": "Le nom couchitique occidental vient du classement du linguiste italien Martino Mario Moreno, publié en 1940 ; avant lui, Enrico Cerulli rangeait la plupart de ces langues dans une branche qu'il appelait sidama, selon Sara Petrollino. Joseph Greenberg reprend le couchitique occidental en 1963 et y ajoute l'aari, le hamer et le dime. Harold C. Fleming montre ensuite que ces langues ne partagent pas les formes de base du couchitique. Greenberg rattache sa proposition d'en faire une branche à part à un article de Fleming paru en 1969. Lors d'une conférence tenue en 1971 à l'université Yale et publiée en 1973, Fleming écrit les avoir rebaptisées « Omotic », d'après le fleuve Omo, autour duquel la plupart sont parlées.",
+      "whyProblematic": "Le nom couchitique occidental rangeait ces langues parmi les langues couchitiques, alors qu'elles s'en écartent par les pronoms et par la conjugaison, selon Harold Fleming et David Cohen. Le nom sidama pose un autre problème : c'est le nom que les locuteurs de l'oromo donnent à leurs voisins qui ne parlent pas oromo, et il couvre des groupes aux langues très différentes, selon Cohen. Cohen note aussi que beaucoup de noms de langues de la région ont été recueillis chez les Amharas ou les Oromos plutôt que chez les locuteurs eux-mêmes. Le nom omotique, enfin, est un nom de linguiste tiré d'un fleuve, et l'unité du groupe qu'il désigne reste discutée.",
       "selfAppellation": null,
-      "contemporaryUsage": " Ensemble de langues situées principalement au sud-ouest de l'Éthiopie, parlées par plusieurs dizaines de groupes agricoles dans la vallée de l'Omo et les régions environnantes. Reconnue comme une branche indépendante de la famille afro-asiatique depuis les travaux de Fleming (1969) et Bender (1975), bien que certains linguistes (notamment concernant les sous-groupes Mao et Aroid) remettent en question l'appartenance complète à l'afro-asiatique ou suggèrent des influences nilo-sahariennes.",
-      "historicalAppellations": ["West Cushitic", "Sidama"],
-      "originOfHistoricalTerm": " Le terme « Omotic » a été créé par le linguiste Harold C. Fleming en 1969 dans son œuvre « A Classification of the North Omotic Languages » présentée lors de la Première Conférence internationale sur les études éthiopiennes (Proceedings of the First International Conference on Ethiopian Studies). Le nom dérive du fleuve Omo en Éthiopie, région centrale de répartition de nombreuses langues concernées (vallée de l'Omo, sud-ouest de l'Éthiopie). La classification omotique comme branche distincte a été consolidée par M. Lionel Bender en 1971 puis en 1975 dans « Omotic: a new Afroasiatic language family » (University Museum, Southern Illinois University)."
+      "contemporaryUsage": "Le nom omotique désigne aujourd'hui une trentaine de langues parlées surtout dans le sud-ouest de l'Éthiopie, comme le wolaytta, le gamo, le kafa, le bench, l'aari ou le hamer. Depuis les travaux d'Harold Fleming et de Lionel Bender, beaucoup de linguistes en font une branche de l'afro-asiatique, selon Sara Petrollino. D'autres en doutent : certains rattachent l'omotique du Sud aux langues nilo-sahariennes, et Rolf Theil propose d'en faire une famille à part. La base Glottolog sépare ces langues en quatre familles, tandis que la base WALS les garde ensemble.",
+      "geographicArea": "Sud-ouest de l'Éthiopie, bassin de l'Omo, Wellega, Godjam, Soudan",
+      "numberOfLanguages": 31,
+      "totalSpeakers": 5790882
     },
     "generalInfo": {
       "branches": [
-        "Ta-Ne-Omotique (Nord-Omotique)",
-        "Omotique méridional (Sud-Omotique)"
+        "Ta-ne-omotique, ou omotique du Nord (bench, langues kafa, ometo, yemsa)",
+        "Omotique du Sud, ou aroïde (aari, hamer, karo, dime)",
+        "Dizoïde (dizi, sheko, nayi)",
+        "Mao du Nil Bleu (bambassi, ganza, hozo, seze)"
       ],
-      "geographicArea": "Sud-ouest de l'Éthiopie (vallée de l'Omo, régions SNNPRS, zones Bench-Maji, Wolaytta, Gamo-Gofa, zones Mao à la frontière soudanaise). Enclaves dans les régions Oromia, Amhara, Benishangul-Gumuz. Présence limitée au Soudan (Blue Nile State) pour certaines langues Mao.",
-      "numberOfLanguages": 25,
-      "totalSpeakers": 8000000
+      "geographicArea": "Ces langues sont parlées surtout dans le sud-ouest de l'Éthiopie, entre les lacs Abaya et Chamo à l'est, la frontière du Kenya au sud et la rivière Godjeb, un affluent de l'Omo, au nord, selon David Cohen. Quelques îlots se trouvent plus au nord : le shinasha, dont les locuteurs se nomment Bworo, le long de l'Abbay, l'anfillo dans la forêt du même nom, au Wellega, et les langues mao près de la frontière du Soudan. Le ganza est parlé en Éthiopie et au Soudan, selon Glottolog.",
+      "numberOfLanguages": 31,
+      "totalSpeakers": 5790882,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "31 langues selon Glottolog, en comptant les quatre groupes que Lionel Bender réunissait sous ce nom ; 27 sans les langues mao."
+        },
+        "totalSpeakers": {
+          "note": "Au moins 5,8 millions de personnes en Éthiopie avaient une de ces langues pour langue maternelle en 2007, selon le recensement éthiopien ; le chiffre ne compte ni les langues mao ni le Soudan.",
+          "unsourced": false
+        }
+      }
     },
     "associatedPeoples": [
       {
@@ -238,24 +334,34 @@
       {
         "name": "Dizi",
         "peopleId": "PPL_DIZI"
+      },
+      {
+        "name": "Kafa",
+        "peopleId": "PPL_KAFA"
+      },
+      {
+        "name": "Dawro",
+        "peopleId": "PPL_DAWRO"
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " Langues tonales ou accentuelles, fortement suffixantes ; structure SOV (Sujet-Objet-Verbe) prédominante dans les langues Ometo, Bench, Dizi, etc. Morphologie mixte : certains traits agglutinants, d'autres plus fusionnels. Exemples concrets :",
-      "phonologicalFeatures": " Inventaire consonantique riche : généralement entre 20 et 30 phonèmes consonantiques (sons qui distinguent un mot d'un autre). Présence de trois types de consonnes pour les plosives, fricatives, affriquées : voisées, non-voisées, éjectives. Implosives dans certaines langues du Sud Omotique (ex. /ɓ/, /ɗ/, /ɠ/). Rétroflexes dans certaines langues (ex. Sheko : /ɖ/). Consonnes glottalisées (prononcées avec une brève fermeture de la glotte, au fond de la gorge), emphatiques, traits de glottalité. Réduction phonémique comparée au reste de l'Afro-asiatique : mots plus courts, nombres de consonnes/voyelles réduits. Absence ou réduction des consonnes pharyngales (caractéristique parfois considérée comme innovation ou perte par rapport au modèle afro-asiatique classique), contrairement à la plupart des branches afro-asiatiques. Système vocalique : langues du Nord et Mao : 5 à 6 voyelles phonémiques de base ; langues du Sud : systèmes plus étendus, distinctions de longueur phonémique (voyelles longs vs courts). Distinctions de hauteur et longueur vocaliques dans certaines langues. Système tonal complexe : toutes les langues omotiques bien documentées sont tonales. Usage fréquent de tons pour distinguer le sens (ton haut / bas), notamment dans Bench (six tons) ; certaines langues utilisent un accent de hauteur plutôt qu'un système tonal complet (ex. Koyra). Dizi a trois tons phonémiques et des tons contours. Dans Aari et Ganza, système accent tonal où chaque mot porte exactement un ton haut. Le ton joue un rôle fonctionnel important, notamment pour distinguer des mots monosyllabiques.",
-      "relationsWithNeighbors": " Contacts anciens avec les langues couchitiques et sémitiques éthiopiennes. Emprunts lexicaux : certaines langues omotiques ont emprunté du lexique depuis les langues Cushitic ou Nilo-Saharan dans les domaines de contact religieux, agricole, pastoral, etc. Par exemple, partage avec Cushitic du vocabulaire lié à l'apiculture selon Blench (2006) : Omotic partage vocabulaire pour miel avec Cushitic mais pas pour bétail, suggérant une séparation très ancienne avant le développement du pastoralisme. Influence culturelle/linguistique réciproque avec les langues Nilotiques et Nilo-Sahariennes dans certaines zones de contact (phonologie, lexique), surtout pour Aroid / South Omotic : emprunts lexicaux, traits phonologiques de contact. Certaines langues Mao ont été fortement influencées par des langues Koman du Nilo-Saharien. Contact intense avec langues Nilo-Sahariennes chez Mao et Aroid, qui peuvent montrer substrat ou convergence. Zones de contact linguistique : Omotic entouré par Cushitic à l'est, nord et sud-est, et par Nilo-Saharan à l'ouest, ce qui favorise les échanges linguistiques (lexique, syntaxe). Contact le long des routes de migration Cushitic → Omotic, et aux frontières avec Nilo-Saharien (Sud, Sud-est) surtout pour Aroid.",
-      "keyInnovations": " - Flexion verbale complexe avec catégories temps/aspect, négation, formes dépendantes vs indépendantes."
+      "typology": "Les langues omotiques placent en général le verbe à la fin de la phrase, après le sujet et l'objet, selon Sara Petrollino. Elles forment leurs mots surtout avec des suffixes, des terminaisons ajoutées à la fin. La base WALS classe ainsi le wolaytta et le bench parmi les langues « fortement suffixantes », où le temps et l'aspect du verbe se marquent par des suffixes. Le verbe distingue souvent l'inaccompli, une action en cours ou à venir, et l'accompli, une action achevée, par des séries de terminaisons différentes, selon David Cohen. La place de l'adjectif varie : en aari et en dime, il peut se mettre avant ou après le nom.",
+      "phonologicalFeatures": "Plusieurs langues omotiques ont des tons : la hauteur de la voix sur une syllabe peut changer le sens d'un mot ou sa fonction, selon David Cohen. En motcha, aussi appelé shekkacho, deux mots qui ne diffèrent que par le ton veulent dire « braises » et « café ». Le dizi a trois tons, haut, moyen et bas, qui servent surtout à distinguer des formes du verbe. En kullo, au contraire, la place du ton haut dépend surtout de la forme du mot. Plusieurs de ces langues, comme le kafa, le motcha ou le basketo, ont aussi des consonnes affriquées, qui commencent comme un t ou un d et finissent comme un ch ou un j. Le hamer a une consonne q prononcée au fond de la bouche, qui correspond en aari à un coup de glotte, selon Sara Petrollino.",
+      "relationsWithNeighbors": "Les langues omotiques sont depuis longtemps en contact avec des langues couchitiques et nilo-sahariennes, et ces échanges rendent leur histoire difficile à retracer, selon Sara Petrollino. Harold Fleming a trouvé beaucoup de mots communs entre les langues ometo et leurs voisines couchitiques, le sidamo et le burji, et les a expliqués par des emprunts. Pour David Cohen, les pronoms « je » et « tu » de plusieurs langues omotiques semblent empruntés à des langues nilotiques. Lionel Bender expliquait de la même façon les pronoms de l'omotique du Sud ; Andrzej Zaborski y voit au contraire la preuve d'une parenté avec le nilo-saharien.",
+      "keyInnovations": "Les langues omotiques se distinguent des autres langues afro-asiatiques par plusieurs traits. Elles n'ont pas la marque du féminin en -t, ni la conjugaison par préfixes que l'on retrouve ailleurs dans la famille, selon Sara Petrollino. La base Glottolog en tire argument pour ne pas les y rattacher. Leurs pronoms personnels diffèrent aussi de ceux du couchitique : les langues du Nord disent ta pour « je » et ne pour « tu », d'où le nom de « langues ta/ne » qu'on leur a donné à l'époque de Martino Mario Moreno. Selon David Cohen, leurs démonstratifs n'opposent pas non plus le masculin et le féminin par les consonnes k et t, comme le font les langues couchitiques. Le linguiste Richard Hayward répond que juger ces langues d'après le modèle des langues sémitiques fausse la comparaison."
     },
     "historyAndOrigins": {
-      "probableOrigin": " Classification linguistique : Harold C. Fleming (1969) a proposé que ce que l'on appelait alors « West Cushitic » soit reclassé comme une branche indépendante de l'Afro-asiatique, sous le nom d'Omotic, dans son œuvre « A Classification of the North Omotic Languages » (Proceedings of the First International Conference on Ethiopian Studies). M. Lionel Bender (1971, 1975) a poursuivi ce travail dans « Omotic: a new Afroasiatic language family » (University Museum, Southern Illinois University), affirmant que les langues omotiques forment une branche indépendante du phylum afro-asiatique. Azeb Amha (2017) dans « The Omotic Language Family » (The Cambridge Handbook of Linguistic Typology, Cambridge University Press) présente Omotic comme une branche indépendante. Théories alternatives : Certains linguistes (ex. Zaborski, certains modernistes, Güldemann 2018) suggèrent de reclasser certaines langues Omotiques (Mao, Aroid) comme non-Afro-asiatiques ou de les exclure de la cohésion interne du groupe, ou proposent qu'elles soient fortement influencées ou même issues de langues Nilo-Sahariennes (théorie de Yigezu 2013). Certains linguistes remettent en question l'appartenance même de certaines langues omotiques à la famille afro-asiatique, suggérant que certaines pourraient être plus proches de langues nilo-sahariennes ou mixtes. Théorie génétique : Études génétiques récentes (Nature Communications, 2021) montrent que les groupes Omotiques sont génétiquement distincts bien que proches de locuteurs afro-asiatiques, avec des similarités qui reflètent à la fois l'histoire linguistique et les flux culturels/génétiques locaux. Les populations Aari présentent une continuité génétique ancienne avec l'hominidé de Mota (grotte de Mota, ~4500 ans BP) qui s'associe plus étroitement aux populations omotiques modernes qu'aux groupes eurasiatiques, fournissant des preuves d'une autochtonie ancienne.",
-      "emergencePeriod": " (1) Émergence historique de la famille Omotique : Les langues proto-Omotiques auraient divergé avant le développement du pastoralisme dans la corne de l'Afrique. La séparation Nord/Sud Omotique pourrait remonter au début du 5e millénaire av. J.-C. (≈ 5000–4000 av. J.-C.), selon Blažek (2008) dans « Lexicostatistical Comparison of Omotic Languages » (John Benjamins Publishing Company). Certains indices linguistiques (vocabulaire du miel partagé avec Cushitic, mais pas de termes de bétail) suggèrent séparation très ancienne, probablement plusieurs millénaires avant notre ère. Les locuteurs omotiques sont autochtones du sud-ouest de l'Éthiopie, dans la vallée de l'Omo et ses environs, depuis plusieurs millénaires. Des preuves génétiques montrent des adaptations locales depuis longtemps. (2) Date de classification académique : Le terme « Omotic » a été introduit en 1969 par Fleming (dans Proceedings of the First International Conference on Ethiopian Studies). La classification a été consolidée par Bender en 1971 puis en 1975 dans « Omotic: a new Afroasiatic language family ». Les travaux comparatifs sérieux se multiplient depuis les années 1970-1980, avec Bender et d'autres. Adoption générale dans les années 1970–1980.",
-      "diffusion": " Théorie 1 (dominante) : Omotic comme branche autonome de l'Afroasiatique — vue majoritaire actuelle (Fleming 1969, Bender 1975, Amha 2017). Expansion depuis les zones du Sud-Ouest de l'Éthiopie, autour du fleuve Omo, vers les zones environnantes, densément peuplées, générations démographiques anciennes. Théorie 2 : Placement classique comme « West Cushitic » jusqu'aux années 1960 (Greenberg 1963, Moreno 1940), puis repositionnement comme branche indépendante de l'Afro-asiatique (Fleming, Bender). Théorie 3 : Hypothèse, pour certaines langues (Mao, Aroid), d'un lien plus fort avec langues non afro-asiatiques ou d'une classification incertaine, parfois associées au Nilo-Saharien ou isolées (Yigezu 2013, Güldemann 2018). Fragmentation ancienne en plusieurs îlots linguistiques, certaines langues maintenant isolées (e.g. Dizi entouré de langues Surmic), suggérant une distribution antérieure plus large. Théorie 4 : Séparation précoce de l'Omotic du reste de l'Afro-asiatique, avant l'expansion pastorale, d'où des différences dans le vocabulaire de l'élevage etc.",
-      "contactZones": " Région sud-ouest de l'Éthiopie : État des Nations, Nationalités et Peuples du Sud (SNNPRS), zones Omo River, Bench Maji, zones Gamo, Wolaytta, etc. Enclaves dans les régions Oromia, Amhara, Benishangul-Gumuz. Zones Mao autour de Begi (Mirab Welega), influence des langues Oromo et Koman. Régions sud où les langues Cushitic et Nilo-Sahariennes se rencontrent. Contact le long des routes de migration Cushitic → Omotic, et aux frontières avec Nilo-Saharien (Sud, Sud-est) surtout pour Aroid. Présence limitée au Soudan (États du Nil Bleu / Blue Nile State) pour certaines langues Mao (ex. Ganza, Bambassi). Routes historiques : contacts via routes de commerce est-ouest et nord-sud passant par le bassin de l'Omo, les haut-plateaux de Kaffa, etc. Forts échanges avec les peuples couchitiques. Influence oromo dans certaines zones. Contacts interethniques via marchés régionaux."
+      "probableOrigin": "Les linguistes ne s'accordent pas sur l'origine de ces langues. Pour Harold Fleming et Lionel Bender, elles forment une branche à part de la famille afro-asiatique. Pour Andrzej Zaborski, seul l'omotique du Nord en fait partie, et l'omotique du Sud se rattache aux langues nilo-sahariennes. Rolf Theil propose de traiter l'omotique comme une famille à part tant que des correspondances régulières de sons ne prouvent pas le contraire, selon Sara Petrollino. Côté génétique, l'équipe de Luca Pagani a étudié en 2012 des Aari et des Wolaytta : ces groupes se distinguent nettement des autres Éthiopiens, et les auteurs jugent ce résultat compatible avec une population éthiopienne ancienne.",
+      "emergencePeriod": "Nous n'avons pas trouvé, dans les sources consultées, de date proposée pour la formation de ce groupe de langues. Son classement, lui, a une histoire datée. Martino Mario Moreno range ces langues dans le couchitique occidental en 1940, et Joseph Greenberg y ajoute l'aari, le hamer et le dime en 1963. Harold Fleming les sépare du couchitique en 1969 et les appelle omotiques au début des années 1970. Lionel Bender y ajoute les langues mao en 2000. Aujourd'hui, Glottolog les répartit en quatre familles indépendantes.",
+      "diffusion": "Les langues omotiques étaient sans doute parlées autrefois sur un territoire plus vaste, entre les gorges du Nil Bleu et le bassin de l'Omo, selon l'historien Taddesse Tamrat. La plupart sont aujourd'hui regroupées dans une petite région du bassin de l'Omo. Pour Tamrat, le shinasha, parlé au sud-ouest du Godjam, et les langues mao, parlées au Wellega, sont les traces de cette extension plus large, antérieure à l'expansion des Oromo au XVIe siècle.",
+      "historicalBreaks": "L'expansion des Oromo, aux XVIe et XVIIe siècles, a coupé en plusieurs îlots le domaine des langues kafa, appelées aussi gonga, qui partait autrefois du sud du Godjam, selon David Cohen. Le shinasha subsiste ainsi en petites poches le long de l'Abbay, en pays de langue amharique, et l'anfillo dans une forêt du Wellega, en pays oromo. Le bosha, une variété du kafa, a disparu. Cohen rapproche peut-être de ce groupe deux langues signalées aux XVIe et XVIIe siècles, le sal et le zel, qui semblent éteintes.",
+      "contactZones": "Les langues omotiques voisinent avec des langues couchitiques et avec des langues nilo-sahariennes, selon Sara Petrollino. Les Hamar, par exemple, ont pour voisins les Aari, les Arbore, les Dhaasanac, les Nyangatom et les Kara. Selon David Cohen, le dizi est parlé dans la région de Maji, au milieu de langues qu'il appelle est-soudanaises. Le yemsa forme une enclave en pays oromo, entre les pays gurage et hadiya. Le shinasha est entouré d'amharique et l'anfillo d'oromo.",
+      "majorEvents": "L'expansion des Oromo, à partir du XVIe siècle, a réduit et fragmenté le domaine de ces langues au nord, selon Taddesse Tamrat et David Cohen. Plus au sud, Harold Fleming et Lionel Bender expliquaient certains traits communs au dizi et à l'omotique du Sud par l'ancienne puissance du royaume de Maji, dans la basse vallée de l'Omo, selon Sara Petrollino. Beaucoup de ces langues ont reçu leur nom de l'extérieur : gimira est le nom que les Amharas et les gens du Kafa donnent aux locuteurs du bench, et le chiki est d'ordinaire appelé motcha, comme le district de l'Ilubabor où il est parlé, selon David Cohen."
     },
     "distribution": {
-      "totalSpeakers": 8000000,
+      "totalSpeakers": 5790882,
       "distributionByCountry": {
-        "ETH": 5536085
+        "ETH": 5790882
       }
     },
     "sources": [
@@ -383,7 +489,102 @@
         "url": "https://ess.gov.et/wp-content/uploads/2026/06/national-population-and-housing-census-report-2007.pdf",
         "tier": "official",
         "source_kind": "official_statistics"
+      },
+      {
+        "title": "A Grammar of Hamar: A South Omotic Language of Ethiopia",
+        "url": "https://hdl.handle.net/1887/44090",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse de doctorat, université de Leiden, 2016, publiée dans la collection LOT. Lu dans l'exemplaire en accès libre, chapitre 13 sur le classement des langues omotiques. Classement, p. 267-270 ; ordre des mots, p. 159 ; voisins des Hamar, p. 1-2 ; correspondances entre hamer, aari et dime, p. 271."
+      },
+      {
+        "title": "Les langues chamito-sémitiques, chapitre V : Couchitique, omotique",
+        "url": "https://archive.org/details/cohen-ed.-les-langues-chamito-semitiques-1988",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Paris, Éditions du CNRS, 1988, troisième partie de l'ouvrage Les langues dans le monde ancien et moderne dirigé par Jean Perrot. Lu dans une copie non officielle déposée sur Internet Archive. Chapitre V, p. 243-265."
+      },
+      {
+        "title": "Glottolog 5.3 — Ta-Ne-Omotic (gong1255)",
+        "url": "https://glottolog.org/resource/languoid/id/gong1255",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la famille ta-ne-omotique : dix-neuf langues en quatre branches, bench, kefoïde, ometo et yemsa, avec un commentaire sur son rattachement à l'afro-asiatique et sur les langues mao."
+      },
+      {
+        "title": "Glottolog 5.3 — South Omotic (sout2845)",
+        "url": "https://glottolog.org/resource/languoid/id/sout2845",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la famille omotique du Sud : cinq langues, l'aari, le gayil, le hamer-banna, le karo et le dime, avec un commentaire sur le rattachement de la famille."
+      },
+      {
+        "title": "Glottolog 5.3 — Dizoid (dizo1235)",
+        "url": "https://glottolog.org/resource/languoid/id/dizo1235",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la famille dizoïde : trois langues, le dizi, le nayi et le sheko."
+      },
+      {
+        "title": "Glottolog 5.3 — Blue Nile Mao (maoo1243)",
+        "url": "https://glottolog.org/resource/languoid/id/maoo1243",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la famille mao du Nil Bleu : quatre langues, le bambassi, le ganza, le hozo et le seze. La fiche du ganza indique qu'il est parlé en Éthiopie et au Soudan."
+      },
+      {
+        "title": "WALS Online — genre Ta-Ne-Omotic",
+        "url": "https://wals.info/languoid/genus/taneomotic",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Le WALS range ce genre dans la sous-famille omotique de l'afro-asiatique. Consulté avec les fiches du wolaytta et du gimira (bench) : ordre sujet-objet-verbe, morphologie fortement suffixante, suffixes de temps et d'aspect."
+      },
+      {
+        "title": "Ethiopian Genetic Diversity Reveals Linguistic Stratification and Complex Influences on the Ethiopian Gene Pool",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3397267/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Luca Pagani et al., American Journal of Human Genetics, vol. 91, n° 1, 2012, p. 83-96. Lu dans la version en accès libre de PubMed Central."
+      },
+      {
+        "title": "General History of Africa, IV, ch. 17 : The Horn of Africa: the Solomonids in Ethiopia and the states of the Horn of Africa",
+        "url": "https://archive.org/details/unesco_general_history_africa_iv",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Taddesse Tamrat, UNESCO, 1984, édition anglaise. Lu dans la numérisation d'Internet Archive, p. 426."
+      },
+      {
+        "title": "The 2007 Population and Housing Census of Ethiopia: Statistical Report at Country Level, tableau 3.2",
+        "url": "https://catalog.ihsn.org/catalog/3583/download/50086",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Office of the Population Census Commission, Addis-Abeba, 2010, rapport mis à disposition par le catalogue de l'International Household Survey Network. Tableau 3.2, population par langue maternelle, p. 90-91. Somme de 22 langues : wolaytta 1 627 955, gamo 1 070 626, kafa 834 918, dawro 513 341, gofa 358 887, bench 347 636, aari 285 473, koorete 156 749, maale 94 746, yemsa 92 177, basketo 92 586, shekkacho 80 162, hamer 47 531, sheko 38 911, shinasha 37 459, oyda 36 946, dizi 33 927, zayse 18 512, chara 13 100, nayi 7 188, karo 1 478, dime 574, soit 5 790 882."
+      },
+      {
+        "title": "Sub-classification in Hamito-Semitic, dans Lexicostatistics in Genetic Linguistics",
+        "url": "https://archive.org/details/fleming-subclassification-in-hamito-semitic-1973",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "La Haye et Paris, Mouton, 1973, actes dirigés par Isidore Dyen d'une conférence tenue à l'université Yale les 3 et 4 avril 1971. Lu dans une copie non officielle déposée sur Internet Archive."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Des langues du sud-ouest de l'Éthiopie, autour de la vallée de l'Omo. Le linguiste Harold Fleming leur a donné ce nom vers 1970, d'après le fleuve ; l'unité du groupe est discutée.",
+      "followUp": "Pourquoi l'unité de ces langues est-elle discutée ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "ETH",
+          "speakers": 5790882,
+          "source": {
+            "title": "The 2007 Population and Housing Census of Ethiopia: Statistical Report at Country Level, tableau 3.2",
+            "url": "https://catalog.ihsn.org/catalog/3583/download/50086",
+            "tier": "official",
+            "notes": "Office of the Population Census Commission, Addis-Abeba, 2010, rapport mis à disposition par le catalogue de l'International Household Survey Network. Tableau 3.2, population par langue maternelle, p. 90-91. Somme de 22 langues : wolaytta 1 627 955, gamo 1 070 626, kafa 834 918, dawro 513 341, gofa 358 887, bench 347 636, aari 285 473, koorete 156 749, maale 94 746, yemsa 92 177, basketo 92 586, shekkacho 80 162, hamer 47 531, sheko 38 911, shinasha 37 459, oyda 36 946, dizi 33 927, zayse 18 512, chara 13 100, nayi 7 188, karo 1 478, dime 574, soit 5 790 882."
+          }
+        }
+      ]
+    }
   }
 }

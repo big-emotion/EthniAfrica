@@ -3,113 +3,550 @@
   "nameMain": "Wolof",
   "languageFamilyId": "FLG_ATLANTIQUE",
   "currentCountries": ["SEN", "GMB", "MRT"],
+  "classificationStatus": "consensual",
+  "nameHistory": {
+    "summary": "Le nom Wolof est celui que ce peuple du Sénégal, de la Gambie et de la Mauritanie se donne lui-même ; c'est aussi le nom de sa langue. D'autres noms et graphies existent : Jolof, le nom d'un ancien État wolof que des Européens ont donné à tout le peuple, et les formes Ouolof, Yolof et Wollof. L'origine du nom Wolof reste discutée ; nous présentons plus bas ce qu'en disent les sources.",
+    "names": [
+      {
+        "nameText": "Wolof",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "wol",
+        "namedBy": null,
+        "shortLine": "Le nom que les Wolof se donnent ; il désigne aussi leur langue.",
+        "usedIn": ["wol", "fra", "eng"],
+        "periodLabel": "Écrit dès 1757 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Wolof est celui qu'emploient aujourd'hui les statistiques officielles du Sénégal. Dans l'enquête nationale de santé de 2023, 39,3 % des femmes et 41,6 % des hommes de 15 à 49 ans interrogés se disent wolof. L'Inalco, à Paris, parle d'une « ethnie éponyme » : le peuple porte le même nom que sa langue.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sénégal : Enquête démographique et de santé continue (EDS-Continue) 2023, tableau 3.1",
+                "author": "Agence nationale de la statistique et de la démographie (ANSD) et ICF",
+                "year": 2024,
+                "url": "https://dhsprogram.com/pubs/pdf/FR390/FR390.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "p. 29"
+              },
+              {
+                "title": "Wolof (wolof), fiche de présentation de la langue",
+                "author": "Institut national des langues et civilisations orientales (Inalco)",
+                "year": null,
+                "url": "https://www.inalco.fr/sites/default/files/asset/document/fiche_wolof.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1757,
+              "to": 1757,
+              "label": "1757 (séjour de 1749 à 1753)"
+            },
+            "era": "polity",
+            "statement": "Le nom Wolof est écrit « Oualofes » par le naturaliste français Michel Adanson, qui vivait sur l'île du Sénégal, à Saint-Louis. Il précise que c'est le nom que ces habitants se donnent eux-mêmes, et que « Yolofes » en est une déformation. C'est la plus ancienne trace écrite de ce nom que nous connaissons.",
+            "formAsWritten": "Oualofes",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Michel Adanson",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire naturelle du Sénégal. Coquillages. Avec la relation abrégée d'un voyage fait en ce pays, pendant les années 1749, 50, 51, 52 & 53",
+                "author": "Michel Adanson",
+                "year": 1757,
+                "url": "https://archive.org/details/histoirenaturell00adan",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 23",
+                "notes": "Paris, Claude-Jean-Baptiste Bauche, 1757 : récit du séjour du naturaliste au Sénégal de 1749 à 1753. Lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1825,
+              "to": 1825,
+              "label": "1825"
+            },
+            "era": "polity",
+            "statement": "Le nom Wolof désigne l'habitant et sa langue, selon l'Anglais William Singleton, que cite l'avant-propos du dictionnaire de Jean Dard. Singleton ajoute que le wolof se parle le plus purement au Jolof et au Kajoor.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionnaire français-wolof et français-bambara, suivi du dictionnaire wolof-français",
+                "author": "Jean Dard ; avant-propos non signé",
+                "year": 1825,
+                "url": "https://archive.org/details/dictionnairefra01dardgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. vi, note 1",
+                "notes": "Paris, Imprimerie royale, 1825. Lue dans la numérisation d'Internet Archive. La note de l'avant-propos compare les graphies du nom et cite William Singleton."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1825,
+              "to": 1825,
+              "label": "Proposée en 1825"
+            },
+            "era": "polity",
+            "statement": "Le nom Wolof aurait « sans doute de l'analogie » avec celui du royaume du Oualo, le Waalo, qui faisait autrefois partie de l'empire du Jolof, selon l'avant-propos du dictionnaire de Jean Dard. La même note signale que « noir » se dit yolof en wolof, sans dire si les deux mots sont liés.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Wolof",
+            "sources": [
+              {
+                "title": "Dictionnaire français-wolof et français-bambara, suivi du dictionnaire wolof-français",
+                "author": "Jean Dard ; avant-propos non signé",
+                "year": 1825,
+                "url": "https://archive.org/details/dictionnairefra01dardgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. vi, note 1",
+                "notes": "Paris, Imprimerie royale, 1825. Lue dans la numérisation d'Internet Archive. La note de l'avant-propos compare les graphies du nom et cite William Singleton."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jolof",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "wol",
+        "namedBy": "Des voyageurs et auteurs européens, d'après le nom d'un pays wolof",
+        "shortLine": "Le nom d'un pays et d'un ancien État wolof, que des Européens ont donné à tout le peuple.",
+        "usedIn": ["por", "ita", "eng", "fra"],
+        "periodLabel": "Écrit dès 1455 ; encore employé au XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1360,
+              "to": 1599,
+              "label": "De la fin du XIVe siècle au XVIe siècle, selon Boubacar Barry"
+            },
+            "era": "polity",
+            "statement": "Le nom Jolof est d'abord celui d'un État. L'historien Boubacar Barry écrit que la confédération du Jolof s'est formée après la crise qui suivit la mort du souverain du Mali Mansa Sulayman, en 1360. Son chef, Njajaan Njaay, a étendu son pouvoir sur le nord de la Sénégambie, entre le fleuve Gambie et le fleuve Sénégal. La confédération s'est défaite au XVIe siècle.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 10: Senegambia from the sixteenth to the eighteenth century: evolution of the Wolof, Sereer and Tukuloor",
+                "author": "Boubacar Barry",
+                "year": 1992,
+                "url": "https://archive.org/details/unesco_general_history_africa_v",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 263",
+                "notes": "UNESCO et Heinemann, Histoire générale de l'Afrique, volume V, dirigé par B. A. Ogot. Lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1200,
+              "to": 1299,
+              "label": "XIIIe siècle, selon l'épopée de Soundiata"
+            },
+            "era": "polity",
+            "statement": "Le nom Jolof apparaît dans l'épopée de Soundiata, le fondateur de l'empire du Mali, telle que la rapporte l'historien Djibril Tamsir Niane. Un roi du Jolof, Jolofing Mansa, y est l'allié de Soumaoro, l'adversaire de Soundiata. Il est vaincu par Tiramaghan Traoré, un général de Soundiata, dont les griots du Kaabu chantent les exploits.",
+            "sources": [
+              {
+                "title": "General History of Africa, IV, ch. 6 : Mali and the second Mandingo expansion",
+                "author": "Djibril Tamsir Niane",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 132-133 et note 40"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1455,
+              "to": 1455,
+              "label": "Voyage de 1455, traduction publiée en 1895"
+            },
+            "era": "polity",
+            "statement": "Le nom Jolof est écrit « Giloses » par le navigateur vénitien Alvise Ca' da Mosto, pour les peuples des rives du fleuve Sénégal. En 1895, son éditeur Charles Schefer corrige en « Gilofes ». C'est la plus ancienne trace écrite de ce nom que nous connaissons ; l'épopée de Soundiata place un roi du Jolof plus tôt encore.",
+            "formAsWritten": "Giloses",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alvise Ca' da Mosto",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Relation des voyages à la côte occidentale d'Afrique d'Alvise de Ca' da Mosto, 1455-1457",
+                "author": "Charles Schefer (éditeur)",
+                "year": 1895,
+                "url": "https://archive.org/details/relationdesvoya00mostgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 73 et note 1",
+                "notes": "Paris, Ernest Leroux, 1895 : ancienne traduction française du récit, publiée avec des notes par Charles Schefer. Lue dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1482,
+              "to": 1508,
+              "label": "Récit noté après 1482, recopié avant 1508"
+            },
+            "era": "polity",
+            "statement": "Le nom Jolof est écrit « Geloffa » dans le récit du navigateur portugais Diogo Gomes, pour le pays situé sur le fleuve Sénégal. Diogo Gomes a raconté ses voyages à l'Allemand Martin Behaim, qui les a notés en latin ; Valentim Fernandes les a recopiés dans son recueil, et Gabriel Pereira les a traduits en portugais en 1899.",
+            "formAsWritten": "Geloffa",
+            "actors": [
+              {
+                "name": "Diogo Gomes, dans la traduction de Gabriel Pereira",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "As relações do descobrimento da Guiné e das ilhas dos Açores, Madeira e Cabo Verde",
+                "author": "Diogo Gomes ; traduction du latin par Gabriel Pereira",
+                "year": 1899,
+                "url": "https://archive.org/details/asrelaesdodescob00gome",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 11",
+                "notes": "Lisbonne, 1899. Récit de Diogo Gomes noté en latin par Martin Behaim, recopié par Valentim Fernandes, puis traduit en portugais par Gabriel Pereira, qui date le récit de 1482 ou après. Lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1825,
+              "to": 1825,
+              "label": "1825"
+            },
+            "era": "polity",
+            "statement": "Le nom Jolof, écrit Jaloof ou Jol-uf, désigne le pays et non ses habitants, selon William Singleton, que cite l'avant-propos du dictionnaire de Jean Dard.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionnaire français-wolof et français-bambara, suivi du dictionnaire wolof-français",
+                "author": "Jean Dard ; avant-propos non signé",
+                "year": 1825,
+                "url": "https://archive.org/details/dictionnairefra01dardgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. vi, note 1",
+                "notes": "Paris, Imprimerie royale, 1825. Lue dans la numérisation d'Internet Archive. La note de l'avant-propos compare les graphies du nom et cite William Singleton."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Jolof est celui que les Européens donnent aux Wolof, écrit en 1854 le missionnaire allemand Sigismund Koelle, d'après un informateur wolof installé à Freetown, en Sierra Leone. Il précise que ce n'est pourtant que le nom d'une région wolof.",
+            "aspect": "imposition",
+            "actors": [
+              {
+                "name": "Des Européens, selon Sigismund Koelle",
+                "role": "étendent le nom d'une région à tout le peuple"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/polyglottaafrica00koel",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 16",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la numérisation d'Internet Archive. Remarque placée en tête de la langue wolof, d'après un informateur venu du Saloum."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Jolof s'écrit aussi Gilofes, Yolofs ou Accolofs, selon Charles Schefer. Il situe ce peuple dans la basse Sénégambie, entre le fleuve Sénégal au nord et les peuples des rives de la Gambie au sud, de l'océan Atlantique jusqu'au Toro et au Fouta.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Relation des voyages à la côte occidentale d'Afrique d'Alvise de Ca' da Mosto, 1455-1457",
+                "author": "Charles Schefer (éditeur)",
+                "year": 1895,
+                "url": "https://archive.org/details/relationdesvoya00mostgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 73 et note 1",
+                "notes": "Paris, Ernest Leroux, 1895 : ancienne traduction française du récit, publiée avec des notes par Charles Schefer. Lue dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Jolof est encore employé pour le peuple en 1984 par l'historien Djibril Tamsir Niane, dans l'édition anglaise de l'Histoire générale de l'Afrique de l'UNESCO. Il range les Jolof, avec les Mandingues et les Soninké, parmi les grands peuples de la savane.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "General History of Africa, IV, ch. 6 : Mali and the second Mandingo expansion",
+                "author": "Djibril Tamsir Niane",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 154"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ouolof",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une ancienne graphie française du nom wolof.",
+        "periodLabel": "XVIIIe et XIXe siècles",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1825,
+              "to": 1825,
+              "label": "Relevé en 1825"
+            },
+            "era": "polity",
+            "statement": "Le nom Ouolof est la graphie du naturaliste Michel Adanson, qui écrit aussi oualof, selon l'avant-propos du dictionnaire de Jean Dard. La même note relève que les Anglais écrivent wa-loof ou jaloof, et l'orientaliste Silvestre de Sacy jolof.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionnaire français-wolof et français-bambara, suivi du dictionnaire wolof-français",
+                "author": "Jean Dard ; avant-propos non signé",
+                "year": 1825,
+                "url": "https://archive.org/details/dictionnairefra01dardgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. vi, note 1",
+                "notes": "Paris, Imprimerie royale, 1825. Lue dans la numérisation d'Internet Archive. La note de l'avant-propos compare les graphies du nom et cite William Singleton."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Yolof",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme du nom wolof que Michel Adanson donnait pour une déformation.",
+        "periodLabel": "XVIIIe et XIXe siècles",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1757,
+              "to": 1757,
+              "label": "1757"
+            },
+            "era": "polity",
+            "statement": "Le nom Yolof est écrit « Yolofes » par Michel Adanson, qui le présente comme une déformation de « Oualofes », le nom que se donnent les habitants.",
+            "formAsWritten": "Yolofes",
+            "actors": [
+              {
+                "name": "Michel Adanson",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire naturelle du Sénégal. Coquillages. Avec la relation abrégée d'un voyage fait en ce pays, pendant les années 1749, 50, 51, 52 & 53",
+                "author": "Michel Adanson",
+                "year": 1757,
+                "url": "https://archive.org/details/histoirenaturell00adan",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 23",
+                "notes": "Paris, Claude-Jean-Baptiste Bauche, 1757 : récit du séjour du naturaliste au Sénégal de 1749 à 1753. Lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wollof",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie des statistiques officielles de la Gambie.",
+        "usedIn": ["eng"],
+        "periodLabel": "Usage contemporain en Gambie",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Recensement de 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Wollof est la graphie qu'emploie le Bureau gambien de la statistique : au recensement de 2024, 15,4 % de la population de la Gambie est wollof. Son enquête de santé de 2019-2020 écrit déjà « Wollof ».",
+            "formAsWritten": "Wollof",
+            "actors": [
+              {
+                "name": "Bureau gambien de la statistique (Gambia Bureau of Statistics)",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Preliminary Report of the 2024 Population and Housing Census in The Gambia",
+                "author": "Gambia Bureau of Statistics",
+                "year": 2024,
+                "url": "https://gambia.unfpa.org/sites/default/files/pub-pdf/2024-09/Preliminary%20Report%20of%20the%202024%20Census%20in%20The%20Gambia_0.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "p. 10 et p. 13"
+              },
+              {
+                "title": "The Gambia Demographic and Health Survey 2019-20, table 3.1",
+                "author": "Gambia Bureau of Statistics et ICF",
+                "year": 2021,
+                "url": "https://dhsprogram.com/pubs/pdf/FR369/FR369.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "p. 38"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Wolof",
       "selfAppellation": "Wolof",
-      "exonyms": ["Jolof", "Djolof", "Ouolof", "Wollof", "Woloff"],
-      "originOfExonyms": "Le terme Jolof ou Djolof viendrait du nom de l'Empire Jolof fonde au XIVe siecle au Senegal. Les Portugais, premiers Europeens a contacter ce peuple au XVe siecle, ont transcrit le nom en Jalof ou Ouolof.",
-      "whyProblematic": null,
-      "contemporaryUsage": "Le terme Wolof est universellement adopte aujourd'hui en francais et en anglais. Ouolof est encore utilise dans certains textes administratifs francais anciens.",
-      "linguisticFamily": "FLG_ATLANTIQUE",
-      "ethnoLinguisticGroup": "Sénégambien (branche atlantique nord du Niger-Congo)",
-      "historicalRegion": "Région sénégambienne : Cayor, Baol, Waalo, Sine, Saloum, Jolof (Sénégal actuel et Gambie occidentale)",
-      "currentCountries": ["SEN", "GMB", "MRT"]
+      "exonyms": ["Jolof"],
+      "spellingAliases": ["Ouolof", "Oualof", "Yolof", "Wollof"],
+      "originOfExonyms": "Le nom Jolof est d'abord celui d'un pays et d'un ancien État wolof. Des voyageurs européens l'écrivent dès le XVe siècle : « Giloses », à lire « Gilofes », chez le Vénitien Alvise Ca' da Mosto en 1455, puis « Geloffa » chez le Portugais Diogo Gomes. En 1854, le missionnaire Sigismund Koelle note que les Européens appellent ainsi tout le peuple, alors que ce n'est que le nom d'une région wolof. Pour le nom Wolof lui-même, l'avant-propos du dictionnaire de Jean Dard, en 1825, propose un rapprochement avec le nom du royaume du Waalo ; c'est une hypothèse.",
+      "whyProblematic": "Nous n'avons pas trouvé de source qui juge le nom Wolof blessant ou rejeté. Le seul reproche relevé vise Jolof : en 1854, Sigismund Koelle écrit que ce nom d'une seule région ne convient pas à tout le peuple.",
+      "contemporaryUsage": "Le nom Wolof s'emploie aujourd'hui pour le peuple et pour sa langue, dans les statistiques du Sénégal comme dans les travaux savants. En Gambie, les statistiques officielles écrivent Wollof. Jolof désigne d'abord une région et un ancien État wolof.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Jolof (Djolof) : fraction centrale, region historique du Jolof, berceau de l'empire",
-      "Cayor (Kajoor) : fraction du nord-ouest, puissant royaume cotiier",
-      "Baol (Bawol) : fraction de l'interieur, allie historique du Cayor",
-      "Waalo : fraction du nord, vallee du fleuve Senegal",
-      "Sine : fraction serer-wolofisee, royaume du Sine",
-      "Saloum : fraction meridionale, debouche sur la Gambie",
-      "Lebu : sous-groupe de la peninsule du Cap-Vert (Dakar), dialecte distinct",
-      "Wolof du Cayor — province historique du Kayor, nord-ouest du Senegal",
-      "Wolof du Baol — province du Baol, centre du Senegal",
-      "Wolof du Walo — province du Walo, vallee du fleuve Senegal",
-      "Wolof de Gambie — environ 16% de la population gambienne, concentres a Banjul",
-      "Wolof de Mauritanie — environ 8% de la population mauritanienne, cote sud-ouest"
+      "Wolof du Jolof : le pays qui a donné son nom à l'ancienne confédération ; Glottolog y rattache le parler dyolof",
+      "Wolof du Waalo : l'ancien royaume de l'embouchure du fleuve Sénégal ; Glottolog y rattache le parler waalo",
+      "Wolof du Kajoor (Cayor) : l'ancien royaume dont le roi portait le titre de damel ; Glottolog y rattache le parler cayor",
+      "Wolof du Bawol (Baol) : l'ancien royaume dont le roi portait le titre de teen ; Glottolog y rattache le parler baol",
+      "Wolof du Saloum : Glottolog rattache au wolof un parler du Saloum, région d'où venait l'informateur de Sigismund Koelle en 1854",
+      "Wolof de Gambie : Glottolog leur attribue un parler propre, le wolof de Gambie",
+      "Lébou : Glottolog range leur parler, le wolof lébou, dans le même groupe que le wolof",
+      "Wolof de Mauritanie : leur langue est l'une des langues nationales du pays, selon Catherine Taine-Cheikh"
     ],
     "origins": {
-      "ancientOrigins": "Les Wolof sont originaires de la region sénégambienne. Selon une tradition orale liee au Waalo, un personnage mysterieux nomme Ndiadiane Ndiaye (Ndyadyane Ndyaye) serait emerge d'un lac, aurait arbitre un conflit entre villages et serait devenu le premier souverain wolof. Sa descendance, les Ndiayes, a fonde les familles royales wolof. Les traces archeologiques (poteries prehistoriques, pierres du VIIIe siecle, tumulus funeraires du XIVe siecle) au Senegal et en Gambie temoignent d'une presence ancienne, sans exclusive wolof. Une theorie associe la formation du peuple wolof a des migrations liees a la chute de l'Empire du Ghana vers 1076 et aux pressions des conquerants almoravides.",
-      "formationPeriod": "XIe au XIVe siecle, avec consolidation de l'identite wolof sous l'Empire Jolof (vers 1350-1549).",
-      "migrationRoutes": [
-        "Migrations depuis le nord et l'est du Senegal vers la cote atlantique",
-        "Diffusion vers la Gambie et le sud de la Mauritanie",
-        "Migration vers le nord-est du Senegal apres la chute de l'Empire du Ghana (vers 1076)",
-        "Etablissement progressif dans la vallee du fleuve Senegal (Walo)",
-        "Expansion vers les plateaux du Cayor et du Baol",
-        "Diffusion en Gambie le long du fleuve Gambie",
-        "Urbanisation moderne vers Dakar, Banjul et les villes ouest-africaines"
-      ],
+      "ancientOrigins": "Avant le XVe siècle, la Sénégambie, c'est-à-dire le pays des fleuves Sénégal et Gambie, dépendait des États du Soudan et du Sahara, et surtout de l'empire du Mali, selon l'historien Boubacar Barry. L'épopée de Soundiata, le fondateur du Mali, telle que la rapporte Djibril Tamsir Niane, cite déjà un roi du Jolof au XIIIe siècle.",
+      "formationPeriod": "Selon Boubacar Barry, la confédération du Jolof se forme après 1360 sous la conduite de Njajaan Njaay et réunit le nord de la Sénégambie. Le nom du peuple apparaît dans les récits européens à partir de 1455.",
+      "migrationRoutes": [],
       "historicalSettlementZones": [
-        "Bassin du fleuve Senegal (Waalo)",
-        "Peninsule du Cap-Vert et region de Dakar (Lebu)",
-        "Cayor et Baol (centre-nord du Senegal actuel)",
-        "Nord de la Gambie (region de Banjul)",
-        "Vallee du fleuve Senegal (Walo)",
-        "Plateau du Cayor (nord-ouest Senegal)",
-        "Region du Baol (centre Senegal)",
-        "Bassins du Sine et du Saloum",
-        "Plaines cotales senegalaises et gambiennes"
+        "Le Jolof, à l'intérieur des terres",
+        "Le Waalo, à l'embouchure du fleuve Sénégal",
+        "Le Kajoor (Cayor) et le Bawol (Baol), royaumes wolof de la côte",
+        "Le Saloum, dont une partie se trouve aujourd'hui en Gambie",
+        "Les zones gambiennes de Kerewan et de Kuntaur, où un habitant sur trois environ est wollof au recensement de 2024"
       ],
-      "unificationsOrDivisions": "L'Empire Jolof (milieu XIVe siecle - 1549) a uni les etats wolof sous l'autorite du Buurba Jolof. La bataille de Danki en 1549 a provoque l'eclatement de l'empire en royaumes independants (Cayor, Baol, Waalo, Sine, Saloum). Ces royaumes ont perdure jusqu'a la colonisation francaise (1870-1890).",
-      "externalInfluences": "Contacts avec les empires mandingues (Mali, Songhai) depuis le XIIIe siecle. Relations commerciales avec les Portugais des le XVe siecle (traite negriere). Islamisation progressive : influence des clercs musulmans toucouleurs, puis jihads peuls au XVIIIe siecle. Colonisation francaise (XIXe siecle) avec integration des Wolof dans l'administration coloniale.",
-      "majorHistoricalEvents": "Commerce atlantique des esclaves (XVIe-XIXe siecles) : les Wolof ont ete a la fois acteurs et victimes. Jihads ouest-africains (XVIIIe-XIXe siecles) ayant provoque des divisions internes. Resistance aux forces coloniales francaises, puis conversion massive a l'islam sous l'influence des confreries mourides et tijaniyya au XIXe siecle. Independence du Senegal le 4 avril 1960."
+      "unificationsOrDivisions": "La confédération du Jolof domine le nord de la Sénégambie à partir de la fin du XIVe siècle, selon Boubacar Barry. Elle est ébranlée par l'invasion conduite par Koly Tengella, puis par le commerce portugais, qui favorise les provinces de la côte. Après la victoire d'Amari Ngoone, damel du Kajoor, sur le Buurba Jolof à Danki, le Jolof perd ses provinces côtières et se trouve réduit à l'intérieur des terres. Barry ne date pas cette bataille ; dans le même ouvrage, Jan Vansina situe la fin de l'État du Jolof vers 1520. De cette division naissent les royaumes du Waalo, du Kajoor et du Bawol, et les royaumes sereer du Siin et du Saloum s'en libèrent aussi.",
+      "externalInfluences": "Les Portugais s'installent à Arguin vers 1445 et détournent vers l'Atlantique le commerce de la Sénégambie, qui passait jusque-là par le Sahara, selon Boubacar Barry. Les Français s'établissent à Saint-Louis en 1659 et interviennent ensuite dans les querelles de succession du Waalo. Au XVIIIe siècle, le commerce de la gomme renforce les Maures du Trarza, qui pèsent sur le Waalo. David Ames relevait en 1955 que la musique wolof mêle des styles d'Afrique de l'Ouest et des emprunts à l'Afrique du Nord musulmane.",
+      "majorHistoricalEvents": "La bataille de Danki, au XVIe siècle, marque la fin de la confédération du Jolof. De 1673 à 1677, la guerre des marabouts, menée par Nasir al-Din, renverse les aristocraties du Waalo, du Kajoor et du Jolof, qui reprennent le pouvoir en 1677, selon Boubacar Barry. Le 27 octobre 1886, Lat Dior, damel du Kajoor, est tué à Dekhlé en combattant les troupes françaises ; sa mort met fin à l'indépendance du Kajoor, selon M'Baye Gueye et Adu Boahen."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Organisation en royaumes (Cayor, Baol, Waalo, Jolof, Sine, Saloum) gouvernes par un roi (Buur ou Damel selon le royaume), choisi par un college d'electeurs nobles. L'empire Jolof etait dirige par le Buurba Jolof, suzerain nomimal des rois vasaux. Les villages etaient geres par un chef hereditaire (borom dekk), souvent du groupe des clercs (serin ou marabout), appuye par un imam (yeliimaan) et un chef des guerriers (saltigi).",
-      "clanOrganization": "Organisation en lignages patrilineaires, renforcee depuis l'epoque de l'Empire Jolof qui a entraine le passage d'un systeme matrilineaire a un systeme patrilineaire. Les noms de famille (Ndiaye, Diop, Ndour, Fall, Mbaye, Sow) sont associes a des origines claniques ou regionales specifiques.",
-      "ageClassSystems": "Pas de systeme formel de classes d'age, mais les transitions de vie (naissance, circoncision, mariage) sont marquees par des ceremonies collectives.",
-      "roleOfLineages": "Les lignages patrilineaires determinent l'appartenance sociale, les droits sur la terre et les alliances matrimoniales. Le mariage endogame avec la cousine croisee bilaterale (fille du frere de la mere) est prefere. Le systeme des castes hereditaires constitue la principale barriere au mariage, au-dela de l'ethnicite ou de la religion.",
-      "religiousAuthority": "Autorite des marabouts (serin), chefs des confreries soufies mouride (Mouridiyya) et tijaniyya (Tijaniyyah). Le calife general de la confrerie mouride, base a Touba, exerce une influence politique et culturelle considerable sur l'ensemble de la societe wolof et senegalaise."
+      "traditionalPoliticalSystem": "Chaque royaume wolof avait son roi, désigné par un titre propre : le Buurba au Jolof, le Damel au Kajoor, le Teen au Bawol et le Brak au Waalo, selon Boubacar Barry. Des chefs de province, les kangam, gouvernaient sous le roi. Aux XVIIe et XVIIIe siècles, Barry décrit des régimes dominés par les guerriers ceddo. Au village, selon David Ames en 1955, le chef est l'homme le plus âgé de la famille qui a fondé le village ; il décide avec les anciens nés libres.",
+      "clanOrganization": "Les Wolof sont organisés en clans qui se transmettent par les hommes, écrivait David Ames en 1955. Le pouvoir royal passait pourtant par la famille maternelle, le meen : Boubacar Barry décrit comment la lignée maternelle des Geej s'est imposée au Kajoor, et celle des Tejek au Waalo. Des noms de clan se répondent d'un peuple à l'autre : selon Djibril Tamsir Niane, un Traoré qui s'installe en pays wolof est reçu comme un frère par les Diop et peut prendre leur nom, et un Condé l'est par les Ndiaye.",
+      "ageClassSystems": null,
+      "roleOfLineages": "Selon David Ames, en 1955, la société wolof se divise en groupes hiérarchisés dans lesquels on naît : les nés libres, les descendants de leurs captifs, les forgerons et les travailleurs du cuir, les gewel, c'est-à-dire les musiciens et louangeurs que les Européens appellent griots, et les descendants des captifs de ces groupes. On appartient au groupe de son père, et le mariage hors de son groupe est interdit. Au quotidien, la famille élargie compte le plus : l'homme le plus âgé dirige un ensemble de maisons où vivent ses épouses, ses enfants et les familles de ses fils et de ses frères cadets.",
+      "religiousAuthority": "Au Kajoor, au début du XVIIIe siècle, le roi Lat Sukaabe Fall crée des titres de serin lamb pour attacher des marabouts à son pouvoir. D'autres marabouts, les serin jakk, refusent tout accord avec les rois guerriers et se consacrent à l'enseignement, selon Boubacar Barry. En 1955, David Ames enregistre les disciples d'un marabout qui chantent des hymnes religieux."
     },
     "languages": {
       "mainLanguage": "Wolof (wol)",
       "isoCodes": ["wol", "wof"],
       "dialects": [
-        "Wolof senegalais standard : dialecte de reference, base du Wolof officiel",
-        "Dakar-Wolof (Urban Wolof) : melange de wolof, francais, arabe et anglais, parle dans les grandes villes",
-        "Wolof gambien (wof) : dialecte distinct avec orthographe et emprunts en anglais, mutuellement intelligible avec le wolof senegalais",
-        "Lebu : dialecte du Cap-Vert, incomprehensible pour les locuteurs du wolof standard ; tous les locuteurs Lebu sont bilingues en wolof standard",
-        "Dakar-Wolof : dialecte urbain melant wolof, francais et arabe, parle dans la capitale",
-        "Wolof rural du Cayor et du Baol : dialecte de reference, plus conservateur",
-        "Wolof de Gambie (Banjul-Wolof) : variante gambienne, legere influence anglaise",
-        "Lebu : dialecte distinct parle par les Lebu de la peninsule du Cap-Vert"
+        "Wolof du centre : parlers du Bawol (Baol), du Kajoor (Cayor) et du Jander, selon Glottolog",
+        "Wolof du nord : parlers du Jolof (Dyolof) et du Waalo, selon Glottolog",
+        "Parler du Saloum, que Glottolog rattache aussi au wolof",
+        "Wolof de Gambie (code wof), que Glottolog range dans le même groupe que le wolof",
+        "Wolof lébou, que Glottolog range aussi dans ce groupe"
       ],
-      "vehicularRole": "Le wolof est la langue vehiculaire principale du Senegal, parlee nativement par environ 40% de la population et comprise par environ 90% des Senegalais comme premiere ou deuxieme langue. Il sert de lingua franca dans les villes, les marches, les transports et les medias. Au niveau international, il est parle par les communautes de la diaspora senegalaise en Europe et en Amerique du Nord."
+      "vehicularRole": "Au Sénégal, le wolof est la langue nationale la plus parlée au quotidien : au recensement de 2023, 53,5 % des habitants de 3 ans et plus le déclarent comme leur langue principale, selon l'Agence nationale de la statistique et de la démographie. Selon l'Inalco, plus de 80 % des Sénégalais le parlent, bien au-delà du peuple wolof. En Mauritanie, le wolof est une langue nationale ; Catherine Taine-Cheikh relie son dynamisme à son rôle de langue commune au Sénégal."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q217397",
+      "glottocode": "nucl1347",
+      "iso639_3": "wol"
     },
     "culture": {
-      "majorRites": "Circoncision masculine (xatan) : rite de passage majeur marque par plusieurs semaines de retraite, d'enseignement et de celebrations communautaires. Ceremonie de bapteme (ngente) le huitieme jour apres la naissance, presidee par un marabout. Mariage (ngeente bu dafa am ak yaram) : negociation de dot (brideprice) entre families, ceremonies etalees sur plusieurs jours. Funerailles islamiques avec inhumation dans les 24 heures et ceremonies commemoratives au 3e, 7e et 40e jour. Celebrations des fetes islamiques : Tabaski (Aid el-Kebir), Tamkharite (Achoura), Gamou (Mawlid).",
-      "symbols": "Le xalam (luth a cinq cordes), embleme de la tradition musicale griotique. Le sabar (ensemble de sept tambours), symbole de la musique et de la danse wolof. Le boubou (grand vetement flottant) et le caftan, signes de dignite et d'elegance. Les amulettes (gris-gris) portees pour la protection spirituelle. La figure du marabout (serin), autorite morale et spirituelle.",
-      "artsAndMusic": "Musique : tradition griotique (gewel) fondamentale, transmise de generation en generation. Instruments principaux : xalam (luth a cinq cordes), sabar (ensemble de sept tambours accordes differemment), tama (tambour parlant en sablier). Emprunts aux cultures voisines : flute peule, kora mandingue, balafon. Le mbalax est le genre musical moderne senegalais par excellence, derive du rythme serer-njuup et popularise mondialement par Youssou N'Dour. Le tagg (ode chantee) a ete integre a la tradition nasheed islamique apres la conversion au XIXe siecle. Artisanat : travail du metal (forgerons, tëgg), du cuir, du textile (tisserands), de la poterie et de la vannerie, repartis selon les castes. Danse : rythmes specifiques de sabar, farwoudiar (danse feminine de celebration), lutte senegalaise (lamb) accompagnee de griots.",
-      "spiritualities": "Islam sunnite malekite, predominant depuis le XIXe siecle. Appartenance massive aux confreries soufies : Mouridiyya (fondee par Cheikh Ahmadou Bamba en 1883, centre a Touba) et Tijaniyyah (introduite depuis le Maroc). Culte des marabouts (serin) vivants et defunts, ziara (visite aux tombeaux). Croyances pre-islamiques subsistantes : jinn (esprits bons et mauvais), gris-gris (amulettes de protection), rites de divination. Syncretisme marque entre pratiques islamiques et elements animistes anterieurs."
+      "majorRites": "En 1955, David Ames décrit des chants, des tambours et des danses aux cérémonies qui marquent la naissance, la puberté et le mariage. Il enregistre la fête qui suit le baptême du premier fils d'un chef, c'est-à-dire la cérémonie où l'enfant reçoit son nom, et la musique d'un mariage chantée par les parentes et amies de la mariée. Les tambours accompagnent aussi la circoncision des jeunes hommes, les danses des femmes pour appeler la pluie, les combats de lutte et les travaux faits en commun. Les fêtes musulmanes sont observées partout.",
+      "symbols": "Le xalam, un luth à cinq cordes que David Ames écrit Halam, est l'instrument des gewel. C'est le seul qu'on peut jouer quand les tambours sont interdits, après un décès ou pendant le mois de jeûne, et on le dit l'instrument des anges. Les chefs ont leurs propres tambours, joués par des hommes d'ascendance captive et détruits à la mort du chef. Dans certaines mosquées, un grand tambour, le tabala, marque le début et la fin du mois de jeûne.",
+      "artsAndMusic": "La musique wolof mêle des styles d'Afrique de l'Ouest et des emprunts à l'Afrique du Nord musulmane, selon David Ames en 1955. Le tambour sabar donne le rythme principal ; il est souvent joué avec le tama, un tambour dont le son peut varier, et avec des tambours plus graves, le gorong, le mbalax et le lamba. Les gewel chantent les louanges et racontent des récits en s'accompagnant du xalam ; beaucoup de chants honorent les rois guerriers d'autrefois. Le tissage, le travail du cuir, la forge et la poterie sont réservés à certains groupes ; seule la vannerie est ouverte à tous.",
+      "spiritualities": "En 1955, presque tous les Wolof se disent musulmans, selon David Ames, qui note les fêtes observées partout et les prières de chaque jour. Il relève aussi d'anciennes pratiques religieuses et magiques, souvent cachées ou réinterprétées. Pour l'histoire, Boubacar Barry décrit un islam d'abord pratiqué par une minorité de marchands et de gens de cour, qui devient à la fin du XVIIe siècle un mouvement populaire contre le pouvoir des aristocraties."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Empire Jolof (vers 1350-1549) : premier grand Etat wolof unifiant Cayor, Baol, Waalo, Sine et Saloum sous l'autorite du Buurba Jolof. Apres la bataille de Danki (1549), emergence de royaumes independants : Cayor (le plus puissant du XVIIe au XIXe siecle), Baol, Waalo, et le Royaume de Jolof reduit. Ces royaumes ont maintenu une tradition politique et culturelle wolof pendant trois siecles avant l'absorption coloniale francaise.",
-      "relationsWithNeighbors": "Relations complexes avec les Serer (voisins au sud), les Toucouleurs et Peuls (nord et est), les Mandingues (est et sud). Le wolof a Wolofise progressivement les classes dirigeantes de nombreux groupes voisins. Tensions et alliances avec les etats peuls islamiques au XVIIIe siecle. Cooperation avec l'administration coloniale francaise, ce qui a confere aux Wolof un role dominant dans l'administration et l'economie du Senegal postcolonial.",
-      "conflictsOrAlliances": "Guerre Wolof-Peul (1790-1800s) ayant provoque des vagues d'esclavage. Resistance aux expeditions coloniales francaises (Lat Dior Diop, Damel du Cayor, symbole de la resistance nationale). Alliance avec les Francais dans certaines phases de colonisation, notamment lors de campagnes contre d'autres royaumes. Guerres intestines entre royaumes wolof pour la suprematie (Cayor contre Baol, Cayor contre Jolof).",
-      "diaspora": "Importante diaspora wolof en France (region parisienne, Marseille), en Italie, en Espagne et en Amerique du Nord. La diaspora est fortement liee aux confreries mouride et tijaniyya, dont les dalira (associations) structurent la vie communautaire a l'etranger. Les Mourides de New York, Paris et Milan constituent des reseaux commerciaux transnationaux importants."
+      "kingdomsOrChiefdoms": "La confédération du Jolof domine le nord de la Sénégambie à partir de la fin du XIVe siècle, selon Boubacar Barry. Après sa fin, au XVIe siècle, les royaumes du Waalo, du Kajoor et du Bawol deviennent indépendants et le Jolof est réduit à l'intérieur des terres. Les rois du Kajoor et du Bawol cherchent souvent à réunir les deux couronnes ; Lat Sukaabe Fall y parvient de 1695 à 1720 sous le titre de Damel-Teen. Le Kajoor perd son indépendance à la mort de son damel Lat Dior, en 1886.",
+      "relationsWithNeighbors": "Les Wolof et les Sereer appellent Toucouleur les gens du Fouta Toro, qui se nomment eux-mêmes Hal pular-en, « ceux qui parlent peul », selon Djibril Tamsir Niane ; les linguistes rangent le peul, le wolof et le sereer dans la même famille de langues. Des clans se répondent entre Mandingues et Wolof, comme les Traoré et les Diop. Après la fin du Jolof, le royaume peul du Fouta Toro domine une grande partie du nord de la Sénégambie au début du XVIIe siècle, et au XVIIIe siècle les Maures du Trarza pèsent sur le Waalo, selon Boubacar Barry.",
+      "conflictsOrAlliances": "De 1673 à 1677, la guerre des marabouts renverse les rois du Waalo, du Kajoor et du Jolof avant d'être vaincue, selon Boubacar Barry. Au XVIIIe siècle, les Français de Saint-Louis interviennent dans les querelles de succession du Waalo et du Kajoor. En 1881 et 1882, Lat Dior, damel du Kajoor, refuse la construction du chemin de fer entre Dakar et Saint-Louis et appelle l'émir du Trarza, le Fouta Toro et Alboury Ndiaye, du Jolof, à s'allier contre les Français. Il est tué au combat à Dekhlé le 27 octobre 1886, selon M'Baye Gueye et Adu Boahen.",
+      "diaspora": null
     },
     "demography": {
-      "totalPopulation": 6500000,
-      "referenceYear": 2025,
-      "source": "Estimations basees sur : recensement senegalais 2023 (ANSD, population totale Senegal 18,1 millions, Wolof 33,1-39,7%), CIA World Factbook 2024, Wikipedia Wolof people (total exceeds 6 million). Distribution : Senegal env. 5,8 millions (39,7%), Gambie env. 400 000 (16% pop. gambienne), Mauritanie env. 200 000 (8% pop. mauritanienne).",
+      "totalPopulation": 7455000,
+      "referenceYear": 2023,
+      "source": "Ce total est un calcul de notre part. Au Sénégal, l'enquête démographique et de santé de 2023, menée par l'ANSD et ICF, compte 39,3 % de Wolof parmi les femmes de 15 à 49 ans interrogées et 41,6 % parmi les hommes. Appliquée aux 18 126 390 habitants du recensement de 2023, la part de 39,3 % donne environ 7,1 millions de personnes ; l'Inalco donne une part plus haute, 45 %. En Gambie, le recensement de 2024 compte 15,4 % de Wollof, soit environ 355 000 personnes sur 2 306 066. Nous n'avons pas trouvé de chiffre officiel pour la Mauritanie, qui n'est donc pas comptée.",
       "distributionByCountry": [
         {
           "country": "SEN",
-          "population": 5800000,
-          "note": "Groupe ethnique le plus nombreux du Senegal (~39,7%)"
+          "population": 7100000,
+          "percentage": 39.3,
+          "note": "Surtout dans la moitié ouest du pays, du fleuve Sénégal au fleuve Gambie, selon l'Inalco. Chiffre calculé à partir de l'enquête de santé de 2023 et du recensement de 2023."
         },
         {
           "country": "GMB",
-          "population": 380000,
-          "note": "Environ 16% de la population gambienne, majorite a Banjul"
+          "population": 355000,
+          "percentage": 15.4,
+          "note": "Recensement de 2024. Part la plus forte dans les zones de Kerewan (34,6 %), de Kuntaur (34,5 %), de Janjanbureh (27,5 %) et de Banjul (24,5 %)."
         },
         {
           "country": "MRT",
-          "population": 200000,
-          "note": "Environ 8% de la population mauritanienne, zone cotiere sud"
+          "population": null,
+          "percentage": null,
+          "note": "Le wolof est une langue nationale de la Mauritanie, selon Catherine Taine-Cheikh. Nous n'avons pas trouvé de recensement qui compte les Wolof du pays."
         }
       ]
     },
@@ -154,42 +591,154 @@
         "url": "https://qiraatafrican.com/en/14992/wolof-a-west-african-ethnic-group/",
         "tier": "unverified",
         "source_kind": "press"
-      }
-    ]
-  },
-  "nameHistory": {
-    "summary": "Le nom Wolof est celui que ce peuple se donne. Son histoire est présentée plus bas.",
-    "names": [
+      },
       {
-        "nameText": "Wolof",
-        "nameStatus": "current",
-        "selfGiven": true,
-        "languageOfOrigin": "wol",
-        "namedBy": null,
-        "periodLabel": "Usage contemporain",
-        "accounts": [
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Usage contemporain"
-            },
-            "era": "modern",
-            "statement": "Terme universellement adopté aujourd'hui en français et en anglais, aussi bien par la communauté elle-même que par l'extérieur.",
-            "aspect": "usage",
-            "sources": [
-              {
-                "title": "SIL Ethnologue — Wolof (wol)",
-                "author": "SIL International",
-                "year": 2024,
-                "url": "https://www.ethnologue.com/language/wol/",
-                "tier": "official",
-                "source_kind": "linguistic_reference",
-                "notes": "Source également citée par la fiche du peuple Wolof."
-              }
-            ]
-          }
-        ]
+        "title": "Relation des voyages à la côte occidentale d'Afrique d'Alvise de Ca' da Mosto, 1455-1457",
+        "url": "https://archive.org/details/relationdesvoya00mostgoog",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Ancienne traduction française du récit du Vénitien Alvise Ca' da Mosto, publiée avec des notes par Charles Schefer (Paris, Ernest Leroux, 1895), ouvrage d'époque coloniale. Page 73 et sa note : la forme « Giloses », corrigée en « Gilofes », et la situation de ce peuple dans la basse Sénégambie."
+      },
+      {
+        "title": "As relações do descobrimento da Guiné e das ilhas dos Açores, Madeira e Cabo Verde",
+        "url": "https://archive.org/details/asrelaesdodescob00gome",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Récit du navigateur portugais Diogo Gomes, traduit du latin par Gabriel Pereira (Lisbonne, 1899). Page 11 : le pays des bords du fleuve Sénégal « se chama Geloffa ». L'introduction date le récit de 1482 ou après."
+      },
+      {
+        "title": "Histoire naturelle du Sénégal. Coquillages. Avec la relation abrégée d'un voyage fait en ce pays, pendant les années 1749, 50, 51, 52 & 53",
+        "url": "https://archive.org/details/histoirenaturell00adan",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Récit du naturaliste Michel Adanson (Paris, Bauche, 1757). Page 23 : les habitants de l'île du Sénégal, qui dépend du royaume du Oualo, sont « Oualofes, comme ils se disent, ou par corruption Yolofes »."
+      },
+      {
+        "title": "Dictionnaire français-wolof et français-bambara, suivi du dictionnaire wolof-français",
+        "url": "https://archive.org/details/dictionnairefra01dardgoog",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Dictionnaire de Jean Dard, ancien instituteur au Sénégal (Paris, Imprimerie royale, 1825). La note 1 de la page vi compare les graphies du nom, cite William Singleton sur Jaloof et wolof, et propose un rapprochement avec le nom du Waalo."
+      },
+      {
+        "title": "Polyglotta Africana",
+        "url": "https://archive.org/details/polyglottaafrica00koel",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Recueil de vocabulaires du missionnaire Sigismund Koelle (Londres, Church Missionary House, 1854). Page 16 : « Wolof, by Europeans called Jolof », Jolof n'étant que le nom d'une région wolof."
+      },
+      {
+        "title": "General History of Africa, V, ch. 10: Senegambia from the sixteenth to the eighteenth century: evolution of the Wolof, Sereer and Tukuloor",
+        "url": "https://archive.org/details/unesco_general_history_africa_v",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Histoire générale de l'Afrique de l'UNESCO, volume V, chapitre de Boubacar Barry, lu dans la numérisation d'Internet Archive. Pages 263 à 268 : la confédération du Jolof, sa fin et la bataille de Danki ; pages 273 à 277 : les Français à Saint-Louis et la guerre des marabouts ; pages 278 à 281 : les rois du Kajoor et du Waalo, les lignées maternelles royales et les Maures du Trarza ; page 299 : la liste des royaumes nés du Jolof."
+      },
+      {
+        "title": "General History of Africa, V, ch. 3 (Jan Vansina), passage sur la fin de l'État du Jolof, p. 69",
+        "url": "https://archive.org/details/unesco_general_history_africa_v",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Histoire générale de l'Afrique de l'UNESCO, volume V, chapitre 3 de Jan Vansina sur les mouvements de population, lu dans la numérisation d'Internet Archive. Page 69 : la fin de l'État du Jolof « vers 1520 »."
+      },
+      {
+        "title": "General History of Africa, IV, ch. 6 : Mali and the second Mandingo expansion",
+        "url": "https://archive.org/details/unesco_general_history_africa_iv",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Histoire générale de l'Afrique de l'UNESCO, volume IV, chapitre de Djibril Tamsir Niane, lu dans la numérisation d'Internet Archive. Pages 132-133 et note 40 : Jolofing Mansa dans l'épopée de Soundiata ; page 134, note 43 : les clans qui se répondent entre Mandingues et Wolof ; page 154 et note 74 : les Jolof parmi les peuples de la savane et le nom Toucouleur donné par leurs voisins."
+      },
+      {
+        "title": "General History of Africa, VII, ch. 6: African initiatives and resistance in West Africa, 1880-1914",
+        "url": "https://archive.org/details/unesco_general_history_africa_vii",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Histoire générale de l'Afrique de l'UNESCO, volume VII, chapitre de M'Baye Gueye et A. Adu Boahen, lu dans la numérisation d'Internet Archive. Pages 118-119 : l'opposition de Lat Dior, damel du Kajoor, au chemin de fer et sa mort à Dekhlé le 27 octobre 1886."
+      },
+      {
+        "title": "Wolof Music of Senegal and the Gambia, livret du disque Folkways FE 4462",
+        "url": "https://folkways-media.si.edu/docs/folkways/artwork/FW04462.pdf",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Livret d'un disque publié par Folkways Records à New York en 1955, écrit par David Ames, qui a enregistré la musique dans le Saloum gambien et au Sénégal, ouvrage d'époque coloniale. Pages 2 à 5 : les groupes sociaux héréditaires, les clans, la famille, la religion, les cérémonies et les instruments."
+      },
+      {
+        "title": "RGPH-5 2023, rapport définitif, thème I : état et structure, urbanisation et caractéristiques socioculturelles de la population",
+        "url": "https://www.vie-publique.sn/docs/f5ae8d48-de94-4dea-882b-990bdfa1958d/etat-structure-urbanisation-caracteristiques-socioculturelles-population-rgph-5-2023-ansd.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport de l'Agence nationale de la statistique et de la démographie du Sénégal (ANSD), juillet 2025, lu sur le portail vie-publique.sn. Page IX : 18 126 390 habitants en 2023 ; page 57, tableau I-32 : 53,5 % des habitants de 3 ans et plus parlent surtout le wolof."
+      },
+      {
+        "title": "Sénégal : Enquête démographique et de santé continue (EDS-Continue) 2023, tableau 3.1",
+        "url": "https://dhsprogram.com/pubs/pdf/FR390/FR390.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Enquête de l'ANSD et d'ICF, publiée en juillet 2024 par le programme DHS. Page 29, tableau 3.1 : parmi les personnes de 15 à 49 ans interrogées, 39,3 % des femmes et 41,6 % des hommes se disent wolof."
+      },
+      {
+        "title": "Preliminary Report of the 2024 Population and Housing Census in The Gambia",
+        "url": "https://gambia.unfpa.org/sites/default/files/pub-pdf/2024-09/Preliminary%20Report%20of%20the%202024%20Census%20in%20The%20Gambia_0.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport du Bureau gambien de la statistique, publié en 2024 sur le site du Fonds des Nations unies pour la population en Gambie. Page 10, figure 14, et page 13, tableau 8 : 15,4 % de Wollof en Gambie et leur part dans chaque zone administrative."
+      },
+      {
+        "title": "The Gambia Demographic and Health Survey 2019-20, table 3.1",
+        "url": "https://dhsprogram.com/pubs/pdf/FR369/FR369.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Enquête du Bureau gambien de la statistique et d'ICF, publiée en mars 2021 par le programme DHS. Page 38, tableau 3.1 : 12,5 % de femmes et 13,8 % d'hommes wollof parmi les personnes de 15 à 49 ans interrogées."
+      },
+      {
+        "title": "M71. Mauritanie. Sociolinguistique, Encyclopédie berbère, fascicule XXXI",
+        "url": "https://shs.hal.science/halshs-00668375v1/file/EB_Mie_Sociolinguistique_CTC.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de Catherine Taine-Cheikh dans l'Encyclopédie berbère (Peeters, 2010, p. 4755-4757), déposé dans l'archive ouverte HAL. Page 4755 : le wolof est une langue nationale de la Mauritanie, et son dynamisme tient à son rôle de langue commune au Sénégal."
+      },
+      {
+        "title": "Wolof (wolof), fiche de présentation de la langue",
+        "url": "https://www.inalco.fr/sites/default/files/asset/document/fiche_wolof.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Fiche du département Afrique - Océan Indien de l'Inalco. Page 1 : l'ethnie wolof forme 45 % de la population du Sénégal, surtout dans la moitié ouest du pays, et plus de 80 % des Sénégalais parlent le wolof."
+      },
+      {
+        "title": "Glottolog 5.3 — Wolof (nucl1347)",
+        "url": "https://glottolog.org/resource/languoid/id/nucl1347",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue de langues Glottolog, consulté en ligne. Fiche du wolof (code wol) : parlers du centre (Bawol, Kajoor, Jander), du nord (Jolof, Waalo) et du Saloum."
+      },
+      {
+        "title": "Glottolog 5.3 — Wolofic (wolo1247)",
+        "url": "https://glottolog.org/resource/languoid/id/wolo1247",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue de langues Glottolog, consulté en ligne. Groupe wolof : le wolof, le wolof de Gambie (code wof) et le wolof lébou."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Wolof sont un peuple du Sénégal, de la Gambie et de la Mauritanie. Leur nom désigne aussi leur langue, la plus parlée au Sénégal. Des Européens les ont longtemps appelés Jolof.",
+      "followUp": "D'où vient le nom Jolof, que des Européens ont donné aux Wolof ?"
+    },
+    "gaps": [
+      {
+        "field": "origins.migrationRoutes",
+        "reason": "Nous n'avons pas trouvé de source qui retrace les déplacements anciens des Wolof avant la formation du Jolof."
+      },
+      {
+        "field": "organization.ageClassSystems",
+        "reason": "Nous n'avons pas trouvé de source qui décrit des classes d'âge chez les Wolof."
+      },
+      {
+        "field": "historicalRole.diaspora",
+        "reason": "Nous n'avons pas encore pu lire d'étude sur les Wolof installés hors d'Afrique de l'Ouest."
+      },
+      {
+        "field": "demography.distributionByCountry[2]",
+        "reason": "Nous n'avons pas trouvé de recensement mauritanien qui compte les Wolof."
       }
     ]
   }

@@ -103,8 +103,14 @@ it; anything that mentions regions or ethnicities as entities is stale.
 Resources under `/api/v2/`: `countries`, `peoples`, `language-families`, `languages`,
 `patronymes`, `places`, `relations`, `migrations`, `names`, `oral-narratives`, `dossiers`, `media`,
 `sources`, `reference-library`, `search`, `compare`, `confidence`, `doctrine`, `flags`,
-`antibot`, `quiz`, `feed`, `keys`, `words`, and `admin` (moderator-only). The folders under
+`antibot`, `quiz`, `feed`, `keys`, `words`, `mcp`, and `admin` (moderator-only). The folders under
 `src/app/api/v2/` are the list.
+
+`/api/v2/mcp` is the public agent: a stateless, read-only Model Context Protocol server (one
+JSON-RPC message per POST, no session, no event stream) with two tools, `rechercher_nom` and
+`lire_fiche`. It reads the corpus through the v2 handlers and services, stores nothing about the
+caller, and is metered by `src/proxy.ts` like every other `/api/v2` route. Draft: the frame it
+answers in is built in `src/lib/publicAgent/frame.ts`.
 
 ```bash
 curl http://localhost:3000/api/v2/countries

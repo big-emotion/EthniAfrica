@@ -8,87 +8,98 @@
     "appellations": {
       "mainName": "Alur",
       "selfAppellation": "Alur",
-      "exonyms": [
-        "Aloro (variante orthographique coloniale)",
-        "Alur (terme europeen adopte de l'auto-denomination)"
+      "exonyms": ["Lur", "Luri"],
+      "spellingAliases": [
+        "Alulu",
+        "Alour",
+        "Alourou",
+        "Aloro",
+        "Aloua",
+        "Aluur",
+        "Lour",
+        "Luru",
+        "Joalur"
       ],
-      "originOfExonyms": "Le peuple se nomme lui-même Alur. Les administrateurs coloniaux britanniques et belges ont repris ce nom sans le modifier. Il désigne l'ensemble du peuple et son royaume, Ker Alur.",
-      "whyProblematic": "La distinction entre sous-groupes Alur des Highlands (Okoro) et des plaines lacustres (Jonam) est parfois source de tensions identitaires. La frontiere Ouganda-RDC divise le peuple Alur depuis l'epoque coloniale.",
-      "contemporaryUsage": "Le terme Alur est utilise en anglais, francais et en langue alur. Le royaume Alur (Ker Alur), dont le Rwoth Ubimu reside a Kaal Atyak Winam (district de Zombo, Ouganda), est l'une des rares institutions royales africaines a ne pas avoir ete supprimee lors des reformes politiques ougandaises de 1966.",
+      "originOfExonyms": "Le nom Alur est celui que ce peuple se donne. Il apparaît par écrit sous la forme Lur en 1877, dans une lettre du médecin Emin Pacha, qui écrit aussi Luri, puis « Lur or Alur » en 1879. En 1908, le lieutenant belge A. Demuenynck note que les habitants des environs de Mahagi prononcent distinctement Alulu, un nom souvent écrit Lour ou Luru. D'autres ouvrages emploient les formes Aloro, Aloua ou Alourou, selon la monographie du Musée royal de l'Afrique centrale sur l'Ituri (2021).",
+      "whyProblematic": "La frontière tracée en 1915 entre le Congo belge et l'Ouganda a coupé le pays alur en deux parties presque égales, selon le Musée royal de l'Afrique centrale. Le peuple alur n'est pas homogène : il réunit des clans d'origine luo et des clans venus d'autres peuples, bantous ou de langue soudanaise, qui ont adopté la langue alur. Le recensement ougandais de 2014 compte à part les Alur et les Jonam, alors que le catalogue Glottolog range le jonam parmi les parlers de la langue alur.",
+      "contemporaryUsage": "Le nom Alur est employé aujourd'hui en Ouganda et en République démocratique du Congo. Au recensement ougandais de 2014, 878 453 personnes se sont déclarées alur. En RDC, la plupart des Alur vivent dans le territoire de Mahagi, en Ituri, où ils forment sept chefferies ; une petite chefferie alur, celle des Mambisa, se trouve dans le territoire voisin de Djugu. Leur langue s'appelle le dhu alur.",
       "linguisticFamily": "FLG_NILOTIQUE",
-      "ethnoLinguisticGroup": "Nilotique occidental (sous-groupe Luo)",
-      "historicalRegion": "Region du lac Albert — nord-ouest de l'Ouganda (districts de Nebbi, Zombo, Pakwach, Arua) et nord-est de la RDC (province de l'Ituri)",
+      "ethnoLinguisticGroup": "Nilotique occidental, groupe lwoo du Sud, avec l'adhola et le luo du Kenya (Glottolog)",
+      "historicalRegion": "Le Bulega septentrional, à l'ouest et au nord du lac Albert : le territoire de Mahagi en Ituri (RDC) et une portion de taille voisine en Ouganda, jusqu'à Wadelai sur le Nil",
       "currentCountries": ["UGA", "COD"]
     },
     "ethnicities": [
-      "Ukuru (chefferie la plus puissante, clan royal Atyak, district de Zombo)",
-      "Paidha (chefferie fondee par Magwar, fils d'Omyer Dhyang)",
-      "PaNduru (chefferie rivale d'Ukuru, fondee par Nduru)",
-      "Jonam (Alur des basses terres et rives du lac Albert, district de Pakwach)",
-      "Okoro (Alur des Highlands, nord-ouest ougandais, district de Zombo)",
-      "Angal, Juganda, Jukoth, Musongwa, Panyimur, Ragem, Ruvinga (chefferies historiques en Ouganda)",
-      "Alur de l'Ituri (RDC) — 8 chefferies dans la province de l'Ituri, nord du lac Albert"
+      "Panghira, aussi appelés Atyak : Ukuro, Payidha, Vur, Boro et Mbaru en Ouganda ; Panduru, War, Palara, Padeya et Munzi en RDC",
+      "Ucibo : Anghal-Thubey en Ouganda ; Juganda et Anghal en RDC",
+      "Bitu : Ruvinga, Mukambu, Djukoth et Koc en RDC",
+      "Pakwongha : Panyimur, Padwot, Alui et Panghyet en Ouganda ; Acer, Pamitu et Abira en RDC",
+      "Magungu, clans d'origine bantoue venus du Bunyoro et intégrés aux Alur : Musongwa, Muswa et Panyikanghu en RDC ; Magungu, Mukovia et Lokoli en Ouganda",
+      "Clans d'origine lendu et ukebu intégrés aux Alur",
+      "Jonam, recensés à part en Ouganda en 2014",
+      "Mambisa, petite chefferie alur du territoire de Djugu (RDC)"
     ],
     "origins": {
-      "ancientOrigins": "Les Alur font partie du grand ensemble Luo (Lwo) nilotique occidental, issu de migrations depuis la vallée du Nil supérieur. Ils partagent un ancêtre commun avec les Acholi, les Luo du Kenya et les Shilluk du Soudan du Sud. Leur installation dans la région du lac Albert remonte à plusieurs siècles, avec une intégration progressive de populations bantoues et soudaniques locales, qui devinrent alur sous leur influence culturelle.",
-      "formationPeriod": "En 1630, la chefferie d'Ukuru fut fondée par Ngira (clan Atyak), issue de la division du royaume d'Atyak lors d'une migration depuis les plaines de l'actuel district de Nebbi vers les hauts plateaux du district de Zombo (Ouganda) et l'Ituri (Congo). Ce mouvement fonda l'ordre politique alur classique : un réseau de 64 chefferies (56 en Ouganda, 8 en RDC) sous la suprématie symbolique du Rwoth Ubimu d'Ukuru.",
+      "ancientOrigins": "Les Alur font partie des peuples luo. Le berceau de ces peuples se trouverait dans la zone marécageuse de Rumbek, au Soudan du Sud, selon l'historien congolais Gilbert Umvor Keno, que cite la monographie du Musée royal de l'Afrique centrale sur l'Ituri. À partir du XVe siècle, des Luo auraient migré vers la région des Grands Lacs, à la recherche de pâturages, de terres et de lacs poissonneux. Après une halte dans la région d'Ubungu, près de Pakwach, ils se seraient séparés en plusieurs peuples, dont les Shilluk au Soudan du Sud, les Acholi, les Padhola et les Alur en Ouganda et les Luo du Kenya. Leur langue reste proche de celle de ces peuples.",
+      "formationPeriod": "Les Alur sont arrivés à l'ouest du lac Albert par petits groupes et par vagues successives, selon Umvor Keno cité par le Musée royal de l'Afrique centrale. Une tradition qu'il rapporte distingue quatre groupes d'Alur proprement dits : les Panghira, les Ucibo, les Bitu et les Pakwongha. Les trois premiers descendraient de Nyipir, de Tiful et de Nyabongho, fils de Nyilak, elle-même fille de Kwongha, un grand chef langu du Bunyoro ; les Pakwongha descendraient des fils de Kwongha. Au début du XVIIe siècle, des Lendu venus du nord étaient déjà aux prises avec les Alur, selon la même monographie.",
       "migrationRoutes": [
-        "Migration depuis les plaines de Nebbi vers les Highlands de Zombo (district actuel, Ouganda), vers 1630",
-        "Extension vers le nord-est de la RDC (Ituri) et les rives nord du lac Albert",
-        "Absorption des populations bantoues et soudaniques locales dans la sphere culturelle alur"
+        "De la région de Rumbek, au Soudan du Sud, vers la région des Grands Lacs, à partir du XVe siècle, selon Umvor Keno",
+        "Halte dans la région d'Ubungu, près de Pakwach, puis séparation des groupes luo",
+        "Installation à l'ouest du lac Albert, dans le Bulega, par petits groupes et vagues successives",
+        "Au XXe siècle, départs de familles alur vers des terres voisines du territoire de Djugu, malgré l'administration coloniale"
       ],
       "historicalSettlementZones": [
-        "Districts de Nebbi, Zombo, Pakwach, Arua (nord-ouest Ouganda)",
-        "Province de l'Ituri (nord du lac Albert, RDC)",
-        "Rives nord et nord-ouest du lac Albert"
+        "Bulega septentrional : environ 10 000 km² à l'ouest et au nord du lac Albert",
+        "Territoire de Mahagi, en Ituri (RDC)",
+        "Rive gauche du Nil, du lac Albert jusqu'à Wadelai (Ouganda)"
       ],
-      "unificationsOrDivisions": "Le royaume Alur (Ker Alur) comprend 64 chefferies organisees hierachiquement sous le Rwoth Ubimu. La rivalite historique entre Ukuru et PaNduru est fondatrice : en 1789, Ukuru domina PaNduru, s'affirmant comme la chefferie la plus puissante. La guerre de 1878 (renouveau du conflit Ukuru-PaNduru) vit toutefois la defaite d'Ukuru avec environ 600 morts. Le chef Amula (1871-1942), fils d'Alworunga, reconcilia et reorganisa le royaume.",
-      "externalInfluences": "Administration coloniale britannique (Ouganda) et belge (Congo). Le chef Amula (1871-1942) fut exilé par les Britanniques en 1917 pour s'être opposé au recrutement militaire forcé, puis réintégré en 1922. L'islam et le christianisme ont pénétré la société alur au 20e siècle. Les tensions ethniques en Ituri (RDC) ont opposé Alur, Lendu et Hema depuis les années 1990.",
-      "majorHistoricalEvents": "1630 : fondation de la chefferie d'Ukuru par Ngira. 1789 : victoire decisive d'Ukuru sur PaNduru, consolidant la suprematie du clan Atyak. 1878 : guerre renouvelee entre Ukuru et PaNduru ; Alworunga brule vif par les forces Panduru. 1890 : election du chef Amula (19 ans), qui venge la mort de son pere. 1914 : Ukuru comptait 10 000 hommes adultes ; le chef Amula enjoignit son peuple de ne pas combattre les Britanniques. 1917 : exil du chef Amula par les Britanniques. 1966 : interdiction ougandaise des monarchies traditionnelles — Ker Alur reste la seule monarchie non affectee. 2010 : couronnement de Phillip Rauni Olarker III comme Rwoth Ubimu, capital a Kaal Atyak Winam."
+      "unificationsOrDivisions": "Avant la colonisation, chaque clan noble d'une certaine importance s'associait des clients et formait un royaume ou une chefferie autonome au sein de la confédération alur. On en comptait une bonne cinquantaine. L'administration belge n'en garda que huit dans la région de Mahagi. En 1915, la frontière entre le Congo belge et l'Ouganda partagea le peuple en deux parties presque égales. Côté congolais, les sept chefferies du territoire de Mahagi sont Anghal, Alur-Juganda, Panduru, War-Palara, Mukambu, Djukoth et Wagungu, selon le Musée royal de l'Afrique centrale.",
+      "externalInfluences": "Au XIXe siècle, les Alur des bords du Nil étaient soumis au royaume du Bunyoro : en 1877, Emin Pacha décrit les Lur comme « subject to Kabréga », le roi du Bunyoro. La province égyptienne d'Équatoria, gouvernée par Emin Pacha, installe ensuite des postes à Mahagi et à Wadelai. L'État indépendant du Congo occupe ensuite le poste de Mahagi. Des Pères Blancs venus d'Ouganda visitent les chefs alur en 1901 et 1902, et une mission catholique est fondée à Nyarambe, en territoire alur, le 15 décembre 1912. Dans les années 1950, un mouvement religieux et politique né chez les Alur, le Samaria, s'oppose aux chefs alliés de l'administration coloniale.",
+      "majorHistoricalEvents": "1877 : Emin Pacha note les Lur au sud de Wadelai, sous l'autorité du roi du Bunyoro. 1879 : Emin Pacha parcourt les environs de Mahagi et de Wadelai. 1886-1887 : le roi Kabarega pousse les Alur et les Acholi à se révolter contre Emin Pacha. Vers 1900, le chef Udjuro prend les armes contre le poste belge de Mahagi, pour une dizaine d'années. 1912 : fondation de la mission catholique de Nyarambe. 1915 : la frontière définitive coupe le pays alur entre le Congo belge et l'Ouganda. À partir de 1921 : des Alur du Congo partent travailler en territoire britannique."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Monarchie segmentaire : le Rwoth Ubimu (roi des rois Alur) est le chef supreme, distinct des autres chefs (rwoth). Le titre Ubimu distingue le roi supreme des chefs subordonnes. Sous lui, 64 chefferies (dont 56 en Ouganda et 8 en RDC). Le Premier ministre royal est le prince Lawrence Opar Angala (Jadipu, parent male le plus proche du roi). La societe est strictement hierarchique avec des rangs sociaux bases sur la vaillance, les alliances, les performances a la guerre, a la chasse et a la peche.",
-      "clanOrganization": "Clans patrilineaires vivant ensemble (kaka). Les principaux clans royaux incluent Palei, Patek Puduk, Pakia, Ukuru, Anyola, Juloka (proches du roi). Clans rituels non royaux : Pagei, Panywer, Parombo, Pangieth, Padere, Panyonga. La famille Abira descend des hommes bantous originels d'Ukuru ; l'ascendance maternelle bantoue est commune a Ukuru.",
+      "traditionalPoliticalSystem": "Les Alur formaient une confédération de chefferies. Les membres du clan issu du fondateur d'une dynastie sont appelés juker, les nobles. Les gens qui se sont mis au service de l'ancêtre royal, en le suivant, en l'accueillant ou en le reconnaissant comme chef, sont appelés luak, les clients. Chaque clan noble important, alur ou magungu, s'associait des clients et formait ainsi un royaume ou une chefferie autonome, selon le Musée royal de l'Afrique centrale.",
+      "clanOrganization": "Le peuple alur réunit un grand nombre de clans, différents par leur origine, par la date de leur arrivée ou par leur rang. À côté des clans d'origine luo, il compte des clans magungu, d'origine bantoue, venus du Bunyoro, et des clans lendu et ukebu. Les Lendu sont le groupe non nilotique le plus important parmi les Alur : ils représenteraient environ un dixième de la population des chefferies alur. Une grande partie des noms de personnes alur viendrait de la langue lendu, selon la même monographie.",
       "ageClassSystems": null,
-      "roleOfLineages": "Lignages patrilineaires determinant l'identite, les alliances et les droits au sein des chefferies. Les hommes restent dans leur clan de naissance ; les femmes se marient et quittent leur clan (stricte evitement de l'inceste au sein du patrilineage). Les patrilineages maintiennent des arbres genealogiques detailles : la famille Parombo a Ukuru comptait 2 000 hommes en 1949.",
-      "religiousAuthority": "Les rois (Rwoth) sont couronnes selon la tradition du trophee de lance royale (royal spear head bearing tradition). La legitimite du pouvoir est liee aux traditions ancestrales et aux rituels de couronnement. Aujourd'hui coexistent croyances traditionnelles, christianisme (catholique, protestant) et islam dans les zones frontieres."
+      "roleOfLineages": "La place d'un clan dépend de son lien avec le fondateur de la dynastie : les juker en descendent, les luak descendent de ceux qui l'ont servi. Tous ces clans parlent la langue alur, que le Musée royal de l'Afrique centrale présente comme le principal facteur de l'unité du peuple. Pour les grandes cérémonies, comme la danse, le deuil, le palabre ou l'investiture d'un chef, des clans séparés par les limites administratives se réunissent encore pour décider ensemble.",
+      "religiousAuthority": "Chez les Alur, deux tambours sacrés, le seku et le vulker, ne peuvent être touchés que par des initiés appelés masadhu. Ceux-ci en jouent lors de l'intronisation et des funérailles d'un chef coutumier, pendant une danse rituelle appelée obhenga. Des chefs alur avaient aussi la réputation de faiseurs de pluie auprès des Lendu. Le christianisme s'est implanté à partir des missions catholiques et protestantes du XXe siècle."
     },
     "languages": {
-      "mainLanguage": "Alur (Dha-Alur)",
+      "mainLanguage": "Alur, appelé dhu alur (alz)",
       "isoCodes": ["alz"],
-      "dialects": [
-        "Okoro (dialecte des Highlands, nord-ouest de l'Ouganda, district de Zombo)",
-        "Jonam (dialecte des basses terres et du lac Albert, district de Pakwach)",
-        "Alur de l'Ituri (variantes parlees en RDC)"
-      ],
-      "vehicularRole": "L'alur (code ISO 639-3 : alz) est une langue nilotique occidentale du groupe Luo, parlee par environ 800 000 a 900 000 locuteurs en Ouganda et plus de un million en RDC (Ituri). Proche de l'acholi, du luo du Kenya et du padhola. Certains Alur de RDC parlent egalement le lendu ou le kebu. L'alur est utilise dans les echanges communautaires et les ceremonies royales."
+      "dialects": ["Jonam", "Jokot", "Mambisa", "Wanyoro"],
+      "vehicularRole": "L'alur est une langue nilotique occidentale du groupe lwoo, proche de l'adhola et du luo du Kenya, selon Glottolog, qui la classe parmi les langues non menacées. En Ituri, le dhu alur sert de langue de liaison dans le territoire de Mahagi, sur une grande partie de la rive du lac Albert, de Mahagi-Port à Rukwanze, et à Bunia et dans ses environs. Les Lendu-Watsi du territoire de Mahagi parlent eux aussi le dhu alur. À l'inverse, les Alur-Mambisa du territoire de Djugu parlent le bhadha, une variante du bbaledha, et le bangala est parlé dans la chefferie Alur-Djuganda, selon le Musée royal de l'Afrique centrale."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q202353",
+      "glottocode": "alur1250",
+      "iso639_3": "alz"
     },
     "culture": {
-      "majorRites": "Rites d'initiation : Rites de passage marques par des ceremonies communautaires. Le mariage est le principal rite de transition, associe au paiement d'une dot en betail. Rites funéraires — inhumation : Inhumation dans les terres ancestrales du clan. Ceremonies de deuil avec chants et rituels d'apaisement des esprits des ancetres. Rites royaux — couronnement : Couronnement du Rwoth selon la tradition du trophee de lance royale (royal spear head bearing). Festivals royaux annuels avec la danse Agwara pour reunir la communaute.",
-      "symbols": "La lance royale (royal spear) est le symbole supreme du pouvoir Alur. Le roi (Rwoth Ubimu) incarne l'unite du peuple. Le lac Albert (Mwitanzige) est un symbole geographique et spirituel central pour les Alur des basses terres (Jonam). Le betail represente richesse et statut social.",
-      "artsAndMusic": "Danses — agwara : danse royale alur exécutée exclusivement en présence du roi lors des rituels communautaires et festivals. Dansée par hommes et femmes ensemble, l'agwara incarne la cohésion sociale et l'autorité royale. Instruments de musique : tambour royal (bul) ; flûtes en roseau ; adungu (harpe en arc) ; hochets et instruments à percussion. Artisanat : poterie (activité féminine), tissage, forge artisanale. Les Alur de l'Ituri sont également connus pour leurs travaux de forge. Littérature orale : tradition de proverbes, de généalogies royales et de récits historiques transmis oralement. Les griots maintiennent la mémoire des lignées royales.",
-      "spiritualities": "{\"supremeDeity\": {\"endonym\": \"Jok\", \"attributes\": \"Force spirituelle supreme englobant le divin et les esprits des ancetres. Jok peut designer Dieu ou les esprits (bons et mauvais) qui influencent la vie des vivants.\"}, \"ancestors\": {\"roleOfAncestors\": \"Les ancetres jouent un role fondamental dans la protection et le guidage des vivants. Les rituels de propitiation sont effectues pour maintenir l'harmonie entre le monde des vivants et celui des morts.\"}, \"christianity\": {\"specificPractices\": \"Penetration du christianisme (catholicisme, protestantisme) depuis le 20e siecle. Syncrétisme frequent entre croyances Jok et pratiques chretiennes.\"}}}"
+      "majorRites": "Les Alur, comme les Hema, initiaient leurs enfants à la fin de la puberté : ils leur donnaient des prénoms liés à leur état physique et moral, et les préparaient au mariage. Dans les territoires de Mahagi et d'Aru, où vivent notamment les Alur, la danse accompagne le retrait du deuil des grandes personnalités et l'anniversaire de la mort d'un membre de la famille. Des concours de danse marquent aussi l'intronisation d'un chef. Les tambours sacrés seku et vulker sont joués lors de l'intronisation et des funérailles d'un chef coutumier.",
+      "symbols": "Le lac Albert s'appelle Nam Unegbonyo en alur : le nom veut dire « le lac tueur de criquets », parce que les criquets venus d'Ouganda s'épuisent à le survoler et tombent dans l'eau, selon le Musée royal de l'Afrique centrale. Autrefois, les femmes alur se perçaient les lèvres pour y glisser un petit morceau de tige et se faisaient enlever les incisives. Les bracelets sont d'usage courant, et le visage pouvait porter des tatouages propres aux Alur.",
+      "artsAndMusic": "Dans le territoire de Mahagi, l'agwara est une longue flûte de 1,50 m à 4 m, taillée dans un arbre souple. Elle accompagne le tambour, appelé vul, lors des grandes cérémonies et de toute fête où l'on danse la danse alur. L'adungu est une grande lyre, souvent jouée avec le likembe, une petite boîte à lamelles métalliques. Le xylophone de Mahagi s'appelle le ndara. Certains chants alur rythment les travaux des champs et la pêche.",
+      "spiritualities": "Les missions chrétiennes ont atteint le pays alur au début du XXe siècle : des Pères Blancs venus d'Ouganda en 1901 et 1902, puis la mission catholique de Nyarambe en 1912, et une mission protestante à Kasengu. Beaucoup de catéchistes de la région étaient alur. Dans les années 1950, le mouvement Samaria, né en milieu alur autour du prophète Ukethi, prend le nom de « Bons Samaritains », Jusamaria en dhu alur, et mêle annonce religieuse et refus de l'ordre colonial."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Le royaume Alur (Ker Alur) est le seul royaume ougandais n'ayant pas ete affecte par l'interdiction des monarchies traditionnelles de 1966 par le president Obote. Il comprend 64 chefferies (56 en Ouganda, 8 en RDC). La chefferie d'Ukuru, dirigee par le clan Atyak, est la plus puissante depuis 1789. Le Rwoth Ubimu actuel (Philippe Rauni Olarker III, couronne en 2010) siege a Kaal Atyak Winam dans le district de Zombo.",
-      "relationsWithNeighbors": "Relations complexes avec les peuples bantous voisins (Banyoro, Bari) qui furent progressivement absorbes ou Alur-ises. En Ituri (RDC), les Alur ont cohabite et compete avec les Lendu (agriculteurs) et les Hema (pasteurs). Les conflits ethniques en Ituri depuis les annees 1990 (guerres civiles congolaises) ont touche les communautes alur de RDC. En Ouganda, les Alur entretiennent des relations de parenté avec les Acholi et les Luo.",
-      "conflictsOrAlliances": "La guerre Ukuru-PaNduru (1789, 1878) est constitutive de l'histoire politique alur. La résistance au recrutement britannique (chef Amula exilé en 1917) illustre l'opposition à la domination coloniale. Pendant les guerres du Congo (1996-2003), les Alur de l'Ituri ont été affectés par les violences ethniques entre Lendu et Hema, et par l'instabilité générale de la province. L'Union des Patriotes Congolais (UPC) et les milices Lendu ont commis des atrocités dans la région (représailles entre groupes à partir de 1999).",
-      "diaspora": "Diaspora alur présente dans les grandes villes ougandaises (Kampala, Arua) et congolaises (Bunia, Kinshasa), ainsi que dans les pays occidentaux (Belgique, Royaume-Uni, États-Unis, Canada). Le Rwoth Ubimu actuel a pour objectif de reconnecter la diaspora au royaume et de promouvoir le développement économique."
+      "kingdomsOrChiefdoms": "Les Alur ne formaient pas un seul royaume, mais une confédération d'une cinquantaine de chefferies avant la colonisation, chacune dirigée par un clan noble. Côté congolais, l'administration belge les a regroupées : le territoire de Mahagi compte aujourd'hui sept chefferies alur, et une huitième, celle des Mambisa, se trouve dans le territoire de Djugu, selon le Musée royal de l'Afrique centrale.",
+      "relationsWithNeighbors": "Les Alur ont pour voisins les Madi, les Lugbara et les Ndo au nord, les Lugbara, les Mabendi et les Balese-Arombi à l'ouest, les Hema et les Lendu au sud, et les Acholi et les Langu à l'est. Ils ont intégré de nombreuses familles voisines. Quand ils arrivaient chez les Lendu, leurs chefs se présentaient en arbitres, apprenaient la langue et imposaient leur autorité sans conquête. Des familles bale quittaient aussi leur chefferie pour s'installer chez les Alur et se déclarer alur, selon le Musée royal de l'Afrique centrale.",
+      "conflictsOrAlliances": "En 1886 et 1887, le roi du Bunyoro, Kabarega, pousse les Alur et les Acholi à se soulever contre Emin Pacha. Au début du XXe siècle, les Alur, anciens vassaux du Bunyoro, s'opposent à l'occupation belge : le chef Udjuro reprend les armes pendant une dizaine d'années, et le chef Ketha des Anghal résiste aussi. Un officier belge, le lieutenant Bryde, est relevé de ses fonctions pour avoir attisé un vieux conflit entre les Alur d'Anghal et ceux de Djukoth, selon le Musée royal de l'Afrique centrale.",
+      "diaspora": "À partir de 1921, des Alur du Congo belge partent travailler en territoire britannique, où les salaires pouvaient être dix fois plus élevés. Certains s'engagent dans l'armée britannique d'Afrique de l'Est et connaissent ainsi le Kenya, le Tanganyika, le Soudan et l'Égypte, selon le Musée royal de l'Afrique centrale."
     },
     "demography": {
-      "totalPopulation": 1800000,
-      "referenceYear": 2025,
-      "source": "SIL Ethnologue — Alur (alz, 2024). Recensement ougandais 2014 : environ 800 000 en Ouganda. Estimations pour la RDC : plus d'un million (zones de Ituri nord). CIA World Factbook — Uganda, DRC. Population totale 2025 estimee a environ 1,8 million.",
+      "totalPopulation": null,
+      "referenceYear": 2014,
+      "source": "Recensement de la population et de l'habitat de l'Ouganda de 2014 (Uganda Bureau of Statistics, rapport principal publié en 2016, tableau A8, p. 71) : 878 453 personnes se sont déclarées alur. Le même tableau compte à part 106 447 Jonam. Aucune source que nous avons lue ne donne le nombre des Alur de RDC : le chiffre ougandais ne couvre donc qu'une partie du peuple.",
       "distributionByCountry": [
         {
           "country": "UGA",
-          "population": 850000,
-          "note": "Districts de Nebbi, Zombo, Pakwach, Arua (nord-ouest Ouganda)"
+          "population": 878453,
+          "note": "Recensement de 2014 : personnes déclarées alur, sans les Jonam, recensés à part (106 447)."
         },
         {
           "country": "COD",
-          "population": 950000,
-          "note": "Province de l'Ituri, nord du lac Albert (RDC)"
+          "population": null,
+          "note": "Territoire de Mahagi, en Ituri, et chefferie des Mambisa dans le territoire de Djugu."
         }
       ]
     },
@@ -100,7 +111,7 @@
         "source_kind": "linguistic_reference"
       },
       {
-        "title": "Southall, Aidan — Alur Society: A Study in Processes and Types of Domination. Cambridge : Heffer, 1953",
+        "title": "Southall, Aidan — Alur Society: A Study in Processes and Types of Domination. Cambridge : Heffer, 1956",
         "url": null,
         "tier": "referenced"
       },
@@ -127,11 +138,69 @@
         "url": "https://joshuaproject.net/people_groups/10023",
         "tier": "unverified",
         "source_kind": "missionary_database"
+      },
+      {
+        "title": "The National Population and Housing Census 2014 – Main Report",
+        "author": "Uganda Bureau of Statistics",
+        "year": 2016,
+        "url": "https://uganda.unfpa.org/sites/default/files/pub-pdf/CENSUS%202014%20Final%20Results_0.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. 71, tableau A8",
+        "notes": "Rapport principal du recensement ougandais de 2014, publié à Kampala en 2016 et diffusé par le bureau du Fonds des Nations unies pour la population en Ouganda. Le tableau A8 donne « Alur … 878,453 » et, sur une autre ligne, « Jonam … 106,447 »."
+      },
+      {
+        "title": "Ituri : terre et identités sous tension",
+        "author": "Jean Omasombo Tshonda (dir.)",
+        "year": 2021,
+        "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/monographies-provinces/ituri.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 115-117",
+        "notes": "Musée royal de l'Afrique centrale, Tervuren, 2021, ouvrage collectif de la série des monographies des provinces de la RDC, lu dans le PDF mis en ligne par le musée. Le chapitre « Alur » s'appuie surtout sur les travaux de l'historien Gilbert Umvor Keno. Il relève, p. 115, les formes « Aloro, Aloua, Alur, Alourou, Alulu, Lour, Lur et Luri », et, p. 116, que le peuple alur « fut scindé en deux parties presque égales » par la frontière de 1915."
+      },
+      {
+        "title": "Au pays de Mahagi, région du lac Albert et du Haut-Nil (État indépendant du Congo) : mœurs et coutumes des Alulus",
+        "author": "A. Demuenynck",
+        "year": 1908,
+        "url": "https://archive.org/details/aupaysdemahagirg00demu",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 4-6",
+        "notes": "Récit d'un lieutenant d'artillerie au service de l'État indépendant du Congo, tiré à part du Bulletin de la Société royale belge de géographie, Bruxelles, 1908, lu dans l'exemplaire numérisé sur archive.org. On y lit : « La peuplade du secteur de Mahagi se nomme Alulu » et « Le nom Alulu, ainsi distinctement prononcé par tous les indigènes, a souvent été écrit Lour ou Luru »."
+      },
+      {
+        "title": "Emin Pasha in Central Africa: being a collection of his letters and journals",
+        "author": "Emin Pacha (Eduard Schnitzer), éd. G. Schweinfurth, F. Ratzel, R. W. Felkin et G. Hartlaub",
+        "year": 1888,
+        "url": "https://archive.org/details/eminpashaincentr00emin",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 11, 143 et 149",
+        "notes": "Londres, George Philip & Son, 1888, lu dans l'exemplaire numérisé sur archive.org. Lettre de 1877, p. 11 : au sud de Wadelai « live the Lur, who are subject to Kabréga ». Récit de 1879 : le chef de Wadelai accorde la permission « to form a station », et Emin Pacha atteint « our station, Mahagi »."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Alur sont un peuple de langue nilotique qui vit à l'ouest et au nord du lac Albert, en Ouganda et en République démocratique du Congo. Leur nom est écrit Lur dès 1877.",
+      "followUp": "D'où viennent les formes Lur, Luri et Alulu de ce nom ?"
+    },
+    "gaps": [
+      {
+        "field": "nameHistory.names[0]",
+        "reason": "Les sources que nous avons consultées ne donnent ni l'origine ni le sens du nom Alur."
+      },
+      {
+        "field": "content.organization.ageClassSystems",
+        "reason": "Les sources que nous avons consultées ne décrivent pas de classes d'âge chez les Alur."
+      },
+      {
+        "field": "content.demography.totalPopulation",
+        "reason": "Nous n'avons pas trouvé de recensement des Alur de République démocratique du Congo ; le chiffre ougandais de 2014 ne couvre qu'une partie du peuple."
       }
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Alur désigne un peuple nilotique qui vit au nord et à l'ouest du lac Albert, en Ouganda et en République démocratique du Congo. Les voyageurs du XIXe siècle l'ont aussi écrit Lur et Luri. Les textes que nous avons lus n'expliquent pas d'où vient ce nom ; nous présentons plus bas ses plus anciennes traces.",
+    "summary": "Le nom Alur désigne un peuple de langue nilotique qui vit au nord et à l'ouest du lac Albert, en Ouganda et en République démocratique du Congo, et c'est aussi le nom que ce peuple se donne. Les voyageurs du XIXe siècle l'ont écrit Lur et Luri, et un officier belge l'a noté Alulu en 1908. Nous présentons plus bas ses plus anciennes traces.",
     "names": [
       {
         "nameText": "Alur",
@@ -139,7 +208,7 @@
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom d'un peuple du lac Albert, écrit Lur dès 1877 ; son origine n'est pas expliquée.",
+        "shortLine": "Le nom d'un peuple du lac Albert, écrit Lur dès 1877, puis Alur en 1879 et Alulu en 1908.",
         "periodLabel": "Écrit dès 1877 ; en usage aujourd'hui",
         "accounts": [
           {
@@ -149,7 +218,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Alur désigne un peuple nilotique d'Ouganda et de République démocratique du Congo. La Bibliothèque nationale de France range sous ce nom d'autres formes : Alour, Aluur, Joalur, Jonam, Lur ou Luri. Les textes que nous avons lus ne disent pas d'où vient ce nom ni ce qu'il veut dire.",
+            "statement": "Le nom Alur désigne un peuple nilotique d'Ouganda et de République démocratique du Congo. La Bibliothèque nationale de France range sous ce nom d'autres formes : Alour, Aluur, Joalur, Jonam, Lur ou Luri.",
             "aspect": "meaning",
             "sources": [
               {
@@ -160,6 +229,56 @@
                 "tier": "official",
                 "source_kind": "repository",
                 "notes": "Notice d'autorité créée en 1995, consultée le 9 octobre 2026. Elle range sous Alur les formes Alour, Alulu, Alurs, Aluur, Jo Nam, Joalur, Jonam, Lur et Luri, et classe ce peuple parmi les Nilotiques, en Ouganda et en République démocratique du Congo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Relevé publié en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Alur prend dans les ouvrages plusieurs formes et orthographes : Aloro, Aloua, Alur, Alourou, Alulu, Lour, Lur et Luri, selon la monographie du Musée royal de l'Afrique centrale sur l'Ituri. La même monographie emploie la forme Alur.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ituri : terre et identités sous tension",
+                "author": "Jean Omasombo Tshonda (dir.)",
+                "year": 2021,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/monographies-provinces/ituri.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 115",
+                "notes": "Musée royal de l'Afrique centrale, Tervuren, 2021, lu dans le PDF mis en ligne par le musée. Chapitre « Alur » : « on trouve les appellations et orthographes Aloro, Aloua, Alur, Alourou, Alulu, Lour, Lur et Luri »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "1908, à Mahagi"
+            },
+            "era": "colonial",
+            "statement": "Le nom Alur est noté Alulu en 1908 par le lieutenant A. Demuenynck, en poste à Mahagi pour l'État indépendant du Congo. Il écrit que tous les habitants prononcent distinctement Alulu, un nom souvent écrit Lour ou Luru.",
+            "formAsWritten": "Alulu",
+            "actors": [
+              {
+                "name": "A. Demuenynck",
+                "role": "lieutenant d'artillerie au poste de Mahagi, qui note cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Au pays de Mahagi, région du lac Albert et du Haut-Nil (État indépendant du Congo) : mœurs et coutumes des Alulus",
+                "author": "A. Demuenynck",
+                "year": 1908,
+                "url": "https://archive.org/details/aupaysdemahagirg00demu",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 6",
+                "notes": "Tiré à part du Bulletin de la Société royale belge de géographie, Bruxelles, 1908, lu dans l'exemplaire numérisé sur archive.org : « Le nom Alulu, ainsi distinctement prononcé par tous les indigènes, a souvent été écrit Lour ou Luru »."
               }
             ]
           },

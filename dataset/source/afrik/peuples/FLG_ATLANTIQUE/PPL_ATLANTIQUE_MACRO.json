@@ -20,17 +20,14 @@
     "appellations": {
       "mainName": "Peuples atlantiques",
       "selfAppellation": null,
-      "exonyms": [
-        "West Atlantic peoples",
-        "Atlantic-speaking peoples",
-        "Langues atlantiques"
-      ],
-      "originOfExonyms": "Le terme anglais West Atlantic languages a ete introduit par le linguiste Sigismund Koelle en 1854, puis repris et formalise par Joseph Greenberg dans sa classification des langues africaines (1963). Il designe les langues du groupe atlantique de la famille Niger-Congo, parlees principalement sur la facade occidentale de l'Afrique.",
-      "whyProblematic": "L'unite de la famille atlantique est debattue : des linguistes comme Dalby (1965) et Merrill (2021) contestent que ces langues forment un groupe genetique coherent. Les langues du groupe meridional (Mel, Gola, Limba) sont parfois exclues de la definition stricte. Le terme macro-groupe reste une convention commode pour designer les peuples partageant des traits linguistiques communs sans necessairement impliquer une unite ethnique.",
-      "contemporaryUsage": "Le terme peuples atlantiques est utilise en linguistique et en ethnologie pour regrouper les communautes dont les langues appartiennent a la famille atlantique au sens large, recouvrant une diversite ethnique, culturelle et historique considerable. Les peuples regroupés dans cette famille emploient chacun leur propre nom.",
+      "exonyms": ["Ouest-Atlantiques", "peuples de l'Ouest atlantique"],
+      "spellingAliases": [],
+      "originOfExonyms": "Ce nom a d'abord été donné par des linguistes à des langues. En 1854, à Freetown, le missionnaire Sigismund Koelle range sous le titre « North-west Atlantic Languages » les langues de ses informateurs venus de la côte, comme le falup ou le kisi. Au XXe siècle, le nom West Atlantic, « ouest-atlantique », reste celui des classifications, comme l'inventaire du linguiste David Sapir en 1971. Il passe ensuite aux peuples qui parlent ces langues, que Théophile Obenga appelle en 1980 les « peuples de l'Ouest atlantique ».",
+      "whyProblematic": "Le nom réunit des peuples d'après leurs langues, et l'unité de ces langues est discutée. En 1965, David Dalby voit dans les langues du sud un ensemble à part, séparé de celles du nord, selon Ursula Drolc. En 2000, Guillaume Segerer note que le bijago n'est pas plus proche des langues atlantiques, par son vocabulaire, que des langues gur : on le range avec elles pour des raisons géographiques et de grammaire. Aujourd'hui, Konstantin Pozdniakov et Guillaume Segerer ne gardent dans la famille atlantique que les langues du nord et le groupe bak. Le catalogue Glottolog ne reconnaît plus de groupe atlantique unique.",
+      "contemporaryUsage": "Le nom atlantique sert surtout aux linguistes, pour nommer des langues ou des groupes de langues, comme le North-Central Atlantic du catalogue Glottolog. Chacun des peuples qu'il réunit porte son propre nom : Wolof, Peuls, Sérères, Diola, Baga ou Temné.",
       "linguisticFamily": "FLG_ATLANTIQUE",
-      "ethnoLinguisticGroup": "Groupe atlantique de la famille nigero-congolaise (Atlantic-Congo)",
-      "historicalRegion": "Côte atlantique ouest-africaine, du fleuve Sénégal au Liberia, avec extensions sahéliennes (Peuls)",
+      "ethnoLinguisticGroup": "Langues dites atlantiques, dans l'ensemble niger-congo (Atlantic-Congo dans Glottolog)",
+      "historicalRegion": "Régions côtières de l'Afrique de l'Ouest, du Sénégal au Liberia",
       "currentCountries": [
         "SEN",
         "GMB",
@@ -43,52 +40,46 @@
         "NER",
         "NGA",
         "CMR"
-      ]
+      ],
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Peuls (Fulbe/Fula) — groupe le plus nombreux, disperses du Senegal au Soudan",
-      "Wolofs — Senegal et Gambie, environ 5 millions de locuteurs",
-      "Sereer — centre-ouest du Senegal, environ 900 000 locuteurs",
-      "Diola (Jola) — Casamance, Gambie, Guinee-Bissau, environ 500 000 locuteurs",
-      "Balanta — Guinee-Bissau, Senegal, Gambie",
-      "Manjaku (Mandyak) — Guinee-Bissau et Senegal",
-      "Baga — littoral de Guinee",
-      "Nalu — littoral de Guinee",
-      "Bainouk (Banyun) — Casamance, Gambie, Guinee-Bissau",
-      "Bijago (Bidyogo) — archipel des Bijagos, Guinee-Bissau",
-      "Temne — Sierra Leone (environ 1 250 000 locuteurs selon Britannica, parfois exclu des classifications recentes)",
-      "Kissi (Kisi) — Guinee, Sierra Leone, Liberia",
-      "Limba — Sierra Leone"
+      "Wolof : groupe wolof des langues atlantiques du nord, selon Pozdniakov et Segerer",
+      "Peuls et Sérères : groupe peul-sérère des langues atlantiques du nord, selon Pozdniakov et Segerer",
+      "Sérères du Nord-Ouest (Noon, Laala, Saafi, Ndut, Palor) : langues cangin, région de Thiès, au Sénégal, selon Ursula Drolc",
+      "Bassari, Bedik, Konyagi : groupe tenda, selon Pozdniakov et Segerer",
+      "Jaad, ou Badiaranké selon Ursula Drolc, et Biafada : groupe jaad, selon Pozdniakov et Segerer",
+      "Nyun (Guñamolo, Gujaher, Gubaher), Kasanga et Kobiana : groupe nyun-buy, selon Pozdniakov et Segerer",
+      "Nalou, Baga Foré et Baga Pukur : groupe nalou, selon Pozdniakov et Segerer",
+      "Diola (Joola), Manjaku, Pepel, Mankanya et Balante : groupe bak, selon Pozdniakov et Segerer",
+      "Bijago (bijogo) : archipel des Bijagos, en Guinée-Bissau ; groupe bak selon Pozdniakov et Segerer, langue isolée du groupe atlantique selon Segerer en 2000",
+      "Temné, Kissi, Landouma, Baga Sitemu, Baga Koga, Baga Manduri : groupe mel, que Glottolog range à part du groupe atlantique",
+      "Limba et Gola : langues que Glottolog range à part, hors des groupes atlantiques"
     ],
     "origins": {
-      "ancientOrigins": "Les langues atlantiques constituent une branche de la superfamille Niger-Congo, dont les origines remontent probablement au nord-ouest de l'Afrique subsaharienne. Des travaux linguistiques (Creissels 2017, Segerer 2010) placent le foyer ancestral de la famille niger-congolaise dans la region sahelo-occidentale, et les langues atlantiques ont ensuite migre vers la cote. Leur profondeur historique est superieure a celle de la famille mande, mais leur unite genetique fait l'objet de debats depuis les travaux de W. A. A. Wilson.",
-      "formationPeriod": "La classification de la famille atlantique a ete etablie au XIXe siecle par Sigismund Koelle (1854). Les classifications modernes distinguent generalement un groupe nord (Fula-Wolof-Serer, Diola, Balanta, Manjaku, Baga, Bainouk, Bijago) et un groupe sud (Temne, Kissi, Limba), avec une position isolee pour le Bijago.",
-      "migrationRoutes": [
-        "Expansion peule vers l'est a partir du Fouta Toro (Senegal), atteignant le Sahel, le Nigeria, le Cameroun et le Soudan",
-        "Migrations wolof et sereer dans les savanes du Senegal septentrional et central",
-        "Mouvements balanta vers la cote de Guinee-Bissau entre les Xe et XIVe siecles",
-        "Implantation baga sur le littoral de Guinee apres des pressions venant du Fouta Djallon"
-      ],
+      "ancientOrigins": "Les langues atlantiques se sont séparées il y a très longtemps. Konstantin Pozdniakov compare le peul et le sérère, deux langues d'un même sous-groupe : elles partagent 37 % d'une liste de cent mots de base, selon les chiffres de David Sapir. Pour lui, cela situe leur séparation il y a 3 500 à 4 000 ans, et fait de l'ensemble atlantique une macro-famille plutôt qu'un groupe.",
+      "formationPeriod": "Le regroupement est une construction des linguistes. Sigismund Koelle réunit en 1854 des langues de la côte sous le titre « North-west Atlantic Languages ». En 1971, David Sapir distingue une branche du nord et une branche du sud, selon Ursula Drolc. Konstantin Pozdniakov et Guillaume Segerer ne gardent aujourd'hui que la branche du nord et le groupe bak. Glottolog range à part, dans l'ensemble Atlantic-Congo, les langues mel, le limba, le gola, le mansoanka et les langues cangin.",
+      "migrationRoutes": [],
       "historicalSettlementZones": [
-        "Basses terres cotieres et mangroves (Baga, Balanta, Bijago)",
-        "Vallee et embouchure du fleuve Casamance (Bainouk, Diola)",
-        "Plateau du Fouta Djallon et savanes guineo-senegalaises (Peuls)",
-        "Bassin du fleuve Senegal et Saloum (Wolof, Sereer)",
-        "Archipel des Bijagos (Guinee-Bissau)"
+        "Régions côtières de l'Afrique de l'Ouest, du Sénégal au Liberia",
+        "Région de Thiès, au Sénégal (Sérères de langue cangin)",
+        "Archipel des Bijagos, en Guinée-Bissau",
+        "Côte marécageuse de Guinée, du rio Nunez à Conakry (Baga)"
       ],
-      "unificationsOrDivisions": "La famille atlantique ne forme pas une unite politique ou ethnique commune. Elle regroupe des peuples aux organisations sociales tres diverses : societes acephales (Baga, Balanta), royaumes et confederations (Wolof, Kaabu des Mandingues affectant les peuples atlantiques voisins), archipels autonomes (Bijago). Des processus de fragmentation interne ont produit des sous-groupes dialectaux multiples au sein de chaque peuple.",
-      "externalInfluences": "Islam : islamisation progressive depuis le XVIIe siecle via les jihads peuls du Fouta Djallon et Fouta Toro, et par les marchands mandingues (Baga au XVIIIe siecle, Bainouk au XVIIe siecle). Colonisation portugaise : contact precoce avec les Bijago, Balanta et Bainouk des le XVe siecle (navigateur Alvise da Mosto, 1456). Colonisation francaise et britannique : decoupage des territoires au XIXe siecle, affectant les populations de part et d'autre des frontieres Senegal/Gambie/Guinee-Bissau.",
-      "majorHistoricalEvents": "La traite atlantique des esclaves (XVIe-XIXe siecles) a profondement marque les peuples atlantiques du littoral, certains jouant a la fois le role de victimes et d'acteurs du commerce esclavagiste. Les guerres de jihad peul du Fouta Djallon (XVIIIe siecle) ont provoque des conversions forcees et des migrations de populations cotieres comme les Baga. Les guerres de resistance a la colonisation portugaise en Guinee-Bissau (1963-1974) ont mobilise en premier lieu les Balanta."
+      "unificationsOrDivisions": "Le nom réunit des peuples d'après leurs langues, et non d'après une histoire politique commune. Les linguistes eux-mêmes le divisent : branche du nord et branche du sud chez David Sapir, groupes séparés chez Glottolog.",
+      "externalInfluences": null,
+      "majorHistoricalEvents": null
     },
     "organization": {
-      "traditionalPoliticalSystem": "Les organisations politiques des peuples atlantiques varient considerablement : des societes strictement acephales fondees sur des conseils d'anciens et des classes d'age (Balanta, Baga), des chefferies lignageres (Bainouk), des societes matrilineaires a chefs de village (Bijago), jusqu'a des royaumes centralises comme l'empire Jolof (Wolof) et les emirats peuls du Fouta Toro et du Fouta Djallon.",
-      "clanOrganization": "La plupart des peuples atlantiques sont organises en lignages et clans, souvent designes par un prefixe signifiant maison ou gens de (At- chez les peuples berberes, Na- chez les Balanta, etc.). Les clans controlent l'acces a la terre et jouent un role central dans les rituels d'initiation et les decisions collectives.",
-      "ageClassSystems": "Les systemes de classes d'age sont particulierement developpes chez les Balanta (Nwatch, Fuur, Nghaye, Kgness, Fanado) et les Bijago. Ces classes structurent l'acces aux responsabilites sociales, politiques et religieuses.",
-      "roleOfLineages": "Le principe de descendance varie selon les groupes : patrilineaire (Baga), matrilineaire (Bijago, Bainouk), ou bilineaire. Chez la plupart de ces peuples, le lignage determine l'heritage de la terre, le rang social et les responsabilites rituelles.",
-      "religiousAuthority": "Les societes secretes masculines et feminines jouent un role d'autorite religieuse important (Simo chez les Baga, balobas chez les Bijago). Les anciens inities detiennent un savoir eso terique et medient avec les ancetres et les esprits."
+      "traditionalPoliticalSystem": null,
+      "clanOrganization": null,
+      "ageClassSystems": null,
+      "roleOfLineages": null,
+      "religiousAuthority": null
     },
     "languages": {
-      "mainLanguage": "Groupe atlantique (branche de la famille Niger-Congo) : ensemble d'une quarantaine a cinquante langues distinctes",
+      "mainLanguage": "Langues atlantiques : une cinquantaine de langues selon Guillaume Segerer (2000)",
       "isoCodes": [
         "ful",
         "wol",
@@ -105,64 +96,67 @@
         "lma"
       ],
       "dialects": [
-        "Pulaar / Fulfulde (dialectes peuls du Senegal, Guinee, Nigeria, etc.)",
-        "Wolof standard et dialectes regionaux (Kayor, Baol, Walo)",
-        "Seereer-Siin, Seereer-Noon",
-        "Diola-Fogny, Diola-Kasa",
-        "Balanta-Kentohe, Balanta-Ganja",
-        "Bainouk-Gunyaamolo, Bainouk-Samik, Bainouk-Gunyuno"
+        "Groupe wolof : wolof, lebou",
+        "Groupe nyun-buy : nyun (guñamolo, gujaher, gubaher), kasanga, kobiana",
+        "Groupe tenda : bassari, tanda, bedik, bapen, konyagi",
+        "Groupe jaad : jaad, biafada",
+        "Groupe peul-sérère : peul (pular, pulaar, fulfulde), sérère",
+        "Groupe cangin : palor, ndut, noon, laala, saafi",
+        "Groupe nalou : nalou, baga foré, pukur",
+        "Groupe bak : balante, diola, manjaku, pepel, mankanya, bijogo",
+        "Groupe mel, que Glottolog range à part : temné, landouma, baga sitemu, baga koga, baga manduri, kissi, bullom"
       ],
-      "vehicularRole": "Le peul (pulaar/fulfulde) est la seule langue atlantique a depasser la zone cotiere, servant de langue vehiculaire dans tout le Sahel de l'Atlantique au lac Tchad. Le wolof est la lingua franca du Senegal et de la Gambie. Le kreol (creole portugais) sert de vehiculaire en Guinee-Bissau, y compris dans les zones de peuplement atlantique."
+      "vehicularRole": "Guillaume Segerer cite le wolof et le peul comme des langues atlantiques de grande extension. Les autres restent, pour une bonne moitié, très peu décrites. Dans l'archipel des Bijagos, le kriol, un créole à base de portugais, gagne du terrain."
     },
+    "externalIdentifiers": {},
     "culture": {
-      "majorRites": "Les rites d'initiation (fanado ou rites de passage a l'age adulte) sont communs a de nombreux peuples atlantiques, notamment Balanta, Bijago, Baga, Mandyak. Ils impliquent une retraite en foret sacree, des epreuves physiques et morales, une circoncision masculine, et une reintegration solennelle dans la communaute. Les societes secretes (Simo chez les Baga, balobas chez les Bijago) encadrent ces rites et detiennent les savoirs sacres.",
-      "symbols": "Chaque peuple atlantique possede ses propres symboles : le masque Nimba (D'mba) symbolise la fertilite et la maternite chez les Baga ; les statues ira (iran) et les masques zoomorphes representant taureau (vaca bruta), requin et raie chez les Bijago ; les tissages et teintures des Bainouk. Le kebinde (outil agricole representatif) apparait sur le billet de 50 pesos de Guinee-Bissau comme symbole balanta.",
-      "artsAndMusic": "Les arts des peuples atlantiques sont etroitement lies aux rites et aux societes secretes. Sculptures sur bois (masques Nimba, Bansonyi et Elek baga ; statues iran bijago), poterie (baga), tissage et teinture (bainouk). La musique integre des percussions (bendir, djembe, timba), des instruments a cordes (kusunde balanta, kora peule, akonting diola), des flutes et des chants polyphoniques collectifs.",
-      "spiritualities": "La plupart des peuples atlantiques pratiquent une combinaison d'islam sunnite (herite des jihads du XVIIIe-XIXe siecle et des marchands mandingues) et de croyances animistes ancestrales. Le culte des ancetres, la croyance aux esprits de la nature et les rites agraires restent vivaces malgre l'islamisation. Les Bijago maintiennent une religion animiste ancienne fondee sur le culte des ira (esprits de la terre et des ancetres). Les Baga conservent des pratiques rituelles preislamiques aux cotes d'un islam malekite majoritaire."
+      "majorRites": null,
+      "symbols": null,
+      "artsAndMusic": null,
+      "spiritualities": null
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Empire Jolof (Wolof, XIVe-XVIe siecles) ; Emirat du Fouta Toro (Peuls toucouleurs, XVIIIe siecle) ; Almamy du Fouta Djallon (Guinee, XVIIIe-XIXe siecles) ; Royaume bainouk du Kassanla (Casamance, XVe-XIXe siecles) ; Chefferies baga du littoral guineen ; Marine et independance des Bijago (XVIe-XIXe siecles).",
-      "relationsWithNeighbors": "Les peuples atlantiques ont entretenu des relations complexes avec les empires mande (Mali, Kaabu) qui les pressaient vers la cote aux XIIIe-XIXe siecles. Les Peuls ont joue un role dual : apporteurs d'islam et de commerce, mais aussi envahisseurs lors des guerres de jihad. Les navigateurs portugais ont etabli des comptoirs des le XVe siecle, commercant avec les chefs locaux et participant au commerce d'esclaves.",
-      "conflictsOrAlliances": "La traite atlantique a cree des conflits inter-ethniques intenses (Bijago raidant le continent ; Balanta victimes et acteurs du commerce esclavagiste). La guerre d'independance de la Guinee-Bissau (1963-1974) a vu les Balanta jouer un role central dans le PAIGC d'Amilcar Cabral. Le conflit casamancais (MFDC) depuis 1982 a deplace de nombreux Bainouk.",
-      "diaspora": "Les peuples atlantiques de Guinee-Bissau (Balanta, Bijago, Mandyak) ont migre vers Dakar, Lisbonne et d'autres villes europeennes. Les Peuls forment l'une des plus grandes diasporas africaines, presents dans toute l'Afrique et en Europe. Les Bainouk ont fui la Casamance vers la Guinee-Bissau et la Gambie sous la pression du conflit regional."
+      "kingdomsOrChiefdoms": null,
+      "relationsWithNeighbors": null,
+      "conflictsOrAlliances": null,
+      "diaspora": null
     },
     "demography": {
-      "totalPopulation": 30000000,
+      "totalPopulation": null,
       "referenceYear": 2025,
-      "source": "Estimation globale des locuteurs de langues atlantiques selon Britannica (African Atlantic languages), Language Gulper (2014), Ethnologue SIL International. Le chiffre de 30 millions inclut tous les groupes atlantiques, avec les Peuls representant plus de la moitie (environ 15-20 millions de locuteurs peuls). Les chiffres par groupe varient selon les sources et les criteres retenus (locuteurs natifs vs population ethnique totale).",
-      "distributionByCountry": [
-        {
-          "country": "SEN",
-          "population": 9000000,
-          "note": "Wolof, Peuls, Sereer, Diola, Bainouk principalement"
-        },
-        {
-          "country": "GIN",
-          "population": 6000000,
-          "note": "Peuls majoritaires (Fouta Djallon), Baga, Nalu, Kissi"
-        },
-        {
-          "country": "GNB",
-          "population": 1400000,
-          "note": "Balanta, Manjaku, Bijago, Bainouk"
-        },
-        {
-          "country": "GMB",
-          "population": 400000,
-          "note": "Diola, Bainouk, Balanta, Sereer"
-        },
-        {
-          "country": "SLE",
-          "population": 4000000,
-          "note": "Temne, Kissi, Limba"
-        },
-        {
-          "country": "LBR",
-          "population": 500000,
-          "note": "Kissi, Gola, autres groupes meridionaux"
-        }
-      ]
+      "source": "Aucun chiffre n'est donné pour l'ensemble : les sources lues ne comptent pas les peuples atlantiques ensemble, et chaque fiche de peuple donne ses propres chiffres.",
+      "distributionByCountry": []
     },
+    "gaps": [
+      {
+        "field": "content.origins.migrationRoutes",
+        "reason": "Les ouvrages lus pour ce regroupement, de Sigismund Koelle (1854) à Guillaume Segerer (2000) et Konstantin Pozdniakov (2022), classent des langues. Aucun ne décrit de route de migration commune à ces peuples ; chaque fiche de peuple présente les siennes."
+      },
+      {
+        "field": "content.origins.externalInfluences",
+        "reason": "Les ouvrages lus pour ce regroupement, de Sigismund Koelle (1854) à Guillaume Segerer (2000) et Konstantin Pozdniakov (2022), classent des langues. Ces peuples n'ont pas reçu les mêmes influences ; chaque fiche de peuple présente les siennes."
+      },
+      {
+        "field": "content.origins.majorHistoricalEvents",
+        "reason": "Les ouvrages lus pour ce regroupement, de Sigismund Koelle (1854) à Guillaume Segerer (2000) et Konstantin Pozdniakov (2022), classent des langues. Ces peuples n'ont pas une histoire commune ; chaque fiche de peuple présente la sienne."
+      },
+      {
+        "field": "content.organization",
+        "reason": "Les ouvrages lus pour ce regroupement, de Sigismund Koelle (1854) à Guillaume Segerer (2000) et Konstantin Pozdniakov (2022), classent des langues. Aucun ne décrit une organisation sociale ou politique commune à ces peuples, et chacun a la sienne, présentée dans sa fiche."
+      },
+      {
+        "field": "content.culture",
+        "reason": "Les ouvrages lus pour ce regroupement, de Sigismund Koelle (1854) à Guillaume Segerer (2000) et Konstantin Pozdniakov (2022), classent des langues. Aucun ne décrit une culture commune à ces peuples ; chaque fiche de peuple présente la sienne."
+      },
+      {
+        "field": "content.historicalRole",
+        "reason": "Les ouvrages lus pour ce regroupement, de Sigismund Koelle (1854) à Guillaume Segerer (2000) et Konstantin Pozdniakov (2022), classent des langues. Ces peuples n'ont pas joué un rôle historique commun ; chaque fiche de peuple présente le sien."
+      },
+      {
+        "field": "content.demography.totalPopulation",
+        "reason": "Les ouvrages lus pour ce regroupement, de Sigismund Koelle (1854) à Guillaume Segerer (2000) et Konstantin Pozdniakov (2022), classent des langues et ne comptent pas leurs locuteurs ensemble. Glottolog ne donne pas de chiffre. Chaque fiche de peuple donne ses propres chiffres."
+      }
+    ],
     "sources": [
       {
         "title": "Britannica. African Atlantic languages",
@@ -186,6 +180,41 @@
         "url": "https://lgidf.cnrs.fr/sites/lgidf.cnrs.fr/files/images/Creissels.langues.afric.jan.%202017.pdf",
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Glottolog 5.3 — Atlantic-Congo (atla1278), North-Central Atlantic (nort3146) et Mel (mela1257)",
+        "url": "https://glottolog.org/resource/languoid/id/atla1278",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue de langues de l'Institut Max Planck d'anthropologie évolutionniste. Lu le 3 novembre 2026 : branches de l'ensemble Atlantic-Congo et langues des groupes North-Central Atlantic et Mel."
+      },
+      {
+        "title": "Konstantin Pozdniakov, Proto-Fula–Sereer: Lexicon, morphophonology, and noun classes, Niger-Congo Comparative Studies 3, 2022",
+        "url": "https://hal.science/hal-03998687",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Language Science Press, 2022. Lu le 3 novembre 2026 sur HAL : introduction, p. 1-2, avec la classification des langues atlantiques de Pozdniakov et Segerer."
+      },
+      {
+        "title": "Guillaume Segerer, Description de la langue bijogo (Guinée-Bissau), thèse de doctorat, 2000",
+        "url": "https://theses.hal.science/tel-00347666",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 sur HAL : avant-propos, p. 4, et conclusion, p. 393."
+      },
+      {
+        "title": "Ursula Drolc, « L'évolution du système consonantique des langues cangin », Afrikanistik-Aegyptologie-Online, 2006",
+        "url": "https://doi.org/10.18716/ojs/aaeo/2006_3513",
+        "tier": "unverified",
+        "source_kind": "academic",
+        "notes": "Revue en ligne de l'université de Cologne. Lu le 3 novembre 2026 : partie 1, « Classification »."
+      },
+      {
+        "title": "Polyglotta Africana",
+        "url": "https://archive.org/details/polyglottaafrica00koel",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Londres, Church Missionary House, 1854, par Sigismund Wilhelm Koelle. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive : remarques d'introduction, p. 1-2."
       }
     ],
     "searchAnswer": {
