@@ -288,12 +288,13 @@ reads. Run it after adding any `process.env` reference.
 request (with a Sentry capture); outside production the limiter is skipped with a warning.
 See the Upstash entry under the required variables for the outage behaviour.
 
-| Variable                 | Meaning                                                        | Default |
-| ------------------------ | -------------------------------------------------------------- | ------- |
-| `RATE_LIMIT_IP_RPM`      | anonymous requests per IP                                      | `60`    |
-| `RATE_LIMIT_PUBLIC_RPM`  | a `public`-tier API key                                        | `600`   |
-| `RATE_LIMIT_PARTNER_RPM` | a `partner`-tier API key                                       | `6000`  |
-| `RATE_LIMIT_WINDOW`      | window accepted by `@upstash/ratelimit` (`"1 m"`, `"30 s"`, …) | `"1 m"` |
+| Variable                 | Meaning                                                              | Default |
+| ------------------------ | -------------------------------------------------------------------- | ------- |
+| `RATE_LIMIT_IP_RPM`      | anonymous requests per IP                                            | `60`    |
+| `MCP_RATE_LIMIT_IP_RPM`  | anonymous requests per IP on `/api/v2/mcp` (shared assistant egress) | `600`   |
+| `RATE_LIMIT_PUBLIC_RPM`  | a `public`-tier API key                                              | `600`   |
+| `RATE_LIMIT_PARTNER_RPM` | a `partner`-tier API key                                             | `6000`  |
+| `RATE_LIMIT_WINDOW`      | window accepted by `@upstash/ratelimit` (`"1 m"`, `"30 s"`, …)       | `"1 m"` |
 
 The tier (`public` / `partner` / `admin`) comes from the `api_keys.tier` column (migration
 `013`), resolved by `validateApiKey()`. There is no key list to maintain in the environment.

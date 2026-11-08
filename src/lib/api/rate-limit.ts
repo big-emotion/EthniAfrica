@@ -56,6 +56,7 @@ export async function getRateLimitIdentifier(request: NextRequest): Promise<{
 interface Limiters {
   redis: Redis;
   ip: Ratelimit;
+  agentIp: Ratelimit;
   public: Ratelimit;
   partner: Ratelimit;
   keyIssuance: Ratelimit;
@@ -64,6 +65,10 @@ interface Limiters {
 let limiters: Limiters | null = null;
 
 const DEFAULT_IP_RPM = 60;
+// Assistants call from a handful of shared egress addresses, so one address is
+// many readers; the agent endpoint is metered at ten times the default.
+const DEFAULT_AGENT_IP_RPM = 600;
+const AGENT_ENDPOINT = "/api/v2/mcp";
 const DEFAULT_PUBLIC_RPM = 600;
 const DEFAULT_PARTNER_RPM = 6000;
 const DEFAULT_WINDOW = "1 m";
@@ -131,6 +136,10 @@ function getLimiters(): Limiters {
   const redis = new Redis({ url, token });
 
   const ipRpm = parsePositiveInt(process.env.RATE_LIMIT_IP_RPM, DEFAULT_IP_RPM);
+  const agentIpRpm = parsePositiveInt(
+    process.env.MCP_RATE_LIMIT_IP_RPM,
+    DEFAULT_AGENT_IP_RPM
+  );
   const publicRpm = parsePositiveInt(
     process.env.RATE_LIMIT_PUBLIC_RPM,
     DEFAULT_PUBLIC_RPM
@@ -147,6 +156,11 @@ function getLimiters(): Limiters {
       redis,
       limiter: Ratelimit.slidingWindow(ipRpm, window),
       prefix: "rl:ip",
+    }),
+    agentIp: new Ratelimit({
+      redis,
+      limiter: Ratelimit.slidingWindow(agentIpRpm, window),
+      prefix: "rl:ip:mcp",
     }),
     public: new Ratelimit({
       redis,
@@ -323,7 +337,11 @@ export async function evaluateRateLimit(
   if (configCheck !== "ok") return configCheck;
 
   const { identifier, apiKey } = await getRateLimitIdentifier(request);
-  return runLimiter(identifier, getRateLimiter(apiKey, tier));
+  const limiter =
+    apiKey === null && request.nextUrl.pathname === AGENT_ENDPOINT
+      ? getLimiters().agentIp
+      : getRateLimiter(apiKey, tier);
+  return runLimiter(identifier, limiter);
 }
 
 /**

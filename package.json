@@ -31,6 +31,7 @@
     "check:migration-files": "tsx scripts/ci/checkMigrationState.ts --files-only",
     "check:migration-state": "tsx scripts/ci/checkMigrationState.ts",
     "check:migration-state:production": "tsx scripts/ci/checkMigrationState.ts --target=production",
+    "mcp:check": "tsx scripts/dev/checkPublicAgentMcp.ts",
     "check:orphan-docs": "tsx scripts/ci/checkOrphanDocs.ts",
     "check:pagination-contract": "tsx scripts/checkPaginationContractDrift.ts",
     "check:production-ledger": "tsx scripts/ci/checkProductionLedger.ts --selftest && tsx scripts/ci/checkProductionLedger.ts",
