@@ -232,6 +232,28 @@ Facebook and TikTok stays under 3 minutes. The full story goes on YouTube as a
 regular video. The word gets a fiche (`WRD_ESCLAVE`) before posting, so its name
 address answers.
 
+**Slavery chapter, six carousels (operator, 2026-11-08).** The operator
+widened « esclave » into a chapter of six linked carousels. Each carousel ends
+by naming the next. All six use one research dossier. TikTok goes first, then
+Instagram and Facebook. Only part 1 also has a video. No chapter of linked
+carousels has been tested yet. It counts as a result if parts 2–6 keep at least
+half of part 1's views and the save rate stays near « race » (about 2 %).
+
+| Part | Carousel                                                                                                                    | Date           |
+| ---- | --------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| 1    | Where the word « esclave » comes from (series 4 episode, with the video)                                                    | Wed 2026-12-02 |
+| 2    | The forms of slavery, read through three questions: owned or not, inherited or not, decided by skin colour or not           | Sat 2026-12-05 |
+| 3    | Where slavery was practised: zones and routes, never an approximate historical border drawn as exact                        | Tue 2026-12-08 |
+| 4    | Table by colonial power: entry into the trade, people carried under its flag (SlaveVoyages), its law, abolition dates       | Sat 2026-12-12 |
+| 5    | From slavery to colonisation: how the fight against the trade was used to justify conquest (Berlin 1885, Brussels 1890)     | Tue 2026-12-15 |
+| 6    | Slavery and colonisation compared: ownership or constraint, status, duration; colonial forced labour moves here from part 2 | Sun 2026-12-20 |
+
+Part 6 falls on the anniversary of abolition in La Réunion. Parts 5 and 6
+follow the agent's reading of two close requests from the operator. That reading
+is confirmed or corrected at approval 1. Comparing never means ranking:
+figures appear in chronological order, and no line says « the worst ». Research
+runs in two waves: parts 1–3 from now, parts 4–6 before 2026-12-01.
+
 ## Outside the series
 
 Two kinds of post sit outside the frame and never take a series slot unless
