@@ -4,133 +4,8 @@
   "languageFamilyId": "FLG_BANTU",
   "currentCountries": ["CAF", "COG"],
   "classificationStatus": "colonial-legacy",
-  "content": {
-    "appellations": {
-      "mainName": "Aka",
-      "selfAppellation": "Aka",
-      "exonyms": [
-        "Biaka",
-        "Bayaka",
-        "Babenzele",
-        "Ba'Aka",
-        "Baaka",
-        "Mbenga",
-        "Pygmée",
-        "Pygmées"
-      ],
-      "spellingAliases": ["Pigmée", "Pigmées"],
-      "originOfExonyms": "Le terme 'Biaka' ou 'BaAka' est une variante du nom propre. 'Babenzele' designe un sous-groupe specifique. 'Mbenga' est un terme generique englobant les Aka et les Baka du Cameroun. 'Pygmees' est un terme colonial aujourd'hui considere pejoratif.",
-      "whyProblematic": "Le terme 'Pygmee' est consideree offensant car il renvoie a une categorisation coloniale basee sur la taille et nie l'identite propre de ces peuples. Les Aka preferent etre designes par leur nom propre.",
-      "contemporaryUsage": "Les termes 'Aka', 'BaAka' et 'Ba'Aka' sont utilises dans la litterature scientifique et par les organisations de defense des droits. Le terme 'Bayaka' est repandu au Congo-Brazzaville. L'UNESCO emploie 'Ba'Aka' dans ses documents officiels.",
-      "linguisticFamily": "FLG_BANTU",
-      "ethnoLinguisticGroup": "Mbenga (peuples de la foret d'Afrique centrale)",
-      "historicalRegion": "Forets du sud-ouest de la Republique centrafricaine et nord de la Republique du Congo",
-      "currentCountries": ["CAF", "COG"]
-    },
-    "ethnicities": ["Aka", "Ba'Aka", "Babenzele"],
-    "origins": {
-      "ancientOrigins": "Les Aka sont l'un des peuples les plus anciens d'Afrique centrale. Des etudes genetiques et linguistiques indiquent que les populations pygmees d'Afrique centrale de l'Ouest descendent d'un groupe ancestral commun qui a subsiste intact jusqu'il y a environ 2 800 ans, date a laquelle des agriculteurs bantous envahirent leur territoire et les fragmenterent. Les recherches montrent que les Aka et les Baka partageaient une histoire linguistique commune, formant un groupe appele Baakaa il y a environ 500 ans, vivant a l'est du bassin du Congo. Les Aka ont ensuite adopte la langue des agriculteurs bantous installes dans la region.",
-      "formationPeriod": "Formation du groupe distinctif estimee a partir de 2 800 ans avant le present, suite a la pression des migrations bantoues vers l'Afrique centrale.",
-      "migrationRoutes": [
-        "Migration depuis le bassin oriental du Congo vers le sud-ouest de la RCA",
-        "Expansion dans le nord de la Republique du Congo",
-        "Contacts progressifs avec les peuples agriculteurs bantous (appeles Ngandu) des les premiers siecles de l'ere commune"
-      ],
-      "historicalSettlementZones": [
-        "Forets equatoriales du sud-ouest de la Republique centrafricaine (regions de Lobaye, Sangha-Mbaere)",
-        "Nord de la Republique du Congo (zone du Parc national Dzanga-Sangha)"
-      ],
-      "unificationsOrDivisions": "Les Aka ne forment pas une entite politique unifiee. Ils vivent en petits groupes nomades affilies a des villages d'agriculteurs bantous voisins. Au XVIIIe siecle, la traite des esclaves provoqua la migration de plusieurs tribus dans les territoires Aka.",
-      "externalInfluences": "Contacts anciens et permanents avec les peuples agriculteurs bantous voisins (Ngandu). La colonisation francaise (1910-1940) dans l'Afrique equatoriale francaise a perturbe leur mode de vie : les tribus voisines furent forcees a la production de caoutchouc, augmentant la demande en gibier aupres des Aka. Les annees 1930 ont vu la pression francaise pour les installer en bord de routes, que la majorite refusa.",
-      "majorHistoricalEvents": "XIXe siecle : role de chasseurs d'elephants majeurs pour le commerce de l'ivoire via les tribus intermediaires. 1910-1940 : integration dans le systeme colonial de l'Afrique equatoriale francaise. 2003 : les traditions orales Aka proclamees Chefs-d'oeuvre du patrimoine oral et immateriel de l'humanite par l'UNESCO. 2012-2013 : violences liees a la crise centrafricaine ciblent des membres de la communaute ; meurtres signales par l'ONU."
-    },
-    "organization": {
-      "traditionalPoliticalSystem": "Societe egalitaire sans hierarchie formelle. Les decisions sont prises collectivement. Quelques roles de leadership reconnus : kombeti (chef de groupe local), tuma (chasseur d'elephants), nganga (grand guerisseur). Ces roles sont occupes par des hommes dans la communaute etudiee par Barry Hewlett.",
-      "clanOrganization": "Organisation en petits groupes locaux nomades. L'identite de groupe est definie par la parente et les liens matrimoniaux. Selon la region, l'identification s'etend aux familles et clans des agriculteurs voisins (Ngandu) avec lesquels les Aka entretiennent des relations de symbiose.",
-      "ageClassSystems": null,
-      "roleOfLineages": "Les liens de parente et d'alliance matrimoniale structurent les groupes locaux. La mobilite permet aux individus de rejoindre des parents dans d'autres regions.",
-      "religiousAuthority": "Le nganga (guerisseur principal) joue un role spirituel central. Les pratiques religieuses sont animistes, centrees sur la foret comme espace sacre et source de vie."
-    },
-    "languages": {
-      "mainLanguage": "Aka (diaka)",
-      "isoCodes": ["axk"],
-      "dialects": ["Babenzele", "Bayaka"],
-      "vehicularRole": "Les Aka parlent leur propre langue (de la famille bantoue C10) ainsi que la langue des peuples agriculteurs bantous auxquels ils sont affilies (environ 15 groupes differents). Le langage des signes, la paralangue, le chant et l'imitation des sons de la foret constituent egalement des elements essentiels de leur identite linguistique."
-    },
-    "culture": {
-      "majorRites": "Rites centres sur la foret et la chasse. Chasse a l'elephant (tuma) autrefois pratique de prestige majeur. Chasse au filet impliquant hommes, femmes et enfants. Cueillette du miel, activite hautement valorisee. Ceremonies de passage et de guerison conduites par le nganga.",
-      "symbols": "La foret est le symbole et l'espace identitaire central : les Aka se definissent comme 'peuple de la foret' par opposition aux 'gens du village'. L'elephant, le miel et les filets de chasse sont des symboles culturels forts.",
-      "artsAndMusic": "Musique polyphonique complexe classee parmi les plus elaborees du monde, etudiee par les ethnomusicologues Simha Arom et Michelle Kisliuk. Les chants polyphoniques Ba'Aka ont ete inscrits sur la Liste representative du patrimoine culturel immateriel de l'UNESCO en 2003. La musique Aka est presente sur des albums internationaux dont 'African Rhythms' (2003) et 'Echoes of the Forest' (1995). La danse accompagne systematiquement la musique.",
-      "spiritualities": "Animisme centre sur la foret. Croyance en des esprits de la foret. Le nganga (guerisseur) communique avec le monde spirituel. Pratiques magiques liees a la chasse et a la guerison."
-    },
-    "historicalRole": {
-      "kingdomsOrChiefdoms": "Les Aka n'ont pas developpe de royaumes ou de chefferies hierarchiques. Leur organisation egalitaire et nomade exclut les structures politiques centralisees.",
-      "relationsWithNeighbors": "Relations de symbiose et de dependance mutuelle avec les peuples agriculteurs bantous voisins (collectivement appeles Ngandu). Les Aka echangent gibier, miel et produits forestiers contre manioc, plantains, ignames, mais, concombres, courges, gombo, papaye, mangue, ananas, huile de palme et riz. Cette relation, bien qu'inegale et marquee par une discrimination profonde des Ngandu envers les Aka, est ancienne et permanente.",
-      "conflictsOrAlliances": "Les Aka ont generalement evite les conflits en se retractant dans la foret. Pendant la crise centrafricaine (2012-2013), des membres de la communaute ont ete cibles par des milices Seleka et anti-balaka.",
-      "diaspora": "Presence limitee hors des forets d'Afrique centrale. Quelques membres installes en bordure de routes ou dans des villages missionaires suite aux pressions coloniales et postcoloniales."
-    },
-    "demography": {
-      "totalPopulation": 30000,
-      "referenceYear": 2025,
-      "source": "Minority Rights Group International (estimation 8 000-20 000 pour les Ba'Aka en RCA seuls) ; Culture and the Mind, Universite de Sheffield (estimation totale 30 000-40 000)",
-      "distributionByCountry": [
-        {
-          "country": "CAF",
-          "population": 20000
-        },
-        {
-          "country": "COG",
-          "population": 10000
-        }
-      ]
-    },
-    "sources": [
-      {
-        "title": "Aka in Central African Republic – Minority Rights Group International, 2018",
-        "url": "https://minorityrights.org/communities/aka/",
-        "tier": "referenced",
-        "source_kind": "ngo"
-      },
-      {
-        "title": "Culture and the Mind – Aka fieldsites, Universite de Sheffield",
-        "url": "https://cultureandmind.sites.sheffield.ac.uk/fieldsites/aka",
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "Kisliuk, Michelle – Seize the Dance! BaAka Musical Life and the Ethnography of Performance, Oxford University Press, 2000",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "Verdu, Paul et al. – Origins and Genetic Diversity of Pygmy Hunter-Gatherers from Western Central Africa, Science, 2009",
-        "url": "https://www.science.org/content/article/short-history-african-pygmies",
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "UNESCO – Polyphonic Singing of the Ba'Aka, Intangible Cultural Heritage",
-        "url": "https://ich.unesco.org",
-        "tier": "official",
-        "source_kind": "intergovernmental"
-      },
-      {
-        "title": "Discover Afrika – The BAaka peoples",
-        "url": "https://discover-afrika.com/baaka-peoples/",
-        "tier": "needs_review"
-      },
-      {
-        "title": "Dictionnaire de l'Académie française, 1re édition (1694), entrée « pigmée » renvoyant à « pygmée »",
-        "url": "https://www.dictionnaire-academie.fr/article/A1_0071",
-        "tier": "referenced",
-        "source_kind": "linguistic_reference",
-        "notes": "Atteste la graphie ancienne « pigmée »."
-      }
-    ]
-  },
   "nameHistory": {
-    "summary": "Le nom Aka désigne un peuple de forêt du sud-ouest de la République centrafricaine et du nord de la république du Congo, qui se nomme lui-même BaAka. D'autres noms existent : Biaka, Bayaka, Babenzele, des noms que lui donnent ses voisins, comme Mbenga et Babinga, et le mot savant Pygmée, que beaucoup jugent blessant. On ne sait pas avec certitude d'où vient le nom Aka ; ce que disent les sources est présenté plus bas.",
+    "summary": "Le nom Aka désigne un peuple de forêt du sud-ouest de la République centrafricaine et du nord de la République du Congo, qui se nomme lui-même BaAka. D'autres noms existent : Biaka, Bayaka et Babenzele, des noms donnés par des voisins, comme Mbenga et Babinga, et le mot Pygmée, venu du grec, que beaucoup jugent blessant. Nous n'avons pas trouvé l'origine du nom Aka ; ce que disent les sources sur chaque nom est présenté plus bas.",
     "names": [
       {
         "nameText": "BaAka",
@@ -138,7 +13,8 @@
         "selfGiven": true,
         "languageOfOrigin": "axk",
         "namedBy": null,
-        "shortLine": "Le nom que ce peuple de forêt se donne ; ses voisins en emploient d'autres.",
+        "shortLine": "Le nom que ce peuple de forêt se donne ; on écrit aussi Aka, sans le préfixe ba- du pluriel.",
+        "usedIn": ["axk"],
         "periodLabel": "En usage aujourd'hui",
         "accounts": [
           {
@@ -148,18 +24,9 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Aka est le nom de la langue dans la liste de Maho de 2009, sous le code C104, avec Babenzele ; la norme ISO 639-3 l'appelle Yaka (République centrafricaine), sous le code axk. On ne sait pas avec certitude d'où vient le nom Aka ; les sources que nous avons lues ne le disent pas.",
+            "statement": "Le nom Aka est aussi celui de la langue de ce peuple. La liste des langues bantoues de Jouni Maho la range sous le code C104, avec le parler des Babenzele ; la norme ISO 639-3 et le catalogue Glottolog l'appellent yaka (République centrafricaine), sous le code axk. Glottolog donne aussi les noms Mòáka, Beka et Pygmée de la Lobaye.",
             "aspect": "usage",
             "sources": [
-              {
-                "title": "ISO 639-3, Yaka (Central African Republic) [axk]",
-                "author": "SIL International, autorité d'enregistrement ISO 639-3",
-                "year": null,
-                "url": "https://iso639-3.sil.org/code/axk",
-                "tier": "official",
-                "source_kind": "linguistic_reference",
-                "notes": "Fiche du code, lue le 13 octobre 2026."
-              },
               {
                 "title": "New Updated Guthrie List Online (NUGL Online), version du 4 juin 2009",
                 "author": "Jouni Filip Maho",
@@ -168,7 +35,25 @@
                 "tier": "official",
                 "source_kind": "linguistic_reference",
                 "page": "p. 25",
-                "notes": "Liste de classification des langues bantoues, lue le 13 octobre 2026 dans la copie du 3 février 2018 conservée par la Wayback Machine. Entrée C104, « Yaka axk, Aka, incl. Babenzele »."
+                "notes": "Liste de classification des langues bantoues, lue dans la copie du 3 février 2018 conservée par la Wayback Machine. Entrée C104, « Yaka axk, Aka, incl. Babenzele »."
+              },
+              {
+                "title": "ISO 639-3, Yaka (Central African Republic) [axk]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/axk",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code de langue tenue par SIL International."
+              },
+              {
+                "title": "Glottolog 5.3 — Yaka (Central African Republic) (yaka1272)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (éd.)",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/yaka1272",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde tenu par l'Institut Max Planck d'anthropologie évolutionniste. La fiche classe la langue parmi les langues bantoues et donne comme autres noms Aka, Babinga, Bambenga, Beka, Mòáka, Pygmée de la Lobaye et Pygmée de Mongoumba."
               }
             ]
           },
@@ -181,7 +66,13 @@
             "era": "modern",
             "statement": "Le nom BaAka est donné par les chercheurs Marine Robillard et Serge Bahuchet, dans leur tableau des noms des peuples de forêt d'Afrique centrale, à un peuple de 30 000 à 50 000 personnes de la République centrafricaine et du Congo. Ils y rappellent que Bahuchet écrivait déjà en 1993 : « En vérité, les Pygmées n'existent pas. Les hommes qui existent ont noms Baka, BaBongo, BaKola, BaAka… ».",
             "aspect": "usage",
-            "formAsWritten": "BaAka",
+            "formAsWritten": "(Ba)Aka",
+            "actors": [
+              {
+                "name": "Marine Robillard et Serge Bahuchet",
+                "role": "écrit cette forme"
+              }
+            ],
             "sources": [
               {
                 "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
@@ -191,7 +82,86 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "tableau 1 et § 1",
-                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 13 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Le tableau 1 donne (Ba)Aka, avec les autres noms Bayaka, Biaka, Babinga, Bambenga, BaMbenzele et Babenzele ; la citation de 1993 ouvre l'article."
+                "notes": "Journal des africanistes, 82 (1-2), 2012, p. 15-51 ; lu sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Le tableau 1 donne (Ba)Aka, avec les autres noms Bayaka, Biaka, Babinga, Bambenga, BaMbenzele et Babenzele ; la citation de 1993 ouvre l'article."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "1986"
+            },
+            "era": "modern",
+            "statement": "Le nom BaAka est écrit ainsi par l'ethnologue Serge Bahuchet, pour un peuple de Centrafrique et du nord du Congo qu'il distingue des BaMbènzèlè, ses voisins.",
+            "aspect": "usage",
+            "formAsWritten": "BaAka",
+            "actors": [
+              {
+                "name": "Serge Bahuchet",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Linéaments d'une histoire humaine de la forêt du bassin congolais",
+                "author": "Serge Bahuchet",
+                "year": 1986,
+                "url": "https://archive.org/details/biostor-250691",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 297-298",
+                "notes": "Mémoires du Muséum national d'histoire naturelle, série A, Zoologie, vol. 132, 1986, p. 297-315. Lu dans la numérisation de la Biodiversity Heritage Library (BioStor) sur Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "1979"
+            },
+            "era": "modern",
+            "statement": "Le nom Aka apparaît par écrit en 1979 dans le titre d'un recueil d'études dirigé par Serge Bahuchet, sur les Pygmées « Ba-Mbenga » (aka/baka) du nord-ouest du bassin congolais, d'après le compte rendu de Johan Pottier. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "aka",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Serge Bahuchet",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Compte rendu de Serge Bahuchet (éd.), Pygmées de Centrafrique (SELAF, 1979), Bulletin of the School of Oriental and African Studies, 46 (2)",
+                "author": "Johan Pottier",
+                "year": 1983,
+                "url": "https://www.cambridge.org/core/product/F3407FA3065F19B837F51B51FE913B4C",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 409",
+                "notes": "Compte rendu paru en 1983 chez Cambridge University Press, p. 409-410. Seul l'en-tête, qui recopie le titre complet du livre recensé, est en accès libre ; c'est lui que nous avons lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant les premiers écrits sur ce peuple"
+            },
+            "statement": "Avant les premiers écrits, les ancêtres des Aka et ceux des Baka du Cameroun auraient parlé une même langue, selon Serge Bahuchet. Les deux peuples partagent encore 119 noms d'arbres sur 180 comparés, alors que leurs langues actuelles appartiennent à deux familles différentes.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Les noms d'arbres des Pygmées de l'Ouest du bassin congolais",
+                "author": "Serge Bahuchet",
+                "year": 1989,
+                "url": "https://archive.org/details/biostor-247127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 359 et p. 361",
+                "notes": "Bulletin du Muséum national d'histoire naturelle, section B, Adansonia, vol. 11, 1989, p. 355-365. Lu dans la numérisation de la Biodiversity Heritage Library (BioStor) sur Internet Archive."
               }
             ]
           }
@@ -213,7 +183,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Biaka figure parmi les autres noms des Aka, avec Bayaka et Babenzele, dans le tableau de Robillard et Bahuchet et dans l'article de l'encyclopédie de Gale. On ne sait pas avec certitude depuis quand il est écrit.",
+            "statement": "Le nom Biaka figure parmi les autres noms des Aka, avec Bayaka et Babenzele, dans le tableau de Robillard et Bahuchet et dans l'article de l'encyclopédie Worldmark. Nous n'avons pas trouvé depuis quand il est écrit.",
             "aspect": "usage",
             "sources": [
               {
@@ -224,16 +194,16 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "tableau 1",
-                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 13 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Colonne « Autres noms » de la ligne (Ba)Aka."
+                "notes": "Journal des africanistes, 82 (1-2), 2012, p. 15-51 ; lu sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Colonne « Autres noms » de la ligne (Ba)Aka."
               },
               {
-                "title": "Aka – Countries and Their Cultures, Gale (encyclopedia.com)",
-                "author": "Gale, Countries and Their Cultures (article non signé dans la page lue)",
+                "title": "Aka – Worldmark Encyclopedia of Cultures and Daily Life, Gale (encyclopedia.com)",
+                "author": "Worldmark Encyclopedia of Cultures and Daily Life, article révisé par M. Njoroge",
                 "year": null,
                 "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/aka",
                 "tier": "referenced",
                 "source_kind": "encyclopedia",
-                "notes": "Article lu le 13 octobre 2026 sur encyclopedia.com, sans date ni pagination. Il donne les noms Pygmies, Biaka, Bayaka et Bambenzele et la langue diaka. La page lue ne nomme pas l'auteur."
+                "notes": "Article d'encyclopédie publié par Gale et repris sur encyclopedia.com, sans date ni pagination. Il donne les noms Pygmies, Biaka, Bayaka et Bambenzele et la langue diaka."
               }
             ]
           }
@@ -255,7 +225,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Bayaka figure parmi les autres noms des Aka dans le tableau de Robillard et Bahuchet et dans l'article de l'encyclopédie de Gale. On ne sait pas avec certitude depuis quand il est écrit.",
+            "statement": "Le nom Bayaka figure parmi les autres noms des Aka dans le tableau de Robillard et Bahuchet et dans l'article de l'encyclopédie Worldmark. Les mêmes auteurs citent l'anthropologue Jerome Lewis, pour qui les Mbendjele du Congo appellent Yaka tous les peuples de forêt qu'ils connaissent.",
             "aspect": "usage",
             "sources": [
               {
@@ -265,17 +235,17 @@
                 "url": "https://journals.openedition.org/africanistes/4253",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "tableau 1",
-                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 13 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Colonne « Autres noms » de la ligne (Ba)Aka."
+                "page": "tableau 1 et § 22",
+                "notes": "Journal des africanistes, 82 (1-2), 2012, p. 15-51 ; lu sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Colonne « Autres noms » de la ligne (Ba)Aka ; le § 22 cite Lewis 2002, p. 50, que nous n'avons pas lu."
               },
               {
-                "title": "Aka – Countries and Their Cultures, Gale (encyclopedia.com)",
-                "author": "Gale, Countries and Their Cultures (article non signé dans la page lue)",
+                "title": "Aka – Worldmark Encyclopedia of Cultures and Daily Life, Gale (encyclopedia.com)",
+                "author": "Worldmark Encyclopedia of Cultures and Daily Life, article révisé par M. Njoroge",
                 "year": null,
                 "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/aka",
                 "tier": "referenced",
                 "source_kind": "encyclopedia",
-                "notes": "Article lu le 13 octobre 2026 sur encyclopedia.com, sans date ni pagination. Il donne les noms Pygmies, Biaka, Bayaka et Bambenzele et la langue diaka. La page lue ne nomme pas l'auteur."
+                "notes": "Article d'encyclopédie publié par Gale et repris sur encyclopedia.com, sans date ni pagination. Il donne les noms Pygmies, Biaka, Bayaka et Bambenzele et la langue diaka."
               }
             ]
           }
@@ -297,7 +267,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Babenzele figure, écrit aussi BaMbenzele ou Bambenzele, parmi les autres noms des Aka dans le tableau de Robillard et Bahuchet, dans l'article de l'encyclopédie de Gale et dans la liste de Maho, qui l'inclut dans la langue aka. On ne sait pas avec certitude depuis quand il est écrit.",
+            "statement": "Le nom Babenzele figure, écrit aussi BaMbenzele ou Bambenzele, parmi les autres noms des Aka dans le tableau de Robillard et Bahuchet, dans l'article de l'encyclopédie Worldmark et dans la liste de Maho, qui range ce parler dans la langue aka. Nous n'avons pas trouvé depuis quand il est écrit.",
             "aspect": "usage",
             "sources": [
               {
@@ -308,16 +278,16 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "tableau 1",
-                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 13 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Colonne « Autres noms » de la ligne (Ba)Aka."
+                "notes": "Journal des africanistes, 82 (1-2), 2012, p. 15-51 ; lu sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Colonne « Autres noms » de la ligne (Ba)Aka."
               },
               {
-                "title": "Aka – Countries and Their Cultures, Gale (encyclopedia.com)",
-                "author": "Gale, Countries and Their Cultures (article non signé dans la page lue)",
+                "title": "Aka – Worldmark Encyclopedia of Cultures and Daily Life, Gale (encyclopedia.com)",
+                "author": "Worldmark Encyclopedia of Cultures and Daily Life, article révisé par M. Njoroge",
                 "year": null,
                 "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/aka",
                 "tier": "referenced",
                 "source_kind": "encyclopedia",
-                "notes": "Article lu le 13 octobre 2026 sur encyclopedia.com, sans date ni pagination. Il donne les noms Pygmies, Biaka, Bayaka et Bambenzele et la langue diaka. La page lue ne nomme pas l'auteur."
+                "notes": "Article d'encyclopédie publié par Gale et repris sur encyclopedia.com, sans date ni pagination. Il donne les noms Pygmies, Biaka, Bayaka et Bambenzele et la langue diaka."
               },
               {
                 "title": "New Updated Guthrie List Online (NUGL Online), version du 4 juin 2009",
@@ -327,7 +297,36 @@
                 "tier": "official",
                 "source_kind": "linguistic_reference",
                 "page": "p. 25",
-                "notes": "Liste de classification des langues bantoues, lue le 13 octobre 2026 dans la copie du 3 février 2018 conservée par la Wayback Machine. Entrée C104, « Yaka axk, Aka, incl. Babenzele »."
+                "notes": "Liste de classification des langues bantoues, lue dans la copie du 3 février 2018 conservée par la Wayback Machine. Entrée C104, « Yaka axk, Aka, incl. Babenzele »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "1986"
+            },
+            "era": "modern",
+            "statement": "Le nom Babenzele est écrit « BaMbènzèlè » par Serge Bahuchet, qui nomme ce groupe à côté des BaAka, parmi les peuples de forêt de Centrafrique et du nord du Congo.",
+            "aspect": "usage",
+            "formAsWritten": "BaMbènzèlè",
+            "actors": [
+              {
+                "name": "Serge Bahuchet",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Linéaments d'une histoire humaine de la forêt du bassin congolais",
+                "author": "Serge Bahuchet",
+                "year": 1986,
+                "url": "https://archive.org/details/biostor-250691",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 298",
+                "notes": "Mémoires du Muséum national d'histoire naturelle, série A, Zoologie, vol. 132, 1986, p. 297-315. Lu dans la numérisation de la Biodiversity Heritage Library (BioStor) sur Internet Archive."
               }
             ]
           }
@@ -339,9 +338,38 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": "Les villageois ngando et ngbaka",
-        "shortLine": "Le nom que des voisins agriculteurs donnent aux Aka, écrit ba.mbenga par Bahuchet et Guillaume en 1982.",
-        "periodLabel": "Écrit depuis 1982",
+        "shortLine": "Le nom que des voisins agriculteurs donnent aux Aka, écrit ba.mbenga ; il a aussi servi pour plusieurs peuples.",
+        "periodLabel": "Écrit depuis 1979",
         "accounts": [
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "1986"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbenga, écrit « BaMbenga (ou BaBinga) » par Serge Bahuchet, regroupe en fait plusieurs peuples différents de l'ouest du bassin du Congo : les Baka, les BaGieli, les BaBongo, les BaMbènzèlè et les BaAka, écrit-il.",
+            "aspect": "usage",
+            "formAsWritten": "BaMbenga (ou BaBinga)",
+            "actors": [
+              {
+                "name": "Serge Bahuchet",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Linéaments d'une histoire humaine de la forêt du bassin congolais",
+                "author": "Serge Bahuchet",
+                "year": 1986,
+                "url": "https://archive.org/details/biostor-250691",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 297-298",
+                "notes": "Mémoires du Muséum national d'histoire naturelle, série A, Zoologie, vol. 132, 1986, p. 297-315. Lu dans la numérisation de la Biodiversity Heritage Library (BioStor) sur Internet Archive."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1982,
@@ -349,10 +377,15 @@
               "label": "1982"
             },
             "era": "modern",
-            "statement": "Le nom Mbenga, écrit ba.mbenga, est celui que les villageois ngando et ngbaka de la République centrafricaine donnent aux Aka, selon Serge Bahuchet et Henri Guillaume en 1982, cités par Robillard et Bahuchet. Les Aka appellent de leur côté bilo l'ensemble des villageois. Nous n'avons pas lu l'article de 1982. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "statement": "Le nom Mbenga, écrit ba.mbenga, est celui que les villageois ngando et ngbaka de la République centrafricaine donnent aux Aka, selon Serge Bahuchet et Henri Guillaume en 1982, cités par Robillard et Bahuchet. Les Aka appellent de leur côté bilo l'ensemble des villageois. Nous n'avons pas lu l'article de 1982.",
             "aspect": "imposition",
             "formAsWritten": "ba.mbenga",
-            "birth": true,
+            "actors": [
+              {
+                "name": "Serge Bahuchet et Henri Guillaume",
+                "role": "écrit cette forme"
+              }
+            ],
             "sources": [
               {
                 "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
@@ -362,7 +395,79 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "note 20",
-                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 13 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. La note renvoie à Bahuchet et Guillaume 1982, « Aka-Farmer relations in the northwest Congo basin », p. 193, que nous n'avons pas lu."
+                "notes": "Journal des africanistes, 82 (1-2), 2012, p. 15-51 ; lu sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. La note renvoie à Bahuchet et Guillaume 1982, « Aka-Farmer relations in the northwest Congo basin », p. 193, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "1979"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbenga apparaît par écrit en 1979, sous la forme « Ba-Mbenga », dans le titre d'un recueil d'études dirigé par Serge Bahuchet, pour les Aka et les Baka, d'après le compte rendu de Johan Pottier. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Ba-Mbenga",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Serge Bahuchet",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Compte rendu de Serge Bahuchet (éd.), Pygmées de Centrafrique (SELAF, 1979), Bulletin of the School of Oriental and African Studies, 46 (2)",
+                "author": "Johan Pottier",
+                "year": 1983,
+                "url": "https://www.cambridge.org/core/product/F3407FA3065F19B837F51B51FE913B4C",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 409",
+                "notes": "Compte rendu paru en 1983 chez Cambridge University Press, p. 409-410. Seul l'en-tête, qui recopie le titre complet du livre recensé, est en accès libre ; c'est lui que nous avons lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bambenga",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "shortLine": "Une autre écriture du nom Mbenga, avec le préfixe ba- du pluriel.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bambenga figure parmi les autres noms des Aka dans le tableau de Robillard et Bahuchet et parmi les autres noms de leur langue dans le catalogue Glottolog.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tableau 1",
+                "notes": "Journal des africanistes, 82 (1-2), 2012, p. 15-51 ; lu sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Colonne « Autres noms » de la ligne (Ba)Aka."
+              },
+              {
+                "title": "Glottolog 5.3 — Yaka (Central African Republic) (yaka1272)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (éd.)",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/yaka1272",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde tenu par l'Institut Max Planck d'anthropologie évolutionniste. La fiche classe la langue parmi les langues bantoues et donne comme autres noms Aka, Babinga, Bambenga, Beka, Mòáka, Pygmée de la Lobaye et Pygmée de Mongoumba."
               }
             ]
           }
@@ -394,8 +499,8 @@
                 "url": "https://journals.openedition.org/africanistes/4253",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "note 20",
-                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 13 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Les auteurs ne donnent pas de date pour la reprise du terme par les colons."
+                "page": "§ 20 et note 20",
+                "notes": "Journal des africanistes, 82 (1-2), 2012, p. 15-51 ; lu sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Les auteurs ne donnent pas de date pour la reprise du terme par les colons."
               }
             ]
           },
@@ -409,6 +514,12 @@
             "statement": "Le nom Babinga apparaît par écrit dans le titre d'un livre de Lucien Demesse paru en 1978, Changements techno-économiques et sociaux chez les Pygmées Babinga (nord-Congo et sud-Centrafrique), que Robillard et Bahuchet citent comme exemple d'emploi du mot. Nous n'avons pas lu le livre. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
             "formAsWritten": "Babinga",
             "birth": true,
+            "actors": [
+              {
+                "name": "Lucien Demesse",
+                "role": "écrit cette forme"
+              }
+            ],
             "sources": [
               {
                 "title": "Changements techno-économiques et sociaux chez les Pygmées Babinga (nord-Congo et sud-Centrafrique)",
@@ -418,7 +529,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "note 20 et bibliographie",
-                "notes": "Paris, Peeters-SELAF, 2 volumes. Titre lu le 13 octobre 2026 dans la note 20 et la bibliographie de l'article de Robillard et Bahuchet (2012) ; nous n'avons pas lu le livre."
+                "notes": "Paris, Peeters-SELAF, 2 volumes. Titre lu dans la note 20 et la bibliographie de l'article de Robillard et Bahuchet (2012) ; nous n'avons pas lu le livre."
               }
             ]
           }
@@ -435,21 +546,33 @@
         "accounts": [
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Origine non datée"
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
             },
-            "statement": "Le nom Pygmée viendrait du latin Pygmaei, lui-même tiré du grec pugmaios, « grand comme le poing », selon le Dictionnaire de l'Académie française.",
-            "aspect": "meaning",
+            "era": "modern",
+            "statement": "Le nom Pygmée est interdit en République du Congo par la loi du 25 février 2011 sur les populations autochtones, qui assimile son emploi à une injure. Le rapporteur spécial de l'ONU James Anaya explique que le mot y évoque un statut inférieur ; la loi parle désormais de populations autochtones, dont les Baaka du nord du pays.",
+            "aspect": "imposition",
             "sources": [
               {
-                "title": "Dictionnaire de l'Académie française, 9e édition, entrée « pygmée »",
-                "author": "Académie française",
-                "year": null,
-                "url": "https://www.dictionnaire-academie.fr/article/A9P5144",
+                "title": "Act No. 5-2011 of 25 February 2011 on the Promotion and Protection of Indigenous Populations (Republic of Congo), traduction anglaise",
+                "author": "Parlement de la République du Congo",
+                "year": 2011,
+                "url": "https://landwise-production.s3.us-west-2.amazonaws.com/2022/09/5_2011_Congolese_Legislation_on_Indigenous_Peoples_EN.pdf",
                 "tier": "official",
-                "source_kind": "linguistic_reference",
-                "notes": "Entrée lue sur le site du Dictionnaire de l'Académie française le 11 octobre 2026."
+                "source_kind": "government",
+                "page": "article 1",
+                "notes": "Traduction anglaise de la loi congolaise n° 5-2011 du 25 février 2011, mise en ligne par la base de données foncière Land Portal (LandWise). Lue en entier ; l'article 1 interdit le mot."
+              },
+              {
+                "title": "La situation des peuples autochtones dans la République du Congo, rapport du Rapporteur spécial sur les droits des peuples autochtones (A/HRC/18/35/Add.5)",
+                "author": "James Anaya, Rapporteur spécial des Nations unies",
+                "year": 2011,
+                "url": "https://digitallibrary.un.org/record/710403/files/A_HRC_18_35_Add.5-FR.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 5-6, § 7, 11 et 12",
+                "notes": "Rapport présenté au Conseil des droits de l'homme des Nations unies, daté du 11 juillet 2011, après une visite au Congo du 2 au 12 novembre 2010. Version française lue sur la bibliothèque numérique de l'ONU."
               }
             ]
           },
@@ -460,7 +583,7 @@
               "label": "2012"
             },
             "era": "modern",
-            "statement": "Le nom Pygmée est, selon Robillard et Bahuchet, un mot usuel et historique qui réunit en réalité de nombreuses sociétés différentes, dont les Aka. Ils écrivent qu'il disparaît des publications, frappé d'opprobre, et rappellent que ces peuples ont chacun leur propre nom. On ne sait pas avec certitude depuis quand ce mot est employé pour les Aka.",
+            "statement": "Le nom Pygmée est, selon Robillard et Bahuchet, un mot usuel qui réunit en réalité de nombreuses sociétés différentes, dont les Aka. Ils écrivent qu'il disparaît des publications, frappé d'opprobre, et rappellent que ces peuples ont chacun leur propre nom.",
             "aspect": "usage",
             "sources": [
               {
@@ -470,8 +593,51 @@
                 "url": "https://journals.openedition.org/africanistes/4253",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "§ 1-2",
-                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 13 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Résumé et début du texte."
+                "page": "§ 1-6",
+                "notes": "Journal des africanistes, 82 (1-2), 2012, p. 15-51 ; lu sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2007,
+              "to": 2008,
+              "label": "Mission de 2007, rapport adopté en 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Pygmée est employé par des villageois de Centrafrique qui parlent de « mes Pygmées » pour des Aka tenus sous leur dépendance, selon la Commission africaine des droits de l'homme et des peuples. Son rapport emploie lui-même le mot, tout en le disant péjoratif, faute d'un autre terme commun.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Rapport du Groupe de travail de la Commission africaine sur les populations et communautés autochtones : visite de recherche et d'information en République centrafricaine, 15-28 janvier 2007",
+                "author": "Commission africaine des droits de l'homme et des peuples et IWGIA",
+                "year": 2009,
+                "url": "https://achpr.au.int/sites/default/files/files/2022-10/achpr43misrepspecmecindpopcar2007eng.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 16 et p. 44-45",
+                "notes": "Rapport adopté par la Commission africaine des droits de l'homme et des peuples (Union africaine) à sa 43e session, en mai 2008, et publié en 2009 avec l'organisation IWGIA. Version anglaise lue sur le site de la Commission ; les passages cités sont traduits par EthniAfrica."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2008,
+              "label": "Proclamation en 2003, inscription en 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Pygmée figure dans le titre que l'UNESCO donne aux chants des Aka, « Les chants polyphoniques des pygmées Aka de Centrafrique », proclamés chef-d'œuvre du patrimoine oral en 2003, puis inscrits sur sa Liste représentative en 2008.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "UNESCO – Les chants polyphoniques des pygmées Aka de Centrafrique, Liste représentative du patrimoine culturel immatériel de l'humanité",
+                "author": "UNESCO",
+                "year": 2008,
+                "url": "https://ich.unesco.org/fr/RL/les-chants-polyphoniques-des-pygmees-aka-de-centrafrique-00082",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Fiche de l'élément sur le site du patrimoine culturel immatériel de l'UNESCO : proclamé chef-d'œuvre en 2003, inscrit sur la Liste représentative en 2008."
               }
             ]
           },
@@ -482,17 +648,103 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Pygmée est, selon l'article de l'encyclopédie Countries and Their Cultures, un terme en général méprisant, qui met en avant la taille des personnes. L'article note que les chercheurs préfèrent parler de « tropical forest foragers », des chasseurs-cueilleurs de la forêt tropicale, en attendant que ces peuples choisissent eux-mêmes comment on les appelle.",
+            "statement": "Le nom Pygmée est, selon l'encyclopédie Worldmark, un terme en général méprisant, qui met en avant la taille des personnes. L'article note que les chercheurs préfèrent parler de « tropical forest foragers », des chasseurs-cueilleurs de la forêt tropicale, en attendant que ces peuples choisissent eux-mêmes comment on les appelle.",
             "aspect": "usage",
             "sources": [
               {
-                "title": "Aka – Countries and Their Cultures, Gale (encyclopedia.com)",
-                "author": "Gale, Countries and Their Cultures (article non signé dans la page lue)",
+                "title": "Aka – Worldmark Encyclopedia of Cultures and Daily Life, Gale (encyclopedia.com)",
+                "author": "Worldmark Encyclopedia of Cultures and Daily Life, article révisé par M. Njoroge",
                 "year": null,
                 "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/aka",
                 "tier": "referenced",
                 "source_kind": "encyclopedia",
-                "notes": "Article lu le 13 octobre 2026 sur encyclopedia.com, sans date ni pagination. Il donne les noms Pygmies, Biaka, Bayaka et Bambenzele et la langue diaka. La page lue ne nomme pas l'auteur."
+                "notes": "Article d'encyclopédie publié par Gale et repris sur encyclopedia.com, sans date ni pagination. Il donne les noms Pygmies, Biaka, Bayaka et Bambenzele et la langue diaka."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1870,
+              "to": 1874,
+              "label": "1870, récit publié en 1874"
+            },
+            "era": "polity",
+            "statement": "Le nom Pygmée est appliqué à des peuples vivants d'Afrique centrale par l'explorateur allemand Georg Schweinfurth, qui rencontre des Akka en 1870 à la cour du roi des Mangbetu. Il propose d'employer le mot « dans le sens d'Aristote » pour les peuples de petite taille d'Afrique équatoriale. C'est la plus ancienne trace de cet emploi que le projet connaît ; les Aka existaient déjà avant elle.",
+            "aspect": "imposition",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Heart of Africa: Three Years' Travels and Adventures in the Unexplored Regions of Central Africa, from 1868 to 1871, vol. II",
+                "author": "Georg Schweinfurth",
+                "year": 1874,
+                "url": "https://archive.org/details/heartofafrica02schw_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 124-126",
+                "notes": "Récit de voyage de l'explorateur allemand, New York, Harper & Brothers, 1874, traduction anglaise d'Ellen E. Frewer. Lu dans la numérisation d'Internet Archive."
+              },
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 3",
+                "notes": "Journal des africanistes, 82 (1-2), 2012, p. 15-51 ; lu sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Le § 3 date de Schweinfurth (1873) le premier emploi du terme pour ces peuples."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Pygmée viendrait du latin Pygmaei, lui-même tiré du grec pugmaios, « haut comme le poing », de pugmê, « poing » puis « coudée », selon le Dictionnaire de l'Académie française.",
+            "aspect": "meaning",
+            "hypothesisGroup": "sens-du-mot-pygmee",
+            "sources": [
+              {
+                "title": "Dictionnaire de l'Académie française, 9e édition, entrée « pygmée »",
+                "author": "Académie française",
+                "year": null,
+                "url": "https://www.dictionnaire-academie.fr/article/A9P5144",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue sur le site du Dictionnaire de l'Académie française ; elle donne l'étymologie du mot et, au sens 2, son emploi par les explorateurs de la fin du XIXe siècle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Pygmée viendrait du grec pygmè, la coudée, et désignait chez Homère un peuple de légende haut d'une coudée, que des grues attaquaient, selon Serge Bahuchet. Avec Marine Robillard, il ajoute que les Européens ont repris ce mot au XIXe siècle pour ces peuples.",
+            "aspect": "meaning",
+            "hypothesisGroup": "sens-du-mot-pygmee",
+            "sources": [
+              {
+                "title": "L'invention des Pygmées",
+                "author": "Serge Bahuchet",
+                "year": 1993,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1993_num_33_129_2078",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 153",
+                "notes": "Cahiers d'études africaines, 33 (129), 1993, p. 153-181. Lu sur Persée ; seule la première page, p. 153, a pu être ouverte."
+              },
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 6",
+                "notes": "Journal des africanistes, 82 (1-2), 2012, p. 15-51 ; lu sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée."
               }
             ]
           },
@@ -518,6 +770,438 @@
             ]
           }
         ]
+      },
+      {
+        "nameText": "Pigmée",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "shortLine": "Une ancienne écriture française du mot Pygmée.",
+        "periodLabel": "Écrit en 1694",
+        "accounts": [
+          {
+            "period": {
+              "from": 1694,
+              "to": 1694,
+              "label": "1694"
+            },
+            "statement": "Le nom Pygmée est aussi écrit « pigmée » dans la première édition du Dictionnaire de l'Académie française, qui renvoie de cette forme à « pygmée ».",
+            "formAsWritten": "pigmée",
+            "actors": [
+              {
+                "name": "Académie française",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Dictionnaire de l'Académie française, 1re édition (1694), entrée « pigmée » renvoyant à « pygmée »",
+                "author": "Académie française",
+                "year": 1694,
+                "url": "https://www.dictionnaire-academie.fr/article/A1_0071",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "tome 2, p. 239",
+                "notes": "Entrée de la première édition, qui renvoie simplement à « pygmée »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Pygmées",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "Inscription de 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Pygmées, au pluriel, figure dans le titre de la fiche de l'UNESCO « Les chants polyphoniques des pygmées Aka de Centrafrique », inscrite en 2008 sur la liste du patrimoine culturel immatériel.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "UNESCO – Les chants polyphoniques des pygmées Aka de Centrafrique, Liste représentative du patrimoine culturel immatériel de l'humanité",
+                "author": "UNESCO",
+                "year": 2008,
+                "url": "https://ich.unesco.org/fr/RL/les-chants-polyphoniques-des-pygmees-aka-de-centrafrique-00082",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Fiche de l'élément sur le site du patrimoine culturel immatériel de l'UNESCO : proclamé chef-d'œuvre en 2003, inscrit sur la Liste représentative en 2008."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Baaka",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "shortLine": "Une autre écriture du nom BaAka, employée par l'ONU pour les Aka du Congo.",
+        "periodLabel": "Écrit en 2011",
+        "accounts": [
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "statement": "Le nom BaAka est écrit « Baaka » par le rapporteur spécial de l'ONU James Anaya, pour les Aka du nord des départements de la Likouala et de la Sangha, en République du Congo.",
+            "aspect": "usage",
+            "formAsWritten": "Baaka",
+            "actors": [
+              {
+                "name": "James Anaya",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La situation des peuples autochtones dans la République du Congo, rapport du Rapporteur spécial sur les droits des peuples autochtones (A/HRC/18/35/Add.5)",
+                "author": "James Anaya, Rapporteur spécial des Nations unies",
+                "year": 2011,
+                "url": "https://digitallibrary.un.org/record/710403/files/A_HRC_18_35_Add.5-FR.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 5, § 7",
+                "notes": "Rapport présenté au Conseil des droits de l'homme des Nations unies, daté du 11 juillet 2011, après une visite au Congo du 2 au 12 novembre 2010. Version française lue sur la bibliothèque numérique de l'ONU."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "content": {
+    "appellations": {
+      "mainName": "Aka",
+      "selfAppellation": "BaAka",
+      "exonyms": [
+        "Mbenga",
+        "Babinga",
+        "Pygmée",
+        "Pygmées",
+        "Biaka",
+        "Bayaka",
+        "Babenzele"
+      ],
+      "spellingAliases": [
+        "Baaka",
+        "Bambenga",
+        "BaMbenzele",
+        "Bambenzele",
+        "Pigmée"
+      ],
+      "originOfExonyms": "Le nom Mbenga, écrit ba.mbenga, est celui que des villageois voisins, les Ngando et les Ngbaka de Centrafrique, donnent aux Aka, selon Serge Bahuchet et Henri Guillaume, cités par Marine Robillard et Serge Bahuchet. Des colons français en ont tiré la forme Babinga. Selon Serge Bahuchet, le mot Pygmée viendrait du grec ancien, où il aurait désigné un peuple de légende haut d'une coudée. L'explorateur allemand Georg Schweinfurth l'a appliqué en 1870 à des peuples d'Afrique centrale, et il a ensuite servi pour de nombreux peuples de forêt, dont les Aka. Nous n'avons pas trouvé de source qui explique l'origine des noms Aka, Biaka, Bayaka ou Babenzele.",
+      "whyProblematic": "Le mot Pygmée réunit sous un seul nom des peuples différents par leur langue, leur culture et leur histoire, et il met en avant la taille des personnes, selon Robillard et Bahuchet et l'encyclopédie Worldmark. Beaucoup le jugent péjoratif. En République centrafricaine, des villageois parlent de « mes Pygmées » pour des Aka qu'ils tiennent sous leur dépendance, selon la Commission africaine des droits de l'homme et des peuples. En République du Congo, une loi de 2011 interdit ce mot et assimile son emploi à une injure.",
+      "contemporaryUsage": "Les chercheurs et les organisations internationales écrivent aujourd'hui Aka ou BaAka ; le rapport de l'ONU de 2011 sur le Congo écrit Baaka. Le mot Pygmée reste pourtant courant : l'UNESCO l'emploie dans le titre des chants polyphoniques des Aka, et la Commission africaine l'utilise dans son rapport de 2007, tout en le disant péjoratif. Les catalogues de langues appellent la langue yaka (République centrafricaine).",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
+    },
+    "ethnicities": ["BaAka", "BaMbenzele"],
+    "origins": {
+      "ancientOrigins": "Les Aka vivent dans la forêt du nord-ouest du bassin du Congo, mais nous n'avons pas trouvé de date pour leur installation. Selon l'ethnologue Serge Bahuchet, les Aka et les Baka du Cameroun auraient autrefois parlé une même langue. Ils partagent encore les deux tiers de leurs noms d'arbres, alors que leurs langues actuelles appartiennent à deux familles différentes. Chaque groupe aurait ensuite adopté la langue de voisins agriculteurs ; celle des Aka est une langue bantoue. Une étude génétique publiée en 2009 par Paul Verdu et ses collègues propose que plusieurs groupes de chasseurs-cueilleurs de l'ouest de l'Afrique centrale descendent d'une même population, qui se serait divisée il y a environ 2 800 ans, quand des agriculteurs s'étendaient dans la région. Le résumé de l'étude ne dit pas si les Aka faisaient partie des groupes étudiés.",
+      "formationPeriod": null,
+      "migrationRoutes": [],
+      "historicalSettlementZones": [
+        "Forêt de la préfecture de la Lobaye, dans le sud-ouest de la République centrafricaine",
+        "Nord des départements de la Likouala et de la Sangha, en République du Congo"
+      ],
+      "unificationsOrDivisions": "Les Aka ne forment ni un État ni une chefferie unique. Ils vivent en petits camps de 25 à 35 personnes selon l'encyclopédie Worldmark, de 30 à 60 personnes selon Serge Bahuchet. Chaque camp se déplace plusieurs fois par an à l'intérieur d'un territoire partagé avec d'autres groupes, de 200 à 300 km² environ. Bahuchet range les Aka, avec les BaMbènzèlè, les Baka et d'autres peuples, dans un ensemble autrefois appelé BaMbenga ; chacun de ces peuples a pourtant son nom et sa langue.",
+      "externalInfluences": "Les Aka vivent depuis très longtemps à côté de villageois agriculteurs, comme les Ngando, les Ngbaka, les Monzombo et les Mbati de la Lobaye. Selon Serge Bahuchet, la forêt est depuis au moins quatre siècles traversée par des circuits de commerce le long des fleuves, et le manioc venu d'Amérique ne s'y impose qu'au début du XXe siècle, sous la pression coloniale. Pendant la colonisation, les Français voulaient de l'ivoire, du caoutchouc et des peaux d'antilope, une demande qui touchait aussi les Aka, selon l'encyclopédie Worldmark.",
+      "majorHistoricalEvents": "En 2003, l'UNESCO proclame chef-d'œuvre du patrimoine oral les traditions des Aka ; la même année, un décret centrafricain du 1er août interdit d'utiliser ou d'exporter à des fins commerciales les traditions orales des minorités culturelles, pour protéger celles des Aka. En 2004, un recensement mené par des ONG compte 15 880 Aka dans la seule préfecture de la Lobaye. En 2008, les chants polyphoniques des Aka sont inscrits sur la Liste représentative du patrimoine culturel immatériel de l'UNESCO. En 2011, la République du Congo adopte une loi sur les droits des populations autochtones, qui interdit le mot Pygmée."
+    },
+    "organization": {
+      "traditionalPoliticalSystem": "La société aka est sans chef et très égalitaire, selon les chercheurs de l'université de Sheffield. Il n'y a pas de personne qui détienne l'autorité ultime, précise l'encyclopédie Worldmark. Quelques hommes ont de l'influence : le kombeti, ou mbai, un aîné qui pèse sur les décisions de chasse et de déplacement du camp ; le tuma, grand chasseur d'éléphants ; et le nganga, devin et guérisseur.",
+      "clanOrganization": "Chez les Aka, hommes et femmes reçoivent le nom de clan de leur père, et il n'y a pas de nom de famille, selon l'encyclopédie Worldmark. Après le mariage, le couple vit en général avec le clan du mari. Chaque famille aka entretient des échanges suivis avec une famille d'agriculteurs du village voisin, et les sentiers de forêt sont liés aux clans, selon les chercheurs de l'université de Sheffield.",
+      "ageClassSystems": null,
+      "roleOfLineages": "Les liens entre Aka et villageois passent par les familles : chaque famille aka échange de façon exclusive avec une famille de villageois, que l'on présente parfois comme son « patron », selon Serge Bahuchet. Les villageois utilisent le gibier reçu des Aka dans leurs propres cérémonies, au moment des mariages ou de la fin du deuil.",
+      "religiousAuthority": "Le nganga est le devin et guérisseur des Aka : il consulte avant les chasses, soigne par les plantes et combat la sorcellerie, selon l'encyclopédie Worldmark et les chercheurs de l'université de Sheffield. Le tuma, grand chasseur, est celui qui communique avec djengi, le principal esprit de la forêt."
+    },
+    "languages": {
+      "mainLanguage": "aka, aussi appelé diaka ou yaka (axk)",
+      "isoCodes": ["axk"],
+      "dialects": ["parler des BaMbenzele (Babenzele)"],
+      "vehicularRole": "L'aka est une langue bantoue du groupe C10, à trois tons, selon l'encyclopédie Worldmark. Elle est proche du ngando et de l'isongo, langues de villageois de la Lobaye, alors que la langue des Baka, autres chasseurs-cueilleurs de la région, est oubanguienne, selon Serge Bahuchet. Pour les chercheurs du laboratoire LACITO du CNRS, les Aka ont emprunté leur langue à une population bantoue de ce groupe. En 2007, le ministère centrafricain de la Culture disait vouloir protéger la langue aka, qui transmet les valeurs culturelles, selon la Commission africaine des droits de l'homme et des peuples."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q781814",
+      "glottocode": "yaka1272",
+      "iso639_3": "axk"
+    },
+    "culture": {
+      "majorRites": "La mort est le seul grand rite collectif chez les Aka : la famille vient de loin, chante et danse plusieurs jours, et le camp grossit beaucoup, selon l'encyclopédie Worldmark. À la naissance, les parents attachent au bébé des cordons de lianes protecteurs. La récolte du miel est souvent accompagnée de rites, selon Serge Bahuchet, et les chasses, au filet ou à la sagaie, s'accompagnent de nombreux rituels qui doivent les rendre plus fructueuses.",
+      "symbols": "Les Aka se disent « gens de la forêt », par opposition aux « gens du village », selon les chercheurs de l'université de Sheffield. Serge Bahuchet relève la même opposition dans la région : les chasseurs-cueilleurs sont dits « hommes de la forêt », les villageois « venus d'ailleurs ».",
+      "artsAndMusic": "Les chants des Aka forment une polyphonie à quatre voix, où chacun peut improviser et varier sa partie, selon l'UNESCO. Ils s'accompagnent de tambours comme l'enzeko, d'un instrument à cordes proche de la harpe, le geedale-bagongo et d'un arc musical à une corde, le mbela. L'UNESCO a proclamé ces chants chef-d'œuvre du patrimoine oral en 2003 et les a inscrits sur sa Liste représentative en 2008 ; elle les dit menacés par la raréfaction du gibier, l'exode rural et la transformation de cette musique en spectacle pour touristes. Les Aka ont la réputation d'être les meilleurs danseurs de Centrafrique et du Congo, selon l'encyclopédie Worldmark.",
+      "spiritualities": "Les croyances des Aka varient selon les régions et les personnes, selon l'encyclopédie Worldmark. Certains parlent de bembe, un créateur qui se serait retiré après la création. Djengi est l'esprit de la forêt le plus souvent cité, en général bienveillant. Les esprits des ancêtres, les edjo, restent près de leur famille. La sorcellerie, gundu, sert souvent à expliquer une mort inattendue."
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": "Les Aka n'ont formé ni royaume ni chefferie, selon les sources lues. Au Congo, les chefs des villages bantous exercent leur autorité jusque sur les campements des peuples autochtones, selon le rapporteur spécial de l'ONU James Anaya.",
+      "relationsWithNeighbors": "Les Aka échangent depuis longtemps le gibier et d'autres produits de la forêt contre du fer, du manioc, du maïs et des ustensiles des villageois. Ils aident aussi à défricher les champs. Selon Serge Bahuchet, ces liens ne sont pas une évolution récente mais le reste d'une alliance très ancienne. Ils sont aussi très inégaux. En 2004, une enquête d'ONG dans la Lobaye a trouvé que 59,7 % des Aka avaient un « maître » villageois, qui peut exiger leur travail sans le payer, selon la Commission africaine des droits de l'homme et des peuples.",
+      "conflictsOrAlliances": "Serge Bahuchet voit dans les liens entre les Aka et les villageois le reste d'une alliance de très longue date. La Commission africaine des droits de l'homme et des peuples rapporte, en 2007, des violences, des privations et des violences sexuelles commises contre des Aka par ceux qui se disent leurs « maîtres ».",
+      "diaspora": null
+    },
+    "demography": {
+      "totalPopulation": 30000,
+      "referenceYear": 2012,
+      "source": "Marine Robillard et Serge Bahuchet, 2012 : 30 000 à 50 000 personnes en République centrafricaine et au Congo ; le chiffre retenu est le bas de cette fourchette. L'encyclopédie Worldmark donne environ 30 000 personnes et les chercheurs de l'université de Sheffield 30 000 à 40 000. En Centrafrique, un recensement mené en 2004 par les ONG COOPI, Caritas et OCDH a compté 15 880 Aka dans la seule préfecture de la Lobaye, selon la Commission africaine des droits de l'homme et des peuples, qui estime le total du pays à plusieurs dizaines de milliers. Aucune source lue ne donne de chiffre pour les Aka du Congo.",
+      "distributionByCountry": [
+        {
+          "country": "CAF",
+          "population": 15880,
+          "percentage": null,
+          "note": "Préfecture de la Lobaye seule, recensement de 2004 mené par des ONG ; le total du pays est plus élevé."
+        },
+        {
+          "country": "COG",
+          "population": null,
+          "percentage": null,
+          "note": "Nord des départements de la Likouala et de la Sangha."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+        "author": "Marine Robillard et Serge Bahuchet",
+        "year": 2012,
+        "url": "https://journals.openedition.org/africanistes/4253",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Journal des africanistes, 82 (1-2), 2012, p. 15-51 ; lu sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Article de la revue de la Société des africanistes. Il donne le tableau des noms des peuples de forêt d'Afrique centrale (les noms et la population des Aka), l'origine du mot Pygmée et son premier emploi par Schweinfurth (§ 3 à 6), les noms ba.mbenga, Babinga et bilo (§ 20 et note 20) et la loi congolaise de 2011 (§ 5)."
+      },
+      {
+        "title": "Linéaments d'une histoire humaine de la forêt du bassin congolais",
+        "author": "Serge Bahuchet",
+        "year": 1986,
+        "url": "https://archive.org/details/biostor-250691",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Mémoires du Muséum national d'histoire naturelle, série A, Zoologie, vol. 132, 1986, p. 297-315. Lu dans la numérisation de la Biodiversity Heritage Library (BioStor) sur Internet Archive."
+      },
+      {
+        "title": "Les noms d'arbres des Pygmées de l'Ouest du bassin congolais",
+        "author": "Serge Bahuchet",
+        "year": 1989,
+        "url": "https://archive.org/details/biostor-247127",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Bulletin du Muséum national d'histoire naturelle, section B, Adansonia, vol. 11, 1989, p. 355-365. Lu dans la numérisation de la Biodiversity Heritage Library (BioStor) sur Internet Archive."
+      },
+      {
+        "title": "Rapport du Groupe de travail de la Commission africaine sur les populations et communautés autochtones : visite de recherche et d'information en République centrafricaine, 15-28 janvier 2007",
+        "author": "Commission africaine des droits de l'homme et des peuples et IWGIA",
+        "year": 2009,
+        "url": "https://achpr.au.int/sites/default/files/files/2022-10/achpr43misrepspecmecindpopcar2007eng.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Rapport adopté par la Commission africaine des droits de l'homme et des peuples (Union africaine) à sa 43e session, en mai 2008, et publié en 2009 avec l'organisation IWGIA. Version anglaise lue sur le site de la Commission ; les passages cités sont traduits par EthniAfrica."
+      },
+      {
+        "title": "La situation des peuples autochtones dans la République du Congo, rapport du Rapporteur spécial sur les droits des peuples autochtones (A/HRC/18/35/Add.5)",
+        "author": "James Anaya, Rapporteur spécial des Nations unies",
+        "year": 2011,
+        "url": "https://digitallibrary.un.org/record/710403/files/A_HRC_18_35_Add.5-FR.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Rapport présenté au Conseil des droits de l'homme des Nations unies, daté du 11 juillet 2011, après une visite au Congo du 2 au 12 novembre 2010. Version française lue sur la bibliothèque numérique de l'ONU."
+      },
+      {
+        "title": "Act No. 5-2011 of 25 February 2011 on the Promotion and Protection of Indigenous Populations (Republic of Congo), traduction anglaise",
+        "author": "Parlement de la République du Congo",
+        "year": 2011,
+        "url": "https://landwise-production.s3.us-west-2.amazonaws.com/2022/09/5_2011_Congolese_Legislation_on_Indigenous_Peoples_EN.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "page": "article 1",
+        "notes": "Traduction anglaise de la loi congolaise n° 5-2011 du 25 février 2011, mise en ligne par la base de données foncière Land Portal (LandWise). Lue en entier ; l'article 1 interdit le mot."
+      },
+      {
+        "title": "UNESCO – Les chants polyphoniques des pygmées Aka de Centrafrique, Liste représentative du patrimoine culturel immatériel de l'humanité",
+        "author": "UNESCO",
+        "year": 2008,
+        "url": "https://ich.unesco.org/fr/RL/les-chants-polyphoniques-des-pygmees-aka-de-centrafrique-00082",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche de l'élément sur le site du patrimoine culturel immatériel de l'UNESCO : proclamé chef-d'œuvre en 2003, inscrit sur la Liste représentative en 2008."
+      },
+      {
+        "title": "Glottolog 5.3 — Yaka (Central African Republic) (yaka1272)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (éd.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/yaka1272",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde tenu par l'Institut Max Planck d'anthropologie évolutionniste. La fiche classe la langue parmi les langues bantoues et donne comme autres noms Aka, Babinga, Bambenga, Beka, Mòáka, Pygmée de la Lobaye et Pygmée de Mongoumba."
+      },
+      {
+        "title": "New Updated Guthrie List Online (NUGL Online), version du 4 juin 2009",
+        "author": "Jouni Filip Maho",
+        "year": 2009,
+        "url": "https://web.archive.org/web/20180203191542/http://goto.glocalnet.net/mahopapers/nuglonline.pdf",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "page": "p. 25",
+        "notes": "Liste de classification des langues bantoues, lue dans la copie du 3 février 2018 conservée par la Wayback Machine. Entrée C104, « Yaka axk, Aka, incl. Babenzele »."
+      },
+      {
+        "title": "ISO 639-3, Yaka (Central African Republic) [axk]",
+        "author": "SIL International, autorité d'enregistrement ISO 639-3",
+        "year": null,
+        "url": "https://iso639-3.sil.org/code/axk",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du code de langue tenue par SIL International."
+      },
+      {
+        "title": "Compte rendu de Serge Bahuchet (éd.), Pygmées de Centrafrique (SELAF, 1979), Bulletin of the School of Oriental and African Studies, 46 (2)",
+        "author": "Johan Pottier",
+        "year": 1983,
+        "url": "https://www.cambridge.org/core/product/F3407FA3065F19B837F51B51FE913B4C",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 409",
+        "notes": "Compte rendu paru en 1983 chez Cambridge University Press, p. 409-410. Seul l'en-tête, qui recopie le titre complet du livre recensé, est en accès libre ; c'est lui que nous avons lu."
+      },
+      {
+        "title": "Aka – Worldmark Encyclopedia of Cultures and Daily Life, Gale (encyclopedia.com)",
+        "author": "Worldmark Encyclopedia of Cultures and Daily Life, article révisé par M. Njoroge",
+        "year": null,
+        "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/aka",
+        "tier": "referenced",
+        "source_kind": "encyclopedia",
+        "notes": "Article d'encyclopédie publié par Gale et repris sur encyclopedia.com, sans date ni pagination. Il donne les noms Pygmies, Biaka, Bayaka et Bambenzele et la langue diaka."
+      },
+      {
+        "title": "L'invention des Pygmées",
+        "author": "Serge Bahuchet",
+        "year": 1993,
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1993_num_33_129_2078",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Cahiers d'études africaines, 33 (129), 1993, p. 153-181. Lu sur Persée ; seule la première page, p. 153, a pu être ouverte."
+      },
+      {
+        "title": "The Heart of Africa: Three Years' Travels and Adventures in the Unexplored Regions of Central Africa, from 1868 to 1871, vol. II",
+        "author": "Georg Schweinfurth",
+        "year": 1874,
+        "url": "https://archive.org/details/heartofafrica02schw_0",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 124-126",
+        "notes": "Récit de voyage de l'explorateur allemand, New York, Harper & Brothers, 1874, traduction anglaise d'Ellen E. Frewer. Lu dans la numérisation d'Internet Archive."
+      },
+      {
+        "title": "Encyclopédie des Pygmées Aka, troisième livre : lexique alphabétique français-aka (présentation)",
+        "author": "Jacqueline M. C. Thomas, Serge Bahuchet, Alain Epelboin et Susanne Fürniss (éd.)",
+        "year": 2019,
+        "url": "https://lacito.cnrs.fr/en/2019/02",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Annonce de parution sur le site du laboratoire LACITO du CNRS. Elle présente l'encyclopédie, publiée chez Peeters et à la SELAF : 4 volumes d'introduction, 11 volumes de dictionnaire aka-français et un lexique de 669 pages, soit près de 5 000 pages et 7 456 entrées. Elle indique que la langue des Aka a été empruntée à une population bantoue du groupe C10."
+      },
+      {
+        "title": "Compte rendu de Serge Bahuchet, Les Pygmées Aka et la forêt centrafricaine (SELAF, 1985), Journal des africanistes, 59 (1-2)",
+        "author": "Marie-Paule Ferry",
+        "year": 1989,
+        "url": "https://www.persee.fr/doc/jafr_0399-0346_1989_num_59_1_2290_t1_0267_0000_3",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Compte rendu lu sur Persée, p. 267 (seule page ouverte). Il décrit le livre de Serge Bahuchet (SELAF, collection Ethnosciences, 640 pages) et ses six séjours sur le terrain, de 1972 à 1981, depuis la station de Makobé, dans la Lobaye, en République centrafricaine."
+      },
+      {
+        "title": "Aka in Central African Republic – Minority Rights Group International, 2018",
+        "url": "https://minorityrights.org/communities/aka/",
+        "tier": "referenced",
+        "source_kind": "ngo",
+        "notes": "Profil des Aka de la République centrafricaine publié par l'organisation de défense des minorités Minority Rights Group International."
+      },
+      {
+        "title": "Culture and the Mind – Aka fieldsites, Université de Sheffield",
+        "url": "https://cultureandmind.sites.sheffield.ac.uk/fieldsites/aka",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Page du projet de recherche Culture and the Mind de l'université de Sheffield, sans date (mentions 2016 et 2022). Elle présente les Aka : 30 000 à 40 000 personnes, une société sans chef et très égalitaire, les rôles du kombeti, du tuma et du nganga, la langue diaka du groupe bantou C10 et les liens avec des familles d'agriculteurs près de Bangandu, dans la Lobaye. Le chercheur principal du site est Adam Boyette, de l'université d'État de Washington."
+      },
+      {
+        "title": "Kisliuk, Michelle – Seize the Dance! BaAka Musical Life and the Ethnography of Performance, Oxford University Press, 2000",
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Ouvrage de l'ethnomusicologue Michelle Kisliuk sur la musique et la danse des BaAka."
+      },
+      {
+        "title": "Verdu, Paul et al. – Origins and Genetic Diversity of Pygmy Hunter-Gatherers from Western Central Africa, Science, 2009",
+        "url": "https://www.documentation.ird.fr/hor/PAR00003352",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article paru dans la revue Current Biology, 19 (4), p. 312-318, en 2009, cosigné notamment par Serge Bahuchet. Lu dans la notice et le résumé de la base documentaire de l'IRD : l'étude, menée sur 604 personnes de 21 populations, propose une population ancestrale unique des groupes de chasseurs-cueilleurs étudiés, qui se serait divisée il y a environ 2 800 ans. Le résumé ne nomme pas les groupes étudiés."
+      },
+      {
+        "title": "Discover Afrika – The BAaka peoples",
+        "url": "https://discover-afrika.com/baaka-peoples/",
+        "tier": "needs_review"
+      },
+      {
+        "title": "Dictionnaire de l'Académie française, 1re édition (1694), entrée « pigmée » renvoyant à « pygmée »",
+        "url": "https://www.dictionnaire-academie.fr/article/A1_0071",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Entrée de la première édition (tome 2, p. 239), qui renvoie de « pigmée » à « pygmée »."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Aka, qui se nomment eux-mêmes BaAka, vivent dans la forêt du sud-ouest de la Centrafrique et du nord du Congo. On les a aussi appelés Mbenga, Babinga ou Pygmées.",
+      "followUp": "D'où vient le mot Pygmée, et pourquoi le Congo l'a-t-il interdit en 2011 ?"
+    },
+    "gaps": [
+      {
+        "field": "nameHistory.names[0]",
+        "reason": "Nous n'avons pas trouvé de source qui explique le sens du nom Aka."
+      },
+      {
+        "field": "nameHistory.names[1]",
+        "reason": "Nous n'avons pas trouvé de source qui explique l'origine du nom Biaka."
+      },
+      {
+        "field": "nameHistory.names[2]",
+        "reason": "Nous n'avons pas trouvé de source qui explique l'origine du nom Bayaka."
+      },
+      {
+        "field": "nameHistory.names[3]",
+        "reason": "Nous n'avons pas trouvé de source qui explique l'origine du nom Babenzele."
+      },
+      {
+        "field": "origins.formationPeriod",
+        "reason": "Nous n'avons pas trouvé de source qui date la formation du peuple aka."
+      },
+      {
+        "field": "origins.migrationRoutes",
+        "reason": "Nous n'avons pas trouvé de source qui décrit les déplacements anciens des Aka."
+      },
+      {
+        "field": "organization.ageClassSystems",
+        "reason": "Nous n'avons pas trouvé de source qui parle de classes d'âge chez les Aka."
+      },
+      {
+        "field": "historicalRole.diaspora",
+        "reason": "Nous n'avons pas trouvé de source sur des Aka installés hors de leur région."
+      },
+      {
+        "field": "demography.distributionByCountry",
+        "reason": "Nous n'avons pas trouvé de recensement qui compte les Aka dans chacun des deux pays ; le chiffre donné pour la Centrafrique ne couvre que la Lobaye."
       }
     ]
   }

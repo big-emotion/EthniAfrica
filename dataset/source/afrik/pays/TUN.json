@@ -3,9 +3,9 @@
   "nameFr": "Tunisie",
   "nameEn": "Tunisia",
   "nameOfficial": "République tunisienne (Al-Jumhūriyyah at-Tūnisiyyah)",
-  "summary": "La Tunisie porte le nom de sa capitale, dont l'origine est peut-être berbère ou punique. Carthage, l'Afrique romaine — d'où vient le nom du continent —, le royaume vandale et les califats s'y sont succédé, avant la régence de Tunis et le protectorat français. Arabes et Berbères de Tunisie y perpétuent le malouf et le mezoued.",
-  "etymology": "Le nom \"Tunisie\" viendrait de \"Tunis\", la capitale. Le nom \"Tunis\" viendrait de \"Tynes\" (ancien nom berbère) ou de \"Tunès\" (nom punique). Le nom arabe \"Tūnis\" (تونس) est utilisé depuis le Moyen Âge.",
-  "nameOriginActor": "Le nom \"Tunisie\" vient de \"Tunis\", fondée par les Berbères puis développée par les Arabes. Le nom a été officialisé lors de la colonisation française.",
+  "summary": "Le nom Tunisie vient de celui de la capitale, Tunis, que l'historien grec Polybe écrit déjà Tynès et dont l'origine est discutée. Carthage, la province romaine d'Afrique, l'Ifrīqiya des premiers siècles de l'islam, le royaume hafside et la Régence de Tunis s'y sont succédé. Le pays passe sous protectorat français en 1881 et devient indépendant en 1956.",
+  "etymology": "Le nom Tunisie est formé sur celui de la ville de Tunis. L'historien grec Polybe écrit ce nom Tynès ; on le trouve ensuite sous les formes Tounis et Thuni, selon Charles Tissot, qui donne aussi la forme arabe Tūnis. Son origine est discutée. Il viendrait d'un mot de la langue des anciens Libyens selon Charles Tissot, ou du berbère ens, « passer la nuit », selon Ahmed Chabchoub. Tissot rejette l'explication par le nom de Tanit, une déesse de Carthage.",
+  "nameOriginActor": "Le nom Tunis remonte à l'Antiquité, et Charles Tissot y voit un mot de la langue des anciens Libyens. La forme Tunisie, pour le pays, figure dans le traité du Bardo de 1881, à côté des noms Régence et bey de Tunis.",
   "nameHistory": {
     "summary": "Le nom Tunisie désigne un pays d'Afrique du Nord, la République tunisienne, dont la capitale s'appelle Tunis. Le pays a aussi été appelé royaume de Tunis et Régence de Tunis ; au Moyen Âge, la province d'Ifrīqiya correspondait à peu près à la Tunisie actuelle. Les sources ne s'accordent pas sur l'origine du nom Tunis ; nous les présentons plus bas.",
     "names": [
@@ -116,7 +116,7 @@
               "to": null,
               "label": "Sens du nom"
             },
-            "statement": "Le nom Tunisie désigne aujourd'hui l'État. Au XIXe siècle, les textes parlent aussi du royaume de Tunis ou de la Régence de Tunis, du nom de la ville de Tunis, dont l'origine reste discutée. On ne sait pas avec certitude quand la forme Tunisie apparaît pour la première fois.",
+            "statement": "Le nom Tunisie désigne aujourd'hui l'État. Au XIXe siècle, les textes parlent aussi du royaume de Tunis ou de la Régence de Tunis, du nom de la ville de Tunis, dont l'origine reste discutée. Ces textes ne disent pas quand la forme Tunisie apparaît pour la première fois.",
             "aspect": "meaning",
             "sources": [
               {
@@ -565,14 +565,15 @@
     "historicalNames": {
       "formerNames": [
         "Ifriqiya (forme arabe du latin Africa)",
-        "Africa (romain, origine du nom du continent)",
-        "Régence de Tunis (1574-1881)"
+        "Africa (province romaine, à partir de 146 av. J.-C.)",
+        "Royaume de Tunis (attesté en 1656)",
+        "Régence de Tunis (jusqu'en 1881)"
       ],
-      "antiquity": "Africa (nom romain, origine du nom du continent), Carthage (ancienne capitale punique). Le territoire était peuplé de Berbères et de Phéniciens. Le nom Africa apparaît chez le poète latin Ennius, mort en 169 avant notre ère, puis devient en 146 avant notre ère celui de la province romaine, au nord de la Tunisie actuelle ; d'où le mot lui-même vient, les historiens en débattent : on l'a rapproché des Afri, un peuple de la région que les Romains connaissaient, mais aucune source ancienne ne le prouve directement. Le nom Ifriqiya en est la forme arabe, plus tardive.",
-      "middleAges": "Ifriqiya (nom arabe), Tunis (capitale). Dynasties arabes et berbères (Aghlabides, Fatimides, Zirides, Hafsides).",
-      "precolonial": "Régence de Tunis (1574-1881), État ottoman semi-autonome dirigé par des beys. Le territoire était appelé \"Ifriqiya\" ou \"Tunis\".",
-      "colonization": "1881-1956 : Protectorat français de Tunisie. Le nom \"Tunisie\" est officialisé par l'administration coloniale française.",
-      "contemporary": "1956 : Indépendance, république tunisienne. Le nom officiel en arabe est \"Al-Jumhūriyyah at-Tūnisiyyah\"."
+      "antiquity": "Avant le nom Tunisie, le nom Africa désigne la région. Après la destruction de Carthage en 146 av. J.-C., les Romains appellent province d'Afrique les terres qu'ils viennent d'occuper, selon l'Encyclopédie berbère. L'origine du mot reste discutée. Pour l'auteur de la première partie de la notice « Ifrîkiyya », le latin Africa est formé sur Afer, le nom des habitants des terres que contrôlait Carthage, et les explications de ce nom ne sont que des hypothèses. Pour l'auteur de la seconde partie, Africa est d'abord le pays des Afri, des tribus du nord de la Tunisie actuelle. Le nom finit par désigner tout le continent. Le nom de Carthage est phénicien : Kart Hadasht signifie « ville nouvelle », selon l'historien B. H. Warmington.",
+      "middleAges": "Le nom Ifrīqiya est la forme arabe du latin Africa. Les conquérants arabes le donnent à la première province musulmane d'Afrique du Nord, née avec la fondation de Kairouan vers 670, selon l'historien Hussain Monès. Ses limites varient selon les auteurs : les premiers historiens arabes y mettent souvent tout le Maghreb, et les géographes la limitent aux terres des Aghlabides, selon l'Encyclopédie berbère. Tunis devient un port important à partir de 702, quand les Arabes y installent un chantier naval. Sous la dynastie hafside, à partir de 1228, Tunis est la capitale du pays, selon l'historien Ivan Hrbek.",
+      "precolonial": "Le nom royaume de Tunis désigne le pays dans l'atlas du géographe français Nicolas Sanson, publié en 1656, puis dans le Pacte fondamental de 1857 et dans la Constitution de 1861. Le nom Régence de Tunis figure dans le titre d'un traité de paix signé avec la France en 1802. Les historiens appellent régences les trois provinces ottomanes du Maghreb, Alger, Tunis et Tripoli, selon l'historien M. H. Chérif.",
+      "colonization": "Le nom Tunisie figure dans le traité du Bardo, que le bey doit signer le 12 mai 1881 et qui place le pays sous protectorat français. Le traité parle aussi de la Régence et du bey de Tunis, selon le texte publié par la Digithèque de l'université de Perpignan.",
+      "contemporary": "Le nom Tunisie reste celui du pays à l'indépendance, que la France reconnaît le 20 mars 1956. La république est proclamée le 25 juillet 1957, et la Constitution du 1er juin 1959 fait de la Tunisie un « État libre, indépendant et souverain ». La Constitution de 2022 parle de la République tunisienne et fait de l'arabe la langue officielle."
     },
     "kingdoms": [
       {
@@ -582,11 +583,12 @@
         "timeRange": {
           "startYear": -814,
           "endYear": -146,
-          "precision": "year"
+          "precision": "approximate",
+          "datingNote": "La date de 814 av. J.-C. est celle de la tradition antique ; les plus anciennes traces archéologiques sûres de la ville datent du milieu du VIIIe siècle av. J.-C., selon B. H. Warmington."
         },
         "dominantPeoples": ["Phéniciens", "Berbères"],
         "politicalCenters": ["Carthage"],
-        "historicalRole": "Empire carthaginois puissant, rivalité avec Rome, guerres puniques, destruction de Carthage (146 av. J.-C.)."
+        "historicalRole": "Carthage est une ville fondée par des Phéniciens. Selon la tradition antique, elle date de 814 av. J.-C. ; les plus anciennes traces archéologiques sûres datent du milieu du VIIIe siècle av. J.-C., selon l'historien B. H. Warmington. Après plusieurs guerres contre Rome, une armée romaine débarque en Afrique en 149 av. J.-C. Carthage résiste jusqu'en 146 av. J.-C., puis elle est détruite."
       },
       {
         "name": "Afrique romaine",
@@ -598,8 +600,8 @@
           "precision": "year"
         },
         "dominantPeoples": ["Romains", "Berbères"],
-        "politicalCenters": ["Carthage (reconstruite)"],
-        "historicalRole": "Province romaine prospère, christianisation, développement urbain et commercial."
+        "politicalCenters": ["Carthage"],
+        "historicalRole": "Après la destruction de Carthage en 146 av. J.-C., son territoire devient une province romaine, selon l'historien A. Mahjoubi. À partir de l'an 40 de notre ère, toute l'Afrique du Nord est romaine, et elle le reste jusqu'à l'arrivée des Vandales. Le christianisme s'y développe tôt, et le latin s'impose dès le début comme la langue de l'Église d'Afrique."
       },
       {
         "name": "Royaume vandale",
@@ -612,20 +614,34 @@
         },
         "dominantPeoples": ["Vandales", "Berbères"],
         "politicalCenters": ["Carthage"],
-        "historicalRole": "Royaume vandale en Afrique du Nord, résistance berbère."
+        "historicalRole": "Les Vandales passent en Afrique en 429 sous la conduite de leur roi Genséric, puis prennent Carthage quelques années plus tard, selon l'historien Pierre Salama. En 533, une armée byzantine commandée par Bélisaire met fin à leur pouvoir en trois mois."
       },
       {
-        "name": "Califat omeyyade et abbasside",
-        "period": "647-909",
+        "name": "Afrique byzantine",
+        "period": "533 - vers 702",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 533,
+          "endYear": 702,
+          "precision": "approximate",
+          "datingNote": "La date de fin est celle de la destruction de Carthage par les Arabes, achevée en 702 selon Hussain Monès ; les Byzantins perdent leurs places d'Afrique pendant les années qui précèdent."
+        },
+        "dominantPeoples": ["Byzantins", "Berbères"],
+        "politicalCenters": ["Carthage"],
+        "historicalRole": "Après 533, l'Afrique du Nord passe sous l'autorité de l'Empire byzantin, selon l'historien Pierre Salama. Au milieu du VIIe siècle, la province byzantine de Byzacène, qui correspond en gros à la Tunisie actuelle, subit les premières incursions arabes, selon Hussain Monès."
+      },
+      {
+        "name": "Ifrīqiya des califes omeyyades et abbassides",
+        "period": "647-800",
         "entryType": "polity",
         "timeRange": {
           "startYear": 647,
-          "endYear": 909,
+          "endYear": 800,
           "precision": "year"
         },
         "dominantPeoples": ["Arabes", "Berbères"],
         "politicalCenters": ["Kairouan"],
-        "historicalRole": "Conquête arabe, islamisation, fondation de Kairouan, développement de l'Ifriqiya."
+        "historicalRole": "Les premières incursions arabes en Ifrīqiya ont lieu en 647. Vers 670, ʿUqba ibn Nāfiʿ fonde Kairouan, dont le nom signifie « camp » ou « arsenal », et la première province musulmane d'Afrique du Nord naît avec elle, selon l'historien Hussain Monès. Les Berbères résistent, sous la conduite de Kusayla, puis d'une femme que les Arabes surnomment al-Kāhina, « la prophétesse ». De 761 à 800, la province est à nouveau sous l'autorité du calife abbasside, avant de devenir un royaume autonome, selon l'historien Mohamed Talbi."
       },
       {
         "name": "Dynastie aghlabide",
@@ -638,33 +654,33 @@
         },
         "dominantPeoples": ["Arabes", "Berbères"],
         "politicalCenters": ["Kairouan"],
-        "historicalRole": "Dynastie arabe indépendante, développement économique et culturel, conquête de la Sicile."
+        "historicalRole": "Le royaume aghlabide est fondé en 800 par Ibrāhīm ibn al-Aghlab, dont le père avait déjà gouverné l'Ifrīqiya, selon l'historien Mohamed Talbi. Ses émirs conquièrent la Sicile entre 827 et 878. Le 18 mars 909, après une défaite près du Kef, le dernier émir aghlabide, Ziyādat Allāh III, quitte de nuit sa ville princière de Raqqada."
       },
       {
-        "name": "Dynastie fatimide",
-        "period": "909-1171",
+        "name": "Califat fatimide en Ifrīqiya",
+        "period": "909-973",
         "entryType": "polity",
         "timeRange": {
           "startYear": 909,
-          "endYear": 1171,
+          "endYear": 973,
           "precision": "year"
         },
         "dominantPeoples": ["Berbères", "Arabes"],
-        "politicalCenters": ["Mahdia", "puis Le Caire"],
-        "historicalRole": "Dynastie chiite ismaélienne, expansion vers l'Égypte, développement culturel."
+        "politicalCenters": ["Raqqada", "al-Mahdiyya", "Ṣabra-Manṣūriyya"],
+        "historicalRole": "Le califat fatimide naît en Ifrīqiya en 909. Ses califes sont chiites et s'appuient d'abord sur les Berbères kutāma, selon l'historien Ivan Hrbek. ʿUbayd Allāh al-Mahdī s'installe en 920 dans une nouvelle capitale au bord de la mer, al-Mahdiyya. En 973, le calife al-Muʿizz part pour l'Égypte, conquise en 969, et fait du Caire le centre de son empire ; le Maghreb reste à ses vassaux zirides."
       },
       {
         "name": "Dynastie hafside",
-        "period": "1229-1574",
+        "period": "1228-1574",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1229,
+          "startYear": 1228,
           "endYear": 1574,
           "precision": "year"
         },
         "dominantPeoples": ["Berbères", "Arabes"],
         "politicalCenters": ["Tunis"],
-        "historicalRole": "Dynastie berbère indépendante, développement de Tunis, résistance aux puissances européennes."
+        "historicalRole": "La dynastie hafside tire son nom d'Abū Ḥafṣ ʿUmar, un chef des Berbères hintāta et compagnon d'Ibn Tūmart, le fondateur du mouvement almohade. Son petit-fils Abū Zakariyyāʾ devient gouverneur de l'Ifrīqiya en 1228 et se déclare émir indépendant en 1229, selon l'historien Ivan Hrbek. Tunis, sa capitale, accueille alors des marchands de Provence, de Catalogne et des républiques italiennes. En 1270, le roi de France Louis IX mène une croisade contre Tunis ; ses troupes débarquent à Carthage, mais une épidémie frappe leur camp, et la paix est vite conclue. Pour Ivan Hrbek, la dynastie est d'origine berbère, mais profondément arabisée."
       },
       {
         "name": "Régence de Tunis",
@@ -677,7 +693,7 @@
         },
         "dominantPeoples": ["Turcs ottomans", "Arabes", "Berbères"],
         "politicalCenters": ["Tunis"],
-        "historicalRole": "État ottoman semi-autonome, piraterie en Méditerranée, résistance aux puissances européennes."
+        "historicalRole": "Les Ottomans prennent Tunis une première fois en 1569, puis à nouveau en 1574, selon l'historien M. H. Chérif. Le pays devient l'une des trois régences ottomanes du Maghreb, avec Alger et Tripoli. Au XVIIIe siècle, il reste une province de l'Empire ottoman, mais le bey de Tunis gouverne en toute autonomie. Au XVIIe siècle, la course, une guerre sur mer menée par des corsaires sous le contrôle de l'État, rapporte des revenus à la régence ; selon Chérif, l'histoire écrite à l'époque coloniale l'a confondue à tort avec la piraterie."
       },
       {
         "name": "Protectorat français",
@@ -692,7 +708,7 @@
           "Tous les peuples tunisiens sous domination coloniale"
         ],
         "politicalCenters": ["Tunis"],
-        "historicalRole": "Colonisation française, résistance tunisienne, mouvements nationalistes."
+        "historicalRole": "La France attaque le pays en 1881, et le bey doit signer le 12 mai 1881 un traité qui le place sous protectorat français, selon l'historien Abdallah Laroui. Les habitants du Sahel et de Kairouan se révoltent aussitôt. Le mouvement national se forme ensuite autour du Destour, un parti né après la Première Guerre mondiale, puis du Néo-Destour de Habib Bourguiba, né en 1934. La France reconnaît l'indépendance de la Tunisie le 20 mars 1956."
       }
     ],
     "majorPeoples": [
@@ -701,27 +717,20 @@
         "selfAppellation": "Al-'Arab (العرب), Tūnisiyyūn (تونسيون)",
         "exonyms": ["Arabes", "Arabophones", "Tunisiens"],
         "peopleId": "PPL_ARABES_AFRIQUE",
-        "mainRegion": "Toutes les régions de Tunisie, majoritaires dans les plaines et les villes",
-        "languages": ["Arabe tunisien (darija)", "arabe standard"],
+        "mainRegion": "Toutes les régions de Tunisie",
+        "languages": ["arabe tunisien (aeb)", "arabe standard"],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "Les Arabes de Tunisie sont majoritairement arabisés (métissés avec les Berbères). Le terme \"Tunisien\" est également utilisé."
+        "appellationRemarks": "Après la conquête arabe, les habitants de l'Afrique du Nord se convertissent à l'islam et adoptent peu à peu la langue arabe ; certains groupes berbères finissent par se donner des ancêtres arabes, selon l'historien Hussain Monès. Vers 1050, des tribus arabes nomades, les Banū Hilāl et les Banū Sulaym, arrivent en Ifrīqiya, selon Ivan Hrbek. Glottolog classe l'arabe tunisien parmi les parlers arabes du Maghreb."
       },
       {
         "name": "Berbères de Tunisie",
         "selfAppellation": "Imazighen (ⵉⵎⴰⵣⵉⵖⵏ)",
-        "exonyms": [
-          "« Berbère » (terme colonial",
-          "considéré problématique ; auto-appellation correcte : Amazigh / Imazighen)"
-        ],
+        "exonyms": ["Berbères"],
         "peopleId": "PPL_AMAZIGH_MACRO",
-        "mainRegion": "Sud de la Tunisie (régions de Matmata, Douiret, Chenini), île de Djerba",
-        "languages": [
-          "Tamazight tunisien (berbère tunisien",
-          "en déclin)",
-          "arabe tunisien"
-        ],
+        "mainRegion": "Sud de la Tunisie (Douiret, Chenini) et île de Djerba",
+        "languages": ["berbère de Tunisie", "arabe tunisien (aeb)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Le terme \"Berbère\" est considéré comme problématique car il vient du grec \"barbaros\" (étranger) et a été utilisé par les colonisateurs. L'auto-appellation correcte est \"Amazigh\" (pluriel : Imazighen). Les Berbères de Tunisie sont une minorité (environ 1-2% de la population)."
+        "appellationRemarks": "Le nom Amaziɣ, au pluriel Imaziɣen, est celui que se donnent un certain nombre de groupes de langue berbère, selon le linguiste Salem Chaker. En Tunisie, il le signale à Sened, où ce nom est employé à côté d'autres noms locaux. Le linguiste Zouhir Gabsi appelle Shilha le parler berbère de Douiret, qu'il compare à ceux de Chenini et de Ouirsighen, à Djerba. À Djerba, l'Encyclopédie berbère comptait en 1995 cinq ou six villages de langue berbère, mais seul Guellala semblait le rester entièrement. Nous n'avons pas trouvé d'enquête récente qui compte les personnes de langue berbère en Tunisie."
       }
     ],
     "culture": {
@@ -735,76 +744,276 @@
           "isoCode": "ara"
         },
         {
-          "name": "tamazight tunisien"
+          "name": "berbère de Tunisie"
         },
         {
           "name": "français",
           "isoCode": "fra"
         }
       ],
-      "culturalTraditions": "Musique malouf, mezoued, poésie arabe, artisanat (poterie, tissage, bijoux), architecture traditionnelle (maisons troglodytes du Sud), fêtes religieuses et culturelles",
-      "dominantReligions": "Islam sunnite (école malékite majoritaire), soufisme important",
-      "lifestyles": "Urbanisation importante, agriculture (plaines côtières), pastoralisme (régions intérieures), industrie, tourisme, commerce",
-      "socialOrganization": "Structures familiales traditionnelles, organisation communautaire, structures étatiques modernes, république parlementaire",
-      "regionalRelations": "Relations avec le Maghreb (Union du Maghreb arabe), relations avec l'Europe (Union européenne), relations avec le monde arabe (Ligue arabe), rôle dans la paix au Moyen-Orient"
+      "culturalTraditions": "Le mālūf est le répertoire de musique classique de la Tunisie. Le musicologue Yassine Guettat conteste l'idée qu'il soit un simple héritage andalou : il le rattache à la grande tradition musicale du monde arabo-musulman, mêlée aux apports locaux. L'association musicale de la Rachidia, créée en novembre 1934, publie depuis 1967 des recueils de ce répertoire. L'UNESCO a inscrit deux savoir-faire tunisiens au patrimoine culturel immatériel de l'humanité : la poterie des femmes de Sejnane en 2018, dont les décors rappellent les tatouages et les tissages berbères, et la préparation de la harissa, une pâte de piments rouges, en 2022. À Djerba, l'Encyclopédie berbère décrit la poterie de Guellala et le tissage de la laine.",
+      "dominantReligions": "La Constitution de 2022 dit que la Tunisie fait partie de la nation islamique et que le président de la République est de religion musulmane ; elle garantit aussi la liberté de croyance et de conscience. L'école malékite de l'islam sunnite commence à l'emporter en Ifrīqiya au IXe siècle, avec le juriste Saḥnūn de Kairouan, selon l'historien Mohamed Talbi. À Djerba, près de la moitié des habitants restaient fidèles à l'ibadisme, une autre branche de l'islam, et une communauté juive vivait dans les villages de Ḥāra Kabīra et Ḥāra Ṣaghīra, selon l'Encyclopédie berbère en 1995.",
+      "lifestyles": "Au recensement de 2024, 59,1 % des habitants vivent dans deux des cinq districts du pays : celui des gouvernorats de Tunis, de l'Ariana, de Ben Arous, de la Manouba, de Nabeul et de Zaghouan, et celui des gouvernorats de Sousse, de Monastir, de Mahdia, de Kairouan, de Kasserine et de Siliana, selon l'Institut national de la statistique. Presque tous les logements habités ont l'électricité, 97,6 %, et 86,8 % sont raccordés au réseau d'eau potable.",
+      "socialOrganization": "La Constitution de 2022 fait de la république le régime de l'État tunisien. Au recensement de 2024, le pays compte 3,47 millions de ménages, et un ménage réunit en moyenne 3,45 personnes, contre 5,5 en 1975. Pour l'Institut national de la statistique, cette baisse montre un passage progressif vers la famille nucléaire, formée des parents et des enfants, et un recul des familles élargies.",
+      "regionalRelations": "Dans le préambule de la Constitution de 2022, la Tunisie affirme son appartenance au continent africain. Le texte dit aussi qu'elle fait partie de la nation islamique, de la nation arabe et du Grand Maghreb arabe."
     },
     "historicalFacts": {
-      "ancientPeriods": "Présence berbère depuis la préhistoire, fondation de Carthage par les Phéniciens (814 av. J.-C.), développement de l'empire carthaginois, guerres puniques avec Rome.",
-      "middleAges": "Conquête arabe (647), islamisation progressive, dynasties arabes et berbères (Aghlabides, Fatimides, Hafsides), développement du commerce et de la culture.",
-      "precolonial": "Régence de Tunis (1574-1881), État ottoman semi-autonome, développement économique et culturel, résistance aux puissances européennes.",
-      "colonization": "Protectorat français (1881-1956), résistance tunisienne, mouvements nationalistes (Parti du Destour, Néo-Destour).",
-      "independenceStruggle": "Mouvement nationaliste (Habib Bourguiba), indépendance (1956), développement de l'État moderne.",
-      "postIndependence": "République tunisienne (1956), modernisation de l'État, développement économique, révolution de 2011 (printemps arabe), transition démocratique."
+      "ancientPeriods": "Carthage est fondée, selon la tradition, en 814 av. J.-C. par des Phéniciens. Ses voisins sont des peuples que les auteurs grecs appellent Libyens : en 396 av. J.-C., selon Diodore de Sicile, des Libyens révoltés contre Carthage prennent la ville de Tynès, l'actuelle Tunis. Rome détruit Carthage en 146 av. J.-C. et fait de son territoire une province. En 429 de notre ère, les Vandales passent en Afrique ; en 533, une armée byzantine met fin à leur royaume.",
+      "middleAges": "La conquête de l'Afrique du Nord par les Arabes dure de 642 à 711, selon l'historien Hussain Monès ; elle se heurte à la résistance berbère, menée par Kusayla puis par al-Kāhina. Les habitants se convertissent à l'islam et adoptent peu à peu l'arabe. L'Ifrīqiya devient un royaume autonome avec les Aghlabides en 800, puis le berceau du califat fatimide en 909. Vers 1050, les Fatimides, installés au Caire, livrent l'Ifrīqiya à des tribus arabes nomades, les Banū Hilāl et les Banū Sulaym, pour punir l'émir ziride qui avait rompu avec eux ; l'émir doit quitter Kairouan en 1057, selon Ivan Hrbek. De 1228 à 1574, la dynastie hafside gouverne depuis Tunis.",
+      "precolonial": "Les Espagnols et les Ottomans se disputent l'est du Maghreb de 1534 à 1574, et les Espagnols tiennent La Goulette, l'avant-port de Tunis, de 1535 à 1574, selon l'historien M. H. Chérif. Après 1574, le pays devient une régence ottomane gouvernée depuis Tunis. Pour Chérif, la Tunisie est au XVIIIe siècle « l'État du Maghreb le plus affirmé et le mieux intégré ». En 1857, Mohammed Pacha Bey signe le Pacte fondamental, et une Constitution suit en 1861.",
+      "colonization": "Le 12 mai 1881, le bey doit signer le traité du Bardo, qui place le pays sous protectorat français. Le Sahel et Kairouan se révoltent, et Kairouan soutient un long siège à l'automne 1881, selon l'historien Abdallah Laroui. Avant 1914, les premiers diplômés de l'enseignement moderne créent des associations et une presse de revendication, et un mouvement nationaliste naît en Tunisie. Le Destour naît après la Première Guerre mondiale. En 1934, il se divise en un Vieux Destour et un Néo-Destour, où milite Habib Bourguiba, selon l'historien Tayeb Chenntouf.",
+      "independenceStruggle": "Après la Seconde Guerre mondiale, le Néo-Destour mène la lutte pour l'indépendance. En 1949, Habib Bourguiba, revenu d'exil, choisit d'y parvenir par étapes, selon l'historien Ivan Hrbek. Au début de 1952, la France arrête de nombreux nationalistes, dont Bourguiba. Un compromis sur l'autonomie interne est conclu en juin 1955, et Ṣalāḥ ben Yūsuf, qui voulait poursuivre la lutte armée, est exclu du parti en novembre 1955. La France reconnaît l'indépendance de la Tunisie le 20 mars 1956.",
+      "postIndependence": "La république est proclamée le 25 juillet 1957 ; elle met fin à la monarchie héréditaire établie en 1705. La Constitution du 1er juin 1959 fait de la Tunisie un « État libre, indépendant et souverain ». Le préambule de la Constitution de 2022 évoque la révolution commencée le 17 décembre 2010 et les événements du 25 juillet 2021. Cette Constitution porte la date du référendum du 25 juillet 2022."
     },
     "sources": [
       {
         "title": "ONU – World Population Prospects 2025",
         "url": null,
         "tier": "needs_review",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": ""
       },
       {
         "title": "CIA World Factbook – Tunisia",
         "url": null,
         "tier": "needs_review",
-        "source_kind": "government"
+        "source_kind": "government",
+        "notes": ""
       },
       {
         "title": "Ethnologue – Languages of Tunisia",
         "url": null,
         "tier": "needs_review",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": ""
       },
       {
         "title": "Minority Rights Group – Amazigh in Tunisia",
         "url": null,
         "tier": "needs_review",
-        "source_kind": "ngo"
+        "source_kind": "ngo",
+        "notes": ""
       },
       {
         "title": "Recensements tunisiens",
         "url": null,
         "tier": "needs_review",
-        "source_kind": "official_statistics"
+        "source_kind": "official_statistics",
+        "notes": ""
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": ""
       },
       {
         "title": "South African History Online, « Africa: What's in a name? »",
         "url": "https://sahistory.org.za/article/africa-whats-name",
         "tier": "referenced",
         "source_kind": "repository",
-        "notes": "Article d'un portail d'histoire public. Dit que tous les historiens s'accordent sur l'emploi romain du nom en Tunisie et en Algérie vers le IIe siècle avant notre ère, mais que son origine reste discutée : l'idée d'une « terre des Afri » n'est appuyée par aucune preuve directe dans les sources primaires. Mentionne aussi une explication grecque qu'il attribue à Léon l'Africain ; cette attribution ne se vérifie pas : Léon donne l'arabe faraqa, « diviser », et un roi Ifricus, et la lecture grecque apparaît sans auteur chez Samuel Bochart en 1646. Consulté le 25 septembre 2026."
+        "notes": "Article d'un portail d'histoire public. Dit que tous les historiens s'accordent sur l'emploi romain du nom en Tunisie et en Algérie vers le IIe siècle avant notre ère, mais que son origine reste discutée : l'idée d'une « terre des Afri » n'est appuyée par aucune preuve directe dans les sources primaires. Mentionne aussi une explication grecque qu'il attribue à Léon l'Africain ; cette attribution ne se vérifie pas : Léon donne l'arabe faraqa, « diviser », et un roi Ifricus, et l'explication grecque apparaît sans auteur chez Samuel Bochart en 1646. Consulté le 25 septembre 2026."
       },
       {
         "title": "UNFPA – World Population Dashboard — Tunisie",
         "url": "https://www.unfpa.org/data/world-population/TN",
         "tier": "official",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": ""
+      },
+      {
+        "title": "Institut national de la statistique (Tunisie) – Recensement général de la population et de l'habitat 2024 : bilan démographique",
+        "author": "Institut national de la statistique",
+        "year": 2025,
+        "url": "https://www.ins.tn/sites/default/files-ftp3/files/2025-05/Bilan%20D%C3%A9mographique_0.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Premiers résultats du recensement de 2024, publiés en mai 2025 et lus le 3 novembre 2026. Page 5 : la Tunisie compte 11 972 169 habitants au 6 novembre 2024, contre 10 982 754 en 2014. Page 7 : 66 349 étrangers, soit 0,55 % de la population. Page 19 : 59,1 % des habitants vivent dans les districts 2 et 3. Page 63 : un ménage compte en moyenne 3,45 personnes, contre 5,5 en 1975. Page 68 : 97,6 % des logements habités ont l'électricité et 86,8 % l'eau potable. Ces premiers résultats donnent la population par sexe, par âge, par gouvernorat et par nationalité ; ils ne la comptent ni par langue, ni par origine, ni par religion."
+      },
+      {
+        "title": "Constitution de la Tunisie de 2022, version anglaise, Constitute Project",
+        "url": "https://www.constituteproject.org/constitution/Tunisia_2022",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte lu sur Constitute le 3 novembre 2026. Le préambule affirme l'appartenance de la Tunisie au continent africain et évoque la révolution commencée le 17 décembre 2010 et le 25 juillet 2021. L'article 2 fait de la république le régime de l'État. L'article 5 dit que la Tunisie fait partie de la nation islamique, l'article 6 qu'elle fait partie de la nation arabe et que sa langue officielle est l'arabe, l'article 7 qu'elle fait partie du Grand Maghreb arabe. L'article 27 garantit la liberté de croyance et de conscience. L'article 88 dit que le président de la République est de religion musulmane. L'article 141 date la Constitution du référendum du 25 juillet 2022."
+      },
+      {
+        "title": "Glottolog — Tunisian Arabic (tuni1259)",
+        "url": "https://glottolog.org/resource/languoid/id/tuni1259",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice de l'arabe tunisien (code ISO 639-3 aeb) dans Glottolog 5.3, lue le 3 novembre 2026. Glottolog le classe parmi les parlers arabes du Maghreb, dans la branche sémitique de la famille afro-asiatique."
+      },
+      {
+        "title": "Glottolog — Tunisian-Zuwara Berber (tuni1262)",
+        "url": "https://glottolog.org/resource/languoid/id/tuni1262",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice lue dans Glottolog 5.3 le 3 novembre 2026. Glottolog range les parlers berbères de Tunisie avec celui de Zouara, en Libye, dans le groupe zénète de la famille berbère, et les dit menacés. Ce groupe n'a pas de code ISO 639-3."
+      },
+      {
+        "title": "Glottolog — Sened (sene1271)",
+        "url": "https://glottolog.org/resource/languoid/id/sene1271",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice lue dans Glottolog 5.3 le 3 novembre 2026. Glottolog donne comme éteint le parler berbère de Sened, en Tunisie (code ISO 639-3 sds)."
+      },
+      {
+        "title": "Ifrîkiyya",
+        "author": "A. Siraj et E.B.",
+        "year": 2001,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1545",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère, volume 24, lue en ligne sur OpenEdition le 3 novembre 2026 ; les paragraphes y sont numérotés. Paragraphe 6 : le latin Africa est formé sur Afer, nom des habitants des terres contrôlées par Carthage, dont l'origine reste inconnue. Paragraphe 8 : après la destruction de Carthage, les Romains appellent province d'Afrique les terres occupées ; les géographes arabes limitent l'Ifrîkiyya aux terres des Aghlabides. Paragraphe 12 : Africa est d'abord le pays des Afri, au nord de la Tunisie actuelle, puis le nom finit par désigner le continent."
+      },
+      {
+        "title": "Djerba, Encyclopédie berbère, 16",
+        "author": "P. Trousset, J. Despois, R. Mantran et S. Chaker",
+        "year": 1995,
+        "url": "https://journals.openedition.org/encyclopedieberbere/2188",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère, p. 2452-2460 de l'édition imprimée, lue en ligne sur OpenEdition le 3 novembre 2026 ; les paragraphes y sont numérotés. Paragraphe 7 : les conquérants arabes occupent l'île dès 665. Paragraphe 17 : l'islam malékite et la langue arabe y gagnent du terrain à partir du début du XVIIIe siècle. Paragraphe 19 : la moitié des Djerbiens sont restés berbérophones, près de la moitié fidèles à l'ibadisme, et les juifs de l'île vivent à Ḥāra Kabīra et Ḥāra Ṣaghīra. Paragraphe 22 : la poterie de Guellala et le tissage de la laine. Paragraphes 27 et 28 : cinq ou six villages sont dits de langue berbère, mais le berbère y recule au profit de l'arabe, et seul Guellala semble rester entièrement berbérophone ; les auteurs notent le manque d'enquêtes précises."
+      },
+      {
+        "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+        "author": "Salem Chaker",
+        "year": 1986,
+        "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 3 novembre 2026 ; les paragraphes y sont numérotés. Paragraphe 1 : Amaziɣ, au pluriel Imaziɣen, est le nom que se donnent un certain nombre de groupes berbérophones. Paragraphe 9 : en Tunisie, le terme est connu à Sened, à côté d'autres noms locaux."
+      },
+      {
+        "title": "An outline of the Shilha (Berber) vernacular of Douiret (Southern Tunisia)",
+        "author": "Zouhir Gabsi",
+        "year": 2003,
+        "url": "https://researchers.westernsydney.edu.au/en/studentTheses/an-outline-of-the-shilha-berber-vernacular-of-douiret-southern-tu/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse de doctorat de l'université Western Sydney, dont nous avons lu le résumé en ligne le 3 novembre 2026. L'auteur décrit le parler berbère de Douiret et compare son vocabulaire à ceux de Chenini et de Ouirsighen, à Djerba. Il conclut que le berbère tunisien survit encore, mais que son avenir est incertain, à cause de l'urbanisation, de l'émigration et du manque de soutien de l'État."
+      },
+      {
+        "title": "Attrition and maintenance of the Berber language in Tunisia",
+        "author": "Zouhir Gabsi",
+        "year": 2011,
+        "url": "https://researchers.westernsydney.edu.au/en/publications/attrition-and-maintenance-of-the-berber-language-in-tunisia-2/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de l'International Journal of the Sociology of Language, n° 211, p. 135-164, dont nous avons lu le résumé sur le site de l'université Western Sydney le 3 novembre 2026. L'auteur explique le recul du berbère en Tunisie par sa longue mise à l'écart par les institutions et par le manque de documentation. Ses enquêtes dans le Sud tunisien ne confirment pas l'idée d'une disparition proche : la langue emprunte beaucoup à l'arabe, mais sa grammaire change peu."
+      },
+      {
+        "title": "Le mālūf tunisien : origines et mutations",
+        "author": "Yassine Guettat",
+        "year": 2018,
+        "url": "https://www.ua.edu.lb/Library/Assets/Gallery/AntonineUniversity/rtm-12-2018-guettat-yassine-le-maluf-tunisien.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de la Revue des traditions musicales, n° 12, publiée par l'université Antonine, au Liban, lu le 3 novembre 2026. Page 75 : le mālūf est le répertoire classique tunisien. Pages 75 et 76 : l'auteur conteste l'idée d'un héritage seulement andalou et rattache ce répertoire à la grande tradition musicale du monde arabo-musulman, mêlée aux apports locaux. Page 77, note 4 : l'association musicale de la Rachidia est créée en novembre 1934. Page 78 : les recueils publiés depuis 1967 par la Rachidia."
+      },
+      {
+        "title": "UNESCO – Les savoir-faire liés à la poterie des femmes de Sejnane (2018)",
+        "url": "https://ich.unesco.org/fr/RL/les-savoir-faire-lies-a-la-poterie-des-femmes-de-sejnane-01406",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche d'inscription sur la Liste représentative du patrimoine culturel immatériel de l'humanité, lue le 3 novembre 2026. À Sejnane, des femmes façonnent à la main des poteries en terre cuite pour la maison : ustensiles de cuisine, poupées, figurines d'animaux. Leurs décors rappellent les tatouages et les tissages berbères."
+      },
+      {
+        "title": "UNESCO – La harissa, savoirs, savoir-faire et pratiques culinaires et sociales (2022)",
+        "url": "https://ich.unesco.org/fr/RL/01710",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche d'inscription sur la Liste représentative du patrimoine culturel immatériel de l'humanité, présentée par la Tunisie, lue le 3 novembre 2026. La harissa est une pâte de piments rouges séchés au soleil, broyés avec du sel, de l'ail et de la coriandre. Des femmes la préparent le plus souvent ensemble, en famille ou entre voisines, pour les provisions de la maison."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, II, ch. 18 : La période carthaginoise",
+        "author": "B. H. Warmington",
+        "year": 1980,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par G. Mokhtar, lu dans le texte du chapitre le 3 novembre 2026. Page 479 : le nom de Carthage traduit le phénicien Kart Hadasht, « ville nouvelle » ; selon la tradition, la ville est fondée en 814 av. J.-C., mais les premières données archéologiques sûres datent du milieu du VIIIe siècle av. J.-C. Page 498 : une armée romaine débarque en Afrique en 149 av. J.-C., et Carthage résiste jusqu'en 146."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, II, ch. 19 : La période romaine et post-romaine en Afrique du Nord",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par G. Mokhtar, lu dans le texte du chapitre le 3 novembre 2026. Première partie, d'A. Mahjoubi. Page 503 : après la destruction de Carthage en 146 av. J.-C., son territoire devient une province romaine ; à partir de l'an 40, toute l'Afrique du Nord est romaine jusqu'à l'invasion vandale. Page 537 : le christianisme se développe tôt en Afrique, et le latin s'y impose dès le début. Seconde partie, de P. Salama. Page 542 : les Vandales de Genséric passent en Afrique en 429 et prennent Carthage quelques années plus tard. Page 543 : en 533, une armée byzantine commandée par Bélisaire met fin à leur pouvoir en trois mois."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, III, ch. 9 : La conquête de l'Afrique du Nord et la résistance berbère",
+        "author": "Hussain Monès",
+        "year": 1990,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, lu dans le texte du chapitre le 3 novembre 2026. Page 259 : en 647, le gouverneur arabe de l'Égypte attaque la Byzacène, province byzantine qui correspond en gros à la Tunisie actuelle. Page 260 : vers 670, ʿUqba ibn Nāfiʿ fonde Kairouan, dont le nom signifie « camp » ou « arsenal », et la province d'Ifrīqiya naît avec la ville. Pages 261 à 265 : la résistance berbère de Kusayla, puis d'al-Kāhina. Page 266 : Carthage est détruite en 702, et un port est aménagé à Tunis. Page 270 : la conquête dure de 642 à 711 ; les Berbères s'islamisent et s'arabisent lentement, et certains se donnent des ancêtres arabes."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, III, ch. 10 : L'indépendance du Maghreb",
+        "author": "Mohamed Talbi",
+        "year": 1990,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, lu dans le texte du chapitre le 3 novembre 2026. Page 286 : l'Ifrīqiya revient sous l'autorité du calife abbasside de 761 à 800. Page 287 : Ibrāhīm ibn al-Aghlab fonde le royaume aghlabide, qui dure de 800 à 909. Page 288 : la conquête de la Sicile commence en 827 et s'achève en 878 ; le 18 mars 909, après une défaite près du Kef, Ziyādat Allāh III quitte Raqqada. Page 300 : avec le juriste Saḥnūn, l'école malékite l'emporte en Ifrīqiya à partir du milieu du IXe siècle."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, III, ch. 12 : L'avènement des Fatimides",
+        "author": "Ivan Hrbek",
+        "year": 1990,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, lu dans le texte du chapitre le 3 novembre 2026. Page 346 : ʿUbayd Allāh al-Mahdī règne à partir de 909 et s'installe en 920 à al-Mahdiyya ; en 973, al-Muʿizz part définitivement pour l'Égypte. Page 347 : les premiers soutiens de la dynastie sont les Kutāma. Page 351 : les Zirides sont les vassaux des Fatimides au Maghreb. Page 356 : l'Égypte est conquise en 969. Page 360 : à partir de 1050-1051, les Banū Hilāl et les Banū Sulaym sont envoyés en Ifrīqiya pour punir l'émir ziride ; il doit quitter Kairouan en 1057."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, IV, ch. 4 : La désintégration de l'unité politique du Maghreb",
+        "author": "Ivan Hrbek",
+        "year": 1985,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, lu dans le texte du chapitre le 3 novembre 2026. Page 103 : les trois dynasties qui succèdent aux Almohades sont d'origine berbère mais profondément arabisées. Page 105 : les Hafsides (1228-1574) ont Tunis pour capitale ; l'ancêtre de la dynastie, Abū Ḥafṣ ʿUmar, est le chef des Berbères hintāta ; Abū Zakariyyāʾ devient gouverneur en 1228 et se déclare émir indépendant en 1229 ; Tunis accueille des marchands de Provence, de Catalogne et des républiques italiennes. Page 106 : la croisade de Louis IX contre Tunis en 1270."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 9 : Algérie, Tunisie et Libye : les Ottomans et leurs héritiers",
+        "author": "M. H. Chérif",
+        "year": 1999,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, lu dans le texte du chapitre le 3 novembre 2026. Page 276 : Espagnols et Ottomans se disputent l'est de l'Ifrīqiya de 1534 à 1574, et les Espagnols tiennent La Goulette de 1535 à 1574. Page 277 : les Ottomans prennent Tunis en 1569, puis en 1574. Page 286 : la course n'est pas la piraterie à laquelle une certaine histoire coloniale l'a réduite. Page 291 : au XVIIIe siècle, la Tunisie est « l'État du Maghreb le plus affirmé et le mieux intégré », et le bey de Tunis y jouit d'une totale autonomie."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VII, ch. 5 : Initiatives et résistances africaines en Afrique du Nord et au Sahara",
+        "author": "Abdallah Laroui",
+        "year": 1987,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, lu dans le texte du chapitre le 3 novembre 2026. Page 111 : en Tunisie naît un mouvement nationaliste, porté par les associations des premiers diplômés de l'enseignement moderne et par une presse de revendication. Page 116 : le bey est contraint de signer le 12 mai 1881 le traité du protectorat ; le Sahel et Kairouan se révoltent, et Kairouan soutient un long siège à l'automne 1881."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VIII, ch. 2 : La corne de l'Afrique et l'Afrique septentrionale",
+        "author": "Tayeb Chenntouf",
+        "year": 1998,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, lu dans le texte du chapitre le 3 novembre 2026. Page 60 : le Destour, né après la Première Guerre mondiale, se divise au congrès de Ksar Hellal, le 2 mars 1934, en un Vieux Destour et un Néo-Destour, où Habib Bourguiba milite activement. Page 61 : en 1938, le Néo-Destour est devenu le porte-parole du nationalisme tunisien."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VIII, ch. 6 : L'Afrique septentrionale et la corne de l'Afrique",
+        "author": "Ivan Hrbek",
+        "year": 1998,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, lu dans le texte du chapitre le 3 novembre 2026. Page 152 : en 1949, Habib Bourguiba, revenu d'exil, choisit une stratégie de lutte par étapes pour l'indépendance. Page 153 : au début de 1952, la France arrête de nombreux nationalistes, dont Bourguiba ; un compromis est conclu en juin 1955, et Ṣalāḥ ben Yūsuf est exclu du Néo-Destour en novembre 1955."
       }
     ],
     "demographics": {
@@ -814,20 +1023,25 @@
       "peoples": [
         {
           "name": "Arabes de Tunisie",
-          "percentageInCountry": 98,
-          "percentageInAfrica": 6.5,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "peopleId": "PPL_ARABES_AFRIQUE",
           "region": "Toutes les régions",
           "languageFamily": "FLG_SEMITIQUE"
         },
         {
           "name": "Berbères de Tunisie",
-          "percentageInCountry": 2,
-          "region": "Sud de la Tunisie (Matmata, Douiret, Chenini), île de Djerba",
+          "percentageInCountry": null,
+          "region": "Sud de la Tunisie (Douiret, Chenini) et île de Djerba",
           "languageFamily": "FLG_BERBERE",
-          "peopleId": "PPL_AMAZIGH_MACRO"
+          "peopleId": "PPL_AMAZIGH_MACRO",
+          "percentageInAfrica": null
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "La Tunisie est un pays d'Afrique du Nord qui porte le nom de sa capitale, Tunis. Elle a aussi été appelée royaume de Tunis et Régence de Tunis.",
+      "followUp": "D'où vient le nom de la ville de Tunis ?"
     }
   }
 }

@@ -47,7 +47,7 @@ describe("fiche chronology charter", () => {
     expect(lists).toHaveLength(1);
     expect(
       Array.from(lists[0].children, (item) => item.getAttribute("data-regime"))
-    ).toEqual(["polity", "polity", "colonial", "colonial", "modern"]);
+    ).toEqual(["polity", "polity", "polity", "colonial", "colonial", "modern"]);
   });
 
   // @req REQ-148
@@ -245,7 +245,7 @@ describe("fiche chronology — a long history folds after its first tile", () =>
     expect(
       fold.querySelector(':scope > summary [data-when="closed"]')
     ).toHaveTextContent(
-      "+ Voir aussi : 5 entités politiques, Royaume de Kong, Colonie de Côte d'Ivoire, République de Côte d'Ivoire"
+      "+ Voir aussi : Royaume abron du Gyaman, Royaume anyi du Ndenye (Indénié), Royaume anyi du Sanwi, Royaume de Kong, Colonie de Côte d'Ivoire, République de Côte d'Ivoire"
     );
   });
 

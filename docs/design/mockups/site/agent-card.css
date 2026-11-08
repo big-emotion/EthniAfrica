@@ -1,0 +1,348 @@
+/* EthniAfrica answer card (MCP Apps widget) and the chat frame it sits in.
+   The card reads the site's semantic tokens from ea-live.css so it follows
+   .dark like any page; the real widget will carry the same values inline,
+   because the host's sandbox cannot load the site's stylesheet. */
+
+/* ── Host frame: a neutral chat column, deliberately unbranded ─────────── */
+.chat {
+  --chat-bg: #f7f7f5;
+  --chat-ink: #1f1f1d;
+  --chat-soft: #5f5f5a;
+  --chat-bubble: #e9e8e3;
+  background: var(--chat-bg);
+  color: var(--chat-ink);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  padding: 20px 16px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+.dark .chat, .chat.dark {
+  --chat-bg: #212120;
+  --chat-ink: #ecebe6;
+  --chat-soft: #a9a8a1;
+  --chat-bubble: #34332f;
+}
+.chat-host {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--chat-soft);
+  text-align: center;
+}
+.chat-user {
+  align-self: flex-end;
+  max-width: 80%;
+  background: var(--chat-bubble);
+  border-radius: 18px;
+  padding: 8px 14px;
+}
+.chat-assistant { margin: 0; }
+.chat-tool {
+  font-size: 13px;
+  color: var(--chat-soft);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ── The card ──────────────────────────────────────────────────────────── */
+.ac-card {
+  --ac-teal: var(--afh-cat-teal-ink, #226d60);
+  --ac-terre: var(--afh-cat-terre-ink, #974331);
+  --ac-ocre: var(--afh-cat-ocre-ink, #835514);
+  --ac-perv: var(--afh-cat-perv-ink, #535f9e);
+  background: var(--afh-surface, #ffffff);
+  color: var(--afh-text, #2c2018);
+  border: 1px solid var(--afh-border, #e8dfd3);
+  border-radius: 16px;
+  font-family: var(--afh-font-body, "Nunito Sans", system-ui, sans-serif);
+  font-size: 15px;
+  line-height: 1.55;
+  overflow: hidden;
+}
+.dark .ac-card {
+  --ac-teal: var(--afh-cat-teal-ink-night, #4fb7a5);
+  --ac-terre: var(--afh-cat-terre-ink-night, #cd725e);
+  --ac-ocre: var(--afh-cat-ocre-ink-night, #d39a47);
+  --ac-perv: var(--afh-cat-perv-ink-night, #8f9be0);
+}
+.ac-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px 0;
+}
+.ac-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 800;
+  font-size: 13px;
+  color: var(--afh-text, #2c2018);
+}
+.ac-brand img { width: 18px; height: 18px; }
+.ac-kind {
+  font-family: var(--afh-font-mono, "JetBrains Mono", ui-monospace, monospace);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--afh-text-soft, #746557);
+}
+.ac-head {
+  padding: 10px 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.ac-name {
+  margin: 0;
+  font-family: var(--afh-font-display, "Fraunces", Georgia, serif);
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1.1;
+}
+.ac-aka { margin: 0; color: var(--afh-text-soft, #746557); }
+.ac-lead { margin: 6px 0 0; }
+
+/* Two markers: the word stays in ink, the status colour rides the outline
+   and the dot (same rule as .afh-name-badge on the site). */
+.ac-markers {
+  display: grid;
+  gap: 8px;
+  padding: 0 16px 16px;
+}
+.ac-marker {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+}
+.ac-marker-q {
+  font-size: 12px;
+  color: var(--afh-text-soft, #746557);
+}
+.ac-badge {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px 3px 8px;
+  border-radius: 999px;
+  border: 1.5px solid var(--badge, var(--afh-text-soft));
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--afh-text, #2c2018);
+}
+.ac-badge::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--badge, var(--afh-text-soft));
+}
+.b-inside { --badge: var(--ac-teal); }
+.b-outside { --badge: var(--ac-terre); }
+.b-taken { --badge: var(--ac-ocre); }
+.b-settled { --badge: var(--ac-teal); }
+.b-debated { --badge: var(--ac-ocre); }
+.b-reported { --badge: var(--ac-perv); }
+
+.ac-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--afh-border, #e8dfd3);
+}
+.ac-step {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--afh-border, #e8dfd3);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.ac-step-h {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--afh-text-soft, #746557);
+}
+.ac-step p { margin: 0; }
+.ac-names {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+.ac-name-chip {
+  font-size: 13px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: var(--afh-bg-warm, #f5ede0);
+}
+.ac-name-chip small { color: var(--afh-text-soft, #746557); }
+
+.ac-sources {
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-bottom: 1px solid var(--afh-border, #e8dfd3);
+}
+.ac-source {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 8px;
+  font-size: 13px;
+}
+.ac-source-kind {
+  font-family: var(--afh-font-mono, ui-monospace, monospace);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--afh-text-soft, #746557);
+}
+.ac-more-sources { font-size: 13px; color: var(--afh-text-soft, #746557); }
+
+.ac-actions {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ac-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  border-radius: 10px;
+  background: var(--afh-text, #2c2018);
+  color: var(--afh-surface, #ffffff);
+  font-weight: 800;
+  text-decoration: none;
+}
+.ac-leads-h {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--afh-text-soft, #746557);
+}
+.ac-leads { display: flex; flex-wrap: wrap; gap: 8px; }
+.ac-lead-btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 44px;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--afh-border, #e8dfd3);
+  background: var(--afh-surface, #ffffff);
+  color: var(--afh-text, #2c2018);
+  font: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+}
+.ac-lead-btn small { font-weight: 400; font-size: 12px; color: var(--afh-text-soft, #746557); }
+.ac-help {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: var(--afh-bg-warm, #f5ede0);
+}
+.ac-help p { margin: 0; font-size: 14px; }
+.ac-help-btn {
+  align-self: flex-start;
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1.5px solid var(--afh-text, #2c2018);
+  background: transparent;
+  color: var(--afh-text, #2c2018);
+  font: inherit;
+  font-weight: 800;
+  font-size: 14px;
+  cursor: pointer;
+}
+.ac-foot {
+  padding: 10px 16px 14px;
+  font-size: 12px;
+  color: var(--afh-text-soft, #746557);
+  border-top: 1px solid var(--afh-border, #e8dfd3);
+}
+
+/* States */
+.ac-note {
+  margin: 0 16px 14px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px dashed var(--afh-border, #e8dfd3);
+  font-size: 14px;
+}
+.ac-skeleton {
+  border-radius: 6px;
+  background: var(--afh-bg-warm, #f5ede0);
+  height: 14px;
+}
+.ac-consent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 16px 16px;
+}
+.ac-consent ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; font-size: 14px; }
+.ac-consent-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.ac-quote {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--afh-bg-warm, #f5ede0);
+  font-size: 14px;
+}
+.ac-ref {
+  font-family: var(--afh-font-mono, ui-monospace, monospace);
+  font-weight: 700;
+}
+
+/* Wider chat column: markers side by side */
+@container (min-width: 560px) {
+  .ac-markers { grid-template-columns: 1fr 1fr; }
+}
+.ac-wrap { container-type: inline-size; }
+
+/* ── Card built from the search result page (fil historique) ───────────── */
+.ac-embed {
+  border: 1px solid var(--afh-border, #e8dfd3);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--afh-bg, #fbf7f2);
+  color: var(--afh-text, #2c2018);
+  font-family: var(--afh-font-body, "Nunito Sans", system-ui, sans-serif);
+  container-type: inline-size;
+}
+.ac-embed .ea-inner { --afh-page-padding: 14px; padding-block: 14px 4px; }
+.ac-embed .afh-answer-page { display: flex; flex-direction: column; gap: 24px; }
+.ac-markers-tile { padding: 12px 0 0; }
+.ac-belief { margin-block: 12px; }
+.ac-link-btn {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 8px 16px;
+  border: 1px solid var(--accent); border-radius: var(--afh-radius-lg, 12px);
+  background: transparent; font: inherit; font-weight: 600; color: var(--afh-text); cursor: pointer;
+}
+.ac-link-btn:first-child { background: var(--accent-tint); }
+.ac-next-btn { font: inherit; text-align: left; cursor: pointer; width: 100%; }
+.ac-embed .ac-foot { margin: 0; padding: 12px 0 14px; border-top: 1px solid var(--afh-border); }

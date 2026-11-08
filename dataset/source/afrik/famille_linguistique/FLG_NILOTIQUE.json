@@ -358,25 +358,42 @@
   },
   "content": {
     "searchAnswer": {
-      "lead": "Des langues parlées le long du Nil et en Afrique de l'Est, au Soudan du Sud, au Kenya, en Ouganda et en Tanzanie. Le nom veut dire « du Nil » ; Lepsius l'emploie dès 1880.",
+      "lead": "Une cinquantaine de langues parlées le long du haut Nil et en Afrique de l'Est, comme le dinka, le luo ou le maasaï. Leur nom, tiré du Nil, est écrit dès 1850, d'abord pour d'autres langues.",
       "followUp": "Pourquoi a-t-on abandonné l'ancien nom « nilo-chamitique » ?"
     },
     "decolonialHeader": {
-      "whyProblematic": " 1. **Héritage colonial racial** : Carl Meinhof (vers 1912) a introduit le concept de « Nilo-Hamitic » en mélangeant critères linguistiques et suppositions raciales, suggérant que certains groupes nilotiques (Maasai, Tutsi) seraient « supérieurs » car « proches des Hamites ». Cette théorie est aujourd'hui largement rejetée par la linguistique moderne comme fondée sur des préjugés raciaux coloniaux. 2. **Défense de l'africanité** : Bernd Heine et Derek Nurse (2000) dans *African Languages: An Introduction* (Cambridge University Press) affirment que les traits dits « hamitiques » dans les langues nilotiques orientales (genre grammatical, emprunts lexicaux) sont des phénomènes de contact linguistique, non des preuves d'une origine mixte. Plusieurs linguistes africains contemporains (Gerrit Dimmendaal, Lionel Bender) insistent sur l'autonomie des langues nilotiques sans référence à des hypothétiques « éléments hamitiques ». 3. **Études génétiques modernes** :",
-      "selfAppellation": null,
-      "contemporaryUsage": " Les langues nilotiques constituent une sous-famille du groupe Eastern Sudanic dans le phylum Nilo-Saharien, divisée en trois branches : occidentale (Western Nilotic), orientale (Eastern Nilotic) et méridionale (Southern Nilotic). Classification moderne acceptée par la majorité des linguistes (Dimmendaal 1988, Greenberg 1963, Heine & Nurse 2000).",
-      "historicalAppellations": ["Nilotiques", "Nilo-chamitique"],
-      "originOfHistoricalTerm": " Le terme « Nilotic » dérive du latin *Niloticus*, issu du grec *Neilōtikós*, signifiant « relatif au Nil ». Usage linguistique : Karl Richard Lepsius (1880) a formalisé « Nilotic languages » comme branche dans sa *Nubische Grammatik mit einer Einleitung über die Völker und Sprachen Afrikas* (Berlin: Verlag von Wilhelm Hertz). Le terme « nilo-chamitique » a été introduit par Carl Meinhof (début XXᵉ siècle) dans le cadre de classifications raciales coloniales, affirmant que certaines langues nilotiques orientales et méridionales (Maasai, Turkana) seraient un mélange de traits nilotiques et « hamitiques/cushitiques ». Joseph Greenberg (1963) dans *The Languages of Africa* (Indiana University Press) a rejeté cette classification et a intégré les langues nilotiques dans le phylum Nilo-Saharien comme branche Eastern Sudanic."
+      "linkWithFamily": "Joseph Greenberg range les langues nilotiques dans la grande famille nilo-saharienne, comme un sous-groupe du soudanique oriental. Les éditeurs du catalogue Glottolog les traitent au contraire comme une famille à part : pour eux, aucun lien solide avec ces ensembles n'a encore été démontré. Les deux positions sont présentées dans l'histoire du nom.",
+      "historicalAppellations": [
+        "Nilotiques",
+        "Nilo-chamitique",
+        "Paranilotique"
+      ],
+      "originOfHistoricalTerm": "Le mot nilotique vient du nom du Nil et voulait d'abord dire « du Nil ». En 1850, le missionnaire Johann Ludwig Krapf parle d'une « famille nilotique », qu'il appelle aussi « nilo-hamitique », mais il y range d'autres langues, celles de la côte d'Afrique de l'Est comme le souahéli. En 1880, l'égyptologue allemand Richard Lepsius rapproche les langues des Dinka, des Shilluk et des Bari, qu'il décrit comme une série de langues parentes en remontant le Nil, sans leur donner de nom. En 1912, le linguiste Diedrich Westermann écrit que ces langues sont d'habitude appelées « Nilotic Languages ». Il les partage en deux groupes et nomme « nilo-hamitique » celui des langues qui ont un genre grammatical, comme le masai, le bari ou le nandi. Le linguiste A. N. Tucker les appelle ensuite paranilotiques. Joseph Greenberg réunit enfin toutes ces langues sous le seul nom de nilotique, en trois branches.",
+      "whyProblematic": "Le nom nilo-chamitique, aujourd'hui abandonné, repose sur une théorie raciale de l'époque coloniale. Cette théorie imaginait des « Hamites », des pasteurs venus d'ailleurs et jugés supérieurs, qui se seraient mêlés aux peuples noirs d'Afrique. En 1930, l'ethnologue britannique C. G. Seligman appelle « half-Hamites », c'est-à-dire « demi-Hamites », les Maasai, les Nandi et leurs voisins du Kenya, de l'Ouganda et du Tanganyika. Il les dit issus d'un tel mélange et affirme que leurs langues sont « of Hamitic type », c'est-à-dire « de type hamitique ». Joseph Greenberg, cité par P. Diagne, y voit une théorie raciale qui n'a jamais eu de preuve. Il rappelle aussi que Carl Meinhof avait rangé le masai parmi les langues dites chamitiques surtout parce qu'il a un genre grammatical. Pour l'historien J. E. G. Sutton, ces langues ont emprunté beaucoup de mots aux langues couchitiques, mais elles restent nilotiques.",
+      "selfAppellation": "Nilotique est un nom de savants : les sources que nous avons lues ne citent aucun peuple qui se donne ce nom. Chaque peuple nomme sa propre langue. Les Dinka appellent la leur Thuɔŋjäŋ ; les Nuer, qui se nomment Naath, appellent la leur Thok Naath ; les Shilluk appellent la leur Cøllø, selon l'équipe de recherche Nilotic@Edinburgh de l'université d'Édimbourg.",
+      "contemporaryUsage": "Aujourd'hui, le nom nilotique désigne un groupe de langues défini par la seule comparaison des langues, sans idée de lieu ni de race. Le catalogue Glottolog y compte 56 langues, en trois branches. Le nilotique occidental compte 22 langues, dont le dinka, le nuer, le shilluk, l'acholi et le luo. Le nilotique oriental en compte 18, dont le bari, le maasaï, le teso et le turkana. Le nilotique méridional en compte 16, dont les langues kalenjin et le datooga. Au Kenya, le recensement de 2019 compte environ 14,4 millions de personnes qui se disent luo, kalenjin, maasaï, turkana, teso, samburu ou ilchamus ; ce chiffre mesure une appartenance déclarée, pas le nombre de personnes qui parlent ces langues.",
+      "geographicArea": "Soudan du Sud, Soudan, Éthiopie, Ouganda, Kenya, Tanzanie, République démocratique du Congo",
+      "numberOfLanguages": 56,
+      "totalSpeakers": 30000000
     },
     "generalInfo": {
       "branches": [
+        "Nilotique occidental",
         "Nilotique oriental",
-        "Nilotique méridional",
-        "Nilotique occidental"
+        "Nilotique méridional"
       ],
-      "geographicArea": "Vallées du Nil supérieur (Bahr el-Ghazal, Nil Blanc), région du Sudd (marais du Soudan du Sud), Rift est-africain, bassin du lac Turkana, hauts plateaux du Kenya et de la Tanzanie",
-      "numberOfLanguages": 30,
-      "totalSpeakers": 30000000
+      "geographicArea": "Soudan du Sud, notamment le long du Nil Blanc, Soudan, Éthiopie, Ouganda, Kenya, nord de la Tanzanie, République démocratique du Congo",
+      "numberOfLanguages": 56,
+      "totalSpeakers": 30000000,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "Selon Glottolog, édition 5.3"
+        },
+        "totalSpeakers": {
+          "note": "Une estimation dont nous n'avons pas trouvé la source",
+          "unsourced": true
+        }
+      }
     },
     "associatedPeoples": [
       {
@@ -388,42 +405,99 @@
         "peopleId": "PPL_NUER"
       },
       {
-        "name": "Maasai",
-        "peopleId": "PPL_MAASAI"
+        "name": "Shilluk",
+        "peopleId": "PPL_SHILLUK"
+      },
+      {
+        "name": "Anuak",
+        "peopleId": "PPL_ANUAK"
+      },
+      {
+        "name": "Acholi",
+        "peopleId": "PPL_ACHOLI"
+      },
+      {
+        "name": "Langi",
+        "peopleId": "PPL_LANGI"
+      },
+      {
+        "name": "Alur",
+        "peopleId": "PPL_ALUR"
+      },
+      {
+        "name": "Jopadhola",
+        "peopleId": "PPL_JOPADHOLA"
+      },
+      {
+        "name": "Kumam",
+        "peopleId": "PPL_KUMAM"
       },
       {
         "name": "Luo",
         "peopleId": "PPL_LUO"
       },
       {
-        "name": "Kalenjin",
-        "peopleId": "PPL_KALENJIN"
+        "name": "Maban",
+        "peopleId": "PPL_MABAN"
+      },
+      {
+        "name": "Maasai",
+        "peopleId": "PPL_MAASAI"
+      },
+      {
+        "name": "Samburu",
+        "peopleId": "PPL_SAMBURU"
       },
       {
         "name": "Turkana",
         "peopleId": "PPL_TURKANA"
       },
       {
-        "name": "Shilluk",
-        "peopleId": "PPL_SHILLUK"
+        "name": "Iteso",
+        "peopleId": "PPL_ITESO"
       },
       {
-        "name": "Acholi",
-        "peopleId": "PPL_ACHOLI"
+        "name": "Karamojong",
+        "peopleId": "PPL_KARAMOJONG"
+      },
+      {
+        "name": "Jie",
+        "peopleId": "PPL_JIE"
+      },
+      {
+        "name": "Jiye",
+        "peopleId": "PPL_JIE_SUD"
+      },
+      {
+        "name": "Toposa",
+        "peopleId": "PPL_TOPOSA"
+      },
+      {
+        "name": "Kakwa",
+        "peopleId": "PPL_KAKWA"
+      },
+      {
+        "name": "Kalenjin",
+        "peopleId": "PPL_KALENJIN"
+      },
+      {
+        "name": "Datoga",
+        "peopleId": "PPL_DATOGA"
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " **Ordre des mots** : Les langues nilotiques occidentales tendent vers SVO (Sujet-Verbe-Objet), tandis que les orientales et méridionales préfèrent VSO (Verbe-Sujet-Objet). Exemples concrets :",
-      "phonologicalFeatures": " **Système tonal** : Les langues nilotiques sont typiquement tonales avec 2 à 5 tons (niveaux et contours).",
-      "relationsWithNeighbors": " **Emprunts lexicaux** :",
-      "keyInnovations": " 1. **Système nombre singulatif-collectif-pluriel** : Innovation particulièrement développée en Bari où la forme de base peut être plurielle, le singulier étant marqué par un singulatif. Exemple : *nyɔmɔt* (pluriel de base) → *nyɔmɔt-ti* (singulier), *nyɔmɔt-an* (collectif) 2. **Genre grammatical sur noms** : Innovation dans langues nilotiques orientales (Maasai, Bari) avec préfixes de genre (masculin/féminin), absent dans occidentales et méridionales. 3. **Voix symétriques** : Développement dans Dinka de voix « symétriques » (Voice Actor, Patient, Circumstantial) permettant des constructions actives/passives flexibles. Structure rare dans langues voisines. 4. **Morphologie verbale aspectuelle** : Distinction perfectif/imperfectif très développée, présente de manière stable dans plusieurs branches (Western, Eastern, Southern Nilotic). 5. **Phonation complexe** : Distinctions de phonation (voix soufflée, voix tendue) en Dinka combinées avec longueur vocalique triple, trait distinctif rare."
+      "typology": "L'ordre des mots change d'une langue à l'autre. Selon l'atlas des structures linguistiques WALS, le luo, l'acholi, le lango, le shilluk et le bari placent le plus souvent le sujet, puis le verbe, puis l'objet. Le maasaï, le turkana, le teso, le karamojong, le nandi, le pokot et le sebei commencent au contraire la phrase par le verbe, suivi du sujet puis de l'objet. Le même atlas ne trouve pas d'ordre dominant en dinka, en nuer et en anuak, et le päri place l'objet en tête, avant le verbe et le sujet.",
+      "phonologicalFeatures": "Les langues nilotiques décrites dans nos sources sont des langues à tons : la hauteur de la voix sur une syllabe change le sens du mot. Le WALS range le dinka parmi les langues aux tons complexes, et le luo, le lango, le maasaï et le nandi parmi celles aux tons simples. Le shilluk, décrit par l'équipe Nilotic@Edinburgh, distingue trois longueurs de voyelles et neuf catégories de tons. La qualité de la voix y aide aussi à distinguer deux séries de voyelles, prononcées la racine de la langue avancée ou reculée.",
+      "relationsWithNeighbors": "Les langues nilotiques ont longtemps côtoyé des langues d'autres familles. Selon J. E. G. Sutton, les langues des Itunga, qui vivent dans l'est de l'Ouganda et le nord-ouest du Kenya, ainsi que celles des Maasai, des Kalenjin et des Tatoga, ou Datoga, ont emprunté beaucoup de mots aux langues couchitiques, parlées avant elles dans le Rift du Kenya et du nord de la Tanzanie. Selon Christopher Ehret, le kikamba de Kitui, une langue bantoue du Kenya, garde un petit ensemble de mots venus du nilotique méridional. Au Soudan du Sud, environ 80 % des Atuot parlent à la fois le reel et le dinka, et le reel a emprunté une partie de son vocabulaire au dinka, selon l'équipe Nilotic@Edinburgh.",
+      "keyInnovations": "Plusieurs langues nilotiques de l'Est et du Sud, comme le masai, le bari, le turkana ou le nandi, ont un genre grammatical, selon Diedrich Westermann ; c'est ce trait qui l'avait conduit à les croire marquées par des langues dites hamitiques. D'autres n'en ont pas, comme le dinka selon Richard Lepsius ou le lango selon le WALS. En shilluk, le verbe porte des marques qui disent qui l'action met en avant, si celui qui parle a vu ce qu'il raconte au passé, et si le mouvement va vers lui ou s'en éloigne. Le nom y change aussi de forme quand un adjectif le complète, selon l'équipe Nilotic@Edinburgh."
     },
     "historyAndOrigins": {
-      "probableOrigin": " **Classification linguistique** : - **Karl Richard Lepsius** (1880) dans *Nubische Grammatik mit einer Einleitung über die Völker und Sprachen Afrikas* (Berlin) a été le premier à classifier les langues nilotiques comme groupe distinct dans les langues Eastern Sudanic. - **Oswin Köhler** (milieu XXᵉ siècle) a proposé la division en trois branches (Western, Eastern, Southern Nilotic). - **Joseph Greenberg** (1963) dans *The Languages of Africa* (Indiana University Press) a formalisé le phylum Nilo-Saharien incluant Nilotic comme branche Eastern Sudanic.",
-      "emergencePeriod": " **1. Émergence historique de la FLG** : Divergence du proto-Nilotique estimée linguistiquement il y a environ **3000-4000 ans** (fin du IIIᵉ millénaire - début du IIᵉ millénaire av. J.-C.). Coïncide avec expansion de l'agropastoralisme dans zones nilotiques, reconstruction proto-Nilotic par Dimmendaal (1988). Archéologiquement, sites comme Kadero (~3000-2500 av. J.-C.) montrent culture pastorale associée aux ancêtres des Nilotes. **2. Date de classification académique** :",
-      "diffusion": " **Théorie 1 - Expansion pastorale du Sud-Soudan** : Migration depuis région d'Equatoria/Soudan du Sud (Bahr el-Ghazal, Nil Blanc) vers l'est et le sud (Kenya, Tanzanie) pour branches orientale et méridionale. Expansion liée au pastoralisme, déplacements de troupeaux. Routes le long des affluents du Nil Blanc, corridors du Rift Est vers lacs Victoria et Turkana. **Théorie 2 - Migration depuis vallée du Nil** : Origine dans Moyen Nil (Soudan actuel), présence ancienne dans vallée du Nil et Wadi Howar (4000-6000 av. J.-C.), puis diffusion vers zones actuelles causée par aridification et pression démographique. Migrations multiples, non linéaires, avec échanges génétiques et culturels. **Théorie 3 - Foyer primordial Haut-Nil avec expansion tardive** : Établissement initial dans Haut-Nil (Soudan du Sud, région Sudd), expansion tardive via réseaux fluviaux vers Grands Lacs (Ouganda, Kenya, Tanzanie). Agrégation avec populations locales bantoues ou africaines de la périphérie. **Théorie 4 - Expansion depuis Corne de l'Afrique** : Certains chercheurs (minoritaires) suggèrent une origine plus orientale dans Corne de l'Afrique avec migration vers ouest, mais cette théorie est largement rejetée au profit de modèles centrés sur vallée du Nil.",
-      "contactZones": " **Géographie précise** :",
-      "majorEvents": " **Chronologie** :"
+      "probableOrigin": "Pour l'historien J. E. G. Sutton, la répartition des trois branches désigne les basses prairies et les rives du haut Nil, au Soudan du Sud, comme le premier foyer des peuples de langue nilotique. Il avance, comme une hypothèse, que l'adoption du bétail il y a environ trois mille ans aurait favorisé leurs expansions. Une étude génétique publiée en 2017 par Nina Hollfelder et ses collègues trouve chez quatre populations nilotiques du Soudan du Sud, dont les Dinka, les Nuer et les Shilluk, une longue continuité sur place et peu de mélanges venus d'ailleurs. Cette étude porte sur l'ascendance des populations, pas sur l'histoire des langues.",
+      "emergencePeriod": "Pour J. E. G. Sutton, la langue ancêtre commune des langues nilotiques s'est divisée il y a au moins deux mille ans, quelque part au Soudan du Sud, peut-être vers la frontière éthiopienne. Il précise que cette date ne peut pas être fixée avec précision. Selon lui, les écarts entre les trois branches sont profonds et anciens, plus que ceux qui séparent les langues bantoues. Le nom nilotique est écrit pour la première fois en 1850, et le groupe actuel est décrit par Diedrich Westermann en 1912, puis par Joseph Greenberg en 1963.",
+      "diffusion": "Selon J. E. G. Sutton, les Nilotes des hautes terres, c'est-à-dire la branche méridionale, représentée aujourd'hui par les Kalenjin et les Tatoga, ou Datoga, sont installés au Kenya depuis au moins mille ans. Christopher Ehret place les Kalenjin vers l'an 1000 entre le mont Elgon et le plateau d'Uasin Gishu, puis décrit leur avancée dans la vallée du Rift aux siècles suivants. Vers 1100, les Datoga, qu'il écrit Dadog, et les Ongamo, deux peuples nilotiques, s'étaient déjà étendus vers le sud jusqu'en Tanzanie. Les peuples de langue luo ont quitté leur premier foyer, sans doute au Soudan du Sud, et se sont dispersés vers le sud aux XIIIe et XIVe siècles, d'après leurs traditions orales rapportées par Bethwell A. Ogot. L'avancée des Maasai et des Itunga vers le Kenya et la Tanzanie date, selon Sutton, du dernier millénaire. Une étude d'ADN ancien publiée en 2019 par Mary Prendergast et ses collègues trouve, dans des sites pastoraux de l'âge du fer de la vallée du Rift au Kenya, une ascendance proche de celle des locuteurs nilotiques actuels ; les auteurs y voient un lien possible avec les ancêtres des Kalenjin ou des Maasai.",
+      "historicalBreaks": "La famille s'est divisée en trois branches, puis chaque branche en groupes plus petits à mesure que ses locuteurs se dispersaient. Chez les Luo, une étude de leurs dialectes situe la séparation entre le luo du Nord et celui du Centre et du Sud entre 670 et 1070, puis la séparation du Centre et du Sud entre 1170 et 1470 environ, selon Bethwell A. Ogot. Ogot rappelle que beaucoup de linguistes ne font plus confiance à cette méthode de datation. Chez les Kalenjin, l'expansion à travers le plateau et la vallée du Rift a renforcé, selon Christopher Ehret, les différences de parler et d'identité entre les régions.",
+      "contactZones": "Dans le Rift du Kenya et le nord de la Tanzanie, les peuples de langue nilotique ont absorbé ou remplacé des peuples de langue couchitique, selon J. E. G. Sutton et Christopher Ehret. Autour du mont Elgon, des Kalenjin ont absorbé leurs voisins bantous et adopté la culture de la banane, selon Ehret. Dans la région des Grands Lacs, des groupes luo se sont installés dans l'ancien royaume de Kitara, en Ouganda, parmi des peuples de langue bantoue, selon Bethwell A. Ogot. Au Soudan du Sud, le reel des Atuot côtoie le dinka.",
+      "majorEvents": "Selon Bethwell A. Ogot, des Luo prennent part à la fondation de nouveaux États après la chute de l'empire de Kitara, dans la région des Grands Lacs : les États luo et babito du Bunyoro-Kitara, du Kitagwenda et du Kiziba. Au Kiziba, un chasseur luo, Kibi, établit le pouvoir des Luo vers 1417-1444. Selon Nina Hollfelder et ses collègues, les populations nilotiques du Soudan du Sud ont gardé peu de traces des mélanges venus d'Eurasie qui ont touché le nord du Soudan, surtout après la conquête arabe. À l'époque coloniale, des savants européens ont classé ces langues et ces peuples selon des théories raciales, comme celle des « demi-Hamites » de C. G. Seligman en 1930."
     },
     "distribution": {
       "totalSpeakers": 30000000,
@@ -437,9 +511,10 @@
     "sources": [
       {
         "title": "Lepsius, Karl Richard (1880) – *Nubische Grammatik mit einer Einleitung über die Völker und Sprachen Afrikas*. Berlin: Verlag von Wilhelm Hertz",
-        "url": null,
+        "url": "https://archive.org/details/nubischegrammati00leps_0",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Berlin, Wilhelm Hertz, 1880. Lu dans la numérisation d'Internet Archive. Page LVI : l'auteur rapproche les langues « der Dinka, Silluk, Bongo, Bari und Oigob », qui « den Nil hinauf » montrent entre elles une parenté plus étroite ; il ne leur donne pas de nom. Page LVII : le dinka n'a pas de genre grammatical."
       },
       {
         "title": "Greenberg, Joseph H. (1963) – *The Languages of Africa*. Bloomington: Indiana University Press",
@@ -572,6 +647,97 @@
         "url": "https://www.ethnologue.com/language/ach",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Glottolog 5.3 — Western Nilotic (west2493)",
+        "url": "https://glottolog.org/resource/languoid/id/west2493",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, sous la direction de Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank. Lu en ligne le 3 novembre 2026 : 22 langues, dont le dinka, le nuer, le shilluk, l'anuak, le mabaan, l'acholi, le lango, l'alur, l'adhola et le luo. Les pages des langues donnent leurs pays : l'alur en Ouganda et en République démocratique du Congo, l'anuak et le nuer au Soudan du Sud et en Éthiopie, le burun du Nord au Soudan et au Soudan du Sud."
+      },
+      {
+        "title": "Glottolog 5.3 — Eastern Nilotic (east2418)",
+        "url": "https://glottolog.org/resource/languoid/id/east2418",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Lu en ligne le 3 novembre 2026 : 18 langues, dont le bari, le kakwa, le lotuko, le maasaï, le samburu, le teso, le karamojong, le toposa et le turkana. La page du maasaï le situe au Kenya et en Tanzanie."
+      },
+      {
+        "title": "Glottolog 5.3 — Southern Nilotic (sout2830)",
+        "url": "https://glottolog.org/resource/languoid/id/sout2830",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Lu en ligne le 3 novembre 2026 : 16 langues, dont les langues kalenjin (kipsigis, nandi, pökoot, sabaot et d'autres), le datooga et l'omotik. La page du datooga le situe en Tanzanie."
+      },
+      {
+        "title": "WALS Online — chapitre 81A : Order of Subject, Object and Verb",
+        "url": "https://wals.info/feature/81A",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Chapitre de Matthew S. Dryer, 2013, édition en ligne de 2020. Fiches des langues nilotiques lues le 3 novembre 2026 : sujet, verbe, objet pour le luo, l'acholi, le lango, le shilluk et le bari ; verbe, sujet, objet pour le maasaï, le turkana, le teso, le karamojong, le nandi, le pokot et le sebei ; pas d'ordre dominant pour le dinka, le nuer et l'anuak ; objet, verbe, sujet pour le päri."
+      },
+      {
+        "title": "WALS Online — chapitre 13A : Tone",
+        "url": "https://wals.info/feature/13A",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Chapitre d'Ian Maddieson, 2013, édition en ligne de 2020. Fiches lues le 3 novembre 2026 : système de tons complexe pour le dinka ; système simple pour le luo, le lango, le maasaï et le nandi. Le chapitre 31A donne aussi le lango comme langue sans genre grammatical."
+      },
+      {
+        "title": "Languages — Nilotic@Edinburgh",
+        "url": "https://blogs.ed.ac.uk/nilotic/?p=52",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Page de présentation d'une équipe de recherche de l'université d'Édimbourg sur les langues nilotiques occidentales, lue le 3 novembre 2026. Elle donne les noms que les locuteurs donnent à leurs langues (Thuɔŋjäŋ pour le dinka, Thok Naath pour le nuer, Cøllø pour le shilluk), décrit les tons, les longueurs de voyelles et la forme des verbes en shilluk, et indique qu'environ 80 % des Atuot parlent le reel et le dinka."
+      },
+      {
+        "title": "General History of Africa, II, ch. 23 : East Africa before the seventh century",
+        "url": "https://archive.org/details/unesco_general_history_africa_ii",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de J. E. G. Sutton, UNESCO, édition anglaise de 1981, lu dans l'exemplaire numérisé sur Internet Archive. P. 586-587 : les anciens « Nilo-Hamites », leurs emprunts aux langues couchitiques, le premier foyer probable dans le haut Nil, l'hypothèse du bétail adopté il y a environ trois mille ans, la division de la langue ancêtre il y a au moins deux mille ans et l'installation des Nilotes des hautes terres au Kenya depuis au moins mille ans. Note 12 : le sens d'abord géographique du mot. Note 13 : les noms de branches employés par l'auteur correspondent aux branches méridionale, occidentale et orientale de Greenberg."
+      },
+      {
+        "title": "General History of Africa, IV, ch. 19 : Between the coast and the great lakes",
+        "url": "https://archive.org/details/unesco_general_history_africa_iv",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de Christopher Ehret, UNESCO, édition anglaise de 1984, lu dans l'exemplaire numérisé sur Internet Archive. P. 481 et 487 : sociétés de langue nilotique dans l'intérieur du Kenya et de la Tanzanie ; l'expansion des Dadog et des Ongamo avant 1100. P. 482 : l'influence des Nilotes du Sud sur les classes d'âge des Pokomo avant 1600. P. 492-493 : les mots nilotiques du kikamba de Kitui, les Kalenjin vers l'an 1000 et leur expansion, et les Kalenjin du mont Elgon."
+      },
+      {
+        "title": "General History of Africa, IV, ch. 20 : The Great Lakes region",
+        "url": "https://archive.org/details/unesco_general_history_africa_iv",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de Bethwell A. Ogot, UNESCO, édition anglaise de 1984, lu dans l'exemplaire numérisé sur Internet Archive. P. 505 : la dispersion des peuples de langue luo depuis le Soudan du Sud, les dates tirées d'une étude de leurs dialectes, avec la réserve de l'auteur sur cette méthode, et les États luo et babito qui succèdent au royaume de Kitara. P. 508 : Kibi, chasseur luo, au Kiziba vers 1417-1444."
+      },
+      {
+        "title": "2019 Kenya Population and Housing Census, Volume IV: Distribution of Population by Socio-Economic Characteristics",
+        "url": "https://www.knbs.or.ke/?wpdmpro=2019-kenya-population-and-housing-census-volume-iv-distribution-of-population-by-socio-economic-characteristics",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Kenya National Bureau of Statistics, Nairobi, décembre 2019. Lu dans la copie du rapport publiée sur le portail de données openAFRICA. Tableau 2.31, p. 423-424, appartenance ethnique déclarée : Kalenjin 6 358 113, Luo 5 066 966, Maasai 1 189 522, Turkana 1 016 174, Teso 417 670, Samburu 333 471, Ilchamus 32 949, soit 14 414 865 personnes. Le recensement ne pose pas de question sur la langue parlée."
+      },
+      {
+        "title": "Ancient DNA reveals a multistep spread of the first herders into sub-Saharan Africa",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6827346/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Mary E. Prendergast, Mark Lipson, Elizabeth A. Sawchuk et d'autres, Science, 2019, 365(6448), eaaw6275. Article en accès libre, lu le 3 novembre 2026. Les individus des sites pastoraux de l'âge du fer de la vallée du Rift (environ 1 200 ans avant aujourd'hui) montrent une affinité avec les locuteurs nilotiques actuels ; les auteurs y voient un lien possible avec les ancêtres des Kalenjin ou des Maasai."
+      },
+      {
+        "title": "Northeast African genomic variation shaped by the continuity of indigenous groups and Eurasian migrations",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5587336/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Nina Hollfelder, Carina M. Schlebusch, Torsten Günther et d'autres, PLoS Genetics, 2017, e1006976. Article en accès libre, lu le 3 novembre 2026. Les populations nilotiques étudiées au Soudan du Sud montrent une longue continuité et peu de mélange venu d'Eurasie, contrairement aux populations du nord du Soudan."
+      },
+      {
+        "title": "Races of Africa",
+        "url": "https://archive.org/details/dli.ernet.277097",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "C. G. Seligman, Londres, Thornton Butterworth, 1930, première édition. Lu dans la numérisation de la Digital Library of India sur Internet Archive. Texte d'un ethnologue britannique, qui classe les peuples d'Afrique par « race ». P. 158 : les « Hamites » y sont décrits comme des pasteurs « caucasiens » venus par vagues et jugés supérieurs. P. 159-160 : les « half-Hamites », dont les Masai et les Nandi, y sont dits issus d'un mélange et parlant des langues « of Hamitic type »."
       }
     ]
   }

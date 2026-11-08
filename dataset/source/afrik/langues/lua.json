@@ -10,7 +10,7 @@
   "nameFr": "Tshiluba",
   "nameEn": "Luba-Lulua",
   "alternateNames": ["Ciluba", "Luba-Kasai", "Luba-Lulua"],
-  "whyProblematic": null,
+  "whyProblematic": "Les noms Baluba et Lulua ne sont pas, à l'origine, ceux que ces peuples se donnaient : ils leur ont été donnés de l'extérieur, et entre eux les gens se nommaient par leur clan, selon le missionnaire William M. Morrison en 1906. L'historien Thomas Turner montre que le nom Luba couvrait au XIXe siècle de nombreux peuples du Katanga et des Kasaï avant de se resserrer, et que l'identité lulua s'est formée avant 1895 avec un rôle important des explorateurs européens. La langue, elle, porte le nom que ses locuteurs lui donnent : cilubà.",
   "spellingAliases": ["CiLuba", "Bena-Lulua", "Western Luba", "Luva"],
   "familyId": "FLG_BANTU",
   "peoples": [
@@ -28,7 +28,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom tshiluba, ou ciluba, désigne la langue des Luba du Kasaï et des Lulua, au centre de la République démocratique du Congo, et c'est le nom que ses locuteurs lui donnent. On y retrouve le nom des Luba, précédé d'un préfixe, comme dans kiluba au Katanga. Les linguistes l'appellent aussi luba-lulua, d'après un nom donné par un missionnaire en 1906. Les sources que nous avons lues n'expliquent pas l'origine du nom Luba lui-même.",
+    "summary": "Le nom tshiluba, ou ciluba, désigne la langue des Luba du Kasaï et des Lulua, au centre de la République démocratique du Congo, et c'est le nom que ses locuteurs lui donnent. On y retrouve le nom des Luba, précédé d'un préfixe, comme dans kiluba au Katanga. Les linguistes l'appellent aussi luba-lulua, d'après un nom donné par un missionnaire en 1906, ou luba-kasaï. Une explication du nom Luba, rapportée par un missionnaire en 1913, est présentée plus bas.",
     "names": [
       {
         "nameText": "Tshiluba",
@@ -63,11 +63,33 @@
           },
           {
             "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "statement": "Le nom cilubà est celui que ses locuteurs donnent à la langue, que les linguistes appellent aussi lubà-kàsaì, selon le linguiste Crispin Maalu-Bungi, de l'Université de Kinshasa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Quand la pratique lexicographique se modernise en RD Congo. Note sur Nkòngamyakù Cilubà–Mfwàlànsa, dictionnaire bilingue de Ngo Semzara Kabuta",
+                "author": "Crispin Maalu-Bungi",
+                "year": 2011,
+                "url": "https://lexikos.journals.ac.za/pub/article/download/49/57",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lexikos, 21, 2011, p. 320-336, revue de lexicographie publiée à Stellenbosch (Afrique du Sud). L'auteur enseigne à l'Université de Kinshasa. Lu le 3 novembre 2026 en texte intégral.",
+                "page": "p. 321"
+              }
+            ]
+          },
+          {
+            "period": {
               "from": null,
               "to": null,
               "label": "Sens donné par les auteurs"
             },
-            "statement": "Le nom tshiluba est formé sur le nom des Luba, précédé d'un préfixe. En 1906, William M. Morrison écrit qu'on forme le nom d'une langue avec un préfixe, comme Buluba, « la langue des Baluba ». En 1908, au Katanga, J.-M. Jenniges note que ki- se prononce tshi- quand on va vers le nord : on dit tshi-tanda pour ki-tanda. Nous n'avons pas trouvé de source qui explique l'origine du nom Luba lui-même.",
+            "statement": "Le nom tshiluba est formé sur le nom des Luba, précédé d'un préfixe. En 1906, William M. Morrison écrit qu'on forme le nom d'une langue avec un préfixe, comme Buluba, « la langue des Baluba ». En 1908, au Katanga, J.-M. Jenniges note que ki- se prononce tshi- quand on va vers le nord : on dit tshi-tanda pour ki-tanda.",
             "aspect": "meaning",
             "sources": [
               {
@@ -94,6 +116,48 @@
           },
           {
             "period": {
+              "from": null,
+              "to": 1913,
+              "label": "Explication publiée en 1913"
+            },
+            "statement": "Le nom Luba serait, selon la tradition rapportée par le missionnaire Pierre Colle chez les Luba de l'est du Katanga, celui d'un grand chef ; Baluba voudrait donc dire « les gens de Luba ». Dans la langue courante, ajoute-t-il, luba veut dire « maladie, faute, erreur », d'où ku-luba, « errer, se tromper ». Les habitants appellent leur pays Buluba.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome I, Collection de monographies ethnographiques",
+                "author": "R. P. Colle, des Pères Blancs",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongobe01colluoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chapitre A, § 1, « Etymologie »",
+                "notes": "Bruxelles, Albert Dewit et Institut international de bibliographie, 1913, collection de monographies ethnographiques dirigée par Cyr. van Overbergh. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur était missionnaire catholique chez les Luba de l'est du Katanga."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1801,
+              "to": 1993,
+              "label": "Du XIXe siècle à 1993"
+            },
+            "statement": "Le nom Luba existe déjà au XIXe siècle, chez les premiers voyageurs venus de l'extérieur, mais il s'applique alors à de nombreux peuples du Katanga, du Maniema et des deux Kasaï, selon l'historien Thomas Turner. Son sens s'est ensuite resserré : en 1993, il ne désigne plus que les grands groupes appelés Luba-Shaba et Luba-Kasaï.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "« Batetela », « Baluba », « Basonge »: Ethnogenesis in Zaire",
+                "author": "Thomas Turner",
+                "year": 1993,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1993_num_33_132_1494",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Cahiers d'études africaines, 33 (132), 1993, p. 587-612. Lu le 3 novembre 2026 sur Persée, page par page.",
+                "page": "p. 608"
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1906,
               "to": 1906,
               "label": "1906"
@@ -112,6 +176,50 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. v",
                 "notes": "New York, American Tract Society, 1906, pour la mission presbytérienne américaine de Luebo. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1974,
+              "to": 1974,
+              "label": "1974"
+            },
+            "era": "modern",
+            "statement": "Le nom tshiluba s'écrit ciluba depuis l'orthographe recommandée en 1974 par le premier séminaire national des linguistes du Zaïre : la lettre c y remplace tsh, selon Crispin Maalu-Bungi.",
+            "formAsWritten": "cilubà",
+            "sources": [
+              {
+                "title": "Quand la pratique lexicographique se modernise en RD Congo. Note sur Nkòngamyakù Cilubà–Mfwàlànsa, dictionnaire bilingue de Ngo Semzara Kabuta",
+                "author": "Crispin Maalu-Bungi",
+                "year": 2011,
+                "url": "https://lexikos.journals.ac.za/pub/article/download/49/57",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lexikos, 21, 2011, p. 320-336, revue de lexicographie publiée à Stellenbosch (Afrique du Sud). L'auteur enseigne à l'Université de Kinshasa. Lu le 3 novembre 2026 en texte intégral.",
+                "page": "p. 323"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "1929"
+            },
+            "era": "colonial",
+            "statement": "Le nom tshiluba figure parmi les quatre langues que le gouvernement colonial belge fait enseigner dans les écoles primaires, avec le swahili, le kikongo et le lingala, selon Jacques Leclerc, qui note qu'on l'écrivait généralement ciluba.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "République démocratique du Congo (ex-Zaïre), L'aménagement linguistique dans le monde",
+                "author": "Jacques Leclerc",
+                "year": 2026,
+                "url": "https://www.axl.cefan.ulaval.ca/afrique/czaire.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Site de la Chaire pour le développement de la recherche sur la culture d'expression française en Amérique du Nord (CEFAN), Université Laval, Québec ; page lue le 3 novembre 2026. Les chiffres de locuteurs qu'elle donne ne sont pas datés.",
+                "page": "section sur l'époque coloniale"
               }
             ]
           }
@@ -204,6 +312,49 @@
                 "notes": "New York, American Tract Society, 1906, pour la mission presbytérienne américaine de Luebo. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1895,
+              "label": "Des années 1880 à 1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lulua est devenu le nom d'un peuple distinct des Luba pendant ce que les cartes appelaient le « Royaume de l'amitié », avant 1895, selon Thomas Turner. Il souligne le rôle des Européens dans cette séparation : le premier chef Kalamba avait servi les explorateurs allemands Paul Pogge et Hermann von Wissmann.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "« Batetela », « Baluba », « Basonge »: Ethnogenesis in Zaire",
+                "author": "Thomas Turner",
+                "year": 1993,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1993_num_33_132_1494",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Cahiers d'études africaines, 33 (132), 1993, p. 587-612. Lu le 3 novembre 2026 sur Persée, page par page.",
+                "page": "p. 592 et p. 608"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1913,
+              "label": "Explication publiée en 1913"
+            },
+            "statement": "Le nom Lulua est celui d'une rivière, la Luluwa ou Lulua ; le missionnaire Pierre Colle se demande si Luba n'est pas le même mot que Luwa ou Lua, qui a donné son nom à cette rivière, lu- venant selon lui de lui, « rivière ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome I, Collection de monographies ethnographiques",
+                "author": "R. P. Colle, des Pères Blancs",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongobe01colluoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chapitre A, § 1, « Etymologie »",
+                "notes": "Bruxelles, Albert Dewit et Institut international de bibliographie, 1913, collection de monographies ethnographiques dirigée par Cyr. van Overbergh. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur était missionnaire catholique chez les Luba de l'est du Katanga."
+              }
+            ]
           }
         ]
       }
@@ -211,20 +362,94 @@
   },
   "content": {
     "vehicularRole": "regional_lingua_franca",
-    "dialects": [],
+    "dialects": [
+      "Cyena kanàngà (cyena luluwà, bupèmbà)",
+      "Cyena mbùji-mâyi (bulubà)"
+    ],
     "vitalityStatus": {
       "status": "Wider communication",
       "scale": "EGIDS (Ethnologue)",
       "asOf": 2025
     },
+    "originDebated": false,
     "sources": [
       {
         "title": "Glottolog 5.3 — Luba-Lulua (luba1249)",
         "url": "https://glottolog.org/resource/languoid/id/luba1249",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Notice directe pour le code ISO 639-3 lua et le glottocode luba1249. Elle documente Tshiluba, Ciluba, Luba-Kasai et Luba-Lulua comme formes de nom, ainsi que le statut EGIDS 3 en 2025 et le statut légal de langue d'identité nationale en RDC. Les liens aux peuples sont limités aux correspondances de code documentées pour la RDC."
+        "notes": "Notice directe pour le code ISO 639-3 lua et le glottocode luba1249, lue le 11 octobre 2026 et relue le 3 novembre 2026. Elle donne les noms Tshiluba, Ciluba, Luba-Kasai et Luba-Lulua, reprend d'Ethnologue (2025) le niveau 3 de l'échelle EGIDS, langue de communication élargie, et le statut de langue d'identité nationale fixé par la Constitution de 2006. Elle distingue deux variétés, Baluba et Bena Lulua."
+      },
+      {
+        "title": "Morrison, William M., Grammar and Dictionary of the Buluba-Lulua Language as spoken in the Upper Kasai and Congo Basin, New York, American Tract Society, 1906",
+        "url": "https://archive.org/details/grammaranddicti01missgoog",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Écrit pour la mission presbytérienne américaine de Luebo, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. La préface dit que la langue des Baluba et des Lulua sert de langue de commerce dans une grande partie du haut Kasaï, et que ces deux noms leur ont été donnés de l'extérieur."
+      },
+      {
+        "title": "Maalu-Bungi, Crispin, « Quand la pratique lexicographique se modernise en RD Congo », Lexikos, 21, 2011, p. 320-336",
+        "url": "https://lexikos.journals.ac.za/pub/article/download/49/57",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 en texte intégral : cilubà comme nom que lui donnent ses locuteurs, l'orthographe de 1974 qui écrit c au lieu de tsh, et les deux variétés de Mbuji-Mayi et de Kananga."
+      },
+      {
+        "title": "Turner, Thomas, « \"Batetela\", \"Baluba\", \"Basonge\": Ethnogenesis in Zaire », Cahiers d'études africaines, 33 (132), 1993, p. 587-612",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1993_num_33_132_1494",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 sur Persée : le nom Luba, attesté au XIXe siècle pour de nombreux peuples puis restreint aux Luba-Shaba et aux Luba-Kasaï, et l'identité lulua formée avant 1895."
+      },
+      {
+        "title": "Colle, Pierre, Les Baluba (Congo belge), tome I, Bruxelles, 1913",
+        "url": "https://archive.org/details/lesbalubacongobe01colluoft",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Monographie ethnographique d'un missionnaire des Pères Blancs, lue le 3 novembre 2026 dans la numérisation d'Internet Archive. Son chapitre sur l'étymologie rapporte que Luba serait le nom d'un grand chef selon la tradition."
+      },
+      {
+        "title": "Leclerc, Jacques, « République démocratique du Congo (ex-Zaïre) », L'aménagement linguistique dans le monde, Université Laval",
+        "url": "https://www.axl.cefan.ulaval.ca/afrique/czaire.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Page lue le 3 novembre 2026. Elle compte environ 6,3 millions de locuteurs du tshiluba dans les deux Kasaï et le nord du Katanga, sans dater ce chiffre, et rappelle les quatre langues enseignées à l'école dès 1929."
+      },
+      {
+        "title": "Constitution de la République démocratique du Congo, 18 février 2006, article 1",
+        "url": "https://mjp.univ-perp.fr/constit/cd2006.htm",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte consulté sur la Digithèque de la Faculté de droit de Perpignan. L'article 1 fixe le français comme langue officielle et le kikongo, le lingala, le swahili et le tshiluba comme langues nationales."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers",
+        "reason": "Nous n'avons pas trouvé de chiffre récent et daté du nombre de personnes qui parlent le tshiluba. La République démocratique du Congo n'a pas publié de recensement des langues que nous ayons pu lire."
+      },
+      {
+        "field": "nameHistory.names[0]",
+        "reason": "Le missionnaire Pierre Colle est le seul auteur que nous avons lu qui propose une explication du nom Luba. Les travaux d'historiens qui en parlent peut-être, comme ceux de Thomas Reefe ou de Mabika Kalanda, n'étaient pas consultables en ligne."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Une langue bantoue du Kasaï, au centre de la RD Congo, l'une des quatre langues nationales du pays ; ses locuteurs l'appellent cilubà.",
+      "followUp": "Pourquoi dit-on tshiluba au Kasaï et kiluba au Katanga ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "COD",
+          "speakers": 6300000,
+          "source": {
+            "title": "Leclerc, Jacques, « République démocratique du Congo (ex-Zaïre) », L'aménagement linguistique dans le monde, Université Laval",
+            "url": "https://www.axl.cefan.ulaval.ca/afrique/czaire.htm",
+            "tier": "referenced",
+            "notes": "« Quelque 6,3 millions de locuteurs » dans les deux Kasaï et le nord du Katanga. La page ne date pas ce chiffre et ne dit pas d'où il vient. Ordre de grandeur, ni recensement ni comptage."
+          }
+        }
+      ]
+    }
   }
 }

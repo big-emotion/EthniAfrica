@@ -171,7 +171,7 @@ describe("atlas through time — Central, East and Southern Africa", () => {
   // @req REQ-148
   it("adds Loango to Congo, Gaza to Mozambique, and extends Maravi", () => {
     expect(kingdom("COG", /Loango/).politicalCenters).toContain(
-      "Loango (cour royale)"
+      "Mbanza Loango (capitale)"
     );
     expect(kingdom("MOZ", /Gaza/).timeRange.endYear).toBe(1895);
     expect(kingdom("MWI", /Maravi/).timeRange.endYear).toBe(1800);

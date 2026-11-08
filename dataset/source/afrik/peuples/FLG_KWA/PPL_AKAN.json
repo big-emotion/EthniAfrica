@@ -8,96 +8,98 @@
     "appellations": {
       "mainName": "Akan",
       "selfAppellation": "Akan",
-      "exonyms": [
-        "Coromantee (terme utilise par les colonisateurs britanniques pour les captifs akan d'Amerique)",
-        "Twi (designation parfois utilisee pour l'ensemble akan)"
-      ],
-      "originOfExonyms": "Le terme Coromantee, repandu en Jamaique et dans les colonies britanniques d'Amerique, designait les esclaves akan embarques sur la cote de l'Or (Gold Coast). Les zones habitees par les Akan apparaissent sur la carte neerlandaise de 1629 sous le nom Akani.",
-      "whyProblematic": "La denomination Akan recouvre un groupe metaethnique constitue de nombreux sous-groupes (Ashanti, Fanti, Baoul, etc.) partageant une structure linguistique et culturelle commune mais conservant des identites distinctes. Le terme fut parfois applique de facon trop extensive ou au contraire restreinte selon les sources coloniales ou academiques.",
-      "contemporaryUsage": "Le terme Akan est aujourd'hui largement accepte comme categorie metaethnique regroupant les peuples Kwa du Ghana meridional et de la Cote d'Ivoire. Les sous-groupes (Ashanti, Fanti, Baoul, Akuapem, etc.) maintiennent leurs identites propres.",
+      "exonyms": ["Coromantee", "Twi"],
+      "spellingAliases": ["Akans"],
+      "originOfExonyms": "Le nom Coromantee viendrait de Koromantyn, l'un des premiers comptoirs anglais de la Côte de l'Or, situé dans le royaume fante, selon Bryan Edwards, un colon britannique de la Jamaïque, en 1793. Dans les Antilles britanniques, ce nom désignait la plupart des captifs achetés sur cette côte. Le nom Twi désigne la langue : le missionnaire Johann Gottlieb Christaller l'emploie dans le titre de son dictionnaire de l'asante et du fante, publié à Bâle en 1881.",
+      "whyProblematic": "Le nom Akan regroupe des peuples qui gardent chacun leur nom et leur histoire, comme les Asante, les Fante ou les Akyem au Ghana, et les Abron, les Agni ou les Baoulé en Côte d'Ivoire. Les auteurs ne tracent pas tous la même limite : en 1881, Christaller réserve le nom aux habitants de l'Akyem, de l'Akwamu, de l'Akuapem, de l'Assin et de l'Asante, et les distingue des Fante, alors que Rattray, en 1929, rapporte que Fante et Asante passent pour appartenir à une même souche.",
+      "contemporaryUsage": "Le nom Akan est aujourd'hui une catégorie des recensements. Au Ghana, celui de 2010 en fait le premier groupe ethnique du pays, avec 47,5 % des Ghanéens de naissance. En Côte d'Ivoire, l'Agence nationale de la statistique compte les Akan parmi les cinq grands groupes ethniques du recensement de 2021. Le catalogue Glottolog donne aussi ce nom à une langue, dont le twi et le fante sont des variétés.",
       "linguisticFamily": "FLG_NIGERCONGO",
-      "ethnoLinguisticGroup": "Kwa (branche Tano central)",
-      "historicalRegion": "Ghana meridional (ancienne Gold Coast) et Cote d'Ivoire orientale ; forets et zones de transition foret-savane",
+      "ethnoLinguisticGroup": "Kwa, groupe tano central (langues akaniques)",
+      "historicalRegion": "Sud du Ghana, l'ancienne Côte de l'Or, et Côte d'Ivoire",
       "currentCountries": ["GHA", "CIV"]
     },
     "ethnicities": [
-      "Ashanti (Asante) — centre du Ghana, Kumasi, empire hegemonique 18e-19e siecle",
-      "Fanti (Fante) — cote du Ghana central, confederation 18e siecle",
-      "Akuapem — region de l'Est du Ghana",
-      "Akyem — region de l'Est du Ghana",
-      "Brong (Bono) — nord du Ghana, sous-groupe fondateur",
-      "Nzema — sud-ouest du Ghana et Cote d'Ivoire",
-      "Wassa — Ghana meridional",
-      "Denkyira — Ghana central, puissance precedant l'Ashanti",
-      "Akwamu — Ghana de l'Est, expansion 17e siecle",
-      "Sefwi — Ghana occidental",
-      "Kwahu — region de l'Est du Ghana",
-      "Baoul (Baoule) — centre et est de la Cote d'Ivoire",
-      "Anyi (Agni) — Cote d'Ivoire de l'Est et Ghana occidental",
-      "Sanwi — Cote d'Ivoire (region de Krinjabo)"
+      "Asante (Ashanti) — centre du Ghana, autour de Kumasi",
+      "Fante — côte du centre du Ghana",
+      "Akyem",
+      "Akuapem",
+      "Akwamu",
+      "Assin",
+      "Denkyira — royaume dont Kumasi dépendait avant Osei Tutu, selon la tradition recueillie par Rattray",
+      "Bono (Brong) — nord du pays asante, autour de Tekiman",
+      "Abron — Côte d'Ivoire",
+      "Agni — Côte d'Ivoire",
+      "Baoulé — Côte d'Ivoire"
     ],
     "origins": {
-      "ancientOrigins": "Les Akan font partie du groupe kwa de la famille Niger-Congo. Les forêts du Ghana actuel portent un horizon archéologique ancien, le complexe de Kintampo, marqué par la sédentarisation, l'agriculture et l'usage du fer ; rattacher cet horizon à un peuple d'aujourd'hui est une inférence qu'aucun travail cité ici ne porte. Les traditions orales situent les origines dans la zone de transition entre forêt et savane, et nomment des sites fondateurs : Adansemanso, Asantemanso et Bonoso. Les datations proposées pour ces sites varient selon les fouilles et ne sont pas reprises ici faute d'une source qui les porte.",
-      "formationPeriod": "Les premiers royaumes akan structures (Bono Manso, Begho) emergent entre le 11e et le 13e siecle, integres dans les reseaux d'echange transsahariens via le commerce de l'or. L'identite akan distincte s'est consolidee entre le 13e et le 17e siecle avec la formation successive des Etats d'Adanse, d'Akwamu, de Denkyira et enfin de l'empire ashanti (1701). En Cote d'Ivoire, les migrations baoul post-1701 ont introduit la culture akan dans le centre du pays.",
+      "ancientOrigins": "Les Asante et les Fante passent généralement pour être venus d'un même centre, dans le nord du pays asante, près de Tekiman, où vivent encore les Bono, selon l'anthropologue colonial Robert Sutherland Rattray en 1929. Rattray note pourtant que les Bono ignorent les noms des clans asante et fante, et il avance deux hypothèses sans trancher. Les traditions des clans ont aussi leurs propres récits d'origine : à Asantemanso, une vieille reine mère lui a raconté que les premiers ancêtres de son clan étaient sortis de terre à cet endroit, une nuit de lundi, à la suite d'un ver.",
+      "formationPeriod": "Le royaume asante se forme autour de Kumasi sous Osei Tutu, à une époque où Kumasi dépendait du royaume de Denkyira, selon le récit qu'un vieil Asante de la classe dirigeante, descendant d'un roi, a confié à Rattray en 1921. Osei Tutu serait le quatrième roi de Kumasi, après Kwabia Amanfi, Oti Akenten et Obiri Yeboa ; Rattray rapporte que l'historien Reindorf date son règne de 1700 à 1730.",
       "migrationRoutes": [
-        "Migrations des populations fondatrices depuis la zone de transition foret-savane du Ghana septentrional vers le sud au 13e siecle",
-        "Expansion ashanti depuis Kumasi vers l'ensemble du Ghana meridional et les regions voisines (18e-19e siecles)",
-        "Migration baoul de la Gold Coast vers la Cote d'Ivoire apres la mort d'Osei Tutu (post-1717) : deux vagues successives depuis Denkyira (~1701) et Kumasi"
+        "Départ des ancêtres des Asante et des Fante d'un centre commun proche de Tekiman, vers le sud, selon une opinion répandue que rapporte Rattray en 1929"
       ],
       "historicalSettlementZones": [
-        "Ghana meridional — regions Ashanti, Centrale, Occidentale, Orientale, Brong-Ahafo",
-        "Cote d'Ivoire — regions du centre et de l'est (Baoul, Anyi)",
-        "Diaspora historique aux Ameriques — Jamaique (Marrons), Suriname, Guyane"
+        "Ghana — régions Ashanti, Occidentale, Centrale, du Grand Accra, Brong-Ahafo et Orientale, où le recensement de 2010 compte le plus d'Akan",
+        "Côte d'Ivoire — pays des Abron, des Agni et des Baoulé",
+        "Antilles britanniques, dont la Jamaïque — captifs de la Côte de l'Or déportés pendant la traite atlantique, selon Bryan Edwards"
       ],
-      "unificationsOrDivisions": "Les Akan sont organises en royaumes distincts (oman, pluriel aman) partageant la structure matrilineaire et le systeme des huit clans. L'Empire ashanti (1701-1901) constitue la plus grande unification politique akan, sous l'autorite de l'Asantehene. La Confederation fanti s'est constituee au 18e siecle en reponse a la menace ashanti. En Cote d'Ivoire, le royaume Sanwi de Krinjabo tenta de faire secession en 1969. L'identite akan globale coexiste avec des identites sous-groupales fortes.",
-      "externalInfluences": "Commerce de l'or avec les marchands mande et haoussa medievaux. Contacts avec les Portugais sur la cote depuis 1471. Commerce europeen intensifie aux 17e-18e siecles (armes a feu). Traite transatlantique d'esclaves : environ 10 % des embarquements d'Afrique occidentale. Guerres anglo-ashanti (1824, 1826, 1874, 1900). Colonisation britannique du Ghana (1901). Colonisation francaise de la Cote d'Ivoire.",
-      "majorHistoricalEvents": "Fondation de l'empire ashanti sous Osei Tutu et Okomfo Anokye (1701), avec le Tabouret d'Or comme symbole d'unite nationale. Defaite de Denkyira a Feyiase (1701). Guerres contre les Britanniques : bataille de Nsamankow (1824), bataille de Katamanso (1826), invasion de Kumasi (1874), Guerre du Tabouret d'Or et resistance de Yaa Asantewaa (1900). Incorporation de l'Ashanti dans la colonie britannique (1901). Independance du Ghana (1957) sous Kwame Nkrumah (Akan). Independance de la Cote d'Ivoire (1960) sous Felix Houphouet-Boigny (Baoul)."
+      "unificationsOrDivisions": "Dans le pays asante, la famille s'est élargie en clan, et le clan en peuple, jusqu'à former un royaume dont le centre reste la maison royale, selon Rattray en 1929. Les Akan ne forment pas un seul État : au XVIIIe siècle, Bryan Edwards distingue sur la côte de petits États souvent en guerre entre eux, comme celui des Fante, et à l'intérieur trois grands royaumes, qu'il écrit Assiantee, Akim et Aquambou.",
+      "externalInfluences": "La traite atlantique a profondément marqué les pays akan : selon Bryan Edwards en 1793, les trois grands royaumes de l'intérieur fournissaient aux États de la côte un grand nombre de captifs, que ceux-ci vendaient aux Européens. Au XIXe siècle, des missionnaires de Bâle ont étudié la langue : Christaller publie en 1879 un recueil de proverbes, puis en 1881 un dictionnaire de l'asante et du fante.",
+      "majorHistoricalEvents": "Le Tabouret d'or, symbole du royaume asante, a entraîné le gouvernement britannique dans deux guerres coûteuses, selon Rattray. Caché depuis le soulèvement asante de 1896, il est retrouvé en 1921 dépouillé de ses ornements d'or, ce qui plonge tout le pays asante dans un deuil national. Yaa Asantewaa, que Rattray écrit Ya Santewa, reine mère d'Ejisu, exilée avec le roi Prempeh, figure parmi les quatre reines mères asante qui ont accompagné une armée à la guerre, selon Rattray."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Les Akan sont organises en Etats (oman) diriges par un chef (ohene ou omanhene). Les grandes confederations (Ashanti, Fanti, Akyem, Akwapim) regroupent plusieurs Etats. L'Asantehene est l'autorite supreme de la confederation ashanti. Chaque paramountcie est divisee en cinq sous-chefferies correspondant aux fonctions militaires (avant-garde, flanc gauche, flanc droit, corps principal, arriere-garde). Le systeme est fonde sur la consultation et le consensus via des conseils d'anciens.",
-      "clanOrganization": "La societe akan est organisee en huit clans matrilineaires (abusua) : Oyoko, Bretuo, Agona, Asona, Asenie, Aduana, Ekuona, Asakyiri. Chaque Akan appartient au clan de sa mere. L'appartenance clanique determine les droits successoraux, les alliances matrimoniales et l'acces aux titres politiques. La reine-mere (ohemaa) joue un role essentiel dans la nomination des chefs et la transmission du clan.",
+      "traditionalPoliticalSystem": "Chaque division du pays asante est dirigée par un chef, entouré d'anciens qui portent des titres militaires, selon Rattray en 1929 : le benkum hene et le nifa hene conduisent l'aile gauche et l'aile droite de l'armée, l'adonten hene le corps principal et le kyidom hene l'arrière-garde. Au sommet se trouve l'Asante hene, le roi de Kumasi. La reine mère est la femme la plus âgée du clan régnant ; son siège est l'aîné des deux sièges du pouvoir, selon les vieilles femmes asante qu'a interrogées Rattray. Autrefois, c'est elle qui avait le plus à dire dans le choix du chef, et nul ne pouvait monter sur le siège contre son veto, selon Rattray en 1923.",
+      "clanOrganization": "La société asante est divisée en clans, appelés abusua. On appartient au clan de sa mère, et deux personnes du même clan ne peuvent pas se marier, selon Rattray en 1923 ; un proverbe dit « Abusua bako mogya bako », « un clan, un sang ». Les listes de clans varient selon les auteurs. Rattray en compte huit : Aduana, Agona, Asinie, Asokore, Asona, Beretuo, Ekuana et Oyoko. L'historien Reindorf en donne sept, et Sarbah, auteur d'un ouvrage sur le droit coutumier fante, donne une autre liste pour les Fante. Rattray observe aussi que les Bono de Tekiman ignorent ces noms de clans et se répartissent plutôt par rue ou par quartier.",
       "ageClassSystems": null,
-      "roleOfLineages": "Le lignage matrilineaire (abusua) determine l'identite, l'heritage foncier et l'acces au pouvoir politique (mogya, le sang transmis par la mere). En parallele, le lignage paternel (ntoro, 12 groupes spirituels) transmet le nom, les tabous et certains rituels. L'Abusuapanyin (doyen de famille) gere les affaires du lignage. Le systeme Gyaase organise les branches candidates aux titres.",
-      "religiousAuthority": "Autorite des pretres traditionnels (okomfo) servant les divinites (abosom). La reine-mere (ohemaa) joue un role dans les ceremonies religieuses royales. Influence croissante du christianisme depuis le 19e siecle, genrant un syncretisme repandu. Les cultes des ancetres sont geres par les lineages."
+      "roleOfLineages": "Le clan de la mère, transmis par le sang (mogya), décide de l'héritage des biens et des sièges de chef. Le père transmet un autre élément, le ntoro, que Rattray traduit par « esprit » : les personnes du même ntoro ne peuvent pas non plus se marier entre elles, selon ses observations publiées en 1923. Le ntoro joue un rôle social moins important que le clan.",
+      "religiousAuthority": "Les chefs honorent leurs ancêtres lors des cérémonies de l'Adae, au cours desquelles on appelle les esprits des anciens chefs du clan et on leur fait des offrandes, selon Rattray en 1923. Le titre okomfo désigne le prêtre ; la tradition du Tabouret d'or donne un rôle central au prêtre Okomfo Anotchi, selon la graphie de Rattray."
     },
     "languages": {
-      "mainLanguage": "Akan (Twi-Fante)",
+      "mainLanguage": "Akan (aka)",
       "isoCodes": ["aka", "twi", "fat"],
       "dialects": [
-        "Asante Twi — dialecte de Kumasi et de la region Ashanti, variete de prestige",
-        "Akuapem Twi — dialecte historiquement utilise pour la traduction de la Bible, premiere variete litteraire",
-        "Fante (Fanti) — dialecte cotier du Ghana central, avec sous-varietes Agona, Gomua, Abura, Anomabu",
-        "Brong (Bono) — dialecte du nord du Ghana, egalement parle en Cote d'Ivoire",
-        "Wassa — varietes Amenfi et Fianse du Ghana meridional"
+        "Twi, qui comprend l'asante et l'akuapem",
+        "Fante",
+        "Agona",
+        "Ahafo",
+        "Akyem Bosome",
+        "Asen",
+        "Dankyira",
+        "Kwawu"
       ],
-      "vehicularRole": "L'akan est la langue la plus parlee du Ghana : environ 80 % de la population ghanenne le parle comme premiere ou deuxieme langue, et 44 % sont locuteurs natifs. Il est langue nationale officielle au Ghana. Le dialecte bono est parle en Cote d'Ivoire. Avec la traite atlantique, l'akan a influence le ndyuka en Suriname et le creole maroon en Jamaique (Coromantee). L'Akan Orthography Committee (AOC) a developpe en 1978 une orthographe commune basee principalement sur l'akuapem."
+      "vehicularRole": null
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q415693",
+      "glottocode": "akan1250",
+      "iso639_3": "aka"
     },
     "culture": {
-      "majorRites": "La ceremonie Outdooring (ponkyerene) marque la naissance : l'enfant est presente publiquement et nomme huit jours apres sa naissance. Le mariage traditionnel akan implique le paiement d'une dot (aseda) et des ceremonies familiales. Les funerailles (ayie) sont des evenements sociaux majeurs impliquant plusieurs jours de ceremonies, de danses, de musique et d'offrandes aux ancetres. Le festival Odwira (purification annuelle) est celebre dans les etats ashanti. L'initiation a l'age adulte est marquee differemment selon les groupes. La circumcision n'est pas universelle mais pratiquee par certains groupes.",
-      "symbols": "Le Tabouret d'Or (Sika Dwa Kofi) est le symbole supreme de l'unite ashanti et de l'ame collective du peuple. Les symboles Adinkra — plus de 50 pictogrammes ideographiques — representent des concepts philosophiques et moraux akan. Les poids en or (abramuo) a effigie servaient a mesurer la poudre d'or et constituent une tradition artistique distinctive. Le tissu kente (nwentoma), tisse a la main sur de petits metiers, est le symbole le plus visible de la culture akan, associe a la royaute et au prestige. Les masques bo nun amuin (elephant, dieu de la foret) sont utilises dans les ceremonies.",
-      "artsAndMusic": "Les artisans akan travaillent l'or, le bronze et le laiton par la fonte à la cire perdue. Ils réalisent des bijoux royaux, des poids pour peser l'or et des statues. La poterie est traditionnellement pratiquée par les femmes, et le tissage, notamment celui du kente, par les hommes. La sculpture sur bois sert à créer des tabourets associés à l'âme, des poupées akua'ba liées à la fertilité et des objets du pouvoir royal. La musique comprend les tambours parlants fontomfrom et atumpan, les cuivres royaux mmenson et les chants de cérémonie. L'adowa accompagne notamment les funérailles ashanti ; le kete est une danse royale, et les asafo sont des danses de guerre fanti. Les anansesem, contes d'Ananse l'araignée, tiennent une place importante dans la littérature orale. Les proverbes akan sont appelés mmebusem. Dès 1879, le linguiste missionnaire Johann Gottlieb Christaller en a réuni plus de 3 600 en twi et en fante. L'usage des proverbes est partagé par les groupes de langue akan.",
-      "spiritualities": "La cosmologie akan reconnait un dieu supreme Nyame (Onyame, Onyankopon — le Grand Nyame) createu omniscient, inaccessible directement. Il est servi par des divinites intermediaires (abosom) liees aux elements naturels (rivieres, ocean, arbres). Les ancetres (nananom) sont veneres par les lignages et sollicites pour leur protection. La conception de la personne comprend le kra (ame individuelle, don de Nyame), le sunsum (esprit qui interagit avec le monde) et le mogya (sang matrilineaire). Le christianisme est majoritaire aujourd'hui, s'integrant dans un syncretisme aktif avec les croyances traditionnelles."
+      "majorRites": "L'Adae est une cérémonie dédiée aux esprits des anciens chefs du clan ; elle se tient deux fois par cycle d'environ six semaines, et personne ne va aux champs ce jour-là, selon Rattray en 1923. L'intronisation d'un chef passe par plusieurs gestes : il est assis trois fois sur son siège, prête serment, puis reçoit l'hommage des chefs assis à la droite de la reine mère.",
+      "symbols": "Le Tabouret d'or, que Rattray appelle de son titre complet Sika 'Gua Kofi, est le symbole du royaume asante. Selon la tradition qu'un vieil Asante a confiée à Rattray, le prêtre Okomfo Anotchi l'aurait fait descendre du ciel sous le règne d'Osei Tutu, et il contiendrait le sunsum, l'esprit, de toute la nation. Il ne doit jamais toucher le sol ni servir de siège. En 1922, la reine mère Sewa Akoto disait d'un tabouret d'argent offert par les reines mères : « Ce tabouret ne contient pas notre âme comme le Tabouret d'or ».",
+      "artsAndMusic": "Les orfèvres asante, appelés adwumfo, formaient autrefois une classe honorée ; leur métier se transmettait dans certaines familles, selon Rattray. Ils fondaient les poids servant à peser la poudre d'or, appelés abrammuo, dont beaucoup représentent des proverbes. Les ntumpane sont les tambours qui « parlent », et les tambours fontomfrom servent à jouer des proverbes. Tous les contes racontés en public portent le nom d'anansesem, « histoires de l'araignée », que l'araignée Ananse y paraisse ou non, selon Rattray en 1930. Les proverbes tiennent aussi une grande place : en 1879, la mission de Bâle en publie environ 3 600, édités par Johann Gottlieb Christaller et recueillis par des missionnaires et des assistants africains auprès d'anciens et d'autres habitants.",
+      "spiritualities": "Le dieu du ciel, Nyame, ou Onyankopon, est l'être suprême des Asante ; jugé trop lointain pour s'occuper directement des humains, il a délégué ses pouvoirs aux abosom, des dieux de rang inférieur, selon Rattray en 1923. Presque chaque cour a pourtant un autel à Nyame, une branche fourchue appelée Nyame dua, « l'arbre de Dieu ». La personne possède un ɔkra, une âme qui existe avant la naissance et porte son destin, selon le dictionnaire de Christaller, à côté du sunsum, l'esprit."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Le royaume de Bono-Manso (11e-15e siecles) est considere comme le premier Etat akan structure, fondateur du commerce aurifere regional. L'Empire ashanti (1701-1901), fonde par Osei Tutu sous le Tabouret d'Or, etait l'un des empires les plus puissants d'Afrique de l'Ouest, controlant une grande partie du Ghana actuel et des zones frontalieres. La Confederation fanti (18e siecle) regroupait les peuples cotiers contre les Ashanti et les Europeens. Le royaume d'Akwamu captura Accra en 1681. Le royaume de Denkyira preceda l'hegemonie ashanti. En Cote d'Ivoire, les royaumes baoul et anyi perpetuent la tradition politique akan.",
-      "relationsWithNeighbors": "Les Akan ont entretenu des relations commerciales avec les peuples mande et haoussa du nord (or, cola, esclaves). Conflits et alliances complexes avec les peuples ewe, ga-adangme et guan du Ghana. Rivalites entre sous-groupes akan (Ashanti vs Fanti, Ashanti vs Denkyira). En Cote d'Ivoire, les Baoul sont entres en contact avec les populations krou et mande de l'interieur.",
-      "conflictsOrAlliances": "Quatre guerres anglo-ashanti (1824-1900) marquerent la resistance a la colonisation britannique. La guerre du Tabouret d'Or (1900), menee par la reine-mere Yaa Asantewaa, fut la derniere grande resistance. En 1733, des esclaves akan (Coromantee) menerent la revolte de Saint-Jean aux Antilles danoises. En 1760, Tacky dirigea une revolte akan en Jamaique. En 1969, le royaume Sanwi tenta de faire secession de la Cote d'Ivoire. La confiscation du Tabouret d'Or par les Britanniques en 1900 declencha la guerre finale.",
-      "diaspora": "La traite transatlantique deporta un nombre significatif d'Akan vers les Ameriques : leurs descendants constituernt les Marrons de Jamaique (ou ils conserverent une langue creole a base akan, le Coromantee), et influencerent la culture ndyuka en Suriname et en Guyane francaise. Aujourd'hui, une diaspora moderne akan est etablie au Royaume-Uni, aux Etats-Unis, en Allemagne et dans d'autres pays europeens — notamment issue des migrations post-independance."
+      "kingdomsOrChiefdoms": "Le royaume asante, centré sur Kumasi, est le plus connu des États akan ; avant Osei Tutu, Kumasi dépendait du royaume de Denkyira, selon la tradition recueillie par Rattray. En 1793, Bryan Edwards cite à l'intérieur de la Côte de l'Or trois grands royaumes, qu'il écrit Assiantee (ou Shantee), Akim et Aquambou, et sur la côte plusieurs petits États, dont celui des Fante, « riche et puissant ».",
+      "relationsWithNeighbors": "Sur la Côte de l'Or, les royaumes de l'intérieur vendaient des captifs aux États de la côte, qui les revendaient aux Européens, selon Bryan Edwards. En Côte d'Ivoire, un rapport norvégien de 2006 classe les Akan, c'est-à-dire les Abron, les Agni et les Baoulé, dans l'ensemble kwa, avec les peuples des lagunes comme les Ébrié ou les Abbey.",
+      "conflictsOrAlliances": "En 1760, une révolte d'esclaves éclate à la Jamaïque, menée par Tacky, un « Koromantyn » qui avait été chef en Guinée, selon Bryan Edwards. Au pays asante, le Tabouret d'or a été au cœur de deux guerres avec les Britanniques et d'une crise en 1921, selon Rattray.",
+      "diaspora": "Pendant la traite atlantique, de nombreux captifs de la Côte de l'Or ont été déportés vers les Antilles britanniques, où on les appelait Koromantees ou Coromantees, selon Bryan Edwards en 1793."
     },
     "demography": {
-      "totalPopulation": 25000000,
-      "referenceYear": 2025,
-      "source": "Estimations basees sur les donnees du recensement ghaneen (2021 : Akan = 47,5 % de 32 millions = environ 15,2 millions), recensement ivoirien (Akan = ~28,8 % de 32,7 millions = environ 9,4 millions), SIL Ethnologue, CIA World Factbook, TOTA World (12 925 000 au Ghana, 7 013 650 en Cote d'Ivoire). Projection 2025.",
+      "totalPopulation": null,
+      "referenceYear": 2021,
+      "source": "Chiffres partiels, de deux recensements à des dates différentes, que nous n'additionnons pas. Ghana : 11 321 568 Akan parmi les Ghanéens de naissance au recensement de 2010, soit 47,5 % (Ghana Statistical Service, rapport de 2012). Côte d'Ivoire : 8 719 247 Akan parmi les Ivoiriens au recensement de 2021 (Agence nationale de la statistique). Les Akan vivant hors de ces deux pays ne sont pas comptés.",
       "distributionByCountry": [
         {
           "country": "GHA",
-          "population": 15500000,
-          "note": "Regions Ashanti, Centrale, Occidentale, Orientale, Brong-Ahafo — population majoritaire du Ghana meridional"
+          "population": 11321568,
+          "percentage": 47.5,
+          "note": "Recensement de 2010, Ghanéens de naissance ; surtout dans les régions Ashanti, Occidentale, Centrale, du Grand Accra, Brong-Ahafo et Orientale"
         },
         {
           "country": "CIV",
-          "population": 9500000,
-          "note": "Peuples baoul, anyi, nzema — centre et est de la Cote d'Ivoire"
+          "population": 8719247,
+          "note": "Recensement de 2021, Ivoiriens ; groupe ethnique « Akan » de l'Agence nationale de la statistique"
         }
       ]
     },
@@ -136,11 +138,129 @@
         "url": null,
         "tier": "referenced",
         "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
+      },
+      {
+        "title": "2010 Population and Housing Census: Summary Report of Final Results",
+        "author": "Ghana Statistical Service",
+        "year": 2012,
+        "url": "https://catalog.ihsn.org/catalog/3780/download/52416",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. 5 et 34",
+        "notes": "Rapport du service statistique du Ghana daté de 2012, lu le 3 novembre 2026 dans la copie déposée au catalogue d'enquêtes de l'IHSN. « Table 13 shows that the Akans are the predominant ethnic group in Ghana (47.5%) » (p. 5) ; tableau 13, 11 321 568 Akan (p. 34). L'appartenance ethnique n'est relevée que pour les Ghanéens de naissance et les binationaux (p. xi)."
+      },
+      {
+        "title": "Evolution de la population ivoirienne par grands groupes ethnique de 1975 à 2021",
+        "author": "Agence nationale de la statistique (ANStat), Côte d'Ivoire",
+        "year": 2021,
+        "url": "https://data.gouv.ci/datasets/evolution-de-la-population-ivoirienne-par-grands-groupes-ethnique-de-1975-a-2021",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Jeu de données de l'Agence nationale de la statistique publié sur le portail officiel des données ouvertes de Côte d'Ivoire, mis à jour le 12 mars 2026, lu le 3 novembre 2026. Il donne 8 719 247 Akan en 2021 sur 22 934 530 Ivoiriens, contre 4 788 797 en 1998 et 2 212 942 en 1975."
+      },
+      {
+        "title": "Glottolog 5.3 — Akan (akan1250)",
+        "author": "Glottolog",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/akan1250",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice de la langue, lue le 3 novembre 2026 : Akan, code ISO 639-3 aka, avec les variétés Agona, Ahafo, Akyem Bosome, Asen, Dankyira, Fante, Kwawu et Twi (akuapem et asante)."
+      },
+      {
+        "title": "Glottolog 5.3 — Akanic (akan1251)",
+        "author": "Glottolog",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/akan1251",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice du groupe, lue le 3 novembre 2026 : le groupe akanique réunit trois langues, l'abron, l'akan et le wasa, dans la branche tano central des langues kwa."
+      },
+      {
+        "title": "Ashanti",
+        "author": "Robert Sutherland Rattray",
+        "year": 1923,
+        "url": "https://archive.org/details/ashanti0000ratt",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 9-10, 34-37, 81-82, 92, 123-124, 141-142, 258, 287-290 et 300-302",
+        "notes": "Ouvrage d'un administrateur colonial britannique de la Côte de l'Or, chargé du département d'anthropologie du pays asante, publié à Oxford (Clarendon Press) ; réimpression lithographique lue sur Internet Archive le 3 novembre 2026. « The Ashanti word for clan is abusua » (p. 35) ; « this stool contained the sunsum (soul or spirit) of the Ashanti nation » (p. 289)."
+      },
+      {
+        "title": "Ashanti Law and Constitution",
+        "author": "Robert Sutherland Rattray",
+        "year": 1929,
+        "url": "https://archive.org/details/ashantilawconsti0000ratt_g8d4",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 63-64 et 90",
+        "notes": "Ouvrage d'un administrateur colonial britannique de la Côte de l'Or, chargé du département d'anthropologie du pays asante, publié à Oxford (Clarendon Press) ; lu sur Internet Archive le 3 novembre 2026. « The Ashanti appear to be grouped in eight clans » (p. 64) ; « Both Ashanti and Fanti are generally considered to have migrated from a common centre in Northern Ashanti near Tekiman » (p. 64)."
+      },
+      {
+        "title": "Akan-Ashanti Folk-Tales",
+        "author": "Robert Sutherland Rattray",
+        "year": 1930,
+        "url": "https://archive.org/details/akanashantifolkt0000ratt",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. xii",
+        "notes": "Ouvrage d'un administrateur colonial britannique de la Côte de l'Or, chargé du département d'anthropologie du pays asante, publié à Oxford (Clarendon Press) ; lu sur Internet Archive le 3 novembre 2026. « Each and all of the stories in this volume would, however, be classed by the Akan-speaking African under the generic title of “Anansesem” (Spider stories) »."
+      },
+      {
+        "title": "Ashanti Proverbs (The Primitive Ethics of a Savage People)",
+        "author": "Robert Sutherland Rattray",
+        "year": 1916,
+        "url": "https://archive.org/details/ashantiproverbst00rattuoft",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Ouvrage d'un administrateur colonial britannique en poste au pays asante, publié à Oxford (Clarendon Press) ; lu sur Internet Archive le 3 novembre 2026. La note de l'auteur décrit le recueil publié en 1879 par la mission de Bâle : « some 3,600 proverbs in use among the negroes of the Gold Coast, speaking the Asante and Fante language »."
+      },
+      {
+        "title": "The History, Civil and Commercial, of the British Colonies in the West Indies, vol. II",
+        "author": "Bryan Edwards",
+        "year": 1793,
+        "url": "https://archive.org/details/bim_eighteenth-century_the-history-civil-and-c_edwards-bryan_1793_2_0",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 51 et 64",
+        "notes": "Londres, John Stockdale, 1793 ; ouvrage d'un colon britannique de la Jamaïque, lu sur Internet Archive le 3 novembre 2026. « In the British West Indies, most of the Negroes purchased on the Gold Coast, are known by the general appellation of Koromantees, from Koromantyn, one of the earliest of our factories » (p. 51) ; « a Koromantyn Negro of the name of Tacky, who had been a chief in Guiney » (p. 64)."
+      },
+      {
+        "title": "Côte d'Ivoire: Ethnicity, Ivoirité and Conflict",
+        "url": "https://www.landinfo.no/asset/514/1/514_1.pdf",
+        "tier": "referenced",
+        "source_kind": "government",
+        "page": "p. 5",
+        "notes": "Rapport du centre norvégien d'information sur les pays d'origine, rédigé par Geir Skogseth et daté du 2 novembre 2006, lu le 3 novembre 2026. Il range parmi les Akan de Côte d'Ivoire les Abron, les Agni et les Baoulé."
+      },
+      {
+        "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+        "author": "Johann Gottlieb Christaller",
+        "year": 1881,
+        "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "page": "p. 254-255",
+        "notes": "Bâle, Mission évangélique, 1881, lu dans l'exemplaire numérisé sur archive.org le 3 novembre 2026. Entrée « ɔkra » : « the soul of man. According to the notions of the natives the kara of a person exists before his birth »."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.organization.ageClassSystems",
+        "reason": "Les sources que nous avons consultées ne décrivent pas de classes d'âge chez les Akan."
+      },
+      {
+        "field": "content.languages.vehicularRole",
+        "reason": "Les sources que nous avons consultées ne disent pas dans quelle mesure l'akan sert de langue commune à des personnes qui parlent une autre langue."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Akan sont un ensemble de peuples du Ghana et de la Côte d'Ivoire, comme les Asante, les Fante ou les Baoulé, qui parlent des langues proches et se nomment eux-mêmes Akan.",
+      "followUp": "Connaissez-vous le nom de votre clan, l'abusua transmis par la mère ?"
+    }
   },
   "nameHistory": {
-    "summary": "Le nom Akan désigne un vaste ensemble de peuples du sud du Ghana et de l'est de la Côte d'Ivoire, qui parlent des langues proches et se nomment eux-mêmes Akan. Il apparaît par écrit au début du XVIe siècle, sous une forme proche, chez un navigateur portugais. Nous n'avons pas trouvé de source qui explique d'où vient ce nom.",
+    "summary": "Le nom Akan désigne un vaste ensemble de peuples du sud du Ghana et de l'est de la Côte d'Ivoire, qui parlent des langues proches et se nomment eux-mêmes Akan. Il apparaît par écrit au début du XVIe siècle, sous une forme proche, chez un navigateur portugais. D'autres noms ont servi pour eux, comme Coromantee dans les Antilles britanniques ; nous présentons leur histoire plus bas.",
     "names": [
       {
         "nameText": "Akan",
@@ -148,7 +268,7 @@
         "selfGiven": true,
         "languageOfOrigin": "aka",
         "namedBy": null,
-        "shortLine": "Un nom écrit sous une forme proche dès le début du XVIe siècle ; nos sources n'expliquent pas son origine.",
+        "shortLine": "Un nom écrit sous une forme proche dès le début du XVIe siècle, chez un navigateur portugais.",
         "periodLabel": "Écrit depuis le début du XVIe siècle ; en usage aujourd'hui",
         "accounts": [
           {
@@ -158,7 +278,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Akan désigne aujourd'hui un vaste groupe de peuples aux langues apparentées : au Ghana, les Bono, les Ashanti, les Akyem ou les Fante ; en Côte d'Ivoire, les Abron, les Agni ou les Baoulé, selon Pierre Kipré, qui cite l'historien ghanéen Adu Boahen. Nous n'avons pas trouvé de source qui explique l'origine de ce nom.",
+            "statement": "Le nom Akan désigne aujourd'hui un vaste groupe de peuples aux langues apparentées : au Ghana, les Bono, les Ashanti, les Akyem ou les Fante ; en Côte d'Ivoire, les Abron, les Agni ou les Baoulé, selon Pierre Kipré, qui cite l'historien ghanéen Adu Boahen.",
             "aspect": "meaning",
             "sources": [
               {
@@ -170,6 +290,28 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 363",
                 "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "2010"
+            },
+            "era": "modern",
+            "statement": "Le nom Akan sert de catégorie au recensement du Ghana de 2010, qui en fait le premier groupe ethnique du pays, avec 47,5 % des Ghanéens de naissance.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "2010 Population and Housing Census: Summary Report of Final Results",
+                "author": "Ghana Statistical Service",
+                "year": 2012,
+                "url": "https://catalog.ihsn.org/catalog/3780/download/52416",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "p. 5",
+                "notes": "Rapport du service statistique du Ghana daté de 2012, lu le 3 novembre 2026 dans la copie déposée au catalogue d'enquêtes de l'IHSN. « Table 13 shows that the Akans are the predominant ethnic group in Ghana (47.5%) »."
               }
             ]
           },
@@ -310,6 +452,94 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 364",
                 "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Coromantee",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Britanniques des Antilles, selon Bryan Edwards",
+        "shortLine": "Le nom donné dans les Antilles britanniques aux captifs achetés sur la Côte de l'Or, d'après un comptoir fante.",
+        "periodLabel": "Écrit en 1793",
+        "accounts": [
+          {
+            "period": {
+              "from": 1760,
+              "to": 1760,
+              "label": "Révolte de 1760, racontée en 1793"
+            },
+            "statement": "Le nom Koromantyn sert à Bryan Edwards pour présenter Tacky, un ancien chef de Guinée qui lance en 1760 une révolte d'esclaves à la Jamaïque.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Tacky",
+                "role": "chef de la révolte de 1760, désigné par ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The History, Civil and Commercial, of the British Colonies in the West Indies, vol. II",
+                "author": "Bryan Edwards",
+                "year": 1793,
+                "url": "https://archive.org/details/bim_eighteenth-century_the-history-civil-and-c_edwards-bryan_1793_2_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 64",
+                "notes": "Londres, John Stockdale, 1793 ; ouvrage d'un colon britannique de la Jamaïque, lu sur Internet Archive le 3 novembre 2026. « It arose at the instigation of a Koromantyn Negro of the name of Tacky, who had been a chief in Guiney »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1793,
+              "to": 1793,
+              "label": "Proposée en 1793"
+            },
+            "era": "polity",
+            "statement": "Le nom Coromantee viendrait de Koromantyn, l'un des premiers comptoirs anglais de la Côte de l'Or, devenu un village tenu par les Néerlandais, dans le royaume fante, selon Bryan Edwards.",
+            "hypothesisGroup": "origine du nom Coromantee",
+            "sources": [
+              {
+                "title": "The History, Civil and Commercial, of the British Colonies in the West Indies, vol. II",
+                "author": "Bryan Edwards",
+                "year": 1793,
+                "url": "https://archive.org/details/bim_eighteenth-century_the-history-civil-and-c_edwards-bryan_1793_2_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 51",
+                "notes": "Londres, John Stockdale, 1793 ; ouvrage d'un colon britannique de la Jamaïque, lu sur Internet Archive le 3 novembre 2026. « from Koromantyn, one of the earliest of our factories on this part of the African coast […] It is situated in the kingdom of Fantyn, two miles from the fort of Anamaboe »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1793,
+              "to": 1793,
+              "label": "1793"
+            },
+            "statement": "Le nom Coromantee est écrit « Koromantees » par Bryan Edwards, un colon britannique de la Jamaïque, qui l'applique à la plupart des captifs achetés sur la Côte de l'Or. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "Koromantees",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Bryan Edwards",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The History, Civil and Commercial, of the British Colonies in the West Indies, vol. II",
+                "author": "Bryan Edwards",
+                "year": 1793,
+                "url": "https://archive.org/details/bim_eighteenth-century_the-history-civil-and-c_edwards-bryan_1793_2_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 51",
+                "notes": "Londres, John Stockdale, 1793 ; ouvrage d'un colon britannique de la Jamaïque, lu sur Internet Archive le 3 novembre 2026. « In the British West Indies, most of the Negroes purchased on the Gold Coast, are known by the general appellation of Koromantees »."
               }
             ]
           }

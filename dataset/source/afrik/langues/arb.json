@@ -16,12 +16,12 @@
     "Al-FusHa",
     "al-Fusḥa"
   ],
-  "whyProblematic": "Ses locuteurs disent al-ʿarabiyya al-fuṣḥā, « la langue arabe la plus éloquente », qui couvre l'arabe classique et l'arabe moderne écrit. « Arabe standard moderne » n'est pas leur nom : selon l'article de Wikipédia, qui renvoie à Holes et Allen (2004), c'est une étiquette commode des chercheurs occidentaux pour l'écrit depuis le milieu du XIXe siècle.",
+  "whyProblematic": "Ses locuteurs disent al-ʿarabiyya al-fuṣḥā, ou simplement al-fuṣḥā. Le nom arabe standard moderne traduit l'anglais Modern Standard Arabic. Selon le linguiste Ladislav Drozdík, c'est le nom le plus courant de l'arabe écrit commun, refait au XIXe siècle. Les chercheurs lui en donnent d'autres, comme néo-arabe ou arabe moderne en français.",
   "spellingAliases": [],
   "familyId": "FLG_SEMITIQUE",
   "peoples": [],
   "nameHistory": {
-    "summary": "Le nom arabe standard moderne désigne la forme écrite de l'arabe d'aujourd'hui. Ses locuteurs l'appellent al-ʿarabiyya al-fuṣḥā, ou simplement al-fuṣḥā. Le mot arabe lui-même nomme déjà la langue du Coran. Nous n'avons pas trouvé qui a forgé l'étiquette arabe standard moderne ; nous présentons plus bas ce que les sources disent de ces noms.",
+    "summary": "Le nom arabe standard moderne désigne la forme écrite de l'arabe d'aujourd'hui, commune à tous les pays arabes. Ses locuteurs l'appellent al-ʿarabiyya al-fuṣḥā, ou simplement al-fuṣḥā. Le mot arabe lui-même nomme déjà la langue du Coran. La langue porte donc plusieurs noms ; leur histoire est présentée plus bas.",
     "names": [
       {
         "nameText": "Al-ʿarabiyya al-fuṣḥā",
@@ -80,7 +80,7 @@
               "to": 1002,
               "label": "Avant 1002"
             },
-            "statement": "Le nom al-fuṣḥā apparaît sous une forme proche, al-lugha al-fuṣḥā, chez le grammairien Ibn Jinnī, mort en 1002, dans son livre al-Khaṣāʾiṣ : c'est la plus vieille occurrence que Pierre Larcher croit pouvoir citer. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "statement": "Le nom al-fuṣḥā apparaît sous une forme proche, al-lugha al-fuṣḥā, chez le grammairien Ibn Jinnī, mort en 1002, dans son livre al-Khaṣāʾiṣ : c'est la plus vieille occurrence que Pierre Larcher croit pouvoir citer. C'est la plus ancienne trace de ce nom que nous connaissons. La langue existait déjà avant lui.",
             "birth": true,
             "sources": [
               {
@@ -133,7 +133,7 @@
               "to": 699,
               "label": "VIIe siècle"
             },
-            "statement": "Le nom arabe désigne déjà une langue dans le Coran, sous la forme ʿarabī : « Nous l'avons fait descendre, un Coran en [langue] arabe », dit la sourate 12, dans la traduction de Muhammad Hamidullah. C'est la plus ancienne trace de ce nom de langue que le projet connaît. La langue existait déjà avant lui.",
+            "statement": "Le nom arabe désigne déjà une langue dans le Coran, sous la forme ʿarabī : « Nous l'avons fait descendre, un Coran en [langue] arabe », dit la sourate 12, dans la traduction de Muhammad Hamidullah. C'est la plus ancienne trace de ce nom de langue que nous connaissons. La langue existait déjà avant lui.",
             "birth": true,
             "sources": [
               {
@@ -156,7 +156,7 @@
         "selfGiven": false,
         "languageOfOrigin": "fra",
         "namedBy": null,
-        "shortLine": "Une étiquette de chercheurs pour l'arabe écrit d'aujourd'hui ; on ne sait pas qui l'a forgée.",
+        "shortLine": "Le nom le plus courant, chez les chercheurs, de l'arabe écrit commun d'aujourd'hui.",
         "periodLabel": "Usage contemporain",
         "accounts": [
           {
@@ -166,9 +166,19 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom arabe standard moderne est une étiquette de chercheurs pour l'arabe écrit d'aujourd'hui ; Glottolog nomme cette langue Standard Arabic. Les arabisants français parlent plutôt d'arabe classique, selon Pierre Larcher. Nous n'avons pas trouvé de source lue qui dise qui a forgé cette étiquette, ni quand.",
+            "statement": "Le nom arabe standard moderne traduit Modern Standard Arabic, le nom le plus courant de l'arabe écrit commun dans les études en anglais, selon Ladislav Drozdík. Ce même auteur relève d'autres noms, comme Modern Written Arabic en anglais, néo-arabe ou arabe moderne en français. Glottolog nomme cette langue Standard Arabic. Les arabisants français parlent plutôt d'arabe classique, selon Pierre Larcher.",
             "aspect": "usage",
             "sources": [
+              {
+                "title": "Innovative Elements in the 19th Century Arabic Lexicon, Asian and African Studies, vol. 9, n° 2",
+                "author": "Ladislav Drozdík",
+                "year": 2000,
+                "url": "https://www.sav.sk/journals/uploads/080610296_Drozdík.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 188 et note 1",
+                "notes": "Lu le 3 novembre 2026 : article de la revue Asian and African Studies, publiée par l'Académie slovaque des sciences, p. 187-212. Page 188, l'auteur écrit que l'arabe refait à cette époque sert aujourd'hui de norme écrite unique, « mostly known as Modern Standard Arabic (MSA) ». La note 1 relève les autres noms : en anglais Modern Written Arabic ou Classical Arabic ; en français néo-arabe chez Lecerf, néo-arabe ou arabe moderne chez Monteil ; en arabe al-ʿarabiyya, al-lugha al-ʿarabiyya al-fuṣḥā ou al-fuṣḥā."
+              },
               {
                 "title": "Glottolog 5.3 — Arabe standard moderne (stan1318)",
                 "author": "Glottolog",
@@ -189,30 +199,98 @@
                 "notes": "Lu le 11 octobre 2026 en ligne, p. 263-278 de la revue. L'auteur retrace l'histoire de l'expression, du Moyen Âge à la fin du XIXe siècle."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1828,
+              "to": 1835,
+              "label": "De 1828 à 1835, en Égypte"
+            },
+            "era": "polity",
+            "statement": "Le nom arabe standard moderne désigne une langue écrite refaite au XIXe siècle, selon Ladislav Drozdík. En Égypte, le journal officiel al-Waqāʾiʿ al-miṣriyya, fondé en 1828, et l'école de traduction ouverte en 1835 lui ont donné beaucoup de mots nouveaux. Selon le même auteur, cet arabe écrit reste très proche de la langue du Coran.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Innovative Elements in the 19th Century Arabic Lexicon, Asian and African Studies, vol. 9, n° 2",
+                "author": "Ladislav Drozdík",
+                "year": 2000,
+                "url": "https://www.sav.sk/journals/uploads/080610296_Drozdík.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 187-188",
+                "notes": "Lu le 3 novembre 2026 : article de la revue Asian and African Studies, publiée par l'Académie slovaque des sciences, p. 187-212. Page 188, l'auteur écrit que l'arabe refait à cette époque sert aujourd'hui de norme écrite unique, « mostly known as Modern Standard Arabic (MSA) ». La note 1 relève les autres noms : en anglais Modern Written Arabic ou Classical Arabic ; en français néo-arabe chez Lecerf, néo-arabe ou arabe moderne chez Monteil ; en arabe al-ʿarabiyya, al-lugha al-ʿarabiyya al-fuṣḥā ou al-fuṣḥā."
+              }
+            ]
           }
         ]
       }
     ]
   },
   "content": {
-    "vehicularRole": null,
+    "vehicularRole": "national_official",
     "dialects": ["Classical Arabic"],
-    "vitalityStatus": null,
+    "vitalityStatus": {
+      "status": "National",
+      "scale": "EGIDS (Ethnologue)",
+      "asOf": 2025
+    },
     "sources": [
       {
         "title": "Glottolog 5.3 — Arabe standard moderne (stan1318)",
         "url": "https://glottolog.org/resource/languoid/id/stan1318",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Glottolog name: Standard Arabic; classification includes Semitic. Les dialectes listés sont les sous-languoids que Glottolog rattache à stan1318, hors languoids portant leur propre code ISO 639-3."
+        "notes": "Notice lue le 3 novembre 2026 pour le code ISO 639-3 arb et le glottocode stan1318, nommée Standard Arabic et classée parmi les langues sémitiques. Elle reprend l'appréciation d'Ethnologue 2025 (Eberhard, Simons et Fennig) : niveau EGIDS 1, langue nationale. Elle situe la langue dans 25 pays, dont l'Algérie, le Maroc, la Tunisie, la Libye, l'Égypte, le Soudan, le Tchad, l'Érythrée, Djibouti, la Somalie, les Comores et la Tanzanie. Les dialectes listés sont les variétés que Glottolog rattache à stan1318, sauf celles qui ont leur propre code ISO 639-3."
       },
       {
         "title": "Wikipédia anglophone, Modern Standard Arabic",
         "url": "https://en.wikipedia.org/wiki/Modern_Standard_Arabic",
         "tier": "unverified",
         "source_kind": "encyclopedia",
-        "notes": "Article lu pour les noms de la langue ; il renvoie à Alaa Elgibali et El-Said M. Badawi, Understanding Arabic (1996), p. 105, pour les noms arabes, et à Clive Holes et Roger Allen, Modern Arabic: Structures, Functions, and Varieties (Georgetown University Press, 2004), p. 5, pour l'étiquette « Modern Standard Arabic ». Les deux ouvrages n'ont pas été consultés directement."
+        "notes": "Article de l'encyclopédie en ligne, lu le 11 octobre 2026 pour les noms de la langue. Il renvoie à Alaa Elgibali et El-Said M. Badawi, Understanding Arabic (1996), et à Clive Holes et Roger Allen, Modern Arabic (Georgetown University Press, 2004). Nous n'avons pas pu lire ces deux livres ; pour le nom arabe standard moderne, nous citons l'article de Ladislav Drozdík."
+      },
+      {
+        "title": "Innovative Elements in the 19th Century Arabic Lexicon, Asian and African Studies, vol. 9, n° 2",
+        "author": "Ladislav Drozdík",
+        "year": 2000,
+        "url": "https://www.sav.sk/journals/uploads/080610296_Drozdík.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 188 et note 1",
+        "notes": "Lu le 3 novembre 2026 : article de la revue Asian and African Studies, publiée par l'Académie slovaque des sciences, p. 187-212. Page 188, l'auteur écrit que l'arabe refait à cette époque sert aujourd'hui de norme écrite unique, « mostly known as Modern Standard Arabic (MSA) ». La note 1 relève les autres noms : en anglais Modern Written Arabic ou Classical Arabic ; en français néo-arabe chez Lecerf, néo-arabe ou arabe moderne chez Monteil ; en arabe al-ʿarabiyya, al-lugha al-ʿarabiyya al-fuṣḥā ou al-fuṣḥā."
+      },
+      {
+        "title": "Constitution de la République algérienne démocratique et populaire, Journal officiel n° 82 du 30 décembre 2020, article 3",
+        "author": "République algérienne démocratique et populaire",
+        "year": 2020,
+        "url": "https://faolex.fao.org/docs/pdf/alg72556.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "page": "article 3, p. 7 du Journal officiel",
+        "notes": "Lu le 3 novembre 2026 : copie du Journal officiel de la République algérienne n° 82 du 30 décembre 2020, conservée par la base juridique FAOLEX de l'Organisation des Nations unies pour l'alimentation et l'agriculture. L'article 3 dit : « L'Arabe est la langue nationale et officielle. » L'article 4 fait aussi du tamazight une langue nationale et officielle."
+      },
+      {
+        "title": "Constitution du Royaume du Maroc, 2011, article 5, traduction anglaise du Constitute Project",
+        "url": "https://www.constituteproject.org/constitution/Morocco_2011",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Lu le 3 novembre 2026 dans la traduction anglaise de William S. Hein & Co. (2012) publiée par le Constitute Project. L'article 5 dit que l'arabe demeure la langue officielle de l'État et que l'amazighe est aussi une langue officielle."
       }
-    ]
+    ],
+    "originDebated": false,
+    "gaps": [
+      {
+        "field": "speakers.byCountry",
+        "reason": "Nous avons cherché, pays par pays, le nombre de personnes qui lisent, écrivent ou parlent l'arabe standard moderne. Glottolog donne la liste des pays sans chiffres, et les constitutions de l'Algérie et du Maroc parlent de l'arabe sans le compter. Nous n'avons pas trouvé de chiffre par pays."
+      },
+      {
+        "field": "nameHistory.names[0].pronunciation",
+        "reason": "Nous avons cherché une transcription de la prononciation de al-ʿarabiyya al-fuṣḥā dans une source que nous pouvons lire ; nous n'en avons pas encore trouvé."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "La forme écrite de l'arabe d'aujourd'hui, commune aux pays arabes et langue officielle, notamment, de l'Algérie et du Maroc. Ses locuteurs l'appellent al-fuṣḥā.",
+      "followUp": "D'où vient le nom al-fuṣḥā, et pourquoi les chercheurs parlent-ils d'arabe standard moderne ?"
+    }
   }
 }

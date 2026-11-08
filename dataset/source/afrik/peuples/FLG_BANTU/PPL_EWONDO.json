@@ -4,7 +4,7 @@
   "languageFamilyId": "FLG_BANTU",
   "currentCountries": ["CMR"],
   "nameHistory": {
-    "summary": "Le nom Ewondo désigne un peuple du centre du Cameroun, autour de Yaoundé, qui se nomme lui-même Ewondo. Un autre nom existe : Yaoundé, que les Allemands écrivaient Jaunde et qui est devenu le nom de la capitale. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "summary": "Le nom Ewondo désigne un peuple du centre du Cameroun, autour de Yaoundé, qui se nomme lui-même Ewondo. Un autre nom existe : Yaoundé, que les Allemands écrivaient Jaunde et qui désigne aujourd'hui la capitale. Plusieurs sources expliquent l'origine de ces noms ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Ewondo",
@@ -14,7 +14,7 @@
         "namedBy": null,
         "shortLine": "Le nom que ce peuple se donne dans sa langue ; man Ewondo, « un Ewondo ».",
         "usedIn": ["ewo"],
-        "periodLabel": "Écrit dès 1913 ; en usage aujourd'hui",
+        "periodLabel": "Écrit dès 1892 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
@@ -39,14 +39,98 @@
           },
           {
             "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892"
+            },
+            "statement": "Le nom Ewondo apparaît sous la forme Yewondo dans une lettre du missionnaire américain Adolphus Clemens Good, qui cite les Yewondo parmi les peuples de l'arrière-pays de Batanga et note qu'un homme yewondo parle presque comme les Bulu. La lettre est publiée en 1898 par Ellen C. Parsons. C'est la plus ancienne trace de cette forme que nous connaissons. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Yewondo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Adolphus Clemens Good",
+                "role": "écrit cette forme dans une lettre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Life for Africa: Rev. Adolphus Clemens Good, Ph. D.",
+                "author": "Ellen C. Parsons",
+                "year": 1898,
+                "url": "https://archive.org/details/alifeforafricar00parsgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 199",
+                "notes": "New York, Fleming H. Revell, 1898. Biographie d'un missionnaire presbytérien américain, qui cite ses lettres et son journal ; lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Chapitre XI, d'août 1892 à janvier 1893 : « There were the Batanga people, the Mabeya, the Fang, the Benë, the Yengone, the Yewondo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ewondo est expliqué en 1911 par le missionnaire Hermann Nekes : un homme se dit « man Ewondo », « enfant des Jaunde », et le nom réunit les descendants du premier ancêtre, non les étrangers installés chez eux.",
+            "aspect": "usage",
+            "formAsWritten": "man Ewondo",
+            "actors": [
+              {
+                "name": "Hermann Nekes",
+                "role": "écrit cette forme et la traduit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Lehrbuch der Jaunde-Sprache",
+                "author": "Hermann Nekes",
+                "year": 1911,
+                "url": "https://archive.org/details/lehrbuchderjaund00nekeuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 35",
+                "notes": "Berlin, Georg Reimer, 1911, collection des manuels du Séminaire des langues orientales de Berlin ; grammaire écrite par un missionnaire pallottin en période coloniale allemande. lu le 3 novembre 2026 dans la numérisation d'Internet Archive, chapitre « Personennamen »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Proposée en 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ewondo serait, selon Hermann Nekes, soit le nom propre du premier ancêtre, soit un mot qui décrivait le pays où cet ancêtre et ses descendants s'installèrent ; il ne choisit pas entre les deux.",
+            "hypothesisGroup": "origine du nom Ewondo",
+            "actors": [
+              {
+                "name": "Hermann Nekes",
+                "role": "propose ces deux explications"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Lehrbuch der Jaunde-Sprache",
+                "author": "Hermann Nekes",
+                "year": 1911,
+                "url": "https://archive.org/details/lehrbuchderjaund00nekeuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 35",
+                "notes": "lu le 3 novembre 2026 dans la numérisation d'Internet Archive : « Ob aber der Name Ewondo ursprünglich Eigennamen des Stammvaters war, oder vielmehr eine Eigenschaft des Landes bedeutete [...], mag dahingestellt bleiben »."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1913,
               "to": 1913,
               "label": "1913"
             },
             "era": "colonial",
-            "statement": "Le nom Ewondo apparaît par écrit dans la grammaire du missionnaire allemand Hermann Nekes, qui traduit « Ewondo » par « les Jaunde » et « man Ewondo » par « un Jaunde ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "statement": "Le nom Ewondo est repris en 1913 dans la grammaire du missionnaire allemand Hermann Nekes, qui traduit « Ewondo » par « les Jaunde » et « man Ewondo » par « un Jaunde ».",
             "formAsWritten": "man Ewondo",
-            "birth": true,
             "sources": [
               {
                 "title": "Die Sprache der Jaunde in Kamerun",
@@ -59,6 +143,66 @@
                 "page": "p. 15"
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ewondo est noté Yeündo par l'ethnologue Günter Tessmann, qui l'entend chez les Jaunde et les Bene ; chez leurs voisins ntum et fang, il entend Yehundo ou Yewuno.",
+            "formAsWritten": "Yeündo",
+            "actors": [
+              {
+                "name": "Günter Tessmann",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "Berlin, Ernst Wasmuth, 1913 ; monographie issue de l'expédition de Lübeck de 1907-1909, écrite en période coloniale allemande. lu le 3 novembre 2026 dans la numérisation d'Internet Archive : « Jaunde (Yeündo J. B. auch Yehundo und Yewuno Nt. F.) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "Rapporté en 1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ewondo serait celui que prirent les Beti qui avaient traversé le fleuve Yom, la Sanaga, avec l'aide des Etudi ; ceux qui restèrent sur l'autre rive furent appelés « gens de la rive du Yom ». C'est ce que raconte Paul Messi, de Yaoundé, dans un récit écrit en ewondo.",
+            "hypothesisGroup": "origine du nom Ewondo",
+            "actors": [
+              {
+                "name": "Paul Messi",
+                "role": "écrit ce récit en ewondo"
+              },
+              {
+                "name": "Martin Heepe",
+                "role": "publie et traduit le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Jaunde-Texte von Karl Atangana und Paul Messi, nebst experimentalphonetischen Untersuchungen über die Tonhöhen im Jaunde und einer Einführung in die Jaundesprache",
+                "author": "Karl Atangana et Paul Messi, textes édités par Martin Heepe",
+                "year": 1919,
+                "url": "https://archive.org/details/jaundetextevonka00heepuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 256-257",
+                "notes": "Hambourg, L. Friederichsen, 1919. lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Récit n° 33, « Geschichte von den Jaunde, die den Weg zum Meere suchten », écrit à Hambourg par Paul Messi, neveu du chef Karl Atangana, avec sa traduction allemande : « Die, welche den Yöm überschritten hatten, nannten sich nunmehr Ewondo (Jaunde) »."
+              }
+            ]
           }
         ]
       },
@@ -68,7 +212,7 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom que les Allemands écrivaient Jaunde ; il est devenu celui de la capitale.",
+        "shortLine": "Le nom que les Allemands écrivaient Jaunde ; il désigne aujourd'hui la capitale du Cameroun.",
         "periodLabel": "Écrit dès 1889 ; en usage aujourd'hui",
         "accounts": [
           {
@@ -100,7 +244,8 @@
                 "notes": "Berlin, 1895. Lu dans la numérisation d'Internet Archive.",
                 "page": "p. 36"
               }
-            ]
+            ],
+            "era": "colonial"
           },
           {
             "period": {
@@ -166,6 +311,48 @@
                 "page": "p. 36"
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1913,
+              "label": "1911-1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Yaoundé, sous la forme Jaunde, sert aux auteurs allemands à traduire le nom que ce peuple se donne : Nekes rend « man Ewondo » par « un enfant des Jaunde », et Tessmann note que les Jaunde se nomment Yeündo.",
+            "aspect": "meaning",
+            "actors": [
+              {
+                "name": "Hermann Nekes",
+                "role": "traduit Ewondo par Jaunde"
+              },
+              {
+                "name": "Günter Tessmann",
+                "role": "note la forme Yeündo"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Lehrbuch der Jaunde-Sprache",
+                "author": "Hermann Nekes",
+                "year": 1911,
+                "url": "https://archive.org/details/lehrbuchderjaund00nekeuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 35",
+                "notes": "lu le 3 novembre 2026 dans la numérisation d'Internet Archive, chapitre « Personennamen »."
+              },
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "lu le 3 novembre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
           }
         ]
       }
@@ -175,52 +362,65 @@
     "appellations": {
       "mainName": "Ewondo",
       "selfAppellation": "Ewondo",
-      "exonyms": ["Yaunde", "Yaoundé", "Kolo"],
-      "originOfExonyms": "Yaunde ou Yaoundé est le nom donne par les colonisateurs allemands puis français, qui est devenu le nom de la capitale camerounaise. Kolo est la denomination interne plus precise utilisee par le groupe lui-meme. Le terme Ewondo voudrait dire arachide ou la terre en ewondo.",
+      "exonyms": ["Jaunde (forme allemande)", "Yaunde", "Yaoundé"],
+      "originOfExonyms": "Jaunde, puis Yaunde et Yaoundé, sont les formes que les Allemands puis les Français ont données à ce peuple et au poste fondé chez lui en 1889, devenu la capitale du Cameroun. En 1890, le lieutenant Morgen préfère la forme Jaunde à Jeundo parce que les habitants prononcent ainsi. G. Zenker écrit en 1895 que Yaünde voudrait dire « arachide ».",
       "whyProblematic": null,
-      "contemporaryUsage": "Le terme Ewondo est d'usage courant au Cameroun pour designer ce sous-groupe beti. Yaunde reste associe a la capitale mais moins utilise comme designation ethnique.",
+      "contemporaryUsage": "Ewondo est le nom de ce peuple et de sa langue dans les catalogues de langues, qui relèvent aussi Ewundu, Jaunde, Yaounde et Yaunde. Yaoundé désigne aujourd'hui la ville.",
       "linguisticFamily": "FLG_BANTU",
-      "ethnoLinguisticGroup": "Macro-groupe Beti-Pahouin (sous-groupe Beti)",
-      "historicalRegion": "Centre du Cameroun (region de Yaoundé, forets equatoriales)",
-      "currentCountries": ["CMR"]
+      "ethnoLinguisticGroup": "Beti, dans l'ensemble que les auteurs français appelaient « pahouin »",
+      "historicalRegion": "Plateau entre la Sanaga et le Nyong, autour de Yaoundé",
+      "currentCountries": ["CMR"],
+      "spellingAliases": ["Éwondo", "Ewundu", "Yewondo"],
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Ewondo proprement dit (Kolo)",
-      "Bane",
-      "Mvete",
-      "Mvog-Nyenge",
-      "Mbida-Mbane",
-      "Manguissa (en cours d'assimilation)",
-      "Yekaba (en cours d'assimilation)",
-      "Evuzok"
+      "Evundo",
+      "Bava",
+      "Yehandu",
+      "Yetenga",
+      "Yemvon",
+      "Etudi",
+      "Jena",
+      "Edzo",
+      "Embumbun",
+      "Ngoe",
+      "Elega",
+      "Evunzok",
+      "Betsenga",
+      "Mvog-Ada",
+      "Mvog-Fuda",
+      "Mvog-Esumendana",
+      "Mvog-Ebanda",
+      "Mvog-Betsi",
+      "Mvog-Bolo",
+      "Elandi"
     ],
     "origins": {
-      "ancientOrigins": "Les Ewondo font partie du grand ensemble Beti-Pahouin, peuple bantou dont l'origine commune remonte a plusieurs siecles. Les traditions orales et les etudes linguistiques placent les ancetres Beti-Pahouin dans les savanes au nord de leur territoire actuel, avant une migration progressive vers les forets equatoriales. Leurs origines remontent probablement au XVe siecle, les migrations vers le centre du Cameroun s'etant intensifiees aux XVIIe-XIXe siecles.",
-      "formationPeriod": "Formation du groupe Ewondo distincte entre le XVIIe et le XIXe siecle, lors de l'occupation des terres au sud de la riviere Sanaga et autour du futur site de Yaoundé.",
+      "ancientOrigins": "Selon le missionnaire Hermann Nekes, en 1911, les Ewondo vivaient autrefois sur la rive droite de la Sanaga ; les razzias des Wute, que les Ewondo appellent Bebudi, les poussèrent à passer sur la rive gauche, suivis par les Eton. Le récit de Paul Messi, publié en 1919, raconte que les Beti venaient de l'autre côté du Yom, la Sanaga, et cherchaient la route de la mer, d'où venaient les marchandises.",
+      "formationPeriod": null,
       "migrationRoutes": [
-        "Migration depuis les savanes du nord (rive droite de la Sanaga)",
-        "Penetration progressive dans les forets equatoriales du centre Cameroun",
-        "Installation dans la region de Yaoundé et les departements avoisinants"
+        "De la rive droite de la Sanaga vers la rive gauche, selon Nekes et le récit de Paul Messi",
+        "Vers le sud et vers la mer, au-delà du Nyong, où les Ewondo trouvent les Bulu déjà installés, selon Paul Messi"
       ],
       "historicalSettlementZones": [
-        "Region de Yaoundé (Mfoundi)",
-        "Departements de Mefou-et-Afamba et Mefou-et-Akono",
-        "Departement de Nyong-et-So'o et Nyong-et-Mfoumou (region Centre)",
-        "Partie nord du departement Ocean (region Sud)"
+        "Plateau de 800 à 1 000 mètres, entre la Lokoundjé au sud et la Mfamba au nord (Zenker, 1895)",
+        "Entre la Sanaga et le Nyong (Nekes, 1911)",
+        "Région du poste allemand de Jaunde, fondé en 1889, aujourd'hui Yaoundé"
       ],
-      "unificationsOrDivisions": "Les Ewondo constituent l'un des sous-groupes beti les plus importants. Ils ont progressivement assimile des groupes voisins (Manguissa, Yekaba, Evuzok, Bamvele) dans un processus dit de 'Pahouinisation'. La colonisation allemande (1884) puis française a profondement restructure leur organisation sociale.",
-      "externalInfluences": "Traite negriere des XVIe-XIXe siecles. Colonisation allemande (1884-1916), puis française. Evangelisation chretienne intensive: christianisation quasi totale de la population ewondo avant 1939. Missions catholiques et protestantes. Introduction de la culture du cacao et du café comme cultures de rente.",
-      "majorHistoricalEvents": "Installation de la station allemande a Yaoundé en 1889 sur le territoire ewondo. Cette station devient le noyau de la future capitale camerounaise, dont le nom est derive de Ewondo/Yaunde. Resistance partielle puis adaptation a la colonisation. Independance du Cameroun en 1960."
+      "unificationsOrDivisions": "En 1895, G. Zenker divise le peuple qu'il appelle Yaünde en petits groupes qui ne se distinguent que par leur nom. Tessmann énumère en 1913 les groupes de familles des Jaunde, comme les Evundo, les Etudi ou les Mvog-Ada, et note que les Jaunde et les Bene ont reçu des traits de culture des Bati. Selon Nekes, les vieux Etudi parlaient encore la langue ati en 1911.",
+      "externalInfluences": "En 1889, l'expédition allemande de Kund et Tappenbeck fonde un poste chez les Ewondo ; le botaniste G. Zenker y réunit des collections et décrit le peuple en 1895. Les missionnaires pallottins allemands, dont Hermann Nekes, étudient la langue et publient une grammaire en 1911. Le chef Karl Atangana et son neveu Paul Messi écrivent en ewondo des textes publiés à Hambourg en 1919.",
+      "majorHistoricalEvents": "En 1889, Kund et Tappenbeck sont reçus par les Ewondo avec des chants et des danses et fondent chez eux le poste de Jaunde. Karl Atangana raconte la guerre que le chef Omgbabisogo, des Mvog-Otu, mena contre les Européens du poste."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Societe patrilineaire organisee en villages (ngon) de quelques centaines d'habitants. Plusieurs familles d'un meme lignage vivent ensemble dans le village; plusieurs villages apparentes forment un clan. Chaque clan est place sous l'autorite nominale d'un chef (nkukuma) qui est egalement autorite religieuse. Les decisions importantes se prennent en conseil des anciens.",
-      "clanOrganization": "Organisation clanique patrilineaire strict. Les clans portent generalement le prefixe Mvog- (fils de) suivi du nom d'un ancetre eponyme. Mariage exogamique obligatoire. La famille nucleaire (un homme, ses epouses, leurs enfants) forme la cellule de base.",
-      "ageClassSystems": "Absence de systeme de classes d'age aussi formalise que chez d'autres peuples bantous. L'initiation masculine (So) marquait le passage a l'age adulte et l'integration dans les societes secretes.",
-      "roleOfLineages": "Les lignages patrilineaires determinent l'appartenance clanique, les droits foncieres, les alliances matrimoniales et les obligations de solidarite. Le neveu uterine (fils de la soeur) entretient un lien traditionnel fort avec son oncle maternel, heritage d'une ancienne composante matrilineaire.",
-      "religiousAuthority": "Le chef de clan (nkukuma) cumule autorite politique et religieuse. Les ancetres sont veneres; les guerisseurs traditionnels (ngengang) jouent un role important. Depuis la christianisation, l'Eglise catholique et les Eglises protestantes ont pris une place centrale dans la vie communautaire."
+      "traditionalPoliticalSystem": "En 1895, Zenker décrit des hameaux dispersés plutôt que des villages : un jeune homme qui se marie défriche un plateau et y bâtit sa maison, puis celle de sa femme. Selon Tessmann, chez les Pangwe, dont les Jaunde, la plus grande unité politique est le groupe de familles, et le chef y a peu de pouvoir, sauf au nord.",
+      "clanOrganization": "Nekes distingue en 1911 le nom du peuple, Ewondo, et le nom de la lignée, qui vient de son ancêtre fondateur : les descendants d'un ancêtre nommé Fuda forment le mvog-Fuda. Tessmann note que les Jaunde appellent ndā, « maison », ce groupe de familles ; beaucoup de leurs noms commencent par Mvog-.",
+      "ageClassSystems": "Tessmann rapporte qu'au culte du Sso, chez les Jaunde, les garçons de 7 à 25 ans d'une large région sont initiés ensemble, en général une fois par an au début de la grande saison sèche, lors d'une fête qu'organise un chef respecté.",
+      "roleOfLineages": "Selon Nekes, le nom Ewondo réunit les descendants du premier ancêtre : un homme né et installé chez les Ewondo, mais dont le père est venu d'ailleurs, n'en fait pas partie.",
+      "religiousAuthority": "Zenker écrit en 1895 que les Yaünde croient en un dieu invisible, Insambo, créateur de toutes choses, et en des esprits qui vivent sous la terre ; leur foi repose surtout sur les remèdes et les objets de protection. Selon Tessmann, la fête du Sso est organisée par un chef respecté."
     },
     "languages": {
-      "mainLanguage": "Ewondo (Kolo)",
+      "mainLanguage": "Ewondo (ewo)",
       "isoCodes": ["ewo"],
       "dialects": [
         "Badjia (Bakjo)",
@@ -233,28 +433,34 @@
         "Yabekolo",
         "Omvang"
       ],
-      "vehicularRole": "L'ewondo est la langue vehiculaire la plus parlée dans les regions Centre, Sud et Est du Cameroun, servant de lingua franca a Yaoundé et dans les echanges interethniques de toute la moitie sud du pays. Il est egalement utilise dans la litterature et les medias camerounais. L'ewondo est mutellement intelligible avec le bulu, l'eton et le fang. Le français est la langue officielle utilisee dans l'administration et l'education."
+      "vehicularRole": "Selon Nekes, en 1911, on peut se faire comprendre en ewondo de la Sanaga jusqu'à la frontière sud du Cameroun et loin vers l'est : il est devenu la langue commune du sud du pays, que les soldats parlent aussi. En 1892 déjà, le missionnaire Good constate qu'un homme yewondo parle presque comme les Bulu."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q1383236",
+      "glottocode": "ewon1239",
+      "iso639_3": "ewo"
     },
     "culture": {
-      "majorRites": "Initiation masculine (So): societe secrete d'initiation reservee aux hommes, marquant le passage a l'age adulte par des epreuves et l'acquisition de savoirs traditionnels. Ceremonies de mariage avec versement de la dot (eseng) en biens materiels. Rites funeraires: veillees accompagnees de chants et danses, repas communautaires pour honorer les defunts. Ceremonies agricoles liees aux semailles et aux recoltes. Rituels de guerison faisant appel aux guerisseurs traditionnels (ngengang).",
-      "symbols": "L'arc musical mendzang et le balafon sont des instruments emblematiques de la culture ewondo et beti. Les masques sculptes utilises lors des ceremonies d'initiation et des funerailles. Les motifs geometriques ornamantant les cases traditionnelles. La foret equatoriale comme espace sacre et ressource fondamentale.",
-      "artsAndMusic": "Le bikutsi est le genre musical emblematique des Ewondo et des Beti: danse rythmee ou l'on tape le sol (bi-kut-si signifie frapper la terre en ewondo), originellement pratiquee par les femmes pour exprimer leurs douleurs et frustrations, puis popularisee mondialement depuis les annees 1980-1990 par des artistes comme Les Tetes Brulees, K-Tino et Lady Ponce. Instruments: balafon (xylophone), mendzang (arc musical), tam-tams, mvet. Sculpture sur bois et ivoire, masques cerimonials, art de la natte et de la poterie.",
-      "spiritualities": "Croyance en un etre supreme appele Nzame (Dieu createur). Veneration des ancetres qui intercedent entre les vivants et le divin. Pratique de rites de protection contre les esprits malefiques. Aujourd'hui, la grande majorite des Ewondo se declare chretienne (catholique majoritairement, avec des communautes protestantes et evangeliques significatives). Persistance du recours aux tradipraticiens et aux societes secretes en parallele a la pratique chretienne."
+      "majorRites": "Tessmann décrit le Sso des Jaunde, d'après ce que lui en ont dit des Jaunde : une fête d'initiation des garçons qui dure plusieurs jours, avec une danse sur un tronc sculpté, puis des épreuves d'endurance où chaque novice est guidé par un initié. Zenker rapporte en 1895 que chaque nouveau membre du peuple reçoit une petite défense d'éléphant qui contient le remède de guerre.",
+      "symbols": "Le site African Music Library rattache le bikutsi aux traditions des Beti et des Ewondo. Selon Tessmann, le Sso, culte de la lune, a pour image l'antilope so.",
+      "artsAndMusic": "Le bikutsi est un genre musical né des traditions des Beti et des Ewondo. Selon le site African Music Library, son nom vient de l'ewondo : kut, frapper, et si, le sol, d'où une danse qui frappe la terre. C'était d'abord une musique jouée par les femmes avant les années 1960 ; les hommes l'ont ensuite reprise avec des instruments modernes, et des groupes comme Les Têtes Brûlées l'ont fait connaître dans les années 1980.",
+      "spiritualities": "Selon Zenker, en 1895, les Yaünde nomment Insambo le dieu invisible qui a tout créé, et ils attribuent les malheurs aux remèdes et à la sorcellerie plutôt qu'aux esprits. Karl Atangana écrit vers 1914 que les usages religieux des Jaunde changent souvent d'une année à l'autre."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de royaume centralise: organisation en chefferies villageoises independantes. La ville de Yaoundé, capitale du Cameroun, tire son nom des Ewondo (Yaunde en allemand). La station allemande etablie en 1889 sur leurs terres a donne naissance a la capitale moderne.",
-      "relationsWithNeighbors": "Les Ewondo sont apparentes aux autres groupes Beti-Pahouin (Bulu, Eton, Fang, Bane) avec qui ils partagent langue, histoire et culture. Ils ont progressivement assimile plusieurs groupes voisins (Manguissa, Yekaba, Bamvele, Evuzok). Contacts commerciaux avec les peuples cotieres Bassa et Douala.",
-      "conflictsOrAlliances": "Resistance partielle a la penetration coloniale allemande, puis adaptation et collaboration. Participation a la vie politique camerounaise post-independance: parmi les personnalites ewondo notables figurent l'ecrivain Mongo Beti et divers hommes politiques.",
-      "diaspora": "Presence ewondo dans toutes les grandes villes camerounaises, particulierement a Yaoundé dont ils sont le peuple fondateur. Diaspora camerounaise en Europe (France, Belgique), en Amerique du Nord et dans d'autres pays africains."
+      "kingdomsOrChiefdoms": "Les sources lues ne décrivent pas de royaume ewondo. En 1919, Martin Heepe présente Karl Atangana, fils du chef Atangana Esomba, comme le chef supérieur des Jaunde.",
+      "relationsWithNeighbors": "Les Ewondo sont proches des Bene, des Eton et des Bulu par la langue. Selon Zenker, ils ont pour voisins les Mvele à l'est, les Ntoni au nord, les Bane au sud-est, les Bulei au sud, les Ngumba au sud-ouest et les Bakoko à l'ouest. Le récit de Paul Messi raconte les guerres des Ewondo contre les peuples qui les précédaient, et surtout contre les Bulu.",
+      "conflictsOrAlliances": "Karl Atangana raconte la guerre du chef Omgbabisogo, des Mvog-Otu, contre les Européens du poste de Jaunde ; d'autres groupes ewondo refusèrent de s'y joindre.",
+      "diaspora": null
     },
     "demography": {
-      "totalPopulation": 2050000,
-      "referenceYear": 2025,
-      "source": "PeopleGroups.org (2025): environ 2 050 000 Ewondo au Cameroun. Sources complementaires: Languages of Cameroon (Wikipedia): 578 000 locuteurs Ewondo recenses; Ethnologue (ewo). La difference s'explique par la definition ethnique versus linguistique. Estimation 2025 basee sur taux de croissance demographique camerounais.",
+      "totalPopulation": 2105000,
+      "referenceYear": 2026,
+      "source": "Estimation non datée du site missionnaire PeopleGroups.org, tenu par l'International Mission Board, consultée le 3 novembre 2026 : environ 2 105 000 Ewondo au Cameroun. En 1963, Pierre Alexandre estime que le groupe de langues qui réunit l'ewondo, le bulu, l'eton et le fang compte probablement plus d'un million de locuteurs. Nous n'avons pas trouvé de recensement qui compte les Ewondo.",
       "distributionByCountry": [
         {
           "country": "CMR",
-          "population": 2050000
+          "population": 2105000,
+          "note": "Région du Centre, autour de Yaoundé."
         }
       ]
     },
@@ -269,24 +475,125 @@
         "title": "PeopleGroups.org – Ewondo of Cameroon",
         "url": "https://peoplegroups.org/people_groups/pg012592/",
         "tier": "unverified",
-        "source_kind": "missionary_database"
+        "source_kind": "missionary_database",
+        "notes": "Base de données missionnaire de l'International Mission Board, lu le 3 novembre 2026 : environ 2 105 000 Ewondo au Cameroun, chiffre non daté."
       },
       {
         "title": "African Music Library – Bikutsi genre",
         "url": "https://www.africanmusiclibrary.org/genre/Bikutsi",
-        "tier": "referenced"
+        "tier": "referenced",
+        "source_kind": "community",
+        "notes": "Page consacrée au bikutsi, lu le 3 novembre 2026 : son origine chez les femmes beti avant les années 1960, le sens du mot en ewondo et les groupes des années 1980 et 1990."
       },
       {
         "title": "Glottolog – Beti",
         "url": "https://glottolog.org/resource/languoid/id/beti1250",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Entrée retirée du catalogue, lu le 3 novembre 2026 : Beti y est un nom de groupe qui réunit le bebele, le bebil, le bulu, l'eton, l'ewondo, le fang et le mengisa."
       },
       {
         "title": "101 Last Tribes – Ewondo people",
         "url": "https://www.101lasttribes.com/tribes/ewondo.html",
         "tier": "unverified",
         "source_kind": "community"
+      },
+      {
+        "title": "Glottolog — Ewondo",
+        "author": "Glottolog",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/ewon1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues, lu le 3 novembre 2026 : la langue ewondo (ewo), parlée au Cameroun, rangée dans le groupe Yaunde-Fang (A.70) ; autres noms relevés : Ewundu, Jaunde, Yaounde, Yaunde."
+      },
+      {
+        "title": "Lehrbuch der Jaunde-Sprache",
+        "author": "Hermann Nekes",
+        "year": 1911,
+        "url": "https://archive.org/details/lehrbuchderjaund00nekeuoft",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "page": "p. 1-2, 35",
+        "notes": "Berlin, Georg Reimer, 1911 ; grammaire écrite par un missionnaire pallottin en période coloniale allemande. lu le 3 novembre 2026 dans la numérisation d'Internet Archive : le passage de la Sanaga, le rôle de langue commune de l'ewondo (p. 1-2) et les noms de peuple et de lignée (p. 35)."
+      },
+      {
+        "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+        "author": "Günter Tessmann",
+        "year": 1913,
+        "url": "https://archive.org/details/diepangwevlkerku01tess",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 4, 43-44",
+        "notes": "Berlin, Ernst Wasmuth, 1913 ; monographie issue de l'expédition de Lübeck de 1907-1909, écrite en période coloniale allemande. lu le 3 novembre 2026 dans la numérisation d'Internet Archive : les emprunts des Jaunde aux Bati (p. 4), le groupe de familles et la liste des familles jaunde (p. 43-44)."
+      },
+      {
+        "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 2",
+        "author": "Günter Tessmann",
+        "year": 1913,
+        "url": "https://archive.org/details/diepangwevlkerku02tess",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 43-45",
+        "notes": "lu le 3 novembre 2026 dans la numérisation d'Internet Archive : la liste des cultes pangwe et le Sso des Jaunde, décrit d'après des informateurs jaunde."
+      },
+      {
+        "title": "Yaünde, Mittheilungen von Forschungsreisenden und Gelehrten aus den deutschen Schutzgebieten, VIII",
+        "author": "G. Zenker",
+        "year": 1895,
+        "url": "https://archive.org/details/mittheilungenvon08unse",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 36-46",
+        "notes": "Berlin, 1895. lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Article du botaniste G. Zenker sur le peuple du poste de Yaünde : les groupes du peuple, ses voisins, son pays, ses hameaux et sa religion."
+      },
+      {
+        "title": "Jaunde-Texte von Karl Atangana und Paul Messi, nebst experimentalphonetischen Untersuchungen über die Tonhöhen im Jaunde und einer Einführung in die Jaundesprache",
+        "author": "Karl Atangana et Paul Messi, textes édités par Martin Heepe",
+        "year": 1919,
+        "url": "https://archive.org/details/jaundetextevonka00heepuoft",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 75, 103-104, 256-257",
+        "notes": "Hambourg, L. Friederichsen, 1919. lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Textes écrits en ewondo par le chef Karl Atangana vers 1914, puis par son neveu Paul Messi pendant la guerre, avec leur traduction allemande : la guerre d'Omgbabisogo (n° 21), « Von den Jaunde » (n° 37) et la traversée du Yom (n° 33)."
+      },
+      {
+        "title": "A Life for Africa: Rev. Adolphus Clemens Good, Ph. D.",
+        "author": "Ellen C. Parsons",
+        "year": 1898,
+        "url": "https://archive.org/details/alifeforafricar00parsgoog",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 199",
+        "notes": "New York, Fleming H. Revell, 1898. lu le 3 novembre 2026 dans la numérisation d'Internet Archive : une lettre de 1892 où Good compare la langue d'un homme yewondo à celle des Bulu."
+      },
+      {
+        "title": "Aperçu sommaire sur le Pidgin A 70 du Cameroun",
+        "author": "Pierre Alexandre",
+        "year": 1963,
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1963_num_3_12_3715",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "page": "p. 577",
+        "notes": "Cahiers d'études africaines, vol. 3, n° 12, 1963 ; première page lu le 3 novembre 2026 sur Persée : le groupe de langues A 70, « avec probablement plus d'un million de locuteurs », est le plus important groupe bantou du Cameroun et du Gabon."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Ewondo sont un peuple beti du centre du Cameroun. Les Allemands les appelaient Jaunde, et le poste qu'ils fondèrent chez eux en 1889 est devenu Yaoundé.",
+      "followUp": "Comment le nom des Ewondo est-il devenu celui de Yaoundé ?"
+    },
+    "gaps": [
+      {
+        "field": "content.origins.formationPeriod",
+        "reason": "Nous n'avons pas trouvé de source qui date le passage des Ewondo sur la rive gauche de la Sanaga ; Nekes et Paul Messi le racontent sans lui donner de date."
+      },
+      {
+        "field": "content.appellations.whyProblematic",
+        "reason": "Nous n'avons pas trouvé de source qui juge blessants les noms Jaunde ou Yaoundé."
+      },
+      {
+        "field": "content.historicalRole.diaspora",
+        "reason": "Nous n'avons pas trouvé de source qui décrive les Ewondo installés hors de leur région ou hors du Cameroun."
       }
     ]
   }

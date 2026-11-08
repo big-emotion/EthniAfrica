@@ -3,9 +3,9 @@
   "nameFr": "Éthiopie",
   "nameEn": "Ethiopia",
   "nameOfficial": "République fédérale démocratique d'Éthiopie (የኢትዮጵያ ፌዴራላዊ ዲሞክራሲያዊ ሪፐብሊክ)",
-  "summary": "L'Éthiopie est nommée par un mot grec, « Aithiopia », le pays des visages brûlés ; les Égyptiens l'appelaient Pount. Du royaume d'Axoum à l'Empire salomonien, son histoire étatique est ininterrompue, et elle n'a jamais été durablement colonisée — l'occupation italienne mise à part. Oromo, Amhara, Somali, Tigréens, Sidama et Gurage y composent une mosaïque sémitique et couchitique.",
-  "etymology": "Le nom \"Éthiopie\" viendrait du grec \"Αἰθιοπία\" (Aithiopia), qui voudrait dire \"pays des visages brûlés\" ou \"pays des Noirs\". Le terme était utilisé par les Grecs anciens pour désigner les terres au sud de l'Égypte. Le nom amharique \"Ityop'iya\" (ኢትዮጵያ) serait dérivé du grec.",
-  "nameOriginActor": "Le nom \"Éthiopie\" a été utilisé par les Grecs anciens et adopté par les royaumes éthiopiens. Le nom amharique \"Ityop'iya\" est dérivé du grec. Le pays s'est appelé \"Abyssinie\" par les Européens jusqu'au XXe siècle.",
+  "summary": "Le nom Éthiopie est écrit dès l'Antiquité par des auteurs grecs, qui l'appliquaient surtout au pays de Koush, au sud de l'Égypte ; il entre dans le titre des rois au XIIIe siècle et désigne aujourd'hui la République fédérale démocratique d'Éthiopie, qui se nomme Ītyop'iya en amharique. Ses voisins arabes puis les Européens l'ont aussi appelée Abyssinie, d'après le nom arabe Ḥabasha. Le pays a été occupé par l'Italie de 1936 à 1941 ; plus de quatre-vingts peuples y ont été recensés en 2007, dont les plus nombreux sont les Oromo et les Amhara.",
+  "etymology": "Le nom Éthiopie viendrait d'un mot grec qui voudrait dire « au visage brûlé », c'est-à-dire à la peau foncée, selon E. A. Wallis Budge et plusieurs auteurs de l'Histoire générale de l'Afrique de l'UNESCO ; cette traduction habituelle a été discutée au colloque de Dakar de 1976. Le Livre d'Aksum, un recueil de textes en guèze, propose une autre explication : le nom viendrait d'Ityopis, présenté comme le « père des Éthiopiens ». Le nom Abyssinie reprend Ḥabasha, le nom que les géographes arabes donnaient au territoire des Éthiopiens ; son origine est elle aussi discutée, et les explications proposées sont présentées dans l'histoire du nom.",
+  "nameOriginActor": "Le nom Éthiopie a d'abord été écrit par des auteurs grecs, d'Homère à Diodore de Sicile, pour des peuples et des pays situés au sud de l'Égypte. Au IVe siècle, la version grecque d'une inscription du roi Ezana d'Aksum l'emploie déjà. Selon E. A. Wallis Budge, il serait passé au pays d'Aksum par la traduction de la Bible en guèze, et les rois l'ont porté dans leur titre depuis Yekouno Amlak, au XIIIe siècle. Le nom Abyssinie vient du nom arabe Ḥabasha ; les Européens l'ont employé jusqu'au XXe siècle.",
   "nameHistory": {
     "summary": "Le nom Éthiopie désigne un pays de la Corne de l'Afrique, la République fédérale démocratique d'Éthiopie, qui se nomme elle-même Ītyop'iya en amharique. Pendant des siècles, ses voisins arabes puis les Européens l'ont aussi appelée Abyssinie. Les sources ne s'accordent pas sur l'origine de ces deux noms ; nous les présentons plus bas.",
     "names": [
@@ -631,20 +631,38 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Pount (égyptien ancien)",
-        "Abyssinie (usage européen jusqu'au XXe siècle)",
-        "République socialiste d'Éthiopie (1974-1991)"
+        "Ḥabasha (nom donné par les géographes arabes)",
+        "Abyssinie (nom employé par les Européens jusqu'au XXe siècle)",
+        "Abyssinie italienne (sur des cartes européennes, après 1889)"
       ],
-      "antiquity": "Le territoire était connu sous le nom de \"Pount\" par les Égyptiens anciens. Les Grecs anciens utilisaient \"Éthiopie\" pour désigner les terres au sud de l'Égypte. Royaume d'Axoum (Ier-VIIe siècles).",
-      "middleAges": "Empire d'Éthiopie (XIIIe-XXe siècles) avec dynasties salomonides. Le nom \"Éthiopie\" était utilisé par les royaumes éthiopiens. Les Européens utilisaient \"Abyssinie\" (dérivé de \"Habesha\").",
-      "precolonial": "Empire d'Éthiopie avec empereur (Negusa Nagast). Le nom \"Éthiopie\" était utilisé officiellement. \"Abyssinie\" était le nom utilisé par les Européens.",
-      "colonization": "L'Éthiopie n'a jamais été colonisée (sauf occupation italienne brève, 1936-1941). Le nom \"Éthiopie\" était maintenu. \"Abyssinie\" était le nom utilisé par les Européens jusqu'au XXe siècle.",
-      "contemporary": "1974 : Chute de l'empire, République socialiste d'Éthiopie. 1991 : Transition démocratique. 1995 : République fédérale démocratique d'Éthiopie (nom actuel). Le nom officiel en amharique est \"የኢትዮጵያ ፌዴራላዊ ዲሞክራሲያዊ ሪፐብሊክ\"."
+      "antiquity": "Des inscriptions trouvées dans le Tigray et l'Érythrée actuels, datées des Ve et IVe siècles avant notre ère, nomment des rois qui portent le titre de « mukarrib de Dʿmt et de Saba », selon H. de Contenson. À la même époque, les auteurs grecs appellent « Éthiopiens » surtout les habitants du pays de Koush, l'actuel Soudan. Le royaume d'Aksum se forme ensuite sur les hauts plateaux ; son nom apparaît par écrit à la fin du Ier siècle, et au IVe siècle son roi Ezana se dit roi des Éthiopiens dans la version grecque d'une de ses inscriptions. Plus anciennement, l'Égypte commerçait avec le pays de Pount, que la plupart des historiens placent dans la Corne de l'Afrique, sans en connaître les limites exactes.",
+      "middleAges": "Après la fin de la dynastie d'Aksum, une nouvelle dynastie venue du Lasta, chez les Agaw, s'établit au centre du pays : la dynastie zagwé, dont le roi le plus célèbre est Lalibela, selon Tekle-Tsadik Mekouria. En 1270, Yekouno Amlak renverse les Zagwé et fonde la dynastie dite salomonide ; depuis son règne, chaque roi se dit « roi des rois d'Éthiopie ». À l'est, des sultanats musulmans comme Ifat, puis Adal, tiennent les routes du commerce vers le golfe d'Aden. Les géographes arabes appellent alors le pays Ḥabasha et ses habitants al-Ḥabash.",
+      "precolonial": "De 1527 à 1543, l'imam Ahmad ibn Ibrahim, que les chroniques chrétiennes surnomment Gragn, « le gaucher », mène depuis Adal une guerre qui met le royaume chrétien au bord de la défaite. Au même moment, des groupes oromo s'installent dans le centre, l'est et l'ouest du pays. La cour, jusque-là mobile, se fixe à Gondar en 1636. Ménélik II installe sa capitale à Addis-Abeba en 1887 et étend son royaume vers le sud. Quand l'Italie prétend établir un protectorat, en 1889, des cartes imprimées en Europe appellent le pays « Abyssinie italienne » ; l'Éthiopie bat l'Italie à Adoua le 1er mars 1896 et reste indépendante.",
+      "colonization": "L'Italie entame la conquête de l'Éthiopie le 3 octobre 1935 et occupe le pays de 1936 à 1941. L'empereur Haylé Sellasié revient à Addis-Abeba le 5 mai 1941, avec l'appui des troupes britanniques. En dehors de cette occupation, aucune puissance européenne n'a colonisé l'Éthiopie, selon la fiche de toponymie britannique.",
+      "contemporary": "L'Érythrée est fédérée à l'Éthiopie en 1952 ; elle en fait partie jusqu'à son indépendance, en 1993. Le 12 septembre 1974, un coup d'État militaire destitue l'empereur ; la monarchie est abolie le 21 mars 1975, et le gouvernement militaire, le Derg, mené par Mengistu Haile Mariam, suit une voie socialiste. Une constitution adoptée par référendum en 1987 installe un régime de démocratie populaire, qui prend fin le 28 mai 1991. La Constitution du 21 août 1995 donne à l'État son nom actuel, République fédérale démocratique d'Éthiopie ; en amharique, le pays se nomme Ītyop'iya."
     },
     "kingdoms": [
       {
+        "name": "Royaume de Dʿmt",
+        "period": "Ve-IVe siècle av. J.-C., d'après ses inscriptions",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": -500,
+          "endYear": -301,
+          "precision": "approximate",
+          "datingNote": "Les bornes reprennent la date des inscriptions de cette période, fixée en les comparant à des monuments d'Arabie du Sud des Ve et IVe siècles avant notre ère, selon H. de Contenson. Elles ne donnent ni la fondation ni la fin du royaume."
+        },
+        "dominantPeoples": [
+          "Rois se réclamant d'une ascendance sud-arabique et d'un groupe local, les Yg'd"
+        ],
+        "politicalCenters": [
+          "Hauts plateaux du Tigray et de l'Érythrée actuels, où l'on a trouvé ses inscriptions (Yeha, Matara, Addi Galamo)"
+        ],
+        "historicalRole": "Une monarchie héréditaire dont deux rois, Rbh et son fils Lmm, portent le titre de « mukarrib de D'iamat et de Saba », selon H. de Contenson. Ce titre montre des rois attachés à leur ascendance sud-arabique, qui gouvernaient aussi une population locale ; son sens exact reste discuté."
+      },
+      {
         "name": "Royaume d'Axoum",
-        "period": "Ier siècle av. J.-C. - IXe siècle",
+        "period": "Vers 80 av. J.-C. - vers 825",
         "entryType": "polity",
         "timeRange": {
           "startYear": -80,
@@ -652,33 +670,103 @@
           "precision": "approximate",
           "datingNote": "Bornes de M. Curtis et P. R. Schmidt (GHA IX, 2025), tirées de l'archéologie : le royaume va d'environ 80 av. J.-C. à 825. F. Anfray (HGA II, 1980) étudie la civilisation d'Axoum du Ier au VIIe siècle, et le nom d'Axoum n'apparaît par écrit qu'à la fin du Ier siècle, dans le Périple de la mer Érythrée."
         },
-        "dominantPeoples": ["Habesha (précurseurs des Amhara et Tigréens)"],
-        "politicalCenters": ["Axoum (capitale)"],
-        "historicalRole": "Royaume puissant, christianisation (IVe siècle), commerce avec l'Arabie, l'Inde et la Méditerranée. Centre intellectuel et religieux."
+        "dominantPeoples": ["Aksumites"],
+        "politicalCenters": ["Aksum"],
+        "historicalRole": "Royaume né sur les hauts plateaux de l'Éthiopie actuelle. À la fin du IIe siècle, des inscriptions d'Arabie du Sud montrent ses armées en guerre au Yémen, selon Y. M. Kobishanov. Au IVe siècle, son roi Ezana est le premier souverain d'Aksum à embrasser le christianisme, selon J. Leclant ; après sa conversion, les monnaies portent une croix, selon F. Anfray."
       },
       {
-        "name": "Empire d'Éthiopie",
-        "period": "XIIIe - XXe siècles",
+        "name": "Royaume zagwé",
+        "period": "XIIe siècle - 1270",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1201,
-          "endYear": 2000,
-          "precision": "century"
+          "startYear": 1101,
+          "endYear": 1270,
+          "precision": "approximate",
+          "datingNote": "La dynastie s'enracine au XIIe siècle selon Tekle-Tsadik Mekouria, qui signale une tradition la faisant commencer au Xe ou au XIe siècle. La fin, en 1270, est la date que les traditions donnent à sa chute devant Yekouno Amlak, selon Taddesse Tamrat."
         },
-        "dominantPeoples": [
-          "Amhara",
-          "Tigréens",
-          "Oromo",
-          "autres peuples éthiopiens"
-        ],
-        "politicalCenters": [
-          "Gondar (résidence impériale à partir de 1636)",
-          "Addis-Abeba (capitale depuis 1889)"
-        ],
-        "historicalRole": "Empire puissant avec dynasties salomonides, christianisation, expansion territoriale, résistance à la colonisation."
+        "dominantPeoples": ["Agaw du Lasta"],
+        "politicalCenters": ["Lasta, au centre de l'Éthiopie actuelle"],
+        "historicalRole": "Dynastie qui remplace celle d'Aksum et s'établit au centre du pays, tout en gardant beaucoup de traditions axoumites. Elle connaît son apogée aux XIIe et XIIIe siècles ; son roi le plus célèbre est Lalibela, selon Tekle-Tsadik Mekouria."
       },
       {
-        "name": "République socialiste d'Éthiopie",
+        "name": "Royaume chrétien sous la dynastie salomonide",
+        "period": "1270 - 1974",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1270,
+          "endYear": 1974,
+          "precision": "year"
+        },
+        "dominantPeoples": ["Amhara", "Tigray"],
+        "politicalCenters": [
+          "Cour mobile, faite de grands camps de tentes, jusqu'en 1636",
+          "Gondar (résidence de la cour à partir de 1636)",
+          "Addis-Abeba (capitale de Ménélik II à partir de 1887)"
+        ],
+        "historicalRole": "Yekouno Amlak, un chef local de l'Amhara, renverse les Zagwé en 1270 ; sa dynastie se présente comme la restauration de l'ancienne dynastie salomonide d'Aksum, selon Taddesse Tamrat. Sous Amde Seyon (1314-1344), le royaume soumet au tribut les sultanats musulmans voisins. Il reste jusqu'au XVIe siècle une confédération lâche de principautés de religions, de peuples et de langues différents. Ménélik II l'étend vers le sud à la fin du XIXe siècle et bat l'Italie à Adoua en 1896. Le dernier empereur, Haylé Sellasié, est destitué le 12 septembre 1974."
+      },
+      {
+        "name": "Sultanats d'Ifat puis d'Adal",
+        "period": "XIIIe siècle - fin du XVIe siècle",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1250,
+          "endYear": 1570,
+          "precision": "approximate",
+          "datingNote": "Les bornes résument deux États successifs gouvernés par la même famille, les Walasma. Ifat devient le principal État musulman de la région au milieu du XIIIe siècle, sous ʿUmar Walasma, contemporain de Yekouno Amlak. Une branche de la famille reprend ensuite la direction depuis le plateau de Harar, avec Adal. Les attaques oromo des années 1554 à 1570 détruisent la plus grande partie d'Adal ; seule la ville fortifiée de Harar résiste."
+        },
+        "dominantPeoples": ["Communautés musulmanes des routes de Zeila"],
+        "politicalCenters": [
+          "Ifat, entre le golfe d'Aden et le plateau du Choa",
+          "Plateau de Harar (Adal)"
+        ],
+        "historicalRole": "Ifat tient la route commerciale qui relie le port de Zeila, sur le golfe d'Aden, au plateau du Choa. Le roi chrétien Amde Seyon en fait un État tributaire peu avant 1332, selon Taddesse Tamrat. Adal reprend la lutte : son imam Ahmad ibn Ibrahim, dit Gragn, mène de 1527 à 1543 une guerre qui met le royaume chrétien au bord de la défaite ; il est tué en 1543, selon E. Haberland."
+      },
+      {
+        "name": "Groupes oromo organisés par le gada",
+        "period": "XVIe siècle - fin du XIXe siècle",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1530,
+          "endYear": 1900,
+          "precision": "approximate",
+          "datingNote": "Les bornes vont des premières migrations datées par E. Haberland, après 1530, à la soumission des groupes oromo par l'empereur Ménélik à la fin du XIXe siècle. Elles ne décrivent pas un État unique : à la fin du XIXe siècle, les Oromo formaient plus de quatre-vingts groupes politiquement indépendants."
+        },
+        "dominantPeoples": ["Oromo"],
+        "politicalCenters": [
+          "Hauts plateaux autour de Bale, d'où partent les migrations, puis centre, est et ouest de l'Éthiopie"
+        ],
+        "historicalRole": "Le gada est un système de classes d'âge qui règle toute la vie sociale et politique des Oromo. Chaque classe dure huit ans ; le chef, souvent appelé abba gada, est élu parmi les membres de la cinquième classe, selon E. Haberland. À partir du XVIe siècle, des groupes oromo s'installent dans le centre, l'est et l'ouest de l'Éthiopie ; vers 1700, une grande partie du pays est sous leur contrôle."
+      },
+      {
+        "name": "Royaume du Kaffa",
+        "period": "XVIe ou XVIIe siècle - fin du XIXe siècle",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1550,
+          "endYear": 1900,
+          "precision": "approximate",
+          "datingNote": "Selon la tradition orale rapportée par E. Haberland, des membres de la dynastie busaso du royaume d'Inariya fondent le Kaffa aux XVIe et XVIIe siècles. M. B. Akpan range le Kaffa parmi les territoires que Ménélik II acquiert à la fin du XIXe siècle. Ni l'un ni l'autre ne donne d'année précise."
+        },
+        "dominantPeoples": ["Gonga"],
+        "politicalCenters": [],
+        "historicalRole": "Royaume du sud-ouest de l'Éthiopie, l'un des États gonga fondés par la dynastie d'Inariya. Selon E. Haberland, il passe pour avoir été pendant des générations l'État le plus important et le plus puissant du sud éthiopien. Ménélik II l'annexe à son royaume, surtout par la conquête, selon M. B. Akpan. Les sources consultées ne nomment pas sa capitale et ne donnent pas l'année de la conquête."
+      },
+      {
+        "name": "Occupation italienne",
+        "period": "1936 - 1941",
+        "entryType": "colonial",
+        "timeRange": {
+          "startYear": 1936,
+          "endYear": 1941,
+          "precision": "year"
+        },
+        "dominantPeoples": [],
+        "politicalCenters": [],
+        "historicalRole": "L'Italie entame la conquête de l'Éthiopie le 3 octobre 1935 et occupe le pays de 1936 à 1941. L'empereur Haylé Sellasié revient à Addis-Abeba le 5 mai 1941, avec l'appui des troupes britanniques."
+      },
+      {
+        "name": "Gouvernement militaire du Derg, puis régime de démocratie populaire",
         "period": "1974 - 1991",
         "entryType": "modern",
         "timeRange": {
@@ -686,11 +774,9 @@
           "endYear": 1991,
           "precision": "year"
         },
-        "dominantPeoples": [
-          "Tous les peuples éthiopiens sous régime socialiste"
-        ],
-        "politicalCenters": ["Addis-Abeba (capitale)"],
-        "historicalRole": "Chute de l'empire (1974), régime socialiste (Derg), guerre civile, famine."
+        "dominantPeoples": [],
+        "politicalCenters": ["Addis-Abeba"],
+        "historicalRole": "Un coup d'État militaire destitue l'empereur le 12 septembre 1974 ; Mengistu Haile Mariam prend le pouvoir et la monarchie est abolie le 21 mars 1975. Après douze ans de gouvernement révolutionnaire, le Derg, une constitution adoptée par référendum le 1er février 1987 installe un régime de démocratie populaire. Ce régime socialiste prend fin le 28 mai 1991."
       },
       {
         "name": "République fédérale démocratique d'Éthiopie",
@@ -701,101 +787,110 @@
           "ongoing": true,
           "precision": "year"
         },
-        "dominantPeoples": ["Tous les peuples éthiopiens"],
-        "politicalCenters": ["Addis-Abeba (capitale)"],
-        "historicalRole": "Transition démocratique (1991), fédéralisme ethnique (1995), développement économique, défis de gouvernance et de stabilité."
+        "dominantPeoples": [],
+        "politicalCenters": ["Addis-Abeba"],
+        "historicalRole": "La Constitution du 21 août 1995 établit un régime fédéral et parlementaire. L'État compte aujourd'hui douze États régionaux et deux villes autonomes, Addis-Abeba et Dire Dawa, selon la fiche de toponymie britannique."
       }
     ],
     "majorPeoples": [
       {
         "name": "Oromo",
         "selfAppellation": "Oromoo",
-        "exonyms": [
-          "\"Galla\" (terme colonial et éthiopien ancien",
-          "péjoratif",
-          "rejeté par les Oromo)"
-        ],
+        "exonyms": ["Galla"],
         "peopleId": "PPL_OROMO",
-        "mainRegion": "Oromia (centre, est, sud)",
-        "languages": ["Oromo", "amharique", "anglais"],
+        "mainRegion": "Région Oromia, où ils formaient 87,8 % des habitants en 2007",
+        "languages": ["Oromo (orm)"],
         "languageFamily": "FLG_COUCHITIQUE",
-        "appellationRemarks": "Le terme \"Galla\" est colonial et péjoratif, totalement rejeté. L'auto-appellation \"Oromoo\" est préférée. Le terme \"Galla\" était utilisé par les sources abyssiniennes médiévales avec connotation négative."
+        "appellationRemarks": "Les Oromo ont longtemps été appelés Galla, un nom que leur donnaient leurs voisins, selon E. Haberland. Le même auteur rapporte que des historiens amhara les décrivaient comme des barbares, une image qu'il juge fausse."
       },
       {
         "name": "Amhara",
-        "selfAppellation": "አማራ (Āmara)",
-        "exonyms": [
-          "\"Abyssins\" (terme européen ancien",
-          "colonial et imprécis)",
-          "\"Habesha\" (terme englobant Amhara + Tigray)"
-        ],
+        "selfAppellation": "Āmara (አማራ)",
+        "exonyms": ["Abyssins"],
         "peopleId": "PPL_AMHARA",
-        "mainRegion": "Hautes terres du centre et du nord-ouest (Gojjam, Gondar, Wollo)",
-        "languages": ["Amharique", "anglais"],
+        "mainRegion": "Région Amhara, où ils formaient 91,5 % des habitants en 2007",
+        "languages": ["Amharique (amh)"],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "Le terme \"Abyssins\" est colonial et imprécis. L'auto-appellation \"Āmara\" est préférée. \"Habesha\" peut être revendiqué ou rejeté selon le contexte."
+        "appellationRemarks": "Le nom Abyssins vient d'Abyssinie, une forme européenne du nom arabe Habash, selon E. A. Wallis Budge ; il désignait les habitants du pays chrétien dans leur ensemble, et pas les seuls Amhara."
       },
       {
         "name": "Somali",
         "selfAppellation": "Soomaali",
-        "exonyms": [
-          "Somali (terme utilisé par les Européens)",
-          "\"Somalies\" (forme coloniale française)"
-        ],
+        "exonyms": [],
         "peopleId": "PPL_SOMALI",
-        "mainRegion": "Ogaden (Est)",
-        "languages": ["Somali", "amharique", "anglais"],
+        "mainRegion": "Région Somali, à l'est, où ils formaient 97,2 % des habitants en 2007",
+        "languages": ["Somali (som)"],
         "languageFamily": "FLG_COUCHITIQUE",
-        "appellationRemarks": "Le terme \"Somali\" est neutre et accepté. L'auto-appellation \"Soomaali\" est préférée."
+        "appellationRemarks": "Selon E. Haberland, les Somali se considèrent comme un seul peuple au moins depuis le XVIe siècle, malgré leur division en nombreux groupes généalogiques."
       },
       {
-        "name": "Tigréens",
+        "name": "Tigray",
         "selfAppellation": "Tigray (ትግራይ)",
-        "exonyms": [
-          "Tigréens (terme utilisé par les Européens)",
-          "\"Habesha\" (terme englobant)"
-        ],
-        "peopleId": "PPL_TIGRE",
-        "mainRegion": "Tigray (Nord)",
-        "languages": ["Tigrinya", "amharique", "anglais"],
+        "exonyms": ["Tigréens"],
+        "peopleId": "PPL_TIGRAY",
+        "mainRegion": "Région Tigray, au nord, où ils formaient 96,6 % des habitants en 2007",
+        "languages": ["Tigrinya (tir)"],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "Le terme \"Tigréens\" est neutre et accepté. L'auto-appellation \"Tigray\" est préférée."
+        "appellationRemarks": "Le recensement de 2007 écrit ce nom Tigrie dans son tableau principal et Tigray dans ses annexes."
       },
       {
         "name": "Sidama",
         "selfAppellation": "Sidama",
-        "exonyms": ["Sidama (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_SIDAMA",
-        "mainRegion": "Sidama (Sud)",
-        "languages": ["Sidama", "amharique", "anglais"],
+        "mainRegion": "Région Sidama, au sud, créée en 2020",
+        "languages": ["Sidamo (sid)"],
         "languageFamily": "FLG_COUCHITIQUE",
-        "appellationRemarks": "Le terme \"Sidama\" est neutre et accepté."
+        "appellationRemarks": "Le catalogue des langues Glottolog nomme leur langue Sidamo."
       },
       {
         "name": "Gurage",
         "selfAppellation": "Gurage",
-        "exonyms": ["Gurage (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_GURAGE",
-        "mainRegion": "Centre-Sud",
-        "languages": ["Gurage", "amharique", "anglais"],
+        "mainRegion": "Centre-sud du pays ; en 2007, la région des nations, nationalités et peuples du Sud et la région Oromia",
+        "languages": ["Sebat Bet Gurage (sgw)"],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "Le terme \"Gurage\" est neutre et accepté."
+        "appellationRemarks": "Le recensement de 2007 écrit ce nom Guragie."
       }
     ],
     "culture": {
-      "culturalTraditions": "Musique traditionnelle (azmari, begena), danse traditionnelle, poésie orale (qené), artisanat (tissage, poterie, croix éthiopiennes), architecture traditionnelle (églises rupestres de Lalibela), système gadaa (Oromo)",
-      "dominantReligions": "Christianisme orthodoxe éthiopien (majoritaire), islam (minorité importante), croyances traditionnelles (syncrétisme)",
-      "lifestyles": "Vie principalement rurale, agriculture (café, teff, sorgho, maïs), élevage (bovins, caprins, dromadaires), pêche (lacs), commerce, urbanisation croissante",
-      "socialOrganization": "Système de chefferies traditionnelles, structure clanique (patrilinéaire ou matrilinéaire selon les groupes), organisation en familles étendues et lignages, système gadaa (Oromo), importance des ancêtres",
-      "regionalRelations": "Relations historiques avec les peuples d'Érythrée, du Soudan, du Soudan du Sud, du Kenya, de la Somalie, de Djibouti. Diaspora importante aux États-Unis, en Europe, et dans les pays occidentaux."
+      "mainLanguages": [
+        {
+          "name": "Amharique",
+          "isoCode": "amh",
+          "isPrimary": true
+        },
+        {
+          "name": "Oromo",
+          "isoCode": "orm"
+        },
+        {
+          "name": "Tigrinya",
+          "isoCode": "tir"
+        },
+        {
+          "name": "Somali",
+          "isoCode": "som"
+        },
+        {
+          "name": "Afar",
+          "isoCode": "aar"
+        }
+      ],
+      "culturalTraditions": "L'écriture guèze, aussi appelée éthiopienne, est propre à la Corne de l'Afrique : chaque signe note une syllabe, et elle sert à écrire l'amharique et le tigrinya, selon la fiche de toponymie britannique. Au Moyen Âge, les princes de la dynastie salomonide tenus à l'écart sur le mont Gechen se distinguaient comme poètes en guèze et compositeurs de musique sacrée, selon Taddesse Tamrat. À l'époque de Gondar, entre 1632 et 1750 environ, la cour encourage de nouveaux styles d'architecture, selon P. Diagne.",
+      "dominantReligions": "Au recensement de 2007, 43,5 % des habitants se déclarent chrétiens orthodoxes, 33,9 % musulmans, 18,6 % protestants, 2,6 % fidèles des religions traditionnelles et 0,7 % catholiques.",
+      "lifestyles": "Au recensement de 2007, environ 16 % des habitants vivent en ville, soit 11 956 170 personnes sur 73 918 505 ; tous les autres vivent à la campagne.",
+      "socialOrganization": "Chez les Oromo, le gada organise toute la vie en classes d'âge de huit ans : chaque homme entre dans la classe des enfants quarante ans après son père, et le chef, souvent appelé abba gada, est élu parmi les membres de la cinquième classe, selon E. Haberland. Les Oromo se rattachent à deux grands ancêtres, Borana et Barentu. Les Somali se répartissent en nombreux groupes généalogiques, mais se considèrent comme un seul peuple.",
+      "regionalRelations": "L'Éthiopie n'a pas d'accès à la mer. Elle a des frontières avec l'Érythrée, Djibouti, la Somalie, le Kenya, le Soudan et le Soudan du Sud, selon la fiche de toponymie britannique. L'Érythrée a fait partie de l'Éthiopie jusqu'en 1993 ; les deux pays se sont de nouveau fait la guerre de 1998 à 2000, autour de la ville frontalière de Badme. Au Moyen Âge, le royaume chrétien commerçait avec le monde musulman par les ports de Dahlak, sur la mer Rouge, et de Zeila, sur le golfe d'Aden, selon Taddesse Tamrat."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement du territoire par des groupes couchitiques, sémitiques et nilotiques. Royaume d'Axoum (Ier-VIIe siècles) : christianisation (IVe siècle), commerce avec l'Arabie et l'Inde.",
-      "middleAges": "Empire d'Éthiopie (XIIIe-XXe siècles) avec dynasties salomonides. Expansion territoriale, christianisation, résistance à l'islam. Centre intellectuel et religieux.",
-      "precolonial": "Apogée de l'empire d'Éthiopie. Expansion territoriale, christianisation, résistance à la colonisation. L'Éthiopie reste indépendante (sauf occupation italienne brève, 1936-1941).",
-      "colonization": "L'Éthiopie n'a jamais été colonisée (sauf occupation italienne, 1936-1941). Résistance éthiopienne, maintien de l'indépendance.",
-      "independenceStruggle": "L'Éthiopie a toujours été indépendante (sauf occupation italienne, 1936-1941). Mouvements de modernisation et de réforme.",
-      "postIndependence": "Chute de l'empire (1974) : révolution, régime socialiste (Derg). Guerre civile, famine. Transition démocratique (1991). République fédérale démocratique (1995) : fédéralisme ethnique, développement économique, défis de gouvernance et de stabilité."
+      "ancientPeriods": "Les plus anciennes inscriptions royales des hauts plateaux, datées des Ve et IVe siècles avant notre ère, nomment des rois de Dʿmt liés à l'Arabie du Sud, selon H. de Contenson. Le royaume d'Aksum domine ensuite la région, d'environ 80 avant notre ère à environ 825. À la fin du IIe siècle, ses armées combattent au Yémen ; au IVe siècle, son roi Ezana adopte le christianisme.",
+      "middleAges": "La dynastie zagwé, venue du Lasta, gouverne aux XIIe et XIIIe siècles. Yekouno Amlak la renverse en 1270 et fonde la dynastie salomonide. Son petit-fils Amde Seyon (1314-1344) conquiert le Damot, le Hadya et le Gojjam, puis soumet au tribut les sultanats musulmans d'Ifat, du Dawaro, du Sharkha et du Bali ; l'historien arabe al-ʿUmari écrit qu'il aurait « quatre-vingt-dix-neuf rois sous lui ». Le roi Zara Yaqob repousse les attaques d'Adal et fonde une capitale à Debre Birhan, au Choa ; après lui, le royaume chrétien s'affaiblit, selon Taddesse Tamrat.",
+      "precolonial": "L'imam Ahmad ibn Ibrahim, dit Gragn, mène depuis Adal une guerre sainte contre le royaume chrétien de 1527 à 1543. Une troupe portugaise de 400 hommes, arrivée en 1541, se joint à l'armée de l'empereur, et l'imam est tué en février 1543 à l'est du lac Tana, selon E. Haberland. Les migrations oromo commencent vers 1530 et s'étendent au centre, à l'est et à l'ouest du pays. La cour se fixe à Gondar en 1636. Au XIXe siècle, Ménélik II étend son royaume vers le sud, notamment au Kaffa, au Wolaytta, au Sidama et au Bale.",
+      "colonization": "L'Italie prétend établir un protectorat sur l'Éthiopie à partir de 1889 ; vaincue à Adoua le 1er mars 1896, elle doit reconnaître l'indépendance du pays. Elle envahit l'Éthiopie en octobre 1935 et l'occupe de 1936 à 1941.",
+      "independenceStruggle": "Ménélik II dénonce le 12 février 1893 le traité de Wuchale, par lequel l'Italie voulait faire de l'Éthiopie son protectorat, puis son armée bat les Italiens à Adoua en 1896. Après l'occupation italienne, l'empereur Haylé Sellasié revient à Addis-Abeba le 5 mai 1941, avec l'appui des troupes britanniques.",
+      "postIndependence": "L'Érythrée est fédérée à l'Éthiopie en 1952. Un coup d'État militaire renverse l'empereur en 1974 ; le Derg gouverne jusqu'en 1987, puis un régime de démocratie populaire jusqu'au 28 mai 1991. L'Éthiopie reconnaît l'indépendance de l'Érythrée le 3 mai 1993, et la Constitution de 1995 établit un régime fédéral. Les deux pays se font la guerre de 1998 à 2000. À partir de fin 2020, la guerre entre le Front populaire de libération du Tigray et l'armée fédérale provoque une grave crise humanitaire, selon la fiche de toponymie britannique."
     },
     "sources": [
       {
@@ -870,6 +965,144 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre d'Eike Haberland (1999), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 787. « Le transfert de la résidence de l'empereur à Gondar, en 1636, est un signe de ce repli. »"
+      },
+      {
+        "title": "Summary and Statistical Report of the 2007 Population and Housing Census Results",
+        "url": "https://open.africa/dataset/d34d8ca9-97d3-4fb3-9249-47e2d3e3d322/resource/1af0860e-2fa6-4711-b9a7-53ddb04e721f/download/ethiopia-summary-and-statistical-report-of-the-2007-population-and-housing-census.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Commission du recensement de la population et Agence centrale de la statistique d'Éthiopie (aujourd'hui Ethiopian Statistics Service), Addis-Abeba, décembre 2008, imprimé par le Fonds des Nations unies pour la population ; copie mise en ligne par le portail openAFRICA, lue le 3 novembre 2026. Page 8 : 73 918 505 personnes recensées en mai et novembre 2007. Page 16, tableau 2.2 : « More than eighty ethnic groups were listed in the 2007 census » ; Oromo 25 488 344 (34,5 %), Amhara 19 867 817 (26,9 %), Somali 4 581 793 (6,2 %), « Tigrie » 4 483 776 (6,1 %), Sidama 2 966 377 (4,0 %), « Guragie » 1 867 350 (2,5 %), Welaita 1 707 074 (2,3 %), Hadiya 1 284 366 (1,7 %), Afar 1 276 372 (1,7 %), Gamo 1 107 163 (1,5 %). Page 17, tableau 2.3 : orthodoxes 43,5 %, musulmans 33,9 %, protestants 18,6 %, religions traditionnelles 2,6 %, catholiques 0,7 % ; population urbaine 11 956 170. Annexe, tableau 5, p. 84-110 : part de chaque peuple dans chaque région. Le chiffre des autres peuples (9 288 073, soit 12,6 %) est la différence entre le total et les dix peuples du tableau 2.2."
+      },
+      {
+        "title": "Toponymic Factfile: Ethiopia",
+        "url": "https://assets.publishing.service.gov.uk/media/6981e0cae8900d4c455f3759/Ethiopia_Toponymic_Factfile.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Permanent Committee on Geographical Names (PCGN), gouvernement britannique, mis à jour en janvier 2026, lu le 3 novembre 2026. Page 1 : nom du pays en amharique ኢትዮጵያ (Ītyop'iya) ; pays sans accès à la mer, voisin de l'Érythrée, de Djibouti, de la Somalie, du Kenya, du Soudan et du Soudan du Sud ; « Ethiopia was occupied by Italy from 1936 to 1941, but otherwise has not been colonised by a European power ». Page 2 : depuis février 2020, l'oromo (orm), le tigrinya (tir), le somali (som) et l'afar (aar) sont langues de travail fédérales à côté de l'amharique ; l'écriture guèze, propre à la Corne de l'Afrique, sert aussi au tigrinya. Page 4 : douze États régionaux et deux villes autonomes ; la région Sidama créée en juin 2020. Page 5 : guerre avec l'Érythrée de 1998 à 2000 autour de Badme ; guerre du Tigray depuis fin 2020."
+      },
+      {
+        "title": "Glottolog - Amharic (amha1245)",
+        "url": "https://glottolog.org/resource/languoid/id/amha1245",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Glottolog 5.3 — Nuclear Oromo (nucl1736)",
+        "url": "https://glottolog.org/resource/languoid/id/nucl1736",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue Glottolog 5.3, Institut Max Planck d'anthropologie évolutionnaire, lu le 3 novembre 2026. Famille « Nuclear Oromo », classée dans le couchitique oriental des basses terres ; le code ISO 639-3 gaz y renvoie au West Central Oromo."
+      },
+      {
+        "title": "Glottolog 5.3 — Tigrinya (tigr1271)",
+        "url": "https://glottolog.org/resource/languoid/id/tigr1271",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue Glottolog 5.3, lu le 3 novembre 2026. Langue Tigrinya, code ISO 639-3 tir, classée dans les langues sémitiques d'Éthiopie."
+      },
+      {
+        "title": "Glottolog 5.3 — Somali (soma1255)",
+        "url": "https://glottolog.org/resource/languoid/id/soma1255",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog name: Somali; classification includes Cushitic. Les dialectes listés sont les sous-languoids que Glottolog rattache à soma1255, hors languoids portant leur propre code ISO 639-3."
+      },
+      {
+        "title": "Glottolog 5.3 — Sidamo (sida1246)",
+        "url": "https://glottolog.org/resource/languoid/id/sida1246",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue Glottolog 5.3, lu le 3 novembre 2026. Langue Sidamo, code ISO 639-3 sid, classée dans le couchitique oriental des hautes terres."
+      },
+      {
+        "title": "Glottolog 5.3 — Afar (afar1241)",
+        "url": "https://glottolog.org/resource/languoid/id/afar1241",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue Glottolog 5.3, lu le 3 novembre 2026. Langue Afar, code ISO 639-3 aar, classée dans le couchitique oriental des basses terres, groupe saho-afar."
+      },
+      {
+        "title": "Glottolog — Sebat Bet Gurage (seba1251)",
+        "url": "https://glottolog.org/resource/languoid/id/seba1251",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "General History of Africa, II, ch. 4: Egypt's relations with the rest of Africa",
+        "url": "https://archive.org/details/general-history-of-africa-vol-2",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par G. Mokhtar, édition anglaise de 1981, chapitre d'A. H. Zayed avec le concours de J. Devisse, lu le 3 novembre 2026 dans l'exemplaire numérisé d'Internet Archive. Page 144 : « Today, agreement has almost been reached on the location of Punt in the Horn of Africa, although much hesitation as to its exact boundaries still exists. »"
+      },
+      {
+        "title": "General History of Africa, II, ch. 10: The empire of Kush: Napata and Meroe",
+        "url": "https://archive.org/details/general-history-of-africa-vol-2",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par G. Mokhtar, édition anglaise de 1981, chapitre de J. Leclant, lu le 3 novembre 2026 dans l'exemplaire numérisé d'Internet Archive. Page 293 : le royaume d'Aksum « had grown up on the high table-lands of present-day Ethiopia » ; Ezana, « the first monarch to embrace Christianity »."
+      },
+      {
+        "title": "General History of Africa, II, ch. 13: Pre-Aksumite culture",
+        "url": "https://archive.org/details/general-history-of-africa-vol-2",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par G. Mokhtar, édition anglaise de 1981, chapitre de H. de Contenson, lu le 3 novembre 2026 dans l'exemplaire numérisé d'Internet Archive. Page 343 : monuments et inscriptions d'Érythrée et du Tigray proches de ceux d'Arabie du Sud, datés des Ve et IVe siècles avant notre ère. Pages 353-354 : une monarchie héréditaire dont deux rois, Rbh et son fils Lmm, portent le titre « King Sr'n of the tribe of Yg'd mukarrib of D'iamat and of Saba' » ; plusieurs explications de ce titre sont discutées, et A. J. Drewes voit dans les Yg'd les ancêtres des Guèze."
+      },
+      {
+        "title": "General History of Africa, II, ch. 14: The civilization of Aksum from the first to the seventh century",
+        "url": "https://archive.org/details/general-history-of-africa-vol-2",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par G. Mokhtar, édition anglaise de 1981, chapitre de F. Anfray, lu le 3 novembre 2026 dans l'exemplaire numérisé d'Internet Archive. Page 375 : « All coins made after Ezana's conversion to Christianity depict the cross »."
+      },
+      {
+        "title": "General History of Africa, II, ch. 15: Aksum: political system, economics and culture, first to fourth century",
+        "url": "https://archive.org/details/general-history-of-africa-vol-2",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par G. Mokhtar, édition anglaise de 1981, chapitre de Y. M. Kobishanov, lu le 3 novembre 2026 dans l'exemplaire numérisé d'Internet Archive. Page 381 : les premières sources sur l'expansion d'Aksum en Arabie du Sud sont des inscriptions sabéennes de la fin du IIe et du début du IIIe siècle sur les « Abyssinians » ou Aksumites en guerre au Yémen."
+      },
+      {
+        "title": "General History of Africa, III, ch. 19: The Horn of Africa",
+        "url": "https://archive.org/details/general-history-of-africa-vol-3",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek, édition anglaise de 1988, chapitre de T. T. Mekouria, lu le 3 novembre 2026 dans l'exemplaire numérisé d'Internet Archive. Page 567 : la région du Lasta, « in which a new dynasty was to take root in the twelfth century », chez les Agaw ; la note 28 cite une tradition qui la place au Xe ou au XIe siècle. Page 568 : la dynastie zagwé « reached its zenith in the twelfth and thirteenth centuries […] the most famous is Lalibela »."
+      },
+      {
+        "title": "General History of Africa, IV, ch. 17: The Horn of Africa: the Solomonids in Ethiopia and the states of the Horn of Africa",
+        "url": "https://archive.org/details/unesco_general_history_africa_iv",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par D. T. Niane, édition anglaise de 1984, chapitre de T. Tamrat, lu le 3 novembre 2026 dans l'exemplaire numérisé d'Internet Archive. Page 423 : le royaume chrétien « had just passed from the hands of the Zagwe to those of the Solomonid dynasty in 1270 ». Page 430 : Ifat, « the leading Muslim state between the Gulf and the Shoa plateau » ; Yikunno-Amlak, chef local de l'Amhara, met fin aux Zagwé en 1270, et son récit veut établir sa légitimité comme une restauration de la dynastie salomonide d'Aksum. Pages 433-435 : les princes du mont Geshen, poètes en guèze et compositeurs de musique sacrée ; Amde-Siyon (1314-1344) soumet Ifat au tribut peu avant 1332, et al-ʿUmari lui prête « ninety-nine kings under him ». Page 436 : un royaume formé de principautés de religions, de peuples et de langues différents. Page 439 : la direction musulmane passe au plateau de Harar ; le djihad de l'imam Ibn Ibrahim, dit Gragn (vers 1527-1543). Page 453 : Zera-Yakob repousse Adal et fonde Debre-Birhan."
+      },
+      {
+        "title": "General History of Africa, V, ch. 2: African political, economic and social structures during this period",
+        "url": "https://archive.org/details/general-history-of-africa-vol-5",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, édition anglaise de 1992, chapitre de P. Diagne, lu le 3 novembre 2026 dans l'exemplaire numérisé d'Internet Archive. Page 30 : « In Ethiopia, the Gondar period (c.1632-c.1750) witnessed the development of new architectural styles promoted by the court. »"
+      },
+      {
+        "title": "General History of Africa, V, ch. 24: The Horn of Africa",
+        "url": "https://archive.org/details/general-history-of-africa-vol-5",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, édition anglaise de 1992, chapitre d'E. Haberland, lu le 3 novembre 2026 dans l'exemplaire numérisé d'Internet Archive. Page 704 : Ahmad ibn Ibrahim, surnommé « Gran (the lefthander) » dans les chroniques chrétiennes ; les Somali se considèrent comme un seul peuple malgré leurs nombreux groupes généalogiques ; les États d'Inariya, Bosa, Kaffa et Sekko. Page 709 : « Until 1636, when Gondar became the court's permanent residence ». Page 712 : mort de l'imam en 1543. Page 715 : arrivée de 400 Portugais en 1541, défaite et mort de l'imam en février 1543 à l'est du lac Tana. Page 716 : les Oromo, « hitherto usually known as the Galla, the name bestowed on them by their neighbours », décrits comme des barbares par des historiens amhara. Pages 717-718 : Borana et Barentu ; plus de quatre-vingts groupes indépendants à la fin du XIXe siècle ; le système gada, dix classes de huit ans, l'abba gada élu dans la cinquième classe. Page 719 : migrations après 1530 ; Adal détruit après 1554 et dans les années 1560-1570, Harar protégée par ses murs. Page 741 : selon la tradition orale, la dynastie busaso d'Inariya fonde le Kaffa aux XVIe et XVIIe siècles, « reputed to have been the most important and powerful state » de la région pendant des générations."
+      },
+      {
+        "title": "General History of Africa, VII, ch. 11: Liberia and Ethiopia, 1880-1914: the survival of two African states",
+        "url": "https://archive.org/details/general-history-of-africa-vol-7",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par A. Adu Boahen, édition anglaise de 1985, chapitre de M. B. Akpan, à partir des contributions d'A. B. Jones et de R. Pankhurst, lu le 3 novembre 2026 dans l'exemplaire numérisé d'Internet Archive. Page 270 : Ménélik acquiert « Kaffa, Wolamo, Sidamo, Bale, parts of the Ogaden » et d'autres terres, surtout par la conquête, et dénonce le traité de Wuchale le 12 février 1893."
+      },
+      {
+        "title": "Éthiopie : présentation et chronologie",
+        "url": "https://mjp.univ-perp.fr/constit/et.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan, fiche de juillet 2009, relue le 3 novembre 2026. Chronologie : capitale à Addis-Abeba en 1887 ; Adoua, 1er mars 1896 ; conquête italienne à partir du 3 octobre 1935 ; retour de Haylé Sellasié le 5 mai 1941 ; fédération avec l'Érythrée, 15 septembre 1952 ; destitution de l'empereur le 12 septembre 1974 et abolition de la monarchie le 21 mars 1975 ; constitution de 1987 et « régime de démocratie populaire » ; fin du régime socialiste le 28 mai 1991 ; indépendance de l'Érythrée reconnue le 3 mai 1993."
       }
     ],
     "demographics": {
@@ -880,53 +1113,116 @@
         {
           "name": "Oromo",
           "peopleId": "PPL_OROMO",
-          "region": "Oromia (centre, est, sud)",
+          "population": 25488344,
+          "referenceYear": 2007,
+          "percentageInCountry": 34.5,
+          "region": "Région Oromia",
           "languageFamily": "FLG_COUCHITIQUE",
-          "percentageInCountry": 35.8
+          "mainLanguageCode": "orm"
         },
         {
           "name": "Amhara",
           "peopleId": "PPL_AMHARA",
-          "region": "Hautes terres du centre et du nord-ouest (Gojjam, Gondar, Wollo)",
+          "population": 19867817,
+          "referenceYear": 2007,
+          "percentageInCountry": 26.9,
+          "region": "Région Amhara",
           "languageFamily": "FLG_SEMITIQUE",
-          "percentageInCountry": 24.1
+          "mainLanguageCode": "amh"
         },
         {
           "name": "Somali",
           "peopleId": "PPL_SOMALI",
-          "region": "Ogaden (Est)",
+          "population": 4581793,
+          "referenceYear": 2007,
+          "percentageInCountry": 6.2,
+          "region": "Région Somali",
           "languageFamily": "FLG_COUCHITIQUE",
-          "percentageInCountry": 7.2
+          "mainLanguageCode": "som"
         },
         {
-          "name": "Tigréens",
-          "peopleId": "PPL_TIGRE",
-          "region": "Tigray (Nord)",
+          "name": "Tigray",
+          "peopleId": "PPL_TIGRAY",
+          "population": 4483776,
+          "referenceYear": 2007,
+          "percentageInCountry": 6.1,
+          "region": "Région Tigray",
           "languageFamily": "FLG_SEMITIQUE",
-          "percentageInCountry": 5.7
+          "mainLanguageCode": "tir"
         },
         {
           "name": "Sidama",
           "peopleId": "PPL_SIDAMA",
-          "region": "Sidama (Sud)",
+          "population": 2966377,
+          "referenceYear": 2007,
+          "percentageInCountry": 4.0,
+          "region": "Région des nations, nationalités et peuples du Sud (recensement de 2007) ; région Sidama depuis 2020",
           "languageFamily": "FLG_COUCHITIQUE",
-          "percentageInCountry": 4.1
+          "mainLanguageCode": "sid"
         },
         {
           "name": "Gurage",
           "peopleId": "PPL_GURAGE",
-          "region": "Centre-Sud",
-          "languageFamily": "FLG_SEMITIQUE",
-          "percentageInCountry": 2.6
+          "population": 1867350,
+          "referenceYear": 2007,
+          "percentageInCountry": 2.5,
+          "region": "Région des nations, nationalités et peuples du Sud (recensement de 2007)",
+          "languageFamily": "FLG_SEMITIQUE"
         },
         {
-          "name": "Autres groupes ethniques",
+          "name": "Wolayta",
+          "peopleId": "PPL_WOLAYTA",
+          "population": 1707074,
+          "referenceYear": 2007,
+          "percentageInCountry": 2.3,
+          "region": "Région des nations, nationalités et peuples du Sud (recensement de 2007)",
+          "languageFamily": "FLG_OMOTIQUE",
+          "mainLanguageCode": "wal"
+        },
+        {
+          "name": "Hadiya",
+          "peopleId": "PPL_HADIYA",
+          "population": 1284366,
+          "referenceYear": 2007,
+          "percentageInCountry": 1.7,
+          "region": "Région des nations, nationalités et peuples du Sud (recensement de 2007)",
+          "languageFamily": "FLG_COUCHITIQUE",
+          "mainLanguageCode": "hdy"
+        },
+        {
+          "name": "Afar",
+          "peopleId": "PPL_AFAR",
+          "population": 1276372,
+          "referenceYear": 2007,
+          "percentageInCountry": 1.7,
+          "region": "Région Afar",
+          "languageFamily": "FLG_COUCHITIQUE",
+          "mainLanguageCode": "aar"
+        },
+        {
+          "name": "Gamo",
+          "peopleId": "PPL_GAMO",
+          "population": 1107163,
+          "referenceYear": 2007,
+          "percentageInCountry": 1.5,
+          "region": "Région des nations, nationalités et peuples du Sud (recensement de 2007)",
+          "languageFamily": "FLG_OMOTIQUE",
+          "mainLanguageCode": "gmv"
+        },
+        {
+          "name": "Autres peuples recensés",
           "peopleId": null,
-          "region": "Divers",
-          "languageFamily": null,
-          "percentageInCountry": 20
+          "population": 9288073,
+          "referenceYear": 2007,
+          "percentageInCountry": 12.6,
+          "region": null,
+          "languageFamily": null
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "L'Éthiopie est un pays de la Corne de l'Afrique, qui se nomme Ītyop'iya en amharique. Les Européens l'ont longtemps appelée Abyssinie, d'après le nom arabe Ḥabasha.",
+      "followUp": "D'où vient le nom Éthiopie ?"
     }
   }
 }

@@ -4,127 +4,8 @@
   "languageFamilyId": "FLG_COUCHITIQUE",
   "currentCountries": ["ERI", "ETH"],
   "classificationStatus": "contested",
-  "content": {
-    "appellations": {
-      "mainName": "Saho",
-      "selfAppellation": "Saaho",
-      "exonyms": [
-        "Soho",
-        "Saho (terme europeen)",
-        "Irob (sous-groupe en Ethiopie)"
-      ],
-      "originOfExonyms": "Le terme Saho est utilise par les sources europeennes depuis le XIXe siecle. Le mot Saho voudrait dire « nomade » en saho (saa = animaux, hoo = gardien), en référence à leur mode de vie pastoral historique. Le sous-groupe Irob d'Ethiopie est parfois considere comme une entite distincte.",
-      "whyProblematic": "Le terme Saho est avant tout une categorie linguistique rassemblant des groupes d'origine diverse ayant adopte la meme langue et culture. L'Irob, sous-groupe en Ethiopie, se distingue par sa religion catholique.",
-      "contemporaryUsage": "Les Saho sont l'un des neuf groupes ethniques officiels de l'Erythree. En Ethiopie (region du Tigray), ils sont reconnus sous les appellations Saho et Irob. L'archive Saho (Saho Archive) est un projet de documentation en ligne de leur culture et histoire.",
-      "linguisticFamily": "FLG_COUCHITIQUE",
-      "ethnoLinguisticGroup": "Cushitique de Basse Terre Orientale, sous-groupe Saho-Afar",
-      "historicalRegion": "Piedmonts orientaux de l'Akele Guzai et Semhar (Erythree), region du Tigray (Ethiopie)",
-      "currentCountries": ["ERI", "ETH"]
-    },
-    "ethnicities": ["Saho", "Irob"],
-    "origins": {
-      "ancientOrigins": "Les Saho sont presents dans la Corne de l'Afrique depuis plus de 3 000 ans. En tant que descendants des Kushites anciens, ils ont laisse des traces archeologiques (peintures rupestres, monuments steles, poteries) dans leur territoire, notamment a Qohaito, Kaskase, Adulis et Matara. La separation de la langue saho des autres langues kushitiques de l'Est remonte a environ 4 000 ans selon Bender et d'autres linguistes.",
-      "formationPeriod": "Les Saho sont originellement une extension nordique des Afar, ayant migre le long du Golfe de Zula pour s'installer dans les piedmonts orientaux d'Akele Guzai et Semhar entre le IXe et le XIIe siecle. La premiere mention dans les chroniques ecrites date du regne de l'Empereur Susenyos Ier (XVIIe siecle).",
-      "migrationRoutes": [
-        "Golfe de Zula vers les piedmonts orientaux d'Akele Guzai",
-        "Extension vers le Semhar et les hautes terres d'Erythree",
-        "Presence dans la region Tigray d'Ethiopie (Irob)"
-      ],
-      "historicalSettlementZones": [
-        "Piedmonts orientaux d'Akele-Saho (Akele Guzai) et Semhar, Erythree",
-        "Regions de la Mer Rouge du Nord et du Sud, Erythree",
-        "Region du Tigray (woreda Irob), nord-est de l'Ethiopie"
-      ],
-      "unificationsOrDivisions": "Avant la colonisation italienne, les Saho etaient organises en clans federes en plusieurs grandes tribus. En 1933, les autorites coloniales italiennes ont regroupe les Saho en cinq tribus administrees par des chefs nommes, a l'exclusion des Irob d'Agame.",
-      "externalInfluences": "Influence islamique depuis le XIIIe siecle par des mystiques et marchands arabes. Colonisation italienne (1889-1941) ayant reorganise l'administration tribale. Guerre d'independance erythreenne avec raids ethiopiens. Influence tigrinya sur les hautes terres.",
-      "majorHistoricalEvents": "Controle des routes caravannieres de la region du Tigray vers les ports de Massawa et Hirgogo au XIXe siecle. Refus de payer tribut au Naib de Massawa. Description par l'explorateur britannique Walter Plowden en 1848. Reorganisation tribale italienne en 1933. Participation a l'EPLF (Front Populaire de Liberation de l'Erythree) pendant la guerre d'independance. Massacres de civils Irob par les forces erythreennes en 2021 lors de la guerre du Tigray."
-    },
-    "organization": {
-      "traditionalPoliticalSystem": "Systeme acephale egalitaire decentralise. Les affaires communautaires etaient gerees lors d'assemblees generales (rakhbe) d'anciens et d'hommes sages (ukal) elus pour une periode determinee. Les litiges etaient regles selon le droit coutumier par des mediateurs (shimagale).",
-      "clanOrganization": "Organisation patrilineaire et hierarchique structuree en tribus (meela, kisho ou qabila), sous-tribus (gaysha, harak ou are) et clans (dik ou are). La memoire genealogique est preservee sur 30 a 40 generations. Les tribus anciennes les plus connues sont Idda, Kabota, Asa-Bora et Gadafur.",
-      "ageClassSystems": null,
-      "roleOfLineages": "La descent patrilineaire determine l'appartenance tribale, les droits de paturage et l'acces aux ressources en eau. Les sous-clans indiquent l'origine personnelle ou la descent.",
-      "religiousAuthority": "Les imams et les chefs soufis jouent un role central dans la vie communautaire des Saho musulmans. L'ordre Khatmiyya est predominant depuis le XIXe siecle. Chez les Irob catholiques d'Ethiopie, l'autorite religieuse est liee a l'Eglise catholique, introduite en 1845."
-    },
-    "languages": {
-      "mainLanguage": "Saho",
-      "isoCodes": ["ssy"],
-      "dialects": [
-        "Irob (dialecte saho parle en Ethiopie)",
-        "Hado",
-        "Asaworta",
-        "Minifere",
-        "Debri-Mela"
-      ],
-      "vehicularRole": "La langue saho (ISO 639-3 : ssy) est la langue maternelle du groupe. Elle appartient au sous-groupe Saho-Afar des langues cushitiques de basse terre orientale et est etroitement apparentee a l'afar. Le tigrigna et l'amharique sont utilises comme langues vehiculaires avec les populations voisines et l'administration. Les Irob sont generalement bilingues saho-tigrigna."
-    },
-    "culture": {
-      "majorRites": "Les ceremonies de mariage, les rites funeraires et les celebrations islamiques (Aid al-Fitr, Aid al-Adha) constituent les principaux evenements du calendrier communautaire. Chez les Irob catholiques, les fetes chretiennes et les rites lies a l'Eglise catholique sont centraux.",
-      "symbols": "Le dromadaire, les ovins et les bovins sont des symboles de richesse et de prestige pastoral. Les routes caravannieres historiques et la defense du territoire contre les envahisseurs sont des elements identitaires forts dans les traditions orales saho.",
-      "artsAndMusic": "La tradition poetique orale est particulierement developpee. Les poemes narrent les combats heroiques et les sacrifices des anciens. Une collection de 335 proverbes irob en langue saho a ete publiee avec traduction tigrigna. Les objets culturels saho conserves au Museo di Storia Naturale di Firenze (collection Mochi-Loria, 1933) temoignent de la richesse de leur culture materielle.",
-      "spiritualities": "Majorite musulmane sunnite (adoptee avant le XIIIe siecle). Presence de l'ordre soufi Khatmiyya. Sous-groupe Irob majoritairement catholique (catholicisme introduit en 1845 par les missionnaires) et une minorite orthodoxe Tewahido. Quelques groupes comme les Minifere et les Debri-Mela incluent des musulmans et des chretiens."
-    },
-    "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de royaume centralise. Organisation en tribus federees avec des chefs (ona) elus. Le titre Ona designe les chefs regionaux chez les Irob. Historiquement, les Saho controlaient les routes caravannieres reliant le Tigray aux ports de la mer Rouge.",
-      "relationsWithNeighbors": "Relations commerciales avec les Tigray et les marchands des ports de Massawa et Hirgogo. Interactions avec les Tigre dans les plaines basses et les Tigrinya dans les hautes terres. Les Jeberti (musulmans tigrinya) ont ete assimiles dans certains clans saho. Les Irob entretiennent des liens culturels forts avec les peuples d'Agame.",
-      "conflictsOrAlliances": "Opposition historique aux tentatives d'invasion des chefs abyssins (defaite des Ras Araia et Ras Alula). Resistance a la colonisation italienne en 1889. Pendant la guerre d'independance erythreenne, les Saho etaient bien representes dans l'EPLF. En 2021, au moins 52 civils Irob ont ete tues par des soldats erythreens lors de la guerre du Tigray.",
-      "diaspora": "Nombreux Saho ont fui vers le Soudan lors des raids ethiopiens pendant la guerre d'independance erythreenne. Presence diasporique en Europe et en Amerique du Nord."
-    },
-    "demography": {
-      "totalPopulation": 265000,
-      "referenceYear": 2025,
-      "source": "Estimation 2025 fondee sur Joshua Project (202 000 en Erythree, 62 000 en Ethiopie) et les donnees de l'Eritrean Saho Advocacy Group (206 000 en Erythree en 2016). Total consolide pour 2025.",
-      "distributionByCountry": [
-        {
-          "country": "ERI",
-          "population": 203000
-        },
-        {
-          "country": "ETH",
-          "population": 62000
-        }
-      ]
-    },
-    "sources": [
-      {
-        "title": "Saho, Irob in Eritrea – Joshua Project, 2025",
-        "url": "https://joshuaproject.net/people_groups/14641/er",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "Saho, Irob in Ethiopia – Joshua Project, 2025",
-        "url": "https://joshuaproject.net/people_groups/14641/ET",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "History of the Saho – Saho Archive, 2023",
-        "url": "https://www.sahoarchive.org/history/",
-        "tier": "unverified"
-      },
-      {
-        "title": "The Animal Caretakers : The Saho of Eritrea – Eritrea Ministry of Information / Shabait, 2016",
-        "url": "https://shabait.com/2016/08/26/the-animal-caretakers-the-saho-of-eritrea/",
-        "tier": "referenced",
-        "source_kind": "government"
-      },
-      {
-        "title": "Saho – Encyclopedia Britannica, 2008",
-        "url": "https://www.britannica.com/topic/Saho",
-        "tier": "unverified",
-        "source_kind": "encyclopedia"
-      },
-      {
-        "title": "Saho in Ethiopia (PGID PG042732) – PeopleGroups.org, 2025",
-        "url": "https://peoplegroups.org/people_groups/pg042732/",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      }
-    ]
-  },
   "nameHistory": {
-    "summary": "Le nom Saho désigne un peuple d'éleveurs d'Érythrée et du nord de l'Éthiopie, ainsi que sa langue. Il se nomme lui-même Saho, mais, selon le linguiste Leo Reinisch en 1890, seules deux de ses sept tribus se donnaient alors ce nom. On ne sait pas avec certitude d'où vient le nom Saho ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Saho désigne un peuple d'Érythrée et du nord de l'Éthiopie, ainsi que sa langue, que ses locuteurs appellent Saahot luqha, « la langue des Saho ». Ce peuple se donne lui-même ce nom, que des voyageurs européens ont écrit Shiho en 1791 et Schoho en 1859. Selon le linguiste Leo Reinisch, en 1890, seules deux de ses sept tribus se nommaient surtout ainsi et appelaient les cinq autres Bozät. Plusieurs explications du sens du nom Saho, dont un récit d'origine raconté par des Saho, sont présentées plus bas.",
     "names": [
       {
         "nameText": "Saho",
@@ -133,6 +14,7 @@
         "languageOfOrigin": "ssy",
         "namedBy": null,
         "shortLine": "Le nom que ce peuple se donne ; sa plus ancienne trace connue, Shiho, date de 1791.",
+        "usedIn": ["ssy"],
         "periodLabel": "Écrit Shiho dès 1791 ; en usage aujourd'hui",
         "accounts": [
           {
@@ -143,6 +25,8 @@
             },
             "era": "modern",
             "statement": "Le nom Saho voudrait dire « nomade » : saa signifierait « animaux » et hoo « gardien », ce qui rappelle l'ancien mode de vie pastoral du peuple, selon le ministère érythréen de l'Information.",
+            "aspect": "meaning",
+            "hypothesisGroup": "sens-du-nom-saho",
             "sources": [
               {
                 "title": "The Animal Caretakers : The Saho of Eritrea",
@@ -151,7 +35,29 @@
                 "url": "https://shabait.com/2016/08/26/the-animal-caretakers-the-saho-of-eritrea/",
                 "tier": "referenced",
                 "source_kind": "government",
-                "notes": "Article du site Shabait, daté du 26 août 2016, sans auteur nommé. Lu le 13 octobre 2026. Phrase lue : « The word “Saho” means “nomad,” (“saa” means animals and “hoo” means caretaker) »."
+                "notes": "Article du site Shabait, daté du 26 août 2016, sans auteur nommé. Lu le 13 octobre 2026, relu le 3 novembre 2026. Phrase lue : « The word “Saho” means “nomad,” (“saa” means animals and “hoo” means caretaker) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "2010"
+            },
+            "era": "modern",
+            "statement": "Le nom Saho a plusieurs formes chez les voisins des Saho qui parlent le tigrinya et le tigré, deux langues sémitiques d'Érythrée et d'Éthiopie : Sāho, Saḥo, Šaho, Šaḥo, Šahu et Šoho, selon les linguistes Giorgio Banti et Moreno Vergari. Ils notent que les premiers voyageurs européens écrivaient Shiho et que les Saho appellent leur langue Saahot luqha, « la langue des Saho ». Pour ces deux auteurs, l'origine du nom reste incertaine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Saho of Eritrea and the Documentation of their Language and Cultural Heritage",
+                "author": "Giorgio Banti et Moreno Vergari",
+                "year": 2010,
+                "url": "https://www.sahoarchive.org/wp-content/uploads/2014/08/Banti_Vergari_The_Saho_of_Eritrea_and_the_Documentation_of_their_Language_and_Cultural_Heritage-libre.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 83-84",
+                "notes": "Article paru dans les Annali dell'Università degli Studi di Napoli « L'Orientale », vol. 70 (2010), numéro « Current Trends in Eritrean Studies », p. 83-108. Lu le 3 novembre 2026 dans le PDF diffusé par le site Saho Archive. Passages lus : « The Saho call their own language Saahot luqha ‘language of the Saho’ » (p. 83) et « The origin of the name of the Saho is uncertain, but it is interesting to notice that it occurs with a number of variants in its two neighbouring Ethiosemitic languages, Tigrinya and Tigre » (p. 84)."
               }
             ]
           },
@@ -161,8 +67,9 @@
               "to": 1890,
               "label": "1890"
             },
-            "statement": "Le nom Sahö désigne chez le linguiste autrichien Leo Reinisch le peuple saho, qu'il dit divisé en sept tribus. Seules les tribus Asaorta et Tär'uwa se donnent surtout ce nom, et elles appellent Bozät les cinq autres tribus ; elles sont aussi les seules à revendiquer le droit au nom Sahö. La langue saho est aussi celle des Irob. On ne sait pas avec certitude d'où vient ce nom.",
+            "statement": "Le nom Sahö désigne chez le linguiste autrichien Leo Reinisch le peuple saho, qu'il dit divisé en sept tribus. Seules les tribus Asaorta et Tär'uwa se donnent surtout ce nom, et elles appellent Bozät les cinq autres tribus ; elles sont aussi les seules à revendiquer le droit au nom Sahö. Reinisch invite à comparer ce nom avec des mots guèzes, la langue ancienne de l'écrit en Éthiopie, qui signifient « s'étendre, s'élargir » et « être ouvert ». Il ajoute que la langue saho est aussi celle des Irob.",
             "aspect": "meaning",
+            "hypothesisGroup": "sens-du-nom-saho",
             "sources": [
               {
                 "title": "Die Saho-Sprache, deuxième volume : Wörterbuch der Saho-Sprache",
@@ -172,7 +79,36 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "page": "p. 316 (article Sahö) et p. 91 (article Bozät)",
-                "notes": "Wien, Alfred Hölder, 1890. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, pages vérifiées sur l'image. "
+                "notes": "Vienne, Alfred Hölder, 1890 ; ouvrage d'un linguiste autrichien, publié pendant la colonisation italienne de l'Érythrée. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, pages vérifiées sur l'image ; relu le 3 novembre 2026 dans le texte de la même numérisation. Passage lu (p. 316) : « Vorzugsweise benennen sich nur die Asaorta und Tär'uwa mit dem namen Saho und geben den übrigen fünf stammen den namen Bozät », et la comparaison avec le guèze glosée « expandi, dilatari » et « apertum esse, patere »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1875,
+              "to": 1880,
+              "label": "Récit recueilli entre 1875 et 1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Saho serait celui d'un ancêtre, selon un récit que des Saho ont dicté au linguiste Leo Reinisch à Massaoua, Arkiko et Zula. Un homme nommé Saho, marié à sept femmes sans enfants, aurait eu d'une lionne sept fils, sur le conseil d'un prophète. Ces fils, Asaorta, Toru'a, Dasamo, Ga'aso, Haso, Dabrimela et Herto, seraient les ancêtres des sept tribus dont descendent tous les Saho.",
+            "aspect": "meaning",
+            "hypothesisGroup": "sens-du-nom-saho",
+            "actors": [
+              {
+                "name": "Abdallah, fils d'Ali, de la tribu Dasamo",
+                "role": "principal interprète et informateur saho de Leo Reinisch, à partir de novembre 1875"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Die Saho-Sprache, premier volume : Texte der Saho-Sprache",
+                "author": "Leo Reinisch",
+                "year": 1889,
+                "url": "https://archive.org/details/diesahosprache00reingoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. V (préface) et p. 6-7 (texte n° 7, « Ursprung des Sahovolkes »)",
+                "notes": "Vienne, Alfred Hölder, 1889 ; recueil de textes en saho avec traduction allemande, relié avec le dictionnaire de 1890 dans la même numérisation d'Internet Archive. Lu le 3 novembre 2026. Reinisch écrit avoir noté ces textes « in Massaua, Arqiqo und Zula nach dem dictate von eingebornen » en 1875-1876 et 1879-1880 (p. V). Passages lus : « Es war einst ein mann namens Saho, siben frauen hatte er geheiratet » et « die namen der siben söne aber sind: Asaorta, Toru'a, Dasamo, Ga'aso, Haso, Dabrimela und Herto; von disen siben sönen entstammen alle Saho » (p. 6-7)."
               }
             ]
           },
@@ -182,6 +118,7 @@
               "to": 1859,
               "label": "1859"
             },
+            "era": "polity",
             "statement": "Le nom Schoho figure chez le voyageur suisse Werner Munzinger, qui décrit le pays des Schoho entre Massaoua et la montagne abyssine. Il les dit divisés en plusieurs tribus, dont la plus grande, les Hasauerta, vit près d'Arkiko, et parlant une langue parente du somali et de l'oromo.",
             "formAsWritten": "Schoho",
             "sources": [
@@ -193,7 +130,7 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "page": "p. 91",
-                "notes": "Zeitschrift für allgemeine Erdkunde, vol. 6, 1859, p. 89-110. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image."
+                "notes": "Zeitschrift für allgemeine Erdkunde, vol. 6, 1859, p. 89-110 ; récit d'un voyageur suisse. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image ; relu le 3 novembre 2026. Passage lu : « das Gebiet der Schoho, die in mehrere Stämme getheilt sind, deren grössten die an der nördlichen Grenzlinie, nicht weit von Arkiko wohnenden Hasauerta's bilden »."
               }
             ]
           },
@@ -204,7 +141,7 @@
               "label": "1791"
             },
             "era": "polity",
-            "statement": "Le nom Saho apparaît sous une forme proche, Shiho, chez l'explorateur écossais James Bruce, qui rencontre des Shiho sur sa route entre Massaoua et l'Abyssinie. Il les décrit comme les plus noirs des peuples qui bordent la mer Rouge, vêtus de cotonnade et logés dans des grottes ou de petites huttes d'herbe. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "statement": "Le nom Saho apparaît sous une forme proche, Shiho, chez l'explorateur écossais James Bruce. Il range les Shiho parmi les tribus qui vivent de novembre à avril dans la plaine côtière du Samhar, avec les Tora, les Hazorta et les Doha, puis mènent leurs troupeaux vers les montagnes d'Abyssinie. Il les décrit aussi comme les plus noirs des peuples qui bordent la mer Rouge, vêtus de cotonnade et logés dans des grottes ou de petites huttes d'herbe. C'est la plus ancienne trace de ce nom que nous connaissons. Le peuple existait déjà avant elle.",
             "formAsWritten": "Shiho",
             "birth": true,
             "sources": [
@@ -215,13 +152,255 @@
                 "url": "https://archive.org/details/travelstodiscove003bruc",
                 "tier": "referenced",
                 "source_kind": "archive",
-                "page": "p. 394",
-                "notes": "Dublin, William Porter, édition en six volumes ; la page de titre du volume 3 porte la date de 1791. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image."
+                "page": "p. 330 et p. 394",
+                "notes": "Dublin, William Porter, édition en six volumes ; la page de titre du volume 3 porte la date de 1791. Récit d'un explorateur écossais. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image ; relu le 3 novembre 2026. Passages lus : « a variety of wandering tribes called Tora, Hazorta, Shiho, and Doha » (p. 330) et « The Shiho are the blackest of the tribes bordering upon the Red Sea » (p. 394)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bozät",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "ssy",
+        "namedBy": "Les tribus saho Asaorta et Tär'uwa, selon Leo Reinisch",
+        "shortLine": "Le nom que deux tribus saho donnaient aux cinq autres, selon le linguiste Leo Reinisch en 1890.",
+        "periodLabel": "Attesté en 1890",
+        "accounts": [
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "1890"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bozät est, selon le linguiste Leo Reinisch, le nom collectif que les tribus Asaorta et Tär'uwa donnent aux cinq autres tribus saho, car elles réservent pour elles-mêmes le nom Sahö. Reinisch le rapproche d'un mot amharique qui signifie « tas, foule ».",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die Saho-Sprache, deuxième volume : Wörterbuch der Saho-Sprache",
+                "author": "Leo Reinisch",
+                "year": 1890,
+                "url": "https://archive.org/details/diesahosprache00reingoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 91 (article Bozät)",
+                "notes": "Vienne, Alfred Hölder, 1890 ; ouvrage d'un linguiste autrichien, publié pendant la colonisation italienne de l'Érythrée. Lu le 3 novembre 2026 dans le texte de la numérisation d'Internet Archive. Passage lu : « name welchen die Asaorta und Tor'uwa den übrigen fünf Sahostämmen beilegen; jene erst genannten zwei stamme beanspruchen allein das anrecht auf den namen Sähö », avec le renvoi « cf. A. […] häufe, menge »."
               }
             ]
           }
         ]
       }
     ]
+  },
+  "content": {
+    "appellations": {
+      "mainName": "Saho",
+      "selfAppellation": "Saaho",
+      "exonyms": ["Shiho", "Schoho", "Šaho", "Šoho"],
+      "spellingAliases": ["Soho", "Sahö", "Saaho"],
+      "originOfExonyms": "Les formes données au nom Saho par ses voisins et par les voyageurs sont proches de lui. Les linguistes Giorgio Banti et Moreno Vergari relèvent en 2010 les formes Sāho, Saḥo, Šaho, Šaḥo, Šahu et Šoho chez les voisins qui parlent le tigrinya et le tigré. L'explorateur écossais James Bruce écrit Shiho en 1791, et le voyageur suisse Werner Munzinger écrit Schoho en 1859. Le sens du nom fait l'objet de plusieurs explications : le ministère érythréen de l'Information le rattache aux mots saho saa, « animaux », et hoo, « gardien », tandis qu'un récit recueilli par Leo Reinisch vers 1875-1880 en fait le nom d'un ancêtre.",
+      "whyProblematic": "Le nom Saho n'a pas toujours désigné le même ensemble de personnes. En 1890, le linguiste Leo Reinisch note que seules les tribus Asaorta et Tär'uwa revendiquent ce nom et appellent Bozät les cinq autres tribus. Un article du ministère érythréen de l'Information rapporte en 2016 que, selon les traditions orales, des clans d'origines diverses ont adopté la langue saho et une culture commune. Les Irob d'Éthiopie, chrétiens qui parlent le saho, se donnent leur propre nom, Irob, selon l'historien Gigar Tesfaye.",
+      "contemporaryUsage": "Le nom Saho désigne aujourd'hui l'un des neuf peuples, définis par leur langue, que l'Érythrée reconnaît officiellement, selon le géographe Marc Lavergne. Le saho est l'une des neuf langues nationales du pays ; il s'écrit en alphabet latin depuis les manuels scolaires du Front populaire de libération de l'Érythrée, en 1983. En Éthiopie, le recensement de 2007 ne compte pas les Saho à part, mais il compte les Irob, qui parlent le saho. Le site Saho Archive rassemble en ligne des textes anciens et récents sur la langue, l'histoire et la culture des Saho.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
+    },
+    "ethnicities": ["Saho", "Irob"],
+    "origins": {
+      "ancientOrigins": "Les Saho vivent entre les hauts plateaux d'Érythrée et la mer Rouge. Leurs origines anciennes sont racontées de plusieurs façons. En 1859, le voyageur suisse Werner Munzinger voit dans les Schoho et leurs voisins les restes de deux anciens royaumes, le royaume chrétien d'Éthiopie et le royaume musulman d'Adal, tout en écrivant que ces origines sont « plus devinées que connues ». En 2016, un article du ministère érythréen de l'Information présente les Saho comme des descendants des anciens Couchites, c'est-à-dire des peuples qui parlaient les premières langues de la famille couchitique. Cet article leur attribue « plus de trois mille ans » d'histoire connue et place sur leurs terres des sites anciens comme Qohaito, Kaskase, Adulis et Matara.",
+      "formationPeriod": "Les Saho racontent leur formation par des récits d'ancêtres. Un récit dicté au linguiste Leo Reinisch vers 1875-1880 fait descendre tous les Saho des sept fils d'un homme nommé Saho : Asaorta, Toru'a, Dasamo, Ga'aso, Haso, Dabrimela et Herto. Selon les traditions orales rapportées en 2016 par le ministère érythréen de l'Information, les Idda, les Kabota et les Asa-bora sont les plus anciens ancêtres saho de la région, et les Saho les appellent « gardiens de la terre saho ». Le même article rapporte que des clans venus d'origines diverses ont adopté la langue saho, et que certains se rattachent à des dignitaires musulmans des premiers temps de l'islam.",
+      "migrationRoutes": [
+        "Déplacement saisonnier des troupeaux entre la plaine côtière du Samhar, occupée de novembre à avril, et le versant abyssin des montagnes, décrit par James Bruce en 1791",
+        "Déplacement des troupeaux entre les hauts plateaux du centre de l'Érythrée et les plaines côtières pendant la saison des pluies, et vers la plaine de Hazamo, décrit par Giorgio Banti et Moreno Vergari en 2010",
+        "Départ de plusieurs milliers de Saho vers le Soudan ou d'autres pays, et réinstallation d'autres familles dans la région du Gash-Barka, dans l'ouest de l'Érythrée, pendant l'occupation éthiopienne, la guerre et la sécheresse"
+      ],
+      "historicalSettlementZones": [
+        "Contreforts orientaux de l'Akele Guzai, aussi appelé Akele-Saho, et région du Semhar, en Érythrée",
+        "Pays situé entre Massaoua, Arkiko et la chaîne des montagnes abyssines, décrit par Werner Munzinger en 1859",
+        "Région située au sud d'Asmara et de Massaoua, jusqu'à la dépression afar, selon Giorgio Banti et Moreno Vergari",
+        "Enclave des Irob, au bord oriental du plateau du Tigray, en Éthiopie, selon Gigar Tesfaye"
+      ],
+      "unificationsOrDivisions": "Les Saho se divisent en tribus et en clans. Leo Reinisch compte sept tribus en 1890. Avant l'occupation italienne, selon le ministère érythréen de l'Information, les clans s'étaient regroupés en plusieurs grandes tribus, dirigées par des chefs et des conseils d'anciens ; les Italiens ont ensuite nommé eux-mêmes un chef pour chaque tribu. Selon Giorgio Banti et Moreno Vergari, les autorités coloniales italiennes ont aussi fixé, au début du XXe siècle, une partie des territoires des clans saho d'Érythrée, en bandes étroites qui vont des hauts plateaux aux plaines côtières.",
+      "externalInfluences": "La plupart des Saho sont musulmans, de l'école juridique hanafite, et la confrérie soufie Khatmiyya s'est beaucoup répandue chez eux à la fin du XIXe et au début du XXe siècle, selon Giorgio Banti et Moreno Vergari. Les Irob et quelques villages autour de Senafe et sur le plateau d'Amba Soyra sont de tradition chrétienne orthodoxe, et plusieurs groupes sont devenus catholiques au cours des deux derniers siècles. Les Irob, selon Gigar Tesfaye, ont adopté le tigrinya, qu'ils parlent en même temps que le saho. La colonisation italienne a déclaré propriété de l'État des terres de pâture et a redistribué des terres des hauts plateaux, selon le ministère érythréen de l'Information et l'anthropologue Magnus Treiber.",
+      "majorHistoricalEvents": "En 1791, l'explorateur James Bruce note que les Shiho, autrefois très nombreux, ont beaucoup souffert de la variole. En 1859, Werner Munzinger écrit que les Schoho tiennent les passages vers l'Abyssinie : tout voyageur doit prendre à Arkiko ou à Halay un guide schoho et payer pour sa sécurité. Selon l'anthropologue Magnus Treiber, qui présente un livre du sociologue saho Abdulkader Saleh Mohammad, des Saho ont combattu comme askaris, des soldats de l'armée coloniale italienne, contre l'empereur éthiopien Ménélik II, puis ont été parmi les fondateurs de l'opposition armée à la domination éthiopienne. Pendant l'occupation éthiopienne de l'Érythrée, la guerre et la sécheresse ont poussé des milliers de Saho à partir. Pendant la guerre du Tigray, commencée en novembre 2020, le district éthiopien d'Irob a été entièrement contrôlé par les forces érythréennes dès les premiers jours du conflit, selon la chaîne Al Jazeera."
+    },
+    "organization": {
+      "traditionalPoliticalSystem": "La société saho traditionnelle n'avait pas de pouvoir central : un article du ministère érythréen de l'Information la décrit comme un système décentralisé et égalitaire. Les chefs des sous-tribus et des clans y étaient élus pour une durée fixée, lors d'assemblées générales d'anciens et de sages appelées rakhbe. Ils devaient assurer les besoins de leur groupe et régler les conflits selon le droit coutumier. Giorgio Banti et Moreno Vergari mentionnent aussi les chefs de clan, appelés reezon (au singulier reezanto), auxquels la poésie politique était liée.",
+      "clanOrganization": "Les Saho se répartissent en tribus, en sous-tribus et en clans. Selon le ministère érythréen de l'Information, qui s'appuie sur le sociologue Abdulkader Saleh Mohammad, les sous-tribus descendent d'un ancêtre commun et s'appellent kisho, mela ou are ; chacune se divise en groupes de parenté appelés dik ou abusa, qui portent souvent le nom de leur fondateur. Le même article cite parmi les groupes saho les Asa-bora, Asawurta, Dabri Mela, Gadafur, Hado, Idda, Irob, Kabota, Minifre, Taru'a et d'autres. Giorgio Banti et Moreno Vergari nomment des clans comme les Bet Sarax et Bet Musa chez les Tharuuca, ou les Faqhat Xarak, Gacaso et Dhasamo chez les Minifire.",
+      "ageClassSystems": "Nous n'avons pas trouvé de source qui décrive un système de classes d'âge chez les Saho.",
+      "roleOfLineages": "Chez les Saho, la place d'une famille dans la généalogie de son groupe fixe ses droits sur la terre, en particulier sur les pâturages, selon un article du ministère érythréen de l'Information. Le même article distingue trois formes de propriété de la terre : la terre d'une région, commune à tous ses habitants, la terre d'une tribu, et la terre d'une famille ou d'un sous-clan, gardée pour le pâturage ou la culture. Il décrit une société où l'autorité du grand-père et du père était très respectée, où le mariage avec la fille d'un oncle maternel était préféré, et où la famille élargie soutient encore les personnes âgées, les veuves et les jeunes.",
+      "religiousAuthority": "Chez les Saho musulmans, la confrérie soufie Khatmiyya s'est répandue à la fin du XIXe et au début du XXe siècle, et des cheikhs écrivent parfois des hymnes religieux en saho avec l'alphabet arabe, selon Giorgio Banti et Moreno Vergari. Chez les Irob, un prêtre lazariste, c'est-à-dire un prêtre catholique de la congrégation de la Mission, originaire d'Alitena, a traduit en saho un chapitre de l'Évangile de Jean, publié par Leo Reinisch en 1878 ; c'est le premier texte écrit en saho que connaissent ces deux auteurs."
+    },
+    "languages": {
+      "mainLanguage": "Saho (ssy)",
+      "isoCodes": ["ssy"],
+      "dialects": [
+        "Saho du Nord : assaorta et tharuuca",
+        "Saho du Centre : minifire et dabrimeela",
+        "Saho du Sud : irob et xazo"
+      ],
+      "vehicularRole": "Le saho est une langue couchitique, de la grande famille afro-asiatique, et forme avec l'afar le groupe saho-afar, selon Glottolog et les linguistes Giorgio Banti et Moreno Vergari. C'est la langue maternelle des Saho et l'une des neuf langues nationales de l'Érythrée. Le Front populaire de libération de l'Érythrée l'a écrit en alphabet latin dans ses manuels à partir de 1983 et a rendu ce choix officiel en 1986. Le ministère érythréen de l'Éducation comptait 39 écoles primaires en saho en 2007. En Éthiopie, le saho des Irob est enseigné depuis 2010 dans les écoles du district d'Irob, avec l'alphasyllabaire éthiopien. Les Irob parlent aussi le tigrinya, et en 1890 Leo Reinisch notait que les Herto, d'origine saho, parlaient l'afar."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q264993",
+      "glottocode": "saho1246",
+      "iso639_3": "ssy"
+    },
+    "culture": {
+      "majorRites": "Le mariage est l'un des grands moments de la vie saho. Selon le ministère érythréen de l'Information, la famille du futur époux s'informe d'abord sur la jeune femme, puis des anciens servent de médiateurs ; l'ouverture de la discussion s'appelle afti-fakkot, « ouvrir la bouche ». Les cadeaux apportés vont à la mère de la fiancée, et la cérémonie a lieu en général un an après les fiançailles, au moment des récoltes à la campagne, ou pendant les vacances d'été et avant le ramadan en ville. Les chants de mariage appelés margaddiino restent très vivants, selon Giorgio Banti et Moreno Vergari.",
+      "symbols": "Nous n'avons pas trouvé de source qui décrive des symboles propres aux Saho.",
+      "artsAndMusic": "La poésie tient une grande place chez les Saho. Giorgio Banti et Moreno Vergari distinguent les chants de mariage margaddiino, la poésie religieuse nazme, les chants de travail et d'enfants, et la poésie politique cadar, liée aux chefs de clan. Les grands poètes cadar Farhekoobe, mort en 1867 ou 1868, et Xajji Saalix Xindago, mort en 1993, restent très respectés. Les mêmes auteurs décrivent un artisanat fait à la maison : bols de bois appelés koora ou galadda, objets de cuir et nattes en fibres de palmier doum. Des objets saho réunis par la mission italienne de 1905-1906, conduite par Aldobrandino Mochi et Lamberto Loria, sont conservés au musée d'anthropologie et d'ethnologie de Florence. En 1953, Plazikowsky et Wagner ont publié un petit recueil de dialogues, de proverbes et de chants irob.",
+      "spiritualities": "La plupart des Saho sont musulmans, de l'école juridique hanafite, et beaucoup suivent la confrérie soufie Khatmiyya, selon Giorgio Banti et Moreno Vergari. Les Irob sont chrétiens, selon Gigar Tesfaye. Des villages autour de Senafe et sur le plateau d'Amba Soyra suivent aussi le christianisme orthodoxe, et plusieurs de ces groupes sont devenus catholiques au cours des deux derniers siècles."
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": "Les Saho n'ont pas formé de royaume. Leurs tribus et leurs clans avaient des chefs élus et des conseils d'anciens, selon le ministère érythréen de l'Information. Au XIXe siècle, ils tenaient les passages entre la côte de la mer Rouge et les hauts plateaux : Werner Munzinger écrit en 1859 qu'ils faisaient payer les voyageurs, et Magnus Treiber rappelle qu'ils protégeaient les caravanes vers l'arrière-pays de Massaoua.",
+      "relationsWithNeighbors": "Les Saho ont eu des liens étroits mais souvent tendus avec leurs voisins. Selon Werner Munzinger, en 1859, les Belau d'Arkiko étaient presque tous alliés par mariage aux Schoho, ce qui donnait au naib, le gouverneur d'Arkiko, un certain pouvoir sur eux. Selon Magnus Treiber, les Saho vendaient leurs produits au marché de Massaoua, se disputaient avec le naib de Massaoua, disputaient des terres aux paysans de langue tigrinya et combattaient les seigneurs du Tigray qui venaient les razzier. Selon Giorgio Banti et Moreno Vergari, des groupes de langue tigré comme les Mansac et les Marya se considèrent comme apparentés à des clans saho.",
+      "conflictsOrAlliances": "Selon un article du ministère érythréen de l'Information, les Saho ont défendu leurs terres contre les seigneurs des hauts plateaux abyssins, et ont battu le ras Araia et le ras Alula avant l'arrivée des Italiens en 1889. Selon Magnus Treiber, des Saho ont ensuite combattu comme askaris de l'armée italienne contre Ménélik II, puis ont pris part à la fondation de l'opposition armée à la domination éthiopienne sur l'Érythrée. En mai 2021, pendant la guerre du Tigray, un Irob a dit à la chaîne Al Jazeera avoir organisé à Addis-Abeba des cérémonies pour 63 Irob tués par des soldats érythréens ; la chaîne précisait ne pas pouvoir vérifier ces récits de façon indépendante.",
+      "diaspora": "L'occupation éthiopienne, la guerre et la sécheresse ont poussé plusieurs milliers de Saho d'Érythrée à partir au Soudan ou dans d'autres pays, selon Giorgio Banti et Moreno Vergari. Ces auteurs notent que des Saho nés en Éthiopie, au Soudan ou dans d'autres pays de la diaspora ne parlent plus le saho comme langue maternelle."
+    },
+    "demography": {
+      "totalPopulation": 223372,
+      "referenceYear": 2007,
+      "source": "L'Érythrée n'a pas publié de recensement par peuple. Pour l'Érythrée, le chiffre est celui d'environ 190 000 locuteurs natifs du saho, donné par Giorgio Banti et Moreno Vergari en 2010 d'après Ethnologue (Lewis 2009) ; un article du ministère érythréen de l'Information rapporte en 2016 une estimation de 206 000 Saho faite par des observateurs saho. Pour l'Éthiopie, le recensement de 2007 ne compte pas les Saho à part ; le chiffre est celui des 33 372 Irob qu'il recense.",
+      "distributionByCountry": [
+        {
+          "country": "ERI",
+          "population": 190000,
+          "percentage": 85,
+          "note": "Locuteurs natifs du saho, au sud d'Asmara et de Massaoua et jusqu'à la dépression afar ; estimation reprise d'Ethnologue (Lewis 2009) par Giorgio Banti et Moreno Vergari."
+        },
+        {
+          "country": "ETH",
+          "population": 33372,
+          "percentage": 15,
+          "note": "Irob recensés en 2007, dont 30 517 dans la région du Tigray."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Glottolog 5.3 — Saho (saho1246)",
+        "author": "Glottolog",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/saho1246",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice de la langue saho, consultée le 3 novembre 2026. Elle donne le code ISO 639-3 ssy, le classement « Afro-Asiatic, Cushitic, East Cushitic, Lowland East Cushitic, Saho-Afar », et trois groupes de dialectes : « Northern Saho » (Assaorta, Tharuuca), « Central Saho » (Dabrimeela, Minifire) et « Southern Saho » (Irob, Xazo)."
+      },
+      {
+        "title": "ISO 639-3 — fiche du code ssy (Saho), SIL Global",
+        "author": "SIL Global",
+        "year": null,
+        "url": "https://iso639-3.sil.org/code/ssy",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de l'autorité d'enregistrement de la norme ISO 639-3, consultée le 3 novembre 2026 : « ssy Saho Active 639-3 Individual Living »."
+      },
+      {
+        "title": "Summary and Statistical Report of the 2007 Population and Housing Census, tableau 5 : Irob",
+        "author": "Population Census Commission, République fédérale démocratique d'Éthiopie",
+        "year": 2008,
+        "url": "https://open.africa/dataset/d34d8ca9-97d3-4fb3-9249-47e2d3e3d322/resource/1af0860e-2fa6-4711-b9a7-53ddb04e721f/download/ethiopia-summary-and-statistical-report-of-the-2007-population-and-housing-census.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport du recensement éthiopien de 2007, imprimé par le Fonds des Nations unies pour la population, lu le 3 novembre 2026 dans la copie diffusée par openAFRICA. Tableau 5, « Population size of regions by nations/nationalities (ethnic group) and place of residence: 2007 » : pour le pays entier, « Irob 33,372 » (p. 84) ; pour la région du Tigray, « Irob 30,517 ». Le tableau ne contient aucune ligne Saho."
+      },
+      {
+        "title": "The Saho of Eritrea and the Documentation of their Language and Cultural Heritage",
+        "author": "Giorgio Banti et Moreno Vergari",
+        "year": 2010,
+        "url": "https://www.sahoarchive.org/wp-content/uploads/2014/08/Banti_Vergari_The_Saho_of_Eritrea_and_the_Documentation_of_their_Language_and_Cultural_Heritage-libre.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 83-92",
+        "notes": "Article paru dans les Annali dell'Università degli Studi di Napoli « L'Orientale », vol. 70 (2010), p. 83-108. Lu le 3 novembre 2026. Passages lus : « The Saho speak one of the nine national languages of modern Eritrea » et « a linguistic minority of ca. 190,000 native speakers, according to Lewis (2009) » (p. 83) ; « Like the Afar, most Saho are Hanafi Muslims; the Khatmiyya Sufi order became quite widespread among them » (p. 83) ; « the Eritrean Mission of 1905-06 by A. Mochi, L. Loria and others crossed the core Saho-speaking areas » (p. 92)."
+      },
+      {
+        "title": "La généalogie des trois tribus Irob chrétiennes d'après des documents de Gunda Gundié",
+        "author": "Gigar Tesfaye",
+        "year": 1985,
+        "url": "https://www.persee.fr/doc/ethio_0066-2127_1985_num_13_1_919",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 57",
+        "notes": "Annales d'Éthiopie, vol. 13, 1985, p. 57-66. Seule la première page a pu être lue sur Persée le 3 novembre 2026. Passages lus : « \"Irob\" est le nom que se donnent trois tribus chrétiennes parlant la langue saho » et « La fraction chrétienne (Irob-saho), établie sur le bord du haut-plateau, a adopté le tigrinya, qu'elle parle en même temps que le saho »."
+      },
+      {
+        "title": "L'Erythrée, de la conquête de la liberté à la réduction en esclavage : hors de la mondialisation, point de salut ?",
+        "author": "Marc Lavergne",
+        "year": 2015,
+        "url": "https://shs.hal.science/halshs-01098132v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Rapport de recherche du laboratoire GREMMO, déposé sur HAL le 5 janvier 2015 par un directeur de recherche au CNRS. Lu le 3 novembre 2026. Passage lu : « Neuf ethnies, identifiées par leur langue, sont officiellement reconnues » et « Les autres peuples sont les Saho (4%) ». Le même texte décrit les Saho comme « en majorité chrétiens », ce que contredisent les autres sources lues ; nous ne reprenons pas ce point."
+      },
+      {
+        "title": "Compte rendu de Abdulkader Saleh Mohammad, The Saho of Eritrea: Ethnic Identity and National Consciousness",
+        "author": "Magnus Treiber",
+        "year": 2016,
+        "url": "https://journals.sub.uni-hamburg.de/aethiopica/article/download/949/995/2966",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 304-305",
+        "notes": "Aethiopica, vol. 19 (2016), p. 304-306 ; compte rendu du livre paru à Zurich et Berlin chez LIT Verlag en 2013. Lu le 3 novembre 2026. Passages lus : « Saho supplied agricultural and animal products to Massawa's market and protected the risky, but profitable caravan trade » ; « quarrelled with Massawa's nāʾib, the Ottoman-installed governor and tax-collector » ; « Saho fought as Italian askari against Mǝnilǝk II »."
+      },
+      {
+        "title": "Origine de la collection des objets des peuples Saho issue de la Mission en Érythrée en 1905-1906 exposée au Museo di Antropologia ed Etnologia de Florence (Italie)",
+        "author": "Marta Caradonna",
+        "year": 2021,
+        "url": "https://shs.hal.science/halshs-03940065v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre de l'ouvrage collectif Histoire d'objets extra-européens : collecte, appropriation, médiation, Publications de l'Institut de recherches historiques du Septentrion, 2021. Seul le résumé a été lu sur HAL, le 3 novembre 2026 : « Pendant la période coloniale italienne la première expédition ethnographique est la Mission en Érythrée du 1905-1906 dans la région de l'Assaorta »."
+      },
+      {
+        "title": "Tiny ethnic group fears extinction as Tigray war enters 6th month",
+        "author": "Al Jazeera",
+        "year": 2021,
+        "url": "https://www.aljazeera.com/news/2021/5/4/tiny-ethnic-group-fears-extinction-as-tigray-war-enters-6th-month",
+        "tier": "unverified",
+        "source_kind": "press",
+        "notes": "Article de presse publié le 4 mai 2021, sans auteur nommé. Lu le 3 novembre 2026. Passages lus : « the Irob district has been under the total control of Eritrean forces » ; « I have helped to conduct memorial rites [in Addis Ababa] for 63 Irob natives killed by Eritrean troops » ; « The reports could not be independently verified »."
+      },
+      {
+        "title": "The Animal Caretakers : The Saho of Eritrea – Eritrea Ministry of Information / Shabait, 2016",
+        "url": "https://shabait.com/2016/08/26/the-animal-caretakers-the-saho-of-eritrea/",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Article du site du ministère érythréen de l'Information, daté du 26 août 2016, sans auteur nommé. Relu le 3 novembre 2026. Passages lus : « The organizing principle of Saho society was a decentralized egalitarian (acephalous) system » ; « general meetings (rakhbe) of elders and wise men » ; « They are known as Kisho, Mela, or Are. Each sub-tribe is divided into numerous kinship groups known as Dik or Abusa » ; « Many Saho observers estimate Saho population as being a little over 10% of Eritrea's inhabitants, 206,000 to be precise »."
+      },
+      {
+        "title": "Die Saho-Sprache, premier volume : Texte der Saho-Sprache",
+        "author": "Leo Reinisch",
+        "year": 1889,
+        "url": "https://archive.org/details/diesahosprache00reingoog",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. V et p. 6-7",
+        "notes": "Vienne, Alfred Hölder, 1889. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Récit d'origine des Saho (texte n° 7, « Ursprung des Sahovolkes ») et préface sur la façon dont les textes ont été recueillis."
+      },
+      {
+        "title": "Die Schoho's und die Beduan bei Massua",
+        "author": "Werner Munzinger",
+        "year": 1859,
+        "url": "https://archive.org/details/zeitschriftfural06zeit",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 91-92",
+        "notes": "Zeitschrift für allgemeine Erdkunde, vol. 6, 1859, p. 89-110 ; récit d'un voyageur suisse. Relu le 3 novembre 2026. Passages lus : « Die Schohos sind ein armes Hirtenvolk ohne Ackerbau, haben aber die Pässe nach Abessinien in Besitz » et « Jeder Durchreisende muss in Arkiko vom Naib oder in Halay einen Schoho als Führer (Delil) nehmen »."
+      },
+      {
+        "title": "History of the Saho – Saho Archive, 2023",
+        "url": "https://www.sahoarchive.org/history/",
+        "tier": "unverified",
+        "source_kind": "community",
+        "notes": "Site consacré à la langue, à l'histoire et à la culture des Saho, consulté le 3 novembre 2026. La page « History » rassemble des liens vers des textes anciens et récents, dont ceux de Werner Munzinger (1859) et de Gigar Tesfaye (1985)."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Saho sont un peuple d'Érythrée et du nord-est de l'Éthiopie qui parle le saho, une langue couchitique proche de l'afar ; les Irob du Tigray parlent aussi cette langue.",
+      "followUp": "D'où vient le nom Saho, que l'explorateur James Bruce écrivait Shiho en 1791 ?"
+    }
   }
 }

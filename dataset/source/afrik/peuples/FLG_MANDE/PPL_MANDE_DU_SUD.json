@@ -10,87 +10,111 @@
       "selfAppellation": null,
       "exonyms": [
         "Southern Mande (anglais)",
-        "Mande-fu (terme ancien francophone)",
-        "Mande sud-est (classification Kastenholz)"
+        "Southeastern Mande (anglais)",
+        "Mandé-fou (ancien nom)",
+        "Mani-Bandama (ancien nom)"
       ],
-      "originOfExonyms": "L'appellation Mande du Sud est une construction des linguistes europeens designant un sous-groupe de la grande famille Mande, en reference a leur implantation geographique au sud des Mande du Nord. Le terme Mande-fu a ete historiquement employe en Cote d'Ivoire. La classification anglophone Southern Mande est etablie par Dwyer (1989, 1996) et reprise dans Williamson & Blench 2000.",
-      "whyProblematic": "Le terme Mande du Sud ne designe pas un peuple unique mais un regroupement linguistique et culturel de plusieurs peuples partageant des langues apparentees. Il est utilise principalement par les linguistes et ethnologues, et non par les populations elles-memes qui s'identifient a leurs ethnies specifiques (Dan, Guro, Wan, Mano, etc.).",
-      "contemporaryUsage": "Usage academique et administratif pour regrouper les peuples Dan (Yacouba), Guro, Wan, Mano, Beng, Mwan, Gban et les peuples apparentes vivant dans l'ouest de la Cote d'Ivoire et au Liberia.",
+      "spellingAliases": ["Mandé-Sud", "Mande du Sud", "Mande-fu"],
+      "originOfExonyms": "Mandé du Sud est un nom donné par des linguistes. Il associe le nom de la famille mandé, à laquelle ces langues appartiennent, au mot sud. Le père André Prost l'écrit mandé-sud dès 1948. Avant lui, en 1901, l'administrateur colonial Maurice Delafosse appelait groupe de « fou », puis Mandé-fou, les langues mandé où dix se dit fu. Son groupe était plus large que celui des linguistes d'aujourd'hui. En anglais, on dit Southern Mande ; le linguiste Raimund Kastenholz a proposé Mani-Bandama en 1997, et le catalogue Glottolog dit Southeastern Mande.",
+      "whyProblematic": "Le nom Mandé du Sud ne désigne pas un peuple. Il réunit des peuples qui parlent des langues apparentées, comme les Dan, les Gouro, les Mano ou les Wan, et qui ont chacun leur nom. Dès 1904, Maurice Delafosse écrivait que la famille mandé ne se connaissait pas de nom commun. Le contenu du groupe a aussi changé : le Mandé-fou de 1904 comptait le sosso et le mendé, que les linguistes rangent aujourd'hui ailleurs, et une page de l'Université Laval appelle encore Mandés du Sud les Kpellé du Liberia.",
+      "contemporaryUsage": "Le nom Mandé du Sud sert aux linguistes et à l'État ivoirien, dont le recensement de 2021 en fait l'un des grands groupes ethniques du pays. Les personnes concernées se désignent d'abord par le nom de leur peuple. En anglais, les linguistes disent Southern Mande, et Glottolog dit Southeastern Mande.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null,
       "linguisticFamily": "FLG_MANDE",
-      "ethnoLinguisticGroup": "Branche Mande du Sud (Southern Mande / Mande sud-est) de la famille des langues mandees",
-      "historicalRegion": "Ouest et centre-ouest de la Cote d'Ivoire, extension vers le nord-est du Liberia"
+      "ethnoLinguisticGroup": "Groupe mandé du Sud (Southern Mande, Southeastern Mande) de la famille de langues mandé",
+      "historicalRegion": "Ouest et centre-ouest de la Côte d'Ivoire, nord-est du Liberia"
     },
     "ethnicities": [
-      "Dan (Yacouba)",
-      "Guro (Gouro)",
-      "Wan (Mona)",
-      "Mano",
-      "Beng",
+      "Dan (Yacouba, Gio)",
+      "Gouro (Guro)",
+      "Yaouré",
+      "Toura",
+      "Goo",
+      "Mano (Mann)",
+      "Wan",
       "Mwan (Mona)",
+      "Beng",
+      "Ngen",
       "Gban (Gagou)",
-      "Toura (Tura)"
+      "Gbin"
     ],
     "origins": {
-      "ancientOrigins": "Les Mande du Sud sont les descendants de populations mandees qui ont migre vers le sud et le sud-est, s'eloignant du berceau mande du Soudan occidental. Des locuteurs de langues mande du sud ont envahi la cote ouest-africaine depuis l'est lors de la premiere moitie du XVIe siecle, sous le nom de Mane en Sierra Leone et au Liberia, selon les sources historiques.",
-      "formationPeriod": "La differentiation linguistique des Mande du Sud par rapport aux Mande du Nord remonte a plusieurs siecles. La classification academique de cette branche a ete etablie par Welmers en 1958 (division en trois groupes : Nord-Ouest, Sud et Est) et confirmee par Dwyer (1989, 1996).",
+      "ancientOrigins": "Les langues mandé du Sud appartiennent à la grande famille mandé. Selon le linguiste Valentin Vydrin, la langue ancêtre de toute cette famille aurait été parlée dans la seconde moitié du IVe millénaire avant notre ère, dans le sud du Sahara. C'est une hypothèse, qu'il appuie sur la comparaison du vocabulaire, sur le climat ancien et sur l'archéologie.",
+      "formationPeriod": "Valentin Vydrin estime que la branche du Sud se serait séparée de la branche de l'Est vers 1560 avant notre ère. Il obtient cette date en comparant la part de mots communs entre les langues, une méthode que d'autres linguistes, comme Raimund Kastenholz, rejettent. Ces dates restent donc des estimations.",
       "migrationRoutes": [
-        "Migration depuis l'est vers la cote ouest-africaine (premiere moitie du XVIe siecle, documentee par des sources europeennes contemporaines)",
-        "Implantation progressive dans les zones forestieres de l'ouest de la Cote d'Ivoire et du Liberia"
+        "Selon Valentin Vydrin, le gban, le wan et le beng se seraient séparés des autres langues du groupe entre 700 et 300 avant notre ère, peut-être lors d'une migration précoce vers le sud."
       ],
       "historicalSettlementZones": [
-        "Ouest de la Cote d'Ivoire : regions de Man, Daloa, Gagnoa (Dan/Yacouba, Guro, Wan)",
-        "Nord-est du Liberia : region du comté de Nimba et zones frontalieres (Mano, Dan)"
+        "Lisière de la forêt dense en Côte d'Ivoire, où Maurice Delafosse situait en 1904 les peuples qu'il appelait Mandé-fou",
+        "Ouest et centre de la Côte d'Ivoire et nord-est du Liberia, où sont parlées aujourd'hui les langues du groupe"
       ],
-      "unificationsOrDivisions": "Les Mande du Sud forment une branche linguistique coherente mais sans unite politique. Chaque peuple constitutif a son propre systeme politique et social. La classification interne est debattue : Vydrin (2009) place les Mwan avec les Guro-Yaure ; Paperno classe les Gban (Beng) et Beng comme deux branches primaires.",
-      "externalInfluences": "Les Mande du Nord (Malinke, Dioula) ont exerce une influence commerciale et islamique sur certains Mande du Sud, notamment dans les zones de contact. Les Mande du Sud ont globalement resiste a l'islamisation et conserve leurs religions traditionnelles. L'influence coloniale europeenne (francaise en Cote d'Ivoire, britanno-liberienne) a redefini leurs frontieres administratives.",
-      "majorHistoricalEvents": "Les Mane, groupe de Mande du Sud, ont envahi la cote ouest-africaine (Sierra Leone, Liberia) vers 1545-1560, ce qui est documente par des sources europeennes. Leur langue, leurs armes et leur organisation militaire etaient observes par les Europeens a l'epoque. Ils n'ont ete arretes qu'en rencontrant les Susu (autres Mande) au nord-ouest de la Sierra Leone actuelle."
+      "unificationsOrDivisions": "Le groupe mandé du Sud est un ensemble de langues, pas une unité politique. Le catalogue Glottolog le divise en deux sous-groupes : d'un côté le mano, le dan, le toura, le goo, le gouro et le yaouré ; de l'autre le beng, le ngen, le gban, le wan, le mwan et le gbin.",
+      "externalInfluences": "Valentin Vydrin observe que la plupart des Wan parlent aussi le gouro ou le mwan, et que ces contacts rapprochent le vocabulaire de leurs langues. Il explique aussi certaines ressemblances avec d'autres langues mandé par des contacts anciens entre voisins.",
+      "majorHistoricalEvents": "Au XVIe siècle, des envahisseurs appelés Mane atteignent la côte du Liberia puis la Sierra Leone. Selon l'historien Walter Rodney, leur élite dirigeante venait de la partie sud du monde mandé, de la région de Beyla et peut-être de l'arrière-pays du Ghana actuel. Le résumé de son article ne rattache pas les Mane à l'une des langues du groupe mandé du Sud."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Chaque peuple constitutif (Dan, Guro, Wan, Mano, etc.) a sa propre organisation politique traditionnelle, generalement fondee sur des chefferies villageoises et des conseils d'anciens. Pas de structure politique commune a l'ensemble des Mande du Sud.",
-      "clanOrganization": "Organisation clanique propre a chaque groupe ethnique. Les Dan sont organises en villages autonomes avec des societes masquees. Les Guro ont des structures lignageres specifiques. La coherence intra-groupe est assuree par des institutions initiatiques.",
-      "ageClassSystems": "Des societes d'initiation (similaires au Poro des Mande du Sud-Ouest) structurent les classes d'age au sein de plusieurs peuples de ce groupe, notamment les Mano et les Dan.",
-      "roleOfLineages": "Les lignages patrilineaires ou matrilineaires (selon le groupe) determinent l'acces a la terre, a l'heritage et aux responsabilites claniques.",
-      "religiousAuthority": "Les responsables des societes initiatiques et les devins-guerisseurs detiennent l'autorite religieuse au sein de chaque communaute. La religion traditionnelle, fondee sur le culte des ancetres et les esprits de la nature, predomine dans la plupart des groupes."
+      "traditionalPoliticalSystem": "Chaque peuple du groupe a sa propre organisation politique ; le groupe n'a jamais formé un pouvoir commun.",
+      "clanOrganization": "Chaque peuple du groupe a ses propres clans et lignages.",
+      "ageClassSystems": "Les sources consultées ne décrivent pas de classes d'âge communes à l'ensemble du groupe.",
+      "roleOfLineages": "Le rôle des lignages varie d'un peuple du groupe à l'autre.",
+      "religiousAuthority": "Les sources consultées ne décrivent pas d'autorité religieuse commune à l'ensemble du groupe."
     },
     "languages": {
-      "mainLanguage": "Langues mande du sud (groupe linguistique, sans langue unique commune)",
-      "isoCodes": ["dnj", "goa", "wan", "mev", "gwu", "bcf"],
-      "dialects": [
-        "Dan/Yacouba (dnj) : Cote d'Ivoire et Liberia",
-        "Guro (goa) : centre-ouest Cote d'Ivoire",
-        "Wan/Mona (wan) : ouest Cote d'Ivoire",
-        "Mano (mev) : Liberia et Guinee",
-        "Mwan (gwu) : centre Cote d'Ivoire",
-        "Beng (bcf) : centre Cote d'Ivoire"
+      "mainLanguage": "Langues mandé du Sud (groupe de langues, sans langue commune)",
+      "isoCodes": [
+        "dnj",
+        "lda",
+        "goa",
+        "yre",
+        "neb",
+        "gov",
+        "mev",
+        "wan",
+        "moa",
+        "nhb",
+        "gnj",
+        "ggu",
+        "xgb"
       ],
-      "vehicularRole": "Chaque langue du groupe est vehiculaire au sein de sa communaute. Aucune langue commune n'unit l'ensemble des Mande du Sud. Le dioula et le francais servent de langues de contact inter-ethnique en Cote d'Ivoire ; l'anglais et le dioula au Liberia."
+      "dialects": [
+        "Dan (dnj) et kla-dan (lda) : ouest de la Côte d'Ivoire et Liberia",
+        "Gouro (goa) : centre-ouest de la Côte d'Ivoire",
+        "Yaouré (yre) : centre de la Côte d'Ivoire",
+        "Toura (neb) et goo (gov) : ouest de la Côte d'Ivoire",
+        "Mano ou mann (mev) : Liberia et Guinée",
+        "Wan (wan) : centre de la Côte d'Ivoire",
+        "Mwan ou mona (moa) : centre de la Côte d'Ivoire",
+        "Beng (nhb) et ngen (gnj) : centre de la Côte d'Ivoire",
+        "Gban ou gagou (ggu) : centre de la Côte d'Ivoire",
+        "Gbin (xgb) : Côte d'Ivoire"
+      ],
+      "vehicularRole": "Aucune langue ne sert de langue commune à l'ensemble du groupe. Chaque peuple parle la sienne, et beaucoup parlent aussi la langue d'un voisin : selon Valentin Vydrin, la plupart des Wan parlent aussi le gouro ou le mwan."
+    },
+    "externalIdentifiers": {
+      "glottocode": "sout3140"
     },
     "culture": {
-      "majorRites": "Les societes masquees sont au coeur de la vie rituelle de la plupart des Mande du Sud, notamment les Dan. Les masques sont utilises lors d'initiations, de funerailles et de ceremonies agricoles. Les Guro sont renommes pour leurs masques Zamle. Les rites d'initiation, separant les classes d'age et marquant l'entree dans l'age adulte, sont pratiques par la majorite des peuples du groupe.",
-      "symbols": "Les masques (zoomorphes, anthropomorphes ou syncrétiques) sont les artefacts culturels les plus emblematiques, produits par les Dan, les Guro et d'autres peuples du groupe. La foret est un espace sacre commun a plusieurs de ces peuples.",
-      "artsAndMusic": "Les Mande du Sud sont reconnus pour leur sculpture sur bois (masques), leurs textiles tisses, et leurs pratiques musicales (tambours, instruments a cordes). La tradition de la sculpture Dan est representee dans les grandes collections museales mondiales.",
-      "spiritualities": "Religion traditionnelle dominante, fondee sur la communication avec les esprits de la nature et le culte des ancetres, vehiculee par les masques et les societes initiatiques. L'islamisation est restee limitee dans la majorite des groupes. Le christianisme a progresse notamment chez les Mano (Liberia)."
+      "majorRites": "Chaque peuple du groupe a ses propres rites ; les sources consultées ne décrivent pas de rite commun à tout le groupe.",
+      "symbols": "Les sources consultées ne décrivent pas de symbole commun à l'ensemble du groupe.",
+      "artsAndMusic": "Les arts et les musiques sont propres à chaque peuple du groupe.",
+      "spiritualities": "Les sources consultées ne décrivent pas de pratique religieuse commune à l'ensemble du groupe."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de grand empire. Organisation en chefferies villageoises et en federations locales. Certains groupes (Mane) ont cependant mene des expansions militaires significatives le long de la cote ouest-africaine au XVIe siecle.",
-      "relationsWithNeighbors": "Relations de commerce et de conflit avec les Mande du Nord (Malinke, Dioula) qui cherchaient a etendre leur influence commerciale et islamique. Relations de proximite culturelle avec les peuples krou (voisins au sud en Cote d'Ivoire). Les Dan du Liberia sont en contact avec les Kpelle et les Mano.",
-      "conflictsOrAlliances": "Resistance aux incursions des Mande du Nord et a l'islamisation. Conquetes militaires des Mane le long de la cote ouest-africaine (XVIe siecle). Tensions et alliances avec les populations autochtones krou et atlantiques.",
-      "diaspora": "Migration economique vers les villes de Cote d'Ivoire (Abidjan, Man, Daloa) et du Liberia (Monrovia). Presence dans les grandes metropoles d'Afrique de l'Ouest."
+      "kingdomsOrChiefdoms": "Le groupe mandé du Sud n'a pas formé de royaume commun ; chaque peuple a son histoire politique.",
+      "relationsWithNeighbors": "Les peuples du groupe vivent les uns à côté des autres et parlent souvent la langue d'un voisin, comme les Wan, dont la plupart parlent aussi le gouro ou le mwan, selon Valentin Vydrin. En Côte d'Ivoire, les Gban ont la réputation d'être le premier peuple installé dans le pays ; tous les autres seraient arrivés après eux.",
+      "conflictsOrAlliances": "Au Liberia, les Dan, appelés Gio, et les Mano ont été mêlés à la guerre civile. Selon la page de l'Université Laval sur le Liberia, des centaines de Gio et de Mano, maltraités par le président Samuel Doe, se révoltent dans le nord-est du pays en décembre 1989, sous la conduite de Charles Taylor.",
+      "diaspora": "Les sources consultées ne décrivent pas de diaspora propre à l'ensemble du groupe."
     },
     "demography": {
-      "totalPopulation": 3500000,
-      "referenceYear": 2025,
-      "source": "Estimation agregee pour l'ensemble des peuples constituant le groupe Mande du Sud (Dan, Guro, Wan, Mano, Mwan, Beng, Gban et apparentes) en Cote d'Ivoire et au Liberia, basee sur les recensements nationaux et les estimations Ethnologue 2020-2024",
+      "totalPopulation": 1979228,
+      "referenceYear": 2021,
+      "source": "Recensement général de la population et de l'habitat de 2021 en Côte d'Ivoire (ANStat) : 1 014 342 hommes et 964 383 femmes de nationalité ivoirienne sont rangés dans le grand groupe Mandé du Sud ; le tableau publié donne un effectif total de 1 979 228, soit 8,6 % des Ivoiriens. Ce total ne compte que les Ivoiriens ; il ne couvre ni le Liberia ni la Guinée.",
       "distributionByCountry": [
         {
           "country": "CIV",
-          "population": 2800000,
-          "note": "Dan/Yacouba, Guro, Wan, Mwan, Beng, Gban principalement dans les regions de l'ouest et du centre-ouest"
-        },
-        {
-          "country": "LBR",
-          "population": 700000,
-          "note": "Dan (Gio), Mano principalement dans les comtes de Nimba, Grand Gedeh et les zones frontalieres"
+          "population": 1979228,
+          "percentage": 8.6,
+          "note": "Ivoiriens du grand groupe Mandé du Sud au recensement de 2021"
         }
       ]
     },
@@ -99,7 +123,8 @@
         "title": "L'amenagement linguistique au Liberia – Universite Laval",
         "url": "https://www.axl.cefan.ulaval.ca/afrique/liberia.htm",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Page du site « L'aménagement linguistique dans le monde », hébergé par l'Université Laval (Québec), dernière mise à jour du 19 décembre 2023. La page parle de « Mandés du Sud, tels que les Kpellés », un sens plus large que celui des linguistes d'aujourd'hui. Elle écrit qu'en décembre 1989, Charles Taylor lança une insurrection et que « plusieurs centaines des Gio et des Mano, qui avaient été maltraitées par le président Doe, se révoltèrent dans le Nord-Est ». Consulté le 3 novembre 2026."
       },
       {
         "title": "Dwyer, David – The Mande languages, in Williamson & Blench (eds.), African Languages: An Introduction, 2000",
@@ -116,11 +141,119 @@
         "url": "https://www.facebook.com/ethniesdeCI/posts/2083382538349935/",
         "tier": "unverified",
         "source_kind": "community"
+      },
+      {
+        "title": "Répartition des Ivoiriens par grand groupe ethnique selon le sexe, RGPH 2021",
+        "author": "Agence nationale de la statistique (ANStat), Côte d'Ivoire",
+        "year": 2021,
+        "url": "https://data.gouv.ci/datasets/repartition-des-ivoiriens-par-grand-groupe-ethnique",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Portail officiel des données ouvertes de Côte d'Ivoire, mise à jour du 11 mars 2026. Le texte de présentation dit : « Les groupes Krou et Mandé du Sud occupent des parts plus réduites mais significatives, représentant respectivement 9,1 % et 8,6 % de l'ensemble », sur « une population totale de 22 624 530 Ivoiriens ». Le tableau de données donne, pour le groupe Mandé du Sud, 1 014 342 hommes et 964 383 femmes ; sa colonne d'effectif total indique 1 979 228. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Vydrin, Valentin (2009) – On the Problem of the Proto-Mande Homeland, Journal of Language Relationship 1",
+        "author": "Valentin Vydrin",
+        "year": 2009,
+        "url": "https://www.jolr.ru/files/(10)jlr2009-1(107-142).pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 107, 110 et 113",
+        "notes": "Article en anglais, revue Journal of Language Relationship, n° 1, p. 107-142. Lu dans le fichier PDF de la revue. P. 107 : la langue ancêtre de la famille mandé aurait été parlée dans la seconde moitié du IVe millénaire avant notre ère, dans le sud du Sahara. P. 113 : la séparation entre les branches de l'Est et du Sud daterait d'environ 1560 avant notre ère ; le gban, le wan et le beng se seraient séparés des autres langues du groupe entre 700 et 300 avant notre ère, peut-être par une migration précoce vers le sud (note 12). L'auteur obtient ces dates par la glottochronologie, que Raimund Kastenholz rejette (p. 110). Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Glottolog 5.3 — Southeastern Mande (sout3140)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/sout3140",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max Planck d'anthropologie évolutionnaire, version 5.3. La notice range le groupe Southeastern Mande dans la branche Eastern Mande de la famille mandé. Elle y place deux sous-groupes : Mano-Dan (mann, dan, toura, goo, guro, yaouré) et Nwa-Ben (beng, ngen, gban, wan, mwan, gbin). Pour ce classement, elle cite David J. Dwyer (1989) et David Dwyer (2006). Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Essai de manuel pratique de la langue mandé ou mandingue",
+        "author": "Maurice Delafosse",
+        "year": 1901,
+        "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "page": "p. 218-219",
+        "notes": "Paris, E. Leroux, 1901. Lu dans la numérisation d'Internet Archive. P. 218-219 : l'auteur répartit les dialectes mandé en un « groupe de « tan » » et un « groupe de « fou » », « parce que, dans le premier groupe, le nombre dix se dit ta […] tandis que, dans le second groupe, le même nombre se dit fu (ou pu) ». Il range dans le groupe de « fou » le sosso, le diallonké, le kouéni ou gouro, le kpèlé, le dialecte des « Dioula anthropophages », le mendé, le loma, le loko, le manon, le oueïma et le moain ou mona. Texte d'un administrateur colonial. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+        "author": "Maurice Delafosse",
+        "year": 1904,
+        "url": "https://archive.org/details/vocabulairescomp00delauoft",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 141-146",
+        "notes": "Paris, Ernest Leroux, 1904. Lu dans la numérisation d'Internet Archive. P. 141 : la famille mandé « ne se connaît pas à elle-même d'appellation générique ». P. 142 : « A défaut de nom indigène, j'ai songé à désigner chaque groupe de langues mandé par le mot le plus généralement employé dans ce groupe pour exprimer le nombre « dix » », d'où les « langues mùnde-fu ». P. 144-146 : il compte quatorze langues ou dialectes mandé-fou, des Soso de Guinée aux Sya de Bobo-Dioulasso, et écrit qu'en Côte d'Ivoire « l'habitat des Mandé-fou correspond à peu près avec la lisière de la forêt dense ». Texte d'un administrateur colonial. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "A Reconsideration of the Mane Invasions of Sierra Leone",
+        "author": "Walter Rodney",
+        "year": 1967,
+        "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/reconsideration-of-the-mane-invasions-of-sierra-leone/5A730A8199E946732003C839A21DCC42",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "résumé",
+        "notes": "The Journal of African History, vol. 8, n° 2, juillet 1967, p. 219-246, Cambridge University Press. Nous n'avons lu que le résumé publié par l'éditeur. L'auteur y propose que l'élite dirigeante des Mane venait « the southern section of the Mande world of the Western Sudan », que le premier mouvement eut lieu dans la première moitié du XVIe siècle, depuis la région de Beyla et peut-être l'arrière-pays du Ghana actuel, puis que des incursions en Sierra Leone suivirent dans le troisième quart du même siècle. Le résumé ne rattache pas les Mane à une langue précise. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Déclinaison nominale en dan-gwèètaa (groupe mandé-sud, Côte-d'Ivoire)",
+        "author": "Valentin Vydrin",
+        "year": 2011,
+        "url": "https://shs.hal.science/halshs-00866827v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 233",
+        "notes": "Revue Faits de langues, Les cahiers, n° 3, 2011, p. 233-258. Lu dans la copie déposée sur l'archive ouverte HAL. Le titre porte « groupe mandé-sud ». P. 233 : les variantes du dan sont parlées au Liberia, « où elles sont connues sous le nom « Gio » », et en Côte d'Ivoire, où leurs locuteurs « sont appelés « Yacouba » ». Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Les langues mandé-sud du groupe mana-busa",
+        "author": "André Prost",
+        "year": 1953,
+        "url": "https://glottolog.org/resource/reference/id/121543",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Dakar, IFAN, Mémoires de l'Institut français d'Afrique noire, n° 26, 1953, 182 pages. Nous avons lu la notice bibliographique de Glottolog, pas le livre. La notice rattache l'ouvrage au wan, au mwan, au beng, au guro, au yaouré, au toura, au dan, au mann et au bobo madaré du Sud. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Contribution à l'étude des langues mandé-sud",
+        "author": "André Prost",
+        "year": 1948,
+        "url": "https://glottolog.org/resource/reference/id/67044",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article publié dans Notes africaines, bulletin de l'Institut français d'Afrique noire, n° 40, p. 2-4. Nous avons lu la notice bibliographique de Glottolog, pas l'article lui-même. Consulté le 3 novembre 2026."
       }
     ],
     "searchAnswer": {
-      "lead": "Un regroupement par la langue, pas un peuple : les Dan, les Gouro, les Wan, les Mano et d'autres peuples de l'ouest de la Côte d'Ivoire et du Liberia, qui ont chacun leur nom.",
-      "followUp": "D'où vient le nom Mandé ?"
-    }
+      "lead": "Mandé du Sud n'est pas un peuple : c'est un nom de linguistes pour un groupe de langues, celles des Dan, des Gouro, des Mano, des Wan et d'autres peuples de Côte d'Ivoire et du Liberia.",
+      "followUp": "D'où vient l'ancien nom Mandé-fou ?"
+    },
+    "gaps": [
+      {
+        "field": "content.appellations.selfAppellation",
+        "reason": "Mandé du Sud est un nom de linguistes. Les peuples du groupe ont chacun leur nom, et nous n'avons trouvé, dans les travaux de Maurice Delafosse, de Valentin Vydrin et dans Glottolog, aucun nom commun qu'ils se donneraient."
+      },
+      {
+        "field": "content.organization",
+        "reason": "Nous n'avons pas trouvé, dans Glottolog, les travaux de Valentin Vydrin et ceux de Maurice Delafosse, de description de l'organisation sociale qui vaille pour tout le groupe. Elle est à chercher peuple par peuple."
+      },
+      {
+        "field": "content.culture",
+        "reason": "Nous n'avons pas trouvé, dans les sources consultées, de description des rites, des arts ou des croyances qui vaille pour tout le groupe. Ils sont à chercher peuple par peuple."
+      },
+      {
+        "field": "content.historicalRole.diaspora",
+        "reason": "Nous n'avons pas trouvé de source qui décrive les migrations récentes de l'ensemble des peuples du groupe."
+      },
+      {
+        "field": "content.demography.distributionByCountry",
+        "reason": "Nous n'avons pas pu lire le recensement libérien de 2022 : le chiffre des Dan, appelés Gio, et des Mano du Liberia manque encore, comme celui des Mano de Guinée."
+      }
+    ]
   }
 }

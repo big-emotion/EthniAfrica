@@ -3,151 +3,145 @@
   "nameMain": "Kongo",
   "languageFamilyId": "FLG_BANTU",
   "currentCountries": ["COD", "AGO", "COG", "GAB"],
+  "classificationStatus": "consensual",
   "content": {
     "appellations": {
       "mainName": "Kongo",
       "selfAppellation": "Bakongo",
       "spellingAliases": ["Mukongo"],
-      "exonyms": [
-        "Kongo (denomination europeenne, devenue standard)",
-        "Bakongo (forme plurielle avec prefixe bantou ba-)",
-        "Kongo dia Ntotila (designant les Kongo du royaume central)",
-        "Kikongo",
-        "Bacongo"
-      ],
-      "originOfExonyms": "Le terme Kongo designait a l'origine le royaume fonde au XIVe siecle dont la capitale etait Mbanza Kongo (actuel Angola). Les Portugais, premiers Europeens a entrer en contact en 1483, adopteent ce nom pour designer le peuple et la langue. Le prefixe Ba- (peuple de) donne Bakongo.",
-      "whyProblematic": null,
-      "contemporaryUsage": "Bakongo et Kongo sont utilises indifferemment selon les contextes. La langue est officellement appelee Kikongo (ki- designant la langue en bantou). Le terme Kongo est aussi le nom du fleuve Congo, du royaume historique et de la province RDC du Kongo Central. Au singulier, on dit Mukongo.",
+      "exonyms": ["Congo", "Kikongo", "Bacongo"],
+      "originOfExonyms": "Le nom Kongo est d'abord celui d'un royaume. Sa capitale, Mbanza Kongo, se trouve dans l'actuel Angola, selon l'UNESCO. Selon le missionnaire suédois Karl Laman, quand le navigateur portugais Diogo Cão atteint l'embouchure du fleuve en 1482, les habitants lui disent que leur chef vit à Mbanza Kongo, et les gens de cette ville se nomment bisi Kongo. Avec le temps, le pays jusqu'à la côte, sa population, le fleuve et tout son bassin reçoivent ce nom, et les Européens le gardent pour plusieurs peuples distincts mais apparentés par leur origine et leur langue. Les textes portugais et italiens écrivent Congo, et Manicongo pour le roi et son royaume. En 1887, le missionnaire baptiste William Holman Bentley préfère la graphie Kongo, plus proche de la prononciation. Il explique aussi que le préfixe ba- marque en kikongo le pluriel des noms de personnes, d'où Bakongo.",
+      "whyProblematic": "Les sources consultées ne disent pas que les Kongo rejettent ce nom : c'est celui qu'ils se donnent. Son étendue pose en revanche question. Selon Karl Laman, ce sont les Européens qui ont étendu le nom des gens de la capitale à tout un ensemble de peuples apparentés, et ses éditeurs précisent que Laman a surtout décrit les Sundi. Le même mot nomme aussi un fleuve, deux États actuels et une province de la RDC, ce qui prête à confusion. Enfin, le sens des noms a changé : en 1886, Bentley réserve Bakongo aux Kongo indépendants qui vivent à l'est de la rivière Kwilu, et, selon l'historien Jan Vansina, le mot muisikongo désigne aux XVIe et XVIIe siècles les nobles du royaume.",
+      "contemporaryUsage": "Les noms Kongo et Bakongo s'emploient tous les deux aujourd'hui, et une seule personne se dit Mukongo. La langue se nomme kikongo ; Bentley l'écrivait Kixi-Kongo, où -xi- vient de nxi, « pays ». Le nom Kongo est aussi celui du fleuve Congo, du royaume ancien et de la province du Kongo-Central, en RDC. En Angola, le recensement de 2024 range 14,4 % des habitants dans le groupe ethnique « Quicongo », la forme portugaise du nom, et 6,8 % des habitants ont le kikongo pour langue maternelle.",
       "peopleGroupId": "PGRP_KONGO",
       "peopleGroupLabel": "Kongo (Bakongo)",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantou de la zone H (bantou occidental, Guthrie H.10-H.16)",
-      "historicalRegion": "Bassin du Congo occidental : Kongo Central (RDC), Cabinda et nord de l'Angola, departement du Kouilou et Pool (Congo-Brazzaville), Ogooue-Maritime (Gabon)",
+      "historicalRegion": "Bassin du Congo occidental : Kongo-Central (RDC), Cabinda et nord de l'Angola, départements du Kouilou et du Pool (Congo-Brazzaville), Ogooué-Maritime (Gabon)",
       "currentCountries": ["COD", "AGO", "COG", "GAB"]
     },
     "ethnicities": [
-      "Sundi (Bas-Congo, RDC)",
+      "Sundi (Kongo-Central, RDC, et vallée du Niari, Congo-Brazzaville)",
       "Yombe (Mayombe, RDC et Congo-Brazzaville)",
-      "Vili (cote atlantique, Congo-Brazzaville et Gabon)",
-      "Beembe (region de Brazzaville)",
-      "Bwende (Pool, Congo-Brazzaville)",
-      "Dondo (Bouenza, Congo-Brazzaville)",
-      "Lari (pool, region de Brazzaville, Congo)",
-      "Koongo (Kongo central, RDC, autour de Mbanza Ngungu)",
-      "Kunyi (plateau Niari, Congo-Brazzaville)",
-      "Kongo dia Ntotila (descendants du royaume de Kongo central, RDC nord-Angola)",
-      "Solongo (cote atlantique angolaise)",
-      "Woyo (embouchure du fleuve Congo, Angola-Congo)",
-      "Manianga (territoires de Luozi et Mbanza-Ngungu) : sous-groupe important, connu pour son role commercial historique",
-      "Ntandu (region de Thysville / Mbanza-Ngungu et Lukala) : sous-groupe numerique significatif",
-      "Ndibu (region de Kimpese et Mbanza-Ngungu) : sous-groupe distinct avec dialecte propre",
-      "Lemfu (region de Kasangulu) : sous-groupe de la zone du Pool Malebo",
-      "Mboma / Ba Mboma (region de Matadi) : sous-groupe de la region portuaire",
-      "Ba Zombo / Bazombo (region de Luozi) : sous-groupe a cheval sur la frontiere Congo-Angola",
-      "Kamba / Hangala (region du Niari) : sous-groupes kongo de la region interieure"
+      "Vili (côte atlantique, Congo-Brazzaville et Gabon)",
+      "Beembe (département de la Bouenza, Congo-Brazzaville)",
+      "Bwende (département du Pool, Congo-Brazzaville)",
+      "Dondo (département de la Bouenza, Congo-Brazzaville)",
+      "Lari (département du Pool et région de Brazzaville, Congo-Brazzaville)",
+      "Koongo (Kongo-Central, RDC, autour de Mbanza-Ngungu)",
+      "Kunyi (plateau du Niari, Congo-Brazzaville)",
+      "Kongo dia Ntotila (héritiers du royaume de Kongo, nord de l'Angola et Kongo-Central)",
+      "Solongo (côte atlantique de l'Angola)",
+      "Woyo (embouchure du fleuve Congo, Angola et RDC)",
+      "Manianga (territoire de Luozi, RDC)",
+      "Ntandu (région de Mbanza-Ngungu et de Lukala, RDC)",
+      "Ndibu (région de Kimpese et de Mbanza-Ngungu, RDC)",
+      "Lemfu (région de Kasangulu, RDC)",
+      "Mboma / Ba Mboma (région de Boma et de Matadi, RDC)",
+      "Ba Zombo / Bazombo (plateau du Zombo, à la frontière entre l'Angola et la RDC)",
+      "Kamba / Hangala (vallée du Niari, Congo-Brazzaville)"
     ],
     "origins": {
-      "ancientOrigins": "Les Bakongo font partie de la grande expansion bantoue depuis le bassin du Congo. Avant la fondation du royaume, ils vivaient comme sujets de la chefferie de Vungu (au nord du fleuve). Apres l'effondrement de ce royaume, ils se regroupent dans les royaumes de Kongo, Loango et Kakongo. La date de formation du royaume de Kongo est inconnue : une lecture fait debuter le processus des le IXe siecle, par raisonnement analogique ; d'autres placent la fondation au plus tard vers 1400, au plus tot un bon siecle auparavant. Le royaume se constitua par absorption des sept royaumes de Kongo dia Nlaza et de la chefferie de Vungu, avec pour capitale Mbanza Kongo (situee a ~200 km de la cote atlantique).",
-      "formationPeriod": "Le royaume de Kongo atteignit son apogee aux XVe-XVIe siecles. Le contact avec les Portugais (1483) accelera a la fois le commerce et la penetration chretienne. La conversion au catholicisme du roi Nzinga a Nkuwu (baptise Joao I en 1491) inaugurant une ere de Kongo chretien. Le commerce des esclaves (surtout apres 1500) destabilisa progressivement le royaume jusqu'a sa fragmentation apres la bataille de Mbwila (1665).",
+      "ancientOrigins": "Selon l'historien Jan Vansina, des agriculteurs parlant des langues bantoues occidentales vivent au nord et au sud du cours inférieur du fleuve Congo depuis au moins 400 avant notre ère. Entre le IIe et le Ve siècle arrivent de l'est des groupes parlant des langues bantoues orientales. Le fer est travaillé dans la région vers l'an 100 au plus tard, et la banane arrive sans doute au VIe siècle. Vansina place le berceau de la civilisation kongo au Mayombe, au nord du fleuve, où chaque zone se spécialise : le sel et le poisson sur la côte, le cuivre et le plomb de Mboko Songho à Mindouli, le fer dans le pays manianga, le tissu de raphia vers la forêt. Le royaume de Kongo naît dans la chefferie de Vungu, au nord du fleuve. Selon la tradition que rapporte Vansina, son fondateur, Nimi Lukeni, fonde Mbanza Kongo par alliance avec le chef local, le Kabunga, et avec le roi du Mbata, puis par la conquête de terres vers la mer. La date de sa fondation est inconnue. Certains auteurs font commencer le processus dès le IXe siècle, en raisonnant par comparaison ; d'autres placent la fondation vers 1400 au plus tard, et au plus tôt un bon siècle avant. Karl Laman rapporte une tradition kongo selon laquelle « nos ancêtres sont venus de l'est ». Il en tire une migration depuis la région du Chari, vers l'an 550 ; ses éditeurs de 1953 préviennent que plusieurs de ses théories, courantes vers 1920, ont été abandonnées depuis.",
+      "formationPeriod": "Aux XVe et XVIe siècles, selon Jan Vansina, un seul État, le Kongo, domine toute la région entre le plateau de Benguela et les plateaux batéké, et de la mer jusqu'au-delà du Kwango. Vers 1500, le royaume lui-même suit la rive du fleuve Congo depuis son embouchure et comprend tout le bassin de l'Inkisi. Le 3 mai 1491, selon la chronique portugaise de Rui de Pina, le roi reçoit le baptême et prend le nom de João, en l'honneur du roi Jean II de Portugal. Son fils Nzinga Mbemba, baptisé Afonso, lui succède en 1506 et règne jusqu'en 1543, le plus long règne de l'histoire du royaume. Il fait de l'Église catholique la religion de l'État.",
       "migrationRoutes": [
-        "Expansion bantoue depuis l'Afrique centrale (bassin du Congo) vers l'ouest et le sud-ouest",
-        "Peuplement des rives du fleuve Congo et de ses affluents (Inkisi, Niari, Chiloango)",
-        "Dispersion par l'esclavage transatlantique vers le Bresil, Cuba, Haiti, Jamaique, Louisiane (XVIe-XIXe s.)",
-        "Expansion des sous-groupes Manianga et Ntandu depuis le coeur du royaume vers l'est et le nord (15e-17e siecles)",
-        "Migrations internes dues aux guerres civiles post-Mbwila (apres 1665)",
-        "Urbanisation vers Matadi, Boma, Kinshasa et Mbanza-Ngungu (20e-21e siecles)",
-        "Migrations de groupes Sundi depuis la province de Nsundi (actuel Angola) vers l'actuel Congo (15e-17e siecles)",
-        "Migration des Vili depuis la region cotiere vers l'interieur sous la pression des royaumes voisins"
+        "Installation d'agriculteurs parlant des langues bantoues occidentales au nord et au sud du cours inférieur du fleuve Congo, depuis au moins 400 avant notre ère (Jan Vansina)",
+        "Arrivée, entre le IIe et le Ve siècle, de groupes venus de l'est et parlant des langues bantoues orientales (Jan Vansina)",
+        "Tradition kongo d'une origine à l'est, rapportée par Karl Laman, qui la relie à une migration depuis la région du Chari ; ses éditeurs signalent que ces théories ont été abandonnées",
+        "Installation des Sundi entre Matadi et l'Inkisi, sur les deux rives du fleuve, avant la fondation du royaume de Kongo, selon Karl Laman",
+        "Départ de nobles vers le nord du fleuve, au Mayombe et entre le Congo et le Niari, après l'abandon de Mbanza Kongo entre 1666 et 1678 (Jan Vansina)",
+        "Installation de nobles kongo dans la région cuprifère de Mindouli, entre Loango et le Pool, au XVIIIe siècle (Jan Vansina)",
+        "Départ forcé de captifs par les ports du royaume à partir de 1514 environ ; selon Vansina, la plupart venaient du Pool et d'au-delà, et non du royaume même"
       ],
       "historicalSettlementZones": [
-        "Mbanza Kongo / Sao Salvador (capitale, actuel Angola)",
-        "Bas-Congo / Kongo Central (RDC, entre le fleuve Congo et l'Atlantique)",
-        "Cabinda (enclave angolaise)",
-        "Departement du Pool et Kouilou (Congo-Brazzaville)",
-        "Province du Mayombe (RDC et Congo-Brazzaville)",
-        "Cote sud-ouest du Gabon (Ogooue-Maritime)",
-        "Region de Matadi (capitale provinciale) et du bas fleuve Congo : zone Mboma et cotiere",
-        "Region de Mbanza-Ngungu et Lukala : zone Ntandu et Ndibu",
-        "Region de Luozi : zone Manianga et Zombo",
-        "Region de Kimpese : zone Ndibu",
-        "Region de Boma (ancien chef-lieu colonial) : zone cotiere",
-        "Littoral et embouchure du Congo (Banana, Moanda) : zone Solongo et Woyo",
-        "Region de Kinshasa (est de la province) : zone fortement urbanisee",
-        "Sud de Pointe-Noire (République du Congo)",
+        "Mbanza Kongo, appelée São Salvador par les Portugais (capitale, actuel Angola)",
+        "Kongo-Central (RDC, entre le fleuve Congo et l'Atlantique)",
+        "Cabinda (Angola)",
+        "Départements du Pool et du Kouilou (Congo-Brazzaville)",
+        "Mayombe (RDC et Congo-Brazzaville)",
+        "Côte sud-ouest du Gabon (Ogooué-Maritime)",
+        "Région de Matadi et du bas fleuve Congo : zone mboma et côtière",
+        "Région de Mbanza-Ngungu et de Lukala : zone ntandu et ndibu",
+        "Région de Luozi : zone manianga",
+        "Région de Kimpese : zone ndibu",
+        "Région de Boma : zone côtière",
+        "Littoral et embouchure du Congo (Banana, Moanda) : zone solongo et woyo",
+        "Kinshasa (RDC)",
+        "Sud de Pointe-Noire (Congo-Brazzaville)",
         "Ouest du Pool Malebo et est du Kwango (RDC)",
         "Nord de Luanda (Angola)",
-        "Vallee du Niari : zone des Sundi, Kunyi et Kamba",
-        "Departement de la Bouenza : zone des Beembe"
+        "Vallée du Niari : zone sundi, kunyi et kamba",
+        "Département de la Bouenza : zone beembe"
       ],
-      "unificationsOrDivisions": "Le royaume de Kongo unifia de nombreux peuples sous un seul roi (Manikongo) elu par les nobles de la cour. L'adoption du christianisme par la famille royale (1491) crea une culture kongo chretienne unique. La bataille de Mbwila (1665) - victoire portugaise, mort du Manikongo Antonio I - fragmente le royaume en principautes rivales. Des guerres civiles (1665-1709) affaiblirent davantage le pouvoir central. Dona Beatriz Kimpa Vita (brulee en 1706) tenta une renovation spirituelle nationaliste. Pedro IV reconquit une partie du territoire avec l'aide portugaise.",
-      "externalInfluences": "Le commerce portugais (ivoire, cuivre puis esclaves) transforma l'economie du royaume. Le catholicisme s'implanta profondement : lettres du roi Afonso I au Portugal protestant contre la traite (1510s-1520s). Plus de 5,6 millions d'esclaves furent exportes depuis l'Afrique centrale occidentale entre 1501 et 1867, devastant la population kongo. La colonisation du XIXe s. divisa les Bakongo entre la France (nord, Congo-Brazzaville et Gabon), la Belgique (centre, RDC) et le Portugal (sud, Angola).",
-      "majorHistoricalEvents": "1483 : premier contact avec les Portugais. 1491 : bapteme du Manikongo Joao I. 1514 : la traite des esclaves s'intensifie. 1526 : le roi Afonso Ier, fils de João Ier, tente d'abolir la traite, sans succès. 1568 : invasion des Jaga, intervention portuguaise. 1665 : bataille de Mbwila, mort du Manikongo, fragmentation du royaume. 1706 : execution de Dona Beatriz Kimpa Vita. 1884-1885 : demembrement du territoire Kongo lors de la Conference de Berlin."
+      "unificationsOrDivisions": "Le royaume de Kongo réunit de grandes provinces sous un roi élu, que Bentley appelle aussi Ntotela. Selon Jan Vansina, la bataille de Mbwila, en 1665, voit la défaite du roi António Ier face à l'armée de l'Angola portugais ; il y meurt avec de nombreux nobles. La succession disputée tourne à la guerre civile entre maisons nobles : Mbanza Kongo est détruite en 1666 et abandonnée en 1678. Entre 1704 et 1706, Dona Beatriz Kimpa Vita prêche un christianisme renouvelé, l'antonianisme, et pousse les prétendants à restaurer un roi à Mbanza Kongo ; elle est capturée et brûlée comme hérétique en 1706. Quand un roi unique revient à Mbanza Kongo en 1709, le royaume n'est plus qu'un ensemble de principautés. En 1879, selon Bentley, le roi Dom Pedro V n'exerce plus qu'une autorité nominale à une soixantaine de kilomètres autour de sa ville. À l'époque coloniale, Karl Laman décrit le pays sundi de part et d'autre de la frontière entre le Congo belge et le Congo français.",
+      "externalInfluences": "Selon Jan Vansina, Afonso Ier ouvre le pays au Portugal à partir de 1506 : il fait venir des techniciens et des missionnaires, et la noblesse apprend à lire et à écrire. Son fils Henrique est sacré évêque à Rome et dirige l'Église du Kongo de 1518 à 1536. La traite des captifs s'intensifie à partir de 1514 ; Afonso Ier tente d'abord de la contrôler, puis de l'abolir en 1526, sans succès. Les exportations atteignent 4 000 à 5 000 captifs par an jusque vers 1540, puis 6 000 à 7 000. À partir de 1645, de nombreux missionnaires capucins italiens arrivent et convertissent les campagnes. Au XVIIIe siècle, toujours selon Vansina, la population diminue sans doute dans l'ancien Kongo et au Mayombe.",
+      "majorHistoricalEvents": "1482 : Diogo Cão atteint l'embouchure du fleuve, selon Karl Laman ; Rui de Pina date ce voyage de 1485 et Bentley de 1484. 1490 : un ordre du roi Jean II de Portugal nomme le royaume Manjcongo. 3 mai 1491 : baptême du roi du Kongo, qui prend le nom de João. 1506 : Nzinga Mbemba, Afonso Ier, succède à son père Nzinga Nkuwu. 1514 : la traite des captifs s'intensifie. 1526 : Afonso Ier tente d'abolir la traite, sans succès. 1566-1567 : deux rois meurent pendant une guerre contre les Tio du Pool. 1568 : invasion des guerriers appelés Jaga ; des troupes portugaises reconquièrent le pays entre 1571 et 1573. 1575-1576 : fondation de la colonie portugaise d'Angola et de Luanda. 1665 : bataille de Mbwila, mort du roi António Ier. 1666-1678 : Mbanza Kongo est détruite puis abandonnée. 1704-1706 : prédication de Dona Beatriz Kimpa Vita, puis son exécution. 1709 : un roi unique revient à Mbanza Kongo."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Monarchie electiveà legitimite religieuse : le Manikongo (roi du Kongo) etait elu par les nobles de la cour (ne pas heredite stricte) et legitimise par la reconnaissance de ses pairs, les regalia royaux et le ritualisme religieux. La cour de Mbanza Kongo comptait des gouverneurs provinciaux (ducs, marques, comtes) souvent de la famille royale. Apres 1665 : fragmentation en principautes dirigees par des familles nobles alliees aux Portugais. Les regions etaient administrees par des nobles hereditaires.",
-      "clanOrganization": "Systeme de descent matrilineaire (kanda) : l'appartenance clanique se transmet par la mere. Les kanda sont les unites sociales fondamentales pour l'heritage, l'alliance et l'identite. Les sous-groupes (Beembe, Vili, Yombe, Sundi, etc.) constituent des unites semi-autonomes au sein de la culture kongo globale.",
-      "ageClassSystems": null,
-      "roleOfLineages": "Les lignages matrilineaires (kanda) detiennent les droits fonciers et de succession. Le chef de kanda gere les conflits, les mariages et les rites. La descendance matrilineaire coexiste avec une residence patrilocale, creant une tension entre le lignage du pere et celui de la mere dans les droits de l'enfant.",
-      "religiousAuthority": "Pretres traditionnels (nganga) specialises selon les domaines (nganga nkisi pour les amulettes, nganga a bilongo pour la medecine). Les nkisi (objets-forts charges de puissance spirituelle) sont actives par des nganga. L'Eglise catholique, implantee depuis 1491, a joue un role majeur dans la vie kongo. Le mouvement Kimbanguiste (fonde au Congo belge en 1921 par Simon Kimbangu) est un exemple de religion kongo syncretique tres influente."
+      "traditionalPoliticalSystem": "Selon Jan Vansina, la royauté du Kongo est élective. Le conseil royal compte douze membres, dont quatre femmes qui, selon l'historienne Anne Hilton, représentent les clans des grands-parents du roi. Le roi nomme et révoque les gouverneurs des provinces, sauf celui du Mbata, où le pouvoir se transmet en ligne féminine, et, après 1491, celui du Soyo. La noblesse vit dans la capitale et n'a pas de fonctions héréditaires. Le roi contrôle la monnaie, des coquillages appelés nzimbu pêchés près de l'île de Luanda, et une garde de 16 000 à 20 000 esclaves à la fin du XVIe siècle. On l'appelle Nzambi mpungu, et Vansina écrit qu'il est lui-même le nkisi, la force sacrée, du pays. Deux seigneurs du clan Nsaku l'intronisent.",
+      "clanOrganization": "Selon Jan Vansina, le mot ekanda, de la racine kanda, désigne aujourd'hui le clan ou le lignage maternel. Aux XVIe et XVIIe siècles, il désignait aussi toute communauté : la famille, le village, le groupe ethnique ou la communauté chrétienne. Au XVIIIe siècle apparaissent de grands clans, les mvila, organisés en lignages attachés à la terre, qui relient entre eux les villages indépendants. Chez les Sundi qu'il a étudiés, Karl Laman écrit que l'enfant appartient au kanda de sa mère, même si son père l'a engendré.",
+      "ageClassSystems": "Les sources consultées (Karl Laman, Jan Vansina) ne décrivent pas de classes d'âge chez les Kongo. Laman écrit qu'il n'existait pas, à l'origine, d'école ni de société secrète d'enseignement, et pas de cérémonie particulière d'initiation pour les adolescents en dehors de la circoncision. Il décrit la société des bankimba, venue de la côte, qui initiait par groupes des garçons adolescents et n'a pas dépassé la région de Kibunzi. Vansina cite le khimba, le nzo longo et le kimpasi comme des cultes d'initiation des garçons ou de guérison, différents d'une région à l'autre.",
+      "roleOfLineages": "Selon Jan Vansina, la filiation maternelle règle l'accès à la terre, la résidence et la succession à la tête du village. Le village appartient en principe au lignage maternel de son fondateur, que représente le chef, le nkuluntu, « l'ancien ». Comme les femmes suivent leur mari, le village réunit en pratique des membres de plusieurs clans, et le chef les consulte. Chez les Sundi, Karl Laman écrit que le chef du kanda garde la mémoire des procès, des mariages et des alliances, et que les enfants héritent de leur mère, non de leur père, dont les biens vont à son propre kanda.",
+      "religiousAuthority": "Selon Jan Vansina, le nganga est le spécialiste religieux reconnu, et les devins, nganga ngombo, désignent les auteurs de maléfices. Le mani Kabunga, du clan Nsaku Vunda, est la plus haute autorité religieuse du royaume : il sert l'esprit du territoire de Mbanza Kongo. Karl Laman décrit le nganga nkisi, formé par un nganga plus ancien à réunir les remèdes de chaque nkisi et à en conduire les rites. Sous Afonso Ier, l'Église catholique devient la religion de l'État, et les chrétiens reprennent le mot nkisi au sens de « ce qui est sacré »."
     },
     "languages": {
-      "mainLanguage": "Kikongo",
-      "isoCodes": ["kon", "kng", "ldi", "vif"],
+      "mainLanguage": "Kikongo (kon)",
+      "isoCodes": ["kon", "kng", "kwy", "ldi", "vif"],
       "dialects": [
-        "Koongo (dialecte central, autour de Mbanza Ngungu, RDC)",
-        "Laari / Lari (region de Brazzaville, Congo)",
+        "Koongo (Kongo-Central, autour de Mbanza-Ngungu, RDC)",
+        "Laari / Lari (région de Brazzaville, Congo-Brazzaville)",
         "Yombe (Mayombe, RDC et Congo-Brazzaville)",
-        "Vili / Kivili (cote nord, Pointe-Noire, Congo-Brazzaville et Gabon)",
-        "Sundi (Bas-Congo, RDC)",
+        "Vili / Kivili (côte nord, Pointe-Noire, Congo-Brazzaville et Gabon)",
+        "Sundi (Kongo-Central, RDC)",
         "Doondo / Dondo (Bouenza, Congo-Brazzaville)",
-        "Beembe (region du Pool, Congo-Brazzaville)",
-        "Kongo-San-Salvador (autour de l'ancienne capitale, Angola)",
-        "Kunyi (plateau du Niari, Congo)",
-        "Kituba / Kikongo ya Leta (creole a base kikongo, vehiculaire en RDC et Congo-Brazzaville)",
-        "Kimanianga : dialecte de la region de Luozi et Manianga, proche du Kisikongo central",
-        "Kintandu (Ntandu) : dialecte de la region de Mbanza-Ngungu et Thysville",
-        "Kindibu : dialecte de la region de Kimpese",
-        "Kibwende : dialecte de la zone du Mayombe occidental (Kongo Central)",
-        "Kisolongo / Nsolongo : dialecte cotier de la zone de Moanda et Banana"
+        "Beembe (Bouenza, Congo-Brazzaville)",
+        "Kongo de San Salvador (autour de l'ancienne capitale, Angola)",
+        "Kunyi (plateau du Niari, Congo-Brazzaville)",
+        "Kituba / Kikongo ya Leta (langue véhiculaire issue du kikongo, en RDC et au Congo-Brazzaville)",
+        "Kimanianga (région de Luozi)",
+        "Kintandu (Ntandu, région de Mbanza-Ngungu)",
+        "Kindibu (région de Kimpese)",
+        "Kibwende (Pool, Congo-Brazzaville)",
+        "Kisolongo / Nsolongo (côte de Moanda et de Banana)"
       ],
-      "vehicularRole": "Le kikongo est la langue maternelle des Bakongo au sens large. Le Kituba (Kikongo ya Leta) est un creole vehiculaire tres repandu au Congo-Brazzaville et dans l'ouest de la RDC. En RDC, le lingala est la lingua franca principale dans les villes. Le francais est langue officielle en RDC, Congo-Brazzaville et Gabon ; le portugais en Angola."
+      "vehicularRole": "Le kikongo est un ensemble de parlers proches : le registre de l'ISO 639-3 le classe comme macrolangue (kon), qui réunit le koongo (kng), le kongo de San Salvador (kwy) et le laari (ldi). Le kituba, aussi appelé monokutuba ou kikongo ya leta, sert de langue véhiculaire au Congo-Brazzaville et dans l'ouest de la RDC. En Angola, le recensement de 2024 compte 6,8 % d'habitants de langue maternelle kikongo et 1,1 % de langue fiote, contre 45,5 % pour le portugais, langue officielle. Le français est langue officielle en RDC, au Congo-Brazzaville et au Gabon."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q640090",
+      "glottocode": "core1256",
+      "iso639_3": "kon"
     },
     "culture": {
-      "majorRites": "Les ceremonies royales (intronisation du Manikongo avec regalia, musique de tambours et danses) etaient les rites les plus prestigieux. Les rites de mariage comportent des negociations de dots et des ceremonies communautaires. Les rites de passage (initiation, scarifications, circoncision selon les sous-groupes) marques l'entree dans l'age adulte. Les funerailles impliquent des pleurs rituels, veillees, chants et la preservation de l'esprit de l'ancetre. Les ceremonies de consultation des nkisi sont pratiquees pour la protection, la guerison et la divination.",
-      "symbols": "Le cosmogramme kongo (dikenga) - un cercle avec une croix representant les quatre moments du soleil (naissance, zenith, coucher, minuit) et les quatre etapes de la vie - est le symbole spirituel central, utilise dans les arts, les rituels et retrouve dans des sites de l'Amerique africaine (prisons, plantations). Les nkisi (objets-forts : statuettes clouees, sachets medicinaux, contenants en bois ou coquillages) sont des concentres de puissance spirituelle. La couleur blanche signifie la mort et le monde des esprits (mpemba).",
-      "artsAndMusic": "La sculpture kongo est remarquable : statuettes nkisi nkondi (figurines a clous, chargees de serments et de guerison), figures de maternite (pfemba), masques ceremonials. La musique repose sur tambours bidimba, marimba, sanza (lamellophone) et chants polyphoniques. Les chansons comme Malele (avertissant de l'arrivee des Portugais) ont traverse les siecles. Dans la diaspora americaine, les Bakongo ont influence la musique cubaine (rumba, son), le jazz de Nouvelle-Orleans, la samba bresilienne (via Candomble Bantu), et les pratiques Palo Mayombe (Cuba) et Kumina (Jamaique). La poterie, le tissage et le travail de raphia sont des arts artisanaux importants.",
-      "spiritualities": "La cosmologie kongo est dualiste : le monde visible (nza yayi) et le monde invisible des esprits (mpemba, domaine des morts) sont en interaction permanente. Nzambi Mpungu est le dieu createur supreme. Les ancetres (bakulu) intercedent entre vivants et Nzambi. Les nkisi sont des vehicules de puissance spirituelle actives par des nganga. Le christianisme (catholicisme) s'est implante depuis 1491, creant des formes syncretiques originales (Antonianism de Dona Beatriz). Le Kimbanguisme (Eglise de Jesus-Christ sur la Terre par le Prophete Simon Kimbangu, 1921) est une expression chretienne africaine tres repandue en RDC et en Angola. Trois mots distincts du kikongo tournent autour de ces notions et ne se confondent pas : nzambi désigne l'Être Suprême, zumbi un fétiche bienfaisant, mvumbi un cadavre. Le dictionnaire kikongo de René Butaye, en 1910, note que les Kongo tiennent cette idée d'un Être Suprême, distinct des génies bons et mauvais, indépendamment de l'enseignement religieux des Européens."
+      "majorRites": "Selon Jan Vansina, l'investiture du roi confirme le caractère sacré de la royauté, et deux seigneurs du clan Nsaku l'intronisent. Chez les Sundi, Karl Laman décrit le mariage comme un accord entre deux kanda, et une compensation versée au frère et à l'oncle maternel de la mariée. Il signale la circoncision, faite tantôt sur les tout-petits, tantôt entre huit et quinze ans, et des cérémonies pour la jeune fille après ses premières règles. Vansina note qu'au XVIIIe siècle les funérailles des personnes importantes deviennent de plus en plus fastueuses : le corps est enveloppé dans un ballot de tissu si grand qu'il faut des chariots pour le porter au cimetière.",
+      "symbols": "En 1491, selon Rui de Pina, le roi reçoit les Portugais assis sur une estrade, coiffé d'un haut bonnet de tissu de palme travaillé, une queue de cheval garnie d'argent sur l'épaule et un bracelet d'ivoire au bras gauche. Les coquillages nzimbu servent de monnaie royale. Selon Jan Vansina, au XVIIIe siècle, le crucifix devient un emblème d'autorité et de justice, appelé nkangi, « le sauveur ». Karl Laman écrit que le pays des morts, où la vie continue, se nomme ku mpemba.",
+      "artsAndMusic": "Karl Laman décrit des figures nkisi, sculptures ou objets parfois munis d'un sac de remèdes, et la figure Nkondi, dans laquelle on plante des clous pour l'éveiller contre un coupable. Il reproduit des tambours ngoma des Sundi du Mayombe, dits « enfant » et « mère ». En 1491, selon Rui de Pina, le cortège qui accueille les Portugais joue des trompes d'ivoire et des tambours. Jan Vansina mentionne la poterie des Yombe, les crucifix et les statues chrétiennes sans doute fabriqués au Soyo et à Mbanza Kongo, puis, au XVIIIe et au XIXe siècle, des statues de bois ou de pierre et des monuments de céramique sur les tombes.",
+      "spiritualities": "Selon Karl Laman, Nzambi, aussi appelé Nzambi Mpungu, « le grand Nzambi », est plus grand que tous les minkisi et les esprits : il a créé tout ce que contiennent la terre et le ciel. Laman ajoute que cette idée doit sans doute beaucoup aux premières missions catholiques. Le nkisi est, pour lui, l'esprit d'un ancêtre qui a pris forme dans une sculpture ou un autre objet, et le premier grand nkisi fut Nakongo. Les ancêtres du côté du père reçoivent du vin de palme versé sur les tombes. Selon Jan Vansina, l'idéologie royale s'appuie sur trois cultes : celui des ancêtres, celui des esprits du territoire et celui des objets de pouvoir du roi. Le christianisme s'implante après 1491 et prend des formes propres, comme l'antonianisme de Dona Beatriz Kimpa Vita au début du XVIIIe siècle. Trois mots distincts du kikongo tournent autour de ces notions et ne se confondent pas : nzambi désigne l'Être Suprême, zumbi un fétiche bienfaisant, mvumbi un cadavre. Le dictionnaire kikongo de René Butaye, en 1910, note que les Kongo tiennent cette idée d'un Être Suprême, distinct des génies bons et mauvais, indépendamment de l'enseignement religieux des Européens."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Le royaume de Kongo (date de formation inconnue, jusqu'au XIXe s.) fut l'un des plus grands et des mieux organises d'Afrique subsaharienne : capitale Mbanza Kongo, monnaie (nzimbu), infrastructure commerciale, ecriture adoptee pour la correspondance royale en portugais. Les rois Kongo (Manikongo) maintinrent une diplomatie active avec le Portugal, le Vatican et d'autres cours europeennes. Au nord du fleuve, Loango, Kakongo et Ngoyo étaient des royaumes voisins. Vers 1530, le roi du Kongo disait encore les avoir sous son autorité, une prétention sans doute fictive selon l'historien Jan Vansina. En 1591, le récit du voyageur portugais Duarte Lopes, publié par l'Italien Filippo Pigafetta, décrit le roi de Loango comme autrefois soumis au Kongo, devenu indépendant, ami du roi du Kongo mais pas son vassal.",
-      "relationsWithNeighbors": "Le royaume de Kongo absorbait et commercait avec les peuples voisins : Teke (au nord), Yaka et Mbundu (au sud et sud-est), Pende (est). Les Bakongo etaient mineurs de fer et forgerons, producteurs de cuivre et commergants d'ivoire. La relation avec les Portugais d'Angola (Luanda fondee en 1575 sur terres kongo avec cooperation d'une famille noble) evolua de l'alliance vers la domination.",
-      "conflictsOrAlliances": "1568 : invasion des Jaga (Imbangala), repousses avec l'aide portugaise ; cela facilita la traite des esclaves via Luanda. Trois guerres avec l'Angola portugais. Bataille de Mbwila (1665) : defaite catastrophique, Manikongo Antonio I tue. Guerres civiles de succession (1665-1709) exploitees par les marchands d'esclaves. Pedro IV reunifia partiellement le royaume vers 1709 avec l'aide portugaise. La Conference de Berlin (1884-85) divisa les territoires kongo entre France, Belgique et Portugal.",
-      "diaspora": "La diaspora kongo est l'une des plus importantes du monde atlantique : entre 1501 et 1867, des millions de Bakongo furent exportes en esclaves vers le Bresil (4,7 millions), les Caraibes (4,1 millions), l'Amerique du Nord (0,4 millions). Leur influence est visible dans la religion (Candomble Bantu au Bresil, Palo Mayombe a Cuba, Kumina en Jamaique, Hoodoo aux Etats-Unis), la musique (rumba cubaine, samba bresilienne, jazz) et le langage (Habla Congo a Cuba, Palenquero, Gullah). Des personnalites issues des Bakongo comprennent Ganga Zumba et Zumbi dos Palmares (leaders du quilombo de Palmares, Bresil). Le lexique a voyagé avec les captifs. Le dictionnaire kikongo de Butaye (1910) donne nzambi pour l'Être Suprême, zumbi pour un fétiche bienfaisant et mvumbi pour un cadavre ; le kimbundu voisin donne nzumbi pour l'âme d'un mort qui revient en paix. C'est de cette famille de formes que le créole haïtien tire zonbi, puis l'anglais zombie. Les sources divergent sur la racine exacte, et le sens de mort-vivant n'appartient à aucune de ces langues."
+      "kingdomsOrChiefdoms": "Le royaume de Kongo, dont la date de fondation est inconnue, a pour capitale Mbanza Kongo. Selon Jan Vansina, c'est une coalition de grandes provinces, très centralisée, avec sa propre monnaie, le nzimbu. Ses rois entretiennent des relations avec le Portugal et Rome, où le fils d'Afonso Ier est sacré évêque. Au nord du fleuve, Loango, Kakongo et Ngoyo sont des royaumes voisins. Vers 1530, le roi du Kongo disait encore les avoir sous son autorité, une prétention sans doute fictive selon l'historien Jan Vansina. En 1591, le récit du voyageur portugais Duarte Lopes, publié par l'Italien Filippo Pigafetta, décrit le roi de Loango comme autrefois soumis au Kongo, devenu indépendant, ami du roi du Kongo mais pas son vassal.",
+      "relationsWithNeighbors": "Selon Jan Vansina, le royaume de Tio, sur les plateaux batéké au nord-est, est peut-être plus ancien que le Kongo. Au sud, le Ndongo, dont le roi porte le titre de ngola, d'où vient le nom Angola, dépend encore en partie du Kongo vers 1520. Les marchands de la capitale envoient des agents, les pombeiros, au Pool dès avant 1529. Le roi garde un contrôle étroit sur le cuivre de Bembe et le fer de Mbanza Kongo, et refuse la prospection aux Portugais. L'île de Luanda fait partie du royaume ; les Portugais y fondent pourtant la colonie d'Angola en 1575-1576.",
+      "conflictsOrAlliances": "Selon Jan Vansina, deux rois meurent en 1566 et 1567 pendant une guerre contre les Tio du Pool. Les guerriers appelés Jaga envahissent ensuite le royaume ; leur identité n'a jamais été établie, et l'historienne Anne Hilton y voit les ancêtres des Yaka du Kwango. Le roi appelle le Portugal, dont les troupes reconquièrent le pays entre 1571 et 1573. Le Kongo s'allie aux Hollandais à partir de 1641, puis perd en 1665 la bataille de Mbwila contre l'armée de l'Angola portugais, où meurt le roi António Ier. En 1670, une seconde armée portugaise est battue au Soyo, et l'Angola renonce à conquérir le Kongo. Les guerres de succession durent jusqu'au retour d'un roi unique à Mbanza Kongo en 1709.",
+      "diaspora": "Selon Jan Vansina, la traite atlantique se développe au Kongo à partir de 1514. Les captifs vendus venaient surtout du Pool et d'au-delà, beaucoup étaient des Téké, et, à partir de 1526, seuls des étrangers et des condamnés pouvaient être réduits en esclavage au Kongo. Au XVIIIe siècle, la traite fait sans doute baisser la population de l'ancien Kongo et du Mayombe. Les sources lues ici ne décrivent pas les communautés d'origine kongo dans les Amériques. Le lexique a voyagé avec les captifs. Le dictionnaire kikongo de Butaye (1910) donne nzambi pour l'Être Suprême, zumbi pour un fétiche bienfaisant et mvumbi pour un cadavre ; le kimbundu voisin donne nzumbi pour l'âme d'un mort qui revient en paix. Au Kongo même, selon Vansina, l'idée du zombi, « une sorte d'esclave-cadavre », s'impose au XVIIIe siècle. C'est de cette famille de formes que le créole haïtien tire zonbi, puis l'anglais zombie. Les sources divergent sur la racine exacte, et le sens de mort-vivant n'appartient à aucune de ces langues."
     },
     "demography": {
-      "totalPopulation": 11000000,
-      "referenceYear": 2025,
-      "source": "Estimation 2025 : environ 10 a 12 millions de Bakongo dans les quatre pays. Donnees de base : Kongo people en 1975 : 4 040 000 (Wikipedia EN). Groupe ethnique majoritaire en Republique du Congo ; groupe important en RDC (province du Kongo Central ~6M habitants, proportion kongo elevee) et au nord de l'Angola. Sources : SIL Ethnologue, CIA World Factbook, recensements nationaux RDC, Congo-Brazzaville, Angola. Pour la seule province du Kongo Central (RDC), une autre estimation donne 5 500 000 Bakongo en 2025 : la province compte de 5 441 000 (Joshua Project 2025) a 6 923 500 habitants (Data Commons 2024), dont 70 a 80 % de Bakongo, sans compter ceux de Kinshasa et des autres provinces. Une autre estimation donne 10 000 000 personnes en 2025 : 6 000 000 en RDC, 2 500 000 en République du Congo, 1 200 000 en Angola et 300 000 au Gabon (projection à partir des 4 040 000 Kongo comptés en 1975 et des taux de croissance nationaux). Les sources lues ne permettent pas de choisir entre ces chiffres. Une autre estimation compte 2 600 000 Bakongo en République du Congo en 2025 (Minority Rights Group, Joshua Project).",
+      "totalPopulation": 6905000,
+      "referenceYear": 2026,
+      "source": "Aucun recensement récent ne compte l'ensemble des Kongo dans les trois pays où ils vivent. Le chiffre total, 6 905 000 personnes, vient de la base missionnaire Joshua Project, consultée le 3 novembre 2026. Cette base compte à part plusieurs groupes de la même famille, comme les locuteurs du kituba (2 215 000 au Congo-Brazzaville), les Beembe ou les Kunyi : son chiffre ne couvre donc pas tous les peuples kongo. Le seul chiffre officiel trouvé vient de l'Angola : le recensement de 2024 compte 36 604 681 habitants, dont 14,4 % se rangent dans le groupe ethnique « Quicongo », soit environ 5 271 000 personnes. Nous n'avons pas trouvé de recensement publié qui donne la part des Kongo en RDC ou au Congo-Brazzaville. D'autres chiffres, entre 10 et 12 millions de personnes, circulent sans source vérifiable.",
       "distributionByCountry": [
         {
+          "country": "AGO",
+          "population": 4161000,
+          "note": "Nord de l'Angola ; chiffre de Joshua Project. Le recensement angolais de 2024 range 14,4 % des 36 604 681 habitants dans le groupe « Quicongo », soit environ 5 271 000 personnes."
+        },
+        {
           "country": "COD",
-          "population": 7000000,
-          "note": "province du Kongo Central et communautes de Kinshasa, estimation"
+          "population": 2706000,
+          "note": "Kongo-Central et Kinshasa ; chiffre de Joshua Project, qui compte à part d'autres groupes kongo."
         },
         {
           "country": "COG",
-          "population": 2500000,
-          "note": "principal groupe ethnique de la Republique du Congo (~40-50% de la population)"
-        },
-        {
-          "country": "AGO",
-          "population": 1300000,
-          "note": "nord de l'Angola, Cabinda, estimation"
-        },
-        {
-          "country": "GAB",
-          "population": 200000,
-          "note": "Ogooue-Maritime, Vili et groupes apparentes, estimation"
+          "population": 32000,
+          "note": "District de Boko, département du Pool ; chiffre de Joshua Project, qui compte à part les locuteurs du kituba (2 215 000), les Beembe (153 000) et les Kunyi (174 000)."
         }
       ]
     },
@@ -246,7 +240,8 @@
         "title": "Joshua Project — Kongo Central province population (2025)",
         "url": "https://joshuaproject.net/people_groups/12774/CG",
         "tier": "unverified",
-        "source_kind": "missionary_database"
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire évangélique, consultée le 3 novembre 2026. Malgré son titre, la page porte sur les Kongo de toute la RDC : elle en compte 2 706 000, au Kongo-Central et à Kinshasa."
       },
       {
         "title": "EBSCO Research Starters — Kongo (historical kingdom)",
@@ -312,7 +307,8 @@
         "title": "Joshua Project — Kongo in Congo Republic",
         "url": "https://joshuaproject.net/people_groups/12774/CF",
         "tier": "unverified",
-        "source_kind": "missionary_database"
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire évangélique, consultée le 3 novembre 2026. Elle compte 32 000 Kongo au Congo-Brazzaville, dans le district de Boko (Pool), et compte à part les locuteurs du kituba, les Beembe et les Kunyi."
       },
       {
         "title": "Joshua Project — Kituba (Monokutuba) in Congo Republic",
@@ -335,11 +331,114 @@
         "title": "TribeGuess — Bakongo (Congo-Brazzaville)",
         "url": "https://www.tribeguess.com/learn/bakongo",
         "tier": "unverified"
+      },
+      {
+        "title": "General History of Africa, V, ch. 19: The Kongo kingdom and its neighbours",
+        "author": "Jan Vansina, d'après une contribution de Théophile Obenga",
+        "year": 1992,
+        "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 546-583 et glossaire p. 979",
+        "notes": "UNESCO et Heinemann, 1992, volume dirigé par B. A. Ogot. Édition anglaise lue dans la numérisation d'Internet Archive (unesco_general_history_africa_v) le 3 novembre 2026. Peuplement ancien et naissance du royaume dans la chefferie vungu : p. 547-549. Royauté élective, conseil de douze membres, monnaie nzimbu, mani Kabunga : p. 553. Nkisi, nganga et titre Nzambi mpungu : p. 554-555. Traite à partir de 1514 et tentative d'abolition en 1526 : p. 555-557. Jaga et fondation de Luanda : p. 558. Bataille de Mbwila : p. 564. Kimpa Vita et retour d'un roi en 1709 : p. 566. Ekanda, muisikongo et cultes d'initiation : p. 569. Mvila et notion de zombi au XVIIIe siècle : p. 582. Le glossaire, p. 979, définit muisikongo : « the nobles, one of the strata in Kongo society »."
+      },
+      {
+        "title": "The Kongo I",
+        "author": "Karl Edvard Laman",
+        "year": 1953,
+        "url": "https://archive.org/details/gub-0128614",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 1 et 10",
+        "notes": "Uppsala, Studia Ethnographica Upsaliensia IV, 1953, publication posthume du manuscrit du missionnaire suédois Karl Laman, mort en 1944, éditée par S. Lagercrantz et B. Sundkler. Lu dans la numérisation de la bibliothèque de l'université de Göteborg sur Internet Archive, le 3 novembre 2026. Lagercrantz et Sundkler préviennent que Laman décrit surtout les Sundi et que plusieurs de ses théories, courantes vers 1920, ont été abandonnées. Page 1 : les gens de Mbanza Kongo se nomment bisi Kongo, et les Européens gardent le nom Kongo pour plusieurs peuples apparentés. Page 10 : « The meaning of kongo is uncertain »."
+      },
+      {
+        "title": "The Kongo II",
+        "author": "Karl Edvard Laman",
+        "year": 1957,
+        "url": "https://archive.org/details/gub-0128615-2-189",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 22, 34, 44, 108-110",
+        "notes": "Uppsala, Studia Ethnographica Upsaliensia VIII, 1957, publication posthume de l'enquête du missionnaire suédois Karl Laman chez les Sundi, lue dans la numérisation de l'université de Göteborg sur Internet Archive le 3 novembre 2026. Page 22 : pas de cérémonie particulière d'initiation pour les adolescents en dehors de la circoncision, et la société Nkimba est une institution récente venue de la côte. Page 34 : le mariage se conclut entre deux makanda. Page 44 : rôle du chef du kanda. Pages 108-110 : l'enfant appartient au kanda de sa mère et hérite d'elle, non de son père."
+      },
+      {
+        "title": "The Kongo III",
+        "author": "Karl Edvard Laman",
+        "year": 1962,
+        "url": "https://archive.org/details/gub-0128642-2-285",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 11, 14, 44, 53, 67, 173, 244",
+        "notes": "Uppsala, Studia Ethnographica Upsaliensia XII, 1962, publication posthume des notes du missionnaire suédois Karl Laman sur la religion, lue dans la numérisation de l'université de Göteborg sur Internet Archive le 3 novembre 2026. Page 11 : clous plantés dans le nkisi Nkondi. Page 14 : le pays des morts se nomme ku mpemba. Page 44 : culte des ancêtres. Page 53 : Nzambi Mpungu, créateur, plus grand que les minkisi. Page 67 : le nkisi comme esprit d'un ancêtre pris dans un objet ; « The first great nkisi was Nakongo ». Page 173 : formation du nganga nkisi. Page 244 : la société des bankimba initie des garçons adolescents."
+      },
+      {
+        "title": "Chronica d'elrei Dom João II, in Collecção de livros inéditos de historia portugueza, tomo II",
+        "author": "Rui de Pina ; édition de José Corrêa da Serra",
+        "year": 1792,
+        "url": "https://archive.org/details/collecadeliv02corruoft",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 144-145, 160-161 et 165-166",
+        "notes": "Chronique du chroniqueur en chef du royaume de Portugal, publiée à Lisbonne en 1792 par l'Académie royale des sciences, lue dans la numérisation de l'université de Toronto sur Internet Archive le 3 novembre 2026. Chapitre LVII : « Descobrimento do Regno de Manicongo », avec le voyage de Diogo Cão daté de 1485 et la « Terra de Congo ». Chapitre LX : accueil des Portugais à la cour, le roi coiffé d'un bonnet de palme, une queue de cheval garnie d'argent à l'épaule. Chapitre LXII : baptême du roi, qui choisit le nom de João, le 3 mai 1491."
+      },
+      {
+        "title": "Dictionary and Grammar of the Kongo Language, as spoken at San Salvador",
+        "author": "William Holman Bentley",
+        "year": 1887,
+        "url": "https://archive.org/details/dictionarygramma00bent",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "page": "p. ix-xi",
+        "notes": "Londres, Baptist Missionary Society, 1887. Préface relue dans la numérisation d'Internet Archive le 3 novembre 2026. Bentley, missionnaire baptiste à San Salvador, l'ancienne Mbanza Kongo, écrit qu'on ne peut rien dire de sûr sur l'origine du nom, donne Mwixi-Kongo, pluriel Exi-Kongo, « people of Kongo », et Kixi-Kongo pour la langue. Pages x-xi : en 1879, le roi Ntotela, Dom Pedro V, n'exerce qu'une autorité nominale autour de sa ville."
+      },
+      {
+        "title": "Dictionnaire kikongo-français, avec une étude phonétique décrivant les dialectes les plus importants de la langue dite kikongo",
+        "author": "Karl Edvard Laman",
+        "year": 1936,
+        "url": "https://archive.org/details/dictionnairekikongofrancais",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Bruxelles, Institut royal colonial belge, 1936. Entrées Kongo et kônga relues dans la numérisation d'Internet Archive le 3 novembre 2026. Le dictionnaire donne kônga, « cueillir, recueillir, récolter (tous les fruits) ; rassembler », et Kongo, avec ba~ « le peuple » et bisi ~ « habitants du Congo » ; il donne aussi Na Kongo, « un grand nkisi ». Il ne relie pas le verbe au nom."
+      },
+      {
+        "title": "Divulgação dos resultados definitivos do Censo 2024 (RGPH 2024)",
+        "author": "Instituto Nacional de Estatística de Angola",
+        "year": 2025,
+        "url": "https://ine.gov.ao/Arquivos/arquivosCarregados/Carregados/Noticia_638993743841845426.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Présentation des résultats définitifs du recensement général de la population et de l'habitat de l'Angola, Luanda, 20 novembre 2025, lue le 3 novembre 2026. Population résidente : 36 604 681 habitants en 2024. Langue maternelle : portugais 45,5 %, kikongo 6,8 %, fiote 1,1 %. Groupe ethnique : Quicongo 14,4 %."
+      },
+      {
+        "title": "Joshua Project — Kongo in Angola",
+        "url": "https://joshuaproject.net/people_groups/12774/AO",
+        "tier": "unverified",
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire évangélique, consultée le 3 novembre 2026. Elle compte 4 161 000 Kongo en Angola, 2 706 000 en RDC, 32 000 au Congo-Brazzaville et 6 000 en Ouganda, soit 6 905 000 personnes, et donne le koongo (kng) comme langue principale."
+      },
+      {
+        "title": "Glottolog — Core Kikongo (core1256)",
+        "url": "https://glottolog.org/resource/languoid/id/core1256",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche Glottolog lue le 3 novembre 2026. Core Kikongo y est un groupe de parlers, rangé dans le kikongoïque, qui réunit le kikongo de l'ouest et celui du sud, du centre et de l'est."
+      },
+      {
+        "title": "kon | ISO 639-3",
+        "url": "https://iso639-3.sil.org/code/kon",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du code, lue le 3 novembre 2026. SIL International y présente le kongo (kon) comme une macrolangue qui réunit le koongo (kng), le kongo de San Salvador (kwy) et le laari (ldi)."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Les Kongo, qui se nomment Bakongo, vivent en Angola, en RDC et au Congo-Brazzaville. Leur nom est celui d'un ancien royaume dont la capitale était Mbanza Kongo.",
+      "followUp": "D'où vient le nom Kongo ?"
+    }
   },
   "nameHistory": {
-    "summary": "Le nom Kongo désigne un peuple d'Afrique centrale, qui se nomme lui-même Bakongo, et Mukongo pour une seule personne. D'autres noms existent : Esikongo et, dans les textes européens, Congo. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "summary": "Le nom Kongo désigne un peuple d'Afrique centrale, qui se nomme lui-même Bakongo, et Mukongo pour une seule personne. Il porte aussi le nom Esikongo, « les gens du pays de Kongo », et les textes européens l'écrivent Congo. Plusieurs explications de l'origine du nom Kongo existent ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Kongo",
@@ -358,7 +457,7 @@
             },
             "era": "modern",
             "aspect": "meaning",
-            "statement": "Le nom Kongo désigne un ancien royaume d'Afrique centrale et sa langue. Il désigne aussi les peuples qui parlent des formes de cette langue, du sud du Gabon au plateau de Benguela, en Angola, selon Jan Vansina. Personne ne sait avec certitude d'où vient ce nom : le missionnaire William Holman Bentley l'écrivait déjà en 1887. Les explications proposées sont présentées plus bas.",
+            "statement": "Le nom Kongo désigne un ancien royaume d'Afrique centrale et sa langue. Il désigne aussi les peuples qui parlent des formes de cette langue, du sud du Gabon au plateau de Benguela, en Angola, selon Jan Vansina. Son origine est incertaine : le missionnaire William Holman Bentley l'écrivait déjà en 1887, et Karl Laman le répète. Les explications proposées sont présentées plus bas.",
             "sources": [
               {
                 "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
@@ -379,6 +478,16 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. ix",
                 "notes": "Londres, Baptist Missionary Society, 1887. Préface lue dans la numérisation d'Internet Archive, consulté le 9 octobre 2026. Bentley, missionnaire baptiste à San Salvador, l'ancienne Mbanza Kongo, écrit qu'on ne peut rien dire de sûr sur l'origine du nom."
+              },
+              {
+                "title": "The Kongo I",
+                "author": "Karl Edvard Laman",
+                "year": 1953,
+                "url": "https://archive.org/details/gub-0128614",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Uppsala, Studia Ethnographica Upsaliensia IV, 1953, publication posthume du manuscrit du missionnaire suédois Karl Laman, mort en 1944. Lu dans la numérisation de l'université de Göteborg sur Internet Archive le 3 novembre 2026 : « The meaning of kongo is uncertain »."
               }
             ]
           },
@@ -473,7 +582,7 @@
             },
             "era": "colonial",
             "hypothesisGroup": "origine du nom Kongo",
-            "statement": "William Holman Bentley cite konga, « cueillir de gros fruits », après avoir précisé que l’origine du nom Kongo reste incertaine. Il ne présente pas ce mot comme une origine démontrée du nom. Samuel Nelson le rattache au sens de « rassembler », selon l’article de Wikipédia ; nous n’avons pas lu son ouvrage. Le dictionnaire de Karl Edvard Laman donne kônga, « rassembler », sans le relier au nom.",
+            "statement": "William Holman Bentley cite konga, « cueillir de gros fruits », après avoir précisé que l'origine du nom Kongo reste incertaine. Il ne présente pas ce mot comme une origine démontrée du nom. Samuel Nelson le rattache au sens de « rassembler », selon l'article de Wikipédia ; nous n'avons pas lu son ouvrage. Le dictionnaire de Karl Edvard Laman donne kônga, « rassembler », sans le relier au nom.",
             "sources": [
               {
                 "title": "Dictionary and Grammar of the Kongo Language, as spoken at San Salvador",
@@ -492,7 +601,7 @@
                 "url": "https://en.wikipedia.org/wiki/Kongo_people",
                 "tier": "unverified",
                 "source_kind": "encyclopedia",
-                "notes": "Section Etymology, consulté le 9 octobre 2026. Elle rapporte les lectures de Samuel Nelson (Colonialism in the Congo Basin, 1994) et d'Alisa LaGamma (Kongo: Power and Majesty, 2015, p. 18), que nous n'avons pas lues, et dit que Bakongo s'impose surtout depuis le début du XXe siècle."
+                "notes": "Section Etymology, consultée le 9 octobre 2026. Elle rapporte les explications de Samuel Nelson (Colonialism in the Congo Basin, 1994) et d'Alisa LaGamma (Kongo: Power and Majesty, 2015, p. 18), que nous n'avons pas lues, et dit que Bakongo s'impose surtout depuis le début du XXe siècle."
               },
               {
                 "title": "Dictionnaire kikongo-français, avec une étude phonétique décrivant les dialectes les plus importants de la langue dite kikongo",
@@ -513,7 +622,7 @@
             },
             "era": "colonial",
             "hypothesisGroup": "origine du nom Kongo",
-            "statement": "William Holman Bentley cite nkongo, « chasseur », après avoir précisé que l’origine du nom Kongo reste incertaine. Il ne présente pas ce mot comme une origine démontrée du nom. Alisa LaGamma y voit un chasseur aventureux et héroïque, selon l’article de Wikipédia ; nous n’avons pas lu son ouvrage.",
+            "statement": "William Holman Bentley cite nkongo, « chasseur », après avoir précisé que l'origine du nom Kongo reste incertaine. Il ne présente pas ce mot comme une origine démontrée du nom. Alisa LaGamma y voit un chasseur aventureux et héroïque, selon l'article de Wikipédia ; nous n'avons pas lu son ouvrage. Dans un texte publié en 1953, Karl Laman écarte cette explication.",
             "sources": [
               {
                 "title": "Dictionary and Grammar of the Kongo Language, as spoken at San Salvador",
@@ -532,7 +641,17 @@
                 "url": "https://en.wikipedia.org/wiki/Kongo_people",
                 "tier": "unverified",
                 "source_kind": "encyclopedia",
-                "notes": "Section Etymology, consulté le 9 octobre 2026. Elle rapporte les lectures de Samuel Nelson (Colonialism in the Congo Basin, 1994) et d'Alisa LaGamma (Kongo: Power and Majesty, 2015, p. 18), que nous n'avons pas lues, et dit que Bakongo s'impose surtout depuis le début du XXe siècle."
+                "notes": "Section Etymology, consultée le 9 octobre 2026. Elle rapporte les explications de Samuel Nelson (Colonialism in the Congo Basin, 1994) et d'Alisa LaGamma (Kongo: Power and Majesty, 2015, p. 18), que nous n'avons pas lues, et dit que Bakongo s'impose surtout depuis le début du XXe siècle."
+              },
+              {
+                "title": "The Kongo I",
+                "author": "Karl Edvard Laman",
+                "year": 1953,
+                "url": "https://archive.org/details/gub-0128614",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Uppsala, Studia Ethnographica Upsaliensia IV, 1953. Lu dans la numérisation de l'université de Göteborg sur Internet Archive le 3 novembre 2026. Laman écrit que kongo ne peut venir d'aucun mot connu, « as for instance nkongo (hunter), as was believed earlier »."
               }
             ]
           },
@@ -543,7 +662,7 @@
               "label": "Récit publié en 2023"
             },
             "hypothesisGroup": "origine du nom Kongo",
-            "statement": "Dans un texte publié le 23 février 2023 par Malaki ma Kongo, Masengo ma Mbongolo relie le nom Kongo au léopard et aux récits des ancêtres. Il le présente comme le nom de la terre du léopard. Ce texte ne précise pas quand le nom est apparu. Sa date de publication ne donne pas non plus l’âge du récit.",
+            "statement": "Dans un texte publié le 23 février 2023 par Malaki ma Kongo, Masengo ma Mbongolo relie le nom Kongo au léopard et aux récits des ancêtres. Il le présente comme le nom de la terre du léopard. Ce texte ne précise pas quand le nom est apparu, et sa date de publication ne donne pas l'âge du récit.",
             "sources": [
               {
                 "title": "Malaki ma Kongo des fils du Léopard",
@@ -552,7 +671,66 @@
                 "url": "https://www.malakimakongo.net/nouvelles/malaki-ma-kongo-des-fils-du-leopard",
                 "tier": "referenced",
                 "source_kind": "community",
-                "notes": "Texte signé publié par l’association culturelle Malaki ma Kongo. L’auteur y relie Kongo au léopard et aux récits des ancêtres. Il ne précise pas la date de naissance du nom."
+                "notes": "Texte signé publié par l'association culturelle Malaki ma Kongo. L'auteur y relie Kongo au léopard et aux récits des ancêtres. Il ne précise pas la date de naissance du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1953,
+              "to": 1953,
+              "label": "Livre publié en 1953"
+            },
+            "era": "colonial",
+            "hypothesisGroup": "origine du nom Kongo",
+            "statement": "Karl Laman, missionnaire suédois, propose de rattacher le nom Kongo à kongo, un couteau de jet, mot qui désigne aussi la lance. Il avance que ce pouvait être le nom de l'inventeur de cette arme, ou que le couteau, devenu plus tard une monnaie, était son signe de dignité, et il ajoute qu'on n'en sait rien. Selon lui, Kongo est aussi le nom du grand ancêtre Nakongo, et un mot qui veut dire « le grand, le puissant ». Ce nom serait passé à sa ville, Mbanza Kongo, puis au royaume.",
+            "actors": [
+              {
+                "name": "Karl Laman",
+                "role": "propose cette explication"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Kongo I",
+                "author": "Karl Edvard Laman",
+                "year": 1953,
+                "url": "https://archive.org/details/gub-0128614",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Uppsala, Studia Ethnographica Upsaliensia IV, 1953, publication posthume ; Laman est mort en 1944 et ses éditeurs signalent que plusieurs de ses théories sont dépassées. Lu dans la numérisation de l'université de Göteborg sur Internet Archive le 3 novembre 2026 : « The word may possibly refer to kongo […], a throwing knife » ; « Of this we know nothing » ; « NAKONGO's name was transferred to his town of residence (Mbanza Kongo) »."
+              },
+              {
+                "title": "Dictionnaire kikongo-français, avec une étude phonétique décrivant les dialectes les plus importants de la langue dite kikongo",
+                "author": "Karl Edvard Laman",
+                "year": 1936,
+                "url": "https://archive.org/details/dictionnairekikongofrancais",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Bruxelles, Institut royal colonial belge, 1936. Entrées Kongo et kônga relues dans la numérisation d'Internet Archive le 3 novembre 2026. Le dictionnaire donne kônga, « cueillir, recueillir, récolter (tous les fruits) ; rassembler », et Kongo, avec ba~ « le peuple » et bisi ~ « habitants du Congo » ; il donne aussi Na Kongo, « un grand nkisi ». Il ne relie pas le verbe au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1482,
+              "to": 1482,
+              "label": "1482, selon un livre publié en 1953"
+            },
+            "era": "polity",
+            "aspect": "imposition",
+            "statement": "Le nom Kongo est d'abord celui des gens de Mbanza Kongo, les bisi Kongo, selon Karl Laman. Quand Diogo Cão atteint l'embouchure du fleuve en 1482, écrit-il, les habitants lui disent que leur chef vit dans cette ville. Avec le temps, le pays jusqu'à la côte, sa population, le fleuve et son bassin prennent ce nom, et les Européens le gardent pour plusieurs peuples distincts mais apparentés.",
+            "sources": [
+              {
+                "title": "The Kongo I",
+                "author": "Karl Edvard Laman",
+                "year": 1953,
+                "url": "https://archive.org/details/gub-0128614",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Uppsala, Studia Ethnographica Upsaliensia IV, 1953. Lu dans la numérisation de l'université de Göteborg sur Internet Archive le 3 novembre 2026 : « The inhabitants there were called the bisi Kongo » ; « the Europeans retained the name Kongo for them »."
               }
             ]
           }
@@ -612,7 +790,7 @@
                 "url": "https://en.wikipedia.org/wiki/Kongo_people",
                 "tier": "unverified",
                 "source_kind": "encyclopedia",
-                "notes": "Section Etymology, consulté le 9 octobre 2026. Elle rapporte les lectures de Samuel Nelson (Colonialism in the Congo Basin, 1994) et d'Alisa LaGamma (Kongo: Power and Majesty, 2015, p. 18), que nous n'avons pas lues, et dit que Bakongo s'impose surtout depuis le début du XXe siècle."
+                "notes": "Section Etymology, consultée le 9 octobre 2026. Elle rapporte les explications de Samuel Nelson (Colonialism in the Congo Basin, 1994) et d'Alisa LaGamma (Kongo: Power and Majesty, 2015, p. 18), que nous n'avons pas lues, et dit que Bakongo s'impose surtout depuis le début du XXe siècle."
               }
             ]
           },
@@ -702,7 +880,7 @@
             },
             "era": "colonial",
             "formAsWritten": "Mwixi-Kongo, pl. Exi-Kongo",
-            "statement": "Le nom Esikongo est écrit « Mwixi-Kongo, pl. Exi-Kongo » par William Holman Bentley.",
+            "statement": "Le nom Esikongo est écrit « Mwixi-Kongo, pl. Exi-Kongo » par William Holman Bentley, qui précise que la lettre x se prononce comme le sh anglais.",
             "actors": [
               {
                 "name": "William Holman Bentley",
@@ -758,6 +936,28 @@
                 "source_kind": "archive",
                 "page": "p. 34",
                 "notes": "Londres, John Murray, 1881. Traduction anglaise lue dans la numérisation d'Internet Archive, consulté le 9 octobre 2026 : « Mociconghi (for so the natives of Congo are called, as those of Spain are called Spaniards) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1700,
+              "label": "XVIe et XVIIe siècles"
+            },
+            "era": "polity",
+            "aspect": "meaning",
+            "statement": "Le nom Esikongo a aussi désigné une partie seulement de la population. Selon Jan Vansina, la société du royaume se divise jusqu'au XVIIe siècle en trois couches : les muisikongo, les nobles, les babuta, les paysans, et les babika, les esclaves. Cette noblesse et les mots qui la désignent disparaissent vers 1700.",
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 19: The Kongo kingdom and its neighbours",
+                "author": "Jan Vansina, d'après une contribution de Théophile Obenga",
+                "year": 1992,
+                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 569 et glossaire p. 979",
+                "notes": "UNESCO et Heinemann, 1992. Édition anglaise lue dans la numérisation d'Internet Archive le 3 novembre 2026. Page 569 : les trois couches sociales du Kongo persistent jusqu'entre 1666 et 1678, et « the terms used to designate it disappeared round about 1700 ». Glossaire, p. 979 : « muisikongo: the nobles, one of the strata in Kongo society »."
               }
             ]
           }
@@ -820,6 +1020,34 @@
                 "source_kind": "archive",
                 "page": "page de titre",
                 "notes": "Rome, 1591. Page de titre lue dans la numérisation d'Internet Archive, consulté le 9 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1485,
+              "to": 1491,
+              "label": "Récit des années 1485 à 1491, publié en 1792"
+            },
+            "era": "polity",
+            "formAsWritten": "Regno de Manicongo ; Terra de Congo ; Rey de Congo",
+            "statement": "Le nom Congo est écrit « Terra de Congo » et « Rey de Congo » par le chroniqueur portugais Rui de Pina, qui titre son chapitre « Descobrimento do Regno de Manicongo ». Il y raconte le voyage de Diogo Cão, qu'il date de 1485, puis le baptême du roi en 1491.",
+            "actors": [
+              {
+                "name": "Rui de Pina",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Chronica d'elrei Dom João II, in Collecção de livros inéditos de historia portugueza, tomo II",
+                "author": "Rui de Pina ; édition de José Corrêa da Serra",
+                "year": 1792,
+                "url": "https://archive.org/details/collecadeliv02corruoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 144-145",
+                "notes": "Chronique publiée à Lisbonne en 1792 par l'Académie royale des sciences, lue dans la numérisation de l'université de Toronto sur Internet Archive le 3 novembre 2026. Chapitre LVII, « Descobrimento do Regno de Manicongo, e de como foy feito Christão » ; le texte écrit « Regno, e Terra de Congo » et « Rey de Congo »."
               }
             ]
           }

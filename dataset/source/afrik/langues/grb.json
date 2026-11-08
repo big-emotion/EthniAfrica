@@ -10,7 +10,7 @@
   "nameFr": "Grebo",
   "nameEn": "Liberian Grebo",
   "alternateNames": [],
-  "whyProblematic": "Glebo est le nom du premier groupe que les explorateurs et colons américano-libériens ont rencontré au cap Palmas, les Glebo de la côte ; les colons ont ensuite appelé grebo leur langue (article de Wikipédia). Pour Moran, Glebo est le groupe et Grebo l'ensemble linguistique plus large auquel il appartient. Le mot a ensuite servi pour des groupes de l'intérieur, souvent d'autres langues et d'autres peuples, si bien que son emploi savant reste très imprécis. Pour le nom Glebo, chez les Glebo de la côte, un récit d'origine, tel que rapporté par Moran, dit qu'ils sont venus de l'est en pirogue, en grimpant sur les vagues comme le singe gle grimpe aux arbres. Comment Grebo est sorti de Glebo n'est pas expliqué dans les sources lues.",
+  "whyProblematic": "Le nom grebo ne désigne pas une seule langue. Pour l'anthropologue Mary Moran, c'est le nom collectif de sept langues apparentées, dont le glebo, et la norme ISO 639-3 le traite comme une macrolangue qui réunit cinq langues. L'historienne Jane Martin précise que Grebo désigne par convention les peuples de l'intérieur comme ceux de la côte, alors que Glebo ne désigne que les Grebo du bord de mer, de Fishtown au fleuve Cavalla. Plusieurs explications du nom sont rapportées : le singe gre, selon l'évêque John Payne au XIXe siècle ; le mot gre, « rapide », selon George Schwab ; le singe gle et le nom Gedebo, selon un texte en grebo publié par Gordon Innes.",
   "spellingAliases": [],
   "familyId": "FLG_KROU",
   "peoples": [
@@ -20,7 +20,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom grebo désigne une langue krou du sud-est du Liberia, autour du cap Palmas, et le peuple qui la parle. Une tradition grebo, rapportée par un missionnaire en 1860, explique le nom par le singe gre. Nous ne connaissons pas d'autre explication ; nous la présentons plus bas avec les traces du nom.",
+    "summary": "Le nom grebo désigne un ensemble de langues krou du sud-est du Liberia, autour du cap Palmas, et les peuples qui les parlent. Les Grebo de la côte se nomment eux-mêmes Glebo, et un texte en grebo dit qu'ils s'appelaient autrefois Gbobo. Plusieurs explications du nom sont rapportées, souvent liées à un singe qui bondit ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Grebo",
@@ -28,7 +28,7 @@
         "selfGiven": true,
         "languageOfOrigin": "grb",
         "namedBy": null,
-        "shortLine": "Le nom de la langue et du peuple du cap Palmas ; une tradition le relie au singe gre.",
+        "shortLine": "Le nom d'un ensemble de langues du cap Palmas ; plusieurs récits le relient à un singe qui bondit.",
         "periodLabel": "Écrit dès 1850",
         "accounts": [
           {
@@ -77,12 +77,12 @@
           },
           {
             "period": {
-              "from": 1860,
+              "from": 1858,
               "to": 1860,
-              "label": "Rapportée en 1860"
+              "label": "Rapportée en 1858 et en 1860"
             },
             "era": "modern",
-            "statement": "Le nom grebo viendrait du singe gre : quand une partie du peuple partit en pirogue vers l'ouest, ceux qui franchirent les vagues en bondissant prirent ce nom, et ceux dont les pirogues chavirèrent reçurent un nom tiré de wore, « chavirer ». C'est la tradition que rapporte John Payne.",
+            "statement": "Le nom grebo viendrait du singe gre, qui bondit avec agilité : quand une partie du peuple partit en pirogue, ceux qui franchirent les vagues en bondissant prirent ce nom, et ceux dont les pirogues chavirèrent furent appelés Worebo, de wore, « chavirer ». C'est la tradition que rapporte l'évêque John Payne, missionnaire au cap Palmas.",
             "hypothesisGroup": "origine du nom grebo",
             "sources": [
               {
@@ -94,6 +94,166 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 3",
                 "notes": "New York, E. O. Jenkins, 1860. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur était évêque de la mission épiscopale du cap Palmas."
+              },
+              {
+                "title": "Day Dawn in Africa; or, Progress of the Protestant Episcopal Mission at Cape Palmas, West Africa",
+                "author": "Anna M. Scott",
+                "year": 1858,
+                "url": "https://archive.org/details/daydawninafricao00scot",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 54 et 55",
+                "notes": "New York, 1858. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Récit missionnaire qui cite l'évêque John Payne sur le nom Grebo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1947,
+              "to": 1947,
+              "label": "Rapportée en 1947"
+            },
+            "era": "colonial",
+            "statement": "Le nom grebo viendrait de gre, « rapide », et de bo, « les gens » : ce seraient les gens rapides, ceux qui ont su mener leurs pirogues à travers les vagues, selon George Schwab. Ceux qui chavirèrent furent appelés Wlebo, de wle, « chavirer ».",
+            "hypothesisGroup": "origine du nom grebo",
+            "sources": [
+              {
+                "title": "Tribes of the Liberian Hinterland",
+                "author": "George Schwab, édité par George W. Harley",
+                "year": 1947,
+                "url": "https://archive.org/details/tribesofliberian00schw",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 25 et 26",
+                "notes": "Cambridge (Massachusetts), Peabody Museum, Papers vol. 31, 1947. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Le livre rend compte de l'expédition du musée Peabody au Liberia, partie en 1928."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1966,
+              "to": 1966,
+              "label": "Texte publié en 1966"
+            },
+            "era": "modern",
+            "statement": "Le nom grebo viendrait de Gedebo, que le texte en grebo publié par Gordon Innes relie au singe gle, qui grimpe et bondit beaucoup : ses ancêtres auraient franchi les vagues comme ce singe grimpe aux arbres. Le même texte dit que ce nom est récent.",
+            "hypothesisGroup": "origine du nom grebo",
+            "sources": [
+              {
+                "title": "An Introduction to Grebo",
+                "author": "Gordon Innes",
+                "year": 1966,
+                "url": "https://archive.org/details/rosettaproject_gbo_vertxt-1",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 140 à 145, texte « The Origin of the Grebo »",
+                "notes": "Londres, School of Oriental and African Studies, 1966. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Manuel de langue qui publie un texte en grebo, dit par un locuteur, avec sa traduction anglaise ; le livre ne nomme pas ce locuteur dans les pages lues."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom grebo réunit aujourd'hui plusieurs langues apparentées : la norme ISO 639-3 en distingue cinq sous un même code, et Mary Moran parle de sept langues, dont le glebo, que tous leurs locuteurs ne comprennent pas toujours entre eux.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, notice du code grb (Grebo)",
+                "author": "SIL Global, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/grb",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 3 novembre 2026. La notice classe grb comme macrolangue et lui rattache cinq langues : gbo (grebo du Nord), gec (grebo gboloo), grj (grebo du Sud), grv (grebo central) et gry (grebo de Barclayville)."
+              },
+              {
+                "title": "Glebo, Encyclopedia of World Cultures Supplement",
+                "author": "Mary H. Moran",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/glebo",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Notice lue en ligne : Grebo y est le nom collectif de sept langues apparentées, dont le glebo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Glebo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "grb",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Grebo de la côte, entre Fishtown et le fleuve Cavalla.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom glebo est celui que se donnent les Grebo de la côte : « quand nous nous nommons, nous disons Glebo », dit le texte publié par Gordon Innes, qui ajoute que la forme complète est Gedebo. Jane Martin le réserve aux Grebo du bord de mer, de Fishtown au fleuve Cavalla.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "An Introduction to Grebo",
+                "author": "Gordon Innes",
+                "year": 1966,
+                "url": "https://archive.org/details/rosettaproject_gbo_vertxt-1",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 140 à 145, texte « The Origin of the Grebo »",
+                "notes": "Londres, School of Oriental and African Studies, 1966. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Manuel de langue qui publie un texte en grebo, dit par un locuteur, avec sa traduction anglaise ; le livre ne nomme pas ce locuteur dans les pages lues."
+              },
+              {
+                "title": "Krumen « Down the Coast » : Liberian Migrants on the West African Coast in the 19th Century",
+                "author": "Jane Martin",
+                "year": 1982,
+                "url": "https://hdl.handle.net/2144/40974",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 8",
+                "notes": "Boston University, African Studies Center, Working Papers n° 64, 1982. Lu le 3 novembre 2026 dans le dépôt OpenBU de l'université de Boston."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gbobo",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un ancien nom des Grebo, selon un texte en grebo publié en 1966.",
+        "periodLabel": "Avant le nom Grebo",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le nom Grebo"
+            },
+            "era": "polity",
+            "before": true,
+            "statement": "Le nom gbobo serait celui que se donnaient les ancêtres des Grebo quand ils vivaient loin à l'intérieur, au pays des Kran, selon le texte en grebo publié par Gordon Innes. Le texte ajoute que des Kran se nomment encore ainsi et que des voisins appellent toujours les Grebo Gbobo.",
+            "sources": [
+              {
+                "title": "An Introduction to Grebo",
+                "author": "Gordon Innes",
+                "year": 1966,
+                "url": "https://archive.org/details/rosettaproject_gbo_vertxt-1",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 140 à 145, texte « The Origin of the Grebo »",
+                "notes": "Londres, School of Oriental and African Studies, 1966. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Manuel de langue qui publie un texte en grebo, dit par un locuteur, avec sa traduction anglaise ; le livre ne nomme pas ce locuteur dans les pages lues."
               }
             ]
           }
@@ -138,6 +298,7 @@
       "Wrelpo"
     ],
     "vitalityStatus": null,
+    "originDebated": true,
     "sources": [
       {
         "title": "Glottolog 5.3 — Grebo (greb1256)",
@@ -166,7 +327,60 @@
         "tier": "unverified",
         "source_kind": "encyclopedia",
         "notes": "Page lue en ligne : les Glebo de la côte, premier groupe rencontré au cap Palmas."
+      },
+      {
+        "title": "ISO 639-3, notice du code grb (Grebo)",
+        "url": "https://iso639-3.sil.org/code/grb",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Lu le 3 novembre 2026. La notice classe grb comme macrolangue et lui rattache cinq langues : gbo (grebo du Nord), gec (grebo gboloo), grj (grebo du Sud), grv (grebo central) et gry (grebo de Barclayville)."
+      },
+      {
+        "title": "An Introduction to Grebo",
+        "url": "https://archive.org/details/rosettaproject_gbo_vertxt-1",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Londres, School of Oriental and African Studies, 1966. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Manuel de langue qui publie un texte en grebo, dit par un locuteur, avec sa traduction anglaise ; le livre ne nomme pas ce locuteur dans les pages lues."
+      },
+      {
+        "title": "Tribes of the Liberian Hinterland",
+        "url": "https://archive.org/details/tribesofliberian00schw",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Cambridge (Massachusetts), Peabody Museum, Papers vol. 31, 1947. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Le livre rend compte de l'expédition du musée Peabody au Liberia, partie en 1928."
+      },
+      {
+        "title": "Day Dawn in Africa; or, Progress of the Protestant Episcopal Mission at Cape Palmas, West Africa",
+        "url": "https://archive.org/details/daydawninafricao00scot",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "New York, 1858. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Récit missionnaire qui cite l'évêque John Payne sur le nom Grebo."
+      },
+      {
+        "title": "Krumen « Down the Coast » : Liberian Migrants on the West African Coast in the 19th Century",
+        "url": "https://hdl.handle.net/2144/40974",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Boston University, African Studies Center, Working Papers n° 64, 1982. Lu le 3 novembre 2026 dans le dépôt OpenBU de l'université de Boston."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.vitalityStatus",
+        "reason": "Glottolog ne donne pas de statut pour l'ensemble grebo, mais pour chacune de ses cinq langues : quatre sont jugées vigoureuses (niveau 6a de l'échelle EGIDS) et le grebo du Nord est en développement (niveau 5), selon Ethnologue 2025."
+      },
+      {
+        "field": "content.speakers.byCountry",
+        "reason": "Nous n'avons pas trouvé de chiffre de locuteurs. Les chiffres disponibles comptent des personnes qui se disent grebo, pas des locuteurs : une enquête de 1962, citée par Mary Moran, compte 7 421 Glebo."
+      },
+      {
+        "field": "content.vehicularRole",
+        "reason": "Nous n'avons pas trouvé de source qui dise si le grebo sert de langue d'échange entre peuples différents."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Un ensemble de langues krou du sud-est du Liberia, autour du cap Palmas, dont les locuteurs de la côte se nomment Glebo.",
+      "followUp": "Pourquoi plusieurs récits relient-ils le nom grebo à un singe ?"
+    }
   }
 }

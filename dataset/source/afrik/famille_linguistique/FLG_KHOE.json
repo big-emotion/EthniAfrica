@@ -217,24 +217,40 @@
   },
   "content": {
     "searchAnswer": {
-      "lead": "Des langues parlées surtout en Namibie et au Botswana, comme le nama. « Hottentot » est un nom employé par les colons néerlandais ; les Khoekhoe se nomment ainsi eux-mêmes.",
+      "lead": "Une famille de treize langues à clics de Namibie, du Botswana et des pays voisins, comme le khoekhoegowab, ou nama. Son nom vient du mot khoe, « personne », dans ces langues.",
       "followUp": "D'où vient le nom « Hottentot » donné par les colons néerlandais ?"
     },
     "decolonialHeader": {
       "selfAppellation": "Khoekhoe",
-      "contemporaryUsage": "Khoe languages / Langues khoe (Tom Güldemann, Bonny Sands, classification moderne).",
-      "historicalAppellations": ["Hottentot", "Nama-Hottentot"],
-      "originOfHistoricalTerm": "Les colons néerlandais de la Compagnie néerlandaise des Indes orientales emploient Hottentot vers 1650-1670, au moment de l'installation de leur station de ravitaillement au Cap. Dans les années 1650, les journaux de Jan van Riebeeck mentionnent souvent les Khoikhoi et écrivent leur nom sous des formes comme Cochoqua, Khoe-Khoi ou Khoi-Khoi. Deux explications de Hottentot sont proposées. L'une le rapproche des syllabes néerlandaises hot en tot, qui imiteraient les sons à clics pour s'en moquer. L'autre, proposée par M. D. W. Jeffreys (1947), y voit un emprunt aux chants et aux danses khoekhoe. Les sources citées ne permettent pas de choisir entre ces explications. Dans les textes et l'administration coloniale, Nama-Hottentot associe ensuite ce mot à Nama, un nom employé par les personnes concernées. Le nom qu'elles se donnent vient de leur langue : khoe, « personne », répété deux fois, est traduit par « vrais gens ».",
-      "whyProblematic": "Le terme Hottentot a été construit comme un stéréotype colonial. François-Xavier Fauvelle-Aymar (2002) montre comment les récits de voyageurs, du XVe au XIXe siècle, en ont fait une figure homogène, tantôt bon sauvage, tantôt monstre primitif, que naturalistes et anatomistes ont ensuite mesurée et hiérarchisée, jusqu'à l'exhibition de Sarah Baartman, dite Vénus hottentote, en Europe au début du XIXe siècle ; cette figure a servi à justifier la dépossession des terres. Linda Evi Merians (2001) retrace la même construction dans la littérature anglaise des XVIe au XVIIIe siècles, faite de motifs de bestialité et de primitivisme. Le terme est aujourd'hui tenu pour raciste et offensant ; les locuteurs se désignent par Khoekhoegowab, Nama ou Damara."
+      "contemporaryUsage": "Les linguistes appellent khoe une famille de treize langues à clics, selon Glottolog. Elle a deux branches. Le khoekhoe réunit le khoekhoegowab de Namibie, qui comprend le nama, le damara et le haiǁom, le korana d'Afrique du Sud, aujourd'hui éteint, et le xiri. Les langues khoe du Kalahari, qui forment l'autre branche, comprennent le naro, le khwe, le ǁani, le gǀui, le gǁana, le shua et le tshwa. Le khoekhoegowab, « la parole des Khoekhoe », s'appelait autrefois nama ou nama-damara, selon Sylvanus Job et Tom Güldemann (2021) ; il réunit les dialectes damara, nama et haiǁom, selon Niklaas Fredericks (2024). En Afrique du Sud, le recensement de 2022 regroupe encore ces langues avec les langues san sous le nom de langues khoi, nama et san. En Namibie, le khoekhoegowab fait partie des langues que les élèves peuvent étudier comme première langue à l'école, selon la politique adoptée en 2017.",
+      "historicalAppellations": [
+        "Hottentot",
+        "Nama-Hottentot",
+        "Khoïsan central"
+      ],
+      "originOfHistoricalTerm": "Jan van Riebeeck débarque dans la baie de la Table le 6 avril 1652 pour fonder, au nom de la Compagnie néerlandaise des Indes orientales, une station qui ravitaille les navires, selon South African History Online. Les Khoekhoe sont le premier peuple que rencontrent ces colons, dans les années 1650, et ceux-ci les appellent Hottentots, selon le même site. Deux explications du mot sont proposées. L'une le rapproche des syllabes néerlandaises hot en tot, qui imiteraient les sons à clics pour s'en moquer ; South African History Online écrit que les colons trouvaient leur langue très différente de la leur. L'autre, proposée par M. D. W. Jeffreys en 1947 dans la revue African Affairs, y voit un emprunt aux chants et aux danses khoekhoe ; le même site rapporte que les Khoekhoe employaient en dansant un mot qui sonnait comme Hottentot. Dans les textes et l'administration coloniale, Nama-Hottentot associe ensuite ce mot à Nama, un nom employé par les personnes concernées. Les éleveurs que les Européens appelaient Hottentots se nomment eux-mêmes Khoi-Khoin, selon Isaac Schapera en 1930 : khoe, « personne », répété deux fois.\n\nLe nom khoïsan central, lui, vient du découpage des langues à clics en trois groupes, Nord, Centre et Sud, que proposait la linguiste Dorothea Bleek. Dans les années 1970, les linguistes Ernst Westphal et Oswin Köhler le remplacent par un nom tiré de ces langues, khoe, selon Tom Güldemann.",
+      "whyProblematic": "Le nom khoe vient des langues de la famille elles-mêmes. Ce sont les noms plus anciens qui posent problème. Hottentot a été construit comme un stéréotype colonial. François-Xavier Fauvelle-Aymar (2002) montre comment les récits de voyageurs, du XVe au XIXe siècle, en ont fait une figure homogène, tantôt bon sauvage, tantôt monstre primitif, que naturalistes et anatomistes ont ensuite mesurée et hiérarchisée. Saartjie Baartman, appelée aussi Sarah Baartman, exhibée sous le nom de « Vénus hottentote », quitte Le Cap pour l'Angleterre en 1810 et meurt à Paris en 1815, rappelle-t-il en 1999. Linda Evi Merians (2001) retrace la même construction dans la littérature anglaise des XVIe au XVIIIe siècles. Le mot a même désigné une loi : le code Caledon de 1809, que l'historien Wayne Dooling appelle « Code Hottentot », imposait un laissez-passer aux Khoekhoe de la colonie du Cap jusqu'à l'ordonnance 50 de 1828. Le nom khoïsan central, enfin, rangeait ces langues dans un ensemble khoïsan dont les linguistes, comme Bonny Sands, ne retiennent plus l'unité, selon Anne-Maria Fehn et ses collègues (2025).",
+      "linkWithFamily": "Le khoe est l'une des deux branches de la famille khoe-kwadi ; l'autre est le kwadi, autrefois parlé par les Kwepe, des éleveurs du sud-ouest de l'Angola, aujourd'hui presque disparu, selon Glottolog et selon Brigitte Pakendorf et Mark Stoneking (2021). Ces derniers écrivent que les spécialistes s'accordent aujourd'hui sur trois familles distinctes de langues à clics en Afrique australe, le kx'a, le tuu et le khoe-kwadi, et que le khoe-kwadi n'est apparenté à aucune des deux autres. Un lien avec le sandawe de Tanzanie reste à confirmer. Menán du Plessis (2018) juge pour sa part que les preuves linguistiques d'un ancêtre commun khoe-kwadi ne sont pas convaincantes.",
+      "geographicArea": "Namibie, Botswana, Afrique du Sud, Angola, Zambie, Zimbabwe",
+      "numberOfLanguages": 13,
+      "totalSpeakers": null
     },
     "generalInfo": {
       "branches": [
-        "Khoekhoe (Nama-Damara, Kora, Xiri)",
-        "Non-Khoekhoe / Khoe du Kalahari (Shua, Tshwa, Kxoe-Ani, Naro-Ana)"
+        "Khoekhoe (khoekhoegowab ou nama-damara, haiǁom, korana, xiri)",
+        "Khoe du Kalahari, en anglais Kalahari Khoe (naro, khwe, ǁani, gǀui, gǁana, shua, tshwa, ts'ixa)"
       ],
-      "geographicArea": "Namibie, Botswana, Afrique du Sud, Angola",
-      "numberOfLanguages": 10,
-      "totalSpeakers": null
+      "geographicArea": "Namibie, Botswana, Afrique du Sud, Angola, Zambie et Zimbabwe, selon les fiches de langues de Glottolog. Le khoekhoegowab est parlé surtout en Namibie, avec de petits groupes en Afrique du Sud et au Botswana. Les langues du Kalahari sont parlées surtout au Botswana : le naro dans le district de Ghanzi, le khwe dans le nord-ouest, le long de l'Okavango.",
+      "numberOfLanguages": 13,
+      "totalSpeakers": null,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "Selon Glottolog, édition 5.3 ; 14 avec le kwadi"
+        },
+        "totalSpeakers": {
+          "note": "Environ 225 000, selon les estimations de Matthias Brenzinger reprises par Menán du Plessis (2018) : jusqu'à 200 000 pour le khoekhoegowab de Namibie et 25 000 pour les langues du Kalahari. Le recensement namibien de 2023 ne compte pas les langues parlées"
+        }
+      }
     },
     "associatedPeoples": [
       {
@@ -246,26 +262,49 @@
         "peopleId": "PPL_DAMARA"
       },
       {
+        "name": "Haiǁom",
+        "peopleId": "PPL_HAIOM"
+      },
+      {
         "name": "Khwe",
         "peopleId": "PPL_KXOE"
+      },
+      {
+        "name": "Gana",
+        "peopleId": "PPL_GONA"
+      },
+      {
+        "name": "Shua",
+        "peopleId": "PPL_SHUA"
+      },
+      {
+        "name": "Tshwa",
+        "peopleId": "PPL_TSHUWA"
+      },
+      {
+        "name": "Khoikhoi",
+        "peopleId": "PPL_KHOIKHOI"
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " Langues agglutinantes (les mots se construisent en ajoutant des éléments à la suite les uns des autres), ordre des mots de base **SOV (Sujet-Objet-Verbe)**, avec un système pronominal riche. Exemples en Khoekhoegowab (Nama) : * Structure SOV : *ǀKharib ǃnâ da ge ǁGûn tsî ǀGaen tsîn* « Dans cette région, nous trouvons springbuck et oryx » (ǁGûn = springbuck, ǀGaen = oryx). * Modificateurs avant têtes : adjectifs et possessifs précèdent les noms. * Racines lexicales majoritairement bimoriques (CVCV, CVV, parfois CVNC) : *gao* /kȁó/ « régner » (ton bas-montant), *kao* /kàő/ « être abasourdi » (ton haut-montant). * Particules grammaticales courtes (CV ou CN), suffixes de petite taille."
+      "typology": "Les langues khoe placent en principe le verbe en fin de phrase, après le sujet et l'objet, mais l'ordre des mots y est en réalité très souple et dépend de ce que l'on veut mettre en avant, selon Menán du Plessis (2018). L'atlas WALS classe ainsi le nama parmi les langues sujet, objet, verbe, et le kxoe parmi les langues objet, sujet, verbe. Les mots qui jouent le rôle de nos prépositions se placent après le nom, et l'adjectif avant le nom. Les noms portent un genre : masculin, féminin et un troisième genre, commun ou neutre, qui sert quand le sexe ou la forme de ce dont on parle n'importe pas, selon Sylvanus Job et Tom Güldemann (2021). Ce genre s'exprime par de petits éléments qui disent à la fois la personne, le genre et le nombre ; le khoekhoegowab en a huit à la troisième personne, au singulier, au duel et au pluriel.",
+      "phonologicalFeatures": "Le khoekhoegowab a quatre clics de base : le clic dental ǀ, le clic latéral ǁ, le clic alvéolaire ǃ et le clic palatal ǂ, selon Niklaas Fredericks et Felix Banda (2023). C'est aussi une langue à tons : la hauteur de la voix sur les voyelles distingue les mots, selon Sylvanus Job et Tom Güldemann. Niklaas Fredericks (2024) rapporte que d'autres linguistes y ont identifié quatre tons, et que les dialectes se distinguent surtout par leurs tons. Les langues de l'est du Kalahari, comme le shua et le tshwa, ont moins de clics : les clics ǃ et ǂ y sont rares, selon Menán du Plessis, et certains mots les ont perdus, comme gǃãĩ, « bouquetin », devenu gãĩ, selon Andy Chebanne (2014).",
+      "relationsWithNeighbors": "Les peuples qui parlent des langues khoe vivent depuis longtemps à côté de peuples de langue bantoue. Les Damara pratiquaient la cueillette, un petit élevage de chèvres et la forge, au service des Nama et des Herero, éleveurs de langue bantoue ; à l'est du Kalahari, les Shua et les Tshwa dépendent de leurs voisins bantous, selon Brigitte Pakendorf et Mark Stoneking (2021). Certaines langues bantoues de la région de l'Okavango et du Zambèze ont emprunté au khwe des mots à clics. Les tons bas qui suivent certaines consonnes, dans les langues khoe de l'est du Kalahari, viendraient peut-être du contact avec le kalanga, selon Andy Chebanne (2014).\n\nAvec les langues kx'a et tuu, les échanges ont surtout eu lieu dans le sens des langues khoe vers les autres, selon Menán du Plessis, qui relève des emprunts khoekhoe très anciens dans le ǃui, une langue tuu. Tom Güldemann pense au contraire que des langues plus anciennes de ces familles ont marqué le khoekhoe et les langues du Kalahari. Enfin, la plupart des locuteurs du khoekhoegowab en Namibie parlent aussi l'anglais ou l'afrikaans, et l'afrikaans a pris en Afrique du Sud la place de la langue des Nama et des Korana, selon du Plessis. L'afrikaans a lui-même emprunté quelques mots au khoekhoe, comme abba, « porter un bébé sur le dos ».",
+      "keyInnovations": "Le trait qui sépare le plus nettement les langues khoe des familles ju et tuu est leur système de genres, qui range les noms en masculin, féminin et neutre, selon Menán du Plessis (2018). Les deux branches se distinguent ensuite entre elles. Le khoekhoe marque le masculin singulier par -b et distingue, pour « nous », le groupe qui inclut la personne à qui l'on parle de celui qui l'exclut ; les langues du Kalahari marquent plutôt ce masculin par -m et ne font pas cette distinction. À l'est du Kalahari, enfin, plusieurs langues ont perdu une partie de leurs clics et de leurs marques de genre, selon Andy Chebanne (2014) et Anne-Maria Fehn, dont Michael Cahill résume le travail en 2021."
     },
     "historyAndOrigins": {
-      "probableOrigin": "La classification actuelle rapproche les langues khoe du kwadi, une langue autrefois parlée en Angola, aujourd'hui éteinte. Dans les années 2000, Tom Güldemann propose de les réunir dans la famille khoe-kwadi, distincte des familles kx'a et tuu. Il s'appuie sur des ressemblances entre les pronoms et les règles de grammaire. Une proposition plus ancienne les regroupait autrement : dans The Languages of Africa (1955 puis 1963), Joseph Greenberg réunissait les langues à clics non bantoues d'Afrique australe et orientale dans une seule famille, appelée khoisan, en comparant un grand nombre de mots. Sands (1998), dans Eastern and Southern African Khoisan: Evaluating Claims of Distant Linguistic Relationships, estime que cette origine commune n'est pas démontrée. Elle emploie khoisan pour désigner des langues d'une même région qui partagent certaines caractéristiques. Le désaccord porte donc sur leur origine commune : utiliser des clics ne suffit pas à prouver un lien de parenté entre langues. Les recherches archéologiques décrivent l'arrivée de l'élevage en Afrique australe il y a environ 2 000 ans, avant l'expansion à grande échelle de l'agriculture bantoue. Elles associent aux ancêtres des San les cultures du Late Stone Age, postérieures à environ 75 000 ans avant le présent. Les études génétiques portent, elles, sur les populations. Les populations khoe-san portent des traces de branches très anciennes de l'histoire humaine. Un repère génétique transmis par les mères, appelé L0d, apparaît chez vingt-cinq des vingt-huit individus anciens étudiés par Mattias Jakobsson et ses collègues en 2024. Les datations corrigées situent ces individus entre 10 200 et 150 ans avant le présent. La synthèse présentée ici situe les origines dans le sud-ouest africain, sur le territoire de la Namibie actuelle. L'élevage serait arrivé depuis l'Afrique de l'Est il y a environ 2 000 ans, avec des migrations limitées. Les habitants auraient surtout adopté de nouvelles pratiques, plutôt que d'avoir été remplacés.",
-      "emergencePeriod": "La divergence génétique profonde des ancêtres khoe-san d'avec les autres lignées africaines est estimée par Chiara Barbieri, Carina Schlebusch et leurs collègues (2021-2022) à environ 172 000 ans, dans un intervalle de confiance à 95 pour cent compris entre 149 000 et 199 000 ans. L'expansion des populations san associées au Late Stone Age couvre une grande partie de l'Afrique australe et orientale après environ 75 000 ans avant le présent. L'introduction du pastoralisme et la diffusion linguistique khoe-kwadi se placent vers 2000 ans avant le présent. La datation de la classification académique est distincte de celle de la famille elle-même : Joseph Greenberg propose le khoisan en 1955 puis en 1963, Bonny Sands en conteste l'unité en 1998, et Tom Güldemann établit dans les années 2000, sur une méthodologie historico-comparative, les trois familles séparées kx'a, tuu et khoe-kwadi.",
-      "diffusion": "Trois explications décrivent comment l'élevage se serait répandu. Mattias Jakobsson et ses collègues (2024), ainsi que Mark Lipson, Elizabeth Sawchuk, Jessica Thompson et leurs collègues (2022), décrivent des migrations depuis l'Afrique de l'Est il y a environ 2 000 ans. Les hommes y auraient davantage participé que les femmes. Les traces génétiques de ces arrivées restent souvent limitées : les chasseurs-cueilleurs déjà présents auraient adopté l'élevage, plutôt que d'avoir été remplacés. Joseph Pickrell et ses collègues (2012) donnent surtout de l'importance à l'adoption locale de pratiques et d'une langue venues probablement d'Afrique de l'Est. Une troisième explication concerne les trajets des pasteurs khoe-kwadi, des communautés d'éleveurs qui parlent ces langues. Ils se seraient déplacés du nord vers le sud, par la côte ou par la Namibie. Ces explications diffèrent sur l'importance des migrations et des échanges de pratiques, tout en situant l'origine de l'élevage en Afrique de l'Est. L'étude des langues indique des contacts anciens entre petits groupes : les locuteurs khoe-kwadi ont emprunté à leurs voisins kx'a et tuu des mots liés à l'élevage. Selon Pickrell, les mélanges avec des populations non khoisan commencent il y a environ 1 200 ans. Les Nama et d'autres groupes khoe continuent à se déplacer en Namibie, au Botswana et dans la région du Cap au cours des derniers millénaires.",
-      "historicalBreaks": "La colonisation allemande de la Namibie culmine avec le génocide des Herero et des Nama, de 1904 à 1908, accompagné d'exactions et de déplacements forcés. En Afrique du Sud, le régime d'apartheid, de 1948 aux années 1990, déplace les populations et organise la ségrégation raciale. À ces ruptures s'ajoute une pression linguistique continue : la domination de l'afrikaans, de l'anglais et des langues bantoues dominantes, oshiwambo et tswana, conduit au recul puis à la perte de plusieurs langues. La période récente combine perte linguistique, mélange génétique et extinction de nombreuses petites communautés de langues khoisan, constat sur lequel la littérature des années 2020 converge.",
-      "contactZones": "Le désert du Namib, sur la côte atlantique namibienne, est la zone où les groupes khoekhoe ont rencontré les colons européens installés au Cap et dans les stations de la Compagnie néerlandaise des Indes orientales. Le désert du Kalahari, partagé entre le Botswana, l'est de la Namibie et l'Afrique du Sud, est la zone de contact entre les groupes khoe du Kalahari, dont les Naro et les Khwe, et les populations bantoues. Les régions frontalières entre la Namibie, le Botswana et l'Afrique du Sud sont des zones de mélange linguistique et génétique, en particulier le district de Ghanzi au Botswana et la province du Northern Cape en Afrique du Sud. Les routes côtières entre la Namibie et l'Angola mettent en contact les groupes Haiǁom et ǂĀkhoe avec d'autres variétés khoekhoe. Le brassage linguistique se concentre sur les franges entre zones pastorales khoe et zones agricoles bantoues, ainsi que dans les villes, Windhoek et Le Cap (Cape Town), où le multilinguisme est la règle.",
-      "majorEvents": "Vers 172 000 ans avant le présent, les lignées khoe-san divergent des autres lignées africaines. Après environ 75 000 ans avant le présent, les populations san associées au Late Stone Age se répartissent sur une grande partie de l'Afrique australe. Vers 2000 ans avant le présent, l'arrivée de pasteurs venus d'Afrique de l'Est introduit l'élevage et la diffusion linguistique khoe-kwadi. Entre 1000 et 2000 ans avant le présent, l'expansion bantoue introduit l'agriculture et des éléments génétiques ouest-africains, et le mélange avec les locuteurs bantous s'accroît. Au milieu des années 1600, l'établissement de la Compagnie néerlandaise des Indes orientales au Cap, sous Jan van Riebeeck, ouvre les premiers contacts européens documentés avec les groupes khoekhoe. En 1809, la proclamation connue sous les noms coloniaux de Hottentot Proclamation et de Code Hottentot restreint les déplacements des Khoekhoe dans la colonie du Cap ; elle est révoquée en 1828. De 1904 à 1908, les colonisateurs allemands commettent le génocide des Herero et des Nama en Namibie. De 1948 aux années 1990, le régime d'apartheid organise en Afrique du Sud les déplacements et la ségrégation. En 1990, l'indépendance de la Namibie s'accompagne de la reconnaissance officielle du khoekhoegowab comme langue nationale."
+      "probableOrigin": "Joseph Greenberg, dans The Languages of Africa (1963), réunissait ces langues avec toutes les autres langues à clics d'Afrique australe et orientale dans une famille khoïsan. Les linguistes qui étudient ces langues, dont Bonny Sands (1998) dans Eastern and Southern African Khoisan: Evaluating Claims of Distant Linguistic Relationships, n'ont pas pu confirmer cette parenté, selon Anne-Maria Fehn et ses collègues (2025). Ils reconnaissent aujourd'hui une famille khoe-kwadi, distincte du kx'a et du tuu.\n\nPour Tom Güldemann, dans la revue Southern African Humanities (2008), les langues khoe-kwadi seraient arrivées en Afrique australe avec une population d'éleveurs installée avant les peuples de langue bantoue ; leur langue aurait été plus proche du kwadi que de l'ancêtre des langues khoe, et cette population viendrait peut-être d'Afrique de l'Est. Brigitte Pakendorf et Mark Stoneking (2021) jugent que la génétique va dans ce sens : une variante qui permet de digérer le lait à l'âge adulte, d'origine probablement est-africaine, est plus fréquente chez les éleveurs et chez les locuteurs de langues khoe que chez ceux des langues tuu ou kx'a. Ils notent toutefois que les Kwepe d'Angola, qui parlaient le kwadi, la portent peu, et que la diffusion a pu être complexe, avec peut-être des groupes de langue bantoue passés aux langues khoe-kwadi. Menán du Plessis (2018) doute pour sa part que ces langues aient un ancêtre commun avec le kwadi.",
+      "emergencePeriod": "Les peuples qui parlent ces langues ont des ancêtres très anciens en Afrique australe. La lignée transmise par les mères appelée L0d, fréquente chez les Khoe-San d'aujourd'hui, est la plus ancienne connue : elle se serait séparée il y a environ 172 000 ans, entre 149 000 et 199 000 ans, selon Eva Chan et ses collègues (2015). Vingt-cinq des vingt-huit individus anciens étudiés par Mattias Jakobsson et ses collègues (2025), qui ont vécu il y a 10 200 à 150 ans, portaient cette lignée. Ces dates concernent les populations, pas les langues.\n\nL'élevage et le bétail, sans doute venus d'Afrique de l'Est, apparaissent en Afrique australe il y a environ 2 000 ans, avant la grande expansion des agriculteurs et éleveurs de langue bantoue, selon Mário Vicente et ses collègues (2021). Les mélanges entre populations khoisan et non khoisan commencent il y a environ 1 200 ans, selon Joseph Pickrell et ses collègues (2012). Nous n'avons pas trouvé de datation de l'ancêtre commun des langues khoe elles-mêmes.\n\nLa classification a sa propre chronologie. Dorothea Bleek range ces langues dans un groupe central à la fin des années 1920 ; Ernst Westphal et Oswin Köhler les appellent khoe dans les années 1970 ; Glottolog fonde son classement interne sur l'étude comparée publiée par Rainer Voßen en 1997 ; Tom Güldemann et Edward Elderkin les rapprochent du kwadi en 2010.",
+      "diffusion": "Ces éleveurs, que les auteurs associent à une migration de la fin du Late Stone Age, ou âge de la pierre récent, sont à l'origine des pasteurs khoe, selon Anne-Maria Fehn et ses collègues (2025). Selon Mário Vicente et ses collègues (2021), l'élevage serait arrivé en Afrique australe avec des migrants venus d'Afrique de l'Est, surtout des hommes, qui l'auraient transmis aux chasseurs-cueilleurs locaux ; les Nama d'aujourd'hui portent une forte part d'ascendance est-africaine. Un individu mort il y a 1 200 ans dans un site d'éleveurs de l'ouest du Cap avait environ 40 % d'ascendance liée à un ancien éleveur de Tanzanie, selon Brigitte Pakendorf et Mark Stoneking. Joseph Pickrell et ses collègues (2014) datent de 900 à 1 800 ans une ascendance arrivée par l'Afrique de l'Est, qui a le plus marqué les populations de langues khoe-kwadi. Les langues khoe se répartissent ensuite entre la région du Cap, la Namibie et le Kalahari, jusqu'en Angola, en Zambie et au Zimbabwe.",
+      "historicalBreaks": "Dans la colonie britannique du Cap, le code Caledon de 1809, dit aussi Code Hottentot, oblige les Khoekhoe à porter un laissez-passer pour changer de ferme ou de district. L'ordonnance 50, publiée le 25 juillet 1828, lève ces contraintes, sans rien changer à leur pauvreté, faute de terres et de capital, selon South African History Online et D. J. P. Haasbroek (1959). Dans le Sud-Ouest africain allemand, l'actuelle Namibie, les troupes allemandes mènent de 1904 à 1908 une guerre d'extermination contre les Herero et les Nama : le général Lothar von Trotha ordonne l'anéantissement des Nama en avril 1905, et jusqu'à 100 000 personnes meurent, selon l'agence fédérale allemande pour l'éducation civique. Le gouvernement allemand reconnaît ce génocide en 2021.\n\nLes langues reculent aussi. Le korana n'avait plus qu'une locutrice partielle connue en 2018, et la plupart des Nama d'Afrique du Sud parlent aujourd'hui l'afrikaans, selon Menán du Plessis. Au recensement sud-africain de 2022, les langues khoi, nama et san ne sont plus la langue principale que de 0,01 % des ménages du pays et de 0,17 % de ceux de la province du Cap-Nord (Northern Cape). À l'est du Kalahari, les communautés khoe, parmi les plus pauvres, subissent une assimilation forcée, et leurs langues sont en danger, selon Andy Chebanne (2014).",
+      "contactZones": "Le Kalahari est la grande zone de contact. Autrefois, des locuteurs de langues khoe du Kalahari, comme des locuteurs du taa et du kgalagadi, étaient contraints de suivre leurs maîtres tswana et kalanga avec leurs troupeaux, selon Menán du Plessis. Au Botswana, le recensement de 2022 note que le naro est surtout parlé dans le district de Ghanzi, et le khwe, appelé sekhwedam, dans l'ouest du Ngamiland. Le long de l'Okavango, les Khwe vivent de pêche, de chasse et de cueillette, au voisinage de peuples de langue bantoue, selon Brigitte Pakendorf et Mark Stoneking. Au Zimbabwe, la plupart des Tjwa parlent aujourd'hui le ndebele et le kalanga. En Namibie, les Damara vivaient au service des Nama et des Herero. Au Cap (Cape Town), enfin, le khoekhoe a côtoyé le néerlandais d'où est sorti l'afrikaans.",
+      "majorEvents": "Il y a environ 2 000 ans, l'élevage arrive en Afrique australe. À partir des années 1650, la Compagnie néerlandaise des Indes orientales s'installe au Cap et entre en contact avec les éleveurs khoekhoe. En 1809, le code Caledon impose un laissez-passer aux Khoekhoe de la colonie du Cap ; l'ordonnance 50 le supprime en 1828. De 1904 à 1908, les troupes allemandes commettent le génocide des Herero et des Nama ; le 28 mai 1908, la fermeture des camps de concentration du Sud-Ouest africain est ordonnée. En 2021, l'Allemagne reconnaît ce génocide, et la Namibie fait du 28 mai une journée du souvenir, célébrée pour la première fois en 2025, selon le gouvernement fédéral allemand. La Constitution namibienne de 1990 fait de l'anglais la seule langue officielle, mais permet d'enseigner dans d'autres langues et de les employer dans les régions où une part importante de la population les parle. En 2017, le gouvernement namibien adopte une politique scolaire qui compte le khoekhoegowab parmi les premières langues enseignées, selon le quotidien New Era."
     },
     "distribution": {
       "totalSpeakers": null,
       "distributionByCountry": {
-        "NAM": 204700,
-        "BWA": 8200,
+        "NAM": 200000,
+        "BWA": 15886,
         "ZAF": 2000
       }
     },
@@ -283,14 +322,10 @@
       },
       {
         "title": "Jeffreys, M. D. W. (1947) – « The Origin of the Name Hottentot ». *African Affairs*, vol. 46, n° 184, p. 163-165. Oxford University Press",
-        "url": null,
+        "url": "https://doi.org/10.1093/oxfordjournals.afraf.a093573",
         "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "Van Riebeeck, Jan (milieu 1650s) – Journaux de la Compagnie néerlandaise des Indes orientales (VOC), station du Cap. Archives VOC",
-        "url": null,
-        "tier": "needs_review"
+        "source_kind": "academic",
+        "notes": "Article de la revue African Affairs ; référence vérifiée dans le registre Crossref. Nous n'en avons pas relu le texte."
       },
       {
         "title": "Greenberg, Joseph H. (1955/1963) – *The Languages of Africa*. Indiana University / Mouton",
@@ -299,38 +334,11 @@
         "source_kind": "academic"
       },
       {
-        "title": "Sands, Bonny Eva (1998) – *Eastern and Southern African Khoisan: Evaluating Claims of Distant Linguistic Relationships*. Research School of Pacific and Asian Studies, Australian National University",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "Güldemann, Tom (années 2000s) – Travaux sur classification des langues à clics, reconstruction Khoe-Kwadi, rejet de « Khoisan » comme famille génétique. Multiple publications",
-        "url": null,
-        "tier": "needs_review"
-      },
-      {
-        "title": "Jakobsson, Mattias et al. (2024) – *Homo sapiens-specific evolution unveiled by ancient southern African genomes*. *Nature*. DOI: 10.1038/s41586-025-09811-4",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "Lipson, Mark, Sawchuk, E. A., Thompson, J. C. et al. (2022) – *Ancient DNA and deep population structure in sub-Saharan African foragers*. *Nature*. DOI: 10.1038/s41586-022-04430-9",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "Barbieri, Chiara, Schlebusch, Carina et al. (2021-2022) – *Revised timeline and distribution of the earliest diverged human maternal lineages in southern Africa*. *Human Molecular Genetics*. DOI: 10.1093/hmg/ddac158",
-        "url": null,
-        "tier": "referenced"
-      },
-      {
         "title": "Pickrell, Joseph K. et al. (2012) – *The genetic prehistory of southern Africa*. *Nature Communications*. arXiv:1207.5552",
-        "url": null,
+        "url": "https://arxiv.org/abs/1207.5552",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Article de génétique paru dans Nature Communications, vol. 3, 1143, lu dans sa version déposée sur arXiv. Il date d'environ 1 200 ans le début des mélanges avec des populations non khoisan."
       },
       {
         "title": "Ethnologue (27e édition, 2024) – *Khoekhoegowab* (ISO 639-3: naq), *Khwe*, *Naro*. SIL International",
@@ -362,20 +370,10 @@
         "source_kind": "linguistic_reference"
       },
       {
-        "title": "Grokipedia / Namibie Population and Housing Census (2023) – *Demographics of Namibia*",
-        "url": "https://grokipedia.com/page/Demographics_of_Namibia",
-        "tier": "unverified"
-      },
-      {
         "title": "UNESCO – Langues en danger (Afrique australe). UNESCO Atlas of the World's Languages in Danger",
         "url": null,
         "tier": "needs_review",
         "source_kind": "intergovernmental"
-      },
-      {
-        "title": "Pakendorf, Brigitte et al. – Travaux sur classification des langues Khoe et génétique des populations",
-        "url": null,
-        "tier": "needs_review"
       },
       {
         "title": "Glottolog 5.0 (2024) – Classification du nœud \"Khoe\" [khoe1241] : deux branches directes, \"Khoekhoe\" [khoe1242] et \"Non-Khoekhoe\" [nonk1236]",
@@ -384,23 +382,259 @@
         "source_kind": "linguistic_reference"
       },
       {
-        "title": "SIL Ethnologue – Khoekhoegowab/Nama [naq] : Namibie ≈200 000, Afrique du Sud ≈2 000, Botswana ≈200 locuteurs. (chiffres vérifiés via Wikipédia FR « Nama (langue) », consulté en 2026 ; accès direct à ethnologue.com bloqué depuis cet environnement)",
-        "url": "https://www.ethnologue.com/language/naq/",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
-      },
-      {
         "title": "Brenzinger, Matthias (2011) – \"The twelve modern Khoisan languages\". In: *Khoisan Languages and Linguistics: Proceedings of the 3rd International Symposium* (Research in Khoisan Studies 29). Cologne: Rüdiger Köppe Verlag. [Khwe : Namibie ≈3 700 ; Naro : Namibie ≈1 000 locuteurs]",
         "url": null,
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Chapitre des actes du troisième symposium sur les langues khoisan, publié par Rüdiger Köppe ; Glottolog le date de 2011, l'éditeur de 2013. Ses estimations de locuteurs sont reprises par Menán du Plessis (2018)."
       },
       {
-        "title": "SIL Ethnologue (18e éd., 2015) – Naro [nhr] : Botswana ≈8 000 locuteurs (2014). (chiffre vérifié via Wikipédia EN « Naro language », consulté en 2026)",
-        "url": "https://www.ethnologue.com/language/nhr/",
+        "title": "Glottolog 5.3 — Khoe-Kwadi (khoe1240)",
+        "url": "https://glottolog.org/resource/languoid/id/khoe1240",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max Planck d'anthropologie évolutionniste. La famille khoe-kwadi y compte 14 langues : les 13 langues khoe et le kwadi. Les fiches de chaque langue donnent les pays où elle est parlée."
+      },
+      {
+        "title": "Pakendorf, Brigitte & Stoneking, Mark (2021) – \"The genomic prehistory of peoples speaking Khoisan languages\", Human Molecular Genetics 30(R1), pp. R49-R55",
+        "url": "https://doi.org/10.1093/hmg/ddaa221",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de synthèse en libre accès, lu en entier. Il présente les trois familles de langues à clics d'Afrique australe, les modes de vie des peuples qui les parlent et ce que la génétique dit de la diffusion de l'élevage."
+      },
+      {
+        "title": "du Plessis, Menán (2018) – Kora: A Lost Khoisan Language of the Early Cape and the Gariep. University of South Africa Press",
+        "url": "https://sahistory.org.za/sites/default/files/archive_files/Kora-Lost-Khoisan-Language-early-Cape-and-Gariep-by-Men%C3%A1n-du-Plessis.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Livre de linguistique publié par les presses de l'université d'Afrique du Sud, mis en ligne en texte intégral par South African History Online. Son premier chapitre présente la famille khoe, ses traits, ses contacts et les estimations de locuteurs de Matthias Brenzinger."
+      },
+      {
+        "title": "Job, Sylvanus & Güldemann, Tom (2021) – \"The gender system of Khoekhoegowab\", STUF – Language Typology and Universals 74(2), pp. 263-278",
+        "url": "https://doi.org/10.1515/stuf-2021-1032",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article lu en entier dans la copie déposée à l'université Humboldt de Berlin. Son premier auteur parle le khoekhoegowab."
+      },
+      {
+        "title": "WALS Online, valeurs du nama et du kxoe : ordre des mots (81A), ordre de l'adjectif et du nom (87A), genres (30A) et tons (13A)",
+        "author": "Matthew S. Dryer et Martin Haspelmath (dir.)",
+        "url": "https://wals.info/valuesets/81A-kho",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des structures des langues publié par l'Institut Max Planck d'anthropologie évolutionniste. Le lien mène à l'ordre des mots du nama ; celui du kxoe figure à la valeur 81A-kxo."
+      },
+      {
+        "title": "Fredericks, Niklaas & Banda, Felix (2023) – \"Perspectives on Click Consonants of Khoekhoegowab: An Alternative Description\", NAWA Journal of Language and Communication 16(2)",
+        "url": "https://journals.nust.na/index.php/njlc/article/download/48/14/294",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'une revue de l'université des sciences et technologies de Namibie, lu en entier."
+      },
+      {
+        "title": "Fredericks, Niklaas Johannes (2024) – \"An investigation into the phonemic status of vowel length and tone in Khoekhoegowab\", JULACE 7(1)",
+        "url": "https://journals.unam.edu.na/index.php/JULACE/article/view/1869",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de la revue du centre de langues de l'université de Namibie, lu en entier."
+      },
+      {
+        "title": "Chebanne, Andy (2014) – \"What have Eastern Kalahari Khoe languages lost linguistically?\", Stellenbosch Papers in Linguistics Plus 44, pp. 1-21",
+        "url": "https://doi.org/10.5842/44-0-639",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'un linguiste de l'université du Botswana, lu en entier."
+      },
+      {
+        "title": "Cahill, Michael C. (2021) – compte rendu de Click Consonants, sous la direction de Bonny Sands (Brill, 2020), LINGUIST List 32.2603",
+        "url": "https://linguistlist.org/issues/32/2603/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Compte rendu lu en entier. Il résume le chapitre d'Anne-Maria Fehn sur la perte des clics dans les langues khoe-kwadi."
+      },
+      {
+        "title": "Güldemann, Tom (2008) – \"A linguist's view: Khoe-Kwadi speakers as the earliest food-producers of southern Africa\", Southern African Humanities 20, pp. 93-132",
+        "url": "https://www.sahumanities.org/index.php/sah/article/view/180",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de revue ; nous en avons lu le résumé publié par la revue."
+      },
+      {
+        "title": "Vicente, Mário et al. (2021) – \"Male-biased migration from East Africa introduced pastoralism into southern Africa\", BMC Biology 19, 259",
+        "url": "https://doi.org/10.1186/s12915-021-01193-z",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de génétique en libre accès ; nous en avons lu le résumé."
+      },
+      {
+        "title": "Pickrell, Joseph K. et al. (2014) – \"Ancient west Eurasian ancestry in southern and eastern Africa\", Proceedings of the National Academy of Sciences 111(7)",
+        "url": "https://doi.org/10.1073/pnas.1313787111",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de génétique ; nous en avons lu le résumé."
+      },
+      {
+        "title": "South African History Online – Political changes from 1750 to 1820",
+        "url": "https://sahistory.org.za/node/124425",
+        "tier": "referenced",
+        "source_kind": "ngo",
+        "notes": "Page d'histoire du site éducatif sud-africain South African History Online, lue en entier."
+      },
+      {
+        "title": "Haasbroek, D. J. P. (1959) – \"Ordonnansie vyftig\", Historia 4(2)",
+        "url": "https://upjournals.up.ac.za/index.php/historia/article/view/3005",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article en afrikaans de la revue d'histoire de l'université de Pretoria, lu en entier. Écrit en 1959, il emploie le vocabulaire colonial de son époque."
+      },
+      {
+        "title": "Bundeszentrale für politische Bildung (2021) – Völkermord an Herero und Nama: Abkommen zwischen Deutschland und Namibia",
+        "url": "https://www.bpb.de/kurz-knapp/hintergrund-aktuell/335257/voelkermord-an-herero-und-nama-abkommen-zwischen-deutschland-und-namibia/",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Page du 22 juin 2021 de l'agence fédérale allemande pour l'éducation civique, lue en entier."
+      },
+      {
+        "title": "Bundesregierung (2026) – Dem Weg der Versöhnung verpflichtet : Gedenken an den Völkermord an den Herero und Nama",
+        "url": "https://www.bundesregierung.de/breg-de/aktuelles/gedenken-herero-und-nama-2350348",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Page du gouvernement fédéral allemand du 28 mai 2026, lue en entier."
+      },
+      {
+        "title": "Nakale, Albertina (2017) – \"Cabinet approves revised language policy for schools\", New Era, Windhoek",
+        "url": "https://neweralive.na/posts/cabinet-approves-revised-language-policy-for-schools",
+        "tier": "referenced",
+        "source_kind": "press",
+        "notes": "Article du quotidien public namibien New Era du 8 août 2017, lu en entier."
+      },
+      {
+        "title": "Statistics Botswana (2022) – Botswana Population & Housing Census 2022, Analytical Report Volume 1",
+        "url": "https://statsbots.org.bw/sites/default/files/census_documents/Botswana%20Population%20%26%20Housing%20Census%202022%20Analytical%20Report%20Volume%201-Demographic%20and%20Social%20Characteristics%2CRegistration%2C%20Youth%20and%20Elderly%2CEducation.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport officiel du recensement du Botswana. L'annexe 4 donne la langue la plus parlée à la maison : 11 751 personnes pour le naro, 1 944 pour le sekhwedam, 832 pour le kua, 703 pour le gǀui, 398 pour le gǁana, 108 pour le nama, 77 pour le shua et 73 pour le tsowa, soit 15 886 personnes pour ces langues khoe. Deux tableaux du rapport échangent par erreur les totaux du sesarwa et du thimbukushu."
+      },
+      {
+        "title": "Fauvelle-Aymar, François-Xavier (1999) – « Des murs d'Augsbourg aux vitrines du Cap. Cinq siècles d'histoire du regard sur le corps des Khoisan », Cahiers d'études africaines 39 (155-156), pp. 539-561",
+        "url": "https://doi.org/10.3406/cea.1999.1764",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article lu sur Persée. Il retrace l'histoire du regard européen sur le corps des Khoisan, jusqu'à Saartjie Baartman."
+      },
+      {
+        "title": "Sands, Bonny Eva (1998) – Eastern and Southern African Khoisan: Evaluating Claims of Distant Linguistic Relationships. Rüdiger Köppe, Cologne",
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Livre publié dans la collection Quellen zur Khoisan-Forschung ; référence vérifiée dans le catalogue Open Library. Nous n'en avons pas lu le texte."
+      },
+      {
+        "title": "Fehn, Anne-Maria et al. (2025) – \"Tracing contact and migration in pre-Bantu Southern Africa through lexical borrowing\", Evolutionary Human Sciences 7, e25",
+        "url": "https://doi.org/10.1017/ehs.2025.10014",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article en libre accès d'une équipe de linguistes et de chercheurs du Botswana, du Mozambique, du Portugal et des États-Unis, lu en entier. Il étudie les mots empruntés entre les trois familles de langues à clics d'Afrique australe."
+      },
+      {
+        "title": "Statistics South Africa (2023) – Census 2022 Statistical Release P0301.4",
+        "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Communiqué officiel du recensement sud-africain de 2022. Le tableau 2.9 donne la part des ménages selon la langue la plus parlée : 0,01 % pour les langues khoi, nama et san dans tout le pays, 0,17 % dans la province du Cap-Nord."
+      },
+      {
+        "title": "The Kx'a Family: A New Khoisan Genealogy, Journal of Asian and African Studies, no 79",
+        "author": "Bernd Heine et Henry Honken",
+        "year": 2010,
+        "url": "https://doi.org/10.15026/57434",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Tokyo, Institut de recherche sur les langues et cultures d'Asie et d'Afrique. Lu en texte intégral dans la copie du dépôt de l'université des études étrangères de Tokyo."
+      },
+      {
+        "title": "Chan, Eva K. F. et al. (2015) – \"Revised timeline and distribution of the earliest diverged human maternal lineages in southern Africa\", PLoS ONE 10(3), e0121223",
+        "url": "https://doi.org/10.1371/journal.pone.0121223",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de génétique en libre accès ; nous en avons lu le résumé. Il date d'environ 172 000 ans la séparation de la lignée maternelle L0d."
+      },
+      {
+        "title": "Jakobsson, Mattias et al. (2025) – \"Homo sapiens-specific evolution unveiled by ancient southern African genomes\", Nature 650, pp. 156-163",
+        "url": "https://doi.org/10.1038/s41586-025-09811-4",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de génétique publié en ligne le 3 décembre 2025, lu en entier dans sa version en libre accès. Il étudie 28 individus anciens d'Afrique australe."
+      },
+      {
+        "title": "Republic of Namibia – Namibia's Constitution of 1990 with Amendments through 2014",
+        "url": "https://www.constituteproject.org/constitution/Namibia_2014?lang=en",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte de la Constitution namibienne publié par le Constitute Project. Son article 3 porte sur les langues."
+      },
+      {
+        "title": "Dooling, Wayne (2005) – \"The Origins and Aftermath of the Cape Colony's 'Hottentot Code' of 1809\", Kronos 31, pp. 50-61",
+        "url": "https://www.jstor.org/stable/41056535",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de la revue d'histoire sud-africaine Kronos ; référence vérifiée sur JSTOR. Nous n'en avons pas lu le texte."
+      },
+      {
+        "title": "Namibia Statistics Agency – Namibia Population and Housing Census (2023), Main Report",
+        "url": "https://nsa.org.na/wp-content/uploads/2024/10/2023-Population-and-Housing-Census-Main-Report-28-Oct-2024.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport officiel du recensement namibien de 2023, publié le 28 octobre 2024. Il compte l'appartenance ethnique déclarée et ne comporte pas de tableau des langues parlées."
+      },
+      {
+        "title": "\"The Khoisan\" – *South African History Online*",
+        "url": "https://www.sahistory.org.za/article/khoisan",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Page d'histoire du site éducatif sud-africain South African History Online, lue en entier."
+      },
+      {
+        "title": "South African History Online – Jan van Riebeeck",
+        "url": "https://www.sahistory.org.za/people/jan-van-riebeeck",
+        "tier": "referenced",
+        "source_kind": "ngo",
+        "notes": "Page biographique du site éducatif sud-africain South African History Online, lue pour l'arrivée au Cap en 1652."
       }
-    ]
+    ],
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "NAM",
+          "speakers": 200000,
+          "source": {
+            "title": "du Plessis, Menán (2018) – Kora: A Lost Khoisan Language of the Early Cape and the Gariep. University of South Africa Press",
+            "url": "https://sahistory.org.za/sites/default/files/archive_files/Kora-Lost-Khoisan-Language-early-Cape-and-Gariep-by-Men%C3%A1n-du-Plessis.pdf",
+            "tier": "referenced",
+            "notes": "Jusqu'à 200 000 locuteurs du khoekhoegowab, nama, damara et haiǁom compris, selon l'estimation de Matthias Brenzinger reprise p. 6."
+          }
+        },
+        {
+          "country": "BWA",
+          "speakers": 15886,
+          "source": {
+            "title": "Statistics Botswana (2022) – Botswana Population & Housing Census 2022, Analytical Report Volume 1",
+            "url": "https://statsbots.org.bw/sites/default/files/census_documents/Botswana%20Population%20%26%20Housing%20Census%202022%20Analytical%20Report%20Volume%201-Demographic%20and%20Social%20Characteristics%2CRegistration%2C%20Youth%20and%20Elderly%2CEducation.pdf",
+            "tier": "official",
+            "notes": "Somme des huit langues khoe déclarées comme langue la plus parlée à la maison au recensement de 2022."
+          }
+        },
+        {
+          "country": "ZAF",
+          "speakers": 2000,
+          "source": {
+            "title": "du Plessis, Menán (2018) – Kora: A Lost Khoisan Language of the Early Cape and the Gariep. University of South Africa Press",
+            "url": "https://sahistory.org.za/sites/default/files/archive_files/Kora-Lost-Khoisan-Language-early-Cape-and-Gariep-by-Men%C3%A1n-du-Plessis.pdf",
+            "tier": "referenced",
+            "notes": "Moins de 2 000 locuteurs du nama, presque tous âgés de plus de cinquante ans, selon Matthias Brenzinger cité p. 7."
+          }
+        }
+      ]
+    }
   }
 }

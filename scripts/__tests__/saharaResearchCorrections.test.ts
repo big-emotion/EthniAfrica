@@ -139,37 +139,36 @@ describe("the humid period and the 4.2 ka event in the family and people fiches"
   const nilo = readFiche("famille_linguistique/FLG_NILOSAHARIENNE.json").content
     .historyAndOrigins;
 
+  // The premium pass of 2026-11-03 rewrote both family fiches from the
+  // sources they cite. The unattributed humid-period chronology « selon les
+  // études » is gone; the Nilo-Saharan fiche now dates the wet period and the
+  // drying-out as J. E. G. Sutton does in UNESCO's General History of Africa,
+  // vol. I (1981), pp. 482-484, and names him. The dates corrected on
+  // 13 October 2026 must still never come back.
+
   // @req REQ-196
-  it("ends the African Humid Period about 3500-3000 BCE in FLG_NILOSAHARIENNE", () => {
-    expect(nilo.emergencePeriod).toContain(
-      "qui commence entre 13 000 et 9000 av. J.-C. environ et prend fin vers 3500-3000 av. J.-C."
-    );
-    expect(nilo.emergencePeriod).not.toContain("~8000-5500 av. J.-C.");
-    expect(nilo.majorEvents).toContain(
-      "**~13000-3000 av. J.-C. (dates selon les études) :**"
-    );
-    expect(nilo.majorEvents).not.toContain("~11000-5500");
+  it("never restores the humid-period dates corrected in FLG_NILOSAHARIENNE", () => {
+    const text = `${nilo.emergencePeriod} ${nilo.majorEvents}`;
+    expect(text).not.toContain("~8000-5500 av. J.-C.");
+    expect(text).not.toContain("~11000-5500");
+    expect(text).not.toContain("~4200-4000 av. J.-C.");
   });
 
   // @req REQ-196
-  it("dates the 4.2 ka event about 2200 BCE, after the Eastern Sudanic split", () => {
+  it("attributes the wet period and the drying-out to Sutton in FLG_NILOSAHARIENNE", () => {
     expect(nilo.majorEvents).toContain(
-      "**Vers 2200 av. J.-C. :** Événement dit « de 4,2 ka »"
+      "que J. E. G. Sutton associe à ces langues"
     );
-    expect(nilo.majorEvents).not.toContain("~4200-4000 av. J.-C.");
-    expect(nilo.majorEvents.indexOf("Vers 5000-4000 av. J.-C.")).toBeLessThan(
-      nilo.majorEvents.indexOf("Vers 2200 av. J.-C.")
+    expect(nilo.majorEvents).toContain(
+      "à partir d'environ 5000 ans avant notre ère, l'assèchement du climat"
     );
   });
 
   // @req REQ-196
-  it("ends the humid period about 3000 BCE in FLG_SAHARIEN", () => {
+  it("never restores the humid-period dates corrected in FLG_SAHARIEN", () => {
     const emergence = readFiche("famille_linguistique/FLG_SAHARIEN.json")
       .content.historyAndOrigins.emergencePeriod;
 
-    expect(emergence).toContain(
-      "surtout au début et au milieu de l'Holocène, entre 13 000 et 3000 av. J.-C. environ selon les études"
-    );
     expect(emergence).not.toContain("environ 10 000-5 000 av. J.-C.");
   });
 

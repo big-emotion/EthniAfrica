@@ -35,7 +35,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom ewe désigne une langue gbe du sud-est du Ghana, du sud du Togo et du Bénin, et le peuple qui la parle. Ses locuteurs l'appellent eʋegbe, « la langue ewe ». Au XIXe siècle, des Européens appelaient une partie de ce pays Krepe. Nous n'avons pas trouvé de source savante qui explique l'origine du nom Ewe ; la fiche du peuple Ewe présente ce que nous savons.",
+    "summary": "Le nom ewe désigne une langue gbe du sud-est du Ghana, du sud du Togo et du Bénin, et le peuple qui la parle. Ses locuteurs l'appellent eʋegbe, « la langue ewe ». Un dictionnaire de 1905 relie le nom Eʋe au mot ʋe, « vallée ». D'autres noms existent : Krepe chez des Européens du XIXe siècle, Ayigbe chez des voisins. Nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Eʋegbe",
@@ -86,7 +86,19 @@
         "selfGiven": true,
         "languageOfOrigin": "ewe",
         "namedBy": null,
-        "shortLine": "Le nom de la langue et de son peuple, écrit Ewe dans une grammaire de 1857.",
+        "shortLine": "Le nom de la langue et de son peuple ; un dictionnaire de 1905 le relie à ʋe, « vallée ».",
+        "pronunciation": {
+          "respelling": "è-vè, le v soufflé entre les deux lèvres",
+          "audio": null,
+          "source": {
+            "title": "Word List for Ewe, UCLA Phonetics Lab Archive",
+            "author": "Laboratoire de phonétique de l'université de Californie à Los Angeles",
+            "year": null,
+            "url": "https://archive.phonetics.ucla.edu/Language/EWE/ewe_word-list_0000_01.html",
+            "tier": "referenced",
+            "source_kind": "linguistic_reference"
+          }
+        },
         "periodLabel": "Écrit dès 1857 ; en usage aujourd'hui",
         "accounts": [
           {
@@ -95,9 +107,19 @@
               "to": null,
               "label": "Sens du nom"
             },
-            "statement": "Le nom ewe désigne à la fois la langue et le peuple qui la parle. Nous n'avons pas trouvé de source savante qui explique son origine ; la fiche du peuple Ewe présente son histoire.",
+            "statement": "Le nom ewe désigne à la fois le pays, la langue et le peuple qui la parle, selon le dictionnaire de Diedrich Westermann. La fiche du peuple Ewe présente son histoire.",
             "aspect": "meaning",
             "sources": [
+              {
+                "title": "Wörterbuch der Ewe-Sprache, I : Ewe-Deutsch",
+                "author": "Diedrich Westermann",
+                "year": 1905,
+                "url": "https://archive.org/details/wrterbuchderewe01westgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 549, entrées ʋe et Eʋe",
+                "notes": "Berlin, D. Reimer, 1905. Lu le 3 novembre 2026 sur l'image de la page dans la numérisation d'Internet Archive. L'auteur est un missionnaire et linguiste allemand, à l'époque coloniale."
+              },
               {
                 "title": "Schlüssel zur Ewe-Sprache",
                 "author": "J. B. Schlegel",
@@ -108,7 +130,8 @@
                 "page": "p. V à VII",
                 "notes": "Brême, W. Valett, 1857. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive, préface. Grammaire du dialecte anlo par un missionnaire de Brême."
               }
-            ]
+            ],
+            "era": "colonial"
           },
           {
             "period": {
@@ -130,6 +153,50 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. V à VII",
                 "notes": "Brême, W. Valett, 1857. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive, préface. Grammaire du dialecte anlo par un missionnaire de Brême."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom ewe viendrait de ʋe, « vallée, plaine, creux », selon Diedrich Westermann, qui écrit dans son dictionnaire que Eʋe équivaut à ʋe, « vallée ».",
+            "hypothesisGroup": "origine du nom ewe",
+            "sources": [
+              {
+                "title": "Wörterbuch der Ewe-Sprache, I : Ewe-Deutsch",
+                "author": "Diedrich Westermann",
+                "year": 1905,
+                "url": "https://archive.org/details/wrterbuchderewe01westgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 549, entrées ʋe et Eʋe",
+                "notes": "Berlin, D. Reimer, 1905. Lu le 3 novembre 2026 sur l'image de la page dans la numérisation d'Internet Archive. L'auteur est un missionnaire et linguiste allemand, à l'époque coloniale."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "1983"
+            },
+            "era": "modern",
+            "statement": "Le nom ewe a longtemps servi pour tout l'ensemble des parlers proches qu'on appelle aujourd'hui gbe : ce continuum est « mieux connu comme Ewe depuis les importants travaux de Westermann », écrit le linguiste Hounkpati Capo, qui propose de dire plutôt « la langue Gbe ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le Gbe est une langue unique, Africa, vol. 53, n° 2",
+                "author": "Hounkpati B. C. Capo",
+                "year": 1983,
+                "url": "https://www.cambridge.org/core/journals/africa/article/le-gbe-est-une-langue-unique1/843BB59983847AC354A5D6103087ECF1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 47 à 57",
+                "notes": "Lu le 3 novembre 2026 : seul l'extrait affiché par Cambridge University Press a été lu. L'auteur est un linguiste béninois."
               }
             ]
           }
@@ -167,11 +234,44 @@
             ]
           }
         ]
+      },
+      {
+        "nameText": "Ayigbe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Gen, voisins des Ewe, selon Jakob Spieth",
+        "shortLine": "Un nom donné aux Ewe par leurs voisins gen ; un récit le relie aux champs de haricots.",
+        "periodLabel": "Noté en 1906",
+        "accounts": [
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Rapporté en 1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom ayigbe est celui que les Gen donnent aux Ewe. Il viendrait de ce que les Ewe, pendant leur migration, auraient planté des champs de haricots et attendu la récolte : c'est l'explication populaire que rapporte le missionnaire Jakob Spieth, de la côte jusqu'au nord du pays ewe. Un récit qu'il publie les appelle « les gens des haricots ».",
+            "hypothesisGroup": "origine du nom ayigbe",
+            "sources": [
+              {
+                "title": "Die Ewe-Stämme. Material zur Kunde des Ewe-Volkes in Deutsch-Togo",
+                "author": "Jakob Spieth",
+                "year": 1906,
+                "url": "https://archive.org/details/dieewestmmemat00spie",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "introduction, p. 55* et 56*",
+                "notes": "Berlin, D. Reimer, 1906. Lu le 3 novembre 2026 dans le texte numérisé d'Internet Archive. L'auteur est un missionnaire allemand de la mission de Brême, à l'époque coloniale ; il rapporte des récits recueillis dans le pays ewe."
+              }
+            ]
+          }
+        ]
       }
     ]
   },
   "content": {
-    "vehicularRole": null,
+    "vehicularRole": "regional_lingua_franca",
     "dialects": [
       "Adan",
       "Agu {Ewe}",
@@ -185,15 +285,65 @@
       "Northwestern Gbe",
       "Togo {Ewe}"
     ],
-    "vitalityStatus": null,
+    "vitalityStatus": {
+      "status": "Wider communication",
+      "scale": "EGIDS (Ethnologue)",
+      "asOf": 2025
+    },
+    "originDebated": true,
     "sources": [
       {
         "title": "Glottolog 5.3 — Ewe (ewee1241)",
         "url": "https://glottolog.org/resource/languoid/id/ewee1241",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Classification Glottolog : Atlantic-Congo > Volta-Congo > Kwa Volta-Congo > Gbe > Western Gbe > Eweic. Les dialectes listés sont les sous-languoids que Glottolog rattache à ewee1241, consultés le 2026-09-14."
+        "notes": "Classification Glottolog : Atlantic-Congo > Volta-Congo > Kwa Volta-Congo > Gbe > Western Gbe > Eweic. Les dialectes listés sont les sous-languoids que Glottolog rattache à ewee1241, consultés le 2026-09-14. La notice reprend l'appréciation EGIDS d'Ethnologue 2025, niveau 3, communication élargie, et note que la langue sert au commerce, au tissage, à l'enseignement, à l'agriculture et à la pêche dans le sud-est du Ghana et le sud du Togo."
+      },
+      {
+        "title": "Wörterbuch der Ewe-Sprache, I : Ewe-Deutsch",
+        "url": "https://archive.org/details/wrterbuchderewe01westgoog",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Berlin, D. Reimer, 1905. Lu le 3 novembre 2026 sur l'image de la page dans la numérisation d'Internet Archive. L'auteur est un missionnaire et linguiste allemand, à l'époque coloniale."
+      },
+      {
+        "title": "Die Ewe-Stämme. Material zur Kunde des Ewe-Volkes in Deutsch-Togo",
+        "url": "https://archive.org/details/dieewestmmemat00spie",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Berlin, D. Reimer, 1906. Lu le 3 novembre 2026 dans le texte numérisé d'Internet Archive. L'auteur est un missionnaire allemand de la mission de Brême, à l'époque coloniale ; il rapporte des récits recueillis dans le pays ewe."
+      },
+      {
+        "title": "Word List for Ewe, UCLA Phonetics Lab Archive",
+        "url": "https://archive.phonetics.ucla.edu/Language/EWE/ewe_word-list_0000_01.html",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Lu le 3 novembre 2026. Liste de mots enregistrés, avec leur transcription phonétique : ɛ̀βɛ̀, « Ewe (la langue) », illustre la consonne fricative bilabiale."
+      },
+      {
+        "title": "Le Gbe est une langue unique, Africa, vol. 53, n° 2",
+        "url": "https://www.cambridge.org/core/journals/africa/article/le-gbe-est-une-langue-unique1/843BB59983847AC354A5D6103087ECF1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 : seul l'extrait affiché par Cambridge University Press a été lu. L'auteur est un linguiste béninois."
+      },
+      {
+        "title": "Ghana 2021 Population and Housing Census, General Report, vol. 3C : Background Characteristics",
+        "url": "https://census2021.statsghana.gov.gh/gssmain/fileUpload/reportthemelist/2021%20PHC%20General%20Report%20Vol%203C_Background%20Characteristics_181121.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Lu le 3 novembre 2026. Le tableau 5.5 compte 3 902 009 Ghanéens qui se disent ewe en 2021, soit 12,8 % des Ghanéens. C'est un chiffre d'appartenance à un groupe, pas un nombre de personnes qui parlent la langue."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers.byCountry",
+        "reason": "Nous n'avons pas trouvé de nombre officiel de personnes qui parlent l'ewe. Au Ghana, le recensement de 2021 compte 3 902 009 personnes qui se disent ewe, ce qui ne dit pas combien parlent la langue. Pour le Togo et le Bénin, nous n'avons pas trouvé de chiffre officiel."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Une langue gbe du sud-est du Ghana et du sud du Togo, que ses locuteurs appellent eʋegbe, « la langue ewe ».",
+      "followUp": "Le nom ewe vient-il vraiment du mot qui veut dire « vallée » ?"
+    }
   }
 }

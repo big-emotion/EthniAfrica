@@ -3,9 +3,9 @@
   "nameFr": "Mauritanie",
   "nameEn": "Mauritania",
   "nameOfficial": "République Islamique de Mauritanie (Al-Jumhūriyyah al-Islāmiyyah al-Mūrītāniyyah)",
-  "summary": "La Mauritanie doit son nom à la « Mauretania » des Romains, repris par les Français au début du XXe siècle. Terre de l'empire almoravide, elle est un seuil entre le Maghreb et l'Afrique de l'Ouest. Maures, Haratines, Halpulaar, Soninké et Wolof y font coexister le hassaniya, le pulaar, le soninké et le wolof.",
-  "etymology": "Le nom \"Mauritanie\" viendrait du terme \"Mauretania\" utilisé par les Romains pour désigner la région de l'Afrique du Nord-Ouest. Le nom moderne \"Mauritanie\" a été adopté par les Français lors de la colonisation (1904-1960). Le terme \"Maures\" (Beidhane) désigne les populations arabophones nomades de la région. Les Européens utilisaient \"Pays des Maures\" pour désigner la région.",
-  "nameOriginActor": "Les Français ont adopté le nom \"Mauritanie\" lors de la création du protectorat (1904) puis de la colonie (1920). Le nom fait référence aux \"Maures\" (Beidhane), populations arabophones nomades de la région. Le terme \"Mauretania\" était utilisé par les Romains pour désigner une région différente (actuel Maroc et Algérie occidentale), sans continuité réelle avec la Mauritanie moderne.",
+  "summary": "La Mauritanie porte le nom de la Maurétanie, un royaume de l'Antiquité situé plus au nord, que les sources rattachent aux Maures. L'administration coloniale française applique ce nom au pays en 1899, sous la forme « Mauritanie occidentale » ; on parlait auparavant de Bilād Ṣinqīṭ, « le pays de Chinguetti ». Le pays réunit des Maures, des Haratines et des peuples de la vallée du fleuve Sénégal, Halpulaar, Soninké et Wolof.",
+  "etymology": "Le nom Mauritanie reprend celui de la Maurétanie, un royaume puis deux provinces romaines du nord-ouest de l'Afrique, sur des terres qui appartiennent aujourd'hui au Maroc et à l'Algérie. Trois explications le rattachent aux Maures. Pour B. H. Warmington, les auteurs grecs et romains auraient appelé Maurousia, puis Mauritanie, le pays des Maures qui vivaient entre l'Atlantique et la Moulouya. Pour le Permanent Committee on Geographical Names, le nom de la province romaine serait formé sur le latin Maurus, « Maure ». Pour l'étude sur la Mauritanie de la Bibliothèque du Congrès des États-Unis, le pays tirerait son nom des Maures, la part dominante de sa population. En arabe, sa langue officielle, le pays se nomme Mūrītāniyā.",
+  "nameOriginActor": "Le nom Mauritanie apparaît pour ces terres dans un projet que le ministère français des Colonies remet au gouvernement le 27 décembre 1899, à partir des rapports de Xavier Coppolani, sous la forme « Mauritanie occidentale ». Selon Ahmed Salem Ould Mohamed Baba, c'est Coppolani qui proposa ce nom. L'administration coloniale le garde ensuite : pays mauritaniens du bas Sénégal en 1903, territoire civil de la Mauritanie en 1904, colonie de la Mauritanie à partir de 1921. En 1958, l'Assemblée territoriale proclame la République islamique de Mauritanie.",
   "nameHistory": {
     "summary": "Le nom Mauritanie désigne un pays d'Afrique de l'Ouest, la République islamique de Mauritanie, qui porte le nom d'un royaume de l'Antiquité situé plus au nord ; en arabe, sa langue officielle, il se nomme Mūrītāniyā. Avant lui, ses terres ont porté d'autres noms : Bilād Ṣinqīṭ, puis, à l'époque coloniale, Mauritanie occidentale, pays mauritaniens du bas Sénégal, territoire civil de la Mauritanie et colonie de la Mauritanie. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
     "names": [
@@ -175,7 +175,7 @@
               "to": -33,
               "label": "Avant 33 avant notre ère"
             },
-            "statement": "Le nom Mauritanie a une forme proche, Maurétanie, dans l'Antiquité : c'est celui d'un royaume qui s'étend de l'Atlantique à l'Ampsaga et que son roi, Bocchus le Jeune, lègue à Rome en 33 avant notre ère, selon l'Histoire générale de l'Afrique. C'est la plus ancienne trace de ce nom que le projet connaît. Ce royaume se trouvait au nord de l'actuelle Mauritanie, sur d'autres terres.",
+            "statement": "Le nom Mauritanie a une forme proche, Maurétanie, dans l'Antiquité : c'est celui d'un royaume qui s'étend de l'Atlantique à l'Ampsaga et que son roi, Bocchus le Jeune, lègue à Rome en 33 avant notre ère, selon l'Histoire générale de l'Afrique. C'est la plus ancienne trace de ce nom que nous connaissons. Ce royaume se trouvait au nord de l'actuelle Mauritanie, sur d'autres terres.",
             "birth": true,
             "sources": [
               {
@@ -241,6 +241,28 @@
                 "notes": "Fiche toponymique du gouvernement britannique, édition de septembre 2023. Note 1 : « The country is named after the Roman province of Mauretania, the name of which is derived from the Latin Maurus, meaning Moor »."
               }
             ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "era": "modern",
+            "statement": "Le nom Mauritanie viendrait des Maures, qui forment la part dominante de la population du pays, selon l'étude sur la Mauritanie publiée en 1990 par la Bibliothèque du Congrès des États-Unis.",
+            "hypothesisGroup": "origine du nom Mauritanie",
+            "sources": [
+              {
+                "title": "Mauritania: A Country Study",
+                "author": "Robert E. Handloff (dir.), Federal Research Division, Library of Congress",
+                "year": 1990,
+                "url": "https://archive.org/details/DTIC_ADA220806",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 52",
+                "notes": "Étude de la Federal Research Division, Library of Congress, Washington, deuxième édition, 1990, recherche achevée en décembre 1987 ; lue dans l'exemplaire numérisé de l'Internet Archive. Page 52 : les Maures sont plus nombreux en Mauritanie qu'ailleurs, « which took its name from this dominant segment of its population »."
+              }
+            ]
           }
         ]
       },
@@ -259,7 +281,7 @@
               "label": "4 décembre 1920"
             },
             "era": "colonial",
-            "statement": "Le nom colonie de la Mauritanie figure dans l'article premier du décret du 4 décembre 1920 : le territoire civil de la Mauritanie devient, à compter du 1er janvier 1921, une colonie qui prend ce nom. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays qu'il désigne portait déjà le nom de Mauritanie.",
+            "statement": "Le nom colonie de la Mauritanie figure dans l'article premier du décret du 4 décembre 1920 : le territoire civil de la Mauritanie devient, à compter du 1er janvier 1921, une colonie qui prend ce nom. C'est la plus ancienne trace de ce nom que nous connaissons. Le pays qu'il désigne portait déjà le nom de Mauritanie.",
             "formAsWritten": "colonie de la Mauritanie",
             "birth": true,
             "sources": [
@@ -314,7 +336,7 @@
               "label": "18 octobre 1904"
             },
             "era": "colonial",
-            "statement": "Le nom territoire civil de la Mauritanie apparaît dans le décret du 18 octobre 1904 qui réorganise l'Afrique-Occidentale française, selon la Digithèque de l'université de Perpignan. C'est la plus ancienne trace de ce nom que le projet connaît. Nous n'avons pas lu ce décret nous-mêmes.",
+            "statement": "Le nom territoire civil de la Mauritanie apparaît dans le décret du 18 octobre 1904 qui réorganise l'Afrique-Occidentale française, selon la Digithèque de l'université de Perpignan. C'est la plus ancienne trace de ce nom que nous connaissons. Nous n'avons pas lu ce décret nous-mêmes.",
             "birth": true,
             "sources": [
               {
@@ -345,7 +367,7 @@
               "label": "12 mars 1903"
             },
             "era": "colonial",
-            "statement": "Le nom pays mauritaniens du bas Sénégal est celui sous lequel ces terres deviennent un protectorat français par un décret du 12 mars 1903, selon Ahmed Salem Ould Mohamed Baba. C'est la plus ancienne trace de ce nom que le projet connaît. En 1905, le ministre des Colonies parle de cet « ancien protectorat des pays maures ».",
+            "statement": "Le nom pays mauritaniens du bas Sénégal est celui sous lequel ces terres deviennent un protectorat français par un décret du 12 mars 1903, selon Ahmed Salem Ould Mohamed Baba. C'est la plus ancienne trace de ce nom que nous connaissons. En 1905, le ministre des Colonies parle de cet « ancien protectorat des pays maures ».",
             "birth": true,
             "sources": [
               {
@@ -408,7 +430,7 @@
               "label": "27 décembre 1899"
             },
             "era": "colonial",
-            "statement": "Le nom Mauritanie occidentale figure dans un projet que le ministère français des Colonies remet au gouvernement le 27 décembre 1899, à partir des rapports de Xavier Coppolani, selon Ahmed Salem Ould Mohamed Baba. C'est la plus ancienne trace de ce nom que le projet connaît. Les terres qu'il désigne étaient habitées et nommées bien avant lui.",
+            "statement": "Le nom Mauritanie occidentale figure dans un projet que le ministère français des Colonies remet au gouvernement le 27 décembre 1899, à partir des rapports de Xavier Coppolani, selon Ahmed Salem Ould Mohamed Baba. C'est la plus ancienne trace de ce nom que nous connaissons. Les terres qu'il désigne étaient habitées et nommées bien avant lui.",
             "formAsWritten": "Mauritanie Occidentale",
             "birth": true,
             "actors": [
@@ -447,7 +469,7 @@
               "label": "Nom en usage en 1898"
             },
             "era": "polity",
-            "statement": "Le nom Bilād Ṣinqīṭ, « le pays de Chinguetti », est l'ancien nom de la Mauritanie, écrit Ahmed Salem Ould Mohamed Baba : c'est là qu'arrive Xavier Coppolani en 1898. Nous ne savons pas avec certitude depuis quand ce nom est employé. Nous n'avons pas trouvé non plus de source mauritanienne qui dise que les habitants nommaient ainsi leur pays : que ce soit le nom qu'ils se donnaient n'est pas confirmé.",
+            "statement": "Le nom Bilād Ṣinqīṭ, « le pays de Chinguetti », est l'ancien nom de la Mauritanie, écrit Ahmed Salem Ould Mohamed Baba : c'est dans ce pays qu'arrive Xavier Coppolani en 1898. Chinguetti est une ville du commerce caravanier devenue plus tard un grand centre religieux, selon l'étude de la Bibliothèque du Congrès. Les textes que nous avons lus ne disent pas depuis quand ce nom est employé, ni si les habitants le donnaient eux-mêmes à leur pays.",
             "actors": [
               {
                 "name": "Xavier Coppolani",
@@ -464,6 +486,16 @@
                 "source_kind": "academic",
                 "page": "§ 2",
                 "notes": "Aix-en-Provence, IREMAM, 2019, lu en ligne sur OpenEdition. Coppolani « arriva au Bilād Ṣinqīṭ (ancien nom de la Mauritanie) en 1898 »."
+              },
+              {
+                "title": "Mauritania: A Country Study",
+                "author": "Robert E. Handloff (dir.), Federal Research Division, Library of Congress",
+                "year": 1990,
+                "url": "https://archive.org/details/DTIC_ADA220806",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 7",
+                "notes": "Étude de la Federal Research Division, Library of Congress, Washington, deuxième édition, 1990 ; lue dans l'exemplaire numérisé de l'Internet Archive. Page 7 : Chinguetti est une ville de commerce importante de la confédération sanhadja, « later an important religious center »."
               }
             ]
           }
@@ -474,16 +506,32 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Mauretania (romain)",
-        "Colonie de Mauritanie (1920-1960)"
+        "Bilād Ṣinqīṭ",
+        "Mauritanie occidentale (1899)",
+        "Territoire civil de la Mauritanie (1904-1920)",
+        "Colonie de la Mauritanie (1921-1958)"
       ],
-      "antiquity": "Le territoire actuel de la Mauritanie était peuplé de Berbères Sanhaja (Lemtouna, Massufa, Godala) et de populations négro-africaines (Halpulaar, Wolof, Soninké, Bambara). Pas de nom unifié pour l'ensemble du territoire.",
-      "middleAges": "VIIe-XIIe siècles : Empire Almoravide (fondé par les Sanhaja du Sahara). Termes locaux : \"Bilad Chinguetti\" (pays de Chinguetti), \"trilhad\" (pays des nomades). Développement des tribus Maures (Beidhane), nomades arabophones hassaniya, héritières des Sanhaja berbères.",
-      "precolonial": "Tribus Maures (Beidhane), populations négro-africaines (Halpulaar, Soninké, Wolof, Bambara) dans la vallée du fleuve Sénégal. Stratification sociale maure (Hassane, Zawiya, Znaga, Haratine). Les Européens utilisaient \"Pays des Maures\" (Mauretania dérivé de l'Antiquité, mais sans continuité réelle).",
-      "colonization": "1904 : Protectorat français. 1920 : Colonie de \"Mauritanie\" (AOF, Afrique-Occidentale française). Le nom \"Mauritanie\" est officialisé par les Français.",
-      "contemporary": "1960 : Indépendance, République Islamique de Mauritanie. Le nom \"Mauritanie\" est officiel."
+      "antiquity": "Dans l'Antiquité, le nom Maurétanie désigne un royaume, puis deux provinces romaines, situés plus au nord, entre l'Atlantique et l'actuelle Algérie, et non les terres de l'actuelle Mauritanie. Sur ces terres vivaient alors les Bafour, des chasseurs, des éleveurs et des pêcheurs, à côté de cultivateurs installés dans les vallées, selon l'étude de la Bibliothèque du Congrès.",
+      "middleAges": "Au Moyen Âge, les Lemtouna, les Messoufa et les Djodala, des groupes berbères, forment la confédération sanhadja, dont la capitale est Aoudaghost. Au sud-est, Koumbi Saleh est la capitale de l'empire du Ghana, appelé aussi Wagadu. Chinguetti est alors une ville de commerce, qui deviendra un grand centre religieux.",
+      "precolonial": "Le nom Bilād Ṣinqīṭ, « le pays de Chinguetti », est l'ancien nom de la Mauritanie selon Ahmed Salem Ould Mohamed Baba. Selon l'étude de la Bibliothèque du Congrès, après la guerre de Charr Bouba, qui s'achève en 1674, tous les groupes de langue hassaniya, guerriers arabes, religieux berbères et esclaves, finissent par être appelés Maures. Les Européens traitent avec les émirats de Trarza et de Brakna, au nord du fleuve Sénégal.",
+      "colonization": "Le nom Mauritanie est appliqué à ces terres par l'administration française : « Mauritanie occidentale » dans un projet du 27 décembre 1899 et une décision ministérielle du 30 décembre, « pays mauritaniens du bas Sénégal » pour le protectorat créé en 1903, territoire civil de la Mauritanie en 1904, puis colonie de la Mauritanie à partir du 1er janvier 1921.",
+      "contemporary": "Le nom République islamique de Mauritanie est proclamé en 1958 : le 28 novembre selon la Digithèque de l'université de Perpignan, en octobre selon l'étude de la Bibliothèque du Congrès. Le pays garde le nom de Mauritanie à son indépendance, le 28 novembre 1960. La Constitution de 1991 dit que « la Mauritanie est une République Islamique » ; en arabe, le pays se nomme Mūrītāniyā."
     },
     "kingdoms": [
+      {
+        "name": "Confédération sanhadja",
+        "period": "VIIIe siècle - début du XIe siècle",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 700,
+          "endYear": 1030,
+          "precision": "approximate",
+          "datingNote": "Selon l'étude de la Bibliothèque du Congrès, la confédération est à son apogée du VIIIe à la fin du Xe siècle et se disloque au début du XIe siècle. Les années retenues arrondissent ces siècles."
+        },
+        "dominantPeoples": ["Lemtouna", "Messoufa", "Djodala"],
+        "politicalCenters": ["Aoudaghost"],
+        "historicalRole": "La confédération sanhadja réunit trois groupes berbères, les Lemtouna, les Messoufa et les Djodala. Depuis leur capitale, Aoudaghost, les Lemtouna contrôlent les routes caravanières de l'ouest du Sahara : l'or, l'ivoire et les esclaves partent vers le nord, en échange de sel, de cuivre et de tissus, selon l'étude de la Bibliothèque du Congrès."
+      },
       {
         "name": "Empire du Ghana (Wagadu)",
         "period": "IVe - XIIIe siècles",
@@ -492,53 +540,41 @@
           "startYear": 300,
           "endYear": 1300,
           "precision": "approximate",
-          "datingNote": "Selon Augustin F. C. Holl (GHA IX), la plupart des grandes villes du Sahel, dont Koumbi Saleh, paraissent fondées entre 300 et 600. La fin reprend la borne de la fiche du Mali (XIIIe siècle). La conquête almoravide de 1076, longtemps admise, est mise en doute par Mohammed El Fasi et Ivan Hrbek (HGA III)."
+          "datingNote": "Selon Augustin F. C. Holl, la plupart des grandes villes du Sahel, dont Koumbi Saleh, paraissent fondées entre 300 et 600. La fin est arrondie : selon l'étude de la Bibliothèque du Congrès, le royaume survit environ 125 ans à la prise de Koumbi Saleh, et l'empire du Mali s'étend à la fin du XIIIe siècle sur la partie de la Mauritanie que contrôlait le Ghana."
         },
         "dominantPeoples": ["Soninké"],
         "politicalCenters": ["Koumbi Saleh (capitale)"],
-        "historicalRole": "Empire appelé Ghana ou Wagadu, selon Abdoulaye Bathily (HGA III). Sa capitale, Koumbi Saleh, se trouve dans le sud-est de l'actuelle Mauritanie. Avec d'autres villes du fleuve Sénégal et du Niger, elle relie le monde musulman aux pays de la savane et de la forêt. La fiche du Mali décrit le même empire."
+        "historicalRole": "L'empire du Ghana, appelé aussi Wagadu selon Abdoulaye Bathily, a pour capitale Koumbi Saleh, dans le sud-est de l'actuelle Mauritanie. Avec d'autres villes des fleuves Sénégal et Niger, elle relie le monde musulman aux pays de la savane et de la forêt. Selon l'étude de la Bibliothèque du Congrès, le Ghana s'étend sur tout le sud-est du pays jusqu'au Tagant, et les ancêtres des Soninké en sont les fondateurs. Cette étude date de 1076 la prise de Koumbi Saleh par les Almoravides ; Mohammed El Fasi et Ivan Hrbek écrivent que de plus en plus d'historiens pensent que cette conquête n'a jamais eu lieu."
       },
       {
-        "name": "Empire Almoravide",
+        "name": "Empire des Almoravides",
         "period": "XIe siècle - XIIe siècle",
         "entryType": "polity",
         "timeRange": {
           "startYear": 1039,
           "endYear": 1147,
           "precision": "approximate",
-          "datingNote": "Selon Ivan Hrbek et Jean Devisse (HGA III), le mouvement almoravide commence vers 1039 (430 de l'hégire). La fin, 1147, reprend la borne de la fiche du Maroc. La fiche faisait auparavant commencer l'empire au VIIe siècle, date qui ne correspond à aucun événement almoravide."
+          "datingNote": "Le mouvement almoravide commence vers 1039, selon Ivan Hrbek et Jean Devisse et selon l'étude de la Bibliothèque du Congrès. Cette étude dit seulement que les Almohades détruisent l'empire au cours de leur conquête, entre 1133 et 1163 ; l'année de fin retenue se place dans cet intervalle."
         },
-        "dominantPeoples": ["Berbères Sanhaja (Lemtouna", "Massufa", "Godala)"],
-        "politicalCenters": ["Aoudaghost", "Marrakech (capitale de l'empire)"],
-        "historicalRole": "Empire berbère puissant fondé par les Sanhaja du Sahara, expansion vers le Maghreb et l'Andalousie, islamisation, développement du commerce transsaharien. L'empire Almoravide a joué un rôle majeur dans l'histoire de la région."
+        "dominantPeoples": ["Sanhadja"],
+        "politicalCenters": ["Marrakech (fondée en 1062)"],
+        "historicalRole": "Le mouvement almoravide naît chez les Djodala, quand leur chef Yahya ibn Ibrahim ramène du pèlerinage le théologien Abdallah ibn Yassin. Ses disciples, les murabitun, « les gens du ribat », imposent leur islam aux autres groupes sanhadja, prennent Sijilmasa et Aoudaghost en 1054, conquièrent le Maroc, où ils fondent Marrakech en 1062, puis l'Espagne musulmane vers 1090, selon l'étude de la Bibliothèque du Congrès. L'empire s'étend un temps de l'Espagne au Sénégal."
       },
       {
-        "name": "Tribus Maures (Beidhane)",
-        "period": "Moyen Âge - présent",
+        "name": "Émirats de Trarza, de Brakna et de l'Adrar",
+        "period": "Attestés aux XIXe et XXe siècles",
         "entryType": "polity",
-        "dominantPeoples": ["Maures (Beidhane)", "arabophones hassaniya"],
-        "politicalCenters": ["Tribus nomades", "confédérations tribales"],
-        "historicalRole": "Tribus Maures nomades, société stratifiée (Hassane : nobles guerriers, Zawiya : lettrés religieux, Znaga : tributaires, Haratine : anciennement serviles). Héritiers des Sanhaja berbères, arabisation progressive. Organisation tribale et nomade."
+        "dominantPeoples": ["Maures"],
+        "politicalCenters": ["Trarza", "Brakna", "Adrar"],
+        "historicalRole": "Les émirats de Trarza et de Brakna, au nord du fleuve Sénégal, vendent la gomme arabique aux Européens et exigent d'eux un paiement annuel, appelé la coutume. En 1825, l'émir de Trarza, Muhammad al-Habib, épouse l'héritière du royaume du Oualo, au sud du fleuve. Après l'attaque de Saint-Louis en 1855, les deux émirats sont vaincus par les troupes de Louis Faidherbe et passent sous protectorat français. Pendant la colonisation, les émirs de Trarza, de Brakna et de l'Adrar sont les trois hommes les plus puissants du pays, selon l'étude de la Bibliothèque du Congrès."
       },
       {
-        "name": "Chefferies Halpulaar",
-        "period": "Précolonial - présent",
+        "name": "Royaume du Tekrour (Takrur)",
+        "period": "Ancien royaume de la vallée du fleuve Sénégal",
         "entryType": "polity",
-        "dominantPeoples": ["Halpulaar (Toucouleur et Peul)"],
-        "politicalCenters": [
-          "Chefferies traditionnelles (vallée du fleuve Sénégal)"
-        ],
-        "historicalRole": "Chefferies Halpulaar, agriculture et pastoralisme, islam, résistance à la colonisation française."
-      },
-      {
-        "name": "Chefferies Soninké",
-        "period": "Précolonial - présent",
-        "entryType": "polity",
-        "dominantPeoples": ["Soninké"],
-        "politicalCenters": [
-          "Chefferies traditionnelles (vallée du fleuve Sénégal)"
-        ],
-        "historicalRole": "Chefferies Soninké, commerce et agriculture, héritiers de l'ancien empire du Ghana, islam."
+        "dominantPeoples": ["Toucouleur (Halpulaar)"],
+        "politicalCenters": ["Vallée du fleuve Sénégal"],
+        "historicalRole": "Le royaume du Tekrour, sur le fleuve Sénégal, a été fondé par les Toucouleur, selon l'étude de la Bibliothèque du Congrès. Ils y ont intégré d'autres peuples de la région, dont des Wolof et des Soninké. Nous n'avons pas trouvé de dates pour ce royaume dans cette étude, la seule source lue qui le mentionne."
       },
       {
         "name": "Colonie française de Mauritanie",
@@ -549,108 +585,80 @@
           "endYear": 1960,
           "precision": "year"
         },
-        "dominantPeoples": [
-          "Tous les peuples mauritaniens sous domination coloniale"
-        ],
-        "politicalCenters": [
-          "Saint-Louis (capitale coloniale",
-          "aujourd'hui au Sénégal)",
-          "Nouakchott (fondée en 1958)"
-        ],
-        "historicalRole": "Colonisation française, résistance des peuples autochtones, développement de l'administration coloniale, mouvements nationalistes (XXe siècle)."
+        "dominantPeoples": ["Administration coloniale française"],
+        "politicalCenters": ["Saint-Louis (aujourd'hui au Sénégal)"],
+        "historicalRole": "La France reconnaît en 1904 la Mauritanie comme une entité distincte du Sénégal et en fait un territoire civil, dirigé depuis Saint-Louis. Le décret du 4 décembre 1920 l'intègre officiellement à l'Afrique-Occidentale française. Plus que dans les autres territoires de cette fédération, l'administration s'appuie sur les chefs maures, les marabouts et les émirs, selon l'étude de la Bibliothèque du Congrès."
       }
     ],
     "majorPeoples": [
       {
-        "name": "Maures / Beidhane",
-        "selfAppellation": "Beidhane (بيضان, \"Blancs\"), Hassaniya (حسانية)",
-        "exonyms": [
-          "\"Maures\" (terme utilisé par les Européens)",
-          "\"Arabes mauritaniens\" (terme descriptif)"
-        ],
+        "name": "Maures (Bidan)",
+        "selfAppellation": "Bidan",
+        "exonyms": ["Maures", "Arabo-Berbères"],
         "peopleId": "PPL_ARABES_AFRIQUE",
         "mainRegion": "Nord et centre de la Mauritanie",
-        "languages": [
-          "Hassaniya (arabe mauritanien",
-          "mry",
-          "ISO 639-3)",
-          "arabe standard"
-        ],
+        "languages": ["hassaniya (mey)"],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "Les personnes concernées se nomment Beidhane, « Blancs » en hassaniya. Maures est le nom donné de l'extérieur le plus courant. Elles parlent hassaniya et sont les héritières des Sanhaja berbères. Leur société distingue notamment les Hassane, nobles guerriers, les Zawiya, lettrés religieux, et les Znaga, qui doivent verser un tribut. Le nomadisme tient une place importante dans leur histoire."
+        "appellationRemarks": "Les Maures, appelés aussi Arabo-Berbères dans le rapport des Nations unies de 2010, parlent l'arabe hassaniya. Selon l'étude de la Bibliothèque du Congrès, leurs trois groupes les plus élevés, guerriers, religieux et tributaires, sont appelés Maures « blancs », bidan ; le Permanent Committee on Geographical Names écrit Bidhan. Cette étude écrit aussi que la Mauritanie tire son nom des Maures."
       },
       {
-        "name": "Haratine",
-        "selfAppellation": "Haratine (حراطين)",
-        "exonyms": [
-          "\"Haratine\" (terme local)",
-          "\"Esclaves\" (terme historique",
-          "problématique)",
-          "\"Affranchis\" (terme descriptif)"
-        ],
+        "name": "Haratines",
+        "selfAppellation": "Haratine",
+        "exonyms": ["Maures noirs"],
         "peopleId": "PPL_HARATINE",
         "mainRegion": "Toutes les régions de la Mauritanie",
-        "languages": ["Hassaniya (mry", "ISO 639-3)", "arabe standard"],
+        "languages": ["hassaniya (mey)"],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "\"Haratine\" est l'auto-appellation. Les Haratine sont des populations arabo-berbères anciennement serviles. L'esclavage a été officiellement aboli en Mauritanie en 1981, mais des pratiques persistent. Le terme \"Esclaves\" est historique et problématique, il doit être contextualisé. Les Haratine parlent hassaniya et sont culturellement proches des Maures, mais forment un groupe social distinct avec une histoire de servitude."
+        "appellationRemarks": "Le nom Haratine viendrait d'un mot arabe qui signifie « liberté », selon le rapport de Gulnara Shahinian pour les Nations unies ; au singulier, on dit hartani, selon l'étude de la Bibliothèque du Congrès. Les Haratines, appelés aussi Maures noirs, parlent le hassaniya et partagent la culture maure. Leurs ancêtres ont pour la plupart été intégrés à la société maure comme esclaves, et le rapport de 2010 constate que beaucoup restent liés à leurs anciens maîtres et subissent des discriminations."
       },
       {
-        "name": "Halpulaar",
-        "selfAppellation": "Halpulaar (Toucouleur et Peul)",
-        "exonyms": [
-          "\"Toucouleur\" (terme français)",
-          "\"Peul\" (terme français)",
-          "\"Fulani\" (terme anglais)",
-          "\"Pulaar\" (terme local)"
-        ],
+        "name": "Halpulaar (Toucouleur et Peuls)",
+        "selfAppellation": "Halpulaar",
+        "exonyms": ["Toucouleur", "Peul", "Fulani"],
         "peopleId": "PPL_HALPULAAR",
         "mainRegion": "Sud de la Mauritanie (vallée du fleuve Sénégal)",
-        "languages": ["Pulaar (fuc", "ISO 639-3)", "français"],
+        "languages": ["pulaar (fuc)"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Les personnes concernées se nomment Halpulaar, « ceux qui parlent pulaar ». Toucouleur et Peul sont des noms français donnés de l'extérieur ; Fulani est un nom anglais. Halpulaar réunit les Toucouleur et les Peul qui parlent pulaar. Les populations décrites ici pratiquent l'agriculture et l'élevage et sont musulmanes."
+        "appellationRemarks": "Selon l'étude de la Bibliothèque du Congrès, les Toucouleur, appelés aussi Halpularen, vivent surtout le long du fleuve Sénégal et sont pour la plupart des cultivateurs. Les Peuls de Mauritanie, qui se nomment Pullo au singulier et Fulbe au pluriel, sont surtout des éleveurs ; la même étude note qu'on les appelle Peul au Sénégal et Fulani au Nigeria. Les uns et les autres parlent le pulaar."
       },
       {
         "name": "Soninké",
         "selfAppellation": "Soninké",
-        "exonyms": [
-          "\"Soninké\" (terme utilisé par les Européens)",
-          "\"Sarakollé\" (terme français",
-          "moins utilisé)"
-        ],
+        "exonyms": ["Sarakolé"],
         "peopleId": "PPL_SONINKE",
         "mainRegion": "Sud de la Mauritanie (vallée du fleuve Sénégal)",
-        "languages": ["Soninké (snk", "ISO 639-3)", "français"],
+        "languages": ["soninké (snk)"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Soninké\" est l'auto-appellation. \"Sarakollé\" est un terme français moins utilisé. Les Soninké sont héritiers de l'ancien empire du Ghana. Commerce et agriculture, islam."
+        "appellationRemarks": "Les Soninké, appelés aussi Sarakolé, vivent sur les rives du fleuve Sénégal, dans le sud du pays, où ils cultivent la terre et font du commerce. Selon l'étude de la Bibliothèque du Congrès, leurs ancêtres ont fondé l'ancien royaume du Ghana, et certains Soninké de Mauritanie parlent l'azayr, un parler soninké très marqué par le berbère."
       },
       {
         "name": "Wolof",
         "selfAppellation": "Wolof",
-        "exonyms": ["\"Wolof\" (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_WOLOF",
         "mainRegion": "Sud-ouest de la Mauritanie (côte, vallée du fleuve Sénégal)",
-        "languages": ["Wolof (wol", "ISO 639-3)", "français"],
-        "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "\"Wolof\" est l'auto-appellation. Pas de terme péjoratif connu. Commerce côtier, islam."
+        "languages": ["wolof (wol)"],
+        "languageFamily": "FLG_ATLANTIQUE",
+        "appellationRemarks": "Les Wolof de Mauritanie sont peu nombreux : la plupart des Wolof vivent au Sénégal. Presque tous sont musulmans et vivent de l'agriculture et du commerce, selon l'étude de la Bibliothèque du Congrès. Le nom de leur langue s'écrit aussi ouolof."
       },
       {
         "name": "Bambara",
         "selfAppellation": "Bambara",
-        "exonyms": ["\"Bambara\" (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_BAMBARA",
         "mainRegion": "Sud de la Mauritanie",
-        "languages": ["Bambara (bam", "ISO 639-3)", "français"],
+        "languages": ["bambara (bam)"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Bambara\" est l'auto-appellation. Pas de terme péjoratif connu. Agriculture, islam."
+        "appellationRemarks": "Les Bambara sont peu nombreux en Mauritanie ; la plupart vivent au Mali. Selon l'étude de la Bibliothèque du Congrès, ils descendraient des fondateurs du royaume du Mali, au XIIIe siècle, et sont pour la plupart des cultivateurs."
       },
       {
         "name": "Autres groupes",
         "selfAppellation": "Variées selon les groupes",
-        "exonyms": ["Variées selon les groupes"],
+        "exonyms": [],
         "peopleId": null,
         "mainRegion": "Diverses régions de la Mauritanie",
-        "languages": ["Langues diverses", "français"],
-        "appellationRemarks": "Chaque groupe a sa propre auto-appellation. Pas de terme péjoratif connu."
+        "languages": ["imraguen", "zenaga (zen)"],
+        "appellationRemarks": "D'autres peuples d'Afrique de l'Ouest vivent en petits groupes dans l'extrême sud du pays, selon l'étude de la Bibliothèque du Congrès. Sur la côte atlantique, les Imraguen parlent une langue proche du hassaniya, selon le Permanent Committee on Geographical Names, qui cite aussi le zenaga ; chacune de ces deux langues compte moins de mille locuteurs dans le pays."
       }
     ],
     "culture": {
@@ -661,10 +669,12 @@
           "isPrimary": true
         },
         {
-          "name": "hassaniya"
+          "name": "hassaniya",
+          "isoCode": "mey"
         },
         {
-          "name": "pulaar"
+          "name": "pulaar",
+          "isoCode": "fuc"
         },
         {
           "name": "soninké",
@@ -683,19 +693,19 @@
           "isoCode": "fra"
         }
       ],
-      "culturalTraditions": "Diversité culturelle importante reflétant la mosaïque ethnique de la Mauritanie. Traditions maures (Beidhane) : poésie hassaniya, musique maure, traditions nomades, architecture saharienne (tentes, ksour), artisanat (bijoux, tissage). Traditions halpulaar (Toucouleur et Peul) : poésie pulaar, traditions islamiques, agriculture et pastoralisme. Traditions soninké : commerce, agriculture, héritage de l'empire du Ghana. Traditions wolof : commerce côtier, culture wolof. Musique et danse traditionnelles variées. Cérémonies de passage, rites d'initiation, fêtes traditionnelles. La poésie hassaniya est un élément majeur de la culture maure.",
-      "dominantReligions": "Islam (sunnite majoritaire, école malékite), toutes les communautés sont musulmanes",
-      "lifestyles": "Nomadisme traditionnel (Maures, Beidhane), sédentarisation croissante. Agriculture (vallée du fleuve Sénégal, Halpulaar, Soninké, Wolof, Bambara). Pastoralisme (Maures, Halpulaar). Commerce transsaharien (Maures). Pêche (côte atlantique). Urbanisation modérée (Nouakchott, Nouadhibou). Économie basée sur l'élevage (Maures), l'agriculture (vallée du fleuve Sénégal), la pêche, et l'exploitation minière (fer, or). La Mauritanie est un pays saharien avec une grande partie du territoire couverte par le désert.",
-      "socialOrganization": "Société maure stratifiée (Hassane : nobles guerriers, Zawiya : lettrés religieux, Znaga : tributaires, Haratine : anciennement serviles). Organisation tribale et nomade (Maures). Structures familiales traditionnelles (Halpulaar, Soninké, Wolof, Bambara). Structures étatiques modernes (république islamique). La stratification sociale maure (Hassane, Zawiya, Znaga, Haratine) est un élément important de l'organisation sociale traditionnelle.",
-      "regionalRelations": "Relations avec le Maghreb (Maroc, Algérie), relations avec l'Afrique de l'Ouest (Mali, Sénégal, Guinée), relations avec l'Afrique subsaharienne. Intégration dans l'Union du Maghreb arabe (UMA). Relations commerciales transsahariennes. La Mauritanie est un pays de transition entre l'Afrique du Nord et l'Afrique subsaharienne."
+      "culturalTraditions": "La société maure accorde une grande place à la poésie et à la musique, selon l'étude de la Bibliothèque du Congrès. Les poètes et musiciens, appelés ighyuwa en Mauritanie et griots ailleurs en Afrique de l'Ouest, forment un groupe à part, et des familles nobles les prennent sous leur protection. Les artisans maures travaillent le fer, les bijoux, le bois et le cuir, font des poteries et tissent. Chez les Peuls, la langue fulfulde porte une riche littérature orale. Chez les Toucouleur, des classes d'âge, les fedde, participent à des rites qui renforcent la solidarité et l'amitié entre familles.",
+      "dominantReligions": "Presque tous les Mauritaniens sont musulmans sunnites et suivent le rite malékite, l'une des quatre écoles de droit sunnites, selon l'étude de la Bibliothèque du Congrès. La Constitution de 1991 dit que « l'Islam est la religion du peuple et de l'Etat ». Dans les années 1980, deux confréries, la Qadiriya et la Tijaniya, réunissent presque tous les membres de confréries du pays ; les Toucouleur appartiennent à la Tijaniya.",
+      "lifestyles": "Le recensement de 1976 comptait plus de 1,4 million d'habitants, dont environ 513 000 nomades, selon l'étude de la Bibliothèque du Congrès. Celui de 2023 en compte 4 927 532, dont 19 523 nomades, et 29,4 % de la population vit à Nouakchott, selon l'Agence nationale de la statistique. À la fin des années 1980, la plupart des Maures sont nomades ou semi-nomades, et les Peuls sont surtout des éleveurs. Les Toucouleur, les Soninké, les Wolof et les Bambara cultivent surtout la terre dans la vallée du fleuve Sénégal. Les pêcheurs imraguen vivent près de Nouadhibou. Nous ne donnons pas la part de chaque peuple dans la population : les premiers résultats du recensement de 2023 que nous avons lus donnent les habitants par wilaya, moughataa et commune, pas par peuple ni par langue. Le seul chiffre que nous avons trouvé est une estimation du gouvernement de 1978, citée par l'étude de la Bibliothèque du Congrès : 70 % d'ascendance arabe ou berbère et 30 % d'ascendance africaine noire, un chiffre que les Noirs de Mauritanie rejetaient.",
+      "socialOrganization": "La société maure distingue, selon l'étude de la Bibliothèque du Congrès, les guerriers (hassani) et les religieux (zawaya), qui forment sa noblesse, puis les tributaires (zenaga), descendants de Berbères soumis par les Arabes. Ces trois groupes sont appelés Maures « blancs », bidan. Les artisans et les poètes-musiciens forment des groupes fermés, et au bas de l'échelle se trouvent les Maures noirs, autrefois de condition servile. Les peuples de la vallée du fleuve ont aussi une hiérarchie : les nobles et les hommes libres, puis des groupes de métier qui se marient entre eux, comme les forgerons et les musiciens, et enfin les descendants d'esclaves, selon le rapport de Gulnara Shahinian pour les Nations unies. Dans la plupart de ces sociétés, la filiation passe par le père.",
+      "regionalRelations": "Le Permanent Committee on Geographical Names décrit la Mauritanie comme un pont entre le Maghreb arabe et l'Afrique subsaharienne ; le mot Maghreb vient de l'arabe et signifie « l'ouest ». La Mauritanie entre dans la Ligue arabe en 1974. Avec le Mali et le Sénégal, elle coopère au sein de l'Organisation pour la mise en valeur du fleuve Sénégal, créée en 1972. À la fin des années 1980, elle appartient aussi à l'Organisation de l'unité africaine et à la Communauté économique des États de l'Afrique de l'Ouest, selon l'étude de la Bibliothèque du Congrès. Presque tous les peuples de la vallée du fleuve ont de la famille au Sénégal ou au Mali."
     },
     "historicalFacts": {
-      "ancientPeriods": "Présence berbère Sanhaja (Lemtouna, Massufa, Godala) et populations négro-africaines (Halpulaar, Wolof, Soninké, Bambara). Pas de structures politiques unifiées.",
-      "middleAges": "VIIe-XIIe siècles : Empire Almoravide (fondé par les Sanhaja du Sahara), expansion vers le Maghreb et l'Andalousie, islamisation. Développement des tribus Maures (Beidhane), nomades arabophones hassaniya, héritières des Sanhaja berbères. Arabisation progressive. Stratification sociale maure (Hassane, Zawiya, Znaga, Haratine).",
-      "precolonial": "Consolidation des tribus Maures (Beidhane), organisation tribale et nomade. Populations négro-africaines (Halpulaar, Soninké, Wolof, Bambara) dans la vallée du fleuve Sénégal. Commerce transsaharien. Développement des traditions culturelles.",
-      "colonization": "1904 : Protectorat français. 1920 : Colonie de \"Mauritanie\" (AOF). Résistance des peuples autochtones (notamment résistance des Maures). Développement de l'administration coloniale. XXe siècle : Développement du mouvement indépendantiste.",
-      "independenceStruggle": "1950s-1960 : Mouvement pour l'indépendance, Mokhtar Ould Daddah, indépendance (28 novembre 1960), proclamation de la République Islamique de Mauritanie.",
-      "postIndependence": "République Islamique de Mauritanie (1960), présidence de Mokhtar Ould Daddah (1960-1978), coups d'État (1978, 1984, 2005, 2008), abolition officielle de l'esclavage (1981, mais pratiques persistantes), conflit du Sahara occidental (1975-1979), tensions ethniques (1989-1991, expulsion de Négro-Mauritaniens), transition démocratique (depuis 2007), présidence de Mohamed Ould Abdel Aziz (2008-2019), Mohamed Ould Ghazouani (depuis 2019). Défis : esclavage (pratiques persistantes malgré l'abolition officielle), tensions ethniques, développement économique, sécurité (terrorisme)."
+      "ancientPeriods": "Sur les terres de l'actuelle Mauritanie vivaient les Bafour, des chasseurs, des éleveurs et des pêcheurs, à côté de cultivateurs installés dans les vallées. Selon l'étude de la Bibliothèque du Congrès, les pêcheurs imraguen pourraient descendre des Bafour, et ces cultivateurs pourraient être des ancêtres des Toucouleur et des Wolof. Le Sahara devient peu à peu plus sec, et ces peuples se déplacent vers le sud. Aux IIIe et IVe siècles, des groupes berbères arrivent du nord ; le dromadaire, qui vient d'apparaître au Sahara, leur permet de longs déplacements.",
+      "middleAges": "Au VIIIe siècle, les Lemtouna, un groupe berbère, arrivent dans le pays. Avec les Messoufa et les Djodala, ils forment la confédération sanhadja, qui contrôle les routes caravanières de l'ouest du Sahara. Au sud-est, l'empire du Ghana a pour capitale Koumbi Saleh. Vers 1039, un chef djodala, Yahya ibn Ibrahim, revient du pèlerinage avec le théologien Abdallah ibn Yassin, dont les disciples fondent le mouvement almoravide. Selon l'étude de la Bibliothèque du Congrès, les Almoravides prennent Koumbi Saleh en 1076 ; Mohammed El Fasi et Ivan Hrbek écrivent que cette conquête est de plus en plus mise en doute. À la fin du XIIIe siècle, l'empire du Mali s'étend sur la partie du pays que tenait le Ghana, puis l'empire songhaï à la fin du XVe siècle.",
+      "precolonial": "Après la fin de l'empire almoravide, des groupes arabes venus du nord s'installent dans le pays. L'un d'eux, les Bani Hassan, domine tout le pays à la fin du XVIIe siècle, selon l'étude de la Bibliothèque du Congrès. Les groupes berbères tentent de se libérer pendant la guerre de Charr Bouba, de 1644 à 1674, menée par l'imam Nasir ad-Din ; vaincus, ils deviennent les vassaux des guerriers arabes et se tournent vers la religion. Sur la côte, les Portugais ouvrent un comptoir à Arguin en 1455. Plus tard, les Européens achètent la gomme arabique aux émirats de Trarza et de Brakna, qui exigent en échange un paiement annuel, la coutume.",
+      "colonization": "Au milieu du XIXe siècle, Louis Faidherbe, gouverneur du Sénégal, soumet les émirats de Trarza et de Brakna, qui passent sous protectorat français. En 1901, la France adopte le plan de « pénétration pacifique » de Xavier Coppolani ; en 1904, elle reconnaît la Mauritanie comme une entité distincte du Sénégal. Coppolani est tué à Tidjikdja en mai 1905. Le cheikh Ma al-Aynin, soutenu par le Maroc, appelle alors à la guerre sainte contre les Français ; le colonel Gouraud prend Atar en 1908, et la résistance de l'Adrar et du sud prend fin en 1912. Le décret du 4 décembre 1920 intègre la Mauritanie à l'Afrique-Occidentale française, selon l'étude de la Bibliothèque du Congrès. L'esclavage y est aboli une première fois en 1905 par un décret colonial, rappelle la Rapporteuse spéciale des Nations unies sur les formes contemporaines d'esclavage.",
+      "independenceStruggle": "À partir de 1946, la Mauritanie élit un député à l'Assemblée nationale française. Le premier, Horma Ould Babana, est le chef de l'Entente mauritanienne, le premier parti du territoire. Moktar Ould Daddah appelle ensuite à l'unité : en mai 1958, au congrès d'Aleg, plusieurs partis fusionnent dans le Parti du regroupement mauritanien, dont il devient le secrétaire général. La République islamique de Mauritanie est proclamée en 1958, puis l'Assemblée constituante adopte une constitution en mars 1959. Le pays proclame son indépendance le 28 novembre 1960, selon l'étude de la Bibliothèque du Congrès.",
+      "postIndependence": "Moktar Ould Daddah dirige le pays de l'indépendance à 1978 ; son parti, le Parti du peuple mauritanien, devient le seul parti autorisé le 25 décembre 1961. La Mauritanie entre dans la Ligue arabe en 1974. En novembre 1975, les accords de Madrid lui donnent le tiers sud du Sahara occidental ; la guerre contre le Front Polisario épuise le pays, et l'armée renverse Daddah le 10 juillet 1978. Le 5 août 1979, la Mauritanie signe la paix avec le Polisario et renonce au Sahara occidental, selon l'étude de la Bibliothèque du Congrès. L'abolition de l'esclavage, annoncée en 1980 par le président Haidalla, devient l'ordonnance du 9 novembre 1981, et la loi du 3 septembre 2007 en fait une infraction pénale, selon le rapport de Gulnara Shahinian pour les Nations unies. Ce rapport parle aussi d'un massacre orchestré par l'État entre 1989 et 1991 et de l'expulsion vers le Mali et le Sénégal de milliers de citoyens négro-africains. D'autres coups d'État ont lieu en 1984, 2005 et 2008, et une tentative échoue en 2003, selon le Permanent Committee on Geographical Names. Celui du 6 août 2008 renverse le président Sidi Mohamed Ould Cheikh Abdallahi, selon ONU Info. Mohamed Ould Abdel Aziz est élu président en 2009 et réélu en 2014. Mohamed Ould Ghazouani est élu le 22 juin 2019 avec 52 % des voix et réélu le 29 juin 2024 avec 56,1 % des voix, selon le CIDOB."
     },
     "sources": [
       {
@@ -783,6 +793,108 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "UNESCO, volume dirigé par M. El Fasi et I. Hrbek, chapitre de Mohammed El Fasi et Ivan Hrbek (1990), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 100. « On a de plus en plus tendance à estimer que cette conquête [almoravide du Ghana, en 469/1076] n'a jamais eu lieu »."
+      },
+      {
+        "title": "Mauritania: A Country Study",
+        "author": "Robert E. Handloff (dir.), Federal Research Division, Library of Congress",
+        "year": 1990,
+        "url": "https://archive.org/details/DTIC_ADA220806",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude de la Federal Research Division, Library of Congress, Washington, deuxième édition, 1990, recherche achevée en décembre 1987 ; lue dans l'exemplaire numérisé de l'Internet Archive. Passages lus : p. 6, les Bafour, chasseurs, éleveurs et pêcheurs, dont les pêcheurs imraguen pourraient descendre, vivent à côté de cultivateurs qui seraient peut-être des ancêtres des Toucouleur et des Wolof ; des groupes berbères arrivent aux IIIe et IVe siècles avec le chameau ; les Lemtouna, les Messoufa et les Djodala forment la confédération sanhadja, capitale Aoudaghost, à son apogée du VIIIe à la fin du Xe siècle. P. 7 : la route caravanière va de Sijilmasa à Koumbi Saleh, capitale du Ghana ; Chinguetti devient « an important religious center ». P. 7-8 : vers 1039, Yahya ibn Ibrahim ramène Abdallah ibn Yassin ; les murabitun, « men of the ribat », prennent Sijilmasa et Aoudaghost en 1054, fondent Marrakech en 1062, dominent l'Espagne musulmane vers 1090 et prennent Koumbi Saleh en 1076 ; les Almohades (1133-1163) détruisent l'empire. P. 9 : le Ghana s'étend sur le sud-est du pays jusqu'au Tagant ; il survit 125 ans à la prise de Koumbi Saleh ; le Mali puis le Songhaï s'étendent sur la Mauritanie. P. 11 : les Bani Hassan dominent tout le pays à la fin du XVIIe siècle ; la guerre de Sharr Bubba (1644-1674), menée par Nasir ad Din, échoue ; « All of these groups, whose language was Hassaniya Arabic, became known as Maures » ; comptoir portugais d'Arguin en 1455. P. 12-13 : la coutume payée aux émirs ; l'émir de Trarza Muhammad al Habib en 1825 ; Faidherbe soumet Trarza et Brakna après l'attaque de Saint-Louis en 1855. P. 14-16 : plan de Coppolani en 1901, Coppolani tué à Tidjikdja en mai 1905, Ma al Aynin, Gouraud à Atar en 1908, fin de la résistance en 1912 ; en 1904 la Mauritanie est reconnue comme une entité distincte du Sénégal ; décret du 4 décembre 1920. P. 18 : les émirs de Trarza, de Brakna et de l'Adrar, « the three most powerful men in the colony ». P. 20-23 : Horma Ould Babana, congrès d'Aleg en mai 1958, proclamation de la République islamique en octobre 1958, constitution de mars 1959, indépendance le 28 novembre 1960. P. 24-37 : parti unique le 25 décembre 1961, Ligue arabe en 1974, accords de Madrid en novembre 1975, coup d'État du 10 juillet 1978, paix avec le Polisario le 5 août 1979, abolition de l'esclavage annoncée en 1980, coup d'État de Taya le 12 décembre 1984. P. 48 : le recensement de décembre 1976 compte plus de 1,4 million d'habitants, dont environ 513 000 nomades. P. 51 : en 1978, le gouvernement estime la population à 70 % d'ascendance arabe ou berbère et à 30 % d'ascendance africaine noire, chiffres rejetés par les Noirs. P. 52-55 : hassani, zawaya, zenaga, appelés « white » Maures (bidan) ; artisans ; ighyuwa ; poésie et musique ; « harratin (sing., hartani) ». P. 56-58 : Toucouleur ou Halpularen, fondateurs du Takrur ; Peuls « Pullo » et « Fulbe » ; Soninké ou Sarakolé et azayr ; Wolof ; Bambara ; rite malékite. P. 63 : Qadiriya et Tijaniya. P. 144 et 152 : pont entre le Maghreb et l'Afrique subsaharienne ; OMVS créée en 1972 ; OUA, CEDEAO et Ligue arabe."
+      },
+      {
+        "title": "Recensement général de la population et de l'habitat (RGPH 2023) : population des wilayas, moughataa et communes",
+        "author": "Agence nationale de la statistique et de l'analyse démographique et économique (ANSADE), Mauritanie",
+        "year": 2024,
+        "url": "https://centre-rachad.org/wp-content/uploads/2024/10/Depliant-RGPH5_vf.pdf",
+        "tier": "referenced",
+        "source_kind": "official_statistics",
+        "notes": "Dépliant de l'ANSADE, ministère de l'Économie et des Finances, en français et en arabe, lu dans une copie en ligne. Le cinquième recensement a eu lieu du 25 décembre 2023 au 8 janvier 2024 : « Au total, 4.927.532 personnes résidentes ont été dénombrées » ; Nouakchott « abrite 29,4% de la population totale » ; « La population nomade s'élève à 19.523 personnes ». Les tableaux donnent la population par wilaya, moughataa et commune, sans répartition par peuple ni par langue."
+      },
+      {
+        "title": "Constitution de la République islamique de Mauritanie du 20 juillet 1991, texte consolidé",
+        "author": "Premier ministère, Secrétariat général du Gouvernement (Mauritanie)",
+        "year": 2021,
+        "url": "https://www.primature.gov.mr/sites/default/files/2021-05/Constitution_consolidefr.pdf",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Texte publié par la Direction générale de la législation, de la traduction et de l'édition du Journal officiel, à jour des révisions de 2006, 2012 et 2017. Article premier : « La Mauritanie est une République Islamique, indivisible, démocratique et sociale. » Article 5 : « L'Islam est la religion du peuple et de l'Etat. » Article 6 : « Les langues nationales sont : l'Arabe, le Poular, le Soninké et le Wolof. La langue officielle est l'Arabe. » Article 7 : « La capitale de l'Etat est Nouakchott. »"
+      },
+      {
+        "title": "Rapport de la Rapporteuse spéciale sur les formes contemporaines d'esclavage, y compris leurs causes et leurs conséquences : mission en Mauritanie (A/HRC/15/20/Add.2)",
+        "author": "Gulnara Shahinian, Conseil des droits de l'homme des Nations unies",
+        "year": 2010,
+        "url": "https://digitallibrary.un.org/record/689780/files/A_HRC_15_20_Add.2-FR.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Document de l'Assemblée générale des Nations unies daté du 24 août 2010, version française, après une mission du 24 octobre au 4 novembre 2009. Paragraphe 5 : les Arabo-Berbères « communément appelés Maures » et les Haratines, « appelés également Maures noirs », qui partagent la langue et la culture maures. Paragraphes 9 et 12 : hiérarchie des communautés négro-africaines ; les Haratines, « terme qui vient du mot arabe signifiant liberté ». Paragraphes 22 à 24 : abolition par un décret colonial en 1905, annonce du président Haidallah en 1980, ordonnance no 081-234 du 9 novembre 1981, loi du 3 septembre 2007. Paragraphe 56 : « entre 1989 et 1991 au massacre, orchestré par l'État, et à l'expulsion vers le Mali et le Sénégal, de milliers de citoyens négro-africains »."
+      },
+      {
+        "title": "Security Council deplores recent government overthrow in Mauritania",
+        "author": "ONU Info (UN News)",
+        "year": 2008,
+        "url": "https://news.un.org/en/story/2008/08/269952",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Article d'ONU Info du 19 août 2008, en anglais. Le Conseil de sécurité « condemned the recent overthrow of the Mauritanian Government by the country's military », renversé le 6 août, et demande « the immediate release of President Sidi Mohamed Ould Cheikh Abdallahi »."
+      },
+      {
+        "title": "Mohammed Ould Ghazouani",
+        "author": "Roberto Ortiz de Zárate Arce, CIDOB",
+        "year": 2024,
+        "url": "https://www.cidob.org/lider-politico/mohammed-ould-ghazouani",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice des biographies de dirigeants politiques du CIDOB (Barcelone), en espagnol, mise à jour après l'élection de 2024. Elle date du 3 août 2005 le coup d'État contre Maaouiya Ould Taya et du 6 août 2008 celui contre le président Abdallahi ; Mohamed Ould Abdel Aziz est élu en 2009 et obtient en juin 2014 un second mandat ; Ghazouani est « presidente electo de Mauritania con el 52% de los votos » après le scrutin du 22 juin 2019, prend ses fonctions le 1er août 2019 et est déclaré vainqueur des élections du 29 juin 2024 « con el 56,1% de los votos »."
+      },
+      {
+        "title": "Toponymic Factfile: Mauritania",
+        "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+        "year": 2023,
+        "url": "https://assets.publishing.service.gov.uk/media/6504627b6771b90014fdab69/Mauritania_Toponymic_Factfile-Sept23.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Fiche toponymique du gouvernement britannique, édition de septembre 2023. Page 1 : la Mauritanie « bridges the Arab Maghreb and Sub-Saharan Africa » ; le mot Maghreb vient de l'arabe et signifie « ouest ». Page 2 : coups d'État « In 1978, 1984, 2003 (unsuccessful), 2005 & 2008 » ; la Constitution de 1991 fait de l'arabe la langue officielle ; l'imraguen et le zenaga comptent chacun moins de 1 000 locuteurs dans le pays. Page 3 : les Bidhan et les Haratin parlent le ḥassānīyah."
+      },
+      {
+        "title": "Le texte inédit de la première constitution mauritanienne écrite en ḥassāniyya en 1959. Historique et analyse des traits linguistiques du manuscrit, dans Studies on Arabic Dialectology and Sociolinguistics",
+        "author": "Ahmed Salem Ould Mohamed Baba",
+        "year": 2019,
+        "url": "https://books.openedition.org/iremam/4580",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Aix-en-Provence, IREMAM, 2019, lu en ligne sur OpenEdition. Coppolani « arriva au Bilād Ṣinqīṭ (ancien nom de la Mauritanie) en 1898 » ; le 27 décembre 1899, le ministère des Colonies remet un projet de création d'une région appelée « Mauritanie Occidentale », nom proposé par Coppolani ; une décision ministérielle du 30 décembre 1899 organise ces régions sous ce nom ; un décret du 12 mars 1903 crée le protectorat des « pays mauritaniens du bas Sénégal »."
+      },
+      {
+        "title": "Glottolog 5.3 — Hassaniyya (hass1238)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "url": "https://glottolog.org/resource/languoid/id/hass1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, notice lue en ligne : Hassaniyya, code ISO 639-3 mey, langue arabe parlée en Algérie, au Sahara occidental, au Maroc, au Mali, en Mauritanie, au Niger et au Sénégal."
+      },
+      {
+        "title": "Glottolog 5.3 — Pulaar (pula1263)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "url": "https://glottolog.org/resource/languoid/id/pula1263",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, notice lue en ligne : Pulaar, code ISO 639-3 fuc, langue peule parlée en Gambie, en Guinée, en Guinée-Bissau, au Mali, en Mauritanie et au Sénégal."
+      },
+      {
+        "title": "Glottolog 5.3 — Soninke (soni1259)",
+        "url": "https://glottolog.org/resource/languoid/id/soni1259",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice lue en ligne : Soninke, code ISO 639-3 snk ; la Mauritanie figure parmi les pays où la langue est parlée."
+      },
+      {
+        "title": "Glottolog 5.3 — Wolof (nucl1347)",
+        "url": "https://glottolog.org/resource/languoid/id/nucl1347",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice lue en ligne : Wolof, code ISO 639-3 wol ; la Mauritanie figure parmi les pays où la langue est parlée."
       }
     ],
     "demographics": {
@@ -791,56 +903,49 @@
       "source": "UNFPA – World Population Dashboard",
       "peoples": [
         {
-          "name": "Maures / Beidhane",
-          "percentageInCountry": 40,
-          "percentageInAfrica": 1.1,
+          "name": "Maures (Bidan)",
           "peopleId": "PPL_ARABES_AFRIQUE",
           "region": "Nord et centre de la Mauritanie",
-          "languageFamily": "FLG_SEMITIQUE"
+          "languageFamily": "FLG_SEMITIQUE",
+          "mainLanguageCode": "mey"
         },
         {
-          "name": "Haratine",
-          "percentageInCountry": 30,
+          "name": "Haratines",
           "peopleId": "PPL_HARATINE",
           "region": "Toutes les régions de la Mauritanie",
-          "languageFamily": "FLG_SEMITIQUE"
+          "languageFamily": "FLG_SEMITIQUE",
+          "mainLanguageCode": "mey"
         },
         {
-          "name": "Halpulaar",
-          "population": 570000,
-          "percentageInCountry": 12,
+          "name": "Halpulaar (Toucouleur et Peuls)",
           "peopleId": "PPL_HALPULAAR",
           "region": "Sud de la Mauritanie (vallée du fleuve Sénégal)",
-          "languageFamily": "FLG_NIGERCONGO"
+          "languageFamily": "FLG_NIGERCONGO",
+          "mainLanguageCode": "fuc"
         },
         {
           "name": "Soninké",
-          "population": 475000,
-          "percentageInCountry": 10,
           "peopleId": "PPL_SONINKE",
           "region": "Sud de la Mauritanie (vallée du fleuve Sénégal)",
-          "languageFamily": "FLG_MANDE"
+          "languageFamily": "FLG_MANDE",
+          "mainLanguageCode": "snk"
         },
         {
           "name": "Wolof",
-          "population": 95000,
-          "percentageInCountry": 2,
           "peopleId": "PPL_WOLOF",
           "region": "Sud-ouest de la Mauritanie (côte, vallée du fleuve Sénégal)",
-          "languageFamily": "FLG_NIGERCONGO"
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "wol"
         },
         {
           "name": "Bambara",
-          "population": 95000,
-          "percentageInCountry": 2,
           "peopleId": "PPL_BAMBARA",
           "region": "Sud de la Mauritanie",
-          "languageFamily": "FLG_MANDE"
+          "languageFamily": "FLG_MANDE",
+          "mainLanguageCode": "bam"
         },
         {
           "name": "Autres groupes",
-          "population": 190000,
-          "percentageInCountry": 4,
           "peopleId": null,
           "region": "Diverses régions de la Mauritanie"
         }

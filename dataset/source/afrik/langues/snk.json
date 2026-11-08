@@ -111,6 +111,51 @@
                 "notes": "Varia Historia, vol. 29, n° 51, Belo Horizonte, 2013, p. 649-675. Lu en texte intégral le 11 octobre 2026. L'auteur cite le manuscrit de l'Etiópia Menor du jésuite Manuel Álvares, que nous n'avons pas lu."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1991,
+              "to": null,
+              "label": "Depuis 1991"
+            },
+            "era": "modern",
+            "statement": "Le soninké est l'une des quatre langues nationales de la Mauritanie, avec l'arabe, langue officielle, le poular et le wolof, selon l'article 6 de la Constitution.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de la République islamique de Mauritanie, 20 juillet 1991, texte consolidé",
+                "author": "République islamique de Mauritanie",
+                "year": 1991,
+                "url": "https://www.primature.gov.mr/sites/default/files/2021-05/Constitution_consolidefr.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "préambule et article 6",
+                "notes": "Texte consolidé après les révisions de 2006, 2012 et 2017, publié par le Premier ministère, lu le 3 novembre 2026. L'article 6 nomme quatre langues nationales, l'arabe, le poular, le soninké et le wolof, et fait de l'arabe la langue officielle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "2015"
+            },
+            "era": "modern",
+            "statement": "Le nom soninké se dit sòonìnkànqánnè pour la langue, dans le soninké lui-même, écrit le linguiste Denis Creissels.",
+            "formAsWritten": "sòonìnkànqánnè",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The inflectional role of tone in Soninke (West Mande)",
+                "author": "Denis Creissels",
+                "year": 2015,
+                "url": "http://www.deniscreissels.fr/public/Creissels-Tone_and_inflection_in_Soninke.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1",
+                "notes": "Communication au 45e Colloquium on African Languages and Linguistics, Leyde, 31 août et 1er septembre 2015 ; texte publié par l'auteur, linguiste de l'université de Lyon, lu le 3 novembre 2026. L'auteur estime à environ 2 millions le nombre de personnes qui parlent le soninké, surtout au Mali, en Mauritanie, au Sénégal et en Gambie."
+              }
+            ]
           }
         ]
       },
@@ -142,7 +187,8 @@
                 "page": "p. 160, note 49",
                 "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé du volume le 11 octobre 2026. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes."
               }
-            ]
+            ],
+            "era": "modern"
           },
           {
             "period": {
@@ -212,6 +258,51 @@
                 "notes": "Londres, W. Bulmer pour G. Nicol, 1799 ; voyage de 1795-1797. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg, lue le 11 octobre 2026."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1978,
+              "to": 1978,
+              "label": "1978"
+            },
+            "era": "modern",
+            "statement": "Le nom Sarakolé est celui que les Wolof, les Halpoular et les Français donnent aux Soninké, « avec diverses variantes », écrit Constant Hamès.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Quelques livres d'anthropologues sur les Soninké",
+                "author": "Constant Hamès",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/rfsoc_0035-2969_1978_num_19_2_6640",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 295",
+                "notes": "Revue française de sociologie, vol. 19, n° 2, 1978, p. 295-298, compte rendu de plusieurs livres, dont La société soninké d'Éric Pollet et Grace Winter (1971). Lu sur Persée le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Sarakolé se dit sarakúllée en mandinka, au nord-est de la Guinée-Bissau, selon Denis Creissels.",
+            "formAsWritten": "sarakúllée",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le mandinka du nord-est de la Guinée-Bissau",
+                "author": "Denis Creissels",
+                "year": 2013,
+                "url": "http://www.deniscreissels.fr/public/Creissels-Le_mandinka_de_Guinee-Bissau.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Communication au colloque Mandenkan 50, INALCO et LLACAN, Paris, 14 et 15 novembre 2013 ; texte publié par l'auteur, lu le 3 novembre 2026."
+              }
+            ]
           }
         ]
       },
@@ -222,7 +313,7 @@
         "languageOfOrigin": "man",
         "namedBy": "Les Maninka",
         "shortLine": "Le nom que les Maninka donnent couramment aux Soninké.",
-        "periodLabel": "En usage aujourd'hui",
+        "periodLabel": "Écrit dès 1929 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
@@ -230,7 +321,7 @@
               "to": null,
               "label": "Usage décrit par l'auteur"
             },
-            "statement": "Le nom Marka est celui que les Maninka donnent couramment aux Soninké, selon Djibril Tamsir Niane. Les sources que nous avons lues ne disent pas d'où il vient, ni quand il apparaît par écrit.",
+            "statement": "Le nom Marka est celui que les Maninka donnent couramment aux Soninké, selon Djibril Tamsir Niane. Les sources que nous avons lues ne disent pas d'où il vient.",
             "aspect": "usage",
             "sources": [
               {
@@ -243,6 +334,30 @@
                 "page": "p. 141 et p. 160, note 49",
                 "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé du volume le 11 octobre 2026. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes."
               }
+            ],
+            "era": "modern"
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "1929"
+            },
+            "era": "colonial",
+            "statement": "Le nom Marka est écrit « Mar'-ka », forme courte de « Mara-ka », pour dire « Sarakollé » en mandingue, par Maurice Delafosse. Il parle des « Sarakollé ou Marka établis en pays bambara », dont la plupart ne parlent plus que le mandingue. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Mara-ka",
+            "birth": true,
+            "sources": [
+              {
+                "title": "La langue mandingue et ses dialectes (malinké, bambara, dioula), tome I",
+                "author": "Maurice Delafosse",
+                "year": 1929,
+                "url": "https://archive.org/details/la-langue-mandingue-et-ses-...-delafosse-maurice-bpt-6k-3412996f",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "introduction et chapitre de phonétique",
+                "notes": "Paris, Paul Geuthner, Bibliothèque de l'École nationale des langues orientales vivantes, 1929. Lu dans la copie d'Internet Archive de la numérisation de la Bibliothèque nationale de France (Gallica, bpt6k3412996f), le 3 novembre 2026. L'auteur était administrateur colonial en Afrique occidentale française."
+              }
             ]
           }
         ]
@@ -250,13 +365,14 @@
     ]
   },
   "content": {
-    "vehicularRole": null,
+    "vehicularRole": "national_official",
     "dialects": ["Azer", "Gadyaga", "Kinbakka", "Xenqenna"],
     "vitalityStatus": {
       "status": "Developing",
       "scale": "EGIDS (Ethnologue)",
       "asOf": 2025
     },
+    "originDebated": false,
     "sources": [
       {
         "title": "Glottolog 5.3 — Soninke (soni1259)",
@@ -278,7 +394,135 @@
         "tier": "official",
         "source_kind": "linguistic_reference",
         "notes": "Tables du 2026-07-15, consultées le 2026-09-16. La table des macrolangues n'associe le code snk à aucune macrolangue : le soninké est codé comme une langue pleine, là où plusieurs parlers mandingues sont regroupés sous la macrolangue man, Mandingo. Le partage entre langue et dialecte est ici une décision de codification, prise code par code par un organisme, et non une frontière relevée sur le terrain."
+      },
+      {
+        "title": "Cinquième Recensement général de la population et de l'habitat (RGPH5), rapport d'analyse, thème : caractéristiques culturelles de la population",
+        "url": "https://instat-mali.org/laravel-filemanager/files/shares/rgph/rapport-caracteristiques-culturelles-population-rgph5_rpgh.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Bamako, janvier 2025, recensement de 2022 ; lu le 3 novembre 2026. Le rapport compte 1 732 538 Soninké, 1 249 104 personnes de 3 ans ou plus dont le sarakolé ou sooninke est la langue maternelle, et 1 022 520 qui le parlent plus que toute autre langue."
+      },
+      {
+        "title": "5e Recensement général de la population et de l'habitat (RGPH-5) 2023, rapport définitif, thème I : état et structure, urbanisation et caractéristiques socioculturelles de la population",
+        "url": "https://www.vie-publique.sn/docs/f5ae8d48-de94-4dea-882b-990bdfa1958d/etat-structure-urbanisation-caracteristiques-socioculturelles-population-rgph-5-2023-ansd.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Dakar, juillet 2025 ; lu dans la copie publiée par le portail vie-publique.sn le 3 novembre 2026. Le tableau répartit les 16 432 959 habitants de 3 ans ou plus selon la langue qu'ils parlent le plus au quotidien : 465 052 pour le màndienka, 193 681 pour le sóninke. Il ne compte ni la langue maternelle ni le groupe."
+      },
+      {
+        "title": "The Gambia 2024 Population and Housing Census, Preliminary Report",
+        "url": "https://gambia.unfpa.org/sites/default/files/pub-pdf/2024-09/Preliminary%20Report%20of%20the%202024%20Census%20in%20The%20Gambia_0.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Banjul, août 2024 ; lu dans la copie mise en ligne par le bureau du FNUAP en Gambie le 3 novembre 2026. Le rapport compte 2 422 712 habitants, dont 34,4 % de Mandinka et 8,2 % de Sarahule, nom gambien des Soninké. Il compte l'appartenance à un groupe, et non la langue parlée."
+      },
+      {
+        "title": "Terceiro Recenseamento Geral da População e Habitação, 2009 : características socioculturais",
+        "url": "https://www.stat-guinebissau.com/Menu_principal/IV_RGPH/rgph1/caracteristicas_socio_cultural.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Bissau, recensement de 2009, lu le 3 novembre 2026. Les chiffres couvrent les habitants de nationalité bissau-guinéenne : 212 269 personnes se disent mandinga, et 184 220 personnes, tous groupes réunis, ont le mandinga pour principal parler ; 7 407 personnes se disent saracule, et 5 550 ont le saracule pour principal parler."
+      },
+      {
+        "title": "Constitution de la République islamique de Mauritanie, 20 juillet 1991, texte consolidé",
+        "url": "https://www.primature.gov.mr/sites/default/files/2021-05/Constitution_consolidefr.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte consolidé après les révisions de 2006, 2012 et 2017, publié par le Premier ministère, lu le 3 novembre 2026. L'article 6 nomme quatre langues nationales, l'arabe, le poular, le soninké et le wolof, et fait de l'arabe la langue officielle."
+      },
+      {
+        "title": "The inflectional role of tone in Soninke (West Mande)",
+        "url": "http://www.deniscreissels.fr/public/Creissels-Tone_and_inflection_in_Soninke.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Communication au 45e Colloquium on African Languages and Linguistics, Leyde, 31 août et 1er septembre 2015 ; texte publié par l'auteur, linguiste de l'université de Lyon, lu le 3 novembre 2026. L'auteur estime à environ 2 millions le nombre de personnes qui parlent le soninké, surtout au Mali, en Mauritanie, au Sénégal et en Gambie."
+      },
+      {
+        "title": "Phonologie segmentale et tonale du soninké (parler du Kingi)",
+        "url": "http://www.deniscreissels.fr/public/Creissels-phon.soninke.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Mandenkan, n° 55, 2016, p. 3-174 ; version publiée par l'auteur, lue le 3 novembre 2026. L'auteur note que le parler de Kaédi, en Mauritanie, est le seul bien décrit jusque-là, grâce aux travaux d'Ousmane Moussa Diagana et de Yakouba Diagana."
+      },
+      {
+        "title": "Le mandinka du nord-est de la Guinée-Bissau",
+        "url": "http://www.deniscreissels.fr/public/Creissels-Le_mandinka_de_Guinee-Bissau.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Communication au colloque Mandenkan 50, INALCO et LLACAN, Paris, 14 et 15 novembre 2013 ; texte publié par l'auteur, lu le 3 novembre 2026."
+      },
+      {
+        "title": "Quelques livres d'anthropologues sur les Soninké",
+        "url": "https://www.persee.fr/doc/rfsoc_0035-2969_1978_num_19_2_6640",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Revue française de sociologie, vol. 19, n° 2, 1978, p. 295-298, compte rendu de plusieurs livres, dont La société soninké d'Éric Pollet et Grace Winter (1971). Lu sur Persée le 3 novembre 2026."
+      },
+      {
+        "title": "La langue mandingue et ses dialectes (malinké, bambara, dioula), tome I",
+        "url": "https://archive.org/details/la-langue-mandingue-et-ses-...-delafosse-maurice-bpt-6k-3412996f",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Paris, Paul Geuthner, Bibliothèque de l'École nationale des langues orientales vivantes, 1929. Lu dans la copie d'Internet Archive de la numérisation de la Bibliothèque nationale de France (Gallica, bpt6k3412996f), le 3 novembre 2026. L'auteur était administrateur colonial en Afrique occidentale française."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers",
+        "reason": "Nous n'avons pas trouvé de chiffre pour la Mauritanie. Nous avons cherché les tableaux des langues des recensements mauritaniens de 2013 et de 2023."
+      },
+      {
+        "field": "nameHistory.names[0]",
+        "reason": "Nous n'avons pas trouvé d'explication du nom soninké. Nous avons cherché dans les travaux de Monique Chastanet en accès libre, sur Persée et sur OpenEdition ; La société soninké d'Éric Pollet et Grace Winter et Les portes de l'or d'Abdoulaye Bathily ne sont pas en ligne."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Le soninké est la langue des Soninké, un peuple d'Afrique de l'Ouest qui vit surtout au Mali, en Mauritanie, au Sénégal et en Gambie.",
+      "followUp": "Pourquoi les Soninké sont-ils aussi appelés Sarakolé ou Marka ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "MLI",
+          "speakers": 1249104,
+          "source": {
+            "title": "Cinquième Recensement général de la population et de l'habitat (RGPH5), rapport d'analyse, thème : caractéristiques culturelles de la population",
+            "url": "https://instat-mali.org/laravel-filemanager/files/shares/rgph/rapport-caracteristiques-culturelles-population-rgph5_rpgh.pdf",
+            "tier": "official",
+            "notes": "Recensement de 2022 : personnes de 3 ans ou plus dont le sarakolé ou sooninke est la langue maternelle."
+          }
+        },
+        {
+          "country": "SEN",
+          "speakers": 193681,
+          "source": {
+            "title": "5e Recensement général de la population et de l'habitat (RGPH-5) 2023, rapport définitif, thème I : état et structure, urbanisation et caractéristiques socioculturelles de la population",
+            "url": "https://www.vie-publique.sn/docs/f5ae8d48-de94-4dea-882b-990bdfa1958d/etat-structure-urbanisation-caracteristiques-socioculturelles-population-rgph-5-2023-ansd.pdf",
+            "tier": "official",
+            "notes": "Recensement de 2023 : personnes de 3 ans ou plus qui parlent le sóninke plus que toute autre langue au quotidien. Ceux qui le parlent en seconde langue n'y sont pas comptés."
+          }
+        },
+        {
+          "country": "GMB",
+          "speakers": 199000,
+          "source": {
+            "title": "The Gambia 2024 Population and Housing Census, Preliminary Report",
+            "url": "https://gambia.unfpa.org/sites/default/files/pub-pdf/2024-09/Preliminary%20Report%20of%20the%202024%20Census%20in%20The%20Gambia_0.pdf",
+            "tier": "official",
+            "notes": "Recensement de 2024 : 8,2 % des 2 422 712 habitants se disent sarahule, le nom gambien des Soninké. Le nombre de personnes est notre calcul à partir de ces deux chiffres. Il compte un groupe, et non les personnes qui parlent la langue."
+          }
+        },
+        {
+          "country": "GNB",
+          "speakers": 5550,
+          "source": {
+            "title": "Terceiro Recenseamento Geral da População e Habitação, 2009 : características socioculturais",
+            "url": "https://www.stat-guinebissau.com/Menu_principal/IV_RGPH/rgph1/caracteristicas_socio_cultural.pdf",
+            "tier": "official",
+            "notes": "Recensement de 2009 : personnes de nationalité bissau-guinéenne dont le saracule est le principal parler, tous groupes réunis."
+          }
+        }
+      ]
+    }
   }
 }

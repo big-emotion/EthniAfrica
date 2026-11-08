@@ -23,12 +23,17 @@
     "Tar Bagrimma",
     "Tar Barma"
   ],
-  "whyProblematic": "Tar Barma figure parmi les noms que Glottolog recense pour la langue. L'origine du nom « Bagirmi » n'est pas établie. Bagirmi désigne une société multiethnique organisée en État, dont les Barma formaient le groupe qui l'a fondé et dominé. Une tradition le fait venir de l'arabe bagar, « bétail », et mia, « cent », et y voit le tribut que les Arabes et les Peuls devaient à leur premier souverain (Reyna). Nous n'en connaissons pas d'autre dans les sources que nous avons lues, et celle-ci reste une tradition.",
+  "whyProblematic": "Le nom Bagirmi est d'abord celui d'un ancien royaume du Tchad. Ce n'est pas le nom que les locuteurs donnent à leur langue : eux disent tar Barma. Le royaume réunissait plusieurs peuples, et les Barma l'ont fondé et dominé, selon S. P. Reyna.",
   "spellingAliases": [],
   "familyId": "FLG_SOUDANIQUECENTRAL",
-  "peoples": [{ "name": "Barma", "peopleId": "PPL_BARMA" }],
+  "peoples": [
+    {
+      "name": "Barma",
+      "peopleId": "PPL_BARMA"
+    }
+  ],
   "nameHistory": {
-    "summary": "Le nom bagirmi désigne une langue soudanique centrale du Tchad. C'est d'abord le nom d'un royaume ; ses locuteurs, les Barma, appellent leur langue tar Barma. On ne sait pas avec certitude d'où vient le nom Bagirmi ; nous présentons plus bas la seule explication que nous avons lue.",
+    "summary": "Le nom bagirmi désigne une langue soudanique centrale du Tchad. C'est d'abord le nom d'un royaume fondé au XVIe siècle autour de Massenya. Ses locuteurs, les Barma, appellent leur langue tar Barma. L'origine du nom Bagirmi est discutée : nous présentons plus bas l'explication que rapportent plusieurs auteurs, et le doute de l'un d'eux.",
     "names": [
       {
         "nameText": "Tar Barma",
@@ -37,6 +42,21 @@
         "languageOfOrigin": "bmi",
         "namedBy": null,
         "shortLine": "Le nom de la langue chez ses locuteurs, les Barma ; noté tar Bagrimma en 1852.",
+        "usedIn": ["bmi"],
+        "pronunciation": {
+          "respelling": "tar bar-ma",
+          "audio": null,
+          "source": {
+            "title": "Bagirmi Lexicon: Bagirmi-French, French-Bagirmi, with Grammatical Introduction in English",
+            "author": "John M. Keegan et Mahamat Idriss Djibrine",
+            "year": 2016,
+            "url": "https://morkegbooks.com/Services/World/Languages/SaraBagirmi/pdfs/BagirmiLex.pdf",
+            "tier": "referenced",
+            "source_kind": "linguistic_reference",
+            "page": "p. 146, entrée tàr",
+            "notes": "Lexique bagirmi-français et français-bagirmi, deuxième édition, Cuenca, Morkeg Books, mars 2016, publié par le Sara-Bagirmi Languages Project avec l'aide du National Endowment for the Humanities. Mahamat Idriss Djibrine est locuteur de la langue. Lu le 3 novembre 2026 dans le PDF mis en ligne par l'éditeur. Le lexique écrit tàrà ɓármà, « la langue baguirmienne ». La lettre ɓ note un b prononcé en aspirant l'air vers l'intérieur (introduction, p. iii)."
+          }
+        },
         "periodLabel": "Écrit dès 1857 ; en usage aujourd'hui",
         "accounts": [
           {
@@ -56,7 +76,7 @@
                 "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/bagirmi",
                 "tier": "referenced",
                 "source_kind": "encyclopedia",
-                "notes": "Lu le 11 octobre 2026 sur encyclopedia.com. La notice dit que les Barma parlent le tar Barma et rapporte une tradition sur le nom Bagirmi, sans la dater."
+                "notes": "Notice de l'Encyclopedia of World Cultures (Gale), reprise sur encyclopedia.com, lue le 11 octobre 2026 et relue le 3 novembre 2026. Elle dit que les Barma parlent le tar Barma et rapporte, sans la dater, la tradition qui fait venir le nom Bagirmi de l'arabe bagar, « bétail », et mia, « cent »."
               }
             ]
           },
@@ -67,7 +87,7 @@
               "label": "Séjour de 1852 (récit publié en 1857)"
             },
             "era": "polity",
-            "statement": "Le nom tar Barma a une forme proche, « tar Bagrimma », chez le voyageur allemand Heinrich Barth : c'est ainsi, écrit-il, que les gens du Bagirmi appellent eux-mêmes leur langue. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "statement": "Le nom tar Barma a une forme proche, « tar Bagrimma », chez le voyageur allemand Heinrich Barth : c'est ainsi, écrit-il, que les gens du Bagirmi appellent eux-mêmes leur langue. C'est la plus ancienne trace de ce nom que nous connaissons. La langue existait déjà avant lui.",
             "formAsWritten": "tar Bagrimma",
             "birth": true,
             "sources": [
@@ -79,7 +99,118 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "page": "p. 398 et p. 451",
-                "notes": "New York, D. Appleton, 1857 ; voyage de 1849-1855, séjour au Bagirmi en 1852. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+                "notes": "New York, D. Appleton, 1857 ; voyage de 1849-1855, séjour au Bagirmi en 1852. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. À la page 451, Barth écrit : « Their language they themselves call \"tar Bagrimma\" »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Publié en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom tar Barma est écrit « Tar Bagrimma » par le voyageur allemand Gustav Nachtigal, qui parle de la « langue du Bagirmi ».",
+            "formAsWritten": "Tar Bagrimma",
+            "actors": [
+              {
+                "name": "Gustav Nachtigal",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 688",
+                "notes": "Berlin, Weidmann, 1881. Voyage de 1870 à 1874, publié en 1881. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Nachtigal écrit : « die Bagirmi-Sprache — Tar Bagrimma »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "Publié en 1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom tar Barma est écrit « Tar Bârma » par Henri Gaden, officier colonial français, en 1908. Selon lui, les Barma nomment ainsi leur langue, et la forme Bagrimma que donnaient Barth et Nachtigal n'existe déjà plus « qu'à l'état de souvenir ».",
+            "formAsWritten": "Tar Bârma",
+            "actors": [
+              {
+                "name": "Henri Gaden",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Essai de grammaire de la langue baghirmi",
+                "author": "Henri Gaden",
+                "year": 1908,
+                "url": "https://archive.org/details/revuedelinguisti41pari",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Revue de linguistique et de philologie comparée, tome 41, 1908, revue publiée par Julien Vinson, professeur à l'École des langues orientales. L'auteur, le commandant Henri Gaden, est un officier de l'armée coloniale française en poste au Tchad. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive (exemplaire de l'Université d'Ottawa). Gaden écrit : « c'est ainsi qu'ils se nomment eux-mêmes aujourd'hui, et ils nomment leur langue «Tar Bârma» »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1908,
+              "label": "Proposée en 1881, reprise en 1908"
+            },
+            "era": "polity",
+            "statement": "Le mot barma viendrait du nom Bagirmi lui-même : dans la langue du pays, le nom du royaume serait devenu Barma, au pluriel Barmage, pour nommer ses habitants, selon Gustav Nachtigal. Henri Gaden écrit de même que les gens du Baguirmi ont fait Bârma de Baguirmi.",
+            "hypothesisGroup": "origine du mot barma",
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 667",
+                "notes": "Berlin, Weidmann, 1881. Voyage de 1870 à 1874, publié en 1881. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Nachtigal écrit : « In der Landessprache ist aus dem Namen der Einwohner Barma pl. Barmage geworden »."
+              },
+              {
+                "title": "Essai de grammaire de la langue baghirmi",
+                "author": "Henri Gaden",
+                "year": 1908,
+                "url": "https://archive.org/details/revuedelinguisti41pari",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Revue de linguistique et de philologie comparée, tome 41, 1908, revue publiée par Julien Vinson, professeur à l'École des langues orientales. L'auteur, le commandant Henri Gaden, est un officier de l'armée coloniale française en poste au Tchad. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive (exemplaire de l'Université d'Ottawa). Gaden écrit : « De Baguirmi, les Baguirmiens ont fait Bârma »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Usage décrit en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom tar Barma s'écrit tàrà ɓármà dans le lexique de John M. Keegan et Mahamat Idriss Djibrine, qui le traduit par « la langue baguirmienne ». Dans ce lexique, le mot tàr veut dire « bouche » et aussi « langue ».",
+            "aspect": "meaning",
+            "formAsWritten": "tàrà ɓármà",
+            "sources": [
+              {
+                "title": "Bagirmi Lexicon: Bagirmi-French, French-Bagirmi, with Grammatical Introduction in English",
+                "author": "John M. Keegan et Mahamat Idriss Djibrine",
+                "year": 2016,
+                "url": "https://morkegbooks.com/Services/World/Languages/SaraBagirmi/pdfs/BagirmiLex.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 146, entrées tàr",
+                "notes": "Lexique bagirmi-français et français-bagirmi, deuxième édition, Cuenca, Morkeg Books, mars 2016, publié par le Sara-Bagirmi Languages Project avec l'aide du National Endowment for the Humanities. Mahamat Idriss Djibrine est locuteur de la langue. Lu le 3 novembre 2026 dans le PDF mis en ligne par l'éditeur. Le lexique donne tàr, « bouche », tàr, « langue », et l'expression tàrà ɓármà, « la langue baguirmienne »."
               }
             ]
           }
@@ -88,10 +219,10 @@
       {
         "nameText": "Bagirmi",
         "nameStatus": "current",
-        "selfGiven": true,
+        "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom d'un royaume du Tchad, devenu celui de sa langue ; on ne sait pas d'où il vient.",
+        "shortLine": "Le nom d'un ancien royaume du Tchad, devenu celui de sa langue ; ses locuteurs disent ɓármà.",
         "periodLabel": "Écrit dès 1857",
         "accounts": [
           {
@@ -101,7 +232,7 @@
               "label": "Séjour de 1852 (récit publié en 1857)"
             },
             "era": "polity",
-            "statement": "Le nom bagirmi est, selon Heinrich Barth, la façon dont on prononce sur place le nom du pays, qui sonne aussi Bagrimmi ; l'adjectif Bagrimma sonne souvent Barma. Les gens du Bornou écrivent Begharmi ou Bekarmi. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays existait déjà avant lui.",
+            "statement": "Le nom bagirmi est, selon Heinrich Barth, la façon dont on prononce sur place le nom du pays, qui sonne aussi Bagrimmi ; l'adjectif Bagrimma sonne souvent Barma. Les gens du Bornou écrivent Begharmi ou Bekarmi. C'est la plus ancienne trace de ce nom que nous connaissons. Le pays existait déjà avant lui.",
             "formAsWritten": "Bagirmi",
             "birth": true,
             "sources": [
@@ -113,19 +244,40 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "page": "p. 431, note",
-                "notes": "New York, D. Appleton, 1857 ; voyage de 1849-1855, séjour au Bagirmi en 1852. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+                "notes": "New York, D. Appleton, 1857 ; voyage de 1849-1855, séjour au Bagirmi en 1852. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Barth écrit dans la note : « Thus the name is generally pronounced in the country itself ; but it very often sounds like Bagrimmi, and the adjective form is certainly Bagrimma, which often sounds like Barma »."
               }
             ]
           },
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Origine non datée"
+              "from": 1881,
+              "to": 1908,
+              "label": "Rapportée en 1881, reprise en 1908"
             },
-            "statement": "Le nom bagirmi viendrait de l'arabe bagar, « bétail », et mia, « cent » : ce serait le tribut que les Arabes et les Peuls devaient à leur premier souverain, selon une tradition que rapporte S. P. Reyna.",
+            "era": "polity",
+            "statement": "Le nom bagirmi viendrait de l'arabe baqar, « bœufs », et mia, « cent » : les premiers chefs de l'État auraient exigé de chaque groupe d'habitants, Peuls, Arabes et petits pays voisins, un tribut de cent bœufs. Gustav Nachtigal rapporte cette explication, répandue dans le pays, et la juge peu vraisemblable. Henri Gaden et S. P. Reyna la rapportent aussi.",
             "hypothesisGroup": "origine du nom bagirmi",
             "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 667",
+                "notes": "Berlin, Weidmann, 1881. Voyage de 1870 à 1874, publié en 1881. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Nachtigal parle de la « im Volksmunde gebräuchlichen, nicht eben sehr wahrscheinlich klingenden Herleitung des Wortes » : le mot viendrait de « Baqär mija, d. h. hundert Rinder »."
+              },
+              {
+                "title": "Essai de grammaire de la langue baghirmi",
+                "author": "Henri Gaden",
+                "year": 1908,
+                "url": "https://archive.org/details/revuedelinguisti41pari",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Revue de linguistique et de philologie comparée, tome 41, 1908, revue publiée par Julien Vinson, professeur à l'École des langues orientales. L'auteur, le commandant Henri Gaden, est un officier de l'armée coloniale française en poste au Tchad. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive (exemplaire de l'Université d'Ottawa). Gaden écrit que le sultanat « reçut le nom de Baguirmi, à cause du tribut annuel de 100 bœufs (Baggarmia) que lui payaient les foulbé et les arabes »."
+              },
               {
                 "title": "Bagirmi, Encyclopedia of World Cultures",
                 "author": "S. P. Reyna",
@@ -133,7 +285,89 @@
                 "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/bagirmi",
                 "tier": "referenced",
                 "source_kind": "encyclopedia",
-                "notes": "Lu le 11 octobre 2026 sur encyclopedia.com. La notice dit que les Barma parlent le tar Barma et rapporte une tradition sur le nom Bagirmi, sans la dater."
+                "notes": "Notice de l'Encyclopedia of World Cultures (Gale), reprise sur encyclopedia.com, lue le 11 octobre 2026 et relue le 3 novembre 2026. Elle dit que les Barma parlent le tar Barma et rapporte, sans la dater, la tradition qui fait venir le nom Bagirmi de l'arabe bagar, « bétail », et mia, « cent »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1500,
+              "label": "Avant le XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Bagirmi, il y avait de petits pays indépendants le long du Chari et du Ba Batschikam, selon Gustav Nachtigal. Le peuple et le nom Bagirmi sont nés, écrit-il, quand un État les a réunis. Henri Gaden situe l'arrivée de ses fondateurs, des chasseurs venus des montagnes du pays kenga, au début du XVIe siècle.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 667",
+                "notes": "Berlin, Weidmann, 1881. Voyage de 1870 à 1874, publié en 1881. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Nachtigal écrit : « Ein Stamm Bagirmi hat ursprünglich nicht existirt, sondern dieser Name trat erst auf, als die Bildung des gleichnamigen Staates erfolgt war »."
+              },
+              {
+                "title": "Essai de grammaire de la langue baghirmi",
+                "author": "Henri Gaden",
+                "year": 1908,
+                "url": "https://archive.org/details/revuedelinguisti41pari",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Revue de linguistique et de philologie comparée, tome 41, 1908, revue publiée par Julien Vinson, professeur à l'École des langues orientales. L'auteur, le commandant Henri Gaden, est un officier de l'armée coloniale française en poste au Tchad. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive (exemplaire de l'Université d'Ottawa). Gaden écrit que les chasseurs « qui devaient fonder le Baguirmi, arrivèrent dans ce pays, au commencement du XVIe siècle »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Publié en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Bagirmi est écrit Bagirmi ou Baqirmi dans les documents en arabe, et Baqarmi par les gens du Bornou, selon Gustav Nachtigal.",
+            "formAsWritten": "Baqarmi",
+            "actors": [
+              {
+                "name": "Gustav Nachtigal",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 667",
+                "notes": "Berlin, Weidmann, 1881. Voyage de 1870 à 1874, publié en 1881. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Nachtigal écrit : « In arabischen Schriftstücken findet man ebensowohl Bagirmi als Baqirmi geschrieben, während die Bornu-Leute Baqarmi schreiben »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Usage décrit en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Bagirmi se dit ɓármà dans la langue elle-même : le lexique de John M. Keegan et Mahamat Idriss Djibrine traduit ainsi « Baguirmi, Baguirmien ». Le pays s'y dit nàŋ ɓármà, « pays Baguirmi ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bagirmi Lexicon: Bagirmi-French, French-Bagirmi, with Grammatical Introduction in English",
+                "author": "John M. Keegan et Mahamat Idriss Djibrine",
+                "year": 2016,
+                "url": "https://morkegbooks.com/Services/World/Languages/SaraBagirmi/pdfs/BagirmiLex.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 15, entrée ɓármà, et p. xxxv",
+                "notes": "Lexique bagirmi-français et français-bagirmi, deuxième édition, Cuenca, Morkeg Books, mars 2016, publié par le Sara-Bagirmi Languages Project avec l'aide du National Endowment for the Humanities. Mahamat Idriss Djibrine est locuteur de la langue. Lu le 3 novembre 2026 dans le PDF mis en ligne par l'éditeur. Le lexique donne ɓármà, « Baguirmi, Baguirmien », avec l'exemple « Mā ɓármà èlí. Je ne suis pas Baguirmien. » ; la grammaire traduit nàŋ ɓármà par « Bagirmi country »."
               }
             ]
           }
@@ -142,16 +376,21 @@
     ]
   },
   "content": {
-    "vehicularRole": null,
+    "vehicularRole": "vehicular",
     "dialects": ["Bangri", "Dam", "Gol", "Kibar"],
-    "vitalityStatus": null,
+    "vitalityStatus": {
+      "status": "Wider communication",
+      "scale": "EGIDS (Ethnologue)",
+      "asOf": 2025
+    },
+    "originDebated": true,
     "sources": [
       {
         "title": "Glottolog 5.3 — Bagirmi (bagi1246)",
         "url": "https://glottolog.org/resource/languoid/id/bagi1246",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Glottolog name: Bagirmi; classification includes Central Sudanic. Les dialectes listés sont les sous-languoids que Glottolog rattache à bagi1246, hors languoids portant leur propre code ISO 639-3."
+        "notes": "Notice de Glottolog, catalogue des langues de l'Institut Max-Planck, pour le code ISO 639-3 bmi. Lu le 3 novembre 2026. Classification, du plus large au plus étroit : soudanique central, Sara-Bongo-Bagirmi, Bagirmi occidental, Sara, langues bagirmiennes. La notice situe la langue au Tchad et au Nigeria. Elle reprend l'appréciation d'Ethnologue 2025 : niveau 3 de l'échelle EGIDS, communication élargie, avec ce commentaire : « Used in slave trade in 17th century. Used in commerce, craft, and export. » Les quatre dialectes listés, bangri, dam, gol et kibar, sont ceux que Glottolog rattache à la langue."
       },
       {
         "title": "S. P. Reyna, Bagirmi, Encyclopedia of World Cultures, Gale",
@@ -159,7 +398,47 @@
         "tier": "referenced",
         "source_kind": "encyclopedia",
         "notes": "Notice consultée sur encyclopedia.com : « Bagirmi » vient de l'arabe bagar (bétail) et mia (cent) selon une tradition ; les Barma ont formé et dominé l'État, les Arabes en étaient les habitants les plus nombreux et les Peuls y comptaient dans la vie religieuse. La notice ne date pas cette tradition."
+      },
+      {
+        "title": "Assessing Endangerment: Expanding Fishman's GIDS",
+        "author": "M. Paul Lewis et Gary F. Simons",
+        "year": 2010,
+        "url": "https://www.lingv.ro/RRL%202%202010%20art01Lewis.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 111",
+        "notes": "Revue roumaine de linguistique, 55, no 2, 2010, p. 103-120. Article des auteurs de l'échelle EGIDS qu'utilise Ethnologue. Lu le 3 novembre 2026. Il définit le niveau 3 : des langues « \"vehicular\" in that they are used as a second language by members of multiple first-language communities and serve important functions for business and intergroup communication ». Le bagirmi est placé à ce niveau par Ethnologue, d'après Glottolog."
+      },
+      {
+        "title": "Essai de grammaire de la langue baghirmi",
+        "author": "Henri Gaden",
+        "year": 1908,
+        "url": "https://archive.org/details/revuedelinguisti41pari",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 5",
+        "notes": "Revue de linguistique et de philologie comparée, tome 41, 1908, revue publiée par Julien Vinson, professeur à l'École des langues orientales. L'auteur, le commandant Henri Gaden, est un officier de l'armée coloniale française en poste au Tchad. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive (exemplaire de l'Université d'Ottawa). Gaden écrit que le baguirmien est la langue des sédentaires du Baguirmi, qu'il est « également parlé entre Chari et Logone par les anciens captifs, les affranchis ou les commerçants baguirmiens », et estime à « 30.000 environ » le nombre de ses locuteurs. Il a étudié le parler de Massénya, et note que ceux du Koubar et des villages du Chari en diffèrent peu."
+      },
+      {
+        "title": "Bagirmi Lexicon: Bagirmi-French, French-Bagirmi, with Grammatical Introduction in English",
+        "author": "John M. Keegan et Mahamat Idriss Djibrine",
+        "year": 2016,
+        "url": "https://morkegbooks.com/Services/World/Languages/SaraBagirmi/pdfs/BagirmiLex.pdf",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "page": "p. i",
+        "notes": "Lexique bagirmi-français et français-bagirmi, deuxième édition, Cuenca, Morkeg Books, mars 2016, publié par le Sara-Bagirmi Languages Project avec l'aide du National Endowment for the Humanities. Mahamat Idriss Djibrine est locuteur de la langue. Lu le 3 novembre 2026 dans le PDF mis en ligne par l'éditeur. L'introduction reprend une estimation d'Ethnologue de 2015 : environ 35 000 locuteurs, surtout dans la région du Chari-Baguirmi, au Tchad, et beaucoup à N'Djamena."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers",
+        "reason": "Nous avons cherché un nombre de locuteurs par pays dans les publications du recensement du Tchad de 2009 mises en ligne par l'INSEED, dans Glottolog et dans le lexique de Keegan et Mahamat Idriss Djibrine ; nous n'en avons pas trouvé. Le lexique reprend une estimation d'Ethnologue de 2015 : environ 35 000 locuteurs, surtout au Tchad. Henri Gaden en comptait environ 30 000 en 1908. Ces deux chiffres portent sur l'ensemble de la langue."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Le bagirmi, que ses locuteurs appellent tar Barma, est une langue du Tchad. C'était la langue du royaume du Baguirmi, autour de Massenya, au sud-est du lac Tchad.",
+      "followUp": "D'où vient le nom Bagirmi, et pourquoi ses locuteurs disent-ils tar Barma ?"
+    }
   }
 }

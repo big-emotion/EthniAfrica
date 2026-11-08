@@ -4,7 +4,7 @@
   "nameEn": "Creole (African Creoles)",
   "classificationStatus": "colonial-legacy",
   "nameHistory": {
-    "summary": "Le nom créole désigne des langues nées en Afrique et dans ses îles du contact entre des langues africaines et des langues européennes, comme le krio de Sierra Leone ou le crioulo du Cap-Vert. Joseph Greenberg les laisse hors de ses familles de langues d'Afrique. Le mot vient de l'espagnol criollo ; on a aussi dit, en allemand, « portugais des Nègres ». Les sources ne s'accordent pas sur l'origine du mot criollo ; nous les présentons plus bas.",
+    "summary": "Le nom créole désigne des langues nées en Afrique et dans ses îles du contact entre des langues africaines et des langues européennes, comme le krio de Sierra Leone ou le crioulo du Cap-Vert. Joseph Greenberg les laisse hors de ses familles de langues d'Afrique. Le mot viendrait de l'espagnol criollo ou du portugais crioulo ; on a aussi dit, en allemand, « portugais des Nègres ». Les sources ne s'accordent pas sur l'origine du mot criollo ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Créole",
@@ -13,7 +13,7 @@
         "languageOfOrigin": null,
         "namedBy": null,
         "shortLine": "Un mot venu de l'espagnol criollo pour des langues nées du contact avec l'Europe.",
-        "periodLabel": "Pour des langues d'Afrique, depuis 1849",
+        "periodLabel": "Pour des langues d'Afrique, depuis la fin du XVIIe siècle",
         "accounts": [
           {
             "period": {
@@ -78,6 +78,28 @@
                 "source_kind": "linguistic_reference",
                 "page": "Supplément, étymologie",
                 "notes": "Paris, Hachette, 1873-1877, avec le supplément. Lu dans l'édition en ligne du dictionnaire, qui reproduit le texte et renvoie au fac-similé de la Bibliothèque nationale de France."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom créole viendrait de l'espagnol criollo, attesté en 1590, lui-même emprunté au portugais crioulo, « noir né dans les colonies », dont le sens premier semble être « serviteur élevé dans la maison de son maître », selon le Trésor de la langue française. Pour une langue, le dictionnaire pense que le français a pris le mot directement au portugais.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine-du-mot-creole",
+            "sources": [
+              {
+                "title": "Étymologie de « créole », Trésor de la langue française informatisé",
+                "author": "ATILF (CNRS et Université de Lorraine)",
+                "year": null,
+                "url": "https://www.cnrtl.fr/etymologie/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Portail lexical du CNRTL, onglet Étymologie, qui reprend le Trésor de la langue française (1960-1990). Lu en ligne. L'article date l'espagnol criollo de 1590 et le fait venir du portugais crioulo, « noir né dans les colonies », dont le sens premier semble être « serviteur élevé dans la maison de son maître », du verbe criar, « élever ». Il donne créole en 1670 pour une « personne de pure race blanche née aux colonies », puis « langue créole » en 1688 chez La Courbe pour un « portugais corrompu parlé au Sénégal », sens qu'il croit pris directement au portugais.",
+                "page": "Étymologie"
               }
             ]
           },
@@ -175,9 +197,8 @@
               "to": 1849,
               "label": "1849"
             },
-            "statement": "Le nom créole apparaît pour une langue d'Afrique dans une étude sur la Guinée portugaise publiée par Bertrand-Bocandé : il y décrit « la langue créole portugaise » de Guinée et des îles du Cap-Vert. C'est la plus ancienne trace de ce nom pour une langue d'Afrique que le projet connaît. Les langues qu'il désigne existaient déjà avant lui.",
+            "statement": "Le nom créole est écrit « langue créole portugaise » par Bertrand-Bocandé, dans une étude sur la Guinée portugaise publiée en 1849 : il désigne ainsi la langue créole de Guinée et des îles du Cap-Vert.",
             "formAsWritten": "langue créole portugaise",
-            "birth": true,
             "sources": [
               {
                 "title": "Notes sur la Guinée portugaise ou Sénégambie méridionale, Bulletin de la Société de géographie, 3e série, tome 12",
@@ -188,6 +209,35 @@
                 "source_kind": "archive",
                 "page": "p. 73-75",
                 "notes": "Paris, Société de géographie, 1849. Lu dans la numérisation d'Internet Archive. L'auteur décrit les peuples de la région avec le mépris de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1685,
+              "to": 1685,
+              "label": "Voyage de 1685"
+            },
+            "era": "polity",
+            "statement": "Le nom créole est écrit « langue créole » par Michel Jajolet de La Courbe, dans le récit de son voyage de 1685 sur la côte d'Afrique : sur le fleuve Gambie, il note que des habitants qui « se disent Portugais » parlent un jargon « qu'on nomme langue créole ». C'est la plus ancienne trace de ce nom pour une langue d'Afrique que le projet connaît. Les langues qu'il désigne existaient avant lui.",
+            "formAsWritten": "langue créole",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Michel Jajolet de La Courbe",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Premier voyage du sieur de La Courbe fait à la coste d'Afrique en 1685",
+                "author": "Michel Jajolet de La Courbe, édité par Prosper Cultru",
+                "year": 1913,
+                "url": "https://archive.org/details/premiervoyagedus00laco",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Édouard Champion et Émile Larose pour la Société de l'histoire des colonies françaises, 1913, d'après une copie manuscrite de la fin du XVIIe siècle. Lu dans la numérisation d'Internet Archive. Page 192 : dans le royaume de Barre, sur le fleuve Gambie, des habitants qui « se disent Portugais » parlent « un certain jargon qui n'a que très peu de ressemblance a la langue portugaise, et qu'on nomme langue créole ». Page 230 : à Cacheu, un officier dit à l'auteur qu'il parle « le latin portugais », mais que les gens du lieu parlent « le latin créole ». L'auteur, agent d'une compagnie française de commerce, écrit avec les préjugés de son temps.",
+                "page": "p. 192"
               }
             ]
           }
@@ -229,66 +279,109 @@
   },
   "content": {
     "searchAnswer": {
-      "lead": "Des langues nées du contact entre langues africaines et langues européennes, comme le kabuverdianu au Cap-Vert ou le krio en Sierra Leone. Dans plusieurs pays, elles sont devenues langues maternelles et nationales.",
+      "lead": "Des langues nées en Afrique et dans ses îles du contact entre langues africaines et européennes, comme le kriolu du Cap-Vert, le krio de Sierra Leone ou le kreol des Seychelles.",
       "followUp": "Comment ces langues ont-elles été dévalorisées sous la colonisation ?"
     },
     "decolonialHeader": {
-      "whyProblematic": " Termes coloniaux péjoratifs appliqués aux créoles africains : - Les langues créoles africaines ont longtemps été dévalorisées par les autorités coloniales, exclues de l'éducation formelle et considérées comme des \"baragouins\" ou \"jargons\", niant leur statut de langues à part entière avec leurs propres structures grammaticales. - L'usage du terme \"créole\" lui-même, issu d'un contexte colonial (criollo/crioulo désignant initialement les personnes nées dans les colonies), peut être perçu comme portant l'héritage de classifications raciales coloniales.",
-      "selfAppellation": null,
-      "contemporaryUsage": " Les créoles d'Afrique sont des langues de contact afro-européennes, devenues langues maternelles et nationales dans plusieurs pays. Plusieurs créoles sont langues officielles (Cap-Vert, Seychelles) ou co-officielles (Maurice).",
+      "linkWithFamily": "Les créoles d'Afrique ne forment pas une famille au sens de la parenté entre langues. Le catalogue Glottolog range chacun d'eux dans la famille de la langue européenne qui lui a donné l'essentiel de ses mots : le kriolu du Cap-Vert et le santome parmi les langues romanes, sous le portugais, le créole mauricien et le créole réunionnais sous le français, le krio et le pichi parmi les langues germaniques, sous l'anglais. Joseph Greenberg les laissait déjà hors de sa classification des familles de langues d'Afrique. Notre regroupement réunit donc des langues qui partagent une histoire de contact, et non un ancêtre commun.",
       "historicalAppellations": [
-        "Pidgins et créoles",
-        "langues de nègres",
-        "langues d'esclaves",
-        "nigger Portuguese",
-        "petit-nègre",
-        "sabir"
+        "langue créole",
+        "jargon",
+        "latin créole",
+        "langue créole portugaise",
+        "Negerportugiesisch",
+        "pitinègue"
       ],
-      "originOfHistoricalTerm": " Le terme \"créole\" provient de l'espagnol *criollo* et du portugais *crioulo*, eux-mêmes dérivés du latin *creare* signifiant « élever » ou « nourrir ». Application aux langues créoles d'Afrique : En Afrique, le terme \"créole\" est utilisé principalement pour désigner des langues nées du contact entre langues européennes (portugais, français, anglais) et langues africaines dans des contextes de commerce, de comptoirs coloniaux et de traite transatlantique. Les créoles africains les plus anciens sont les créoles à base portugaise, attestés dès le XVIIe siècle dans les comptoirs portugais d'Afrique de l'Ouest (Cap-Vert, Guinée-Bissau). Le terme *Kriolu* / *Kriol* (du portugais *crioulo*) est l'auto-appellation des locuteurs cap-verdiens et bissau-guinéens depuis cette époque. Contexte historique africain : Les familles linguistiques créoles d'Afrique sont nées dans des contextes : - d'esclavage transatlantique (XVIe-XIXe siècle), - de domination coloniale portugaise, française et britannique, - de contacts forcés entre langues africaines (bantoues, mandé, atlantiques) et langues européennes (portugais, français, anglais)."
+      "originOfHistoricalTerm": "Le mot créole a désigné des personnes avant de désigner des langues. Selon le Trésor de la langue française, le français l'a pris à l'espagnol criollo, attesté en 1590, qui viendrait lui-même du portugais crioulo. Ce mot portugais désigne une personne noire née dans les colonies, et son sens premier semble être « serviteur élevé dans la maison de son maître », du verbe criar, « élever ». En français, créole désigne en 1670 une personne blanche née aux colonies. Jacques Leclerc, de l'Université Laval, décrit le même glissement : le mot a d'abord nommé l'enfant blanc né et élevé aux colonies, puis la population noire, et enfin la langue de cette population. Pour une langue d'Afrique, le mot apparaît dans le récit du voyage que le Français Michel Jajolet de La Courbe fait en 1685 sur la côte d'Afrique. Sur le fleuve Gambie, il note que des habitants qui « se disent Portugais » parlent un jargon « qu'on nomme langue créole ». À Cacheu, un officier lui dit que les gens du lieu parlent « le latin créole ». Le Trésor de la langue française pense que, dans ce sens, le mot vient directement du portugais. Au XIXe siècle, Bertrand-Bocandé décrit en 1849 « la langue créole portugaise » de Guinée et du Cap-Vert, et le linguiste autrichien Hugo Schuchardt publie à partir de 1882 ses Études créoles, qui commencent par le parler de São Tomé.",
+      "whyProblematic": "Le mot créole et les noms donnés à ces langues portent des jugements de l'époque coloniale. Le Trésor de la langue française rappelle qu'en 1670 créole désigne une « personne de pure race blanche née aux colonies », et il définit encore la langue créole relevée en 1688 comme un « portugais corrompu parlé au Sénégal ». La Courbe parle en 1685 d'« un certain jargon qui n'a que très peu de ressemblance a la langue portugaise ». En 1882, Hugo Schuchardt nomme le créole de São Tomé Negerportugiesisch, « portugais des Nègres ». Selon Jacques Leclerc, les créoles d'Afrique sont parfois appelés en français « pitinègue », c'est-à-dire « petit-nègre », et le statut des langues créoles reste souvent infériorisé parce qu'on les présente comme le résultat d'un mélange. Il rappelle que le français et l'anglais sont eux aussi nés de mélanges anciens. Toujours selon lui, parler créole restait un signe d'infériorité sociale dans la culture coloniale du Cap-Vert, et en Guinée portugaise le créole passait pour la langue des « não civilizados », les « non-civilisés », jusqu'à l'indépendance.",
+      "selfAppellation": "Les créoles d'Afrique n'ont pas de nom commun que leurs locuteurs se donneraient : « créole » est le nom que leur donnent les linguistes et les dictionnaires. Chaque langue porte en revanche un nom que ses locuteurs emploient, et l'Atlas APiCS, consacré aux langues pidgins et créoles, les relève. Au Cap-Vert, on dit kriolu, ou badíu pour le parler de l'île de Santiago, et kriol à São Vicente ; selon Jacques Leclerc, les locuteurs appellent simplement leur langue crioulo, « créole ». En Guinée-Bissau, on dit Kriyol, et en Casamance kriyol ou liŋgu kristoŋ. En Sierra Leone, la langue s'appelle Krio, et sur l'île de Bioko, en Guinée équatoriale, Pichi, Pichin ou Pichinglis. À São Tomé, on dit Santome, Lungwa Santome ou Fôlô ; les Angolares disent lunga Ngola ; à Príncipe, on dit lung'Ie, « la langue de l'île » ; à Annobón, Fa d'Ambô. Dans l'océan Indien, on dit kreol seselwa aux Seychelles et kreol renyone à La Réunion, et l'Akademi Kreol Morisien écrit kreol morisien pour le créole de Maurice. Plusieurs de ces noms, comme kriolu, kriyol, krio ou kreol, ressemblent au mot créole lui-même, et Jacques Leclerc les donne comme des formes de ce mot.",
+      "contemporaryUsage": "Les créoles d'Afrique sont aujourd'hui des langues maternelles et des langues de tous les jours. Ils servent souvent aussi de langue commune entre personnes de langues différentes. Selon l'Atlas APiCS, le krio est la langue maternelle d'environ 350 000 personnes, surtout à Freetown, et plus de 4 millions de Sierra-Léonais l'emploient comme langue commune. En Guinée-Bissau, le kriyol est parlé par plus de la moitié de la population ; Nicolas Quint et Karina Moreira Tavares comptent au moins un million de personnes qui le parlent en première ou en seconde langue. À Maurice, 90,0 % des habitants disent parler seulement créole à la maison au recensement de 2022. Aux Seychelles, le créole est la langue principale de 89,1 % des ménages au recensement de 2010. Le statut de ces langues varie. Le créole seychellois est langue officielle depuis 1978, avec l'anglais et le français, et il est entré à l'école primaire en 1982. Au Cap-Vert, le portugais reste la seule langue officielle et la seule langue d'enseignement. À Maurice, l'anglais est la seule langue officielle, et le créole n'est nommé dans aucune loi sauf celle sur la radiodiffusion, selon Jacques Leclerc. À La Réunion, le créole est reconnu comme langue régionale en 2000. Les chercheurs ne donnent pas tous la même étendue au mot : l'Atlas APiCS décrit aussi comme pidgins ou créoles des langues formées sur une langue d'Afrique, comme le kituba, le sango ou le kinubi, et Salikoko Mufwene note que le kituba est appelé créole ou non selon que l'on réserve ce mot aux langues formées sur une langue européenne dans les colonies de plantation.",
+      "geographicArea": "Cap-Vert, Guinée-Bissau, Casamance au Sénégal, Sierra Leone, Bioko et Annobón en Guinée équatoriale, São Tomé et Príncipe, Maurice et Rodrigues, Seychelles, La Réunion",
+      "numberOfLanguages": 11,
+      "totalSpeakers": 4500000
     },
     "generalInfo": {
       "branches": [
-        "Créoles à base lexicale portugaise (Kabuverdianu — Cap-Vert ; Kriol — Guinée-Bissau/Casamance ; Forro, Angolar, Lung'Ie/Principense — São Tomé-et-Príncipe)",
-        "Créoles à base lexicale anglaise (Krio — Sierra Leone ; Pichi — Guinée équatoriale/Bioko)",
-        "Créoles à base lexicale française (Seselwa — Seychelles ; Morisyen — Maurice ; Rodriguais ; Réunionnais)"
+        "Créoles portugais de Haute-Guinée : créole du Cap-Vert (kriolu), kriyol de Guinée-Bissau et de Casamance",
+        "Créoles portugais du golfe de Guinée : santome, angolar, principense (lung'Ie), fa d'Ambô",
+        "Créoles anglais d'Afrique de l'Ouest : krio de Sierra Leone, pichi de Bioko",
+        "Créoles français de l'océan Indien : créole mauricien (kreol morisien) et rodriguais, créole seychellois (kreol seselwa), créole réunionnais"
       ],
-      "geographicArea": "Afrique de l’Ouest, Afrique centrale côtière, Afrique australe côtière, Océan Indien",
-      "numberOfLanguages": 15,
-      "totalSpeakers": 10000000
+      "geographicArea": "Cap-Vert, Guinée-Bissau, Casamance au Sénégal, Sierra Leone, Bioko et Annobón en Guinée équatoriale, São Tomé et Príncipe, Maurice et Rodrigues, Seychelles, La Réunion",
+      "numberOfLanguages": 11,
+      "totalSpeakers": 4500000,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "Onze langues, selon notre compte : celles que l'Atlas APiCS décrit en Afrique et dans ses îles avec une base portugaise, anglaise ou française, en comptant une seule fois les parlers que Glottolog réunit sous un même nom."
+        },
+        "totalSpeakers": {
+          "note": "Un ordre de grandeur, calculé par nous en additionnant les chiffres que l'Atlas APiCS donne pour chaque langue. Ces chiffres datent d'années différentes et ne comptent pas tous la même chose ; le total laisse de côté les quelque 4 millions de personnes qui parlent le krio comme langue commune.",
+          "unsourced": false
+        }
+      }
     },
     "associatedPeoples": [
       {
-        "name": "Cap-Verdiens",
+        "name": "Créole Cap-Verdien",
         "peopleId": "PPL_CREOLE_CABOVERDIEN"
       },
       {
-        "name": "Sierra-Léonais (Krio)",
+        "name": "Crioulo de Guinée-Bissau",
+        "peopleId": "PPL_ANAFRO_CRIOULO"
+      },
+      {
+        "name": "Krio",
         "peopleId": "PPL_KRIO"
       },
       {
-        "name": "Mauriciens / Seychellois",
-        "peopleId": null
+        "name": "Forros",
+        "peopleId": "PPL_FORROS"
+      },
+      {
+        "name": "Angolar",
+        "peopleId": "PPL_ANGOLAR"
+      },
+      {
+        "name": "Annobonais",
+        "peopleId": "PPL_ANNOBON"
+      },
+      {
+        "name": "Créoles Mauriciens",
+        "peopleId": "PPL_CREOLE_MAURICE"
+      },
+      {
+        "name": "Créoles Seychellois",
+        "peopleId": "PPL_CREOLE_SEYCHELLES"
+      },
+      {
+        "name": "Créoles Réunionnais",
+        "peopleId": "PPL_CREOLE_REUNION"
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " Langues isolantes à morphologie analytique. Structure SVO (Sujet-Verbe-Objet) dominante. Exemples concrets (créole cap-verdien / Kriolu) : - *N ka kume funchi* « Je mange du funchi » – structure SVO, *ka* marque l'aspect progressif",
-      "phonologicalFeatures": " Détails précis :",
-      "relationsWithNeighbors": " Exemples concrets d'emprunts : - Bantoues (Angola, Congo) : le créole haïtien zonbi se rattache à une famille de formes bantoues d'Afrique centrale dont le sens diverge selon la langue. En kikongo, nzambi désigne l'Être Suprême et zumbi un fétiche bienfaisant ; en kimbundu, nzumbi désigne l'âme d'un mort qui revient en paix, par opposition à celle qui poursuit les vivants. Les sources divergent sur laquelle de ces formes est la racine, et le sens de mort-vivant n'appartient à aucune d'elles : il apparaît en Haïti, puis passe à l'anglais en 1929.",
-      "keyInnovations": " Traits spécifiques avec exemples :"
+      "typology": "Les créoles d'Afrique placent le sujet avant le verbe et l'objet après lui : l'Atlas APiCS relève cet ordre, sujet, verbe, objet, pour chacun des quatorze parlers qu'il décrit, du Cap-Vert aux Seychelles. Selon Jacques Leclerc, la grammaire des créoles est proche de celle des langues africaines et leur vocabulaire vient en très grande majorité de la langue européenne. Il refuse pourtant l'idée simple d'un vocabulaire européen posé sur une grammaire africaine, car les mélanges touchent aussi les sons, la forme des mots et la construction des phrases. Le vocabulaire garde aussi une part africaine. Pour le créole de Santiago, au Cap-Vert, Nicolas Quint et Karina Moreira Tavares étudient 96 mots d'origine africaine : 42 viennent du mandinka et 22 du wolof.",
+      "phonologicalFeatures": "Les créoles d'Afrique se partagent sur les tons, c'est-à-dire l'usage de la hauteur de la voix pour distinguer des mots. Selon l'Atlas APiCS, le krio, le pichi, le santome, le principense et l'angolar ont un système de tons simple, qui distingue des mots et des formes grammaticales, et le fa d'Ambô s'en sert seulement pour distinguer des mots. Les créoles du Cap-Vert, de Guinée-Bissau et de Casamance, comme ceux de Maurice, des Seychelles et de La Réunion, n'ont pas de tons. Le même Atlas relève des consonnes prénasalisées, prononcées avec un son nasal juste avant, comme mb, dans le créole de Santiago, le kriyol de Guinée-Bissau et de Casamance, le santome, l'angolar et le fa d'Ambô. Le krio, le pichi et les créoles de l'océan Indien n'en ont pas.",
+      "relationsWithNeighbors": "Les créoles d'Afrique ont reçu des mots et des tournures des langues parlées autour d'eux, et l'Atlas APiCS nomme ces langues pour chacun. Ce sont le wolof, le temne et le mandinka pour le créole du Cap-Vert ; le balante, le peul, le mandinka, le manjaku, le mankanya et le pepel pour le kriyol de Guinée-Bissau ; le yoruba pour le krio ; l'espagnol, le yoruba et le bubi pour le pichi ; l'edo et le kikongo pour le santome ; le kimbundu pour l'angolar ; le malgache, le tamoul, le wolof, le mandinka, des langues bantoues d'Afrique de l'Est, le bhojpuri et l'anglais pour le créole mauricien. Le contact continue aujourd'hui. En Guinée-Bissau, le kriyol se trouve entre le portugais, langue de prestige parlée par peu de gens, et les langues africaines, parlées par le plus grand nombre. À Maurice, la part des habitants qui parlent créole à la maison passe de 35,6 % en 1944 à 86,5 % en 2011, pendant que le bhojpuri recule, selon Philip Baker et Sibylle Kriegel.",
+      "keyInnovations": "Les créoles d'Afrique ne partagent pas de trait hérité d'un ancêtre commun, puisqu'ils ne descendent pas d'une même langue. Des traits communs existent en revanche à l'intérieur de groupes plus petits. Les créoles portugais de Haute-Guinée, au Cap-Vert, en Guinée-Bissau et en Casamance, partagent un fonds de mots africains venu surtout du mandinka, du wolof et du temne : selon Nicolas Quint et Karina Moreira Tavares, ce fonds remonte à un premier créole commun, formé vers la fin du XVe et le début du XVIe siècle. Le catalogue Glottolog réunit le santome, l'angolar et le fa d'Ambô dans un groupe qu'il nomme d'après leur part de vocabulaire bantou ; en angolar, une grande partie des mots vient du kimbundu, selon Philippe Maurer. Les créoles de l'océan Indien descendent, selon Jacques Leclerc, d'un même « créole bourbonnais » parlé d'abord à La Réunion."
     },
     "historyAndOrigins": {
-      "probableOrigin": " QUI a classé les créoles ? Théorie 1 : Hypothèse de la monogenèse (Hugo Schuchardt, 1882-1914)",
-      "emergencePeriod": " (1) Émergence historique des créoles africains :",
-      "diffusion": " Afficher l'ensemble des avis disponibles : Théorie 1 : Diffusion par les réseaux commerciaux portugais (Schuchardt, 1882)",
-      "contactZones": " Répondre à \"OÙ\" – Localisation géographique précise :"
+      "probableOrigin": "Les créoles d'Afrique sont nés dans des comptoirs de commerce et dans des îles colonisées, où vivaient ensemble des Européens et des Africains, libres ou réduits en esclavage. Pour les créoles portugais de Haute-Guinée, Nicolas Quint et Karina Moreira Tavares proposent un premier créole commun, formé avec l'apport du mandinka, du wolof et du temne vers la fin du XVe et le début du XVIe siècle. Le lieu de sa naissance est débattu : selon Jacques Leclerc, certains auteurs le placent au Portugal, d'autres au Cap-Vert, d'autres encore en Guinée-Bissau. Plus généralement, Jacques Leclerc explique la naissance des créoles par la façon dont les esclaves nouvellement arrivés se sont approprié la langue européenne telle que la parlaient les esclaves déjà installés, en s'appuyant sur la grammaire de leurs propres langues. Il reprend là le cadre du créoliste Robert Chaudenson, établi surtout à partir des Antilles et de l'océan Indien.",
+      "emergencePeriod": "Les créoles d'Afrique sont apparus à des époques différentes. Le premier créole portugais de Haute-Guinée daterait de la fin du XVe et du début du XVIe siècle, selon Nicolas Quint et Karina Moreira Tavares ; pour eux, les parlers de Santiago et de Fogo, deux îles peuplées avant la seconde moitié du XVIe siècle, sont les plus anciens du Cap-Vert. Le fa d'Ambô viendrait du créole de São Tomé tel qu'on le parlait au début du XVIe siècle, selon Marike Post. Le krio se développe après 1787, quand les Britanniques installent à Freetown d'anciens esclaves venus d'Amérique, selon Jacques Leclerc. Le mot créole est employé pour une langue d'Afrique dès le récit d'un voyage de 1685. Le regroupement de ces langues sous le nom de créoles vient des linguistes du XIXe siècle, comme Hugo Schuchardt, et Joseph Greenberg les laisse hors de sa classification des langues d'Afrique.",
+      "diffusion": "Les créoles d'Afrique se sont répandus avec le commerce, les déplacements de population et la colonisation. Selon Jacques Leclerc, le créole a probablement été porté du Cap-Vert vers la Guinée-Bissau par des intermédiaires de la traite, les lançados, les tangos-mãos et les grumetes. Le parler de Bissau, attesté dans la ville depuis le XVIIe siècle, est devenu depuis la seconde moitié du XXe siècle la langue dominante du pays, selon Nicolas Quint et Karina Moreira Tavares. Dans le golfe de Guinée, l'angolar, le principense et le fa d'Ambô sont très probablement issus du santome, selon Philippe Maurer. Sur l'île de Bioko, le pichi garde une variété ancienne proche du krio de Sierra Leone, selon Kofi Yakpo. Dans l'océan Indien, le créole est d'abord parlé à La Réunion, alors appelée île Bourbon, puis il gagne Maurice, et de là Rodrigues et les Seychelles, selon Jacques Leclerc.",
+      "historicalBreaks": "Les frontières coloniales ont séparé des parlers d'abord proches. Le créole de Casamance, au Sénégal, a perdu le contact avec le portugais au XIXe siècle, selon l'Atlas APiCS ; la Casamance faisait partie de la Guinée portugaise jusqu'en 1899, selon Jacques Leclerc. La Guinée se détache administrativement du Cap-Vert en 1879, selon le même auteur, et les deux pays, indépendants, se séparent de nouveau en 1981, selon l'Atlas APiCS. Dans l'océan Indien, les créoles issus du créole bourbonnais se sont différenciés avec la distance, et les différences ont grandi quand Maurice, Rodrigues et les Seychelles sont passées sous domination britannique ; les Seychelles deviennent une colonie britannique en 1814.",
+      "contactZones": "Les créoles d'Afrique se sont formés dans quatre zones de contact. La première est la côte de Haute-Guinée avec l'archipel du Cap-Vert : on y trouve les comptoirs de Cacheu, fondé vers 1590, de Bissau et de Geba, et la ville de Ziguinchor en Casamance. La deuxième est le golfe de Guinée, avec les îles de São Tomé, Príncipe, Annobón et Bioko ; à Malabo, sur Bioko, le pichi côtoie l'espagnol et le fa d'Ambô. La troisième est la presqu'île de Freetown, en Sierra Leone. La quatrième est l'ouest de l'océan Indien, avec La Réunion, Maurice, Rodrigues et les Seychelles.",
+      "majorEvents": "La colonisation et la traite des esclaves ont façonné les créoles d'Afrique. Le Portugal prend possession du Cap-Vert en 1460, et l'archipel devient un centre de la traite vers l'Amérique ; c'est à cette époque que se forme le créole capverdien, selon Jacques Leclerc. En Sierra Leone, les Britanniques fondent Freetown en 1787 pour y installer d'anciens esclaves, rejoints en 1792 par d'anciens esclaves réfugiés en Nouvelle-Écosse. En Guinée-Bissau, la lutte de libération menée par le PAIGC à partir de 1963 répand le kriyol dans tout le pays et en fait la langue de l'unité nationale, selon le même auteur. En Sierra Leone, la guerre civile des années 1990 pousse vers Freetown des habitants des provinces, qui adoptent le krio et y apportent de nouvelles formes, selon Malcolm Awadajin Finney. Plusieurs pays ont ensuite donné une place à leur créole : les Seychelles en font une langue officielle en 1978, et Maurice crée une Akademi Kreol Morisien en 2010, puis fait entrer le créole à l'école primaire comme matière à option en 2012."
     },
     "distribution": {
-      "totalSpeakers": 10000000,
+      "totalSpeakers": 4500000,
       "distributionByCountry": {
-        "MUS": 1090000,
-        "CPV": 871000,
-        "SLE": 860000,
-        "GNB": 350000
+        "MUS": 1111734,
+        "GNB": 1000000,
+        "SLE": 350000,
+        "SYC": 100000,
+        "GNQ": 105000,
+        "STP": 65000,
+        "SEN": 10000
       }
     },
     "sources": [
@@ -398,7 +491,369 @@
         "tier": "referenced",
         "source_kind": "academic",
         "notes": "Article de revue universitaire à comité de lecture consacré aux racines bantoues du mot. Accès fermé : la référence est vérifiée, son contenu ne l'est pas."
+      },
+      {
+        "title": "Étymologie de « créole », Trésor de la langue française informatisé",
+        "author": "ATILF (CNRS et Université de Lorraine)",
+        "year": null,
+        "url": "https://www.cnrtl.fr/etymologie/cr%C3%A9ole",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Portail lexical du CNRTL, onglet Étymologie, qui reprend le Trésor de la langue française (1960-1990). Lu en ligne. L'article date l'espagnol criollo de 1590 et le fait venir du portugais crioulo, « noir né dans les colonies », dont le sens premier semble être « serviteur élevé dans la maison de son maître », du verbe criar, « élever ». Il donne créole en 1670 pour une « personne de pure race blanche née aux colonies », puis « langue créole » en 1688 chez La Courbe pour un « portugais corrompu parlé au Sénégal », sens qu'il croit pris directement au portugais."
+      },
+      {
+        "title": "Premier voyage du sieur de La Courbe fait à la coste d'Afrique en 1685",
+        "author": "Michel Jajolet de La Courbe, édité par Prosper Cultru",
+        "year": 1913,
+        "url": "https://archive.org/details/premiervoyagedus00laco",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Paris, Édouard Champion et Émile Larose pour la Société de l'histoire des colonies françaises, 1913, d'après une copie manuscrite de la fin du XVIIe siècle. Lu dans la numérisation d'Internet Archive. Page 192 : dans le royaume de Barre, sur le fleuve Gambie, des habitants qui « se disent Portugais » parlent « un certain jargon qui n'a que très peu de ressemblance a la langue portugaise, et qu'on nomme langue créole ». Page 230 : à Cacheu, un officier dit à l'auteur qu'il parle « le latin portugais », mais que les gens du lieu parlent « le latin créole ». L'auteur, agent d'une compagnie française de commerce, écrit avec les préjugés de son temps."
+      },
+      {
+        "title": "Le créole, dans L'aménagement linguistique dans le monde",
+        "author": "Jacques Leclerc, Université Laval (CEFAN)",
+        "year": null,
+        "url": "https://www.axl.cefan.ulaval.ca/amsudant/creole.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Site de l'Université Laval, à Québec, lu en ligne. La page rapporte que le mot créole a d'abord désigné l'enfant blanc né aux colonies, puis la population noire et sa langue ; qu'en français, les créoles d'Afrique sont parfois appelés « pitinègue », c'est-à-dire « petit-nègre » ; que le statut des créoles reste infériorisé parce qu'on les présente comme le résultat d'un mélange ; que la grammaire des créoles est proche de celle des langues africaines et leur vocabulaire surtout européen ; et que les créoles de l'océan Indien viennent du « créole bourbonnais » parlé d'abord à La Réunion, puis à Maurice, à Rodrigues et aux Seychelles."
+      },
+      {
+        "title": "Cap-Vert, dans L'aménagement linguistique dans le monde",
+        "author": "Jacques Leclerc, Université Laval (CEFAN)",
+        "year": 2026,
+        "url": "https://www.axl.cefan.ulaval.ca/afrique/Cap-Vert.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Site de l'Université Laval, page mise à jour le 22 octobre 2026, lue en ligne. Section 2.2 : les locuteurs appellent simplement leur langue « crioulo » ; le portugais reste la seule langue officielle. Section 3.1 : prise de possession de l'archipel par le Portugal en 1460, formation du créole à l'époque de la traite, détachement de la Guinée en 1879, et créole vu comme un signe d'infériorité sociale dans la culture coloniale."
+      },
+      {
+        "title": "Guinée-Bissau, dans L'aménagement linguistique dans le monde",
+        "author": "Jacques Leclerc, Université Laval (CEFAN)",
+        "year": 2026,
+        "url": "https://www.axl.cefan.ulaval.ca/afrique/Guinee-Bissau.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Site de l'Université Laval, page mise à jour le 22 octobre 2026, lue en ligne. Section 2.2 : le crioulo, appelé kriol en créole, et la Casamance rattachée à la Guinée portugaise jusqu'en 1899. Section 3 : apparition du créole entre la fin du XVIe et le début du XVIIe siècle, avec des avis divergents sur le lieu (Portugal, Cap-Vert ou Guinée-Bissau) ; transfert probable depuis le Cap-Vert par les lançados, les tangos-mãos et les grumetes ; créole perçu comme la langue des « não civilizados » jusqu'à l'indépendance ; diffusion pendant la lutte de libération menée par le PAIGC à partir de 1963."
+      },
+      {
+        "title": "Sierra Leone, dans L'aménagement linguistique dans le monde",
+        "author": "Jacques Leclerc, Université Laval (CEFAN)",
+        "year": 2017,
+        "url": "https://www.axl.cefan.ulaval.ca/afrique/sierra_leone.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Site de l'Université Laval, page mise à jour le 7 décembre 2017, lue en ligne. Section 3.1 : fondation de Freetown par les Britanniques en 1787 pour d'anciens esclaves, arrivée en 1792 d'anciens esclaves réfugiés en Nouvelle-Écosse, et développement du krio à la suite."
+      },
+      {
+        "title": "Maurice, dans L'aménagement linguistique dans le monde",
+        "author": "Jacques Leclerc, Université Laval (CEFAN)",
+        "year": 2024,
+        "url": "https://www.axl.cefan.ulaval.ca/afrique/maurice.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Site de l'Université Laval, page mise à jour le 20 avril 2024, lue en ligne. Section 2.3 : l'Akademi Kreol Morisien écrit kreol morisien ; l'académie est fondée en 2010, et le créole entre à l'école primaire comme matière à option en 2012. La page note aussi que le créole n'est nommé dans aucune loi, sauf celle sur la société de radiodiffusion."
+      },
+      {
+        "title": "The common African lexical core of the Upper Guinea Creoles and its historical significance, Journal of Ibero-Romance Creoles, 9",
+        "author": "Nicolas Quint et Karina Moreira Tavares",
+        "year": 2019,
+        "url": "https://hal.science/hal-02508052",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Article de revue, p. 115-161, lu dans l'archive ouverte HAL. Section 2 : Santiago et Fogo, peuplées avant la seconde moitié du XVIe siècle, ont les parlers les plus anciens du Cap-Vert ; le parler de Bissau, attesté dans la ville depuis le XVIIe siècle, est devenu la langue dominante du pays et compte au moins un million de locuteurs en première ou seconde langue ; Cacheu est fondé vers 1590. Tableau 1 : sur 96 mots d'origine africaine du créole de Santiago, 42 viennent du mandinka et 22 du wolof. Conclusion : ce fonds africain remonte à un premier créole commun formé vers la fin du XVe et le début du XVIe siècle."
+      },
+      {
+        "title": "2022 Population Census, Main Results (Economic and Social Indicators, no 1687)",
+        "author": "Statistics Mauritius",
+        "year": 2022,
+        "url": "https://statsmauritius.govmu.org/Documents/Statistics/ESI/2022/EI1687/2022%20Population%20Census_Main%20Results_18112022.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Office de la statistique de Maurice, publication du 18 novembre 2022, lue en ligne. Section 6, page 9 : 90,0 % des habitants déclarent parler seulement créole à la maison, contre 89,8 % en 2011. Tableau 1 : population résidente de la République de Maurice, 1 235 260 personnes."
+      },
+      {
+        "title": "Population and Housing Census 2010 Report",
+        "author": "National Bureau of Statistics, Republic of Seychelles",
+        "year": 2012,
+        "url": "https://catalog.ihsn.org/catalog/4079/download/55081",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport du bureau national de la statistique des Seychelles, lu dans le catalogue de l'International Household Survey Network. Chapitre 8, tableau 8.1, page 67 : le créole est la langue principale à la maison de 22 073 ménages sur 24 770, soit 89,1 % en 2010, contre 91,8 % en 2002. Le rapport compte des ménages, pas des personnes."
+      },
+      {
+        "title": "APiCS Online, Structure dataset 15 : Krio",
+        "author": "Malcolm Awadajin Finney",
+        "year": 2013,
+        "url": "https://apics-online.info/contributions/15",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des pidgins et des créoles publié en ligne par l'Institut Max Planck d'anthropologie évolutionniste de Leipzig, lu en ligne. Nom que les locuteurs donnent à leur langue : Krio. Environ 350 000 locuteurs de langue maternelle et environ 4 millions de personnes qui l'emploient comme langue commune ; langues qui ont contribué : yoruba et autres langues d'Afrique de l'Ouest. Le texte décrit l'arrivée à Freetown, pendant la guerre civile des années 1990, d'habitants des provinces qui ont adopté le krio."
+      },
+      {
+        "title": "APiCS Online, Structure dataset 19 : Pichi",
+        "author": "Kofi Yakpo",
+        "year": 2013,
+        "url": "https://apics-online.info/contributions/19",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des pidgins et des créoles publié en ligne par l'Institut Max Planck d'anthropologie évolutionniste de Leipzig, lu en ligne. Noms que les locuteurs donnent à leur langue : Pichi, Pichin, Pichinglis, Krio. Au moins 100 000 locuteurs sur l'île de Bioko, en Guinée équatoriale ; langues qui ont contribué : espagnol, yoruba, portugais, bubi, français. Le texte décrit une variété ancienne proche du krio de Sierra Leone."
+      },
+      {
+        "title": "APiCS Online, Structure dataset 30 : Cape Verdean Creole of Santiago",
+        "author": "Jürgen Lang",
+        "year": 2013,
+        "url": "https://apics-online.info/contributions/30",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des pidgins et des créoles publié en ligne par l'Institut Max Planck d'anthropologie évolutionniste de Leipzig, lu en ligne. Noms que les locuteurs donnent à leur langue : badíu, kriolu. Le texte indique qu'environ un million de personnes parlent le créole du Cap-Vert dans l'archipel et à l'étranger, que le portugais reste la seule langue officielle et la seule langue d'enseignement, et que le Cap-Vert est séparé de la Guinée-Bissau depuis 1981. Langues qui ont contribué : wolof, temne, mandinka."
+      },
+      {
+        "title": "APiCS Online, Structure dataset 32 : Cape Verdean Creole of São Vicente",
+        "author": "Dominika Swolkien",
+        "year": 2013,
+        "url": "https://apics-online.info/contributions/32",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des pidgins et des créoles publié en ligne par l'Institut Max Planck d'anthropologie évolutionniste de Leipzig, lu en ligne. Noms que les locuteurs donnent à leur langue : kriol, kriol d'Sonsent. Environ 76 000 locuteurs sur l'île de São Vicente."
+      },
+      {
+        "title": "APiCS Online, Structure dataset 33 : Guinea-Bissau Kriyol",
+        "author": "Incanha Intumbo, Liliana Inverno et John Holm",
+        "year": 2013,
+        "url": "https://apics-online.info/contributions/33",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des pidgins et des créoles publié en ligne par l'Institut Max Planck d'anthropologie évolutionniste de Leipzig, lu en ligne. Nom que les locuteurs donnent à leur langue : Kriyol. Le texte indique que le kriyol est parlé par plus de la moitié des 1 520 830 habitants de 2009, qu'il occupe une place intermédiaire entre le portugais et les langues africaines, et que le parler de Casamance a perdu le contact avec le portugais au XIXe siècle. Langues qui ont contribué : balante, peul, mandinka, manjaku, mankanya, pepel."
+      },
+      {
+        "title": "APiCS Online, Structure dataset 34 : Casamancese Creole",
+        "author": "Noël Bernard Biagui et Nicolas Quint",
+        "year": 2013,
+        "url": "https://apics-online.info/contributions/34",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des pidgins et des créoles publié en ligne par l'Institut Max Planck d'anthropologie évolutionniste de Leipzig, lu en ligne. Noms que les locuteurs donnent à leur langue : kriyol, liŋgu kristoŋ. Environ 10 000 locuteurs de langue maternelle, autour de Ziguinchor, et entre 20 000 et 50 000 en comptant ceux qui le parlent en seconde langue."
+      },
+      {
+        "title": "APiCS Online, Structure dataset 35 : Santome",
+        "author": "Tjerk Hagemeijer",
+        "year": 2013,
+        "url": "https://apics-online.info/contributions/35",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des pidgins et des créoles publié en ligne par l'Institut Max Planck d'anthropologie évolutionniste de Leipzig, lu en ligne. Noms que les locuteurs donnent à leur langue : Santome, Lungwa Santome, Fôlô, Dioletu. Le texte compte environ 60 000 locuteurs en 2012, soit à peu près un tiers de la population, et un recul rapide au profit du portugais. Langues qui ont contribué : surtout l'edo et le kikongo."
+      },
+      {
+        "title": "APiCS Online, Structure dataset 36 : Angolar",
+        "author": "Philippe Maurer",
+        "year": 2013,
+        "url": "https://apics-online.info/contributions/36",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des pidgins et des créoles publié en ligne par l'Institut Max Planck d'anthropologie évolutionniste de Leipzig, lu en ligne. Nom que les locuteurs donnent à leur langue : lunga Ngola. Environ 5 000 locuteurs au sud de l'île de São Tomé. Le texte décrit un créole de marrons, d'esclaves enfuis, très probablement issu du santome comme le principense et le fa d'Ambô, avec une grande part de vocabulaire venu du kimbundu."
+      },
+      {
+        "title": "APiCS Online, Structure dataset 37 : Principense",
+        "author": "Philippe Maurer",
+        "year": 2013,
+        "url": "https://apics-online.info/contributions/37",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des pidgins et des créoles publié en ligne par l'Institut Max Planck d'anthropologie évolutionniste de Leipzig, lu en ligne. Noms que les locuteurs donnent à leur langue : lung'Ie, « la langue de l'île », et fôrô. Moins de 100 locuteurs ; langue en danger."
+      },
+      {
+        "title": "APiCS Online, Structure dataset 38 : Fa d'Ambô",
+        "author": "Marike Post",
+        "year": 2013,
+        "url": "https://apics-online.info/contributions/38",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des pidgins et des créoles publié en ligne par l'Institut Max Planck d'anthropologie évolutionniste de Leipzig, lu en ligne. Nom que les locuteurs donnent à leur langue : Fa d'Ambô. Entre 4 500 et 5 000 locuteurs à Annobón et à Malabo ; le texte fait probablement venir la langue du créole de São Tomé tel qu'on le parlait au début du XVIe siècle."
+      },
+      {
+        "title": "APiCS Online, Structure dataset 54 : Reunion Creole",
+        "author": "Annegret Bollée",
+        "year": 2013,
+        "url": "https://apics-online.info/contributions/54",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des pidgins et des créoles publié en ligne par l'Institut Max Planck d'anthropologie évolutionniste de Leipzig, lu en ligne. Noms que les locuteurs donnent à leur langue : kreol renyone, kreol reyon, reyone. Le texte indique que le créole est parlé par environ 90 % des plus de 800 000 habitants de La Réunion et qu'il est reconnu comme langue régionale en 2000."
+      },
+      {
+        "title": "APiCS Online, Structure dataset 55 : Mauritian Creole",
+        "author": "Philip Baker et Sibylle Kriegel",
+        "year": 2013,
+        "url": "https://apics-online.info/contributions/55",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des pidgins et des créoles publié en ligne par l'Institut Max Planck d'anthropologie évolutionniste de Leipzig, lu en ligne. Plus de 1 300 000 locuteurs. Le texte indique que la part des habitants qui parlent créole à la maison passe de 35,6 % en 1944 à 86,5 % en 2011, pendant que le bhojpuri recule, et que l'anglais est la seule langue officielle. Langues qui ont contribué : malgache, tamoul, wolof, mandinka, langues bantoues d'Afrique de l'Est, bhojpuri, anglais."
+      },
+      {
+        "title": "APiCS Online, Structure dataset 56 : Seychelles Creole",
+        "author": "Susanne Maria Michaelis et Marcel Rosalie",
+        "year": 2013,
+        "url": "https://apics-online.info/contributions/56",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des pidgins et des créoles publié en ligne par l'Institut Max Planck d'anthropologie évolutionniste de Leipzig, lu en ligne. Nom que les locuteurs donnent à leur langue : kreol (seselwa). Environ 100 000 locuteurs. Le texte indique que le créole est langue officielle depuis 1978 avec l'anglais et le français, qu'il entre à l'école primaire en 1982, et que les Seychelles deviennent une colonie britannique en 1814."
+      },
+      {
+        "title": "APiCS Online, Structure dataset 58 : Kikongo-Kituba",
+        "author": "Salikoko S. Mufwene",
+        "year": 2013,
+        "url": "https://apics-online.info/contributions/58",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des pidgins et des créoles publié en ligne par l'Institut Max Planck d'anthropologie évolutionniste de Leipzig, lu en ligne. Le texte note que le kituba est appelé créole ou non selon que l'on réserve ce mot aux langues formées sur une langue européenne dans les colonies de plantation."
+      },
+      {
+        "title": "APiCS Online, caractéristique 1 : Order of subject, object, and verb",
+        "author": "Magnus Huber et le consortium APiCS",
+        "year": 2013,
+        "url": "https://apics-online.info/parameters/1",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Carte et liste des valeurs, lues en ligne. L'ordre sujet, verbe, objet est relevé pour les quatorze parlers créoles d'Afrique et de l'océan Indien à base portugaise, anglaise ou française que décrit APiCS."
+      },
+      {
+        "title": "APiCS Online, caractéristique 120 : Tone",
+        "author": "Le consortium APiCS",
+        "year": 2013,
+        "url": "https://apics-online.info/parameters/120",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Liste des valeurs, lue en ligne. Système de tons simple pour le krio, le pichi, le santome, le principense et l'angolar ; tons pour distinguer des mots seulement en fa d'Ambô ; pas de tons pour les créoles du Cap-Vert, de Guinée-Bissau, de Casamance, de La Réunion, de Maurice et des Seychelles."
+      },
+      {
+        "title": "APiCS Online, caractéristique 129 : Prenasalized consonants",
+        "author": "Le consortium APiCS",
+        "year": 2013,
+        "url": "https://apics-online.info/parameters/129",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Liste des valeurs, lue en ligne. Consonnes prénasalisées présentes dans le créole de Santiago, le kriyol de Guinée-Bissau et de Casamance, le santome, l'angolar et le fa d'Ambô ; absentes du krio, du pichi, du principense, des parlers de Brava et de São Vicente et des créoles de l'océan Indien."
+      },
+      {
+        "title": "Glottolog 5.3, fiche « Krio »",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/krio1253",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu en ligne. Le krio est classé parmi les langues indo-européennes, dans la branche germanique, sous l'anglais, avec le pichi dans un groupe des créoles anglais d'Afrique de l'Ouest."
+      },
+      {
+        "title": "Glottolog 5.3, fiche « Kabuverdianu »",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/kabu1256",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu en ligne. Le créole du Cap-Vert est classé parmi les langues indo-européennes, dans la branche romane, sous le portugais, avec le créole de Haute-Guinée."
+      },
+      {
+        "title": "Glottolog 5.3, fiche « Sãotomense »",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/saot1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu en ligne. Le santome est classé sous le portugais, dans un groupe des créoles portugais du golfe de Guinée nommé d'après leur part de vocabulaire bantou, avec l'angolar et le fa d'Ambô."
+      },
+      {
+        "title": "Glottolog 5.3, fiche « Morisyen »",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/mori1278",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu en ligne. Le créole mauricien est classé parmi les langues indo-européennes, dans la branche romane, sous le français, avec le créole seychellois dans un groupe des créoles de l'Isle de France."
+      },
+      {
+        "title": "Glottolog 5.3, fiche « Réunion Creole French »",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/reun1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu en ligne. Le créole réunionnais est classé sous le français, hors du groupe qui réunit le créole mauricien et le créole seychellois."
       }
-    ]
+    ],
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "MUS",
+          "speakers": 1111734,
+          "source": {
+            "title": "2022 Population Census, Main Results (Economic and Social Indicators, no 1687), Statistics Mauritius",
+            "url": "https://statsmauritius.govmu.org/Documents/Statistics/ESI/2022/EI1687/2022%20Population%20Census_Main%20Results_18112022.pdf",
+            "tier": "official",
+            "notes": "Chiffre calculé par nous en appliquant la part de 90,0 % des habitants qui parlent seulement créole à la maison (section 6) à la population résidente de 1 235 260 personnes (tableau 1). Le document ne donne pas ce nombre lui-même, et il ne compte pas les personnes qui parlent créole avec une autre langue."
+          }
+        },
+        {
+          "country": "GNB",
+          "speakers": 1000000,
+          "source": {
+            "title": "The common African lexical core of the Upper Guinea Creoles and its historical significance, Journal of Ibero-Romance Creoles, 9, Nicolas Quint et Karina Moreira Tavares, 2019",
+            "url": "https://hal.science/hal-02508052",
+            "tier": "referenced",
+            "notes": "Au moins un million de personnes parlent le kriyol de Bissau en première ou en seconde langue, selon les auteurs, qui citent Jacobs et Quint (2016). Lu dans l'archive ouverte HAL, section 2."
+          }
+        },
+        {
+          "country": "SLE",
+          "speakers": 350000,
+          "source": {
+            "title": "APiCS Online, Structure dataset 15 : Krio, Malcolm Awadajin Finney, 2013",
+            "url": "https://apics-online.info/contributions/15",
+            "tier": "referenced",
+            "notes": "Environ 350 000 locuteurs de langue maternelle. APiCS compte aussi environ 4 millions de personnes qui emploient le krio comme langue commune."
+          }
+        },
+        {
+          "country": "SYC",
+          "speakers": 100000,
+          "source": {
+            "title": "APiCS Online, Structure dataset 56 : Seychelles Creole, Susanne Maria Michaelis et Marcel Rosalie, 2013",
+            "url": "https://apics-online.info/contributions/56",
+            "tier": "referenced",
+            "notes": "Environ 100 000 locuteurs. Le recensement de 2010 compte de son côté 89,1 % des ménages qui parlent surtout créole à la maison."
+          }
+        },
+        {
+          "country": "GNQ",
+          "speakers": 105000,
+          "source": {
+            "title": "APiCS Online, Structure datasets 19 (Pichi) et 38 (Fa d'Ambô), 2013",
+            "url": "https://apics-online.info/contributions/19",
+            "tier": "referenced",
+            "notes": "Somme calculée par nous à partir de l'Atlas APiCS : au moins 100 000 locuteurs du pichi selon Kofi Yakpo, et environ 5 000 locuteurs du fa d'Ambô selon Marike Post."
+          }
+        },
+        {
+          "country": "STP",
+          "speakers": 65000,
+          "source": {
+            "title": "APiCS Online, Structure datasets 35 (Santome), 36 (Angolar) et 37 (Principense), 2013",
+            "url": "https://apics-online.info/contributions/35",
+            "tier": "referenced",
+            "notes": "Somme calculée par nous à partir de l'Atlas APiCS : environ 60 000 locuteurs du santome en 2012 selon Tjerk Hagemeijer, environ 5 000 locuteurs de l'angolar et moins de 100 locuteurs du principense selon Philippe Maurer."
+          }
+        },
+        {
+          "country": "SEN",
+          "speakers": 10000,
+          "source": {
+            "title": "APiCS Online, Structure dataset 34 : Casamancese Creole, Noël Bernard Biagui et Nicolas Quint, 2013",
+            "url": "https://apics-online.info/contributions/34",
+            "tier": "referenced",
+            "notes": "Environ 10 000 locuteurs de langue maternelle autour de Ziguinchor, et entre 20 000 et 50 000 en comptant ceux qui le parlent en seconde langue."
+          }
+        }
+      ]
+    }
   }
 }

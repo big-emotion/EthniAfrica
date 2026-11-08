@@ -8,73 +8,75 @@
     "appellations": {
       "mainName": "Wane",
       "selfAppellation": "Wane",
-      "exonyms": ["Hwane", "Ngwane"],
-      "originOfExonyms": "Hwane et Ngwane sont des variantes orthographiques du meme nom, issues de differentes conventions de romanisation utilisees par les linguistes et missionnaires. Le code ISO hwa reflete la prononciation avec aspiration initiale. Wane est la forme francisee courante.",
-      "whyProblematic": "La denomination Wane peut preter a confusion avec d'autres groupes africains portant des noms similaires (notamment les Ngwane d'Afrique australe). Ce petit peuple krou de Cote d'Ivoire est tres peu documente et souvent confondu avec les Bakwe, son groupe linguistique frere de la branche est krou.",
-      "contemporaryUsage": "Wane ou Wane est utilise dans les sources ivoiriennes et linguistiques. La langue est classee comme en danger (Ethnologue : langue en danger, Wane Language HWA). PeopleGroups.org recense 5 800 Wane en Cote d'Ivoire.",
-      "linguisticFamily": "FLG_KROU",
-      "ethnoLinguisticGroup": "Krou oriental (branche Bakwe-Wane)",
-      "historicalRegion": "Cote sud-ouest de la Cote d'Ivoire, region maritime entre San Pedro et Sassandra",
-      "currentCountries": ["CIV"]
+      "exonyms": ["Bodo"],
+      "spellingAliases": [
+        "Wané",
+        "Hwane",
+        "Ngwané",
+        "Houané",
+        "Hwĩne",
+        "Hwãne"
+      ],
+      "originOfExonyms": "Le nom Bodo est celui que les Néyo de Sassandra, voisins de la côte, donnaient à la région de Victory et à ses habitants : le manuel de néouolé de l'administrateur colonial Georges Thomann, paru en 1905, traduit « région de Victory » par Bòdo et « indigène de Victory » par Bòdo-ñõ. Maurice Delafosse écrit en 1904 que les Houané sont « appelés aussi Bodo ».",
+      "whyProblematic": "Les auteurs ne rangent pas les Wané dans le même ensemble. En 1904, l'administrateur colonial Maurice Delafosse les compte parmi les Bakoué du groupe krou occidental et les dit « appelés aussi Bodo ». Glottolog place aujourd'hui leur langue avec le bakwé, dans une branche du krou oriental.",
+      "contemporaryUsage": "Les catalogues de langues écrivent le nom Wane, Wané, Hwane ou Ngwané, selon Glottolog, qui donne pour la langue le code ISO 639-3 hwa.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Wane du littoral — communautes cotieres pratiquant la peche artisanale et le commerce maritime le long du golfe de Guinee",
-      "Wane de l'interieur — agriculteurs de la foret tropicale, producteurs de riz, de manioc et d'igname",
-      "Wane de la region de San Pedro — sous-groupe influence par le developpement portuaire depuis les annees 1970",
-      "Wane de la region de Sassandra — sous-groupe historique de la ville de Sassandra, l'une des plus anciennes de la cote ivoirienne",
-      "Lineages fondateurs des villages de la zone cotiere, dont les chefs portent les titres traditionnels de proprietaires de terre"
+      "Houané proprement dits, habitants de la région de Victory, selon Maurice Delafosse en 1904",
+      "Oboua, au nord des Houané proprement dits jusqu'au Sassandra, à Inahiri, que Delafosse leur rattache en 1904"
     ],
     "origins": {
-      "ancientOrigins": "Les Wane font partie du groupe krou oriental (Eastern Kru, branche Bakwe), qui occupe la zone de transition entre la foret et la cote du sud-ouest ivoirien. Comme tous les peuples krou, ils sont vraisemblablement arrives dans leur region actuelle entre le XVe et le XVIIe siecle, depuis l'interieur forestier, poussés par les pressions des royaumes mandingues et les mouvements de populations regionales. Leur etablissement sur la cote sud-ouest de la Cote d'Ivoire leur a confere un role dans les reseaux commerciaux cotiers.",
-      "formationPeriod": "La langue wane est documentee par SIL Ethnologue avec 2 100 locuteurs en 1993 (estimate 5 800 en 2025 selon PeopleGroups.org). Le groupe se situe sur la cote sud-ouest ivoirienne, zone historiquement frequentee par les commercants europeens depuis le XVe siecle (Portugais) et les negociants de traite aux XVIIe-XIXe siecles.",
-      "migrationRoutes": [
-        "Depuis l'interieur forestier ivoirien vers la cote sud-ouest, suivant les vallees de la Sassandra et de ses affluents",
-        "Trajectoire commune au groupe krou oriental (Bakwe) : installation dans la zone cotiere entre Sassandra et San Pedro"
-      ],
+      "ancientOrigins": null,
+      "formationPeriod": null,
+      "migrationRoutes": [],
       "historicalSettlementZones": [
-        "Cote sud-ouest de la Cote d'Ivoire, region de San Pedro et Sassandra",
-        "Zone littorale entre le fleuve Sassandra et la frontiere liberienne"
+        "Région de Victory, sur la côte, à la suite des Néyo et jusqu'à l'embouchure de la Nonoua, selon Maurice Delafosse en 1904",
+        "Côte du sud-ouest de la Côte d'Ivoire, entre Sassandra et San-Pédro, où Glottolog situe la langue wané"
       ],
-      "unificationsOrDivisions": "Organisation en lignages autonomes sans structure politique supra-locale permanente. Le groupe wane est etroitement lie au groupe bakwe (linguistiquement frere), et des echanges matrimoniaux et culturels existent entre ces deux groupes voisins.",
-      "externalInfluences": "Contacts avec les commerçants europeens (Portugais, puis Français) sur la cote depuis le XVe siecle. Influence des missions chretiennes au XIXe et XXe siecles. Integration dans la colonie française de Cote d'Ivoire (1893-1960) et dans l'Etat ivoirien post-independance. Contacts avec les peuples neyo et bakwe voisins. Pression de l'orpaillage et de l'exploitation forestiere sur les terres traditionnelles au XXe-XXIe siecles.",
-      "majorHistoricalEvents": "Resistance a la penetration coloniale française dans la region du Bas-Sassandra a la fin du XIXe siecle. Integration dans l'administration coloniale française de la Cote d'Ivoire apres 1915. Pendant la crise ivoirienne (2002-2011), la region du Bas-Sassandra fut affectee par des tensions. Le developpement du port de San Pedro depuis les annees 1970 a transforme la region cotiere wane."
+      "unificationsOrDivisions": "Le classement des Wané a changé avec les linguistes. En 1904, Maurice Delafosse range les Houané dans le groupe krou occidental, qu'il nomme « Bakoué ». Glottolog place aujourd'hui le wané avec le bakwé dans une branche « bakwé-wané » du krou oriental.",
+      "externalInfluences": null,
+      "majorHistoricalEvents": null
     },
     "organization": {
-      "traditionalPoliticalSystem": "Organisation decentralisee typique des peuples krou orientaux : chaque village est gouverne par ses anciens patrilineaires. Pas de chef supreme hereditaire. Le chef de village est choisi sur la base de ses qualites personnelles et de son experience. Les decisions importantes sont prises de maniere consensuelle par les aines du clan. Avec l'integration dans l'Etat ivoirien, des chefs de village officiels ont ete reconnus.",
-      "clanOrganization": "Structure en lignages patrilineaires. Chaque village correspond a un groupe de descendance fonde par un ancetre eponyme. Les lignages regissent l'acces a la terre, les alliances matrimoniales et les obligations rituelles. La propriete fonciere est communautaire au niveau du lignage.",
-      "ageClassSystems": "Rites de passage pour les garçons et les filles, dans le cadre de ceremonies initiatiques collectives communes aux peuples krou. La transmission des savoirs traditionnels (peche, agriculture, rites) se fait au sein des groupes d'age.",
-      "roleOfLineages": "Les lignages patrilineaires constituent l'unite fondamentale de l'organisation sociale. Ils determinent l'identite clanique, l'acces aux ressources (terres agricoles, zones de peche), les alliances et les obligations cerimoniales.",
-      "religiousAuthority": "Comme les autres peuples krou, les Wane reconnaissent des specialistes rituels (deya chez les Kru voisins) charges de la mediation avec les esprits territoriaux de la mer, des rivieres et de la foret. Les rites agricoles et de peche requierent des ceremoniels specifiques avant et apres les saisons de travail. L'autorite des anciens est etroitement liee a leurs fonctions rituelles de gardiens de la memoire ancestrale et de gestionnaires des relations avec les entites spirituelles. Les chefs de terre (proprietaires symboliques du sol) ont une fonction religieuse centrale dans la benediction des cultures et l'accueil de nouveaux habitants."
+      "traditionalPoliticalSystem": null,
+      "clanOrganization": null,
+      "ageClassSystems": null,
+      "roleOfLineages": null,
+      "religiousAuthority": null
     },
     "languages": {
-      "mainLanguage": "Wane (Hwane)",
+      "mainLanguage": "Wané (hwa)",
       "isoCodes": ["hwa"],
-      "dialects": [
-        "Pas de dialectes documentes ; varietes inter-villageoises possibles"
-      ],
-      "vehicularRole": "La langue wane est classee en danger par Ethnologue (langue indigene en danger, CIV). SIL recense 2 100 locuteurs en 1993 ; PeopleGroups.org estime la communaute wane a 5 800 personnes en 2025. Le français est la langue d'education et d'administration. Le dioula (bambara ivoirien) est utilise comme lingua franca dans les marches regionaux. La langue wane appartient a la branche Bakwe-Wane de l'est krou (classification : Niger-Congo, Volta-Congo, Kru, Eastern, Bakwe)."
+      "dialects": [],
+      "vehicularRole": null
+    },
+    "externalIdentifiers": {
+      "glottocode": "wane1242",
+      "iso639_3": "hwa"
     },
     "culture": {
-      "majorRites": "Ceremonies d'initiation masculine collectives en foret sacree, similaires a celles des peuples krou voisins (Bakwe, Neyo). Rites funeraires associant chants, danses et percussions pendant plusieurs jours. Rites de premiere peche et de premiere recolte : offrandes aux esprits de la mer et de la foret avant l'exploitation des ressources naturelles. Rites de guerison par les specialistes rituels. Ceremonies de mariage comportant des echanges de dons entre lignages et des celebrations collectives.",
-      "symbols": "Les masques en bois (comme dans tout le monde krou) sont les supports des esprits protecteurs et des forces ancestrales. Les pirogues de peche artisanale symbolisent le lien au monde maritime. Les ornements corporels (parures, scarifications traditionnelles) marquent les etapes de la vie et l'appartenance clanique.",
-      "artsAndMusic": "Les arts et la musique des Wane s'inscrivent dans le continuum culturel krou oriental (partage avec les Bakwe et les Neyo). Sculpture sur bois pour les masques et les objets rituels. Percussions : tambours membranophones de differentes tailles, hochets et cloches rituelles. Chants responsoriaux (soliste et choeur collectif) lies aux ceremonies de la vie, aux rites agricoles et aux fetes. Danse ceremoniale integrant des masques. Artisanat de peche : construction de pirogues monoxyles, fabrication de filets et de nasses tresses. Tissage de nattes et de paniers par les femmes.",
-      "spiritualities": "Animisme traditionnel avec croyance en un dieu createur supreme, des esprits territoriaux (foret, riviere, mer) et les ames des ancetres. Les Wane, comme les autres peuples krou, reconnaissent des esprits de brousse et des esprits marins qui protegent ou menacent les communautes selon leur contentement. Les specialistes rituels assurent la mediation entre les vivants et les entites spirituelles. Influence du christianisme (protestantisme et catholicisme) depuis les missions du XIXe-XXe siecles, plus forte en zone cotiere. L'islam est minoritaire dans cette region forestiere."
+      "majorRites": null,
+      "symbols": null,
+      "artsAndMusic": null,
+      "spiritualities": null
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de royaumes ni de chefferies centralisees documentees. Organisation clanique autonome sans structure supra-locale permanente, typique de l'organisation krou. Les Wane ont ete incorpores dans le systeme administratif colonial français (Bas-Sassandra) puis dans les structures de l'Etat ivoirien.",
-      "relationsWithNeighbors": "Voisinage linguistique et culturel etroit avec les Bakwe (groupe frere dans la branche east krou). Relations avec les Neyo et les populations cotieres voisines. Contacts historiques avec les Kru/Klao liberiens a travers la frontiere ivoiro-liberienne. Relations commerciales avec les Dida, les Bete et les groupes interieurs. Presence de travailleurs peuls et burkinabes dans la region depuis le XXe siecle.",
-      "conflictsOrAlliances": "Resistance a la penetration coloniale dans la region du Bas-Sassandra. Les populations krou cotieres, dont les Wane, ont ete mises a contribution comme travailleurs dans les chantiers coloniaux. Pendant la crise ivoirienne (2002-2011), la region du Bas-Sassandra a connu des tensions entre communautes autochtones et immigres.",
-      "diaspora": "Migration economique interne vers San Pedro (principal port de la region, developpe depuis les annees 1970 avec l'essor de l'exportation de bois et de cacao) et vers Abidjan. La region du Bas-Sassandra a attire des travailleurs migrants des pays voisins (Burkina Faso, Mali, Ghana) dans les plantations de cacao et de cafe, modifiant la composition demographique locale. Les Wane urbains maintiennent des liens avec leurs villages d'origine par des visites lors des ceremonies importantes. Pas de diaspora internationale wane significative documentee hors de Cote d'Ivoire."
+      "kingdomsOrChiefdoms": null,
+      "relationsWithNeighbors": "En 1904, Maurice Delafosse place les Houané entre les Néyo, à l'est sur la côte, et les Pia du bassin du San-Pédro, à l'ouest ; les Bakwé s'étendent au nord des Houané et des Oboua.",
+      "conflictsOrAlliances": null,
+      "diaspora": null
     },
     "demography": {
       "totalPopulation": 5800,
       "referenceYear": 2025,
-      "source": "PeopleGroups.org — Wane of Cote d'Ivoire (PGID: PG013141) : 5 800 personnes en 2025. SIL Ethnologue 1993 : 2 100 locuteurs. Ethnologue : langue en danger (HWA). Estimation 2025 basee sur les donnees demographiques disponibles.",
+      "source": "PeopleGroups.org — Wane of Côte d'Ivoire (PGID : PG013141) : 5 800 personnes en 2025. SIL Ethnologue 1993 : 2 100 locuteurs. Ethnologue : langue en danger (hwa). Estimation 2025 fondée sur les données démographiques disponibles. Le recensement de 2021 ne publie que de grands groupes : les peuples de langues krou, dont les Wané, y forment 9,1 % des Ivoiriens, selon l'Agence nationale de la statistique.",
       "distributionByCountry": [
         {
           "country": "CIV",
           "population": 5800,
-          "note": "Cote sud-ouest de la Cote d'Ivoire, region littorale entre Sassandra et San Pedro (departement du Bas-Sassandra)"
+          "note": "Côte du sud-ouest de la Côte d'Ivoire, entre Sassandra et San-Pédro"
         }
       ]
     },
@@ -131,11 +133,49 @@
         "url": "https://www.britannica.com/topic/Kru",
         "tier": "unverified",
         "source_kind": "encyclopedia"
+      },
+      {
+        "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+        "url": "https://archive.org/details/vocabulairescomp00delauoft",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "author": "Maurice Delafosse",
+        "year": 1904,
+        "notes": "Paris, Ernest Leroux, 1904 ; l'auteur est alors administrateur colonial en Côte d'Ivoire. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive, p. 68, 70, 72 et 74. Page 70 : « Les Hwĩne ou Hwãne (Houané), appelés aussi Bodo, sont les habitants de la région de Victory ; ils font suite aux Néyo sur la côte et vont à l'ouest jusqu'à l'embouchure de la Nonoua » ; les Oboua leur sont rattachés ; les Pia sont à l'ouest des Houané, et les Bakwé au nord. Page 68 : les Houané sont rangés dans le groupe krou occidental, nommé « Bakoué ». Page 72 : la numération hwine lui a été communiquée par l'administrateur Thomann ; elle figure dans le tableau de la page 74. Appui pour les appellations, les groupes, la zone d'établissement et les voisins."
+      },
+      {
+        "title": "Essai de manuel de la langue néouolé parlée dans la partie occidentale de la Côte d'Ivoire",
+        "url": "https://archive.org/details/bub_gb_XEU-AAAAYAAJ",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "author": "Georges Thomann",
+        "year": 1905,
+        "notes": "Paris, Ernest Leroux, 1905 ; l'auteur est administrateur colonial du cercle du Sassandra. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive, p. 32. La liste des noms de peuples et de pays en néouolé, la langue des Néyo, donne « Région de Victory, Bòdo » et « Indigène de Victory, Bòdo-ñõ, Bòdo-a-ñõ (pl. Bòdokwa) ». Appui pour le nom Bodo."
+      },
+      {
+        "title": "Glottolog 5.3 — Bakwe-Wane (bakw1242)",
+        "url": "https://glottolog.org/resource/languoid/id/bakw1242",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice de la branche dans le catalogue Glottolog, lu le 3 novembre 2026. Elle réunit le bakwé (bjw) et le wané (hwa) dans le krou oriental ; la notice du wané donne des coordonnées (4,85° de latitude nord, 6,44° de longitude ouest) situées sur la côte, entre Sassandra et San-Pédro. Appui pour le classement de la langue et la zone d'établissement."
+      },
+      {
+        "title": "Répartition des Ivoiriens par grand groupe ethnique selon le sexe, RGPH 2021",
+        "url": "https://data.gouv.ci/datasets/repartition-des-ivoiriens-par-grand-groupe-ethnique",
+        "tier": "official",
+        "source_kind": "government",
+        "author": "Agence nationale de la statistique (ANStat), Côte d'Ivoire",
+        "year": 2021,
+        "notes": "Portail officiel des données ouvertes de Côte d'Ivoire, jeu de données du recensement général de la population et de l'habitat de 2021, mis à jour le 11 mars 2026. Lu le 3 novembre 2026, présentation et commentaire du graphique. Le recensement ne publie que de grands groupes : Akan, Mandé du Nord, Gur ou Voltaïques, Krou, Mandé du Sud, naturalisés et Ivoiriens sans précision. Le groupe krou représente 9,1 % des Ivoiriens. Appui pour la démographie : aucun chiffre n'y est donné pour les Wané."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Les Wané sont un petit peuple de langue krou de la côte du sud-ouest de la Côte d'Ivoire, entre Sassandra et San-Pédro. Leur nom est écrit Houané en 1904.",
+      "followUp": "Sous quels autres noms les Wané ont-ils été désignés ?"
+    }
   },
   "nameHistory": {
-    "summary": "Le nom Wané désigne un petit peuple de langue krou du sud-ouest de la Côte d'Ivoire, autour de San-Pédro, qui se nomme lui-même Wané ; on l'écrit aussi Hwane ou Ngwané. Il est écrit Houané en 1904. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Wané désigne un petit peuple de langue krou du sud-ouest de la Côte d'Ivoire, sur la côte entre Sassandra et San-Pédro, qui se nomme lui-même Wané ; on l'écrit aussi Hwane ou Ngwané. Il est écrit Houané en 1904. Au début du XXe siècle, les Néyo, ses voisins, l'appelaient Bodo. Nous présentons plus bas ce que disent les sources de ces noms.",
     "names": [
       {
         "nameText": "Wané",
@@ -153,7 +193,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Wané désigne un petit peuple du sud-ouest de la Côte d'Ivoire et sa langue krou. Les catalogues de langues l'écrivent aussi Wane, Hwane ou Ngwané, selon Glottolog. On ne sait pas avec certitude d'où vient ce nom.",
+            "statement": "Le nom Wané désigne un petit peuple du sud-ouest de la Côte d'Ivoire et sa langue krou. Les catalogues de langues l'écrivent aussi Wane, Hwane ou Ngwané, selon Glottolog.",
             "aspect": "meaning",
             "sources": [
               {
@@ -192,7 +232,74 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 70 et p. 74",
-                "notes": "Paris, Ernest Leroux, 1904. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+                "notes": "Paris, Ernest Leroux, 1904. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive, relu le 3 novembre 2026 : « Les Hwĩne ou Hwãne (Houané), appelés aussi Bodo, sont les habitants de la région de Victory »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bodo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "ney",
+        "namedBy": "Les Néyo de Sassandra",
+        "shortLine": "Le nom que les Néyo de Sassandra donnaient aux Wané et à leur région, écrit en 1904 et 1905.",
+        "periodLabel": "Écrit en 1904 et 1905",
+        "accounts": [
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bodo est, dans le néouolé, la langue des Néyo de Sassandra, le nom de la région de Victory ; l'habitant s'y dit Bòdo-ñõ, au pluriel Bòdokwa, selon le manuel de l'administrateur colonial Georges Thomann.",
+            "formAsWritten": "Bòdo",
+            "actors": [
+              {
+                "name": "Georges Thomann",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Essai de manuel de la langue néouolé parlée dans la partie occidentale de la Côte d'Ivoire",
+                "author": "Georges Thomann",
+                "year": 1905,
+                "url": "https://archive.org/details/bub_gb_XEU-AAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 32",
+                "notes": "Paris, Ernest Leroux, 1905. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive : « Région de Victory, Bòdo » ; « Indigène de Victory, Bòdo-ñõ, Bòdo-a-ñõ (pl. Bòdokwa) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bodo désigne les Houané dans les vocabulaires de l'administrateur colonial Maurice Delafosse, qui les dit « appelés aussi Bodo ».",
+            "formAsWritten": "Bodo",
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 70",
+                "notes": "Paris, Ernest Leroux, 1904. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive : « Les Hwĩne ou Hwãne (Houané), appelés aussi Bodo, sont les habitants de la région de Victory »."
               }
             ]
           }

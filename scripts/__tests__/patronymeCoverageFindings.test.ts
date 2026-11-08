@@ -131,13 +131,11 @@ describe("ETNI-1686 reviewed patronyme coverage findings", () => {
     );
     const songhay = byFamily.get("FLG_SONGHAY");
 
-    expect(songhay.candidateNames).toEqual(["Kurtey", "Taguru"]);
-    expect(songhay.evidence.map(({ name }) => name)).toEqual([
-      "Kurtey",
-      "Taguru",
-    ]);
+    // Taguru left with the unsourced Dosso founding story of the Zarma fiche
+    // (premium batch 08): no source read names it as a clan.
+    expect(songhay.candidateNames).toEqual(["Kurtey"]);
+    expect(songhay.evidence.map(({ name }) => name)).toEqual(["Kurtey"]);
     expect(songhay.evidence[0].excerpt).toContain("Kurtey");
-    expect(songhay.evidence[1].excerpt).toContain("Taguru");
 
     for (const familyId of ["FLG_KHOISAN", "FLG_KXA", "FLG_TUU"]) {
       const finding = byFamily.get(familyId);

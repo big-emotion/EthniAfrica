@@ -13,8 +13,12 @@
  * short line. And the PPL_FULA fiche's timeline wording was corrected on
  * 2026-10-17: « Usage décrit au présent par l'auteur » now reads « Usage
  * décrit en <year of the cited work> », and Amadou Hampâté Bâ's name no longer
- * carries « à propos de l'usage français ». Every other field of every record
- * is the folded original.
+ * carries « à propos de l'usage français ». On 2026-11-03 the PPL_HAUSA and
+ * PPL_WOLOF fiches were rewritten from sources read one by one, and claims
+ * no source supported (« Terme universellement adopté », the Ethnologue
+ * citation behind it) left them; their two copies were regenerated from the
+ * rewritten fiches. Every other field of every other record is the folded
+ * original.
  */
 import { readdirSync, readFileSync } from "fs";
 import { join } from "path";

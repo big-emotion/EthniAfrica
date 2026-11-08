@@ -8,92 +8,76 @@
     "appellations": {
       "mainName": "Nankana",
       "selfAppellation": "Nankana",
-      "exonyms": [
-        "Nankani",
-        "Nankanse",
-        "Naani",
-        "Ninkare",
-        "Gorse",
-        "Gurune",
-        "Frafra"
-      ],
-      "originOfExonyms": "Le terme Nankane ou Nankani est le nom propre du groupe dans sa langue. Ninkare est la forme utilisee au Burkina Faso. Le terme Frafra, impose par les colonisateurs britanniques, est une corruption du salut Gurune Ya fara fara? (Comment va votre souffrance/travail?). Le terme Gurune/Gorse designe l'ensemble du groupe dont les Nankana font partie. Le terme Nankanse a ete utilise par R.S. Rattray pour designer l'ensemble des Frafra dans son ouvrage Tribes of the Ashanti Hinterland.",
-      "whyProblematic": "Le terme Frafra est percu comme inapproprie car il derive d'un malentendu colonial sur une salutation locale. Le terme Nankana et ses variantes peuvent cree des confusions avec d'autres sous-groupes Frafra.",
-      "contemporaryUsage": "Les Nankana se designent eux-mêmes comme Nankana ou Nankani. Le terme Frafra reste largement utilise dans les communications officielles et populaires ghanéennes. Le groupe se considere partie du grand ensemble Frafra-Gurunsi.",
-      "linguisticFamily": "FLG_GUR",
-      "ethnoLinguisticGroup": "Frafra (Gurunsi), branche Gur (Oti-Volta), Niger-Congo",
-      "historicalRegion": "Upper East Region du Ghana (region de Navrongo, Bolgatanga, district de Kassena-Nankana) ; sud du Burkina Faso (province de Nahouri, region de Po et Tiébélé)",
-      "currentCountries": ["GHA", "BFA"]
+      "exonyms": ["Frafra", "Gurunsi"],
+      "spellingAliases": ["Nankani", "Nankanni", "Nankanas", "Nankam"],
+      "originOfExonyms": "Le nom Frafra, écrit Fra-Fra, est employé par les Britanniques pour regrouper les Nankana, les Nabdam et les Talensi. Selon l'administrateur britannique A. W. Cardinall, en 1920, il viendrait d'une formule que ces peuples murmurent pour remercier ou pour demander, « Fra-Fra » ou « Fura-Fura ». Le nom Gurunsi, écrit Grunshi ou Gourounsi, est donné à plusieurs peuples de la région par des voisins comme les Mossi et les Mamprusi, selon Cardinall et selon l'administrateur colonial Louis Tauxier.",
+      "whyProblematic": "Ces deux noms rangent sous une seule étiquette des peuples différents. Tauxier écrivait déjà en 1912 que les Nankana, dont la langue est proche de celle des Mossi, ne sont pas des Gourounsi. Le nom Frafra, lui, a surtout servi à inscrire l'origine des soldats et des policiers recrutés dans le nord : ces recrues étaient présentées par des soldats d'autres peuples, qui transmettaient l'erreur, selon Cardinall.",
+      "contemporaryUsage": "Les études du centre de recherche en santé de Navrongo, au Ghana, nomment ce peuple Nankana ou Nankam, et sa langue nankam ou nankana. Dans les districts de Kassena-Nankana, les zones est et sud sont surtout peuplées de Nankana, et les zones ouest et nord de Kassena, selon une étude de ce centre parue en 2021. Le catalogue Glottolog range le nankana et le nankani parmi les dialectes du farefare, la langue que parlent aussi les Frafra.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
-    "ethnicities": [
-      "Gurune (Gurensi), sous-groupe central des Frafra, principale concentration dans le district de Bolgatanga",
-      "Nankana de Navrongo (localises a l'est de Navrongo dans le district de Kassena-Nankana)",
-      "Nankana de Sirigu (village connu pour sa peinture murale)",
-      "Nankana de Kandiga, Mirigo et Nabango",
-      "Paalse (Nankana du secteur sud, ville principale de Pwalugu)"
-    ],
+    "ethnicities": ["Nankana", "Nankam"],
     "origins": {
-      "ancientOrigins": "Les Nankana font partie des peuples Frafra (Gurunsi), dont l'origine orale remonte a des migrations depuis l'Afrique australe (legendes Dagomba connexes) puis depuis le Burkina Faso actuel. Selon la legende Atarebore, les Dagomba, Gurune et Dagao etaient freres ou cousins, originaires d'Afrique australe, migrant vers le nord puis vers l'ouest, a travers le Nigeria septentrional pour atteindre le Ghana. Les Nankana de Navrongo partagent une origine culturelle et linguistique avec les Gurunsi du Burkina Faso (Wuarungu).",
-      "formationPeriod": "L'identite Nankana s'est precisee dans le contexte des structures politiques du nord du Ghana, notamment sous l'influence du royaume mamprusi dont certains chefs Frafra tracent leur origine. Sous la colonisation britannique, les Kassena et Nankana furent regroupes administrativement pour former le Kassena-Nankana administrative district en 1936. La chefferie de Nangodi (Nabdam) et les communautes Nankana ont des origines et traditions communes.",
+      "ancientOrigins": "Les Nankana interrogés par l'administrateur britannique A. W. Cardinall disaient venir, selon les familles, de l'actuel pays mamprusi, de l'extrême nord ou du pays dagomba (1920). Du côté français, l'administrateur colonial Louis Tauxier rapporte en 1912 qu'ils disent venir du pays dagomba. Il cite un récit recueilli par M. Bouchot, résident de Léo : il y a près de cinq siècles, leur ancêtre Kabonga, venu de Gambaga, aurait chassé les Boussansé qui occupaient le pays. Tauxier pense que des habitants plus anciens, boussansé, kassena ou boura, se sont mêlés aux nouveaux venus. Cardinall note que les premiers habitants du pays sont inconnus et n'ont laissé que des outils de pierre.",
+      "formationPeriod": "Pour Cardinall, chaque famille garde le souvenir du lieu d'où venait son fondateur : le pays a été peuplé peu à peu par des familles venues de toutes les directions, à la suite de querelles ou derrière un chasseur. Le récit cité par Tauxier place l'arrivée des Nankana venus du pays dagomba quelques siècles avant 1912.",
       "migrationRoutes": [
-        "Migrations depuis le Burkina Faso (legendes reliant Zuarungu-Ghana a Wuarungu-BFA)",
-        "Migration depuis des zones de savane d'Afrique de l'Ouest (connexions Dagomba-Gurune dans la tradition orale)",
-        "Installation dans l'Upper East Region le long des axes Bolgatanga-Navrongo"
+        "Du pays dagomba et de Gambaga vers le pays actuel, selon les récits rapportés par Louis Tauxier en 1912",
+        "Du pays mamprusi, de l'extrême nord ou du pays dagomba, selon les familles nankana interrogées par A. W. Cardinall en 1920",
+        "De Zekko vers Navarro (Navrongo), où trois frères nankana auraient fondé la famille du chef, selon un récit rapporté par Cardinall"
       ],
       "historicalSettlementZones": [
-        "Bolgatanga et environs (centre commercial et administratif du groupe Frafra)",
-        "Navrongo (capitale du district de Kassena-Nankana)",
-        "Sirigu, Kandiga, Mirigo, Nabango, Kulgo, Naaga (villages Nankana a l'est de Navrongo)",
-        "Pwalugu (village des Paalse, Nankana du sud)",
-        "Sud du Burkina Faso (Nahouri, Tiébélé, Po)"
+        "Districts de Navarro (Navrongo) et de Zuaragu (Zuarungu), dans le nord-est du Ghana actuel, décrits en 1920 par A. W. Cardinall",
+        "Zones est et sud des districts de Kassena-Nankana, dans la région du Haut-Ghana oriental, décrites en 2021",
+        "Sirigu, dans l'est du district de Kassena-Nankana",
+        "Extrême sud-est de l'ancienne résidence de Léo, dans le sud du Burkina Faso actuel, avec les villages de Ziou, Nongo, Zéko et Toungou cités par Louis Tauxier en 1912"
       ],
-      "unificationsOrDivisions": "Les Nankana partagent avec les autres groupes Frafra (Gurune, Nabdam, Boone, Talensi) une culture et une langue communes, tout en ayant des differences rituelles et linguistiques. L'unite administrative creee en 1936 entre Kassena et Nankana ne reflete pas une fusion ethnique mais une proximite culturelle. Les Nankana de Navrongo sont politiquement sous le district de Kassena-Nankana mais se considerent culturellement Frafra.",
-      "externalInfluences": "Influence du royaume de Mamprugu sur certains chefs Frafra-Nankana (tradition d'enskinment). Contact avec les Kasena (langue kasem, differente) dans le district de Kassena-Nankana. Colonisation britannique (integration dans les structures administratives de la Northern Territories). Influence croissante du christianisme et de l'islam sur les pratiques traditionnelles.",
-      "majorHistoricalEvents": "Creation du Kassena-Nankana administrative district en 1936 sous la colonisation britannique. Migrations de travail saisonnieres vers le sud du Ghana depuis la periode coloniale. Le village de Sirigu est devenu un site touristique reconnu pour ses peintures murales et son patrimoine artisanal féminin. Les Nankana maintiennent des liens traditionnels avec des communautes au Burkina Faso (Ninkare, province de Nahouri)."
+      "unificationsOrDivisions": "La frontière fixée sur le 11e parallèle entre les possessions britanniques et françaises a partagé les Nankana et les Kassena à peu près à parts égales entre les deux colonies, selon Cardinall (1920). Tauxier comptait environ 8 300 Nankana du côté français en 1912 et pensait qu'ils étaient plus nombreux du côté britannique.",
+      "externalInfluences": "Des familles de chefs venues du pays mamprusi se sont installées dans la région. Des chefs de famille allaient saluer les chefs mamprusi et recevaient d'eux un titre et de la terre de leur lieu sacré, selon Cardinall. Tauxier rapporte qu'en 1912, pour remplacer certains électeurs de chefs, des familles nankana allaient solliciter le roi de Gambaga. Plusieurs mots religieux sont proches du mossi, comme tinsoba, que Tauxier donne pour le mot mossi à peine modifié.",
+      "majorHistoricalEvents": "À la fin du XIXe siècle, le chef de guerre Babatu laisse sa marque dans la plupart des lieux du district de Navarro, selon Cardinall. Du côté français, les cavaliers zerma, que Tauxier appelle Djermabés, écrasent le village de Toungou, mais épargnent le reste du pays nankana, selon Tauxier. La frontière franco-britannique partage ensuite ce pays entre deux colonies. Sous la colonisation, la route du kola passe par Navarro : 89 000 hommes y passent vers le nord en 1917, selon Cardinall."
     },
     "organization": {
-      "traditionalPoliticalSystem": "L'organisation Nankana distingue les chefs (Naba/Naaba) qui sont les autorites politiques, et les Tindana (Tigatu au pluriel dans la tradition locale) qui sont les custodes de la terre et des affaires spirituelles. Les chefs assurent la paix et la gouvernance ; le Tindana supervise les droits fonciers et les sacrifices rituels. Historiquement, les Frafra (dont les Nankana) n'avaient pas de chefs mais des chefs de clans et des pretres de la terre ; les Mamprusi leur ont impose des chefs apres leur conquete.",
-      "clanOrganization": "La societe Nankana est organisee en clans patrilineaires. Les chefs de famille (heads of households) dirigent les compounds etendus. Les terres ne s'appartiennent pas a des individus mais aux familles, sous la supervision du Tindana. L'artisanat est une activite specifiquement feminine (peinture murale, poterie).",
+      "traditionalPoliticalSystem": "L'administrateur britannique A. W. Cardinall distingue en 1920 deux autorités. Le tindana, « propriétaire de la terre », descend de la première famille installée et s'occupe du culte de la terre. Le naba, ou chef, était en train de devenir un chef politique quand les Européens sont arrivés. Du côté français, Louis Tauxier décrit en 1912 des chefs de village choisis parmi les parents du chef défunt par un grand électeur ou par un chef de canton, et un pouvoir qui passe de père en fils aîné. La justice était rendue par le chef de village assisté des anciens.",
+      "clanOrganization": "Tauxier décrit en 1912 des familles où plusieurs ménages vivent ensemble autour du chef de l'enclos familial ; selon les cas, tous travaillent pour la famille ou chaque ménage a ses propres champs. Cardinall note que le mariage entre parents, même éloignés, est interdit. À Navarro, les épouses étant souvent kassena, des familles nankana ont fini par parler kassena, la langue de leurs mères.",
       "ageClassSystems": null,
-      "roleOfLineages": "Les lignages patrilineaires determinent l'heritage (fils herient des peres ; les filles n'heritent pas des actifs familiaux). La hierarchie familiale est le modele de base de l'organisation sociale. Les Kimma (anciens) maintiennent l'ordre social dans les villages.",
-      "religiousAuthority": "Le Tindana (Tindamba au pluriel) est le custode du sanctuaire de la terre. Il fait des sacrifices periodiques a l'earth shrine pour le bien-être du village, apaise la terre en cas de transgression. Le Supreme Being est Na-a Yine (le Seul Chef) ou Naayine. Les ancetres medient entre les vivants et le Supreme Being. Les sanctuaires ancestraux masculins sont devant la maison, les feminins a l'interieur. Le culte de la divination est central dans la resolution des crises familiales."
+      "roleOfLineages": "À Sirigu, la descendance est patrilinéaire, et l'homme le plus âgé dirige l'enclos familial : il répartit les logements, veille sur les autels de famille et règle les conflits, selon une étude de Rolland Wemegah parue en 2009. Cardinall note en 1920 que chaque chef de famille garde une corne contenant de la terre du lieu sacré de ses ancêtres, appelée bari en nankana, à laquelle il fait des sacrifices.",
+      "religiousAuthority": "Le tindana garde les lieux sacrés, appelés tingani en nankana. Il reçoit des loyers en grain et fait chaque année un sacrifice général, selon Cardinall. Tauxier note en 1912 que le chef de la terre indique l'emplacement des tombes et fait les sacrifices à la Terre au nom du village ; sa charge passe à son frère cadet. À Sirigu, l'étude de 2009 décrit encore le tendaana, prêtre de la terre, chargé de la fertilité de la terre et de la répartition des terres, à côté du chef."
     },
     "languages": {
-      "mainLanguage": "Nankani (Farefare, dialecte Nankani)",
+      "mainLanguage": "Farefare, dialectes nankana et nankani (gur)",
       "isoCodes": ["gur"],
-      "dialects": [
-        "Nankani / Naane / Ninkare (dialecte de Navrongo, variete au Burkina Faso)",
-        "Gurene / Gurensi / Gudeni (dialecte central, region de Bolgatanga)",
-        "Boone (dialecte nord, frontiere burkinabe)"
-      ],
-      "vehicularRole": "Le Nankani est un dialecte du Farefare (ISO gur), langue nationale du Ghana parlee par plus de 600 000 personnes dans l'Upper East Region et le sud du Burkina Faso. Au Burkina Faso, les locuteurs sont appeles Ninkare. Le Farefare est etroitement apparente au Moore (mossi) et au Dagbani. Il constitue une langue vehiculaire regionale dans les districts de Bolgatanga, Bongo et Kassena-Nankana."
+      "dialects": ["Nankana", "Nankani"],
+      "vehicularRole": "À Navarro, en 1920, des familles nankana parlaient la langue kassena de leurs mères, selon Cardinall. Dans les districts de Kassena-Nankana, le nankam et le kassem sont aujourd'hui les deux langues principales, dans lesquelles se font les entretiens des études de santé, selon un article de 2021."
+    },
+    "externalIdentifiers": {
+      "glottocode": "fare1241",
+      "iso639_3": "gur"
     },
     "culture": {
-      "majorRites": "Le festival Adaakoya (celebre a Bolgatanga et Zuarungu) est une celebration annuelle de remerciement aux dieux pour la bonne recolte, celebre entre janvier et fevrier. Il comprend des sacrifices, des danses et un durbar (rassemblement) de chefs et de la population. Les funerailles sont des evenements majeurs, organises generalement apres les recoltes en saison seche. Elles combinent rites de passage vers le monde des esprits, danses, chants et sacrifices. Le mariage implique plusieurs etapes : la visite initiale avec cola, tabac (limisiko, ceremonie de frappe), puis apport d'animaux comme dot. La ceremonie du chinchelinga (ululation feminine) annonce officiellement le mariage dans la communaute de Naaga.",
-      "symbols": "Les peintures murales geometriques colorees des compounds (rouge, blanc, noir), tradition feminine de Sirigu et des villages Nankana, sont le symbole le plus reconnaissable du groupe. Les objets rituels du Tindana (sanctuaires de la terre) sont les symboles de l'autorite spirituelle. Les paniers tresses (Tehei) de Bolgatanga sont un embleme artisanal reconnu nationalement.",
-      "artsAndMusic": "Les femmes Nankana de Sirigu sont internationalement reconnues pour leurs peintures murales geometriques (tradition Gurunsi). Les paniers et chapeaux en paille de Bolgatanga sont des produits artisanaux phares du nord du Ghana, vendus dans tout le pays. La poterie feminine fait partie des arts traditionnels. Les percussions (tambours, balafons) accompagnent les fetes. Les danseurs en costume et masques participent aux festivals communautaires. Le chant rituel et les griots locaux perpetuent les traditions orales.",
-      "spiritualities": "La religiosite Nankana est centree sur la triade : Na-a Yine (Supreme Being, le Seul Chef), les ancetres (mediateurs), et les divinites de la terre et de la nature (supervises par le Tindana). Les libations de farine d'eau sont versees sur les sanctuaires lors des prieres. Les sacrifices animaux (poulets, moutons) sont realises aux moments cles du cycle agricole et lors des rites de passage. Le culte ancestral comprend des sanctuaires sexues (masculins devant la maison, feminins a l'interieur). La divination est pratiquee pour identifier les causes des malheurs et des maladies. Les religions chretiennes et musulmanes coexistent avec les pratiques animistes traditionnelles."
+      "majorRites": "Louis Tauxier décrit en 1912 des funérailles d'environ neuf jours pour un chef de famille, avec des sacrifices offerts par chaque chef d'enclos du village. Un an après le décès, la famille met fin au deuil par trois jours de fête, et le fils aîné construit une petite case pour l'âme du mort. Aujourd'hui, dans les districts de Kassena-Nankana, la fille d'une défunte brise pendant le cortège funèbre un bol de terre cuite, le piligo en nankam, en signe d'adieu et de fécondité, selon un article de 2021.",
+      "symbols": "Les peintures murales des enclos, appelées bambolse à Sirigu, comptent parmi les arts qui font la réputation de ce village ; leurs motifs, comme le zaalinga, filet qui protège les calebasses, portent des proverbes et des leçons, selon l'étude de Rolland Wemegah (2009).",
+      "artsAndMusic": "À Sirigu, la peinture murale est surtout un art de femmes, transmis de mère en fille, et pratiqué après la récolte, de novembre à avril. Les peintres emploient l'ocre rouge, le noir et le blanc, en motifs géométriques ou figuratifs ; quelques hommes s'y sont mis parce que l'art se vend, selon Rolland Wemegah (2009). En 1920, Cardinall décrit dans ces districts des murs ornés de tortues et de crocodiles modelés, des paniers tressés de plusieurs couleurs, et des fondeurs de fer installés notamment autour de Sirigu.",
+      "spiritualities": "Cardinall rapporte en 1920 la croyance en un être suprême, Wuni en nankana, créateur de la vie, et le culte de nombreux dieux de la terre. Tauxier décrit en 1912 les sacrifices aux ancêtres sur de petites cases de terre devant l'enclos, aux bois sacrés, aux arbres et à la Terre, et la consultation des devins, appelés baka. À Sirigu, l'étude de 2009 note que les ancêtres sont consultés par l'intermédiaire d'un oracle pour le mariage, la naissance, la maladie ou la mort."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Historiquement, les Frafra (dont les Nankana) etaient des societes acephales sans chef central, organisees en clans et villages autonomes avec pretres de la terre. L'institution de la chefferie a ete imposee ou adoptee sous influence mamprusi et coloniale. Les Nankana de Navrongo appartiennent administrativement au Kassena-Nankana District (regroupe avec les Kassena sous les Britanniques en 1936). Certains chefs Nankana tracent une tradition de liens avec Mamprugu.",
-      "relationsWithNeighbors": "Les Nankana cohabitent avec les Kasena (groupe culturellement proche mais lingua differente, Kasem) dans le district de Kassena-Nankana. Ils maintiennent des liens etroits avec les autres sous-groupes Frafra (Gurune, Nabdam, Boone, Talensi). Des liens transfrontaliers persistent avec les Ninkare du Burkina Faso (province de Nahouri, region de Po et Tiébélé).",
-      "conflictsOrAlliances": "Sous la colonisation britannique, la pression du royaume de Mamprugu s'est exercee a travers les droits d'enskinment. Les societes Frafra-Nankana ont resiste a la domination Mamprusi, et depuis l'independance ont installe leurs propres chefs (Bolga Naba, Bongo Na). Des conflits fonciers et de chefferie persistent localement dans l'Upper East Region.",
-      "diaspora": "Migration saisonniere et economique vers les villes du Ghana meridional (Accra, Kumasi, Tamale) caracteristique de tout le groupe Frafra depuis la periode coloniale. Communautes frontieres au Burkina Faso (Ninkare) maintenant une identite culturelle commune transfrontière."
+      "kingdomsOrChiefdoms": "Selon Louis Tauxier, en 1912, les Nankana relevaient par un lien assez lâche de petits chefs : le Séléro-Naba de Navarro, le Koun-Naba des Talensi et le roi de Gambaga, qu'il présente comme un Dagomba. Cardinall rapporte en 1920 que, dans la même région, les chefs de Bongo et de Nangodi descendent de familles venues du pays mamprusi.",
+      "relationsWithNeighbors": "Les Nankana vivent mêlés aux Kassena autour de Navrongo, où les mariages entre les deux peuples étaient fréquents en 1920, selon Cardinall. Les Britanniques les regroupaient avec les Nabdam et les Talensi sous le nom de Frafra. Aujourd'hui, des communautés de langue nankam et kasem traversent la frontière du Burkina Faso pour des liens sociaux ou pour consulter des devins, selon une étude de 2022 menée dans le district de Kassena-Nankana Ouest et la province du Nahouri.",
+      "conflictsOrAlliances": "Tauxier décrit en 1912 des luttes entre enclos, entre quartiers et entre villages, que les chefs de village arrêtaient ou que des neveux apparentés aux deux camps interrompaient. À la fin du XIXe siècle, les raids de Babatu, selon Cardinall, et ceux des cavaliers zerma, selon Tauxier, touchent une partie du pays.",
+      "diaspora": null
     },
     "demography": {
       "totalPopulation": 994500,
       "referenceYear": 2025,
-      "source": "Peoplegroups.org (2023) via 101lasttribes.com : le groupe Frafra total (dont Nankana) compte 994 500 personnes dans 2 pays (Ghana et Burkina Faso). Joshua Project - Nankansi in Ghana. Le sous-groupe Nankana est estime a environ 200 000 personnes, les Gurune constituant la majorite du groupe Frafra.",
+      "source": "Peoplegroups.org (2023) via 101lasttribes.com : le groupe frafra entier, dont les Nankana, compte 994 500 personnes dans deux pays, le Ghana et le Burkina Faso. Joshua Project, Nankansi in Ghana. Le sous-groupe nankana est estimé à environ 200 000 personnes, les Gurune formant la majorité du groupe frafra.",
       "distributionByCountry": [
         {
           "country": "GHA",
           "population": 850000,
-          "note": "Upper East Region, principalement districts de Bolgatanga, Bongo, Kassena-Nankana (Navrongo), Nabdam"
+          "note": "Région du Haut-Ghana oriental, notamment les districts de Kassena-Nankana et Sirigu ; chiffre du groupe frafra entier"
         },
         {
           "country": "BFA",
           "population": 144500,
-          "note": "Province de Nahouri (Tiébélé, Po), locuteurs Ninkare du groupe Gurune-Nankana"
+          "note": "Province du Nahouri ; chiffre du groupe frafra entier"
         }
       ]
     },
@@ -120,13 +104,68 @@
         "title": "Glottolog - Farefare",
         "url": "https://glottolog.org/resource/languoid/id/fare1241",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde tenu par l'Institut Max-Planck d'anthropologie évolutionniste. Lu le 3 novembre 2026. Appui pour la langue : le farefare (code gur) y a sept dialectes, dont le nankana et le nankani, avec le booni, le frafra, le gudeni, le gurune et le talni ; il est classé parmi les langues oti-volta, près du mossi."
       },
       {
         "title": "Joshua Project - Nankansi in Ghana",
         "url": "https://joshuaproject.net/people_groups/15214",
         "tier": "unverified",
         "source_kind": "missionary_database"
+      },
+      {
+        "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+        "url": "https://archive.org/details/nativesofnorther00carduoft",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "author": "A. W. Cardinall",
+        "year": 1920,
+        "notes": "Londres, George Routledge & Sons, 1920 ; ouvrage d'un administrateur colonial britannique. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive, préface et p. 1-25, 41-43, 75, 95-99. Appui pour les origines, l'organisation et la religion : les Nankanni disent venir du pays mamprusi, de l'extrême nord ou du pays dagomba, et la frontière du 11e parallèle les partage (p. 11) ; le tindana est « the owner of the land » (p. 15-17) ; la corne de terre ancestrale se nomme bari (p. 20) ; l'être suprême se nomme Wuni (p. 22) ; les lieux sacrés se nomment tingani (p. 25) ; à Navarro, des familles nankanni parlent kassena, langue de leurs mères (p. 75) ; 89 000 porteurs de kola passent par Navarro en 1917 (p. 96)."
+      },
+      {
+        "title": "Le Noir du Soudan : pays mossi et gourounsi",
+        "url": "https://archive.org/details/le-noir-du-soudan-pays-mossi-et-gourounsi-louis-tauxier-1912.",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "author": "Louis Tauxier",
+        "year": 1912,
+        "notes": "Paris, Larose, 1912 ; ouvrage de l'administrateur colonial Louis Tauxier. Lu le 3 novembre 2026 dans une copie non officielle mise en ligne sur Internet Archive ; le texte numérisé ne porte pas les numéros de page. Passages lus : présentation des populations, livre II, chapitre premier « Les Nankanas », et chapitre II « Les Bouras ». Appui pour les origines, l'organisation et la religion : « Les Nankanas disent eux-mêmes venir du Dagomba et ils parlent une langue très proche de la langue Mossi » ; ils sont environ 8 300 du côté français ; l'auteur cite le récit de Kabonga venu de Gambaga, décrit le choix des chefs de village, les funérailles, les sacrifices aux ancêtres et à la Terre, et les devins appelés bakas. L'ouvrage emploie le vocabulaire racial de son époque, que nous ne reprenons pas."
+      },
+      {
+        "title": "Patricia Akweongo et al., « It's a woman's thing: gender roles sustaining the practice of female genital mutilation among the Kassena-Nankana of northern Ghana », Reproductive Health, 2021",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7923333/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "author": "Patricia Akweongo et al.",
+        "year": 2021,
+        "notes": "Article de chercheurs de l'université du Ghana, de l'université Columbia et du centre de recherche en santé de Navrongo, Reproductive Health, vol. 18, article 52, 2021, fondé sur des groupes de discussion dans onze communautés du district de Kassena-Nankana. Lu le 3 novembre 2026 sur PubMed Central. Appui pour l'usage du nom, la langue et les rites : les groupes « Nankam, Kassem, and Builsa » forment presque toute la population du district ; les entretiens se font « either in Kassim or Nankam, the two main language groups » ; le piligo, en nankam, est le bol de terre cuite brisé par la fille au cortège funèbre de sa mère."
+      },
+      {
+        "title": "Maxwell A. Dalaba et al., « Culture and community perceptions on diet for maternal and child health: a qualitative study in rural northern Ghana », BMC Nutrition, 2021",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8281629/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "author": "Maxwell A. Dalaba et al.",
+        "year": 2021,
+        "notes": "Article de chercheurs du centre de recherche en santé de Navrongo et de partenaires, BMC Nutrition, vol. 7, article 36, 2021. Lu le 3 novembre 2026 sur PubMed Central, section « Study area ». Appui pour la répartition : dans les districts de Kassena-Nankana Est et Ouest, « the East and South zones are predominantly Nankana ethnic groups while the West and North are Kassena ethnic » ; les entretiens se font en nankana ou en kassena."
+      },
+      {
+        "title": "D. Chirawurah, N. Santuah et S. Apanga, « Interactions Among Cross-Border Contiguous Communities and Implications for Managing Pandemics », Annals of Global Health, 2022",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9165670/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "author": "D. Chirawurah, N. Santuah et S. Apanga",
+        "year": 2022,
+        "notes": "Article paru dans Annals of Global Health, vol. 88, article 40, 2022, fondé sur des entretiens dans le district de Kassena-Nankana Ouest (Ghana) et la province du Nahouri (Burkina Faso). Lu le 3 novembre 2026 sur PubMed Central. Appui pour les relations de part et d'autre de la frontière : les informateurs citent un héritage traditionnel commun, et des habitants des communautés de langue kasem et nankam vont consulter des devins à Gongo, près de Tiébélé."
+      },
+      {
+        "title": "Rolland Wemegah, Architecture, Mural Decoration and Pottery in Sirigu Culture, mémoire de master, KNUST, 2009",
+        "url": "https://ir.knust.edu.gh/handle/123456789/416",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "author": "Rolland Wemegah",
+        "year": 2009,
+        "notes": "Mémoire de master en art et culture africains, Kwame Nkrumah University of Science and Technology, Kumasi, juin 2009, fondé sur des entretiens et des observations à Sirigu. Lu le 3 novembre 2026 dans le PDF du dépôt de l'université, chapitre 1 et sections 4.2, 4.6 à 4.9. Appui pour la culture et l'organisation : « Sirigu people speak Nankam » ; la descendance est patrilinéaire ; le tendaana s'occupe de la fertilité de la terre et de la répartition des terres ; la peinture murale, « known locally as bambolse », est surtout un art de femmes, transmis de mère en fille, en ocre rouge, noir et blanc."
       }
     ]
   },
@@ -149,7 +188,7 @@
               "label": "1920"
             },
             "era": "colonial",
-            "statement": "Le nom Nankana est écrit Nankanni par l'administrateur britannique A. W. Cardinall, qui dit employer pour chaque peuple le nom qu'il se donne lui-même. Il compte les Nankanni parmi les principaux peuples des districts de Navarro et de Zuaragu, avec les Nabdam, les Talensi, les Kassena et les Builsa. Les sources que nous avons lues n'expliquent pas d'où vient ce nom.",
+            "statement": "Le nom Nankana est écrit Nankanni par l'administrateur britannique A. W. Cardinall, qui dit employer pour chaque peuple le nom qu'il se donne lui-même. Il compte les Nankanni parmi les principaux peuples des districts de Navarro et de Zuaragu, avec les Nabdam, les Talensi, les Kassena et les Builsa.",
             "aspect": "meaning",
             "sources": [
               {
@@ -162,7 +201,8 @@
                 "page": "p. vii-viii et p. 1",
                 "notes": "Londres, George Routledge & Sons ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Préface : « Throughout I have taken the names employed by the people themselves to describe their tribe. »"
               }
-            ]
+            ],
+            "formAsWritten": "Nankanni"
           },
           {
             "period": {
@@ -171,10 +211,20 @@
               "label": "1912"
             },
             "era": "colonial",
-            "statement": "Le nom Nankana apparaît chez l'administrateur colonial Louis Tauxier, qui décrit en 1912 les peuples du côté français de la frontière et nomme les Nankana, selon A. W. Cardinall. C'est la plus ancienne trace de ce nom que le projet connaît ; nous n'avons pas lu le livre de Tauxier. Le peuple vivait déjà là avant lui.",
-            "formAsWritten": "Nankana",
+            "statement": "Le nom Nankana est écrit « Nankanas » par l'administrateur colonial Louis Tauxier, qui décrit en 1912 ce peuple à l'extrême sud-est de la résidence de Léo, du côté français de la frontière. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà là avant lui.",
+            "formAsWritten": "Nankanas",
             "birth": true,
             "sources": [
+              {
+                "title": "Le Noir du Soudan : pays mossi et gourounsi",
+                "author": "Louis Tauxier",
+                "year": 1912,
+                "url": "https://archive.org/details/le-noir-du-soudan-pays-mossi-et-gourounsi-louis-tauxier-1912.",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "livre II, chapitre premier",
+                "notes": "Paris, Larose, 1912 ; ouvrage de l'administrateur colonial Louis Tauxier. Lu le 3 novembre 2026 dans une copie non officielle mise en ligne sur Internet Archive ; le texte numérisé ne porte pas les numéros de page. Passages lus : présentation des populations, livre II, chapitre premier « Les Nankanas », et chapitre II « Les Bouras »."
+              },
               {
                 "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
                 "author": "A. W. Cardinall",
@@ -184,6 +234,64 @@
                 "source_kind": "academic",
                 "page": "p. vii",
                 "notes": "Londres, George Routledge & Sons ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ],
+            "actors": [
+              {
+                "name": "Louis Tauxier",
+                "role": "écrit cette forme"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nankana désigne pour Louis Tauxier un peuple qui dit venir du pays dagomba et qui parle une langue très proche de celle des Mossi. L'administrateur colonial le distingue pour cette raison des peuples qu'il appelle Gourounsi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le Noir du Soudan : pays mossi et gourounsi",
+                "author": "Louis Tauxier",
+                "year": 1912,
+                "url": "https://archive.org/details/le-noir-du-soudan-pays-mossi-et-gourounsi-louis-tauxier-1912.",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "livre II, chapitre premier",
+                "notes": "Paris, Larose, 1912 ; ouvrage de l'administrateur colonial Louis Tauxier. Lu le 3 novembre 2026 dans une copie non officielle mise en ligne sur Internet Archive ; le texte numérisé ne porte pas les numéros de page. Passages lus : présentation des populations, livre II, chapitre premier « Les Nankanas », et chapitre II « Les Bouras »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nankana, ou Nankam, désigne aujourd'hui dans les études du centre de recherche en santé de Navrongo l'un des deux principaux peuples des districts de Kassena-Nankana, à côté des Kassena. Les mêmes noms servent pour la langue, dans laquelle se font une partie des entretiens.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Maxwell A. Dalaba et al., « Culture and community perceptions on diet for maternal and child health: a qualitative study in rural northern Ghana », BMC Nutrition, 2021",
+                "author": "Maxwell A. Dalaba et al.",
+                "year": 2021,
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8281629/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section « Study area »"
+              },
+              {
+                "title": "Patricia Akweongo et al., « It's a woman's thing: gender roles sustaining the practice of female genital mutilation among the Kassena-Nankana of northern Ghana », Reproductive Health, 2021",
+                "author": "Patricia Akweongo et al.",
+                "year": 2021,
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7923333/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "sections « Background » et « Methods »"
               }
             ]
           }
@@ -296,6 +404,35 @@
                 "source_kind": "academic",
                 "page": "p. 222",
                 "notes": "Paris, Ernest Leroux ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gurunsi, écrit Gourounsi, est pour l'administrateur colonial Louis Tauxier un nom général que les Mossi donnent à plusieurs peuples installés au sud de leur pays, au-delà de la Volta Rouge. Il écrit que les Nankana, par leur langue et leur histoire, ne sont pas des Gourounsi.",
+            "formAsWritten": "Gourounsi",
+            "aspect": "imposition",
+            "actors": [
+              {
+                "name": "Louis Tauxier",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le Noir du Soudan : pays mossi et gourounsi",
+                "author": "Louis Tauxier",
+                "year": 1912,
+                "url": "https://archive.org/details/le-noir-du-soudan-pays-mossi-et-gourounsi-louis-tauxier-1912.",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "présentation des populations et livre II, chapitre premier",
+                "notes": "Paris, Larose, 1912 ; ouvrage de l'administrateur colonial Louis Tauxier. Lu le 3 novembre 2026 dans une copie non officielle mise en ligne sur Internet Archive ; le texte numérisé ne porte pas les numéros de page. Passages lus : présentation des populations, livre II, chapitre premier « Les Nankanas », et chapitre II « Les Bouras »."
               }
             ]
           }

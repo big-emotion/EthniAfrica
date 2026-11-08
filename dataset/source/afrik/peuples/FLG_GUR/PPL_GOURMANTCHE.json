@@ -3,106 +3,109 @@
   "nameMain": "Gourmantché",
   "languageFamilyId": "FLG_GUR",
   "currentCountries": ["BFA", "TGO", "NER", "BEN", "GHA"],
-  "classificationStatus": "colonial-legacy",
+  "classificationStatus": "contested",
   "content": {
     "appellations": {
       "mainName": "Gourmantché",
       "selfAppellation": "Gulmanceba",
-      "exonyms": [
-        "Gurma",
-        "Gourma",
-        "Gorma",
-        "Gourmantche",
-        "Gulimancema",
-        "Bigulimanceba",
-        "Migulimancema",
-        "Gurmanche"
+      "exonyms": ["Gourma", "Gurma", "Bimba", "Binumba"],
+      "spellingAliases": [
+        "Gourmantchés",
+        "Gourmankés",
+        "Gourmanché",
+        "Gurmantche",
+        "Gurmanche",
+        "Gurmanshe",
+        "Gurmantyeba",
+        "Gulma",
+        "Gourmas",
+        "Gurmas",
+        "Gulmance",
+        "Bigulimanceba"
       ],
-      "originOfExonyms": "Les locuteurs se désignent eux-mêmes par le terme Gulmanceba (singulier : Gulimance), qui désigne à la fois le peuple et sa langue.",
-      "whyProblematic": "Gourmantché est parfois confondu avec Gurma, employé en anglais, ou Gourma, employé par l'administration burkinabè. Ces formes viennent des manières française et britannique d'écrire le nom à l'époque coloniale. Elles ne correspondent pas à un nom unique employé durablement par le peuple lui-même.",
-      "contemporaryUsage": "En usage officiel au Burkina Faso, au Togo et au Bénin sous la forme Gourmantché ou Gourma. La langue est désignée Gourmanchéma ou Gulmancema dans les publications linguistiques et éducatives. L'appellation Gurma est courante dans la littérature anglophone."
+      "originOfExonyms": "Le nom Gourma, écrit aussi Gurma, désigne d'abord le pays de ce peuple. Selon l'explorateur Heinrich Barth, qui le traverse en 1853, ce nom ne viendrait pas de ses habitants : les Songhay, qui vivaient alors au nord du fleuve Niger, l'auraient donné à la région située sur l'autre rive. Barth note aussi que les Haoussa appelaient Botu, ancienne capitale du pays, « fada-n-Gurma », c'est-à-dire « le palais du Gurma », et que les Mossi nommaient ce peuple Bimba. Le nom Gourmantché apparaît en 1912 chez l'administrateur colonial Louis Tauxier, sous les formes Gourmantchés et Gourmankés.",
+      "whyProblematic": "Les noms les plus courants de ce peuple ne sont pas ceux qu'il se donne. Le nom Gourma viendrait des Songhay, selon Heinrich Barth en 1858, et le nom Gourmantché est, selon l'historien Diouldé Laya en 1991, le mot de l'administration pour désigner les Gulmanceba.",
+      "contemporaryUsage": "En français, les notices de la Bibliothèque nationale de France et de l'IdRef, créées en 1984, retiennent la forme Gourmantché. Le recensement du Burkina Faso de 2019 nomme la langue « gourmantché (ou gulmancema) », et les linguistes l'appellent gulmancema ou gourmanchéma. Les chercheurs qui écrivent sur ce peuple emploient aussi le nom qu'il se donne, Gulmanceba, et appellent son pays Gulmu ou Gurma.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Gourmantché",
-      "Gurma",
-      "Gurma du Burkina Faso (est du pays, autour de Fada N'Gourma, centre du groupe)",
-      "Gurma du Niger (sud-ouest du Niger, abords du parc du W)",
-      "Gurma du Togo (nord du Togo, région des Savanes)",
-      "Gurma du Bénin (nord du Bénin, départements de l'Alibori et de l'Atacora)"
+      "Gulmanceba du Gulmu, à l'est du Burkina Faso, dans les provinces du Gourma, de la Gnagna et de la Tapoa",
+      "Gourmantché du Gobnangou, autour de Diapaga, au Burkina Faso",
+      "Gulmanceba du Gurma oriental, dans la partie nigérienne de ce pays"
     ],
     "origins": {
-      "ancientOrigins": "Le peuple Gourmantché est associé au royaume du Gulma (Gulmu), dont la fondation légendaire remonte à plusieurs siècles avant la colonisation européenne. La tradition orale rapporte que le fondateur de Fada N'Gourma (Bengu) fut Yendabri, quatorzième souverain Gourmantché. Fada N'Gourma est appelée Bengu par les Mossi, signifiant 'terre des Bemba'.",
-      "formationPeriod": "Le royaume du Gulma se consolide entre le XVe et le XVIIe siècle comme confédération de royaumes (Diema) dans l'est de l'actuel Burkina Faso. La succession au trône impliquait un collège électoral composé de Kombali (chefs de cantons), choisi parmi les descendants de Diaba Lompo.",
+      "ancientOrigins": "Les sources que nous avons lues ne racontent pas l'origine ancienne des Gulmanceba à partir de leurs propres traditions. En 1858, l'explorateur Heinrich Barth pensait que les Gurma, les Mossi et les Tombo formaient une seule famille de peuples, et que les Songhay leur avaient pris une grande partie de leur territoire au temps de leur empire. En 1912, l'administrateur colonial Louis Tauxier supposait que le royaume du Gourma avait d'abord dépendu du royaume mossi de Ouagadougou avant de devenir indépendant.",
+      "formationPeriod": "Nous n'avons pas trouvé de source qui date la formation des royaumes gulmanceba. Selon l'historien Georges Madiéga, cité par le journaliste Wendkouni Bertrand Ouédraogo en 2024, il n'y avait pas un seul royaume du Gulma, mais plusieurs royaumes gulmanceba réunis en une sorte de confédération.",
       "migrationRoutes": [
-        "Peuplement originel du bassin du fleuve Volta dans l'est du Burkina Faso",
-        "Extension progressive vers le nord du Togo (région des Savanes), le nord-ouest du Bénin (Atakora et Alibori) et le sud-ouest du Niger (Tillabéri)",
-        "Migration depuis l'escarpement de Gambaga (nord-est du Ghana) vers le nord-est, jusqu'à Fada N'Gourma (Burkina Faso)",
-        "Migrations saisonnières vers les régions côtières d'Afrique de l'Ouest pour le travail"
+        "L'historien Diouldé Laya étudie les migrations du XIXe siècle qui ont peuplé les villages de la partie nigérienne du Gurma oriental, où vivent encore de petites chefferies gulmanceba, à travers l'exemple des Folmongaani."
       ],
       "historicalSettlementZones": [
-        "Est du Burkina Faso, région de Fada N'Gourma (centre historique du Gulma)",
-        "Région des Savanes, nord du Togo",
-        "Départements de l'Atakora et de l'Alibori, nord du Bénin",
-        "Région de Tillabéri, sud-ouest du Niger",
-        "Nord-est du Ghana"
+        "L'est du Burkina Faso, que le linguiste Abibou Thiombiano appelle le Gulmu : les provinces du Gourma, de la Gnagna et de la Tapoa",
+        "Le Gobnangou, région de Diapaga, au sud-est du Burkina Faso",
+        "L'ouest du Niger, dans la partie nigérienne du Gurma oriental",
+        "Le nord du Bénin et le nord du Togo"
       ],
-      "unificationsOrDivisions": "Le Gulmu n'était pas un État centralisé mais une confédération de Diema (provinces), chacune dirigée par un Bado. Le Nunbado, autorité suprême résidant à Nungu (Fada N'Gourma), était le primus inter pares sans pouvoir absolu. Des guerres de succession, comme celle de Bacandi en 1892, affaiblirent le royaume à la veille de la colonisation. La partition coloniale franco-britannique de 1898 divisa le territoire Gourmantché entre la Haute-Volta (Burkina Faso), le Togo et le Bénin.",
-      "externalInfluences": "L'expansion des royaumes Mossi à partir du XVe siècle exerça une pression constante sur les Gourmantché, qui maintinrent leur indépendance politique. La conquête coloniale française s'appuya sur les conflits de succession internes pour s'implanter dans le Gulma à la fin du XIXe siècle.",
-      "majorHistoricalEvents": "1892 : guerre de succession entre Bacandi et Yentugri, exploitée par la France. 1897-1898 : pénétration coloniale française dans le Gulma. 1898 : convention franco-britannique fixant les frontières actuelles du Burkina Faso. Résistance armée prolongée des communautés Gourmantché contre l'administration coloniale."
+      "unificationsOrDivisions": "Le Gulmu était partagé en provinces appelées diema, chacune dirigée par un chef, le bado. Le chef suprême portait le titre de nunbado ; selon Georges Madiéga, il était le premier parmi ses égaux, sans pouvoir absolu sur les autres provinces, qui gardaient chacune leur administration. En 1853, Heinrich Barth compte parmi les chefs les plus puissants du pays ceux de Belanga, Botu, Bosugu, Bojjo, Machakwali, Nandau et Mayanga.",
+      "externalInfluences": "Selon Heinrich Barth, les Songhay ont conquis et peuplé une partie du nord du pays gurma, puis des Peuls s'y sont installés le long de la grande route commerciale qui allait du Macina au pays haoussa. En 1853, ces établissements peuls avaient décliné et les chefs gurma de l'intérieur restaient presque indépendants. À la fin du XIXe siècle, la France a profité des conflits de succession entre princes gulmanceba pour établir son autorité, selon l'article de Wendkouni Bertrand Ouédraogo.",
+      "majorHistoricalEvents": "En juin 1853, l'explorateur Heinrich Barth traverse le pays gurma et décrit ses chefferies. En 1892, le choix de Bacandi comme roi, contre son frère aîné Yentugri, provoque une guerre de succession qui dure jusqu'à l'arrivée des Français. En 1897, selon Louis Tauxier, les Français atteignent et soumettent les peuples de la boucle du Niger, dont les Gourmantché."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Confédération de royaumes (Diema), chacun dirigé par un Bado. La confédération était placée sous l'autorité nominale du Nunbado, résidant à Nungu (Fada N'Gourma), désigné par un collège électoral parmi les descendants de Diaba Lompo. Le Nunbado n'avait pas de pouvoir absolu : chaque Diema gardait son indépendance administrative. Le système comportait des titres spécialisés : Kombali (chef de canton, intermédiaire), Teidano, Odano et Diebado (membres du collège électoral).",
-      "clanOrganization": "La société est organisée en lignages patrilinéaires au sein de Diema (provinces). Les Kombali constituaient les familles nobles chargées de l'élection du Bado et de l'exercice collégial du pouvoir.",
-      "roleOfLineages": "Les lignages descendants de Diaba Lompo, ancêtre mythique des chefs Gourmantché, détenaient le droit à la chefferie. La légitimité du Nunbado reposait sur son appartenance à ces lignages royaux et sur la validation du collège électoral.",
-      "religiousAuthority": "La tradition religieuse Gourmantché est centrée sur le culte du soleil et les sacrifices aux esprits ancestraux. SIM International (Société Internationale Missionnaire) est présente dans la région depuis 1930 et a traduit le Nouveau Testament en Gourmanchéma. La religion traditionnelle demeure prépondérante au Burkina Faso et au Togo, tandis que l'islam est majoritaire chez les Gourmantché du Niger."
+      "traditionalPoliticalSystem": "Chaque province, ou diema, avait son chef, le bado, choisi pour ses qualités morales et politiques. Un collège électoral formé de chefs de cantons respectés, les kombali, organisait la succession. Ce collège comprenait le teidano, qui assure l'intérim quand le trône est vacant, l'odano, considéré comme le premier ministre, et le diebado, « celui qui commande le chef ». La succession était ouverte à plusieurs candidats, ce qui pouvait conduire à des guerres entre frères.",
+      "clanOrganization": "Dans le Gobnangou, l'anthropologue Michel Cartry décrit une société organisée en maisonnées et en lignages, c'est-à-dire en groupes de parents qui descendent d'un même ancêtre. Chaque maison se rattache à une aïeule lointaine dont vient son segment de lignage, et les neveux par la mère, ou neveux utérins, y jouent un rôle rituel.",
+      "ageClassSystems": "Nous n'avons pas trouvé de source qui décrive un système de classes d'âge chez les Gulmanceba.",
+      "roleOfLineages": "Selon Michel Cartry, tous les aînés de lignage doivent sacrifier aux puissances protectrices de leur maison, et la viande des sacrifices se partage dans la famille ou le lignage. Dans le choix d'un nouveau bado, ce sont les chefs de cantons du collège électoral qui décident.",
+      "religiousAuthority": "Dans le Gobnangou, le chef de village offre le sacrifice du taureau au nom de toute la communauté, mais il ne tue pas lui-même l'animal : il confie ce geste à un boucher rituel, selon Michel Cartry. Les devins, qui consultent par géomancie, une divination fondée sur des figures tracées sur la terre, disent quelle victime les puissances réclament."
     },
     "languages": {
-      "mainLanguage": "Gourmanchéma",
+      "mainLanguage": "Gourmanchéma ou gulmancema (gux)",
       "isoCodes": ["gux"],
       "dialects": [
-        "Parler de Fada N'Gourma (Burkina Faso, centre historique)",
-        "Parler des Savanes (Togo)",
-        "Parler du Niger (Tillabéri)",
-        "Parler du Bénin (Atakora-Alibori)"
+        "Nous n'avons pas trouvé de source qui dresse la liste des dialectes du gulmancema ; le linguiste Abibou Thiombiano signale en 1992 des variantes dialectales, sans les nommer."
       ],
-      "vehicularRole": "Le Gourmanchéma est la langue véhiculaire principale de l'est du Burkina Faso. Classée comme langue institutionnelle et stable par SIL, elle est utilisée dans certaines écoles et fait l'objet de publications (pamphlets de santé, journal mensuel). Elle appartient au sous-groupe Gurma des langues Oti-Volta (branche Gur, Niger-Congo). C'est la plus grande langue du sous-groupe Gurma en nombre de locuteurs."
+      "vehicularRole": "Le gulmancema est parlé dans l'est du Burkina Faso, l'ouest du Niger et le nord du Bénin et du Togo. Au recensement du Burkina Faso de 2019, 6,8 % des habitants de 3 ans ou plus disent le parler le plus souvent, ce qui en fait la troisième langue nationale après le mooré et le fulfulde. Glottolog classe cette langue dans la branche gurma des langues oti-volta, qui font partie des langues gur, et la dit non menacée."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q1294392",
+      "glottocode": "gour1243",
+      "iso639_3": "gux"
     },
     "culture": {
-      "majorRites": "Rituels d'intronisation des chefs (Bado) : le candidat suit une retraite de sept jours après avoir visité les forgerons et effectué des pronostics sur son règne. Culte du soleil et sacrifices aux esprits. Initiations rythmées par les cycles agricoles et les saisons.",
-      "symbols": "Le fleuve Volta et les collines de l'est burkinabè sont des repères symboliques forts. La tabatière joue un rôle rituel lors des élections des chefs. Les arcs et flèches renvoient à l'identité guerrière historique.",
-      "artsAndMusic": "Musique liée aux cérémonies d'intronisation et aux fêtes rituelles. Art de la parole et tradition orale très développés : récits généalogiques des Bado, contes et proverbes. Publications en Gourmanchéma : journal mensuel et littérature de santé publique développés depuis les années 1980.",
-      "spiritualities": "Religion traditionnelle centrée sur le culte du soleil (Otienu, être suprême), les sacrifices aux esprits et la communication avec les ancêtres. La cosmogonie Gourmantché inclut des concepts distincts : Otienu (Dieu), licabili (destin), gbannandi (corps), limiali (vie), mikuuma (mort). Présence croissante du christianisme (SIM depuis 1930, Bible complète traduite) et de l'islam, notamment au Niger."
+      "majorRites": "Pour introniser un nouveau bado, ses proches le conduisent vers minuit chez le teidano, qui lui remet son autorité. Il s'assoit sur l'enclume après un coup de marteau du forgeron, choisit une tabatière sur laquelle on fait des pronostics sur son règne, puis fait une retraite de sept jours avant de paraître en public. Selon Michel Cartry, les Gourmantché du Gobnangou font aussi des sacrifices à chaque grand moment de la vie, comme la naissance, l'attribution du nom, la circoncision, l'excision, le mariage et les funérailles, et à chaque étape du calendrier agricole.",
+      "symbols": "L'enclume du forgeron et la tabatière servent à l'intronisation du bado. Dans le Gobnangou, selon Michel Cartry, un arbre, l'Afzelia africana, devient le principal lieu de culte du village.",
+      "artsAndMusic": "Nous n'avons pas trouvé de source qui décrive la musique et les arts des Gulmanceba.",
+      "spiritualities": "Selon Michel Cartry, la religion des Gourmantché du Gobnangou s'adresse à une divinité suprême, U-yènu ou o-tienu, à de nombreuses puissances attachées à un lieu, les buli, que l'on dit au nombre de 333 ou de 3 333, aux ancêtres et aux puissances de la brousse. Le sacrifice y est, écrit-il, « l'un des phénomènes centraux de la vie religieuse »."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Le royaume du Gulma (Gulmu) est l'une des entités politiques majeures de la région sahélienne précoloniale. Fondé autour de Fada N'Gourma, il constituait une confédération de Diema sous la direction nominale du Nunbado. Le Gulma a résisté à l'expansion Mossi et maintenu son indépendance jusqu'à la colonisation française à la fin du XIXe siècle.",
-      "relationsWithNeighbors": "Relations historiquement complexes avec les Mossi à l'ouest (conflits récurrents, indépendance maintenue). Coexistence avec les Bariba au sud-est et les Peuls nomades à l'est. Voisinage avec les Dagomba et Konkomba au Ghana.",
-      "conflictsOrAlliances": "Guerres de succession intra-dynastiques (ex. Bacandi contre Yentugri, 1892). Résistance collective aux raids Mossi. Soumission progressive à l'administration coloniale française après 1897, malgré des résistances locales.",
-      "diaspora": "Présence significative dans les capitales régionales du Burkina Faso (Ouagadougou), du Togo (Lomé) et du Bénin (Cotonou), issues des migrations économiques internes. Diaspora internationale dans les pays d'Afrique de l'Ouest et en Europe (France principalement)."
+      "kingdomsOrChiefdoms": "Le Gulmu réunissait plusieurs royaumes gulmanceba, dont le nunbado était le premier parmi ses égaux, selon Georges Madiéga. Louis Tauxier, en 1912, parle d'un royaume du Gourma ayant Fada N'Gourma pour capitale. En 1853, Heinrich Barth note que Botu avait été autrefois la capitale du pays, et que les chefs de Belanga et de Bojjo étaient alors les plus puissants.",
+      "relationsWithNeighbors": "En 1853, Heinrich Barth note les noms que ces peuples se donnent les uns aux autres : les Mossi appellent les Gurma Bimba, et les Gurma appellent les Haoussa Jongoy et les Peuls Fuljo au singulier, Fulga au pluriel. Les Peuls, eux, appellent la langue gurma Gurman-kobe. Barth décrit des chefs gurma hostiles aux Peuls installés sur la grande route, ainsi que des communautés songhay installées dans le pays.",
+      "conflictsOrAlliances": "En 1892, Yentugri se révolte contre son frère cadet Bacandi, choisi comme roi à sa place, avec l'aide des chefs de Zapankgu et de Bilanga ; cette guerre dure jusqu'à l'arrivée des Français, qui en profitent. Plus tôt, selon Heinrich Barth, le chef indépendant de Bojjo avait détruit Martebego, un établissement peul qui contrôlait la grande route.",
+      "diaspora": "Nous n'avons pas trouvé de source qui décrive les Gulmanceba installés hors de leur région d'origine."
     },
     "demography": {
-      "totalPopulation": 1805000,
-      "referenceYear": 2025,
-      "source": "Joshua Project – Gourma people group in all countries (2025) Une autre estimation donne 3 500 000 personnes en 2025 (Peoplegroups.org, 3 414 500 répartis entre le Ghana, le Bénin, le Burkina Faso, le Niger, le Nigeria et le Togo ; Wikipédia, d'après les recensements de 2021 : 1 845 255 au Ghana, 1 496 786 au Burkina Faso et 188 846 au Niger). Les sources lues ne permettent pas de choisir entre ces chiffres.",
+      "totalPopulation": 1846000,
+      "referenceYear": 2026,
+      "source": "Estimation de Joshua Project, une base de données missionnaire, consultée en 2026, qui ne date pas ses chiffres. Le recensement du Burkina Faso de 2019 ne compte pas les peuples : il indique seulement que 6,8 % des habitants de 3 ans ou plus, sur 16 486 281, parlent le plus souvent le gulmancema.",
       "distributionByCountry": [
         {
           "country": "BFA",
-          "population": 1248000
+          "population": 1276000
         },
         {
           "country": "TGO",
-          "population": 351000
+          "population": 358000
         },
         {
           "country": "NER",
-          "population": 86000
+          "population": 89000
         },
         {
           "country": "BEN",
-          "population": 74000
+          "population": 76000
         },
         {
           "country": "NGA",
-          "population": 46000
+          "population": 47000
         }
       ]
     },
@@ -111,83 +114,117 @@
         "title": "Gourma people group in all countries – Joshua Project, 2025",
         "url": "https://joshuaproject.net/people_groups/12004",
         "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "Gourma in Burkina Faso – Joshua Project, 2025",
-        "url": "https://joshuaproject.net/people_groups/12004/UV",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "Gurmantche language (gux) – Ethnologue / SIL Global, 2026",
-        "url": "https://www.ethnologue.com/language/gux/",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
-      },
-      {
-        "title": "Gourmanchéma – Omniglot, 2022",
-        "url": "https://www.omniglot.com/writing/gourmanchema.htm",
-        "tier": "unverified",
-        "source_kind": "linguistic_reference"
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire évangélique américaine. Lu le 3 novembre 2026. La page donne 1 846 000 personnes : 1 276 000 au Burkina Faso, 358 000 au Togo, 89 000 au Niger, 76 000 au Bénin et 47 000 au Nigeria ; elle ne date pas ses chiffres."
       },
       {
         "title": "L'organisation politique dans le Gulma avant la pénétration coloniale – LeFaso.net, 2024",
         "url": "https://lefaso.net/spip.php?article132239",
         "tier": "referenced",
-        "source_kind": "press"
+        "source_kind": "press",
+        "notes": "Article de Wendkouni Bertrand Ouédraogo, Lefaso.net, 12 août 2024. Lu le 3 novembre 2026. Il cite l'historien Georges Y. Madiéga : « il n'y avait donc pas un royaume du Gulma, mais des royaumes gulmanceba »."
       },
       {
-        "title": "Histoire et organisation du royaume Gourmantché – Scribd / auteur non précisé, 2026",
-        "url": "https://fr.scribd.com/document/846146509/le-royaume-de-Gourmantche",
-        "tier": "unverified"
+        "title": "Cinquième Recensement général de la population et de l'habitation du Burkina Faso : synthèse des résultats définitifs",
+        "author": "Institut national de la statistique et de la démographie (INSD)",
+        "year": 2022,
+        "url": "https://www.insd.bf/fr/file-download/download/public/2071",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. 48, tableau 11",
+        "notes": "Recensement de 2019, synthèse publiée à Ouagadougou en juin 2022. Lu le 3 novembre 2026. Le tableau 11 répartit les 16 486 281 habitants de 3 ans ou plus selon la langue qu'ils parlent le plus souvent ; on y lit « Gourmantché (ou gulmancema) » : 6,8 %. Le texte dit : « Le mooré est la langue nationale la plus parlée (52,9%), suivi du fulfulde (7,8%), du gulmancema (6,8%) »."
       },
       {
-        "title": "Gourmantché Ethnoanthropology: A Theory of Human Being – Swanson R. A., 1985",
-        "url": null,
-        "tier": "needs_review"
+        "title": "Glottolog 5.3 — Gourmanchéma (gour1243)",
+        "author": "Glottolog",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/gour1243",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue, code ISO 639-3 gux. Lu le 3 novembre 2026. Glottolog la classe dans la branche gurma des langues oti-volta, elles-mêmes langues gur de la famille atlantique-congo, et recense les noms Gourmanchema, Gurma, Goulmacema, Gourma, Gourmantche, Gulimancema, Gulmancema et Migulimancema. Le statut « not endangered » (non menacée) y est repris d'Ethnologue (2025)."
       },
       {
-        "title": "Britannica — Gurma",
-        "url": "https://www.britannica.com/topic/Gurma",
-        "tier": "unverified",
-        "source_kind": "encyclopedia"
+        "title": "Gourmantché (peuple d'Afrique) — notice RAMEAU",
+        "author": "Bibliothèque nationale de France",
+        "year": null,
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb119670254",
+        "tier": "official",
+        "source_kind": "repository",
+        "notes": "Notice d'autorité du catalogue général de la BnF, créée le 19 octobre 1984. Lu le 3 novembre 2026. Elle renvoie vers les mêmes formes que la notice IdRef, cite parmi ses sources un recueil de l'Unesco publié en 1984 et le Grand Larousse universel, et donne pour équivalent à la Bibliothèque du Congrès « Gurma (African people) »."
       },
       {
-        "title": "101lasttribes — Gurma people",
-        "url": "https://www.101lasttribes.com/tribes/gurma.html",
-        "tier": "unverified",
-        "source_kind": "community"
-      },
-      {
-        "title": "Salif Titamba Lankoande — Les Gourmantché. Presses Africaines du Burkina, Ouagadougou, 2006",
-        "url": null,
-        "tier": "referenced"
-      },
-      {
-        "title": "João Pedro Galhano Alves — Anthropologie et écosystèmes au Niger. Humains, lions et esprits de la forêt dans la culture gourmantché. Editions l'Harmattan, Paris, 2012",
-        "url": null,
+        "title": "Migrations et intégration politique dans le Gurma oriental au XIXe siècle : exemple des Folmongaani",
+        "author": "Diouldé Laya",
+        "year": 1991,
+        "url": "https://www.persee.fr/doc/jafr_0399-0346_1991_num_61_2_2319",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "page": "p. 65",
+        "notes": "Journal des africanistes, tome 61, fascicule 2, 1991, p. 65-90, lu sur Persée. Seule la première page (p. 65) a pu être lue. Lu le 3 novembre 2026. Passage lu : « de petites chefferies peuplées de Gulmanceba (les Gourmantché dans le vocabulaire de l'administration) »."
       },
       {
-        "title": "Qiraat Africa — The Gurma people of West Africa",
-        "url": "https://qiraatafrican.com/en/18718/the-gurma-people-of-west-africa/",
-        "tier": "unverified",
-        "source_kind": "press"
+        "title": "Éléments de grammaire gulmance : l'énoncif verbal",
+        "author": "Abibou Thiombiano",
+        "year": 1992,
+        "url": "https://publication.codesria.org/index.php/pub/catalog/download/1756/2645/7460?inline=1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "Introduction générale",
+        "notes": "Rapport de diplôme d'études approfondies en linguistique, Université de Ouagadougou, septembre 1992, réalisé avec le soutien du CODESRIA et mis en ligne par celui-ci. Lu le 3 novembre 2026. Passage lu : « gulmu (territoire des gulmanceba, pluriel de gulmance). Ces provinces sont le Gurma, la Gnagna et la Tapoa »."
+      },
+      {
+        "title": "Le statut de l'animal dans le système sacrificiel des Gourmantché (Haute-Volta)",
+        "author": "Michel Cartry",
+        "year": 1976,
+        "url": "https://journals.openedition.org/span/330",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Systèmes de pensée en Afrique noire, n° 2, « Le sacrifice I », 1976, p. 141-175, lu sur OpenEdition Journals. L'enquête a été menée dans la région du Gobnangou, près de Diapaga. Lu le 3 novembre 2026. Passages lus : « U-yènu (o-tienu), la divinité suprême » (note 7) ; « tous les aînés de lignages doivent sacrifier à leurs buli domestiques » (§ 22)."
+      },
+      {
+        "title": "Le Noir du Soudan : pays mossi et gourounsi",
+        "author": "Louis Tauxier",
+        "year": 1912,
+        "url": "https://archive.org/details/le-noir-du-soudan-pays-mossi-et-gourounsi-louis-tauxier-1912.",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Ouvrage d'un administrateur colonial, publié à Paris chez Émile Larose en 1912. Lu dans une copie mise en ligne sur Internet Archive par un particulier ; les numéros de page sont ceux de l'imprimé, relevés dans une seconde numérisation du même livre sur Internet Archive (archive.org/details/le-noir-du-soudan). Lu le 3 novembre 2026. Passage lu, dans la préface : « Gourmantchés » figure parmi les « populations de la boucle centrale du Niger » que la France n'a « atteint et soumis » qu'en 1897."
+      },
+      {
+        "title": "Gourmantché (peuple d'Afrique) — notice d'autorité",
+        "author": "IdRef, Agence bibliographique de l'enseignement supérieur",
+        "year": null,
+        "url": "https://www.idref.fr/027678717",
+        "tier": "official",
+        "source_kind": "repository",
+        "notes": "Notice créée le 19 octobre 1984, modifiée le 16 juin 2021. Lu le 3 novembre 2026. La notice retient la forme « Gourmantché (peuple d'Afrique) » et renvoie vers les formes Bigulimanceba, Bimba, Binumba, Gourma, Gourmanché, Gourmantchés, Gourmas, Gulma, Gulmance, Gulmanceba, Gurma, Gurmanche, Gurmanshe, Gurmantche, Gurmantyeba et Gurmas ; elle précise que l'adjectif « gourmantché » est invariable."
+      },
+      {
+        "title": "Travels and Discoveries in North and Central Africa, vol. 4",
+        "author": "Heinrich Barth",
+        "year": 1858,
+        "url": "https://archive.org/details/travelsdiscoveri04bart",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 258-260, p. 280 et appendice VI, p. 550-551",
+        "notes": "Récit de l'explorateur allemand Heinrich Barth, en mission pour le gouvernement britannique ; Londres, Longman, Brown, Green, Longmans & Roberts, 1858, volume 4. Barth traverse le pays gurma en juin 1853. Lu sur la numérisation d'Internet Archive. Lu le 3 novembre 2026. Passages lus : « a name which, however, does not seem to owe its origin to the native inhabitants » (p. 258) ; « the Gurma, Bimba » (p. 551)."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Les Gourmantché, qui se nomment eux-mêmes Gulmanceba, vivent surtout dans l'est du Burkina Faso, autour de Fada N'Gourma, et dans les pays voisins.",
+      "followUp": "D'où vient le nom Gourma, que ce peuple ne se donne pas ?"
+    }
   },
   "nameHistory": {
-    "summary": "Le nom Gourmantché désigne un peuple de l'est du Burkina Faso et des pays voisins, qui se nomme lui-même Gulmanceba. D'autres noms existent : Gourma, qui nomme aussi leur pays, et Bimba. On ne sait pas avec certitude d'où vient le nom Gourmantché ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Gourmantché désigne un peuple de l'est du Burkina Faso et des pays voisins, qui se nomme lui-même Gulmanceba, au singulier Gulmance. Ce peuple porte aussi le nom de Gourma, qui désigne d'abord son pays, et les Mossi l'appelaient Bimba au XIXe siècle. Selon les sources, ces noms lui ont été donnés par ses voisins ou par l'administration ; ce qu'elles en disent est présenté plus bas.",
     "names": [
       {
         "nameText": "Gulmanceba",
         "nameStatus": "current",
         "selfGiven": true,
-        "languageOfOrigin": null,
+        "languageOfOrigin": "gux",
         "namedBy": null,
-        "shortLine": "Le nom que ce peuple se donne ; au singulier Gulmance.",
+        "shortLine": "Le nom que ce peuple se donne ; au singulier Gulmance. Son pays se nomme le Gulmu.",
         "periodLabel": "En usage aujourd'hui",
         "accounts": [
           {
@@ -207,7 +244,51 @@
                 "url": "https://lefaso.net/spip.php?article132239",
                 "tier": "referenced",
                 "source_kind": "press",
-                "notes": "Lefaso.net, 12 août 2024 ; lu le 10 octobre 2026. L'auteur cite Georges Y. Madiéga, Le Nord Gulma précolonial, thèse de doctorat, p. 123 ; nous n'avons pas lu la thèse."
+                "notes": "Article du journal en ligne burkinabè Lefaso.net, 12 août 2024. Lu le 3 novembre 2026. L'auteur cite l'historien Georges Y. Madiéga et l'historien Salifou Idani ; nous n'avons pas lu leurs travaux eux-mêmes. Passage lu : « il n'y avait donc pas un royaume du Gulma, mais des royaumes gulmanceba » ; la thèse citée est Le Nord Gulma précolonial, p. 123."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1992,
+              "to": 1992,
+              "label": "1992"
+            },
+            "era": "modern",
+            "statement": "Le nom Gulmanceba est, pour le linguiste Abibou Thiombiano, le pluriel de Gulmance ; il appelle Gulmu le territoire des Gulmanceba et gulmancema leur langue.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Éléments de grammaire gulmance : l'énoncif verbal",
+                "author": "Abibou Thiombiano",
+                "year": 1992,
+                "url": "https://publication.codesria.org/index.php/pub/catalog/download/1756/2645/7460?inline=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "Introduction générale",
+                "notes": "Rapport de diplôme d'études approfondies en linguistique, Université de Ouagadougou, septembre 1992, réalisé avec le soutien du CODESRIA et mis en ligne par celui-ci. Lu le 3 novembre 2026. Passage lu : « gulmu (territoire des gulmanceba, pluriel de gulmance) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1991,
+              "to": 1991,
+              "label": "1991"
+            },
+            "era": "modern",
+            "statement": "Le nom Gulmanceba est celui qu'emploie l'historien Diouldé Laya pour les habitants du Gurma oriental, au Niger ; il précise que l'administration les appelle Gourmantché.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Migrations et intégration politique dans le Gurma oriental au XIXe siècle : exemple des Folmongaani",
+                "author": "Diouldé Laya",
+                "year": 1991,
+                "url": "https://www.persee.fr/doc/jafr_0399-0346_1991_num_61_2_2319",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 65",
+                "notes": "Journal des africanistes, tome 61, fascicule 2, 1991, p. 65-90, lu sur Persée. Seule la première page (p. 65) a pu être lue. Lu le 3 novembre 2026. Passage lu : « de petites chefferies peuplées de Gulmanceba (les Gourmantché dans le vocabulaire de l'administration) »."
               }
             ]
           },
@@ -227,7 +308,7 @@
                 "url": "https://www.idref.fr/027678717",
                 "tier": "official",
                 "source_kind": "repository",
-                "notes": "Notice créée le 19 octobre 1984, modifiée le 16 juin 2021 ; lu le 10 octobre 2026."
+                "notes": "Notice créée le 19 octobre 1984, modifiée le 16 juin 2021. Lu le 3 novembre 2026. La notice retient la forme « Gourmantché (peuple d'Afrique) » et renvoie vers les formes Bigulimanceba, Bimba, Binumba, Gourma, Gourmanché, Gourmantchés, Gourmas, Gulma, Gulmance, Gulmanceba, Gurma, Gurmanche, Gurmanshe, Gurmantche, Gurmantyeba et Gurmas ; elle précise que l'adjectif « gourmantché » est invariable."
               }
             ]
           }
@@ -239,9 +320,31 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom français de ce peuple, écrit dès 1912 ; on ne sait pas d'où il vient.",
+        "shortLine": "Le nom que l'administration donne à ce peuple, selon l'historien Diouldé Laya ; écrit dès 1912.",
         "periodLabel": "Écrit depuis 1912 ; en usage aujourd'hui",
         "accounts": [
+          {
+            "period": {
+              "from": 1991,
+              "to": 1991,
+              "label": "1991"
+            },
+            "era": "modern",
+            "statement": "Le nom Gourmantché est, selon l'historien Diouldé Laya, le mot de l'administration pour désigner les Gulmanceba.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Migrations et intégration politique dans le Gurma oriental au XIXe siècle : exemple des Folmongaani",
+                "author": "Diouldé Laya",
+                "year": 1991,
+                "url": "https://www.persee.fr/doc/jafr_0399-0346_1991_num_61_2_2319",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 65",
+                "notes": "Journal des africanistes, tome 61, fascicule 2, 1991, p. 65-90, lu sur Persée. Seule la première page (p. 65) a pu être lue. Lu le 3 novembre 2026. Passage lu : « de petites chefferies peuplées de Gulmanceba (les Gourmantché dans le vocabulaire de l'administration) »."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1984,
@@ -249,8 +352,8 @@
               "label": "Notice de 1984, revue en 2021"
             },
             "era": "modern",
-            "statement": "Le nom Gourmantché est la forme retenue par la notice d'autorité IdRef pour ce peuple ; l'adjectif gourmantché y est invariable. On ne sait pas avec certitude d'où vient ce nom.",
-            "aspect": "meaning",
+            "statement": "Le nom Gourmantché est la forme retenue par la notice d'autorité IdRef et par la Bibliothèque nationale de France pour ce peuple ; l'adjectif gourmantché y est invariable.",
+            "aspect": "usage",
             "sources": [
               {
                 "title": "Gourmantché (peuple d'Afrique) — notice d'autorité",
@@ -259,7 +362,16 @@
                 "url": "https://www.idref.fr/027678717",
                 "tier": "official",
                 "source_kind": "repository",
-                "notes": "Notice créée le 19 octobre 1984, modifiée le 16 juin 2021 ; lu le 10 octobre 2026."
+                "notes": "Notice créée le 19 octobre 1984, modifiée le 16 juin 2021. Lu le 3 novembre 2026. La notice retient la forme « Gourmantché (peuple d'Afrique) » et renvoie vers les formes Bigulimanceba, Bimba, Binumba, Gourma, Gourmanché, Gourmantchés, Gourmas, Gulma, Gulmance, Gulmanceba, Gurma, Gurmanche, Gurmanshe, Gurmantche, Gurmantyeba et Gurmas ; elle précise que l'adjectif « gourmantché » est invariable."
+              },
+              {
+                "title": "Gourmantché (peuple d'Afrique) — notice RAMEAU",
+                "author": "Bibliothèque nationale de France",
+                "year": null,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb119670254",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice d'autorité du catalogue général de la BnF, créée le 19 octobre 1984. Lu le 3 novembre 2026. Elle renvoie vers les mêmes formes que la notice IdRef, cite parmi ses sources un recueil de l'Unesco publié en 1984 et le Grand Larousse universel, et donne pour équivalent à la Bibliothèque du Congrès « Gurma (African people) »."
               }
             ]
           },
@@ -270,7 +382,8 @@
               "label": "1912"
             },
             "era": "colonial",
-            "statement": "Le nom Gourmantché apparaît sous la forme Gourmantchés, avec la variante Gourmankés, dans l'étude de Louis Tauxier sur le pays mossi : il y désigne la population de l'est du cercle de Fada-N'Gourma. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "statement": "Le nom Gourmantché apparaît sous la forme Gourmantchés, avec la variante Gourmankés, dans l'étude de l'administrateur colonial Louis Tauxier sur le pays mossi : il y désigne la population de l'est du cercle de Fada-N'Gourma. C'est la plus ancienne trace de ce nom que nous connaissons. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Gourmantchés",
             "birth": true,
             "sources": [
               {
@@ -280,7 +393,8 @@
                 "url": "https://archive.org/details/le-noir-du-soudan-pays-mossi-et-gourounsi-louis-tauxier-1912.",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "notes": "Paris, Larose. Lu dans une copie non officielle mise en ligne sur Internet Archive, lu le 10 octobre 2026 ; le texte numérisé ne porte pas les numéros de page. Passage lu : chapitre sur les Mossi, passage sur le cercle de Fada-N'Gourma."
+                "notes": "Ouvrage d'un administrateur colonial, publié à Paris chez Émile Larose en 1912. Lu dans une copie mise en ligne sur Internet Archive par un particulier ; les numéros de page sont ceux de l'imprimé, relevés dans une seconde numérisation du même livre sur Internet Archive (archive.org/details/le-noir-du-soudan). Lu le 3 novembre 2026. Passage lu, au début du chapitre sur le travail chez les Mossi : « dans le cercle de Fada N'Gourma ils ont les Gourmantchés ou Gourmankés à l'est ».",
+                "page": "p. 451"
               }
             ]
           }
@@ -292,8 +406,8 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom du pays de ce peuple, employé aussi pour le peuple.",
-        "periodLabel": "Écrit depuis le XIXe siècle ; en usage aujourd'hui",
+        "shortLine": "Le nom du pays de ce peuple, que les Songhay auraient donné selon Heinrich Barth.",
+        "periodLabel": "Écrit depuis 1819 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
@@ -312,7 +426,7 @@
                 "url": "https://www.idref.fr/027678717",
                 "tier": "official",
                 "source_kind": "repository",
-                "notes": "Notice créée le 19 octobre 1984, modifiée le 16 juin 2021 ; lu le 10 octobre 2026."
+                "notes": "Notice créée le 19 octobre 1984, modifiée le 16 juin 2021. Lu le 3 novembre 2026. La notice retient la forme « Gourmantché (peuple d'Afrique) » et renvoie vers les formes Bigulimanceba, Bimba, Binumba, Gourma, Gourmanché, Gourmantchés, Gourmas, Gulma, Gulmance, Gulmanceba, Gurma, Gurmanche, Gurmanshe, Gurmantche, Gurmantyeba et Gurmas ; elle précise que l'adjectif « gourmantché » est invariable."
               }
             ]
           },
@@ -323,7 +437,7 @@
               "label": "1912"
             },
             "era": "colonial",
-            "statement": "Le nom Gourma désigne pour Louis Tauxier un royaume de l'est, avec Fada-N'Gourma pour capitale, devenu indépendant de Ouagadougou bien avant l'occupation française.",
+            "statement": "Le nom Gourma désigne pour Louis Tauxier un royaume de l'est, avec Fada-N'Gourma pour capitale. Selon lui, ce royaume avait dû dépendre jadis de Ouagadougou, mais il en était devenu indépendant bien avant l'occupation française.",
             "sources": [
               {
                 "title": "Le Noir du Soudan : pays mossi et gourounsi",
@@ -332,7 +446,8 @@
                 "url": "https://archive.org/details/le-noir-du-soudan-pays-mossi-et-gourounsi-louis-tauxier-1912.",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "notes": "Paris, Larose. Lu dans une copie non officielle mise en ligne sur Internet Archive, lu le 10 octobre 2026 ; le texte numérisé ne porte pas les numéros de page. Passage lu : chapitre sur l'histoire de l'empire mossi."
+                "notes": "Ouvrage d'un administrateur colonial, publié à Paris chez Émile Larose en 1912. Lu dans une copie mise en ligne sur Internet Archive par un particulier ; les numéros de page sont ceux de l'imprimé, relevés dans une seconde numérisation du même livre sur Internet Archive (archive.org/details/le-noir-du-soudan). Lu le 3 novembre 2026. Passage lu : deux royaumes « qui jadis avaient dû relever de Ouagadougou, mais qui en étaient devenus indépendants bien avant même notre occupation », dont « celui du Gourma, avec Fada-N'gourma pour capitale ».",
+                "page": "p. 582"
               }
             ]
           },
@@ -354,7 +469,63 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "page": "seconde partie, p. 60",
-                "notes": "Récit du voyage de 1887-1889. Lu sur la numérisation des Smithsonian Libraries sur Internet Archive, lu le 10 octobre 2026. L'exemplaire n'a pas de page de titre et porte la pagination du Tour du monde, où le récit a paru en livraisons ; la notice du catalogue le date de 1892."
+                "notes": "Récit du voyage de 1887-1889 de l'explorateur français Louis-Gustave Binger. Lu sur la numérisation des Smithsonian Libraries sur Internet Archive ; l'exemplaire porte la pagination du Tour du monde, où le récit a paru en livraisons, et la notice du catalogue le date de 1892. Lu le 3 novembre 2026. Passage lu : « limité au nord par le Mossi, au nord-est par le Gourma, à l'est par le Boussangsi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1853,
+              "to": 1858,
+              "label": "Voyage de 1853, récit publié en 1858"
+            },
+            "era": "polity",
+            "statement": "Le nom Gurma ne viendrait pas des habitants du pays, selon l'explorateur allemand Heinrich Barth : les Songhay, qui vivaient alors au nord du fleuve Niger, l'auraient donné à la région située sur l'autre rive, au sud. Barth pense que ce n'est pas non plus le nom que ce peuple se donne.",
+            "formAsWritten": "Gurma",
+            "aspect": "meaning",
+            "actors": [
+              {
+                "name": "Heinrich Barth",
+                "role": "propose cette origine"
+              },
+              {
+                "name": "Les Songhay",
+                "role": "à qui Barth attribue le nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 4",
+                "author": "Heinrich Barth",
+                "year": 1858,
+                "url": "https://archive.org/details/travelsdiscoveri04bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 258-260 et appendice VI, p. 550",
+                "notes": "Récit de l'explorateur allemand Heinrich Barth, en mission pour le gouvernement britannique ; Londres, Longman, Brown, Green, Longmans & Roberts, 1858, volume 4. Barth traverse le pays gurma en juin 1853. Lu sur la numérisation d'Internet Archive. Lu le 3 novembre 2026. Passages lus : « a name which, however, does not seem to owe its origin to the native inhabitants, but probably was given to it by the Songhay » (p. 258) ; « Gurma, also, does not appear to be the indigenous name by which those people designate themselves, but is, I think, of Songhay origin » (p. 550)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1853,
+              "to": 1858,
+              "label": "Voyage de 1853, récit publié en 1858"
+            },
+            "era": "polity",
+            "statement": "Le nom Gurma entre aussi, selon Heinrich Barth, dans l'expression haoussa « fada-n-Gurma », « le palais ou la résidence royale du Gurma ». Les Haoussa la donnaient encore à Botu, qui avait été autrefois la capitale du pays.",
+            "formAsWritten": "fada-n-Gurma",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 4",
+                "author": "Heinrich Barth",
+                "year": 1858,
+                "url": "https://archive.org/details/travelsdiscoveri04bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 259",
+                "notes": "Récit de l'explorateur allemand Heinrich Barth, en mission pour le gouvernement britannique ; Londres, Longman, Brown, Green, Longmans & Roberts, 1858, volume 4. Barth traverse le pays gurma en juin 1853. Lu sur la numérisation d'Internet Archive. Lu le 3 novembre 2026. Passage lu : « it is still called by the Hausa people “fada-n-Gurma,” “the palace or royal residence of Gurma.” »"
               }
             ]
           },
@@ -365,7 +536,7 @@
               "label": "1819"
             },
             "era": "polity",
-            "statement": "Le nom Gourma a peut-être une forme proche, Goorooma, dans le récit de l'Anglais Thomas Edward Bowdich : c'est un royaume sur la route qui va du Dagomba vers les pays haoussa, à quelques jours du Niger. Les sources ne disent pas s'il s'agit du même royaume. C'est la plus ancienne trace possible de ce nom que le projet connaît.",
+            "statement": "Le nom Gourma a peut-être une forme proche, Goorooma, dans le récit de l'Anglais Thomas Edward Bowdich : c'est un royaume sur la route qui va du Dagomba vers les pays haoussa, à quelques jours du Niger. Les sources ne disent pas s'il s'agit du même royaume. C'est la plus ancienne trace possible de ce nom que nous connaissons.",
             "formAsWritten": "Goorooma",
             "birth": true,
             "sources": [
@@ -377,7 +548,7 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "page": "p. 206-207",
-                "notes": "Londres, John Murray. Lu sur Internet Archive, lu le 10 octobre 2026."
+                "notes": "Récit de la mission britannique de 1817 auprès du royaume ashanti, publié à Londres chez John Murray en 1819. Lu sur Internet Archive. Lu le 3 novembre 2026. Passage lu : « Nineteen journies from Yahndi is Matchaquawdie, six beyond is Goorooma » (p. 206)."
               }
             ]
           }
@@ -387,34 +558,11 @@
         "nameText": "Bimba",
         "nameStatus": "former",
         "selfGiven": false,
-        "languageOfOrigin": null,
-        "namedBy": null,
-        "shortLine": "Un nom noté par l'explorateur Binger à la fin du XIXe siècle.",
-        "periodLabel": "Écrit vers 1892",
+        "languageOfOrigin": "mos",
+        "namedBy": "Les Mossi, selon Heinrich Barth",
+        "shortLine": "Le nom que les Mossi donnaient à ce peuple au XIXe siècle, selon Heinrich Barth.",
+        "periodLabel": "Écrit en 1858 et vers 1892",
         "accounts": [
-          {
-            "period": {
-              "from": 1888,
-              "to": 1892,
-              "label": "Voyage de 1888 (récit publié vers 1892)"
-            },
-            "era": "polity",
-            "statement": "Le nom Bimba désigne chez l'explorateur Louis-Gustave Binger les gens du Gourma, chez qui naît l'une des trois rivières qui forment la Volta.",
-            "formAsWritten": "Bimba",
-            "birth": true,
-            "sources": [
-              {
-                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, récit paru dans Le Tour du monde",
-                "author": "Louis-Gustave Binger",
-                "year": 1892,
-                "url": "https://archive.org/details/dunigeraugolfede00bing",
-                "tier": "referenced",
-                "source_kind": "archive",
-                "page": "seconde partie, p. 55",
-                "notes": "Récit du voyage de 1887-1889. Lu sur la numérisation des Smithsonian Libraries sur Internet Archive, lu le 10 octobre 2026. L'exemplaire n'a pas de page de titre et porte la pagination du Tour du monde, où le récit a paru en livraisons ; la notice du catalogue le date de 1892."
-              }
-            ]
-          },
           {
             "period": {
               "from": 1984,
@@ -431,7 +579,58 @@
                 "url": "https://www.idref.fr/027678717",
                 "tier": "official",
                 "source_kind": "repository",
-                "notes": "Notice créée le 19 octobre 1984, modifiée le 16 juin 2021 ; lu le 10 octobre 2026."
+                "notes": "Notice créée le 19 octobre 1984, modifiée le 16 juin 2021. Lu le 3 novembre 2026. La notice retient la forme « Gourmantché (peuple d'Afrique) » et renvoie vers les formes Bigulimanceba, Bimba, Binumba, Gourma, Gourmanché, Gourmantchés, Gourmas, Gulma, Gulmance, Gulmanceba, Gurma, Gurmanche, Gurmanshe, Gurmantche, Gurmantyeba et Gurmas ; elle précise que l'adjectif « gourmantché » est invariable."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1892,
+              "label": "Voyage de 1888 (récit publié vers 1892)"
+            },
+            "era": "polity",
+            "statement": "Le nom Bimba désigne chez l'explorateur Louis-Gustave Binger les gens du Gourma. Le chef d'Arago lui apprend que la rivière qu'il franchit est formée de trois cours d'eau, dont l'un sort de chez les Bimba.",
+            "formAsWritten": "Bimba",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, récit paru dans Le Tour du monde",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "seconde partie, p. 55",
+                "notes": "Récit du voyage de 1887-1889 de l'explorateur français Louis-Gustave Binger. Lu sur la numérisation des Smithsonian Libraries sur Internet Archive ; l'exemplaire porte la pagination du Tour du monde, où le récit a paru en livraisons, et la notice du catalogue le date de 1892. Lu le 3 novembre 2026. Passage lu : « l'une vient du Boussanga ou Bousangsi, l'autre sort de chez les Bimba (Gourma), enfin la troisième vient du Mossi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1853,
+              "to": 1858,
+              "label": "Voyage de 1853, récit publié en 1858"
+            },
+            "era": "polity",
+            "statement": "Le nom Bimba est, selon l'explorateur Heinrich Barth, celui que les Mossi donnent aux Gurma, comme ils donnent leurs propres noms à tous les peuples qui les entourent. C'est la plus ancienne trace de ce nom que nous connaissons.",
+            "formAsWritten": "Bimba",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Les Mossi",
+                "role": "emploient ce nom, selon Barth"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 4",
+                "author": "Heinrich Barth",
+                "year": 1858,
+                "url": "https://archive.org/details/travelsdiscoveri04bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "appendice VI, p. 551",
+                "notes": "Récit de l'explorateur allemand Heinrich Barth, en mission pour le gouvernement britannique ; Londres, Longman, Brown, Green, Longmans & Roberts, 1858, volume 4. Barth traverse le pays gurma en juin 1853. Lu sur la numérisation d'Internet Archive. Lu le 3 novembre 2026. Passage lu : « they themselves give peculiar names to the tribes around them, calling the Fulbe, Chilmigo; the Songhay, Marénga; the Gurma, Bimba » ; « The inhabitants of Gurma call the Hausawa, Jongoy »."
               }
             ]
           }

@@ -87,7 +87,7 @@ describe("fiche languages charter", () => {
       />
     );
     const others = tileLabelled("Autres langues du pays");
-    const herero = within(others).getByText("Herero").closest("li");
+    const herero = within(others).getByText("Otjiherero").closest("li");
     expect(herero).toHaveTextContent("her");
     expect(herero?.querySelector(".afh-pill-code")).toHaveTextContent("her");
     expect(container.textContent).not.toMatch(/\p{Extended_Pictographic}/u);
