@@ -8,69 +8,143 @@
     "appellations": {
       "mainName": "Dei",
       "selfAppellation": "Dei",
-      "exonyms": ["Dei", "Dey", "Dewoin (nom de la langue)"],
-      "originOfExonyms": "Le terme Dei est utilise tant par le peuple lui-meme que par les sources exterieures. Le nom Dewoin designe plus specifiquement la langue et est utilise dans les classifications linguistiques (code ISO dee). Le terme Dey est une variante orthographique anglaise courante dans la litterature anglophone.",
-      "whyProblematic": "La confusion entre le nom du peuple (Dei/Dey) et le nom de la langue (Dewoin) peut preter a ambiguite dans les sources. Le groupe est tres petit et peu documente dans la litterature ethnographique.",
-      "contemporaryUsage": "Dei ou Dey est utilise dans les documents officiels liberiens et les recensements nationaux. Dewoin est utilise par Joshua Project et les references linguistiques. Le groupe est l'un des 17 groupes ethniques indigenes officiellement reconnus au Liberia.",
+      "exonyms": ["Dewoi", "Dewoin", "Daba", "De", "Dewe", "Donoi"],
+      "spellingAliases": ["Dey", "Dé", "Do", "Déwoi", "Denwoin", "Dewema"],
+      "originOfExonyms": "Le nom Dé apparaît en 1854 chez le missionnaire Sigismund Koelle : il appelle la langue de Monrovia Déwoi, « communément appelée Dé », et ajoute que Dewoi est le nom d'origine du pays autour de Monrovia, sur le fleuve Saint-Paul, que cette langue appelle Dé. En 1904, Maurice Delafosse écrit « les De ou Do (appelés aussi Dewoi) ». Le nom Dewoin, d'abord écrit Denwoin dans un ouvrage du Bureau of Folkways du Liberia paru en 1955, est devenu le nom de la langue chez les linguistes. En 1979, Svend Holsoe relève les noms que lui donnent ses voisins : Daba chez les Bassa, De chez les Vai, Dewe, Donoi et Dewoi chez les Gola, selon la Bibliothèque du Congrès.",
+      "whyProblematic": "Le nom Dewoin désigne surtout la langue, et le nom Dei le peuple, ce qui brouille les sources. Ce peuple a aussi été décrit comme voué à disparaître : en 1854, Koelle écrit que la tribu cessera sans doute bientôt d'exister et que sa langue s'éteindra, absorbée par la nationalité libérienne, ce qu'il présente comme un progrès. En 1955, un ouvrage du Bureau of Folkways du Liberia dit que beaucoup de ses membres ont été absorbés par les Gola, les Vai et les Mandingues.",
+      "contemporaryUsage": "Le recensement de 2008 du Liberia compte ce peuple sous le nom Dey. Les linguistes nomment sa langue dewoin : c'est le nom qu'emploient la norme ISO 639-3, sous le code dee, et Glottolog, qui donne aussi les formes De, Dei, Dewoi et Dey. La Bibliothèque du Congrès range ce peuple sous l'entrée Dewoin.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null,
       "linguisticFamily": "FLG_ATLANTIQUE",
-      "ethnoLinguisticGroup": "Groupe linguistique Kru (famille Niger-Congo, sous-groupe Kwa). Les Dei appartiennent au groupe Kruan avec les Kru, Bassa, Krahn et Kuwaa.",
-      "historicalRegion": "Comte de Montserrado, cote du Liberia, principalement entre les fleuves Lofa et Saint-Paul, pres de Monrovia",
+      "ethnoLinguisticGroup": "Langues kru, famille Niger-Congo. Glottolog place le dewoin dans le kru occidental, avec le bassa ; Koelle en 1854 et Delafosse en 1904 le rangeaient déjà parmi les langues kru.",
+      "historicalRegion": "Côte du Liberia autour de Monrovia, entre Monrovia et le fleuve Lofa, avec quelques villages sur le bas Saint-Paul et le Mesurado, selon Maurice Delafosse (1904) ; comté de Montserrado aujourd'hui.",
       "currentCountries": ["LBR"]
     },
-    "ethnicities": ["Dei (Dey)"],
+    "ethnicities": ["Dei, appelés aussi Dey ou Dewoin"],
     "origins": {
-      "ancientOrigins": "Les Dei appartiennent au groupe Kruan (Kru, Kuwaa, Bassa, Krahn, Dei) qui a migre du nord et de l'est vers la foret cotiere du Liberia actuel. Avec les Gola et les Kissi, ils comptent parmi les premiers peuples a s'etablir dans la region de l'actuel Liberia. L'anthropologue Warren d'Azevedo note que les Dei, avec les Bassa et les Kru (de langue Kwa), ainsi que les Gola et les Kissi (de langue West Atlantic/Mel), etaient parmi les premiers arrivants dans la region.",
-      "formationPeriod": "Migration vers le Liberia cotier estimee entre le XIIe et le XVIe siecle. L'expansion des peuples de langue Mande depuis le nord et l'est a pousse les petits groupes Kru comme les Dei vers le sud et la cote. La decadence de l'empire du Mali (1375) et de l'empire Songhai (1591) a accelere ces mouvements.",
-      "migrationRoutes": [
-        "Migration depuis le nord et l'est (probablement depuis le nord-est africain) vers la foret cotiere",
-        "Pression migratoire des locuteurs Mande (Kpelle, Gio, Mano) depuis le XIVe siecle poussant les petits groupes Kru vers le littoral",
-        "Etablissement definitif dans le comté de Montserrado pres de l'actuel site de Monrovia"
-      ],
+      "ancientOrigins": null,
+      "formationPeriod": null,
+      "migrationRoutes": [],
       "historicalSettlementZones": [
-        "Comte de Montserrado (Liberia), zone cotiece entre les fleuves Lofa et Saint-Paul",
-        "Zones periurbaines de Monrovia"
+        "Pays autour de Monrovia, sur le fleuve Saint-Paul, où Koelle compte en 1854 cinq hameaux : Gbegbewili, Blefu, Kankambili, Nofobli et Koe",
+        "Entre Monrovia et le fleuve Lofa, avec quelques villages sur le bas Saint-Paul et le Mesurado, selon Maurice Delafosse (1904)",
+        "Comté de Montserrado, près de la côte et de Monrovia, selon Ethnologue (2005) cité par la Bibliothèque du Congrès"
       ],
-      "unificationsOrDivisions": "Le groupe Dei est tres petit et n'a pas forme d'entite politique elargie. L'organisation traditionnelle est decentralisee, basee sur des chefferies villageoises autonomes. Lors de la fondation de Monrovia par les colons americains-liberiens (1820-1865), les Dei furent parmi les premiers peuples indigenes a entrer en contact avec les immigrants et a s'assimiler progressivement a l'economie urbaine.",
-      "externalInfluences": "Arrivee des colons americains-liberiens a partir de 1820. Les Dei etaient parmi les premiers groupes a s'etablir a Monrovia et a s'integrer dans l'economie des colons (artisans, commis, domestiques). Politique de domination et de marginalisation menee par les Americo-Liberiens envers les peuples indigenes. Les deux guerres civiles liberiennes (1989-1997 et 1999-2003) ont fortement affecte toutes les communautes du comte de Montserrado.",
-      "majorHistoricalEvents": "Contacts avec les premiers colons americains-liberiens a Monrovia (1820s). Integration precoce dans l'economie coloniale de Monrovia, devenant artisans, commis et domestiques (avec les Bassa). Recensement de 2008 enumerant 11783 Dei (0.3% de la population liberienne). Impact des guerres civiles liberienne (1989-2003) sur les communautes de Montserrado."
+      "unificationsOrDivisions": "En 1955, un ouvrage du Bureau of Folkways du Liberia dit que beaucoup de Dei ont été absorbés par les Gola, les Vai et les Mandingues, selon la Bibliothèque du Congrès.",
+      "externalInfluences": "Monrovia, la capitale de la jeune république du Liberia, s'élève dans le pays que Koelle appelle Dewoi. En 1854, Koelle prévoit que la nationalité libérienne absorbera celle des Dewoi, des Bassa et des Vai. Son informateur, Gba, ou Thomas Samson, né à Gbegbewili, avait été conduit à Freetown pour y apprendre les manières anglaises.",
+      "majorHistoricalEvents": "En 1854, Koelle décrit la tribu comme réduite à cinq hameaux près de Monrovia."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Organisation traditionnelle decentralisee en chefferies villageoises. Les villages sont l'unite politique de base. L'integration precoce dans l'economie de Monrovia a modifie les structures traditionnelles. Le Poro (societe secrete masculine) et le Sande (societe secrete feminine) - institutions presentes chez de nombreux groupes liberiens - jouent un role d'organisation sociale et de transmission des normes.",
-      "clanOrganization": "Organisation clanique patrilineaire ou bilaterale typique des peuples Kru du Liberia. Les liens de clan determinent les droits d'acces a la terre et les obligations sociales.",
-      "roleOfLineages": "Les lignages jouent un role important dans la regulation des mariages, des successions et de l'acces aux ressources. La residence patrilocale est la norme traditionelle.",
-      "religiousAuthority": "Religion chretienne majoritaire (adoptee par contact avec les Americo-Liberiens). Maintien de pratiques religieuses indigenes (animisme, culte des ancetres). Les societes secretes Poro et Sande servent d'autorites religieuses et de cours de justice coutumiere."
+      "traditionalPoliticalSystem": null,
+      "clanOrganization": null,
+      "ageClassSystems": null,
+      "roleOfLineages": null,
+      "religiousAuthority": null
     },
     "languages": {
-      "mainLanguage": "Dewoin (Dei)",
+      "mainLanguage": "Dewoin (dee)",
       "isoCodes": ["dee"],
       "dialects": [],
-      "vehicularRole": "L'anglais liberien est la langue officielle et vehiculaire du Liberia. Le Dewoin est une langue maternelle locale. L'integration precoce dans Monrovia a favorise l'adoption de l'anglais liberien comme langue dominante chez les Dei contemporains."
+      "vehicularRole": null
+    },
+    "externalIdentifiers": {
+      "glottocode": "dewo1238",
+      "iso639_3": "dee"
     },
     "culture": {
-      "majorRites": "Rites d'initiation via les societes secretes Poro (hommes) et Sande (femmes), communes a de nombreux groupes de la foret liberienne. Ces societes organisent des ecoles d'initiation, transmettent les normes sociales et servent de cours coutumières. Rites agricoles et de transition de vie. L'integration precoce a l'economie de Monrovia a transforme certaines pratiques culturelles.",
-      "symbols": "Masques et objets rituels des societes secretes Poro et Sande. L'architecture traditionnelle de la foret tropicale humide. Les techniques de peche et d'agriculture dans la zone cotiere.",
-      "artsAndMusic": "Artisanat de la foret cotiere : sculpture sur bois, tissage. Musique ceremonielle liee aux rites du Poro et du Sande. Echanges culturels avec les Americo-Liberiens et les autres groupes de Montserrado (Bassa, Kru).",
-      "spiritualities": "Majorite chretienne (protestantisme, methodisme et baptisme). Maintien de croyances animistes : culte des ancetres, intermediaires spirituels, utilisation d'objets rituels. La cosmologie indigene liberienne est centree sur un etre supreme et ses intermediaires spirituels (ancetres et divinites)."
+      "majorRites": null,
+      "symbols": null,
+      "artsAndMusic": null,
+      "spiritualities": null
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas d'Etat ou de royaume centralise. Chefferies villageoises autonomes. Les Dei n'ont pas d'histoire d'entite politique supra-villageoise connue, contrairement aux grands royaumes de l'Afrique de l'Ouest.",
-      "relationsWithNeighbors": "Relations avec les Bassa (groupe Kru voisin, avec qui ils ont partage l'experience d'integration a Monrovia). Relations avec les Gola (groupe Mel) et les immigres Mande. Assimilation culturelle partielle aux normes des Americo-Liberiens dès le XIXe siecle. Les Dei et les Bassa furent les premiers groupes indigenes a s'etablir a Monrovia et a s'integrer dans l'economie coloniale.",
-      "conflictsOrAlliances": "Les guerres civiles liberiennes (1989-1997 et 1999-2003) ont affecte le comte de Montserrado, territoire principal des Dei. La proximite de Monrovia a expose les Dei a la violence des factions armees. La politique de divide and rule des Americo-Liberiens au XIXe-XXe siecle ciblait tous les groupes indigenes, y compris les Dei.",
-      "diaspora": "Migrations internes au Liberia vers Monrovia et autres centres urbains pour raisons economiques et educatives. La guerre civile a genere des deplacements internes et une diaspora liberienne en Afrique de l'Ouest et aux Etats-Unis (notamment dans le Minnesota et le Rhode Island)."
+      "kingdomsOrChiefdoms": null,
+      "relationsWithNeighbors": "Les Dei ont pour voisins les Vai à l'ouest et les Gola au nord, selon Maurice Delafosse (1904). Chacun de ces voisins, comme les Bassa, leur donne un nom : Daba chez les Bassa, De chez les Vai, Dewe, Donoi et Dewoi chez les Gola, selon Svend Holsoe (1979).",
+      "conflictsOrAlliances": null,
+      "diaspora": null
     },
     "demography": {
-      "totalPopulation": 15000,
-      "referenceYear": 2025,
-      "source": "Recensement national liberien 2008 : 11783 Dei (0.3%) ; Joshua Project 2025 : 19000 Dewoin ; estimation 2025 d'apres croissance demographique",
+      "totalPopulation": 13070,
+      "referenceYear": 2008,
+      "source": "Recensement de 2008 du Liberia (LISGIS), échantillon d'un ménage sur dix diffusé par IPUMS International : 1 307 personnes s'y déclarent Dey sur 348 057, soit environ 13 070 habitants une fois chaque personne comptée pour dix, et 0,4 % de la population.",
       "distributionByCountry": [
         {
           "country": "LBR",
-          "population": 15000,
-          "note": "Exclusivement au Liberia. Concentres dans le comte de Montserrado pres de Monrovia, entre les fleuves Lofa et Saint-Paul. L'un des plus petits groupes ethniques indigenes du Liberia (0.3% de la population nationale en 2008 selon le recensement)."
+          "population": 13070,
+          "percentage": 100,
+          "note": "Autour de Monrovia, dans le comté de Montserrado ; estimation tirée de l'échantillon du recensement de 2008."
         }
       ]
     },
+    "gaps": [
+      {
+        "field": "content.origins.ancientOrigins",
+        "reason": "Koelle (1854) et Delafosse (1904) situent déjà les Dei autour de Monrovia, mais ne racontent pas leur histoire plus ancienne. Nous n'avons pas encore trouvé d'étude publiée sur ce point."
+      },
+      {
+        "field": "content.origins.formationPeriod",
+        "reason": "Nous n'avons pas encore trouvé d'étude publiée qui date l'installation des Dei sur la côte de Monrovia."
+      },
+      {
+        "field": "content.organization",
+        "reason": "Nous n'avons pas encore trouvé de description publiée de l'organisation politique, des clans, des classes d'âge ou des autorités religieuses propres aux Dei. Les textes que nous avons lus, de Koelle (1854), de Delafosse (1904) et les notices de la Bibliothèque du Congrès, n'en parlent pas."
+      },
+      {
+        "field": "content.languages.vehicularRole",
+        "reason": "Nous n'avons pas trouvé de source récente que nous ayons pu lire sur l'usage du dewoin face à l'anglais du Liberia."
+      },
+      {
+        "field": "content.culture",
+        "reason": "Nous n'avons pas encore trouvé de description publiée des rites, des arts et des croyances propres aux Dei. Les textes que nous avons lus, de Koelle (1854), de Delafosse (1904) et les notices de la Bibliothèque du Congrès, n'en parlent pas."
+      },
+      {
+        "field": "content.historicalRole.conflictsOrAlliances",
+        "reason": "Les relations entre les Dei et les colons de Monrovia au XIXe siècle sont étudiées par l'historien Svend Holsoe, dans un article de 1971 que nous n'avons pas pu lire."
+      }
+    ],
     "sources": [
+      {
+        "title": "Sigismund Wilhelm Koelle, Polyglotta Africana, 1854",
+        "url": "https://archive.org/details/polyglottaafrica00koel",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Londres, Church Missionary House, 1854. Lu le 3 novembre 2026 sur la numérisation d'Internet Archive : remarques sur la langue Déwoi et son informateur, au début du livre."
+      },
+      {
+        "title": "Maurice Delafosse, Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes, 1904",
+        "url": "https://archive.org/details/vocabulairescomp00delauoft",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Paris, Ernest Leroux, 1904. Lu le 3 novembre 2026 sur la numérisation d'Internet Archive : description de la famille krou, p. 68-72."
+      },
+      {
+        "title": "Glottolog 5.3 — Dewoin (dewo1238)",
+        "url": "https://glottolog.org/resource/languoid/id/dewo1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue, lue le 3 novembre 2026 : classement dans le kru occidental (Kru, Greater Western Kru, Western Kru, Wee-Bassa-Klao, Bassa-Klao, Bassaic) et autres noms."
+      },
+      {
+        "title": "ISO 639-3, Dewoin [dee]",
+        "url": "https://iso639-3.sil.org/code/dee",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du code, tenue par SIL International."
+      },
+      {
+        "title": "IPUMS International, variable ETHNICLR (Ethnicity, Liberia)",
+        "url": "https://international.ipums.org/international-action/variables/ETHNICLR",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Lu le 3 novembre 2026 : effectifs par ethnie dans les échantillons des recensements du Liberia de 1974 et de 2008."
+      },
+      {
+        "title": "Dewoin (African people), notice d'autorité sh2006002317",
+        "url": "https://id.loc.gov/authorities/subjects/sh2006002317.html",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Notice d'autorité de la Bibliothèque du Congrès, créée le 22 juin 2006. Lu le 3 novembre 2026 dans sa version JSON : elle cite Ethnologue (2005), Svend Holsoe (1979) et le Bureau of Folkways du Liberia (1955)."
+      },
       {
         "title": "Minority Rights Group – Liberia country profile, 2024",
         "url": "https://minorityrights.org/country/liberia/",
@@ -109,7 +183,7 @@
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Dei désigne un petit peuple de la côte du Liberia, près de Monrovia, et sa langue, le dewoin. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. D'autres noms existent : Dewoi, Dewoin et Dey, ainsi que des noms que lui donnent ses voisins bassa, vai et gola. On ne sait pas avec certitude d'où vient le nom Dei ; les sources que nous avons lues ne le disent pas. Nous présentons plus bas ce qu'elles disent de chacun de ces noms.",
+    "summary": "Le nom Dei désigne un petit peuple de la côte du Liberia, près de Monrovia, et sa langue, le dewoin. Les sources que nous avons lues ne donnent pas le nom que ce peuple emploie pour lui-même. D'autres noms existent : Dewoi, Dewoin et Dey, ainsi que des noms que lui donnent ses voisins bassa, vai et gola. Nous présentons plus bas ce que les sources disent de chacun de ces noms.",
     "selfNameUnknown": true,
     "names": [
       {
@@ -118,7 +192,7 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom le plus courant de ce peuple de la côte de Monrovia ; on ne sait pas d'où il vient.",
+        "shortLine": "Le nom le plus courant de ce peuple de la côte de Monrovia ; Koelle l'écrit Dé en 1854.",
         "usedIn": ["eng"],
         "periodLabel": "Écrit Dé dès 1854 ; en usage aujourd'hui",
         "accounts": [
@@ -199,6 +273,35 @@
           },
           {
             "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "formAsWritten": "De",
+            "statement": "Le nom Dei apparaît sous les formes De et Do chez l'administrateur colonial français Maurice Delafosse, en 1904 : il range « les De ou Do (appelés aussi Dewoi) » parmi les tribus de langue krou. Il les place entre Monrovia et le fleuve Lofa, avec quelques villages sur le bas Saint-Paul et le Mesurado, et leur donne pour voisins les Vaï à l'ouest et les Gola au nord.",
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 71-72",
+                "notes": "Paris, Ernest Leroux, 1904. Lu le 3 novembre 2026 sur la numérisation d'Internet Archive. L'auteur, administrateur colonial français, classe les « De ou Do (appelés aussi Dewoi) » comme onzième tribu du groupe bakwe de la famille krou."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1854,
               "to": 1854,
               "label": "1854"
@@ -240,7 +343,7 @@
             },
             "era": "modern",
             "aspect": "usage",
-            "statement": "Le nom Dewoi est l'un de ceux que les Gola donnent aux Dei, avec Dewe et Donoi, selon Holsoe, cité par la Bibliothèque du Congrès. On ne sait pas avec certitude ce que ces noms voulaient dire à l'origine, ni pourquoi les Gola les ont choisis.",
+            "statement": "Le nom Dewoi est l'un de ceux que les Gola donnent aux Dei, avec Dewe et Donoi, selon Holsoe, cité par la Bibliothèque du Congrès.",
             "sources": [
               {
                 "title": "Dewoin (African people), notice d'autorité sh2006002317",
@@ -251,6 +354,28 @@
                 "source_kind": "archive",
                 "page": "notice d'autorité, note de citation Holsoe 1979, p. 13",
                 "notes": "Notice d'autorité de la Bibliothèque du Congrès (Michigan State University pour la création), créée le 22 juin 2006, lue le 12 octobre 2026 dans sa version JSON. Elle cite Holsoe, A standardization of Liberian ethnic nomenclature (1979), p. 13 : « Dei; also known as Denwoin, Dewema, Dey, Dewoi, Do; called Daba by Bassa, De by Vai, Dewe, Donoi and Dewoi by Gola ». Nous n'avons pas lu l'ouvrage de Holsoe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom Dewoi sert encore en 1904 chez Maurice Delafosse, qui écrit que les De ou Do sont « appelés aussi Dewoi ».",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 71",
+                "notes": "Paris, Ernest Leroux, 1904. Lu le 3 novembre 2026 sur la numérisation d'Internet Archive. L'auteur, administrateur colonial français, classe les « De ou Do (appelés aussi Dewoi) » comme onzième tribu du groupe bakwe de la famille krou."
               }
             ]
           },
@@ -273,7 +398,7 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "page": "Introductory Remarks, p. 4",
-                "notes": "Church Missionary House, Londres, lu le 12 octobre 2026 sur la numérisation d'Internet Archive. L'auteur, missionnaire, recueille ses listes de mots à Freetown, auprès de Thomas Samson (Gba), né à Gbegbewili, près de Monrovia. Remarques sur la liste III. A. 1 : « Dewoi is the original name of the country about Monrovia, on the River St. Paul ». Koelle ne dit pas qui a donné ce nom ni pourquoi."
+                "notes": "Church Missionary House, Londres, lu le 12 octobre 2026 sur la numérisation d'Internet Archive. L'auteur, missionnaire, recueille ses listes de mots à Freetown, auprès de Thomas Samson (Gba), né à Gbegbewili, près de Monrovia. Remarques sur la liste III. A. 1 : « Dewoi is the original name of the country about Monrovia, on the River St. Paul »."
               }
             ]
           }
@@ -297,7 +422,7 @@
             },
             "era": "modern",
             "aspect": "usage",
-            "statement": "Le nom Dewoin est le nom de référence de cette langue du Liberia dans la norme internationale ISO 639-3, sous le code dee. Glottolog le range aussi dans le groupe kru. On ne sait pas avec certitude quand il a été écrit ainsi pour la première fois, ni d'où il vient.",
+            "statement": "Le nom Dewoin est le nom de référence de cette langue du Liberia dans la norme internationale ISO 639-3, sous le code dee. Glottolog le range aussi dans le groupe kru.",
             "sources": [
               {
                 "title": "ISO 639-3, Dewoin [dee]",
@@ -357,6 +482,28 @@
         "accounts": [
           {
             "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "Recensement de 2008"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom Dey est la catégorie sous laquelle le recensement de 2008 du Liberia compte ce peuple, dans l'échantillon que diffuse IPUMS International : 1 307 personnes sur les 348 057 de l'échantillon se déclarent Dey.",
+            "sources": [
+              {
+                "title": "IPUMS International, variable ETHNICLR (Ethnicity, Liberia)",
+                "author": "Minnesota Population Center, université du Minnesota",
+                "year": null,
+                "url": "https://international.ipums.org/international-action/variables/ETHNICLR",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "catégorie 03, Dey",
+                "notes": "Lu le 3 novembre 2026 : effectifs de la variable ethnique dans l'échantillon du recensement de 2008 du Liberia, conduit par l'institut de statistique libérien (LISGIS). L'échantillon compte un ménage sur dix, soit 348 057 personnes, et chaque personne y vaut dix habitants."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1979,
               "to": 1979,
               "label": "1979"
@@ -398,7 +545,7 @@
             "era": "modern",
             "birth": true,
             "formAsWritten": "Daba",
-            "statement": "Le nom Daba est celui que les Bassa donnent aux Dei, selon Holsoe (1979), cité par la Bibliothèque du Congrès. Nous n'avons pas lu l'ouvrage, et les sources que nous avons lues ne disent ni ce que veut dire ce nom ni depuis quand les Bassa l'emploient. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "statement": "Le nom Daba est celui que les Bassa donnent aux Dei, selon Holsoe (1979), cité par la Bibliothèque du Congrès. Nous n'avons pas lu l'ouvrage. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
             "sources": [
               {
                 "title": "Dewoin (African people), notice d'autorité sh2006002317",
@@ -432,7 +579,7 @@
             "era": "modern",
             "birth": true,
             "formAsWritten": "De",
-            "statement": "Le nom De est celui que les Vai donnent aux Dei, selon Holsoe (1979), cité par la Bibliothèque du Congrès. Nous n'avons pas lu l'ouvrage, et les sources que nous avons lues ne disent ni ce que veut dire ce nom ni depuis quand les Vai l'emploient. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "statement": "Le nom De est celui que les Vai donnent aux Dei, selon Holsoe (1979), cité par la Bibliothèque du Congrès. Nous n'avons pas lu l'ouvrage. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
             "sources": [
               {
                 "title": "Dewoin (African people), notice d'autorité sh2006002317",
@@ -466,7 +613,7 @@
             "era": "modern",
             "birth": true,
             "formAsWritten": "Dewe",
-            "statement": "Le nom Dewe est l'un de ceux que les Gola donnent aux Dei, selon Holsoe (1979), cité par la Bibliothèque du Congrès. Nous n'avons pas lu l'ouvrage, et les sources que nous avons lues ne disent ni ce que veut dire ce nom ni depuis quand les Gola l'emploient. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "statement": "Le nom Dewe est l'un de ceux que les Gola donnent aux Dei, selon Holsoe (1979), cité par la Bibliothèque du Congrès. Nous n'avons pas lu l'ouvrage. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
             "sources": [
               {
                 "title": "Dewoin (African people), notice d'autorité sh2006002317",
@@ -500,7 +647,7 @@
             "era": "modern",
             "birth": true,
             "formAsWritten": "Donoi",
-            "statement": "Le nom Donoi est l'un de ceux que les Gola donnent aux Dei, selon Holsoe (1979), cité par la Bibliothèque du Congrès. Nous n'avons pas lu l'ouvrage, et les sources que nous avons lues ne disent ni ce que veut dire ce nom ni depuis quand les Gola l'emploient. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "statement": "Le nom Donoi est l'un de ceux que les Gola donnent aux Dei, selon Holsoe (1979), cité par la Bibliothèque du Congrès. Nous n'avons pas lu l'ouvrage. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
             "sources": [
               {
                 "title": "Dewoin (African people), notice d'autorité sh2006002317",

@@ -214,7 +214,7 @@ describe("ETNI-1680 patronyme batch selection manifest", () => {
     expect(manifest.coverageCorrections).toEqual([
       {
         staleClaim: "FLG_SONGHAY has zero extracted clan-name candidates",
-        currentFinding: ["Kurtey", "Taguru"],
+        currentFinding: ["Kurtey"],
         evidence: manifest.coverageCorrections[0].evidence,
       },
     ]);

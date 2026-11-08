@@ -1,12 +1,6 @@
 {
   "description": "French words the fiches still print without their accent (siecle for siècle, Senegal for Sénégal…), counted per fiche by checkUnaccentedFrenchProse in scripts/validateAfrikData.ts. Measured on 2026-10-18 after the thirty most-read entities were fixed. A two-edge ratchet: a fiche may not rise above its count, and a fix must lower its entry in the same change (remove it at 0). Never raise a count.",
   "fiches": {
-    "peuples/FLG_ATLANTIQUE/PPL_ATLANTIQUE_MACRO.json": 34,
-    "peuples/FLG_ATLANTIQUE/PPL_BAGA.json": 17,
-    "peuples/FLG_ATLANTIQUE/PPL_BAINOUK.json": 38,
-    "peuples/FLG_ATLANTIQUE/PPL_BALANTA.json": 34,
-    "peuples/FLG_ATLANTIQUE/PPL_BIDYOGO.json": 11,
-    "peuples/FLG_ATLANTIQUE/PPL_DEI.json": 10,
     "peuples/FLG_ATLANTIQUE/PPL_FULANI_MASSINA.json": 23,
     "peuples/FLG_ATLANTIQUE/PPL_GOLA.json": 18,
     "peuples/FLG_ATLANTIQUE/PPL_KURANKO.json": 10,
@@ -459,7 +453,6 @@
     "peuples/FLG_TCHADIQUE/PPL_GIZIGA.json": 15,
     "peuples/FLG_TCHADIQUE/PPL_GWANDARA.json": 21,
     "peuples/FLG_TCHADIQUE/PPL_KENGA.json": 18,
-    "peuples/FLG_TCHADIQUE/PPL_KERA.json": 6,
     "peuples/FLG_TCHADIQUE/PPL_LAGWAN.json": 11,
     "peuples/FLG_TCHADIQUE/PPL_MAFA.json": 16,
     "peuples/FLG_TCHADIQUE/PPL_MANDARA.json": 15,
