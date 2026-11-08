@@ -60,6 +60,46 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Mémoire de master de Lynda Salhi, Université Abderrahmane Mira de Béjaïa, 2014-2015, consulté le 2 septembre 2026. À la p. 55, l'autrice étudie Belkacem comme prénom utilisé à Aokas. Elle le rapproche d'Aboulqâsim et cite Yermèche. Elle ne décrit pas la transmission de Belkacem comme nom de famille."
+    },
+    {
+      "sourceKey": "qui-es-tu-j-ai-ete-dit-de-la-destruction-de-la-f",
+      "title": "Qui es-tu ? J'ai été dit. De la destruction de la filiation dans l'État civil d'Algérie ou éléments d'un onomacide sémantique",
+      "url": "https://insaniyat.crasc.dz/en/article/qui-es-tu-jai-ete-dit-de-la-destruction-de-la-filiation-dans-letat-civil-dalgerie-ou-elements-dun-onomacide-semantique",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Insaniyat, 4(10), 2000, p. 79-87, lu en ligne en texte intégral ; la version en ligne ne marque pas les pages de l'imprimé. L'auteur écrit que l'état civil algérien est né de la loi du 23 mars 1882, précédée d'une loi de 1873, qui a imposé « l'obligation et la généralisation du patronyme » là où l'on se nommait par la filiation (ism, alam, kunya, laqab, nisba) ; il cite Charles-Robert Ageron sur les commissaires chargés d'établir cet état civil. Lu le 14 octobre 2026."
+    },
+    {
+      "sourceKey": "etude-etymo-semantique-des-patronymes-de-la-regi",
+      "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+      "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 18 : « la présence coloniale a bouleversé le système dénominatif qui est passé d'une désignation par filiation lignagère à plusieurs éléments à un système patronymique à un seul élément », imposé « après avoir instauré l'état civil des indigènes musulmans en 1882 » ; l'introduction (p. 2) date pourtant l'état civil de 1871, et le projet suit la loi de 1882 que donne Benramdane. Lu le 14 octobre 2026."
+    },
+    {
+      "sourceKey": "campagnes-de-kabylie-histoire-medico-chirurgical",
+      "title": "Campagnes de Kabylie : histoire médico-chirurgicale des expéditions de 1854, 1856 et 1857",
+      "url": "https://archive.org/details/campagnesdekabyl00bert",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Docteur A. Bertherand, médecin en chef de l'armée d'expédition ; exemplaire numérisé d'archive.org. Page 5, première page du chapitre sur la campagne de 1854 (pagination reconstituée d'après les pages suivantes, dont les en-têtes sont numérotés) : « Les difficultés politiques suscitées dans l'Est de la province d'Alger, autour du Bach-Aghalick de Bel-Kassem, par les intrigues de Bou-Baghla, décidèrent le Gouverneur-Général comte Randon à se porter, vers la fin de mai 1854, au sein de ces turbulentes et belliqueuses contrées ». Lu le 14 octobre 2026."
+    },
+    {
+      "sourceKey": "la-kabylie-et-les-coutumes-kabyles-tome-i",
+      "title": "La Kabylie et les coutumes kabyles, tome I",
+      "url": "https://archive.org/details/bub_gb_8jgbAAAAYAAJ",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Paris, 1872 ; exemplaire numérisé d'archive.org (tome I), page lue sur l'image de la page imprimée. Page 259, tribu des Aït Aïssa ou Mimoun : « Aït Bel Kassem (enfants de Bel Kassem) » ; page 261, tribu des Aït Adas : « Aït Bel Kassem (les enfants de Bel Kassem) ». Lu le 14 octobre 2026."
+    },
+    {
+      "sourceKey": "une-mission-medicale-en-kabylie",
+      "title": "Une mission médicale en Kabylie",
+      "url": "https://archive.org/details/unemissionmdica01leclgoog",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Docteur L. Leclerc, médecin-major, chargé en 1857, après la soumission de la Grande Kabylie, de soigner les habitants du Djurdjura depuis Fort-Napoléon ; Paris, J.-B. Baillière ; exemplaire numérisé d'archive.org, dont la notice donne 1864. Page 79 : acte de vente de Tala Hamou (Kabylie), dont les vendeurs sont « Mohammed ben Bilcassem ben Ali ben Adar et son frère Sliman », puis un inventaire après décès au nom de « Ali ben Bilcassem ben Mohammed Amar » ; les actes ne sont pas datés sur cette page. Lu le 14 octobre 2026."
     }
   ],
   "gaps": [
@@ -119,7 +159,7 @@
               "label": "Décrit en 2015"
             },
             "era": "modern",
-            "statement": "Le nom Belkacem désigne un prénom d'homme, que l'étude des prénoms inscrits à l'état civil d'Aokas, en Kabylie, relève entre 1962 et 1970. On ne sait pas avec certitude ce qu'il veut dire : l'étude en donne deux lectures, présentées séparément.",
+            "statement": "Le nom Belkacem désigne un prénom d'homme, que l'étude des prénoms inscrits à l'état civil d'Aokas, en Kabylie, relève entre 1962 et 1970. On ne sait pas avec certitude ce qu'il veut dire : l'étude en donne deux explications, présentées séparément.",
             "aspect": "meaning",
             "sources": [
               {
@@ -174,7 +214,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 62",
-                "notes": "Mémoire de master en sciences du langage, Université Abderrahmane Mira de Béjaïa, 2014-2015 ; texte intégral lu, pages numérotées de l'imprimé. Il étudie les prénoms inscrits à l'état civil d'Aokas de 1962 à 1970. Page 62, parmi les appellations de parenté relevées à l'état civil d'Aokas : « Belkacem, « fils de Qacem » ». L'étude donne donc deux lectures du même prénom, « père de Kacem » (p. 44) et « fils de Qacem » (p. 62), sans les départager. Lu le 14 octobre 2026."
+                "notes": "Mémoire de master en sciences du langage, Université Abderrahmane Mira de Béjaïa, 2014-2015 ; texte intégral lu, pages numérotées de l'imprimé. Il étudie les prénoms inscrits à l'état civil d'Aokas de 1962 à 1970. Page 62, parmi les appellations de parenté relevées à l'état civil d'Aokas : « Belkacem, « fils de Qacem » ». L'étude donne donc deux explications du même prénom, « père de Kacem » (p. 44) et « fils de Qacem » (p. 62), sans les départager. Lu le 14 octobre 2026."
               },
               {
                 "title": "Étude anthroponymique de la commune d'Aokas de 1962 à 1970",
