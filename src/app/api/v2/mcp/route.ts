@@ -28,6 +28,7 @@ import {
 import { logger } from "@/lib/api/logger";
 
 // Every answer reads the corpus at request time.
+// @req REQ-002
 export const dynamic = "force-dynamic";
 
 // @req REQ-002

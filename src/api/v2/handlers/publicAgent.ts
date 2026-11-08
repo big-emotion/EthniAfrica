@@ -34,6 +34,7 @@ import { readNaming, type NamingProjection } from "@/lib/search/naming";
 
 const copy = publicAgentCopy.fr;
 
+// @req REQ-002
 export const PUBLIC_AGENT_PROTOCOL_VERSIONS = [
   "2025-06-18",
   "2025-03-26",
@@ -44,6 +45,7 @@ const SERVER_INFO = { name: "ethniafrica", version: "0.1.0" };
 const MAX_SUBJECTS = 3;
 const SEARCH_LIMIT = 10;
 
+// @req REQ-002
 export const JSON_RPC_ERRORS = {
   parse: -32700,
   invalidRequest: -32600,
