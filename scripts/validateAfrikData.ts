@@ -4878,8 +4878,13 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // Burundi and the Republic of the Congo from an official toponymic factfile.
   // 9 -> 8 on 2026-10-26: `culture.mainLanguages` added on the DR Congo, its
   // four constitutional national languages beside French.
+<<<<<<< HEAD
   // 8 -> 7 on 2026-11-03: `culture.mainLanguages` added on Madagascar,
   // Malagasy and French, from Glottolog and the Constitution.
+=======
+  // 8 -> 7 on 2026-11-03: `culture.mainLanguages` added on Ethiopia, its
+  // working and regional languages, from the 2007 census and Glottolog.
+>>>>>>> origin/data/premium-countries-03
   pays: 7,
 };
 
@@ -5400,7 +5405,9 @@ export function checkCountryFamilyReferences(
 // Ghana; the fiche was folded into PPL_GOURMANTCHE, which counts Ghana.
 // 7 -> 6 on 2026-10-11: COG listed PPL_SANGO, whose currentCountries omitted
 // Congo; the fiche was folded into PPL_SANGO_SCT, which counts it.
-export const COUNTRY_PEOPLE_MEMBERSHIP_CEILING = 6;
+// 6 -> 5 on 2026-11-03: ETH listed PPL_TIGRE (the Tigre of Eritrea) for the
+// Tigray people; the entry now points at PPL_TIGRAY, which counts Ethiopia.
+export const COUNTRY_PEOPLE_MEMBERSHIP_CEILING = 5;
 
 export function checkCountryPeopleMembership(
   datasetRoot: string,
