@@ -4,7 +4,7 @@
   "nameEn": "Burkina Faso",
   "nameOfficial": "Burkina Faso (Burkina Faso)",
   "summary": "Le nom Burkina Faso réunit deux mots pris à deux langues du pays : burkina, du mooré, et faso, du dioula. Ensemble, ils se traduisent par « la patrie des hommes intègres ». Le pays porte ce nom depuis le 4 août 1984 ; il s'appelait auparavant Haute-Volta, le nom d'une colonie française créée en 1919, supprimée en 1932 puis rétablie en 1947. Bien avant la colonie, le plateau central était le pays des royaumes mossi, à côté de peuples qui vivaient sans roi.",
-  "etymology": "Le nom \"Burkina Faso\" est composé de deux mots pris dans deux langues du pays. \"Burkina\" vient du mooré, la langue des Mossi : le dictionnaire mooré de la SIL le traduit par « homme intègre », une personne qui a le sens de la dignité et de l'honneur ; l'intégrité elle-même se dit burkĩndi. Ce dictionnaire note aussi que le mot est emprunté au songhay. \"Faso\" vient du dioula, où il veut dire « patrie » ; les dictionnaires le décomposent en fa, « père », et so, « maison » : la maison du père. Ensemble, ils se traduisent par \"la patrie des hommes intègres\". Le nom remplace \"Haute-Volta\", que l'administration coloniale française avait donné à la colonie d'après le fleuve Volta, un nom que des marins portugais employaient déjà pour le fleuve au début du XVIe siècle. Une ordonnance datée du 2 août 1984 établit le changement, qui prend effet le 4 août 1984, jour du premier anniversaire de l'arrivée au pouvoir de Thomas Sankara. La même ordonnance nomme les habitants \"Burkinabè\". Ce mot ajoute à \"burkina\" la terminaison -bè, empruntée au fulfulde, la langue des Peuls, où elle marque le pluriel et veut dire « les gens de », selon l'Office québécois de la langue française. En français, le mot reste le même au masculin, au féminin et au pluriel : on écrit un Burkinabè, des Burkinabè. L'Office admet aussi les formes Burkinabé et Burkinabée. Le géographe Alain Maharaux écrit que le mot burkinabè emprunte aux trois langues principales du pays : c'est vrai de l'ensemble formé par burkina, faso et -bè.",
+  "etymology": "Le nom \"Burkina Faso\" est composé de deux mots pris dans deux langues du pays. \"Burkina\" vient du mooré, la langue des Mossi : le dictionnaire mooré de la SIL le traduit par « homme intègre », une personne qui a le sens de la dignité et de l'honneur ; l'intégrité elle-même se dit burkĩndi. Ce dictionnaire note aussi que le mot est emprunté au songhay. \"Faso\" vient du dioula, où il veut dire « patrie » ; les dictionnaires le décomposent en fa, « père », et so, « maison » : la maison du père. Ensemble, ils se traduisent par \"la patrie des hommes intègres\". Le nom remplace \"Haute-Volta\", que l'administration coloniale française avait donné à la colonie d'après le fleuve Volta, un nom que des marins portugais employaient déjà pour le fleuve au début du XVIe siècle. Une ordonnance datée du 2 août 1984 établit le changement, qui prend effet le 4 août 1984, jour du premier anniversaire de l'arrivée au pouvoir de Thomas Sankara. La même ordonnance nomme les habitants \"Burkinabè\". Ce mot ajoute à \"burkina\" la terminaison -bè, qui vient du fulfulde, la langue des Peuls, où elle marque le pluriel et veut dire « les gens de », selon l'Office québécois de la langue française. En français, le mot reste le même au masculin, au féminin et au pluriel : on écrit un Burkinabè, des Burkinabè. L'Office admet aussi les formes Burkinabé et Burkinabée. Le géographe Alain Maharaux écrit que le mot burkinabè emprunte aux trois langues principales du pays : c'est vrai de l'ensemble formé par burkina, faso et -bè.",
   "nameOriginActor": "Le nom a été établi par l'ordonnance n° 84-043/CNR/PRES du 2 août 1984, entrée en vigueur le 4 août, sous la présidence de Thomas Sankara. Selon Nayabtigoungou Congo Kaboré, secrétaire général du gouvernement à l'époque, qui l'a raconté en 2013, le conseil des ministres a d'abord entendu plusieurs propositions, chacune dans une langue. Le mot burkina a été retenu sur l'avis de Blaise Compaoré ; Thomas Sankara a ajouté faso et la terminaison -bè. C'est le récit d'un seul témoin. Le nom qu'il remplace, \"Haute-Volta\", avait été donné par l'administration coloniale française, qui créa la colonie par décret du 1er mars 1919 avec Ouagadougou pour capitale.",
   "nameHistory": {
     "summary": "Le nom Burkina Faso désigne un pays d'Afrique de l'Ouest, qui le porte depuis le 4 août 1984. Il est formé de deux mots pris à deux langues du pays, le mooré et le dioula. Le pays s'appelait auparavant Haute-Volta, du nom que l'administration coloniale française avait donné à la colonie en 1919. Les sources lues s'accordent sur le sens du nom Burkina Faso ; elles disent moins de choses sur le choix du nom Haute-Volta. Nous les présentons plus bas.",
@@ -117,55 +117,6 @@
                 "tier": "official",
                 "source_kind": "linguistic_reference",
                 "notes": "Fiche terminologique de l'Office québécois de la langue française, mise à jour en 2022, lu le 3 novembre 2026. Le mot résulte de l'ajout au nom Burkina du suffixe -bè, « signifiant « les gens de » », une « désinence plurielle empruntée à la langue des Peuls ». La fiche donne Burkinabè comme invariable en genre et en nombre et admet aussi Burkinabé et Burkinabée. Elle date du 16 août 1983 l'inscription du mot au Journal officiel du Burkina, alors que les autres sources lues datent l'ordonnance d'août 1984."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": 2019,
-              "to": 2019,
-              "label": "Recensement de 2019"
-            },
-            "era": "modern",
-            "statement": "Le nom Burkina Faso et le nom des habitants, burkinabè, prennent leurs mots à trois langues de familles différentes. Glottolog range le mooré parmi les langues gur, le dioula parmi les langues mandingues, du groupe mandé, et le fulfulde du Burkina Faso parmi les langues peules. Au recensement de 2019, le mooré est la principale langue de 52,9 % des habitants de trois ans et plus, le fulfulde de 7,8 % et le dioula de 5,7 %. Le gourmantché, principale langue de 6,8 % d'entre eux, est plus parlé que le dioula, mais le nom ne lui emprunte rien.",
-            "aspect": "usage",
-            "sources": [
-              {
-                "title": "Glottolog 5.3 — Mossi (moss1236)",
-                "author": "Glottolog",
-                "year": null,
-                "url": "https://glottolog.org/resource/languoid/id/moss1236",
-                "tier": "official",
-                "source_kind": "linguistic_reference",
-                "notes": "Catalogue des langues du monde publié par l'Institut Max Planck, lu le 3 novembre 2026. Il range le mooré, qu'il nomme Mossi, parmi les langues gur."
-              },
-              {
-                "title": "Glottolog 5.3 — Dyula (dyul1238)",
-                "author": "Glottolog",
-                "year": null,
-                "url": "https://glottolog.org/resource/languoid/id/dyul1238",
-                "tier": "official",
-                "source_kind": "linguistic_reference",
-                "notes": "Catalogue des langues du monde publié par l'Institut Max Planck, lu le 3 novembre 2026. Il range le dioula parmi les langues mandingues, du groupe mandé, le signale au Burkina Faso, en Côte d'Ivoire et au Mali, et note qu'il sert à l'enseignement, au commerce, à la chasse et à la religion."
-              },
-              {
-                "title": "Glottolog 5.3 — Western Niger Fulfulde (west2454)",
-                "author": "Glottolog",
-                "year": null,
-                "url": "https://glottolog.org/resource/languoid/id/west2454",
-                "tier": "official",
-                "source_kind": "linguistic_reference",
-                "notes": "Catalogue des langues du monde publié par l'Institut Max Planck, lu le 3 novembre 2026. Il range ce fulfulde, parlé au Burkina Faso et désigné aussi comme le peul du Burkina Faso, parmi les langues peules, de la branche atlantique."
-              },
-              {
-                "title": "Résultats du 5e Recensement général de la population et de l'habitation (RGPH 2019) : volume des tableaux statistiques",
-                "author": "Institut national de la statistique et de la démographie (INSD)",
-                "year": 2023,
-                "url": "https://www.insd.bf/sites/default/files/2024-06/Volume%20des%20tableaux%20statistiques_%205e%20RGPH.pdf",
-                "tier": "official",
-                "source_kind": "official_statistics",
-                "page": "tableaux I.1, I.21, I.22 et I.24, p. 2 et 18-19",
-                "notes": "Volume publié en janvier 2023 par l'Institut national de la statistique et de la démographie du Burkina Faso, lu le 3 novembre 2026. Tableau I.1 : le recensement de 2019 compte 20 505 155 habitants (population de droit). Tableau I.21 : parmi les résidents, 63,8 % se déclarent musulmans, 20,1 % catholiques, 9,0 % animistes, 6,2 % protestants et 0,7 % sans religion ; 4 782 049 vivent en ville et 13 389 702 à la campagne. Tableau I.22 : les musulmans forment 97,4 % des résidents de la région du Sahel, et les animistes 48,1 % de ceux du Sud-Ouest. Tableau I.24 : chez les résidents de trois ans et plus, la principale langue parlée est le mooré pour 52,9 %, le fulfudé (peul) pour 7,8 %, le gourmantché pour 6,8 %, le dioula pour 5,7 %, le bissa pour 3,3 %, le gourounsi pour 3,2 %, le dagara et le bwamu pour 2,0 % chacun, le bobo et le sénoufo pour 1,5 % chacun, le lobiri pour 1,2 %, le birifor pour 0,7 % et le français pour 2,2 %. Le dioula est la principale langue de 15,3 % des citadins, contre 2,2 % à la campagne."
               }
             ]
           },
@@ -322,6 +273,55 @@
                 "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, lu dans l'exemplaire numérisé. Partie « Sur le plateau central voltaïque, les royaumes mossi du XVIe au XIXe siècle » : « les premières formations datent du milieu du XIIe siècle » ; l'avènement de Naaba Wubri « date de 1495 environ » ; Naaba Yadega « fonda le royaume du Yatenga vers 1540 »."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Recensement de 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Burkina Faso et le nom des habitants, burkinabè, prennent leurs mots à trois langues de familles différentes. Glottolog range le mooré parmi les langues gur, le dioula parmi les langues mandingues, du groupe mandé, et le fulfulde du Burkina Faso parmi les langues peules. Au recensement de 2019, le mooré est la principale langue de 52,9 % des habitants de trois ans et plus, le fulfulde de 7,8 % et le dioula de 5,7 %. Le gourmantché, principale langue de 6,8 % d'entre eux, est plus parlé que le dioula, mais le nom ne lui emprunte rien.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Mossi (moss1236)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/moss1236",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde publié par l'Institut Max Planck, lu le 3 novembre 2026. Il range le mooré, qu'il nomme Mossi, parmi les langues gur."
+              },
+              {
+                "title": "Glottolog 5.3 — Dyula (dyul1238)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/dyul1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde publié par l'Institut Max Planck, lu le 3 novembre 2026. Il range le dioula parmi les langues mandingues, du groupe mandé, le signale au Burkina Faso, en Côte d'Ivoire et au Mali, et note qu'il sert à l'enseignement, au commerce, à la chasse et à la religion."
+              },
+              {
+                "title": "Glottolog 5.3 — Western Niger Fulfulde (west2454)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/west2454",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde publié par l'Institut Max Planck, lu le 3 novembre 2026. Il range ce fulfulde, parlé au Burkina Faso et désigné aussi comme le peul du Burkina Faso, parmi les langues peules, de la branche atlantique."
+              },
+              {
+                "title": "Résultats du 5e Recensement général de la population et de l'habitation (RGPH 2019) : volume des tableaux statistiques",
+                "author": "Institut national de la statistique et de la démographie (INSD)",
+                "year": 2023,
+                "url": "https://www.insd.bf/sites/default/files/2024-06/Volume%20des%20tableaux%20statistiques_%205e%20RGPH.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "tableaux I.1, I.21, I.22 et I.24, p. 2 et 18-19",
+                "notes": "Volume publié en janvier 2023 par l'Institut national de la statistique et de la démographie du Burkina Faso, lu le 3 novembre 2026. Tableau I.1 : le recensement de 2019 compte 20 505 155 habitants (population de droit). Tableau I.21 : parmi les résidents, 63,8 % se déclarent musulmans, 20,1 % catholiques, 9,0 % animistes, 6,2 % protestants et 0,7 % sans religion ; 4 782 049 vivent en ville et 13 389 702 à la campagne. Tableau I.22 : les musulmans forment 97,4 % des résidents de la région du Sahel, et les animistes 48,1 % de ceux du Sud-Ouest. Tableau I.24 : chez les résidents de trois ans et plus, la principale langue parlée est le mooré pour 52,9 %, le fulfudé (peul) pour 7,8 %, le gourmantché pour 6,8 %, le dioula pour 5,7 %, le bissa pour 3,3 %, le gourounsi pour 3,2 %, le dagara et le bwamu pour 2,0 % chacun, le bobo et le sénoufo pour 1,5 % chacun, le lobiri pour 1,2 %, le birifor pour 0,7 % et le français pour 2,2 %. Le dioula est la principale langue de 15,3 % des citadins, contre 2,2 % à la campagne."
+              }
+            ]
           }
         ]
       },
@@ -472,7 +472,7 @@
               "label": "Époque coloniale"
             },
             "era": "colonial",
-            "statement": "Le nom Haute-Volta désigne une colonie située dans le bassin des Volta, comme l'historien Michel Izard appelle cette région. Le nom Volta lui-même est un mot portugais : des marins venus acheter de l'or sur la côte de l'actuel Ghana l'employaient déjà au début du XVIe siècle. Le plus ancien texte lu qui le nomme est le livre de navigation de Duarte Pacheco Pereira, écrit vers 1505 : « un fleuve qui s'appelle le Rio da Volta ». En portugais, volta veut dire tour, détour ou retour. En 1912, Maurice Delafosse propose deux explications : les méandres du fleuve, ou un nom local entendu à son embouchure. La journaliste Elizabeth Ohene rapporte que les bateaux y faisaient demi-tour, alors que Pacheco décrit la côte au-delà du fleuve. Les Ewe l'appellent Amu, selon Elizabeth Ohene ; plus au nord, écrit Delafosse, chaque peuple l'appelle simplement « le fleuve ». En février 1918, Delafosse propose de créer une colonie pour les populations « du groupe dit voltaïque », selon Alain Maharaux.",
+            "statement": "Le nom Haute-Volta désigne une colonie située dans le bassin des Volta, comme l'historien Michel Izard appelle cette région. Le nom Volta lui-même est un mot portugais : des marins venus acheter de l'or sur la côte de l'actuel Ghana l'employaient déjà au début du XVIe siècle. Le plus ancien texte lu qui le nomme est le livre de navigation de Duarte Pacheco Pereira, écrit vers 1505 : « un fleuve qui s'appelle le Rio da Volta ». En portugais, volta veut dire tour, détour ou retour. Le texte de Pacheco ne dit pas pourquoi les marins emploient ce mot. En 1912, Maurice Delafosse propose deux explications : les méandres du fleuve, ou un nom local entendu à son embouchure. La journaliste Elizabeth Ohene rapporte que les bateaux y faisaient demi-tour, alors que Pacheco décrit la côte au-delà du fleuve. Les Ewe l'appellent Amu, selon Elizabeth Ohene ; plus au nord, écrit Delafosse, chaque peuple l'appelle simplement « le fleuve ». En février 1918, Delafosse propose de créer une colonie pour les populations « du groupe dit voltaïque », selon Alain Maharaux.",
             "aspect": "meaning",
             "sources": [
               {
@@ -856,7 +856,7 @@
           "isoCode": "hmb"
         }
       ],
-      "culturalTraditions": "Dans un rapport remis aux Nations unies en 2024, le gouvernement décrit le Burkina Faso comme « une mosaïque culturelle (une soixantaine de groupes ethniques) », où chaque groupe pratique librement sa culture, sa religion et ses coutumes. L'inventaire Ethnologue compte 66 langues nées dans la région. Au recensement de 2019, le mooré est la principale langue de 52,9 % des habitants de trois ans et plus, devant le fulfulde (7,8 %), le gourmantché (6,8 %) et le dioula (5,7 %) ; le français n'est la principale langue que de 2,2 % d'entre eux. Depuis la révision constitutionnelle du 30 décembre 2023, les langues nationales reconnues par la loi sont les langues officielles, et le français est, avec l'anglais, une langue de travail. En 2020, selon le rapport du gouvernement, dix langues nationales écrites étaient enseignées dans 276 écoles bilingues. Le travail du fer est aussi une tradition ancienne : des familles de forgerons de Yamané, Kindibo et Douroula le pratiquent encore, selon le Centre du patrimoine mondial de l'UNESCO.",
+      "culturalTraditions": "Dans un rapport remis aux Nations unies en 2024, le gouvernement décrit le Burkina Faso comme « une mosaïque culturelle (une soixantaine de groupes ethniques) », où chaque groupe pratique librement sa culture, sa religion et ses coutumes. Les langues nées dans la région sont au nombre de 66 selon l'inventaire Ethnologue. Au recensement de 2019, le mooré est la principale langue de 52,9 % des habitants de trois ans et plus, devant le fulfulde (7,8 %), le gourmantché (6,8 %) et le dioula (5,7 %) ; le français n'est la principale langue que de 2,2 % d'entre eux. Depuis la révision constitutionnelle du 30 décembre 2023, les langues nationales reconnues par la loi sont les langues officielles, et le français est, avec l'anglais, une langue de travail. En 2020, selon le rapport du gouvernement, dix langues nationales écrites étaient enseignées dans 276 écoles bilingues. Le travail du fer est aussi une tradition ancienne : des familles de forgerons de Yamané, Kindibo et Douroula le pratiquent encore, selon le Centre du patrimoine mondial de l'UNESCO.",
       "dominantReligions": "Au recensement de 2019, 63,8 % des résidents se déclarent musulmans, 20,1 % catholiques, 6,2 % protestants et 9,0 % animistes, le mot du recensement pour les fidèles des religions locales ; 0,7 % se disent sans religion. La répartition change beaucoup d'une région à l'autre : les musulmans forment 97,4 % des résidents du Sahel, au nord, et les animistes 48,1 % de ceux du Sud-Ouest. L'enquête démographique et de santé de 2021 donne des proportions proches chez les femmes de 15 à 49 ans.",
       "lifestyles": "Le pays reste surtout rural : au recensement de 2019, 13,4 millions de résidents vivent à la campagne et 4,8 millions en ville. Le coton y tient une place ancienne : après la création de la colonie en 1919, l'administration étend les champs collectifs de coton sur des terres jusque-là réservées aux cultures familiales ou à la jachère, selon l'historien Joseph Abo Kobi. L'élevage est l'activité des pasteurs peuls : au Yatenga, ils s'installent près des bas-fonds et des marigots, où se trouvent pâturages et points d'eau, selon l'anthropologue Maud Saint-Lary.",
       "socialOrganization": "Les sociétés du pays s'organisent de façons très différentes. Les royaumes mossi ont un pouvoir central, celui du roi ou naaba ; au Yatenga, un chef peul tient sa terre du chef de terre local, et le roi laisse aux Peuls une autonomie relative, selon Maud Saint-Lary. D'autres peuples vivaient sans roi : les Bwaba ne reconnaissaient pas d'autorité au-dessus du village, selon Michel Izard et Joseph Ki-Zerbo, et les Lobi forment une société organisée par lignages, sans pouvoir central, selon Michèle Fiéloux. En pays dagara, ce sont les Français qui ont fait des chefs de terre des chefs politiques, vers 1912-1914, selon Jeanne-Marie Kambou-Ferrand.",
@@ -1028,8 +1028,7 @@
         "url": "https://www.insd.bf/sites/default/files/2024-06/Volume%20des%20tableaux%20statistiques_%205e%20RGPH.pdf",
         "tier": "official",
         "source_kind": "official_statistics",
-        "page": "tableaux I.1, I.21, I.22 et I.24, p. 2 et 18-19",
-        "notes": "Volume publié en janvier 2023 par l'Institut national de la statistique et de la démographie du Burkina Faso, lu le 3 novembre 2026. Tableau I.1 : le recensement de 2019 compte 20 505 155 habitants (population de droit). Tableau I.21 : parmi les résidents, 63,8 % se déclarent musulmans, 20,1 % catholiques, 9,0 % animistes, 6,2 % protestants et 0,7 % sans religion ; 4 782 049 vivent en ville et 13 389 702 à la campagne. Tableau I.22 : les musulmans forment 97,4 % des résidents de la région du Sahel, et les animistes 48,1 % de ceux du Sud-Ouest. Tableau I.24 : chez les résidents de trois ans et plus, la principale langue parlée est le mooré pour 52,9 %, le fulfudé (peul) pour 7,8 %, le gourmantché pour 6,8 %, le dioula pour 5,7 %, le bissa pour 3,3 %, le gourounsi pour 3,2 %, le dagara et le bwamu pour 2,0 % chacun, le bobo et le sénoufo pour 1,5 % chacun, le lobiri pour 1,2 %, le birifor pour 0,7 % et le français pour 2,2 %. Le dioula est la principale langue de 15,3 % des citadins, contre 2,2 % à la campagne."
+        "notes": "Volume publié en janvier 2023 par l'Institut national de la statistique et de la démographie du Burkina Faso, lu le 3 novembre 2026. Tableau I.1 : le recensement de 2019 compte 20 505 155 habitants (population de droit). Tableau I.21 : parmi les résidents, 63,8 % se déclarent musulmans, 20,1 % catholiques, 9,0 % animistes, 6,2 % protestants et 0,7 % sans religion ; 4 782 049 vivent en ville et 13 389 702 à la campagne. Tableau I.22 : les musulmans forment 97,4 % des résidents de la région du Sahel, et les animistes 48,1 % de ceux du Sud-Ouest. Tableau I.24 : chez les résidents de trois ans et plus, la principale langue parlée est le mooré pour 52,9 %, le fulfudé (peul) pour 7,8 %, le gourmantché pour 6,8 %, le dioula pour 5,7 %, le bissa pour 3,3 %, le gourounsi pour 3,2 %, le dagara et le bwamu pour 2,0 % chacun, le bobo et le sénoufo pour 1,5 % chacun, le lobiri pour 1,2 %, le birifor pour 0,7 % et le français pour 2,2 %. Le dioula est la principale langue de 15,3 % des citadins, contre 2,2 % à la campagne. Partie citée : tableaux I.1, I.21, I.22 et I.24, p. 2 et 18-19."
       },
       {
         "title": "Enquête démographique et de santé du Burkina Faso 2021 (EDSBF-V), rapport final",
@@ -1038,8 +1037,7 @@
         "url": "https://dhsprogram.com/pubs/pdf/FR378/FR378.pdf",
         "tier": "official",
         "source_kind": "official_statistics",
-        "page": "p. 62, tableau 3.1",
-        "notes": "Rapport publié en août 2023 par l'Institut national de la statistique et de la démographie, avec le programme international d'enquêtes démographiques et de santé, lu le 3 novembre 2026. Le tableau 3.1 répartit selon leur ethnie les femmes de 15 à 49 ans interrogées en 2021 : Mossi 54,8 %, Fulfulde/Peulh 6,5 %, Gourounsi 5,8 %, Bissa 5,5 %, Gourmantché 5,4 %, Bobo 3,3 %, Senoufo 2,1 %, Lobi 1,5 %, Dagara 1,5 %, Dioula 0,7 %, Touareg/Bella 0,1 %, autres Burkinabè 12,2 %. Ce sont les proportions d'un échantillon de femmes, pas un dénombrement de toute la population. Chez les hommes interrogés, les Mossi forment 51,0 %. Le même tableau donne 63,4 % de musulmanes, 24,7 % de catholiques et 8,1 % de protestantes."
+        "notes": "Rapport publié en août 2023 par l'Institut national de la statistique et de la démographie, avec le programme international d'enquêtes démographiques et de santé, lu le 3 novembre 2026. Le tableau 3.1 répartit selon leur ethnie les femmes de 15 à 49 ans interrogées en 2021 : Mossi 54,8 %, Fulfulde/Peulh 6,5 %, Gourounsi 5,8 %, Bissa 5,5 %, Gourmantché 5,4 %, Bobo 3,3 %, Senoufo 2,1 %, Lobi 1,5 %, Dagara 1,5 %, Dioula 0,7 %, Touareg/Bella 0,1 %, autres Burkinabè 12,2 %. Ce sont les proportions d'un échantillon de femmes, pas un dénombrement de toute la population. Chez les hommes interrogés, les Mossi forment 51,0 %. Le même tableau donne 63,4 % de musulmanes, 24,7 % de catholiques et 8,1 % de protestantes. Partie citée : p. 62, tableau 3.1."
       },
       {
         "title": "Loi constitutionnelle n° 045-2023/ALT portant révision de la Constitution",
@@ -1048,8 +1046,7 @@
         "url": "https://www.an.bf/storage/Loi/XzJuLCK5kHtKXgYU7Z7pADAGEPgwFV7J7DlX212n.pdf",
         "tier": "official",
         "source_kind": "government",
-        "page": "visas et article 35",
-        "notes": "Texte publié par l'Assemblée législative de transition, adopté en séance le 30 décembre 2023, lu le 3 novembre 2026. Il vise « la Charte de la Transition du 14 octobre 2022 ». L'ancien article 35 disait : « La langue officielle est le français. » Le nouveau dit : « Les langues nationales officialisées par loi sont les langues officielles du Burkina Faso » et « L'anglais et le français sont des langues de travail »."
+        "notes": "Texte publié par l'Assemblée législative de transition, adopté en séance le 30 décembre 2023, lu le 3 novembre 2026. Il vise « la Charte de la Transition du 14 octobre 2022 ». L'ancien article 35 disait : « La langue officielle est le français. » Le nouveau dit : « Les langues nationales officialisées par loi sont les langues officielles du Burkina Faso » et « L'anglais et le français sont des langues de travail ». Partie citée : visas et article 35."
       },
       {
         "title": "Burkina Faso : Le Capitaine Ibrahim Traoré a promulgué la loi portant modification de la Constitution",
@@ -1067,8 +1064,7 @@
         "url": "https://digitallibrary.un.org/record/4077478/files/CERD_C_BFA_20-24-FR.pdf",
         "tier": "official",
         "source_kind": "intergovernmental",
-        "page": "§ 2, p. 2 ; § 169-170, p. 30",
-        "notes": "Rapport du gouvernement du Burkina Faso, reçu par les Nations unies le 9 mai 2024 et diffusé le 30 décembre 2024, lu le 3 novembre 2026. Paragraphe 2 : la période est marquée « par l'insurrection populaire des 30 et 31 octobre 2014, le coup d'État manqué du 16 septembre 2015 et les différentes attaques terroristes qui affectent depuis 2015 la stabilité du pays ». Paragraphe 169 : en 2020, « 10 langues nationales transcrites ont été enseignées dans 276 écoles bilingues ». Paragraphe 170 : « La Constitution du 11 juin 1991 » ; « Le Burkina Faso constitue une mosaïque culturelle (une soixantaine de groupes ethniques) »."
+        "notes": "Rapport du gouvernement du Burkina Faso, reçu par les Nations unies le 9 mai 2024 et diffusé le 30 décembre 2024, lu le 3 novembre 2026. Paragraphe 2 : la période est marquée « par l'insurrection populaire des 30 et 31 octobre 2014, le coup d'État manqué du 16 septembre 2015 et les différentes attaques terroristes qui affectent depuis 2015 la stabilité du pays ». Paragraphe 169 : en 2020, « 10 langues nationales transcrites ont été enseignées dans 276 écoles bilingues ». Paragraphe 170 : « La Constitution du 11 juin 1991 » ; « Le Burkina Faso constitue une mosaïque culturelle (une soixantaine de groupes ethniques) ». Partie citée : § 2, p. 2 ; § 169-170, p. 30."
       },
       {
         "title": "1960 - 2022: The long history of coups d'état in Burkina Faso",
@@ -1095,8 +1091,7 @@
         "url": "https://shs.hal.science/halshs-01742617v1",
         "tier": "referenced",
         "source_kind": "academic",
-        "page": "version déposée sur HAL, p. 2-9",
-        "notes": "Chapitre de l'ouvrage collectif La Terre et le Pouvoir. À la mémoire de Michel Izard, dirigé par Dominique Casajus et Fabio Viti, CNRS Éditions, 2012, déposé sur l'archive ouverte HAL, lu le 3 novembre 2026. L'autrice écrit que dès le XVIIIe siècle des Peuls s'installent dans le royaume moose du Yatenga, auquel le Yatenga Naaba « accordait une autonomie relative sous réserve d'une sorte de pacte tacite d'alliance et d'assistance mutuelle ». Naaba Kango instaure « un pouvoir centralisateur sur le Yatenga dans la deuxième moitié du XVIIIè siècle ». Les pasteurs peuls « tentent de s'établir près des bas-fonds ou des marigots » ; le chef peul tient sa terre du chef de terre local. L'armée française entre dans le pays par le Yatenga, « profitant d'une guerre de succession » ouverte par la mort de Naaba Sanum en 1879."
+        "notes": "Chapitre de l'ouvrage collectif La Terre et le Pouvoir. À la mémoire de Michel Izard, dirigé par Dominique Casajus et Fabio Viti, CNRS Éditions, 2012, déposé sur l'archive ouverte HAL, lu le 3 novembre 2026. L'autrice écrit que dès le XVIIIe siècle des Peuls s'installent dans le royaume moose du Yatenga, auquel le Yatenga Naaba « accordait une autonomie relative sous réserve d'une sorte de pacte tacite d'alliance et d'assistance mutuelle ». Naaba Kango instaure « un pouvoir centralisateur sur le Yatenga dans la deuxième moitié du XVIIIè siècle ». Les pasteurs peuls « tentent de s'établir près des bas-fonds ou des marigots » ; le chef peul tient sa terre du chef de terre local. L'armée française entre dans le pays par le Yatenga, « profitant d'une guerre de succession » ouverte par la mort de Naaba Sanum en 1879. Partie citée : version déposée sur HAL, p. 2-9."
       },
       {
         "title": "Burkina : L'organisation politique dans le Gulma avant la pénétration coloniale",
