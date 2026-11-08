@@ -68,6 +68,26 @@
                 "notes": "Fiche lue le 11 octobre 2026."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1899,
+              "label": "XIXe siècle"
+            },
+            "statement": "Le nom swahili du Congo désigne une langue venue de la côte de l'océan Indien : au XIXe siècle, des marchands de la côte swahili s'installent dans l'est de l'actuelle République démocratique du Congo pour y chercher de l'ivoire et des esclaves. Selon Ethnologue, que reprend le catalogue Glottolog, le swahili est aujourd'hui la langue commune la plus répandue de cette partie de l'Afrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Congo Swahili (cong1236)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/cong1236",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche lue le 11 octobre 2026."
+              }
+            ]
           }
         ]
       },
@@ -193,6 +213,7 @@
       "scale": "EGIDS (Ethnologue)",
       "asOf": 2025
     },
+    "originDebated": false,
     "sources": [
       {
         "title": "Glottolog 5.3 — Congo Swahili (cong1236)",
@@ -201,6 +222,16 @@
         "source_kind": "linguistic_reference",
         "notes": "Notice directe pour le code ISO 639-3 swc et le glottocode cong1236. Elle distingue cette langue du swahili standardisé, documente le statut EGIDS 3 en 2025, son rôle de langue véhiculaire et son statut légal de langue d'identité nationale en RDC."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers",
+        "reason": "Nous n'avons pas trouvé de recensement qui compte les personnes qui parlent le swahili du Congo."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Le swahili du Congo est la forme du swahili parlée dans l'est de la République démocratique du Congo, où il sert de langue commune.",
+      "followUp": "Comment le swahili de la côte est-il arrivé dans l'est du Congo ?"
+    }
   }
 }

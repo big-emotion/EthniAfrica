@@ -206,7 +206,11 @@ describe("parseKingdomPeriod", () => {
   it("derives bounds for the datable share of the real corpus", () => {
     const labels = corpusPeriodLabels();
     const parsed = labels.filter((l) => parseKingdomPeriod(l) !== null);
-    expect(labels).toHaveLength(297);
+    // 298 -> 301: the Liberia fiche adds the Dei chiefdom of Cape Mesurado,
+    // the Libya fiche the Fezzân under Kanem and the 1943-1951 administrations.
+    // 301 -> 300: premium countries batch 01 drops unsourced chiefdoms (CAF)
+    // and adds sourced polities (AGO, BWA, BEN).
+    expect(labels).toHaveLength(300);
     expect(parsed.length).toBeGreaterThanOrEqual(180);
   });
 });

@@ -3,11 +3,11 @@
   "nameFr": "Mali",
   "nameEn": "Mali",
   "nameOfficial": "République du Mali",
-  "summary": "Le Mali porte le nom de l'empire qui domina l'Afrique de l'Ouest du XIIIe au XVIe siècle. Ghana, Mali, Songhaï : trois empires s'y sont succédé, et Djenné comme Tombouctou en gardent l'architecture. Bambara, Peuls, Dogons, Touaregs, Soninké et Songhaï y perpétuent l'épopée de Soundiata et l'art des griots.",
-  "etymology": "La plus ancienne mention est celle du géographe al-Bakrī au XIe siècle, qui écrit Malel, selon Djibril Tamsir Niane ; le nom est aussi attesté dans des récits arabes du XIVe siècle. Le nom de l’État actuel renvoie à l’empire médiéval, mais son sens premier n’est pas établi par les sources citées. Djibril Tamsir Niane (1985, p. 153, note 28) propose que Mali provienne d’une transformation de Manden chez les Fulɓe, aussi appelés Peuls en français, et donne Mellit comme variante berbère du même nom. Le dictionnaire bambara Bamadaba donne au mot màli le sens d’hippopotame ; ce sens lexical ne démontre pas que le nom du pays en dérive. L’interprétation « lieu où vit le roi » figure notamment dans un document pédagogique de Core Knowledge, sans démonstration linguistique dans le passage concerné. Ces rapprochements doivent être distingués d’une traduction certaine du nom.",
-  "nameOriginActor": "L’Assemblée de la République soudanaise adopte le nom de République du Mali le 22 septembre 1960. Cette décision moderne ne permet pas d’identifier qui a créé le nom médiéval.",
+  "summary": "Le Mali porte depuis 1960 le nom d'un empire médiéval, que le géographe al-Bakrī écrit déjà Malel au XIe siècle. Plusieurs explications de ce nom existent : Maurice Delafosse et Djibril Tamsir Niane y voient une prononciation de Mandé, le pays d'origine des Malinké. Avant l'indépendance, le pays a porté des noms coloniaux, Soudan français et Haut-Sénégal-Niger. Au recensement de 2022, les Bambara forment un peu plus du tiers de la population, et le bambara est la langue maternelle de près d'un habitant sur deux.",
+  "etymology": "Le nom Mali apparaît par écrit au XIe siècle chez le géographe al-Bakrī, sous la forme Malel, selon Djibril Tamsir Niane. Il désigne alors le pays d'où partiront les Maninka pour fonder l'empire du Mali, dont l'État actuel a repris le nom en 1960. Plusieurs explications de ce nom existent. En 1912, l'administrateur colonial Maurice Delafosse écrit que Mali est la prononciation soninké de Mandé, le nom du pays d'origine des Malinké, que les Peuls prononcent Mellé ou Melli. En 1985, Djibril Tamsir Niane propose une explication proche : Mali viendrait de Manden, tel que le prononcent les Fulɓe, ou Peuls, et Mellit en serait la forme berbère. Une autre explication relie le nom au mot bambara màli, « hippopotame ». Delafosse rapporte déjà que les Malinké la rejettent, et le dictionnaire bambara Bamadaba classe ce mot à part du nom du pays. Un document scolaire américain de la Core Knowledge Foundation donne enfin au nom le sens arabe de « là où vit le roi », sans en apporter la preuve.",
+  "nameOriginActor": "Le 22 septembre 1960, l'Assemblée de la République soudanaise décide que l'État s'appellera République du Mali, selon l'Office of the Historian. Elle reprend ainsi le nom de l'empire fondé par Soundiata, comme la Gold Coast avait pris celui du Ghana, selon Djibril Tamsir Niane. Le nom de l'empire lui-même est bien plus ancien : les auteurs arabes l'écrivent dès le XIe siècle.",
   "nameHistory": {
-    "summary": "Le nom Mali désigne un pays d'Afrique de l'Ouest, la République du Mali, qui a repris le nom d'un empire médiéval. Le pays a d'abord porté d'autres noms : Soudan français, puis République soudanaise. Les sources ne s'accordent pas sur l'origine du nom Mali ; nous les présentons plus bas.",
+    "summary": "Le nom Mali désigne un pays d'Afrique de l'Ouest, la République du Mali, qui a repris le nom d'un empire médiéval. Sous la colonisation française, le pays s'est appelé Soudan français et Haut-Sénégal-Niger, puis il est devenu la République soudanaise. Les sources ne s'accordent pas sur l'origine du nom Mali ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Mali",
@@ -198,6 +198,34 @@
           },
           {
             "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposée en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mali serait la façon dont les Soninké prononcent Mandé, le nom du pays d'origine des Malinké ; les Peuls diraient Mellé ou Melli, forme reprise par plusieurs auteurs arabes, selon Maurice Delafosse.",
+            "hypothesisGroup": "origine du nom Mali",
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "administrateur colonial qui rapporte cette explication"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome 1 : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, chapitre « Différentes appellations données aux peuples du Haut-Sénégal-Niger »",
+                "notes": "Ouvrage colonial de Maurice Delafosse, administrateur des colonies, publié à Paris chez Émile Larose en 1912 avec une préface du gouverneur Clozel ; lu le 3 novembre 2026 dans l'édition numérique du Projet Gutenberg (2026), établie d'après les images de la HathiTrust Digital Library. Il reflète le regard de l'administration coloniale. Le nom du pays des Malinké « est prononcé souvent Mané ou Mani par les gens du Ouassoulou, Malé ou Mali par les Soninké, Mallé ou Malli, Mellé ou Melli par les Peuls » ; « toutes ces formes ne sont que des variantes d'un même mot »."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": null,
               "to": null,
               "label": "Origine non datée"
@@ -232,7 +260,7 @@
               "to": null,
               "label": "Origine non datée"
             },
-            "statement": "Le nom Mali viendrait de màli, « hippopotame » en bambara. Ce rapprochement circule, mais le dictionnaire Bamadaba range ce mot à part du nom du pays, et l'article de Wikipédia sur l'empire du Mali le juge insuffisant.",
+            "statement": "Le nom Mali viendrait de màli, « hippopotame » en bambara. Maurice Delafosse rapporte cette explication en 1912 et écrit que les Malinké la rejettent : pour eux, Mandé ou Mali est simplement le nom de leur pays. Le dictionnaire Bamadaba range ce mot à part du nom du pays.",
             "hypothesisGroup": "origine du nom Mali",
             "sources": [
               {
@@ -252,6 +280,16 @@
                 "tier": "unverified",
                 "source_kind": "encyclopedia",
                 "notes": "Section Étymologie, consultée le 9 octobre 2026 : « cette coïncidence lexicale ne suffit pas à expliquer l'origine du nom impérial ». Ce passage ne cite pas de source."
+              },
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome 1 : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, chapitre « Différentes appellations données aux peuples du Haut-Sénégal-Niger »",
+                "notes": "Ouvrage colonial de Maurice Delafosse, administrateur des colonies, publié à Paris chez Émile Larose en 1912 avec une préface du gouverneur Clozel ; lu le 3 novembre 2026 dans l'édition numérique du Projet Gutenberg (2026), établie d'après les images de la HathiTrust Digital Library. Il reflète le regard de l'administration coloniale. Delafosse écrit qu'on a traduit Mali par « hippopotame » et que « ces deux étymologies sont rejetées par les indigènes du pays, c'est-à-dire les Malinké », pour qui Mandé ou Mali est « simplement le nom de leur patrie » ; seul le clan des Keïta a l'hippopotame pour tabou."
               }
             ]
           },
@@ -308,6 +346,44 @@
         ]
       },
       {
+        "nameText": "Haut-Sénégal-Niger",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'administration coloniale française",
+        "periodLabel": "Nom de la colonie en 1912",
+        "accounts": [
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Haut-Sénégal-Niger est celui de la colonie française que décrit Maurice Delafosse en 1912 ; elle correspond, écrit-il, aux territoires qu'on « appelle encore communément le Soudan Français ».",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "administrateur colonial, auteur de la description"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome 1 : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, chapitre « Le pays », section « Étendue et population »",
+                "notes": "Ouvrage colonial de Maurice Delafosse, administrateur des colonies, publié à Paris chez Émile Larose en 1912 avec une préface du gouverneur Clozel ; lu le 3 novembre 2026 dans l'édition numérique du Projet Gutenberg (2026), établie d'après les images de la HathiTrust Digital Library. Il reflète le regard de l'administration coloniale. « La colonie du Haut-Sénégal-Niger correspond à peu près à l'ensemble des territoires que, par suite d'une longue habitude, on appelle encore communément le Soudan Français. » Un arrêté reproduit dans le livre vise le décret du 18 octobre 1904 sur l'Afrique occidentale française."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "nameText": "Soudan français",
         "nameStatus": "former",
         "selfGiven": false,
@@ -354,14 +430,16 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Soudan français (1892-1958)",
+        "Soudan français (époque coloniale)",
+        "Haut-Sénégal-Niger (nom de la colonie en 1912)",
+        "République soudanaise (jusqu'au 22 septembre 1960)",
         "Fédération du Mali (1959-1960)"
       ],
-      "antiquity": "Le territoire était peuplé de groupes proto-mandé, soninké, peuls, bozo sans nom unifié. Les empires régionaux (Ghana, Mali, Songhai) ont dominé la région.",
-      "middleAges": "IIIe-XIIIe siècles : Empire du Ghana (Wagadu), dominé par les Soninké. XIIIe-XVIe siècles : Empire du Mali, fondé par Soundiata Keïta ; la localisation de sa capitale n'est pas établie, l'identification ancienne avec Niani étant réfutée par l'archéologie. XVe-XVIe siècles : Empire Songhai (Gao, Tombouctou, Djenné).",
-      "precolonial": "Empires du Ghana, du Mali et Songhai. Royaumes touaregs (Kel Adagh, Ifoghas, Tagelmoust). Royaumes bambara. Commerce transsaharien majeur.",
-      "colonization": "1892-1958 : Soudan français (AOF). Le territoire est appelé \"Soudan français\" par les colonisateurs français. 1959-1960 : Fédération du Mali (avec le Sénégal).",
-      "contemporary": "La Fédération du Mali, qui réunit le Sénégal et la République soudanaise, devient indépendante le 20 juin 1960. Le Sénégal s’en retire le 20 août. L’Assemblée de la République soudanaise adopte le nom de République du Mali le 22 septembre 1960. Le nom évoque l’empire médiéval ; il ne désigne pas un État resté inchangé depuis cette époque."
+      "antiquity": "Avant que le nom Mali n'apparaisse, les lieux anciens du pays portent déjà leurs propres noms. Près de Djenné, la butte de Djenné-Djeno est habitée sans interruption d'environ 250 avant notre ère jusqu'au XIVe siècle, selon l'évaluation de l'ICOMOS pour l'UNESCO. Plus à l'est, la ville de Gao aurait été fondée à la fin du VIIe siècle ; les chroniques arabes du XIe siècle l'appellent Kaw Kaw, selon la même institution.",
+      "middleAges": "Le nom Mali apparaît au XIe siècle chez le géographe al-Bakrī, qui écrit Malel, selon Djibril Tamsir Niane. Au XIVe siècle, la carte d'Angelino Dulcert, en 1339, écrit Melli, et l'Atlas catalan de 1375 nomme une « Ciutat de Melly ». Le voyageur Ibn Baṭṭūṭa arrive en 1352 à « la ville de Mâllî », où réside le roi. L'emplacement de cette capitale reste discuté : on l'a longtemps placée à Niani, en Guinée actuelle, mais les fouilles n'ont pas montré que ce site était médiéval, selon Hadrien Collet. Tombouctou, de son côté, tiendrait son nom d'une vieille femme, Bouctou, qui gardait le campement de Touaregs Imakcharen : Tim-Bouctou signifierait « le lieu de Bouctou », selon le dossier présenté à l'UNESCO.",
+      "precolonial": "Après l'empire du Mali, plusieurs États prennent le nom de leur peuple ou de leur centre. L'empire songhaï a pour capitale Gao. Les royaumes bambara de Ségou et du Kaarta dominent aux XVIIe et XVIIIe siècles, selon l'INSTAT. Au XIXe siècle viennent le royaume peul du Macina, l'empire toucouleur d'El Hadj Oumar Tall, centré sur Ségou, et le Kénédougou, royaume des Traoré organisé autour de Sikasso, selon l'Histoire générale de l'Afrique.",
+      "colonization": "Sous la domination française, le territoire change plusieurs fois de nom. Il devient une colonie française en 1892, selon la fiche de toponymie du gouvernement britannique. En 1912, l'administrateur colonial Maurice Delafosse décrit la colonie du Haut-Sénégal-Niger, qui correspond selon lui aux territoires qu'on « appelle encore communément le Soudan Français ». L'Histoire générale de l'Afrique désigne la colonie sous le nom de Soudan français ; en 1959, elle forme avec le Sénégal la Fédération du Mali.",
+      "contemporary": "La Fédération du Mali, qui réunit le Sénégal et la République soudanaise, devient indépendante le 20 juin 1960. Le Sénégal s'en retire le 20 août. Le 22 septembre 1960, l'Assemblée de la République soudanaise adopte le nom de République du Mali, selon l'Office of the Historian. L'État reprend ainsi le nom de l'empire fondé par Soundiata, selon Djibril Tamsir Niane. La Constitution de 2023 garde ce nom, avec Bamako pour capitale."
     },
     "kingdoms": [
       {
@@ -375,7 +453,7 @@
         },
         "dominantPeoples": ["Soninké"],
         "politicalCenters": ["Koumbi Saleh (capitale)"],
-        "historicalRole": "Premier grand empire d'Afrique de l'Ouest, réputé pour son commerce de l'or. Modèle politique et économique pour les empires suivants."
+        "historicalRole": "Premier des trois grands empires que l'INSTAT situe sur le territoire du Mali, avant ceux du Mali et des Songhaï. Comme ses successeurs, il prospère grâce au contrôle des routes marchandes à travers le Sahara, selon l'ICOMOS."
       },
       {
         "name": "Empire du Mali",
@@ -388,10 +466,10 @@
         },
         "dominantPeoples": ["Malinké", "Bambara"],
         "politicalCenters": [
-          "Niani, longtemps identifiée comme la capitale, identification réfutée par l'archéologie",
+          "Niani, longtemps tenue pour la capitale, aujourd'hui une hypothèse parmi d'autres",
           "Kangaba"
         ],
-        "historicalRole": "Un des plus grands empires d'Afrique de l'Ouest, fondé par Soundiata Keïta. Commerce transsaharien, diffusion de l'islam, centre culturel majeur (Tombouctou)."
+        "historicalRole": "Empire fondé au XIIIe siècle autour de Soundiata Keïta, qui connaît son âge d'or au XIVe siècle et au début du XVe, selon Hadrien Collet. Son souverain Mansa Moussa fait le pèlerinage de La Mecque en 1324 ; on lui attribue la première mosquée Djingareyber de Tombouctou, selon l'ICOMOS. La Charte du Mandén, transmise oralement, est attribuée à son fondateur, et ses descendants, les Keïta, entretiennent encore la case sacrée du Kamablon à Kangaba, selon l'UNESCO. L'emplacement de sa capitale reste discuté."
       },
       {
         "name": "Empire Songhai",
@@ -404,7 +482,7 @@
         },
         "dominantPeoples": ["Songhai"],
         "politicalCenters": ["Gao (capitale)", "Tombouctou", "Djenné"],
-        "historicalRole": "Empire puissant qui a succédé au Mali. Centre intellectuel et commercial majeur. Conquête marocaine en 1591."
+        "historicalRole": "Empire dont Gao est la capitale et qui s'épanouit aux XVe et XVIe siècles grâce au contrôle du commerce à travers le Sahara, selon l'ICOMOS. Sonni Ali Ber l'agrandit de 1464 à 1492 ; son neveu Askia Mohamed fonde la dynastie des Askia, fait de l'islam la religion officielle et bâtit son tombeau à Gao en 1495. Tombouctou connaît alors son apogée. En 1591, les troupes marocaines prennent Djenné."
       },
       {
         "name": "Royaumes bambara",
@@ -417,7 +495,7 @@
         },
         "dominantPeoples": ["Bambara"],
         "politicalCenters": ["Ségou", "Kaarta"],
-        "historicalRole": "Royaumes bambara puissants qui ont résisté à l'expansion peule et touarègue."
+        "historicalRole": "Royaumes de Ségou et du Kaarta, qui dominent aux XVIIe et XVIIIe siècles, selon l'INSTAT. Au XIXe siècle, la région bambara est conquise par El Hadj Oumar Tall, qui y lance son djihad en 1852, selon Albert Adu Boahen."
       },
       {
         "name": "Confédérations touarègues",
@@ -425,7 +503,7 @@
         "entryType": "polity",
         "dominantPeoples": ["Touareg (Kel Tamasheq)"],
         "politicalCenters": ["Ahaggar", "Azawagh", "Air", "Adagh"],
-        "historicalRole": "Confédérations nomades du Sahara, contrôle des routes transsahariennes."
+        "historicalRole": "Confédérations de pasteurs du Sahara. Au Mali, les Touareg forment aujourd'hui la majorité de la population dans les régions de Kidal et de Ménaka, selon le recensement de 2022. Une tradition rapportée à l'UNESCO attribue la fondation de Tombouctou à des Touaregs Imakcharen."
       },
       {
         "name": "Empire peul du Macina (Diina)",
@@ -498,7 +576,7 @@
           "Tous les peuples maliens sous administration coloniale française"
         ],
         "politicalCenters": ["Bamako (capitale coloniale)"],
-        "historicalRole": "Colonie française intégrée à l'AOF. Résistance malienne et mouvements nationalistes."
+        "historicalRole": "Colonie française à partir de 1892, selon la fiche de toponymie britannique. En 1912, elle porte le nom de Haut-Sénégal-Niger et dépend du gouvernement général de l'Afrique occidentale française, selon Maurice Delafosse. Le français y devient la langue de l'administration et de l'enseignement. En 1959, la colonie forme avec le Sénégal la Fédération du Mali."
       },
       {
         "name": "République du Mali",
@@ -511,7 +589,7 @@
         },
         "dominantPeoples": ["Tous les peuples maliens"],
         "politicalCenters": ["Bamako (capitale)"],
-        "historicalRole": "Indépendance en 1960. Histoire politique mouvementée avec plusieurs coups d'État. Conflits avec les Touaregs. Transition démocratique et défis de développement."
+        "historicalRole": "État indépendant qui prend le nom de République du Mali le 22 septembre 1960. Après le premier président, de 1960 à 1968, l'INSTAT décrit de 1968 à 1991 « plusieurs régimes plus ou moins dictatoriaux », puis un régime démocratique. Le coup d'État de 2012 et l'occupation du nord par des groupes armés ouvrent une longue crise. La Constitution de 2023 fait des langues nationales les langues officielles."
       }
     ],
     "majorPeoples": [
@@ -520,9 +598,9 @@
         "selfAppellation": "Bamana",
         "exonyms": ["Bambara (terme utilisé par les Européens)", "Bamana"],
         "peopleId": "PPL_BAMBARA",
-        "mainRegion": "Centre (Bamako, Ségou)",
+        "mainRegion": "Sud (régions de Dioïla, Bougouni et Koulikoro)",
         "languages": ["Bambara", "français"],
-        "languageFamily": "FLG_NIGERCONGO",
+        "languageFamily": "FLG_MANDE",
         "appellationRemarks": "Le terme \"Bambara\" est neutre et accepté. L'auto-appellation \"Bamana\" est également utilisée."
       },
       {
@@ -531,11 +609,10 @@
         "exonyms": [
           "Peul (terme français)",
           "Fulani (terme haoussa)",
-          "\"Fellata\" (terme haoussa",
-          "parfois péjoratif - éviter)"
+          "Fellata (terme haoussa, parfois péjoratif)"
         ],
         "peopleId": "PPL_FULA",
-        "mainRegion": "Macina, Mopti",
+        "mainRegion": "Régions de Mopti, Nioro et Douentza",
         "languages": ["Pulaar", "français"],
         "languageFamily": "FLG_ATLANTIQUE",
         "appellationRemarks": "Le terme \"Fellata\" peut être péjoratif. L'auto-appellation \"Fulɓe\" est préférée. \"Peul\" et \"Fulani\" sont acceptés."
@@ -557,7 +634,7 @@
           "Touareg (nom venu de l'arabe, donné de l'extérieur et marqué par les récits coloniaux)"
         ],
         "peopleId": "PPL_TUAREG",
-        "mainRegion": "Nord (Ahaggar, Azawagh, Air, Adagh)",
+        "mainRegion": "Nord (régions de Kidal, Ménaka et Tombouctou)",
         "languages": ["Tamasheq", "français", "arabe"],
         "languageFamily": "FLG_BERBERE",
         "appellationRemarks": "Touareg est un nom donné de l'extérieur, marqué par les récits coloniaux. Kel Tamasheq ou Imajaghan, employés par les personnes concernées pour se nommer, sont préférés."
@@ -570,9 +647,9 @@
           "Sarakolé (terme alternatif)"
         ],
         "peopleId": "PPL_SONINKE",
-        "mainRegion": "Kayes",
+        "mainRegion": "Régions de Nioro, Nara et Kayes",
         "languages": ["Soninké", "français"],
-        "languageFamily": "FLG_NIGERCONGO",
+        "languageFamily": "FLG_MANDE",
         "appellationRemarks": "Le terme \"Soninké\" est neutre et accepté. \"Sarakolé\" est une variante acceptée."
       },
       {
@@ -591,8 +668,7 @@
         "exonyms": [
           "Malinké (terme français)",
           "Mandinka (terme anglophone)",
-          "\"Mandingo\" (terme historique",
-          "parfois péjoratif - éviter)"
+          "Mandingo (terme historique, parfois péjoratif)"
         ],
         "peopleId": "PPL_MALINKE",
         "mainRegion": "Kangaba, Kita",
@@ -605,7 +681,7 @@
         "selfAppellation": "Bamana",
         "exonyms": ["Mianka", "Minianka", "Mamara", "Myanka"],
         "peopleId": "PPL_MINYANKA",
-        "mainRegion": "Sud du Mali",
+        "mainRegion": "Sud (région de Koutiala)",
         "languages": ["Mamara / Minyanka (myk)"],
         "languageFamily": "FLG_NIGERCONGO",
         "appellationRemarks": "Minyanka est l'appellation publique consacrée. Les intéressés se désignent comme Bamana dans le contexte étudié, selon Colleyn et Jonckers ; cet usage ne doit pas être confondu automatiquement avec le peuple Bambara ou Bamana."
@@ -613,34 +689,74 @@
     ],
     "culture": {
       "mainLanguages": [
-        { "name": "Bambara", "isoCode": "bam", "isPrimary": true },
-        { "name": "Français", "isoCode": "fra" },
-        { "name": "Bobo", "isoCode": "bbo" },
-        { "name": "Bozo", "isoCode": "boz" },
-        { "name": "Dogon" },
-        { "name": "Peul (fula)", "isoCode": "ful" },
-        { "name": "Arabe hassaniya", "isoCode": "mey" },
-        { "name": "Kassonké", "isoCode": "kao" },
-        { "name": "Maninka" },
-        { "name": "Minyanka", "isoCode": "myk" },
-        { "name": "Sénoufo" },
-        { "name": "Songhay", "isoCode": "ses" },
-        { "name": "Soninké", "isoCode": "snk" },
-        { "name": "Tamasheq", "isoCode": "tmh" }
+        {
+          "name": "Bambara",
+          "isoCode": "bam",
+          "isPrimary": true
+        },
+        {
+          "name": "Français",
+          "isoCode": "fra"
+        },
+        {
+          "name": "Bobo",
+          "isoCode": "bbo"
+        },
+        {
+          "name": "Bozo",
+          "isoCode": "boz"
+        },
+        {
+          "name": "Dogon"
+        },
+        {
+          "name": "Peul (fula)",
+          "isoCode": "ful"
+        },
+        {
+          "name": "Arabe hassaniya",
+          "isoCode": "mey"
+        },
+        {
+          "name": "Kassonké",
+          "isoCode": "kao"
+        },
+        {
+          "name": "Maninka"
+        },
+        {
+          "name": "Minyanka",
+          "isoCode": "myk"
+        },
+        {
+          "name": "Sénoufo"
+        },
+        {
+          "name": "Songhay",
+          "isoCode": "ses"
+        },
+        {
+          "name": "Soninké",
+          "isoCode": "snk"
+        },
+        {
+          "name": "Tamasheq",
+          "isoCode": "tmh"
+        }
       ],
-      "culturalTraditions": "Musique traditionnelle (griot, kora), danse traditionnelle, poésie orale (épopée de Soundiata), artisanat (vannerie, poterie, tissage, cuir), architecture traditionnelle (mosquées de Djenné, Tombouctou), art rupestre dogon",
-      "dominantReligions": "Islam (sunnite majoritaire), croyances traditionnelles (syncrétisme), christianisme (minorité)",
-      "lifestyles": "Vie principalement rurale, agriculture (mil, sorgho, riz, coton), élevage (bovins, caprins, dromadaires), pêche (fleuve Niger), commerce transsaharien, nomadisme pastoral (Touaregs, Peuls)",
-      "socialOrganization": "Système de chefferies traditionnelles, structure clanique patrilinéaire, organisation en familles étendues et lignages, importance des griots (gardiens de la tradition orale), confédérations touarègues (tawsit)",
-      "regionalRelations": "Relations historiques avec les peuples du Sénégal, de la Mauritanie, du Burkina Faso, du Niger, de la Guinée, de l'Algérie. Diaspora importante en France et dans les pays occidentaux."
+      "culturalTraditions": "Une grande part de l'histoire du Mali se transmet par la parole. La Charte du Mandén, que la tradition attribue au fondateur de l'empire mandingue au début du XIIIe siècle, n'existe que sous forme orale ; elle est commémorée chaque année à Kangaba, près de la clairière de Kouroukan Fouga, selon l'UNESCO. Dans ce même village, la case sacrée du Kamablon, construite en 1653, reçoit un nouveau toit tous les sept ans, et les griots de Kéla y racontent l'histoire de Soundiata. L'UNESCO a inscrit neuf éléments maliens sur ses listes du patrimoine culturel immatériel, dont la traversée du fleuve par les troupeaux peuls lors du yaaral et du degal, l'imzad, violon à une corde joué par les femmes touarègues, et la sortie des masques et marionnettes de Markala. Quatre sites du pays sont inscrits au patrimoine mondial : Tombouctou, les villes anciennes de Djenné, les falaises de Bandiagara, au pays dogon, et le tombeau des Askia à Gao, selon l'INSTAT. À Tombouctou, trois grandes mosquées anciennes sont encore debout, Djingareyber, Sankoré et Sidi Yahia, et la Grande Mosquée de Djenné a été reconstruite en 1906-1907, selon l'ICOMOS.",
+      "dominantReligions": "L'islam est la religion de 96,45 % des habitants recensés en 2022, selon l'Institut national de la statistique (INSTAT). Les chrétiens en représentent 2,27 % et vivent surtout dans les régions de San, Bandiagara et Koutiala. Les fidèles des religions traditionnelles, que le recensement appelle « animistes », en représentent 0,65 %, contre 2,02 % en 2009. L'islam est ancien dans le pays : à la fin du XVe siècle, Askia Mohamed en fait la religion officielle de l'empire songhaï, selon l'ICOMOS. La Constitution de 2023 définit le Mali comme une république laïque et garantit le libre exercice des cultes.",
+      "lifestyles": "La plupart des Maliens vivent à la campagne. Au recensement de 2009, 77,5 % des habitants vivaient en milieu rural et les nomades ne formaient que 0,92 % de la population, selon l'INSTAT ; Bamako regroupait alors plus de la moitié de la population des villes. Dans le delta intérieur du Niger, les activités se répartissent entre plusieurs groupes : les Peuls élèvent le bétail et lui font traverser le fleuve deux fois par an, les Marka ou Nono cultivent le riz, les Bambara le mil, et les Bozo pêchent, selon l'UNESCO. La culture du riz y est ancienne : à Djenné-Djeno, les fouilles ont mis au jour un grand nombre de grains de riz africain, selon l'ICOMOS.",
+      "socialOrganization": "Des alliances anciennes lient au Mali des groupes et des familles : c'est le sinankunya, ou cousinage à plaisanterie. Les alliés échangent des plaisanteries et des insultes sans rancune, en signe d'affection, selon l'INSTAT, qui cite les Dogon et les Bozo, les Peuls et les Bobo, les Sénoufo et les Minianka, ou encore les Malinké et les Sarakolé. Entre Dogon et Bozo, ce pacte interdit aussi le mariage. Les griots ont une place reconnue dans la transmission du passé : à Kangaba, les Diabaté sont décrits par l'UNESCO comme les détenteurs de l'histoire du Kamablon, la case qui sert de sénat au village. Chez les Dogon, l'ICOMOS décrit le togu-na, « le grand abri », maison de la parole construite en premier lors de la fondation d'un village, et le Hogon, prêtre de plusieurs villages.",
+      "regionalRelations": "Le Mali partage ses frontières avec sept pays : la Mauritanie, l'Algérie, le Niger, le Sénégal, le Burkina Faso, la Côte d'Ivoire et la Guinée, selon l'INSTAT. Plusieurs de ses traditions dépassent ces frontières : l'UNESCO a inscrit l'imzad au nom de l'Algérie, du Mali et du Niger, et les pratiques liées au balafon au nom du Mali, du Burkina Faso, de la Côte d'Ivoire et de l'Indonésie. L'histoire relie aussi le Mali à ses voisins : Niani, longtemps tenue pour la capitale de l'empire du Mali, se trouve en Guinée actuelle, et Askia Mohamed étend l'empire songhaï jusqu'à l'Aïr, aujourd'hui au Niger. En 1959 et 1960, le Soudan français et le Sénégal forment ensemble la Fédération du Mali."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement du territoire par des groupes proto-mandé, soninké, peuls, bozo. Développement des premiers royaumes et empires.",
-      "middleAges": "Empire du Ghana (IIIe-XIIIe siècles) : premier grand empire, commerce de l'or. Empire du Mali (XIIIe-XVIe siècles) : apogée sous Soundiata Keïta, centre culturel (Tombouctou). Empire Songhai (XVe-XVIe siècles) : succède au Mali, conquête marocaine en 1591.",
-      "precolonial": "Royaumes bambara (Ségou, Kaarta). Confédérations touarègues. Commerce transsaharien majeur. Résistance à l'expansion coloniale.",
-      "colonization": "1892 : Création du Soudan français. Résistance malienne (Samory Touré, etc.). Intégration à l'AOF. Développement de Bamako comme capitale administrative.",
-      "independenceStruggle": "Mouvements nationalistes dans les années 1950. 1959-1960 : Fédération du Mali (avec le Sénégal). Indépendance en 1960. Modibo Keïta devient premier président.",
-      "postIndependence": "Première République (1960-1968) : présidence de Modibo Keïta, socialisme. Coup d'État de 1968 : régime militaire. Deuxième République (1992-2012) : transition démocratique. Coup d'État de 2012 : instabilité politique. Conflits avec les Touaregs. Transition démocratique en cours."
+      "ancientPeriods": "Le peuplement du Mali est très ancien. Près de Djenné, la butte de Djenné-Djeno est habitée sans interruption d'environ 250 avant notre ère jusqu'au XIVe siècle, selon l'ICOMOS. La ville y joue très tôt un rôle de marché dans le commerce de l'or à travers le Sahara, exploité dès le IXe ou le Xe siècle. La ville de Gao aurait été fondée à la fin du VIIe siècle, selon la même institution.",
+      "middleAges": "Trois grands empires se succèdent sur le territoire actuel du Mali, selon l'INSTAT : celui du Ghana, celui du Mali et celui des Songhaï. L'empire du Mali naît au XIIIe siècle autour de Soundiata Keïta et connaît son âge d'or au XIVe siècle et au début du XVe, selon Hadrien Collet ; son souverain Mansa Moussa fait le pèlerinage de La Mecque en 1324. Au pied de la falaise de Bandiagara, la civilisation dogon naît il y a environ huit siècles, de populations venues du Mandé qui se mêlent aux Tellem, selon l'ICOMOS. L'empire songhaï, dont Gao est la capitale, s'épanouit aux XVe et XVIe siècles ; Askia Mohamed y fonde la dynastie des Askia et bâtit son tombeau en 1495. Tombouctou connaît son apogée sous les Askia, de 1493 à 1591, avec l'université de Sankoré. En 1591, les troupes marocaines prennent Djenné.",
+      "precolonial": "Après la chute de l'empire songhaï, de nouveaux États se forment. Les royaumes bambara de Ségou et du Kaarta dominent aux XVIIe et XVIIIe siècles, selon l'INSTAT. Au XIXe siècle, Cheikou Amadou fonde au Macina un État peul après son djihad de 1818, et El Hadj Oumar Tall lance en 1852 son djihad dans la région des Bambara, selon Albert Adu Boahen. Au sud, les Traoré fondent entre 1850 et 1860 la puissance du Kénédougou, autour de Sikasso, selon Kwame Arhin et Joseph Ki-Zerbo. Djenné passe aux Peuls en 1810, puis aux Toucouleurs en 1862, selon l'ICOMOS.",
+      "colonization": "La conquête française se fait dans les années 1880 et 1890 : les victoires de Koundian en 1889, de Ségou en 1890 et de Youri en 1891 font disparaître l'empire toucouleur, et Samori Touré, qui résiste, est capturé en 1898, selon Godfrey N. Uzoigwe. Djenné est prise en 1893, selon l'ICOMOS. Le territoire est une colonie française à partir de 1892, et le français y devient la langue de l'enseignement et de l'administration, selon la fiche de toponymie britannique. En 1912, la colonie s'appelle Haut-Sénégal-Niger et dépend du gouvernement général de l'Afrique occidentale française, selon Maurice Delafosse.",
+      "independenceStruggle": "En 1959, le Soudan français et le Sénégal forment la Fédération du Mali, qui demande son indépendance en septembre 1959 et l'obtient le 20 juin 1960, selon Jean Suret-Canale et A. Adu Boahen. Le Sénégal quitte la Fédération le 20 août 1960. Le 22 septembre, l'Assemblée de la République soudanaise décide que l'État s'appellera République du Mali, selon l'Office of the Historian. Modibo Keïta en est le président : un mémorandum américain du 23 septembre 1960 parle du « President Modibo Keita of Mali ».",
+      "postIndependence": "Le premier président gouverne de 1960 à 1968. De 1968 à 1991, l'INSTAT décrit « plusieurs régimes plus ou moins dictatoriaux », avant l'arrivée d'un régime démocratique ; la Constitution de 1992 engage le pays à promouvoir les langues nationales. En 2012, un coup d'État militaire et l'occupation du nord par des groupes armés ouvrent une longue crise ; à Tombouctou, 14 des 16 mausolées inscrits au patrimoine mondial sont détruits, selon l'INSTAT. Une nouvelle Constitution est adoptée par référendum le 18 juin 2023 et promulguée le 22 juillet 2023 par le président de la Transition. Elle fait des langues nationales les langues officielles du Mali et du français la langue de travail."
     },
     "sources": [
       {
@@ -700,7 +816,7 @@
         "url": "https://www.cambridge.org/core/journals/africa/article/abs/ceux-qui-refusent-le-maitre-la-conception-du-pouvoir-chez-les-minyanka-du-mali/10D44A79F1FF3B3F9C4E211F24E4BB21",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Peer-reviewed article published by Cambridge University Press; supports the naming and self-identification note."
+        "notes": "Article de la revue Africa, publiée par Cambridge University Press. Il décrit comment les Minyanka étudiés se désignent eux-mêmes."
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
@@ -726,7 +842,7 @@
         "url": "https://journals.openedition.org/afriques/1098",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Retrace comment la lecture Niani a été substituée à un tracé consonantique arabe que les manuscrits ne vocalisent pas. Accès libre."
+        "notes": "Article de la revue Afriques, n° 4, 2013, sur OpenEdition, relu le 3 novembre 2026. L'auteur montre que Niani, sur le Sankarani, en Guinée actuelle, a longtemps été tenue pour la capitale médiévale du Mali, mais que les fouilles polono-guinéennes de 1965 à 1973 n'ont pas prouvé que le site était médiéval. Les auteurs arabes donnent à la capitale des noms différents, et Niani n'y figure pas. L'âge d'or de l'empire se situe au XIVe siècle et au début du XVe ; Mansa Moussa fait son pèlerinage en 1324. Accès libre."
       },
       {
         "title": "Office of the Historian — A Guide to the United States’ History of Recognition, Diplomatic, and Consular Relations: Mali",
@@ -740,7 +856,7 @@
         "url": "https://history.state.gov/historicaldocuments/frus1958-60v14/d75",
         "tier": "official",
         "source_kind": "government",
-        "notes": "Document diplomatique contemporain rapportant la décision de l’Assemblée de la République soudanaise du 22 septembre 1960. Consulté le 23 septembre 2026."
+        "notes": "Document diplomatique contemporain, consulté le 23 septembre 2026 et relu le 3 novembre 2026. Le mémorandum du 23 septembre 1960 rapporte qu'après une conférence du parti tenue la veille à Bamako, le gouvernement soudanais a décidé d'adopter le nom de République du Mali ; il parle du « President Modibo Keita of Mali »."
       },
       {
         "title": "Niane, Djibril Tamsir (1985) — Le Mali et la deuxième expansion manden, Histoire générale de l’Afrique, volume IV, UNESCO/NEA, p. 141–196",
@@ -796,6 +912,123 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, chapitre de Kwame Arhin et Joseph Ki-Zerbo (1996), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 724. Le Kénédougou est « organisé au XVIIIe siècle autour de Sikasso » ; « c'est entre 1850 et 1860 que Laoula fonde la puissance des Traoré sur les petites chefferies senufo »."
+      },
+      {
+        "title": "Cinquième recensement général de la population et de l'habitat (RGPH5) — Rapport d'analyse des données, thème : caractéristiques culturelles de la population",
+        "author": "Safiatou Lala Bengaly et Ahamadou Diallo, Institut national de la statistique (INSTAT) et Bureau central du recensement du Mali",
+        "year": 2025,
+        "url": "https://instat-mali.org/laravel-filemanager/files/shares/rgph/rapport-caracteristiques-culturelles-population-rgph5_rpgh.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport de l'Institut national de la statistique du Mali sur le recensement de 2022, daté de janvier 2025, lu le 3 novembre 2026. Le tableau 2.05 donne la part de chaque groupe parmi les 21 200 118 Maliens recensés : Bambara 35,93 %, Peuls 12,83 %, Malinké 8,42 %, Soninké 8,17 %, Dogon 6,09 %, Minianka 5,35 %, Songhaï 4,79 %, Sénoufo 4,03 %, Touareg 3,91 %, Bobo 2,16 %, Bozo 1,90 %. Le bambara est la langue maternelle de 49,9 % des personnes de 3 ans et plus (tableau 3.01) et la principale langue parlée de 57,83 % d'entre elles (tableau 4.01). L'islam réunit 96,45 % de la population, le christianisme 2,27 % et les religions traditionnelles, dites « animistes », 0,65 % (tableau 2.01). Le rapport décrit aussi le cousinage à plaisanterie, ou sinankunya (p. 7). Passage utilisé : p. IX, 3-7, 16-25 et 29 (tableaux 2.01, 2.05, 3.01 et 4.01)."
+      },
+      {
+        "title": "Décret n° 2023-0401/PT-RM du 22 juillet 2023 portant promulgation de la Constitution, Journal officiel de la République du Mali, numéro spécial 13",
+        "author": "Secrétariat général du gouvernement de la République du Mali",
+        "year": 2023,
+        "url": "https://sgg-mali.ml/JO/2023/mali-jo-2023-13-sp-2.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte officiel de la Constitution adoptée par le référendum du 18 juin 2023, lu le 3 novembre 2026. Article 30 : « Le Mali est une République indépendante, souveraine, unitaire, indivisible, démocratique, laïque et sociale », avec Bamako pour capitale. Article 31 : « Les langues nationales sont les langues officielles du Mali » et « Le français est la langue de travail ». Le préambule dit le peuple malien « héritier de grands empires et royaumes ». Passage utilisé : p. 2 et 4 (préambule, articles 30 à 32)."
+      },
+      {
+        "title": "Évaluation de l'ICOMOS — Ville de Tombouctou (bien n° 119), Liste du patrimoine mondial",
+        "author": "Conseil international des monuments et des sites (ICOMOS), pour le Centre du patrimoine mondial de l'UNESCO",
+        "year": 1988,
+        "url": "https://whc.unesco.org/archive/advisory_body_evaluation/119.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Évaluation datée de mai 1988, publiée par le Centre du patrimoine mondial de l'UNESCO, lu le 3 novembre 2026. Elle rapporte que Tombouctou aurait été fondée par des Touaregs Imakcharen, qui confiaient leur campement à une vieille femme, Bouctou : « Tim-Bouctou (le lieu de Bouctou) ». La ville « connut son apogée sous le règne des Askia (1493-1591) ». La mosquée Djingareyber remonte au « sultan Kankan Moussa, revenu en 1325 du pèlerinage à la Mecque » ; les mosquées de Sankoré et de Sidi Yahia sont les deux autres grands monuments."
+      },
+      {
+        "title": "Évaluation de l'ICOMOS — Villes anciennes de Djenné (bien n° 116), Liste du patrimoine mondial",
+        "author": "Conseil international des monuments et des sites (ICOMOS), pour le Centre du patrimoine mondial de l'UNESCO",
+        "year": 1988,
+        "url": "https://whc.unesco.org/archive/advisory_body_evaluation/116rev.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Évaluation datée de mai 1988, publiée par le Centre du patrimoine mondial de l'UNESCO, lu le 3 novembre 2026. Les fouilles de Susan Keech et Roderick J. McIntosh, de 1977 à 1981, ont révélé à Djenné-Djeno « une occupation humaine continue de cette butte de 250 av. J.-C. au XIVe siècle », avec une phase où « la population Bozo vit de pêche et de riziculture ». Djenné est « tombée au pouvoir des Marocains en 1591, des Peulhs en 1810, des Toucouleurs en 1862 », puis prise par les troupes françaises en 1893 ; la Grande Mosquée est reconstruite en 1906-1907."
+      },
+      {
+        "title": "Évaluation de l'ICOMOS — Falaises de Bandiagara, pays dogon (bien n° 516), Liste du patrimoine mondial",
+        "author": "Conseil international des monuments et des sites (ICOMOS), pour le Centre du patrimoine mondial de l'UNESCO",
+        "year": 1989,
+        "url": "https://whc.unesco.org/archive/advisory_body_evaluation/516.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Évaluation datée d'avril 1989, publiée par le Centre du patrimoine mondial de l'UNESCO, lu le 3 novembre 2026. La civilisation des Dogon « est née du regroupement au pied de la falaise de Bandiagara, il y a environ huit siècles, de populations chassées du Mandé » et de leur fusion avec les Tellem, qui vivaient dans les cavernes. Le texte décrit le togu-na, « le grand abri », maison de la parole bâtie lors de la fondation d'un village, et le Hogon, prêtre de plusieurs villages."
+      },
+      {
+        "title": "Évaluation de l'ICOMOS — Tombeau des Askia (bien n° 1139), Liste du patrimoine mondial",
+        "author": "Conseil international des monuments et des sites (ICOMOS), pour le Centre du patrimoine mondial de l'UNESCO",
+        "year": 2004,
+        "url": "https://whc.unesco.org/archive/advisory_body_evaluation/1139.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Évaluation datée de mars 2004, publiée par le Centre du patrimoine mondial de l'UNESCO, lu le 3 novembre 2026. Gao, « probablement fondée à la fin du VIIe siècle », apparaît au XIe siècle dans les chroniques arabes « sous le nom de Kaw Kaw ». Sonni Ali Ber règne de 1464 à 1492 ; son neveu, Askia Mohamed, fonde la dynastie des Askia, fait de l'islam la religion officielle à son retour de La Mecque et bâtit le tombeau en 1495. L'empire songhaï « s'est épanoui au XVe et au XVIe siècle grâce au contrôle du commerce transsaharien » et succède aux empires du Ghana et du Mali."
+      },
+      {
+        "title": "Mali — éléments inscrits sur les listes du patrimoine culturel immatériel",
+        "author": "UNESCO, Convention pour la sauvegarde du patrimoine culturel immatériel",
+        "year": null,
+        "url": "https://ich.unesco.org/fr/etat/mali-ML",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Page de l'UNESCO consacrée au Mali, lu le 3 novembre 2026. Elle compte neuf éléments, dont « La Charte du Mandén, proclamée à Kouroukan Fouga » (2009), « L'espace culturel du yaaral et du degal » (2008), les savoirs liés à l'imzad des communautés touarègues de l'Algérie, du Mali et du Niger (2013), « La sortie des masques et marionnettes de Markala » (2014) et les pratiques liées au balafon au Mali, au Burkina Faso, en Côte d'Ivoire et en Indonésie (2024)."
+      },
+      {
+        "title": "La Charte du Mandén, proclamée à Kouroukan Fouga",
+        "author": "UNESCO, Liste représentative du patrimoine culturel immatériel de l'humanité",
+        "year": 2009,
+        "url": "https://ich.unesco.org/fr/RL/la-charte-du-manden-proclamee-a-kouroukan-fouga-00290",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche d'inscription, lu le 3 novembre 2026. « Au début du XIIIe siècle, à l'issue d'une grande victoire militaire », le fondateur de l'empire mandingue et son assemblée proclament la charte à Kouroukan Fouga. Elle n'existe que sous forme orale ; des cérémonies la commémorent chaque année à Kangaba, près de la frontière guinéenne."
+      },
+      {
+        "title": "La réfection septennale du toit du Kamablon, case sacrée de Kangaba",
+        "author": "UNESCO, Liste représentative du patrimoine culturel immatériel de l'humanité",
+        "year": 2009,
+        "url": "https://ich.unesco.org/fr/RL/la-refection-septennale-du-toit-du-kamablon-case-sacree-de-kangaba-00190",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche d'inscription, lu le 3 novembre 2026. Le Kamablon, case ronde construite en 1653 à Kangaba, sert de sénat au village. Tous les sept ans, les Keïta, descendants de Soundiata, et les griots Diabaté, « détenteurs de l'histoire du Kamablon », organisent la pose d'un nouveau toit ; les griots du village voisin de Kéla y rendent hommage à Soundiata et racontent la tradition orale du Mandén."
+      },
+      {
+        "title": "L'espace culturel du yaaral et du degal",
+        "author": "UNESCO, Liste représentative du patrimoine culturel immatériel de l'humanité",
+        "year": 2008,
+        "url": "https://ich.unesco.org/fr/RL/lespace-culturel-du-yaaral-et-du-degal-00132",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche d'inscription, lu le 3 novembre 2026. Le yaaral et le degal sont les fêtes qui marquent la traversée du fleuve par les troupeaux des Peuls du delta intérieur du Niger, deux fois par an. Elles réunissent aussi les riziculteurs marka ou nono, les cultivateurs de mil bambara et les pêcheurs bozo."
+      },
+      {
+        "title": "Les pratiques et savoirs liés à l'imzad des communautés touarègues de l'Algérie, du Mali et du Niger",
+        "author": "UNESCO, Liste représentative du patrimoine culturel immatériel de l'humanité",
+        "year": 2013,
+        "url": "https://ich.unesco.org/fr/RL/les-pratiques-et-savoirs-lies-a-l-imzad-des-communautes-touaregues-de-l-algerie-du-mali-et-du-niger-00891",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche d'inscription, lu le 3 novembre 2026. L'imzad est un instrument à une seule corde frottée, fabriqué et joué par les femmes touarègues ; sa musique accompagne des chants qui célèbrent les héros du passé."
+      },
+      {
+        "title": "Glottolog 5.3 — Bambara (bamb1269), Dogon (dogo1299) et Songhay (song1307)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/bamb1269",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues publié par l'Institut Max Planck d'anthropologie évolutionniste, lu le 3 novembre 2026. Le bambara y est classé dans la famille mandé, groupe manding. Le dogon (https://glottolog.org/resource/languoid/id/dogo1299) y forme une famille de vingt langues, et le songhay (https://glottolog.org/resource/languoid/id/song1307) une famille de dix langues."
+      },
+      {
+        "title": "Haut-Sénégal-Niger (Soudan français), tome 1 : le pays, les peuples, les langues",
+        "author": "Maurice Delafosse",
+        "year": 1912,
+        "url": "https://www.gutenberg.org/ebooks/77844",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Ouvrage colonial de Maurice Delafosse, administrateur des colonies, publié à Paris chez Émile Larose en 1912 avec une préface du gouverneur Clozel ; lu le 3 novembre 2026 dans l'édition numérique du Projet Gutenberg (2026), établie d'après les images de la HathiTrust Digital Library. Il reflète le regard de l'administration coloniale. Delafosse écrit que le nom du pays des Malinké est prononcé « Malé ou Mali par les Soninké » et « Mellé ou Melli par les Peuls », et que l'explication « hippopotame » est rejetée par les Malinké. Il décrit la colonie du Haut-Sénégal-Niger, qui correspond « à peu près » aux territoires qu'on « appelle encore communément le Soudan Français ». Passage utilisé : tome 1, chapitre « Différentes appellations données aux peuples du Haut-Sénégal-Niger »."
       }
     ],
     "demographics": {
@@ -805,77 +1038,135 @@
       "peoples": [
         {
           "name": "Bambara",
-          "percentageInCountry": 33.3,
-          "percentageInAfrica": 0.54,
           "peopleId": "PPL_BAMBARA",
-          "region": "Centre (Bamako, Ségou)",
-          "languageFamily": "FLG_NIGERCONGO"
+          "population": null,
+          "referenceYear": 2022,
+          "percentageInCountry": 35.93,
+          "percentageInAfrica": null,
+          "region": "Sud (régions de Dioïla, Bougouni et Koulikoro)",
+          "languageFamily": "FLG_MANDE",
+          "mainLanguageCode": "bam"
         },
         {
           "name": "Peul / Fulani",
-          "percentageInCountry": 13.3,
-          "percentageInAfrica": 0.26,
           "peopleId": "PPL_FULA",
-          "region": "Macina, Mopti",
-          "languageFamily": "FLG_ATLANTIQUE"
-        },
-        {
-          "name": "Dogon",
-          "percentageInCountry": 8.7,
-          "percentageInAfrica": 0.12,
-          "peopleId": "PPL_DOGON",
-          "region": "Plateau de Bandiagara",
-          "languageFamily": "FLG_NIGERCONGO"
-        },
-        {
-          "name": "Touareg",
-          "percentageInCountry": 1.7,
-          "percentageInAfrica": 0.14,
-          "peopleId": "PPL_TUAREG",
-          "region": "Nord (Ahaggar, Azawagh, Air, Adagh)",
-          "languageFamily": "FLG_BERBERE"
-        },
-        {
-          "name": "Soninké",
-          "percentageInCountry": 9.8,
-          "percentageInAfrica": 0.12,
-          "peopleId": "PPL_SONINKE",
-          "region": "Kayes",
-          "languageFamily": "FLG_NIGERCONGO"
-        },
-        {
-          "name": "Songhai",
-          "percentageInCountry": 5.9,
-          "percentageInAfrica": 0.09,
-          "peopleId": "PPL_SONGHAI",
-          "region": "Gao, Tombouctou, région du Moyen Niger",
-          "languageFamily": "FLG_NILOSAHARIENNE"
+          "population": null,
+          "referenceYear": 2022,
+          "percentageInCountry": 12.83,
+          "percentageInAfrica": null,
+          "region": "Régions de Mopti, Nioro et Douentza",
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "ful"
         },
         {
           "name": "Malinké",
-          "percentageInCountry": 8.8,
-          "percentageInAfrica": 0.11,
           "peopleId": "PPL_MALINKE",
+          "population": null,
+          "referenceYear": 2022,
+          "percentageInCountry": 8.42,
+          "percentageInAfrica": null,
           "region": "Kangaba, Kita",
           "languageFamily": "FLG_MANDE"
         },
         {
-          "name": "Minyanka",
+          "name": "Soninké",
+          "peopleId": "PPL_SONINKE",
           "population": null,
-          "percentageInCountry": null,
+          "referenceYear": 2022,
+          "percentageInCountry": 8.17,
+          "percentageInAfrica": null,
+          "region": "Régions de Nioro, Nara et Kayes",
+          "languageFamily": "FLG_MANDE",
+          "mainLanguageCode": "snk"
+        },
+        {
+          "name": "Dogon",
+          "peopleId": "PPL_DOGON",
+          "population": null,
+          "referenceYear": 2022,
+          "percentageInCountry": 6.09,
+          "percentageInAfrica": null,
+          "region": "Région de Bandiagara",
+          "languageFamily": "FLG_NIGERCONGO"
+        },
+        {
+          "name": "Minyanka",
           "peopleId": "PPL_MINYANKA",
-          "region": "Sud du Mali",
+          "population": null,
+          "referenceYear": 2022,
+          "percentageInCountry": 5.35,
+          "percentageInAfrica": null,
+          "region": "Région de Koutiala",
           "languageFamily": "FLG_NIGERCONGO",
           "mainLanguageCode": "myk"
         },
         {
-          "name": "Autres groupes ethniques",
+          "name": "Songhai",
+          "peopleId": "PPL_SONGHAI",
+          "population": null,
+          "referenceYear": 2022,
+          "percentageInCountry": 4.79,
+          "percentageInAfrica": null,
+          "region": "Gao, Tombouctou, région du Moyen Niger",
+          "languageFamily": "FLG_NILOSAHARIENNE",
+          "mainLanguageCode": "ses"
+        },
+        {
+          "name": "Sénoufo",
+          "peopleId": "PPL_SENUFO",
+          "population": null,
+          "referenceYear": 2022,
+          "percentageInCountry": 4.03,
+          "percentageInAfrica": null,
+          "region": "Région de Sikasso",
+          "languageFamily": "FLG_GUR"
+        },
+        {
+          "name": "Touareg",
+          "peopleId": "PPL_TUAREG",
+          "population": null,
+          "referenceYear": 2022,
+          "percentageInCountry": 3.91,
+          "percentageInAfrica": null,
+          "region": "Nord (régions de Kidal, Ménaka et Tombouctou)",
+          "languageFamily": "FLG_BERBERE",
+          "mainLanguageCode": "tmh"
+        },
+        {
+          "name": "Bobo",
+          "peopleId": "PPL_BOBO",
+          "population": null,
+          "referenceYear": 2022,
+          "percentageInCountry": 2.16,
+          "percentageInAfrica": null,
+          "region": null,
+          "languageFamily": "FLG_MANDE"
+        },
+        {
+          "name": "Bozo",
+          "peopleId": "PPL_BOSO",
+          "population": null,
+          "referenceYear": 2022,
+          "percentageInCountry": 1.9,
+          "percentageInAfrica": null,
+          "region": "Région de Mopti",
+          "languageFamily": "FLG_MANDE"
+        },
+        {
+          "name": "Autres groupes recensés en 2022 (Khassonké, Maure, Samogo, Arabe, Dafing, Kakolo, Mossi, Somono, Haoussa et autres)",
           "peopleId": null,
-          "region": "Divers",
-          "languageFamily": null,
-          "percentageInCountry": 18.5
+          "population": null,
+          "referenceYear": 2022,
+          "percentageInCountry": 6.42,
+          "percentageInAfrica": null,
+          "region": null,
+          "languageFamily": null
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "Le Mali est un pays d'Afrique de l'Ouest qui a repris en 1960 le nom d'un empire médiéval, écrit Malel dès le XIe siècle par le géographe al-Bakrī.",
+      "followUp": "D'où vient le nom de l'empire du Mali ?"
     }
   }
 }

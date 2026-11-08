@@ -31,6 +31,7 @@ const expected = {
     familyId: "FLG_BANTU",
     role: "non_vehicular",
     vitality: "Threatened",
+    dialects: [],
     peopleLinks: [
       { name: "Luba", peopleId: "PPL_LUBA" },
       { name: "Luba-Katanga", peopleId: "PPL_LUBA_KATANGA" },
@@ -44,6 +45,8 @@ const expected = {
     familyId: "FLG_BANTU",
     role: "non_vehicular",
     vitality: "Vigorous",
+    // The 1925 Otetela-English dictionary says its words are mostly Ewangu.
+    dialects: ["Ewangu"],
     peopleLinks: [{ name: "Tetela", peopleId: "PPL_TETELA" }],
   },
   alz: {
@@ -54,6 +57,7 @@ const expected = {
     familyId: "FLG_NILOTIQUE",
     role: "non_vehicular",
     vitality: "Developing",
+    dialects: [],
     peopleLinks: [{ name: "Alur", peopleId: "PPL_ALUR" }],
   },
 } as const;
@@ -86,7 +90,7 @@ describe("DRC evidence-prioritized language dossier wave 2", () => {
         peoples: record.peopleLinks,
         content: {
           vehicularRole: record.role,
-          dialects: [],
+          dialects: record.dialects,
           vitalityStatus: {
             status: record.vitality,
             scale: "EGIDS (Ethnologue)",

@@ -68,7 +68,7 @@ describe("Kongo publication corpus alignment", () => {
       accounts.filter(
         (entry) => entry.hypothesisGroup === "origine du nom Kongo"
       )
-    ).toHaveLength(3);
+    ).toHaveLength(4);
     expect(parseNameHistory(fiche.nameHistory).success).toBe(true);
   });
 });

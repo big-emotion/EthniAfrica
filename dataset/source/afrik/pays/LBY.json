@@ -3,9 +3,9 @@
   "nameFr": "Libye",
   "nameEn": "Libya",
   "nameOfficial": "État de Libye (Dawlat Lībiyā)",
-  "summary": "La Libye porte un nom que les Grecs donnaient à toute l'Afrique du Nord. Berbères antiques, Cyrénaïque grecque, Tripolitaine romaine, califats puis régences ottomanes s'y sont succédé, avant la colonisation italienne qui officialisa le nom en 1911. Arabes, Nafusi, Touaregs et Toubou y composent la population.",
-  "etymology": "Le nom \"Libye\" viendrait du grec \"Libya\", qui désignait l'Afrique du Nord dans l'Antiquité. Le nom arabe \"Lībiyā\" (ليبيا) est utilisé depuis le XXe siècle. L'ancien nom était \"Tripolitaine\" (région de Tripoli) et \"Cyrénaïque\" (région de Benghazi).",
-  "nameOriginActor": "Le nom \"Libye\" a été officialisé lors de l'indépendance (1951). Le nom vient de l'Antiquité grecque.",
+  "summary": "La Libye porte un nom que les Grecs donnaient d'abord à une région voisine de l'Égypte, puis à toute l'Afrique ; il viendrait de celui des Libou, un peuple que citent des textes égyptiens. L'Italie en fait le nom d'une seule colonie en 1934, et l'État indépendant le garde depuis 1951. Arabes, Nafusi, Touaregs et Toubou vivent aujourd'hui dans le pays.",
+  "etymology": "Le nom Libye viendrait de celui des Libou, un peuple que des textes égyptiens appellent Rbw à partir du XIIIe siècle avant notre ère. Les Grecs auraient d'abord appelé Libye le territoire où vivait ce peuple, puis, de proche en proche, toute l'Afrique, selon J. Desanges. K. Zimmermann ajoute que ce nom ne semble pas égyptien mais berbère, selon les travaux de Zibelius, et qu'il serait passé en grec par des intermédiaires phéniciens ou puniques. Les Anciens proposaient d'autres explications, comme un lien avec lips, le nom grec d'un vent venu du sud-ouest ; Zimmermann juge que cette explication n'aide guère à connaître l'origine du mot. En arabe, le pays se nomme Lībiyā.",
+  "nameOriginActor": "Le nom Libye vient des auteurs grecs, qui l'auraient formé à partir du nom des Libou, selon J. Desanges et K. Zimmermann. L'administration coloniale italienne en fait le nom d'une seule colonie le 3 décembre 1934, en réunissant la Tripolitaine et la Cyrénaïque, selon Florence Renucci. La Constitution du 7 octobre 1951 le garde pour l'État indépendant, le Royaume-Uni de Libye.",
   "nameHistory": {
     "summary": "Le nom Libye désigne un pays d'Afrique du Nord, l'État de Libye, qui se nomme lui-même Lībiyā en arabe. Le pays a aussi porté les noms de Royaume-Uni de Libye, de Royaume de Libye, de République arabe libyenne et de Jamahiriya arabe libyenne populaire socialiste. Dans l'Antiquité, les Grecs appelaient Libye l'Afrique tout entière ; nous présentons plus bas l'explication que donnent les sources sur l'origine du nom.",
     "names": [
@@ -126,6 +126,29 @@
           },
           {
             "period": {
+              "from": 1934,
+              "to": 1934,
+              "label": "3 décembre 1934"
+            },
+            "era": "colonial",
+            "statement": "Le nom Libye devient celui d'une seule colonie italienne le 3 décembre 1934, quand l'Italie réunit la Tripolitaine et la Cyrénaïque, selon Florence Renucci. Les publications officielles italiennes employaient déjà le nom de Libia dans les années 1910.",
+            "aspect": "usage",
+            "formAsWritten": "Libia",
+            "sources": [
+              {
+                "title": "Le statut personnel des indigènes en Algérie et en Libye. Comparaison entre les politiques juridiques française et italienne (1919-1943)",
+                "author": "Florence Renucci",
+                "year": 2005,
+                "url": "https://shs.hal.science/tel-02658018v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 8-10",
+                "notes": "Thèse de doctorat en droit, Université d'Aix-Marseille, soutenue en décembre 2005, lue dans l'archive ouverte HAL le 3 novembre 2026. Note 3, p. 8 : « La Libye naît officiellement de l'union de la Tripolitaine et de la Cyrénaïque, le 3 décembre 1934. » Pages 9-10 : le 26 septembre 1911, le gouvernement Giolitti lance un ultimatum à l'Empire ottoman et lui déclare la guerre trois jours plus tard ; en Cyrénaïque, la Sénousiya, « un ordre mystique musulman », résiste militairement jusqu'aux accords d'Acroma du 17 avril 1917 ; l'occupation italienne dure jusqu'en 1943 ; le décret-loi du 9 janvier 1939 ordonne que « les quatre provinces de la Libye font désormais partie intégrante du territoire du royaume d'Italie ». La note 13 présente la confrérie sénousie, née au XIXe siècle en Cyrénaïque, qui prend le pouvoir en Libye à la fin de la Seconde Guerre mondiale. La bibliographie cite des publications officielles italiennes portant déjà le nom de Libia, comme les Ordinamenti della Libia du ministère des Colonies (1913-1914) et la jurisprudence de la Cour d'appel pour la Libye (1915-1919)."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": -1317,
               "to": -1227,
               "label": "Entre 1317 et 1227 avant notre ère"
@@ -144,6 +167,16 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 464",
                 "notes": "UNESCO, volume dirigé par Gamal Mokhtar, lu dans l'exemplaire numérisé. La stèle d'el-Alamein, qui rapporte l'occupation de la région par Ramsès II après que Séti Ier a repoussé les Temehou vers 1317 avant notre ère, « est le premier document à mentionner les Libou. A partir du nom de ce peuple, les Grecs appelèrent Libye son aire de parcours d'abord, puis de proche en proche toute l'Afrique » ; sous Mineptah, en 1227 avant notre ère, sont mentionnés les Maschwesch, voisins occidentaux des Libou."
+              },
+              {
+                "title": "Lebou/Libou",
+                "author": "K. Zimmermann",
+                "year": 2008,
+                "url": "https://journals.openedition.org/encyclopedieberbere/319",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4361-4363",
+                "notes": "Article de l'Encyclopédie berbère, fascicule 28-29 (2008), lu en ligne sur OpenEdition le 3 novembre 2026. « C'est très probablement le nom d'une tribu berbère – les Rbw (« Lebu ») – qui est à l'origine de l'ethnique « Libyens » ». Les Rbw apparaissent sur une stèle de la région d'El Alamein qui évoque leur soumission par Ramsès II ; l'auteur situe leur pays d'origine « quelque part en Marmarique ou Cyrénaïque » et rapporte qu'à partir du Xe siècle avant notre ère des « princes des Rbw » contrôlent des territoires dans le delta du Nil."
               }
             ]
           },
@@ -175,7 +208,7 @@
               "to": null,
               "label": "Origine non datée"
             },
-            "statement": "Le nom Libye viendrait de celui des Libou, un peuple voisin de l'Égypte : les Grecs auraient appelé Libye le territoire qu'il parcourait, puis, de proche en proche, toute l'Afrique, selon J. Desanges.",
+            "statement": "Le nom Libye viendrait de celui des Libou, un peuple voisin de l'Égypte : les Grecs auraient appelé Libye le territoire qu'il parcourait, puis, de proche en proche, toute l'Afrique, selon J. Desanges. Ce nom serait berbère plutôt qu'égyptien, et serait arrivé en grec par des intermédiaires phéniciens ou puniques, selon K. Zimmermann.",
             "hypothesisGroup": "origine du nom Libye",
             "sources": [
               {
@@ -187,6 +220,26 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 464",
                 "notes": "UNESCO, volume dirigé par Gamal Mokhtar, lu dans l'exemplaire numérisé. La stèle d'el-Alamein, qui rapporte l'occupation de la région par Ramsès II après que Séti Ier a repoussé les Temehou vers 1317 avant notre ère, « est le premier document à mentionner les Libou. A partir du nom de ce peuple, les Grecs appelèrent Libye son aire de parcours d'abord, puis de proche en proche toute l'Afrique » ; sous Mineptah, en 1227 avant notre ère, sont mentionnés les Maschwesch, voisins occidentaux des Libou."
+              },
+              {
+                "title": "Libye",
+                "author": "K. Zimmermann",
+                "year": 2008,
+                "url": "https://journals.openedition.org/encyclopedieberbere/337",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4375-4387",
+                "notes": "Article de l'Encyclopédie berbère, fascicule 28-29 (Édisud, 2008), lu en ligne sur OpenEdition le 3 novembre 2026. L'auteur écrit que les sources égyptiennes « nous offrent une explication du nom » : à partir du XIIIe siècle avant notre ère, elles mentionnent une tribu appelée Rbw, à l'ouest du delta du Nil ; « le nom ne semble pas être d'origine égyptienne mais provenir du berbère », selon Zibelius (1972), et les Grecs l'auraient reçu par des « intermédiaires phénico-puniques ». Il juge peu utiles l'étymologie ancienne qui rapproche le nom de lips, le vent du sud-ouest, et la reconstruction d'une forme mycénienne. Il rapporte aussi que les Grecs de Cyrénaïque appelaient leur pays « Libye », que Cyrène fut fondée par des colons de Théra « autour de 632/31 av. J.-C. », et que sous Dioclétien la Cyrénaïque devint la province de Libya superior, la région voisine de l'Égypte celle de Libya inferior."
+              },
+              {
+                "title": "Lebou/Libou",
+                "author": "K. Zimmermann",
+                "year": 2008,
+                "url": "https://journals.openedition.org/encyclopedieberbere/319",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4361-4363",
+                "notes": "Article de l'Encyclopédie berbère, fascicule 28-29 (2008), lu en ligne sur OpenEdition le 3 novembre 2026. « C'est très probablement le nom d'une tribu berbère – les Rbw (« Lebu ») – qui est à l'origine de l'ethnique « Libyens » ». Les Rbw apparaissent sur une stèle de la région d'El Alamein qui évoque leur soumission par Ramsès II ; l'auteur situe leur pays d'origine « quelque part en Marmarique ou Cyrénaïque » et rapporte qu'à partir du Xe siècle avant notre ère des « princes des Rbw » contrôlent des territoires dans le delta du Nil."
               }
             ]
           }
@@ -367,24 +420,33 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Libya (grec)",
-        "Tripolitaine et Cyrénaïque (régences ottomanes)",
-        "Colonie italienne de Libye (1911-1951)"
+        "Royaume-Uni de Libye (1951-1963)",
+        "Royaume de Libye (1963-1969)",
+        "République arabe libyenne (1969-1977)",
+        "Jamahiriya arabe libyenne populaire socialiste (1977-2011)"
       ],
-      "antiquity": "Libya (grec), Libye (latin). Le territoire était peuplé de Berbères (Libyens), Grecs (Cyrénaïque), Phéniciens (Tripolitaine).",
-      "middleAges": "Ifriqiya (forme arabe du latin Africa ; la région y est parfois comptée, au sens large), Barqa (Cyrénaïque), Tarabulus (Tripoli). Domination arabe puis ottomane.",
-      "precolonial": "Régences de Tripoli et de Benghazi (1551-1911), États ottomans semi-autonomes. Le territoire était divisé en Tripolitaine et Cyrénaïque.",
-      "colonization": "1911-1951 : Colonie italienne de Libye. Le nom \"Libye\" est officialisé par les Italiens.",
-      "contemporary": "1951 : Indépendance, royaume de Libye, puis république (1969), État de Libye (2011). Le nom officiel en arabe est \"Dawlat Lībiyā\"."
+      "antiquity": "Dans l'Antiquité, le nom Libye a plusieurs sens. Chez Homère, il désigne la côte d'Afrique du Nord qui fait face au monde grec ; il s'étend ensuite à tout le continent situé au sud de la Méditerranée, selon K. Zimmermann. Les Grecs installés en Cyrénaïque, autour de Cyrène fondée vers 632-631 avant notre ère, appellent aussi « Libye » leur propre pays. Sous l'empereur Dioclétien, la Cyrénaïque devient la province romaine de Libya superior, et la région située entre elle et le delta du Nil celle de Libya inferior. Plus à l'ouest, la ville d'Oea, l'actuelle Tripoli, est l'une des trois grandes cités de la Tripolitaine romaine, avec Lepcis Magna et Sabratha ; son nom viendrait du néopunique Wy't, selon A. Mrabet.",
+      "middleAges": "Après la conquête arabe, Oea prend le nom d'Ayas, puis celui de Ṭarābulus al-Gharb, « Tripoli de l'Ouest », selon A. Mrabet. Les géographes arabes appellent Fezzân, d'après la Phazania antique, une région d'oasis située plus au sud que celle des Romains. À leur arrivée au Sahara, les Arabes nomment aussi ce pays Targa, son nom en tamahaq, et en tirent un nom pour les gens du Fezzân, les Touaregs, selon l'article « Fezzân » de l'Encyclopédie berbère. Les auteurs arabes parlent aussi d'Ifrīqiya, forme arabe du latin Africa ; la Tripolitaine n'y est comptée qu'au sens large.",
+      "precolonial": "Les Ottomans prennent Tripoli en 1551. De 1711 à 1835, une dynastie de beys, les Ḳāramānlī, gouverne depuis Tripoli ; M. H. Chérif parle alors de « la Libye des Ḳāramānlī », qui retombe sous l'autorité directe des Ottomans en 1835. Le Fezzân devient ensuite un sandjak, une circonscription de l'Empire ottoman rattachée au vilayet de Tripoli, selon J. Despois.",
+      "colonization": "L'Italie déclare la guerre à l'Empire ottoman à la fin de septembre 1911 pour prendre la Tripolitaine et la Cyrénaïque, selon Florence Renucci. Par le traité d'Ouchy du 18 octobre 1912, l'Empire ottoman cède le pays à l'Italie, selon l'Office of the Historian du Département d'État américain. Les publications officielles italiennes emploient déjà le nom de Libia dans les années 1910, comme les Ordinamenti della Libia du ministère des Colonies. Les deux territoires restent pourtant distincts jusqu'au 3 décembre 1934 : ce jour-là, la Libye « naît officiellement de l'union de la Tripolitaine et de la Cyrénaïque », selon Florence Renucci. Le décret-loi du 9 janvier 1939 fait des quatre provinces de la Libye une partie du territoire du royaume d'Italie.",
+      "contemporary": "L'État indépendant reçoit le nom de Royaume-Uni de Libye, que fixe la Constitution du 7 octobre 1951 ; l'indépendance date du 24 décembre 1951. La révision du 25 avril 1963 le change en Royaume de Libye. Après le coup de force du 1er septembre 1969, la Proclamation constitutionnelle du 11 décembre 1969 le nomme République arabe libyenne. La Déclaration du 2 mars 1977 en fait la Jamahiriya arabe libyenne populaire socialiste, nom officiel jusqu'en 2011. Le nom officiel État de Libye, Dawlat Lībiyā en arabe, a été confirmé auprès des Nations unies en décembre 2017, selon la fiche toponymique britannique du Permanent Committee on Geographical Names."
     },
     "kingdoms": [
       {
-        "name": "Royaumes berbères antiques",
-        "period": "Antiquité",
+        "name": "Pays des Libou (Rbw)",
+        "period": "XIIIe siècle - VIIIe siècle av. J.-C.",
         "entryType": "polity",
-        "dominantPeoples": ["Berbères (Libyens)"],
-        "politicalCenters": ["Divers centres tribaux"],
-        "historicalRole": "Royaumes berbères indépendants, résistance à Rome, développement du commerce transsaharien."
+        "timeRange": {
+          "startYear": -1300,
+          "endYear": -700,
+          "precision": "approximate",
+          "datingNote": "Les bornes suivent les mentions égyptiennes des Rbw, du règne de Ramsès II aux derniers « grands princes des Rbw » du delta du Nil, que K. Zimmermann place à peu près à l'époque d'Homère ; elles ne datent pas l'existence du peuple lui-même."
+        },
+        "dominantPeoples": ["Libou (Rbw)"],
+        "politicalCenters": [
+          "Marmarique ou Cyrénaïque (localisation discutée)"
+        ],
+        "historicalRole": "Les Libou, que les textes égyptiens appellent Rbw, sont un peuple voisin et ennemi de l'Égypte : une stèle de la région d'El Alamein évoque leur soumission par Ramsès II, et ils envahissent la vallée du Nil sous Merneptah. K. Zimmermann situe leur pays d'origine en Marmarique ou en Cyrénaïque. À partir du Xe siècle avant notre ère, des « princes des Rbw » contrôlent des territoires dans le delta du Nil. Selon le même auteur, leur nom serait à l'origine du nom grec de la Libye."
       },
       {
         "name": "Royaume des Garamantes",
@@ -392,7 +454,13 @@
         "entryType": "polity",
         "dominantPeoples": ["Garamantes"],
         "politicalCenters": ["Garama (aujourd'hui Djerma, au Fezzan)"],
-        "historicalRole": "Depuis leurs oasis du Fezzan, entre l'Erg Oubari et l'Erg de Mourzouk, les Garamantes dominent tout le Fezzan et font payer tribut à de nombreuses tribus voisines. Vaincus par Cornelius Balbus en 19 av. J.-C., puis par Valerius Festus en 69 apr. J.-C., ils deviennent, semble-t-il, une sorte d'État client de l'Empire romain, selon P. Salama (HGA II)."
+        "historicalRole": "Depuis leurs oasis du Fezzan, entre l'Erg Oubari et l'Erg de Mourzouk, les Garamantes dominent tout le Fezzan et font payer tribut à de nombreuses tribus voisines. Vaincus par Cornelius Balbus en 19 av. J.-C., puis par Valerius Festus en 69 apr. J.-C., ils deviennent, semble-t-il, une sorte d'État client de l'Empire romain, selon P. Salama (HGA II). J. Desanges date la campagne de Balbus de 20 avant notre ère et juge cette conquête « peu durable ». En 70, appelés par les habitants d'Oea, les Garamantes assiègent Lepcis Magna ; le butin qu'ils revendent plus au sud montre, selon lui, les débuts d'un commerce à travers le Sahara.",
+        "timeRange": {
+          "startYear": -550,
+          "endYear": 500,
+          "precision": "approximate",
+          "datingNote": "Les bornes reprennent la période, de 550 avant à 500 après notre ère, où les fouilles du Fezzân montrent les Garamantes en position dominante, selon l'Encyclopédie berbère ; Hérodote les cite dès le Ve siècle avant notre ère."
+        }
       },
       {
         "name": "Cyrénaïque grecque",
@@ -405,7 +473,7 @@
         },
         "dominantPeoples": ["Grecs", "Berbères"],
         "politicalCenters": ["Cyrène", "Apollonia"],
-        "historicalRole": "Colonie grecque prospère, développement de la culture grecque en Afrique du Nord."
+        "historicalRole": "Des colons venus de l'île de Théra fondent Cyrène vers 632-631 avant notre ère. Les Grecs de Cyrénaïque appellent leur pays « Libye », dans leurs lois sacrées comme chez leurs historiens, selon K. Zimmermann. La région passe ensuite sous l'autorité des rois grecs d'Égypte, puis de Rome, qui en fait avec la Crète la province de Creta et Cyrenae."
       },
       {
         "name": "Tripolitaine romaine",
@@ -416,9 +484,9 @@
           "endYear": 439,
           "precision": "year"
         },
-        "dominantPeoples": ["Romains", "Berbères", "Phéniciens"],
+        "dominantPeoples": ["Romains", "Berbères", "Puniques"],
         "politicalCenters": ["Leptis Magna", "Sabratha", "Oea (Tripoli)"],
-        "historicalRole": "Province romaine prospère, développement urbain et commercial, art romain."
+        "historicalRole": "Oea, Lepcis Magna et Sabratha sont les trois grandes cités de la Tripolitaine romaine. Oea, l'actuelle Tripoli, est d'abord une ville punique qui paie tribut à Carthage, puis passe sous autorité numide en 161-162 avant notre ère avant d'entrer dans l'orbite de Rome. Elle devient colonie romaine sous Commode, à la fin du IIe siècle, et forme au IVe siècle l'un des cinq évêchés de la province de Tripolitaine. Les Vandales détruisent ses remparts ; elle retrouve sa prospérité sous les Byzantins après 533, selon A. Mrabet."
       },
       {
         "name": "Califat omeyyade et abbasside",
@@ -430,8 +498,22 @@
           "precision": "year"
         },
         "dominantPeoples": ["Arabes", "Berbères"],
-        "politicalCenters": ["Barqa", "Tripoli"],
-        "historicalRole": "Conquête arabe, islamisation, développement du commerce transsaharien."
+        "politicalCenters": ["Tripoli (Ṭarābulus)", "Djebel Nefousa"],
+        "historicalRole": "En 643, les troupes arabes de ‛Amr ibn al-‛Âṣ n'entrent dans Oea, l'actuelle Tripoli, qu'après un long siège, selon A. Mrabet. Au début du VIIIe siècle, l'ibadisme, une branche de l'islam née du kharedjisme, se répand dans les tribus berbères de Tripolitaine ; les Ibadites du djebel Nefousa reprennent Kairouan, et leur chef Abou l'Khattab devient le premier imam ibadite, selon C. Agabi."
+      },
+      {
+        "name": "Fezzân sous le royaume du Kanem",
+        "period": "XIIIe siècle - début du XVe siècle",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1200,
+          "endYear": 1410,
+          "precision": "approximate",
+          "datingNote": "L'Encyclopédie berbère donne seulement des siècles : du XIIIe au début du XVe siècle ; les années retenues ici arrondissent ces bornes."
+        },
+        "dominantPeoples": ["Kanembou", "Fezzânais"],
+        "politicalCenters": ["Traghen"],
+        "historicalRole": "Du XIIIe au début du XVe siècle, le Fezzân est rattaché au royaume du Kanem, centré au bord du lac Tchad, et prend Traghen pour capitale. Le commerce avec les pays du Sud s'accroît, et de nombreux cultivateurs venus du Sud s'installent dans les oasis. Au début du XVe siècle, les Awlad Muhammad, venus du Maroc, prennent le pouvoir et fondent Mourzouk, selon J. Despois."
       },
       {
         "name": "Régence de Tripoli",
@@ -444,7 +526,7 @@
         },
         "dominantPeoples": ["Turcs ottomans", "Arabes", "Berbères"],
         "politicalCenters": ["Tripoli"],
-        "historicalRole": "Province ottomane à partir de la prise de Tripoli, en 1551. De 1711 à 1835, la dynastie des Karamanli gouverne de façon autonome ; la Libye revient ensuite sous domination ottomane directe, jusqu'à l'invasion italienne de 1911, selon Mohamed H. Chérif (HGA V et VI). État ottoman semi-autonome, piraterie en Méditerranée, résistance aux puissances européennes."
+        "historicalRole": "Province ottomane à partir de la prise de Tripoli, en 1551. De 1711 à 1835, la dynastie des Karamanli gouverne de façon autonome ; la Libye revient ensuite sous domination ottomane directe, jusqu'à l'invasion italienne de 1911, selon Mohamed H. Chérif (HGA V et VI). Les gouverneurs ottomans doivent souvent reconnaître l'indépendance de fait du Fezzân, selon J. Despois ; les Turcs prennent l'oasis d'Augila en 1640. Tripoli conclut un traité de paix avec les États-Unis en 1796, leur fait la guerre de 1801 à 1805, et perd en 1835 le pouvoir de mener ses relations extérieures, selon l'Office of the Historian."
       },
       {
         "name": "Dynastie des Karamanli (Ḳāramānlī)",
@@ -461,18 +543,33 @@
       },
       {
         "name": "Colonie italienne",
-        "period": "1911-1951",
+        "period": "1911-1947",
         "entryType": "colonial",
         "timeRange": {
           "startYear": 1911,
-          "endYear": 1951,
+          "endYear": 1947,
           "precision": "year"
         },
         "dominantPeoples": [
           "Tous les peuples libyens sous domination coloniale"
         ],
         "politicalCenters": ["Tripoli", "Benghazi"],
-        "historicalRole": "Colonisation italienne, résistance libyenne (Omar al-Mukhtar), développement économique limité."
+        "historicalRole": "L'Italie déclare la guerre à l'Empire ottoman en septembre 1911 et obtient le pays par le traité d'Ouchy de 1912. En Cyrénaïque, la confrérie sénousie lui résiste par les armes jusqu'aux accords d'Acroma du 17 avril 1917, selon Florence Renucci ; au Fezzân, les Italiens ne tiennent toute la région qu'en 1930, face à des nomades soutenus par la propagande sénousie, selon J. Despois. La Tripolitaine et la Cyrénaïque forment une seule colonie, la Libye, à partir du 3 décembre 1934, et le décret-loi du 9 janvier 1939 rattache ses quatre provinces au territoire du royaume d'Italie. Le pays, occupé par les Britanniques et les Français à partir de 1943, reste officiellement une colonie italienne jusqu'en 1947, selon l'Office of the Historian."
+      },
+      {
+        "name": "Administrations britannique et française",
+        "period": "1943-1951",
+        "entryType": "colonial",
+        "timeRange": {
+          "startYear": 1943,
+          "endYear": 1951,
+          "precision": "year"
+        },
+        "dominantPeoples": [
+          "Tous les peuples de Libye sous administration étrangère"
+        ],
+        "politicalCenters": ["Tripoli", "Benghazi", "Sebha"],
+        "historicalRole": "Pendant la Seconde Guerre mondiale, les Forces françaises libres du général Leclerc prennent Mourzouk puis Sebha en janvier 1943 ; le Fezzân est ensuite rattaché aux Territoires du Sud de l'Algérie, selon J. Despois. La Grande-Bretagne administre la Tripolitaine et la Cyrénaïque, et la France le Fezzân, de 1943 à 1951, selon l'Histoire générale de l'Afrique. Cette période prend fin avec l'indépendance du 24 décembre 1951."
       }
     ],
     "majorPeoples": [
@@ -482,23 +579,22 @@
         "exonyms": ["Arabes", "Arabophones", "Libyens"],
         "peopleId": "PPL_ARABES_AFRIQUE",
         "mainRegion": "Toutes les régions de Libye, majoritaires dans les plaines côtières et les villes",
-        "languages": ["Arabe libyen (darija)", "arabe standard"],
+        "languages": ["Arabe libyen (ayl)", "arabe standard"],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "Les Arabes de Libye sont majoritairement arabisés (métissés avec les Berbères). Le terme \"Libyen\" est également utilisé."
+        "appellationRemarks": "Le mot Libyens désigne aussi tous les habitants du pays. Dans l'Antiquité, les auteurs grecs appelaient déjà « Libyens » les peuples d'Afrique du Nord, et parfois les Grecs de Cyrénaïque, selon K. Zimmermann."
       },
       {
         "name": "Nafusi",
         "selfAppellation": "Inafusen",
         "exonyms": [
           "« Nefoussa » (forme arabe)",
-          "« Berbère » (terme colonial",
-          "considéré problématique)"
+          "« Berbère » (terme colonial, considéré problématique)"
         ],
         "peopleId": "PPL_NAFUSI",
         "mainRegion": "Djebel Nafousa (montagnes de l'ouest)",
         "languages": ["Nafusi (jbn)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Le terme \"Berbère\" est considéré comme problématique. L'auto-appellation est \"Inafusen\". Les Nafusi sont ibadites (branche de l'islam)."
+        "appellationRemarks": "Les Nafusi se nomment eux-mêmes Inafusen. Leur montagne, le djebel Nefousa, est un foyer de l'ibadisme, une branche de l'islam, depuis le VIIIe siècle, selon C. Agabi."
       },
       {
         "name": "Touaregs",
@@ -509,65 +605,77 @@
         ],
         "peopleId": "PPL_TUAREG",
         "mainRegion": "Fezzan (sud-ouest), désert libyen",
-        "languages": ["Tamasheq (tmh)"],
+        "languages": ["Tamahaq (thv)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Touareg est un nom donné de l'extérieur : il vient de l'arabe et le français l'a diffusé. Les personnes concernées se nomment Imuhagh, ou Kel Tamasheq, « ceux qui parlent tamasheq ». Le nom Berbère est considéré comme problématique."
+        "appellationRemarks": "Touareg est un nom donné de l'extérieur : il vient de l'arabe et le français l'a diffusé. Au moment de leur arrivée au Sahara, les Arabes appelaient le Fezzân Targa, son nom en tamahaq, et en auraient tiré le nom des Touaregs, selon l'Encyclopédie berbère. Les personnes concernées se nomment Imuhagh, ou Kel Tamasheq, « ceux qui parlent tamasheq ». En Libye, ce sont surtout les Touaregs Ajjer, présents à Ghat et à Ghadamès."
       },
       {
         "name": "Toubou",
         "selfAppellation": "Teda / Daza",
         "exonyms": [
           "Toubou (nom français donné de l'extérieur)",
-          "Teda",
-          "Daza"
+          "Tebou (forme employée par J. Despois)"
         ],
         "peopleId": "PPL_TOUBOU",
         "mainRegion": "Sud-est (région frontalière avec le Tchad)",
-        "languages": ["Teda (tud)", "Daza (dzg)"],
+        "languages": ["Tedaga (tuq)", "Dazaga (dzg)"],
         "languageFamily": "FLG_SAHARIEN",
-        "appellationRemarks": "Peuple saharien présent principalement au Tchad et au Niger, minorité en Libye."
+        "appellationRemarks": "Les Toubou vivent surtout au Tchad et au Niger. En Libye, ils occupent le sud du Fezzân, où J. Despois les distingue à la fois des cultivateurs des oasis, des Touaregs et des Arabes."
       }
     ],
     "culture": {
       "mainLanguages": [
         {
-          "name": "Arabe libyen",
-          "isoCode": "ayl"
+          "name": "arabe standard",
+          "isoCode": "ara",
+          "isPrimary": true
         },
         {
-          "name": "arabe standard",
-          "isoCode": "ara"
+          "name": "Arabe libyen",
+          "isoCode": "ayl"
         },
         {
           "name": "nafusi",
           "isoCode": "jbn"
         },
         {
-          "name": "tamasheq",
-          "isoCode": "tmh"
+          "name": "tamahaq",
+          "isoCode": "thv"
         },
         {
-          "name": "teda",
-          "isoCode": "tud"
+          "name": "ghadamsi",
+          "isoCode": "gha"
         },
         {
-          "name": "daza",
+          "name": "awjili",
+          "isoCode": "auj"
+        },
+        {
+          "name": "sokni",
+          "isoCode": "swn"
+        },
+        {
+          "name": "tedaga",
+          "isoCode": "tuq"
+        },
+        {
+          "name": "dazaga",
           "isoCode": "dzg"
         }
       ],
-      "culturalTraditions": "Musique libyenne, poésie arabe et amazighe, artisanat (bijoux, poterie), architecture traditionnelle (maisons troglodytes), fêtes religieuses",
-      "dominantReligions": "Islam sunnite (école malékite majoritaire), ibadisme (Nafusi), soufisme important",
-      "lifestyles": "Urbanisation importante (Tripoli, Benghazi), agriculture (côtes), pastoralisme (intérieur), industrie pétrolière, commerce",
-      "socialOrganization": "Structures familiales traditionnelles, organisation tribale (importante en Libye), structures étatiques modernes (instables depuis 2011)",
-      "regionalRelations": "Relations avec le Maghreb (Union du Maghreb arabe), relations avec l'Afrique subsaharienne, relations avec l'Europe, rôle dans la Ligue arabe, instabilité politique depuis 2011"
+      "culturalTraditions": "Le massif de l'Akakus, dans le sud-ouest du pays, est connu pour ses peintures et gravures rupestres, dont F. Mori a publié l'étude de référence en 1965, selon A. Muzzolini. Les abris de Ti-n-Torha, dans le même massif, ont livré une céramique parmi les plus anciennes du Sahara, antérieure à 6500 avant notre ère, selon l'Encyclopédie berbère. À Ghadamès, la vieille ville s'est formée à partir de demeures fortifiées, les qṣūr, qui regroupaient chacune une famille et ses dépendants autour de la source, d'après les traditions locales que rapporte J. Lanfry.",
+      "dominantReligions": "L'islam arrive avec la conquête arabe, au VIIe siècle. Au début du VIIIe siècle, l'ibadisme se répand dans les tribus berbères de Tripolitaine, et le djebel Nefousa en devient un foyer. Aujourd'hui, au Maghreb, les ibadites forment des îlots de langue berbère au milieu d'une majorité de musulmans de l'école malékite, selon C. Agabi. Au XIXe siècle, la confrérie sénousie, un ordre mystique musulman, se développe en Cyrénaïque ; elle mène la résistance contre l'Italie, puis prend le pouvoir à l'indépendance, selon Florence Renucci.",
+      "lifestyles": "Au Fezzân, les habitants des oasis sont avant tout des cultivateurs, souvent menacés autrefois par les pasteurs nomades : Arabes du sud de la Tripolitaine, Touaregs Ajjer et Tebou, selon J. Despois. Ghadamès a longtemps vécu du commerce à travers le Sahara, y compris la traite des esclaves ; quand ce commerce a décliné, une partie des habitants est partie travailler à Tripoli et surtout à Tunis. Après l'indépendance, les changements économiques liés à la découverte du pétrole conduisent la confrérie sénousie à sa perte, selon Florence Renucci.",
+      "socialOrganization": "À Ghadamès, les habitants se répartissent traditionnellement en trois clans : les Beni Waziten et les Beni Uled, de langue berbère, et les Awled Bellil, qui revendiquent une origine arabe ; chaque clan garde ses quartiers fortifiés. La société de l'oasis était très hiérarchisée : nobles, hommes libres clients d'une famille noble, affranchis, et au bas de l'échelle des esclaves venus du Kanem ou de la boucle du Niger, selon J. Despois. Chaque famille de Ghadamès avait des tribus alliées, touarègues ou arabes, qui protégeaient ses caravanes.",
+      "regionalRelations": "Le Fezzân se trouve sur le chemin le plus court entre la Méditerranée et le lac Tchad : c'est, après le Nil, le principal couloir historique de passage vers l'Afrique au sud du Sahara, selon l'Encyclopédie berbère. Les Ghadamsi commerçaient jusqu'à Tombouctou, grâce à l'accord des Touaregs Ajjer qui contrôlaient les pistes. Avec l'Europe et l'Amérique, les relations passent très tôt par la Méditerranée : Tripoli signe un traité de paix avec les États-Unis en 1796. Après le soulèvement de 2011, les États-Unis reconnaissent le Conseil national de transition, puis suspendent l'activité de leur ambassade à Tripoli en 2014 à cause des violences de milices, selon l'Office of the Historian."
     },
     "historicalFacts": {
-      "ancientPeriods": "Présence berbère depuis la préhistoire, colonies grecques (Cyrénaïque), colonies phéniciennes (Tripolitaine), domination romaine, christianisation partielle.",
-      "middleAges": "Conquête arabe (643), islamisation progressive, développement du commerce transsaharien, domination ottomane (1551).",
-      "precolonial": "Régence de Tripoli (1551-1911), État ottoman semi-autonome, piraterie en Méditerranée, résistance aux puissances européennes.",
-      "colonization": "Colonie italienne (1911-1951), résistance libyenne (Omar al-Mukhtar, 1923-1931), développement économique limité.",
-      "independenceStruggle": "Résistance à l'occupation italienne, indépendance (1951), royaume de Libye.",
-      "postIndependence": "Royaume de Libye (1951-1969), coup d'État de Kadhafi (1969), république (1969-2011), révolution de 2011, guerre civile, instabilité politique."
+      "ancientPeriods": "Dans le Sahara, les fouilles de l'Akakus montrent un groupe installé autour d'une source vers 7100 avant notre ère, selon A. Muzzolini. Au IIIe millénaire avant notre ère, les textes égyptiens appellent Tehenou les habitants du désert libyque et de ses oasis, puis aussi Temehou vers 2300, selon J. Desanges. Les Libou apparaissent dans ces textes au XIIIe siècle avant notre ère. Des colons grecs fondent Cyrène vers 632-631 avant notre ère, tandis qu'Oea, l'actuelle Tripoli, est une ville punique qui paie tribut à Carthage. Au Fezzân, les Garamantes dominent les oasis ; Rome les combat en 20-19 avant notre ère, puis en 69-70 de notre ère. La Tripolitaine et la Cyrénaïque deviennent romaines ; au IVe siècle, Oea est l'un des cinq évêchés de Tripolitaine. Les Vandales puis les Byzantins, après 533, gouvernent ensuite la côte, selon A. Mrabet.",
+      "middleAges": "En 643, les troupes arabes de ‛Amr ibn al-‛Âṣ prennent Oea après un long siège. Au début du VIIIe siècle, l'ibadisme se répand en Tripolitaine. Au Fezzân, la tradition rapporte une expédition d'Okba en 666, et la ville de Zawila est fondée en 918. Du XIIIe au début du XVe siècle, le Fezzân est rattaché au royaume du Kanem ; les Awlad Muhammad y prennent ensuite le pouvoir et fondent Mourzouk, qui devient un centre de caravanes et une étape pour les pèlerins de La Mecque, selon J. Despois.",
+      "precolonial": "Les Ottomans prennent Tripoli en 1551. En 1711, Aḥmad Ḳāramānlī, un officier kouloughli, prend le pouvoir à Tripoli et fonde une dynastie qui règne jusqu'en 1835, selon M. H. Chérif. Tripoli signe un traité de paix avec les États-Unis en 1796 et leur fait la guerre de 1801 à 1805, selon l'Office of the Historian. En 1835, les Ottomans reprennent le gouvernement direct du pays. Ils font du Fezzân un sandjak rattaché au vilayet de Tripoli, et y envoient en exil des opposants, selon J. Despois. Au XIXe siècle, la confrérie sénousie se développe en Cyrénaïque.",
+      "colonization": "L'Italie lance un ultimatum à l'Empire ottoman le 26 septembre 1911 et lui déclare la guerre trois jours plus tard. Le traité d'Ouchy du 18 octobre 1912 lui cède le pays, mais la guerre dure : en Cyrénaïque, la confrérie sénousie résiste jusqu'aux accords d'Acroma du 17 avril 1917, selon Florence Renucci, et l'Italie ne tient tout le Fezzân qu'en 1930, selon J. Despois. La Tripolitaine et la Cyrénaïque forment une seule colonie, la Libye, le 3 décembre 1934 ; en 1939, ses quatre provinces sont rattachées au territoire du royaume d'Italie. En janvier 1943, les Forces françaises libres prennent Mourzouk et Sebha. Les Britanniques et les Français administrent ensuite le pays, qui reste officiellement une colonie italienne jusqu'en 1947, selon l'Office of the Historian.",
+      "independenceStruggle": "La confrérie sénousie mène la résistance armée contre l'Italie en Cyrénaïque, puis prend le pouvoir en Libye à la fin de la Seconde Guerre mondiale, selon Florence Renucci. Le 21 novembre 1949, l'Assemblée générale des Nations unies recommande que la Cyrénaïque, la Tripolitaine et le Fezzan forment un seul État indépendant, selon la Digithèque MJP de l'Université de Perpignan. L'indépendance est proclamée le 24 décembre 1951 : le pays devient le Royaume-Uni de Libye, dont le Fezzân est l'une des trois provinces autonomes, et Muhammad Idris al-Sanusi en est le roi, selon J. Despois.",
+      "postIndependence": "La révision constitutionnelle du 25 avril 1963 supprime le caractère fédéral du royaume. Le 1er septembre 1969, un coup de force met fin à la monarchie, et la République arabe libyenne est proclamée ; en 1977, elle devient la Jamahiriya arabe libyenne populaire socialiste. En 2011, un soulèvement renverse Mouammar Kadhafi, et le Conseil national de transition adopte le 3 août une Déclaration constitutionnelle. En 2014, les violences de milices poussent les États-Unis à suspendre l'activité de leur ambassade à Tripoli, selon l'Office of the Historian. Le pays reste depuis divisé entre des gouvernements rivaux, selon le Permanent Committee on Geographical Names."
     },
     "sources": [
       {
@@ -637,6 +745,132 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, chapitre de Mohamed H. Chérif (1996), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 489. « La Libye des Ḳāramānlī retombait sous la domination directe ottomane en 1835 », avant d'être « envahie par les Italiens en 1911 »."
+      },
+      {
+        "title": "Libye",
+        "author": "K. Zimmermann",
+        "year": 2008,
+        "url": "https://journals.openedition.org/encyclopedieberbere/337",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de l'Encyclopédie berbère, fascicule 28-29 (Édisud, 2008), lu en ligne sur OpenEdition le 3 novembre 2026. L'auteur écrit que les sources égyptiennes « nous offrent une explication du nom » : à partir du XIIIe siècle avant notre ère, elles mentionnent une tribu appelée Rbw, à l'ouest du delta du Nil ; « le nom ne semble pas être d'origine égyptienne mais provenir du berbère », selon Zibelius (1972), et les Grecs l'auraient reçu par des « intermédiaires phénico-puniques ». Il juge peu utiles l'étymologie ancienne qui rapproche le nom de lips, le vent du sud-ouest, et la reconstruction d'une forme mycénienne. Il rapporte aussi que les Grecs de Cyrénaïque appelaient leur pays « Libye », que Cyrène fut fondée par des colons de Théra « autour de 632/31 av. J.-C. », et que sous Dioclétien la Cyrénaïque devint la province de Libya superior, la région voisine de l'Égypte celle de Libya inferior. Pages lues : 4375-4387."
+      },
+      {
+        "title": "Lebou/Libou",
+        "author": "K. Zimmermann",
+        "year": 2008,
+        "url": "https://journals.openedition.org/encyclopedieberbere/319",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de l'Encyclopédie berbère, fascicule 28-29 (2008), lu en ligne sur OpenEdition le 3 novembre 2026. « C'est très probablement le nom d'une tribu berbère – les Rbw (« Lebu ») – qui est à l'origine de l'ethnique « Libyens » ». Les Rbw apparaissent sur une stèle de la région d'El Alamein qui évoque leur soumission par Ramsès II ; l'auteur situe leur pays d'origine « quelque part en Marmarique ou Cyrénaïque » et rapporte qu'à partir du Xe siècle avant notre ère des « princes des Rbw » contrôlent des territoires dans le delta du Nil. Pages lues : 4361-4363."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, II, ch. 17 : Les Protoberbères",
+        "author": "J. Desanges",
+        "year": 1980,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par Gamal Mokhtar, lu dans l'exemplaire numérisé. Les Tehenou peuplaient au IIIe millénaire avant notre ère le désert libyque et ses oasis ; les Temehou sont mentionnés vers 2300 avant notre ère. La stèle d'el-Alamein « est le premier document à mentionner les Libou. A partir du nom de ce peuple, les Grecs appelèrent Libye son aire de parcours d'abord, puis de proche en proche toute l'Afrique ». Pages lues : 463-464."
+      },
+      {
+        "title": "Garamantes",
+        "author": "J. Desanges",
+        "year": 1998,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1993",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de l'Encyclopédie berbère, fascicule 19 (1998), lu en ligne sur OpenEdition le 3 novembre 2026. Hérodote cite les Garamantes parmi les peuples de l'intérieur de la Libye ; « en 20 avant notre ère, le pays des Garamantes et sa capitale Garama furent conquis par le proconsul d'Afrique Cornélius Balbus », conquête « peu durable » ; en 70, appelés par les habitants d'Oea, ils assiégèrent Lepcis Magna, et le butin revendu plus loin « atteste l'amorce d'un commerce transsaharien ». Pages lues : 2969-2971."
+      },
+      {
+        "title": "Oea",
+        "author": "A. Mrabet",
+        "year": 2013,
+        "url": "https://journals.openedition.org/encyclopedieberbere/2797",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de l'Encyclopédie berbère, fascicule 35 (2013), lu en ligne sur OpenEdition le 3 novembre 2026. « Oea, aujourd'hui Tripoli, capitale de la Libye – arabe Ayas puis Ṭarābulus al-Gharb (Tripoli de l'Ouest) –, fut, avec Lepcis Magna et Sabratha, l'une des trois grandes cités de la Tripolitaine romaine » ; son nom dérive du néopunique Wy't. La ville payait tribut à Carthage, passa sous autorité numide en 161-162 avant notre ère, devint colonie romaine sous Commode, fut l'un des cinq évêchés de Tripolitaine au IVe siècle, subit les Vandales puis retrouva sa prospérité sous les Byzantins après 533. « En 643 ap. J.-C, les conquérants arabes menés par ‛Amr ibn Al-‛Âṣ ne purent y entrer qu'au terme d'un long siège ». Pages lues : 5706."
+      },
+      {
+        "title": "Ibadites",
+        "author": "C. Agabi",
+        "year": 2000,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1624",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de l'Encyclopédie berbère, fascicule 23 (2000), lu en ligne sur OpenEdition le 3 novembre 2026. « Dès le début du viiie siècle, le kharedjisme, sous ses formes ibadite et çofrite, pénètre dans les tribus de Tripolitaine » ; les Ibadites du djebel Nefousa délivrent Kairouan et leur chef Abou l'Khattab devient le premier imam ibadite. Aujourd'hui, les Ibadites forment au Maghreb, « noyés dans la masse malékite », des îlots de langue berbère, dont quelques familles de la région de Zuera en Tripolitaine. Pages lues : 3567-3574."
+      },
+      {
+        "title": "Fezzân",
+        "author": "P. Trousset, J. Despois, Y. Gauthier et Ch. Gauthier",
+        "year": 1997,
+        "url": "https://journals.openedition.org/encyclopedieberbere/2083",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de l'Encyclopédie berbère, fascicule 18 (1997), lu en ligne sur OpenEdition le 3 novembre 2026. Le nom Fezzân « tire son origine de celui de la Phazania antique » ; à leur arrivée au Sahara, les Arabes appelaient le pays Targa, son nom en tamahak, dont ils firent un nom pour les gens du Fezzân, les Touaregs. La partie historique, d'après J. Despois, rapporte que le Fezzân fut rattaché au royaume du Kanem du XIIIe au début du XVe siècle, puis dominé par les Awlad Muhammad qui fondèrent Mourzouk ; qu'il devint un sandjak du vilayet de Tripoli après la chute des Ḳāramānlī ; que les Italiens, maîtres de Tripoli en 1911, ne tinrent tout le Fezzân qu'en 1930 ; que les Forces françaises libres prirent Mourzouk et Sebha en janvier 1943 ; et qu'en décembre 1951 le Fezzân devint l'une des trois provinces autonomes du nouvel État. L'article décrit aussi les cultivateurs des oasis et les pasteurs nomades, arabes, touaregs ajjer et tebou. Pages lues : 2777-2817."
+      },
+      {
+        "title": "Ghadamès",
+        "author": "J. Despois, J. Lanfry et K.-G. Prasse",
+        "year": 1998,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1913",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de l'Encyclopédie berbère, fascicule 20 (1998), lu en ligne sur OpenEdition le 3 novembre 2026. Ghadamès, oasis de langue berbère près de la rencontre des frontières de l'Algérie, de la Tunisie et de la Libye, « a longtemps vécu du commerce transsaharien et particulièrement de la traite des noirs » ; ce commerce dépendait des Touaregs Ajjer, qui contrôlaient les pistes. Les habitants se répartissent en trois clans : les Beni Waziten et les Beni Uled, berbères, et les Awled Bellil, qui revendiquent une origine arabe. Selon les traditions encore vivantes rapportées par J. Lanfry, la ville s'est formée à partir de demeures fortifiées (qṣūr) regroupant chacune une famille et ses dépendants autour de la source. Le déclin du commerce poussa une partie des habitants à émigrer vers Tripoli et surtout Tunis. Pages lues : 3067-3069."
+      },
+      {
+        "title": "Augila",
+        "author": "W. Vycichl et K.-G. Prasse",
+        "year": 1989,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1220",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de l'Encyclopédie berbère, fascicule 7 (1989), lu en ligne sur OpenEdition le 3 novembre 2026. Hérodote est le premier auteur à mentionner l'oasis d'Augila, où les Nasamons venaient récolter les dattes ; « en 1640 les Turcs s'emparent de l'oasis ». K.-G. Prasse décrit l'awjili, « parler berbère des Awjilins ». Pages lues : 1050-1055."
+      },
+      {
+        "title": "Akakus",
+        "author": "A. Muzzolini",
+        "year": 1986,
+        "url": "https://journals.openedition.org/encyclopedieberbere/2392",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de l'Encyclopédie berbère, fascicule 3 (1986), lu en ligne sur OpenEdition le 3 novembre 2026. Le massif de l'Akakus, en Libye, près du Tassili, « est notamment connu pour ses figurations rupestres », dont l'étude fondamentale est celle de F. Mori (1965) ; l'abri de Ti-n-Torha Est montre un groupe installé autour d'une source vers 7100 avant notre ère (date au carbone 14 non calibrée). Pages lues : 399-408."
+      },
+      {
+        "title": "Le statut personnel des indigènes en Algérie et en Libye. Comparaison entre les politiques juridiques française et italienne (1919-1943)",
+        "author": "Florence Renucci",
+        "year": 2005,
+        "url": "https://shs.hal.science/tel-02658018v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse de doctorat en droit, Université d'Aix-Marseille, soutenue en décembre 2005, lue dans l'archive ouverte HAL le 3 novembre 2026. Note 3, p. 8 : « La Libye naît officiellement de l'union de la Tripolitaine et de la Cyrénaïque, le 3 décembre 1934. » Pages 9-10 : le 26 septembre 1911, le gouvernement Giolitti lance un ultimatum à l'Empire ottoman et lui déclare la guerre trois jours plus tard ; en Cyrénaïque, la Sénousiya, « un ordre mystique musulman », résiste militairement jusqu'aux accords d'Acroma du 17 avril 1917 ; l'occupation italienne dure jusqu'en 1943 ; le décret-loi du 9 janvier 1939 ordonne que « les quatre provinces de la Libye font désormais partie intégrante du territoire du royaume d'Italie ». La note 13 présente la confrérie sénousie, née au XIXe siècle en Cyrénaïque, qui prend le pouvoir en Libye à la fin de la Seconde Guerre mondiale. La bibliographie cite des publications officielles italiennes portant déjà le nom de Libia, comme les Ordinamenti della Libia du ministère des Colonies (1913-1914) et la jurisprudence de la Cour d'appel pour la Libye (1915-1919). Pages lues : 8-10."
+      },
+      {
+        "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Libya",
+        "author": "Office of the Historian, Département d'État des États-Unis",
+        "year": null,
+        "url": "https://history.state.gov/countries/libya",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Notice lue le 3 novembre 2026. Tripoli signe un traité de paix avec les États-Unis le 4 novembre 1796 ; la guerre dite de Tripoli commence en 1801 et un nouveau traité est conclu en 1805 ; Tripoli perd en 1835 le pouvoir de mener ses relations extérieures, quand l'Empire ottoman réaffirme sa souveraineté. L'Empire ottoman cède la Libye à l'Italie par le traité d'Ouchy du 18 octobre 1912 ; elle reste officiellement une colonie italienne jusqu'en 1947, sous occupation franco-britannique depuis 1943. En 2011, les États-Unis reconnaissent le Conseil national de transition ; en 2014, ils suspendent l'activité de leur ambassade à Tripoli à cause des violences de milices."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+        "author": "Ali A. Mazrui",
+        "year": 1998,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Tableau chronologique des indépendances, lu dans l'exemplaire numérisé. Ligne Libye : indépendante le 24 décembre 1951, puissance coloniale l'Italie ; « Administrations britannique (Tripolitaine et Cyrénaïque) et française (Fezzān) de 1943 à 1951 ». Page lue : 128, tableau 5.1."
+      },
+      {
+        "title": "Glottolog 5 – langues parlées en Libye",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+        "year": null,
+        "url": "https://glottolog.org/glottolog?country=LY",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max Planck d'anthropologie évolutionniste, liste des langues rattachées à la Libye, consultée le 3 novembre 2026. Elle comprend l'arabe libyen (ayl), l'arabe standard (arb), le nafusi (jbn), le parler de Ghadamès (gha), l'awjili (auj), le parler de Sokna et de Fogaha (swn), le tamahaq du Hoggar (thv), le tedaga (tuq) et le dazaga (dzg), avec d'autres variétés d'arabe et la langue des signes libyenne."
       }
     ],
     "demographics": {
@@ -646,47 +880,45 @@
       "peoples": [
         {
           "name": "Arabes de Libye",
-          "percentageInCountry": 90,
-          "percentageInAfrica": 3.5,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "peopleId": "PPL_ARABES_AFRIQUE",
           "region": "Toutes les régions",
-          "languageFamily": "FLG_SEMITIQUE"
+          "languageFamily": "FLG_SEMITIQUE",
+          "population": null
         },
         {
           "name": "Nafusi",
-          "population": 225000,
-          "percentageInCountry": 3.2,
-          "percentageInAfrica": 0.1,
+          "population": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "peopleId": "PPL_NAFUSI",
           "region": "Djebel Nafousa (ouest)",
           "languageFamily": "FLG_BERBERE"
         },
         {
           "name": "Touaregs",
-          "population": 200000,
-          "percentageInCountry": 2.9,
-          "percentageInAfrica": 0.1,
+          "population": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "peopleId": "PPL_TUAREG",
           "region": "Fezzan (sud-ouest)",
           "languageFamily": "FLG_BERBERE"
         },
         {
           "name": "Toubou",
-          "population": 100000,
-          "percentageInCountry": 1.4,
-          "percentageInAfrica": 0.06,
+          "population": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "peopleId": "PPL_TOUBOU",
           "region": "Sud-est (frontière avec le Tchad)",
           "languageFamily": "FLG_SAHARIEN"
-        },
-        {
-          "name": "Autres groupes",
-          "population": 175000,
-          "percentageInCountry": 2.5,
-          "percentageInAfrica": 0.1,
-          "region": "Diverses régions"
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "La Libye est un pays d'Afrique du Nord. Son nom viendrait de celui des Libou, un peuple voisin de l'ancienne Égypte, repris par les Grecs.",
+      "followUp": "Comment le nom d'un peuple est-il devenu celui de tout un continent, puis d'un pays ?"
     }
   }
 }

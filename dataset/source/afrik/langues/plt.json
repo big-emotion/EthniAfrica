@@ -145,6 +145,76 @@
                 "source_kind": "linguistic_reference",
                 "notes": "Dictionnaire monolingue malgache, Ambozontany, 1985, lu dans le Malagasy Dictionary and Encyclopedia en ligne le 11 octobre 2026. Le même article donne malgache comme équivalent français."
               }
+            ],
+            "era": "modern"
+          },
+          {
+            "period": {
+              "from": 1661,
+              "to": 1661,
+              "label": "1661"
+            },
+            "statement": "Le nom malgache a une forme ancienne, « Madecase » : c'est ainsi que les habitants nomment leur île, alors que les géographes l'appellent Madagascar, écrit Étienne de Flacourt en 1661. Il parle aussi des « Madécasses », que cite Gabriel Ferrand.",
+            "formAsWritten": "Madecase",
+            "actors": [
+              {
+                "name": "Étienne de Flacourt",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue de Madagascar, d'après l'édition de 1658 et l'Histoire de la grande isle Madagascar de 1661",
+                "author": "Étienne de Flacourt ; édition de Gabriel Ferrand",
+                "year": 1905,
+                "url": "https://archive.org/details/dictionnairedel00flacgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "préface de Flacourt, note 3 de Gabriel Ferrand",
+                "notes": "Paris, Ernest Leroux, 1905, Publications de l'École des lettres d'Alger. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'introduction décrit le volume de 1658 et son titre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1650,
+              "label": "Première moitié du XVIIe siècle"
+            },
+            "statement": "Le nom malgache est proche de formes que des voyageurs notent dans le sud-est de l'île au début du XVIIe siècle, « Matacasi », « Madegache » ou « Malegasses », pour un peuple de cette région, selon Paul Pelliot. Ces voyageurs précisent que Madagascar est un nom de géographes, inconnu dans le pays.",
+            "sources": [
+              {
+                "title": "Notes on Marco Polo, vol. II, notice 287 : Mogedaxo",
+                "author": "Paul Pelliot",
+                "year": 1963,
+                "url": "https://dsr.nii.ac.jp/toyobunko/III-2-F-c-104/V-2/page/0184.html.en",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "notice 287, pages 184 et 185 de l'édition numérique",
+                "notes": "Paris, Imprimerie nationale, sous les auspices de l'Académie des inscriptions et belles-lettres, ouvrage posthume. Lu dans le texte numérisé par la Toyo Bunko et le projet Digital Silk Road de l'Institut national d'informatique du Japon, le 3 novembre 2026 ; ce texte ne donne pas la pagination imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Explications rapportées par Paul Pelliot"
+            },
+            "statement": "Le nom de l'île, Madagascar, viendrait d'une erreur de copie dans les manuscrits de Marco Polo, qui parlaient en réalité de Mogadiscio, selon Alfred Grandidier en 1892, que suit Paul Pelliot. Gabriel Ferrand, lui, y voyait « le pays des Madaqaš », et G. Mondain un mot malgache voulant dire « riche en nacre sacrée ».",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Madagascar",
+            "sources": [
+              {
+                "title": "Notes on Marco Polo, vol. II, notice 287 : Mogedaxo",
+                "author": "Paul Pelliot",
+                "year": 1963,
+                "url": "https://dsr.nii.ac.jp/toyobunko/III-2-F-c-104/V-2/page/0184.html.en",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "notice 287, pages 184 et 185 de l'édition numérique",
+                "notes": "Paris, Imprimerie nationale, sous les auspices de l'Académie des inscriptions et belles-lettres, ouvrage posthume. Lu dans le texte numérisé par la Toyo Bunko et le projet Digital Silk Road de l'Institut national d'informatique du Japon, le 3 novembre 2026 ; ce texte ne donne pas la pagination imprimée."
+              }
             ]
           }
         ]
@@ -177,6 +247,28 @@
                 "source_kind": "academic",
                 "page": "p. 1 et note 1",
                 "notes": "Communication au colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995, mise en ligne par l'IRD ; lue en texte intégral le 11 octobre 2026. L'autrice cite les Tantara ny Andriana recueillis par F. Callet."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "1993"
+            },
+            "era": "modern",
+            "statement": "Le parler merina est appelé « malgache officiel », écrit Claudine Bavoux en 1993. Il se partage les usages avec les autres parlers de l'île, et le français domine l'un et les autres. Elle juge difficile d'unifier le pays autour de ce seul parler.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le problème de l'émergence d'une langue nationale dans une situation post-coloniale vu à travers le cas malgache",
+                "author": "Claudine Bavoux",
+                "year": 1993,
+                "url": "https://univ-reunion.hal.science/hal-02170723/document",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 94 et p. 100",
+                "notes": "Dans La lexicographie variationniste en situation de contact, actes du colloque de Saint-Denis de La Réunion, juillet 1993, p. 93-104. Texte lu en entier dans l'archive HAL le 3 novembre 2026."
               }
             ]
           },
@@ -228,7 +320,7 @@
     ]
   },
   "content": {
-    "vehicularRole": null,
+    "vehicularRole": "national_official",
     "dialects": [
       "Antaimoro",
       "Antambohoaka",
@@ -238,15 +330,62 @@
       "Sihanaka",
       "Tañala"
     ],
-    "vitalityStatus": null,
+    "vitalityStatus": {
+      "status": "National",
+      "scale": "EGIDS (Ethnologue)",
+      "asOf": 2025
+    },
+    "originDebated": true,
     "sources": [
       {
         "title": "Glottolog 5.3 — Malagasy (Merina) (plat1254)",
         "url": "https://glottolog.org/resource/languoid/id/plat1254",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Glottolog name: Plateau Malagasy; classification includes Austronesian. Les dialectes listés sont les sous-languoids que Glottolog rattache à plat1254, hors languoids portant leur propre code ISO 639-3."
+        "notes": "Glottolog nomme la langue Plateau Malagasy et la classe dans les langues austronésiennes. Les dialectes listés sont les sous-languoids que Glottolog rattache à plat1254, hors languoids portant leur propre code ISO 639-3. La notice, lue le 3 novembre 2026, reprend l'appréciation d'Ethnologue 2025 : niveau 1 de l'échelle EGIDS, langue nationale prévue par la Constitution, d'usage limité dans l'enseignement supérieur."
+      },
+      {
+        "title": "Constitution de la IVe République de Madagascar, 11 décembre 2010, article 4",
+        "url": "https://mjp.univ-perp.fr/constit/mg2010.htm",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte lu sur la Digithèque de la Faculté de droit de Perpignan le 11 octobre 2026. L'article 4 fait du malagasy la langue nationale, et du malagasy et du français les langues officielles."
+      },
+      {
+        "title": "Le problème de l'émergence d'une langue nationale dans une situation post-coloniale vu à travers le cas malgache",
+        "url": "https://univ-reunion.hal.science/hal-02170723/document",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Dans La lexicographie variationniste en situation de contact, actes du colloque de Saint-Denis de La Réunion, juillet 1993, p. 93-104. Texte lu en entier dans l'archive HAL le 3 novembre 2026."
+      },
+      {
+        "title": "Notes on Marco Polo, vol. II, notice 287 : Mogedaxo",
+        "url": "https://dsr.nii.ac.jp/toyobunko/III-2-F-c-104/V-2/page/0184.html.en",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Paris, Imprimerie nationale, sous les auspices de l'Académie des inscriptions et belles-lettres, ouvrage posthume. Lu dans le texte numérisé par la Toyo Bunko et le projet Digital Silk Road de l'Institut national d'informatique du Japon, le 3 novembre 2026 ; ce texte ne donne pas la pagination imprimée."
+      },
+      {
+        "title": "Résultats globaux du recensement général de la population et de l'habitation de 2018 de Madagascar (RGPH-3), tableaux statistiques",
+        "url": "https://www.instat.mg/documents/upload/main/INSTAT_RGPH3-Definitif-ResultatsGlogaux-Tome2_17-2021.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Antananarivo, décembre 2020, tome 2 ; lu le 3 novembre 2026. Le recensement de 2018 compte 25 674 196 habitants. Ses tableaux ne comptent ni les langues ni les parlers de chacun."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers",
+        "reason": "Le recensement de Madagascar de 2018 compte 25 674 196 habitants, mais il ne compte pas les langues que parlent les gens. Nous n'avons pas trouvé d'autre chiffre établi pour le malgache ni pour le parler merina."
+      },
+      {
+        "field": "nameHistory.names[1]",
+        "reason": "Nous n'avons pas trouvé d'étude qui explique comment le français est passé de « Madécasse » à « malgache ». Nous avons cherché dans Persée, OpenEdition et HAL."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Le malagasy, ou malgache, est la langue nationale de Madagascar et l'une de ses deux langues officielles, avec le français.",
+      "followUp": "D'où vient le nom Madagascar, qui a donné son nom à la langue ?"
+    }
   }
 }
