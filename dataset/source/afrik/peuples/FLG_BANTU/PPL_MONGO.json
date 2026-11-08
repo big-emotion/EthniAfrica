@@ -127,6 +127,24 @@
         "url": null,
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Glottolog — Mongo (lomongo)",
+        "author": "Glottolog (Max Planck Institute for Evolutionary Anthropology)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/mong1338",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche lue le 8 novembre 2026 : la langue mongo, ou mongo-nkundu (code ISO lol), est parlée en République démocratique du Congo ; autres noms : Lomongo, Mongo-Nkundu. Son statut de menace est « non menacée »."
+      },
+      {
+        "title": "Mongo",
+        "author": "Ronald Johnson, Encyclopedia of World Cultures (Gale), publié sur Encyclopedia.com",
+        "year": null,
+        "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/mongo",
+        "tier": "referenced",
+        "source_kind": "encyclopedia",
+        "notes": "Entrée lue le 8 novembre 2026 : les Mongo vivent dans la cuvette du Congo, où l'installation aurait commencé vers le Ier siècle de notre ère. L'unité de base est l'enclos familial (etuka) de 20 à 40 personnes ; les villages de 100 à 300 personnes sont dirigés par un conseil d'anciens et un chef (bokulaka). L'entrée compte environ 3 200 000 locuteurs pour l'ensemble des langues mongo."
       }
     ]
   },

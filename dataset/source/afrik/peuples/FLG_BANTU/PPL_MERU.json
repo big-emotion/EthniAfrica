@@ -129,6 +129,34 @@
         "url": null,
         "tier": "needs_review",
         "source_kind": "academic"
+      },
+      {
+        "title": "Glottolog — Meru (kimeru)",
+        "author": "Glottolog (Max Planck Institute for Evolutionary Anthropology)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/meru1245",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche lue le 8 novembre 2026 : la langue meru (code ISO mer) est parlée au Kenya ; ses autres noms sont Kimeru et Meru."
+      },
+      {
+        "title": "Early history of the Meru of Mt Kenya",
+        "author": "Jeffrey A. Fadiman",
+        "year": 1973,
+        "url": "https://library.au.int/node/260132",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 9-27",
+        "notes": "Notice lue le 8 novembre 2026 dans la bibliothèque de l'Union africaine : article du Journal of African History, vol. 14, n° 1. Les traditions orales situent l'origine des Meru sur l'île de Manda, au large de la côte kényane ; ils auraient fui une conquête au début du XVIIIe siècle, puis migré pendant une trentaine d'années vers les pentes du mont Kenya. L'auteur ne trouve pas de lien démontré avec les migrations bantoues parties de Shungwaya."
+      },
+      {
+        "title": "Meru",
+        "author": "Catherine S. Dolan, Encyclopedia of World Cultures Supplement (Gale), publié sur Encyclopedia.com",
+        "year": null,
+        "url": "https://www.encyclopedia.com/places/africa/kenyan-political-geography/meru",
+        "tier": "referenced",
+        "source_kind": "encyclopedia",
+        "notes": "Entrée lue le 8 novembre 2026 : les Meru forment neuf sous-groupes (Igembe, Tigania, Imenti, Miutini, Igoji, Tharaka, Chuka, Muthambi, Mwimbi) qui parlent tous le kimeru. L'explication d'origine la plus répandue est la tradition de l'île de Mbwa, vers 1700, avec une arrivée au pied du mont Kenya dans les années 1730 ; l'entrée précise que d'autres avis existent. Le conseil d'anciens Njuri Ncheke y est décrit comme le plus haut des trois conseils."
       }
     ]
   },

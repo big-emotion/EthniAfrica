@@ -116,6 +116,34 @@
         "url": null,
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Glottolog — Mbukushu",
+        "author": "Glottolog (Max Planck Institute for Evolutionary Anthropology)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/mbuk1240",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche lue le 8 novembre 2026 : la langue mbukushu (code ISO mhw) est parlée en Angola, au Botswana, en Namibie et en Zambie. Autres noms : Mambukush, Mbukuhu, Thimbukushu, Gova, Kusso."
+      },
+      {
+        "title": "The Kavango peoples",
+        "author": "Gordon D. Gibson, Thomas John Larson et Cecilia R. McGurk",
+        "year": 1981,
+        "url": "https://glottolog.org/resource/reference/id/14790",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 211-268",
+        "notes": "Notice bibliographique lue le 8 novembre 2026 dans Glottolog : ouvrage de 275 pages publié à Wiesbaden (Franz Steiner Verlag), avec un chapitre « The Mbukushu » de Larson. Nous n'avons pas lu le texte du chapitre."
+      },
+      {
+        "title": "The History of Namibia's Hambukushu detailed",
+        "author": "The Namibian (compte rendu du livre de Maria Fisch)",
+        "year": 2022,
+        "url": "https://www.namibian.com.na/the-history-of-namibias-hambukushu-detailed",
+        "tier": "referenced",
+        "source_kind": "press",
+        "notes": "Article lu le 8 novembre 2026 : il présente le livre de Maria Fisch, qui s'appuie sur les récits de vieux Hambukushu recueillis par Joseph Wüst entre 1921 et 1939. Le livre place le premier foyer à Mussuma, un séjour à Ditomboro, puis l'installation le long de l'Okavango vers 1800."
       }
     ]
   },
