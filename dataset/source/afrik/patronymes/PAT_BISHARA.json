@@ -24,14 +24,20 @@
     "oralTraditions": [],
     "writtenChronicles": [],
     "historicalSyntheses": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Le nom Bishara s'écrit comme le mot arabe bishāra, que le dictionnaire de Lane traduit par « bonne nouvelle » (« glad tidings, good news »). Le Dictionary of American Family Names donne la même explication du nom. Le dictionnaire de Lane décrit le mot arabe, non le nom de personne.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["lane-bishara-1863", "dafn-bishara"]
+      }
+    ]
   },
   "peoples": [],
   "countries": [
     {
       "countryId": "EGY",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "dafn-bishara"]
     }
   ],
   "alliances": [],
@@ -46,6 +52,22 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "lane-bishara-1863",
+      "title": "An Arabic-English Lexicon, entrée بُشْرَى (bushrā), qui traite aussi de بِشَارَةٌ (bishāra)",
+      "url": "https://www.laneslexicon.com/word/%D8%A8%D8%B4%D8%B1%D9%89/n2598",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Edward William Lane, An Arabic-English Lexicon, Londres, 1863-1893 ; transcription en ligne lue le 8 novembre 2026. L'entrée donne bishāra parmi les noms tirés du verbe bashshara : « a joyful annunciation ; joyful, or glad, tidings ; good news », et précise que le mot, employé seul, ne se rapporte qu'à une bonne nouvelle."
+    },
+    {
+      "sourceKey": "dafn-bishara",
+      "title": "Dictionary of American Family Names, 2e éd. — Bishara",
+      "url": "https://www.ancestry.com/last-name-meaning/bishara?geo-lang=en",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Notice déjà utilisée dans l'historique du nom : bishāra, « bonne nouvelle » ; nom personnel surtout égyptien, porté le plus souvent par des chrétiens."
     }
   ],
   "gaps": [
@@ -55,27 +77,27 @@
     },
     {
       "fieldPath": "alliances",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Le dictionnaire de Lane et la notice du Dictionary of American Family Names ne parlent d'aucune alliance, et aucune autre source consacrée à ce point n'a été trouvée pour Bishara."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les deux sources lues ne rattachent à Bishara aucune fonction sociale héréditaire ; aucune autre source consacrée n'a été trouvée."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les personnes nommées Bishara qui apparaissent dans les recherches sont des contemporains. Aucun porteur décédé n'est documenté ici par une source consacrée, et nos fiches n'ont pas de notice de personne à relier."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Aucun homonyme d'origine distincte n'est établi. Un site de prénoms donne aussi à Bishara un sens swahili ou somali (« bonne nouvelle ») ; il n'indique pas ses sources et n'est pas retenu."
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Le dictionnaire de noms de famille décrit Bishara comme un nom de personne, sans dire comment il passe d'une génération à l'autre. Nous ne le déduisons pas."
     },
     {
       "fieldPath": "peoples",
-      "reason": "Nos fiches ne permettent pas encore de relier le nom Bishara à un peuple en Égypte. Nous n'avons pas encore consulté de source consacrée à ce nom. Un lien avec les Coptes d'Égypte reste à étudier."
+      "reason": "Le dictionnaire de noms de famille situe le nom surtout en Égypte et chez les chrétiens, sans nommer de peuple. Un lien avec les Coptes d'Égypte n'est pas établi par les sources lues."
     }
   ],
   "nameHistory": {
