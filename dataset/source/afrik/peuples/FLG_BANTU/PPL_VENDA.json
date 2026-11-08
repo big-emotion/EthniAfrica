@@ -240,7 +240,7 @@
     "demography": {
       "totalPopulation": 1200000,
       "referenceYear": 2025,
-      "source": "Kruger Park Africa : ~875 000 locuteurs de Tshivenda en Afrique du Sud. Minority Rights Group : ~1,5 million de VhaVenda en Afrique du Sud. Nomad Africa Magazine : 700 000 en Limpopo Province. Estimations 2025 (projection) toutes zones : environ 1,2 million.",
+      "source": "Statistics South Africa, recensement 2022 (tableau 2.8) : 2,5 % des 62 027 503 habitants parlent surtout le tshivenda dans leur ménage, soit environ 1,55 million de personnes (calcul du projet) ; le tableau 2.9 donne 17,4 % de la province du Limpopo. Cette mesure porte sur la langue du ménage, pas sur l’appartenance au peuple. Les chiffres de totalPopulation et de la répartition par pays ci-dessous sont une estimation antérieure (autour de 1,2 million), plus basse que le recensement, à réviser par un modérateur. Aucun chiffre pour le Zimbabwe n’a été lu dans une source statistique : lacune.",
       "distributionByCountry": [
         {
           "country": "ZAF",
@@ -282,6 +282,12 @@
         "url": "https://www.ethnologue.com/language/ven/",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Statistics South Africa, Census 2022 Statistical Release (P0301.4), 2023, tableau 2.8",
+        "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics"
       }
     ]
   }
