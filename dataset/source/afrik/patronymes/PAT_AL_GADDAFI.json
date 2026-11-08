@@ -87,6 +87,30 @@
       "tier": "official",
       "source_kind": "linguistic_reference",
       "notes": "Guide officiel suédois de transcription consulté le 2 septembre 2026. Il donne Qadhdhāfi comme translittération et explique que Gaddafi reflète la prononciation libyenne locale ; il ne propose pas d’étymologie familiale."
+    },
+    {
+      "sourceKey": "aawsat-sirte-2021",
+      "title": "Sirte: From Al-Ghardabiya to ISIS, Through the Rise and Fall of Gaddafi",
+      "url": "https://english.aawsat.com/node/2844351",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Article d'Asharq Al-Awsat du 6 mars 2021, lu le 14 octobre 2026 : « Gaddafi transformed Sirte - the stronghold of his Qadhadhfa tribe - from a small marginal town on the Libyan coast [...] ». L'article ne parle pas du sens du nom."
+    },
+    {
+      "sourceKey": "translitterature-souk",
+      "title": "Translittérer en caractères latins : Le grand souk",
+      "url": "https://www.translitterature.fr/Doc/article_436.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Translittérature, n° 26, dossier « Translittérer en caractères latins », p. 47-52, lu le 14 octobre 2026. Page 50 : le français confondait traditionnellement le qâf arabe avec le kâf, « ou Kadhafi pour le colonel libyen (graphies du Robert) ». Le numéro est daté de la fin 2003 ou du début 2004 ; nous n'avons pas trouvé sa date exacte."
+    },
+    {
+      "sourceKey": "westminster-ghiryani",
+      "title": "Tribe, Islam and State in Libya: Analytical Study of the Roots of the Libyan Tribal Society and Interaction up to the Qaramanli Rule (1711-1835)",
+      "url": "https://westminsterresearch.westminster.ac.uk/download/926d7d076329ed28eba6c6893c17630fb1ec633a9e37b4a2ac4ea32394f484ed/19198678/Najem.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Thèse de doctorat, Université de Westminster, 2004, lue le 14 octobre 2026 dans le dépôt WestminsterResearch. Page 150 : « It is said that the Gadhädhfa tribe in Libya are descendants of the \"sainted\" Qadhäf al-Dam whose descent is assumed to be of Müsa al-Käzim. Qadhaf al-Dam is buried in al-Küre valley near Ghiryän, but his descendants live in the wasteland of Sirt. » La note 85 renvoie à al-Tayyib, Mawsūʿat al-qabāʾil al-ʿarabiyya, vol. 1, p. 899-901."
     }
   ],
   "gaps": [
@@ -124,7 +148,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom Al-Gaddafi est un nom libyen, porté notamment par Muammar Gaddafi, que la presse rattache à la tribu des Qadhadhfa, dont Syrte est le bastion. Il se lirait « de la tribu Qadhadhfa » : c'est notre lecture. On l'écrit aussi Kadhafi en français. On ne sait pas avec certitude depuis quand il est écrit.",
+    "summary": "Le nom Al-Gaddafi est un nom libyen, porté notamment par Muammar Gaddafi, que la presse rattache à la tribu des Qadhadhfa, dont Syrte est le bastion. Il se lirait « de la tribu Qadhadhfa » : c’est notre hypothèse. On l'écrit aussi Kadhafi en français. On ne sait pas avec certitude depuis quand il est écrit.",
     "names": [
       {
         "nameText": "Al-Gaddafi",
@@ -180,9 +204,9 @@
             "period": {
               "from": null,
               "to": null,
-              "label": "Lecture du projet d'après un journal"
+              "label": "Hypothèse du projet d'après un journal"
             },
-            "statement": "Le nom Al-Gaddafi viendrait du nom de la tribu des Qadhadhfa : il aurait la forme d'un nom d'origine, qui dit « de la tribu Qadhadhfa ». C'est la lecture que nous en faisons : aucune source lue ne l'énonce, et le journal cité nomme seulement la tribu de Muammar Gaddafi.",
+            "statement": "Le nom Al-Gaddafi viendrait du nom de la tribu des Qadhadhfa : il aurait la forme d'un nom d'origine, qui dit « de la tribu Qadhadhfa ». C'est l'hypothèse que nous en faisons : aucune source lue ne l'énonce, et le journal cité nomme seulement la tribu de Muammar Gaddafi.",
             "hypothesisGroup": "origine du nom Al-Gaddafi",
             "sources": [
               {
