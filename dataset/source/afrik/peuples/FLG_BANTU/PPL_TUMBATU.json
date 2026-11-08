@@ -19,7 +19,7 @@
     "ethnicities": ["Tumbatu", "Shirazi"],
     "origins": {
       "ancientOrigins": "Les ancetres des Tumbatu font partie des premieres populations a s'etre installees a Zanzibar, arrivant du continent africain (region des Grands Lacs) il y a environ 2 000 a 4 000 ans. Les premieres traces d'occupation humaine sur l'ile Tumbatu remontent a 2 000 ans selon les donnees archeologiques. La tradition orale revendique une ascendance persane: des marchands et aristocrates de la ville de Chiraz (Perse, actuel Iran) seraient arrives au 9e siecle et se seraient melanges avec les populations africaines locales pour former la civilisation swahilie.",
-      "formationPeriod": "La cite de Tumbatu s'est developpee comme centre commercial majeur de la cote swahilie entre le 12e et le 15e siecle, a l'apogee des echanges dans l'ocean Indien. Elle constituait un centre de rang superieur dans le reseau des cites-etats swahilies, engagee dans le commerce avec d'autres ports de l'ocean Indien.",
+      "formationPeriod": "La ville de Tumbatu, sur la côte sud-est de l’île, est datée du XIIe au XIVe siècle par l’archéologue Mark Horton, selon Henriette Rødland (2018). Les fouilles de 2017 y ont montré une cité marchande aisée, probablement liée à Mkokotoni, de l’autre côté du chenal. Rødland n’y trouve guère de signes de fabrication sur place.",
       "migrationRoutes": [
         "Arrivee initiale depuis le continent africain (region des Grands Lacs) il y a 2 000 a 4 000 ans",
         "Vague persane revendiquee au 9e siecle (tradition orale Shirazi)",
@@ -104,6 +104,12 @@
         "title": "Masai Mara Migration Safaris, History of Zanzibar",
         "url": "https://www.masaimaramigration.com/safari-guide/history-of-zanzibar/",
         "tier": "unverified"
+      },
+      {
+        "title": "Henriette Rødland, Preliminary Report from Archaeological Survey on Tumbatu Island, Zanzibar Archipelago, Tanzania, Nyame Akuma 89, 2018",
+        "url": "https://static1.squarespace.com/static/5bd0e66f8d97400eb0099556/t/61173ade1e226b077caffd8d/1628912353026/Nyame+Akuma+Issue+089-5+Rodland.pdf",
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   },
@@ -194,6 +200,16 @@
                 "source_kind": "archive",
                 "page": "p. 25",
                 "notes": "Londres, Tinsley Brothers, 1872. Burton date Yakut du « early 13th century » ; il ne donne pas l'ouvrage de Yakut. Lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              },
+              {
+                "title": "Preliminary Report from Archaeological Survey on Tumbatu Island, Zanzibar Archipelago, Tanzania",
+                "author": "Henriette Rødland",
+                "year": 2018,
+                "url": "https://static1.squarespace.com/static/5bd0e66f8d97400eb0099556/t/61173ade1e226b077caffd8d/1628912353026/Nyame+Akuma+Issue+089-5+Rodland.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 29",
+                "notes": "Nyame Akuma n° 89, juin 2018. Rødland écrit que la seule référence historique au site vient de Yakut, voyageur arabe du XIIIe siècle, qui appelle la région « Tumbat » (d’après Pearce 1920 : 47). Lu dans le PDF le 8 novembre 2026 ; Yakut lui-même n’a pas été lu."
               }
             ]
           },
