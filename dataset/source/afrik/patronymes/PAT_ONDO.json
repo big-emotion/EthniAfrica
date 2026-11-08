@@ -43,14 +43,14 @@
     {
       "peopleId": "PPL_FANG",
       "status": "supposed",
-      "sourceRefs": ["forebears-ondo"]
+      "sourceRefs": ["forebears-ondo", "agyune-ndone-2006"]
     }
   ],
   "countries": [
     {
       "countryId": "GAB",
       "status": "attested",
-      "sourceRefs": ["forebears-ondo"]
+      "sourceRefs": ["forebears-ondo", "agyune-ndone-2006"]
     },
     {
       "countryId": "GNQ",
@@ -70,6 +70,30 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Base de répartition patronymique consultée directement. Elle atteste Ondo principalement en Guinée équatoriale et au Gabon, mais n'en donne pas la signification et précise que la géographie ne suffit pas à attribuer une appartenance ethnique."
+    },
+    {
+      "sourceKey": "agyune-ndone-2006",
+      "title": "Anthroponymie comparée makina, fang et saké : quelques spécificités sur les noms de personnes chez les Makina du Gabon",
+      "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Agyune%20Ndone_2006.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Article d'un doctorant en anthropologie (université Omar Bongo et université Lumière Lyon 2), non daté, mis en ligne sur la base du laboratoire Dynamique du langage ; il cite des travaux de 2005 et 2006. Lu le 13 octobre 2026. Le tableau n° 1 (page 5 du PDF) compare des noms de personnes fang, makina et saké du Gabon ; la liste fang compte Ona, Ondo, Oyane, Sima. L'auteur note que les noms de famille circulent presque toujours en circuit fermé, d'ascendant à descendant. L'article ne donne pas le sens de Ondo."
+    },
+    {
+      "sourceKey": "tessmann-pangwe-2",
+      "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 2",
+      "url": "https://archive.org/details/diepangwevlkerku02tess",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Berlin, Ernst Wasmuth, 1913 ; exemplaire numérisé d'archive.org, lu le 13 octobre 2026. Pages 375-376 (la numérotation de la numérisation laisse un doute entre les deux) : proverbe n° 12 en fang, « mö'n' akie'me in' ondö », traduit « das Kind Akieme Ondos » ; l'auteur explique que Akieme Ondo, « ein Essakudan », épousa une fille d'Essamongun et perdit sa femme faute d'avoir tout payé."
+    },
+    {
+      "sourceKey": "tessmann-pangwe-1",
+      "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+      "url": "https://archive.org/details/diepangwevlkerku01tess",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Berlin, Ernst Wasmuth, 1913 ; exemplaire numérisé d'archive.org, lu le 13 octobre 2026. Page 11 : la légende de la figure 6 d'une photographie, « Ondo aus Angönneuai (Fam. Omwang), Span. Guinea ». L'expédition de l'auteur chez les Pangwe, nom allemand des Fang, date de 1907-1909. Il ne dit pas si Ondo est un prénom ou un nom de famille."
     }
   ],
   "gaps": [

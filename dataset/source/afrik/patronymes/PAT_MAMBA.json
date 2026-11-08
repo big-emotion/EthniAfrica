@@ -25,7 +25,24 @@
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
+    "oralTraditions": [
+      {
+        "claimStatus": "claimed",
+        "sourceRefs": ["swohp-1970-logwaja-mamba"],
+        "carrier": "Logwaja Mamba, informateur du clan Mamba",
+        "collection": "not-stated",
+        "context": "Entretien du Swaziland Oral History Project, collection Bonner, texte en anglais ; date lue dans le nom du fichier : 15 juillet 1970 ; collecteur non nommé",
+        "claim": "Selon Logwaja Mamba, les Mamba se sont séparés des Dlamini de leur propre gré. Une jeune fille, enfant de Mbatshane, fut mariée au roi swazi ; elle s'appelait Mbikati et fut l'origine du clan Mamba, jusque-là Dlamini. C'est de là que vient le changement vers le nom Mamba."
+      },
+      {
+        "claimStatus": "claimed",
+        "sourceRefs": ["swohp-1970-logwaja-mamba"],
+        "carrier": "Logwaja Mamba, informateur du clan Mamba",
+        "collection": "not-stated",
+        "context": "Entretien du Swaziland Oral History Project, collection Bonner, texte en anglais ; date lue dans le nom du fichier : 15 juillet 1970 ; collecteur non nommé",
+        "claim": "Selon Logwaja Mamba, les Mamba sont nés avec les Ngwane. Deux frères, Dlamini et Hlubi, fils de Langa, devaient dépouiller deux bêtes ; le premier à finir serait héritier. Langa avait donné un couteau émoussé à l'aîné Dlamini et un couteau aiguisé à Hlubi, qui finit le premier et devint héritier du royaume. Les deux frères longèrent ensuite ensemble la chaîne des Lebombo jusqu'à leur lieu d'installation, au Swaziland."
+      }
+    ],
     "writtenChronicles": [],
     "historicalSyntheses": [],
     "linguisticReconstructions": []
@@ -100,13 +117,17 @@
       "tier": "referenced",
       "source_kind": "linguistic_reference",
       "notes": "Pietermaritzburg, 1861, lu dans la numérisation d'Internet Archive le 12 octobre 2026. Entrée « Mamba (Im), n. Very deadly snake »."
+    },
+    {
+      "sourceKey": "swohp-1970-logwaja-mamba",
+      "title": "Swaziland Oral History Project, collection Bonner : entretien avec Logwaja Mamba (clan Mamba), typescript revu",
+      "url": "https://emandulo.apc.uct.ac.za/collection/SWOHP/BONNER/35_Mamba_Logwaja/WITS_SWOHP_BON_19700715_edited_typescript_Mamba_Logwaja_A2760_A30_7_16.pdf",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Typescript revu d'un entretien oral conservé dans les archives numériques des bibliothèques de l'université du Witwatersrand (cote A2760, A30/7/16), lu en entier le 8 novembre 2026. La date du 15 juillet 1970 est lue dans le nom du fichier, et le typescript ne nomme pas la personne qui a mené l'entretien. L'informateur est Logwaja Mamba ; le texte est une rédaction en anglais, avec des erreurs de numérisation, non la parole enregistrée."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin.oralTraditions",
-      "reason": "Le recueil de Patricks donne le nom de louange du clan, recueilli auprès d'informateurs qu'il ne nomme pas, mais aucun récit d'origine daté, avec son transmetteur et sa transcription, n'a été trouvé pour le nom Mamba."
-    },
     {
       "fieldPath": "origin.writtenChronicles",
       "reason": "Aucune chronique ancienne expliquant l'origine du nom Mamba n'a été lue : le recensement de van Warmelo (1935) ne fait que le noter comme nom de clan d'un chef."
@@ -126,6 +147,10 @@
     {
       "fieldPath": "transmissionMode",
       "reason": "Le clan totémique ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+    },
+    {
+      "fieldPath": "origin.oralTraditions",
+      "reason": "Deux récits d'origine sont désormais enregistrés, tous deux de la même personne, Logwaja Mamba, dans un seul entretien ancien (1970). Il manque encore un second transmetteur, qui permettrait de les comparer, et le nom de la personne qui a recueilli l'entretien. Une recherche web n'a pas fourni d'autre entretien sur ce clan que nous ayons pu lire en entier."
     }
   ],
   "nameHistory": {
@@ -169,7 +194,7 @@
               "label": "Recueilli de 1976 à 2002"
             },
             "era": "modern",
-            "statement": "Le nom Mamba désigne un clan swazi dont les membres ne se marient pas avec les Ginindza ni avec les Mabuza, et dont le nom de louange commence par nkhosi, « seigneur », puis mamba. On ne sait pas avec certitude d'où vient le nom ; une lecture est présentée plus bas.",
+            "statement": "Le nom Mamba désigne un clan swazi dont les membres ne se marient pas avec les Ginindza ni avec les Mabuza, et dont le nom de louange commence par nkhosi, « seigneur », puis mamba. On ne sait pas avec certitude d'où vient le nom ; une explication est présentée plus bas.",
             "aspect": "meaning",
             "sources": [
               {
