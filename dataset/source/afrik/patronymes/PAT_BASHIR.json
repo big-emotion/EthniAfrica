@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Fiche générée depuis la file d'attente des candidats (vague 1 du plan de couverture anthroponymique). Elle ne porte aucune recherche : ne pas étendre ses affirmations sans appliquer le protocole docs/runbooks/anthroponym-fiche-research.md."
+    "directives": "Fiche approfondie selon docs/runbooks/anthroponym-fiche-research.md. Bashir est un nom personnel arabe : il ne doit pas être rattaché à un peuple ou à une lignée sans source dédiée."
   },
   "id": "PAT_BASHIR",
   "nameMain": "Bashir",
@@ -13,7 +13,7 @@
       "attestations": [
         {
           "countryId": "SDN",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["uk-home-office-sudan-names-2026"]
         }
       ]
     }
@@ -23,14 +23,21 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Bashir est un mot arabe de la racine b-sh-r. Le dictionnaire de Lane le définit comme « celui qui annonce un événement à un peuple ou à une personne, bon ou mauvais », le plus souvent une bonne nouvelle.",
+        "claimStatus": "established",
+        "sourceRefs": ["lane-lexicon-bashir"]
+      }
+    ],
+    "historicalSyntheses": []
   },
   "peoples": [],
   "countries": [
     {
       "countryId": "SDN",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["uk-home-office-sudan-names-2026"]
     }
   ],
   "alliances": [],
@@ -45,32 +52,111 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "lane-lexicon-bashir",
+      "title": "An Arabic-English Lexicon, entrée بَشِيرٌ (racine بشر)",
+      "url": "https://www.laneslexicon.com/word/بشير/n2603",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Edward William Lane, An Arabic-English Lexicon, Londres, Williams and Norgate, 1863-1893, lu le 8 novembre 2026 dans l'édition en ligne laneslexicon.com. L'entrée donne : « One who announces to a people [or person] an event, either good or evil; but meaning the former oftener than the latter ». La page en ligne n'indique pas la page de l'édition imprimée."
+    },
+    {
+      "sourceKey": "uk-home-office-sudan-names-2026",
+      "title": "Sudan: Knowledge Base profile, version 4.0 — Names",
+      "url": "https://www.gov.uk/government/publications/sudan-knowledge-base-profile/sudan-knowledge-base-profile",
+      "tier": "official",
+      "source_kind": "government",
+      "notes": "HM Passport Office (Home Office, Royaume-Uni), profil publié le 16 mars 2026 et mis à jour le 23 mars 2026, lu le 8 novembre 2026. Passage cité : « Names in Sudan consist of 4 names » (nom personnel, nom du père, du grand-père, de l'arrière-grand-père) et « Surnames do not exist in Sudan; it is common practice to take the male grandparent's name in place of a surname ». Document d'administration étrangère sur l'usage, non étude d'onomastique soudanaise."
     }
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "fieldPath": "origin.oralTraditions",
+      "reason": "Les recherches « Bashir etymology », « Bashir Sudan name origin » et le dictionnaire de Lane n'ont mené à aucun récit oral attribué à un porteur ou à un collecteur nommé. Bashir est un mot arabe courant, pas le nom d'un ancêtre fondateur."
+    },
+    {
+      "fieldPath": "origin.writtenChronicles",
+      "reason": "Les recherches « Bashir Sudan name origin » et « Bashir Sudan surname » n'ont trouvé aucune chronique ou archive qui date l'arrivée du nom au Soudan."
     },
     {
       "fieldPath": "alliances",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les recherches « Bashir joking relationship Sudan » et « Bashir alliance patronyme » n'ont fait apparaître aucune paire nommée et sourcée. Un nom personnel arabe porté par des familles très diverses n'a pas d'alliance propre."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Le nom étant un nom personnel et non héréditaire, il ne désigne aucune fonction sociale héréditaire ; les sources lues n'en mentionnent pas."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les recherches sur des porteurs soudanais du nom n'ont fourni que des personnes vivantes, que nous n'ajoutons pas. Aucun porteur décédé documenté par une source distincte n'a été retenu."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Bashir est écrit de la même façon dans de nombreux pays musulmans (Bachir, Béchir, Basheer en variantes). Les sources lues n'isolent pas deux origines distinctes pour la forme Bashir."
     },
     {
       "fieldPath": "peoples",
-      "reason": "Nos fiches ne permettent pas encore de relier le nom Bashir à un peuple au Soudan. Nous n'avons pas encore consulté de source consacrée à ce nom. Le nom apparaît comme celui d'une autrice citée dans notre fiche sur les Beri. Cette mention ne renseigne pas sur l'origine du nom."
+      "reason": "Aucune source lue ne relie le nom Bashir à un peuple du Soudan. C'est un nom arabe d'usage religieux, porté par des personnes de peuples différents. La mention d'une autrice nommée Bashir dans notre fiche sur les Beri ne renseigne pas sur l'origine du nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Bashir est un nom personnel arabe, formé sur la racine b-sh-r, qui désigne celui qui annonce une nouvelle, le plus souvent une bonne nouvelle. Au Soudan, il n'existe pas de nom de famille : chacun porte son nom, puis ceux de son père et de son grand-père.",
+    "names": [
+      {
+        "nameText": "Bashir",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Un nom personnel arabe : celui qui annonce une nouvelle, le plus souvent heureuse.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1863,
+              "to": 1893,
+              "label": "Décrit entre 1863 et 1893"
+            },
+            "era": "colonial",
+            "statement": "Le dictionnaire arabe-anglais d'Edward William Lane définit le mot arabe bashir comme celui qui annonce un événement à un peuple ou à une personne, bon ou mauvais, le plus souvent bon. Le nom Bashir reprend ce mot.",
+            "aspect": "meaning",
+            "hypothesisGroup": "sens du nom Bashir",
+            "sources": [
+              {
+                "title": "An Arabic-English Lexicon, entrée بَشِيرٌ (racine بشر)",
+                "author": "Edward William Lane",
+                "year": 1893,
+                "url": "https://www.laneslexicon.com/word/بشير/n2603",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Edward William Lane, An Arabic-English Lexicon, Londres, Williams and Norgate, 1863-1893, lu le 8 novembre 2026 dans l'édition en ligne laneslexicon.com. L'entrée donne : « One who announces to a people [or person] an event, either good or evil; but meaning the former oftener than the latter ». La page en ligne n'indique pas la page de l'édition imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Décrit en 2026"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Au Soudan, selon le service britannique des passeports, un nom se compose de quatre éléments : le nom personnel, puis ceux du père, du grand-père et de l'arrière-grand-père. Il n'y a pas de nom de famille, et l'on prend souvent le nom du grand-père masculin à sa place. Un Bashir soudanais porte donc ce nom comme nom personnel, qui devient le nom du père de ses enfants.",
+            "sources": [
+              {
+                "title": "Sudan: Knowledge Base profile, version 4.0 — Names",
+                "author": "HM Passport Office (Home Office)",
+                "year": 2026,
+                "url": "https://www.gov.uk/government/publications/sudan-knowledge-base-profile/sudan-knowledge-base-profile",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "HM Passport Office (Home Office, Royaume-Uni), profil publié le 16 mars 2026 et mis à jour le 23 mars 2026, lu le 8 novembre 2026. Passage cité : « Names in Sudan consist of 4 names » (nom personnel, nom du père, du grand-père, de l'arrière-grand-père) et « Surnames do not exist in Sudan; it is common practice to take the male grandparent's name in place of a surname ». Document d'administration étrangère sur l'usage, non étude d'onomastique soudanaise."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -1,0 +1,174 @@
+{
+  "description": "Proposals for the ai_generated sources of the premium surnames batch 13. Every entry is status proposed: the operator decides. An empty candidates list means no work stating the claim was opened and read in this session.",
+  "verifications": [
+    {
+      "fiche": "patronymes/PAT_BARBE.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BARBE; nameMain: Barbe; nameSystem: hereditary_family_name; transmissionMode: elective; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_BARROS.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BARROS; nameMain: Barros; nameSystem: clan_name; transmissionMode: bilateral; designatedSocialUnit: lineage",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_BASHIR.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BASHIR; nameMain: Bashir; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "An Arabic-English Lexicon, entrée بَشِيرٌ",
+          "author": "Edward William Lane",
+          "year": 1893,
+          "url": "https://www.laneslexicon.com/word/بشير/n2603",
+          "source_kind": "linguistic_reference",
+          "quote": "One who announces to a people [or person] an event, either good or evil; but meaning the former oftener than the latter",
+          "supports": "Establishes the Arabic meaning of the word bashir. It does not establish that the name is attested in Sudan or that it is non-hereditary there."
+        },
+        {
+          "title": "Sudan: Knowledge Base profile, version 4.0",
+          "author": "HM Passport Office (Home Office)",
+          "year": 2026,
+          "url": "https://www.gov.uk/government/publications/sudan-knowledge-base-profile/sudan-knowledge-base-profile",
+          "source_kind": "government",
+          "quote": "Surnames do not exist in Sudan; it is common practice to take the male grandparent's name in place of a surname.",
+          "supports": "Supports the non_hereditary_patronymic system and the individual social unit in Sudan. It does not mention the name Bashir."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_BEDIE.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BEDIE; nameMain: Bédié; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Côte d'Ivoire : L'ancien Président Henri Konan Bédié s'en est allé à l'âge de 89 ans",
+          "author": "Kouamé L.-Ph. Arnaud (Burkina24)",
+          "year": 2023,
+          "url": "https://burkina24.com/?p=334123",
+          "source_kind": "press",
+          "quote": "est né le 5 mai 1934 à Daoukro dans le centre de la Côte d'Ivoire",
+          "supports": "Places the one documented bearer in central Côte d'Ivoire. It does not mention the Baoulé people, a clan or the origin of the name, so it does not support clan_name or PPL_BAOULE."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_BEEHARRY.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BEEHARRY; nameMain: Beeharry; nameSystem: hereditary_family_name; transmissionMode: patrilineal; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_BEKELE.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BEKELE; nameMain: Bekele; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "How to quote Ethiopian authors in linguistic publications",
+          "author": "Ronny Meyer et Yvonne Treis",
+          "year": 2021,
+          "url": "https://journals.sub.uni-hamburg.de/hup1/afrikaunduebersee/article/download/222/168/710",
+          "source_kind": "academic",
+          "quote": "The father's or grandfather's names are not family names but simply given names of the respective individuals.",
+          "supports": "Supports nameSystem non_hereditary_patronymic, transmissionMode non_hereditary and designatedSocialUnit individual for Ethiopia. It names Kenenisa Bekele only as an example and says nothing on the meaning of Bekele."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_BELKACEM.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BELKACEM; nameMain: Belkacem; nameSystem: hereditary_family_name; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_BELL.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BELL; nameMain: Bell; nameSystem: clan_name; transmissionMode: patrilineal; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_BEMBA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BEMBA; nameMain: Bemba; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_BENALI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BENALI; nameMain: Benali; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    }
+  ]
+}
