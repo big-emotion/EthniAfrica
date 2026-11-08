@@ -208,14 +208,29 @@ The next episodes per series, in order. The strategist updates this table at
 each run: a published episode leaves it, a new one enters with its evidence.
 Fiche readiness was checked on 2026-10-13.
 
-| Series | Next episodes                                                                                    |
-| ------ | ------------------------------------------------------------------------------------------------ |
-| 1      | Burkina Faso (`BFA`) · Togo (`TGO`) · Gambie (`GMB`, six sources to review)                      |
-| 2      | Touareg (`PPL_TUAREG`) · Mossi (`PPL_MOSSI`) · Wolof (`PPL_WOLOF`, thin sources: research first) |
-| 3      | Yao and Kouassi (`PAT_YAO`, `PAT_KOUASSI`) · Touré (`PAT_TOURE`) · Diarra (`PAT_DIARRA`)         |
-| 4      | tribu · dialecte · indigène (no fiche: research first; each new `mot` needs the operator's word) |
-| 5      | Éwé (`PPL_EWE`) · Haoussa (`PPL_HAUSA`) · Mandingue                                              |
-| 6      | The six episodes listed under "How an episode is built"                                          |
+| Series | Next episodes                                                                                                                                                    |
+| ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1      | Burkina Faso (`BFA`) · Togo (`TGO`) · Gambie (`GMB`, six sources to review)                                                                                      |
+| 2      | Touareg (`PPL_TUAREG`) · Mossi (`PPL_MOSSI`) · Wolof (`PPL_WOLOF`, thin sources: research first)                                                                 |
+| 3      | Yao and Kouassi (`PAT_YAO`, `PAT_KOUASSI`) · Touré (`PAT_TOURE`) · Diarra (`PAT_DIARRA`)                                                                         |
+| 4      | dialecte · esclave (operator's word 2026-11-08; dated post 2026-12-02, see note) · indigène (no fiche: research first; each new `mot` needs the operator's word) |
+| 5      | Éwé (`PPL_EWE`) · Haoussa (`PPL_HAUSA`) · Mandingue                                                                                                              |
+| 6      | The six episodes listed under "How an episode is built"                                                                                                          |
+
+**Series 4 note, 2026-11-08.** « tribu » (episode 1) went out on 2026-10-27
+with a 3 min 46 cut on every network. Twelve days later it measured 63 TikTok
+views, 196 Instagram views, 317 Facebook views and 15 YouTube views. Two
+Meta etymology pieces about colonial words reached 196,172 views (« sauvage »,
+a translated third-party clip, 2026-10-10) and 111,143 views (« race »,
+2026-09-29). The format, the length and the hour all differ. The likeliest
+lead is the length: Instagram does not recommend a reel over 3 minutes to new
+audiences, and « Zaïre », posted the same day at 3 min 32, stayed at 588. The
+operator asked for « esclave » on 2026-11-08. It wears the series 4 band and
+campaign code but goes out on Wednesday 2026-12-02, the international day for
+the abolition of slavery, rather than in a Tuesday slot. The cut for Instagram,
+Facebook and TikTok stays under 3 minutes. The full story goes on YouTube as a
+regular video. The word gets a fiche (`WRD_ESCLAVE`) before posting, so its name
+address answers.
 
 ## Outside the series
 
