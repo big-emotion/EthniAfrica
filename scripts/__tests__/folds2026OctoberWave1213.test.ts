@@ -190,8 +190,8 @@ describe("what the keepers carry over", () => {
     const cameroon = JSON.parse(
       readFileSync(resolve(AFRIK, "pays/CMR.json"), "utf8")
     );
-    const kirdi = cameroon.content.majorPeoples.find(
-      (row: { name: string }) => row.name === "Kirdi"
+    const kirdi = cameroon.content.majorPeoples.find((row: { name: string }) =>
+      row.name.includes("Kirdi")
     );
 
     expect(kirdi.peopleId).toBeNull();

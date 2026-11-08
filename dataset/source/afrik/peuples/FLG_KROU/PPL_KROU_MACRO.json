@@ -8,122 +8,148 @@
     "appellations": {
       "mainName": "Krou",
       "selfAppellation": null,
-      "exonyms": [
-        "Kru",
-        "Kroo",
-        "Krao",
-        "Krawi",
-        "Crau",
+      "exonyms": ["Kru", "Kroo"],
+      "spellingAliases": [
+        "Krus",
+        "Croos",
         "Croo",
-        "Kuru",
-        "Krous",
-        "Wané"
+        "Krew",
+        "Crou",
+        "Kroomen",
+        "Croomen",
+        "Krumen",
+        "Krooboys"
       ],
-      "spellingAliases": ["Krus", "Croos"],
-      "originOfExonyms": "Le terme Krou (Kru, Kroo) est d'origine discutée. Il dériverait du nom propre Klao (ou Krao), l'autodesignation du peuple aujourd'hui appelé Klao ; la Britannica de 1911 y voit « Kraoh, le nom primitif de l'une de leurs tribus ». Dès 1588, une carte anglaise désigne la côte libérienne sous le terme Crua. Le terme a ensuite été étendu par les Européens à l'ensemble du groupe linguistique et culturel. Westermann (1952) notait que le terme était utilisé par les Européens pour désigner un ensemble de tribus parlant des dialectes apparentés. Une théorie populaire le dérivant de l'anglais crew (équipage de bateau) est largement considérée comme incorrecte.",
-      "whyProblematic": "Le terme Krou désigne à la fois un macro-groupe ethno-culturel et linguistique (famille Krou incluant les Bété, Dida, Wè, Klao, Grebo, Kroumen, Bassa, etc.) et parfois spécifiquement le peuple Klao du Liberia. Cette double acception crée des confusions. De plus, certains peuples inclus dans le groupe linguistique Krou (comme les Dida ou les Bassa) ne se reconnaissent pas nécessairement comme appartenant à une même identité ethnique pan-krou. Trois réalités portent ce nom sans se confondre : la famille de langues (fiche Krou), cet ensemble de peuples, et le peuple klao, dit aussi Kru, dont le nom propre serait à l'origine du mot. Les Kroumen sont les marins krou engagés sur les navires européens : leur nom désigne un métier autant qu'un peuple.",
-      "contemporaryUsage": "Le terme Krou est utilisé comme désignation du groupe ethno-linguistique dans la littérature académique, les institutions internationales (Ethnologue, Glottolog) et les administrations ivoirienne et libérienne. En Côte d'Ivoire, les Krou représentent environ 11% de la population nationale. Les peuples concernés utilisent généralement leurs propres appellations spécifiques plutôt qu'une identité pan-krou.",
-      "linguisticFamily": "FLG_KROU",
-      "ethnoLinguisticGroup": "Krou (famille ethno-linguistique Niger-Congo ou indépendante selon Glottolog)",
-      "historicalRegion": "Forêts et littoral atlantique de l'Afrique de l'Ouest, entre le fleuve Cavally (frontière CIV-LBR) et le fleuve Bandama (CIV), et vers l'est du Liberia",
-      "currentCountries": ["CIV", "LBR"]
+      "originOfExonyms": "Le mot Krou est attesté très tôt sur la côte du Liberia : en 1588 déjà, le marchand anglais James Welsh place un lieu nommé Crua au sud de la rivière Cestos, selon l'historien Jeffrey Gunn. Plusieurs explications du mot sont proposées. Il dériverait du nom propre Klao, ou Krao, le nom des habitants de Settra Kru, selon les historiens George Brooks et Ronald Davis, que cite Jeffrey Gunn ; la Britannica de 1911 le faisait déjà venir, « probablement », de Kraoh, le nom ancien de l'un de leurs groupes. Il viendrait aussi, selon une autre hypothèse, du mot anglais crew, « équipage », parce que les hommes de cette côte servaient sur les navires ; Jeffrey Gunn répond que la forme Crua est plus ancienne que ces engagements. Les navigateurs ont ensuite étendu le nom à d'autres peuples de la même famille de langues, selon Maurice Delafosse. En 1904, cet administrateur colonial l'a gardé pour toute la famille, parce que ces peuples n'avaient pas de mot commun pour se désigner tous.",
+      "whyProblematic": "Le nom Krou désigne plusieurs réalités qui ne se confondent pas. Il désigne d'abord un peuple de la côte, les Kru ou Klao, dans la région de Tabou en Côte d'Ivoire et sur une partie de la côte du Liberia. Il désigne aussi les Kroumen, les hommes engagés sur les navires européens. Il désigne enfin tout un ensemble de peuples dont les langues sont parentes, selon Pierre Boutin. Au Liberia, les communautés de langue krou du sud-est ont été rangées en trois catégories officielles, Grebo, Kru et Krahn. Ce découpage était arbitraire, et ces noms n'étaient pas ceux que les communautés se donnaient, selon l'étude Liberia: A Country Study, publiée en 1984.",
+      "contemporaryUsage": "En Côte d'Ivoire, le nom Krou désigne l'un des grands groupes ethniques du recensement de 2021, à côté des Akan, des Mandé du Nord, des Gur ou Voltaïques et des Mandé du Sud. Ce groupe réunit 9,1 % des Ivoiriens, selon l'Agence nationale de la statistique. Les peuples rangés sous ce nom portent chacun leur propre nom, comme les Bété, les Dida, les Wè, les Bakwé, les Grebo ou les Bassa, selon Maurice Delafosse en 1904 et le catalogue de langues Glottolog.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Bété (CIV, le plus nombreux, plus de 3 millions, 93 tribus)",
-      "Wè / Guéré (CIV et LBR, env. 700 000, civilisation des masques)",
-      "Wobé (CIV, sous-groupe wè du nord)",
-      "Dida (CIV, marches orientales du pays Krou)",
-      "Godié (CIV, zone côtière)",
-      "Néyo (CIV, littoral)",
-      "Bakwé (CIV, San Pedro)",
-      "Wané (CIV, San Pedro)",
-      "Kroumen / Krumen (CIV et LBR, marins côtiers)",
-      "Klao / Kru (LBR, marins et pêcheurs côtiers)",
-      "Grebo (LBR, côte orientale libérienne)",
-      "Krahn / Kran (LBR et CIV, proches des Wè)",
-      "Bassa (LBR, avec système d'écriture propre dit Vah)",
-      "Glio-Oubi (CIV)",
-      "Aïzi (CIV, zone lagunaire)",
-      "Nyabwa (CIV)",
-      "Kodia (CIV)",
-      "Gbii (LBR)",
-      "Sapo (LBR)",
-      "Konobo (LBR)"
+      "Bété",
+      "Dida",
+      "Godié",
+      "Néyo",
+      "Kouya",
+      "Kodia",
+      "Nyabwa",
+      "Aïzi",
+      "Bakwé",
+      "Wané",
+      "Glio-Oubi",
+      "Kroumen",
+      "Wè (Guéré et Wobé)",
+      "Krahn",
+      "Sapo",
+      "Grebo",
+      "Kru ou Klao",
+      "Bassa",
+      "Dé",
+      "Belle (Kuwaa)",
+      "Gbii"
     ],
     "origins": {
-      "ancientOrigins": "Les peuples Krou sont des populations autochtones de l'Afrique de l'Ouest forestière, installées dans les zones comprises entre le fleuve Cavally et le fleuve Bandama (CIV) et dans l'est libérien. Ils occupent environ 120 000 km2 de territoire forestier et côtier. L'hypothèse dominante est que l'ancêtre commun du groupe Krou originel habitait une région de l'Afrique de l'Ouest intérieure et a migré progressivement vers les zones forestières et côtières entre le XIVe et le XVIIe siècle. Certains chercheurs évoquent une possible origine depuis des régions plus lointaines (liée à des traditions orales sur une migration depuis le nord-est africain), mais ces récits ne sont pas corroborés par des données archéologiques ou linguistiques solides.",
-      "formationPeriod": "La formation du macro-groupe Krou dans sa configuration actuelle s'étale du XIVe au XVIIe siècle, période au cours de laquelle les différentes communautés se fixent dans leurs espaces actuels et développent leurs identités distinctes. L'intensification du contact avec les Européens à partir du XVe-XVIe siècle accélère certaines différenciations identitaires, notamment pour les groupes côtiers (Kroumen, Klao).",
+      "ancientOrigins": "Les peuples de langue krou vivaient déjà sur la côte et dans la forêt quand les navigateurs portugais longèrent cette côte, dans les années 1460 ; ces navigateurs comptaient sur les piroguiers du pays pour commercer avec leurs navires, selon l'historienne Megan Crutcher. Elle juge probable qu'une grande migration, aux XIVe et XVe siècles, ait conduit des groupes de langue krou vers les côtes du Liberia et de la Côte d'Ivoire. Pour les Kru de la côte du Liberia, les traditions recueillies dans les années 1850 par le révérend James Connelly font venir leurs ancêtres, les Claho, de l'intérieur ; Connelly date cette arrivée vers 1600, d'autres auteurs la placent de 250 à 400 ans plus tôt, selon Jeffrey Gunn.",
+      "formationPeriod": "Cet ensemble est un regroupement fondé sur la parenté des langues : Maurice Delafosse le décrit en 1904 comme une « famille » de tribus, et ces peuples ne se donnaient pas de nom commun. Le nom Krou, lui, s'est élargi au fil du temps. Aux XVIIIe et XIXe siècles, il en est venu à désigner aussi tous ceux qui travaillaient comme marins salariés sur les navires européens, selon Megan Crutcher.",
       "migrationRoutes": [
-        "Migration depuis les hautes terres guinéo-ivoiriennes et les plateaux intérieurs vers les forêts atlantiques, via les vallées du Sassandra, du Cavally et du Poor River (LBR)",
-        "Expansion vers le littoral atlantique (XIVe-XVIIe siècles) sous la pression des royaumes mandingues du nord",
-        "Dispersion maritime ultérieure des groupes côtiers (Kroumen, Klao) le long de toute la côte de l'Afrique de l'Ouest"
+        "Pour les Kru de la côte du Liberia, de l'intérieur vers la côte, d'abord dans la région bassa, puis le long du littoral jusqu'aux cinq villes situées entre les rivières Sinoe et Dubo, selon les traditions recueillies par James Connelly dans les années 1850, que rapporte Jeffrey Gunn.",
+        "Au XIXe siècle, des marins kru partent travailler dans les ports d'Afrique de l'Ouest et s'installent à Freetown, en Sierra Leone, puis jusqu'à Liverpool, au Royaume-Uni, selon Megan Crutcher."
       ],
       "historicalSettlementZones": [
-        "Zone forestière dense de l'Ouest ivoirien (entre Sassandra et Cavally)",
-        "Zone forestière du Centre-Ouest ivoirien (entre Sassandra et Bandama)",
-        "Littoral atlantique ivoirien (de Grand-Lahou à Tabou)",
-        "Est et Sud-Est du Liberia (comtés côtiers)",
-        "Zones lagunaires du littoral ivoirien (Aïzi, Avikam)"
+        "Le littoral, de l'ouest de la lagune de Grand-Lahou, en Côte d'Ivoire, jusqu'à l'embouchure de la Lofa, au Liberia, selon Maurice Delafosse en 1904.",
+        "La forêt de l'intérieur, jusqu'à une ligne qui passe vers 6° de latitude nord au niveau de Grand-Lahou et vers 7° 30' au niveau de Sassandra, selon Maurice Delafosse en 1904.",
+        "Une zone longue de plus de 800 km, des Dida aux Bassa, et large de plus de 300 km, des Wobé aux Grebo, selon Pierre Boutin."
       ],
-      "unificationsOrDivisions": "Le macro-groupe Krou n'a jamais cherché à former un Etat unifié ou fédératif. Il s'agit d'une famille culturelle et linguistique organisée en communautés et clans souverains. L'unité se manifeste dans le fond linguistique commun, les structures sociales similaires (filiation patrilinéaire, exogamie clanique, segmentarité), les pratiques rituelles partagées et une conception religieuse voisine. La division en une vingtaine d'ethnies (6 au Liberia, 15 en CIV) résulte d'évolutions historiques indépendantes sur plusieurs siècles.",
-      "externalInfluences": "Pression des royaumes mandingues (Mali, Mandé) ayant poussé les migrations Krou vers le sud. Contact avec les navigateurs portugais depuis les années 1460. Commerce triangulaire atlantique (traite négrière) : les peuples Krou côtiers ont joué un rôle d'intermédiaires et de résistants. Colonisation française (Côte d'Ivoire) et americo-libérienne : introduction des cultures commerciales, alphabétisation, christianisation. Guerres civiles libériennes (1989-2003) et crise ivoirienne (2002-2011) : déplacements massifs de populations Krou.",
-      "majorHistoricalEvents": "Migrations vers les forêts atlantiques (XIVe-XVIIe siècles). Résistance à la traite négrière (Klao, Kroumen). Collaboration avec la Royal Navy pour la suppression de la traite (XIXe siècle). Révolte Kru de 1915-1916 (Liberia). Intégration dans les structures coloniales françaises et americo-libériennes. Participation aux guerres civiles libériennes. Crise ivoirienne de l'Ouest (2002-2011) : peuples Wè durement touchés. George Weah (issu du peuple Klao/Kru), 25e président du Liberia (2018-2024)."
+      "unificationsOrDivisions": "Ces peuples n'ont jamais formé un seul État. Au Liberia, aucun des ensembles de communautés qui allaient former une catégorie officielle n'était organisé en une seule entité politique avant que le gouvernement ne contrôle l'intérieur, selon l'étude Liberia: A Country Study (1984). En 1904, Maurice Delafosse partage la famille en deux groupes, à peu près séparés par le fleuve Sassandra : les Bété à l'est et les Bakwé à l'ouest. Le catalogue Glottolog distingue lui aussi deux branches, le krou oriental et le grand krou occidental.",
+      "externalInfluences": "À partir des années 1780, les navires britanniques engagent régulièrement des hommes kru, au moment où le commerce de l'huile de palme et de la kola remplace peu à peu celui des esclaves, selon Megan Crutcher. Au Liberia, plusieurs peuples de langue krou voisins des peuples mandé, comme les Dé, les Belle et une partie des Bassa, ont adopté des formes du Poro et du Sande, les sociétés d'initiation des hommes et des femmes, selon l'étude Liberia: A Country Study (1984).",
+      "majorHistoricalEvents": "Au XIXe siècle, des marins kru servent sur les navires britanniques qui patrouillent contre la traite des esclaves, et d'autres travaillent sur des navires négriers, selon Megan Crutcher. Vers 1880, le travail agricole de l'île de Fernando Po, aujourd'hui Bioko, est presque entièrement fait par des travailleurs kru. En 1911, des marins kru font grève à Liverpool pour obtenir les mêmes salaires que les marins blancs. Elle mentionne aussi la révolte de la côte kru contre le gouvernement libérien, en 1915 et 1916."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Organisation segmentaire sans pouvoir central. Chaque groupe Krou (ethnie, tribu, clan, lignage) constitue une communauté souveraine. Les relations entre communautés sont régies par les lignages, les alliances matrimoniales et les échanges cérémoniels. Le système politique type comprend un chef villageois et un conseil d'anciens. La hiérarchie sociale va de l'ethnie aux tribus, clans, lignages majeurs et mineurs. Certains groupes côtiers (Kroumen, Klao) ont développé des organisations de compagnies maritimes sous headman.",
-      "clanOrganization": "Organisation patrilinéaire exogame commune à l'ensemble du macro-groupe Krou. Les chefs de clans et titulaires de certains offices forment des conseils de chefs. La propriété foncière est communale. La filiation est patrilinéaire et la résidence patrilocale dans la quasi-totalité des groupes, avec quelques exceptions (Dida, Bété orientaux influencés par les Akan).",
-      "ageClassSystems": "Des systèmes de classes d'âge sont documentés chez les Wè / Guéré (similaires aux Dan voisins) et chez les groupes côtiers (classes d'âge maritimes chez les Klao et Kroumen). Ces systèmes structurent la transmission des savoirs, le travail collectif et les activités rituelles.",
-      "roleOfLineages": "Les lignages patrilinéaires sont la structure de base de toute l'organisation sociale Krou. Ils déterminent l'identité, les droits fonciers, les obligations rituelles et les alliances. Chez les Krou, l'aîné du lignage représente l'autorité morale et pratique. L'organisation en hiérarchie de lignages (de l'ethnie au lignage moyen) constitue la base du système politique segmentaire.",
-      "religiousAuthority": "Conception religieuse commune : un dieu créateur unique, considéré trop distant pour être approché directement, nécessite des intermédiaires (esprits, ancêtres, masques). Les chefs religieux (prêtres traditionnels, devins, porteurs de masques) jouent un rôle central. Chez les Wè, le masque est l'intermédiaire spirituel principal. Les confréries Poro (sociétés secrètes masculines) sont présentes chez certains groupes Krou libériens voisins (Grebo, Bassa)."
+      "traditionalPoliticalSystem": "Chez les Kru de la côte du Liberia, la plus grande unité politique était le dako, un ensemble de villages, selon l'étude Liberia: A Country Study (1984), qui ajoute que cela vaut aussi pour les Grebo et les Krahn. Chaque dako avait un nom, qui servait de nom de peuple à ses membres. Le chef du dako, le krogba, « père de la ville », était choisi par les anciens des lignages, et un autre chef, le gbaubi, « père de l'armée », faisait contrepoids à son pouvoir, selon Jeffrey Gunn, qui s'appuie sur des recherches menées entre les années 1950 et 1970.",
+      "clanOrganization": "Chez les Kru de la côte du Liberia, chaque lignage, appelé panton, descend en ligne paternelle. Il est dirigé par son membre le plus âgé encore en état de le faire, le panton nyefue. Plusieurs panton vivent dans un même village, et un panton arrivé plus tard se place sous l'autorité du plus ancien, selon Jeffrey Gunn.",
+      "ageClassSystems": "Chez les Kru de la côte du Liberia, les hommes sont répartis en classes d'âge, les kofa, qui traversent les lignages : enfants, jeunes adultes et anciens, selon Jeffrey Gunn. L'entrée dans l'âge adulte passe par une initiation, le gbo, avec circoncision. Les jeunes hommes travaillent sur les champs des guerriers et servent de troupes auxiliaires. L'anthropologue Guenter Schroeder pense que ces équipes de jeunes, dirigées par l'un des leurs, ont pu donner naissance au système des chefs d'équipe sur les navires européens, ou l'inverse.",
+      "roleOfLineages": "Chez les Kru du Liberia, on appartient au dako et à l'un de ses villages le plus souvent par son père, selon l'étude Liberia: A Country Study (1984). Les anciens des lignages choisissent le chef du dako et peuvent le remplacer s'il ne remplit pas sa charge, selon Jeffrey Gunn.",
+      "religiousAuthority": "Chez les Kru de la côte du Liberia, la société d'initiation la plus souvent décrite s'appelle Bo. En 1856, le missionnaire John Leighton Wilson y distingue quatre classes : les anciens, les soldats, les plus jeunes et les guérisseurs. Parmi les anciens, le bodio est un grand prêtre qui garde les objets rituels, selon Jeffrey Gunn."
     },
     "languages": {
-      "mainLanguage": "Famille de langues Krou (Niger-Congo ou famille indépendante selon Glottolog)",
+      "mainLanguage": "Langues de la famille krou",
       "isoCodes": [
-        "bth",
-        "bwr",
-        "dik",
-        "gxx",
-        "grj",
-        "klu",
+        "bjw",
+        "hwa",
+        "btg",
         "kyf",
-        "ted",
+        "bev",
+        "god",
+        "bet",
+        "gie",
+        "dic",
+        "gud",
+        "ney",
+        "kwp",
+        "blh",
+        "ahm",
+        "ahi",
+        "oub",
         "pye",
         "ktj",
-        "nyr"
+        "ted",
+        "gry",
+        "grv",
+        "gec",
+        "gbo",
+        "grj",
+        "bsq",
+        "ggb",
+        "dee",
+        "klu",
+        "tja",
+        "glr",
+        "krn",
+        "krw",
+        "wob",
+        "gxx",
+        "wec",
+        "das",
+        "kqo",
+        "nwb"
       ],
       "dialects": [
-        "Branche Krou occidentale (LBR) : Klao (klu), Grebo (grj), Krumen (ted, pye, ktj), Glio-Oubi",
-        "Branche Krou orientale (CIV) : Bété (bth), Dida (dik), Wè méridional/Guéré (gxx), Godié, Néyo, Kouya (kyf), Nyabwa (nyr), Aïzi",
-        "Les langues krou sont comptées parmi les systèmes toniques les plus complexes d'Afrique, souvent comparées aux langues omotiques d'Ethiopie"
+        "Krou oriental, en Côte d'Ivoire : bakwé, wané, les parlers bété, kouya, godié, les parlers dida, néyo, kodia, kuwaa et les parlers aïzi, selon Glottolog.",
+        "Grand krou occidental, en Côte d'Ivoire et au Liberia : glio-oubi, les parlers krumen, les parlers grebo, bassa, gbii, dewoin, klao, tajuasohn, glaro-twabo, sapo, krahn, les parlers wè, daho-doo et nyabwa, selon Glottolog."
       ],
-      "vehicularRole": "Chaque langue Krou est la langue maternelle de son groupe. Le français (CIV) et l'anglais (LBR) sont les langues officielles. En CIV, un créole krou a fortement influencé le français populaire ivoirien. Au Liberia, le Kru English Pidgin (kreyol) est répandu. Le dioula est la langue commerciale régionale en CIV. Les langues krou sont tonales et complexes phonologiquement, rendant l'intercompréhension inter-ethnique difficile."
+      "vehicularRole": "Chaque peuple parle sa propre langue. En 1904, Maurice Delafosse note que les langues krou sont parmi les plus répandues de la côte, parce que des Kru, des Grebo et des Néyo y travaillent partout comme passeurs de barre ; il ajoute que presque tous les Kru de la côte qui voyagent comprennent le « Pigeon English ». Un locuteur de la langue de l'est ne comprend pas d'emblée un locuteur de la langue de l'ouest, mais il reconnaît beaucoup de mots, selon le même auteur."
+    },
+    "externalIdentifiers": {
+      "glottocode": "krua1234"
     },
     "culture": {
-      "majorRites": "Initiations masculines et féminines structurant le passage à l'âge adulte dans tous les groupes Krou. Chez les Wè : rites des hommes-panthères et circoncision. Chez les Kroumen : fête de la récolte du riz et funérailles en janvier. Chez les Wobé : luttes, concours de masques en février, fête des masques en juillet, invitation des hommes-panthères en septembre. Chez les Gnaboua (groupe Krou) : fête des masques en janvier et juillet, fête Alabwa. Rites funéraires élaborés universels dans l'ensemble du groupe, mobilisant d'importantes ressources communautaires.",
-      "symbols": "Les masques sont le symbole culturel central du macro-groupe Krou, particulièrement chez les Wè. La pirogue de surf est le symbole des Krou côtiers (Kroumen, Klao). Le tatouage facial indigo (arête du nez) des Klao/Kru est un symbole historique d'identité et de liberté. Les bracelets de fer des anciens (Klao) comme insignes d'autorité. La kola est le symbole des échanges et de l'hospitalité.",
-      "artsAndMusic": "Tradition majeure de sculpture de masques en bois chez les Wè (masques aux traits puissants, yeux tubulaires, ornements de cauris et clochettes). Musique de percussion (tambours, sanza, balafon). Danse bollo chez les Kroumen. Guitare kru : les Kroumen et Klao sont crédités d'avoir popularisé des styles de guitare à l'origine du highlife ghanéen. Poésie orale et épopées claniques. Art de la construction de pirogues de surf. Tissage, poterie féminine, forge.",
-      "spiritualities": "Croyances communes : un dieu créateur suprême (Nyesoa chez les Kru) trop distant, des esprits territoriaux, des esprits familiaux (âmes des ancêtres). Animisme profond, avec des variations culturelles importantes selon les groupes. Culte des ancêtres universel. Chez les Wè : cosmologie dualiste village / brousse avec le masque comme médiateur central. Chez les Kru côtiers : esprits marins. Christianisme (protestantisme, catholicisme) adopté progressivement depuis le XIXe siècle, souvent en syncrétisme avec les croyances traditionnelles."
+      "majorRites": "Chez les Kru de la côte du Liberia, l'initiation des jeunes hommes, le gbo, s'accompagne d'une circoncision. Elle se termine parfois par une attaque d'un village voisin, pour montrer la force des nouveaux adultes, selon Jeffrey Gunn.",
+      "symbols": "Les hommes de la côte portaient une marque tatouée, une raie noire qui partage le front verticalement, selon Maurice Delafosse en 1904. Les Européens la décrivent comme une bande sombre ou une flèche du front au nez. Elle servait à faire reconnaître les marins kru et à les protéger de l'esclavage, selon une hypothèse de Megan Crutcher.",
+      "artsAndMusic": "Les masques aux formes géométriques que les collections appellent « krou » n'ont jamais été vus en usage chez les Kru eux-mêmes. Ils semblent l'œuvre de plusieurs peuples de langue krou, les Bakwé, les Godié et autrefois les Néyo, selon Pierre Boutin. Les pirogues de mer de la côte avaient souvent moins d'un mètre de profondeur et passaient des vagues de cinq mètres ou plus, selon Megan Crutcher.",
+      "spiritualities": "Les Kru de la côte du Liberia priaient un dieu unique, Nyessoa, et lui offraient des sacrifices d'animaux sur le conseil de leurs prêtres, selon Jeffrey Gunn. Ils ont longtemps refusé le christianisme et ne s'y sont convertis qu'après le milieu du XIXe siècle."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Absence de royaumes centralisés dans l'ensemble du macro-groupe. Les Krou n'ont jamais constitué d'entité politique unifiée. Les groupes côtiers (Klao, Kroumen) ont exercé un pouvoir économique maritime dominant sur la côte de l'Afrique de l'Ouest pendant plusieurs siècles. Les Wè ont maintenu des confédérations guerrières pour la défense territoriale.",
-      "relationsWithNeighbors": "Relations complexes avec les Mandé (commerce de la kola, pressions esclavagistes historiques). Relations avec les Akan (Baoulé, Ashanti) : Dida et Bété ont adopté certains éléments de culture matrilinéaire akan. Les Dan (Yacouba) au nord partagent des similitudes artistiques avec les Wè. Les Krou ont eu des rapports de collaboration et de tensions avec les settlers americo-libériens du Liberia.",
-      "conflictsOrAlliances": "Résistance historique à la traite négrière (tatouage identitaire des Klao). Alliances avec la Royal Navy britannique contre la traite (XIXe siècle). Révoltes contre l'administration libérienne (1915-1916). Résistances à la colonisation française au début du XXe siècle. Les Wè (Guéré) impliqués dans la crise politico-militaire ivoirienne (2002-2011). Guerres civiles libériennes (1989-2003) : déplacements massifs des communautés Krou libériennes.",
-      "diaspora": "Diaspora maritime historique des Klao/Kru et Kroumen dans tous les ports de l'Afrique de l'Ouest. Kru Town à Freetown (Sierra Leone) et à Liverpool (UK). Diaspora contemporaine à Monrovia (Liberia) et Abidjan (CIV). Les Krou représentent environ 7% de la population libérienne et 11% de la population ivoirienne. Les guerres civiles libériennes ont créé des communautés de réfugiés krou en CIV et en Sierra Leone."
+      "kingdomsOrChiefdoms": "Aucun royaume ne réunissait ces peuples. Au Liberia, l'unité politique la plus large était beaucoup plus petite que ce que le gouvernement appelait une tribu, selon l'étude Liberia: A Country Study (1984). Chez les Kru, c'était le dako.",
+      "relationsWithNeighbors": "Au Liberia, des peuples de langue krou, comme les Dé, les Belle et une partie des Bassa, vivent mêlés aux peuples mandé et atlantiques et partagent avec eux le Poro et le Sande, selon l'étude Liberia: A Country Study (1984). En Côte d'Ivoire, les Néyo ont emprunté leurs masques aux Wè de la région de Man, selon Pierre Boutin.",
+      "conflictsOrAlliances": "Des marins kru ont travaillé à la fois sur les navires qui luttaient contre la traite et sur des navires négriers, selon Megan Crutcher. Au milieu du XIXe siècle, des Kru se sont opposés au gouvernement libérien quand il a voulu supprimer la traite, peut-être parce que cela limitait leur commerce avec les navires européens. D'autres révoltes contre le gouvernement libérien ont suivi au XXe siècle.",
+      "diaspora": "En 1904, Maurice Delafosse note que les Kru ont fondé de véritables colonies à Freetown, en Sierra Leone, et à Monrovia, où ils restent plusieurs années entre deux saisons sur les navires. Il existe un quartier kru à Freetown et un autre à Liverpool, au Royaume-Uni, selon Megan Crutcher."
     },
     "demography": {
-      "totalPopulation": 8000000,
-      "referenceYear": 2025,
-      "source": "VoyagesAventures.com : les Krou sont estimés à environ 8 millions, dont les Bété à plus de 3 millions en CIV. World Population Review CIV : les Krou représentent 11% de la population ivoirienne (env. 3,3 millions). Minority Rights Group LBR : Kru 7% de la population libérienne. Estimation 2025 intégrant tous les sous-groupes des deux pays.",
+      "totalPopulation": 2092097,
+      "referenceYear": 2021,
+      "source": "Agence nationale de la statistique de Côte d'Ivoire, recensement de 2021 : 2 092 097 Ivoiriens dans le groupe Krou, soit 9,1 % des Ivoiriens. Ce chiffre ne compte que les Ivoiriens ; nous n'avons pas encore de chiffre lu pour les peuples de langue krou du Liberia, qui ne sont donc pas inclus.",
       "distributionByCountry": [
         {
           "country": "CIV",
-          "population": 7000000,
-          "note": "Ensemble des groupes Krou ivoiriens : Bété (plus de 3 millions), Wè/Guéré, Dida, Godié, Bakwé, Kroumen, Wané, Néyo, Aïzi, Nyabwa, Kouya et autres (11% de la population ivoirienne)"
+          "population": 2092097,
+          "percentage": 9.1,
+          "note": "Ivoiriens du groupe Krou au recensement de 2021, dans le sud-ouest et le centre-ouest du pays."
         },
         {
           "country": "LBR",
-          "population": 1000000,
-          "note": "Ensemble des groupes Krou libériens : Klao/Kru (7%), Bassa (13,4%), Grebo (10%), Krahn (4%), Kroumen et autres (env. 40% de la population libérienne en comptant Bassa et Grebo)"
+          "population": null,
+          "note": "Peuples de langue krou du sud et du sud-est du Liberia ; nous n'avons pas encore de chiffre lu."
         }
       ]
     },
@@ -174,6 +200,64 @@
         "tier": "unverified",
         "source_kind": "encyclopedia",
         "notes": "Texte de l'édition de 1911, cité pour les graphies Krus, Croos, Kroomen et Krooboys."
+      },
+      {
+        "title": "‘For King and Empire’: The Changing Political, Economic, and Cultural Identities of Kru Mariners in Atlantic Africa, 1460–1945",
+        "url": "https://doi.org/10.1017/S0021853723000567",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "author": "Megan Crutcher",
+        "year": 2023,
+        "notes": "The Journal of African History, vol. 64, n° 3, 2023, p. 437-448, Cambridge University Press, article en accès libre. Lu le 3 novembre 2026, en entier. Appui pour l'histoire du nom : les noms Krumen, Kruman, Crew, Crewmen, Kroo, Krooboys, Krou, Kroumen, Kroah et Kru ont désigné ces marins (p. 439) ; une source anglaise de 1588 désigne la côte kru du Liberia par le terme « Crua » (p. 440). Appui pour les origines et l'histoire : arrivée des Portugais dans les années 1460, migration probable aux XIVe et XVe siècles (p. 439-440), embauche régulière à partir des années 1780, Fernando Po vers 1880 (p. 442-443), marque tatouée (p. 442), travail sur les navires négriers et lutte contre le gouvernement libérien (p. 444), quartiers kru de Freetown et de Liverpool, grève de 1911 (p. 446)."
+      },
+      {
+        "title": "Homeland, Diasporas and Labour Networks: The Case of Kru Workers, 1792-1900",
+        "url": "https://yorkspace.library.yorku.ca/bitstreams/2c05f6bf-dec9-4daa-b10d-af069cb37512/download",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse de doctorat en histoire de Jeffrey David Gunn, York University, 2019. Lu le 3 novembre 2026, pages imprimées 38 à 50. Appui pour l'origine du nom : Brooks et Davis rattachent le nom Kru à Krao ou Klao, nom des habitants de Settra Kru (p. 38-39) ; le marchand James Welsh signale un lieu nommé Crua en 1588 ; l'auteur en conclut que le nom n'a pas de lien avec le mot anglais crew (p. 40-42). Appui pour les traditions d'origine recueillies par Connelly (p. 39), pour l'organisation sociale (panton, dako, krogba, gbaubi, classes d'âge kofa, initiation gbo, p. 45-48) et pour la société Bo et la religion (Nyessoa, p. 49-50)."
+      },
+      {
+        "title": "Liberia: A Country Study",
+        "url": "https://archive.org/details/DTIC_ADA159331",
+        "tier": "referenced",
+        "source_kind": "government",
+        "author": "Harold D. Nelson (dir.), American University, Foreign Area Studies",
+        "year": 1984,
+        "notes": "Washington, Government Printing Office, Area Handbook Series, 1984. Lu le 3 novembre 2026 dans l'exemplaire numérisé de la bibliothèque DTIC sur archive.org ; la numérisation mêle l'ordre des pages et la page est celle du pied de page lu. Appui pour les noms et l'organisation politique : le regroupement des communautés de langue krou du sud-est en Grebo, Kru et Krahn était arbitraire, et ces noms n'étaient pas ceux des communautés (p. 92) ; aucune de ces communautés ne formait une seule entité politique (p. 94) ; chez les Kru, la plus grande unité était le dako, transmis en ligne paternelle (p. 95) ; avant la Seconde Guerre mondiale, des locuteurs de langues krou se disaient Kru pour être engagés (p. 96)."
+      },
+      {
+        "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+        "url": "https://archive.org/details/vocabulairescomp00delauoft",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Paris, Ernest Leroux, 1904, ouvrage de l'administrateur colonial Maurice Delafosse. Lu le 3 novembre 2026 dans le texte numérisé d'Internet Archive, p. 66-72. Appui pour l'aire d'habitat (p. 66), les graphies Kroo, Kru, Kroomen, Croomen et Krumen et la note sur le mot kra-po, « homme d'équipe, pagayeur » (p. 66-67), le partage en deux groupes bété et bakwé (p. 68), la liste des tribus (p. 68-72) et les colonies kru de Sierra Leone et de Monrovia (p. 72)."
+      },
+      {
+        "title": "Les masques « Krou » de Côte-d'Ivoire : de nouvelles sources d'informations",
+        "url": "https://journals.openedition.org/aaa/767",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "author": "Pierre Boutin",
+        "year": 2009,
+        "notes": "Afrique : Archéologie & Arts, n° 5, 2007-2009, p. 7-26, revue en ligne sur OpenEdition. Lu le 3 novembre 2026. Appui pour les sens du nom : le terme krou désigne le peuple krou de la région de Tabou et d'une enclave côtière du Liberia, le groupe des Kroumen et, par extension, tout l'ensemble des langues krou (paragraphe 15) ; zone de plus de 800 km sur 300 km (paragraphe 16). Appui pour les arts : les masques dits « krou » semblent l'œuvre des Bakwé, des Godié et autrefois des Néyo (résumé) ; les Néyo ont emprunté leurs masques aux Wè (paragraphe 53)."
+      },
+      {
+        "title": "Répartition des Ivoiriens par grand groupe ethnique selon le sexe, RGPH 2021",
+        "url": "https://data.gouv.ci/datasets/repartition-des-ivoiriens-par-grand-groupe-ethnique",
+        "tier": "official",
+        "source_kind": "government",
+        "author": "Agence nationale de la statistique (ANStat), Côte d'Ivoire",
+        "year": 2021,
+        "notes": "Portail officiel des données ouvertes de Côte d'Ivoire, jeu de données mis à jour le 11 mars 2026. Lu le 3 novembre 2026, présentation et tableau des huit lignes. Appui pour la démographie : la ligne Krou donne un effectif de 2 092 097 et une part de 9,1 % ; la présentation cite les groupes Akan, Mandé du Nord, Gur/Voltaïque, Krou et Mandé du Sud."
+      },
+      {
+        "title": "Glottolog 5.3 — Kru (krua1234)",
+        "url": "https://glottolog.org/resource/languoid/id/krua1234",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "notes": "Notice de la famille krou. Lu le 3 novembre 2026. Appui pour les langues : 38 langues, réparties en deux branches, le krou oriental et le grand krou occidental, avec leurs codes ISO 639-3."
       }
     ],
     "searchAnswer": {
@@ -216,6 +300,28 @@
           },
           {
             "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Rapportée en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Krou viendrait de Krao ou Klao, le nom d'origine des habitants de Settra Kru, sur la côte du Liberia, selon les historiens George Brooks et Ronald Davis, que cite Jeffrey Gunn. Les traditions orales kru tiennent Krao ou Klao pour leur nom d'origine, selon le même auteur.",
+            "hypothesisGroup": "origine du nom Krou",
+            "sources": [
+              {
+                "title": "Homeland, Diasporas and Labour Networks: The Case of Kru Workers, 1792-1900",
+                "author": "Jeffrey David Gunn",
+                "year": 2019,
+                "url": "https://yorkspace.library.yorku.ca/bitstreams/2c05f6bf-dec9-4daa-b10d-af069cb37512/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38-39",
+                "notes": "Thèse de doctorat en histoire, York University, 2019. Lu le 3 novembre 2026. L'auteur résume G. Brooks (1972) et R. Davis ; nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1996,
               "to": 1996,
               "label": "Proposée en 1996"
@@ -233,6 +339,49 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 699",
                 "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "Décrit en 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Kru est, au Liberia, l'une des trois catégories officielles, avec Grebo et Krahn, dans lesquelles le gouvernement a rangé les communautés de langue krou du sud-est. Ce découpage était arbitraire, et ces noms n'étaient pas ceux que les communautés se donnaient, selon l'étude Liberia: A Country Study.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Liberia: A Country Study",
+                "author": "Harold D. Nelson (dir.), American University, Foreign Area Studies",
+                "year": 1984,
+                "url": "https://archive.org/details/DTIC_ADA159331",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 92",
+                "notes": "Washington, Government Printing Office, Area Handbook Series, 1984. Lu le 3 novembre 2026 dans l'exemplaire numérisé de la bibliothèque DTIC sur archive.org ; la numérisation mêle l'ordre des pages et la page est celle du pied de page lu. « The decision to lump the southeastern Kruan-speaking communities into three categories (Grebo, Kru, and Krahn) was arbitrary »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1939,
+              "label": "Avant la Seconde Guerre mondiale"
+            },
+            "statement": "Le nom Kru est alors porté, dans les villes du Liberia, par des locuteurs de langues krou qui ne venaient pas tous de la côte kru : les employeurs des navires et des ports préféraient ceux qu'ils appelaient Kru, et ceux qui cherchaient du travail acceptaient ce nom, selon l'étude Liberia: A Country Study. Des hommes qu'on appellera plus tard Grebo se déclaraient Kru pour être engagés comme marins.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Liberia: A Country Study",
+                "author": "Harold D. Nelson (dir.), American University, Foreign Area Studies",
+                "year": 1984,
+                "url": "https://archive.org/details/DTIC_ADA159331",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 96",
+                "notes": "Washington, Government Printing Office, Area Handbook Series, 1984. Lu le 3 novembre 2026 dans l'exemplaire numérisé de la bibliothèque DTIC sur archive.org ; la numérisation mêle l'ordre des pages et la page est celle du pied de page lu."
               }
             ]
           },
@@ -286,6 +435,48 @@
           },
           {
             "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "Noté en 1904"
+            },
+            "statement": "Le nom Krou ressemble à un mot de plusieurs langues krou : kra-po, ou gra-bo et gra-beyo dans les parlers de l'est, y veut dire « homme d'équipe, pagayeur », selon une note de Maurice Delafosse. Le suffixe -po y marque les noms de métier et de peuple.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 67",
+                "notes": "Paris, Ernest Leroux, 1904. Lu le 3 novembre 2026 dans le texte numérisé d'Internet Archive. Note 1 de la p. 67 : « dans divers dialectes krou, le mot kra-po (où la syllabe po est un suffixe indiquant les noms de métier et de nationalité), gra-bo ou gra-beyo dans les dialectes de l'est, signifie « homme d'équipe, pagayeur » ». Texte d'un administrateur colonial."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "Proposée en 1904"
+            },
+            "statement": "Le nom Krou viendrait de krao, prononcé « krou » par les Portugais, premiers navigateurs sur cette côte ; les Anglais l'auraient adopté parce que, suivi de man, il leur rappelait leur mot crew, selon Maurice Delafosse.",
+            "hypothesisGroup": "origine du nom Krou",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 67",
+                "notes": "Paris, Ernest Leroux, 1904. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; le numéro de page imprimé a été lu sur l'image. « Je préfère supposer que les Portugais ont fait de krao le son « krou » »."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1900,
               "to": 1900,
               "label": "Proposée en 1900"
@@ -317,27 +508,6 @@
           },
           {
             "period": {
-              "from": 1904,
-              "to": 1904,
-              "label": "Proposée en 1904"
-            },
-            "statement": "Le nom Krou viendrait de krao, prononcé « krou » par les Portugais, premiers navigateurs sur cette côte ; les Anglais l'auraient adopté parce que, suivi de man, il leur rappelait leur mot crew, selon Maurice Delafosse.",
-            "hypothesisGroup": "origine du nom Krou",
-            "sources": [
-              {
-                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
-                "author": "Maurice Delafosse",
-                "year": 1904,
-                "url": "https://archive.org/details/vocabulairescomp00delauoft",
-                "tier": "referenced",
-                "source_kind": "academic",
-                "page": "p. 67",
-                "notes": "Paris, Ernest Leroux, 1904. Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; le numéro de page imprimé a été lu sur l'image. « Je préfère supposer que les Portugais ont fait de krao le son « krou » »."
-              }
-            ]
-          },
-          {
-            "period": {
               "from": 1900,
               "to": 1900,
               "label": "1900"
@@ -354,6 +524,44 @@
                 "source_kind": "archive",
                 "page": "p. 334",
                 "notes": "Lu dans la numérisation d'Internet Archive le 18 octobre 2026 ; le numéro de page imprimé, 334, a été lu sur l'image. « Eux-mêmes ne se connaissent pas de nom de race ou de famille. Dans la pratique, on réserve généralement le nom de Krou ou Kroomen à la tribu qui habite la région de Sinoe ». L'auteur, administrateur colonial, classe les peuples en « familles » et parle de « race »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1588,
+              "to": 1588,
+              "label": "1588"
+            },
+            "era": "polity",
+            "statement": "Le nom Krou est rapproché de Crua, un lieu de la côte du Liberia, au sud de la rivière Cestos, que le marchand anglais James Welsh porte sur sa carte en 1588, selon Jeffrey Gunn. Vers 1600, Pieter de Marees cite un village nommé Crou dans la même région. Ce lieu n'est pas encore le nom de tout l'ensemble de peuples.",
+            "formAsWritten": "Crua",
+            "actors": [
+              {
+                "name": "James Welsh",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Homeland, Diasporas and Labour Networks: The Case of Kru Workers, 1792-1900",
+                "author": "Jeffrey David Gunn",
+                "year": 2019,
+                "url": "https://yorkspace.library.yorku.ca/bitstreams/2c05f6bf-dec9-4daa-b10d-af069cb37512/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 41-42",
+                "notes": "Thèse de doctorat en histoire, York University, 2019. Lu le 3 novembre 2026. L'auteur cite J. Welsh, « A Voyage to Benin », dans R. Hakluyt, The Principal Navigations, vol. 6, 1904, p. 451 ; nous n'avons pas lu ce texte nous-mêmes."
+              },
+              {
+                "title": "‘For King and Empire’: The Changing Political, Economic, and Cultural Identities of Kru Mariners in Atlantic Africa, 1460–1945",
+                "author": "Megan Crutcher",
+                "year": 2023,
+                "url": "https://doi.org/10.1017/S0021853723000567",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 440",
+                "notes": "The Journal of African History, 2023. Lu le 3 novembre 2026. « A 1588 English record of West Africa depicts the Kru coast of Liberia under the term ‘Crua’ » ; l'autrice s'appuie sur Gunn."
               }
             ]
           }

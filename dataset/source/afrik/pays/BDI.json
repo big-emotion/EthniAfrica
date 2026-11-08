@@ -3,11 +3,11 @@
   "nameFr": "Burundi",
   "nameEn": "Burundi",
   "nameOfficial": "République du Burundi (Republika y'Uburundi)",
-  "summary": "Le Burundi est un pays des Grands Lacs dont le nom désigne simplement « le pays » en kirundi, en référence au royaume précolonial qui l'a précédé. Monarchie ancienne, il passa sous protectorat allemand puis sous tutelle belge au sein du Ruanda-Urundi. Hutu, Tutsi et Twa y partagent une même langue, le kirundi.",
-  "etymology": "Le nom \"Burundi\" viendrait du kirundi \"Uburundi\", qui voudrait dire \"pays\" ou \"territoire\". Le nom fait référence au royaume précolonial du Burundi.",
-  "nameOriginActor": "Le nom vient du royaume précolonial du Burundi (Royaume du Burundi), qui unifiait les peuples des hautes terres. Les colonisateurs allemands puis belges ont conservé ce nom.",
+  "summary": "Le Burundi porte le nom d'un ancien royaume de la région des Grands Lacs, que les voyageurs du XIXe siècle écrivaient Urundi et qui se nomme Uburundi en kirundi. Le royaume passa sous domination allemande, puis belge au sein du Ruanda-Urundi, avant de devenir indépendant en 1962. Hutu, Tutsi et Twa y parlent la même langue, le kirundi.",
+  "etymology": "Le nom Burundi reprend celui du royaume qui a précédé l'État. En kirundi, le pays se nomme Uburundi. La forme Urundi, employée au XIXe siècle et pendant la colonisation, suit un modèle que l'explorateur Richard Burton décrit en 1860 : en swahili et dans les langues voisines, le préfixe u- désigne un pays et le préfixe wa- ses habitants, d'où Urundi pour le royaume et Warundi pour ses habitants. Les textes que nous avons lus expliquent ces préfixes, mais pas le sens du mot rundi lui-même.",
+  "nameOriginActor": "Le nom est celui du royaume du Burundi, gouverné par un roi appelé mwami, que Richard Burton décrit en 1859 et 1860. Les explorateurs britanniques l'ont écrit sous la forme Urundi. L'administration allemande a gardé ce nom à partir de 1890, puis la Belgique l'a associé à celui du Rwanda dans Ruanda-Urundi. L'État indépendant a pris le nom de royaume du Burundi le 1er juillet 1962, puis celui de République du Burundi en 1966.",
   "nameHistory": {
-    "summary": "Le nom Burundi désigne un pays de la région des Grands Lacs, la République du Burundi, qui a gardé le nom d'un ancien royaume. En kirundi, la langue du pays, il se nomme Uburundi. Il a aussi été écrit Urundi, et réuni au Rwanda sous le nom de Ruanda-Urundi. Nous n'avons pas trouvé d'étude sur le sens premier du mot rundi ; ce que disent les sources est présenté plus bas.",
+    "summary": "Le nom Burundi désigne un pays de la région des Grands Lacs, la République du Burundi, qui a gardé le nom d'un ancien royaume. En kirundi, la langue du pays, il se nomme Uburundi. Les voyageurs et les administrations coloniales l'ont écrit Urundi, et la Belgique l'a administré avec le Rwanda sous le nom de Ruanda-Urundi. Les textes que nous avons lus expliquent le préfixe de ces formes, pas le sens du mot rundi ; ils sont présentés plus bas.",
     "names": [
       {
         "nameText": "Burundi",
@@ -67,6 +67,15 @@
                 "source_kind": "archive",
                 "page": "p. 30, note",
                 "notes": "New York, Harper, 1860, lu dans l'exemplaire numérisé. Dans une note, Burton explique qu'en swahili et dans les langues voisines le préfixe u- désigne un pays ou une région, comme Uzaramo, le pays des Zaramo, et le préfixe wa- ses habitants."
+              },
+              {
+                "title": "Burundi, L'aménagement linguistique dans le monde",
+                "author": "Université Laval, Centre de la francophonie des Amériques (CEFAN)",
+                "year": 2025,
+                "url": "https://www.axl.cefan.ulaval.ca/afrique/burundi.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page lue le 3 novembre 2026. Elle parle du « royaume du Burundi » et précise qu'en 1890 le pays était « appelé alors Urundi »."
               }
             ]
           },
@@ -158,6 +167,27 @@
           },
           {
             "period": {
+              "from": 1890,
+              "to": 1916,
+              "label": "De 1890 à 1916"
+            },
+            "era": "colonial",
+            "statement": "Le nom Urundi désigne le pays quand les Allemands l'intègrent en 1890 à l'Afrique orientale allemande, avec le Ruanda voisin, selon le site L'aménagement linguistique dans le monde de l'Université Laval.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Burundi, L'aménagement linguistique dans le monde",
+                "author": "Université Laval, Centre de la francophonie des Amériques (CEFAN)",
+                "year": 2025,
+                "url": "https://www.axl.cefan.ulaval.ca/afrique/burundi.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page lue le 3 novembre 2026. « En 1890, les Allemands parvinrent à intégrer le Burundi (appelé alors Urundi) et le Rwanda (appelé Ruanda) à leurs possessions d'Afrique orientale. »"
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1860,
               "to": 1860,
               "label": "1860"
@@ -194,34 +224,36 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Afrique orientale allemande (1885-1916)",
+        "Urundi (1859-1962)",
+        "Afrique orientale allemande (1890-1916)",
         "Ruanda-Urundi (1916-1962)",
         "Royaume du Burundi (1962-1966)"
       ],
-      "antiquity": "Le territoire était peuplé de groupes bantous et nilotiques sans nom unifié. Les Twa (pygmées) sont considérés comme les premiers habitants.",
-      "middleAges": "Développement du royaume du Burundi à partir du XVIe siècle. Le royaume s'appelait \"Burundi\" ou \"Uburundi\".",
-      "precolonial": "Royaume du Burundi (XVIe - XIXe siècles) avec une monarchie centralisée. Le nom \"Burundi\" était utilisé pour désigner le royaume et son territoire.",
-      "colonization": "1885-1916 : Protectorat allemand de l'Afrique orientale allemande (Deutsch-Ostafrika), incluant le Burundi. 1916-1962 : Ruanda-Urundi sous mandat belge (puis tutelle de l'ONU). Les Belges ont divisé administrativement le Rwanda et le Burundi mais conservé les noms.",
-      "contemporary": "Indépendance en 1962 sous le nom de \"Royaume du Burundi\" (monarchie), puis \"République du Burundi\" depuis 1966. Le nom officiel en français est \"République du Burundi\" et en kirundi \"Republika y'Uburundi\"."
+      "antiquity": "Les textes que nous avons lus ne donnent aucun nom ancien pour ce territoire. Un rapport de Minority Rights Group présente les Batwa comme les premiers habitants des forêts de la région des Grands Lacs. L'historien Jean-Pierre Chrétien rappelle que le récit d'arrivées successives, des « Pygmées » puis des « Bantous » puis des « Hamites », a été élaboré par l'ethnographie coloniale.",
+      "middleAges": "Selon l'Histoire générale de l'Afrique de l'UNESCO, une nouvelle dynastie s'affirme au Burundi à la fin du XVIIe siècle. Les récits de fondation nomment Ntare Rushatsi, « le Hirsute », venu du mont Nkoma, au sud-est du pays, selon Jean-Pierre Chrétien. Les textes lus ne donnent pas la forme du nom du royaume à cette époque.",
+      "precolonial": "Au XIXe siècle, le royaume est gouverné par un roi appelé mwami. Il atteint sa plus grande étendue sous Ntare Rugamba (1796-1850), selon le site de l'Université Laval. En 1859, l'explorateur Richard Burton écrit son nom sous la forme Urundi, et en 1860 il appelle ses habitants Warundi. C'est la plus ancienne trace écrite du nom que nous connaissons.",
+      "colonization": "En 1890, les Allemands intègrent le pays, « appelé alors Urundi », à l'Afrique orientale allemande ; en 1903, le mwami Kisabo signe avec eux le traité de Kiganda. En 1916, les troupes belges occupent le pays. La Belgique l'administre ensuite avec le Rwanda sous le nom de Ruanda-Urundi, d'abord sous mandat de la Société des Nations, puis sous tutelle des Nations unies jusqu'au 1er juillet 1962.",
+      "contemporary": "Le pays devient indépendant le 1er juillet 1962 sous le nom de royaume du Burundi. En 1966, le capitaine Michel Micombero abolit la monarchie et proclame la République du Burundi. En kirundi, l'État se nomme Republika y'u Burundi, aussi écrit Repuburika Y'Uburundi. Gitega est sa capitale politique depuis 2019 et Bujumbura sa capitale économique."
     },
     "kingdoms": [
       {
         "name": "Royaume du Burundi",
-        "period": "XVIe siècle - 1966",
+        "period": "Fin du XVIIe siècle - 1966",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1501,
+          "startYear": 1675,
           "endYear": 1966,
           "precision": "approximate",
-          "datingNote": "Le début au XVIe siècle suit la fiche et les traditions dynastiques. Selon J. B. Webster, B. A. Ogot et J.-P. Chrétien (HGA V), une nouvelle dynastie s'affirme au Burundi à la fin du XVIIe siècle et bloque l'expansion du Rwanda."
+          "datingNote": "Le début suit l'Histoire générale de l'Afrique (J. B. Webster, B. A. Ogot et J.-P. Chrétien), selon laquelle une nouvelle dynastie s'affirme au Burundi à la fin du XVIIe siècle ; les textes lus ne donnent pas d'année. La fin correspond à l'abolition de la monarchie en 1966."
         },
         "dominantPeoples": [
-          "Tutsi (noblesse)",
-          "Hutu (majorité)",
-          "Twa (minorité)"
+          "Ganwa (princes de la dynastie)",
+          "Tutsi",
+          "Hutu",
+          "Twa"
         ],
-        "politicalCenters": ["Gitega (capitale royale)", "Muramvya"],
-        "historicalRole": "Royaume centralisé avec une monarchie sacrée (mwami). Système de chefferies hiérarchisées. Expansion territoriale et unification culturelle. Distinctions sociales complexes entre Hutu, Tutsi et Twa, instrumentalisées par le colonialisme. Selon l'Histoire générale de l'Afrique, une nouvelle dynastie s'affirme à la fin du XVIIe siècle."
+        "politicalCenters": [],
+        "historicalRole": "Le royaume du Burundi est gouverné par un roi, le mwami. Selon l'Histoire générale de l'Afrique, une nouvelle dynastie s'y affirme à la fin du XVIIe siècle et bloque l'expansion du Rwanda voisin. Selon l'historien Jean-Pierre Chrétien, les princes de la famille royale, appelés Ganwa, et les cours royales distribuaient les fonctions, et la domination tutsi sur le pouvoir y était beaucoup moins nette qu'au Rwanda. Le royaume atteint sa plus grande étendue sous Ntare Rugamba (1796-1850). Il subsiste sous les colonisations allemande et belge, devient une monarchie constitutionnelle à l'indépendance de 1962 et prend fin en 1966."
       },
       {
         "name": "Ruanda-Urundi",
@@ -232,11 +264,9 @@
           "endYear": 1962,
           "precision": "year"
         },
-        "dominantPeoples": [
-          "Tous les peuples burundais sous administration coloniale belge"
-        ],
-        "politicalCenters": ["Usumbura (Bujumbura", "capitale administrative)"],
-        "historicalRole": "Mandat belge puis tutelle de l'ONU. Politique coloniale de division et d'instrumentalisation des distinctions Hutu/Tutsi. Introduction de cartes d'identité ethniques."
+        "dominantPeoples": ["Hutu", "Tutsi", "Twa"],
+        "politicalCenters": ["Usumbura (aujourd'hui Bujumbura)"],
+        "historicalRole": "Le Ruanda-Urundi réunit le Rwanda et le Burundi sous administration belge, d'abord sous mandat de la Société des Nations, puis sous tutelle des Nations unies jusqu'au 1er juillet 1962. La Belgique l'administre depuis Usumbura et le rattache au Congo belge en 1925. Selon Jean-Pierre Chrétien, l'administration écarte les Hutu des postes de chefs dans les années 1930, puis réserve l'école d'Astrida aux fils de Tutsi et de princes ganwa ; les missionnaires et les administrateurs décrivent alors les Tutsi comme des « Hamites » venus d'ailleurs."
       },
       {
         "name": "République du Burundi",
@@ -247,68 +277,79 @@
           "ongoing": true,
           "precision": "year"
         },
-        "dominantPeoples": ["Tous les peuples burundais"],
-        "politicalCenters": ["Bujumbura (capitale)"],
-        "historicalRole": "Indépendance en 1962 (monarchie). Coup d'État de 1966 : abolition de la monarchie, proclamation de la République. Histoire politique mouvementée avec plusieurs coups d'État et périodes de violences ethniques (1972, 1993, 2015)."
+        "dominantPeoples": ["Hutu", "Tutsi", "Twa"],
+        "politicalCenters": [
+          "Gitega (capitale politique depuis 2019)",
+          "Bujumbura (capitale économique)"
+        ],
+        "historicalRole": "La République du Burundi est proclamée en 1966 par le capitaine Michel Micombero, qui abolit la monarchie. Après une insurrection hutu en 1972, l'armée massacre entre 100 000 et 150 000 Hutu. En 1993, Melchior Ndadaye, premier président hutu élu, est assassiné lors d'un coup d'État militaire, ce qui ouvre une longue guerre civile. Un accord de paix est conclu à Arusha en 2000. La Constitution de 2018 fixe des parts de 60 % de Hutu et 40 % de Tutsi au gouvernement et à l'Assemblée nationale, où siègent aussi trois députés twa."
       }
     ],
     "majorPeoples": [
       {
         "name": "Hutu (Burundi)",
         "selfAppellation": "Abahutu",
-        "exonyms": [
-          "Hutu (terme historique non péjoratif). \"Races du Burundi\" (catégorisation coloniale problématique). L'administration coloniale belge a figé les catégories Hutu/Tutsi en termes \"racialisés\"",
-          "ce qui a exacerbé les tensions sociales et politiques."
-        ],
+        "exonyms": ["« Bantous », étiquette raciale de l'époque coloniale"],
         "peopleId": "PPL_KIRUNDI_HUTU",
-        "mainRegion": "Plateaux du Burundi (majorité)",
-        "languages": ["Kirundi", "français", "anglais"],
+        "mainRegion": "Tout le pays",
+        "languages": ["Kirundi (run)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Hutu\" a été instrumentalisé par le colonialisme belge. L'auto-appellation \"Abahutu\" est préférée. Ces distinctions doivent être contextualisées historiquement."
+        "appellationRemarks": "Être hutu est une appartenance héréditaire transmise par le père, qui ne correspond ni à une langue, ni à une culture, ni à une région distincte, selon l'historien Jean-Pierre Chrétien. Elle recouvrait d'anciens clivages sociaux : les Hutu étaient plutôt agriculteurs. La littérature coloniale a fait des Hutu des « Bantous », une race qu'elle opposait aux Tutsi."
       },
       {
         "name": "Tutsi (Burundi)",
         "selfAppellation": "Abatutsi",
-        "exonyms": [
-          "\"Hamites\" (terme colonial raciste",
-          "totalement rejeté). La thèse hamitique était une construction raciste européenne visant à opposer les peuples de la région et à légitimer des hiérarchies coloniales."
-        ],
+        "exonyms": ["« Hamites », étiquette raciale de l'époque coloniale"],
         "peopleId": "PPL_TUTSI_BURUNDI",
-        "mainRegion": "Plateaux du Burundi",
-        "languages": ["Kirundi", "français", "anglais"],
+        "mainRegion": "Tout le pays",
+        "languages": ["Kirundi (run)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Hamites\" est totalement rejeté comme construction raciste coloniale. L'auto-appellation \"Abatutsi\" est préférée. Ces distinctions doivent être contextualisées historiquement."
+        "appellationRemarks": "Être tutsi est, comme être hutu, une appartenance héréditaire transmise par le père, sans langue ni région propre, selon Jean-Pierre Chrétien. Les Tutsi étaient plutôt éleveurs. Sous la colonisation, missionnaires et administrateurs les ont décrits comme des « Hamites » venus du nord, étrangers à leur propre pays ; Jean-Pierre Chrétien montre que ce récit a été construit par l'ethnographie coloniale."
       },
       {
         "name": "Twa",
         "selfAppellation": "Abatwa",
-        "exonyms": ["Twa", "Pygmées (terme parfois considéré comme péjoratif)"],
+        "exonyms": ["Pygmées"],
         "peopleId": "PPL_TWA",
-        "mainRegion": "Forêts et zones rurales",
-        "languages": ["Kirundi", "langues twa"],
+        "mainRegion": "Zones rurales du Burundi",
+        "languages": ["Kirundi (run)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Pygmée\" peut être considéré comme péjoratif. L'auto-appellation \"Abatwa\" est préférée. Les Twa sont les premiers habitants du Burundi."
+        "appellationRemarks": "Le mot « Pygmée » est surtout employé par les voisins des Batwa, souvent avec mépris, et la plupart des Batwa ne l'aiment pas, selon un rapport de Minority Rights Group publié en 2000. Au Burundi, certains Batwa préfèrent être appelés Abaterambere, « ceux qui avancent ». Le même rapport les présente comme les premiers habitants des forêts de la région, estime leur nombre au Burundi entre 30 000 et 40 000 personnes et décrit la plupart d'entre eux comme ouvriers agricoles sans terre ou potiers. La Constitution de 2018 réserve trois sièges de députés et trois sièges de sénateurs à des Twa."
       }
     ],
     "culture": {
       "mainLanguages": [
-        { "name": "Kirundi", "isoCode": "run", "isPrimary": true },
-        { "name": "Français", "isoCode": "fra" },
-        { "name": "Anglais", "isoCode": "eng" }
+        {
+          "name": "Kirundi",
+          "isoCode": "run",
+          "isPrimary": true
+        },
+        {
+          "name": "Français",
+          "isoCode": "fra"
+        },
+        {
+          "name": "Anglais",
+          "isoCode": "eng"
+        },
+        {
+          "name": "Swahili",
+          "isoCode": "swh"
+        }
       ],
-      "culturalTraditions": "Tambours royaux (ingoma), danse traditionnelle (intore), poésie orale, artisanat (vannerie, poterie), architecture traditionnelle, élevage bovin (importance symbolique et économique)",
-      "dominantReligions": "Christianisme (catholique majoritaire, protestant), croyances traditionnelles (syncrétisme), islam (minorité)",
-      "lifestyles": "Vie principalement rurale, agriculture (café, thé, bananes, haricots, sorgho), élevage (bovins, caprins), pêche (lac Tanganyika), commerce",
-      "socialOrganization": "Système de chefferies traditionnelles (historique), structure clanique patrilinéaire (ubwoko), organisation en familles étendues et lignages, importance des ancêtres, système de conseils d'anciens (historique)",
-      "regionalRelations": "Relations historiques avec les peuples du Rwanda, de la RDC, de la Tanzanie. Diaspora importante en Belgique, en RDC, en Tanzanie, et dans les pays occidentaux."
+      "culturalTraditions": "La danse rituelle du tambour royal associe des tambours battus ensemble, toujours en nombre impair autour d'un tambour central, à la danse, à la poésie héroïque et aux chants. Elle est jouée lors des fêtes et pour accueillir des visiteurs importants, et l'UNESCO l'a inscrite en 2014 sur la liste du patrimoine culturel immatériel de l'humanité. La poterie est un métier traditionnel des Batwa.",
+      "dominantReligions": "La plupart des Burundais sont chrétiens. Selon l'enquête démographique et de santé de 2016-2017, menée par l'institut national de la statistique, 57 % des femmes et 62 % des hommes de 15 à 49 ans se disent catholiques, et environ un tiers protestants. Environ 3 % des femmes et 4 % des hommes se disent musulmans.",
+      "lifestyles": "La plupart des Burundais vivent de l'agriculture : en 2004, le CIA World Factbook estimait qu'environ 90 % de la population vivait de l'agriculture de subsistance, et que le café et le thé faisaient 90 % des recettes d'exportation. Selon Jean-Pierre Chrétien, les Hutu étaient autrefois plutôt agriculteurs, les Tutsi plutôt éleveurs et les Twa plutôt chasseurs, pêcheurs ou potiers. La chasse est interdite depuis les années 1970, et la plupart des Batwa travaillent aujourd'hui comme ouvriers agricoles sans terre ou comme potiers, selon un rapport de Minority Rights Group.",
+      "socialOrganization": "L'appartenance hutu, tutsi ou twa se transmet par le père. Selon Jean-Pierre Chrétien, ces groupes fonctionnaient autrefois un peu comme de grands clans, en rivalité pour les fonctions que distribuaient la cour du mwami et celles des princes ganwa. Aujourd'hui, la Constitution de 2018 organise le partage du pouvoir entre groupes : au plus 60 % de Hutu et 40 % de Tutsi au gouvernement, et trois sièges réservés aux Twa à l'Assemblée nationale comme au Sénat. Le pays ne publie pas de statistiques sur ces appartenances.",
+      "regionalRelations": "Le Burundi partage une longue histoire avec le Rwanda : le kirundi est très proche du kinyarwanda, et les deux pays ont été administrés ensemble sous le nom de Ruanda-Urundi. Sous la colonisation allemande, le pays faisait partie de l'Afrique orientale allemande avec le Tanganyika, l'actuelle Tanzanie, puis la Belgique a rattaché le Ruanda-Urundi au Congo belge en 1925. Le swahili, langue d'échange de la région des Grands Lacs, est parlé au Burundi sans y avoir de statut juridique."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement du territoire par les Twa (pygmées), puis migrations bantoues (Hutu) et nilotiques (Tutsi) depuis plusieurs siècles. Formation de structures sociales complexes.",
-      "middleAges": "Développement du royaume du Burundi à partir du XVIe siècle. Expansion territoriale et unification culturelle. Système monarchique centralisé avec distinctions sociales entre Hutu, Tutsi et Twa.",
-      "precolonial": "Apogée du royaume du Burundi (XIXe siècle) avec expansion territoriale. Système de chefferies hiérarchisées. Distinctions sociales complexes mais perméables.",
-      "colonization": "1885 : Protectorat allemand. 1916 : Occupation belge. 1923 : Mandat belge (Ruanda-Urundi). Politique coloniale de division et d'instrumentalisation des distinctions Hutu/Tutsi. Introduction de cartes d'identité ethniques. \"Thèse hamitique\" coloniale raciste.",
-      "independenceStruggle": "Mouvements nationalistes dans les années 1950. Indépendance en 1962 sous forme de monarchie constitutionnelle. Première République en 1966 après coup d'État.",
-      "postIndependence": "Première République (1966-1987) : régime Tutsi, tensions ethniques. Massacres de 1972 : extermination de dizaines de milliers de Hutu. Deuxième République (1987-1993) : transition démocratique. Assassinat du président Ndadaye (1993) : guerre civile. Troisième République depuis 2005 : processus de paix, défis de réconciliation et de développement."
+      "ancientPeriods": "Un rapport de Minority Rights Group présente les Batwa comme les premiers habitants des forêts de la région des Grands Lacs. Le récit qui fait arriver ensuite des Hutu « bantous » puis des Tutsi « hamites » venus du nord a été élaboré par l'ethnographie coloniale, selon l'historien Jean-Pierre Chrétien ; les sources lues ne donnent pas de dates pour le peuplement ancien.",
+      "middleAges": "Une nouvelle dynastie s'affirme au Burundi à la fin du XVIIe siècle et bloque l'expansion du Rwanda, selon l'Histoire générale de l'Afrique de l'UNESCO. Les récits de fondation nomment Ntare Rushatsi, « le Hirsute », chasseur et forgeron venu du mont Nkoma, selon Jean-Pierre Chrétien.",
+      "precolonial": "Le royaume atteint sa plus grande étendue sous le mwami Ntare Rugamba (1796-1850). En 1859, Richard Burton le décrit comme un pays « strictement monarchique ». Les appartenances hutu, tutsi et twa recouvrent alors d'anciens clivages sociaux, et la domination tutsi sur le pouvoir y est beaucoup moins nette qu'au Rwanda, selon Jean-Pierre Chrétien.",
+      "colonization": "En 1890, les Allemands intègrent le pays à l'Afrique orientale allemande ; ils fondent Usumbura, l'actuelle Bujumbura, en 1899, et le mwami Kisabo signe avec eux le traité de Kiganda en 1903. Les troupes belges occupent le pays en 1916, puis la Belgique l'administre avec le Rwanda sous le nom de Ruanda-Urundi. Dans les années 1930, l'administration belge écarte les Hutu des postes de chefs, et en 1934 des paysans du nord-ouest se révoltent contre le chef Pierre Baranyanka. À la fin des années 1930, l'évêque Julien Gorju et ce même chef imposent l'idée que la dynastie est « hamite », selon Jean-Pierre Chrétien.",
+      "independenceStruggle": "Le prince Louis Rwagasore, opposé à la discrimination raciale, est assassiné en 1961. Le Burundi devient indépendant le 1er juillet 1962, sous la forme d'une monarchie constitutionnelle, quand les Nations unies mettent fin à la tutelle belge.",
+      "postIndependence": "En 1966, le capitaine Michel Micombero abolit la monarchie et proclame la république. Les violences de 1965 et 1972 installent une peur réciproque durable : après une insurrection hutu en 1972, l'armée massacre entre 100 000 et 150 000 Hutu. Une Charte de l'unité nationale est adoptée en février 1991. En juin 1993, Melchior Ndadaye devient le premier président hutu élu ; il est assassiné le 21 octobre 1993 lors d'un coup d'État militaire, ce qui déclenche de nouveaux massacres et une guerre civile. Un accord de paix est conclu à Arusha en 2000, et la Constitution de 2018 maintient un partage du pouvoir entre Hutu, Tutsi et Twa."
     },
     "sources": [
       {
@@ -339,7 +380,8 @@
         "title": "UNFPA – World Population Dashboard — Burundi",
         "url": "https://www.unfpa.org/data/world-population/BI",
         "tier": "official",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": "Tableau de bord du Fonds des Nations unies pour la population, consulté le 3 novembre 2026. Il donne une population totale de 14 400 000 habitants en 2025, d'après les World Population Prospects 2024 de la Division de la population des Nations unies."
       },
       {
         "title": "Études anthropologiques sur les Grands Lacs",
@@ -376,6 +418,112 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre de J. B. Webster, B. A. Ogot et J.-P. Chrétien (1999), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 889. « L'essor d'une nouvelle dynastie au Burundi bloqua son expansion [celle du Rwanda] à la fin du siècle », c'est-à-dire du XVIIe siècle."
+      },
+      {
+        "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Burundi",
+        "author": "Office of the Historian, Département d'État des États-Unis",
+        "year": null,
+        "url": "https://history.state.gov/countries/burundi",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Notice relue le 3 novembre 2026. Les États-Unis reconnaissent le royaume du Burundi le 1er juillet 1962, quand les Nations unies mettent fin à la tutelle sur le Ruanda-Urundi administrée par la Belgique."
+      },
+      {
+        "title": "The Lake Regions of Central Equatorial Africa, Journal of the Royal Geographical Society, vol. 29",
+        "author": "Richard F. Burton",
+        "year": 1859,
+        "url": "https://archive.org/details/in.ernet.dli.2015.70694",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Revue de la Royal Geographical Society, Londres, 1859, lue dans l'exemplaire numérisé. Burton y décrit « the kingdom of Urundi », au nord d'Ujiji, un pays « strictement monarchique ». Partie citée : p. 253."
+      },
+      {
+        "title": "The Lake Regions of Central Africa: a Picture of Exploration, vol. 2",
+        "author": "Richard F. Burton",
+        "year": 1860,
+        "url": "https://archive.org/details/lakeregionsofcen21860burt",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Londres, Longman, Green, Longman and Roberts, 1860, lu dans l'exemplaire numérisé. Burton décrit « the kingdom of Urundi », gouverné par un mwami, et ses habitants, qu'il appelle Warundi. Partie citée : p. 144-145."
+      },
+      {
+        "title": "Le défi de l'intégrisme ethnique dans l'historiographie africaniste. Le cas du Rwanda et du Burundi",
+        "author": "Jean-Pierre Chrétien",
+        "year": 1992,
+        "url": "https://www.persee.fr/doc/polaf_0244-7827_1992_num_46_1_5568",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de la revue Politique africaine, n° 46, 1992, pages 71 à 83, par un historien spécialiste du Burundi. Notice lue sur Persée et texte intégral lu dans le fac-similé de l'article le 3 novembre 2026. Page 72 : les appartenances héréditaires hutu ou tutsi, transmises par le père, « ne correspondent pas à une différenciation linguistique, culturelle ou géographique » ; elles recouvraient d'anciens clivages sociaux, les Hutu étant plutôt agriculteurs, les Tutsi plutôt éleveurs et les Twa, « très minoritaires », plutôt chasseurs, pêcheurs ou potiers. Page 73 : ces groupes fonctionnaient un peu comme des « superclans » en rivalité autour des fonctions distribuées par les cours royales ou princières ; la mainmise tutsi sur le pouvoir était « beaucoup moins nette au Burundi » qu'au Rwanda ; dans les années 1930, l'administration belge écarte les Hutu des postes de chefs, puis réserve l'école d'Astrida aux fils de Tutsi ou de princes appelés Ganwa. Page 74 : à la fin des années 1930, l'évêque Julien Gorju et le chef Pierre Baranyanka imposent l'idée que « notre dynastie est hamite » ; Ntare Rushatsi, « le Hirsute », fondateur légendaire de la dynastie venu du mont Nkoma au sud-est, devient dans ce récit un guerrier venu du nord. Page 77 : en 1934, des paysans du nord-ouest se révoltent contre le chef Baranyanka ; les drames de 1965 et 1972 nourrissent la peur réciproque, et une Charte de l'unité est adoptée en février 1991. Page 78 : le schéma en couches « Pygmées, Bantous, Hamites » a été « élaboré par l'ethnographie coloniale ». Partie citée : p. 71-83."
+      },
+      {
+        "title": "Burundi's Constitution of 2018, traduction anglaise du Constitute Project",
+        "author": "Comparative Constitutions Project",
+        "year": 2018,
+        "url": "https://www.constituteproject.org/constitution/Burundi_2018",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Traduction anglaise de la Constitution de la République du Burundi de 2018, publiée par le Constitute Project, lue dans sa version PDF le 3 novembre 2026. Article 1 : le Burundi est une république indépendante, souveraine, laïque, démocratique et unitaire, qui respecte sa diversité ethnique et religieuse. Article 5 : « la langue nationale est le kirundi » ; les langues officielles sont le kirundi et les autres langues fixées par la loi. Article 128 : le gouvernement compte au plus 60 % de ministres hutu et au plus 40 % de ministres tutsi. Article 169 : l'Assemblée nationale compte 60 % de Hutu et 40 % de Tutsi, plus trois députés twa cooptés. Article 185 : le Sénat comprend trois personnes de l'ethnie twa."
+      },
+      {
+        "title": "Glottolog 5.3, Rundi (rund1242)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/rund1242",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Base de données des langues du monde publiée par l'Institut Max Planck d'anthropologie évolutionniste, version 5.3, consulté le 3 novembre 2026. La langue y porte le nom Rundi, avec Kirundi comme autre nom, le code ISO 639-3 run et le Burundi comme pays. Sa classification la range parmi les langues bantoues des Grands Lacs, dans le groupe qu'il appelle Rundic."
+      },
+      {
+        "title": "The Batwa Pygmies of the Great Lakes Region",
+        "author": "Jerome Lewis",
+        "year": 2000,
+        "url": "https://citizenshiprightsafrica.org/wp-content/uploads/2001/03/Lewis-Batwa-report-MRG-2000.pdf",
+        "tier": "referenced",
+        "source_kind": "ngo",
+        "notes": "Rapport de Minority Rights Group International, Londres, juin 2000, lu le 3 novembre 2026 dans la copie PDF du rapport. Page 3 : les Batwa passent pour les premiers habitants des forêts de la région des Grands Lacs. Page 5 : le mot « Pygmée » est surtout employé par leurs voisins, souvent avec mépris, et la plupart des Batwa ne l'aiment pas ; au Burundi, certains Batwa préfèrent être appelés « Abaterambere », « ceux qui avancent ». Page 24 : au Burundi, les Batwa ne peuvent plus chasser, la chasse étant interdite depuis les années 1970 ; la plupart sont ouvriers agricoles sans terre ou potiers. Page 29, note 6 : leur nombre au Burundi est estimé entre 30 000 et 40 000 personnes, d'après des estimations du gouvernement et un entretien avec l'association UNIPROBA en 1999. Partie citée : p. 3, 5, 24 et 29."
+      },
+      {
+        "title": "Troisième Enquête Démographique et de Santé au Burundi (EDSB-III) 2016-2017",
+        "author": "Institut de statistiques et d'études économiques du Burundi (ISTEEBU), ministère de la Santé publique et ICF",
+        "year": 2017,
+        "url": "https://dhsprogram.com/pubs/pdf/FR335/FR335.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport final de l'enquête réalisée par l'institut national de la statistique du Burundi avec le ministère de la Santé, Bujumbura, décembre 2017, lu le 3 novembre 2026. Parmi les personnes de 15 à 49 ans interrogées, 57,3 % des femmes et 62 % des hommes se disent catholiques, 34,4 % des femmes et 27,9 % des hommes protestants, 3,2 % des femmes et 4,2 % des hommes musulmans, et 2,6 % des femmes et 3 % des hommes adventistes. Partie citée : p. 31 et 40 (tableau 3.1)."
+      },
+      {
+        "title": "Burundi, L'aménagement linguistique dans le monde",
+        "author": "Université Laval, Centre de la francophonie des Amériques (CEFAN)",
+        "year": 2025,
+        "url": "https://www.axl.cefan.ulaval.ca/afrique/burundi.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Page du site universitaire L'aménagement linguistique dans le monde, mise à jour le 20 août 2025 et lue le 3 novembre 2026. Elle indique que tous les Burundais, hutu, tutsi ou twa, parlent la même langue, le kirundi, et que le Burundi ne publie pas de données sur les appartenances ethniques. Elle situe la plus grande expansion du royaume sous le mwami Ntare Rugamba (1796-1850). Elle rapporte qu'en 1890 les Allemands intègrent le Burundi, « appelé alors Urundi », à l'Afrique orientale allemande, qu'ils fondent Usumbura (aujourd'hui Bujumbura) en 1899 et que le mwami Kisabo signe avec eux le traité de Kiganda en 1903. En 1916, les troupes belges occupent le pays ; la Belgique administre ensuite le Ruanda-Urundi depuis Usumbura, sous mandat de la Société des Nations, et le rattache au Congo belge en 1925. Le prince Louis Rwagasore est assassiné en 1961 ; le pays devient indépendant le 1er juillet 1962 sous la forme d'une monarchie constitutionnelle. En 1966, le capitaine Michel Micombero abolit la monarchie et proclame la république. Après une insurrection hutu en 1972, l'armée massacre entre 100 000 et 150 000 Hutu. En juin 1993, Melchior Ndadaye est élu premier président hutu ; il est assassiné le 21 octobre 1993 lors d'un coup d'État militaire, ce qui déclenche de nouveaux massacres. Un accord de paix est conclu à Arusha en 2000. Une loi du 3 novembre 2014 fixe le statut des langues ; le swahili n'a pas de statut juridique mais sert de langue d'échange, et Gitega est la capitale politique depuis 2019."
+      },
+      {
+        "title": "UNESCO — Ritual dance of the royal drum (2014)",
+        "url": "https://ich.unesco.org/en/RL/ritual-dance-of-the-royal-drum-00989",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche de la Liste représentative du patrimoine culturel immatériel de l'humanité, inscription de 2014, lue le 3 novembre 2026. La danse rituelle du tambour royal associe des tambours battus ensemble, toujours en nombre impair autour d'un tambour central, à la danse, à la poésie héroïque et aux chants. Elle est jouée lors des fêtes nationales ou locales et pour accueillir des visiteurs importants. Beaucoup de ses joueurs descendent des gardiens des sanctuaires de tambours."
+      },
+      {
+        "title": "The World Factbook 2004, Burundi",
+        "author": "Central Intelligence Agency",
+        "year": 2004,
+        "url": "https://en.wikisource.org/wiki/CIA_World_Fact_Book,_2004/Burundi",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Édition 2004 de l'annuaire publié par l'agence de renseignement des États-Unis, lue dans sa transcription sur Wikisource le 3 novembre 2026. Elle donne « Hutu (Bantu) 85 %, Tutsi (Hamitic) 14 %, Twa (Pygmy) 1 % », sans dire d'où viennent ces chiffres, avec les étiquettes raciales héritées de l'époque coloniale. Elle cite le kirundi et le français comme langues officielles, et le swahili au bord du lac Tanganyika et autour de Bujumbura. Elle indique qu'environ 90 % de la population vit de l'agriculture de subsistance et que le café et le thé font 90 % des recettes d'exportation. Elle ajoute que, depuis octobre 1993, une guerre entre groupes a fait plus de 200 000 morts. Partie citée : rubriques « Ethnic groups », « Languages » et « Economy »."
+      },
+      {
+        "title": "The World Factbook 1982, Burundi",
+        "author": "Central Intelligence Agency",
+        "year": 1982,
+        "url": "https://en.wikisource.org/wiki/The_World_Factbook_(1982)/Burundi",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Édition 1982 du même annuaire, lue dans sa transcription sur Wikisource le 3 novembre 2026. Elle donne déjà « 85 % Hutu (Bantu), 14 % Tutsi (Hamitic), 1 % Twa (Pigmy) » : les proportions répétées en 2004 sont donc les mêmes qu'en 1982. Partie citée : rubrique « Ethnic divisions »."
       }
     ],
     "demographics": {
@@ -386,25 +534,35 @@
         {
           "name": "Hutu (Burundi)",
           "peopleId": "PPL_KIRUNDI_HUTU",
-          "region": "Plateaux du Burundi",
+          "region": "Tout le pays",
           "languageFamily": "FLG_BANTU",
-          "percentageInCountry": 85
+          "percentageInCountry": 85,
+          "referenceYear": 2004,
+          "mainLanguageCode": "run"
         },
         {
           "name": "Tutsi (Burundi)",
           "peopleId": "PPL_TUTSI_BURUNDI",
-          "region": "Plateaux du Burundi",
+          "region": "Tout le pays",
           "languageFamily": "FLG_BANTU",
-          "percentageInCountry": 14
+          "percentageInCountry": 14,
+          "referenceYear": 2004,
+          "mainLanguageCode": "run"
         },
         {
           "name": "Twa",
           "peopleId": "PPL_TWA",
-          "region": "Forêts et zones rurales",
+          "region": "Zones rurales du Burundi",
           "languageFamily": "FLG_BANTU",
-          "percentageInCountry": 1
+          "percentageInCountry": 1,
+          "referenceYear": 2004,
+          "mainLanguageCode": "run"
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "Le Burundi est un pays d'Afrique centrale, dans la région des Grands Lacs, qui porte le nom d'un ancien royaume. En kirundi, sa langue nationale, il se nomme Uburundi.",
+      "followUp": "Pourquoi le Burundi s'est-il appelé Urundi ?"
     }
   }
 }

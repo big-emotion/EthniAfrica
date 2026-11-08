@@ -9,13 +9,18 @@
   "glottocode": "kaby1243",
   "nameFr": "Kabyle",
   "nameEn": "Kabyle",
-  "alternateNames": ["Kabyl", "Kabylia", "Kabylisch", "Taqbaylit"],
-  "whyProblematic": "Il y a deux explications possibles du mot « kabyle ». L'une le tire de l'arabe qabāʾil, pluriel de qabīla, « tribu » : des citadins arabophones appelaient ainsi des ruraux organisés en tribus (Bellil). L'autre le tire du verbe arabe qbel, « accepter », parce que les Kabyles auraient accepté l'islam (Assam). Le dictionnaire de l'Académie française ne retient que « tribu, famille ». « Kabylie », le nom de la région, a été fixé par les Français (Assam). Les Kabyles se nomment eux-mêmes Leqbayel au pluriel et aqbayli au singulier, des mots venus de l'arabe, qu'on trouve dans des poèmes kabyles transcrits depuis le XIXe siècle (Assam). Un autre nom est plus ancien : Zwawa, un nom arabe donné depuis le Moyen Âge aux tribus du Djurdjura, notamment par Ibn Khaldoun (Bellil). Selon le linguiste Salem Chaker, Izwawen serait l'ancien nom que les Kabyles se donnaient, aujourd'hui oublié (d'après l'article de Wikipédia « Kabyles », qui s'appuie sur Lanfry, 1978). En kabyle, azwaw est un prénom et Izwawen un nom de clan fréquent. Le lien entre ces mots n'est pas établi.",
+  "alternateNames": ["Kabyl", "Kabylia", "Kabylisch", "Taqbaylit", "Zouaoua"],
+  "whyProblematic": "Il y a deux explications possibles du mot « kabyle ». L'une le tire de l'arabe qabāʾil, pluriel de qabīla, « tribu » : des citadins arabophones appelaient ainsi des ruraux organisés en tribus (Bellil). L'autre le tire du verbe arabe qbel, « accepter », parce que les Kabyles auraient accepté l'islam (Assam). Le dictionnaire de l'Académie française ne retient que « tribu, famille ». « Kabylie », le nom de la région, a été fixé par les Français (Assam). Les Kabyles se nomment eux-mêmes Leqbayel au pluriel et aqbayli au singulier, des mots venus de l'arabe, qu'on trouve dans des poèmes kabyles transcrits depuis le XIXe siècle (Assam). Un autre nom est plus ancien : Zwawa, un nom arabe donné depuis le Xe siècle aux gens du Djurdjura. Des Kabyles le disent étranger à leur langue et se nomment Igawawen, selon Jacques Lanfry, qui propose de rattacher Zwawa à Igawawen par le prénom kabyle Azwaw. Salem Chaker juge qu'Igawawen et Azwaw n'ont pas de lien et laisse ouverte l'origine de Zwawa.",
   "spellingAliases": [],
   "familyId": "FLG_BERBERE",
-  "peoples": [{ "name": "Kabyle", "peopleId": "PPL_KABYLE" }],
+  "peoples": [
+    {
+      "name": "Kabyle",
+      "peopleId": "PPL_KABYLE"
+    }
+  ],
   "nameHistory": {
-    "summary": "Le nom kabyle désigne une langue berbère du nord de l'Algérie, en Kabylie, que ses locuteurs appellent taqbaylit. C'est aussi le nom du peuple qui la parle, un nom venu de l'arabe ; son origine est discutée, et la fiche du peuple Kabyle présente les explications. Nous présentons plus bas ces noms comme noms de langue.",
+    "summary": "Le nom kabyle désigne une langue berbère du nord de l'Algérie, en Kabylie, que ses locuteurs appellent taqbaylit. C'est aussi le nom du peuple qui la parle, un nom venu de l'arabe ; son origine est discutée, et la fiche du peuple Kabyle présente les explications. Un nom arabe plus ancien, zwawa, a aussi désigné la langue au XIXe siècle. Nous présentons plus bas ces noms comme noms de langue.",
     "names": [
       {
         "nameText": "Taqbaylit",
@@ -32,7 +37,7 @@
               "to": null,
               "label": "Sens donné par l'auteur"
             },
-            "statement": "Le nom taqbaylit désigne la langue kabyle, mais aussi un idéal, un code de valeurs dans lequel se reconnaissent les tribus de Kabylie, selon Malika Assam. Il a la même racine que Leqbayel, le nom que les Kabyles se donnent ; la fiche du peuple Kabyle présente ce nom.",
+            "statement": "Le nom taqbaylit désigne la langue kabyle, mais aussi un idéal, un code de valeurs dans lequel se reconnaissent les tribus de Kabylie, selon Malika Assam. Jacques Lanfry le traduit par « kabilité » : l'honneur, la dignité, l'honnêteté et la droiture. Il a la même racine que Leqbayel, le nom que les Kabyles se donnent ; la fiche du peuple Kabyle présente ce nom.",
             "aspect": "meaning",
             "sources": [
               {
@@ -44,6 +49,16 @@
                 "source_kind": "academic",
                 "page": "§ 19, § 23 et § 26",
                 "notes": "Paris, Presses de l'Inalco, 2022. Lu le 11 octobre 2026 en ligne sur OpenEdition Books."
+              },
+              {
+                "title": "Les Zwawa (Igawawen) d'Algérie centrale (essai onomastique et ethnographique)",
+                "author": "Jacques Lanfry",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1825",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 88, § 15",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, 26, 1978, p. 75-101. Lu le 3 novembre 2026 sur Persée, dans les images des pages."
               }
             ]
           },
@@ -66,6 +81,34 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 211",
                 "notes": "Alger, A. Jourdan, 1906, deuxième édition d'un texte écrit à la fin des années 1850. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur était officier de l'armée coloniale française."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1867,
+              "to": 1867,
+              "label": "1867"
+            },
+            "era": "colonial",
+            "statement": "Le nom taqbaylit est écrit thak'ebailith dans un poème kabyle sur la conquête de la Kabylie, publié par Adolphe Hanoteau. Il le traduit par « l'honneur kabyle », et non par le nom de la langue.",
+            "formAsWritten": "thak'ebailith",
+            "actors": [
+              {
+                "name": "Adolphe Hanoteau",
+                "role": "écrit cette forme et traduit le poème"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Poésies populaires de la Kabylie du Jurjura. Texte kabyle et traduction",
+                "author": "Adolphe Hanoteau",
+                "year": 1867,
+                "url": "https://archive.org/details/posiespopulaire00hanogoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 145",
+                "notes": "Paris, Imprimerie impériale, 1867. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur était officier de l'armée coloniale française."
               }
             ]
           },
@@ -188,25 +231,208 @@
             ]
           }
         ]
+      },
+      {
+        "nameText": "Zwawa",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "ara",
+        "namedBy": "Des auteurs de langue arabe",
+        "shortLine": "Un ancien nom arabe des Kabyles du Djurdjura, donné aussi à leur langue au XIXe siècle.",
+        "periodLabel": "Écrit dès le Xe siècle ; nom de langue au XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Ce que disent des Kabyles au XXe siècle"
+            },
+            "statement": "Le nom zwawa est, pour des Kabyles de Grande Kabylie cités par Jacques Lanfry, « un mot étranger, étranger à leur langue », un nom que les Arabes leur donnent. Eux disent : « nous sommes Agawaw, Tagawawt, Igawawen ». Salem Chaker note que zwawa est un nom un peu vieilli, employé par ceux qui parlent arabe et non par les Kabyles.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Les Zwawa (Igawawen) d'Algérie centrale (essai onomastique et ethnographique)",
+                "author": "Jacques Lanfry",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1825",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 82 et p. 93",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, 26, 1978, p. 75-101. Lu le 3 novembre 2026 sur Persée, dans les images des pages."
+              },
+              {
+                "title": "Note à propos du précédent article",
+                "author": "Salem Chaker",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1826",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 103",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, 26, 1978, commentaire de l'article de Jacques Lanfry. Lu le 3 novembre 2026 sur Persée."
+              }
+            ],
+            "era": "modern"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Hypothèse proposée en 1978"
+            },
+            "statement": "Le nom zwawa viendrait d'Agawaw, le nom que se donnent des Kabyles, refait dans la bouche de locuteurs arabes sur Azwaw, un prénom kabyle, puis arabisé en Zwâwa, selon Jacques Lanfry. Il ajoute aussitôt : « c'est peut-être trop imaginer, ou trop simpliste ».",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom zwawa",
+            "sources": [
+              {
+                "title": "Les Zwawa (Igawawen) d'Algérie centrale (essai onomastique et ethnographique)",
+                "author": "Jacques Lanfry",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1825",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 93",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, 26, 1978, p. 75-101. Lu le 3 novembre 2026 sur Persée, dans les images des pages."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Hypothèse discutée en 1978"
+            },
+            "statement": "Le nom zwawa pourrait se rattacher soit à azwaw, un prénom kabyle dont le pluriel izwawen est un nom de clan fréquent, soit à agawaw, selon Salem Chaker. Il tient pour certain qu'agawaw et azwaw n'ont aucun lien entre eux, et laisse la question ouverte.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom zwawa",
+            "sources": [
+              {
+                "title": "Note à propos du précédent article",
+                "author": "Salem Chaker",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1826",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 103",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, 26, 1978, commentaire de l'article de Jacques Lanfry. Lu le 3 novembre 2026 sur Persée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "era": "colonial",
+            "statement": "Le nom zwawa est écrit zouaoua entre parenthèses dans le titre du dictionnaire français-kabyle du père J.-B. Creusat.",
+            "formAsWritten": "zouaoua",
+            "sources": [
+              {
+                "title": "Essai de dictionnaire français-kabyle (zouaoua)",
+                "author": "J.-B. Creusat",
+                "year": 1873,
+                "url": "https://archive.org/details/essaidedictionna00creu",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre",
+                "notes": "Alger, A. Jourdan, 1873, ouvrage publié aux frais de l'archevêché d'Alger. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1847,
+              "to": 1847,
+              "label": "1847"
+            },
+            "era": "colonial",
+            "statement": "Le nom zwawa sert de nom de langue chez Daumas et Fabar, dans leur livre paru en 1847, qui écrivent « le zouaouïah », parlé de Dellys à Bône, selon Jacques Lanfry. C'est la plus ancienne trace de ce nom de langue que le projet connaît.",
+            "formAsWritten": "zouaouïah",
+            "sources": [
+              {
+                "title": "Les Zwawa (Igawawen) d'Algérie centrale (essai onomastique et ethnographique)",
+                "author": "Jacques Lanfry",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1825",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, 26, 1978, p. 75-101. Lu le 3 novembre 2026 sur Persée, dans les images des pages."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 988,
+              "to": 988,
+              "label": "378 de l'hégire, 988"
+            },
+            "era": "polity",
+            "statement": "Le nom zwawa est écrit Zuwâwa par le géographe arabe Ibn Hawqal, comme nom de groupe, selon Jacques Lanfry. C'est la plus ancienne trace de ce nom que le projet connaît. Les gens qu'il désigne et leur langue existaient déjà avant lui.",
+            "formAsWritten": "Zuwâwa",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Ibn Hawqal",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les Zwawa (Igawawen) d'Algérie centrale (essai onomastique et ethnographique)",
+                "author": "Jacques Lanfry",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1825",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 76",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, 26, 1978, p. 75-101. Lu le 3 novembre 2026 sur Persée, dans les images des pages."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1978,
+              "label": "Vers 1978"
+            },
+            "statement": "Le nom zwawa tend à disparaître comme nom de langue : les publications récentes préfèrent dire « kabyle », écrit Jacques Lanfry.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Zwawa (Igawawen) d'Algérie centrale (essai onomastique et ethnographique)",
+                "author": "Jacques Lanfry",
+                "year": 1978,
+                "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1825",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 81",
+                "notes": "Revue de l'Occident musulman et de la Méditerranée, 26, 1978, p. 75-101. Lu le 3 novembre 2026 sur Persée, dans les images des pages."
+              }
+            ],
+            "era": "modern"
+          }
+        ]
       }
     ]
   },
   "content": {
-    "vehicularRole": null,
+    "vehicularRole": "non_vehicular",
     "dialects": [
-      "Eastern Kabyle",
-      "Far Western Kabyle",
-      "Tasahlit",
-      "Western Kabyle"
+      "Kabyle extrême-occidental",
+      "Kabyle extrême-oriental",
+      "Kabyle occidental",
+      "Kabyle oriental"
     ],
     "vitalityStatus": null,
+    "originDebated": true,
     "sources": [
       {
         "title": "Glottolog 5.3 — Kabyle (kaby1243)",
         "url": "https://glottolog.org/resource/languoid/id/kaby1243",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Glottolog name: Kabyle; classification includes Berber. Les dialectes listés sont les sous-languoids que Glottolog rattache à kaby1243, hors languoids portant leur propre code ISO 639-3."
+        "notes": "Notice directe pour le code ISO 639-3 kab et le glottocode kaby1243, lue le 3 novembre 2026. Elle classe le kabyle parmi les langues berbères et lui rattache quatre variétés : Eastern Kabyle, Far Western Kabyle, Tasahlit et Western Kabyle."
       },
       {
         "title": "Bellil, R. « Kabylie : La région dans les écrits arabes ». Encyclopédie berbère, 26, 2004, p. 4016-4022",
@@ -237,12 +463,61 @@
         "notes": "Lu : emprunt à l'arabe qabila, « tribu, famille », dont le pluriel qabâ'il désigne les Kabyles."
       },
       {
-        "title": "Wikipédia — Kabyles",
-        "url": "https://fr.wikipedia.org/wiki/Kabyles",
-        "tier": "unverified",
-        "source_kind": "encyclopedia",
-        "notes": "Passage sur les noms Izwawen, Igawawen et Zwawa, lu en ligne ; il renvoie à Lanfry (1978) et à Chaker, que nous n'avons pas lus directement."
+        "title": "Lanfry, Jacques, « Les Zwawa (Igawawen) d'Algérie centrale (essai onomastique et ethnographique) », Revue de l'Occident musulman et de la Méditerranée, 26, 1978, p. 75-101",
+        "url": "https://www.persee.fr/doc/remmm_0035-1474_1978_num_26_1_1825",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 sur Persée : Zuwâwa chez Ibn Hawqal (988), le zouaouïah comme nom de langue en 1847, des Kabyles qui disent Zwâwa étranger à leur langue et se nomment Igawawen, l'hypothèse d'un passage d'Agawaw à Zwâwa par Azwaw, et la taqbaylit comme « kabilité »."
+      },
+      {
+        "title": "Chaker, Salem, « Kabylie : La langue », Encyclopédie berbère, 26, 2004, p. 4055-4066",
+        "url": "https://journals.openedition.org/encyclopedieberbere/1431",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 sur OpenEdition Journals : une estimation d'environ 5,5 millions de personnes qui parlent kabyle, dont 3 à 3,5 millions en Kabylie et 2 à 2,5 millions ailleurs en Algérie et en France ; le recensement de 1966, seul à avoir demandé la langue maternelle ; le berbère langue nationale depuis 2002."
+      },
+      {
+        "title": "Naït-Zerrad, Kamal, « Kabylie : Dialectologie », Encyclopédie berbère, 26, 2004, p. 4067-4070",
+        "url": "https://journals.openedition.org/encyclopedieberbere/1433",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 sur OpenEdition Journals. Les parlers kabyles forment une chaîne continue ; l'auteur y distingue au moins quatre groupes, extrême-occidental, occidental, oriental et extrême-oriental, que reprend la liste des dialectes."
+      },
+      {
+        "title": "Loi n° 02-03 du 10 avril 2002 portant révision constitutionnelle, Journal officiel de la République algérienne, n° 25, 14 avril 2002",
+        "url": "https://www.joradp.dz/FTP/jo-francais/2002/F2002025.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Lu le 3 novembre 2026 sur le site du Journal officiel algérien. Article 3 bis : « Tamazight est également langue nationale », dans toutes ses variétés en usage sur le territoire."
+      },
+      {
+        "title": "Loi n° 16-01 du 6 mars 2016 portant révision constitutionnelle, Journal officiel de la République algérienne, n° 14, 7 mars 2016",
+        "url": "https://www.joradp.dz/FTP/jo-francais/2016/F2016014.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Lu le 3 novembre 2026 sur le site du Journal officiel algérien. Article 4 : « Tamazight est également langue nationale et officielle »."
+      },
+      {
+        "title": "Hanoteau, Adolphe, Poésies populaires de la Kabylie du Jurjura. Texte kabyle et traduction, Paris, Imprimerie impériale, 1867",
+        "url": "https://archive.org/details/posiespopulaire00hanogoog",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Lu le 3 novembre 2026 dans la numérisation d'Internet Archive : le mot thak'ebailith, traduit « l'honneur kabyle », dans des poèmes kabyles. L'auteur était officier de l'armée coloniale française."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers",
+        "reason": "Nous n'avons pas trouvé de chiffre récent par pays. Salem Chaker estimait en 2004 qu'environ 5,5 millions de personnes parlent kabyle, dont 3 à 3,5 millions en Kabylie et 2 à 2,5 millions ailleurs, surtout à Alger et en France, où vivraient près d'un million de Kabyles. Le seul recensement algérien qui a demandé la langue maternelle date de 1966."
+      },
+      {
+        "field": "content.vitalityStatus",
+        "reason": "Nous n'avons pas trouvé d'évaluation de la vitalité du kabyle que nous puissions relier avec certitude à cette langue."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Une langue berbère du nord de l'Algérie, en Kabylie, que ses locuteurs appellent taqbaylit.",
+      "followUp": "D'où vient le nom kabyle, et pourquoi a-t-on aussi dit zwawa ?"
+    }
   }
 }

@@ -117,9 +117,10 @@ const FOLDS: Fold[] = [
     retired: ["PPL_HUTU_BURUNDI"],
     keeper: "FLG_NIGERCONGO/PPL_KIRUNDI_HUTU",
     carried: {
+      // No source read on 2026-11-03 describes an Imbo subgroup: the Imbo
+      // plain stays among the settlement zones, not the ethnicities.
       sourceTitle:
         "Accord d'Arusha pour la Paix et la Réconciliation au Burundi, 2000",
-      subGroup: "Imbo",
       exonym: "Wahutu",
     },
   },
@@ -139,9 +140,11 @@ const FOLDS: Fold[] = [
     retired: ["PPL_BRONG"],
     keeper: "FLG_KWA/PPL_BONO",
     carried: {
+      // Premium batch 01 (2026-11-03) rewrote this keeper from sources read
+      // in session and dropped the folded labels no source supports; only
+      // what the sourced fiche still carries is held here.
       sourceTitle: "SIL Ethnologue — Abron language [abr]",
       subGroup: "Gyaman",
-      exonym: "Akan piesie (premiers Akan)",
     },
   },
 ];

@@ -91,6 +91,7 @@ describe("LanguageFamilyDetailViewV2 — a long prose chapter folds after its fi
     expectFolded("Caractéristiques linguistiques", "Typologie", [
       "Traits phonologiques",
       "Relations avec les voisins",
+      "Innovations majeures",
     ]);
     expectFolded("Histoire et origines", "Origine probable", [
       "Période d'émergence",
@@ -125,6 +126,7 @@ describe("LanguageFamilyDetailViewV2 — a long prose chapter folds after its fi
       "Diffusion",
       "Ruptures historiques",
       "Zones de contact",
+      "Événements majeurs",
     ]);
   });
 

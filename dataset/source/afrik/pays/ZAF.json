@@ -3,9 +3,9 @@
   "nameFr": "Afrique du Sud",
   "nameEn": "South Africa",
   "nameOfficial": "République d'Afrique du Sud (Republic of South Africa)",
-  "summary": "L'Afrique du Sud porte un nom purement géographique, officialisé en 1961. Peuples khoïsan, royaumes nguni et chefferies sotho-tswana en occupaient le territoire avant la colonie du Cap. Onze langues officielles y disent une histoire faite de royaumes africains, de colonisation européenne et de sortie de l'apartheid.",
-  "etymology": "Le nom \"Afrique du Sud\" est géographique, désignant la position du pays à l'extrémité australe du continent africain. Le nom a été officialisé en 1961 lors de la proclamation de la République. Avant cela, le territoire était appelé \"Union sud-africaine\" (1910-1961).",
-  "nameOriginActor": "Le nom \"Afrique du Sud\" est géographique et a été officialisé par les autorités sud-africaines en 1961. Les navigateurs portugais utilisaient \"Cabo da Boa Esperança\" (Cap de Bonne-Espérance) pour désigner la région du Cap.",
+  "summary": "Le nom Afrique du Sud décrit la position du pays, à la pointe sud du continent. Écrit en anglais dès 1812 dans des livres missionnaires, il devient le nom d'un État en 1910 avec l'Union sud-africaine, puis celui de la République en 1961. Avant la colonie du Cap, le pays était habité par des Khoikhoi, des chasseurs et des peuples de langue bantu, qui ont fondé des royaumes comme celui des Zulu.",
+  "etymology": "Le nom Afrique du Sud décrit une position : le sud du continent africain. En anglais, South Africa désigne d'abord, au début du XIXe siècle, une région aux limites floues. Il devient le nom d'un État en 1910, avec l'Union sud-africaine (Union of South Africa), puis celui de la République d'Afrique du Sud en 1961.",
+  "nameOriginActor": "Le nom Union of South Africa figure dans la loi du Parlement du Royaume-Uni du 20 septembre 1909, qui crée l'État. Le nom South Africa était déjà écrit, en anglais, dans des livres de la Société missionnaire de Londres dès 1812.",
   "nameHistory": {
     "summary": "Le nom Afrique du Sud désigne un pays situé à la pointe sud du continent, la République d'Afrique du Sud, qui se nomme ainsi elle-même, South Africa en anglais et Suid-Afrika en afrikaans. D'autres noms existent : Union sud-africaine, de 1910 à 1961, et Azania, que des mouvements de libération proposent depuis 1959. Les sources ne s'accordent pas sur l'origine du nom Azania ; nous les présentons plus bas.",
     "names": [
@@ -481,42 +481,54 @@
         "Colonie du Cap (1652-1910)",
         "Union sud-africaine (1910-1961)"
       ],
-      "antiquity": "Le territoire était peuplé de peuples Khoisan (San et Khoikhoi), Nguni, Sotho-Tswana, Venda et Tsonga sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs territoires.",
-      "middleAges": "Développement de royaumes Nguni (proto-Zoulou, Xhosa, Swazi, Ndebele), chefferies Sotho-Tswana, royaumes Venda et Tsonga. Pas de nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Mosaïque de sociétés autonomes : Khoisan (San et Khoikhoi), royaumes Nguni, chefferies Sotho-Tswana, royaumes Venda et Tsonga. Pas d'unification politique.",
-      "colonization": "1488 : Découverte du Cap de Bonne-Espérance par les Portugais. 1652-1795 : Colonie hollandaise du Cap (Dutch Cape Colony). 1795-1910 : Colonie britannique du Cap (British Cape Colony). XIXe siècle : États boers (Transvaal, Orange Free State, Natal).",
-      "contemporary": "1910-1961 : Union sud-africaine (Union of South Africa). 1961 : République d'Afrique du Sud (Republic of South Africa). Le nom officiel en anglais est \"Republic of South Africa\" et en afrikaans \"Republiek van Suid-Afrika\"."
+      "antiquity": "Les Khoi-Khoi, des éleveurs, vivent dans la région depuis très longtemps, selon Léonard D. Ngcongco et Jan Vansina. Khoi-Khoi est le nom qu'ils se donnent. On les a souvent appelés Hottentots, un terme péjoratif. Des groupes de chasseurs ont été appelés « Boschiman » ou « San ». Selon les mêmes auteurs, le mot san veut dire « client », « voleur » ou « vagabond » en khoi-khoi, et aucun groupe de chasseurs ne l'emploie pour se désigner.",
+      "middleAges": "Les noms Nguni et Sotho-Tswana désignent deux grands ensembles de peuples de langue bantu du pays. Selon Léonard D. Ngcongco et Jan Vansina, ce sont des noms du XIXe siècle, adoptés pour nommer deux communautés culturelles qui vivent au sud et à l'ouest des Venda et des Tsonga. Ces auteurs situent vers 1500 la formation de traditions que ces peuples ont héritées de leurs ancêtres.",
+      "precolonial": "Au début du XIXe siècle, une série de guerres et de migrations transforme les États de la région. On l'appelle Mfecane, « l'écrasement », en langue nguni, et Difaqane, « le coup de marteau », en sotho-tswana, selon Leonard D. Ngcongco. Certains noms de peuples datent de cette époque : au Mozambique, les partisans du chef Soshangane étaient appelés Shangana, d'après son nom, selon le même auteur.",
+      "colonization": "Le navigateur portugais Bartolomeu Dias atteint le cap de Bonne-Espérance en 1488, selon Léonard D. Ngcongco et Jan Vansina. Les Hollandais occupent Le Cap de 1652 à 1795, puis les Britanniques s'en emparent, selon D. Denoon. Les colonisateurs donnent aussi des noms aux pays qu'ils annexent : peu après son arrivée en 1847, le gouverneur britannique Harry Smith annexe le pays xhosa entre la Keiskamma et le Kei sous le nom de Cafrerie britannique, selon Ngwabi Bhebe. Entre 1850 et 1880, ajoute cet historien, l'expression Afrique du Sud désigne seulement une région, partagée entre des colonies britanniques, des républiques boers et des États africains.",
+      "contemporary": "Le nom Union sud-africaine est celui de l'État créé le 31 mai 1910 par l'union de quatre colonies britanniques, selon la loi britannique de 1909. L'Union devient la République d'Afrique du Sud le 31 mai 1961. Des mouvements de libération emploient un autre nom, Azania, dont l'histoire des noms présente les origines possibles. Le préambule de la Constitution de 1996 nomme le pays dans plusieurs langues, dont Suid-Afrika en afrikaans et South Africa en anglais."
     },
     "kingdoms": [
       {
         "name": "Royaumes Nguni",
         "period": "Précolonial - XIXe siècle",
         "entryType": "polity",
+        "timeRange": {
+          "startYear": 1401,
+          "endYear": 1900,
+          "precision": "approximate",
+          "datingNote": "Le début retient le XVe siècle, que les traditions orales donnent comme date la plus tardive pour les chefferies xhosa du Transkei ; la fin couvre le XIXe siècle, comme le libellé de la période."
+        },
         "dominantPeoples": ["Zulu", "Xhosa", "Swazi", "Ndebele"],
         "politicalCenters": ["KwaZulu-Natal", "Eastern Cape"],
-        "historicalRole": "Royaumes Nguni puissants, expansion zouloue sous Shaka (début XIXe siècle), résistance à la colonisation."
+        "historicalRole": "Les peuples nguni vivent entre les montagnes du Drakensberg et l'océan Indien. Selon des traditions orales rapportées par Léonard D. Ngcongco et Jan Vansina, des chefferies xhosa existent au Transkei au XVe siècle au plus tard, et vers 1500 les Nguni occupent presque tout le territoire où ils vivent en 1800. Au début du XIXe siècle, plusieurs États nguni du Nord s'affrontent, dont ceux des Ndwandwe de Zwide, des Mthethwa de Dingiswayo et des Ngwane de Sobhuza. Leurs rois organisent les jeunes gens en régiments par classes d'âge, selon Leonard D. Ngcongco. Chassé de la vallée du Pongolo par Zwide, Sobhuza pose dans les montagnes du Swaziland actuel les fondations de la nation swazi."
       },
       {
         "name": "Royaume zoulou",
-        "period": "Début XIXe - fin XIXe siècles",
+        "period": "1818 - 1879",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1801,
-          "endYear": 1900,
+          "startYear": 1818,
+          "endYear": 1879,
           "precision": "approximate",
-          "datingNote": "Le libellé distingue des phases d'intensité inégale ; les bornes retenues encadrent l'ensemble de la période."
+          "datingNote": "1818 est l'année où Chaka prend la tête de la confédération mthethwa ; la petite chefferie zulu existait déjà avant. 1879 est l'année où les Britanniques divisent le Zululand en treize chefferies."
         },
         "dominantPeoples": ["Zulu"],
-        "politicalCenters": ["KwaZulu-Natal"],
-        "historicalRole": "Royaume zoulou puissant fondé par Shaka, expansion territoriale, résistance aux Britanniques (guerres anglo-zouloues, 1879)."
+        "politicalCenters": ["Zululand (actuel KwaZulu-Natal)"],
+        "historicalRole": "Le royaume zulu naît d'une petite chefferie, celle de Senzangakhona, qui paie tribut au royaume mthethwa de Dingiswayo. En 1818, Dingiswayo est capturé et tué par Zwide, roi des Ndwandwe. Chaka (Shaka), fils de Senzangakhona et général de Dingiswayo, prend alors la tête de la confédération mthethwa et l'intègre à l'État zulu. Il loge ses régiments dans des casernes, les arme d'une courte sagaie et bat les Ndwandwe en 1819 et 1820, selon Leonard D. Ngcongco. Le 11 janvier 1879, une armée britannique envahit le pays zulu. L'armée zulu la bat à Isandhlwana le 22 janvier, mais les Britanniques reviennent en force en juillet. Ils exilent le roi Cetshwayo au Cap et divisent le Zululand en treize chefferies, selon David Chanaiwa."
       },
       {
         "name": "Chefferies Sotho-Tswana",
         "period": "Précolonial - présent",
         "entryType": "polity",
+        "timeRange": {
+          "startYear": 1500,
+          "ongoing": true,
+          "precision": "approximate",
+          "datingNote": "Le début retient l'époque, vers 1500, où se fixent les traditions que les peuples sotho-tswana du XIXe siècle ont héritées ; les chefferies elles-mêmes sont plus anciennes. La Constitution de 1996 reconnaît encore les autorités traditionnelles."
+        },
         "dominantPeoples": ["Sotho", "Tswana", "Pedi"],
-        "politicalCenters": ["Lesotho", "provinces du nord"],
-        "historicalRole": "Chefferies Sotho-Tswana, organisation politique traditionnelle, résistance à la colonisation."
+        "politicalCenters": ["Vallée du Caledon (royaume de Moshoeshoe)"],
+        "historicalRole": "Les peuples sotho-tswana vivent sur le plateau situé à l'ouest des monts Lebombo et du Drakensberg, selon Leonard D. Ngcongco. Au milieu du XIXe siècle, le royaume sotho de Moshoeshoe accueille de nombreux réfugiés qui fuient les Boers. Il a besoin pour eux de la plus grande partie des terres de la vallée du Caledon et entre en conflit avec ses voisins, selon Ngwabi Bhebe. La Constitution de 1996 reconnaît le rôle des autorités traditionnelles selon le droit coutumier."
       },
       {
         "name": "Colonie du Cap",
@@ -527,22 +539,26 @@
           "endYear": 1910,
           "precision": "year"
         },
-        "dominantPeoples": ["Khoisan", "colons européens", "esclaves"],
-        "politicalCenters": ["Le Cap (capitale coloniale)"],
-        "historicalRole": "Colonie hollandaise puis britannique, développement de l'apartheid, résistance des peuples autochtones."
+        "dominantPeoples": [
+          "Khoi-Khoi",
+          "colons européens",
+          "esclaves venus d'Afrique et d'Asie"
+        ],
+        "politicalCenters": ["Le Cap"],
+        "historicalRole": "En 1652, la Compagnie hollandaise des Indes orientales installe au Cap une garnison, commandée par Jan van Riebeeck, pour ravitailler ses navires en route vers l'Asie. Elle fait venir des esclaves d'autres régions d'Afrique et des Indes orientales. Les Khoi qui survivent dans la colonie se mêlent à d'autres groupes et forment le noyau des Métis du Cap, selon D. Denoon. Les Britanniques prennent Le Cap en 1795. En 1910, la colonie du Cap de Bonne-Espérance entre dans l'Union sud-africaine."
       },
       {
         "name": "États boers",
-        "period": "XIXe siècle",
-        "entryType": "polity",
+        "period": "1852 - 1902",
+        "entryType": "colonial",
         "timeRange": {
-          "startYear": 1801,
-          "endYear": 1900,
-          "precision": "century"
+          "startYear": 1852,
+          "endYear": 1902,
+          "precision": "year"
         },
-        "dominantPeoples": ["Boers (Afrikaners)", "peuples autochtones"],
-        "politicalCenters": ["Transvaal", "Orange Free State"],
-        "historicalRole": "Républiques boers indépendantes, guerres anglo-boers (1880-1881, 1899-1902)."
+        "dominantPeoples": ["Boers", "peuples africains"],
+        "politicalCenters": ["Transvaal", "État libre d'Orange"],
+        "historicalRole": "Par la convention de Sand River, le 17 janvier 1852, les Britanniques reconnaissent l'indépendance des Boers du Transvaal. Par la convention de Bloemfontein, le 23 février 1854, ils accordent l'indépendance aux Boers établis au nord de l'Orange, selon Ngwabi Bhebe. À la même époque, les Africains perdent peu à peu leurs terres et leur souveraineté au profit des colonies britanniques et des Boers, ajoute-t-il. La guerre anglo-boer s'achève par le traité de Vereeniging en 1902, selon David Chanaiwa. En 1909, la loi britannique qui crée l'Union compte le Transvaal et la colonie du fleuve Orange parmi les colonies qu'elle unit."
       },
       {
         "name": "Union sud-africaine",
@@ -556,8 +572,12 @@
         "dominantPeoples": [
           "Tous les peuples sud-africains sous régime ségrégationniste"
         ],
-        "politicalCenters": ["Pretoria", "Le Cap (capitale législative)"],
-        "historicalRole": "Unification des colonies britanniques et républiques boers, développement de l'apartheid (1948-1994)."
+        "politicalCenters": [
+          "Pretoria (siège du gouvernement)",
+          "Le Cap (siège du Parlement)",
+          "Bloemfontein (siège de la cour d'appel)"
+        ],
+        "historicalRole": "L'Union sud-africaine naît le 31 mai 1910 de l'union de quatre colonies britanniques : le Cap de Bonne-Espérance, le Natal, le Transvaal et la colonie du fleuve Orange. La loi de 1909 qui la crée fixe le siège du gouvernement à Pretoria, celui du Parlement au Cap et celui de la cour d'appel à Bloemfontein. En 1948, le Parti national gagne les élections et instaure l'apartheid, selon Locksley Edmondson. Les lois de ce régime séparent les habitants selon leur race, comme la loi sur les zones de résidence de 1950, selon David Chanaiwa. En mars 1960, à Sharpeville, la police tire sur une manifestation contre les laissez-passer et fait 72 morts, puis le gouvernement interdit l'ANC et le PAC. L'Union devient une république le 31 mai 1961."
       },
       {
         "name": "République d'Afrique du Sud",
@@ -574,133 +594,166 @@
           "Le Cap (capitale législative)",
           "Bloemfontein (capitale judiciaire)"
         ],
-        "historicalRole": "Apartheid (1948-1994), résistance (ANC, etc.), transition démocratique (1994), développement économique, défis de réconciliation et d'égalité."
+        "historicalRole": "La République d'Afrique du Sud est proclamée le 31 mai 1961, sous le régime de l'apartheid. Une loi de 1959 regroupe les Africains dans des « homelands », ou bantoustans, qui correspondent à des groupes ethniques désignés par l'État : zulu, sotho, xhosa, tswana, tsonga et venda, selon David Chanaiwa. Après le procès de Rivonia, qui suit une descente de police en 1963, Nelson Mandela et d'autres dirigeants de l'ANC sont emprisonnés à vie à Robben Island. En 1991, le Parlement abroge la loi de 1950 qui inscrivait chaque habitant dans un groupe racial, selon South African History Online. Le pays tient ses premières élections démocratiques le 27 avril 1994, et Nelson Mandela devient président le 10 mai 1994. La Constitution actuelle est signée le 10 décembre 1996, selon le gouvernement sud-africain."
       }
     ],
     "majorPeoples": [
       {
         "name": "Zulu",
-        "selfAppellation": "Zulu",
-        "exonyms": ["Zulu (terme utilisé par les Européens)"],
+        "selfAppellation": "amaZulu",
+        "exonyms": ["Zoulou"],
         "peopleId": "PPL_ZULU",
         "mainRegion": "KwaZulu-Natal",
-        "languages": ["Zulu", "anglais", "afrikaans"],
-        "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Zulu\" est neutre et accepté."
+        "languages": ["isiZulu (zul)"],
+        "languageFamily": "FLG_BANTU",
+        "appellationRemarks": "Le nom Zulu est d'abord celui d'une petite chefferie, celle de Senzangakhona, que son fils Chaka transforme en royaume après 1818, selon Leonard D. Ngcongco. Le recensement de 2022 nomme la langue isiZulu ; c'est la langue la plus parlée à la maison dans le pays."
       },
       {
         "name": "Xhosa",
-        "selfAppellation": "AmaXhosa",
-        "exonyms": ["Xhosa (terme utilisé par les Européens)"],
+        "selfAppellation": "amaXhosa",
+        "exonyms": [],
         "peopleId": "PPL_XHOSA",
         "mainRegion": "Eastern Cape",
-        "languages": ["Xhosa", "anglais", "afrikaans"],
-        "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Xhosa\" est neutre et accepté. L'auto-appellation \"AmaXhosa\" est préférée."
+        "languages": ["isiXhosa (xho)"],
+        "languageFamily": "FLG_BANTU",
+        "appellationRemarks": "Selon D. Denoon, les Xhosa étaient unis de façon assez lâche par leur allégeance commune au clan royal des descendants de Tshawe. Le recensement de 2022 nomme la langue isiXhosa ; quatre habitants sur cinq de l'Eastern Cape la parlent le plus souvent à la maison."
       },
       {
         "name": "Pedi",
-        "selfAppellation": "Pedi",
-        "exonyms": [
-          "Pedi (terme utilisé par les Européens)",
-          "parfois appelés \"Northern Sotho\""
-        ],
+        "selfAppellation": "Bapedi",
+        "exonyms": ["Northern Sotho"],
         "peopleId": "PPL_PEDI",
         "mainRegion": "Limpopo",
-        "languages": ["Pedi", "anglais", "afrikaans"],
+        "languages": ["Sepedi (nso)"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Pedi\" est neutre et accepté."
+        "appellationRemarks": "La Constitution et le recensement de 2022 nomment la langue Sepedi. Elle est la plus parlée à la maison dans la province du Limpopo, par 55,5 % des habitants en 2022."
       },
       {
         "name": "Sotho (Sud)",
         "selfAppellation": "Basotho",
-        "exonyms": [
-          "Sotho (terme utilisé par les Européens)",
-          "\"Southern Sotho\""
-        ],
+        "exonyms": ["Southern Sotho"],
         "peopleId": "PPL_SOTHO",
         "mainRegion": "Free State, Gauteng",
-        "languages": ["Sesotho", "anglais", "afrikaans"],
-        "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Sotho\" est neutre et accepté. L'auto-appellation \"Basotho\" est préférée."
+        "languages": ["Sesotho (sot)"],
+        "languageFamily": "FLG_BANTU",
+        "appellationRemarks": "Selon Léonard D. Ngcongco et Jan Vansina, le nom Sotho-Tswana est un nom du XIXe siècle, adopté pour un ensemble de peuples dont font partie les Basotho. Le recensement de 2022 nomme la langue Sesotho ; 72,3 % des habitants du Free State la parlent le plus souvent à la maison."
       },
       {
         "name": "Tswana",
-        "selfAppellation": "Tswana",
-        "exonyms": [
-          "Tswana (terme utilisé par les Européens)",
-          "parfois appelés \"Setswana\" (terme alternatif)"
-        ],
+        "selfAppellation": "Batswana",
+        "exonyms": ["Bechuana"],
         "peopleId": "PPL_TSWANA",
         "mainRegion": "North West",
-        "languages": ["Setswana", "anglais", "afrikaans"],
-        "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Tswana\" est neutre et accepté."
+        "languages": ["Setswana (tsn)"],
+        "languageFamily": "FLG_BANTU",
+        "appellationRemarks": "Le recensement de 2022 nomme la langue Setswana ; 72,8 % des habitants de la province du North West la parlent le plus souvent à la maison."
       },
       {
         "name": "Tsonga",
-        "selfAppellation": "Tsonga",
-        "exonyms": [
-          "Tsonga (terme utilisé par les Européens)",
-          "parfois appelés \"Shangaan\" (terme alternatif)"
-        ],
+        "selfAppellation": "Vatsonga",
+        "exonyms": ["Shangaan"],
         "peopleId": "PPL_TSONGA",
         "mainRegion": "Limpopo, Mpumalanga",
-        "languages": ["Tsonga", "anglais", "afrikaans"],
+        "languages": ["Xitsonga (tso)"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Tsonga\" est neutre et accepté."
+        "appellationRemarks": "Le nom Shangaan rappelle le chef Soshangane : au Mozambique, ses partisans étaient appelés Shangana, d'après son nom, et son royaume de Gaza soumit des communautés tsonga, selon Leonard D. Ngcongco. Le recensement de 2022 nomme la langue Xitsonga."
       },
       {
         "name": "Venda",
-        "selfAppellation": "Venda",
-        "exonyms": ["Venda (terme utilisé par les Européens)"],
+        "selfAppellation": "VhaVenda",
+        "exonyms": [],
         "peopleId": "PPL_VENDA",
         "mainRegion": "Limpopo",
-        "languages": ["Venda", "anglais", "afrikaans"],
-        "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Venda\" est neutre et accepté."
+        "languages": ["Tshivenda (ven)"],
+        "languageFamily": "FLG_BANTU",
+        "appellationRemarks": "Le recensement de 2022 nomme la langue Tshivenda ; elle est la langue la plus parlée à la maison par 17,4 % des habitants du Limpopo."
       },
       {
         "name": "Swazi",
-        "selfAppellation": "Swazi",
-        "exonyms": [
-          "Swazi (terme utilisé par les Européens)",
-          "parfois appelés \"Swati\" (terme alternatif)"
-        ],
+        "selfAppellation": "Emaswati",
+        "exonyms": ["Swati"],
         "peopleId": "PPL_SWAZI",
         "mainRegion": "Mpumalanga",
-        "languages": ["Swazi", "anglais", "afrikaans"],
+        "languages": ["siSwati (ssw)"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Swazi\" est neutre et accepté."
+        "appellationRemarks": "Le peuple ngwane-dlamini, conduit par Sobhuza, prend le nom de Swazi quand Mswati (Mswazi) succède à son père, mort en 1840, selon Leonard D. Ngcongco. Le recensement de 2022 nomme la langue siSwati ; 30,5 % des habitants de Mpumalanga la parlent le plus souvent à la maison."
       },
       {
         "name": "Ndebele",
-        "selfAppellation": "Ndebele",
-        "exonyms": [
-          "Ndebele (terme utilisé par les Européens)",
-          "parfois appelés \"Matabele\" (terme historique)"
-        ],
-        "peopleId": "PPL_NDEBELE",
-        "mainRegion": "Mpumalanga, Limpopo",
-        "languages": ["Ndebele", "anglais", "afrikaans"],
-        "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Ndebele\" est neutre et accepté."
+        "selfAppellation": "AmaNdebele",
+        "exonyms": [],
+        "peopleId": "PPL_NDEBELE_SA",
+        "mainRegion": "Mpumalanga, Gauteng, Limpopo",
+        "languages": ["isiNdebele (nbl)"],
+        "languageFamily": "FLG_BANTU",
+        "appellationRemarks": "En Afrique du Sud, le nom Ndebele désigne surtout les Ndzundza et les Manala, qui vivent dans les actuelles provinces de Mpumalanga, du Gauteng et du Limpopo. Un autre groupe, les sujets de Mzilikazi, a fui vers le nord et a fondé les Ndebele du Zimbabwe, que les Britanniques ont appelés Matabele, selon South African History Online."
       }
     ],
     "culture": {
-      "culturalTraditions": "Musique traditionnelle (maskandi, mbaqanga), danse traditionnelle, poésie orale, artisanat (perles, poterie, vannerie), architecture traditionnelle, lutte traditionnelle",
-      "dominantReligions": "Christianisme (protestant majoritaire, catholique), croyances traditionnelles (syncrétisme), islam (minorité), hindouisme (minorité)",
-      "lifestyles": "Vie principalement rurale et urbaine, agriculture (maïs, blé, canne à sucre), élevage (bovins, ovins), pêche (côtes), exploitation minière (or, diamants, platine), industrie, services, urbanisation importante",
-      "socialOrganization": "Système de chefferies traditionnelles, structure clanique patrilinéaire, organisation en familles étendues et lignages, importance des ancêtres, système de conseils d'anciens",
-      "regionalRelations": "Relations historiques avec les peuples du Lesotho, du Botswana, du Zimbabwe, du Mozambique, de l'Eswatini, de la Namibie. Diaspora importante au Royaume-Uni, aux États-Unis, et dans les pays occidentaux."
+      "mainLanguages": [
+        {
+          "name": "isiZulu",
+          "isoCode": "zul",
+          "isPrimary": true
+        },
+        {
+          "name": "isiXhosa",
+          "isoCode": "xho"
+        },
+        {
+          "name": "Afrikaans",
+          "isoCode": "afr"
+        },
+        {
+          "name": "Sepedi",
+          "isoCode": "nso"
+        },
+        {
+          "name": "Anglais (English)",
+          "isoCode": "eng"
+        },
+        {
+          "name": "Setswana",
+          "isoCode": "tsn"
+        },
+        {
+          "name": "Sesotho",
+          "isoCode": "sot"
+        },
+        {
+          "name": "Xitsonga",
+          "isoCode": "tso"
+        },
+        {
+          "name": "siSwati",
+          "isoCode": "ssw"
+        },
+        {
+          "name": "Tshivenda",
+          "isoCode": "ven"
+        },
+        {
+          "name": "isiNdebele",
+          "isoCode": "nbl"
+        },
+        {
+          "name": "Langue des signes sud-africaine",
+          "isoCode": "sfs"
+        }
+      ],
+      "culturalTraditions": "L'Afrique du Sud compte douze langues officielles. La Constitution de 1996 en nommait onze : neuf langues bantu, l'afrikaans et l'anglais. Elle demandait à l'État d'élever le statut des langues autochtones, dont l'usage avait été réduit. Une loi de 2023 ajoute la langue des signes sud-africaine ; elle entre en vigueur par une proclamation publiée le 26 juin 2026. Au recensement de 2022, l'isiZulu est la langue la plus parlée à la maison (24,4 % des habitants âgés d'un an ou plus), devant l'isiXhosa (16,3 %) et l'afrikaans (10,6 %). Les langues khoi-khoi ont marqué les langues nguni : selon Léonard D. Ngcongco et Jan Vansina, elles ont fourni environ 14 % du vocabulaire du zulu et 20 % de celui du xhosa, et elles ont transformé leurs sons. À Mapungubwe, dans la vallée du Limpopo, les fouilles ont livré des objets en or, dont le plus connu est un rhinocéros en or, selon South African History Online. Les peintures de maisons, les perles et les ornements dits ndebele sont surtout l'œuvre des Ndebele ndzundza de Mpumalanga et du Gauteng, selon la même source.",
+      "dominantReligions": "Au recensement de 2022, 85,3 % des habitants se disent chrétiens et 7,8 % pratiquent une religion traditionnelle africaine. L'islam réunit 1,6 % des habitants, l'hindouisme 1,1 %, et 2,9 % se disent sans religion. La religion traditionnelle africaine est la plus présente au KwaZulu-Natal (13,6 %), où l'hindouisme est aussi le plus présent (4,2 %). L'islam est le plus présent dans la province du Western Cape (5,2 %).",
+      "lifestyles": "Au recensement de 2022, le pays compte un peu plus de 62 millions d'habitants. Les provinces les plus peuplées sont le Gauteng, avec 15 millions d'habitants, et le KwaZulu-Natal, avec 12,4 millions. Un ménage sur sept environ (13,8 %) pratique l'agriculture ou l'élevage ; la plupart produisent seulement pour leur propre consommation. Les ménages agricoles sont les plus nombreux au KwaZulu-Natal, dans le Limpopo et dans l'Eastern Cape. À partir de 1870, la découverte de gisements de diamants et d'or pousse les Britanniques à étendre leur domination sur toute la région, selon Ngwabi Bhebe.",
+      "socialOrganization": "Dans les sociétés nguni décrites par D. Denoon, la famille, qui possède du bétail et cultive la terre, est l'unité de base. Elle est rattachée par la lignée paternelle à un lignage, puis à un clan. Au début du XIXe siècle, les rois nguni du Nord organisent les jeunes hommes et les jeunes femmes en régiments par classes d'âge, qui ne peuvent se marier qu'avec la permission du roi, selon Leonard D. Ngcongco. Aujourd'hui, la Constitution de 1996 reconnaît l'institution, le statut et le rôle des autorités traditionnelles selon le droit coutumier, et les tribunaux appliquent ce droit quand il est applicable.",
+      "regionalRelations": "Les guerres du Mfecane, au début du XIXe siècle, ont touché un territoire qui va du Zululand jusqu'au sud de la Tanzanie, selon Leonard D. Ngcongco. Elles sont à l'origine de royaumes voisins : la nation swazi, fondée par Sobhuza dans l'actuel Swaziland, et le royaume de Gaza, fondé par Soshangane au Mozambique. Aujourd'hui, l'Afrique du Sud est membre de la Communauté de développement de l'Afrique australe (SADC), qui réunit seize États et dont le siège est à Gaborone, au Botswana."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement du territoire par des peuples Khoisan (San et Khoikhoi), puis migrations bantoues (Nguni, Sotho-Tswana). Développement de royaumes et chefferies indépendants.",
-      "middleAges": "Développement de royaumes Nguni (proto-Zoulou, Xhosa, Swazi, Ndebele), chefferies Sotho-Tswana, royaumes Venda et Tsonga. Pas d'unification politique.",
-      "precolonial": "Expansion zouloue sous Shaka (début XIXe siècle). Royaumes Nguni puissants. Résistance à la colonisation européenne.",
-      "colonization": "1488 : Découverte du Cap par les Portugais. 1652 : Installation hollandaise au Cap. 1795 : Colonie britannique. XIXe siècle : États boers (Transvaal, Orange Free State). Guerres anglo-boers (1880-1881, 1899-1902). 1910 : Union sud-africaine.",
-      "independenceStruggle": "L'Afrique du Sud était déjà indépendante (1910), mais sous régime ségrégationniste. Apartheid (1948-1994) : système de ségrégation raciale. Résistance (ANC, etc.). Transition démocratique (1994).",
-      "postIndependence": "Apartheid (1948-1994) : système de ségrégation raciale, résistance, sanctions internationales. Transition démocratique (1994) : élection de Nelson Mandela, réconciliation nationale. République démocratique depuis 1994 : développement économique, défis de réconciliation et d'égalité."
+      "ancientPeriods": "Les Khoi-Khoi, des éleveurs, vivent dans la région depuis très longtemps, selon Léonard D. Ngcongco et Jan Vansina. À Lydenburg, dans l'est de l'ancien Transvaal, on a trouvé des têtes en céramique du Ve siècle de notre ère et des traces d'agriculture ; le premier âge du fer commence à cette époque, selon les mêmes auteurs. Des cultivateurs et éleveurs de langue bantu, qui travaillent le fer, s'installent au sud du Limpopo entre le milieu et la fin du Ier millénaire, selon Leonard D. Ngcongco.",
+      "middleAges": "Dans la vallée du Limpopo, Mapungubwe devient un centre où vivent des dirigeants riches. Dans leurs tombes, au sommet de la colline, on a trouvé des perles et des plaques d'or ainsi que des objets importés, selon Brian Fagan. South African History Online situe l'apogée de ce centre de commerce entre 1200 et 1300 environ, alors que Fagan, en 1985, plaçait l'installation des dirigeants sur la colline au XVe siècle. Le site est inscrit au patrimoine mondial en 2003. Plus au sud, des chefferies xhosa existent au Transkei au XVe siècle au plus tard, selon des traditions orales rapportées par Léonard D. Ngcongco et Jan Vansina.",
+      "precolonial": "Au début du XIXe siècle, le Mfecane bouleverse les États de la région : des royaumes anciens sont vaincus, d'autres doivent quitter leur territoire, et de grands royaumes centralisés apparaissent, selon Leonard D. Ngcongco. En 1818, Chaka prend la tête de la confédération mthethwa et l'intègre à l'État zulu ; il bat les Ndwandwe en 1819 et 1820. Sobhuza fonde la nation swazi dans les montagnes du Swaziland actuel. Au milieu du XIXe siècle, le royaume sotho de Moshoeshoe s'agrandit dans la vallée du Caledon, selon Ngwabi Bhebe.",
+      "colonization": "En 1488, le navigateur portugais Bartolomeu Dias atteint le cap de Bonne-Espérance et rencontre des Khoi-Khoi à Mossel Bay, selon Léonard D. Ngcongco et Jan Vansina. En 1652, la Compagnie hollandaise des Indes orientales installe une garnison au Cap ; elle y fait venir des esclaves d'Afrique et des Indes orientales. Les Britanniques prennent Le Cap en 1795, selon D. Denoon. Les Britanniques reconnaissent l'indépendance des Boers du Transvaal en 1852, puis celle des Boers établis au nord de l'Orange en 1854, selon Ngwabi Bhebe. En 1879, l'armée zulu bat les Britanniques à Isandhlwana, mais le Zululand est conquis la même année, selon David Chanaiwa. La guerre anglo-boer s'achève en 1902 par le traité de Vereeniging. Le 31 mai 1910, quatre colonies britanniques s'unissent dans l'Union sud-africaine.",
+      "independenceStruggle": "Le South African Native National Congress, créé en 1912, mène une protestation sans violence pour les droits civiques, selon David Chanaiwa. En 1955, un Congrès des peuples, où Africains, Métis, Indiens et Blancs sont représentés, adopte une charte pour une Afrique du Sud libre, unie et non raciste, selon le même auteur. Après le massacre de Sharpeville, en mars 1960, le gouvernement interdit l'ANC et le PAC. Nelson Mandela, Walter Sisulu et d'autres membres de l'ANC fondent alors un mouvement clandestin, Umkhonto we Sizwe. En 1976, l'année des émeutes de Soweto, est créée l'Organisation des peuples africains d'Azanie (AZAPO).",
+      "postIndependence": "L'Afrique du Sud est un État depuis le 31 mai 1910, selon le tableau des indépendances de l'Histoire générale de l'Afrique, mais elle est alors dirigée par une minorité blanche. En 1948, le Parti national instaure l'apartheid, selon Locksley Edmondson. À partir de 1959, l'État regroupe les Africains dans des bantoustans, selon David Chanaiwa. En 1991, le Parlement abroge la loi de 1950 qui inscrivait chaque habitant dans un groupe racial, selon South African History Online. Les premières élections démocratiques ont lieu le 27 avril 1994, et Nelson Mandela devient président le 10 mai 1994. La Constitution est signée le 10 décembre 1996, selon le gouvernement sud-africain. Le recensement de 2022 classe encore les habitants en « groupes de population », qu'il définit comme une classification par race. Ces groupes reprennent, sous des noms proches, les quatre groupes raciaux de la loi de 1950 ; le recensement ne compte pas les peuples."
     },
     "sources": [
       {
@@ -747,7 +800,8 @@
         "title": "Statistics South Africa – Census 2022 Statistical Release P0301.4 (Figure 2.3: Percentage distribution by population group, 1996–2022)",
         "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
         "tier": "official",
-        "source_kind": "official_statistics"
+        "source_kind": "official_statistics",
+        "notes": "Rapport du recensement de 2022, publié par l'office national de la statistique en octobre 2023, p. 7. La figure 2.3 donne la part de chaque groupe de population en 2022 : Black African 81,4 %, Coloured 8,2 %, White 7,3 %, Indian or Asian 2,7 %, Other 0,4 %."
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
@@ -760,7 +814,238 @@
         "url": "https://www.statssa.gov.za/publications/P0302/P03022025.pdf",
         "tier": "official",
         "source_kind": "official_statistics",
-        "notes": "National statistical office; supplies the 2025 headcount per population group."
+        "notes": "Office national de la statistique : estimations de la population au milieu de l'année 2025, par groupe de population."
+      },
+      {
+        "title": "Statistics South Africa – Census 2022 Statistical Release P0301.4 (Table 2.4: population by population group and province, 1996–2022)",
+        "author": "Statistics South Africa",
+        "year": 2023,
+        "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. 6 (tableau 2.4) et p. 99 (définitions)",
+        "notes": "Rapport du recensement de 2022, p. 6 et p. 99. Le tableau 2.4 compte, pour 2022, 50 486 856 Black African, 5 052 349 Coloured, 1 697 506 Indian/Asian, 4 504 252 White et 247 353 Other, soit 61 988 314 personnes, sans les réponses non précisées. Le glossaire définit le groupe de population (« population group ») comme une « classification of “people” by race ». Le rapport ne donne aucun chiffre par peuple."
+      },
+      {
+        "title": "Statistics South Africa – Census 2022 Statistical Release P0301.4 (Tables 2.8 and 2.9: language spoken most often in the household)",
+        "author": "Statistics South Africa",
+        "year": 2023,
+        "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. 22-23",
+        "notes": "Rapport du recensement de 2022, p. 22 et 23. Langue la plus parlée à la maison en 2022 : isiZulu 24,4 %, isiXhosa 16,3 %, Afrikaans 10,6 %, Sepedi 10,0 %, English 8,7 %, Setswana 8,3 %, Sesotho 7,8 %, Xitsonga 4,7 %, SiSwati 2,8 %, Tshivenda 2,5 %, IsiNdebele 1,7 %. Par province : isiZulu 80,0 % au KwaZulu-Natal, isiXhosa 81,8 % dans l'Eastern Cape, Sesotho 72,3 % dans le Free State, Setswana 72,8 % dans le North West, Sepedi 55,5 % et Tshivenda 17,4 % dans le Limpopo, SiSwati 30,5 % à Mpumalanga. Le rapport note que la langue des signes est devenue la douzième langue officielle en juillet 2023."
+      },
+      {
+        "title": "Statistics South Africa – Census 2022 Statistical Release P0301.4 (Table 2.10: religious affiliation/belief)",
+        "author": "Statistics South Africa",
+        "year": 2023,
+        "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. 24",
+        "notes": "Rapport du recensement de 2022, p. 24. Christianisme 85,3 %, religion traditionnelle africaine 7,8 %, islam 1,6 %, hindouisme 1,1 %, sans religion 2,9 %. La religion traditionnelle africaine (13,6 %) et l'hindouisme (4,2 %) sont les plus présents au KwaZulu-Natal, l'islam dans le Western Cape (5,2 %). Le rapport ajoute que le groupe Indian/Asian compte la plus forte part de musulmans et d'hindous."
+      },
+      {
+        "title": "Statistics South Africa – Census 2022 Statistical Release P0301.4 (Executive summary and section 9: agricultural households)",
+        "author": "Statistics South Africa",
+        "year": 2023,
+        "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. x et p. 89-92",
+        "notes": "Rapport du recensement de 2022. Le résumé donne plus de 62 millions d'habitants, 15 millions au Gauteng et 12,4 millions au KwaZulu-Natal. La section 9 compte 13,8 % de ménages agricoles (2 463 429) ; 80,7 % d'entre eux produisent seulement pour leur propre consommation. Les ménages agricoles sont les plus nombreux au KwaZulu-Natal, dans le Limpopo et dans l'Eastern Cape."
+      },
+      {
+        "title": "Constitution of the Republic of South Africa, 1996 (Act 108 of 1996)",
+        "author": "République d'Afrique du Sud",
+        "year": 1996,
+        "url": "https://www.gov.za/sites/default/files/images/a108-96.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "page": "sections 6, 42 et 211",
+        "notes": "Texte publié par le gouvernement sud-africain, version mise à jour jusqu'aux amendements de 2003. La section 6 nomme onze langues officielles et demande à l'État d'élever le statut des langues autochtones, dont l'usage a été réduit dans le passé. La section 42 fixe le siège du Parlement au Cap. La section 211 reconnaît l'institution, le statut et le rôle des autorités traditionnelles selon le droit coutumier, et demande aux tribunaux d'appliquer ce droit quand il est applicable."
+      },
+      {
+        "title": "Constitution Eighteenth Amendment Act, 2023 (Act No. 3 of 2023)",
+        "author": "République d'Afrique du Sud",
+        "year": 2023,
+        "url": "https://www.gov.za/sites/default/files/gcis_document/202307/49041-27-7-consteighteenthamendac32023.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Journal officiel n° 49041 du 27 juillet 2023. Loi approuvée par le président le 19 juillet 2023. Elle réécrit la section 6(1) de la Constitution, qui nomme désormais douze langues officielles, dont la langue des signes sud-africaine (« South African Sign Language »). Elle entre en vigueur à une date fixée par proclamation."
+      },
+      {
+        "title": "Proclamation Notice 321 of 2026: Commencement of the Constitution Eighteenth Amendment Act, 2023",
+        "author": "Présidence de la République d'Afrique du Sud",
+        "year": 2026,
+        "url": "https://www.gov.za/sites/default/files/gcis_document/202607/54901gon321.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Journal officiel n° 54901 du 26 juin 2026. La proclamation fait entrer en vigueur la loi de 2023 avec effet immédiat. Un avis rectificatif, la proclamation 324 de 2026 publiée au Journal officiel n° 54933 du 2 juillet 2026, précise qu'elle a été signée à Pretoria le 26 mars 2026."
+      },
+      {
+        "title": "South African Government – South Africa at a glance",
+        "author": "Gouvernement sud-africain",
+        "year": null,
+        "url": "https://www.gov.za/about-sa/south-africa-glance",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Page de présentation du pays, consultée le 3 novembre 2026. Elle donne trois capitales : Pretoria (administrative), Le Cap (législative) et Bloemfontein (judiciaire), et indique que la Cour constitutionnelle siège à Johannesburg. Elle cite la langue des signes sud-africaine parmi les langues officielles."
+      },
+      {
+        "title": "South African Government – Milestones of 20 Years of Freedom",
+        "author": "Gouvernement sud-africain",
+        "year": 2014,
+        "url": "https://www.gov.za/issues/20years/milestones-20-years-freedom",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Chronologie publiée par le gouvernement, consultée le 3 novembre 2026. Premières élections démocratiques le 27 avril 1994 ; Nelson Mandela devient le premier président démocratique le 10 mai 1994 ; il signe la Constitution le 10 décembre 1996."
+      },
+      {
+        "title": "SADC – Member States",
+        "author": "Communauté de développement de l'Afrique australe",
+        "year": null,
+        "url": "https://www.sadc.int/member-states",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Page de l'organisation, consultée le 3 novembre 2026. Elle compte seize États membres, dont l'Afrique du Sud, et indique que le siège est à Gaborone, au Botswana."
+      },
+      {
+        "title": "ISO 639-3, tables de codes publiées par SIL Global, autorité d'enregistrement de la norme",
+        "author": null,
+        "year": null,
+        "url": "https://iso639-3.sil.org/code_tables/download_tables",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Table consultée le 3 novembre 2026. Codes des langues officielles : zul (Zulu), xho (Xhosa), afr (Afrikaans), nso (Pedi), eng (English), tsn (Tswana), sot (Southern Sotho), tso (Tsonga), ssw (Swati), ven (Venda), nbl (South Ndebele), sfs (South African Sign Language)."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, IV, ch. 23 : L'Afrique méridionale : les peuples et les formations sociales",
+        "author": "Léonard D. Ngcongco, en collaboration avec Jan Vansina",
+        "year": 1985,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 626-639",
+        "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane. Les recherches attestent l'ancienneté du peuplement khoi-khoi ; à Lydenburg, têtes en céramique du Ve siècle (p. 626). Notes de la p. 627 : Khoi-Khoi est le nom que se donnent ceux qu'on appelle souvent Hottentots, terme péjoratif ; Sotho-Tswana et Nguni sont des noms du XIXe siècle ; le mot san signifie « client », « voleur », « vagabond » en khoi-khoi. Chefferies xhosa au Transkei au XVe siècle au plus tard, et apport khoi-khoi de 14 % et 20 % au vocabulaire du zulu et du xhosa (p. 637). Bartolomeu Dias à Mossel Bay en 1488 (p. 639)."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, IV, ch. 21 : Les bassins du Zambèze et du Limpopo (+ 1100/+ 1500)",
+        "author": "Brian Murray Fagan",
+        "year": 1985,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 573-574",
+        "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane. À Mapungubwe, un petit groupe de dirigeants riches s'installe au sommet d'une colline qui domine la vallée du Limpopo ; l'auteur place cette installation au XVe siècle. Les tombes ont livré des perles et des plaques d'or et des objets importés."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 23 : L'Afrique australe",
+        "author": "D. Denoon",
+        "year": 1999,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 746, 752 et 757",
+        "notes": "UNESCO, volume dirigé par Bethwell A. Ogot. Les Hollandais occupent Le Cap de 1652 à 1795 (p. 746). Chez les Nguni, la famille est rattachée par la lignée paternelle à un lignage et à un clan ; les Xhosa sont unis par leur allégeance au clan royal des descendants de Tshawe (p. 752). La Compagnie hollandaise des Indes orientales installe une garnison commandée par Jan van Riebeeck ; elle fait venir des esclaves d'Afrique et des Indes orientales ; les Khoi qui survivent forment le noyau des Métis du Cap (p. 757)."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VI, ch. 5 : Le Mfecane et l'émergence de nouveaux États africains",
+        "author": "Leonard D. Ngcongco",
+        "year": 1996,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 117-132",
+        "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi. Installation des agriculteurs de langue bantu au sud du Limpopo au Ier millénaire, et partage entre Sotho-Tswana du plateau et Nguni de la côte (p. 117). Mfecane, « l'écrasement » en nguni, Difaqane, « le coup de marteau » en sotho-tswana, d'un territoire allant du Zululand au sud de la Tanzanie (p. 118). Régiments par classes d'âge (p. 122). Sobhuza fonde la nation swazi (p. 128) ; à la mort de Sobhuza en 1840, le peuple ngwane-dlamini prend le nom de Swazi sous son fils Mswati (p. 129). Mort de Dingiswayo en 1818, Chaka à la tête des Mthethwa, victoires sur les Ndwandwe en 1819 et 1820 (p. 131-132). Les partisans de Soshangane sont appelés Shangana d'après son nom (p. 132)."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VI, ch. 7 : Les Britanniques, les Boers et les Africains en Afrique du Sud, 1850-1880",
+        "author": "Ngwabi Bhebe",
+        "year": 1996,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 173-180",
+        "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi. Entre 1850 et 1880, l'Afrique du Sud est « une simple expression géographique » ; découverte des diamants et de l'or à partir de 1870 (p. 173). Harry Smith annexe le pays xhosa sous le nom de Cafrerie britannique ; royaume de Moshoeshoe dans la vallée du Caledon ; les Africains perdent leurs terres et leur souveraineté (p. 174). Convention de Sand River, 17 janvier 1852 (p. 178) ; convention de Bloemfontein, 23 février 1854 (p. 180)."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VII, ch. 9 : Initiatives et résistances africaines en Afrique méridionale",
+        "author": "David Chanaiwa",
+        "year": 1987,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 224-244",
+        "notes": "UNESCO, volume dirigé par A. Adu Boahen. Invasion britannique du pays zulu le 11 janvier 1879, victoire zulu à Isandhlwana, exil de Cetshwayo et partage du Zululand en treize chefferies (p. 224-226). Traité de Vereeniging de 1902, qui conclut la guerre anglo-boer (p. 237). Création du South African Native National Congress en 1912 (p. 244)."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VIII, ch. 10 : L'Afrique australe",
+        "author": "David Chanaiwa",
+        "year": 1998,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 282-301",
+        "notes": "UNESCO, volume dirigé par Ali A. Mazrui. Congrès des peuples de 1955 et loi sur les zones de résidence de 1950 (p. 282). Loi de 1959 sur les homelands, ou bantoustans, correspondant aux groupes zulu, sotho, xhosa, tswana, tsonga et venda (p. 283). Massacre de Sharpeville, interdiction de l'ANC et du PAC, Umkhonto we Sizwe et procès de Rivonia (p. 286). Création de l'AZAPO en 1976 (p. 301)."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VIII, ch. 28 : L'Afrique et les régions en développement",
+        "author": "Locksley Edmondson",
+        "year": 1998,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 883",
+        "notes": "UNESCO, volume dirigé par Ali A. Mazrui. Le Parti national, qui représente le nationalisme afrikaner, instaure officiellement l'apartheid après sa victoire aux élections de 1948."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+        "author": "Ali A. Mazrui",
+        "year": 1998,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 128, tableau 5.1",
+        "notes": "Tableau chronologique des indépendances : Afrique du Sud, 31 mai 1910, puissance coloniale la Grande-Bretagne (« Suid Afrika ») ; union de quatre colonies ; l'Union devient une république hors du Commonwealth britannique le 31 mai 1961 ; « dirigée par une minorité blanche »."
+      },
+      {
+        "title": "South Africa Act 1909",
+        "author": "Parlement du Royaume-Uni",
+        "year": 1909,
+        "url": "https://www.legislation.gov.uk/ukpga/Edw7/9/9/enacted",
+        "tier": "official",
+        "source_kind": "government",
+        "page": "sections 4, 18, 23 et 109",
+        "notes": "Loi du 20 septembre 1909, lue dans le fac-similé de l'édition originale publié sur le site officiel de la législation britannique. La section 4 unit les colonies du Cap de Bonne-Espérance, du Natal, du Transvaal et de la colonie du fleuve Orange sous le nom d'Union of South Africa. Les sections 18 et 23 fixent le siège du gouvernement à Pretoria et celui du Parlement au Cap ; la section 109 fait siéger la cour d'appel à Bloemfontein."
+      },
+      {
+        "title": "South African History Online — Ndebele",
+        "author": "South African History Online",
+        "year": null,
+        "url": "https://sahistory.org.za/article/ndebele",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Encyclopédie historique en ligne, consultée le 3 novembre 2026. Elle distingue les Ndebele du Transvaal, aujourd'hui au Gauteng, à Mpumalanga et dans le Limpopo, des sujets de Mzilikazi, qui ont fui vers le nord et que les Britanniques ont appelés Matabele. Les peintures de maisons, les perles et les ornements dits ndebele sont surtout l'œuvre des Ndebele ndzundza."
+      },
+      {
+        "title": "South African History Online — Mapungubwe",
+        "author": "South African History Online",
+        "year": 2017,
+        "url": "https://www.sahistory.org.za/place/mapungubwe",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Encyclopédie historique en ligne, consultée le 3 novembre 2026. Mapungubwe prospère comme centre de commerce entre 1200 et 1300 environ, et échange de l'or et de l'ivoire. L'objet le plus connu trouvé sur le site est un rhinocéros en or. Le site est inscrit au patrimoine mondial en juillet 2003."
+      },
+      {
+        "title": "South African History Online — Population Registration Act of 1950 repealed",
+        "author": "South African History Online",
+        "year": null,
+        "url": "https://sahistory.org.za/dated-event/population-registration-act-1950-repealed",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Encyclopédie historique en ligne, consultée le 3 novembre 2026. Le 17 juin 1991, le Parlement abroge la loi n° 30 de 1950 sur l'enregistrement de la population. Cette loi obligeait chacun à s'inscrire dès sa naissance dans l'un de quatre groupes raciaux : White, Black, Coloured et Indian."
       }
     ],
     "demographics": {
@@ -769,30 +1054,65 @@
       "source": "UNFPA – World Population Dashboard",
       "peoples": [
         {
-          "name": "Africains noirs",
+          "name": "Africains noirs (groupe « Black African » du recensement)",
+          "peopleId": null,
+          "population": 50486856,
+          "referenceYear": 2022,
           "percentageInCountry": 81.4,
-          "population": 51600000
+          "percentageInAfrica": null,
+          "region": null,
+          "languageFamily": null,
+          "mainLanguageCode": null
         },
         {
-          "name": "Métis (Coloureds)",
+          "name": "Métis (groupe « Coloured » du recensement)",
+          "peopleId": null,
+          "population": 5052349,
+          "referenceYear": 2022,
           "percentageInCountry": 8.2,
-          "population": 5300000
+          "percentageInAfrica": null,
+          "region": null,
+          "languageFamily": null,
+          "mainLanguageCode": null
         },
         {
-          "name": "Blancs",
+          "name": "Blancs (groupe « White » du recensement)",
+          "peopleId": null,
+          "population": 4504252,
+          "referenceYear": 2022,
           "percentageInCountry": 7.3,
-          "population": 4500000
+          "percentageInAfrica": null,
+          "region": null,
+          "languageFamily": null,
+          "mainLanguageCode": null
         },
         {
-          "name": "Indiens / Asiatiques",
+          "name": "Indiens ou Asiatiques (groupe « Indian/Asian » du recensement)",
+          "peopleId": null,
+          "population": 1697506,
+          "referenceYear": 2022,
           "percentageInCountry": 2.7,
-          "population": 1600000
+          "percentageInAfrica": null,
+          "region": null,
+          "languageFamily": null,
+          "mainLanguageCode": null
         },
         {
-          "name": "Autres / Non spécifié",
-          "percentageInCountry": 0.4
+          "name": "Autres (groupe « Other » du recensement)",
+          "peopleId": null,
+          "population": 247353,
+          "referenceYear": 2022,
+          "percentageInCountry": 0.4,
+          "percentageInAfrica": null,
+          "region": null,
+          "languageFamily": null,
+          "mainLanguageCode": null
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "L'Afrique du Sud est le pays situé à la pointe sud du continent africain. Son nom décrit cette position ; il est celui de l'État depuis l'Union sud-africaine, en 1910.",
+      "followUp": "D'où vient le nom Azania, que des mouvements de libération donnent à l'Afrique du Sud ?"
     }
   }
 }

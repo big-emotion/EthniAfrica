@@ -7,81 +7,85 @@
     "appellations": {
       "mainName": "Akyem",
       "selfAppellation": "Akyem",
-      "exonyms": ["Akim", "Great Akim", "Acchem", "Akan Grande"],
-      "originOfExonyms": "Les formes Akim et Great Akim sont d'origine europeenne (portugaise, hollandaise et anglaise), apparaissant dans les documents commerciaux du XVIIe siecle pour designer les royaumes akyem comme principale source d'or du Golfe de Guinee. La forme Acchem apparait dans les chroniques europeennes anterieures au XVIIIe siecle.",
+      "exonyms": ["Akim"],
+      "originOfExonyms": "La forme Akim apparaît chez le marchand néerlandais Willem Bosman en 1705. Elle reste celle des textes britanniques : en 1948 encore, le gouvernement de la Gold Coast publie l'étude de l'anthropologue M. J. Field sous le titre Akim-Kotoku. En 1881, le missionnaire Johann Gottlieb Christaller écrit Akem, en notant que les gens du pays écrivent Akyem.",
       "whyProblematic": null,
-      "contemporaryUsage": "Le nom Akyem est officialise dans les denominations administratives du Ghana (municipalites Abuakwa Nord, Abuakwa Sud, Akyemansa, West Akim). Les trois divisions historiques – Abuakwa, Kotoku et Bosome – restent des entites de chefferie actives avec leurs Omanhene respectifs.",
-      "linguisticFamily": "FLG_BENOUECONGO",
-      "ethnoLinguisticGroup": "Akan (sous-groupe Twi)",
-      "historicalRegion": "Region orientale du Ghana, vallee du Birem-Pra, foret du Sud-Est",
-      "currentCountries": ["GHA"]
+      "contemporaryUsage": "Les historiens et le catalogue de langues Glottolog emploient aujourd'hui la forme Akyem. Le nom se porte avec celui de l'un des États akyem : Akyem Abuakwa, Akyem Kotoku ou Akyem Bosome.",
+      "linguisticFamily": "FLG_KWA",
+      "ethnoLinguisticGroup": "Akan ; leur langue appartient au groupe tano des langues kwa, selon Glottolog",
+      "historicalRegion": "Le pays akyem, dans l'est du Ghana : le bassin de la Birim, entre le Pra à l'ouest et les monts du Kwawu au nord",
+      "currentCountries": ["GHA"],
+      "spellingAliases": ["Akem"]
     },
     "ethnicities": ["Akyem Abuakwa", "Akyem Kotoku", "Akyem Bosome"],
     "origins": {
-      "ancientOrigins": "Les Akyem sont issus de trois communautes de la frontiere orientale de l'etat d'Adansi, qui faisaient partie du vaste reseau akan Accany (ou Arcania) qui incluait aussi Adanse et Denkyira. Leurs premiers etablissements connus sont Kokobiante, Akrokerri et Sebenso. La lignee royale d'Abuakwa descend du clan Asona. L'historien Willem Bosman (1705) notait qu'Akyem fournissait autant d'or que n'importe quel autre pays de la region.",
-      "formationPeriod": "A partir de la seconde moitie du XVIIe siecle, les groupes akyem traversent graduellement la riviere Pra depuis l'interieur de l'Adanse. Abuakwa sous Aninkwatia s'installe d'abord a Sebenso, puis se deplace vers la riche vallee Birem-Pra. Kotoku et Bosome restent pres du lac Bosomtwe. Au milieu du XVIIe siecle, Akyem Abuakwa se constitue en monarchie centralisee ; le premier dirigeant connu est Aninkwatia, reigne depuis Banso.",
+      "ancientOrigins": "Les premiers habitants connus de l'ouest du pays akyem étaient de petites communautés de chasseurs venus d'Ashanti et d'Akwamu, sans gouvernement commun, selon l'anthropologue M. J. Field. Ces premiers venus, comme ceux qui se disent autochtones, sont appelés atwia, « des gens qui étaient seuls et ne dépendaient de personne ». En 1881, Johann Gottlieb Christaller note que certaines villes d'Akyem Abuakwa, comme Tafo, venaient à l'origine du peuple guan, tout en parlant twi. Dès 1705, Willem Bosman décrit le pays d'Akim comme une terre qui fournit autant d'or que n'importe quel pays qu'il connaît.",
+      "formationPeriod": "Au début du XVIIe siècle commence une grande vague de migrations venues d'Ashanti et du Denkyira, selon M. J. Field. À la fin du même siècle, pendant la guerre entre l'Ashanti et le Denkyira, des chefs du Denkyira vaincus se réfugient au-delà du Pra avec leurs partisans. Face aux raids ashanti, ces immigrants s'allient aux premiers habitants et forment trois unions militaires, appelées oman : Akyem Abuakwa, Akyem Kotoku et Akyem Bosome, selon la même autrice. Le pasteur Carl Christian Reindorf écrit de son côté que la tribu akem a traversé le Pra pour s'installer au pays akem.",
       "migrationRoutes": [
-        "Migration depuis l'Adanse interior, traversee graduelle de la riviere Pra (seconde moitie du XVIIe siecle)",
-        "Abuakwa : de Sebenso vers la vallee Birem-Pra (capitale eventual Kyebi via Kyebirie)",
-        "Kotoku et Bosome : etablissements pres du lac Bosomtwe, puis separation progressive"
+        "De l'Ashanti et du Denkyira vers l'ouest du pays akyem, en traversant le Pra, à partir du XVIIe siècle, selon M. J. Field",
+        "Le siège de Kokobiante, venu d'Adanse, s'installe à Kyebi après un passage chez le roi d'Akwamu, selon la version akwamu que rapporte M. J. Field",
+        "Le siège de Denkyira-Miriem, futur siège principal d'Akyem Kotoku, passe par Akrofonso, puis Gyadam, avant de s'établir à Oda, selon M. J. Field"
       ],
       "historicalSettlementZones": [
-        "Vallee du Birem-Pra (Abuakwa – capitale Kyebi)",
-        "Abords du lac Bosomtwe (Kotoku et Bosome)",
-        "Region orientale du Ghana actuel",
-        "Oda (Kotoku apres deplacement de Gyadam)",
-        "Koforidua (hote des refugies Juaben, devenu New Juaben)"
+        "Kyebi, capitale d'Akyem Abuakwa",
+        "Oda, capitale d'Akyem Kotoku",
+        "Akim-Swedru, siège d'Akyem Bosome",
+        "Le bassin de la Birim, entre le Pra et les monts du Kwawu",
+        "Koforidua, où s'installent en 1877 les Dwaben venus d'Asante, selon Christaller"
       ],
-      "unificationsOrDivisions": "Les trois etats akyem – Abuakwa, Kotoku et Bosome – maintiennent des liens de parente tout en evoluant comme entites politiques separees. Ils cooperent souvent (ex. : guerre commune contre l'Akwamu vers 1730) mais s'opposent parfois (Kotoku avec Asante contre Abuakwa en 1731-1737). Apres 1730, ils coupent l'empire Akwamu, creant l'etat d'Akuapem sur les terres conquises.",
-      "externalInfluences": "Pression de Denkyira puis d'Asante (guerres de 1742, 1744-1745, 1765). En 1717, les forces akyem tendent une embuscade a l'Asantehene Osei Tutu et le tuent pres de la riviere Pra. Alliance avec les Britanniques au XIXe siecle. Influence missionnaire et coloniale a partir du XIXe siecle.",
-      "majorHistoricalEvents": "1717 : mort de l'Asantehene Osei Tutu dans une embuscade akyem. 1730 : Grande guerre Akyem-Akwamu, victoire akyem, demantellement de l'empire Akwamu, prise de controle des territories Ga et Adangbe. 1742 : Opoku Ware Ier conquer Abuakwa et Kotoku. 1764 : bataille d'Atakpame. Sous Nana Dokua (1817-1835) : periode de paix relative et consolidation. Fin XIXe-XXe siecle : role prominent dans les mouvements pan-africains et nationalistes ghaneen (membres du Big Six d'origine akyem)."
+      "unificationsOrDivisions": "Les trois oman akyem avaient leurs sièges à Kyebi pour Abuakwa, à Gyadam pour Kotoku et à Akim-Swedru pour Bosome. Après une querelle avec Akyem Abuakwa, le chef d'Akyem Kotoku s'installe à Oda, selon M. J. Field. Une ville pouvait passer d'un oman à l'autre : Field compare l'oman à une société d'entraide plutôt qu'à un territoire. Christaller date de 1860 le départ des Kotoku du nord du pays, après une querelle entre leur roi Agyeman, à Gyadam, et le roi Ata, à Kyebi. Le nom Kotoku viendrait d'un lieu proche du Kwawu où ce groupe s'était d'abord réfugié, selon Carl Christian Reindorf.",
+      "externalInfluences": "Le pays akyem a longtemps lutté contre l'Asante voisin. Selon Christaller, Akyem Abuakwa fut à plusieurs reprises soumis par l'Asante et se révolta contre lui, du début du XVIIIe siècle jusqu'en 1826. Selon Reindorf, l'Akem devint tributaire de l'Asante après sa défaite face au roi Osei Tutu. Akyem Abuakwa reste rangé de longue date parmi les ennemis jurés des Asante, selon l'historienne Claude-Hélène Perrot.",
+      "majorHistoricalEvents": "Deux récits s'opposent sur la mort du roi ashanti Osei Tutu, vers 1730 selon Carl Christian Reindorf. Selon le premier, le roi serait tombé dans une embuscade akem en traversant le Pra ; selon les Asante, qu'il cite aussi, il serait mort de maladie pendant la campagne. En 1733, d'après le même auteur, le roi d'Accra demande l'aide des trois rois d'Akem contre l'Akwamu, qui assiège sa ville. Les forces d'Akem, d'Accra et d'Akuapem battent l'Akwamu, qui doit se replier au-delà de la Volta. L'historien A. A. Boahen date de 1731 cette victoire sur l'Akwamu."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Monarchie centralisee pour Abuakwa (la plus importante), chefferies organisees pour Kotoku et Bosome. Chef paramount d'Abuakwa : l'Okyenhene, siege a Kyebi. Le systeme comprend un conseil de chefs de sous-communautes. Tradition de double pouvoir symbolique : Okyenhene et Ohemaa (reine mere). Akyem est matrilineaire : l'heritage et la succession passent par la ligne maternelle.",
-      "clanOrganization": "La lignee royale d'Abuakwa descend du clan Asona, partage avec d'autres groupes akan. Chaque sous-groupe akyem possede ses propres affiliations claniques matrilineaires (abusua).",
+      "traditionalPoliticalSystem": "Chaque oman akyem est dirigé par un omanhene. Les trois premiers furent choisis parmi les immigrants venus du Denkyira, les seuls à avoir l'expérience de la guerre, selon M. J. Field. Dans l'oman d'Akyem Kotoku, plusieurs grands chefs vivent dans la capitale, Oda, auprès de l'omanhene. En 1881, Christaller décrit Akyem Abuakwa comme divisé en huit districts, chacun autour d'une ville et de son chef ; le premier est celui de Kyebi, où réside le roi Amoako Ata.",
+      "clanOrganization": "Chaque ville akyem se compose de groupes de clan, appelés abusua, chacun avec son propre siège, selon M. J. Field. Ces clans sont plus anciens que les villes et que les oman, et la parenté de clan dépasse les frontières entre oman. Field observe aussi qu'aucun clan n'est plus royal qu'un autre : le chef d'une ville descend de son fondateur, quel que soit son clan.",
       "ageClassSystems": null,
-      "roleOfLineages": "La lignee maternelle (abusua) determine la succession au trone, l'heritage de la terre et l'appartenance au clan. La reine mere (Ohemaa) joue un role crucial dans la selection du chef.",
-      "religiousAuthority": "Veneration traditionnelle de la riviere Birim comme symbole sacre de vie, de force et de renouvellement (source de diamants industriels). Festival Ohum biannuel (juin-juillet et septembre-octobre) rendant hommage aux ancetres et aux divinites protectrices. Depuis la colonisation, le christianisme (protestantisme et catholicisme) est largement adopte."
+      "roleOfLineages": "Dans les familles royales, la succession suit la lignée maternelle, selon M. J. Field, qui note que certaines femmes au centre de cette succession avaient été adoptées. La reine mère a son propre siège, à côté de celui du chef ; son influence dépend surtout de sa personnalité, selon Field.",
+      "religiousAuthority": "Lors de la fête annuelle d'Afahye, chaque clan de la ville sert un repas à ses morts dans un bois sacré, selon M. J. Field, qui observe la ville d'Abenase à partir de 1938. Environ un tiers des habitants, chrétiens, n'avaient pas le droit de participer à ces rites."
     },
     "languages": {
-      "mainLanguage": "Akan (Twi, dialecte akyem)",
+      "mainLanguage": "Akan (aka), sous sa forme twi",
       "isoCodes": ["aka", "twi"],
-      "dialects": [
-        "Akyem Twi (partie du groupe dialectal Asante-Akyem-Kwahu)",
-        "Variantes locales entre Abuakwa, Kotoku et Bosome"
-      ],
-      "vehicularRole": "Le twi akyem est mutuellemet intelligible avec les autres dialectes twi (asante, akuapem, kwahu). L'akan est la langue la plus parlee du Ghana, par environ 80% de la population comme langue premiere ou seconde. L'akyem participe au standard literate du twi au sein de l'Akan Orthography Committee."
+      "dialects": ["Akyem Bosome"],
+      "vehicularRole": "Les Akyem parlent le twi, la langue akan que décrit le dictionnaire de Johann Gottlieb Christaller en 1881 ; il y signale par une abréviation les mots du parler akyem. Le catalogue Glottolog range l'akyem bosome parmi les variétés de l'akan. Au recensement du Ghana de 2021, les Akan, ensemble dont font partie les Akyem, rassemblent 45,7 % des Ghanéens."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q418389",
+      "glottocode": "akan1250",
+      "iso639_3": "aka"
     },
     "culture": {
-      "majorRites": "Festival Ohum (biannuel, en juin-juillet et septembre-octobre) : celebration de la recolte de l'igname, veneration des ancetres et des divinites, avec la riviere Birim comme element sacre central. Funerailles elaborees avec deuil public et ceremonies de transition vers le monde spirituel. Rites d'intronisation des chefs impliquant les tabourets sacres.",
-      "symbols": "La riviere Birim (riviere sacree, source de vie et de diamants, symbole de renouvellement). Le tabouret sacre (siege de l'autorite et de l'ame de la communaute). L'inhumation symbolique dans une pierre a Akuapem comme promesse de protection. Les regalia royaux de l'Okyenhene.",
-      "artsAndMusic": "Les artisans akyem tissent le kente, travaillent l'or et sculptent des tabourets et des statues en bois. L'orfèvrerie est liée à une ancienne tradition de commerce de l'or. Les cérémonies associent tambours, percussions et chants rituels. Les récits transmis dans la région racontent aussi l'histoire des familles et de leurs ancêtres. Les proverbes akan sont appelés mmebusem. Dès 1879, le linguiste missionnaire Johann Gottlieb Christaller en a réuni plus de 3 600 en twi et en fante. L'usage des proverbes est partagé par les groupes de langue akan.",
-      "spiritualities": "Religion traditionnelle akan : veneration des ancetres, croyance en les obosom (divinites de la nature), culte de la riviere Birim. Depuis le XIXe siecle, le christianisme (protestantisme methodiste, presbyterien, adventiste, catholique) est largement repandu. Societe matrilineaire avec forte coherence clanique."
+      "majorRites": "Pour un chef mort, on organise une fête d'adieu à son esprit, parfois des mois ou des années après l'enterrement. M. J. Field assiste à Oda à celle d'un omanhene d'Akyem Kotoku : elle dure environ une semaine et réunit les chefs et les habitants de tout l'oman. Chaque année, la fête d'Afahye est aussi l'occasion de servir un repas aux morts de chaque clan, selon la même autrice.",
+      "symbols": "Le siège du chef, que les textes anglais appellent stool, représente le pouvoir d'une ville : un chef est installé sur ce siège, et chaque clan et la reine mère ont aussi le leur, selon M. J. Field.",
+      "artsAndMusic": "Pendant la fête d'adieu à un omanhene, à Oda, les anciens tambours de guerre sont sortis et battus toute la nuit ; les chefs arrivent avec leurs tambourinaires, et leurs guerriers dansent et chantent, selon M. J. Field. Les proverbes akan sont appelés mmebusem. Dès 1879, le linguiste missionnaire Johann Gottlieb Christaller en a réuni plus de 3 600 en twi et en fante. L'usage des proverbes est partagé par les groupes de langue akan.",
+      "spiritualities": "Les clans akyem venus d'Ashanti récitent les mêmes récits d'origine que leurs parents ashanti : selon M. J. Field, les Toa seraient descendus du ciel par une échelle, les Oreko seraient sortis de terre et les Agona d'une rivière. Chacun vénère pourtant un lieu de l'ouest du pays akyem comme son lieu d'origine. Vers 1938, environ un tiers des habitants d'Abenase se disaient chrétiens, selon la même autrice."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Trois royaumes : Akyem Abuakwa (le plus puissant, capital Kyebi, dirigé par l'Okyenhene), Akyem Kotoku (capital Oda) et Akyem Bosome. Ils constituent ensemble les Royaumes d'Akyem, aussi appeles Grand Akyem. Apres 1730, creation de l'etat client d'Akuapem sur les terres Akwamu conquises.",
-      "relationsWithNeighbors": "Resistance continue contre l'empire Akwamu (debut XVIIIe siecle) et l'empire Asante (XVIIIe-XIXe siecles). Alliance avec les Ga et Adangbe apres 1730. Accueil des refugies Juaben a Koforidua (devenu New Juaben). Conflits et alliances alternants avec Fante, Wassa, Denkyira et Twifo.",
-      "conflictsOrAlliances": "Alliance Akyem-Akwamu contre leur occupant commun (vers 1730). Guerres contre Asante : 1718-1719, 1742, 1744-1745, 1765. Alliance avec Wassa, Denkyira, Twifo, Fante contre Asante (milieu XVIIIe siecle). Soutien a Ada contre Anlo a la bataille de Nonombe (vers 1752). Vers 1838, gouverneur britannique George Maclean rapporte Akyem et Akuapem comme provinces asante (possiblement exagere).",
-      "diaspora": "Au XXe siecle, certains membres de la communaute akyem jouent un role prominent dans les mouvements nationalistes et pan-africains ghaneen. Des personnalites d'origine akyem font partie des Big Six, les fondateurs du mouvement d'independance du Ghana."
+      "kingdomsOrChiefdoms": "Il existe trois États akyem : Akyem Abuakwa, dont la capitale est Kyebi, Akyem Kotoku, dont la capitale est Oda, et Akyem Bosome, dont le siège est à Akim-Swedru, selon M. J. Field. En 1881, Christaller compte aussi les Dwaben installés en pays akyem depuis 1877, sous le nom d'Akyem Dwaben.",
+      "relationsWithNeighbors": "Les Akyem ont longtemps été en conflit avec l'Asante et avec l'Akwamu, selon Carl Christian Reindorf. En 1733, ils s'allient aux Ga d'Accra et aux Akuapem contre l'Akwamu, selon le même auteur. En 1877, des Dwaben venus d'Asante s'installent en pays akyem, sur le site de Koforidua, avec l'appui du gouvernement britannique, selon Christaller.",
+      "conflictsOrAlliances": "Vers 1700, le roi ashanti Osei Tutu bat l'Akem, qui devient son tributaire, selon Reindorf. Les différends entre l'Akem et l'Akwamu, de 1702 à 1720, portent sur des princesses confiées à l'Akwamu, selon le même auteur. En 1733, les trois rois d'Akem aident Accra à chasser l'Akwamu. Akyem Abuakwa se révolte à plusieurs reprises contre l'Asante jusqu'en 1826, selon Christaller.",
+      "diaspora": null
     },
     "demography": {
-      "totalPopulation": 1128000,
-      "referenceYear": 2025,
-      "source": "Joshua Project 2025 (Akan-Akyem in Ghana : 1 128 000)",
+      "totalPopulation": 1148000,
+      "referenceYear": 2026,
+      "source": "Joshua Project, base de données missionnaire, consultée le 3 novembre 2026 : 1 148 000 Akan-Akyem au Ghana. Le recensement du Ghana de 2021 ne compte que l'ensemble des Akan, soit 13 925 576 personnes, sans détail pour les Akyem. En 1881, Christaller estimait Akyem Abuakwa à environ 50 000 habitants et Akyem Kotoku à environ 25 000.",
       "distributionByCountry": [
         {
           "country": "GHA",
-          "population": 1128000,
-          "note": "Region orientale principalement, districts de Abuakwa Nord, Abuakwa Sud, Akyemansa, West Akim, Birim et Kwaebibirem"
+          "population": 1148000,
+          "note": "Estimation de Joshua Project ; la source ne la répartit pas par région."
         }
       ]
     },
     "sources": [
       {
-        "title": "Joshua Project – Akan-Akyem in Ghana, 2025",
-        "url": "https://joshuaproject.net/countries/gh",
+        "title": "Joshua Project – Akan-Akyem in Ghana",
+        "url": "https://joshuaproject.net/people_groups/19600/GH",
         "tier": "unverified",
-        "source_kind": "missionary_database"
+        "source_kind": "missionary_database",
+        "notes": "Base de données missionnaire. Fiche « Akan-Akyem in Ghana », consultée le 3 novembre 2026 : elle donne une population de 1 148 000."
       },
       {
         "title": "LearnAkan – Akan Language dialects",
@@ -99,11 +103,98 @@
         "url": null,
         "tier": "referenced",
         "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
+      },
+      {
+        "title": "Akim-Kotoku: an oman of the Gold Coast",
+        "author": "M. J. Field",
+        "year": 1948,
+        "url": "https://archive.org/details/in.ernet.dli.2015.506263",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 2-4, 19, 28-41",
+        "notes": "Étude d'une anthropologue au service du gouvernement colonial de la Gold Coast, publiée pour lui par les Crown Agents à Londres en 1948, à partir d'une enquête commencée en 1938. Lue dans l'exemplaire numérisé par la Digital Library of India, sur Internet Archive, le 3 novembre 2026. Cité pour l'histoire du peuplement, les trois oman (p. 4 : « three military organizations — Akim-Abuakwa, Akim-Kotoku, and Akim-Bosome »), les clans, la reine mère et les fêtes."
+      },
+      {
+        "title": "The History of the Gold Coast and Asante",
+        "author": "Carl Christian Reindorf",
+        "year": 1895,
+        "url": "https://archive.org/details/historyofgoldcoa00rein",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 9, 44, 68-69, 79-80",
+        "notes": "Bâle, Mission évangélique, 1895. Histoire écrite par un pasteur ghanéen de la Mission de Bâle, à partir des traditions et des archives ; lue dans l'exemplaire numérisé sur Internet Archive le 3 novembre 2026. Cité pour la mort d'Osei Tutu (p. 68), le nom Kotoku (p. 69) et la guerre de 1733 contre l'Akwamu (p. 79-80)."
+      },
+      {
+        "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+        "author": "Johann Gottlieb Christaller",
+        "year": 1881,
+        "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "page": "p. 280, 639-641",
+        "notes": "Bâle, Mission évangélique, 1881, dictionnaire d'un missionnaire linguiste, avec une annexe sur la géographie de la Gold Coast ; lu dans l'exemplaire numérisé sur Internet Archive le 3 novembre 2026. Cité pour la forme Akyem (p. 639 : « Akem Country. Native writing: Akyem. »), les districts d'Akyem Abuakwa et les Kotoku (p. 640-641)."
+      },
+      {
+        "title": "A New and Accurate Description of the Coast of Guinea",
+        "author": "William Bosman",
+        "year": 1705,
+        "url": "https://archive.org/details/b30519032",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 84",
+        "notes": "Londres, 1705, traduction anglaise d'un récit paru en néerlandais en 1704 ; lue dans l'exemplaire numérisé sur Internet Archive le 3 novembre 2026. P. 84 : « Akim is the next in our way », pays qui fournit beaucoup d'or. Le récit porte le regard d'un agent de la Compagnie néerlandaise des Indes occidentales."
+      },
+      {
+        "title": "Rathbone, Richard. - Murder and Politics in Colonial Ghana",
+        "author": "Claude-Hélène Perrot",
+        "year": 1997,
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1997_num_37_145_1995_t1_0248_0000_4",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 248",
+        "notes": "Compte rendu paru dans les Cahiers d'études africaines, vol. 37, n° 145, 1997, p. 248-249, lu sur Persée le 3 novembre 2026. Il présente Kyebi comme la capitale de l'Akyem Abuakwa, un État akan rangé de longue date parmi les ennemis des Asante."
+      },
+      {
+        "title": "2021 Population and Housing Census, General Report, Volume 3C : Background Characteristics",
+        "author": "Ghana Statistical Service",
+        "year": 2021,
+        "url": "https://census2021.statsghana.gov.gh/gssmain/fileUpload/reportthemesub/2021%20PHC%20General%20Report%20Vol%203C_Background%20Characteristics_181121.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. 50",
+        "notes": "Rapport officiel du recensement de 2021, lu le 3 novembre 2026. Le tableau 5.5 compte 13 925 576 Akan, soit 45,7 % des Ghanéens, sans détail par sous-groupe."
+      },
+      {
+        "title": "Glottolog — Akan (akan1250)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/akan1250",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue de langues de l'Institut Max-Planck, consulté le 3 novembre 2026. Il range l'akan (code ISO aka) dans le groupe tano des langues kwa et compte l'akyem bosome parmi ses variétés."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Akyem sont un peuple akan de l'est du Ghana, réparti en trois États : Akyem Abuakwa, Akyem Kotoku et Akyem Bosome. Les Européens écrivaient Akim.",
+      "followUp": "Pourquoi les Européens écrivaient-ils Akim plutôt qu'Akyem ?"
+    },
+    "gaps": [
+      {
+        "field": "content.organization.ageClassSystems",
+        "reason": "Les sources que nous avons consultées ne décrivent pas de classes d'âge chez les Akyem."
+      },
+      {
+        "field": "content.historicalRole.diaspora",
+        "reason": "Les sources que nous avons consultées ne décrivent pas de communautés akyem installées hors du Ghana."
+      },
+      {
+        "field": "nameHistory.names[0]",
+        "reason": "Nous n'avons pas trouvé de source qui explique d'où vient le nom Akyem."
       }
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Akyem désigne un peuple akan de l'est du Ghana, qui se nomme lui-même Akyem. Les Européens l'ont longtemps écrit Akim, ou Akem. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Akyem désigne un peuple akan de l'est du Ghana, qui se nomme lui-même Akyem. Les Européens l'ont longtemps écrit Akim, dès 1705, ou Akem. Nous présentons plus bas l'histoire de ces formes.",
     "names": [
       {
         "nameText": "Akyem",
@@ -121,8 +212,8 @@
               "label": "Usage décrit par l'auteur"
             },
             "era": "modern",
-            "statement": "Le nom Akyem désigne l'un des peuples akan de l'Est, au Ghana, qui parlent presque tous la même langue, le twi, selon A. A. Boahen. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
-            "aspect": "meaning",
+            "statement": "Le nom Akyem désigne l'un des peuples akan de l'Est, au Ghana, qui parlent presque tous la même langue, le twi, selon A. A. Boahen.",
+            "aspect": "usage",
             "sources": [
               {
                 "title": "Histoire générale de l'Afrique, V, ch. 14 : Les États et les cultures de la côte de la Guinée inférieure",
@@ -188,9 +279,30 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "La forme qu'emploie un marchand néerlandais dès 1705 ; des historiens l'écrivent encore.",
+        "shortLine": "La forme qu'emploie un marchand néerlandais dès 1705 ; les textes britanniques l'ont gardée.",
         "periodLabel": "Écrit depuis 1705",
         "accounts": [
+          {
+            "period": {
+              "from": 1948,
+              "to": 1948,
+              "label": "1948"
+            },
+            "era": "colonial",
+            "statement": "Le nom Akim sert encore au gouvernement de la Gold Coast, qui publie l'étude de l'anthropologue M. J. Field, Akim-Kotoku. Elle y décrit trois oman : Akim-Abuakwa, Akim-Kotoku et Akim-Bosome.",
+            "sources": [
+              {
+                "title": "Akim-Kotoku: an oman of the Gold Coast",
+                "author": "M. J. Field",
+                "year": 1948,
+                "url": "https://archive.org/details/in.ernet.dli.2015.506263",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Étude d'une anthropologue au service du gouvernement colonial de la Gold Coast, publiée pour lui par les Crown Agents à Londres en 1948, à partir d'une enquête commencée en 1938. Lue dans l'exemplaire numérisé par la Digital Library of India, sur Internet Archive, le 3 novembre 2026."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1705,
@@ -253,6 +365,34 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 639",
                 "notes": "Bâle, Mission évangélique, 1881, lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. Annexe sur le pays akem : « 23-25. Akem Country. Native writing: Akyem. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Akim s'écrit Akem chez le pasteur Carl Christian Reindorf, qui range Akem Abuakwa, Akem Kotoku et Akem Dwaben parmi les États akan du Sud-Est.",
+            "formAsWritten": "Akem",
+            "actors": [
+              {
+                "name": "Carl Christian Reindorf",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The History of the Gold Coast and Asante",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9",
+                "notes": "Bâle, Mission évangélique, 1895. Histoire écrite par un pasteur ghanéen de la Mission de Bâle, à partir des traditions et des archives ; lue dans l'exemplaire numérisé sur Internet Archive le 3 novembre 2026. P. 9 : « Akem Abuakwa, Akem Kotoku, Akem Dwaben »."
               }
             ]
           }

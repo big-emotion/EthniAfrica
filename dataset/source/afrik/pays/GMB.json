@@ -3,11 +3,11 @@
   "nameFr": "Gambie",
   "nameEn": "The Gambia",
   "nameOfficial": "République de Gambie (Republic of The Gambia)",
-  "summary": "La Gambie tient son nom du fleuve qui la traverse et la définit — le pays épouse ses rives. Royaumes mandinka, chefferies wolof et peuples fula s'y côtoyaient avant la colonie britannique de 1888. Griots, kora et rites d'initiation kankurang y prolongent l'héritage mandé.",
-  "etymology": "Le nom \"Gambie\" viendrait du fleuve Gambie qui traverse le pays. Le nom du fleuve viendrait du portugais \"Gambia\" ou du terme local \"Kambra\" / \"Kambaa\". Les Britanniques ont adopté ce nom pour leur colonie. Le nom officiel inclut l'article \"The\" (La Gambie) pour le distinguer de la Zambie.",
-  "nameOriginActor": "Le nom \"Gambie\" a été donné par les navigateurs portugais au XVe siècle en référence au fleuve Gambie. Les Britanniques ont officialisé ce nom lors de la colonisation. Le nom a été officialisé à l'indépendance en 1965.",
+  "summary": "La Gambie porte le nom du fleuve qui la traverse, écrit Gambra dès 1455 par le navigateur vénitien Alvise Cadamosto. Indépendante depuis 1965 sous le nom anglais The Gambia, elle est devenue la République de Gambie en 1970. Au recensement de 2024, les groupes les plus nombreux sont les Mandinka, les Fula (Peuls), les Wolof, les Jola et les Sarahule.",
+  "etymology": "Le nom Gambie est d'abord celui d'un fleuve d'Afrique de l'Ouest. En 1455, le navigateur vénitien Alvise Cadamosto, au service du prince Henri de Portugal, l'écrit Gambra : des Africains ont parlé au prince d'un « royaume appelé Gambra », et des riverains disent à Cadamosto que c'est là « le pays de Gambra ». Vers 1505-1508, le Portugais Duarte Pacheco Pereira écrit rio de Gâmbia et note que, dans la langue des Mandingues, ce fleuve s'appelle Guabu. Le pays a ensuite pris le nom du fleuve. La loi britannique de 1964 sur l'indépendance l'appelle The Gambia, avec l'article. Selon un article d'Africanews de 2017, le Premier ministre de l'époque aurait voulu garder cet article pour que le pays ne soit pas confondu avec la Zambie.",
+  "nameOriginActor": "Le nom apparaît par écrit dans les récits des navigateurs au service du Portugal : Alvise Cadamosto l'écrit Gambra en 1455, d'après ce que lui disent des Africains, puis Duarte Pacheco Pereira écrit rio de Gâmbia vers 1505-1508. Les Britanniques gardent ce nom pour leur colonie et leur protectorat. La loi britannique de 1964 l'emploie sous la forme The Gambia pour l'État indépendant de 1965.",
   "nameHistory": {
-    "summary": "Le nom Gambie désigne un pays d'Afrique de l'Ouest, la République de Gambie, qui porte le nom du fleuve qui la traverse. En anglais, sa langue officielle, il s'écrit The Gambia. De 2015 à 2017, le pays s'est appelé officiellement République islamique de Gambie. On ne sait pas avec certitude d'où vient le nom Gambie ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Gambie désigne un pays d'Afrique de l'Ouest, la République de Gambie, qui porte le nom du fleuve qui la traverse. En anglais, sa langue officielle, il s'écrit The Gambia. Les plus anciens textes l'écrivent Gambra en 1455 et rio de Gâmbia vers 1505, et l'un d'eux donne un nom mandingue du fleuve, Guabu. De 2015 à 2017, le pays a aussi été proclamé République islamique de Gambie. Nous présentons plus bas ce que disent les sources de chacun de ces noms.",
     "names": [
       {
         "nameText": "Gambie",
@@ -20,14 +20,56 @@
         "accounts": [
           {
             "period": {
+              "from": 1970,
+              "to": null,
+              "label": "Depuis le 24 avril 1970"
+            },
+            "era": "modern",
+            "statement": "Le nom République de Gambie, Republic of The Gambia en anglais, est celui du pays depuis le 24 avril 1970. Ce jour-là, après un référendum tenu du 20 au 23 avril, la Gambie devient une république et Sir Dawda Jawara son premier président, selon le ministre britannique Maurice Foley. La liste des noms de pays des Nations unies donne encore ce nom complet en 2025.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Chambre des communes du Royaume-Uni — Republic of The Gambia Bill, 26 mai 1970 (Hansard)",
+                "author": "Chambre des communes du Royaume-Uni",
+                "year": 1970,
+                "url": "https://api.parliament.uk/historic-hansard/commons/1970/may/26/republic-of-the-gambia-bill-lords",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "vol. 801, col. 1771-1772",
+                "notes": "Débat du 26 mai 1970, lu en ligne. Le ministre Maurice Foley déclare que la Gambie est devenue une république le 24 avril 1970, après un référendum tenu du 20 au 23 avril, et salue son premier président, Sir Dawda Jawara ; Bernard Braine parle de « the new Republic of The Gambia »."
+              },
+              {
+                "title": "Liste des noms de pays du GENUNG (GEGN.2/2025/171/CRP.171)",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordonnateur Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 40",
+                "notes": "Document de la session 2025 du Groupe d'experts, daté du 23 avril 2025, lu en ligne le 10 octobre 2026. Entrée Gambie : en anglais, langue officielle du pays, le nom s'écrit « The Gambia » et le nom complet « Republic of The Gambia », avec un renvoi à une note UNTERM du 17 février 2017 ; en français, « Gambie (la) » et « République de Gambie (la) »."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1965,
               "to": null,
               "label": "Depuis le 18 février 1965"
             },
             "era": "modern",
-            "statement": "Le nom Gambie est celui de l'État indépendant depuis le 18 février 1965, selon l'Histoire générale de l'Afrique et l'Office of the Historian. En anglais, le pays l'écrit avec l'article, The Gambia, selon la liste des noms de pays des Nations unies.",
+            "statement": "Le nom Gambie est celui de l'État indépendant depuis le 18 février 1965. La loi britannique qui accorde l'indépendance réunit ce jour-là la colonie et le protectorat « sous le nom de The Gambia ». En anglais, le pays garde cette forme avec l'article, selon la liste des noms de pays des Nations unies.",
             "aspect": "usage",
             "sources": [
+              {
+                "title": "Royaume-Uni — Gambia Independence Act 1964",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1964,
+                "url": "https://www.legislation.gov.uk/ukpga/1964/93/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 1",
+                "notes": "Loi du 17 décembre 1964, lue en ligne. À partir du 18 février 1965, la colonie et le protectorat de la Gambie forment ensemble un État « under the name of The Gambia »."
+              },
               {
                 "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
                 "author": "Ali A. Mazrui",
@@ -66,7 +108,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Gambie désigne à la fois l'État et le fleuve qui le traverse : le pays porte le nom du fleuve, selon Africanews. On ne sait pas avec certitude d'où vient ce nom, et nous n'avons pas trouvé d'explication assez sourcée pour la présenter ici.",
+            "statement": "Le nom Gambie désigne à la fois l'État et le fleuve qui le traverse : le pays a reçu le nom du fleuve, selon Africanews. Devant la Chambre des lords, en 1964, le ministre britannique Lord Taylor rappelait que le pays s'appelait d'abord « The Gambra » en 1455.",
             "aspect": "meaning",
             "sources": [
               {
@@ -77,6 +119,16 @@
                 "tier": "unverified",
                 "source_kind": "press",
                 "notes": "Article du 19 janvier 2017, mis à jour le 13 août 2024, lu le 10 octobre 2026. Il écrit que le pays a reçu le nom du fleuve, « The River Gambia », et que le Premier ministre de l'époque a demandé l'accord du comité chargé des noms géographiques pour garder l'article, afin que le pays ne soit pas confondu avec la Zambie. Il ne date pas cette demande."
+              },
+              {
+                "title": "Chambre des lords du Royaume-Uni — Gambia Independence Bill, 3 décembre 1964 (Hansard)",
+                "author": "Chambre des lords du Royaume-Uni",
+                "year": 1964,
+                "url": "https://api.parliament.uk/historic-hansard/lords/1964/dec/03/gambia-independence-bill",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "vol. 261, col. 1205",
+                "notes": "Débat du 3 décembre 1964, lu en ligne. Lord Taylor, pour le gouvernement, dit avoir cherché l'origine du nom « The Gambia » et rapporte que le pays s'appelait d'abord « The Gambra » en 1455."
               }
             ]
           },
@@ -87,7 +139,7 @@
               "label": "Rapporté en 2017"
             },
             "era": "modern",
-            "statement": "Le nom Gambie garde en anglais l'article The, comme celui du fleuve, « The River Gambia ». Le Premier ministre de l'époque a demandé qu'on le conserve, pour que le pays ne soit pas confondu avec la Zambie, rapporte Africanews.",
+            "statement": "Le nom Gambie garde en anglais l'article The, comme celui du fleuve, « The River Gambia ». Le Premier ministre de l'époque aurait demandé qu'on le conserve, pour que le pays ne soit pas confondu avec la Zambie, rapporte Africanews. La loi britannique de 1964 sur l'indépendance écrit déjà The Gambia.",
             "sources": [
               {
                 "title": "Why Africa's 'smiling coast' is officially referred to as 'The' Gambia",
@@ -97,6 +149,16 @@
                 "tier": "unverified",
                 "source_kind": "press",
                 "notes": "Article du 19 janvier 2017, mis à jour le 13 août 2024, lu le 10 octobre 2026. Il écrit que le pays a reçu le nom du fleuve, « The River Gambia », et que le Premier ministre de l'époque a demandé l'accord du comité chargé des noms géographiques pour garder l'article, afin que le pays ne soit pas confondu avec la Zambie. Il ne date pas cette demande."
+              },
+              {
+                "title": "Royaume-Uni — Gambia Independence Act 1964",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1964,
+                "url": "https://www.legislation.gov.uk/ukpga/1964/93/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 1",
+                "notes": "Loi du 17 décembre 1964, lue en ligne. À partir du 18 février 1965, la colonie et le protectorat de la Gambie forment ensemble un État « under the name of The Gambia »."
               }
             ]
           },
@@ -153,16 +215,16 @@
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "periodLabel": "De 2015 à janvier 2017",
+        "periodLabel": "De décembre 2015 à janvier 2017",
         "accounts": [
           {
             "period": {
-              "from": 2015,
+              "from": 2017,
               "to": 2017,
-              "label": "De 2015 à janvier 2017"
+              "label": "Janvier 2017"
             },
             "era": "modern",
-            "statement": "Le nom République islamique de Gambie est le nom officiel du pays jusqu'en janvier 2017. Le président Adama Barrow annonce alors que le mot « islamique », ajouté en 2015, ne figurera plus dans le nom officiel, selon Al Jazeera, repris par le Daily Graphic.",
+            "statement": "Le nom République islamique de Gambie cesse d'être employé en janvier 2017. Le président Adama Barrow annonce alors que le mot « islamique » ne figurera plus dans le nom officiel, et que le pays est une république, selon Al Jazeera, repris par le Daily Graphic. En 2025, la liste des noms de pays des Nations unies donne le nom complet Republic of The Gambia.",
             "aspect": "usage",
             "sources": [
               {
@@ -173,6 +235,47 @@
                 "tier": "unverified",
                 "source_kind": "press",
                 "notes": "Dépêche publiée le 29 janvier 2017, lue le 10 octobre 2026. Elle rapporte que le nom officiel du pays ne contiendra plus le mot « Islamic », ajouté en 2015 sous la présidence de Yahya Jammeh, et que le pays est une république, « not the Islamic republic »."
+              },
+              {
+                "title": "Liste des noms de pays du GENUNG (GEGN.2/2025/171/CRP.171)",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordonnateur Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 40",
+                "notes": "Document de la session 2025 du Groupe d'experts, daté du 23 avril 2025, lu en ligne le 10 octobre 2026. Entrée Gambie : en anglais, langue officielle du pays, le nom s'écrit « The Gambia » et le nom complet « Republic of The Gambia », avec un renvoi à une note UNTERM du 17 février 2017 ; en français, « Gambie (la) » et « République de Gambie (la) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Décembre 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom République islamique de Gambie vient d'une déclaration du président Yahya Jammeh, au pouvoir depuis 1994. À la fin d'un meeting politique à Brufut, près de Banjul, il proclame la Gambie « État islamique », en invoquant la religion de la majorité et la rupture avec le passé colonial, selon une dépêche publiée par Al Jazeera le 12 décembre 2015. Un dirigeant de l'opposition, Hamat Bah, objecte alors que la Constitution fait de la Gambie un État laïque.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Yahya Jammeh",
+                "role": "président de la Gambie, auteur de la déclaration"
+              },
+              {
+                "name": "Hamat Bah",
+                "role": "dirigeant de l'opposition, qui conteste la déclaration"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Gambia's president declares Islamic statehood",
+                "author": "Al Jazeera, d'après des agences de presse",
+                "year": 2015,
+                "url": "https://www.aljazeera.com/news/2015/12/12/gambias-president-declares-islamic-statehood",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Dépêche d'agences publiée par Al Jazeera le 12 décembre 2015, lue en ligne. Le président Yahya Jammeh, au pouvoir depuis 1994, proclame la Gambie « Islamic state » à la fin d'un meeting politique à Brufut, près de Banjul. Hamat Bah, du parti d'opposition National Reconciliation Party, objecte qu'une clause de la Constitution fait de la Gambie un État laïque et qu'une telle déclaration demande un référendum."
               }
             ]
           }
@@ -182,160 +285,162 @@
   },
   "content": {
     "historicalNames": {
-      "formerNames": ["Gambia Colony and Protectorate (1888-1965)"],
-      "antiquity": "Le territoire actuel de la Gambie était peuplé de diverses sociétés sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs territoires.",
-      "middleAges": "Développement de royaumes et chefferies : royaumes Mandinka, chefferies Wolof, peuples Fula. Pas de nom unifié pour l'ensemble du territoire. Le fleuve Gambie était une voie commerciale importante.",
-      "precolonial": "Mosaïque de royaumes et chefferies autonomes : royaumes Mandinka (héritiers de l'empire du Mali), chefferies Wolof, peuples Fula (pasteurs), Jola, Serer. Les Portugais utilisaient le terme \"Gambia\" pour désigner la région du fleuve Gambie.",
-      "colonization": "1888-1965 : Colonie britannique de Gambie (Gambia Colony and Protectorate). Les Britanniques ont établi une colonie sur le fleuve Gambie en 1888. Le territoire était administré comme une colonie britannique jusqu'à l'indépendance en 1965.",
-      "contemporary": "1965 : Indépendance de la Gambie (18 février 1965), proclamation de la République de Gambie. 1970 : Proclamation de la République (24 avril 1970). Le nom officiel est \"Republic of The Gambia\" (République de Gambie)."
+      "formerNames": [
+        "Gambra (forme écrite en 1455)",
+        "Colonie et protectorat de la Gambie (jusqu'en 1965)",
+        "République islamique de Gambie (2015-2017)"
+      ],
+      "antiquity": "Le pays du fleuve Gambie porte des monuments funéraires très anciens : des cercles de pierres dressées, inscrits au patrimoine mondial avec ceux du Sénégal. Selon l'archéologue Luc Laporte, les plus anciennes dates obtenues sous ces monuments remontent aux premiers siècles de notre ère. Nous ne connaissons pas de nom écrit de la région pour cette période.",
+      "middleAges": "En 1455, le Vénitien Alvise Cadamosto écrit que le pays du fleuve s'appelle Gambra. Un riverain lui explique que le principal seigneur, Forosangoli, est soumis à l'empereur du Mali, et que des seigneurs moins puissants, comme Battimansa, vivent près du fleuve. Gambra désigne alors un pays et ses seigneurs, pas un État aux frontières fixées.",
+      "precolonial": "Vers 1505-1508, le Portugais Duarte Pacheco Pereira écrit rio de Gâmbia et décrit ce fleuve comme la limite entre le royaume du Jolof et le grand royaume du Mandingue. Plus tard, les Européens distinguent le long du fleuve plusieurs royaumes, comme Barra, Wuli ou Kantora. L'administrateur colonial Henry Fenwick Reeve note en 1913 que ces anciens noms survivent encore par endroits.",
+      "colonization": "En 1816, les Britanniques fondent une ville sur l'île Sainte-Marie, à l'embouchure du fleuve. Appelée d'abord Leopold, elle prend ensuite le nom de Bathurst, celui du secrétaire d'État aux Colonies de l'époque ; c'est l'actuelle Banjul. De 1821 à 1843, la Gambie est gouvernée depuis la Sierra Leone, puis elle devient une colonie séparée. À la veille de l'indépendance, la loi britannique parle de la colonie de la Gambie et du protectorat de la Gambie.",
+      "contemporary": "Le 18 février 1965, la colonie et le protectorat deviennent un État indépendant sous le nom de The Gambia. Le 24 avril 1970, après un référendum, le pays devient une république, la République de Gambie. En décembre 2015, le président Yahya Jammeh proclame la Gambie État islamique. En janvier 2017, le président Adama Barrow annonce que le mot « islamique » ne fait plus partie du nom officiel."
     },
     "kingdoms": [
       {
-        "name": "Royaumes Mandinka",
-        "period": "Précolonial - présent",
+        "name": "Empire du Mali",
+        "period": "XVe siècle, dans les récits de Cadamosto",
         "entryType": "polity",
-        "dominantPeoples": ["Mandinka"],
-        "politicalCenters": ["Chefferies traditionnelles mandinka"],
-        "historicalRole": "Royaumes Mandinka, héritiers de l'empire du Mali (XIIIe-XVIe siècle), système lignager, castes artisanales (numu, djeli), importance des griots. Rôle majeur dans la diffusion culturelle mandé. Traditions islamiques."
+        "dominantPeoples": ["Mandingues"],
+        "politicalCenters": [
+          "Hors de l'actuelle Gambie, entre le Niger et les vallées du Sénégal et de la Gambie"
+        ],
+        "historicalRole": "En 1455, un riverain explique à Cadamosto que Forosangoli, principal seigneur du pays de Gambra, est soumis à l'empereur du Mali. Selon Reeve, les Mandingues venus du Mali dominent depuis longtemps la vallée du fleuve."
       },
       {
-        "name": "Chefferies Wolof",
-        "period": "Précolonial - présent",
+        "name": "Royaume du Jolof",
+        "period": "Décrit vers 1505-1508",
         "entryType": "polity",
         "dominantPeoples": ["Wolof"],
-        "politicalCenters": ["Chefferies traditionnelles wolof"],
-        "historicalRole": "Chefferies Wolof, traditions islamiques, commerce régional. Relations avec les royaumes wolof du Sénégal."
+        "politicalCenters": ["Entre le fleuve Sénégal et le fleuve Gambie"],
+        "historicalRole": "Selon Duarte Pacheco Pereira, le royaume du Jolof s'étend du fleuve Sénégal jusqu'au fleuve Gambie, qui le sépare du royaume du Mandingue."
       },
       {
-        "name": "Peuples Fula",
-        "period": "Précolonial - présent",
+        "name": "Royaumes de la vallée du fleuve (Barra, Wuli, Kantora)",
+        "period": "Avant et pendant la période coloniale",
         "entryType": "polity",
-        "dominantPeoples": ["Fula / Peul"],
-        "politicalCenters": ["Communautés pastorales"],
-        "historicalRole": "Peuples Fula pasteurs nomades et sédentaires, traditions islamiques, pastoralisme. Commerce et migrations."
+        "dominantPeoples": ["Mandinka"],
+        "politicalCenters": [
+          "Barra, près de l'embouchure",
+          "Wuli, sur la rive droite en amont",
+          "Kantora, sur la rive gauche en amont"
+        ],
+        "historicalRole": "Reeve décrit en 1913 plusieurs royaumes riverains : Barra près de l'embouchure, Wuli et Kantora sur les deux rives du haut du fleuve. Il note que ces territoires sont alors découpés en petits pays dont les chefs sont nommés par les gouvernements anglais et français."
       },
       {
-        "name": "Colonie britannique de Gambie",
-        "period": "1888 - 1965",
+        "name": "Colonie et protectorat britanniques de la Gambie",
+        "period": "1816 - 1965",
         "entryType": "colonial",
         "timeRange": {
-          "startYear": 1888,
+          "startYear": 1816,
           "endYear": 1965,
           "precision": "year"
         },
         "dominantPeoples": [
-          "Tous les peuples gambiens sous domination britannique"
+          "Peuples de la vallée du fleuve sous administration britannique"
         ],
-        "politicalCenters": [
-          "Bathurst (aujourd'hui Banjul",
-          "capitale coloniale)"
-        ],
-        "historicalRole": "Colonie britannique, développement de Bathurst comme port commercial, exploitation économique (arachides), développement de l'administration coloniale, résistance des peuples autochtones. Développement du mouvement indépendantiste au XXe siècle."
+        "politicalCenters": ["Bathurst, aujourd'hui Banjul"],
+        "historicalRole": "Bathurst est fondée en 1816. La Gambie est gouvernée depuis la Sierra Leone de 1821 à 1843, puis forme une colonie séparée. L'accord de 1889 avec la France limite le territoire britannique à une bande d'environ dix kilomètres sur chaque rive. L'indépendance arrive le 18 février 1965."
       }
     ],
     "majorPeoples": [
       {
         "name": "Mandinka",
-        "selfAppellation": "Mandinka / Mandiŋka",
-        "exonyms": [
-          "Mandinka (terme utilisé par les Européens)",
-          "Mandingue (forme française)",
-          "\"Mandingo\" (terme historique",
-          "parfois péjoratif)"
-        ],
+        "selfAppellation": "Mandinka",
+        "exonyms": ["Mandingue", "Mandingo"],
         "peopleId": "PPL_MALINKE",
-        "mainRegion": "Toutes les régions de la Gambie, majoritaires",
-        "languages": ["Mandinka (mnk", "ISO 639-3)", "anglais"],
+        "mainRegion": "Tout le pays, surtout Mansakonko et Brikama",
+        "languages": ["Mandinka (mnk)"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "Les personnes concernées se nomment Mandinka ou Mandiŋka. Mandingue est un nom français donné de l'extérieur et accepté. Mandingo est un terme historique qui peut être méprisant dans certains contextes ; il est donc à éviter."
+        "appellationRemarks": "Les recensements gambiens comptent ce groupe sous le nom Mandinka, avec les Jahanka en 2013. Mandingue est la forme française. Les textes anglais anciens, comme les débats britanniques de 1964, écrivent Mandingo."
       },
       {
-        "name": "Fula / Peul",
+        "name": "Fula (Peuls)",
         "selfAppellation": "Fulɓe (pluriel), Pullo (singulier)",
-        "exonyms": [
-          "Peul (terme français)",
-          "Fulani (terme haoussa)",
-          "Fula (terme anglophone)",
-          "\"Fellata\" (terme haoussa parfois péjoratif",
-          "à éviter)"
-        ],
+        "exonyms": ["Peul", "Fula", "Fulani"],
         "peopleId": "PPL_FULA",
-        "mainRegion": "Toutes les régions de la Gambie",
-        "languages": ["Fulfulde (ful", "ISO 639-3)", "anglais"],
+        "mainRegion": "Tout le pays, surtout Kuntaur et Janjanbureh",
+        "languages": ["Pulaar (fuc)"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "Le peuple se nomme Fulɓe. Peul et Fulani sont aussi des noms acceptés, donnés de l'extérieur. Fellata peut être méprisant dans certains contextes ; il est donc à éviter."
+        "appellationRemarks": "Le recensement de 2013 regroupe sous un même nom les Fula, les Tukulor et les Lorobo. Fula est la forme anglaise employée en Gambie, Peul la forme française."
       },
       {
         "name": "Wolof",
         "selfAppellation": "Wolof",
-        "exonyms": ["Wolof (terme utilisé par les Européens)"],
+        "exonyms": ["Wollof"],
         "peopleId": "PPL_WOLOF",
-        "mainRegion": "Zones urbaines, régions côtières",
-        "languages": ["Wolof (wol", "ISO 639-3)", "anglais"],
+        "mainRegion": "Kerewan, Kuntaur et Banjul",
+        "languages": ["Wolof (wol)"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Wolof\" est l'auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Les recensements gambiens écrivent Wollof. Les auteurs portugais du XVIe siècle parlent du royaume de Jalofo, le Jolof."
       },
       {
         "name": "Jola",
-        "selfAppellation": "Jola / Diola",
-        "exonyms": ["Jola", "Diola (termes utilisés par les Européens)"],
+        "selfAppellation": "Jola",
+        "exonyms": ["Diola"],
         "peopleId": "PPL_DIOLA",
-        "mainRegion": "Régions côtières et sud",
-        "languages": ["Jola (dyo", "ISO 639-3)", "anglais"],
+        "mainRegion": "Brikama et Kanifing, au sud-ouest",
+        "languages": ["Jola-Fonyi (dyo)"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Jola\" ou \"Diola\" est l'auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le recensement de 2013 regroupe les Jola et les Karoninka. Diola est la forme française."
       },
       {
-        "name": "Serahule / Soninke",
+        "name": "Sarahule (Soninké)",
         "selfAppellation": "Soninke",
-        "exonyms": [
-          "Serahule (terme utilisé en Gambie)",
-          "Soninke (terme utilisé au Mali",
-          "Sénégal)"
-        ],
+        "exonyms": ["Sarahule", "Serahule"],
         "peopleId": "PPL_SONINKE",
-        "mainRegion": "Diverses régions de la Gambie",
-        "languages": ["Soninke (snk", "ISO 639-3)", "anglais"],
+        "mainRegion": "Basse, à l'est",
+        "languages": ["Soninke (snk)"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "\"Soninke\" est l'auto-appellation. \"Serahule\" est un terme utilisé en Gambie. Pas de terme péjoratif connu. Peuple mandé commerçant."
+        "appellationRemarks": "En Gambie, les recensements emploient le nom Sarahule ; au Mali et au Sénégal, on parle plutôt de Soninké."
       },
       {
         "name": "Serer",
-        "selfAppellation": "Serer",
-        "exonyms": ["Serer (terme utilisé par les Européens)"],
+        "selfAppellation": "Sereer",
+        "exonyms": ["Serere", "Sérère"],
         "peopleId": "PPL_SERER",
-        "mainRegion": "Régions côtières (extension des groupes sérères du Sénégal)",
-        "languages": ["Serer (srr", "ISO 639-3)", "anglais"],
+        "mainRegion": "Banjul et Kerewan",
+        "languages": ["Sereer (srr)"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Serer\" est l'auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Les recensements gambiens écrivent Serere."
       },
       {
         "name": "Manjak",
         "selfAppellation": "Manjaku",
-        "exonyms": ["Mandjak", "Manjago"],
+        "exonyms": ["Manjago", "Mandjak"],
         "peopleId": "PPL_MANJAK",
-        "mainRegion": "Zones côtières et transfrontalières",
-        "languages": ["Manjak", "anglais"],
+        "mainRegion": "Kanifing et Brikama",
+        "languages": ["Mandjak (mfv)"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Manjaku\" est le nom que se donnent les Manjak. Manjago est la forme jola du nom. Groupe côtier et transfrontalier."
+        "appellationRemarks": "Les recensements gambiens comptent ce groupe sous le nom Manjago."
+      },
+      {
+        "name": "Bambara",
+        "selfAppellation": "Bamana",
+        "exonyms": ["Bambara"],
+        "mainRegion": "Kerewan et Banjul",
+        "languages": ["Bambara (bam)"],
+        "languageFamily": "FLG_MANDE",
+        "appellationRemarks": "Les recensements gambiens comptent ce groupe sous le nom Bambara."
+      },
+      {
+        "name": "Krio (Aku)",
+        "selfAppellation": "Krio",
+        "exonyms": ["Aku", "Creole"],
+        "mainRegion": "Banjul",
+        "languages": ["Krio (kri)"],
+        "languageFamily": "FLG_CREOLE",
+        "appellationRemarks": "Le recensement de 2013 parle de Creole/Aku Marabou, celui de 2024 de Krio/Aku Marabou."
       },
       {
         "name": "Bainouk",
         "selfAppellation": "Banyun",
-        "exonyms": ["Bainuk", "Bainouk"],
+        "exonyms": ["Bainuk", "Banyon"],
         "peopleId": "PPL_BAINOUK",
-        "mainRegion": "Zones côtières et transfrontalières",
-        "languages": ["Bainouk", "anglais"],
+        "mainRegion": "Kombo et Foni, au sud-ouest",
+        "languages": ["Bainouk-Gunyaamolo (bcz)"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "Les Bainouk vivent surtout en Casamance, au Sénégal ; en Gambie, ils sont présents dans le Foni et le Kombo. Groupe côtier et transfrontalier."
-      },
-      {
-        "name": "Autres peuples",
-        "selfAppellation": "Variées selon les groupes",
-        "exonyms": ["Variées selon les groupes"],
-        "mainRegion": "Diverses régions de la Gambie",
-        "languages": ["Langues diverses", "anglais"],
-        "appellationRemarks": "Chaque groupe a sa propre auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Les Bainouk vivent surtout en Casamance, au Sénégal. En 1913, Reeve écrit Banyons et les décrit comme de petites communautés du Kombo. Les recensements gambiens ne les comptent pas à part."
       }
     ],
     "culture": {
@@ -346,18 +451,19 @@
           "isPrimary": true
         },
         {
-          "name": "Mandinka"
+          "name": "Mandinka",
+          "isoCode": "mnk"
         },
         {
-          "name": "Fulfulde",
-          "isoCode": "ful"
+          "name": "Pulaar",
+          "isoCode": "fuc"
         },
         {
           "name": "Wolof",
           "isoCode": "wol"
         },
         {
-          "name": "Jola",
+          "name": "Jola-Fonyi",
           "isoCode": "dyo"
         },
         {
@@ -365,29 +471,35 @@
           "isoCode": "snk"
         },
         {
-          "name": "Serer",
+          "name": "Sereer",
           "isoCode": "srr"
         },
         {
-          "name": "Manjak"
+          "name": "Mandjak",
+          "isoCode": "mfv"
         },
         {
-          "name": "Bainuk"
+          "name": "Bainouk-Gunyaamolo",
+          "isoCode": "bcz"
+        },
+        {
+          "name": "Krio",
+          "isoCode": "kri"
         }
       ],
-      "culturalTraditions": "Diversité culturelle importante reflétant la mosaïque ethnique de la Gambie. Traditions mandé (Mandinka, griots, kora, musique mandingue, rites initiatiques kankurang). Traditions atlantiques (Wolof, Fula, Jola, Serer). Musique et danse traditionnelles variées. Cérémonies de passage, rites d'initiation, fêtes traditionnelles. Traditions islamiques (majorité musulmane).",
-      "dominantReligions": "Islam sunnite (majoritaire, 90%+), christianisme (minorité), religions traditionnelles africaines (syncrétisme fréquent)",
-      "lifestyles": "Agriculture (arachides, mil, riz, cultures vivrières), élevage (Fula, bovins), pêche (côtière et fluviale), commerce et activités urbaines (zones urbaines, Banjul). Urbanisation modérée. Économie basée sur l'agriculture (arachides, principale exportation), la pêche, le tourisme, et les services. Dépendance économique importante du Sénégal.",
-      "socialOrganization": "Organisation en royaumes historiques (Mandinka, héritage de l'empire du Mali), chefferies traditionnelles (Wolof, Jola, Serer), structures claniques patrilinéaires. Importance des lignages et des familles étendues. Rôle des conseils d'anciens. Système de castes (Mandinka, numu, djeli, griots). Traditions d'initiation et de passage à l'âge adulte.",
-      "regionalRelations": "Relations historiques avec le Sénégal (commerce, migrations, peuples transfrontaliers, frontière), le Mali (Mandinka, héritage de l'empire du Mali). Intégration dans la CEDEAO (Communauté économique des États de l'Afrique de l'Ouest). Relations commerciales et culturelles transfrontalières. Dépendance économique importante du Sénégal. La Gambie est enclavée dans le Sénégal sauf pour sa côte atlantique."
+      "culturalTraditions": "Le Kankurang est un rite d'initiation des Mandingues de Gambie et du Sénégal. Un initié, masqué d'écorce et de fibres rouges de l'arbre faara, accompagne les cérémonies de circoncision ; il garantit l'ordre et la justice et chasse les mauvais esprits. Le rite transmet aussi des règles de vie et des savoirs sur les plantes et la chasse. L'UNESCO l'a proclamé en 2005 et inscrit en 2008 sur sa liste du patrimoine culturel immatériel, en notant qu'il recule avec la croissance des villes et la disparition des forêts sacrées. Nous n'avons pas encore documenté les autres traditions du pays.",
+      "dominantReligions": "L'islam est la religion de la grande majorité des habitants. Au recensement de 2013, 96,0 % de la population se dit musulmane, 3,8 % chrétienne, et 0,1 % suit une religion traditionnelle. L'enquête démographique et de santé de 2019-2020 donne des chiffres proches : 96 % des femmes et 97 % des hommes interrogés sont musulmans. Ces sources ne donnent pas la part des différentes branches de l'islam. Vers 1505, Duarte Pacheco Pereira décrivait déjà les habitants du Jolof et du Mandingue comme musulmans.",
+      "lifestyles": "Près de la moitié des ménages, 47,2 %, pratiquent l'agriculture, selon le recensement de 2024. Ils cultivent surtout la terre, mais la pêche et l'élevage comptent aussi. Cette part reste faible autour de la capitale, à Banjul et Kanifing, et dépasse les trois quarts dans les régions de l'intérieur. Le pays est très urbanisé : en 2019-2020, environ trois femmes et trois hommes sur quatre interrogés vivaient en ville.",
+      "socialOrganization": "Les ménages gambiens sont grands : ils comptent en moyenne 8,1 personnes, 10,4 à la campagne, et plus d'un tiers réunissent au moins neuf personnes, selon l'enquête de 2019-2020. Le mariage peut être coutumier, civil ou religieux, et la plupart des unions ne sont pas enregistrées, selon le recensement de 2013. Selon l'enquête de 2019-2020, 34 % des femmes mariées déclarent que leur mari a d'autres épouses. Nous n'avons pas encore documenté l'organisation des lignages et des groupes de statut.",
+      "regionalRelations": "La Gambie est une bande de terre le long du fleuve, presque entièrement entourée par le Sénégal. Un accord franco-britannique de 1889 a limité le territoire à une dizaine de kilomètres de part et d'autre du fleuve, et la frontière a été fixée avec la France en 1902. De 1982 à 1989, la Gambie et le Sénégal ont formé la Confédération de Sénégambie. Les principales langues du pays se parlent aussi au Sénégal et dans d'autres pays voisins, comme la Guinée-Bissau."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement initial par les peuples mandé et atlantiques. Développement de chefferies et royaumes locaux.",
-      "middleAges": "Expansion de l'empire du Mali (XIIIe-XVIe siècle), influence mandé sur la région. Développement des royaumes Mandinka. Arrivée de l'islam. Commerce transsaharien et côtier. Le fleuve Gambie était une voie commerciale importante.",
-      "precolonial": "Consolidation des royaumes Mandinka (héritiers de l'empire du Mali), chefferies Wolof, peuples Fula pasteurs. Commerce régional et transsaharien. Contacts avec les Européens (Portugais, puis Britanniques). Commerce des esclaves le long du fleuve Gambie.",
-      "colonization": "1888 : Établissement de la colonie britannique de Gambie. Période coloniale britannique (1888-1965), développement de Bathurst (Banjul) comme port commercial, exploitation économique (arachides), développement de l'administration coloniale, résistance des peuples autochtones. XXe siècle : Développement du mouvement indépendantiste.",
-      "independenceStruggle": "1950s-1960s : Mouvement pour l'indépendance mené par les dirigeants gambiens. 1965 : Indépendance de la Gambie (18 février 1965), proclamation de la République de Gambie. Dawda Jawara devient premier ministre puis président.",
-      "postIndependence": "1965-1994 : Présidence de Dawda Jawara, période de stabilité politique et de démocratie. 1994 : Coup d'État militaire, présidence de Yahya Jammeh (1994-2017). 2017 : Transition démocratique, élection d'Adama Barrow. Défis : pauvreté, dépendance économique du Sénégal, développement économique. La Gambie est l'un des plus petits pays d'Afrique."
+      "ancientPeriods": "Le Sénégal et la Gambie comptent environ 30 000 pierres dressées sur près de 2 000 sites, souvent disposées en cercles autour de tombes. Selon l'archéologue Luc Laporte, les plus anciennes dates obtenues sous ces monuments remontent aux premiers siècles de notre ère, et la construction des mégalithes pourrait ne pas commencer avant le IXe ou le Xe siècle.",
+      "middleAges": "Au XVe siècle, une partie de la vallée relève de l'empire du Mali. Selon Cadamosto, en 1455, le seigneur Forosangoli est soumis à l'empereur du Mali. Le fleuve est aussi une route de commerce : selon Reeve, des marchands mandingues remontaient le sel de la côte jusqu'à Tenda, au bout de la navigation en pirogue, puis vers l'intérieur.",
+      "precolonial": "Les navigateurs au service du Portugal remontent le fleuve à partir de 1455. Des Anglais atteignent la Gambie en 1587, et une expédition anglaise prend en 1661 une île du fleuve, qui devient le centre de leur présence, selon un ministre britannique en 1964. Le même ministre reconnaît que les Britanniques avaient d'abord encouragé le commerce des esclaves, avant de remonter le fleuve pour le supprimer.",
+      "colonization": "En 1816, les Britanniques fondent Bathurst, l'actuelle Banjul. De 1821 à 1843, la Gambie est gouvernée depuis la Sierra Leone, puis elle devient une colonie séparée. L'accord de 1889 avec la France fixe un territoire étroit le long du fleuve ; la frontière est tracée sur le terrain de 1891 à 1899. Le territoire comprend alors une colonie et un protectorat, que la loi d'indépendance réunit en 1965.",
+      "independenceStruggle": "La Gambie obtient l'autonomie interne en octobre 1963, après les élections de 1962, selon les débats de la Chambre des lords de 1964. Le Premier ministre est alors Dawda Jawara. Le pays devient indépendant le 18 février 1965, par une loi britannique de décembre 1964.",
+      "postIndependence": "Le 24 avril 1970, après un référendum, la Gambie devient une république, et Dawda Jawara son premier président. De 1982 à 1989, elle forme avec le Sénégal la Confédération de Sénégambie. Le 22 juillet 1994, Yahya Jammeh prend le pouvoir ; la Constitution adoptée ensuite parle d'un changement de gouvernement et d'une deuxième république. En décembre 2015, Jammeh proclame la Gambie État islamique. En janvier 2017, son successeur, Adama Barrow, annonce que le pays redevient une république sans ce qualificatif."
     },
     "sources": [
       {
@@ -406,7 +518,8 @@
         "title": "UNFPA – World Population Dashboard — Gambie",
         "url": "https://www.unfpa.org/data/world-population/GM",
         "tier": "official",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": "Tableau de bord démographique mondial du Fonds des Nations unies pour la population, consulté en ligne : il donne 2,8 millions d'habitants pour 2025. Le recensement national de 2024 a compté 2 422 712 personnes."
       },
       {
         "title": "Recensements gambiens",
@@ -435,6 +548,174 @@
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Gambia Bureau of Statistics — The Gambia 2024 Population and Housing Census: Preliminary Report (2024)",
+        "url": "https://www.gbosdata.org/downloads-file/544-2024-gphc-preliminary-report",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport préliminaire du recensement de mai et juin 2024, publié en août 2024 par le service statistique national de la Gambie, lu en PDF. Page 4 : la population recensée est de 2 422 712 personnes. Page 10, figure 14, et page 13, tableau 8 : répartition des Gambiens par groupe ethnique, soit Mandinka 34,4 %, Fula 25,0 %, Wollof 15,4 %, Jola 9,5 %, Sarahule 8,2 %, Serere 2,9 %, Manjago 1,7 %, Bambara 1,2 %, Krio/Aku Marabou 0,4 % et autres groupes 1,3 %, sur 2 306 066 Gambiens. Page 10, figure 15 : 47,2 % des ménages pratiquent l'agriculture. Page 11, tableau 1 : 95,2 % des habitants sont de nationalité gambienne."
+      },
+      {
+        "title": "Gambia Bureau of Statistics — Census 2013: Spatial Distribution of Population and Socio-cultural Characteristics",
+        "url": "https://www.gbosdata.org/downloads-file/213-census-2013-spatial-distribution-report",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport thématique du recensement d'avril 2013, publié par le service statistique national de la Gambie, lu en PDF. Page 6 : la population est musulmane à 96,0 %, chrétienne à 3,8 %, et les fidèles des religions traditionnelles comme ceux des autres religions représentent chacun 0,1 %. Page 12, tableau 3.1.1 : répartition des Gambiens par groupe ethnique aux recensements de 1973 à 2013 ; en 2013, Mandinka/Jahanka 34,4 %, Fula/Tukulor/Lorobo 24,1 %, Wollof 14,8 %, Jola/Karoninka 10,5 %. Le rapport précise que l'appartenance ethnique n'est demandée qu'aux Gambiens. Page 13 : les mariages sont coutumiers, civils ou religieux, et la plupart ne sont pas enregistrés."
+      },
+      {
+        "title": "Gambia Bureau of Statistics et ICF — The Gambia Demographic and Health Survey 2019-20 (2021)",
+        "url": "https://dhsprogram.com/pubs/pdf/FR369/FR369.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport final de l'enquête démographique et de santé conduite par le service statistique national de la Gambie avec le programme DHS, publié à Banjul et Rockville en 2021, lu en PDF. Page 24, tableau 2.9 : un ménage compte en moyenne 8,1 personnes, 7,3 en ville et 10,4 à la campagne. Page 31 : 96 % des femmes et 97 % des hommes interrogés sont musulmans, 4 % et 3 % chrétiens. Page 38, tableau 3.1 : répartition des personnes interrogées par groupe ethnique ; 74 % des femmes et 78 % des hommes vivent en ville. Page 61 : 34 % des femmes mariées de 15 à 49 ans déclarent que leur mari a plus d'une épouse."
+      },
+      {
+        "title": "Royaume-Uni — Gambia Independence Act 1964",
+        "url": "https://www.legislation.gov.uk/ukpga/1964/93/enacted",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte de la loi britannique du 17 décembre 1964, publié par le service des archives nationales du Royaume-Uni, lu en ligne. L'article 1 réunit, à partir du 18 février 1965, les territoires de la colonie de la Gambie et du protectorat de la Gambie « under the name of The Gambia », et met fin à la responsabilité du gouvernement britannique sur ces territoires."
+      },
+      {
+        "title": "Chambre des lords du Royaume-Uni — Gambia Independence Bill, 3 décembre 1964 (Hansard)",
+        "url": "https://api.parliament.uk/historic-hansard/lords/1964/dec/03/gambia-independence-bill",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Compte rendu du débat sur le projet de loi, volume 261, colonnes 1202 à 1215, lu en ligne. Lord Taylor, pour le gouvernement, dit que des Anglais atteignent la Gambie en 1587, qu'une expédition prend en 1661 une île du fleuve, et que la capitale Bathurst, bâtie vers 1816, porte le nom du secrétaire d'État aux Colonies de l'époque ; il rapporte aussi que le pays s'appelait d'abord « The Gambra » en 1455 et décrit un pays long et étroit, enfoncé dans le Sénégal. Lord Milverton, ancien gouverneur, rappelle que la Gambie est gouvernée depuis la Sierra Leone de 1821 à 1843, devient une administration séparée en 1843, voit ses frontières fixées avec la France en 1902, et jouit de l'autonomie interne depuis octobre 1963 ; il décrit la population, mandingue, peule et wolof, comme majoritairement musulmane. Le marquis de Lansdowne rappelle les élections de 1962, qui mènent à l'autonomie interne. Lord Taylor nomme le Premier ministre, Dawda Jawara."
+      },
+      {
+        "title": "Chambre des communes du Royaume-Uni — Republic of The Gambia Bill, 26 mai 1970 (Hansard)",
+        "url": "https://api.parliament.uk/historic-hansard/commons/1970/may/26/republic-of-the-gambia-bill-lords",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Compte rendu du débat, volume 801, colonnes 1771 à 1774, lu en ligne. Le ministre Maurice Foley déclare que la Gambie est devenue une république au sein du Commonwealth le 24 avril 1970, après un référendum tenu du 20 au 23 avril, et adresse ses vœux au premier président, Sir Dawda Jawara. Bernard Braine salue « the new Republic of The Gambia »."
+      },
+      {
+        "title": "Constitution de la République de Gambie, 1996, révisée en 2018 (Constitute Project)",
+        "url": "https://www.constituteproject.org/constitution/Gambia_2018",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Texte anglais de la Constitution en vigueur, publié par le Comparative Constitutions Project, lu en ligne. Le préambule dit que le peuple gambien a approuvé le changement de gouvernement du 22 juillet 1994 et ouvre la « second Republic ». L'article 1 dispose : « The Gambia is a Sovereign Republic. » L'article 89 exige des députés qu'ils parlent l'anglais."
+      },
+      {
+        "title": "Reeve, Henry Fenwick — The Gambia: Its History, Ancient, Mediæval and Modern (1913)",
+        "url": "https://archive.org/details/in.ernet.dli.2015.499290",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Livre d'un ancien administrateur colonial britannique, publié à Londres chez John Murray, lu dans l'exemplaire numérisé de la Digital Library of India sur archive.org ; c'est un regard colonial sur le pays. Page 11 : des tombes anciennes, près du fleuve, sont entourées de cercles de pierres dressées. Page 18 : des marchands mandingues portent le sel de Joal en remontant le fleuve jusqu'à Tenda. Pages 36 et 37 : d'après Cadamosto, le chef Batti Mansa relève de Forofangoli, lui-même tributaire du roi du Mali, et les Mandingues dominent depuis longtemps la vallée. Pages 91 et 92 : la ville fondée en 1816 sur l'île Sainte-Marie s'appelle d'abord Leopold, puis Bathurst. Page 96 : la Gambie devient une colonie séparée en 1843. Page 103 : l'accord de frontière de 1889 limite le territoire britannique à une bande de dix kilomètres sur chaque rive. Page 104 : la frontière est tracée sur le terrain de 1891 à 1899. Pages 124 et 125 : les anciens royaumes de Wuli et de Kantora. Page 193 : les Banyon, c'est-à-dire les Bainouk, vivent encore dans le Kombo."
+      },
+      {
+        "title": "Laporte, Luc — Mégalithes du Sénégal et de La Gambie : vestiges d'une « civilisation disparue » ? (2022)",
+        "url": "https://univ-rennes.hal.science/hal-03904165/document",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Chapitre d'un archéologue du CNRS dans les Mélanges offerts à Christian Jeunesse (Mémoires d'archéologie du Grand Est, 2022, p. 207-220), lu dans la version déposée sur HAL. L'auteur rappelle que les mégalithes du Sénégal et de la Gambie sont inscrits au patrimoine mondial et qu'on en compte environ 30 000 pierres dressées sur près de 2 000 sites. Les plus anciennes dates obtenues sous ces monuments remontent aux premiers siècles de notre ère ; la construction des mégalithes pourrait ne pas commencer avant le IXe ou le Xe siècle, et l'auteur ne sait pas si elle continue après le XIIIe siècle et l'essor de l'empire du Mali."
+      },
+      {
+        "title": "UNESCO — Le Kankurang, rite initiatique mandingue (Liste représentative du patrimoine culturel immatériel)",
+        "url": "https://ich.unesco.org/en/RL/kankurang-manding-initiatory-rite-00143",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche d'inscription, lue en anglais. Le Kankurang est un rite d'initiation pratiqué dans les provinces mandingues du Sénégal et de la Gambie. Un initié, masqué d'écorce et de fibres rouges de l'arbre faara, accompagne les cérémonies de circoncision ; il garantit l'ordre et la justice et chasse les mauvais esprits. Le rite transmet des règles sociales et des savoirs sur les plantes et la chasse. Proclamé en 2005, il est inscrit en 2008. La fiche note un recul lié à l'urbanisation et à la disparition des forêts sacrées."
+      },
+      {
+        "title": "Cadamosto, Alvise — Navegações, récit du premier voyage de 1455 (édition de Lisbonne, 1944)",
+        "url": "https://archive.org/details/dli.ernet.535850",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Texte italien et traduction portugaise de Giuseppe Carlo Rossi, Instituto para a Alta Cultura, lu dans l'exemplaire numérisé d'archive.org. Au § 134 de l'édition, un homme rencontré sur le fleuve dit aux navigateurs que c'est « il paese di Gambra », que le principal seigneur est Forosangoli, soumis à « l'imperatore di Melli », et qu'il existe près du fleuve des seigneurs moins puissants, comme Battimansa."
+      },
+      {
+        "title": "Pacheco Pereira, Duarte — Esmeraldo de situ orbis, écrit vers 1505-1508 (édition de Lisbonne, 1954)",
+        "url": "https://archive.org/details/dli.ernet.534920",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Troisième édition de l'Academia Portuguesa da História, lue dans l'exemplaire numérisé d'archive.org. Pages 97 et 98 : le royaume du Jolof va du fleuve Sénégal au rio de Gâmbia, « pelo qual rio, Mandinga com Jalofo se departe » ; l'auteur décrit les habitants du Jolof et du « grande reino de Mandinga » comme circoncis et musulmans, dans des termes méprisants qui reflètent son regard d'étranger."
+      },
+      {
+        "title": "Gambia's president declares Islamic statehood",
+        "url": "https://www.aljazeera.com/news/2015/12/12/gambias-president-declares-islamic-statehood",
+        "tier": "unverified",
+        "source_kind": "press",
+        "notes": "Dépêche d'agences publiée par Al Jazeera le 12 décembre 2015, lue en ligne. Le président Yahya Jammeh, au pouvoir depuis 1994, proclame la Gambie « Islamic state » à la fin d'un meeting politique à Brufut, près de Banjul. Hamat Bah, du parti d'opposition National Reconciliation Party, objecte qu'une clause de la Constitution fait de la Gambie un État laïque et qu'une telle déclaration demande un référendum."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre d'Ali A. Mazrui, volume VIII publié par l'UNESCO en 1998. Page 131, tableau 5.1 : la Gambie, colonie britannique, devient indépendante le 18 février 1965 ; elle forme avec le Sénégal la Confédération de Sénégambie du 1er janvier 1982 au 21 septembre 1989."
+      },
+      {
+        "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: The Gambia",
+        "url": "https://history.state.gov/countries/gambia",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Notice de l'Office of the Historian du Département d'État des États-Unis. Les États-Unis reconnaissent la Gambie le 18 février 1965, jour des cérémonies de l'indépendance à Bathurst, aujourd'hui Banjul."
+      },
+      {
+        "title": "Glottolog — Mandinka (mand1436)",
+        "url": "https://glottolog.org/resource/languoid/id/mand1436",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue du catalogue Glottolog, lue en ligne. Code ISO 639-3 mnk. Pays listés : Gambie, Guinée, Guinée-Bissau, Sénégal. Classement : langues mandé, groupe manding."
+      },
+      {
+        "title": "Glottolog — Pulaar (pula1263)",
+        "url": "https://glottolog.org/resource/languoid/id/pula1263",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue du catalogue Glottolog, lue en ligne. Code ISO 639-3 fuc. Pays listés : Gambie, Guinée, Guinée-Bissau, Mali, Mauritanie, Sénégal. Classement : langues atlantiques du Nord et du Centre, branche peule."
+      },
+      {
+        "title": "Glottolog — Wolof (nucl1347)",
+        "url": "https://glottolog.org/resource/languoid/id/nucl1347",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue du catalogue Glottolog, lue en ligne. Code ISO 639-3 wol. Pays listés : Gambie, Guinée-Bissau, Mali, Mauritanie, Sénégal. Classement : langues atlantiques du Nord et du Centre."
+      },
+      {
+        "title": "Glottolog — Jola-Fonyi (jola1263)",
+        "url": "https://glottolog.org/resource/languoid/id/jola1263",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue du catalogue Glottolog, lue en ligne. Code ISO 639-3 dyo. Pays listés : Gambie, Guinée-Bissau, Sénégal. Classement : langues atlantiques du Nord et du Centre, groupe bak."
+      },
+      {
+        "title": "Glottolog — Soninke (soni1259)",
+        "url": "https://glottolog.org/resource/languoid/id/soni1259",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue du catalogue Glottolog, lue en ligne. Code ISO 639-3 snk. Pays listés : Gambie, Guinée, Guinée-Bissau, Mali, Mauritanie, Sénégal. Classement : langues mandé de l'Ouest."
+      },
+      {
+        "title": "Glottolog — Sereer (sere1260)",
+        "url": "https://glottolog.org/resource/languoid/id/sere1260",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue du catalogue Glottolog, lue en ligne. Code ISO 639-3 srr. Pays listés : Gambie, Sénégal. Classement : langues atlantiques du Nord et du Centre, groupe peul-sereer."
+      },
+      {
+        "title": "Glottolog — Mandjak (mand1419)",
+        "url": "https://glottolog.org/resource/languoid/id/mand1419",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue du catalogue Glottolog, lue en ligne. Code ISO 639-3 mfv. Pays listés : Gambie, Guinée-Bissau, Sénégal. Classement : langues atlantiques du Nord et du Centre, groupe bak."
+      },
+      {
+        "title": "Glottolog — Bainouk-Gunyaamolo-Gutobor (bain1261)",
+        "url": "https://glottolog.org/resource/languoid/id/bain1261",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue du catalogue Glottolog, lue en ligne. Code ISO 639-3 bcz. Pays listés : Gambie, Guinée-Bissau, Sénégal. Classement : langues atlantiques du Nord et du Centre, groupe nyun."
+      },
+      {
+        "title": "Glottolog — Krio (krio1253)",
+        "url": "https://glottolog.org/resource/languoid/id/krio1253",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue du catalogue Glottolog, lue en ligne. Code ISO 639-3 kri. Pays listés : Gambie, Guinée, Sierra Leone, Sénégal, États-Unis. Classement : créoles à base anglaise d'Afrique de l'Ouest."
       }
     ],
     "demographics": {
@@ -444,34 +725,119 @@
       "peoples": [
         {
           "name": "Mandinka",
-          "percentageInCountry": 33.8,
           "peopleId": "PPL_MALINKE",
-          "region": "Toutes les régions de la Gambie, majoritaires (vallée du fleuve)",
-          "languageFamily": "FLG_MANDE"
+          "population": null,
+          "referenceYear": 2024,
+          "percentageInCountry": 34.4,
+          "percentageInAfrica": null,
+          "region": "Tout le pays, surtout Mansakonko et Brikama",
+          "languageFamily": "FLG_MANDE",
+          "mainLanguageCode": "mnk"
         },
         {
-          "name": "Fula / Peul",
-          "population": 580000,
-          "percentageInCountry": 21.8,
+          "name": "Fula (Peuls)",
           "peopleId": "PPL_FULA",
-          "region": "Toutes les régions de la Gambie (zones pastorales)",
-          "languageFamily": "FLG_ATLANTIQUE"
+          "population": null,
+          "referenceYear": 2024,
+          "percentageInCountry": 25.0,
+          "percentageInAfrica": null,
+          "region": "Tout le pays, surtout Kuntaur et Janjanbureh",
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "fuc"
         },
         {
           "name": "Wolof",
-          "population": 320000,
-          "percentageInCountry": 12.2,
           "peopleId": "PPL_WOLOF",
-          "region": ""
+          "population": null,
+          "referenceYear": 2024,
+          "percentageInCountry": 15.4,
+          "percentageInAfrica": null,
+          "region": "Kerewan, Kuntaur et Banjul",
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "wol"
+        },
+        {
+          "name": "Jola",
+          "peopleId": "PPL_DIOLA",
+          "population": null,
+          "referenceYear": 2024,
+          "percentageInCountry": 9.5,
+          "percentageInAfrica": null,
+          "region": "Brikama et Kanifing",
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "dyo"
+        },
+        {
+          "name": "Sarahule (Soninké)",
+          "peopleId": "PPL_SONINKE",
+          "population": null,
+          "referenceYear": 2024,
+          "percentageInCountry": 8.2,
+          "percentageInAfrica": null,
+          "region": "Basse",
+          "languageFamily": "FLG_MANDE",
+          "mainLanguageCode": "snk"
+        },
+        {
+          "name": "Serer",
+          "peopleId": "PPL_SERER",
+          "population": null,
+          "referenceYear": 2024,
+          "percentageInCountry": 2.9,
+          "percentageInAfrica": null,
+          "region": "Banjul et Kerewan",
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "srr"
+        },
+        {
+          "name": "Manjak",
+          "peopleId": "PPL_MANJAK",
+          "population": null,
+          "referenceYear": 2024,
+          "percentageInCountry": 1.7,
+          "percentageInAfrica": null,
+          "region": "Kanifing et Brikama",
+          "languageFamily": "FLG_ATLANTIQUE",
+          "mainLanguageCode": "mfv"
+        },
+        {
+          "name": "Bambara",
+          "peopleId": null,
+          "population": null,
+          "referenceYear": 2024,
+          "percentageInCountry": 1.2,
+          "percentageInAfrica": null,
+          "region": "Kerewan et Banjul",
+          "languageFamily": "FLG_MANDE",
+          "mainLanguageCode": "bam"
+        },
+        {
+          "name": "Krio (Aku)",
+          "peopleId": null,
+          "population": null,
+          "referenceYear": 2024,
+          "percentageInCountry": 0.4,
+          "percentageInAfrica": null,
+          "region": "Banjul",
+          "languageFamily": "FLG_CREOLE",
+          "mainLanguageCode": "kri"
         },
         {
           "name": "Autres groupes ethniques",
           "peopleId": null,
-          "region": "Divers",
+          "population": null,
+          "referenceYear": 2024,
+          "percentageInCountry": 1.3,
+          "percentageInAfrica": null,
+          "region": null,
           "languageFamily": null,
-          "percentageInCountry": 32
+          "mainLanguageCode": null
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "La Gambie est un petit pays d'Afrique de l'Ouest, étiré le long du fleuve Gambie dont il porte le nom. Le Sénégal l'entoure presque entièrement, et sa capitale est Banjul.",
+      "followUp": "D'où vient le nom du fleuve Gambie, écrit Gambra dès 1455 ?"
     }
   }
 }

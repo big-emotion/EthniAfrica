@@ -104,6 +104,27 @@
           },
           {
             "period": {
+              "from": 1915,
+              "to": 1915,
+              "label": "1915"
+            },
+            "statement": "Le nom couchitique sert chez le linguiste allemand Carl Meinhof à désigner le somali, le galla, le saho et le bedja, qu'il range parmi les langues dites chamitiques. Il associe ces langues à des éleveurs à la peau claire venus du nord et cite le Rwanda comme un pays où l'on distinguerait encore ces éléments.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "An Introduction to the Study of African Languages",
+                "author": "Carl Meinhof, traduit par Alice Werner",
+                "year": 1915,
+                "url": "https://archive.org/details/introductiontost01meinuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres et Toronto, J. M. Dent and Sons, 1915, conférences de l'auteur traduites en anglais par Alice Werner. Ouvrage de l'époque coloniale, lu dans la numérisation d'Internet Archive. Pages 95 et 96 : l'auteur oppose le « Sudan Negro » au « Hamite », qu'il rapproche physiquement de l'Arabe et de l'Européen, imagine des éleveurs à la peau claire venus du nord qui auraient soumis une population à la peau sombre, et cite le Rwanda (« Ruanda ») comme un pays où l'on distinguerait encore ces éléments. Page 150 : il range les langues « Cushite » (somali, galla, saho, bedja) dans l'aire qu'il dit chamitique.",
+                "page": "p. 95-96 et 150"
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1880,
               "to": 1880,
               "label": "1880"
@@ -159,37 +180,70 @@
                 "page": "p. XV et XVIII"
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1876,
+              "to": 1876,
+              "label": "1876"
+            },
+            "before": true,
+            "statement": "On parle alors d'un groupe éthiopien : le linguiste autrichien Friedrich Müller range le bedja, le somali, le galla, l'agaw et le saho dans un « Aethiopische Gruppe » des langues qu'il dit chamitiques. Le mot couchitique n'apparaît pas dans ce volume.",
+            "sources": [
+              {
+                "title": "Grundriss der Sprachwissenschaft, I. Band, I. Abtheilung : Einleitung in die Sprachwissenschaft",
+                "author": "Friedrich Müller",
+                "year": 1876,
+                "url": "https://archive.org/details/grundrissderspra01mlle",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Vienne, Alfred Hölder, 1876. Ouvrage de l'époque coloniale, lu dans la numérisation d'Internet Archive. Aux pages 94 et 95, l'auteur range le bedja, le somali, le galla (aujourd'hui oromo), l'agaw et le saho dans un « Aethiopische Gruppe », un groupe éthiopien des langues qu'il dit chamitiques. Le mot couchitique n'apparaît pas dans ce volume.",
+                "page": "p. 94-95"
+              }
+            ]
           }
         ]
       }
     ]
   },
   "content": {
-    "searchAnswer": {
-      "lead": "Des langues de la Corne de l'Afrique, comme l'oromo, le somali et l'afar. Le nom vient de Koush, un personnage de la Bible, repris par des savants européens du XIXe siècle.",
-      "followUp": "Pourquoi a-t-on rattaché des langues africaines à un petit-fils de Noé ?"
-    },
     "decolonialHeader": {
-      "whyProblematic": " - Le mot « couchitique » est hérité d'une grille de lecture biblique/coloniale qui attribuait des origines « extra-africaines » à certains peuples pour les distinguer des Africains « noirs » dans une logique raciale. Cette théorie a été utilisée pour justifier des hiérarchies raciales et des politiques coloniales.",
-      "selfAppellation": null,
-      "contemporaryUsage": " Branche majeure de l'Afro-asiatique, extrêmement présente en Éthiopie, Somalie, Djibouti, Érythrée et nord du Kenya. Comprend l'oromo, le somali, l'afar, le sidamo, le saho, l'agaw, le rendille, etc. Classification purement linguistique, sans connotation raciale.",
+      "linkWithFamily": "Le couchitique est une branche de la famille afro-asiatique, selon Glottolog, à côté du berbère, du tchadique, de l'égyptien ancien et des langues sémitiques. Joseph Greenberg y comptait aussi un couchitique occidental, que Harold Fleming proposait déjà de détacher ; Glottolog range aujourd'hui ces langues, comme le wolaytta, dans une famille à part.",
       "historicalAppellations": [
         "Langues couchitiques",
         "Langues de Koush/Cush",
-        "chamitique"
+        "chamitique",
+        "Kuschitische Sprachen",
+        "Aethiopische Gruppe (groupe éthiopien)",
+        "Hamito-sémitique"
       ],
-      "originOfHistoricalTerm": " Le terme « Cushitic » a été créé par le linguiste autrichien Friedrich Müller (1834-1898) en 1876 dans son ouvrage *Grundriss der Sprachwissenschaft* (Vienne, 1876-1888). Müller a dérivé ce terme de « Koush/Cush », figure biblique mentionnée dans la Genèse (10:6-8) comme fils de Cham et petit-fils de Noé, considéré comme l'ancêtre éponyme des peuples de la région de Koush (Nubie, Éthiopie). Cette appellation a été adoptée par les linguistes européens du XIXᵉ siècle selon une vision pseudo-généalogique inspirée de la Bible, dans le cadre de la théorie « chamito-couchitique » qui classait les langues africaines selon des critères raciaux."
+      "originOfHistoricalTerm": "Le mot couchitique vient de Koush, un nom que portent à la fois des pays situés au sud de l'Égypte dans les textes égyptiens anciens et un fils de Cham dans la Bible, selon Marcel Cohen. Sa plus ancienne trace que nous connaissons se trouve en 1880 chez le linguiste allemand Richard Lepsius, qui écrit « Kuschitischen (Aethiopischen) Sprachen » et rattache ces langues au Koush des monuments égyptiens et de l'Ancien Testament. Quatre ans plus tôt, l'Autrichien Friedrich Müller appelait le même ensemble « groupe éthiopien » : son volume de 1876, souvent cité comme l'origine du mot, ne l'emploie pas. Le Français Joseph Halévy avait relevé dès 1873 les liens entre l'agaw, le bedja, l'afar, l'oromo et le somali, selon Martine Vanhove.",
+      "whyProblematic": "Le mot couchitique est né dans un classement qui mêlait les langues et les races. Richard Lepsius range en 1880 ces langues parmi les langues qu'il dit chamitiques, venues selon lui d'Asie, et il oppose les « Kuschiten » venus d'Asie, dont il fait les ancêtres des Bedja, aux Nubiens, qu'il range parmi les peuples qu'il appelle nègres. En 1915, dans une traduction anglaise de ses conférences, Carl Meinhof décrit les « Hamites » comme des éleveurs à la peau claire venus du nord et cite le Rwanda. Cette hypothèse dite hamitique a servi au Rwanda à présenter les Tutsi comme venus du « Nord », et elle a nourri l'idéologie du génocide des Tutsi en 1994, selon Jean-Pierre Chrétien et Marcel Kabanda. Marcel Cohen demandait déjà en 1924 qu'on ne confonde jamais couchitique et chamitique, et l'africaniste Dmitri Olderogge juge le terme chamito-sémitique mal choisi, car rien ne permet de diviser cette famille en deux groupes.",
+      "selfAppellation": "La famille n'a pas de nom propre chez ses locuteurs : couchitique est un mot de savants, et les sources que nous avons lues ne citent aucun peuple qui l'emploie pour se nommer. Chaque langue porte en revanche le nom que lui donnent ses locuteurs : les Afar appellent la leur ʕafár af, selon Mohamed Hassan Kamil, et les Bedja nomment la leur beɖawije, un mot tiré de l'arabe badu, « bédouin », selon Martine Vanhove. Des linguistes de Djibouti emploient aussi le mot couchitique pour leurs propres langues, par exemple lors d'une journée d'études tenue à Djibouti en 2018.",
+      "contemporaryUsage": "Le mot couchitique désigne aujourd'hui une branche de la famille afro-asiatique, définie par la comparaison des langues et non par l'origine des peuples. Glottolog y compte 46 langues en quatre groupes : le bedja, les langues agaw, le couchitique de l'Est, de loin le plus grand, et le couchitique du Sud, parlé surtout en Tanzanie. En Éthiopie, les plus parlées comme langue maternelle en 2007 étaient l'oromo, le somali, le sidamo, l'afar et le hadiyya, selon le recensement national.",
+      "geographicArea": "Corne de l'Afrique, Éthiopie, Somalie, Djibouti, Érythrée, Kenya, est du Soudan, Tanzanie",
+      "numberOfLanguages": 46,
+      "totalSpeakers": 38889266
     },
     "generalInfo": {
       "branches": [
-        "Beja (couchitique septentrional)",
+        "Bedja (couchitique du Nord)",
         "Agaw (couchitique central)",
-        "Couchitique oriental",
-        "Couchitique méridional"
+        "Couchitique de l'Est",
+        "Couchitique du Sud"
       ],
-      "geographicArea": "Corne de l'Afrique (Éthiopie, Somalie, Djibouti, Érythrée, nord du Kenya, est du Soudan)",
-      "numberOfLanguages": 40,
-      "totalSpeakers": 45000000
+      "geographicArea": "Corne de l'Afrique, Éthiopie, Somalie, Djibouti, Érythrée, Kenya, est du Soudan, Tanzanie",
+      "numberOfLanguages": 46,
+      "totalSpeakers": 38889266,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "46 langues selon Glottolog 5.3, qui ne compte plus l'ancien couchitique occidental"
+        },
+        "totalSpeakers": {
+          "note": "Au moins 38,9 millions : somme calculée par nous à partir du recensement éthiopien de 2007 et du chiffre soudanais de 1993 cité par Martine Vanhove. La Somalie, Djibouti, l'Érythrée et le Kenya n'y sont pas comptés.",
+          "unsourced": false
+        }
+      }
     },
     "associatedPeoples": [
       {
@@ -218,21 +272,24 @@
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " Langues majoritairement agglutinantes (les mots se construisent en ajoutant des éléments à la suite les uns des autres) avec ordre des mots Sujet-Objet-Verbe (SOV) dans la plupart des cas. Exemples concrets :",
-      "relationsWithNeighbors": " Contacts étroits et anciens avec les langues sémitiques éthiopiennes (amharique, tigrinya) et avec l'omotique. Exemples d'emprunts :"
+      "typology": "Les langues couchitiques décrites dans nos sources placent le verbe à la fin de la phrase. L'afar suit l'ordre sujet, objet, verbe, selon Mohamed Hassan Kamil, et le somali est aussi classé parmi les langues de cet ordre, selon Hawa A. Farah et Abdirachid M. Ismail. En afar, seuls les noms masculins terminés par a ou u changent de forme selon leur rôle dans la phrase : áwka, « garçon », devient awkí quand il est sujet. Les autres rôles sont marqués par des petits mots placés après le nom, les postpositions.",
+      "phonologicalFeatures": "Le somali place sur chaque nom un accent de hauteur, sur la dernière ou l'avant-dernière voyelle, et cette place change le sens, selon Nicola Lampitelli. Elle distingue deux mots, qáan, « jeunes chameaux », et qaán, « dette » ; le genre, ínan, « garçon », et inán, « fille » ; le nombre, mádax, « tête », et madáx, « têtes ». Le son q, une consonne prononcée au fond de la gorge, existe en oromo et en somali mais manque en afar, selon Mohamed Hassan Kamil.",
+      "relationsWithNeighbors": "Les langues couchitiques vivent au contact des langues sémitiques d'Éthiopie et d'Érythrée et de l'arabe. L'afar côtoie l'oromo, le somali et le saho, ainsi que le tigrinya, le tigré, l'amharique et l'arabe ; il a emprunté à l'arabe ʃámʕi, « bougie », et zábiib, « raisin sec », et à l'anglais porodʒékti, « projet », selon Mohamed Hassan Kamil. Au Soudan, le bedja est au contact de l'arabe depuis au moins cinq siècles et beaucoup de Bedja, surtout des hommes, parlent aussi l'arabe ; les langues nilo-sahariennes voisines, dont le nubien, ne lui ont laissé qu'une dizaine de mots, selon Martine Vanhove. En Tanzanie, le mbugu, une langue du couchitique du Sud, a été tellement marqué par les langues bantoues que certains chercheurs le tiennent pour une langue mixte, selon Joseph Greenberg.",
+      "keyInnovations": "Un trait partagé par de nombreuses langues couchitiques est la polarité du genre : un nom n'a souvent pas le même genre au singulier et au pluriel, selon Mohamed Hassan Kamil. Plusieurs chercheurs décrivent aussi le nombre comme un procédé de formation des mots plutôt que comme une simple terminaison, rapporte Mauro Tosco. En gawwada, une langue du sud de l'Éthiopie, il distingue trois genres, masculin, féminin et pluriel, mais il ajoute que ce cas ne représente pas tout le couchitique. Le bedja garde mieux que les autres l'ancienne conjugaison par préfixes : environ 60 % de ses verbes l'emploient, contre 30 % en afar, selon les comptes de David Cohen que cite Martine Vanhove."
     },
     "historyAndOrigins": {
-      "probableOrigin": " QUI a classé : La classification des langues couchitiques a été proposée par le linguiste autrichien Friedrich Müller (1834-1898) en 1876 dans *Grundriss der Sprachwissenschaft* (Vienne, 1876-1888). Joseph Greenberg (1915-2001) a intégré les langues couchitiques dans la famille afro-asiatique dans *The Languages of Africa* (1963, Indiana University Press). Christopher Ehret (né en 1941) a développé des classifications détaillées dans *The Civilizations of Africa* (2002, University Press of Virginia) et *History and the Testimony of Language* (2011, University of California Press). Théories linguistiques :",
-      "emergencePeriod": " (1) Émergence historique de la FLG : Les langues couchitiques se sont probablement séparées d'un proto-couchitique commun il y a 6000-7000 ans selon les reconstructions linguistiques (Ehret, 2002). Les premières attestations archéologiques de cultures associées aux locuteurs couchitiques remontent au Néolithique (5000-6000 ans avant notre ère) dans la Corne de l'Afrique. (2) Date de classification académique : Le terme « couchitique » a été créé par Friedrich Müller en 1876. La classification moderne dans la famille afro-asiatique date de Joseph Greenberg (1963). Les classifications détaillées ont été développées par Christopher Ehret (années 1970-2000) et d'autres linguistes contemporains.",
-      "diffusion": " Afficher l'ensemble des avis disponibles :",
-      "contactZones": " OÙ - Localisation géographique précise :",
-      "majorEvents": " Chronologie avec dates précises :"
+      "probableOrigin": "L'origine des langues couchitiques n'est connue que par des indices, et nos sources la présentent avec prudence. Pour J. E. G. Sutton, dans l'Histoire générale de l'Afrique de l'UNESCO, l'élevage et l'agriculture ont peut-être gagné les hauts plateaux d'Éthiopie, puis ont été portés vers le sud par de petits mouvements de peuples de langue couchitique. Martine Vanhove rapporte que la diversité du couchitique de l'Est suppose une séparation très ancienne, d'environ huit millénaires selon les calculs de Václav Blažek. Au XIXe siècle, Richard Lepsius faisait venir ces peuples d'Asie : c'était une idée de son époque sur les races, pas un résultat de la comparaison des langues.",
+      "emergencePeriod": "La période où le couchitique ancien s'est formé n'est pas datée par les sources que nous avons lues ; elles donnent seulement l'ordre de grandeur de huit millénaires pour le couchitique de l'Est. Le classement savant, lui, a une histoire datée. Joseph Halévy relève en 1873 des liens entre l'agaw, le bedja, l'afar, l'oromo et le somali, selon Martine Vanhove. Friedrich Müller parle en 1876 d'un groupe éthiopien, Richard Lepsius de langues couchitiques en 1880, et Leo Reinisch distingue en 1894 un couchitique des basses terres et un couchitique des hautes terres. Un colloque tenu à Paris en 1975 a débattu de ce qui définit ces langues, et Robert Hetzron a proposé en 1980 de mettre le bedja à part, une idée que d'autres linguistes ont contestée.",
+      "diffusion": "Les langues couchitiques se sont étendues de la mer Rouge jusqu'en Tanzanie. Le bedja est peut-être présent dans la vallée du Nil depuis très longtemps : une formule magique sur un papyrus égyptien vers 1000 avant notre ère commencerait par un mot bedja, selon Claude Rilly, et la langue des Blemmyes, un peuple cité par les Égyptiens et les Grecs, serait l'ancêtre du bedja, selon Gerald Browne, deux travaux que rapporte Martine Vanhove. Plus au sud, des peuples de langue couchitique vivaient dans les savanes d'Afrique de l'Est avant l'arrivée des locuteurs de langues bantoues, selon Dmitri Olderogge, et le couchitique du Sud se parle aujourd'hui en Tanzanie, selon Joseph Greenberg.",
+      "historicalBreaks": "Plusieurs langues couchitiques ont reculé au profit d'autres langues. Les langues agaw étaient sans doute parlées autrefois sur un territoire continu, mais beaucoup de leurs locuteurs ont adopté des langues sémitiques d'Éthiopie ; les Falasha, ou Juifs d'Éthiopie, parlaient autrefois une langue agaw, selon Joseph Greenberg. Le bedja était parlé dans le sud de l'Égypte, où presque tous ses locuteurs semblent être passés à l'arabe, selon Martine Vanhove. Du côté des savants, la proposition de Harold Fleming a détaché du couchitique tout un ensemble de langues du sud-ouest de l'Éthiopie, l'ancien couchitique occidental.",
+      "contactZones": "Plusieurs régions mêlent langues couchitiques et autres langues. Le triangle afar, une région d'environ 150 000 km² partagée entre l'Érythrée, l'Éthiopie et Djibouti, met l'afar au contact de l'oromo, du somali, du saho et de langues sémitiques, selon Mohamed Hassan Kamil. Dans l'est du Soudan et le nord de l'Érythrée, le bedja côtoie l'arabe, le tigré et le nubien, selon Martine Vanhove. À Djibouti, ville où se croisent le somali, l'afar et l'arabe, un parler propre est apparu chez de jeunes Somali scolarisés, le somdji, selon Marie-Claude Simeone-Senelle et ses coauteurs.",
+      "majorEvents": "Plusieurs événements ont marqué ces langues et la façon de les nommer. Les Bedja se sont convertis peu à peu à l'islam après la conquête du Soudan par l'Égypte au XIVe siècle, et l'arabe est entré avec cette religion, selon Martine Vanhove. Depuis le XIXe siècle, la colonisation a mis l'afar au contact de l'italien en Érythrée jusqu'en 1941, de l'anglais en Érythrée et en Éthiopie, et du français à Djibouti, selon Mohamed Hassan Kamil. Dans le même temps, des linguistes européens ont rangé ces langues parmi les langues dites chamitiques, une idée qui a servi au Rwanda à opposer Tutsi et Hutu, selon Jean-Pierre Chrétien et Marcel Kabanda. En 2018, l'Institut des langues de Djibouti a réuni des chercheurs de Djibouti et d'Europe autour de ces langues."
     },
     "distribution": {
-      "totalSpeakers": 45000000,
+      "totalSpeakers": 38889266,
       "distributionByCountry": {
-        "ETH": 25488344,
-        "KEN": 3558307
+        "ETH": 37789266,
+        "SDN": 1100000
       }
     },
     "sources": [
@@ -325,7 +382,7 @@
         "source_kind": "academic"
       },
       {
-        "title": "Müller, F. (1876-1888) – *Grundriss der Sprachwissenschaft*. 3 volumes. Alfred Hölder, Vienne. (Volume 1, 1876 : classification des langues africaines selon des critères raciaux ; introduction du terme « Cushitic »)",
+        "title": "Müller, F. (1876-1888) – *Grundriss der Sprachwissenschaft*. 3 volumes. Alfred Hölder, Vienne. (Volume 1, 1876 : classification des langues africaines selon des critères raciaux)",
         "url": null,
         "tier": "referenced"
       },
@@ -386,7 +443,8 @@
         "title": "Glottolog 5.2 – classification génétique \"Cushitic [cush1243]\", 4 branches immédiates (Beja, Agaw, East Cushitic, South Cushitic)",
         "url": "https://glottolog.org/resource/languoid/id/cush1243",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max Planck d'anthropologie évolutionniste, Leipzig, relu le 3 novembre 2026 dans sa version 5.3. La fiche range le couchitique dans la famille afro-asiatique et compte 46 langues en quatre groupes : agaw (4 langues), bedja (1), couchitique de l'Est (35) et couchitique du Sud (6)."
       },
       {
         "title": "Ethiopian Statistics Service / Population Census Commission (2007) – Summary and Statistical Report of the 2007 Population and Housing Census, Table 2.2 : population Oromo (couchitique oriental) = 25 488 344",
@@ -399,7 +457,120 @@
         "url": "https://www.knbs.or.ke/wp-content/uploads/2023/09/2019-Kenya-population-and-Housing-Census-Volume-4-Distribution-of-Population-by-Socio-Economic-Characteristics.pdf",
         "tier": "official",
         "source_kind": "official_statistics"
+      },
+      {
+        "title": "Population and Housing Census 2007 Report, National, Table 3.2 : Population by Urban-Rural Residence, Sex, and Mother Tongue",
+        "author": "Central Statistical Agency of Ethiopia",
+        "year": 2010,
+        "url": "https://microdata.worldbank.org/index.php/catalog/2747/download/39211",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport national du recensement éthiopien de 2007, lu dans la copie déposée à la bibliothèque de microdonnées de la Banque mondiale. Le tableau 3.2 (p. 91 et 92) compte les habitants selon leur langue maternelle, c'est-à-dire la langue parlée en famille pendant l'enfance (définition p. 71). Chiffres pour tout le pays : oromo 24 930 424, somali 4 609 274, sidamo 2 981 471, afar 1 281 284, hadiyya 1 253 894, gedeo 974 609, kambaata 614 807, awngi 488 507, konso 242 059, alaba 226 604, k'abeena 51 333, daasanach 47 986, burji 46 419, tsamai 18 048, dirasha 15 336 et arbore 7 211."
+      },
+      {
+        "title": "Grundriss der Sprachwissenschaft, I. Band, I. Abtheilung : Einleitung in die Sprachwissenschaft",
+        "author": "Friedrich Müller",
+        "year": 1876,
+        "url": "https://archive.org/details/grundrissderspra01mlle",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Vienne, Alfred Hölder, 1876. Ouvrage de l'époque coloniale, lu dans la numérisation d'Internet Archive. Aux pages 94 et 95, l'auteur range le bedja, le somali, le galla (aujourd'hui oromo), l'agaw et le saho dans un « Aethiopische Gruppe », un groupe éthiopien des langues qu'il dit chamitiques. Le mot couchitique n'apparaît pas dans ce volume.",
+        "page": "p. 94-95"
+      },
+      {
+        "title": "An Introduction to the Study of African Languages",
+        "author": "Carl Meinhof, traduit par Alice Werner",
+        "year": 1915,
+        "url": "https://archive.org/details/introductiontost01meinuoft",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Londres et Toronto, J. M. Dent and Sons, 1915, conférences de l'auteur traduites en anglais par Alice Werner. Ouvrage de l'époque coloniale, lu dans la numérisation d'Internet Archive. Pages 95 et 96 : l'auteur oppose le « Sudan Negro » au « Hamite », qu'il rapproche physiquement de l'Arabe et de l'Européen, imagine des éleveurs à la peau claire venus du nord qui auraient soumis une population à la peau sombre, et cite le Rwanda (« Ruanda ») comme un pays où l'on distinguerait encore ces éléments. Page 150 : il range les langues « Cushite » (somali, galla, saho, bedja) dans l'aire qu'il dit chamitique.",
+        "page": "p. 95-96 et 150"
+      },
+      {
+        "title": "Die Bedauye-Sprache in Nordost-Afrika, III",
+        "author": "Leo Reinisch",
+        "year": 1894,
+        "url": "https://archive.org/details/11837030bsb",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Vienne, Académie impériale des sciences, Sitzungsberichte, 1894. Ouvrage de l'époque coloniale, lu dans la numérisation d'Internet Archive. À la page 9, l'auteur compare le mot pour « deux » en « Niderkuschitisch », le couchitique des basses terres (saho, afar, galla, somali), et en « Hochkuschitisch », le couchitique des hautes terres (bilin, quara, dembea et d'autres parlers agaw).",
+        "page": "p. 9"
+      },
+      {
+        "title": "Système nominal et acte de nommer dans des langues couchitiques de la Corne de l'Afrique",
+        "author": "Marie-Claude Simeone-Senelle, Fatouma Mahamoud Hadji Ali et Mohamed Hassan Kamil (dir.)",
+        "year": 2021,
+        "url": "https://shs.hal.science/halshs-03476739",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Villejuif, Lacito-Publications, collection Diversité des langues 1, 2021, ouvrage relu par des pairs et déposé sur HAL. Actes d'une journée d'études organisée à Djibouti le 13 décembre 2018 par l'Institut des langues de Djibouti (introduction, p. 9). Lu : Mohamed Hassan Kamil sur l'afar (p. 13 à 15) ; Nicola Lampitelli sur l'accent tonal du somali (p. 53 et 54) ; Mauro Tosco sur les trois genres du gawwada (p. 63, 64 et 73) ; Hawa A. Farah et Abdirachid M. Ismail sur le somali (p. 75)."
+      },
+      {
+        "title": "L'afar : description grammaticale d'une langue couchitique (Djibouti, Érythrée et Éthiopie)",
+        "author": "Mohamed Hassan Kamil",
+        "year": 2015,
+        "url": "https://theses.hal.science/tel-01368253",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Thèse de doctorat en linguistique, Université Sorbonne Paris Cité, 2015, déposée sur HAL. Lu : le nom que les Afar se donnent et celui de leur langue (p. 29) ; les langues voisines et les langues européennes en contact depuis le XIXe siècle (p. 30) ; les sons et les mots empruntés (p. 76 et 77) ; l'ordre sujet, objet, verbe (p. 424) ; la polarité du genre, partagée par de nombreuses langues couchitiques (p. 488)."
+      },
+      {
+        "title": "North-Cushitic",
+        "author": "Martine Vanhove",
+        "year": 2020,
+        "url": "https://shs.hal.science/halshs-01485896",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Chapitre de The Oxford Handbook of African Languages (dir. Rainer Vossen et Gerrit J. Dimmendaal, Oxford University Press, 2020), lu dans la version déposée sur HAL. Lu : le nom bedja de la langue et ses locuteurs (p. 1) ; l'histoire du classement, de Joseph Halévy en 1873 à Robert Hetzron en 1980 (p. 2 et 3) ; la profondeur du couchitique de l'Est, d'après Václav Blažek (p. 4) ; les contacts du bedja avec l'arabe et le nubien (p. 5 et 6)."
+      },
+      {
+        "title": "Jean-Pierre Chrétien et Marcel Kabanda, Rwanda, racisme et génocide. L'idéologie hamitique",
+        "author": "Boris Adjemian",
+        "year": 2014,
+        "url": "https://shs.hal.science/halshs-01510035",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Compte rendu paru dans Études arméniennes contemporaines, n° 4, 2014, p. 145 à 152, lu dans la version déposée sur HAL. Il résume le livre de Jean-Pierre Chrétien et Marcel Kabanda (Paris, Belin, 2013) : la naissance de « l'hypothèse hamitique » dans la science européenne du XIXe siècle, son usage au Rwanda et au Burundi, où les Tutsi étaient dits venus du « Nord », et sa place dans l'idéologie qui a conduit au génocide des Tutsi en 1994.",
+        "page": "p. 145-148"
+      },
+      {
+        "title": "General History of Africa, I : Methodology and African Prehistory",
+        "author": "J. Ki-Zerbo (dir.) ; chapitres de D. Olderogge, J. H. Greenberg et J. E. G. Sutton",
+        "year": 1981,
+        "url": "https://archive.org/details/unesco_general_history_africa_i",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "UNESCO, Paris, et Heinemann, Londres, 1981, édition anglaise lue dans la numérisation d'Internet Archive. Lu : D. Olderogge sur le terme chamito-sémitique et les langues couchitiques d'Afrique de l'Est (p. 281 et 282) ; J. H. Greenberg sur les cinq branches du couchitique et la proposition de Harold Fleming (p. 300 à 302) ; J. E. G. Sutton sur les débuts de l'élevage et de l'agriculture en Afrique de l'Est (p. 481)."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Des langues de la Corne de l'Afrique, comme l'oromo, le somali et l'afar. Le nom vient de Koush, un personnage de la Bible, repris par des savants européens du XIXe siècle.",
+      "followUp": "Pourquoi a-t-on rattaché des langues africaines à un petit-fils de Noé ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "ETH",
+          "speakers": 37789266,
+          "source": {
+            "title": "Population and Housing Census 2007 Report, National, Table 3.2 : Population by Urban-Rural Residence, Sex, and Mother Tongue",
+            "url": "https://microdata.worldbank.org/index.php/catalog/2747/download/39211",
+            "tier": "official",
+            "notes": "Somme calculée par nous à partir du tableau 3.2 du rapport national du recensement de 2007 (p. 91 et 92) : seize langues maternelles que Glottolog range parmi les langues couchitiques (oromo, somali, sidamo, afar, hadiyya, gedeo, kambaata, awngi, konso, alaba, k'abeena, daasanach, burji, tsamai, dirasha et arbore). Quelques petites langues que nous n'avons pas pu rattacher avec certitude n'y sont pas comptées."
+          }
+        },
+        {
+          "country": "SDN",
+          "speakers": 1100000,
+          "source": {
+            "title": "North-Cushitic, par Martine Vanhove, The Oxford Handbook of African Languages, 2020",
+            "url": "https://shs.hal.science/halshs-01485896",
+            "tier": "referenced",
+            "notes": "Environ 1 100 000 locuteurs du bedja dans l'est du Soudan, chiffre du recensement soudanais de 1993 cité par l'autrice (p. 1). Lu dans la version déposée sur HAL."
+          }
+        }
+      ]
+    }
   }
 }

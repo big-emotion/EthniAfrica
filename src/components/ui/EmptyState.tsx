@@ -5,13 +5,6 @@ import { getLocalizedRoute } from "@/lib/routing";
 import type { Language } from "@/types/shared";
 import { systemStatesCopy } from "@/lib/i18n/copy/systemStates";
 
-// The way out of a fruitless search, worded once. The home's hero panel offers
-// the same escape in a space too small for this component's medallion, and two
-// hand-written copies of one sentence is how the site ended up with three
-// spellings of "no results" already.
-// @req REQ-002
-export const SEARCH_EMPTY_LINK_LABEL = systemStatesCopy.fr.empty.browseFamilies;
-
 interface EmptyStateProps {
   message: string;
   variant?: "default" | "search" | "failure";

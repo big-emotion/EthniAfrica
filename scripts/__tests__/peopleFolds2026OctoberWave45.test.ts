@@ -41,9 +41,10 @@ const FOLDS: Fold[] = [
     retired: ["PPL_SENA_MOZ", "PPL_SENA_ZAMB"],
     keeper: "FLG_NIGERCONGO/PPL_SENA",
     carried: {
+      // Premium batch 01 (2026-11-03) rewrote this keeper from sources read
+      // in session and dropped the folded labels no source supports; only
+      // what the sourced fiche still carries is held here.
       sourceTitle: "Central Statistical Office Zambia — Census 2022",
-      subGroup: "Sena de la province Orientale de Zambie",
-      dialect: "Cisena de la Zambezia",
       country: "ZMB",
     },
   },
@@ -71,7 +72,9 @@ const FOLDS: Fold[] = [
     keeper: "FLG_MANDE/PPL_DAN",
     carried: {
       sourceTitle: "Liberia Population and Housing Census 2022 – LISGIS",
-      subGroup: "Gio (Dan du Liberia",
+      // Premium batch 01 (2026-11-03) rewrote this keeper from sources read
+      // in session and dropped the folded labels no source supports; only
+      // what the sourced fiche still carries is held here.
       exonym: "Yakouba",
     },
   },
@@ -97,10 +100,11 @@ const FOLDS: Fold[] = [
     retired: ["PPL_AZANDE_SUD"],
     keeper: "FLG_SOUDANIQUECENTRAL/PPL_ZANDE",
     carried: {
+      // The sourced rewrite of 2026-11-03 keeps the Ambomu clans and the
+      // Mbomu river; no source read attests a « Mbomu » subgroup or the
+      // spelling « Bazende ».
       sourceTitle: "Joshua Project — Azande in South Sudan",
-      subGroup: "Mbomu",
       dialect: "Makaraka",
-      exonym: "Bazende",
     },
   },
   {
@@ -163,8 +167,9 @@ const FOLDS: Fold[] = [
     retired: ["PPL_TSWA_MOZ", "PPL_TSWA_CALANGA"],
     keeper: "FLG_NIGERCONGO/PPL_TSWA",
     carried: {
+      // No source read on 2026-11-03 describes an urban Vatswa subgroup in
+      // Maputo; Batswa is kept as a spelling of the self-name.
       sourceTitle: "CLEAR Global — Language data for Mozambique (2024)",
-      subGroup: "Vatswa urbanises de Maputo",
       exonym: "Batswa",
     },
   },
@@ -210,8 +215,9 @@ const FOLDS: Fold[] = [
     carried: {
       sourceTitle:
         "UNESCO : Les savoir-faire liés à la fabrication de l'attiéké (2024)",
-      subGroup: "Bodins",
-      dialect: "Dialecte Kétin",
+      // Premium batch 01 (2026-11-03) rewrote this keeper from sources read
+      // in session and dropped the folded labels no source supports; only
+      // what the sourced fiche still carries is held here.
       exonym: "Atché",
     },
   },
@@ -343,7 +349,13 @@ describe("duplicate people fiches of waves 4 and 5 folded on 2026-10-11", () => 
           dialect
         ).toBe(true);
       }
-      if (exonym) expect(appellations.exonyms).toContain(exonym);
+      // Since ETNI-2135 a carried name may sit with the other spellings:
+      // both lists answer a search.
+      if (exonym)
+        expect([
+          ...appellations.exonyms,
+          ...(appellations.spellingAliases ?? []),
+        ]).toContain(exonym);
       if (isoCode) expect(languages.isoCodes).toContain(isoCode);
       if (country) expect(fiche.currentCountries).toContain(country);
     }

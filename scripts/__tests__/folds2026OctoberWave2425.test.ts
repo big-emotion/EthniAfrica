@@ -467,8 +467,8 @@ describe("references repointed", () => {
   // @req REQ-149
   it.each([
     ["GAB", "Autres peuples bantous"],
-    ["CMR", "Peuples forestiers du Sud et de l'Est"],
-    ["CPV", "Africains d'origine récente"],
+    ["CMR", "Peuples des forêts du Sud et de l'Est"],
+    ["CPV", "Immigrés et étrangers"],
   ])("keeps the %s row « %s » without a people id", (countryId, name) => {
     const country = readCountry(countryId);
     const row = country.content.majorPeoples.find(

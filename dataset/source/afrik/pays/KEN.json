@@ -3,11 +3,11 @@
   "nameFr": "Kenya",
   "nameEn": "Kenya",
   "nameOfficial": "République du Kenya (Republic of Kenya)",
-  "summary": "Le Kenya porte le nom d'une montagne que les Kikuyu appellent Kirinyaga, « la montagne de blancheur » ; les explorateurs européens du XIXe siècle en ont fait « Kenya ». Cités swahili de la côte, royaumes bantous et confédérations nilotiques s'y rencontrent. Kikuyu, Luhya, Kalenjin, Luo, Kamba et Somali y ont le swahili pour langue commune.",
-  "etymology": "Le nom \"Kenya\" viendrait du mont Kenya, que les Kikuyu appellent \"Kirinyaga\" (montagne de blancheur). Les explorateurs européens du XIXe siècle ont utilisé \"Kenya\" d'après le mont Kenya. Le nom a été officialisé lors de la colonisation britannique.",
-  "nameOriginActor": "Le nom vient du mont Kenya, appelé \"Kirinyaga\" par les Kikuyu. Les explorateurs européens ont popularisé le terme \"Kenya\" au XIXe siècle. Le nom a été officialisé par les Britanniques lors de la colonisation.",
+  "summary": "Le Kenya porte le nom du mont Kenya, une montagne que le missionnaire Johann Ludwig Krapf a notée « Kenia » en 1849. Krapf rattache ce nom au nom kamba de la montagne ; le géologue John Walter Gregory y voit un malentendu et donne Kilinyaga pour son vrai nom kikuyu. Colonie britannique à partir de 1920, le pays devient indépendant le 12 décembre 1963, puis république un an plus tard.",
+  "etymology": "Le pays porte le nom du mont Kenya. Le missionnaire allemand Johann Ludwig Krapf l'écrit « Kenia » dans son journal de novembre 1849, puis « Kegnia » dans le récit de ses voyages paru en 1860. Selon Krapf, les Kamba appellent la montagne Kima ja Kegnia, qu'il traduit par « montagne de blancheur ». Le géologue John Walter Gregory pense au contraire, en 1896, que ce nom serait né d'un malentendu et que le vrai nom kikuyu est Kilinyaga. En kikuyu, la montagne s'appelle Kĩrĩnyaga : les Routledge traduisent ce nom par « lieu de la blancheur », tandis que le dictionnaire de T. G. Benson le rattache à nyaga, « autruche ». L'association kényane Paukwa rattache le nom du pays au kamba Kiinyaa.",
+  "nameOriginActor": "Le nom est noté pour la première fois par Johann Ludwig Krapf, en 1849, d'après ce que lui disent les Kamba de Kitui, dont le chef Kivoi. L'administration britannique en a fait le nom du territoire en 1920 : un ordre en conseil du 11 juin 1920 crée la Colonie du Kenya.",
   "nameHistory": {
-    "summary": "Le nom Kenya désigne un pays d'Afrique de l'Est, la République du Kenya, qui porte le nom d'une montagne, le mont Kenya. Le pays a d'abord porté d'autres noms : Protectorat de l'Afrique de l'Est, puis Colonie du Kenya. Le nom de la montagne voudrait dire « montagne de blancheur », selon le missionnaire Johann Ludwig Krapf ; nous présentons son explication plus bas.",
+    "summary": "Le nom Kenya est celui que le pays se donne : il vient du mont Kenya, une montagne que les peuples voisins nomment chacun dans leur langue. Sous la domination britannique, le pays a porté deux autres noms, Protectorat de l'Afrique de l'Est puis Colonie du Kenya. L'origine du mot Kenya est débattue : Krapf et l'association kényane Paukwa la rattachent au kamba, Gregory y voit un malentendu ; ces explications sont présentées plus bas.",
     "names": [
       {
         "nameText": "Kenya",
@@ -15,7 +15,7 @@
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom d'une montagne, noté par un missionnaire en 1849 ; on ne sait pas avec certitude ce qu'il voulait dire.",
+        "shortLine": "Le nom d'une montagne, écrit Kenia par un missionnaire en 1849 ; son origine kamba est discutée.",
         "periodLabel": "Écrit dès 1849 ; nom de l'État depuis 1963",
         "accounts": [
           {
@@ -37,6 +37,38 @@
                 "source_kind": "government",
                 "page": "section 1",
                 "notes": "Texte de la loi, lu sur le site officiel de la législation britannique. Il fixe au 12 décembre 1963 la fin de la responsabilité du gouvernement britannique sur le Kenya, et nomme Kenya Protectorate la bande côtière."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": null,
+              "label": "Depuis le 12 décembre 1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Kenya est celui d'une république depuis le 12 décembre 1964, un an après l'indépendance ; le pays reste membre du Commonwealth, selon la loi britannique de 1965 et les débats qui l'accompagnent.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Kenya Republic Act 1965",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1965,
+                "url": "https://www.legislation.gov.uk/ukpga/1965/5/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "sections 1 et 2",
+                "notes": "Texte de la loi du 23 mars 1965, lu sur le site officiel de la législation britannique. Elle règle les effets en droit britannique du fait que le Kenya est devenu une république au sein du Commonwealth, avec effet au 12 décembre 1964."
+              },
+              {
+                "title": "Chambre des communes du Royaume-Uni — Kenya Republic Bill, 1er février 1965 (Hansard)",
+                "author": "Chambre des communes du Royaume-Uni",
+                "year": 1965,
+                "url": "https://api.parliament.uk/historic-hansard/commons/1965/feb/01/kenya-republic-bill",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "HC Deb 01 February 1965 vol 705 cc823-35",
+                "notes": "Compte rendu des débats lu sur le site du Parlement britannique. Le ministre d'État Cledwyn Hughes déclare : « On 12th December, 1964, Kenya became a republic, though remaining within the Commonwealth ». Il dit avoir félicité le président Kenyatta pour son investiture."
               }
             ]
           },
@@ -79,6 +111,16 @@
                 "source_kind": "government",
                 "page": "p. 697-698",
                 "notes": "Gazette publiée à Nairobi le 23 juillet 1920, lue dans l'exemplaire numérisé. Elle reproduit l'ordre en conseil du 11 juin 1920, qui annexe les territoires du protectorat, sauf ceux du sultan de Zanzibar, sous le nom de « Colony of Kenya »."
+              },
+              {
+                "title": "Chambre des communes du Royaume-Uni — Kenya Colony, 14 juillet 1920 (Hansard)",
+                "author": "Chambre des communes du Royaume-Uni",
+                "year": 1920,
+                "url": "https://api.parliament.uk/historic-hansard/commons/1920/jul/14/kenya-colony",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "HC Deb 14 July 1920 vol 131 cc2393-4",
+                "notes": "Compte rendu des débats lu sur le site du Parlement britannique. Interrogé sur le sens du changement de nom, le sous-secrétaire d'État aux Colonies, Leopold Amery, répond que le nom du Protectorat de l'Afrique de l'Est, « often in the past unofficially termed British East Africa », a été changé lors de l'annexion, parce qu'un nom géographique général convenait désormais mieux à l'ensemble des territoires britanniques d'Afrique de l'Est. Il parle aussi de « Kenya Colony » et de « Kenya Protectorate »."
               }
             ]
           },
@@ -165,8 +207,18 @@
               "to": null,
               "label": "Nom kikuyu, non daté"
             },
-            "statement": "Le nom Kenya a un voisin en kikuyu : Kĩrĩnyaga, le nom que les Kikuyu donnent à la même montagne. Les Routledge l'écrivent Ki-ri-nya-ga en 1910 et le traduisent par « lieu de la blancheur » ; le dictionnaire de T. G. Benson le rattache à nyaga, « autruche », et le rend par « la montagne qui possède des autruches ».",
+            "statement": "Le nom Kenya a un voisin en kikuyu : Kĩrĩnyaga, le nom que les Kikuyu donnent à la même montagne. Le géologue John Walter Gregory l'écrit Kilinyaga en 1896. Les Routledge l'écrivent Ki-ri-nya-ga en 1910 et le traduisent par « lieu de la blancheur » ; le dictionnaire de T. G. Benson le rattache à nyaga, « autruche », et le rend par « la montagne qui possède des autruches ».",
             "sources": [
+              {
+                "title": "The Great Rift Valley: being the narrative of a journey to Mount Kenya and Lake Baringo",
+                "author": "John Walter Gregory",
+                "year": 1896,
+                "url": "https://archive.org/details/greatriftvalleyb00greg",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 162, note 1",
+                "notes": "Londres, John Murray, 1896, lu dans l'exemplaire numérisé. Récit d'un géologue britannique de l'époque coloniale. En note, il écrit : « The name Kenya was given to the mountain owing to a misunderstanding. The proper Kikuyu name is Kilinyaga. » Il ajoute que les Masai disent Doenyo Ebor, « la montagne blanche », et que les « Wanderobbo » disent Doenyo Egeri, « la montagne tachetée »."
+              },
               {
                 "title": "With a Prehistoric People: the Akikuyu of British East Africa",
                 "author": "W. Scoresby Routledge et Katherine Routledge",
@@ -210,6 +262,48 @@
                 "notes": "Londres, Trübner, 1860, lu dans l'exemplaire numérisé. En annexe, Krapf écrit que les Wakamba appellent la montagne « Kima ja Kegnia », qu'il traduit par « Mount of Whiteness », que d'autres peuples disent Kirenia et que les Wakuafi disent « Orldoinio eibor », « White Mountain ». Page 311, il écrit aussi « the snow-mountain Kirenia (Kenia) »."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1896,
+              "label": "Proposée par Gregory (1896)"
+            },
+            "era": "polity",
+            "statement": "Le nom Kenya viendrait d'un malentendu, selon le géologue britannique John Walter Gregory, qui écrit en 1896 que le vrai nom kikuyu de la montagne est Kilinyaga.",
+            "hypothesisGroup": "origine du nom Kenya",
+            "sources": [
+              {
+                "title": "The Great Rift Valley: being the narrative of a journey to Mount Kenya and Lake Baringo",
+                "author": "John Walter Gregory",
+                "year": 1896,
+                "url": "https://archive.org/details/greatriftvalleyb00greg",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 162, note 1",
+                "notes": "Londres, John Murray, 1896, lu dans l'exemplaire numérisé. Récit d'un géologue britannique de l'époque coloniale. En note, il écrit : « The name Kenya was given to the mountain owing to a misunderstanding. The proper Kikuyu name is Kilinyaga. » Il ajoute que les Masai disent Doenyo Ebor, « la montagne blanche », et que les « Wanderobbo » disent Doenyo Egeri, « la montagne tachetée »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Récit publié en ligne, non daté"
+            },
+            "statement": "Le nom Kenya viendrait de Kiinyaa, le nom que les Kamba donnent à la montagne, selon l'association kényane Paukwa, qui note aussi les formes Kirinyaga en kikuyu, Kirenyaa en embu et Kirimara en meru.",
+            "hypothesisGroup": "origine du nom Kenya",
+            "sources": [
+              {
+                "title": "Mount Kenya: Our Mountain of Heritage",
+                "author": "Paukwa",
+                "year": null,
+                "url": "https://www.paukwa.or.ke/story-series/kemountains/mount-kenya-our-mountain-of-heritage/",
+                "tier": "unverified",
+                "source_kind": "ngo",
+                "notes": "Page non datée d'une association kényane consacrée au patrimoine, sans auteur nommé ni référence. Elle écrit que les Kikuyu appellent la montagne Kirinyaga, les Embu Kirenyaa, les Meru Kirimara et les Kamba Kiinyaa, et que « it is from 'Kiinyaa,' that we draw our nation's name – Kenya »."
+              }
+            ]
           }
         ]
       },
@@ -243,6 +337,34 @@
                 "notes": "Gazette publiée à Nairobi le 23 juillet 1920, lue dans l'exemplaire numérisé. Elle reproduit l'ordre en conseil du 11 juin 1920, qui annexe les territoires du protectorat, sauf ceux du sultan de Zanzibar, sous le nom de « Colony of Kenya »."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "14 juillet 1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Colonie du Kenya remplace celui de Protectorat de l'Afrique de l'Est, souvent appelé British East Africa : le 14 juillet 1920, le sous-secrétaire d'État aux Colonies Leopold Amery explique que ce nom de région convenait mieux à l'ensemble des territoires britanniques d'Afrique de l'Est qu'à une seule colonie.",
+            "aspect": "imposition",
+            "actors": [
+              {
+                "name": "Leopold Amery",
+                "role": "sous-secrétaire d'État britannique aux Colonies, qui répond à la Chambre des communes"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Chambre des communes du Royaume-Uni — Kenya Colony, 14 juillet 1920 (Hansard)",
+                "author": "Chambre des communes du Royaume-Uni",
+                "year": 1920,
+                "url": "https://api.parliament.uk/historic-hansard/commons/1920/jul/14/kenya-colony",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "HC Deb 14 July 1920 vol 131 cc2393-4",
+                "notes": "Compte rendu des débats lu sur le site du Parlement britannique. Interrogé sur le sens du changement de nom, le sous-secrétaire d'État aux Colonies, Leopold Amery, répond que le nom du Protectorat de l'Afrique de l'Est, « often in the past unofficially termed British East Africa », a été changé lors de l'annexion, parce qu'un nom géographique général convenait désormais mieux à l'ensemble des territoires britanniques d'Afrique de l'Est. Il parle aussi de « Kenya Colony » et de « Kenya Protectorate »."
+              }
+            ]
           }
         ]
       },
@@ -251,9 +373,40 @@
         "nameStatus": "former",
         "selfGiven": false,
         "languageOfOrigin": "eng",
-        "namedBy": null,
-        "periodLabel": "Jusqu'en 1920",
+        "namedBy": "Le gouvernement britannique",
+        "periodLabel": "1895-1920",
         "accounts": [
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "13 juin 1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Protectorat de l'Afrique de l'Est vient d'une décision britannique : le 13 juin 1895, à la Chambre des communes, Edward Grey annonce que le pays situé entre l'Ouganda et la côte sera placé sous protectorat britannique.",
+            "actors": [
+              {
+                "name": "Edward Grey",
+                "role": "sous-secrétaire d'État britannique aux Affaires étrangères, qui fait l'annonce"
+              },
+              {
+                "name": "Imperial British East Africa Company",
+                "role": "compagnie commerciale britannique qui se retire du pays"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Chambre des communes du Royaume-Uni — British East Africa, 13 juin 1895 (Hansard)",
+                "author": "Chambre des communes du Royaume-Uni",
+                "year": 1895,
+                "url": "https://api.parliament.uk/historic-hansard/commons/1895/jun/13/british-east-africa",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "HC Deb 13 June 1895 vol 34 cc1086-142",
+                "notes": "Compte rendu des débats lu sur le site du Parlement britannique. Le sous-secrétaire d'État aux Affaires étrangères, Edward Grey, annonce que le gouvernement propose de placer sous protectorat britannique « the country intervening between Uganda and the coast », après le retrait de l'Imperial British East Africa Company."
+              }
+            ]
+          },
           {
             "period": {
               "from": null,
@@ -273,6 +426,16 @@
                 "source_kind": "government",
                 "page": "p. 697-698",
                 "notes": "Gazette publiée à Nairobi le 23 juillet 1920, lue dans l'exemplaire numérisé. Elle reproduit l'ordre en conseil du 11 juin 1920, qui annexe les territoires du protectorat, sauf ceux du sultan de Zanzibar, sous le nom de « Colony of Kenya »."
+              },
+              {
+                "title": "Chambre des communes du Royaume-Uni — Kenya Colony, 14 juillet 1920 (Hansard)",
+                "author": "Chambre des communes du Royaume-Uni",
+                "year": 1920,
+                "url": "https://api.parliament.uk/historic-hansard/commons/1920/jul/14/kenya-colony",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "HC Deb 14 July 1920 vol 131 cc2393-4",
+                "notes": "Compte rendu des débats lu sur le site du Parlement britannique. Interrogé sur le sens du changement de nom, le sous-secrétaire d'État aux Colonies, Leopold Amery, répond que le nom du Protectorat de l'Afrique de l'Est, « often in the past unofficially termed British East Africa », a été changé lors de l'annexion, parce qu'un nom géographique général convenait désormais mieux à l'ensemble des territoires britanniques d'Afrique de l'Est. Il parle aussi de « Kenya Colony » et de « Kenya Protectorate »."
               }
             ]
           }
@@ -283,44 +446,37 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Protectorat britannique de l'Afrique de l'Est (1895-1920)",
+        "Protectorat de l'Afrique de l'Est (1895-1920)",
         "Colonie du Kenya (1920-1963)"
       ],
-      "antiquity": "Le territoire était peuplé de groupes bantous, nilotiques et couchitiques sans nom unifié. Les peuples autochtones (Kikuyu, Luo, Maasai, etc.) avaient leurs propres noms pour leurs territoires.",
-      "middleAges": "Développement de royaumes et chefferies indépendants. Commerce avec les Arabes et les Swahili sur la côte.",
-      "precolonial": "Mosaïque de peuples bantous (Kikuyu, Luhya, Kamba, Meru), nilotiques (Luo, Maasai, Samburu, Pokot, Turkana) et couchitiques (Somali, Borana). Commerce côtier swahili. Pas de nom unifié pour l'ensemble du territoire.",
-      "colonization": "1895 : Protectorat britannique de l'Afrique de l'Est. 1920 : Colonie du Kenya. Le nom \"Kenya\" est imposé par les colonisateurs britanniques.",
-      "contemporary": "Indépendance en 1963 sous le nom de \"République du Kenya\". Le nom officiel en anglais est \"Republic of Kenya\" et en swahili \"Jamhuri ya Kenya\"."
+      "antiquity": "Les sources consultées ne donnent aucun nom ancien pour l'ensemble du territoire du Kenya actuel. La montagne qui lui a donné son nom portait déjà plusieurs noms, un par peuple voisin.",
+      "middleAges": "Sur la côte, des villes marchandes swahili commercent par l'océan Indien. Selon l'Histoire générale de l'Afrique de l'UNESCO, la ville de Manda, dans l'archipel de Lamu, prospère aux IXe et Xe siècles ; au XIIe siècle, le géographe al-Idrisi cite déjà Malindi et Mombasa.",
+      "precolonial": "Avant la colonisation, chaque peuple voisin nomme la montagne dans sa langue. En 1849, Krapf entend les Kamba appeler la montagne Kima ja Kegnia et les Wakuafi Orldoinio eibor, « la montagne blanche ». Aucun nom ne désigne alors l'ensemble du territoire actuel.",
+      "colonization": "En 1895, le gouvernement britannique place sous protectorat le pays situé entre l'Ouganda et la côte : c'est le Protectorat de l'Afrique de l'Est. En 1920, l'intérieur est annexé sous le nom de Colonie du Kenya. La bande côtière, qui dépend du sultan de Zanzibar, reste un protectorat, appelé Kenya Protectorate.",
+      "contemporary": "Le Kenya devient indépendant le 12 décembre 1963, puis république le 12 décembre 1964. La Constitution de 2010 dit : « Kenya is a sovereign Republic » et fait du 12 décembre une fête nationale, Jamhuri Day."
     },
     "kingdoms": [
       {
-        "name": "Royaumes swahili",
-        "period": "VIIIe - XIXe siècles",
+        "name": "Villes marchandes swahili de la côte",
+        "period": "IXe - XVIe siècles",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 701,
-          "endYear": 1900,
-          "precision": "century"
+          "startYear": 801,
+          "endYear": 1600,
+          "precision": "approximate",
+          "datingNote": "Le début suit la prospérité de Manda aux IXe et Xe siècles ; la fin suit la limite du volume consulté, qui s'arrête au XVIe siècle. Les villes existent encore après."
         },
         "dominantPeoples": ["Swahili"],
-        "politicalCenters": ["Mombasa", "Lamu", "Malindi"],
-        "historicalRole": "Cités-États swahili sur la côte, commerce avec les Arabes, les Indiens et les Européens. Civilisation swahili ancienne."
+        "politicalCenters": ["Manda", "Pate", "Malindi", "Mombasa"],
+        "historicalRole": "Ces villes de la côte vivent du commerce de l'océan Indien. Manda exporte surtout de l'ivoire ; Malindi et Mombasa exportent du fer et des peaux de léopard, selon l'Histoire générale de l'Afrique de l'UNESCO."
       },
       {
-        "name": "Royaumes bantous",
-        "period": "Précolonial - présent",
+        "name": "Pays kamba (Ukambani)",
+        "period": "XIXe siècle",
         "entryType": "polity",
-        "dominantPeoples": ["Kikuyu", "Luhya", "Kamba", "Meru"],
-        "politicalCenters": ["Mont Kenya", "régions centrales et occidentales"],
-        "historicalRole": "Royaumes et chefferies bantous, organisation politique traditionnelle, agriculture."
-      },
-      {
-        "name": "Confédérations nilotiques",
-        "period": "Précolonial - présent",
-        "entryType": "polity",
-        "dominantPeoples": ["Luo", "Maasai", "Samburu", "Pokot", "Turkana"],
-        "politicalCenters": ["Rift Valley", "Nyanza"],
-        "historicalRole": "Confédérations nilotiques, tradition pastorale, organisation par groupes d'âge."
+        "dominantPeoples": ["Kamba"],
+        "politicalCenters": ["Kitui"],
+        "historicalRole": "Les Kamba ne forment pas de royaume. Selon l'ethnologue Gerhard Lindblom, un conseil d'anciens, la nzama, juge les affaires et veille sur les coutumes ; l'administration britannique y ajoute ensuite des chefs nommés, chargés de l'impôt. En 1849, Krapf séjourne à Kitui chez le chef kamba Kivoi."
       },
       {
         "name": "Protectorat de l'Afrique de l'Est",
@@ -334,8 +490,8 @@
         "dominantPeoples": [
           "Tous les peuples kenyans sous administration coloniale britannique"
         ],
-        "politicalCenters": ["Mombasa", "Nairobi"],
-        "historicalRole": "Protectorat britannique, développement de Nairobi comme centre administratif."
+        "politicalCenters": ["Nairobi"],
+        "historicalRole": "Le gouvernement britannique administre le pays situé entre l'Ouganda et la côte après le retrait de l'Imperial British East Africa Company. En 1920, sa gazette officielle paraît à Nairobi."
       },
       {
         "name": "Colonie du Kenya",
@@ -349,8 +505,8 @@
         "dominantPeoples": [
           "Tous les peuples kenyans sous administration coloniale britannique"
         ],
-        "politicalCenters": ["Nairobi (capitale coloniale)"],
-        "historicalRole": "Colonie britannique, résistance kenyane (Mau Mau), mouvements nationalistes."
+        "politicalCenters": ["Nairobi"],
+        "historicalRole": "La colonie couvre l'intérieur du pays ; la bande côtière reste un protectorat. De 1952 à 1960, l'état d'urgence est proclamé contre le mouvement Mau Mau."
       },
       {
         "name": "République du Kenya",
@@ -362,144 +518,180 @@
           "precision": "year"
         },
         "dominantPeoples": ["Tous les peuples kenyans"],
-        "politicalCenters": ["Nairobi (capitale)"],
-        "historicalRole": "Indépendance en 1963. Histoire politique avec alternance démocratique. Développement économique, hub est-africain."
+        "politicalCenters": ["Nairobi"],
+        "historicalRole": "Le Kenya devient indépendant le 12 décembre 1963, avec Jomo Kenyatta pour Premier ministre, puis république le 12 décembre 1964, avec Kenyatta pour président."
       }
     ],
     "majorPeoples": [
       {
         "name": "Kikuyu",
         "selfAppellation": "Gĩkũyũ",
-        "exonyms": ["Kikuyu (terme utilisé par les Européens)"],
+        "exonyms": ["Akikuyu"],
         "peopleId": "PPL_KIKUYU",
         "mainRegion": "Centre (Nyeri, Kiambu)",
         "languages": ["Kikuyu", "swahili", "anglais"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Kikuyu\" est neutre et accepté. L'auto-appellation \"Gĩkũyũ\" est préférée."
+        "appellationRemarks": "Les Routledge écrivent Akikuyu en 1910. Le recensement de 2019 écrit Kikuyu."
       },
       {
         "name": "Luhya",
         "selfAppellation": "Luhya",
-        "exonyms": [
-          "Luhya (terme utilisé par les Européens)",
-          "parfois appelés \"Baluhya\" (pluriel)"
-        ],
+        "exonyms": [],
         "peopleId": "PPL_LUHYA",
         "mainRegion": "Ouest",
         "languages": ["Luhya", "swahili", "anglais"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Luhya\" est neutre et accepté."
+        "appellationRemarks": "Le recensement de 2019 range sous ce nom plusieurs groupes, dont les Bukusu, les Maragoli, les Banyala et les Kabras."
       },
       {
         "name": "Kalenjin",
         "selfAppellation": "Kalenjin",
-        "exonyms": [
-          "Kalenjin (terme utilisé par les Européens)",
-          "groupe comprenant Nandi",
-          "Kipsigis",
-          "Pokot",
-          "Tugen",
-          "Marakwet"
-        ],
+        "exonyms": [],
         "peopleId": "PPL_KALENJIN",
         "mainRegion": "Rift Valley",
         "languages": ["Kalenjin", "swahili", "anglais"],
         "languageFamily": "FLG_NILOTIQUE",
-        "appellationRemarks": "Le terme \"Kalenjin\" est neutre et accepté."
+        "appellationRemarks": "Le recensement de 2019 range sous ce nom plusieurs groupes, dont les Kipsigis, les Nandi, les Pokot, les Keiyo, les Tugen et les Marakwet."
       },
       {
         "name": "Luo",
         "selfAppellation": "Luo",
-        "exonyms": ["Luo (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_LUO",
         "mainRegion": "Nyanza",
         "languages": ["Luo", "swahili", "anglais"],
         "languageFamily": "FLG_NILOTIQUE",
-        "appellationRemarks": "Le terme \"Luo\" est neutre et accepté."
+        "appellationRemarks": null
       },
       {
         "name": "Kamba",
         "selfAppellation": "Kamba",
-        "exonyms": ["Kamba (terme utilisé par les Européens)"],
+        "exonyms": ["Wakamba", "Akamba"],
         "peopleId": "PPL_KAMBA",
         "mainRegion": "Sud-Est",
         "languages": ["Kamba", "swahili", "anglais"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Kamba\" est neutre et accepté."
+        "appellationRemarks": "Krapf écrit Wakamba en 1860, Lindblom Akamba en 1920."
       },
       {
         "name": "Somali",
         "selfAppellation": "Soomaali",
-        "exonyms": ["Somali (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_SOMALI",
         "mainRegion": "Nord-Est (Garissa, Wajir)",
         "languages": ["Somali", "swahili", "anglais"],
         "languageFamily": "FLG_COUCHITIQUE",
-        "appellationRemarks": "Le terme \"Somali\" est neutre et accepté. L'auto-appellation \"Soomaali\" est préférée."
+        "appellationRemarks": "Le recensement de 2019 écrit Kenyan Somali et compte à part plusieurs clans, dont les Ogaden, les Gurreh et les Degodia."
       },
       {
         "name": "Kisii",
         "selfAppellation": "Kisii",
-        "exonyms": ["Kisii (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_KISII",
         "mainRegion": "Sud-Ouest",
         "languages": ["Kisii", "swahili", "anglais"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Kisii\" est neutre et accepté."
+        "appellationRemarks": null
       },
       {
         "name": "Meru",
         "selfAppellation": "Meru",
-        "exonyms": ["Meru (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_MERU",
         "mainRegion": "Mont Kenya",
         "languages": ["Meru", "swahili", "anglais"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Meru\" est neutre et accepté."
+        "appellationRemarks": null
       },
       {
         "name": "Mijikenda",
         "selfAppellation": "Mijikenda",
-        "exonyms": [
-          "Mijikenda (terme signifiant \"neuf peuples\" en swahili)",
-          "groupe comprenant Giriama",
-          "Digo",
-          "Chonyi"
-        ],
+        "exonyms": [],
         "peopleId": "PPL_MIJIKENDA",
         "mainRegion": "Côte",
         "languages": ["Mijikenda", "swahili", "anglais"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Mijikenda\" est neutre et accepté."
+        "appellationRemarks": "Le recensement de 2019 range sous ce nom plusieurs groupes de la côte, dont les Giriama, les Duruma, les Digo, les Chonyi et les Rabai."
       },
       {
         "name": "Maasai",
         "selfAppellation": "Maasai",
-        "exonyms": [
-          "Maasai (terme utilisé par les Européens)",
-          "Masai (variante)"
-        ],
+        "exonyms": ["Masai"],
         "peopleId": "PPL_MAASAI",
         "mainRegion": "Rift Valley",
         "languages": ["Maasai", "swahili", "anglais"],
         "languageFamily": "FLG_NILOTIQUE",
-        "appellationRemarks": "Le terme \"Maasai\" est neutre et accepté."
+        "appellationRemarks": "Gregory écrit Masai en 1896."
+      },
+      {
+        "name": "Turkana",
+        "selfAppellation": "Turkana",
+        "exonyms": [],
+        "peopleId": "PPL_TURKANA",
+        "mainRegion": "Nord-Ouest",
+        "languages": ["Turkana", "swahili", "anglais"],
+        "languageFamily": "FLG_NILOTIQUE",
+        "appellationRemarks": null
       }
     ],
     "culture": {
-      "culturalTraditions": "Musique traditionnelle (benga, taarab), danse traditionnelle, poésie orale, artisanat (vannerie, poterie, bijoux maasai), architecture traditionnelle, élevage pastoral (Maasai, Samburu, Turkana)",
-      "dominantReligions": "Christianisme (protestant majoritaire, catholique), islam (minorité, surtout sur la côte), croyances traditionnelles (syncrétisme)",
-      "lifestyles": "Vie principalement rurale, agriculture (thé, café, maïs, haricots), élevage (bovins, caprins, dromadaires), pêche (lacs), tourisme, commerce, urbanisation croissante",
-      "socialOrganization": "Système de chefferies traditionnelles, structure clanique (patrilinéaire ou matrilinéaire selon les groupes), organisation en familles étendues et lignages, groupes d'âge (Maasai, Samburu), importance des ancêtres",
-      "regionalRelations": "Relations historiques avec les peuples de Tanzanie, d'Ouganda, d'Éthiopie, de Somalie, du Soudan du Sud. Diaspora importante au Royaume-Uni, aux États-Unis, et dans les pays occidentaux."
+      "mainLanguages": [
+        {
+          "name": "Swahili",
+          "isoCode": "swh",
+          "isPrimary": true
+        },
+        {
+          "name": "Anglais",
+          "isoCode": "eng",
+          "isPrimary": true
+        },
+        {
+          "name": "Kikuyu",
+          "isoCode": "kik"
+        },
+        {
+          "name": "Kalenjin",
+          "isoCode": "kln"
+        },
+        {
+          "name": "Luo",
+          "isoCode": "luo"
+        },
+        {
+          "name": "Kamba",
+          "isoCode": "kam"
+        },
+        {
+          "name": "Gusii",
+          "isoCode": "guz"
+        },
+        {
+          "name": "Somali",
+          "isoCode": "som"
+        },
+        {
+          "name": "Maasai",
+          "isoCode": "mas"
+        },
+        {
+          "name": "Turkana",
+          "isoCode": "tuv"
+        }
+      ],
+      "culturalTraditions": "Le mont Kenya tient une place religieuse chez les Kikuyu. Selon les Routledge, en 1910, ils s'adressent à Dieu, Ngai, sous le nom de Mwi-nin-ya-ga, « celui qui possède la blancheur », lors des grands sacrifices. Le dictionnaire de Benson donne aussi Mwene nyaga, « le seigneur des autruches », qu'il présente comme le maître du mont Kenya, Dieu.",
+      "dominantReligions": "Au recensement de 2019, 85,5 % des habitants se disent chrétiens : 33,4 % protestants, 20,6 % catholiques et 20,4 % membres d'Églises évangéliques. Les musulmans forment 11 % de la population.",
+      "lifestyles": "Au recensement de 2019, plus de la moitié des ménages, 6,4 millions sur 12,1 millions, cultivent la terre, surtout du maïs et des haricots. Près de 4,7 millions de ménages élèvent du bétail. Parmi les habitants de trois ans et plus, près de sept sur dix vivent en zone rurale.",
+      "socialOrganization": "Chez les Kamba, selon l'ethnologue Gerhard Lindblom en 1920, la société connaît des classes d'âge, et un conseil d'anciens, la nzama, juge les affaires et garde les coutumes. L'administration britannique y ajoute des chefs nommés, qui ont du mal à se faire obéir des anciens.",
+      "regionalRelations": "Au recensement de 2019, 463 562 habitants ne sont pas de nationalité kényane. Près de la moitié d'entre eux, 226 372, viennent d'Afrique de l'Est : Ouganda, Soudan du Sud, Tanzanie, Burundi et Rwanda."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement du territoire par des groupes bantous, nilotiques et couchitiques. Développement de royaumes et chefferies indépendants.",
-      "middleAges": "Développement des cités-États swahili sur la côte (VIIIe-XIXe siècles). Commerce avec les Arabes, les Indiens et les Européens. Civilisation swahili ancienne.",
-      "precolonial": "Mosaïque de peuples bantous, nilotiques et couchitiques. Commerce côtier swahili. Pas d'unification politique.",
-      "colonization": "1895 : Protectorat britannique de l'Afrique de l'Est. 1920 : Colonie du Kenya. Développement de Nairobi comme centre administratif. Résistance kenyane (Mau Mau, 1952-1960).",
-      "independenceStruggle": "Mouvements nationalistes dans les années 1950. Révolte des Mau Mau (1952-1960). Indépendance obtenue en 1963. Jomo Kenyatta devient premier président.",
-      "postIndependence": "Première République (1963-1978) : présidence de Jomo Kenyatta, stabilité politique. Deuxième République (1978-2002) : présidence de Daniel arap Moi. Troisième République depuis 2002 : alternance démocratique, développement économique, hub est-africain."
+      "ancientPeriods": "Les sources consultées ne décrivent pas les périodes anciennes du territoire. Le recensement de 2019 distingue 45 groupes kényans.",
+      "middleAges": "Sur la côte, des villes marchandes swahili vivent du commerce de l'océan Indien. Manda, dans l'archipel de Lamu, prospère aux IXe et Xe siècles ; au XIIe siècle, al-Idrisi cite Malindi et Mombasa, qui exportent du fer et des peaux de léopard.",
+      "precolonial": "Au milieu du XIXe siècle, des missionnaires de la Church Missionary Society s'installent près de la côte, à Rabbai Mpia. En 1849, Johann Ludwig Krapf voyage jusqu'à Kitui, chez le chef kamba Kivoi, et aperçoit le mont Kenya le 3 décembre. Chez les Kamba, un conseil d'anciens gouverne sans roi.",
+      "colonization": "En 1895, le gouvernement britannique remplace l'Imperial British East Africa Company et crée un protectorat entre l'Ouganda et la côte. En 1920, l'intérieur devient la Colonie du Kenya. Le 20 octobre 1952, l'état d'urgence est proclamé contre le mouvement Mau Mau ; il prend fin en janvier 1960.",
+      "independenceStruggle": "En octobre 1952, le secrétaire d'État britannique aux Colonies annonce la proclamation de l'état d'urgence contre le mouvement Mau Mau ; il reste en vigueur sept ans. Le Kenya devient indépendant le 12 décembre 1963. Jomo Kenyatta est alors Premier ministre.",
+      "postIndependence": "Le Kenya devient une république le 12 décembre 1964 et reste membre du Commonwealth ; Jomo Kenyatta en devient le président. La Constitution de 2010 fait du swahili la langue nationale, et du swahili et de l'anglais les langues officielles. Les présidences suivantes ne sont pas décrites ici, faute de source ouverte à leur sujet."
     },
     "sources": [
       {
@@ -530,7 +722,8 @@
         "title": "UNFPA – World Population Dashboard — Kenya",
         "url": "https://www.unfpa.org/data/world-population/KE",
         "tier": "official",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": "Tableau de bord du Fonds des Nations unies pour la population, consulté en ligne : il donne 57 500 000 habitants pour 2025, d'après les World Population Prospects 2024 des Nations unies."
       },
       {
         "title": "Études anthropologiques sur les peuples kenyans",
@@ -553,6 +746,153 @@
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Kenya National Bureau of Statistics — 2019 Kenya Population and Housing Census, Volume IV: Distribution of Population by Socio-Economic Characteristics (2019)",
+        "url": "https://www.knbs.or.ke/wp-content/uploads/2023/09/2019-Kenya-population-and-Housing-Census-Volume-4-Distribution-of-Population-by-Socio-Economic-Characteristics.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport du service national de statistique du Kenya, lu dans le fichier PDF officiel. Page 12, il résume : 85,5 % de chrétiens, 11 % de musulmans ; les cinq groupes les plus nombreux sont les Kikuyu, les Luhya, les Kalenjin, les Luo et les Kamba. Le tableau 2.31, pages 423 et 424, donne 47 564 296 habitants, dont 8 148 668 Kikuyu, 6 823 842 Luhya, 6 358 113 Kalenjin, 5 066 966 Luo, 4 663 910 Kamba, 2 780 502 Somali, 2 703 235 Kisii, 2 488 691 Mijikenda, 1 975 869 Meru, 1 189 522 Maasai, 1 016 174 Turkana et 463 562 personnes d'autres nationalités. Page 12 aussi : 6,4 millions de ménages pratiquent l'agriculture et 4,7 millions l'élevage."
+      },
+      {
+        "title": "Republic of Kenya — The Constitution of Kenya, 2010",
+        "url": "https://www.parliament.go.ke/sites/default/files/2023-03/The_Constitution_of_Kenya_2010.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte publié par le National Council for Law Reporting, lu sur le site du Parlement du Kenya. Article 4 : « Kenya is a sovereign Republic ». Article 7 : le swahili est la langue nationale ; le swahili et l'anglais sont les langues officielles. Article 9 : Jamhuri Day est fêté le 12 décembre."
+      },
+      {
+        "title": "Kenya Independence Act 1963 (Royaume-Uni)",
+        "url": "https://www.legislation.gov.uk/ukpga/1963/54/enacted",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte de la loi lu sur le site officiel de la législation britannique. Section 1 : à partir du 12 décembre 1963, le gouvernement britannique n'a plus aucune responsabilité dans le gouvernement du Kenya ; le Kenya comprend aussi les territoires du Kenya Protectorate."
+      },
+      {
+        "title": "Kenya Republic Act 1965 (Royaume-Uni)",
+        "url": "https://www.legislation.gov.uk/ukpga/1965/5/enacted",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte de la loi du 23 mars 1965, lu sur le site officiel de la législation britannique. Elle règle les effets en droit britannique du fait que le Kenya est devenu une république au sein du Commonwealth, avec effet au 12 décembre 1964."
+      },
+      {
+        "title": "Chambre des communes du Royaume-Uni — British East Africa, 13 juin 1895 (Hansard)",
+        "url": "https://api.parliament.uk/historic-hansard/commons/1895/jun/13/british-east-africa",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Compte rendu des débats lu sur le site du Parlement britannique. Le sous-secrétaire d'État aux Affaires étrangères, Edward Grey, annonce que le gouvernement propose de placer sous protectorat britannique « the country intervening between Uganda and the coast », après le retrait de l'Imperial British East Africa Company."
+      },
+      {
+        "title": "Chambre des communes du Royaume-Uni — Kenya Colony, 14 juillet 1920 (Hansard)",
+        "url": "https://api.parliament.uk/historic-hansard/commons/1920/jul/14/kenya-colony",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Compte rendu des débats lu sur le site du Parlement britannique. Interrogé sur le sens du changement de nom, le sous-secrétaire d'État aux Colonies, Leopold Amery, répond que le nom du Protectorat de l'Afrique de l'Est, « often in the past unofficially termed British East Africa », a été changé lors de l'annexion, parce qu'un nom géographique général convenait désormais mieux à l'ensemble des territoires britanniques d'Afrique de l'Est. Il parle aussi de « Kenya Colony » et de « Kenya Protectorate »."
+      },
+      {
+        "title": "Chambre des lords du Royaume-Uni — East Africa: Status of Indians and Native Labour, 14 juillet 1920 (Hansard)",
+        "url": "https://api.parliament.uk/historic-hansard/lords/1920/jul/14/east-africa-status-of-indians-and-native",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Compte rendu des débats (HL Deb 14 July 1920 vol 41 cc118-68) lu sur le site du Parlement britannique. Lord Islington rappelle que le protectorat « is now to become a colony under the name of Kenia Colony », et que la bande côtière, avec Mombasa, reste un protectorat. Lord Milner parle du protectorat « or, as we must now learn to call it, the Kenya Colony »."
+      },
+      {
+        "title": "Chambre des communes du Royaume-Uni — Kenya (Mau Mau Activities), 21 octobre 1952 (Hansard)",
+        "url": "https://api.parliament.uk/historic-hansard/commons/1952/oct/21/kenya-mau-mau-activities",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Compte rendu des débats (HC Deb 21 October 1952 vol 505 cc865-9) lu sur le site du Parlement britannique. Le secrétaire d'État aux Colonies, Oliver Lyttelton, déclare : « a state of emergency was proclaimed in Kenya last night »."
+      },
+      {
+        "title": "Chambre des lords du Royaume-Uni — The Situation in Kenya, 1er décembre 1959 (Hansard)",
+        "url": "https://api.parliament.uk/historic-hansard/lords/1959/dec/01/the-situation-in-kenya",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Compte rendu des débats (HL Deb 01 December 1959 vol 219 cc1034-52) lu sur le site du Parlement britannique. L'orateur qui ouvre le débat dit que l'état d'urgence, en vigueur depuis sept ans, « will be brought to an end officially in January »."
+      },
+      {
+        "title": "Chambre des communes du Royaume-Uni — Kenya Republic Bill, 1er février 1965 (Hansard)",
+        "url": "https://api.parliament.uk/historic-hansard/commons/1965/feb/01/kenya-republic-bill",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Compte rendu des débats lu sur le site du Parlement britannique. Le ministre d'État Cledwyn Hughes déclare : « On 12th December, 1964, Kenya became a republic, though remaining within the Commonwealth ». Il dit avoir félicité le président Kenyatta pour son investiture."
+      },
+      {
+        "title": "Office of the Historian, U.S. Department of State — Kenya",
+        "url": "https://history.state.gov/countries/kenya",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Page du service historique du département d'État américain. Elle écrit que la région est sous domination britannique de 1895 à 1963 et que les États-Unis reconnaissent le Kenya à son indépendance, le 12 décembre 1963 ; le message de félicitations est adressé au Premier ministre Jomo Kenyatta."
+      },
+      {
+        "title": "The Special Official Gazette of the East Africa Protectorate, vol. XXII, n° 723 : Kenya (Annexation) Order in Council, 1920",
+        "url": "https://archive.gazettes.africa/archive/ke/1920/ke-government-gazette-dated-1920-07-23-no-723.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Document colonial : gazette du gouvernement britannique publiée à Nairobi le 23 juillet 1920, lue dans l'exemplaire numérisé, p. 697-698. Elle reproduit l'ordre en conseil du 11 juin 1920 : les territoires du protectorat, sauf ceux du sultan de Zanzibar, « shall be known as the Colony of Kenya »."
+      },
+      {
+        "title": "Krapf, Johann Ludwig — Travels, Researches, and Missionary Labours during an Eighteen Years' Residence in Eastern Africa (1860)",
+        "url": "https://archive.org/details/travelsresearch00ravegoog",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Londres, Trübner, 1860, lu dans l'exemplaire numérisé. Récit d'un missionnaire de la Church Missionary Society. Page 544, il écrit que le chef kamba Kivoi lui parle de la montagne à Kitui, que les Wakamba appellent la montagne « Kima ja Kegnia », « Mount of Whiteness », que d'autres peuples disent Kirenia, et qu'il l'a vue en quittant Kitui le 3 décembre 1849. Page 311, il écrit « the snow-mountain Kirenia (Kenia) »."
+      },
+      {
+        "title": "Krapf, Johann Ludwig — Journal descriptive of a journey to Ukambani, in November and December 1849, The Church Missionary Intelligencer, vol. I (1850)",
+        "url": "https://archive.org/details/1850TheChurchMissionaryIntelligencer",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Revue de la Church Missionary Society, Londres, 1850, lue dans l'exemplaire numérisé. Page 453, Krapf écrit « the snow-mountain Kenia »."
+      },
+      {
+        "title": "Gregory, John Walter — The Great Rift Valley (1896)",
+        "url": "https://archive.org/details/greatriftvalleyb00greg",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Londres, John Murray, 1896, lu dans l'exemplaire numérisé. Récit d'un géologue britannique de l'époque coloniale. En note, il écrit : « The name Kenya was given to the mountain owing to a misunderstanding. The proper Kikuyu name is Kilinyaga. » Il ajoute que les Masai disent Doenyo Ebor, « la montagne blanche », et que les « Wanderobbo » disent Doenyo Egeri, « la montagne tachetée »."
+      },
+      {
+        "title": "Routledge, W. Scoresby et Katherine — With a Prehistoric People: the Akikuyu of British East Africa (1910)",
+        "url": "https://archive.org/details/withprehistoricp00rout",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Londres, Edward Arnold, 1910, lu dans l'exemplaire numérisé. Ethnographie de l'époque coloniale. Page 226, Dieu est appelé dans les sacrifices « Mwi-nin-ya-ga, or Possessor of Whiteness », et le nom kikuyu de la montagne est « Ki-ri-nya-ga, meaning Place of Whiteness »."
+      },
+      {
+        "title": "Benson, T. G. — Kikuyu-English Dictionary (1964)",
+        "url": "https://archive.org/details/kikuyu-english-dictionary-tg-benson",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Dictionnaire de 1964, lu dans l'exemplaire numérisé. À l'entrée nyaga, « ostrich », il donne kirinyaga, « mountain possessing ostriches, Mt. Kenya », et Mwene nyaga, « Lord of ostriches, owner of Mt. Kenya, God »."
+      },
+      {
+        "title": "Lindblom, Gerhard — The Akamba in British East Africa: an ethnological monograph (1920)",
+        "url": "https://archive.org/details/akambainbritishe00linduoft",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Uppsala, Appelberg, 1920, lu dans l'exemplaire numérisé. Pages 150-151, l'auteur décrit le conseil des anciens, la nzama, qui juge et garde les coutumes, et les chefs nommés par l'administration britannique, que les anciens ont du mal à reconnaître. Il décrit aussi les classes d'âge."
+      },
+      {
+        "title": "Matveiev, V. V. — The development of Swahili civilization, dans UNESCO, Histoire générale de l'Afrique, vol. IV (1984)",
+        "url": "https://archive.org/details/unesco_general_history_africa_iv",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre 18 du volume IV, Africa from the Twelfth to the Sixteenth Century, UNESCO, 1984, lu dans l'exemplaire numérisé. Pages 459-461 : Manda, dans l'archipel de Lamu, prospère aux IXe et Xe siècles et exporte de l'ivoire ; al-Idrisi cite Malindi et Mombasa, qui exportent du fer et des peaux de léopard."
+      },
+      {
+        "title": "Glottolog — Kikuyu, Kamba, Kalenjin, Luo et Swahili",
+        "url": "https://glottolog.org/resource/languoid/id/kiku1240",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max-Planck, consulté pour les codes et le classement : kikuyu (kik), kamba (kam) et swahili (swh) sont des langues bantoues ; kalenjin (kln) est nilotique du Sud ; luo (luo) est nilotique de l'Ouest. Il donne aussi les codes du gusii (guz), du somali (som), du maasai (mas) et du turkana (tuv)."
+      },
+      {
+        "title": "Paukwa — Mount Kenya: Our Mountain of Heritage",
+        "url": "https://www.paukwa.or.ke/story-series/kemountains/mount-kenya-our-mountain-of-heritage/",
+        "tier": "unverified",
+        "source_kind": "ngo",
+        "notes": "Page non datée d'une association kényane consacrée au patrimoine, sans auteur nommé ni référence. Elle écrit que les Kikuyu appellent la montagne Kirinyaga, les Embu Kirenyaa, les Meru Kirimara et les Kamba Kiinyaa, et que « it is from 'Kiinyaa,' that we draw our nation's name – Kenya »."
       }
     ],
     "demographics": {
@@ -562,101 +902,141 @@
       "peoples": [
         {
           "name": "Kikuyu",
-          "percentageInCountry": 17.1,
-          "percentageInAfrica": 0.65,
           "peopleId": "PPL_KIKUYU",
+          "population": 8148668,
+          "referenceYear": 2019,
+          "percentageInCountry": 17.1,
+          "percentageInAfrica": null,
           "region": "Centre (Nyeri, Kiambu)",
-          "languageFamily": "FLG_BANTU"
+          "languageFamily": "FLG_BANTU",
+          "mainLanguageCode": "kik"
         },
         {
           "name": "Luhya",
-          "population": 7700000,
-          "percentageInCountry": 14.3,
-          "percentageInAfrica": 0.54,
           "peopleId": "PPL_LUHYA",
+          "population": 6823842,
+          "referenceYear": 2019,
+          "percentageInCountry": 14.3,
+          "percentageInAfrica": null,
           "region": "Ouest",
-          "languageFamily": "FLG_BANTU"
+          "languageFamily": "FLG_BANTU",
+          "mainLanguageCode": null
         },
         {
           "name": "Kalenjin",
-          "population": 7200000,
-          "percentageInCountry": 13.4,
-          "percentageInAfrica": 0.5,
           "peopleId": "PPL_KALENJIN",
+          "population": 6358113,
+          "referenceYear": 2019,
+          "percentageInCountry": 13.4,
+          "percentageInAfrica": null,
           "region": "Rift Valley",
-          "languageFamily": "FLG_NILOTIQUE"
+          "languageFamily": "FLG_NILOTIQUE",
+          "mainLanguageCode": "kln"
         },
         {
           "name": "Luo",
-          "population": 5600000,
-          "percentageInCountry": 10.7,
-          "percentageInAfrica": 0.39,
           "peopleId": "PPL_LUO",
+          "population": 5066966,
+          "referenceYear": 2019,
+          "percentageInCountry": 10.7,
+          "percentageInAfrica": null,
           "region": "Nyanza",
-          "languageFamily": "FLG_NILOTIQUE"
+          "languageFamily": "FLG_NILOTIQUE",
+          "mainLanguageCode": "luo"
         },
         {
           "name": "Kamba",
-          "population": 5600000,
-          "percentageInCountry": 9.8,
-          "percentageInAfrica": 0.39,
           "peopleId": "PPL_KAMBA",
+          "population": 4663910,
+          "referenceYear": 2019,
+          "percentageInCountry": 9.8,
+          "percentageInAfrica": null,
           "region": "Sud-Est",
-          "languageFamily": "FLG_BANTU"
+          "languageFamily": "FLG_BANTU",
+          "mainLanguageCode": "kam"
         },
         {
           "name": "Somali",
-          "population": 3300000,
-          "percentageInCountry": 5.8,
-          "percentageInAfrica": 0.23,
           "peopleId": "PPL_SOMALI",
+          "population": 2780502,
+          "referenceYear": 2019,
+          "percentageInCountry": 5.8,
+          "percentageInAfrica": null,
           "region": "Nord-Est (Garissa, Wajir)",
-          "languageFamily": "FLG_COUCHITIQUE"
+          "languageFamily": "FLG_COUCHITIQUE",
+          "mainLanguageCode": "som"
         },
         {
           "name": "Kisii",
-          "population": 3300000,
-          "percentageInCountry": 5.7,
-          "percentageInAfrica": 0.23,
           "peopleId": "PPL_KISII",
+          "population": 2703235,
+          "referenceYear": 2019,
+          "percentageInCountry": 5.7,
+          "percentageInAfrica": null,
           "region": "Sud-Ouest",
-          "languageFamily": "FLG_BANTU"
-        },
-        {
-          "name": "Meru",
-          "population": 2200000,
-          "percentageInCountry": 4.2,
-          "percentageInAfrica": 0.15,
-          "peopleId": "PPL_MERU",
-          "region": "Mont Kenya",
-          "languageFamily": "FLG_BANTU"
+          "languageFamily": "FLG_BANTU",
+          "mainLanguageCode": "guz"
         },
         {
           "name": "Mijikenda",
-          "population": 2700000,
-          "percentageInCountry": 5.1,
-          "percentageInAfrica": 0.19,
           "peopleId": "PPL_MIJIKENDA",
+          "population": 2488691,
+          "referenceYear": 2019,
+          "percentageInCountry": 5.2,
+          "percentageInAfrica": null,
           "region": "Côte",
-          "languageFamily": "FLG_BANTU"
+          "languageFamily": "FLG_BANTU",
+          "mainLanguageCode": null
+        },
+        {
+          "name": "Meru",
+          "peopleId": "PPL_MERU",
+          "population": 1975869,
+          "referenceYear": 2019,
+          "percentageInCountry": 4.2,
+          "percentageInAfrica": null,
+          "region": "Mont Kenya",
+          "languageFamily": "FLG_BANTU",
+          "mainLanguageCode": null
         },
         {
           "name": "Maasai",
-          "population": 1100000,
-          "percentageInCountry": 2.5,
-          "percentageInAfrica": 0.08,
           "peopleId": "PPL_MAASAI",
+          "population": 1189522,
+          "referenceYear": 2019,
+          "percentageInCountry": 2.5,
+          "percentageInAfrica": null,
           "region": "Rift Valley",
-          "languageFamily": "FLG_NILOTIQUE"
+          "languageFamily": "FLG_NILOTIQUE",
+          "mainLanguageCode": "mas"
         },
         {
-          "name": "Autres groupes ethniques",
+          "name": "Turkana",
+          "peopleId": "PPL_TURKANA",
+          "population": 1016174,
+          "referenceYear": 2019,
+          "percentageInCountry": 2.1,
+          "percentageInAfrica": null,
+          "region": "Nord-Ouest",
+          "languageFamily": "FLG_NILOTIQUE",
+          "mainLanguageCode": "tuv"
+        },
+        {
+          "name": "Autres groupes, autres nationalités et non déclarés",
           "peopleId": null,
-          "region": "Divers",
+          "population": 4348804,
+          "referenceYear": 2019,
+          "percentageInCountry": 9.1,
+          "percentageInAfrica": null,
+          "region": null,
           "languageFamily": null,
-          "percentageInCountry": 11.4
+          "mainLanguageCode": null
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "Le Kenya est un pays d'Afrique de l'Est. Il porte le nom du mont Kenya, que les Kikuyu appellent Kĩrĩnyaga et qu'un missionnaire a noté « Kenia » en 1849.",
+      "followUp": "Pourquoi les Kikuyu appellent-ils la montagne Kĩrĩnyaga ?"
     }
   }
 }

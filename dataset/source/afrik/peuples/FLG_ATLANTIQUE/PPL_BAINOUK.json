@@ -7,115 +7,145 @@
   "content": {
     "appellations": {
       "mainName": "Bainouk",
-      "selfAppellation": "Banyun",
-      "exonyms": [
-        "Banyuk",
-        "Banun",
-        "Banyun",
-        "Bainunk",
-        "Banyum",
-        "Bagnoun",
-        "Banhum",
-        "Banyung",
-        "Nuu",
-        "Elomay",
-        "Elunay",
-        "Baïnounk",
-        "Baïnounck",
-        "Banyon",
-        "Bainunka",
-        "Banhiin",
-        "Bañuun",
+      "selfAppellation": "Baynunk",
+      "exonyms": ["Banhun", "Bagnoun", "Banyun", "Nyun", "Fu-lun"],
+      "spellingAliases": [
         "Baynuk",
-        "Baynunk",
-        "Nyun",
-        "Dalianke (Guinee)",
-        "Baniouls (Guinee-Bissau)",
-        "Bananka (Mali)"
+        "Baïnouk",
+        "Baïnounk",
+        "Bainounk",
+        "Bainuk",
+        "Bagnon",
+        "Banhum",
+        "Banyum",
+        "Banyuk",
+        "Banyung",
+        "Nyuuny"
       ],
-      "originOfExonyms": "Banyun est attribué aux Portugais, qui l'auraient emprunté au mandingue. Ils l'utilisaient pour réunir des groupes installés à des points importants des voies navigables entre les fleuves Gambie et Cacheu. Ce nom aurait signifié « commerçant », comme dyula pour les marchands mandé. Selon une autre explication, les Mandingues auraient imposé le nom méprisant Bainouk, « ceux qui ont été chassés », après une défaite militaire à la fin du XVIe siècle.",
-      "whyProblematic": "Le terme Bainouk recouvre un ensemble de groupes aux langues partiellement distinctes (Gunyaamolo, Samik, Gunyuno). La frontiere entre les Bainouk et les groupes voisins (Diola, Mandingue) est floue du fait de siecles d'intermariage et d'assimilation culturelle. Dans les recensements gambiens de 1973 et 1983, les Bainouk n'apparaissaient plus comme groupe distinct, absorbes dans les categories Diola ou Mandingue.",
-      "contemporaryUsage": "Le terme Bainouk est utilise officiellement au Senegal et en Guinee-Bissau. En Gambie, le groupe est souvent designe sous les noms de ses dialectes ou absorbe dans d'autres categories. Des efforts de revitalisation culturelle et linguistique sont en cours, notamment via des organisations communautaires en Casamance.",
+      "originOfExonyms": "Le nom Banhun est la forme portugaise, écrite dès 1594 par le capitaine André Álvares de Almada. Les Français ont écrit Bagnon à la fin du XVIIe siècle, puis Bagnoun au XIXe siècle. Banyun est la forme qu'emploient des chercheurs qui écrivent en anglais, comme George Brooks ou Ferdinand de Jong. Les Jóola d'Essil appellent fu-lun les habitants de Djibonker et de Brin, selon la linguiste Abbie Hantgan-Sonko. Le nom Bainouk lui-même viendrait du malinké abaynunko, « celui qui a été chassé et cherche refuge », selon la linguiste Sokhna Bao-Diop.",
+      "whyProblematic": "Le nom Bainouk réunit plusieurs langues proches mais distinctes : le catalogue Glottolog en compte quatre. Il réunit aussi des personnes qui ne parlent plus ces langues mais se sentent baïnounk, selon le programme de documentation DoBeS. La limite avec les Jóola voisins bouge : à Brin, beaucoup se disent à la fois jóola et baïnounk, selon Abbie Hantgan-Sonko. En 1901, Auguste Chevalier et Adolphe Cligny rangeaient même les Bagnouns parmi les Diola.",
+      "contemporaryUsage": "La linguiste Sokhna Bao-Diop écrit Baynunk. Selon elle, le baynunk est depuis 2005 l'une des langues codifiées du Sénégal, avec sa propre orthographe. D'autres linguistes écrivent Baïnounk, et le catalogue Glottolog Bainounk. À Djibonker, les habitants appellent leur parler gúbaher.",
       "linguisticFamily": "FLG_ATLANTIQUE",
-      "ethnoLinguisticGroup": "Groupe bak des langues atlantiques nord, famille Niger-Congo (sous-branche Nyun-Buu)",
-      "historicalRegion": "Basse Casamance (sud du Senegal), Senegambie, rive gauche du fleuve Casamance, estuaires entre les fleuves Gambie et Cacheu",
-      "currentCountries": ["SEN", "GMB", "GNB"]
+      "ethnoLinguisticGroup": "Langues baïnounk, dans le groupe nyun des langues atlantiques, famille atlantique-congo, selon la classification de Glottolog",
+      "historicalRegion": "Basse et moyenne Casamance, au sud du Sénégal, et rives du rio São Domingos et du rio Cacheu, au nord de la Guinée-Bissau",
+      "currentCountries": ["SEN", "GMB", "GNB"],
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Bainouk-Gunyaamolo (Gunyun) — groupe occidental, langue principale bcz, present en Casamance et au Senegal",
-      "Bainouk-Samik — groupe du littoral, langue bcb, locuteurs (environ 1 850 en 2006) pres de Ziguinchor",
-      "Bainouk-Gunyuno (Bainounk-Gujaher) — groupe de Guinee-Bissau, langue bab, pres de Sao Domingos et Cacheu (environ 8 860 locuteurs en 2006)",
-      "Ijaxer (Banyun orientaux) — issu de la rencontre entre les habitants originels de Casamance et des migrants venant des zones Tenda a l'est"
+      "Locuteurs du gunyaamolo, ou guñaamolo, autour de Niamone et de Bourofaye, en Basse-Casamance",
+      "Locuteurs du gubëeher, ou gúbaher, à Djibonker, à l'ouest de Ziguinchor",
+      "Locuteurs du gujaher",
+      "Locuteurs du baïnounk du nord-est",
+      "Groupe de langue kobiana ou kasanga, lié aux Baïnounk selon le programme DoBeS"
     ],
     "origins": {
-      "ancientOrigins": "Les Bainouk sont consideres scientifiquement comme la plus ancienne population du Senegal. Des traditions orales rapportent une origine orientale : arrives de la region de l'Ingorei en Guinee-Bissau ou, selon une autre version, du Moyen-Orient. Cette derniere version est corroboree par Alvise da Mosto, premier navigateur portugais a remonter la Casamance en 1456. Les fouilles archeologiques montrent une occupation humaine de la region bien anterieure au XIe siecle.",
-      "formationPeriod": "Le peuple bainouk se serait forme par fusion entre des occupants anciens de Casamance et des migrants venus des zones Tenda de l'est, pousses vers l'ouest par l'expansion de l'empire du Mali. Leur presence en Casamance est attestee depuis le VIe siecle de notre ere. Au temps de l'empire du Mali, les Bainouk occupaient des zones plus septentrionales (Sine, Saloum) avant d'etre refules vers le sud.",
+      "ancientOrigins": "Les Baynunk affirment être le plus ancien peuple de la Casamance. Ils disent que leurs ancêtres sont venus de l'est, chassés par les Malinkés, selon la linguiste Sokhna Bao-Diop. L'historien George Brooks place les Banyun parmi les sociétés de la côte qui commerçaient déjà entre 1100 et 1500, avant l'arrivée des Européens. Dans leurs comptes rendus de son livre, Charles de Lespinay et Jean Boulègue jugent pourtant plusieurs de ses hypothèses mal fondées. Dans l'Histoire générale de l'Afrique publiée par l'UNESCO, Christophe Wondji présente les Bainuk comme un peuple d'origine mandé, venu de l'est au XIVe siècle.",
+      "formationPeriod": null,
       "migrationRoutes": [
-        "Migration depuis l'est (zones Tenda, puis region de l'Ingorei en Guinee-Bissau) vers les zones cotieres de Casamance",
-        "Deplacement vers le sud sous la pression des conquetes malinkes (general Tiramagan Traore) apres la bataille de Kirina",
-        "Etablissement du royaume de Kassanla avec pour capitale Birikama (actuelle Brikama en Gambie), s'etendant de Cacheu (Guinee-Bissau) jusqu'a Kiang (Gambie)"
+        "De l'est vers la Casamance, selon ce que les Baynunk disent de leurs ancêtres (Sokhna Bao-Diop)"
       ],
       "historicalSettlementZones": [
-        "Basse Casamance (sud du Senegal, autour de Ziguinchor et Bignona)",
-        "Region de Foni et Kombo (Gambie occidentale)",
-        "Nord de la Guinee-Bissau (region de Cacheu et Sao Domingos)",
-        "Anciennement : regions de Sine et Saloum (Senegal septentrional)"
+        "Rives du rio São Domingos et terre des Izigichos, au sud de l'embouchure de la Casamance, où André Álvares de Almada place les Banhuns en 1594",
+        "Villages du bas du fleuve Casamance, où Hyacinthe Hecquard situe les Bagnouns en 1853",
+        "Rives du Soungrougrou et région du Yacine, en moyenne Casamance, que Christian Roche décrit comme baynuk au XIXe siècle",
+        "Djibonker, Niamone et Bourofaye, en Basse-Casamance, aujourd'hui"
       ],
-      "unificationsOrDivisions": "Les Bainouk ont constitue au moins cinq Etats independants au XVe siecle : Bichangor, Jase, Foni, Buguando, et d'autres. Ils formaient le groupe ethnique dominant du royaume de Kasa (Kasanga), dominant le Bas-Casamance aux XVe-XVIe siecles avec la ville de Mampating comme capitale. En 1830, le royaume bainouk, devenu vassal de Kaabu, fut detruit par une invasion balanta. La legende d'une malediction lancee par un roi tyrannique assassine par ses sujets est souvent evoquee pour expliquer le declin progressif du peuple.",
-      "externalInfluences": "Les Mandingues (Malinkes) furent les premiers a refouler les Bainouk vers la cote. Les Portugais, arrives au XVe siecle, etablirent des relations commerciales avec les chefs bainouk. L'islam penetra a partir du XVIIe siecle sous l'influence de marchands et d'erudits mande. Les Sereer et les Diola (Jola) les pousserent encore plus au sud. Depuis 1982, le conflit casamancais (MFDC) a provoque de nouveaux deplacements de populations bainouk.",
-      "majorHistoricalEvents": "XVe siecle : periode de puissance avec le royaume de Kasa et les cinq Etats bainouk. Fin XVIe siecle : defaite face aux Mandingues, imposition du nom pejoratif Bainouk. 1830 : destruction du dernier royaume bainouk par les Balanta. XIXe-XXe siecles : assimilation progressive par les cultures diola et mandingue. 1982-present : conflit casamancais forceant de nombreux Bainouk a l'exil en Guinee-Bissau et en Gambie."
+      "unificationsOrDivisions": "Au XVIe siècle, les Bainuk de Buguendo et de Bishangor s'opposent aux États kasanga, soutenus par des intérêts portugais. Cette rivalité ne prend fin que vers 1590, à la mort de Mansa Tamba, roi du Kasa, selon l'historien Boubacar Barry. Charles de Lespinay mentionne des royaumes banyun, comme le Fonhi, qu'il distingue des royaumes casanga et manding voisins. Il reproche à George Brooks de confondre ces royaumes, et de confondre aussi les Banyun avec les Diola.",
+      "externalInfluences": "Au XVIe siècle, les troupes de Koli Tenguella traversent le pays bainuk, puis le royaume du Kaabu étend son pouvoir sur la région, selon Boubacar Barry. Au XIXe siècle, une partie du pays baynuk de moyenne Casamance, le Yacine, avait déjà adopté la langue et les coutumes manding, selon Christian Roche. La sociologue Jacqueline Trincaz écrit en 1978 que beaucoup de Baïnouk ont été asservis par les Manding.",
+      "majorHistoricalEvents": "À la fin du XIXe siècle, le chef manding Fodé Kaba, aidé par Fodé Lende du Yacine, pille les villages baynuk et dyola des rives du Soungrougrou, selon Christian Roche. Beaucoup de prisonniers sont alors vendus aux Manding."
     },
     "organization": {
-      "traditionalPoliticalSystem": "La societe bainouk est traditionnellement hierarchisee selon les classes d'age, avec une suprematie des anciens. Des chefferies puissantes (au moins cinq Etats au XVe siecle) ont constitue le royaume du Kassanla s'etendant du sud du fleuve Gambie jusqu'a la Casamance, avec Mampating comme capitale. La societe est matrilineaire : les fils des tantes maternelles heritaient du pouvoir royal. La ville de Brikama (Gambie, 2e ville du pays) tire son nom du bainouk et signifiait anciennement Cite des femmes, refletant le role central des femmes dans la societe matriarcale.",
-      "clanOrganization": "Les patronymes bainouk les plus courants sont : Diandy, Coly, Dieme, Sagna, Diatta, Sambou, Badji, Kabo, Biagui. Les clans sont organises selon la descendance matrilineaire.",
-      "ageClassSystems": "La societe bainouk est hierarchisee par classes d'age. L'autorite appartient aux plus ages, et les rites d'initiation marquent les transitions entre les differentes categories sociales.",
-      "roleOfLineages": "La societe bainouk est matrilineaire : les fils des tantes maternelles heritaient du pouvoir royal. La transmission des biens et des titres suit la ligne maternelle. Ce trait est caracteristique parmi les peuples atlantiques de la region.",
-      "religiousAuthority": "Les chefs coutumiers et les anciens inities detiennent l'autorite religieuse. Le Kumpo, figure mythologique traditionnelle bainouk (adopte ensuite par les Diola), est a la fois un masque et une danse nocturne invoquant un esprit venu de la foret. Certains rites originels subsistent malgre l'islamisation et la christianisation."
+      "traditionalPoliticalSystem": null,
+      "clanOrganization": "Chez les Baïnouk comme chez leurs voisins de Basse-Casamance, la famille traditionnelle repose sur une parenté très large, souvent marquée par un nom commun. La règle de base est de se marier hors de son clan, selon la sociologue Jacqueline Trincaz.",
+      "ageClassSystems": null,
+      "roleOfLineages": null,
+      "religiousAuthority": null
     },
     "languages": {
-      "mainLanguage": "Bainouk (Banyun / Nyun), ensemble de langues atlantiques nord, sous-groupe Nyun-Buu. Le bainouk-gunyaamolo est la variante principale.",
+      "mainLanguage": "Baïnounk (baynunk), un ensemble de quatre langues proches selon le catalogue Glottolog",
       "isoCodes": ["bcz", "bcb", "bab"],
       "dialects": [
-        "Bainouk-Gunyaamolo (bcz) — variante principale, Casamance et Senegal",
-        "Bainouk-Samik (bcb) — variante du Casamance oriental (environ 1 850 locuteurs en 2006, zone de Samik, 20 km a l'est de Ziguinchor)",
-        "Bainouk-Gunyuno / Bainounk-Gujaher (bab) — variante de Guinee-Bissau (environ 8 860 locuteurs en 2006, region de Cacheu)"
+        "Gunyaamolo-gutobor (bcz), avec les parlers gujaaxet et gunyamoolo",
+        "Gujaher (bab)",
+        "Gubëeher, gufangor et gubelor, sans code ISO ; le gubëeher est parlé à Djibonker",
+        "Baïnounk du nord-est, sans code ISO",
+        "Samik (bcb) : le catalogue Glottolog ne le compte pas comme une langue à part"
       ],
-      "vehicularRole": "Le bainouk est une langue en danger critique d'extinction. Les jeunes generations parlent principalement le mandingue en Casamance, le creole (Kriol Guinensi) en Guinee-Bissau, et l'anglais en Gambie. Le conflit casamancais a accelere l'abandon de la langue maternelle. Les dialectes bainouk sont classes comme gravement menaces, selon Sorosoro (organisation de sauvegarde des langues menacees). Le multilinguisme est universel : les Bainouk parlent generalement la langue de leurs voisins dominants."
+      "vehicularRole": "Selon Ethnologue, cité par la linguiste Sokhna Bao-Diop, 6 220 personnes parlaient le baynunk au Sénégal en 2006. En ville, la langue ne passe qu'à une partie des enfants : à Dakar, certains la comprennent sans la parler. Le baynunk a des émissions à la radio nationale, mais il n'est pas enseigné à l'école. Autour de Djibonker, les habitants parlent aussi le jóola, le créole de Casamance, le wolof ou le français, selon Abbie Hantgan-Sonko."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q803905",
+      "glottocode": "bain1264"
     },
     "culture": {
-      "majorRites": "La societe bainouk est organisee autour de rites d'initiation et de classes d'age. Le Kumpo est le rite majeur : il s'agit a l'origine d'une tradition bainouk (melee de concepts mande) associant un masque et une danse nocturne pour invoquer un esprit venu de la foret, depuis adopte par les Diola. Les rites funeraires et les ceremonies d'entree dans les differentes classes d'age structurent la vie sociale. Certains rites de la religion originelle subsistent aupres d'une minorite de pratiquants animistes.",
-      "symbols": "Le tissage et la teinture artisanale sont les activites culturelles les plus reconnues des Bainouk, reputes comme des tisserands et teinturiers d'exception. La ville de Brikama (Gambie), dont le nom signifie cite des femmes en bainouk, symbolise le role central des femmes dans cette societe matrilineaire.",
-      "artsAndMusic": "Les Bainouk sont traditionnellement reconnus pour leurs arts textiles : tissage et teinture de tissus (pagnes, etoffes). Cette tradition artisanale constitue un marqueur identitaire fort. La danse du Kumpo, adoptee par les Diola mais d'origine bainouk, implique un masque et des chants rythmiques. La production artistique bainouk est peu documentee dans les sources internationales, refletant la marginalisation progressive de ce peuple.",
-      "spiritualities": "Les Bainouk pratiquent aussi bien l'islam que le christianisme, avec une proportion equilibree entre les deux religions. Des pratiques animistes originelles subsistent, notamment le culte du Kumpo et certains rites d'initiation. Le processus d'islamisation debuta au XVIIe siecle sous l'influence de marchands et erudit mande installes dans la region. Les mariages mixtes avec des Diola et des Mandingues ont accelere la transformation des pratiques religieuses."
+      "majorRites": "Le kumpo est un masque et une danse de Basse-Casamance. Girard, en 1965, et l'historien Peter Mark le font venir des Banyun, chez qui il aurait un sens bien établi, avant qu'il se répande chez les Jóola voisins. L'anthropologue Ferdinand de Jong juge pourtant difficile d'attribuer ce masque à un seul peuple, car les limites entre Banyun et Jóola ont souvent changé.",
+      "symbols": null,
+      "artsAndMusic": "Au XVIe siècle, les Bainuk et les Kasanga, très habiles au tissage et à la teinture, deviennent les principaux acheteurs du coton des îles du Cap-Vert, selon l'historien Boubacar Barry. Ils vendent aussi les produits de leurs champs aux Européens installés sur la côte.",
+      "spiritualities": "En Basse-Casamance, les religions traditionnelles des Baïnouk et de leurs voisins coexistent avec l'islam et le christianisme, selon Jacqueline Trincaz. Elle note qu'au temps colonial, ces religions étaient souvent méprisées par le colonisateur."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Les Bainouk ont fonde et dirige le royaume de Kasa (Kassanla) qui s'etendait du Cacheu (actuelle Guinee-Bissau) jusqu'a Kiang (Gambie), traversant la Casamance, avec Mampating et Birikama comme capitales. Ce royaume fut l'entite politique dominante de la Basse-Casamance du XVe au XVIIe siecle. Au moins cinq Etats bainouk existaient au XVe siecle : Bichangor, Jase, Foni, Buguando et d'autres.",
-      "relationsWithNeighbors": "Les Bainouk ont entretenu des liens de cousinage avec les Peuls, les Lebous et les Sereer (selon la tradition orale). Les Peuls les ont sauves d'une extermination a une occasion. Les Mandingues/Malinkes les ont d'abord chasses des zones de Gabou puis domines apres la fin du XVIe siecle. Les Diola (Jola) ont progressivement adopte une partie de leur territoire et de leurs traditions culturelles (notamment le Kumpo). Les Balanta ont detruit leur dernier royaume en 1830.",
-      "conflictsOrAlliances": "Bataille de Kirina et expansion mandingue : refoulement des Bainouk du nord vers la Casamance. Fin XVIe siecle : defaite militaire face aux Mandingues et changement du nom en Bainouk (ceux qui sont chasses). 1830 : destruction du royaume bainouk vassal de Kaabu par les Balanta. 1982-present : conflit casamancais du MFDC forceant des milliers de Bainouk a fuir vers la Guinee-Bissau et la Gambie.",
-      "diaspora": "Sous la pression du conflit casamancais, de nombreux Bainouk ont cherche refuge en Guinee-Bissau (ou le creole est devenu leur langue principale) et en Gambie. Cette dispersion a accelere l'abandon de la langue et des pratiques culturelles bainouk au profit des langues de leurs hotes. Des Bainouk sont presents dans les villes de Dakar, Kaolack, Ziguinchor, Tambacounda, Bignona et dans la Communaute rurale de Niamone au Senegal."
+      "kingdomsOrChiefdoms": "En 1594, André Álvares de Almada décrit au sud de l'embouchure de la Casamance la terre des Izigichos, « qui sont des Banhuns », où se fait le commerce de la cire et des esclaves. Charles de Lespinay mentionne aussi des royaumes banyun, comme le Fonhi.",
+      "relationsWithNeighbors": "Selon Christophe Wondji, les Balante venus de l'est se sont imposés aux Bainuk avant le XVe siècle. Au XVIIe siècle, les guerres liées à la traite opposent sur le rio Cacheu les Bainuk, les Kasanga, les Papel, les Jóola et les Balante ; pour échapper aux razzias, beaucoup se réfugient dans les marais de la côte. Les Baïnouk vivent depuis longtemps à côté des Jóola. Autour de Djibonker, des tensions demeurent entre ceux qui se disent jóola et ceux qui se disent d'origine baïnounk, même si elles sont moins vives qu'autrefois, selon Abbie Hantgan-Sonko. Au XIXe siècle, une partie des Baynuk de moyenne Casamance vivait sous l'influence des Manding, selon Christian Roche.",
+      "conflictsOrAlliances": "À la fin du XIXe siècle, les villages baynuk des rives du Soungrougrou sont pillés par le chef manding Fodé Kaba, allié à Fodé Lende du Yacine, selon Christian Roche.",
+      "diaspora": "Les personnes qui parlent le baynunk partent de plus en plus vers les villes, comme Dakar, pour chercher du travail ou poursuivre leurs études, selon Sokhna Bao-Diop."
     },
     "demography": {
-      "totalPopulation": 75000,
-      "referenceYear": 2025,
-      "source": "Joshua Project (2025) : population mondiale estimee a 75 000 personnes, dont environ 40 000 au Senegal. 101 Last Tribes : 35 500 Bainouk au Senegal, total mondial de 66 000 dans deux pays. Les estimations varient selon que l'on compte les locuteurs de la langue ou l'ensemble des personnes d'identite bainouk. La disparition de la langue accelere la sous-estimation dans les recensements.",
+      "totalPopulation": null,
+      "referenceYear": 2006,
+      "source": "Aucune source lue ne donne le nombre des Bainouk. Selon Ethnologue, cité par la linguiste Sokhna Bao-Diop, 6 220 personnes parlaient le baynunk au Sénégal en 2006 ; ce chiffre compte des locuteurs, pas toutes les personnes qui se disent bainouk.",
       "distributionByCountry": [
         {
           "country": "SEN",
-          "population": 40000,
-          "note": "Principalement en Basse Casamance (Ziguinchor, Bignona), Casamance orientale (Samik)"
+          "population": null,
+          "note": "Basse et moyenne Casamance : Djibonker, Niamone, Bourofaye, région de Ziguinchor."
         },
         {
           "country": "GNB",
-          "population": 25000,
-          "note": "Region de Cacheu et Sao Domingos, dialecte Gunyuno/Gujaher"
+          "population": null,
+          "note": "Nord du pays, vers le rio São Domingos et le rio Cacheu."
         },
         {
           "country": "GMB",
-          "population": 10000,
-          "note": "Region de Foni et Brikama (Gambie occidentale)"
+          "population": null,
+          "note": "Présence signalée par Sokhna Bao-Diop, sans chiffre."
         }
       ]
     },
+    "gaps": [
+      {
+        "field": "content.origins.formationPeriod",
+        "reason": "Les sources que nous avons lues, de Sokhna Bao-Diop à Charles de Lespinay, ne datent pas la formation de ce peuple ; elles rapportent seulement que ses ancêtres seraient venus de l'est."
+      },
+      {
+        "field": "content.organization.traditionalPoliticalSystem",
+        "reason": "Charles de Lespinay mentionne des royaumes banyun, mais les sources que nous avons lues ne décrivent pas comment ils étaient gouvernés."
+      },
+      {
+        "field": "content.organization.ageClassSystems",
+        "reason": "Les articles de Jacqueline Trincaz, de Ferdinand de Jong et d'Abbie Hantgan-Sonko ne décrivent pas de classes d'âge chez les Baïnouk."
+      },
+      {
+        "field": "content.organization.roleOfLineages",
+        "reason": "Jacqueline Trincaz décrit le clan et le mariage hors du clan, mais ne dit pas comment se transmettent la terre, les biens ou l'autorité chez les Baïnouk."
+      },
+      {
+        "field": "content.organization.religiousAuthority",
+        "reason": "Les sources que nous avons lues ne nomment pas ceux qui dirigent les cultes baïnouk."
+      },
+      {
+        "field": "content.culture.symbols",
+        "reason": "Les sources que nous avons lues ne décrivent pas de symboles propres aux Baïnouk."
+      },
+      {
+        "field": "content.culture.artsAndMusic",
+        "reason": "En dehors du tissage, de la teinture et du masque kumpo, les sources que nous avons lues ne décrivent pas la musique ni les autres arts des Baïnouk."
+      },
+      {
+        "field": "content.demography.totalPopulation",
+        "reason": "Le recensement de Guinée-Bissau de 2009 ne compte pas les Baïnouk à part, et le rapport du recensement du Sénégal de 2023 que nous avons lu ne donne pas de chiffre par ethnie. Le seul chiffre trouvé compte les locuteurs au Sénégal en 2006."
+      }
+    ],
     "sources": [
       {
         "title": "Joshua Project. Bainouk, Gunyaamolo in Senegal",
@@ -133,11 +163,116 @@
         "title": "Djola History and Genealogy Society. Bainuk, Fulup and Baiote. (2021)",
         "url": "https://www.djola.org/history/blog-post-title-three-3bz78",
         "tier": "unverified"
+      },
+      {
+        "title": "Glottolog, famille Bainounk (bain1264)",
+        "url": "https://glottolog.org/resource/languoid/id/bain1264",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, édité à l'Institut Max-Planck d'anthropologie évolutionniste. Lu le 3 novembre 2026 : la famille Bainounk, dans le groupe nyun des langues atlantiques, compte quatre langues."
+      },
+      {
+        "title": "Alain Kihm, La situation linguistique en Casamance et Guinée-Bissau, 1980",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1980_num_20_79_2342",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Cahiers d'études africaines, vol. 20, n° 79, 1980, p. 369-386. Lu le 3 novembre 2026 sur Persée, dans le texte intégral de l'article."
+      },
+      {
+        "title": "Charles de Lespinay, Esclavages en Afrique noire : quelques données de l'époque moderne en Sénégambie, 2012",
+        "url": "https://www.persee.fr/doc/ista_0000-0000_2012_ant_1234_1_1945",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Dans Penser l'esclavage. Modèles antiques, pratiques modernes, problématiques contemporaines, collection de l'Institut des sciences et techniques de l'Antiquité, 2012, p. 111-136. Lu le 3 novembre 2026 sur Persée, dans le texte intégral. L'auteur décrit un lexique manuscrit de la Bibliothèque nationale (manuscrits orientaux, Africain 4) ; nous n'avons pas lu le manuscrit lui-même."
+      },
+      {
+        "title": "Charles de Lespinay, Compte rendu de George E. Brooks, Landlords and Strangers. Ecology, Society and Trade in Western Africa, 1000-1630, 1995",
+        "url": "https://www.persee.fr/doc/outre_0300-9513_1995_num_82_307_3324_t1_0230_0000_2",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Revue française d'histoire d'outre-mer, tome 82, n° 307, 1995, p. 230. Lu le 3 novembre 2026 sur Persée. Nous n'avons pas lu le livre de George Brooks lui-même."
+      },
+      {
+        "title": "Jean Boulègue, Compte rendu de George Brooks, Landlords and Strangers. Ecology, Society and Trade in Western Africa, 1000-1630, 1995",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1995_num_35_138_1467_t1_0672_0000_2",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Cahiers d'études africaines, vol. 35, n° 138-139, 1995, p. 672-674. Lu le 3 novembre 2026 sur Persée. Nous n'avons pas lu le livre de George Brooks lui-même."
+      },
+      {
+        "title": "Ferdinand de Jong, Trajectories of a Mask Performance: the Case of the Senegalese Kumpo, 1999",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1999_num_39_153_1964",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Cahiers d'études africaines, vol. 39, n° 153, 1999, p. 49-71, en anglais. Lu le 3 novembre 2026 sur Persée, dans le texte intégral."
+      },
+      {
+        "title": "Jacqueline Trincaz, Christianisme, islam et transformations sociales. La famille en Casamance, 1978",
+        "url": "https://www.persee.fr/doc/assr_0335-5985_1978_num_46_1_2158",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Archives de sciences sociales des religions, n° 46/1, 1978, p. 85-109. Lu le 3 novembre 2026 sur Persée, dans le texte intégral."
+      },
+      {
+        "title": "Christian Roche, Portraits de chefs casamançais du XIXe siècle, 1971",
+        "url": "https://www.persee.fr/doc/outre_0300-9513_1971_num_58_213_1563",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Revue française d'histoire d'outre-mer, tome 58, n° 213, 1971, p. 451-467. Lu le 3 novembre 2026 sur Persée, dans le texte intégral."
+      },
+      {
+        "title": "Auguste Chevalier et Adolphe Cligny, La Casamance, 1901",
+        "url": "https://www.persee.fr/doc/geo_0003-4010_1901_num_10_50_4901",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Annales de géographie, tome 10, n° 50, 1901, p. 165-176. Article écrit par deux auteurs de l'époque coloniale française. Lu le 3 novembre 2026 sur Persée, dans le texte intégral."
+      },
+      {
+        "title": "Abbie Hantgan-Sonko, Choices in language accommodation at The Crossroads: Convergence, divergence, and mixing, 2017",
+        "url": "https://hal.science/hal-04394937",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Journal of the Anthropological Society of Oxford, vol. IX, n° 1, 2017, p. 102-117, en anglais. Lu le 3 novembre 2026 dans le texte déposé sur l'archive ouverte HAL."
+      },
+      {
+        "title": "Christophe Wondji, The states and cultures of the Upper Guinean coast, Histoire générale de l'Afrique de l'UNESCO, volume V, 1992",
+        "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, Histoire générale de l'Afrique, volume V, dirigé par B. A. Ogot, 1992. Édition anglaise lu le 3 novembre 2026 dans la copie que publie South African History Online ; l'édition française en ligne n'était pas accessible."
+      },
+      {
+        "title": "Boubacar Barry, Senegambia from the sixteenth to the eighteenth century, Histoire générale de l'Afrique de l'UNESCO, volume V, 1992",
+        "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, Histoire générale de l'Afrique, volume V, dirigé par B. A. Ogot, 1992. Édition anglaise lu le 3 novembre 2026 dans la copie que publie South African History Online ; l'édition française en ligne n'était pas accessible."
+      },
+      {
+        "title": "André Álvares de Almada, Tratado breve dos rios de Guiné do Cabo-Verde, 1594",
+        "url": "https://archive.org/details/tratadobrevedosr00alma",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Traité écrit en 1594, lu dans l'édition publiée par Diogo Köpke à Porto en 1841, exemplaire numérisé d'Internet Archive."
+      },
+      {
+        "title": "Hyacinthe Hecquard, Voyage sur la côte et dans l'intérieur de l'Afrique occidentale, 1853",
+        "url": "https://archive.org/details/bub_gb_R6YTAAAAYAAJ",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Paris, Bénard, 1853. Récit de voyage d'un officier français jusqu'à la cour de l'almami du Fouta-Djalon. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive (exemplaire de Harvard). Chapitre III, sur le commerce de Carabane."
+      },
+      {
+        "title": "L.-J.-B. Bérenger-Féraud, Les peuplades de la Sénégambie, 1879",
+        "url": "https://archive.org/details/lespeupladesdel01brgoog",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Paris, Ernest Leroux, 1879, lu dans l'exemplaire numérisé d'Internet Archive."
       }
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Bainouk désigne un peuple de Basse-Casamance, au Sénégal, présent aussi en Gambie et en Guinée-Bissau ; des personnes de ce peuple se reconnaissent dans ce nom. Il a porté d'autres noms : Banhun chez les Portugais à la fin du XVIe siècle, Bagnoun chez les Français au XIXe siècle. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
+    "summary": "Le nom Bainouk désigne un peuple de Casamance, au sud du Sénégal, présent aussi en Guinée-Bissau et en Gambie ; il s'écrit aussi Baynunk ou Baïnounk. D'autres noms existent : Banhun chez les Portugais dès 1594, Bagnon puis Bagnoun chez les Français, Banyun chez des chercheurs qui écrivent en anglais, Nyun chez des linguistes, fu-lun chez des Jóola voisins. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Bainouk",
@@ -145,7 +280,7 @@
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom d'un peuple de Casamance ; son origine reste discutée.",
+        "shortLine": "Le nom d'un peuple de Casamance, aussi écrit Baynunk ; il viendrait d'un mot malinké.",
         "periodLabel": "En usage aujourd'hui",
         "accounts": [
           {
@@ -155,7 +290,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Bainouk, aussi écrit Baynunk, désigne aujourd'hui un peuple de Casamance et les parlers qu'il emploie. Ce peuple affirme être le plus ancien de la région, selon la linguiste Sokhna Bao-Diop. L'origine du nom est discutée. On ne sait pas avec certitude depuis quand la forme Bainouk est écrite.",
+            "statement": "Le nom Bainouk, écrit Baynunk par la linguiste Sokhna Bao-Diop, désigne aujourd'hui un peuple de Casamance et les parlers qu'il emploie. Ce peuple affirme être le plus ancien de la région, selon elle. L'origine du nom est discutée.",
             "aspect": "meaning",
             "sources": [
               {
@@ -210,6 +345,124 @@
                 "notes": "Page du programme Sorosoro, réalisée en 2010 par une doctorante de l'INALCO rattachée au LLACAN, lue le 11 octobre 2026."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1971,
+              "to": 1971,
+              "label": "1971"
+            },
+            "era": "modern",
+            "statement": "Le nom Bainouk est écrit Baynuk par l'historien Christian Roche. Il décrit des villages baynuk et dyola au bord du Soungrougrou, un affluent de la Casamance, et le Yacine, une « région baynuk mandinguisée » de moyenne Casamance, à la fin du XIXe siècle.",
+            "formAsWritten": "Baynuk",
+            "actors": [
+              {
+                "name": "Christian Roche",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Portraits de chefs casamançais du XIXe siècle",
+                "author": "Christian Roche",
+                "year": 1971,
+                "url": "https://www.persee.fr/doc/outre_0300-9513_1971_num_58_213_1563",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 451 et p. 453",
+                "notes": "Revue française d'histoire d'outre-mer, tome 58, n° 213, 1971, p. 451-467. Lu le 3 novembre 2026 sur Persée, dans le texte intégral."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Banhun",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Le nom portugais de ce peuple, écrit dès 1594 par André Álvares de Almada.",
+        "periodLabel": "Écrit dès 1594",
+        "accounts": [
+          {
+            "period": {
+              "from": 1992,
+              "to": 1992,
+              "label": "1992"
+            },
+            "era": "modern",
+            "statement": "Le nom Banhun est donné comme un autre nom des Bainuk par l'historien Christophe Wondji, dans l'Histoire générale de l'Afrique publiée par l'UNESCO. Il range les « Bainuk ou Banhun » parmi les trois grands peuples des estuaires de Casamance et de Guinée-Bissau.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 13: The states and cultures of the Upper Guinean coast",
+                "author": "Christophe Wondji",
+                "year": 1992,
+                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 373 et p. 378",
+                "notes": "UNESCO, Histoire générale de l'Afrique, volume V, dirigé par B. A. Ogot, 1992. Édition anglaise lu le 3 novembre 2026 dans la copie que publie South African History Online ; l'édition française en ligne n'était pas accessible."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1594,
+              "to": 1594,
+              "label": "1594"
+            },
+            "era": "polity",
+            "statement": "Le nom Banhun apparaît par écrit, au pluriel Banhuns, dans le traité d'André Álvares de Almada sur les rivières de Guinée, en 1594. Au sud de l'embouchure de la Casamance, il décrit la terre des Izigichos, « qui sont des Banhuns », où se fait le commerce de la cire et des esclaves. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Banhuns",
+            "birth": true,
+            "actors": [
+              {
+                "name": "André Álvares de Almada",
+                "role": "capitaine né dans l'île de Santiago, au Cap-Vert, auteur du traité"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Tratado breve dos rios de Guiné do Cabo-Verde",
+                "author": "André Álvares de Almada",
+                "year": 1594,
+                "url": "https://archive.org/details/tratadobrevedosr00alma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 38",
+                "notes": "Traité écrit en 1594, lu dans l'édition publiée par Diogo Köpke à Porto en 1841, exemplaire numérisé d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1570,
+              "to": 1594,
+              "label": "Fin du XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Banhun revient chez Almada dans la liste des peuples qui vivent autour du rio São Domingos : de cette rivière partent, écrit-il, plus d'esclaves que d'aucune autre rivière de Guinée. Charles de Lespinay cite ce passage pour montrer la place de la traite dans la région.",
+            "formAsWritten": "Banhuns",
+            "actors": [
+              {
+                "name": "André Álvares de Almada",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Esclavages en Afrique noire : quelques données de l'époque moderne en Sénégambie",
+                "author": "Charles de Lespinay",
+                "year": 2012,
+                "url": "https://www.persee.fr/doc/ista_0000-0000_2012_ant_1234_1_1945",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 129",
+                "notes": "Dans Penser l'esclavage. Modèles antiques, pratiques modernes, problématiques contemporaines, collection de l'Institut des sciences et techniques de l'Antiquité, 2012, p. 111-136. Lu le 3 novembre 2026 sur Persée. L'auteur cite le traité d'Almada dans la traduction anglaise de P. E. H. Hair (1984, p. 86)."
+              }
+            ]
           }
         ]
       },
@@ -219,10 +472,38 @@
         "selfGiven": false,
         "languageOfOrigin": "fra",
         "namedBy": null,
-        "shortLine": "La forme française du nom au XIXe siècle, écrite dès 1853 par Hyacinthe Hecquard.",
-        "periodLabel": "Écrit dès 1853",
+        "shortLine": "La forme française du nom, écrite Bagnon à la fin du XVIIe siècle, puis Bagnoun au XIXe siècle.",
+        "periodLabel": "Écrit dès la fin du XVIIe siècle",
         "variantSpelling": true,
         "accounts": [
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bagnoun figure en 1901 chez Auguste Chevalier et Adolphe Cligny, qui rangent les Floups, les Bayottes, les Bagnouns et les Diougoutes dans le grand ensemble diola. Selon eux, seules des différences de coutumes et d'accent ont fait croire aux Européens qu'il s'agissait de peuples différents.",
+            "formAsWritten": "Bagnouns",
+            "actors": [
+              {
+                "name": "Auguste Chevalier et Adolphe Cligny",
+                "role": "écrivent cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La Casamance",
+                "author": "Auguste Chevalier et Adolphe Cligny",
+                "year": 1901,
+                "url": "https://www.persee.fr/doc/geo_0003-4010_1901_num_10_50_4901",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 176",
+                "notes": "Annales de géographie, tome 10, n° 50, 1901, p. 165-176. Article écrit par deux auteurs de l'époque coloniale française. Lu le 3 novembre 2026 sur Persée, dans le texte intégral."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1879,
@@ -250,9 +531,9 @@
               "to": 1853,
               "label": "1853"
             },
-            "statement": "Le nom Bagnoun apparaît par écrit, au pluriel Bagnouns, dans le récit de voyage du Français Hyacinthe Hecquard, publié en 1853 : les traitants de Carabane vont acheter le riz dans les villages des Floups et des Bagnouns, sur le bas du fleuve Casamance. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "era": "polity",
+            "statement": "Le nom Bagnoun apparaît, au pluriel Bagnouns, dans le récit de voyage du Français Hyacinthe Hecquard, publié en 1853 : les traitants de Carabane vont acheter le riz dans les villages des Floups et des Bagnouns, sur le bas du fleuve Casamance.",
             "formAsWritten": "Bagnouns",
-            "birth": true,
             "actors": [
               {
                 "name": "Hyacinthe Hecquard",
@@ -271,44 +552,203 @@
                 "notes": "Paris, Bénard, 1853. Récit de voyage d'un officier français jusqu'à la cour de l'almami du Fouta-Djalon. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive (exemplaire de Harvard). Chapitre III, sur le commerce de Carabane."
               }
             ]
-          }
-        ]
-      },
-      {
-        "nameText": "Banhun",
-        "nameStatus": "former",
-        "selfGiven": false,
-        "languageOfOrigin": "por",
-        "namedBy": null,
-        "shortLine": "Le nom portugais de ce peuple, écrit dès 1594 par André Álvares de Almada.",
-        "periodLabel": "Écrit dès 1594",
-        "accounts": [
+          },
           {
             "period": {
-              "from": 1594,
-              "to": 1594,
-              "label": "1594"
+              "from": 1680,
+              "to": 1699,
+              "label": "Fin du XVIIe siècle"
             },
             "era": "polity",
-            "statement": "Le nom Banhun apparaît par écrit, au pluriel Banhuns, dans le traité d'André Álvares de Almada sur les rivières de Guinée, en 1594. Au sud de l'embouchure de la Casamance, il décrit la terre des Izigichos, « qui sont des Banhuns », où se fait le commerce de la cire et des esclaves. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
-            "formAsWritten": "Banhuns",
+            "statement": "Le nom Bagnon figure, comme nom d'une langue, dans un lexique manuscrit établi à la fin du XVIIe siècle par des proches de la Compagnie royale du Sénégal, qui compare des mots de plusieurs langues de la région, selon Charles de Lespinay. Il y voit la langue des Baynunk de Casamance. C'est la plus ancienne trace de cette forme française que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Bagnon",
             "birth": true,
             "actors": [
               {
-                "name": "André Álvares de Almada",
-                "role": "capitaine né dans l'île de Santiago, au Cap-Vert, auteur du traité"
+                "name": "Compagnie royale du Sénégal",
+                "role": "compagnie de commerce française pour laquelle le lexique a été établi"
               }
             ],
             "sources": [
               {
-                "title": "Tratado breve dos rios de Guiné do Cabo-Verde",
-                "author": "André Álvares de Almada",
-                "year": 1594,
-                "url": "https://archive.org/details/tratadobrevedosr00alma",
+                "title": "Esclavages en Afrique noire : quelques données de l'époque moderne en Sénégambie",
+                "author": "Charles de Lespinay",
+                "year": 2012,
+                "url": "https://www.persee.fr/doc/ista_0000-0000_2012_ant_1234_1_1945",
                 "tier": "referenced",
-                "source_kind": "archive",
-                "page": "p. 38",
-                "notes": "Traité écrit en 1594, lu dans l'édition publiée par Diogo Köpke à Porto en 1841, exemplaire numérisé d'Internet Archive."
+                "source_kind": "academic",
+                "page": "p. 115, notes 4 et 5",
+                "notes": "Dans Penser l'esclavage. Modèles antiques, pratiques modernes, problématiques contemporaines, collection de l'Institut des sciences et techniques de l'Antiquité, 2012, p. 111-136. Lu le 3 novembre 2026 sur Persée, dans le texte intégral. L'auteur décrit un lexique manuscrit de la Bibliothèque nationale (manuscrits orientaux, Africain 4) ; nous n'avons pas lu le manuscrit lui-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Banyun",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme qu'emploient des historiens et des anthropologues qui écrivent en anglais.",
+        "periodLabel": "En usage chez des chercheurs aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Banyun est la forme qu'emploie l'anthropologue Ferdinand de Jong dans un article en anglais sur le masque kumpo. Il rapporte que Girard en 1965, puis l'historien Peter Mark, font venir ce masque des Banyun, voisins des Jóola en Casamance.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Ferdinand de Jong",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Trajectories of a Mask Performance: the Case of the Senegalese Kumpo",
+                "author": "Ferdinand de Jong",
+                "year": 1999,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1999_num_39_153_1964",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 55",
+                "notes": "Cahiers d'études africaines, vol. 39, n° 153, 1999, p. 49-71, en anglais. Lu le 3 novembre 2026 sur Persée, dans le texte intégral."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Banyun est aussi celui qu'emploie l'historien George Brooks dans un livre de 1993, selon les comptes rendus de Charles de Lespinay et de Jean Boulègue. Ce dernier rappelle que ka est un préfixe de lieu en banyun.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Compte rendu de George E. Brooks, Landlords and Strangers. Ecology, Society and Trade in Western Africa, 1000-1630",
+                "author": "Charles de Lespinay",
+                "year": 1995,
+                "url": "https://www.persee.fr/doc/outre_0300-9513_1995_num_82_307_3324_t1_0230_0000_2",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 230",
+                "notes": "Revue française d'histoire d'outre-mer, tome 82, n° 307, 1995, p. 230. Lu le 3 novembre 2026 sur Persée. Nous n'avons pas lu le livre de George Brooks lui-même."
+              },
+              {
+                "title": "Compte rendu de George Brooks, Landlords and Strangers. Ecology, Society and Trade in Western Africa, 1000-1630",
+                "author": "Jean Boulègue",
+                "year": 1995,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1995_num_35_138_1467_t1_0672_0000_2",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 673-674",
+                "notes": "Cahiers d'études africaines, vol. 35, n° 138-139, 1995, p. 672-674. Lu le 3 novembre 2026 sur Persée. Nous n'avons pas lu le livre de George Brooks lui-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nyun",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom pour ce peuple et pour le groupe de langues auquel ses parlers appartiennent.",
+        "periodLabel": "Écrit en 1980",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyun désigne aujourd'hui, dans le catalogue Glottolog, le groupe de langues atlantiques où se trouvent les langues baïnounk.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog, famille Bainounk (bain1264)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/bain1264",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde, édité à l'Institut Max-Planck d'anthropologie évolutionniste. Lu le 3 novembre 2026 : la famille Bainounk, dans le groupe nyun des langues atlantiques, compte quatre langues."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyun, écrit Nyuuny par le linguiste Alain Kihm, est selon lui un autre nom pour les Baynuk. Il compte le baynuk parmi les sept langues de la Casamance et le retrouve, sous ce nom de nyuuny, de l'autre côté de la frontière, en Guinée-Bissau.",
+            "formAsWritten": "Nyuuny",
+            "actors": [
+              {
+                "name": "Alain Kihm",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La situation linguistique en Casamance et Guinée-Bissau",
+                "author": "Alain Kihm",
+                "year": 1980,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1980_num_20_79_2342",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 369",
+                "notes": "Cahiers d'études africaines, vol. 20, n° 79, 1980, p. 369-386. Lu le 3 novembre 2026 sur Persée, dans le texte intégral de l'article."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Fu-lun",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Jóola d'Essil et des villages voisins",
+        "shortLine": "Le nom que des Jóola voisins donnent aux habitants de Djibonker et de Brin.",
+        "periodLabel": "Rapporté en 2017",
+        "accounts": [
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Rapporté en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom fu-lun, « Baïnounk », est celui que les Jóola d'Essil et des villages voisins donnent ensemble aux habitants de Djibonker et de Brin, à l'ouest de Ziguinchor, selon la linguiste Abbie Hantgan-Sonko. À Brin, beaucoup se disent pourtant à la fois jóola et baïnounk.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Abbie Hantgan-Sonko",
+                "role": "linguiste qui rapporte ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Choices in language accommodation at The Crossroads: Convergence, divergence, and mixing",
+                "author": "Abbie Hantgan-Sonko",
+                "year": 2017,
+                "url": "https://hal.science/hal-04394937",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 103-104 et p. 107",
+                "notes": "Journal of the Anthropological Society of Oxford, vol. IX, n° 1, 2017, p. 102-117, en anglais. Lu le 3 novembre 2026 dans le texte déposé sur l'archive ouverte HAL."
               }
             ]
           }

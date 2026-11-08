@@ -3,105 +3,9 @@
   "nameMain": "Wan",
   "languageFamilyId": "FLG_MANDE",
   "currentCountries": ["CIV"],
-  "content": {
-    "appellations": {
-      "mainName": "Wan",
-      "selfAppellation": "Nwa",
-      "exonyms": ["Ouan", "Noua", "Ngwano", "Nua", "Wans"],
-      "originOfExonyms": "L'orthographe coloniale francaise utilisait Noua ou Ouan ; Nwa est la forme utilisee par les linguistes (Prost, Welmers) ; Wan est la romanisation la plus proche de la prononciation locale /wana/.",
-      "whyProblematic": null,
-      "contemporaryUsage": "Le nom Wan est aujourd'hui standard dans la litterature academique et administrative ivoirienne ; Ouan subsiste dans certains documents d'archives coloniaux.",
-      "linguisticFamily": "FLG_MANDE",
-      "ethnoLinguisticGroup": "Mande du Sud (Southern Mande)",
-      "historicalRegion": "Centre-ouest de la Cote d'Ivoire (region Beaoumi-Mankono-Gohitafla)",
-      "currentCountries": ["CIV"]
-    },
-    "ethnicities": ["Wan"],
-    "origins": {
-      "ancientOrigins": "Les Wan appartiennent a l'aire culturelle du Mande du Sud et comptent parmi les peuples les plus anciens du centre-ouest et du nord de la Cote d'Ivoire, rivalisant d'anciennete avec les Gagou (Gban), les Dan (Yacouba) et les Senoufo. Selon les traditions orales collectees par Niangoran Bouah (1997), ils appartiennent a l'ancien groupe ethnique Kwanin, localise entre la Sassandra et la rive est du Comoe. D'autres sources evoquent une origine du groupe entre Guiglo et Duekoue (ouest) ou une formation par metissage entre Malinke et Gouro dans l'ancien village de Boron (aujourd'hui Kounahiri) apres le XVe siecle.",
-      "formationPeriod": "XVe-XVIe siecle, consolidation autour de la region Bouafle-Kounahiri-Beaoumi",
-      "migrationRoutes": [
-        "Depuis le nord-ouest (Mankono-Seguéla) vers le sud sous la pression de l'expansion islamique soudanaise (selon l'archive coloniale, lieutenant Schiffer, 1901)",
-        "Occupation occidentale partagee avec les Dan (Yacouba) avant separation",
-        "Deplacement vers la region de Beaoumi apres le XVIe siecle, puis diffusion dans les cantons de Kode, Goli, Satikran, Bro et Ouarebo (ouest de Bouake)",
-        "Certaines familles (clan Gbegbe) revendiquent une origine meridionale depuis la zone d'Abidjan, remontant vers le nord via Vavoua (region Kouya) et Sinfra (region Gouro)"
-      ],
-      "historicalSettlementZones": [
-        "Region de Marahoue (Bouafle)",
-        "Departement de Kounahiri",
-        "Region de Beaoumi",
-        "Zone de Gohitafla",
-        "Sous-prefectures de Beaoumi et de Mankono"
-      ],
-      "unificationsOrDivisions": "Les Wan se divisent en deux dialectes/groupes principaux : les Kemmu (sous-prefecture de Mankono) et les Myamu (sous-prefecture de Beaoumi), mutuellement intelligibles.",
-      "externalInfluences": "Contacts historiques avec les Dan (Yacouba), les Gouro, les Senoufo, les Malinke et les Baule ; relation de plaisanterie (cousinage a plaisanteries) avec les Dan ; invasion de Samory Toure ayant force l'abandon du site de Siapla ; colonisation francaise (1901-1960).",
-      "majorHistoricalEvents": "Expansion islamique sud-saharienne poussant les populations mande vers le sud (XVe-XVIe s.) ; invasion de Samory Toure (fin XIXe s.) ; colonisation francaise et desarmement des Wan (rapports d'archive 1906-1911) ; fouilles archeologiques de 2023 a Maminigui ayant mis au jour des pointes de fleches et ceramiques associees aux ancetres Wan."
-    },
-    "organization": {
-      "traditionalPoliticalSystem": "Societe patrilineaire dirigee par des chefs de village et des conseils d'anciens. Les anciens jouent un role central dans les prises de decisions et la transmission des valeurs culturelles.",
-      "clanOrganization": "Organisation clanique patrilineaire ; les clans incluent notamment le clan Gbegbe (villages de Gbewa et Gbetepla). La societe Wan est a vocation patrilineaire selon les travaux academiques (The Social organization of the Wan: a patrilineal people of Ivory Coast).",
-      "ageClassSystems": null,
-      "roleOfLineages": "Les lignages patrilineaires structurent la societe et la gestion des terres. Les anciens de chaque lignage assurent la mediation des conflits et la transmission des savoirs ancestraux.",
-      "religiousAuthority": "Croyances animistes centrees sur la veneration des ancetres et des esprits. Des sites sacres (arbres, rivieres) sont associes a des puissances spirituelles. Certains Wan ont ete exposes au christianisme et a l'islam sans que ces religions aient supplante les pratiques ancestrales."
-    },
-    "languages": {
-      "mainLanguage": "Wan (Nwa)",
-      "isoCodes": ["wan"],
-      "dialects": ["Kemmu (Kymmu)", "Myamu (Miamu)"],
-      "vehicularRole": "La langue wan est utilisee comme langue maternelle et vehiculaire locale dans les sous-prefectures de Beaoumi et Mankono. Le dioula (jula) et le francais sont utilises comme langues de communication plus larges en Cote d'Ivoire."
-    },
-    "culture": {
-      "majorRites": "Rites d'initiation feminine dont le symbolisme occupe une place centrale dans la culture wan (mentionnes dans la bibliographie anthropologique : Le sacre et le secret chez les Wan). Celebrations agricoles aux temps des semailles et des recoltes, marquees par la musique traditionnelle, la danse et les contes.",
-      "symbols": "Le masque Goli, fonde par les Wan, est le symbole culturel le plus emblematique du peuple. Ce masque a ete adopte par les Baule entre 1900 et 1910, et est devenu l'une des formes de danse traditionnelle les plus connues de Cote d'Ivoire. Les sculptures lithiques anthropomorphiques de la region de Marahoue (pierres taillees de Gohitafla) sont attribuees aux ancetres Wan.",
-      "artsAndMusic": "Mascarade Goli comportant quatre paires de masques (kple kple et kpan, masculins et feminins) portes successivement par des danseurs. Les femmes et les enfants participent en chantant et en dansant avec les figures masquees. Traditions de contes, de chants et de danse.",
-      "spiritualities": "Animisme a base de veneration des ancetres ; croyance en des esprits associes a des sites naturels (arbres, rivieres) sacres. Economie spirituelle fondee sur des rituels d'apaisement des esprits ancestraux."
-    },
-    "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de royaume centralise documente ; organisation en chefferies villageoises sous autorite d'anciens et de chefs locaux.",
-      "relationsWithNeighbors": "Relation de cousinage a plaisanteries avec les Dan (Yacouba) de l'ouest ; ancienne cohabitation avec les Dan avant une separation liee a un conflit d'adultere. Contacts et metissages avec les Gouro, les Malinke et les Baule. Precedence sur les Ebrie dans la zone d'Abidjan selon le clan Gbegbe.",
-      "conflictsOrAlliances": "Deplacement sous la pression des Gouro, puis des Dosso de Mankono. Abandon du site de Siapla lors de l'invasion de Samory Toure (fin XIXe s.). Desarmement par l'administration coloniale francaise (1911).",
-      "diaspora": null
-    },
-    "demography": {
-      "totalPopulation": 75000,
-      "referenceYear": 2025,
-      "source": "Estimation basee sur les 59 000 habitants recenses entre 2000 et 2018 (Wikipedia FR), avec extrapolation selon le fort taux de croissance demographique signale ; estimation precedente de 22 000 locuteurs en 1993 (Ethnologue).",
-      "distributionByCountry": [
-        {
-          "country": "CIV",
-          "population": 75000
-        }
-      ]
-    },
-    "sources": [
-      {
-        "title": "KOFFI Kouakou Sylvain - The Wan and their migrations in Cote d'Ivoire, Revue ASTR-Ghana / e.f.u.a editions, 2024",
-        "url": "https://edition-efua.acaref.net/wp-content/uploads/sites/6/2024/11/7-KOFFI-Kouakou-Sylvain.pdf",
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "Ravenhill P. L. - The Wan Language, LLACAN-CNRS",
-        "url": "https://llacan.cnrs.fr/PDF/AutresMandenkan/ravenhil1.PDF",
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "Joshua Project - Wan, Nwa in Cote d'Ivoire",
-        "url": "https://joshuaproject.net/people_groups/15848",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "Ethnologue - Wan Language (WAN)",
-        "url": "https://www.ethnologue.com/language/wan/",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
-      }
-    ]
-  },
+  "classificationStatus": "consensual",
   "nameHistory": {
-    "summary": "Le nom Wan désigne un peuple du centre-ouest de la Côte d'Ivoire, installé entre Béoumi et Mankono, dont la langue fait partie des langues mandé du Sud. L'anthropologue Philip Ravenhill, qui l'a étudié de 1972 à 1974, écrit Wan parce que cette forme se rapproche le plus de ce que les Wan disent d'eux-mêmes. L'administration française a écrit Noua puis Ouan, et des linguistes ont écrit Nwa. Aucune source que nous avons lue n'explique l'origine de ces noms ; nous présentons plus bas ce qu'elles disent de chacun.",
+    "summary": "Le nom Wan est celui que ce peuple du centre de la Côte d'Ivoire se donne. Il a été écrit de plusieurs façons : Noua puis Ouan par l'administration française, au début du XXe siècle, puis Nwã et Nwa par des linguistes. L'anthropologue Philip Ravenhill a choisi d'écrire Wan dans les années 1970, parce que cette forme lui semblait la plus proche de ce que les Wan disent. Les sources que nous avons lues n'expliquent pas le sens de ce nom. Nous présentons plus bas, pour chaque forme, qui l'a écrite et quand.",
     "names": [
       {
         "nameText": "Wan",
@@ -109,9 +13,39 @@
         "selfGiven": true,
         "languageOfOrigin": "wan",
         "namedBy": null,
-        "shortLine": "Le nom que ce peuple se donne, dans l'écriture jugée la plus proche de sa prononciation par Philip Ravenhill.",
-        "periodLabel": "Écrit Ouan dès 1911 ; Wan depuis les années 1970",
+        "shortLine": "Le nom que ce peuple se donne, écrit comme Philip Ravenhill l'a proposé dans les années 1970.",
+        "usedIn": ["wan"],
+        "periodLabel": "Écrit Wan depuis les années 1970",
         "accounts": [
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Wan, écrit ainsi, figure dans le titre de la thèse que Philip Ravenhill consacre en 1976 à l'organisation sociale de ce peuple, « The Social Organisation of the Wan: A Patrilinear People of Ivory Coast ». C'est la plus ancienne trace de cette écriture que nous connaissons. Le peuple et son nom existaient bien avant elle.",
+            "formAsWritten": "Wan",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Philip L. Ravenhill",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Wan Language",
+                "author": "Philip L. Ravenhill",
+                "year": 1982,
+                "url": "https://llacan.cnrs.fr/PDF/AutresMandenkan/ravenhil1.PDF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 69",
+                "notes": "Fiche de données sur la langue wan (p. 57-69), fondée sur des recherches menées de 1972 à 1974. La copie numérisée du LLACAN ne porte pas de date ; la linguiste Tatiana Nikitina la cite comme parue dans la revue Mandenkan, n° 4, en 1982. La thèse de 1976 figure dans la liste des travaux de Ravenhill sur les Wan, à la p. 69. Nous n'avons pas lu la thèse elle-même. Lu le 3 novembre 2026."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1972,
@@ -119,41 +53,49 @@
               "label": "Recherches de 1972 à 1974"
             },
             "era": "modern",
-            "statement": "Le nom Wan est la forme que Philip Ravenhill choisit pour écrire le nom de ce peuple, parce qu'elle est, sans signes particuliers, la plus proche de ce que les Wan disent eux-mêmes, à peu près /wanà/. Il le dit en comparant avec Noua, Ouan et Nwa.",
+            "statement": "Le nom Wan est l'écriture que Philip Ravenhill retient après deux ans de recherches chez ce peuple, de 1972 à 1974. Il la juge, sans signes particuliers, la plus proche de ce que les Wan disent eux-mêmes, une syllabe proche de « wan » prononcée avec une voyelle nasale. Il la compare à Noua, à Ouan et à Nwa.",
             "aspect": "usage",
             "sources": [
               {
                 "title": "The Wan Language",
                 "author": "Philip L. Ravenhill",
-                "year": null,
+                "year": 1982,
                 "url": "https://llacan.cnrs.fr/PDF/AutresMandenkan/ravenhil1.PDF",
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 57",
-                "notes": "Fiche de données de deux pages (p. 57-58) fondée sur des recherches menées de 1972 à 1974 ; la copie numérisée du LLACAN ne porte pas de date de publication. Le passage sur le nom est à la p. 57. Lu le 13 octobre 2026."
+                "notes": "Fiche de données sur la langue wan (p. 57-69), fondée sur des recherches menées de 1972 à 1974. La copie numérisée du LLACAN ne porte pas de date ; la linguiste Tatiana Nikitina la cite comme parue dans la revue Mandenkan, n° 4, en 1982. Ravenhill écrit : « We believe Wan is the best orthography since it is the closest romanized form without diacritics to what the people themselves say ». Lu le 3 novembre 2026."
               }
             ]
           },
           {
             "period": {
-              "from": 1911,
-              "to": 1911,
-              "label": "Juillet à septembre 1911"
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
             },
-            "era": "colonial",
-            "statement": "Le nom Wan a une forme proche, Ouan, dans le titre d'un rapport de l'administration française de 1911, « Rapport sur les opérations de désarmements des pays Ouan (Noua et Mona) », que cite l'archéologue Kouakou Sylvain Koffi. C'est la plus ancienne trace d'une forme proche de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
-            "formAsWritten": "Ouan",
-            "birth": true,
+            "era": "modern",
+            "statement": "Le nom Wan est aujourd'hui celui qu'emploient les linguistes pour la langue et pour le peuple, par exemple le catalogue des langues Glottolog et la linguiste Tatiana Nikitina, qui a travaillé à Kounahiri.",
+            "aspect": "usage",
             "sources": [
               {
-                "title": "The Wan and their migrations in Côte d'Ivoire",
-                "author": "Kouakou Sylvain Koffi",
-                "year": 2024,
-                "url": "https://edition-efua.acaref.net/wp-content/uploads/sites/6/2024/11/7-KOFFI-Kouakou-Sylvain.pdf",
+                "title": "Glottolog 5.3 — Wan (wann1242)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/wann1242",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue dans le catalogue Glottolog : elle porte le nom Wan, le code ISO 639-3 wan, et cite Nwa parmi les autres noms. Consultée le 3 novembre 2026."
+              },
+              {
+                "title": "When linguists and speakers do not agree: The endangered grammar of verbal art in West Africa",
+                "author": "Tatiana Nikitina",
+                "year": 2018,
+                "url": "https://hal.science/hal-02932416",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 169, note 3, et p. 177",
-                "notes": "Revue ASTR-Ghana, éditions e.f.u.a, p. 164-179 (pagination de la copie lue). Le titre est lu dans la note 3 (p. 169) et dans la liste des sources écrites (p. 177) ; il s'agit de la cote 1 EE 87. L'auteur cite les Archives nationales de Côte d'Ivoire, que nous n'avons pas consultées. Lu le 13 octobre 2026."
+                "page": "p. 5-10 de la version déposée sur HAL",
+                "notes": "Article paru dans le Journal of Linguistic Anthropology, vol. 28, n° 2, 2018, lu dans la version déposée par l'autrice sur l'archive ouverte HAL. Tatiana Nikitina y écrit Wan pour la langue et pour le peuple, et dit avoir enregistré des récits à Kounahiri en 2001. Lu le 3 novembre 2026."
               }
             ]
           },
@@ -163,7 +105,7 @@
               "to": null,
               "label": "Avant le nom, selon des traditions orales rapportées en 1997"
             },
-            "statement": "On parle alors d'un ancien groupe nommé Kwanin, établi entre le Sassandra et la rive est de la Comoé, auquel les Wan auraient appartenu, selon des traditions orales que Georges Niangoran-Bouah a recueillies et que Kouakou Sylvain Koffi rapporte. Koffi présente aussi d'autres explications de l'origine des Wan.",
+            "statement": "Avant le nom Wan, selon des traditions orales que Georges Niangoran-Bouah a recueillies et que Kouakou Sylvain Koffi rapporte, les ancêtres des Wan auraient fait partie d'un ancien groupe nommé Kwanin, établi entre le fleuve Sassandra et la rive est de la Comoé. Koffi présente aussi d'autres explications de l'origine des Wan.",
             "before": true,
             "sources": [
               {
@@ -174,7 +116,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 170",
-                "notes": "Revue ASTR-Ghana, éditions e.f.u.a, p. 164-179 (pagination de la copie lue). Koffi cite le livre de Niangoran-Bouah (1997, p. 26), que nous n'avons pas lu. L'auteur cite les Archives nationales de Côte d'Ivoire, que nous n'avons pas consultées. Lu le 13 octobre 2026."
+                "notes": "Article de l'archéologue Kouakou Sylvain Koffi (université Félix Houphouët-Boigny, Abidjan), paru dans la Revue ASTR-Ghana, éditions e.f.u.a, p. 164-179. Koffi cite le livre de Georges Niangoran-Bouah, Le trésor du Marahoué (1997, p. 26), que nous n'avons pas lu. L'auteur cite les Archives nationales de Côte d'Ivoire, que nous n'avons pas consultées. Lu le 3 novembre 2026."
               }
             ]
           }
@@ -186,7 +128,7 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": "L'administration française",
-        "shortLine": "L'écriture que l'administration française a employée après Noua, et que les listes ivoiriennes ont gardée.",
+        "shortLine": "L'écriture que l'administration française a employée après Noua, à partir de 1911 au moins.",
         "periodLabel": "Écrit dès 1911",
         "variantSpelling": true,
         "accounts": [
@@ -197,9 +139,15 @@
               "label": "Juillet à septembre 1911"
             },
             "era": "colonial",
-            "statement": "Le nom Ouan figure dans le titre d'un rapport de l'administration française, « Rapport sur les opérations de désarmements des pays Ouan (Noua et Mona) », rédigé de juillet à septembre 1911 et cité par Kouakou Sylvain Koffi. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "statement": "Le nom Ouan figure dans le titre d'un rapport de l'administration française rédigé de juillet à septembre 1911, « Rapport sur les opérations de désarmements des pays Ouan (Noua et Mona) », cité par l'archéologue Kouakou Sylvain Koffi. Dans ce titre, Ouan réunit deux pays, Noua et Mona. Philip Ravenhill nomme Mwa, ou Mona, le peuple voisin installé à l'ouest des Wan. C'est la plus ancienne trace de cette écriture que nous connaissons.",
             "formAsWritten": "Ouan",
             "birth": true,
+            "actors": [
+              {
+                "name": "L'administration coloniale française",
+                "role": "écrit cette forme"
+              }
+            ],
             "sources": [
               {
                 "title": "The Wan and their migrations in Côte d'Ivoire",
@@ -209,7 +157,17 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 169, note 3, et p. 177",
-                "notes": "Revue ASTR-Ghana, éditions e.f.u.a, p. 164-179 (pagination de la copie lue). Le titre est lu dans la note 3 (p. 169) et dans la liste des sources écrites (p. 177) ; il s'agit de la cote 1 EE 87. L'auteur cite les Archives nationales de Côte d'Ivoire, que nous n'avons pas consultées. Lu le 13 octobre 2026."
+                "notes": "Article de l'archéologue Kouakou Sylvain Koffi (université Félix Houphouët-Boigny, Abidjan), paru dans la Revue ASTR-Ghana, éditions e.f.u.a, p. 164-179. Le titre du rapport est cité dans la note 3 (p. 169) et dans la liste des sources écrites (p. 177) ; il porte la cote 1 EE 87. L'auteur cite les Archives nationales de Côte d'Ivoire, que nous n'avons pas consultées. Lu le 3 novembre 2026."
+              },
+              {
+                "title": "The Wan Language",
+                "author": "Philip L. Ravenhill",
+                "year": 1982,
+                "url": "https://llacan.cnrs.fr/PDF/AutresMandenkan/ravenhil1.PDF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57",
+                "notes": "Fiche de données sur la langue wan (p. 57-69), fondée sur des recherches menées de 1972 à 1974. La copie numérisée du LLACAN ne porte pas de date ; la linguiste Tatiana Nikitina la cite comme parue dans la revue Mandenkan, n° 4, en 1982. Ravenhill écrit que les Wan ont pour voisins, à l'ouest, les Mwa, « Mouan, or Mona ». Lu le 3 novembre 2026."
               }
             ]
           },
@@ -217,20 +175,20 @@
             "period": {
               "from": null,
               "to": null,
-              "label": "Orthographe administrative qui a remplacé Noua"
+              "label": "Écriture administrative qui a remplacé Noua"
             },
-            "statement": "Le nom Ouan est l'écriture administrative qui a remplacé Noua, selon Philip Ravenhill. La source ne dit pas à quelle date.",
+            "statement": "Le nom Ouan est l'écriture administrative qui a remplacé Noua, selon Philip Ravenhill. Il ne dit pas à quelle date.",
             "aspect": "usage",
             "sources": [
               {
                 "title": "The Wan Language",
                 "author": "Philip L. Ravenhill",
-                "year": null,
+                "year": 1982,
                 "url": "https://llacan.cnrs.fr/PDF/AutresMandenkan/ravenhil1.PDF",
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 57",
-                "notes": "Fiche de données de deux pages (p. 57-58) fondée sur des recherches menées de 1972 à 1974 ; la copie numérisée du LLACAN ne porte pas de date de publication. Ravenhill écrit : « The original administrative orthography was Noua, but this has since been replaced by Ouan ». Lu le 13 octobre 2026."
+                "notes": "Fiche de données sur la langue wan (p. 57-69), fondée sur des recherches menées de 1972 à 1974. La copie numérisée du LLACAN ne porte pas de date ; la linguiste Tatiana Nikitina la cite comme parue dans la revue Mandenkan, n° 4, en 1982. Ravenhill écrit : « The original administrative orthography was Noua, but this has since been replaced by Ouan ». Lu le 3 novembre 2026."
               }
             ]
           }
@@ -253,9 +211,15 @@
               "label": "1910"
             },
             "era": "colonial",
-            "statement": "Le nom Noua figure en 1910 dans le titre d'un rapport du cercle de Mankono, « Rapport de tournée dans le pays Noua, voyage à Zuénoula », que cite l'archéologue Kouakou Sylvain Koffi. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "statement": "Le nom Noua figure en 1910 dans le titre d'un rapport du cercle de Mankono, « Rapport de tournée dans le pays Noua, voyage à Zuénoula », que cite l'archéologue Kouakou Sylvain Koffi. C'est la plus ancienne trace de cette écriture que nous connaissons. Le peuple existait bien avant elle.",
             "formAsWritten": "Noua",
             "birth": true,
+            "actors": [
+              {
+                "name": "L'administration du cercle de Mankono",
+                "role": "écrit cette forme"
+              }
+            ],
             "sources": [
               {
                 "title": "The Wan and their migrations in Côte d'Ivoire",
@@ -265,7 +229,28 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 169, note 3",
-                "notes": "Revue ASTR-Ghana, éditions e.f.u.a, p. 164-179 (pagination de la copie lue). Le titre est lu dans la note 3 ; il s'agit de la cote 1 EE 86. L'auteur cite les Archives nationales de Côte d'Ivoire, que nous n'avons pas consultées. Lu le 13 octobre 2026."
+                "notes": "Article de l'archéologue Kouakou Sylvain Koffi (université Félix Houphouët-Boigny, Abidjan), paru dans la Revue ASTR-Ghana, éditions e.f.u.a, p. 164-179. Le titre du rapport est cité dans la note 3 ; il porte la cote 1 EE 86. L'auteur cite les Archives nationales de Côte d'Ivoire, que nous n'avons pas consultées. Lu le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Première écriture administrative"
+            },
+            "statement": "Le nom Noua est, selon Philip Ravenhill, la première façon dont l'administration a écrit le nom des Wan, avant Ouan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Wan Language",
+                "author": "Philip L. Ravenhill",
+                "year": 1982,
+                "url": "https://llacan.cnrs.fr/PDF/AutresMandenkan/ravenhil1.PDF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57",
+                "notes": "Fiche de données sur la langue wan (p. 57-69), fondée sur des recherches menées de 1972 à 1974. La copie numérisée du LLACAN ne porte pas de date ; la linguiste Tatiana Nikitina la cite comme parue dans la revue Mandenkan, n° 4, en 1982. Ravenhill écrit : « The original administrative orthography was Noua ». Lu le 3 novembre 2026."
               }
             ]
           }
@@ -277,7 +262,7 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": "Des linguistes",
-        "shortLine": "L'écriture que des linguistes (Prost, Welmers) emploient pour la langue et le peuple.",
+        "shortLine": "L'écriture que des linguistes (Prost, La Saout, Welmers) ont employée pour la langue et le peuple.",
         "periodLabel": "Écrit dès 1953",
         "variantSpelling": true,
         "accounts": [
@@ -288,23 +273,230 @@
               "label": "1953"
             },
             "era": "colonial",
-            "statement": "Le nom Nwã figure dans l'étude du linguiste R. P. A. Prost sur les langues mandé du Sud, publiée à Dakar en 1953, selon Philip Ravenhill. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "statement": "Le nom Nwã figure dans l'étude du linguiste André Prost sur les langues mandé du Sud, publiée à Dakar en 1953, selon Philip Ravenhill. C'est la plus ancienne trace de cette écriture que nous connaissons. Le peuple existait bien avant elle.",
             "formAsWritten": "Nwã",
             "birth": true,
+            "actors": [
+              {
+                "name": "André Prost",
+                "role": "écrit cette forme"
+              }
+            ],
             "sources": [
               {
                 "title": "The Wan Language",
                 "author": "Philip L. Ravenhill",
-                "year": null,
+                "year": 1982,
                 "url": "https://llacan.cnrs.fr/PDF/AutresMandenkan/ravenhil1.PDF",
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 57 et p. 58",
-                "notes": "Fiche de données de deux pages (p. 57-58) fondée sur des recherches menées de 1972 à 1974 ; la copie numérisée du LLACAN ne porte pas de date de publication. Ravenhill écrit que Prost emploie Nwã et que Welmers (1971) emploie Nwa. Il cite Prost, Les langues mandé-sud du groupe Mana-Busa, Dakar, IFAN, mémoire n° 26, 1953, que nous n'avons pas lu. Il ne dit pas pourquoi ces linguistes choisissent cette forme. Lu le 13 octobre 2026."
+                "notes": "Fiche de données sur la langue wan (p. 57-69), fondée sur des recherches menées de 1972 à 1974. La copie numérisée du LLACAN ne porte pas de date ; la linguiste Tatiana Nikitina la cite comme parue dans la revue Mandenkan, n° 4, en 1982. Ravenhill cite Prost, Les langues mandé-sud du groupe Mana-Busa, Dakar, IFAN, mémoire n° 26, 1953, que nous n'avons pas lu. Lu le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1971,
+              "to": 1971,
+              "label": "1971"
+            },
+            "era": "modern",
+            "statement": "Le nom s'écrit Nwa, sans tilde, chez le linguiste William Welmers en 1971, et nwã chez Joseph La Saout la même année, selon Philip Ravenhill. Ravenhill précise que le nwã de La Saout désigne les Wan.",
+            "formAsWritten": "Nwa",
+            "actors": [
+              {
+                "name": "William Welmers",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Wan Language",
+                "author": "Philip L. Ravenhill",
+                "year": 1982,
+                "url": "https://llacan.cnrs.fr/PDF/AutresMandenkan/ravenhil1.PDF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57 et p. 58",
+                "notes": "Fiche de données sur la langue wan (p. 57-69), fondée sur des recherches menées de 1972 à 1974. La copie numérisée du LLACAN ne porte pas de date ; la linguiste Tatiana Nikitina la cite comme parue dans la revue Mandenkan, n° 4, en 1982. Ravenhill écrit que Welmers emploie Nwa et que « his gbã and nwã are more commonly known as Gagou and Wan respectively », à propos de La Saout. Nous n'avons lu ni Welmers ni La Saout. Lu le 3 novembre 2026."
               }
             ]
           }
         ]
+      }
+    ]
+  },
+  "content": {
+    "appellations": {
+      "mainName": "Wan",
+      "selfAppellation": "Wan",
+      "exonyms": [],
+      "spellingAliases": ["Ouan", "Noua", "Nwã", "Nwa"],
+      "originOfExonyms": "Les formes Noua et Ouan sont des écritures du même nom par l'administration française. Philip Ravenhill écrit que Noua a été la première écriture administrative, puis que Ouan l'a remplacée. Les deux formes apparaissent dans des rapports du cercle de Mankono en 1910 et 1911, cités par l'archéologue Kouakou Sylvain Koffi. Les linguistes André Prost, Joseph La Saout et William Welmers ont écrit Nwã ou Nwa. Ravenhill a retenu Wan, qu'il jugeait la forme sans signes particuliers la plus proche de ce que disent les Wan.",
+      "whyProblematic": "Selon la linguiste Tatiana Nikitina, l'administration coloniale n'a pas reconnu les Wan comme un groupe à part entière. Elle les a répartis entre deux circonscriptions : celle de Béoumi, où dominaient les Baoulé, et celle de Mankono, où dominaient les Dioula. Nikitina ajoute que leurs voisins mettent encore en doute leur identité.",
+      "contemporaryUsage": "Le nom Wan est celui qu'emploient aujourd'hui les linguistes, comme le catalogue Glottolog et Tatiana Nikitina. Glottolog cite aussi le nom Nwa.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
+    },
+    "ethnicities": ["Wan"],
+    "origins": {
+      "ancientOrigins": "Plusieurs explications de l'origine des Wan existent côte à côte. Selon des traditions orales recueillies par Georges Niangoran-Bouah, ils auraient appartenu à un ancien groupe nommé Kwanin, établi entre le Sassandra et la rive est de la Comoé. D'autres récits les font venir de l'ouest, entre Guiglo et Duékoué, où ils auraient vécu longtemps avec les Dan. Un rapport du lieutenant Schiffer, officier de l'administration coloniale, dit en 1901 qu'ils seraient d'origine mandé et arrivés trois ou quatre siècles plus tôt, poussés vers le sud depuis le nord. Une monographie de 1962-1963 en fait le fruit d'un mélange entre Malinké et Gouro dans l'ancien village de Boron, aujourd'hui Kounahiri. L'historien Kouadio Alexandre Djamala pense au contraire qu'ils sont originaires de la région entre le Bandama blanc et le Bandama rouge. Kouakou Sylvain Koffi rapporte toutes ces explications.",
+      "formationPeriod": "Selon la monographie de 1962-1963 que cite Kouakou Sylvain Koffi, le groupe se serait formé à Boron après le XVe siècle, et une partie des Wan se serait installée dans la région de Béoumi après le XVIe siècle. Le rapport Schiffer de 1901 place leur arrivée trois ou quatre siècles plus tôt. Tatiana Nikitina écrit, d'après Philip Ravenhill, que les Wan semblent arrivés dans leur région actuelle à une date assez récente.",
+      "migrationRoutes": [
+        "Du nord-ouest, vers Mankono et Séguéla, vers le sud, sous la poussée des Dosso de Mankono puis des Gouro, selon le rapport du lieutenant Schiffer (1901)",
+        "De l'ouest du pays, où ils auraient vécu avec les Dan, vers le centre, selon des chefs de village interrogés en 2009",
+        "De Boron, aujourd'hui Kounahiri, vers la région de Béoumi et les cantons Kodè, Goli, Satikran, Bro et Ouarebo, à l'ouest de Bouaké, après le XVIe siècle, selon une monographie de 1962-1963",
+        "Du sud, près de l'actuel Abidjan, vers le nord par Vavoua et Sinfra, selon la tradition du clan Gbêgbê",
+        "De la région de Gohitafla, leur ancien territoire, un peu plus au nord vers le département de Kounahiri"
+      ],
+      "historicalSettlementZones": [
+        "Sous-préfectures de Béoumi et de Mankono",
+        "Département de Kounahiri, région du Béré",
+        "Département de Gohitafla, région de la Marahoué",
+        "Région entre Bouaflé, Kounahiri et Béoumi"
+      ],
+      "unificationsOrDivisions": "Les Wan parlent deux dialectes, le kemu et le miamu, que Philip Ravenhill dit tout à fait compréhensibles l'un par l'autre. Au début des années 1970, il comptait environ 3 750 locuteurs du kemu dans la sous-préfecture de Béoumi et 12 750 du miamu dans celle de Mankono. Selon Tatiana Nikitina, la frontière coloniale entre ces deux circonscriptions a suivi à peu près cette division. Les Wan s'en moquent entre eux : ceux de Béoumi traitent ceux de Mankono de « Dioula », qui les traitent en retour de « Baoulé ».",
+      "externalInfluences": "Les Wan ont été en contact avec les Dan, les Gouro, les Sénoufo, les Malinké et les Baoulé, selon Kouakou Sylvain Koffi. Tatiana Nikitina note qu'ils ont beaucoup emprunté à leurs voisins et que leurs voisins leur ont aussi emprunté, par exemple le culte du masque Goli.",
+      "majorHistoricalEvents": "Selon une tradition orale rapportée par Kouakou Sylvain Koffi, les habitants de l'ancien village de Siapla l'ont quitté pour Asseyaokro en fuyant les troupes de Samory Touré, à la fin du XIXe siècle ; Koffi précise qu'il n'est pas démontré que Samory soit venu jusque-là. En 1910 et 1911, l'administration française mène des tournées dans le « pays Noua », puis des opérations de désarmement des « pays Ouan ». En février et mars 2023, des fouilles à Maminigui, dans le département de Gohitafla, ont livré des pointes de flèche et des tessons de poterie que Koffi rapproche de la poterie wan."
+    },
+    "organization": {
+      "traditionalPoliticalSystem": null,
+      "clanOrganization": "Kouakou Sylvain Koffi cite le clan Gbêgbê, établi dans les villages de Gbêwa et de Gbétépla. Selon la tradition de ce clan, rapportée par l'historien Kouadio Alexandre Djamala, son ancêtre Nohnin serait venu du sud, de la région de l'actuel Abidjan.",
+      "ageClassSystems": null,
+      "roleOfLineages": "Philip Ravenhill a consacré sa thèse de 1976 à l'organisation sociale des Wan, qu'il présente dans son titre comme un peuple patrilinéaire, où l'appartenance au lignage passe par le père.",
+      "religiousAuthority": null
+    },
+    "languages": {
+      "mainLanguage": "Wan (wan)",
+      "isoCodes": ["wan"],
+      "dialects": ["Kemu (Ken)", "Miamu (Mia, Myamu)"],
+      "vehicularRole": "Le wan est une langue mandé du Sud-Est. Selon Tatiana Nikitina, ses locuteurs parlent souvent aussi le dioula, le gouro, le baoulé ou le mwan, et les jeunes de plus en plus le français. Dans beaucoup de villages, le wan reste la langue la plus parlée. Il sert aussi de langue rituelle au culte du masque Goli, au point que des Baoulé l'emploient pour ce culte. Une écriture du wan a été mise au point par la branche locale de la SIL, qui a publié un abécédaire et un livre pour apprendre à le lire."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q3565989",
+      "glottocode": "wann1242",
+      "iso639_3": "wan"
+    },
+    "culture": {
+      "majorRites": "Philip Ravenhill a étudié l'initiation des filles chez les Wan. Dans un article de 1978, il en dégage une opposition entre la femme, liée à la naissance et à la nature, et l'homme, lié à la mort et à la culture.",
+      "symbols": "Le masque Goli vient des Wan. Selon Tatiana Nikitina, les Baoulé et les Gouro l'ont emprunté aux Wan, et il est ensuite devenu surtout associé aux Baoulé. Dans la région de la Marahoué, des traditions orales attribuent aussi aux ancêtres des Wan les têtes et les mortiers sculptés dans la pierre trouvés à Gohitafla dans les années 1980, selon Kouakou Sylvain Koffi.",
+      "artsAndMusic": "Les récits occupent une grande place chez les Wan. Selon Tatiana Nikitina, une séance commence par des contes amusants qui finissent par une leçon, puis passe à des récits plus sérieux, et peut se terminer par des récits historiques. Seul un ancien qui a assez d'autorité peut raconter ces derniers. Pour les Wan, bien parler leur langue, c'est savoir raconter ces récits.",
+      "spiritualities": null
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": null,
+      "relationsWithNeighbors": "Philip Ravenhill situe les Wan entre les Baoulé à l'est, les Gouro au sud, les Mwa, aussi appelés Mona, à l'ouest, et les Malinké au nord. Les Wan entretiennent une parenté à plaisanterie avec les Dan de l'ouest, une relation où l'on peut se moquer l'un de l'autre sans offense, selon Ravenhill cité par Kouakou Sylvain Koffi. Un récit rapporté par Koffi explique la séparation des Wan et des Dan par une querelle d'adultère. Selon Tatiana Nikitina, des Baoulé envoyaient leurs enfants travailler dans des familles wan pour apprendre le wan.",
+      "conflictsOrAlliances": "Le rapport du lieutenant Schiffer (1901) dit que les Dosso de Mankono ont repoussé les Wan vers le sud du Worodougou, d'où les Gouro les ont ensuite écartés. Selon Tatiana Nikitina, la tradition orale wan raconte les actes d'un héros ancêtre pendant la guerre entre les troupes coloniales et Samory Touré. En 1911, l'administration française mène des opérations de désarmement dans les « pays Ouan ».",
+      "diaspora": null
+    },
+    "demography": {
+      "totalPopulation": 30000,
+      "referenceYear": 2018,
+      "source": "Tatiana Nikitina, 2018 : environ 30 000 locuteurs, contre 22 000 signalés en 1993, une hausse due surtout à la croissance de la population. Philip Ravenhill comptait environ 16 500 Wan au début des années 1970, d'après un recensement foncier de 1971 et les listes de la sous-préfecture de Mankono. Il s'agit de locuteurs du wan, pas d'un recensement des personnes qui se disent wan.",
+      "distributionByCountry": [
+        {
+          "country": "CIV",
+          "population": 30000,
+          "percentage": 100,
+          "note": "Centre-ouest de la Côte d'Ivoire : sous-préfectures de Béoumi et de Mankono, département de Kounahiri (région du Béré)."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "KOFFI Kouakou Sylvain - The Wan and their migrations in Cote d'Ivoire, Revue ASTR-Ghana / e.f.u.a editions, 2024",
+        "url": "https://edition-efua.acaref.net/wp-content/uploads/sites/6/2024/11/7-KOFFI-Kouakou-Sylvain.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de l'archéologue Kouakou Sylvain Koffi (université Félix Houphouët-Boigny, Abidjan), Revue ASTR-Ghana, p. 164-179. Il rassemble les explications de l'origine des Wan (p. 170-171 et 174), leurs migrations et le clan Gbêgbê (p. 173), l'abandon de Siapla (p. 173), les fouilles de Maminigui en 2023 (p. 175) et les titres des rapports coloniaux de 1910 et 1911 (p. 169 et 177). Il cite les Archives nationales de Côte d'Ivoire et des entretiens menés à Maminigui en 2022. Lu le 3 novembre 2026."
+      },
+      {
+        "title": "Ravenhill P. L. - The Wan Language, LLACAN-CNRS",
+        "url": "https://llacan.cnrs.fr/PDF/AutresMandenkan/ravenhil1.PDF",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Fiche de données de l'anthropologue Philip Ravenhill, mise en ligne par le laboratoire LLACAN du CNRS, parue dans la revue Mandenkan, n° 4, 1982, selon Tatiana Nikitina. La p. 57 donne les écritures du nom, les voisins des Wan, les deux dialectes et leur nombre de locuteurs au début des années 1970 ; la p. 58 donne le classement de la langue ; la p. 69 liste ses travaux sur les Wan. Lu le 3 novembre 2026."
+      },
+      {
+        "title": "Joshua Project - Wan, Nwa in Cote d'Ivoire",
+        "url": "https://joshuaproject.net/people_groups/15848",
+        "tier": "unverified",
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire américaine."
+      },
+      {
+        "title": "Ethnologue - Wan Language (WAN)",
+        "url": "https://www.ethnologue.com/language/wan/",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par SIL International."
+      },
+      {
+        "title": "Nikitina, Tatiana — When linguists and speakers do not agree: The endangered grammar of verbal art in West Africa (Journal of Linguistic Anthropology, 2018)",
+        "url": "https://hal.science/hal-02932416",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de la linguiste Tatiana Nikitina (CNRS), paru dans le Journal of Linguistic Anthropology, vol. 28, n° 2, et lu dans la version déposée sur l'archive ouverte HAL. Les p. 5 à 9 de cette version décrivent les langues que parlent les Wan, le nombre de locuteurs, la place des récits, le partage colonial entre Béoumi et Mankono et l'emprunt du masque Goli. L'autrice a enregistré des récits à Kounahiri en 2001. Lu le 3 novembre 2026."
+      },
+      {
+        "title": "Glottolog 5.3 — Wan (wann1242)",
+        "url": "https://glottolog.org/resource/languoid/id/wann1242",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice de la langue wan dans le catalogue Glottolog. Elle la classe ainsi, du plus large au plus étroit : mandé, mandé oriental, mandé du Sud-Est, nwa-ben, wan-mwan. Elle cite deux dialectes, kemu et miamu, et le nom Nwa. Consultée le 3 novembre 2026."
+      },
+      {
+        "title": "Ravenhill, Philip L. — The Interpretation of Symbolism in Wan Female Initiation (Africa, 1978)",
+        "url": "https://www.cambridge.org/core/journals/africa/article/abs/interpretation-of-symbolism-in-wan-female-initiation/AC216FC23164808C76667B380251D3C6",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article paru dans la revue Africa de l'International African Institute, vol. 48, n° 1, p. 66-79. Nous avons lu le résumé publié par Cambridge University Press, pas l'article entier. Lu le 3 novembre 2026."
+      },
+      {
+        "title": "Koffi, Kouakou Sylvain — Caractérisation de la céramique de Blipla (région du Béré, centre-ouest de la Côte d'Ivoire)",
+        "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2024/01/11-Kouakou-Sylvain-KOFFI.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de l'archéologue Kouakou Sylvain Koffi, mis en ligne en janvier 2024 sur la plateforme de revues ACAREF. Il décrit les fouilles de 2016 à Blipla, dans le département de Kounahiri, et indique (p. 161) que le département de Gohitafla était un ancien territoire wan, avant que les Wan ne s'installent plus au nord, dans le département de Kounahiri. Lu le 3 novembre 2026."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Wan sont un peuple du centre-ouest de la Côte d'Ivoire, autour de Kounahiri, Béoumi et Mankono. L'administration coloniale a écrit leur nom Noua, puis Ouan.",
+      "followUp": "Qui a choisi d'écrire Wan, et pourquoi ?"
+    },
+    "gaps": [
+      {
+        "field": "nameHistory.names[0]",
+        "reason": "Nous n'avons pas trouvé de source qui explique le sens du nom Wan."
+      },
+      {
+        "field": "organization.traditionalPoliticalSystem",
+        "reason": "Nous n'avons pas encore trouvé de source lisible qui décrit comment les villages wan étaient gouvernés."
+      },
+      {
+        "field": "organization.ageClassSystems",
+        "reason": "Nous n'avons pas trouvé de source qui parle de classes d'âge chez les Wan."
+      },
+      {
+        "field": "organization.religiousAuthority",
+        "reason": "Nous n'avons pas encore trouvé de source lisible qui décrit les responsables religieux chez les Wan."
+      },
+      {
+        "field": "culture.spiritualities",
+        "reason": "Nous n'avons pas encore trouvé de source lisible qui décrit les croyances des Wan."
+      },
+      {
+        "field": "historicalRole.kingdomsOrChiefdoms",
+        "reason": "Nous n'avons pas trouvé de source qui décrit une chefferie ou un royaume wan."
+      },
+      {
+        "field": "historicalRole.diaspora",
+        "reason": "Nous n'avons pas trouvé de source sur des Wan installés hors de leur région."
+      },
+      {
+        "field": "demography.totalPopulation",
+        "reason": "Nous n'avons pas trouvé de recensement récent qui compte les Wan à part ; le chiffre donné est une estimation du nombre de locuteurs publiée en 2018."
       }
     ]
   }

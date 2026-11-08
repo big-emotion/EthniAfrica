@@ -3,9 +3,9 @@
   "nameFr": "Maroc",
   "nameEn": "Morocco",
   "nameOfficial": "Royaume du Maroc (Al-Mamlaka al-Maġribiyya)",
-  "summary": "Le Maroc s'appelle « Al-Maġrib » en arabe, « le couchant » ; « Maroc » vient de Marrakech, son ancienne capitale. Royaumes berbères antiques, dynasties idrisside, almoravide et almohade, puis alaouite depuis 1666 : son histoire est celle d'une longue continuité dynastique. Chleuhs, Rifains, Aït Atta et Ghomara y maintiennent le tamazight, langue officielle aux côtés de l'arabe.",
-  "etymology": "Le nom \"Maroc\" viendrait de \"Marrakech\", ancienne capitale du pays, selon le site d'information marocain Yabiladi. Le nom arabe \"Al-Maġrib\" (المغرب) voudrait dire \"l'Occident\" ou \"le couchant\". Les formes européennes du nom du pays (Maroc, Morocco) remontent au latin médiéval \"Moroch\", nom de Marrakech quand la ville était capitale almoravide puis almohade. Le sens du nom de Marrakech se lit de deux façons : \"terre de Dieu\", à partir de mots berbères, ou \"ville fortifiée\" ; il n'est pas tranché. Le nom officiel est \"Al-Mamlaka al-Maġribiyya\" (Royaume du Maroc).",
-  "nameOriginActor": "Le nom \"Maroc\" vient de \"Marrakech\", fondée par les Almoravides au XIe siècle. Le nom arabe \"Al-Maġrib\" est utilisé depuis le Moyen Âge.",
+  "summary": "Le nom Maroc viendrait de celui de la ville de Marrakech, qui désigne chez un chroniqueur portugais, dès 1453, un royaume « de Marrocos » ; en arabe, le pays se nomme al-Maghrib, « l'Occident ». Après les royaumes maures de l'Antiquité, des dynasties idrisside, almoravide, almohade, mérinide, saadienne puis alaouite y règnent, avant le protectorat français et espagnol de 1912 à 1956. L'arabe et l'amazighe sont les deux langues officielles depuis la Constitution de 2011.",
+  "etymology": "Le nom Maroc viendrait de celui de la ville de Marrakech. À la fin du XIe siècle, les mémoires de l'émir Abdallah de Grenade écrivent ce nom Mrwkš ; l'ancien nom espagnol Marruecos viendrait de cette forme, selon Lévi-Provençal, cité par l'historien marocain Ahmed Toufik. En 1453, le chroniqueur portugais Zurara parle du royaume « de Marrocos ». Le sens du nom de Marrakech est discuté. Ahmed Toufik y voit deux mots berbères, amur, « la protection », et akuš, un ancien nom de Dieu : Marrakech voudrait dire « la protection de Dieu ». D'autres auteurs, cités par le journal marocain Yabiladi, y voient « terre de Dieu », « ville fortifiée » ou « va vite ». Le nom arabe du pays, al-Maghrib, vient du mot gharb, « l'ouest », selon le comité britannique des noms géographiques. Le nom officiel est al-Mamlaka al-Maghribiyya, le Royaume du Maroc.",
+  "nameOriginActor": "Le nom Maroc vient du nom de Marrakech, la capitale fondée par les Almoravides au XIe siècle ; des chroniqueurs portugais l'emploient au XVe siècle pour nommer un royaume. Le nom arabe al-Maghrib vient de la langue arabe : une forme proche, al-Maghrib al-Aqsā, nomme au début du VIIIe siècle une province créée par le gouverneur arabe Mūsā.",
   "nameHistory": {
     "summary": "Le nom Maroc désigne un pays d'Afrique du Nord, le Royaume du Maroc, qui se nomme lui-même al-Maghrib en arabe, « l'Occident ». Le nom Maroc a d'abord été celui de la ville de Marrakech et du royaume dont elle était la capitale ; sous le protectorat, les textes parlent aussi d'empire chérifien. Les sources ne s'accordent pas sur le sens du nom de Marrakech ; nous les présentons plus bas.",
     "names": [
@@ -176,6 +176,29 @@
           },
           {
             "period": {
+              "from": 1090,
+              "to": null,
+              "label": "Après 1090"
+            },
+            "era": "polity",
+            "statement": "On écrit alors Mrwkš pour désigner la ville de Marrakech, dans les mémoires de l'émir Abdallah, roi de Grenade détrôné par les Almoravides en 1090. L'ancien nom espagnol Marruecos viendrait de cette forme, selon Lévi-Provençal, cité par Ahmed Toufik.",
+            "formAsWritten": "Mrwkš",
+            "before": true,
+            "sources": [
+              {
+                "title": "Marrakech : sur la signification du nom",
+                "author": "Ahmed Toufik, traduction d'Abdellah Bounfour",
+                "year": 2010,
+                "url": "https://journals.openedition.org/encyclopedieberbere/476",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère (fascicule 30, éditions Peeters, 2010, p. 4627-4630), tirée du livre d'Ahmed Toufik sur Marrakech de sa fondation à l'époque almohade (Marrakech, 1989, p. 15-19) et traduite de l'arabe par Abdellah Bounfour, lue sur OpenEdition le 3 novembre 2026. L'auteur rapporte d'autres explications du nom, « passe rapidement » ou « cachette », et les rejette. Il relève que les mémoires de l'émir Abdallah de Grenade, détrôné par les Almoravides en 1090, écrivent le nom Mrwkš, forme d'où vient l'ancien nom espagnol Marruecos, selon Lévi-Provençal. Son hypothèse : le nom réunirait deux mots berbères, amur, « la protection », et akuš, nom de Dieu chez les anciens Berbères, et voudrait dire « la protection de Dieu ».",
+                "page": "fascicule 30, p. 4627-4630"
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1070,
               "to": 1070,
               "label": "1070"
@@ -262,7 +285,7 @@
               "to": null,
               "label": "Origine non datée"
             },
-            "statement": "Le nom de Marrakech, d'où viendrait celui du Maroc, voudrait dire « va vite », un avertissement des tribus Masmouda sur un lieu peu sûr, selon Gaston Deverdun et l'historien marocain Ahmad ibn Khalid an-Nasiri, cités par Yabiladi.",
+            "statement": "Le nom de Marrakech, d'où viendrait celui du Maroc, voudrait dire « va vite », un avertissement des tribus Masmouda sur un lieu peu sûr, selon Gaston Deverdun et l'historien marocain Ahmad ibn Khalid an-Nasiri, cités par Yabiladi. Ahmed Toufik rapporte une explication proche, « passe rapidement », parce que l'endroit aurait été un marais dangereux, et il la rejette.",
             "hypothesisGroup": "sens du nom de Marrakech",
             "sources": [
               {
@@ -273,6 +296,69 @@
                 "tier": "referenced",
                 "source_kind": "press",
                 "notes": "Article de presse marocaine du 29 août 2019, lu le 10 octobre 2026. Il conclut que le sens du nom reste discuté. Il rapporte que, selon Frederick William Dame et Daniel Don Nanjira, Morocco vient du latin médiéval Moroch, nom de Marrakech quand la ville était la capitale des Almoravides puis des Almohades, et que Marrakech viendrait de mots berbères signifiant « terre de Dieu » ; selon Ahmed Khalidi, il désignerait une ville fortifiée ; selon Gaston Deverdun (1959) et Ahmad ibn Khalid an-Nasiri, il voudrait dire « va vite ». Nous n'avons lu aucun de ces livres."
+              },
+              {
+                "title": "Marrakech : sur la signification du nom",
+                "author": "Ahmed Toufik, traduction d'Abdellah Bounfour",
+                "year": 2010,
+                "url": "https://journals.openedition.org/encyclopedieberbere/476",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère (fascicule 30, éditions Peeters, 2010, p. 4627-4630), tirée du livre d'Ahmed Toufik sur Marrakech de sa fondation à l'époque almohade (Marrakech, 1989, p. 15-19) et traduite de l'arabe par Abdellah Bounfour, lue sur OpenEdition le 3 novembre 2026. L'auteur rapporte d'autres explications du nom, « passe rapidement » ou « cachette », et les rejette. Il relève que les mémoires de l'émir Abdallah de Grenade, détrôné par les Almoravides en 1090, écrivent le nom Mrwkš, forme d'où vient l'ancien nom espagnol Marruecos, selon Lévi-Provençal. Son hypothèse : le nom réunirait deux mots berbères, amur, « la protection », et akuš, nom de Dieu chez les anciens Berbères, et voudrait dire « la protection de Dieu ».",
+                "page": "fascicule 30, p. 4627-4630"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1989,
+              "to": 1989,
+              "label": "Proposée en 1989"
+            },
+            "era": "modern",
+            "statement": "Le nom de Marrakech, d'où viendrait celui du Maroc, voudrait dire « la protection de Dieu », de deux mots berbères : amur, la protection, et akuš, un ancien nom de Dieu, selon l'historien marocain Ahmed Toufik. Gabriel Camps relève aussi akuš, ou yakūš, comme nom de Dieu chez les anciens Berbères.",
+            "hypothesisGroup": "sens du nom de Marrakech",
+            "sources": [
+              {
+                "title": "Marrakech : sur la signification du nom",
+                "author": "Ahmed Toufik, traduction d'Abdellah Bounfour",
+                "year": 2010,
+                "url": "https://journals.openedition.org/encyclopedieberbere/476",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère (fascicule 30, éditions Peeters, 2010, p. 4627-4630), tirée du livre d'Ahmed Toufik sur Marrakech de sa fondation à l'époque almohade (Marrakech, 1989, p. 15-19) et traduite de l'arabe par Abdellah Bounfour, lue sur OpenEdition le 3 novembre 2026. L'auteur rapporte d'autres explications du nom, « passe rapidement » ou « cachette », et les rejette. Il relève que les mémoires de l'émir Abdallah de Grenade, détrôné par les Almoravides en 1090, écrivent le nom Mrwkš, forme d'où vient l'ancien nom espagnol Marruecos, selon Lévi-Provençal. Son hypothèse : le nom réunirait deux mots berbères, amur, « la protection », et akuš, nom de Dieu chez les anciens Berbères, et voudrait dire « la protection de Dieu ».",
+                "page": "fascicule 30, p. 4627-4630"
+              },
+              {
+                "title": "Akuš (Yakūš/Yuš)",
+                "author": "Gabriel Camps",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2406",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère (fascicule 3, 1986, p. 431-432), lue sur OpenEdition le 3 novembre 2026. Akuš, ou Yakūš, est donné comme nom de Dieu chez les Berbères par une chronique ibadite et par le géographe al-Bakrī ; l'auteur propose que ce nom signifie « il a donné ».",
+                "page": "fascicule 3, p. 431-432"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom de Marrakech voudrait dire « cachette », du verbe rks, « se cacher », selon une explication que rapporte Ahmed Toufik, qui la rejette.",
+            "hypothesisGroup": "sens du nom de Marrakech",
+            "sources": [
+              {
+                "title": "Marrakech : sur la signification du nom",
+                "author": "Ahmed Toufik, traduction d'Abdellah Bounfour",
+                "year": 2010,
+                "url": "https://journals.openedition.org/encyclopedieberbere/476",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère (fascicule 30, éditions Peeters, 2010, p. 4627-4630), tirée du livre d'Ahmed Toufik sur Marrakech de sa fondation à l'époque almohade (Marrakech, 1989, p. 15-19) et traduite de l'arabe par Abdellah Bounfour, lue sur OpenEdition le 3 novembre 2026. L'auteur rapporte d'autres explications du nom, « passe rapidement » ou « cachette », et les rejette. Il relève que les mémoires de l'émir Abdallah de Grenade, détrôné par les Almoravides en 1090, écrivent le nom Mrwkš, forme d'où vient l'ancien nom espagnol Marruecos, selon Lévi-Provençal. Son hypothèse : le nom réunirait deux mots berbères, amur, « la protection », et akuš, nom de Dieu chez les anciens Berbères, et voudrait dire « la protection de Dieu ».",
+                "page": "fascicule 30, p. 4627-4630"
               }
             ]
           }
@@ -393,62 +479,80 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Maurétanie (province romaine)",
-        "Al-Maġrib (arabe, « le couchant »)"
+        "Maurétanie (royaume des Maures, puis province romaine de Maurétanie Tingitane)",
+        "al-Maghrib al-Aqsā (« le Maghreb extrême-occidental », province arabe du début du VIIIe siècle)",
+        "Marrocos, Marruecos (noms portugais et espagnol de Marrakech et de son royaume)",
+        "Empire chérifien (nom employé dans les textes du protectorat)"
       ],
-      "antiquity": "Maurétanie (province romaine), royaumes berbères (Maures). Le territoire était peuplé de Berbères (Amazighs).",
-      "middleAges": "Al-Maġrib (nom arabe), Marrakech (capitale, origine du nom \"Maroc\"). Dynasties berbères (Idrissides, Almoravides, Almohades, Mérinides).",
-      "precolonial": "Royaume du Maroc (dynasties alaouites depuis 1666), État chérifien. Le nom \"Maroc\" est utilisé en Europe depuis le Moyen Âge.",
-      "colonization": "1912-1956 : Protectorat français et espagnol. Le Maroc est divisé en zones française et espagnole, avec Tanger comme zone internationale.",
-      "contemporary": "1956 : Indépendance, royaume du Maroc. Le nom officiel en arabe est \"Al-Mamlaka al-Maġribiyya\"."
+      "antiquity": "Dans l'Antiquité, les auteurs grecs parlent des Maurousii, un peuple installé près de l'océan Atlantique, puis les Latins des Mauri, les Maures. Selon le géographe Strabon, Mauri était le nom employé par les habitants eux-mêmes, rapporte Jehan Desanges. Leur pays devient le royaume de Maurétanie. Quand Rome le divise en deux provinces, en 42, la partie marocaine de l'ancien royaume prend le nom de Maurétanie Tingitane, d'après sa capitale, Tingi, aujourd'hui Tanger, selon Yves Modéran.",
+      "middleAges": "Au début du VIIIe siècle, le gouverneur arabe Mūsā crée une province appelée al-Maghrib al-Aqsā, « le Maghreb extrême-occidental », avec Tanger pour capitale, selon Hussain Monès. Ce nom arabe, al-Maghrib, est celui que le pays porte encore. Au XIe siècle, les Almoravides fondent Marrakech, dont le nom passera plus tard au pays tout entier. À la fin de ce siècle, les mémoires de l'émir Abdallah de Grenade écrivent ce nom Mrwkš, selon Ahmed Toufik.",
+      "precolonial": "En 1453, le chroniqueur portugais Gomes Eanes de Zurara écrit que le royaume de Fès comprend celui « de Marrocos », c'est-à-dire de Marrakech. Vers 1505-1508, Duarte Pacheco Pereira décrit encore la « grande cidade de Marrocos ». Le nom de la ville devient ainsi, chez les Européens, celui du royaume. Les sultans saadiens puis alaouites sont des chérifs, des descendants du Prophète, et les textes du protectorat parleront d'empire chérifien.",
+      "colonization": "Le traité de Fès du 30 mars 1912 organise le protectorat français « dans l'empire chérifien » et institue « au Maroc un nouveau régime », selon le texte publié par la Digithèque MJP. Un accord du 27 novembre 1912 crée aussi des zones d'influence espagnole. Les textes officiels de cette époque emploient à la fois les noms Maroc et empire chérifien.",
+      "contemporary": "Le Maroc devient indépendant le 2 mars 1956. Son nom officiel en arabe est al-Mamlaka al-Maghribiyya, le Royaume du Maroc, et son nom court al-Maghrib, selon la liste des noms de pays du Groupe d'experts des Nations unies pour les noms géographiques. La Constitution de 2011 commence par ces mots : « Le Maroc est une monarchie constitutionnelle »."
     },
     "kingdoms": [
       {
-        "name": "Royaumes berbères antiques",
-        "period": "Antiquité",
+        "name": "Royaumes maures de Maurétanie",
+        "period": "IIIe siècle av. J.-C. - 40 apr. J.-C.",
         "entryType": "polity",
-        "dominantPeoples": ["Berbères (Amazighs)"],
-        "politicalCenters": ["Volubilis", "Lixus"],
-        "historicalRole": "Royaumes berbères indépendants, résistance à Rome, développement du commerce transsaharien."
+        "dominantPeoples": ["Maures (Mauri)"],
+        "politicalCenters": [
+          "Tingi (Tanger)",
+          "Volubilis",
+          "Iol-Caesarea (Cherchell, dans l'Algérie actuelle), capitale de Juba II"
+        ],
+        "historicalRole": "Les rois maures sont connus à partir de Baga, au IIIe siècle avant notre ère, puis de Bocchus et de Bogud. L'empereur Auguste confie ensuite le royaume à Juba II, qui règne depuis Iol, en Algérie actuelle. Après l'exécution de son fils Ptolémée sur ordre de Caligula, Rome annexe le royaume et le divise en deux provinces en 42, selon M. Coltelloni-Trannoy et Yves Modéran.",
+        "timeRange": {
+          "startYear": -300,
+          "endYear": 40,
+          "precision": "approximate",
+          "datingNote": "Le premier roi connu, Baga, est daté du IIIe siècle avant notre ère, sans année précise. L'année 40 est le premier jour de l'ère provinciale après l'annexion par Rome, selon Yves Modéran ; M. Coltelloni-Trannoy date l'annexion de 41."
+        }
       },
       {
         "name": "Dynastie idrisside",
-        "period": "789-974",
+        "period": "789-985",
         "entryType": "polity",
         "timeRange": {
           "startYear": 789,
-          "endYear": 974,
+          "endYear": 985,
           "precision": "year"
         },
-        "dominantPeoples": ["Berbères", "Arabes"],
+        "dominantPeoples": ["Awraba et autres Berbères", "Arabes"],
         "politicalCenters": ["Fès"],
-        "historicalRole": "Premier État musulman au Maroc, fondation de Fès, islamisation."
+        "historicalRole": "Idris Ier, un descendant d'Ali et de Fatima, s'appuie sur la tribu berbère des Awraba. Fès aurait été fondée par lui en 789, ou par son fils Idris II en 808 selon la tradition la plus répandue, rapportent C. Agabi et J.-C. Santucci. Le royaume couvre surtout les plaines du Nord, de Tanger à Salé, et ne correspond pas au Maroc d'aujourd'hui ; treize souverains règnent à Fès entre 789 et 985, selon C. El Briga."
       },
       {
         "name": "Dynastie almoravide",
-        "period": "1040-1147",
+        "period": "1039-1147",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1040,
+          "startYear": 1039,
           "endYear": 1147,
-          "precision": "year"
+          "precision": "approximate",
+          "datingNote": "1039 est l'arrivée de ʿAbd Allāh b. Yāsīn au Sahara, et 1147 (an 541 de l'hégire, 1146-1147) la prise de Marrakech par les Almohades, selon Lucien Golvin. Ahmed Khaneboubi date la dynastie de 1061 à 1145."
         },
         "dominantPeoples": ["Berbères sanhadja"],
         "politicalCenters": ["Marrakech"],
-        "historicalRole": "Empire berbère puissant, unification du Maghreb et de l'Andalousie, fondation de Marrakech."
+        "historicalRole": "Le nom almoravide vient de al-Murābiṭūn, « les gens du ribāṭ ». Ces Berbères ṣanhāǧa venus du Sahara soumettent le Maroc, puis passent en Espagne, où ils gagnent la bataille de Zallaqa en 1086. Marrakech est fondée en 1062-1063 selon Lucien Golvin, en 1070 selon Ivan Hrbek et Jean Devisse. La prise de la ville par les Almohades, en 1147, met fin à la dynastie."
       },
       {
         "name": "Dynastie almohade",
-        "period": "1121-1269",
+        "period": "Vers 1120-1269",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1121,
+          "startYear": 1120,
           "endYear": 1269,
-          "precision": "year"
+          "precision": "approximate",
+          "datingNote": "Le mouvement « semble être né vers 514/1120 », selon Jean-Claude Garcin ; 1269 est la prise de Marrakech par les Mérinides."
         },
         "dominantPeoples": ["Berbères masmouda"],
-        "politicalCenters": ["Marrakech", "Rabat"],
-        "historicalRole": "Empire berbère le plus puissant, unification du Maghreb et de l'Andalousie, développement culturel."
+        "politicalCenters": [
+          "Tīnmallal (Tinmel)",
+          "Marrakech",
+          "Rabat (Ribāṭ al-Fatḥ)"
+        ],
+        "historicalRole": "Le nom almohade vient de l'arabe al-muwaḥḥidūn, « les confesseurs de l'Un ». Le mouvement naît vers 1120 autour d'Ibn Tūmart, un Maṣmūda de l'Anti-Atlas. Son successeur ʿAbd al-Muʾmin prend Marrakech en 1147, puis l'empire s'étend à al-Andalus et à tout le Maghreb. Il prend fin quand les Mérinides entrent à Marrakech, en 1269, selon Jean-Claude Garcin."
       },
       {
         "name": "Dynastie mérinide",
@@ -461,7 +565,7 @@
         },
         "dominantPeoples": ["Berbères zénètes"],
         "politicalCenters": ["Fès"],
-        "historicalRole": "Dynastie berbère, développement de Fès, architecture mérinide."
+        "historicalRole": "Les Banū Marīn, Ayt Mrin en berbère, sont des Zénètes nomades arrivés dans le pays en 1213. L'émir Abū Yaḥyā (1244-1258) prend Fès pour capitale ; son frère Abū Yūsuf entre à Marrakech en 1269 et s'y fait proclamer sultan. La dynastie règne jusqu'en 1465, selon Ahmed Khaneboubi."
       },
       {
         "name": "Dynastie saadienne",
@@ -488,7 +592,7 @@
         },
         "dominantPeoples": ["Tous les peuples marocains"],
         "politicalCenters": ["Fès", "Meknès", "Rabat"],
-        "historicalRole": "Dynastie régnante actuelle, unification du Maroc, résistance à la colonisation."
+        "historicalRole": "Les Alaouites sont, comme les Saadiens, des chérifs. Moulay Ismaïl établit sa capitale à Meknès, selon C. Agabi et J.-C. Santucci. La dynastie règne encore : la Constitution de 2011 définit le Maroc comme une monarchie constitutionnelle et fait du roi le Commandeur des croyants."
       },
       {
         "name": "Protectorat français et espagnol",
@@ -506,7 +610,7 @@
           "Rabat (zone française)",
           "Tétouan (zone espagnole)"
         ],
-        "historicalRole": "Colonisation française et espagnole, résistance marocaine, mouvement nationaliste."
+        "historicalRole": "Le traité de Fès du 30 mars 1912 place le pays sous protectorat français, et un accord du 27 novembre 1912 y crée des zones espagnoles. Dans le Rif, Abd el-Krim el-Khattabi mène la résistance contre l'Espagne de 1921 à 1927, selon Mimoun Aziza. Le protectorat prend fin avec l'indépendance du 2 mars 1956."
       }
     ],
     "majorPeoples": [
@@ -518,31 +622,30 @@
         "mainRegion": "Toutes les régions du Maroc, majoritaires dans les plaines et les villes",
         "languages": ["Arabe marocain (darija)", "arabe standard"],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "Les Arabes du Maroc sont majoritairement arabisés (métissés avec les Berbères). Le terme \"Maure\" est historique."
+        "appellationRemarks": "Le recensement marocain ne demande pas à quel peuple on appartient ; il compte les langues utilisées au quotidien. En 2024, 91,9 % des habitants utilisent la darija, l'arabe marocain, selon le Haut-Commissariat au Plan. Le mot « Maure » vient du nom antique des Mauri."
       },
       {
         "name": "Chleuhs",
         "selfAppellation": "Išelḥiyen",
         "exonyms": [
-          "« Chleuh » (terme français ; pas péjoratif mais d'origine extérieure)",
-          "« Berbère » (terme colonial",
-          "considéré problématique)"
+          "Chleuhs (nom courant en français)",
+          "Berbères (nom général ; des auteurs marocains lui préfèrent Amaziɣ, Imaziɣen)"
         ],
         "peopleId": "PPL_CHLEUH",
         "mainRegion": "Sud-Ouest marocain (Souss, Haut Atlas, Anti-Atlas)",
         "languages": ["Tachelhit (shi)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Le terme \"Berbère\" est considéré comme problématique. L'auto-appellation est \"Išelḥiyen\". Les Chleuhs sont héritiers des tribus masmouda historiques."
+        "appellationRemarks": "Leur langue se nomme tašelḥit, le tachelhit. C'est de loin le parler berbère le plus important du Maroc par le nombre de ses locuteurs, selon Salem Chaker ; il couvre le Sous, l'Anti-Atlas et une partie du Haut Atlas. En 2024, 14,2 % des habitants du Maroc l'utilisent, selon le recensement. Le mot « Berbère » vient de « barbare », et des berbérisants marocains ont proposé de le remplacer par Amaziɣ."
       },
       {
         "name": "Rifains",
         "selfAppellation": "Imazighen n Arrif",
-        "exonyms": ["« Berbères du Rif » (ancien terme européen)"],
+        "exonyms": ["Berbères du Rif (ancien nom européen)"],
         "peopleId": "PPL_RIFAIN",
         "mainRegion": "Rif (Nord du Maroc)",
         "languages": ["Tarifit (rif)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Le terme \"Berbère\" est considéré comme problématique. L'auto-appellation est \"Imazighen n Arrif\". Rôle historique dans la République du Rif (1921-1926)."
+        "appellationRemarks": "Leur langue est le rifain, ou tarifit. En 2024, 3,2 % des habitants du Maroc l'utilisent, et 31,1 % dans la région de l'Oriental, selon le recensement. Sous Abd el-Krim el-Khattabi, les Rifains résistent à l'Espagne de 1921 à 1927 et une Confédération des Républiques du Rif est proclamée en 1925, selon Mimoun Aziza."
       },
       {
         "name": "Aït Atta",
@@ -552,17 +655,17 @@
         "mainRegion": "Sud-est marocain (confédération Aït Atta)",
         "languages": ["Tachelhit (shi)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Confédération amazighe du sud-est marocain."
+        "appellationRemarks": "Confédération amazighe du Sud-Est marocain, formée au XVIe siècle au moins autour du Jbel Saghro. Ses tribus se réclament d'un ancêtre commun, Dadda ʿAtta, selon David Hart ; des groupes venus d'ailleurs y ont été intégrés par des pactes, selon Marie-Luce Gélard."
       },
       {
         "name": "Aït Yafelman",
-        "selfAppellation": "Aït Yafelman, Aït Ouirra",
+        "selfAppellation": "Ayt Yafelman",
         "exonyms": ["Aït Yafelman (nom de la confédération)"],
         "peopleId": "PPL_AIT_HDZ",
         "mainRegion": "Atlas marocain (confédérations amazighes)",
-        "languages": ["Tachelhit (shi)", "tamazight central"],
+        "languages": ["Tamazight central (tzm)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Confédérations amazighes de l'Atlas marocain."
+        "appellationRemarks": "Confédération amazighe du Haut Atlas oriental, formée au XVIIe siècle. Elle réunit surtout les Ayt Hadiddou, Ayt Merɣad, Ayt Yahya et Ayt Izdeg, qui parlent le tamaziɣt, selon Michael Peyron. Les Ayt Hadiddou gardent la danse ahidus et les mariages collectifs du moussem d'Imilchil."
       },
       {
         "name": "Ghomara",
@@ -578,8 +681,9 @@
     "culture": {
       "mainLanguages": [
         {
-          "name": "Arabe marocain",
-          "isoCode": "ary"
+          "name": "Arabe marocain (darija)",
+          "isoCode": "ary",
+          "isPrimary": true
         },
         {
           "name": "arabe standard",
@@ -590,12 +694,16 @@
           "isoCode": "shi"
         },
         {
+          "name": "tamazight central",
+          "isoCode": "tzm"
+        },
+        {
           "name": "tarifit",
           "isoCode": "rif"
         },
         {
-          "name": "tamazight central",
-          "isoCode": "tzm"
+          "name": "hassania",
+          "isoCode": "mey"
         },
         {
           "name": "français",
@@ -606,19 +714,19 @@
           "isoCode": "spa"
         }
       ],
-      "culturalTraditions": "Musique andalouse, chaâbi, ahwach, ahidous, poésie amazighe, artisanat (bijoux, poterie, tissage), architecture traditionnelle (riads, kasbahs), fêtes amazighes (Yennayer). La Constitution de 2011 fait de l'arabe et de l'amazighe deux langues officielles de l'État.",
-      "dominantReligions": "Islam sunnite (école malékite majoritaire), soufisme important",
-      "lifestyles": "Urbanisation croissante, agriculture (plaines), pastoralisme (montagnes), commerce, industrie, tourisme",
-      "socialOrganization": "Structures familiales traditionnelles, organisation tribale (confédérations), structures étatiques modernes, monarchie constitutionnelle",
-      "regionalRelations": "Relations avec l'Europe (Union européenne), relations avec le Maghreb (Union du Maghreb arabe), relations avec l'Afrique subsaharienne, rôle dans la Ligue arabe"
+      "culturalTraditions": "Dans l'Atlas, deux grandes danses collectives se partagent le pays amazigh : l'aḥwaš là où l'on parle tachelhit, dans l'Anti-Atlas et le Haut Atlas occidental, et l'aḥidus chez les habitants de parler tamaziɣt du Haut Atlas oriental et du Moyen Atlas, selon Michael Peyron. Neuf biens culturels du pays sont inscrits sur la Liste du patrimoine mondial de l'UNESCO, dont les médinas de Fès et de Marrakech, le ksar d'Aït-Ben-Haddou et le site archéologique de Volubilis. La Constitution de 2011 décrit une identité nationale faite de composantes arabo-islamique, amazighe et saharo-hassanie, nourrie d'apports africains, andalous, hébraïques et méditerranéens.",
+      "dominantReligions": "L'islam est la religion de l'État, qui garantit à tous le libre exercice des cultes, selon l'article 3 de la Constitution de 2011 ; le roi porte le titre de Commandeur des croyants. Au Moyen Âge, les Almoravides imposaient déjà dans les villes le malékisme, une école du droit musulman, selon Jean-Claude Garcin. Chez les Aït Atta, les principaux clans restent rattachés à des saints et à leurs sanctuaires, comme la zaouïa de Tamesluht, près de Marrakech, selon David Hart.",
+      "lifestyles": "En 2024, 62,8 % des habitants vivent en ville, selon le recensement. Dans le Haut Atlas oriental, les Ayt Hadiddou vivent au-dessus de 1 700 mètres et pratiquent l'estivage en altitude, selon Michael Peyron. Chez les Aït Atta, certaines tribus se déplaçaient avec leurs troupeaux entre le massif du Saghro et le Kem-Kem, selon Marie-Luce Gélard.",
+      "socialOrganization": "Dans les montagnes, la société s'organise en tribus réunies en confédérations, comme les Aït Atta ou les Ayt Yafelman. Jusqu'au début du XXe siècle, des pactes d'alliance et de protection lient ces groupes et permettent d'en intégrer de nouveaux, selon Marie-Luce Gélard. L'État est une monarchie constitutionnelle, démocratique, parlementaire et sociale, selon l'article premier de la Constitution de 2011.",
+      "regionalRelations": "Dans le préambule de sa Constitution de 2011, le Maroc se dit appartenir au Grand Maghreb et s'engage à construire l'Union du Maghreb. Il y promet aussi de renforcer ses liens avec la communauté arabe et islamique, avec les pays d'Afrique, notamment au sud du Sahara et au Sahel, et avec ses voisins euro-méditerranéens."
     },
     "historicalFacts": {
-      "ancientPeriods": "Présence berbère depuis la préhistoire, royaumes berbères antiques, domination romaine (Maurétanie), christianisation partielle.",
-      "middleAges": "Conquête arabe (VIIe-VIIIe siècles), islamisation, dynasties berbères (Idrissides, Almoravides, Almohades, Mérinides), développement du commerce transsaharien.",
-      "precolonial": "Dynastie alaouite (1666-présent), unification du Maroc, résistance aux puissances européennes, développement économique et culturel.",
-      "colonization": "Protectorat français et espagnol (1912-1956), résistance marocaine (guerre du Rif, 1921-1926), mouvements nationalistes.",
-      "independenceStruggle": "Mouvement nationaliste (Parti de l'Istiqlal), indépendance (1956), récupération des zones espagnoles (1956-1975).",
-      "postIndependence": "Royaume du Maroc (1956), modernisation de l'État, développement économique, printemps arabe (2011), réformes constitutionnelles."
+      "ancientPeriods": "Les rois maures sont connus à partir de Baga, au IIIe siècle avant notre ère. Rome annexe leur royaume après la mort du roi Ptolémée, fils de Juba II, puis crée en 42 la province de Maurétanie Tingitane, dirigée depuis Tanger. Le contrôle romain reste limité aux plaines du Nord, de Tanger à Sala, et à la région de Volubilis, dont la splendeur date du IIe siècle de notre ère. Sous l'empereur Dioclétien, à la fin du IIIe siècle, la province perd sa moitié sud, Volubilis comprise, selon Yves Modéran.",
+      "middleAges": "Au début du VIIIe siècle, le gouverneur arabe Mūsā crée la province d'al-Maghrib al-Aqsā, selon Hussain Monès. À la fin du VIIIe siècle, Idris Ier fonde un royaume dont Fès devient le centre. Au XIe siècle, les Almoravides, des Berbères venus du Sahara, fondent Marrakech et étendent leur pouvoir jusqu'en Espagne. Les Almohades les remplacent en 1147, puis les Mérinides, des Zénètes, prennent Marrakech en 1269 et règnent depuis Fès jusqu'en 1465. Selon Jean-Claude Garcin, les grands échanges entre l'Afrique au sud du Sahara et la Méditerranée ont contribué à former cet ensemble berbère et à sa prospérité.",
+      "precolonial": "Les Saadiens s'imposent au XVIe siècle : leur lutte contre l'ancienne dynastie s'achève par l'entrée de Muḥammad al-Shaykh à Fès, le 13 septembre 1554, selon Mohammed El Fasi. Les Alaouites leur succèdent, et Moulay Ismaïl fait de Meknès sa capitale. Dans le Sud, les Aït Atta s'organisent au XVIe siècle contre les Arabes Maʿqil, et les Ayt Yafelman forment leur confédération vers 1645, selon David Hart.",
+      "colonization": "Le traité de Fès du 30 mars 1912 fait du Maroc un protectorat français ; un accord du 27 novembre 1912 y crée des zones espagnoles, et Tanger reçoit plus tard un statut de zone internationale. Dans le Rif, Abd el-Krim el-Khattabi bat l'armée espagnole à Anoual en juillet 1921 et proclame en 1925 la Confédération des Républiques du Rif, selon Mimoun Aziza. Dans l'Atlas, l'armée française n'atteint le pays des Ayt Hadiddou qu'à partir de 1929, et les Aït Atta combattent au Bou Gafer jusqu'en mars 1933.",
+      "independenceStruggle": "La France reconnaît l'indépendance du Maroc par la déclaration du 2 mars 1956, et l'Espagne par celle du 7 avril 1956, selon la Digithèque MJP. La zone internationale de Tanger prend fin le 29 octobre 1956. Selon le tableau des indépendances de l'Histoire générale de l'Afrique, la zone méridionale espagnole revient au Maroc le 27 avril 1958, et Ifni le 30 juin 1969.",
+      "postIndependence": "Le 17 octobre 2001, à Ajdir, le roi annonce la création de l'Institut royal de la culture amazighe (IRCAM). En 2003, l'IRCAM adopte l'alphabet tifinagh, et l'enseignement de la langue commence dans 317 écoles, selon Abdallah El Mountassir. La Constitution de 2011 fait de l'amazighe une langue officielle de l'État, à côté de l'arabe. Le recensement de 2024 compte 36 828 330 habitants au 1er septembre 2024, selon le Haut-Commissariat au Plan."
     },
     "sources": [
       {
@@ -680,13 +788,13 @@
         "url": "https://en.yabiladi.com/articles/details/82658/land-fortified-city-various-meanings.html",
         "tier": "referenced",
         "source_kind": "press",
-        "notes": "Article de presse marocaine : le nom de Marrakech, latinisé en Moroch, est à l'origine des noms européens du pays ; deux lectures du nom de la ville, terre de Dieu ou ville fortifiée."
+        "notes": "Article de presse marocaine : le nom de Marrakech, latinisé en Moroch, est à l'origine des noms européens du pays ; il propose deux explications du nom de la ville, terre de Dieu ou ville fortifiée."
       },
       {
         "title": "Constitution du Royaume du Maroc de 2011, article 5 — Constitute Project",
         "url": "https://www.constituteproject.org/constitution/Morocco_2011",
         "tier": "referenced",
-        "notes": "Texte de la Constitution : l'arabe demeure langue officielle de l'État, l'amazighe est aussi langue officielle, patrimoine commun de tous les Marocains."
+        "notes": "Traduction anglaise de la Constitution marocaine de 2011, publiée par le Constitute Project, lue le 3 novembre 2026. Le préambule décrit une identité nationale forgée par ses composantes arabo-islamique, amazighe et saharo-hassanie, nourrie d'affluents africain, andalou, hébraïque et méditerranéen, et engage le pays à construire l'Union du Maghreb et à renforcer ses liens avec l'Afrique et ses voisins euro-méditerranéens. Article 3 : l'islam est la religion de l'État, qui garantit à tous le libre exercice des cultes. Article 5 : l'arabe demeure la langue officielle de l'État ; l'amazighe est aussi langue officielle, patrimoine commun de tous les Marocains ; l'État œuvre à préserver le hassani. Article 41 : le roi est Commandeur des croyants."
       },
       {
         "title": "Histoire générale de l'Afrique, V, ch. 8 : Le Maroc",
@@ -694,6 +802,186 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre de Mohammed El Fasi (1999), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 240. « La lutte entre l'ancienne et la nouvelle dynastie dura une dizaine d'années et fut couronnée par l'entrée de Muḥammad al-Shaykh à Fès le 13 septembre 1554. »"
+      },
+      {
+        "title": "Recensement général de la population et de l'habitat 2024 : caractéristiques démographiques et socioéconomiques de la population. Note sur les principaux résultats",
+        "author": "Haut-Commissariat au Plan, Royaume du Maroc",
+        "year": 2024,
+        "url": "https://www.hcp.ma/file/242663",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Note de l'institution chargée de la statistique au Maroc, datée de décembre 2024, lue le 3 novembre 2026. Page 7 : au 1er septembre 2024, la population légale du Royaume du Maroc s'élève à 36 828 330 habitants, et 62,8 % vivent en ville. Page 13 : le recensement compte les langues que chacun utilise au quotidien. 91,9 % des habitants utilisent la darija, l'arabe marocain, et 24,8 % l'amazighe : 14,2 % le tachelhit, 7,4 % le tamazight et 3,2 % le tarifit ; 0,8 % utilisent le hassania. Le tachelhit est surtout utilisé dans la région de Souss-Massa (63,2 %), le tamazight dans celle de Drâa-Tafilalet (46,2 %) et le tarifit dans celle de l'Oriental (31,1 %)."
+      },
+      {
+        "title": "Maroc — Biens inscrits sur la Liste du patrimoine mondial",
+        "author": "Centre du patrimoine mondial de l'UNESCO",
+        "year": null,
+        "url": "https://whc.unesco.org/fr/etatsparties/ma",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Page du Maroc sur le site de la Convention du patrimoine mondial, lue le 3 novembre 2026. Elle donne neuf biens culturels inscrits, avec leur année d'inscription : la médina de Fès (1981), la médina de Marrakech (1985), le ksar d'Aït-Ben-Haddou (1987), la ville historique de Meknès (1996), la médina de Tétouan (1997), le site archéologique de Volubilis (1997), la médina d'Essaouira (2001), la ville portugaise de Mazagan, El Jadida (2004), et Rabat, capitale moderne et ville historique (2012). La ville antique de Lixus figure sur la liste indicative depuis 1995."
+      },
+      {
+        "title": "Marrakech : sur la signification du nom",
+        "author": "Ahmed Toufik, traduction d'Abdellah Bounfour",
+        "year": 2010,
+        "url": "https://journals.openedition.org/encyclopedieberbere/476",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère (fascicule 30, éditions Peeters, 2010, p. 4627-4630), tirée du livre d'Ahmed Toufik sur Marrakech de sa fondation à l'époque almohade (Marrakech, 1989, p. 15-19) et traduite de l'arabe par Abdellah Bounfour, lue sur OpenEdition le 3 novembre 2026. L'auteur rapporte d'autres explications du nom, « passe rapidement » ou « cachette », et les rejette. Il relève que les mémoires de l'émir Abdallah de Grenade, détrôné par les Almoravides en 1090, écrivent le nom Mrwkš, forme d'où vient l'ancien nom espagnol Marruecos, selon Lévi-Provençal. Son hypothèse : le nom réunirait deux mots berbères, amur, « la protection », et akuš, nom de Dieu chez les anciens Berbères, et voudrait dire « la protection de Dieu »."
+      },
+      {
+        "title": "Akuš (Yakūš/Yuš)",
+        "author": "Gabriel Camps",
+        "year": 1986,
+        "url": "https://journals.openedition.org/encyclopedieberbere/2406",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère (fascicule 3, 1986, p. 431-432), lue sur OpenEdition le 3 novembre 2026. Akuš, ou Yakūš, est donné comme nom de Dieu chez les Berbères par une chronique ibadite et par le géographe al-Bakrī ; l'auteur propose que ce nom signifie « il a donné »."
+      },
+      {
+        "title": "Maures (Antiquité) : Mauri, Maurēnsii, Maurousii",
+        "author": "Jehan Desanges",
+        "year": 2010,
+        "url": "https://journals.openedition.org/encyclopedieberbere/516",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère (fascicule 31, éditions Peeters, 2010, p. 4710-4712), lue sur OpenEdition le 3 novembre 2026. Les auteurs grecs parlent d'abord des Maurousii, un peuple proche de l'océan ; la forme latine Mauri vient plus tard. Selon le géographe Strabon, Mauri était la forme employée par les habitants eux-mêmes. Le nom a ensuite été rapproché à tort du mot grec mauros, « sombre », ce que l'auteur appelle une étymologie populaire."
+      },
+      {
+        "title": "Maurétanie (Royaumes)",
+        "author": "M. Coltelloni-Trannoy",
+        "year": 2010,
+        "url": "https://journals.openedition.org/encyclopedieberbere/521",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère (fascicule 31, éditions Peeters, 2010, p. 4717-4737), lue sur OpenEdition le 3 novembre 2026. Le premier roi maure connu, Baga, vit au IIIe siècle avant notre ère ; Bocchus et Bogud règnent ensuite. Auguste confie le royaume à Juba II, dont la capitale est Iol, rebaptisée Caesarea (Cherchell). Après l'exécution de son fils Ptolémée sur ordre de Caligula, à la fin de 39, le royaume est annexé (41), puis divisé en deux provinces en 42. La splendeur de Volubilis date du IIe siècle de notre ère."
+      },
+      {
+        "title": "Maurétanies (Provinces)",
+        "author": "Yves Modéran",
+        "year": 2010,
+        "url": "https://journals.openedition.org/encyclopedieberbere/523",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère (fascicule 31, éditions Peeters, 2010, p. 4737-4751), lue sur OpenEdition le 3 novembre 2026. En 42, la partie marocaine de l'ancien royaume devient la Maurétanie Tingitane, dirigée depuis Tingi (Tanger) ; le contrôle romain effectif va de Tanger à Sala et laisse de côté le Haut Atlas, la plus grande partie du Moyen Atlas et le Rif. Sous Dioclétien (284-305), la province perd sa moitié sud, dont Volubilis."
+      },
+      {
+        "title": "Idrisides (dynastie 788-985)",
+        "author": "C. El Briga",
+        "year": 2001,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1529",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère (fascicule 24, 2001, p. 3637-3638), lue sur OpenEdition le 3 novembre 2026. Le royaume des deux Idris couvre surtout les plaines du Nord, de Tanger à Salé, et celles de Meknès et de Fès ; il « est loin de correspondre territorialement au Maroc d'aujourd'hui ». La branche aînée, à Fès, compte treize souverains entre 789 et 985."
+      },
+      {
+        "title": "Fès (Fas)",
+        "author": "C. Agabi et J.-C. Santucci",
+        "year": 1997,
+        "url": "https://journals.openedition.org/encyclopedieberbere/2048",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère (fascicule 18, 1997, p. 2766-2777), lue sur OpenEdition le 3 novembre 2026. Fès aurait été fondée en 789 par Idris Ier, installé d'abord à Oulili, l'antique Volubilis, alors que la tradition la plus répandue attribue sa fondation à son fils Idris II, en 808. Idris descendait de Fatima et d'Ali ; la tribu berbère des Awraba le soutenait. Les chérifs, saadiens puis alaouites, favorisent la ville ; Moulay Ismaïl établit sa capitale à Meknès."
+      },
+      {
+        "title": "Almoravides",
+        "author": "Lucien Golvin",
+        "year": 1986,
+        "url": "https://journals.openedition.org/encyclopedieberbere/2452",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère (fascicule 4, 1986, p. 539-542), lue sur OpenEdition le 3 novembre 2026. Almoravide vient de al-Murābiṭūn, « les gens du ribāṭ ». La dynastie, berbère et venue du Sahara, réunit surtout des tribus ṣanhāǧa ; ʿAbd Allāh b. Yāsīn rejoint le Sahara en 1039. Yūsuf b. Tāšfīn fonde Marrakech en 1062-1063 et prend Fès en 1069 ; il passe en Espagne et gagne la bataille de Zallaqa en 1086. La prise de Marrakech par ʿAbd al-Muʾmin, en 1146-1147, met fin à la dynastie."
+      },
+      {
+        "title": "Almohades",
+        "author": "Jean-Claude Garcin",
+        "year": 1986,
+        "url": "https://journals.openedition.org/encyclopedieberbere/2450",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère (fascicule 4, 1986, p. 534-539), lue sur OpenEdition le 3 novembre 2026. Almohade vient de l'arabe al-muwaḥḥidūn, « les confesseurs de l'Un ». Le mouvement naît vers 1120 autour d'Ibn Tūmart, un Maṣmūda de l'Anti-Atlas, installé à Tīnmallal à partir de 1123. Son successeur ʿAbd al-Muʾmin, un Zénète d'Oranie, fait tomber Marrakech en 1147 ; l'empire s'étend à al-Andalus et à tout le Maghreb. Les Almoravides, avant eux, imposaient le malékisme dans les villes. Le Mérinide Abū Yūsuf prend Marrakech en 1269."
+      },
+      {
+        "title": "Mérinides (Berb. : Ayt Mrin)",
+        "author": "Ahmed Khaneboubi",
+        "year": 2010,
+        "url": "https://journals.openedition.org/encyclopedieberbere/568",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère (fascicule 31, éditions Peeters, 2010, p. 4889-4895), lue sur OpenEdition le 3 novembre 2026. Les Banū Marīn, Ayt Mrin en berbère, sont des Zénètes nomades. Ils arrivent dans le pays en 1213 ; l'émir Abū Yaḥyā (1244-1258) prend Fès pour capitale, et Abū Yūsuf entre à Marrakech en 1269, où il se fait proclamer sultan. La dynastie règne de 1269 à 1465."
+      },
+      {
+        "title": "Chleuh (linguistique/littérature)",
+        "author": "Salem Chaker",
+        "year": 1994,
+        "url": "https://journals.openedition.org/encyclopedieberbere/2270",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère (fascicule 13, 1994, p. 1926-1933), lue sur OpenEdition le 3 novembre 2026. Le chleuh, tašelhit ou tašelhiyt en berbère, est « de loin le plus important du Maroc par sa population » ; il s'étend sur le Haut Atlas en partie, l'Anti-Atlas et le Sous."
+      },
+      {
+        "title": "Amaziɣ (le/un Berbère)",
+        "author": "Salem Chaker",
+        "year": 1986,
+        "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère (fascicule 4, 1986, p. 562-568), lue sur OpenEdition le 3 novembre 2026. Les berbérophones du Maroc central se nomment eux-mêmes imaziɣen et appellent leur parler tamaziɣt. Au Maroc, Amaziɣ et tamaziɣt renvoient à une identité linguistique. Des berbérisants, surtout marocains, ont proposé de remplacer en français « Berbère » par Amaziɣ, Imaziɣen et tamaziɣt, le premier mot étant jugé offensant parce qu'il vient de « barbare »."
+      },
+      {
+        "title": "Hadiddou (Ayt)",
+        "author": "Michael Peyron",
+        "year": 1999,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1848",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère (fascicule 21, 1999, p. 3278-3283), lue sur OpenEdition le 3 novembre 2026. Les Ayt Hadiddou, tribu du Haut Atlas oriental, vivent au-dessus de 1 700 mètres et parlent le tamaziɣt. Ils font partie de la confédération des Ayt Yafelman, formée au XVIIe siècle, qui réunit surtout les Ayt Hadiddou, Ayt Merɣad, Ayt Yahya et Ayt Izdeg. L'armée française n'atteint leur pays qu'à partir de 1929. Ils gardent la danse ahidus et les mariages collectifs du moussem d'Imilchil."
+      },
+      {
+        "title": "Danse",
+        "author": "Michael Peyron et al.",
+        "year": 1994,
+        "url": "https://journals.openedition.org/encyclopedieberbere/2373",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère (fascicule 14, 1994, p. 2204-2222), lue sur OpenEdition le 3 novembre 2026. Au Maroc, deux danses dominent le monde de l'Atlas : l'aḥwaš, liée au pays où l'on parle tachelhit (Anti-Atlas et Haut Atlas occidental), et l'aḥidus, danse de base des habitants de parler tamaziɣt du Haut Atlas oriental et du Moyen Atlas."
+      },
+      {
+        "title": "Atta (Ayt)",
+        "author": "David Hart et al.",
+        "year": 1989,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1214",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère (fascicule 7, 1989, p. 1026-1032), lue sur OpenEdition le 3 novembre 2026. La confédération des Ayt ʿAtta se forme au XVIe siècle au moins, autour du Jbel Saghro, contre les Arabes Maʿqil. Ses tribus se réclament d'un ancêtre commun, Dadda ʿAtta. Vers 1645, les Ayt Murɣad forment la fédération des Ayt Yafelman, qui arrête leur avancée vers le nord. Les Ayt ʿAtta résistent aux troupes françaises jusqu'aux combats du Bou Gafer, en février et mars 1933."
+      },
+      {
+        "title": "Pacte (Aït Atta, Sud marocain)",
+        "author": "Marie-Luce Gélard",
+        "year": 2015,
+        "url": "https://journals.openedition.org/encyclopedieberbere/3258",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère (fascicule 37, éditions Peeters, 2015, p. 6019-6026), lue sur OpenEdition le 3 novembre 2026. Jusqu'au début du XXe siècle, le pacte d'alliance et de protection reste très fréquent chez les berbérophones du Sud marocain. Chez les Aït Atta, des groupes venus d'ailleurs sont intégrés aux tribus par des pactes, dont le pacte de lait, appelé taḍa."
+      },
+      {
+        "title": "Rif : Géographie – Histoire – Société",
+        "author": "Mimoun Aziza",
+        "year": 2017,
+        "url": "https://journals.openedition.org/encyclopedieberbere/4509",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère (fascicule 41, éditions Peeters, 2017, p. 6891-6907), lue sur OpenEdition le 3 novembre 2026. Sous la direction d'Abd el-Krim el-Khattabi, les Rifains résistent à l'occupation espagnole entre 1921 et 1927 ; ils battent l'armée espagnole à Anoual en juillet 1921, et Abd el-Krim proclame en 1925 la Confédération des Républiques du Rif."
+      },
+      {
+        "title": "Scolarisation (en berbère) : Maroc",
+        "author": "Abdallah El Mountassir",
+        "year": 2019,
+        "url": "https://journals.openedition.org/encyclopedieberbere/4225",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice de l'Encyclopédie berbère (fascicule 42, éditions Peeters, 2019, p. 7244-7252), lue sur OpenEdition le 3 novembre 2026. Jusqu'à la fin des années 1990, aucun texte officiel ne reconnaît la langue berbère. Le 17 octobre 2001, à Ajdir, le roi annonce la création de l'Institut royal de la culture amazighe (IRCAM). En février 2003, l'IRCAM adopte l'alphabet tifinagh pour l'école, et l'enseignement de la langue commence en septembre 2003 dans 317 écoles."
       }
     ],
     "demographics": {
@@ -703,47 +991,51 @@
       "peoples": [
         {
           "name": "Arabes du Maroc",
-          "percentageInCountry": 70,
-          "percentageInAfrica": 14.4,
           "peopleId": "PPL_ARABES_AFRIQUE",
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "region": "Toutes les régions",
           "languageFamily": "FLG_SEMITIQUE"
         },
         {
           "name": "Chleuhs",
-          "population": 8000000,
-          "percentageInCountry": 21.6,
-          "percentageInAfrica": 4.4,
           "peopleId": "PPL_CHLEUH",
+          "percentageInCountry": null,
+          "mainLanguageCode": "shi",
+          "percentageInAfrica": null,
           "region": "Sud-Ouest (Souss, Haut Atlas, Anti-Atlas)",
           "languageFamily": "FLG_BERBERE"
         },
         {
           "name": "Rifains",
-          "population": 1200000,
-          "percentageInCountry": 3.2,
-          "percentageInAfrica": 0.7,
           "peopleId": "PPL_RIFAIN",
+          "percentageInCountry": null,
+          "mainLanguageCode": "rif",
+          "percentageInAfrica": null,
           "region": "Rif (Nord)",
           "languageFamily": "FLG_BERBERE"
         },
         {
           "name": "Aït Atta",
-          "population": 500000,
-          "percentageInCountry": 1.4,
-          "percentageInAfrica": 0.3,
           "peopleId": "PPL_AIT_ATTA",
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "region": "Sud-est",
           "languageFamily": "FLG_BERBERE"
         },
         {
           "name": "Aït Yafelman",
-          "percentageInCountry": 3.8,
+          "peopleId": "PPL_AIT_HDZ",
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "region": "Atlas marocain (confédérations amazighes centrales)",
-          "languageFamily": "FLG_BERBERE",
-          "peopleId": "PPL_AIT_HDZ"
+          "languageFamily": "FLG_BERBERE"
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "Le Maroc, al-Maghrib en arabe, « l'Occident », est un royaume d'Afrique du Nord. Son nom vient de celui de la ville de Marrakech.",
+      "followUp": "Pourquoi le Maroc porte-t-il le nom de Marrakech ?"
     }
   }
 }

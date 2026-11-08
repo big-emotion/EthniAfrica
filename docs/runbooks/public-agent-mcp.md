@@ -5,7 +5,7 @@ assistant (Claude, ChatGPT) can answer "where does the name X come from?" from
 our fiches. It is part of the Next.js app, stateless, and stores nothing about
 the person asking.
 
-- Endpoint: `POST https://<host>/api/v2/mcp` (JSON-RPC 2.0, one JSON answer per
+- Endpoint: `POST https://ethniafrica.com/api/v2/mcp` (JSON-RPC 2.0, one JSON answer per
   POST, no session, no event stream).
 - Tools: `rechercher_nom` (search a name) and `lire_fiche` (read one fiche).
   Answers are in French and follow the approved frame (in brief, two markers,
@@ -17,13 +17,15 @@ the person asking.
   call from a few shared egress addresses. A Bearer key is optional and, when
   sent, must be valid: an invalid key is a 401, never a silent downgrade.
 
-`<host>` below stands for the recette or production host. Take the real value
-from the deployment settings, never from this page.
+The production address is `https://ethniafrica.com/api/v2/mcp`. It answers only
+after a published Release carries this route: before that, production answers 404. Merging into `recette` deploys recette, whose address is in the deployment
+settings; replace `ethniafrica.com` with that host to try the connector before
+the Release.
 
 ## Check the endpoint first
 
 ```bash
-npm run mcp:check -- https://<host>/api/v2/mcp
+npm run mcp:check -- https://ethniafrica.com/api/v2/mcp
 ```
 
 It runs `initialize`, `tools/list` and `tools/call rechercher_nom` with the
@@ -35,7 +37,7 @@ exit code is 1 if any step fails. Run it before connecting any assistant.
 ### Claude Code
 
 ```bash
-claude mcp add --transport http ethniafrica https://<host>/api/v2/mcp
+claude mcp add --transport http ethniafrica https://ethniafrica.com/api/v2/mcp
 claude mcp list
 ```
 
@@ -45,7 +47,7 @@ make it available in every project.
 ### claude.ai and Claude Desktop (custom connector)
 
 1. Open Settings, then Connectors, then Add custom connector.
-2. Name: `EthniAfrica`. URL: `https://<host>/api/v2/mcp`. Leave the
+2. Name: `EthniAfrica`. URL: `https://ethniafrica.com/api/v2/mcp`. Leave the
    authentication fields empty.
 3. Plans: custom connectors need a Pro or Max plan. On a Team or Enterprise
    plan an owner adds the connector for the organization first, then members
@@ -55,7 +57,7 @@ make it available in every project.
 ### ChatGPT
 
 1. Open Settings, then Connectors (or Plugins, depending on the version), and
-   add a custom MCP server with the URL `https://<host>/api/v2/mcp`, no
+   add a custom MCP server with the URL `https://ethniafrica.com/api/v2/mcp`, no
    authentication.
 2. Some plans require developer mode (Settings, Connectors, Advanced) before a
    custom MCP server can be added. Availability depends on the plan and on

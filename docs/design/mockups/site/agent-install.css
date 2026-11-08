@@ -1,0 +1,123 @@
+/* « EthniAfrica dans Claude et ChatGPT » install page. Mobile first:
+   one column, then two client columns from 768 px. Site tokens only. */
+.ai-main {
+  padding-block: 32px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: var(--afh-text);
+  font-family: var(--afh-font-body);
+}
+.ai-hero { display: flex; flex-direction: column; gap: 12px; max-width: 40rem; }
+.ai-eyebrow {
+  font-family: var(--afh-font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--afh-text-soft);
+}
+.ai-title {
+  margin: 0;
+  font-family: var(--afh-font-display);
+  font-weight: 900;
+  font-size: clamp(32px, 7vw, 52px);
+  line-height: 1.05;
+  text-wrap: balance;
+}
+.ai-lead { margin: 0; font-size: 18px; line-height: 1.55; }
+.ai-section { display: flex; flex-direction: column; gap: 14px; }
+.ai-h2 {
+  margin: 0;
+  font-family: var(--afh-font-display);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+}
+.ai-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid var(--afh-border);
+  border-radius: 14px;
+  background: var(--afh-surface);
+}
+.ai-copy label { font-size: 13px; color: var(--afh-text-soft); font-weight: 700; }
+.ai-copy-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.ai-url {
+  flex: 1 1 220px;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--afh-border);
+  border-radius: 10px;
+  background: var(--afh-bg);
+  color: var(--afh-text);
+  font-family: var(--afh-font-mono);
+  font-size: 15px;
+}
+.ai-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 10px;
+  border: 0;
+  background: var(--afh-text);
+  color: var(--afh-surface);
+  font: inherit;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+.ai-btn-ghost {
+  background: transparent;
+  color: var(--afh-text);
+  border: 1.5px solid var(--afh-text);
+}
+.ai-soon { margin: 0; font-size: 14px; color: var(--afh-text-soft); }
+.ai-clients { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.ai-client {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid var(--afh-border);
+  border-radius: 14px;
+  background: var(--afh-surface);
+}
+.ai-client h3 { margin: 0; font-family: var(--afh-font-display); font-size: 20px; }
+.ai-client ol { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+.ai-client p { margin: 0; font-size: 14px; color: var(--afh-text-soft); }
+.ai-tries { display: flex; flex-wrap: wrap; gap: 8px; }
+.ai-try {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid var(--afh-border);
+  background: var(--afh-surface);
+  font-weight: 700;
+}
+.ai-list { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; max-width: 40rem; }
+.ai-privacy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px;
+  border-radius: 14px;
+  background: var(--afh-bg-warm);
+  max-width: 40rem;
+}
+.ai-privacy p { margin: 0; }
+@media (min-width: 768px) {
+  .ai-clients { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ai-copy { max-width: 40rem; }
+}
+@media (min-width: 1200px) {
+  .ai-main { padding-block: 56px 96px; gap: 56px; }
+}

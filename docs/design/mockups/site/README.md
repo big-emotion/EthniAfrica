@@ -70,6 +70,8 @@ two is wrong, and the fix is decided, not improvised.
 |                   | Notre démarche                               | `approach`           |
 |                   | Accueil                                      | `home`               |
 | 5 · Mots          | Mot `WRD_RACE`                               | `word-race`          |
+| 6 · Agent         | Answer card in Claude and ChatGPT: six content types, wide column, dark theme, five states (390 and 720 px) | `agent-card-*` |
+|                   | Install page « EthniAfrica dans Claude et ChatGPT » | `agent-install`      |
 
 The three files of a page hold the same markup; the width alone changes the
 layout, through the same media and container queries the site uses. Long pages
@@ -106,6 +108,7 @@ are recorded whole, folded as the site folds them.
 | 2026-10-18 | [Brief 19, a recorded spelling answers the search](../briefs/19-recorded-search-term.md), approved by the operator for ETNI-2110 | `search-state-recorded` (new): « sanoh » with two equal fiches (Sanou and Kuranko), the spelling highlighted where each fiche records it, no source note, no « Cherchiez-vous… ? » lead |
 | 2026-10-19 | ETNI-2135, approved by the operator in chat: Fula and Alaba fiche titles and breadcrumbs now show the single recorded self-name; no layout change | `people-fula`, `people-state-fula-culture-open`, `people-thin-alaba`, `Main` |
 | 2026-10-18 | The name story of a fiche is titled once, « L'histoire des noms », approved by the operator in chat on 2026-10-18 (a wording change, no brief: the layout does not move). The eyebrow over the question « D'où viennent ces noms ? » goes, and the question with it; on the family boards, where the chapter already carries the title, only the question goes. The place boards drew it first (brief 7); this aligns the country and family boards and the code | `country-civ`, `country-state-civ-quaqua`, `country-state-shared-congo`, `country-state-thin-gab`, `family-bantu`, `family-mande` |
+| 2026-10-23 | [Brief 20, the answer card in Claude and ChatGPT and the install page](../briefs/20-agent-answer-card.md), approved by the operator in chat on 2026-10-23. The card reuses the result page components; the group 6 boards use `agent-card.css` and `agent-install.css` beside `ea-live.css` | `agent-card-*` (new, 390 px; `agent-card-traore-720`), `agent-install` (new at 430, 768 and 1440 px) |
 
 The boards of a changed page no longer record v5.2.0: they are the approved
 target, and the code is behind them until the implementation lands.
