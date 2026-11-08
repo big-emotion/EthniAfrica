@@ -4866,7 +4866,12 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
   // day, when FLG_BERBERE gained `originOfHistoricalTerm` the same way.
-  famille_linguistique: 104,
+  // 104 -> 88 on 2026-11-03: premium batch 05 filled the model keys that
+  // FLG_SEMITIQUE, FLG_SONGHAY, FLG_SOUDANIQUECENTRAL, FLG_TCHADIQUE and
+  // FLG_TUU lacked (each declares `content.gaps`, counted once as unexpected;
+  // FLG_SONGHAY still omits `classificationStatus`, no source finding the
+  // name problematic).
+  famille_linguistique: 88,
   // 13 -> 9 on 2026-09-29: `culture.mainLanguages` added on Mali, Senegal,
   // Burundi and the Republic of the Congo from an official toponymic factfile.
   // 9 -> 8 on 2026-10-26: `culture.mainLanguages` added on the DR Congo, its
