@@ -122,4 +122,15 @@ describe("the contribute page", () => {
     expect(screen.getByText("Un lieu")).toBeInTheDocument();
     expect(screen.getAllByText("En construction")).toHaveLength(1);
   });
+
+  // The install page is a way to use the corpus, and the contribution page is
+  // where a reader looks for the ways to take part in or reuse the project.
+  // @req REQ-045
+  it("points to the assistant install page", () => {
+    render(<ContributePage />);
+
+    expect(
+      screen.getByRole("link", { name: /Claude et ChatGPT/ })
+    ).toHaveAttribute("href", "/fr/assistant");
+  });
 });

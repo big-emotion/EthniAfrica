@@ -98,6 +98,20 @@ describe("footer destination pages", () => {
     }
   });
 
+  // The connector is read-only and stateless today. This paragraph must be
+  // rewritten, not extended in passing, the day a proposal or a testimony
+  // can be sent through it.
+  // @req REQ-088
+  it("states what the read-only assistant connector keeps about the person who asks", async () => {
+    render(await DataPolicyPage({ params: routeParams("fr") }));
+
+    const processed = sectionText("Données traitées");
+    expect(processed).toMatch(
+      /connecteur[^.]*consulter les fiches publiques[^.]*ne conserve ni votre nom, ni votre compte, ni le texte de vos conversations/
+    );
+    expect(processed).not.toMatch(/témoignage|proposition/i);
+  });
+
   // Where Microsoft keeps the mail the site sends, read by the operator from
   // the tenant's Data location card in the Microsoft 365 admin center
   // (2026-09-20): Exchange Online, current and committed geography France. The

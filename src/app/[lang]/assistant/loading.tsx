@@ -1,0 +1,13 @@
+import { PageLoadingScreen } from "@/components/system/PageLoadingScreen";
+import { systemStatesCopy } from "@/lib/i18n/copy/systemStates";
+
+// @req REQ-104
+export default function AssistantLoading() {
+  return (
+    <PageLoadingScreen
+      label={{
+        fr: systemStatesCopy.fr.loading.assistant,
+      }}
+    />
+  );
+}

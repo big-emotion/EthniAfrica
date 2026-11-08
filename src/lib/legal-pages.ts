@@ -73,7 +73,7 @@ export const legalPages = {
   dataPolicy: {
     eyebrow: "Vie privée et transparence",
     title: "Politique de données",
-    lastUpdated: "Dernière mise à jour : 22 septembre 2026",
+    lastUpdated: "Dernière mise à jour : 8 novembre 2026",
     introduction:
       "EthniAfrica limite la collecte de données personnelles au strict nécessaire et distingue clairement les données du compte, les contributions éditoriales et les mesures techniques.",
     sections: [
@@ -89,7 +89,7 @@ export const legalPages = {
           "Lors de la création d’un compte, EthniAfrica peut traiter une adresse e-mail, un nom d’affichage, les informations nécessaires à l’authentification et la confirmation d’âge.",
           "Les contributions, corrections et signalements sont conservés avec les informations nécessaires à leur instruction et à la transparence éditoriale. Les journaux techniques peuvent contenir des informations limitées liées au fonctionnement et à la sécurité du service.",
           "Les préférences de consentement sont enregistrées dans le stockage local du navigateur pour mémoriser les choix effectués (voir « Cookies et stockage local »).",
-          "L’adresse IP d’une requête adressée à l’API publique ou au formulaire de contact sert à limiter le nombre de requêtes (voir « Services et sous-traitants »).",
+          "L’adresse IP d’une requête adressée à l’API publique ou au formulaire de contact sert à limiter le nombre de requêtes (voir « Services et sous-traitants »). Le connecteur d’assistant d’EthniAfrica, utilisé depuis Claude ou ChatGPT, ne fait que consulter les fiches publiques : il répond à partir d’elles et ne conserve ni votre nom, ni votre compte, ni le texte de vos conversations.",
           "Dans Découvertes, les publications conservées sont enregistrées dans le navigateur de cet appareil sous forme d’identifiants de publication. Elles ne sont liées à aucun compte et ne se synchronisent pas. Vous pouvez les retirer dans Découvertes ou effacer les données du site dans votre navigateur.",
         ],
       },

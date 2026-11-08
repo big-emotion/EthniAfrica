@@ -6,6 +6,7 @@ import {
   NOMMER_CHAPTER_KEYS,
   getLocalizedRoute,
   getNommerChapterRoute,
+  getStaticPageRoute,
 } from "@/lib/routing";
 import { getSiteTree, getSiteTreePaths } from "@/lib/siteTree";
 
@@ -156,5 +157,16 @@ describe("getSiteTree — the Nommer dossier and its chapters", () => {
         published
       );
     }
+  });
+});
+
+describe("getSiteTree — the assistant install page", () => {
+  // @req REQ-110
+  it("lists the page under Participer and in the sitemap paths", () => {
+    const section = getSiteTree("fr").find((item) => item.id === "participer");
+    const href = getStaticPageRoute("fr", "assistant");
+
+    expect(section?.links.map((link) => link.href)).toContain(href);
+    expect(getSiteTreePaths("fr")).toContain(href);
   });
 });

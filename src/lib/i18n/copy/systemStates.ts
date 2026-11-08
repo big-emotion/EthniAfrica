@@ -6,6 +6,7 @@ const fr = {
     accessibility: "Chargement de la déclaration d'accessibilité",
     legalNotice: "Chargement des mentions légales",
     dataPolicy: "Chargement de la politique de données",
+    assistant: "Chargement de la page assistant",
   },
   forbidden: {
     title: "Accès non autorisé",
