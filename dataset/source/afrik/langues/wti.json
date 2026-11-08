@@ -17,7 +17,7 @@
     "Jebelawi",
     "Wetawit"
   ],
-  "whyProblematic": null,
+  "whyProblematic": "Le nom jebelawi, que le recensement éthiopien de 1994 donne à la langue, n'est pas un nom que les intéressés préfèrent eux-mêmes, selon Jon Abbink, cité par Grover Hudson. Le recensement de 2007 emploie à sa place le nom Berta.",
   "spellingAliases": [],
   "familyId": "FLG_NILOSAHARIENNE",
   "peoples": [],
@@ -33,6 +33,49 @@
         "shortLine": "Le nom de la langue et de ses locuteurs, écrit Bertat au XIXe siècle.",
         "periodLabel": "Écrit dès 1874",
         "accounts": [
+          {
+            "period": {
+              "from": 2011,
+              "to": 2017,
+              "label": "Enquêtes de 2011 et 2013, publiées en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom berta recouvre plusieurs parlers : une enquête de SIL International étudie ceux de Maiyu, de Fadashi, d'Undulu, de Beleje Gonfoye, de Wabosh et de Metehara, dans l'ouest de l'Éthiopie. Elle relève que des membres du groupe appelé Berta passent à d'autres langues, et que le maiyu emprunte beaucoup à l'arabe du Soudan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Sociolinguistic Survey of Six Berta Speech Varieties in Ethiopia",
+                "author": "Nathan Bremer",
+                "year": 2017,
+                "url": "https://www.sil.org/resources/archives/69953",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "SIL Electronic Survey Reports 2016-007, Dallas, SIL International, 2017. Résumé lu sur la page du catalogue de SIL le 3 novembre 2026 ; le rapport complet n'a pas pu être ouvert."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "2007"
+            },
+            "era": "modern",
+            "statement": "Le nom berta désigne, sous la forme Bertagna, la langue maternelle de 205 732 personnes au recensement éthiopien de 2007, selon le tableau que publie Grover Hudson. Le même recensement compte 208 759 Berta.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ethnic Group and Mother Tongue in the Ethiopian Censuses of 1994 and 2007",
+                "author": "Grover Hudson",
+                "year": 2012,
+                "url": "https://journals.sub.uni-hamburg.de/aethiopica/article/view/666",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tableau 3, p. 211, et tableau 4, p. 214",
+                "notes": "Aethiopica, revue de l'université de Hambourg, vol. 15, 2012, p. 204-218. Lu en texte intégral le 3 novembre 2026. L'auteur compare les tableaux des recensements éthiopiens de 1994 et de 2007 sur les groupes ethniques et les langues maternelles."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1949,
@@ -85,6 +128,28 @@
         "shortLine": "Le nom d'un groupe de la région, « habitants de la montagne » selon un voyageur.",
         "periodLabel": "Écrit dès 1874",
         "accounts": [
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "1994"
+            },
+            "era": "modern",
+            "statement": "Le nom jebelawi désigne, sous la forme Jebelawigna, la langue maternelle de 116 084 personnes au recensement éthiopien de 1994 ; celui de 2007 emploie à sa place le nom Berta, selon Grover Hudson. Il cite l'anthropologue Jon Abbink, pour qui les intéressés ne préfèrent pas eux-mêmes le nom jebelawi.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Ethnic Group and Mother Tongue in the Ethiopian Censuses of 1994 and 2007",
+                "author": "Grover Hudson",
+                "year": 2012,
+                "url": "https://journals.sub.uni-hamburg.de/aethiopica/article/view/666",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tableau 1, p. 205, note 3, p. 208, et tableau 4, p. 214",
+                "notes": "Aethiopica, revue de l'université de Hambourg, vol. 15, 2012, p. 204-218. Lu en texte intégral le 3 novembre 2026. L'auteur compare les tableaux des recensements éthiopiens de 1994 et de 2007 sur les groupes ethniques et les langues maternelles."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1869,
@@ -175,6 +240,7 @@
       "Undu"
     ],
     "vitalityStatus": null,
+    "originDebated": false,
     "sources": [
       {
         "title": "Glottolog 5.3 - Berta",
@@ -183,6 +249,42 @@
         "source_kind": "linguistic_reference",
         "notes": "Glottolog direct official languoid record; source of the name and glottocode. Les dialectes listés sont les sous-languoids que Glottolog rattache à bert1248, hors languoids portant leur propre code ISO 639-3."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "nameHistory.names[0]",
+        "reason": "Nous n'avons pas trouvé de source qui dise comment les locuteurs appellent eux-mêmes leur langue."
+      },
+      {
+        "field": "content.vitalityStatus",
+        "reason": "Le catalogue Glottolog ne donne pas de niveau de vitalité pour l'ensemble de la langue berta. Il signale seulement que le parler fadashi est menacé."
+      },
+      {
+        "field": "content.vehicularRole",
+        "reason": "Nous n'avons pas trouvé de source qui dise si le berta sert de langue commune entre des peuples différents."
+      },
+      {
+        "field": "content.speakers",
+        "reason": "Nous avons un chiffre de recensement pour l'Éthiopie seulement. Pour le Soudan, nous n'avons pas trouvé de recensement qui compte les personnes qui parlent le berta."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Le berta est une langue de l'ouest de l'Éthiopie et du Soudan, parlée dans la région du haut Nil Bleu.",
+      "followUp": "D'où viennent les noms Berta, Jebelawi et Wetawit ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "ETH",
+          "speakers": 205732,
+          "source": {
+            "title": "Ethnic Group and Mother Tongue in the Ethiopian Censuses of 1994 and 2007",
+            "url": "https://journals.sub.uni-hamburg.de/aethiopica/article/view/666",
+            "tier": "referenced",
+            "notes": "Grover Hudson, Aethiopica, vol. 15, 2012, tableau 4, p. 214-216, lu le 3 novembre 2026. Chiffre du recensement éthiopien de 2007 pour la langue maternelle « Bertagna ». Il compte les personnes dont c'est la première langue, pas celles qui la parlent en plus d'une autre."
+          }
+        }
+      ]
+    }
   }
 }

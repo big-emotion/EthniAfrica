@@ -28,12 +28,17 @@
     "Zhu'oasi",
     "Žhu|hõasi"
   ],
-  "whyProblematic": "Ju|'hoan repose sur le mot ju, « gens » (article de Wikipédia). La traduction « vrais gens » est rapportée pour Ju|'hoansi (Lee). Ju|'hoansi est le nom que le peuple se donne, et la langue le suit. D'après l'article de Wikipédia sur les langues ǃKung, les locuteurs de presque tous les parlers voisins se disent ǃKung ; on emploie ǃKung quand on les voit comme une seule langue et Ju quand on y voit une petite famille de langues. Xun et Zhu sont d'autres façons d'écrire ces noms. D'où vient le mot ǃKung n'est pas établi dans les sources lues.",
+  "whyProblematic": "Le nom !Kung, longtemps employé par les chercheurs pour cette langue et ce peuple, est un mot qui veut dire « personne » et le nom que se donne un groupe d'Angola et de l'extrême nord de la Namibie. Pour un Ju|'hoan, il désigne ceux qui vivent plus au nord, et non les siens, selon l'anthropologue Alan Barnard. Les gens de Nyae Nyae et de Dobe se nomment Ju|'hoansi, « les vraies personnes ». Les spécialistes ont adopté ce nom au début des années 1990, quand l'orthographe de la langue a été fixée avec des locuteurs.",
   "spellingAliases": [],
   "familyId": "FLG_KXA",
-  "peoples": [],
+  "peoples": [
+    {
+      "name": "Ju|'hoansi",
+      "peopleId": "PPL_JUHOANSI"
+    }
+  ],
   "nameHistory": {
-    "summary": "Le nom ju|'hoan désigne une langue à clics du nord-est de la Namibie et du nord-ouest du Botswana, autour de Tsumkwe, et c'est le nom que ses locuteurs lui donnent. Les linguistes y voient une variété d'une langue plus large qu'ils appellent ǃxun. On a longtemps dit ǃkung, ou kung, un nom que, selon un auteur de 1930, ce peuple se donnait et qui voudrait dire « les gens ». Les sources que nous avons lues n'expliquent pas l'origine du nom ju|'hoan.",
+    "summary": "Le nom ju|'hoan désigne une langue à clics du nord-est de la Namibie et du nord-ouest du Botswana, autour de Tsumkwe, et c'est le nom que ses locuteurs lui donnent : il veut dire « les vraies personnes ». Les linguistes y voient une variété d'une langue plus large qu'ils appellent ǃxun. On a longtemps dit ǃkung, ou kung, un nom qui, pour les Ju|'hoansi, désigne leurs voisins du nord. Nous présentons plus bas l'histoire de ces deux noms.",
     "names": [
       {
         "nameText": "Ju|'hoan",
@@ -41,8 +46,8 @@
         "selfGiven": true,
         "languageOfOrigin": "ktz",
         "namedBy": null,
-        "shortLine": "Le nom que les locuteurs de Tsumkwe donnent à leur parler.",
-        "periodLabel": "En usage aujourd'hui",
+        "shortLine": "Le nom que les locuteurs de Tsumkwe donnent à leur langue : « les vraies personnes ».",
+        "periodLabel": "Écrit dès 1959 ; graphie fixée au début des années 1990",
         "accounts": [
           {
             "period": {
@@ -51,7 +56,7 @@
               "label": "2010"
             },
             "era": "modern",
-            "statement": "Le nom ju|'hoan, ou ju|'hoansi, est celui que se donnent les locuteurs d'une variété du ǃxun parlée dans le district de Tsumkwe, au nord-est de la Namibie, et dans les régions voisines du Botswana, selon Bernd Heine et Henry Honken. Les sources que nous avons lues n'en expliquent pas l'origine et ne disent pas quand il apparaît par écrit.",
+            "statement": "Le nom ju|'hoan, ou ju|'hoansi, est celui que se donnent les locuteurs d'une variété du ǃxun parlée dans le district de Tsumkwe, au nord-est de la Namibie, et dans les régions voisines du Botswana, selon Bernd Heine et Henry Honken.",
             "aspect": "usage",
             "sources": [
               {
@@ -63,6 +68,202 @@
                 "source_kind": "academic",
                 "page": "p. 7-8, tableau 1",
                 "notes": "Journal of Asian and African Studies, n° 79, Tokyo, Institut de recherche sur les langues et cultures d'Asie et d'Afrique, 2010. Lu en texte intégral dans la copie du dépôt de l'université des études étrangères de Tokyo le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les auteurs"
+            },
+            "statement": "Le nom ju|'hoansi veut dire « les vraies personnes », selon l'anthropologue Alan Barnard et Richard B. Lee. Dans le dictionnaire de Patrick Dickens, ju veut dire « personne » et |'hoan « vrai » ; -si marque le pluriel. Megan Biesele ajoute que le mot évoque aussi les gens simples, ordinaires.",
+            "aspect": "meaning",
+            "hypothesisGroup": "sens du nom ju|'hoansi",
+            "sources": [
+              {
+                "title": "Anthropology and the Bushman",
+                "author": "Alan Barnard",
+                "year": 2007,
+                "url": "https://archive.org/details/oapen-20.500.12657-34635",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 140-141, section « !Kung or Ju/'hoansi? »",
+                "notes": "Oxford, Berg, 2007, édition en libre accès de la bibliothèque OAPEN. Lu en texte intégral le 3 novembre 2026 dans la copie d'Internet Archive."
+              },
+              {
+                "title": "The Dobe Ju/'hoansi",
+                "author": "Richard B. Lee",
+                "year": 1993,
+                "url": "https://archive.org/details/dobejuhoansi00leer",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "page non relevée : passage lu par la recherche en texte intégral d'Internet Archive",
+                "notes": "Fort Worth, Harcourt Brace, 1993, nouvelle édition de The Dobe !Kung (1984) sous un nouveau titre. Ouvrage en prêt numérique sur Internet Archive : seuls des extraits ont été lus, le 3 novembre 2026, avec ceux de la troisième édition (2003)."
+              },
+              {
+                "title": "English–Ju|'hoan / Ju|'hoan–English Dictionary",
+                "author": "Patrick J. Dickens",
+                "year": 2009,
+                "url": "https://archive.org/details/englishjuhoanjuh00patr",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page non relevée : passage lu par la recherche en texte intégral d'Internet Archive",
+                "notes": "Cologne, Rüdiger Köppe, collection Quellen zur Khoisan-Forschung ; première édition en 1994. Ouvrage en prêt numérique sur Internet Archive : seuls des extraits ont été lus, le 3 novembre 2026."
+              },
+              {
+                "title": "Once Upon a Time Is Now: A Kalahari Memoir",
+                "author": "Megan Biesele",
+                "year": 2023,
+                "url": "https://doi.org/10.3167/9781800738799",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 135",
+                "notes": "New York et Oxford, Berghahn, 2023, en libre accès. Lu en texte intégral le 3 novembre 2026 dans la copie de la bibliothèque OAPEN conservée par Internet Archive. L'autrice, anthropologue, travaille avec les Ju|'hoansi depuis les années 1970."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "1959"
+            },
+            "era": "colonial",
+            "statement": "Le nom ju|'hoansi est écrit zhu twa si par Elizabeth Marshall Thomas, qui le traduit par « les gens inoffensifs ». Richard B. Lee qualifie plus tard cette traduction de libre et lui préfère « les vraies personnes ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple et sa langue existaient déjà avant lui.",
+            "hypothesisGroup": "sens du nom ju|'hoansi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Elizabeth Marshall Thomas",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Harmless People",
+                "author": "Elizabeth Marshall Thomas",
+                "year": 1959,
+                "url": "https://archive.org/details/harmlesspeople00thom",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "page non relevée : passage lu par la recherche en texte intégral d'Internet Archive",
+                "notes": "New York, Knopf, 1959. Ouvrage en prêt numérique sur Internet Archive : seuls des extraits ont été lus, le 3 novembre 2026."
+              },
+              {
+                "title": "The Dobe !Kung",
+                "author": "Richard B. Lee",
+                "year": 1984,
+                "url": "https://archive.org/details/dobekung00leer",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "page non relevée : passage lu par la recherche en texte intégral d'Internet Archive",
+                "notes": "New York, Holt, Rinehart and Winston, 1984. Ouvrage en prêt numérique sur Internet Archive : seuls des extraits ont été lus, le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "1976"
+            },
+            "era": "colonial",
+            "statement": "Le nom ju|'hoansi est celui que se donnent, selon l'anthropologue Lorna Marshall, les gens de Nyae Nyae : ils ne s'appellent pas !Kung, contrairement aux groupes qu'elle a rencontrés en Angola.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The !Kung of Nyae Nyae",
+                "author": "Lorna Marshall",
+                "year": 1976,
+                "url": "https://archive.org/details/kungofnyaenyae0000mars",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "page non relevée : passage lu par la recherche en texte intégral d'Internet Archive",
+                "notes": "Cambridge (Massachusetts), Harvard University Press, 1976. Ouvrage en prêt numérique sur Internet Archive : seuls des extraits ont été lus, le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1990,
+              "to": 1993,
+              "label": "Début des années 1990"
+            },
+            "era": "modern",
+            "statement": "Le nom ju|'hoan prend sa graphie actuelle au début des années 1990 : des Ju|'hoansi choisissent cette orthographe avec le linguiste Patrick Dickens, de préférence à Ju/wasi ou Zhu/twasi, selon Richard B. Lee, qui rebaptise alors son livre The Dobe !Kung en The Dobe Ju/'hoansi. Le dictionnaire, la grammaire et les manuels sont ensuite adoptés par les Ju|'hoansi et par l'État namibien, selon Megan Biesele.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Dobe Ju/'hoansi",
+                "author": "Richard B. Lee",
+                "year": 1993,
+                "url": "https://archive.org/details/dobejuhoansi00leer",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "page non relevée : passage lu par la recherche en texte intégral d'Internet Archive",
+                "notes": "Fort Worth, Harcourt Brace, 1993, nouvelle édition de The Dobe !Kung (1984) sous un nouveau titre. Ouvrage en prêt numérique sur Internet Archive : seuls des extraits ont été lus, le 3 novembre 2026, avec ceux de la troisième édition (2003)."
+              },
+              {
+                "title": "The Dobe !Kung",
+                "author": "Richard B. Lee",
+                "year": 1984,
+                "url": "https://archive.org/details/dobekung00leer",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "page non relevée : passage lu par la recherche en texte intégral d'Internet Archive",
+                "notes": "New York, Holt, Rinehart and Winston, 1984. Ouvrage en prêt numérique sur Internet Archive : seuls des extraits ont été lus, le 3 novembre 2026."
+              },
+              {
+                "title": "Once Upon a Time Is Now: A Kalahari Memoir",
+                "author": "Megan Biesele",
+                "year": 2023,
+                "url": "https://doi.org/10.3167/9781800738799",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 29-30",
+                "notes": "New York et Oxford, Berghahn, 2023, en libre accès. Lu en texte intégral le 3 novembre 2026 dans la copie de la bibliothèque OAPEN conservée par Internet Archive. L'autrice, anthropologue, travaille avec les Ju|'hoansi depuis les années 1970."
+              },
+              {
+                "title": "Anthropology and the Bushman",
+                "author": "Alan Barnard",
+                "year": 2007,
+                "url": "https://archive.org/details/oapen-20.500.12657-34635",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 140-141, section « !Kung or Ju/'hoansi? »",
+                "notes": "Oxford, Berg, 2007, édition en libre accès de la bibliothèque OAPEN. Lu en texte intégral le 3 novembre 2026 dans la copie d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le ju|'hoan fait partie des langues enseignées dans les écoles en Namibie, selon l'Atlas de Namibie. Au Botswana, l'État ne l'avait pas encore reconnu en 2023, selon Megan Biesele.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Languages spoken in Namibia, Atlas of Namibia",
+                "author": "Namibia Nature Foundation",
+                "year": null,
+                "url": "https://atlasofnamibia.online/node/108",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "notes": "Atlas en ligne de la Namibia Nature Foundation, lu le 3 novembre 2026."
+              },
+              {
+                "title": "Once Upon a Time Is Now: A Kalahari Memoir",
+                "author": "Megan Biesele",
+                "year": 2023,
+                "url": "https://doi.org/10.3167/9781800738799",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 29-30",
+                "notes": "New York et Oxford, Berghahn, 2023, en libre accès. Lu en texte intégral le 3 novembre 2026 dans la copie de la bibliothèque OAPEN conservée par Internet Archive. L'autrice, anthropologue, travaille avec les Ju|'hoansi depuis les années 1970."
               }
             ]
           }
@@ -161,22 +362,98 @@
                 "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive le 11 octobre 2026. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
               }
             ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 2007,
+              "label": "Sens donné par l'auteur"
+            },
+            "statement": "Le nom !kung, ou plus exactement !xũ, est un mot qui veut dire « personne » et le nom que se donne un groupe d'Angola et de l'extrême nord de la Namibie, selon Alan Barnard. Pour un Ju|'hoan, il ne désigne pas les siens mais ceux qui vivent plus au nord.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Anthropology and the Bushman",
+                "author": "Alan Barnard",
+                "year": 2007,
+                "url": "https://archive.org/details/oapen-20.500.12657-34635",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 140-141, section « !Kung or Ju/'hoansi? »",
+                "notes": "Oxford, Berg, 2007, édition en libre accès de la bibliothèque OAPEN. Lu en texte intégral le 3 novembre 2026 dans la copie d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "1976"
+            },
+            "era": "colonial",
+            "statement": "Le nom !kung est celui que se donnent les gens de Tshimbaranda, en Angola, et, à leur connaissance, tous les !Kung d'Angola, selon Lorna Marshall.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The !Kung of Nyae Nyae",
+                "author": "Lorna Marshall",
+                "year": 1976,
+                "url": "https://archive.org/details/kungofnyaenyae0000mars",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "page non relevée : passage lu par la recherche en texte intégral d'Internet Archive",
+                "notes": "Cambridge (Massachusetts), Harvard University Press, 1976. Ouvrage en prêt numérique sur Internet Archive : seuls des extraits ont été lus, le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 2023,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom !kung a longtemps été donné à tort à la langue ju|'hoan par les chercheurs, écrit Megan Biesele. Les spécialistes ont presque tous adopté ju|'hoan depuis les années 1990, mais !kung sert encore à nommer l'ensemble des parlers du groupe du nord, selon Alan Barnard.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Once Upon a Time Is Now: A Kalahari Memoir",
+                "author": "Megan Biesele",
+                "year": 2023,
+                "url": "https://doi.org/10.3167/9781800738799",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "New York et Oxford, Berghahn, 2023, en libre accès. Lu en texte intégral le 3 novembre 2026 dans la copie de la bibliothèque OAPEN conservée par Internet Archive. L'autrice, anthropologue, travaille avec les Ju|'hoansi depuis les années 1970."
+              },
+              {
+                "title": "Anthropology and the Bushman",
+                "author": "Alan Barnard",
+                "year": 2007,
+                "url": "https://archive.org/details/oapen-20.500.12657-34635",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 140-141, section « !Kung or Ju/'hoansi? »",
+                "notes": "Oxford, Berg, 2007, édition en libre accès de la bibliothèque OAPEN. Lu en texte intégral le 3 novembre 2026 dans la copie d'Internet Archive."
+              }
+            ]
           }
         ]
       }
     ]
   },
   "content": {
-    "vehicularRole": null,
+    "vehicularRole": "non_vehicular",
     "dialects": ["Gobabis-Tsumkwe Juǀ’hoan", "Nogau"],
     "vitalityStatus": null,
+    "originDebated": false,
     "sources": [
       {
         "title": "Glottolog 5.3 — Ju|'hoan (juho1239)",
         "url": "https://glottolog.org/resource/languoid/id/juho1239",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Glottolog name: South-Eastern Ju; Ju|'hoan is an attested name and the classification includes Kxa. Les dialectes listés sont les sous-languoids que Glottolog rattache à juho1239, hors languoids portant leur propre code ISO 639-3."
+        "notes": "Notice directe pour le code ISO 639-3 ktz et le glottocode juho1239, lue le 3 novembre 2026. Glottolog la nomme South-Eastern Ju et relève le nom Ju|'hoan ; la classification la place dans la famille kx'a. Elle qualifie la langue de vulnérable d'après le Catalogue des langues en danger (Campbell et al., 2022). Les dialectes listés sont ceux que Glottolog rattache à cette notice."
       },
       {
         "title": "Lee, Richard B., The Dobe Ju/'Hoansi, 4e éd., Cengage Learning, 2012",
@@ -186,19 +463,68 @@
         "notes": "Seule la page de présentation de l'ouvrage a été lue : elle traduit Ju/'hoansi par « real people ». Le livre n'a pas été lu."
       },
       {
-        "title": "Wikipédia (anglais) — Juǀʼhoan language",
-        "url": "https://en.wikipedia.org/wiki/Ju%C7%80%CA%BChoan_language",
-        "tier": "unverified",
-        "source_kind": "encyclopedia",
-        "notes": "Section sur le nom, lue en ligne : ju, « gens ». Le passage ne cite pas de publication."
+        "title": "Barnard, Alan, Anthropology and the Bushman, Oxford, Berg, 2007",
+        "url": "https://archive.org/details/oapen-20.500.12657-34635",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Édition en libre accès, lue en texte intégral le 3 novembre 2026 : !Kung, mot pour « personne » et nom d'un groupe du nord, Ju|'hoansi, « les vraies personnes », et l'orthographe fixée au début des années 1990."
       },
       {
-        "title": "Wikipédia (anglais) — ǃKung languages",
-        "url": "https://en.wikipedia.org/wiki/%C7%83Kung_languages",
-        "tier": "unverified",
-        "source_kind": "encyclopedia",
-        "notes": "Section sur le nom, lue en ligne : emploi de ǃKung et de Ju, et variantes d'écriture. Le passage ne cite pas de publication."
+        "title": "Biesele, Megan, Once Upon a Time Is Now: A Kalahari Memoir, Berghahn, 2023",
+        "url": "https://doi.org/10.3167/9781800738799",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Édition en libre accès, lue en texte intégral le 3 novembre 2026 : le nom !Kung donné à tort à la langue, l'orthographe de Patrick Dickens adoptée par la Namibie après 1990, et l'absence de reconnaissance au Botswana."
+      },
+      {
+        "title": "Dickens, Patrick J., English–Ju|'hoan / Ju|'hoan–English Dictionary, Rüdiger Köppe, 2009 (première édition 1994)",
+        "url": "https://archive.org/details/englishjuhoanjuh00patr",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Extraits lus le 3 novembre 2026 : |'hoan, « vrai », et ju, « personne », dans des mots composés. Le même mot |'hoan veut aussi dire « nu »."
+      },
+      {
+        "title": "Lee, Richard B., The Dobe !Kung (1984) et The Dobe Ju/'hoansi (1993)",
+        "url": "https://archive.org/details/dobejuhoansi00leer",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Extraits des deux éditions lus le 3 novembre 2026 : le nom que se donnent les gens de Dobe, écrit Zhu/wasi en 1984 puis Ju/'hoansi, et l'orthographe choisie par des Ju|'hoansi avec Patrick Dickens."
+      },
+      {
+        "title": "Marshall, Lorna, The !Kung of Nyae Nyae, Harvard University Press, 1976",
+        "url": "https://archive.org/details/kungofnyaenyae0000mars",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Extraits lus le 3 novembre 2026 : les !Kung d'Angola se nomment !Kung, les gens de Nyae Nyae non."
+      },
+      {
+        "title": "Thomas, Elizabeth Marshall, The Harmless People, Knopf, 1959",
+        "url": "https://archive.org/details/harmlesspeople00thom",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Extrait lu le 3 novembre 2026 : zhu twa si, traduit par « les gens inoffensifs »."
+      },
+      {
+        "title": "Namibia Nature Foundation, « Languages spoken in Namibia », Atlas of Namibia",
+        "url": "https://atlasofnamibia.online/node/108",
+        "tier": "referenced",
+        "source_kind": "ngo",
+        "notes": "Lu le 3 novembre 2026 : le ju|'hoansi parmi les langues enseignées dans les écoles namibiennes."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers",
+        "reason": "Nous n'avons pas trouvé de chiffre fiable du nombre de personnes qui parlent le ju|'hoan, ni en Namibie ni au Botswana. Le recensement namibien de 2023 pose une question sur la première langue, mais seul un échantillon en a été publié, et il ne vaut pas comptage."
+      },
+      {
+        "field": "content.vitalityStatus",
+        "reason": "Nous n'avons pas pu lire l'évaluation d'Ethnologue ni celle de l'UNESCO pour cette langue. Le Catalogue des langues en danger, cité par Glottolog, la dit vulnérable."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Une langue à clics du nord-est de la Namibie et du nord-ouest du Botswana ; son nom veut dire « les vraies personnes ».",
+      "followUp": "Pourquoi ce peuple a-t-il longtemps été appelé !Kung ?"
+    }
   }
 }
