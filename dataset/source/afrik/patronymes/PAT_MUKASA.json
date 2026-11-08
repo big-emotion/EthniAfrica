@@ -49,7 +49,15 @@
       "sourceRefs": ["dacb-joseph-mukasa"]
     }
   ],
-  "homonyms": [],
+  "homonyms": [
+    {
+      "label": "Mukasa, dieu des Baganda",
+      "entityType": "other",
+      "entityId": null,
+      "distinction": "Dans le livre de John Roscoe (1911), Mukasa est un dieu des Baganda, dont le temple se trouvait sur la colline de Kyange. Les jumeaux garçons portent son nom, les filles celui de Namukasa : « Twins were always named after the god, the boys took the name of Mukasa, and the girls of Namukasa ». Le nom de personne vient donc du nom du dieu ou lui est lié ; Roscoe ne décrit pas de transmission de père en fils. Passage lu le 8 novembre 2026 dans le texte numérisé.",
+      "sourceRefs": ["roscoe-1911-baganda"]
+    }
+  ],
   "sources": [
     {
       "sourceKey": "forebears-mukasa",
@@ -90,12 +98,12 @@
       "reason": "la recherche web et bibliographique combinant « Mukasa », « BAGANDA », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée et les travaux ou notices propres au nom cités dans la fiche n'ont établi aucune fonction sociale ou professionnelle héréditaire propre à Mukasa."
     },
     {
-      "fieldPath": "homonyms",
-      "reason": "la recherche web et bibliographique combinant « Mukasa », « BAGANDA », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée et les travaux ou notices propres au nom cités dans la fiche n'ont pas établi de lignée homonyme d'origine distincte documentable ; la diffusion dans plusieurs pays et les ressemblances graphiques ne suffisent pas à créer un homonyme."
-    },
-    {
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mukasa », « BAGANDA », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée et les travaux ou notices propres au nom cités dans la fiche n'ont établi aucune règle propre à l'ensemble des emplois de Mukasa permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
+    },
+    {
+      "fieldPath": "homonyms",
+      "reason": "Seul le dieu Mukasa est documenté (Roscoe 1911). Aucune lignée ou famille de même graphie mais d'autre origine n'a été trouvée dans Roscoe, DACB ni Forebears."
     }
   ],
   "nameHistory": {
