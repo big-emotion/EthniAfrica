@@ -1,0 +1,226 @@
+{
+  "description": "Proposals for ai_generated sources in the surnames-12 premium batch. Proposed only: no id, no decision. The operator decides each entry; the main ledger is untouched.",
+  "verifications": [
+    {
+      "fiche": "patronymes/PAT_BACAR.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BACAR; nameMain: Bacar; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "« NOM, Prénom » : une étape vers l'uniformisation culturelle ? Identité et statut juridique à Mayotte",
+          "author": null,
+          "year": null,
+          "url": "https://www.migrantsoutremer.org/IMG/pdf/rss-france-est_1999_noms-mahorais.pdf",
+          "source_kind": "academic",
+          "quote": "De ce système les Comoriens n'ont retenu que la partie centrale, constituée du nom individuel, suivi du nom du père.",
+          "supports": "A comorian personal name is an individual name followed by the father's name, which supports non_hereditary_patronymic and individual unit. The article does not mention the spelling Bacar (it cites Bakari); it does not establish the link to the Comorian people. Opened and read in this session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_BAKALA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BAKALA; nameMain: Bakala; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Les noms propres et leurs secrets dans la civilisation précoloniale des Beembe du Congo-Brazzaville (XVIe-XIXe siècles)",
+          "author": null,
+          "year": null,
+          "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2024/01/13-Lucien-NIANGUI-GOMA.pdf",
+          "source_kind": "academic",
+          "quote": "Bakala Etre ou enfant masculin, traduit la force, la vaillance",
+          "supports": "Bakala is attested as a Beembe (Kongo group, Congo-Brazzaville) personal name with a stated meaning. It does not call Bakala a clan name, so it does not support nameSystem clan_name. Opened and read in this session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_BALDE.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BALDE; nameMain: Baldé; nameSystem: clan_name; transmissionMode: patrilineal; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Fulas e Mandingas na luta pelo poder e conquista do Império de Kaabu (UNILAB, 2019)",
+          "author": null,
+          "year": null,
+          "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/3467/1/ibu%20djalo_tcc.pdf",
+          "source_kind": "academic",
+          "quote": "os do clã ururó, o nome de Baldé",
+          "supports": "Baldé is the name used by one Fula clan (ururó) in Guinea-Bissau, quoting Tcherno Djaló 2013, p. 72; supports the clan-name and patrilineal parts of the claim. Quote copied from the fiche's own source note, where an earlier pass recorded it; not re-opened in this session."
+        },
+        {
+          "title": "La Guinée française : races, religions, coutumes, production, commerce (Arcin, 1907)",
+          "author": null,
+          "year": null,
+          "url": "https://archive.org/details/laguinefrana00arci",
+          "source_kind": "archive",
+          "quote": "Ourouro — Ba ou Baldé",
+          "supports": "Colonial administrator's equivalence of the Ourouro group with the names Ba or Baldé (p. 289); colonial source, cited for the forms it reports. Quote copied from the fiche's own source note, where an earlier pass recorded it; not re-opened in this session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_BALOGUN.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BALOGUN; nameMain: Balogun; nameSystem: non_hereditary_patronymic; transmissionMode: patrilineal; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "The History of the Yorubas (Samuel Johnson, 1921)",
+          "author": null,
+          "year": null,
+          "url": "https://archive.org/details/historyofyorubas00john",
+          "source_kind": "academic",
+          "quote": "The term Balogun is contracted from Iba-li-Ogun i.e. lord in war",
+          "supports": "Balogun is first a Yoruba war-chief title (p. 133); supports the title origin, not the non_hereditary_patronymic system. Quote copied from the fiche's own source note, where an earlier pass recorded it; not re-opened in this session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_BALOYI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BALOYI; nameMain: Baloyi; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "The Life of a South African Tribe, vol. I : The Social Life (Junod, 1912)",
+          "author": null,
+          "year": null,
+          "url": "https://archive.org/details/cu31924012891127",
+          "source_kind": "archive",
+          "quote": "first the Baloyi or Ba-ka-Baloyi, in the triangle formed by the two rivers northward of their confluence",
+          "supports": "Baloyi (Ba-ka-Baloyi) is a Thonga/Tsonga group in the Limpopo-Olifants area (p. 17); supports the clan-name and Tsonga association. Colonial missionary source. Quote copied from the fiche's own source note, where an earlier pass recorded it; not re-opened in this session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_BANDA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BANDA; nameMain: Banda; nameSystem: clan_name; transmissionMode: matrilineal; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5",
+      "reviewNote": "The fiche already cites Mbalaka (UKZN thesis, p. 47-50) and Ntara via Juwayeyi 2020 for Banda as a Chewa clan; no verbatim passage was recorded in this session, so none is proposed."
+    },
+    {
+      "fiche": "patronymes/PAT_BANDEIRA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BANDEIRA; nameMain: Bandeira; nameSystem: hereditary_family_name; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Antroponímia portuguesa (Leite de Vasconcelos, 1928)",
+          "author": null,
+          "year": null,
+          "url": "https://archive.org/details/antroponimia-portuguesa",
+          "source_kind": "linguistic_reference",
+          "quote": "Lança, Bandeira, apelidos usuais.",
+          "supports": "Bandeira is a usual Portuguese family name (p. 272); supports hereditary_family_name of Portuguese origin. Nothing on São Tomé and Príncipe. Quote copied from the fiche's own source note, where an earlier pass recorded it; not re-opened in this session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_BANGAYASSI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BANGAYASSI; nameMain: Bangayassi; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5",
+      "reviewNote": "Searches for 'Bangayassi' (name, village, Gbaya) found no dedicated work. The only attestation is a 2012 World Bank report that names a consultant; it states no origin, people or system."
+    },
+    {
+      "fiche": "patronymes/PAT_BANGOURA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BANGOURA; nameMain: Bangoura; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "La Guinée française : races, religions, coutumes, production, commerce (Arcin, 1907)",
+          "author": null,
+          "year": null,
+          "url": "https://archive.org/details/laguinefrana00arci",
+          "source_kind": "archive",
+          "quote": "Les Bangoura ne se rencontrent que chez les Soso surtout dans le Kaloum, le Soumboya, où ils sont chefs secondaires, dans le Kabitaye où ils forment la famille royale.",
+          "supports": "Bangoura is a Soso (Soussou) family name with chiefly status (p. 303); supports clan_name. Colonial source. Quote copied from the fiche's own source note, where an earlier pass recorded it; not re-opened in this session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_BAPTISTA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BAPTISTA; nameMain: Baptista; nameSystem: hereditary_family_name; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Antroponímia portuguesa (Leite de Vasconcelos, 1928)",
+          "author": null,
+          "year": null,
+          "url": "https://archive.org/details/antroponimia-portuguesa",
+          "source_kind": "linguistic_reference",
+          "quote": "Batista (antigamente Bautista, de Baptista)",
+          "supports": "Baptista/Batista is a Portuguese family name derived from the epithet of Saint John the Baptist (p. 140); supports hereditary_family_name. Nothing on Angola. Quote copied from the fiche's own source note, where an earlier pass recorded it; not re-opened in this session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    }
+  ]
+}
