@@ -36,8 +36,9 @@ export const READER_QUERIES: ReaderQuery[] = [
   { typed: "les krus", problem: "article + plural", outcome: "hit" },
   {
     typed: "les siamou",
-    problem: "article; the name is not in the corpus",
-    outcome: "neighbour",
+    problem:
+      "article; no entry is named Siamou, the Krou family prose mentions it",
+    outcome: "widened",
   },
   { typed: "les peuls", problem: "article + plural", outcome: "hit" },
   { typed: "les hausas", problem: "article + plural", outcome: "hit" },
