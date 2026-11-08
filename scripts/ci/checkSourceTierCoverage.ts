@@ -61,8 +61,10 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * 873 -> 867 on 2026-11-03: the Khoe, Khoisan and Krou family fiches dropped
  * six unruled citations that no longer support any claim once their sections
  * were rewritten from sources read.
+ * 867 -> 864 on 2026-11-08: three needs_review citations left with the
+ * claims they carried in the premium pass of eight people fiches.
  */
-export const NEEDS_REVIEW_RATCHET = 867;
+export const NEEDS_REVIEW_RATCHET = 864;
 
 /** The doctrine's three tiers, plus the numeric tiers the name/relation/migration fiches still carry. */
 const TIERS_WITH_AUTHORITY = new Set<unknown>([

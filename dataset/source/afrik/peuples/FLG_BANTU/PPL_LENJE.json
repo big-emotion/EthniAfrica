@@ -137,11 +137,11 @@
         "source_kind": "academic"
       },
       {
-        "title": "2010 Census of Population and Housing: National Analytical Report",
+        "title": "Zambia 2010 Census of Population and Housing: National Analytical Report",
         "author": "Central Statistical Office (Zambie)",
         "year": 2012,
-        "url": "https://catalog.ihsn.org//catalog/4124/download/55311",
-        "tier": "unverified",
+        "url": "https://catalog.ihsn.org/catalog/4124/download/55311",
+        "tier": "official",
         "source_kind": "official_statistics",
         "page": "p. 63-68",
         "notes": "Rapport du recensement national de 2010, publié à Lusaka en décembre 2012 et diffusé par le catalogue d'enquêtes de l'International Household Survey Network, lu le 3 novembre 2026. Tableaux 10.1, 10.4, 10.6 et 10.8 : 1,6 % des habitants se disent lenje, 9,5 % dans la province Centrale ; 1,2 % emploient surtout le lenje pour communiquer. Le rapport compte officiellement 73 groupes ethniques."
@@ -224,11 +224,11 @@
             "aspect": "usage",
             "sources": [
               {
-                "title": "2010 Census of Population and Housing: National Analytical Report",
+                "title": "Zambia 2010 Census of Population and Housing: National Analytical Report",
                 "author": "Central Statistical Office (Zambie)",
                 "year": 2012,
-                "url": "https://catalog.ihsn.org//catalog/4124/download/55311",
-                "tier": "unverified",
+                "url": "https://catalog.ihsn.org/catalog/4124/download/55311",
+                "tier": "official",
                 "source_kind": "official_statistics",
                 "page": "p. 67-68",
                 "notes": "Rapport du recensement national de 2010, publié à Lusaka en décembre 2012, lu le 3 novembre 2026. Tableaux 10.6 et 10.8 : la part des Lenje dans le pays, en ville et à la campagne, et dans chaque province."

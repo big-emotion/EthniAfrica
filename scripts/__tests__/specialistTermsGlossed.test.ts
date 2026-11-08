@@ -16,17 +16,15 @@ describe("specialist terms in the fiches", () => {
   it("explains ATR where a vowel system is described with it", () => {
     for (const file of [
       "famille_linguistique/FLG_GUR.json",
-      "famille_linguistique/FLG_MANDE.json",
-      "famille_linguistique/FLG_NIGERCONGO.json",
-      "famille_linguistique/FLG_NILOSAHARIENNE.json",
       "peuples/FLG_KWA/PPL_NKONYA.json",
     ]) {
       expect(read(file), file).toContain("racine de la langue");
     }
-    // The Niger-Congo and Nilo-Saharan fiches were rewritten from the sources
-    // they cite on 2026-11-03 and no longer describe vowels with ATR; if the
-    // term comes back there, it comes back with its gloss.
+    // The Mande, Niger-Congo and Nilo-Saharan fiches were rewritten from the
+    // sources they cite on 2026-11-03 and no longer describe vowels with ATR;
+    // if the term comes back there, it comes back with its gloss.
     for (const file of [
+      "famille_linguistique/FLG_MANDE.json",
       "famille_linguistique/FLG_NIGERCONGO.json",
       "famille_linguistique/FLG_NILOSAHARIENNE.json",
     ]) {

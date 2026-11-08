@@ -184,10 +184,10 @@
         "notes": "Catalogue des langues du monde, lu le 3 novembre 2026. Il classe le mbunda dans le groupe ngangela-nyemba, avec le luimbi et le mbwela, et compte le nkangala comme une langue distincte. Il recense les noms Chimbunda, Gimbunda, Kimbunda et Mbuunda, et les travaux de Boubacar Diarra sur la langue, dont une Gramática Mbunda (1990)."
       },
       {
-        "title": "2010 Census of Population and Housing: National Analytical Report",
+        "title": "Zambia 2010 Census of Population and Housing: National Analytical Report",
         "author": "Central Statistical Office, Zambie",
         "year": 2012,
-        "url": "https://catalog.ihsn.org/catalog/4124",
+        "url": "https://catalog.ihsn.org/catalog/4124/download/55311",
         "tier": "official",
         "source_kind": "official_statistics",
         "page": "p. 63-68",
@@ -303,10 +303,10 @@
             "aspect": "usage",
             "sources": [
               {
-                "title": "2010 Census of Population and Housing: National Analytical Report",
+                "title": "Zambia 2010 Census of Population and Housing: National Analytical Report",
                 "author": "Central Statistical Office, Zambie",
                 "year": 2012,
-                "url": "https://catalog.ihsn.org/catalog/4124",
+                "url": "https://catalog.ihsn.org/catalog/4124/download/55311",
                 "tier": "official",
                 "source_kind": "official_statistics",
                 "page": "p. 64-68",

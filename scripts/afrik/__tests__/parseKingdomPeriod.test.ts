@@ -212,7 +212,9 @@ describe("parseKingdomPeriod", () => {
     // the Libya fiche the Fezzân under Kanem and the 1943-1951 administrations.
     // 301 -> 305: premium countries batch 04 adds dated kingdoms on Ghana,
     // Guinea, Guinea-Bissau and Equatorial Guinea.
-    expect(labels).toHaveLength(305);
+    // 305 -> 314 on 2026-11-08: the other consolidated premium countries
+    // batches add their dated kingdoms and administrations.
+    expect(labels).toHaveLength(314);
     expect(parsed.length).toBeGreaterThanOrEqual(180);
   });
 });
