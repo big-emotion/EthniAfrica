@@ -85,7 +85,14 @@ export const DEAD_CODE_CEILINGS: Readonly<Record<DeadCodeCategory, number>> = {
   // read it for weeks, and only a {@link} in a removed sibling's doc kept
   // knip counting it. What remains is seven shadcn sub-components kept as
   // library surface.
-  exports: 7,
+  //
+  // 7 -> 0 in the 2026-11 quality-debt pass. The seven were six shadcn
+  // sub-components (DropdownMenuGroup, DropdownMenuPortal, DropdownMenuSub,
+  // DropdownMenuRadioGroup, SelectGroup, SheetClose) that no component,
+  // story, script or ESLint rule imported, and `SEARCH_EMPTY_LINK_LABEL`,
+  // whose home hero caller had gone. A primitive needed later is one line to
+  // re-export from its Radix package; the ceiling is now zero like the rest.
+  exports: 0,
   // 50 -> 49 when the bilingual glossary's vocabulary file started keying
   // the patronyme labels by `PatronymeNameSystem`, which the parsers file
   // exported and nothing read.
