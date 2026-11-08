@@ -3,106 +3,107 @@
   "nameMain": "Akye",
   "languageFamilyId": "FLG_KWA",
   "currentCountries": ["CIV"],
+  "classificationStatus": "colonial-legacy",
   "content": {
     "appellations": {
       "mainName": "Akye",
-      "selfAppellation": "Akye",
+      "selfAppellation": "Akyé",
       "exonyms": [
+        "Attié",
+        "Atié",
         "Attie",
         "Attye",
         "Atye",
-        "Akie",
-        "Akye (forme normalisee)",
         "Atché",
-        "Atshe"
+        "Atshe",
+        "Kurobu"
       ],
-      "spellingAliases": ["Akyé", "Attié"],
-      "originOfExonyms": "Attie est le nom français le plus répandu. L'administration coloniale l'employait et il figure encore dans de nombreuses sources. Les personnes concernées se nomment Akye. Attye, Atye et Akie sont d'autres manières de transcrire ce même nom.",
-      "whyProblematic": null,
-      "contemporaryUsage": "Le terme Akye est prefere par les locuteurs et tend a s'imposer dans les sources academiques contemporaines, tandis qu'Attie reste courant dans les usages administratifs et touristiques ivoiriens.",
+      "spellingAliases": ["Akyé", "Akyè", "Akié", "Akie"],
+      "originOfExonyms": "Attié est le nom sous lequel les Européens ont connu les Akyé : Maurice Delafosse l'écrit en 1904 comme « le nom donné par les Européens », et les rapports de l'administration coloniale de 1908 à 1913, cités par Dian Boni, parlent du « pays Attié ». Selon Dian Boni, c'est une écriture adoptée par les colons pour le nom Akié. Attye, Atye et Atché sont d'autres manières de l'écrire. Kurobu est le nom que les Baoulé donnaient aux Akyé en 1904, selon Delafosse ; les Agni de l'est disaient alors Akye.",
+      "whyProblematic": "Le nom Attié est une écriture fixée par les colons, selon Dian Boni, géographe originaire du pays akyé, qui lui préfère en 1970 la forme Akié, conforme selon lui à l'usage local. Les rapports de la conquête française, de 1908 à 1913, emploient ce nom pour un peuple qu'ils décrivent comme à soumettre et à désarmer. Le nom Akyé lui-même ne couvrait pas tout le monde en 1904 : selon Delafosse, les Nédin d'Alépé ne se le donnaient pas.",
+      "contemporaryUsage": "Les deux noms restent en usage. La norme internationale des codes de langues (ISO 639-3) et le catalogue Glottolog nomment la langue attié, sous le code ati. Les travaux écrits par des Akyé, comme la thèse de Dian Boni en 1970, emploient Akyé ou Akié.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null,
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Kwa (branche Lagoonaire / Lagunaire)",
-      "historicalRegion": "Sud-est de la Cote d'Ivoire, zone lagunaire au nord de Grand-Bassam et Bingerville",
+      "historicalRegion": "Sud-est de la Côte d'Ivoire, zone lagunaire au nord de Grand-Bassam et Bingerville",
       "currentCountries": ["CIV"]
     },
     "ethnicities": [
-      "Akye du secteur de Bingerville — groupe meridional proche d'Abidjan",
-      "Akye du secteur d'Adzope — groupe septentrional",
-      "Akye du secteur d'Akoupe — groupe oriental",
-      "Sous-groupes locaux lies aux villages autonomes de la zone lagunaire",
-      "Akye des regions de l'interieur (nord d'Adzope) — sous-groupe continental",
-      "Nindins : groupe concentré autour d'Anyama et Alépé, proches d'Abidjan",
-      "Bodins : groupe de la région d'Adzopé, Yakassé-Attobrou et Kodioussou",
-      "Kétins : groupe établi autour d'Akoupé",
-      "Andokoi : sous-groupe de la zone forestière orientale",
-      "Annapun : sous-groupe de la région d'Alépé",
-      "Attobrou : sous-groupe méridional",
-      "N'gadié (N'kadzun) : lignage de la forêt centrale"
+      "Kettin, ou Ketté : groupe du nord, autour d'Akoupé ; Dian Boni l'estime à environ 30 000 personnes vers 1970, le plus nombreux des groupes akyé.",
+      "Tchoyasso : groupe de la région d'Adzopé, le deuxième par le nombre selon Dian Boni.",
+      "N'kadzê, ou Ngadié : groupe de la sous-préfecture d'Adzopé, entre Adzopé et Yakassé ; Delafosse écrit Ngadye en 1904.",
+      "Attobouun, ou Atobru : groupe de Yakassé-Attobrou, près de la Comoé ; Delafosse écrit Atobu en 1904.",
+      "Anapê, ou Annépé : groupe au sud d'Adzopé, dont le village d'Adonkoi.",
+      "Brignan : groupe des villages de Bécédi-Brignan, que Dian Boni présente comme à part.",
+      "Bodin, ou Bodê : groupe du nord de la sous-préfecture d'Alépé, selon Dian Boni. En 1904, Delafosse nomme Budê ou Bodé, ou encore Akye-Kotoko, l'une des deux grandes familles akyé, dont le parler se parle à l'ouest de la rivière Mé.",
+      "Lépê, ou Lépin : groupe d'Alépé, de Memni et de Montézo. En 1904, Delafosse nomme Nedï, Blemmi ou Elèpè la famille qui parle le dialecte d'Alépé et de Memni.",
+      "Nédin, Gnan et Tson : groupes de la sous-préfecture d'Anyama, autour d'Anyama et d'Attinguié, selon Dian Boni."
     ],
     "origins": {
-      "ancientOrigins": "Les Akye font partie des peuples akan installes dans le sud-est de la Cote d'Ivoire. Leur appartenance au groupe Kwa de la famille Niger-Congo les relie aux peuples akan du Ghana. La zone lagunaire de la Cote d'Ivoire orientale est habitee par douze groupes linguistiques distincts, dont les Akye constituent l'un des plus importants. La montee en puissance des premiers Etats akan centralises est datable du 13e siecle, liee a l'ouverture de routes commerciales pour l'or.",
-      "formationPeriod": "Les Akye se sont constitues comme groupe distinct au sein de la mouvance akan, probablement entre le 13e et le 15e siecle, lors de l'expansion des peuples kwa vers la cote ivoirienne. Avant la colonisation, chaque village akye etait autonome et les communautes s'unissaient ponctuellement en confederations face aux menaces exterieures.",
+      "ancientOrigins": "Les récits recueillis chez les Akyé par Denise Paulme et par Dian Boni, publiés en 1966 et en 1970, font venir ce peuple de l'est, du pays ashanti, dans l'actuel Ghana. Selon ces récits, les Akyé sont parents des Baoulé, des Agni et des Ashanti : une même aïeule aurait eu deux filles, ancêtres des Akyé et des Baoulé, et un fils, ancêtre des Agni et des Ashanti. Maurice Delafosse proposait en 1904 une autre hypothèse : les Akyé auraient formé, avec les Abouré et les Mékyibo, un ancien groupe déjà installé, bouleversé ensuite par l'arrivée des Agni et des Ashanti. Les linguistes rangent leur langue dans la branche kwa ; Glottolog la place dans le groupe nyo de cette branche.",
+      "formationPeriod": "Dian Boni rattache le départ du pays ashanti à une querelle de succession après la mort du roi ashanti Osei Tutu, et le situe vers la fin du XVIIe ou le début du XVIIIe siècle. Il remarque aussi que les groupes akyé existaient peut-être déjà avant ce départ. Les sources lues ne donnent pas d'autre date.",
       "migrationRoutes": [
-        "Migrations depuis l'interieur des terres vers la zone lagunaire du sud-est ivoirien",
-        "Pression du grand royaume ashanti au 18e siecle ayant consolide la fixation des groupes lagunaires",
-        "Ghana (territoire ashanti) → migration vers l'ouest en compagnie des futurs Baoulé et Agni",
-        "Traversée du fleuve Comoé en crue : selon la légende, la reine Abla Pokou sacrifia son fils nouveau-né pour que le génie des eaux permette le passage",
-        "Séparation du groupe baoulé-agni après la traversée : les Akyé s'installent à l'ouest et au sud du Comoé",
-        "Fondation du premier village Akyé : Bouapé, point de départ de l'expansion dans la région des Lagunes"
+        "Départ du pays ashanti vers l'ouest après une querelle autour du sabre royal au manche couvert d'or, selon les récits rapportés par Denise Paulme et Dian Boni.",
+        "Traversée de la Comoé en crue : selon le récit recueilli par Dian Boni, la sœur du chef offre son dernier-né en sacrifice pour que le groupe puisse passer ; dans une version recueillie par Denise Paulme, le passage coûte deux victimes, le fils de Pokou, sœur du chef baoulé, et un neveu du chef akyé.",
+        "Lieu du passage : selon Dian Boni, le passage rocheux de Mlamlasson, à une vingtaine de kilomètres en amont de Petit-Alépé.",
+        "Séparation après la traversée : les Baoulé partent vers le nord-ouest, les Akyé vers le sud-ouest et la forêt.",
+        "Selon les Akyé du nord interrogés par Dian Boni, rassemblement au village de Bouapé, puis dispersion des groupes et fondation d'Asseudji ; les Attobouun disent être passés par Bongo Awin, puis Yakassé.",
+        "Selon Dian Boni, les Lépê seraient passés par Krindjabo, en pays agni, avant de s'installer près d'Alépé, chez les Mbato ; les Nédin et les Gnan auraient vécu ensemble à Bofammun avant de s'établir en pays ébrié, autour d'Anyama et d'Attinguié."
       ],
       "historicalSettlementZones": [
-        "Zone lagunaire du sud-est de la Cote d'Ivoire — entre Abidjan, Bingerville et Grand-Bassam au sud",
-        "Region d'Adzope et d'Akoupe au nord",
-        "Environs de la lagune Potou et de l'Aby",
-        "Voisinage direct de l'actuelle agglomeration d'Abidjan, qui s'est developpee sur des terres akye",
-        "Bouapé : premier village fondé (zone de dispersion initiale)",
-        "Sous-préfectures d'Agou, Assikoi, Bécédi-Brignan, Yakassé-Mé, Bieby"
+        "Pays compris entre la Comoé à l'est et l'Agnéby à l'ouest, jusqu'à la hauteur de Zaranou au nord ; environ 7 500 km² selon Denise Paulme en 1966.",
+        "Sous-préfectures d'Adzopé et d'Alépé, et groupes rattachés d'Anyama et d'Akoupé, selon Denise Paulme et Dian Boni.",
+        "En 1904, selon Delafosse : à l'est la Comoé d'Alépé à Abradine, au nord le Moronou, à l'ouest le pays des Abè, au sud une ligne d'Anyama à la lagune Potou.",
+        "Premiers villages cités par la tradition : Bouapé, Asseudji, Bofammun et Adakié, devenus de petits villages vers 1970 selon Dian Boni."
       ],
-      "unificationsOrDivisions": "Les Akye n'ont pas forme d'Etat centralise propre, mais ont maintenu une organisation en villages autonomes partageant une identite culturelle et linguistique commune. En cas de menace exterieure, ils se federaient sous l'autorite d'un chef territorial. L'administration coloniale francaise a introduit un systeme de chefferies formelles.",
-      "externalInfluences": "Appartenance a la mouvance akan du Ghana : partage de nombreux traits culturels (structures matrilineaires dans certains sous-groupes, art de la statuaire, economies agricoles). Contacts avec les peuples voisins (Anyi, Asante, Fante). Christianisation progressive depuis la periode coloniale. Influence de la culture urbaine d'Abidjan depuis l'independance (1960).",
-      "majorHistoricalEvents": "Integration dans la colonie francaise de la Cote d'Ivoire a la fin du 19e siecle. Resistance a la penetration coloniale avant la soumission definitive. Depuis l'independance (1960), integration progressive dans l'economie ivoirienne, notamment via la culture du cacao et la proximite avec Abidjan."
+      "unificationsOrDivisions": "Les Akyé n'ont pas formé d'État. Selon Dian Boni, chaque village est politiquement indépendant et aucun n'exerce d'autorité sur les autres, même à l'intérieur d'un groupe. Denise Paulme note des traditions d'amitié et d'entraide entre certains villages, qui s'unissaient pour faire la guerre, par exemple Grand-Alépé, Montézo et Memni contre les Mbato. Dian Boni signale une exception à la fin du XIXe siècle : Séka Séka, de Moapé, aurait étendu son autorité militaire sur une bonne partie du pays.",
+      "externalInfluences": "Denise Paulme rapproche les classes d'âge akyé et leurs chefs de guerre, les safwe, des compagnies de guerriers des peuples akan, l'asafo. Dian Boni relève que plusieurs noms de villages du groupe Attobrou viennent de la langue agni. Des missionnaires catholiques se sont installés dans la région d'Alépé vers 1890-1900, selon Dian Boni. En 1964, les Akyé d'Alépé se disaient tous catholiques, protestants ou harristes, selon Denise Paulme ; vers 1970, la région d'Adzopé et le canton Bodin restaient en majorité fidèles aux religions anciennes, selon Dian Boni.",
+      "majorHistoricalEvents": "En 1889, l'explorateur Louis-Gustave Binger traverse le pays ; en 1896, le capitaine Crosson le parcourt pour tracer une voie ferrée, selon Denise Paulme. La conquête française du nord du pays a lieu de 1908 à 1913 à partir du poste d'Adzopé. Selon les rapports d'archives cités par Dian Boni, le chef de poste Gourgas est tué, le poste d'Adzopé est attaqué en janvier 1910, les villages doivent livrer leurs fusils et détruire leurs campements en forêt. Selon Denise Paulme, le café et le cacao ont été plantés autour des villages une quarantaine d'années avant 1964."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Traditionnellement, les Akye ne sont pas gouvernes par des chefs hereditaires au sens strict. La position sociale est determinee par l'age. La royaute est liee a la terre : toute personne pouvant faire remonter sa descendance a un membre fondateur d'un village peut etre consideree comme appartenant a la noblesse. En cas de menace, une hierarchie s'instaurait : chef de village, chef territorial, puis chef de division au sein d'une confederation plus large.",
-      "clanOrganization": "Chaque famille est responsable du maintien de l'ordre politique et social en son sein. L'organisation clanique est patrilineaire, organisee en familles etendues et lignages. La royaute ancestrale et la connexion a la terre fondent la legitimite.",
-      "ageClassSystems": null,
-      "roleOfLineages": "Les lignages patrilineaires determinent l'identite, l'appartenance territoriale et les droits fonciers. Les ancetres fondateurs des villages confernent une legitimite politique aux descendants.",
-      "religiousAuthority": "Autorite des pretres servant les divinites locales (abosom) et des ancetres. Des femmes peuvent exercer des fonctions de pretresses. L'Eglise catholique et les eglises protestanttes jouent un role important depuis la periode coloniale, generant un syncretisme repandu."
+      "traditionalPoliticalSystem": "Le village est l'unité politique. Selon Dian Boni, le chef de village est désigné de façon différente selon les groupes : la charge est héréditaire chez les Ketté, elle tourne entre les grandes familles chez les Anapê, et chez les Lépê et les Nédin le chef est choisi dans la classe d'âge au pouvoir. Denise Paulme note qu'un chef peut être destitué à tout moment par le conseil du village. Dian Boni décrit aussi une ancienne hiérarchie : les biaby, descendants des fondateurs, les tsà, placés sous leur protection, et des esclaves achetés hors du pays akyé ; vers 1970, seules les personnes âgées s'en souvenaient.",
+      "clanOrganization": "La filiation est matrilinéaire : un enfant appartient au clan de sa mère, le wə, selon Denise Paulme. Grand-Alépé comptait six clans en 1964, chacun avec un chef, le wəyi. Les enfants vivent pourtant chez leur père, et le père transmet son nom. Denise Paulme y voit une double filiation dans les faits. Dian Boni décrit la même société comme matrilinéaire avec résidence chez le père, et nomme woueu la parenté maternelle et paternelle d'un enfant.",
+      "ageClassSystems": "Selon Denise Paulme, les Akyé d'Alépé connaissent trois classes d'âge, les Niando, les Dyigbo et les Brešue, des noms qu'on retrouve chez les Mbato voisins. La classe d'un homme dépend de celle de son père, et non de son âge ; une nouvelle classe est initiée environ tous les seize ans ; la dernière initiation d'Alépé eut lieu en 1960. Autour d'Adzopé, ces classes ne jouaient presque plus de rôle en 1964. Dian Boni décrit chaque classe divisée en quatre groupes selon l'âge, de Guiéwoueu à Agbri, menés chacun par un chef, le sawouê, et la danse guerrière du fokwe.",
+      "roleOfLineages": "Le lignage, lamẽ, détient les terres, les bijoux en or et la chaise qui sert d'autel aux ancêtres, selon Denise Paulme. Une terre ne passe jamais du père au fils : elle revient à un parent de la lignée maternelle, désigné par le conseil du lignage. Les vieilles femmes y sont décrites comme les gardiennes des traditions. Un décret d'octobre 1964 a institué en Côte d'Ivoire le régime successoral français.",
+      "religiousAuthority": "Selon Denise Paulme, le chef de clan, le wəyi, est un prêtre chargé de défendre le clan contre la sorcellerie ; il purifie les fautifs et informe les ancêtres du pardon accordé. Le doyen de chaque lignage garde la chaise sur laquelle on offrait des sacrifices aux ancêtres. En 1964, les Akyé d'Alépé se déclaraient catholiques, protestants ou harristes."
     },
     "languages": {
-      "mainLanguage": "Akye (Attie)",
+      "mainLanguage": "Akyé ou attié (ati)",
       "isoCodes": ["ati"],
       "dialects": [
-        "Variante meridionale — secteur de Bingerville et Grand-Bassam",
-        "Variante septentrionale — secteur d'Adzope",
-        "Variante orientale — secteur d'Akoupe",
-        "Dialecte Nindin (région Anyama-Alépé) : variante du groupe nord-occidental",
-        "Dialecte Bodin (région Adzopé-Yakassé-Attobrou) : variante centrale, base de référence",
-        "Dialecte Kétin (région Akoupé) : variante orientale"
+        "Parler bodé, à l'ouest de la rivière Mé, et parler nédin, à Alépé, Memni et Montézo, selon Delafosse en 1904.",
+        "Parlers d'Alépé et d'Adzopé, distincts sans rompre l'unité de la langue, selon Denise Paulme en 1966."
       ],
-      "vehicularRole": "L'akye (code ISO 639-3 : ati) est classe langue stable et vivante par l'Ethnologue (SIL). Il est parle comme premiere langue par l'ensemble de la communaute ethnique. La langue n'est pas enseignee dans les ecoles. Le francais est la langue d'enseignement et de l'administration en Cote d'Ivoire. L'akye appartient au groupe lagunaire de la branche Kwa."
+      "vehicularRole": "La langue akyé est classée dans la branche kwa, groupe nyo, par Glottolog, qui la donne comme non menacée. Delafosse la jugeait en 1904 très différente de l'abouré et du mékyibo, mais plus proche de ces deux langues que des autres langues des lagunes. Les sources lues ne disent pas si elle est enseignée à l'école ni si d'autres peuples l'emploient."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q417996",
+      "glottocode": "atti1239",
+      "iso639_3": "ati"
     },
     "culture": {
-      "majorRites": "Les ceremonies de mariage traditionnel (dot, appellee 'Dot' en ivoirien) impliquent des negociations entre familles, des apports de biens et des celebrations communautaires. Les rites funeraires donnent lieu a des veillees, des repas collectifs et des ceremonies de levee de deuil. Des libations sont versees quotidiennement aux ancetres enteres dans la terre comme offrandes propitiatoires. Des statues representant les forces de la fecondite feminine sont utilisees dans des rituels agricoles et de fertilite. Les ceremonies liees aux cycles agricoles (yam et taro comme cultures principales) ponctuent le calendrier rituel.",
-      "symbols": "Les statues anthropomorphes de type alangua — debout ou assises, aux bras et jambes bulbeux — constituent l'expression artistique la plus identifiable des Akye. Elles presentent des coiffures geometriques caracteristiques et des marques de scarification en relief obtenues par insertion de chevilles en bois. La terre est concue comme une divinite feminine directement liee a la fertilite et a la fecondite, et constitue un symbole cosmologique central.",
-      "artsAndMusic": "La statuaire en bois est la forme d'art la plus caracteristique des Akye : figurines humaines, tabourets symbolisant le siege du pouvoir, poupees de fertilite, objets en ivoire et en laiton. La fonte a la cire perdue (or et laiton) est egalement pratiquee, dans la tradition akan elargie. La poterie et le tissage sont des traditions artisanales bien etablies. La musique traditionnelle inclut des chants ceremonials et des percussions lors des ceremonies de mariage, de funerailles et des fetes agricoles. Les femmes controlent les marches locaux et jouent un role economique et social important.",
-      "spiritualities": "Les Akye croient en un dieu supreme dont le nom varie selon les regions, trop distant pour etre contacte directement — conformement a la cosmologie akan elargie. Ce dieu a interagi librement avec les hommes autrefois mais s'est eloigne apres avoir ete frappe par le pilon d'une vieille femme pilant du fufu. De nombreuses divinites (abosom) recueilent l'energie du dieu supreme et sont liees au monde naturel (esprits des rivieres, des lacs, de l'ocean, divinites locales). Des pretres servent ces esprits individuels comme intermediaires. La terre est veneree comme une divinite feminine. Les ancetres inhumes dans la terre recoivent des libations quotidiennes. Le christianisme est majoritaire parmi les Akye, creant un syncretisme vivant avec les croyances traditionnelles."
+      "majorRites": "L'initiation des classes d'âge, environ tous les seize ans, impose aux jeunes des épreuves, selon Denise Paulme. Chaque année, la fête des ignames nouvelles donne lieu à la parade du fokwe. Les funérailles sont organisées par le chef du clan, avec une caisse commune alimentée par les membres. Au mariage, la jeune fille porte pendant plusieurs jours les bijoux en or de son lignage et va de cour en cour.",
+      "symbols": "Chaque lignage garde une chaise, mbesia, qui sert d'autel aux ancêtres ; certains lignages possèdent aussi une canne à pommeau couvert d'or, signe de pouvoir, selon Denise Paulme. Le chef de guerre, safwe, porte un bonnet en peau de panthère et un sabre. Selon Dian Boni, la lame du sabre royal emporté du pays ashanti serait gardée à Asseudji.",
+      "artsAndMusic": "La danse du fokwe, la danse des classes d'âge, accompagne la fête des ignames et les funérailles d'un membre de la classe. Les musiciens qui la soutiennent jouent du tambour, de la cloche, de la flûte traversière et des hochets ; ces charges se transmettent dans certains lignages, selon Denise Paulme. Les sources lues ne décrivent pas la sculpture akyé.",
+      "spiritualities": "Selon Denise Paulme, la sorcellerie est une crainte forte, et nul ne peut nuire par sorcellerie à un membre de son propre lignage. Des sacrifices étaient offerts aux ancêtres sur les chaises des lignages. En 1964, les Akyé d'Alépé se disaient tous chrétiens, catholiques, protestants ou harristes ; vers 1970, Dian Boni décrit la région d'Adzopé et le canton Bodin comme restés en majorité fidèles aux religions anciennes, avec une influence chrétienne croissante."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Les Akye n'ont pas constitue de royaumes centralises independants mais font partie du vaste ensemble culturel akan. Chaque village maintint son autonomie sous la direction de chefs villageois, avec des confederations temporaires en periode de conflit. L'histoire politique akye est essentiellement locale et villageoise. Contrairement aux Ashanti ou aux Fanti, les Akye ont preserve une organisation decentralisee fondee sur l'autonomie villageoise et l'autorite des anciens.",
-      "relationsWithNeighbors": "Voisinage avec les Anyi (Agni) a l'est avec lesquels les Akye partagent de nombreux traits culturels akan. Relations avec les peuples lagunaires (Alladian, Avikam, Adjoukrou) au sud et a l'ouest. Echanges commerciaux et culturels avec Abidjan depuis la periode coloniale — la ville s'est developpee sur d'anciens territoires akye. Les femmes akye ont toujours controle les marches locaux, jouant un role economique majeur dans les echanges regionaux.",
-      "conflictsOrAlliances": "Integration dans des confederations akan etendues lors de menaces exterieures, dans la tradition des peuples kwa de Cote d'Ivoire. Resistance a la penetration coloniale francaise avant l'occupation definitive a la fin du 19e siecle. Depuis l'independance de la Cote d'Ivoire (1960), les Akye participent a la vie politique ivoirienne. Leur territoire historique a ete partiellement absorbe par l'expansion urbaine d'Abidjan, generant des conflits fonciers contemporains.",
-      "diaspora": "Diaspora akye principalement interne : migration vers Abidjan et les grandes villes ivoiriennes depuis la periode post-coloniale. Presence limitee dans les pays occidentaux."
+      "kingdomsOrChiefdoms": "Les Akyé n'ont pas eu de roi ni de pouvoir central, à la différence des Ashanti, des Agni et des Baoulé, selon Dian Boni. La tradition orale qu'il rapporte parle pourtant d'un roi qui aurait mené le départ du pays ashanti. À la fin du XIXe siècle, Séka Séka, de Moapé, aurait dominé militairement une partie du pays.",
+      "relationsWithNeighbors": "Les Akyé ont pour voisins les Agni au nord et à l'est, et les peuples des lagunes au sud : Mbato, Abouré et Ébrié, selon Denise Paulme. Binger décrit en 1889 des Akyé en guerre avec leurs voisins et attaquant les pirogues sur la Comoé. Les villages d'Alépé combattaient les Mbato, qu'ils accusaient d'avoir chassé leurs pères. Selon Dian Boni, les Nédin se sont installés en pays ébrié après des guerres suivies d'un accord. En 1964, des hommes venus d'ailleurs, Bété, Mossi ou Sénoufo, pouvaient devenir Akyé en épousant une femme du village et en y restant.",
+      "conflictsOrAlliances": "Le nord du pays akyé a résisté à la conquête française de 1908 à 1913. Selon les rapports cités par Dian Boni, le poste d'Adzopé est attaqué en janvier 1910, et l'administration craint une alliance des Akyé avec les Abbey. Un rapport de 1909 accuse des Anglais de fournir des armes aux Akyé. La région d'Alépé et d'Anyama, déjà en contact avec les missionnaires, a été occupée sans grands combats, à part des incidents à Danguira en 1909.",
+      "diaspora": "Denise Paulme note en 1964 que des Akyé d'Alépé installés à Abidjan cherchent encore une épouse parmi les filles d'Alépé. Les sources lues ne décrivent pas de communauté akyé hors de Côte d'Ivoire."
     },
     "demography": {
-      "totalPopulation": 838000,
-      "referenceYear": 2025,
-      "source": "Joshua Project (2024) : 838 000 en Cote d'Ivoire. Peoplegroups.org (2023) : 790 000. Estimation 2025 par projection legere. Ethnologue (SIL) : 10 000 a 1 000 000 locuteurs (fourchette large). La population est exclusivement localisee en Cote d'Ivoire.",
+      "totalPopulation": 858000,
+      "referenceYear": 2026,
+      "source": "Aucun chiffre récent tiré d'un recensement n'a été trouvé : nous n'avons pas trouvé de tableau par peuple dans les résultats publiés des recensements ivoiriens. Le chiffre retenu, 858 000 personnes, vient de Joshua Project, une base de données missionnaire, consultée le 3 novembre 2026 ; elle ne donne ni date ni source précise pour ce chiffre. Les chiffres datés les plus anciens que nous avons lus sont ceux de Denise Paulme, un peu plus de 100 000 personnes dans les sous-préfectures d'Adzopé et d'Alépé et environ 12 000 autour d'Anyama et d'Akoupé en 1964, et ceux de Dian Boni, environ 150 000 habitants du pays akyé vers 1970, d'après les recensements administratifs de 1959 à 1967.",
       "distributionByCountry": [
         {
           "country": "CIV",
-          "population": 838000,
-          "note": "Sud-est de la Cote d'Ivoire : secteurs de Bingerville, Adzope, Akoupe, zone lagunaire au nord d'Abidjan"
+          "population": 858000,
+          "percentage": 100,
+          "note": "Sud-est de la Côte d'Ivoire : départements d'Adzopé, d'Akoupé, d'Alépé, de Yakassé-Attobrou et d'Anyama."
         }
       ]
     },
@@ -191,11 +192,43 @@
         "url": "https://www.youtube.com/watch?v=Qpqx8Biibg4",
         "tier": "unverified",
         "source_kind": "press"
+      },
+      {
+        "title": "Première approche des Atié (Côte d'Ivoire)",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1966_num_6_21_3059",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Denise Paulme, Cahiers d'études africaines, vol. 6, n° 21, 1966, p. 86-120, lu le 3 novembre 2026 sur Persée. Étude faite après quatre mois en pays akyé en 1964 : territoire et population (p. 86), récits d'origine et explications du nom (p. 88), clans matrilinéaires et lignages (p. 90-101), classes d'âge (p. 104-113)."
+      },
+      {
+        "title": "Le pays akyé (Côte d'Ivoire) : étude de l'économie agricole",
+        "url": "https://pepite-depot.univ-lille.fr/LIBRE/Th_Num/1970/50377-1970-201.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Dian Boni, thèse de géographie, Université de Lille, 1970, lue le 3 novembre 2026 dans le dépôt numérique de l'université. L'auteur est originaire du pays akyé. Il rapporte la tradition orale du départ du pays ashanti (p. 45-53), la liste des groupes (p. 61-62), la conquête coloniale d'après les archives (p. 63-69), l'organisation sociale (p. 70-77) et la population (p. 89-90)."
+      },
+      {
+        "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+        "url": "https://archive.org/details/vocabulairescomp00delauoft",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Maurice Delafosse, administrateur colonial, Paris, Ernest Leroux, 1904, relu le 3 novembre 2026 dans la numérisation d'Internet Archive. Aux pages 10 et 11, il nomme les Akyè, leurs autres noms, leurs familles et leurs parlers, et propose l'hypothèse d'un ancien groupe commun avec les Abouré et les Mékyibo."
+      },
+      {
+        "title": "ISO 639-3 : ati (Attié)",
+        "url": "https://iso639-3.sil.org/code/ati",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Registre ISO 639-3 tenu par SIL International, consulté le 3 novembre 2026 : le code ati désigne une langue vivante, individuelle, sous le nom de référence Attié."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Les Akyé, que les textes coloniaux appellent Attié, sont un peuple du sud-est de la Côte d'Ivoire, autour d'Adzopé, d'Alépé et d'Anyama. Ils parlent l'akyé, ou attié.",
+      "followUp": "D'où viendrait le nom Akyé, et pourquoi les colons ont-ils écrit Attié ?"
+    }
   },
   "nameHistory": {
-    "summary": "Le nom Akyé désigne un peuple du sud-est de la Côte d'Ivoire, au nord d'Abidjan, autour d'Adzopé, d'Alépé et d'Anyama, qui se nomme lui-même Akyé. D'autres noms existent : Attié, le nom donné par les Européens, et Kurobu, celui que leur donnaient les Baoulé. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Akyé désigne un peuple du sud-est de la Côte d'Ivoire, autour d'Adzopé, d'Alépé et d'Anyama, qui se nomme lui-même Akyé. Il porte d'autres noms : Attié, l'écriture adoptée par les Européens, et Kurobu, le nom que lui donnaient les Baoulé en 1904. Deux explications de l'origine du nom Akyé, recueillies auprès d'Akyé, sont présentées plus bas, côte à côte.",
     "names": [
       {
         "nameText": "Akyé",
@@ -203,7 +236,7 @@
         "selfGiven": true,
         "languageOfOrigin": "ati",
         "namedBy": null,
-        "shortLine": "Le nom que se donne ce peuple ; écrit Akyè en 1904.",
+        "shortLine": "Le nom que se donne ce peuple ; écrit Akyè en 1904 et Akié en 1970.",
         "periodLabel": "Écrit depuis 1904 ; en usage aujourd'hui",
         "accounts": [
           {
@@ -213,8 +246,8 @@
               "label": "1904"
             },
             "era": "colonial",
-            "statement": "Le nom Akyé est celui que ce peuple se donne. Une partie des Akyé, les Nédin d'Alépé, ne se l'appliquent pourtant pas et le réservent aux familles de l'ouest et du nord, selon l'administrateur colonial Maurice Delafosse. Les sources que nous avons lues n'expliquent pas d'où vient ce nom.",
-            "aspect": "meaning",
+            "statement": "Le nom Akyé est celui que ce peuple se donne. Une partie des Akyé, les Nédin d'Alépé, ne se l'appliquent pourtant pas et le réservent aux familles de l'ouest et du nord, selon l'administrateur colonial Maurice Delafosse.",
+            "aspect": "usage",
             "sources": [
               {
                 "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
@@ -250,6 +283,95 @@
                 "notes": "Paris, Ernest Leroux ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1970,
+              "label": "Récits publiés en 1966 et en 1970"
+            },
+            "era": "modern",
+            "statement": "Le nom Akyé viendrait d'un mot qui désigne un tronc d'arbre jeté en travers de l'eau : kie en agni selon Denise Paulme, kié en ashanti selon Dian Boni. Dans le récit qu'ils rapportent, les ancêtres des Akyé fuient le pays ashanti et franchissent la Comoé ; ils seraient « ceux qui sont passés sur le tronc d'arbre ». Denise Paulme tient ce récit du chef du village de Bouapé et juge cette explication douteuse.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine-du-nom-akye",
+            "sources": [
+              {
+                "title": "Première approche des Atié (Côte d'Ivoire)",
+                "author": "Denise Paulme",
+                "year": 1966,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1966_num_6_21_3059",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 88",
+                "notes": "Article des Cahiers d'études africaines, vol. 6, n° 21, lu le 3 novembre 2026 sur Persée. L'autrice, ethnologue, a séjourné quatre mois en pays akyé en 1964. Selon une légende contée par le chef de Bouapé, les Atié sont « ceux qui sont passés sur un tronc d'arbre », kie en agni, avant de s'enfoncer dans la forêt."
+              },
+              {
+                "title": "Le pays akyé (Côte d'Ivoire) : étude de l'économie agricole",
+                "author": "Dian Boni",
+                "year": 1970,
+                "url": "https://pepite-depot.univ-lille.fr/LIBRE/Th_Num/1970/50377-1970-201.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 46, note 3, et p. 48, note 1",
+                "notes": "Thèse de géographie soutenue à l'Université de Lille, lue le 3 novembre 2026 dans le dépôt numérique de l'université. L'auteur, assistant à l'Université d'Abidjan, se dit lui-même originaire de la région étudiée. Selon la tradition orale qu'il rapporte, le groupe dut traverser un bras du fleuve sur un tronc d'arbre ; un tel pont se nomme « kié » en ashanti, d'où « ceux qui étaient passés sur le kié »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1970,
+              "label": "Récits publiés en 1966 et en 1970"
+            },
+            "era": "modern",
+            "statement": "Le nom Akyé viendrait d'un mot qui veut dire « changer » : ka kyi, « ils ont changé », en agni, selon une explication donnée à Denise Paulme à Alépé ; kakryê, « changer », en ashanti, selon Dian Boni. D'après lui, les Akyé auraient tant changé de parler après leur départ, pour ne pas être reconnus, qu'on les aurait appelés « ceux qui changent de dialecte ». Denise Paulme juge cette explication aussi douteuse que la précédente.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine-du-nom-akye",
+            "sources": [
+              {
+                "title": "Première approche des Atié (Côte d'Ivoire)",
+                "author": "Denise Paulme",
+                "year": 1966,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1966_num_6_21_3059",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 88, note 1",
+                "notes": "Article des Cahiers d'études africaines, vol. 6, n° 21, lu le 3 novembre 2026 sur Persée. L'autrice, ethnologue, a séjourné quatre mois en pays akyé en 1964. Elle note : « Une autre étymologie me fut donnée à Alépé ; non moins douteuse, elle fait venir “Atié” de ka kyi, en agni “ils ont changé” »."
+              },
+              {
+                "title": "Le pays akyé (Côte d'Ivoire) : étude de l'économie agricole",
+                "author": "Dian Boni",
+                "year": 1970,
+                "url": "https://pepite-depot.univ-lille.fr/LIBRE/Th_Num/1970/50377-1970-201.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 46, note 3",
+                "notes": "Thèse de géographie soutenue à l'Université de Lille, lue le 3 novembre 2026 dans le dépôt numérique de l'université. L'auteur, assistant à l'Université d'Abidjan, se dit lui-même originaire de la région étudiée. Autre version rapportée : Akié viendrait du mot ashanti « kakryê », « changer », parce que les Akié auraient changé de dialecte après l'exode pour ne pas être reconnus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1970,
+              "to": 1970,
+              "label": "1970"
+            },
+            "era": "modern",
+            "statement": "Le nom Akyé est écrit Akyé et Akié par Dian Boni, géographe originaire de ce pays. Il retient la forme Akié parce qu'elle répond, selon lui, à l'étymologie et à l'usage local.",
+            "formAsWritten": "Akié",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le pays akyé (Côte d'Ivoire) : étude de l'économie agricole",
+                "author": "Dian Boni",
+                "year": 1970,
+                "url": "https://pepite-depot.univ-lille.fr/LIBRE/Th_Num/1970/50377-1970-201.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 48, note 1",
+                "notes": "Thèse de géographie soutenue à l'Université de Lille, lue le 3 novembre 2026 dans le dépôt numérique de l'université. L'auteur, assistant à l'Université d'Abidjan, se dit lui-même originaire de la région étudiée. Il écrit : « Nous adopterons cette appellation qui est conforme à la réalité non seulement par son étymologie, mais encore par son usage local. Ce sont les colons qui ont adopté l'écriture “Attié” »"
+              }
+            ]
           }
         ]
       },
@@ -259,8 +381,8 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": "Les Européens, selon Maurice Delafosse",
-        "shortLine": "Le nom que les Européens donnaient aux Akyé ; écrit dès 1900.",
-        "periodLabel": "Écrit depuis 1900",
+        "shortLine": "Le nom que les Européens donnaient aux Akyé ; cité dès 1889.",
+        "periodLabel": "Attesté depuis 1889",
         "accounts": [
           {
             "period": {
@@ -286,13 +408,40 @@
           },
           {
             "period": {
+              "from": 1889,
+              "to": 1889,
+              "label": "1889"
+            },
+            "era": "colonial",
+            "statement": "Le nom Attié apparaît, sous la forme « atié », dans le récit de l'explorateur Louis-Gustave Binger, qui traversa le pays en 1889, tel que Denise Paulme le cite en 1966. Binger y décrit un peuple « presque isolé de tout le monde », en guerre avec ses voisins le long de la Comoé. C'est la plus ancienne trace de ce nom que le projet connaît ; nous n'avons pas lu ce passage dans le livre de Binger, publié en 1892.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis-Gustave Binger",
+                "role": "explorateur français, cité par Denise Paulme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Première approche des Atié (Côte d'Ivoire)",
+                "author": "Denise Paulme",
+                "year": 1966,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1966_num_6_21_3059",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 86",
+                "notes": "Article des Cahiers d'études africaines, vol. 6, n° 21, lu le 3 novembre 2026 sur Persée. L'autrice, ethnologue, a séjourné quatre mois en pays akyé en 1964. Elle cite Binger, Du Niger au golfe de Guinée (Paris, 1892), qui traversa le pays en 1889 : le « peuple atié » y vit « presque isolé de tout le monde, en hostilités continuelles avec ses voisins »."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1900,
               "to": 1900,
               "label": "1900"
             },
             "era": "colonial",
-            "statement": "Le nom Attié figure dans le titre d'un livre de G. Dreyfus, Six mois dans l'Attié, publié à Paris en 1900, selon la bibliographie de Maurice Delafosse. C'est la plus ancienne trace de ce nom que le projet connaît ; nous n'avons pas lu ce livre.",
-            "birth": true,
+            "statement": "Le nom Attié figure dans le titre d'un livre de G. Dreyfus, Six mois dans l'Attié, publié à Paris en 1900, selon la bibliographie de Maurice Delafosse. Nous n'avons pas lu ce livre.",
             "sources": [
               {
                 "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
@@ -303,6 +452,50 @@
                 "source_kind": "academic",
                 "page": "p. 268",
                 "notes": "Paris, Ernest Leroux ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1913,
+              "label": "1908-1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Attié est celui qu'emploient les administrateurs coloniaux français dans leurs rapports de 1908 à 1913, au moment de la conquête du nord du pays. Dian Boni cite ces rapports, conservés aux Archives nationales de Côte d'Ivoire : ils parlent du « pays Attié », du « Nord de l'Attié » et de la « race Attié ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le pays akyé (Côte d'Ivoire) : étude de l'économie agricole",
+                "author": "Dian Boni",
+                "year": 1970,
+                "url": "https://pepite-depot.univ-lille.fr/LIBRE/Th_Num/1970/50377-1970-201.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 64-69",
+                "notes": "Thèse de géographie soutenue à l'Université de Lille, lue le 3 novembre 2026 dans le dépôt numérique de l'université. L'auteur, assistant à l'Université d'Abidjan, se dit lui-même originaire de la région étudiée. Il cite des rapports de chefs de poste et d'administrateurs (1908-1913) conservés aux Archives nationales à Abidjan, où reviennent « pays Attié », « Nord de l'Attié » et « la race Attié »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1970,
+              "to": 1970,
+              "label": "1970"
+            },
+            "era": "modern",
+            "statement": "Le nom Attié est, selon Dian Boni, l'écriture adoptée par les colons. Lui-même lui préfère Akié, plus proche, dit-il, de l'usage local.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Le pays akyé (Côte d'Ivoire) : étude de l'économie agricole",
+                "author": "Dian Boni",
+                "year": 1970,
+                "url": "https://pepite-depot.univ-lille.fr/LIBRE/Th_Num/1970/50377-1970-201.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 48, note 1",
+                "notes": "Thèse de géographie soutenue à l'Université de Lille, lue le 3 novembre 2026 dans le dépôt numérique de l'université. L'auteur, assistant à l'Université d'Abidjan, se dit lui-même originaire de la région étudiée. Il écrit : « Ce sont les colons qui ont adopté l'écriture “Attié” »"
               }
             ]
           }
@@ -337,6 +530,46 @@
                 "source_kind": "academic",
                 "page": "p. 10",
                 "notes": "Paris, Ernest Leroux ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Atié",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "shortLine": "Une autre écriture du nom Attié, employée par l'ethnologue Denise Paulme en 1966.",
+        "periodLabel": "Écrit ainsi en 1966",
+        "accounts": [
+          {
+            "period": {
+              "from": 1966,
+              "to": 1966,
+              "label": "1966"
+            },
+            "era": "modern",
+            "statement": "Le nom Atié est écrit ainsi par Denise Paulme dans son article de 1966 sur ce peuple.",
+            "formAsWritten": "Atié",
+            "actors": [
+              {
+                "name": "Denise Paulme",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Première approche des Atié (Côte d'Ivoire)",
+                "author": "Denise Paulme",
+                "year": 1966,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1966_num_6_21_3059",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 86",
+                "notes": "Article des Cahiers d'études africaines, vol. 6, n° 21, lu le 3 novembre 2026 sur Persée. L'autrice, ethnologue, a séjourné quatre mois en pays akyé en 1964."
               }
             ]
           }

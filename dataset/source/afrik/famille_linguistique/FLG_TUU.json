@@ -4,7 +4,7 @@
   "nameEn": "Tuu (Taa-ǃKwi)",
   "classificationStatus": "reconstructive",
   "nameHistory": {
-    "summary": "Le nom tuu désigne une famille de langues à clics du Botswana et de Namibie, comme le taa, dont beaucoup ont disparu. C'est un nom de linguiste, tiré d'un mot de ces langues qui veut dire « les gens » ; on a aussi dit khoïsan du Sud. Les sources que nous avons lues s'accordent sur son origine ; nous les présentons plus bas.",
+    "summary": "Le nom tuu désigne une famille de langues à clics du Botswana, de la Namibie et de l'Afrique du Sud, comme le taa. La plupart de ces langues ont disparu. C'est un nom de linguiste, tiré d'un mot de ces langues qui veut dire « les gens ». On a aussi dit Bushmen du Sud, khoïsan du Sud et ǃui-taa. Les sources que nous avons lues s'accordent sur son origine ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Tuu",
@@ -32,7 +32,17 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 3, 4 et 7-8",
-                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig, relu le 3 novembre 2026. P. 3 : « all sufficiently attested languages show some reflex of the noun *tuu 'people' ». P. 4 : Dorothea Bleek donne la forme tu, « translated by her as 'man' and/or 'who' »."
+              },
+              {
+                "title": "A Bushman Dictionary",
+                "author": "Dorothea F. Bleek",
+                "year": 1956,
+                "url": "https://archive.org/details/bushmandictionar00blee",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 239-240",
+                "notes": "New Haven, American Oriental Society, publié après la mort de l'autrice. Lu le 3 novembre 2026 sur la numérisation des bibliothèques de l'université de Floride. L'autrice emploie le nom « Bushman » de son époque. Entrée « tu, n. man, pron. who », avec un pluriel traduit par « many people »."
               }
             ]
           },
@@ -59,9 +69,10 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 3-4 et p. 8",
-                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig, relu le 3 novembre 2026. P. 3-4 : un nom géographique en « southern » invite à conclure à « a genealogical link between all lineages assigned to Khoisan », hypothèse « not been established by standardly accepted linguistic methods ». P. 8 : « I therefore propose this etymon in the form \"Tuu\" as the name for the entire genealogical unit »."
               }
-            ]
+            ],
+            "era": "modern"
           },
           {
             "period": {
@@ -81,9 +92,10 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 3-4",
-                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig, relu le 3 novembre 2026. P. 3 : « !Ui-Taa — Güldemann and Voßen 2000 ». P. 4 : ce nom désigne les deux grands groupes « by their respective common form for 'person' »."
               }
-            ]
+            ],
+            "era": "modern"
           }
         ]
       },
@@ -92,9 +104,57 @@
         "nameStatus": "former",
         "selfGiven": false,
         "languageOfOrigin": null,
-        "namedBy": "Des savants européens et américains",
-        "shortLine": "L'ancien nom géographique de la famille, abandonné par une partie des linguistes.",
+        "namedBy": "Des savants européens et américains, dont Isaac Schapera et Joseph Greenberg",
+        "shortLine": "Un ancien nom géographique de la famille, employé notamment par Joseph Greenberg en 1963.",
         "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Critique publiée en 2005"
+            },
+            "statement": "Le nom khoïsan du Sud pose problème pour deux raisons, selon Tom Güldemann. Il est inexact, puisque les langues les plus au sud parmi celles qu'on dit khoïsan sont des variétés khoekhoe, d'une autre famille. Surtout, il fait croire que toutes les langues dites khoïsan sont parentes, ce que les méthodes habituelles de la linguistique n'ont pas démontré.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3-4",
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig, relu le 3 novembre 2026. P. 3 : « The most southerly of the languages which have been subsumed under the label Khoisan are actually Khoekhoe varieties belonging to the Khoe family ». P. 4 : cette parenté « has thus far not been established by standardly accepted linguistic methods »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "1981"
+            },
+            "statement": "Le nom khoïsan du Sud prend une forme française chez le linguiste Oswin Köhler, qui écrit « Khoisan meridional » dans un ouvrage collectif publié à Paris en 1981, selon Tom Güldemann. Köhler y oppose un groupe !Kwi et un groupe non-!Kwi.",
+            "formAsWritten": "Khoisan meridional",
+            "actors": [
+              {
+                "name": "Oswin Köhler",
+                "role": "écrit cette forme dans Les langues dans le monde ancien et moderne, publié par le CNRS"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3 et 9",
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig, relu le 3 novembre 2026. P. 3, tableau 1 : « Khoisan meridional composed of !Kwi and Non-!Kwi — Köhler 1981 ». P. 9 : la référence, « Les langues khoisan », dans Jean Perrot (dir.), Paris, CNRS, p. 455-482."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1930,
@@ -112,7 +172,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 3",
-                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig, relu le 3 novembre 2026. P. 3, tableau 1 : « Southern Khoisan — Schapera 1930 » et « Southern Khoisan — Greenberg 1963 »."
               },
               {
                 "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
@@ -123,6 +183,64 @@
                 "source_kind": "intergovernmental",
                 "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
                 "page": "p. 336"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bushmen du Sud",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "La linguiste Dorothea Bleek",
+        "shortLine": "Le premier nom donné au groupe par la linguiste Dorothea Bleek, en 1927.",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du mot Bushman"
+            },
+            "statement": "Le nom Bushmen du Sud reprend le mot Bushman, en néerlandais Bosjesman, que les colons appliquaient aux chasseurs-cueilleurs, mais aussi à des Khoekhoe privés de leur bétail et à d'autres personnes qui vivaient de la cueillette, selon l'historien Mohamed Adhikari. Ce mot a été très péjoratif en Afrique du Sud, associé à des idées de primitivité, de laideur ou d'infériorité morale, d'après le même auteur.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "The Anatomy of a South African Genocide: The Extermination of the Cape San Peoples",
+                "author": "Mohamed Adhikari",
+                "year": 2010,
+                "url": "https://doi.org/10.58331/UCTPRESS.30",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 25-26",
+                "notes": "Le Cap, UCT Press, 2010 ; édition numérique en accès libre de 2014, lue le 3 novembre 2026 sur le site de UCT Press. « 'Bushman' — or its Dutch equivalent 'Bosjesman' and its later Afrikaans version 'Boesman' — is ambiguous because it was used by colonists to describe specialist hunter-gatherer communities as well as groups of indigenous pastoralist Khoikhoi peoples (Hottentots) who had lost their cattle. » P. 26 : « 'Bushman' has historically been a highly pejorative term in the South African context »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "1929"
+            },
+            "statement": "Le nom Bushmen du Sud correspond au « groupe du Sud » des Comparative Vocabularies of Bushman Languages, que Dorothea Bleek publie en 1929. Elle y numérote ces langues de SI à SVI, selon l'introduction de son dictionnaire publié en 1956.",
+            "formAsWritten": "Southern Group",
+            "actors": [
+              {
+                "name": "Dorothea Bleek",
+                "role": "classe ces langues dans un groupe du Sud"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Bushman Dictionary",
+                "author": "Dorothea F. Bleek",
+                "year": 1956,
+                "url": "https://archive.org/details/bushmandictionar00blee",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction",
+                "notes": "New Haven, American Oriental Society, publié après la mort de l'autrice. Lu le 3 novembre 2026 sur la numérisation des bibliothèques de l'université de Floride. L'autrice emploie le nom « Bushman » de son époque. « A classification into three groups is given once more, namely (a) a Northern Group […]; (b) a Southern Group with members in different parts of southern Africa, referred to as SI, SII, SIII, SIV, SV and SVI »."
               }
             ]
           },
@@ -143,7 +261,17 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 3",
-                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig, relu le 3 novembre 2026. P. 3, tableau 1 : « Southern Bushman — Bleek 1927 etc. »."
+              },
+              {
+                "title": "The Lower Nossob varieties of Tuu: ǃUi, Taa or neither?",
+                "author": "Tom Güldemann",
+                "year": 2011,
+                "url": "https://www2.hu-berlin.de/kba/events/ichlxx/gueldemann.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Document distribué au 20e congrès international de linguistique historique, à Osaka, en juillet 2011, publié par l'université Humboldt de Berlin. Lu le 3 novembre 2026. « introduced as a genealogically defined group by Bleek (1927), then 'Southern Bushman', with an internal reference classification: S1-6 »."
               }
             ]
           }
@@ -153,65 +281,111 @@
   },
   "content": {
     "searchAnswer": {
-      "lead": "Des langues à clics du Botswana et de Namibie, comme le taa. Tuu, nom proposé vers 2005 par Tom Güldemann, vient d'un mot qui veut dire « personne » dans les deux branches.",
-      "followUp": "Pourquoi disait-on avant « khoisan du sud » ?"
+      "lead": "Des langues à clics du Botswana, de Namibie et d'Afrique du Sud, comme le taa. Le nom tuu, proposé en 2005 par Tom Güldemann, vient d'un mot de ces langues qui veut dire « les gens ».",
+      "followUp": "Pourquoi les linguistes ont-ils cessé de dire « khoïsan du Sud » ?"
     },
     "decolonialHeader": {
-      "whyProblematic": " - « Southern Khoisan » est une construction coloniale approximative qui ne reflète pas la généalogie linguistique réelle. Les études linguistiques récentes (Güldemann 2005-2010, Honken 2013) rejettent l'idée que toutes les langues « à clic » forment une famille unique. Elles préfèrent parler de contact (sprachbund) plutôt que de parenté démontrée. - Les peuples Tuu ont subi une forte marginalisation, des massacres et des déplacements forcés pendant la colonisation européenne (XIXe-XXe siècle), particulièrement en Afrique du Sud où la langue ǀXam a disparu. - Les termes « Bushmen » et « Hottentot » étaient racistes et stigmatisants, associés à une idéologie coloniale de déshumanisation (cf. travaux de Skotnes 1996, Penn 2005 sur la représentation coloniale des peuples San). - Les études génétiques modernes (Pickrell et al. 2012, Schlebusch et al. 2017) montrent que les populations qui parlent les langues associées à « Khoisan » sont parmi les plus anciennes lignées humaines, divergentes des autres groupes africains depuis 100 000-260 000 ans, mais aussi fortement affectées par des flux de gènes récents (avec des langues bantoues, par exemple depuis ~1 200 ans). → Afrik utilise **Tuu** comme terme strictement linguistique moderne basé sur la reconstruction scientifique.",
-      "selfAppellation": null,
-      "contemporaryUsage": "Au Botswana et en Namibie, les personnes parlant les différentes variétés de Taa/ǃXóõ utilisent le nom Taa ou ǃXóõ. Les chercheurs Güldemann, Traill et Sands emploient Tuu pour classer ces langues.",
+      "linkWithFamily": "Le tuu est une famille de langues indépendante. Glottolog 5.3 la classe au premier niveau, sans famille parente, et Tom Güldemann écrit en 2005 qu'elle n'a, dans l'état des connaissances, aucun parent évident. Joseph Greenberg la rangeait en 1963 comme une branche d'une grande famille khoïsan. Tom Güldemann juge que cette parenté plus large n'est pas démontrée.",
       "historicalAppellations": [
+        "Southern Bushman",
         "Southern Khoisan",
-        "ǃUi-Taa",
-        "Kwi",
-        "Bushmen",
-        "Hottentot"
+        "Südkhoisan",
+        "ǃUi-Taa"
       ],
-      "originOfHistoricalTerm": " - Le terme « Tuu » a été introduit par Tom Güldemann (2005-2006) dans ses travaux sur les langues du Sud de l'Afrique, notamment dans « Tuu as a language family » (2005) et « The San languages of southern Namibia » (2006). Le nom vient d'un mot commun aux deux branches de la famille signifiant « personne ». - Le terme « Southern Khoisan » a été proposé par Joseph Greenberg dans les années 1950 dans son ouvrage *The Languages of Africa* (1963), regroupant diverses langues à clics sous ce nom générique sans démonstration généalogique solide. - Le terme « Khoisan » lui-même a été forgé en 1928 par le biologiste allemand Leonhard Schulze, combinant *Khoi* (populations pasteurisantes du groupe Khoe) et *San* (chasseurs-cueilleurs), dans une logique extérieure aux peuples concernés. - Les termes « Bushmen » et « Hottentot » proviennent de la terminologie coloniale européenne (hollandais/anglais) du XVIIe-XIXe siècle, utilisés de manière péjorative pour désigner les populations autochtones du Cap."
+      "originOfHistoricalTerm": "La linguiste Dorothea Bleek réunit ces langues en un seul groupe à partir de 1927, sous le nom de Southern Bushman, « Bushmen du Sud ». En 1929, elle les numérote de SI à SVI. Isaac Schapera, dans un livre de 1930 sur les peuples khoïsan d'Afrique du Sud, puis le linguiste Joseph Greenberg, en 1963, parlent de Southern Khoisan, « khoïsan du Sud ». Ernst Westphal, en 1971, y voit au contraire deux familles indépendantes, qu'il appelle Tao et ǃWi. En 1981, Oswin Köhler écrit « Khoisan meridional » et Jürgen Winter « Südkhoisan ». En 2000, Tom Güldemann et Rainer Voßen emploient ǃUi-Taa, d'après le mot « personne » des deux grands groupes de la famille. En 2005, Tom Güldemann propose le nom tuu. Il le tire du nom tuu, « les gens », dont il retrouve une trace dans toutes les langues assez bien connues de la famille. Dorothea Bleek avait déjà relevé ce mot sous la forme tu, traduit par « homme » ou « qui », dans son dictionnaire de 1956. Ces dates et ces noms viennent du tableau de Tom Güldemann (2005) et de l'introduction de ce dictionnaire.",
+      "whyProblematic": "Les anciens noms de cette famille viennent d'un regard extérieur. Bushmen du Sud reprend le mot Bushman, que les colons appliquaient aux chasseurs-cueilleurs et à d'autres personnes sans bétail. Selon l'historien Mohamed Adhikari (2010), ce mot a été très péjoratif en Afrique du Sud, associé à des idées de primitivité, de laideur ou d'infériorité morale. Khoïsan du Sud pose un autre problème, selon Tom Güldemann (2005). Ce nom géographique fait croire que toutes les langues dites khoïsan sont parentes, ce que les méthodes habituelles de la linguistique n'ont pas démontré. Tom Güldemann (2008) qualifie de « spurious », c'est-à-dire de fausse, la catégorie des Khoïsan d'Afrique australe. Le nom tuu, qui remplace ces termes, est tiré d'un mot de ces langues, tuu, « les gens ».",
+      "selfAppellation": null,
+      "contemporaryUsage": "Le tuu désigne aujourd'hui une famille de langues d'Afrique australe. Glottolog 5.3 y compte neuf langues, réparties en deux branches. Deux sont encore parlées au Botswana et en Namibie : le taa de l'Est et le ǃxoon de l'Ouest. Le catalogue Ethnologue les réunit sous le seul nom de taa, alors que les parlers de l'ouest et de l'est ne se comprennent pas entre eux, selon Glottolog. Le nǁng, en Afrique du Sud, est presque éteint, et les six autres langues ont disparu. Une étude génétique de 2012, menée par Joseph Pickrell et ses collègues, reprend cette classification des langues à clics d'Afrique australe en trois familles distinctes : tuu, kxʼa et khoe-kwadi. En ǃxóõ, taa veut dire « personne », et la langue se dit « langue de la personne », d'après le dictionnaire d'Anthony Traill cité par Tom Güldemann (2005).",
+      "geographicArea": "Botswana, Namibie, Afrique du Sud",
+      "numberOfLanguages": 9,
+      "totalSpeakers": 3000
     },
     "generalInfo": {
       "branches": [
-        "!Ui (ǀXam, Vaal-Orange/Eastern !Ui, Nǁng — branche aujourd'hui quasi éteinte)",
-        "Taa (dénommée \"Hua\" par Glottolog ; regroupe Lower-Nosop et Taa/ǃXóõ)"
+        "Taa et bas Nossob, appelée Hua dans Glottolog : le taa de l'Est et le ǃxoon de l'Ouest, encore parlés, et les parlers éteints du bas Nossob, comme le ǀʼauni et le ǀhaasi",
+        "ǃUi : le nǁng, dont le nǀuu, presque éteint, et des langues disparues comme le ǀxam, le ǁxegwi, le ǃgãǃne et les parlers de la Vaal et de l'Orange"
       ],
-      "geographicArea": "Botswana (Désert du Kalahari, districts de Ghanzi et Kgalagadi, le long de la rivière Nossob), Namibie (régions frontalières Omaheke et Hardap, zones Est-Namibie), Afrique du Sud (historiquement, provinces du Cap et du Transvaal avant extinction des langues ǃKwi).",
-      "numberOfLanguages": 2,
-      "totalSpeakers": null
+      "geographicArea": "Botswana, Namibie, Afrique du Sud",
+      "numberOfLanguages": 9,
+      "totalSpeakers": 3000,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "Neuf langues selon Glottolog 5.3 : deux encore parlées, une presque éteinte et six éteintes."
+        },
+        "totalSpeakers": {
+          "note": "Un ordre de grandeur pour le taa : environ 3 000 locuteurs selon Tsammalex (2020), entre 2 500 et 4 000 selon Christfried Naumann (2011). Le nǀuu n'a plus qu'une locutrice de naissance en 2025, selon l'AFP.",
+          "unsourced": false
+        }
+      }
     },
     "associatedPeoples": [
       {
-        "name": "ǃXóõ (Taa) – Botswana, Namibie",
-        "peopleId": null
+        "name": "Taa (ǃXóõ)",
+        "peopleId": "PPL_TAA"
       },
       {
-        "name": "ǀXam (ancien peuple d'Afrique du Sud, éteint)",
-        "peopleId": null
-      },
-      {
-        "name": "Nǁng (communauté du Cap, Afrique du Sud, 1 locuteur survivant)",
+        "name": "Nǀuu",
         "peopleId": "PPL_NUU"
+      },
+      {
+        "name": "ǀXam",
+        "peopleId": null
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " Langues tonales avec 2-3 tons contrastifs (ton haut, bas, moyen dans certaines variétés). Structures morphologiques agglutinantes (les mots se construisent en ajoutant des éléments à la suite les uns des autres), avec dérivation par affixes. Ordre syntaxique SOV (Sujet-Objet-Verbe) fréquent, mais variations selon les constructions. Exemples concrets de structures grammaticales :",
-      "relationsWithNeighbors": " Contacts historiques prolongés avec les familles Kxʼa (Ju/ǃHoan) et Khoe (Khoekhoe, Gǀui), créant un sprachbund (aire linguistique) dans le Kalahari. Emprunts lexicaux documentés :"
+      "typology": "Les langues tuu placent en général le sujet en premier, puis le verbe, puis l'objet, selon Tom Güldemann (2005). Les petits mots qui marquent la négation, le temps ou l'aspect, c'est-à-dire la façon dont l'action se déroule, se placent avant le verbe. Plusieurs verbes se suivent souvent dans une même phrase : en ǀxam, « marcher, aller, s'éloigner » veut dire « partir ». Un verbe a au plus un complément direct. Les autres compléments sont introduits par un même petit mot, quel que soit leur rôle. Dans le groupe du nom, le nom vient d'ordinaire avant ce qui le précise. Le possesseur fait exception et se place avant : en ǁxegwi, on dit « vache queue » pour « la queue de la vache ». Le pluriel des noms est souvent irrégulier. Il peut changer le mot entier, ajouter une fin ou répéter une partie du mot, et ces moyens se combinent. Le taa range aussi ses noms en classes, que l'on reconnaît aux mots qui s'accordent avec eux ; dans la branche ǃui, cet accord ne touche que les pronoms, selon le même auteur.",
+      "phonologicalFeatures": "Les langues tuu emploient des clics. Un clic est une consonne que l'on produit en fermant la bouche à deux endroits, puis en relâchant d'un coup la fermeture de devant : l'air entre brusquement et fait un claquement. Le linguiste Ian Maddieson explique ce mécanisme dans l'atlas WALS. Il précise que les clics servent de sons ordinaires des mots seulement dans certaines langues d'Afrique australe et orientale. Le ǃxóõ, ou taa de l'Est, a un très grand nombre de consonnes. Ian Maddieson lui en compte 122 dans le même atlas, alors que la plupart des langues en ont une vingtaine, surtout parce qu'un mot peut y commencer par beaucoup de clics différents. La base PHOIBLE lui compte 130 consonnes, 28 voyelles et 3 tons, d'après une description d'Anthony Traill (2009). Un ton est une hauteur de la voix qui distingue des mots. Parmi ces consonnes figurent des clics bilabiaux, notés ʘ, que l'on produit avec les lèvres. D'une langue tuu à l'autre, les clics se répondent de façon régulière, selon Tom Güldemann (2005). Dans les mots « oreille », « cou », « chien », « œuf » et « vent », la plupart de ces langues ont un clic palatal, fait avec la langue contre le palais. Le ǀxam a à la place un clic alvéolaire, fait juste derrière les dents du haut, et le ǁxegwi une consonne sans clic.",
+      "relationsWithNeighbors": "Les langues tuu partagent beaucoup de traits de construction avec d'autres langues à clics de la région, qui ne sont pas de la même famille. Tom Güldemann (2005) rappelle que ces ressemblances ne suffisent pas à prouver une parenté : il faut aussi des mots et des formes de grammaire qui se répondent. Le ǃxóõ de Lone Tree, la variété de taa la mieux décrite, a reçu l'influence du gǀui, une langue khoe voisine, d'après une étude d'Anthony Traill et Hirosi Nakagawa citée par Tom Güldemann. Les parlers du bas Nossob ont été en fort contact avec le khoekhoe et avec le nǁng. Dorothea Bleek décrit en 1937 des familles ǂkhomani, ǀʼauni et ǀnamani qui se mariaient entre elles, et des ǀnamani qui ne parlaient plus que le nama, selon Tom Güldemann (2011). Aujourd'hui, au Botswana, beaucoup de locuteurs du taa passent au kgalagadi, et en Namibie à l'afrikaans et au nama, selon Matthias Brenzinger (2011), cité par Glottolog.",
+      "keyInnovations": "Tom Güldemann (2005) relève des formes communes à presque toute la famille, qu'il propose de faire remonter à une langue ancêtre, le proto-tuu. Il reconstruit ainsi les pronoms *n « je », *a « tu », *si « nous » (sans la personne à qui l'on parle) et *u « vous ». Il reconstruit aussi les terminaisons *-ke et *-te pour le pluriel des noms, un mot pour « enfant » qui sert à former des diminutifs, et le nom *tuu, « les gens ». L'astérisque signale une forme reconstruite, qu'aucun texte n'atteste telle quelle. L'auteur présente ces reconstructions comme provisoires, car la plupart des langues ont disparu avant d'être bien décrites. Il écarte de sa liste des mots comme « feu », « chien » ou « éléphant », qui ont aussi des équivalents possibles dans les familles khoe ou ju, parce que leur histoire reste incertaine."
     },
     "historyAndOrigins": {
-      "probableOrigin": " **Théorie linguistique** : Tom Güldemann (2005-2006) a classé Tuu comme famille linguistique indépendante, rejetant la classification « Khoisan » de Greenberg (années 1950). Güldemann démontre que Tuu forme une famille distincte avec deux branches (Taa et ǃKwi) partageant un ancêtre commun (proto-Tuu) mais sans relation génétique démontrée avec Kxʼa ou Khoe malgré des siècles de contact. **Théorie archéologique** : Les populations Tuu sont associées aux traditions archéologiques de chasseurs-cueilleurs du Kalahari méridional datant de plusieurs millénaires. Des sites archéologiques dans le Désert du Kalahari (Botswana) montrent une occupation humaine continue depuis au moins 20 000-30 000 ans (Deacon & Deacon 1999, Robbins et al. 2005). La reconstruction proto-Tuu du mot *!hai* « gemsbok » (antilope du Kalahari) suggère que les locuteurs proto-Tuu habitaient cette région (Güldemann 2005). **Théorie génétique** : Les études génétiques (Pickrell et al. 2012, Schlebusch et al. 2017) montrent que les populations parlant des langues « Khoisan » (incluant Tuu) appartiennent aux plus anciennes lignées humaines. La divergence génétique entre branches nord-ouest et sud-est du Kalahari est estimée à moins de 30 000 ans, mais la séparation des lignées Tuu des autres groupes africains remonte à 100 000-260 000 ans. Les flux de gènes avec les populations bantoues sont relativement récents (~1 200 ans), suggérant que les Tuu ont longtemps été génétiquement isolés avant les contacts récents. **Théorie de la diffusion préhistorique** : Les proto-Tuu étaient probablement des chasseurs-cueilleurs dispersés dans le Kalahari méridional (Botswana, Namibie, Afrique du Sud) avant l'arrivée des pasteurs Khoe (~2 000 ans) et des agriculteurs bantous (~1 200 ans). L'absence d'expansion récente suggère que les Tuu n'ont pas connu de phase d'expansion démographique comparable à celle des familles bantoues ou nilotiques.",
-      "emergencePeriod": " **(1) Émergence historique de la FLG** : Le proto-Tuu était probablement parlé dans la région du Kalahari (Botswana/Namibie) il y a plusieurs millénaires, peut-être 5 000-10 000 ans avant le présent, bien que les reconstructions linguistiques ne permettent pas de datation précise. La reconstruction du mot *!hai* « gemsbok » et d'autres termes environnementaux suggère une longue histoire dans le Kalahari. La séparation entre les branches Taa (nord) et ǃKwi (sud) est estimée à plusieurs millénaires, probablement avant l'expansion des pasteurs Khoe il y a ~2 000 ans. **(2) Date de classification académique** :",
-      "diffusion": " **Théorie 1 (statique)** : Les proto-Tuu étaient autochtones au Kalahari méridional, sans expansion majeure. Les langues Tuu n'ont pas connu de phase d'expansion comparable aux familles bantoues ou nilotiques. Au contraire, elles ont régressé géographiquement et démographiquement depuis le XIXe siècle à cause des déplacements forcés et de l'assimilation (Güldemann 2005). **Théorie 2 (migration préhistorique)** : Certains archéologues suggèrent que les ancêtres des Tuu ont migré vers le Kalahari depuis des zones plus septentrionales il y a 20 000-30 000 ans, mais cette théorie manque de preuves linguistiques directes (Deacon & Deacon 1999). **Théorie 3 (contact et métissage)** : Les études génétiques (Pickrell et al. 2012) montrent des flux de gènes entre populations Tuu et Khoe il y a ~2 000 ans (arrivée des pasteurs) et avec bantous il y a ~1 200 ans, suggérant que les contacts linguistiques reflètent des migrations et métissages plutôt qu'une expansion Tuu (contraire à la théorie 1). **Récession récente** : Depuis le XIXe siècle, les langues Tuu ont régressé à cause de : - L'extermination ou déplacement des peuples ǀXam en Afrique du Sud (guerres coloniales, politique d'extermination) - La colonisation européenne et répression en Afrique du Sud et Botswana - La marginalisation socio-économique persistante au XXe-XXIe siècle"
+      "probableOrigin": "Plusieurs propositions coexistent sur la place de cette famille parmi les langues à clics. Dorothea Bleek réunit ces langues en un groupe à partir de 1927. D'après l'introduction de son dictionnaire, elle juge que son groupe du Nord, celui des langues ju, est plus proche de son groupe du Sud que de son groupe central. Joseph Greenberg range en 1963 ces langues dans une grande famille khoïsan, qui réunit aussi le sandawe et le hadza de Tanzanie. Ernst Westphal, en 1971, y voit au contraire deux familles indépendantes ; il est le seul, selon Tom Güldemann, à douter de leur unité. Tom Güldemann (2005) défend que le tuu forme bien une famille, parce que ses langues partagent des formes de grammaire et de vocabulaire qui se répondent. Il juge en revanche que la parenté de toutes les langues dites khoïsan n'est pas démontrée. Ces auteurs divergent donc sur deux points : l'unité du tuu, et ses liens avec les autres familles à clics. Les études génétiques portent sur les populations, et non sur les langues. Joseph Pickrell et ses collègues (2012) trouvent chez les populations à clics d'Afrique australe deux groupes, l'un au nord-ouest et l'autre au sud-est du Kalahari. Selon eux, ces groupes ne correspondent pas aux familles de langues.",
+      "emergencePeriod": "Les dates connues concernent la classification de ces langues. Dorothea Bleek définit le groupe en 1927 et le décrit en 1929. Joseph Greenberg le range dans le khoïsan en 1963, et Ernst Westphal le sépare en deux familles en 1971. Tom Güldemann le défend comme une famille et le nomme tuu en 2005. Pour les populations, Joseph Pickrell et ses collègues (2012) placent la séparation des deux groupes génétiques du Kalahari dans les 30 000 dernières années. Ils datent d'environ 1 200 ans le début des mélanges avec des populations qui ne parlent pas de langues à clics. Ces dates portent sur l'histoire des populations, pas sur celle des langues.",
+      "diffusion": "Les sources que nous avons lues décrivent surtout le recul de la famille. Avant ce recul, des langues tuu étaient parlées bien au-delà du Kalahari. Le ǀxam était parlé au sud du cours inférieur et moyen du fleuve Orange, selon Tom Güldemann (2005). Le dictionnaire de Dorothea Bleek situe une langue de son groupe du Sud jusqu'au lac Chrissie, dans l'est du Transvaal. Pour Tom Güldemann (2015), les locuteurs de langues ǃui sont la seule population de chasseurs-cueilleurs bien attestée dans la vaste région du Karoo. La plupart de ces langues ont disparu au XIXe siècle et au début du XXe siècle, souvent sans avoir été bien décrites. Le taa reste parlé dans l'est de la Namibie et le sud-ouest du Botswana, selon Christfried Naumann (2011). Le nǀuu survit près d'Upington, dans la province sud-africaine du Cap-Nord, où sa dernière locutrice de naissance l'enseigne à ses arrière-petits-enfants, selon l'AFP (2025).",
+      "historicalBreaks": "Deux ruptures ont marqué la famille. La première est la séparation entre ses deux branches : le taa et les parlers du bas Nossob d'un côté, le ǃui de l'autre. La place des parlers du bas Nossob reste discutée. On les rangeait dans le ǃui ; Tom Güldemann (2005) les rapproche du taa, et il intitule en 2011 un exposé « ǃUi, Taa ou ni l'un ni l'autre ? ». La seconde rupture est la disparition de presque toute la famille. Glottolog 5.3 classe six des neuf langues comme éteintes, et le nǁng comme presque éteint. Les parlers ǃui du Cap ont disparu dès le début du XXe siècle, selon Tom Güldemann (2015). Les parlers du bas Nossob, que Dorothea Bleek et Robert Story ont notés en 1936, sont eux aussi éteints, selon Tom Güldemann (2011) et Glottolog.",
+      "contactZones": "Le sud du Kalahari est la principale région de contact que décrivent nos sources. Dans la région du bas Nossob, les parlers ǀʼauni et ǀhaasi ont côtoyé le nǁng, une langue ǃui, et le nama, une langue khoekhoe, selon Tom Güldemann (2011). Le ǃxóõ de Lone Tree, une variété du nord-est du taa, a reçu l'influence du gǀui, une langue khoe, selon le même auteur (2005). Au Botswana, le recensement de 2022 relève l'usage des langues san surtout dans le district de Ghanzi, mais il les réunit sous un seul nom, le sesarwa. Aujourd'hui, le contact se traduit par un abandon du taa au profit du kgalagadi au Botswana, et de l'afrikaans et du nama en Namibie, selon Matthias Brenzinger (2011), cité par Glottolog.",
+      "majorEvents": "Aux XVIIIe et XIXe siècles, des éleveurs de langue néerlandaise s'installent dans l'intérieur du Cap et détruisent les sociétés san, dont celle des ǀxam, qui parlaient une langue ǃui. L'historien Mohamed Adhikari (2010) décrit les commandos que les colons formaient pour détruire les bandes san. Il réunit les auteurs qui parlent de génocide, dont Pippa Skotnes (1996) pour les ǀxam. Nigel Penn (2005) parle, lui, d'atrocités génocidaires et, selon Mohamed Adhikari, d'un génocide « partiel ». Pendant les guerres korana de 1868-1869 et de 1878-1879, des ǀxam alliés aux Korana sont tués par les forces coloniales, et des centaines de prisonniers sont placés de force chez des fermiers. Des prisonniers san, condamnés aux travaux forcés à la prison de Breakwater, au Cap, sont longuement interrogés par le linguiste Wilhelm Bleek et par Lucy Lloyd, selon Mohamed Adhikari. Les récits qu'ils recueillent à partir de 1870 auprès de narrateurs ǀxam forment l'archive Bleek et Lloyd de l'université du Cap. Lucy Lloyd en publie un choix en 1911. Le 27 avril 2000, l'Afrique du Sud adopte des armoiries dont la devise, « ǃke e: ǀxarra ǁke », est écrite en ǀxam et veut dire « des peuples divers s'unissent », selon le gouvernement sud-africain. En 2025, Katrina Esau, née en 1933 près d'Olifantshoek, est la dernière personne qui parle le nǀuu comme langue maternelle. Elle raconte à l'AFP que, dans son enfance, le fermier qui employait ses parents les chassait quand il les entendait parler nǀuu."
     },
     "distribution": {
-      "totalSpeakers": null,
+      "totalSpeakers": 3000,
       "distributionByCountry": {
-        "BWA": 2500
+        "ZAF": 1
       }
     },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "ZAF",
+          "speakers": 1,
+          "source": {
+            "title": "Last fluent speaker on a quest to keep ancient South African language alive",
+            "url": "https://www.enca.com/lifestyle/last-fluent-speaker-quest-keep-ancient-south-african-language-alive",
+            "tier": "referenced",
+            "notes": "Dépêche de l'AFP publiée le 10 octobre 2025 par eNCA. Katrina Esau est la dernière personne qui parle le nǀuu comme langue maternelle. Ce chiffre ne compte pas les personnes qui l'apprennent auprès d'elle."
+          }
+        }
+      ]
+    },
+    "gaps": [
+      {
+        "field": "content.decolonialHeader.selfAppellation",
+        "reason": "Nous n'avons pas trouvé de nom que les locuteurs de ces langues donneraient à la famille entière. Tuu est un nom de linguiste. Nous avons cherché dans les travaux de Tom Güldemann (2005, 2011, 2015), dans le dictionnaire de Dorothea Bleek (1956) et dans Glottolog."
+      },
+      {
+        "field": "content.distribution.distributionByCountry",
+        "reason": "Nous n'avons pas trouvé de chiffre séparé pour le Botswana et pour la Namibie. Les sources que nous avons lues donnent un total pour les deux pays, et le recensement du Botswana de 2022 réunit toutes les langues san sous le nom de sesarwa."
+      },
+      {
+        "field": "content.historyAndOrigins.probableOrigin",
+        "reason": "Nous n'avons pas trouvé de source qui situe ou qui date la langue ancêtre de la famille. Nous avons cherché dans les travaux de Tom Güldemann (2005, 2008, 2011, 2015), dans Glottolog et dans l'étude génétique de Joseph Pickrell et de ses collègues (2012)."
+      }
+    ],
     "sources": [
       {
         "title": "Güldemann, Tom (2005) – *Tuu as a language family*. Studies in Tuu (Southern Khoisan). ResearchGate",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "notes": "Deuxième article du volume Studies in Tuu (Southern Khoisan), publié par l'université de Leipzig en 2005, p. 11-29. Lu en texte intégral dans le dépôt de l'université de Leipzig le 3 novembre 2026."
       },
       {
         "title": "Güldemann, Tom (2006) – *The San languages of southern Namibia: Linguistic appraisal with special reference to J. G. Krönlein's Nǀuusaa data*. Anthropological Linguistics, 48(4), 369–395",
@@ -257,7 +431,8 @@
         "title": "Pickrell, Joseph K. et al. (2012) – *The Genetic Prehistory of Southern Africa*. Nature Communications, 3, article 1143. DOI: 10.1038/ncomms2140",
         "url": null,
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Article en accès libre sur le site de Nature Communications, lu le 3 novembre 2026."
       },
       {
         "title": "Schlebusch, Carina M. et al. (2017) – *Southern African ancient genomes estimate modern human divergence to 350,000 to 260,000 years ago*. Science, 358(6363), 652–655. DOI: 10.1126/science.aao6266",
@@ -268,12 +443,14 @@
       {
         "title": "Bleek, Wilhelm H. I. & Lloyd, Lucy C. (1911) – *Specimens of Bushman Folklore*. London: George Allen & Company",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "notes": "Ouvrage de l'époque coloniale, lu le 3 novembre 2026 sur la numérisation de l'Internet Archive."
       },
       {
         "title": "Bleek, Dorothea F. (1956) – *A Bushman Dictionary*. New Haven: American Oriental Society",
         "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "notes": "Lu le 3 novembre 2026 sur la numérisation de l'Internet Archive. L'autrice emploie le nom « Bushman » de son époque."
       },
       {
         "title": "Westphal, Ernst O. J. (1971) – *The Click Languages of Southern and Eastern Africa*. In T. A. Sebeok (ed.), Current Trends in Linguistics, Vol. 7: Linguistics in Sub-Saharan Africa, The Hague: Mouton, pp. 367–420",
@@ -332,6 +509,194 @@
         "url": "https://www.ethnologue.com/language/nmn/",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+        "author": "Tom Güldemann",
+        "year": 2005,
+        "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 3-8, 11-23",
+        "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig, relu le 3 novembre 2026. P. 3 : tableau des noms donnés à la famille avant 2005 (Bleek 1927, Schapera 1930, Greenberg 1963, Westphal 1971, Köhler 1981, Winter 1981, Güldemann et Voßen 2000). P. 8 : « I therefore propose this etymon in the form \"Tuu\" as the name for the entire genealogical unit ». P. 11 : depuis Bleek (1927), la famille est tenue presque unanimement pour une unité, « Westphal is the only scholar who has expressed reservations ». P. 12 : classification provisoire en deux branches, Taa et !Ui. P. 14-19 : profil des phrases, des noms et des pronoms. P. 20-23 : formes reconstruites pour la langue ancêtre."
+      },
+      {
+        "title": "Glottolog 5.3 — Tuu (tuuu1241)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/tuuu1241",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, édition 5.3, lu en ligne le 3 novembre 2026. La famille Tuu y figure au premier niveau, sans famille parente, avec deux branches, « !Ui » et « Hua », et neuf langues. Nous avons ouvert la page de chacune : East Taa est notée « shifting » et West !Xoon « threatened », N||ng « nearly extinct », /Xam, !Gã!ne, //Xegwi, Vaal-Orange, Danster !Ui et Lower-Nosop « extinct »."
+      },
+      {
+        "title": "Glottolog 5.3 — East Taa",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/huaa1248",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Édition 5.3, lue en ligne le 3 novembre 2026. Pays : Botswana et Namibie. Glottolog y reprend l'évaluation de Matthias Brenzinger (2011) : « Significant numbers of Taa speakers in Botswana abandon their own language and shift to Kgalagadi, while those living on farms or in town locations in Namibia are shifting to Afrikaans and Nama »."
+      },
+      {
+        "title": "Glottolog 5.3 — West !Xoon (xooo1239)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/xooo1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Édition 5.3, lue en ligne le 3 novembre 2026. Pays : Botswana, Namibie, Afrique du Sud. Le commentaire explique que l'entrée Taa d'Ethnologue réunit des parlers dont les extrémités de l'ouest et de l'est ne se comprennent pas entre elles."
+      },
+      {
+        "title": "Glottolog 5.3 — N||ng (nngg1234)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/nngg1234",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Édition 5.3, lue en ligne le 3 novembre 2026. Langue notée « nearly extinct », en Afrique du Sud, avec deux variétés, N|u et ||Ng!ke."
+      },
+      {
+        "title": "Tsammalex: A lexical database on plants and animals — Taa/ǃAma",
+        "author": "Christfried Naumann, Tom Güldemann, Steven Moran, Guillaume Segerer, Anne-Maria Fehn et Robert Forkel (dir.)",
+        "year": 2020,
+        "url": "https://tsammalex.clld.org/languages/nmn-a",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Base de données publiée par l'Institut Max-Planck d'anthropologie évolutionniste de Leipzig, lue en ligne le 3 novembre 2026. Description de la langue : « Taa (ǃXoon, ǃXóõ) is a Tuu language spoken by about 3000 native speakers mainly in Botswana and Namibia »."
+      },
+      {
+        "title": "A preliminary classification of Taa dialects",
+        "author": "Christfried Naumann",
+        "year": 2011,
+        "url": "https://www2.hu-berlin.de/kba/events/ichlxx/naumann.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "diapositives 2-4",
+        "notes": "Support de communication présenté au 20e congrès international de linguistique historique, à Osaka, en juillet 2011, publié par l'université Humboldt de Berlin. Lu le 3 novembre 2026. Le taa y est présenté comme « last vital member of the Tuu language family », avec « 2500 – 4000 speakers, E Namibia – SW Botswana »."
+      },
+      {
+        "title": "The Lower Nossob varieties of Tuu: ǃUi, Taa or neither?",
+        "author": "Tom Güldemann",
+        "year": 2011,
+        "url": "https://www2.hu-berlin.de/kba/events/ichlxx/gueldemann.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 1-3",
+        "notes": "Document distribué au 20e congrès international de linguistique historique, à Osaka, en juillet 2011, publié par l'université Humboldt de Berlin. Lu le 3 novembre 2026. P. 1 : « Tuu (formerly 'Southern Khoisan') one of the least known language families on the globe », « introduced as a genealogically defined group by Bleek (1927), then 'Southern Bushman' ». P. 3 : contacts des parlers du bas Nossob avec le khoekhoe et le nǁng, avec une citation de Dorothea Bleek (1937) sur les familles ǂkhomani, ǀauni et ǀnamani qui se mariaient entre elles."
+      },
+      {
+        "title": "ǃUi varieties (Tuu family) in the Cape",
+        "author": "Tom Güldemann",
+        "year": 2015,
+        "url": "https://www.eva.mpg.de/fileadmin/content_files/linguistics/conferences/2015-speaking-of-Khoisan/P5_Linguistics_Gueldemann_Western__Ui.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Document présenté au colloque « Speaking (of) Khoisan », Institut Max-Planck d'anthropologie évolutionniste, Leipzig, mai 2015. Lu le 3 novembre 2026. Il classe le tuu en deux branches, Taa-Lower Nossob et ǃUi, parmi « the three linguistic lineages traditionally subsumed under \"Southern African Khoisan\" », et note pour les parlers ǃui du Cap une « complete extinction at a very early stage (beginning of 20th c.) »."
+      },
+      {
+        "title": "A linguist's view: Khoe-Kwadi speakers as the earliest food-producers of southern Africa",
+        "author": "Tom Güldemann",
+        "year": 2008,
+        "url": "https://sahumanities.org/index.php/sah/article/view/180",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 93-132",
+        "notes": "Southern African Humanities, vol. 20, 2008. Seul le résumé est en accès libre ; lu le 3 novembre 2026. L'auteur y parle de « the spurious category of 'southern African Khoisan' »."
+      },
+      {
+        "title": "The genetic prehistory of southern Africa",
+        "author": "Joseph K. Pickrell et al.",
+        "year": 2012,
+        "url": "https://www.nature.com/articles/ncomms2140",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Nature Communications, vol. 3, article 1143, 2012, en accès libre, lu le 3 novembre 2026. Les auteurs étudient des populations parlant des langues des « three Khoisan language families (Tuu, Kx'a and Khoe-Kwadi) ». Ils écrivent : « The Khoisan clusters do not correspond to linguistic affiliation », et datent la séparation de deux groupes du Kalahari « within the last 30,000 years » et le début des mélanges avec d'autres populations à environ 1 200 ans."
+      },
+      {
+        "title": "Presence of Uncommon Consonants (WALS Online, chapitre 19)",
+        "author": "Ian Maddieson",
+        "year": 2013,
+        "url": "https://wals.info/chapter/19",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Chapitre de l'atlas mondial des structures des langues, publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 3 novembre 2026. Il décrit la façon dont on produit un clic et précise que les clics sont des sons ordinaires des mots seulement dans certaines langues d'Afrique australe et orientale."
+      },
+      {
+        "title": "Consonant Inventories (WALS Online, chapitre 1)",
+        "author": "Ian Maddieson",
+        "year": 2013,
+        "url": "https://wals.info/chapter/1",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Chapitre de l'atlas mondial des structures des langues, publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 3 novembre 2026. « !Xóõ (Southern Khoisan; Botswana) has 122 consonants, mainly because it has a very large number of different click sounds with which a word may begin » ; la moyenne des 562 langues étudiées est de 22,7 consonnes."
+      },
+      {
+        "title": "PHOIBLE — !Xóõ (GM 1379)",
+        "author": "Steven Moran et Daniel McCloy (dir.)",
+        "year": null,
+        "url": "https://phoible.org/inventories/view/1379",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Base de données des inventaires de sons des langues, publiée par l'Institut Max-Planck d'anthropologie évolutionniste, lue en ligne le 3 novembre 2026. Inventaire du !xóõ (taa de l'Est), d'après Traill (2009) : 130 consonnes, 28 voyelles et 3 tons, dont des clics bilabiaux notés ʘ."
+      },
+      {
+        "title": "The Anatomy of a South African Genocide: The Extermination of the Cape San Peoples",
+        "author": "Mohamed Adhikari",
+        "year": 2010,
+        "url": "https://doi.org/10.58331/UCTPRESS.30",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 25-26, 75-76, 82-84",
+        "notes": "Le Cap, UCT Press, 2010 ; édition numérique en accès libre de 2014, lue le 3 novembre 2026 sur le site de UCT Press. P. 25-26 : les noms « San » et « Bushman » sont « pejorative and their meanings contested » ; « Bushman » a été « a highly pejorative term in the South African context ». P. 75-76 : les guerres korana de 1868-1869 et 1878-1879, les prisonniers de Breakwater et l'archive Bleek et Lloyd. P. 82-84 : les auteurs qui parlent de génocide pour les San du Cap, dont Pippa Skotnes (1996) et la position de Nigel Penn (2005)."
+      },
+      {
+        "title": "Specimens of Bushman Folklore",
+        "author": "Wilhelm H. I. Bleek et Lucy C. Lloyd",
+        "year": 1911,
+        "url": "https://archive.org/details/specimensofbush00blee",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "préface, p. vii-xi",
+        "notes": "Londres, George Allen & Company, 1911, édité par Lucy C. Lloyd. Ouvrage de l'époque coloniale, qui emploie le mot « Bushman » de ce temps. Lu le 3 novembre 2026 sur la numérisation de l'Internet Archive. La préface nomme les narrateurs ǀxam et leurs dates de séjour chez Wilhelm Bleek, à Mowbray, à partir du 29 août 1870 ; des portraits sont datés de la prison de Breakwater, vers 1871."
+      },
+      {
+        "title": "A Bushman Dictionary",
+        "author": "Dorothea F. Bleek",
+        "year": 1956,
+        "url": "https://archive.org/details/bushmandictionar00blee",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "introduction ; p. 239-240",
+        "notes": "New Haven, American Oriental Society, publié après la mort de l'autrice. Lu le 3 novembre 2026 sur la numérisation des bibliothèques de l'université de Floride. L'autrice emploie le nom « Bushman » de son époque. L'introduction résume la classification de 1929 en trois groupes, dont un « Southern Group » numéroté de SI à SVI, et rapporte l'avis de l'autrice : « the Northern Group nevertheless stands close to the Southern than to the Central ». P. 239-240 : entrée « tu, n. man, pron. who », avec un pluriel traduit par « many people »."
+      },
+      {
+        "title": "National Coat of Arms",
+        "author": "Gouvernement de la République d'Afrique du Sud",
+        "year": 2000,
+        "url": "https://www.gov.za/about-sa/national-coat-arms",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Page du portail du gouvernement sud-africain, rédigée par le service de communication du gouvernement en avril 2000, lue le 3 novembre 2026. « The motto is: !ke e: /xarra //ke, written in the Khoisan language of the /Xam people, literally meaning diverse people unite. » Les armoiries ont été présentées le 27 avril 2000."
+      },
+      {
+        "title": "Botswana Population and Housing Census 2022, Analytical Report, Volume 1",
+        "author": "Statistics Botswana",
+        "year": 2025,
+        "url": "https://statsbots.org.bw/sites/default/files/census_documents/Botswana%20Population%20%26%20Housing%20Census%202022%20Analytical%20Report%20Volume%201-Demographic%20and%20Social%20Characteristics%2CRegistration%2C%20Youth%20and%20Elderly%2CEducation.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. 58",
+        "notes": "Rapport d'analyse du recensement de 2022, publié par l'office statistique du Botswana, lu le 3 novembre 2026. Le recensement réunit les langues san sous un seul nom : « Sesarwa language usage is more pronounced in Ghanzi (mostly Naro Dialect) and Ngamiland West (mostly Sekhwedam) »."
+      },
+      {
+        "title": "Last fluent speaker on a quest to keep ancient South African language alive",
+        "author": "AFP, publié par eNCA",
+        "year": 2025,
+        "url": "https://www.enca.com/lifestyle/last-fluent-speaker-quest-keep-ancient-south-african-language-alive",
+        "tier": "referenced",
+        "source_kind": "press",
+        "notes": "Dépêche de l'Agence France-Presse publiée le 10 octobre 2025 par la chaîne sud-africaine eNCA, lue le 3 novembre 2026. Katrina Esau, 92 ans, née en 1933 près d'Olifantshoek, est la dernière personne qui parle le nǀuu comme langue maternelle : « her mother tongue, of which she is the last first-language speaker ». Elle raconte à l'AFP que le fermier qui employait ses parents les chassait quand il les entendait parler nǀuu."
       }
     ]
   }

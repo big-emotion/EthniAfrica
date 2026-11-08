@@ -23,9 +23,14 @@
   "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_SONGHAY",
-  "peoples": [{ "name": "Zarma", "peopleId": "PPL_ZARMA" }],
+  "peoples": [
+    {
+      "name": "Zarma",
+      "peopleId": "PPL_ZARMA"
+    }
+  ],
   "nameHistory": {
-    "summary": "Le nom zarma désigne une langue songhaï du Niger, et le peuple qui la parle porte le même nom. Ses locuteurs disent zarma ciine, « la langue zarma ». En français, on a longtemps écrit djerma. Les sources que nous avons lues ne disent pas d'où vient le nom Zarma ; nous présentons plus bas ses traces.",
+    "summary": "Le nom zarma désigne une langue songhaï de l'ouest du Niger et le peuple qui la parle. Ses locuteurs l'appellent zarma ciine, « la langue zarma ». En français, on a longtemps écrit djerma. Les textes officiels du Niger écrivent sonay-zarma en 2001, puis Zarma-Sonrai en 2025. Nous présentons plus bas l'histoire de chacun de ces noms, depuis leur plus ancienne trace écrite.",
     "names": [
       {
         "nameText": "Zarma",
@@ -38,12 +43,70 @@
         "accounts": [
           {
             "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Charte du 26 mars 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom zarma prend la forme Zarma-Sonrai dans la Charte de la Refondation, promulguée au Niger le 26 mars 2025. La Charte range le zarma-sonrai parmi les langues parlées du Niger. Elle fait du haoussa la seule langue nationale.",
+            "aspect": "usage",
+            "formAsWritten": "Zarma-Sonrai",
+            "actors": [
+              {
+                "name": "République du Niger",
+                "role": "écrit cette forme dans la Charte"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Charte de la Refondation, promulguée par le décret n° 2025-160/P/CNSP du 26 mars 2025",
+                "author": "République du Niger, Journal officiel",
+                "year": 2025,
+                "url": "https://faolex.fao.org/docs/pdf/ner242401.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "Journal officiel du 31 mars 2025, p. 1917, art. 12",
+                "notes": "Numéro spécial du Journal officiel de la République du Niger du 31 mars 2025, en copie numérisée dans la base FAOLEX de l'Organisation des Nations unies pour l'alimentation et l'agriculture. Lu le 3 novembre 2026. Article 12 : « Les langues parlées du Niger sont l'Arabe, le Buduma, […] le Fulfuldé, le Gurmancema, le Hausa, le Kanuri, le Tagdalt, le Tamajaq, le Tassawaq, le Tubu et le Zarma-Sonrai. La langue nationale est le hausa. Les langues de travail sont l'Anglais et le Français. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2001,
+              "to": 2001,
+              "label": "Loi du 31 décembre 2001"
+            },
+            "era": "modern",
+            "statement": "Le nom zarma prend la forme sonay-zarma dans la loi nigérienne du 31 décembre 2001 sur les langues nationales. Cette loi range le sonay-zarma parmi les dix langues nationales du Niger.",
+            "aspect": "usage",
+            "formAsWritten": "sonay-zarma",
+            "actors": [
+              {
+                "name": "République du Niger",
+                "role": "écrit cette forme dans la loi"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Loi n° 2001-037 du 31 décembre 2001 fixant les modalités de promotion et de développement des langues nationales",
+                "author": "République du Niger",
+                "year": 2001,
+                "url": "https://axl.cefan.ulaval.ca/afrique/niger-loi-2001-037-LNG.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "art. 2",
+                "notes": "Texte de la loi reproduit par le site Aménagement linguistique dans le monde (Université Laval, Québec) ; nous ne l'avons pas lu au Journal officiel du Niger. Lu le 3 novembre 2026. Article 2 : « Sont proclamées langues nationales : l'arabe, le budurna, le fulfuldé, le guimancema, le hausa, le kanuri, le sonay-zarma, le tamajaq, le tassawaq et le tubu. » Les noms des langues sont reproduits tels que le site les écrit."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1966,
               "to": 1966,
               "label": "Usage décrit en 1966"
             },
             "era": "modern",
-            "statement": "Le nom zarma désigne à la fois la langue et ceux qui la parlent : « Ni ya zarma no ? », « Es-tu un Zarma ? », demande un cours de langue de 1966. Les sources que nous avons lues ne disent pas d'où vient ce nom ; la fiche du peuple Zarma présente ses traces.",
+            "statement": "Le nom zarma désigne à la fois la langue et ceux qui la parlent : « Ni ya zarma no ? », « Es-tu un Zarma ? », demande un cours de langue de 1966. La fiche du peuple Zarma présente d'autres traces de ce nom.",
             "aspect": "meaning",
             "sources": [
               {
@@ -65,7 +128,7 @@
               "label": "Voyage de 1853 (récit publié en 1857)"
             },
             "era": "polity",
-            "statement": "Le nom zarma est écrit « Zaberma, or Zerma (Jerma) » par Heinrich Barth, pour une province bordée par le Niger. C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme un pays, pas encore une langue.",
+            "statement": "Le nom zarma est écrit « Zaberma, or Zerma (Jerma) » par Heinrich Barth, pour une province bordée par le Niger. C'est la plus ancienne trace de ce nom que nous connaissons. Elle nomme un pays, pas encore une langue.",
             "formAsWritten": "Zaberma, or Zerma (Jerma)",
             "birth": true,
             "sources": [
@@ -99,7 +162,7 @@
               "label": "1966"
             },
             "era": "modern",
-            "statement": "Le nom zarma ciine apparaît, écrit zarma tyine, dans un cours de langue préparé pour le Peace Corps : « A go ga tyew zarma tyine ? », « Étudie-t-il le zarma ? ». Le cours traduit tyine par « langue ». C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "statement": "Le nom zarma ciine apparaît, écrit zarma tyine, dans un cours de langue préparé pour le Peace Corps : « A go ga tyew zarma tyine ? », « Étudie-t-il le zarma ? ». Le cours traduit tyine par « langue ». C'est la plus ancienne trace de ce nom que nous connaissons. La langue existait déjà avant lui.",
             "formAsWritten": "zarma tyine",
             "birth": true,
             "sources": [
@@ -115,7 +178,21 @@
               }
             ]
           }
-        ]
+        ],
+        "pronunciation": {
+          "respelling": "zar-ma tyi-nè",
+          "audio": null,
+          "source": {
+            "title": "Djerma Basic Course",
+            "author": "English Language Services, pour le Peace Corps",
+            "year": 1966,
+            "url": "https://archive.org/details/ERIC_ED143238",
+            "tier": "referenced",
+            "source_kind": "linguistic_reference",
+            "page": "p. 12 et p. 13",
+            "notes": "Washington, 1966, cours de langue préparé pour le Peace Corps et diffusé par ERIC. Lu le 11 octobre 2026 et relu le 3 novembre 2026 dans la numérisation d'Internet Archive. Le cours écrit ce nom zarma tyine. Il décrit ty comme un son proche à la fois du t de l'anglais « don't ya » et du c de l'anglais « cute », et e comme le e de l'anglais « let », proche du è français."
+          }
+        }
       },
       {
         "nameText": "Djerma",
@@ -127,6 +204,35 @@
         "periodLabel": "XXe siècle",
         "variantSpelling": true,
         "accounts": [
+          {
+            "period": {
+              "from": 2001,
+              "to": 2001,
+              "label": "Recensement de 2001"
+            },
+            "era": "modern",
+            "statement": "Le nom djerma reste employé par l'Institut national de la statistique du Niger dans son analyse du recensement de 2001. Le groupe « Djerma-Sonrai » y représente 21,0 % de la population résidente. Ce chiffre compte les personnes selon l'ethnie qu'elles déclarent, pas selon la langue qu'elles parlent.",
+            "aspect": "usage",
+            "formAsWritten": "Djerma-Sonrai",
+            "actors": [
+              {
+                "name": "Institut national de la statistique du Niger",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "État et structure de la population, analyse du recensement général de la population et de l'habitat de 2001",
+                "author": "Institut national de la statistique du Niger",
+                "year": null,
+                "url": "https://stat-niger.org/wp-content/uploads/autres_publications/Etat_et_strcuture_version_finale.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "p. 19, p. 23 et p. 70, tableau 29",
+                "notes": "Rapport d'analyse du recensement de 2001 mis en ligne par l'Institut national de la statistique du Niger ; la version en ligne ne porte pas de date d'édition. Lu le 3 novembre 2026. Le recensement demande l'ethnie de chaque Nigérien, pas sa langue : « s'il est nigérien, alors il demande l'ethnie de l'enquêté et il enregistre l'ethnie déclarée ». Le tableau 29 donne 21,0 % de « Djerma-Sonrai » dans la population résidente."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1966,
@@ -154,7 +260,7 @@
     ]
   },
   "content": {
-    "vehicularRole": null,
+    "vehicularRole": "vehicular",
     "dialects": [
       "Djerma",
       "Kourtey",
@@ -164,15 +270,94 @@
       "Songhoyboro Ciine",
       "Wogo"
     ],
-    "vitalityStatus": null,
+    "vitalityStatus": {
+      "status": "Educational",
+      "scale": "EGIDS (Ethnologue)",
+      "asOf": 2025
+    },
+    "originDebated": false,
     "sources": [
       {
         "title": "Glottolog 5.3 — Zarma (zarm1239)",
         "url": "https://glottolog.org/resource/languoid/id/zarm1239",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Glottolog name: Zarma-Kaado; classification includes Songhay. Les dialectes listés sont les sous-languoids que Glottolog rattache à zarm1239, hors languoids portant leur propre code ISO 639-3."
+        "notes": "Glottolog 5.3, base de données des langues du monde tenue par l'Institut Max Planck d'anthropologie évolutionnaire. Lu le 3 novembre 2026. La notice nomme la langue Zarma-Kaado et la range parmi les langues songhaï. Les sept dialectes listés sont ceux qu'elle range sous ce nom : Djerma, Kourtey, Karimama, Niger Dendi, Northern Dendi, Songhoyboro Ciine et Wogo. Pour la vitalité de la langue, elle indique « not endangered » et relaie l'évaluation d'Ethnologue de 2025 : « Zarma (dje-dje) = 4 (Educational) »."
+      },
+      {
+        "title": "Les francophones face à leur langue. Le cas des Nigériens",
+        "author": "Pascal Singy et Fabrice Rouiller",
+        "year": 2001,
+        "url": "https://journals.openedition.org/etudesafricaines/114",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "§ 2",
+        "notes": "Article des Cahiers d'études africaines, n° 163-164, 2001, p. 649-666, en ligne sur OpenEdition Journals ; enquête menée par des chercheurs de Lausanne et de Niamey. Lu le 3 novembre 2026 : « le hausa et le zarma, langues les plus parlées, permettant en effet la communication entre des locuteurs qui ne l'ont pas tous pour langue première »."
+      },
+      {
+        "title": "Pour la création d'un Centre national d'aménagement linguistique au Niger",
+        "author": "Issoufi Alzouma Oumarou",
+        "year": 1994,
+        "url": "https://termisti.ulb.ac.be/archive/rifal/PDF/tn11/tn11_Alzouma%20Oumarou.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "partie 2.3, 3e page de l'article",
+        "notes": "Article de la revue Terminologies nouvelles, n° 11, juin 1994, archivée par l'Université libre de Bruxelles ; l'auteur enseigne au département de linguistique de l'université Abdou Moumouni de Niamey. Lu le 3 novembre 2026. Il écrit que le hausa et le zarma sont devenus langues de travail du Conseil national de développement, à côté du français : « le hausa est particulièrement véhiculaire dans les 3/4 du pays alors que le zarma occupe géographiquement sa partie ouest. Le caractère véhiculaire de ces langues est en effet un critère très important pour les adopter comme langues nationales de travail »."
+      },
+      {
+        "title": "Loi n° 2001-037 du 31 décembre 2001 fixant les modalités de promotion et de développement des langues nationales",
+        "author": "République du Niger",
+        "year": 2001,
+        "url": "https://axl.cefan.ulaval.ca/afrique/niger-loi-2001-037-LNG.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "page": "art. 2",
+        "notes": "Texte de la loi reproduit par le site Aménagement linguistique dans le monde (Université Laval, Québec) ; nous ne l'avons pas lu au Journal officiel du Niger. Lu le 3 novembre 2026. Article 2 : « Sont proclamées langues nationales : l'arabe, le budurna, le fulfuldé, le guimancema, le hausa, le kanuri, le sonay-zarma, le tamajaq, le tassawaq et le tubu. » Les noms des langues sont reproduits tels que le site les écrit."
+      },
+      {
+        "title": "Charte de la Refondation, promulguée par le décret n° 2025-160/P/CNSP du 26 mars 2025",
+        "author": "République du Niger, Journal officiel",
+        "year": 2025,
+        "url": "https://faolex.fao.org/docs/pdf/ner242401.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "page": "Journal officiel du 31 mars 2025, p. 1917, art. 12",
+        "notes": "Numéro spécial du Journal officiel de la République du Niger du 31 mars 2025, en copie numérisée dans la base FAOLEX de l'Organisation des Nations unies pour l'alimentation et l'agriculture. Lu le 3 novembre 2026. Article 12 : « Les langues parlées du Niger sont l'Arabe, le Buduma, […] le Fulfuldé, le Gurmancema, le Hausa, le Kanuri, le Tagdalt, le Tamajaq, le Tassawaq, le Tubu et le Zarma-Sonrai. La langue nationale est le hausa. Les langues de travail sont l'Anglais et le Français. »"
+      },
+      {
+        "title": "État et structure de la population, analyse du recensement général de la population et de l'habitat de 2001",
+        "author": "Institut national de la statistique du Niger",
+        "year": null,
+        "url": "https://stat-niger.org/wp-content/uploads/autres_publications/Etat_et_strcuture_version_finale.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. 19, p. 23 et p. 70, tableau 29",
+        "notes": "Rapport d'analyse du recensement de 2001 mis en ligne par l'Institut national de la statistique du Niger ; la version en ligne ne porte pas de date d'édition. Lu le 3 novembre 2026. Le recensement demande l'ethnie de chaque Nigérien, pas sa langue : « s'il est nigérien, alors il demande l'ethnie de l'enquêté et il enregistre l'ethnie déclarée ». Le tableau 29 donne 21,0 % de « Djerma-Sonrai » dans la population résidente."
+      },
+      {
+        "title": "Recensement général de la population et de l'habitat 2012 — État et structure de la population du Niger en 2012",
+        "author": "Institut national de la statistique du Niger",
+        "year": 2015,
+        "url": "https://www.stat-niger.org/wp-content/uploads/2020/05/ETAT_STRUCTURE_POPULATION.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "chapitre V, p. 44",
+        "notes": "Rapport de novembre 2015 de l'Institut national de la statistique du Niger, mis en ligne sur son site. Lu le 3 novembre 2026. Son chapitre sur les caractéristiques socioculturelles présente la population « selon quelques caractéristiques socioculturelles que sont, la nationalité et la religion ». Il ne donne ni l'ethnie ni la langue parlée."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers",
+        "reason": "Nous avons cherché un nombre de locuteurs du zarma au Niger et dans les pays voisins. Les recensements du Niger ne posent pas la question de la langue : celui de 2001 compte les ethnies, et le rapport de 2015 sur celui de 2012 ne présente que la nationalité et la religion. Glottolog ne donne pas de chiffre, et la page d'Ethnologue sur le zarma ne nous était pas accessible."
+      },
+      {
+        "field": "nameHistory.names[0].accounts",
+        "reason": "Nous avons cherché une explication du sens du nom zarma, et de la forme zabarma, dans les ouvrages de linguistique et d'histoire que nous avons pu lire en ligne. Nous n'en avons pas encore trouvé. Les livres de Jean Rouch (Les Songhay, 1954) et de Boubou Hama, ainsi que le dictionnaire zarma-français d'Oumarou Bisso, restent à consulter."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Le zarma est une langue songhaï de l'ouest du Niger. Avec le haoussa, c'est l'une des langues qui permettent aux Nigériens de langues différentes de se comprendre.",
+      "followUp": "D'où vient l'ancienne écriture djerma, et qui l'emploie encore ?"
+    }
   }
 }

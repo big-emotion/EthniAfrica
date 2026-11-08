@@ -97,8 +97,10 @@ const FOLDS: Fold[] = [
     carried: {
       sourceTitle:
         "Bastin, Marie-Louise — Arts of the Angolan Peoples, I: Chokwe. Museu do Dundo, 1961",
-      subGroup: "Tshokwe de Zambie",
-      dialect: "Kichokwe",
+      // Premium batch 01 (2026-11-03) rewrote this keeper from sources read
+      // in session and dropped the folded labels no source supports; only
+      // what the sourced fiche still carries is held here.
+      subGroup: "Chokwe de Zambie",
     },
   },
   {
