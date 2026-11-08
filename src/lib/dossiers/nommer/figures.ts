@@ -122,7 +122,10 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // headlines, Mucuval and Wiyana, moved to the exonyms, where a reader who searches them still finds the fiche.
     // 2703 -> 2745 on 2026-10-19: ETNI-2135 split packed exonym entries into
     // one entry per name, preserving the names and their existing glosses.
-    value: 2745,
+    // 2745 -> 2710 on 2026-11-08: the premium pass on eight people fiches
+    // (Tuareg, Lamba, Nankana, Bété, Dida, Krou, Wané, Wè) kept only the
+    // exonyms a source read attests, 48 -> 13; the others had no source.
+    value: 2710,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -251,7 +254,10 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // research for series 2 n° 1, dates the French spelling (Targui, 19th
     // century) instead of saying « à l'époque coloniale ».
     // 199 -> 197 on 2026-10-18: the Taal and Mbogo fiches, which counted, withdrawn after wave 24.
-    value: 197,
+    // 197 -> 198 on 2026-11-08: the premium pass rewrote three origin texts from
+    // their sources; the Krou and Wané ones now name a colonial administrator,
+    // and the Wè one no longer uses the word.
+    value: 198,
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -283,7 +289,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 163 -> 156 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
     // 156 -> 155 on 2026-10-14: the Nabt fiche, which counted, was folded.
     // 155 -> 152 on 2026-10-18: the Taal, Mbogo and « Africains d'origine récente » fiches, which counted, withdrawn after wave 24.
-    value: 152,
+    // 152 -> 155 on 2026-11-08: the Nankana, Krou and Wané origin texts, rewritten from their sources, now name the administration that wrote the name down.
+    value: 155,
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -332,7 +339,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 103 -> 102 on 2026-10-18: the Taal fiche, which counted, withdrawn after wave 24.
     // 102 -> 101 the same day: PPL_WIYANA's whyProblematic no longer says the Mossi
     // neighbours imposed Gurunsi; it tells Jacob's hypothesis of a Moore nickname instead.
-    value: 101,
+    // 101 -> 106 on 2026-11-08: the Lamba, Nankana, Dida, Wané and Wè origin texts, rewritten from their sources, now say which neighbours gave a name.
+    value: 106,
     method: "radical voisin dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -370,7 +378,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 49 -> 50 on 2026-10-12: the Bakwé fiche now records Tuwè, a pejorative Krou name for them, in originOfExonyms.
     // 50 -> 49 on 2026-10-18: PPL_WIYANA no longer calls Gurunsi a pejorative term of Djerma origin,
     // which no source said; it tells Jacob's « gibier de battue » hypothesis without that label.
-    value: 49,
+    // 49 -> 48 on 2026-11-08: the Dida origin text no longer carries the unsourced sentence saying the name has « pas de connotation péjorative avérée ».
+    value: 48,
     method: `radicaux ${PEJORATIVE_STEMS.join(", ")} dans originOfExonyms + whyProblematic`,
     countedOn: "2026-10-09",
   },
@@ -423,7 +432,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 25 -> 24 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
     // 24 -> 23 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
-    value: 23,
+    // 23 -> 22 on 2026-11-08: the Wané origin text no longer carries the unsourced sentence on spellings by linguists and missionaries.
+    value: 22,
     method: "radical missionn dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
