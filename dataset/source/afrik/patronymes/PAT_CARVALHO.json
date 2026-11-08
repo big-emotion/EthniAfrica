@@ -22,15 +22,32 @@
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [],
+    "writtenChronicles": [
+      {
+        "claim": "La plus ancienne trace connue du nom est une forme proche, « Johannes de Carvalio », relevée dans les Inquirições de 1220 au Portugal.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["vasconcelos-antroponimia-1928"]
+      }
+    ],
     "historicalSyntheses": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Carvalho est, au Portugal, un nom de lieu ou le nom de celui qui vivait près d'un chêne remarquable, carvalho en portugais.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["hanks-dafn-carvalho"]
+      },
+      {
+        "claim": "Leite de Vasconcelos range Carvalho parmi les noms de famille portugais d'origine géographique, reconnus parce qu'ils sont parfois précédés de « de, do, da ».",
+        "claimStatus": "claimed",
+        "sourceRefs": ["vasconcelos-antroponimia-1928"]
+      }
+    ]
   },
   "peoples": [],
   "countries": [
     {
       "countryId": "STP",
-      "status": "attested",
+      "status": "supposed",
       "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
@@ -46,6 +63,22 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "hanks-dafn-carvalho",
+      "title": "Dictionary of American Family Names, 2e éd. — Carvalho (Patrick Hanks, Oxford University Press, 2022)",
+      "url": "https://web.archive.org/web/20250809063122/https://www.ancestry.com/last-name-meaning/Carvalho",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Notice reproduite par Ancestry, lue le 16 octobre 2026 dans la copie du 9 août 2025 conservée par la Wayback Machine. Elle dit : « Portuguese : topographic name for someone who lived by a conspicuous oak tree carvalho or a habitational name from any of numerous places called with this word. » Elle ne parle pas de São Tomé-et-Príncipe."
+    },
+    {
+      "sourceKey": "vasconcelos-antroponimia-1928",
+      "title": "Antroponímia portuguesa (José Leite de Vasconcelos, Lisbonne, Imprensa Nacional, 1928)",
+      "url": "https://archive.org/details/antroponimia-portuguesa",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Exemplaire numérisé d'archive.org, lu le 16 octobre 2026 ; pages vérifiées sur l'image. Page 264 : Carvalho figure parmi les noms de famille « que na origem são geograficos », reconnus parce qu'ils sont parfois précédés de « de, do, da ». Page 163 : « Johannes de Carvalio (= de Carvalho) », relevé dans les Inquirições de 1220 (page 162). L'ouvrage porte sur le Portugal, non sur São Tomé-et-Príncipe."
     }
   ],
   "gaps": [
@@ -55,10 +88,6 @@
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "bearers",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
@@ -72,6 +101,14 @@
     {
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Carvalho à un peuple à São Tomé-et-Príncipe. Nous n'avons pas encore consulté de source consacrée à ce nom. Nos fiches mentionnent ce nom chez les créoles de Guinée-Bissau. Cela ne renseigne pas sur son usage à São Tomé-et-Príncipe. La fiche sur les Forros cite trois noms d'origine portugaise : Trovoada, Espírito Santo et Vera Cruz. Leur usage ne permet pas de rattacher tous les noms portugais aux Forros."
+    },
+    {
+      "fieldPath": "countries",
+      "reason": "Le nom est établi au Portugal par les deux ouvrages lus, mais aucune source lue ne le situe à São Tomé-et-Príncipe : seul le relevé de couverture du projet, qui n'est pas une source, l'y place. La mention passe de « attesté » à « supposé ». Les recherches web « Carvalho São Tomé e Príncipe apelido » n'ont livré aucune étude d'onomastique santoméenne ni registre d'état civil."
+    },
+    {
+      "fieldPath": "bearers",
+      "reason": "Aucun porteur santoméen décédé n'a été documenté dans une source lue ; la recherche web « Carvalho São Tomé » n'a livré que des généralités sur le nom au Portugal. Les porteurs portugais ne sont pas retenus : la fiche porte sur São Tomé-et-Príncipe."
     }
   ],
   "nameHistory": {

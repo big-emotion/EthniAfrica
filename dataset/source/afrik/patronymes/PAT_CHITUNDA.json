@@ -29,7 +29,7 @@
   "peoples": [
     {
       "peopleId": "PPL_OVIMBUNDU",
-      "status": "attested",
+      "status": "supposed",
       "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
@@ -37,12 +37,18 @@
     {
       "countryId": "AGO",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "hansard-lords-1993-angola"]
     }
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
-  "bearers": [],
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Jeremias Chitunda",
+      "sourceRefs": ["hansard-lords-1993-angola", "lusa-veran-2021-chitunda"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
@@ -52,6 +58,22 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "hansard-lords-1993-angola",
+      "title": "Angola: war crimes investigation proposal (Lords written answer, HL Deb vol 549 cc106-7WA, 2 novembre 1993)",
+      "url": "https://api.parliament.uk/historic-hansard/written_answers/1993/nov/02/angola-war-crimes-investigation-proposal",
+      "tier": "official",
+      "source_kind": "archive",
+      "notes": "Réponse écrite de la baronne Chalker of Wallasey, ministre britannique, à une question de lord Avebury, Chambre des Lords, 2 novembre 1993, lue en ligne le 8 novembre 2026. Elle écrit que « Messrs Pena and Chitunda, both senior UNITA commanders, were killed on 1 November 1992 ». Source officielle d'un gouvernement étranger, citée pour ce qu'elle déclare ; la date du 1er novembre diffère de celle d'autres récits, que nous n'avons pas tranchée. Elle ne dit rien du sens ni de l'origine du nom."
+    },
+    {
+      "sourceKey": "lusa-veran-2021-chitunda",
+      "title": "Governo passou certificados de óbito de quatro dirigentes da UNITA mortos em 1992 (Lusa/VerAngola, 6 juillet 2021)",
+      "url": "https://www.verangola.net/va/pt/072021/Politica/26155/Governo-passou-certificados-de-óbito-de-quatro-dirigentes-da-UNITA-mortos-em-1992.htm",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Dépêche de l'agence Lusa reprise par VerAngola le 6 juillet 2021, lue le 8 novembre 2026 dans sa version anglaise. Elle nomme Jeremias Chitunda, vice-président de l'UNITA, parmi quatre responsables tués « in the military confrontations that took place in Luanda, following the election results in 1992 ». Elle ne donne ni date précise ni lieu natal, et ne dit rien du sens du nom."
     }
   ],
   "gaps": [
@@ -64,16 +86,20 @@
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
-      "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Le rattachement aux Ovimbundu ne repose que sur le relevé de couverture du projet, qui n'est pas une source : il passe de « attesté » à « supposé ». Les deux sources lues sur Jeremias Chitunda (Chambre des Lords, 1993 ; Lusa, 2021) ne disent pas de quel peuple il est. Une recherche web « Chitunda Ovimbundu » n'a livré que des copies de Wikipédia ; la direction de l'UNITA est décrite comme majoritairement ovimbundu, ce qui ne dit rien d'un nom en particulier."
+    },
+    {
+      "fieldPath": "origin",
+      "reason": "La recherche web « Chitunda Umbundu étymologie » et « Chitunda sobrenome origem » n'a livré aucun dictionnaire umbundu ni travail d'onomastique angolaise qui analyse ce mot. Les sources lues nomment un porteur sans expliquer le nom ; aucune étymologie n'est donc avancée."
     }
   ],
   "nameHistory": {

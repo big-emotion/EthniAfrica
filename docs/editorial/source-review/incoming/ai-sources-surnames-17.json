@@ -1,0 +1,225 @@
+{
+  "description": "Proposals for the ai_generated sources of the surnames-17 batch. Not yet decided; the operator decides each one. PAT_CHAABANE has no candidate: no real work stating the claim was found.",
+  "verifications": [
+    {
+      "fiche": "patronymes/PAT_CARVALHO.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_CARVALHO; nameMain: Carvalho; nameSystem: hereditary_family_name; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Dictionary of American Family Names, 2e éd. — Carvalho",
+          "author": "Patrick Hanks (dir.)",
+          "year": 2022,
+          "url": "https://web.archive.org/web/20250809063122/https://www.ancestry.com/last-name-meaning/Carvalho",
+          "source_kind": "linguistic_reference",
+          "quote": "Portuguese : topographic name for someone who lived by a conspicuous oak tree carvalho or a habitational name from any of numerous places called with this word.",
+          "supports": "Carvalho is a Portuguese family name from carvalho 'oak'. Supports the name's form and meaning, not its presence in Sao Tome and Principe."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5 (workflow surnames-17)"
+    },
+    {
+      "fiche": "patronymes/PAT_CHAABANE.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_CHAABANE; nameMain: Chaabane; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5 (workflow surnames-17)"
+    },
+    {
+      "fiche": "patronymes/PAT_CHERIF.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_CHERIF; nameMain: Cherif; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Étude anthroponymique de la commune d'Aokas de 1962 à 1970",
+          "author": "Lynda Salhi",
+          "year": 2015,
+          "url": "https://bucket.theses-algerie.com/files/repositories-dz/1532970119996190.pdf",
+          "source_kind": "academic",
+          "quote": "Cherif, Cherifa : de la racine arabe [ČRF], dérivé de « Charif » qui signifie « noble »",
+          "supports": "Cherif is attested as a masculine first name at Aokas (Algeria) and derived from Arabic sharif 'noble'. Page 50, read in full on 14 October 2026."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5 (workflow surnames-17)"
+    },
+    {
+      "fiche": "patronymes/PAT_CHIRINDZA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_CHIRINDZA; nameMain: Chirindza; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+          "author": "Gerhard Liesegang",
+          "year": 2014,
+          "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+          "source_kind": "academic",
+          "quote": "The presence of clan names from the south like Chirindza (from Manhica in the South), Gwambe (from Inharrime) among the Vilankulu [...]",
+          "supports": "Chirindza is a clan name in southern Mozambique, said to come from Manhica. Unofficial manuscript copy on archive.org, page 41."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5 (workflow surnames-17)"
+    },
+    {
+      "fiche": "patronymes/PAT_CHIRWA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_CHIRWA; nameMain: Chirwa; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: lineage",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Chirwa, Yuraia Chatonda — Dictionary of African Christian Biography",
+          "author": "Masauko Wellby Tembo",
+          "year": 2022,
+          "url": "https://dacb.org/stories/malawi/chirwa-yuraia/",
+          "source_kind": "academic",
+          "quote": "was a Tonga by tribe",
+          "supports": "Chirwa is a surname borne in Malawi, here by a Tonga man (c. 1865-1951). Supports the country and a bearer, not a clan structure."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5 (workflow surnames-17)"
+    },
+    {
+      "fiche": "patronymes/PAT_CHISSANO.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_CHISSANO; nameMain: Chissano; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: lineage",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Diário de Lisboa 1974-09-20: ano 54, n.º 18567",
+          "author": "Diário de Lisboa",
+          "year": 1974,
+          "url": "https://archive.org/details/cc_dl_06820.170.26888",
+          "source_kind": "press",
+          "quote": "Joaquim Chissano",
+          "supports": "Chissano is a family name written in Mozambique in 1974 (prime minister of the transitional government). Supports attestation only; the page says nothing about clan structure."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5 (workflow surnames-17)"
+    },
+    {
+      "fiche": "patronymes/PAT_CHITUNDA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_CHITUNDA; nameMain: Chitunda; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Angola: war crimes investigation proposal (Lords written answer, HL Deb vol 549 cc106-7WA)",
+          "author": "Baroness Chalker of Wallasey",
+          "year": 1993,
+          "url": "https://api.parliament.uk/historic-hansard/written_answers/1993/nov/02/angola-war-crimes-investigation-proposal",
+          "source_kind": "archive",
+          "quote": "Messrs Pena and Chitunda, both senior UNITA commanders, were killed on 1 November 1992,",
+          "supports": "Chitunda is a family name borne in Angola by a UNITA leader. Supports attestation in Angola, not a clan structure or Ovimbundu affiliation."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5 (workflow surnames-17)"
+    },
+    {
+      "fiche": "patronymes/PAT_CHIVUKUVUKU.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_CHIVUKUVUKU; nameMain: Chivukuvuku; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Africa (Sub-Sahara), JPRS-SSA-88-022",
+          "author": "Joint Publications Research Service",
+          "year": 1988,
+          "url": "https://archive.org/details/jprs-report_jprs-ssa-88-022",
+          "source_kind": "press",
+          "quote": "Lt-Col Abel Chivukuv",
+          "supports": "Chivukuvuku is a family name borne in Angola in 1988 by a UNITA officer. Quote truncated in the note of the fiche; page 1 of the Angola section. Attestation only."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5 (workflow surnames-17)"
+    },
+    {
+      "fiche": "patronymes/PAT_CHIZIANE.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_CHIZIANE; nameMain: Chiziane; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: lineage",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Sub-Saharan Africa Report, JPRS-SSA-85-078",
+          "author": "Joint Publications Research Service",
+          "year": 1985,
+          "url": "https://archive.org/details/jprs-report_jprs-ssa-85-078",
+          "source_kind": "press",
+          "quote": "(brève « Cashew marketing figures », p. 52, district de Manjacaze, province de Gaza)",
+          "supports": "Chiziane is a family name attested in Gaza province, Mozambique, in 1985. Attestation only; no clan structure."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5 (workflow surnames-17)"
+    },
+    {
+      "fiche": "patronymes/PAT_CHRAIBI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_CHRAIBI; nameMain: Chraïbi; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Encounter with a Phantom Writer : on the death of Driss Chraïbi",
+          "author": "Regina Keil-Sagawe",
+          "year": 2007,
+          "url": "https://qantara.de/node/7915",
+          "source_kind": "press",
+          "quote": "Driss Chraïbi, the most important figure in contemporary Moroccan literature, died on April 1",
+          "supports": "Chraibi is a family name borne in Morocco by the writer Driss Chraibi. Attestation only; says nothing of the nisba classification."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5 (workflow surnames-17)"
+    }
+  ]
+}

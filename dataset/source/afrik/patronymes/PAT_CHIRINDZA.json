@@ -23,21 +23,31 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "historicalSyntheses": [],
+    "historicalSyntheses": [
+      {
+        "claim": "Gerhard Liesegang (2014) cite Chirindza, « from Manhica in the South », parmi les noms de clans venus du sud que l'on trouve chez les Vilankulu, avec Gwambe, venu d'Inharrime : il y voit un signe de déplacements de groupes qui remontent le pays chopi.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["liesegang-borders-2014"]
+      }
+    ],
     "linguisticReconstructions": []
   },
   "peoples": [
     {
       "peopleId": "PPL_TSONGA",
-      "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "status": "supposed",
+      "sourceRefs": ["afrik-candidate-queue", "makisi-bila-dikixinari-2016"]
     }
   ],
   "countries": [
     {
       "countryId": "MOZ",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "liesegang-borders-2014",
+        "jprs-77207-1981"
+      ]
     }
   ],
   "alliances": [],
@@ -52,6 +62,30 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "liesegang-borders-2014",
+      "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states (Gerhard Liesegang, 2014)",
+      "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Texte de juillet 2014, diffusé comme manuscrit, de Gerhard Liesegang, du département d'histoire de l'Universidade Eduardo Mondlane ; copie non officielle déposée sur archive.org, lue en entier. À la page 41, il écrit : « The presence of clan names from the south like Chirindza (from Manhica in the South), Gwambe (from Inharrime) among the Vilankulu [...] suggest that these movements combed up the Chopi country ». Lu le 13 octobre 2026."
+    },
+    {
+      "sourceKey": "jprs-77207-1981",
+      "title": "Sub-Saharan Africa Report, JPRS 77207 (Joint Publications Research Service, 1981)",
+      "url": "https://archive.org/details/jprs-report_jprs-77207",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Recueil du service américain de traduction et de reprise de presse, numéro 2347, 21 janvier 1981, lu sur l'exemplaire numérisé d'archive.org. À la page 27, un compte rendu tiré du quotidien Notícias de Maputo du 3 décembre 1980, pp. 1-2, donne la composition de la commission électorale provinciale, approuvée par la commission nationale, avec « Geraldo Antonio Chirindza » parmi ses membres. Il ne dit rien de l'origine du nom. Lu le 13 octobre 2026."
+    },
+    {
+      "sourceKey": "makisi-bila-dikixinari-2016",
+      "title": "Tihlùngù ta Rixaka (Dikixinari ya Ririmi ra Xitsonga) (Marhanele Max Makisi et Vonani Freddy Bila, 2016)",
+      "url": "https://archive.org/details/dikixinari",
+      "tier": "unverified",
+      "source_kind": "linguistic_reference",
+      "notes": "Dictionnaire de la langue xitsonga, Polokwane, Timbila Poetry Project, et Elim, Bila Publishers and Communications, 2016 ; copie non officielle déposée sur archive.org, lue aux entrées. L'entrée « Xirindza » (p. 866) renvoie à « Xirindzi », et l'entrée « Xirindzi » (p. 867) dit « vito-xivongo xa Varonga va Nkomati ». Page vue en image. Lu le 13 octobre 2026."
     }
   ],
   "gaps": [
@@ -64,16 +98,24 @@
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
-      "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Liesegang place le clan Chirindza chez les Vilankulu et le dictionnaire xitsonga de 2016 (cité à un niveau non vérifié) donne Xirindzi comme nom de clan des Ronga de Nkomati ; aucune source lue ne le rattache aux Tsonga en général. Le rattachement passe de « attesté » à « supposé ». La graphie Xirindza / Xirindzi n'est pas prouvée identique à Chirindza."
+    },
+    {
+      "fieldPath": "origin",
+      "reason": "Liesegang donne un lieu de provenance du clan (Manhiça) mais aucun sens du nom. Aucune tradition orale recueillie sur le clan, aucun dictionnaire d'étymologie ni travail de linguistique ronga ou tsonga qui analyse Chirindza n'a été trouvé ; aucune étymologie n'est avancée."
+    },
+    {
+      "fieldPath": "bearers",
+      "reason": "La seule personne nommée, Geraldo Antonio Chirindza (commission électorale, 1980), n'a pas de décès établi dans les sources lues : il n'est pas ajouté."
     }
   ],
   "nameHistory": {

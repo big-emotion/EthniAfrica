@@ -29,7 +29,7 @@
   "peoples": [
     {
       "peopleId": "PPL_OVIMBUNDU",
-      "status": "attested",
+      "status": "supposed",
       "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
@@ -37,7 +37,7 @@
     {
       "countryId": "AGO",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "jprs-ssa-88-022"]
     }
   ],
   "alliances": [],
@@ -52,6 +52,14 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "jprs-ssa-88-022",
+      "title": "Africa (Sub-Sahara), JPRS-SSA-88-022 (Joint Publications Research Service, 1988)",
+      "url": "https://archive.org/details/jprs-report_jprs-ssa-88-022",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Recueil du service américain de traduction et de reprise de presse, 12 mai 1988, lu sur l'exemplaire numérisé d'archive.org. À la page 1 de la rubrique Angola, une brève d'INFORMAFRICA (Lisbonne, mars 1988, p. 5), « UNITA Faces Lisbon Dissidents », dit : « the visit here last month by a senior UNITA official Lt-Col Abel Chivukuvuku ». Lu le 14 octobre 2026."
     }
   ],
   "gaps": [
@@ -64,16 +72,24 @@
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
-      "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Le rattachement aux Ovimbundu ne repose que sur le relevé de couverture du projet, qui n'est pas une source : il passe de « attesté » à « supposé ». La brève du JPRS (1988) nomme un responsable de l'UNITA sans dire de quel peuple il est."
+    },
+    {
+      "fieldPath": "bearers",
+      "reason": "La seule source lue nomme le lieutenant-colonel Abel Chivukuvuku, vivant à notre connaissance : il n'est pas ajouté. Aucun porteur décédé documenté n'a été trouvé."
+    },
+    {
+      "fieldPath": "origin",
+      "reason": "La brève du JPRS atteste le nom en Angola en 1988 mais ne l'explique. Aucun dictionnaire umbundu ni travail d'onomastique angolaise n'a été trouvé qui l'analyse ; aucune étymologie n'est avancée."
     }
   ],
   "nameHistory": {

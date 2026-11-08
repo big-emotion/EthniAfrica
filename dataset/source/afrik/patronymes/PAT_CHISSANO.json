@@ -29,7 +29,7 @@
   "peoples": [
     {
       "peopleId": "PPL_TSONGA",
-      "status": "attested",
+      "status": "supposed",
       "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
@@ -37,7 +37,11 @@
     {
       "countryId": "MOZ",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "diario-lisboa-1974-09-20",
+        "diario-lisboa-1972-07-18"
+      ]
     }
   ],
   "alliances": [],
@@ -52,6 +56,22 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "diario-lisboa-1974-09-20",
+      "title": "Diário de Lisboa 1974-09-20: ano 54, n.º 18567 (Diário de Lisboa, 1974)",
+      "url": "https://archive.org/details/cc_dl_06820.170.26888",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Quotidien de Lisbonne, numérisé par la Casa Comum de la Fondation Mário Soares et Maria Barroso et lu sur la copie d'archive.org. Page 1, dépêche de Lourenço Marques datée du 20 septembre : le gouvernement de transition du Mozambique a pris ses fonctions le matin même. Elle nomme le premier ministre, « Joaquim Chissano ». Elle ne dit rien de l'origine du nom. Page vue en image. Lu le 13 octobre 2026."
+    },
+    {
+      "sourceKey": "diario-lisboa-1972-07-18",
+      "title": "Diário de Lisboa 1972-07-18: ano 52, n.º 17805 (Diário de Lisboa, 1972)",
+      "url": "https://archive.org/details/cc_dl_06814.164.26059",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Quotidien de Lisbonne, numérisé par la Casa Comum de la Fondation Mário Soares et Maria Barroso et lu sur la copie d'archive.org. Page 2, article « Situação confusa e tumultuosa na Frelimo » : le journal publie l'entretien d'un étudiant, ancien membre du Frelimo, avec un ancien dirigeant du mouvement. Le nom de « Joaquim Chissano » y figure dans les propos rapportés de l'interrogé. Page vue en image. Lu le 13 octobre 2026."
     }
   ],
   "gaps": [
@@ -61,10 +81,6 @@
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "bearers",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
@@ -78,6 +94,18 @@
     {
       "fieldPath": "transmissionMode",
       "reason": "Nous ne documentons pas encore comment le nom Chissano passe d'une génération à l'autre : aucune source dédiée n'a été consultée à ce jour."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Le rattachement aux Tsonga ne repose que sur le relevé de couverture du projet, qui n'est pas une source : il passe de « attesté » à « supposé ». Les deux numéros du Diário de Lisboa lus nomment Joaquim Chissano sans dire de quel peuple il est ni ce que le nom signifie. La recherche web « Chissano sobrenome origem Gaza Tsonga » n'a livré aucune étude d'onomastique mozambicaine."
+    },
+    {
+      "fieldPath": "bearers",
+      "reason": "Les sources lues nomment Joaquim Chissano, dont le décès n'est établi par aucune d'elles : il n'est pas ajouté. Un autre porteur, le sculpteur Alberto Chissano, n'a été trouvé que dans des pages que le projet ne cite pas ; il reste à documenter dans une source propre."
+    },
+    {
+      "fieldPath": "origin",
+      "reason": "Les deux sources lues sont des articles de presse de 1972 et de 1974 : elles attestent le nom, pas son sens. Aucun dictionnaire xitsonga ni travail d'onomastique n'a été trouvé qui l'analyse ; aucune étymologie n'est avancée."
     }
   ],
   "nameHistory": {
