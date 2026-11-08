@@ -42,7 +42,13 @@
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
-  "bearers": [],
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Karim Bennani",
+      "sourceRefs": ["le360-karim-bennani"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
@@ -60,6 +66,14 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Répertoire communautaire consulté le 2 septembre 2026. Il recense Bennani au Maroc mais ne documente pas une étymologie ou une généalogie propre à la fiche."
+    },
+    {
+      "sourceKey": "le360-karim-bennani",
+      "title": "L'artiste peintre Karim Bennani est décédé à Rabat",
+      "url": "https://fr.le360.ma/culture/lartiste-peintre-karim-bennani-est-decede-a-rabat-273236/",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Article de Nisrine Zaoui, Le360, 3 janvier 2023, lu le 8 novembre 2026. Il écrit que Karim Bennani « est décédé à l'âge de 87 ans ce mardi 3 janvier 2023 à Rabat » ; né à Fès en 1936, il est compté parmi les fondateurs de la peinture moderne au Maroc."
     }
   ],
   "gaps": [
@@ -74,10 +88,6 @@
     {
       "fieldPath": "casteOrSocialFunction",
       "reason": "Les recherches « Bennani caste », « Bennani métier héréditaire » et « Bennani social function » n’ont livré aucune fonction sociale ou professionnelle héréditaire propre à cette graphie."
-    },
-    {
-      "fieldPath": "bearers",
-      "reason": "Les recherches biographiques exactes sur « Bennani » dans les catalogues, notices institutionnelles et archives accessibles n’ont pas permis d’isoler un porteur décédé dont ce segment soit explicitement documenté dans la position patronymique pertinente. Les personnes vivantes repérées ont été exclues."
     },
     {
       "fieldPath": "homonyms",

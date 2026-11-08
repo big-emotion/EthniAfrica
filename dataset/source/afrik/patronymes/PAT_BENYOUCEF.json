@@ -42,7 +42,13 @@
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
-  "bearers": [],
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Zoubir Benyoucef",
+      "sourceRefs": ["algerie360-zoubir-benyoucef"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
@@ -60,6 +66,14 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Article de Yamina Taibi-Maghraoui, Onomástica desde América Latina, vol. 5, 2024, p. 1-11, lu en texte intégral. Page 7 : Benyoucef figure parmi les prénoms devenus noms de famille dans les registres d'état civil de Mostaganem relevés en 2020. Cette observation concerne les registres étudiés."
+    },
+    {
+      "sourceKey": "algerie360-zoubir-benyoucef",
+      "title": "Oran: baptisation de l'unité 12 de missiles sol-air au nom du chahid Zoubir Benyoucef",
+      "url": "https://www.algerie360.com/oran-baptisation-de-lunite-12-de-missiles-sol-air-au-nom-du-chahid-zoubir-benyoucef/",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Article de H H, Algérie360, 11 avril 2016, lu le 8 novembre 2026. Il écrit que Zoubir Benyoucef, né le 22 janvier 1918 à El Braya (Oran), a rejoint en 1956 l'organisation civile du FLN, puis a été arrêté et exécuté par balles le 2 avril 1957 au centre d'El Kerma."
     }
   ],
   "gaps": [
@@ -82,10 +96,6 @@
     {
       "fieldPath": "casteOrSocialFunction",
       "reason": "Les recherches « Benyoucef caste », « Benyoucef métier héréditaire » et « Benyoucef social function » n’ont livré aucune fonction sociale ou professionnelle héréditaire propre à cette graphie."
-    },
-    {
-      "fieldPath": "bearers",
-      "reason": "Les recherches biographiques exactes sur « Benyoucef » dans les catalogues, notices institutionnelles et archives accessibles n’ont pas permis d’isoler un porteur décédé dont ce segment soit explicitement documenté dans la position patronymique pertinente. Les personnes vivantes repérées ont été exclues."
     },
     {
       "fieldPath": "homonyms",
