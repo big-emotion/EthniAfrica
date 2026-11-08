@@ -18,7 +18,7 @@
     "Tindiga",
     "Wakindiga"
   ],
-  "whyProblematic": "D'après les articles de Wikipédia sur la langue et sur le peuple hadza, Hadza serait la forme du pluriel féminin de haza, « être humain ». Les Hadza se disent hazabee, « les gens », et leur langue hazane : l'article sur le peuple traduit « comme les gens », celui sur la langue « des Hadza ». D'autres noms viennent des voisins. Selon l'article sur la langue, Tindiga viendrait du swahili watindiga, « les gens de l'herbe des marais », d'après la grande source de Mangola, et Kindiga en serait une forme dans une langue bantoue locale, sans doute l'isanzu ; Kangeju est un ancien nom allemand d'origine incertaine. Ces explications y sont données sans renvoi à une publication.",
+  "whyProblematic": "Les Hadza se nomment eux-mêmes Hadza, ou Hadzabe au pluriel ; devant une personne qui parle swahili, ils disent Wahadzabe, avec le préfixe swahili wa- des noms de personnes, selon l'anthropologue Nicholas Blurton Jones. Leur langue s'appelle hadzane. D'autres noms circulent : Hatsa, Hadzapi, Tindiga, Watindiga, Kindiga ou Kangeju, que Frank Marlowe cite côte à côte. Les sources savantes que nous avons lues relèvent ces noms sans expliquer leur origine. Les explications données en ligne, comme « êtres humains » pour haza ou « gens de l'herbe des marais » pour Tindiga, ne renvoient à aucune publication.",
   "spellingAliases": [],
   "familyId": "FLG_KHOISAN",
   "peoples": [
@@ -28,7 +28,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom hadza désigne une langue de Tanzanie, au bord du lac Eyasi, et le peuple de chasseurs-cueilleurs qui la parle. Dans les travaux en anglais, la langue s'appelle aussi hadzane. Un officier allemand a noté en 1898 un autre nom, Watindiga. Les sources que nous avons lues n'expliquent pas l'origine de ces noms ; nous présentons plus bas leurs plus anciennes traces.",
+    "summary": "Le nom hadza désigne une langue de Tanzanie, parlée au bord du lac Eyasi, et le peuple de chasseurs-cueilleurs qui la parle. Ce peuple se nomme lui-même Hadza ou Hadzabe, et appelle sa langue hadzane. Un officier allemand a noté en 1898 un autre nom, Watindiga. Nous présentons plus bas les plus anciennes traces de ces noms.",
     "names": [
       {
         "nameText": "Hadza",
@@ -39,6 +39,28 @@
         "shortLine": "Le nom du peuple et de sa langue ; noté Hadzapi en 1931.",
         "periodLabel": "Écrit dès 1931",
         "accounts": [
+          {
+            "period": {
+              "from": 1985,
+              "to": 2016,
+              "label": "Recherches de 1985 à 2000, publiées en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom hadza est celui que ce peuple se donne : ils se disent Hadza, ou Hadzabe au pluriel, et Wahadzabe quand ils parlent à quelqu'un qui parle swahili, selon Nicholas Blurton Jones.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Demography and Evolutionary Ecology of Hadza Hunter-Gatherers",
+                "author": "Nicholas Blurton Jones",
+                "year": 2016,
+                "url": "https://assets.cambridge.org/97811070/69824/excerpt/9781107069824_excerpt.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chapitre 1, p. 3 et 5",
+                "notes": "Cambridge University Press, 2016. Lu le 3 novembre 2026 dans l'extrait officiel publié par l'éditeur. L'auteur, anthropologue, a mené ses recherches chez les Hadza de 1985 à 2000."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1931,
@@ -71,8 +93,31 @@
         "languageOfOrigin": "hts",
         "namedBy": null,
         "shortLine": "Le nom de la langue des Hadza dans les travaux d'aujourd'hui.",
-        "periodLabel": "Usage contemporain",
+        "periodLabel": "Écrit dès 2002",
         "accounts": [
+          {
+            "period": {
+              "from": 2002,
+              "to": 2002,
+              "label": "2002"
+            },
+            "era": "modern",
+            "statement": "Le nom hadzane figure dans un article de Frank Marlowe, qui écrit « Hadzane (the Hadza language) », le hadzane, la langue des Hadza. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "formAsWritten": "Hadzane",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Why the Hadza are Still Hunter-Gatherers, dans Susan Kent (dir.), Ethnicity, Hunter-Gatherers, and the « Other »",
+                "author": "Frank Marlowe",
+                "year": 2002,
+                "url": "https://archive.org/details/WhyTheHadzaAreStillHunter-gatherers",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 247 à 275",
+                "notes": "Washington, Smithsonian Institution Press, 2002. Lu le 3 novembre 2026 dans le texte de l'auteur déposé sur Internet Archive."
+              }
+            ]
+          },
           {
             "period": {
               "from": 2010,
@@ -80,7 +125,7 @@
               "label": "Usage décrit en 2010"
             },
             "era": "modern",
-            "statement": "Le nom hadzane désigne la langue des Hadza chez l'anthropologue Frank Marlowe, pour qui seuls les Hadza la parlent. Nous ne savons pas depuis quand ce nom est écrit.",
+            "statement": "Le nom hadzane désigne la langue des Hadza chez l'anthropologue Frank Marlowe, pour qui seuls les Hadza la parlent. Nicholas Blurton Jones compte environ mille personnes dont c'est la première langue.",
             "aspect": "usage",
             "sources": [
               {
@@ -91,6 +136,16 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "notes": "Berkeley, University of California Press, 2010. Lu le 11 octobre 2026 : phrase « Only the Hadza speak Hadzane » relevée dans la recherche plein texte de la numérisation d'Internet Archive ; la page n'est pas relevée."
+              },
+              {
+                "title": "Demography and Evolutionary Ecology of Hadza Hunter-Gatherers",
+                "author": "Nicholas Blurton Jones",
+                "year": 2016,
+                "url": "https://assets.cambridge.org/97811070/69824/excerpt/9781107069824_excerpt.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chapitre 1, p. 3 et 5",
+                "notes": "Cambridge University Press, 2016. Lu le 3 novembre 2026 dans l'extrait officiel publié par l'éditeur. L'auteur, anthropologue, a mené ses recherches chez les Hadza de 1985 à 2000."
               }
             ]
           }
@@ -155,9 +210,10 @@
     ]
   },
   "content": {
-    "vehicularRole": null,
+    "vehicularRole": "non_vehicular",
     "dialects": [],
     "vitalityStatus": null,
+    "originDebated": false,
     "sources": [
       {
         "title": "Glottolog 5.3 - Hadza",
@@ -179,7 +235,67 @@
         "tier": "unverified",
         "source_kind": "encyclopedia",
         "notes": "Section sur le nom, lue en ligne : haza, hazabee, hazane, Hadzapi, Tindiga ; elle cite Marlowe (2010) pour l'usage actuel de Hadza en anglais."
+      },
+      {
+        "title": "Demography and Evolutionary Ecology of Hadza Hunter-Gatherers",
+        "url": "https://assets.cambridge.org/97811070/69824/excerpt/9781107069824_excerpt.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Cambridge University Press, 2016. Lu le 3 novembre 2026 dans l'extrait officiel publié par l'éditeur. L'auteur, anthropologue, a mené ses recherches chez les Hadza de 1985 à 2000."
+      },
+      {
+        "title": "Why the Hadza are Still Hunter-Gatherers, dans Susan Kent (dir.), Ethnicity, Hunter-Gatherers, and the « Other »",
+        "url": "https://archive.org/details/WhyTheHadzaAreStillHunter-gatherers",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Washington, Smithsonian Institution Press, 2002. Lu le 3 novembre 2026 dans le texte de l'auteur déposé sur Internet Archive."
+      },
+      {
+        "title": "Tales from Tanzania: Part 2 (The Hadza Language), LINGUIST List 34.1074",
+        "url": "https://listserv.linguistlist.org/pipermail/linguist/2023-March/111545.html",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Billet du 30 mars 2023 publié par la liste savante LINGUIST List. Lu le 3 novembre 2026. L'auteur, doctorant en linguistique à l'université de l'Indiana, décrit ses enquêtes de terrain chez les Hadza."
+      },
+      {
+        "title": "Researching and Documenting the Languages of Tanzania, Language Documentation & Conservation, vol. 2, n° 1",
+        "url": "https://scholarspace.manoa.hawaii.edu/server/api/core/bitstreams/e83c0504-90ff-4ac7-8a2b-0e7a9ca85694/content",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 dans le dépôt de l'université d'Hawaï. Les auteurs, linguistes de l'université de Dar es Salaam, expliquent que les recensements tanzaniens ne posent plus de question sur la langue."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.vitalityStatus",
+        "reason": "Les évaluations ne concordent pas. Le linguiste Jeremy Coburn rapporte en 2023 que l'atlas de l'UNESCO juge la langue « vulnérable » et Ethnologue « en danger ». Il observe que, dans presque tous les campements qu'il a visités, les enfants de moins de huit ans parlent surtout swahili entre eux. Glottolog la classe comme langue qui recule. Frank Marlowe jugeait en 2002 qu'elle n'était pas en danger immédiat."
+      },
+      {
+        "field": "content.dialects",
+        "reason": "Nous n'avons pas trouvé de source qui décrive des dialectes du hadzane. Nicholas Blurton Jones distingue seulement un groupe de l'est et un groupe de l'ouest du lac Eyasi."
+      },
+      {
+        "field": "nameHistory.names[0]",
+        "reason": "Nous n'avons pas trouvé de publication savante qui explique l'origine des noms Hadza, Tindiga, Kindiga ou Kangeju."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Une langue de Tanzanie, parlée par environ mille personnes au bord du lac Eyasi, que les Hadza appellent hadzane.",
+      "followUp": "Pourquoi les Hadza portent-ils aussi le nom de Tindiga ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "TZA",
+          "speakers": 1000,
+          "source": {
+            "title": "Demography and Evolutionary Ecology of Hadza Hunter-Gatherers",
+            "url": "https://assets.cambridge.org/97811070/69824/excerpt/9781107069824_excerpt.pdf",
+            "tier": "referenced",
+            "notes": "Nicholas Blurton Jones compte « environ mille » personnes dont le hadzane est la première langue, pour la période de ses recherches, de 1985 à 2000 (p. 3). En 2023, Jeremy Coburn estime le nombre de locuteurs à environ 1 500, en précisant que c'est une estimation approximative. Les recensements tanzaniens ne posent pas de question sur la langue, selon Muzale et Rugemalira (2008)."
+          }
+        }
+      ]
+    }
   }
 }

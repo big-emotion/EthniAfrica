@@ -9,13 +9,25 @@
   "glottocode": "kabu1256",
   "nameFr": "Créole cap-verdien",
   "nameEn": "Kabuverdianu",
-  "alternateNames": ["Caboverdiano", "Crioulo"],
-  "whyProblematic": "Kabuverdianu fait partie du nom complet de la langue : Cape Verdean Creole en anglais, kriolu kauberdianu ou kabuverdianu en créole, « du Cap-Vert ». D'après l'article de Wikipédia, ce nom est aussi proposé comme nom de la langue le jour où elle sera standardisée ; la page ne cite pas de source pour cela. Le nom du pays vient du Cap-Vert (Cabo Verde, « cap vert »), sur la côte du Sénégal, que des navigateurs portugais auraient ainsi nommé en 1444 d'après l'article ; les îles sont à 600 à 850 kilomètres de ce cap. Au quotidien, les locuteurs disent simplement kriolu (crioulo en portugais).",
+  "alternateNames": [
+    "Badiu",
+    "Caboverdiano",
+    "Crioulo",
+    "Kriol",
+    "Kriolu",
+    "Língua cabo-verdiana"
+  ],
+  "whyProblematic": "Le nom du pays vient d'un cap de la côte du Sénégal : le navigateur portugais Dinis Dias l'atteint vers 1444 ou 1445 et l'équipage le nomme Cap-Vert, selon la chronique de Gomes Eanes de Zurara. Les îles, à quelques centaines de kilomètres de là, apparaissent dans un décret portugais de 1460. Le nom badiu, que les habitants de Santiago donnent à leur créole, viendrait du portugais vadio, « vagabond » : il désignait des esclaves enfuis dans les montagnes, selon l'anthropologue Noémie Marcus. Le nom kriolu, « créole », a été écrit par des Cap-Verdiens eux-mêmes dès 1880 ; les lois disent aujourd'hui língua cabo-verdiana.",
   "spellingAliases": [],
   "familyId": "FLG_CREOLE",
-  "peoples": [],
+  "peoples": [
+    {
+      "name": "Créoles cap-verdiens",
+      "peopleId": "PPL_CREOLE_CABOVERDIEN"
+    }
+  ],
   "nameHistory": {
-    "summary": "Le nom créole cap-verdien désigne la langue créole à base portugaise que parlent presque tous les habitants du Cap-Vert. Ses locuteurs l'appellent kriolu, et ceux de l'île de Santiago aussi badiu. Le nom kabuverdianu, tiré du nom du Cap-Vert, lui est donné par le linguiste cap-verdien Manuel Veiga dès 1982. Nous présentons plus bas les traces de ces noms.",
+    "summary": "Le nom créole cap-verdien désigne la langue créole à base portugaise que parlent presque tous les habitants du Cap-Vert. Ses locuteurs l'appellent kriolu, kriol à São Vicente, et ceux de l'île de Santiago aussi badiu. Les lois du pays disent língua cabo-verdiana, et le linguiste cap-verdien Manuel Veiga a écrit kabuverdianu dès 1982. Nous présentons plus bas les traces de ces noms.",
     "names": [
       {
         "nameText": "Kriolu",
@@ -24,7 +36,7 @@
         "languageOfOrigin": "kea",
         "namedBy": null,
         "shortLine": "Le nom courant de la langue chez ses locuteurs : « créole ».",
-        "periodLabel": "Nom de langue dès 1885",
+        "periodLabel": "Nom de langue dès 1880",
         "accounts": [
           {
             "period": {
@@ -44,7 +56,7 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "fiche de la langue et section 1",
-                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse). La bibliographie cite les ouvrages de Brito et de Veiga, que nous n'avons pas lus."
+                "notes": "Lu le 11 octobre 2026 et relu le 3 novembre 2026 en texte intégral sur APiCS Online (chapitre de synthèse, Institut Max Planck d'anthropologie évolutionniste, 2013). La bibliographie cite les ouvrages de Brito et de Veiga, que nous n'avons pas lus."
               }
             ]
           },
@@ -55,8 +67,7 @@
               "label": "Grammaire écrite en 1885, publiée en 1888"
             },
             "era": "colonial",
-            "statement": "Le nom kriolu a une forme proche, crioulo, dans le titre de la première grammaire connue du créole de Santiago, écrite en 1885 par António de Paula Brito, un habitant de l'île, et publiée en 1888 par le linguiste portugais Adolfo Coelho, selon Jürgen Lang. C'est la plus ancienne trace de ce nom de langue que le projet connaît. La langue existait déjà avant lui.",
-            "birth": true,
+            "statement": "Le nom kriolu a une forme proche, crioulo, dans le titre de la première grammaire connue du créole de Santiago, écrite en 1885 par António de Paula Brito, un habitant de l'île, et publiée en 1888 par le linguiste portugais Adolfo Coelho, selon Jürgen Lang.",
             "sources": [
               {
                 "title": "Cape Verdean Creole of Santiago, Atlas of Pidgin and Creole Language Structures Online",
@@ -65,8 +76,95 @@
                 "url": "https://apics-online.info/surveys/30",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "section 1 et bibliographie",
-                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse). La bibliographie cite les ouvrages de Brito et de Veiga, que nous n'avons pas lus."
+                "page": "section 3 et bibliographie",
+                "notes": "Lu le 11 octobre 2026 et relu le 3 novembre 2026 en texte intégral sur APiCS Online (chapitre de synthèse, Institut Max Planck d'anthropologie évolutionniste, 2013). La bibliographie cite les ouvrages de Brito et de Veiga, que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1880,
+              "label": "1880"
+            },
+            "era": "colonial",
+            "statement": "Le nom kriolu est écrit criôlo dans une lettre en créole de l'île de Santo Antão, publiée en 1880 par le linguiste portugais Adolfo Coelho. Son auteur, un Cap-Verdien instruit dont le nom n'est pas donné, écrit que « nós di Cabo Berde », nous du Cap-Vert, avons du mal à écrire « na nós lingua », dans notre langue. C'est la plus ancienne trace de ce nom de langue que le projet connaît. La langue existait déjà avant lui.",
+            "formAsWritten": "criôlo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Un correspondant cap-verdien de Santo Antão, non nommé",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Adolfo Coelho",
+                "role": "publie la lettre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Os dialectos romanicos ou neo-latinos na Africa, Asia e America",
+                "author": "F. Adolpho Coelho",
+                "year": 1881,
+                "url": "https://www.gutenberg.org/ebooks/33159",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chapitre I, § 1, « Creolo da ilha de Santo Antão », lettre 1",
+                "notes": "Lisbonne, Imprensa Nacional, 1881, tiré à part du Boletim da Sociedade de Geographia de Lisboa de 1880. Lu le 3 novembre 2026 dans la numérisation de Project Gutenberg (livre n° 33159). Coelho y écrit creolo ; la lettre, écrite par une personne instruite qui connaît bien le créole, écrit criôlo."
+              },
+              {
+                "title": "Decreto-Lei n.º 8/2009, de 16 de Março, Boletim Oficial da República de Cabo Verde, I série, n.º 11",
+                "author": "Conselho de Ministros de Cabo Verde",
+                "year": 2009,
+                "url": "https://boe.incv.cv/Bulletins/Download/194",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "préambule, p. 74",
+                "notes": "Texte officiel lu le 3 novembre 2026 sur le site de l'Imprensa Nacional de Cabo Verde. Le préambule date de 1880 les premiers écrits en langue cap-verdienne et cite l'ouvrage de Coelho."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1880,
+              "label": "1880"
+            },
+            "era": "colonial",
+            "statement": "Le nom kriolu désigne alors deux façons de parler à Santo Antão, selon Adolfo Coelho : le creolo rachado, ou creolo fundo, le créole « profond » de l'intérieur de l'île, et un créole plus proche de la grammaire portugaise.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Os dialectos romanicos ou neo-latinos na Africa, Asia e America",
+                "author": "F. Adolpho Coelho",
+                "year": 1881,
+                "url": "https://www.gutenberg.org/ebooks/33159",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chapitre I, § 1, introduction",
+                "notes": "Lisbonne, Imprensa Nacional, 1881, tiré à part du Boletim da Sociedade de Geographia de Lisboa de 1880. Lu le 3 novembre 2026 dans la numérisation de Project Gutenberg (livre n° 33159)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'autrice"
+            },
+            "era": "modern",
+            "statement": "Le nom kriol, ou kriol d'Sonsent, est celui que les habitants de l'île de São Vicente donnent à leur créole, selon Dominika Swolkien.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Cape Verdean Creole of São Vicente, Atlas of Pidgin and Creole Language Structures Online",
+                "author": "Dominika Swolkien",
+                "year": null,
+                "url": "https://apics-online.info/surveys/32",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "fiche de la langue",
+                "notes": "Chapitre de synthèse d'APiCS Online (Institut Max Planck d'anthropologie évolutionniste, 2013), lu le 3 novembre 2026."
               }
             ]
           }
@@ -78,7 +176,7 @@
         "selfGiven": true,
         "languageOfOrigin": "kea",
         "namedBy": null,
-        "shortLine": "Le nom du créole de l'île de Santiago chez ses locuteurs.",
+        "shortLine": "Le nom du créole de Santiago ; il viendrait du portugais vadio, « vagabond ».",
         "periodLabel": "Usage contemporain",
         "accounts": [
           {
@@ -88,7 +186,7 @@
               "label": "Usage décrit par l'auteur"
             },
             "era": "modern",
-            "statement": "Le nom badiu est l'un des deux noms que les habitants de Santiago donnent à leur créole, avec kriolu, selon Jürgen Lang. Nous n'avons pas trouvé de source lue qui en explique l'origine.",
+            "statement": "Le nom badiu est l'un des deux noms que les habitants de Santiago donnent à leur créole, avec kriolu, selon Jürgen Lang.",
             "aspect": "usage",
             "sources": [
               {
@@ -99,7 +197,29 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "fiche de la langue",
-                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse). La bibliographie cite les ouvrages de Brito et de Veiga, que nous n'avons pas lus."
+                "notes": "Lu le 11 octobre 2026 et relu le 3 novembre 2026 en texte intégral sur APiCS Online (chapitre de synthèse, Institut Max Planck d'anthropologie évolutionniste, 2013). La bibliographie cite les ouvrages de Brito et de Veiga, que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque de l'esclavage, sans date précise"
+            },
+            "era": "colonial",
+            "statement": "Le nom badiu viendrait « très probablement » du portugais vadio, « vagabond, paresseux », selon l'anthropologue Noémie Marcus. Il désignait des esclaves enfuis dans les montagnes de Santiago, puis il a servi à nommer les habitants de l'île, par opposition aux sampadjudu des autres îles.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Subverting the morabeza fantasy: Rabidantis and the vicissitudes of belonging in urban Cabo Verde",
+                "author": "Noémie Marcus",
+                "year": 2019,
+                "url": "https://journals.openedition.org/civilisations/5486",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 11 et § 12, glossaire",
+                "notes": "Civilisations, 68, 2019, p. 117-138, revue de l'Institut de sociologie de l'Université libre de Bruxelles. Lu le 3 novembre 2026 sur OpenEdition Journals. L'autrice s'appuie sur Fikes (2000), que nous n'avons pas lu."
               }
             ]
           }
@@ -131,8 +251,106 @@
                 "url": "https://apics-online.info/surveys/30",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "section 1 et bibliographie",
-                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse). La bibliographie cite les ouvrages de Brito et de Veiga, que nous n'avons pas lus."
+                "page": "section 3 et bibliographie",
+                "notes": "Lu le 11 octobre 2026 et relu le 3 novembre 2026 en texte intégral sur APiCS Online (chapitre de synthèse, Institut Max Planck d'anthropologie évolutionniste, 2013). La bibliographie cite les ouvrages de Brito et de Veiga, que nous n'avons pas lus."
+              },
+              {
+                "title": "Decreto-Lei n.º 8/2009, de 16 de Março, Boletim Oficial da República de Cabo Verde, I série, n.º 11",
+                "author": "Conselho de Ministros de Cabo Verde",
+                "year": 2009,
+                "url": "https://boe.incv.cv/Bulletins/Download/194",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "préambule, p. 75",
+                "notes": "Texte officiel lu le 3 novembre 2026 sur le site de l'Imprensa Nacional de Cabo Verde. Le préambule cite l'essai de Manuel Veiga, Diskrison Strutural di Língua Kabuverdianu (1982)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Língua cabo-verdiana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": "L'État cap-verdien, dans ses lois",
+        "shortLine": "Le nom officiel de la langue dans les lois du Cap-Vert, en portugais : « langue cap-verdienne ».",
+        "periodLabel": "Dans les lois depuis 1998",
+        "accounts": [
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "2009"
+            },
+            "era": "modern",
+            "statement": "Le nom língua cabo-verdiana figure dans le décret de 2009 qui fait de l'alphabet unifié, l'ALUPEC, l'alphabet cap-verdien, « système graphique national pour l'écriture de la langue cap-verdienne ». Cet alphabet avait été adopté à titre d'essai en 1998.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Decreto-Lei n.º 8/2009, de 16 de Março, Boletim Oficial da República de Cabo Verde, I série, n.º 11",
+                "author": "Conselho de Ministros de Cabo Verde",
+                "year": 2009,
+                "url": "https://boe.incv.cv/Bulletins/Download/194",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 1, p. 75-76",
+                "notes": "Texte officiel lu le 3 novembre 2026 sur le site de l'Imprensa Nacional de Cabo Verde."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2010,
+              "to": null,
+              "label": "Depuis 2010"
+            },
+            "era": "modern",
+            "statement": "Le nom de la langue est, dans la Constitution du Cap-Vert, « língua materna cabo-verdiana », la langue maternelle cap-verdienne : l'État prépare les conditions pour qu'elle devienne officielle à égalité avec le portugais.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de la République du Cap-Vert, révision de 2010, articles 7, 9 et 79",
+                "author": "République du Cap-Vert",
+                "year": 2010,
+                "url": "https://axl.cefan.ulaval.ca/afrique/Cap-Vert-const.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "article 9, alinéa 2",
+                "notes": "Texte portugais reproduit par le site L'aménagement linguistique dans le monde de l'Université Laval (Québec), lu le 3 novembre 2026. Ce n'est pas l'édition du Boletim Oficial, et les accents y sont abîmés."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1998,
+              "to": 1998,
+              "label": "31 décembre 1998"
+            },
+            "era": "modern",
+            "statement": "Le nom língua cabo-verdiana apparaît dans le titre de l'alphabet adopté à titre d'essai par le décret-loi 67/98 : l'« alphabet unifié pour l'écriture de la langue cap-verdienne (le créole) ». C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "formAsWritten": "Língua Cabo-verdiana (o Crioulo)",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Decreto-Lei n.º 8/2009, de 16 de Março, Boletim Oficial da República de Cabo Verde, I série, n.º 11",
+                "author": "Conselho de Ministros de Cabo Verde",
+                "year": 2009,
+                "url": "https://boe.incv.cv/Bulletins/Download/194",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "préambule, p. 75",
+                "notes": "Texte officiel lu le 3 novembre 2026 sur le site de l'Imprensa Nacional de Cabo Verde. Le préambule rappelle le décret-loi 67/98 du 31 décembre 1998, dont nous avons lu l'article 1 dans la copie de l'Université Laval."
+              },
+              {
+                "title": "Decreto-Lei n.º 67/98, de 31 de Dezembro, et Resolução n.º 48/2005",
+                "author": "Conselho de Ministros de Cabo Verde",
+                "year": 1998,
+                "url": "https://axl.cefan.ulaval.ca/afrique/Cap-Vert-lois_alphabet.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "article 1",
+                "notes": "Texte portugais reproduit par le site L'aménagement linguistique dans le monde de l'Université Laval (Québec), lu le 3 novembre 2026. Ce n'est pas l'édition du Boletim Oficial."
               }
             ]
           }
@@ -141,31 +359,120 @@
     ]
   },
   "content": {
-    "vehicularRole": null,
+    "vehicularRole": "vehicular",
     "dialects": ["Barlavento", "Kabuverdianu Sotavento", "Sotavento"],
-    "vitalityStatus": null,
+    "vitalityStatus": {
+      "status": "Wider communication",
+      "scale": "EGIDS (Ethnologue)",
+      "asOf": 2025
+    },
+    "originDebated": false,
     "sources": [
       {
         "title": "Glottolog 5.3 - Kabuverdianu",
         "url": "https://glottolog.org/resource/languoid/id/kabu1256",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Glottolog direct official languoid record; source of the name and glottocode. Les dialectes listés sont les sous-languoids que Glottolog rattache à kabu1256, hors languoids portant leur propre code ISO 639-3."
+        "notes": "Notice directe pour le code ISO 639-3 kea et le glottocode kabu1256, lue le 3 novembre 2026. Elle reprend d'Ethnologue (2025) le niveau 3 de l'échelle EGIDS, langue de communication élargie, et le statut de langue d'identité nationale fixé par l'article 9 de la Constitution de 2010. Les dialectes listés sont ceux que Glottolog rattache à cette notice."
       },
       {
-        "title": "Wikipédia (anglais) — Kabuverdianu",
-        "url": "https://en.wikipedia.org/wiki/Kabuverdianu",
-        "tier": "unverified",
-        "source_kind": "encyclopedia",
-        "notes": "Page lue en ligne : les noms formels et d'usage courant de la langue, et le nom proposé pour sa standardisation, donné sans source."
+        "title": "Lang, Jürgen, « Cape Verdean Creole of Santiago », APiCS Online (Atlas of Pidgin and Creole Language Structures Online), chapitre de synthèse",
+        "url": "https://apics-online.info/surveys/30",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Institut Max Planck d'anthropologie évolutionniste, 2013. Lu en texte intégral le 3 novembre 2026 : les noms badiu et kriolu, la grammaire de Brito écrite en 1885, environ 250 000 locuteurs à Santiago et autant dans la diaspora, et près d'un demi-million de Cap-Verdiens dont un créole est la première langue."
       },
       {
-        "title": "Wikipédia (anglais) — Cape Verde",
-        "url": "https://en.wikipedia.org/wiki/Cape_Verde",
-        "tier": "unverified",
-        "source_kind": "encyclopedia",
-        "notes": "Section sur le nom du pays, lue en ligne : le cap de la côte sénégalaise et la date de 1444."
+        "title": "Baptista, Marlyse, « Cape Verdean Creole of Brava », APiCS Online (Atlas of Pidgin and Creole Language Structures Online), chapitre de synthèse",
+        "url": "https://apics-online.info/surveys/31",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Institut Max Planck d'anthropologie évolutionniste, 2013. Lu le 3 novembre 2026 : les îles du Sotavento (Brava, Fogo, Santiago, Maio) au sud et du Barlavento au nord."
+      },
+      {
+        "title": "Swolkien, Dominika, « Cape Verdean Creole of São Vicente », APiCS Online (Atlas of Pidgin and Creole Language Structures Online), chapitre de synthèse",
+        "url": "https://apics-online.info/surveys/32",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Institut Max Planck d'anthropologie évolutionniste, 2013. Lu le 3 novembre 2026 : le nom kriol d'Sonsent, et les réticences de São Vicente envers l'alphabet officiel, perçu comme celui du Sotavento."
+      },
+      {
+        "title": "Coelho, F. Adolpho, Os dialectos romanicos ou neo-latinos na Africa, Asia e America, Lisbonne, Imprensa Nacional, 1881",
+        "url": "https://www.gutenberg.org/ebooks/33159",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Tiré à part du Boletim da Sociedade de Geographia de Lisboa de 1880, lu le 3 novembre 2026 dans la numérisation de Project Gutenberg. Il publie des lettres en créole de Santo Antão et décrit le creolo rachado."
+      },
+      {
+        "title": "Zurara, Gomes Eanes de, The Chronicle of the Discovery and Conquest of Guinea, traduction de C. R. Beazley et E. Prestage, Hakluyt Society, 1896-1899",
+        "url": "https://www.gutenberg.org/ebooks/35738",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Chronique portugaise écrite en 1453, lue le 3 novembre 2026 dans sa traduction anglaise numérisée par Project Gutenberg (volumes 1 et 2). Chapitre XXXI : Dinis Dias arrive à « a great cape, to which they gave the name of Cape Verde ». L'introduction du volume 2 date ce voyage de 1445 et la première mention des îles d'un décret du 3 décembre 1460. Nous n'avons pas lu le texte portugais."
+      },
+      {
+        "title": "Marcus, Noémie, « Subverting the morabeza fantasy: Rabidantis and the vicissitudes of belonging in urban Cabo Verde », Civilisations, 68, 2019, p. 117-138",
+        "url": "https://journals.openedition.org/civilisations/5486",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Revue de l'Institut de sociologie de l'Université libre de Bruxelles, lue le 3 novembre 2026 sur OpenEdition Journals : badiu viendrait très probablement du portugais vadio et a d'abord désigné des esclaves enfuis dans les montagnes de Santiago."
+      },
+      {
+        "title": "Decreto-Lei n.º 8/2009, de 16 de Março, Boletim Oficial da República de Cabo Verde, I série, n.º 11",
+        "url": "https://boe.incv.cv/Bulletins/Download/194",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte officiel lu le 3 novembre 2026 sur le site de l'Imprensa Nacional de Cabo Verde. Il fait de l'ALUPEC l'alphabet cap-verdien et retrace dans son préambule l'histoire de l'écriture de la langue depuis 1880."
+      },
+      {
+        "title": "Constitution de la République du Cap-Vert, révision de 2010, articles 7, 9 et 79",
+        "url": "https://axl.cefan.ulaval.ca/afrique/Cap-Vert-const.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Texte portugais reproduit par l'Université Laval (Québec), lu le 3 novembre 2026. L'article 9 charge l'État de préparer l'officialisation de la langue maternelle cap-verdienne à égalité avec le portugais."
+      },
+      {
+        "title": "Decreto-Lei n.º 67/98, de 31 de Dezembro, et Resolução n.º 48/2005",
+        "url": "https://axl.cefan.ulaval.ca/afrique/Cap-Vert-lois_alphabet.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Textes portugais reproduits par l'Université Laval (Québec), lus le 3 novembre 2026 : l'alphabet unifié pour l'écriture de la langue cap-verdienne (le créole), adopté à titre d'essai en 1998."
+      },
+      {
+        "title": "INE Cabo Verde, « INE apresenta os resultados definitivos do V RGPH-2021 », 4 avril 2022",
+        "url": "https://ine.cv/censo2020/?p=5489",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Page de l'Institut national de la statistique du Cap-Vert, lue le 3 novembre 2026 : 491 233 résidents au recensement de 2021. La page ne donne aucun chiffre sur les langues parlées."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers.byCountry",
+        "reason": "Nous n'avons pas trouvé de chiffre par pays pour la diaspora cap-verdienne. Jürgen Lang compte environ 250 000 personnes qui parlent le créole de Santiago hors du Cap-Vert, surtout aux États-Unis, au Portugal, à São Tomé-et-Principe, en Angola, au Sénégal et aux Pays-Bas, sans les répartir. Les pages du recensement de 2021 que nous avons lues ne parlent pas des langues."
+      },
+      {
+        "field": "nameHistory.names[1]",
+        "reason": "Nous n'avons pas trouvé la plus ancienne trace écrite du nom badiu."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "La langue créole à base portugaise que parlent presque tous les Cap-Verdiens, qui l'appellent kriolu.",
+      "followUp": "D'où viennent les noms kriolu et badiu ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "CPV",
+          "speakers": 500000,
+          "source": {
+            "title": "Lang, Jürgen, « Cape Verdean Creole of Santiago », APiCS Online (Atlas of Pidgin and Creole Language Structures Online), chapitre de synthèse",
+            "url": "https://apics-online.info/surveys/30",
+            "tier": "referenced",
+            "notes": "L'auteur écrit que les habitants du Cap-Vert, « près d'un demi-million de personnes », parlent presque tous un créole comme première langue ; il ne date pas ce chiffre. Le recensement de 2021 compte 491 233 résidents sans poser de question sur la langue. Ordre de grandeur, ni recensement ni comptage."
+          }
+        }
+      ]
+    }
   }
 }

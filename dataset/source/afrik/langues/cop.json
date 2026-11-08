@@ -10,7 +10,7 @@
   "nameFr": "Copte",
   "nameEn": "Coptic",
   "alternateNames": ["Égyptien copte"],
-  "whyProblematic": "En copte, la langue se dit timetremǹkhēmi, « l'égyptien ». Le mot « copte » vient de l'arabe qubṭ ou qibṭ, formé d'après le mot copte aiguption (bohaïrique, « égyptien ») ou kuptaion (sahidique), lui-même venu du grec Aigúptios, « égyptien ». Selon l'article de Wikipédia, il a d'abord désigné tous les Égyptiens, puis les chrétiens d'Égypte seulement, après la conquête musulmane (639-646). L'article rapporte aussi un rapprochement avec Coptos, ville de Haute-Égypte, sans dire qui l'a proposé.",
+  "whyProblematic": "Le nom copte n'est pas celui que la langue se donnait. En copte sahidique, elle se nommait mntrmnkēme, « la langue égyptienne », selon le Coptic Dictionary Online. Le mot copte vient de l'arabe qibṭ, lui-même issu du grec Aiguptios, « égyptien », selon le Dictionnaire de l'Académie française. Il a d'abord désigné les habitants de l'Égypte, puis seulement les chrétiens d'Égypte, selon Pierre du Bourguet. D'autres explications le relient à Memphis ou à la ville de Coptos ; elles sont présentées plus bas.",
   "spellingAliases": [],
   "familyId": "FLG_AFROASIATIQUE",
   "peoples": [
@@ -20,7 +20,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom copte désigne la dernière forme de la langue égyptienne, écrite avec un alphabet tiré du grec. Le mot a d'abord désigné l'Égypte et ses habitants, puis les chrétiens d'Égypte. Avant la conquête arabe, ces chrétiens se nommaient eux-mêmes rmnkēme, « les gens de la Terre noire ». Les sources ne s'accordent pas sur l'origine du mot copte ; nous présentons leurs explications plus bas.",
+    "summary": "Le nom copte désigne la dernière forme de la langue égyptienne, écrite avec un alphabet tiré du grec. En copte, cette langue se nommait mntrmnkēme, « la langue égyptienne ». Le mot copte a d'abord désigné l'Égypte et ses habitants, puis les chrétiens d'Égypte. Son origine est débattue ; nous présentons les explications plus bas.",
     "names": [
       {
         "nameText": "Copte",
@@ -37,7 +37,7 @@
               "to": null,
               "label": "Sens donné par les auteurs"
             },
-            "statement": "Le nom copte désigne la dernière forme de la langue égyptienne, que Rodolphe Kasser décrit comme une langue morte depuis plusieurs siècles, gardée dans la liturgie de l'Église. Le mot a d'abord désigné l'Égypte et ses habitants, puis les chrétiens d'Égypte, selon Pierre du Bourguet. Son origine est discutée ; les explications sont présentées plus bas.",
+            "statement": "Le nom copte désigne la dernière forme de la langue égyptienne, que Rodolphe Kasser décrit comme une langue morte depuis plusieurs siècles, gardée dans la liturgie de l'Église. Selon Gawdat Gabra, le copte a cessé d'être la langue de tous les jours vers le XIIIe siècle, et il sert toujours dans la liturgie de l'Église copte orthodoxe. Le mot a d'abord désigné l'Égypte et ses habitants, puis les chrétiens d'Égypte, selon Pierre du Bourguet. Son origine est discutée ; les explications sont présentées plus bas.",
             "aspect": "meaning",
             "sources": [
               {
@@ -59,6 +59,16 @@
                 "source_kind": "academic",
                 "page": "p. 599",
                 "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. 599a-601a)."
+              },
+              {
+                "title": "Langue et littérature coptes",
+                "author": "Gawdat Gabra",
+                "year": 1996,
+                "url": "https://journals.openedition.org/ema/1030",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 9",
+                "notes": "Article de Gawdat Gabra, traduit par Samia Rizq, paru dans la revue Égypte/Monde arabe, n° 27-28, 1996, p. 57-66, publiée au Caire par le CEDEJ. Lu le 3 novembre 2026 sur OpenEdition Journals."
               }
             ]
           },
@@ -109,9 +119,59 @@
               "to": 199,
               "label": "IIe siècle"
             },
-            "statement": "Le nom copte a une forme proche, gibtith, dans plusieurs passages du Talmud dès le IIe siècle, selon Martin Krause cité par Rodolphe Kasser. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "statement": "Le nom copte a une forme proche, gibtith, dans le Talmud dès le IIe siècle, selon Martin Krause cité par Rodolphe Kasser, et selon Gawdat Gabra. C'est la plus ancienne trace de ce nom que nous connaissons. La langue existait déjà avant lui.",
             "birth": true,
             "sources": [
+              {
+                "title": "Language(s), Coptic, The Coptic Encyclopedia",
+                "author": "Rodolphe Kasser",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/2025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section sur le mot copte",
+                "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. A145a-151b). L'auteur cite W. Vycichl (1983) et M. Krause (1979), que nous n'avons pas lus."
+              },
+              {
+                "title": "Langue et littérature coptes",
+                "author": "Gawdat Gabra",
+                "year": 1996,
+                "url": "https://journals.openedition.org/ema/1030",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1",
+                "notes": "Article de Gawdat Gabra, traduit par Samia Rizq, paru dans la revue Égypte/Monde arabe, n° 27-28, 1996, p. 57-66, publiée au Caire par le CEDEJ. Lu le 3 novembre 2026 sur OpenEdition Journals."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom copte viendrait du grec Aigyptios, « égyptien », réduit à ses consonnes dans les actes administratifs arabes après la conquête de 641, selon Pierre du Bourguet, qui note qu'aucun texte ne le prouve encore. Le Dictionnaire de l'Académie française donne le même chemin : du grec Aiguptios à l'arabe qibṭ, puis au latin coptita. Rodolphe Kasser cite aussi les formes coptes guptios et kuptaios.",
+            "hypothesisGroup": "origine du nom copte",
+            "sources": [
+              {
+                "title": "Copt, The Coptic Encyclopedia",
+                "author": "Pierre du Bourguet",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/516",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 599",
+                "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. 599a-601a)."
+              },
+              {
+                "title": "Dictionnaire de l'Académie française, 9e édition, article copte",
+                "author": "Académie française",
+                "year": null,
+                "url": "https://www.dictionnaire-academie.fr/article/A9C4179",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Article lu le 3 novembre 2026 sur le site du Dictionnaire de l'Académie française : étymologie et définition du nom."
+              },
               {
                 "title": "Language(s), Coptic, The Coptic Encyclopedia",
                 "author": "Rodolphe Kasser",
@@ -130,28 +190,18 @@
               "to": null,
               "label": "Origine non datée"
             },
-            "statement": "Le nom copte viendrait du grec Aigyptios, « égyptien », réduit à ses consonnes dans les actes administratifs arabes après la conquête de 641, selon Pierre du Bourguet, qui note qu'aucun texte ne le prouve encore. Rodolphe Kasser cite aussi les formes coptes guptios et kuptaios.",
+            "statement": "Le nom copte viendrait d'un mot égyptien ancien qui désignait la ville de Memphis, où l'on honorait le dieu Ptah, selon Gawdat Gabra. Ce mot serait devenu qubṭī, le nom que les Arabes donnaient aux habitants de l'Égypte, selon le même auteur.",
             "hypothesisGroup": "origine du nom copte",
             "sources": [
               {
-                "title": "Copt, The Coptic Encyclopedia",
-                "author": "Pierre du Bourguet",
-                "year": null,
-                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/516",
+                "title": "Langue et littérature coptes",
+                "author": "Gawdat Gabra",
+                "year": 1996,
+                "url": "https://journals.openedition.org/ema/1030",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 599",
-                "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. 599a-601a)."
-              },
-              {
-                "title": "Language(s), Coptic, The Coptic Encyclopedia",
-                "author": "Rodolphe Kasser",
-                "year": null,
-                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/2025",
-                "tier": "referenced",
-                "source_kind": "academic",
-                "page": "section sur le mot copte",
-                "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. A145a-151b). L'auteur cite W. Vycichl (1983) et M. Krause (1979), que nous n'avons pas lus."
+                "page": "§ 1",
+                "notes": "Article de Gawdat Gabra, traduit par Samia Rizq, paru dans la revue Égypte/Monde arabe, n° 27-28, 1996, p. 57-66, publiée au Caire par le CEDEJ. Lu le 3 novembre 2026 sur OpenEdition Journals."
               }
             ]
           },
@@ -177,35 +227,153 @@
             ]
           }
         ]
+      },
+      {
+        "nameText": "Mntrmnkēme",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "cop",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue en copte sahidique : « la langue égyptienne ».",
+        "periodLabel": "Écrit dans les textes coptes sahidiques",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par le dictionnaire"
+            },
+            "statement": "Le nom mntrmnkēme, écrit ⲙⲛⲧⲣⲙⲛⲕⲏⲙⲉ en lettres coptes, veut dire « la langue égyptienne » ou « la nationalité égyptienne » en sahidique, selon le Coptic Dictionary Online. Le même dictionnaire donne rmnkēme, « Égyptien », et kēme, « l'Égypte ». Il fait venir kēme de l'égyptien ancien Km.t, « le pays noir ».",
+            "aspect": "meaning",
+            "formAsWritten": "ⲙⲛⲧⲣⲙⲛⲕⲏⲙⲉ",
+            "sources": [
+              {
+                "title": "Coptic Dictionary Online, entrée ⲙⲛⲧⲣⲙⲛⲕⲏⲙⲉ (C1234)",
+                "author": "Koptische/Coptic Electronic Language and Literature International Alliance (KELLIA)",
+                "year": null,
+                "url": "https://coptic-dictionary.org/entry/C1234",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "lemme TLA n° C1234",
+                "notes": "Dictionnaire en ligne du copte, préparé par KELLIA avec le Thesaurus Linguae Aegyptiae de l'Académie de Berlin-Brandebourg. Lu le 3 novembre 2026 : mot sahidique, nom féminin, traduit en anglais « Egyptian nationality, speech » et en allemand « ägyptische Sprache, ägyptische Nationalität ». L'entrée renvoie au dictionnaire copte de Walter Crum, p. 110a, et cite un exemple tiré de la Vie d'Hilaria."
+              },
+              {
+                "title": "Coptic Dictionary Online, entrée ⲣⲙⲛⲕⲏⲙⲉ (C1233)",
+                "author": "Koptische/Coptic Electronic Language and Literature International Alliance (KELLIA)",
+                "year": null,
+                "url": "https://coptic-dictionary.org/entry/C1233",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "lemme TLA n° C1233",
+                "notes": "Dictionnaire en ligne du copte, préparé par KELLIA avec le Thesaurus Linguae Aegyptiae de l'Académie de Berlin-Brandebourg. Lu le 3 novembre 2026 : mot sahidique traduit « égyptien » en français et « Egyptian » en anglais."
+              },
+              {
+                "title": "Coptic Dictionary Online, entrée ⲕⲏⲙⲉ (C1232)",
+                "author": "Koptische/Coptic Electronic Language and Literature International Alliance (KELLIA)",
+                "year": null,
+                "url": "https://coptic-dictionary.org/entry/C1232",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "lemme TLA n° C1232",
+                "notes": "Dictionnaire en ligne du copte, préparé par KELLIA avec le Thesaurus Linguae Aegyptiae de l'Académie de Berlin-Brandebourg. Lu le 3 novembre 2026 : mot sahidique traduit en anglais « the black (land), Egypt » ; le dictionnaire le fait venir de l'égyptien ancien Km.t, « Black-land (Egypt) », le pays noir."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Texte sahidique non daté"
+            },
+            "statement": "Le nom mntrmnkēme apparaît dans la Vie d'Hilaria, un texte copte sahidique du manuscrit Rylands Crawford 35, que le Coptic Dictionary Online cite en exemple. C'est la plus ancienne trace de ce nom que nous connaissons ; la date du texte n'est pas donnée par le dictionnaire.",
+            "birth": true,
+            "formAsWritten": "ⲙⲛⲧⲣⲙⲛⲕⲏⲙⲉ",
+            "sources": [
+              {
+                "title": "Coptic Dictionary Online, entrée ⲙⲛⲧⲣⲙⲛⲕⲏⲙⲉ (C1234)",
+                "author": "Koptische/Coptic Electronic Language and Literature International Alliance (KELLIA)",
+                "year": null,
+                "url": "https://coptic-dictionary.org/entry/C1234",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "exemple : Life of Hilaria, Rylands Crawford 35",
+                "notes": "Dictionnaire en ligne du copte, préparé par KELLIA avec le Thesaurus Linguae Aegyptiae de l'Académie de Berlin-Brandebourg. Lu le 3 novembre 2026 : mot sahidique, nom féminin, traduit en anglais « Egyptian nationality, speech » et en allemand « ägyptische Sprache, ägyptische Nationalität ». L'entrée renvoie au dictionnaire copte de Walter Crum, p. 110a, et cite un exemple tiré de la Vie d'Hilaria."
+              }
+            ]
+          }
+        ]
       }
     ]
   },
   "content": {
     "vehicularRole": "non_vehicular",
-    "dialects": ["Bohaïrique", "Sahidique", "Fayoumique", "Akhmimique"],
-    "vitalityStatus": null,
+    "dialects": [
+      "Bohaïrique",
+      "Sahidique",
+      "Fayoumique",
+      "Akhmimique",
+      "Subakhmimique (assioutique)",
+      "Oxyrhynchite (bahnasa)"
+    ],
+    "vitalityStatus": {
+      "status": "Extinct",
+      "scale": "UNESCO",
+      "asOf": 2010
+    },
     "sources": [
       {
         "title": "Glottolog 5.3 — Coptic",
         "url": "https://glottolog.org/resource/languoid/id/copt1239",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Glottolog direct official languoid record ; source du nom et du glottocode. Le copte est le dernier état de l'égyptien ancien (egy, glottocode egyp1246), écrit dans un alphabet dérivé du grec."
+        "notes": "Notice de la langue dans Glottolog 5.3, publiée par l'Institut Max Planck d'anthropologie évolutionniste. Lu le 3 novembre 2026 : le copte y est rangé dans la branche égyptienne de la famille afro-asiatique, avec le code ISO 639-3 cop. La notice classe la langue comme éteinte (« extinct »), d'après l'Atlas des langues en danger dans le monde de l'UNESCO dirigé par Christopher Moseley (2010)."
       },
       {
         "title": "Wikipédia anglophone, Coptic language",
         "url": "https://en.wikipedia.org/wiki/Coptic_language",
         "tier": "unverified",
         "source_kind": "encyclopedia",
-        "notes": "Article lu pour le nom de la langue en copte et le chemin grec, arabe puis langues d'Europe du mot « copte »."
+        "notes": "Article de l'encyclopédie collaborative Wikipédia, en anglais. Nous l'avons lu pour le nom de la langue en copte et le chemin du mot « copte » du grec à l'arabe ; ces points reposent désormais sur le Coptic Dictionary Online et le Dictionnaire de l'Académie française."
       },
       {
         "title": "Wikipédia anglophone, Copts",
         "url": "https://en.wikipedia.org/wiki/Copts",
         "tier": "unverified",
         "source_kind": "encyclopedia",
-        "notes": "Article lu pour l'origine du mot « copte » (arabe qubṭ ou qibṭ, d'après le copte aiguption ou kuptaion, du grec Aiguptios), pour le changement de sens après la conquête musulmane de 639-646 et pour le rapprochement avec la ville de Coptos, que l'article rapporte sans dire qui l'a proposé."
+        "notes": "Article de l'encyclopédie collaborative Wikipédia, en anglais. Nous l'avons lu pour l'origine du mot « copte », son changement de sens après la conquête musulmane de 639-646 et le rapprochement avec la ville de Coptos ; ces points reposent désormais sur la Coptic Encyclopedia, le Dictionnaire de l'Académie française et l'article de Gawdat Gabra."
+      },
+      {
+        "title": "SIL ISO 639-3 — Coptic (cop)",
+        "url": "https://iso639-3.sil.org/code/cop",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du code cop dans la table ISO 639-3 tenue par SIL International. Lu le 3 novembre 2026 : la langue y est classée « Extinct », c'est-à-dire éteinte."
+      },
+      {
+        "title": "Langue et littérature coptes",
+        "author": "Gawdat Gabra",
+        "year": 1996,
+        "url": "https://journals.openedition.org/ema/1030",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "§ 5, 8 et 9",
+        "notes": "Article de Gawdat Gabra, traduit par Samia Rizq, paru dans la revue Égypte/Monde arabe, n° 27-28, 1996, p. 57-66, publiée au Caire par le CEDEJ. Lu le 3 novembre 2026 sur OpenEdition Journals."
       }
-    ]
+    ],
+    "originDebated": true,
+    "gaps": [
+      {
+        "field": "speakers.byCountry",
+        "reason": "Le copte n'a plus de locuteurs de naissance. Selon Gawdat Gabra, il a cessé d'être la langue de tous les jours vers le XIIIe siècle, et il sert encore dans la liturgie de l'Église copte orthodoxe. Glottolog et la table ISO 639-3 de SIL le classent comme langue éteinte et ne donnent pas de chiffre. Nous n'avons pas trouvé de comptage, pays par pays, des personnes qui l'apprennent ou l'emploient à l'église."
+      },
+      {
+        "field": "nameHistory.names[1].pronunciation",
+        "reason": "Nous avons cherché une transcription de la prononciation de mntrmnkēme dans le Coptic Dictionary Online et dans Glottolog ; nous n'en avons pas trouvé."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "La dernière forme de la langue des anciens Égyptiens, écrite avec un alphabet tiré du grec. Elle n'est plus parlée au quotidien mais sert encore à l'Église copte.",
+      "followUp": "D'où vient le mot copte, et comment cette langue se nommait-elle elle-même ?"
+    }
   }
 }

@@ -110,8 +110,11 @@ describe("AFRIK editorial corrections from community review", () => {
         (people) => people.peopleId === "PPL_MINYANKA"
       )
     ).toMatchObject({
+      // The 2022 census (RGPH5, INSTAT, table 2.05) counts the Minianka:
+      // the share is read, not invented, and no headcount is given.
       population: null,
-      percentageInCountry: null,
+      percentageInCountry: 5.35,
+      referenceYear: 2022,
     });
     expect(
       mali.content.demographics.peoples.find(
