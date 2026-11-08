@@ -2033,5 +2033,10 @@
     "id": "PPL_KONGO",
     "status": "consensual",
     "rationale": "« Les sources consultées ne disent pas que les Kongo rejettent ce nom : c'est celui qu'ils se donnent » ; seule son étendue pose question, Laman attribuant aux Européens l'extension du nom des gens de la capitale à plusieurs peuples parents."
+  },
+  {
+    "id": "PPL_LULUA",
+    "status": "colonial-legacy",
+    "rationale": "Le whyProblematic attribue le nom Lulua a l'administration coloniale belge : selon Ngalamulume (1995, 2019), elle a elargi une identite plus ancienne et opposait des « Luba » a des « Lulua » tenus a l'ecart ; Morrison (1906) ecrit que le nom a ete donne de l'exterieur. La plainte interne sur Bashilange, jugee insultante, est moins specifique qu'un acteur colonial nomme."
   }
 ]

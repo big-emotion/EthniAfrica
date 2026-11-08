@@ -384,8 +384,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // into their keepers.
     // 68 -> 67 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers.
     // 67 -> 66 on 2026-10-11: ten duplicate people fiches of wave 8 folded into their keepers, and the Afizere fiche split from Jarawa.
-    // 66 -> 65 on 2026-10-18: the Mobe fiche, which counted, withdrawn after wave 24.
-    value: 65,
+    // 66 -> 65 on 2026-10-18: the Mobe fiche, which counted, withdrawn after wave 24. 65 -> 64 on 2026-11-07: premium peoples batch 02 rewrote the origin and problem texts of eight people fiches from the sources read.
+    value: 64,
     method: "radical arab dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -398,8 +398,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // keepers.
     // 63 -> 61 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
-    // 61 -> 60 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
-    value: 60,
+    // 61 -> 60 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted. 60 -> 61 on 2026-11-07: premium peoples batch 02 rewrote the origin and problem texts of eight people fiches from the sources read.
+    value: 61,
     method: "radical swahili dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -409,8 +409,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     label: "fiches employant le radical « esclav- »",
     // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
     // 28 -> 27 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
-    // into their keepers.
-    value: 27,
+    // into their keepers. 27 -> 28 on 2026-11-07: premium peoples batch 02 rewrote the origin and problem texts of eight people fiches from the sources read.
+    value: 28,
     method: "radical esclav dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },

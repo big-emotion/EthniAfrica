@@ -366,8 +366,10 @@ describe("AFRIK Zaïre name history", () => {
     expect(ngbande).toContain("qui devient le Zaïre en 1971");
     expect(bakigaRoute).not.toContain("Zaire actuel");
     expect(bakigaRoute).toContain("actuelle République démocratique du Congo");
-    expect(zande).not.toContain("Zaire actuel");
-    expect(zande).toContain("de l'actuelle République démocratique du Congo");
+    // The sourced rewrite of 2026-11-03 dropped the unsourced Bandia sentence
+    // that carried the country's name; what must hold is that the origins
+    // never call the country Zaïre outside 1971-1997.
+    expect(zande).not.toMatch(/Za[iï]re/);
   });
 });
 

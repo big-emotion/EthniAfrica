@@ -8,76 +8,76 @@
     "appellations": {
       "mainName": "Hutu du Burundi",
       "selfAppellation": "Abahutu",
-      "exonyms": [
-        "Hutu (terme repris par les administrateurs coloniaux belges et allemands)",
-        "Bahutu (forme avec prefixe Ba-, usitee en swahili et en langues de la region)",
-        "Wahutu"
-      ],
-      "originOfExonyms": "L'etymologie de Hutu est debattue. Ernest Viaene (1910) proposa le sens d'esclave, ce que refuta Rene Bourgeois, suggereant au contraire que le terme signifiait seigneurs en reference aux Twa pygmees qui leur etaient subordonnes. Chez les Mongo de RDC, les dirigeants bantous des Twa sont appeles Bahoto ou Bawoto (cognate de Bahutu), un nom qui voudrait dire seigneurs. La forme Abahutu (singulier : Muhutu) est l'appellation propre en kinyarwanda et kirundi.",
-      "whyProblematic": "Le terme Hutu fut instrumentalise par la colonisation belge : les Belges institutionnaliserent la distinction Hutu-Tutsi par des cartes d'identite ethniques obligatoires (annees 1920), creant une hierarchie raciale artificielle sur la base du nombre de vaches possedees. Cette categorisation contribua directement aux violences ethniques ulterieures, notamment au genocide de 1994. Depuis 1994, le Rwanda a officiellement supprime la categorisation ethnique dans les documents d'etat.",
-      "contemporaryUsage": "En usage courant regional et international. Au Rwanda, le gouvernement deconseille l'usage de la categorisation ethnique depuis 1994, promouvant une identite Munyarwanda nationale. Au Burundi, le terme reste en usage dans les contextes politiques et sociaux, le pays ayant connu des crises ethniques recurrentes.",
+      "exonyms": ["Wahutu"],
+      "spellingAliases": ["Bahutu", "Muhutu", "Umuhutu", "Hutus"],
+      "originOfExonyms": "La forme Wahutu porte le préfixe swahili wa-, qui marque les habitants d'un pays, comme dans Warundi. Elle est écrite par le comte allemand Gustav Adolf von Götzen, qui traverse le Rwanda en 1894, puis par le missionnaire Jean-Michel van der Burgt en 1903. Le sens premier du nom Hutu est discuté. Selon von Götzen, les éleveurs du pays lui donneraient le sens de « serfs ». Van der Burgt propose « serf, esclave ». Le rapport de Human Rights Watch de 1999 y voit d'abord une personne subordonnée, ou la personne qui suit un homme plus puissant.",
+      "whyProblematic": "Le nom Hutu a été transformé en nom de race par l'administration coloniale. Selon l'accord d'Arusha de 2000, la colonisation allemande puis belge a imposé une vision caricaturale et raciste de la société burundaise, fondée sur l'apparence physique, et introduit une carte d'identité qui indiquait l'origine ethnique. L'historien Jean-Pierre Chrétien montre que des missionnaires et des administrateurs présentaient les Hutu comme des « Bantu orientaux » et les Tutsi comme des « Chamites sémitisés » venus d'ailleurs, une thèse reprise dans un manuel scolaire publié vers 1958 et longtemps utilisé dans les écoles du Burundi. Pour les historiens de l'Histoire générale de l'Afrique de l'UNESCO, la colonisation a fait de ces deux catégories « des castes à substrat racial ». Après l'indépendance, selon la commission d'enquête de l'ONU, des massacres ont visé des personnes pour leur appartenance hutu ou tutsi, en 1965, 1972, 1988 et 1993.",
+      "contemporaryUsage": "Le nom Hutu reste employé au Burundi, en kirundi sous la forme Bahutu au pluriel. L'accord d'Arusha de 2000 reconnaît les Bahutu, les Batutsi et les Batwa, qui forment ensemble la nation burundaise, et fixe à 50 % au plus la part d'un même groupe dans l'armée. Le recensement de 2008 ne pose pourtant aucune question sur cette appartenance. En 1996, la commission d'enquête de l'ONU notait que ces groupes sont souvent appelés « groupes ethniques », bien qu'ils partagent la même culture, la même histoire et la même langue. Des historiens comme Jean-Pierre Chrétien y voient plutôt d'anciennes catégories sociales.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null,
       "linguisticFamily": "FLG_NIGERCONGO",
-      "ethnoLinguisticGroup": "Bantou des Grands Lacs (Zone J, Rwanda-Rundi)",
+      "ethnoLinguisticGroup": "Bantou des Grands Lacs, sous-groupe rundique (rwanda-rundi)",
       "historicalRegion": "Burundi, dans la région des Grands Lacs — hauts plateaux, collines et plaine de l'Imbo",
       "currentCountries": ["BDI"]
     },
-    "ethnicities": [
-      "Hutu du Burundi (Abahutu b'Uburundi) — majorite (~85 % de la population)",
-      "Hutu des hautes terres du centre du Burundi",
-      "Hutu des plaines de l'Imbo (plaine de la Rusizi)",
-      "Hutu des collines rurales (inselbergs et plateaux)"
-    ],
+    "ethnicities": ["Hutu du Burundi (Abahutu)"],
     "origins": {
-      "ancientOrigins": "Les Abahutu sont un peuple bantou dont les ancetres emigrerent en Afrique centrale vers la region des Grands Lacs lors de la grande expansion bantou (entre le 1er et le 5e siecle de l'ere commune). Genetiquement, les Hutu presentent une majorite de lignees paternelles E1b1a (83 %) typiques des Bantou d'Afrique de l'Ouest et centrale, avec des influences couchitiques et nilo-sahariennes mineures. Apres leur arrivee dans la region, ils devinrent principalement agriculteurs sidentaires, tandis que les Tutsi pastoralistes et les Twa chasseurs-cueilleurs constituaient les autres composantes de la societe.",
-      "formationPeriod": "La distinction sociale Hutu-Tutsi-Twa se consolida progressivement avec la formation des royaumes du Rwanda et du Burundi (12e-15e siecles). Les Hutu, agriculteurs, fournirent la main-d'oeuvre agricole et les corvees, tandis que les Tutsi pastoralistes controlerent progressivement le pouvoir politique. Le systeme clienteliste ubuhake liait les Hutu aux Tutsi proprietaires de betail. La colonisation belge radicalisa ces distinctions en les bureaucratisant.",
+      "ancientOrigins": "Les Hutu du Burundi parlent le kirundi, comme les Tutsi et les Twa du même pays. Glottolog classe cette langue parmi les langues bantoues des Grands Lacs. Un récit répandu à l'époque coloniale faisait des Hutu des agriculteurs bantous arrivés les premiers, puis dominés par des éleveurs tutsi venus du nord. Jean-Pierre Chrétien le décrit en 1992 comme un cliché hérité des écrits missionnaires et coloniaux, sans véritable fondement historique. Selon l'Histoire générale de l'Afrique de l'UNESCO, les hypothèses d'une rencontre ancienne entre groupes de langues bantoues, couchitiques et soudaniques centrales portent sur le premier millénaire. Elles sont trop lointaines pour expliquer la société du XVIe siècle.",
+      "formationPeriod": "Selon les historiens de l'Histoire générale de l'Afrique, on ne sait pas exactement ce que représentaient les catégories hutu et tutsi il y a quatre siècles. Ils écrivent que les changements des XVIIe-XIXe siècles ont fait passer les relations entre Hutu et Tutsi d'échanges locaux à une hiérarchie plus large, plus ou moins souple selon les États et les époques. Jean-Pierre Chrétien ajoute que la mainmise des Tutsi sur le pouvoir était beaucoup moins nette au Burundi qu'au Rwanda. Ces deux sources jugent que la colonisation a ensuite donné à ces catégories un caractère racial.",
       "migrationRoutes": [
-        "Migration bantou depuis l'Afrique centrale (region Congo) vers les Grands Lacs entre le 1er et le 5e siecle",
-        "Dispersion vers la RDC (Kivu) au cours des migrations historiques et des crises politiques du 20e siecle",
-        "Exodes massifs de refugies lors des crises de 1959, 1972, 1993-1994 vers les pays voisins (Ouganda, Tanzanie, RDC, Zambie)"
+        "Exil de plusieurs centaines de milliers de Hutu après la répression de 1972, selon la commission d'enquête de l'ONU de 1996, vers le Rwanda, la Tanzanie et le Congo selon René Lemarchand",
+        "Fuite de dizaines de milliers de Hutu vers le Rwanda après la répression de 1988, selon la même commission",
+        "Retour au Burundi, en 1993, de milliers d'exilés de 1972 qui réclament leurs terres, selon la même commission"
       ],
       "historicalSettlementZones": [
-        "Burundi — totalite du territoire, majoritaires dans les regions nord et centrales",
-        "Plaine de l'Imbo (basse Rusizi, lac Tanganyika)",
-        "Collines de Buyenzi, Bururi, Gitega, Ngozi"
+        "Plateau central du Burundi, avec les régions de Bugesera, Bweru, Kirimiro, Bututsi et Buyogoma, qui couvre environ les deux tiers du pays selon la commission d'enquête de l'ONU",
+        "Plaine de l'Imbo, sur la rive de la Rusizi et du lac Tanganyika",
+        "Chaîne du Mugamba et son versant occidental, le Mirwa",
+        "Plaine du Kumoso, au sud-est, jusqu'à la Tanzanie"
       ],
-      "unificationsOrDivisions": "Historiquement, les Hutu n'etaient pas organises en royaume unifie ; ils vivaient sous l'autorite des royaumes Nyiginya (Rwanda) et Ntare (Burundi) domines par les dynasties tutsies. La revolution sociale rwandaise de 1959 donna le pouvoir politique aux Hutu au Rwanda. Au Burundi, les Tutsi conserverent le controle du gouvernement et de l'armee jusqu'aux accords d'Arusha (2000). Les divisions internes entre Hutu extremistes et moderes furent particulierement visibles en 1994.",
-      "externalInfluences": "Colonisation allemande (1884-1916) : administration indirecte via les rois tutsis. Colonisation belge (1916-1962) : institutionnalisation des categories ethniques, politique pro-tutsi dans l'administration, evangelisation catholique. Revolution rwandaise de 1959 : retournement de la hierarchie ethnique au Rwanda. Genocides de 1972 (Burundi, contre les Hutu) et de 1994 (Rwanda, commis par des extremistes hutu contre les Tutsi). Accords d'Arusha (2000) au Burundi : partage du pouvoir.",
-      "majorHistoricalEvents": "1959 : revolution sociale rwandaise (Hutu prennent le pouvoir, exode de Tutsi). 1962 : independance du Rwanda sous direction Hutu ; independance du Burundi sous Tutsi. 1972 : genocide selectif des elites Hutu au Burundi par l'armee tutsie (environ 100 000 morts). 1973 : coup d'etat de Habyarimana au Rwanda. 1993 : assassinat du president hutu Melchior Ndadaye au Burundi. Avril-juillet 1994 : genocide commis par des extremistes hutu contre les Tutsi au Rwanda (800 000 a 1 000 000 morts). 1994-2003 : guerres des Grands Lacs en RDC impliquant des forces hutu (FDLR). 2000 : accords d'Arusha pour le Burundi. 2000s-2010s : processus gacaca au Rwanda."
+      "unificationsOrDivisions": "Les Hutu n'ont pas formé de royaume à part. À la fin du XVIIe siècle, selon l'Histoire générale de l'Afrique, Ntare Rushatsi fonde la dynastie des Baganwa et unifie le sud, le centre et le nord du Burundi actuel, en rassemblant d'anciens pouvoirs de clans. L'accord d'Arusha de 2000 écrit qu'avant la colonisation tous les habitants obéissaient au même roi, l'umwami, et se reconnaissaient comme Barundi. Après l'indépendance, la vie politique se divise de plus en plus selon l'appartenance hutu ou tutsi, selon la commission d'enquête de l'ONU. Pendant l'ouverture politique qui suit 1988, le Parti pour la libération du peuple hutu (Palipehutu) attaque des postes de l'armée et des civils tutsi. Le Front pour la démocratie au Burundi (Frodebu), fondé par des Hutu avec quelques Tutsi, gagne les élections de 1993.",
+      "externalInfluences": "L'Allemagne conquiert le Burundi en 1893 et le gouverne par l'intermédiaire du roi, selon la commission d'enquête de l'ONU. La Belgique lui succède en 1916, sous mandat puis sous tutelle. La commission juge cette administration « généralement favorable aux Tutsis ». Selon l'accord d'Arusha, les réformes administratives des années 1930 écartent la plupart des chefs hutu. Jean-Pierre Chrétien décrit le rôle des missions catholiques : l'évêque Julien Gorju écrit en 1938 « Notre dynastie est hamite ». Des manuels scolaires reprennent ensuite cette théorie raciale.",
+      "majorHistoricalEvents": "Les dates qui suivent sont données par la commission d'enquête de l'ONU de 1996. En 1893, l'Allemagne conquiert le royaume du Burundi. En 1962, le pays devient indépendant. En 1965, les élections donnent aux Hutu plus des deux tiers des sièges au Parlement ; une tentative de coup d'État d'officiers hutu et des massacres de familles tutsi sont suivis d'une répression qui tue plusieurs milliers de Hutu. En 1972, après le massacre de plusieurs milliers de Tutsi par des insurgés hutu dans le sud, la répression du régime de Michel Micombero fait plus de 100 000 victimes selon la commission, et de 100 000 à 200 000 selon René Lemarchand. En 1988, des Hutu massacrent plusieurs centaines de Tutsi à Ntega et à Marangara ; la répression de l'armée tue plusieurs milliers de Hutu. En 1993, Melchior Ndadaye, candidat hutu du Frodebu, est élu président, puis assassiné le 21 octobre lors d'un coup d'État militaire. En 2000, l'accord d'Arusha pour la paix et la réconciliation est signé."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Avant la formation des royaumes centralises, les Hutu etaient organises en chefferies locales (inzu) independantes dirigees par des chefs hereditaires. Avec l'emergence des royaumes Rwanda et Burundi, les Hutu furent integres dans un systeme centralise ou ils occupaient le bas de la hierarchie politique. La cellule de base etait la colline (umusozi) regroupant plusieurs familles agricoles. Le conseil des anciens (ubukonde) regulait les litiges locaux.",
-      "clanOrganization": "Les Hutu sont organises en clans agnatiques (ubwoko). Les principaux clans traversent les frontieres ethniques Hutu-Tutsi (un clan peut avoir des membres des deux groupes). Les solidarites claniques ont parfois attenue les tensions ethniques. Parmi les clans importants : Abacyaba, Abaha, Abagesera, Abasindi.",
-      "ageClassSystems": null,
-      "roleOfLineages": "Les lignages patrilineaires determinent l'heritage foncier, les droits sur les terres cultivees (ubukonde) et les alliances matrimoniales. La dot (inkwano) en betail est negociee entre familles. La residence est patrilocale.",
-      "religiousAuthority": "Les devins et guerisseurs (abapfumu) etaient les autorites spirituelles traditionnelles. Le culte Kubandwa (possession rituelle en l'honneur de Ryangombe) etait largement pratique. L'Eglise catholique romaine est aujourd'hui dominante (~50-60 % de la population), suivi des denominations protestantes. Un syncretisme maintient les rites de communication avec les ancetres."
+      "traditionalPoliticalSystem": "Avant la colonisation, les Hutu vivaient dans le royaume du Burundi, dirigé par un roi, l'umwami. Selon la commission d'enquête de l'ONU, la famille régnante, les Baganwa, se situait au-dessus des Hutu et des Tutsi, et des Hutu comme des Tutsi exerçaient auprès d'elle des fonctions d'influence. La justice était rendue par le roi, par les chefs locaux et par des sages choisis sur chaque colline, les Bashingantahe. L'accord d'Arusha précise que ces sages venaient des Baganwa, des Bahutu et des Batutsi. L'Histoire générale de l'Afrique ajoute que les chefs, souvent des princes de sang royal, se faisaient aider par des délégués issus des lignages les plus influents de l'endroit, cultivateurs ou éleveurs.",
+      "clanOrganization": "Selon l'Histoire générale de l'Afrique, le clan se dit umuryango en kirundi, et les personnes âgées se présentent d'abord par leur clan. Le Burundi comptait plusieurs centaines de clans. Une partie d'entre eux réunit des Hutu et des Tutsi : plus de 10 % des clans chez les Bahutu, plus de 50 % chez les Batutsi et 90 % chez les Batwa. Le clan des Bajiji est en général classé parmi les Bahutu au Burundi. Avec les Bashubi et les Bahanza, il gardait des tambours et tenait des rôles religieux, ce qui rappellerait d'anciens pouvoirs.",
+      "ageClassSystems": "Les sources consultées ne décrivent pas de système de classes d'âge chez les Hutu du Burundi.",
+      "roleOfLineages": "On appartient au groupe hutu, tutsi ou twa par son père. La commission d'enquête de l'ONU écrit qu'« un individu appartient au même groupe ethnique que son père », et Jean-Pierre Chrétien parle d'identifications « héréditaires patrilinéaires ». La même commission note que les mariages entre Hutu et Tutsi ont toujours été courants. Selon l'Histoire générale de l'Afrique, les lignages les plus influents de chaque région fournissaient aux chefs leurs délégués.",
+      "religiousAuthority": "Selon l'Histoire générale de l'Afrique, l'initiation au kubandwa était très largement répandue au Burundi. C'était une pratique de divination et de guérison, qui offrait un recours contre les menaces venues des ancêtres ou contre les abus de pouvoir. Au Burundi, elle est liée à Kiranga, un héros chasseur. Des clans comme ceux des Bajiji, des Bashubi et des Bahanza tenaient des rôles religieux. Au recensement de 2008, environ 62 % des résidents du Burundi se déclarent catholiques et environ 22 % protestants ; ce recensement ne distingue pas les Hutu du reste de la population."
     },
     "languages": {
-      "mainLanguage": "Kirundi",
+      "mainLanguage": "Kirundi (run)",
       "isoCodes": ["run"],
-      "dialects": ["Kirundi standard (Burundi, langue nationale officielle)"],
-      "vehicularRole": "Le kirundi et le kinyarwanda sont des dialectes d'un meme continuum linguistique (Rwanda-Rundi, Zone J des langues bantou), mutuellement intelligibles. Le kirundi est langue officielle du Burundi avec le français et l'anglais. Le kinyarwanda est langue officielle du Rwanda avec le français (officiellement depriorise depuis 2008) et l'anglais. Les deux langues servent de lingua franca dans leurs pays respectifs. Les Hutu des zones frontalieres sont souvent bilingues kirundi-kinyarwanda."
+      "dialects": [],
+      "vehicularRole": "Le kirundi est la langue de tous les Burundais, Hutu, Tutsi et Twa. Selon la commission d'enquête de l'ONU, la population rurale ne parle que le kirundi, le français est une langue officielle que seuls les Burundais instruits parlent couramment, et de nombreux citadins parlent aussi le swahili. Le recensement de 2008 interroge les habitants sur leur capacité à lire et écrire le kirundi, le français, le swahili et l'anglais. Glottolog classe le kirundi dans le même ensemble de langues bantoues des Grands Lacs que le kinyarwanda du Rwanda voisin."
+    },
+    "externalIdentifiers": {
+      "glottocode": "rund1242",
+      "iso639_3": "run"
     },
     "culture": {
-      "majorRites": "Kwita izina (denomination de l'enfant) : ceremonie de nomination d'un nouveau-ne en presence de la famille etendue, presentant l'enfant aux ancetres et a la communaute. Gusaba (demande en mariage) : rituel de negociation de la dot entre familles, incluant la presentation des representants familiaux et les echanges de cadeaux. Umuganura (fete des premices) : celebration agricole de gratitude a la fin des recoltes. Kubandwa : culte de possession en l'honneur de Ryangombe, pratique de guerison et de protection, commun aux Hutu et aux Tutsi. Funerailles (imuhana) : ceremonies d'inhumation rapide avec rites de purification de la famille en deuil.",
-      "symbols": "La houe (isuka) est le symbole de l'identite paysanne hutu, refletant leur vocation agricole historique. La colline (umusozi) est l'unite d'organisation sociale et d'appartenance identitaire. Le sorgho et la banane (matiere premiere du biere igisagara) sont centraux dans l'alimentation et les echanges coutumiers. Le tambour (ingoma) marque les celebrations communautaires.",
-      "artsAndMusic": "Musique : chants de travail agricole, de mariage et de deuil ; tambours (ingoma) pour les celebrations et les rites. Danse : danses collectives lors des ceremonies de mariage, de circoncision et de fetes communautaires. Poesie orale : recit des genealogies, proverbes (imigani) et enigmes (ibisakuzo). Artisanat : poterie (fabrication de jarres uturenge pour la biere et le stockage), tissage de nattes et de paniers (agaseke, ibiseke), sculpture. La biere de sorgho (impeke) et la biere de banane (urwagwa) jouent un role social et ceremoniel important.",
-      "spiritualities": "La cosmologie traditionnelle reconnait Imana comme Dieu supreme createur et source de toute fecondite. Les ancetres (abazimu) intercedent entre les vivants et Imana. Le culte Kubandwa, consacre a Ryangombe (chef des esprits imandwa), etait pratique communement par les Hutu et les Tutsi et permettait de demander protection, guerison et fecondite par la possession rituelle. Depuis la colonisation, le catholicisme romain est la religion majoritaire, suivi des denominations protestantes. Un syncretisme actif maintient les rites ancestraux, notamment lors des naissances, mariages et deuils."
+      "majorRites": "Selon l'Histoire générale de l'Afrique, la fête annuelle du muganuro renouvelait l'autorité royale et les tambours qui la symbolisaient. Elle célébrait les semailles du sorgho et en fixait la date. C'était un rite de la royauté du Burundi. L'initiation au kubandwa, pratique de divination et de guérison, était aussi très répandue.",
+      "symbols": "Le tambour symbolisait l'autorité du roi du Burundi, selon l'Histoire générale de l'Afrique. Des clans comme les Bajiji, en général classés parmi les Bahutu, en avaient la garde. La danse rituelle au tambour royal est inscrite en 2014 sur la liste du patrimoine culturel immatériel de l'UNESCO. Sa fiche précise que la plupart des tambourinaires descendent des gardiens des sanctuaires, et ne la rattache à aucun groupe en particulier.",
+      "artsAndMusic": "La danse rituelle au tambour royal associe, selon l'UNESCO, le battement synchronisé des tambours à des danses, à une poésie héroïque et à des chants traditionnels. Elle est jouée lors des fêtes nationales ou locales et pour accueillir des visiteurs de marque. Selon sa fiche, toute la population du Burundi la reconnaît comme un élément de son patrimoine.",
+      "spiritualities": "Selon l'accord d'Arusha, tous les habitants du Burundi précolonial croyaient au même dieu, Imana. L'Histoire générale de l'Afrique décrit le culte des imandwa, ou kubandwa, comme très ancien, antérieur aux dynasties royales. Au Burundi, Kiranga, héros chasseur, y est aussi associé à l'agriculture par les esprits Nyabashi et Serutwa. Le recensement de 2008 ne compte que 2 747 personnes se déclarant de religion traditionnelle, pour une majorité de catholiques."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Historiquement, les Hutu n'avaient pas de royaumes independants distincts dans la region des Grands Lacs. Ils etaient integres dans les royaumes du Rwanda (Nyiginya) et du Burundi (Ntare), ou ils occupaient le bas de la hierarchie politique en tant qu'agriculteurs sous l'autorite des dynasties tutsies. Des chefferies hutu locales existaient avant la centralisation des royaumes. Depuis 1959 au Rwanda et depuis 1993 au Burundi (puis les accords d'Arusha 2000), les Hutu ont acces aux plus hauts niveaux du pouvoir.",
-      "relationsWithNeighbors": "Relations historiques de clientelisme et de dependance vis-a-vis des Tutsi (systeme ubuhake). Relations avec les Twa : les Hutu etaient dominants par rapport aux Twa dans la hierarchie sociale traditionnelle. Interactions avec les peuples de RDC (Hunde, Nande, Bashi) dans les zones frontalieres, souvent tendues autour des droits fonciers et de la nationalite. Relations avec l'Ouganda : communautes hutu refugiees dans l'ouest ougandais.",
-      "conflictsOrAlliances": "1959-1962 : revolution sociale rwandaise, violences anti-tutsies. 1972 : genocide des elites hutu au Burundi par l'armee (100 000 morts). 1993 : assassinat du president hutu Melchior Ndadaye par des officiers tutsis au Burundi ; contre-violence. Avril-juillet 1994 : genocide commis par le gouvernement hutu extremiste rwandais (Interahamwe) contre les Tutsi (800 000 a 1 000 000 de morts). Post-1994 : Forces democratiques de liberation du Rwanda (FDLR), milice hutu operant depuis la RDC. 2000-2015 : integration progressive au sein du gouvernement burundais (accords d'Arusha).",
-      "diaspora": "La diaspora hutu est principalement situee en Tanzanie, en Ouganda, en RDC, au Congo-Brazzaville, en Zambie, ainsi qu'en Europe (Belgique, France, Suisse) et en Amerique du Nord. Une partie importante des refugies hutu du genocide de 1994 et de ses suites se trouverait toujours en RDC (FDLR et familles associees) et en Tanzanie. En Tanzanie, une estimation de 2019 compte 1 865 000 Hutu, réfugiés et communautés installées."
+      "kingdomsOrChiefdoms": "Les Hutu du Burundi n'ont pas eu de royaume à eux. Selon l'Histoire générale de l'Afrique, une première dynastie s'installe au début du XVIe siècle dans les montagnes du nord-ouest. À la fin du XVIIe siècle, Ntare Rushatsi fonde celle des Baganwa en réunissant d'anciens pouvoirs de clans, dont les Bahanza, les Bajiji, les Babibe et les Bashubi. Les Bajiji sont en général classés parmi les Bahutu. La commission d'enquête de l'ONU écrit qu'en 1893 le Burundi était un royaume unifié, où les Baganwa se situaient au-dessus des Hutu et des Tutsi.",
+      "relationsWithNeighbors": "Selon Jean-Pierre Chrétien, les catégories hutu, tutsi et twa correspondaient à d'anciennes différences sociales : les Hutu plutôt agriculteurs, les Tutsi plutôt éleveurs et les Twa plutôt chasseurs, pêcheurs ou potiers. Il écrit qu'elles fonctionnaient un peu comme de grands clans en rivalité pour les fonctions distribuées par les cours. L'Histoire générale de l'Afrique décrit l'ubugabire, un lien de clientèle propre au Burundi, détourné peu à peu vers un usage politique. L'accord d'Arusha cite l'ubugabire parmi les pratiques qui pouvaient créer des injustices chez les Bahutu, les Batutsi et les Batwa. La commission d'enquête de l'ONU note enfin que les mariages entre Hutu et Tutsi ont toujours été courants.",
+      "conflictsOrAlliances": "Selon la commission d'enquête de l'ONU, les annales de la période précoloniale ne font état d'aucun massacre ethnique. En 1972, la répression qui suit une insurrection hutu dans le sud vise systématiquement les Hutu instruits ; René Lemarchand écrit que presque toutes les élites hutu restées au pays sont tuées, et parle de génocide. En octobre 1993, après l'assassinat du président Melchior Ndadaye, la commission conclut que des actes de génocide ont été commis contre la minorité tutsi avec la participation de militants hutu du Frodebu. Elle établit aussi que l'armée, la gendarmerie et des civils tutsi ont massacré sans distinction des hommes, des femmes et des enfants hutu. L'accord d'Arusha de 2000 reconnaît des actes de génocide commis depuis l'indépendance contre les communautés tutsi et hutu, et décrit un conflit « fondamentalement politique », aux dimensions ethniques très importantes.",
+      "diaspora": "Selon la commission d'enquête de l'ONU, la répression de 1972 pousse plusieurs centaines de milliers de Hutu à l'exil. René Lemarchand cite le Rwanda, la Tanzanie et le Congo parmi les pays de refuge. En 1988, des dizaines de milliers de Hutu se réfugient au Rwanda. En 1993, des milliers d'exilés de 1972 rentrent et réclament leurs terres. Nous n'avons pas trouvé de source qui compte aujourd'hui les Hutu du Burundi vivant hors du pays."
     },
     "demography": {
       "totalPopulation": 12200000,
       "referenceYear": 2025,
-      "source": "UNFPA Burundi 2025 : 14,4 millions d'habitants, dont environ 85 % de Hutu, soit environ 12,2 millions. Une autre estimation, fondée sur les données de 2009 avant le retrait des statistiques ethniques, compte environ 10 000 000 de Hutu au Burundi. Une estimation régionale (Wikipedia, 2019) compte environ 26 millions de Hutu dans la région, dont 1 865 000 en Tanzanie, réfugiés et communautés installées. Les sources lues ne permettent pas de choisir entre ces chiffres. Les Hutu du Rwanda, et ceux de langue kinyarwanda du Kivu et de Kisoro, sont décrits sur la fiche Rwandais (Hutu).",
+      "source": "Estimation : le recensement du Burundi ne demande pas aux habitants s'ils sont hutu, tutsi ou twa. La commission d'enquête de l'ONU écrivait en 1996 : « Bien qu'il n'existe pas de données fiables, on estime qu'environ 85 % de la population est hutue. » Appliquée aux 14,4 millions d'habitants que l'UNFPA donne pour 2025, cette part donnerait environ 12,2 millions de Hutu. Ce chiffre est un ordre de grandeur, et non un comptage. Les Hutu du Rwanda sont décrits sur la fiche Rwandais (Hutu).",
       "distributionByCountry": [
         {
           "country": "BDI",
           "population": 12200000,
-          "note": "Environ 85 % de la population burundaise (14,4 millions en 2025) — principalement agriculteurs dans les collines"
+          "percentage": 85,
+          "note": "Estimation tirée de la part d'environ 85 % avancée par la commission d'enquête de l'ONU en 1996, appliquée à la population de 2025 donnée par l'UNFPA"
         }
       ]
     },
@@ -128,11 +128,115 @@
         "url": "https://peacemaker.un.org/burundi-arusha-agreement2000",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Rapport final de la Commission d'enquête internationale pour le Burundi (document S/1996/682)",
+        "author": "Commission d'enquête internationale pour le Burundi, Conseil de sécurité des Nations unies",
+        "year": 1996,
+        "url": "https://digitallibrary.un.org/record/220451/files/S_1996_682-FR.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 19-25 et 87",
+        "notes": "Texte français du rapport, transmis au Conseil de sécurité le 22 août 1996 et lu sur sa numérisation à la Bibliothèque numérique des Nations unies. Au paragraphe 70 (p. 20), la commission écrit : « Bien qu'il n'existe pas de données fiables, on estime qu'environ 85 % de la population est hutue et 15 % tutsie. » Elle ajoute que ces groupes « sont souvent appelés \"groupes ethniques\" bien qu'ils partagent la même culture, la même histoire et la même langue », et qu'« un individu appartient au même groupe ethnique que son père ». Les paragraphes 78 à 94 (p. 21-24) retracent l'histoire du pays de 1893 à 1993. Les conclusions des paragraphes 483 et 486 (p. 87) portent sur les massacres d'octobre 1993. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Arusha Peace and Reconciliation Agreement for Burundi (28 août 2000), texte anglais",
+        "author": "Gouvernement du Burundi, Assemblée nationale et partis politiques burundais signataires",
+        "year": 2000,
+        "url": "https://ucdp.uu.se/Downloads/fullpeace/Bur%2020000828a.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "protocole I, p. 14-16 ; protocole II, p. 25 et 38 ; protocole III, p. 55",
+        "notes": "Texte anglais de l'accord de paix, mis en ligne par l'Uppsala Conflict Data Program de l'université d'Uppsala. Le protocole I (article 1, p. 14-15) écrit qu'avant la colonisation tous les groupes « owed allegiance to the same monarch, Umwami, believed in the same god, Imana, had the same culture and the same language, Kirundi ». L'article 2 (p. 15) reproche à l'administration coloniale une « caricatured, racist vision of Burundian society » et l'introduction d'une carte d'identité « which indicated ethnic origin ». L'article 3 (p. 16) reconnaît des actes de génocide commis depuis l'indépendance « against Tutsi and Hutu ethnic communities », et l'article 4 qualifie le conflit de « fundamentally political, with extremely important ethnic dimensions ». Le protocole II reconnaît (p. 25) « the Bahutu, the Batutsi and the Batwa, who make up the one nation of Burundi » et limite à 50 % la part d'un même groupe dans l'armée (p. 38). Le protocole III (p. 55) cite les réformes administratives des années 1930, qui ont écarté « most of the Hutu chiefs ». Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Le génocide de 1972 au Burundi. Les silences de l'Histoire",
+        "author": "René Lemarchand",
+        "year": 2002,
+        "url": "https://journals.openedition.org/etudesafricaines/156",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 551-568",
+        "notes": "Article paru dans les Cahiers d'études africaines, n° 167, lu en texte intégral sur OpenEdition. Au paragraphe 1, l'auteur écrit que « d'avril à juin 1972 de 100 000 à 200 000 Hutu tombèrent sous les coups de l'armée et des Jeunesses révolutionnaires rwagasore ». Au paragraphe 6, il estime les victimes tutsi de l'insurrection « entre 3 et 5 000 ». Au paragraphe 11, il écrit qu'« à l'exception de ceux qui prirent la fuite vers le Rwanda, la Tanzanie et le Congo, pratiquement toutes les élites hutu furent annihilées ». Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Le défi de l'intégrisme ethnique dans l'historiographie africaniste. Le cas du Rwanda et du Burundi",
+        "author": "Jean-Pierre Chrétien",
+        "year": 1992,
+        "url": "https://francegenocidetutsi.org/ChretienPolAfrjuin1992.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 71-75",
+        "notes": "Article paru dans la revue Politique africaine, n° 46, juin 1992, p. 71-83, lu sur une numérisation de la revue mise en ligne par l'association France Génocide Tutsi. Page 72, l'auteur écrit que les identifications « en tant que hutu ou que tutsi ne correspondent pas à une différenciation linguistique, culturelle ou géographique » et que « ces catégories correspondaient à d'anciens clivages sociaux ». Page 73, il juge la mainmise tutsi sur le pouvoir « beaucoup moins nette au Burundi » qu'au Rwanda, et écrit que l'administration belge entreprit dans les années 1930 d'écarter les Hutu du milieu dirigeant local. Page 74, il cite la formule « Notre dynastie est hamite », tirée d'un livre de l'évêque Julien Gorju paru en 1938. Page 75, il rapporte qu'un manuel d'histoire utilisé dans les écoles du Burundi présentait encore les Hutu comme des « Bantu orientaux » et les Tutsi comme des « Chamites sémitisés ». Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+        "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+        "year": 1999,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 877-893",
+        "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique). Pages 877-878 : l'initiation au kubandwa était « très largement répandue » au Rwanda, au Burundi et au Buha ; Kiranga y est un « héros chasseur ». Pages 878-880 : le clan se dit umuryango en kirundi, et la mixité des clans du Burundi s'élève « à plus de 10 % chez les Bahutu ». Pages 889-890 : la dynastie des Baganwa est fondée par Ntare Rushatsi à la fin du XVIIe siècle. Pages 891-892 : la fête annuelle du muganuro « célébrait les semailles du sorgho ». Note 84, p. 892 : « La colonisation a ensuite donné un caractère ethnique à cette opposition, en faisant de ces deux catégories des castes à substrat racial. » Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Questionnaire du recensement général de la population et de l'habitation de 2008 (Burundi)",
+        "author": "Bureau central de recensement, ministère de l'Intérieur et du Développement communal du Burundi",
+        "year": 2008,
+        "url": "https://catalog.ihsn.org/catalog/4167/related-materials",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Questionnaire du troisième recensement général du Burundi, diffusé par le catalogue d'enquêtes de l'International Household Survey Network. Il demande à chaque personne sa nationalité, sa religion, les langues qu'elle sait lire et écrire (kirundi, français, swahili, anglais) et son lieu de résidence avant octobre 1993. Il ne pose aucune question sur l'appartenance hutu, tutsi ou twa. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Troisième recensement général de la population et de l'habitat de 2008 (Burundi) : tableaux de répartition de la population",
+        "author": "Bureau central de recensement, ministère de l'Intérieur du Burundi",
+        "year": null,
+        "url": "https://catalog.ihsn.org/catalog/4167/download/55517",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Tableaux des résultats du recensement de 2008, diffusés par le catalogue de l'International Household Survey Network. Le tableau 1.1 compte 8 053 574 résidents. Le tableau 1.13 répartit les 7 964 078 résidents des ménages ordinaires par religion : 4 941 833 catholiques, 1 722 039 protestants, 200 509 musulmans, 185 361 adventistes et 2 747 personnes de religion traditionnelle. Aucun tableau ne classe la population par appartenance hutu, tutsi ou twa. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Glottolog — Rundi (rund1242)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/rund1242",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue rundi, ou kirundi, dans le catalogue Glottolog, qui lui donne le code ISO 639-3 run. Glottolog la classe dans le sous-groupe rundique, parmi les langues bantoues des Grands Lacs (Great Lakes Bantu) de la famille atlantique-congo. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "UNESCO, patrimoine culturel immatériel — Danse rituelle au tambour royal (Burundi)",
+        "author": "UNESCO",
+        "year": 2014,
+        "url": "https://ich.unesco.org/fr/RL/danse-rituelle-au-tambour-royal-00989",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche d'inscription sur la Liste représentative du patrimoine culturel immatériel de l'humanité, en 2014. Elle présente la danse comme « un spectacle qui associe le son du battement des tambours, puissant et synchronisé », auquel s'ajoutent des danses, une poésie héroïque et des chants traditionnels. Elle est jouée lors des fêtes nationales et locales et pour accueillir des visiteurs de marque. La fiche précise que la plupart des détenteurs « sont les descendants de gardiens des sanctuaires des tambours » et que « toute la population du Burundi la reconnaît comme un élément fondamental de son patrimoine et de son identité ». Elle ne nomme ni les Hutu, ni les Tutsi, ni les Twa. Consulté le 3 novembre 2026."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Au Burundi, Hutu nomme l'une des trois catégories de la société, avec Tutsi et Twa. Tous parlent le kirundi ; au pluriel, on dit Bahutu.",
+      "followUp": "D'où vient le nom Hutu, et pourquoi la colonisation en a-t-elle fait un nom de race ?"
+    },
+    "gaps": [
+      {
+        "field": "organization.ageClassSystems",
+        "reason": "Nous n'avons pas trouvé, dans l'Histoire générale de l'Afrique de l'UNESCO, le rapport de la commission d'enquête de l'ONU de 1996, l'accord d'Arusha et les articles de Jean-Pierre Chrétien et de René Lemarchand consultés, de description de classes d'âge chez les Hutu du Burundi."
+      },
+      {
+        "field": "languages.dialects",
+        "reason": "Glottolog ne donne pas de liste des parlers du kirundi, et nous n'avons pas trouvé d'autre source qui les décrive."
+      },
+      {
+        "field": "historicalRole.diaspora",
+        "reason": "Nous n'avons pas trouvé de source qui compte les Hutu du Burundi vivant aujourd'hui hors du pays."
       }
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Hutu désigne, au Burundi comme au Rwanda, l'une des catégories de la société, à côté des Tutsi et des Twa ; Bahutu en est le pluriel dans la langue. D'autres noms existent : Wahutu, la forme swahilie des voyageurs et des missionnaires de la fin du XIXe siècle. Les sources ne s'accordent pas sur le sens premier du nom ; nous les présentons plus bas.",
+    "summary": "Le nom Hutu désigne, au Burundi comme au Rwanda, l'une des catégories de la société, à côté des Tutsi et des Twa ; Bahutu en est le pluriel dans la langue. D'autres noms existent : Wahutu, la forme swahilie des voyageurs et des missionnaires de la fin du XIXe siècle. Les sources ne s'accordent pas sur le sens premier du nom, ni sur ce qu'il désigne : un groupe ethnique, ou une ancienne catégorie sociale que la colonisation a transformée en race. Nous présentons ces explications plus bas.",
     "names": [
       {
         "nameText": "Hutu",
@@ -224,7 +328,8 @@
                 "page": "p. 892",
                 "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
               }
-            ]
+            ],
+            "era": "polity"
           },
           {
             "period": {
@@ -289,7 +394,8 @@
                 "page": "p. 187",
                 "notes": "Berlin, Dietrich Reimer, 1895 ; récit du voyage de 1893-1894, lu sur sa numérisation."
               }
-            ]
+            ],
+            "era": "polity"
           },
           {
             "period": {
@@ -352,6 +458,122 @@
                 "tier": "referenced",
                 "source_kind": "ngo",
                 "notes": "Lu en ligne ; la page ne nomme pas son auteur, que le rapport publié désigne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1992,
+              "label": "Selon un article de 1992"
+            },
+            "statement": "Le nom Hutu ne désigne pas, pour l'historien Jean-Pierre Chrétien, un groupe distinct par la langue, la culture ou la région : il nommait d'anciennes différences sociales, les Hutu étant plutôt agriculteurs et les Tutsi plutôt éleveurs, sans que l'on puisse parler de classes sociales.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Le défi de l'intégrisme ethnique dans l'historiographie africaniste. Le cas du Rwanda et du Burundi",
+                "author": "Jean-Pierre Chrétien",
+                "year": 1992,
+                "url": "https://francegenocidetutsi.org/ChretienPolAfrjuin1992.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 72-73",
+                "notes": "Article paru dans la revue Politique africaine, n° 46, juin 1992, p. 71-83, lu sur une numérisation de la revue mise en ligne par l'association France Génocide Tutsi. Page 72, l'auteur écrit que les identifications « en tant que hutu ou que tutsi ne correspondent pas à une différenciation linguistique, culturelle ou géographique » et que « ces catégories correspondaient à d'anciens clivages sociaux ». Page 73, il juge la mainmise tutsi sur le pouvoir « beaucoup moins nette au Burundi » qu'au Rwanda, et écrit que l'administration belge entreprit dans les années 1930 d'écarter les Hutu du milieu dirigeant local. Page 74, il cite la formule « Notre dynastie est hamite », tirée d'un livre de l'évêque Julien Gorju paru en 1938. Page 75, il rapporte qu'un manuel d'histoire utilisé dans les écoles du Burundi présentait encore les Hutu comme des « Bantu orientaux » et les Tutsi comme des « Chamites sémitisés ». Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1962,
+              "label": "Des années 1930 à l'indépendance"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hutu prend, sous l'administration belge, le sens d'une race : selon l'accord d'Arusha de 2000, la colonisation impose une vision caricaturale et raciste de la société burundaise et une carte d'identité qui indique l'origine ethnique. Pour les historiens de l'Histoire générale de l'Afrique, elle fait des catégories hutu et tutsi « des castes à substrat racial ».",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Arusha Peace and Reconciliation Agreement for Burundi (28 août 2000), texte anglais",
+                "author": "Gouvernement du Burundi, Assemblée nationale et partis politiques burundais signataires",
+                "year": 2000,
+                "url": "https://ucdp.uu.se/Downloads/fullpeace/Bur%2020000828a.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "protocole I, article 2, p. 15",
+                "notes": "Texte anglais de l'accord de paix, mis en ligne par l'Uppsala Conflict Data Program de l'université d'Uppsala. Le protocole I (article 1, p. 14-15) écrit qu'avant la colonisation tous les groupes « owed allegiance to the same monarch, Umwami, believed in the same god, Imana, had the same culture and the same language, Kirundi ». L'article 2 (p. 15) reproche à l'administration coloniale une « caricatured, racist vision of Burundian society » et l'introduction d'une carte d'identité « which indicated ethnic origin ». L'article 3 (p. 16) reconnaît des actes de génocide commis depuis l'indépendance « against Tutsi and Hutu ethnic communities », et l'article 4 qualifie le conflit de « fundamentally political, with extremely important ethnic dimensions ». Le protocole II reconnaît (p. 25) « the Bahutu, the Batutsi and the Batwa, who make up the one nation of Burundi » et limite à 50 % la part d'un même groupe dans l'armée (p. 38). Le protocole III (p. 55) cite les réformes administratives des années 1930, qui ont écarté « most of the Hutu chiefs ». Consulté le 3 novembre 2026."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 892, note 84",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique). Pages 877-878 : l'initiation au kubandwa était « très largement répandue » au Rwanda, au Burundi et au Buha ; Kiranga y est un « héros chasseur ». Pages 878-880 : le clan se dit umuryango en kirundi, et la mixité des clans du Burundi s'élève « à plus de 10 % chez les Bahutu ». Pages 889-890 : la dynastie des Baganwa est fondée par Ntare Rushatsi à la fin du XVIIe siècle. Pages 891-892 : la fête annuelle du muganuro « célébrait les semailles du sorgho ». Note 84, p. 892 : « La colonisation a ensuite donné un caractère ethnique à cette opposition, en faisant de ces deux catégories des castes à substrat racial. » Consulté le 3 novembre 2026."
+              },
+              {
+                "title": "Le défi de l'intégrisme ethnique dans l'historiographie africaniste. Le cas du Rwanda et du Burundi",
+                "author": "Jean-Pierre Chrétien",
+                "year": 1992,
+                "url": "https://francegenocidetutsi.org/ChretienPolAfrjuin1992.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 73-75",
+                "notes": "Article paru dans la revue Politique africaine, n° 46, juin 1992, p. 71-83, lu sur une numérisation de la revue mise en ligne par l'association France Génocide Tutsi. Page 72, l'auteur écrit que les identifications « en tant que hutu ou que tutsi ne correspondent pas à une différenciation linguistique, culturelle ou géographique » et que « ces catégories correspondaient à d'anciens clivages sociaux ». Page 73, il juge la mainmise tutsi sur le pouvoir « beaucoup moins nette au Burundi » qu'au Rwanda, et écrit que l'administration belge entreprit dans les années 1930 d'écarter les Hutu du milieu dirigeant local. Page 74, il cite la formule « Notre dynastie est hamite », tirée d'un livre de l'évêque Julien Gorju paru en 1938. Page 75, il rapporte qu'un manuel d'histoire utilisé dans les écoles du Burundi présentait encore les Hutu comme des « Bantu orientaux » et les Tutsi comme des « Chamites sémitisés ». Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "Rapport de 1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Hutu désigne, pour la commission d'enquête de l'ONU sur le Burundi, un groupe souvent appelé « groupe ethnique », bien que Hutu, Tutsi et Twa partagent la même culture, la même histoire et la même langue. On y appartient par son père.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Rapport final de la Commission d'enquête internationale pour le Burundi (document S/1996/682)",
+                "author": "Commission d'enquête internationale pour le Burundi, Conseil de sécurité des Nations unies",
+                "year": 1996,
+                "url": "https://digitallibrary.un.org/record/220451/files/S_1996_682-FR.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 20, paragraphe 70",
+                "notes": "Texte français du rapport, transmis au Conseil de sécurité le 22 août 1996 et lu sur sa numérisation à la Bibliothèque numérique des Nations unies. Au paragraphe 70 (p. 20), la commission écrit : « Bien qu'il n'existe pas de données fiables, on estime qu'environ 85 % de la population est hutue et 15 % tutsie. » Elle ajoute que ces groupes « sont souvent appelés \"groupes ethniques\" bien qu'ils partagent la même culture, la même histoire et la même langue », et qu'« un individu appartient au même groupe ethnique que son père ». Les paragraphes 78 à 94 (p. 21-24) retracent l'histoire du pays de 1893 à 1993. Les conclusions des paragraphes 483 et 486 (p. 87) portent sur les massacres d'octobre 1993. Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2000,
+              "to": 2008,
+              "label": "De 2000 à 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Hutu figure, sous la forme Bahutu, dans l'accord d'Arusha de 2000, qui reconnaît les Bahutu, les Batutsi et les Batwa comme formant ensemble la nation burundaise. Le recensement de 2008 ne demande pourtant à personne s'il est hutu, tutsi ou twa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Arusha Peace and Reconciliation Agreement for Burundi (28 août 2000), texte anglais",
+                "author": "Gouvernement du Burundi, Assemblée nationale et partis politiques burundais signataires",
+                "year": 2000,
+                "url": "https://ucdp.uu.se/Downloads/fullpeace/Bur%2020000828a.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "protocole II, article 2, p. 25",
+                "notes": "Texte anglais de l'accord de paix, mis en ligne par l'Uppsala Conflict Data Program de l'université d'Uppsala. Le protocole I (article 1, p. 14-15) écrit qu'avant la colonisation tous les groupes « owed allegiance to the same monarch, Umwami, believed in the same god, Imana, had the same culture and the same language, Kirundi ». L'article 2 (p. 15) reproche à l'administration coloniale une « caricatured, racist vision of Burundian society » et l'introduction d'une carte d'identité « which indicated ethnic origin ». L'article 3 (p. 16) reconnaît des actes de génocide commis depuis l'indépendance « against Tutsi and Hutu ethnic communities », et l'article 4 qualifie le conflit de « fundamentally political, with extremely important ethnic dimensions ». Le protocole II reconnaît (p. 25) « the Bahutu, the Batutsi and the Batwa, who make up the one nation of Burundi » et limite à 50 % la part d'un même groupe dans l'armée (p. 38). Le protocole III (p. 55) cite les réformes administratives des années 1930, qui ont écarté « most of the Hutu chiefs ». Consulté le 3 novembre 2026."
+              },
+              {
+                "title": "Questionnaire du recensement général de la population et de l'habitation de 2008 (Burundi)",
+                "author": "Bureau central de recensement, ministère de l'Intérieur et du Développement communal du Burundi",
+                "year": 2008,
+                "url": "https://catalog.ihsn.org/catalog/4167/related-materials",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "notes": "Questionnaire du troisième recensement général du Burundi, diffusé par le catalogue d'enquêtes de l'International Household Survey Network. Il demande à chaque personne sa nationalité, sa religion, les langues qu'elle sait lire et écrire (kirundi, français, swahili, anglais) et son lieu de résidence avant octobre 1993. Il ne pose aucune question sur l'appartenance hutu, tutsi ou twa. Consulté le 3 novembre 2026."
               }
             ]
           }
