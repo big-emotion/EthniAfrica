@@ -31,9 +31,27 @@
   "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [],
-    "historicalSyntheses": [],
-    "linguisticReconstructions": []
+    "writtenChronicles": [
+      {
+        "claim": "Le général Daumas écrit en 1855 que l'on appelle chérif, chez les Arabes d'Algérie, le « noble d'origine » qui prouve par des titres descendre de Fatima, fille du prophète, et d'Ali. C'est la plus ancienne trace du mot que nous avons lue ; elle nomme un titre, non un nom de famille.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["daumas-moeurs-1855"]
+      }
+    ],
+    "historicalSyntheses": [
+      {
+        "claim": "Comme tout nom de famille algérien, Cherif relève de l'état civil imposé aux Algériens musulmans par la loi du 23 mars 1882 ; les sources lues ne disent pas quand les familles Cherif ont reçu ce nom.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["benramdane-insaniyat-2000"]
+      }
+    ],
+    "linguisticReconstructions": [
+      {
+        "claim": "Cherif est donné pour dérivé de l'arabe charif, « noble » : l'étude des prénoms d'Aokas (2015) le tire de la racine [ČRF], et l'étude des noms de Touggourt (2021) glose Cherifi, « de la famille Cherif », par « noble, de rang élevé ».",
+        "claimStatus": "claimed",
+        "sourceRefs": ["salhi-aokas-2015", "messaoudi-touggourt-2021"]
+      }
+    ]
   },
   "peoples": [
     {
@@ -46,7 +64,11 @@
     {
       "countryId": "DZA",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "salhi-aokas-2015",
+        "messaoudi-touggourt-2021"
+      ]
     }
   ],
   "alliances": [],
@@ -69,16 +91,44 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Entrée communautaire consultée le 2 septembre 2026. Elle décrit Cherif comme transcription maghrébine de شريف, surtout employée dans l'Afrique du Nord et de l'Ouest sous influence française. Elle ne démontre aucune ascendance chérifienne pour les porteurs du nom."
+    },
+    {
+      "sourceKey": "salhi-aokas-2015",
+      "title": "Étude anthroponymique de la commune d'Aokas de 1962 à 1970 (Lynda Salhi, 2015)",
+      "url": "https://bucket.theses-algerie.com/files/repositories-dz/1532970119996190.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Mémoire de master en sciences du langage, Université Abderrahmane Mira de Béjaïa, 2014-2015 ; texte intégral lu, pages numérotées de l'imprimé. Il étudie les prénoms inscrits à l'état civil d'Aokas de 1962 à 1970. Page 50 : « Cherif, Cherifa : de la racine arabe [ČRF], dérivé de « Charif » qui signifie « noble », Cherifa prénom féminin de Cherif » ; Cherif figure aussi dans la liste des prénoms masculins relevés. Lu le 14 octobre 2026."
+    },
+    {
+      "sourceKey": "messaoudi-touggourt-2021",
+      "title": "Étude étymo-sémantique des patronymes de la région de Touggourt (Siham Messaoudi, 2021)",
+      "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 36 : « CHERIFI : nom simple, masculin singulier, d'origine arabe, de la famille Cherif, de carif « noble, de rang élevé » » ; page 56 : la liste des patronymes recensés porte CHERIFI. Lu le 14 octobre 2026."
+    },
+    {
+      "sourceKey": "daumas-moeurs-1855",
+      "title": "Mœurs et coutumes de l'Algérie : Tell, Kabylie, Sahara (Eugène Daumas, 1855)",
+      "url": "https://archive.org/details/mursetcoutumesde00daum",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Général E. Daumas, deuxième édition, Paris, Hachette, 1855 ; exemplaire numérisé d'archive.org. L'auteur est un officier français, conseiller d'État et directeur des affaires de l'Algérie : il est cité pour ce qu'il écrit et rapporte. Page 23, chapitre « Constitution de la tribu arabe » : « On appelle noble d'origine (chérif) tout musulman qui peut, au moyen de titres en règle, prouver qu'il descend de Fathma-Zohra, fille du prophète, et de Sidi-Ali-Abi-Thaleb, oncle de ce dernier » ; les Arabes montrent une grande déférence pour les cheurfa, pluriel de chérif, et leur donnent le titre de Sidi. Lu le 14 octobre 2026."
+    },
+    {
+      "sourceKey": "benramdane-insaniyat-2000",
+      "title": "Qui es-tu ? J'ai été dit. De la destruction de la filiation dans l'État civil d'Algérie ou éléments d'un onomacide sémantique (Farid Benramdane, 2000)",
+      "url": "https://insaniyat.crasc.dz/en/article/qui-es-tu-jai-ete-dit-de-la-destruction-de-la-filiation-dans-letat-civil-dalgerie-ou-elements-dun-onomacide-semantique",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Insaniyat, 4(10), 2000, p. 79-87, lu en ligne en texte intégral ; la version en ligne ne marque pas les pages de l'imprimé. L'auteur écrit que l'état civil algérien est né de la loi du 23 mars 1882, précédée d'une loi de 1873, qui a imposé « l'obligation et la généralisation du patronyme » là où l'on se nommait par la filiation (ism, alam, kunya, laqab, nisba) ; il cite Charles-Robert Ageron sur les commissaires chargés d'établir cet état civil. Lu le 14 octobre 2026."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin.oralTraditions",
       "reason": "Les recherches exactes « Cherif anthroponymie », « Cherif onomastique », « Cherif surname etymology » et les résultats consultés dans Persée, ASJP, CRASC et les dépôts universitaires nord-africains n'ont pas livré de monographie établissant l'histoire d'une lignée africaine portant exactement cette graphie. Aucune tradition orale attribuée à un griot ou informateur nommé, accompagnée d'une transcription vérifiable, n'a été trouvée."
-    },
-    {
-      "fieldPath": "origin.writtenChronicles",
-      "reason": "Les recherches exactes « Cherif anthroponymie », « Cherif onomastique », « Cherif surname etymology » et les résultats consultés dans Persée, ASJP, CRASC et les dépôts universitaires nord-africains n'ont pas livré de monographie établissant l'histoire d'une lignée africaine portant exactement cette graphie. Aucune chronique historique consultée ne rattache la fiche à un ancêtre ou à une lignée déterminée."
     },
     {
       "fieldPath": "peoples",
@@ -101,10 +151,6 @@
       "reason": "Les recherches exactes « Cherif homonym surname », « Cherif homonyme patronyme » et les variantes graphiques de la fiche n'ont pas établi deux origines distinctes et documentées pour la même forme."
     },
     {
-      "fieldPath": "countries",
-      "reason": "Les sources propres à « Cherif » n'ont pas confirmé les pays où il est porté ; les recherches par pays n'ont pas livré de registre officiel directement exploitable pour cette fiche."
-    },
-    {
       "fieldPath": "nameSystem",
       "reason": "Les sources consultées décrivent la graphie « Cherif » sans établir assez précisément le système dénominatif ; le classement comme nisba reste donc provisoire."
     },
@@ -115,6 +161,10 @@
     {
       "fieldPath": "designatedSocialUnit",
       "reason": "Les mêmes recherches n'ont pas permis de déterminer si « Cherif » désigne un individu, une lignée, un clan, une caste, une classe d'âge ou un établissement dans le contexte précis de la fiche."
+    },
+    {
+      "fieldPath": "origin.writtenChronicles",
+      "reason": "Daumas (1855) est la seule trace écrite lue, et elle nomme un titre. Les recherches « Cherif anthroponymie », « Cherif onomastique » dans Persée, ASJP, CRASC et les dépôts universitaires nord-africains n'ont livré aucune chronique rattachant une famille Cherif précise à un ancêtre."
     }
   ],
   "nameHistory": {

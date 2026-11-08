@@ -63,10 +63,6 @@
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "Les recherches exactes « Chaabane anthroponymie », « Chaabane onomastique » et « Chaabane surname etymology » ont été menées dans Persée, ASJP, CRASC, OpenEdition, Google Scholar et des dépôts universitaires nord-africains. Aucun travail savant consacré à l’origine ou à l’histoire d’une lignée portant exactement cette graphie n’a été trouvé. La source propre au nom n’établit qu’une graphie ou une distribution et ne permet d’énoncer ni étymologie ni origine de lignée."
-    },
-    {
       "fieldPath": "peoples",
       "reason": "Les recherches exactes « Chaabane anthroponymie », « Chaabane onomastique » et « Chaabane surname etymology » ont été menées dans Persée, ASJP, CRASC, OpenEdition, Google Scholar et des dépôts universitaires nord-africains. Aucun travail savant consacré à l’origine ou à l’histoire d’une lignée portant exactement cette graphie n’a été trouvé. La source propre au nom ne démontre pas une association exclusive avec le peuple indiqué par la file d’attente ; ce rattachement reste au niveau non vérifié."
     },
@@ -97,6 +93,10 @@
     {
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Chaabane lignée », « Chaabane clan », « Chaabane tribe » et « Chaabane place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
+    },
+    {
+      "fieldPath": "origin",
+      "reason": "Aux recherches déjà menées (Persée, ASJP, CRASC, OpenEdition) s'ajoute une recherche du 8 novembre 2026 sur « Chaabane étymologie nom de famille شعبان » : elle livre l'explication du mot arabe شعبان comme nom du huitième mois du calendrier musulman, mais aucun travail ne dit que ce nom de mois est l'origine du nom de famille Chaabane, qui pourrait aussi venir d'un prénom de père. Aucune étymologie du nom de famille n'est avancée."
     }
   ]
 }
