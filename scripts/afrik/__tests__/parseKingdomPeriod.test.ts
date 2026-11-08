@@ -208,7 +208,9 @@ describe("parseKingdomPeriod", () => {
     const parsed = labels.filter((l) => parseKingdomPeriod(l) !== null);
     // 298 -> 301: the Liberia fiche adds the Dei chiefdom of Cape Mesurado,
     // the Libya fiche the Fezzân under Kanem and the 1943-1951 administrations.
-    expect(labels).toHaveLength(301);
+    // 301 -> 302: the Somalia fiche adds the Majeerteen and Hobyo sultanates
+    // and drops Ifat, which lay in present-day Ethiopia.
+    expect(labels).toHaveLength(302);
     expect(parsed.length).toBeGreaterThanOrEqual(180);
   });
 });
