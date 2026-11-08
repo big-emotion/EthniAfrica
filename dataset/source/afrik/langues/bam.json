@@ -10,7 +10,7 @@
   "nameFr": "Bambara",
   "nameEn": "Bambara",
   "alternateNames": ["Bamana", "Bamanakan", "Bamanankan"],
-  "whyProblematic": "Les locuteurs disent bamanankan, « la langue des Bamana ». Le sens du mot « Bambara » est débattu, et nous gardons plusieurs lectures sans en choisir une. Selon l'article de Wikipédia sur les Bambara, qui renvoie à l'Encyclopedia of Africa (Appiah et Gates, 2010), il voudrait dire « incroyant » ou « infidèle », nom reçu pour avoir refusé la conversion forcée à l'islam. L'article francophone rapporte un sens voisin, « ceux qui ont refusé de se soumettre », et un récit : les frères Niangolo et Baramangolo, fondateurs des royaumes du Kaarta et de Ségou, auraient pris le nom bamba de kulun bali, « sans pirogue », après avoir franchi le fleuve sans pirogue ; il ne cite aucune source pour ces deux points. Selon ce même article, qui résume Jean Bazin (1985), le mot a désigné des réalités floues et changeantes, tantôt flatteuses, tantôt méprisantes, surtout à l'époque coloniale.",
+  "whyProblematic": "Les locuteurs appellent leur langue bamanankan, « la langue des Bamana ». Le nom bambara est la forme employée en français et chez plusieurs voisins des Bamana. Selon le linguiste Valentin Vydrin, le français l'a empruntée au soninké et au peul ; en 1901, Maurice Delafosse écrivait déjà que ce nom venait des Toucouleurs et des Sarakolé. Le sens du mot bambara est débattu. En 1927, l'administrateur colonial Louis Tauxier relevait plusieurs explications : « ceux du crocodile », « refus au maître » ou « révolté ». Il notait aussi que des musulmans d'Afrique de l'Ouest employaient ce nom pour désigner des non-musulmans, au sens d'« infidèles ». L'anthropologue Jean Bazin a consacré en 1985 une étude à ce nom, intitulée « À chacun son Bambara ».",
   "spellingAliases": [],
   "familyId": "FLG_MANDE",
   "peoples": [
@@ -20,7 +20,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom bambara désigne une langue mandingue parlée surtout au Mali, que ses locuteurs appellent bamanankan, « la langue des Bamana ». C'est aussi le nom que le français donne au peuple qui la parle ; son origine est discutée, et la fiche du peuple Bambara présente les explications. Nous présentons plus bas l'histoire de ces noms comme noms de langue.",
+    "summary": "Le nom bambara désigne une langue mandingue parlée surtout au Mali, que ses locuteurs appellent bamanankan, « la langue des Bamana ». C'est aussi le nom que le français donne au peuple qui la parle. Son origine est débattue : plusieurs explications sont présentées plus bas, avec l'histoire de ces deux noms comme noms de langue.",
     "names": [
       {
         "nameText": "Bamanankan",
@@ -29,6 +29,20 @@
         "languageOfOrigin": "bam",
         "namedBy": null,
         "shortLine": "Le nom de la langue chez ses locuteurs : la langue des Bamana.",
+        "pronunciation": {
+          "respelling": "ba-ma-nan-kan : le premier « ba » se dit sur un ton haut, et les deux « an » se disent par le nez, comme dans « chant »",
+          "audio": null,
+          "source": {
+            "title": "Propositions pour l'orthographe du bamanankan",
+            "author": "Mahamadou Konta et Valentin Vydrin",
+            "year": 2014,
+            "url": "https://shs.hal.science/halshs-01096608v1",
+            "tier": "referenced",
+            "source_kind": "linguistic_reference",
+            "page": "p. 28, p. 29 et p. 39",
+            "notes": "Mandenkan, n° 52, 2014, p. 22-54. Lu le 3 novembre 2026 dans l'archive ouverte HAL. Les auteurs donnent la forme Bámanankan avec la marque du ton, p. 39, et expliquent que la lettre n, après une voyelle, la rend nasale, p. 28 et 29."
+          }
+        },
         "periodLabel": "Usage contemporain",
         "accounts": [
           {
@@ -64,6 +78,51 @@
           },
           {
             "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Livre publié en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom bamanankan s'écrit bá manankan avec la marque du ton, selon le linguiste Valentin Vydrin. Le peuple qui parle cette langue se nomme bá mà na ou bá mà nan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Cours de grammaire bambara (présentation de l'éditeur)",
+                "author": "Valentin Vydrin",
+                "year": 2019,
+                "url": "https://inalco.fr/en/publication/bambara-grammar-course",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "Présentation",
+                "notes": "Présentation du livre de Valentin Vydrin, professeur de mandingue à l'Inalco et chercheur au CNRS, publié par les Presses de l'Inalco en 2019. Lu le 3 novembre 2026 sur le site de l'Inalco, en anglais : « The name of the ethnic group is bá mà na or bá mà nan, and the name of the language is bá manankan »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2025,
+              "label": "Recensement de 2022 (rapport publié en 2025)"
+            },
+            "era": "modern",
+            "statement": "Le nom bamanankan figure à côté du nom bambara dans le recensement du Mali de 2022, qui écrit « Bambara/Bamanankan ».",
+            "formAsWritten": "Bambara/Bamanankan",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Cinquième recensement général de la population et de l'habitat (RGPH5). Rapport d'analyse des données : caractéristiques culturelles de la population",
+                "author": "Institut national de la statistique du Mali (INSTAT), Bureau central du recensement ; Safiatou Lala Bengaly et Ahamadou Diallo",
+                "year": 2025,
+                "url": "https://instat-mali.org/laravel-filemanager/files/shares/rgph/rapport-caracteristiques-culturelles-population-rgph5_rpgh.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "p. 25, tableau 3.01",
+                "notes": "Rapport de l'Institut national de la statistique du Mali, janvier 2025. Lu le 3 novembre 2026 dans le fichier publié par l'INSTAT. Le tableau 3.01 classe la population par langue maternelle sous le libellé « Bambara/Bamanankan »."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1901,
               "to": 1901,
               "label": "1901"
@@ -81,6 +140,26 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 236",
                 "notes": "Paris, Ernest Leroux, 1901. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1700,
+              "to": 1899,
+              "label": "XVIIIe et XIXe siècles"
+            },
+            "statement": "Le nom bamanankan désigne une langue qui s'est formée à partir de parlers mandingues de l'Est, après la naissance du royaume de Ségou aux XVIIIe et XIXe siècles, et, dans une moindre mesure, du royaume du Kaarta, selon Valentin Vydrin.",
+            "sources": [
+              {
+                "title": "Cours de grammaire bambara (présentation de l'éditeur)",
+                "author": "Valentin Vydrin",
+                "year": 2019,
+                "url": "https://inalco.fr/en/publication/bambara-grammar-course",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "Présentation",
+                "notes": "Présentation du livre de Valentin Vydrin, professeur de mandingue à l'Inalco et chercheur au CNRS, publié par les Presses de l'Inalco en 2019. Lu le 3 novembre 2026 sur le site de l'Inalco, en anglais : « The Bambara language formed from eastern Mandinka dialects, following the emergence of the precolonial Segu kingdom (18th-19th centuries) »."
               }
             ]
           }
@@ -101,7 +180,7 @@
               "to": null,
               "label": "Sens donné par l'auteur"
             },
-            "statement": "Le nom bambara désigne la langue des Bamana et reprend le nom que leur donnent leurs voisins toucouleurs et sarakolé, selon Maurice Delafosse. L'origine de ce nom est discutée ; les explications sont présentées sur la fiche du peuple Bambara.",
+            "statement": "Le nom bambara désigne la langue des Bamana et reprend le nom que leur donnent leurs voisins toucouleurs et sarakolé, selon Maurice Delafosse. L'origine de ce nom est débattue ; plusieurs explications sont présentées plus bas.",
             "aspect": "meaning",
             "sources": [
               {
@@ -113,6 +192,165 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 236",
                 "notes": "Paris, Ernest Leroux, 1901. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1927,
+              "label": "Explications relevées en 1927"
+            },
+            "era": "colonial",
+            "statement": "Le nom bambara voudrait dire « ceux du crocodile », de bama ou bamba, le crocodile, selon Mgr Hippolyte Bazin et le père Brun, cités par Louis Tauxier. Tauxier juge cette explication la plus simple.",
+            "aspect": "meaning",
+            "hypothesisGroup": "sens-du-nom-bambara",
+            "sources": [
+              {
+                "title": "La religion bambara",
+                "author": "Louis Tauxier",
+                "year": 1927,
+                "url": "https://archive.org/details/la-religion-bambara",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. XVIII",
+                "notes": "Paris, Paul Geuthner, 1927. Introduction lue le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français ; il passe en revue les explications du nom et garde une préférence pour « gens du crocodile », sans conclure."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1927,
+              "label": "Explications relevées en 1927"
+            },
+            "era": "colonial",
+            "statement": "Le nom bambara viendrait de ban-ma-na, « refus au maître » : les Banmana auraient quitté leur pays pour échapper aux conquérants malinké. Maurice Delafosse dit tenir cette explication des Banmana eux-mêmes, selon Louis Tauxier.",
+            "aspect": "meaning",
+            "hypothesisGroup": "sens-du-nom-bambara",
+            "sources": [
+              {
+                "title": "La religion bambara",
+                "author": "Louis Tauxier",
+                "year": 1927,
+                "url": "https://archive.org/details/la-religion-bambara",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. XVIII-XIX",
+                "notes": "Paris, Paul Geuthner, 1927. Introduction lue le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français ; il passe en revue les explications du nom et garde une préférence pour « gens du crocodile », sans conclure."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1927,
+              "label": "Explications relevées en 1927"
+            },
+            "era": "colonial",
+            "statement": "Le nom bambara viendrait de bamba ou bama, « révolté, apostat, qui refuse », selon l'abbé Joseph Henry et le père Coppe, cités par Louis Tauxier. C'est l'explication la plus en faveur à son époque, écrit-il.",
+            "aspect": "meaning",
+            "hypothesisGroup": "sens-du-nom-bambara",
+            "sources": [
+              {
+                "title": "La religion bambara",
+                "author": "Louis Tauxier",
+                "year": 1927,
+                "url": "https://archive.org/details/la-religion-bambara",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. XIX",
+                "notes": "Paris, Paul Geuthner, 1927. Introduction lue le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français ; il passe en revue les explications du nom et garde une préférence pour « gens du crocodile », sans conclure."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1927,
+              "label": "Explications relevées en 1927"
+            },
+            "era": "colonial",
+            "statement": "Le nom bambara voudrait dire « les gens du grand rocher », de ba, grand, et mana, rocher, selon Louis-Gustave Binger, cité par Louis Tauxier.",
+            "aspect": "meaning",
+            "hypothesisGroup": "sens-du-nom-bambara",
+            "sources": [
+              {
+                "title": "La religion bambara",
+                "author": "Louis Tauxier",
+                "year": 1927,
+                "url": "https://archive.org/details/la-religion-bambara",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. XVIII",
+                "notes": "Paris, Paul Geuthner, 1927. Introduction lue le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français ; il passe en revue les explications du nom et garde une préférence pour « gens du crocodile », sans conclure."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1927,
+              "label": "Explications relevées en 1927"
+            },
+            "era": "colonial",
+            "statement": "Le nom bambara viendrait d'une vieille racine ba, « noir », selon Charles Monteil, cité par Louis Tauxier, qui trouve cette explication peu convaincante.",
+            "aspect": "meaning",
+            "hypothesisGroup": "sens-du-nom-bambara",
+            "sources": [
+              {
+                "title": "La religion bambara",
+                "author": "Louis Tauxier",
+                "year": 1927,
+                "url": "https://archive.org/details/la-religion-bambara",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. XIX",
+                "notes": "Paris, Paul Geuthner, 1927. Introduction lue le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français ; il passe en revue les explications du nom et garde une préférence pour « gens du crocodile », sans conclure."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1927,
+              "label": "Explications relevées en 1927"
+            },
+            "era": "colonial",
+            "statement": "Le nom bambara servait aussi, chez des musulmans d'Afrique de l'Ouest, à désigner des non-musulmans : les Dioula appelaient ainsi tous les Sénoufo, « voulant dire par là kéfirs, infidèles », écrit Louis Tauxier.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La religion bambara",
+                "author": "Louis Tauxier",
+                "year": 1927,
+                "url": "https://archive.org/details/la-religion-bambara",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. XVII",
+                "notes": "Paris, Paul Geuthner, 1927. Introduction lue le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français ; il passe en revue les explications du nom et garde une préférence pour « gens du crocodile », sans conclure."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Livre publié en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom bambara est employé en français et chez des voisins des Bamana : Peuls, Soninké et Malinké. Selon Valentin Vydrin, le français l'a emprunté au soninké et au peul.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Cours de grammaire bambara (présentation de l'éditeur)",
+                "author": "Valentin Vydrin",
+                "year": 2019,
+                "url": "https://inalco.fr/en/publication/bambara-grammar-course",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "Présentation",
+                "notes": "Présentation du livre de Valentin Vydrin, professeur de mandingue à l'Inalco et chercheur au CNRS, publié par les Presses de l'Inalco en 2019. Lu le 3 novembre 2026 sur le site de l'Inalco, en anglais : « The term Bambara is used in French and neighbouring languages (Fula, Soninke, Maninka; obviously, the French form was borrowed from the Soninke and Fula languages) »."
               }
             ]
           },
@@ -164,7 +402,7 @@
               "label": "Voyage de 1795-1797 (récit publié en 1799)"
             },
             "era": "polity",
-            "statement": "Le nom bambara désigne une langue dans le récit du voyageur écossais Mungo Park, qui dit de son jeune serviteur Demba qu'il parle bien « the Bambarra tongue ». Plus à l'est, lui dit-on, cette langue est peu comprise. C'est la plus ancienne trace de ce nom comme nom de langue que le projet connaît.",
+            "statement": "Le nom bambara désigne une langue dans le récit du voyageur écossais Mungo Park, qui dit de son jeune serviteur Demba qu'il parle bien « the Bambarra tongue ». Plus à l'est, lui dit-on, cette langue est peu comprise. C'est la plus ancienne trace de ce nom comme nom de langue que nous connaissions.",
             "formAsWritten": "Bambarra tongue",
             "sources": [
               {
@@ -186,7 +424,7 @@
               "label": "Chronique achevée vers 1655"
             },
             "era": "polity",
-            "statement": "Le nom bambara figure dans le Tarikh es-Soudan, la chronique d'Abderrahman es-Sa'di : à propos de l'année 1559, l'askia Daoud y dit que « les Bambara sont ici maintenant en très grand nombre ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme un peuple. La langue existait déjà avant lui.",
+            "statement": "Le nom bambara figure dans le Tarikh es-Soudan, la chronique d'Abderrahman es-Sa'di : à propos de l'année 1559, l'askia Daoud y dit que « les Bambara sont ici maintenant en très grand nombre ». C'est la plus ancienne trace de ce nom que nous connaissions ; elle nomme un peuple. La langue existait déjà avant lui.",
             "birth": true,
             "sources": [
               {
@@ -206,7 +444,7 @@
     ]
   },
   "content": {
-    "vehicularRole": "Langue de communication élargie, née au Mali et en Côte d'Ivoire : toute sa communauté ethnique la parle comme première langue, et elle sert de langue d'enseignement à l'école.",
+    "vehicularRole": "regional_lingua_franca",
     "dialects": [
       "Beledugu",
       "Ganadugu",
@@ -216,43 +454,104 @@
       "Somono",
       "Standard Bambara"
     ],
-    "vitalityStatus": null,
+    "vitalityStatus": {
+      "status": "Wider communication",
+      "scale": "EGIDS (Ethnologue)",
+      "asOf": 2025
+    },
+    "originDebated": true,
     "sources": [
       {
         "title": "Glottolog 5.3 — Bambara (bamb1269)",
         "url": "https://glottolog.org/resource/languoid/id/bamb1269",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Glottolog name: Bambara; classification includes Mande. Les dialectes listés sont les sous-languoids que Glottolog rattache à bamb1269, hors languoids portant leur propre code ISO 639-3."
+        "notes": "Notice de la langue dans Glottolog 5.3, base de référence des langues du monde publiée par l'Institut Max Planck d'anthropologie évolutionniste. Lu le 3 novembre 2026. Les dialectes listés sont les variétés que Glottolog rattache au bambara. Le commentaire repris d'Ethnologue (2025) indique : « Bamanankan (bam-bam) = 3 (Wider communication). Recognized language (1982, Decree No. 159 of 19 July, Article 1). Bamanankan serves as lingua franca everywhere, except for the northeastern part of the country. »"
       },
       {
         "title": "SIL Ethnologue — Bamanankan (bam)",
         "url": "https://www.ethnologue.com/language/bam/",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Résumé public de la notice, consulté le 2026-09-29 : langue de communication élargie, née au Mali et en Côte d'Ivoire, employée comme première langue par toute sa communauté ethnique et comme langue d'enseignement. Les chiffres et le niveau détaillé de vitalité sont réservés aux abonnés : la vitalité reste donc non renseignée ici."
+        "notes": "Résumé public de la notice, consulté le 29 septembre 2026 : langue de communication élargie, employée comme première langue par toute sa communauté et comme langue d'enseignement. Les chiffres détaillés sont réservés aux abonnés. La page n'a pas pu être ouverte le 3 novembre 2026 ; le niveau de vitalité vient du commentaire d'Ethnologue repris par Glottolog."
       },
       {
         "title": "Anthony Appiah et Henry Louis Gates Jr., Encyclopedia of Africa, Oxford University Press, 2010, p. 150",
         "url": null,
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Passage rapporté par l'article « Bambara people » de Wikipédia anglophone : « Bambara » signifierait « incroyant » ou « infidèle », nom reçu pour avoir refusé la conversion forcée à l'islam. L'ouvrage lui-même n'a pas été consulté."
+        "notes": "Encyclopédie publiée par Oxford University Press en 2010. Nous n'avons pas pu consulter l'ouvrage. Le sens qu'il donnerait au mot, « incroyant » ou « infidèle », est repris de l'article « Bambara people » de Wikipédia anglophone. Louis Tauxier rapporte en 1927 une explication proche, celle de l'abbé Joseph Henry."
       },
       {
         "title": "Jean Bazin, À chacun son Bambara, dans Au cœur de l'ethnie : ethnies, tribalisme et État en Afrique, La Découverte, Paris, 1985",
         "url": "https://glottolog.org/resource/reference/id/135688",
         "tier": "referenced",
         "source_kind": "linguistic_reference",
-        "notes": "Conclusion rapportée par l'article « Bambaras » de Wikipédia francophone et par la notice bibliographique de Glottolog : le mot a désigné des réalités floues et changeantes, tantôt flatteuses, tantôt méprisantes. L'article lui-même n'a pas été lu."
+        "notes": "Chapitre des pages 87 à 127 de l'ouvrage dirigé par Jean-Loup Amselle et Elikia M'Bokolo. La notice de Glottolog, lue le 3 novembre 2026, en donne les références sans résumé. Nous n'avons pas pu lire le chapitre. Sa conclusion, selon laquelle le mot a désigné des réalités floues et changeantes, tantôt flatteuses, tantôt méprisantes, est reprise de l'article « Bambaras » de Wikipédia francophone."
       },
       {
         "title": "Wikipédia francophone, Bambaras",
         "url": "https://fr.wikipedia.org/wiki/Bambaras",
         "tier": "unverified",
         "source_kind": "encyclopedia",
-        "notes": "Article lu pour le sens « ceux qui ont refusé de se soumettre » et pour le récit de Niangolo et Baramangolo (bamba, kulun bali, « sans pirogue »). L'article ne cite aucune source pour ces deux points."
+        "notes": "Article d'encyclopédie collaborative. Il donne le sens « ceux qui ont refusé de se soumettre » et un récit sur les frères Niangolo et Baramangolo (bamba, kulun bali, « sans pirogue »), sans citer de source pour ces deux points. Nous ne reprenons pas ce récit dans le texte de la fiche."
+      },
+      {
+        "title": "Cinquième recensement général de la population et de l'habitat (RGPH5). Rapport d'analyse des données : caractéristiques culturelles de la population",
+        "url": "https://instat-mali.org/laravel-filemanager/files/shares/rgph/rapport-caracteristiques-culturelles-population-rgph5_rpgh.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport de l'Institut national de la statistique du Mali, janvier 2025, rédigé par Safiatou Lala Bengaly et Ahamadou Diallo. Lu le 3 novembre 2026. Selon le tableau 3.01 (p. 25), le bamanankan est la langue maternelle de 9 551 561 personnes de 3 ans et plus, soit 49,90 % de la population. Selon le tableau 4.01 (p. 29), c'est la principale langue parlée de 11 069 671 personnes, soit 57,83 %. Le rapport rappelle, p. 6, que l'article 31 de la Constitution de 2023 fait des langues nationales les langues officielles du Mali, le français restant la langue de travail ; p. 10, que le bambara est devenu langue d'enseignement en 1979."
+      },
+      {
+        "title": "Propositions pour l'orthographe du bamanankan",
+        "url": "https://shs.hal.science/halshs-01096608v1",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Article de Mahamadou Konta et Valentin Vydrin, Mandenkan, n° 52, 2014, p. 22-54. Lu le 3 novembre 2026 dans l'archive ouverte HAL : l'alphabet, les voyelles et la marque des voyelles nasales."
+      },
+      {
+        "title": "Cours de grammaire bambara (présentation de l'éditeur)",
+        "url": "https://inalco.fr/en/publication/bambara-grammar-course",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Présentation du livre de Valentin Vydrin, professeur de mandingue à l'Inalco et chercheur au CNRS, publié par les Presses de l'Inalco en 2019. Lu le 3 novembre 2026 sur le site de l'Inalco, en anglais : « The name of the ethnic group is bá mà na or bá mà nan, and the name of the language is bá manankan »."
+      },
+      {
+        "title": "La religion bambara",
+        "url": "https://archive.org/details/la-religion-bambara",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Paris, Paul Geuthner, 1927. Introduction lue le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français ; il passe en revue les explications du nom et garde une préférence pour « gens du crocodile », sans conclure."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "content.speakers",
+        "reason": "Nous n'avons trouvé un nombre de locuteurs que pour le Mali, dans le recensement de 2022. Ce recensement compte la langue maternelle et la principale langue parlée, mais pas les personnes qui parlent le bambara comme deuxième langue. Nous avons cherché un chiffre pour d'autres pays dans Glottolog et dans la notice publique d'Ethnologue ; ils n'en donnent pas."
+      },
+      {
+        "field": "nameHistory.names[0].pronunciation.audio",
+        "reason": "Nous n'avons pas encore d'enregistrement du nom bamanankan prononcé par une personne qui parle la langue."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Le bambara, que ses locuteurs appellent bamanankan, est la langue la plus parlée au Mali : en 2022, c'est la langue maternelle de près de la moitié des habitants.",
+      "followUp": "D'où vient le nom bambara, et pourquoi ses locuteurs disent-ils bamanankan ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "MLI",
+          "speakers": 9551561,
+          "source": {
+            "title": "Cinquième recensement général de la population et de l'habitat (RGPH5). Rapport d'analyse des données : caractéristiques culturelles de la population",
+            "url": "https://instat-mali.org/laravel-filemanager/files/shares/rgph/rapport-caracteristiques-culturelles-population-rgph5_rpgh.pdf",
+            "tier": "official",
+            "notes": "Personnes de 3 ans et plus dont le bamanankan est la langue maternelle, au recensement de 2022 (tableau 3.01, p. 25). C'est un chiffre de première langue seulement. Le même rapport compte 11 069 671 personnes dont le bamanankan est la principale langue parlée (tableau 4.01, p. 29)."
+          }
+        }
+      ]
+    }
   }
 }

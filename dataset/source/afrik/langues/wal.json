@@ -70,6 +70,28 @@
           {
             "period": {
               "from": 1994,
+              "to": 2007,
+              "label": "Recensements de 1994 et de 2007"
+            },
+            "era": "modern",
+            "statement": "Le nom wolaytta désigne, sous la forme Welaitigna, la langue maternelle de 1 627 955 personnes au recensement éthiopien de 2007, et sous la forme Welayitigna celle de 1 231 673 personnes en 1994, selon les tableaux que publie Grover Hudson.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ethnic Group and Mother Tongue in the Ethiopian Censuses of 1994 and 2007",
+                "author": "Grover Hudson",
+                "year": 2012,
+                "url": "https://journals.sub.uni-hamburg.de/aethiopica/article/view/666",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tableau 4, p. 216",
+                "notes": "Aethiopica, revue de l'université de Hambourg, vol. 15, 2012, p. 204-218. Lu en texte intégral le 3 novembre 2026. L'auteur compare les tableaux des recensements éthiopiens de 1994 et de 2007 sur les groupes ethniques et les langues maternelles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
               "to": 1998,
               "label": "Années 1990"
             },
@@ -221,17 +243,46 @@
     ]
   },
   "content": {
-    "vehicularRole": null,
+    "vehicularRole": "non_vehicular",
     "dialects": ["Zala"],
-    "vitalityStatus": null,
+    "vitalityStatus": {
+      "status": "Wider communication",
+      "scale": "EGIDS (Ethnologue)",
+      "asOf": 2025
+    },
+    "originDebated": false,
     "sources": [
       {
         "title": "Glottolog 5.3 - Wolaytta",
         "url": "https://glottolog.org/resource/languoid/id/wola1242",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Glottolog direct official languoid record; source of the name and glottocode. Les dialectes listés sont les sous-languoids que Glottolog rattache à wola1242, hors languoids portant leur propre code ISO 639-3."
+        "notes": "Glottolog direct official languoid record; source of the name and glottocode. Les dialectes listés sont les sous-languoids que Glottolog rattache à wola1242, hors languoids portant leur propre code ISO 639-3. Lu de nouveau le 3 novembre 2026 : la notice reprend d'Ethnologue (2025) le niveau 3, « langue de communication élargie », et précise que le wolaytta sert à la radio, à l'écrit, au commerce et à l'agriculture, sans être aujourd'hui une langue commune entre peuples."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "nameHistory.names[0].pronunciation",
+        "reason": "Nous n'avons pas encore trouvé de dictionnaire qui indique comment se prononce le nom wolaytta."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Le wolaytta est la langue du peuple du même nom, au nord du lac Abaya, dans le sud de l'Éthiopie.",
+      "followUp": "Pourquoi l'ancien nom Wolamo est-il aujourd'hui jugé dénigrant ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "ETH",
+          "speakers": 1627955,
+          "source": {
+            "title": "Ethnic Group and Mother Tongue in the Ethiopian Censuses of 1994 and 2007",
+            "url": "https://journals.sub.uni-hamburg.de/aethiopica/article/view/666",
+            "tier": "referenced",
+            "notes": "Grover Hudson, Aethiopica, vol. 15, 2012, tableau 4, p. 214-216, lu le 3 novembre 2026. Chiffre du recensement éthiopien de 2007 pour la langue maternelle « Welaitigna ». Il compte les personnes dont c'est la première langue, pas celles qui la parlent en plus d'une autre. Hudson note que le recensement compte sans doute plusieurs groupes et parlers sous ce seul nom."
+          }
+        }
+      ]
+    }
   }
 }

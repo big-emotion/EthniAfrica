@@ -13,9 +13,14 @@
   "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_TUU",
-  "peoples": [],
+  "peoples": [
+    {
+      "name": "Nǀuu",
+      "peopleId": "PPL_NUU"
+    }
+  ],
   "nameHistory": {
-    "summary": "Le nom nǁng désigne une langue à clics du sud du Kalahari, en Afrique du Sud, dont il ne restait en 2016 que quelques locuteurs, près d'Upington. Ses locuteurs l'appellent nǀuu, et les linguistes rangent sous le nom nǁng ce parler et celui des ǂKhomani. En 1930, on appelait /nusan des gens de cette région. Les sources que nous avons lues n'expliquent pas l'origine de ces noms.",
+    "summary": "Le nom nǁng désigne une langue à clics du sud du Kalahari, en Afrique du Sud, dont il ne reste en 2025 qu'une locutrice, Katrina Esau, près d'Upington. Ses derniers locuteurs l'appellent nǀuu, et les linguistes rangent sous le nom nǁng ce parler et celui des ǂKhomani. En 1930, on appelait /nusan des gens de cette région. Le nom nǀuu est un verbe qui veut dire « parler cette langue » ; nous présentons plus bas ce que les sources disent des autres noms.",
     "names": [
       {
         "nameText": "Nǀuu",
@@ -53,6 +58,91 @@
                 "notes": "Le Cap, CALDi, université du Cap, 2016. Notice du dépôt de l'université du Cap lue le 11 octobre 2026 ; nous n'avons pas lu le livre lui-même."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "1996"
+            },
+            "era": "modern",
+            "statement": "Le nǀuu passait pour une langue disparue jusqu'en 1996. Cette année-là, environ 25 personnes qui le parlaient se sont fait connaître, après un appel lancé à la radio par Ouma Elsie Vaalbooi, rapportent Bonny Sands et ses coautrices.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Ouma Elsie Vaalbooi",
+                "role": "lance l'appel à la radio"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Lexicon in Language Attrition: The Case of N|uu",
+                "author": "Bonny Sands, Amanda L. Miller et Johanna Brugman",
+                "year": 2007,
+                "url": "https://www.lingref.com/cpp/acal/37/paper1595.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 55 à 57",
+                "notes": "Dans Doris L. Payne et Jaime Peña (dir.), Selected Proceedings of the 37th Annual Conference on African Linguistics, Somerville (Massachusetts), Cascadilla Proceedings Project, 2007, p. 55-65. Lu en texte intégral le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Avril 2025"
+            },
+            "era": "modern",
+            "statement": "Le nǀuu n'a plus, en avril 2025, qu'une personne qui l'a appris comme langue maternelle, Katrina Esau, selon l'archive ELAR. Elle l'enseigne à des enfants dans une petite école chez elle, à Rosedale, près d'Upington, écrit en 2023 la revue de l'université du Cap.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "ǂXuu Katrina Esau, dite Ouma Katrina",
+                "role": "locutrice et enseignante du nǀuu"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Documentation for the revitalisation of Nǀuu, collection ELAR",
+                "author": "Sheena Shah et Matthias Brenzinger",
+                "year": 2018,
+                "url": "https://www.elararchive.org/dk0505/",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "description de la collection",
+                "notes": "Endangered Languages Archive (ELAR), collection déposée par Sheena Shah (SOAS, université de Londres), enregistrements faits de 2012 à 2016. Description lue le 3 novembre 2026 : en avril 2025, il ne reste qu'une personne dont le nǀuu est la langue maternelle, Katrina Esau."
+              },
+              {
+                "title": "Ouma Katrina Esau: Reviving a language, one child at a time",
+                "author": "Nadia Krige",
+                "year": 2023,
+                "url": "https://www.news.uct.ac.za/article/-2023-03-31-ouma-katrina-esau-reviving-a-language-one-child-at-a-time",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "UCT News, université du Cap, 31 mars 2023, lu le 3 novembre 2026. L'article paraît quand l'université remet un doctorat honoris causa à ǂXuu Katrina Esau, qu'il présente comme la dernière personne à parler couramment le nǀuu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les auteurs"
+            },
+            "statement": "Le nom nǀuu est un verbe qui veut dire « parler cette langue » ; on dit aujourd'hui nǀuu ou nǀuuki pour la langue, selon la présentation de la grammaire de Chris Collins et Levi Namaseb.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Grammatical Sketch of N|uuki with Stories, présentation de l'éditeur",
+                "author": "Chris Collins et Levi Namaseb",
+                "year": 2011,
+                "url": "https://www.koeppe.de/titel_a-grammatical-sketch-of-n-uuki-n-uuki-with-stories",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Cologne, Rüdiger Köppe, collection Research in Khoisan Studies, n° 25, 2011. Nous avons lu la présentation du livre sur le site de l'éditeur le 3 novembre 2026, et non le livre lui-même."
+              }
+            ]
           }
         ]
       },
@@ -86,16 +176,48 @@
                 "notes": "University of Leipzig Papers on Africa, Languages and Literatures, n° 23, Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig le 11 octobre 2026."
               }
             ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "era": "modern",
+            "statement": "Le nom nǁng désigne, chez les linguistes, l'ensemble dont le nǀuu est le dernier parler encore en usage. Les spécialistes l'ont cru disparu pendant plusieurs décennies, note la description de l'archive ELAR. Dans les travaux anciens, les parlers proches du nǀuu sont appelés ǂkhomani ou nǁng, écrivent Bonny Sands et ses coautrices.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Documentation for the revitalisation of Nǀuu, collection ELAR",
+                "author": "Sheena Shah et Matthias Brenzinger",
+                "year": 2018,
+                "url": "https://www.elararchive.org/dk0505/",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "description de la collection",
+                "notes": "Endangered Languages Archive (ELAR), collection déposée par Sheena Shah (SOAS, université de Londres), enregistrements faits de 2012 à 2016. Description lue le 3 novembre 2026 : en avril 2025, il ne reste qu'une personne dont le nǀuu est la langue maternelle, Katrina Esau."
+              },
+              {
+                "title": "The Lexicon in Language Attrition: The Case of N|uu",
+                "author": "Bonny Sands, Amanda L. Miller et Johanna Brugman",
+                "year": 2007,
+                "url": "https://www.lingref.com/cpp/acal/37/paper1595.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 55 à 57",
+                "notes": "Dans Doris L. Payne et Jaime Peña (dir.), Selected Proceedings of the 37th Annual Conference on African Linguistics, Somerville (Massachusetts), Cascadilla Proceedings Project, 2007, p. 55-65. Lu en texte intégral le 3 novembre 2026."
+              }
+            ]
           }
         ]
       },
       {
         "nameText": "ǂKhomani",
         "nameStatus": "current",
-        "selfGiven": true,
+        "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom des ǂKhomani, donné aussi à leur parler.",
+        "shortLine": "Le nom d'une communauté san du sud du Kalahari, donné aussi à ce parler.",
         "periodLabel": "Écrit dès 1937",
         "accounts": [
           {
@@ -117,6 +239,48 @@
                 "source_kind": "academic",
                 "page": "p. 13 et p. 29",
                 "notes": "University of Leipzig Papers on Africa, Languages and Literatures, n° 23, Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "2007"
+            },
+            "era": "modern",
+            "statement": "Le nom ǂkhomani désigne aujourd'hui en Afrique du Sud un ensemble de gens dont les locuteurs du nǀuu ne sont qu'une petite partie. Ces locuteurs ne connaissaient pas ce nom avant que des membres du South African San Institute le leur fassent connaître, écrivent Bonny Sands et ses coautrices.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Lexicon in Language Attrition: The Case of N|uu",
+                "author": "Bonny Sands, Amanda L. Miller et Johanna Brugman",
+                "year": 2007,
+                "url": "https://www.lingref.com/cpp/acal/37/paper1595.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 55 à 57",
+                "notes": "Dans Doris L. Payne et Jaime Peña (dir.), Selected Proceedings of the 37th Annual Conference on African Linguistics, Somerville (Massachusetts), Cascadilla Proceedings Project, 2007, p. 55-65. Lu en texte intégral le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par l'auteur"
+            },
+            "statement": "Le nom ǂkhomani est celui du plus grand des anciens groupes san du sud du Kalahari, selon Roger Chennells, qui écrit sur la revendication de terres des ǂKhomani, réglée en partie en mars 1999.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The ǂKhomani San Land Claim",
+                "author": "Roger Chennells",
+                "year": null,
+                "url": "https://www.culturalsurvival.org/ourpublications/csq/article/the-khomani-san-land-claim",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "notes": "Cultural Survival Quarterly, n° 26-1, numéro « The Kalahari San ». Article lu en ligne le 3 novembre 2026. Il date de mars 1999 la première étape du règlement de la revendication foncière des ǂKhomani."
               }
             ]
           }
@@ -157,17 +321,81 @@
     ]
   },
   "content": {
-    "vehicularRole": null,
+    "vehicularRole": "non_vehicular",
     "dialects": ["N|u", "||Ng!ke"],
-    "vitalityStatus": null,
+    "vitalityStatus": {
+      "status": "Nearly Extinct",
+      "scale": "AES (Glottolog)",
+      "asOf": 2022
+    },
+    "originDebated": false,
     "sources": [
       {
         "title": "Glottolog 5.3 — Nǁng (nngg1234)",
         "url": "https://glottolog.org/resource/languoid/id/nngg1234",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Glottolog name: N||ng; classification includes Tuu. Les dialectes listés sont les sous-languoids que Glottolog rattache à nngg1234, hors languoids portant leur propre code ISO 639-3."
+        "notes": "Glottolog nomme la langue N||ng et la classe dans la famille tuu. Les dialectes listés sont les sous-languoids que Glottolog rattache à nngg1234, hors languoids portant leur propre code ISO 639-3. La notice, lue le 3 novembre 2026, juge la langue presque éteinte, d'après le Catalogue des langues en danger de Lyle Campbell et de ses coauteurs, en 2022, qui cite Matthias Brenzinger : les locuteurs parlent l'afrikaans au quotidien et ne parlent le nǁng que quelques fois par an."
+      },
+      {
+        "title": "Documentation for the revitalisation of Nǀuu, collection ELAR",
+        "url": "https://www.elararchive.org/dk0505/",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Endangered Languages Archive (ELAR), collection déposée par Sheena Shah (SOAS, université de Londres), enregistrements faits de 2012 à 2016. Description lue le 3 novembre 2026 : en avril 2025, il ne reste qu'une personne dont le nǀuu est la langue maternelle, Katrina Esau."
+      },
+      {
+        "title": "The Lexicon in Language Attrition: The Case of N|uu",
+        "url": "https://www.lingref.com/cpp/acal/37/paper1595.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Dans Doris L. Payne et Jaime Peña (dir.), Selected Proceedings of the 37th Annual Conference on African Linguistics, Somerville (Massachusetts), Cascadilla Proceedings Project, 2007, p. 55-65. Lu en texte intégral le 3 novembre 2026."
+      },
+      {
+        "title": "Ouma Katrina Esau: Reviving a language, one child at a time",
+        "url": "https://www.news.uct.ac.za/article/-2023-03-31-ouma-katrina-esau-reviving-a-language-one-child-at-a-time",
+        "tier": "referenced",
+        "source_kind": "press",
+        "notes": "UCT News, université du Cap, 31 mars 2023, lu le 3 novembre 2026. L'article paraît quand l'université remet un doctorat honoris causa à ǂXuu Katrina Esau, qu'il présente comme la dernière personne à parler couramment le nǀuu."
+      },
+      {
+        "title": "A Grammatical Sketch of N|uuki with Stories, présentation de l'éditeur",
+        "url": "https://www.koeppe.de/titel_a-grammatical-sketch-of-n-uuki-n-uuki-with-stories",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Cologne, Rüdiger Köppe, collection Research in Khoisan Studies, n° 25, 2011. Nous avons lu la présentation du livre sur le site de l'éditeur le 3 novembre 2026, et non le livre lui-même."
+      },
+      {
+        "title": "The ǂKhomani San Land Claim",
+        "url": "https://www.culturalsurvival.org/ourpublications/csq/article/the-khomani-san-land-claim",
+        "tier": "referenced",
+        "source_kind": "ngo",
+        "notes": "Cultural Survival Quarterly, n° 26-1, numéro « The Kalahari San ». Article lu en ligne le 3 novembre 2026. Il date de mars 1999 la première étape du règlement de la revendication foncière des ǂKhomani."
       }
-    ]
+    ],
+    "gaps": [
+      {
+        "field": "nameHistory.names[1]",
+        "reason": "Nous n'avons pas trouvé le sens du mot nǁng ni sa plus ancienne trace écrite. Nous avons cherché dans les études de Tom Güldemann et de Bonny Sands, et dans les collections de l'archive ELAR."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Le nǀuu est une langue à clics du sud du Kalahari, en Afrique du Sud. En 2025, une seule femme, Katrina Esau, la parle encore comme langue maternelle.",
+      "followUp": "Pourquoi cette langue porte-t-elle plusieurs noms, nǀuu, nǁng et ǂkhomani ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "ZAF",
+          "speakers": 1,
+          "source": {
+            "title": "Documentation for the revitalisation of Nǀuu, collection ELAR",
+            "url": "https://www.elararchive.org/dk0505/",
+            "tier": "referenced",
+            "notes": "En avril 2025, une seule personne a encore le nǀuu pour langue maternelle : Katrina Esau, près d'Upington, dans la province du Cap-Nord. Elle l'enseigne dans son école."
+          }
+        }
+      ]
+    }
   }
 }

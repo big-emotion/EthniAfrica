@@ -46,10 +46,12 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * 1001 -> 991 the same day: ten untyped citations left with PPL_MUCUBAL,
  * folded into PPL_MUCUVAL, and two people fiches withdrawn after wave 24;
  * the one carried to the Cabo Verde fiche carries a source_kind.
- * 991 -> 979 on 2026-11-03: the Khoe, Khoisan, Krou, Kwa and Kx'a family
+ * 991 -> 990 on 2026-11-03: premium families batch 05 removed the untyped
+ * Müller 1876 citation of FLG_SEMITIQUE, whose publisher was wrong.
+ * 990 -> 978 on 2026-11-08: the Khoe, Khoisan, Krou, Kwa and Kx'a family
  * fiches typed or dropped the untyped citations of their rewritten sections.
  */
-export const UNTYPED_SOURCE_RATCHET = 979;
+export const UNTYPED_SOURCE_RATCHET = 978;
 
 export interface UntypedSource {
   file: string;
