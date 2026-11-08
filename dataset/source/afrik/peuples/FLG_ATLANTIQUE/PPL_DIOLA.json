@@ -5,7 +5,7 @@
   "currentCountries": ["SEN", "GMB", "GNB"],
   "classificationStatus": "colonial-legacy",
   "nameHistory": {
-    "summary": "Le nom Diola désigne un peuple de basse Casamance, de Gambie et du nord de la Guinée-Bissau, qui se nomme lui-même Ajamat. D'autres noms existent : Joola, Jola, et Floup pour l'un de ses groupes. Les sources que nous avons lues n'expliquent pas l'origine de ces noms.",
+    "summary": "Le nom Diola désigne un peuple de riziculteurs de basse Casamance, au sud du Sénégal, de Gambie et du nord de la Guinée-Bissau. Une partie de ce peuple se nomme elle-même Ajamat, un mot qui désigne la personne humaine. Le même peuple porte aussi les noms Joola et Jola, et le nom Floup, que les Portugais écrivaient Felupos, sert aujourd'hui pour l'un de ses groupes. Nous présentons plus bas ce que les sources disent de chacun de ces noms.",
     "names": [
       {
         "nameText": "Ajamat",
@@ -13,37 +13,51 @@
         "selfGiven": true,
         "languageOfOrigin": "dyo",
         "namedBy": null,
-        "shortLine": "Le nom qu'ils se donnent dans leur langue : Ajamat, au pluriel Ajamataw.",
-        "usedIn": ["dyo"],
+        "shortLine": "Le nom que se donne une partie de ce peuple ; il veut dire « celui qui comprend le langage ».",
+        "usedIn": ["dyo", "eja"],
         "periodLabel": "Usage contemporain",
         "accounts": [
           {
             "period": {
               "from": null,
               "to": null,
-              "label": "Usage contemporain"
+              "label": "Usage décrit par l'autrice"
             },
             "era": "modern",
-            "statement": "Le nom Ajamat est celui que ce peuple se donne dans sa langue, Ajamataw au pluriel, selon Wikipédia. Un autre article de Wikipédia note qu'aucun nom propre n'est employé par tous ceux qui parlent ces langues.",
+            "statement": "Le nom Ajamat, écrit ajamaat au singulier, veut dire « celui qui comprend le langage », c'est-à-dire la personne humaine, selon l'anthropologue Odile Journet-Diallo. Elle note que plusieurs groupes se désignent ainsi au Sénégal, notamment les Kujamaat des Kalounayes, au nord de la Casamance, et ceux de la frontière avec la Guinée-Bissau, chez qui elle a travaillé.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "À propos des modes de construction du territoire en pays jóola : sources écrites, traditions villageoises et matériaux ethnographiques, Afriques, 02",
+                "author": "Odile Journet-Diallo",
+                "year": 2010,
+                "url": "https://journals.openedition.org/afriques/845",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 2 et note 4",
+                "notes": "Revue Afriques, numéro « Histoires de territoires », mise en ligne sur OpenEdition le 2 février 2011. Lu en texte intégral le 3 novembre 2026. L'autrice, anthropologue, a mené ses enquêtes pendant une vingtaine d'années dans des villages kujamaat de la frontière entre le Sénégal et la Guinée-Bissau. Les paragraphes sont numérotés dans l'édition en ligne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'autrice"
+            },
+            "era": "modern",
+            "statement": "Le nom ajamaat peut aussi servir de moquerie : des Jóola musulmans, ou plus engagés dans l'économie moderne, l'emploient pour se moquer des villageois les plus attachés aux coutumes, selon Odile Journet-Diallo.",
             "aspect": "usage",
             "sources": [
               {
-                "title": "Jola people — Wikipedia",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://en.wikipedia.org/wiki/Jola_people",
-                "tier": "unverified",
-                "source_kind": "encyclopedia",
-                "notes": "Section consacrée au nom, consultée le 9 octobre 2026 : Ajamat au singulier, Ajamataw au pluriel, et Jola présenté comme le nom mandinka, « ceux qui rendent ». La section ne cite pas de source."
-              },
-              {
-                "title": "Jola languages — Wikipedia",
-                "author": "Contributeurs de Wikipédia",
-                "year": 2026,
-                "url": "https://en.wikipedia.org/wiki/Jola_languages",
-                "tier": "unverified",
-                "source_kind": "encyclopedia",
-                "notes": "Section Name, consultée le 9 octobre 2026 : le nom Jola est donné comme venu de l'extérieur, et peut-être du mandinka joolaa, « celui qui rend ». La section ajoute qu'aucun nom propre n'est employé par tous les locuteurs."
+                "title": "À propos des modes de construction du territoire en pays jóola : sources écrites, traditions villageoises et matériaux ethnographiques, Afriques, 02",
+                "author": "Odile Journet-Diallo",
+                "year": 2010,
+                "url": "https://journals.openedition.org/afriques/845",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 4",
+                "notes": "Revue Afriques, numéro « Histoires de territoires », mise en ligne sur OpenEdition le 2 février 2011. Lu en texte intégral le 3 novembre 2026. L'autrice, anthropologue, a mené ses enquêtes pendant une vingtaine d'années dans des villages kujamaat de la frontière entre le Sénégal et la Guinée-Bissau. Les paragraphes sont numérotés dans l'édition en ligne."
               }
             ]
           }
@@ -55,9 +69,9 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "La forme française du nom Joola, un nom venu de l'extérieur.",
+        "shortLine": "La forme française du nom Joola ; écrite « Dyolas » dès 1848.",
         "usedIn": ["fra"],
-        "periodLabel": "Écrit dès le milieu du XIXe siècle",
+        "periodLabel": "Écrit dès 1848",
         "accounts": [
           {
             "period": {
@@ -66,7 +80,7 @@
               "label": "Usage décrit par les auteurs"
             },
             "era": "modern",
-            "statement": "Le nom Diola, ou Joola, désigne des riziculteurs de basse Casamance et du Rio Cacheu. Il réunit des groupes dont les parlers ne se comprennent pas toujours entre eux : Floup, Bayot, Blis-Kaniara, Kassa et Fooni, selon C. Wondji. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "statement": "Le nom Diola, ou Joola, désigne des riziculteurs de basse Casamance et du rio Cacheu. Il réunit des groupes dont les parlers ne se comprennent pas toujours entre eux : Floup, Bayot, Blis-Kaniara, Kassa et Fooni, selon l'historien Christophe Wondji.",
             "aspect": "meaning",
             "sources": [
               {
@@ -95,6 +109,28 @@
             "period": {
               "from": null,
               "to": null,
+              "label": "Usage décrit par l'autrice"
+            },
+            "era": "modern",
+            "statement": "Le nom jóola est un nom adopté récemment, qui ne correspond à aucune unité historique ou politique, selon Odile Journet-Diallo. Les villages qu'il réunit partagent pourtant de nombreux traits qui les distinguent de leurs voisins mandingues et peuls.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "À propos des modes de construction du territoire en pays jóola : sources écrites, traditions villageoises et matériaux ethnographiques, Afriques, 02",
+                "author": "Odile Journet-Diallo",
+                "year": 2010,
+                "url": "https://journals.openedition.org/afriques/845",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 1",
+                "notes": "Revue Afriques, numéro « Histoires de territoires », mise en ligne sur OpenEdition le 2 février 2011. Lu en texte intégral le 3 novembre 2026. L'autrice, anthropologue, a mené ses enquêtes pendant une vingtaine d'années dans des villages kujamaat de la frontière entre le Sénégal et la Guinée-Bissau. Les paragraphes sont numérotés dans l'édition en ligne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
               "label": "Usage décrit par l'auteur"
             },
             "era": "modern",
@@ -110,6 +146,52 @@
                 "source_kind": "intergovernmental",
                 "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
                 "page": "p. 691"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1909,
+              "to": 1909,
+              "label": "1909"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dyola sert aussi dans la langue elle-même, selon le dictionnaire du missionnaire Édouard Wintz : au parler de Carabane, un adyola, au pluriel kudyola, est « un Dyola, indigène de la Casamance », et la langue se dit kudyôla.",
+            "aspect": "usage",
+            "formAsWritten": "Adyola",
+            "sources": [
+              {
+                "title": "Dictionnaire français-dyola et dyola-français, précédé d'un essai de grammaire",
+                "author": "Édouard Wintz",
+                "year": 1909,
+                "url": "https://archive.org/details/dictionnairefran00wint",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 58 et p. 116",
+                "notes": "Paris, Maisonneuve frères, 1909. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur était un missionnaire catholique de la congrégation du Saint-Esprit en Casamance, et son regard est celui d'un missionnaire de l'époque coloniale. Le dictionnaire décrit le parler de Carabane."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1848,
+              "to": 1848,
+              "label": "1848"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diola est écrit « Dyolas » en 1848 par l'officier de marine français Édouard Bouët-Willaumez, ancien gouverneur du Sénégal. Il écrit que les caboteurs de Gorée viennent acheter du riz aux Dyolas de la côte, entre la Gambie et la Casamance. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà sur cette côte avant lui.",
+            "formAsWritten": "Dyolas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Commerce et traite des noirs aux côtes occidentales d'Afrique",
+                "author": "E. Bouët-Willaumez",
+                "year": 1848,
+                "url": "https://archive.org/details/commerceettraite00bout",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 62-63",
+                "notes": "Paris, Imprimerie nationale, 1848. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur, capitaine de vaisseau de la marine française, avait été gouverneur du Sénégal en 1843 et 1844 ; il écrit pour servir le commerce français sur la côte. Il dit que les caboteurs de Gorée viennent acheter du riz aux « Dyolas » de la côte située entre la Gambie et la Casamance, et que « le bas de la rivière est habité par les Dyolas »."
               }
             ]
           },
@@ -141,9 +223,8 @@
               "label": "1856"
             },
             "era": "polity",
-            "statement": "Le nom Diola apparaît par écrit chez le voyageur français Anne Raffenel, qui parle du « pays des Diolas » au bord de la Casamance. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "statement": "Le nom Diola apparaît aussi chez le voyageur français Anne Raffenel, qui parle en 1856 du « pays des Diolas » au bord de la Casamance.",
             "formAsWritten": "pays des Diolas",
-            "birth": true,
             "sources": [
               {
                 "title": "Nouveau voyage dans le pays des nègres, tome premier",
@@ -195,8 +276,8 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom de l'un des groupes diola ; les Portugais écrivaient Felupes.",
-        "periodLabel": "Écrit dès la fin du XVIe siècle",
+        "shortLine": "Le nom de l'un des groupes diola ; les Portugais écrivaient Felupos dès 1506.",
+        "periodLabel": "Écrit dès 1506",
         "accounts": [
           {
             "period": {
@@ -222,14 +303,80 @@
           },
           {
             "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'autrice"
+            },
+            "era": "modern",
+            "statement": "Le nom Floup sert aujourd'hui pour un groupe jóola du nord de la Guinée-Bissau. Du XVe au XVIIIe siècle, les voyageurs et les chroniqueurs semblent pourtant l'avoir employé pour tous les groupes que l'on appelle maintenant jóola, selon Odile Journet-Diallo. Elle relève les graphies felupos, falupos, feloupes, flup et felup.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "À propos des modes de construction du territoire en pays jóola : sources écrites, traditions villageoises et matériaux ethnographiques, Afriques, 02",
+                "author": "Odile Journet-Diallo",
+                "year": 2010,
+                "url": "https://journals.openedition.org/afriques/845",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 6",
+                "notes": "Revue Afriques, numéro « Histoires de territoires », mise en ligne sur OpenEdition le 2 février 2011. Lu en texte intégral le 3 novembre 2026. L'autrice, anthropologue, a mené ses enquêtes pendant une vingtaine d'années dans des villages kujamaat de la frontière entre le Sénégal et la Guinée-Bissau. Les paragraphes sont numérotés dans l'édition en ligne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Explication rapportée en 2010"
+            },
+            "era": "modern",
+            "statement": "Le nom Felup serait formé sur un radical luup ou luuf, qui veut dire « boue, marécage », selon les travaux de Stephan Bühnen (1992) cités par Odile Journet-Diallo. Elle rappelle qu'en 1907, le médecin colonial P. Maclaud écrivait que « partout où il y a de la vase en Casamance, il y a des Diola ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "À propos des modes de construction du territoire en pays jóola : sources écrites, traditions villageoises et matériaux ethnographiques, Afriques, 02",
+                "author": "Odile Journet-Diallo",
+                "year": 2010,
+                "url": "https://journals.openedition.org/afriques/845",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 6 et note 8",
+                "notes": "Revue Afriques, numéro « Histoires de territoires », mise en ligne sur OpenEdition le 2 février 2011. Lu en texte intégral le 3 novembre 2026. L'autrice, anthropologue, a mené ses enquêtes pendant une vingtaine d'années dans des villages kujamaat de la frontière entre le Sénégal et la Guinée-Bissau. Les paragraphes sont numérotés dans l'édition en ligne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1506,
+              "to": 1510,
+              "label": "Vers 1506-1510"
+            },
+            "era": "polity",
+            "statement": "Le nom Floup apparaît, écrit « Felupos », chez Valentim Fernandes, qui décrit la côte d'Afrique pour les Portugais, selon Odile Journet-Diallo. Elle date ce texte de 1506, puis de 1510 un peu plus loin dans son article. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà entre la Casamance et le rio Cacheu avant lui.",
+            "formAsWritten": "Felupos",
+            "birth": true,
+            "sources": [
+              {
+                "title": "À propos des modes de construction du territoire en pays jóola : sources écrites, traditions villageoises et matériaux ethnographiques, Afriques, 02",
+                "author": "Odile Journet-Diallo",
+                "year": 2010,
+                "url": "https://journals.openedition.org/afriques/845",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 5 et § 16",
+                "notes": "Revue Afriques, numéro « Histoires de territoires », mise en ligne sur OpenEdition le 2 février 2011. Lu en texte intégral le 3 novembre 2026. L'autrice, anthropologue, a mené ses enquêtes pendant une vingtaine d'années dans des villages kujamaat de la frontière entre le Sénégal et la Guinée-Bissau. Les paragraphes sont numérotés dans l'édition en ligne."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1592,
               "to": 1596,
               "label": "Manuscrits de 1592-1596"
             },
             "era": "polity",
-            "statement": "Le nom Floup apparaît, écrit « Felupes », chez le Cap-Verdien André Álvares de Almada, selon José da Silva Horta. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "statement": "Le nom Floup est écrit « Felupes » par le Cap-Verdien André Álvares de Almada, dans des manuscrits de 1592 à 1596, selon l'historien José da Silva Horta.",
             "formAsWritten": "Felupes",
-            "birth": true,
             "sources": [
               {
                 "title": "Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII), Varia Historia, 29 (51)",
@@ -242,6 +389,28 @@
                 "page": "p. 658"
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1849,
+              "to": 1849,
+              "label": "1849"
+            },
+            "era": "colonial",
+            "statement": "Le nom Floup est écrit « Floups de Vacas ou de Fogni » en 1849 par le voyageur français Bertrand-Bocandé, pour les habitants du Fogny, au nord de la Casamance, selon Pierre-Marie Bosc. Bertrand-Bocandé décrit ces Floups comme des riziculteurs qui vendent leur riz à Gorée et en Gambie.",
+            "formAsWritten": "Floups de Vacas ou de Fogni",
+            "sources": [
+              {
+                "title": "À la croisée des pouvoirs : une organisation paysanne face à la gestion des ressources (Basse Casamance, Sénégal), chapitre « Expansion territoriale, conflits internes et contacts avec le monde extérieur »",
+                "author": "Pierre-Marie Bosc",
+                "year": 2005,
+                "url": "https://books.openedition.org/irdeditions/10055",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 22",
+                "notes": "Marseille, IRD Éditions, 2005, p. 25-39. Lu en texte intégral sur OpenEdition Books le 3 novembre 2026. L'auteur résume les travaux des historiens Peter Mark, Olga Linares, Joye Lauer et Christian Roche, et cite des voyageurs du XIXe siècle. Les paragraphes sont numérotés dans l'édition en ligne."
+              }
+            ]
           }
         ]
       }
@@ -251,107 +420,121 @@
     "appellations": {
       "mainName": "Diola (Joola / Jola)",
       "selfAppellation": "Ajamat",
-      "spellingAliases": ["Ajamataw"],
+      "spellingAliases": ["Ajamaat", "Kujamaat", "Ajamataw"],
       "exonyms": [
         "Diola",
-        "Jola",
         "Joola",
+        "Jóola",
+        "Jola",
         "Dyola",
-        "Yola",
+        "Djola",
+        "Floup",
+        "Floups",
+        "Felup",
         "Felupe",
-        "Flup",
-        "Floups"
+        "Felupos",
+        "Flup"
       ],
-      "originOfExonyms": "Diola est la translittération française de Jola, un nom qui viendrait du mandinka et voudrait dire 'ceux qui payent en retour', selon Wikipédia. Popularise au XIXe siecle par les colonisateurs. Felupe ou Flup designent specifiquement les groupes de Guinee-Bissau.",
-      "whyProblematic": "Diola et Jola sont des noms donnés par les Mandinka. Ils réunissent sous un même nom plusieurs groupes dont les manières de parler ne sont pas toujours compréhensibles d'un groupe à l'autre.",
-      "contemporaryUsage": "Diola reste l'usage dominant en francais (Senegal, Guinee-Bissau), Jola ou Joola en anglais (Gambie). L'auto-appellation Ajamat est privilegiee dans les milieux academiques et communautaires. Au singulier, on dit Ajamat ; au pluriel, Ajamataw.",
+      "originOfExonyms": "Le nom Floup est le plus ancien des noms écrits : les Portugais notaient « Felupos » dès 1506, selon Odile Journet-Diallo, et ils l'employaient pour l'ensemble des groupes que l'on appelle aujourd'hui jóola. D'après les travaux de Stephan Bühnen, qu'elle cite, ce nom serait formé sur un radical qui veut dire « boue, marécage ». Le nom Diola est écrit « Dyolas » en 1848 par l'officier de marine Édouard Bouët-Willaumez ; en 1909, le missionnaire Édouard Wintz le trouve aussi dans la langue, où un adyola est un Diola. Les sources que nous avons lues ne donnent pas d'explication du nom Diola appuyée sur un texte ancien.",
+      "whyProblematic": "Le nom jóola réunit des villages qui ne formaient ni un État ni une unité politique, selon Odile Journet-Diallo, et leurs parlers ne se comprennent pas toujours entre eux, selon Christophe Wondji. Depuis l'époque coloniale, ces habitants ont été découpés en sous-groupes aux limites et aux noms changeants. Les administrateurs du XIXe siècle les traitaient de peuples « anarchiques » ou « sauvages », faute de chefferie à laquelle s'adresser, note la même autrice.",
+      "contemporaryUsage": "Au Sénégal, le recensement de 2023 nomme la langue « joola », tandis que l'enquête démographique et de santé de la même année range les personnes interrogées dans le groupe « diola ». En Gambie, le recensement de 2003 réunit les « Jola » et les « Karoninka » sous un seul nom. L'historien Yves Person relève les graphies Diola, Dyola, Jola et Djola. Le mot ajamaat sert de nom à une partie de ce peuple, mais d'autres Jóola l'emploient pour se moquer des villageois attachés aux coutumes, selon Odile Journet-Diallo.",
       "linguisticFamily": "FLG_ATLANTIQUE",
       "ethnoLinguisticGroup": "Atlantique (branche Bak)",
-      "historicalRegion": "Basse Casamance (Senegal), Gambie meridionale, nord de la Guinee-Bissau",
-      "currentCountries": ["SEN", "GMB", "GNB"]
+      "historicalRegion": "Basse Casamance (Sénégal), sud de la Gambie, nord de la Guinée-Bissau",
+      "currentCountries": ["SEN", "GMB", "GNB"],
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Joola Fogni (Efogniayi) — rive droite de la Casamance, majoritaires en Gambie",
-      "Joola Kasa (Huluf, Eyun, Esulalu) — region d'Oussouye, rive gauche",
-      "Joola Ajamat (Ejamatayi) — zone frontaliere Senegal/Guinee-Bissau, majoritaires en Guinee-Bissau",
-      "Joola Bayot (Bayote) — autour de Ziguinchor",
-      "Joola Mlomp — village de Mlomp",
-      "Joola Karon — cote de Casamance au sud de Diouloulou",
-      "Joola Banjal — au sud du fleuve Casamance",
-      "Joola Bliss-Karones (Eblinayi) — littoral atlantique et iles",
-      "Joola Gusilay — village de Thionck-Essyl",
-      "Joola Kuwaataay — cote sud du fleuve Casamance",
-      "Joola Felupe (Ediamat) — quelques villages au sud d'Oussouye et en Guinee-Bissau",
-      "Joola Brin — Casamance nord",
-      "Joola Jamat, Joheyt, Seleky, Kabrouse et Jiwat — sous-groupes communautaires"
+      "Fogny (Fooni, Fonyi) — au nord du fleuve Casamance, autour de Bignona ; le plus grand groupe selon J. David Sapir en 1965",
+      "Bliss-Karones (Blis-Kaniara) — côte et îles au nord de l'embouchure de la Casamance",
+      "Kujamaat (Ejamat) — villages de la frontière entre le Sénégal et la Guinée-Bissau, et région des Kalounayes",
+      "Floup (Felup) — nord de la Guinée-Bissau",
+      "Kasa (Kassa), dont les Esulalu — rive sud de la Casamance, autour d'Oussouye",
+      "Bayot — autour de Ziguinchor et de part et d'autre de la frontière",
+      "Bandial — rive sud de la Casamance, autour d'Enampore",
+      "Buluf (Boulouf) — au nord du fleuve Casamance, à l'ouest du Fogny",
+      "Karoninka — nom donné en Gambie aux Karon de la côte",
+      "Gusilay, Mlomp, Kuwaataay et Keerak — villages dont le parler est compté comme une langue à part par Glottolog"
     ],
     "origins": {
-      "ancientOrigins": "Les Joola sont consideres comme les premiers habitants des basses rives des fleuves Casamance et Gambie. Les traditions orales sénégambiennes les disent apparentes aux Sereres et aux Peuls, originaires de la vallee du Nil. Ils ont assimile les Bainuk, population anterieure, et leur tradition rizicole.",
-      "formationPeriod": "Probablement installes en Basse-Casamance vers le XIVe siecle. Vers le XIe siecle, en reponse au dessechement climatique, les agriculteurs joola ont developpe un systeme de casiers rizicoles (padis) pour capter les eaux de pluie et de ruissellement.",
+      "ancientOrigins": "Deux hypothèses existent sur l'origine des sociétés jóola, selon Odile Journet-Diallo. La première, défendue par Paul Pélissier et Walter Rodney, voit en elles de vieilles paysanneries venues se réfugier dans les mangroves de la côte pour fuir des sociétés guerrières. La seconde y voit un vieux fonds de population installé entre la Casamance et le rio Cacheu : les fouilles d'Olga Linares dans des amas de coquillages montrent que des communautés exploitaient déjà la mangrove dans les premiers siècles après J.-C. Les traditions orales des Kujamaat disent seulement que « Dieu les a fait tomber sur cette terre ». En 1909, le missionnaire Édouard Wintz rapporte une autre tradition, selon laquelle les Dyola et les Sérères descendraient de deux sœurs, filles d'un roi de l'intérieur.",
+      "formationPeriod": "Les premiers textes portugais, au début du XVIe siècle, décrivent déjà les Felupos comme des riziculteurs de la côte, hostiles aux étrangers, selon Odile Journet-Diallo. À partir de la fin du XVIe siècle et surtout au XVIIe siècle, des groupes diola étendent leurs terres vers le nord et le nord-est, aux dépens des Baïnouk, selon Pierre-Marie Bosc. D'après Peter Mark, cité par les deux auteurs, le fer obtenu par le commerce renforçait l'outil de labour et a aidé cette expansion.",
       "migrationRoutes": [
-        "Migrations depuis l'est (region Mali actuel) vers l'ouest sous la pression des Malinkés conquérants a l'epoque de l'Empire du Mali",
-        "Installation progressive en Casamance, Gambie meridionale et nord Guinee-Bissau"
+        "Du sud et de l'ouest de la basse Casamance vers le nord et le nord-est, le Boulouf et le Fogny, « à la recherche de champs de riz », selon les traditions orales rapportées par Peter Mark et citées par Pierre-Marie Bosc",
+        "Passage du marigot du Soungrougrou vers l'est en 1863, sur les terres des Baïnouk du Yasin, selon Christian Roche cité par Pierre-Marie Bosc",
+        "Au XXe siècle, départ de jeunes du Fogny vers Dakar, où J. David Sapir enregistre une fête de mariage en 1961"
       ],
       "historicalSettlementZones": [
-        "Basse Casamance (Senegal) — zone principale, departements d'Oussouye, Bignona, Ziguinchor",
-        "Sud de la Gambie (region de Fogni-Kombo)",
-        "Nord de la Guinee-Bissau (region de Cacheu)"
+        "Les deux rives de la Casamance, de l'embouchure jusqu'à Sédhiou, selon Édouard Wintz en 1909",
+        "Le nord de la Guinée-Bissau, entre la Casamance et le rio Cacheu, que plusieurs observateurs tiennent pour le berceau des groupes jóola, selon Odile Journet-Diallo",
+        "En Gambie, les zones de Brikama et de Kanifing, et surtout les districts de Foni Bintang Karanai et de Foni Kansala, selon le recensement de 2003"
       ],
-      "unificationsOrDivisions": "Les Joola n'ont jamais forme un Etat centralise. Ils sont organises en communautes villageoises autonomes. Quelques royautes locales existent (royaume d'Analufay regroupant Selhek, Huluf, Eyun; pays du roi Ayi Mofayi).",
-      "externalInfluences": "Contacts avec l'Empire du Mali et les Malinkés (islamisations progressives dans certains groupes Fogni). Influence portugaise des 1456 (premiers Occidentaux). Resistance prolongee a la colonisation française et portugaise, a la traite negriere et au recrutement force.",
-      "majorHistoricalEvents": "Guerres recurrentes aux XVIIIe-XIXe siecles contre les Bainouk, les Mandinka et les razzias luso-africaines. Resistance de la heroine Aline Sitoe Diatta (1920-1944) contre la colonisation française. Mouvement independantiste de la Casamance (MFDC) depuis les annees 1980."
+      "unificationsOrDivisions": "Les sociétés jóola n'ont jamais formé d'État : chaque village est une unité autonome, avec des limites précises, selon Odile Journet-Diallo. Les villages se regroupent toutefois en chaînes qui partagent les mêmes rites, comme l'initiation masculine du bukut qui passe de village en village selon un ordre fixe. Ces liens n'empêchaient pas les guerres entre villages, dont les habitants gardent le souvenir depuis la fin du XVIIIe siècle.",
+      "externalInfluences": "Au XVIe siècle, la basse Casamance dépend en partie du roi mandingue du Kasa, le « Casa Mansa », et les Portugais commercent surtout avec les Mandingues et les Baïnouk, selon Pierre-Marie Bosc. En absorbant des villages baïnouk, des groupes felup ont aussi repris certains de leurs cultes, selon Robert Baum cité par Odile Journet-Diallo. L'islam s'est répandu surtout au XXe siècle, porté par le commerce et par l'administration française, qui favorisait les musulmans, selon Pierre-Marie Bosc. En 1965, J. David Sapir décrit les Diola du Fogny comme les plus influencés par leurs voisins mandingues.",
+      "majorHistoricalEvents": "Vers 1594, selon André Álvares de Almada cité par Odile Journet-Diallo, les gens de l'estuaire de la Casamance en ferment l'entrée aux navires portugais depuis plus de vingt-cinq ans, à cause d'une guerre avec le roi de Casamance. Au XIXe siècle, la France s'installe en Casamance : en 1859, le gouverneur Faidherbe approuve des opérations militaires contre les villages hostiles au commerce français, et le Portugal cède Ziguinchor à la France en 1886, selon Pierre-Marie Bosc. De 1884 à 1888, des marabouts mandingues pillent le Fogny au nom de la guerre sainte. Le 8 mai 1943, la prêtresse Aline Sitoé Diatta, qui appelait à refuser l'impôt et les réquisitions de riz, est arrêtée ; elle meurt un an plus tard en prison à Tombouctou, selon Ruth Bush."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Societe initialement egalitaire, sans castes ni stratification sociale marquee. L'organisation politique ne depasse pas l'echelle villageoise. Certaines communautes ont un chef (Oyei ou pretre-roi) dont le role releve plus du religieux que du politique seculier.",
-      "clanOrganization": "Organisation en familles etendues et quartiers de clan. Patronymes caracteristiques : Badji, Bassene, Diatta, Diedhiou, Diemé, Sagna, Sambou, Sane, Tendeng, Coly, Goudiaby, Manga.",
-      "ageClassSystems": "Les classes d'age jouent un role structurant dans la vie sociale et ritualisee. La lutte traditionnelle oppose les villages par tranches d'age (garcons de 7 a 30 ans), renforçant la cohesion intergenerationnelle.",
-      "roleOfLineages": "Lignages maternels et paternels coexistent selon les groupes. Les femmes jouent un role important dans les conseils de village, la gestion des terres rizicoles et les ceremonies religieuses. Grands inities (hommes ou femmes) peuvent devenir pretres ou pretresses.",
-      "religiousAuthority": "Autorite des anciens (detenteurs de pouvoirs occultes), pretres et pretresses des bois sacres. Chez les Joola musulmans, le marabout assume une autorite religieuse. Coexistence du culte traditionnel d'Atemit (Dieu createur) avec l'islam et le christianisme."
+      "traditionalPoliticalSystem": "Les sociétés jóola n'ont pas de chefferie qui commande à plusieurs villages, selon Odile Journet-Diallo ; le village est l'unité de base. En 1909, Édouard Wintz décrit dans chaque village un chef assisté d'un conseil des anciens, et note que le chef du culte n'est pas toujours le même homme que le chef des affaires temporelles. En 1965, J. David Sapir écrit que, chez les Fogny, les décisions importantes sont prises ensemble par les hommes âgés du village.",
+      "clanOrganization": "Le village est divisé en quartiers et en sous-quartiers aux noms et aux limites fixes, selon Odile Journet-Diallo. Les membres d'un même groupe de parenté en ligne paternelle vivent dans plusieurs maisons, mais partagent un ensemble de rizières : le même mot, eleken, désigne ce groupe et ses terres.",
+      "ageClassSystems": "L'organisation en groupes d'âge et de sexe se fait au niveau du village, selon Odile Journet-Diallo. Chez les Kujamaat, les luttes entre villages qui suivent la récolte du riz marquent le passage d'une promotion de jeunes hommes : ceux qui luttent pour la dernière fois terminent ensuite leur maison et se marient.",
+      "roleOfLineages": "Chaque groupe de parenté en ligne paternelle garde un autel des terres, transmis en ligne collatérale, qui doit faire germer les graines et assurer la fertilité des femmes, selon Odile Journet-Diallo. Les femmes tiennent de leur côté des sanctuaires collectifs, comme celui où sont enterrés les placentas des enfants. En 1909, Édouard Wintz note que, dans certaines contrées, les femmes peuvent posséder la terre comme les hommes, mais qu'en général seuls les hommes la possèdent.",
+      "religiousAuthority": "L'autorité religieuse passe par les responsables des autels, appelés ukiin (au singulier bákiin), qui veillent chacun sur un domaine : initiation, accouchement, pluie, guérison ou guerre, selon Odile Journet-Diallo. En pays jamaat, le roi de Keruey se tient au sommet des cultes ; son pouvoir politique se limitait à décider de l'entrée en guerre ou de la paix, et il ne sert plus aujourd'hui qu'à assurer la venue des pluies."
     },
     "languages": {
-      "mainLanguage": "Diola (Jola-Fogni / dyo)",
+      "mainLanguage": "Diola ou jola-fonyi (dyo)",
       "isoCodes": ["dyo", "eja", "bda", "csk"],
       "dialects": [
-        "Jola-Fogni (dyo) — dialecte principal, l'une des six langues nationales du Senegal",
-        "Jola-Felupe / Ajamat (eja) — parle en Guinee-Bissau",
-        "Jola-Bayot (bda) — autour de Ziguinchor",
-        "Jola-Kasa (csk) — autour d'Oussouye",
-        "Jola-Karon — cote sud de la Casamance",
-        "Jola-Gusilay — village de Thionck-Essyl",
-        "Jola-Banjal — sud du fleuve Casamance",
-        "Jola-Mlomp — village de Mlomp",
-        "Jola-Kuwaataay — cote sud de la Casamance"
+        "Jola-fonyi (dyo) — le parler du Fogny, au nord du fleuve Casamance",
+        "Ejamat (eja) — parler des Kujamaat, à la frontière entre le Sénégal et la Guinée-Bissau",
+        "Bayot (bda), que Glottolog appelle kugere-kuxinge — autour de Ziguinchor",
+        "Jola-kasa (csk), dont le parler esulalu — rive sud, autour d'Oussouye",
+        "Bandial — rive sud, autour d'Enampore",
+        "Karon — côte au nord de l'embouchure de la Casamance",
+        "Gusilay — village de Thionck-Essyl",
+        "Mlomp — village de Mlomp",
+        "Kuwaataay et keerak — compté chacun comme une langue par Glottolog"
       ],
-      "vehicularRole": "Le Jola-Fogni est reconnu comme l'une des six langues nationales du Senegal et sert de langue vehiculaire en Basse-Casamance. Les differents dialectes joola peuvent etre mutuellement inintelligibles. Le français est langue d'education en Casamance; le portugais et le creole guineen en Guinee-Bissau."
+      "vehicularRole": "Au Sénégal, le diola fait partie des six langues nationales codifiées avec le wolof, le pulaar, le sérère, le mandingue et le soninké, selon l'ANSD. En 2023, 2,8 % des personnes de 3 ans ou plus le déclarent comme la langue qu'elles parlent le plus au quotidien. Les parlers jóola sont nombreux, et l'intercompréhension ne suit pas toujours la proximité des villages, selon Odile Journet-Diallo. En 1909, Édouard Wintz pensait qu'avec le parler de Carabane on se faisait comprendre dans presque tout le pays dyola. Dans l'intérieur du Fogny, les Diola sont tous bilingues en mandingue, selon J. David Sapir en 1965."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q1226906",
+      "glottocode": "jola1264",
+      "iso639_3": "dyo"
     },
     "culture": {
-      "majorRites": "Le Bukut (Boukout) est la ceremonie initiatique masculine majeure, organisee tous les 20 a 25 ans. Les garcons ages de 12 a 35 ans passent plusieurs semaines en foret sacree, incluant la circoncision, des sacrifices et l'apprentissage de chants rituels. La sortie du bois sacre marque l'entree dans la vie adulte. Les femmes ont leurs propres ceremonies d'initiation separees. Les funerailles impliquent des rites precis permettant a l'ame de rejoindre les ancetres; sans ces rites, l'ame devient errante (Holowa). Fetes religieuses traditionnelles : Samay, Kumpo, Niasse. La lutte traditionnelle (sans frappe) est pratiquee comme rite de passage et evenement communautaire.",
-      "symbols": "Le riz est le symbole central de la culture joola, cultive depuis plus d'un millenaire dans des casiers hydrauliques (padis). Le vin de palme (bunuck) est utilise dans les ceremonies rituelles. Le masque Ejumba (cornes d'animaux sur structure de feuilles de palmier tressees), date aux alentours de 1750, est l'un des plus anciens masques africains connus. Les amulettes (gris-gris) et les sanctuaires villageois (boechin) sont des supports de communication avec les esprits.",
-      "artsAndMusic": "Instruments : Ekonting (luth a 3 cordes sur calebasse, ancetre probable du banjo), Bombolong (tambour a fente), Bougarabou (tambour), Galire (monocorde de Thionck-Essyl), Ediando (utilise par les femmes dans les danses d'initiation), Emombi (instrument sacre des ceremonies d'initiation, rare). Danses : Bugaar (danse mixte avec tambours et claquettes), Kumpo, danses de lutte. Chants : Siling (chants collectifs masculins pendant la recolte du riz, alternant deux choeurs), chants feminins d'initiation. Artisanat : tissage de paniers, poterie, masques rituels.",
-      "spiritualities": "Religion traditionnelle monothéiste centree sur Atemit (Emit, Ata Emit : Maitre de l'Univers, associe au ciel et a la pluie). Les ancetres et les esprits de la nature (Boechin/Eneerti) servent d'intermediaires entre les humains et le Createur. Sanctuaires sacres dans les forets et les champs. Syncretisme avec l'islam (majoritaire) et le christianisme. Environ 91% des Joola se declarent musulmans au total, avec maintien de pratiques animistes (vin de palme rituel, sanctuaires)."
+      "majorRites": "L'initiation masculine, appelée bukut sur la rive sud et futamp au Fogny, réunit les garçons d'un village dans un bois sacré, avec la circoncision. Elle a lieu tous les vingt ou trente ans selon Odile Journet-Diallo, tous les quinze à vingt ans au Fogny selon J. David Sapir, qui y voit entrer des garçons de 4 à 18 ans. La liste des promotions d'initiés permet de dater des récits villageois jusqu'aux années 1700. En 1909, Édouard Wintz note que les Dyola enterrent leurs morts avec un grand respect et ne prononcent plus jamais le nom d'un défunt.",
+      "symbols": "Le riz est au centre de la vie jóola : les mangroves sont endiguées et dessalées pour devenir des rizières, au prix d'un travail de plusieurs générations, selon Odile Journet-Diallo. Les rizières inondées, appelées butanda, ne peuvent porter aucune autre culture. Les bœufs, les chèvres et les porcs servent de richesse et sont sacrifiés lors des funérailles et des initiations, selon J. David Sapir. Édouard Wintz appelait en 1909 le vin de palme « boisson nationale ».",
+      "artsAndMusic": "Chez les Fogny, chants et tambours accompagnent les luttes, les funérailles, les travaux des champs et les fêtes, selon J. David Sapir, qui a enregistré ces musiques en 1960 et 1961. Le chanteur improvise ses couplets et le chœur reprend le refrain. Dans la danse bugur, un seul homme joue de trois tambours à mains nues ; pour l'initiation, l'orchestre réunit un tambour à fente, deux tambours et une cloche en fer. Les femmes tressent des paniers et font des poteries, et les hommes construisent de grandes maisons en terre.",
+      "spiritualities": "Les Diola reconnaissent un Dieu lointain, Emit, dont le nom désigne aussi le ciel et la pluie, selon J. David Sapir ; Édouard Wintz parlait en 1909 d'un « être suprême et caché ». Les ukiin, des puissances attachées à des lieux, servent d'intermédiaires entre les humains et le Créateur, selon Odile Journet-Diallo : on leur offre des sacrifices et du vin de palme. Au milieu du XXe siècle, l'islam et le christianisme ont gagné du terrain ; Sapir estime que les Fogny sont musulmans à plus de 85 %. Au Sénégal, l'enquête de 2023 compte 96,8 % de musulmanes parmi l'ensemble des femmes interrogées, sans donner ce chiffre pour les Diola seuls."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Les Joola n'ont pas developpe d'Etat centralise comparable aux royaumes voisins mandé ou wolof. Les principales formes d'organisation politique sont le royaume d'Analufay (regroupant les terres Selhek, Huluf et Eyun), le pays du roi Ayi (Mofayi), et la chefferie d'Oussouye. Ces structures sont a dominante sacerdotale.",
-      "relationsWithNeighbors": "Relations complexes avec les Mandinka (Malinkés): conflits pour le territoire et l'imposition de l'islam, mais aussi echanges culturels (adoption de certains rites comme le Kankuran dans les groupes Fogni et Bluff). Relations joking avec les Sereres basees sur une ancetre commune. Coexistence avec Balantes, Manjaques et Mancagnes dans la zone frontaliere. Influence des comptoirs portugais des 1456.",
-      "conflictsOrAlliances": "Guerres frequentes aux XVIIIe-XIXe siecles pour le territoire, contre les Bainouk, les Mandinka, les razzias luso-africaines et entre sous-groupes joola. Resistance prolongee a la traite negriere: les chefs joola refusaient la vente de leurs membres. Resistance a la colonisation française (refus des impots, du recrutement force pour les guerres mondiales). La figure d'Aline Sitoe Diatta (1920-1944) symbolise cette resistance.",
-      "diaspora": "Diaspora joola dans les grandes villes senegalaises (Dakar, Ziguinchor), en Gambie (region de Kombo), en Guinee-Bissau (region de Cacheu). Presence en Europe (France, Portugal, Royaume-Uni) et aux Etats-Unis. Personnalites diasporiques notables dans le sport (Ansu Fati, Bacary Sagna, Joshua King, John Carew), la politique (Yahya Jammeh, Robert Sagna) et la musique."
+      "kingdomsOrChiefdoms": "Les Diola n'ont pas fondé de royaume comparable au Kasa voisin, dont le roi, le « Casa Mansa », régnait au XVIe siècle sur une partie de la basse Casamance, selon Pierre-Marie Bosc. Leurs « rois » sont des responsables de culte : le roi de Keruey, en pays jamaat, et le roi de la pluie d'Enampore, dont le territoire s'appelle mof evvi, selon Odile Journet-Diallo.",
+      "relationsWithNeighbors": "Les Diola et les Baïnouk ont longtemps vécu côte à côte, entre échanges et conflits pour le bétail et les terres ; peu à peu, des villages baïnouk ont été absorbés par des villages diola, avec leurs cultes et leurs habitants, selon Pierre-Marie Bosc et Odile Journet-Diallo. Avec les Mandingues, les relations mêlent commerce, guerres et conversions à l'islam. Édouard Wintz rapporte en 1909 une tradition d'origine commune avec les Sérères.",
+      "conflictsOrAlliances": "Aux XVIe et XVIIe siècles, les Felupos sont réputés pour leurs guerriers, ce qui les protégeait des razzias des chasseurs d'esclaves, selon Pierre-Marie Bosc. À la fin du XVIIIe et au XIXe siècle, certains groupes diola ont pourtant vendu aux Mandingues des prisonniers pris dans des guerres entre villages. Face à la conquête française, les villages ont résisté chacun de leur côté, par les armes ou par le refus de l'impôt ; leurs rivalités ont empêché une alliance durable. En 1943, Aline Sitoé Diatta appelle encore à refuser l'impôt et les réquisitions de riz, selon Ruth Bush.",
+      "diaspora": "En Gambie, 97 % des Jola et Karoninka recensés en 2003 vivaient dans les zones de Brikama et de Kanifing. Dès le début des années 1960, J. David Sapir rencontre à Dakar des jeunes du Fogny venus chercher du travail. Les sources que nous avons consultées (recensements du Sénégal et de la Gambie, Odile Journet-Diallo, Pierre-Marie Bosc) ne chiffrent pas la présence diola hors d'Afrique de l'Ouest."
     },
     "demography": {
-      "totalPopulation": 700000,
-      "referenceYear": 2025,
-      "source": "Estimations aggregees : Joshua Project (Jola-Fonyi : 535 000 toutes regions; sous-groupes Karon, Bayot, Gusilay, Banjal, Bliss supplementaires); Minority Rights Group (environ 4% de la population senegalaise); Ethnologue (dyo, eja, bda). Chiffre global estime a 700 000 personnes en comptant tous les sous-groupes. Une autre estimation donne 900 000 personnes (Wikipedia, Jola people) : environ 600 000 au Senegal, selon le Senegal Cultural Field Guide, 270 000 en Gambie et 30 000 en Guinee-Bissau. Les sources lues ne permettent pas de choisir entre les deux chiffres.",
+      "totalPopulation": null,
+      "referenceYear": 2023,
+      "source": "Aucun recensement que nous avons lu ne compte les Diola des trois pays. Au Sénégal, le recensement de 2023 (ANSD, RGPH-5) ne publie pas de tableau par groupe ethnique dans son rapport sur la population : il compte 468 090 personnes de 3 ans ou plus dont le joola est la langue la plus parlée au quotidien, soit 2,8 %. Ce chiffre compte une langue, pas une appartenance. L'enquête démographique et de santé de 2023 (ANSD et ICF) range dans le groupe diola 3,9 % des femmes et 4,3 % des hommes de 15 à 49 ans interrogés. En Gambie, le recensement de 2003 compte 11 % de Jola et Karoninka parmi les Gambiens. Pour la Guinée-Bissau, nous n'avons pas lu de chiffre de recensement. L'ancien total de 700 000 personnes additionnait des estimations de Joshua Project et d'Ethnologue que nous n'avons pas vérifiées.",
       "distributionByCountry": [
         {
           "country": "SEN",
-          "population": 550000
+          "population": 468090,
+          "percentage": 2.8,
+          "note": "Personnes de 3 ans ou plus dont le joola est la principale langue parlée, recensement de 2023 ; surtout en basse Casamance, région de Ziguinchor et département de Bignona, et à Dakar."
         },
         {
           "country": "GMB",
-          "population": 100000
+          "population": null,
+          "percentage": 11,
+          "note": "Part des Gambiens se déclarant Jola ou Karoninka au recensement de 2003 ; surtout dans les zones de Brikama et de Kanifing, et dans les districts de Foni."
         },
         {
           "country": "GNB",
-          "population": 50000
+          "population": null,
+          "note": "Région de Cacheu, au nord du pays, entre la frontière sénégalaise et le rio Cacheu ; nous n'avons pas lu de chiffre de recensement."
         }
       ]
     },
@@ -408,7 +591,8 @@
         "title": "Glottolog — Jola",
         "url": "https://glottolog.org/resource/languoid/id/jola1264",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Lu le 3 novembre 2026. Glottolog range la famille jola dans le groupe bak des langues atlantiques et y compte dix langues : bandial, kugere-kuxinge (bayot), ejamat, gusilay, jola-esulalu, jola-fonyi, karon, keerak, kuwaataay et mlomp."
       },
       {
         "title": "Baum, Robert M. — Shrines of the Slave Trade: Diola Religion and Society in Precolonial Senegambia. Oxford University Press, 1999",
@@ -421,7 +605,88 @@
         "url": null,
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "À propos des modes de construction du territoire en pays jóola : sources écrites, traditions villageoises et matériaux ethnographiques, Afriques, 02",
+        "url": "https://journals.openedition.org/afriques/845",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Revue Afriques, numéro « Histoires de territoires », mise en ligne sur OpenEdition le 2 février 2011. Lu en texte intégral le 3 novembre 2026. L'autrice, anthropologue, a mené ses enquêtes pendant une vingtaine d'années dans des villages kujamaat de la frontière entre le Sénégal et la Guinée-Bissau. Les paragraphes sont numérotés dans l'édition en ligne. Elle appuie ici les noms Ajamat, Jóola et Floup, les hypothèses sur l'origine du peuplement, l'organisation des villages, les autels et l'initiation."
+      },
+      {
+        "title": "À la croisée des pouvoirs : une organisation paysanne face à la gestion des ressources (Basse Casamance, Sénégal), chapitre « Expansion territoriale, conflits internes et contacts avec le monde extérieur »",
+        "url": "https://books.openedition.org/irdeditions/10055",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Marseille, IRD Éditions, 2005, p. 25-39. Lu en texte intégral sur OpenEdition Books le 3 novembre 2026. L'auteur résume les travaux des historiens Peter Mark, Olga Linares, Joye Lauer et Christian Roche, et cite des voyageurs du XIXe siècle. Les paragraphes sont numérotés dans l'édition en ligne. Il appuie ici l'expansion diola aux dépens des Baïnouk, le commerce avec les Portugais et les Français, la conquête coloniale et la diffusion de l'islam."
+      },
+      {
+        "title": "Dictionnaire français-dyola et dyola-français, précédé d'un essai de grammaire",
+        "url": "https://archive.org/details/dictionnairefran00wint",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Paris, Maisonneuve frères, 1909. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur était un missionnaire catholique de la congrégation du Saint-Esprit en Casamance, et son regard est celui d'un missionnaire de l'époque coloniale. Le dictionnaire décrit le parler de Carabane. La préface (p. V à IX) décrit les dialectes, une tradition d'origine commune avec les Sérères, le Dieu Emit, les chefs de village et la vie agricole."
+      },
+      {
+        "title": "Commerce et traite des noirs aux côtes occidentales d'Afrique",
+        "url": "https://archive.org/details/commerceettraite00bout",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Paris, Imprimerie nationale, 1848. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur, capitaine de vaisseau de la marine française, avait été gouverneur du Sénégal en 1843 et 1844 ; il écrit pour servir le commerce français sur la côte. Il dit que les caboteurs de Gorée viennent acheter du riz aux « Dyolas » de la côte située entre la Gambie et la Casamance, et que « le bas de la rivière est habité par les Dyolas »."
+      },
+      {
+        "title": "The Music of the Diola-Fogny of the Casamance, Senegal, notes du disque Folkways FE 4323",
+        "url": "https://folkways-media.si.edu/docs/folkways/artwork/FW04323.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "New York, Folkways Records, 1965 ; notes de J. David Sapir diffusées par Smithsonian Folkways. Lu le 3 novembre 2026. Le linguiste a enregistré ces musiques chez les Diola du Fogny entre octobre 1960 et décembre 1961. Il dit tirer ses chiffres et une grande partie de ses informations ethnographiques de l'étude de Louis-Vincent Thomas, Les Diola (1958-1959). Il décrit l'organisation des villages, le Dieu Emit, les ukiin, l'initiation futamp et la musique."
+      },
+      {
+        "title": "RGPH-5 2023, rapport définitif, thème I : État et structure, urbanisation et caractéristiques socioculturelles de la population",
+        "url": "https://www.vie-publique.sn/documents/10517/etat-structure-urbanisation-caracteristiques-socioculturelles-population-rgph-5-2023-ansd",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Agence nationale de la statistique et de la démographie (ANSD), Dakar, juillet 2025. Lu le 3 novembre 2026 dans le PDF diffusé par le portail vie-publique.sn. Le tableau I-32 (p. 57) compte 468 090 personnes de 3 ans ou plus, soit 2,8 %, dont le joola est la principale langue parlée au quotidien en 2023. Le rapport compte les langues parlées, pas les appartenances ethniques."
+      },
+      {
+        "title": "Recensement général de la population et de l'habitat, de l'agriculture et de l'élevage (RGPHAE 2013), rapport définitif",
+        "url": "https://www.vie-publique.sn/documents/9924/recensement-general-population-habitat-agriculture-elevage-rgphae-2013-ansd",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Agence nationale de la statistique et de la démographie (ANSD), Dakar, septembre 2014. Lu le 3 novembre 2026 dans le PDF diffusé par le portail vie-publique.sn. Le chapitre sur l'alphabétisation cite le diola parmi les six langues nationales homologuées et codifiées à côté du français. Le rapport ne publie pas de répartition de la population par groupe ethnique."
+      },
+      {
+        "title": "Sénégal : Enquête démographique et de santé continue (EDS-Continue) 2023, tableaux",
+        "url": "https://dhsprogram.com/pubs/pdf/FR390/FR390.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Agence nationale de la statistique et de la démographie (ANSD), Dakar, et ICF, Rockville, pour le programme DHS, juillet 2024. Lu le 3 novembre 2026. Le tableau 3.1 (p. 29) range 3,9 % des femmes et 4,3 % des hommes de 15 à 49 ans interrogés dans le groupe ethnique diola, et donne 96,8 % de musulmanes parmi l'ensemble des femmes interrogées. Il s'agit d'une enquête par sondage, pas d'un recensement."
+      },
+      {
+        "title": "The Gambia Population and Housing Census 2003, chapter 6 : Nationality, Ethnicity and Religion",
+        "url": "https://www.columbia.edu/~msj42/pdfs/Chapter6_Nationality_ethnicity.pdf",
+        "tier": "referenced",
+        "source_kind": "official_statistics",
+        "notes": "Chapitre d'un atlas tiré du recensement gambien de 2003, déposé au format PDF sur une page personnelle du site de l'université Columbia ; l'éditeur n'est pas indiqué dans les pages lues. Lu le 3 novembre 2026. Il indique que 11 % des Gambiens se déclarent Jola ou Karoninka, sans distinguer les deux groupes ; 97 % d'entre eux vivent dans les zones de Brikama et de Kanifing, et ils forment 49 % de la population du district de Foni Bintang Karanai et 65 % de celle de Foni Kansala."
+      },
+      {
+        "title": "Aline Sitoé Diatta: women's anti-colonial resistance in Senegal",
+        "url": "https://bristol.ac.uk/history/public-engagement/blackhistory/snapshots/alinesitoediatta",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Texte de Ruth Bush publié par le département d'histoire de l'université de Bristol, sans date. Lu le 3 novembre 2026. Il indique qu'Aline Sitoé Diatta, née vers 1920 en Casamance, appela la population à refuser de coopérer avec les Français et à ne plus payer l'impôt quand ceux-ci saisirent la moitié de la récolte de riz pour l'effort de guerre ; arrêtée le 8 mai 1943, elle mourut un an plus tard en prison à Tombouctou."
+      },
+      {
+        "title": "ISO 639-3, Jola-Fonyi [dyo]",
+        "url": "https://iso639-3.sil.org/code/dyo",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du code tenue par SIL International, autorité d'enregistrement ISO 639-3, lue le 3 novembre 2026. Les codes eja (Ejamat), bda (Bayot) et csk (Jola-Kasa) ont chacun leur fiche, lue le même jour."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Les Diola, ou Joola, sont un peuple de riziculteurs de basse Casamance, au sud du Sénégal, de Gambie et du nord de la Guinée-Bissau. Une partie d'entre eux se nomme Ajamat.",
+      "followUp": "Pourquoi les Portugais appelaient-ils ce peuple Felupos ?"
+    }
   }
 }

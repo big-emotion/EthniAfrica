@@ -3,7 +3,7 @@
   "nameMain": "Dan",
   "languageFamilyId": "FLG_MANDE",
   "currentCountries": ["CIV", "LBR", "GIN"],
-  "classificationStatus": "contested",
+  "classificationStatus": "colonial-legacy",
   "content": {
     "appellations": {
       "mainName": "Dan",
@@ -11,90 +11,98 @@
       "exonyms": [
         "Yacouba",
         "Yakuba",
-        "Gio (terme utilise au Liberia, derive du bassa signifiant esclave, considere comme pejoratif)",
-        "Yakubasa",
-        "Da",
+        "Yakouba",
+        "Djakuba",
+        "Gio",
         "Gyo",
-        "Yakouba"
+        "Guio",
+        "Dioula anthropophages",
+        "Mêbé"
       ],
-      "spellingAliases": ["Yacuba", "Yakuba", "Yakouba"],
-      "originOfExonyms": "Yacouba est une adaptation française du mot mandingue Jakuba. Au Liberia, les Bassa appellent les Dan Gio. Ce nom signifierait esclave, ce qui explique que les personnes concernées le jugent dévalorisant. Elles préfèrent Dan, un nom qui voudrait dire « les gens » dans leur langue.",
-      "whyProblematic": "Les Dan jugent Gio méprisant en raison de son lien supposé avec le mot bassa pour esclave. Il reste employé dans les documents officiels libériens et certaines publications de recherche en anglais, malgré leur préférence pour leur propre nom, Dan.",
-      "contemporaryUsage": "Dan est l'appellation academique internationale standard et celle preferee par le peuple. Yacouba reste tres utilise en Cote d'Ivoire dans la vie quotidienne et dans les medias. Gio est encore courant au Liberia dans les documents officiels et la presse.",
+      "spellingAliases": ["Danwopemin", "Dân", "Yacuba"],
+      "originOfExonyms": "Le nom Yacouba a deux explications. Une étude de la région de Man faite pour le ministère du Plan de Côte d'Ivoire, d'après une enquête de 1962, écrit qu'il voudrait dire « il dit que ». L'Agence ivoirienne de presse le présente en 2013 comme une déformation sans lien avec le nom du peuple. Le nom Gio est noté dès 1854 par le missionnaire Sigismund Koelle ; une page de vulgarisation le fait venir du mot bassa pour « esclave », sans source que nous ayons pu lire. Le nom « Dioula anthropophages » vient des cartes coloniales françaises, selon l'administrateur Maurice Delafosse en 1904.",
+      "whyProblematic": "« Dioula anthropophages » est un nom colonial : il colle au peuple une accusation de cannibalisme et le nom d'un autre peuple, les marchands dioula. Il disparaît des textes dans les années 1920. Au Liberia, le nom Gio est jugé méprisant par ceux qui y voient le mot bassa pour « esclave ». En Côte d'Ivoire, les locuteurs du kla-dan refusent le nom Yacouba, tout en se disant Dan.",
+      "contemporaryUsage": "Dan est le nom que se donne ce peuple et celui qu'emploient les linguistes. En Côte d'Ivoire, Yacouba reste courant : Valentin Vydrin appelle « dan (yacouba) » la langue écrite fondée sur le parler de Gouèta. Au Liberia, les Dan sont connus sous le nom de Gio, que Human Rights Watch employait encore en 1990.",
       "linguisticFamily": "FLG_MANDE",
       "ethnoLinguisticGroup": "Mande du Sud (branche du Mande meridional)",
       "historicalRegion": "Region des Montagnes, ouest de la Cote d'Ivoire (villes de Man, Danane, Biankouma, Zouan-Hounien, Sipilou) ; comte de Nimba, nord-est du Liberia",
-      "currentCountries": ["CIV", "LBR", "GIN"]
+      "currentCountries": ["CIV", "LBR", "GIN"],
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Dan",
-      "Kla-Dan (groupe dialectal distinct, Cote d'Ivoire)",
-      "Gio (Dan du Liberia, comté de Nimba)"
+      "Dan de l'Est (Côte d'Ivoire : départements de Man, Biankouma et Sipilou ; parler de Gouèta)",
+      "Dan de l'Ouest (Côte d'Ivoire autour de Danané et de l'ancien canton de Blo ; Gio du Liberia)",
+      "Kla-Dan (enclave près de Touba, avec quatre ou cinq villages en Guinée)"
     ],
     "origins": {
-      "ancientOrigins": "Peuple mande du Sud etabli depuis des siecles dans les zones montagneuses et forestieres a la frontiere de la Cote d'Ivoire et du Liberia. Les traditions orales evoquent des origines dans la region du Mande (actuel Mali/Guinee) et des migrations anciennes vers le sud.",
-      "formationPeriod": "Presence attestee dans la region de Man (Cote d'Ivoire) depuis au moins plusieurs siecles avant la colonisation. Les premieres descriptions ethnographiques datent du debut du XXe siecle (M. Vendeix, 1924 ; H. Himmelheber, annees 1930-1940).",
+      "ancientOrigins": "Les traditions de clan recueillies dans la région de Man au début des années 1960 disent que l'ancêtre est descendu du ciel sur une montagne par une chaîne, ou sorti d'une caverne, avant que sa famille essaime en petits villages. L'étude qui les rapporte note aussi que certains groupes dan se disent proches des Manon et d'autres des Kpellé.",
+      "formationPeriod": "Les sources consultées ne datent pas la formation du peuple dan. La plus ancienne trace écrite d'un de ses noms est le relevé de la langue « Gío » par Sigismund Koelle, publié en 1854.",
       "migrationRoutes": [
-        "Migration probable depuis la region du Mande (Guinee/Mali) vers le sud, avant le XVe siecle",
-        "Installation dans la zone forestiere montagnarde de l'ouest ivoirien (region de Man)",
-        "Extension vers le nord-est du Liberia (comte de Nimba, district de Tappita)"
+        "Depuis les deux rives du Bafing et la région de Touba, selon l'administrateur Marius Vendeix (1924), cité par l'étude de la région de Man de 1962",
+        "Depuis la région de Beyla, en Guinée, selon d'autres auteurs cités par la même étude"
       ],
       "historicalSettlementZones": [
-        "Region de Man et Tonkpi (Cote d'Ivoire) : principales villes Dan (Man, Danane, Biankouma, Zouan-Hounien, Sipilou)",
-        "Comte de Nimba, nord-est du Liberia (communaute Dan/Gio)",
-        "Quelques centaines de locuteurs en Guinee forestiere",
-        "Grand Gedeh County, Liberia"
+        "Ouest de la Côte d'Ivoire : anciennes subdivisions de Danané (Danané, Zouan-Hounien) et ouest de Man (cantons Gan, Sipilou, Santa), selon l'étude de 1962",
+        "Départements de Man, Biankouma et Sipilou, dans la région du Tonkpi, pour le dan de l'Est (Vydrin, 2021)",
+        "Liberia, de l'autre côté du mont Nimba, où vivent les Dan appelés Gio",
+        "Enclave kla près de Touba, avec quatre ou cinq villages côté guinéen (Vydrin, 2021)",
+        "Savane au nord du pays dan, où vivaient environ 40 000 Dan selon Hugo Zemp en 1964"
       ],
-      "unificationsOrDivisions": "Les Dan ne constituent pas une unite politique centralisee. Ils sont organises en villages independants lies par une culture commune centree sur la societe des masques. Le groupe Kla-Dan est suffisamment distinct pour etre parfois classe comme langue separee (Glottolog) ; ses locuteurs refusent l'identite commune avec les Yacouba.",
-      "externalInfluences": "Contact avec les peuples voisins Krahn, Kpelle, Mano et Guere. Influence de l'islam par les reseaux commerciaux mandingues, mais majorite de la population pratiquant les religions traditionnelles. Colonisation francaise et insertion dans l'economie de plantation ivoirienne. Influence de l'Eglise chretienne (missions protestantes et catholiques) depuis le XXe siecle.",
-      "majorHistoricalEvents": "Presence dans la region de Man documentee depuis au moins le XIXe siecle ; annexion a la colonie francaise de Cote d'Ivoire (fin XIXe siecle) ; cercle de Man sous administration coloniale (rapports de M. Vendeix, 1924) ; deplacements lies aux crises politiques ivoiriennes (2002-2011, guerre civile)."
+      "unificationsOrDivisions": "Les Dan n'ont pas formé d'État. Selon l'étude de la région de Man de 1962, le clan était l'unité politique ; des confédérations nées d'alliances et de mariages existaient au nord de Danané, dans le canton Gourousse, sans pouvoir au-dessus du clan. L'administration coloniale a fait de ces unions des cantons. Le kla-dan a reçu en 2013 son propre code de langue, séparé du dan.",
+      "externalInfluences": "Selon l'étude de 1962, l'expansion malinké a apporté l'islam dans les milieux commerçants, et le christianisme a été bien accueilli en pays dan. Des guerriers diomandé avaient pris le commandement de certains villages, par exemple dans les cantons Sipilou et Gan. Des griots malinké vivaient aussi chez les Dan, que Hugo Zemp a étudiés aux côtés des musiciens dan.",
+      "majorHistoricalEvents": "Le 26 décembre 1897, une mission militaire française est cernée au village de Man et combattue pendant trois jours, selon la Société de géographie. En 1911, les villages étaient encore entourés de clôtures d'épines de trois à quatre mètres, selon l'étude de 1962. Au Liberia, après l'attaque de rebelles à Butuo, dans le comté de Nimba, fin décembre 1989, l'armée a tué des civils soupçonnés d'être gio ou mano, et quelque 160 000 personnes ont fui vers la Guinée et la Côte d'Ivoire en quatre mois, selon Human Rights Watch."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Societe organisee autour de la societe des masques (ge). Les masques ne sont pas de simples objets rituels mais des entites spirituelles et des institutions politiques. Chaque masque a un statut, une fonction et un territoire d'action precis. Les chefs de village et les anciens exercent l'autorite civile, mais les masques ont une autorite spirituelle et judiciaire.",
-      "clanOrganization": "Organisation en villages autonomes. Pas de systeme clanique rigide sur le modele sahelienn. L'appartenance villageoise prime sur l'appartenance lignagere dans l'organisation sociale courante.",
-      "ageClassSystems": null,
-      "roleOfLineages": "Les lignages patrilineaires controlent la transmission des masques et des savoirs rituels. Le role des aines dans la transmission culturelle est central.",
-      "religiousAuthority": "Les masques ge incarnent des puissances spirituelles (esprits de la foret et des ancetres) et jouent le role de magistrats, guerisseurs et mediateurs sociaux. Des specialistes rituels (ge-da, maitres des masques) detiennent l'autorite sur ces entites."
+      "traditionalPoliticalSystem": "Selon l'étude de la région de Man de 1962, chaque clan était gouverné par un administrateur-juge, le go, entouré de conseillers, de guerriers (klu) et d'un prêtre devin. Le go dit le droit et laisse souvent les parties prononcer elles-mêmes leur condamnation au terme d'une longue palabre. En cas de faute grave, le conseil fait sortir un masque qui admoneste et ordonne.",
+      "clanOrganization": "Les Dan se répartissent en de nombreux clans ou groupes, chacun marqué par des interdits, le plus souvent alimentaires, selon l'étude de 1962. Chaque groupe a un ou plusieurs masques ; un groupe sans masque respecte une puissance invisible appelée kui. L'étude rapporte aussi que Hans et Ulrike Himmelheber comptaient une quinzaine de clans dan au Liberia, le long de la frontière.",
+      "ageClassSystems": "L'étude de la région de Man de 1962 relève des classes d'âge marquées par l'initiation (circoncision et excision), par la langue et par l'héritage, mais moins contraignantes que dans le nord de la Côte d'Ivoire. Elle cite le ban : à la demande d'un cultivateur, le chef du ban convoque au tambour les jeunes gens et jeunes filles, qui travaillent une journée dans son champ contre le repas.",
+      "roleOfLineages": "Le chef de village était le chef du lignage le plus important, entouré des chefs des autres lignages, selon l'étude de 1962. Un lignage pouvait se fragmenter : à Gbangbegouine, près de Man, le lignage Zele, qui a le chien pour interdit, réunit une famille qui se dit autochtone et une fraction de guerriers venus du Santa.",
+      "religiousAuthority": "Le prêtre devin fait partie de la famille fondatrice, et le conseil du village consulte les devins avant de se réunir, selon l'étude de 1962. Le masque intervient dans la justice : le conseil le fait sortir pour effrayer et admonester."
     },
     "languages": {
-      "mainLanguage": "Dan (langue mande du Sud)",
-      "isoCodes": ["dnj", "daf"],
+      "mainLanguage": "Dan (dnj)",
+      "isoCodes": ["dnj", "lda"],
       "dialects": [
-        "Dan oriental ou Gweetaawu (Cote d'Ivoire, est de la region de Man)",
-        "Dan occidental ou Blowo (Cote d'Ivoire, ouest de la region de Man)",
-        "Gio ou Dan liberien (comte de Nimba, Liberia)",
-        "Kla-Dan (Cote d'Ivoire, parfois classe comme langue distincte ; code ISO lda)"
+        "Dan de l'Est, dont le parler de Gouèta (gweetaawu), base d'une norme écrite",
+        "Dan de l'Ouest, dont le blowo de l'ancien canton de Blo, base d'une autre norme écrite, et les parlers gio du Liberia",
+        "Kla-Dan (lda), séparé du dan par la norme ISO 639-3 en 2013"
       ],
-      "vehicularRole": "Le dan n'est pas une langue vehiculaire hors de la communaute. Le francais est la langue officielle en Cote d'Ivoire ; l'anglais au Liberia. Le dioula est utilise comme vehiculaire commercial dans la region de Man. Environ 2 millions de locuteurs dan au total."
+      "vehicularRole": "Le dan appartient au groupe mandé du Sud ; ses plus proches parents sont le goo, le mano et le toura, selon Valentin Vydrin. Deux normes écrites existent, l'une fondée sur le parler de Gouèta pour le nord-est, l'autre sur celui de l'ancien canton de Blo pour le sud-ouest. Les sources consultées ne décrivent pas d'usage du dan comme langue d'échange en dehors des Dan."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q1804699",
+      "glottocode": "dann1241",
+      "iso639_3": "dnj"
     },
     "culture": {
-      "majorRites": "La societe des masques (ge) est l'institution culturelle centrale : les masques accompagnent tous les moments importants de la vie sociale (initiation, justice, guerison, funérailles, guerre). Rites d'initiation masculine (non publiquement documentes). Performances de masques lors de festivites et de reglement de conflits. Les masques feminins (ge ga) interviennent pour apaiser les conflits entre femmes.",
-      "symbols": "Les masques sculpts en bois et en metal sont le symbole culturel le plus reconnu des Dan. Les cuillers a visage feminin (wunkirmian) sont des objets de prestige lies aux femmes les plus hospitalieres. Les poulies de metier a tisser Dan sont reputees pour leur qualite artistique.",
-      "artsAndMusic": "Sculpture sur bois de renommee internationale : masques (dont les masques course, masques de juge, masques chanteurs, masques echassiers), cuillers ceremoniales et poulies de metier a tisser. Musique de masque documentee par Hugo Zemp (Musique dan : la musique dans la pensee et la vie sociale d'une societe africaine, 1971). Litterature orale riche. Films ethnographiques de Hans Himmelheber (Maskentreiben, Singmaske gegon in Maple).",
-      "spiritualities": "Croyance en esprits de la foret (ge) qui peuvent s'incarner dans les masques. Les masques sont des mediateurs entre le monde des vivants et celui des esprits. Religion traditionnelle animiste majoritaire. Presence chretienne (protestants, catholiques) et islamique dans les villes. La spiritualite dan est profondement liee a la foret et aux forces naturelles."
+      "majorRites": "Selon l'étude de la région de Man de 1962, des cérémonies entourent la circoncision des garçons et l'excision des filles et marquent l'entrée dans une classe d'âge. Les masques sortent pour rendre la justice et lors des fêtes ; Hugo Zemp cite les danseurs qui jonglent avec des fillettes et les masques sur échasses de la région de Man et de Danané.",
+      "symbols": "Chaque clan ou groupe dan a un ou plusieurs masques qui le représentent, selon l'étude de 1962. Maurice Delafosse décrivait en 1922 la case dan, au toit conique surélevé pour loger un grenier et à la porte si basse qu'on y entre presque à genoux.",
+      "artsAndMusic": "La musique dan a été étudiée par l'ethnomusicologue Hugo Zemp, qui s'est intéressé à la formation des musiciens, à leur place dans la société et à leurs légendes. Selon le compte rendu de son livre Musique dan (1971), les Dan connaissent une trentaine d'instruments, et le chant doit respecter les tons de la langue pour rester compréhensible. Daniel B. Reed a consacré en 2003 un livre aux masques et à la musique dan d'aujourd'hui en Côte d'Ivoire.",
+      "spiritualities": "Les clans font remonter leur ancêtre au ciel ou à une caverne, et respectent des interdits, selon l'étude de 1962. Un groupe sans masque respecte une puissance invisible, le kui. La même étude note que l'islam est venu par les commerçants malinké et que le christianisme a été bien accueilli en pays dan."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de chefferie ou de royaume centralise. Organisation politique decentralisee par village. La societe des masques joue un role unificateur en assurant la regulation sociale et la cohesion intercommunautaire.",
-      "relationsWithNeighbors": "Relations avec les Kpelle, Krahn, Mano, Guere et Toura. Les Dan ont entretenu des echanges commerciaux avec les reseaux mandingues (ivoire, kola). Tensions historiques avec certains groupes voisins reglees par les masques mediateurs.",
-      "conflictsOrAlliances": "Participation aux conflits regionaux lors des guerres civiles liberienne (1989-2003) et ivoirienne (2002-2011). Au Liberia, les Dan/Gio furent associes au clan de Charles Taylor lors du premier conflit civil. En Cote d'Ivoire, la region de Man et la communaute dan furent touchees par les operations militaires de 2002-2007.",
-      "diaspora": "Communautes dan a Abidjan et dans les principales villes ivoiriennes. Refugies dan au Liberia (suite a la crise de 2002) et en Guinee. Population dan estimee a 297 000 au Liberia (Joshua Project 2025)."
+      "kingdomsOrChiefdoms": "Les Dan n'ont pas eu de royaume. Le pouvoir revenait au go de chaque clan ; des confédérations de clans existaient au nord de Danané, et l'administration coloniale en a fait des cantons, selon l'étude de 1962.",
+      "relationsWithNeighbors": "En 1854, Sigismund Koelle situe le pays gio à l'est et au sud des Mano. L'étude de la région de Man de 1962 note que Dan et Guéré, Dan et Toura « se craignent encore » : une trompe de corne prise lors d'un combat vers 1900 a encore donné lieu à un litige en 1961. Selon la même étude, les Dan entretiennent de bonnes relations avec les Malinké, et les Diomandé servaient d'arbitres entre Dan et Toura.",
+      "conflictsOrAlliances": "Les Dan ont combattu pendant trois jours une mission militaire française à Man en décembre 1897. Au Liberia, au début de la guerre civile, l'armée a pris pour cible les Gio et les Mano du comté de Nimba : selon Human Rights Watch, des civils ont été tués sur le seul soupçon d'être gio ou mano.",
+      "diaspora": "En 1990, des Gio et des Mano du Liberia ont fui en grand nombre vers la Guinée et la Côte d'Ivoire, selon Human Rights Watch. Les sources consultées ne décrivent pas les communautés dan installées dans les villes ivoiriennes ou à l'étranger."
     },
     "demography": {
-      "totalPopulation": 2230000,
-      "referenceYear": 2025,
-      "source": "Joshua Project 2025 (Dan en Cote d'Ivoire : 1 932 000 ; Liberia : 297 000 ; Guinee estimee) ; Wikipedia FR (3 millions en 2021) Une autre estimation compte 700 000 Dan au Liberia et en Côte d'Ivoire en 2025 ; le recensement libérien de 2008 comptait 276 293 Gio (Minority Rights Group).",
+      "totalPopulation": 1603000,
+      "referenceYear": 2021,
+      "source": "Estimation partielle. Côte d'Ivoire : environ 1 300 000 Dan selon Valentin Vydrin (2021), qui ne donne pas la source de son chiffre. Liberia : 303 000 selon Joshua Project, une base de données missionnaire aux chiffres non datés, consultée le 3 novembre 2026 (elle compte 1 978 000 Dan en Côte d'Ivoire). Aucun chiffre lu ne couvre la Guinée. Chiffres plus anciens : environ 500 000 Dan en Côte d'Ivoire selon Hugo Zemp (1964), et 219 000 dans la seule région de Man, soit 51,1 % de ses habitants, selon l'enquête de 1962.",
       "distributionByCountry": [
         {
           "country": "CIV",
-          "population": 1900000
+          "population": 1300000,
+          "percentage": 81.1,
+          "note": "Régions de Man, Danané, Biankouma, Sipilou et Zouan-Hounien ; chiffre de Valentin Vydrin (2021)"
         },
         {
           "country": "LBR",
-          "population": 297000
-        },
-        {
-          "country": "GIN",
-          "population": 2000
+          "population": 303000,
+          "percentage": 18.9,
+          "note": "Comté de Nimba, où les Dan sont appelés Gio ; chiffre non daté de Joshua Project"
         }
       ]
     },
@@ -103,7 +111,8 @@
         "title": "Dan, Da in Liberia – Joshua Project 2025",
         "url": "https://joshuaproject.net/people_groups/11485/LI",
         "tier": "unverified",
-        "source_kind": "missionary_database"
+        "source_kind": "missionary_database",
+        "notes": "Base de données missionnaire, lue le 3 novembre 2026. Elle compte 303 000 Dan au Liberia et 2 281 000 au total, dont 1 978 000 en Côte d'Ivoire, sans dater ces chiffres."
       },
       {
         "title": "Minority Rights Group – Liberia",
@@ -127,13 +136,15 @@
         "title": "Dan – Glottolog 5.3",
         "url": "https://glottolog.org/resource/languoid/id/dann1241",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Base de données linguistique de l'Institut Max Planck, consultée le 3 novembre 2026. Elle classe le dan dans le mandé du Sud-Est (groupe dan-toura), le divise en dan de l'Est, dan de l'Ouest et kla-dan, et rapporte le partage du code ISO daf en dnj (dan) et lda (kla-dan) en 2013 : les locuteurs du kla-dan « n'acceptent pas » le nom Yakuba donné en Côte d'Ivoire aux autres Dan, mais se disent membres de la communauté dan."
       },
       {
         "title": "101 Last Tribes – The Dan",
         "url": "https://www.101lasttribes.com/tribes/dan.html",
         "tier": "unverified",
-        "source_kind": "community"
+        "source_kind": "community",
+        "notes": "Site de vulgarisation sans auteur nommé, lu le 3 novembre 2026. Il écrit qu'au Liberia les Dan sont aussi appelés Gio, « Bassa for 'slave' », et que ce nom est jugé péjoratif. La page renvoie à Wikipédia ; celle-ci tient l'information d'une encyclopédie américaine de 2005 que nous n'avons pas pu lire."
       },
       {
         "title": "Mémoires d'Afrique — Dan ou Yacouba (page d'un site de vente d'art africain)",
@@ -157,11 +168,92 @@
         "url": "https://www.lisgis.gov.lr/document/LiberiaCensus2022Report.pdf",
         "tier": "official",
         "source_kind": "official_statistics"
+      },
+      {
+        "title": "dnj | ISO 639-3",
+        "url": "https://iso639-3.sil.org/code/dnj",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "SIL International, autorité d'enregistrement de la norme ISO 639-3, consultée le 3 novembre 2026. Le code dnj (dan) a été créé le 23 janvier 2013 ; l'ancien code daf a alors été retiré et partagé."
+      },
+      {
+        "title": "Esquisse de grammaire du dan de l'Est (dialecte de Gouèta)",
+        "url": "https://journals.openedition.org/mandenkan/2406",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Mandenkan, n° 64, 2021, p. 3-80, revue publiée sur OpenEdition. Lu le 3 novembre 2026. L'auteur situe le dan de l'Est dans les départements de Biankouma, Sipilou et Man, dit que le parler de Gouèta sert de base à la « langue littéraire dan (yacouba) », que les Dan du Liberia sont « connus sous le nom de Gio », et compte environ un million trois cent mille Dan en Côte d'Ivoire."
+      },
+      {
+        "title": "Étude générale de la région de Man, tome 4 : Étude sociologique et démographique",
+        "url": "https://ireda.ceped.org/inventaire/ressources/civ-1961-1968-onc-man-o4_etude_sociologique_et_demographique.pdf",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Rapport dactylographié, Paris, BDPA, d'après une enquête de terrain menée en 1961 et 1962 dans la région de Man ; le texte cite des lois d'octobre 1964, il est donc paru en 1964 au plus tôt. Numérisation mise en ligne par le Centre Population et Développement (Ceped), lue le 3 novembre 2026. L'étude décrit les Dan, encore appelés Yacouba ou Djakuba, leurs clans, leurs masques, leurs classes d'âge et le ban, et compte 219 000 Dan dans la région de Man (51,1 % de ses habitants)."
+      },
+      {
+        "title": "Polyglotta Africana",
+        "url": "https://archive.org/details/polyglottaafrica00koel",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Londres, Church Missionary House, 1854. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur était un missionnaire et linguiste allemand établi à Freetown. Il note la langue « Gío » auprès de Mili, appelé aussi John Robert, né à Yíguna et vendu comme esclave, qui vivait en Sierra Leone depuis vingt-deux ans."
+      },
+      {
+        "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+        "url": "https://archive.org/details/vocabulairescomp00delauoft",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Paris, Ernest Leroux. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur était administrateur colonial français. Il écrit : « Les Gyo ou Gurowĩ (Dioula anthropophages et Ouobé sur les cartes, appelés Koro ou Guro-Dyula par les Mandé-Dyoula) »."
+      },
+      {
+        "title": "Esquisse générale des langues de l'Afrique et plus particulièrement de l'Afrique française",
+        "url": "https://archive.org/details/enquetesurlafami00dela",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Dans Enquête sur la famille, la propriété et la justice chez les indigènes des colonies françaises d'Afrique, Paris, Masson, 1914. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Texte d'un administrateur colonial français. Le tableau des langues range le dialecte « Dan » parmi les langues mandé du Sud, parlé par les « Dan ou Dioula anthropophages » de la région « Danané-Man », en Côte d'Ivoire."
+      },
+      {
+        "title": "Les noirs de l'Afrique",
+        "url": "https://archive.org/details/lesnoirsdelafriq00dela",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Paris, Payot, 1922. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Ouvrage d'un ancien administrateur colonial français, qui reprend le vocabulaire méprisant de son époque. Il cite « les Dan ou Mêbé » parmi les peuples de la lisière de la forêt dense."
+      },
+      {
+        "title": "Musiciens autochtones et griots malinké chez les Dan de Côte d'Ivoire",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1964_num_4_15_3014",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Cahiers d'études africaines, vol. 4, n° 15, 1964, p. 370-382, lu sur Persée le 3 novembre 2026 (première page). L'auteur compte environ 500 000 Dan en Côte d'Ivoire, dont 40 000 dans la savane du nord, classe leur langue dans le mandé-sud et cite les danseurs de masques sur échasses de la région de Man et de Danané."
+      },
+      {
+        "title": "H. Zemp, Musique dan. La musique dans la pensée et la vie sociale d'une société africaine",
+        "url": "https://www.persee.fr/doc/hom_0439-4216_1972_num_12_1_367244",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Compte rendu paru dans L'Homme, vol. 12, n° 1, 1972, lu sur Persée le 3 novembre 2026. Il rapporte que les Dan connaissent une trentaine d'instruments et cite Hugo Zemp : « tous les tons doivent être respectés dans une mélodie, sinon le texte devient incompréhensible »."
+      },
+      {
+        "title": "Liberia: A Human Rights Disaster. Violations of the Laws of War by All Parties to the Conflict",
+        "url": "https://www.hrw.org/reports/1990/liberia/",
+        "tier": "referenced",
+        "source_kind": "ngo",
+        "notes": "Rapport du 26 octobre 1990, lu sur le site de Human Rights Watch le 3 novembre 2026. Il écrit que la plupart des victimes de l'armée libérienne au début de 1990 étaient des Mano et des Gio du comté de Nimba, et que des civils ont été tués sur le seul soupçon d'être mano ou gio."
+      },
+      {
+        "title": "Monographie de Danané",
+        "url": "https://news.abidjan.net/articles/458558/monographie-de-danane",
+        "tier": "unverified",
+        "source_kind": "press",
+        "notes": "Dépêche de l'Agence ivoirienne de presse du 2 mai 2013, reprise par Abidjan.net et lue le 3 novembre 2026. Elle écrit : « Le peuple autochtone est le Dan ou Danwopemin », « appelé communément Yacouba », un nom « qui serait une déformation linguistique n'ayant rien à voir avec le nom du peuple »."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Les Dan, aussi appelés Yacouba en Côte d'Ivoire et Gio au Liberia, sont un peuple de langue mandé qui vit autour de Man et de Danané et de l'autre côté du mont Nimba.",
+      "followUp": "D'où viennent les noms Yacouba et Gio ?"
+    }
   },
   "nameHistory": {
-    "summary": "Le nom Dan désigne un peuple de langue mandé de l'ouest de la Côte d'Ivoire, autour de Man et de Danané, et du nord-est du Liberia, qui se nomme lui-même Dan. En Côte d'Ivoire, on l'appelle aussi Yacouba, au Liberia Gio, et les premiers récits coloniaux français lui donnaient un nom méprisant. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Dan désigne un peuple de langue mandé de l'ouest de la Côte d'Ivoire, autour de Man et de Danané, qui vit aussi au Liberia et dans quelques villages de Guinée. Ce peuple se nomme lui-même Dan. On l'appelle aussi Yacouba en Côte d'Ivoire et Gio au Liberia, et les textes coloniaux français lui donnaient un nom méprisant, « Dioula anthropophages ». Les sources ne s'accordent pas sur l'origine de ces noms ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Dan",
@@ -169,16 +261,38 @@
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom que ce peuple se donne ; écrit en français dès 1920.",
-        "periodLabel": "Écrit depuis 1920 ; en usage aujourd'hui",
+        "shortLine": "Le nom que ce peuple se donne ; écrit en français dès 1914.",
+        "periodLabel": "Écrit depuis 1914 ; en usage aujourd'hui",
         "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Dan est aujourd'hui celui des linguistes : Valentin Vydrin écrit le nom de la langue dân et décrit une norme écrite fondée sur le parler de Gouèta, près de Santa. Il compte environ un million trois cent mille Dan en Côte d'Ivoire.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Esquisse de grammaire du dan de l'Est (dialecte de Gouèta)",
+                "author": "Valentin Vydrin",
+                "year": 2021,
+                "url": "https://journals.openedition.org/mandenkan/2406",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1 et § 4",
+                "notes": "Mandenkan, n° 64, 2021, p. 3-80, revue publiée sur OpenEdition. Lu le 3 novembre 2026. L'auteur situe le dan de l'Est dans les départements de Biankouma, Sipilou et Man, dit que le parler de Gouèta sert de base à la « langue littéraire dan (yacouba) », que les Dan du Liberia sont « connus sous le nom de Gio », et compte environ un million trois cent mille Dan en Côte d'Ivoire."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1924,
               "to": 1924,
               "label": "1924"
             },
-            "statement": "Le nom Dan désigne en 1924, dans Les langues du monde, une langue du haut Cavally aussi appelée mebe, yabuba ou langue des « Dioula anthropophages » ; l'ouvrage ajoute que Sigismund Koelle l'avait notée en 1854 sous le nom de gio. On ne sait pas avec certitude d'où vient le nom Dan.",
+            "statement": "Le nom Dan désigne en 1924, dans Les langues du monde, une langue du haut Cavally que l'auteur dit aussi appelée mebe, yabuba ou langue des « Dioula anthropophages ». Il ajoute que Sigismund Koelle l'avait notée en 1854 sous le nom de gio. L'ouvrage ne dit pas ce que veut dire le nom Dan.",
             "aspect": "meaning",
             "sources": [
               {
@@ -191,6 +305,35 @@
                 "page": "p. 547",
                 "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'ouvrage renvoie au relevé de Sigismund Koelle de 1854 ; nous n'avons pas lu ce relevé nous-mêmes."
               }
+            ],
+            "era": "colonial"
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dan figure en 1922 dans Les noirs de l'Afrique, où Maurice Delafosse cite « les Dan ou Mêbé » parmi les peuples installés à la lisière de la forêt dense, entre le pays kissi et Bondoukou.",
+            "formAsWritten": "Dan",
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les noirs de l'Afrique",
+                "author": "Maurice Delafosse",
+                "year": 1922,
+                "url": "https://archive.org/details/lesnoirsdelafriq00dela",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 90",
+                "notes": "Paris, Payot, 1922. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Ouvrage d'un ancien administrateur colonial français, qui reprend le vocabulaire méprisant de son époque. Il cite « les Dan ou Mêbé » parmi les peuples de la lisière de la forêt dense."
+              }
             ]
           },
           {
@@ -199,9 +342,8 @@
               "to": 1920,
               "label": "1920"
             },
-            "statement": "Le nom Dan apparaît par écrit en français en 1920, dans un compte rendu de la revue Renseignements coloniaux qui parle des « Dan ou Mêbé, autrefois appelés Dioula anthropophages ». C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "statement": "Le nom Dan revient en 1920 dans un compte rendu de la revue Renseignements coloniaux, qui parle des « Dan ou Mêbé, autrefois appelés Dioula anthropophages ».",
             "formAsWritten": "Dan",
-            "birth": true,
             "sources": [
               {
                 "title": "Renseignements coloniaux et documents, 1920, compte rendu d'un livre sur le Liberia",
@@ -213,6 +355,68 @@
                 "page": "p. 123",
                 "notes": "Supplément au Bulletin du Comité de l'Afrique française, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Le compte rendu porte sur un livre de M. Maugham consacré au Liberia."
               }
+            ],
+            "era": "colonial"
+          },
+          {
+            "period": {
+              "from": 1914,
+              "to": 1914,
+              "label": "1914"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dan apparaît en 1914 dans le tableau des langues de l'Afrique française dressé par Maurice Delafosse, ancien administrateur colonial : il y range le dialecte dan, parlé par les « Dan ou Dioula anthropophages » de la région de Danané et de Man. C'est la plus ancienne trace écrite de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Dan",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Esquisse générale des langues de l'Afrique et plus particulièrement de l'Afrique française",
+                "author": "Maurice Delafosse",
+                "year": 1914,
+                "url": "https://archive.org/details/enquetesurlafami00dela",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 38",
+                "notes": "Dans Enquête sur la famille, la propriété et la justice chez les indigènes des colonies françaises d'Afrique, Paris, Masson, 1914. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Texte d'un administrateur colonial français. Le tableau des langues range le dialecte « Dan » parmi les langues mandé du Sud, parlé par les « Dan ou Dioula anthropophages » de la région « Danané-Man », en Côte d'Ivoire."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Danwopemin",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme plus longue du nom que se donnent les Dan, citée par la presse ivoirienne.",
+        "periodLabel": "Écrit en 2013",
+        "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Danwopemin est donné en 2013 par l'Agence ivoirienne de presse, dans une présentation de Danané, comme l'autre nom que se donne le peuple dan. C'est la plus ancienne trace de cette forme que le projet connaît ; la dépêche ne l'explique pas.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Monographie de Danané",
+                "author": "Agence ivoirienne de presse (AIP)",
+                "year": 2013,
+                "url": "https://news.abidjan.net/articles/458558/monographie-de-danane",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Dépêche de l'Agence ivoirienne de presse du 2 mai 2013, reprise par Abidjan.net et lue le 3 novembre 2026. Elle écrit : « Le peuple autochtone est le Dan ou Danwopemin », « appelé communément Yacouba », un nom « qui serait une déformation linguistique n'ayant rien à voir avec le nom du peuple »."
+              }
             ]
           }
         ]
@@ -223,9 +427,75 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom courant en Côte d'Ivoire ; son origine n'est pas connue.",
+        "shortLine": "Le nom courant des Dan en Côte d'Ivoire ; deux explications de son origine circulent.",
         "periodLabel": "Écrit depuis 1922 ; en usage aujourd'hui",
         "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Yacouba est refusé par les locuteurs du kla-dan, une variante parlée autour de Touba : selon la demande qui a séparé leur langue du dan en 2013, ils n'acceptent pas ce nom donné en Côte d'Ivoire aux autres Dan, mais se disent membres de la communauté dan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dan – Glottolog 5.3",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/dann1241",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Base de données linguistique de l'Institut Max Planck, consultée le 3 novembre 2026. Elle classe le dan dans le mandé du Sud-Est (groupe dan-toura), le divise en dan de l'Est, dan de l'Ouest et kla-dan, et rapporte le partage du code ISO daf en dnj (dan) et lda (kla-dan) en 2013 : les locuteurs du kla-dan « n'acceptent pas » le nom Yakuba donné en Côte d'Ivoire aux autres Dan, mais se disent membres de la communauté dan."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Yacouba serait une déformation sans lien avec le nom que se donne ce peuple, selon une présentation de Danané publiée en 2013 par l'Agence ivoirienne de presse. La dépêche ne dit pas de quel mot il viendrait.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Yacouba",
+            "sources": [
+              {
+                "title": "Monographie de Danané",
+                "author": "Agence ivoirienne de presse (AIP)",
+                "year": 2013,
+                "url": "https://news.abidjan.net/articles/458558/monographie-de-danane",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Dépêche de l'Agence ivoirienne de presse du 2 mai 2013, reprise par Abidjan.net et lue le 3 novembre 2026. Elle écrit : « Le peuple autochtone est le Dan ou Danwopemin », « appelé communément Yacouba », un nom « qui serait une déformation linguistique n'ayant rien à voir avec le nom du peuple »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1962,
+              "to": 1964,
+              "label": "Enquête de 1962"
+            },
+            "era": "modern",
+            "statement": "Le nom Yacouba voudrait dire « il dit que », selon une étude du peuplement de la région de Man faite pour le ministère du Plan de Côte d'Ivoire, qui écrit que les Dan « sont encore appelés Yacouba ou Djakuba ». L'étude ne dit pas de quelle langue vient cette explication.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Yacouba",
+            "sources": [
+              {
+                "title": "Étude générale de la région de Man, tome 4 : Étude sociologique et démographique",
+                "author": "M. Allusson, Bureau pour le développement de la production agricole (BDPA), pour le ministère du Plan de Côte d'Ivoire",
+                "year": null,
+                "url": "https://ireda.ceped.org/inventaire/ressources/civ-1961-1968-onc-man-o4_etude_sociologique_et_demographique.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 182",
+                "notes": "Rapport dactylographié, Paris, BDPA, d'après une enquête de terrain menée en 1961 et 1962 dans la région de Man ; le texte cite des lois d'octobre 1964, il est donc paru en 1964 au plus tôt. Numérisation mise en ligne par le Centre Population et Développement (Ceped), lue le 3 novembre 2026. La note 1 de cette page écrit : « Yakuba signifie \"il dit que\" »."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1961,
@@ -233,8 +503,8 @@
               "label": "1961"
             },
             "era": "modern",
-            "statement": "Le nom Yacouba sert en 1961 d'autre nom aux Dan dans la revue L'Agronomie tropicale, qui compte parmi les habitants du cercle de Man « les Dans (ou Yacoubas) ». On ne sait pas avec certitude d'où vient ce nom.",
-            "aspect": "meaning",
+            "statement": "Le nom Yacouba sert en 1961 d'autre nom aux Dan dans la revue L'Agronomie tropicale, qui compte parmi les habitants du cercle de Man « les Dans (ou Yacoubas) ».",
+            "aspect": "usage",
             "sources": [
               {
                 "title": "L'Agronomie tropicale, vol. 16, n° 2, mars-avril 1961",
@@ -267,7 +537,8 @@
                 "page": "p. 22",
                 "notes": "Roman paru dans la Revue des Deux Mondes, 1922, tome 8, lu dans la numérisation d'Internet Archive le 11 octobre 2026."
               }
-            ]
+            ],
+            "era": "colonial"
           }
         ]
       },
@@ -277,28 +548,70 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom employé au Liberia, noté dès 1854 ; son origine n'est pas connue.",
+        "shortLine": "Le nom des Dan au Liberia, noté dès 1854 ; il est jugé méprisant.",
         "periodLabel": "Noté en 1854 ; en usage au Liberia",
         "accounts": [
           {
             "period": {
-              "from": 1854,
-              "to": 1854,
-              "label": "1854"
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
             },
-            "era": "polity",
-            "statement": "Le nom Gio a été noté en 1854 par le linguiste Sigismund Koelle, selon Les langues du monde, qui en fait l'ancien nom de la langue dan. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle. On ne sait pas avec certitude d'où vient ce nom.",
-            "birth": true,
+            "era": "modern",
+            "statement": "Le nom Gio désigne toujours les Dan du Liberia, selon le linguiste Valentin Vydrin, qui juge leurs parlers proches du dan du sud-ouest de la Côte d'Ivoire.",
+            "aspect": "usage",
             "sources": [
               {
-                "title": "Les langues du monde, chapitre « Les langues du Soudan et de la Guinée »",
-                "author": "Maurice Delafosse",
-                "year": 1924,
-                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "title": "Esquisse de grammaire du dan de l'Est (dialecte de Gouèta)",
+                "author": "Valentin Vydrin",
+                "year": 2021,
+                "url": "https://journals.openedition.org/mandenkan/2406",
                 "tier": "referenced",
-                "source_kind": "archive",
-                "page": "p. 547",
-                "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'ouvrage renvoie au relevé de Sigismund Koelle de 1854 ; nous n'avons pas lu ce relevé nous-mêmes."
+                "source_kind": "academic",
+                "page": "§ 1 et § 4",
+                "notes": "Mandenkan, n° 64, 2021, p. 3-80, revue publiée sur OpenEdition. Lu le 3 novembre 2026. L'auteur situe le dan de l'Est dans les départements de Biankouma, Sipilou et Man, dit que le parler de Gouèta sert de base à la « langue littéraire dan (yacouba) », que les Dan du Liberia sont « connus sous le nom de Gio », et compte environ un million trois cent mille Dan en Côte d'Ivoire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Gio est celui qu'emploie en 1990 l'organisation Human Rights Watch pour les habitants du comté de Nimba, au Liberia, tués en grand nombre par l'armée au début de la guerre civile parce qu'on les soupçonnait d'être gio ou mano.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Liberia: A Human Rights Disaster. Violations of the Laws of War by All Parties to the Conflict",
+                "author": "Africa Watch (Human Rights Watch)",
+                "year": 1990,
+                "url": "https://www.hrw.org/reports/1990/liberia/",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "notes": "Rapport du 26 octobre 1990, lu sur le site de Human Rights Watch le 3 novembre 2026. Il écrit que la plupart des victimes de l'armée libérienne au début de 1990 étaient des Mano et des Gio du comté de Nimba, et que des civils ont été tués sur le seul soupçon d'être mano ou gio."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Explication rapportée sans date"
+            },
+            "era": "modern",
+            "statement": "Le nom Gio voudrait dire « esclave » en bassa, une langue de la côte libérienne, selon une page de vulgarisation qui reprend une encyclopédie américaine de 2005 ; pour cette raison, le nom serait jugé méprisant. Nous n'avons pas pu lire cette encyclopédie.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "101 Last Tribes – The Dan",
+                "author": "101 Last Tribes",
+                "year": null,
+                "url": "https://www.101lasttribes.com/tribes/dan.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site de vulgarisation sans auteur nommé, lu le 3 novembre 2026. Il écrit qu'au Liberia les Dan sont aussi appelés Gio, « Bassa for 'slave' », et que ce nom est jugé péjoratif. La page renvoie à Wikipédia ; celle-ci tient l'information d'une encyclopédie américaine de 2005 que nous n'avons pas pu lire."
               }
             ]
           },
@@ -308,7 +621,7 @@
               "to": 1920,
               "label": "1920"
             },
-            "era": "modern",
+            "era": "colonial",
             "statement": "Le nom Gio désigne en 1920, dans un compte rendu de Renseignements coloniaux sur le Liberia, un groupe que l'auteur rapproche d'un autre peuple : « des Gio (qui sont sans doute ceux que nous appelons Manon) ». Les sources de cette époque ne s'accordent donc pas sur le peuple qu'il désigne.",
             "sources": [
               {
@@ -322,6 +635,77 @@
                 "notes": "Supplément au Bulletin du Comité de l'Afrique française, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Le compte rendu porte sur un livre de M. Maugham consacré au Liberia."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gio est écrit « Gyo » et « Guio » en 1904 par Maurice Delafosse, administrateur colonial, pour un peuple qu'il place au nord et à l'est des Manon ; il ajoute que les cartes l'appellent « Dioula anthropophages ». Les auteurs de cette époque ne s'accordent pas sur le peuple que ce nom désigne.",
+            "formAsWritten": "Gyo",
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 145",
+                "notes": "Paris, Ernest Leroux. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur était administrateur colonial français. Il écrit : « Les Gyo ou Gurowĩ (Dioula anthropophages et Ouobé sur les cartes, appelés Koro ou Guro-Dyula par les Mandé-Dyoula) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Gio est noté « Gío » en 1854 par Sigismund Koelle, missionnaire et linguiste allemand à Freetown, auprès d'un homme né à Yíguna, vendu comme esclave et emmené en Sierra Leone. Koelle situe le pays gio à l'est et au sud des Mano. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/polyglottaafrica00koel",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 4",
+                "notes": "Londres, Church Missionary House, 1854. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur était un missionnaire et linguiste allemand établi à Freetown. Il note la langue « Gío » auprès de Mili, appelé aussi John Robert, né à Yíguna et vendu comme esclave, qui vivait en Sierra Leone depuis vingt-deux ans."
+              },
+              {
+                "title": "Les langues du monde, chapitre « Les langues du Soudan et de la Guinée »",
+                "author": "Maurice Delafosse",
+                "year": 1924,
+                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 547",
+                "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'ouvrage renvoie au relevé de Sigismund Koelle de 1854 ; nous n'avons pas lu ce relevé nous-mêmes."
+              }
+            ],
+            "formAsWritten": "Gío",
+            "actors": [
+              {
+                "name": "Sigismund Wilhelm Koelle",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Mili, appelé aussi John Robert",
+                "role": "locuteur interrogé par Koelle"
+              }
+            ]
           }
         ]
       },
@@ -331,32 +715,9 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom méprisant que les premiers récits coloniaux français donnaient aux Dan.",
+        "shortLine": "Le nom méprisant que les cartes et récits coloniaux français donnaient aux Dan.",
         "periodLabel": "Écrit de 1900 aux années 1920",
         "accounts": [
-          {
-            "period": {
-              "from": 1897,
-              "to": 1900,
-              "label": "1897-1900"
-            },
-            "era": "polity",
-            "statement": "Le nom « Dioulas anthropophages » apparaît dans un compte rendu de la Société de géographie paru en 1900 : une mission militaire française y est dite cernée le 26 décembre 1897 « au village de Man, pays des Dioulas anthropophages », dont les habitants la combattent pendant trois jours. Ce nom méprisant est celui des récits coloniaux, pas celui que ce peuple se donne. C'est la plus ancienne trace de ce nom que le projet connaît.",
-            "formAsWritten": "Dioulas anthropophages",
-            "birth": true,
-            "sources": [
-              {
-                "title": "Compte rendu des séances de la Société de géographie et de la Commission centrale, 1900",
-                "author": "Société de géographie",
-                "year": 1900,
-                "url": "https://archive.org/details/compterendudess02fragoog",
-                "tier": "referenced",
-                "source_kind": "archive",
-                "page": "p. 14",
-                "notes": "Paris, lu dans la numérisation d'Internet Archive le 11 octobre 2026."
-              }
-            ]
-          },
           {
             "period": {
               "from": 1920,
@@ -384,6 +745,62 @@
                 "source_kind": "archive",
                 "page": "p. 547",
                 "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'ouvrage renvoie au relevé de Sigismund Koelle de 1854 ; nous n'avons pas lu ce relevé nous-mêmes."
+              }
+            ],
+            "era": "colonial"
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1914,
+              "label": "1904-1914"
+            },
+            "era": "colonial",
+            "statement": "Le nom « Dioula anthropophages » vient des cartes coloniales, selon Maurice Delafosse, qui l'écrit en 1904 « sur les cartes » et, en 1914, accolé au nom Dan. Il joint le nom des marchands dioula à une accusation de cannibalisme que les textes coloniaux portaient contre les peuples de la forêt ; ce n'est pas un nom que ce peuple se donne.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 145",
+                "notes": "Paris, Ernest Leroux. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. L'auteur était administrateur colonial français. Il écrit : « Les Gyo ou Gurowĩ (Dioula anthropophages et Ouobé sur les cartes, appelés Koro ou Guro-Dyula par les Mandé-Dyoula) »."
+              },
+              {
+                "title": "Esquisse générale des langues de l'Afrique et plus particulièrement de l'Afrique française",
+                "author": "Maurice Delafosse",
+                "year": 1914,
+                "url": "https://archive.org/details/enquetesurlafami00dela",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 38",
+                "notes": "Dans Enquête sur la famille, la propriété et la justice chez les indigènes des colonies françaises d'Afrique, Paris, Masson, 1914. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Texte d'un administrateur colonial français. Le tableau des langues range le dialecte « Dan » parmi les langues mandé du Sud, parlé par les « Dan ou Dioula anthropophages » de la région « Danané-Man », en Côte d'Ivoire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1900,
+              "label": "1897-1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom « Dioulas anthropophages » apparaît dans un compte rendu de la Société de géographie paru en 1900 : une mission militaire française y est dite cernée le 26 décembre 1897 « au village de Man, pays des Dioulas anthropophages », dont les habitants la combattent pendant trois jours. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Dioulas anthropophages",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Compte rendu des séances de la Société de géographie et de la Commission centrale, 1900",
+                "author": "Société de géographie",
+                "year": 1900,
+                "url": "https://archive.org/details/compterendudess02fragoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 14",
+                "notes": "Paris, lu dans la numérisation d'Internet Archive le 11 octobre 2026."
               }
             ]
           }

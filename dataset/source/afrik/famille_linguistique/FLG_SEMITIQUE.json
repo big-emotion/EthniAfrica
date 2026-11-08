@@ -4,7 +4,7 @@
   "nameEn": "Semitic",
   "classificationStatus": "colonial-legacy",
   "nameHistory": {
-    "summary": "Le nom sémitique désigne une famille de langues de l'Afrique du Nord, de la Corne de l'Afrique et du Moyen-Orient, comme l'arabe, l'hébreu, l'amharique et le tigrigna. C'est un nom de savants, tiré de Sem, un fils de Noé dans la Bible ; on l'a ensuite associé à chamitique dans le nom chamito-sémitique. Les sources s'accordent sur son origine ; nous les présentons plus bas.",
+    "summary": "Le nom sémitique désigne une famille de langues de l'Afrique du Nord, de la Corne de l'Afrique et du Moyen-Orient, comme l'arabe, l'hébreu, l'amharique et le tigrigna. C'est un nom de savants européens, tiré de Sem, un fils de Noé dans la Bible ; avant lui, on parlait de langues orientales. Au XIXe siècle, il entre dans le nom chamito-sémitique et sert aussi à classer des peuples en races. Les sources ne s'accordent pas sur le savant qui l'a créé ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Sémitique",
@@ -61,6 +61,33 @@
           },
           {
             "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "statement": "Le nom sémitique sert aussi de nom de race chez Charles Gabriel Seligman, professeur d'ethnologie à Londres. Dans son livre Races of Africa, il compte les « Sémites » parmi les cinq grandes « races » de l'Afrique, et écrit que cette « race » n'y est présente que depuis un peu plus de mille ans, sauf en Abyssinie.",
+            "aspect": "imposition",
+            "actors": [
+              {
+                "name": "Charles Gabriel Seligman",
+                "role": "classe les peuples d'Afrique en races dans un livre de 1930"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Races of Africa",
+                "author": "C. G. Seligman",
+                "year": 1930,
+                "url": "https://archive.org/details/dli.ernet.277097",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Thornton Butterworth, collection Home University Library, première édition, 1930. L'auteur est professeur d'ethnologie à l'université de Londres. Lu le 3 novembre 2026 dans la numérisation de la Digital Library of India sur Internet Archive. Passage lu dans l'introduction : la liste des « primary races » de l'Afrique, « (1) Hamites. (2) Semites. (3) Negroes », puis « one race, the Semitic, apart from a certain amount of mixture in Abyssinia, has only been present in Africa for little over 1,000 years ». Traduction des passages par nos soins.",
+                "page": "p. 15"
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1924,
               "to": 1924,
               "label": "1924"
@@ -75,8 +102,140 @@
                 "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
                 "tier": "referenced",
                 "source_kind": "archive",
-                "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive.",
+                "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive. Relu le 3 novembre 2026. Passage lu : « Le terme de sémitique a été adopté à la fin du xviiie siècle par les savants européens parce que les peuples parlant les langues sémitiques sont en majorité compris parmi la postérité de Sem […] dans le chapitre x de la Genèse ».",
                 "page": "p. 83"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "statement": "Le nom sémitique reste lié à une description par la race chez Marcel Cohen. Il écrit que les races des gens qui parlent les langues chamito-sémitiques « semblent constituer, comme leurs langues, un ensemble relativement cohérent », et que « ce sont des blancs, légèrement mélangés de nègres au Sud-Est ».",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Les langues du monde, chapitre « Langues chamito-sémitiques »",
+                "author": "Marcel Cohen",
+                "year": 1924,
+                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Passage lu au début du chapitre : « Les races de ces gens semblent constituer, comme leurs langues, un ensemble relativement cohérent ; ce sont des blancs, légèrement mélangés de nègres au Sud-Est ».",
+                "page": "p. 81"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1885,
+              "to": 1885,
+              "label": "1885"
+            },
+            "statement": "Le nom sémitique entre dans le nom composé chamito-sémitique, en allemand hamito-semitisch. Friedrich Müller écrit qu'on réunit alors sous ce nom les langues de peuples que la Bible donne pour descendants de Cham et de Sem, deux fils de Noé, et il les classe dans un volume sur la « race méditerranéenne ». Le nom chamitique vient de la même source biblique, selon Marcel Cohen.",
+            "aspect": "imposition",
+            "actors": [
+              {
+                "name": "Friedrich Müller",
+                "role": "linguiste à Vienne, classe les langues du monde par races dans son Grundriss der Sprachwissenschaft"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Grundriss der Sprachwissenschaft, tome III, 2e partie : Die Sprachen der mittelländischen Rasse",
+                "author": "Friedrich Müller",
+                "year": 1885,
+                "url": "https://archive.org/details/grundrissderspra03mlle",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Vienne, Alfred Hölder, 1885. Le tome III s'intitule Die Sprachen der lockenhaarigen Rassen, « les langues des races aux cheveux bouclés ». Lu le 3 novembre 2026 dans la numérisation d'Internet Archive, au début du chapitre « Der hamito-semitische Sprachstamm ». Passage lu : les langues de ces peuples, « fasst man gegenwärtig unter der Bezeichnung der hamito-semitischen zusammen », parce que la Bible les donne pour « Abkömmlinge der beiden Söhne Noah's, Ham (Cham) und Sem (Schem) ». Traduction des passages par nos soins.",
+                "page": "p. 223-225"
+              },
+              {
+                "title": "Les langues du monde, chapitre « Langues chamito-sémitiques »",
+                "author": "Marcel Cohen",
+                "year": 1924,
+                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Passage lu : « C'est à la même source biblique que, dans la seconde moitié du xixe siècle, on a puisé le terme de chamitique ».",
+                "page": "p. 83"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1855,
+              "to": 1855,
+              "label": "1855"
+            },
+            "statement": "Le nom sémitique est employé par les savants « à la suite d'Eichhorn », selon Ernest Renan, qui le juge « tout à fait défectueux ». Il rappelle que la Genèse fait descendre de Cham, et non de Sem, des peuples qui parlaient ces langues, comme les Phéniciens. Il propose le nom de langues syro-arabes, mais garde sémitique comme une « simple appellation conventionnelle ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale et système comparé des langues sémitiques, première partie",
+                "author": "Ernest Renan",
+                "year": 1855,
+                "url": "https://archive.org/details/histoiregnraleet00rena_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Imprimerie impériale, 1855. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Passage lu : « les savants modernes, à la suite d'Eichhorn, se sont accordés à leur donner le nom de langues sémitiques. Mais cette dénomination est tout à fait défectueuse », puis « le véritable nom des langues qui nous occupent serait syro-arabes ».",
+                "page": "p. 1-2"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1855,
+              "to": 1855,
+              "label": "1855"
+            },
+            "statement": "Le nom sémitique désigne aussi une « race » chez Ernest Renan. Il écrit que « la race sémitique, comparée à la race indo-européenne, représente réellement une combinaison inférieure de la nature humaine ».",
+            "aspect": "imposition",
+            "actors": [
+              {
+                "name": "Ernest Renan",
+                "role": "savant français, auteur d'une histoire des langues sémitiques"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale et système comparé des langues sémitiques, première partie",
+                "author": "Ernest Renan",
+                "year": 1855,
+                "url": "https://archive.org/details/histoiregnraleet00rena_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Imprimerie impériale, 1855. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Passage lu au premier chapitre : « Je suis donc le premier à reconnaître que la race sémitique, comparée à la race indo-européenne, représente réellement une combinaison inférieure de la nature humaine ».",
+                "page": "p. 4-5"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1794,
+              "to": 1794,
+              "label": "1794, selon Crawford H. Toy"
+            },
+            "statement": "Le nom sémitique est aussi revendiqué en 1794 par Johann Gottfried Eichhorn, qui ne cite pas Schlözer, selon Crawford H. Toy. Toy attribue le nom à l'un ou à l'autre de ces deux savants allemands sans les départager.",
+            "actors": [
+              {
+                "name": "Johann Gottfried Eichhorn",
+                "role": "revendique le nom sémitique en 1794, selon Crawford H. Toy"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Religious Encyclopaedia, tome IV, article « Semitic Languages »",
+                "author": "Crawford H. Toy",
+                "year": 1891,
+                "url": "https://archive.org/details/religiousencyclo04herz",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie dirigée par Philip Schaff, troisième édition revue, New York, Funk & Wagnalls, 1891. Article signé C. H. Toy. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Passage lu : « The first known use of the term is in Schlözer's article on the Chaldaeans, in Eichhorn's Repertorium, 8, 161 (1781) », puis « a similar claim is made by Eichhorn himself, without mention of Schlözer, in his Allgemeine Bibliothek, 6, 772 (1794) ». L'article ajoute qu'avant ce nom, « Oriental languages » désignait seulement l'hébreu et ses langues sœurs.",
+                "page": "p. 2153"
               }
             ]
           },
@@ -86,12 +245,12 @@
               "to": 1781,
               "label": "1781, selon Joseph Greenberg"
             },
-            "statement": "Le nom sémitique est introduit en 1781 par August Ludwig von Schlözer, selon Joseph Greenberg, qui renvoie à un texte de Schlözer paru cette année-là. Nous n'avons pas pu lire ce texte de 1781. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "statement": "Le nom sémitique apparaît pour la première fois connue en 1781, dans un article d'August Ludwig von Schlözer sur les Chaldéens, selon Joseph Greenberg et Crawford H. Toy. Nous n'avons pas pu lire ce texte de 1781. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
             "birth": true,
             "actors": [
               {
                 "name": "August Ludwig von Schlözer",
-                "role": "a proposé le nom sémitique dans un article de 1781, selon Joseph Greenberg"
+                "role": "emploie le nom sémitique dans un article de 1781, selon Joseph Greenberg et Crawford H. Toy"
               }
             ],
             "sources": [
@@ -104,6 +263,16 @@
                 "source_kind": "intergovernmental",
                 "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
                 "page": "p. 324, note 6"
+              },
+              {
+                "title": "A Religious Encyclopaedia, tome IV, article « Semitic Languages »",
+                "author": "Crawford H. Toy",
+                "year": 1891,
+                "url": "https://archive.org/details/religiousencyclo04herz",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie dirigée par Philip Schaff, troisième édition revue, New York, Funk & Wagnalls, 1891. Article signé C. H. Toy. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Passage lu : « The first known use of the term is in Schlözer's article on the Chaldaeans, in Eichhorn's Repertorium, 8, 161 (1781) », puis « a similar claim is made by Eichhorn himself, without mention of Schlözer, in his Allgemeine Bibliothek, 6, 772 (1794) ». L'article ajoute qu'avant ce nom, « Oriental languages » désignait seulement l'hébreu et ses langues sœurs.",
+                "page": "p. 2153"
               }
             ]
           },
@@ -128,22 +297,53 @@
                 "page": "p. 323"
               }
             ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1780,
+              "label": "Avant la fin du XVIIIe siècle"
+            },
+            "statement": "Avant le nom sémitique, on parle de langues orientales pour désigner l'hébreu et les langues qui lui sont proches, selon Ernest Renan et Crawford H. Toy. Renan rattache cet usage aux auteurs anciens, dont saint Jérôme.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale et système comparé des langues sémitiques, première partie",
+                "author": "Ernest Renan",
+                "year": 1855,
+                "url": "https://archive.org/details/histoiregnraleet00rena_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Imprimerie impériale, 1855. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Passage lu : « Les anciens, qui furent déjà frappés de leur unité, les appelèrent langues orientales » ; une note renvoie à saint Jérôme.",
+                "page": "p. 1"
+              },
+              {
+                "title": "A Religious Encyclopaedia, tome IV, article « Semitic Languages »",
+                "author": "Crawford H. Toy",
+                "year": 1891,
+                "url": "https://archive.org/details/religiousencyclo04herz",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie dirigée par Philip Schaff, troisième édition revue, New York, Funk & Wagnalls, 1891. Article signé C. H. Toy. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Passage lu : « The first known use of the term is in Schlözer's article on the Chaldaeans, in Eichhorn's Repertorium, 8, 161 (1781) », puis « a similar claim is made by Eichhorn himself, without mention of Schlözer, in his Allgemeine Bibliothek, 6, 772 (1794) ». L'article ajoute qu'avant ce nom, « Oriental languages » désignait seulement l'hébreu et ses langues sœurs.",
+                "page": "p. 2153"
+              }
+            ]
           }
         ]
       }
     ]
   },
   "content": {
-    "searchAnswer": {
-      "lead": "Des langues comme l'arabe, l'amharique et le tigrinya, de l'Afrique du Nord à la Corne de l'Afrique. Le nom, formé à la fin du XVIIIe siècle, renvoie à Sem, un fils de Noé dans la Bible.",
-      "followUp": "Pourquoi l'ancien nom « chamito-sémitique » est-il rejeté ?"
-    },
     "decolonialHeader": {
-      "whyProblematic": " Le terme « chamito-sémitique » est profondément racialiste et colonial : il classe des peuples selon des généalogies bibliques et une hiérarchie raciale imaginaire. La notion de « Chamites », opposée à « Sémites », a été utilisée par des auteurs coloniaux (notamment Ernest Renan, Friedrich Müller) pour attribuer certains progrès techniques ou civilisations africaines à des étrangers « non-nègres », créant une dichotomie artificielle entre peuples « civilisés » (Sémites) et « primitifs » (Chamites). Cette classification a servi les discours coloniaux français, britanniques et allemands pour hiérarchiser les peuples africains. Des auteurs africains ont critiqué cette vision : **Cheikh Anta Diop** (1923-1986) dans *Nations nègres et culture* (1954) et *Antériorité des civilisations nègres* (1967) a dénoncé la division Chamites/Sémites comme eurocentrée, affirmant l'origine africaine des langues afro-asiatiques. Le linguiste éthiopien **Wolf Leslau** (1906-2006) a documenté les langues éthiosémitiques comme pleinement inscrites dans le monde africain. Les études génétiques modernes (Kitchen et al. 2009, Pagani et al. 2015) montrent que les populations parlant des langues sémitiques en Afrique présentent des patrimoines génétiques majoritairement africains avec des apports ouest-eurasiens anciens, invalidant toute lecture raciale essentialiste. Aujourd'hui, seule l'appellation **« sémitique »** (linguistique) est conservée, classée comme branche de la famille afro-asiatique (terme préféré à « chamito-sémitique »).",
+      "linkWithFamily": "Le sémitique est une branche de la famille afro-asiatique dans le catalogue Glottolog. Cette famille y réunit cinq branches : le berbère, le tchadique, le couchitique, l'égyptien ancien et le sémitique.",
+      "historicalAppellations": ["Langues orientales", "Chamito-sémitique"],
+      "originOfHistoricalTerm": "Avant le nom sémitique, l'hébreu et les langues qui lui sont proches portent le nom de langues orientales, selon Ernest Renan et Crawford H. Toy. Le nom sémitique apparaît en 1781 dans un article d'August Ludwig von Schlözer, selon Joseph Greenberg et Toy. Toy ajoute que Johann Gottfried Eichhorn revendique aussi ce nom en 1794 sans citer Schlözer, et Renan écrit en 1855 que les savants l'emploient « à la suite d'Eichhorn ». Le nom vient de Sem, un fils de Noé : au chapitre 10 de la Genèse, la plupart des peuples qui parlent ces langues comptent parmi ses descendants, selon Marcel Cohen. Renan juge pourtant ce nom défectueux, parce que la Genèse fait descendre de Cham, un autre fils de Noé, des peuples qui parlaient aussi ces langues, comme les Phéniciens.\n\nLe nom composé chamito-sémitique, en allemand hamito-semitisch, ajoute le nom de Cham. Friedrich Müller écrit en 1885 qu'on réunit alors sous ce nom les langues des peuples de l'Asie du Sud-Ouest et du nord et du nord-est de l'Afrique, parce que la Bible les donne pour descendants de Cham et de Sem. Le nom chamitique a été tiré de la Bible dans la seconde moitié du XIXe siècle, selon Cohen. En 1924, Cohen refuse de réunir l'égyptien, le berbère et le couchitique en un groupe chamitique, car rien ne prouve selon lui une parenté particulière entre ces langues. Aujourd'hui, le catalogue Glottolog range le sémitique dans la famille afro-asiatique.",
+      "whyProblematic": "Le nom sémitique vient d'une généalogie de la Bible, celle des fils de Noé, et non d'un mot des langues qu'il désigne. Au XIXe siècle, des savants européens s'en servent aussi pour classer des peuples en races. Ernest Renan écrit en 1855 que « la race sémitique, comparée à la race indo-européenne, représente réellement une combinaison inférieure de la nature humaine ». En 1885, Friedrich Müller range les langues chamito-sémitiques dans un volume consacré à la « race méditerranéenne », car il classe les langues du monde selon les cheveux de ceux qui les parlent. En 1924 encore, Marcel Cohen décrit les locuteurs de ces langues comme « des blancs, légèrement mélangés de nègres au Sud-Est ».\n\nLe nom chamitique sert à son tour à classer les peuples d'Afrique. En 1930, Charles Gabriel Seligman, professeur d'ethnologie à Londres, écrit qu'en dehors d'une influence sémitique tardive, « les civilisations de l'Afrique sont les civilisations des Hamites ». Il oppose ces Hamites à deux autres groupes de peuples africains qu'il juge « plus primitifs ».\n\nCes textes attachent une famille de langues à une race. Des travaux plus récents distinguent les deux : en 2009, Andrew Kitchen et ses coauteurs rappellent que les locuteurs de langues sémitiques d'Éthiopie et d'Érythrée sont génétiquement proches des locuteurs de langues couchitiques. Ils proposent que ces langues se soient répandues dans la Corne de l'Afrique parmi les populations déjà présentes, avec peu d'apports de population venus d'Arabie.",
       "selfAppellation": null,
-      "contemporaryUsage": " La branche sémitique est l'une des plus importantes de la famille afro-asiatique. Elle comprend l'arabe (parlé par plus de 400 millions de locuteurs), l'amharique (langue officielle d'Éthiopie), le tigrinya (langue officielle d'Érythrée), l'hébreu (langue officielle d'Israël), et de nombreuses langues d'Éthiopie et d'Érythrée (guèze, guragé, harari, etc.). Les langues sémitiques sont caractérisées par une morphologie non-concaténative basée sur des racines consonantiques (souvent trilitères) combinées à des schèmes vocaliques.",
-      "historicalAppellations": ["Chamito-sémitique", "Sémito-chamitique"],
-      "originOfHistoricalTerm": " Le terme « sémitique » (allemand *Semitisch*, anglais *Semitic*) a été créé en **1781** par **August Ludwig von Schlözer** (1735-1809) dans son article *\"Von den Chaldäern\"* publié dans le *Repertorium für biblische und morgenländische Literatur* de Johann Gottfried Eichhorn. Schlözer proposa ce terme pour désigner les langues apparentées à l'hébreu, l'arabe et l'araméen, en référence biblique au personnage de Sem (hébreu *Šēm*), fils de Noé dans la Genèse. Le terme fut popularisé par **Johann Gottfried Eichhorn** (1752-1827) dans son article *\"Semitische Sprachen\"* en **1795** et dans son ouvrage *Einleitung ins Alte Testament* (1787). Les linguistes du XIXe siècle, notamment **Friedrich Müller** (1876) dans *Grundriss der Sprachwissenschaft*, ont ensuite construit la catégorie « chamito-sémitique » (ou « chamito-sémitique ») en y ajoutant d'autres peuples africains selon une logique biblique non scientifique, opposant les « Sémites » aux « Chamites » (descendants de Cham, autre fils de Noé)."
+      "contemporaryUsage": "Le sémitique désigne aujourd'hui une branche de la famille afro-asiatique. Le catalogue Glottolog lui compte 96 langues, vivantes ou disparues, réparties en trois branches. Le sémitique oriental réunit l'akkadien, l'ancienne langue de la Mésopotamie, et l'éblaïte, deux langues disparues. L'amorite, une autre langue disparue, reste à part, faute de classement. Le sémitique occidental réunit toutes les langues encore parlées, comme l'hébreu, l'araméen et les langues sudarabiques modernes.\n\nEn Afrique, cette branche comprend l'arabe et ses nombreux parlers, de l'Égypte au Maroc et jusqu'au Tchad. Elle comprend aussi seize langues d'Éthiopie et d'Érythrée selon Glottolog, dont le guèze, l'amharique, le tigrigna, le tigré, le harari, le silte et les parlers gouragué. Le guèze n'est plus la langue de la vie courante, mais il reste la langue de la liturgie chrétienne en Éthiopie, selon Marcel Cohen. Au recensement éthiopien de 2007, plus de 28 millions de personnes déclarent comme langue maternelle une langue sémitique, dont 21,6 millions l'amharique.",
+      "geographicArea": "Afrique du Nord, vallée du Nil, région du lac Tchad, Corne de l'Afrique, péninsule Arabique, Proche-Orient",
+      "numberOfLanguages": 96,
+      "totalSpeakers": 460000000
     },
     "generalInfo": {
       "branches": [
@@ -151,9 +351,18 @@
         "Sémitique non classé (amorite, éteint)",
         "Sémitique occidental"
       ],
-      "geographicArea": "Afrique du Nord-Est (Égypte, Soudan, Maghreb), Corne de l'Afrique (Éthiopie, Érythrée, Djibouti, Somalie), péninsule Arabique (Arabie Saoudite, Yémen, Oman), Levant (Syrie, Liban, Palestine/Israël, Jordanie), Mésopotamie (Irak).",
-      "numberOfLanguages": 40,
-      "totalSpeakers": 460000000
+      "geographicArea": "Afrique du Nord, vallée du Nil, région du lac Tchad, Corne de l'Afrique, péninsule Arabique, Proche-Orient",
+      "numberOfLanguages": 96,
+      "totalSpeakers": 460000000,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "Selon Glottolog, édition 5.3, langues disparues comprises"
+        },
+        "totalSpeakers": {
+          "note": "Un ordre de grandeur que nous n'avons pas pu rattacher à une source lue",
+          "unsourced": true
+        }
+      }
     },
     "associatedPeoples": [
       {
@@ -174,22 +383,23 @@
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " Langues flexionnelles basées sur des racines consonantiques (généralement trilittères) combinées à des schèmes vocaliques. Systèmes verbaux riches ; conjugaisons non concaténatives (root-and-pattern morphology). Exemples concrets : racine *k-t-b* « écrire » → en arabe *kataba* « il écrivit » (parfait), *yaktubu* « il écrit » (imparfait), *kitāb* « livre » (nom), *kātib* « écrivain » (nom d'agent), *maktab* « bureau » (nom de lieu) ; en hébreu *katav* « il écrivit », *yikhtov* « il écrira », *mikhtav* « lettre », *kotev* « écrivain ». Structures grammaticales : accord en genre (masculin/féminin), nombre (singulier, duel dans certaines langues anciennes, pluriel), cas dans les langues classiques (nominatif, accusatif, génitif en arabe classique et akkadien). Ordre des mots : V-S-O dans les langues classiques (arabe classique *kataba Zayd-un kitāban* « Écrivit Zayd un livre »), S-V-O dans les langues modernes. Dérivation verbale : formes de base (G-stem), formes dérivées avec préfixes/infixes/redoublement (causatif *ʾafʿala*, intensif *faʿʿala*, passif *ʾufʿila*, réflexif *istafʿala* en arabe). Pluriels « brisés » (broken plurals) : arabe *kalb* « chien » → *kilāb* « chiens », *kitāb* « livre » → *kutub* « livres ».",
-      "phonologicalFeatures": " Consonnes emphatiques (pharyngalisées ou glottalisées) : en arabe /ṭ/ /ṣ/ /ḍ/ /ẓ/, exemples *ṭālib* « étudiant » vs *talib* « chercheur », *ṣādiq* « véridique ». Sons gutturaux/pharyngaux : /ʕ/ (*ʿayn*), /ħ/ (*ḥāʾ*), /ʔ/ (*hamza*), exemples arabe *ʿarab* « arabe », hébreu *ʿam* « peuple », arabe *ḥalīm* « doux ». Voyelles : système à trois voyelles de base (*a, i, u*) avec variantes longues (*ā, ī, ū*) et brèves, distinction longueur vocalique distinctive. Ablaut (changement vocalique interne) pour exprimer temps, aspect, voix. Tonalité : les langues sémitiques classiques ne sont généralement pas tonales, mais certaines langues éthiosémitiques modernes (notamment certaines variétés guragé) peuvent présenter des traits tonaux ou des registres de hauteur. Accent tonique (stress) ou accent syllabique dans la plupart des langues.",
-      "relationsWithNeighbors": " Contacts historiques importants avec le couchitique et l'omotique (familles afro-asiatiques cousines) : emprunts réciproques, notamment en Éthiopie et Érythrée. Exemples d'emprunts : amharique *kitab* « livre » ← arabe *kitāb* ; somali (couchitique) *qasr* « palais », *kitab* « livre » ← arabe ; swahili (bantou) *kitabu* « livre », *safari* « voyage » ← arabe *kitāb*, *safar*. Influence des langues indo-européennes : emprunts du persan, grec, latin vers l'arabe (ex. *basiliskos* → *biser*), emprunts modernes de l'anglais, français vers l'arabe et l'hébreu modernes (*telefon*, *kompyuter*). Interaction avec les langues berbères en Afrique du Nord : emprunts mutuels, influence phonologique.",
-      "keyInnovations": " - Racines trilitères (système dominant) avec développement de racines quadrilitères et quinquilitères dans certaines langues (ex. arabe *ʕankabūt* « araignée » = quinquilitère)"
+      "typology": "Les langues sémitiques ont en commun des racines faites presque toujours de trois consonnes, selon Marcel Cohen en 1924. La racine qtl porte par exemple le sens de « tuer », et la racine qwm celui de « se tenir debout ». Dans le groupe que Cohen appelle méridional, qui réunit l'arabe, le sudarabique et les langues d'Éthiopie, le pluriel d'un nom se forme souvent en changeant l'intérieur du mot : on parle de pluriel interne ou brisé. Cohen attribue aussi à ce groupe une déclinaison des noms à trois cas, comme en ancien akkadien. L'amharique s'est écarté de ce type et a pris l'ordre des mots des langues couchitiques voisines, selon Cohen.",
+      "phonologicalFeatures": "Les langues chamito-sémitiques, dont le sémitique, se distinguent par de nombreuses consonnes prononcées au fond de la gorge, selon Marcel Cohen. Le coup de glotte, une brève fermeture des cordes vocales, y compte comme une consonne. Elles ont aussi des consonnes dites emphatiques, prononcées avec une contraction de la région du larynx. L'arabe classique note trois timbres de voyelles, chacun bref ou long. Dans la prononciation liturgique actuelle du guèze, la plupart des consonnes de gorge ont disparu sous l'influence de l'amharique, selon Cohen.",
+      "relationsWithNeighbors": "En Éthiopie, l'amharique s'est étendu sur des régions où l'on parlait des langues couchitiques. Il sert souvent de seconde langue aux personnes qui ont gardé leur langue couchitique, selon Marcel Cohen en 1924. Sur la côte de la mer Rouge, le tigré sert de seconde langue à des voisins qui parlent d'autres langues. L'arabe a donné un très grand nombre de mots religieux et savants aux langues de peuples musulmans, comme le turc et le persan, et son écriture a servi à noter d'autres langues, selon le même auteur. Pour Andrew Kitchen et ses coauteurs, les langues sémitiques d'Éthiopie se sont répandues parmi des populations déjà présentes, avec peu d'apports de population venus d'Arabie.",
+      "keyInnovations": "La racine à trois consonnes est le trait que Marcel Cohen donne comme commun à toutes les langues sémitiques. Il juge probable que ce système ne remonte pas à l'ancêtre commun des langues chamito-sémitiques, car l'égyptien et surtout le berbère ont beaucoup de racines à deux consonnes. Ce trait est donc, selon lui, d'autant plus propre au sémitique. Il s'affaiblit en amharique et reste très vivant en arabe."
     },
     "historyAndOrigins": {
-      "probableOrigin": " **Théorie linguistique principale** : Le proto-sémitique est une branche de la famille afro-asiatique. **Andrew Kitchen, Christopher Ehret, Shiferaw Assefa** et **Connie J. Mulligan** (2009) dans *\"Bayesian phylogenetic analysis of Semitic languages identifies an Early Bronze Age origin of Semitic in the Near East\"* (Proceedings of the Royal Society B) estiment que le proto-sémitique a divergé il y a environ **5 750 ans avant le présent** (vers 3750 av. J.-C.) dans le Levant (Proche-Orient), durant l'Âge du Bronze ancien. Cette étude phylogénétique bayésienne situe l'origine au Levant avec une diffusion ultérieure vers l'Arabie du Sud puis la Corne de l'Afrique vers **2 800 ans avant le présent** (vers 800 av. J.-C.). **Théorie alternative « Africanist view »** : Certains linguistes (notamment **Robert Hetzron** 1972, **Lionel Bender**, **Roger Blench** 2006) proposent une origine africaine pour les langues sémitiques, basée sur le nombre élevé de langues sémitiques en Éthiopie et la « règle du moins de mouvements » linguistiques, suggérant que l'Éthiopie pourrait être la zone « least moved » (moins déplacée) pour la branche sémitique. **Théorie archéologique** : Les premières attestations écrites de langues sémitiques apparaissent en Mésopotamie avec l'akkadien vers **2500-2300 av. J.-C.** (inscriptions cunéiformes), dans le Levant avec l'ougaritique vers **1400 av. J.-C.**, et en Éthiopie avec le guèze (inscriptions aksoumites) vers le **IVe-Ve siècle ap. J.-C.** **Études génétiques** : **Luca Pagani** et al. (2015) dans *\"Ethiopian genetic diversity reveals linguistic stratification and complex influences on the Ethiopian gene pool\"* (Nature Communications) montrent l'introduction d'une composante ouest-eurasienne en Éthiopie il y a environ **3 000 ans**, corrélée avec l'arrivée des langues éthiosémitiques depuis l'Arabie du Sud. Les populations parlant des langues sémitiques en Afrique présentent des patrimoines génétiques majoritairement africains avec des apports ouest-eurasiens anciens.",
-      "emergencePeriod": " (1) **Émergence historique de la FLG** : Proto-sémitique estimé vers **3750-3000 av. J.-C.** selon les reconstructions linguistiques (Kitchen et al. 2009). Premières attestations écrites : akkadien vers 2500-2300 av. J.-C., ougaritique vers 1400 av. J.-C., guèze vers IVe-Ve siècle ap. J.-C. (2) **Date de classification académique** : Terme « sémitique » introduit en **1781** par August Ludwig von Schlözer, popularisé en **1795** par Johann Gottfried Eichhorn. Classification moderne de la famille sémitique comme branche de l'afro-asiatique développée au XIXe siècle par **Carl Brockelmann** (1908-1913, *Grundriss der vergleichenden Grammatik der semitischen Sprachen*), **Joseph Greenberg** (1950, *Studies in African Linguistic Classification*), **Robert Hetzron** (1972, classification des langues éthiosémitiques).",
-      "diffusion": " **Théorie 1 (dominante)** : Origine au Levant (Proche-Orient) vers 3750 av. J.-C., expansion vers le sud dans la péninsule Arabique, puis diffusion vers la Corne de l'Afrique vers 800 av. J.-C. via les routes commerciales de la mer Rouge. Expansion de l'arabe à partir du VIIe siècle ap. J.-C. avec l'islam vers l'Afrique du Nord, l'Espagne, et au-delà. **Théorie 2 (Africanist)** : Origine en Afrique du Nord-Est ou dans la Corne de l'Afrique, avec migrations vers le Proche-Orient et la péninsule Arabique au cours du IVe millénaire av. J.-C., basée sur la diversité des langues sémitiques en Éthiopie. **Théorie 3** : Plusieurs vagues de diffusion : (a) langues sémitiques orientales (akkadien) en Mésopotamie, (b) langues nord-ouest sémitiques (cananéen, araméen, hébreu) au Levant, (c) langues sud-sémitiques en Arabie du Sud, (d) langues éthiosémitiques en Corne de l'Afrique via migrations depuis l'Arabie du Sud vers 800 av. J.-C.",
-      "historicalBreaks": " - Disparition du sémitique oriental (akkadien éteint vers le Ier siècle av. J.-C.) - Séparation entre sémitique nord-ouest et arabe (vers le Ier millénaire av. J.-C.) - Diffusion massive de l'arabe à partir du VIIe siècle ap. J.-C. (expansion islamique), remplacement de nombreuses langues locales en Afrique du Nord et au Moyen-Orient - Développement local des langues éthiosémitiques en Éthiopie et Érythrée, diversification interne vers 1200-1600 ans avant le présent - Renaissance de l'hébreu comme langue vernaculaire à partir du XIXe siècle (hébreu moderne)",
-      "contactZones": " **Régions géographiques précises** : (1) **Levant** : Syrie, Liban, Palestine/Israël, Jordanie — contact avec langues indo-européennes (hittite, grec), langues non-sémitiques. (2) **Péninsule Arabique** : Yémen, Oman, Arabie Saoudite — zones de contact entre langues sud-arabiques anciennes et modernes, routes commerciales. (3) **Corne de l'Afrique** : Éthiopie (régions Amhara, Tigray), Érythrée, nord de la Somalie — contact intense entre langues éthiosémitiques (amharique, tigrinya) et langues couchitiques (oromo, somali, afar) et omotiques. Villes portuaires sur la mer Rouge : Massawa, Assab (Érythrée), Djibouti. (4) **Afrique du Nord** : Égypte, Libye, Maghreb (Algérie, Tunisie, Maroc) — contact entre arabe et berbère, arabisation progressive depuis le VIIe siècle. Routes caravanières trans-sahariennes. (5) **Routes commerciales** : Mer Rouge (Yémen ↔ Corne de l'Afrique), routes caravanières arabes, ports méditerranéens. **Zones de métissage linguistique spécifiques** : Vallée du Nil (contact arabe/nubien), Sahel (contact arabe/langues africaines), côtes swahili (emprunts arabes en swahili)."
+      "probableOrigin": "Plusieurs explications de l'origine des langues sémitiques sont présentées ici côte à côte.\n\nEn 2009, Andrew Kitchen, Christopher Ehret, Shiferaw Assefa et Connie Mulligan ont comparé le vocabulaire de 25 langues sémitiques avec une méthode statistique qui reconstruit leur arbre de parenté et en estime les dates. Selon eux, l'ancêtre commun de ces langues se parlait au Levant, sur la côte est de la Méditerranée, il y a environ 5 750 ans. Ils rappellent que la famille afro-asiatique, dont le sémitique est une branche, est souvent située en Afrique, et que l'ancêtre du sémitique s'en serait détaché avant d'être parlé au Proche-Orient. Ils ont aussi comparé leur modèle à l'hypothèse d'une origine africaine du sémitique lui-même, que leurs résultats ne soutiennent pas.\n\nPour les langues sémitiques d'Éthiopie et d'Érythrée, les mêmes auteurs proposent une seule arrivée depuis le sud de l'Arabie, il y a environ 2 800 ans. L'historien Taddesse Tamrat écrit au contraire en 1985, dans l'Histoire générale de l'Afrique publiée par l'UNESCO, que l'idée d'une arrivée de ces langues depuis le sud de l'Arabie après 700 avant notre ère ne paraît plus plausible. Les deux explications divergent donc sur la manière dont ces langues sont arrivées dans la Corne de l'Afrique.\n\nLa génétique décrit les populations, pas les langues. En 2012, Luca Pagani et ses coauteurs estiment qu'une part du patrimoine génétique des locuteurs de langues sémitiques et couchitiques d'Éthiopie vient d'un apport extérieur à l'Afrique, il y a environ 3 000 ans. Cet apport est plus proche des populations du Levant et d'Égypte que de celles de l'Arabie, selon ces auteurs.",
+      "emergencePeriod": "Andrew Kitchen et ses coauteurs situent l'ancêtre commun des langues sémitiques il y a environ 5 750 ans, avec une marge de 4 400 à 7 400 ans. Les langues sémitiques d'Éthiopie se seraient séparées rapidement les unes des autres il y a environ 2 850 ans, selon les mêmes auteurs.\n\nLes plus anciennes inscriptions en guèze datent pour la plupart du IVe siècle de notre ère et se trouvent à Aksoum, alors capitale du royaume, selon Marcel Cohen, qui date la naissance de l'écriture éthiopienne du IIIe siècle. La langue arabe apparaît d'abord dans une inscription funéraire royale datée de 328, à En-Nemara, au sud-est de Damas, selon le même auteur. Le nom de la famille est bien plus récent : il apparaît en 1781.",
+      "diffusion": "Selon Andrew Kitchen et ses coauteurs, les langues sémitiques se sont d'abord réparties au Proche-Orient et en Arabie. Les langues sémitiques d'Éthiopie et d'Érythrée seraient ensuite arrivées depuis le sud de l'Arabie, puis se seraient répandues rapidement dans la Corne de l'Afrique.\n\nL'amharique est la langue du roi depuis la fin du XIIIe siècle et s'étend ensuite sur une grande partie des hauts plateaux d'Éthiopie, selon Marcel Cohen. Les parlers gouragué marquent l'avancée la plus méridionale de ces langues, selon le même auteur.\n\nL'arabe se répand à partir du VIIe siècle avec les armées de l'islam, de l'Arabie jusqu'à l'Afrique du Nord et à la vallée du Nil, selon Cohen. Les parlers arabes qui en sont issus vont, en 1924, de l'Égypte à l'Atlantique et jusqu'aux abords du lac Tchad.",
+      "historicalBreaks": "Le sémitique oriental a disparu : il réunit l'akkadien et l'éblaïte, deux langues éteintes, selon Andrew Kitchen et ses coauteurs. En Éthiopie, l'empire d'Aksoum se disloque vers le Xe siècle, selon Marcel Cohen. Le guèze reste alors la langue de l'écrit et de la liturgie, tandis que la langue parlée de la région d'Aksoum devient le tigrigna. À la fin du XIIIe siècle, un empire chrétien se reconstitue dans le Choa, avec l'amharique comme langue parlée. Aux XVe et XVIe siècles, l'expansion des Oromo coupe pour quatre siècles les parlers gouragué du reste des langues sémitiques d'Éthiopie, selon Cohen.",
+      "contactZones": "Sur les hauts plateaux d'Éthiopie et d'Érythrée, les langues sémitiques côtoient les langues couchitiques. L'amharique y a recouvert des parlers couchitiques, selon Marcel Cohen. Le tigré se parle sur la côte, de Massaoua à Souakin, et dans les îles Dahlak. La ville éthiopienne de Harar a sa propre langue sémitique, le harari.\n\nEn Afrique du Nord, l'arabe s'étend depuis le VIIe siècle au contact du berbère, qui recule devant lui en beaucoup d'endroits, selon Cohen. Au Soudan et autour du lac Tchad, des parlers arabes se sont formés au contact d'autres langues africaines, selon le même auteur.",
+      "majorEvents": "Au IVe siècle, le roi d'Aksoum qui introduit le christianisme dans son royaume fait graver la plupart des plus anciennes inscriptions en guèze, selon Marcel Cohen. La Bible paraît avoir été traduite en guèze au Ve siècle, selon le même auteur.\n\nAu VIIe siècle, l'islam diffuse l'arabe, la langue du Coran, en Afrique du Nord et dans la vallée du Nil, selon Cohen.\n\nSous la colonisation italienne de l'Érythrée, l'administration emploie le tigrigna, qui s'écrit alors davantage, selon Cohen en 1924.\n\nEn 2007, le recensement de l'Éthiopie compte 21 634 396 personnes de langue maternelle amharique et 4 324 933 de langue maternelle tigrigna."
     },
     "distribution": {
       "totalSpeakers": 460000000,
       "distributionByCountry": {
-        "ETH": 27191578
+        "ETH": 28391475
       }
     },
     "sources": [
@@ -197,13 +407,8 @@
         "title": "Kitchen, Andrew ; Ehret, Christopher ; Assefa, Shiferaw ; Mulligan, Connie J. (2009) – *Bayesian phylogenetic analysis of Semitic languages identifies an Early Bronze Age origin of Semitic in the Near East*. Proceedings of the Royal Society B: Biological Sciences, vol. 276, n° 1668, p. 2703-2710. DOI: 10.1098/rspb.2009.0408",
         "url": null,
         "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "Pagani, Luca ; Schiffels, Stephan ; Gurdasani, Deepti ; et al. (2015) – *Ethiopian genetic diversity reveals linguistic stratification and complex influences on the Ethiopian gene pool*. Nature Communications, vol. 6, article 1552. DOI: 10.1038/ncomms1552",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Article lu le 3 novembre 2026 en libre accès sur PubMed Central, à l'adresse https://pmc.ncbi.nlm.nih.gov/articles/PMC2839953/."
       },
       {
         "title": "Schlözer, August Ludwig von (1781) – *Von den Chaldäern*. Repertorium für biblische und morgenländische Literatur, Göttingen",
@@ -221,20 +426,9 @@
         "tier": "referenced"
       },
       {
-        "title": "Müller, Friedrich (1876) – *Grundriss der Sprachwissenschaft*. Stuttgart: Ferdinand Enke",
-        "url": null,
-        "tier": "referenced"
-      },
-      {
         "title": "Brockelmann, Carl (1908-1913) – *Grundriss der vergleichenden Grammatik der semitischen Sprachen*. Berlin: Reuther & Reichard",
         "url": null,
         "tier": "referenced"
-      },
-      {
-        "title": "Greenberg, Joseph H. (1950) – *Studies in African Linguistic Classification: IV. Chamito-Semitic*. Southwestern Journal of Anthropology, vol. 6, n° 4, p. 487-498",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic"
       },
       {
         "title": "Hetzron, Robert (1972) – *Ethiopian Semitic: Studies in Classification*. Journal of Semitic Studies, Monograph n° 2. Manchester: Manchester University Press",
@@ -299,13 +493,155 @@
         "title": "Glottolog 5.2 – classification génétique \"Semitic [semi1276]\", 3 branches immédiates (East Semitic, Unclassified Semitic, West Semitic) ; les langues sémitiques africaines vivantes (arabe, éthiosémitique) appartiennent toutes au Sémitique occidental",
         "url": "https://glottolog.org/resource/languoid/id/semi1276",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Notice relue le 3 novembre 2026, dans l'édition 5.3 du catalogue : les trois branches immédiates sont inchangées."
       },
       {
         "title": "Ethiopian Statistics Service / Population Census Commission (2007) – Summary and Statistical Report of the 2007 Population and Housing Census, Table 2.2/Annexe : somme des nationalités éthiosémitiques recensées (Amhara 19 867 817, Tigrie/Tigrinya 4 483 776, Guragie 1 867 350, Silte 940 766, Hareri 31 869) = 27 191 578",
         "url": "https://ess.gov.et/wp-content/uploads/2026/06/national-population-and-housing-census-report-2007.pdf",
         "tier": "official",
-        "source_kind": "official_statistics"
+        "source_kind": "official_statistics",
+        "notes": "Ce titre donne les effectifs des peuples, et non des langues. Nous n'avons pas pu rouvrir ce fichier le 3 novembre 2026. Le chiffre par pays de la répartition vient désormais du tableau des langues maternelles du rapport national du même recensement."
+      },
+      {
+        "title": "Glottolog 5.3 — Semitic (semi1276)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/semi1276",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice consultée le 3 novembre 2026, avec sa version de données. Le catalogue range le sémitique dans la famille afro-asiatique et lui compte 96 langues, disparues comprises, en trois branches : East Semitic, Unclassified Semitic et West Semitic. Le groupe éthiosémitique y compte 16 langues et l'arabe 37."
+      },
+      {
+        "title": "Glottolog 5.3 — Afro-Asiatic (afro1255)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/afro1255",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice consultée le 3 novembre 2026, avec sa version de données. Le catalogue y range cinq branches : Berber, Chadic, Cushitic, Egyptian et Semitic."
+      },
+      {
+        "title": "Bayesian phylogenetic analysis of Semitic languages identifies an Early Bronze Age origin of Semitic in the Near East",
+        "author": "Andrew Kitchen, Christopher Ehret, Shiferaw Assefa, Connie J. Mulligan",
+        "year": 2009,
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2839953/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Proceedings of the Royal Society B, vol. 276, n° 1668, 2009. Lu le 3 novembre 2026 en libre accès sur PubMed Central. Passages lus : « We estimate an Early Bronze Age origin for Semitic approximately 5750 years ago in the Levant », « a single introduction of early Ethiosemitic from southern Arabia approximately 2800 years ago », et l'hypothèse d'une diffusion de ces langues « through existing African populations with little gene flow from the Arabian Peninsula ».",
+        "page": "p. 2703-2710"
+      },
+      {
+        "title": "Ethiopian Genetic Diversity Reveals Linguistic Stratification and Complex Influences on the Ethiopian Gene Pool",
+        "author": "Luca Pagani, Toomas Kivisild, Ayele Tarekegn, Chris Tyler-Smith et al.",
+        "year": 2012,
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3397267/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "American Journal of Human Genetics, vol. 91, n° 1, 2012. Lu le 3 novembre 2026 en libre accès sur PubMed Central. Passages lus : une part non africaine du patrimoine génétique, présente chez les locuteurs de langues sémitiques et couchitiques étudiés, viendrait d'un apport « which we estimate to have occurred ∼3 thousand years ago », et cette part est « more similar to populations inhabiting the Levant rather than the Arabian Peninsula ».",
+        "page": "p. 83-96"
+      },
+      {
+        "title": "The 2007 Population and Housing Census of Ethiopia: Statistical Report at Country Level",
+        "author": "Office of the Population Census Commission, Central Statistical Agency",
+        "year": 2010,
+        "url": "https://microdata.worldbank.org/catalog/2747/related-materials",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport national du recensement éthiopien de 2007, publié à Addis-Abeba et mis en ligne dans le catalogue de microdonnées de la Banque mondiale. Lu le 3 novembre 2026. Tableau 3.2, « Population by Urban-Rural Residence, Sex, and Mother Tongue » : Amarigna 21 634 396, Tigrigna 4 324 933, Guragiegna 1 481 836, Shitagna 880 818, Argobigna 43 682, Hareriegna 25 810, pour une population de 73 750 932. La langue maternelle y est la langue parlée en famille pendant l'enfance. La ligne Shitagna correspond à la langue silte : ses effectifs par région suivent ceux du peuple silte recensé dans le même rapport. La somme de ces six langues sémitiques donne 28 391 475 personnes.",
+        "page": "p. 71 et 90-91"
+      },
+      {
+        "title": "Grundriss der Sprachwissenschaft, tome III, 2e partie : Die Sprachen der mittelländischen Rasse",
+        "author": "Friedrich Müller",
+        "year": 1885,
+        "url": "https://archive.org/details/grundrissderspra03mlle",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Vienne, Alfred Hölder, 1885. Le tome III s'intitule Die Sprachen der lockenhaarigen Rassen, « les langues des races aux cheveux bouclés ». Lu le 3 novembre 2026 dans la numérisation d'Internet Archive, au début du chapitre « Der hamito-semitische Sprachstamm ». Passage lu : les langues de ces peuples, « fasst man gegenwärtig unter der Bezeichnung der hamito-semitischen zusammen », parce que la Bible les donne pour « Abkömmlinge der beiden Söhne Noah's, Ham (Cham) und Sem (Schem) ». Traduction des passages par nos soins.",
+        "page": "p. 223-225"
+      },
+      {
+        "title": "A Religious Encyclopaedia, tome IV, article « Semitic Languages »",
+        "author": "Crawford H. Toy",
+        "year": 1891,
+        "url": "https://archive.org/details/religiousencyclo04herz",
+        "tier": "referenced",
+        "source_kind": "encyclopedia",
+        "notes": "Encyclopédie dirigée par Philip Schaff, troisième édition revue, New York, Funk & Wagnalls, 1891. Article signé C. H. Toy. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Passage lu : « The first known use of the term is in Schlözer's article on the Chaldaeans, in Eichhorn's Repertorium, 8, 161 (1781) », puis « a similar claim is made by Eichhorn himself, without mention of Schlözer, in his Allgemeine Bibliothek, 6, 772 (1794) ». L'article ajoute qu'avant ce nom, « Oriental languages » désignait seulement l'hébreu et ses langues sœurs.",
+        "page": "p. 2153"
+      },
+      {
+        "title": "Histoire générale et système comparé des langues sémitiques, première partie",
+        "author": "Ernest Renan",
+        "year": 1855,
+        "url": "https://archive.org/details/histoiregnraleet00rena_0",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Paris, Imprimerie impériale, 1855. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Passages lus au premier chapitre, sur le nom de langues orientales, sur le nom sémitique et sur la « race sémitique ».",
+        "page": "p. 1-5"
+      },
+      {
+        "title": "Races of Africa",
+        "author": "C. G. Seligman",
+        "year": 1930,
+        "url": "https://archive.org/details/dli.ernet.277097",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Londres, Thornton Butterworth, collection Home University Library, première édition, 1930. L'auteur est professeur d'ethnologie à l'université de Londres. Lu le 3 novembre 2026 dans la numérisation de la Digital Library of India sur Internet Archive. Passage lu au début du chapitre V : « the civilizations of Africa are the civilizations of the Hamites, its history the record of these peoples and of their interaction with the two more primitive African stocks ». Traduction des passages par nos soins.",
+        "page": "p. 15 et 96"
+      },
+      {
+        "title": "Les langues du monde, chapitre « Langues chamito-sémitiques »",
+        "author": "Marcel Cohen",
+        "year": 1924,
+        "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Chapitre lu en entier pour les langues sémitiques : caractères communs, arabe et langues d'Éthiopie.",
+        "page": "p. 81-127"
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Le sémitique est une famille de langues parlées de l'Afrique du Nord à la Corne de l'Afrique, comme l'arabe, l'amharique et le tigrinya. Son nom renvoie à Sem, un fils de Noé dans la Bible.",
+      "followUp": "Pourquoi ce nom a-t-il aussi servi à classer des peuples en races ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "ETH",
+          "speakers": 28391475,
+          "source": {
+            "title": "The 2007 Population and Housing Census of Ethiopia: Statistical Report at Country Level",
+            "url": "https://microdata.worldbank.org/catalog/2747/related-materials",
+            "tier": "official",
+            "notes": "Rapport national du recensement éthiopien de 2007, publié à Addis-Abeba et mis en ligne dans le catalogue de microdonnées de la Banque mondiale. Lu le 3 novembre 2026. Tableau 3.2, « Population by Urban-Rural Residence, Sex, and Mother Tongue » : Amarigna 21 634 396, Tigrigna 4 324 933, Guragiegna 1 481 836, Shitagna 880 818, Argobigna 43 682, Hareriegna 25 810, pour une population de 73 750 932. La langue maternelle y est la langue parlée en famille pendant l'enfance. La ligne Shitagna correspond à la langue silte : ses effectifs par région suivent ceux du peuple silte recensé dans le même rapport. La somme de ces six langues sémitiques donne 28 391 475 personnes."
+          }
+        },
+        {
+          "country": "MAR",
+          "speakers": 33845235,
+          "source": {
+            "title": "Haut-Commissariat au Plan du Maroc (2024) – Recensement Général de la Population et de l'Habitat 2024, Principaux résultats, Rabat, 17 décembre 2024, p. 19",
+            "url": "https://www.hcp.ma/file/242665/",
+            "tier": "official",
+            "notes": "Présentation officielle des principaux résultats, lue le 3 novembre 2026. Page 5 : « la population légale du Royaume du Maroc s'élève à 36 828 330 habitants ». Page 19 : « Près de neuf personnes sur dix (91,9%) utilise Darija marocain », l'arabe parlé au Maroc, et « Hassania est utilisée par 0,8% de la population ». Le HCP donne une part de la population, pas un nombre de locuteurs. Le chiffre de 33 845 235 est notre calcul : 91,9 % de la population légale. La page ne précise pas si la part se rapporte à toute la population légale."
+          }
+        }
+      ]
+    },
+    "gaps": [
+      {
+        "field": "content.decolonialHeader.selfAppellation",
+        "reason": "Nous n'avons pas trouvé de source qui donne un nom que les locuteurs de ces langues emploient eux-mêmes pour l'ensemble de la famille. Nous avons cherché dans le catalogue Glottolog, dans le chapitre de Marcel Cohen sur les langues chamito-sémitiques et dans le rapport du recensement éthiopien de 2007."
+      },
+      {
+        "field": "content.generalInfo.totalSpeakers",
+        "reason": "Nous n'avons pas trouvé de source lue qui compte les locuteurs de toutes les langues sémitiques. Le catalogue Glottolog ne donne pas de chiffre, les ouvrages anciens que nous avons lus donnent des chiffres des années 1920, et les sites d'Ethnologue et de l'Encyclopædia Britannica ne nous étaient pas accessibles. Le chiffre affiché n'est qu'un ordre de grandeur."
+      },
+      {
+        "field": "content.speakers.byCountry",
+        "reason": "Nous n'avons pas encore trouvé de chiffre officiel des locuteurs pour les autres pays africains où l'on parle une langue sémitique, comme l'Égypte, le Soudan, l'Algérie, la Tunisie, la Libye, la Mauritanie, le Tchad ou l'Érythrée. Les chiffres donnés ici viennent du recensement de l'Éthiopie de 2007 et du recensement du Maroc de 2024."
       }
     ]
   }
