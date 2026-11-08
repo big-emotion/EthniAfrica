@@ -4,7 +4,7 @@
   "nameEn": "Gur / Voltaic (terme ancien)",
   "classificationStatus": "colonial-legacy",
   "nameHistory": {
-    "summary": "Le nom gur désigne une famille de langues d'Afrique de l'Ouest, parlées au Burkina Faso et dans le nord de la Côte d'Ivoire, du Ghana, du Togo et du Bénin, comme le moore, le dagomba ou le gourma. C'est un nom de savants ; en français, on a longtemps dit voltaïque. Le mot gur viendrait des noms de plusieurs de ces langues, qui commencent par gur-, selon un linguiste. Les sources ne s'accordent pas sur les langues que ce nom réunit ; nous les présentons plus bas.",
+    "summary": "Le nom gur désigne une famille de langues d'Afrique de l'Ouest, parlées au Burkina Faso et dans le nord de la Côte d'Ivoire, du Ghana, du Togo et du Bénin, comme le moore, le dagomba ou le gourma. C'est un nom de savants ; en français, on a longtemps dit voltaïque. Le mot gur viendrait des noms de plusieurs de ces langues, qui commencent par gur-, selon deux linguistes. Les sources ne s'accordent pas sur les langues que ce nom réunit ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Gur",
@@ -163,7 +163,7 @@
               "to": null,
               "label": "Explication non datée"
             },
-            "statement": "Le nom gur viendrait des noms de plusieurs langues du groupe qui commencent par gur-, comme le gurma ou le gurenɛ, selon le linguiste Rolf Theil. Il attribue ce nom à l'africaniste allemand Gottlob Adolf Krause, en 1895 ; nous n'avons pas lu le texte de Krause.",
+            "statement": "Le nom gur viendrait des noms de plusieurs langues du groupe qui commencent par gur-, comme le gurma ou le gurenɛ, selon le linguiste Rolf Theil. Le linguiste ghanéen Adams Bodomo donne la même explication en 1993, avec le gurma, le gurenne et le gurusi. Rolf Theil attribue ce nom à l'africaniste allemand Gottlob Adolf Krause, en 1895 ; nous n'avons pas lu le texte de Krause.",
             "sources": [
               {
                 "title": "Store norske leksikon — gurspråk",
@@ -173,6 +173,16 @@
                 "tier": "unverified",
                 "source_kind": "encyclopedia",
                 "notes": "Encyclopédie norvégienne en ligne, article signé par un professeur émérite de linguistique de l'université d'Oslo, lu le 18 octobre 2026 (mise à jour du 7 septembre 2026) : « Termen gur blei føreslått i 1895 av den tyske afrikanisten Gottlob Adolf Krause (1850–1938), på grunnlag av at fleire språk i denne gruppa har namn som byrjar med gur-, til dømes gurma og gurenɛ ». L'article ne donne pas le titre de la publication de Krause, et nous ne l'avons pas lue."
+              },
+              {
+                "title": "Complex Predicates and Event Structure: An Integrated Analysis of Serial Verb Constructions in the Mabia Languages of West Africa",
+                "author": "Adams B. Bodomo",
+                "year": 1993,
+                "url": "https://archive.org/details/ERIC_ED373534",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 111-112",
+                "notes": "Thèse de l'université de Trondheim, numérisée par la base ERIC et conservée par Internet Archive, lue le 3 novembre 2026 : « some language names such as 'gurma', 'gurenne' and 'gurusi' begin with syllables resembling 'Gur' ». L'auteur ne nomme pas qui a choisi ce nom."
               }
             ]
           }
@@ -251,21 +261,22 @@
     ]
   },
   "content": {
-    "searchAnswer": {
-      "lead": "Des langues d'Afrique de l'Ouest, du sud du Mali au nord du Ghana. Leur ancien nom, « voltaïque », vient du fleuve Volta ; pour l'un de leurs groupes, des linguistes disent aujourd'hui « mabia ».",
-      "followUp": "D'où vient le mot « gur » ?"
-    },
     "decolonialHeader": {
-      "whyProblematic": " - « Voltaïque » est un terme purement géographique imposé par l'administration coloniale, sans consultation des communautés locales. Le terme nomme selon un référent géographique (fleuve Volta) sans tenir compte des auto-appellations endogènes.",
-      "selfAppellation": null,
-      "contemporaryUsage": "Bodomo publie *Handbook of the Mabia Languages of West Africa* (2020) en utilisant explicitement Mabia comme terme remplaçant « Central Gur » dans la classification moderne. Les locuteurs de Dagbani, Kusaal, Wala, Sisaali, etc. utilisent ou acceptent l'appellation Mabia.",
+      "linkWithFamily": "Le gur est une branche de la famille niger-congo, selon Rolf Theil, qui reprend la classification de Joseph Greenberg de 1963. Le catalogue Glottolog le place dans l'ensemble atlantique-congo, à l'intérieur du groupe volta-congo puis du groupe North Volta-Congo, où le senoufo forme une branche à part.",
       "historicalAppellations": [
         "Voltaïque",
         "Langues voltaïques",
         "Gour",
-        "Langues gour"
+        "Langues gour",
+        "North-Eastern High-Sudan Languages"
       ],
-      "originOfHistoricalTerm": " Le terme « voltaïque » (anglais : « Voltaic ») a été proposé par Maurice Delafosse, administrateur et linguiste colonial français, qui l'emploie dès 1914 pour désigner les langues parlées dans le bassin des branches supérieures du fleuve Volta (Burkina Faso, Ghana). Sigismund Wilhelm Koelle mentionne pour la première fois ces langues sous l'appellation « North-Eastern High Sudan » dans son ouvrage *Polyglotta Africana* (Koelle 1854), correspondant à ce qui sera plus tard classé comme Gur. Le terme « Gur » lui-même a été adopté par les linguistes du XXe siècle, notamment par John T. Bendor-Samuel dans les années 1970 et Gabriel Manessy dans ses travaux sur les langues Oti-Volta (Manessy 1975, 1979), pour remplacer « Voltaic » dans un souci de classification plus cohérente. En français, le nom s'écrit aussi « Gour » (langues gour). Ce nom aurait été forgé dès 1895 par un linguiste allemand, à partir de la première syllabe que l'on entend dans plusieurs noms de peuples voisins (Gourmantché, Gourounsi), d'après une source non vérifiée ; les linguistes du XXe siècle l'ont ensuite repris. Les peuples qui parlent ces langues ne se donnent pas de nom commun : le nom de la famille est celui d'un groupement de linguistes, non celui d'un peuple."
+      "originOfHistoricalTerm": "Le nom voltaïque vient du fleuve Volta. Maurice Delafosse, administrateur colonial français et linguiste, l'emploie en 1914 pour un groupe de langues dont le domaine correspond, écrit-il, « aux plateaux et aux vallées des branches supérieures de la Volta ». Soixante ans plus tôt, en 1854, le missionnaire allemand Sigismund Wilhelm Koelle avait déjà réuni plusieurs de ces langues, dont le mose (le mooré), le guresa et le gurma, dans un groupe qu'il appelle « North-Eastern High-Sudan Languages », les langues du Haut-Soudan du nord-est. Il avait recueilli leurs mots en Sierra Leone, auprès de locuteurs emmenés loin de chez eux. Le nom gur aurait été proposé en 1895 par l'africaniste allemand Gottlob Adolf Krause, selon Rolf Theil. Il viendrait de la syllabe gur- qui ouvre les noms de plusieurs langues du groupe, comme le gurma et le gurenne, selon Rolf Theil et selon Adams Bodomo. En français, on écrit aussi « gour ». Les peuples qui parlent ces langues ne se donnent pas de nom commun : gur et voltaïque sont des noms de linguistes.",
+      "whyProblematic": "Les noms voltaïque et gur ont été donnés par des savants européens, et non par les peuples qui parlent ces langues. Voltaïque vient du nom d'un fleuve, et Maurice Delafosse, qui l'emploie dès 1914, était administrateur colonial. Gur vient de quelques noms de langues qui commencent par gur-. Adams Bodomo, linguiste ghanéen dont le dagaare est la langue maternelle, explique en 1993 que de nombreux groupes de langues africaines portent ainsi le nom d'un fleuve ou d'une syllabe. Il cherche un nom tiré des langues elles-mêmes et propose mabia, qu'il juge « more authentic and more appropriate », plus authentique et plus juste que le nom d'oti-volta occidental.",
+      "selfAppellation": "Aucun peuple ne se donne le nom gur ou voltaïque : ce sont des noms de savants pour un ensemble de langues apparentées. En 1993, le linguiste ghanéen Adams Bodomo propose le nom mabia pour le groupe oti-volta occidental, qui comprend entre autres le dagaare, le dagbane, le gurenne, le kusaal, le mampruli et le mooré. Le mot est formé de ma, « mère », et de bia, « enfant ». Selon lui, les locuteurs de la plupart de ces langues l'emploient pour dire le lien entre frères et sœurs, et il le choisit pour dire que ces langues sont sœurs. C'est la proposition d'un linguiste, que Rolf Theil décrit comme étendue depuis à toute la branche. Nos sources ne disent pas que les locuteurs appellent leurs langues ainsi.",
+      "contemporaryUsage": "Le nom gur est aujourd'hui le plus courant chez les linguistes, surtout en anglais ; en français, on trouve aussi langues voltaïques, selon Rolf Theil. Le catalogue Glottolog range sous le nom gur 93 langues, réparties en six branches, dont la plus grande, le gur central, compte 81 langues. Depuis 1993, Adams Bodomo et d'autres linguistes emploient le nom mabia, d'abord pour le groupe oti-volta occidental, puis pour toute la branche selon Rolf Theil. Un manuel collectif paru en 2020, le Handbook of the Mabia Languages of West Africa, porte ce nom. Le nom voltaïque sert aussi hors de la linguistique : au recensement de 2021 en Côte d'Ivoire, 4 834 900 Ivoiriens sont classés dans le grand groupe ethnique « Gur/Voltaïque », selon l'Agence nationale de la statistique.",
+      "geographicArea": "Burkina Faso, Mali, nord de la Côte d'Ivoire, nord du Ghana, nord du Togo, nord du Bénin, ouest du Niger, ouest du Nigeria",
+      "numberOfLanguages": 93,
+      "totalSpeakers": 30000000
     },
     "generalInfo": {
       "branches": [
@@ -276,9 +287,18 @@
         "Tusia",
         "Viemo"
       ],
-      "geographicArea": "Sahel et savanes d'Afrique de l'Ouest, du sud du Mali au nord du Ghana, du Niger occidental au nord du Bénin",
-      "numberOfLanguages": 70,
-      "totalSpeakers": 20000000
+      "geographicArea": "Savanes d'Afrique de l'Ouest, entre la forêt au sud et le Sahara au nord : le Burkina Faso et les régions voisines du Mali, de la Côte d'Ivoire, du Ghana, du Togo et du Bénin, avec de plus petites zones dans l'ouest du Nigeria et du Niger, selon Rolf Theil.",
+      "numberOfLanguages": 93,
+      "totalSpeakers": 30000000,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "93 langues selon le catalogue Glottolog, sans le senoufo ; Rolf Theil en compte de 80 à 90"
+        },
+        "totalSpeakers": {
+          "note": "Un ordre de grandeur : plus de 30 millions de personnes ont une langue gur pour première langue, selon Rolf Theil, qui compte le senoufo dans le gur",
+          "unsourced": false
+        }
+      }
     },
     "associatedPeoples": [
       {
@@ -292,25 +312,50 @@
       {
         "name": "Gourmantché",
         "peopleId": "PPL_GOURMANTCHE"
+      },
+      {
+        "name": "Dagara",
+        "peopleId": "PPL_DAGARA"
+      },
+      {
+        "name": "Mamprusi",
+        "peopleId": "PPL_MAMPRUSI"
+      },
+      {
+        "name": "Kusasi",
+        "peopleId": "PPL_KUSASI"
+      },
+      {
+        "name": "Gourounsi",
+        "peopleId": "PPL_GOUROUNSI"
+      },
+      {
+        "name": "Lobi",
+        "peopleId": "PPL_LOBI"
+      },
+      {
+        "name": "Bwaba",
+        "peopleId": "PPL_BWABA"
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " Langues tonales avec structure syntaxique SVO (Sujet-Verbe-Objet) dominante. Exemples concrets : en Mooré, *N na ya* « Je mange riz » (*N* = je, *na* = mange, *ya* = riz) ; en Dagbani, *Dagbo langa* « langue de Dagbo » montre l'ordre possesseur-possédé avec postpositions. Système de classes nominales marqué par des suffixes dans certaines langues Gur. Exemple : dans les langues Oti-Volta, les noms peuvent être marqués par des suffixes de classe (-li, -la) qui influencent l'accord des adjectifs et déterminants. Distinction aspectuelle perfectif/imperfectif dans les verbes. Exemple : en Gur (Dagbani), les formes verbales marquent l'aspect achevé vs non-achevé via des affixes ou alternances internes (contraste entre passé accompli vs non accompli).",
-      "phonologicalFeatures": " Tonalité : Systèmes tonals avec généralement 2 à 4 tons contrastifs. Les tons peuvent porter des distinctions grammaticales (ex : temps/aspect) ainsi que lexicales. Exemple en Dagaare : *dá* (ton haut) « pousser » vs *dà* (ton bas) « acheter ». Certaines langues comme Koromfé sont atonales (cas rare dans Gur). Nasales syllabiques : Usage de nasales comme syllabes à elles seules en position initiale. Exemples : en Dagbani, *nzugu* « ma tête » ; *mbia* « mon enfant » dont la syllabe initiale est nasale et porte ton. Consonnes : Inventaire consonantique riche comprenant stops (voisés/non-voisés), fricatives, nasales, labi-vélaires (kp, gb), et parfois implosives (/ɓ/, /ɗ/) dans certaines langues comme Dagaare. Harmonie vocalique : Dans certaines langues de la branche Grusi (ex : Dagaare, Waale), harmonie basée sur ATR (Advanced/Non-Advanced Tongue Root, la position avancée ou rétractée de la racine de la langue, qui sépare deux séries de voyelles) avec longueur vocalique distinctive.",
-      "relationsWithNeighbors": " Emprunts lexicaux intenses avec les langues Mandé (Bambara, Malinké) dans les zones de contact, notamment dans le vocabulaire du commerce et de la végétation. Contacts avec les langues Kwa : les langues Gurunsi orientales (selon Kleinewillinghöfer 2002) montrent des influences des langues Kwa avec des emprunts lexicaux spécifiques. Emprunts entre langues Gur voisines : exemple, mots partagés comme *di* « manger » (Mooré *di*, Dagaare *di*) et *wɛ/kõwõ* « eau » (Mooré *wɛ*, Dagaare *kõwõ*) montrent des lexicalismes communs au sein du groupe.",
-      "keyInnovations": " - Développement des systèmes tonals grammaticaux utilisant les tons pour marquer des catégories grammaticales (nombre, aspect, classes nominales) en plus des distinctions lexicales"
+      "typology": "Les langues gur placent en général le sujet avant le verbe, puis l'objet, comme le français. Le senari, une langue senoufo, fait exception avec l'ordre sujet, objet, verbe, selon Rolf Theil, qui range le senoufo dans le gur. Ces langues enchaînent souvent plusieurs verbes dans une même phrase, ce que les linguistes appellent des verbes en série. Adams Bodomo y consacre sa thèse de 1993, à partir du dagaare, du dagbane, du gurenne, du kusaal, du mampruli et du mooré. Les noms se rangent en classes, un peu comme les genres du français mais en plus grand nombre, autour de cinq selon Rolf Theil. Chaque classe a sa marque au singulier et au pluriel, placée à la fin du mot. Dans la plupart de ces langues, le verbe porte aussi une terminaison qui distingue une action accomplie d'une action non accomplie, selon Adams Bodomo.",
+      "phonologicalFeatures": "Les langues gur sont sans doute toutes des langues à tons, selon Rolf Theil : la hauteur de la voix sur une syllabe peut changer le sens d'un mot. Dans le groupe qu'il appelle mabia, Adams Bodomo décrit surtout deux tons, qui distinguent des mots et aussi des formes grammaticales. Selon Rolf Theil, ces langues ont de sept à dix voyelles orales, ainsi que des voyelles nasales. La plupart ont des consonnes prononcées à la fois avec les lèvres et avec le fond de la bouche, notées kp, gb et ŋm. Beaucoup ont une harmonie vocalique : les voyelles d'un même mot appartiennent toutes à une même série, selon que la racine de la langue est avancée ou non. Adams Bodomo trouve ce trait en dagaare et en waale, mais pas dans les autres langues mabia qu'il a étudiées. Il signale aussi des consonnes nasales qui forment à elles seules une syllabe, surtout dans des pronoms et de petits mots grammaticaux.",
+      "relationsWithNeighbors": "Les langues gur côtoient les langues mandé, au Burkina Faso surtout. Une étude génétique publiée en 2012 par Chiara Barbieri et ses collègues décrit dans ce pays des peuples de langues gur et de langues mandé qui vivent côte à côte, après plusieurs vagues de migration. Plusieurs traits de prononciation du gur, comme l'harmonie vocalique et les consonnes kp et gb, se retrouvent chez des voisins non apparentés, selon Rolf Theil : des langues parlées par les mêmes personnes bilingues finissent par se ressembler. Plus à l'est, le linguiste Ulrich Kleinewillinghöfer montre que plusieurs langues classées dans le groupe adamawa, comme le tula et le waja, partagent avec le gur central des marques de classes et une partie du vocabulaire de l'agriculture. Au nord du Ghana, des langues gourounsi comme le sissala et le kasem séparent le dagaare des autres langues mabia, selon Adams Bodomo.",
+      "keyInnovations": "Le trait que les linguistes mettent le plus en avant pour le gur est la place des marques de classe. La plupart des langues niger-congo placent ces marques au début du nom, alors que les langues gur les placent à la fin, selon Adams Bodomo. Maurice Delafosse le notait déjà en 1914 : il opposait les langues qui marquent les classes de noms par des préfixes à celles, dont les langues voltaïques, qui les marquent par des suffixes. Gabriel Manessy a établi les sous-groupes du gur à partir des innovations que des langues partagent dans leur grammaire, comme le résume Émilio Bonvini. Rolf Theil précise que l'harmonie vocalique et les consonnes kp et gb ne sont pas propres au gur. On les trouve dans toute une bande de langues, de la côte atlantique de l'Afrique de l'Ouest jusqu'au Soudan du Sud, que le linguiste Tom Güldemann appelle la ceinture macro-soudanaise."
     },
     "historyAndOrigins": {
-      "probableOrigin": " Théories linguistiques : Sigismund Wilhelm Koelle (1854) mentionne pour la première fois des langues que l'on classerait aujourd'hui dans Gur sous l'appellation « North-Eastern High Sudan » dans *Polyglotta Africana*. Joseph H. Greenberg (1955, révisé 1963) dans *The Languages of Africa* classifie les langues alors appelées Voltaic comme branche du Niger-Congo. Gabriel Manessy (1975, 1979) contribue à la classification généalogique des langues voltaïques avec ses travaux sur le proto-central et les langues Oti-Volta. Tony Naden (1989) et Williamson & Blench (2000) affinent les subdivisions et rejettent l'inclusion des Sénoufo dans Gur. Ulrich Kleinewillinghöfer (2014) travaille sur les connexions Gur-Adamawa et les analyses typologiques modernes. Théories archéologiques : Les données archéologiques suggèrent une diffusion des pratiques agricoles (millet, sorgho) dans les savanes ouest-africaines, probablement il y a quelques millénaires (estimations variant entre ~3000-2000 av. J.-C. selon certains modèles), mais les preuves précises restent indirectes. Théories génétiques : L'étude « Contrasting maternal and paternal histories in the linguistic context of Burkina Faso » (de Filippo et al. 2011) montre que les populations parlant les langues Gur partagent des traits génétiques communs, notamment une forte fréquence de l'haplogroupe Y-chromosomique E-U175 (près de 67 % chez les Mossi), distincts des groupes Mandé voisins, indiquant une histoire de peuplement locale cohérente avec les frontières linguistiques.",
-      "emergencePeriod": " 1. Émergence historique de la FLG : Reconstruction linguistique suggère que le proto-Gur/Central Gur était déjà distinct il y a plusieurs millénaires, probablement au cours du 2e millénaire avant notre ère selon les modèles basés sur les technologies agricoles et migrations dans les savanes ouest-africaines. Certaines estimations archéologiques placent cette émergence dans le Néolithique ou Bronze ancien (~3000-2000 av. J.-C.), mais les données précises manquent et restent indirectes. 2. Date de classification académique : Le terme « voltaïque » apparaît chez Maurice Delafosse en 1914 ; Koelle (1854) parlait de « North-Eastern High Sudan ». Joseph Greenberg (1955, révisé 1963) classe les langues Voltaic comme branche du Niger-Congo. Le terme « Gur » est adopté dans les années 1970 par Bendor-Samuel et Manessy pour remplacer « Voltaic ». Le terme « Mabia » est proposé par Bodomo en 2017 et institutionnalisé en 2020 avec la publication du *Handbook of the Mabia Languages of West Africa*.",
-      "diffusion": " Théorie 1 : Expansion depuis le bassin de la Volta (région actuelle Burkina Faso-nord Ghana-Togo) par migration graduelle vers le nord et l'est, avec sédentarisation dans la savane boisée. Expansion des royaumes mossi (XVe–XIXe siècles) comme facteur de diffusion, migrations agricoles dans la zone voltaïque. Théorie 2 : Gradient de contact linguistique avec les langues Mande, Gurunsi, Kwa influençant la diffusion culturelle et lexicale. Kleinewillinghöfer (2014) propose que beaucoup de langues considérées dans Adamawa pourraient être plus proches de Gur que d'autres Adamawa, suggérant un continuum linguistique (savannas languages) plutôt qu'une séparation nette. Théorie 3 : Influence environnementale (climatique, écologique) sur la diffusion, avec adaptation agriculture ↔ langues. Certaines études génétiques suggèrent des expansions démographiques liées au climat (Holocene Climate Optimum) favorisant la dispersion nord-sud-est des locuteurs de proto-Gur/proto-Mabia.",
-      "historicalBreaks": " - Pressions mandingues au Moyen Âge affectant les zones frontalières - Colonisation française et britannique avec imposition de frontières administratives - Rejet académique de l'inclusion des Sénoufo dans Gur (Naden 1989, Williamson & Blench 2000) - Déplacements liés à la désertification et aux conflits sahéliens récents",
-      "contactZones": " Géographie précise : Frontière Burkina Faso / Côte d'Ivoire pour les langues Sénoufo ; zones nord Ghana / sud Burkina pour langues Oti-Volta ; zones nord Togo / nord Bénin avec Grusi ; régions sahéliennes et de savane au nord de la forêt de Côte d'Ivoire, du Mali central, Burkina Faso, nord Ghana, nord Togo, nord Bénin, sud-désert du Niger. Villes/routes précises : Corridors de commerce entre Ouagadougou (Burkina Faso), Kumasi (Ghana) via zones frontalières ; marchés transfrontaliers Burkina-Ghana ; routes commerciales précoloniales du Sahel-Savane (trans-sahariennes, échanges avec Mossi, Gonja) facilitant emprunts et échanges linguistiques. Zones de métissage linguistique spécifiques : Langues Gurunsi en zones de contact Kwa (régions orientales de Ghana/Togo) selon Kleinewillinghöfer (2002) ; zones côtières nord-Côte d'Ivoire, nord-Bénin ; zones autour de la Volta blanche/Volta noire dans Ghana."
+      "probableOrigin": "L'origine des langues gur fait l'objet de plusieurs hypothèses. Dans un travail de 1985, Dakubu situe le berceau des peuples de langues gur à l'ouest du Ghana, autour de Bobo-Dioulasso au Burkina Faso, parce que c'est là que ces langues sont les plus diverses, selon Adams Bodomo. En 1988, Tony Naden les fait plutôt venir de l'est, car le gur, le kwa et le bénoué-congo, ses plus proches parents, se rencontrent au centre du Nigeria, selon le même auteur. Gabriel Manessy reconstruit le vocabulaire du « proto-central », la langue ancienne d'où viendraient le gourounsi, l'oti-volta et le kurumfe. Il y voit une société d'agriculteurs de savane boisée, et juge « tentant » de la situer à l'est du Bénin, dans la vallée de la Bénoué, selon Ulrich Kleinewillinghöfer. Ce dernier ajoute que les ancêtres des locuteurs du gur central et de plusieurs langues adamawa cultivaient le mil et le sorgho dans une même savane. Du côté de la génétique, Chiara Barbieri et ses collègues trouvent en 2012 au Burkina Faso des lignées paternelles qui suivent les familles de langues, gur ou mandé, alors que les lignées maternelles sont presque les mêmes chez tous.",
+      "emergencePeriod": "Les sources que nous avons lues ne donnent pas de date pour la langue ancienne d'où viendraient les langues gur. Gabriel Manessy reconstruit en 1979 un « proto-central » qui se serait « scindé en trois unités », l'oti-volta, le gourounsi et le kurumfe, sans le dater, selon le compte rendu d'Émilio Bonvini. L'étude génétique de Chiara Barbieri et de ses collègues relève une forte croissance de la population il y a environ 12 000 à 10 000 ans, au moment d'une période plus humide. D'autres travaux ont proposé d'y voir la cause de l'expansion des langues niger-congo dans la région ; l'étude ne date pas le gur lui-même. Le classement des savants a sa propre histoire. Sigismund Wilhelm Koelle réunit plusieurs de ces langues en 1854, Maurice Delafosse les appelle voltaïques en 1914, et Adams Bodomo propose en 1993 le nom mabia pour le groupe oti-volta occidental. Un manuel collectif dirigé par Adams Bodomo, Hasiyatu Abubakari et Samuel Alhassan Issah reprend ce nom en 2020, selon Rolf Theil.",
+      "diffusion": "Les sources expliquent la diffusion des langues gur surtout à partir de leur répartition actuelle. Au nord du Ghana, le dagaare et le waale, à l'ouest, et le mooré, au nord, sont séparés des autres langues mabia par des langues gourounsi comme le sissala, le kasem, le tampulma et le vagla. Adams Bodomo y voit la trace d'un déplacement : des locuteurs du mabia occidental et du mooré auraient quitté leurs parents de l'est et traversé des régions de langue gourounsi. Une autre explication ferait avancer des locuteurs du gourounsi au milieu d'une région de langue mabia ; Adams Bodomo juge la première plus probable. Il signale aussi des migrations récentes : des Birifor passent encore la frontière vers le nord du Ghana pour trouver de meilleures terres. Selon Ulrich Kleinewillinghöfer, le gur et plusieurs langues adamawa formaient autrefois une chaîne continue de parlers dans la savane, coupée plus tard en morceaux.",
+      "historicalBreaks": "Les langues gur se sont séparées en plusieurs branches. Gabriel Manessy suppose que le proto-central s'est divisé en trois ensembles, l'oti-volta, le gourounsi et le kurumfe, qui ont ensuite évolué chacun de son côté, selon Émilio Bonvini. Ulrich Kleinewillinghöfer propose que la chaîne de parlers qui reliait le gur à des langues adamawa ait été coupée, peut-être aussi par l'avancée vers le sud des langues tchadiques et par la naissance des États de la savane. Le classement lui-même a changé au fil du temps. En 1914, Maurice Delafosse mettait le sénoufo à part des langues voltaïques. Rolf Theil le compte aujourd'hui dans le gur, alors que le catalogue Glottolog le place à côté.",
+      "contactZones": "Les langues gur se trouvent dans une grande bande de savane où se rencontrent plusieurs familles de langues. Rolf Theil la rattache à la ceinture macro-soudanaise décrite par Tom Güldemann, qui va de la côte atlantique de l'Afrique de l'Ouest jusqu'au Soudan du Sud et à l'Ouganda. Au Burkina Faso, des peuples de langues gur et mandé vivent côte à côte, selon Chiara Barbieri et ses collègues. Au nord du Ghana, les langues gourounsi et mabia s'entremêlent. Adams Bodomo décrit aussi, du dagbane au kusaal en passant par le mampruli, une chaîne de parlers où l'on passe de l'un à l'autre par petites différences. Plus à l'est, Ulrich Kleinewillinghöfer décrit autour de la région de l'Adamawa, au centre de la bande de savane, une zone de contacts intenses où se rencontrent trois grandes familles de langues d'Afrique.",
+      "majorEvents": "Plusieurs événements ont marqué les langues gur et leurs locuteurs. Au nord du Ghana, les royaumes mamprusi et dagomba et l'empire mossi reconnaissent un ancêtre commun, Naa Gbewaa, venu du nord-est selon la tradition rapportée par Tony Naden et citée par Adams Bodomo. Le commerce des captifs a emmené des locuteurs de ces langues loin de chez eux. En 1854, Sigismund Wilhelm Koelle recueille le mooré en Sierra Leone auprès d'un homme fait prisonnier dans une guerre puis vendu, qui vivait là depuis vingt-six ans. Sous la colonisation, la région est partagée entre plusieurs puissances. En 1914, Maurice Delafosse décrit les langues voltaïques à cheval sur des colonies françaises, la « Côte d'Or anglaise » et le « Togo allemand ». Sous les Britanniques, le nord du Ghana actuel forme les « Northern Territories », administrés à part, selon Adams Bodomo."
     },
     "distribution": {
-      "totalSpeakers": 20000000,
+      "totalSpeakers": 30000000,
       "distributionByCountry": {
-        "CIV": 4834900
+        "BFA": 11342561
       }
     },
     "sources": [
@@ -333,7 +378,8 @@
         "year": 1854,
         "url": "https://archive.org/details/polyglottaafrica00koel",
         "tier": "referenced",
-        "source_kind": "archive"
+        "source_kind": "archive",
+        "notes": "Par le révérend S. W. Koelle, missionnaire de la Church Missionary Society, Londres, 1854. Lu dans la numérisation d'Internet Archive le 3 novembre 2026. Introduction, p. 6 et 7 : le groupe IV, « North-Eastern High-Sudan Languages », réunit entre autres le mose, le guresa, le gurma, le kasm et le yula. Le locuteur du mose, fait prisonnier dans une guerre puis vendu, vivait en Sierra Leone depuis vingt-six ans. Texte écrit du point de vue d'un missionnaire européen."
       },
       {
         "title": "Greenberg, Joseph H. (1955, révisé 1963) – *The Languages of Africa*. Bloomington : Indiana University / La Haye : Mouton",
@@ -372,15 +418,17 @@
       },
       {
         "title": "Kleinewillinghöfer, Ulrich (2014) – *Adamawa*. Séminaire, Humboldt-Universität Berlin",
-        "url": null,
+        "url": "https://www.blogs.uni-mainz.de/fb07-adamawa/files/2018/06/ADAMAWA-Kleinewillinghoefer_04_02_2014.pdf",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Diaporama d'un exposé donné le 4 février 2014 à l'université Humboldt de Berlin, publié par l'université de Mayence. Lu le 3 novembre 2026. Diapositive 6 : citations de Gerrit Dimmendaal et de Roger Blench sur la parenté du gur et des langues adamawa. Diapositive 16 : citation de Gabriel Manessy (1999, p. 13), pour qui le vocabulaire du proto-central « évoque une civilisation néolithique agricole » de savane boisée, qu'il est « tentant de situer » à l'est du Bénin, dans la vallée de la Bénoué ; l'auteur ajoute que ce vocabulaire de cultivateurs de mil et de sorgho est partagé avec des langues adamawa. Diapositive 2 : la région de l'Adamawa, où se rencontrent trois familles de langues. Diapositive 21 : résumé."
       },
       {
-        "title": "de Filippo, Cesare ; Altheide, I.; Caron, M.; et al. (2011) – \"Contrasting maternal and paternal histories in the linguistic context of Burkina Faso\", *Molecular Biology and Evolution* vol. 29(4), pp. 1213-1224. Oxford University Press",
-        "url": null,
+        "title": "Barbieri, Chiara ; Whitten, Mark ; Beyer, Klaus ; Schreiber, Henning ; Li, Mingkun ; Pakendorf, Brigitte (2012), \"Contrasting maternal and paternal histories in the linguistic context of Burkina Faso\", *Molecular Biology and Evolution* vol. 29, pp. 1213-1223",
+        "url": "https://europepmc.org/article/MED/22130972",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Résumé lu sur Europe PMC le 3 novembre 2026. L'étude porte sur dix populations du Burkina Faso qui parlent des langues gur ou mandé. Les lignées paternelles suivent les familles de langues, alors que les lignées maternelles sont presque homogènes ; les auteurs relèvent une forte croissance de la population il y a environ 12 000 à 10 000 ans."
       },
       {
         "title": "Bodomo, Adams (2017) – \"Mabia: Its Etymological Genesis, Geographical Spread, and some Salient Genetic Features\". Présentation académique",
@@ -431,14 +479,97 @@
         "title": "Glottolog (2025) – \"Gur\"",
         "url": "https://glottolog.org/resource/languoid/id/gura1261",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Notice consultée le 3 novembre 2026 (version 5.3). Le catalogue compte 93 langues dans le gur, réparties en six branches : Central Gur, Kulango-Lorom, Samu, Tiefoic, Tusia et Viemo."
       },
       {
         "title": "Agence Nationale de la Statistique (ANStat), Côte d'Ivoire (2021) – Recensement Général de la Population et de l'Habitat (RGPH 2021), jeu de données \"Répartition des Ivoiriens par grand groupe ethnique selon le sexe\" (groupe ethnolinguistique Gur/Voltaïque, classification Bouquet)",
         "url": "https://data.gouv.ci/datasets/repartition-des-ivoiriens-par-grand-groupe-ethnique",
         "tier": "official",
-        "source_kind": "government"
+        "source_kind": "government",
+        "notes": "Jeu de données publié sur le portail national des données ouvertes de Côte d'Ivoire, consulté le 3 novembre 2026. Sa description donne 4 834 900 personnes pour le groupe Gur/Voltaïque, sur 22 624 530 Ivoiriens recensés en 2021. Ce chiffre compte un groupe ethnique déclaré, et non des locuteurs."
+      },
+      {
+        "title": "Complex Predicates and Event Structure: An Integrated Analysis of Serial Verb Constructions in the Mabia Languages of West Africa",
+        "author": "Adams B. Bodomo",
+        "year": 1993,
+        "url": "https://archive.org/details/ERIC_ED373534",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse de l'université de Trondheim, en Norvège, parue dans la série Working Papers in Linguistics, n° 20, numérisée par la base ERIC et conservée par Internet Archive. Lu le 3 novembre 2026. Dans l'introduction, l'auteur, dont le dagaare est la langue maternelle, propose d'appeler « Mabia » le groupe dit oti-volta occidental. P. 111 à 113 : les noms gur et kwa viennent de syllabes fréquentes, comme dans gurma, gurenne et gurusi ; le mot mabia est formé de « ma », la mère, et de « bia » (bie, biiga), l'enfant, et les locuteurs l'emploient pour dire le lien entre frères et sœurs. P. 111 : le nord du Ghana formait sous les Britanniques les « Northern Territories ». P. 116 à 118 : tons, nasales syllabiques, consonnes kp et gb, harmonie vocalique en dagaare et en waale, classes nominales marquées par des suffixes, ordre sujet, verbe, objet. P. 118 à 120 : hypothèses d'origine de Dakubu et de Tony Naden, récit de Naa Gbewaa, migrations des Birifor."
+      },
+      {
+        "title": "Dagaare Syntax: A Two-Level X-Bar Account",
+        "author": "Adams B. Bodomo",
+        "year": 1993,
+        "url": "https://archive.org/details/ERIC_ED375648",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article paru dans University of Trondheim Working Papers in Linguistics, n° 19, 1993, numérisé par la base ERIC et conservé par Internet Archive. Lu le 3 novembre 2026. P. 21, note 1 : le terme Mabia est formé de « ma » (mère) et de « bia », « bie » ou « biiga » (enfant), des mots à peu près semblables dans la plupart de ces langues ; il désigne le lien entre frères et sœurs. Même page : le dagaare est parlé par environ un million de personnes au nord-ouest du Ghana et au Burkina Faso."
+      },
+      {
+        "title": "Gabriel Manessy, Contribution à la classification généalogique des langues voltaïques [compte rendu]",
+        "author": "Émilio Bonvini",
+        "year": 1982,
+        "url": "https://www.persee.fr/doc/jafr_0399-0346_1982_num_52_1_2137_t1_0203_0000_2",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Journal des africanistes, tome 52, 1982, p. 203-204, lu sur Persée le 3 novembre 2026. Compte rendu d'un livre de Gabriel Manessy paru en 1979 à Paris, à la SELAF. Il décrit sa méthode, fondée sur les innovations communes des systèmes grammaticaux, et cite sa conclusion (p. 69 du livre) : le gurunsi, l'oti-volta et le kurumfe sont « issues de la dislocation et de la différenciation d'une langue, ou plus probablement d'un ensemble dialectal que nous avons appelé proto-central », qui « s'est scindé en trois unités »."
+      },
+      {
+        "title": "Esquisse générale des langues de l'Afrique et plus particulièrement de l'Afrique française",
+        "author": "Maurice Delafosse",
+        "year": 1914,
+        "url": "https://archive.org/details/enquetesurlafami00dela",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Dans Enquête sur la famille, la propriété et la justice chez les indigènes des colonies françaises d'Afrique, Paris, Masson, 1914, texte d'un administrateur colonial français. Lu dans la numérisation d'Internet Archive le 3 novembre 2026. P. 17 : « le troisième groupe, que j'appelle groupe des langues voltaïques parce que son domaine correspond à peu près aux plateaux et aux vallées des branches supérieures de la Volta » ; ce groupe s'étend sur « notre colonie du Haut-Sénégal-Niger », la Côte d'Ivoire, le Dahomey, la « Côte d'Or anglaise » et le « Togo allemand ». Le sénoufo y forme un groupe à part, et ces groupes marquent les classes de noms par des suffixes."
+      },
+      {
+        "title": "Cinquième Recensement général de la population et de l'habitation (RGPH 2019) : résultats définitifs",
+        "author": "Institut national de la statistique et de la démographie (INSD), Burkina Faso",
+        "year": 2022,
+        "url": "https://www.insd.bf/sites/default/files/2022-07/Rapport%20resultats%20definitifs%20RGPH%202019.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport de l'institut national de la statistique du Burkina Faso, lu le 3 novembre 2026. Tableau 11, p. 48 : principale langue couramment parlée par la population résidente de 3 ans ou plus, soit 16 486 281 personnes. Mooré 52,9 %, gourmantché 6,8 %, gourounsi 3,2 %, bwamu 2,0 %, dagara 2,0 %, lobi 1,2 %, birifor 0,7 %, sénoufo 1,5 %."
+      },
+      {
+        "title": "Metaphorical Personal Names in Mabia Languages of West Africa",
+        "author": "Hasiyatu Abubakari, Samuel Alhassan Issah",
+        "year": 2024,
+        "url": "https://doi.org/10.3390/languages9050163",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de la revue Languages, vol. 9, n° 5, 2024. Nous avons vérifié le titre, les auteurs et la revue dans la notice Crossref le 3 novembre 2026 : le nom mabia y sert à désigner ces langues dès le titre."
+      },
+      {
+        "title": "Glottolog 5.3, Central Gur (cent2243)",
+        "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/cent2243",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice consultée le 3 novembre 2026. Le catalogue compte 81 langues dans le gur central, la plus grande des six branches du gur."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Des langues d'Afrique de l'Ouest, du sud du Mali au nord du Ghana. Leur ancien nom, « voltaïque », vient du fleuve Volta ; pour l'un de leurs groupes, des linguistes disent aujourd'hui « mabia ».",
+      "followUp": "D'où vient le mot « gur » ?"
+    },
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "BFA",
+          "speakers": 11342561,
+          "source": {
+            "title": "INSD, Burkina Faso (2022), Cinquième Recensement général de la population et de l'habitation (RGPH 2019) : résultats définitifs, tableau 11",
+            "url": "https://www.insd.bf/sites/default/files/2022-07/Rapport%20resultats%20definitifs%20RGPH%202019.pdf",
+            "tier": "official",
+            "notes": "Recensement du Burkina Faso de 2019, tableau 11 (page 48), qui donne la principale langue couramment parlée par les habitants de 3 ans ou plus, et non leur langue maternelle. Somme calculée par nous à partir de ce tableau : le mooré, le gourmantché, le gourounsi, le bwamu, le dagara, le lobi et le birifor, langues que le catalogue Glottolog range dans le gur, font 68,8 % des 16 486 281 personnes recensées. Le sénoufo (1,5 %), que Glottolog place à côté du gur, n'est pas compté, ni les langues gur regroupées sous « autres langues nationales ». Les pourcentages du tableau sont arrondis : le chiffre est un ordre de grandeur."
+          }
+        }
+      ]
+    }
   }
 }

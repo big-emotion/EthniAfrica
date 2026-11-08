@@ -7,105 +7,109 @@
   "content": {
     "appellations": {
       "mainName": "Balanta",
-      "selfAppellation": "Balanta",
-      "exonyms": ["Balante", "Balanta-Brassa", "Bulanda", "Balant"],
-      "originOfExonyms": "Balanta, écrit balanta en portugais et en créole de Guinée-Bissau, et balante en français, viendrait du mandingue balanto. Il est traduit par « ceux qui résistent » ou « ceux qui refusent ». Les Mandingues auraient donné ce nom aux populations qui résistaient à leurs tentatives d'expansion. D'abord donné de l'extérieur, Balanta a été adopté par les personnes concernées, qui l'emploient aujourd'hui sans sens particulier.",
-      "whyProblematic": "Le terme balanta designe un ensemble de sous-groupes linguistiquement apparentes mais pas toujours mutuellement intelligibles. La classification des dialectes comme langues distinctes ou comme dialectes d'une meme langue varie selon les linguistes.",
-      "contemporaryUsage": "Terme officiel utilise au Senegal, en Gambie et en Guinee-Bissau. En Guinee-Bissau, les Balanta sont le deuxieme (voire premier selon certaines sources) groupe ethnique, representant environ 25 a 30% de la population.",
+      "selfAppellation": "Brassa",
+      "exonyms": ["Balanta", "Balante", "Balant"],
+      "spellingAliases": [
+        "Balantas",
+        "Balantes",
+        "Beraase",
+        "Beraasa",
+        "Balanta Brassa"
+      ],
+      "originOfExonyms": "Le nom Balanta viendrait du mandingue balanto, « celui qui refuse » : les Mandingues auraient ainsi désigné ces groupes parce qu'ils avaient refusé de suivre le roi Koli Tenguella au début du XVIe siècle, selon Diana Lima Handem, citée par Chérif Mbodj. Le capitaine André Álvares de Almada écrit déjà Balantas en 1594. Balante est la forme française, et l'historien Christian Roche écrit Balant.",
+      "whyProblematic": "Le nom Balanta a longtemps réuni des groupes différents : Balantas manés, Mansoancas, Balantas brabo ou de dentro, Balantas manso ou de fora, Balantas nagas. Les comparaisons de vocabulaire du linguiste Jean Doneux ont montré que les Mansoanca, appelés Balantas manso, ne font pas partie de ce peuple, selon Chérif Mbodj. Le recensement de Guinée-Bissau de 2009 compte encore à part les Balanta Mane.",
+      "contemporaryUsage": "Balanta est la forme du portugais et du recensement de Guinée-Bissau. Balante est celle du français et du recensement du Sénégal, qui l'emploie pour la langue. Le peuple se donne le nom de Brassa, selon Diana Lima Handem ; le linguiste Chérif Mbodj appelle la langue fraase.",
       "linguisticFamily": "FLG_ATLANTIQUE",
-      "ethnoLinguisticGroup": "Groupe bak des langues atlantiques nord, famille Niger-Congo",
-      "historicalRegion": "Oio (entre les rios Mansoa et Geba, Guinee-Bissau), cote centrale de Guinee-Bissau, Casamance meridionale",
-      "currentCountries": ["GNB", "SEN", "GMB", "GIN", "CPV"]
+      "ethnoLinguisticGroup": "Langues balanta, dans le groupe bak des langues atlantiques, famille atlantique-congo, selon la classification de Glottolog",
+      "historicalRegion": "Centre et nord de la Guinée-Bissau, entre le Geba, le Mansoa et le Cacheu (régions d'Oio et de Cacheu), puis le sud du pays (Tombali, Quinara) ; Balantacounda, en moyenne Casamance",
+      "currentCountries": ["GNB", "SEN", "GMB", "GIN", "CPV"],
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Balanta Kentohe — le sous-groupe le plus nombreux, rive droite de la riviere Mansoa, Guinee-Bissau centrale et occidentale (environ 423 000 locuteurs)",
-      "Balanta Ganja (Mane) — implantes dans la Casamance meridionale (Senegal) et le nord de la Guinee-Bissau (environ 86 000 locuteurs)",
-      "Balanta Nhacra — rive gauche de la Mansoa, migres vers le sud (region de Tombali)",
-      "Balanta Naga — sous-groupe distinct par son dialecte",
-      "Balanta Patch — probablement originaire du village Pache",
-      "Balanta Sofar — sous-groupe reconnu par les linguistes"
+      "Balanta kentohe, au nord du Geba, avec les parlers soofa (régions de Cacheu et d'Oio) et fac",
+      "Balanta nhacra (ñaakra), au sud du Geba ; leur parler du sud du pays est aussi appelé balanta fora",
+      "Balanta mane, comptés à part par le recensement de Guinée-Bissau de 2009",
+      "Balanta naga",
+      "Balanta ganja, au Sénégal, avec les parlers fganja et fjaalib selon Glottolog"
     ],
     "origins": {
-      "ancientOrigins": "Les Balanta revendiquent le territoire entre les rios Mansoa et Geba (region de Nhacra, Oio) comme leur foyer originel. Leur tradition orale evoque une migration depuis l'est, selon certaines versions depuis le Soudan, l'Egypte ou l'Ethiopie (vallee du Nil) pour fuir des guerres et des secheresses. Des analyses genetiques de l'ADN mitochondrial (haplogroups M1 et U6, haplotypes matching des sequences soudanaises et marocaines) supportent une origine nord-africaine ou orientale via une migration il y a environ 2 000 ans.",
-      "formationPeriod": "Les archeologues estiment que les Balanta migrerent en petits groupes vers la Guinee-Bissau actuelle entre les Xe et XIVe siecles de notre ere. Au XIXe siecle, ils etendirent leur implantation dans toute la Guinee-Bissau et le sud du Senegal pour resister a l'expansion du royaume de Kaabu.",
+      "ancientOrigins": "Selon une tradition orale rapportée par Diana Lima Handem et citée par Chérif Mbodj, des Brassa ont fui le Fouta-Djalon, dans l'actuelle Guinée, à la fin du XVe siècle, pour échapper au chef de guerre peul Koli Tenguella. Ils s'installent d'abord au bord du Corubal, puis traversent le Geba. Dans l'Histoire générale de l'Afrique publiée par l'UNESCO, l'historien Christophe Wondji les dit venus de l'est et installés dans les estuaires avant le XVe siècle.",
+      "formationPeriod": "Les traditions et les écrits européens permettent de situer la fuite des Brassa entre 1490 et 1500, et leur installation dans la vallée du Geba entre 1500 et 1514, selon Diana Lima Handem, citée par Chérif Mbodj. Ils y fondent Duhal, puis s'étendent vers le Mansoa, le Balantacounda et l'Oio.",
       "migrationRoutes": [
-        "Migration depuis l'est (traditions orales evoquant les regions du Nil, du Soudan ou du Sahel)",
-        "Etablissement dans la region de Nhacra (Oio) comme foyer historique",
-        "Extension vers le sud (region de Tombali) au profit de meilleures terres pour la riziculture",
-        "Migration vers le Casamance meridional (Senegal) et la Gambie au XIXe siecle pour echapper a Kaabu"
+        "Du Fouta-Djalon vers les rives du Corubal, à la fin du XVe siècle, selon la tradition rapportée par Diana Lima Handem",
+        "De la vallée du Geba vers le Mansoa, le Balantacounda et l'Oio, jusqu'au rio Armada, affluent du Cacheu (Chérif Mbodj)",
+        "De l'Oio vers le sud, en Quinara, à la fin du XIXe siècle, pour fuir les attaques d'Infali Sonco, chef biafada du Cuor allié des Portugais (Chérif Mbodj)",
+        "Vers le sud du pays, dans les régions de Cacine et de Catio, à partir de 1920 (Monique Gessain)"
       ],
       "historicalSettlementZones": [
-        "Region de Nhacra et Oio (centre-nord de la Guinee-Bissau)",
-        "Region de Tombali et Cacine (sud de la Guinee-Bissau)",
-        "Casamance meridionale (Senegal, frontieres avec la Guinee-Bissau)",
-        "Gambie occidentale (minorite)"
+        "Vallée du Geba, où les Brassa fondent Duhal au début du XVIe siècle",
+        "Rives du rio São Domingos, où André Álvares de Almada place les Balantas en 1594",
+        "Régions d'Oio et de Cacheu, au nord de la Guinée-Bissau",
+        "Régions de Tombali et de Quinara, au sud du pays",
+        "Balantacounda, en moyenne Casamance, au Sénégal"
       ],
-      "unificationsOrDivisions": "Les Balanta forment une societe acephale : ils n'ont jamais constitue un etat centralise ni reconnu un roi ou chef unique. Toutes les decisions importantes sont prises par un Conseil des Anciens. Cet egalitarisme radical rendait la gouvernance portugaise extremement difficile. Les sous-groupes sont unis par des traits culturels communs (Fanado, riziculture, cuisine du riz) mais geres de maniere autonome au niveau du village (tabanca).",
-      "externalInfluences": "Les Mandingues/Kaabu exercerent une pression constante sur les Balanta (XVIIe-XIXe siecles), les poussant vers les zones cotieres. La traite atlantique des esclaves (XVIe-XIXe siecles) fit des Balanta a la fois victimes et acteurs de ce commerce. La colonisation portugaise (fin XIXe-1974) mena des campagnes de pacification forcee et tenta d'imposer des chefs fulbe aux Balanta. La guerre d'independance de Guinee-Bissau (1963-1974) mobilisa massivement les Balanta dans le PAIGC d'Amilcar Cabral.",
-      "majorHistoricalEvents": "1859 : traite signé entre la France et les chefs balanta de Cougnaro et Souna. 1963-1974 : les jeunes Balanta constituent l'avant-garde militaire du PAIGC dans la guerre d'independance. 1974 : independance de la Guinee-Bissau ; les Balanta reprochent d'etre sous-representes dans les instances dirigeantes. 1980s : tentatives de coup d'etat a tendance balanta. 2000-2003 : presidence de Kumba Ialà, membre des Balanta, portant le chapeau rouge du Fanado."
+      "unificationsOrDivisions": "Les Balanta n'ont pas formé d'État ni de royaume : il n'existe chez eux aucune autorité traditionnelle au-dessus du chef de village et du conseil des anciens, selon Eric Penot. Diana Lima Handem préfère parler d'une « gérontocratie démocratique », où le pouvoir revient ensemble aux aînés initiés, selon le compte rendu d'Annie Cheneau-Locquay.",
+      "externalInfluences": "Au XVIIe siècle, les Mandés et leurs vassaux kasanga harcèlent les Balante pour la traite des esclaves ; beaucoup de peuples se réfugient alors dans les marais de la côte, selon Christophe Wondji. À la fin du XIXe siècle, le chef biafada Infali Sonco, allié des Portugais, attaque le pays balanta de l'Oio, selon Chérif Mbodj.",
+      "majorHistoricalEvents": "Pendant la guerre de libération menée par le PAIGC contre le Portugal, les Balanta forment la majorité des combattants, selon Chérif Mbodj. En 1985, plusieurs officiers balanta sont accusés d'un complot appelé le « coup d'État des Balantes », et la répression qui suit laisse des traces profondes, selon Fafali Koudawo. Lors des premières élections pluralistes du pays, le président João Bernardo Vieira cherche à contrer la popularité de Kumba Iala, lui-même balanta, selon le même auteur. Entre 1983 et 1986, le mouvement religieux Jangue Jangue, mené surtout par de jeunes femmes, bouleverse la société balanta, selon J. T. V. M. de Jong."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Societe strictement acephale et egalitaire. Toutes les decisions importantes sont prises collégialement par un Conseil des Anciens (hommes inities au Fanado). Il n'existe pas de chef central ni de roi. Les tabancas (villages) gèrent leurs affaires de maniere autonome. L'egalitarisme balanta etait si marque que les colons portugais trouvaient impossible de les administrer par des structures de commandement classiques.",
-      "clanOrganization": "Les clans portent le prefixe Na- signifiant maison de (ex : Na Sanyang = maison des Sanyang). Les maisons sont construites par les clans. Les noms personnels refletent les circonstances de naissance (Yabna = repos, Alamy = roi) ou la situation familiale (Nsimban = je les ai entendus, Boulonyi = je suis hai).",
-      "ageClassSystems": "Les classes d'age structurent rigideusement la vie sociale balanta. Elles progressent ainsi : Nwatch (enfance, jusqu'a 15 ans), Fuur (vers 18-20 ans), Nghaye (vers 25 ans), Kgness (vers 30 ans, rite autorisant l'homme a prendre une femme), puis Fanado (initiation supreme, pour les hommes qui sont devenus proprietaires terriens et peres de famille). Chaque classe a ses responsabilites sociales et rituelles specifiques.",
-      "roleOfLineages": "Le systeme de descendance est complexe, combinant des elements matrilineaires et patrilineaires (certains qualifient le systeme de bilineaire, analogue aux Sereer). L'oncle maternel joue un role determinant : c'est lui qui choisit le neveu pour participer au Fanado, et le neveu ne peut refuser. Les femmes ont herite d'un role important dans la transmission des identites lignageres.",
-      "religiousAuthority": "Les anciens inities au Fanado forment l'autorite spirituelle supreme. La divinite principale est appelee Nalli ou Niala, percue comme tres lointaine : la communication avec elle passe par des pratiques rituelles et des sacrifices. Ni le catholicisme ni l'islam ne dominent pleinement la spiritualite balanta, qui maintient un fort substrat animiste. Des sacrifices de betail scandent tous les moments importants de la vie (initiation, mariage, mort)."
+      "traditionalPoliticalSystem": "La société balanta n'a ni roi ni chefferie centrale. Le village est l'unité de base, dirigé par un chef et par le conseil des anciens, les homen grande en créole, selon Eric Penot. Les aînés initiés détiennent ensemble le pouvoir, qui est lié au savoir ; le maître de la terre, premier de la lignée fondatrice, joue surtout un rôle d'arbitre, selon Diana Lima Handem, d'après le compte rendu d'Annie Cheneau-Locquay.",
+      "clanOrganization": "Le chef d'un clan balanta est l'aîné de la génération la plus ancienne sur le territoire. Chacun porte le nom de son père ; s'il a quitté son village d'origine, ce nom est précédé de na, « de », qui marque l'appartenance au père. Les Balanta pratiquent l'exogamie, le mariage en dehors de son groupe de parenté, et la femme va vivre chez son mari, selon Chérif Mbodj.",
+      "ageClassSystems": "La société balanta est divisée en classes d'âge, appelées sit. Chérif Mbodj en compte neuf pour les hommes chez les locuteurs du soofa, des kenkpum, vers 15 à 18 ans, jusqu'aux kean, les circoncis. Les cadets, belufu, n'ont pas encore été initiés ; les aînés, belante benda, l'ont été et portent le bonnet rouge. Les femmes se répartissent selon leur situation : jeunes filles, jeunes mariées, mères de famille et femmes âgées. Pour J. T. V. M. de Jong, l'initiation des hommes a lieu tard, entre 32 et 36 ans.",
+      "roleOfLineages": "Le système de parenté balanta est patrilinéaire, selon Chérif Mbodj. Les lignages arrivés plus tard dépendent du lignage fondateur, et les villageois du maître de la terre. La famille élargie vit dans une concession, la morança en créole, sous l'autorité d'un chef de famille, selon Eric Penot. Les fils reçoivent leurs rizières dès leur mariage.",
+      "religiousAuthority": "Chaque village a son devin, hasιke, souvent une personne âgée, qui intercède auprès des ancêtres et de l'esprit protecteur du terroir, selon Chérif Mbodj. Les hommes âgés, chefs de famille, gardent le savoir et la communication avec les ancêtres, selon J. T. V. M. de Jong."
     },
     "languages": {
-      "mainLanguage": "Balanta (Bulanda), groupe de langues bak des langues atlantiques nord. Deux langues principales : Balanta-Kentohe (la plus parlee) et Balanta-Ganja.",
+      "mainLanguage": "Balanta (balante, fraase), deux langues proches selon le catalogue Glottolog : le balanta-kentohe et le balanta-ganja",
       "isoCodes": ["ble", "bjt"],
       "dialects": [
-        "Balanta-Kentohe (ble) — dialecte principal (environ 423 000 locuteurs en Guinee-Bissau et Gambie selon Ethnologue, 27e ed. 2024)",
-        "Balanta-Ganja / Balanta-Mane (bjt) — dialecte du Casamance meridional et du nord Guinee-Bissau (environ 86 000 locuteurs en 2006)",
-        "Balanta-Nhacra — parle sur la rive gauche de la Mansoa",
-        "Balanta-Naga, Balanta-Patch, Balanta-Sofar — autres dialectes distincts"
+        "Balanta-kentohe (ble), avec les parlers fora, kantohe, mane et naga selon Glottolog",
+        "Balanta-ganja (bjt), avec les parlers fganja et fjaalib selon Glottolog",
+        "Soofa et fac, deux variantes du kentohe au nord du Geba (Chérif Mbodj)",
+        "Ñaakra ou balanta fora, au sud du Geba (Chérif Mbodj)"
       ],
-      "vehicularRole": "Le creole de Guinee-Bissau (Kriol Guinensi) est la langue de communication interethnique principale en Guinee-Bissau. Les Balanta urbains parlent generalement le creole en ville et leur langue maternelle au village. En Casamance, le francais et le diola-fogny servent de langues de communication. La montee du creole parmi les jeunes affaiblit la transmission du balanta."
+      "vehicularRole": "Le créole sert de langue commune dans la région de Tombali, où vivent de nombreux Balanta, selon Eric Penot. Au Sénégal, 72 468 personnes de 3 ans ou plus déclarent le balante comme leur principale langue en 2023, selon le recensement de l'ANSD."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q804639",
+      "glottocode": "bala1300"
     },
     "culture": {
-      "majorRites": "Le Fanado est le rite supreme des Balanta. Il se deroule tous les quatre ans. Apres une premiere journee de fete pour tout le village, les inities (hommes devenus proprietaires et peres) sont emmenes dans les bois sacres par leurs oncles maternels. Ils y subissent la circoncision, deux mois d'epreuves d'endurance, l'apprentissage des codes culturels, de la gestion familiale et de la sagesse adulte. Le lieu est brule apres la retraite. Les survivants rentrent au village en hommes nouveaux (Lante Ndang : brave et sage) coiffes d'un chapeau rouge vif. Ils sont alors eligibles au Conseil des Anciens. D'autres rites de passage structurent la vie : Nwatch, Fuur, Nghaye, Kgness. Les sacrifices de betail (surtout bovins) sont indispensables a toutes les etapes de la vie (initiation, mariage, funerailles).",
-      "symbols": "Le chapeau rouge (signe d'initiation reussie au Fanado) est le symbole de la sagesse et du statut d'homme mur chez les Balanta. L'ex-president Kumba Ialà le portait publiquement. Le kebinde (outil agricole de preparation du sol, represente au dos du billet de 50 pesos de Guinee-Bissau) est un symbole de l'identite agricole balanta. Les masques de ceremonie de mariage (grand masque esprit a coquillages cauris, masque vieille femme, masque jeune fille, masque jeune homme) symbolisent les liens familiaux et spirituels.",
-      "artsAndMusic": "La musique balanta inclut la kusunde (luth-calebasse), instrument a cordes apparente a l'akonting diola et au kora mandingue, joue lors des celebrations post-recolte (Kussunde) et des ceremonies. Le balafon balanta possede 24 lames (contre 12 ou 14 pour le balafon mandingue). La danse de mariage (village de Mini-Ndame) met en scene des masques rituels et une competition de beaute. Le bolon (grand instrument a cordes a resonance grave) etait traditionellement utilise pour motiver les guerriers et les riziculteurs. L'art masque inclut les masques de coquillages cauris, de vieilles femmes, de jeunes filles, portes lors des ceremonies de mariage.",
-      "spiritualities": "La spiritualite balanta est centree sur un animisme ancestral : la divinite (Nalli / Niala) est lointaine et inaccessible directement ; la communication passe par des rituels, des sacrifices et des pratiques spirituelles. Un esprit Djon Cago est cite dans certaines sources. La necomancie et les sacrifices d'animaux (betail, volailles) encadrent les rites de passage. Le catholicisme est partiellement present (notamment en Casamance). L'islam est pratique par certains Balanta-Ganja (sous influence mandingue), mais la majorite maintient un animisme marque."
+      "majorRites": "Le fanado est le rite d'initiation des hommes. Il consacre le passage à l'état d'aîné, qui possède le savoir et donc le pouvoir, selon Diana Lima Handem, d'après Annie Cheneau-Locquay. La circoncision y est vécue comme une « petite mort », selon Chérif Mbodj. Les choro, fêtes en mémoire des morts, sont l'autre grande occasion de fête, selon Eric Penot. Les cadets ont aussi leurs fêtes : le fbalak, tous les quatre ans en principe, et le kesunde, chaque année.",
+      "symbols": "Le bonnet rouge est l'insigne des aînés initiés, les belante benda, et rappelle le respect qui leur est dû, selon Chérif Mbodj. Le bétail est un signe de puissance et de richesse ; voler des bœufs était un haut fait pour un jeune homme en âge de se marier, selon le géographe Jean Dresch en 1949.",
+      "artsAndMusic": "Le tambour balanta s'appelle sundi. Le tam-tam d'appel, mbumbur, transmet des messages codés ; pendant la guerre de libération, il a servi à mobiliser les combattants, selon Chérif Mbodj. Au kesunde, les cadets dansent, chantent et jouent des scènes où ils se moquent des aînés.",
+      "spiritualities": "La plupart des Balanta suivent les croyances de leurs ancêtres, et certains sont musulmans ou chrétiens, selon Chérif Mbodj. Le recensement de Guinée-Bissau de 2009 compte parmi les Balanta 36,1 % de chrétiens, 32,1 % de fidèles des religions traditionnelles et 1,8 % de musulmans ; un quart n'a pas donné de réponse. Le dieu suprême s'appelle N'Ghalla selon J. T. V. M. de Jong, haala selon Chérif Mbodj."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Les Balanta n'ont pas forme de royaumes centralises. Leur resistance a toute autorite supra-villageoise est un trait definitoire. Leur organisation par tabancas autonomes et conseils d'anciens leur a permis de resister successivement a l'empire de Kaabu, aux jihads peuls, et a la colonisation portugaise pendant des siecles.",
-      "relationsWithNeighbors": "Les Balanta ont entretenu des relations commerciales avec les communautes voisines tout en maintenant une forte mefiance envers les etrangers (mefiance historique si forte qu'elle decourageait les mariages mixtes, meme si les tabancas forgeaient des alliances inter-tabancas par le mariage). Au XVIIIe siecle, ils exportaient du coton, de l'indigo et de l'huile de palme. Ils ont ete a la fois victimes et acteurs de la traite atlantique des esclaves dans le cadre de conflits avec leurs voisins.",
-      "conflictsOrAlliances": "XVIIe-XIXe siecles : resistance constante a l'expansion du royaume de Kaabu (Mandingues). 1830 : destruction du dernier royaume bainouk voisin par les Balanta. Fin XIXe-debut XXe siecle : resistance aux campagnes de pacification portugaises. 1963-1974 : participation massive au PAIGC d'Amilcar Cabral (guerre d'independance), les jeunes Balanta constituant l'essentiel des forces combattantes. Post-1974 : tensions avec l'elite post-coloniale pour une meilleure representation politique.",
-      "diaspora": "La migration des Balanta reste principalement interne a la Guinee-Bissau (du nord vers le sud, notamment la region de Tombali, sous la pression de la recherche de terres agricoles). Une migration vers Bissau (capitale) et les centres urbains s'est developpee. Des communautes balanta sont presentes au Senegal (Casamance), en Gambie, au Cap-Vert et plus marginalement en Guinee."
+      "kingdomsOrChiefdoms": "Les Balanta n'ont pas formé de royaume, malgré la richesse que leur donne la culture du riz, selon Eric Penot. Les règles sociales imposent de redistribuer les surplus au village, à travers les groupes de travail et les fêtes.",
+      "relationsWithNeighbors": "Les Balanta sont réputés pour leur riz de mangrove : ce sont eux qui ont mis au point les digues des rizières et les ont fait connaître aux autres peuples du pays, selon Chérif Mbodj. Le vol de bétail, signe de courage chez eux, leur vaut une réputation de voleurs chez leurs voisins. En 1876, en Casamance, le chef manding Sounkari de Bakoum, leur ennemi, entraîne Fodé Kaba à incendier des villages balant, selon Christian Roche.",
+      "conflictsOrAlliances": "Au XVIIe siècle, les guerres liées à la traite opposent sur le rio Cacheu les Bainuk, les Kasanga, les Papel, les Jóola et les Balante, selon Christophe Wondji. Les Bijago et les Beafada attaquent aussi les Balante. Pendant la guerre de libération, les Balanta forment la majorité des combattants du PAIGC, selon Chérif Mbodj.",
+      "diaspora": "Les Balanta continuent de migrer vers le sud de la Guinée-Bissau pour trouver de nouvelles terres à riz, selon Chérif Mbodj. Le recensement de 2009 les compte nombreux à Bissau, où ils forment 20,5 % des citoyens du pays. Au Sénégal, ils vivent surtout en Casamance."
     },
     "demography": {
-      "totalPopulation": 600000,
-      "referenceYear": 2025,
-      "source": "Estimation fondee sur : Balanta-Kentohe (ble) : environ 423 000 locuteurs en Guinee-Bissau et Gambie (Ethnologue 27e ed., 2024) ; Balanta-Ganja (bjt) : environ 86 000 locuteurs en Casamance (2006) ; total via PeopleGroups.org : 598 090 personnes dans trois groupes. La proportion balanta en Guinee-Bissau est estimee a 25-30% de la population (environ 550 000 a 675 000 sur 2 250 000 habitants en 2025 selon Worldometer). La distribution par pays est approximative.",
+      "totalPopulation": 338408,
+      "referenceYear": 2009,
+      "source": "Recensement de Guinée-Bissau de 2009, Institut national de la statistique : 323 948 Balanta et 14 460 Balanta Mane parmi les citoyens du pays, soit 338 408 personnes. Au Sénégal, le recensement de 2023 ne compte pas les ethnies dans le rapport que nous avons lu ; il compte 72 468 personnes de 3 ans ou plus dont le balante est la langue principale. Nous n'avons pas trouvé de chiffre pour la Gambie, la Guinée et le Cap-Vert.",
       "distributionByCountry": [
         {
           "country": "GNB",
-          "population": 520000,
-          "note": "Deuxieme groupe ethnique de Guinee-Bissau, environ 25-30% de la population, concentres dans les regions d'Oio, Biombo, Tombali"
+          "population": 338408,
+          "note": "Citoyens du pays en 2009. Les Balanta forment 46,9 % de la région de Tombali, 43,6 % de l'Oio, 35,2 % de Quinara, 28,8 % de Cacheu et 20,5 % du secteur autonome de Bissau."
         },
         {
           "country": "SEN",
-          "population": 60000,
-          "note": "Principalement Balanta-Ganja en Casamance meridionale"
-        },
-        {
-          "country": "GMB",
-          "population": 12000,
-          "note": "Minorite settlee, principalement Balanta-Kentohe"
-        },
-        {
-          "country": "GIN",
-          "population": 5000,
-          "note": "Petite communaute de migrants"
-        },
-        {
-          "country": "CPV",
-          "population": 3000,
-          "note": "Diaspora de Guinee-Bissau"
+          "population": null,
+          "note": "Surtout en Casamance. Le recensement de 2023 compte 72 468 personnes qui parlent le balante comme langue principale."
         }
       ]
     },
+    "gaps": [
+      {
+        "field": "content.demography.distributionByCountry",
+        "reason": "Nous n'avons pas trouvé de chiffre sur les Balanta en Gambie, en Guinée et au Cap-Vert, ni de chiffre par ethnie dans le rapport du recensement du Sénégal de 2023 que nous avons lu."
+      }
+    ],
     "sources": [
       {
         "title": "Qiraat Africa. The Balanta of Guinea-Bissau, Senegal and The Gambia",
@@ -124,11 +128,116 @@
         "url": "https://www.ethnologue.com/language/ble/",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Glottolog, famille Balanta (bala1300)",
+        "url": "https://glottolog.org/resource/languoid/id/bala1300",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, édité à l'Institut Max-Planck d'anthropologie évolutionniste. Lu le 3 novembre 2026 : la famille Balanta, dans le groupe bak des langues atlantiques, compte deux langues, le balanta-kentohe (ble) et le balanta-ganja (bjt)."
+      },
+      {
+        "title": "Instituto Nacional de Estatística da Guiné-Bissau, Recensement général de la population et de l'habitat de 2009, caractéristiques socioculturelles",
+        "url": "https://www.stat-guinebissau.com/Menu_principal/IV_RGPH/rgph1/caracteristicas_socio_cultural.pdf",
+        "tier": "unverified",
+        "source_kind": "official_statistics",
+        "notes": "Rapport de l'Institut national de la statistique de Guinée-Bissau, en portugais. Lu le 3 novembre 2026 sur le site de l'institut : répartition des citoyens du pays par ethnie, par région et par religion."
+      },
+      {
+        "title": "Agence nationale de la statistique et de la démographie, Recensement général de la population et de l'habitat du Sénégal, 2023, thème I",
+        "url": "https://www.vie-publique.sn/docs/f5ae8d48-de94-4dea-882b-990bdfa1958d/etat-structure-urbanisation-caracteristiques-socioculturelles-population-rgph-5-2023-ansd.pdf",
+        "tier": "unverified",
+        "source_kind": "official_statistics",
+        "notes": "Rapport de l'ANSD, mis en ligne par le portail public vie-publique.sn. Lu le 3 novembre 2026 : population de 3 ans ou plus selon la principale langue parlée au quotidien."
+      },
+      {
+        "title": "Chérif Mbodj, Contribution à l'étude des Balantes de la Guinée-Bissau, Revue d'études africaines, n° 3, 2016",
+        "url": "https://rea.ucad.sn/index.php/rea/article/download/40/39/159",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Revue d'études africaines, n° 3, université Cheikh Anta Diop de Dakar, 2016, p. 205-221. Relu le 3 novembre 2026 en ligne. L'auteur s'appuie sur la thèse de Diana Lima Handem, Nature et fonctionnement du pouvoir chez les Balanta Brassa, INEP, Bissau, 1986 ; nous ne l'avons pas lue nous-mêmes."
+      },
+      {
+        "title": "Annie Cheneau-Locquay, compte rendu de Diana Lima Handem, Nature et fonctionnement du pouvoir chez les Balanta Brassa, Politique africaine, 1988",
+        "url": "https://www.persee.fr/doc/polaf_0244-7827_1988_num_31_1_5218_t1_0128_0000_4",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Politique africaine, n° 31, 1988, p. 128-130. Lu le 3 novembre 2026 sur Persée. Le compte rendu, signé A.C.L., écrit le nom de l'autrice « Dianna Lima Handen » ; le livre a paru à Bissau, à l'Instituto Nacional de Estudos e Pesquisa, en 1986. Nous n'avons pas lu le livre lui-même."
+      },
+      {
+        "title": "J. T. V. M. de Jong, Jangue Jangue : la politique par le bas en Guinée-Bissau, Politique africaine, 1987",
+        "url": "https://www.persee.fr/doc/polaf_0244-7827_1987_num_28_1_5137",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Politique africaine, n° 28, 1987, p. 108-112. Lu le 3 novembre 2026 sur Persée, dans le texte intégral. L'auteur, psychiatre, renvoie à sa thèse, A Descent into African Psychiatry, Amsterdam, Royal Tropical Institute, 1987."
+      },
+      {
+        "title": "Fafali Koudawo, Histoire et quête de légitimité politique pendant les premières élections pluralistes en Guinée-Bissau, Lusotopie, 1995",
+        "url": "https://www.persee.fr/doc/luso_1257-0273_1995_num_2_1_992",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lusotopie, n° 2, 1995, p. 285-294. Lu le 3 novembre 2026 sur Persée, dans le texte intégral."
+      },
+      {
+        "title": "Eric A. Penot, Structuration sociale et économique, liens et nécessité matériels dans une société de réciprocité : le cas des Balantes de la région de Tombali, Guinée-Bissau, 2006",
+        "url": "https://hal.science/hal-00173323",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Communication publiée dans Eric Sabourin (dir.), Lien social vs intérêt matériel dans un processus d'action collective, Mauss/Cirad, 2006. Lu le 3 novembre 2026 dans le texte déposé sur l'archive ouverte HAL."
+      },
+      {
+        "title": "Alain Kihm, La situation linguistique en Casamance et Guinée-Bissau, Cahiers d'études africaines, 1980",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1980_num_20_79_2342",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Cahiers d'études africaines, vol. 20, n° 79, 1980, p. 369-386. Lu le 3 novembre 2026 sur Persée, dans le texte intégral."
+      },
+      {
+        "title": "Christian Roche, Portraits de chefs casamançais du XIXe siècle, Revue française d'histoire d'outre-mer, 1971",
+        "url": "https://www.persee.fr/doc/outre_0300-9513_1971_num_58_213_1563",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Revue française d'histoire d'outre-mer, tome 58, n° 213, 1971, p. 451-467. Lu le 3 novembre 2026 sur Persée, dans le texte intégral."
+      },
+      {
+        "title": "Monique Gessain, Les Tanda de Tombali. Des Bassari en Guinée Bissau, Journal des africanistes, 1990",
+        "url": "https://www.persee.fr/doc/jafr_0399-0346_1990_num_60_2_2456",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Journal des africanistes, tome 60, fascicule 2, 1990, p. 123-147. Lu le 3 novembre 2026 sur Persée, dans le texte intégral."
+      },
+      {
+        "title": "Jean Dresch, La riziculture en Afrique occidentale, Annales de géographie, 1949",
+        "url": "https://www.persee.fr/doc/geo_0003-4010_1949_num_58_312_12760",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Annales de géographie, tome 58, n° 312, 1949, p. 295-312. Article de l'époque coloniale. Lu le 3 novembre 2026 sur Persée, dans le texte intégral."
+      },
+      {
+        "title": "Auguste Chevalier et Adolphe Cligny, La Casamance, Annales de géographie, 1901",
+        "url": "https://www.persee.fr/doc/geo_0003-4010_1901_num_10_50_4901",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Annales de géographie, tome 10, n° 50, 1901, p. 165-176. Article écrit par deux auteurs de l'époque coloniale française. Lu le 3 novembre 2026 sur Persée, dans le texte intégral."
+      },
+      {
+        "title": "Christophe Wondji, The states and cultures of the Upper Guinean coast, Histoire générale de l'Afrique de l'UNESCO, volume V, 1992",
+        "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, Histoire générale de l'Afrique, volume V, dirigé par B. A. Ogot, 1992. Édition anglaise relue le 3 novembre 2026 dans la copie que publie South African History Online ; l'édition française en ligne n'était pas accessible."
+      },
+      {
+        "title": "André Álvares de Almada, Tratado breve dos rios de Guiné do Cabo-Verde, 1594",
+        "url": "https://archive.org/details/tratadobrevedosr00alma",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Traité écrit en 1594, lu dans l'édition publiée par Diogo Köpke à Porto en 1841, numérisée par Internet Archive, le 11 octobre 2026."
       }
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Balanta, ou Balante en français, désigne un peuple de Guinée-Bissau et du sud du Sénégal, qui se donne aussi le nom de Brassa. Le nom Balanta viendrait d'un mot mandingue ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Balanta, ou Balante en français, désigne un peuple de Guinée-Bissau et du sud du Sénégal, qui se donne aussi le nom de Brassa. Ses groupes portent aussi leurs propres noms, comme Kentohe. Le nom Balanta viendrait d'un mot mandingue ; les sources ne s'accordent pas toujours sur l'origine de ces noms, et nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Balanta",
@@ -136,9 +245,31 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Un nom écrit dès 1594 ; il viendrait d'un mot mandingue.",
+        "shortLine": "Un nom écrit dès 1594 ; il viendrait d'un mot mandingue qui veut dire « celui qui refuse ».",
         "periodLabel": "Écrit depuis 1594 ; en usage aujourd'hui",
         "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Balante est celui d'une langue que le recensement du Sénégal de 2023 compte parmi les langues parlées au quotidien : 72 468 personnes de 3 ans ou plus la déclarent comme leur langue principale.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Cinquième recensement général de la population et de l'habitat (RGPH-5, 2023), rapport définitif, thème I : état et structure, urbanisation et caractéristiques socioculturelles de la population",
+                "author": "Agence nationale de la statistique et de la démographie du Sénégal",
+                "year": 2023,
+                "url": "https://www.vie-publique.sn/docs/f5ae8d48-de94-4dea-882b-990bdfa1958d/etat-structure-urbanisation-caracteristiques-socioculturelles-population-rgph-5-2023-ansd.pdf",
+                "tier": "unverified",
+                "source_kind": "official_statistics",
+                "page": "p. 57, tableau I-32",
+                "notes": "Rapport de l'ANSD, mis en ligne par le portail public vie-publique.sn. Lu le 3 novembre 2026 : population de 3 ans ou plus selon la principale langue parlée au quotidien."
+              }
+            ]
+          },
           {
             "period": {
               "from": 2016,
@@ -146,7 +277,7 @@
               "label": "2016"
             },
             "era": "modern",
-            "statement": "Le nom Balante regroupe aujourd'hui plusieurs groupes, comme les Balantas manés, les Balantas brabo ou de dentro et les Balantas nagas, selon Chérif Mbodj, qui suit L. D. Handem ; les Mansoanca, appelés Balantas manso, n'en font pas partie d'après les comparaisons de vocabulaire de Jean Doneux. L'origine de ce nom n'est connue que par l'hypothèse présentée plus bas.",
+            "statement": "Le nom Balante regroupe plusieurs groupes, comme les Balantas manés, les Balantas brabo ou de dentro et les Balantas nagas, selon le linguiste Chérif Mbodj, qui suit Diana Lima Handem. Les Mansoanca, appelés Balantas manso, n'en font pas partie d'après les comparaisons de vocabulaire de Jean Doneux.",
             "aspect": "meaning",
             "sources": [
               {
@@ -157,7 +288,117 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 207",
-                "notes": "Revue d'études africaines, n° 3, université Cheikh Anta Diop de Dakar, lue en ligne le 11 octobre 2026. L'auteur cite la thèse de L. D. Handem, Nature et fonctionnement du pouvoir chez les Balanta Brassa, INEP, 1986 ; nous ne l'avons pas lue nous-mêmes."
+                "notes": "Revue d'études africaines, n° 3, université Cheikh Anta Diop de Dakar, 2016, p. 205-221. Relu le 3 novembre 2026 en ligne. L'auteur s'appuie sur la thèse de Diana Lima Handem, Nature et fonctionnement du pouvoir chez les Balanta Brassa, INEP, Bissau, 1986 ; nous ne l'avons pas lue nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "Recensement de 2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Balanta sert de catégorie au recensement de Guinée-Bissau de 2009, qui compte 323 948 Balanta parmi les citoyens du pays, soit 22,5 %. Le même recensement compte à part 14 460 Balanta Mane.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Terceiro Recenseamento Geral da População e Habitação de 2009 : características socioculturais",
+                "author": "Instituto Nacional de Estatística da Guiné-Bissau",
+                "year": 2009,
+                "url": "https://www.stat-guinebissau.com/Menu_principal/IV_RGPH/rgph1/caracteristicas_socio_cultural.pdf",
+                "tier": "unverified",
+                "source_kind": "official_statistics",
+                "page": "p. 22, p. 25, p. 26 et p. 30",
+                "notes": "Rapport de l'Institut national de la statistique de Guinée-Bissau, en portugais. Lu le 3 novembre 2026 sur le site de l'institut : répartition des citoyens du pays par ethnie, par région et par religion."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1971,
+              "to": 1971,
+              "label": "1971"
+            },
+            "era": "modern",
+            "statement": "Le nom Balanta est écrit Balant par l'historien Christian Roche. Il raconte qu'en 1876, le chef manding Sounkari de Bakoum, ennemi des Balant voisins, entraîne Fodé Kaba à incendier quelques villages balant, près de Sédhiou en Casamance.",
+            "formAsWritten": "Balant",
+            "actors": [
+              {
+                "name": "Christian Roche",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Portraits de chefs casamançais du XIXe siècle",
+                "author": "Christian Roche",
+                "year": 1971,
+                "url": "https://www.persee.fr/doc/outre_0300-9513_1971_num_58_213_1563",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 451 et p. 453",
+                "notes": "Revue française d'histoire d'outre-mer, tome 58, n° 213, 1971, p. 451-467. Lu le 3 novembre 2026 sur Persée, dans le texte intégral."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom Balanta entre dans celui du Balantacounda, une région de moyenne Casamance que citent en 1901 Auguste Chevalier et Adolphe Cligny, sur la rive gauche du fleuve.",
+            "formAsWritten": "Balantacounda",
+            "actors": [
+              {
+                "name": "Auguste Chevalier et Adolphe Cligny",
+                "role": "écrivent cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La Casamance",
+                "author": "Auguste Chevalier et Adolphe Cligny",
+                "year": 1901,
+                "url": "https://www.persee.fr/doc/geo_0003-4010_1901_num_10_50_4901",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 168",
+                "notes": "Annales de géographie, tome 10, n° 50, 1901, p. 165-176. Article écrit par deux auteurs de l'époque coloniale française. Lu le 3 novembre 2026 sur Persée, dans le texte intégral."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 2016,
+              "label": "Proposée en 1986, reprise en 1988 et en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Balanta viendrait du mot mandingue balanto, « celui qui refuse » : les Mandingues auraient ainsi désigné ces groupes parce qu'ils avaient refusé de suivre le roi Koli Tenguella au début du XVIe siècle, selon Diana Lima Handem, citée par Chérif Mbodj. Annie Cheneau-Locquay, qui rend compte du livre de Handem en 1988, traduit elle aussi Balanta par « ceux qui refusent ».",
+            "hypothesisGroup": "origine du nom Balanta",
+            "sources": [
+              {
+                "title": "Contribution à l'étude des Balantes de la Guinée-Bissau",
+                "author": "Chérif Mbodj",
+                "year": 2016,
+                "url": "https://rea.ucad.sn/index.php/rea/article/download/40/39/159",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 207",
+                "notes": "Revue d'études africaines, n° 3, université Cheikh Anta Diop de Dakar, 2016, p. 205-221. Relu le 3 novembre 2026 en ligne. L'auteur s'appuie sur la thèse de Diana Lima Handem, Nature et fonctionnement du pouvoir chez les Balanta Brassa, INEP, Bissau, 1986 ; nous ne l'avons pas lue nous-mêmes."
+              },
+              {
+                "title": "Compte rendu de Diana Lima Handem, Nature et fonctionnement du pouvoir chez les Balanta Brassa",
+                "author": "Annie Cheneau-Locquay",
+                "year": 1988,
+                "url": "https://www.persee.fr/doc/polaf_0244-7827_1988_num_31_1_5218_t1_0128_0000_4",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 128-129",
+                "notes": "Politique africaine, n° 31, 1988, p. 128-130. Lu le 3 novembre 2026 sur Persée. Le compte rendu, signé A.C.L., écrit le nom de l'autrice « Dianna Lima Handen » ; le livre a paru à Bissau, à l'Instituto Nacional de Estudos e Pesquisa, en 1986. Nous n'avons pas lu le livre lui-même."
               }
             ]
           },
@@ -165,10 +406,10 @@
             "period": {
               "from": null,
               "to": 1500,
-              "label": "Avant le XVe siècle, selon cette lecture"
+              "label": "Avant le XVe siècle, selon Christophe Wondji"
             },
             "era": "polity",
-            "statement": "Le nom Balante s'applique, dans l'Histoire générale de l'Afrique, à l'un des trois grands groupes des estuaires de la Haute-Guinée : venus de l'est, ces Balante se seraient imposés aux Bainuk avant le XVe siècle, selon Christophe Wondji.",
+            "statement": "Le nom Balante s'applique, dans l'Histoire générale de l'Afrique, à l'un des trois grands groupes des estuaires de Casamance et de Guinée-Bissau : venus de l'est, ces Balante se seraient imposés aux Bainuk avant le XVe siècle, selon l'historien Christophe Wondji.",
             "before": true,
             "sources": [
               {
@@ -178,8 +419,8 @@
                 "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
                 "tier": "official",
                 "source_kind": "intergovernmental",
-                "page": "p. 373",
-                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
+                "page": "p. 373 et p. 378",
+                "notes": "UNESCO, Histoire générale de l'Afrique, volume V, dirigé par B. A. Ogot, 1992. Édition anglaise relue le 3 novembre 2026 dans la copie que publie South African History Online ; l'édition française en ligne n'était pas accessible."
               }
             ]
           },
@@ -190,7 +431,7 @@
               "label": "1594"
             },
             "era": "polity",
-            "statement": "Le nom Balanta apparaît par écrit, sous la forme Balantas, dans le Tratado breve dos rios de Guiné du capitaine André Álvares de Almada, écrit en 1594 : il les compte parmi les peuples du rio São Domingos et les décrit comme des gens qui ne veulent guère voir les Portugais ni devenir leurs esclaves. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà là avant lui.",
+            "statement": "Le nom Balanta apparaît par écrit, sous la forme Balantas, dans le Tratado breve dos rios de Guiné du capitaine André Álvares de Almada, écrit en 1594 : il les compte parmi les peuples du rio São Domingos et les décrit comme des gens qui ne veulent guère voir les Portugais ni devenir leurs esclaves. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
             "formAsWritten": "Balantas",
             "birth": true,
             "actors": [
@@ -208,29 +449,7 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "page": "p. 50 et p. 52",
-                "notes": "Traité écrit en 1594, lu dans l'édition publiée par Diogo Köpke à Porto en 1841, numérisée par Internet Archive, le 11 octobre 2026."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": 1986,
-              "to": 2016,
-              "label": "Proposée en 1986, reprise en 2016"
-            },
-            "era": "modern",
-            "statement": "Le nom Balanta viendrait du mot mandingue balanto, « celui qui refuse » : les Mandingues auraient ainsi désigné ces groupes parce qu'ils avaient refusé de suivre le roi Koli Tenguella au début du XVIe siècle, selon L. D. Handem, citée par Chérif Mbodj.",
-            "hypothesisGroup": "origine du nom Balanta",
-            "sources": [
-              {
-                "title": "Contribution à l'étude des Balantes de la Guinée-Bissau",
-                "author": "Chérif Mbodj",
-                "year": 2016,
-                "url": "https://rea.ucad.sn/index.php/rea/article/download/40/39/159",
-                "tier": "referenced",
-                "source_kind": "academic",
-                "page": "p. 207",
-                "notes": "Revue d'études africaines, n° 3, université Cheikh Anta Diop de Dakar, lue en ligne le 11 octobre 2026. L'auteur cite L. D. Handem, 1986, p. 10 ; nous n'avons pas lu cette thèse nous-mêmes."
+                "notes": "Traité écrit en 1594, relu le 3 novembre 2026 dans l'édition publiée par Diogo Köpke à Porto en 1841, numérisée par Internet Archive."
               }
             ]
           }
@@ -243,17 +462,17 @@
         "languageOfOrigin": null,
         "namedBy": null,
         "shortLine": "Le nom que se donnent les Balanta ; il signifierait « les survivants ».",
-        "periodLabel": "Rapporté en 1986",
+        "periodLabel": "Écrit en 1986 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
-              "from": 1986,
+              "from": 2016,
               "to": 2016,
-              "label": "Rapporté en 1986, repris en 2016"
+              "label": "2016"
             },
             "era": "modern",
-            "statement": "Le nom Brassa, ou Beraasa, aurait été pris par des groupes partis du Fouta-Djalon à la fin du XVe siècle pour échapper à Koli Tenguella, quand ils s'installèrent au bord du Corubal ; il signifierait « les survivants », selon la tradition orale rapportée par L. D. Handem et citée par Chérif Mbodj.",
-            "hypothesisGroup": "origine du nom Brassa",
+            "statement": "Le nom Brassa s'écrit aussi Beraase ou Bara:se chez le linguiste Chérif Mbodj, qui appelle la langue balante fraase. Il note que les Beraase sont aujourd'hui plus connus sous le nom de Balante.",
+            "aspect": "usage",
             "sources": [
               {
                 "title": "Contribution à l'étude des Balantes de la Guinée-Bissau",
@@ -262,8 +481,8 @@
                 "url": "https://rea.ucad.sn/index.php/rea/article/download/40/39/159",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 208, note 10",
-                "notes": "Revue d'études africaines, n° 3, université Cheikh Anta Diop de Dakar, lue en ligne le 11 octobre 2026. Tradition orale rapportée par L. D. Handem, 1986, p. 15, sans que la note nomme ceux qui la portent ; nous n'avons pas lu cette thèse nous-mêmes."
+                "page": "p. 205 et p. 207",
+                "notes": "Revue d'études africaines, n° 3, université Cheikh Anta Diop de Dakar, 2016, p. 205-221. Relu le 3 novembre 2026 en ligne. L'auteur s'appuie sur la thèse de Diana Lima Handem, Nature et fonctionnement du pouvoir chez les Balanta Brassa, INEP, Bissau, 1986 ; nous ne l'avons pas lue nous-mêmes."
               }
             ]
           },
@@ -274,7 +493,8 @@
               "label": "Rapporté en 1986, repris en 2016"
             },
             "era": "modern",
-            "statement": "Le nom Brassa ne serait pas le premier nom de ce peuple : on dit dans la communauté que le nom d'origine est révélé aux hommes lors de leur initiation, et ce secret est gardé, selon L. D. Handem, citée par Chérif Mbodj.",
+            "statement": "Le nom Brassa, ou Beraasa, aurait été pris par des groupes partis du Fouta-Djalon à la fin du XVe siècle pour échapper à Koli Tenguella, quand ils s'installèrent au bord du Corubal ; il signifierait « les survivants », selon la tradition orale rapportée par Diana Lima Handem et citée par Chérif Mbodj.",
+            "hypothesisGroup": "origine du nom Brassa",
             "sources": [
               {
                 "title": "Contribution à l'étude des Balantes de la Guinée-Bissau",
@@ -284,7 +504,132 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 208, note 10",
-                "notes": "Revue d'études africaines, n° 3, université Cheikh Anta Diop de Dakar, lue en ligne le 11 octobre 2026. L'auteur cite L. D. Handem, 1986, p. 15 ; nous n'avons pas lu cette thèse nous-mêmes."
+                "notes": "Revue d'études africaines, n° 3, université Cheikh Anta Diop de Dakar, 2016, p. 205-221. Relu le 3 novembre 2026 en ligne. Tradition orale rapportée par Diana Lima Handem (1986, p. 15), sans que la note nomme ceux qui la portent ; nous n'avons pas lu cette thèse nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 2016,
+              "label": "Rapporté en 1986, repris en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Brassa ne serait pas le premier nom de ce peuple : on dit dans la communauté que le nom d'origine est révélé aux hommes lors de leur initiation, et ce secret est gardé, selon Diana Lima Handem, citée par Chérif Mbodj.",
+            "sources": [
+              {
+                "title": "Contribution à l'étude des Balantes de la Guinée-Bissau",
+                "author": "Chérif Mbodj",
+                "year": 2016,
+                "url": "https://rea.ucad.sn/index.php/rea/article/download/40/39/159",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 208, note 10",
+                "notes": "Revue d'études africaines, n° 3, université Cheikh Anta Diop de Dakar, 2016, p. 205-221. Relu le 3 novembre 2026 en ligne. Tradition orale rapportée par Diana Lima Handem (1986, p. 15), sans que la note nomme ceux qui la portent ; nous n'avons pas lu cette thèse nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "1986"
+            },
+            "era": "modern",
+            "statement": "Le nom Brassa figure dans le titre du livre de Diana Lima Handem, Nature et fonctionnement du pouvoir chez les Balanta Brassa, publié à Bissau en 1986, selon le compte rendu d'Annie Cheneau-Locquay.",
+            "formAsWritten": "Balanta Brassa",
+            "actors": [
+              {
+                "name": "Diana Lima Handem",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Compte rendu de Diana Lima Handem, Nature et fonctionnement du pouvoir chez les Balanta Brassa",
+                "author": "Annie Cheneau-Locquay",
+                "year": 1988,
+                "url": "https://www.persee.fr/doc/polaf_0244-7827_1988_num_31_1_5218_t1_0128_0000_4",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 128-129",
+                "notes": "Politique africaine, n° 31, 1988, p. 128-130. Lu le 3 novembre 2026 sur Persée. Le compte rendu, signé A.C.L., écrit le nom de l'autrice « Dianna Lima Handen » ; le livre a paru à Bissau, à l'Instituto Nacional de Estudos e Pesquisa, en 1986. Nous n'avons pas lu le livre lui-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kentohe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Balanta nhacra",
+        "shortLine": "Le nom du principal parler balanta ; il voudrait dire « le parler de ceux qui sont partis ».",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom kentohe désigne aujourd'hui, dans le catalogue Glottolog, l'une des deux langues balanta, sous le nom de balanta-kentohe et le code ble ; l'autre est le balanta-ganja, parlé au Sénégal.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog, famille Balanta (bala1300)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/bala1300",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde, édité à l'Institut Max-Planck d'anthropologie évolutionniste. Lu le 3 novembre 2026 : la famille Balanta, dans le groupe bak des langues atlantiques, compte deux langues, le balanta-kentohe (ble) et le balanta-ganja (bjt)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Rapporté en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom kentohe, celui du principal parler balanta, viendrait de tooha, « partir » : il désignerait le parler des bentoohe, « ceux qui sont partis », nom que leur donnent les Balanta nhacra, selon Chérif Mbodj.",
+            "hypothesisGroup": "origine du nom kentohe",
+            "sources": [
+              {
+                "title": "Contribution à l'étude des Balantes de la Guinée-Bissau",
+                "author": "Chérif Mbodj",
+                "year": 2016,
+                "url": "https://rea.ucad.sn/index.php/rea/article/download/40/39/159",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 206, note 2",
+                "notes": "Revue d'études africaines, n° 3, université Cheikh Anta Diop de Dakar, 2016, p. 205-221. Relu le 3 novembre 2026 en ligne. L'auteur s'appuie sur la thèse de Diana Lima Handem, Nature et fonctionnement du pouvoir chez les Balanta Brassa, INEP, Bissau, 1986 ; nous ne l'avons pas lue nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Rapporté en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom kentohe a sa réplique : les Bentoohe appellent à leur tour les Nhacra behunke, « oiseaux-tisserands », parce qu'ils feraient beaucoup de bruit en parlant, comme ces oiseaux, selon Chérif Mbodj.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Contribution à l'étude des Balantes de la Guinée-Bissau",
+                "author": "Chérif Mbodj",
+                "year": 2016,
+                "url": "https://rea.ucad.sn/index.php/rea/article/download/40/39/159",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 206, note 2",
+                "notes": "Revue d'études africaines, n° 3, université Cheikh Anta Diop de Dakar, 2016, p. 205-221. Relu le 3 novembre 2026 en ligne. L'auteur s'appuie sur la thèse de Diana Lima Handem, Nature et fonctionnement du pouvoir chez les Balanta Brassa, INEP, Bissau, 1986 ; nous ne l'avons pas lue nous-mêmes."
               }
             ]
           }

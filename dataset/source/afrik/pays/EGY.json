@@ -3,9 +3,9 @@
   "nameFr": "Égypte",
   "nameEn": "Egypt",
   "nameOfficial": "République arabe d'Égypte (Jumhūriyyat Miṣr al-ʻArabiyyah)",
-  "summary": "L'Égypte s'appelle « Miṣr » en arabe depuis l'Antiquité, et « Kemet », la terre noire, dans la langue des pharaons ; « Égypte » est un mot grec passé par le nom d'un temple de Memphis. Ancien, Moyen et Nouvel Empire, période ptolémaïque, conquête arabe puis domination ottomane s'y sont succédé. Arabophones, Coptes, Siwi et Beja y composent l'une des plus longues continuités culturelles du monde.",
-  "etymology": "Le nom \"Égypte\" viendrait du grec \"Aigyptos\", qui serait lui-même dérivé de \"Hikuptah\" (nom d'un temple de Memphis). Le nom arabe \"Miṣr\" (مصر) voudrait dire \"pays\" ou \"frontière\" ; il est utilisé depuis l'Antiquité. L'ancien nom égyptien était \"Kemet\" (terre noire).",
-  "nameOriginActor": "Le nom \"Égypte\" a été donné par les Grecs. Le nom arabe \"Miṣr\" est utilisé depuis la conquête arabe (VIIe siècle).",
+  "summary": "L'Égypte, pays d'Afrique du Nord-Est traversé par le Nil, se nomme Miṣr en arabe ; le nom Égypte vient du grec Aigyptos, qui viendrait lui-même du nom sacré de la ville de Memphis. Dans l'Antiquité, les Égyptiens se désignaient par le nom Kmt, dont le sens reste discuté. Après les pharaons, le pays a connu la domination grecque, romaine, arabe, ottomane puis britannique, avant son indépendance en 1922.",
+  "etymology": "Le nom Égypte est la forme française du grec Aigyptos, qui désigne chez Homère d'abord le Nil, puis le pays, selon le commentaire de J. A. Knudtzon aux lettres d'Amarna. Ce mot grec viendrait de Ḥt-kꜣ-ptḥ, le nom sacré de la ville de Memphis, que les lettres d'Amarna écrivent Hikuptah au XIVe siècle avant notre ère : c'est l'hypothèse de l'égyptologue Heinrich Brugsch, que reprend la fiche toponymique britannique de 2026. Le nom arabe Miṣr désigne aussi, comme nom commun, une grande ville ou une capitale ; les mêmes lettres d'Amarna écrivent déjà une forme proche, misri. Selon la fiche britannique, Miṣr serait une forme arabisée d'un nom de l'égyptien ancien. Dans l'Antiquité, les Égyptiens se désignaient par le nom Kmt, formé sur km, « noir » : Cheikh Anta Diop y voit le nom du peuple, « les Noirs », tandis que Serge Sauneron et Abdelgadir M. Abdalla y voient le nom du pays, « le pays noir ».",
+  "nameOriginActor": "Le nom Égypte vient des Grecs : il s'écrit Aigyptos dès les épopées d'Homère. Le nom Miṣr est celui que le pays se donne en arabe, sa langue officielle ; une forme proche figure déjà dans les lettres d'Amarna, au XIVe siècle avant notre ère. Le nom Kmt est celui que se donnaient les Égyptiens de l'époque pharaonique, selon Cheikh Anta Diop.",
   "nameHistory": {
     "summary": "Le nom Égypte désigne un pays d'Afrique du Nord-Est, la République arabe d'Égypte, qui se nomme elle-même Miṣr en arabe. Dans l'Antiquité, ses habitants se désignaient par un autre nom, Kmt. De 1958 à 1971, l'État a aussi porté le nom de République arabe unie. Les sources ne s'accordent pas toujours sur l'origine et le sens de ces noms ; nous les présentons plus bas.",
     "names": [
@@ -228,7 +228,7 @@
                 "tier": "official",
                 "source_kind": "intergovernmental",
                 "page": "p. 61-62",
-                "notes": "UNESCO, volume dirigé par G. Mokhtar. « Les Égyptiens n'avaient qu'un terme pour se désigner eux-mêmes : kmt » ; Diop le forme sur km, « noir », et le traduit par « les Nègres », « et pour le moins les Noirs ». Il rapporte que les spécialistes préfèrent lire « la terre noire (à cause du limon) » ou « le pays noir »."
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. « Les Égyptiens n'avaient qu'un terme pour se désigner eux-mêmes : kmt » ; Diop le forme sur km, « noir », et le traduit par « les Nègres », « et pour le moins les Noirs ». Il rapporte que les spécialistes préfèrent traduire « la terre noire (à cause du limon) » ou « le pays noir »."
               }
             ]
           },
@@ -238,7 +238,7 @@
               "to": null,
               "label": "Origine non datée"
             },
-            "statement": "Le nom Égypte viendrait de Ḥt-kꜣ-ptḥ, le nom sacré de la ville de Memphis, que les lettres d'Amarna écrivent Hikuptah : c'est la supposition de l'égyptologue Heinrich Brugsch, rapportée dans l'édition de J. A. Knudtzon, qui ajoute que l'historien Eduard Meyer la jugeait devenue un peu plus probable.",
+            "statement": "Le nom Égypte viendrait de Ḥt-kꜣ-ptḥ, le nom sacré de la ville de Memphis, que les lettres d'Amarna écrivent Hikuptah : c'est l'hypothèse de l'égyptologue Heinrich Brugsch, rapportée dans l'édition de J. A. Knudtzon, qui ajoute que l'historien Eduard Meyer la jugeait devenue un peu plus probable. La fiche toponymique britannique de 2026 retient la même origine et traduit ce nom par « château de l'âme de Ptah ».",
             "hypothesisGroup": "origine du nom Égypte",
             "sources": [
               {
@@ -250,6 +250,16 @@
                 "source_kind": "academic",
                 "page": "p. 1173-1174",
                 "notes": "Leipzig, Hinrichs, 1915, en allemand, lu dans l'exemplaire numérisé. Commentaire de la lettre 84, ligne 37 : Hikuptah rend en écriture cunéiforme le nom sacré de la ville de Memphis, Ḥt-kꜣ-ptḥ. La supposition, due à l'égyptologue Heinrich Brugsch, que le grec Aigyptos vienne de ce nom a gagné en vraisemblance avec cette lettre, selon l'historien Eduard Meyer. Chez Homère, Aigyptos désigne d'abord le fleuve, puis aussi le pays dans les chants consacrés à Télémaque."
+              },
+              {
+                "title": "Toponymic Factfile: Egypt",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2026,
+                "url": "https://assets.publishing.service.gov.uk/media/6ab67e58734e2435f202f0e2/Egypt_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1, note 1",
+                "notes": "Fiche du comité britannique chargé des noms géographiques, mise à jour en septembre 2026, lue le 3 novembre 2026. Note 1 : le nom anglais Egypt vient du grec ancien Aígyptos, qui viendrait de l'égyptien ancien hut-ka-ptah, « castle of the soul of Ptah », le château de l'âme de Ptah."
               }
             ]
           }
@@ -292,7 +302,7 @@
               "to": null,
               "label": "Sens du nom"
             },
-            "statement": "Le nom Miṣr désigne l'Égypte en arabe. Le même mot, miṣr, désigne aussi le centre politique et militaire d'une province, une grande ville ou une capitale ; la ville fondée par les conquérants arabes au bord du Nil s'appelle ainsi Fusṭāṭ-Miṣr. Les sources que nous avons lues ne retracent pas l'origine de ce nom.",
+            "statement": "Le nom Miṣr désigne l'Égypte en arabe. Le même mot, miṣr, désigne aussi le centre politique et militaire d'une province, une grande ville ou une capitale ; la ville fondée par les conquérants arabes au bord du Nil s'appelle ainsi Fusṭāṭ-Miṣr. Une hypothèse sur l'origine du nom est présentée plus bas.",
             "aspect": "meaning",
             "sources": [
               {
@@ -368,6 +378,28 @@
                 "source_kind": "academic",
                 "page": "p. 3",
                 "notes": "Londres, Methuen, 1928, lu dans l'exemplaire numérisé par la Digital Library of India. Budge date les tablettes d'Amarna du XIVe siècle avant notre ère."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Fiche publiée en 2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Miṣr serait une forme arabisée d'un nom de l'égyptien ancien, selon la fiche toponymique du comité britannique des noms géographiques. En arabe, le mot voudrait dire « lieu habité » ou « capitale », ce qui expliquerait, selon la même fiche, que les Égyptiens appellent Miṣr à la fois leur pays et leur capitale.",
+            "hypothesisGroup": "origine du nom Miṣr",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Egypt",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2026,
+                "url": "https://assets.publishing.service.gov.uk/media/6ab67e58734e2435f202f0e2/Egypt_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1, note 3",
+                "notes": "Fiche mise à jour en septembre 2026, lue le 3 novembre 2026. Note 3 : « The name Mişr is an arabicised version of the Ancient Egyptian. In Arabic it means settled place or capital » ; la fiche ajoute que cela pourrait expliquer que les Égyptiens appellent Miṣr leur pays comme leur capitale. Elle ne cite pas d'autre source pour cette origine."
               }
             ]
           }
@@ -463,7 +495,7 @@
                 "tier": "official",
                 "source_kind": "intergovernmental",
                 "page": "p. 61-62",
-                "notes": "UNESCO, volume dirigé par G. Mokhtar. « Les Égyptiens n'avaient qu'un terme pour se désigner eux-mêmes : kmt » ; Diop le forme sur km, « noir », et le traduit par « les Nègres », « et pour le moins les Noirs ». Il rapporte que les spécialistes préfèrent lire « la terre noire (à cause du limon) » ou « le pays noir »."
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. « Les Égyptiens n'avaient qu'un terme pour se désigner eux-mêmes : kmt » ; Diop le forme sur km, « noir », et le traduit par « les Nègres », « et pour le moins les Noirs ». Il rapporte que les spécialistes préfèrent traduire « la terre noire (à cause du limon) » ou « le pays noir »."
               },
               {
                 "title": "Histoire générale de l'Afrique, I, ch. 10, partie I : Histoire et linguistique",
@@ -483,7 +515,7 @@
               "to": null,
               "label": "Sens du nom"
             },
-            "statement": "Le nom Kmt désigne, selon les lectures, le pays d'Égypte ou son peuple. Son sens a été discuté au colloque du Caire de 1974, sans accord ; nous présentons les deux lectures plus bas.",
+            "statement": "Le nom Kmt désigne le pays d'Égypte selon certains auteurs, son peuple selon d'autres. Son sens a été discuté au colloque du Caire de 1974, sans accord ; nous présentons les deux hypothèses plus bas.",
             "aspect": "meaning",
             "sources": [
               {
@@ -504,7 +536,7 @@
                 "tier": "official",
                 "source_kind": "intergovernmental",
                 "page": "p. 818",
-                "notes": "UNESCO, volume dirigé par G. Mokhtar. Abdelgadir M. Abdalla lit kmtyu comme le pluriel de kmty, « Égyptien », formé sur kmt, « pays noir, c'est-à-dire Égypte » ; Serge Sauneron se range à cette lecture, contre celle de Cheikh Anta Diop."
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. Abdelgadir M. Abdalla voit dans kmtyu le pluriel de kmty, « Égyptien », formé sur kmt, « pays noir, c'est-à-dire Égypte » ; Serge Sauneron se range à cette explication, contre celle de Cheikh Anta Diop."
               }
             ]
           },
@@ -525,7 +557,7 @@
                 "tier": "official",
                 "source_kind": "intergovernmental",
                 "page": "p. 61-62",
-                "notes": "UNESCO, volume dirigé par G. Mokhtar. « Les Égyptiens n'avaient qu'un terme pour se désigner eux-mêmes : kmt » ; Diop le forme sur km, « noir », et le traduit par « les Nègres », « et pour le moins les Noirs ». Il rapporte que les spécialistes préfèrent lire « la terre noire (à cause du limon) » ou « le pays noir »."
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. « Les Égyptiens n'avaient qu'un terme pour se désigner eux-mêmes : kmt » ; Diop le forme sur km, « noir », et le traduit par « les Nègres », « et pour le moins les Noirs ». Il rapporte que les spécialistes préfèrent traduire « la terre noire (à cause du limon) » ou « le pays noir »."
               }
             ]
           },
@@ -556,7 +588,7 @@
                 "tier": "official",
                 "source_kind": "intergovernmental",
                 "page": "p. 818",
-                "notes": "UNESCO, volume dirigé par G. Mokhtar. Abdelgadir M. Abdalla lit kmtyu comme le pluriel de kmty, « Égyptien », formé sur kmt, « pays noir, c'est-à-dire Égypte » ; Serge Sauneron se range à cette lecture, contre celle de Cheikh Anta Diop."
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. Abdelgadir M. Abdalla voit dans kmtyu le pluriel de kmty, « Égyptien », formé sur kmt, « pays noir, c'est-à-dire Égypte » ; Serge Sauneron se range à cette explication, contre celle de Cheikh Anta Diop."
               },
               {
                 "title": "Histoire générale de l'Afrique, II, ch. 1 : Origine des anciens Égyptiens",
@@ -566,7 +598,7 @@
                 "tier": "official",
                 "source_kind": "intergovernmental",
                 "page": "p. 61-62",
-                "notes": "UNESCO, volume dirigé par G. Mokhtar. « Les Égyptiens n'avaient qu'un terme pour se désigner eux-mêmes : kmt » ; Diop le forme sur km, « noir », et le traduit par « les Nègres », « et pour le moins les Noirs ». Il rapporte que les spécialistes préfèrent lire « la terre noire (à cause du limon) » ou « le pays noir »."
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. « Les Égyptiens n'avaient qu'un terme pour se désigner eux-mêmes : kmt » ; Diop le forme sur km, « noir », et le traduit par « les Nègres », « et pour le moins les Noirs ». Il rapporte que les spécialistes préfèrent traduire « la terre noire (à cause du limon) » ou « le pays noir »."
               }
             ]
           }
@@ -577,111 +609,128 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Kemet (égyptien ancien, « la terre noire »)",
-        "Aigyptos (grec)",
-        "Miṣr (arabe, toujours en usage)"
+        "Kmt (égyptien ancien, époque pharaonique)",
+        "Aigyptos (grec, dès Homère)",
+        "République arabe unie (1958-1971)"
       ],
-      "antiquity": "Kemet (terre noire, ancien nom égyptien), Aigyptos (grec), Aegyptus (latin). Civilisation pharaonique (vers 3100 av. J.-C. - 30 av. J.-C.).",
-      "middleAges": "Miṣr (arabe), Égypte (français). Domination arabe (VIIe siècle), puis turque (XVIe siècle).",
-      "precolonial": "Miṣr (nom arabe), Égypte ottomane (1517-1882), État semi-autonome sous les Mamelouks puis les Ottomans.",
-      "colonization": "1882-1922 : Protectorat britannique, puis royaume d'Égypte (1922-1953). Le nom \"Égypte\" est officialisé.",
-      "contemporary": "1953 : République d'Égypte, puis République arabe d'Égypte (1958). Le nom officiel en arabe est \"Jumhūriyyat Miṣr al-ʻArabiyyah\"."
+      "antiquity": "Dans l'Antiquité, les Égyptiens se désignaient par le nom Kmt, selon Cheikh Anta Diop. Les Grecs appelaient le pays Aigyptos, d'abord le nom du Nil chez Homère. Au XIVe siècle avant notre ère, les lettres d'Amarna, écrites en cunéiforme, nomment Memphis Hikuptah et l'Égypte misri, une forme proche de Miṣr. La Bible hébraïque, elle, nomme l'Égypte Mizraïm.",
+      "middleAges": "Après la conquête arabe de 641-642, la ville que les conquérants fondent près de Babylone d'Égypte s'appelle Fusṭāṭ, ou Fusṭāṭ-Miṣr, selon Thierry Bianquis. En arabe, le mot miṣr désigne à la fois le pays et une grande ville ou une capitale.",
+      "precolonial": "En 1517, l'Empire ottoman conquiert l'Égypte et en fait une province, gouvernée depuis Le Caire. Méhémet Ali prend le pouvoir en 1805, et le traité de Londres de 1841 rend sa charge héréditaire.",
+      "colonization": "La Grande-Bretagne occupe le pays en 1882, puis y déclare son protectorat en décembre 1914. Elle y renonce le 28 février 1922 ; la Constitution du 19 avril 1923 appelle le pays « l'Égypte », « État souverain, libre et indépendant ».",
+      "contemporary": "La République est proclamée le 18 juin 1953. De 1958 à 1971, le pays porte le nom de République arabe unie, d'abord avec la Syrie, puis seul après le départ de celle-ci en 1961. La Constitution du 11 septembre 1971 lui donne son nom actuel, République arabe d'Égypte, en arabe Jumhūriyyat Miṣr al-ʿArabiyyah."
     },
     "kingdoms": [
       {
         "name": "Ancien Empire égyptien",
-        "period": "2686-2181 av. J.-C.",
+        "period": "Vers 2900 - vers 2280 av. J.-C.",
         "entryType": "polity",
         "timeRange": {
-          "startYear": -2686,
-          "endYear": -2181,
-          "precision": "year"
+          "startYear": -2900,
+          "endYear": -2280,
+          "precision": "approximate",
+          "datingNote": "Les dates varient selon les auteurs : A. Abu Bakr place l'Ancien Empire de 2900 à 2280 avant notre ère, la note de chronologie du même volume de l'UNESCO vers 2750-2200."
         },
         "dominantPeoples": ["Égyptiens anciens"],
         "politicalCenters": ["Memphis"],
-        "historicalRole": "Construction des pyramides, développement de l'écriture hiéroglyphique, centralisation du pouvoir pharaonique."
+        "historicalRole": "Sous les IIIe à VIe dynasties, les rois font bâtir les pyramides : la pyramide à degrés de Saqqarah pour le roi Djéser, puis celles de Khéops, Khéphren et Mykérinos à Gizeh."
       },
       {
         "name": "Moyen Empire égyptien",
-        "period": "2055-1650 av. J.-C.",
+        "period": "Vers 2060 - vers 1785 av. J.-C.",
         "entryType": "polity",
         "timeRange": {
-          "startYear": -2055,
-          "endYear": -1650,
-          "precision": "year"
+          "startYear": -2060,
+          "endYear": -1785,
+          "precision": "approximate",
+          "datingNote": "Dates données par A. Abu Bakr ; la note de chronologie du même volume place le Moyen Empire vers 2150-1780 avant notre ère."
         },
         "dominantPeoples": ["Égyptiens anciens"],
-        "politicalCenters": ["Thèbes"],
-        "historicalRole": "Expansion territoriale, développement de la littérature et des arts, période de prospérité."
+        "politicalCenters": ["Thèbes", "Itchtaoui"],
+        "historicalRole": "Les princes de Thèbes réunifient le pays par les armes. Le roi Amenemhat Ier fonde ensuite une nouvelle capitale, Itchtaoui, au sud de Memphis, pour mieux tenir la Basse-Égypte."
       },
       {
         "name": "Nouvel Empire égyptien",
-        "period": "1550-1069 av. J.-C.",
+        "period": "Vers 1580 - vers 1085 av. J.-C.",
         "entryType": "polity",
         "timeRange": {
-          "startYear": -1550,
-          "endYear": -1069,
-          "precision": "year"
+          "startYear": -1580,
+          "endYear": -1085,
+          "precision": "approximate",
+          "datingNote": "Dates données par A. Abu Bakr ; la note de chronologie du même volume donne 1580-1080 avant notre ère."
         },
         "dominantPeoples": ["Égyptiens anciens"],
-        "politicalCenters": ["Thèbes", "Memphis"],
-        "historicalRole": "Apogée de la puissance égyptienne, expansion en Nubie et au Levant, règnes de Thoutmosis III, Akhenaton, Ramsès II."
+        "politicalCenters": ["Thèbes", "Tell el-Amarna"],
+        "historicalRole": "Le roi Ahmosis chasse les Hyksos du delta. Ses successeurs étendent la conquête de la Nubie jusqu'à la troisième cataracte, et Thoutmosis III mène dix-sept campagnes au Proche-Orient. Akhenaton installe sa capitale à Tell el-Amarna, en Moyenne-Égypte."
       },
       {
         "name": "Royaume ptolémaïque",
-        "period": "305-30 av. J.-C.",
+        "period": "323 - 30 av. J.-C.",
         "entryType": "polity",
         "timeRange": {
-          "startYear": -305,
+          "startYear": -323,
           "endYear": -30,
-          "precision": "year"
+          "precision": "approximate",
+          "datingNote": "H. Riad rappelle que ces bornes sont conventionnelles : la dynastie s'installe à la mort d'Alexandre, en 323 avant notre ère, et Cléopâtre VII perd le trône après la victoire d'Octavien, en 31-30 avant notre ère."
         },
         "dominantPeoples": ["Grecs", "Égyptiens"],
-        "politicalCenters": ["Alexandrie"],
-        "historicalRole": "Dynastie grecque, hellénisation de l'Égypte, développement d'Alexandrie comme centre culturel."
+        "politicalCenters": ["Alexandrie", "Memphis"],
+        "historicalRole": "Les Ptolémées, dynastie fondée par un général d'Alexandre, règnent trois siècles. Alexandrie, sur la côte, devient la capitale et la ville la plus importante du monde grec de l'époque, avec son musée et sa bibliothèque."
       },
       {
         "name": "Égypte romaine et byzantine",
-        "period": "30 av. J.-C. - 641 apr. J.-C.",
+        "period": "30 av. J.-C. - 642 apr. J.-C.",
         "entryType": "polity",
         "timeRange": {
           "startYear": -30,
-          "endYear": 641,
+          "endYear": 642,
           "precision": "year"
         },
-        "dominantPeoples": ["Romains", "Grecs", "Égyptiens", "Coptes"],
+        "dominantPeoples": ["Romains", "Grecs", "Égyptiens"],
         "politicalCenters": ["Alexandrie"],
-        "historicalRole": "Province romaine puis byzantine, christianisation, développement du copte."
+        "historicalRole": "L'Égypte devient une province de Rome, puis de l'Empire byzantin. Les Perses l'occupent à partir de 615, avant la reconquête de l'empereur Héraclius en 629. En 642, les Égyptiens se rendent aux conquérants arabes."
       },
       {
-        "name": "Califat omeyyade et abbasside",
-        "period": "641-969",
+        "name": "Égypte des califes omeyyades et abbassides",
+        "period": "642 - 969",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 641,
+          "startYear": 642,
           "endYear": 969,
           "precision": "year"
         },
-        "dominantPeoples": ["Arabes", "Égyptiens", "Coptes"],
-        "politicalCenters": ["Fostat (Le Caire)"],
-        "historicalRole": "Conquête arabe, islamisation progressive, arabisation linguistique."
+        "dominantPeoples": ["Arabes", "Égyptiens"],
+        "politicalCenters": ["Fusṭāṭ"],
+        "historicalRole": "Le conquérant ʿAmr fait de Fusṭāṭ, près de Babylone d'Égypte, la capitale de la province. Sous les Omeyyades, puis sous les Abbassides à partir de 750, les Égyptiens passent peu à peu à la langue arabe."
       },
       {
         "name": "Califat fatimide",
-        "period": "969-1171",
+        "period": "969 - 1171",
         "entryType": "polity",
         "timeRange": {
           "startYear": 969,
           "endYear": 1171,
           "precision": "year"
         },
-        "dominantPeoples": ["Arabes", "Berbères", "Égyptiens", "Coptes"],
+        "dominantPeoples": ["Arabes", "Berbères", "Égyptiens"],
         "politicalCenters": ["Le Caire"],
-        "historicalRole": "Dynastie chiite ismaélienne, fondation du Caire, développement culturel et commercial."
+        "historicalRole": "Au début de l'été 969, le général Djawhar conquiert l'Égypte pour l'imam fatimide al-Muʿizz. Il fonde Le Caire, al-Qāhira, au nord de Fusṭāṭ, et y bâtit un palais pour l'imam."
+      },
+      {
+        "name": "Sultanat ayyoubide",
+        "period": "1171 - 1250",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1171,
+          "endYear": 1250,
+          "precision": "year"
+        },
+        "dominantPeoples": ["Kurdes", "Arabes", "Égyptiens"],
+        "politicalCenters": ["Le Caire"],
+        "historicalRole": "Les Ayyoubides succèdent aux Fatimides. Leurs soldats mamelouks, des esclaves d'origine turque, battent la croisade du roi Louis IX en 1250 ; le dernier sultan ayyoubide, Turan Shah, est assassiné en mai de la même année."
       },
       {
         "name": "Sultanat mamelouk",
-        "period": "1250-1517",
+        "period": "1250 - 1517",
         "entryType": "polity",
         "timeRange": {
           "startYear": 1250,
@@ -689,131 +738,178 @@
           "precision": "year"
         },
         "dominantPeoples": [
-          "Mamelouks (Turcs",
-          "Circassiens)",
-          "Arabes",
-          "Égyptiens",
-          "Coptes"
+          "Mamelouks turcs",
+          "Mamelouks circassiens",
+          "Égyptiens"
         ],
         "politicalCenters": ["Le Caire"],
-        "historicalRole": "État mamelouk puissant, résistance aux Mongols et aux Croisés, développement économique et culturel."
+        "historicalRole": "Les Mamelouks prennent le pouvoir en 1250. Le sultan Qutuz bat les Mongols à ʿAyn Djalut, près de Naplouse, ce qui assure l'avenir du régime. À partir de 1382, le pouvoir passe aux Mamelouks circassiens."
       },
       {
         "name": "Égypte ottomane",
-        "period": "1517-1882",
+        "period": "1517 - 1914",
         "entryType": "polity",
         "timeRange": {
           "startYear": 1517,
-          "endYear": 1882,
+          "endYear": 1914,
           "precision": "year"
         },
-        "dominantPeoples": ["Turcs ottomans", "Arabes", "Égyptiens", "Coptes"],
+        "dominantPeoples": ["Turcs ottomans", "Mamelouks", "Égyptiens"],
         "politicalCenters": ["Le Caire"],
-        "historicalRole": "Province ottomane, autonomie croissante sous les Mamelouks, modernisation sous Méhémet Ali (1805-1848)."
+        "historicalRole": "Le sultan Sélim Ier bat le dernier sultan mamelouk, Tuman Bey, à Raydaniyya, le 23 janvier 1517, et fait de l'Égypte une province ottomane. Méhémet Ali prend le pouvoir en 1805 et obtient en 1841 une charge héréditaire. Après l'occupation britannique de 1882, la suzeraineté ottomane ne subsiste qu'en droit, jusqu'en décembre 1914."
       },
       {
-        "name": "Protectorat britannique",
-        "period": "1882-1922",
+        "name": "Occupation puis protectorat britannique",
+        "period": "1882 - 1922",
         "entryType": "colonial",
         "timeRange": {
           "startYear": 1882,
           "endYear": 1922,
           "precision": "year"
         },
-        "dominantPeoples": [
-          "Tous les peuples égyptiens sous domination britannique"
-        ],
+        "dominantPeoples": ["Britanniques", "Égyptiens"],
         "politicalCenters": ["Le Caire"],
-        "historicalRole": "Occupation britannique, développement du canal de Suez, mouvements nationalistes."
+        "historicalRole": "Les troupes britanniques brisent la révolution menée par le colonel Ahmad ʿUrabi à Tell el-Kébir, le 13 septembre 1882, et occupent le pays. La Grande-Bretagne déclare son protectorat en décembre 1914 et l'abolit le 28 février 1922, après la révolution de 1919."
+      },
+      {
+        "name": "Royaume d'Égypte",
+        "period": "1922 - 1953",
+        "entryType": "modern",
+        "timeRange": {
+          "startYear": 1922,
+          "endYear": 1953,
+          "precision": "year"
+        },
+        "dominantPeoples": ["Égyptiens"],
+        "politicalCenters": ["Le Caire"],
+        "historicalRole": "Le sultan Fouad prend le titre de roi d'Égypte en 1922. La Constitution du 19 avril 1923 fonde une monarchie parlementaire. Les « officiers libres » déposent le roi Farouk le 23 juillet 1952, et la République est proclamée le 18 juin 1953."
+      },
+      {
+        "name": "République arabe unie",
+        "period": "1958 - 1961 (union avec la Syrie) ; nom gardé par l'Égypte jusqu'en 1971",
+        "entryType": "modern",
+        "timeRange": {
+          "startYear": 1958,
+          "endYear": 1971,
+          "precision": "year"
+        },
+        "dominantPeoples": ["Égyptiens", "Syriens"],
+        "politicalCenters": ["Le Caire"],
+        "historicalRole": "Union de l'Égypte et de la Syrie, approuvée par référendum le 22 février 1958. La Syrie reprend son indépendance le 28 septembre 1961 ; l'Égypte garde le nom de République arabe unie jusqu'en 1971."
       }
     ],
     "majorPeoples": [
       {
-        "name": "Arabes d'Égypte",
-        "selfAppellation": "Al-'Arab (العرب), Miṣriyyūn (مصريون, Égyptiens)",
-        "exonyms": ["Arabes", "Arabophones", "Égyptiens"],
+        "name": "Égyptiens de langue arabe",
+        "selfAppellation": "Miṣriyyūn (مصريون)",
+        "exonyms": ["Égyptiens", "Arabes d'Égypte"],
         "peopleId": "PPL_ARABES_AFRIQUE",
-        "mainRegion": "Toutes les régions d'Égypte, majoritaires dans la vallée du Nil et le delta",
-        "languages": ["Arabe égyptien (darija)", "arabe standard"],
+        "mainRegion": "Vallée et delta du Nil, où vit la plus grande partie de la population",
+        "languages": [
+          "arabe égyptien (arz)",
+          "arabe saïdi (aec)",
+          "arabe bédouin oriental (avl)"
+        ],
         "languageFamily": "FLG_SEMITIQUE",
-        "appellationRemarks": "Les Arabes d'Égypte sont majoritairement arabisés (descendants des anciens Égyptiens arabisés). Le terme \"Égyptien\" (Miṣriyyūn) est également utilisé."
+        "appellationRemarks": "L'arabe est la langue officielle de l'Égypte. On y parle l'arabe égyptien, compris dans tout le monde arabe grâce au cinéma et aux séries ; en Haute-Égypte, l'arabe saïdi ; dans le Sinaï, les Bédouins parlent un arabe bédouin oriental. À partir de la conquête arabe du VIIe siècle, les Égyptiens sont passés peu à peu à la langue arabe, selon Thierry Bianquis. Le recensement égyptien de 2017 compte les habitants sans les classer par peuple, et nous n'avons pas trouvé de chiffre officiel de leur nombre."
       },
       {
         "name": "Coptes",
-        "selfAppellation": "Aqbaṭ (أقباط), Copte (ⲟⲩⲣⲉⲙⲛ̀ⲭⲏⲙⲓ)",
-        "exonyms": ["Coptes (du grec \"Aigyptios\")", "Égyptiens chrétiens"],
+        "selfAppellation": "Coptes",
+        "exonyms": ["Égyptiens chrétiens", "Qibṭ (arabe)"],
         "peopleId": "PPL_COPTES",
-        "mainRegion": "Toutes les régions d'Égypte, concentrés dans la Haute-Égypte et les grandes villes",
-        "languages": ["Arabe égyptien", "copte (langue liturgique)"],
-        "appellationRemarks": "Les Coptes sont les descendants des anciens Égyptiens qui ont conservé le christianisme. Le terme \"Copte\" vient du grec \"Aigyptios\" (Égyptien). Ils représentent environ 10-15% de la population égyptienne."
+        "mainRegion": "Toute l'Égypte",
+        "languages": [
+          "arabe égyptien (arz)",
+          "copte (cop), langue de la liturgie"
+        ],
+        "languageFamily": "FLG_SEMITIQUE",
+        "appellationRemarks": "Le mot copte vient, par le latin coptita, de l'arabe qibṭ, lui-même issu du grec Aiguptios, « égyptien », selon le Dictionnaire de l'Académie française. Il désigne la communauté chrétienne d'Égypte, qui a gardé pour sa liturgie la langue de l'ancienne Égypte ; l'Église copte orthodoxe emploie elle-même ce nom. Le recensement égyptien de 2017 compte les habitants sans les classer par peuple, et nous n'avons pas trouvé de chiffre officiel de leur nombre."
+      },
+      {
+        "name": "Nubiens",
+        "selfAppellation": null,
+        "exonyms": ["Nubiens"],
+        "peopleId": "PPL_NUBIENS",
+        "mainRegion": "Nubie égyptienne, au sud d'Assouan",
+        "languages": ["nobiin (fia)", "kenzi (xnz)"],
+        "languageFamily": "FLG_NILOSAHARIENNE",
+        "appellationRemarks": "Le nobiin, parlé en Égypte et au Soudan, et le kenzi, parlé en Égypte, sont des langues nubiennes du Nil. La Constitution de 2014 engage l'État à ramener les habitants de la Nubie dans leurs régions d'origine. Le recensement égyptien de 2017 compte les habitants sans les classer par peuple, et nous n'avons pas trouvé de chiffre officiel de leur nombre. Les sources que nous avons lues nomment ces langues, mais pas le nom que se donnent leurs locuteurs."
       },
       {
         "name": "Siwi",
         "selfAppellation": "Isiwan",
-        "exonyms": [
-          "« Berbères de Siwa » (ancien nom donné par les Européens)",
-          "non péjoratif)"
-        ],
+        "exonyms": ["Siwans", "Berbères de Siwa"],
         "peopleId": "PPL_SIWI",
-        "mainRegion": "Oasis de Siwa (désert occidental)",
-        "languages": ["Siwi (swh)"],
+        "mainRegion": "Oasis de Siwa, dans le désert occidental",
+        "languages": ["siwi (siz)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Petit peuple amazigh isolé dans l'oasis de Siwa. Le terme \"Berbère\" est considéré comme problématique, l'auto-appellation est \"Isiwan\"."
+        "appellationRemarks": "Le siwi est une langue berbère parlée seulement en Égypte, dans l'oasis de Siwa ; Glottolog la classe parmi les langues menacées. Le recensement égyptien de 2017 compte les habitants sans les classer par peuple, et nous n'avons pas trouvé de chiffre officiel de leur nombre."
       },
       {
         "name": "Beja",
-        "selfAppellation": "Bega / Hadendowa",
-        "exonyms": ["Beja", "Bédouins de la mer Rouge"],
+        "selfAppellation": null,
+        "exonyms": ["Beja", "Bedja"],
         "peopleId": "PPL_BEJA",
-        "mainRegion": "Sud-est de l'Égypte (région frontalière avec le Soudan)",
-        "languages": ["Beja (bedawiyet)"],
+        "mainRegion": "Désert oriental, près de la frontière avec le Soudan",
+        "languages": ["beja (bej)"],
         "languageFamily": "FLG_COUCHITIQUE",
-        "appellationRemarks": "Peuple ancien de la mer Rouge, présent principalement au Soudan et en Érythrée, minorité en Égypte."
+        "appellationRemarks": "Le beja, langue couchitique, est parlé en Égypte, au Soudan et en Érythrée, selon Glottolog. La plupart de ses locuteurs vivent au Soudan. Le recensement égyptien de 2017 compte les habitants sans les classer par peuple, et nous n'avons pas trouvé de chiffre officiel de leur nombre. Les sources que nous avons lues ne donnent pas le nom que les Beja d'Égypte se donnent eux-mêmes."
       }
     ],
     "culture": {
       "mainLanguages": [
         {
-          "name": "Arabe égyptien",
+          "name": "arabe",
+          "isoCode": "ara",
+          "isPrimary": true
+        },
+        {
+          "name": "arabe égyptien",
           "isoCode": "arz"
         },
         {
-          "name": "arabe standard",
-          "isoCode": "ara"
+          "name": "arabe saïdi",
+          "isoCode": "aec"
         },
         {
-          "name": "copte"
+          "name": "arabe bédouin oriental",
+          "isoCode": "avl"
+        },
+        {
+          "name": "nobiin",
+          "isoCode": "fia"
+        },
+        {
+          "name": "kenzi",
+          "isoCode": "xnz"
         },
         {
           "name": "siwi",
-          "isoCode": "swh"
+          "isoCode": "siz"
         },
         {
           "name": "beja",
           "isoCode": "bej"
         },
         {
-          "name": "nubien",
-          "isoCode": "ken"
-        },
-        {
-          "name": "anglais",
-          "isoCode": "eng"
+          "name": "copte (langue liturgique)",
+          "isoCode": "cop"
         }
       ],
-      "culturalTraditions": "Musique égyptienne classique et populaire, cinéma égyptien, littérature arabe, calligraphie, architecture islamique et copte, fêtes religieuses (musulmanes et coptes)",
-      "dominantReligions": "Islam sunnite (école chaféite majoritaire), christianisme copte orthodoxe (10-15%), autres confessions chrétiennes (minorités)",
-      "lifestyles": "Urbanisation importante (Le Caire, Alexandrie), agriculture dans la vallée du Nil et le delta, industrie, tourisme, commerce",
-      "socialOrganization": "Structures familiales traditionnelles, organisation communautaire (quartiers, villages), structures étatiques modernes, rôle important de l'armée",
-      "regionalRelations": "Relations avec le monde arabe (Ligue arabe), relations avec l'Afrique (Union africaine), relations avec l'Europe et les États-Unis, rôle dans la paix au Moyen-Orient"
+      "culturalTraditions": "La Constitution de 2014 protège le patrimoine de toutes les périodes de l'histoire du pays : pharaonique, copte, islamique et moderne. Elle engage aussi l'État à préserver la diversité culturelle.",
+      "dominantReligions": "L'islam est la religion de l'État, selon l'article 2 de la Constitution de 2014. Selon l'article 3, les principes religieux des Égyptiens chrétiens et juifs régissent leur statut personnel, leurs affaires religieuses et le choix de leurs chefs spirituels. Les Coptes forment la communauté chrétienne d'Égypte.",
+      "lifestyles": "Environ 97 % du territoire est désert, et la plupart des Égyptiens vivent sur les terres fertiles proches du Nil. Au recensement de 2017, 42,6 % des habitants vivaient en ville et 57,4 % à la campagne.",
+      "socialOrganization": null,
+      "regionalRelations": "Selon l'article premier de la Constitution de 2014, le peuple égyptien fait partie de la nation arabe, et l'Égypte fait partie du monde islamique, appartient au continent africain et a un prolongement en Asie, le Sinaï."
     },
     "historicalFacts": {
-      "ancientPeriods": "Civilisation pharaonique (vers 3100 av. J.-C. - 30 av. J.-C.), construction des pyramides, développement de l'écriture, expansion territoriale, conquête par Alexandre le Grand (332 av. J.-C.).",
-      "middleAges": "Conquête arabe (641), islamisation progressive, dynasties arabes et turques (Omeyyades, Abbassides, Fatimides, Mamelouks), développement du commerce et de la culture.",
-      "precolonial": "Domination ottomane (1517-1882), autonomie sous Méhémet Ali, modernisation de l'État, construction du canal de Suez (1869).",
-      "colonization": "Occupation britannique (1882), protectorat britannique, développement économique, mouvements nationalistes (début XXe siècle).",
-      "independenceStruggle": "Révolution de 1919, indépendance formelle (1922), révolution de 1952, proclamation de la république (1953), nationalisation du canal de Suez (1956).",
-      "postIndependence": "République arabe d'Égypte (1958), union avec la Syrie (1958-1961), guerre des Six Jours (1967), guerre du Kippour (1973), paix avec Israël (1979), printemps arabe (2011), transition politique."
+      "ancientPeriods": "L'histoire de l'Égypte commence vers 3000 avant notre ère, selon la chronologie de l'Histoire générale de l'Afrique de l'UNESCO ; le roi Narmer installe alors une capitale à Memphis. L'Ancien Empire voit bâtir les pyramides. Après une période de troubles, les princes de Thèbes réunifient le pays au Moyen Empire. Au Nouvel Empire, l'Égypte domine la Nubie et une partie du Proche-Orient. La conquête d'Alexandre de Macédoine, en 332 avant notre ère, clôt l'histoire de l'Égypte pharaonique. Les Ptolémées règnent ensuite trois siècles depuis Alexandrie, puis l'Égypte devient une province romaine.",
+      "middleAges": "Les Arabes prennent Babylone d'Égypte en avril 641 et Alexandrie en septembre 642 ; leur chef, ʿAmr, fonde Fusṭāṭ. Peu à peu, les Égyptiens adoptent la langue arabe, selon Thierry Bianquis. En 969, le général Djawhar conquiert le pays pour les Fatimides et fonde Le Caire. Les Ayyoubides leur succèdent en 1171, puis les Mamelouks prennent le pouvoir en 1250 et arrêtent les Mongols.",
+      "precolonial": "Le sultan ottoman Sélim Ier conquiert l'Égypte en janvier 1517 et en fait une province de son empire. Bonaparte occupe le pays de 1798 à 1801. Méhémet Ali prend le pouvoir en 1805, et le traité de Londres de 1841 rend sa charge héréditaire. Le canal de Suez est inauguré le 17 novembre 1869.",
+      "colonization": "En 1882, les troupes britanniques brisent la révolution menée par le colonel Ahmad ʿUrabi à Tell el-Kébir, le 13 septembre, et occupent le pays. En décembre 1914, après l'entrée en guerre de l'Empire ottoman, la Grande-Bretagne met fin à la suzeraineté ottomane sur l'Égypte et déclare son protectorat, selon H. A. Ibrahim.",
+      "independenceStruggle": "En novembre 1918, Saʿd Zaghlūl fonde avec deux compagnons le Wafd, la « délégation égyptienne », pour représenter la nation face à la Grande-Bretagne ; la révolution de 1919 suit. Le 28 février 1922, la Grande-Bretagne abolit le protectorat, mais garde la main sur la défense, les communications de l'Empire, la protection des étrangers et le Soudan. Le sultan Fouad prend le titre de roi, et la Constitution du 19 avril 1923 proclame l'Égypte « État souverain, libre et indépendant ».",
+      "postIndependence": "Le 23 juillet 1952, les « officiers libres » déposent le roi Farouk ; la République est proclamée le 18 juin 1953. Le canal de Suez est nationalisé le 26 juillet 1956, sous la présidence de Nasser. L'union avec la Syrie forme la République arabe unie de 1958 à 1961. Viennent ensuite la guerre des Six-Jours en 1967, la guerre d'octobre 1973, puis le traité de paix avec Israël du 26 mars 1979. En 2011, un mouvement de contestation provoque le départ du président Hosni Moubarak ; la Constitution actuelle est approuvée par référendum en janvier 2014."
     },
     "sources": [
       {
@@ -867,7 +963,169 @@
         "title": "UNFPA – World Population Dashboard — Égypte",
         "url": "https://www.unfpa.org/data/world-population/EG",
         "tier": "official",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": "Fiche Égypte du tableau de bord du Fonds des Nations unies pour la population, lue le 3 novembre 2026 : « Total Population (2025): 118,400,000 »."
+      },
+      {
+        "title": "Toponymic Factfile: Egypt",
+        "url": "https://assets.publishing.service.gov.uk/media/6ab67e58734e2435f202f0e2/Egypt_Toponymic_Factfile.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Permanent Committee on Geographical Names (Royaume-Uni), fiche mise à jour en septembre 2026, lue le 3 novembre 2026. Nom officiel et langue officielle (arabe, p. 1) ; origine des noms Egypt et Mişr (p. 1, notes 1 et 3) ; 97 % du pays est désert et la plupart des habitants vivent près du Nil (p. 1) ; arabe égyptien, arabe saïdi de Haute-Égypte et arabe bédouin du Sinaï (p. 2)."
+      },
+      {
+        "title": "دراسة تحليلية لمؤشرات التعداد العام للسكان والإسكان والمنشآت 2017 (Étude analytique des indicateurs du recensement de 2017, université de Benha)",
+        "url": "https://bu.edu.eg/univ_info/PDF/Population_Census_Symposium_Booklet2017.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Université de Benha, décembre 2017, en arabe, lue en PDF le 3 novembre 2026. Page 28 : le 18 avril 2017, l'Égypte comptait 94 798 827 habitants sur son sol et 9,4 millions d'Égyptiens à l'étranger, soit 104,2 millions en tout ; tableau 1-1 : 40 046 174 habitants en ville (42,64 %) et 54 572 653 à la campagne (57,36 %). L'étude reprend les résultats du recensement de l'Agence centrale de la mobilisation publique et des statistiques (CAPMAS)."
+      },
+      {
+        "title": "Égypte, Constitution de 2014",
+        "url": "https://mjp.univ-perp.fr/constit/eg2014.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Digithèque MJP, université de Perpignan, traduction française lue le 3 novembre 2026. Article premier : l'Égypte fait partie du monde islamique, appartient au continent africain et est « fière de son prolongement asiatique ». Article 2 : « L'islam est la religion de l'État. L'arabe est sa langue officielle. » Article 3 : les principes de la religion des Égyptiens chrétiens ou juifs régissent leur statut personnel, leurs affaires religieuses et le choix de leurs dirigeants spirituels."
+      },
+      {
+        "title": "Constitution de l'Égypte de 2014, version anglaise, Constitute Project",
+        "url": "https://www.constituteproject.org/constitution/Egypt_2014",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Traduction anglaise lue le 3 novembre 2026. Article 50 : le patrimoine « from all of the Pharaonic, Coptic, Islamic, and modern periods » est protégé, et l'État veille à la diversité culturelle. Article 236 : l'État développe les régions frontalières, dont la Haute-Égypte, le Sinaï, Matrouh et la Nubie, et s'engage à ramener les habitants de la Nubie dans leurs régions d'origine."
+      },
+      {
+        "title": "Égypte, présentation et chronologie",
+        "url": "https://mjp.univ-perp.fr/constit/eg.htm",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Digithèque MJP, université de Perpignan, fiche établie par Jean-Pierre Maury, lue le 3 novembre 2026. Chronologie : Bonaparte de 1798 à 1801, Méhémet Ali en 1805, traité de Londres de 1841, canal de Suez inauguré le 17 novembre 1869, intervention britannique en 1882, protectorat le 18 décembre 1914, fin du protectorat le 28 février 1922, Constitution du 19 avril 1923, « officiers libres » le 23 juillet 1952, République le 18 juin 1953, nationalisation du canal le 26 juillet 1956, République arabe unie (référendum du 22 février 1958, départ de la Syrie le 28 septembre 1961), guerres de 1967 et 1973, traité de paix du 26 mars 1979, départ de Hosni Moubarak en 2011, Constitution approuvée en janvier 2014."
+      },
+      {
+        "title": "General History of Africa, II, introduction : note on chronology",
+        "url": "https://archive.org/details/unesco_general_history_africa_ii",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par G. Mokhtar, introduction de G. Mokhtar avec J. Vercoutter, édition anglaise de 1981, lue le 3 novembre 2026 dans une copie numérisée sur archive.org ; l'édition française n'a pas pu être ouverte. Page 10 : la chronologie fait commencer l'histoire de l'Égypte vers 3000 avant notre ère ; Ancien Empire vers 2750-2200, Moyen Empire 2150-1780, Nouvel Empire 1580-1080 ; la conquête d'Alexandre en 332 avant notre ère marque la fin de l'Égypte pharaonique."
+      },
+      {
+        "title": "General History of Africa, II, ch. 2 : Pharaonic Egypt",
+        "url": "https://archive.org/details/unesco_general_history_africa_ii",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre d'A. Abu Bakr, UNESCO, édition anglaise de 1981, lue le 3 novembre 2026 dans une copie numérisée sur archive.org ; l'édition française n'a pas pu être ouverte. Page 88 : Narmer installe une capitale à Memphis. Page 91 : Ancien Empire, de 2900 à 2280 avant notre ère ; la pyramide à degrés de Saqqarah pour le roi Djéser. Page 92 : les pyramides de Khéops, Khéphren et Mykérinos à Gizeh. Page 97 : Moyen Empire, de 2060 à 1785 ; Thèbes réunifie le pays, Amenemhat Ier fonde Itchtaoui au sud de Memphis. Page 99 : Nouvel Empire, de 1580 à 1085 ; Ahmosis chasse les Hyksos, conquête de la Nubie jusqu'à la troisième cataracte, dix-sept campagnes de Thoutmosis III. Page 102 : Akhenaton fonde une résidence à Tell el-Amarna."
+      },
+      {
+        "title": "General History of Africa, II, ch. 6 : Egypt in the hellenistic era",
+        "url": "https://archive.org/details/unesco_general_history_africa_ii",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de H. Riad avec J. Devisse, UNESCO, édition anglaise de 1981, lue le 3 novembre 2026 dans une copie numérisée sur archive.org ; l'édition française n'a pas pu être ouverte. Page 184 : après la mort d'Alexandre en 323 avant notre ère, les Ptolémées règnent trois siècles sur l'Égypte ; la capitale passe à Alexandrie, sans doute dès Ptolémée II ; la note 1 rappelle que les bornes de la période sont conventionnelles. Page 189 : Alexandrie devient la ville la plus importante du monde hellénistique ; page 192 : son musée et sa bibliothèque."
+      },
+      {
+        "title": "General History of Africa, II, ch. 7 : Egypt under Roman domination",
+        "url": "https://archive.org/details/unesco_general_history_africa_ii",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de S. Donadoni, UNESCO, édition anglaise de 1981, lue le 3 novembre 2026 dans une copie numérisée sur archive.org ; l'édition française n'a pas pu être ouverte. Page 208 : Cléopâtre VII perd le trône après la victoire d'Octavien sur Marc Antoine en 31 avant notre ère ; Rome fait de l'Égypte une province. Page 222 : occupation perse à partir de 615, reconquête d'Héraclius en 629, et « in 642 the Egyptians gave themselves up to the new conquerors »."
+      },
+      {
+        "title": "General History of Africa, III, ch. 7 : Egypt from the Arab conquest until the end of the Fatimid state (1171)",
+        "url": "https://archive.org/details/unesco_general_history_africa_iii",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de T. Bianquis, UNESCO, volume dirigé par M. El Fasi et I. Hrbek, édition anglaise de 1988, lue le 3 novembre 2026 dans une copie numérisée sur archive.org ; l'édition française n'a pas pu être ouverte. Page 165 : Babylone d'Égypte tombe en avril 641, Alexandrie en septembre 642 ; ʿAmr fait de Babylone la capitale de la province, et la ville nouvelle s'appelle « Fustat, or Fustat-Misr ». Page 169 : les Égyptiens se fondent dans le monde de langue arabe ; peu d'Arabes vivent dans les campagnes sous les Omeyyades. Page 170 : les Omeyyades sont renversés en 750. Page 180 : au début de l'été 969, Djawhar conquiert l'Égypte pour l'imam fatimide al-Muʿizz et fonde Le Caire au nord de Fustat."
+      },
+      {
+        "title": "General History of Africa, IV, ch. 15 : Egypt and the Muslim world",
+        "url": "https://archive.org/details/unesco_general_history_africa_iv",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de J.-C. Garcin, UNESCO, volume dirigé par D. T. Niane, édition anglaise de 1984, lue le 3 novembre 2026 dans une copie numérisée sur archive.org ; l'édition française n'a pas pu être ouverte. Page 378 : les Mamelouks turcs, des esclaves d'origine turque formant le régiment bahri, puis, à partir de 1382, les Mamelouks circassiens. Page 379 : ce régiment bat la croisade de Louis IX ; Turan Shah, dernier Ayyoubide d'Égypte, est assassiné en mai 1250 ; le sultan Qutuz bat les Mongols à ʿAyn Djalut, près de Naplouse. Page 397 : en 1517, la domination ottomane s'étend à l'Égypte et un gouverneur ottoman s'installe au Caire."
+      },
+      {
+        "title": "General History of Africa, IV, ch. 16 : Nubia from the late 12th century to the Funj conquest in the early 15th century",
+        "url": "https://archive.org/details/unesco_general_history_africa_iv",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de L. Kropáček, UNESCO, édition anglaise de 1984, lue le 3 novembre 2026 dans une copie numérisée sur archive.org ; l'édition française n'a pas pu être ouverte. Page 398 : « the Ayyubids (1171-1250) and the Mamluks (1250-1517) in Egypt »."
+      },
+      {
+        "title": "General History of Africa, V, ch. 6 : The Ottoman conquest of Egypt",
+        "url": "https://archive.org/details/unesco_general_history_africa_v",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de R. Veselý, UNESCO, volume dirigé par B. A. Ogot, édition anglaise de 1992, lue le 3 novembre 2026 dans une copie numérisée sur archive.org ; l'édition française n'a pas pu être ouverte. Page 138 : le sultan Sélim Ier bat Tuman Bey, dernier sultan mamelouk, à Raydaniyya le 23 janvier 1517, ce qui met fin au sultanat mamelouk ; avant de quitter l'Égypte en septembre 1517, il place Khayr Bey à la tête de la nouvelle province."
+      },
+      {
+        "title": "General History of Africa, VII, ch. 4 : African initiatives and resistance in North-East Africa",
+        "url": "https://archive.org/details/unesco_general_history_africa_vii",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de H. A. Ibrahim, d'après une contribution d'Abbas I. Ali, UNESCO, volume dirigé par A. Adu Boahen, édition anglaise de 1985, lue le 3 novembre 2026 dans une copie numérisée sur archive.org ; l'édition française n'a pas pu être ouverte. Page 67 : l'armée britannique de Garnet Wolseley brise la révolution du colonel Ahmad ʿUrabi à Tell el-Kébir, le 13 septembre 1882, et occupe le pays."
+      },
+      {
+        "title": "General History of Africa, VII, ch. 23 : Politics and nationalism in North-East Africa, 1919-35",
+        "url": "https://archive.org/details/unesco_general_history_africa_vii",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Chapitre de H. A. Ibrahim, UNESCO, édition anglaise de 1985, lue le 3 novembre 2026 dans une copie numérisée sur archive.org ; l'édition française n'a pas pu être ouverte. Page 581 : à l'entrée en guerre de la Turquie, la Grande-Bretagne met fin à la suzeraineté ottomane « résiduelle » sur l'Égypte et déclare son protectorat ; en novembre 1918, Saʿd Zaghlūl et deux compagnons fondent le Wafd ; la révolution de 1919. Page 585 : déclaration d'indépendance du 28 février 1922, avec quatre points réservés ; le 15 mars 1922, le sultan Fouad prend le titre de roi."
+      },
+      {
+        "title": "Glottolog 5.3 — Egyptian Arabic (egyp1253)",
+        "url": "https://glottolog.org/resource/languoid/id/egyp1253",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche lue le 3 novembre 2026. Langue sémitique, code ISO 639-3 arz, parlée en Égypte, en Israël et en Libye ; non menacée."
+      },
+      {
+        "title": "Glottolog 5.3 — Coptic",
+        "url": "https://glottolog.org/resource/languoid/id/copt1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche lue le 3 novembre 2026. Branche égyptienne de la famille afro-asiatique, code ISO 639-3 cop, Égypte ; langue éteinte comme langue parlée."
+      },
+      {
+        "title": "Glottolog 5.3 — Siwi (siwi1239)",
+        "url": "https://glottolog.org/resource/languoid/id/siwi1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche lue le 3 novembre 2026. Langue berbère, code ISO 639-3 siz, parlée en Égypte seulement ; classée menacée."
+      },
+      {
+        "title": "Glottolog 5.3 — Nobiin (nobi1240)",
+        "url": "https://glottolog.org/resource/languoid/id/nobi1240",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche lue le 3 novembre 2026. Langue nubienne du Nil, code ISO 639-3 fia, parlée en Égypte et au Soudan ; classée menacée."
+      },
+      {
+        "title": "Glottolog 5.3 — Kenuzi (kenu1243)",
+        "url": "https://glottolog.org/resource/languoid/id/kenu1243",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche lue le 3 novembre 2026. Langue nubienne du Nil, code ISO 639-3 xnz, aussi appelée mattokki, parlée en Égypte et en Libye ; ses locuteurs passent à une autre langue."
+      },
+      {
+        "title": "Glottolog 5.3 — Beja (beja1238)",
+        "url": "https://glottolog.org/resource/languoid/id/beja1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche lue le 3 novembre 2026. Langue couchitique, code ISO 639-3 bej, parlée en Égypte, en Érythrée et au Soudan."
+      },
+      {
+        "title": "Dictionnaire de l'Académie française, 9e édition, article copte",
+        "url": "https://www.dictionnaire-academie.fr/article/A9C4179",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Article lu le 3 novembre 2026. Étymologie : « Adaptation du latin coptita, « copte », emprunté de l'arabe qibt, lui-même issu du grec Aiguptios, « égyptien » ». Un Copte est « une personne appartenant à la communauté chrétienne d'Égypte », qui a gardé pour sa liturgie la langue de l'ancienne Égypte."
+      },
+      {
+        "title": "Coptic History",
+        "url": "https://copticorthodox.church/en/coptic-church/coptic-history/",
+        "tier": "unverified",
+        "source_kind": "community",
+        "notes": "Page d'histoire du site de l'Église copte orthodoxe, en anglais, lue le 3 novembre 2026. L'Église y nomme sa communauté « the Copts »."
       }
     ],
     "demographics": {
@@ -876,39 +1134,65 @@
       "source": "UNFPA – World Population Dashboard",
       "peoples": [
         {
-          "name": "Arabes d'Égypte",
-          "percentageInCountry": 90,
-          "percentageInAfrica": 52.5,
+          "name": "Égyptiens de langue arabe",
           "peopleId": "PPL_ARABES_AFRIQUE",
-          "region": "Toutes les régions",
-          "languageFamily": "FLG_SEMITIQUE"
+          "population": null,
+          "referenceYear": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
+          "region": "Vallée et delta du Nil",
+          "languageFamily": "FLG_SEMITIQUE",
+          "mainLanguageCode": "arz"
         },
         {
           "name": "Coptes",
-          "percentageInCountry": 10,
-          "percentageInAfrica": 5.8,
           "peopleId": "PPL_COPTES",
-          "region": "Toutes les régions (concentrés en Haute-Égypte)"
+          "population": null,
+          "referenceYear": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
+          "region": "Toute l'Égypte",
+          "languageFamily": "FLG_SEMITIQUE",
+          "mainLanguageCode": "arz"
+        },
+        {
+          "name": "Nubiens",
+          "peopleId": "PPL_NUBIENS",
+          "population": null,
+          "referenceYear": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
+          "region": "Nubie égyptienne, au sud d'Assouan",
+          "languageFamily": "FLG_NILOSAHARIENNE",
+          "mainLanguageCode": "fia"
         },
         {
           "name": "Siwi",
-          "population": 30000,
-          "percentageInCountry": 0.03,
-          "percentageInAfrica": 0.02,
           "peopleId": "PPL_SIWI",
+          "population": null,
+          "referenceYear": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "region": "Oasis de Siwa",
-          "languageFamily": "FLG_BERBERE"
+          "languageFamily": "FLG_BERBERE",
+          "mainLanguageCode": "siz"
         },
         {
           "name": "Beja",
-          "population": 50000,
-          "percentageInCountry": 0.05,
-          "percentageInAfrica": 0.03,
           "peopleId": "PPL_BEJA",
-          "region": "Sud-est (frontière avec le Soudan)",
-          "languageFamily": "FLG_COUCHITIQUE"
+          "population": null,
+          "referenceYear": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
+          "region": "Désert oriental, près de la frontière avec le Soudan",
+          "languageFamily": "FLG_COUCHITIQUE",
+          "mainLanguageCode": "bej"
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "L'Égypte est un pays d'Afrique du Nord-Est, traversé par le Nil. En arabe, sa langue officielle, elle se nomme Miṣr ; le nom Égypte vient du grec Aigyptos.",
+      "followUp": "D'où vient Kmt, le nom que se donnaient les Égyptiens de l'Antiquité ?"
     }
   }
 }

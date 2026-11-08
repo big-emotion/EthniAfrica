@@ -2591,7 +2591,7 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
 // withdrawn that day took four Factbook citations with them.
 // 115 -> 112 on 2026-10-18: the Guwa, Mbogo and Mobe fiches, withdrawn after
 // wave 24 as unattested, took their Factbook citations with them.
-export const RETIRED_CIA_FACTBOOK_URL_CEILING = 112;
+export const RETIRED_CIA_FACTBOOK_URL_CEILING = 110;
 
 const LIVE_CIA_FACTBOOK =
   /cia\.gov\/(?:library\/publications\/)?the-world-factbook/i;
@@ -4863,7 +4863,12 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // people fiches whose sources already attest those forms.
   // 5920 -> 5893 on 2026-11-03: premium batch 01 (Kongo, Akyé, Diola, Bono,
   // Dan, Chokwe, Sena, Songhaï) filled the model keys those fiches lacked.
-  peuple: 5893,
+  // 5893 -> 5833 the same day: premium batch 03 (Gourmantché, Kissi, Nande,
+  // Bissa, Boliwa, Yaka, Saho, Guéré) did the same and dropped four non-model
+  // appellation keys each.
+  // 5833 -> 5646 on 2026-11-08: the consolidated premium peoples batches 02
+  // to 08 filled the model keys of their fiches and dropped non-model ones.
+  peuple: 5646,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
@@ -4873,14 +4878,26 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // FLG_TUU lacked (each declares `content.gaps`, counted once as unexpected;
   // FLG_SONGHAY still omits `classificationStatus`, no source finding the
   // name problematic).
-  famille_linguistique: 88,
+  // 104 -> 81 on 2026-11-03: the premium pass on FLG_MANDE, FLG_BERBERE,
+  // FLG_AFROASIATIQUE, FLG_ATLANTIQUE and FLG_AUSTRONESIENNE filled the four
+  // decolonialHeader keys every family lacked (linkWithFamily,
+  // geographicArea, numberOfLanguages, totalSpeakers), and FLG_MANDE and
+  // FLG_BERBERE gained whyProblematic, FLG_BERBERE classificationStatus.
+  // 65 -> 7 on 2026-11-08: the consolidated premium families batches 02 to 04
+  // filled every model key on their fifteen fiches.
+  famille_linguistique: 7,
   // 13 -> 9 on 2026-09-29: `culture.mainLanguages` added on Mali, Senegal,
   // Burundi and the Republic of the Congo from an official toponymic factfile.
   // 9 -> 8 on 2026-10-26: `culture.mainLanguages` added on the DR Congo, its
   // four constitutional national languages beside French.
   // 8 -> 7 on 2026-11-03: `culture.mainLanguages` added on Madagascar,
   // Malagasy and French, from Glottolog and the Constitution.
-  pays: 7,
+  // 7 -> 6 on 2026-11-03: `culture.mainLanguages` added on Kenya, Swahili and
+  // English (Constitution of Kenya 2010, art. 7) and the main census languages.
+  // 6 -> 0 on 2026-11-08: the consolidated premium countries batches gave
+  // every country fiche its `culture.mainLanguages`, read in its constitution
+  // or census (the Comoros, South Africa, Tanzania and the rest).
+  pays: 0,
 };
 
 // Authoring blocks no model declares: `_meta` is curator metadata, exempt
@@ -5400,7 +5417,11 @@ export function checkCountryFamilyReferences(
 // Ghana; the fiche was folded into PPL_GOURMANTCHE, which counts Ghana.
 // 7 -> 6 on 2026-10-11: COG listed PPL_SANGO, whose currentCountries omitted
 // Congo; the fiche was folded into PPL_SANGO_SCT, which counts it.
-export const COUNTRY_PEOPLE_MEMBERSHIP_CEILING = 6;
+// 6 -> 5 on 2026-11-03: ETH listed PPL_TIGRE (the Tigre of Eritrea) for the
+// Tigray people; the entry now points at PPL_TIGRAY, which counts Ethiopia.
+// 5 -> 4 on 2026-11-08: ZAF listed PPL_NDEBELE, the Ndebele of Zimbabwe; it
+// now lists PPL_NDEBELE_SA, the South African Ndebele, which counts ZAF.
+export const COUNTRY_PEOPLE_MEMBERSHIP_CEILING = 4;
 
 export function checkCountryPeopleMembership(
   datasetRoot: string,

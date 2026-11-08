@@ -75,9 +75,18 @@ describe("DRC country culture application", () => {
   });
 
   // @req REQ-032
-  it("removes unsupported national claims that belong in typed or people-specific records", () => {
-    expect(country.content.culture.socialOrganization).toBeNull();
-    expect(country.content.culture.regionalRelations).toBeNull();
+  it("fills social organisation and regional relations only from sources it cites", () => {
+    const titles = country.content.sources.map(
+      (source: { title: string }) => source.title
+    );
+    expect(country.content.culture.socialOrganization).toContain("207");
+    expect(
+      titles.some((title: string) => title.includes("Loi n° 15/015"))
+    ).toBe(true);
+    expect(country.content.culture.regionalRelations).toContain("SADC");
+    expect(
+      titles.some((title: string) => title.includes("East African Community"))
+    ).toBe(true);
   });
 
   // @req REQ-032

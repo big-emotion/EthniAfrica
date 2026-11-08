@@ -166,7 +166,11 @@ describe("countryCultureTiles", () => {
 
   // @req REQ-092
   it("drops the tile of a field the record leaves empty", () => {
-    const country = countryRecord("COD");
+    const record = countryRecord("COD");
+    const country = {
+      ...record,
+      culture: { ...record.culture, regionalRelations: null },
+    };
     const filled = COUNTRY_FIELDS.filter((field) =>
       country.culture?.[field]?.trim()
     );

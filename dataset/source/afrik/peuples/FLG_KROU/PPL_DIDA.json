@@ -8,83 +8,69 @@
     "appellations": {
       "mainName": "Dida",
       "selfAppellation": "Dida",
-      "exonyms": [
-        "Dida (terme accepté et utilisé par la communauté elle-même)",
-        "Lakota Dida (sous-groupe)",
-        "Yocoboué Dida (sous-groupe)",
-        "Brabori (désignation alternative)"
-      ],
-      "originOfExonyms": "Le terme Dida est d'usage courant et n'a pas de connotation péjorative avérée. Le terme Brabori est utilisé comme désignation alternative dans certains contextes. Les sous-appellations Lakota et Yocoboué renvoient aux zones géographiques principales d'implantation.",
-      "whyProblematic": "La catégorie Dida s'est stabilisée dans le cadre administratif colonial et ses limites avec la catégorie Bété ne sont pas entièrement superposables aux appartenances locales. Pour la région de Gagnoa, Jean-Pierre Dozon montre que certaines tribus classées Bété auraient aussi pu être qualifiées de Dida. Il ne faut toutefois pas assimiler l'ensemble des Bété de Gagnoa aux Dida : le dida (dic, gud) et les variétés bété, dont le bété de Gagnoa (btg), restent distingués par la classification linguistique.",
-      "contemporaryUsage": "Le terme Dida est universellement utilisé en Côte d'Ivoire et dans la littérature académique pour désigner ce peuple krou du sud-ouest ivoirien.",
-      "linguisticFamily": "FLG_KROU",
-      "ethnoLinguisticGroup": "Krou oriental",
-      "historicalRegion": "Sud-ouest et centre-sud de la Côte d'Ivoire : régions de Divo, Lakota, Hiré-Watta, Guitry, Zikisso, Yocoboué, Fresco et Grand-Lahou",
-      "currentCountries": ["CIV"],
-      "spellingAliases": ["Dita"]
+      "exonyms": [],
+      "spellingAliases": ["Dyida"],
+      "originOfExonyms": "Le nom Dida est écrit « Dyida ou Dida » en 1904 par l'administrateur colonial Maurice Delafosse. Il se demande si le nom des Djivo, l'un des groupes qu'il range sous ce nom, n'est pas le même mot. Le vocabulaire recueilli à Grand-Lahou par le capitaine Le Magnen, que Delafosse publie, montre que le nom est employé dans la langue elle-même : « Parles-tu dyida ? » s'y dit « mõ kyi Dyida wore ? ».",
+      "whyProblematic": "Les limites du groupe dida sont floues. Selon l'étude d'Emmanuel Terray publiée en 1969, résumée par Robert Brain, les Dida se fondent dans leurs voisins, parlent des variétés krou diverses et n'ont ni mythe d'origine commun ni gouvernement central ; il suffit qu'ils existent comme « les Dida » aux yeux de leurs voisins. Les auteurs coloniaux ne les classent pas de la même façon : en 1904, Maurice Delafosse range les Dyida, avec les Lozoua, dans un grand groupe krou oriental qu'il nomme « Bêté » ; en 1905, Georges Thomann rattache au contraire l'île de Lauzoua aux Godié. Pour la région de Gagnoa, Jean-Pierre Dozon montre que certaines tribus classées bété auraient aussi pu être qualifiées de dida. Il ne faut toutefois pas assimiler l'ensemble des Bété de Gagnoa aux Dida : la classification des langues distingue le dida (dic, gud) du bété de Gagnoa (btg).",
+      "contemporaryUsage": "Les catalogues de langues distinguent deux langues dida, celle de Lakota (dic) et celle de Yocoboué (gud). Glottolog les réunit sous le nom Dida avec le gabogbo, la langue des Guébié, et range cet ensemble avec le néyo dans le krou oriental. Il recense aussi, pour le dida de Lakota, les noms Brabori, Dieko, Gabo, Satro et Ziki.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Dida de Lakota – sous-groupe principal, région de Lakota",
-      "Dida de Yocoboué (Yokubwe) – sous-groupe du littoral, région de Divo et Grand-Lahou",
-      "Dida de Divo – sous-groupe du centre-sud",
-      "Dida de Hiré-Watta – sous-groupe forestier",
-      "Ogbrougbrou (Gbrougbrou) – tribu Dida métissée avec les peuples lagunaires Akan, à l'origine de certains peuples kwa lagunaires (Adioukrou, Alladjan, Ahizi, Avikam, Ebrié)",
-      "Sokouyas (Sokyas, Kouyas) – Dida de Vavoua, fondés par Soky, groupe dissident établi en pays Gouro",
-      "Plus de soixante tribus au total selon la tradition orale"
+      "Lozoua, Yokoboué, Goboua, Maké et Djivo, et peut-être les gens du Ménahiri et de Garo : groupes rangés sous le nom « Dyida ou Dida » en 1904 par Maurice Delafosse",
+      "Soixante-huit tribus, au sens d'unités territoriales, et 265 villages, selon l'étude d'Emmanuel Terray (1969) résumée par Robert Brain",
+      "Dida de Lakota, avec le parler vata, et Dida de Yocoboué, avec les parlers de Divo et de Lozoua, selon Glottolog",
+      "Guébié, dont la langue, le gabogbo, est rattachée aux langues dida par Glottolog"
     ],
     "origins": {
-      "ancientOrigins": "Les Dida partagent avec les Bété l'ancêtre commun Magwé et font partie du grand groupe krou. Selon la tradition orale et les études historiques, ils sont originaires de la côte libérienne et font partie des peuples Krou ayant migré vers les forêts côtières de la Côte d'Ivoire. Ils se sont installés en Côte d'Ivoire à partir du 11e siècle, d'abord sur le littoral ivoirien dans les régions de Fresco et de Sassandra pour la pêche, puis ont progressé vers l'intérieur des forêts.",
-      "formationPeriod": "La formation du peuple Dida en tant qu'entité distincte s'est opérée entre le 11e et le 15e siècle, lors de leur progression vers l'intérieur des terres forestières. La catégorie Dida comme désignation unifiée s'est stabilisée à l'époque coloniale.",
-      "migrationRoutes": [
-        "Depuis la côte libérienne vers le littoral ivoirien (Fresco, Sassandra) à partir du 11e siècle",
-        "Progression vers l'intérieur forestier : régions de Divo, Hiré-Watta, Lakota, Guitry, Zikisso",
-        "Extension vers l'est du littoral : île de Lauzoua, Yocoboué, Grand-Lahou",
-        "Migration dissidente vers Vavoua en pays Gouro (fondateurs des Sokouyas)"
-      ],
+      "ancientOrigins": "Les Dida n'ont ni mythe d'origine commun ni généalogie d'ensemble, selon l'étude d'Emmanuel Terray publiée en 1969, résumée par Robert Brain.",
+      "formationPeriod": null,
+      "migrationRoutes": [],
       "historicalSettlementZones": [
-        "Région de Divo et ses environs (Hiré-Watta, Guitry)",
-        "Région de Lakota et Abou",
-        "Littoral : Fresco, Sassandra, Yocoboué, Grand-Lahou",
-        "Zone de Zikisso et Gnagbodougnoa",
-        "Vavoua en pays Gouro (diaspora interne des Sokouyas)"
+        "Au nord de la lagune de Lahou, jusqu'à la hauteur de Tiassalé, et de la rive droite du bas Bandama jusqu'à l'embouchure du Daguiré, selon Maurice Delafosse en 1904",
+        "Villages de Nandibo et de Téviessou, sur la rive gauche du bas Bandama, que Delafosse dit rattachés aux Dyida",
+        "Régions de Lakota et de Yocoboué, où Glottolog situe les deux langues dida"
       ],
-      "unificationsOrDivisions": "La société dida est traditionnellement très décentralisée. Chaque village reconnaît un lignage comme propriétaire des terres du village mais il n'existe pas d'autorité politique supravillageoise. Les plus de soixante tribus dida ont fonctionné de façon autonome. Des scissions sont attestées, comme celle qui a conduit les Sokouyas à s'installer en pays Gouro. Les Dida de Lakota ont subi une scission interne qui a conduit un groupe de mécontents à migrer vers Gagnoa en pays Bété.",
-      "externalInfluences": "Contacts importants avec les peuples lagunaires Akan (Adioukrou, Alladjan, Avikam, Ebrié, Ahizi) avec qui certaines tribus dida (Ogbrougbrou) se sont métissées. Influence culturelle des Baoulé au nord. Alliance ancienne et sacrée avec les Abé (Abbey) d'Agboville. Résistance à la colonisation française jusqu'en 1918. Influence du christianisme depuis le 20e siècle.",
-      "majorHistoricalEvents": "Résistance farouche à la pénétration coloniale française de 1909 à 1918 (derniers à avoir cédé parmi les peuples du sud-ouest). N'ont pas participé à l'économie de marché avant la Seconde Guerre mondiale. Soutien au Front Populaire Ivoirien (FPI) de Laurent Gbagbo dès 1982. Organisation du festival culturel annuel Djaka pour la préservation du patrimoine dida."
+      "unificationsOrDivisions": "Les Dida se répartissent en dida du nord, du sud, de l'est et de l'ouest, et la diversité culturelle entre eux est grande, selon l'étude d'Emmanuel Terray résumée par Robert Brain. Ils n'ont pas de gouvernement central et leurs limites se brouillent au contact de leurs voisins, selon la même source.",
+      "externalInfluences": "Autrefois, les Dida prenaient part à la traite des esclaves : les fils de leurs sœurs, mariées vers le sud, accueillaient les expéditions de commerce vers la côte, selon le compte rendu par Robert Brain de l'étude d'Emmanuel Terray, qui y voit l'explication historique de l'orientation des mariages.",
+      "majorHistoricalEvents": null
     },
     "organization": {
-      "traditionalPoliticalSystem": "Organisation très décentralisée : chaque village reconnaît un chef de lignage comme propriétaire des terres. La chefferie traditionnelle (choix du chef par dévotion automatique ou compétitive, puis investiture) joue un rôle de représentation communautaire et de résolution des conflits. Les conseils de familles (louboutété) gèrent les affaires internes, notamment les successions. Le palabre est le cadre privilégié de gestion et résolution des conflits.",
-      "clanOrganization": "Organisation en clans (loto) et lignages (lolo). Le lolo peut être une unité de descendance patrilinéaire ou matrilinéaire selon les groupes. La famille élargie (Gwo) est l'unité de base. Le lokpa-peteo (ou Gbo) désigne la famille nucléaire. Des pactes de paix et de non-agression (toupkè) régissent les relations entre groupes alliés. Alliance sacrée avec les Abé : interdits alimentaires mutuels et solidarité en cas de conflit.",
+      "traditionalPoliticalSystem": "Les Dida n'ont pas de gouvernement central, selon Emmanuel Terray, résumé par Robert Brain. Les différences de richesse et de statut, entre riches et pauvres, libres et esclaves, restent contenues dans chaque grand lignage : il n'existe pas de hiérarchie qui traverse toute la société, selon la même source.",
+      "clanOrganization": "La société dida repose sur des clans patrilinéaires dispersés, ou « lignages maximaux », chacun lié à un territoire de tribu, selon l'étude d'Emmanuel Terray publiée en 1969, résumée par Robert Brain. Chaque lignage maximal se divise en lignages majeurs, mineurs et minimaux.",
       "ageClassSystems": null,
-      "roleOfLineages": "Les lignages (lolo) patrilinéaires ou matrilinéaires structurent l'identité, les droits fonciers et les alliances. Le sere est un lignage mineur. Le Dou est un groupe de chasseurs organisés en sous-lignage spécialisé. Les Opajdjilés (guerriers-chasseurs) formaient une catégorie spécialisée effectuant de longues expéditions en forêt.",
-      "religiousAuthority": "Autorité spirituelle exercée par des spécialistes rituels et des officiants des cultes assurant le lien entre le monde des vivants et celui des ancêtres. La chefferie dispose d'une dimension religieuse dans la garde des objets rituels."
+      "roleOfLineages": "Un lignage majeur possède un grand filet de chasse et une portion de forêt. Les lignages mineurs et minimaux occupent les quartiers des villages et règlent l'héritage, le mariage, la production et la répartition des biens. Certains lignages mineurs dominent les autres en contrôlant les droits de mariage sur les femmes de lignages qui leur sont rattachés. Tout cela selon Emmanuel Terray, résumé par Robert Brain.",
+      "religiousAuthority": null
     },
     "languages": {
-      "mainLanguage": "Dida (langue krou)",
+      "mainLanguage": "Dida (dic, gud)",
       "isoCodes": ["dic", "gud"],
       "dialects": [
-        "Dida de Lakota (dic) – dialecte Lakota, Abu et Vata",
-        "Dida de Yocoboué (gud) – dialecte Lozoua (Guitry, 7 100 locuteurs en 1993) et Divo (94 500 locuteurs en 1993) ; dialecte de prestige : Lozoua de Guitry",
-        "Djiboua, Vatta, Zikié, Goudou, Koboua, Gah, Laboua, Abo, Zedié, Tigrou, Gnéhiri, Ménéhiri, Yocoboua, Diéko – variétés dialectales secondaires"
+        "Dida de Lakota (dic), avec le parler vata, selon Glottolog",
+        "Dida de Yocoboué (gud), avec les parlers de Divo et de Lozoua, selon Glottolog"
       ],
-      "vehicularRole": "Le dida est la langue de communication au sein des communautés dida du centre-sud ivoirien. Le français est utilisé dans l'éducation et l'administration. Le dioula sert de langue véhiculaire nationale."
+      "vehicularRole": null
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q3026843",
+      "glottocode": "dida1245"
     },
     "culture": {
-      "majorRites": "Rites de naissance : chaque naissance est fêtée par toute la communauté ; le choix du prénom est familial et peut évoquer un ancêtre protecteur dont l'enfant est considéré comme la réincarnation. Rites de mariage en plusieurs phases : désignation, intermédiaire (messager), présentation avec la dot. Rites funéraires complexes : constat, annonce (louboutété), enterrement un mois après le décès, dernier repas du mort, règlement des dettes du défunt. Festival culturel annuel Djaka en pays Dida : préservation et transmission du patrimoine culturel.",
-      "symbols": "Le gbako est une hotte traditionnelle portée par les femmes âgées dida aux travaux champêtres ; il est érigé en symbole du peuple au rond-point du quartier Bada de Divo. Le kôdê est un pagne traditionnel en écorce d'arbre battue et séchée, efficace contre les épines et le froid en forêt tropicale. Le gnigbéli-lokui est le pagne de raphia de la tenue traditionnelle dida.",
-      "artsAndMusic": "Le dida de Yocoboué est réputé pour son artisanat en raphia (pagnes tissés). La tenue traditionnelle comprend le gnigbéli-lokui en raphia et le kôdê en écorce. L'agbagningnin est une danse de réjouissance pratiquée par les jeunes au clair de lune, anciennement liée à la bonne récolte ou aux tournois sportifs ; elle se pratique au son des tam-tams et autres instruments de percussion traditionnels. Le festival Djaka rassemble les arts, chants et danses du peuple dida. Des chants traditionnels (chants dida) sont documentés comme vecteurs de la mémoire culturelle.",
-      "spiritualities": "Les Dida ont une religion traditionnelle monothéiste : ils croient en un Dieu suprême unique (grand chef), au-dessus de tous. Les ancêtres décédés deviennent serviteurs ou notables de ce Dieu. Les objets rituels servent de lien entre le monde des esprits et le monde des vivants. La croyance fondamentale est que le défunt ne meurt pas vraiment mais passe dans le monde des esprits, d'où l'importance du dernier repas funèbre. Le christianisme a été adopté depuis la colonisation, mais de nombreux rituels ancestraux sont maintenus. La foi chrétienne est majoritaire (74% selon Joshua Project 2025)."
+      "majorRites": "Le mariage dida suit un système d'échange : les hommes d'un village cherchent leurs épouses dans le plus grand nombre de villages possible, et la plupart des épouses viennent du nord, tandis que les filles partent se marier au sud, selon l'étude d'Emmanuel Terray résumée par Robert Brain. Un festival, le Djaka, est consacré à la conservation du patrimoine dida, selon le titre d'un reportage de France 24.",
+      "symbols": "Le grand filet de chasse d'un lignage majeur symbolise l'unité de ce lignage, selon Emmanuel Terray, résumé par Robert Brain.",
+      "artsAndMusic": null,
+      "spiritualities": null
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de royaume ou de chefferie centralisée. Organisation en chefferies villageoises et lignages autonomes. Les institutions coutumières dida (chefferies, conseils d'anciens) constituent la structure politique traditionnelle, documentée dans l'ouvrage académique Dynamique des institutions coutumières dida de Côte d'Ivoire (Stanford).",
-      "relationsWithNeighbors": "Alliance sacrée et ancienne avec les Abé (Abbey) d'Agboville (interdits alimentaires mutuels, solidarité). Alliance avec les Akyé (Adzopé), Abidji (Sikenci), Adioukrou (Dabou), Avikam (Grand-Lahou), Alladjan (Jacqueville), Abouré (Bonoua), Ebrié (Abidjan), Kroumen (San-Pédro) et Bakwé (Méadji). Influence culturelle des Baoulé au nord.",
-      "conflictsOrAlliances": "Résistance acharnée à la colonisation française de 1909 à 1918. Soutien au FPI de Laurent Gbagbo dès les années 1980. Tensions avec les populations dioula lors de la crise ivoirienne de 2002, en raison de l'installation de migrants mandingues dans leurs terres.",
-      "diaspora": "Présence dida dans les grandes villes ivoiriennes, notamment Abidjan. Pas de diaspora internationale significativement documentée."
+      "kingdomsOrChiefdoms": "Les Dida n'ont formé ni royaume ni gouvernement central, selon l'étude d'Emmanuel Terray résumée par Robert Brain.",
+      "relationsWithNeighbors": "Les Dida ont des alliances avec tous leurs voisins, Akan, Avikam, Krou et Baoulé, alors que ces voisins n'en ont qu'avec eux, selon Emmanuel Terray, résumé par Robert Brain. En 1904, Maurice Delafosse note que les habitants de Nandibo et de Téviessou, sur la rive gauche du Bandama, seraient venus de Tiakba, un village des Ahizi de la lagune Ébrié, et se demande si les Ahizi ne devraient pas eux aussi être rattachés aux Dida.",
+      "conflictsOrAlliances": "Les alliances des Dida avec leurs voisins akan, avikam, krou et baoulé forment un nœud au centre d'un système d'échanges, selon Emmanuel Terray, résumé par Robert Brain.",
+      "diaspora": null
     },
     "demography": {
       "totalPopulation": 457000,
       "referenceYear": 2025,
-      "source": "Joshua Project 2025 : Dida Lakota 216 000 ; Dida Yocoboué 241 000. Données confirmées par Minority Rights Group (195 000 dans les années 2000) et extrapolations 2025 basées sur le taux de croissance démographique ivoirien (2,4%)",
+      "source": "Joshua Project 2025 : Dida Lakota 216 000 ; Dida Yocoboué 241 000. Données confirmées par Minority Rights Group (195 000 dans les années 2000) et extrapolations 2025 basées sur le taux de croissance démographique ivoirien (2,4%). Emmanuel Terray comptait environ 90 000 Dida en 1969, selon le compte rendu de Robert Brain. Le recensement de 2021 ne publie que de grands groupes : les peuples de langues krou, dont les Dida, y forment 9,1 % des Ivoiriens, selon l'Agence nationale de la statistique.",
       "distributionByCountry": [
         {
           "country": "CIV",
@@ -129,7 +115,7 @@
         "url": "https://www.documentation.ird.fr/hor/fdi:17296",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "IRD-hosted academic monograph; supports the colonial Bété-Dida boundary note around Gagnoa."
+        "notes": "Monographie publiée par Karthala et l'ORSTOM. Appui pour la limite tracée par l'administration coloniale entre Bété et Dida autour de Gagnoa."
       },
       {
         "title": "SearchWorks Stanford – Dynamique des institutions coutumières dida de Côte d'Ivoire",
@@ -141,17 +127,72 @@
         "title": "France 24 / YouTube – Djaka festival en Côte d'Ivoire",
         "url": "https://www.youtube.com/watch?v=SYLpywVLMOE",
         "tier": "unverified",
-        "source_kind": "press"
+        "source_kind": "press",
+        "notes": "Reportage vidéo de France 24 publié sur YouTube. Titre vérifié le 3 novembre 2026 : « Djaka festival en Côte d'Ivoire : conserver le patrimoine du peuple Dida » ; la vidéo elle-même n'a pas été visionnée."
       },
       {
         "title": "Scribd – INTRODUCTION Dida",
         "url": "https://www.scribd.com/document/696994712/INTRODUCTION-dida",
         "tier": "unverified"
+      },
+      {
+        "title": "Brain, Robert — compte rendu d'Emmanuel Terray, L'organisation sociale des Dida de Côte d'Ivoire (Université d'Abidjan, 1969), Africa, vol. 41, n° 2, 1971, p. 165-166",
+        "url": "https://www.cambridge.org/core/journals/africa/article/lorganisation-sociale-des-dida-de-cote-divoire-essai-sur-un-village-dida-de-la-region-de-lakota-by-emmanuel-terray-abidjan-universite-1969-ann-ser-f-ethnosociologie-i-2-pp-375-bibl-carte/C37021308EDCBD3B283D2C39B07CAE22",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "author": "Robert Brain",
+        "year": 1971,
+        "notes": "Compte rendu paru dans la revue de l'International African Institute, publiée par Cambridge University Press. Lu le 3 novembre 2026 dans l'aperçu de la première page que donne l'éditeur (p. 165). Il résume l'étude d'Emmanuel Terray sur un village dida de la région de Lakota : environ 90 000 Dida, 68 tribus et 265 villages ; des limites floues, des variétés krou diverses, ni mythe d'origine commun ni gouvernement central ; des clans patrilinéaires dispersés ou lignages maximaux liés chacun à un territoire ; le grand filet de chasse du lignage majeur ; des lignages mineurs et minimaux dans les quartiers ; des riches et des pauvres, des libres et des esclaves ; un mariage par échange où les épouses viennent surtout du nord ; une participation ancienne à la traite ; des alliances avec les Akan, les Avikam, les Krou et les Baoulé. Appui pour l'organisation, les origines, les relations avec les voisins et la démographie."
+      },
+      {
+        "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+        "url": "https://archive.org/details/vocabulairescomp00delauoft",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "author": "Maurice Delafosse",
+        "year": 1904,
+        "notes": "Paris, Ernest Leroux, 1904 ; l'auteur est alors administrateur colonial en Côte d'Ivoire. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive, p. 68, 72 et 91. Page 68 : « Les Dyida ou Dida, comprenant les Lozoua, les Yokoboué, les Goboua, les Maké, les Djivo […], et peut-être les gens du Ménahiri et ceux de Garo ou Galo », au nord de la lagune de Lahou, de la rive droite du bas Bandama jusqu'au méridien de l'embouchure du Daguiré ; les villages de Nandibo et de Téviessou seraient des colonies des gens de Tiakba. Page 72 : le vocabulaire dyida vient de notes recueillies à Grand-Lahou par le capitaine Le Magnen. Page 91 : « Parles-tu dyida ? mõ kyi Dyida wore ? ». Appui pour les appellations, les groupes, les zones d'établissement et les voisins."
+      },
+      {
+        "title": "Essai de manuel de la langue néouolé parlée dans la partie occidentale de la Côte d'Ivoire",
+        "url": "https://archive.org/details/bub_gb_XEU-AAAAYAAJ",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "author": "Georges Thomann",
+        "year": 1905,
+        "notes": "Paris, Ernest Leroux, 1905 ; l'auteur est administrateur colonial du cercle du Sassandra. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive, p. 160. L'auteur range parmi les Godyé « l'île de Lauzoua dans la lagune de Lahou » et le territoire compris entre cette lagune et les pays Garo et Ménaïri. Appui pour la variation des classements coloniaux."
+      },
+      {
+        "title": "Glottolog 5.3 — Dida (dida1245)",
+        "url": "https://glottolog.org/resource/languoid/id/dida1245",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice de l'ensemble dida dans le catalogue Glottolog, lu le 3 novembre 2026. Elle réunit le dida de Lakota (dic, avec le parler vata) et le gabogbo (gie) dans un sous-ensemble guébié-lakota, et le dida de Yocoboué (gud, avec les parlers de Divo et de Lozoua) ; cet ensemble est rangé avec le néyo dans le krou oriental. Appui pour les langues, les groupes et l'identifiant."
+      },
+      {
+        "title": "Glottolog 5.3 — Lakota Dida (lako1244)",
+        "url": "https://glottolog.org/resource/languoid/id/lako1244",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice de la langue dans le catalogue Glottolog, lu le 3 novembre 2026. Elle donne le code ISO 639-3 dic et recense les noms Brabori, Dieko, Gabo, Guébie, Satro, Ziki et Vata. Appui pour l'usage contemporain du nom."
+      },
+      {
+        "title": "Répartition des Ivoiriens par grand groupe ethnique selon le sexe, RGPH 2021",
+        "url": "https://data.gouv.ci/datasets/repartition-des-ivoiriens-par-grand-groupe-ethnique",
+        "tier": "official",
+        "source_kind": "government",
+        "author": "Agence nationale de la statistique (ANStat), Côte d'Ivoire",
+        "year": 2021,
+        "notes": "Portail officiel des données ouvertes de Côte d'Ivoire, jeu de données du recensement général de la population et de l'habitat de 2021, mis à jour le 11 mars 2026. Lu le 3 novembre 2026, présentation et commentaire du graphique. Le recensement ne publie que de grands groupes : Akan, Mandé du Nord, Gur ou Voltaïques, Krou, Mandé du Sud, naturalisés et Ivoiriens sans précision. Le groupe krou représente 9,1 % des Ivoiriens. Appui pour la démographie : aucun chiffre n'y est donné pour les Dida."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Les Dida sont un peuple de langues krou du sud de la Côte d'Ivoire, autour de Lakota, Divo et Grand-Lahou. Leur nom est écrit « Dyida ou Dida » en 1904.",
+      "followUp": "D'où vient le nom Dida, écrit « Dyida » en 1904 ?"
+    }
   },
   "nameHistory": {
-    "summary": "Le nom Dida désigne un peuple de langues krou du sud de la Côte d'Ivoire, autour de Divo, Lakota et Grand-Lahou, qui se nomme lui-même Dida. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Dida désigne un peuple de langues krou du sud de la Côte d'Ivoire, autour de Lakota, Divo et Grand-Lahou, qui se nomme lui-même Dida. Il est écrit « Dyida ou Dida » en 1904, et une explication de son origine est proposée la même année ; nous la présentons plus bas.",
     "names": [
       {
         "nameText": "Dida",
@@ -159,7 +200,7 @@
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Un nom écrit en 1904 sous la forme Dyida ou Dida ; son origine reste inconnue.",
+        "shortLine": "Un nom écrit « Dyida ou Dida » en 1904 et employé dans la langue dida elle-même.",
         "periodLabel": "Écrit depuis 1904 ; en usage aujourd'hui",
         "accounts": [
           {
@@ -168,7 +209,7 @@
               "to": null,
               "label": "Sens du nom"
             },
-            "statement": "Le nom Dida désigne un ensemble de groupes du sud de la Côte d'Ivoire. Jean-Pierre Dozon note que l'histoire ancienne de plusieurs groupes dida recoupe celle de groupes bété de la région de Gagnoa. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "statement": "Le nom Dida désigne un ensemble de groupes du sud de la Côte d'Ivoire. Jean-Pierre Dozon note que l'histoire ancienne de plusieurs groupes dida recoupe celle de groupes bété de la région de Gagnoa.",
             "aspect": "meaning",
             "sources": [
               {
@@ -180,6 +221,28 @@
                 "source_kind": "academic",
                 "page": "p. 54 et p. 58",
                 "notes": "Karthala et ORSTOM, lu dans le texte intégral publié par l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1969,
+              "to": 1969,
+              "label": "1969"
+            },
+            "era": "modern",
+            "statement": "Le nom Dida désigne un ensemble aux limites floues, sans mythe d'origine commun ni gouvernement central : il suffit que les Dida existent comme « les Dida » aux yeux de leurs voisins, selon l'étude d'Emmanuel Terray résumée par Robert Brain.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Brain, Robert — compte rendu d'Emmanuel Terray, L'organisation sociale des Dida de Côte d'Ivoire (Université d'Abidjan, 1969), Africa, vol. 41, n° 2, 1971, p. 165-166",
+                "author": "Robert Brain",
+                "year": 1971,
+                "url": "https://www.cambridge.org/core/journals/africa/article/lorganisation-sociale-des-dida-de-cote-divoire-essai-sur-un-village-dida-de-la-region-de-lakota-by-emmanuel-terray-abidjan-universite-1969-ann-ser-f-ethnosociologie-i-2-pp-375-bibl-carte/C37021308EDCBD3B283D2C39B07CAE22",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 165",
+                "notes": "Compte rendu paru dans la revue Africa. Lu le 3 novembre 2026 dans l'aperçu de la première page que donne l'éditeur : « as far as the Dida are concerned it is sufficient that they exist as 'the Dida' in the eyes of their neighbours »."
               }
             ]
           },
@@ -209,6 +272,38 @@
                 "source_kind": "academic",
                 "page": "p. 68",
                 "notes": "Paris, Ernest Leroux, 1904. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026 : « Les Dyida ou Dida, comprenant les Lozoua, les Yokoboué, les Goboua, les Maké, les Djivo (dont le nom pourrait ne faire qu'un avec celui des Dyida) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dida est employé dans la langue dida elle-même : dans le vocabulaire recueilli à Grand-Lahou par le capitaine Le Magnen et publié par Maurice Delafosse, « Parles-tu dyida ? » se dit « mõ kyi Dyida wore ? ».",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Le capitaine Le Magnen",
+                "role": "recueille le vocabulaire à Grand-Lahou"
+              },
+              {
+                "name": "Maurice Delafosse",
+                "role": "publie le vocabulaire"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 72 et p. 91",
+                "notes": "Paris, Ernest Leroux, 1904. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Page 72 : « Le vocabulaire dyida provient de notes recueillies à Grand-Lahou par M. le Cap. Le Magnen ». Page 91 : « Parles-tu dyida ? mõ kyi Dyida wore ? (toi parler Dyida langage ?) »."
               }
             ]
           },

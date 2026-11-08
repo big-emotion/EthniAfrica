@@ -8,77 +8,72 @@
       "mainName": "Abé",
       "selfAppellation": "Abé",
       "exonyms": ["Abbey", "Abbeys", "Abbays", "Abès", "Béssouffouè"],
-      "spellingAliases": ["Abbé", "Abbey"],
-      "originOfExonyms": "Abbey est la transcription anglophone la plus courante du nom Abe. Bessouffoue est le nom donne par les Baoule voisins. Les variantes orthographiques (Abbeys, Abbays, Abes) refletent les differentes translitterations coloniales et academiques du nom.",
+      "spellingAliases": ["Abbé", "Abbey", "Abè"],
+      "originOfExonyms": "La forme Abbey, au pluriel Abbeys, figure dans les rapports militaires français sur la révolte de 1910, selon l'historien Fabio Viti. Elle reste la forme qu'emploient de nombreux historiens, comme Marie Miran-Guyon. En 1904, le linguiste Maurice Delafosse écrivait Abè. Le nom Béssouffouè serait celui que leur donnent leurs voisins baoulé, selon le site ivoirien Rezo Ivoire, qui relève aussi les graphies Abbays et Abès.",
       "whyProblematic": null,
-      "contemporaryUsage": "Abe est la forme officielle utilisee en Cote d'Ivoire. Abbey est frequemment utilise dans les sources anglophones et les bases de donnees de langues (Joshua Project, code ISO aba).",
-      "linguisticFamily": "FLG_BENOUECONGO",
-      "ethnoLinguisticGroup": "Akan lagunaire, groupe Kwa (Niger-Congo)",
-      "historicalRegion": "Region d'Agboville et sous-prefecture de N'douci, sud de la Cote d'Ivoire",
+      "contemporaryUsage": "Les formes Abé et Abbey sont toutes deux en usage. Le catalogue de langues Glottolog nomme la langue abé, sous le code ISO aba. L'historienne Marie Miran-Guyon écrit Abbey et donne entre crochets la forme abè.",
+      "linguisticFamily": "FLG_KWA",
+      "ethnoLinguisticGroup": "Peuple akan du sud de la Côte d'Ivoire, selon les historiens ; sa langue appartient au groupe agneby des langues kwa, selon Glottolog.",
+      "historicalRegion": "Région d'Agboville, dans le sud de la Côte d'Ivoire, entre le fleuve Agnéby et le Bandama",
       "currentCountries": ["CIV"]
     },
-    "ethnicities": [
-      "Abé",
-      "Abé-N'Damé",
-      "Abé-évé",
-      "Abé-Krobou",
-      "Abé-Agni",
-      "Abé-Dida"
-    ],
+    "ethnicities": ["Abévé", "Kho", "Morié", "Tioffo"],
     "origins": {
-      "ancientOrigins": "Les Abe sont originaires du Ghana, rattaches au groupe Ashanti. Ils descendent des Agoua que les Agni Brafe, N'Denie et Moronou auraient rencontres lors de leur exode en Cote d'Ivoire. Leur premier ancetre est Kery-Kery, suivi par Attobra, Kouassan, Kery-Kery Abobia et Akossou. La tradition orale les lie aux groupes Ewe du Ghana, du Benin et du Togo.",
-      "formationPeriod": "Migration principale entre le XVIIe et le XVIIIe siecle. L'exode conduit par Patchibo (fils d'Akossou et de Nana Yah Abobia) vers le XVIIIe siecle marque la formation du peuple Abe en Cote d'Ivoire.",
+      "ancientOrigins": "Les Abé se seraient formés par le mélange de migrants akan venus de la forêt ashanti, dans l'actuel Ghana, et de populations installées avant eux le long de l'Agnéby, selon l'historienne Marie Miran-Guyon. Comme d'autres peuples akan du Sud, ils n'auraient pas une origine commune mais un parcours historique en commun, ajoute-t-elle en s'appuyant sur d'autres historiens. La tradition du sous-groupe abévé, recueillie par l'anthropologue Georges Niangoran-Bouah, nomme Okouchi comme le grand ancêtre des Abé au temps de leur migration vers Morié.",
+      "formationPeriod": "Cette population se serait formée au cours des XVIIIe et XIXe siècles, selon Marie Miran-Guyon. Les historiens Gonnin et Allou datent de 1721 la migration d'un chef appelé Kotchi Gbô, « grand chef » en langue abé, depuis l'actuel Ghana ; Marie Miran-Guyon propose d'y voir peut-être l'ancêtre Okouchi de la tradition.",
       "migrationRoutes": [
-        "Depart du Ghana (region Ashanti)",
-        "Franchissement de la Tanoe puis du Comoe",
-        "Arret entre Adzope et Agboville : Patchibo cree le village Douda (auj. Grand-Morie)",
-        "Installation a Allahin (auj. Loviguie), a quinze kilometres de l'Agnesby",
-        "Extension vers l'ouest du cote du Bandama (Tiassale) et vers l'est (Bingerville)"
+        "De la zone forestière ashanti, dans l'actuel Ghana, vers la région du fleuve Agnéby, selon Marie Miran-Guyon",
+        "Selon la tradition abévé : installation à Morié au temps de l'ancêtre Okouchi, puis à Loviguié avec son fils Ossohougbo"
       ],
       "historicalSettlementZones": [
-        "Region d'Agboville (57 km au nord d'Abidjan)",
-        "Sous-prefecture de N'douci",
-        "Departements : Azaguie, Rubino, Grand Morie, Loviguie, Wahin, Guessiguie, Ottope, Offoumpo, Grand-Yapo, Attobrou, Blida",
-        "Sous-prefecture de Tiassale (plus de huit villages)",
-        "Sous-prefecture de Bingerville"
+        "Région d'Agboville, le long du fleuve Agnéby",
+        "Pays compris entre l'Agnéby à l'est et le Bandama, puis le Nzi, à l'ouest, selon Maurice Delafosse en 1904",
+        "Les quatre cantons abé : Abévé, Kho, Morié et Tioffo",
+        "Loviguié, village du lignage abévé des chefs Soboa, au sud-ouest d'Agboville"
       ],
-      "unificationsOrDivisions": "Le peuple Abe est subdivise en cinq grands cantons : Morie, Tchoffo, Koss (ou Khon), Abe-ve, Krobou. D'autres Abe partis de Douda s'installerent au-dela de Tiassale pour former les Didas au centre-ouest de la Cote d'Ivoire.",
-      "externalInfluences": "Influence ashanti et akan marquee dans l'onomastique, la langue et la culture. Alliance strategique avec Miezan, chef du village de Konou, contre les Konogos et les Ashantis. Colonisation francaise a partir du XIXe siecle.",
-      "majorHistoricalEvents": "Revolt de janvier 1910 contre le colonisateur francais (portage, travail force) : attaque du chemin de fer le 7 janvier 1910, tuant plusieurs voyageurs dont l'Europeen Rubino (employe de la CFAO). La revolte dura trois mois, reprimee par le commandant Nogues et 1 400 tirailleurs senegalais fin mars 1910. Destructions de villages, desarmement, amende de guerre, deportation de chefs vers la Centrafrique et le Congo-Brazzaville. La ville de Rubino fut nommee en memoire de l'employe francais tue."
+      "unificationsOrDivisions": "Les Abé se reconnaissent en quatre sous-groupes, sans doute issus de chefs de clans : Abévé, Kho, Morié et Tioffo. L'administration coloniale en a fait des cantons, selon Marie Miran-Guyon. D'après la tradition abévé, ils formèrent après leurs guerres une sorte de confédération ; son chef spirituel, Ossohougbo, était aussi juge suprême des conflits graves entre cantons.",
+      "externalInfluences": "Des contacts, parfois violents, avec les Abidji, les Adioukrou, les Ébrié et les Éotilé ont laissé des influences entre ces peuples et les Abé, selon Marie Miran-Guyon. En 1904, Maurice Delafosse notait que la langue abé avait reçu l'influence de l'agni et de nombreux mots adioukrou. La colonisation française n'atteint guère le pays abé avant 1903, quand arrivent les missions d'étude du chemin de fer parti d'Abidjan et qu'un poste est créé à Éry-Macouguié, puis transféré à Agboville en 1909, selon Marie Miran-Guyon.",
+      "majorHistoricalEvents": "En 1905-1906, Ntakpé Soboa, chef de Loviguié, mène une première révolte contre les réquisitions qu'entraînent les travaux du chemin de fer ; il est arrêté puis déporté à Tabou, selon Marie Miran-Guyon. Le 7 janvier 1910, les Abé et leurs voisins attié attaquent la voie ferrée en plusieurs endroits. Un employé européen de la Compagnie française de l'Afrique occidentale, Rubino, est tué, ainsi que des colporteurs dioula et des travailleurs du rail, selon l'historien Fabio Viti. Les troupes du commandant Noguès répriment la révolte à la fin du mois de mars. Le bilan colonial compte 574 insurgés tués chez les Abé et les Attié, un chiffre qui laisse supposer davantage de victimes, selon Fabio Viti. La ville de Rubino, où le colon est enterré, porte son nom, selon Marie Miran-Guyon."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Societe patriarcale depuis l'alliance avec Miezan (qui modifia la coutume de succession oncle-neveu au profit d'une succession pere-fils). Les chefs successeurs de Patchibo furent : Ossohou, Akoua (reine), Obodji Soboa (nomme chef superieur par les Francais, chevalier puis officier de la Legion d'honneur, decheance en 1940), Monso, Francois Eddo M'Bassidje (interim 1940-1944).",
-      "clanOrganization": "Organisation en cinq cantons principaux : Morie, Tchoffo, Koss, Abe-ve, Krobou. Les sous-groupes comprennent : Abe proprement dit, Abe-N'Dame, Abe-eve, Abe-Krobou, Abe-Agni, Abe-Anou (metissage Agba-Abe), Abe-Dida. Les Abidji et Mbattos sont des ethnies derivees de l'Abe.",
+      "traditionalPoliticalSystem": "Le pays abé était décentralisé : chaque village, avec son chef de terre et ses chefs de lignage, réglait ses propres affaires, selon Marie Miran-Guyon. D'après la tradition recueillie par Georges Niangoran-Bouah, un chef spirituel choisi à tour de rôle à Morié et à Loviguié tranchait seulement les conflits graves entre cantons. L'administration coloniale crée ensuite une chefferie supérieure. Elle nomme Ntakpé Soboa chef des Abé en 1911 ; son fils Obodji Soboa lui succède en 1923. Obodji Soboa est destitué le 24 avril 1944 et remplacé par François Eddo M'Bassidjé, du canton tioffo, selon la même autrice.",
+      "clanOrganization": "Les quatre sous-groupes abé, Abévé, Kho, Morié et Tioffo, seraient issus de chefs de clans, selon Marie Miran-Guyon. Dans la région d'Agboville vivent aussi des populations dites krobou et ega, issues du mélange avec une autre migration venue de l'actuel Ghana, selon l'historien Ekanza, qu'elle cite.",
       "ageClassSystems": null,
-      "roleOfLineages": "La lignee patrilineaire structure la succession au pouvoir et la transmission des droits depuis l'alliance fondatrice avec Miezan. L'appartenance au canton et au clan determine les droits et obligations coutumiers.",
-      "religiousAuthority": "Autorite religieuse traditionnelle liee aux chefs de clan et aux anciens. Le christianisme est aujourd'hui la religion dominante."
+      "roleOfLineages": "Les Abé forment une société akan lignagère et patrilinéaire, ce qui la distingue d'autres sociétés akan, selon Marie Miran-Guyon. Au village, le chef de terre et les chefs de lignage gèrent les affaires courantes.",
+      "religiousAuthority": "À partir de 1929, le chef supérieur Obodji Soboa dirige aussi une Église prophétique née du harrisme, l'Église d'Aké Offo, inspirée du prophète Bodjui Aké de Dabou, selon Marie Miran-Guyon. Son successeur François Eddo M'Bassidjé, catholique, contribue à la détruire. Aujourd'hui, les Églises issues des missions et de nouvelles Églises pentecôtistes rassemblent la plupart des habitants du pays abé, selon la même autrice."
     },
     "languages": {
-      "mainLanguage": "Abe (Abbey)",
+      "mainLanguage": "Abé (aba)",
       "isoCodes": ["aba"],
-      "dialects": [],
-      "vehicularRole": "La langue abe appartient au groupe Kwa (Niger-Congo), proche des langues akan. Le francais est la langue officielle de la Cote d'Ivoire et sert de vehiculaire inter-ethnique. Des portions bibliques ont ete traduites en abe (code aba)."
+      "dialects": ["Abbey-Ve", "Kos", "Morie", "Tioffo"],
+      "vehicularRole": "L'abé appartient au groupe agneby des langues kwa, avec l'abidji et l'adioukrou, selon le catalogue Glottolog, qui lui reconnaît quatre parlers. En 1904, Maurice Delafosse notait que beaucoup d'Abé de l'ouest et du nord-ouest comprenaient l'agni."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q336851",
+      "glottocode": "abee1242",
+      "iso639_3": "aba"
     },
     "culture": {
-      "majorRites": "Mariage en tenue traditionnelle akan. Alliance toukpe (alliance de paix) avec les Didas, ceremonie de vente symbolique (N'takpe vendu pour un sou pour conjurer le mauvais sort). Les pratiques culturelles partagent de nombreux elements avec les cousins ashantis, beninoises et togolaises.",
-      "symbols": "Sandalettes en pneu d'auto connues sous le nom de Abodje (associees au chef Obodji Soboa, dont le nom signifie joli garcon prevoyant). Tenue traditionnelle akan lors des ceremonies.",
-      "artsAndMusic": "Traditions musicales et vestimentaires proches du groupe akan et ashanti. Chants et danses rituels lors des ceremonies de mariage et des rites communautaires.",
-      "spiritualities": "Christianisme majoritaire (Cote d'Ivoire). Subsistance de pratiques animistes et de cultes traditionnels akan en parallele. La tradition orale et les mythes fondateurs (Kery-Kery, Patchibo) occupent une place importante dans la vie spirituelle du groupe."
+      "majorRites": "Une fête des ignames était célébrée d'abord par les Morié, puis par les Tioffo, les Kho et les Abévé, selon les souvenirs du chef François M'Bassidjé recueillis en 1966 par Claude Pairault, que cite Marie Miran-Guyon. Quand Obodji Soboa devient chef supérieur, en 1923, les chefs abé et lui passent un rituel d'allégeance : il y jure de ne jamais trahir les intérêts des Abé, selon la même autrice.",
+      "symbols": null,
+      "artsAndMusic": null,
+      "spiritualities": "Après la prédication du prophète libérien William Wadé Harris en 1913-1914, des communautés harristes se forment en pays abé. En 1915, des tirailleurs détruisent leurs églises ; en 1924 pourtant, des envoyés abé représentent environ quatre-vingts églises locales, selon Marie Miran-Guyon. D'après le recensement de 2014, près de 11 000 Abé se déclarent harristes, soit 5 % de ce groupe, selon la même autrice."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de royaume centralise unifie ; organisation en cantons sous une chefferie superieure reconnue par les autorites coloniales francaises. Chefs importants : Patchibo (fondateur), Ossohou, Obodji Soboa (officier de la Legion d'honneur).",
-      "relationsWithNeighbors": "Guerriers de l'aile gauche de l'armee de la reine Pokou (Baoule). Origines communes avec Ashantis, Agnis et autres groupes akan du Ghana. Repoussement des Attie vers l'est. Alliance de paix (toukpe) avec les Didas. Revolte commune avec les Attie en 1910.",
-      "conflictsOrAlliances": "Menaces historiques des Konogos et Ashantis au Ghana (conduit a la migration). Alliance avec Miezan contre ces menaces. Revolte anti-coloniale de 1910 avec les Attie voisins, severement reprimee. Massacres post-soumission de juin 1910 (villages de Diepe-Attie et Makoundie-Abe).",
-      "diaspora": "Des communautes Abe se trouvent dans plusieurs sous-prefectures ivoiriennes au-dela de leur territoire d'origine : Bingerville, Tiassale, Sikensi, Lakota, Divo, M'Babakro, Ouellé, Ananda Koidiokro."
+      "kingdomsOrChiefdoms": "Les Abé n'ont pas formé de royaume centralisé : selon la tradition abévé, ils formaient une confédération décentralisée autour d'un chef spirituel. L'administration française crée en 1911 une chefferie supérieure des Abé. Obodji Soboa l'exerce de 1923 à 1944 ; il est alors l'un des cinq chefs supérieurs de la colonie, selon Marie Miran-Guyon.",
+      "relationsWithNeighbors": "Selon la tradition abévé, le chef Ossohougbo mena des guerres pour fixer les limites du pays abé : à l'est avec les Akyé, aussi appelés Attié, et à l'ouest, sur le Bandama, avec les Baoulé. Pendant la révolte de 1905-1906, des villageois mettent leurs familles et leur bétail à l'abri chez leurs alliés abidji, selon Marie Miran-Guyon. En 1910, les Abé se soulèvent avec les Attié.",
+      "conflictsOrAlliances": "Les Abé mènent deux révoltes contre le pouvoir colonial : celle de 1905-1906, conduite par Ntakpé Soboa, puis celle de janvier à mars 1910, avec les Attié, contre le chemin de fer qui traverse leur pays, selon Fabio Viti. En 1910, Ntakpé Soboa se tient à l'écart, et ses fils Obodji et Meney servent de guides aux troupes coloniales ; certains y ont vu une trahison, selon Marie Miran-Guyon.",
+      "diaspora": null
     },
     "demography": {
-      "totalPopulation": 350000,
-      "referenceYear": 2025,
-      "source": "Joshua Project 2025 (350 000) ; Wikipedia FR evoque plus de 580 000 (estimation large incluant diaspora)",
+      "totalPopulation": 215000,
+      "referenceYear": 2014,
+      "source": "Recensement général de la population et de l'habitat de Côte d'Ivoire, 2014, cité par Marie Miran-Guyon (2018) : près de 215 000 Abbey, quatrième groupe akan du pays. La base de données missionnaire Joshua Project donne une estimation plus haute, 358 000, consultée en 2026.",
       "distributionByCountry": [
         {
           "country": "CIV",
-          "population": 350000
+          "population": 215000,
+          "note": "Chiffre national ; la source ne le répartit pas par région."
         }
       ]
     },
@@ -99,9 +94,10 @@
       },
       {
         "title": "Abe, Abbey – Joshua Project, 2025",
-        "url": "https://joshuaproject.net/people_groups/10141/IV",
+        "url": "https://joshuaproject.net/people_groups/10126/IV",
         "tier": "unverified",
-        "source_kind": "missionary_database"
+        "source_kind": "missionary_database",
+        "notes": "Base de données missionnaire. Fiche « Abe, Abbey in Côte d'Ivoire », consultée le 3 novembre 2026 : elle donne une population de 358 000."
       },
       {
         "title": "Cote d'Ivoire people groups – Joshua Project, 2025",
@@ -120,11 +116,76 @@
         "url": "https://www.ethnologue.com/country/CI/",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Obodji Soboa, chef supérieur des Abbey en Côte d'Ivoire coloniale. La mémoire oubliée d'un homme puissant",
+        "author": "Marie Miran-Guyon",
+        "year": 2018,
+        "url": "https://shs.hal.science/halshs-02508368v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 222-249",
+        "notes": "Article paru dans Afrique contemporaine, n° 267-268, 2018, p. 221-249, lu dans la version déposée sur l'archive ouverte HAL, le 3 novembre 2026. L'autrice s'appuie sur des archives coloniales, sur les archives de la famille Obodji et sur les enquêtes orales de l'anthropologue Georges Niangoran-Bouah. Cité pour l'origine des Abé, leurs quatre sous-groupes, leur organisation lignagère et patrilinéaire, la chefferie coloniale, la révolte de 1905-1906 et le recensement de 2014 (p. 222, note 2 : « près de 215 000 Abbey »)."
+      },
+      {
+        "title": "Les quatre morts du colon Rubino (Côte d'Ivoire, janvier 1910)",
+        "author": "Fabio Viti",
+        "year": 2016,
+        "url": "https://journals.openedition.org/africanistes/5020",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 329-330",
+        "notes": "Article paru dans le Journal des africanistes, vol. 86, n° 1, 2016, p. 329-339, lu sur OpenEdition Journals le 3 novembre 2026. Cité pour la révolte de 1910 (paragraphes 1 et 2 : « le 7 janvier, les rebelles avaient attaqué la voie ferrée à plusieurs endroits ») et pour son bilan."
+      },
+      {
+        "title": "Glottolog — Abé (abee1242)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/abee1242",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue de langues de l'Institut Max-Planck, consulté le 3 novembre 2026. Il range l'abé (code ISO aba) dans le groupe agneby, avec l'abidji et l'adioukrou, et lui reconnaît quatre parlers : abbey-ve, kos, morie et tioffo."
+      },
+      {
+        "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+        "author": "Maurice Delafosse",
+        "year": 1904,
+        "url": "https://archive.org/details/vocabulairescomp00delauoft",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 12-13",
+        "notes": "Paris, Ernest Leroux, 1904, ouvrage d'un administrateur colonial, lu dans l'exemplaire numérisé par Internet Archive le 3 novembre 2026. Cité pour le pays et la langue des Abè. L'auteur précise que son vocabulaire abè a été recueilli en 1900 à Dabou, auprès d'un Agni de Tiassalé."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Abé, qu'on écrit aussi Abbey, sont un peuple du sud de la Côte d'Ivoire, autour d'Agboville, entre l'Agnéby et le Bandama.",
+      "followUp": "D'où vient la forme Abbey qu'emploient les archives coloniales ?"
+    },
+    "gaps": [
+      {
+        "field": "content.organization.ageClassSystems",
+        "reason": "Les sources que nous avons consultées ne décrivent pas de classes d'âge chez les Abé."
+      },
+      {
+        "field": "content.culture.symbols",
+        "reason": "Les sources que nous avons consultées ne décrivent pas d'objets ou de signes propres aux Abé."
+      },
+      {
+        "field": "content.culture.artsAndMusic",
+        "reason": "Les sources que nous avons consultées ne décrivent pas la musique, la danse ou les arts des Abé."
+      },
+      {
+        "field": "content.historicalRole.diaspora",
+        "reason": "Les sources que nous avons consultées ne décrivent pas de communautés abé installées hors de leur région."
+      },
+      {
+        "field": "nameHistory.names[0]",
+        "reason": "Nous n'avons pas trouvé de source qui explique d'où vient le nom Abé."
       }
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Abé désigne un peuple du sud de la Côte d'Ivoire, autour d'Agboville, qui se nomme lui-même Abé ; Maurice Delafosse l'écrivait Abè. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Abé désigne un peuple du sud de la Côte d'Ivoire, autour d'Agboville, qui se nomme lui-même Abé. On l'écrit aussi Abbey, la forme des rapports coloniaux de 1910 et de nombreux historiens ; Maurice Delafosse écrivait Abè en 1904. Nous présentons plus bas l'histoire de ces formes.",
     "names": [
       {
         "nameText": "Abé",
@@ -137,13 +198,34 @@
         "accounts": [
           {
             "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom Abé est aussi celui de la langue, que le catalogue Glottolog range dans le groupe agneby des langues kwa, avec quatre parlers : abbey-ve, kos, morie et tioffo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Abé (abee1242)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": 2026,
+                "url": "https://glottolog.org/resource/languoid/id/abee1242",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue de langues de l'Institut Max-Planck, consulté le 3 novembre 2026 : fiche de la langue abé, code ISO aba."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1981,
               "to": 1982,
               "label": "Usage décrit en 1981-1982"
             },
             "era": "modern",
-            "statement": "Le nom Abé désigne le peuple autochtone du département d'Agboville, dont les limites correspondent assez bien à celles du pays abé, selon le géographe Jean-Louis Chaléard. Les sources que nous avons lues n'expliquent pas d'où vient ce nom.",
-            "aspect": "meaning",
+            "statement": "Le nom Abé désigne le peuple autochtone du département d'Agboville, dont les limites correspondent assez bien à celles du pays abé, selon le géographe Jean-Louis Chaléard.",
+            "aspect": "usage",
             "sources": [
               {
                 "title": "Occupation du sol et immigration en pays abé (département d'Agboville, Côte d'Ivoire)",
@@ -197,7 +279,70 @@
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "p. 12-13",
-                "notes": "Paris, Ernest Leroux, 1904. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+                "notes": "Paris, Ernest Leroux, 1904, ouvrage d'un administrateur colonial. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026, relu le 3 novembre 2026. P. 12 : « Les Abè sont les habitants de la région comprise entre l'Agnéby à l'est, le Bandama puis le Nzi à l'ouest »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Abbey",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "shortLine": "Une autre façon d'écrire le nom Abé, courante dans les archives coloniales et chez les historiens.",
+        "periodLabel": "Écrit depuis 1910 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Abbey est la forme qu'emploie l'historienne Marie Miran-Guyon dans son article sur le chef Obodji Soboa ; elle donne entre crochets la forme abè.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Obodji Soboa, chef supérieur des Abbey en Côte d'Ivoire coloniale. La mémoire oubliée d'un homme puissant",
+                "author": "Marie Miran-Guyon",
+                "year": 2018,
+                "url": "https://shs.hal.science/halshs-02508368v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 226",
+                "notes": "Article paru dans Afrique contemporaine, n° 267-268, 2018, p. 221-249, lu dans la version déposée sur l'archive ouverte HAL, le 3 novembre 2026. L'autrice s'appuie sur des archives coloniales, sur les archives de la famille Obodji et sur les enquêtes orales de l'anthropologue Georges Niangoran-Bouah. P. 226 : « La population dite « abbey [abè] » s'est formée au cours des XVIIIe et XIXe siècles »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "Janvier à avril 1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Abbey apparaît, au pluriel Abbeys, dans l'intitulé du rapport du commandant Noguès sur la répression de « l'insurrection des Abbeys et tribus voisines », selon l'historien Fabio Viti. C'est la plus ancienne trace de cette forme que le projet connaît. Les Abé portaient déjà leur nom avant elle.",
+            "formAsWritten": "Abbeys",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Le commandant Noguès",
+                "role": "dirige la colonne de répression et signe le rapport"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les quatre morts du colon Rubino (Côte d'Ivoire, janvier 1910)",
+                "author": "Fabio Viti",
+                "year": 2016,
+                "url": "https://journals.openedition.org/africanistes/5020",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 329, note 4",
+                "notes": "Article paru dans le Journal des africanistes, vol. 86, n° 1, 2016, p. 329-339, lu sur OpenEdition Journals le 3 novembre 2026. La note 4 cite le rapport du chef de bataillon Noguès, « commandant la colonne de répression de l'insurrection des Abbeys et tribus voisines, 9 janvier/4 avril 1910 », conservé aux archives du gouvernement général de l'AOF."
               }
             ]
           }

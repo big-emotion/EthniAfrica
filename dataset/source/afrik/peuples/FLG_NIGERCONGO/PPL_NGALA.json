@@ -8,97 +8,99 @@
     "appellations": {
       "mainName": "Ngala (Bangala)",
       "selfAppellation": "Mangala ma Liboko",
-      "exonyms": ["Bangala", "Bamangala", "Mangala"],
+      "exonyms": ["Bangala", "Ba-Ngala", "Bamangala"],
       "spellingAliases": [
-        "Bangalla",
-        "Mangali",
-        "Mongalla",
-        "Ngola",
+        "Ma-Ngala",
         "Wangala",
-        "Ngalla"
+        "Mangara",
+        "Bangara",
+        "Bankara",
+        "Bankaro",
+        "Mankara",
+        "Mankaro"
       ],
-      "originOfExonyms": "Le nom apparaît par écrit en février 1877 chez Stanley, qui note Mangala à la fois comme localité et comme nation, d'après des habitants de Rubunga, dans la région d'Upoto. Les Européens en font ensuite Bangala : ils nomment ainsi, à partir de 1884, le poste de Bangala-Station, puis les Congolais de toute la région. Le sens du nom est discuté. Coquilhat (1888) et Hulstaert (1940, 1974) y voient les gens de la petite rivière ; Mumbanza (1973) y voit les gens de Mankanza ; Mimpongo (2025) propose de rattacher le nom de la langue à une expression bobangi qui signifie le langage des grands marchés, plus ancienne que le nom du peuple. Ces lectures ne sont pas départagées ici.",
-      "whyProblematic": "Le terme Bangala/Ngala a d'abord été posé de l'extérieur, par des Européens, sur un ensemble de groupes distincts le long du Moyen-Congo et du Haut-Congo (Budja, Ngombe, Poto, Doko, Mondunga, Ngbandi, Ngbaka, Mbanza, etc.). Certains de ces groupes sont de souche soudanaise (Ngbandi, Ngbaka) et non strictement bantoue. Le parler qui porte le même nom, le bangala, est issu du bobangi et devenu langue de contact au poste de Bangala-Station (Meeuwis, 2020). Hulstaert tenait déjà en 1940 pour presque certain qu'aucune tribu Bangala n'avait existé.",
-      "contemporaryUsage": "Le terme Bangala est surtout utilisé dans un sens linguistique (langue bangala, soeur du lingala) et historique. Le nom est aussi repris par des groupes de la région : selon Mumbanza (1995), les Iboko, les Mabale et les habitants de Mankanza se disent Mangala ma Liboko ; selon Lothaire (cité en 1907), des travailleurs de groupes différents se disaient « nous Bangala » loin de chez eux. Le lingala, héritier direct du bangala colonial, est aujourd'hui la langue véhiculaire de 10 à 25 millions de personnes en RDC et en République du Congo.",
+      "originOfExonyms": "Le nom apparaît par écrit en février 1877 chez l'explorateur Henry Morton Stanley, qui note Mangala à la fois comme localité et comme nation, d'après des habitants de Rubunga, dans la région d'Upoto. Les Européens en font ensuite Bangala : ils nomment ainsi, à partir de 1884, le poste de Bangala-Station, puis les riverains de toute la région. En août 1884, Mata-Buiké, grand chef d'Iboko, refuse pourtant d'être appelé Ba-Ngala et attribue ce nom à des tribus d'aval, selon le journal de l'officier belge Camille Coquilhat. Le sens du nom est discuté. Coquilhat (1888) et le missionnaire Gustaaf Hulstaert (1940) y voient les gens de la petite rivière, ou du bras de rivière ; le missionnaire John Weeks (1913) pense que les Européens ont tiré le nom de la rivière Mongala ; Mumbanza (1973), cité par Mpoke Mimpongo, y voit les gens de Mankanza ; Mpoke Mimpongo (2024) rattache le nom de la langue à une expression bobangi qui signifie « le langage des grands marchés », plus ancienne que le nom du peuple. Nous présentons ces explications côte à côte, avec leurs sources.",
+      "whyProblematic": "Le nom Bangala a d'abord été posé de l'extérieur, par des Européens, sur des riverains du fleuve Congo qui portaient d'autres noms : Iboko, Mabale, Libinza, Boloki, Mobeka. Le livre de Cyrille Van Overbergh, Les Bangala (1907), l'étend à une douzaine de peuples aux langues et aux coutumes différentes, selon le missionnaire John Weeks. Le Musée royal de l'Afrique centrale parle d'un « mythe des Bangala » : les Ngombe, les Bapoto, les Mondunga, les Bwela ou les Budja finissent par passer pour des Bangala. Le parler qui porte le même nom, le bangala, est né d'une forme simplifiée du bobangi, la langue de commerce du fleuve, et a pris le nom du poste de Bangala-Station (Meeuwis, 2013). Hulstaert tenait en 1940 pour presque certain qu'aucune tribu Bangala n'avait existé. Il ne faut pas confondre ces Bangala avec un peuple du même nom établi sur la rive gauche du Kwango, dans l'actuel Angola, que Van Overbergh signale déjà.",
+      "contemporaryUsage": "Le nom Bangala est surtout employé aujourd'hui pour une langue, le bangala du nord-est de la RDC, voisine du lingala, et dans l'histoire de la colonisation. Il reste aussi un nom que des groupes de la région se donnent : selon Mumbanza, cité par Mpoke Mimpongo, les Iboko, les Mabale et les habitants de Mankanza se disent Mangala ma Liboko. Dès 1889, des travailleurs de groupes différents se disaient « nous Bangala » loin de chez eux, selon Lothaire. À Léopoldville, dans les années 1950, le nom désignait tous les gens venus du Haut-Congo, par opposition aux Bakongo, et des associations comme le Liboke lya Bangala, créé en 1955, s'en réclamaient. Le lingala, issu du bangala colonial, est la langue maternelle d'environ 15 millions de personnes et la langue de communication de 10 millions d'autres, selon Michael Meeuwis (2013) ; il l'estime en 2024 à plus de 50 millions de locuteurs.",
       "linguisticFamily": "FLG_NIGERCONGO",
-      "ethnoLinguisticGroup": "Bantou (Zone C) et partiellement Oubanguien (groupes Ngbandi, Ngbaka)",
-      "historicalRegion": "Confluent des rivières Ubangi et Congo (Haute-Équateur, RDC) ; Poste de Bangala-Station (actuel Nouvelle-Anvers) ; rivière Mongala ; Moyen et Haut-Congo",
+      "ethnoLinguisticGroup": "Bantou : riverains du fleuve parlant des langues comme l'iboko, le mabale, le libinza ou le boloki ; le bangala et le lingala appartiennent au groupe bobangi (Glottolog)",
+      "historicalRegion": "Rives du fleuve Congo autour de Mankanza (le poste de Bangala-Station en 1884, puis Nouvelle-Anvers), entre l'embouchure de l'Oubangui et celle de la Mongala, dans l'actuelle province de l'Équateur (RDC)",
       "currentCountries": ["COD", "COG"]
     },
     "ethnicities": [
-      "Bangala proprement dit (populations riveraines autour de la Bangala-Station / Nouvelle-Anvers, nord-ouest RDC)",
-      "Boloki (Baloki / Boluki : groupe riverain que les Européens rangeaient parmi les Bangala ; son parler local reste distinct du bangala, selon Meeuwis, 2020)",
-      "Ngombe (voisins nord des Bangala, regroupés parfois avec eux)",
-      "Poto (groupe riverain voisin, Équateur)",
-      "Lobala (Lubala, à l'ouest des Bangala, données limitées)",
-      "Gombe / Ngorabe (nord des Bangala, ouest des Doko, similitudes de parenté)"
+      "Iboko (Diboko), autour du poste de Mankanza, dont le chef Mata-Buiké était reconnu comme grand chef en 1884",
+      "Mabale (Mabali), district allié d'Iboko",
+      "Libinza (Ibinza), dont les gens d'Iboko disaient venir",
+      "Boloki, riverains de Mobeka, de Monsembe et du lac Libinza, que les Européens rangeaient parmi les Bangala",
+      "Mobeka, à l'embouchure de la Mongala",
+      "Gombe d'Iboko et autres groupes ngombe installés près des riverains",
+      "Poto (Upoto), Mondunga, Bwela et Budja, peuples plus éloignés que l'usage colonial appelait aussi Bangala"
     ],
     "origins": {
-      "ancientOrigins": "Les populations désignées comme Bangala ou Ngala sont des groupes bantous (Zone C) établis de longue date le long du fleuve Congo et de ses affluents, notamment la rivière Mongala. Leur économie traditionnelle combinait agriculture (manioc), pêche fluviale intensive et commerce riverain. Avant l'arrivée des Européens, la langue Bobangi — parlée par les Bobangi (commerçants fluviaux) — servait de lingua franca sur le Moyen-Congo, et les Bangala avaient une connaissance secondaire de cette langue facilitant les échanges.",
-      "formationPeriod": "La désignation Bangala comme identité collective est en grande partie une construction coloniale. Les Européens (État indépendant du Congo de Léopold II) identifièrent les habitants de la zone de Bangala-Station comme Bangala à partir de 1877-1881. Entre 1881 et 1882, le pidgin Bangala naquit de la pidginisation du Bobangi dans le contexte de l'occupation européenne. Après 1900, ce pidgin évolua pour devenir le lingala à l'ouest et conserva le nom Bangala au nord-est de la RDC. Les missions protestantes (Baptist Missionary Society) continuèrent d'employer et de codifier le bangala dans le nord-est bien après que les missions catholiques eurent promu activement le glossonyme lingala à l'ouest à partir de 1900, selon Meeuwis (2019, 2024) — une bifurcation confessionnelle qui explique la coexistence actuelle des deux noms.",
+      "ancientOrigins": "D'après ce que les habitants racontaient à Camille Coquilhat en 1884, les Ba-Ngala vivaient autrefois, sans doute au moins un siècle plus tôt, dans l'intérieur des terres à l'ouest du poste, entre l'Oubangui et le Congo, sur la rivière d'Ibinza. Des inondations ou des guerres les auraient chassés jusqu'au bord du fleuve, où ils se seraient divisés en plusieurs groupes. Avant l'arrivée des Européens, le bobangi servait déjà de langue de commerce sur le cours occidental du fleuve, selon Michael Meeuwis.",
+      "formationPeriod": "Le nom Bangala comme identité commune s'est formé en grande partie sous la colonisation. Des officiers européens et leurs troupes arrivent dans la région du bobangi en 1881-1882 et en tirent une langue simplifiée. En 1884-1885, cette langue est portée à Bangala-Station, poste de l'État nommé d'après des habitants qu'on croyait appeler Bangala, et prend elle-même ce nom. En 1901-1902, les missionnaires de Scheut de Nouvelle-Anvers la réforment et la renomment lingala, selon Michael Meeuwis. Les missions protestantes gardent plus longtemps le nom bangala, qui survit dans le nord-est du Congo tandis que lingala s'impose à l'ouest et au nord (Meeuwis, 2024). Le Musée royal de l'Afrique centrale décrit aussi le rôle de la « colonie scolaire » de Nouvelle-Anvers, fondée en 1892, dans cette identité bangala.",
       "migrationRoutes": [
-        "Populations autochtones du Moyen et Haut-Congo, sans migration fondatrice documentée majeure",
-        "Déplacements fluviaux le long du Congo, de l'Ubangi et de la Mongala (pirogue : mode de transport et d'identité)",
-        "Expansion du pidgin Bangala le long des axes fluviaux Congo-Ubangi sous la colonisation belge (1880s-1910s)"
+        "De la rivière d'Ibinza, dans l'intérieur, vers les rives du fleuve Congo, selon les récits recueillis par Coquilhat en 1884",
+        "Division en groupes sur le fleuve : vers Mokomila et Bongata en aval, vers Loulanga, Bolombo et Boukoumbi sur la rive gauche",
+        "Lutte entre Iboko et Mobeka : Mobeka repoussé vers l'embouchure de la Mongala, Iboko installé à l'emplacement de Mankanza",
+        "Accueil par Iboko des gens de Mokolo, venus du nord, qui fondent le district de Mabali, puis de familles ngombe"
       ],
       "historicalSettlementZones": [
-        "Bangala-Station (actuel Nouvelle-Anvers, province du Bas-Uélé, RDC) : centre géographique de référence",
-        "Rivière Mongala et ses rives (province de la Mongala, RDC)",
-        "Confluent Ubangi-Congo (province de l'Équateur, RDC)",
-        "Kinshasa (Léopoldville) : première ville adoptant le pidgin bangala puis le lingala comme langue urbaine"
+        "Mankanza (Bangala-Station en 1884, Nouvelle-Anvers à partir de 1890), province de l'Équateur, RDC",
+        "Rive droite du fleuve Congo : Iboko, Mabali, Monsembe, Mobeka à l'embouchure de la Mongala",
+        "Rive gauche du fleuve : Loulanga, Bolombo, Boukoumbi",
+        "Lac et rivière de Libinza (Ibinza), dans l'intérieur"
       ],
-      "unificationsOrDivisions": "Les Bangala ne formèrent jamais un État centralisé. Des villages de 25 à 100 huttes s'organisaient en districts regroupant plusieurs villages sous un chef de district (le plus riche ou le plus respecté des chefs de village). Il n'existait pas de chef suprême. La langue bangala/lingala créa une unité de communication sans unité politique.",
-      "externalInfluences": "Arrivée des agents de l'État Indépendant du Congo de Léopold II (1881-1882) et de leurs soldats ouest-africains et est-africains. Missions catholiques (Scheutistes, Prémontrés) et protestantes (Baptist Missionary Society) standardisant le bangala/lingala après 1900. Administration coloniale belge imposant le lingala comme langue de l'armée (Force Publique) et de l'administration dans la province de l'Équateur. Indépendance du Congo (1960) : le lingala devient l'une des quatre langues nationales de la RDC.",
-      "majorHistoricalEvents": "1877 : les Européens désignent les habitants de la zone du Haut-Congo comme Bangala. 1881-1882 : naissance du pidgin Bangala à la Bangala-Station. 1903 : premier usage documenté du terme Lingala dans une publication missionnaire. 1911 : début de l'adoption du terme Lingala par les missions protestantes. 1960 : indépendance du Congo ; lingala langue de l'armée congolaise. Aujourd'hui : lingala est l'une des 4 langues nationales de la RDC et est parlé par 10 à 25 millions de personnes."
+      "unificationsOrDivisions": "Les riverains appelés Bangala ne formaient pas un État centralisé. Chaque village avait à sa tête un chef, le monanga, en général le plus riche des notables. Plusieurs villages aux intérêts communs formaient un district, dirigé par le plus influent des chefs, le monanga monnene ou grand chef. En 1884, les trois districts d'Iboko, de Mabali et de Gombe reconnaissaient pour chef suprême le vieux Mata-Buiké d'Iboko, et d'autres groupes faisaient parfois alliance avec eux, selon Coquilhat.",
+      "externalInfluences": "En mai et juin 1884, le capitaine Edmond Hanssens signe des traités avec les chefs de la région, à commencer par celui d'Iboko le 7 mai, au nom de l'Association internationale du Congo. Le poste de Bangala-Station devient Nouvelle-Anvers en 1890. Les missionnaires catholiques de Scheut s'installent en amont de Mankanza en 1889, puis à Mankanza en 1892, et la Baptist Missionary Society s'établit chez les Boloki de Monsembe. La Force publique adopte le lingala, qui devient la langue de l'armée coloniale dans tout le Congo belge.",
+      "majorHistoricalEvents": "Février 1877 : Henry Morton Stanley descend le fleuve et note les noms Mangala et Bangala. Mai-juin 1884 : traités d'Edmond Hanssens et fondation de Bangala-Station. 1890 : le poste prend le nom de Nouvelle-Anvers. 1901-1902 : les missionnaires de Scheut réforment la langue et la renomment lingala. 1907 : Cyrille Van Overbergh publie Les Bangala. 1931-1934 : des missionnaires protestants tentent de créer une langue commune, l'« Union Ngala ». 1955 : création de l'association Liboke lya Bangala. 1960 : à l'indépendance, le lingala reste l'une des quatre langues nationales du Congo."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Pas de chefferie suprême centralisée. Chaque village (25 à 100 huttes) est dirigé par un chef de village dont l'autorité est limitée par une assemblée des hommes adultes. Plusieurs villages s'unissent pour former un district sous un chef de district (le plus riche ou le plus respecté des chefs de village), qui joue le rôle de juge. Les villages sont divisés en quarters (probablement des barrios claniques).",
-      "clanOrganization": "Structure patrilinéaire : l'héritage est paternel, l'aîné hérite du titre et d'une plus grande part des biens. Un fils peut hériter des épouses de son père. Polygamie pratiquée. Classes sociales : notables (chefs de district et hommes riches), hommes libres ordinaires, esclaves (acquisitions de guerre ou dettes). Les enfants d'un homme libre et d'une esclave sont des demi-esclaves (mbotela).",
+      "traditionalPoliticalSystem": "Chaque village avait à sa tête un chef, le monanga, en général le plus riche des notables. Les villages s'étendaient en longueur le long du fleuve et se divisaient en quartiers, chacun tenu par un notable. Les chefs d'un district se concertaient en assemblée, et le plus influent d'entre eux était le grand chef, le monanga monnene, selon les témoignages réunis par Cyrille Van Overbergh en 1907.",
+      "clanOrganization": "Coquilhat distinguait les mukunzi, notables qui possèdent des femmes, des esclaves et un quartier, les nsomi, hommes libres sans biens, et les esclaves, appelés mantamba ou mombu. Le commissaire Lothaire répondait que ce ne sont pas des classes : chacun passe d'un état à l'autre selon sa fortune et son travail. Un autre témoin, Hanolet, décrit aussi les botela, esclaves affranchis à qui le maître donne une femme, et dont les enfants sont botela. Selon Lothaire, les enfants d'une esclave et d'un homme libre naissent libres.",
       "ageClassSystems": null,
-      "roleOfLineages": "La terre est propriété communale du village ; les individus ont un droit d'usufruit sur ce qu'ils défrichent et cultivent. Les palmiers et certains droits de pêche appartiennent aux individus. L'organisation familiale est patrilocale avec polygamie fréquente.",
-      "religiousAuthority": "Pratiques spirituelles animistes traditionnelles combinées au christianisme depuis les missions catholiques et protestantes du début du XXe siècle. La circoncision (masculine) et l'excision (féminine) sont pratiquées comme rites de passage. Le christianisme (catholique majoritairement, mais aussi protestants baptistes) est aujourd'hui dominant dans la région."
+      "roleOfLineages": "Selon Lothaire, cité par Van Overbergh, les femmes gardent leurs biens et les maris n'en héritent pas. Un fils hérite de sa mère, et non des autres épouses de son père. À la mort d'un mari, la femme gère la fortune jusqu'à ce que son fils puisse le faire : à Mobeka, une veuve a ainsi été longtemps la principale autorité de cette grande agglomération.",
+      "religiousAuthority": "Le monganga, que les témoins de Van Overbergh appellent « sorcier-médecin », exerce l'un des métiers les plus considérés. Selon ces témoins, on soignait un malade par des danses chantées et des tambours, et le tambour servait aussi à demander aux esprits le succès à la guerre. Le christianisme s'est implanté avec les missions catholiques de Scheut, installées à Mankanza en 1892, et avec la Baptist Missionary Society chez les Boloki."
     },
     "languages": {
-      "mainLanguage": "Bangala (Mɔnɔkɔ na bangála) / Lingala",
+      "mainLanguage": "Bangala (bxg) et lingala (lin) ; localement iboko, mabale, libinza et boloki",
       "isoCodes": ["bxg", "lin"],
       "dialects": [
-        "Bangala proprement dit (nord-est de la RDC, Bas-Uélé, sœur du lingala, 3,5 millions de locuteurs L2 en 1991)",
-        "Lingala standard (ouest et nord de la RDC, République du Congo, 2 millions de locuteurs L1, 5-10 millions L2)",
-        "Lingala populaire / Kindubill (Kinshasa, forme vernaculaire urbaine)"
+        "Bangala au sens strict, au nord-est de la RDC, parlé par environ 2,5 millions de personnes selon Meeuwis (2024)",
+        "Lingala du nord-ouest, proche de la forme réformée par les missionnaires de Scheut au début du XXe siècle",
+        "Lingala de Kinshasa, plus proche du bangala d'origine et le plus répandu aujourd'hui"
       ],
-      "vehicularRole": "La langue bangala fut la première lingua franca coloniale du Haut-Congo (1881-1900), base du lingala moderne. Le lingala est aujourd'hui l'une des 4 langues nationales de la RDC et l'une des 2 langues officielles de la République du Congo. Il est la langue de l'armée congolaise (FARDC) et d'une grande partie de la musique populaire africaine. Entre 10 et 25 millions de locuteurs au total selon les estimations, dont 2 millions de natifs. Le bangala n'est pas une langue menacée et occupe un rôle de communication élargie (EGIDS 3), selon Glottolog."
+      "vehicularRole": "La langue bangala s'est répandue à partir du poste de Bangala-Station à la fin des années 1880 et dans les années 1890, jusqu'à Kisangani à l'est, jusqu'à la frontière du Soudan au nord-est et jusqu'à Léopoldville au sud. Elle a donné le lingala, langue de l'armée coloniale puis de l'armée nationale, de la capitale et de la musique zaïroise. Le lingala est aujourd'hui l'une des quatre langues nationales de la RDC, à côté du français, langue officielle, et il est parlé au centre et au nord de la République du Congo, selon Michael Meeuwis. Glottolog classe le bangala et le lingala parmi les langues non menacées, de communication élargie."
     },
     "externalIdentifiers": {
       "wikidataId": "Q2882454"
     },
     "culture": {
-      "majorRites": "Circoncision masculine et excision féminine comme rites de passage. Cérémonies de mariage accompagnées de négociations sur la dot (lobola en biens, anciennement aussi esclaves et bétail). Rites funèbres avec deuil communautaire. Cérémonies de première récolte autour du manioc et du maïs. Pratiques de purification avant et après les activités de pêche (fondamentale dans l'économie riveraine).",
-      "symbols": "La pirogue (dlugout canoe) est le symbole identitaire des peuples riverains du Congo : moyen de transport, de commerce et de guerre. La pêche avec nasses, filets, sagaies, poison et hameçons symbolise le lien à la rivière. Les haches en fer et les lances représentent le statut guerrier. La monnaie traditionnelle (houes en fer, couteaux, pointes de lance, barres de cuivre puis de laiton) témoigne du rôle central des échanges commerciaux.",
-      "artsAndMusic": "La pirogue et son artisanat (sculpture, gravure) sont les expressions artistiques les plus distinctives. La musique traditionnelle utilise des tambours en bois (likembe ou sanza-tambour) et des chants collectifs lors des cérémonies. La culture musicale du Congo contemporain, notamment la rumba congolaise et le lingala music, puise dans les traditions riveraines du Haut-Congo. La poterie et le tissage (nattes, paniers) sont des arts féminins. Les récits oraux (contes, épopées ancestrales) transmettent la mémoire collective.",
-      "spiritualities": "Animisme traditionnel avec croyance aux esprits de la nature (forêt, eau) et aux ancêtres. Pratiques de divination et de guérison par les nganga (devins-guérisseurs). Croyance à des esprits maléfiques des eaux (ndoki). Christianisme dominant depuis le XXe siècle : catholique (missions Scheutistes et Prémontrés) et protestantisme baptiste (Baptist Missionary Society). Syncrétisme entre ancestralité bantoue et pratiques chrétiennes (Kimbanguisme, Église du Réveil)."
+      "majorRites": "Selon Lothaire, il n'existait pas de cérémonie d'initiation à la puberté : la circoncision, loin d'être générale, se faisait vers six ou sept ans, sans rite public. Le mariage était réglé par les parents, et le fiancé payait la dot à la famille de la jeune fille après un palabre. Autrefois, à la mort d'un chef de famille important, des esclaves étaient enterrés avec lui ; plus tard, la famille bâtissait une case sur sa tombe et y portait de la nourriture, selon les témoignages réunis par Van Overbergh.",
+      "symbols": "Le fleuve est le véritable élément des riverains, et la pirogue sert à tout : la pêche, le commerce, la guerre et même, souvent, de cercueil. Les forgerons et les constructeurs de pirogues, appelés itule, exercent des métiers considérés. Les riverains portent des tatouages, et les jeunes prisonniers élevés dans une famille prennent le tatouage de la tribu, selon Lothaire.",
+      "artsAndMusic": "Coquilhat ne connaissait pas d'instrument à cordes chez les Bangala. Il décrit une cloche de fer, le gonga, des grelots de guerre, les ngira, une trompe en ivoire, des tambours de toutes tailles, des hochets et une petite boîte à cinq ou six lamelles de fer ou de bois. Les soirs de lune, les jeunes dansent au son du tambour. Dans la danse décrite par un autre témoin, hommes et femmes forment un grand cercle, et un homme et une femme en sortent tour à tour pour danser face à face. Au XXe siècle, la musique zaïroise, chantée en lingala de Kinshasa, a fait connaître cette langue dans toute l'Afrique.",
+      "spiritualities": "Un enfant bangala de la mission décrit un grand seigneur invisible qui vit au ciel, a tout fait et ne s'occupe plus de rien : Ihanza. Il parle aussi d'un esprit mauvais, le ndoki, qui tue les gens en entrant dans leur ventre. Un autre témoin, Hanolet, nomme le dieu Djakomba et le mauvais esprit likundu. Ces témoignages sont réunis par Van Overbergh en 1907. Le christianisme, catholique et protestant, s'est implanté avec les missions arrivées à partir de 1889."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de royaume ou de chefferie centralisée. Organisation en districts de villages sous des chefs locaux. Le poste de Bangala-Station (Nouvelle-Anvers, fondé en 1884) fut le principal centre colonial et missionnaire dans la région. L'absence de structure politique centralisée facilita la pénétration coloniale mais rendit les Bangala moins vulnérables à une domination directe.",
-      "relationsWithNeighbors": "Commerce fluvial intensif avec les Bobangi (commerçants du fleuve Congo), les Mongo, les Ngombe et les autres groupes riverains. Échanges de poisson contre produits agricoles avec les populations de l'intérieur. Relations mixtes (commerciales et parfois belliqueuses) avec les groupes soudanais du nord (Ngbandi, Ngbaka). Contacts avec les marchands arabo-swahili de l'est (XIXe siècle).",
-      "conflictsOrAlliances": "Résistance sporadique à l'occupation coloniale de l'État Indépendant du Congo (1880s-1900s). Les pratiques de caoutchouc forcé (caoutchouc rouge) imposées par l'État de Léopold II causèrent des souffrances importantes dans toute la région du Haut-Congo. Conflits internes entre villages et districts pour le contrôle des droits de pêche et des routes commerciales.",
-      "diaspora": "Les locuteurs lingala/bangala sont présents dans toutes les grandes villes de la RDC (Kinshasa, Kisangani, Mbandaka) et de la République du Congo (Brazzaville, Pointe-Noire). Le lingala, langue de l'armée et de la musique populaire, a diffusé la culture des peuples du fleuve bien au-delà de leur territoire d'origine. Des communautés congolaises lingalophones sont présentes en Europe (Belgique, France), en Amérique du Nord et en Afrique de l'Est."
+      "kingdomsOrChiefdoms": "Les riverains appelés Bangala n'avaient pas de royaume. Leurs villages s'unissaient en districts, et les trois districts d'Iboko, de Mabali et de Gombe reconnaissaient en 1884 le vieux Mata-Buiké d'Iboko comme chef suprême. C'est avec le chef d'Iboko que le capitaine Hanssens signe le premier traité, le 7 mai 1884 ; le poste de Bangala-Station, devenu Nouvelle-Anvers en 1890 puis Mankanza, est ensuite le principal poste de l'État et des missions dans la région.",
+      "relationsWithNeighbors": "Selon les récits recueillis par Coquilhat, les gens d'Iboko ont chassé ceux de Mobeka vers l'embouchure de la Mongala et vaincu des Ngombe avant de s'installer sur le fleuve. Ils ont ensuite accueilli les gens de Mokolo et des familles ngombe venues de l'est-nord-est. Au début du XXe siècle, des Ngombe voisins de Mobeka se mêlaient aux riverains et prenaient leur nom, leur langue et leur tatouage, selon John Weeks. Le commerce sur le fleuve se faisait en bobangi, la langue des commerçants bobangi.",
+      "conflictsOrAlliances": "En février 1877, les riverains attaquent les pirogues de Stanley en criant « Ya Bangala ! ». En 1884, Coquilhat décrit dans son journal des alliances et des guerres entre districts, comme une attaque des gens de la Ngiri contre Mabali en août. À partir de 1892, la compagnie concessionnaire l'Anversoise impose la récolte du caoutchouc dans le bassin de la Mongala, ce qui provoque des résistances armées, surtout chez les Budja, selon le Musée royal de l'Afrique centrale.",
+      "diaspora": "Pendant la colonisation, des gens du Haut-Congo partent pour Léopoldville comme marins, ouvriers ou soldats de la Force publique. Riverains, Mongo, Ngombe ou Budja, tous y sont appelés « Bangala », et c'est pour cela que le lingala est devenu la langue de la capitale, selon le Musée royal de l'Afrique centrale. En 1957, Léopoldville compte 29 753 originaires de l'Équateur. Le lingala est aussi parlé dans la diaspora congolaise et angolaise, surtout en Europe, au Canada et en Afrique du Sud."
     },
     "demography": {
-      "totalPopulation": 400000,
-      "referenceYear": 2025,
-      "source": "Estimations dérivées de : 101 Last Tribes (110 000 en 1907). Population de la province de la Mongala (RDC) : 1,6 million en 2020 (City Facts) dont les Bangala ne constituent qu'une partie. Joshua Project — Bangala in DRC : 800 personnes (groupe ethnique strictement défini). La définition plus large inclut les groupes riverains associés.",
+      "totalPopulation": null,
+      "referenceYear": 1886,
+      "source": "Aucune source que nous avons lue ne donne le nombre actuel des Bangala, et nous n'avons pas trouvé de recensement qui les compte. La seule estimation lue est ancienne : en 1886, Camille Coquilhat évaluait à environ 110 000 les habitants des deux rives du fleuve dans les parages du poste des Bangala, et le major Fiévez jugeait ces chiffres trop élevés (Van Overbergh, Les Bangala, 1907, p. 65-66).",
       "distributionByCountry": [
         {
           "country": "COD",
-          "population": 380000,
-          "percentage": 95,
-          "note": "Province de la Mongala (Bumba, Lisala, Bongandanga), province du Bas-Uélé, Équateur ; locuteurs lingala étroitement liés"
+          "population": null,
+          "note": "Rives du fleuve Congo autour de Mankanza, province de l'Équateur."
         },
         {
           "country": "COG",
-          "population": 20000,
-          "percentage": 5,
-          "note": "Nord de la République du Congo, locuteurs bangala/lingala liés aux populations du fleuve"
+          "population": null,
+          "note": "Le lingala y est parlé au centre et au nord ; nous n'avons pas de chiffre pour les Bangala."
         }
       ]
     },
@@ -113,7 +115,7 @@
         "title": "Bokamba, E.G. — Lingala as a Supranational Language in DRC. CERECK, 2019",
         "url": "https://cereck.org/wp-content/uploads/2021/08/Kami-Export-EGBokamba-2019-PRFNL-DRAFt-2-LINGALA-AS-A-SUPRANATIONAL-LANGUAGE-IN-D.R.-CONGO_.pdf",
         "tier": "referenced",
-        "notes": "Academic paper by the linguist E.G. Bokamba, hosted by the Center for Research on the Congo-Kinshasa."
+        "notes": "Article du linguiste Eyamba G. Bokamba, mis en ligne par le Center for Research on the Congo-Kinshasa."
       },
       {
         "title": "Ugent Biblio — The linguistic features of Bangala before Lingala",
@@ -127,7 +129,7 @@
         "url": "https://ling.auf.net/lingbuzz/008154",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Propose que Lingála et Mangála viennent d'une expression bobangi signifiant « le langage des grands marchés », et discute les lectures de Coquilhat, de Mumbanza (dont la formule Mangala ma Liboko) et de Tshimpaka."
+        "notes": "Propose que Lingála et Mangála viennent d'une expression bobangi signifiant « le langage des grands marchés », et discute les explications de Coquilhat, de Mumbanza (dont la formule Mangala ma Liboko) et de Tshimpaka."
       },
       {
         "title": "Hulstaert, Gustaaf, « Lingala », Æquatoria, 3, 1940, p. 33-43",
@@ -148,7 +150,7 @@
         "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/monographies-provinces/mongala.pdf",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Rapporte la lecture de Coquilhat (1888), pour qui Ba-Ngala signifie les gens de la petite rivière, et les notations de Stanley en 1877 pour la contrée Manngala et la rivière Banngala."
+        "notes": "Musée royal de l'Afrique centrale, Tervuren, 2015, lu dans le PDF mis en ligne par le musée. Rapporte l'explication de Coquilhat (1888), pour qui Ba-Ngala signifie les gens de la petite rivière, et les notations de Stanley en 1877 pour la contrée Manngala et la rivière Banngala. L'avant-propos, p. 9-11, parle du « mythe des Bangala » ; p. 183, les gens du Haut-Congo à Léopoldville « étaient tous désignés sous l'appellation commune de « Bangala » »."
       },
       {
         "title": "Stanley, Henry M., Through the Dark Continent, vol. II, 1878 (transcription de l'édition de 1899)",
@@ -174,7 +176,7 @@
         "title": "MustGo — Lingala Language",
         "url": "https://www.mustgo.com/worldlanguages/lingala/",
         "tier": "unverified",
-        "notes": "General-reference language site; no author or institution is identified."
+        "notes": "Site général sur les langues ; aucun auteur ni aucune institution n'est indiqué."
       },
       {
         "title": "Joshua Project — Bangala in DRC",
@@ -193,33 +195,67 @@
         "url": "https://glottolog.org/resource/languoid/id/bang1353",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Supports the language's ISO 639-3 code bxg (not lol, the code for Mongo), its Bantu Zone C / Bangi-Ntomba classification and its non-endangered status."
+        "notes": "Notice du catalogue Glottolog pour le bangala, consultée en novembre 2026 : code ISO 639-3 bxg, classement parmi les langues bantoues du groupe bobangi, à côté du lingala, et statut de langue non menacée, de communication élargie."
       },
       {
         "title": "Meeuwis, M. — Redeeming a killer language: Protestant missionaries' engagements with Bangala and Lingala in the Belgian Congo, 1900–1935. Canadian Journal of African Studies, 58(3), 2024",
         "url": "https://www.tandfonline.com/doi/full/10.1080/00083968.2024.2382715",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Peer-reviewed academic journal article; used for the confessional (Protestant/Catholic) split in naming practice between bangala and lingala from 1900 onward."
+        "notes": "Article de Michael Meeuwis, université de Gand, Canadian Journal of African Studies, vol. 58, n° 3, 2024, p. 577-599, lu dans la version déposée en libre accès à l'université de Gand. L'auteur montre que les missionnaires catholiques ont fait adopter le nom « Lingala » dans l'ouest et le nord du Congo, tandis que le nom « Bangala » restait en usage dans le nord-est, et décrit le projet protestant d'« Union Ngala » (1931-1934)."
       },
       {
         "title": "Weeks, J.H. — Among Congo Cannibals: Experiences, Impressions, and Adventures during a Thirty Years' Sojourn amongst the Boloki and Other Congo Tribes. Seeley, Service & Co., 1913",
         "url": "https://www.gutenberg.org/ebooks/69650",
         "tier": "referenced",
         "source_kind": "archive",
-        "notes": "Published primary ethnographic account by a missionary resident among the Boloki for thirty years; read with care for its era's colonial framing, and cited here to ground the village/district political-organization content."
+        "notes": "Récit d'un missionnaire baptiste qui a vécu une trentaine d'années chez les Boloki, Londres, Seeley, Service & Co., 1913, lu dans la transcription du Projet Gutenberg. Au chapitre XI, il écrit que le nom Bangala ne désignait d'abord que les gens de Diboko et que les habitants « never used the name Bangala »."
       },
       {
         "title": "Wikidata — Bangala (Q2882454)",
         "url": "https://www.wikidata.org/wiki/Q2882454",
         "tier": "unverified",
         "source_kind": "community",
-        "notes": "Crowdsourced database; used only for the external identifier, not for any factual prose claim."
+        "notes": "Base de données collaborative, consultée en novembre 2026 pour l'identifiant de l'élément « Bangala », groupe ethnique relié à la RDC et à la République du Congo."
+      },
+      {
+        "title": "Sur le Haut-Congo",
+        "author": "Camille Coquilhat",
+        "year": 1888,
+        "url": "https://archive.org/details/surlehautcongo00coqu",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 244-245",
+        "notes": "Récit d'un officier belge au service de l'État indépendant du Congo, Paris, J. Lebègue, 1888, lu dans l'exemplaire numérisé sur archive.org. Journal du 14 août 1884, au poste des Bangala : « Dans le langage d'Iboko, Ngala ou Mongala signifie une petite rivière » et « Mata-Buiké m'a soutenu récemment ne pas être Ba-Ngala, en attribuant ce nom à des tribus d'aval ». Le même passage rapporte, p. 245, le récit des origines d'Iboko et de Mobeka."
+      },
+      {
+        "title": "Lingala",
+        "author": "Michael Meeuwis",
+        "year": 2013,
+        "url": "https://apics-online.info/surveys/60",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "sections 1 à 3",
+        "notes": "Chapitre de synthèse de l'Atlas of Pidgin and Creole Language Structures Online (APiCS Online), publié en 2013, lu en texte intégral."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Bangala est un nom donné à la fin du XIXe siècle aux riverains du fleuve Congo autour de Mankanza, en RDC. Certains d'entre eux se nomment aujourd'hui Mangala ma Liboko.",
+      "followUp": "Pourquoi le grand chef Mata-Buiké refusait-il le nom Bangala ?"
+    },
+    "gaps": [
+      {
+        "field": "content.organization.ageClassSystems",
+        "reason": "Les sources que nous avons consultées ne décrivent pas de classes d'âge chez les riverains appelés Bangala."
+      },
+      {
+        "field": "content.demography.totalPopulation",
+        "reason": "Nous n'avons pas trouvé de recensement qui compte aujourd'hui les Bangala ; la seule estimation lue date de 1886."
       }
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Ngala, ou Bangala, désigne des peuples riverains du fleuve Congo, autour de Mankanza, dans le nord-ouest de la République démocratique du Congo. Certains d'entre eux se nomment aujourd'hui Mangala ma Liboko, ou simplement Mangala. Les sources ne s'accordent pas sur l'origine de ces noms ; nous les présentons plus bas.",
+    "summary": "Le nom Ngala, ou Bangala, désigne des peuples riverains du fleuve Congo, autour de Mankanza, dans le nord-ouest de la République démocratique du Congo. Certains d'entre eux se nomment aujourd'hui Mangala ma Liboko, ou simplement Mangala. Dès 1884, le grand chef d'Iboko refusait le nom Bangala. Les sources ne s'accordent pas sur l'origine de ces noms ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Mangala ma Liboko",
@@ -403,14 +439,45 @@
           },
           {
             "period": {
-              "from": 1888,
-              "to": 1888,
-              "label": "1888"
+              "from": 1913,
+              "to": 1913,
+              "label": "Rapporté en 1913"
             },
             "era": "colonial",
-            "statement": "Le nom Mangala, écrit Ma-Ngala, est en 1888 la prononciation la plus courante de Bangala, selon le lieutenant Coquilhat, que citent Cyrille Van Overbergh et l'ouvrage du Musée royal de l'Afrique centrale sur la Mongala.",
+            "statement": "Le nom Mangala a été porté à une époque par les gens de Bungundu, de Bokomela, de Moleli et de Lobengu, qui l'ont donné à la crique où se trouvait leur ville principale, selon le missionnaire John Weeks.",
+            "sources": [
+              {
+                "title": "Among Congo Cannibals",
+                "author": "John H. Weeks",
+                "year": 1913,
+                "url": "https://www.gutenberg.org/ebooks/69650",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chapitre XI",
+                "notes": "Londres, Seeley, Service & Co., 1913, lu dans la transcription du Projet Gutenberg : « At some time or other the people of Bungundu, Bokomela, Moleli, and Lobengu were called Mangala »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1884,
+              "label": "Août 1884, journal publié en 1888"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mangala, écrit Ma-Ngala, est en 1884 la prononciation la plus courante de Bangala, selon le journal de l'officier belge Camille Coquilhat, que citent aussi Cyrille Van Overbergh et l'ouvrage du Musée royal de l'Afrique centrale sur la Mongala.",
             "formAsWritten": "Ma-Ngala",
             "sources": [
+              {
+                "title": "Sur le Haut-Congo",
+                "author": "Camille Coquilhat",
+                "year": 1888,
+                "url": "https://archive.org/details/surlehautcongo00coqu",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 244",
+                "notes": "Récit d'un officier belge au service de l'État indépendant du Congo, Paris, J. Lebègue, 1888, lu dans l'exemplaire numérisé sur archive.org. Journal du 14 août 1884, au poste des Bangala : « Dans le langage d'Iboko, Ngala ou Mongala signifie une petite rivière » et « Mata-Buiké m'a soutenu récemment ne pas être Ba-Ngala, en attribuant ce nom à des tribus d'aval »."
+              },
               {
                 "title": "Les Bangala (État indépendant du Congo)",
                 "author": "Cyrille Van Overbergh, avec Édouard De Jonghe",
@@ -418,7 +485,7 @@
                 "url": "https://archive.org/details/lesbangalatatin00jonggoog",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 52",
+                "page": "p. 51",
                 "notes": "Bruxelles, 1907. Recueil de témoignages classés par thème, lu dans la numérisation d'Internet Archive."
               },
               {
@@ -475,6 +542,55 @@
         "accounts": [
           {
             "period": {
+              "from": 1956,
+              "to": 1956,
+              "label": "1er août 1956"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangala est refusé en 1956 par Paul Ngoi, éditeur de la revue Lokole Lokiso : « Nous sommes des Mongo ou Nkundo et non pas des Bangala », écrit-il, en rappelant que le missionnaire Hulstaert réserve ce nom aux riverains du fleuve, selon le Musée royal de l'Afrique centrale.",
+            "actors": [
+              {
+                "name": "Paul Ngoi",
+                "role": "éditeur de la revue mongo Lokole Lokiso, auteur de l'article"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Mongala : jonction des territoires et bastion d'une identité supra-ethnique",
+                "author": "Jean Omasombo Tshonda (dir.)",
+                "year": 2015,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/monographies-provinces/mongala.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Musée royal de l'Afrique centrale, Tervuren, 2015, lu dans le PDF mis en ligne par le musée. L'avant-propos cite l'article de Paul Ngoi, « Nous ne sommes pas des Bangala », Lokole Lokiso, 1er août 1956."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": 1959,
+              "label": "Années 1950, à Léopoldville"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangala désigne à Léopoldville tous les gens venus du Haut-Congo, riverains, Mongo, Ngombe ou Budja, par opposition aux Bakongo. Des associations s'en réclament, comme le Liboke lya Bangala, créé en janvier 1955, selon le Musée royal de l'Afrique centrale.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Mongala : jonction des territoires et bastion d'une identité supra-ethnique",
+                "author": "Jean Omasombo Tshonda (dir.)",
+                "year": 2015,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/monographies-provinces/mongala.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10-11 et p. 183",
+                "notes": "Musée royal de l'Afrique centrale, Tervuren, 2015, lu dans le PDF mis en ligne par le musée. P. 10 : à Léopoldville, le terme « Bangala », « par opposition à celui de « Bakongo », englobait tous ceux qui n'étaient pas Bakongo » ; p. 11 : l'association Liboke lya Bangala, « créée en janvier 1955 »."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1940,
               "to": 1940,
               "label": "1940"
@@ -492,6 +608,28 @@
                 "source_kind": "academic",
                 "page": "p. 36",
                 "notes": "Article de la revue Æquatoria, Coquilhatville, 1940, lu dans le PDF du volume mis en ligne par le Centre Aequatoria."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Écrit en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangala ne désignait d'abord que les habitants de Diboko, la future Nouvelle-Anvers, et des rives voisines sur quarante ou cinquante milles. Le livre Les Bangala, paru en 1907, l'étend à une douzaine de peuples aux langues différentes, selon le missionnaire John Weeks, qui préfère alors parler des Boloki.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Among Congo Cannibals",
+                "author": "John H. Weeks",
+                "year": 1913,
+                "url": "https://www.gutenberg.org/ebooks/69650",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chapitre XI",
+                "notes": "Londres, Seeley, Service & Co., 1913, lu dans la transcription du Projet Gutenberg : « Formerly the term Bangala was applied only to those natives who lived at Diboko (Nouvelles Anvers) »."
               }
             ]
           },
@@ -535,12 +673,12 @@
               {
                 "title": "Lingala",
                 "author": "Michael Meeuwis",
-                "year": null,
+                "year": 2013,
                 "url": "https://apics-online.info/surveys/60",
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "section 2",
-                "notes": "Chapitre de synthèse de l'Atlas of Pidgin and Creole Language Structures Online (APiCS Online), lu en texte intégral le 11 octobre 2026."
+                "notes": "Chapitre de synthèse de l'Atlas of Pidgin and Creole Language Structures Online (APiCS Online), publié en 2013, lu en texte intégral."
               },
               {
                 "title": "Mongala : jonction des territoires et bastion d'une identité supra-ethnique",
@@ -551,6 +689,38 @@
                 "source_kind": "academic",
                 "page": "p. 15",
                 "notes": "Musée royal de l'Afrique centrale, Tervuren, 2015, introduction « Origine du nom Mongala », lue dans le PDF mis en ligne par le musée. Les auteurs citent Coquilhat, Sur le Haut-Congo (1888), p. 244."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1884,
+              "label": "14 août 1884, au poste des Bangala"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangala est refusé par Mata-Buiké, grand chef d'Iboko : il soutient ne pas être Ba-Ngala et attribue ce nom à des tribus d'aval, selon le journal de l'officier belge Camille Coquilhat.",
+            "formAsWritten": "Ba-Ngala",
+            "actors": [
+              {
+                "name": "Mata-Buiké",
+                "role": "grand chef d'Iboko, qui refuse ce nom"
+              },
+              {
+                "name": "Camille Coquilhat",
+                "role": "officier belge, chef du poste, qui note sa réponse"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Sur le Haut-Congo",
+                "author": "Camille Coquilhat",
+                "year": 1888,
+                "url": "https://archive.org/details/surlehautcongo00coqu",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 244",
+                "notes": "Récit d'un officier belge au service de l'État indépendant du Congo, Paris, J. Lebègue, 1888, lu dans l'exemplaire numérisé sur archive.org. Journal du 14 août 1884, au poste des Bangala : « Dans le langage d'Iboko, Ngala ou Mongala signifie une petite rivière » et « Mata-Buiké m'a soutenu récemment ne pas être Ba-Ngala, en attribuant ce nom à des tribus d'aval »."
               }
             ]
           },
@@ -589,7 +759,7 @@
               "to": 1877,
               "label": "Avant 1877"
             },
-            "statement": "Le nom Bangala a peut-être une forme plus ancienne, Bancaro : selon Stanley, la rivière de ce pays figurait depuis longtemps sous ce nom sur les cartes de l'Afrique de l'Ouest, et Bangala se prononce aussi Bangara, Bankara ou Bankaro. Les sources que nous avons lues ne disent pas depuis quand ce nom figure sur les cartes.",
+            "statement": "Le nom Bangala a peut-être une forme plus ancienne, Bancaro : selon Stanley, la rivière de ce pays figurait depuis longtemps sous ce nom sur les cartes de l'Afrique de l'Ouest, et Bangala se prononce aussi Bangara, Bankara ou Bankaro.",
             "sources": [
               {
                 "title": "Through the Dark Continent, vol. II",
@@ -627,14 +797,24 @@
           },
           {
             "period": {
-              "from": 1888,
+              "from": 1884,
               "to": 1888,
-              "label": "Proposée en 1888"
+              "label": "Notée en 1884, publiée en 1888"
             },
             "era": "colonial",
             "statement": "Le nom Bangala viendrait de ngala ou mongala, qui veut dire « petite rivière » dans le parler d'Iboko : Ba-Ngala signifierait « les gens de la petite rivière », selon le lieutenant Coquilhat, que citent Cyrille Van Overbergh et l'ouvrage du Musée royal de l'Afrique centrale. Il note que les gens d'Iboko se disent venus de la petite rivière d'Ibinza.",
             "hypothesisGroup": "origine du nom Bangala",
             "sources": [
+              {
+                "title": "Sur le Haut-Congo",
+                "author": "Camille Coquilhat",
+                "year": 1888,
+                "url": "https://archive.org/details/surlehautcongo00coqu",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 244",
+                "notes": "Récit d'un officier belge au service de l'État indépendant du Congo, Paris, J. Lebègue, 1888, lu dans l'exemplaire numérisé sur archive.org. Journal du 14 août 1884, au poste des Bangala : « Dans le langage d'Iboko, Ngala ou Mongala signifie une petite rivière » et « Mata-Buiké m'a soutenu récemment ne pas être Ba-Ngala, en attribuant ce nom à des tribus d'aval »."
+              },
               {
                 "title": "Les Bangala (État indépendant du Congo)",
                 "author": "Cyrille Van Overbergh, avec Édouard De Jonghe",
@@ -642,7 +822,7 @@
                 "url": "https://archive.org/details/lesbangalatatin00jonggoog",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 52",
+                "page": "p. 51",
                 "notes": "Bruxelles, 1907. Recueil de témoignages classés par thème, lu dans la numérisation d'Internet Archive."
               },
               {
@@ -654,6 +834,28 @@
                 "source_kind": "academic",
                 "page": "p. 15",
                 "notes": "Musée royal de l'Afrique centrale, Tervuren, 2015, introduction « Origine du nom Mongala », lue dans le PDF mis en ligne par le musée. Les auteurs citent Coquilhat, Sur le Haut-Congo (1888), p. 244."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Proposée en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangala viendrait de la rivière Mungala, que les Européens auraient prise pour le pays d'origine de ces riverains : mu y désigne le lieu et ba les gens, selon le missionnaire John Weeks. Il propose aussi, sans la retenir, une puissante famille appelée Mangala, et note que les habitants n'employaient jamais ce nom.",
+            "hypothesisGroup": "origine du nom Bangala",
+            "sources": [
+              {
+                "title": "Among Congo Cannibals",
+                "author": "John H. Weeks",
+                "year": 1913,
+                "url": "https://www.gutenberg.org/ebooks/69650",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chapitre XI",
+                "notes": "Londres, Seeley, Service & Co., 1913, lu dans la transcription du Projet Gutenberg : « the Mungala River was supposed to be the original home of these people » et « the natives themselves never used the name Bangala »."
               }
             ]
           },
@@ -681,9 +883,9 @@
           },
           {
             "period": {
-              "from": null,
-              "to": null,
-              "label": "Origine non datée"
+              "from": 2013,
+              "to": 2013,
+              "label": "Proposée en 2013"
             },
             "statement": "Le nom Bangala serait un nom que les Européens ont cru entendre : les habitants de la région, que l'on croyait appeler ainsi, n'auraient pas porté ce nom, selon Michael Meeuwis.",
             "hypothesisGroup": "origine du nom Bangala",
@@ -691,14 +893,15 @@
               {
                 "title": "Lingala",
                 "author": "Michael Meeuwis",
-                "year": null,
+                "year": 2013,
                 "url": "https://apics-online.info/surveys/60",
                 "tier": "referenced",
                 "source_kind": "academic",
                 "page": "section 2",
-                "notes": "Chapitre de synthèse de l'Atlas of Pidgin and Creole Language Structures Online (APiCS Online), lu en texte intégral le 11 octobre 2026."
+                "notes": "Chapitre de synthèse de l'Atlas of Pidgin and Creole Language Structures Online (APiCS Online), publié en 2013, lu en texte intégral."
               }
-            ]
+            ],
+            "era": "modern"
           }
         ]
       },
@@ -708,20 +911,52 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Une forme courte de Bangala, que le lieutenant Coquilhat sépare déjà de son préfixe en 1888.",
+        "shortLine": "Une forme courte de Bangala, séparée de son préfixe dès 1884, puis reprise en 1932 pour nommer une langue.",
         "variantSpelling": true,
         "accounts": [
           {
             "period": {
-              "from": 1888,
-              "to": 1888,
-              "label": "1888"
+              "from": 1931,
+              "to": 1934,
+              "label": "1931-1934"
             },
             "era": "colonial",
-            "statement": "Le nom Ngala apparaît dans la forme Ba-Ngala, où le lieutenant Coquilhat sépare en 1888 le préfixe ba- du mot ngala, selon le recueil de Cyrille Van Overbergh. C'est la plus ancienne trace de ce nom que le projet connaît. Les riverains qu'il désigne portaient déjà d'autres noms avant lui.",
-            "formAsWritten": "Ba-Ngala",
+            "statement": "Le nom Ngala sert en 1932 à nommer une langue commune, l'« Union Ngala », que des missionnaires protestants réunis à Yalemba veulent tirer du lingala et du bangala, en retirant les préfixes li- et ba-, selon Michael Meeuwis.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Redeeming a killer language: Protestant missionaries’ engagements with Bangala and Lingala in the Belgian Congo, 1900–1935",
+                "author": "Michael Meeuwis",
+                "year": 2024,
+                "url": "https://www.tandfonline.com/doi/full/10.1080/00083968.2024.2382715",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11 et p. 16",
+                "notes": "Canadian Journal of African Studies, vol. 58, n° 3, 2024, lu dans la version déposée en libre accès à l'université de Gand ; les pages sont celles de cette version. P. 11 : « what at this meeting was decided to be called “Union Ngala” »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1884,
+              "label": "Août 1884, journal publié en 1888"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ngala apparaît dans le journal de l'officier belge Camille Coquilhat, qui écrit que dans le langage d'Iboko, ngala ou mongala désigne une petite rivière, et qui sépare le préfixe ba- dans Ba-Ngala. C'est la plus ancienne trace de ce nom que le projet connaît. Les riverains qu'il désigne portaient déjà d'autres noms avant lui.",
+            "formAsWritten": "Ngala",
             "birth": true,
             "sources": [
+              {
+                "title": "Sur le Haut-Congo",
+                "author": "Camille Coquilhat",
+                "year": 1888,
+                "url": "https://archive.org/details/surlehautcongo00coqu",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 244",
+                "notes": "Récit d'un officier belge au service de l'État indépendant du Congo, Paris, J. Lebègue, 1888, lu dans l'exemplaire numérisé sur archive.org. Journal du 14 août 1884, au poste des Bangala : « Dans le langage d'Iboko, Ngala ou Mongala signifie une petite rivière » et « Mata-Buiké m'a soutenu récemment ne pas être Ba-Ngala, en attribuant ce nom à des tribus d'aval »."
+              },
               {
                 "title": "Les Bangala (État indépendant du Congo)",
                 "author": "Cyrille Van Overbergh, avec Édouard De Jonghe",
@@ -729,8 +964,14 @@
                 "url": "https://archive.org/details/lesbangalatatin00jonggoog",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "page": "p. 52",
-                "notes": "Bruxelles, 1907. Recueil de témoignages classés par thème, lu dans la numérisation d'Internet Archive."
+                "page": "p. 51",
+                "notes": "Bruxelles, 1907. Recueil de témoignages classés par thème, lu dans la numérisation d'Internet Archive. Le commissaire Lothaire y glose : « Ngala = bras de rivière, chenal »."
+              }
+            ],
+            "actors": [
+              {
+                "name": "Camille Coquilhat",
+                "role": "officier belge, chef du poste des Bangala, qui écrit cette forme"
               }
             ]
           }

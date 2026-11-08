@@ -29,8 +29,10 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * folded or withdrawn after waves 14 to 19.
  * 17 -> 16 on 2026-11-03: the Mali country fiche now attributes each
  * explanation of its name.
+ * 16 -> 15 on 2026-11-08: the Mauritius, Malawi and Niger etymologies now
+ * attribute their origin.
  */
-export const ASSERTIVE_ETYMOLOGY_RATCHET = 16;
+export const ASSERTIVE_ETYMOLOGY_RATCHET = 15;
 
 export interface EtymologyHypothesesResult {
   ok: boolean;

@@ -7,94 +7,106 @@
   "content": {
     "appellations": {
       "mainName": "Musgu",
-      "selfAppellation": "Mulwi",
-      "exonyms": [
-        "Mousgoum (orthographe francaise courante, utilisee dans la litterature francophone et coloniale)",
-        "Musgum (orthographe anglophone, utilisee dans la litterature anglophone)",
-        "Muzuk",
+      "selfAppellation": "Monjokay",
+      "exonyms": ["Musgu", "Mousgoum", "Musgum", "Mulwi", "Massa"],
+      "spellingAliases": [
+        "Musgow",
+        "Mosgô",
+        "Músekú",
+        "Musuk",
         "Muzgu",
-        "Munjuk (nom utilise dans la region de Maga pour les habitants et leur langue)"
+        "Mousgou",
+        "Mouloui",
+        "Musgun",
+        "Monjokoy",
+        "Munjuk",
+        "Muzuk"
       ],
-      "originOfExonyms": "L'origine de Musgu/Mousgoum reste incertaine. Ce nom aurait été transmis par les voisins peuls ou arabes. Le peuple se nomme lui-même Mulwi, qui signifierait « ceux du fleuve » ou « les gens ». Plusieurs noms de lieux sont aussi rapprochés de sa langue. Waza, le nom du parc national, viendrait d'un mot musgu signifiant 'ma maison' ou 'ma patrie'. Mindif signifierait 'la bouche de l'homme'. Bogo viendrait d'un mot pour 'bruit', en souvenir de la bataille décisive contre les Peuls.",
-      "whyProblematic": "Le terme Mousgoum recouvre plusieurs varietes dialectales proches (Beege, Mpus, Vulum) qui ne sont pas toujours mutuellement intelligibles. Les distinctions entre Musgu proper, Munjuk et Muzuk peuvent etre considerees comme des langues separees par certains linguistes.",
-      "contemporaryUsage": "Le terme Musgu est utilise dans les publications scientifiques, administratives camerounaises et tchadiennes. Mousgoum reste courant dans la litterature francophone. Mulwi est utilise par les locuteurs dans les contextes intimes et communautaires. Le terme est desormais associe internationalement a l'architecture exceptionnelle de leurs maisons en boue (cases obus / teleukakay). Muzuk et Muzgu sont des variantes dialectales.",
+      "originOfExonyms": "Les Musgu, ou Mousgoum, vivent dans les plaines du Logone, au nord du Cameroun et au Tchad. Selon le linguiste Henry Tourneux, le nom Musgu viendrait de leurs voisins : ce serait le nom que leur donnaient les gens du Bornou, ou bien celui que leur donnaient les Mandara, aussi appelés Wandala. La forme française Mousgoum viendrait du nom de Mouskoum, un village du Tchad. Au Tchad, leurs voisins massa les appellent Mulwi, un nom qui viendrait d'une expression signifiant « nous parlons ». Le nom Monjokay est celui que se donnent les gens de Guirvidig et de Kaykay, au Cameroun.",
+      "whyProblematic": "Les gens que l'on appelle Musgu ou Mousgoum ne reconnaissent aucun nom commun à tous leurs parlers, selon Henry Tourneux. Chaque groupe porte le nom de son parler : vulum au Tchad, mujuk à Guirvidig, mpus à Pouss, bege à Bigué-Palam, jafga à Djafga. Au Cameroun, l'administration les a d'abord appelés Massa, le nom de leurs voisins du sud, avant de retenir Mousgoum. Ce dernier nom vient d'un village dont la langue ancienne, le muskum, était une autre langue que la leur. Pour ces raisons, Tourneux propose depuis 1981 les noms Munjuk pour la langue et Monjokay pour ses locuteurs.",
+      "contemporaryUsage": "Mousgoum est le nom courant en français et le nom administratif au Cameroun. La Bibliothèque nationale de France le retient aussi. Musgu est le nom de la langue dans les catalogues de langues, comme Glottolog. Les linguistes de l'Atlas de la province Extrême-Nord Cameroun nomment la langue munjuk, d'après le nom Monjokay. Au Tchad, les Massa disent Mulwi.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null,
       "linguisticFamily": "FLG_TCHADIQUE",
-      "ethnoLinguisticGroup": "Tchadique Biu-Mandara (branche B, sous-groupe B.2)",
-      "historicalRegion": "Bassin du Logone inferieur et du Chari (entre les fleuves Logone et Chari), region de l'Extreme-Nord du Cameroun et prefecture de Chari-Baguirmi (Tchad)",
+      "ethnoLinguisticGroup": "Tchadique, groupe biu-mandara, sous-groupe musguic",
+      "historicalRegion": "Plaines inondables du Logone, entre Pouss, Guirvidig et Kossa au Cameroun, et rive droite du Logone au Tchad",
       "currentCountries": ["CMR", "TCD"]
     },
     "ethnicities": [
-      "Musgu / Mulwi proprement dit (region de Pouss, Maga, Guirvidig — Cameroun)",
-      "Munjuk (region de Maga, sous-division Maga, division Mayo-Danay — variete distincte)",
-      "Beege (plaines inondables du Logone, district de Zina, departement Logone-et-Chari, et Djafga au sud)",
-      "Mpus (Pouss et nord de la region) — variete nord du musgu",
-      "Vulum (principalement au Tchad, regions frontieres)",
-      "Musgu de Bogo (region de Diamare, ayant integre des elements peuls apres le XIXe siecle)"
+      "Mpasay, à Pouss",
+      "Monjokay, ou Muzuk, à Guirvidig et à Kaykay",
+      "Muzuk du Guerléo, au sud de Bourkoumandji",
+      "Bege, à Bigué-Palam et à Djafga",
+      "Vulum, au Tchad",
+      "Kadey",
+      "Kalang",
+      "Mogulna"
     ],
     "origins": {
-      "ancientOrigins": "Les Musgu sont d'origine afro-asiatique et font partie des peuples neo-soudanais qui ont deplace les Paleo-Soudanais dans leur territoire actuel, entre les fleuves Logone et Chari. Selon une tradition orale rapportee par les Musgu, ils sont issus d'un mariage entre un prince Kotoko et une femme Massa sur les rives du Logone. Les Musgu et les Kotoko sont tous deux consideres comme des descendants des SAO, la civilisation pionniere autour du lac Tchad, dont les vestiges archeologiques sont nombreux dans la region. Dans les sources nigerianes, ils vivaient en contact avec les Kanuri et contribuerent a la formation de l'Empire du Bornou.",
-      "formationPeriod": "L'identite musgu distincte se consolida au cours du premier millenaire de l'ere commune dans le bassin du Logone. Les Musgu et les Kotoko partagerent une histoire commune au sein de l'Empire du Baguirmi (Bagirmi), avec lequel ils entretinrent des relations conflictuelles durant les XVIIe-XIXe siecles. La periode peule du XIXe siecle (sheik Hayatu ibn Said, mouvement mahdiste) pressa les Musgu occidentaux, tandis que les Musgu orientaux commencerent a payer tribut au Baguirmi. Les chefs musgu comme Zigla et Awersing menerent leurs troupes contre les Peuls.",
+      "ancientOrigins": "Selon le géographe Christian Seignobos, les Musgu sont venus par vagues successives de l'est vers l'ouest. Leur point de départ serait le pays banre, sur la rive orientale du Chari, au Tchad. La vague la plus ancienne serait celle des Murgur, des forgerons aujourd'hui dispersés chez les Mofu et les Giziga, que les gens du Logone appellent Motokay. Ils auraient été repoussés vers l'ouest et le sud au XVIe siècle. Leur langue appartient à la branche tchadique de la grande famille afro-asiatique, comme le haoussa.",
+      "formationPeriod": "Après les Murgur sont arrivés les Mogulna, les Kadey, les Kalang, puis les groupes installés aujourd'hui à Pouss et à Kaykay-Bourkoumandji, selon Christian Seignobos. La région de Mburaw, dont le nom voudrait dire « diviser, partager », aurait été un grand centre de dispersion. Les zones occupées par chaque groupe se sont fixées au début de la période coloniale.",
       "migrationRoutes": [
-        "Etablissement originel dans le bassin du Logone inferieur, dans la zone inondable entre les fleuves Logone et Chari",
-        "Extension vers le nord en direction de Kousseri (augmentation des implantations musgu au nord depuis le XXe siecle)",
-        "Presence historique en territoire nigerian (Etat de Borno : Bama, Banki, Gambaru, villages voisins de Darak et Blangoua)"
+        "Du pays banre, sur la rive orientale du Chari, vers les rives du Logone, par vagues successives",
+        "De la rive droite du Logone vers Guirvidig, Mogonyé, Méréo et Waza, aux XVIIIe et XIXe siècles",
+        "Vers le nord le long du Logone, jusqu'au pays kotoko et aux environs de Kousseri, depuis les années 1960",
+        "Des Muzuk du Guerléo vers Moulvouday et Sédek"
       ],
       "historicalSettlementZones": [
-        "Sous-division de Maga, division Mayo-Danay, province de l'Extreme-Nord (Cameroun) — zone principale",
-        "Region de Pouss, sultanat de Pouss (Cameroun)",
-        "Region de Guirvidig, lamidat de Guirvidig (Cameroun)",
-        "Region de Zina, sultanat de Zina (Cameroun)",
-        "Region de Bogo, lamidat de Bogo (Cameroun, departement Diamare)",
-        "Prefecture de Chari-Baguirmi (Tchad) — entre les fleuves Chari et Logone"
+        "Pouss, sur la rive gauche du Logone (Cameroun)",
+        "Guirvidig et Kaykay-Bourkoumandji (Cameroun)",
+        "Kossa et Fadaré, pays des Musgum Kadey (Cameroun)",
+        "Bigué-Palam et Djafga, au sud, le long du Logone (Cameroun)",
+        "Mogroum et la rive droite du Logone (Tchad)"
       ],
-      "unificationsOrDivisions": "Les Musgu ne forment pas un Etat centralise. Ils sont organises en plusieurs chefferies independantes, chacune dirigee par un chef musgu natif. Les sultanats de Pouss et de Zina, les lamidat de Guirvidig et de Bogo constituent les principales entites politiques. Un principe important est que les chefferies musgu sont toujours dirigees par un chef musgu autochtone, meme au Cameroun qu'au Tchad. La fusion avec des elements peuls s'est produite par mariage (notamment a Bogo), creant des communautes mixtes.",
-      "externalInfluences": "Empire du Baguirmi (XVIIe-XIXe siecles) : conflits recurrents avec les troupes du Baguirmi. Jihad peul du XIXe siecle (Hayatu ibn Said) : pression militaire et tribute impose aux Musgu orientaux. Victoire decisive des Musgu a Bogo (dont le nom vient du mot musgu pour 'bruit') qui chassa les Peuls vers l'Adamawa. Colonisation francaise et allemande (fin XIXe-debut XXe siecles). Islam progressivement adopte, mais traditions animistes maintenues.",
-      "majorHistoricalEvents": "Bataille de Bogo : les troupes musgu sous la conduite de chefs comme Zigla et Awersing repoussent les envahisseurs peuls ; les Peuls vaincus fuient vers l'Adamawa avant de revenir progressivement se melanger par mariage. Waza, territoire musgu, devient parc national au XXe siecle (le nom derive du musgu 'ma maison'). La ville de Moulvoudaye (signifiant 'j'achete des gens' en musgu) fut un centre du commerce d'esclaves. En 1960, le teleuk (case obus) devient symbole de la culture camerounaise nationale, apparaissant sur des billets de banque et des timbres-poste."
+      "unificationsOrDivisions": "Les Musgu n'ont jamais formé un seul État. Au milieu du XIXe siècle, l'explorateur Heinrich Barth les décrit divisés en nombreuses petites principautés, souvent en guerre les unes contre les autres. Il ajoute que leurs parlers différaient tant que des villages voisins se comprenaient mal. Aux XVIIIe et XIXe siècles, certains groupes sont passés sous la tutelle de leurs voisins : les Mogulna sous celle du Wandala, les Kadey sous celle du Bornou, tandis que le Baguirmi gardait un relais à Maga.",
+      "externalInfluences": "Les langues des voisins ont laissé des mots dans le musgu, selon Henry Tourneux : le kanouri du Bornou, le fulfulde des Peuls, l'arabe, le barma du Baguirmi, le haoussa, puis le français. Le fulfulde a surtout marqué les parlers du Cameroun, l'arabe ceux du Tchad. Au sud, les Massa ont assimilé une partie des Musgu au nord de Yagoua, qui ont adopté leur langue. L'islam s'est répandu très vite entre 1965 et 1980, selon l'Atlas de la province Extrême-Nord Cameroun.",
+      "majorHistoricalEvents": "À la fin de 1851, Heinrich Barth accompagne une armée du Bornou partie en razzia chez les Musgu. Il rapporte que les peuples voisins en emmenaient chaque année des centaines, voire des milliers, en esclavage. Au XIXe siècle, les Peuls conquièrent Bogo, et le lamidat de Bogo tire l'essentiel de ses esclaves des Musgu. Sous la colonisation allemande, puis française, les sultanats de Pouss et de Guirvidig deviennent les cadres administratifs des Musgu. En 1979, la digue de Maga noie une quinzaine de villages ou quartiers musgu et crée le lac de Maga."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Les Musgu sont organises en sultanats et lamidat diriges par des chefs autochtones musgu. Le Sultanat de Pouss, le Lamidat de Guirvidig, le Sultanat de Zina et le Lamidat de Bogo sont les principales entites politiques. Un principe fondamental est que les chefs musgu sont toujours des Musgu de naissance, qu'il s'agisse du Cameroun ou du Tchad. Les chefs ont des fonctions politiques, judiciaires et religieuses. Le Musgu sont reconnus comme un peuple guerrier ayant consacre une grande partie des trois derniers siecles a des conflits avec leurs voisins.",
-      "clanOrganization": "La societe musgu est organisee en groupes patrilineaires. L'organisation en lignages determine les droits fonciers, les alliances matrimoniales et les responsabilites rituelles. Des variantes dialectales (Beege, Mpus, Vulum, Munjuk) correspondent a des subdivisions geographiques et identitaires distinctes.",
-      "ageClassSystems": null,
-      "roleOfLineages": "Les lignages patrilineaires structurent la societe musgu : les droits sur les terres, les pecheries et les zones de culture sont transmis par voie patrilineaire. L'identite clanique determine egalement les droits a l'exercice des chefferies. Les femmes jouent un role important dans la gestion de l'espace domestique, chaque epouse occupant une unite separee du teleuk.",
-      "religiousAuthority": "La majorite des Musgu professent l'islam. Le chef traditionnel est souvent aussi l'autorite religieuse principale. Les traditions animistes restent influentes : des esprits locaux comme Yaye (esprit protecteur du village de Pouss, garant de la recolte) sont veneres. La peche rituelle pendant les crues du Logone est accompagnee d'invocations aux esprits des eaux. L'islam et les croyances traditionnelles coexistent dans de nombreuses communautes."
+      "traditionalPoliticalSystem": "Les Musgu des plaines ont résisté aux États musulmans voisins grâce à un habitat dense et à de grands villages fortifiés, selon l'Atlas de la province Extrême-Nord Cameroun. Ils formaient de grandes fractions, souvent rivales, conduites par les aînés des clans les plus nombreux. Des chefs de guerre y exerçaient un pouvoir limité dans le temps. Au moment de la colonisation, les Allemands ont créé les sultanats de Pouss et de Guirvidig, que l'administration française a maintenus.",
+      "clanOrganization": "Les plus anciennes fractions musgu, comme les Kadey-Komo et les Mborhokay-Manakay, vivaient dans des cités de terre appelées ngulmun, formées de petits clans associés, selon Christian Seignobos. Chez les Muzuk, l'organisation ressemble à celle des Massa : on vit ensemble avant d'être parents. Ceux qui gardent le bétail, pêchent et chassent ensemble se rattachent à un ancêtre commun et ne se marient pas entre eux.",
+      "ageClassSystems": "Les sources consultées ne décrivent pas de classes d'âge chez les Musgu. Chez les Muzuk, les jeunes passent par un même centre d'initiation, le labana.",
+      "roleOfLineages": "Les aînés des clans les plus nombreux dirigeaient les fractions musgu, selon l'Atlas de la province Extrême-Nord Cameroun. Sur le lac de Maga, les anciens chefs des villages noyés par le barrage sont devenus des maîtres de l'eau. Ils prélèvent une part de poisson sur les pêcheurs étrangers.",
+      "religiousAuthority": "En 1851, Heinrich Barth note que le chef musgu Adishén n'avait adopté l'islam qu'en apparence. Il décrit un objet de culte, une longue perche que les Musgu appellent kefé, et des tombes d'ancêtres couvertes de voûtes. Aujourd'hui, la plupart des Musgu sont musulmans. Une minorité est protestante, dans des villages longtemps hostiles à la chefferie de Pouss, et une mission catholique s'est installée à Kaykay en 1976."
     },
     "languages": {
-      "mainLanguage": "Musgu (appelé Mulwi par ses locuteurs), langue tchadique du groupe Biu-Mandara",
+      "mainLanguage": "Musgu, aussi appelé munjuk (mug)",
       "isoCodes": ["mug"],
       "dialects": [
-        "Beege (plaines inondables du Logone, district de Zina, departement Logone-et-Chari ; sous-variete Djafga au sud)",
-        "Mpus (Pouss et nord de la region de Maga)",
-        "Vulum (principalement au Tchad, regions frontieres)",
-        "Munjuk (region de Maga — parfois considere comme une langue separee)"
+        "Muzuk, ou mujuk, à l'ouest (Guirvidig, Kossa)",
+        "Mpus, le long du Logone, au nord (Pouss)",
+        "Bege, le long du Logone, au sud (Bigué-Palam, Djafga)",
+        "Vulum, au Tchad",
+        "Munjuk du Sud, au sud, parfois compté comme une langue à part"
       ],
-      "vehicularRole": "Le musgu (mug) comptait environ 61 500 locuteurs au Cameroun en 1982 et 24 408 locuteurs au Tchad en 1993 (Ethnologue). Population totale estimee a 164 400 en 2025 (Wikipedia). Le fulfude est utilise comme langue vehiculaire dans les echanges inter-ethniques dans la region. Le francais est la langue officielle au Cameroun et au Tchad. Les Musgu du Nigeria (Etat de Borno) utilisaient egalement le kanouri comme langue de contact."
+      "vehicularRole": "Le munjuk est parlé de Pouss à Kossa et de Zina à Doreissou, mais il ne sert pas de langue d'échange entre peuples, selon l'Atlas de la province Extrême-Nord Cameroun. Entre Guirvidig, Maga et Pouss, le fulfulde devient peu à peu la langue commune, surtout dans les rizières et sur le marché de Maga. Au Tchad, c'est l'arabe qui progresse, selon Henry Tourneux. Les Musgu comprennent souvent la langue de leurs voisins, comme le massa ou le toupouri, sans forcément la parler."
     },
     "culture": {
-      "majorRites": "Le rite Laba (ou Labana) est le rite guerrier et initiatique traditionnel musgu : un rite de combat qui reflète l'identite guerriere du peuple. Les ceremonies de peche collective sur le Logone lors des crues saisonnieres sont accompagnees d'invocations aux esprits des eaux pour assurer de bonnes prises. Les rites de mariage impliquent des negociations entre familles et des echanges de prestations. Les ceremonies funebres comprennent des sacrifices et des rites de commemorations pour proteger les vivants. Les rites agraires accompagnent les cycles de plantation du coton et des arachides. L'invocation de l'esprit Yaye, protecteur du village de Pouss et garant des recoltes, constitue une pratique religieuse locale importante.",
-      "symbols": "Le teleuk (case obus, cases en forme d'obus) est le symbole culturel majeur des Musgu — si emblematique qu'il figura sur les billets de banque et timbres-poste camerounais apres l'independance de 1960. La forme parabolique du dome, inspiree des termitieres selon la tradition orale, symbolise la puissance, la protection et l'ingeniosite. Le Logone (fleuve) est central dans l'identite musgu : il est source de vie, de nourriture (peche) et de territoire. Le taureau et le cheval symbolisent le statut guerrier. Le motif geometrique en V ou en lignes droites decorant les teleukakay est a la fois fonctionnel (drainage des eaux) et symbolique.",
-      "artsAndMusic": "L'architecture en boue seche (teleuk / tolek / cases obus / teleukakay) est la realisation artistique majeure des Musgu. Ces habitations a dome parabolique atteignent jusqu'a 9 metres de hauteur. Elles sont construites par la technique du montage en spirale (mud coil pottery technique) en couches de 0,5 m laissees a secher successivement. Les murs, plus epais a la base, s'affinent vers le sommet. Des motifs en relief geometriques (lignes en V, lignes droites) decorent l'exterieur, servant de systeme de drainage de la pluie et d'echafaudage permanent pour les reparations. L'entree en forme de trou de serrure (etroite en bas, s'elargissant aux epaules) est inspiree du corps de la vache. Un orifice circulaire au sommet sert de prise d'air et d'issue de secours en cas d'inondation. Les interieurs comprennent des lits chauffants et des etageres sculptees. Les Musgu pratiquent egalement la poterie, le tissage et la fabrication d'outils. La musique traditionnelle accompagne les rites guerriers (Laba) et les ceremonies de peche et d'agriculture.",
-      "spiritualities": "La religion predominante est l'islam sunnite, adopte progressivement depuis le XVIIIe siecle. Les croyances animistes traditionnelles coexistent : veneration des esprits locaux (Yaye, esprit protecteur du village de Pouss ; esprits des eaux du Logone). Les deux tribes Musgu et Kotoko sont consideres comme descendants des SAO, civilisation pre-islamique dont les pratiques religieuses influencent encore certains rituels. La peche sur le Logone est rituellement encadree. Les ancetres jouent un role de protection et de guidance pour les vivants."
+      "majorRites": "Chez les Muzuk, les jeunes passent par un centre d'initiation commun, le labana, selon Christian Seignobos. Ils partagent aussi les enclos du gurna, une retraite où l'on fait une cure de lait, et partent ensemble en campagne de chasse ou de pêche. Au XIXe siècle, Heinrich Barth décrit des tombes couvertes de voûtes de terre, surmontées de poutres croisées ou d'une jarre.",
+      "symbols": "La case-obus, appelée tolek, teleuk ou telek selon les parlers, est le symbole le plus connu des Musgu. Selon Henry Tourneux, il n'en existe aucun équivalent ailleurs en Afrique, et on ne la trouvait que le long du Logone. Elle a été copiée pour l'Exposition coloniale de Paris en 1931 et reproduite sur des affiches de la compagnie Cameroon Airlines, selon le compte rendu du livre de Steven Nelson.",
+      "artsAndMusic": "La case-obus est une maison en forme de coupole, faite de terre et d'herbe par des maçons spécialisés. L'écrivain André Gide écrivait en 1928 : « C'est un travail non de maçon, mais de potier ». Le missionnaire Karl Kumm décrit en 1910 des concessions de cinq ou six cases rondes reliées entre elles. Leurs parois portent des saillies régulières qui servent d'échelle pendant la construction, et certaines atteignent six mètres. Presque disparue dans les années 1930, la case-obus est de nouveau construite depuis les années 1990.",
+      "spiritualities": "Au milieu du XIXe siècle, Heinrich Barth décrit un culte rendu aux ancêtres et un objet de culte appelé kefé. L'islam s'est ensuite étendu. Entre 1965 et 1980, les Musgu se sont convertis très vite, surtout dans les campements de pêche du bas Chari et du lac Tchad, selon l'Atlas de la province Extrême-Nord Cameroun. Les premiers baptêmes protestants chez les Musgu datent de 1942, les premiers baptêmes catholiques de 1984."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Le Sultanat de Pouss est la chefferie musgu la plus importante au Cameroun. Le Lamidat de Guirvidig, le Sultanat de Zina et le Lamidat de Bogo constituent les autres entites politiques majeures. La ville de Bogo (aujourd'hui a dominante peule) fut a l'origine un royaume musgu. Le parc national de Waza est fonde sur le territoire ancestral musgu. Historiquement, les Musgu et les Kotoko co-dominerent la zone du bassin du Logone-Chari, partageant une ascendance commune SAO et une histoire liee a l'Empire du Baguirmi.",
-      "relationsWithNeighbors": "Relations complexes avec les Kotoko voisins : rivalite pour les ressources de peche du Logone, tensions ethniques recurrentes liees au controle des zones de peche. Relations historiques avec les Kanuri de l'Empire du Bornou (Nigeria oriental). Conflits recurrents avec l'Empire du Baguirmi aux XVIIe-XIXe siecles. Relations ambivalentes avec les Peuls : opposition militaire au XIXe siecle (victoire a Bogo), suivie d'une coexistence et de metissages par mariage dans certaines regions comme Bogo.",
-      "conflictsOrAlliances": "Les Musgu sont reconnus comme un peuple guerrier ayant consacre la majeure partie des trois derniers siecles a des conflits. Conflits majeurs avec le Baguirmi (XVIIe-XIXe siecles). Resistance au jihad peul de Hayatu ibn Said (XIXe siecle) : les chefs Zigla et Awersing menerent les troupes musgu, remportant la bataille decisive de Bogo et chassant les Peuls vers l'Adamawa. Cette victoire est commemoree dans la toponymie : Bogo signifie 'bruit' en musgu. La colonisation franco-allemande reorganisa les structures politiques sans eliminer les chefferies musgu autochtones.",
-      "diaspora": "Les Musgu vivent principalement dans leur territoire d'origine. Un mouvement de migration vers le nord (Kousseri) est observe depuis le milieu du XXe siecle. Des communautes musgu existent dans l'Etat de Borno (Nigeria) — villages de Bama, Banki, Gambaru. La diaspora urbaine (Maroua, N'Djamena) reste modeste."
+      "kingdomsOrChiefdoms": "En 1851, Heinrich Barth recense de nombreuses principautés musgu, dont celle d'Adishén, à Kadé, et celle du chef qu'il nomme Fuss, c'est-à-dire Pouss. Adishén était devenu vassal du Bornou. À l'époque allemande, le lamido peul de Bogo commandait les Musgu de la rive gauche du Logone. Les sultanats de Pouss et de Guirvidig ont ensuite été créés pour eux, et les Musgu Kadey ont reçu leur propre canton, à Kossa.",
+      "relationsWithNeighbors": "Heinrich Barth décrit en 1851 des Musgu entourés d'ennemis : les Kanouri du Bornou au nord, les Peuls à l'ouest, les gens du Logone au nord-est et le Baguirmi à l'est. Il présente les gens du Logone comme d'anciens parents des Musgu, séparés d'eux par la religion. Au sud, les Massa voisins ont assimilé une partie des Musgu. Aujourd'hui, presque chaque bourg kotoko au sud de Kousseri a son quartier musgu.",
+      "conflictsOrAlliances": "Au XIXe siècle, le Bornou, le Wandala, le Baguirmi et les lamidats peuls lançaient des razzias en pays musgu pour prendre des esclaves. Les Musgu ont payé un lourd tribut à cette traite, qui n'a cessé qu'après 1935, selon l'Atlas de la province Extrême-Nord Cameroun. Au XIXe siècle, les Kalang ont repris Guirvidig aux Kadey avec l'appui des Peuls, qui venaient de conquérir Bogo.",
+      "diaspora": "Au XIXe siècle, des Musgu réduits en esclavage ont été vendus jusqu'en Libye. À Tripoli, le chercheur allemand Gottlob Adolf Krause a étudié leur langue auprès d'esclaves muzuk. Depuis les années 1960, beaucoup de Musgu émigrent vers le nord, le long du Logone, jusqu'au pays kotoko, au bas Chari et aux rives du lac Tchad."
     },
     "demography": {
-      "totalPopulation": 164400,
-      "referenceYear": 2025,
-      "source": "Wikipedia — Musgum people (donnees 2024) : 164 400 total (140 000 au Cameroun, 24 400 au Tchad). Ethnologue (SIL) : 61 500 locuteurs au Cameroun (1982), 24 408 au Tchad (1993). Projections 2025 basees sur la croissance demographique regionale.",
+      "totalPopulation": 338000,
+      "referenceYear": 2026,
+      "source": "Estimation du Joshua Project, une base de données missionnaire, consultée le 3 novembre 2026 : 240 000 au Cameroun et 98 000 au Tchad. Aucun recensement récent ne compte les Musgu. En 1987, ils formaient 8,7 % des 276 170 habitants du département du Logone-et-Chari, selon l'Atlas de la province Extrême-Nord Cameroun, mais la plupart vivent plus au sud.",
       "distributionByCountry": [
         {
           "country": "CMR",
-          "population": 140000,
-          "note": "Sous-division Maga (Mayo-Danay), Pouss, Guirvidig, Zina, Bogo (departement Diamare), region de l'Extreme-Nord"
+          "population": 240000,
+          "note": "Région de l'Extrême-Nord : Pouss, Guirvidig, Maga, Kaykay, Kossa, et vers le nord jusqu'au pays kotoko"
         },
         {
           "country": "TCD",
-          "population": 24400,
-          "note": "Prefecture de Chari-Baguirmi, zone entre les fleuves Chari et Logone"
+          "population": 98000,
+          "note": "Rive droite du Logone, autour de Mogroum, et bas Chari"
         }
       ]
     },
@@ -111,12 +123,6 @@
         "tier": "needs_review"
       },
       {
-        "title": "101lasttribes.com — Musgum people",
-        "url": "http://www.101lasttribes.com/tribes/musgum.html",
-        "tier": "unverified",
-        "source_kind": "community"
-      },
-      {
         "title": "SIL Ethnologue — Musgu (mug)",
         "url": "https://www.ethnologue.com/language/mug/",
         "tier": "official",
@@ -127,11 +133,145 @@
         "url": "https://www.facebook.com/TheAfricanHistoryChannelFB/posts/the-tolekakay-of-the-musgum-traditional-architecture-between-the-lower-logone-an/394568216210204/",
         "tier": "unverified",
         "source_kind": "community"
+      },
+      {
+        "title": "Glottolog — Musgu (musg1254)",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/musg1254",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste. La fiche donne Musgu, code ISO 639-3 mug, classé dans la famille afro-asiatique, branche tchadique, groupe biu-mandara, sous-groupe musguic. Elle range sous cette langue deux ensembles de parlers, le munjuk du Nord (beege, mpus, muzuk et vulum) et le munjuk du Sud. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Notice RAMEAU « Mousgoum (peuple d'Afrique) »",
+        "author": "Bibliothèque nationale de France",
+        "year": null,
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb145691813",
+        "tier": "official",
+        "source_kind": "repository",
+        "notes": "Notice d'autorité de la Bibliothèque nationale de France, mise à jour le 7 avril 2025. Elle retient Mousgoum et range sous ce nom les formes Mouloui, Mousgou, Mousgoums, Mousgoun, Mouskoun, Mulwi, Mumwi, Munjuk, Musgo, Musgu, Musgum, Musgums, Musgun, Musgus, Musseku, Mussug, Musuk, Muzgu et Muzuk. Elle rattache ce peuple au Cameroun, au Nigeria et au Tchad, et renvoie à la vedette de la Library of Congress « Musgu (African people) ». Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Quelques touches historico-linguistiques sur la question « mousgoum »",
+        "author": "Henry Tourneux",
+        "year": 2022,
+        "url": "https://shs.hal.science/halshs-03832384v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 1-9",
+        "notes": "Chapitre du livre Langue, identité et patrimoine culturel du peuple musgum, sous la direction de David Abaikaye, Yaoundé, Dinimber et Larimber, 2022, p. 45-57. Lu dans le texte déposé sur HAL, paginé de 1 à 10. Le texte retrace les premières mentions du nom, de Denham en 1826 à Barth en 1857, et explique les noms Mulwi, Mousgoum, Munjuk et Monjokay. Il décrit aussi la case-obus, citant Karl Kumm (1910) et André Gide (1928). Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Les emprunts en musgu",
+        "author": "Henry Tourneux",
+        "year": 1983,
+        "url": "https://shs.hal.science/halshs-00459625v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 441-448",
+        "notes": "Dans Studies in Chadic and Afroasiatic Linguistics, sous la direction d'Ekkehard Wolff et Hilke Meyer-Bahlburg, Hambourg, Helmut Buske, 1983, p. 441-477. Lu dans le texte déposé sur HAL. Il décrit les noms des groupes, les contacts avec le Bornou, les Peuls, le Baguirmi et les Massa, et les mots empruntés à leurs langues. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Travels and Discoveries in North and Central Africa, vol. 3",
+        "author": "Heinrich Barth",
+        "year": 1857,
+        "url": "https://archive.org/details/travelsdiscoveri31857bart",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 178-191",
+        "notes": "New York, D. Appleton, 1857, réédition américaine de l'édition de Londres. Récit du voyage de l'explorateur allemand en Afrique centrale de 1849 à 1855. Il accompagnait en 1851 une armée du Bornou partie en razzia chez les Musgu, et son regard est celui d'un voyageur européen de cette époque. Lu dans la numérisation d'Internet Archive. Il décrit le chef Adishén, les voisins des Musgu, leurs parlers, leur objet de culte kefé et leurs tombes. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Atlas de la province Extrême-Nord Cameroun, mise en place du peuplement et répartition ethnique",
+        "author": "Christian Seignobos",
+        "year": 2000,
+        "url": "https://books.openedition.org/irdeditions/11557",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 38-43",
+        "notes": "Chapitre de l'Atlas de la province Extrême-Nord Cameroun, sous la direction de Christian Seignobos et Olivier Iyébi-Mandjek, IRD Éditions et MINREST, 2000, lu dans l'édition en ligne d'OpenEdition Books. Il retrace l'arrivée des Musgum par vagues depuis le pays banre et leur organisation. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Atlas de la province Extrême-Nord Cameroun, linguistique",
+        "author": "Daniel Barreteau et Michel Dieu",
+        "year": 2000,
+        "url": "https://books.openedition.org/irdeditions/11562",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 64-70",
+        "notes": "Chapitre de l'Atlas de la province Extrême-Nord Cameroun, sous la direction de Christian Seignobos et Olivier Iyébi-Mandjek, IRD Éditions et MINREST, 2000, lu dans l'édition en ligne d'OpenEdition Books. Il décrit les dialectes du munjuk et la place du fulfulde. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Atlas de la province Extrême-Nord Cameroun, évolution de l'organisation politico-administrative",
+        "author": "Olivier Iyébi-Mandjek et Christian Seignobos",
+        "year": 2000,
+        "url": "https://books.openedition.org/irdeditions/11559",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 57-60",
+        "notes": "Chapitre de l'Atlas de la province Extrême-Nord Cameroun, sous la direction de Christian Seignobos et Olivier Iyébi-Mandjek, IRD Éditions et MINREST, 2000, lu dans l'édition en ligne d'OpenEdition Books. Il décrit l'organisation des Musgum avant et pendant la colonisation. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Atlas de la province Extrême-Nord Cameroun, religions",
+        "author": "Christian Seignobos et Abdourhaman Nassourou",
+        "year": 2000,
+        "url": "https://books.openedition.org/irdeditions/11596",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 145-150",
+        "notes": "Chapitre de l'Atlas de la province Extrême-Nord Cameroun, sous la direction de Christian Seignobos et Olivier Iyébi-Mandjek, IRD Éditions et MINREST, 2000, lu dans l'édition en ligne d'OpenEdition Books. Il décrit l'islamisation des Musgum et les missions chrétiennes. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Atlas de la province Extrême-Nord Cameroun, la pêche dans le lac de Maga",
+        "author": "Christian Seignobos et Bernard Raugel",
+        "year": 2000,
+        "url": "https://books.openedition.org/irdeditions/11584",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 124-127",
+        "notes": "Chapitre de l'Atlas de la province Extrême-Nord Cameroun, sous la direction de Christian Seignobos et Olivier Iyébi-Mandjek, IRD Éditions et MINREST, 2000, lu dans l'édition en ligne d'OpenEdition Books. Il décrit la pêche musgum sur le lac de Maga. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Review of Steven Nelson, From Cameroon to Paris: Mousgoum Architecture in and out of Africa",
+        "author": "Kerstin Pinther",
+        "year": 2008,
+        "url": "https://epub.ub.uni-muenchen.de/15921/1/from_cameroon_to_paris.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 147-149",
+        "notes": "Compte rendu paru dans The Journal of African History, vol. 49, n° 1, 2008, déposé sur le serveur de l'université de Munich. Il présente le livre de Steven Nelson, University of Chicago Press, 2007. Selon ce compte rendu, le teleuk, au pluriel teleukakay, est une maison en coupole « fashioned entirely from mud and grass by specialized masons of the Mousgoum peoples of Chad and Cameroon ». Il a presque disparu dans les années 1930, a été repris par l'architecte Léon Fichet pour l'Exposition coloniale internationale de Paris en 1931, et connaît un renouveau depuis les années 1990. Consulté le 3 novembre 2026."
+      },
+      {
+        "title": "Joshua Project — Musgu language resources",
+        "url": "https://joshuaproject.net/languages/mug",
+        "tier": "unverified",
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire évangélique. Elle compte 240 000 Musgum, ou Mulwi, au Cameroun et 98 000 au Tchad, soit 338 000 personnes parlant le musgu. Ce sont des estimations sans recensement cité. Consulté le 3 novembre 2026."
+      }
+    ],
+    "externalIdentifiers": {
+      "wikidataId": "Q1249811",
+      "glottocode": "musg1254",
+      "iso639_3": "mug"
+    },
+    "searchAnswer": {
+      "lead": "Les Musgu, ou Mousgoum, sont un peuple des plaines du Logone, au nord du Cameroun et au Tchad. Une partie d'entre eux se nomme Monjokay.",
+      "followUp": "D'où viennent les noms Musgu, Mousgoum et Mulwi ?"
+    },
+    "gaps": [
+      {
+        "field": "organization.ageClassSystems",
+        "reason": "Nous n'avons pas trouvé, dans les travaux d'Henry Tourneux, dans l'Atlas de la province Extrême-Nord Cameroun ni dans le récit de Heinrich Barth, de description de classes d'âge chez les Musgu."
+      },
+      {
+        "field": "culture.artsAndMusic",
+        "reason": "Les sources consultées décrivent l'architecture des Musgu, mais pas leur musique."
       }
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Musgu désigne un peuple des plaines du Logone, dans le nord du Cameroun et au Tchad, dont une partie se nomme elle-même Monjokay. D'autres noms existent : Mousgoum, la forme courante en français, et Mulwi, le nom d'un de ses parlers. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "summary": "Le nom Musgu désigne un peuple des plaines du Logone, au nord du Cameroun et au Tchad, dont une partie se nomme elle-même Monjokay. D'autres noms existent : Mousgoum, la forme courante en français, et Mulwi, le nom que lui donnent ses voisins massa au Tchad. Les sources proposent plusieurs origines pour ces noms ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Monjokay",
@@ -185,6 +325,60 @@
                 "notes": "Dans Studies in Chadic and Afroasiatic Linguistics, sous la direction d'Ekkehard Wolff et Hilke Meyer-Bahlburg, Hambourg, Helmut Buske, 1983, p. 441-477. Lu dans le texte déposé sur HAL le 11 octobre 2026."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": 2022,
+              "label": "Proposé en 1981, expliqué en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Monjokay a été proposé en 1981 par Henry Tourneux pour nommer l'ensemble des locuteurs, avec Munjuk pour leur langue. Selon lui, ces locuteurs ne reconnaissent aucun nom commun : chaque groupe porte le nom de son parler, vulum au Tchad, mujuk à Guirvidig, mpus à Pouss, bege à Bigué-Palam. Monjokay a l'avantage de ne pas être le nom d'une seule ville.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Quelques touches historico-linguistiques sur la question « mousgoum »",
+                "author": "Henry Tourneux",
+                "year": 2022,
+                "url": "https://shs.hal.science/halshs-03832384v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4-5",
+                "notes": "Chapitre du livre Langue, identité et patrimoine culturel du peuple musgum, sous la direction de David Abaikaye, Yaoundé, Dinimber et Larimber, 2022, p. 45-57. Lu dans le texte déposé sur HAL, paginé de 1 à 10. Passage lu : « Les “Mousgoum” ne reconnaissent aucun nom générique qui couvre l'ensemble de leurs parlers » (p. 4). Tourneux y rappelle sa proposition de 1981 et conclut : « on s'en tiendra à “Munjuk” / “Monjokoy” ou “Monjokay” » (p. 5). Consulté le 3 novembre 2026."
+              },
+              {
+                "title": "Atlas de la province Extrême-Nord Cameroun, linguistique",
+                "author": "Daniel Barreteau et Michel Dieu",
+                "year": 2000,
+                "url": "https://books.openedition.org/irdeditions/11562",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 64-70",
+                "notes": "Chapitre de l'Atlas de la province Extrême-Nord Cameroun, sous la direction de Christian Seignobos et Olivier Iyébi-Mandjek, IRD Éditions et MINREST, 2000, lu dans l'édition en ligne d'OpenEdition Books. Note sur le munjuk du Sud : les auteurs y écrivent que le nom « mousgoum » ou « musgum » employé au Cameroun « n'est pas utilisé par les locuteurs », et qu'ils ont repris la forme munjuk, tirée du nom pluriel de ce peuple, « manjakay », sur une communication d'Henry Tourneux. Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposée en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Monjokay se décomposerait en mu-, un préfixe qui désigne les personnes, et -njuk, selon Henry Tourneux en 2022. Il reprend l'hypothèse selon laquelle -njuk serait une ancienne racine tchadique signifiant « homme », ce qui irait avec le sens « les vrais hommes » que les Monjokay donnent à leur nom.",
+            "hypothesisGroup": "origine du nom Monjokay",
+            "sources": [
+              {
+                "title": "Quelques touches historico-linguistiques sur la question « mousgoum »",
+                "author": "Henry Tourneux",
+                "year": 2022,
+                "url": "https://shs.hal.science/halshs-03832384v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Chapitre du livre Langue, identité et patrimoine culturel du peuple musgum, sous la direction de David Abaikaye, Yaoundé, Dinimber et Larimber, 2022, p. 45-57. Lu dans le texte déposé sur HAL, paginé de 1 à 10. Passage lu : « notre mə̀njə̀kw peut être analysé en mə̀-njə̀kw, ou, si l'on préfère, en mù-njùk ». L'auteur ajoute que l'hypothèse d'une racine signifiant « homme, personne humaine » reste « à étayer ». Consulté le 3 novembre 2026."
+              }
+            ]
           }
         ]
       },
@@ -194,7 +388,7 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom écrit Musgow en 1826 ; il viendrait du Bornou.",
+        "shortLine": "Le nom écrit Musgow en 1826 ; il viendrait du Bornou ou du pays mandara.",
         "periodLabel": "Écrit depuis 1826 ; en usage aujourd'hui",
         "accounts": [
           {
@@ -294,6 +488,76 @@
                 "notes": "Dans Studies in Chadic and Afroasiatic Linguistics, sous la direction d'Ekkehard Wolff et Hilke Meyer-Bahlburg, Hambourg, Helmut Buske, 1983, p. 441-477. Lu dans le texte déposé sur HAL le 11 octobre 2026."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Livre publié en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Musgu est écrit Músgu ou Músekú par l'explorateur Heinrich Barth, dans le récit de son voyage publié en 1857. Il range les Musgu dans une « grande nation des Masay », avec les Kotoko, les gens du Logone et les Mandara.",
+            "formAsWritten": "Músekú",
+            "actors": [
+              {
+                "name": "Heinrich Barth",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 3",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri31857bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 178",
+                "notes": "New York, D. Appleton, 1857, réédition américaine de l'édition de Londres. Récit du voyage de l'explorateur allemand en Afrique centrale de 1849 à 1855. Il accompagnait en 1851 une armée du Bornou partie en razzia chez les Musgu, et son regard est celui d'un voyageur européen de cette époque. Lu dans la numérisation d'Internet Archive. Passage lu : « The Musgu, or Museku, are a division of the great nation of the Masay, which comprises the Kotoko, or Makari, the people of Logon, or Logone, the Mandara ». Consulté le 3 novembre 2026."
+              },
+              {
+                "title": "Quelques touches historico-linguistiques sur la question « mousgoum »",
+                "author": "Henry Tourneux",
+                "year": 2022,
+                "url": "https://shs.hal.science/halshs-03832384v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Chapitre du livre Langue, identité et patrimoine culturel du peuple musgum, sous la direction de David Abaikaye, Yaoundé, Dinimber et Larimber, 2022, p. 45-57. Lu dans le texte déposé sur HAL, paginé de 1 à 10. Tourneux relève que Barth « orthographie Músgu ou Músekú le nom des locuteurs du “musgow” » (Barth, 1857, p. 178). Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposée en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Musgu viendrait du nom que les Mandara, aussi appelés Wandala, donnaient à ce pays, selon Henry Tourneux en 2022. Il note que Denham cite « le Mosgô » d'après les Mandara, et que Barth a nommé la langue d'après un nom donné par d'autres, « probablement wandala ». Christian Seignobos écrit Muzgwo le nom des Musgum établis chez les Mandara.",
+            "hypothesisGroup": "origine du nom Musgu",
+            "sources": [
+              {
+                "title": "Quelques touches historico-linguistiques sur la question « mousgoum »",
+                "author": "Henry Tourneux",
+                "year": 2022,
+                "url": "https://shs.hal.science/halshs-03832384v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Chapitre du livre Langue, identité et patrimoine culturel du peuple musgum, sous la direction de David Abaikaye, Yaoundé, Dinimber et Larimber, 2022, p. 45-57. Lu dans le texte déposé sur HAL, paginé de 1 à 10. Passage lu : Denham, Clapperton et Oudney « citent cependant “le Mosgô”, d'après le nom que les Mandara (Wandala) lui donnaient. On voit ainsi que ce nom, plus tard orthographié en “musgu”, est une appellation exogène ». Consulté le 3 novembre 2026."
+              },
+              {
+                "title": "Atlas de la province Extrême-Nord Cameroun, mise en place du peuplement et répartition ethnique",
+                "author": "Christian Seignobos",
+                "year": 2000,
+                "url": "https://books.openedition.org/irdeditions/11557",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38-43",
+                "notes": "Chapitre de l'Atlas de la province Extrême-Nord Cameroun, sous la direction de Christian Seignobos et Olivier Iyébi-Mandjek, IRD Éditions et MINREST, 2000, lu dans l'édition en ligne d'OpenEdition Books. Passage lu : les Mandara « furent ralliés par des colonies tributaires de Muzgwo (Musgum) ». Consulté le 3 novembre 2026."
+              }
+            ]
           }
         ]
       },
@@ -327,6 +591,49 @@
                 "notes": "Dans Studies in Chadic and Afroasiatic Linguistics, sous la direction d'Ekkehard Wolff et Hilke Meyer-Bahlburg, Hambourg, Helmut Buske, 1983, p. 441-477. Lu dans le texte déposé sur HAL le 11 octobre 2026."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Article publié en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Mousgoum est devenu le nom administratif de ce peuple au Cameroun, à la place de Massa, selon Henry Tourneux. Le linguiste Jean Mouchet avait obtenu qu'on cesse d'employer Massa, réservé à leurs voisins du sud. Tourneux juge que Mousgoum « ne vaut guère mieux » : au village de Mouskoum, on parlait autrefois le muskum, une autre langue, aujourd'hui disparue.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Quelques touches historico-linguistiques sur la question « mousgoum »",
+                "author": "Henry Tourneux",
+                "year": 2022,
+                "url": "https://shs.hal.science/halshs-03832384v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2-3",
+                "notes": "Chapitre du livre Langue, identité et patrimoine culturel du peuple musgum, sous la direction de David Abaikaye, Yaoundé, Dinimber et Larimber, 2022, p. 45-57. Lu dans le texte déposé sur HAL, paginé de 1 à 10. Passage lu : « on les connaît administrativement sous le nom de “Mousgoum” au Cameroun, nom qui a succédé à celui de “Massa” », puis « l'appellation de “Mousgoum” basée sur le toponyme de Mùskûm ne vaut guère mieux ». Consulté le 3 novembre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Notice mise à jour en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Mousgoum est la forme retenue par la Bibliothèque nationale de France pour ce peuple. Sa notice range sous ce nom une vingtaine d'autres formes, dont Musgu, Musgum, Mulwi, Munjuk et Muzuk.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Notice RAMEAU « Mousgoum (peuple d'Afrique) »",
+                "author": "Bibliothèque nationale de France",
+                "year": null,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb145691813",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice d'autorité de la Bibliothèque nationale de France, mise à jour le 7 avril 2025. Elle retient Mousgoum et range sous ce nom les formes Mouloui, Mousgou, Mousgoums, Mousgoun, Mouskoun, Mulwi, Mumwi, Munjuk, Musgo, Musgu, Musgum, Musgums, Musgun, Musgus, Musseku, Mussug, Musuk, Muzgu et Muzuk. Elle rattache ce peuple au Cameroun, au Nigeria et au Tchad, et renvoie à la vedette de la Library of Congress « Musgu (African people) ». Consulté le 3 novembre 2026."
+              }
+            ]
           }
         ]
       },
@@ -335,9 +642,9 @@
         "nameStatus": "current",
         "selfGiven": false,
         "languageOfOrigin": null,
-        "namedBy": null,
-        "shortLine": "Le nom d'un parler musgu, celui de Mogroum, au Tchad.",
-        "periodLabel": "Écrit depuis 1978",
+        "namedBy": "Les Massa, voisins du sud, au Tchad",
+        "shortLine": "Le nom que leur donnent leurs voisins massa au Tchad ; il viendrait de « nous parlons ».",
+        "periodLabel": "Écrit depuis 1978 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
@@ -346,7 +653,7 @@
               "label": "Étude de 1978, citée en 1983"
             },
             "era": "modern",
-            "statement": "Le nom Mulwi désigne le parler vulum du village de Mogroum, au Tchad : Henry Tourneux l'emploie dans le titre de l'étude qu'il lui consacre en 1978, Le mulwi ou vulum de Mogroum. Nous n'avons pas trouvé de source qui en fasse le nom de tout le peuple.",
+            "statement": "Le nom Mulwi désigne le parler vulum du village de Mogroum, au Tchad : Henry Tourneux l'emploie dans le titre de l'étude qu'il lui consacre en 1978, Le mulwi ou vulum de Mogroum.",
             "aspect": "usage",
             "sources": [
               {
@@ -358,6 +665,38 @@
                 "source_kind": "academic",
                 "page": "p. 442",
                 "notes": "Dans Studies in Chadic and Afroasiatic Linguistics, sous la direction d'Ekkehard Wolff et Hilke Meyer-Bahlburg, Hambourg, Helmut Buske, 1983, p. 441-477. Lu dans le texte déposé sur HAL le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposée en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Mulwi est celui que les Massa, voisins du sud, donnent toujours à ce peuple au Tchad, selon Henry Tourneux. Il viendrait probablement de l'expression mú lúwí, « nous parlons ». Tourneux le rapproche d'un surnom moqueur tiré d'une expression que l'on entend souvent dans la bouche des gens ainsi nommés.",
+            "hypothesisGroup": "origine du nom Mulwi",
+            "sources": [
+              {
+                "title": "Quelques touches historico-linguistiques sur la question « mousgoum »",
+                "author": "Henry Tourneux",
+                "year": 2022,
+                "url": "https://shs.hal.science/halshs-03832384v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Chapitre du livre Langue, identité et patrimoine culturel du peuple musgum, sous la direction de David Abaikaye, Yaoundé, Dinimber et Larimber, 2022, p. 45-57. Lu dans le texte déposé sur HAL, paginé de 1 à 10. Passage lu : « Leurs voisins Massa les appellent toujours “Mouloui” [mulwi], au Tchad » ; « Le nom de “Mulwi” vient probablement du syntagme verbal *mú lúwí “nous [exclusif] parlons” ». Consulté le 3 novembre 2026."
+              },
+              {
+                "title": "Atlas de la province Extrême-Nord Cameroun, mise en place du peuplement et répartition ethnique",
+                "author": "Christian Seignobos",
+                "year": 2000,
+                "url": "https://books.openedition.org/irdeditions/11557",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38-43",
+                "notes": "Chapitre de l'Atlas de la province Extrême-Nord Cameroun, sous la direction de Christian Seignobos et Olivier Iyébi-Mandjek, IRD Éditions et MINREST, 2000, lu dans l'édition en ligne d'OpenEdition Books. Passage lu, sur une ancienne carte : « Les Musgum sont ici des “Mouloui”, appellation de la même population au Tchad ». Consulté le 3 novembre 2026."
               }
             ]
           }

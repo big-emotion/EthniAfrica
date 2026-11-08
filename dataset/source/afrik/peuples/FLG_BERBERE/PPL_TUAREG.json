@@ -8,113 +8,92 @@
     "appellations": {
       "mainName": "Touareg",
       "selfAppellation": null,
-      "exonyms": [
-        "Tuareg",
-        "Twareg",
-        "Touareg",
-        "Kel Tagelmust",
-        "Veiled people",
-        "Blue people",
-        "Mulatthamin"
-      ],
-      "originOfExonyms": "Le mot Touareg est emprunté à l'arabe tawariq, prononcé twareg au Maghreb. Sa plus ancienne trace connue est Targa, chez l'historien Ibn Khaldoun à la fin du XIVe siècle, pour une tribu sanhadja qui porte le voile. Des voyageurs européens le reprennent dès 1802, et le français le fixe au XIXe siècle avec le singulier Targui. Son sens reste discuté. Une hypothèse le rattache à Targa, ancien nom du Fezzan. Une autre le tire de l'arabe târek, « abandonné » : des Touareg du Nord la rapportent en 1864 comme une injure, et elle circule encore aujourd'hui comme un fait. D'autres auteurs y voient une racine t-r-q et une erreur d'écriture. Le surnom Mulatthamin, « les porteurs du voile », est employé par Ibn Khaldoun pour des tribus sanhadja du désert, dont les Targa. L'appellation Blue People viendrait de la teinture indigo du voile, qui décolorait la peau. Les Touareg se nomment par la forme touarègue du nom berbère amazigh : Imuhagh en Ahaggar et en Ajjer, Imajaghen dans l'Aïr et chez les Iwellemmeden et les Kel Gress, Imushagh dans l'Adrar des Ifoghas. Au nord, ce nom désigne tout membre de la société ; au sud, il désigne l'aristocratie nomade. Le sens d'hommes libres ou nobles qu'on lui prête est un usage local secondaire, pas son étymologie. Au Mali et au Niger, beaucoup se disent aussi Kel Tamasheq, « ceux de la langue tamasheq » : ce nom est écrit depuis 1967, et son emploi pour tous les Touareg est discuté. La langue s'appelle tamahaq en Ahaggar et en Ajjer, tamajaq dans l'Aïr et chez les Iwellemmeden et les Kel Gress, tamasheq dans l'Adrar des Ifoghas.",
-      "whyProblematic": "Le terme Touareg a ete applique de maniere uniforme a des groupes confedres distincts qui n'avaient pas necessairement conscience d'une identite commune avant la colonisation. Les etats post-coloniaux ont souvent criminalise les revendications identitaires touaregues. Le terme Tamacheq ou Tamajaq est prefere par certains linguistes pour designer la langue plutot que le peuple.",
-      "contemporaryUsage": "Touareg est le terme officiel utilise en francais et dans les etats du Sahel. Les locuteurs se designent selon leur confederation d'appartenance (Kel Ahaggar, Kel Adagh, etc.) plutot que par un nom commun. Depuis les annees 1990, une identite touaregue transnationale s'affirme dans le contexte des rebellions au Mali et au Niger et du mouvement berbere.",
-      "linguisticFamily": "FLG_BERBERE",
-      "ethnoLinguisticGroup": "Tamasheq (berbere saharien meridional)",
-      "historicalRegion": "Sahara central et occidental : Ahaggar (Algerie), Adrar des Ifoghas (Mali), Massif de l'Air (Niger), Azawagh, Adrar, Fezzan (Libye)",
-      "currentCountries": ["MLI", "NER", "DZA", "LBY", "BFA"]
+      "exonyms": ["Touareg", "Kandin", "Mulatthamin"],
+      "spellingAliases": ["Touaregs", "Tuareg", "Targui"],
+      "originOfExonyms": "Le nom Touareg a d'abord été employé par des auteurs de langue arabe, puis repris par les voyageurs européens et par le français, avec le singulier Targui ; le dictionnaire de l'Académie française le dit emprunté à l'arabe tawariq. Son origine est discutée. Une explication le rattache à Tărga, le nom que les Kel Ahaggar donnent au pays que les Arabes appellent Fezzan, en Libye : Benhazera la propose en 1908, Charles de Foucauld la reprend dans son dictionnaire, et l'ethnologue Marceau Gast la présente encore en 1986 comme possible. Une autre explication, rapportée en 1864 par l'explorateur Henri Duveyrier, le tire de l'arabe târek, « abandonné de Dieu » ; les Touareg du Nord qu'il interroge la tiennent pour une injure et disent que ce nom n'a jamais été celui de leur peuple. Au début du XXe siècle, pour les Arabes du Tidikelt, en Algérie, le mot touareg veut dire tantôt « Touareg noble », tantôt n'importe quel Touareg, selon Charles de Foucauld. Il note aussi que les Berbères du Touat et du Tidikelt appellent les Touareg Ilemtien. Les Touareg se nomment eux-mêmes par des formes d'un nom berbère ancien, de même racine que amazigh : Imuhagh en Ahaggar et dans l'Ajjer, Imajeghen dans l'Aïr et chez les Iwellemmeden, Imushagh dans l'Adrar des Ifoghas, selon Salem Chaker, Hélène Claudot-Hawad et Mohamed Hawad. Ils emploient aussi des noms formés avec kel, « les gens de » : Kel Tefinagh, « les gens des tifinagh », ou Kel Tegulmust, « les gens du voile », selon Salem Chaker. Au Mali et au Niger, beaucoup se disent Kel Tamasheq, « les gens de la langue tamasheq » : ce nom est écrit depuis 1967, et son emploi pour tous les Touareg est discuté.",
+      "whyProblematic": "Le nom Touareg a été donné de l'extérieur, et les Touareg du Nord interrogés par Henri Duveyrier vers 1860 le refusaient comme une injure. Après les indépendances des années 1960, le pays touareg s'est trouvé partagé entre l'Algérie, la Libye, le Niger, le Mali et la Haute-Volta, devenue le Burkina Faso, selon l'anthropologue Hélène Claudot-Hawad. Elle écrit en 2001 que les États ont alors promu le nom Kel Tamasheq, « ceux qui parlent touareg », comme seul nom collectif, et combattu les noms Imajeghen, Imuhagh et Imushagh, parce qu'ils désignent un peuple et non seulement des locuteurs d'une langue.",
+      "contemporaryUsage": "Touareg reste le nom courant en français, et des Touareg l'emploient eux-mêmes. Au Mali, le recensement de 2022 compte 829 366 personnes qui se disent Tamasheq ou Touareg, selon l'Institut national de la statistique. Le nom Kel Tamasheq est surtout employé au Mali et au Niger. Selon Hélène Claudot-Hawad, il s'est répandu depuis les années 1990, surtout hors du monde touareg.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Kel Ahaggar (Kel Hoggar) — confederation de l'Ahaggar (Algerie meridionale), centre a Tamanrasset",
-      "Kel Ajjer (Azjar) — confederation de l'Ajjer, centree sur l'oasis de Ghat (Libye/Algerie)",
-      "Kel Adagh (Kel Assuk) — confederation de l'Adrar des Ifoghas, regions de Kidal et Tombouctou (Mali)",
-      "Iwillimmidan Kel Ataram (Iwellemmedan occidentaux) — zones de Menaka et Azawagh (Mali occidental)",
-      "Iwillimmidan Kel Denneg (Iwellemmedan orientaux) — region de Tchin-Tabaraden et Azawagh (Niger)",
-      "Kel Ayr (Kel Air) — Massif de l'Air, Agadez, In Gal, Timia (Niger)",
-      "Kel Gres — region de Zinder et Tanut (Niger meridional, nord du Nigeria)",
-      "Kel Owey — Massif de l'Air, avec migrations saisonnieres vers le sud (Niger)"
+      "Kel Ahaggar, dans l'Ahaggar, au sud de l'Algérie",
+      "Kel Ajjer, dans l'Ajjer, entre l'Algérie et la Libye",
+      "Taïtoq, dans le nord du pays touareg",
+      "Kel Aïr, dans le massif de l'Aïr, au Niger : Kel Owey, Kel Ferwan, Kel Fadey et d'autres groupes",
+      "Kel Adrar ou Kel Adagh, dans l'Adrar des Ifoghas, au Mali",
+      "Iwellemmeden Kel Ataram, la branche de l'ouest, près du fleuve Niger",
+      "Iwellemmeden Kel Denneg, à l'est, dans l'Azawagh, au Niger",
+      "Kel Geres, venus de l'Aïr et installés au sud, dans l'Ader, au Niger"
     ],
     "origins": {
-      "ancientOrigins": "Les Touareg descendent des populations berberes autochtones d'Afrique du Nord. Leur ascendance est une mosaique de populations nord-africaines locales (Taforalt), proche-orientales, europeennes (premiers agriculteurs europeens) et sub-sahariennes, anterieure a la conquete musulmane du Maghreb. Certains chercheurs lient leur origine a la chute des Garamantes, qui habitaient le Fezzan (Libye) du 1er millenaire av. J.-C. au 5e siecle apres J.-C. La tradition orale touaregue associe leurs origines a la reine fondatrice Tin Hinan, dont la tombe vieille de 1 500 ans a ete decouverte a Abalessa dans les monts Hoggar, portant une inscription en tifinagh.",
-      "formationPeriod": "Les Touareg se forment en tant que groupe distinct lors de migrations vers le sud depuis la region du Tafilalt (Maroc) a partir des 4e-5e siecles apres J.-C., selon la tradition de Tin Hinan. Les invasions arabes du 7e siecle et les migrations des Banu Hilal et Banu Sulaym au 11e siecle accentuent leur retrait vers le Sahara central. Les confederations actuelles se structurent au cours du Moyen Age et sont bien documentees par les geographes arabes a partir du 10e siecle (Ibn Hawkal, El-Bekri, Ibn Battutah).",
+      "ancientOrigins": "Les traditions recueillies en Ahaggar, résumées en 1986 par l'ethnologue Marceau Gast, parlent d'un peuple plus ancien, les Isebeten, qui vivait dans les montagnes avant l'arrivée des premiers Touareg. Selon lui, des Berbères Howwara, partis du Fezzan, en Libye, avant et pendant la conquête arabe du VIIe siècle, auraient dominé l'Ahaggar et lui auraient donné leur nom ; Charles de Foucauld proposait déjà ce lien entre Howwara et Ahaggar. Les suzerains de l'Ahaggar se disent descendants de Tin Hinan, une femme noble venue du Tafilalet, au Maroc, selon leur tradition. Le tombeau que la tradition lui attribue, près d'Abalessa, a été fouillé en 1925 et en 1933 et daté de 470 après J.-C.",
+      "formationPeriod": "Dans l'Aïr, au Niger, les traditions placent l'arrivée des groupes touareg en plusieurs vagues : les Isandalan au XIe siècle, les Kel Geres au XIIe siècle, puis les Kel Owey à la fin du XIVe siècle, selon l'article « Aïr » de l'Encyclopédie berbère. En Ahaggar, le clan des Imenan, d'origine religieuse selon la tradition, commande l'Ahaggar, l'Ajjer et une partie de l'Aïr et de l'Adrar jusqu'au milieu du XVIIe siècle ; les amenokal du clan des Kel Ghela sont connus depuis le milieu du XVIIIe siècle, selon Marceau Gast.",
       "migrationRoutes": [
-        "Migration fondatrice depuis le Tafilalt (Maroc actuel) vers le Sahara central (4e-5e siecles)",
-        "Expansion vers l'Ahaggar, l'Azawagh et l'Air sous la pression des conquetes arabes (7e-11e siecles)",
-        "Migrations des Kel Denneg et Kel Gress vers le Tchad oriental (Abech) et le nord du Darfour (Soudan) aux epoques modernes"
+        "De la Cyrénaïque et de l'oasis d'Awjila, en Libye, vers l'Aïr, du XIe au XIVe siècle, selon les traditions des Isandalan et des Kel Geres",
+        "Du Fezzan vers l'Ahaggar, avant le VIIe siècle, selon l'hypothèse qui fait des Howwara les ancêtres des Kel Ahaggar",
+        "Du Tafilalet, au Maroc, vers Abalessa, en Ahaggar, selon la tradition de Tin Hinan",
+        "De l'Aïr vers le sud, aux XVIIe et XVIIIe siècles : Itesan et Kel Geres vers l'Ader, Imuzzurag vers le Damergou",
+        "De la région de Ménaka vers l'Azawagh, pour les Iwellemmeden Kel Denneg, à la fin du XVIIe siècle ou vers 1800 selon les traditions"
       ],
       "historicalSettlementZones": [
-        "Monts Hoggar / Ahaggar (Algerie meridionale)",
-        "Adrar des Ifoghas (Mali septentrional, region de Kidal)",
-        "Massif de l'Air (Niger central, region d'Agadez)",
-        "Azawagh (Mali et Niger, depression du Sahel)",
-        "Fezzan et Ajjer (Libye meridionale)",
-        "Nord du Burkina Faso (Oudalan)",
-        "Enclave Kinnin (nord du Darfour soudanais, region de Mellit)"
+        "Ahaggar, au sud de l'Algérie",
+        "Ajjer, entre l'Algérie et la Libye",
+        "Massif de l'Aïr et région d'Agadez, au Niger",
+        "Adrar des Ifoghas, au Mali",
+        "Azawagh, entre le Mali et le Niger",
+        "Pays entre le fleuve Niger et l'Aïr, chez les Iwellemmeden",
+        "Ader et Damergou, au sud du Niger"
       ],
-      "unificationsOrDivisions": "Les Touareg ne forment pas un Etat unifie mais sept grandes confederations (Drum Groups) chacune gouvernee par un amenokal (chef supreme) assiste d'un conseil d'anciens. Chaque confederation (kel) est composee de clans (tawshet) independants. La societe est stratifiee en nobles (imuhagh), vassaux (imghad), clercs (ineslemen), artisans (inadan), agriculteurs sedentaires (izeggaghan) et anciens esclaves (ikelan/bellah). La colonisation francaise a fragmente le territoire touareg entre cinq Etats independants apres 1960.",
-      "externalInfluences": "Contact avec l'islam sunnite malekite a partir du 7e siecle (influence Umayyade) ; approfondissement par l'erudit marocain Al-Maghili au 16e siecle. Controle des routes trans-sahariennes (or, sel, esclaves). Resistance a la colonisation francaise (expedition Flatters 1881 ; bataille de Tit 1902). Independances nationales (1960) qui divisent le territoire touareg entre Niger, Mali, Algerie, Libye et Burkina Faso. Rebellions au Mali (1963, 1990) et au Niger (1990, 2007). Conflit malien de 2012 (MNLA) et presence de groupes jihadistes.",
-      "majorHistoricalEvents": "Au 14e siecle, les Touareg Imasheghen fondent Tombouctou, ville carrefour du commerce saharien. En 1449, la maison touaregue fonde le Sultanat de l'Air (Sultanat d'Agadez). En 1881, la mission Flatters est aneantie par les Kel Ahaggar. En 1902, la bataille de Tit oppose les Kel Ahaggar aux troupes francaises. Des traites coloniaux sont imposes au Mali (1905) et au Niger (1917). Les rebellions touaregues post-coloniales eclatent en 1963 (Mali), 1990 (Mali et Niger), 2007 (Niger, MNJ pour les ressources d'uranium). En mars 2021, une attaque d'IS-GS a Tillia (Niger) tue 141 villageois touaregs."
+      "unificationsOrDivisions": "Les Touareg n'ont pas formé un seul État. Charles de Foucauld compte sept groupes principaux au début du XXe siècle, l'auteur malien Mariko en compte cinq en 1984, selon l'ethnologue Edmond Bernus. Au début du XXe siècle, les récits décrivent l'ensemble touareg comme une tente à cinq piliers : l'Ajjer, l'Aïr, l'Ahaggar, la Tademekkat et la Tagaraygarayt, selon Hélène Claudot-Hawad. Les groupes se sont aussi divisés : la confédération des Kel Ahaggar est partagée en trois dans la seconde moitié du XVIIIe siècle, et les Iwellemmeden se séparent en Kel Ataram et Kel Denneg. Après les indépendances des années 1960, le pays touareg est partagé entre l'Algérie, la Libye, le Niger, le Mali et le Burkina Faso.",
+      "externalInfluences": "Dans l'Aïr, le sultanat d'Agadez a des institutions proches de celles des États haoussa du sud, selon Edmond Bernus. En Ahaggar, le clan des Imenan, qui commandait jusqu'au XVIIe siècle, se disait d'origine religieuse et venu du sud du Maroc, selon Marceau Gast. Le coton teint à l'indigo des voiles vient de la région de Kano, au Nigeria, qui tient ce commerce au Sahara. La conquête française, au début du XXe siècle, change l'organisation politique : le pouvoir colonial découpe l'ensemble touareg en tribus indépendantes, selon Hélène Claudot-Hawad.",
+      "majorHistoricalEvents": "Le sultanat de l'Aïr existe depuis 1405 ; ses sultans font d'Agadez une ville de commerce et servent d'arbitres entre les groupes nomades. À partir de 1875, une guerre de plusieurs années oppose les Kel Ajjer et les Kel Ahaggar. Le 16 février 1881, la deuxième mission Flatters est massacrée à In Uhawen. En avril 1902, au combat de Tit, plus de cent guerriers touareg sont tués par une troupe menée par le lieutenant Cottenest. En 1905, Moussa ag Amastan devient amenokal de l'Ahaggar et il est reconnu par l'administration française. En 1917 et 1918, la révolte de Kaosen touche l'Aïr. Après le soulèvement armé touareg de 1990, les États attisent les oppositions entre groupes, selon Hélène Claudot-Hawad."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Chaque confederation touaregue est gouvernee par un amenokal (chef supreme), elu par les imegharan (anciens de clans nobles) et charge de lever les tributs en temps de guerre et de representer la confederation dans les negociations exterieures. Les affaires interclans sont regees par un conseil d'elders. L'autorite est exercee de facon consultative, avec une forte autonomie des clans (tawshet). La succession de l'amenokal suit une logique matrilineaire (le fils de la soeur herite du titre).",
-      "clanOrganization": "La societe touaregue est divisee en tawseten (clans, sing. tawshet), groupes de familles dirigees par un amghar (chef hereditaire par la matrilinee). Plusieurs tawseten forment une confederation (kel). La stratification sociale est rigide : les nobles (imuhagh/imajaghan) exercent le pouvoir politique et militaire ; les vassaux (imghad) s'occupent de l'elevage et paient un tribut (tiwse) ; les clercs (ineslemen/marabouts) sont des juges et imams ; les artisans (inadan) forment des castes endogames de forgerons, joailiers et travailleurs du cuir ; les anciens esclaves (ikelan/bellah) dependent encore dans certaines zones des familles nobles.",
+      "traditionalPoliticalSystem": "Une confédération touarègue, appelée eṭṭebel du nom du tambour de commandement, réunit des clans autour d'un chef suprême, l'amenokal. En Ahaggar, décrit par Marceau Gast en 1986, l'amenokal est choisi parmi les héritiers en ligne maternelle d'un clan noble et élu par les chefs de clan tributaires et les chefs de famille nobles. Il reçoit un tribut annuel, rend la justice et décide la guerre, mais il n'a aucun moyen de contrainte et peut être révoqué. Dans l'Aïr, un autre système, celui des iγollan, réunit des groupes égaux, sans tribut ni hiérarchie entre eux ; le sultan d'Agadez y sert d'arbitre, selon l'Encyclopédie berbère.",
+      "clanOrganization": "Le clan s'appelle tawsit. Chez les Iseqqemâren de l'Ahaggar, décrits par Hélène Claudot-Hawad en 1976, ses membres se disent descendants d'une même ancêtre femme. Le clan se divise en segments, chacun dirigé par un chef (amγar). En Ahaggar, la société distingue les suzerains (Ihaggaren), les tributaires (imγad ou Kel Ulli, « gens des chèvres »), les artisans (inaden), peu nombreux, et les esclaves, selon Marceau Gast.",
       "ageClassSystems": null,
-      "roleOfLineages": "La societe touaregue est matrilineaire pour la transmission du titre politique (amenokal, amghar) — vestige pre-islamique — mais patrilineaire pour le droit islamique (heritages, mariage, polygamie). Les femmes touaregues jouent un role central dans la transmission culturelle : la langue, l'ecriture tifinagh, la musique anzad et la poesie sont transmises par les femmes. Les lignages nobles maintiennent un droit exclusif sur les armes et les chameaux.",
-      "religiousAuthority": "Les ineslemen (marabouts touaregs) constituent une caste clerique endogame, chargee des fonctions de juge (qadi), d'imam et d'enseignant. L'influence soufi (tariqa) est presente mais l'islam touareg est generalement qualifie de laxiste en raison du syncretsime avec les croyances pre-islamiques (culte des ancetres, veneration des esprits feminins de la fertilite et de la terre). Al-Maghili, erudit marocain, joua un role dans la diffusion d'un islam plus orthodoxe au 16e siecle."
+      "roleOfLineages": "Le droit au commandement se transmet en ligne maternelle chez la plupart des Touareg : les suzerains justifient leur pouvoir par une ancêtre femme, comme Tin Hinan en Ahaggar, selon Marceau Gast. Le campement, lui, réunit des parents en ligne paternelle, selon Hélène Claudot-Hawad. Dans l'Aïr, la succession des sultans passe de la ligne maternelle à la ligne paternelle au XVIIe siècle.",
+      "religiousAuthority": "Chez les Iwellemmeden Kel Denneg, des tribus religieuses, les ineslemen, s'occupent de religion, de justice et d'enseignement, selon Nicolas, auteur de l'époque coloniale, en 1950, cité par Edmond Bernus. En 1807, les Iberkorayan, groupe religieux de l'Azawagh, prennent le pouvoir avec al-Jilani. Dans l'Aïr, le sultan d'Agadez est un chef religieux et un arbitre plus qu'un chef de guerre."
     },
     "languages": {
-      "mainLanguage": "Tamasheq / Tamahaq / Tamajeq (langue berbere saharienne)",
-      "isoCodes": ["tmh", "taq", "ttq"],
+      "mainLanguage": "Touareg : tamasheq, tamajaq, tamahaq (tmh)",
+      "isoCodes": ["tmh", "taq", "ttq", "thz", "thv"],
       "dialects": [
-        "Tamahaq (Tahaggart) — parle par les Kel Ahaggar et Kel Ajjer (Algerie, Libye occidentale, nord du Niger) ; environ 77 000 locuteurs ; ISO tmh",
-        "Tamasheq — parle par les Kel Adrar (Adrar des Ifoghas, Mali) ; environ 500 000 locuteurs ; ISO taq",
-        "Tamajeq (Tayart) — parle par les Kel Ayr (Massif de l'Air, Niger) ; environ 250 000 locuteurs",
-        "Tawellemmet (Tawallammat) — parle par les Iwellemmeden (Mali et Niger) ; environ 800 000 locuteurs ; ISO ttq"
+        "Tamasheq (taq), au Mali et au Burkina Faso",
+        "Tamajaq tawallammat (ttq), chez les Iwellemmeden, au Mali, au Niger, au Burkina Faso et au Nigeria",
+        "Tamajeq tayart (thz), dans l'Aïr, au Niger",
+        "Tamahaq tahaggart (thv), en Ahaggar et dans l'Ajjer, en Algérie et en Libye, et aussi au Mali, au Niger et au Nigeria"
       ],
-      "vehicularRole": "Les langues touaregues forment un ensemble de varietes mutuellement comprehensibles, regroupees sous le macrocode ISO tmh. Elles s'ecrivent en tifinagh (ecriture libyco-berbere ancestrale), mais aussi en arabe et en latin selon les pays. Le tifinagh est traditionellement transmis par les femmes touaregues. Le tamasheq est langue nationale au Mali et au Niger. L'arabe est utilise comme langue vehiculaire inter-communautaire. Le total de locuteurs est estime entre 1,2 et 2 millions selon les sources."
+      "vehicularRole": "Le touareg est classé dans les langues berbères. Le catalogue Glottolog le présente comme une famille de quatre langues. Le nom de la langue change selon les régions : tamahaq en Ahaggar, tamajaq dans l'Aïr et chez les Iwellemmeden, tamasheq dans l'Adrar des Ifoghas. Au Mali, le recensement de 2022 compte 737 383 personnes qui ont le tamasheq pour langue maternelle, soit 3,85 % de la population ; c'est la langue de 82,93 % des habitants de Kidal et de 70,41 % des nomades du pays. Au Mali, le tamasheq est utilisé dans l'enseignement depuis la rentrée d'octobre 1982, selon l'Institut national de la statistique du Mali."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q58843",
+      "glottocode": "tuar1240",
+      "iso639_3": "tmh"
     },
     "culture": {
-      "majorRites": "Le port du voile (tagelmust) par les hommes est le rite de passage majeur vers l'age adulte : a la puberté, le jeune homme touareg commence a se voiler le visage, geste qui le protege des mauvais esprits et du sable. Ce voile n'est jamais retire en public et est abaisse en presence de beaux-peres et d'etrangers respectes. La construction de la tente de mariage par la femme (bien de la femme, metaphore de l'union) est un rite matrimonial essentiel. Les ceremonies pre-islamiques incluent le culte des esprits ancestraux feminins (fertilite, terre) et la veneration des morts. L'imzad (violon monocorde joue par les femmes) accompagne les veillees rituelles nocturnes. L'hospitalite (tafaghost) est une obligation sociale et culturelle fondamentale.",
-      "symbols": "Le tagelmust (voile indigo) est le symbole identitaire le plus immediatement reconnaissable des Touareg hommes. La Croix d'Agadez (tanaghilt ou zakkat), pendentif en argent grave de motifs geometriques, est le bijou symbolique des Kel Ayr et est devenu un embleme touareg international. L'ecriture tifinagh (alphabet libyco-berbere ancestral) est un symbole d'identite culturelle et de memoire collective. La tente (ahaket) en cuir de chevre et bois est le symbole de la vie nomade. La couleur indigo teintant peau et vetements a donne le surnom Blue People.",
-      "artsAndMusic": "Les Touareg ont une riche tradition de bijouterie : les inadan (artisans forgerons-joailiers) fabriquent au procede de la cire perdue et par martelage des colliers (takaza), boucles d'oreilles (tizabaten), bracelets (Eweki, Tcherow) et amulettes (grigri protecteurs). L'art culinaire nomade comprend le pain sous la cendre (tagella), la bouillie de mil, les produits laitiers de chamelle et de chevre, et le the a la menthe (atay). La musique traditionnelle comprend l'anzad (violon monocorde joue par les femmes lors de veillees nocturnes asak), le tende (tambour en peau de chevre joue lors des courses de chameaux et ceremonies), les poemes chantes (tisiway) et le cercle des hommes a dos de chameau autour des femmes au tende (tasikisikit). La musique ishumar (teshumara) est un genre moderne ne des rebellions touaregues, melangeant guitares electriques et musique traditionnelle, represente par des artistes comme Tinariwen, Bombino, Mdou Moctar et Les Filles de Illighadad.",
-      "spiritualities": "Les Touareg sont majoritairement musulmans sunnites malekites, mais leur pratique de l'islam est qualifiee de syncrethique : ils conservent des croyances et pratiques pre-islamiques telles que la veneration des esprits ancestraux feminins (lies a la fertilite, a la terre et a la menstruation), le culte des morts, une cosmologie integrant des esprits de la nature, et des pratiques de divination. L'astronomie traditionnelle (Venus : Azzag Willi, Pleiades : Shet Ahad) guide les cycles pastoraux. Les ineslemen (marabouts) jouent le role de guides spirituels. Les tombes megalithiques pre-islamiques (jedar avec inscriptions tifinagh) temoignent d'une spiritualite ancestrale berbere."
+      "majorRites": "Le voile de tête est porté par les Touareg et par d'autres peuples du Sahara, selon C. El Briga ; le nom Kel Tegulmust, « les gens du voile », désigne les Touareg. Quand un esclave a acquis la langue et la culture touarègues, il doit être libéré : lors de la cérémonie, on lui offre un turban, ou un voile de tête s'il s'agit d'une femme, selon Hélène Claudot-Hawad et Mohamed Hawad. Aux baptêmes et aux mariages, les hommes font sur leurs chameaux une ronde autour de la femme qui joue du tambour tendey, selon l'ethnomusicologue François Borel.",
+      "symbols": "Le voile de tête (tagoûlmoust) est une bande de coton de 1,50 m à 4 m qui entoure la tête et cache la bouche. L'étoffe la plus recherchée est teinte à l'indigo et laisse sa trace sur la peau, selon C. El Briga. L'écriture tifinagh donne aussi un nom aux Touareg : Kel Tefinagh, « les gens des tifinagh », selon Salem Chaker. Le tambour de commandement (eṭṭebel) est le signe du pouvoir de l'amenokal.",
+      "artsAndMusic": "Chez les Touareg nomades, décrits par François Borel en 2010, les femmes ont le monopole de la musique instrumentale. Les femmes nobles jouent de l'imzad, une vièle à une corde de crin de cheval ; les femmes forgeronnes et affranchies jouent du tendey, un tambour fait d'un mortier couvert d'une peau de chèvre. Les hommes chantent des poèmes, seuls ou à deux, parfois accompagnés de l'imzad. Au Mali, des forgerons musiciens jouent du luth tahardant. Depuis les années 1980, les jeunes partis travailler en Libye ou en Algérie, appelés ishumar, d'après le français « chômeur », chantent à la guitare ; le groupe malien Tinariwen leur a servi de modèle.",
+      "spiritualities": "On joue de l'imzad ou du tendey pour soigner une personne malade, en chassant les génies de son corps, selon François Borel. Les génies sont appelés kel asuf, « les gens des solitudes », selon Salem Chaker. Le mot amajagh peut aussi désigner celui qui ne se soumet pas à une religion étrangère : les nobles touareg ont souvent résisté à l'islam, tandis que des tribus plus faibles l'adoptaient plus facilement, selon Hélène Claudot-Hawad et Mohamed Hawad. Des tribus religieuses, les ineslemen, s'occupent de religion et de justice chez les Iwellemmeden."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Les Touareg controlaient les grandes routes commerciales trans-sahariennes (or, sel, esclaves) depuis le Moyen Age. Vers le 12e siecle, les Imasheghen touaregs fondent et protegent Tombouctou (Mali), centre nevralgique du commerce saharien. En 1449, la maison touaregue fonde le Sultanat de l'Air (Sultanat d'Agadez, Niger), qui perdurera plusieurs siecles. L'amenokal de chaque confederation exercait une souverainete pleine sur son territoire et prelevait des tributs sur les caravanes traversant son territoire.",
-      "relationsWithNeighbors": "Les Touareg entretinrent des relations complexes avec les peuples voisins : razzias (rezzous) contre les nomades Chaamba, Toubou, Haoussa et Peul avant la colonisation ; commerce et tributs avec les sedentaires du Sahel ; alliances et conflits avec les sultanats haoussa, les empires du Mali et du Songhai. La relation avec les Bella (Ikelan, anciens esclaves) reste une question sociale sensible dans les societes touaregues contemporaines.",
-      "conflictsOrAlliances": "Les Touareg resisterent a la colonisation francaise : aneantissement de la mission Flatters (1881), bataille de Tit contre les Kel Ahaggar (1902), traites imposes au Mali (1905) et au Niger (1917). Apres les independances, de multiples rebellions eclatent : 1963 (Mali), 1990-1995 (Mali et Niger, menees par des leaders comme Mano Dayak), 2007 (Niger, MNJ), 2012 (Mali, MNLA). La fragmentation du territoire touareg entre cinq Etats est la source de conflits politiques recurrents.",
-      "diaspora": "Les migrations touaregues dues aux secheresses sahariennes des annees 1970-1980 et aux rebellions ont cree des diasporas dans les villes sahariennes (Agadez, Kidal, Gao, Tamanrasset) et dans les capitales africaines. Des artistes touaregs (Tinariwen, Bombino) ont constitue une diaspora culturelle en Europe et aux Etats-Unis depuis les annees 2000. De petites communautes touaregues existent en Libye, au Ghana, au Tchad et au nord du Soudan (enclave Kinnin, Darfour)."
+      "kingdomsOrChiefdoms": "Chaque confédération touarègue a son chef suprême, l'amenokal, qui reçoit un tribut et des droits de passage sur les caravanes qui traversent son territoire, selon Marceau Gast. En Ahaggar, douze amenokal se succèdent du milieu du XVIIIe siècle à 1975. Dans l'Aïr, le sultanat d'Agadez, attesté depuis 1405, contrôle les routes des caravanes et fait d'Agadez une ville de commerce.",
+      "relationsWithNeighbors": "Au XIXe siècle, les Kel Owey de l'Aïr subissent les razzias des Toubou, que les Touareg appellent Ikaradan. Les Iseqqemâren de l'Ahaggar s'allient plus volontiers par mariage avec des clans arabes, comme les Chaamba, qu'avec les tributaires, selon Hélène Claudot-Hawad. Les sultans d'Agadez nouent des relations de plus en plus suivies avec le pays haoussa, au sud, à partir du XVIIe siècle.",
+      "conflictsOrAlliances": "En Ahaggar, la guerre entre Kel Ajjer et Kel Ahaggar, commencée en 1875, dure plusieurs années. Contre l'avancée française, les Kel Ahaggar massacrent la mission Flatters en 1881, puis sont battus au combat de Tit en 1902. En 1917 et 1918, la révolte de Kaosen touche l'Aïr ; en 1917, le général Laperrine impose ses conditions aux Taytoq vaincus. En 1990 éclate un soulèvement armé touareg ; au Niger, dès 1989, des ishumar s'organisent en groupes armés, selon François Borel.",
+      "diaspora": "Depuis les sécheresses et les famines, des jeunes Touareg du Niger et du Mali, les ishumar, sont partis chercher du travail en Libye ou en Algérie, selon François Borel. Depuis 1917, un millier environ de Kel Ahaggar vivent dans le Tamesna, au nord du Niger, sans avoir voulu en prendre la nationalité, selon Marceau Gast."
     },
     "demography": {
       "totalPopulation": 3000000,
       "referenceYear": 2025,
-      "source": "Wikipedia EN Tuareg people (plus de 2,5 millions combines) ; Ethnologue macrolanguage tmh (environ 1,2 million de locuteurs Ethnologue, estimation conservative) ; Joshua Project et estimations CIA World Factbook 2024. Les chiffres varient selon les sources : Niger seul compte environ 2 millions de Touaregs (11% de la population). Estimation totale 2025 : 3 millions incluant Mali, Niger, Algerie, Libye et Burkina Faso.",
+      "source": "Wikipédia en anglais, article Tuareg people (plus de 2,5 millions au total) ; Ethnologue, macrolangue tmh (environ 1,2 million de locuteurs, estimation prudente) ; Joshua Project et estimations du CIA World Factbook 2024. Les chiffres varient selon les sources : le Niger compterait à lui seul environ 2 millions de Touaregs (11 % de la population). Estimation totale pour 2025 : 3 millions, au Mali, au Niger, en Algérie, en Libye et au Burkina Faso. Au Mali, le recensement de 2022 compte 829 366 Tamasheq ou Touareg (Institut national de la statistique du Mali, 2025).",
       "distributionByCountry": [
         {
-          "country": "NER",
-          "population": 2000000,
-          "note": "Plus grande population touaregue, environ 11% de la population nationale, majoritaires dans la region d'Agadez et l'Azawagh"
-        },
-        {
           "country": "MLI",
-          "population": 500000,
-          "note": "Principalement dans la region de Kidal (Adrar des Ifoghas) et Tombouctou ; environ 3% de la population nationale"
-        },
-        {
-          "country": "DZA",
-          "population": 300000,
-          "note": "Monts Hoggar et Ajjer, wilaya de Tamanrasset et Illizi"
-        },
-        {
-          "country": "LBY",
-          "population": 150000,
-          "note": "Fezzan et region d'Ajjer (Ghat), migrations post-2011"
-        },
-        {
-          "country": "BFA",
-          "population": 50000,
-          "note": "Region du Sahel (Oudalan), frontieres avec le Niger et le Mali"
+          "population": 829366,
+          "percentage": 3.91,
+          "note": "Recensement de 2022. Majoritaires dans les régions de Kidal (86,18 %) et de Ménaka (72,67 %) ; 43,38 % de la population de Tombouctou."
         }
       ]
     },
@@ -154,27 +133,27 @@
         "url": "https://journals.openedition.org/encyclopedieberbere/2465",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Article signe d'une encyclopedie scientifique publiee. Donne les formes touaregues du nom par region et precise que le sens d'homme libre ou noble est un usage local secondaire."
+        "notes": "Article signé d'une encyclopédie scientifique publiée. Donne les formes touarègues du nom par région et précise que le sens d'homme libre ou noble est un usage local secondaire."
       },
       {
         "title": "Trousset, Pol. Fezzan. Encyclopedie berbere, XVIII, 1997, p. 2777-2817",
         "url": "https://journals.openedition.org/encyclopedieberbere/2083",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Article signe d'une encyclopedie scientifique publiee. Expose l'hypothese qui rattache le mot Touareg a Targa, ancien nom du Fezzan."
+        "notes": "Article signé d'une encyclopédie scientifique publiée. Expose l'hypothèse qui rattache le mot Touareg à Targa, ancien nom du Fezzan."
       },
       {
         "title": "Academie francaise. Dictionnaire, 9e edition, article touareg",
         "url": "https://www.dictionnaire-academie.fr/article/A9T1561",
         "tier": "referenced",
         "source_kind": "linguistic_reference",
-        "notes": "Dictionnaire publie par une institution identifiable. Etablit l'emprunt a l'arabe tawariq."
+        "notes": "Dictionnaire publié par une institution identifiable. Établit l'emprunt à l'arabe tawariq."
       },
       {
         "title": "Chaker, Salem. Touareg. Centre de recherche berbere",
         "url": "https://centrederechercheberbere.fr/touareg.html",
         "tier": "referenced",
-        "notes": "Notice signee par un linguiste berberisant, publiee par un centre de recherche universitaire. Glose Kel Tamasheq comme les gens de la langue touaregue."
+        "notes": "Notice signée par un linguiste berbérisant, publiée par un centre de recherche universitaire. Glose Kel Tamasheq comme les gens de la langue touarègue."
       },
       {
         "title": "Etymology of the term Tuareg",
@@ -220,8 +199,136 @@
         "tier": "referenced",
         "source_kind": "academic",
         "notes": "Techniques & Culture, 56, p. 78-97, lu sur OpenEdition."
+      },
+      {
+        "title": "Glottolog — famille touarègue (tuar1240) et ses quatre langues",
+        "url": "https://glottolog.org/resource/languoid/id/tuar1240",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max Planck d'anthropologie évolutionniste. Lu le 3 novembre 2026. La fiche de la famille touarègue (code ISO 639-3 tmh) la range parmi les langues berbères et lui donne quatre langues : le tamasheq (taq), parlé au Mali et au Burkina Faso ; le tamajaq tawallammat (ttq), au Mali, au Niger, au Burkina Faso et au Nigeria ; le tamajeq tayart (thz), au Niger ; le tamahaq tahaggart (thv), en Algérie, en Libye, au Mali, au Niger et au Nigeria. Appui pour les langues et les codes."
+      },
+      {
+        "title": "Amāhaɣ, Encyclopédie berbère, 4",
+        "author": "H. Claudot-Hawad et M. Hawad",
+        "year": 1986,
+        "url": "https://journals.openedition.org/encyclopedieberbere/2457",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Article de l'Encyclopédie berbère (Édisud, 1986, vol. 4, p. 554-555), lu sur OpenEdition. Lu le 3 novembre 2026. Les auteurs donnent les formes du nom selon les parlers : amāhaγ (pluriel imūhaγ) en tahaggart, amājaγ (pluriel imujaγen) en tayrt et en tawellemmet, amāsaγ (pluriel imūšaγ) en tadraq. Le mot désigne d'abord le noble dans la hiérarchie touarègue et, au sens large, toute personne de culture touarègue qui en applique les valeurs. Un esclave qui a acquis la langue et la culture touarègues devient amājaγ et doit être libéré : on lui offre alors un turban, ou un voile de tête pour une femme. Appui pour les appellations, l'organisation sociale et les rites."
+      },
+      {
+        "title": "Aïr, Encyclopédie berbère, 3",
+        "author": "E. Bernus, D. Grebenart, M. Hawad et H. Claudot-Hawad",
+        "year": 1986,
+        "url": "https://journals.openedition.org/encyclopedieberbere/2418",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Article de l'Encyclopédie berbère (Édisud, 1986, vol. 3, p. 342-363), lu sur OpenEdition. Lu le 3 novembre 2026. Paragraphes 40 à 59 lus : traditions de migration des Isandalan (XIe siècle) et des Kel Geres (XIIe siècle) venus de Cyrénaïque et d'Awjila, et des Kel Owey (fin du XIVe siècle) ; sultanat de l'Aïr, attesté de 1405 à nos jours, et passage de la succession maternelle à la succession paternelle au XVIIe siècle ; système des iγollan, sans hiérarchie ni tribut, propre à l'Aïr ; révolte de Kaosen en 1917-1918 ; groupes actuels de l'Aïr (Kel Owey, Kel Ferwan, Kel Fadey, Igdalan). Appui pour l'histoire, l'organisation politique et les groupes."
+      },
+      {
+        "title": "Ahaggar, Encyclopédie berbère, 3",
+        "author": "P. Rognon, G. Camps, M. Gast et S. Chaker",
+        "year": 1986,
+        "url": "https://journals.openedition.org/encyclopedieberbere/820",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Article de l'Encyclopédie berbère (Édisud, 1986, vol. 3, p. 269-305), lu sur OpenEdition. Lu le 3 novembre 2026. Partie « Histoire des Kel-Ahaggar », signée par l'ethnologue Marceau Gast, lue en entier : l'appellation « Touareg » viendrait peut-être du Fezzan, appelé aussi Tarǧa, hypothèse de Benhazera (1908) reprise par Charles de Foucauld (§ 28) ; les Kel-Ahaggar se disent amāhaγ/imūhaγ et les Touaregs du sud amājeγ/imājiγen, amāšeγ/imūšaγ (§ 28) ; légende de Tin Hinan, venue du Tafilalet, et tombeau d'Abalessa daté de 470 après J.-C. (§ 31-32 et 98) ; massacre de la mission Flatters le 16 février 1881 (§ 53) ; combat de Tit en avril 1902 (§ 56) ; investiture de Moussa ag Amastan en 1905 (§ 60) ; suzerains, tributaires et artisans (§ 71-72). Appui pour les appellations, les origines, l'histoire et l'organisation."
+      },
+      {
+        "title": "Amenūkal, Amenoūkal, Encyclopédie berbère, 4",
+        "author": "M. Gast et S. Chaker",
+        "year": 1986,
+        "url": "https://journals.openedition.org/encyclopedieberbere/2471",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Article de l'Encyclopédie berbère (Édisud, 1986, vol. 4, p. 581-589), lu sur OpenEdition. Lu le 3 novembre 2026. Marceau Gast décrit l'amenokal, chef suprême d'une confédération, héritier en ligne maternelle du tambour de commandement (eṭṭebel) ; en Ahaggar, il est élu par les chefs de clan tributaires et les chefs de famille nobles, sans moyen de contrainte, et révocable ; il reçoit un tribut annuel, rend la justice et décide la guerre (§ 3, 13-21). Il donne la liste des douze amenokal de l'Ahaggar, du milieu du XVIIIe siècle à 1975 (§ 24). Salem Chaker discute ensuite l'étymologie du titre. Appui pour l'organisation politique."
+      },
+      {
+        "title": "Iseqqemâren, Encyclopédie berbère, 25",
+        "author": "H. Claudot-Hawad",
+        "year": 2003,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1450",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Article de l'Encyclopédie berbère (Édisud, 2003, vol. 25, p. 3799-3802), lu sur OpenEdition. Lu le 3 novembre 2026. Données recueillies en 1976 chez les Iseqqemâren de l'Ahaggar : la tawsit (clan) réunit les descendants d'une ancêtre femme ; elle se divise en segments, chacun dirigé par un amγar choisi d'ordinaire en ligne maternelle ; le campement (amezzay) réunit des parents en ligne paternelle ; la confédération des Kel-Ahaggar est partagée en trois dans la seconde moitié du XVIIIe siècle. Appui pour l'organisation des clans et le rôle des lignages."
+      },
+      {
+        "title": "Identité, Encyclopédie berbère, 24",
+        "author": "S. Chaker et H. Claudot-Hawad",
+        "year": 2001,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1523",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Article de l'Encyclopédie berbère (Édisud, 2001, vol. 24, p. 3623-3632), lu sur OpenEdition. Lu le 3 novembre 2026. Partie signée par Hélène Claudot-Hawad sur les Touaregs (§ 17-32) : le partage du pays touareg entre l'Algérie, la Libye, le Niger, le Mali et la Haute-Volta date des indépendances des années 1960 ; au début du XXe siècle, l'ensemble touareg est décrit dans les récits comme une tente à cinq piliers, l'Ajjer, l'Aïr, l'Ahaggar, la Tademekkat et la Tagaraygarayt ; les États ont promu le nom Kel tamashaq comme seul nom collectif et combattu les noms Imajaghen, Imuhagh et Imushagh (§ 28-29). Appui pour les appellations, les divisions et l'histoire récente."
+      },
+      {
+        "title": "Kel (X), Encyclopédie berbère, 27",
+        "author": "S. Chaker",
+        "year": 2005,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1333",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Article de l'Encyclopédie berbère (Édisud, 2005, vol. 27, p. 4146-4147), lu sur OpenEdition. Lu le 3 novembre 2026. Le mot touareg kel veut dire « les gens de ». L'auteur cite kel temašeq, « les gens de la tamasheq », c'est-à-dire ceux qui parlent touareg, kel tefinaγ, « les gens des tifinagh », et kel tegulmust, « les gens du voile », pour désigner les Touaregs. Appui pour les appellations."
+      },
+      {
+        "title": "Iwellemmeden, Encyclopédie berbère, 25",
+        "author": "E. Bernus",
+        "year": 2003,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1457",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Article de l'Encyclopédie berbère (Édisud, 2003, vol. 25, p. 3817-3822), lu sur OpenEdition. Lu le 3 novembre 2026. L'auteur cite Charles de Foucauld, qui compte sept groupes principaux chez les Touaregs, et l'auteur malien Mariko (1984), qui en compte cinq. Il présente les traditions sur l'origine des Iwellemmeden, leur séparation en deux confédérations, les Kel Ataram à l'ouest et les Kel Denneg à l'est, et le rôle des tribus religieuses (ineslemen), qui s'occupent de religion, de justice et d'enseignement selon Nicolas (1950). Appui pour les groupes, les divisions et l'autorité religieuse."
+      },
+      {
+        "title": "Imzad, Encyclopédie berbère, 24",
+        "author": "P. Augier",
+        "year": 2001,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1565",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Article de l'Encyclopédie berbère (Édisud, 2001, vol. 24, p. 3709-3710), lu sur OpenEdition. Lu le 3 novembre 2026. L'imzad est une vièle à une corde de crin de cheval, sur une demi-calebasse couverte de peau. Chez les Touaregs, en jouer est réservé aux femmes, et plus précisément aux femmes nobles. Appui pour les arts et la musique."
+      },
+      {
+        "title": "Indigo, Encyclopédie berbère, 24",
+        "author": "C. El Briga",
+        "year": 2001,
+        "url": "https://journals.openedition.org/encyclopedieberbere/1574",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Article de l'Encyclopédie berbère (Édisud, 2001, vol. 24, p. 3729-3731), lu sur OpenEdition. Lu le 3 novembre 2026. Le voile de tête (tagoûlmoust) est une bande de coton de 1,50 m à 4 m que porte le Touareg pour entourer sa tête et cacher sa bouche ; l'étoffe la plus recherchée est teinte à l'indigo et laisse sa trace sur la peau. Ces cotonnades viennent de la région de Kano, au Nigeria. Appui pour les symboles."
+      },
+      {
+        "title": "Musiques touarègues, Encyclopédie berbère, 32",
+        "author": "F. Borel",
+        "year": 2010,
+        "url": "https://journals.openedition.org/encyclopedieberbere/664",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "notes": "Article de l'Encyclopédie berbère (Édisud, 2010, vol. 32, p. 5130-5139), lu sur OpenEdition. Lu le 3 novembre 2026. Chez les Touaregs nomades, les femmes ont le monopole de la musique instrumentale : la vièle imẓad pour les femmes nobles, le tambour sur mortier tendey pour les femmes forgeronnes et affranchies. On joue pour soigner un malade, en chassant les génies de son corps, et lors des baptêmes et des mariages, avec la ronde des chameaux autour de la joueuse de tambour. Le mot ishumar vient du français « chômeur » et désigne des jeunes partis travailler en Libye ou en Algérie ; leurs chants, à la guitare, ont pour modèle le groupe malien Tinariwen. Appui pour les rites, la musique et les spiritualités."
+      },
+      {
+        "title": "Dictionnaire touareg-français, dialecte de l'Ahaggar, tome II",
+        "author": "Charles de Foucauld",
+        "year": 1951,
+        "url": "https://archive.org/details/foucauld-dictionnaire-touareg-2",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Dictionnaire publié à Paris par l'Imprimerie nationale en 1951-1952, en fac-similé du manuscrit. L'auteur, prêtre et ancien officier de l'armée française, l'a écrit en Ahaggar, où il vécut de 1905 à sa mort en 1916, sous la colonisation française. Lu sur la numérisation d'Internet Archive, p. 533-534, article « ahaggar ». Lu le 3 novembre 2026. L'auteur compte sept groupes touaregs principaux (Kel-Ahaggar, Kel-Ajjer, Taïtok, Kel-Aïr, Kel-Adrar, Iullemmeden, Kel-Geres). Il écrit que les Kel-Ahaggar appellent Imôchar ceux que les Arabes appellent Touareg, qu'ils appellent Tărga le pays que les Arabes nomment Fezzan, et que le mot arabe Touareg vient « certainement » de ce nom, en renvoyant à Benhazera. Il note aussi que, pour les Arabes du Tidikelt, touareg veut dire tantôt « Touareg noble », tantôt n'importe quel Touareg. Appui pour les appellations et les groupes."
+      },
+      {
+        "title": "RGPH5 — Rapport d'analyse des données, thème : caractéristiques culturelles de la population",
+        "author": "Institut national de la statistique du Mali (INSTAT), Bureau central du recensement",
+        "year": 2025,
+        "url": "https://instat-mali.org/laravel-filemanager/files/shares/rgph/rapport-caracteristiques-culturelles-population-rgph5_rpgh.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport publié en janvier 2025 par l'Institut national de la statistique du Mali, sur le cinquième recensement général de la population et de l'habitat, réalisé en 2022. Lu le 3 novembre 2026. Tableau 2.05 (p. 18) : 829 366 personnes se disent Tamasheq/Touareg, soit 3,91 % de la population du Mali. Les Tamasheq sont majoritaires dans les régions de Kidal (86,18 %) et de Ménaka (72,67 %), et forment 43,38 % de la population de Tombouctou ; parmi les nomades du pays, 69 % sont Touaregs (tableau 2.08). Tableau 3.01 (p. 25) : 737 383 personnes ont le tamasheq pour langue maternelle (3,85 %), et cette langue est celle de 82,93 % des habitants de Kidal. Appui pour la démographie et les langues."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Touareg est le nom, venu de l'arabe, d'un peuple berbère du Sahara et du Sahel. Ils se nomment eux-mêmes Imuhagh, Imajeghen ou Imushagh selon les régions.",
+      "followUp": "Pourquoi les Touareg refusaient-ils ce nom au XIXe siècle ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Touareg désigne un peuple berbère du Sahara central et du Sahel, réparti entre le Mali, le Niger, l'Algérie, la Libye et le Burkina Faso, qui se nomme lui-même Imuhagh, Imajeghen ou Imushagh selon les régions, et Kel Tamasheq, « ceux de la langue tamasheq ». D'autres noms existent : Touareg, venu de l'arabe, et Kandin, donné par les Kanouri. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
@@ -366,6 +473,56 @@
                 "notes": "Encyclopédie berbère, IV, p. 562-568, lue sur OpenEdition."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1916,
+              "label": "Écrit entre 1905 et 1916, publié en 1951"
+            },
+            "era": "colonial",
+            "statement": "Le nom Imuhagh est écrit « Imôchar » par Charles de Foucauld : c'est ainsi que les Kel Ahaggar appellent tous ceux que les Arabes appellent Touareg.",
+            "formAsWritten": "Imôchar",
+            "actors": [
+              {
+                "name": "Charles de Foucauld",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Dictionnaire touareg-français, dialecte de l'Ahaggar, tome II",
+                "author": "Charles de Foucauld",
+                "year": 1951,
+                "url": "https://archive.org/details/foucauld-dictionnaire-touareg-2",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 534, article « ahaggar »",
+                "notes": "Dictionnaire publié à Paris par l'Imprimerie nationale en 1951-1952, en fac-similé du manuscrit. L'auteur, prêtre et ancien officier de l'armée française, l'a écrit en Ahaggar, où il vécut de 1905 à sa mort en 1916, sous la colonisation française. Lu sur la numérisation d'Internet Archive, p. 533-534, article « ahaggar ». Lu le 3 novembre 2026. L'auteur compte sept groupes touaregs principaux (Kel-Ahaggar, Kel-Ajjer, Taïtok, Kel-Aïr, Kel-Adrar, Iullemmeden, Kel-Geres). Il écrit que les Kel-Ahaggar appellent Imôchar ceux que les Arabes appellent Touareg, qu'ils appellent Tărga le pays que les Arabes nomment Fezzan, et que le mot arabe Touareg vient « certainement » de ce nom, en renvoyant à Benhazera. Il note aussi que, pour les Arabes du Tidikelt, touareg veut dire tantôt « Touareg noble », tantôt n'importe quel Touareg. Appui pour les appellations et les groupes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "Proposée en 1986"
+            },
+            "era": "modern",
+            "statement": "Le nom Imuhagh désignerait d'abord le noble dans la société touarègue, puis, au sens large, toute personne de culture touarègue qui en applique les valeurs, selon Hélène Claudot-Hawad et Mohamed Hawad.",
+            "hypothesisGroup": "sens du nom Imuhagh",
+            "sources": [
+              {
+                "title": "Amāhaɣ, Encyclopédie berbère, 4",
+                "author": "H. Claudot-Hawad et M. Hawad",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2457",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "§ 1-5",
+                "notes": "Article de l'Encyclopédie berbère (Édisud, 1986, vol. 4, p. 554-555), lu sur OpenEdition. Lu le 3 novembre 2026. Les auteurs donnent les formes du nom selon les parlers : amāhaγ (pluriel imūhaγ) en tahaggart, amājaγ (pluriel imujaγen) en tayrt et en tawellemmet, amāsaγ (pluriel imūšaγ) en tadraq. Le mot désigne d'abord le noble dans la hiérarchie touarègue et, au sens large, toute personne de culture touarègue qui en applique les valeurs. Un esclave qui a acquis la langue et la culture touarègues devient amājaγ et doit être libéré : on lui offre alors un turban, ou un voile de tête pour une femme. Appui pour les appellations, l'organisation sociale et les rites."
+              }
+            ]
           }
         ]
       },
@@ -439,7 +596,7 @@
               "label": "1967"
             },
             "era": "modern",
-            "statement": "Le nom Kel Tamasheq veut dire « ceux qui parlent la langue tamasheq ». Le géographe Edmond Bernus l'écrit en 1967 : dans le Sahel du Mali et du Niger, les Touareg se disent Kel Tamasheq. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; on ne sait pas depuis quand il est employé.",
+            "statement": "Le nom Kel Tamasheq veut dire « ceux qui parlent la langue tamasheq ». Le géographe Edmond Bernus l'écrit en 1967 : dans le Sahel du Mali et du Niger, les Touareg se disent Kel Tamasheq. C'est la plus ancienne trace écrite de ce nom que le projet connaît.",
             "formAsWritten": "Kel Tamasheq",
             "birth": true,
             "sources": [
@@ -452,6 +609,50 @@
                 "source_kind": "academic",
                 "page": "p. 31",
                 "notes": "Cahiers ORSTOM, série Sciences humaines, IV (1), p. 31-52, lu sur la base Horizon de l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2001,
+              "to": 2001,
+              "label": "Analyse publiée en 2001"
+            },
+            "era": "modern",
+            "statement": "Le nom Kel Tamasheq aurait été promu par les États comme seul nom collectif des Touareg, tandis que les noms Imajeghen, Imuhagh et Imushagh étaient combattus, selon Hélène Claudot-Hawad.",
+            "hypothesisGroup": "usage du nom Kel Tamasheq",
+            "sources": [
+              {
+                "title": "Identité, Encyclopédie berbère, 24",
+                "author": "S. Chaker et H. Claudot-Hawad",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1523",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "§ 29",
+                "notes": "Article de l'Encyclopédie berbère (Édisud, 2001, vol. 24, p. 3623-3632), lu sur OpenEdition. Lu le 3 novembre 2026. Partie signée par Hélène Claudot-Hawad sur les Touaregs (§ 17-32) : le partage du pays touareg entre l'Algérie, la Libye, le Niger, le Mali et la Haute-Volta date des indépendances des années 1960 ; au début du XXe siècle, l'ensemble touareg est décrit dans les récits comme une tente à cinq piliers, l'Ajjer, l'Aïr, l'Ahaggar, la Tademekkat et la Tagaraygarayt ; les États ont promu le nom Kel tamashaq comme seul nom collectif et combattu les noms Imajaghen, Imuhagh et Imushagh (§ 28-29). Appui pour les appellations, les divisions et l'histoire récente."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Expliqué en 2005"
+            },
+            "era": "modern",
+            "aspect": "meaning",
+            "statement": "Le nom Kel Tamasheq est formé avec kel, « les gens de », et veut dire « les gens de la tamasheq », c'est-à-dire ceux qui parlent touareg, selon Salem Chaker. Le même mot forme d'autres noms des Touareg, comme Kel Tegulmust, « les gens du voile ».",
+            "sources": [
+              {
+                "title": "Kel (X), Encyclopédie berbère, 27",
+                "author": "S. Chaker",
+                "year": 2005,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1333",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "§ 1-2",
+                "notes": "Article de l'Encyclopédie berbère (Édisud, 2005, vol. 27, p. 4146-4147), lu sur OpenEdition. Lu le 3 novembre 2026. Le mot touareg kel veut dire « les gens de ». L'auteur cite kel temašeq, « les gens de la tamasheq », c'est-à-dire ceux qui parlent touareg, kel tefinaγ, « les gens des tifinagh », et kel tegulmust, « les gens du voile », pour désigner les Touaregs. Appui pour les appellations."
               }
             ]
           }
@@ -792,6 +993,59 @@
                 "tier": "unverified",
                 "source_kind": "academic",
                 "notes": "Site personnel d'une anthropologue, sans relecture éditoriale. S'appuie sur Jacques Hureiki, Essai sur les origines des Touaregs, 2003, p. 65-66, non relu par le projet."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1916,
+              "label": "Écrit entre 1905 et 1916, publié en 1951"
+            },
+            "era": "colonial",
+            "statement": "Le nom Touareg a deux sens pour les Arabes du Tidikelt, en Algérie : « Touareg noble », au sens étroit, et n'importe quel Touareg, au sens large, selon Charles de Foucauld.",
+            "sources": [
+              {
+                "title": "Dictionnaire touareg-français, dialecte de l'Ahaggar, tome II",
+                "author": "Charles de Foucauld",
+                "year": 1951,
+                "url": "https://archive.org/details/foucauld-dictionnaire-touareg-2",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 534, article « ahaggar »",
+                "notes": "Dictionnaire publié à Paris par l'Imprimerie nationale en 1951-1952, en fac-similé du manuscrit. L'auteur, prêtre et ancien officier de l'armée française, l'a écrit en Ahaggar, où il vécut de 1905 à sa mort en 1916, sous la colonisation française. Lu sur la numérisation d'Internet Archive, p. 533-534, article « ahaggar ». Lu le 3 novembre 2026. L'auteur compte sept groupes touaregs principaux (Kel-Ahaggar, Kel-Ajjer, Taïtok, Kel-Aïr, Kel-Adrar, Iullemmeden, Kel-Geres). Il écrit que les Kel-Ahaggar appellent Imôchar ceux que les Arabes appellent Touareg, qu'ils appellent Tărga le pays que les Arabes nomment Fezzan, et que le mot arabe Touareg vient « certainement » de ce nom, en renvoyant à Benhazera. Il note aussi que, pour les Arabes du Tidikelt, touareg veut dire tantôt « Touareg noble », tantôt n'importe quel Touareg. Appui pour les appellations et les groupes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1951,
+              "label": "Proposée en 1908, reprise en 1951 et en 1986"
+            },
+            "era": "colonial",
+            "statement": "Le nom Touareg viendrait de Tărga, le nom que les Kel Ahaggar donnent au pays que les Arabes appellent Fezzan, selon Charles de Foucauld, qui renvoie à Benhazera. L'ethnologue Marceau Gast présente encore cette hypothèse comme possible en 1986.",
+            "hypothesisGroup": "origine du nom Touareg",
+            "sources": [
+              {
+                "title": "Dictionnaire touareg-français, dialecte de l'Ahaggar, tome II",
+                "author": "Charles de Foucauld",
+                "year": 1951,
+                "url": "https://archive.org/details/foucauld-dictionnaire-touareg-2",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 534, article « ahaggar »",
+                "notes": "Dictionnaire publié à Paris par l'Imprimerie nationale en 1951-1952, en fac-similé du manuscrit. L'auteur, prêtre et ancien officier de l'armée française, l'a écrit en Ahaggar, où il vécut de 1905 à sa mort en 1916, sous la colonisation française. Lu sur la numérisation d'Internet Archive, p. 533-534, article « ahaggar ». Lu le 3 novembre 2026. L'auteur compte sept groupes touaregs principaux (Kel-Ahaggar, Kel-Ajjer, Taïtok, Kel-Aïr, Kel-Adrar, Iullemmeden, Kel-Geres). Il écrit que les Kel-Ahaggar appellent Imôchar ceux que les Arabes appellent Touareg, qu'ils appellent Tărga le pays que les Arabes nomment Fezzan, et que le mot arabe Touareg vient « certainement » de ce nom, en renvoyant à Benhazera. Il note aussi que, pour les Arabes du Tidikelt, touareg veut dire tantôt « Touareg noble », tantôt n'importe quel Touareg. Appui pour les appellations et les groupes."
+              },
+              {
+                "title": "Ahaggar, Encyclopédie berbère, 3",
+                "author": "P. Rognon, G. Camps, M. Gast et S. Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/820",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "§ 28",
+                "notes": "Article de l'Encyclopédie berbère (Édisud, 1986, vol. 3, p. 269-305), lu sur OpenEdition. Lu le 3 novembre 2026. Partie « Histoire des Kel-Ahaggar », signée par l'ethnologue Marceau Gast, lue en entier : l'appellation « Touareg » viendrait peut-être du Fezzan, appelé aussi Tarǧa, hypothèse de Benhazera (1908) reprise par Charles de Foucauld (§ 28) ; les Kel-Ahaggar se disent amāhaγ/imūhaγ et les Touaregs du sud amājeγ/imājiγen, amāšeγ/imūšaγ (§ 28) ; légende de Tin Hinan, venue du Tafilalet, et tombeau d'Abalessa daté de 470 après J.-C. (§ 31-32 et 98) ; massacre de la mission Flatters le 16 février 1881 (§ 53) ; combat de Tit en avril 1902 (§ 56) ; investiture de Moussa ag Amastan en 1905 (§ 60) ; suzerains, tributaires et artisans (§ 71-72). Appui pour les appellations, les origines, l'histoire et l'organisation."
               }
             ]
           }

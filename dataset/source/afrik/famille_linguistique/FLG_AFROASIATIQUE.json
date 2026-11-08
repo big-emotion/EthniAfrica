@@ -1,4 +1,15 @@
 {
+  "_meta": {
+    "research": [
+      "2026-11-03 : Glottolog 5.3 afro1255 (JSON et page) relu : 5 sous-groupes, 381 langues, omotique exclu (commentaire citant Güldemann 2018).",
+      "HGA I ch. 11 et 12 et HGA II ch. 1 et annexe du colloque du Caire : unesdoc renvoie 403 ; lus dans les PDF par chapitre déposés sur bokundoli.org (T1-17, T1-18, T2-4, T2-34).",
+      "Diakonoff 1988, Müller 1877, Cohen 1924, Renan 1855 relus dans le texte OCR d'Internet Archive. Lepsius 1880 non relu.",
+      "Obenga 1993 et Diop 1977 non accessibles en ligne ; Obenga cité d'après Tourneux 2000 (HAL halshs-03269594) et l'annexe du colloque.",
+      "Nombre de locuteurs : Ethnologue (403) et web.archive.org (refusé) inaccessibles ; 500 millions sans source lue, remplacé par environ 300 millions d'Oréal et Vanhove 2023 (HAL hal-04377057).",
+      "Chiffres par pays : ess.gov.et (connexion coupée) et knbs.or.ke (certificat) non rouverts ; DHS FR359 p. 55 relu (ethnie haoussa) ; hcp.ma/file/244434 sert désormais la note régionale de l'Oriental, chiffre Maroc refait avec hcp.ma/file/242665.",
+      "Aucune source lue ne donne le total des locuteurs de langues afro-asiatiques par pays : speakers.byCountry non rempli."
+    ]
+  },
   "id": "FLG_AFROASIATIQUE",
   "nameFr": "Afro-asiatique",
   "nameEn": "Afroasiatic",
@@ -419,15 +430,19 @@
   },
   "content": {
     "searchAnswer": {
-      "lead": "Un grand ensemble de langues parlées du Maroc à la Corne de l'Afrique. Son ancien nom, « chamito-sémitique », vient d'une lecture biblique du XIXe siècle, aujourd'hui délaissée par beaucoup de linguistes.",
+      "lead": "Une grande famille de langues parlées de l'Afrique du Nord à la Corne de l'Afrique et au Proche-Orient. Son ancien nom, « chamito-sémitique », vient de Cham et de Sem, deux fils de Noé dans la Bible.",
       "followUp": "Pourquoi a-t-on rattaché ces langues aux fils de Noé, Cham et Sem ?"
     },
     "decolonialHeader": {
-      "whyProblematic": " Le concept est une construction artificielle sans validité scientifique démontrée (aucune loi phonétique commune, aucune proto-langue reconstruite entre les 5 groupes). Il mélange critères raciaux, bibliques et linguistiques pour nier l'africanité de l'Égypte. Le terme « chamitique » est colonial et obsolète.",
-      "selfAppellation": null,
-      "contemporaryUsage": " Bien que utilisé par convention académique, l'existence de cette famille en tant qu'unité génétique est contestée par les preuves modernes (notamment travaux d'Obenga) qui montrent plutôt une parenté directe entre l'Égyptien ancien et les langues négro-africaines (Niger-Congo, Nilo-saharien).",
+      "linkWithFamily": "L'afro-asiatique est une famille de premier rang : les sources que nous avons lues ne la rattachent à aucune famille plus large. Joseph Greenberg en fait en 1963 l'une des quatre grandes familles de langues d'Afrique. Théophile Obenga propose au contraire d'en sortir l'égyptien, le couchitique et le tchadique pour les placer dans une autre famille, qu'il appelle négro-égyptien.",
       "historicalAppellations": ["Chamito-sémitique", "Sémito-chamitique"],
-      "originOfHistoricalTerm": " Le terme « chamito-sémitique » a été forgé au XIXe siècle par Friedrich Müller dans un but idéologique : séparer l'Égypte ancienne de l'Afrique noire et rattacher l'Afrique du Nord au Moyen-Orient. Il repose sur une classification biblique (Cham/Sem) et non scientifique."
+      "originOfHistoricalTerm": "Le nom chamito-sémitique vient de la Bible. Au chapitre 10 de la Genèse, les peuples descendent des trois fils de Noé, Sem, Cham et Japhet, rappelle le linguiste soviétique I. M. Diakonoff (1988). Au XIXe siècle, on appelait « sémitiques » les langues de cette famille parlées au Proche-Orient et « chamitiques » celles d'Afrique, explique l'africaniste soviétique D. Olderogge (1980). Le savant français Ernest Renan écrit en 1855 que le berbère, la langue des Touareg et la plupart des langues du nord de l'Afrique « semblent appartenir à une grande famille de langues qu'on peut appeler chamitiques ». Diakonoff attribue plutôt l'idée d'un groupe « chamitique » au savant allemand Richard Lepsius. Le nom double apparaît en allemand, « hamito-semitischen Sprachen », chez le linguiste autrichien Friedrich Müller en 1877 : c'est la plus ancienne trace que nous en connaissons. Joseph Greenberg propose dans les années 1950 de le remplacer par afro-asiatique, et Diakonoff le juge dépassé en 1988.",
+      "whyProblematic": "Le nom chamito-sémitique suppose deux blocs face à face : des langues sémitiques en Asie et des langues chamitiques en Afrique. Le linguiste français Marcel Cohen ne voyait déjà en 1924 aucune preuve de ce partage, et Diakonoff conclut que ce bloc chamitique n'a jamais existé. Ce nom a aussi servi des classements fondés sur la race. Richard Lepsius juge en 1880 les langues qui distinguent le masculin et le féminin supérieures aux autres, et Friedrich Müller classe les langues du monde d'après les cheveux de leurs locuteurs, rapporte Joseph Greenberg. Müller explique en 1877 les ressemblances du haoussa avec ces langues par une ancienne influence des « Hamito-Sémites » sur les peuples noirs. Le linguiste allemand Carl Meinhof range ensuite le peul, le maasaï et le khoekhoe parmi les langues chamitiques. Olderogge y voit une « théorie hamitique », selon laquelle des peuples venus d'Asie auraient apporté la civilisation en Afrique ; les découvertes faites en Afrique l'ont ruinée entre les deux guerres, écrit-il. Pour Théophile Obenga, l'« écran linguistique » chamito-sémitique ou afro-asiatique a été inventé pour couper la vallée du Nil du reste de l'Afrique noire. Le linguiste Henry Tourneux lui répond que Greenberg a justement écarté le groupe chamitique, et qu'afro-asiatique a remplacé un nom qui prêtait à confusion.",
+      "selfAppellation": "Le nom de cette famille vient des linguistes, pas de ceux qui parlent ces langues. Les linguistes disent aujourd'hui afro-asiatique, ou afrasien, le nom habituel en Union soviétique selon Diakonoff.",
+      "contemporaryUsage": "Le nom afro-asiatique désigne une famille de langues parlées en Afrique du Nord, au Sahara, dans la Corne de l'Afrique, jusqu'au Nigeria et à la Tanzanie, ainsi qu'au Proche-Orient et dans la péninsule Arabique. On y range notamment l'arabe, l'hébreu, l'amharique, le tigrigna, les langues berbères, le somali, le haoussa et l'égyptien ancien, qui s'est éteint. Joseph Greenberg y voit cinq branches : le berbère, l'égyptien ancien, le sémitique, le couchitique et le tchadique. Glottolog, un catalogue des langues du monde, retient les mêmes cinq dans son édition 5.3. D'autres linguistes, comme Diakonoff ou Elsa Oréal et Martine Vanhove, en comptent six avec l'omotique, parlé dans le sud-ouest de l'Éthiopie. Glottolog laisse l'omotique à part, faute d'y trouver les traits propres à la famille.\n\nCette famille elle-même est discutée. Cheikh Anta Diop et Théophile Obenga rattachent l'égyptien ancien à d'autres langues d'Afrique, comme le wolof, et non au sémitique ; nous présentons leurs arguments plus bas, à côté de ceux de leurs contradicteurs.",
+      "geographicArea": "Afrique du Nord, Sahara, Afrique de l'Ouest, Afrique centrale, Corne de l'Afrique, Afrique de l'Est, péninsule Arabique, Proche-Orient, Moyen-Orient",
+      "numberOfLanguages": 375,
+      "totalSpeakers": 300000000
     },
     "generalInfo": {
       "branches": [
@@ -437,9 +452,18 @@
         "Égyptien",
         "Sémitique"
       ],
-      "geographicArea": "Afrique du Nord, Corne de l'Afrique, Sahel et Sahara, Extensions sahéliennes (Afrique de l'Ouest, Centrale et de l'Est)",
+      "geographicArea": "Afrique du Nord, Sahara, Afrique de l'Ouest, Afrique centrale, Corne de l'Afrique, Afrique de l'Est, péninsule Arabique, Proche-Orient, Moyen-Orient",
       "numberOfLanguages": 375,
-      "totalSpeakers": 500000000
+      "totalSpeakers": 300000000,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "Plus de 375, peut-être moins, selon Elsa Oréal et Martine Vanhove (2023). Glottolog en compte 381 dans son édition 5.3, sans l'omotique."
+        },
+        "totalSpeakers": {
+          "note": "Environ 300 millions, une estimation d'Elsa Oréal et Martine Vanhove (2023).",
+          "unsourced": false
+        }
+      }
     },
     "associatedPeoples": [
       {
@@ -476,26 +500,26 @@
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " Incohérences majeures entre les groupes supposés. Le sémitique (racines trilitères, masculin/féminin obligatoire) diffère radicalement de l'égyptien ancien (absences de racines trilitères, absence de genre grammatical).",
-      "phonologicalFeatures": " Aucune innovation phonétique partagée entre les 5 groupes. Pas de lois de correspondance régulières validant l'unité de la famille \"afroasiatique\".",
-      "relationsWithNeighbors": " Les travaux de Théophile Obenga démontrent des correspondances régulières entre l'Égyptien ancien et le Phylum Négro-africain :",
-      "keyInnovations": " Aucune proto-langue \"afroasiatique\" n'a pu être reconstruite scientifiquement."
+      "typology": "Les langues afro-asiatiques ne sont pas toutes construites de la même façon. En sémitique et en berbère, une grande partie des mots repose sur une « racine » de deux ou trois consonnes, que l'on complète par des voyelles et des ajouts selon des modèles. En arabe, par exemple, maħmil, « ceinture », est formé sur la racine ħ.m.l, expliquent Elsa Oréal et Martine Vanhove (2023). L'égyptien connaît aussi ce système. Il ne survit qu'en partie, ou plus du tout, en tchadique, dans une grande partie du couchitique et en omotique. Ces deux linguistes notent aussi que des langues de branches différentes, à la même époque, se ressemblent peu, alors que des langues d'une même branche restent proches sur des millénaires.",
+      "phonologicalFeatures": "I. M. Diakonoff (1988) tente de reconstituer les sons de la langue ancienne d'où viendraient toutes ces langues, qu'il appelle proto-afrasien. Selon lui, les systèmes de sons les plus proches de cette langue se trouvent en omotique, dans certaines langues couchitiques et dans des langues tchadiques comme l'angas ou le ngizim. L'égyptien et le berbère les auraient beaucoup simplifiés. Les chercheurs africains réunis au Caire en 1974 reprochent à Joseph Greenberg de ne pas avoir établi de règles de correspondance entre les sons des langues qu'il regroupe, selon une note du chapitre de Greenberg. István Fodor, de l'Académie hongroise des sciences, critique lui aussi sa méthode.",
+      "relationsWithNeighbors": "Les langues afro-asiatiques ont beaucoup emprunté à leurs voisines. Selon Diakonoff, les langues couchitiques partagent de nombreux mots parce qu'elles ont été parlées très longtemps côte à côte, et non parce qu'elles descendent d'une même langue. Il pense aussi que les langues tchadiques ont été fortement marquées par des langues d'autres familles parlées avant elles dans la région.\n\nLe cas de l'égyptien ancien est discuté. Au colloque du Caire de 1974, l'égyptologue Serge Sauneron estime qu'il compte quelques centaines de racines sémitiques empruntées sur plusieurs milliers de mots, et qu'il est légitime de lui chercher des parents en Afrique. Cheikh Anta Diop et Théophile Obenga y comparent l'égyptien au wolof et à d'autres langues africaines : Obenga rapproche par exemple km, « noir » en égyptien ancien, de kem en copte et d'ikama dans des langues bantoues. Le Soudanais Abdelgadir M. Abdalla juge ces exemples ni convaincants ni concluants, et Sauneron rappelle que 5 000 ans séparent l'égyptien ancien des langues africaines actuelles.",
+      "keyInnovations": "Joseph Greenberg retient comme indice de parenté une marque du féminin en t présente dans toutes les branches. Le seul fait d'avoir un masculin et un féminin ne lui suffit pas, car ce trait apparaît ailleurs dans le monde. Elsa Oréal et Martine Vanhove (2023) précisent que ce suffixe du féminin, souvent -(a)t, se trouve dans toutes les branches sauf l'omotique. Diakonoff relève d'autres traits communs, comme une conjugaison des verbes d'action par préfixes en berbère, en sémitique et en couchitique. Théophile Obenga retrouve pourtant ce féminin en t, et un pluriel en w, dans des langues d'Afrique noire, et il y voit la preuve d'une autre parenté, avec l'égyptien. Henry Tourneux répond que les pronoms personnels de l'égyptien partagent de nombreux éléments avec ceux des autres langues afro-asiatiques, un système qui s'emprunte difficilement."
     },
     "historyAndOrigins": {
-      "probableOrigin": " Le regroupement \"afroasiatique\" est considéré par l'école d'Obenga comme une zone de contact et d'emprunts historiques, non comme une parenté génétique. Le Berbère moderne comporte de nombreux emprunts (latins, arabes).",
-      "emergencePeriod": " Non spécifiée dans les sources disponibles.",
-      "diffusion": " Expansion hétérogène. Distinction nette entre l'ancrage africain de l'Égypte ancienne et les dynamiques ultérieures du Sémitique et du Berbère.",
-      "historicalBreaks": " - Séparation idéologique artificielle de l'Égypte du reste du continent au XIXe siècle. - Divergences profondes structurelles entre le Sémitique et les langues africaines autochtones.",
-      "contactZones": " Vallée du Nil, Sahara, Corne de l'Afrique (zones de brassage intense expliquant les emprunts).",
-      "majorEvents": " Non spécifiés dans les sources disponibles."
+      "probableOrigin": "Plusieurs hypothèses situent la langue d'où viendraient ces langues. I. M. Diakonoff (1988) la place dans le sud-est du Sahara, entre le Tibesti et le Darfour, une région encore habitable à cette époque. Le linguiste A. Yu. Militarev la situe au contraire au Proche-Orient et dans la péninsule Arabique, d'où une partie des locuteurs serait passée en Afrique ; Diakonoff juge que cette hypothèse demande des séparations trop tardives entre les branches. Diakonoff écarte une troisième hypothèse, qui fait naître la famille des deux côtés de la mer Rouge, car la mer aurait été une barrière trop forte.\n\nCheikh Anta Diop et Théophile Obenga partent d'une autre idée. Pour eux, l'égyptien ancien n'a pas son origine dans une famille afro-asiatique : il appartient à un ensemble de langues d'Afrique noire, qu'Obenga appelle négro-égyptien et qu'il compare à l'indo-européen.",
+      "emergencePeriod": "Diakonoff (1988) date la langue commune d'avant le néolithique. Selon lui, les locuteurs de l'égyptien se seraient séparés les premiers, au plus tard au VIIIe millénaire avant notre ère. Il cite aussi des calculs fondés sur le rythme de remplacement des mots, qui pointent vers le Xe millénaire avant notre ère. Le regroupement lui-même a été nommé par des savants : Ernest Renan parle de langues chamitiques en 1855, et Joseph Greenberg propose le nom afro-asiatique dans les années 1950.",
+      "diffusion": "Diakonoff propose ce parcours, à partir du Sahara. Les locuteurs de l'égyptien remontent la vallée du Nil puis la descendent jusqu'en Égypte ; ceux du tchadique partent vers le sud, ceux de l'omotique puis du couchitique vers l'est. Ceux du sémitique traversent la vallée du Nil et l'isthme de Suez vers le Proche-Orient, pendant le néolithique, quand le Sahara s'assèche. Ceux du berbère partent vers l'ouest, jusqu'à l'Atlantique et aux Canaries. En se déplaçant, ces groupes se mêlent à des populations plus nombreuses, qui adoptent leurs langues, selon Diakonoff. Dans l'hypothèse de Militarev, le mouvement va au contraire de l'Asie vers l'Afrique, par le Sinaï et le détroit de Bab el-Mandeb.",
+      "historicalBreaks": "Selon Diakonoff, le sémitique se divise déjà en Asie entre le Ve et le milieu du IVe millénaire avant notre ère. Plus tard, l'égyptien recule après la conquête arabe : Joseph Greenberg pense qu'il cesse d'être parlé vers le XVIIe siècle, tandis qu'Elsa Oréal et Martine Vanhove situent la fin du copte parlé au XVe siècle. Le copte reste une langue de la liturgie. Dans la classification, Greenberg défait dans les années 1950 le groupe chamitique, puis Harold Fleming sépare l'omotique du couchitique en 1969.",
+      "contactZones": "La vallée du Nil est une zone de rencontre : l'Égypte est au point de convergence d'influences extérieures, souligne Serge Sauneron au colloque du Caire. La Corne de l'Afrique en est une autre : les langues couchitiques y ont vécu côte à côte pendant des milliers d'années, et beaucoup de locuteurs des langues agaw ont adopté des langues sémitiques d'Éthiopie, selon Greenberg. Au Sahara et au Sahel, les langues tchadiques se sont mêlées à des langues d'autres familles, selon Diakonoff.",
+      "majorEvents": "Les plus anciennes langues écrites de la famille sont l'akkadien, l'éblaïte et l'égyptien, notés avec des signes qui représentent des mots et des syllabes, rappelle Diakonoff. L'arabe ne touche les langues tchadiques qu'à la fin du Ier millénaire de notre ère, selon lui, puis il s'étend sur l'Afrique du Nord et le Moyen-Orient. Au XIXe siècle, les langues tchadiques, couchitiques et omotiques, qui n'avaient pas d'écriture, commencent à être décrites par des savants et des missionnaires, en même temps que la colonisation et la christianisation de l'Afrique, notent Elsa Oréal et Martine Vanhove."
     },
     "distribution": {
-      "totalSpeakers": 500000000,
+      "totalSpeakers": 300000000,
       "distributionByCountry": {
         "ETH": 25488344,
         "KEN": 2780502,
         "NGA": 61481627,
-        "MAR": 9444131
+        "MAR": 33845235
       }
     },
     "sources": [
@@ -540,27 +564,136 @@
         "title": "Ethiopian Statistics Service / Population Census Commission (2007) – Summary and Statistical Report of the 2007 Population and Housing Census, Table 2.2 : population Oromo (couchitique) = 25 488 344",
         "url": "https://ess.gov.et/wp-content/uploads/2026/06/national-population-and-housing-census-report-2007.pdf",
         "tier": "official",
-        "source_kind": "official_statistics"
+        "source_kind": "official_statistics",
+        "notes": "Ce chiffre compte la population oromo recensée en Éthiopie en 2007. Il ne compte pas les autres peuples du pays qui parlent une langue afro-asiatique, comme l'amharique ou le tigrigna : c'est un minimum."
       },
       {
         "title": "Kenya National Bureau of Statistics (2019) – 2019 Kenya Population and Housing Census, Volume IV: Distribution of Population by Socio-Economic Characteristics, Table 2.31 : Kenyan Somali (couchitique) = 2 780 502",
         "url": "https://www.knbs.or.ke/wp-content/uploads/2023/09/2019-Kenya-population-and-Housing-Census-Volume-4-Distribution-of-Population-by-Socio-Economic-Characteristics.pdf",
         "tier": "official",
-        "source_kind": "official_statistics"
+        "source_kind": "official_statistics",
+        "notes": "Ce chiffre compte les Somali du Kenya recensés en 2019. Il ne compte pas les autres locuteurs kényans de langues afro-asiatiques : c'est un minimum."
       },
       {
         "title": "The DHS Program / ICF – Nigeria Demographic and Health Survey 2018, Final Report (FR359), p. 55 : le hausa (tchadique) est l'ethnie principale de 30 % des femmes et 31 % des hommes enquêtés. ; taux appliqué à la population totale du Nigeria (204 938 755 en 2018, World Bank – SP.POP.TOTL) pour estimer ~61,5 millions de locuteurs",
         "url": "https://dhsprogram.com/pubs/pdf/FR359/FR359.pdf",
         "tier": "official",
         "source_kind": "official_statistics",
-        "notes": "The DHS Program / ICF – Nigeria Demographic and Health Survey 2018, Final Report (FR359), p. 55 : le hausa (tchadique) est l'ethnie principale de 30 % des femmes et 31 % des hommes enquêtés. https://dhsprogram.com/pubs/pdf/FR359/FR359.pdf ; taux appliqué à la population totale du Nigeria (204 938 755 en 2018, World Bank – SP.POP.TOTL) pour estimer ~61,5 millions de locuteurs. https://data.worldbank.org/indicator/SP.POP.TOTL?locations=NG"
+        "notes": "L'enquête de 2018 indique que 30 % des femmes et 31 % des hommes interrogés au Nigeria se disent haoussa. Le chiffre retenu applique ce taux à la population du pays en 2018, 204 938 755 habitants selon la Banque mondiale. Il ne compte que les Haoussa : c'est un ordre de grandeur, pas le nombre de locuteurs de langues afro-asiatiques du pays."
       },
       {
         "title": "Haut-Commissariat au Plan du Maroc – Recensement Général de la Population et de l'Habitat (RGPH) 2024, note \"Les expressions linguistiques de la langue Amazighe utilisées par la population\" (23 décembre 2024) : 24,8 % de la population utilise l'amazigh (berbère) au quotidien. ; taux appliqué à la population totale du Maroc (38 081 173 en 2024, World Bank – SP.POP.TOTL) pour estimer ~9,44 millions de locuteurs",
         "url": "https://www.hcp.ma/file/244434/",
         "tier": "official",
         "source_kind": "official_statistics",
-        "notes": "Haut-Commissariat au Plan du Maroc – Recensement Général de la Population et de l'Habitat (RGPH) 2024, note \"Les expressions linguistiques de la langue Amazighe utilisées par la population\" (23 décembre 2024) : 24,8 % de la population utilise l'amazigh (berbère) au quotidien. https://www.hcp.ma/file/244434/ ; taux appliqué à la population totale du Maroc (38 081 173 en 2024, World Bank – SP.POP.TOTL) pour estimer ~9,44 millions de locuteurs. https://data.worldbank.org/indicator/SP.POP.TOTL?locations=MA"
+        "notes": "Selon cette note, 24,8 % de la population du Maroc utilise l'amazigh au quotidien. L'adresse donnée mène aujourd'hui à une note régionale du même recensement."
+      },
+      {
+        "title": "Glottolog 5.3 - Afro-Asiatic",
+        "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath, Sebastian Bank",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/afro1255",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la famille afro-asiatique, édition 5.3. Elle compte cinq sous-groupes, berbère, tchadique, couchitique, égyptien et sémitique, et 381 langues. Un commentaire explique que l'omotique ne montre pas les traits propres à l'afro-asiatique et en reste exclu tant qu'ils ne sont pas montrés."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+        "author": "Joseph H. Greenberg",
+        "year": 1980,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 324-331",
+        "notes": "UNESCO, volume dirigé par J. Ki-Zerbo. Lu dans une copie numérisée du chapitre en français. Greenberg y retrace les classements de Lepsius, Müller et Meinhof, retient cinq branches et le féminin en t comme indice de parenté. La note 27, p. 329, rapporte la critique des chercheurs africains au colloque du Caire."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+        "author": "D. Olderogge",
+        "year": 1980,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 303-304, 315, 317",
+        "notes": "UNESCO, volume dirigé par J. Ki-Zerbo. Lu dans une copie numérisée du chapitre en français. Olderogge y décrit la théorie hamitique et juge le nom sémito-chamitique peu pertinent."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, II, ch. 1 : Origine des anciens Égyptiens",
+        "author": "Cheikh Anta Diop",
+        "year": 1980,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 64-74",
+        "notes": "UNESCO, volume dirigé par G. Mokhtar. Lu dans une copie numérisée du chapitre en français. Diop y présente des correspondances entre l'égyptien ancien et le wolof comme la preuve d'une parenté. Une note du directeur du volume précise que cette position n'a pas été acceptée par tous les experts."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, II, rapport de synthèse du colloque « Le peuplement de l'Égypte ancienne et le déchiffrement de l'écriture méroïtique »",
+        "author": "Comité scientifique international pour la rédaction d'une Histoire générale de l'Afrique",
+        "year": 1980,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "page": "p. 803-806, 817-818, 821",
+        "notes": "UNESCO, volume dirigé par G. Mokhtar. Lu dans une copie numérisée de l'annexe en français. Colloque tenu au Caire du 28 janvier au 3 février 1974. On y lit la démonstration d'Obenga, les objections d'Abdelgadir M. Abdalla et l'avis de Serge Sauneron."
+      },
+      {
+        "title": "Afrasian Languages",
+        "author": "I. M. Diakonoff",
+        "year": 1988,
+        "url": "https://archive.org/details/DiakonoffAfrasianLanguages1988",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 13-25, 32",
+        "notes": "Moscou, Nauka, 1988, traduit du russe. Lu dans une copie non officielle déposée sur Internet Archive. L'introduction présente l'histoire des noms de la famille, ses six branches, les hypothèses sur son origine et une reconstitution de ses sons."
+      },
+      {
+        "title": "Word classes in Egyptian, Semitic, and Cushitic (Afroasiatic)",
+        "author": "Elsa Oréal, Martine Vanhove",
+        "year": 2023,
+        "url": "https://hal.science/hal-04377057v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 1-2 et 12 de la version déposée",
+        "notes": "Chapitre de The Oxford Handbook of Word Classes, Oxford University Press, 2023, p. 495-515. Lu dans la version déposée sur HAL. L'introduction donne plus de 375 langues, environ 300 millions de locuteurs et six branches, et résume le débat sur l'omotique."
+      },
+      {
+        "title": "L'argument linguistique chez Cheikh Anta Diop et ses disciples",
+        "author": "Henry Tourneux",
+        "year": 2000,
+        "url": "https://shs.hal.science/halshs-03269594v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 3-7 et 17-18 de la version déposée",
+        "notes": "Chapitre de Afrocentrismes : l'histoire des Africains entre Égypte et Amérique, dirigé par F.-X. Fauvelle-Aymar, J.-P. Chrétien et C.-H. Perrot, Karthala, 2000, p. 79-102. Lu dans la version déposée sur HAL. Tourneux, linguiste au CNRS, y cite Théophile Obenga (1993) et lui répond."
+      },
+      {
+        "title": "Grundriss der Sprachwissenschaft, tome I : Die Sprachen der wollhaarigen Rassen",
+        "author": "Friedrich Müller",
+        "year": 1877,
+        "url": "https://archive.org/details/cihm_45392",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 223, 235-236",
+        "notes": "Vienne, Alfred Hölder, 1877. Lu dans la numérisation d'Internet Archive, chapitre sur la langue haoussa. L'auteur classe les langues d'après la chevelure de leurs locuteurs et explique les ressemblances du haoussa par une influence des « Hamito-Sémites »."
+      },
+      {
+        "title": "Les langues du monde, chapitre « Langues chamito-sémitiques »",
+        "author": "Marcel Cohen",
+        "year": 1924,
+        "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 81-83",
+        "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive."
+      },
+      {
+        "title": "Haut-Commissariat au Plan du Maroc – Recensement général de la population et de l'habitat 2024, principaux résultats (17 décembre 2024)",
+        "url": "https://www.hcp.ma/file/242665/",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. 5 et 19",
+        "notes": "La population légale du Maroc est de 36 828 330 habitants au 1er septembre 2024 (p. 5). Près de neuf personnes sur dix, 91,9 %, utilisent la darija, l'arabe marocain, et 24,8 % l'amazigh (p. 19). Ces deux langues sont afro-asiatiques. Une même personne peut utiliser les deux : le chiffre retenu pour le Maroc, 91,9 % de la population, est donc un minimum."
       }
     ]
   }

@@ -7,79 +7,87 @@
   "content": {
     "appellations": {
       "mainName": "Boliwa",
-      "selfAppellation": "Boliwa",
-      "exonyms": ["Bolewa", "Bole", "Bolawa", "Bolua"],
-      "originOfExonyms": "Le terme Boliwa est une variante orthographique du terme Bolewa (ou Bole), nom du peuple et de la langue parles dans le nord du Gombe State et le sud du Yobe State au nord-est du Nigeria. Le terme Bole est la forme adoptee par les linguistes et Ethnologue. Bolewa est la forme utilisee dans les documents historiques et coloniaux. La langue Bole (code ISO 639-3 : bol) appartient a la branche Bole-Tangale du West Chadic. Note : le code ISO blv (Kibala Bolo, Congo-Brazzaville) presente dans la source originale est une erreur d'attribution ; le code correct pour la langue Bole du Nigeria est bol.",
-      "whyProblematic": "L'identification de ce peuple pose des difficultes : 'Boliwa' n'apparait pas comme terme autonome dans les bases de donnees linguistiques (Ethnologue, Glottolog). Il s'agit vraisemblablement d'une variante orthographique de 'Bolewa' ou 'Bolua', designant le peuple Bole/Bolewa du nord-est du Nigeria. Le code ISO blv attribue dans le fichier source original correspond en realite au Kibala (langue de la Republique du Congo) et non a un peuple nigerian. La correction retenue ici est d'identifier Boliwa aux Bolewa/Bole (ISO : bol, Ethnologue : Bole-Tangale, West Chadic).",
-      "contemporaryUsage": "Le terme Bolewa est utilise dans la litterature academique et les documents historiques. Bole est le nom utilise par les linguistes (SIL Ethnologue). Dans la vie quotidienne, le groupe se designe comme Bole ou Bolewa. La capitale traditionnelle est Fika (Yobe State), siege de l'Emir de Fika (Moi Pikka).",
-      "linguisticFamily": "FLG_TCHADIQUE",
-      "ethnoLinguisticGroup": "Tchadique occidental (West Chadic), branche A.2 Bole-Tangale",
-      "historicalRegion": "Nord du Gombe State et sud du Yobe State, nord-est du Nigeria (region de Fika et Potiskum)",
-      "currentCountries": ["NGA"]
+      "selfAppellation": "Anim Pikka",
+      "exonyms": ["Bole", "Bolewa", "Bolawa", "Bolea"],
+      "spellingAliases": ["Boliwa", "Borlawa", "Pika", "Ampika", "Borpika"],
+      "originOfExonyms": "Les Bole se nomment eux-mêmes anim Pikka, « ceux de Fika », et appellent leur langue bo Pikka. Le nom Bole vient de leurs voisins : le haoussa dit Bolawa pour le peuple et bolanci pour la langue, le kanouri dit Bolea, selon Russell G. Schuh, de l'université de Californie. Deux explications de ce nom sont proposées. Il viendrait de la question « bo le ? », « pourquoi ? » ou « quelle langue ? », souvent entendue par ceux qui ne parlaient pas la langue. En 1931, Meek proposait plutôt de le rattacher à un mot voulant dire « mâle », une explication que Schuh rejette. Le nom apparaît par écrit sous la forme Pika chez Koelle en 1854, puis sous les formes Bolanchi, Borlawa et Bolewa chez P. A. Benton en 1912, et Bole et Bolewa chez Temple en 1919. La forme Boliwa n'apparaît dans aucune de ces sources. Le code de langue blv, qu'on ne doit pas confondre avec celui du bole, désigne le kibala, une langue de l'Angola ; la langue bole porte le code bol.",
+      "whyProblematic": "Le nom Bole, et ses formes Bolewa ou Bolawa, n'est pas le nom que ce peuple se donne : il se nomme anim Pikka, « ceux de Fika », et ce sont le haoussa et le kanouri qui forment leurs noms sur la racine bole, selon Russell G. Schuh. En 1931, C. K. Meek a voulu lire dans ce nom un mot signifiant « pénis » ou « mâle » ; Schuh juge cette explication absurde, puisque Bole n'est même pas le nom que se donne le peuple. Quant au titre de cette fiche, Boliwa, nous ne l'avons trouvé dans aucune des sources lues.",
+      "contemporaryUsage": "Aujourd'hui, les linguistes et l'organisme qui gère les codes de langues emploient le nom Bole, avec le code bol. Le nom Bolewa reste courant au Nigeria, par exemple dans une enquête de 2018 sur les langues du nord-est du pays, et le haoussa dit Bolawa. Les livres publiés dans la langue depuis 2000 emploient les deux noms, Bo Pikka et Bole : Dindi Bo Pikka (contes, 2000), Komno Bo Bolewa (proverbes, 2004), Aru Bo Bole (chants, 2009). Fika reste la capitale traditionnelle, mais la cour du Moi Pikka, l'émir de Fika, siège à Potiskum depuis 1924.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Bolewa de Fika (capitale traditionnelle, Yobe State)",
-      "Bolewa de Potiskum (grand centre de la diaspora Bole, Yobe State)",
-      "Bolewa du Gombe State (nord de l'etat)",
-      "Bolewa de Kalam (etablissement historique, region de Borno occidental)",
-      "Bolewa des rives de la riviere Gongola (implantations historiques)"
+      "Bolewa de Fika et de Potiskum (État de Yobe)",
+      "Bolewa de l'État de Gombe (Nafada, Funakaye, Dukku, Kwami)",
+      "Bolewa de Kalam, de Gadam et de Kafaretti, au bord de la Gongola",
+      "Bolewa de l'est de la Gongola, dans l'ancien émirat de Bauchi"
     ],
     "origins": {
-      "ancientOrigins": "Selon la tradition orale et les etudes historiques (C.K. Meeks, 1931 ; H.R. Palmer), les Bolewa descendent de migrants venus du Yemen, associes aux fondateurs des royaumes de Kanem et Songhai. Cette origine yemenite est partagee par plusieurs peuples tchadiques du nord-est du Nigeria. Les Bolewa s'etablirent d'abord sur les rives de la riviere Gongola et dans les regions de Kalam, Fali, Daniski, Kafarati, Mbara et Bauchi. Palmer les mentionne sous le nom Ata-Gara lors de leur apparition dans la vallee de la Gongola.",
-      "formationPeriod": "Des le 13e siecle, les Bolewa etaient etablis dans la region de Gombe et dans la vallee de la Gongola. L'etablissement de Kalam Bolewa (entre 1499 et 1509, sous le regne du Sarkin Kano Abdullahi) est documente. Le centre de peuplement bolewa s'est progressivement consolide autour de Fika, qui devint la capitale traditionnelle. L'Emir de Fika (Moi Pikka) est le chef traditionnel supreme des Bolewa et l'une des plus importantes figures royales du nord du Nigeria.",
+      "ancientOrigins": "Les Bolewa sont établis depuis plusieurs siècles entre Fika et la rivière Gongola, au nord-est du Nigeria. Leurs propres récits font venir leurs ancêtres de l'est. Selon les chroniques de Fika, tenues en écriture arabe et résumées par Temple en 1919, un groupe parti du Yémen à la fin du XIIIe ou au début du XIVe siècle s'installa parmi les Bolewa de Daniski vers 1540, se maria avec eux et adopta leur langue. Les Bolewa de Gombe racontaient que leurs ancêtres, des « hommes rouges », venaient de « Yemmel », près de La Mecque, sous la conduite de Moi Ali. Ces récits sont des traditions rapportées par des administrateurs coloniaux. Une chronique bole en arabe, appelée Girgam, a été éditée et traduite en 2018 ; selon son éditeur, ses listes de rois couvrent environ six cents ans d'histoire.",
+      "formationPeriod": "Selon les chroniques de Fika résumées par Temple en 1919, les Bolewa vivaient déjà à Daniski, à quelques kilomètres de Fika, quand un groupe venu de l'est s'y installa vers 1540. Leur chef Dunomaisha, vers 1538, était musulman, mais l'ensemble du peuple n'adopta l'islam qu'au XVIIIe siècle. Au début du XIXe siècle, Fika devint leur capitale. Selon la tradition, la colline de Daniski est le lieu du premier établissement des Bole dans la région.",
       "migrationRoutes": [
-        "Migration legendaire depuis le Yemen vers le basin du lac Tchad (apres 940 ap. J.-C. selon la tradition)",
-        "Deplacement vers les rives de la Gongola et le nord du Nigeria (entre 1100 et 1500 ap. J.-C.)",
-        "Etablissement a Fika et expansion vers Potiskum et les zones adjacentes"
+        "Selon la tradition des Bolewa de Gombe rapportée en 1919 : de « Yemmel », près de La Mecque, à travers le Nil, vers Gerra, puis Pitiri (Fittri) et Birnin Bornu",
+        "Toujours selon cette tradition : de Birnin Bornu à Gere, près de Bauchi, puis à Inkil",
+        "D'Inkil vers l'est, à Kafaretti, puis à Biri, Ribadu, Fika, Gadam et Kalam",
+        "Selon les chroniques de Fika : de la colline de Daniski à la ville de Fika, au début du XIXe siècle"
       ],
       "historicalSettlementZones": [
-        "Fika (Yobe State) : capitale traditionnelle historique de l'emirat Bole",
-        "Potiskum (Yobe State) : ville ou la cour de l'Emir de Fika fut deplacee en 1924 par l'administration coloniale",
-        "Nord du Gombe State : zone principale de peuplement Bole",
-        "Rives de la riviere Gongola : etablissements anciens (Kalam, Fali, Daniski, Kafarati, Mbara)",
-        "Parties du nord-ouest de Borno (Kalam, Fali)"
+        "Daniski, colline proche de Fika, lieu du premier établissement selon la tradition",
+        "Fika, capitale traditionnelle depuis le début du XIXe siècle",
+        "Potiskum, où la cour de l'émir de Fika est installée depuis 1924",
+        "Kafaretti, Gadam, Kalam, Biri et Ribadu, près de la Gongola",
+        "Ngara, sur la Gongola, à la limite sud de l'État de Yobe",
+        "L'est de la Gongola, dans l'ancien émirat de Bauchi"
       ],
-      "unificationsOrDivisions": "Les Bolewa sont unifies sous l'autorite de l'Emir de Fika (Moi Pikka), l'une des plus hautes figures de la royaute traditionnelle du nord du Nigeria. La cour de l'Emir de Fika fut transferee de Fika a Potiskum en 1924 par l'administration coloniale britannique. Des dialectes distincts (Bara, Fika) existent mais partagent une intelligibilite mutuelle. L'etablissement de Kalam Bolewa fut detruit lors d'un raid de Kano un siecle apres sa fondation.",
-      "externalInfluences": "Influence precoce de l'empire Kanem et du systeme politique Songhai (tradition d'origine commune). Domination de l'empire Kanuri de Borno sur la region a partir du 13e siecle. Jihad Fulani du 19e siecle, qui accentua l'islamisation. Colonisation britannique : reorganisation administrative de l'emirat, deplacement de la cour a Potiskum (1924). Domination croissante du haoussa, qui est devenu la langue vehiculaire de toute la region.",
-      "majorHistoricalEvents": "Etablissement dans la region de Gombe au 13e siecle. Fondation de Kalam Bolewa (1499-1509). Raid de Kano detruisant Kalam un siecle plus tard. Islamisation progressive sous l'influence Fulani et Kanuri. Etablissement de l'emirat de Fika. Deplacement de la cour de l'Emir de Fika de Fika a Potiskum par les Britanniques (1924). Integration dans le Yobe State (cree en 1991). Presence de Boko Haram dans la region depuis 2009, affectant les communautes Bolewa."
+      "unificationsOrDivisions": "Selon la tradition des Bolewa de Gombe rapportée en 1919, une querelle sur la chefferie coupa en deux le groupe de Kafaretti : une moitié partit fonder Gadam, sous la protection des Bolewa de Kalam. Les Bolewa installés à Gadam et à Kalam se marièrent avec les habitants plus anciens, probablement des Tangale selon Temple, et certains adoptèrent leur parler. Au XIXe siècle, les Peuls de Gombe brisèrent la plupart de ces groupes. Sous la colonisation britannique, Potiskum fut rattaché à Fika en 1913, et la cour de l'émir de Fika fut transférée à Potiskum en 1924.",
+      "externalInfluences": "Le royaume jukun de Pindika, au sud, reçut un temps le tribut des Tangale, des Tera et des Bole, selon Temple en 1919. À l'est, le Bornou kanouri pesait sur la région : en 1919, Fika était un État situé à la limite nord-ouest de la province du Bornou. Au XIXe siècle, les Peuls de Gombe menèrent chaque année des expéditions contre Fika pour lever un tribut. Puis vint la colonisation britannique, qui fixa les limites de l'émirat. Aujourd'hui, le haoussa est la langue commune de Potiskum, comme de toutes les grandes villes du nord du Nigeria.",
+      "majorHistoricalEvents": "Vers 1538, selon les chroniques de Fika, le chef Dunomaisha règne sur les Bolewa ; vers 1540, un groupe venu de l'est s'installe parmi eux à Daniski. Au XVIIIe siècle, le peuple adopte l'islam. Au début du XIXe siècle, Fika devient la capitale, et Buba Yero, premier émir peul de Gombe, se heurte à la résistance des Bole de Fika tandis que ceux de Ribadu l'accueillent. Au début du XXe siècle, les Britanniques soumettent la région ; ils rattachent Potiskum à Fika en 1913 et y transfèrent la cour de l'émir en 1924. En 1991, l'État de Yobe est créé à partir de l'ancien État du Bornou."
     },
     "organization": {
-      "traditionalPoliticalSystem": "La societe Bolewa est organisee autour de l'emirat de Fika, dirige par l'Emir de Fika (Moi Pikka), l'une des figures royales les plus importantes du nord du Nigeria. La cour de l'emir est a Potiskum. Sous l'emir, des chefs de district (hakimi) et de village (mai-gida) administrent les communautes. Le systeme emiral suit le modele haoussa-fulani standard du nord du Nigeria.",
-      "clanOrganization": "Organisation patrilineaire en familles etendues et lignages. Les Bolewa nobles lies a l'emirat forment l'elite dirigeante. Les groupes dialectaux (Bara, Fika) ont des loyautes claniques distinctes, mais tous reconnaissent l'autorite de l'Emir de Fika.",
-      "ageClassSystems": null,
-      "roleOfLineages": "Les lignages patrilineaires determinent l'acces aux postes de chefferie, les droits fonciers et les alliances. La succession a l'emirat suit les regles de succession patrilineaire etablies par la tradition et confirmees par les autorites islamiques.",
-      "religiousAuthority": "L'islam sunnite est la religion dominante depuis l'islamisation des Bolewa. La vie religieuse est encadree par les oulemas, imams et le systeme juridique islamique (charia). La tradition religieuse preislamique des Bolewa etait centree sur le culte des ancetres et les rites de fabrication de la pluie (Konon ou Konon-Ako chez certains groupes ; Gamdo ou Ngwando comme ceremonies rituelles principales). La ceremonie Dengti (ou Dengtide), ou hommes et femmes echangeaient leurs vetements, existait parmi les Bolewa de Kafarati. Ces pratiques ont ete largement abandonnees avec l'islamisation."
+      "traditionalPoliticalSystem": "Le souverain des Bole porte le titre de Moi Pikka, « émir de Fika ». En 1919, Temple écrit que le chef de Fika est élu par les anciens de Fika parmi les hommes de la famille royale, et qu'on demande alors l'avis de la mère du chef défunt ; le chef en place, Idrisa, descendait de Dunomaisha. Un tribunal siégeait à Fika pour toutes les affaires. Les districts sont confiés à des chefs que le bole appelle ajiya, et le haoussa hakimi. Une étude parue en 2018 décrit deux familles royales, Mama et Bawa.",
+      "clanOrganization": "En 1919, Temple décrit une société organisée par familles : le chef de famille est l'homme le plus âgé, et tous les membres contribuent à payer l'amende de celui d'entre eux qui a commis une faute. Nous n'avons pas trouvé de source qui décrive des clans chez les Bole.",
+      "ageClassSystems": "Nous n'avons pas trouvé de source qui décrive un système de classes d'âge chez les Bole.",
+      "roleOfLineages": "La chefferie de Fika se transmet dans la famille royale, issue selon la tradition du chef Dunomaisha. Pour les héritages, Temple note en 1919 que les règles du Coran s'appliquent, alors qu'autrefois tout allait au chef de famille. Les droits sur la terre étaient accordés par le chef, qui recevait un dixième des récoltes de céréales.",
+      "religiousAuthority": "Les Bole sont musulmans. En 1919, Temple écrit que le peuple a adopté l'islam au XVIIIe siècle, et que le liman (l'imam) et l'alkali (le juge musulman) de Fika règlent les successions. Les élèves d'une école de Fika racontent aussi la légende du baobab de la colline de Daniski, qui se couchait puis se redressait : ce lieu, jugé miraculeux, est devenu un lieu de pèlerinage."
     },
     "languages": {
-      "mainLanguage": "Bole (Bolewa)",
+      "mainLanguage": "Bole (bol)",
       "isoCodes": ["bol"],
       "dialects": [
-        "Fika Bole (dialecte de Fika, centre politique)",
-        "Bara Bole (dialecte de Bara)"
+        "Fika, le parler de la capitale traditionnelle",
+        "Gadam-Bara, selon le catalogue Glottolog ; en 1912, P. A. Benton distinguait déjà le parler de Bara de celui de Fika",
+        "Ngara, sur la Gongola, un peu différent de celui de Fika",
+        "Gadaka, décrit par Russell G. Schuh en 1983",
+        "Le parler de Gombe, relevé par Charles Kraft"
       ],
-      "vehicularRole": "Le bole est parle par environ 250 000 a 300 000 personnes dans le sud du Yobe State et le nord du Gombe State. Il est l'une des plus importantes langues de la region apres le haoussa et le kanuri. La langue est classee West Chadic A.2 (Bole-Tangale). Malgre sa relative vitalite (le bole est encore largement parle), la transition vers le haoussa est perceptible. Le haoussa sert de lingua franca dans toute la region. L'anglais est la langue officielle de l'education et de l'administration. Le bole est l'une des rares langues du Yobe State a avoir une litterature nascente (premières publications dans les annees 1950 avec la NORLA, Northern Region Literacy Agency)."
+      "vehicularRole": "Le bole compte environ 250 000 à 300 000 locuteurs, ce qui en fait l'une des plus grandes langues de la région après le haoussa et le kanouri, selon Russell G. Schuh. C'est une langue tchadique, du groupe A des langues tchadiques de l'Ouest, comme le haoussa, dont elle n'est pourtant pas très proche. Le haoussa sert de langue commune à Potiskum et dans tout le nord du Nigeria, et le catalogue de langues Glottolog classe le bole parmi les langues menacées. Les premiers livres en bole, des manuels pour apprendre aux adultes à lire et à compter, ont paru au milieu des années 1950. Le premier livre de littérature bole, un recueil de contes, date de 2000, et un dictionnaire bole-anglais-haoussa d'environ 3 900 mots a paru en 2004 à Potiskum."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q111941961",
+      "glottocode": "nucl1695",
+      "iso639_3": "bol"
     },
     "culture": {
-      "majorRites": "Ceremonies islamiques : celebrations du Ramadan, Aïd al-Fitr, Aïd al-Adha, pelerinage a La Mecque. Mariages : ceremonies traditionnelles incluant la dot et les festivites communautaires. Rites funeraires islamiques (enterrement rapide, condoleances). Rites pre-islamiques partiellement conserves dans la memoire collective : Gamdo ou Ngwando (rituels de pluie en cas de secheresse, comprenant des circumambulations de tombeaux royaux et des sacrifices). Dengti ou Dengtide : ancienne ceremonie annuelle chez les Bolewa de Kafarati, ou hommes et femmes echangeaient leurs vetements et roles lors d'une ceremonie autour d'un baobab sacre, lieu considere comme la demeure du peuple Kwami.",
-      "symbols": "Le titre de Moi Pikka (Emir de Fika) est le symbole politique supreme des Bolewa. Les marques culturelles corporelles (scarifications distinctives sur le visage et le ventre) ont longtemps identifie les Bolewa. Les objets d'artisanat traditionnels (poteries, nattes) et les vetements brodes sont des marqueurs identitaires.",
-      "artsAndMusic": "Artisanat : poterie, tissage, maroquinerie, broderie. Musique : musique de cour associee aux ceremonies de l'emirat (percussions, trompettes royales). Danse : danses traditionnelles lors des celebrations culturelles et islamiques. Traditions orales : histoires de la migration depuis le Yemen, genealogies des emirs, recits de l'etablissement de Kalam Bolewa et de Fika. La premiere oeuvre litteraire en langue Bole est une nouvelle (Labar Kadija Zangaya de Malam Baba Ali) publiee dans les annees 1950, consideree comme une etape majeure pour les langues du Yobe State.",
-      "spiritualities": "L'islam sunnite (pratique populaire ou folk Islam, melange de traditions islamiques et d'elements d'animisme residuel) est la religion de la quasi-totalite des Bolewa. La tradition spirituelle preislamique etait centree sur le culte des ancetres et un dieu ancestral Konon (ou Konon-Ako), associe a la protection contre la secheresse et les malheurs. Des rituels de culte aux ancetres (hommage aux Auni, rois bolewa enterres dans des lieux sacres) etaient pratiques lors des fetes culturelles. L'islamisation a largement remplace ces pratiques, mais des traces de syncrétisme subsistent dans certaines zones rurales."
+      "majorRites": "En 1919, Temple décrit les rites de naissance des Bolewa : l'enfant reçoit son nom le huitième jour, au cours d'un repas offert aux proches, puis on trace sur son visage et son corps les marques du peuple. La mère part ensuite vivre deux ans chez ses parents avec l'enfant. Le mariage se prépare pendant plusieurs années, avec des dons de tissus à la fiancée et à sa famille, et la mariée est conduite à cheval à sa nouvelle maison. À la mort d'un homme, ses veuves restent quarante jours à la maison avant de retourner chez leurs parents. En 2002, un projet de recherche a publié à Potiskum des textes en bole sur les coutumes du mariage et de la naissance.",
+      "symbols": "Le titre de Moi Pikka, l'émir de Fika, est le premier symbole du pouvoir bole. En 1919, Temple décrit les marques du visage des Bolewa de Gombe, une série de lignes verticales serrées des tempes jusqu'à la hauteur de la bouche. Il rapporte aussi un ancien interdit : faire entrer un âne dans l'enceinte intérieure de Fika passait pour annoncer la fin du peuple.",
+      "artsAndMusic": "Les femmes de Fika et de Potiskum chantent le kona, un style de chant accompagné d'une danse du cou et parfois de tambours, dont le thème principal est l'adultère. Les Bole ont aussi des chants pour moudre le grain, des jeux d'enfants chantés et de nombreux contes. En 1919, Temple remarque les poteries finement décorées et les bols de bois sculptés incrustés d'étain. Une étude de 1994 décrit les plateaux, les nattes tressées et les calebasses décorées. En 2007 a paru le premier récit en prose écrit dans une langue de l'État de Yobe, Labar Kadija Zangaya, de Malam Baba Ali.",
+      "spiritualities": "La grande majorité des Bole est musulmane. En 1919, Temple note que les règles du Coran étaient encore peu suivies, que l'on buvait de la bière, et que deux tiers seulement des Bolewa de la province de Bauchi étaient musulmans. Un recueil de croyances populaires, appelé shampi en bole, a été publié en 2004 et en 2007. Nous n'avons pas trouvé de source qui décrive en détail la religion des Bole avant l'islam."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "L'emirat de Fika (Fika Emirate) est le principal heritage politique des Bolewa. L'Emir de Fika (Moi Pikka) est l'une des plus hautes figures royales du nord du Nigeria, jouant un role important dans les periodes precoloniale, coloniale et postcoloniale. La cour de l'emir etait historiquement a Fika (Yobe State) avant d'etre deplacee a Potiskum par les Britanniques en 1924. Les Bolewa avaient des etablissements dans les zones de Kalam, Fali, Daniski, Kafarati, Mbara et Bauchi des le 13e siecle.",
-      "relationsWithNeighbors": "Relations complexes avec les Haoussa (qui ont progressivement assimile culturellement et linguistiquement les Bolewa), les Kanuri (empire Borno ayant exerce une suzerainte historique), et les autres peuples Bole-Tangale voisins (Karekare, Ngamo, Ngizim). Les Bolewa ont joue un role important dans le nord-est du Nigeria comme intermediaires commerciaux entre les grandes routes transsahariennes et les communautes rurales.",
-      "conflictsOrAlliances": "Assimilation a l'empire de Kanem/Songhai selon les traditions orales. Raids de Kano ayant detruit Kalam Bolewa au 16e siecle. Islamisation sous influence Fulani et Kanuri (19e siecle). Colonisation britannique : reconstitution de l'emirat, deplacement de la cour de l'Emir de Fika a Potiskum (1924). Apres l'independance du Nigeria (1960) : integration dans le systeme politique federal. Depuis 2009, presence de Boko Haram dans le nord-est du Nigeria affectant les communautes.",
-      "diaspora": "Les Bolewa ont une presence notable dans l'administration, le commerce et les milieux educatifs nigeriants. Des membres de la communaute se trouvent dans toutes les grandes villes du Nigeria (Lagos, Abuja, Kano, Maiduguri). Une diaspora internationale modeste existe dans les pays anglophones."
+      "kingdomsOrChiefdoms": "Les Bole ont formé l'État de Fika, dont le souverain, le Moi Pikka, occupe depuis longtemps l'une des premières places parmi les souverains traditionnels du nord du Nigeria, selon Russell G. Schuh. En 1919, Temple présente Fika comme un État indépendant à la limite du Bornou, dont la famille régnante descend du chef Dunomaisha. La chronique bole appelée Girgam conserve des listes de rois qui couvrent environ six cents ans.",
+      "relationsWithNeighbors": "Les Bole ont pour voisins les Ngamo, dont la langue est très proche de la leur, les Karekare et les Ngizim au nord, des populations de langue haoussa à l'ouest, les Tangale au sud, les Tera au sud-est et les Kanouri à l'est, selon Russell G. Schuh. En 1919, Temple jugeait probable que les Tera de Gombe soient issus des Bolewa, dont ils portaient les mêmes marques du visage.",
+      "conflictsOrAlliances": "Au début du XIXe siècle, les Bole de Ribadu accueillirent Buba Yero, premier émir peul de Gombe, et reçurent de lui certains privilèges ; ceux de Fika lui résistèrent, et Kalam fut prise plus tard. Les Peuls de Gombe lancèrent ensuite chaque année des expéditions contre Fika pour lever un tribut. Au début du XXe siècle, la conquête britannique fit de Fika un État rattaché à la province du Bornou, auquel Potiskum fut ajouté en 1913.",
+      "diaspora": "En 1919, Temple signale déjà des Bolewa dans la province de Muri, au sud. Aujourd'hui, beaucoup de Bole vivent à Potiskum, et plusieurs ont occupé des postes importants dans la politique, le commerce, l'enseignement et les médias du Nigeria, selon Russell G. Schuh. Nous n'avons pas trouvé de source qui décrive une diaspora bole hors du Nigeria."
     },
     "demography": {
-      "totalPopulation": 280000,
-      "referenceYear": 2025,
-      "source": "SIL Ethnologue — Bole (bol) : 250 000 a 300 000 locuteurs. UCLA African Languages — Bole (2018) : environ 250-300 000 locuteurs. Joshua Project — Bole, Bolewa in Nigeria (2025). Wikipedia EN — Bolewa people. Recensement national nigerian 2006. Estimations ajustees pour la croissance demographique nigeriane.",
+      "totalPopulation": 275000,
+      "referenceYear": 2026,
+      "source": "Le projet de recherche de Russell G. Schuh, à l'université de Californie, compte environ 250 000 à 300 000 locuteurs du bole, sur une page non datée consultée le 3 novembre 2026 ; nous retenons le milieu de cette fourchette. Joshua Project, une base de données missionnaire consultée le même jour, donne 195 000 personnes. En 1919, Temple comptait environ 24 000 Bolewa. Le recensement du Nigeria ne compte pas la population par peuple.",
       "distributionByCountry": [
         {
           "country": "NGA",
-          "population": 280000,
-          "note": "Principalement sud du Yobe State (Fika, Potiskum et environs) et nord du Gombe State ; presence historique dans le Borno occidental et le Bauchi State"
+          "population": 275000,
+          "note": "Sud de l'État de Yobe (Fika, Potiskum, Nangere, Gulani) et nord de l'État de Gombe (Nafada, Funakaye, Dukku, Kwami)"
         }
       ]
     },
@@ -88,36 +96,67 @@
         "title": "UCLA African Languages — Bole",
         "url": "https://aflang.humanities.ucla.edu/language-materials/chadic-languages/yobe/bole/",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba, financé par la National Science Foundation de 1999 à 2009. Lu le 3 novembre 2026. Elle donne les noms du peuple, la situation de la langue, ses voisins, ses publications et sa bibliographie. Passage lu : « About 250-300,000 people speak BOLE »."
+      },
+      {
+        "title": "Glottolog 5.3 — Bole (nucl1695)",
+        "url": "https://glottolog.org/resource/languoid/id/nucl1695",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues édité par Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank. Lu le 3 novembre 2026. Il classe le bole dans le groupe A des langues tchadiques de l'Ouest, lui rattache les parlers Fika Bole et Gadam-Bara, et reprend d'Ethnologue (2025) le statut « 6b (Threatened) ». Autres noms relevés : Ampika, Bolanchi, Bolawa, Bolewa, Borpika."
+      },
+      {
+        "title": "Glottolog 5.3 — Kibala (bolo1261)",
+        "url": "https://glottolog.org/resource/languoid/id/bolo1261",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Lu le 3 novembre 2026. Le code blv y désigne le kibala, aussi appelé bolo, une langue de l'Angola, sans lien avec le bole du Nigeria."
+      },
+      {
+        "title": "ISO 639-3, Bole [bol]",
+        "author": "SIL International, autorité d'enregistrement ISO 639-3",
+        "url": "https://iso639-3.sil.org/code/bol",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du code, lue le 3 novembre 2026 : « bol Bole Active 639-3 Individual Living »."
+      },
+      {
+        "title": "Bole Language and Documentation Unit, BOLDU Report I & II",
+        "url": "https://www.koeppe.de/titel_bole-language-and-documentation-unit-boldu-report-i-ii",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Ouvrage dirigé par Dymitr Ibriszimow et Alhaji Maina Gimba, Cologne, Rüdiger Köppe, 2018, collection Westafrikanische Studien, vol. 38. Nous n'avons lu que la présentation de l'éditeur, le 3 novembre 2026. Passages lus : « the history of the Bole (Girgam), written in Maghrebinian-Arabic », « A thorough examination of the lists of kings offers new insights to the last 600 years of the Bole » et le titre de chapitre « A Scheme of the Mama and Bawa Ruling Families »."
+      },
+      {
+        "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+        "url": "https://archive.org/details/notesontribespro00tempuoft",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "O. Temple, sous la direction de C. L. Temple, Le Cap, 1919, ouvrage de l'époque coloniale compilé à partir de rapports d'administrateurs britanniques. Lu le 3 novembre 2026 dans l'exemplaire numérisé d'Internet Archive, notice « Bolewa », p. 62-68, et passages sur Fika et Gombe, p. 173, 420, 427, 440 et 441. Passages lus : « The independent state of Fika, on the north-western boundary of Bornu, may be said to be their headquarters », « Their total number is some 24,000 » et « Potiskum was included in Fika in 1913 »."
+      },
+      {
+        "title": "Linguistic Survey of Nigerian Languages: A Preliminary Report of the Languages of the North East Geopolitical Zone",
+        "url": "https://jolan.com.ng/index.php/home/article/view/45",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Journal of the Linguistic Association of Nigeria, supplément III, 2018 ; l'auteur enseigne à l'université de Calabar. Lu le 3 novembre 2026 dans le PDF de l'article. Passages lus : « with Bolewa and Karai-Karai being the dominant varieties » (État de Gombe) et « Bolewa spoken in four LGAs » ; les tableaux placent le bolewa à Nafada, Funakaye, Dukku et Kwami dans l'État de Gombe, et à Fika, Gulani, Nangere et Potiskum dans l'État de Yobe."
       },
       {
         "title": "Joshua Project — Bole, Bolewa in Nigeria",
         "url": "https://joshuaproject.net/people_groups/10914",
         "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "SIL Ethnologue — Bole (bol)",
-        "url": "https://www.ethnologue.com/subgroup/555/",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
-      },
-      {
-        "title": "Wiktionary ISO 639-3 codes/Africa",
-        "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
-        "tier": "unverified",
-        "source_kind": "community"
-      },
-      {
-        "title": "Gbeyonron & Bare — Language Ecology in Yobe State. Journal of the Nigerian Languages Project, vol. 2, 2020",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "missionary_database",
+        "notes": "Base de données d'une organisation missionnaire chrétienne. Lu le 3 novembre 2026. Elle donne une population de 195 000 personnes au Nigeria et rattache la langue au code bol."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Boliwa renvoie aux Bole, ou Bolewa, un peuple du nord-est du Nigeria qui se nomme lui-même anim Pikka, « ceux de Fika », du nom de sa capitale traditionnelle.",
+      "followUp": "D'où vient le nom Bole que leur donnent leurs voisins ?"
+    }
   },
   "nameHistory": {
-    "summary": "Le nom Boliwa est une graphie que les sources lues n'emploient pas. Il renvoie au peuple appelé Bole ou Bolewa, du nord-est du Nigeria, autour de Fika, qui se nomme lui-même anim Pikka, « ceux de Fika ». D'où vient le nom Bole, on ne le sait pas avec certitude ; nous présentons plus bas les explications proposées.",
+    "summary": "Le nom Boliwa, titre de cette fiche, est une graphie que nous n'avons trouvée dans aucune des sources lues. Il renvoie au peuple appelé Bole ou Bolewa, qui vit au nord-est du Nigeria autour de la ville de Fika, et qui se nomme lui-même anim Pikka, « ceux de Fika ». Ce peuple porte donc plusieurs noms, et deux explications de l'origine du nom Bole sont présentées plus bas.",
     "names": [
       {
         "nameText": "Anim Pikka",
@@ -135,7 +174,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom anim Pikka, ou biya Pikka, « ceux de Fika », est celui que se donnent les Bole ; ils appellent leur langue bo Pikka, « la langue de Fika ». Fika est la capitale traditionnelle de ce peuple, selon le projet de recherche de Russell G. Schuh.",
+            "statement": "Le nom anim Pikka, ou biya Pikka, veut dire « ceux de Fika » : c'est le nom que se donnent les Bole, qui appellent leur langue bo Pikka, « la langue de Fika ». Fika est la capitale traditionnelle de ce peuple, et son souverain porte le titre de Moi Pikka, « émir de Fika », selon le projet de recherche de Russell G. Schuh.",
             "aspect": "meaning",
             "sources": [
               {
@@ -145,7 +184,7 @@
                 "url": "https://aflang.humanities.ucla.edu/language-materials/chadic-languages/yobe/bole/",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba. Page non datée, lue le 11 octobre 2026."
+                "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba. Page non datée, lue le 11 octobre 2026 et relue le 3 novembre 2026. Passage lu : « The autonym of the Boles is Biya Pikka ‘People of Fika’, they call their language Bo Pikka ‘Language of Fika’, and the paramount traditional Bole ruler is Moi Pikka ‘Emir of Fika’ »."
               }
             ]
           },
@@ -156,9 +195,19 @@
               "label": "1854"
             },
             "era": "polity",
-            "statement": "Le nom anim Pikka apparaît sous une forme proche, Pī́ka, dans la Polyglotta Africana de Sigismund Koelle, publiée en 1854 : c'est là le nom de la langue, que Koelle écrit aussi ʿPī́ka ou Fī́ka et situe au sud-ouest du Bornou. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "statement": "Le nom anim Pikka apparaît sous une forme proche, Pika, dans la Polyglotta Africana du missionnaire Sigismund Koelle, publiée en 1854. C'est le nom de la langue, que Koelle écrit aussi ‘Pika ou Fika et situe au sud-ouest du Bornou. Il l'a recueillie en Sierra Leone auprès d'un homme d'une trentaine d'années qui parlait bien l'anglais. C'est la plus ancienne trace de ce nom que nous connaissons ; le peuple existait déjà avant elle.",
             "birth": true,
             "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/polyglottaafrica00koel",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "Introduction, rubrique VII.B.1",
+                "notes": "Londres, Church Missionary House, 1854, ouvrage d'un missionnaire allemand. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Passages lus : « Pika, or ‘Pika, or Fika.—From a very intelligent man about thirty-three years old, speaking English well » et « Pika is situated south-west of Bornu, and west of Mandara »."
+              },
               {
                 "title": "Polyglotta Africana, jeu de données Lexibank",
                 "author": "Sigismund Wilhelm Koelle",
@@ -166,7 +215,7 @@
                 "url": "https://github.com/lexibank/polyglottaafricana",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite."
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, et rattache la langue au code bol. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite. Relu le 3 novembre 2026. Passage lu : « Pī́ka, or ʿPī́ka, or Fī́ka. Remarks - Pī́ka is situated south-west of Bọ́rnu, and west of Mándara »."
               },
               {
                 "title": "Bole, Yobe Languages Research Project",
@@ -175,7 +224,7 @@
                 "url": "https://aflang.humanities.ucla.edu/language-materials/chadic-languages/yobe/bole/",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba. Page non datée, lue le 11 octobre 2026. Elle cite la Polyglotta Africana de Sigismund Koelle (Londres, 1854), où la langue figure sous le nom Pika (VII.B.1)."
+                "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba. Page non datée, lue le 11 octobre 2026 et relue le 3 novembre 2026. Passage lu : « Koelle, Sigismund W. 1854 [1963]. Polyglotta Africana […] [Listed as VII.B.1, “Pika”.] »."
               }
             ]
           }
@@ -187,8 +236,8 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Le nom courant du peuple et de sa langue ; son origine reste incertaine.",
-        "periodLabel": "En usage aujourd'hui",
+        "shortLine": "Le nom courant du peuple et de sa langue ; ce n'est pas le nom que ce peuple se donne.",
+        "periodLabel": "Écrit dès 1919 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
@@ -197,7 +246,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Bole désigne un peuple et sa langue des États de Yobe et de Gombe, au nord-est du Nigeria. Ce n'est pas le nom que ce peuple se donne, et son origine est incertaine, selon le projet de recherche de Russell G. Schuh.",
+            "statement": "Le nom Bole désigne un peuple et sa langue des États de Yobe et de Gombe, au nord-est du Nigeria. Ce n'est pas le nom que ce peuple se donne : le haoussa et le kanouri, les deux grandes langues de la région, forment leurs propres noms du peuple sur cette racine bole, selon le projet de recherche de Russell G. Schuh.",
             "aspect": "meaning",
             "sources": [
               {
@@ -207,7 +256,7 @@
                 "url": "https://aflang.humanities.ucla.edu/language-materials/chadic-languages/yobe/bole/",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba. Page non datée, lue le 11 octobre 2026."
+                "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba. Page non datée, lue le 11 octobre 2026 et relue le 3 novembre 2026. Passage lu : « This is not the term the people use for themselves or their language » et « both Hausa and Kanuri base their terms on the mysterious “Bole” root »."
               }
             ]
           },
@@ -227,7 +276,7 @@
                 "url": "https://aflang.humanities.ucla.edu/language-materials/chadic-languages/yobe/bole/",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba. Page non datée, lue le 11 octobre 2026."
+                "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba. Page non datée, lue le 11 octobre 2026 et relue le 3 novembre 2026. Passage lu : « One suggestion is that the term comes from the Bole phrase, “Bo le?”, which in Bole could mean either “Why?” […] or “What language?” »."
               }
             ]
           },
@@ -238,7 +287,7 @@
               "label": "Proposée en 1931"
             },
             "era": "colonial",
-            "statement": "Le nom Bole contiendrait une racine bola, « pénis » ou « mâle », et voudrait dire « les hommes », selon C. K. Meek, dans un livre paru en 1931. Russell G. Schuh, qui cite cette explication, la rejette fermement : Bole n'est pas le nom que ce peuple se donne.",
+            "statement": "Le nom Bole contiendrait une racine bola, « pénis » ou « mâle », et voudrait dire « les hommes », selon C. K. Meek, dans un livre paru à Londres en 1931. Russell G. Schuh, qui cite cette explication, la rejette fermement : Bole n'est pas le nom que ce peuple se donne.",
             "hypothesisGroup": "origine du nom Bole",
             "sources": [
               {
@@ -248,7 +297,30 @@
                 "url": "https://aflang.humanities.ucla.edu/language-materials/chadic-languages/yobe/bole/",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba. Page non datée, lue le 11 octobre 2026. Elle cite C. K. Meek, Tribal Studies in Northern Nigeria, vol. 2, Londres, Kegan Paul, 1931, p. 288 ; nous n'avons pas lu ce livre nous-mêmes."
+                "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba. Page non datée, lue le 11 octobre 2026 et relue le 3 novembre 2026. Passage lu : « C.K. Meek (Tribal Studies in Northern Nigeria, Volume 2, page 288, Kegan Paul, 1931) suggests that the word Bole “would seem to embody a root bola = penis, or male” » et « THIS IS COMPLETE NONSENSE ». Nous n'avons pas pu lire le livre de Meek lui-même, dont la numérisation n'est pas en accès libre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bole apparaît seul dans les notes sur les peuples du nord du Nigeria publiées en 1919. On y lit que les Bole de Ribadu accueillirent Buba Yero, premier émir peul de Gombe, au début du XIXe siècle, et que les « Fika Bole » lui opposèrent une forte résistance. C'est la plus ancienne trace de cette forme que nous connaissons ; des noms formés sur la même racine, comme Bolanchi, sont écrits plus tôt.",
+            "formAsWritten": "Bole",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+                "author": "O. Temple, sous la direction de C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 173 et p. 420",
+                "notes": "Le Cap, 1919, ouvrage de l'époque coloniale compilé à partir de rapports d'administrateurs britanniques, lu dans l'exemplaire numérisé d'Internet Archive le 3 novembre 2026. Passages lus : « the Tangale, Tera and Bole, who paid tribute to them » (p. 173) et « the pacification of the Fika Bole, but met with considerable opposition » (p. 420)."
               }
             ]
           }
@@ -260,8 +332,8 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Un nom écrit dès 1919 ; le haoussa dit Bolawa pour ce peuple.",
-        "periodLabel": "Écrit dès 1919 ; en usage aujourd'hui",
+        "shortLine": "Un nom écrit dès 1912 ; le haoussa dit Bolawa pour ce peuple.",
+        "periodLabel": "Écrit dès 1912 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
@@ -270,7 +342,7 @@
               "label": "Usage contemporain"
             },
             "era": "modern",
-            "statement": "Le nom Bolewa est proche de Bolawa, le pluriel que le haoussa donne aux Bole ; le haoussa appelle leur langue bolanci, selon le projet de recherche de Russell G. Schuh.",
+            "statement": "Le nom Bolewa est proche de Bolawa, le pluriel que le haoussa donne aux Bole ; le haoussa appelle leur langue bolanci, et le kanouri dit Bolea pour le peuple comme pour la langue, selon le projet de recherche de Russell G. Schuh.",
             "aspect": "usage",
             "sources": [
               {
@@ -280,7 +352,52 @@
                 "url": "https://aflang.humanities.ucla.edu/language-materials/chadic-languages/yobe/bole/",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba. Page non datée, lue le 11 octobre 2026."
+                "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba. Page non datée, lue le 11 octobre 2026 et relue le 3 novembre 2026. Passage lu : le tableau des noms, qui donne pour le haoussa « Babole (m), Baboliya (f) Bolawa (pl) » et « Bolanci », et pour le kanouri « Bolea »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Bolewa est celui qu'emploie une enquête sur les langues du nord-est du Nigeria publiée en 2018 dans la revue de l'Association linguistique du Nigeria. Elle compte le bolewa parmi les langues dominantes de l'État de Gombe, où il est parlé dans quatre zones de gouvernement local, et le relève aussi à Fika, Gulani, Nangere et Potiskum, dans l'État de Yobe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Linguistic Survey of Nigerian Languages: A Preliminary Report of the Languages of the North East Geopolitical Zone",
+                "author": "Escor E. Udosen",
+                "year": 2018,
+                "url": "https://jolan.com.ng/index.php/home/article/view/45",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 365-372",
+                "notes": "Journal of the Linguistic Association of Nigeria, supplément III, 2018 ; l'auteur enseigne à l'université de Calabar. Lu le 3 novembre 2026 dans le PDF de l'article. Passages lus : « with Bolewa and Karai-Karai being the dominant varieties » (État de Gombe) et « Bolewa spoken in four LGAs » ; les tableaux placent le bolewa à Nafada, Funakaye, Dukku et Kwami dans l'État de Gombe, et à Fika, Gulani, Nangere et Potiskum dans l'État de Yobe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bolewa apparaît dans les notes de P. A. Benton sur le bolanchi, publiées en 1912 : leur titre présente cette langue comme celle des « Borlawa » du district de Fika, dans la province du Bornou, et un exemple de phrase écrit Bolewa. C'est la plus ancienne trace de ce nom que nous connaissons ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Bolewa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Languages and Peoples of Bornu, vol. 1 : Notes on Bolanchi",
+                "author": "P. A. Benton",
+                "year": 1968,
+                "url": "https://archive.org/details/rosettaproject_bol_morsyn-1",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 4-6",
+                "notes": "Londres, Frank Cass, 1968, réédition des écrits de P. A. Benton avec une introduction d'A. H. M. Kirk-Greene ; ces notes sur la langue ont paru d'abord en 1912, pendant la période coloniale. Lu le 3 novembre 2026 dans les pages numérisées par le Rosetta Project sur Internet Archive ; le titre a été vérifié sur l'image de la page. Passages lus : « Notes on Bolanchi. The Language Spoken by the Borlawa of Fika District, Bornu Province » et « Bolewa yan sun dal, the Hausas are better than the Kanuri and the Fulani, but the Bolewa are the best of them all »."
               }
             ]
           },
@@ -291,9 +408,8 @@
               "label": "1919"
             },
             "era": "colonial",
-            "statement": "Le nom Bolewa apparaît par écrit dans les notes sur les peuples du nord du Nigeria publiées en 1919, compilées à partir de rapports officiels. Les Bolewa y ont leur centre dans l'État de Fika, et le récit de leur histoire est tiré des chroniques de Fika. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "statement": "Le nom Bolewa sert de titre à la notice que les notes sur les peuples du nord du Nigeria, publiées en 1919, consacrent à ce peuple. Les Bolewa y ont leur centre dans l'État de Fika, et le récit de leur histoire est tiré des chroniques de Fika, tenues en écriture arabe depuis le chef Dunomaisha, vers 1538.",
             "formAsWritten": "Bolewa",
-            "birth": true,
             "sources": [
               {
                 "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
@@ -303,7 +419,7 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "page": "p. 62-63",
-                "notes": "Le Cap, 1919, compilé à partir de rapports officiels, lu dans l'exemplaire numérisé d'Internet Archive. Pour les Bolewa, le livre cite des rapports de plusieurs administrateurs de Bornu et de Gombe."
+                "notes": "Le Cap, 1919, ouvrage de l'époque coloniale compilé à partir de rapports d'administrateurs britanniques, lu dans l'exemplaire numérisé d'Internet Archive le 3 novembre 2026. Le livre cite pour les Bolewa les rapports de plusieurs administrateurs du Bornou et de Gombe. Passage lu : « It was about this time, circ. 1538, that the historian Chief, Dunomaisha, reigned — from whose archives, kept in the Marghaby (Arabic) script, the above information is obtained »."
               }
             ]
           }

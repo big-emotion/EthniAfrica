@@ -48,7 +48,7 @@
     {
       "linguisticFamilyId": "FLG_SONGHAY",
       "finding": "positive_candidate",
-      "candidateNames": ["Kurtey", "Taguru"],
+      "candidateNames": ["Kurtey"],
       "reviewedFiles": [
         "dataset/source/afrik/peuples/FLG_SONGHAY/PPL_DENDI.json",
         "dataset/source/afrik/peuples/FLG_SONGHAY/PPL_KOYRA_BORO_SEYO.json",
@@ -67,17 +67,9 @@
           "excerpt": "Structure clanique patrilinéaire héritée de l'ascendance peule et consolidée par le métissage avec les Songhaï-Zarma. Les clans Kurtey maintiennent des généalogies qui les rattachent à la fois aux Peuls fondateurs et aux populations songhaï-zarma assimilées. Endogamie clanale partielle : préférence pour les alliances matrimoniales au sein du même groupe ou avec les Wogo. Castes spécialisées héritées : pêcheurs (héritage sorko), agriculteurs, éleveurs (héritage peul).",
           "sourceTier": "unresolved",
           "sourceReviewStatus": "review_required"
-        },
-        {
-          "name": "Taguru",
-          "file": "dataset/source/afrik/peuples/FLG_SONGHAY/PPL_ZARMA.json",
-          "fieldPath": "content.historicalRole.kingdomsOrChiefdoms",
-          "excerpt": "Le sultanat de Dosso (fondé vers 1750 par Zarmakoy Aboubacar du clan Taguru) est la principale entité politique zarma historique. Il survit cérémoniellement à ce jour. Zarmakoy Kossom (1856-1865) unifia l'ensemble de la Zarma orientale. Le Zarmakoy de Dosso devint un pilier de l'administration coloniale française, recevant en contrepartie des pouvoirs étendus — l'un des exemples les plus élaborés d'administration indirecte en Afrique francophone. En 1923, la capitale coloniale fut déplacée de Zinder à Niamey, en territoire zarma. L'émirat zarma des Zabarma fonda au 19e siècle un État militaire sur le plateau voltaïque (Burkina Faso actuel, nord du Ghana), sous le commandement de Babatu.",
-          "sourceTier": "unresolved",
-          "sourceReviewStatus": "review_required"
         }
       ],
-      "readerExplanationFr": "Le corpus Songhay fournit deux pistes positives : Kurtey dans une description de structure clanique et Taguru explicitement qualifié de clan dans l'histoire du sultanat de Dosso. Ces passages justifient leur sélection comme candidats, sous réserve d'une attribution de source et d'une revue éditoriale avant toute fiche PAT."
+      "readerExplanationFr": "Le corpus Songhay fournit une piste positive : Kurtey, dans une description de structure clanique. Ce passage justifie sa sélection comme candidat, sous réserve d'une attribution de source et d'une revue éditoriale avant toute fiche PAT."
     },
     {
       "linguisticFamilyId": "FLG_TUU",

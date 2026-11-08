@@ -2,12 +2,12 @@
   "id": "MUS",
   "nameFr": "Maurice",
   "nameEn": "Mauritius",
-  "nameOfficial": "République de Maurice (Republic of Mauritius, Repiblik Moris)",
-  "summary": "Maurice porte le nom d'un prince néerlandais, Maurice de Nassau, qui n'y a jamais mis les pieds. L'île était inhabitée : sa population entière est issue de la colonisation, de l'esclavage et de l'engagisme. Indo-Mauriciens, Créoles, Sino-Mauriciens et Franco-Mauriciens y ont fait du créole mauricien une langue commune.",
-  "etymology": "Le nom \"Maurice\" viendrait du prince Maurice de Nassau (Maurice d'Orange), en l'honneur duquel les Néerlandais auraient nommé l'île en 1598. Le nom créole \"Moris\" serait dérivé de \"Maurice\". L'île était auparavant appelée \"Dina Arobi\" (île déserte) par les Arabes.",
-  "nameOriginActor": "Les Néerlandais ont nommé l'île \"Mauritius\" en l'honneur du prince Maurice de Nassau (Maurice d'Orange), stathouder des Provinces-Unies. Les Français l'ont appelée \"Île de France\" (1715-1810), puis les Britanniques ont restauré le nom \"Mauritius\" (1810).",
+  "nameOfficial": "République de Maurice (Republic of Mauritius ; Repiblik Moris en créole mauricien)",
+  "summary": "Maurice tient son nom de Mauritius, le nom qu'une flotte néerlandaise donne à l'île en 1598 en l'honneur du prince Maurice de Nassau. Avant ce nom, une carte de 1502 la montre sous le nom arabe de Dina Arobi, les Portugais l'appellent Cerne, puis les Français Île de France de 1715 à 1810. L'île était déserte avant l'arrivée des Européens : ses habitants descendent notamment de colons, d'esclaves venus de Madagascar et d'Afrique, et de travailleurs engagés venus surtout d'Inde.",
+  "etymology": "Selon Charles Grant, qui écrit en 1801, le nom Maurice reprend Mauritius, le nom que la flotte néerlandaise de l'amiral Van Neck donne à l'île en septembre 1598, en l'honneur du prince d'Orange ; le rapport colonial britannique de 1952 précise qu'il s'agit de Maurice de Nassau, qui dirigeait alors les Néerlandais. En créole mauricien, la langue la plus parlée dans l'île, le pays s'appelle Moris.",
+  "nameOriginActor": "Selon Charles Grant, c'est l'amiral néerlandais Jacob Corneliszoon van Neck qui nomme l'île Mauritius en 1598, en l'honneur du prince d'Orange. Selon le même auteur, un capitaine de la marine royale française, M. du Fresne, lui donne en 1715 le nom d'Île de France. Après la conquête britannique de 1810, le nom Mauritius redevient celui de l'île.",
   "nameHistory": {
-    "summary": "Le nom Maurice désigne un pays insulaire de l'océan Indien, la République de Maurice, Mauritius en anglais. L'île a porté d'autres noms : Cerne chez les Portugais, puis Île de France de 1715 à 1810. L'île était déserte quand les Européens y sont arrivés. Les sources que nous avons lues expliquent ces noms de façon différente ; nous les présentons plus bas.",
+    "summary": "Le nom Maurice désigne un pays insulaire de l'océan Indien, la République de Maurice, Mauritius en anglais et Moris en créole mauricien. L'île a porté d'autres noms avant celui-ci : Dina Arobi sur une carte de 1502, Cerne chez les Portugais, puis Île de France de 1715 à 1810. L'île était déserte quand les Européens y sont arrivés. Les sources que nous avons lues datent et expliquent ces noms ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Maurice",
@@ -47,6 +47,29 @@
                 "source_kind": "government",
                 "page": "p. 1",
                 "notes": "Nom du pays : Mauritius ; nom de l'État : Republic of Mauritius. Indépendant du Royaume-Uni en 1968, république en 1992."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Maurice se dit Moris en créole mauricien : dans la traduction créole de la Constitution publiée en 2024, l'article 1er nomme l'État « Repiblik Moris », selon le linguiste Arnaud Carpooran.",
+            "aspect": "usage",
+            "formAsWritten": "Repiblik Moris",
+            "sources": [
+              {
+                "title": "Anou Koz Parol-155 – Zourne Mondial Tradiksion 2024: Konstitision Repiblik Moris an Kreol",
+                "author": "Arnaud Carpooran",
+                "year": 2024,
+                "url": "https://www.lemauricien.com/?p=651459",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "citation de l'article 1er",
+                "notes": "Chronique en créole mauricien publiée dans Le Mauricien le 28 septembre 2024. Une équipe de chercheurs publie en version bilingue anglais-créole les cinquante premiers articles de la Constitution ; l'article 1er y devient « Moris enn Leta demokratik souverin ki apel Repiblik Moris »."
               }
             ]
           },
@@ -101,6 +124,16 @@
                 "source_kind": "archive",
                 "page": "page de titre",
                 "notes": "Londres, W. Bulmer, 1801, d'après les papiers du baron Grant, père de l'auteur, qui vécut vingt ans dans l'île ; lu dans l'exemplaire numérisé. Le titre donne les deux noms de l'île : « The History of Mauritius, or the Isle of France »."
+              },
+              {
+                "title": "Colonial Office, Report on Mauritius for the year 1952",
+                "author": "Colonial Office (Royaume-Uni)",
+                "year": 1954,
+                "url": "https://archive.org/details/mauritius-report-1952",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 150-151",
+                "notes": "Rapport annuel du gouvernement colonial britannique sur Maurice, Londres, Her Majesty's Stationery Office, 1954, lu dans la numérisation d'Internet Archive. Chapitre « History » : la principale attaque britannique, lancée en décembre 1810, réussit ; par le traité de Paris de 1814, « Mauritius and its dependencies, including Rodrigues and Seychelles, were then ceded definitely to Great Britain »."
               }
             ]
           },
@@ -132,6 +165,16 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 939",
                 "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot, lu dans l'exemplaire numérisé. Les îles Mascareignes : l'île Bourbon et l'île de France, « île Maurice abandonnée par les Hollandais en 1710 et occupée à partir de l'île Bourbon entre 1715 et 1721 »."
+              },
+              {
+                "title": "Colonial Office, Report on Mauritius for the year 1952",
+                "author": "Colonial Office (Royaume-Uni)",
+                "year": 1954,
+                "url": "https://archive.org/details/mauritius-report-1952",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 149",
+                "notes": "Rapport annuel du gouvernement colonial britannique sur Maurice, Londres, Her Majesty's Stationery Office, 1954, lu dans la numérisation d'Internet Archive. Chapitre « History » : une compagnie néerlandaise s'installe dans l'île en 1638 ; son établissement dure, avec une interruption de 1658 à 1664, jusqu'en 1710."
               }
             ]
           },
@@ -141,7 +184,7 @@
               "to": 1598,
               "label": "Septembre 1598"
             },
-            "statement": "Le nom Mauritius est donné à l'île en septembre 1598, lors du passage d'une flotte néerlandaise commandée par l'amiral Van Neck, en l'honneur du prince d'Orange, selon Charles Grant, qui le tient des récits de ce voyage. C'est la plus ancienne trace de ce nom que le projet connaît. L'île existait avant ce nom ; elle était alors déserte.",
+            "statement": "Le nom Mauritius est donné à l'île en septembre 1598, lors du passage d'une flotte néerlandaise commandée par l'amiral Van Neck, en l'honneur du prince d'Orange, selon Charles Grant, qui le tient des récits de ce voyage. Le rapport colonial britannique de 1952 dit que ce nom honore le prince Maurice de Nassau. C'est la plus ancienne trace de ce nom que nous connaissons. L'île existait avant ce nom ; elle était alors déserte.",
             "formAsWritten": "Mauritius",
             "birth": true,
             "actors": [
@@ -160,6 +203,16 @@
                 "source_kind": "archive",
                 "page": "p. 20-21",
                 "notes": "Londres, W. Bulmer, 1801, d'après les papiers du baron Grant, père de l'auteur, qui vécut vingt ans dans l'île ; lu dans l'exemplaire numérisé. Le 17 septembre 1598, la flotte aperçoit l'île que les Portugais appelaient Cerne ; les marins n'y trouvent aucune trace d'habitants, et « the Admiral named the island Mauritius, in honour of the Prince of Orange »."
+              },
+              {
+                "title": "Colonial Office, Report on Mauritius for the year 1952",
+                "author": "Colonial Office (Royaume-Uni)",
+                "year": 1954,
+                "url": "https://archive.org/details/mauritius-report-1952",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 149",
+                "notes": "Rapport annuel du gouvernement colonial britannique sur Maurice, Londres, Her Majesty's Stationery Office, 1954, lu dans la numérisation d'Internet Archive. Chapitre « History » : « Dutch sailors first visited the island in 1598 and renamed it Mauritius, after their ruler Prince Maurice of Nassau »."
               }
             ]
           }
@@ -222,7 +275,7 @@
               "label": "1715"
             },
             "era": "colonial",
-            "statement": "Le nom Île de France apparaît en 1715, quand un capitaine de la marine royale française, M. du Fresne, aborde au port du nord-ouest, selon Charles Grant, qui s'appuie sur les journaux publiés dans l'île de 1785 à 1788. C'est la plus ancienne trace de ce nom que le projet connaît. L'île portait déjà le nom de Mauritius.",
+            "statement": "Le nom Île de France apparaît en 1715, quand un capitaine de la marine royale française, M. du Fresne, aborde au port du nord-ouest, selon Charles Grant, qui s'appuie sur les journaux publiés dans l'île de 1785 à 1788. Le rapport colonial britannique de 1952 date lui aussi de 1715 ce nom donné par les Français. C'est la plus ancienne trace de ce nom que nous connaissons. L'île portait déjà le nom de Mauritius.",
             "formAsWritten": "Isle of France",
             "birth": true,
             "actors": [
@@ -241,10 +294,49 @@
                 "source_kind": "archive",
                 "page": "p. 29",
                 "notes": "Londres, W. Bulmer, 1801, d'après les papiers du baron Grant, père de l'auteur, qui vécut vingt ans dans l'île ; lu dans l'exemplaire numérisé. « In 1715, M. du Fresne, Captain in the naval service of the King of France, arrived at the north-west port, and gave the island the name which it now bears, of the Isle of France. »"
+              },
+              {
+                "title": "Colonial Office, Report on Mauritius for the year 1952",
+                "author": "Colonial Office (Royaume-Uni)",
+                "year": 1954,
+                "url": "https://archive.org/details/mauritius-report-1952",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 149",
+                "notes": "Rapport annuel du gouvernement colonial britannique sur Maurice, Londres, Her Majesty's Stationery Office, 1954, lu dans la numérisation d'Internet Archive. Chapitre « History » : « The French in 1715 claimed the island and called it \"Ile de France\" » ; ils n'y installent des colons venus de Bourbon qu'à partir de 1722."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1721,
+              "to": 1721,
+              "label": "Septembre 1721"
+            },
+            "era": "colonial",
+            "statement": "Le nom Île de France est écrit en latin, « insulam francicam », sur l'inscription que le capitaine du navire le Triton, Garnier de Fougeray, de Saint-Malo, fixe en septembre 1721 au mât où il hisse le drapeau blanc, quand il prend possession de l'île pour la Compagnie française des Indes. Charles Grant cite ce récit d'après le dictionnaire géographique de La Martinière.",
+            "formAsWritten": "insulam francicam",
+            "actors": [
+              {
+                "name": "Garnier de Fougeray",
+                "role": "capitaine du Triton, auteur de l'inscription"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The History of Mauritius, or the Isle of France, and the Neighbouring Islands",
+                "author": "Charles Grant, vicomte de Vaux",
+                "year": 1801,
+                "url": "https://archive.org/details/historyofmaurit00vaux",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 28, note",
+                "notes": "Londres, W. Bulmer, 1801, d'après les papiers du baron Grant, père de l'auteur, qui vécut vingt ans dans l'île ; lu dans l'exemplaire numérisé. En note, Grant reprend le dictionnaire géographique de La Martinière : l'île de France « was called Mauritius by the Dutch » ; en 1721, le chevalier de Fougeray en prend possession et l'inscription latine veut que l'île soit désormais appelée « insulam francicam »."
               }
             ]
           }
-        ]
+        ],
+        "shortLine": "Le nom donné à l'île par les Français en 1715, porté jusqu'à la conquête britannique de 1810."
       },
       {
         "nameText": "Cerne",
@@ -260,7 +352,7 @@
               "to": 1505,
               "label": "1505"
             },
-            "statement": "Le nom Cerne est le nom portugais de l'île en 1505, selon Charles Grant, qui le lie à sa découverte par Pedro Mascarenhas sous le gouvernement de Francisco de Almeida. C'est la plus ancienne trace de ce nom que le projet connaît. Grant ajoute que les Portugais ne s'y sont pas installés.",
+            "statement": "Le nom Cerne est le nom portugais de l'île en 1505, selon Charles Grant, qui le lie à sa découverte par Pedro Mascarenhas sous le gouvernement de Francisco de Almeida. C'est la plus ancienne trace de ce nom que nous connaissons. Grant ajoute que les Portugais ne s'y sont pas installés.",
             "formAsWritten": "Cerne",
             "birth": true,
             "actors": [
@@ -279,6 +371,27 @@
                 "source_kind": "archive",
                 "page": "p. 18",
                 "notes": "Londres, W. Bulmer, 1801, d'après les papiers du baron Grant, père de l'auteur, qui vécut vingt ans dans l'île ; lu dans l'exemplaire numérisé. « Mascaregnas gave the name of Cerne to the Isle of France » en 1505 ; Grant n'a trouvé aucune trace d'établissement portugais sur l'île au XVIe siècle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1599,
+              "label": "XVIe siècle"
+            },
+            "statement": "Le nom Cerne s'écrit aussi Cerné ou Cirné : l'île apparaît sous ce nom portugais sur de nombreuses cartes du XVIe siècle, selon le rapport colonial britannique de 1952, qui ajoute que le premier Européen à la découvrir serait Domingos Fernandez.",
+            "formAsWritten": "Cerné ou Cirné",
+            "sources": [
+              {
+                "title": "Colonial Office, Report on Mauritius for the year 1952",
+                "author": "Colonial Office (Royaume-Uni)",
+                "year": 1954,
+                "url": "https://archive.org/details/mauritius-report-1952",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 149",
+                "notes": "Rapport annuel du gouvernement colonial britannique sur Maurice, Londres, Her Majesty's Stationery Office, 1954, lu dans la numérisation d'Internet Archive. Chapitre « History » : « The island appears on many sixteenth-century maps with the Portuguese name of Cerné or Cirné » ; « the first European to discover Mauritius is believed to have been Domingos Fernandez »."
               }
             ]
           },
@@ -304,6 +417,61 @@
               }
             ]
           }
+        ],
+        "shortLine": "Le nom portugais de l'île au XVIe siècle, écrit aussi Cerné ou Cirné sur les cartes."
+      },
+      {
+        "nameText": "Dina Arobi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Le nom arabe sous lequel l'île apparaît sur la carte dite de Cantino, en 1502.",
+        "periodLabel": "Carte de 1502",
+        "accounts": [
+          {
+            "period": {
+              "from": 1502,
+              "to": 1502,
+              "label": "1502"
+            },
+            "statement": "Le nom Dina Arobi est celui de l'île Maurice sur la carte dite de Cantino, en 1502, selon le ministère français de la Culture : c'est la première carte qui montre les Mascareignes, sous des noms arabes. C'est la plus ancienne trace de ce nom que nous connaissons.",
+            "formAsWritten": "Dina Arobi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Carte « de Cantino », 1502 — Archéologie dans l'océan Indien",
+                "author": "Ministère de la Culture (France)",
+                "year": null,
+                "url": "https://archeologie.culture.gouv.fr/ocean-indien/fr/media/view/2994",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "notice de la carte",
+                "notes": "Notice d'une reproduction du planisphère conservé à la Biblioteca Estense Universitaria de Modène, sur le site du ministère français de la Culture consacré à l'archéologie de l'océan Indien. « Les Mascareignes y sont représentées pour la première fois, sous des toponymes arabes » : La Réunion sous le nom de Dina Morgabin, Maurice sous celui de Dina Arobi et Rodrigues sous celui de Dina Morare."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1500,
+              "label": "Moyen Âge"
+            },
+            "statement": "Avant le nom Dina Arobi, des marins arabes et malais ont probablement abordé l'île au Moyen Âge, selon le rapport colonial britannique de 1952, qui ajoute que des cartes d'environ 1500 la montrent sous un nom arabe.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Colonial Office, Report on Mauritius for the year 1952",
+                "author": "Colonial Office (Royaume-Uni)",
+                "year": 1954,
+                "url": "https://archive.org/details/mauritius-report-1952",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 149",
+                "notes": "Rapport annuel du gouvernement colonial britannique sur Maurice, Londres, Her Majesty's Stationery Office, 1954, lu dans la numérisation d'Internet Archive. Chapitre « History » : « The island of Mauritius was probably visited both by Arab sailors and by Malays during the Middle Ages ; and on maps of about 1500 it is shown with an Arabic name »."
+              }
+            ]
+          }
         ]
       }
     ]
@@ -311,27 +479,19 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Dina Arobi (arabe, « île déserte »)",
-        "Mauritius (néerlandais, 1598)",
+        "Dina Arobi (carte de 1502)",
+        "Cerne (nom portugais, XVIe siècle)",
         "Île de France (1715-1810)"
       ],
-      "antiquity": "L'île Maurice était inhabitée. Les Arabes l'ont appelée \"Dina Arobi\" (île déserte) mais ne l'ont pas colonisée.",
-      "middleAges": "L'île reste inhabitée. Les Arabes connaissent l'île mais ne s'y installent pas.",
-      "precolonial": "L'île reste inhabitée jusqu'à l'arrivée des Européens. Pas de nom unifié avant la colonisation.",
-      "colonization": "1598 : Arrivée des Néerlandais, nom \"Mauritius\" (en l'honneur du prince Maurice de Nassau). 1638-1710 : Colonisation néerlandaise (abandonnée en 1710). 1715-1810 : Colonisation française, nom \"Île de France\". 1810-1968 : Colonisation britannique, nom \"Mauritius\" restauré.",
-      "contemporary": "1968 : Indépendance, République de Maurice. Le nom \"Maurice\" est officiel en français, \"Mauritius\" en anglais, \"Moris\" en créole."
+      "antiquity": "Selon Charles Grant, en 1801, le nom portugais Cerne viendrait de Cerna Ethiopia, le nom que Pline l'Ancien donne à Madagascar. Grant ajoute que rien ne montre que les auteurs anciens aient connu l'île Maurice elle-même.",
+      "middleAges": "Des marins arabes et malais ont probablement abordé l'île au Moyen Âge, selon le rapport colonial britannique de 1952. Sur la carte dite de Cantino, en 1502, l'île porte un nom arabe, Dina Arobi, à côté de Dina Morgabin pour La Réunion et de Dina Morare pour Rodrigues.",
+      "precolonial": "Au XVIe siècle, des marins portugais passent plusieurs fois dans l'île et les cartes la nomment Cerne, Cerné ou Cirné. Charles Grant date ce nom de 1505 et n'a trouvé aucune trace d'un établissement portugais. En septembre 1598, une flotte néerlandaise la nomme Mauritius, en l'honneur du prince Maurice de Nassau. L'île est alors déserte.",
+      "colonization": "Le nom Mauritius reste celui de l'île pendant l'occupation néerlandaise, de 1638 à 1710. En 1715, les Français la renomment Île de France, et l'inscription de prise de possession de 1721 l'écrit en latin « insulam francicam ». Après la conquête britannique de décembre 1810, puis le traité de Paris de 1814, l'île redevient Mauritius.",
+      "contemporary": "Depuis l'indépendance du 12 mars 1968, Mauritius est le nom de l'État, devenu en 1992 la République de Maurice, Republic of Mauritius en anglais. En créole mauricien, la traduction de la Constitution publiée en 2024 l'appelle Repiblik Moris."
     },
     "kingdoms": [
       {
-        "name": "Île déserte",
-        "period": "Avant 1598",
-        "entryType": "polity",
-        "dominantPeoples": ["Aucun (île inhabitée)"],
-        "politicalCenters": ["Aucun"],
-        "historicalRole": "L'île Maurice était inhabitée avant l'arrivée des Européens. Les Arabes connaissaient l'île mais ne l'ont pas colonisée."
-      },
-      {
-        "name": "Colonie néerlandaise",
+        "name": "Établissement néerlandais de Mauritius",
         "period": "1638-1710",
         "entryType": "colonial",
         "timeRange": {
@@ -339,12 +499,15 @@
           "endYear": 1710,
           "precision": "year"
         },
-        "dominantPeoples": ["Néerlandais", "esclaves africains et malgaches"],
-        "politicalCenters": ["Port-Louis (établissement néerlandais)"],
-        "historicalRole": "Première colonisation européenne, introduction d'esclaves africains et malgaches, exploitation du bois d'ébène, abandon de la colonie en 1710."
+        "dominantPeoples": ["Néerlandais", "esclaves venus de Madagascar"],
+        "politicalCenters": [
+          "Port du sud-est de l'île",
+          "Port du nord-ouest de l'île"
+        ],
+        "historicalRole": "Une compagnie néerlandaise s'installe dans l'île en 1638 et y reste, avec une interruption de 1658 à 1664, jusqu'en 1710, selon le rapport colonial britannique de 1952. Les colons ne dépassent guère trois cents personnes, esclaves compris, et ces esclaves viennent de Madagascar. Les Néerlandais exploitent les forêts d'ébène, et le dodo disparaît pendant leur occupation. Selon Charles Grant, ils s'installent d'abord au port du sud-est, puis au port du nord-ouest, plus facile à quitter."
       },
       {
-        "name": "Colonie française (Île de France)",
+        "name": "Colonie française de l'Île de France",
         "period": "1715-1810",
         "entryType": "colonial",
         "timeRange": {
@@ -353,15 +516,14 @@
           "precision": "year"
         },
         "dominantPeoples": [
-          "Français",
-          "esclaves africains et malgaches",
-          "colons français"
+          "colons français",
+          "esclaves venus de Madagascar et d'Afrique"
         ],
-        "politicalCenters": ["Port-Louis (capitale)"],
-        "historicalRole": "Colonisation française intensive, développement de l'économie sucrière, importation massive d'esclaves africains et malgaches, développement du créole mauricien, base navale française dans l'océan Indien."
+        "politicalCenters": ["Port-Louis"],
+        "historicalRole": "Les Français revendiquent l'île en 1715 et y installent des colons venus de l'île Bourbon, La Réunion d'aujourd'hui, à partir de 1722. La Compagnie française des Indes la gouverne jusque vers 1767, puis des officiers du roi jusqu'en 1810. La population passe d'environ mille habitants en 1735 à près de soixante mille en 1797, dont cinquante mille esclaves venus de Madagascar et d'Afrique, selon le rapport colonial britannique de 1952. L'île sert alors de base aux flottes françaises qui combattent les Britanniques dans l'océan Indien."
       },
       {
-        "name": "Colonie britannique",
+        "name": "Colonie britannique de Mauritius",
         "period": "1810-1968",
         "entryType": "colonial",
         "timeRange": {
@@ -370,112 +532,102 @@
           "precision": "year"
         },
         "dominantPeoples": [
-          "Britanniques",
-          "Créoles mauriciens",
-          "immigrants indiens",
-          "immigrants chinois"
+          "administration britannique",
+          "Franco-Mauriciens",
+          "Indo-Mauriciens",
+          "Créoles"
         ],
-        "politicalCenters": ["Port-Louis (capitale)"],
-        "historicalRole": "Colonisation britannique, abolition de l'esclavage (1835), immigration massive d'Indiens (travailleurs engagés, 1834-1920), immigration chinoise (commerce), développement de la société multiethnique, mouvements nationalistes (XXe siècle)."
+        "politicalCenters": ["Port-Louis"],
+        "historicalRole": "Les Britanniques prennent l'île en décembre 1810, et le traité de Paris de 1814 la leur cède avec Rodrigues et les Seychelles. La colonie vit surtout du sucre. Après l'abolition de l'esclavage dans l'Empire britannique en 1834, près d'un demi-million de travailleurs engagés, venus surtout d'Inde, arrivent à Maurice pour les plantations de canne, selon l'Aapravasi Ghat Trust Fund. Les Européens de l'île restent surtout français de langue, selon le rapport colonial de 1952."
+      },
+      {
+        "name": "République de Maurice",
+        "period": "Depuis 1968",
+        "entryType": "modern",
+        "timeRange": {
+          "startYear": 1968,
+          "ongoing": true,
+          "precision": "year"
+        },
+        "dominantPeoples": [
+          "Indo-Mauriciens",
+          "Créoles",
+          "Sino-Mauriciens",
+          "Franco-Mauriciens"
+        ],
+        "politicalCenters": ["Port-Louis"],
+        "historicalRole": "Maurice devient indépendante du Royaume-Uni le 12 mars 1968, puis une république en 1992, selon le Permanent Committee on Geographical Names. Sa capitale est Port-Louis. L'État comprend aussi Rodrigues, qui a un statut d'autonomie, et les îles Agaléga."
       }
     ],
     "majorPeoples": [
       {
         "name": "Indo-Mauriciens",
-        "selfAppellation": "Variées selon les groupes (Hindous, Musulmans, Tamouls, Telugu, Marathi, etc.)",
+        "selfAppellation": null,
         "exonyms": [
-          "\"Coolies\" (terme colonial péjoratif pour les travailleurs engagés indiens)",
-          "\"Indiens\" (terme générique)"
+          "Indo-Mauritian (catégorie des rapports coloniaux britanniques)",
+          "Coolies (nom des travailleurs engagés venus d'Inde)"
         ],
         "peopleId": "PPL_INDO_MAURICIENS",
-        "mainRegion": "Toutes les régions de Maurice, majoritaires",
+        "mainRegion": "Île Maurice",
         "languages": [
-          "Hindi",
-          "ourdou",
-          "tamoul",
-          "telugu",
-          "marathi",
-          "bhojpuri",
-          "créole mauricien",
-          "anglais",
-          "français"
+          "créole mauricien (mfe)",
+          "bhojpuri (bho)",
+          "hindi (hin)",
+          "tamoul (tam)",
+          "ourdou (urd)",
+          "telugu (tel)",
+          "marathi (mar)"
         ],
         "languageFamily": "FLG_CREOLE",
-        "appellationRemarks": "Le terme \"Coolie\" est un terme colonial péjoratif utilisé pour désigner les travailleurs engagés indiens. Il doit être évité. Les Indo-Mauriciens sont majoritairement hindous, avec des minorités musulmanes et chrétiennes. Ils sont descendants d'immigrants indiens arrivés entre 1834 et 1920 comme travailleurs engagés dans les plantations de canne à sucre."
+        "appellationRemarks": "Le rapport colonial britannique de 1952 appelle « Indo-Mauritian » les immigrants indiens et leurs descendants. Le mot coolie désigne au XIXe siècle un travailleur poussé à quitter l'Inde ou la Chine pour les plantations de Maurice, dans une condition parfois très proche de l'esclavage, selon le glossaire Hobson-Jobson. La Constitution ne parle pas d'Indo-Mauriciens : elle distingue une communauté hindoue et une communauté musulmane. Nous n'avons pas trouvé de source qui rapporte le nom que se donnent eux-mêmes les Mauriciens d'ascendance indienne."
       },
       {
-        "name": "Créoles mauriciens",
-        "selfAppellation": "Kreol Morisien",
+        "name": "Créoles",
+        "selfAppellation": null,
         "exonyms": [
-          "Créole mauricien (terme utilisé pour les créoles de Maurice)",
-          "\"Noirs\" (terme générique",
-          "peut être problématique)"
+          "Population générale (catégorie de la Constitution, partagée avec les Franco-Mauriciens)"
         ],
         "peopleId": "PPL_CREOLE_MAURICE",
-        "mainRegion": "Toutes les régions de Maurice",
-        "languages": [
-          "Créole mauricien (mfe",
-          "ISO 639-3)",
-          "français",
-          "anglais"
-        ],
+        "mainRegion": "Île Maurice",
+        "languages": ["créole mauricien (mfe)", "français (fra)"],
         "languageFamily": "FLG_CREOLE",
-        "appellationRemarks": "\"Kreol Morisien\" est l'auto-appellation. Les Créoles mauriciens sont descendants d'esclaves africains et malgaches, métissés avec les colons français. Le terme \"Noir\" peut être problématique et doit être utilisé avec précaution. Culture créole riche (séga, musique traditionnelle)."
+        "appellationRemarks": "À Maurice, on appelle créoles les personnes d'origine africaine, et « gens de couleur » les personnes métissées, selon la politiste Catherine Boudet. La Constitution ne leur donne pas de communauté propre : ils font partie de la « population générale », avec les Mauriciens d'origine européenne. L'UNESCO présente le séga tipik comme emblématique de la communauté créole. Nous n'avons pas encore lu de source qui rapporte comment les Créoles de Maurice se nomment eux-mêmes."
       },
       {
         "name": "Sino-Mauriciens",
-        "selfAppellation": "Variées selon les groupes (Chinois mauriciens)",
-        "exonyms": [
-          "\"Chinois\" (terme générique)",
-          "\"Sino-Mauriciens\" (terme descriptif)"
-        ],
+        "selfAppellation": "Sino-Mauriciens",
+        "exonyms": ["« Chinois » (nom employé pour le recensement de 1972)"],
         "peopleId": "PPL_SINO_MAURICIENS",
-        "mainRegion": "Toutes les régions de Maurice, majoritairement urbains",
+        "mainRegion": "Île Maurice",
         "languages": [
-          "Créole mauricien",
-          "français",
-          "anglais",
-          "hakka",
-          "cantonais",
-          "mandarin"
+          "créole mauricien (mfe)",
+          "hakka (hak)",
+          "cantonais (yue)",
+          "mandarin (cmn)"
         ],
         "languageFamily": "FLG_CREOLE",
-        "appellationRemarks": "Les Sino-Mauriciens sont descendants d'immigrants chinois arrivés au XIXe et XXe siècles, principalement pour le commerce. Ils sont majoritairement chrétiens (catholicisme) ou bouddhistes."
+        "appellationRemarks": "La Constitution compte une communauté sino-mauricienne parmi les quatre communautés de Maurice. Le nom est aussi celui d'une association : en 1952, la Sino-Mauritian Association publie à Port-Louis la revue Cosmos, selon le rapport colonial de cette année-là, qui définit la population sino-mauricienne comme les immigrants venus de Chine et leurs descendants."
       },
       {
         "name": "Franco-Mauriciens",
-        "selfAppellation": "Variées selon les groupes (Français mauriciens, Blancs mauriciens)",
-        "exonyms": [
-          "\"Français\" (terme générique)",
-          "\"Blancs\" (terme descriptif",
-          "peut être problématique)",
-          "\"Colons\" (terme historique)"
-        ],
+        "selfAppellation": null,
+        "exonyms": ["« Blancs »"],
         "peopleId": "PPL_FRANCO_MAURICIENS",
-        "mainRegion": "Toutes les régions de Maurice, majoritairement urbains",
-        "languages": ["Français", "créole mauricien", "anglais"],
+        "mainRegion": "Île Maurice",
+        "languages": ["français (fra)", "créole mauricien (mfe)"],
         "languageFamily": "FLG_CREOLE",
-        "appellationRemarks": "Les Franco-Mauriciens sont descendants de colons français. Le terme \"Blanc\" peut être problématique et doit être utilisé avec précaution. Le terme \"Colon\" est historique et doit être contextualisé. Ils sont majoritairement catholiques."
-      },
-      {
-        "name": "Autres groupes",
-        "selfAppellation": "Variées selon les groupes",
-        "exonyms": ["Variées selon les groupes"],
-        "peopleId": null,
-        "mainRegion": "Toutes les régions de Maurice",
-        "languages": [
-          "Créole mauricien",
-          "français",
-          "anglais",
-          "langues diverses"
-        ],
-        "appellationRemarks": "Chaque groupe a sa propre auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Catherine Boudet écrit que la population générale comprend les personnes d'origine européenne, appelées « Blancs » ou « Franco-Mauriciens ». Comme les créoles, elles n'ont pas de communauté propre dans la Constitution. Le rapport colonial britannique de 1952 note que les Européens de l'île restent surtout français de langue. Nous n'avons pas encore lu de source qui dise comment les Franco-Mauriciens se nomment eux-mêmes."
       }
     ],
     "culture": {
       "mainLanguages": [
         {
-          "name": "Anglais",
+          "name": "créole mauricien",
+          "isoCode": "mfe",
+          "isPrimary": true
+        },
+        {
+          "name": "anglais",
           "isoCode": "eng",
           "isPrimary": true
         },
@@ -485,20 +637,24 @@
           "isPrimary": true
         },
         {
-          "name": "créole mauricien",
-          "isoCode": "mfe"
+          "name": "bhojpuri",
+          "isoCode": "bho"
         },
         {
           "name": "hindi",
           "isoCode": "hin"
         },
         {
-          "name": "ourdou",
-          "isoCode": "urd"
+          "name": "bengali",
+          "isoCode": "ben"
         },
         {
           "name": "tamoul",
           "isoCode": "tam"
+        },
+        {
+          "name": "ourdou",
+          "isoCode": "urd"
         },
         {
           "name": "telugu",
@@ -509,8 +665,8 @@
           "isoCode": "mar"
         },
         {
-          "name": "bhojpuri",
-          "isoCode": "bho"
+          "name": "malgache",
+          "isoCode": "mlg"
         },
         {
           "name": "hakka",
@@ -525,19 +681,19 @@
           "isoCode": "cmn"
         }
       ],
-      "culturalTraditions": "Diversité culturelle exceptionnelle reflétant la mosaïque ethnique de Maurice. Traditions indiennes (hindouisme, fêtes indiennes, Diwali, Holi, musique indienne, cuisine indienne). Traditions créoles (séga, musique créole mauricienne, danse créole, culture créole). Traditions chinoises (fêtes chinoises, Nouvel An chinois, cuisine chinoise). Traditions françaises (influence culturelle française, cuisine française). Traditions africaines (héritage des esclaves africains et malgaches). Musique et danse traditionnelles variées. Cérémonies de passage, rites d'initiation, fêtes traditionnelles. Le séga est la musique traditionnelle créole mauricienne.",
-      "dominantReligions": "Hindouisme (majoritaire, environ 48%), christianisme (catholicisme majoritaire, environ 26%), islam (environ 17%), bouddhisme (minorité, Sino-Mauriciens), religions traditionnelles africaines (syncrétisme fréquent)",
-      "lifestyles": "Urbanisation importante (Port-Louis, Curepipe, Quatre Bornes, Vacoas-Phoenix). Économie diversifiée : tourisme (secteur majeur), industrie textile, canne à sucre (agriculture), services financiers (centre financier offshore), pêche, commerce. Économie basée sur les services (tourisme, finance), l'industrie (textile), et l'agriculture (canne à sucre). Maurice est l'un des pays les plus développés d'Afrique.",
-      "socialOrganization": "Société multiethnique et multiculturelle. Structures familiales traditionnelles variées selon les groupes ethniques. Organisation communautaire (communautés indiennes, créoles, chinoises, françaises). Structures étatiques modernes (république parlementaire). Cohabitation pacifique des différentes communautés. Système politique démocratique stable.",
-      "regionalRelations": "Relations avec l'Afrique (membre de l'Union africaine, SADC), relations avec l'Asie (relations avec l'Inde, la Chine), relations avec l'Europe (Union européenne, France, Royaume-Uni), relations avec les îles de l'océan Indien (Seychelles, Réunion, Madagascar). Maurice est un centre financier et touristique régional."
+      "culturalTraditions": "Le séga tipik mauricien est un art du spectacle emblématique de la communauté créole, inscrit en 2014 au patrimoine culturel immatériel de l'UNESCO. Un soliste y improvise des paroles en créole, et un tambour, une boîte-hochet et un triangle donnent le rythme. Le Geet-Gawai, inscrit en 2016, est une cérémonie qui précède le mariage : elle réunit rituels, prières, chants, musique et danse, chez la mariée ou le marié, avec les femmes de la famille et les voisines. Elle est surtout pratiquée par les Mauriciens d'ascendance indienne qui parlent bhojpuri, selon l'UNESCO.",
+      "dominantReligions": "Au recensement de 2022, 47,9 % des habitants de la République de Maurice se déclarent hindous, 24,9 % catholiques, 18,2 % musulmans et 7,4 % d'une autre Église chrétienne, selon Statistics Mauritius. Les bouddhistes et les fidèles de la religion chinoise font 0,4 %, et 0,6 % des habitants disent n'avoir aucune religion.",
+      "lifestyles": "Au recensement de 2022, 39 % des habitants de la République de Maurice vivent en ville et 61 % à la campagne, selon Statistics Mauritius. Le créole est la langue parlée à la maison par 78,6 % des habitants ; le bhojpuri, le français et le hindi viennent loin derrière. Pendant la période coloniale, l'île vit du sucre : le rapport colonial britannique de 1952 cite Joseph Conrad, pour qui toute la population en vit, et la récolte passe de 70 000 tonnes en 1853 à 485 000 tonnes en 1951.",
+      "socialOrganization": "Pour les élections, la Constitution de Maurice distingue quatre communautés : une communauté hindoue, une communauté musulmane, une communauté sino-mauricienne et la « population générale », où se range toute personne qui ne semble pas, par son mode de vie, appartenir aux trois premières. Chaque candidat déclare sa communauté, et certains sièges de l'Assemblée sont encore attribués d'après le recensement de 1972. Selon Catherine Boudet, il est courant de dire que les hindous tiennent le pouvoir politique, les Franco-Mauriciens le pouvoir économique et les musulmans et les Chinois le commerce, mais les groupes restent liés entre eux plus qu'ils ne vivent séparés. Au recensement de 1972, les hindous font 51,8 % de la population, la population générale 28,7 %, les musulmans 16,6 % et les « Chinois » 2,9 %. Depuis 1983, les recensements ne comptent plus les communautés, selon elle : celui de 2022 compte la religion et les langues, pas l'origine des habitants.",
+      "regionalRelations": "Maurice est d'abord liée à Madagascar et à l'Afrique, d'où viennent les esclaves de l'époque française, selon le rapport colonial britannique de 1952. Au XIXe siècle, le dépôt d'immigration de l'Aapravasi Ghat, à Port-Louis, reçoit des travailleurs engagés venus d'Inde, d'Afrique de l'Est, de Madagascar, de Chine et d'Asie du Sud-Est. Aujourd'hui, Maurice réclame les îles Chagos au Royaume-Uni : en 2024, celui-ci a annoncé qu'il lui en rendrait la souveraineté, et un traité a été présenté à son Parlement en mai 2025, selon le Permanent Committee on Geographical Names."
     },
     "historicalFacts": {
-      "ancientPeriods": "L'île Maurice était inhabitée. Les Arabes connaissaient l'île (appelée \"Dina Arobi\", île déserte) mais ne l'ont pas colonisée.",
-      "middleAges": "L'île reste inhabitée. Pas de présence humaine permanente.",
-      "precolonial": "L'île reste inhabitée jusqu'à l'arrivée des Européens. Pas de structures politiques ou sociales.",
-      "colonization": "1598 : Arrivée des Néerlandais, nom \"Mauritius\" (en l'honneur du prince Maurice de Nassau). 1638-1710 : Colonisation néerlandaise (abandonnée en 1710). 1715-1810 : Colonisation française, nom \"Île de France\", développement de l'économie sucrière, importation massive d'esclaves africains et malgaches, développement du créole mauricien. 1810-1968 : Colonisation britannique, abolition de l'esclavage (1835), immigration massive d'Indiens (travailleurs engagés, 1834-1920), immigration chinoise (commerce), développement de la société multiethnique.",
-      "independenceStruggle": "1930s-1968 : Mouvements nationalistes, Parti travailliste mauricien, Seewoosagur Ramgoolam, indépendance (12 mars 1968).",
-      "postIndependence": "République de Maurice (1968), développement économique (tourisme, industrie textile, services financiers), stabilité politique, démocratie multipartite, développement social. Maurice est l'un des pays les plus développés d'Afrique, avec un IDH élevé et une économie diversifiée."
+      "ancientPeriods": "L'île était inhabitée avant l'occupation néerlandaise, selon le rapport colonial britannique de 1952. Selon Charles Grant, rien ne montre que les auteurs de l'Antiquité, Pline l'Ancien compris, aient connu l'île.",
+      "middleAges": "Des marins arabes et malais ont probablement abordé l'île au Moyen Âge, selon le rapport colonial britannique de 1952, mais l'île reste inhabitée jusqu'à l'occupation néerlandaise. Les cartes d'environ 1500, comme celle dite de Cantino en 1502, la nomment Dina Arobi.",
+      "precolonial": "Au XVIe siècle, des marins portugais visitent l'île plusieurs fois sans s'y établir. En 1598, une flotte néerlandaise y fait escale et la nomme Mauritius. Par la suite, des navires néerlandais, anglais, français et danois s'y arrêtent pour l'eau, les vivres et le bois d'ébène. Avant l'occupation néerlandaise, l'île est inhabitée, selon le rapport colonial britannique de 1952.",
+      "colonization": "Une compagnie néerlandaise occupe l'île de 1638 à 1710, avec des esclaves venus de Madagascar ; Charles Grant donne d'autres dates, un établissement réel en 1644 et un abandon en 1712. Les Français la revendiquent en 1715, la nomment Île de France et y font venir des esclaves de Madagascar et d'Afrique : ils sont cinquante mille sur près de soixante mille habitants en 1797. Les Britanniques s'en emparent en 1810. Après l'abolition de l'esclavage dans l'Empire britannique, en 1834, les propriétaires reçoivent deux millions de livres sterling de compensation, et des travailleurs engagés indiens remplacent les esclaves dans les champs. En 1861, sur trois cent mille habitants, près de deux cent mille sont des immigrants venus d'Inde, selon le rapport colonial de 1952.",
+      "independenceStruggle": "Un Conseil législatif avec des membres élus est créé en 1886. En 1947, de nouvelles lettres patentes élargissent le droit de vote, et les élections de 1948 rapprochent l'île de l'autonomie, selon le rapport colonial britannique de 1952. Selon Catherine Boudet, des affrontements entre communautés précèdent l'indépendance. Maurice devient indépendante le 12 mars 1968, et Sir Seewoosagur Ramgoolam occupe à l'Assemblée nationale la fonction de leader de la Chambre, Leader of the House, de mars 1968 à 1982.",
+      "postIndependence": "Maurice devient une république en 1992. En février 1999, la mort en prison du chanteur Kaya provoque les premières émeutes depuis l'indépendance, avec des affrontements entre créoles et hindous, selon Catherine Boudet. En 2024, le Royaume-Uni annonce qu'il rendra à Maurice la souveraineté des îles Chagos ; le traité n'était pas encore ratifié en 2025, selon le Permanent Committee on Geographical Names."
     },
     "sources": [
       {
@@ -585,6 +741,137 @@
         "url": "https://www.unfpa.org/data/world-population/MU",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "2022 Housing and Population Census, Volume II : Demographic and Fertility Characteristics",
+        "author": "Statistics Mauritius",
+        "year": 2024,
+        "url": "https://statsmauritius.govmu.org/Documents/Census_and_Surveys/Census2022/HPC_TR_Vol2_Demography_Yr22%20_120126.pdf",
+        "tier": "referenced",
+        "source_kind": "official_statistics",
+        "notes": "Rapport publié en mai 2024 par l'office statistique de Maurice, lu dans le PDF en ligne. Le recensement de la population a eu lieu du 19 juin au 1er août 2022 et compte 1 233 427 résidents dans la République. Les tableaux portent sur 1 233 097 résidents de Maurice et Rodrigues : 590 263 hindous, 307 515 catholiques, 224 885 musulmans et 90 697 autres chrétiens (tableau D6) ; 968 952 personnes parlent le créole à la maison, 29 840 le français, 29 827 le bhojpuri et 16 684 le hindi (tableau D8). La langue des ancêtres est le créole pour 569 874 personnes et le bhojpuri pour 329 674 (tableau D7). Aucun tableau ne classe les habitants selon leur communauté ou leur origine. Passage lu : p. i-ii, 136-138, 144, 150, 159-160."
+      },
+      {
+        "title": "Constitution of Mauritius, 1968 (révisée en 2016), First Schedule",
+        "author": "République de Maurice",
+        "year": 1968,
+        "url": "https://www.constituteproject.org/constitution/Mauritius_2016",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte lu sur Constitute. Le paragraphe 3 de la première annexe range la population en une communauté hindoue, une communauté musulmane, une communauté sino-mauricienne et la « population générale ». Le paragraphe 5 attribue huit sièges de l'Assemblée d'après « the results of the published 1972 official census of the whole population of Mauritius ». Passage lu : First Schedule, paragraphes 3 et 5."
+      },
+      {
+        "title": "Colonial Office, Report on Mauritius for the year 1952",
+        "author": "Colonial Office (Royaume-Uni)",
+        "year": 1954,
+        "url": "https://archive.org/details/mauritius-report-1952",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Rapport annuel du gouvernement colonial britannique sur Maurice, Londres, Her Majesty's Stationery Office, 1954, lu dans la numérisation d'Internet Archive. Chapitre « History » (p. 149-153) : visites arabes et malaises au Moyen Âge, noms Cerné ou Cirné, nom Mauritius de 1598, établissement néerlandais de 1638 à 1710, nom Île de France de 1715, chiffres de population de 1735 à 1861, compensation de deux millions de livres versée aux propriétaires d'esclaves, travailleurs venus d'Inde, lettres patentes de 1947. Chapitre « Population » (p. 5) : la population est divisée en population générale, Indo-Mauriciens et Sino-Mauriciens ; le recensement du 29 juin 1952 en compte 159 158, 322 972 et 15 757. Liste des périodiques (p. 196) : la revue Cosmos de la Sino-Mauritian Association. Passage lu : p. 5, 149-153, 196."
+      },
+      {
+        "title": "The History of Mauritius, or the Isle of France, and the Neighbouring Islands",
+        "author": "Charles Grant, vicomte de Vaux",
+        "year": 1801,
+        "url": "https://archive.org/details/historyofmaurit00vaux",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Londres, W. Bulmer, 1801, d'après les papiers du baron Grant, père de l'auteur, qui vécut vingt ans dans l'île ; lu dans l'exemplaire numérisé. Noms Cerne et Mauritius (p. 18-21) ; visites néerlandaises dès 1606 et premier établissement réel en 1644 (p. 23) ; abandon de l'île par les Néerlandais en 1712 et inscription latine de 1721 (p. 28) ; passage des Néerlandais du port du sud-est au port du nord-ouest et nom Île de France donné en 1715 (p. 29). Passage lu : p. 18-29."
+      },
+      {
+        "title": "Émeutes et élections à Maurice. La mort de Kaya, aléa ou échec de la construction nationale ?",
+        "author": "Catherine Boudet",
+        "year": 2000,
+        "url": "https://espritcritique.org/numeros/pdf/079153.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article paru dans Politique africaine, n° 79, octobre 2000, p. 153-164, lu dans le fac-similé PDF de la revue. « Depuis 1962, on reconnaît quatre communautés à Maurice » ; la population générale inclut les personnes d'origine européenne, les « Blancs » ou « Franco-Mauriciens », et les personnes d'origine africaine, appelées « créoles ». « D'après le recensement de 1972, les hindous constituaient 51,8 % de la population mauricienne, la population générale 28,7 %, les musulmans 16,6 % et les « Chinois » 2,9 %. Depuis 1983, le critère de communauté est supprimé dans les recensements. » L'article traite aussi des émeutes de 1999 après la mort du chanteur Kaya. Passage lu : p. 154."
+      },
+      {
+        "title": "Aapravasi Ghat World Heritage Site — Outstanding Universal Value",
+        "author": "Aapravasi Ghat Trust Fund",
+        "year": 2023,
+        "url": "https://aapravasi.govmu.org/aapravasi/?page_id=3497",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Déclaration de valeur universelle exceptionnelle du site inscrit en 2006 au patrimoine mondial, publiée par l'organisme public mauricien qui gère le site. Le dépôt d'immigration est construit en 1849 pour recevoir des travailleurs engagés venus d'Inde, d'Afrique de l'Est, de Madagascar, de Chine et d'Asie du Sud-Est, après « the abolition of slavery in the British Empire in 1834 » ; Maurice en reçoit « almost half a million »."
+      },
+      {
+        "title": "UNESCO Patrimoine immatériel — Le séga tipik mauricien traditionnel (inscrit 2014)",
+        "author": "UNESCO",
+        "year": 2014,
+        "url": "https://ich.unesco.org/fr/RL/le-sega-tipik-mauricien-01003",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche de la Liste représentative du patrimoine culturel immatériel de l'humanité. Le séga tipik mauricien traditionnel est un art du spectacle « emblématique de la communauté créole » ; « Chaque soliste improvise des paroles en langue créole, parfois mélangée à d'autres langues », et un tambour, une boîte-hochet et un triangle donnent le rythme."
+      },
+      {
+        "title": "UNESCO Intangible Cultural Heritage — Bhojpuri folk songs in Mauritius, Geet-Gawai (inscribed 2016)",
+        "author": "UNESCO",
+        "year": 2016,
+        "url": "https://ich.unesco.org/en/RL/01178",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche de la Liste représentative du patrimoine culturel immatériel de l'humanité. « Geet-Gawai is a pre-wedding ceremony that combines rituals, prayer, songs, music and dance. » Elle réunit les femmes de la famille et les voisines, et « It is performed mainly by Bhojpuri-speaking communities in Mauritius who have Indian descent. »"
+      },
+      {
+        "title": "Carte « de Cantino », 1502 — Archéologie dans l'océan Indien",
+        "author": "Ministère de la Culture (France)",
+        "year": null,
+        "url": "https://archeologie.culture.gouv.fr/ocean-indien/fr/media/view/2994",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Notice d'une reproduction du planisphère conservé à la Biblioteca Estense Universitaria de Modène, sur le site du ministère français de la Culture consacré à l'archéologie de l'océan Indien. « Les Mascareignes y sont représentées pour la première fois, sous des toponymes arabes » : La Réunion sous le nom de Dina Morgabin, Maurice sous celui de Dina Arobi et Rodrigues sous celui de Dina Morare. Passage lu : notice de la carte."
+      },
+      {
+        "title": "Anou Koz Parol-155 – Zourne Mondial Tradiksion 2024: Konstitision Repiblik Moris an Kreol",
+        "author": "Arnaud Carpooran",
+        "year": 2024,
+        "url": "https://www.lemauricien.com/?p=651459",
+        "tier": "referenced",
+        "source_kind": "press",
+        "notes": "Chronique en créole mauricien publiée dans Le Mauricien le 28 septembre 2024. Une équipe de chercheurs publie en version bilingue anglais-créole les cinquante premiers articles de la Constitution ; l'article 1er y devient « Moris enn Leta demokratik souverin ki apel Repiblik Moris ». Passage lu : citation de l'article 1er."
+      },
+      {
+        "title": "Glottolog — Morisyen (mori1278)",
+        "url": "https://glottolog.org/resource/languoid/id/mori1278",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du morisyen, code ISO 639-3 mfe, langue parlée à Maurice ; noms donnés : créole mauricien, Mauritian Creole, Kreol, Morisyen."
+      },
+      {
+        "title": "Glottolog — Isle-de-France Creole (isle1246)",
+        "url": "https://glottolog.org/resource/languoid/id/isle1246",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog range le morisyen dans un groupe nommé Isle-de-France Creole, d'après l'ancien nom français de l'île."
+      },
+      {
+        "title": "Hobson-Jobson : a glossary of colloquial Anglo-Indian words and phrases, article « Cooly »",
+        "author": "Henry Yule et Arthur Coke Burnell",
+        "year": 1903,
+        "url": "https://archive.org/details/hobsonjobsonbein00yuleuoft",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Nouvelle édition de William Crooke, Londres, Murray, 1903, lue dans la numérisation d'Internet Archive. L'article définit le cooly comme un travailleur loué et, à l'époque moderne, un travailleur poussé à quitter l'Inde ou la Chine pour les plantations de Maurice, de la Réunion ou des Antilles. Passage lu : p. 249-250."
+      },
+      {
+        "title": "Toponymic Factfile: Mauritius",
+        "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+        "year": 2025,
+        "url": "https://assets.publishing.service.gov.uk/media/68aee3232f18566482155890/Mauritius_Toponymic_Factfile.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Fiche toponymique du gouvernement britannique, 2025. Nom de l'État : Republic of Mauritius ; indépendance en 1968, république en 1992. Aucune langue n'est officielle : l'anglais et le français servent dans l'administration et l'enseignement, et le créole mauricien, Kreol Morisien, est la langue commune. En 2024, le Royaume-Uni a annoncé qu'il rendrait les îles Chagos à Maurice ; un traité a été présenté au Parlement en mai 2025 sans être encore ratifié. Passage lu : p. 1-2."
+      },
+      {
+        "title": "Mauritius National Assembly — List of Former Leaders of the House",
+        "author": "Assemblée nationale de Maurice",
+        "year": null,
+        "url": "https://mauritiusassembly.govmu.org/mauritiusassembly/index.php/roles/",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Liste officielle des anciens leaders de la Chambre : Sir Seewoosagur Ramgoolam, de mars 1968 au 23 décembre 1976, puis jusqu'au 30 juin 1982."
       }
     ],
     "demographics": {
@@ -594,42 +881,33 @@
       "peoples": [
         {
           "name": "Indo-Mauriciens",
-          "population": 750000,
-          "percentageInCountry": 57.7,
           "peopleId": "PPL_INDO_MAURICIENS",
-          "region": "Toutes les régions de Maurice",
-          "languageFamily": "FLG_CREOLE"
+          "referenceYear": 1972,
+          "percentageInCountry": 68.4,
+          "percentageInAfrica": null,
+          "region": null,
+          "languageFamily": "FLG_CREOLE",
+          "mainLanguageCode": null
         },
         {
-          "name": "Créoles mauriciens",
-          "population": 400000,
-          "percentageInCountry": 30.8,
-          "peopleId": "PPL_CREOLE_MAURICE",
-          "region": "Toutes les régions de Maurice",
-          "languageFamily": "FLG_CREOLE"
+          "name": "Population générale (Créoles, Franco-Mauriciens et autres)",
+          "peopleId": null,
+          "referenceYear": 1972,
+          "percentageInCountry": 28.7,
+          "percentageInAfrica": null,
+          "region": null,
+          "languageFamily": "FLG_CREOLE",
+          "mainLanguageCode": null
         },
         {
           "name": "Sino-Mauriciens",
-          "population": 30000,
-          "percentageInCountry": 2.3,
           "peopleId": "PPL_SINO_MAURICIENS",
-          "region": "Toutes les régions de Maurice, majoritairement urbains",
-          "languageFamily": "FLG_CREOLE"
-        },
-        {
-          "name": "Franco-Mauriciens",
-          "population": 20000,
-          "percentageInCountry": 1.5,
-          "peopleId": "PPL_FRANCO_MAURICIENS",
-          "region": "Toutes les régions de Maurice, majoritairement urbains",
-          "languageFamily": "FLG_CREOLE"
-        },
-        {
-          "name": "Autres groupes",
-          "population": 100000,
-          "percentageInCountry": 7.7,
-          "peopleId": null,
-          "region": "Toutes les régions de Maurice"
+          "referenceYear": 1972,
+          "percentageInCountry": 2.9,
+          "percentageInAfrica": null,
+          "region": null,
+          "languageFamily": "FLG_CREOLE",
+          "mainLanguageCode": null
         }
       ]
     }

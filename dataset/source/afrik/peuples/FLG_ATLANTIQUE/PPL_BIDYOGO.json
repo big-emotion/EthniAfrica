@@ -8,89 +8,166 @@
     "appellations": {
       "mainName": "Bidyogo",
       "selfAppellation": "Bidyogo",
-      "spellingAliases": ["Bijago"],
-      "exonyms": [
-        "Bijago (portugais)",
-        "Bijagos",
-        "Bissago",
-        "Bidjogo",
-        "Bijagós",
-        "Bijago (français)",
-        "Bugago"
+      "exonyms": ["Bijagó", "Bijagós", "Bissagos", "Bizagots", "Bugago"],
+      "spellingAliases": [
+        "Bijogo",
+        "Bijago",
+        "Bidsogo",
+        "Bidgoro",
+        "bijugu",
+        "bujugu"
       ],
-      "originOfExonyms": "Le terme Bijago (ou Bijagós) est d'usage portugais, utilise depuis les premiers contacts europeens au 15e siecle. Le nom Bidyogo est la forme vernaculaire en langue bidyogo. Le terme Bissago, utilise par les marins portugais, designe a la fois le peuple et l'archipel. L'archipel est appele Bijagós en portugais (Arquipelago dos Bijagós) et Iles Bissagos en français. Bugago est une autre forme du nom, donnée par Joshua Project et par les catalogues de langues que cite Glottolog.",
-      "whyProblematic": "Le bijago a été classé à tort parmi les langues tchadiques. Il appartient aux langues atlantiques du Niger-Congo et présente des liens avec le groupe Bak. Confondre ces familles donne une image inexacte de la langue parlée par les Bidyogo.",
-      "contemporaryUsage": "Le terme Bidyogo est utilise par le groupe lui-meme et dans la litterature scientifique francophone. Bijago est la forme internationale et portugaise. En Guinee-Bissau, la langue est la plus importante de l'archipel dans les zones rurales, meme si le creole guineen (Kriol) est devenu dominant en milieu urbain et scolaire depuis les annees 1990. Le bijago n'est pas enseigne dans les ecoles.",
+      "originOfExonyms": "Le nom Bijagó, au pluriel Bijagós, est le nom portugais des îles, de leurs habitants et de leur langue ; André Álvares de Almada l'écrit dès 1594. Le nom Bidyogo, que Guillaume Segerer écrit Bijogo, serait la forme que ce nom portugais a prise en kriol, le créole de Guinée-Bissau, selon ce linguiste, qui avance cette idée avec prudence. Le nom français Bissagos figure sous la forme Bizagots dans le titre d'un dictionnaire de la fin du XVIIe siècle, puis dans celui d'un rapport militaire français de 1853. Sigismund Koelle écrit Bidsogo ou Bidgoro en 1854. Bugago figure parmi les autres noms de la langue que relève Glottolog.",
+      "whyProblematic": "Le nom Bijagó vient des sources portugaises, et les récits européens qui l'emploient ont longtemps prêté à ses porteurs une « réputation de sauvagerie », selon les mots de Guillaume Segerer, et les ont décrits comme des pirates. Ces récits viennent de voyageurs, de marins et d'officiers qui combattaient les insulaires ou commerçaient avec eux. L'ethnologue Christine Henry relève que le ton des textes du XIXe siècle oscille entre le mépris et la condescendance.",
+      "contemporaryUsage": "Les habitants des îles emploient le nom Bijogo pour eux-mêmes et pour leur langue, en alternance avec le mot portugais Bijagó, qui est le seul nom employé pour les îles, selon Guillaume Segerer. Le recensement de 2009 de la Guinée-Bissau compte ce peuple sous le nom Bijagós. Les ethnologues et linguistes de langue française écrivent le plus souvent Bijogo.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null,
       "linguisticFamily": "FLG_ATLANTIQUE",
-      "ethnoLinguisticGroup": "Niger-Congo, Atlantic-Congo, Atlantique, sous-groupe Bak (proche linguistiquement du Joola Kasa)",
-      "historicalRegion": "Archipel des Bijagos (Arquipelago dos Bijagós), Guinee-Bissau — 88 iles et ilots dans l'ocean Atlantique, au large de la cote ouest-africaine",
+      "ethnoLinguisticGroup": "Niger-Congo, Atlantique-Congo, langues atlantiques. Glottolog place le bijogo dans l'atlantique central ; Guillaume Segerer le rattache, en position marginale, au groupe bak, avec le joola, le manjaku et le balante.",
+      "historicalRegion": "Archipel des Bijagós, au large de l'embouchure du rio Geba, en Guinée-Bissau : une quinzaine d'îles y sont habitées de façon permanente, selon Guillaume Segerer.",
       "currentCountries": ["GNB"]
     },
     "ethnicities": [
-      "Bijago de l'ile de Canhabaque (Roxa) — dialecte Anhaki, initiation fanado la plus longue (jusqu'a 7-8 ans de retraite)",
-      "Bijago de l'ile de Bubaque — dialecte Kagbaaga, ile la plus peuplee",
-      "Bijago des iles Orango et Uno — dialecte Kajoko",
-      "Bijago des iles Caravela et Carache (nord) — dialecte Kamona, quasi inintelligible pour les autres dialectes",
-      "Quatre clans matrilineaires fondateurs : Oraga, Ominca, Ogubane, Oracuma"
+      "Bijogo de Bubaque, Rubane et Soga, au parler kagbaaga",
+      "Bijogo d'Orango, Orangozinho, Uno, Uracane et Unhocomo, au parler kajoko",
+      "Bijogo de Caravela, Caraxe et Maio, au parler kamona",
+      "Añaki, Bijogo de l'île de Canhabaque"
     ],
     "origins": {
-      "ancientOrigins": "Selon la tradition orale bijago, la premiere femme bijago eut quatre filles, ancetres des quatre clans fondateurs (Oraga, Ominca, Ogubane et Oracuma). L'appartenance au clan est transmise par les femmes (matrilineaire). La legende designe l'ile de Canhabaque comme la premiere ile peuplee par les Bijago. Linguistiquement, le bijago est classe dans les langues Niger-Congo (Atlantic-Congo), proche des langues Bak. Des analyses phonologiques recentes (Guillaume Segerer) ont montre que le bijago, bien que tres divergent en apparence, est genetiquement lie aux langues Bak par des changements phonologiques systematiques.",
-      "formationPeriod": "Les Bijago sont etablis dans l'archipel depuis des temps lointains anterieurs aux premiers contacts europeens (15e siecle). Leur puissante marine leur a permis de conserver leur independance face aux Portugais pendant plus de quatre siecles. L'identite bijago distinctive s'est renforcee par l'isolement geographique de l'archipel et par des systemes d'initiation (fanado) transmettant les valeurs et la cosmologie du groupe de generation en generation.",
+      "ancientOrigins": "L'origine des Bijogo est discutée. Selon Guillaume Segerer, certains auteurs placent leur arrivée dans l'archipel au temps de l'expansion mandingue ; pour d'autres, ils auraient chassé des îles une population aujourd'hui installée sur la côte, les Biafada. Il ajoute que ce qui subsiste de la tradition orale ne permet pas de retracer leur arrivée dans les îles. L'ethnologue Christine Henry propose une autre hypothèse, résumée par Dominique Casajus : les Bijogo ne seraient pas originaires des îles, mais s'y seraient réfugiés, probablement au XIIIe siècle, chassés de la côte par les Beafade, eux-mêmes repoussés par les conquêtes malinké.",
+      "formationPeriod": "Les habitants de l'archipel apparaissent pour la première fois dans le récit du navigateur vénitien Alvise Ca' da Mosto, daté de 1456 par Guillaume Segerer et de 1457 par Christine Henry : ses caravelles croisent leurs grandes pirogues, mais personne à bord ne comprend leur langue. Pour Christine Henry, les Bijogo vivaient déjà dans les îles à cette date, sans en être originaires.",
       "migrationRoutes": [
-        "Peuplement de l'archipel depuis le sud du continent selon la tradition orale",
-        "Occupation progressive des 20 iles habitees (sur 88 au total) a partir d'une ile fondatrice (Canhabaque selon la tradition)"
+        "Refuge dans l'archipel depuis la côte, probablement au XIIIe siècle, selon l'hypothèse de Christine Henry rapportée par Dominique Casajus",
+        "Départ de familles du clan Oraga des îles de Caravela et de Carache vers Uno et Orango, selon une légende recueillie en 1946 par Manuel Luiz Silva et rapportée par Christine Henry",
+        "Émigration vers l'île de Bolama, que les Bijogo considèrent plutôt comme une terre d'émigration que comme une terre de peuplement ancien, selon Guillaume Segerer"
       ],
       "historicalSettlementZones": [
-        "Iles habitees de l'archipel des Bijagos : Bubaque (la plus peuplee), Canhabaque (Roxa), Orango, Uno, Caravela, Carache, Formosa, et autres",
-        "20 iles permanentement habitees sur un ensemble de 88 iles et ilots",
-        "Presence recente a Bissau (capitale) et dans d'autres villes de Guinee-Bissau"
+        "Archipel des Bijagós, au large de l'embouchure du rio Geba : une quinzaine d'îles habitées de façon permanente",
+        "Île de Bubaque, devenue l'île principale de l'archipel, et son port relié à Bissau",
+        "Île de Canhabaque, dont les habitants se nomment Añaki"
       ],
-      "unificationsOrDivisions": "L'identite bijago est forte malgre les differences dialectales entre iles. Chaque ile possede son propre chef traditionnel (regulo) et ses propres variantes ceremoniales. Le dialecte Kamona (iles du nord) est inintelligible aux locuteurs des autres dialectes. Les quatre clans (Oraga, Ominca, Ogubane, Oracuma) transcendent les frontieres insulaires et structurent l'appartenance identitaire.",
-      "externalInfluences": "Contacts avec les Portugais depuis 1530 : resistance initiale farouche (destruction d'une expedition de conquete en 1535), puis commerce d'esclaves au 16e siecle (les Bijago raidirent le continent pour fournir des esclaves aux Portugais). Expedition franco-britannique de 1849 repoussee. Annexion formelle par le Portugal en 1937 seulement, apres plusieurs echecs coloniaux. Decennie 1990 : le creole guineen (Kriol) supplante le bijago dans les ecoles et les villes. Depuis 1996, statut de Reserve de Biosphere UNESCO protegeant l'ecologie et la culture de l'archipel. En 2025, l'archipel a ete inscrit au Patrimoine Mondial de l'UNESCO."
+      "unificationsOrDivisions": "Le bijogo change beaucoup d'une île à l'autre. Guillaume Segerer distingue au moins quatre ensembles de parlers, presque tous compris les uns des autres, sauf celui du nord, le kamona, très isolé. Les habitants ressentent pourtant plus vivement les petites différences entre villages voisins que celles d'une île à l'autre. Aux XVIe et XVIIe siècles, les guerres bijogo opposaient parfois deux îles, ou deux villages d'une même île ; des villages et des îles s'alliaient aussi pour lancer des flottes d'une quarantaine de pirogues, selon Christine Henry.",
+      "externalInfluences": "Les navires négriers européens présents dans les eaux de l'archipel ont sans doute intensifié les razzias des Bijogo sur la côte : les captifs étaient échangés contre du bétail, du fer, des tissus ou des marmites, selon Christine Henry, qui reprend l'historien Teixeira da Mota. Aujourd'hui, le kriol, le créole à base portugaise, gagne aussi l'archipel, selon Guillaume Segerer. Des pêcheurs venus du continent, en particulier les Niominka du Sénégal, s'installent dans les îles.",
+      "majorHistoricalEvents": "En février 1853, une expédition française de 612 hommes partie de Gorée débarque à Caravela, mitraille les bois et brûle les villages ; le roi de l'île est tué. Après cette attaque, les habitants de Caravela et de Carache cessent de naviguer, selon Christine Henry. L'île de Canhabaque n'est soumise aux Portugais qu'en 1925, au terme d'une opération militaire qui engage même l'aviation, et ses chefs ne déposent les armes qu'en 1937, selon Dominique Casajus. En 1998, la guerre civile pousse de nombreux réfugiés vers les îles, restées à l'écart des combats, selon Guillaume Segerer."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Chaque ile est dirigee par un regulo (chef traditionnel), la plus haute autorite communautaire. Le regulo preside les ceremonies collectives, notamment les rites d'initiation et les ceremonies liees a la recolte et a la peche. Les decisions importantes sont prises collectivement. Les pretresses (baloberas) ont une autorite religieuse et spirituelle importante dans la direction des ceremonies. La societe bijago est souvent decrite comme matriarcale : les femmes gerent l'economie menagere, le droit, et initialisent la cour amoureuse (elles choisissent leurs maris et peuvent mettre fin au mariage). Des etudes recentes nuancent ce tableau, soulignant que les hommes presidient formellement les ceremonies et que l'inegalite de genre persiste dans certaines spheres.",
-      "clanOrganization": "Societe matrilineaire organisee en quatre clans (Oraga, Ominca, Ogubane, Oracuma). L'appartenance au clan est heritee de la mere. Les femmes sont proprietaires de leurs maisons. Les femmes ainées sont un signe de prosperite familiale. Les decisions matrimoniales sont prises par les femmes.",
-      "ageClassSystems": "Le systeme d'age est structure autour du fanado : deux phases d'initiation (petit fanado et grand fanado, espacees de quelques annees) font passer les jeunes de l'adolescence a l'age adulte. Les classes d'age resultantes structurent les responsabilites et les privileges au sein de la communaute.",
-      "roleOfLineages": "Les lignages matrilineaires (transmis par la mere) determinent l'identite clanique, la propriete fonciere et les droits ceremonials. La maison appartient aux femmes. Les garcons doivent quitter la maison maternelle pour s'installer chez leur epouse apres le mariage.",
-      "religiousAuthority": "Les pretresses bijago, appelees baloberas, sont les gardiennes des ceremonies collectives et des rites d'intercession aupres des esprits (ira). Le regulo (chef) preside les ceremonies d'un point de vue politique. La baloba (hutte-temple au centre du village) est le lieu sacre ou reposent les esprits du sol et ou se tiennent les ceremonies collectives. Les sculpteurs de statuettes sacrees (iran) jouent un role rituel important."
+      "traditionalPoliticalSystem": "Dans chaque village, le pouvoir est détenu, au moins symboliquement, par un roi et une prêtresse, l'okinka, selon Guillaume Segerer ; rois et prêtresses ont presque disparu de l'île de Bubaque. À Canhabaque, le roi veille sur l'objet rituel de la terre du village, garantit sa fertilité, lance les travaux et les rites agraires, et dirige l'initiation des hommes. Il vient d'un autre village et perd tout lien avec lui en devenant roi, selon le livre de Christine Henry résumé par Dominique Casajus.",
+      "clanOrganization": "La société bijogo compte quatre clans, ou lignages, matrilinéaires et exogames : on y appartient par sa mère, et l'on se marie hors de son clan. Certains informateurs n'en comptent que trois, selon Guillaume Segerer. Christine Henry parle de clans et de sous-clans fondés par des ancêtres ; chaque clan possède un elamundi, un esprit qui n'est pas représenté par un objet. Une légende recueillie en 1946 nomme l'un de ces clans, Oraga.",
+      "ageClassSystems": "La vie des hommes suit quatre classes d'âge, selon le livre de Christine Henry résumé par Dominique Casajus. Un garçon devient kanoka à la puberté, puis kalo vers 18 ans. Il est initié entre 30 et 40 ans et devient kabidu ; il devient enfin usuka, un homme accompli. Ce parcours, appelé ŋubir kusina, « honorer les anciens » selon Christine Henry, dure une trentaine d'années. À Canhabaque, un homme doit atteindre le grade d'usuka, vers 40 ou 45 ans, pour avoir droit à la terre, selon Christine Henry.",
+      "roleOfLineages": "L'âge pèse plus que l'appartenance au clan dans le rôle et l'importance de chacun, selon Christine Henry. Les jeunes gens non initiés ne possèdent pas de terre en propre et travaillent pour leur père. Les asuka, les hommes accomplis, sont à la fois les pères et les initiateurs des membres de toutes les autres classes.",
+      "religiousAuthority": "Les Añaki de Canhabaque croient en un dieu créateur et en des puissances intermédiaires entre ce dieu et les hommes, les arebuko (au singulier orebuko), selon Christine Henry. La prêtresse, l'okinka, dispose d'une petite case près du sanctuaire des revenants, le principal du village ; elle reste toujours en relation avec les esprits des morts, alors que les autres femmes ne le sont que lorsqu'un esprit les possède."
     },
     "languages": {
-      "mainLanguage": "Bijago (Bidyogo)",
+      "mainLanguage": "Bijogo (bjg)",
       "isoCodes": ["bjg"],
       "dialects": [
-        "Anhaki (ile de Canhabaque / Roxa)",
-        "Kagbaaga (ile de Bubaque)",
-        "Kajoko (iles d'Orango et Uno)",
-        "Kamona (iles de Caravela et Carache — inintelligible aux autres dialectes)"
+        "kagbaaga (Bubaque, Rubane, Soga)",
+        "kajoko (Orango, Orangozinho, Uno, Uracane, Unhocomo)",
+        "kamona (Caravela, Caraxe, Maio)",
+        "anhaqui (Canhabaque)"
       ],
-      "vehicularRole": "Le bijago est la langue dominante de l'archipel dans les zones rurales et reste la langue maternelle de la quasi-totalite des habitants. Le creole guineen (Kriol) est devenu la langue de l'enseignement et la lingua franca urbaine depuis les annees 1990, supplantant le bijago dans les villes et a l'ecole. Le portugais est la langue officielle de la Guinee-Bissau mais est peu utilise dans la vie quotidienne de l'archipel. Le bijago est classe comme langue stable (statut EGIDS stable) par Ethnologue : tous les enfants l'apprennent encore comme langue maternelle dans les communautes rurales. La langue est classee Niger-Congo, Atlantic-Congo, Atlantique, groupe Bak."
+      "vehicularRole": "Le bijogo est parlé dans tout l'archipel, mais le kriol, le créole de Guinée-Bissau, s'y répand. Les immigrants n'apprennent pas le bijogo, qui se replie sur la vie de famille et les cérémonies, selon Guillaume Segerer. À Bubaque, des enfants bijogo ont déjà le kriol comme première langue."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q859832",
+      "glottocode": "bidy1244",
+      "iso639_3": "bjg"
     },
     "culture": {
-      "majorRites": "Fanado (initiation) : rite de passage fondamental pour les jeunes hommes et les jeunes femmes, realise en deux phases (petit fanado et grand fanado). Pour les garcons, le fanado implique une retraite secrete en foret sacree pendant plusieurs mois (jusqu'a 7-8 ans a Canhabaque), sous la direction des anciens. Les novices apprennent la cosmologie bijago, le respect des femmes, la connaissance des marees, des etoiles et de la nature. Le secret absolu sur le contenu du fanado est oblige. Pour les filles (fanado garandesa, entre 17 et 25 ans), une courte retraite en foret est suivie d'une periode de dances et de chants dans les villages. Lors du petit fanado, les filles recoivent le nom d'un ancetre dont l'ame se reincarne en elles. Funeraires : croyance en la continuite de la vie apres la mort. Des ceremonies invitent l'esprit du defunt a rejoindre le sanctuaire familial. Cycles de vie : periodes de continence sexuelle imposees aux hommes (durant le fanado) et aux femmes (durant les 3 ans d'allaitement et lors de l'election comme pretresse). Ceremonies liees a la recolte et a la peche.",
-      "symbols": "Les masques zoomorphes vache-bruta (vache sauvage), requins, raies et autres animaux marins sont les symboles les plus caracteristiques de l'art bijago. Les autels portatifs des ancetres (iran) — statuettes en bois sacrees representant les esprits — sont les objets rituels les plus importants. Les attributs du fanado (masques en bois, lances, boucliers, coiffes, bracelets) symbolisent le passage a l'age adulte. Les peintures murales polychromes de la baloba representent des scenes de vie quotidienne.",
-      "artsAndMusic": "Sculpture : statuettes iran (autels portatifs des ancetres), masques zoomorphes en bois (vaches, requins, raies), tous destines a des usages rituels. L'art bijago est immediatement reconnaissable et hautement distinct des autres arts tribaux africains. Les objets varies en fonction de l'ile d'origine. Artisanat : objets de la vie quotidienne (tabourets, paniers, vaisselle), tous decores selon une iconographie traditionnelle propre a chaque ile. Objets lies a la peche et a l'agriculture. Musique et danse : danses masquees pour benir les recoltes et les villages sur les iles habitees. Chants collectifs lors des ceremonies de fanado. Traditions orales : transmission des mythes cosmogoniques bijago, notamment le recit de la premiere femme et des quatre clans fondateurs.",
-      "spiritualities": "Religion animiste centree sur les ira (esprits) pouvant prendre des formes humaines, animales et abstraites. La baloba (hutte-temple au centre du village) est la demeure des esprits du sol et le lieu des ceremonies collectives. Les baloberas (pretresses) intercedent aupres des esprits lors des rites de passage, des recoltes, des maladies graves et des ceremonies d'initiation. Cosmologie dualiste : la deesse feminine Moto domine la Terre, le dieu masculin Nindo reside au Ciel. Chaque etre humain possede une mission sur terre revele par la divinite. La croyance en la reincarnation (des morts dans les enfants lors du fanado) est centrale. Les iles non habitees sont considerees comme peuplees uniquement d'esprits. Des ceremonies annuelles sont effectuees sur ces iles sacrees sans y etablir de campements permanents. Rapport etroit entre harmonie sociale, ancestrale et ecologique : la rupture de l'harmonie entre la communaute, les ancetres et le monde surnaturel est consideree comme causant des perturbations environnementales."
+      "majorRites": "L'initiation des hommes commence par l'ambakuti, la cérémonie où la promotion reçoit son nom. Quelques mois plus tard vient le kafioke, une longue suite d'épreuves que les jeunes gens passent dans un camp en forêt, sous l'autorité des anciens. L'initiation des femmes a un autre sens : une femme possédée par l'esprit d'un mort doit initier cet esprit, pour qu'il reprenne sa place dans le cycle des morts et des naissances. Ces rites sont décrits par Christine Henry et résumés par Dominique Casajus. À Bubaque, Guillaume Segerer note qu'ils sont devenus rares et souvent simplifiés.",
+      "symbols": "Les grandes pirogues de guerre portaient une figure de proue sculptée : une tête de taureau à Bubaque, vue par Hugo Bernatzik à la fin des années 1920, ou une tête d'hippopotame sur une carte anglaise du début du XIXe siècle, selon Christine Henry. À Canhabaque, l'orebuko des hommes initiés prend la forme d'une statuette appelée Kalitupa, gardée dans leur sanctuaire.",
+      "artsAndMusic": "La sculpture sur bois domine l'art bijogo : masques, statuettes, ornements de danse et pirogues en miniature, selon l'Institut national de la statistique de Guinée-Bissau. Les rameurs bijogo chantaient de vieux chants de guerre, rythmés par un tambour, d'après le récit de Hugo Bernatzik que cite Christine Henry.",
+      "spiritualities": "Chez les Añaki de Canhabaque, tout être vivant possède un orebuko, un principe vital qui peut grandir, selon Christine Henry. À la mort d'un homme, son orebuko gagne l'au-delà, puis revient se réincarner lors d'une naissance. L'orebuko d'un homme mort avant l'initiation erre en forêt jusqu'à ce qu'il possède une femme. Dans la région de Bolama-Bijagós, le recensement de 2009 compte 30,7 % de chrétiens, 24,6 % d'animistes et 14,9 % de musulmans, toutes origines confondues."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "La societe bijago traditionnelle ne s'est pas organisee en royaumes centralises mais en chefferies insulaires autonomes dirigees chacune par un regulo. L'isolement de l'archipel a permis a chaque ile de maintenir ses propres traditions et structures. Avant l'epoque coloniale, les Bijago etaient reconnus comme d'excellents marins et guerriers : leur puissante marine leur permettait de dominer le commerce cotier de l'Afrique de l'Ouest et de mener des raids sur le continent.",
-      "relationsWithNeighbors": "Dans la periode precoloniale, les Bijago etaient des acteurs importants du commerce cotier et de la traite negriere (ils raidirent le continent pour vendre des esclaves aux Portugais). Leurs rapports avec les populations continentales de la Guinee-Bissau (Mandingues, Fula, Balanta, Peul) etaient souvent conflictuels. Leur isolement geographique leur a permis de maintenir une culture tres distincte jusqu'au 20e siecle.",
-      "conflictsOrAlliances": "1532 : le roi Joao III du Portugal cede des droits nominaux sur les iles a son frere Luis de Beja. 1535 : une expedition de conquete portugaise est detruite par la marine bijago. Jusqu'en 1550 environ, les Bijago refusent tout commerce avec les Portugais. 16e-18e siecle : les Bijago deviennent des fournisseurs actifs d'esclaves pour les Portugais, raidirent le continent pour capturer des esclaves. 1849 : une expedition franco-britannique pour 'pacifier' les iles est repoussee. Debut du 20e siecle : plusieurs 'revoltes fiscales' contre les Portugais sont reprimees. 1937 : annexion formelle de l'archipel par le Portugal.",
-      "diaspora": "Une petite diaspora bijago existe a Bissau (capitale de la Guinee-Bissau) et dans quelques villes cotiers. La diaspora internationale est tres limitee. L'isolement geographique et culturel de l'archipel a historiquement preserve le groupe de la diaspora massive. Le personnage historique Benkos Biohó, ancien roi bijago reduit en esclavage et envoye en Colombie (Cartagena), s'echappa et fonda le village marron de San Basilio de Palenque, aujourd'hui classe au Patrimoine Mondial de l'UNESCO."
+      "kingdomsOrChiefdoms": "Les Bijogo ne forment pas un royaume unique : chaque village a son roi et sa prêtresse. Au XIXe siècle, une dynastie au pouvoir despotique domine l'île d'Orango, selon le livre de Christine Henry résumé par Dominique Casajus.",
+      "relationsWithNeighbors": "Les Bijogo menaient des razzias sur mer et sur la côte, la nuit, contre les villages endormis. Leurs ennemis traditionnels étaient les Beafade, mais ils attaquaient aussi les Mandjaque, les Brame, les Pepel, les Balante et les Nalu, selon Christine Henry. Ils commerçaient aussi : en 1891, ce sont eux qui apportent les vivres à la ville de Bolama, contre du tabac et des perles.",
+      "conflictsOrAlliances": "Les relations avec les Européens sont marquées par de fréquentes escarmouches, parfois meurtrières, selon Guillaume Segerer. En 1853, une expédition française punit l'île de Caravela pour le pillage d'une goélette échouée. Les Portugais mènent ensuite une longue série de campagnes de « pacification » dans l'archipel ; les Bijogo sont la dernière population de Guinée-Bissau à se soumettre, et Canhabaque n'est soumise qu'en 1925.",
+      "diaspora": "Des Bijogo vendus aux Portugais comme esclaves se retrouvent en Sierra Leone : en 1854, Sigismund Koelle recueille à Freetown les mots de deux d'entre eux, installés à Kissy : Rinago, qui avait grandi à Kére, et Aneyaoge, né sur l'île de Wun. Aujourd'hui, l'île de Bolama est surtout pour les Bijogo une terre d'émigration, selon Guillaume Segerer."
     },
     "demography": {
-      "totalPopulation": 40000,
-      "referenceYear": 2025,
-      "source": "Estimations basees sur Wikipedia/Bissagos Archipelago (2006 : 30 000 habitants). SIL Ethnologue — Bijago (bjg) : 36 000 locuteurs natifs (2022). Croissance demographique estimee. Recensement national de Guinee-Bissau 2009 et projections 2025. Seul le GNB (Guinee-Bissau) est retenu comme pays de residence des Bidyogo ; la Guinee (GIN) figurant dans le fichier source original est incorrecte.",
+      "totalPopulation": 30294,
+      "referenceYear": 2009,
+      "source": "Institut national de la statistique de Guinée-Bissau, troisième recensement général de la population et de l'habitat, 2009, volume Características socioculturais, quadro 2 : 30 294 personnes de nationalité bissau-guinéenne se déclarent Bijagós. Ce chiffre ne corrige pas les omissions du recensement, que l'institut estime à 4,6 %. Estimations plus anciennes : entre 10 000 et 20 000 locuteurs selon Guillaume Segerer (2000), environ 16 000 Bijogo selon Dominique Casajus (1994).",
       "distributionByCountry": [
         {
           "country": "GNB",
-          "population": 40000,
-          "note": "Archipel des Bijagos (iles Bubaque, Canhabaque, Orango, Uno, Caravela, Carache et autres), Guinee-Bissau"
+          "population": 30294,
+          "percentage": 100,
+          "note": "Archipel des Bijagós : en 2009, les Bijagós forment 64,3 % des habitants de la région de Bolama-Bijagós."
         }
       ]
     },
+    "gaps": [
+      {
+        "field": "content.demography.distributionByCountry",
+        "reason": "Le recensement de 2009 de la Guinée-Bissau compte les Bijagós de nationalité bissau-guinéenne. Nous n'avons pas trouvé de chiffre publié pour les Bijogo qui vivent dans les pays voisins, au Sénégal ou en Guinée."
+      }
+    ],
     "sources": [
+      {
+        "title": "Guillaume Segerer, Description de la langue bijogo (Guinée Bissau), thèse de doctorat, université Paris III, 2000",
+        "url": "https://theses.hal.science/tel-00347666v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 sur HAL, dans le texte intégral : présentation générale (p. 6-17) sur l'archipel, son histoire, sa population, la société bijogo, les parlers et le nom bijogo."
+      },
+      {
+        "title": "Guillaume Segerer, La langue bijogo de Bubaque (Guinée Bissau), notice HAL de l'ouvrage, 2002",
+        "url": "https://shs.hal.science/halshs-00255876v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Louvain et Paris, Peeters, 2002, collection Afrique et Langage. Lu le 3 novembre 2026 sur HAL : notice et résumé de l'ouvrage, qui décrit le bijogo comme un rameau isolé des langues atlantiques."
+      },
+      {
+        "title": "Guillaume Segerer, From proto-Joola to proto-Bak, communication, 2012",
+        "url": "https://shs.hal.science/halshs-00757402v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Communication au colloque Towards Proto-Niger-Congo, Paris, septembre 2012. Lu le 3 novembre 2026 sur HAL : résumé, qui range le bijogo dans le groupe bak avec le joola, le manjaku et le balante, en position marginale."
+      },
+      {
+        "title": "Christine Henry, Grandeur et décadence des marins bijogo, Cahiers d'études africaines, n° 114, 1989",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1989_num_29_114_1642",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 sur Persée, dans le texte intégral de l'article (p. 193-207)."
+      },
+      {
+        "title": "Christine Henry, Les arebuko des Bijogo (Guinée-Bissau). Culte de possession, objets de puissance, Systèmes de pensée en Afrique noire, n° 12, 1993",
+        "url": "https://journals.openedition.org/span/1319",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Lu le 3 novembre 2026 sur OpenEdition Journals, dans le texte intégral de l'article."
+      },
+      {
+        "title": "Dominique Casajus, La société des contre-exemples, Gradhiva, n° 16, 1994",
+        "url": "https://www.persee.fr/doc/gradh_0764-8928_1994_num_16_1_1557",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Compte rendu du livre de Christine Henry, Les îles où dansent les enfants défunts (CNRS Éditions et Maison des sciences de l'homme, 1994). Lu le 3 novembre 2026 sur Persée, dans le texte intégral."
+      },
+      {
+        "title": "Glottolog 5.3 — Kanyaki-Kagbaaga-Kajoko Bidyogo (bidy1244)",
+        "url": "https://glottolog.org/resource/languoid/id/bidy1244",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue, lue le 3 novembre 2026 : classement, dialectes et autres noms."
+      },
+      {
+        "title": "Instituto Nacional de Estatística da Guiné-Bissau, Terceiro Recenseamento Geral da População e Habitação 2009 : Características socioculturais",
+        "url": "https://www.stat-guinebissau.com/Menu_principal/IV_RGPH/rgph1/caracteristicas_socio_cultural.pdf",
+        "tier": "unverified",
+        "source_kind": "official_statistics",
+        "notes": "Lu le 3 novembre 2026 sur le site de l'institut, en portugais : population par ethnie (quadro 2, p. 25), par ethnie et par région (p. 26), religion par région (p. 28) et art bijagós (p. 14)."
+      },
+      {
+        "title": "Sigismund Wilhelm Koelle, Polyglotta Africana, 1854",
+        "url": "https://archive.org/details/polyglottaafrica00koel",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Londres, Church Missionary House, 1854. Lu le 3 novembre 2026 sur la numérisation d'Internet Archive : remarques sur les deux listes bijogo et leurs informateurs."
+      },
       {
         "title": "SIL Ethnologue — Bijagó (bjg)",
         "url": "https://www.ethnologue.com/language/bjg/",
@@ -144,7 +221,7 @@
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Bidyogo désigne le peuple de l'archipel des Bijagós, en Guinée-Bissau, qui se nomme lui-même Bidyogo ou Bijogo. D'autres noms existent : Bijagó en portugais, Bissagos en français. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Bidyogo désigne le peuple de l'archipel des Bijagós, en Guinée-Bissau, qui se nomme lui-même Bidyogo ou Bijogo. D'autres noms existent : Bijagó en portugais, Bissagos en français. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "Bidyogo",
@@ -174,6 +251,16 @@
                 "source_kind": "academic",
                 "page": "p. 12",
                 "notes": "Louvain et Paris, Peeters, 2002, collection Afrique et Langage, 3. Lu dans le texte que l'auteur met en ligne sur son site le 11 octobre 2026."
+              },
+              {
+                "title": "Description de la langue bijogo (Guinée Bissau)",
+                "author": "Guillaume Segerer",
+                "year": 2000,
+                "url": "https://theses.hal.science/tel-00347666v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Thèse de doctorat en sciences du langage, université Paris III Sorbonne nouvelle, 2000, déposée sur HAL en 2008. Lu le 3 novembre 2026 sur HAL, dans le texte intégral de la thèse."
               }
             ]
           },
@@ -196,6 +283,55 @@
                 "source_kind": "academic",
                 "page": "p. 12",
                 "notes": "Louvain et Paris, Peeters, 2002, collection Afrique et Langage, 3. Lu dans le texte que l'auteur met en ligne sur son site le 11 octobre 2026."
+              },
+              {
+                "title": "Description de la langue bijogo (Guinée Bissau)",
+                "author": "Guillaume Segerer",
+                "year": 2000,
+                "url": "https://theses.hal.science/tel-00347666v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11, note 4",
+                "notes": "Thèse de doctorat en sciences du langage, université Paris III Sorbonne nouvelle, 2000, déposée sur HAL en 2008. Lu le 3 novembre 2026 sur HAL, dans le texte intégral de la thèse."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1933,
+              "to": 1933,
+              "label": "Livre publié en 1933"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bidyogo figure en 1933 dans le titre du livre que le voyageur autrichien Hugo Bernatzik consacre à l'archipel : Geheimnisvolle Inseln Tropen-Afrikas, das Reich der Bidyogo auf den Bissagosinseln, « Îles mystérieuses de l'Afrique tropicale, le royaume des Bidyogo dans les îles Bissagos ». Christine Henry cite sa traduction espagnole, En el reino de los Bidyogo, parue en 1959.",
+            "aspect": "usage",
+            "formAsWritten": "Bidyogo",
+            "actors": [
+              {
+                "name": "Hugo Bernatzik",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Geheimnisvolle Inseln Tropen-Afrikas : das Reich der Bidyogo auf den Bissagosinseln",
+                "author": "Hugo Adolf Bernatzik",
+                "year": 1933,
+                "url": "https://openlibrary.org/books/OL21803343M",
+                "tier": "unverified",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Berlin, Deutsche Buch-Gemeinschaft, 1933, 220 pages. Lu le 3 novembre 2026 : notice de l'édition dans le catalogue de l'Open Library, reprise du catalogue de l'université de Toronto. Nous n'avons pas lu le livre."
+              },
+              {
+                "title": "Grandeur et décadence des marins bijogo, Cahiers d'études africaines, n° 114",
+                "author": "Christine Henry",
+                "year": 1989,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1989_num_29_114_1642",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 193 et p. 206",
+                "notes": "Cahiers d'études africaines, vol. 29, n° 114, 1989, « Rivages I », p. 193-207. Lu le 3 novembre 2026 sur Persée, dans le texte intégral de l'article."
               }
             ]
           },
@@ -206,7 +342,7 @@
               "label": "1854"
             },
             "era": "polity",
-            "statement": "Une forme proche du nom Bidyogo, Bidṣṓgo, coiffe en 1854 deux listes de mots de la Polyglotta Africana du linguiste Sigismund Koelle, l'une de l'île d'Ánkāras, l'autre de l'île de Wūn. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà dans les îles avant elle.",
+            "statement": "Une forme proche du nom Bidyogo, Bidṣṓgo, coiffe en 1854 deux listes de mots de la Polyglotta Africana du linguiste Sigismund Koelle : l'une vient de l'île d'Ánkāras, l'autre de l'île de Wūn, que Guillaume Segerer identifie à Caraxe et à Uno. Koelle écrit aussi Bidsogo ou Bidgoro. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà dans les îles avant elle.",
             "birth": true,
             "sources": [
               {
@@ -219,6 +355,16 @@
                 "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite. Remarques placées sous les parlers « (Bidṣṓgo) Án·kāras » et « (Bidṣṓgo) Wūn » des sections XII-A-a-2a et XII-A-a-2b."
               },
               {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/polyglottaafrica00koel",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "Introductory Remarks, section XII. A. a. 2",
+                "notes": "Londres, Church Missionary House, 1854. Lu le 3 novembre 2026 sur la numérisation d'Internet Archive. Koelle intitule la section « Bidsogo or Bidgoro » et dit que son premier informateur, Rinago ou Thomas Nicol, a grandi à Kére, « one of the Bidsogo capitals », avant d'être vendu aux Portugais ; le second, Aneyaoge ou Zacharias Macauly, est né à Kawun, sur l'île de Wun."
+              },
+              {
                 "title": "La langue bijogo de Bubaque (Guinée-Bissau)",
                 "author": "Guillaume Segerer",
                 "year": 2002,
@@ -227,6 +373,16 @@
                 "source_kind": "academic",
                 "page": "p. 14",
                 "notes": "Louvain et Paris, Peeters, 2002, collection Afrique et Langage, 3. Lu dans le texte que l'auteur met en ligne sur son site le 11 octobre 2026."
+              },
+              {
+                "title": "Description de la langue bijogo (Guinée Bissau)",
+                "author": "Guillaume Segerer",
+                "year": 2000,
+                "url": "https://theses.hal.science/tel-00347666v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "Thèse de doctorat en sciences du langage, université Paris III Sorbonne nouvelle, 2000, déposée sur HAL en 2008. Lu le 3 novembre 2026 sur HAL, dans le texte intégral de la thèse."
               }
             ]
           }
@@ -261,6 +417,37 @@
                 "source_kind": "academic",
                 "page": "p. 12-13",
                 "notes": "Louvain et Paris, Peeters, 2002, collection Afrique et Langage, 3. Lu dans le texte que l'auteur met en ligne sur son site le 11 octobre 2026."
+              },
+              {
+                "title": "Description de la langue bijogo (Guinée Bissau)",
+                "author": "Guillaume Segerer",
+                "year": 2000,
+                "url": "https://theses.hal.science/tel-00347666v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Thèse de doctorat en sciences du langage, université Paris III Sorbonne nouvelle, 2000, déposée sur HAL en 2008. Lu le 3 novembre 2026 sur HAL, dans le texte intégral de la thèse."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "Article publié en 1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Bijogo est aussi la graphie de l'ethnologue Christine Henry. Elle appelle Añaki les Bijogo de l'île de Canhabaque.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les arebuko des Bijogo (Guinée-Bissau). Culte de possession, objets de puissance, Systèmes de pensée en Afrique noire, n° 12",
+                "author": "Christine Henry",
+                "year": 1993,
+                "url": "https://journals.openedition.org/span/1319",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Systèmes de pensée en Afrique noire, n° 12, « Fétiches II », 1993, p. 39-64. Lu le 3 novembre 2026 sur OpenEdition Journals, dans le texte intégral de l'article."
               }
             ]
           }
@@ -282,7 +469,7 @@
               "label": "Livre publié en 2002"
             },
             "era": "modern",
-            "statement": "Le nom Bijagó désigne en portugais les îles, leurs habitants et leur langue, selon Guillaume Segerer ; c'est le seul nom employé pour les îles. On ne sait pas avec certitude d'où il vient.",
+            "statement": "Le nom Bijagó désigne en portugais les îles, leurs habitants et leur langue, selon Guillaume Segerer ; c'est le seul nom employé pour les îles.",
             "aspect": "meaning",
             "sources": [
               {
@@ -294,6 +481,39 @@
                 "source_kind": "academic",
                 "page": "p. 12",
                 "notes": "Louvain et Paris, Peeters, 2002, collection Afrique et Langage, 3. Lu dans le texte que l'auteur met en ligne sur son site le 11 octobre 2026."
+              },
+              {
+                "title": "Description de la langue bijogo (Guinée Bissau)",
+                "author": "Guillaume Segerer",
+                "year": 2000,
+                "url": "https://theses.hal.science/tel-00347666v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Thèse de doctorat en sciences du langage, université Paris III Sorbonne nouvelle, 2000, déposée sur HAL en 2008. Lu le 3 novembre 2026 sur HAL, dans le texte intégral de la thèse."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "Recensement de 2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Bijagós est celui sous lequel le recensement de 2009 de la Guinée-Bissau compte ce peuple : 30 294 personnes de nationalité bissau-guinéenne s'y déclarent Bijagós. Ils forment 64,3 % des habitants de la région de Bolama-Bijagós.",
+            "aspect": "usage",
+            "formAsWritten": "Bijagós",
+            "sources": [
+              {
+                "title": "Terceiro Recenseamento Geral da População e Habitação 2009 : Características socioculturais",
+                "author": "Instituto Nacional de Estatística da Guiné-Bissau",
+                "year": 2009,
+                "url": "https://www.stat-guinebissau.com/Menu_principal/IV_RGPH/rgph1/caracteristicas_socio_cultural.pdf",
+                "tier": "unverified",
+                "source_kind": "official_statistics",
+                "page": "p. 25, quadro 2, et p. 26",
+                "notes": "Volume du troisième recensement général de la population et de l'habitat de la Guinée-Bissau, publié par l'Institut national de la statistique à Bissau, avec l'appui du FNUAP et du PNUD. Lu le 3 novembre 2026 sur le site de l'institut, en portugais."
               }
             ]
           },
@@ -327,7 +547,7 @@
               "label": "1456"
             },
             "era": "polity",
-            "statement": "Le nom Bijagó n'est pas encore écrit quand le navigateur Alvise Ca' da Mosto approche l'archipel : il voit deux grandes îles habitées, mais ne peut pas parler avec leurs habitants, selon Guillaume Segerer.",
+            "statement": "Le nom Bijagó n'est pas encore écrit quand le navigateur vénitien Alvise Ca' da Mosto approche l'archipel : il voit deux grandes îles habitées, mais ne peut pas parler avec leurs habitants, selon Guillaume Segerer. Christine Henry date ce voyage de 1457.",
             "before": true,
             "sources": [
               {
@@ -339,6 +559,26 @@
                 "source_kind": "academic",
                 "page": "p. 9",
                 "notes": "Louvain et Paris, Peeters, 2002, collection Afrique et Langage, 3. Lu dans le texte que l'auteur met en ligne sur son site le 11 octobre 2026."
+              },
+              {
+                "title": "Description de la langue bijogo (Guinée Bissau)",
+                "author": "Guillaume Segerer",
+                "year": 2000,
+                "url": "https://theses.hal.science/tel-00347666v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "Thèse de doctorat en sciences du langage, université Paris III Sorbonne nouvelle, 2000, déposée sur HAL en 2008. Lu le 3 novembre 2026 sur HAL, dans le texte intégral de la thèse."
+              },
+              {
+                "title": "Grandeur et décadence des marins bijogo, Cahiers d'études africaines, n° 114",
+                "author": "Christine Henry",
+                "year": 1989,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1989_num_29_114_1642",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 194",
+                "notes": "Cahiers d'études africaines, vol. 29, n° 114, 1989, « Rivages I », p. 193-207. Lu le 3 novembre 2026 sur Persée, dans le texte intégral de l'article."
               }
             ]
           }
@@ -350,15 +590,68 @@
         "selfGiven": false,
         "languageOfOrigin": "fra",
         "namedBy": null,
-        "shortLine": "Le nom français de l'archipel ; une forme proche est écrite à la fin du XVIIe siècle.",
+        "shortLine": "Le nom français de l'archipel et de ses habitants ; une forme proche est écrite à la fin du XVIIe siècle.",
         "periodLabel": "Fin du XVIIe siècle à aujourd'hui",
         "accounts": [
+          {
+            "period": {
+              "from": 1933,
+              "to": 1933,
+              "label": "Livre publié en 1933"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bissagos sert encore en 1933 à nommer les îles dans le titre allemand du livre de Hugo Bernatzik, qui parle des « Bissagosinseln », les îles Bissagos.",
+            "aspect": "usage",
+            "formAsWritten": "Bissagosinseln",
+            "sources": [
+              {
+                "title": "Geheimnisvolle Inseln Tropen-Afrikas : das Reich der Bidyogo auf den Bissagosinseln",
+                "author": "Hugo Adolf Bernatzik",
+                "year": 1933,
+                "url": "https://openlibrary.org/books/OL21803343M",
+                "tier": "unverified",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Berlin, Deutsche Buch-Gemeinschaft, 1933, 220 pages. Lu le 3 novembre 2026 : notice de l'édition dans le catalogue de l'Open Library, reprise du catalogue de l'université de Toronto. Nous n'avons pas lu le livre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1853,
+              "to": 1853,
+              "label": "1853"
+            },
+            "era": "polity",
+            "statement": "Le nom Bissagos figure en 1853 dans le titre du rapport du capitaine de frégate Bosse sur l'expédition militaire française envoyée cette année-là contre l'île de Caravela : « Rapport sur l'expédition des Bissagos », publié dans la Revue coloniale, selon Christine Henry.",
+            "aspect": "usage",
+            "formAsWritten": "Bissagos",
+            "actors": [
+              {
+                "name": "Bosse, capitaine de frégate",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Grandeur et décadence des marins bijogo, Cahiers d'études africaines, n° 114",
+                "author": "Christine Henry",
+                "year": 1989,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1989_num_29_114_1642",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 202 et p. 206",
+                "notes": "Cahiers d'études africaines, vol. 29, n° 114, 1989, « Rivages I », p. 193-207. Lu le 3 novembre 2026 sur Persée, dans le texte intégral de l'article."
+              }
+            ]
+          },
           {
             "period": {
               "from": null,
               "to": 1700,
               "label": "Fin du XVIIe siècle"
             },
+            "era": "polity",
             "statement": "Une forme proche du nom Bissagos, Bizagots, figure dans le titre d'un dictionnaire français des langues de la concession de la Compagnie royale du Sénégal ; la partie consacrée à cette langue est perdue, selon Guillaume Segerer. C'est la plus ancienne trace de ce nom que le projet connaît. Les habitants des îles vivaient déjà là avant elle.",
             "formAsWritten": "Bizagots",
             "birth": true,
@@ -372,6 +665,16 @@
                 "source_kind": "academic",
                 "page": "p. 14, note 5",
                 "notes": "Louvain et Paris, Peeters, 2002, collection Afrique et Langage, 3. Lu dans le texte que l'auteur met en ligne sur son site le 11 octobre 2026."
+              },
+              {
+                "title": "Description de la langue bijogo (Guinée Bissau)",
+                "author": "Guillaume Segerer",
+                "year": 2000,
+                "url": "https://theses.hal.science/tel-00347666v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11, note 6",
+                "notes": "Thèse de doctorat en sciences du langage, université Paris III Sorbonne nouvelle, 2000, déposée sur HAL en 2008. Lu le 3 novembre 2026 sur HAL, dans le texte intégral de la thèse."
               }
             ]
           }

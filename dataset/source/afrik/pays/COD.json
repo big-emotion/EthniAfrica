@@ -759,7 +759,9 @@
           "datingNote": "Les bornes décrivent l'expansion de plusieurs chefferies et réseaux commerciaux, non celle d'un empire chokwe unifié."
         },
         "dominantPeoples": ["Chokwe"],
-        "politicalCenters": [],
+        "politicalCenters": [
+          "Chefferies dispersées entre les sources du Kwilu et le haut Kasaï, dans l'Angola actuel et le sud-ouest de la RDC actuelle"
+        ],
         "historicalRole": "Plusieurs chefferies et réseaux commerciaux se sont étendus dans les savanes de l'Angola actuel et du sud de la RDC actuelle ; ils ne sont pas présentés comme un empire unique."
       },
       {
@@ -773,7 +775,9 @@
           "datingNote": "Les bornes encadrent plusieurs royaumes reliés mais largement autonomes, et non un État zande unifié."
         },
         "dominantPeoples": ["Zande"],
-        "politicalCenters": [],
+        "politicalCenters": [
+          "Chefferies zande entre l'Uere et l'Uele, dans le nord-est de la RDC actuelle, comme celle de Malinginda, dont la résidence se trouvait sur la rivière Dungu avant 1892"
+        ],
         "historicalRole": "Plusieurs royaumes zande reliés, gouvernés par des souverains avongara, occupaient des espaces aujourd'hui répartis entre le nord-est de la RDC, la République centrafricaine et le Soudan du Sud."
       }
     ],
@@ -781,128 +785,122 @@
       {
         "name": "Luba",
         "selfAppellation": "Baluba",
-        "exonyms": ["Luba (terme utilisé par les Européens)"],
+        "exonyms": ["Luba"],
         "peopleId": "PPL_LUBA",
         "mainRegion": "Kasaï, Katanga (Haut-Lomami, Lualaba)",
-        "languages": ["Tshiluba", "français", "lingala"],
+        "languages": ["Tshiluba (luba-kasaï)", "Kiluba (luba-katanga)"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Luba\" est neutre et accepté. L'auto-appellation \"Baluba\" (pluriel de Muluba) est préférée."
+        "appellationRemarks": "Le peuple se nomme Baluba, et Muluba pour une seule personne. Luba est la forme courte du nom."
       },
       {
         "name": "Kongo",
         "selfAppellation": "Bakongo",
-        "exonyms": ["Kongo (terme utilisé par les Européens)"],
+        "exonyms": ["Kongo", "Congo (dans les textes européens)"],
         "peopleId": "PPL_KONGO",
         "mainRegion": "Kongo Central, Kinshasa ouest",
-        "languages": ["Kikongo", "français", "lingala"],
+        "languages": ["Kikongo"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Kongo\" est neutre et accepté. L'auto-appellation \"Bakongo\" (pluriel de Mukongo) est préférée."
+        "appellationRemarks": "Le peuple se nomme Bakongo, et Mukongo pour une seule personne. Le nom du pays vient de celui du fleuve, lui-même lié au royaume Kongo."
       },
       {
         "name": "Mongo",
         "selfAppellation": "Mongo",
-        "exonyms": ["Mongo (terme utilisé par les Européens)"],
+        "exonyms": ["Mongo"],
         "peopleId": "PPL_MONGO",
         "mainRegion": "Cuvette centrale (Équateur, Tshuapa)",
-        "languages": ["Lomongo", "français", "lingala"],
+        "languages": ["Lomongo"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Mongo\" est neutre et accepté."
+        "appellationRemarks": "Le nom Mongo réunit plusieurs peuples de la cuvette centrale du Congo, qui se nomment eux-mêmes Mongo."
       },
       {
         "name": "Tetela",
         "selfAppellation": "Batetela",
-        "exonyms": ["Tetela (terme utilisé par les Européens)"],
+        "exonyms": ["Tetela"],
         "peopleId": "PPL_TETELA",
         "mainRegion": "Sankuru",
-        "languages": ["Tetela", "français", "lingala"],
+        "languages": ["Tetela"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Tetela\" est neutre et accepté. L'auto-appellation \"Batetela\" (pluriel de Mutetela) est préférée."
+        "appellationRemarks": "Le peuple se nomme Batetela, et Motetela pour une seule personne."
       },
       {
         "name": "Lunda",
         "selfAppellation": "Balunda",
-        "exonyms": ["Lunda (terme utilisé par les Européens)"],
+        "exonyms": ["Lunda"],
         "peopleId": "PPL_LUNDA",
         "mainRegion": "Katanga, frontières angolaises",
-        "languages": ["Lunda", "français", "lingala"],
+        "languages": ["Ruund", "Lunda"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Lunda\" est neutre et accepté. L'auto-appellation \"Balunda\" (pluriel de Mulunda) est préférée."
+        "appellationRemarks": "Selon les régions, le peuple se nomme Ruund ou Balunda. Glottolog distingue deux langues proches, le ruund et le lunda."
       },
       {
         "name": "Tshokwe",
         "selfAppellation": "Tshokwe",
-        "exonyms": ["Tshokwe", "Chokwe (termes utilisés par les Européens)"],
+        "exonyms": ["Chokwe"],
         "peopleId": "PPL_CHOKWE",
         "mainRegion": "Katanga, frontières angolaises",
-        "languages": ["Tshokwe", "français", "lingala"],
+        "languages": ["Chokwe"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Tshokwe\" est neutre et accepté. \"Chokwe\" est une variante orthographique."
+        "appellationRemarks": "Tshokwe et Chokwe sont deux graphies du même nom ; la première est courante dans les publications en français, Glottolog écrit Chokwe."
       },
       {
         "name": "Nande",
         "selfAppellation": "Banande",
-        "exonyms": ["Nande (terme utilisé par les Européens)"],
+        "exonyms": ["Nande"],
         "peopleId": "PPL_NANDE",
         "mainRegion": "Nord-Kivu",
-        "languages": ["Kinande", "français", "swahili"],
+        "languages": ["Kinande"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Nande\" est neutre et accepté. L'auto-appellation \"Banande\" (pluriel de Munande) est préférée."
+        "appellationRemarks": "Le peuple se nomme Banande, et Munande pour une seule personne."
       },
       {
         "name": "Hunde",
         "selfAppellation": "Bahunde",
-        "exonyms": ["Hunde (terme utilisé par les Européens)"],
+        "exonyms": ["Hunde"],
         "peopleId": "PPL_HUNDE",
         "mainRegion": "Nord-Kivu",
-        "languages": ["Hunde", "français", "swahili"],
+        "languages": ["Kihunde"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Hunde\" est neutre et accepté. L'auto-appellation \"Bahunde\" (pluriel de Muhunde) est préférée."
+        "appellationRemarks": "Le peuple se nomme Bahunde ; sa langue est le kihunde."
       },
       {
         "name": "Hutu (Rwandais)",
         "selfAppellation": "Abahutu",
-        "exonyms": [
-          "Hutu (terme utilisé par les Européens)",
-          "parfois utilisé de manière péjorative dans certains contextes historiques"
-        ],
+        "exonyms": ["Hutu", "Wahutu (forme swahilie)"],
         "peopleId": "PPL_RWANDAIS_HUTU",
         "mainRegion": "Sud-Kivu, Nord-Kivu",
-        "languages": ["Kinyarwanda", "français", "swahili"],
+        "languages": ["Kinyarwanda"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Hutu\" peut avoir des connotations négatives dans certains contextes historiques (génocide rwandais). L'auto-appellation \"Abahutu\" est préférée."
+        "appellationRemarks": "Au Rwanda, Hutu désigne l'une des catégories de la société, à côté des Tutsi et des Twa. Abahutu est la forme du pluriel en kinyarwanda."
       },
       {
         "name": "Tutsi (Rwandais)",
         "selfAppellation": "Abatutsi",
-        "exonyms": [
-          "Tutsi (terme utilisé par les Européens)",
-          "parfois utilisé de manière péjorative dans certains contextes historiques"
-        ],
+        "exonyms": ["Tutsi", "Watusi (forme des voyageurs du XIXe siècle)"],
         "peopleId": "PPL_RWANDAIS_TUTSI",
         "mainRegion": "Sud-Kivu, Nord-Kivu",
-        "languages": ["Kinyarwanda", "français", "swahili"],
-        "languageFamily": "FLG_NILOTIQUE",
-        "appellationRemarks": "Le terme \"Tutsi\" peut avoir des connotations négatives dans certains contextes historiques (génocide rwandais). L'auto-appellation \"Abatutsi\" est préférée."
+        "languages": ["Kinyarwanda"],
+        "languageFamily": "FLG_NIGERCONGO",
+        "appellationRemarks": "Au Rwanda, Tutsi désigne l'une des catégories de la société, à côté des Hutu et des Twa. Abatutsi est la forme du pluriel en kinyarwanda."
       },
       {
         "name": "Bemba",
         "selfAppellation": "Bemba",
-        "exonyms": ["Bemba (terme utilisé par les Européens)"],
+        "exonyms": ["Bemba"],
         "peopleId": "PPL_BEMBA",
         "mainRegion": "Katanga sud",
-        "languages": ["Bemba", "français", "lingala"],
+        "languages": ["Bemba"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le terme \"Bemba\" est neutre et accepté."
+        "appellationRemarks": "Le peuple se nomme Babemba. Sa langue, le bemba, est classée par Glottolog comme une langue de Zambie."
       },
       {
         "name": "Lingala (locuteurs)",
         "selfAppellation": "Lingala",
-        "exonyms": ["Lingala (terme utilisé pour la langue véhiculaire)"],
+        "exonyms": ["Bangala (ancien nom)"],
         "peopleId": "PPL_LINGALA",
         "mainRegion": "Kinshasa, Équateur, Province orientale",
-        "languages": ["Lingala", "français"],
+        "languages": ["Lingala"],
         "languageFamily": "FLG_NIGERCONGO",
-        "appellationRemarks": "Le lingala est une langue véhiculaire importante en RDC, parlée par de nombreux groupes ethniques."
+        "appellationRemarks": "Ce nom désigne les gens qui parlent le lingala, une langue commune à des personnes de peuples différents. Ce n'est pas le nom d'un peuple au sens strict."
       }
     ],
     "culture": {
@@ -932,8 +930,8 @@
       "culturalTraditions": "Les arts de cour luba et lunda se sont développés dans des contextes politiques et historiques propres aux savanes du sud de l'Afrique centrale. Un objet de prestige associé à l'autorité fournit un exemple documenté de l'art de cour chokwe. Inscrite par l'UNESCO en 2021, la rumba congolaise est une pratique urbaine partagée avec la République du Congo. Ces exemples situés ne résument pas les traditions de toutes les communautés de la RDC. Dans son rapport à la Commission africaine des droits de l'homme et des peuples couvrant 2003-2007, l'État déclare une population divisée en plus de 450 « tribus » ; ce décompte est celui de l'État, selon son propre critère, et ne se compare pas à ceux d'autres pays.",
       "dominantReligions": "Dans l'enquête démographique et de santé de 2013-2014, menée auprès de femmes et hommes de 15 à 49 ans, les affiliations chrétiennes prédominaient parmi les personnes interrogées, réparties entre plusieurs catégories catholiques, protestantes, kimbanguistes, salutistes et autres chrétiennes. Des réponses musulmanes, animistes, sans religion et autres étaient également recensées. Cet échantillon ne constitue pas un recensement religieux de toute la population.",
       "lifestyles": "Les moyens de subsistance agricoles et les conditions de sécurité alimentaire varient fortement selon les régions et sont affectés par les conflits, les déplacements, les marchés et les chocs climatiques. Le secteur extractif occupe une place majeure dans l'économie nationale, mais cet agrégat ne décrit pas à lui seul les moyens de subsistance des ménages.",
-      "socialOrganization": null,
-      "regionalRelations": null
+      "socialOrganization": "Les sociétés de la RDC actuelle ne partagent pas une seule forme d'organisation. Chez les Kuba, au Kasaï, l'historien Jan Vansina écrit en 1960 que tous les groupes, sauf les Coofa et les Mbeengi, suivent la filiation par la mère. Ils forment des clans divisés en petits lignages qui vivent ensemble ; plusieurs de ces lignages forment un village, dirigé par des dignitaires et par un conseil de leurs chefs. Chez les Kongo vivant au sud du fleuve, l'historienne Anne Hilton décrit les kanda, des groupes de parenté fondés eux aussi sur la filiation par la mère, qui contrôlaient l'accès à la terre ; selon elle, l'essor du royaume Kongo, fondé sur le commerce, a modifié ce modèle. Dans les savanes du sud, selon le Metropolitan Museum of Art, les rois luba ont transmis aux Lunda l'idée d'une royauté sacrée, appelée balopwe. Aujourd'hui, la Constitution de 2006 reconnaît l'autorité coutumière dans son article 207. La loi du 25 août 2015 qui la met en œuvre reconnaît des chefs coutumiers à trois niveaux : la chefferie, le groupement et le village. Ces chefs sont désignés selon la coutume locale, puis reconnus par les pouvoirs publics.",
+      "regionalRelations": "La RDC appartient à plusieurs organisations régionales. Elle est membre de la Communauté économique des États de l'Afrique centrale (CEEAC), qui la présente en 2023 comme un État membre « situé au cœur de la Communauté ». Selon la Communauté de développement de l'Afrique australe (SADC), elle y a été admise en 1998. Le 11 juillet 2022, elle est devenue le septième État partenaire de la Communauté d'Afrique de l'Est (EAC), après avoir déposé son instrument de ratification à Arusha. Plusieurs anciens États débordaient les frontières actuelles : le royaume Kongo s'étendait sur l'Angola, la République du Congo et l'ouest de la RDC, l'État lunda sur l'Angola et la Zambie, et les royaumes zande vers la Centrafrique et le Soudan du Sud. La rumba congolaise, inscrite par l'UNESCO en 2021, est partagée avec la République du Congo. Ces relations ont aussi connu la guerre. Selon les Nations unies, environ 1,2 million de Hutu du Rwanda, dont des personnes qui avaient pris part au génocide, ont fui en 1994 vers le Kivu. Pendant la guerre de 1998, le Rwanda et l'Ouganda ont soutenu la rébellion, tandis que l'Angola, le Tchad, la Namibie et le Zimbabwe ont promis leur appui militaire au président Kabila."
     },
     "historicalFacts": {
       "ancientPeriods": "Dans la dépression de l'Upemba, au sud de la RDC actuelle, plus de quarante sites archéologiques et une séquence de plus de deux millénaires sont recensés, du Later Stone Age aux périodes luba récentes. Cette séquence régionale ne décrit ni tout le territoire national ni une origine unique de ses populations.",
@@ -986,14 +984,14 @@
         "url": "https://82nd-and-fifth.metmuseum.org/toah/ht/09/afc.html",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Chronologie institutionnelle de référence pour les formations luba, lunda, kuba et leurs contextes régionaux."
+        "notes": "Chronologie institutionnelle de référence pour les formations luba, lunda, kuba et leurs contextes régionaux. Passages lu le 3 novembre 2026 : les rois luba « introduce new governmental concepts such as divine kingship (balopwe) southward to the Lunda peoples » ; vers 1625, « King Shyaam aMbul aNgoong (Shyaam the Great) unifies a constellation of chieftancies to form the Kuba kingdom »."
       },
       {
         "title": "Central Africa, 1800-1900 A.D.",
         "url": "https://82nd-and-fifth.metmuseum.org/toah/ht/10/afc.html",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Chronologie institutionnelle de référence pour les formations politiques et réseaux du XIXe siècle en Afrique centrale."
+        "notes": "Chronologie institutionnelle de référence pour les formations politiques et réseaux du XIXe siècle en Afrique centrale. Passage lu le 3 novembre 2026 : « Rise of Chokwe chiefdoms, ca. 1830–1900 »."
       },
       {
         "title": "Kingdoms of the Savanna: The Luba and Lunda Empires — The Metropolitan Museum of Art",
@@ -1070,7 +1068,7 @@
         "url": "https://peacekeeping.un.org/sites/default/files/past/monuc/background.shtml",
         "tier": "official",
         "source_kind": "intergovernmental",
-        "notes": "Chronologie officielle des guerres du Congo, du cessez-le-feu de Lusaka, de la MONUC et de la transition."
+        "notes": "Chronologie officielle des guerres du Congo, du cessez-le-feu de Lusaka, de la MONUC et de la transition. Passages lu le 3 novembre 2026 : « some 1.2 million Rwandese Hutus — including elements who had taken part in the genocide — fled » vers le Kivu ; « Rwanda and Uganda supported the rebel movement, the Congolese Rally for Democracy (RCD) » ; « Angola, Chad, Namibia and Zimbabwe promised President Kabila military support »."
       },
       {
         "title": "Inter-Congolese Negotiations: The Final Act (Sun City Agreement)",
@@ -1154,6 +1152,160 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "Limite de 1700 pour la chronologie orale luba : p. 644. État rund non daté par la tradition orale, mentionné en 1680 : p. 646. Royaume luba d'assez petite taille jusqu'à la fin du XVIIe siècle : p. 647."
+      },
+      {
+        "title": "Jan Vansina, « Recording the Oral History of the Bakuba — II. Results », Journal of African History, vol. 1, n° 2, 1960, p. 257-270",
+        "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/recording-the-oral-history-of-the-bakubaii-results/34DE418529D082D511BA1F944BAF0F52",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'historien publié dans une revue universitaire à comité de lecture ; extrait lu le 3 novembre 2026 sur Cambridge Core : « The social structure of all the Kuba tribes with the exception of Coofa and Mbeengi is matrilineal. They are grouped in matrilineal clans, which are divided in small autonomous residential lineages, which can be called clan-sections. Clan-sections of different clans make up a village. The village is ruled by a set of dignitaries and a general council composed of the clan-section heads. »"
+      },
+      {
+        "title": "Anne Hilton, « Family and Kinship among the Kongo South of the Zaïre River from the Sixteenth to the Nineteenth Centuries », Journal of African History, vol. 24, n° 2, 1983, p. 189-206",
+        "url": "https://www.cambridge.org/core/product/identifier/S0021853700021939/type/journal_article",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'historienne publié dans une revue universitaire à comité de lecture ; résumé lu le 3 novembre 2026 sur Cambridge Core : les kanda sont des « exogamous matrilineal descent groups which controlled access to land » ; « the evolution of the trade-based kingdom of Kongo modified the normative pattern established by the kanda »."
+      },
+      {
+        "title": "République démocratique du Congo, Loi n° 15/015 du 25 août 2015 fixant le statut des chefs coutumiers (texte publié par FAOLEX)",
+        "url": "https://faolex.fao.org/docs/pdf/cng154971.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte de loi congolais, conservé dans la base juridique FAOLEX de la FAO, lu le 3 novembre 2026. Exposé des motifs : « la Constitution du 18 février 2006 reconnaît, en son article 207, l'autorité coutumière ». Article 1er : la loi s'applique au « chef de chefferie », au « chef de groupement » et au « chef de village, désigné conformément à la coutume locale » ; « Est chef coutumier, toute personne désignée conformément à la coutume locale, reconnue par les pouvoirs publics et chargée de diriger une entité coutumière »."
+      },
+      {
+        "title": "East African Community, « The Democratic Republic of the Congo finally becomes the 7th EAC Partner State », communiqué, Arusha, 11 juillet 2022",
+        "url": "https://www.eac.int/press-releases/2526-the-democratic-republic-of-the-congo-finally-becomes-the-7th-eac-partner-state",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Communiqué officiel de la Communauté d'Afrique de l'Est, lu le 3 novembre 2026 : « The Democratic Republic of the Congo (DRC) has finally become a member of the East African Community after depositing the instrument of ratification » ; le secrétaire général déclare : « today 11th July, 2022, the Democratic Republic of Congo has become the 7th Partner State of the East African Community »."
+      },
+      {
+        "title": "SADC — Member States : Democratic Republic of Congo",
+        "url": "https://www.sadc.int/member-states/democratic-republic-congo",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Page officielle de la Communauté de développement de l'Afrique australe, lu le 3 novembre 2026 : la RDC a été « admitted into the Southern African Development Community (SADC) in 1998 »."
+      },
+      {
+        "title": "CEEAC, communiqué de presse annonçant l'arrivée de la mission d'observation électorale de la CEEAC pour les élections du 20 décembre 2023 en RDC, Kinshasa, 14 décembre 2023",
+        "url": "https://www.ceeac-eccas.org/wp-content/uploads/2023/12/COMMUNIQUE-DE-PRESSE-ANNONCANT-LARRIVEE-DE-LA-MIOE-DE-LA-CEEAC-EN-RDC-2023-1.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Communiqué officiel de la Commission de la Communauté économique des États de l'Afrique centrale, lu le 3 novembre 2026. Il parle des « 11 États membres de la CEEAC » et de la RDC comme d'un « important Etat membre, situé au cœur de la Communauté »."
+      },
+      {
+        "title": "M. Coosemans et L. Lotar, « Malinginda », Biographie coloniale belge, t. II, Institut royal colonial belge, 1951, col. 664",
+        "url": "https://www.kaowarsom.be/documents/bbom/Tome_II/Malinginda.pdf",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Document colonial : notice biographique publiée par l'Institut royal colonial belge, mise en ligne par l'Académie royale des sciences d'outre-mer, lu le 3 novembre 2026. Colonne 664 : Malinginda, « Chef zande », fils de Basingbi et frère de Wando ; « Sa chefferie s'étendait au Sud des territoires de Ndoruma (Haut-Uerre) jusque vers l'Uele » ; « Sa résidence était sur la petite rivière Dungu » ; il meurt en 1892 et son fils Mbili « se soumit à l'État Indépendant du Congo le 7 avril 1892 ». Le regard est celui de l'administration coloniale."
+      },
+      {
+        "title": "E. Devroey, Le Kasai et son bassin hydrographique, Institut royal colonial belge, Mémoires",
+        "url": "https://www.vliz.be/imisdocs/publications/ocrd/74/335774.pdf",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Document colonial : mémoire d'un ingénieur de l'administration du Congo belge, dont les données vont jusqu'en 1937 ; numérisé par le VLIZ, lu le 3 novembre 2026. Page 12 : la région « depuis le Kwilu jusqu'au Kasai » est « peuplée par les Batshioko, originaires des sources du Kwilu » ; « Au Kasaï, les Batshioko occupent une grande partie du territoire de Tshikapa ». Le texte emploie le vocabulaire racial de son époque ; nous n'en retenons que la localisation."
+      },
+      {
+        "title": "CountryStudies.us — Lunda and Chokwe Kingdoms, Angola",
+        "url": "https://countrystudies.us/angola/9.htm",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Étude de pays de la Bibliothèque du Congrès des États-Unis, reprise en ligne, lu le 3 novembre 2026. Les Chokwe « migrated from either central Africa or the Upper Kasai region in present-day Zaire » et « rapidly expanded their influence in the northeast and east » ; le centre lunda « was in present-day Zaire's western Shaba Province »."
+      },
+      {
+        "title": "Glottolog 5.3 — Luba-Lulua (luba1249)",
+        "url": "https://glottolog.org/resource/languoid/id/luba1249",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu le 3 novembre 2026 : la fiche Luba-Lulua (code ISO lua), parler du Kasaï classe cette langue dans le groupe bantou étroit (Narrow Bantu) de la famille Atlantic-Congo."
+      },
+      {
+        "title": "Glottolog 5.3 — Luba-Katanga (luba1250)",
+        "url": "https://glottolog.org/resource/languoid/id/luba1250",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu le 3 novembre 2026 : la fiche Luba-Katanga (code ISO lub) classe cette langue dans le groupe bantou étroit (Narrow Bantu) de la famille Atlantic-Congo."
+      },
+      {
+        "title": "Glottolog 5.3 — South-Central Koongo (koon1244)",
+        "url": "https://glottolog.org/resource/languoid/id/koon1244",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu le 3 novembre 2026 : la fiche South-Central Koongo (code ISO kng) classe cette langue dans le groupe bantou étroit (Narrow Bantu) de la famille Atlantic-Congo."
+      },
+      {
+        "title": "Glottolog 5.3 — Mongo (mong1338)",
+        "url": "https://glottolog.org/resource/languoid/id/mong1338",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu le 3 novembre 2026 : la fiche Mongo (code ISO lol), groupe Lomongo classe cette langue dans le groupe bantou étroit (Narrow Bantu) de la famille Atlantic-Congo."
+      },
+      {
+        "title": "Glottolog 5.3 — Tetela (tete1250)",
+        "url": "https://glottolog.org/resource/languoid/id/tete1250",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu le 3 novembre 2026 : la fiche Tetela (code ISO tll) classe cette langue dans le groupe bantou étroit (Narrow Bantu) de la famille Atlantic-Congo."
+      },
+      {
+        "title": "Glottolog 5.3 — Ruund (ruun1238)",
+        "url": "https://glottolog.org/resource/languoid/id/ruun1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu le 3 novembre 2026 : la fiche Ruund (code ISO rnd) classe cette langue dans le groupe bantou étroit (Narrow Bantu) de la famille Atlantic-Congo."
+      },
+      {
+        "title": "Glottolog 5.3 — Lunda (lund1266)",
+        "url": "https://glottolog.org/resource/languoid/id/lund1266",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu le 3 novembre 2026 : la fiche Lunda (code ISO lun) classe cette langue dans le groupe bantou étroit (Narrow Bantu) de la famille Atlantic-Congo."
+      },
+      {
+        "title": "Glottolog — Chokwe (chok1245)",
+        "url": "https://glottolog.org/resource/languoid/id/chok1245",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu le 3 novembre 2026 : la fiche Chokwe (code ISO cjk) classe cette langue dans le groupe bantou étroit (Narrow Bantu) de la famille Atlantic-Congo."
+      },
+      {
+        "title": "Glottolog 5.3 — Nande (nand1264)",
+        "url": "https://glottolog.org/resource/languoid/id/nand1264",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu le 3 novembre 2026 : la fiche Nande (code ISO nnb) classe cette langue dans le groupe bantou étroit (Narrow Bantu) de la famille Atlantic-Congo."
+      },
+      {
+        "title": "Glottolog 5.3 — Hunde (hund1239)",
+        "url": "https://glottolog.org/resource/languoid/id/hund1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu le 3 novembre 2026 : la fiche Hunde (code ISO hke) classe cette langue dans le groupe bantou étroit (Narrow Bantu) de la famille Atlantic-Congo."
+      },
+      {
+        "title": "Glottolog 5.3 — Kinyarwanda (kiny1244)",
+        "url": "https://glottolog.org/resource/languoid/id/kiny1244",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu le 3 novembre 2026 : la fiche Kinyarwanda (code ISO kin) classe cette langue dans le groupe bantou étroit (Narrow Bantu) de la famille Atlantic-Congo."
+      },
+      {
+        "title": "Glottolog 5.3 — Bemba (Zambia) (bemb1257)",
+        "url": "https://glottolog.org/resource/languoid/id/bemb1257",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu le 3 novembre 2026 : la fiche Bemba (Zambia) (code ISO bem) classe cette langue dans le groupe bantou étroit (Narrow Bantu) de la famille Atlantic-Congo."
+      },
+      {
+        "title": "Glottolog 5.3 — Lingala (ling1263)",
+        "url": "https://glottolog.org/resource/languoid/id/ling1263",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde, lu le 3 novembre 2026 : la fiche Kinshasa Lingala (code ISO lin) classe cette langue dans le groupe bantou étroit (Narrow Bantu) de la famille Atlantic-Congo."
       }
     ],
     "demographics": {
@@ -1163,96 +1315,96 @@
       "peoples": [
         {
           "name": "Luba",
-          "percentageInCountry": 18,
-          "percentageInAfrica": 1.28,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "peopleId": "PPL_LUBA",
           "region": "Kasaï, Katanga (Haut-Lomami, Lualaba)",
           "languageFamily": "FLG_NIGERCONGO"
         },
         {
           "name": "Kongo",
-          "percentageInCountry": 12,
-          "percentageInAfrica": 0.86,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "peopleId": "PPL_KONGO",
           "region": "Kongo Central, Kinshasa ouest",
           "languageFamily": "FLG_NIGERCONGO"
         },
         {
           "name": "Mongo",
-          "percentageInCountry": 17,
-          "percentageInAfrica": 1.21,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "peopleId": "PPL_MONGO",
           "region": "Cuvette centrale (Équateur, Tshuapa)",
           "languageFamily": "FLG_NIGERCONGO"
         },
         {
           "name": "Tetela",
-          "population": 7140000,
-          "percentageInCountry": 7,
-          "percentageInAfrica": 0.5,
+          "population": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "peopleId": "PPL_TETELA",
           "region": "Sankuru",
           "languageFamily": "FLG_NIGERCONGO"
         },
         {
           "name": "Lunda",
-          "population": 2040000,
-          "percentageInCountry": 2,
-          "percentageInAfrica": 0.14,
+          "population": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "peopleId": "PPL_LUNDA",
           "region": "Katanga, frontières angolaises",
           "languageFamily": "FLG_NIGERCONGO"
         },
         {
           "name": "Tshokwe",
-          "population": 2040000,
-          "percentageInCountry": 2,
-          "percentageInAfrica": 0.14,
+          "population": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "peopleId": "PPL_CHOKWE",
           "region": "Katanga, frontières angolaises",
           "languageFamily": "FLG_NIGERCONGO"
         },
         {
           "name": "Nande",
-          "population": 2550000,
-          "percentageInCountry": 2.5,
-          "percentageInAfrica": 0.18,
+          "population": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "peopleId": "PPL_NANDE",
           "region": "Nord-Kivu",
           "languageFamily": "FLG_NIGERCONGO"
         },
         {
           "name": "Hunde",
-          "population": 1530000,
-          "percentageInCountry": 1.5,
-          "percentageInAfrica": 0.11,
+          "population": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "peopleId": "PPL_HUNDE",
           "region": "Nord-Kivu",
           "languageFamily": "FLG_NIGERCONGO"
         },
         {
           "name": "Hutu (Rwandais)",
-          "population": 1530000,
-          "percentageInCountry": 1.5,
-          "percentageInAfrica": 0.11,
+          "population": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "peopleId": "PPL_RWANDAIS_HUTU",
           "region": "Sud-Kivu, Nord-Kivu",
           "languageFamily": "FLG_NIGERCONGO"
         },
         {
           "name": "Tutsi (Rwandais)",
-          "population": 1530000,
-          "percentageInCountry": 1.5,
-          "percentageInAfrica": 0.11,
+          "population": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "peopleId": "PPL_RWANDAIS_TUTSI",
           "region": "Sud-Kivu, Nord-Kivu",
-          "languageFamily": "FLG_NILOTIQUE"
+          "languageFamily": "FLG_NIGERCONGO"
         },
         {
           "name": "Bemba",
-          "population": 1020000,
-          "percentageInCountry": 1,
-          "percentageInAfrica": 0.07,
+          "population": null,
+          "percentageInCountry": null,
+          "percentageInAfrica": null,
           "peopleId": "PPL_BEMBA",
           "region": "Katanga sud",
           "languageFamily": "FLG_NIGERCONGO"
@@ -1262,14 +1414,14 @@
           "peopleId": "PPL_LINGALA",
           "region": "Kinshasa, Équateur, Province orientale",
           "languageFamily": "FLG_NIGERCONGO",
-          "percentageInCountry": 0
+          "percentageInCountry": null
         },
         {
           "name": "Autres groupes ethniques",
           "peopleId": null,
           "region": "Divers",
           "languageFamily": null,
-          "percentageInCountry": 34
+          "percentageInCountry": null
         }
       ]
     }

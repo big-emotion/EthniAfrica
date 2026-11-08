@@ -310,34 +310,49 @@
   },
   "content": {
     "searchAnswer": {
-      "lead": "Un nom créé en 1928 par un anthropologue allemand pour désigner des peuples d'Afrique australe selon des critères physiques ; des linguistes l'ont repris pour des langues à clics, sans preuve de parenté.",
+      "lead": "Un nom créé en 1928 par un anthropologue allemand pour classer des peuples d'Afrique australe selon leur corps. Des linguistes l'ont repris pour les langues à clics, sans que leur parenté soit prouvée.",
       "followUp": "Pourquoi n'a-t-on pas pu prouver que toutes les langues à clics sont parentes ?"
     },
     "decolonialHeader": {
-      "whyProblematic": " **1. Contexte eugéniste et colonial :** Leonhard Schultze appartenait au même courant de pensée anthropologique qu'Eugen Fischer (1874-1967), anthropologue allemand dont les travaux sur les populations mixtes de Namibie (notamment *Die Rehobother Bastards und das Bastardierungsproblem beim Menschen*, 1913) ont directement influencé Adolf Hitler dans la rédaction des lois de Nuremberg (1935). Le terme « Khoisan » a donc été créé dans un contexte scientifique européen colonial qui cherchait à classer et hiérarchiser les populations selon des critères raciaux. **2. Catégorisation non génétique :** Le terme « Khoisan » n'est **pas une famille linguistique génétique** : c'est un regroupement typologique basé uniquement sur la présence de consonnes à clics. Les linguistes modernes (notamment Rainer Vossen, Tom Güldemann, Anthony Traill) ont démontré que les langues regroupées sous cette étiquette appartiennent en réalité à trois familles linguistiques distinctes sans parenté génétique prouvée : **Khoe-Kwadi**, **Kx'a** (ou Ju-ǂHoan), et **Tuu** (ou ǃUi-Taa). **3. Homogénéisation problématique :** Le terme regroupe artificiellement des peuples aux cultures, modes de vie et langues distincts (pasteurs Khoekhoe vs chasseurs-cueilleurs San), effaçant leurs spécificités et leurs identités propres. **4. Termes péjoratifs associés :** Plusieurs termes associés — notamment **« Hottentot »** (terme néerlandais utilisé dès le XVIIe siècle, probablement d'origine onomatopéique moqueuse, se référant à leur langue) et **« Bushmen »** — ont été utilisés de manière péjorative, raciste ou exotisante par les colons européens, justifiant des discriminations, spoliations de terres, et même des génocides (génocide des Herero et Nama par les Allemands, 1904-1908). **5. Défenseurs de l'africanité et critiques modernes :** François-Xavier Fauvelle (*L'invention du Hottentot*, 2018) a analysé comment les Européens ont construit des représentations stéréotypées des Khoisan. Des chercheurs africains et des activistes autochtones (comme ceux regroupés dans l'Organisation des premiers peuples Khoisan d'Afrique du Sud) contestent ces catégorisations imposées et revendiquent leurs auto-appellations. **6. Preuves génétiques modernes :** Les études génétiques contemporaines (Carina Schlebusch, 2017 ; Pontus Skoglund, 2017 ; Mark Stoneking) démontrent que les populations San possèdent la plus grande diversité génétique au monde et représentent l'une des plus anciennes lignées humaines, avec une séparation estimée à 260 000-350 000 ans. Ces travaux confirment leur importance dans l'histoire humaine et invalident les catégorisations raciales coloniales. → Afrik utilise **Khoïsan uniquement comme macro-étiquette technique** pour désigner l'aire linguistique à clics d'Afrique australe, tout en reconnaissant que ce sont des familles linguistiques distinctes : **Khoe-Kwadi**, **Kx'a**, **Tuu**.",
-      "selfAppellation": null,
-      "contemporaryUsage": " Catégorie non génétique rassemblant les familles linguistiques à clics d'Afrique australe. **Ce n'est pas une famille linguistique**, mais une *aire linguistique* (sprachbund) caractérisée par la présence de consonnes à clics. Classification académique moderne : trois familles distinctes (Khoe-Kwadi, Kx'a, Tuu) sans parenté génétique prouvée.",
-      "historicalAppellations": ["Hottentot", "Bushmen", "Bochimans"],
-      "originOfHistoricalTerm": " Le terme « Khoisan » a été créé en 1928 par l'anthropologue et médecin allemand Leonhard Schultze (1871-1955), dans son ouvrage *Zur Kenntnis des Körpers der Hottentotten und Buschmänner* (Jena: Gustav Fischer, 1928). Schultze, membre d'une expédition scientifique allemande en Afrique du Sud-Ouest (actuelle Namibie) entre 1926 et 1927, a combiné les termes « Khoi » (du nom Khoikhoi) et « San » pour créer une catégorie anthropologique censée regrouper les peuples autochtones d'Afrique australe sur des critères biométriques et raciaux. Les linguistes ont ensuite repris cette étiquette pour désigner un ensemble de langues à clics, même si aucune filiation génétique solide n'a été démontrée."
-    },
-    "generalInfo": {
-      "branches": ["Khoe-Kwadi", "Kx'a", "Tuu"],
-      "geographicArea": "Afrique australe : principalement Namibie (régions centrales et nord), Botswana (désert du Kalahari, Okavango), Afrique du Sud (province du Cap-Nord, Cap-Occidental), Angola (sud, région de Cuando Cubango), Zambie (extrême ouest), Zimbabwe (très minoritaire).",
+      "whyProblematic": "Le mot khoïsan vient de l'anthropologie physique : il servait à classer des peuples selon leur corps, avant d'être appliqué à des langues. Greenberg lui-même définit encore la famille en partie par l'apparence physique de ses locuteurs, quand il écrit que la plupart appartiennent au « type san ». Ensuite, la parenté de ces langues n'a jamais été démontrée par les méthodes habituelles de comparaison, selon Tom Güldemann (2007) et Anne-Maria Fehn et ses collègues (2025) ; dès 1981, D. Olderogge jugeait que rien ne permettait de ranger dans un même groupe les langues des San et celles des Khoekhoe.\n\nLe mot réunit enfin des peuples différents. Ceux qui parlent ces langues ont chacun leur culture, leur langue et leur histoire, et un nom commun ne fait pas d'eux un ensemble, rappellent Brigitte Pakendorf et Mark Stoneking. Le mot San lui-même était à l'origine un nom donné par les éleveurs khoekhoe aux chasseurs-cueilleurs, qui veut dire « cueilleurs », selon Tom Güldemann. Quant aux noms Hottentot et Bushmen, employés par les colons européens, ils sont aujourd'hui jugés péjoratifs, selon South African History Online et un rapport des Nations unies de 2013.",
+      "selfAppellation": "Aucun peuple ne s'appelait khoïsan avant que le mot soit créé en 1928. Depuis 2019, une loi sud-africaine reconnaît comme Khoi-San les personnes qui vivent selon les coutumes des Khoi du Cap, des Griqua, des Korana, des Nama ou des San. Les San eux-mêmes ne s'accordent pas sur un nom commun : une assemblée de 1993 avait choisi San, le président du Conseil des San d'Afrique du Sud acceptait en 2007 le mot Bushmen, et la plupart des groupes préfèrent leur propre nom, selon le Mail & Guardian. Au Botswana, on emploie aussi Basarwa.",
+      "contemporaryUsage": "Les linguistes emploient encore khoïsan comme un mot commode pour désigner les langues à clics d'Afrique australe qui ne sont pas bantoues, sans y voir une famille, selon Brigitte Pakendorf et Mark Stoneking (2021). Anne-Maria Fehn et ses collègues (2025) parlent de khoïsan d'Afrique australe pour une zone de contacts anciens, autour du bassin du Kalahari, où les trois familles partagent de nombreux traits. Le mot sert aussi pour les peuples : des chercheurs l'emploient pour parler ensemble des chasseurs et des éleveurs, selon South African History Online, et la loi sud-africaine de 2019 en fait une catégorie juridique, Khoi-San.",
+      "historicalAppellations": [
+        "Hottentot-Bushman (Cust, 1883)",
+        "Langues à clics",
+        "Hottentot",
+        "Bushmen"
+      ],
+      "originOfHistoricalTerm": "Le mot khoïsan est créé en 1928 par Leonhard Schultze, dans un livre sur le corps des Khoekhoe et des San, pour désigner la « souche raciale » à laquelle appartiendraient ces deux peuples, selon l'anthropologue Isaac Schapera (1930). Il réunit Khoikhoin, le nom que se donnent les éleveurs khoekhoe, et San, le nom qu'ils donnent aux chasseurs-cueilleurs. Brigitte Pakendorf et Mark Stoneking présentent Schultze comme un anthropologue physique, François-Xavier Fauvelle comme un biométricien, cité par Alban Bensa. Son livre fait partie des résultats d'une expédition menée de 1903 à 1905 dans l'ouest et le centre de l'Afrique australe, selon le titre de la collection. D. Olderogge, en 1981, attribue au contraire le mot à Schapera, qui écrit pourtant l'avoir repris de Schultze.\n\nDès 1930, Schapera parle de « langues khoïsan » et les traite comme une seule famille. En 1963, le linguiste Joseph Greenberg en fait l'une des quatre grandes familles de langues d'Afrique, avec trois branches : le hadza, le sandawe et le khoïsan d'Afrique du Sud, lui-même divisé en groupes du Nord, du Centre et du Sud. Avant ces auteurs, on parlait de langues « Hottentot-Bushman », du nom que les Européens donnaient à ces peuples.",
+      "linkWithFamily": "Le khoïsan n'est pas une famille de langues pour la plupart des linguistes d'aujourd'hui. Le catalogue Glottolog n'a aucune entrée de ce nom : il range ces langues dans trois familles indépendantes, le khoe-kwadi, le tuu et le kx'a, et fait du hadza et du sandawe, en Tanzanie, deux langues isolées. Brigitte Pakendorf et Mark Stoneking (2021) écrivent que les spécialistes s'accordent sur ces trois familles. Le kx'a et le tuu pourraient avoir un ancêtre commun, sans que cela soit démontré ; le khoe-kwadi n'est apparenté à aucun des deux. Un lien entre le sandawe et le khoe-kwadi reste à confirmer, et aucun lien n'est démontré pour le hadza.",
+      "geographicArea": "Namibie, Botswana, Angola, Afrique du Sud, Zambie, Zimbabwe, Lesotho, Eswatini, Tanzanie",
       "numberOfLanguages": 30,
       "totalSpeakers": null
     },
+    "generalInfo": {
+      "branches": [
+        "Khoe-kwadi (14 langues, dont le khoekhoegowab, le naro et le khwe)",
+        "Kx'a (5 langues : le ǂʼamkoe et quatre langues ju, dont le juǀʼhoan)",
+        "Tuu (9 langues, dont le taa et le nǀng ; la plupart sont éteintes)",
+        "Hadza et sandawe, deux langues isolées de Tanzanie que Joseph Greenberg rattachait au khoïsan"
+      ],
+      "geographicArea": "Les peuples qui parlent ces langues vivent surtout en Namibie, au Botswana et en Angola, et en plus petit nombre en Zambie, au Zimbabwe, en Afrique du Sud, au Lesotho et en Eswatini, selon Brigitte Pakendorf et Mark Stoneking. Le hadza et le sandawe sont parlés en Tanzanie.",
+      "numberOfLanguages": 30,
+      "totalSpeakers": null,
+      "figureNotes": {
+        "numberOfLanguages": {
+          "note": "Notre somme d'après Glottolog 5.3 : 14 langues khoe-kwadi, 9 tuu, 5 kx'a, plus le hadza et le sandawe ; beaucoup sont éteintes"
+        },
+        "totalSpeakers": {
+          "note": "Pas de total des locuteurs dans les sources lues ; les recensements mélangent ces langues dans des catégories plus larges",
+          "unsourced": true
+        }
+      }
+    },
     "associatedPeoples": [
       {
-        "name": "Nama (Khoekhoe)",
+        "name": "Nama",
         "peopleId": "PPL_NAMA"
-      },
-      {
-        "name": "Ju|'hoansi",
-        "peopleId": "PPL_JUHOANSI"
-      },
-      {
-        "name": "ǃXóõ",
-        "peopleId": "PPL_TAA"
       },
       {
         "name": "Damara",
@@ -348,29 +363,45 @@
         "peopleId": "PPL_KXOE"
       },
       {
-        "name": "Naro",
-        "peopleId": null
+        "name": "Juǀʼhoansi",
+        "peopleId": "PPL_JUHOANSI"
+      },
+      {
+        "name": "ǂHoan",
+        "peopleId": "PPL_HOA"
+      },
+      {
+        "name": "Taa",
+        "peopleId": "PPL_TAA"
+      },
+      {
+        "name": "Hadza",
+        "peopleId": "PPL_HADZA"
+      },
+      {
+        "name": "Sandawe",
+        "peopleId": "PPL_SANDAWE"
       }
     ],
     "linguisticCharacteristics": {
-      "typology": " Les langues khoïsan présentent une diversité typologique, mais partagent certaines caractéristiques : **Ordre des mots :** Varie selon les familles. Les langues Ju (Kx'a) utilisent généralement l'ordre sujet-verbe-objet (SVO) : par exemple en Ju|'hoan, *ǃa ǃú ǃú* « il boit de l'eau » (litt. « eau il boit »). Les langues Khoe peuvent utiliser l'ordre SOV ou SVO selon le contexte. **Classes nominales et genres :** Les langues Khoe distinguent les genres masculin, féminin et commun (neutre), avec des suffixes spécifiques. Exemple en Nama (Khoekhoe) : le radical *khoe-* « personne » → *khoe-s* « femme » (suffixe -s féminin), *khoe-b* « homme » (suffixe -b masculin), *khoe-i* « personne » (suffixe -i commun). En Ju|'hoan, les préfixes indiquent le genre : *ǀgà'á* « œil » (singulier), *ǀgà'á-ǀgà'á* « yeux » (pluriel, réduplication). **Morphologie :** Structures souvent agglutinantes (les mots se construisent en ajoutant des éléments à la suite les uns des autres), avec préfixes et suffixes pour marquer le nombre, le genre, la possession. Exemple en ǃXóõ (Tuu) : *tâa* « personne » (singulier), *tâa-kú* « personnes » (pluriel). Les langues Tuu présentent une morphologie verbale complexe avec marqueurs aspectuels. **Dérivation :** Capacité à former des mots dérivés par affixation. En Nama, *!nâ* « viande » peut être dérivé pour former *!nâ-s* « viande (féminine) ». **Syntaxe :** Structures de phrases relativement simples dans certaines langues (Ju), mais complexes dans d'autres (Tuu) avec systèmes de subordination développés. **Particularités morphologiques :** Certaines langues (notamment Tuu) présentent des systèmes de classes nominales basés sur la forme, la consistance, ou des propriétés sémantiques abstraites.",
-      "phonologicalFeatures": " **Consonnes à clics :** Caractéristique distinctive majeure. Les clics sont produits par une double occlusion dans le conduit vocal (occlusion orale principale + occlusion secondaire à un autre point). Types de clics :",
-      "relationsWithNeighbors": " **Emprunts lexicaux et contacts avec les langues bantoues :** Les langues khoïsan ont profondément influencé certaines langues bantoues d'Afrique australe, notamment le **xhosa** et le **zoulou**, qui ont intégré des clics dans leur phonologie à travers des emprunts lexicaux et des contacts prolongés. **Exemples d'emprunts en xhosa :** Le xhosa a emprunté environ 15 clics, notamment dans des mots liés à la faune et à la culture : *ǃke* « un » (clic alvéolaire ǃ), *ǁama* « lécher » (clic latéral ǁ), *ǀuba* « piler » (clic dental ǀ). Certains mots xhosa avec clics : *ǃinja* « chien », *ǃaba* « distribuer », *ǀixa* « heure ». **Exemples d'emprunts en zoulou :** *ǃeke* « un », *ǀama* « lécher », *ǁama* « sucer ». Le zoulou utilise principalement trois types de clics (dental ǀ, latéral ǁ, alvéolaire ǃ). **Régions de contact :** Le Cap de Bonne-Espérance (Afrique du Sud) a été une zone majeure de contact entre les Khoekhoe et les colons européens dès le XVIIe siècle. Le Cap-Oriental (Eastern Cape) et le KwaZulu-Natal ont connu des contacts entre San/Khoikhoi et populations bantoues en expansion (Xhosa, Zulu). Le désert du Kalahari (Botswana/Namibie) a été une zone de contact entre différents groupes San et Khoekhoe. **Influence grammaticale :** Moins importante que l'influence phonologique, mais certains traits morphologiques (notamment dans les systèmes de classes nominales) peuvent avoir été influencés par contact dans certaines régions.",
-      "keyInnovations": " **Développement de grands inventaires de clics :** Les langues khoïsan ont développé les systèmes de clics les plus complexes au monde, avec des combinaisons sophistiquées de type de clic + phonation + ton. Cette innovation est unique parmi les langues du monde. **Systèmes de classes nominales spécifiques :** Les langues Khoe ont développé un système de genres (masculin/féminin/commun) distinctif, différent des systèmes de classes nominales bantoues. **Innovations morphologiques :** Les langues Tuu présentent des innovations dans la morphologie verbale, notamment des systèmes aspectuels complexes et des marqueurs de focalisation. **Adaptations à l'environnement :** Certaines langues San ont développé des systèmes de communication adaptés à la chasse, avec des signaux sonores et des codes linguistiques spécifiques."
+      "typology": "Ces langues ne partagent pas une même grammaire. Selon l'atlas WALS, le khoekhoe, de la famille khoe, place le verbe en fin de phrase, ajoute beaucoup de suffixes aux mots et a trois genres. Le juǀʼhoan, de la famille kx'a, et le ǃxóõ, de la famille tuu, placent au contraire le verbe entre le sujet et l'objet ; le juǀʼhoan ajoute peu d'éléments aux mots et range les noms en cinq classes ou plus. Le kx'a et le tuu se ressemblent davantage entre eux qu'ils ne ressemblent au khoe-kwadi, selon Anne-Maria Fehn et ses collègues (2025). D. Olderogge relevait déjà en 1981 que la grammaire des langues des Khoekhoe différait de celle des langues des San.",
+      "phonologicalFeatures": "Le trait commun le plus visible est l'usage des clics, des consonnes produites par un claquement de la langue. Leur nombre varie beaucoup : de 3 en dahalo à 83 en ǃxóõ, selon Tom Güldemann (2007). Le ju, le ǂʼamkoe, la plupart des langues tuu et la plupart des langues khoe en ont plus de trente ; le khoekhoe, le sandawe et le kwadi en ont moins. Dans les langues ju, tuu et khoe d'Afrique australe, la moitié des mots au moins contiennent un clic, contre un quart ou moins ailleurs. Le clic se place presque toujours en tête du radical, au début du mot. La base PHOIBLE relève des clics bilabiaux, faits avec les lèvres, en ǃxóõ. Selon l'atlas WALS, le juǀʼhoan, le ǃxóõ et le khoekhoe ont des systèmes de tons complexes. Nous n'avons pas encore de source sur les voyelles soufflées ou serrées souvent citées pour ces langues.",
+      "relationsWithNeighbors": "Des langues bantoues ont aussi des clics : au sud-est, les langues nguni comme le xhosa, le zoulou, le ndebele et le swati, ainsi que le sotho du Sud ; au sud-ouest, le yeyi, le fwe, le mbukushu, le manyo et le kwangali, dans la région de l'Okavango et du Zambèze, selon Brigitte Pakendorf et ses collègues (2017). Les langues nguni ont emprunté beaucoup de mots à clics à des variétés khoekhoe aujourd'hui disparues, parlées par des éleveurs, et bien moins aux langues tuu des chasseurs-cueilleurs. Ces auteurs préviennent toutefois qu'un clic dans une langue bantoue ne vient pas forcément d'un contact avec ces langues. Tom Güldemann (2007) relie aussi l'abondance des clics en xhosa et en zoulou à l'hlonipha, une manière de parler par respect qui évite certains mots. Entre les trois familles, plus de la moitié des mots partagés dont on connaît l'origine viennent du khoe-kwadi, selon Anne-Maria Fehn et ses collègues (2025).",
+      "keyInnovations": "Comme le khoïsan n'est pas une famille démontrée, on ne peut pas lui attribuer d'innovations communes héritées d'un même ancêtre. Les traits partagés sont plutôt ceux d'une zone de contacts : beaucoup de clics, souvent en début de mot, dans des mots d'une forme proche, selon Tom Güldemann (2007) et Anne-Maria Fehn et ses collègues (2025)."
     },
     "historyAndOrigins": {
-      "probableOrigin": "//QUI **Théorie linguistique 1 - Joseph Greenberg (1963) :** Joseph H. Greenberg (*The Languages of Africa*, 1963) a proposé de regrouper les langues à clics d'Afrique australe en une seule famille « Khoisan », qu'il considérait comme l'une des quatre grandes familles linguistiques d'Afrique (aux côtés d'Afro-asiatique, Niger-Congo, et Nilo-saharien). Cette classification était basée sur des critères typologiques (présence de clics) plutôt que sur des preuves de parenté génétique. **Théorie linguistique 2 - Ernst Oswald Johannes Westphal (1962-1971) :** E.O.J. Westphal (« The linguistic prehistory of Southern Africa », *Africa* 32(3), 1962 ; « The Click Languages of Southern Africa », 1971) a été l'un des premiers à remettre en question l'unité génétique du « Khoisan », suggérant que les langues à clics formaient plusieurs familles distinctes. Il a distingué trois groupes principaux (Bush, Hottentot, Kwadi). **Théorie linguistique 3 - Rainer Vossen (1997-2013) :** Rainer Vossen (*Die Khoe-Sprachen*, 1997 ; *The Khoisan Languages*, 2013) a affiné la classification, démontrant que les langues khoïsan appartiennent à trois familles distinctes sans parenté génétique prouvée : Khoe-Kwadi, Kx'a (Ju-ǂHoan), et Tuu. Il a montré que les clics sont un trait d'aire linguistique (sprachbund) plutôt qu'un indicateur de parenté génétique. **Théorie linguistique 4 - Tom Güldemann (1998-2018) :** Tom Güldemann (various publications) a renforcé l'hypothèse que « Khoisan » n'est pas une famille génétique mais une convergence typologique. Il a montré que les clics peuvent être empruntés (comme dans xhosa/zoulou) et ne constituent pas une preuve de parenté. **Théorie linguistique 5 - Bonny Sands, Anthony Traill (1990s-2000s) :** Bonny Sands et Anthony Traill ont contribué à documenter et classifier les langues khoïsan, confirmant leur diversité et leur absence de parenté génétique. Traill (*The Khoisan Languages*, 1998) a notamment documenté ǃXóõ avec ses 100+ phonèmes (les sons qui distinguent un mot d'un autre). **Théorie archéologique 1 - Présence ancienne en Afrique australe :** Les preuves archéologiques indiquent que les ancêtres des peuples San/Khoikhoi sont présents en Afrique australe depuis au moins 44 000 ans (art rupestre du Drakensberg, outils lithiques du Middle Stone Age). Les peintures rupestres San attestent d'une présence continue depuis des millénaires. **Théorie archéologique 2 - Expansion bantoue :** L'archéologie montre que l'expansion des populations bantoues vers le sud (à partir d'environ 500 apr. J.-C.) a progressivement repoussé et marginalisé les populations khoïsan, limitant leur répartition aux zones arides (Kalahari, déserts namibiens). **Théorie génétique 1 - Carina Schlebusch et al. (2017) :** Carina M. Schlebusch, Helena Malmström, et al. (*Science*, 2017) ont analysé des génomes anciens d'Afrique du Sud, estimant que la divergence entre les lignées San et autres populations humaines modernes remonte à 350 000-260 000 ans. Cette étude suggère que les San représentent l'une des plus anciennes lignées humaines. **Théorie génétique 2 - Pontus Skoglund et al. (2017) :** Pontus Skoglund, Jessica C. Thompson, et al. (*Cell*, 2017) ont confirmé, à travers l'analyse de génomes anciens, que les populations San possèdent la plus grande diversité génétique au monde, confirmant leur ancienneté et leur rôle central dans l'histoire humaine. **Théorie génétique 3 - Haplogroupes mitochondriaux et Y-chromosomaux :** Les études génétiques (diverses équipes, 2000s-2020s) montrent que les San possèdent des haplogroupes mitochondriaux (L0, L1) et Y-chromosomaux (A, B) parmi les plus anciens, avec une estimation de séparation d'environ 60 000-90 000 ans pour l'Adam Y-chromosomique. **Théorie génétique 4 - Mark Stoneking et al. :** Mark Stoneking et ses collaborateurs ont contribué à documenter la diversité génétique des populations khoïsan, confirmant leur statut de population ancestrale. **Théorie de l'émergence :** Les Khoekhoe (pasteurs) sont apparus plus récemment que les San (chasseurs-cueilleurs). L'hypothèse dominante est que les Khoekhoe descendent de populations San qui ont adopté l'élevage (bétail, moutons) il y a environ 2 000 ans, probablement à travers des contacts avec des populations venues du nord-est (peut-être liées aux populations nilotiques ou cushtiques). **Conclusion :** Le consensus scientifique moderne (2020s) reconnaît que « Khoisan » n'est pas une famille linguistique génétique, mais une catégorie typologique regroupant trois familles distinctes (Khoe-Kwadi, Kx'a, Tuu) partageant un trait phonologique (clics) dû à convergence ou emprunt ancien. Les preuves génétiques confirment l'ancienneté des populations, mais ne corroborent pas une unité linguistique.",
-      "emergencePeriod": "//Quand il date l'existence de la FLG + Quand est-ce qu'il ont classé **(1) Émergence historique de la FLG :** Les langues khoïsan (ou plutôt les trois familles distinctes) sont parlées depuis plusieurs dizaines de millénaires en Afrique australe. Les preuves archéologiques suggèrent une présence continue depuis au moins 44 000 ans (art rupestre, outils lithiques). Les études génétiques indiquent une divergence beaucoup plus ancienne (260 000-350 000 ans pour les lignées humaines). Cependant, l'émergence des langues telles qu'elles existent aujourd'hui est difficile à dater précisément. Les langues Khoe (pasteurs) sont probablement apparues il y a environ 2 000 ans suite à l'adoption de l'élevage. **(2) Date de classification académique :**",
-      "diffusion": "//Afficher l'ensemble des avis disponibles **Théorie 1 - Expansion préhistorique depuis l'Afrique de l'Est :** Certains archéologues et généticiens (hypothèse, non prouvée) suggèrent que les ancêtres des populations khoïsan ont pu migrer depuis l'Afrique de l'Est il y a plusieurs dizaines de milliers d'années, se répandant ensuite dans toute l'Afrique australe. Cette théorie est basée sur des similitudes génétiques entre certaines populations d'Afrique de l'Est (Hadza, Sandawe en Tanzanie) et les Khoisan. **Théorie 2 - Origine locale en Afrique australe :** La majorité des preuves archéologiques et génétiques suggèrent que les populations khoïsan sont autochtones à l'Afrique australe depuis des dizaines de millénaires, sans migration majeure depuis d'autres régions. Les sites archéologiques du Middle Stone Age en Afrique du Sud et Namibie attestent d'une présence continue. **Théorie 3 - Contraction territoriale due à l'expansion bantoue :** À partir d'environ 500 apr. J.-C., l'expansion des populations bantoues depuis le nord-est a progressivement repoussé les populations khoïsan vers les zones arides (désert du Kalahari, zones côtières désertiques de Namibie). Les langues khoïsan ont donc connu une **contraction** plutôt qu'une expansion récente. **Théorie 4 - Migration des Khoekhoe vers le sud :** Certains historiens suggèrent que les Khoekhoe (pasteurs) ont migré vers le Cap de Bonne-Espérance depuis le nord (région de l'actuelle Namibie/Botswana) il y a environ 2 000 ans, à la recherche de pâturages. Cette migration aurait été facilitée par l'adoption de l'élevage. **Théorie 5 - Contacts et métissages :** Les contacts entre différents groupes khoïsan (San, Khoekhoe) et avec d'autres populations (Bantou, Européens) ont créé des zones de métissage linguistique, notamment au Cap (créole afrikaans avec substrat khoekhoe) et dans certaines régions du Botswana (métissage San-Khwe-Bantou). **Routes migratoires identifiées :** Les routes côtières (de la Namibie au Cap) et les routes intérieures à travers le Kalahari ont été les principales voies de déplacement et de contact.",
-      "historicalBreaks": " **Séparation des trois familles linguistiques :** Si les familles Khoe-Kwadi, Kx'a et Tuu partagent une origine commune (hypothèse non prouvée), leur séparation remonterait à plusieurs millénaires, avant l'émergence de l'élevage. **Séparation San/Khoekhoe :** Il y a environ 2 000 ans, une partie des populations San a adopté l'élevage et s'est différenciée culturellement et linguistiquement (donnant naissance aux Khoekhoe), créant une rupture avec les groupes restés chasseurs-cueilleurs. **Génocide des Herero et Nama (1904-1908) :** Le génocide perpétré par les Allemands en Namibie a décimé les populations Nama et Herero, entraînant une rupture démographique et culturelle majeure. **Spoliations de terres et déplacements forcés :** Depuis le XVIIe siècle (arrivée des colons néerlandais au Cap), les spoliations de terres et les déplacements forcés ont fragmenté les communautés khoïsan, entraînant la perte de langues et de traditions. **Extinction de langues :** Plusieurs langues khoïsan se sont éteintes récemment (ǀXam, éteint au début du XXe siècle ; Kwadi, éteint vers 1960) ou sont en danger critique (Nǁng, < 10 locuteurs). Cette extinction représente une rupture irréversible dans la diversité linguistique.",
-      "contactZones": " **Le Cap de Bonne-Espérance (Afrique du Sud) :** Zone majeure de contact dès 1652 (arrivée des colons néerlandais). Contacts prolongés entre Khoekhoe (notamment les groupes Cochoqua, Goringhaiqua) et Européens, menant à des métissages linguistiques (substrat khoekhoe dans l'afrikaans) et culturels. Région actuelle : Cap-Occidental (Western Cape). **Cap-Oriental (Eastern Cape, Afrique du Sud) :** Zone de contact entre San/Khoekhoe et populations bantoues (Xhosa) depuis environ 1000-1500 apr. J.-C. Emprunts lexicaux et phonologiques (clics en xhosa). Région actuelle : province du Cap-Oriental, notamment autour de la Great Fish River. **KwaZulu-Natal (Afrique du Sud) :** Contacts entre San et Zulu, avec emprunts de clics dans le zoulou. Région actuelle : province du KwaZulu-Natal. **Désert du Kalahari (Botswana/Namibie) :** Zone de contact entre différents groupes San (Ju|'hoansi, Naro, Gǁana) et entre San et Khoekhoe. Métissages linguistiques et culturels dans certaines zones. Régions précises : Tsodilo Hills (Botswana), région de Ghanzi (Botswana), zone de Tsumkwe (Namibie). **Région de l'Okavango (Botswana/Namibie) :** Contacts entre Khwe, Ju|'hoansi et populations bantoues (Herero, Tswana). Zones précises : panhandle de l'Okavango, Caprivi Strip (Namibie). **Namibie centrale (région de Windhoek, Otjozondjupa) :** Contacts entre Nama, Damara et populations bantoues (Herero, Ovambo). **Routes commerciales historiques :** Les routes commerciales trans-kalahari (échange de bétail, produits de chasse) ont été des zones de contact et de métissage linguistique.",
-      "majorEvents": " **1652 :** Arrivée des colons néerlandais au Cap de Bonne-Espérance, premiers contacts européens avec les Khoekhoe. Début des spoliations de terres et des conflits. **1659-1660, 1673-1677 :** Guerres entre Khoekhoe et colons néerlandais (guerres dites « Khoikhoi-Dutch Wars »). Défaite des Khoekhoe, perte de terres et d'autonomie. **1795-1806 :** Prise de contrôle du Cap par les Britanniques. Politiques coloniales continuant la marginalisation des populations khoïsan. **1904-1908 :** Génocide des Herero et Nama par les troupes allemandes en Namibie (Sud-Ouest africain). Extermination de ~80% des Herero et ~50% des Nama. Rupture démographique et culturelle majeure. **Apartheid (1948-1994, Afrique du Sud) :** Politiques d'apartheid excluant et marginalisant davantage les populations khoïsan (classées comme « Coloured » ou autres catégories, niant leur identité autochtone). **Indépendances (Botswana 1966, Namibie 1990, Afrique du Sud 1994) :** Reconnaissance progressive des droits des peuples autochtones, mais marginalisation économique et culturelle persistante. **Années 2000s-2020s :** Revendications des peuples khoïsan pour la reconnaissance de leurs droits fonciers, culturels et linguistiques en Afrique du Sud, Namibie, Botswana."
+      "probableOrigin": "Les chercheurs distinguent trois couches de peuplement en Afrique australe avant la colonisation, selon Anne-Maria Fehn et ses collègues (2025) : des chasseurs-cueilleurs très anciens, dont descendent aujourd'hui les locuteurs des langues kx'a et tuu ; des éleveurs de moutons venus d'Afrique de l'Est, liés aux langues khoe-kwadi ; puis des agriculteurs de langue bantoue venus du centre-ouest de l'Afrique. Les langues kx'a et tuu seraient donc les plus anciennes de la région, et les langues khoe-kwadi seraient arrivées plus tard, selon Brigitte Pakendorf et ses collègues (2017), qui s'appuient sur Tom Güldemann (2008).",
+      "emergencePeriod": "Nous n'avons pas trouvé de datation d'un ancêtre commun à ces langues, puisque cet ancêtre n'est pas démontré. Les moutons apparaissent en Afrique australe vers 2 000 ans avant le présent, selon Anne-Maria Fehn et ses collègues. La génétique distingue deux groupes de populations khoisan, au nord-ouest et au sud-est du Kalahari, séparés depuis moins de 30 000 ans, et des mélanges avec des populations non khoisan à partir d'environ 1 200 ans, selon Joseph Pickrell et ses collègues (2012) ; ces groupes génétiques ne correspondent pas aux familles de langues.\n\nLe classement a sa propre chronologie. Wilhelm Bleek sépare au milieu du XIXe siècle les langues des Khoekhoe de celles des San ; Robert Needham Cust parle en 1883 de langues « Hottentot-Bushman » ; le mot khoïsan naît en 1928 ; Isaac Schapera l'applique aux langues en 1930 ; Joseph Greenberg en fait une famille en 1963. Ernst Westphal y voit deux familles distinctes dans les années 1960, selon Greenberg ; Tom Güldemann et Rainer Voßen contestent son unité en 2000, et Bernd Heine et Henry Honken séparent le kx'a en 2010.",
+      "diffusion": "Les mots empruntés entre les trois familles dessinent deux zones de contact, selon Anne-Maria Fehn et ses collègues (2025). Au centre du Kalahari, les échanges vont dans tous les sens. Sur les bords sud et sud-ouest du bassin du Kalahari, les éleveurs de langue khoe-kwadi transmettent leurs mots aux chasseurs-cueilleurs, sans retour. Les peuples de langue bantoue arrivent ensuite : au Botswana, les groupes de langue tswana s'installent au plus tard vers l'an 1200, selon un rapport des Nations unies de 2010 ; en Namibie, les Owambo, les Herero et les Kavango arrivent il y a environ 500 ans, selon un rapport de 2013.",
+      "historicalBreaks": "En Afrique du Sud, la plupart des groupes khoisan connus par l'histoire ont abandonné leur langue et se sont fondus dans les populations dites coloured, selon Brigitte Pakendorf et Mark Stoneking. La plupart des langues tuu sont éteintes ; seules survivent des variétés du taa, au Botswana et en Namibie, et des restes du nǀng, en Afrique du Sud, selon Tom Güldemann (2005). En Namibie, la colonisation a marginalisé les San, qui ont perdu une grande partie de leurs terres et de leurs modes de vie, et les Nama ont subi des pertes énormes sous la colonisation allemande, selon le rapport des Nations unies de 2013.",
+      "contactZones": "Le centre du Kalahari, au Botswana, est une zone d'échanges égaux entre les trois familles, et ses bords sud et sud-ouest une zone où les éleveurs de langue khoe-kwadi ont imposé leurs mots, selon Anne-Maria Fehn et ses collègues (2025). La région de l'Okavango et du Zambèze, entre l'Angola, la Zambie, le Botswana et la Namibie, est une zone de contact avec des langues bantoues qui ont pris des mots au khwe et au ju. Au sud-est, les langues nguni, comme le xhosa et le zoulou, ont emprunté des mots à clics aux éleveurs khoekhoe, selon Brigitte Pakendorf et ses collègues (2017).",
+      "majorEvents": "Vers 2 000 ans avant le présent, des éleveurs de moutons arrivent d'Afrique de l'Est. À partir d'environ 1 200 ans avant le présent, des mélanges avec des populations non khoisan commencent. Au plus tard vers 1200, des groupes de langue tswana s'installent au Botswana. Vers 1500, les Owambo, les Herero et les Kavango arrivent en Namibie. En 1928, le mot khoïsan est créé. En 1963, Joseph Greenberg fait du khoïsan une famille de langues. En 2010, le kx'a est reconnu comme une famille à part. En 2019, l'Afrique du Sud adopte la loi sur les autorités traditionnelles et khoi-san."
     },
     "distribution": {
       "totalSpeakers": null,
       "distributionByCountry": {
-        "NAM": 234700,
-        "BWA": 15750,
+        "NAM": 200000,
+        "BWA": 18912,
         "ZAF": 2000
       }
     },
@@ -378,12 +409,8 @@
       {
         "title": "Schultze, L. (1928) – *Zur Kenntnis des Körpers der Hottentotten und Buschmänner*. Jena: Gustav Fischer",
         "url": null,
-        "tier": "referenced"
-      },
-      {
-        "title": "Boeseken, A. J. (1972) – *The meaning, origin and use of the terms Khoikhoi, San and Khoisan*. Cabo, 1(1), 5-10",
-        "url": null,
-        "tier": "referenced"
+        "tier": "referenced",
+        "notes": "Livre publié à Iéna par Gustav Fischer, dans la collection des résultats d'une expédition de 1903 à 1905. Référence vérifiée par le compte rendu qu'en donne Isaac Schapera dans la revue Africa en 1929 ; nous n'en avons pas lu le texte."
       },
       {
         "title": "Greenberg, J. H. (1963) – *The Languages of Africa*. Bloomington: Indiana University Press",
@@ -392,15 +419,11 @@
         "source_kind": "academic"
       },
       {
-        "title": "Westphal, E. O. J. (1962) – *The linguistic prehistory of Southern Africa: Bush, Kwadi, Hottentot and Bantu linguistic relationships*. Africa, 32(3), 237-265",
-        "url": null,
-        "tier": "referenced"
-      },
-      {
         "title": "Westphal, E. O. J. (1971) – *The Click Languages of Southern Africa*. In: *Current Trends in Linguistics*, T. A. Sebeok (Ed.), 7, 367-420. The Hague: Mouton",
-        "url": null,
+        "url": "https://doi.org/10.1515/9783111562520-013",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Chapitre de la série Current Trends in Linguistics ; référence vérifiée dans le registre Crossref. Nous n'en avons pas lu le texte."
       },
       {
         "title": "Vossen, R. (1997) – *Die Khoe-Sprachen: Ein Beitrag zur Erforschung der Sprachgeschichte Afrikas*. Cologne: Rüdiger Köppe Verlag",
@@ -409,36 +432,7 @@
         "source_kind": "academic"
       },
       {
-        "title": "Vossen, R. (Ed.) (2013) – *The Khoisan Languages*. London: Routledge",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "Güldemann, T. (1998) – *San Languages for Education?* In: *Language, Democracy and Education in Africa*, K. Legère (Ed.), 77-105. Uppsala: Nordic Africa Institute",
-        "url": null,
-        "tier": "referenced"
-      },
-      {
-        "title": "Traill, A. (1998) – *The Khoisan Languages*. In: *Encyclopædia Britannica*",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "encyclopedia"
-      },
-      {
-        "title": "Traill, A. (2005) – *Khoisan languages*. In: *Encyclopædia Britannica Online*",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "encyclopedia"
-      },
-      {
         "title": "Sands, B. (1998) – *Eastern and Southern African Khoisan: Evaluating Claims of Distant Linguistic Relationships*. Cologne: Rüdiger Köppe Verlag",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "Sands, B. (2020) – *The ǂ'Amkoe Language: Phonetics, Phonology, and Morphosyntax*. In: *The Oxford Handbook of African Languages*, R. Vossen & G. Dimmendaal (Eds.), 489-506. Oxford: Oxford University Press",
         "url": null,
         "tier": "referenced",
         "source_kind": "academic"
@@ -449,137 +443,266 @@
         "tier": "referenced"
       },
       {
-        "title": "Fauvelle, F.-X. (2018) – *À la recherche du sauvage idéal*. En Attendant Nadeau",
-        "url": "https://www.en-attendant-nadeau.fr/2018/02/06/fabrique-sauvage-fauvelle/",
-        "tier": "needs_review",
-        "source_kind": "press"
-      },
-      {
-        "title": "Schlebusch, C. M., Malmström, H., Günther, T., Sjödin, P., Coutinho, A., Edlund, H., ... & Jakobsson, M. (2017) – *Southern African ancient genomes estimate modern human divergence to 350,000 to 260,000 years ago*. Science, 358(6363), 652-655",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "Skoglund, P., Thompson, J. C., Prendergast, M. E., Mittnik, A., Sirak, K., Hajdinjak, M., ... & Reich, D. (2017) – *Reconstructing Prehistoric African Population Structure*. Cell, 171(1), 59-71",
-        "url": null,
-        "tier": "referenced"
-      },
-      {
-        "title": "Gerlach, L. (2015) – *A Grammar of ǂ'Amkoe: A Kx'a Language of Botswana*. PhD dissertation, Humboldt University of Berlin",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "Collins, C., & Gruber, J. (2013) – *A Phonetic and Phonological Description of ǂHoan*. In: *Khoisan Languages and Linguistics: Proceedings of the 3rd International Symposium*, R. Vossen (Ed.), 27-48. Cologne: Rüdiger Köppe Verlag",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "\"Khoisan languages\" – *Encyclopædia Britannica*",
-        "url": "https://www.britannica.com/topic/Khoisan-languages",
-        "tier": "unverified",
-        "source_kind": "encyclopedia"
-      },
-      {
-        "title": "\"Famille khoïsane\" – *Aménagement linguistique dans le monde (AXL-Cefan)*",
-        "url": "https://www.axl.cefan.ulaval.ca/monde/famkhoisane.htm",
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "\"Classement des langues khoïsan par nombre de locuteurs\" – *Atlasocio.com*",
-        "url": "https://atlasocio.com/classements/langues/familles/classement-langues-khoisan-par-nombre-locuteurs-total-monde.php",
-        "tier": "unverified",
-        "source_kind": "discovery"
-      },
-      {
         "title": "\"The Khoisan\" – *South African History Online*",
         "url": "https://www.sahistory.org.za/article/khoisan",
         "tier": "referenced",
-        "source_kind": "repository"
-      },
-      {
-        "title": "\"Afrique du Sud : qui sont les Khoïsan, qui demandent plus de reconnaissance ?\" – *TV5MONDE* (2018)",
-        "url": "https://information.tv5monde.com/afrique/afrique-du-sud-qui-sont-les-khoisan-qui-demandent-plus-de-reconnaissance-83836",
-        "tier": "needs_review",
-        "source_kind": "press"
-      },
-      {
-        "title": "\"Qui sont les Khoisans ?\" – *Jeune Afrique*",
-        "url": "https://www.jeuneafrique.com/221145/archives-thematique/qui-sont-les-khoisans/",
-        "tier": "needs_review",
-        "source_kind": "press"
-      },
-      {
-        "title": "SIL Ethnologue (2024) – *Khoisan languages*",
-        "url": "https://www.ethnologue.com/subgroups/khoisan",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
-      },
-      {
-        "title": "Glottolog (2024) – *Khoisan languages classification*",
-        "url": "https://glottolog.org/",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
-      },
-      {
-        "title": "ONU / UNFPA (2025) – *World Population Prospects 2025* (estimations démographiques)",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "intergovernmental"
-      },
-      {
-        "title": "CIA World Factbook (2025) – *Namibie, Botswana, Afrique du Sud, Angola* (données démographiques)",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "government"
-      },
-      {
-        "title": "Glottolog 5.0 (2024) – Familles \"Khoe-Kwadi\" [khoe1240], \"Kxa\" [kxaa1236] et \"Tuu\" [tuuu1241] : trois nœuds génétiques indépendants (aucun ancêtre commun reconstruit), confirmant que « Khoïsan » regroupe trois familles sans parenté prouvée",
-        "url": "https://glottolog.org/resource/languoid/id/khoe1240",
-        "tier": "official",
-        "source_kind": "linguistic_reference",
-        "notes": "Glottolog 5.0 (2024) – Familles \"Khoe-Kwadi\" [khoe1240], \"Kxa\" [kxaa1236] et \"Tuu\" [tuuu1241] : trois nœuds génétiques indépendants (aucun ancêtre commun reconstruit), confirmant que « Khoïsan » regroupe trois familles sans parenté prouvée. https://glottolog.org/resource/languoid/id/khoe1240 ; https://glottolog.org/resource/languoid/id/kxaa1236 ; https://glottolog.org/resource/languoid/id/tuuu1241"
+        "source_kind": "repository",
+        "notes": "Page d'histoire du site éducatif sud-africain South African History Online, lue en entier."
       },
       {
         "title": "Brenzinger, Matthias (2011) – \"The twelve modern Khoisan languages\". In: *Khoisan Languages and Linguistics: Proceedings of the 3rd International Symposium* (Research in Khoisan Studies 29). Cologne: Rüdiger Köppe Verlag. [Nama : Namibie ≈200 000 ; Khwe : Namibie ≈3 700 ; Naro : Namibie ≈1 000 locuteurs]",
         "url": null,
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Chapitre des actes du troisième symposium sur les langues khoisan, publié par Rüdiger Köppe ; Glottolog le date de 2011, l'éditeur de 2013. Ses estimations de locuteurs sont reprises par Menán du Plessis (2018)."
       },
       {
-        "title": "SIL Ethnologue – Khoekhoegowab/Nama [naq] : Namibie ≈200 000, Afrique du Sud ≈2 000, Botswana ≈200 locuteurs. (chiffres vérifiés via Wikipédia FR « Nama (langue) », consulté en 2026 ; accès direct à ethnologue.com bloqué depuis cet environnement)",
-        "url": "https://www.ethnologue.com/language/naq/",
+        "title": "Glottolog 5.3 — Khoe-Kwadi (khoe1240)",
+        "url": "https://glottolog.org/resource/languoid/id/khoe1240",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max Planck d'anthropologie évolutionniste. La famille khoe-kwadi y compte 14 langues : les 13 langues khoe et le kwadi. Les fiches de chaque langue donnent les pays où elle est parlée."
       },
       {
-        "title": "SIL Ethnologue (16e éd., 2009) – Juǀʼhoan [ktz] : Namibie ≈30 000, Botswana ≈5 000 locuteurs. (chiffres vérifiés via Wikipédia FR « Juǀʼhoan », consulté en 2026)",
-        "url": "https://www.ethnologue.com/language/ktz/",
+        "title": "Glottolog 5.3 — Tuu (tuuu1241)",
+        "url": "https://glottolog.org/resource/languoid/id/tuuu1241",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max Planck d'anthropologie évolutionniste. La famille tuu y compte 9 langues, en majorité éteintes."
       },
       {
-        "title": "SIL Ethnologue (18e éd., 2015) – Naro [nhr] : Botswana ≈8 000 locuteurs (2014). (chiffre vérifié via Wikipédia EN « Naro language », consulté en 2026)",
-        "url": "https://www.ethnologue.com/language/nhr/",
+        "title": "Glottolog 5.3 — Kx'a (kxaa1236)",
+        "url": "https://glottolog.org/resource/languoid/id/kxaa1236",
         "tier": "official",
-        "source_kind": "linguistic_reference"
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max Planck d'anthropologie évolutionniste. La famille kx'a y compte 5 langues : le ǂʼamkoe et quatre langues ju. Les fiches de chaque langue donnent les pays où elle est parlée et leur degré de menace."
       },
       {
-        "title": "SIL Ethnologue (19e éd., 2016) – Taa/ǃXóõ [nmn] : ≈2 500 locuteurs (2011), pour l'essentiel au Botswana. (chiffre vérifié via Wikipédia EN « Taa language », consulté en 2026)",
-        "url": "https://www.ethnologue.com/language/nmn/",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
-      },
-      {
-        "title": "Gerlach, Linda (2015) – *Phonetic and phonological description of the Nǃaqriaxe variety of ǂʼAmkoe and the impact of language contact*. PhD dissertation, Humboldt University of Berlin, p. 14-15. [ǂʼAmkoe occidental : 20-50 locuteurs, Botswana]",
-        "url": null,
+        "title": "Pakendorf, Brigitte & Stoneking, Mark (2021) – \"The genomic prehistory of peoples speaking Khoisan languages\", Human Molecular Genetics 30(R1), pp. R49-R55",
+        "url": "https://doi.org/10.1093/hmg/ddaa221",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "notes": "Article de synthèse en libre accès, lu en entier. Il présente les trois familles de langues à clics d'Afrique australe, les modes de vie des peuples qui les parlent et ce que la génétique dit de leur histoire."
+      },
+      {
+        "title": "Fehn, Anne-Maria et al. (2025) – \"Tracing contact and migration in pre-Bantu Southern Africa through lexical borrowing\", Evolutionary Human Sciences 7, e25",
+        "url": "https://doi.org/10.1017/ehs.2025.10014",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article en libre accès d'une équipe de linguistes et de chercheurs du Botswana, du Mozambique, du Portugal et des États-Unis, lu en entier. Il étudie les mots empruntés entre les trois familles de langues à clics d'Afrique australe."
+      },
+      {
+        "title": "Güldemann, Tom (2007) – Clicks, genetics, and \"proto-world\" from a linguistic perspective, University of Leipzig Papers on Africa, Languages and Literatures 29",
+        "url": "https://ul.qucosa.de/api/qucosa%3A33611/attachment/ATT-0/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Leipzig, université de Leipzig, 2007. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+      },
+      {
+        "title": "Pakendorf, Brigitte, Gunnink, Hilde, Sands, Bonny & Bostoen, Koen (2017) – \"Prehistoric Bantu-Khoisan language contact: A cross-disciplinary approach\", Language Dynamics and Change 7(1), pp. 1-46",
+        "url": "https://hal.science/hal-01960282",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de revue lu en entier dans la copie des auteurs déposée sur HAL. Il décrit les clics des langues bantoues et leurs emprunts aux langues khoisan."
+      },
+      {
+        "title": "General History of Africa, I, ch. 11 : Migrations and ethnic and linguistic differentiations",
+        "author": "D. Olderogge",
+        "year": 1981,
+        "url": "https://archive.org/details/GENERALHISTORYOFAFRICAMethodologyAndAfricanPrehistory",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Édition anglaise du premier volume de l'Histoire générale de l'Afrique de l'UNESCO, dirigé par Joseph Ki-Zerbo, lue dans sa numérisation."
+      },
+      {
+        "title": "General History of Africa, I, ch. 12, part I : African linguistic classification (édition dirigée par Joseph Ki-Zerbo)",
+        "author": "Joseph H. Greenberg",
+        "year": 1981,
+        "url": "https://archive.org/details/GENERALHISTORYOFAFRICAMethodologyAndAfricanPrehistory",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Édition anglaise du premier volume de l'Histoire générale de l'Afrique de l'UNESCO, lue dans sa numérisation. Greenberg y présente sa famille khoïsan."
+      },
+      {
+        "title": "WALS Online, valeurs du khoekhoe, du juǀʼhoan, du ǂhoan et du ǃxóõ",
+        "author": "Matthew S. Dryer et Martin Haspelmath (dir.)",
+        "url": "https://wals.info/languoid/lect/wals_code_juh",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Atlas des structures des langues publié par l'Institut Max Planck d'anthropologie évolutionniste. Le lien mène aux valeurs du juǀʼhoan ; celles du khoekhoe, du ǂhoan et du ǃxóõ sont dans la même base."
+      },
+      {
+        "title": "PHOIBLE 2.0, inventaires des sons du ǃxóõ, du ǃxun, du juǀʼhoan et du nama",
+        "author": "Steven Moran et Daniel McCloy (dir.)",
+        "year": 2019,
+        "url": "https://phoible.org/inventories/view/1379",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Base de données des systèmes de sons des langues, publiée par l'Institut Max Planck de Iéna. Le lien mène à l'inventaire du ǃxóõ, qui compte 83 clics, dont des clics bilabiaux."
+      },
+      {
+        "title": "Namibia Statistics Agency (2011) – Namibia 2011 Population and Housing Census Main Report",
+        "url": "https://cms.my.na/assets/documents/p19dmn58guram30ttun89rdrp1.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport officiel du recensement namibien de 2011, lu dans une copie en ligne. Le tableau 6.5, p. 68, compte les ménages selon leur langue principale : 52 450 ménages nama-damara, soit 11,3 %, et 3 745 ménages de langues san, soit 0,8 %."
+      },
+      {
+        "title": "Statistics Botswana (2022) – Botswana Population & Housing Census 2022, Analytical Report Volume 1",
+        "url": "https://statsbots.org.bw/sites/default/files/census_documents/Botswana%20Population%20%26%20Housing%20Census%202022%20Analytical%20Report%20Volume%201-Demographic%20and%20Social%20Characteristics%2CRegistration%2C%20Youth%20and%20Elderly%2CEducation.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport officiel du recensement du Botswana. L'annexe 4 donne la langue la plus parlée à la maison : 11 751 personnes pour le naro, 1 944 pour le sekhwedam, 832 pour le kua, 703 pour le gǀui, 398 pour le gǁana, 108 pour le nama, 77 pour le shua et 73 pour le tsowa, soit 15 886 personnes pour ces langues khoe. Deux tableaux du rapport échangent par erreur les totaux du sesarwa et du thimbukushu."
+      },
+      {
+        "title": "Statistics South Africa (2023) – Census 2022 Statistical Release P0301.4",
+        "url": "https://census.statssa.gov.za/assets/documents/2022/P03014_Census_2022_Statistical_Release.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Communiqué officiel du recensement sud-africain de 2022. Le tableau 2.9 donne la part des ménages selon la langue la plus parlée : 0,01 % pour les langues khoi, nama et san dans tout le pays, 0,17 % dans la province du Cap-Nord."
+      },
+      {
+        "title": "Republic of South Africa – Traditional and Khoi-San Leadership Act 3 of 2019, Government Gazette 42865",
+        "url": "https://www.gov.za/documents/acts/traditional-and-khoi-san-leadership-act-3-2019-english-afrikaans-28-nov-2019",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte officiel de la loi sud-africaine du 28 novembre 2019, publié par le gouvernement. Son article 1 définit qui est Khoi-San."
+      },
+      {
+        "title": "Nations unies, Conseil des droits de l'homme (2013) – Rapport du Rapporteur spécial sur les droits des peuples autochtones, James Anaya : la situation en Namibie (A/HRC/24/41/Add.1)",
+        "url": "https://documents.un.org/doc/undoc/gen/g13/151/05/pdf/g1315105.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Rapport officiel lu en entier, version anglaise. Il estime la population san de Namibie à 30 000 à 36 000 personnes et décrit l'enseignement en juǀʼhoan."
+      },
+      {
+        "title": "Nations unies, Conseil des droits de l'homme (2010) – Rapport du Rapporteur spécial sur les droits des peuples autochtones, James Anaya : la situation au Botswana (A/HRC/15/37/Add.2)",
+        "url": "https://documents.un.org/doc/undoc/gen/g10/139/68/pdf/g1013968.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Rapport officiel lu en entier, version anglaise. Il estime la population basarwa du Botswana à 50 000 à 60 000 personnes."
+      },
+      {
+        "title": "Mail & Guardian (2007) – \"San, Bushmen or Basarwa: What's in a name?\"",
+        "url": "https://mg.co.za/2007-09-05-san-bushmen-or-basarwa-what-s-in-a-name/",
+        "tier": "referenced",
+        "source_kind": "press",
+        "notes": "Chronique du médiateur du journal sud-africain Mail & Guardian, du 5 septembre 2007, lue en entier."
+      },
+      {
+        "title": "Bensa, Alban (2018) – « La fabrique du sauvage », En attendant Nadeau, no 49, compte rendu de François-Xavier Fauvelle, À la recherche du sauvage idéal (Seuil, 2017)",
+        "url": "https://www.en-attendant-nadeau.fr/2018/02/06/fabrique-sauvage-fauvelle/",
+        "tier": "needs_review",
+        "source_kind": "press",
+        "notes": "Compte rendu publié le 6 février 2018 par le journal en ligne En attendant Nadeau, lu en entier. Il cite Fauvelle sur la création du mot khoïsan."
+      },
+      {
+        "title": "Westphal, E. O. J. (1963) – \"The linguistic prehistory of Southern Africa: Bush, Kwadi, Hottentot and Bantu linguistic relationships\", Africa 33(3), pp. 237-265",
+        "url": "https://doi.org/10.2307/1157418",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de la revue Africa ; référence vérifiée dans le registre Crossref. Nous n'en avons pas lu le texte."
+      },
+      {
+        "title": "Vossen, Rainer (dir.) (2013) – The Khoesan Languages. Routledge, Londres",
+        "url": "https://doi.org/10.4324/9780203084465",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Ouvrage collectif de référence ; référence vérifiée dans le registre Crossref. Nous n'en avons pas lu le texte."
+      },
+      {
+        "title": "du Plessis, Menán (2018) – Kora: A Lost Khoisan Language of the Early Cape and the Gariep. University of South Africa Press",
+        "url": "https://sahistory.org.za/sites/default/files/archive_files/Kora-Lost-Khoisan-Language-early-Cape-and-Gariep-by-Men%C3%A1n-du-Plessis.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Livre de linguistique publié par les presses de l'université d'Afrique du Sud, mis en ligne en texte intégral par South African History Online. Son premier chapitre présente la famille khoe, ses traits, ses contacts et les estimations de locuteurs de Matthias Brenzinger."
+      },
+      {
+        "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+        "author": "Isaac Schapera",
+        "year": 1930,
+        "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque et parle de « souche raciale »."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+        "author": "D. Olderogge",
+        "year": 1980,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, lu dans l'exemplaire numérisé du volume."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+        "author": "Joseph H. Greenberg",
+        "year": 1980,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, lu dans l'exemplaire numérisé du volume."
+      },
+      {
+        "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+        "author": "Tom Güldemann",
+        "year": 2005,
+        "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+      },
+      {
+        "title": "A Sketch of the Modern Languages of Africa, vol. 1",
+        "author": "Robert Needham Cust",
+        "year": 1883,
+        "url": "https://archive.org/details/sketchofmodernla01cust",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Londres, Trübner, 1883. Lu dans la numérisation d'Internet Archive. L'auteur reprend la classification du linguiste autrichien Friedrich Müller."
+      },
+      {
+        "title": "Pickrell, Joseph K. et al. (2012) – *The genetic prehistory of southern Africa*. *Nature Communications*. arXiv:1207.5552",
+        "url": "https://arxiv.org/abs/1207.5552",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article de génétique paru dans Nature Communications, vol. 3, 1143, lu dans sa version déposée sur arXiv. Il date d'environ 1 200 ans le début des mélanges avec des populations non khoisan."
       }
-    ]
+    ],
+    "speakers": {
+      "byCountry": [
+        {
+          "country": "NAM",
+          "speakers": 200000,
+          "source": {
+            "title": "du Plessis, Menán (2018) – Kora: A Lost Khoisan Language of the Early Cape and the Gariep. University of South Africa Press",
+            "url": "https://sahistory.org.za/sites/default/files/archive_files/Kora-Lost-Khoisan-Language-early-Cape-and-Gariep-by-Men%C3%A1n-du-Plessis.pdf",
+            "tier": "referenced",
+            "notes": "Jusqu'à 200 000 locuteurs du seul khoekhoegowab, selon l'estimation de Matthias Brenzinger reprise p. 6 ; les langues san de Namibie s'y ajoutent."
+          }
+        },
+        {
+          "country": "BWA",
+          "speakers": 18912,
+          "source": {
+            "title": "Statistics Botswana (2022) – Botswana Population & Housing Census 2022, Analytical Report Volume 1",
+            "url": "https://statsbots.org.bw/sites/default/files/census_documents/Botswana%20Population%20%26%20Housing%20Census%202022%20Analytical%20Report%20Volume%201-Demographic%20and%20Social%20Characteristics%2CRegistration%2C%20Youth%20and%20Elderly%2CEducation.pdf",
+            "tier": "official",
+            "notes": "Personnes dont la langue la plus parlée à la maison est l'une des langues regroupées sous le nom de sesarwa, au recensement de 2022 (annexe 4). Une autre annexe du même rapport donne 33 405 personnes."
+          }
+        },
+        {
+          "country": "ZAF",
+          "speakers": 2000,
+          "source": {
+            "title": "du Plessis, Menán (2018) – Kora: A Lost Khoisan Language of the Early Cape and the Gariep. University of South Africa Press",
+            "url": "https://sahistory.org.za/sites/default/files/archive_files/Kora-Lost-Khoisan-Language-early-Cape-and-Gariep-by-Men%C3%A1n-du-Plessis.pdf",
+            "tier": "referenced",
+            "notes": "Moins de 2 000 locuteurs du nama, selon Matthias Brenzinger cité p. 7."
+          }
+        }
+      ]
+    }
   }
 }

@@ -8,93 +8,69 @@
     "appellations": {
       "mainName": "Bété",
       "selfAppellation": "Bété",
-      "exonyms": [
-        "Magwe",
-        "Tsien",
-        "Bokya",
-        "Kpwe",
-        "Bèti",
-        "Bètia",
-        "Betegnan"
-      ],
-      "spellingAliases": ["Bt", "Bete"],
-      "originOfExonyms": "Le mot « bété » est récent dans la région de Gagnoa : les personnes interrogées par l'ethnologue Jean-Pierre Dozon disent ne pas l'avoir connu avant la conquête française (1905-1913), et les groupes se désignaient alors par leurs noms de tribus, comme Koukouezo, Gbassi, Paccolo, Niabré ou Zabia. Le mot figure par écrit dans des textes de 1901 et 1904 de Georges Thomann et de Maurice Delafosse, administrateurs coloniaux, alors que la région leur restait méconnue ; Dozon relève que Thomann l'écrit « beré », forme proche de l'expression « beteo ». La carte de la mission Thomann, publiée en 1903, porte « Bêtés » en lettres espacées sur une vaste zone de forêt, de Sokolo à l'est de Soubré. Deux explications sont rapportées par les personnes interrogées à Gagnoa, que Dozon dit non exclusives : le mot viendrait de l'expression « bete o bete o », « paix » ou « pardon », dite à chaque soumission et prise par les Français pour un nom ; ou il serait venu de l'ouest, des premiers postes coloniaux, jusqu'à Gagnoa. Vers 1930, le mot s'étend à un ensemble défini par la langue. Un ouvrage publié en 1939 note que, dans des villages du groupe niaboua de la subdivision d'Issia, les habitants se disent « indifféremment Bété ou Niaboua ». Louhoy Téty Gauze propose le nom Magwé, en 1969 puis en 1982, pour un groupe d'où descendraient les Bété et d'autres peuples du sud-ouest ; Dozon y lit une alternative à un nom jugé trop lié à l'histoire coloniale, et note que cet auteur attribue aussi le mot « bété » aux Européens, les Français l'ayant plus ou moins repris aux Anglais, ce que nous n'avons pas pu vérifier. Aucune personne interrogée par Dozon à Gagnoa n'a cité Magwé, et il n'y voit pas un démenti catégorique. Tshien est, semble-t-il, le nom que les Gouro donnaient à leurs voisins du sud : les rapports militaires français l'emploient quelque temps pour la région de Gagnoa, puis il tombe en désuétude avec l'économie de plantation.",
-      "whyProblematic": "La notion d'ethnie Bété est en partie une construction coloniale française, qui a regroupé sous une même étiquette administrative quelque 93 sous-groupes distincts, sans unité politique précoloniale. Après la conquête, des jeunes qui fuient le travail forcé partent travailler vers la Basse-Côte ; les rapports coloniaux de l'époque parlent de « jeunes Bété au tempérament turbulent et instable » qui ne se fixeraient dans aucun emploi, et Dozon y voit les rudiments d'un stéréotype qui s'est attaché au nom. Le nom ne doit pas être confondu avec Mbété (ou Mbede), un peuple bantou du Gabon et du Congo dont la langue relève d'une autre famille : les Bété de Côte d'Ivoire parlent des langues krou.",
-      "contemporaryUsage": "Le terme Bété est universellement accepté et utilisé en Côte d'Ivoire, dans les médias et l'administration. Les locuteurs utilisent aussi les dénominations spécifiques à leur sous-groupe ou région.",
-      "linguisticFamily": "FLG_KROU",
-      "ethnoLinguisticGroup": "Krou occidental",
-      "historicalRegion": "Forêt centre-ouest de la Côte d'Ivoire, boucle du cacao entre Daloa, Gagnoa et Soubré",
-      "currentCountries": ["CIV"]
+      "exonyms": ["Tshien"],
+      "spellingAliases": ["Bêté", "Bète", "Bete", "Bt"],
+      "originOfExonyms": "Le mot « bété » est récent dans la région de Gagnoa : les personnes interrogées par l'ethnologue Jean-Pierre Dozon disent ne pas l'avoir connu avant la conquête française (1905-1913). Les groupes se désignaient alors par les noms de leurs tribus, comme Koukouezo, Gbassi, Paccolo, Niabré ou Zabia. Le mot figure par écrit dans des textes de 1901 et 1904 de Georges Thomann et de Maurice Delafosse, administrateurs coloniaux, alors que la région leur restait mal connue ; Dozon relève que Thomann l'écrit d'abord « beré ». En 1904, Maurice Delafosse donne le nom « Bêté » à tout le groupe krou oriental, d'après la tribu qu'il tient pour la principale, et range sous ce nom sept tribus, dont les Dida. En 1905, Georges Thomann relève « Bète » parmi les noms de peuples de la langue des Néyo de Sassandra, voisins de la côte. Deux explications sont rapportées par les personnes interrogées à Gagnoa, que Dozon juge compatibles : le mot viendrait de l'expression « bete o bete o », « paix » ou « pardon », dite à chaque soumission et prise par les Français pour un nom ; ou il serait venu de l'ouest, des premiers postes coloniaux, jusqu'à Gagnoa. Vers 1930, le mot s'étend à un ensemble défini surtout par la langue, selon Dozon. Un ouvrage publié en 1939 note que, dans des villages du groupe niaboua de la subdivision d'Issia, les habitants se disent « indifféremment Bété ou Niaboua ». L'historien Louhoy Téty Gauze propose le nom Magwé, en 1969 puis en 1982, pour un groupe d'où descendraient les Bété et d'autres peuples du sud-ouest. Dozon y voit une solution de rechange à un nom jugé trop lié à l'histoire coloniale ; il note que cet auteur attribue aussi le mot « bété » aux Européens, les Français l'ayant plus ou moins repris aux Anglais. Nous n'avons pas lu le texte de Louhoy Téty Gauze. Le nom Tshien serait celui que les Gouro donnaient à leurs voisins du sud, selon Dozon : les rapports militaires français l'emploient quelque temps pour la région de Gagnoa, puis il tombe en désuétude avec l'essor des plantations.",
+      "whyProblematic": "Le nom Bété regroupe sous une même étiquette des groupes qui ne formaient pas une unité politique avant la colonisation : Jean-Pierre Dozon a intitulé son étude de 1985 « Les Bété : une création coloniale ». Après la conquête, des jeunes qui fuient le travail forcé partent travailler vers la Basse-Côte ; les rapports coloniaux de l'époque parlent de « jeunes Bété au tempérament turbulent et instable », et Dozon y voit les débuts d'un stéréotype qui s'est attaché au nom. Le nom ne doit pas être confondu avec Mbété, l'une des formes du nom d'une langue bantoue du Gabon et du Congo, le mbere, selon Glottolog : les Bété de Côte d'Ivoire parlent des langues krou.",
+      "contemporaryUsage": "Le nom Bété désigne aujourd'hui sans ambiguïté un peuple et un territoire du centre-ouest de la Côte d'Ivoire, selon Jean-Pierre Dozon. Les catalogues de langues distinguent trois langues bété, celles de Gagnoa, de Daloa et de Guibéroua, chacune avec son code ISO 639-3. Glottolog les range, avec le kouya et le godié, dans un même ensemble « beteic » du krou oriental.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Niabré – sous-groupe de la région de Gagnoa",
-      "Logobre – sous-groupe forestier",
-      "Nékédi – groupe à matriclans, région de Gagnoa",
-      "Zédi – groupe occidental à organisation matriclanique",
-      "Zabia – groupe proche des Dida au sud",
-      "Guébié – sous-groupe oriental, victime du génocide de 1970",
-      "Gbadi (Badie) – dialecte central du bété de Gagnoa",
-      "Paccolo – sous-groupe méridional",
-      "Dakua – groupe de la zone Soubré",
-      "Dri – sous-groupe forestier occidental",
-      "Zikobouo, Krihiri, Lossom, Gotibo – sous-groupes secondaires de la région de Daloa",
-      "93 sous-groupes distincts selon la tradition orale et les études ethnographiques"
+      "Boréguibo, Guidêko, Boboué, Loboué, Bogüé, Bêblé, Balo, Frèboua et Zêblé : tribus des « Bêté proprement dits » énumérées en 1904 par Maurice Delafosse",
+      "Koukouezo, Gbassi, Paccolo, Niabré et Zabia : tribus de la région de Gagnoa nommées dans les rapports militaires de la conquête, selon Jean-Pierre Dozon",
+      "Gbadi, Kpakolo, Nékédi, Niabré, Zadié et Zébié : parlers du bété de Gagnoa recensés par Glottolog",
+      "Niaboua : tribu du nord-ouest du pays bété que Georges Thomann dit formée, en 1905, d'un mélange de Bêté et de Bakoué"
     ],
     "origins": {
-      "ancientOrigins": "Les Bété font partie du groupe ethnique Krou, dont l'origine ancienne se situe dans les franges sud du Sahara, avec des migrations progressives vers les forêts guinéo-ivoiriennes entre le 13e et le 15e siècle. Louhoy Téty Gauze fait des Bété (1969) les descendants d'un groupe nommé Magwé, qu'il présente en 1982 comme la première vague d'un ensemble nommé Gadi, venu de l'est et installé très tôt dans le sud-ouest ; aucune personne interrogée par Jean-Pierre Dozon à Gagnoa ne l'a citée. Des recherches archéologiques et ethnohistoriques (Téty Antoine Gauze, Jean-Noël Loucou) situent leurs premiers établissements au nord-ouest de leur habitat actuel, entre les fleuves Bandama et Sassandra, vers la fin du Néolithique.",
-      "formationPeriod": "L'identité bété distincte s'est consolidée au cours du 17e siècle, sous la pression de conflits avec d'autres groupes de la savane ouest-soudanienne. Ces tensions les ont poussés à migrer vers les forêts du centre-ouest de la Côte d'Ivoire. La catégorie Bété au sens actuel est en partie une construction de l'administration coloniale française du 19e-20e siècle.",
-      "migrationRoutes": [
-        "Depuis le Sahel et la savane ouest-soudanienne vers le sud, via les vallées des fleuves Bandama et Sassandra",
-        "Premier établissement sur la rive gauche du Sassandra avant dispersion vers les régions de Gagnoa, Daloa, Soubré et Issia",
-        "Vagues successives de migration depuis le nord et l'est, certaines par voie maritime selon la tradition orale"
-      ],
+      "ancientOrigins": "L'historien ivoirien Louhoy Téty Gauze fait descendre les Bété, en 1969, d'un groupe ancien qu'il nomme Magwé. En 1982, il présente ce groupe comme la première vague d'un ensemble nommé Gadi, venu de l'est et installé très tôt dans le sud-ouest, selon Jean-Pierre Dozon. Aucune des personnes que Dozon a interrogées à Gagnoa ne lui a cité ce nom.",
+      "formationPeriod": "La catégorie bété telle qu'on l'entend aujourd'hui se forme pendant la colonisation. Le nom, écrit à partir de 1901 par des administrateurs coloniaux, désigne d'abord les habitants du triangle formé par Soubré, Daloa et Gagnoa ; vers 1930, il s'étend à un ensemble dont l'unité est surtout linguistique, selon Jean-Pierre Dozon.",
+      "migrationRoutes": [],
       "historicalSettlementZones": [
-        "Région de Gagnoa (groupe central, Bété de l'Est)",
-        "Région de Daloa (groupe septentrional)",
-        "Région de Soubré et Buyo (groupe méridional)",
-        "Région d'Issia et Guibéroua (groupe occidental)",
-        "Zone de la boucle du cacao entre Daloa, Soubré et Gagnoa (30 000 km²)"
+        "Entre les pays gouro, à l'est, et le fleuve Sassandra, à l'ouest, au nord des Godié et des Kouadia : domaine des « Bêté proprement dits » décrit en 1904 par Maurice Delafosse",
+        "Entre environ 5° 30′ et 7° 15′ de latitude nord, de la limite des pays gouro jusqu'à la rive gauche du Sassandra, selon Georges Thomann en 1905",
+        "Triangle formé par Soubré, Daloa et Gagnoa, premier sens du nom Bété selon Jean-Pierre Dozon"
       ],
-      "unificationsOrDivisions": "Les Bété n'ont jamais constitué d'entité politique unifiée. Leurs 93 sous-groupes tribaux distincts ont toujours fonctionné de façon autonome, organisés en clans et lignages. La conscience d'une identité bété commune est en grande partie un produit de l'ère coloniale et des décennies post-indépendance. Pour la région de Gagnoa, Jean-Pierre Dozon montre que le périmètre administratif colonial a intégré à la catégorie Bété des tribus qui auraient aussi pu être qualifiées de Dida. Cette observation décrit une frontière classificatoire coloniale ; elle ne signifie pas que tous les Bété de Gagnoa sont Dida ni que les langues bété et dida sont identiques.",
-      "externalInfluences": "Contacts historiques avec les Wé (Guéré), les Dida, les Nyabwa et les Guro. Influence artistique des Wé pour les masques. Influence des Akans à Gagnoa (absence de masques dans ce sous-groupe). Colonisation française (résistance jusqu'en 1906-1936). Islamisation partielle dans les années 1970. Immigration massive de Baoulé, Dioula et Voltaïques dans les zones d'agriculture commerciale.",
-      "majorHistoricalEvents": "Résistance acharnée à la pénétration coloniale française jusqu'en 1906, dernière résistance en 1936. Le chef de guerre Zokou Gbéouli, que la notice d'autorité IdRef nomme Zokou Gbeuly et date de 1835 à 1912, ne peut pas être rattaché à celle de 1936. Mort non élucidée du sénateur Biaka Boda en 1950. Tentative de sécession en 1970 (État d'Éburnie ou République de Guébié), réprimée dans le sang par le gouvernement Houphouët-Boigny (génocide de Guébié). Laurent Gbagbo, Bété de Gagnoa, devient président de la République de Côte d'Ivoire."
+      "unificationsOrDivisions": "Les Bété ne formaient pas une unité politique avant la colonisation, selon Jean-Pierre Dozon. Les limites du groupe ont varié avec les auteurs coloniaux : en 1904, Maurice Delafosse range sous le nom « Bêté » tout le groupe krou oriental, Dida, Godié et Néyo compris, et distingue les « Bêté proprement dits » ; en 1905, Georges Thomann rattache les Godié aux Bêté et décrit les Niaboua comme un mélange de Bêté et de Bakoué. Pour la région de Gagnoa, Dozon montre que le découpage administratif colonial a intégré aux Bété des tribus qui auraient aussi pu être qualifiées de Dida. Cette observation décrit une frontière tracée par l'administration ; elle ne signifie pas que tous les Bété de Gagnoa sont des Dida, ni que les langues bété et dida sont les mêmes.",
+      "externalInfluences": "Les cultures de rente, le café et le cacao, transforment la société bété au XXe siècle. Denise Paulme juge ces changements surtout négatifs dans son livre de 1962 ; l'anthropologue A. J. F. Köbben souligne au contraire, en 1966, combien les Bété s'y sont adaptés, alors que leurs contacts réguliers avec les Européens ne remontaient selon lui qu'à une cinquantaine d'années.",
+      "majorHistoricalEvents": "Le pays bété est conquis par l'armée française entre 1907 et 1912, selon Jean-Pierre Dozon. Dans la région de Daloa, le chef de guerre Zokou Gbeuly, né en 1835 selon le catalogue des bibliothèques universitaires françaises (IdRef), mène entre 1903 et 1906 une révolte au cours de laquelle le poste colonial de Daloa est incendié ; arrêté en 1911, il est déporté à Zuénoula, où il meurt en 1912, selon le site d'information ivoirien Pulse."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Organisation en 93 tribus autonomes (clans ou fédérations de lignages). Gouvernance par conseils de sages (anciens) au sein de chaque village, sans chefferie centralisée ni royauté. Système qualifié de démocratie primaire par les chercheurs. Le chef est choisi par la communauté selon la sagesse et les qualités morales, et reste en poste jusqu'à sa mort ou à une faute grave. Culte du bagnon : personnage désigné par critères physiques et moraux, consulté et respecté dans chaque village.",
-      "clanOrganization": "Organisation patrilinéaire prépondérante, avec présence de matriclans (lêlé) chez les Bété de Gagnoa et certains sous-groupes (Zédi, Zabia, Gbadi, Nékédi, Niabré, Paccolo, Guébié). Les matriclans comptent 6 à 8 unités par village, portant les noms d'ancêtres féminines mythiques (Gatoua, Têkpêtoua, Médétoua, Datoua, Litoua, Doutoua). Le mariage entre membres d'un même lêlé est interdit et nécessite un sacrifice animal expiatoire.",
-      "ageClassSystems": "Pas de système de classes d'âge formalisé comparable à d'autres peuples Krou. La transmission des arts et savoirs (masques, danses) s'effectue via des sociétés masculines de danse au niveau villageois, auxquelles tout homme adulte doit adhérer.",
-      "roleOfLineages": "L'héritage est adélphique : les biens d'un homme reviennent d'abord à ses frères et cousins de la même génération ; ses enfants n'héritent qu'après le décès de tous les frères et cousins. Les lignages exercent le contrôle judiciaire et financier au sein de la communauté. L'appartenance au lignage détermine les droits fonciers et l'identité sociale.",
-      "religiousAuthority": "Autorité spirituelle exercée par des prêtres et spécialistes rituels maîtrisant les masques sacrés (Grand Masque ou masque tutélaire de chaque village). Les danseurs masqués assurent la protection du village, la justice coutumière et le passage entre monde des vivants et des esprits."
+      "traditionalPoliticalSystem": "Avant la colonisation, il n'existait guère d'autorité politique au-dessus du village, selon l'anthropologue A. J. F. Köbben, qui a lui-même enquêté chez les Bété et rend compte en 1966 du livre de Denise Paulme. Les petites guerres entre villages étaient alors courantes, mais les villages autonomes étaient aussi liés par un système élaboré d'alliances matrimoniales et de prestations cérémonielles, selon le même auteur.",
+      "clanOrganization": "L'individu était, et restait en partie dans les années 1960, fermement inscrit dans son groupe de parenté patrilinéaire, selon A. J. F. Köbben.",
+      "ageClassSystems": null,
+      "roleOfLineages": "Dans le groupe patrilinéaire, les aînés tiennent une place prépondérante, selon A. J. F. Köbben ; il note en 1966 que la génération de son époque est la première à pouvoir s'en détacher.",
+      "religiousAuthority": null
     },
     "languages": {
-      "mainLanguage": "Bété (continuum dialectal krou)",
+      "mainLanguage": "Bété (bev, bet, btg)",
       "isoCodes": ["bev", "bet", "btg"],
       "dialects": [
-        "Bété de Daloa (bev) – dialecte septentrional, région de Daloa",
-        "Bété de Gagnoa / Shyen (btg) – variété orientale",
-        "Bété de Guibéroua / Bété occidental (bet) – dialecte central, similaire au godié",
-        "Bété de Soubré – dialecte méridional",
-        "Bété d'Issia – dialecte occidental",
-        "Bété de Guéyo – dialecte côtier"
+        "Bété de Gagnoa (btg) : branche orientale des langues bété, avec les parlers gbadi, kpakolo, nékédi, niabré, zadié et zébié, selon Glottolog",
+        "Bété de Daloa (bev) : branche occidentale des langues bété, selon Glottolog",
+        "Bété de Guibéroua (bet) : branche occidentale, avec les parlers de Guibéroua et de Soubré, selon Glottolog"
       ],
-      "vehicularRole": "Le bété est la langue de communication inter-bété et véhiculaire dans la zone centre-ouest de la Côte d'Ivoire. Il est utilisé dans les médias locaux (radio, télévision). La langue coexiste avec le français (langue officielle) et le dioula (langue véhiculaire nationale). Certaines variantes sont enseignées dans des écoles primaires de la région."
+      "vehicularRole": null
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q1019506"
     },
     "culture": {
-      "majorRites": "Rites de passage centrés sur le masque gre ou nyabwa : le Grand Masque (un par village) sert de réceptacle des forces spirituelles de la communauté. Les danses masquées assurent purification et protection du village, funérailles, justice coutumière, accueil de dignitaires et préparation des hommes à la guerre. Les statues féminines (rares, sobres, abstraites) sont utilisées lors de cérémonies commémorant les ancêtres féminins. Des figures à la fertilité exagérée, liées à des appels magico-religieux de fécondité, sont documentées. Le rite de veuvage kuizi (kuizi bhudu) implique une série de phases rituelles strictes incluant l'internement de la veuve et un rite de bénédiction (hunpè) destiné à éloigner l'esprit du défunt.",
-      "symbols": "Le masque gre ou nyabwa est le symbole identitaire et spirituel majeur des Bété : visage grimaçant aux traits distordus, proéminences faciales, front bombé, yeux tubulaires ou globulaires, dents d'animaux sauvages, cornes. La tenue traditionnelle est un pagne tapa ou gloko fabriqué à partir d'écorce d'arbre battue, séchée et teinte. L'écriture bété, alphabet syllabaire de 448 unités-pictogrammes, créé par l'artiste Frédéric Bruly Bouabré, constitue un patrimoine culturel unique pratiqué par des initiés.",
-      "artsAndMusic": "Les Bété sont reconnus pour leur tradition de masques sculptés (gre ou nyabwa) : grimaces expressives, front haut en dôme, nez allongé, yeux saillants, parfois ornés de pigments blancs. La sculpture comprend aussi des figures humaines élégantes, influencées stylistiquement par les Guro voisins. La production artistique est dominée par la danse et le chant, qui régissent les événements sociaux. Rythmes traditionnels caractéristiques : towoulou, alloukou, ziglibithy, gbégbé. Le pepe ou tite est une semaine artistique tournante rassemblant plusieurs villages. Les sociétés de danse masculines constituent un pilier de la socialisation et de la transmission culturelle.",
-      "spiritualities": "La religion traditionnelle bété est fondée sur la croyance en un Dieu créateur suprême nommé Lago (ou Lago Tapé), que l'on n'adore pas directement. Les Bété cherchent l'aide de puissances intermédiaires : esprits des ancêtres, esprits habitant les arbres, les rivières et les rochers. Les rituels visent à maintenir une relation harmonieuse entre la nature et les ancêtres, protecteurs des lignages. Des sacrifices (œufs, poulets, bovins) et des tabous régulent le rapport au sacré. Les masques sont des instruments de médiation entre les vivants et le monde des esprits. Le christianisme (catholicisme majoritaire) s'est largement répandu depuis la colonisation. Une vague d'islamisation a touché certains Bété dans les années 1970."
+      "majorRites": "Le rite de veuvage kuizi (kuizi bhudu) comprend une suite d'étapes, dont l'isolement de la veuve et un rite de bénédiction, le hunpè, destiné à éloigner l'esprit du défunt, selon un article de Mathieu Obou Tchetche paru en 2023.",
+      "symbols": "En 1905, l'administrateur colonial Georges Thomann décrit chez les Bété une longue cicatrice qui va du sommet du front au bout du nez, des incisives et des canines taillées en pointe, et des vêtements d'écorce qu'il note gòdè lòkwe. Il ajoute que, chez les femmes de certaines tribus, comme celles du Guidaboué et du Baleko, la lèvre supérieure est percée.",
+      "artsAndMusic": "L'artiste Frédéric Bruly Bouabré (1923-2014) a consigné le patrimoine et les récits bété dans des dessins sur de petits cartons. Il a créé pour la langue bété une écriture de 448 signes, dont chacun note une syllabe, selon le magazine Hyperallergic.",
+      "spiritualities": "Denise Paulme consacre un chapitre de son livre de 1962 à la religion et à la magie. Elle relie la multiplication des accusations de sorcellerie aux tensions nées des cultures de rente ; A. J. F. Köbben juge ce tableau trop sombre."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Les Bété n'ont pas constitué de royaumes ou chefferies centralisées. Leur organisation en 93 clans autonomes correspond à une forme de démocratie villageoise segmentaire. Des figures de résistance comme Zokou Gbéouli (Zokou Gbeuly, 1835-1912 selon la notice IdRef, résistance anticoloniale) ont acquis une stature historique sans fonder d'institution politique durable.",
-      "relationsWithNeighbors": "Relations complexes avec les Wé (Guéré), dont ils partagent l'institution du masque ; avec les Dida (une thèse leur prête une origine commune, Magwé) ; avec les Nyabwa, Godiés, Néyo et Bakwé. Relations commerciales et parfois conflictuelles avec les peuples Akan à l'est (Baoulé) et les Mandingues (Dioula) au nord. Sous Houphouët-Boigny, des migrations de Baoulé et Voltaïques dans les terres bété ont généré des tensions durables.",
-      "conflictsOrAlliances": "Résistance farouche à la colonisation française (1906-1936). Le chef de guerre Zokou Gbeuly (1835-1912 selon la notice IdRef), que l'éditeur de l'ouvrage collectif qui lui est consacré présente comme fondateur de la cité de Daloa, mobilise selon la presse ivoirienne environ mille combattants de trois villages voisins (Sabwa, Galebha, Labéa) et brûle le poste colonial de Daloa en 1906 ; arrêté en 1911 puis déporté à Zuénoula, il y meurt en 1912. Mouvement politique de défense des intérêts bété depuis les années 1930. Tentative de sécession (État d'Éburnie, 1970) réprimée par le gouvernement avec de nombreux morts. Soutien massif au Front Populaire Ivoirien (FPI) de Laurent Gbagbo dès 1982. Implication dans les tensions ethniques des crises ivoiriennes de 2002-2011.",
-      "diaspora": "Forte migration des Bété vers Abidjan et les grandes villes ivoiriennes depuis l'époque coloniale. Diaspora en France et dans les pays occidentaux (communauté moins documentée que d'autres groupes ivoiriens). L'identité bété urbaine est distincte de celle rurale et varie selon les sous-groupes."
+      "kingdomsOrChiefdoms": "Les Bété n'avaient guère d'autorité politique au-dessus du village avant la colonisation, selon A. J. F. Köbben et Jean-Pierre Dozon.",
+      "relationsWithNeighbors": "En 1904, Maurice Delafosse donne pour voisins aux « Bêté proprement dits » les Boboua au nord, les Bakoué à l'ouest, les pays gouro à l'est, et au sud les Godié et les Kouadia. Georges Thomann écrit en 1905 que les Godié « dérivent directement des Bêté ». Le nom Tshien, employé au début de la colonisation, viendrait des Gouro, selon Jean-Pierre Dozon. Autour de Gagnoa, la limite entre Bété et Dida doit beaucoup au découpage colonial, selon le même auteur.",
+      "conflictsOrAlliances": "Les petites guerres entre villages étaient courantes avant la colonisation, selon A. J. F. Köbben, mais les villages étaient aussi liés par des alliances matrimoniales. Pendant la conquête, le chef de guerre Zokou Gbeuly réunit selon la presse ivoirienne environ mille combattants venus des villages de Sabwa, Galebha et Labéa, et le poste colonial de Daloa est incendié ; l'éditeur de l'ouvrage collectif qui lui est consacré le présente comme le fondateur de la cité de Daloa.",
+      "diaspora": "Après la conquête, des jeunes Bété partent travailler vers la Basse-Côte pour échapper au travail forcé, selon Jean-Pierre Dozon."
     },
     "demography": {
       "totalPopulation": 994000,
       "referenceYear": 2025,
-      "source": "Estimations combinées Joshua Project 2025 (Bété Gagnoa : 394 000 ; Bété Daloa : 300 000 ; Bété Western/Guibéroua : 300 000), confirmées par la Minority Rights Group (environ 410 000 selon données antérieures) et les extrapolations 2025 basées sur le taux de croissance démographique ivoirien (2,4%)",
+      "source": "Estimations combinées Joshua Project 2025 (Bété Gagnoa : 394 000 ; Bété Daloa : 300 000 ; Bété Western/Guibéroua : 300 000), confirmées par la Minority Rights Group (environ 410 000 selon données antérieures) et les extrapolations 2025 basées sur le taux de croissance démographique ivoirien (2,4%). Le recensement de 2021 ne publie que de grands groupes : les peuples de langues krou, dont les Bété, y forment 9,1 % des Ivoiriens, selon l'Agence nationale de la statistique.",
       "distributionByCountry": [
         {
           "country": "CIV",
@@ -139,7 +115,7 @@
         "url": "https://www.ethnologue.com/language/btg/",
         "tier": "official",
         "source_kind": "linguistic_reference",
-        "notes": "Supports the ISO 639-3 code btg."
+        "notes": "Fiche de la langue dans le catalogue Ethnologue, qui donne le code ISO 639-3 btg."
       },
       {
         "title": "Tchetche, Mathieu Obou – L'exemple des effets du KUIZI chez le peuple Bété de Côte d'Ivoire. Revue SLC, 2023",
@@ -204,8 +180,78 @@
         "tier": "referenced",
         "source_kind": "academic",
         "notes": "Textes non consultés : la thèse Magwé et le groupe Gadi sont connus par le compte rendu de Jean-Pierre Dozon (La société bété, 1985, p. 43 et 353-354). Gadi est détaillé dans le texte de 1982."
+      },
+      {
+        "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+        "url": "https://archive.org/details/vocabulairescomp00delauoft",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "author": "Maurice Delafosse",
+        "year": 1904,
+        "notes": "Paris, Ernest Leroux, 1904 ; l'auteur est alors administrateur colonial en Côte d'Ivoire. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive, p. 68 à 74. Page 68 : « Je donne au groupe krou oriental le nom de « Bêté » […], ces noms étant ceux des deux tribus principales » ; le groupe compte sept tribus, dont les Dyida ou Dida. Page 69 : les « Bêté proprement dits » comprennent les Boréguibo, Guidêko, Boboué, Loboué, Bogüé, Bêblé, Balo, Frèboua et Zêblé, au nord des Godyé et des Kouadia, des pays gouro au Sassandra. Page 72 : la numération bêté lui a été communiquée par l'administrateur Thomann. Appui pour les appellations, les groupes, les zones d'établissement et les voisins."
+      },
+      {
+        "title": "Essai de manuel de la langue néouolé parlée dans la partie occidentale de la Côte d'Ivoire",
+        "url": "https://archive.org/details/bub_gb_XEU-AAAAYAAJ",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "author": "Georges Thomann",
+        "year": 1905,
+        "notes": "Paris, Ernest Leroux, 1905 ; l'auteur est administrateur colonial du cercle du Sassandra. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive, p. 32 et p. 159-160. Page 32 : parmi les noms de peuples en néouolé, la langue des Néyo, figure « Bète ». Pages 159-160 : les « Bêté proprement dits » habitent entre environ 5° 30′ et 7° 15′ de latitude nord, de la limite des pays gouro à la rive gauche du Sassandra ; les Niaboua sont « formés d'un mélange de Bêté et de Bakoué » ; l'auteur décrit la cicatrice du front au nez, les dents taillées en pointe, les vêtements d'écorce (gòdè lòkwe), et écrit que les Godyé « dérivent directement des Bêté ». Appui pour les appellations, les zones d'établissement et les symboles."
+      },
+      {
+        "title": "Köbben, A. J. F. — compte rendu de Denise Paulme, Une société de Côte d'Ivoire hier et aujourd'hui : les Bété (Mouton, 1962), Africa, vol. 36, n° 1, 1966, p. 95",
+        "url": "https://www.cambridge.org/core/journals/africa/article/abs/une-societe-de-cote-divoire-hier-et-aujourdhui-les-bete-par-denise-paulme-serie-le-monde-doutremer-passe-et-present-viii-parisla-haye-mouton-1962-pp-210-ill-carte/A4CC4B56EA64477DF6EECC4B4596F6D7",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "author": "A. J. F. Köbben",
+        "year": 1966,
+        "notes": "Compte rendu paru dans la revue de l'International African Institute, publiée par Cambridge University Press. Lu le 3 novembre 2026 dans l'aperçu de la page que donne l'éditeur. L'auteur, qui a lui-même enquêté chez les Bété, résume le livre de Denise Paulme, fruit de six mois d'enquête : famille, parenté et groupes locaux, ressources et régime des terres, religion et magie, guerre et chasse d'autrefois, et changements dus au café et au cacao, qu'elle juge surtout négatifs. Il écrit qu'il n'existait guère de structure politique au-delà du village, que les petites guerres entre villages étaient courantes, que les villages autonomes étaient aussi liés par un système élaboré d'alliances matrimoniales et de prestations cérémonielles, et que l'individu restait inscrit dans son groupe patrilinéaire, où les aînés ont un rôle prépondérant. Appui pour l'organisation politique et lignagère, les influences extérieures et les spiritualités."
+      },
+      {
+        "title": "Glottolog 5.3 — Beteic (bete1265)",
+        "url": "https://glottolog.org/resource/languoid/id/bete1265",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice de l'ensemble des langues bété dans le catalogue Glottolog, lu le 3 novembre 2026. Elle classe dans le krou oriental un ensemble « beteic » formé du bété oriental (bété de Gagnoa, avec les parlers gbadi, kpakolo, nékédi, niabré, zadié et zébié, et kouya) et du bété occidental (bété de Daloa, godié, et bété de Guibéroua, avec les parlers de Guibéroua et de Soubré). Appui pour les langues et l'usage contemporain du nom."
+      },
+      {
+        "title": "Glottolog 5.3 — Gagnoa Bété (gagn1235)",
+        "url": "https://glottolog.org/resource/languoid/id/gagn1235",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice de la langue dans le catalogue Glottolog, lu le 3 novembre 2026. Elle donne le code ISO 639-3 btg et recense les formes Bete, Bété, Eastern Bété, Gagnoua-Bété et Shyen. Appui pour les langues et les graphies du nom."
+      },
+      {
+        "title": "Glottolog 5.3 — Mbere (mber1257)",
+        "url": "https://glottolog.org/resource/languoid/id/mber1257",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Notice de la langue dans le catalogue Glottolog, lu le 3 novembre 2026. Cette langue bantoue du Congo et du Gabon est aussi nommée Mbede, Mbédé ou Mbété. Appui pour distinguer ce nom de celui des Bété de Côte d'Ivoire."
+      },
+      {
+        "title": "Hyperallergic — « A Visual Alphabet for an Oral Language from the Ivory Coast », 5 décembre 2018",
+        "url": "https://hyperallergic.com/473986/frederic-bruly-bouabre-cantor-arts-center/",
+        "tier": "referenced",
+        "source_kind": "press",
+        "author": "Clayton Schuster",
+        "year": 2018,
+        "notes": "Article d'un magazine d'art américain sur l'exposition consacrée à Frédéric Bruly Bouabré au Cantor Arts Center de l'université Stanford. Lu le 3 novembre 2026. Il écrit que l'artiste a consigné le patrimoine et les récits bété dans des dessins, et que son écriture est un syllabaire de 448 signes, chacun notant une syllabe. Appui pour les arts."
+      },
+      {
+        "title": "Répartition des Ivoiriens par grand groupe ethnique selon le sexe, RGPH 2021",
+        "url": "https://data.gouv.ci/datasets/repartition-des-ivoiriens-par-grand-groupe-ethnique",
+        "tier": "official",
+        "source_kind": "government",
+        "author": "Agence nationale de la statistique (ANStat), Côte d'Ivoire",
+        "year": 2021,
+        "notes": "Portail officiel des données ouvertes de Côte d'Ivoire, jeu de données du recensement général de la population et de l'habitat de 2021, mis à jour le 11 mars 2026. Lu le 3 novembre 2026, présentation et commentaire du graphique. Le recensement ne publie que de grands groupes : Akan, Mandé du Nord, Gur ou Voltaïques, Krou, Mandé du Sud, naturalisés et Ivoiriens sans précision. Le groupe krou représente 9,1 % des Ivoiriens. Appui pour la démographie : aucun chiffre n'y est donné pour les Bété."
       }
-    ]
+    ],
+    "searchAnswer": {
+      "lead": "Les Bété sont un peuple de langues krou du centre-ouest de la Côte d'Ivoire, autour de Daloa, Gagnoa et Soubré. Leur nom apparaît par écrit au début du XXe siècle.",
+      "followUp": "D'où vient le nom Bété, inconnu à Gagnoa avant la conquête coloniale ?"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Bété désigne un peuple de langues krou du centre-ouest de la Côte d'Ivoire, autour de Daloa, Gagnoa et Soubré, qui se nomme aujourd'hui lui-même Bété. Avant la conquête coloniale, ses groupes se désignaient par les noms de leurs tribus, et un autre nom, Tshien, a servi au début de la colonisation. Les sources ne s'accordent pas sur l'origine du nom Bété ; nous les présentons plus bas.",
@@ -311,6 +357,62 @@
                 "source_kind": "academic",
                 "page": "p. 63",
                 "notes": "Dans Au cœur de l'ethnie, sous la direction de Jean-Loup Amselle et Elikia M'Bokolo, La Découverte, lu dans le texte publié par l'IRD. L'auteur date la conquête de 1907 à 1912."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bété figure, écrit « Bète », parmi les noms de peuples de la langue des Néyo de Sassandra, voisins de la côte, dans le manuel de l'administrateur colonial Georges Thomann.",
+            "formAsWritten": "Bète",
+            "actors": [
+              {
+                "name": "Georges Thomann",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Essai de manuel de la langue néouolé parlée dans la partie occidentale de la Côte d'Ivoire",
+                "author": "Georges Thomann",
+                "year": 1905,
+                "url": "https://archive.org/details/bub_gb_XEU-AAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 32",
+                "notes": "Paris, Ernest Leroux, 1905. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive. La liste « Noms de races » donne en néouolé : « Bakwe, Bañũa, Bète, Gòdye, Kwadya, Néyo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bété est écrit « Bêté » par l'administrateur colonial Maurice Delafosse, qui le donne à tout le groupe krou oriental, d'après la tribu qu'il tient pour la principale, et y range sept tribus, dont les Dida.",
+            "formAsWritten": "Bêté",
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 68-69",
+                "notes": "Paris, Ernest Leroux, 1904. Lu le 3 novembre 2026 dans la numérisation d'Internet Archive : « Je donne au groupe krou oriental le nom de « Bêté » et au groupe krou occidental le nom de « Bakoué », ces noms étant ceux des deux tribus principales »."
               }
             ]
           },

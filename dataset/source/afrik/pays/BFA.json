@@ -3,8 +3,8 @@
   "nameFr": "Burkina Faso",
   "nameEn": "Burkina Faso",
   "nameOfficial": "Burkina Faso (Burkina Faso)",
-  "summary": "Le nom du Burkina Faso est composé dans deux langues du pays : « la patrie des hommes intègres », de « burkina » en mooré et « faso » en dioula. Le pays s'appelait Haute-Volta jusqu'en 1984, et la colonie de ce nom fut supprimée en 1932 puis rétablie en 1947. Son histoire est celle des royaumes mossi — Tenkodogo, Yatenga, Ouagadougou, Fada N'Gourma, Boussouma — et des chefferies gur qui les entouraient.",
-  "etymology": "Le nom \"Burkina Faso\" est composé de deux mots pris dans deux langues du pays. \"Burkina\" vient du mooré, la langue des Mossi : le dictionnaire mooré de la SIL le traduit par « homme intègre », une personne qui a le sens de la dignité et de l'honneur ; l'intégrité elle-même se dit burkĩndi. Ce dictionnaire note aussi que le mot est emprunté au songhay ; en zarma, une langue songhay, burcin veut dire « noble ». \"Faso\" vient du dioula, où il veut dire « patrie » ; les dictionnaires le décomposent en fa, « père », et so, « maison » : la maison du père. Ensemble, ils se traduisent par \"la patrie des hommes intègres\". Le nom remplace \"Haute-Volta\", que l'administration coloniale française avait donné à la colonie d'après le fleuve Volta, un nom que des marins portugais employaient déjà pour le fleuve au début du XVIe siècle. Une ordonnance datée du 2 août 1984 établit le changement, qui prend effet le 4 août 1984, jour du premier anniversaire de l'arrivée au pouvoir de Thomas Sankara. La même ordonnance nomme les habitants \"Burkinabè\". Ce mot ajoute à \"burkina\" la terminaison -bè, qui vient du fulfulde, la langue des Peuls, où elle marque le pluriel des personnes, selon la linguiste Nataša Raschi et l'Office québécois de la langue française. Des linguistes rappellent qu'en fulfulde cette terminaison ne sert qu'au pluriel ; en français, on dit pourtant « un Burkinabè ». Le géographe Alain Maharaux écrit que le mot burkinabè emprunte aux trois langues principales du pays : c'est vrai de l'ensemble formé par burkina, faso et -bè.",
+  "summary": "Le nom Burkina Faso réunit deux mots pris à deux langues du pays : burkina, du mooré, et faso, du dioula. Ensemble, ils se traduisent par « la patrie des hommes intègres ». Le pays porte ce nom depuis le 4 août 1984 ; il s'appelait auparavant Haute-Volta, le nom d'une colonie française créée en 1919, supprimée en 1932 puis rétablie en 1947. Bien avant la colonie, le plateau central était le pays des royaumes mossi, à côté de peuples qui vivaient sans roi.",
+  "etymology": "Le nom \"Burkina Faso\" est composé de deux mots pris dans deux langues du pays. \"Burkina\" vient du mooré, la langue des Mossi : le dictionnaire mooré de la SIL le traduit par « homme intègre », une personne qui a le sens de la dignité et de l'honneur ; l'intégrité elle-même se dit burkĩndi. Ce dictionnaire note aussi que le mot est emprunté au songhay. \"Faso\" vient du dioula, où il veut dire « patrie » ; les dictionnaires le décomposent en fa, « père », et so, « maison » : la maison du père. Ensemble, ils se traduisent par \"la patrie des hommes intègres\". Le nom remplace \"Haute-Volta\", que l'administration coloniale française avait donné à la colonie d'après le fleuve Volta, un nom que des marins portugais employaient déjà pour le fleuve au début du XVIe siècle. Une ordonnance datée du 2 août 1984 établit le changement, qui prend effet le 4 août 1984, jour du premier anniversaire de l'arrivée au pouvoir de Thomas Sankara. La même ordonnance nomme les habitants \"Burkinabè\". Ce mot ajoute à \"burkina\" la terminaison -bè, qui vient du fulfulde, la langue des Peuls, où elle marque le pluriel et veut dire « les gens de », selon l'Office québécois de la langue française. En français, le mot reste le même au masculin, au féminin et au pluriel : on écrit un Burkinabè, des Burkinabè. L'Office admet aussi les formes Burkinabé et Burkinabée. Le géographe Alain Maharaux écrit que le mot burkinabè emprunte aux trois langues principales du pays : c'est vrai de l'ensemble formé par burkina, faso et -bè.",
   "nameOriginActor": "Le nom a été établi par l'ordonnance n° 84-043/CNR/PRES du 2 août 1984, entrée en vigueur le 4 août, sous la présidence de Thomas Sankara. Selon Nayabtigoungou Congo Kaboré, secrétaire général du gouvernement à l'époque, qui l'a raconté en 2013, le conseil des ministres a d'abord entendu plusieurs propositions, chacune dans une langue. Le mot burkina a été retenu sur l'avis de Blaise Compaoré ; Thomas Sankara a ajouté faso et la terminaison -bè. C'est le récit d'un seul témoin. Le nom qu'il remplace, \"Haute-Volta\", avait été donné par l'administration coloniale française, qui créa la colonie par décret du 1er mars 1919 avec Ouagadougou pour capitale.",
   "nameHistory": {
     "summary": "Le nom Burkina Faso désigne un pays d'Afrique de l'Ouest, qui le porte depuis le 4 août 1984. Il est formé de deux mots pris à deux langues du pays, le mooré et le dioula. Le pays s'appelait auparavant Haute-Volta, du nom que l'administration coloniale française avait donné à la colonie en 1919. Les sources lues s'accordent sur le sens du nom Burkina Faso ; elles disent moins de choses sur le choix du nom Haute-Volta. Nous les présentons plus bas.",
@@ -108,6 +108,15 @@
                 "source_kind": "linguistic_reference",
                 "page": "lexique, entrées maison et patrie",
                 "notes": "Lu dans l'OCR le 15 octobre 2026 : maison « — paternelle, fa-so » ; patrie « fa-so ». Texte d'un administrateur colonial français."
+              },
+              {
+                "title": "Grand dictionnaire terminologique, fiche « Burkinabè »",
+                "author": "Office québécois de la langue française",
+                "year": 2022,
+                "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/2076452/burkinabe",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche terminologique de l'Office québécois de la langue française, mise à jour en 2022, lu le 3 novembre 2026. Le mot résulte de l'ajout au nom Burkina du suffixe -bè, « signifiant « les gens de » », une « désinence plurielle empruntée à la langue des Peuls ». La fiche donne Burkinabè comme invariable en genre et en nombre et admet aussi Burkinabé et Burkinabée. Elle date du 16 août 1983 l'inscription du mot au Journal officiel du Burkina, alors que les autres sources lues datent l'ordonnance d'août 1984."
               }
             ]
           },
@@ -157,7 +166,7 @@
               "label": "1er-4 août 1984"
             },
             "era": "modern",
-            "statement": "Le nom Burkina Faso apparaît dans l'ordonnance n° 84-043/CNR/PRES du Conseil national de la révolution, datée du 2 août 1984, qui prend effet le 4 août. Une ordonnance de 1985 la cite sous ce numéro. Son article 1er dit : « le territoire libre d'Afrique […] dénommé Haute-Volta, s'appelle désormais le Burkina Faso ». Le texte que reproduit Burkina 24 écrit Burkina Faso et le signe « Capitaine Thomas ». Jeune Afrique écrit que l'ordonnance disait « Bourkina Fâso ». Louis-Dominique Ouédraogo, haut fonctionnaire en 1984, rapporte qu'une circulaire du même mois demandait de prononcer « Bourkina ». Qui a proposé le nom ? Un participant, Nayabtigoungou Congo Kaboré, secrétaire général du gouvernement, l'a raconté en 2013. Selon lui, plusieurs noms sont proposés en conseil des ministres, chacun dans une langue : « République du Faso », « République du Moogho », « Léédymè ». Le mot burkina est retenu sur l'avis de Blaise Compaoré. Thomas Sankara ajoute ensuite faso, pour les dioulaphones de l'Ouest, et la terminaison -bè, pour les Peuls. C'est le récit d'un seul témoin, publié vingt-neuf ans après ; les autres sources lues ne disent pas qui a proposé le nom. La plus ancienne trace datée que le projet connaît est l'annonce de Radio France Internationale, le 1er août 1984, que The Christian Science Monitor rapporte le 3 août en écrivant « Bourkina Fasso ». Le pays et ses peuples existaient bien avant ce nom.",
+            "statement": "Le nom Burkina Faso apparaît dans l'ordonnance n° 84-043/CNR/PRES du Conseil national de la révolution, datée du 2 août 1984, qui prend effet le 4 août. Une ordonnance de 1985 la cite sous ce numéro. Son article 1er dit : « le territoire libre d'Afrique […] dénommé Haute-Volta, s'appelle désormais le Burkina Faso ». Le texte que reproduit Burkina 24 écrit Burkina Faso et le signe « Capitaine Thomas ». Jeune Afrique écrit que l'ordonnance disait « Bourkina Fâso ». Louis-Dominique Ouédraogo, haut fonctionnaire en 1984, rapporte qu'une circulaire du même mois demandait de prononcer « Bourkina ». Un participant au conseil des ministres, Nayabtigoungou Congo Kaboré, secrétaire général du gouvernement, a raconté en 2013 comment le nom est né. Selon lui, plusieurs noms sont proposés, chacun dans une langue : « République du Faso », « République du Moogho », « Léédymè ». Le mot burkina est retenu sur l'avis de Blaise Compaoré. Thomas Sankara ajoute ensuite faso, pour les dioulaphones de l'Ouest, et la terminaison -bè, pour les Peuls. C'est le récit d'un seul témoin, publié vingt-neuf ans après. La plus ancienne trace datée que le projet connaît est l'annonce de Radio France Internationale, le 1er août 1984, que The Christian Science Monitor rapporte le 3 août en écrivant « Bourkina Fasso ». Le pays et ses peuples existaient bien avant ce nom.",
             "formAsWritten": "Bourkina Fasso",
             "birth": true,
             "actors": [
@@ -262,6 +271,55 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 380-381",
                 "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, lu dans l'exemplaire numérisé. Partie « Sur le plateau central voltaïque, les royaumes mossi du XVIe au XIXe siècle » : « les premières formations datent du milieu du XIIe siècle » ; l'avènement de Naaba Wubri « date de 1495 environ » ; Naaba Yadega « fonda le royaume du Yatenga vers 1540 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Recensement de 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Burkina Faso et le nom des habitants, burkinabè, prennent leurs mots à trois langues de familles différentes. Glottolog range le mooré parmi les langues gur, le dioula parmi les langues mandingues, du groupe mandé, et le fulfulde du Burkina Faso parmi les langues peules. Au recensement de 2019, le mooré est la principale langue de 52,9 % des habitants de trois ans et plus, le fulfulde de 7,8 % et le dioula de 5,7 %. Le gourmantché, principale langue de 6,8 % d'entre eux, est plus parlé que le dioula, mais le nom ne lui emprunte rien.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Mossi (moss1236)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/moss1236",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde publié par l'Institut Max Planck, lu le 3 novembre 2026. Il range le mooré, qu'il nomme Mossi, parmi les langues gur."
+              },
+              {
+                "title": "Glottolog 5.3 — Dyula (dyul1238)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/dyul1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde publié par l'Institut Max Planck, lu le 3 novembre 2026. Il range le dioula parmi les langues mandingues, du groupe mandé, le signale au Burkina Faso, en Côte d'Ivoire et au Mali, et note qu'il sert à l'enseignement, au commerce, à la chasse et à la religion."
+              },
+              {
+                "title": "Glottolog 5.3 — Western Niger Fulfulde (west2454)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/west2454",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde publié par l'Institut Max Planck, lu le 3 novembre 2026. Il range ce fulfulde, parlé au Burkina Faso et désigné aussi comme le peul du Burkina Faso, parmi les langues peules, de la branche atlantique."
+              },
+              {
+                "title": "Résultats du 5e Recensement général de la population et de l'habitation (RGPH 2019) : volume des tableaux statistiques",
+                "author": "Institut national de la statistique et de la démographie (INSD)",
+                "year": 2023,
+                "url": "https://www.insd.bf/sites/default/files/2024-06/Volume%20des%20tableaux%20statistiques_%205e%20RGPH.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "tableaux I.1, I.21, I.22 et I.24, p. 2 et 18-19",
+                "notes": "Volume publié en janvier 2023 par l'Institut national de la statistique et de la démographie du Burkina Faso, lu le 3 novembre 2026. Tableau I.1 : le recensement de 2019 compte 20 505 155 habitants (population de droit). Tableau I.21 : parmi les résidents, 63,8 % se déclarent musulmans, 20,1 % catholiques, 9,0 % animistes, 6,2 % protestants et 0,7 % sans religion ; 4 782 049 vivent en ville et 13 389 702 à la campagne. Tableau I.22 : les musulmans forment 97,4 % des résidents de la région du Sahel, et les animistes 48,1 % de ceux du Sud-Ouest. Tableau I.24 : chez les résidents de trois ans et plus, la principale langue parlée est le mooré pour 52,9 %, le fulfudé (peul) pour 7,8 %, le gourmantché pour 6,8 %, le dioula pour 5,7 %, le bissa pour 3,3 %, le gourounsi pour 3,2 %, le dagara et le bwamu pour 2,0 % chacun, le bobo et le sénoufo pour 1,5 % chacun, le lobiri pour 1,2 %, le birifor pour 0,7 % et le français pour 2,2 %. Le dioula est la principale langue de 15,3 % des citadins, contre 2,2 % à la campagne."
               }
             ]
           }
@@ -414,7 +472,7 @@
               "label": "Époque coloniale"
             },
             "era": "colonial",
-            "statement": "Le nom Haute-Volta désigne une colonie située dans le bassin des Volta, comme l'historien Michel Izard appelle cette région. Le nom Volta lui-même est un mot portugais : des marins venus acheter de l'or sur la côte de l'actuel Ghana l'employaient déjà au début du XVIe siècle ; on ne sait pas qui l'a donné. Le plus ancien texte lu qui le nomme est le livre de navigation de Duarte Pacheco Pereira, écrit vers 1505 : « un fleuve qui s'appelle le Rio da Volta ». En portugais, volta veut dire tour, détour ou retour ; le texte ne dit pas pourquoi les marins ont choisi ce nom. Maurice Delafosse, en 1912, y voit soit les méandres du fleuve, soit un nom local entendu à son embouchure ; la journaliste Elizabeth Ohene rapporte que les bateaux y faisaient demi-tour, alors que Pacheco décrit la côte au-delà du fleuve. Les Ewe l'appellent Amu, selon Elizabeth Ohene ; plus au nord, écrit Delafosse, chaque peuple l'appelle simplement « le fleuve ». En février 1918, Delafosse propose une colonie pour les populations « du groupe dit voltaïque ». Les sources lues ne disent pas qui a proposé le nom Haute-Volta.",
+            "statement": "Le nom Haute-Volta désigne une colonie située dans le bassin des Volta, comme l'historien Michel Izard appelle cette région. Le nom Volta lui-même est un mot portugais : des marins venus acheter de l'or sur la côte de l'actuel Ghana l'employaient déjà au début du XVIe siècle. Le plus ancien texte lu qui le nomme est le livre de navigation de Duarte Pacheco Pereira, écrit vers 1505 : « un fleuve qui s'appelle le Rio da Volta ». En portugais, volta veut dire tour, détour ou retour. Le texte de Pacheco ne dit pas pourquoi les marins emploient ce mot. En 1912, Maurice Delafosse propose deux explications : les méandres du fleuve, ou un nom local entendu à son embouchure. La journaliste Elizabeth Ohene rapporte que les bateaux y faisaient demi-tour, alors que Pacheco décrit la côte au-delà du fleuve. Les Ewe l'appellent Amu, selon Elizabeth Ohene ; plus au nord, écrit Delafosse, chaque peuple l'appelle simplement « le fleuve ». En février 1918, Delafosse propose de créer une colonie pour les populations « du groupe dit voltaïque », selon Alain Maharaux.",
             "aspect": "meaning",
             "sources": [
               {
@@ -444,7 +502,7 @@
                 "tier": "referenced",
                 "source_kind": "archive",
                 "page": "livre II, ch. 6-7, p. 70-71",
-                "notes": "Texte écrit vers 1505-1508, lu le 15 octobre 2026 : « hum Rio que se chama ho Rio da volta ». Le texte ne dit pas pourquoi le fleuve porte ce nom."
+                "notes": "Texte écrit vers 1505-1508, lu le 15 octobre 2026 : « hum Rio que se chama ho Rio da volta »."
               },
               {
                 "title": "Haut-Sénégal-Niger (Soudan français), 1re série, t. I",
@@ -543,11 +601,11 @@
         "Haute-Volta (1947-1960)",
         "République de Haute-Volta (1960-1984)"
       ],
-      "antiquity": "Le territoire actuel du Burkina Faso était peuplé de diverses sociétés sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs royaumes et territoires (royaumes mossi, chefferies gur, etc.).",
-      "middleAges": "Développement des royaumes mossi : Tenkodogo, Yatenga, Ouagadougou, Fada N'Gourma et Boussouma. Les travaux publiés situent leur formation à la fin du 15e siècle ; la tradition mossi la fait remonter plus haut. Développement de chefferies gur (Bobo, Gourounsi, Dagara). Pas de nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Mosaïque de royaumes et de sociétés sans roi : royaumes mossi (Tenkodogo, Yatenga, Ouagadougou, Fada N'Gourma, Boussouma) et, selon les historiens Michel Izard et Joseph Ki-Zerbo, plusieurs peuples sans roi ni État centralisé. Chez les Bwaba, aucune autorité ne dépassait celle du village. Chez les Lobi, l'anthropologue Michèle Fiéloux décrit une société organisée par lignages, sans pouvoir central. En pays dagara, ce sont les Français qui ont fait des chefs de terre des chefs politiques, à partir de 1912, selon Jeanne-Marie Kambou-Ferrand. Peuples peul et touareg présents dans le nord, où les Peuls fondent en 1810 l'émirat du Liptako, autour de Dori. Des commerçants dioula vivent dans des villes marchandes comme Bobo-Dioulasso. Aucun nom ne désigne l'ensemble du territoire avant la colonie : la Haute-Volta est un découpage tardif, créé en 1919. La nomenclature coloniale elle-même, qui parle de pays Mossi, de pays Gourounsi ou du Yatenga, témoigne de la préexistence et de l'identité de ces territoires.",
-      "colonization": "1919-1960 : Haute-Volta, dans l'Afrique-Occidentale française. La colonie est créée par décret du 1er mars 1919, détachée du Haut-Sénégal-Niger, avec Ouagadougou pour capitale. Ses limites ne sont pas tracées pour l'occasion : le décret réunit sept cercles qui existaient déjà dans le Haut-Sénégal-Niger, ceux de Gaoua, Bobo-Dioulasso, Dédougou, Ouagadougou, Dori, Say et Fada N'Gourma. Parmi les motifs invoqués lors de sa création figurait la réorientation, vers la Côte d'Ivoire qui manquait de main-d'oeuvre, d'un courant migratoire qui se dirigeait vers la Gold Coast. Un décret du 5 septembre 1932 supprime la colonie et rattache ses territoires à la Côte d'Ivoire, au Soudan français et au Niger. Le rapport officiel qui accompagne le décret parle d'« appréciables économies ». L'historien Joseph Abo Kobi ajoute une autre raison : les colonies voisines voulaient ce réservoir de main-d'œuvre, et la Côte d'Ivoire cherchait des travailleurs voltaïques pour ses plantations et le chantier de son chemin de fer. La partition s'applique à partir du 1er janvier 1933. La Côte d'Ivoire en reçoit la plus grande part, et la plus peuplée : les cercles de Ouagadougou, Gaoua, Batié, Bobo-Dioulasso et une partie de celui de Dédougou. Un décret du 13 juillet 1937 réunit ces territoires sous le nom de Région de la Haute Côte-d'Ivoire, dotée d'une autonomie relative. Les rois mossi refusent ce partage. Dès 1932, le roi des Mossi écrit au député Blaise Diagne, à Paris, pour défendre la colonie ; en 1945, son successeur, le Mogho Naaba Saaga, crée l'Union pour la défense des intérêts de la Haute-Volta, puis charge le député Philippe Zinda Kaboré d'obtenir son retour. Selon Joseph Abo Kobi, Paris y trouve aussi son intérêt : faire de la Haute-Volta un rempart contre le Rassemblement démocratique africain, le grand parti anticolonial dont la base est en Côte d'Ivoire. La loi du 4 septembre 1947 rétablit la Haute-Volta dans ses limites du 5 septembre 1932, avec Ouagadougou pour capitale.",
-      "contemporary": "1960-1984 : République de Haute-Volta, indépendante le 5 août 1960. Le 4 août 1983, Thomas Sankara et un groupe de jeunes officiers prennent le pouvoir. Une ordonnance du 2 août 1984 change le nom du pays, avec effet au 4 août 1984, premier anniversaire de ce changement de régime. Le nom Burkina Faso est officiel depuis cette date, et le gentilé burkinabè remplace voltaïque."
+      "antiquity": "Les sources lues ne donnent pas de nom pour l'ensemble de ce territoire dans l'Antiquité. Ses habitants y produisent déjà du fer : à Douroula, une datation remonte au VIIIe siècle avant notre ère, selon le Centre du patrimoine mondial de l'UNESCO.",
+      "middleAges": "Les royaumes mossi se forment sur le plateau central, à une date discutée. Maurice Delafosse, en 1912, plaçait leurs débuts vers la fin du Xe siècle ; Michel Izard situe vers 1495 le début du règne de Naaba Wûbri à Ouagadougou et vers 1540 la fondation du Yatenga. Une notice encyclopédique d'EBSCO range parmi les royaumes mossi ceux de Tenkodogo, du Yatenga, de Ouagadougou, de Boussouma et de Fada N'Gourma. Chaque royaume porte son nom, et les sources lues n'en donnent aucun pour l'ensemble du territoire actuel.",
+      "precolonial": "Le territoire réunit des royaumes et des peuples sans roi. Les royaumes mossi tiennent le plateau central ; à l'est, les royaumes gulmanceba forment une sorte de confédération, selon l'historien Georges Madiéga. Plusieurs peuples vivent sans roi ni État centralisé, selon Michel Izard et Joseph Ki-Zerbo : chez les Bwaba, aucune autorité ne dépasse celle du village. Chez les Lobi, l'anthropologue Michèle Fiéloux décrit une société organisée par lignages, sans pouvoir central. Au nord-est, des Peuls venus du Macina fondent en 1810 l'émirat du Liptako, autour de Dori. Aucun nom ne désigne l'ensemble du territoire avant la colonie : la Haute-Volta est un découpage tardif, créé en 1919.",
+      "colonization": "De 1919 à 1960, le territoire porte le nom de Haute-Volta, sauf entre 1932 et 1947. La colonie est créée par décret du 1er mars 1919, détachée du Haut-Sénégal-Niger, avec Ouagadougou pour capitale. Ses limites ne sont pas tracées pour l'occasion : le décret réunit sept cercles qui existaient déjà dans le Haut-Sénégal-Niger, ceux de Gaoua, Bobo-Dioulasso, Dédougou, Ouagadougou, Dori, Say et Fada N'Gourma. Parmi les motifs invoqués lors de sa création figurait la réorientation, vers la Côte d'Ivoire qui manquait de main-d'œuvre, d'un courant migratoire qui se dirigeait vers la Gold Coast. Un décret du 5 septembre 1932 supprime la colonie et rattache ses territoires à la Côte d'Ivoire, au Soudan français et au Niger. Le rapport officiel qui accompagne le décret parle d'« appréciables économies ». L'historien Joseph Abo Kobi ajoute une autre raison : les colonies voisines voulaient ce réservoir de main-d'œuvre, et la Côte d'Ivoire cherchait des travailleurs voltaïques pour ses plantations et le chantier de son chemin de fer. La partition s'applique à partir du 1er janvier 1933. La Côte d'Ivoire en reçoit la plus grande part, et la plus peuplée : les cercles de Ouagadougou, Gaoua, Batié, Bobo-Dioulasso et une partie de celui de Dédougou. Un décret du 13 juillet 1937 réunit ces territoires sous le nom de Région de la Haute Côte-d'Ivoire, dotée d'une autonomie relative. Les rois mossi refusent ce partage. Dès 1932, le roi des Mossi écrit au député Blaise Diagne, à Paris, pour défendre la colonie ; en 1945, son successeur, le Mogho Naaba Saaga, crée l'Union pour la défense des intérêts de la Haute-Volta, puis charge le député Philippe Zinda Kaboré d'obtenir son retour. Selon Joseph Abo Kobi, Paris y trouve aussi son intérêt : faire de la Haute-Volta un rempart contre le Rassemblement démocratique africain, le grand parti anticolonial dont la base est en Côte d'Ivoire. La loi du 4 septembre 1947 rétablit la Haute-Volta dans ses limites du 5 septembre 1932, avec Ouagadougou pour capitale.",
+      "contemporary": "De 1960 à 1984, le pays est la République de Haute-Volta, indépendante depuis le 5 août 1960. Le 4 août 1983, Thomas Sankara et un groupe de jeunes officiers prennent le pouvoir. Une ordonnance du 2 août 1984 change le nom du pays, avec effet au 4 août 1984, premier anniversaire de ce changement de régime. Le nom Burkina Faso est officiel depuis cette date, et le gentilé burkinabè remplace voltaïque."
     },
     "kingdoms": [
       {
@@ -565,9 +623,9 @@
           "Ouagadougou (Wogodogo, capitale du royaume de Ouagadougou)",
           "Yatenga",
           "Tenkodogo",
-          "Fada N'Gourma"
+          "Boussouma"
         ],
-        "historicalRole": "Royaumes mossi puissants et structurés, système monarchique (naaba), résistance à l'empire Songhay et aux Français. Légende fondatrice de Yennenga et Naaba Wedraogo. Autorité coutumière puissante encore active aujourd'hui."
+        "historicalRole": "Les royaumes mossi sont dirigés par des rois qui portent le titre de naaba. Selon Michel Izard et Joseph Ki-Zerbo, leur système politique ne se met en place de façon définitive qu'à la fin du XVIIe et au XVIIIe siècle. Au Yatenga, Naaba Kango établit un pouvoir centralisé dans la seconde moitié du XVIIIe siècle. Des groupes peuls s'installent alors dans le royaume : le roi leur laisse une autonomie relative en échange d'une sorte de pacte d'alliance, selon l'anthropologue Maud Saint-Lary. Après la mort de Naaba Sanum, en 1879, une guerre de succession divise le Yatenga, et l'armée française en profite pour entrer dans le pays. À Ouagadougou, les troupes françaises remplacent le mogho naba Boukary Koutou par l'un de ses frères ; Koutou se retire en 1898 en Gold Coast, où il meurt en 1904, selon l'historien Domenico Cristofaro."
       },
       {
         "name": "Royaume de Fada N'Gourma",
@@ -575,15 +633,15 @@
         "entryType": "polity",
         "dominantPeoples": ["Gourmantché"],
         "politicalCenters": ["Fada N'Gourma (capitale)"],
-        "historicalRole": "Royaume de Fada N'Gourma, État gourmantché puissant dans l'est du Burkina Faso. Résistance à la colonisation française."
+        "historicalRole": "Ce royaume se trouve dans l'est du pays, chez les Gulmanceba. Selon l'historien Georges Madiéga, cité par Wendkouni Bertrand Ouédraogo, il n'y avait pas un royaume du Gulma, mais des royaumes gulmanceba. Ils formaient une sorte de confédération, dont le Nunbado, roi de Nungu, était le premier parmi ses pairs, sans pouvoir absolu sur les autres provinces. En 1892, la succession de Bacandi, choisi contre son aîné Yentugri, ouvre un conflit qui dure jusqu'à l'arrivée des colonisateurs, qui en profitent. Les sources lues sur ces royaumes ne nomment pas la ville de Fada N'Gourma."
       },
       {
         "name": "Sociétés gur sans roi",
         "period": "Précolonial - présent",
         "entryType": "polity",
-        "dominantPeoples": ["Bobo", "Gourounsi", "Dagara", "Lobi", "Birifor"],
+        "dominantPeoples": ["Bwaba", "Gourounsi", "Dagara", "Lobi", "Birifor"],
         "politicalCenters": ["Villages et lignages, sans capitale"],
-        "historicalRole": "Peuples gur qui vivaient sans roi ni État centralisé avant la colonisation, selon Michel Izard et Joseph Ki-Zerbo : chez les Bwaba, aucune autorité ne dépassait le village. Chez les Lobi, une société organisée par lignages, selon Michèle Fiéloux. En pays dagara, les chefs politiques sont une création coloniale, à partir de 1912. Traditions agricoles et artisanales. Résistance à la colonisation."
+        "historicalRole": "Plusieurs peuples de langues gur vivaient sans roi ni État centralisé avant la colonisation. Selon Michel Izard et Joseph Ki-Zerbo, les Bwaba ne reconnaissaient pas d'autorité politique au-dessus de celle du village, et les Gourounsi vivaient sans État centralisé. L'anthropologue Michèle Fiéloux décrit les Lobi comme une société organisée par lignages, sans pouvoir central. En pays dagara, autour de Diébougou, c'est l'administrateur colonial Labouret qui fait des chefs de terre des chefs politiques, vers 1912-1914, selon Jeanne-Marie Kambou-Ferrand."
       },
       {
         "name": "Émirat du Liptako",
@@ -610,182 +668,144 @@
           "datingNote": "Le libellé couvre plusieurs périodes distinctes ; les bornes retenues encadrent l'ensemble."
         },
         "dominantPeoples": [
-          "Tous les peuples burkinabés sous domination française"
+          "Peuples du territoire, sous administration française"
         ],
         "politicalCenters": ["Ouagadougou (capitale administrative)"],
-        "historicalRole": "Colonie française, intégration dans l'AOF. Dissolution (1932) puis rétablissement (1947). Exploitation économique (coton, arachides), développement de l'administration coloniale, résistance des peuples autochtones, développement du mouvement indépendantiste au XXe siècle."
+        "historicalRole": "La Haute-Volta est une colonie française créée en 1919 avec Ouagadougou pour chef-lieu, à partir de sept cercles détachés du Haut-Sénégal et Niger. Sous son premier gouverneur, Édouard Hesling, l'administration étend les cultures de coton, et beaucoup de jeunes partent travailler en Côte d'Ivoire ou en Gold Coast, selon l'historien Joseph Abo Kobi. La colonie est supprimée en 1932 et son territoire partagé entre ses voisins, puis elle est rétablie en 1947."
       }
     ],
     "majorPeoples": [
       {
         "name": "Mossi",
-        "selfAppellation": "Moaga (singulier), Moose (pluriel)",
-        "exonyms": [
-          "Mossi (terme utilisé par les Européens et les Français)",
-          "Mossé (forme ancienne)"
-        ],
+        "selfAppellation": "Moose (pluriel), Moaga (singulier)",
+        "exonyms": ["Mossi"],
         "peopleId": "PPL_MOSSI",
         "mainRegion": "Plateau central du Burkina Faso (Ouagadougou, Yatenga, Tenkodogo)",
-        "languages": ["Mooré (mos", "ISO 639-3)", "français"],
+        "languages": ["Mooré (mos)"],
         "languageFamily": "FLG_GUR",
-        "appellationRemarks": "Le peuple se nomme Moose, au pluriel. Mossi est le nom donné de l'extérieur le plus courant. Les sources ne signalent pas de sens insultant pour ces noms."
+        "appellationRemarks": "Le peuple se nomme Moose, Moaga au singulier. Mossi est le nom le plus courant en français. Au recensement de 2019, le mooré est la principale langue de 52,9 % des habitants de trois ans et plus."
       },
       {
         "name": "Peul / Fulani",
         "selfAppellation": "Fulɓe (pluriel), Pullo (singulier)",
-        "exonyms": [
-          "Peul (terme français)",
-          "Fulani (terme haoussa)",
-          "Fula (terme anglophone)",
-          "\"Fellata\" (terme haoussa parfois péjoratif",
-          "à éviter)"
-        ],
+        "exonyms": ["Peul", "Fulani", "Fula"],
         "peopleId": "PPL_FULA",
         "mainRegion": "Nord du Burkina Faso, Sahel (pasteurs nomades et sédentaires)",
-        "languages": ["Fulfulde (ful", "ISO 639-3)", "français"],
+        "languages": ["Fulfulde (fuh)"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "Le peuple se nomme Fulɓe. Peul et Fulani sont aussi des noms acceptés, donnés de l'extérieur. Fellata peut être méprisant dans certains contextes ; il est donc à éviter."
+        "appellationRemarks": "Le peuple se nomme Fulɓe, Pullo au singulier ; Peul est le nom le plus courant en français. Glottolog range le fulfulde parlé au Burkina Faso parmi les langues peules. Au recensement de 2019, c'est la principale langue de 7,8 % des habitants de trois ans et plus."
       },
       {
         "name": "Gourmantché",
-        "selfAppellation": "Gourmantché",
-        "exonyms": [
-          "Gourmantché (terme utilisé par les Européens et les Français)"
-        ],
+        "selfAppellation": "Gulmanceba",
+        "exonyms": ["Gourmantché", "Gourma"],
         "peopleId": "PPL_GOURMANTCHE",
         "mainRegion": "Est du Burkina Faso (Fada N'Gourma)",
-        "languages": ["Gourmantché (gux", "ISO 639-3)", "français"],
+        "languages": ["Gourmantché (gux)"],
         "languageFamily": "FLG_GUR",
-        "appellationRemarks": "Le terme \"Gourmantché\" est l'auto-appellation du peuple. Pas de terme péjoratif connu."
+        "appellationRemarks": "L'historien Georges Madiéga emploie le nom Gulmanceba pour ce peuple et parle des royaumes gulmanceba de l'est. Au recensement de 2019, le gourmantché est la principale langue de 6,8 % des habitants de trois ans et plus."
       },
       {
         "name": "Bobo",
-        "selfAppellation": "Bobo",
-        "exonyms": ["Bobo (terme utilisé par les Européens et les Français)"],
+        "selfAppellation": null,
+        "exonyms": ["Bobo"],
         "peopleId": "PPL_BOBO",
         "mainRegion": "Ouest du Burkina Faso",
-        "languages": ["Bobo (bwq", "ISO 639-3)", "français"],
-        "languageFamily": "FLG_GUR",
-        "appellationRemarks": "Le terme \"Bobo\" est l'auto-appellation du peuple. Pas de terme péjoratif connu."
+        "languages": ["Bobo (bwq)"],
+        "languageFamily": "FLG_MANDE",
+        "appellationRemarks": "Le recensement de 2019 distingue la langue bobo, principale langue de 1,5 % des habitants de trois ans et plus, du bwamu, la langue des Bwaba, principale langue de 2,0 % d'entre eux."
       },
       {
         "name": "Lobi / Birifor",
-        "selfAppellation": "Lobi, Birifor",
-        "exonyms": [
-          "Lobi",
-          "Birifor (termes utilisés par les Européens et les Français)"
-        ],
+        "selfAppellation": null,
+        "exonyms": ["Lobi", "Birifor"],
         "peopleId": "PPL_LOBI_BIRIFOR",
         "mainRegion": "Sud-ouest du Burkina Faso, frontière avec la Côte d'Ivoire et le Ghana",
-        "languages": [
-          "Lobi (lob",
-          "ISO 639-3)",
-          "Birifor (bfo",
-          "ISO 639-3)",
-          "français"
-        ],
+        "languages": ["Lobi (lob)", "Birifor (bfo)"],
         "languageFamily": "FLG_GUR",
-        "appellationRemarks": "\"Lobi\" et \"Birifor\" sont les auto-appellations respectives. Pas de terme péjoratif connu."
+        "appellationRemarks": "Les Lobi et les Birifor sont deux peuples voisins. Le recensement de 2019 compte séparément leurs langues : le lobiri est la principale langue de 1,2 % des habitants de trois ans et plus, le birifor de 0,7 %."
       },
       {
         "name": "Bissa",
-        "selfAppellation": "Bissa",
-        "exonyms": ["Bissa (terme utilisé par les Européens et les Français)"],
+        "selfAppellation": null,
+        "exonyms": ["Bissa"],
         "peopleId": "PPL_BISSA",
         "mainRegion": "Centre-sud du Burkina Faso",
-        "languages": ["Bissa (bib", "ISO 639-3)", "français"],
+        "languages": ["Bissa (bib)"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "Le terme \"Bissa\" est l'auto-appellation du peuple. Pas de terme péjoratif connu."
+        "appellationRemarks": "Au recensement de 2019, le bissa est la principale langue de 3,3 % des habitants de trois ans et plus."
       },
       {
         "name": "Gourounsi",
-        "selfAppellation": "Gourounsi",
-        "exonyms": [
-          "Gourounsi (terme utilisé par les Européens et les Français)"
-        ],
+        "selfAppellation": null,
+        "exonyms": ["Gourounsi"],
         "peopleId": "PPL_GOUROUNSI",
         "mainRegion": "Centre-ouest du Burkina Faso",
-        "languages": [
-          "Gourounsi (gur",
-          "ISO 639-3",
-          "code générique)",
-          "français"
-        ],
+        "languages": ["Langues gourounsi"],
         "languageFamily": "FLG_GUR",
-        "appellationRemarks": "Le terme \"Gourounsi\" est l'auto-appellation du peuple. Pas de terme péjoratif connu."
+        "appellationRemarks": "Gourounsi est un nom d'ensemble. Le recensement de 2019 et l'enquête démographique de 2021 l'emploient comme une seule catégorie, principale langue de 3,2 % des habitants de trois ans et plus."
       },
       {
         "name": "Dagara",
-        "selfAppellation": "Dagara",
-        "exonyms": ["Dagara (terme utilisé par les Européens et les Français)"],
+        "selfAppellation": null,
+        "exonyms": ["Dagara"],
         "peopleId": "PPL_DAGARA",
         "mainRegion": "Sud-ouest du Burkina Faso, frontière avec le Ghana",
-        "languages": ["Dagara (dga", "ISO 639-3)", "français"],
+        "languages": ["Dagara (dga)"],
         "languageFamily": "FLG_GUR",
-        "appellationRemarks": "Le terme \"Dagara\" est l'auto-appellation du peuple. Pas de terme péjoratif connu."
+        "appellationRemarks": "Au recensement de 2019, le dagara est la principale langue de 2,0 % des habitants de trois ans et plus."
       },
       {
         "name": "Senoufo",
-        "selfAppellation": "Senoufo",
-        "exonyms": [
-          "Senoufo (terme utilisé par les Européens et les Français)"
-        ],
+        "selfAppellation": null,
+        "exonyms": ["Senoufo"],
         "peopleId": "PPL_SENUFO",
         "mainRegion": "Sud-ouest du Burkina Faso, frontière avec la Côte d'Ivoire et le Mali",
-        "languages": [
-          "Senoufo (syc",
-          "ISO 639-3",
-          "code générique)",
-          "français"
-        ],
+        "languages": ["Sénoufo"],
         "languageFamily": "FLG_GUR",
-        "appellationRemarks": "Le terme \"Senoufo\" est l'auto-appellation du peuple. Pas de terme péjoratif connu."
+        "appellationRemarks": "Au recensement de 2019, le sénoufo est la principale langue de 1,5 % des habitants de trois ans et plus."
       },
       {
         "name": "Dioula",
         "selfAppellation": "Jula",
-        "exonyms": ["Dioula (graphie française)", "Dyula (graphie anglophone)"],
+        "exonyms": ["Dioula", "Dyula"],
         "peopleId": "PPL_DIOULA",
         "mainRegion": "Ouest du Burkina Faso (Bobo-Dioulasso)",
-        "languages": ["Dioula (dyu", "ISO 639-3)", "français"],
+        "languages": ["Dioula (dyu)"],
         "languageFamily": "FLG_MANDE",
-        "appellationRemarks": "Le peuple se nomme Jula. Le mot veut dire « commerçant » en mandingue. Le mot faso, dans le nom du pays, vient de leur langue."
+        "appellationRemarks": "Le mot faso, dans le nom du pays, vient de la langue dioula. Glottolog note que le dioula sert à l'enseignement, au commerce, à la chasse et à la religion. Au recensement de 2019, c'est la principale langue de 15,3 % des citadins de trois ans et plus, contre 2,2 % à la campagne."
       },
       {
         "name": "Songhay",
         "selfAppellation": "Songhay",
-        "exonyms": ["Songhaï (graphie française)", "Songhay de Dori"],
+        "exonyms": ["Songhaï"],
         "peopleId": "PPL_SONGHAY_GURMA",
         "mainRegion": "Nord-est du Burkina Faso (province du Séno, environs de Dori)",
-        "languages": ["Humburi senni (hmb", "ISO 639-3)", "français"],
+        "languages": ["Humburi senni (hmb)"],
         "languageFamily": "FLG_SONGHAY",
-        "appellationRemarks": "Les locuteurs du songhay du nord-est parlent le humburi senni, une langue songhay que l'on parle aussi au Mali, autour de Hombori."
+        "appellationRemarks": null
       },
       {
         "name": "Touareg",
         "selfAppellation": "Kel Tamasheq / Imuhagh",
-        "exonyms": [
-          "Touareg (terme français, venu de l'arabe)",
-          "\"Targui\" (singulier, forme française venue de l'arabe)",
-          "\"Berbères du désert\" (terme descriptif)"
-        ],
+        "exonyms": ["Touareg"],
         "peopleId": "PPL_TUAREG",
         "mainRegion": "Nord du Burkina Faso, Sahara",
-        "languages": ["Tamasheq (taq", "ISO 639-3)", "français"],
+        "languages": ["Tamasheq (taq)"],
         "languageFamily": "FLG_BERBERE",
-        "appellationRemarks": "Les personnes concernées se nomment Kel Tamasheq ou Imuhagh. Touareg est le nom donné de l'extérieur le plus courant en français. En 1864, des Touareg du Nord le tenaient pour une injure venue des Arabes, selon l'explorateur Henri Duveyrier."
+        "appellationRemarks": "L'enquête démographique de 2021 compte les Touareg avec les Bella, dans une seule catégorie qui réunit 0,1 % des femmes interrogées."
       }
     ],
     "culture": {
       "mainLanguages": [
         {
           "name": "Français",
-          "isoCode": "fra",
-          "isPrimary": true
+          "isoCode": "fra"
         },
         {
           "name": "Mooré",
-          "isoCode": "mos"
+          "isoCode": "mos",
+          "isPrimary": true
         },
         {
           "name": "Fulfulde",
@@ -836,19 +856,19 @@
           "isoCode": "hmb"
         }
       ],
-      "culturalTraditions": "On parle au Burkina Faso une soixantaine de langues nées dans la région, 66 selon l'inventaire Ethnologue, sans compter le français et les autres langues venues d'ailleurs. Diversité culturelle importante reflétant la mosaïque ethnique du Burkina Faso. Traditions mossi (masques, rituels des bois sacrés, culte des ancêtres, artisanat). Traditions gur (Bobo, Gourounsi, Dagara, Lobi). Traditions mandé (Bissa). Traditions peules (pastoralisme, poésie élogieuse). Traditions touarègues (nomadisme, culture du désert). Musique et danse traditionnelles variées. Cérémonies de passage, rites d'initiation, fêtes traditionnelles.",
-      "dominantReligions": "Islam (majoritaire, surtout dans le nord), christianisme (catholicisme et protestantisme, surtout dans le sud), religions traditionnelles africaines (syncrétisme fréquent, culte des ancêtres, masques)",
-      "lifestyles": "Agriculture (Mossi, Bobo, Gourounsi, Dagara, cultures vivrières, coton), élevage (Peuls, Touaregs, bovins, chameaux), artisanat (forgerons Bobo, cuivre, cuir). Commerce et activités urbaines (zones urbaines, Ouagadougou). Urbanisation croissante. Économie basée sur l'agriculture (coton, arachides, mil, sorgho), l'élevage, et l'exploitation minière (or).",
-      "socialOrganization": "Organisation en royaumes historiques (Mossi, système monarchique naaba), chefferies traditionnelles (Gur), structures claniques patrilinéaires. Importance des lignages et des familles étendues. Rôle des conseils d'anciens. Organisation pastorale nomade (Peuls, Touaregs).",
-      "regionalRelations": "Relations historiques avec le Mali (commerce, peuples transfrontaliers), la Côte d'Ivoire (commerce, migrations), le Ghana (Dagara, commerce), le Niger (Touaregs, commerce transsaharien). Intégration dans la CEDEAO (Communauté économique des États de l'Afrique de l'Ouest) et l'UEMOA (Union économique et monétaire ouest-africaine). Relations commerciales et culturelles transfrontalières."
+      "culturalTraditions": "Dans un rapport remis aux Nations unies en 2024, le gouvernement décrit le Burkina Faso comme « une mosaïque culturelle (une soixantaine de groupes ethniques) », où chaque groupe pratique librement sa culture, sa religion et ses coutumes. Les langues nées dans la région sont au nombre de 66 selon l'inventaire Ethnologue. Au recensement de 2019, le mooré est la principale langue de 52,9 % des habitants de trois ans et plus, devant le fulfulde (7,8 %), le gourmantché (6,8 %) et le dioula (5,7 %) ; le français n'est la principale langue que de 2,2 % d'entre eux. Depuis la révision constitutionnelle du 30 décembre 2023, les langues nationales reconnues par la loi sont les langues officielles, et le français est, avec l'anglais, une langue de travail. En 2020, selon le rapport du gouvernement, dix langues nationales écrites étaient enseignées dans 276 écoles bilingues. Le travail du fer est aussi une tradition ancienne : des familles de forgerons de Yamané, Kindibo et Douroula le pratiquent encore, selon le Centre du patrimoine mondial de l'UNESCO.",
+      "dominantReligions": "Au recensement de 2019, 63,8 % des résidents se déclarent musulmans, 20,1 % catholiques, 6,2 % protestants et 9,0 % animistes, le mot du recensement pour les fidèles des religions locales ; 0,7 % se disent sans religion. La répartition change beaucoup d'une région à l'autre : les musulmans forment 97,4 % des résidents du Sahel, au nord, et les animistes 48,1 % de ceux du Sud-Ouest. L'enquête démographique et de santé de 2021 donne des proportions proches chez les femmes de 15 à 49 ans.",
+      "lifestyles": "Le pays reste surtout rural : au recensement de 2019, 13,4 millions de résidents vivent à la campagne et 4,8 millions en ville. Le coton y tient une place ancienne : après la création de la colonie en 1919, l'administration étend les champs collectifs de coton sur des terres jusque-là réservées aux cultures familiales ou à la jachère, selon l'historien Joseph Abo Kobi. L'élevage est l'activité des pasteurs peuls : au Yatenga, ils s'installent près des bas-fonds et des marigots, où se trouvent pâturages et points d'eau, selon l'anthropologue Maud Saint-Lary.",
+      "socialOrganization": "Les sociétés du pays s'organisent de façons très différentes. Les royaumes mossi ont un pouvoir central, celui du roi ou naaba ; au Yatenga, un chef peul tient sa terre du chef de terre local, et le roi laisse aux Peuls une autonomie relative, selon Maud Saint-Lary. D'autres peuples vivaient sans roi : les Bwaba ne reconnaissaient pas d'autorité au-dessus du village, selon Michel Izard et Joseph Ki-Zerbo, et les Lobi forment une société organisée par lignages, sans pouvoir central, selon Michèle Fiéloux. En pays dagara, ce sont les Français qui ont fait des chefs de terre des chefs politiques, vers 1912-1914, selon Jeanne-Marie Kambou-Ferrand.",
+      "regionalRelations": "Les liens avec la Côte d'Ivoire et le Ghana passent depuis longtemps par les migrations de travail : sous la colonisation, beaucoup de jeunes de Haute-Volta partaient travailler en Basse Côte d'Ivoire ou en Gold Coast, l'actuel Ghana, où les salaires étaient plus élevés, selon Joseph Abo Kobi. En 1964, au Caire, les États de l'Organisation de l'unité africaine s'engagent à respecter les frontières qu'ils avaient à leur indépendance. Le Burkina Faso, le Mali et le Niger forment l'Alliance des États du Sahel ; leur retrait de la Communauté économique des États de l'Afrique de l'Ouest (CEDEAO) est devenu effectif le 29 janvier 2025, selon l'Institut d'études de sécurité."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement initial par diverses sociétés sans nom unifié. La production du fer est attestée très tôt sur ce territoire : à Douroula, une datation remonte au VIIIe siècle avant notre ère, le témoin le plus ancien du développement de la production du fer identifié à ce jour au Burkina Faso. Vers 500 avant notre ère, cette technologie est déjà largement diffusée dans toute la région. Quatre autres sites — Tiwêga, Yamané, Kindibo et Békuy — documentent l'intensification de la production au cours du second millénaire de notre ère, soit une continuité de production sur plus de 2700 ans ; des traditions de forgerons y vivent encore aujourd'hui. Développement de chefferies et royaumes locaux. Arrivée et expansion des peuples gur et mandé dans la région.",
-      "middleAges": "Formation et développement des royaumes mossi, dont la date est débattue : Maurice Delafosse, en 1912, plaçait leurs débuts vers la fin du Xe siècle ; Michel Izard, à la suite de John Fage, situe vers 1495 le début du règne de Naaba Wûbri à Ouagadougou et vers 1540 la fondation du Yatenga. Légende fondatrice de Yennenga et Naaba Wedraogo. Apogée des royaumes mossi (Wogodogo, Yatenga, Tenkodogo, Fada N'Gourma). Développement de réseaux commerciaux régionaux et transsahariens. Résistance aux empires voisins (Songhay, Mali).",
-      "precolonial": "Consolidation des royaumes mossi, système monarchique (naaba). Plusieurs peuples, comme les Bwaba, les Gourounsi et les Lobi, vivent sans roi ni État centralisé, selon Michel Izard et Joseph Ki-Zerbo et selon Michèle Fiéloux. Dans le nord, des éleveurs peuls et touaregs se déplacent avec leurs troupeaux. Des Peuls venus du Macina y fondent l'émirat du Liptako, autour de Dori, après avoir battu les chefs gourmantché en avril 1810, selon l'encyclopédie TDV. Résistance aux pressions extérieures. Commerce transsaharien.",
-      "colonization": "1896-1897 : Conquête française des royaumes mossi. En septembre 1896, la colonne du lieutenant Voulet prend Ouagadougou, capitale du royaume mossi de Ouagadougou. Le Mogho Naaba Wobgo doit fuir ; il meurt en exil en 1904 à Zongoiri, non loin de Gambaga, dans l'actuel Ghana, selon l'historien Domenico Cristofaro. 1919 : Création de la colonie de Haute-Volta par les Français, intégration dans l'AOF. 1932 : Dissolution de la Haute-Volta (territoire réparti entre le Soudan français, la Côte d'Ivoire et le Niger), officiellement pour faire des économies ; l'historien Joseph Abo Kobi y voit aussi la recherche de travailleurs pour la Côte d'Ivoire. 1947 : Rétablissement de la Haute-Volta, après les demandes des rois mossi et parce que Paris veut freiner le Rassemblement démocratique africain, selon le même historien. Période coloniale française, exploitation économique (coton, arachides), développement de l'administration coloniale, résistance des peuples autochtones. XXe siècle : Développement du mouvement indépendantiste, formation de partis politiques.",
-      "independenceStruggle": "1958 : Référendum sur l'autonomie, la Haute-Volta vote \"oui\" à la Communauté française. Maurice Yaméogo succède à Ouezzin Coulibaly à la tête du gouvernement en septembre 1958, puis prend le titre de président de la République en décembre 1959, selon la Digithèque de l'université de Perpignan. 1960 : Indépendance de la Haute-Volta (5 août 1960), proclamation de la République de Haute-Volta ; Maurice Yaméogo est alors le président. Période d'instabilité politique (1960-1983), plusieurs coups d'État.",
-      "postIndependence": "1964 : Au Caire, les États de l'Organisation de l'unité africaine s'engagent à respecter les frontières qu'ils avaient à leur indépendance (résolution AHG/Res. 16(I)). Le pays garde ainsi les limites héritées de la colonie. 1983-1987 : Révolution burkinabè sous Thomas Sankara, changement de nom pour \"Burkina Faso\" (1984), réformes sociales et économiques. 1987 : Assassinat de Thomas Sankara, prise de pouvoir de Blaise Compaoré. 2014 : Insurrection populaire, chute de Blaise Compaoré. Période de transition et de démocratisation. Défis : pauvreté, insécurité (terrorisme dans le nord), inégalités sociales. Le Burkina Faso est un pays sahélien confronté à des défis sécuritaires et économiques majeurs."
+      "ancientPeriods": "La production du fer est attestée très tôt sur ce territoire. À Douroula, une datation remonte au VIIIe siècle avant notre ère : c'est le plus ancien témoin de la production du fer connu à ce jour au Burkina Faso. Vers 500 avant notre ère, cette technique est déjà largement répandue dans la région. Quatre autres sites, Tiwêga, Yamané, Kindibo et Békuy, montrent que la production s'intensifie au cours du deuxième millénaire de notre ère, soit plus de 2 700 ans de production continue. Des traditions de forgerons y vivent encore, selon le Centre du patrimoine mondial de l'UNESCO, qui a inscrit ces sites en 2019.",
+      "middleAges": "Les royaumes mossi se forment sur le plateau central, à une date discutée. Maurice Delafosse, en 1912, plaçait leurs débuts vers la fin du Xe siècle. Michel Izard, à la suite de l'historien John Fage, situe vers 1495 le début du règne de Naaba Wûbri à Ouagadougou et vers 1540 la fondation du Yatenga.",
+      "precolonial": "Le système politique des royaumes mossi se met en place de façon définitive à la fin du XVIIe et au XVIIIe siècle, selon Michel Izard et Joseph Ki-Zerbo. Au Yatenga, des groupes peuls s'installent dès le XVIIIe siècle ; le roi leur laisse une autonomie relative en échange d'une sorte de pacte d'alliance, selon Maud Saint-Lary. Plusieurs peuples, comme les Bwaba, les Gourounsi et les Lobi, vivent sans roi ni État centralisé, selon Michel Izard, Joseph Ki-Zerbo et Michèle Fiéloux. À l'est, les royaumes gulmanceba forment une sorte de confédération, dont le Nunbado, roi de Nungu, est le premier parmi ses pairs, selon l'historien Georges Madiéga. Au nord-est, des Peuls venus du Macina fondent l'émirat du Liptako, autour de Dori, après avoir battu les chefs gourmantché en avril 1810, selon l'encyclopédie TDV.",
+      "colonization": "La conquête française entre par les royaumes mossi. Au Yatenga, l'armée profite d'une guerre de succession ouverte par la mort de Naaba Sanum en 1879, selon Maud Saint-Lary. À Ouagadougou, les troupes françaises remplacent le mogho naba Boukary Koutou par l'un de ses frères ; Koutou se retire en 1898 dans les territoires britanniques du Nord et meurt en 1904 à Zongoiri, non loin de Gambaga, dans l'actuel Ghana, selon l'historien Domenico Cristofaro. La colonie de Haute-Volta est créée en 1919 ; l'administration y étend les cultures de coton, et beaucoup de jeunes partent travailler en Côte d'Ivoire ou en Gold Coast, selon l'historien Joseph Abo Kobi. La colonie est supprimée en 1932 et son territoire partagé entre le Soudan français, la Côte d'Ivoire et le Niger, officiellement pour faire des économies ; Joseph Abo Kobi y voit aussi la recherche de travailleurs pour la Côte d'Ivoire. En 1945, le Moro Naba Saaga, roi des Mossi de Ouagadougou, crée le premier parti politique du territoire, l'Union pour la défense des intérêts de la Haute-Volta. La colonie est rétablie en 1947, après les demandes des rois mossi et parce que Paris veut freiner le Rassemblement démocratique africain, selon le même historien.",
+      "independenceStruggle": "Au référendum du 28 septembre 1958, la Haute-Volta choisit d'entrer dans la Communauté, et la République de Haute-Volta est proclamée le 11 décembre 1958. Maurice Yaméogo succède à Ouezzin Coulibaly à la tête du gouvernement en septembre 1958, puis prend le titre de président de la République en décembre 1959, selon la Digithèque de l'université de Perpignan. L'indépendance est proclamée le 5 août 1960 ; Maurice Yaméogo est alors le président.",
+      "postIndependence": "Le 3 janvier 1966, après des grèves et des manifestations contre l'austérité, l'armée renverse le président Maurice Yaméogo ; d'autres coups d'État suivent le 25 novembre 1980 et le 7 novembre 1982, selon Africanews. En 1964, au Caire, les États de l'Organisation de l'unité africaine s'étaient engagés à respecter les frontières qu'ils avaient à leur indépendance (résolution AHG/Res. 16(I)) : le pays garde ainsi les limites héritées de la colonie. Le 4 août 1983, le capitaine Thomas Sankara prend la tête du Conseil national de la révolution, et c'est ce régime qui donne au pays le nom de Burkina Faso en 1984. Le 15 octobre 1987, Blaise Compaoré prend le pouvoir ; Thomas Sankara est tué avec douze de ses collaborateurs. La Constitution du 11 juin 1991 reste le texte de référence, selon le rapport remis par le gouvernement aux Nations unies. Les 30 et 31 octobre 2014, une insurrection populaire chasse Blaise Compaoré, qui voulait changer la Constitution pour rester au pouvoir. Un coup d'État échoue le 16 septembre 2015, et des attaques terroristes frappent le pays depuis 2015. Le 24 janvier 2022, des militaires annoncent à la télévision publique qu'ils ont pris le pouvoir ; une Charte de la Transition est datée du 14 octobre 2022. Le 30 décembre 2023, l'Assemblée législative de transition révise la Constitution, et le capitaine Ibrahim Traoré, chef de l'État, promulgue cette révision en janvier 2024."
     },
     "sources": [
       {
@@ -868,7 +888,8 @@
         "title": "UNFPA – World Population Dashboard — Burkina Faso",
         "url": "https://www.unfpa.org/data/world-population/BF",
         "tier": "official",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": "Tableau de bord du Fonds des Nations unies pour la population, consulté le 3 novembre 2026 : « Total Population (2025): 24,100,000 »."
       },
       {
         "title": "Izard, Michel – \"Le Yatenga précolonial\"",
@@ -944,7 +965,7 @@
         "url": "https://journals.codesria.org/index.php/az/article/download/1762/1821",
         "tier": "referenced",
         "source_kind": "academic",
-        "notes": "Article de Joseph Abo Kobi dans la revue Afrika Zamani, n° 27, 2019, p. 45-59, publiée par le CODESRIA et l'Association des historiens africains, lu le 19 octobre 2026. Page 50 : les colonies voisines convoitaient ce « réservoir de main-d'œuvre » et l'administration devait « restreindre ses frais de fonctionnement ». Pages 53 à 55 : dès 1932, le roi des Mossi écrit au député Blaise Diagne ; le Moro Naba Saaga crée l'UDIHV en 1945 ; pour Paris, il faut aussi « étouffer l'influence du Rassemblement démocratique africain »."
+        "notes": "Article de Joseph Abo Kobi dans la revue Afrika Zamani, n° 27, 2019, p. 45-59, publiée par le CODESRIA et l'Association des historiens africains, lu le 19 octobre 2026. Page 50 : les colonies voisines convoitaient ce « réservoir de main-d'œuvre » et l'administration devait « restreindre ses frais de fonctionnement ». Pages 53 à 55 : dès 1932, le roi des Mossi écrit au député Blaise Diagne ; le Moro Naba Saaga crée l'UDIHV en 1945 ; pour Paris, il faut aussi « étouffer l'influence du Rassemblement démocratique africain ». Pages 47 et 48 : après 1919, sous le gouverneur Hesling, l'administration étend les plantations de coton, et les champs collectifs de coton prennent l'espace « réservé à la production domestique ou à la jachère » ; les jeunes gens partent travailler « en Basse Côte d'Ivoire ou même en Gold Coast », où les salaires sont plus élevés. Page 54 : « le Moro Naba Saaga créa dès 1945 le premier parti politique, l'Union pour la défense des intérêts de la Haute-Volta »."
       },
       {
         "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — La colonie française de Haute-Volta",
@@ -999,6 +1020,123 @@
         "tier": "referenced",
         "source_kind": "academic",
         "notes": "Chapitre de Jeanne-Marie Kambou-Ferrand, Karthala et ORSTOM, 1993, lu le 19 octobre 2026. Page 78 : dans la région de Diébougou, l'administrateur Labouret élève « les chefs de terre au rang de chefs politiques », vers 1912-1914."
+      },
+      {
+        "title": "Résultats du 5e Recensement général de la population et de l'habitation (RGPH 2019) : volume des tableaux statistiques",
+        "author": "Institut national de la statistique et de la démographie (INSD)",
+        "year": 2023,
+        "url": "https://www.insd.bf/sites/default/files/2024-06/Volume%20des%20tableaux%20statistiques_%205e%20RGPH.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Volume publié en janvier 2023 par l'Institut national de la statistique et de la démographie du Burkina Faso, lu le 3 novembre 2026. Tableau I.1 : le recensement de 2019 compte 20 505 155 habitants (population de droit). Tableau I.21 : parmi les résidents, 63,8 % se déclarent musulmans, 20,1 % catholiques, 9,0 % animistes, 6,2 % protestants et 0,7 % sans religion ; 4 782 049 vivent en ville et 13 389 702 à la campagne. Tableau I.22 : les musulmans forment 97,4 % des résidents de la région du Sahel, et les animistes 48,1 % de ceux du Sud-Ouest. Tableau I.24 : chez les résidents de trois ans et plus, la principale langue parlée est le mooré pour 52,9 %, le fulfudé (peul) pour 7,8 %, le gourmantché pour 6,8 %, le dioula pour 5,7 %, le bissa pour 3,3 %, le gourounsi pour 3,2 %, le dagara et le bwamu pour 2,0 % chacun, le bobo et le sénoufo pour 1,5 % chacun, le lobiri pour 1,2 %, le birifor pour 0,7 % et le français pour 2,2 %. Le dioula est la principale langue de 15,3 % des citadins, contre 2,2 % à la campagne. Partie citée : tableaux I.1, I.21, I.22 et I.24, p. 2 et 18-19."
+      },
+      {
+        "title": "Enquête démographique et de santé du Burkina Faso 2021 (EDSBF-V), rapport final",
+        "author": "Institut national de la statistique et de la démographie (INSD) et ICF",
+        "year": 2023,
+        "url": "https://dhsprogram.com/pubs/pdf/FR378/FR378.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Rapport publié en août 2023 par l'Institut national de la statistique et de la démographie, avec le programme international d'enquêtes démographiques et de santé, lu le 3 novembre 2026. Le tableau 3.1 répartit selon leur ethnie les femmes de 15 à 49 ans interrogées en 2021 : Mossi 54,8 %, Fulfulde/Peulh 6,5 %, Gourounsi 5,8 %, Bissa 5,5 %, Gourmantché 5,4 %, Bobo 3,3 %, Senoufo 2,1 %, Lobi 1,5 %, Dagara 1,5 %, Dioula 0,7 %, Touareg/Bella 0,1 %, autres Burkinabè 12,2 %. Ce sont les proportions d'un échantillon de femmes, pas un dénombrement de toute la population. Chez les hommes interrogés, les Mossi forment 51,0 %. Le même tableau donne 63,4 % de musulmanes, 24,7 % de catholiques et 8,1 % de protestantes. Partie citée : p. 62, tableau 3.1."
+      },
+      {
+        "title": "Loi constitutionnelle n° 045-2023/ALT portant révision de la Constitution",
+        "author": "Assemblée législative de transition du Burkina Faso",
+        "year": 2023,
+        "url": "https://www.an.bf/storage/Loi/XzJuLCK5kHtKXgYU7Z7pADAGEPgwFV7J7DlX212n.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte publié par l'Assemblée législative de transition, adopté en séance le 30 décembre 2023, lu le 3 novembre 2026. Il vise « la Charte de la Transition du 14 octobre 2022 ». L'ancien article 35 disait : « La langue officielle est le français. » Le nouveau dit : « Les langues nationales officialisées par loi sont les langues officielles du Burkina Faso » et « L'anglais et le français sont des langues de travail ». Partie citée : visas et article 35."
+      },
+      {
+        "title": "Burkina Faso : Le Capitaine Ibrahim Traoré a promulgué la loi portant modification de la Constitution",
+        "author": "Rédaction Burkina 24",
+        "year": 2024,
+        "url": "https://burkina24.com/2024/01/25/burkina-faso-le-capitaine-ibrahim-traore-a-promulgue-la-loi-portant-modification-de-la-constitution/",
+        "tier": "unverified",
+        "source_kind": "press",
+        "notes": "Article de presse publié le 25 janvier 2024, lu le 3 novembre 2026. Il reproduit le décret de promulgation : « Est promulguée la loi constitutionnelle N° 045-2023/ALT du 30 décembre 2023 portant révision de la Constitution », signé par « le Chef de l'Etat, le Capitaine Ibrahim Traoré »."
+      },
+      {
+        "title": "Rapport valant vingtième à vingt-quatrième rapports périodiques soumis par le Burkina Faso au Comité pour l'élimination de la discrimination raciale (CERD/C/BFA/20-24)",
+        "author": "Gouvernement du Burkina Faso",
+        "year": 2024,
+        "url": "https://digitallibrary.un.org/record/4077478/files/CERD_C_BFA_20-24-FR.pdf",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Rapport du gouvernement du Burkina Faso, reçu par les Nations unies le 9 mai 2024 et diffusé le 30 décembre 2024, lu le 3 novembre 2026. Paragraphe 2 : la période est marquée « par l'insurrection populaire des 30 et 31 octobre 2014, le coup d'État manqué du 16 septembre 2015 et les différentes attaques terroristes qui affectent depuis 2015 la stabilité du pays ». Paragraphe 169 : en 2020, « 10 langues nationales transcrites ont été enseignées dans 276 écoles bilingues ». Paragraphe 170 : « La Constitution du 11 juin 1991 » ; « Le Burkina Faso constitue une mosaïque culturelle (une soixantaine de groupes ethniques) ». Partie citée : § 2, p. 2 ; § 169-170, p. 30."
+      },
+      {
+        "title": "1960 - 2022: The long history of coups d'état in Burkina Faso",
+        "author": "Africanews, avec l'AFP",
+        "year": 2022,
+        "url": "https://www.africanews.com/2022/01/25/1960-2022-the-long-history-of-coups-d-etat-in-burkina-faso/",
+        "tier": "unverified",
+        "source_kind": "press",
+        "notes": "Chronologie de presse publiée le 25 janvier 2022 et mise à jour le 13 août 2024, lu le 3 novembre 2026. Elle date les prises de pouvoir du 3 janvier 1966, du 25 novembre 1980, du 7 novembre 1982, du 4 août 1983 et du 15 octobre 1987, où Thomas Sankara est tué avec douze de ses collaborateurs ; le 31 octobre 2014, Blaise Compaoré est chassé par la rue pour avoir voulu changer la Constitution ; le 24 janvier 2022, des militaires annoncent à la télévision publique qu'ils ont pris le pouvoir."
+      },
+      {
+        "title": "La realpolitik peut-elle relancer la coopération régionale en Afrique de l'Ouest ?",
+        "author": "Djiby Sow, Institut d'études de sécurité",
+        "year": 2025,
+        "url": "https://issafrica.org/fr/iss-today/la-realpolitik-peut-elle-relancer-la-cooperation-regionale-en-afrique-de-l-ouest",
+        "tier": "referenced",
+        "source_kind": "ngo",
+        "notes": "Analyse publiée le 20 mai 2025 par l'Institut d'études de sécurité, centre de recherche africain, lu le 3 novembre 2026 : « Le 29 janvier 2025 marque le retrait effectif du Burkina Faso, du Mali et du Niger » de la Communauté économique des États de l'Afrique de l'Ouest, « regroupés au sein de l'Alliance des États du Sahel (AES) »."
+      },
+      {
+        "title": "Aux marges du royaume. Le Yatenga des Peuls : pacte tacite, négociations et trahisons",
+        "author": "Maud Saint-Lary",
+        "year": 2012,
+        "url": "https://shs.hal.science/halshs-01742617v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Chapitre de l'ouvrage collectif La Terre et le Pouvoir. À la mémoire de Michel Izard, dirigé par Dominique Casajus et Fabio Viti, CNRS Éditions, 2012, déposé sur l'archive ouverte HAL, lu le 3 novembre 2026. L'autrice écrit que dès le XVIIIe siècle des Peuls s'installent dans le royaume moose du Yatenga, auquel le Yatenga Naaba « accordait une autonomie relative sous réserve d'une sorte de pacte tacite d'alliance et d'assistance mutuelle ». Naaba Kango instaure « un pouvoir centralisateur sur le Yatenga dans la deuxième moitié du XVIIIè siècle ». Les pasteurs peuls « tentent de s'établir près des bas-fonds ou des marigots » ; le chef peul tient sa terre du chef de terre local. L'armée française entre dans le pays par le Yatenga, « profitant d'une guerre de succession » ouverte par la mort de Naaba Sanum en 1879. Partie citée : version déposée sur HAL, p. 2-9."
+      },
+      {
+        "title": "Burkina : L'organisation politique dans le Gulma avant la pénétration coloniale",
+        "author": "Wendkouni Bertrand Ouédraogo",
+        "year": 2024,
+        "url": "https://lefaso.net/spip.php?article132239",
+        "tier": "referenced",
+        "source_kind": "press",
+        "notes": "Lefaso.net, 12 août 2024 ; lu le 3 novembre 2026. L'auteur cite l'historien Georges Y. Madiéga : « il n'y avait donc pas un royaume du Gulma, mais des royaumes gulmanceba ». « L'ensemble des royaumes formaient une sorte de confédération dans laquelle le Nunbado était le primus inter pares », c'est-à-dire le premier parmi ses pairs. En 1892, la succession de Bacandi, choisi contre son aîné Yentugri, ouvre un conflit qui dure « jusqu'à la venue du colon »."
+      },
+      {
+        "title": "Grand dictionnaire terminologique, fiche « Burkinabè »",
+        "author": "Office québécois de la langue française",
+        "year": 2022,
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/2076452/burkinabe",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche terminologique de l'Office québécois de la langue française, mise à jour en 2022, lu le 3 novembre 2026. Le mot résulte de l'ajout au nom Burkina du suffixe -bè, « signifiant « les gens de » », une « désinence plurielle empruntée à la langue des Peuls ». La fiche donne Burkinabè comme invariable en genre et en nombre et admet aussi Burkinabé et Burkinabée. Elle date du 16 août 1983 l'inscription du mot au Journal officiel du Burkina, alors que les autres sources lues datent l'ordonnance d'août 1984."
+      },
+      {
+        "title": "Glottolog 5.3 — Mossi (moss1236)",
+        "author": "Glottolog",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/moss1236",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max Planck, lu le 3 novembre 2026. Il range le mooré, qu'il nomme Mossi, parmi les langues gur."
+      },
+      {
+        "title": "Glottolog 5.3 — Dyula (dyul1238)",
+        "author": "Glottolog",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/dyul1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max Planck, lu le 3 novembre 2026. Il range le dioula parmi les langues mandingues, du groupe mandé, le signale au Burkina Faso, en Côte d'Ivoire et au Mali, et note qu'il sert à l'enseignement, au commerce, à la chasse et à la religion."
+      },
+      {
+        "title": "Glottolog 5.3 — Western Niger Fulfulde (west2454)",
+        "author": "Glottolog",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/west2454",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues du monde publié par l'Institut Max Planck, lu le 3 novembre 2026. Il range ce fulfulde, parlé au Burkina Faso et désigné aussi comme le peul du Burkina Faso, parmi les langues peules, de la branche atlantique."
       }
     ],
     "demographics": {
@@ -1008,91 +1146,103 @@
       "peoples": [
         {
           "name": "Mossi",
-          "percentageInCountry": 50,
+          "percentageInCountry": 54.8,
           "peopleId": "PPL_MOSSI",
           "region": "Plateau central du Burkina Faso (Ouagadougou, Yatenga, Tenkodogo)",
-          "languageFamily": "FLG_GUR"
+          "languageFamily": "FLG_GUR",
+          "population": null,
+          "referenceYear": 2021
         },
         {
           "name": "Peul / Fulani",
-          "population": 2300000,
-          "percentageInCountry": 10,
+          "population": null,
+          "percentageInCountry": 6.5,
           "peopleId": "PPL_FULA",
           "region": "Nord du Burkina Faso, Sahel (pasteurs nomades et sédentaires)",
-          "languageFamily": "FLG_ATLANTIQUE"
-        },
-        {
-          "name": "Gourmantché",
-          "population": 1610000,
-          "percentageInCountry": 7,
-          "peopleId": "PPL_GOURMANTCHE",
-          "region": "Est du Burkina Faso (Fada N'Gourma)",
-          "languageFamily": "FLG_GUR"
-        },
-        {
-          "name": "Bobo",
-          "population": 920000,
-          "percentageInCountry": 4,
-          "peopleId": "PPL_BOBO",
-          "region": "Ouest du Burkina Faso",
-          "languageFamily": "FLG_GUR"
-        },
-        {
-          "name": "Lobi / Birifor",
-          "population": 1150000,
-          "percentageInCountry": 5,
-          "peopleId": "PPL_LOBI_BIRIFOR",
-          "region": "Sud-ouest du Burkina Faso, frontière avec la Côte d'Ivoire et le Ghana",
-          "languageFamily": "FLG_GUR"
-        },
-        {
-          "name": "Bissa",
-          "population": 690000,
-          "percentageInCountry": 3,
-          "peopleId": "PPL_BISSA",
-          "region": "Centre-sud du Burkina Faso",
-          "languageFamily": "FLG_MANDE"
+          "languageFamily": "FLG_ATLANTIQUE",
+          "referenceYear": 2021
         },
         {
           "name": "Gourounsi",
-          "population": 690000,
-          "percentageInCountry": 3,
+          "population": null,
+          "percentageInCountry": 5.8,
           "peopleId": "PPL_GOUROUNSI",
           "region": "Centre-ouest du Burkina Faso",
-          "languageFamily": "FLG_GUR"
+          "languageFamily": "FLG_GUR",
+          "referenceYear": 2021
         },
         {
-          "name": "Dagara",
-          "population": 920000,
-          "percentageInCountry": 4,
-          "peopleId": "PPL_DAGARA",
-          "region": "Sud-ouest du Burkina Faso, frontière avec le Ghana",
-          "languageFamily": "FLG_GUR"
+          "name": "Bissa",
+          "population": null,
+          "percentageInCountry": 5.5,
+          "peopleId": "PPL_BISSA",
+          "region": "Centre-sud du Burkina Faso",
+          "languageFamily": "FLG_MANDE",
+          "referenceYear": 2021
+        },
+        {
+          "name": "Gourmantché",
+          "population": null,
+          "percentageInCountry": 5.4,
+          "peopleId": "PPL_GOURMANTCHE",
+          "region": "Est du Burkina Faso (Fada N'Gourma)",
+          "languageFamily": "FLG_GUR",
+          "referenceYear": 2021
+        },
+        {
+          "name": "Bobo",
+          "population": null,
+          "percentageInCountry": 3.3,
+          "peopleId": "PPL_BOBO",
+          "region": "Ouest du Burkina Faso",
+          "languageFamily": "FLG_MANDE",
+          "referenceYear": 2021
         },
         {
           "name": "Senoufo",
-          "population": 690000,
-          "percentageInCountry": 3,
+          "population": null,
+          "percentageInCountry": 2.1,
           "peopleId": "PPL_SENUFO",
           "region": "Sud-ouest du Burkina Faso, frontière avec la Côte d'Ivoire et le Mali",
-          "languageFamily": "FLG_GUR"
+          "languageFamily": "FLG_GUR",
+          "referenceYear": 2021
         },
         {
-          "name": "Touareg",
-          "population": 230000,
-          "percentageInCountry": 1,
-          "peopleId": "PPL_TUAREG",
-          "region": "Nord du Burkina Faso, Sahara",
-          "languageFamily": "FLG_BERBERE"
+          "name": "Lobi",
+          "population": null,
+          "percentageInCountry": 1.5,
+          "peopleId": "PPL_LOBI_BIRIFOR",
+          "region": "Sud-ouest du Burkina Faso, frontière avec la Côte d'Ivoire et le Ghana",
+          "languageFamily": "FLG_GUR",
+          "referenceYear": 2021
+        },
+        {
+          "name": "Dagara",
+          "population": null,
+          "percentageInCountry": 1.5,
+          "peopleId": "PPL_DAGARA",
+          "region": "Sud-ouest du Burkina Faso, frontière avec le Ghana",
+          "languageFamily": "FLG_GUR",
+          "referenceYear": 2021
         },
         {
           "name": "Dioula",
           "population": null,
-          "percentageInCountry": null,
+          "percentageInCountry": 0.7,
           "peopleId": "PPL_DIOULA",
           "region": "Ouest du Burkina Faso (Bobo-Dioulasso)",
           "languageFamily": "FLG_MANDE",
-          "mainLanguageCode": "dyu"
+          "mainLanguageCode": "dyu",
+          "referenceYear": 2021
+        },
+        {
+          "name": "Touareg et Bella",
+          "population": null,
+          "percentageInCountry": 0.1,
+          "peopleId": "PPL_TUAREG",
+          "region": "Nord du Burkina Faso, Sahara",
+          "languageFamily": "FLG_BERBERE",
+          "referenceYear": 2021
         },
         {
           "name": "Songhay",
@@ -1104,14 +1254,19 @@
           "mainLanguageCode": "hmb"
         },
         {
-          "name": "Autres peuples",
-          "population": 2300000,
-          "percentageInCountry": 10,
+          "name": "Autres peuples burkinabè",
+          "population": null,
+          "percentageInCountry": 12.2,
           "peopleId": null,
-          "region": "Diverses régions du Burkina Faso",
-          "languageFamily": "FLG_GUR"
+          "region": null,
+          "languageFamily": null,
+          "referenceYear": 2021
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "Le Burkina Faso est un pays d'Afrique de l'Ouest. Son nom, adopté en 1984, réunit le mot mooré burkina et le mot dioula faso : « la patrie des hommes intègres ».",
+      "followUp": "Pourquoi le pays s'appelait-il Haute-Volta avant 1984 ?"
     }
   }
 }

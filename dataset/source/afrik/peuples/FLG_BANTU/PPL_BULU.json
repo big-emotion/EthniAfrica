@@ -9,87 +9,97 @@
       "mainName": "Bulu",
       "selfAppellation": "Bulu",
       "exonyms": [
-        "Boulou (orthographe francisée)",
-        "Pahuin (terme colonial générique pour les Beti-Pahuin)"
+        "Pahouin (nom collectif donné aux Fang, aux Bulu et aux Beti)"
       ],
-      "originOfExonyms": "Le terme Boulou est la transcription française du nom Bulu. Pahuin est un ancien terme colonial désignant l'ensemble des peuples Beti.",
-      "whyProblematic": "Pahuin est perçu comme réducteur car il efface les identités spécifiques des sous-groupes Beti.",
-      "contemporaryUsage": "Bulu est le terme courant et accepté. Boulou reste utilisé dans la littérature francophone ancienne.",
+      "originOfExonyms": "Boulou est la façon d'écrire Bulu en français. Pahouin est un nom collectif employé par les auteurs français pour les Fang et leurs voisins ; selon le père Trilles, cité par Nekes en 1911, ce serait une déformation du nom Fang, que les Kombe prononcent Mpangwin.",
+      "whyProblematic": "Selon le père Trilles, cité par Nekes en 1911, les Fang ne se donnent jamais le nom Pahouin, et plusieurs le disent injurieux et synonyme de « sauvage ». Tessmann le juge en 1913 trop large, car il range sous un même nom des peuples différents.",
+      "contemporaryUsage": "Bulu est le nom que ce peuple et sa langue portent aujourd'hui dans les catalogues de langues ; Boulou en est la forme française.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Beti-Pahuin (groupe Bulu)",
-      "historicalRegion": "Forêt équatoriale du sud Cameroun (régions de l'Océan, du Sud et du Centre)",
-      "currentCountries": ["CMR", "GNQ", "GAB"]
+      "historicalRegion": "Forêt du sud du Cameroun, du Ntem au Dja, entre la côte de Kribi et l'intérieur",
+      "currentCountries": ["CMR", "GNQ", "GAB"],
+      "spellingAliases": ["Boulou"],
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
     },
     "ethnicities": [
-      "Bulu proprement dit (Sangmélima, Kribi, Ebolowa)",
-      "Fong (vallée du Dja)",
-      "Zaman (vallée du Dja)",
-      "Yengono (vallée du Nyong)",
-      "Yembama (vallée du Nyong)",
-      "Yelinda (vallée du Nyong)",
-      "Yesum",
-      "Yebekanga",
-      "Yebekolo",
-      "Mvele"
+      "Yemvuk",
+      "Fun",
+      "Yembun",
+      "Yempfok",
+      "Yeyeme",
+      "Esakok",
+      "Esampfan",
+      "Yesaman",
+      "Yekombo",
+      "Yetsan",
+      "Yekoe"
     ],
     "origins": {
-      "ancientOrigins": "Les Bulu font partie des peuples Beti-Pahuin dont les origines sont attribuées à une migration depuis le bassin du Congo ou le sud-est du Tchad. Une pression exercée par les Foulani expansionnistes au nord aurait poussé ces peuples vers le sud.",
-      "formationPeriod": "Migration et installation progressive dans la foret equatoriale entre le XVIe et XIXe siècle. La poussee vers le littoral fut stoppée par les forces coloniales allemandes a la fin du XIXe siècle.",
+      "ancientOrigins": "Les Bulu font partie des peuples que Günter Tessmann regroupe en 1913 sous le nom de Pangwe, avec les Fang, les Ntum, les Jaunde et d'autres ; il les dit venus du nord-est. Il rapporte une hypothèse, qu'il juge non prouvée, selon laquelle ces peuples viendraient du bassin du Bahr el-Ghazal et auraient été repoussés vers le sud-ouest par des peuples de cavaliers du bassin du Chari. Vers 1917, les vieux Bulu interrogés par la missionnaire Jean Kenyon Mackenzie disent être nés dans des villages situés vers l'est, à plusieurs jours de marche.",
+      "formationPeriod": "Selon Tessmann, les Bulu arrivent dans la région du Ntem après les Mwai et les Mokuk, qu'ils dispersent, puis repoussent les Ntum vers le sud ; ils s'étendent ensuite d'ouest en est jusqu'au Dja. En 1889, le capitaine Kund décrit des Bulei qui s'avancent presque jusqu'à la côte. Un récit ewondo écrit par Paul Messi raconte que les Ewondo repoussèrent les Bulu, arrivés avant eux au Nyong.",
       "migrationRoutes": [
-        "Depuis le bassin du Congo ou le sud-est du Tchad vers les forets equatoriales du centre et du sud Cameroun",
-        "Tentative d'extension vers le nord du Gabon, bloquée par les Français"
+        "Du nord-est vers le sud-ouest, selon Tessmann",
+        "Vers l'ouest et un peu vers le sud-ouest, en direction de la mer, selon les anciens interrogés par Mackenzie",
+        "De la région du Ntem vers l'est, jusqu'au Dja, après les guerres contre les Ntum et les Okak, selon Tessmann"
       ],
       "historicalSettlementZones": [
-        "Province du Sud (Ebolowa, Sangmélima, Kribi)",
-        "Province du Centre (Nyong-et-Mfoumou)",
-        "Province de l'Est (Haut-Nyong)",
-        "Nord du Gabon et Guinée Equatoriale continentale"
+        "Rive droite du Ntem, presque jusqu'à la côte (Kund, 1889)",
+        "Entre Kribi et Nkomakak, à l'ouest (Tessmann, 1913)",
+        "Jusqu'au Dja, à l'est (Tessmann, 1913)",
+        "Autour des stations missionnaires d'Efulen, d'Elat et d'Ebolowa (Parsons, 1898 ; Mackenzie, 1917)"
       ],
-      "unificationsOrDivisions": "En période coloniale tardive, les Bulu fondèrent une union tribale formelle réunissant tous les clans pour coordonner les politiques communes et le bien-être social.",
-      "externalInfluences": "Contact avec les commerçants européens depuis le XVIe siècle. Fort impact des missions protestantes américaines (Presbyterians) à partir du XIXe siècle, qui ont codifié la langue et créé une littérature Bulu.",
-      "majorHistoricalEvents": "Arrêt de la migration vers le sud par les forces coloniales allemandes à la fin du XIXe siècle. Forte intégration dans l'économie cacaoyère et caféière coloniale et postcoloniale."
+      "unificationsOrDivisions": "Tessmann énumère chez les Bulu des groupes de familles portant chacun un nom, comme les Yemvuk, les Fun ou les Yeyeme, et précise que sa liste est loin d'être complète. En 1892, le missionnaire Good en compte plus de cent. Le site 101 Last Tribes rapporte qu'à la fin de la période coloniale, les Bulu fondèrent une union réunissant tous les clans ; nous n'avons pas trouvé d'autre source sur ce point.",
+      "externalInfluences": "Tessmann écrit qu'à l'est, les Bulu ont adopté des traits de culture de leurs voisins njem. La mission presbytérienne américaine arrive chez eux en 1892 avec Adolphus Clemens Good, qui fonde la station d'Efulen ; d'autres stations suivent, à Elat et à Ebolowa. Les missionnaires impriment des livres en bulu dès 1895.",
+      "majorHistoricalEvents": "En 1889, l'expédition allemande du capitaine Kund traverse le pays au sud des Ngumba et décrit les Bulei. En 1892, Good visite les premiers villages bulu à l'est de Batanga. Le site 101 Last Tribes rapporte que l'avancée des Bulu vers la mer fut arrêtée par les forces coloniales allemandes à la fin du XIXe siècle ; nous n'avons pas trouvé d'autre source sur ce point."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Organisation patrilinéaire par clans et villages. Plusieurs familles d'une même lignée vivent dans un village; plusieurs villages apparentés forment un clan. Les clans sont placés sous l'autorité nominale d'un chef, considéré aussi comme autorité religieuse.",
-      "clanOrganization": "Descent patrilinéaire. Les clans Bulu portent généralement le préfixe Be- ou Ye- suivi du nom d'un ancêtre fondateur. Exemples: Yesum, Yebekanga, Yebekolo.",
-      "ageClassSystems": "Des associations et classes d'âge assurent la cohésion sociale et l'identité au-delà du village.",
-      "roleOfLineages": "Les lignages gèrent les terres, organisent les cérémonies funéraires, et encadrent les alliances matrimoniales.",
-      "religiousAuthority": "Le chef de clan exerce aussi une autorité religieuse traditionnelle. Les sociétés secrètes comme le Ngi jouent un rôle rituel important."
+      "traditionalPoliticalSystem": "Selon Tessmann, chez les Pangwe, dont font partie les Bulu, la plus grande unité politique est le groupe de familles qui descend d'un même ancêtre. Le chef y a peu de pouvoir, sauf au nord, chez les Mwele.",
+      "clanOrganization": "Tessmann note que les Bulu appellent ayon, « famille », ce groupe de descendants. Beaucoup de ces groupes portent un nom commençant par Ye- ou Esa- ; il rapporte les explications données pour certains : les Yemvuk viendraient du mot mvuk, la mangouste, que les premiers d'entre eux auraient beaucoup chassée, et les Yeyeme de « savoir les choses ».",
+      "ageClassSystems": null,
+      "roleOfLineages": "Pour Tessmann, le groupe de familles tient lieu de « patrie » : un homme se présente par le nom de sa famille, pas par celui de son peuple.",
+      "religiousAuthority": "Tessmann décrit le Ngi comme la plus importante figure de culte des Pangwe, mieux conservée au sud : un culte du feu qui purifie, sous l'image du gorille, chargé de punir les fautes. Il le dit répandu dans tout le pays pangwe, sauf chez les Jaunde du nord et les Mwele."
     },
     "languages": {
-      "mainLanguage": "Bulu",
+      "mainLanguage": "Bulu (bum)",
       "isoCodes": ["bum"],
       "dialects": ["Bene", "Yelinda", "Yembana", "Yengono", "Zaman"],
-      "vehicularRole": "Le Bulu fut utilisé comme lingua franca par les missions coloniales et protestantes dans le Sud-Cameroun pour l'enseignement, le commerce et la religion. Ce rôle vehiculaire a décliné avec l'essor du français et de l'ewondo."
+      "vehicularRole": "Les missionnaires presbytériens américains font du bulu la langue de leur travail : selon la biographie de Good, on pourrait en 1892 atteindre en bulu tout le pays qui va du Campo jusqu'aux confins du Soudan, car les langues voisines en sont proches. Pour le père Nekes, en 1911, c'est plutôt la langue des Jaunde, l'ewondo, qui sert de langue commune dans le sud du Cameroun."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q1004707",
+      "glottocode": "bulu1251",
+      "iso639_3": "bum"
     },
     "culture": {
-      "majorRites": "Rite du Ngi (société secrète anti-sorcellerie liée au gorille, animal totémique): le candidat s'identifie au gorille après initiation. Rites funéraires collectifs avec repas communautaires. Cérémonies de mariage impliquant négociation de dots entre familles.",
-      "symbols": "Le gorille (totem du Ngi), les masques à face humaine (parfois cornus, colorés en blanc et noir), les cultures du cacao et du café comme marqueurs d'identité économique, la forêt équatoriale comme territoire ancestral.",
-      "artsAndMusic": "Sculpture sur bois, ivoire et stéatite, notamment des masques vivants à représentation humaine. Poterie traditionnelle. Chants et danses communautaires, dont le bikutsi dans les groupes Beti voisins. L'art Bulu a été largement réorienté vers le marché touristique depuis la période coloniale sous influence des missions protestantes.",
-      "spiritualities": "Religion traditionnelle fondée sur le culte des ancêtres et des sociétés secrètes (Ngi, Melan). Christianisation massive par les missions presbytériennes américaines à partir du XIXe siècle. Syncrétisme courant: pratique simultanée du christianisme et des rites traditionnels. Résurgence contemporaine de la religion traditionnelle incluant le Bwiti."
+      "majorRites": "Tessmann décrit chez les Pangwe une suite de cultes, dont le Sso et le Ngi, avec leurs fêtes d'initiation. Le Ngi est, selon lui, le culte du feu qui purifie, sous l'image du gorille. Le site 101 Last Tribes rapporte que les Bulu pratiquaient le rite du Ngi contre la sorcellerie, en particulier contre les empoisonnements.",
+      "symbols": "Le gorille, image du culte du Ngi selon Tessmann, qui compare sa force à celle du feu qui détruit. Le site 101 Last Tribes mentionne des masques en forme de visage humain, parfois cornus.",
+      "artsAndMusic": "Le site 101 Last Tribes mentionne la sculpture de masques à visage humain.",
+      "spiritualities": "En 1892, Good apprend le nom que les Bulu donnent au créateur, qu'il écrit Nzambe : un nom proche du Nzam des Fang et de l'Anyambe des côtiers. Tessmann décrit les cultes des Pangwe, dont le Ngi. La mission presbytérienne américaine s'implante chez les Bulu à partir de 1892."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de royaume centralisé: organisation en chefferies claniques décentralisées. En période coloniale tardive, création d'une union tribale formelle réunissant tous les clans.",
-      "relationsWithNeighbors": "Relations commerciales et culturelles avec les Fang, Ewondo, Eton (peuples Beti apparentés). Contacts anciens avec les Kwele à l'est. Tensions historiques avec les Bassa et Bakoko lors des migrations.",
-      "conflictsOrAlliances": "Résistance à l'avancée coloniale allemande à la fin du XIXe siècle. Rôle dans le commerce atlantique avec les Européens à partir du XVIe siècle.",
-      "diaspora": "Présence Bulu dans les grandes villes camerounaises (Yaoundé, Douala) et à l'étranger (France, Europe). La diaspora contribue au développement local par les transferts de fonds."
+      "kingdomsOrChiefdoms": "Les sources lues ne décrivent pas de royaume bulu : selon Tessmann, le pouvoir reste dans les groupes de familles, et le chef a peu d'autorité.",
+      "relationsWithNeighbors": "Les Bulu sont proches des Fang, des Ntum et des Jaunde par la langue. Tessmann rapporte des guerres contre les Ntum et les Okak, que les Bulu gagnèrent ; en 1889, Kund décrit les attaques des Bulei contre les Ngumba. Un récit écrit par l'Ewondo Paul Messi raconte que les Ewondo repoussèrent les Bulu au Nyong. En 1911, Nekes compte les Bulu parmi les Beti, tant leurs parlers sont proches.",
+      "conflictsOrAlliances": "En 1889, Kund décrit les Bulei comme un peuple qui pousse vers la côte et attaque les Ngumba. Tessmann rapporte les guerres des Bulu contre les Ntum et les Okak, que rappellent de nombreux chants de la fête des âmes.",
+      "diaspora": null
     },
     "demography": {
-      "totalPopulation": 1390000,
-      "referenceYear": 2025,
-      "source": "PeopleGroups.org (2025): 1 390 000 Bulu au Cameroun. Estimation 101lasttribes.com: 660 000 se considèrent Bulu, plus de 800 000 locuteurs de la langue. Britannica (fin XXe s.): environ 660 000.",
+      "totalPopulation": 1425000,
+      "referenceYear": 2026,
+      "source": "Estimation non datée du site missionnaire PeopleGroups.org, tenu par l'International Mission Board, consultée le 3 novembre 2026 : environ 1 425 000 Bulu au Cameroun. Le site 101 Last Tribes donne 660 000 personnes qui se disent bulu. En 1963, Pierre Alexandre estime que le groupe de langues qui réunit le bulu, l'ewondo, l'eton et le fang compte probablement plus d'un million de locuteurs. Nous n'avons pas trouvé de recensement qui compte les Bulu.",
       "distributionByCountry": [
         {
           "country": "CMR",
-          "population": 1350000
+          "population": 1425000,
+          "note": "Pays des stations missionnaires d'Efulen, d'Elat et d'Ebolowa."
         },
         {
           "country": "GNQ",
-          "population": 25000
+          "population": null
         },
         {
           "country": "GAB",
-          "population": 15000
+          "population": null
         }
       ]
     },
@@ -104,7 +114,8 @@
         "title": "101 Last Tribes, Bulu people",
         "url": "http://www.101lasttribes.com/tribes/bulu.html",
         "tier": "unverified",
-        "source_kind": "community"
+        "source_kind": "community",
+        "notes": "Site de présentation des peuples, lu le 3 novembre 2026 : le rite du Ngi contre la sorcellerie, les masques, l'union des clans, l'avancée vers la mer arrêtée par les Allemands, et 660 000 personnes qui se disent bulu."
       },
       {
         "title": "Ethnologue, Bulu (bum)",
@@ -116,12 +127,134 @@
         "title": "PeopleGroups.org, Bulu of Cameroon",
         "url": "https://peoplegroups.org/people_groups/pg012558/",
         "tier": "unverified",
-        "source_kind": "missionary_database"
+        "source_kind": "missionary_database",
+        "notes": "Base de données missionnaire de l'International Mission Board, lu le 3 novembre 2026 : environ 1 425 000 Bulu au Cameroun, chiffre non daté."
+      },
+      {
+        "title": "Glottolog — Bulu (Cameroun)",
+        "author": "Glottolog",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/bulu1251",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues, lu le 3 novembre 2026 : la langue bulu (bum), parlée au Cameroun, rangée dans le groupe Yaunde-Fang (A.70) ; autres noms relevés : Boulou, Bulu."
+      },
+      {
+        "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+        "author": "Günter Tessmann",
+        "year": 1913,
+        "url": "https://archive.org/details/diepangwevlkerku01tess",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 4, 6-7, 40, 43-45",
+        "notes": "Berlin, Ernst Wasmuth, 1913 ; monographie issue de l'expédition de Lübeck de 1907-1909, écrite en période coloniale allemande. lu le 3 novembre 2026 dans la numérisation d'Internet Archive : les sous-groupes pangwe (p. 6-7), les emprunts des Bulu aux Njem (p. 4), la migration et le nom Bulu (p. 39-40), le groupe de familles et la liste des familles bulu (p. 43-45)."
+      },
+      {
+        "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 2",
+        "author": "Günter Tessmann",
+        "year": 1913,
+        "url": "https://archive.org/details/diepangwevlkerku02tess",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 78",
+        "notes": "lu le 3 novembre 2026 dans la numérisation d'Internet Archive : le culte du Ngi, « Kult des reinigenden Feuers unter dem Bilde des Gorillas », répandu dans tout le pays pangwe sauf chez les Jaunde du nord et les Mwele."
+      },
+      {
+        "title": "Mittheilungen von Forschungsreisenden und Gelehrten aus den deutschen Schutzgebieten, II",
+        "author": "Freiherr von Danckelman (dir.)",
+        "year": 1889,
+        "url": "https://archive.org/details/mittheilungenvon02unse",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 110 et p. 115",
+        "notes": "Berlin, A. Asher & Co., 1889. lu le 3 novembre 2026 dans la numérisation d'Internet Archive : la conférence du capitaine Kund du 6 juillet 1889 sur l'expédition de Batanga, qui décrit les Bulei au sud des Ngumba."
+      },
+      {
+        "title": "A Life for Africa: Rev. Adolphus Clemens Good, Ph. D.",
+        "author": "Ellen C. Parsons",
+        "year": 1898,
+        "url": "https://archive.org/details/alifeforafricar00parsgoog",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 177-185, 199",
+        "notes": "New York, Fleming H. Revell, 1898. Biographie d'un missionnaire presbytérien américain, qui cite ses lettres et son journal ; lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Good y décrit les premiers villages bulu en 1892, le nom Nzambe du créateur et son choix du bulu comme langue de la mission."
+      },
+      {
+        "title": "An African Trail",
+        "author": "Jean Kenyon Mackenzie",
+        "year": 1917,
+        "url": "https://archive.org/details/anafricantrail00mackuoft",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 51",
+        "notes": "Livre d'une missionnaire presbytérienne américaine qui vécut chez les Bulu, publié en 1917 par le Central Committee on the United Study of Foreign Missions. lu le 3 novembre 2026 dans la numérisation d'Internet Archive : les Bulu, « one of the Fang divisions », dont les anciens disent être nés vers l'est et dont les jeunes défrichent vers la mer."
+      },
+      {
+        "title": "Lehrbuch der Jaunde-Sprache",
+        "author": "Hermann Nekes",
+        "year": 1911,
+        "url": "https://archive.org/details/lehrbuchderjaund00nekeuoft",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "page": "p. 1-2",
+        "notes": "Berlin, Georg Reimer, 1911 ; grammaire écrite par un missionnaire pallottin en période coloniale allemande. lu le 3 novembre 2026 dans la numérisation d'Internet Archive : les Bulu comptés parmi les Beti, l'ewondo comme langue de communication du sud du Cameroun, et la note du père Trilles sur le nom Pahouin."
+      },
+      {
+        "title": "Jaunde-Texte von Karl Atangana und Paul Messi, nebst experimentalphonetischen Untersuchungen über die Tonhöhen im Jaunde und einer Einführung in die Jaundesprache",
+        "author": "Karl Atangana et Paul Messi, textes édités par Martin Heepe",
+        "year": 1919,
+        "url": "https://archive.org/details/jaundetextevonka00heepuoft",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 256-257",
+        "notes": "Hambourg, L. Friederichsen, 1919. lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Récit n° 33, écrit en ewondo par Paul Messi, neveu du chef Karl Atangana : les Ewondo repoussent les Bulu, arrivés avant eux au Nyong."
+      },
+      {
+        "title": "Aperçu sommaire sur le Pidgin A 70 du Cameroun",
+        "author": "Pierre Alexandre",
+        "year": 1963,
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1963_num_3_12_3715",
+        "tier": "referenced",
+        "source_kind": "repository",
+        "page": "p. 577",
+        "notes": "Cahiers d'études africaines, vol. 3, n° 12, 1963 ; première page lu le 3 novembre 2026 sur Persée : le groupe de langues A 70, « avec probablement plus d'un million de locuteurs », est le plus important groupe bantou du Cameroun et du Gabon."
+      },
+      {
+        "title": "Bikange bi Bulu",
+        "author": "Hermann Jacob (attribué)",
+        "year": 1895,
+        "url": "https://archive.org/details/bikangebibulu00jaco",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "page de titre",
+        "notes": "New York, American Tract Society, 1895, 24 pages ; petit livre de calcul en langue bulu, notice et numérisation d'Internet Archive lues le 3 novembre 2026."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Bulu, ou Boulou en français, sont un peuple de la forêt du sud du Cameroun, proche des Fang et des Beti par la langue.",
+      "followUp": "Pourquoi Tessmann rattache-t-il le nom Bulu à un mot qui veut dire « beaucoup » ?"
+    },
+    "gaps": [
+      {
+        "field": "content.organization.ageClassSystems",
+        "reason": "Nous n'avons pas trouvé de source qui décrive des classes d'âge chez les Bulu ; nous avons consulté la monographie de Tessmann et les récits des missionnaires presbytériens."
+      },
+      {
+        "field": "content.historicalRole.diaspora",
+        "reason": "Nous n'avons pas trouvé de source qui décrive les Bulu installés hors de leur région ou hors du Cameroun."
+      },
+      {
+        "field": "content.demography.distributionByCountry",
+        "reason": "Nous n'avons pas trouvé de chiffre sourcé pour les Bulu de Guinée équatoriale et du Gabon, ni de recensement qui compte les Bulu au Cameroun."
+      },
+      {
+        "field": "content.origins.formationPeriod",
+        "reason": "Nous n'avons pas trouvé de source qui date l'arrivée des Bulu dans la région du Ntem ; Tessmann décrit l'ordre des migrations sans leur donner de date."
       }
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Bulu désigne un peuple de langue bantoue du sud du Cameroun, présent aussi au Gabon et en Guinée équatoriale, qui se nomme lui-même Bulu ; les auteurs de langue française écrivent souvent Boulou. Au milieu du XXe siècle, on le rangeait avec les Fang et les Beti dans un « groupe dit pahouin ». On ne sait pas avec certitude d'où vient le nom Bulu ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Bulu désigne un peuple de langue bantoue de la forêt du sud du Cameroun, qui se nomme lui-même Bulu ; les auteurs de langue française écrivent souvent Boulou. Au milieu du XXe siècle, on le rangeait avec les Fang et les Beti dans un « groupe dit pahouin ». L'ethnologue Günter Tessmann a proposé une explication du nom Bulu ; nous la présentons plus bas avec ses sources.",
     "names": [
       {
         "nameText": "Bulu",
@@ -129,16 +262,16 @@
         "selfGiven": true,
         "languageOfOrigin": "bum",
         "namedBy": null,
-        "shortLine": "Le nom qu'ils portent, imprimé dès 1895 en tête d'un livre en bulu ; on ne sait pas d'où il vient.",
-        "periodLabel": "Écrit depuis 1895 ; en usage aujourd'hui",
+        "shortLine": "Le nom qu'ils se donnent, écrit dès 1892 par un missionnaire ; il viendrait du mot bulu, « beaucoup ».",
+        "periodLabel": "Écrit depuis 1892 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
               "from": null,
               "to": null,
-              "label": "Récit non daté"
+              "label": "Rapporté en 1999"
             },
-            "statement": "Le nom Bulu désigne l'un des peuples, avec les Beti et les Ntumu, qu'une thèse ancienne fait venir du nord après la traversée de la Sanaga, les Bulu séparément des autres, selon J. Vansina. Il juge que cette thèse mêle des traditions disparates ; on ne sait pas non plus avec certitude d'où vient le nom.",
+            "statement": "Le nom Bulu désigne l'un des peuples, avec les Beti et les Ntumu, qu'une thèse ancienne fait venir du nord après la traversée de la Sanaga, les Bulu séparément des autres, selon J. Vansina. Il juge que cette thèse mêle des traditions disparates.",
             "aspect": "meaning",
             "sources": [
               {
@@ -151,28 +284,85 @@
                 "page": "p. 90",
                 "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
               }
+            ],
+            "era": "modern"
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1889,
+              "label": "1889"
+            },
+            "statement": "Le nom Bulei figure en 1889 dans le rapport du capitaine allemand Kund : il désigne un peuple de l'intérieur, apparenté aux Fang, qui s'avance presque jusqu'à la côte sur la rive droite du Ntem et attaque les Ngumba par le sud. G. Zenker écrit aussi Bulei en 1895 pour les voisins du sud des Yaünde. Trois ans plus tard, le missionnaire Good trouve les Bulu dans l'arrière-pays de Batanga, au-delà des villages mabeya.",
+            "formAsWritten": "Bulei",
+            "actors": [
+              {
+                "name": "Kund",
+                "role": "écrit cette forme dans une conférence publiée"
+              },
+              {
+                "name": "G. Zenker",
+                "role": "écrit aussi cette forme en 1895"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Mittheilungen von Forschungsreisenden und Gelehrten aus den deutschen Schutzgebieten, II",
+                "author": "Freiherr von Danckelman (dir.)",
+                "year": 1889,
+                "url": "https://archive.org/details/mittheilungenvon02unse",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 110 et p. 115",
+                "notes": "Berlin, A. Asher & Co., 1889. lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Ces pages reprennent la conférence du capitaine Kund du 6 juillet 1889 à la Société de géographie de Berlin : « im Süden an die Bulei », un peuple « der schon der Fanggruppe angehört », puis les Ngumba menacés par « den zur Küste drängenden Bulei »."
+              },
+              {
+                "title": "Yaünde, Mittheilungen von Forschungsreisenden und Gelehrten aus den deutschen Schutzgebieten, VIII",
+                "author": "G. Zenker",
+                "year": 1895,
+                "url": "https://archive.org/details/mittheilungenvon08unse",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 36",
+                "notes": "Berlin, 1895. lu le 3 novembre 2026 dans la numérisation d'Internet Archive : « im Süden die Bulei », qui parlent une langue proche de celle des Yaünde, à quelques variantes de dialecte près."
+              },
+              {
+                "title": "A Life for Africa: Rev. Adolphus Clemens Good, Ph. D.",
+                "author": "Ellen C. Parsons",
+                "year": 1898,
+                "url": "https://archive.org/details/alifeforafricar00parsgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 184-185",
+                "notes": "Le chapitre XI, d'août 1892 à janvier 1893, décrit le deuxième voyage de Good, de Batanga vers le sud-est, à travers les villages mabeya jusqu'à la Lobi et à la première ville bulu."
+              }
             ]
           },
           {
             "period": {
-              "from": 1895,
-              "to": 1895,
-              "label": "1895"
+              "from": 1892,
+              "to": 1892,
+              "label": "1892"
             },
-            "era": "colonial",
-            "statement": "Le nom Bulu apparaît imprimé en 1895 dans le titre d'un petit livre de calcul en langue bulu, Bikange bi Bulu, publié à New York par l'American Tract Society et attribué à Hermann Jacob. C'est la plus ancienne trace de ce nom que le projet connaît. Les Bulu existaient déjà avant lui.",
+            "statement": "Le nom Bulu apparaît dans le journal du missionnaire américain Adolphus Clemens Good, qui entre en 1892 dans « une petite ville bulu » à l'est de Batanga. Il note que les Bulu sont proches des Fang, mais que leurs langues diffèrent assez pour qu'ils le comprennent mal. Ce journal est publié en 1898 par Ellen C. Parsons. C'est la plus ancienne trace de ce nom que nous connaissons. Les Bulu existaient déjà avant lui.",
             "formAsWritten": "Bulu",
             "birth": true,
+            "actors": [
+              {
+                "name": "Adolphus Clemens Good",
+                "role": "écrit cette forme dans son journal de voyage"
+              }
+            ],
             "sources": [
               {
-                "title": "Bikange bi Bulu",
-                "author": "Hermann Jacob (attribué)",
-                "year": 1895,
-                "url": "https://archive.org/details/bikangebibulu00jaco",
+                "title": "A Life for Africa: Rev. Adolphus Clemens Good, Ph. D.",
+                "author": "Ellen C. Parsons",
+                "year": 1898,
+                "url": "https://archive.org/details/alifeforafricar00parsgoog",
                 "tier": "referenced",
                 "source_kind": "archive",
-                "page": "page de titre",
-                "notes": "New York, American Tract Society, 1895, 24 pages. Lu dans la numérisation d'Internet Archive le 11 octobre 2026 ; le catalogue attribue le livre à Hermann Jacob, entre crochets."
+                "page": "p. 177-178",
+                "notes": "New York, Fleming H. Revell, 1898. Biographie d'un missionnaire presbytérien américain, qui cite ses lettres et son journal ; lu le 3 novembre 2026 dans la numérisation d'Internet Archive. Le chapitre X couvre janvier à août 1892 ; Good y écrit : « I had known that the Bulu people were closely allied to the Fang »."
               }
             ]
           },
@@ -194,6 +384,56 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 66",
                 "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bulu apparaît imprimé en 1895 dans le titre d'un petit livre de calcul en langue bulu, Bikange bi Bulu, publié à New York par l'American Tract Society et attribué à Hermann Jacob. C'est le plus ancien livre en bulu que nous connaissons.",
+            "formAsWritten": "Bulu",
+            "sources": [
+              {
+                "title": "Bikange bi Bulu",
+                "author": "Hermann Jacob (attribué)",
+                "year": 1895,
+                "url": "https://archive.org/details/bikangebibulu00jaco",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "New York, American Tract Society, 1895, 24 pages. Lu dans la numérisation d'Internet Archive le 11 octobre 2026 ; le catalogue attribue le livre à Hermann Jacob, entre crochets."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Proposée en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bulu viendrait du verbe a bulu, « être beaucoup, être là en grand nombre », selon l'ethnologue allemand Günter Tessmann : les Bulu seraient ainsi nommés parce qu'ils formaient un peuple fort et nombreux, qui repoussa les Ntum vers le sud.",
+            "hypothesisGroup": "origine du nom Bulu",
+            "actors": [
+              {
+                "name": "Günter Tessmann",
+                "role": "propose cette explication"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 40",
+                "notes": "Berlin, Ernst Wasmuth, 1913 ; monographie issue de l'expédition de Lübeck de 1907-1909, écrite en période coloniale allemande. lu le 3 novembre 2026 dans la numérisation d'Internet Archive : « daher der Name a bulu, viel, in Menge da sein »."
               }
             ]
           }
@@ -262,6 +502,67 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 996",
                 "notes": "Volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026. La bibliographie cite : Alexandre, P. et Binet, J. 1958. Le groupe dit pahouin (Fang-Boulou-Beti), Londres/Paris, IAI/PUF ; nous n'avons pas lu ce livre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Rapporté en 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Pahouin, selon le père Trilles cité par le missionnaire Hermann Nekes, n'est jamais employé par les Fang pour eux-mêmes ; plusieurs le disent injurieux et synonyme de « sauvage ». Trilles y voit plutôt une déformation du nom Fang, que les Kombe prononcent Mpangwin.",
+            "aspect": "imposition",
+            "hypothesisGroup": "origine du nom Pahouin",
+            "actors": [
+              {
+                "name": "Henri Trilles",
+                "role": "propose cette explication"
+              },
+              {
+                "name": "Hermann Nekes",
+                "role": "cite Trilles"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Lehrbuch der Jaunde-Sprache",
+                "author": "Hermann Nekes",
+                "year": 1911,
+                "url": "https://archive.org/details/lehrbuchderjaund00nekeuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 1, note",
+                "notes": "Berlin, Georg Reimer, 1911, collection des manuels du Séminaire des langues orientales de Berlin ; grammaire écrite par un missionnaire pallottin en période coloniale allemande. lu le 3 novembre 2026 dans la numérisation d'Internet Archive. La note cite en français le père Trilles, « Chez les Fang », revue Les Missions catholiques."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Pahouin est jugé trop large par Günter Tessmann en 1913 : les auteurs français l'appliquent aussi à des peuples comme les Njem, qu'ils connaissaient mal. Il propose le nom Pangwe pour l'ensemble formé par les Eton, les Mwele, les Jaunde, les Bene, les Bulu, les Ntum, les Mwai, les Fang et les Mokuk.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Günter Tessmann",
+                "role": "propose un autre nom collectif"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6-7",
+                "notes": "lu le 3 novembre 2026 dans la numérisation d'Internet Archive : la liste des « Unterstämme » du « Pangwe-Stamm »."
               }
             ]
           }

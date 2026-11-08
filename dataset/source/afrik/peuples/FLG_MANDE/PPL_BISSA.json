@@ -3,157 +3,8 @@
   "nameMain": "Bissa",
   "languageFamilyId": "FLG_MANDE",
   "currentCountries": ["BFA", "GHA", "TGO", "CIV"],
-  "content": {
-    "appellations": {
-      "mainName": "Bissa",
-      "selfAppellation": "Bissa",
-      "exonyms": [
-        "Busansi (terme utilise par les Mossi)",
-        "Busanga (terme utilise par les Mossi, repris par le Joshua Project)",
-        "Bisan",
-        "Bissanno",
-        "Bussawa (terme haoussa)",
-        "Busanga (aussi terme des Kusasi, au Ghana)"
-      ],
-      "originOfExonyms": "Busansi et Busanga sont les termes employes par les Mossi voisins pour designer les Bissa. La forme Bissa est l'appellation europeenne et francophone officielle adoptee au Burkina Faso. Bussawa est le terme en langue haoussa. Une explication, dont la source n'est pas établie dans nos références, fait de Busanga une déformation de « bisag gua » (« homme bissa » dans le parler lebir et lere), réponse donnée aux premiers Européens qui demandaient au peuple qui il était. À ne pas confondre avec les Bisa de Zambie, groupe distinct, ni avec les Busa du Nigeria et du Bénin, groupe apparenté mais différent.",
-      "whyProblematic": null,
-      "contemporaryUsage": "Bissa est l'appellation officielle au Burkina Faso. Busanga est employe dans la litterature anglophone et par les bases de donnees missionnaires (Joshua Project). Les deux termes sont acceptes et utilises sans connotation negative.",
-      "linguisticFamily": "FLG_MANDE",
-      "ethnoLinguisticGroup": "Mande oriental (groupe linguistique Bissa, proche du Busa, Boko et Kyenga de l'ancien royaume de Borgu)",
-      "historicalRegion": "Centre-sud du Burkina Faso, vallee de la Volta Blanche en dessous de Tenkodogo ; Province du Boulgou",
-      "currentCountries": ["BFA", "GHA", "TGO", "CIV"]
-    },
-    "ethnicities": [
-      "Bissa (Barka, Lebir, Lere)",
-      "Busa (sous-groupe, nord-ouest Nigeria)",
-      "Boko ou Boo (sous-groupe, nord Benin)"
-    ],
-    "origins": {
-      "ancientOrigins": "Les Bissa sont un groupe mande. Daniel McFarland (Dictionnaire historique de la Haute-Volta) les decrit comme des Mande migres et installes le long de la Volta Blanche, en dessous de Tenkodogo, vers 1300, et les qualifie d'« intrusifs » dans la region ; ce mot est celui de cette source. Leur ancetre fondateur Barso etait un chasseur. Le clan Lingani est considere comme le clan fondateur detenteur du pouvoir politique et mystique.",
-      "formationPeriod": "Vers 1300 de l'ere commune, d'apres les sources historiques (Daniel McFarland, Historical Dictionary of Upper Volta).",
-      "migrationRoutes": [
-        "Migration depuis une region origine mandee (probablement Sahel occidental) vers le centre-sud de l'actuel Burkina Faso vers le XIVe siecle",
-        "Installation dans la vallee de la Volta Blanche au sud de Tenkodogo",
-        "Extension vers le nord-est du Ghana (Busanga) et l'extreme nord du Togo"
-      ],
-      "historicalSettlementZones": [
-        "Province du Boulgou et ville de Garango, Burkina Faso (centre historique)",
-        "Tenkodogo et ses environs, Burkina Faso",
-        "Ghane septentrional (North Kaneshie, Town Council Line, Shukura, Nima a Accra)",
-        "Extreme nord du Togo"
-      ],
-      "unificationsOrDivisions": "Les Bissa sont divises en trois groupes linguistiques principaux : Barka, Lebir et Lere. Chaque groupe est lui-meme subdivise en de nombreux clans portant un nom propre et une appellation (dedaa), aujourd'hui devenue nom de famille au Burkina Faso. Garango est reste independant ; les districts nord-ouest relevaient du royaume mossi de Ouagadougou, les districts nord-est du royaume mossi de Tenkodogo.",
-      "externalInfluences": "Voisinage avec les Mossi qui ont exerce une influence politique sur certains districts bissa. Le fondateur de la lignee royale Nakomse des Mossi, Rialle, etait d'origine Bissa selon les traditions orales. Islam introduit progressivement, majorite de la population pratiquant les religions traditionnelles.",
-      "majorHistoricalEvents": "Installation vers 1300 dans la vallee de la Volta Blanche ; independance partielle de Garango face aux royaumes mossi de Ouagadougou et Tenkodogo ; colonisation francaise de la Haute-Volta (actuel Burkina Faso) au XIXe siecle ; independance du Burkina Faso en 1960."
-    },
-    "organization": {
-      "traditionalPoliticalSystem": "Organisation clanique decentralisee. Le pouvoir politique et mystique est detenu par le clan Lingani, seul habilite a conferer la couronne apres une preparation mystique au village de Tangare (province du Boulgou). Les Lingani sont traditionnellement des chasseurs.",
-      "clanOrganization": "Plus de cinquante clans identifies, chacun portant un nom (ex. Pagou, Gassuogou, Tangari, Garango, Tunugu, Bussim, Sandugu) et une appellation hereditaire (dedaa) devenue patronyme en usage contemporain (ex. Nombre/Ziginni, Yaalah, Lengani, Bambara, Saare, Guerm, Zeba).",
-      "ageClassSystems": null,
-      "roleOfLineages": "La lignee du clan Lingani detient l'autorite coutumiere supremement. Les decisions dans les villages sont prises par les anciens de clan. La transmission du pouvoir suit des regles de preparation mystique a Tangare.",
-      "religiousAuthority": "Un arbre sacre (figuier ceremoniel) et une lance de chasse ancestrale sont conserves pres de la montagne Tangare, face a la residence de la famille Lingani. Ces objets sacres sont au centre des rites de legitimation du pouvoir."
-    },
-    "languages": {
-      "mainLanguage": "Bissa (bib)",
-      "isoCodes": ["bib"],
-      "dialects": [
-        "Barka (groupe nord)",
-        "Lebir (groupe central)",
-        "Lere (groupe sud)",
-        "Gormine ou Gourmyne (proche du Barka, région de Yargatala)"
-      ],
-      "vehicularRole": "La langue bissa n'est pas vehiculaire hors de la communaute. Le mooré (langue mossi) et le francais sont utilises comme langues de contact au Burkina Faso. La Bible complete a ete traduite en bissa."
-    },
-    "culture": {
-      "majorRites": "Rites de preparation mystique du Lingani pour la prise de pouvoir ou le port de la couronne a Tangare. Pratiques funeraires specifiques : les defunts sont enterres devant les maisons, dans des tombes souterraines en forme de demeure traditionnelle, avec une petite ouverture laterale pour deposer le corps. La tombe accueille plusieurs membres de la famille et est scellée par un vase en argile amovible.",
-      "symbols": "Lance de chasse ancestrale (lignani, symbole du pouvoir du clan Lingani) ; figuier ceremoniel pres de la montagne Tangare ; la cacahuete (arachide) comme aliment et symbole de courtship : un homme fait la cour a une fille en travaillant dans le champ d'arachides de sa mere, et doit lui offrir son propre champ lors du mariage.",
-      "artsAndMusic": null,
-      "spiritualities": "Majorite de la population pratiquant les religions traditionnelles (animisme). Pratiques islamiques importantes, les Bissa etant majoritairement musulmans selon Wikipedia EN. Culte des ancetres et de la terre. Pouvoir mystique du clan Lingani lie a la legitimite politique."
-    },
-    "historicalRole": {
-      "kingdomsOrChiefdoms": "Pas de royaume centralise propre aux Bissa. Garango est reste independant par rapport aux royaumes mossi voisins. Les districts nord-ouest etaient sous la suzerainete du royaume mossi de Ouagadougou, les districts nord-est sous celle du royaume de Tenkodogo.",
-      "relationsWithNeighbors": "Relations ambivalentes avec les Mossi : le fondateur de la lignee royale Nakomse des Mossi etait d'origine Bissa, mais les Bissa furent en partie places sous tutelle des royaumes mossi. Contacts avec les Haoussa (nord Nigeria) expliquant le terme Bussawa. Presence au Ghana (zone Nord Kaneshie) en lien avec les migrations commerciales.",
-      "conflictsOrAlliances": "Alliance politique ancienne avec les royaumes mossi (dependance partielle). Independence maintenue de Garango. Colonisation francaise absorbant le territoire bissa dans la Haute-Volta.",
-      "diaspora": "Communautes bissa au Ghana (Accra : quartiers North Kaneshie, Town Council Line, Shukura, Nima) et en Cote d'Ivoire. Au Nigeria et Benin, les sous-groupes Busa et Boko sont assimiles aux Bissa."
-    },
-    "demography": {
-      "totalPopulation": 1206000,
-      "referenceYear": 2025,
-      "source": "Joshua Project 2025 (Busanga : Burkina Faso 721 000, Cote d'Ivoire 173 000) ; Wikipedia EN Bissa people (total estime 1,7 million) Trois fiches décrivaient ce peuple avec des totaux différents (1 206 000, 1 100 000 et 600 000 personnes) sans pouvoir être conciliées sur les sources disponibles ; le total retenu reste 1 206 000, somme des pays ci-dessus. SIL Ethnologue place la langue bissa (bib) à « 1 million ou plus » de locuteurs.",
-      "distributionByCountry": [
-        {
-          "country": "BFA",
-          "population": 721000
-        },
-        {
-          "country": "CIV",
-          "population": 173000
-        },
-        {
-          "country": "GHA",
-          "population": 280000
-        },
-        {
-          "country": "TGO",
-          "population": 17000
-        },
-        {
-          "country": "NGA",
-          "population": 15000
-        }
-      ]
-    },
-    "sources": [
-      {
-        "title": "Busanga in Burkina Faso – Joshua Project 2025",
-        "url": "https://joshuaproject.net/people_groups/11042/UV",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "Busanga people group in all countries – Joshua Project 2025",
-        "url": "https://joshuaproject.net/people_groups/11042",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "Daniel McFarland, Historical Dictionary of Upper Volta, Metuchen, Scarecrow Press, 1978",
-        "url": null,
-        "tier": "referenced",
-        "source_kind": "academic"
-      },
-      {
-        "title": "Ethnologue, Bissa [bib] – SIL International",
-        "url": "https://www.ethnologue.com/language/bib/",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
-      },
-      {
-        "title": "101 Last Tribes — Bissa people",
-        "url": "http://www.101lasttribes.com/tribes/bissa.html",
-        "tier": "unverified",
-        "source_kind": "community"
-      },
-      {
-        "title": "Discover Burkina Faso — Culture des Bissa",
-        "url": "https://discover-burkinafaso.com/culture-languages-religions/",
-        "tier": "needs_review"
-      },
-      {
-        "title": "YouTube — Who Are the Bissa (Busanga) People?",
-        "url": "https://www.youtube.com/watch?v=bP0kGwHPQvk",
-        "tier": "unverified"
-      },
-      {
-        "title": "Facebook — A Rich Cultural Heritage: The Bissa People",
-        "url": "https://www.facebook.com/engrkogwuonyepatrick.patsallyonyeka/videos/949872800427144/",
-        "tier": "unverified",
-        "source_kind": "community"
-      }
-    ]
-  },
   "nameHistory": {
-    "summary": "Le nom Bissa désigne un peuple de langue mandé du centre-est du Burkina Faso, au sud-est du pays mossi, qui se nomme lui-même Bissa. Un autre nom, Busansi, figure à côté du sien dans les sources sur le pays mossi. Nous n'avons pas trouvé de source qui explique l'origine de ces noms.",
+    "summary": "Le nom Bissa désigne un peuple de langue mandé du centre-est du Burkina Faso, qui se nomme lui-même ainsi ; dans sa langue, il s'écrit bɩ́sá. Ce peuple porte aussi d'autres noms : Busansi, que les auteurs écrivent Boussangsi, Boussansé ou Boussanga, et Barɩk chez les Kusasi. Les sources présentées plus bas montrent quand et par qui ces noms ont été écrits.",
     "names": [
       {
         "nameText": "Bissa",
@@ -161,9 +12,54 @@
         "selfGiven": true,
         "languageOfOrigin": "bib",
         "namedBy": null,
-        "shortLine": "Le nom que se donne ce peuple de langue mandé du Burkina Faso.",
-        "periodLabel": "En usage aujourd'hui",
+        "shortLine": "Le nom que se donne ce peuple de langue mandé du Burkina Faso, écrit bɩ́sá dans sa langue.",
+        "periodLabel": "Écrit Bisa dès 1950 ; en usage aujourd'hui",
         "accounts": [
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Bissa s'écrit bɩ́sá dans l'orthographe de la langue, fixée en 2015, et ceux qui la parlent sont les bɩ́sáńnɔ̀, selon le linguiste Abdoul-Rassid Bagagnan, de l'Université Joseph Ki-Zerbo. Il décrit une langue mandé parlée surtout dans les régions du Centre-Est et du Centre-Sud du Burkina Faso, et enseignée dans des écoles bilingues.",
+            "aspect": "usage",
+            "formAsWritten": "bɩ́sá",
+            "sources": [
+              {
+                "title": "Terminologie zootechnique bɩ́sá-français",
+                "author": "Abdoul-Rassid Bagagnan",
+                "year": 2026,
+                "url": "https://hal.science/hal-05802109v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 83-85",
+                "notes": "Language Policy in Africa, vol. 2, n° 1, 2026 ; l'auteur est à l'Université Joseph Ki-Zerbo (Burkina Faso). Lu le 3 novembre 2026 sur HAL. Passages : le bɩ́sá est une « langue mandé du phylum Niger-Congo parlée au Burkina Faso, principalement dans les régions du Centre-Est et du Centre-Sud » ; elle sert « de médium et de matière d'enseignement dans les écoles bilingues » ; les locuteurs sont les « bɩ́sáńnɔ̀ » ; l'étude porte sur le dialecte gɔ̀rmı̀ñnẽ̀ et compare ses mots à ceux du « dialecte lebri » (p. 97) ; la transcription suit le « code orthographique du bɩ́sá (2015) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Recensement de 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Bissa est celui que donne à la langue l'Institut national de la statistique et de la démographie du Burkina Faso : au recensement de 2019, 3,3 % des habitants de 3 ans et plus la parlent comme langue principale.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Résultats du 5e RGPH : volume des tableaux statistiques",
+                "author": "Institut national de la statistique et de la démographie (INSD) du Burkina Faso",
+                "year": 2023,
+                "url": "https://www.insd.bf/sites/default/files/2024-06/Volume%20des%20tableaux%20statistiques_%205e%20RGPH.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "notes": "Cinquième recensement général de la population et de l'habitation, réalisé en 2019 ; volume daté de janvier 2023. Lu le 3 novembre 2026. Tableau I.24, p. 19 : « Répartition (en %) de la population résidente de 3 ans et plus selon la principale langue parlée », ligne « Bissa » : 3,3 % pour l'ensemble du Burkina Faso (3,8 % en milieu rural, 1,7 % en milieu urbain). Tableau I.22, p. 18 : dans la région du Centre-Est, 77,1 % de musulmans, 19,0 % de catholiques, 1,9 % de protestants et 1,7 % d'animistes.",
+                "page": "p. 19"
+              }
+            ]
+          },
           {
             "period": {
               "from": null,
@@ -171,7 +67,7 @@
               "label": "Usage des historiens"
             },
             "era": "modern",
-            "statement": "Le nom Bissa, que Michel Izard écrit Bisa, désigne avec celui des Samo l'une des deux principales populations de langue mandé du pays mossi ; ces deux peuples, aujourd'hui séparés, ont peut-être une origine commune, selon lui. Nous n'avons pas trouvé de source qui explique l'origine du nom.",
+            "statement": "Le nom Bissa, que Michel Izard écrit Bisa, désigne avec celui des Samo l'une des deux principales populations de langue mandé du pays mossi ; ces deux peuples, aujourd'hui séparés, ont peut-être une origine commune, selon lui.",
             "aspect": "meaning",
             "sources": [
               {
@@ -183,6 +79,56 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 257",
                 "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1965,
+              "to": 1965,
+              "label": "1965"
+            },
+            "era": "modern",
+            "statement": "Le nom Bisa est celui qu'emploie en 1965 Sœur Jean Bernard (Odette Pégard) pour les habitants des cercles de Garango et de Zabré, en Haute-Volta. Elle rappelle qu'on les a d'abord classés parmi les peuples voltaïques, puis rattachés au groupe mandé.",
+            "formAsWritten": "Bisa",
+            "sources": [
+              {
+                "title": "Structures et relations sociales en pays Bisa (Haute-Volta)",
+                "author": "Sœur Jean Bernard (Odette Pégard)",
+                "year": 1965,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1965_num_5_18_3033",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 161",
+                "notes": "Cahiers d'études africaines, vol. 5, n° 18, 1965, p. 161-247, tiré d'un mémoire soutenu en 1963 sous la direction de Georges Balandier. Lu le 3 novembre 2026 sur Persée ; seule la première page a pu être lue. Passages : « Si les Bisa sont mentionnés sous le nom de Boussancé dans les ouvrages classiques de Delafosse et Tauxier » ; « les Bisa occupent le cercle de Zabré et celui de Garango » ; « Le canton de Garango formant le centre des Bisa du nord est resté indépendant » ; la bibliographie cite « Prost (A.), La langue bisa, Études voltaïques, IFAN-Ouagadougou, 1950 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": 1950,
+              "label": "1950, cité en 1965"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bissa figure sous la forme Bisa dans le titre d'une étude d'André Prost, La langue bisa, publiée en 1950 à Ouagadougou, que cite Sœur Jean Bernard en 1965. C'est la plus ancienne trace écrite de cette forme que le projet connaît ; le peuple et son nom existaient bien avant elle.",
+            "formAsWritten": "Bisa",
+            "actors": [
+              {
+                "name": "André Prost",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Structures et relations sociales en pays Bisa (Haute-Volta)",
+                "author": "Sœur Jean Bernard (Odette Pégard)",
+                "year": 1965,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1965_num_5_18_3033",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 161",
+                "notes": "Cahiers d'études africaines, vol. 5, n° 18, 1965, p. 161-247, tiré d'un mémoire soutenu en 1963 sous la direction de Georges Balandier. Lu le 3 novembre 2026 sur Persée ; seule la première page a pu être lue. Passages : « Si les Bisa sont mentionnés sous le nom de Boussancé dans les ouvrages classiques de Delafosse et Tauxier » ; « les Bisa occupent le cercle de Zabré et celui de Garango » ; « Le canton de Garango formant le centre des Bisa du nord est resté indépendant » ; la bibliographie cite « Prost (A.), La langue bisa, Études voltaïques, IFAN-Ouagadougou, 1950 »."
               }
             ]
           },
@@ -220,6 +166,29 @@
         "accounts": [
           {
             "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Busansi se retrouve en Côte d'Ivoire sous la forme Boussanga : l'historien Mamadou Fofana écrit que les Bissa sont « nommés également Boussanga », et un quartier de Dabou, où beaucoup d'entre eux vivent, s'appelle Boussangabougou.",
+            "aspect": "usage",
+            "formAsWritten": "Boussanga",
+            "sources": [
+              {
+                "title": "Histoire des Bissa de Dabou : 1949-2020",
+                "author": "Mamadou Fofana",
+                "year": 2025,
+                "url": "https://edition-efua.acaref.net/wp-content/uploads/sites/6/2025/09/14.-Mamadou-FOFANA.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 322 et 333",
+                "notes": "Article d'un enseignant-chercheur du département d'histoire de l'Université Félix Houphouët-Boigny (Côte d'Ivoire), publié en 2025 par les éditions EFUA de l'ACAREF ; il s'appuie sur des entretiens réalisés à Dabou en 2023. Lu le 3 novembre 2026. Passages : « Les Bissa nommés également Boussanga appartiennent aux peuples mandé » (p. 322) ; « Le peuplement du pays bissa s'est étalé du XIIIe au XVIIIe siècle, à travers trois grandes vagues migratoires », d'après Lahuec et Marchal (1979) ; le récit de la séparation des Samo et des « Boussancé » à propos de la tête d'un chien sacrifié (p. 325) ; des Bissa arrivés vers Bouaflé « sous l'impulsion de l'administration coloniale, dans les années 1933-1934 » et le village de colonisation « nommé Garango » (p. 334) ; le quartier de Dabou « appelé Boussangabougou » (p. 333) ; les deux variantes « le barka et le lébir ou lébiri » (p. 340)."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": null,
               "to": null,
               "label": "Usage des historiens"
@@ -236,6 +205,87 @@
                 "source_kind": "intergovernmental",
                 "page": "p. 257",
                 "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1965,
+              "to": 1965,
+              "label": "1965"
+            },
+            "era": "modern",
+            "statement": "Le nom Busansi est écrit « Boussancé » par Sœur Jean Bernard (Odette Pégard), qui rappelle que les Bisa sont mentionnés sous ce nom dans les ouvrages classiques de Maurice Delafosse et de Louis Tauxier.",
+            "formAsWritten": "Boussancé",
+            "sources": [
+              {
+                "title": "Structures et relations sociales en pays Bisa (Haute-Volta)",
+                "author": "Sœur Jean Bernard (Odette Pégard)",
+                "year": 1965,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1965_num_5_18_3033",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 161",
+                "notes": "Cahiers d'études africaines, vol. 5, n° 18, 1965, p. 161-247, tiré d'un mémoire soutenu en 1963 sous la direction de Georges Balandier. Lu le 3 novembre 2026 sur Persée ; seule la première page a pu être lue. Passages : « Si les Bisa sont mentionnés sous le nom de Boussancé dans les ouvrages classiques de Delafosse et Tauxier » ; « les Bisa occupent le cercle de Zabré et celui de Garango » ; « Le canton de Garango formant le centre des Bisa du nord est resté indépendant » ; la bibliographie cite « Prost (A.), La langue bisa, Études voltaïques, IFAN-Ouagadougou, 1950 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Busansi est écrit « Boussansé » par Louis Tauxier dans un livre publié en 1912 sur le pays mossi. Il place les Boussansé au sud-est des Mossi, dans la résidence de Tenkodogo, et compte 99 000 « Boussansé indépendants » dans cette résidence au recensement de 1909.",
+            "formAsWritten": "Boussansé",
+            "actors": [
+              {
+                "name": "Louis Tauxier",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le Noir du Soudan : pays mossi et gourounsi",
+                "author": "Louis Tauxier",
+                "year": 1912,
+                "url": "https://archive.org/details/le-noir-du-soudan-pays-mossi-et-gourounsi-louis-tauxier-1912.",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10 et 581",
+                "notes": "Paris, Émile Larose, 1912, ouvrage publié à l'époque coloniale. Lu le 3 novembre 2026 dans la copie d'Internet Archive ; les numéros de page sont ceux de l'imprimé, relevés dans une autre numérisation du même livre (Google Books, sur Internet Archive). Passages : « Boussansé au sud-est » (p. 10) ; le récit du lieutenant Marc (1909) où la princesse réfugiée à Tenkodogo « épousa le roi du pays », un Boussansé « nommé Zoungourouma » (p. 452) ; le récit de Moulins (1909) qui situe la région de Tenkodogo « alors occupée par une population très peu dense de Boussansé » (p. 454) ; « des combats livrés par Dawoéma […] contre les Boussansé de Garango » (p. 463) ; « les Boussansé indépendants (99.000, dans la résidence de Tenkodogo) » au recensement de 1909 (p. 581)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1909,
+              "to": 1909,
+              "label": "Rapporté en 1909"
+            },
+            "era": "colonial",
+            "statement": "Le nom Busansi apparaît sous une forme proche dans deux récits sur l'origine des rois mossi, publiés en 1909 par le lieutenant Marc et par Moulins, que Louis Tauxier reproduit. Selon Marc, la princesse de Gambaga réfugiée à Tenkodogo y épouse le roi du pays, un Boussansé nommé Zoungourouma ; selon Moulins, la région de Tenkodogo était alors peu peuplée, et ses habitants étaient des Boussansé.",
+            "actors": [
+              {
+                "name": "Le lieutenant Marc",
+                "role": "rapporte la tradition mossi"
+              },
+              {
+                "name": "Moulins",
+                "role": "rapporte la tradition mossi"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le Noir du Soudan : pays mossi et gourounsi",
+                "author": "Louis Tauxier",
+                "year": 1912,
+                "url": "https://archive.org/details/le-noir-du-soudan-pays-mossi-et-gourounsi-louis-tauxier-1912.",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 452-454",
+                "notes": "Paris, Émile Larose, 1912, ouvrage publié à l'époque coloniale. Lu le 3 novembre 2026 dans la copie d'Internet Archive ; les numéros de page sont ceux de l'imprimé, relevés dans une autre numérisation du même livre (Google Books, sur Internet Archive). Passages : « Boussansé au sud-est » (p. 10) ; le récit du lieutenant Marc (1909) où la princesse réfugiée à Tenkodogo « épousa le roi du pays », un Boussansé « nommé Zoungourouma » (p. 452) ; le récit de Moulins (1909) qui situe la région de Tenkodogo « alors occupée par une population très peu dense de Boussansé » (p. 454) ; « des combats livrés par Dawoéma […] contre les Boussansé de Garango » (p. 463) ; « les Boussansé indépendants (99.000, dans la résidence de Tenkodogo) » au recensement de 1909 (p. 581)."
               }
             ]
           },
@@ -265,5 +315,201 @@
         ]
       }
     ]
+  },
+  "content": {
+    "appellations": {
+      "mainName": "Bissa",
+      "selfAppellation": "Bissa",
+      "exonyms": [
+        "Busansi",
+        "Boussangsi (forme écrite par Louis-Gustave Binger, 1892)",
+        "Boussansé (forme écrite par Louis Tauxier, 1912)",
+        "Boussancé",
+        "Boussanga (en usage en Côte d'Ivoire)",
+        "Busanga",
+        "Barɩk (en kusaal)"
+      ],
+      "spellingAliases": ["Bisa", "Bɩ́sá"],
+      "originOfExonyms": "Le nom Busansi et ses formes proches apparaissent d'abord chez des voyageurs et des auteurs français qui décrivent le pays mossi : Louis-Gustave Binger parle du « Boussangsi » à l'est du Mossi dans le récit de son voyage de 1888, puis Louis Tauxier écrit « Boussansé » en 1912. En 1965, Sœur Jean Bernard (Odette Pégard) rappelle que les Bisa sont mentionnés sous le nom de Boussancé dans les ouvrages de Maurice Delafosse et de Louis Tauxier. Le site communautaire 101 Last Tribes présente Busansi ou Busanga comme le nom que leur donnent les Mossi. Les Kusasi, eux, appellent une personne bissa barɩk dans leur langue, le kusaal, selon un dictionnaire publié en 2014. Il ne faut pas confondre les Bissa avec les Busa, aussi appelés Boko : le linguiste André Prost les compte comme deux peuples distincts, dont les langues sont parentes.",
+      "whyProblematic": null,
+      "contemporaryUsage": "Au Burkina Faso, le recensement de 2019 nomme la langue « Bissa », et les linguistes du pays l'écrivent bɩ́sá. En Côte d'Ivoire, les Bissa installés à Dabou sont aussi appelés Boussanga, et un quartier de la ville porte le nom de Boussangabougou. La base de données missionnaire Joshua Project désigne ce peuple sous le nom de Busanga.",
+      "peopleGroupId": null,
+      "peopleGroupLabel": null
+    },
+    "ethnicities": ["Bissa barka", "Bissa lebir (ou lebri)", "Bissa lere"],
+    "origins": {
+      "ancientOrigins": "Les Bissa appartiennent aux peuples de langue mandé, une grande famille de langues d'Afrique de l'Ouest. Sœur Jean Bernard (Odette Pégard) rappelle en 1965 que les premiers auteurs coloniaux les avaient classés parmi les peuples voltaïques, avant qu'on montre leur appartenance au groupe mandé. Une tradition orale recueillie par Jean-Paul Lahuec et Jean-Yves Marchal, et citée par l'historien Mamadou Fofana, raconte que les ancêtres des Samo et des Bissa se sont séparés près de la montagne de Garango, après une querelle sur la tête d'un chien sacrifié.",
+      "formationPeriod": "Selon Jean-Paul Lahuec et Jean-Yves Marchal, cités par Mamadou Fofana, le peuplement du pays bissa s'est fait du XIIIe au XVIIIe siècle, en trois grandes vagues de migration.",
+      "migrationRoutes": [
+        "Selon les travaux cités par Mamadou Fofana, une première vague serait arrivée à la fin du XIIIe siècle avec les ancêtres des Samo, depuis la région de Yendi, dans le nord de l'actuel Ghana.",
+        "Une deuxième vague, au XVe siècle, aurait quitté le pays mossi pour fuir la domination des Mossi et rejoindre les premiers Bissa.",
+        "Une dernière vague, au XVIIIe siècle, aurait fui les pillages des Dagomba, eux-mêmes soumis aux Ashanti, selon le même auteur.",
+        "Au XVIIe siècle, selon la géographe Élodie Robert, des Bissa chassés par les Mossi quittent Ouargaye et Bittou et s'installent autour de Garango et le long de rivières plus au sud.",
+        "Entre 1920 et 1940, beaucoup de Bissa partent vers la Gold Coast, l'actuel Ghana, pour échapper à l'impôt et au travail forcé de la colonisation française.",
+        "Dans les années 1933 et 1934, l'administration coloniale fait venir des Bissa près de Bouaflé, en Côte d'Ivoire ; à partir de 1949, d'autres s'installent à Dabou."
+      ],
+      "historicalSettlementZones": [
+        "Le cercle de Garango, centre des Bissa du nord, au Burkina Faso",
+        "Le cercle de Zabré, au Burkina Faso",
+        "Une grande partie du cercle de Tenkodogo, partagé avec les Mossi",
+        "Un petit groupe bissa au milieu des Mossi, dans le cercle de Manga",
+        "Les départements de Niaogho, Béguédo, Boussouma, Komtoéga, Garango, Zabré, Yargatenga, Bittou et Bané, dans la province du Boulgou"
+      ],
+      "unificationsOrDivisions": "La langue bissa compte plusieurs dialectes : Glottolog nomme le baraka, le barka, le lebir et le lere, et le linguiste Abdoul-Rassid Bagagnan étudie aussi le gɔ̀rmı̀ñnẽ̀. Avant la colonisation, le canton de Garango, au centre des Bissa du nord, est resté indépendant, tandis que les cantons du nord-ouest dépendaient du royaume mossi de Ouagadougou et ceux du nord-est du royaume mossi de Tenkodogo, selon Sœur Jean Bernard (Odette Pégard).",
+      "externalInfluences": "Les Mossi, voisins des Bissa, ont fondé leurs royaumes dans la région. Leurs récits d'origine, publiés en 1909 et repris par Louis Tauxier, placent à Tenkodogo, avant l'arrivée des premiers rois mossi, des habitants appelés Boussansé. Les Bissa emploient aussi des mots venus du mooré, la langue des Mossi, comme wafo, qui nomme une maladie de peau, selon l'anthropologue Sylvie Fainzang.",
+      "majorHistoricalEvents": "Au XVIIe siècle, des Bissa sont chassés par les Mossi de la région de Ouargaye et de Bittou, selon Élodie Robert. Selon les récits rapportés en 1909 par Moulins, le roi mossi Dawoéma a mené une série de combats contre les Boussansé de Garango, qui voulaient échapper au roi de Tenkodogo. Louis Tauxier date l'occupation française du pays mossi de 1896. Sous la colonisation, l'impôt, le recrutement de soldats et le travail forcé poussent des villages bissa à fuir vers la brousse ou vers la Gold Coast, entre 1920 et 1940."
+    },
+    "organization": {
+      "traditionalPoliticalSystem": "Avant la colonisation, le pays bissa était divisé en cantons. Celui de Garango était indépendant, et d'autres cantons dépendaient des royaumes mossi de Ouagadougou et de Tenkodogo, selon Sœur Jean Bernard (Odette Pégard). Selon la géographe Élodie Robert, le chef de la terre portait le nom de tengsoba, et les Bissa chassés par les Mossi créèrent de nouvelles chefferies là où ils s'installèrent.",
+      "clanOrganization": "La filiation est patrilinéaire : les enfants appartiennent au clan de leur père, et deux personnes qui portent le même patronyme ne peuvent pas se marier, selon l'historien Mamadou Fofana, qui cite Sœur Jean Bernard. À Dabou, en Côte d'Ivoire, les familles bissa portent les patronymes Gnégné, Zerba, Saré, Bouèbané, Daboné, Bancé, Sinhoné, Sogné, Yoda, Bila, Nombré, Moussana et Lingaré.",
+      "ageClassSystems": "Nous n'avons pas trouvé de source qui décrive un système de classes d'âge chez les Bissa.",
+      "roleOfLineages": "Dans le pays bissa ancien, un village réunissait souvent plus de 800 personnes ; il était fait de nombreuses concessions, et chacune représentait un lignage ou une partie de lignage, selon Élodie Robert. Le chef de famille est le plus âgé des membres encore en vie, écrit Mamadou Fofana à propos des Bissa de Dabou.",
+      "religiousAuthority": "Selon Élodie Robert, le chef de la terre, appelé tengsoba, tenait une place centrale dans le village bissa ancien. À Dabou, en Côte d'Ivoire, le chef de la communauté bissa est aussi l'imam de la mosquée du quartier Boussangabougou, selon Mamadou Fofana."
+    },
+    "languages": {
+      "mainLanguage": "Bissa (bib)",
+      "isoCodes": ["bib"],
+      "dialects": ["Baraka", "Barka", "Lebir (ou lebri)", "Lere", "Gɔ̀rmı̀ñnẽ̀"],
+      "vehicularRole": "Au recensement de 2019, 3,3 % des habitants du Burkina Faso âgés de 3 ans et plus parlent le bissa comme langue principale, selon l'INSD. La langue sert de langue d'enseignement dans les écoles bilingues et les centres d'alphabétisation. Les Bissa emploient aussi des mots du mooré, la langue des Mossi, et à Dabou, en Côte d'Ivoire, la communauté parle surtout le barka et le lebir entre elle."
+    },
+    "externalIdentifiers": {
+      "wikidataId": "Q866644",
+      "glottocode": "biss1248",
+      "iso639_3": "bib"
+    },
+    "culture": {
+      "majorRites": "Chez les Bissa de Dabou, en Côte d'Ivoire, une délégation demande la main de la jeune fille à ses parents avec des noix de cola et une somme d'argent ; ce sont ses oncles maternels qui donnent leur accord, puis la famille du prétendant verse la dot. Après le mariage, la femme vient vivre chez son mari, selon Mamadou Fofana.",
+      "symbols": "Nous n'avons pas trouvé de source qui décrive les symboles propres aux Bissa.",
+      "artsAndMusic": "Nous n'avons pas trouvé de source qui décrive la musique et les arts des Bissa.",
+      "spiritualities": "Les Bissa expliquent certaines maladies par la contamination d'un animal ou d'un objet : le nom d'une maladie de peau, par exemple, renvoie au python, qui la transmettrait, selon l'anthropologue Sylvie Fainzang. Dans la région du Centre-Est du Burkina Faso, où vivent beaucoup de Bissa, 77,1 % des habitants se disent musulmans et 19 % catholiques au recensement de 2019 ; ce chiffre porte sur toute la région, pas sur les seuls Bissa. Les Bissa de Dabou sont surtout musulmans, selon Mamadou Fofana."
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": "Les Bissa n'ont pas formé de grand royaume. Leurs cantons étaient soit indépendants, comme celui de Garango, soit placés sous les royaumes mossi de Ouagadougou et de Tenkodogo, selon Sœur Jean Bernard (Odette Pégard).",
+      "relationsWithNeighbors": "Les Bissa vivent à côté des Mossi, qui ont dominé une partie de leurs cantons. Une tradition rapportée par Jean-Paul Lahuec et Jean-Yves Marchal, et citée par Mamadou Fofana, fait des Samo leurs parents, séparés d'eux près de Garango.",
+      "conflictsOrAlliances": "Les récits mossi rapportés en 1909 par Moulins évoquent les combats du roi mossi Dawoéma contre les Boussansé de Garango, qui voulaient échapper au roi de Tenkodogo. Selon Élodie Robert, les attaques des royaumes mossi de Manga, Ouagadougou, Koupéla et Tenkodogo ont longtemps empêché les Bissa de s'installer dans les vallées.",
+      "diaspora": "Beaucoup de Bissa sont partis vers la Gold Coast, l'actuel Ghana, entre 1920 et 1940, selon Élodie Robert. En Côte d'Ivoire, l'administration coloniale a fait venir des Bissa près de Bouaflé en 1933 et 1934, où ils ont fondé un village nommé Garango ; à partir de 1949, une forte communauté s'est installée à Dabou, dans le quartier Boussangabougou, selon Mamadou Fofana."
+    },
+    "demography": {
+      "totalPopulation": 1231000,
+      "referenceYear": 2026,
+      "source": "Estimation de Joshua Project, une base de données missionnaire, consultée le 3 novembre 2026 : 737 000 personnes au Burkina Faso, 300 000 au Ghana, 177 000 en Côte d'Ivoire et 17 000 au Togo, soit 1 231 000 personnes. Le recensement du Burkina Faso de 2019 ne compte pas les peuples mais les langues : 3,3 % des habitants de 3 ans et plus y parlent le bissa comme langue principale (INSD). En 1909, un recensement colonial cité par Louis Tauxier comptait 99 000 Boussansé « indépendants » dans la résidence de Tenkodogo.",
+      "distributionByCountry": [
+        {
+          "country": "BFA",
+          "population": 737000,
+          "note": "Surtout dans la province du Boulgou, autour de Garango, Zabré et Tenkodogo"
+        },
+        {
+          "country": "GHA",
+          "population": 300000
+        },
+        {
+          "country": "CIV",
+          "population": 177000,
+          "note": "Notamment à Dabou et près de Bouaflé"
+        },
+        {
+          "country": "TGO",
+          "population": 17000
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Glottolog — Bissa (biss1248)",
+        "url": "https://glottolog.org/resource/languoid/id/biss1248",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Catalogue des langues de l'Institut Max Planck d'anthropologie évolutionniste. Lu le 3 novembre 2026. La fiche donne le code ISO 639-3 « bib », classe la langue dans « Mande > Eastern Mande > Bisa-Busa » et lui reconnaît quatre dialectes : « Baraka », « Barka », « Lebir » et « Lere »."
+      },
+      {
+        "title": "Résultats du 5e RGPH : volume des tableaux statistiques",
+        "url": "https://www.insd.bf/sites/default/files/2024-06/Volume%20des%20tableaux%20statistiques_%205e%20RGPH.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "notes": "Cinquième recensement général de la population et de l'habitation, réalisé en 2019 ; volume daté de janvier 2023. Lu le 3 novembre 2026. Tableau I.24, p. 19 : « Répartition (en %) de la population résidente de 3 ans et plus selon la principale langue parlée », ligne « Bissa » : 3,3 % pour l'ensemble du Burkina Faso (3,8 % en milieu rural, 1,7 % en milieu urbain). Tableau I.22, p. 18 : dans la région du Centre-Est, 77,1 % de musulmans, 19,0 % de catholiques, 1,9 % de protestants et 1,7 % d'animistes."
+      },
+      {
+        "title": "Structures et relations sociales en pays Bisa (Haute-Volta)",
+        "url": "https://www.persee.fr/doc/cea_0008-0055_1965_num_5_18_3033",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Cahiers d'études africaines, vol. 5, n° 18, 1965, p. 161-247, tiré d'un mémoire soutenu en 1963 sous la direction de Georges Balandier. Lu le 3 novembre 2026 sur Persée ; seule la première page a pu être lue. Passages : « Si les Bisa sont mentionnés sous le nom de Boussancé dans les ouvrages classiques de Delafosse et Tauxier » ; « les Bisa occupent le cercle de Zabré et celui de Garango » ; « Le canton de Garango formant le centre des Bisa du nord est resté indépendant » ; la bibliographie cite « Prost (A.), La langue bisa, Études voltaïques, IFAN-Ouagadougou, 1950 »."
+      },
+      {
+        "title": "Le Noir du Soudan : pays mossi et gourounsi",
+        "url": "https://archive.org/details/le-noir-du-soudan-pays-mossi-et-gourounsi-louis-tauxier-1912.",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Paris, Émile Larose, 1912, ouvrage publié à l'époque coloniale. Lu le 3 novembre 2026 dans la copie d'Internet Archive ; les numéros de page sont ceux de l'imprimé, relevés dans une autre numérisation du même livre (Google Books, sur Internet Archive). Passages : « Boussansé au sud-est » (p. 10) ; le récit du lieutenant Marc (1909) où la princesse réfugiée à Tenkodogo « épousa le roi du pays », un Boussansé « nommé Zoungourouma » (p. 452) ; le récit de Moulins (1909) qui situe la région de Tenkodogo « alors occupée par une population très peu dense de Boussansé » (p. 454) ; « des combats livrés par Dawoéma […] contre les Boussansé de Garango » (p. 463) ; « les Boussansé indépendants (99.000, dans la résidence de Tenkodogo) » au recensement de 1909 (p. 581)."
+      },
+      {
+        "title": "Les Mandé-Sud en Afrique occidentale",
+        "url": "https://www.persee.fr/doc/sfhom_1768-7144_1981_mel_5_1_943",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Dans 2000 ans d'histoire africaine. Le sol, la parole et l'écrit. Mélanges en hommage à Raymond Mauny, tome I, Paris, Société française d'histoire d'outre-mer, 1981, p. 353-360. Lu le 3 novembre 2026 sur Persée ; seule la première page a pu être lue. L'auteur dit avoir vécu « 10 ans chez les Bisa » et range parmi les langues mandé-sud celles « des Busa ou Boko, des Bisa, Sá ou Samo » et d'autres peuples."
+      },
+      {
+        "title": "Le Regard du serpent. Réflexions sur la théorie de la contamination chez les Bisa de Haute-Volta",
+        "url": "https://www.persee.fr/doc/hom_0439-4216_1984_num_24_3_368515",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "L'Homme, tome 24, n° 3-4, 1984, p. 83-89. Lu le 3 novembre 2026 sur Persée ; seule la première page a pu être lue. L'autrice étudie « les discours relatifs à l'apparition de certaines maladies chez les Bisa » à partir des noms de maladie ; une note précise que wafo vient « Du moore » et que le python se dit memda « en bisa »."
+      },
+      {
+        "title": "Les risques de pertes en terre et en eau dans le bassin versant de la Doubégué (Burkina Faso) : pour une gestion intégrée",
+        "url": "https://hal.science/tel-01090397v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse de doctorat en géographie, Université Michel de Montaigne - Bordeaux 3, soutenue le 30 novembre 2011, déposée sur HAL. Lu le 3 novembre 2026. Passages : « Le mot Bissa peut également s'écrire Bisa » (p. 85) ; « le dialecte est principalement le lebir ou lebri » ; « Il semble que les populations Bissa aient été chassées au XVIIème siècle par les Mossi » ; « Le chef de la Terre se nommait le Tengsoba » (p. 86) ; une émigration massive « en direction de la Gold Coast (actuel Ghana) entre les années 1920 et 1940 » (p. 88)."
+      },
+      {
+        "title": "Terminologie zootechnique bɩ́sá-français",
+        "url": "https://hal.science/hal-05802109v1",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Language Policy in Africa, vol. 2, n° 1, 2026 ; l'auteur est à l'Université Joseph Ki-Zerbo (Burkina Faso). Lu le 3 novembre 2026 sur HAL. Passages : le bɩ́sá est une « langue mandé du phylum Niger-Congo parlée au Burkina Faso, principalement dans les régions du Centre-Est et du Centre-Sud » ; elle sert « de médium et de matière d'enseignement dans les écoles bilingues » ; les locuteurs sont les « bɩ́sáńnɔ̀ » ; l'étude porte sur le dialecte gɔ̀rmı̀ñnẽ̀ et compare ses mots à ceux du « dialecte lebri » (p. 97) ; la transcription suit le « code orthographique du bɩ́sá (2015) »."
+      },
+      {
+        "title": "Histoire des Bissa de Dabou : 1949-2020",
+        "url": "https://edition-efua.acaref.net/wp-content/uploads/sites/6/2025/09/14.-Mamadou-FOFANA.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Article d'un enseignant-chercheur du département d'histoire de l'Université Félix Houphouët-Boigny (Côte d'Ivoire), publié en 2025 par les éditions EFUA de l'ACAREF ; il s'appuie sur des entretiens réalisés à Dabou en 2023. Lu le 3 novembre 2026. Passages : « Les Bissa nommés également Boussanga appartiennent aux peuples mandé » (p. 322) ; « Le peuplement du pays bissa s'est étalé du XIIIe au XVIIIe siècle, à travers trois grandes vagues migratoires », d'après Lahuec et Marchal (1979) ; le récit de la séparation des Samo et des « Boussancé » à propos de la tête d'un chien sacrifié (p. 325) ; des Bissa arrivés vers Bouaflé « sous l'impulsion de l'administration coloniale, dans les années 1933-1934 » et le village de colonisation « nommé Garango » (p. 334) ; le quartier de Dabou « appelé Boussangabougou » (p. 333) ; les deux variantes « le barka et le lébir ou lébiri » (p. 340)."
+      },
+      {
+        "title": "Dictionnaire kusaal-français-anglais",
+        "url": "https://sil-burkina.org/sites/default/files/Dictionnaire%20kusaal%20-%20francais%20-%20anglais.pdf",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Ouagadougou, SIL, édition préliminaire, 2014. Lu le 3 novembre 2026. Entrées : « barɩk2 pl. : barɩs. n. personne bissa; Bissa person » et « batɩt2 n. langue bissa; Bissa language »."
+      },
+      {
+        "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+        "url": "https://www.gutenberg.org/ebooks/74720",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Paris, Hachette, 1892, tome 1, récit du voyage de 1887 à 1889 ; lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. Le Mossi touche, à l'est, « au Boussangsi, dont il est séparé par la branche orientale de la Volta »."
+      },
+      {
+        "title": "101 Last Tribes — Bissa people",
+        "url": "http://www.101lasttribes.com/tribes/bissa.html",
+        "tier": "unverified",
+        "source_kind": "community",
+        "notes": "Site communautaire en anglais, sans auteur nommé, qui reprend en partie l'encyclopédie Wikipédia. Lu le 3 novembre 2026. Passage : « An alternate name for the Bissa is Busansi or Busanga which is used by the Mossi people »."
+      },
+      {
+        "title": "Busanga people group in all countries – Joshua Project 2025",
+        "url": "https://joshuaproject.net/people_groups/11042",
+        "tier": "unverified",
+        "source_kind": "missionary_database",
+        "notes": "Base de données missionnaire. Consultée le 3 novembre 2026 : Burkina Faso « 737,000 », Côte d'Ivoire « 177,000 », Ghana « 300,000 », Togo « 17,000 », total « 1,231,000 »."
+      }
+    ],
+    "searchAnswer": {
+      "lead": "Les Bissa sont un peuple de langue mandé du centre-est du Burkina Faso, autour de Garango et de Zabré ; des auteurs les ont aussi appelés Busansi ou Boussansé.",
+      "followUp": "Quand le nom Boussansé apparaît-il dans les écrits sur le pays mossi ?"
+    }
   }
 }

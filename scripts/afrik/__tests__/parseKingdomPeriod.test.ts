@@ -201,6 +201,8 @@ describe("parseKingdomPeriod", () => {
    * The corpus is the specification. This asserts the count the backfill will
    * report, so a parser change that quietly stops reading a whole family of
    * labels shows up as a number rather than as silence.
+   * 298 -> 295 on 2026-11-07: the premium pass on six country fiches removed
+   * unsourced kingdom entries and added sourced ones, three fewer in all.
    */
   // @req REQ-148
   it("derives bounds for the datable share of the real corpus", () => {
@@ -208,7 +210,11 @@ describe("parseKingdomPeriod", () => {
     const parsed = labels.filter((l) => parseKingdomPeriod(l) !== null);
     // 298 -> 301: the Liberia fiche adds the Dei chiefdom of Cape Mesurado,
     // the Libya fiche the Fezzân under Kanem and the 1943-1951 administrations.
-    expect(labels).toHaveLength(301);
+    // 301 -> 305: premium countries batch 04 adds dated kingdoms on Ghana,
+    // Guinea, Guinea-Bissau and Equatorial Guinea.
+    // 305 -> 314 on 2026-11-08: the other consolidated premium countries
+    // batches add their dated kingdoms and administrations.
+    expect(labels).toHaveLength(314);
     expect(parsed.length).toBeGreaterThanOrEqual(180);
   });
 });

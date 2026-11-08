@@ -3,9 +3,9 @@
   "nameFr": "Zambie",
   "nameEn": "Zambia",
   "nameOfficial": "République de Zambie (Republic of Zambia)",
-  "summary": "La Zambie porte le nom du fleuve Zambèze, adopté en 1964 en remplacement de « Rhodésie du Nord ». Le Barotseland, le royaume Bemba et l'empire Lunda en composent l'histoire précoloniale. Bemba, Tonga, Lozi, Chewa et Lunda y perpétuent le Gule Wamkulu et les polyrythmes.",
-  "etymology": "Le nom \"Zambie\" viendrait du fleuve Zambèze (Zambezi), qui traverse le pays. Le nom a été adopté lors de l'indépendance en 1964, remplaçant \"Rhodésie du Nord\" (Northern Rhodesia).",
-  "nameOriginActor": "Le nom \"Zambie\" a été proposé par les nationalistes zambiens lors de l'indépendance. Le fleuve Zambèze tire son nom des peuples locaux (probablement d'origine bantoue).",
+  "summary": "La Zambie porte un nom tiré de celui du fleuve Zambèze, pris en 1964 quand la Rhodésie du Nord devient indépendante. Les sources du XVIIIe et du XIXe siècle y décrivent le royaume des Lozi à l'ouest, le royaume lunda du Kazembe sur le Luapula et le pays des Bemba au nord-est. Au recensement de 2022, les Bemba et les Tonga sont les deux groupes les plus nombreux.",
+  "etymology": "Le nom Zambie, Zambia en anglais, est tiré de celui du fleuve Zambèze, selon Henry Kyambalesa. L'origine du nom du fleuve est discutée : en 1609, João dos Santos le rattache à une grande localité que le fleuve traverse, et en 1857, David Livingstone y voit l'une des formes d'un nom qui voudrait dire « le grand fleuve ».",
+  "nameOriginActor": "Le nom Zambia apparaît en 1958 dans celui d'un parti indépendantiste, le Zambia African National Congress, selon un article de 1999 que rapporte Henry Kyambalesa. Cet article prête la suggestion du nom, sans certitude, à Simon Mwansa Kapwepwe. Le nom devient celui de l'État le 24 octobre 1964.",
   "nameHistory": {
     "summary": "Le nom Zambie désigne un pays d'Afrique australe, la République de Zambie, qui a pris en 1964 un nom tiré de celui du fleuve Zambèze. Le pays s'appelait auparavant Rhodésie du Nord, d'après le nom de Cecil Rhodes ; avant 1911, il formait deux territoires, la Rhodésie du Nord-Est et la Rhodésie du Nord-Ouest. Les sources ne s'accordent pas sur l'origine du nom du fleuve ; nous les présentons plus bas.",
     "names": [
@@ -347,7 +347,7 @@
               "label": "Jusqu'au 17 août 1911"
             },
             "era": "colonial",
-            "statement": "Le nom Rhodésie du Nord-Est, North Eastern Rhodesia en anglais, désigne l'un des deux territoires réunis le 17 août 1911 pour former la Rhodésie du Nord, selon l'Assemblée nationale de Zambie. On ne sait pas avec certitude, d'après les sources lues, quand ce nom est apparu.",
+            "statement": "Le nom Rhodésie du Nord-Est, North Eastern Rhodesia en anglais, désigne l'un des deux territoires réunis le 17 août 1911 pour former la Rhodésie du Nord, selon l'Assemblée nationale de Zambie. Cette source ne dit pas quand ce nom est apparu.",
             "aspect": "usage",
             "sources": [
               {
@@ -388,7 +388,7 @@
               "label": "Jusqu'au 17 août 1911"
             },
             "era": "colonial",
-            "statement": "Le nom Rhodésie du Nord-Ouest, North Western Rhodesia en anglais, désigne l'autre territoire réuni en 1911 dans la Rhodésie du Nord ; l'Encyclopaedia Britannica de 1911 l'appelle aussi Barotseland, du nom du pays des Lozi. On ne sait pas avec certitude, d'après les sources lues, quand ce nom est apparu.",
+            "statement": "Le nom Rhodésie du Nord-Ouest, North Western Rhodesia en anglais, désigne l'autre territoire réuni en 1911 dans la Rhodésie du Nord ; l'Encyclopaedia Britannica de 1911 l'appelle aussi Barotseland, du nom du pays des Lozi. Ces sources ne disent pas quand ce nom est apparu.",
             "aspect": "usage",
             "sources": [
               {
@@ -418,69 +418,64 @@
   },
   "content": {
     "historicalNames": {
-      "formerNames": ["Rhodésie du Nord (1890-1964)"],
-      "antiquity": "Le territoire était peuplé de groupes bantous et khoïsan. Pas d'entité politique unifiée.",
-      "middleAges": "Présence de royaumes bantous (royaume Lunda, royaume Bemba, royaume Barotseland). Migrations bantoues depuis le nord.",
-      "precolonial": "Royaumes et chefferies bantous (Barotseland, royaume Bemba, royaume Lunda). Le territoire était divisé entre plusieurs entités politiques.",
-      "colonization": "1890-1964 : Rhodésie du Nord (Northern Rhodesia), protectorat britannique puis colonie britannique. Le nom \"Rhodésie\" vient de Cecil Rhodes, colonisateur britannique.",
-      "contemporary": "1964 : Indépendance, République de Zambie. Le nom \"Zambie\" remplace \"Rhodésie du Nord\"."
+      "formerNames": [
+        "Rhodésie du Nord (1911-1964)",
+        "Rhodésie du Nord-Est et Rhodésie du Nord-Ouest (jusqu'en 1911)",
+        "Rhodésie (nom du territoire de la British South Africa Company à partir de 1895)"
+      ],
+      "antiquity": null,
+      "middleAges": null,
+      "precolonial": "Avant les noms donnés par les Britanniques, les sources parlent surtout du fleuve. En 1552, l'historien portugais João de Barros écrit que des peuples de l'intérieur appellent Zembere le grand fleuve que les Portugais nomment Cuama. En 1857, David Livingstone note que les Barotse l'appellent Liambai ou Leeambye, et que d'autres parlers disent Zambesi. En 1798, le journal du Portugais Francisco José de Lacerda e Almeida nomme aussi des pays de l'actuelle Zambie : le royaume du Cazembe, sur le Luapula, et la « nation Uemba », plus au nord.",
+      "colonization": "Le nom Rhodésie est donné le 3 mai 1895 à tout le territoire de la British South Africa Company, des deux côtés du Zambèze, en l'honneur de Cecil Rhodes. Au nord du fleuve, la compagnie administre deux territoires : la Rhodésie du Nord-Ouest, qu'on appelle aussi Barotseland, et la Rhodésie du Nord-Est. Le 17 août 1911, un décret britannique les réunit sous le nom de Rhodésie du Nord.",
+      "contemporary": "Le nom Zambia apparaît en octobre 1958 dans celui d'un parti, le Zambia African National Congress, selon un récit de presse de 1999. Le 24 octobre 1964, la Rhodésie du Nord devient une république indépendante « sous le nom de Zambia », selon la loi britannique sur l'indépendance de la Zambie."
     },
     "kingdoms": [
       {
         "name": "Royaume Barotseland",
-        "period": "XVIIIe siècle - 1964",
-        "entryType": "polity",
-        "timeRange": {
-          "startYear": 1701,
-          "endYear": 1964,
-          "precision": "century"
-        },
-        "dominantPeoples": ["Lozi"],
-        "politicalCenters": ["Lealui", "Mongu"],
-        "historicalRole": "Royaume puissant de l'ouest de la Zambie, protectorat britannique séparé, intégration à la Zambie en 1964."
-      },
-      {
-        "name": "Royaume Bemba",
-        "period": "XVIIIe siècle - XIXe siècle",
-        "entryType": "polity",
-        "timeRange": {
-          "startYear": 1701,
-          "endYear": 1900,
-          "precision": "century"
-        },
-        "dominantPeoples": ["Bemba"],
-        "politicalCenters": ["Kasama", "régions du nord"],
-        "historicalRole": "Royaume bemba structuré, dirigé par le Chitimukulu, expansion territoriale, résistance à la colonisation."
-      },
-      {
-        "name": "Empire Lunda",
-        "period": "XVIIe siècle - XIXe siècle",
+        "period": "Début du XVIIe siècle environ - 1911",
         "entryType": "polity",
         "timeRange": {
           "startYear": 1601,
-          "endYear": 1900,
-          "precision": "century"
+          "endYear": 1911,
+          "precision": "approximate",
+          "datingNote": "Le début vient d'une estimation faite en 1910 par Alfred St Hill Gibbons, d'après le nombre de rois qui se sont succédé dans la plaine, vingt-deux ; aucun document ne le date. La fin retenue, 1911, est l'entrée du Barotseland, alors appelé Rhodésie du Nord-Ouest, dans la Rhodésie du Nord. Nous n'avons pas encore documenté l'histoire du royaume après cette date."
         },
-        "dominantPeoples": ["Lunda"],
-        "politicalCenters": [
-          "Régions du nord-ouest (extension depuis l'Angola et la RDC)"
-        ],
-        "historicalRole": "Empire lunda influent, commerce transsaharien, relations avec les Portugais."
+        "dominantPeoples": ["Lozi"],
+        "politicalCenters": ["Lialui", "Nalolo"],
+        "historicalRole": "Le royaume des Barotse, aujourd'hui appelés Lozi, s'étend sur la plaine du haut Zambèze. Selon l'article qu'Alfred St Hill Gibbons, officier britannique, lui consacre en 1910 dans l'Encyclopaedia Britannica, ce peuple, d'abord appelé Aälui, vivait auparavant sur la rivière Kabompo. Au début du XIXe siècle, les Makololo, venus du sud, le soumettent ; vers 1865, une révolte rétablit l'ancienne dynastie. Le roi partage son autorité avec une reine, la Mokwai, qui est sa sœur aînée et gouverne depuis Nalolo, tandis que la capitale est Lialui. Le 27 juin 1890, le roi Lewanika signe un traité qui place son pays sous la protection de la British South Africa Company."
       },
       {
-        "name": "Chefferies Tonga",
-        "period": "Précoloniale - coloniale",
+        "name": "Royaume Bemba",
+        "period": "Attesté en 1798 - vers 1900",
         "entryType": "polity",
-        "dominantPeoples": ["Tonga"],
-        "politicalCenters": ["Vallée du Zambèze", "Southern Province"],
-        "historicalRole": "Chefferies décentralisées, déplacements forcés lors de la construction du barrage de Kariba (années 1950)."
+        "timeRange": {
+          "startYear": 1798,
+          "endYear": 1900,
+          "precision": "approximate",
+          "datingNote": "Le début est la plus ancienne mention que nous connaissons, en 1798 ; les sources que nous avons lues ne donnent pas la date de fondation. La fin est placée vers 1900 : l'Encyclopaedia Britannica de 1911 rapporte que la British South Africa Company a soumis les Awemba après les guerres de 1896-1898 contre les Ngoni, sans donner de date."
+        },
+        "dominantPeoples": ["Bemba"],
+        "politicalCenters": [
+          "Lobemba, le pays des Bemba, au nord-est de l'actuelle Zambie"
+        ],
+        "historicalRole": "Le pays des Bemba se trouve au nord-est de l'actuelle Zambie. En 1798, des informateurs du Portugais Francisco José de Lacerda e Almeida lui parlent de la « nation Uemba », au nord, qu'ils disent ennemie des gens du Cazembe. À la fin de 1866, David Livingstone apprend que les premiers chefs du Lobemba ont été Motuna puis Chafunga, et un chef de village lui dit que Chitapanga est le « chef suprême de tous les Abemba ». À la fin du XIXe siècle, la British South Africa Company soumet les Awemba, selon l'article que Harry Johnston, commissaire britannique, consacre en 1910 à l'Afrique centrale britannique."
+      },
+      {
+        "name": "Royaume du Kazembe (Lunda du Luapula)",
+        "period": "Attesté en 1798",
+        "entryType": "polity",
+        "dominantPeoples": ["Lunda"],
+        "politicalCenters": [
+          "Lunda, la capitale du Kazembe, dans la région du Luapula"
+        ],
+        "historicalRole": "Le royaume du Kazembe est un royaume lunda de la région du Luapula. Selon la tradition que rapportent les Portugais Monteiro et Gamitto, résumée par Richard F. Burton en 1873, le Mwata ya Nvo, souverain lunda de l'ouest, envoie vers l'est un capitaine, Canhembo, dont le fils soumet les peuples du pays. Les rois suivants prennent tous le nom de Canhembo ; d'abord vassaux du Mwata ya Nvo, ils deviennent ensuite indépendants. En 1798, le roi Canhembo IV, surnommé Lequeza, reçoit l'expédition portugaise de Francisco José de Lacerda e Almeida, qui meurt dans sa capitale en octobre de la même année."
       },
       {
         "name": "Rhodésie du Nord",
-        "period": "1890-1964",
+        "period": "1911-1964",
         "entryType": "colonial",
         "timeRange": {
-          "startYear": 1890,
+          "startYear": 1911,
           "endYear": 1964,
           "precision": "year"
         },
@@ -488,10 +483,9 @@
           "Tous les peuples zambiens sous domination coloniale"
         ],
         "politicalCenters": [
-          "Livingstone (capitale initiale)",
-          "puis Lusaka (depuis 1935)"
+          "Kalomo (siège de l'administration de la Rhodésie du Nord-Ouest vers 1910)"
         ],
-        "historicalRole": "Colonisation britannique, exploitation minière (cuivre), mouvements nationalistes, indépendance (1964)."
+        "historicalRole": "La Rhodésie du Nord naît le 17 août 1911 de l'union de la Rhodésie du Nord-Est et de la Rhodésie du Nord-Ouest, deux territoires de la British South Africa Company. Du 1er octobre 1953 au 31 décembre 1963, elle forme une fédération avec la Rhodésie du Sud et le Nyassaland. Pendant cette fédération, à partir de 1956, le barrage de Kariba est construit sur le Zambèze, entre les deux Rhodésies. Le 24 octobre 1964, la Rhodésie du Nord devient indépendante sous le nom de Zambia."
       }
     ],
     "majorPeoples": [
@@ -500,10 +494,10 @@
         "selfAppellation": "Aɓemba",
         "exonyms": ["BaBemba (forme bantoue)"],
         "peopleId": "PPL_BEMBA",
-        "mainRegion": "Nord de la Zambie (Northern Province, Luapula Province, Copperbelt)",
+        "mainRegion": "Provinces du Nord, de Luapula, de Muchinga, du Copperbelt et de Lusaka",
         "languages": ["Bemba (bem)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Bemba\" est l'auto-appellation. Le peuple bemba a un royaume traditionnel dirigé par le Chitimukulu."
+        "appellationRemarks": "Les Bemba sont le groupe le plus nombreux du pays : 21,0 % des habitants au recensement de 2010 et 25,4 % en 2022. Leur langue, le bemba, est aussi la langue la plus parlée à la maison, par 34,0 % des habitants en 2022. Les sources écrites anciennes les nomment Uemba en 1798, puis Abemba ou Awemba au XIXe siècle ; à la fin de 1866, David Livingstone note que Chitapanga est le « chef suprême de tous les Abemba »."
       },
       {
         "name": "Tonga",
@@ -513,7 +507,7 @@
         "mainRegion": "Sud de la Zambie (Southern Province, vallée du Zambèze)",
         "languages": ["Tonga (toi)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Tonga\" est largement accepté. Les Tonga ont été déplacés lors de la construction du barrage de Kariba."
+        "appellationRemarks": "Les Tonga sont le deuxième groupe du pays, avec 13,6 % des habitants en 2010 et 14,9 % en 2022. En 2010, ils forment 74,4 % de la population de la province du Sud. À partir de 1956, la construction du barrage de Kariba sur le Zambèze déplace des Tonga de la vallée ; l'anthropologue Elizabeth Colson a étudié ceux de la vallée de Gwembe, du côté zambien."
       },
       {
         "name": "Lozi",
@@ -526,7 +520,7 @@
         "mainRegion": "Ouest de la Zambie (Western Province, ancien Barotseland)",
         "languages": ["Lozi (loz)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Lozi\" est l'auto-appellation. Les Lozi ont un royaume traditionnel (Barotseland) avec le roi (Litunga)."
+        "appellationRemarks": "Les Lozi forment 50,3 % de la population de la province de l'Ouest au recensement de 2010, et 6,5 % des habitants du pays en 2022. Leur ancien nom, Barotse, viendrait des Makololo, qui les ont soumis au XIXe siècle : selon Alfred St Hill Gibbons, en 1910, il est formé sur rotse, « plaine », et voudrait dire « les gens de la plaine ». Le même auteur écrit que ce peuple s'appelait d'abord Aälui."
       },
       {
         "name": "Chewa / Nyanja",
@@ -536,7 +530,7 @@
         "mainRegion": "Est de la Zambie (Eastern Province, Central Province)",
         "languages": ["Chewa / Nyanja (nya)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Chewa\" est l'auto-appellation. \"Nyanja\" signifie \"lac\" et fait référence au lac Malawi. Les Chewa sont principalement au Malawi mais ont une présence importante en Zambie."
+        "appellationRemarks": "Les Chewa forment 39,7 % de la population de la province de l'Est au recensement de 2010, et 8,9 % des habitants du pays en 2022. Le recensement distingue le peuple chewa de la langue nyanja, qu'il range parmi les langues parlées par plusieurs groupes : en 2022, 11,4 % des habitants parlent nyanja à la maison et 6,7 % chewa. Le Gule Wamkulu, leur danse rituelle masquée, est inscrit au patrimoine culturel immatériel de l'humanité au nom du Malawi, du Mozambique et de la Zambie."
       },
       {
         "name": "Lunda",
@@ -546,7 +540,7 @@
         "mainRegion": "Nord-ouest de la Zambie (North-Western Province)",
         "languages": ["Lunda (lun)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le terme \"Lunda\" est l'auto-appellation. Les Lunda font partie de l'ancien empire Lunda qui s'étendait sur l'Angola, la RDC et la Zambie."
+        "appellationRemarks": "Le recensement distingue deux groupes lunda : ceux du Nord-Ouest, 2,6 % des habitants en 2010 et 2,8 % en 2022, et ceux du Luapula, 0,9 % en 2010. En 2010, les Lunda sont le premier groupe de la province du Nord-Ouest, avec 34,5 % de sa population. Dans la région du Luapula, le royaume du Kazembe est lui aussi un royaume lunda, fondé selon la tradition par des envoyés du Mwata ya Nvo."
       }
     ],
     "culture": {
@@ -572,23 +566,32 @@
           "isoCode": "lun"
         },
         {
+          "name": "Kaonde",
+          "isoCode": "kqn"
+        },
+        {
+          "name": "Luvale",
+          "isoCode": "lue"
+        },
+        {
           "name": "anglais",
-          "isoCode": "eng"
+          "isoCode": "eng",
+          "isPrimary": true
         }
       ],
-      "culturalTraditions": "Musique traditionnelle (tamtams, polyrythmes), danses traditionnelles, masques rituels (Gule Wamkulu chez les Chewa), artisanat (poterie, tissage, sculpture), cérémonies royales (Barotseland, royaume Bemba)",
-      "dominantReligions": "Christianisme (protestantisme majoritaire, catholicisme), croyances traditionnelles (syncrétisme)",
-      "lifestyles": "Agriculture (maïs, millet, sorgho), élevage, exploitation minière (cuivre), urbanisation croissante, commerce",
-      "socialOrganization": "Structures traditionnelles (royaumes, chefferies), systèmes matrilinéaires (Bemba, Chewa) et patrilinéaires (Lozi), structures étatiques modernes, république présidentielle",
-      "regionalRelations": "Relations avec les pays d'Afrique australe (SADC), échanges commerciaux, rôle dans la région des Grands Lacs"
+      "culturalTraditions": "Deux traditions de Zambie sont inscrites depuis 2008 sur la Liste représentative du patrimoine culturel immatériel de l'humanité de l'UNESCO, après avoir été proclamées en 2005. Le Gule Wamkulu, partagé avec le Malawi et le Mozambique, est une danse rituelle masquée des Chewa, exécutée par les hommes initiés de la confrérie nyau. La mascarade makishi clôt le mukanda, un rite annuel d'initiation des garçons de huit à douze ans, chez les Luvale, les Chokwe, les Luchazi et les Mbunda des provinces du Nord-Ouest et de l'Ouest.",
+      "dominantReligions": "Le préambule de la Constitution, révisée en 2016, déclare la République « nation chrétienne », tout en garantissant la liberté de conscience et de religion. Le recensement de 2010 rappelle que cette déclaration figurait déjà dans la Constitution de 1996. Au recensement de 2022, 98,0 % des habitants se disent chrétiens, 0,5 % musulmans et 0,2 % de religion traditionnelle africaine ; 1,3 % ne se rattachent à aucune religion. Parmi les chrétiens, les catholiques (17,9 %), les adventistes du septième jour (17,7 %) et les pentecôtistes (17,5 %) sont les plus nombreux.",
+      "lifestyles": "Au recensement de 2022, 55,3 % des habitants vivent en zone rurale et 44,7 % en ville. Près de deux ménages sur trois, 65,9 %, ont une activité agricole : cultures, élevage, pêche ou apiculture. Cette part atteint 88,0 % des ménages ruraux ; seules les provinces du Copperbelt et de Lusaka en comptent moins des deux tiers. Selon le recensement de 2010, l'économie repose surtout sur les mines, l'agriculture, la construction, les transports et les communications ; le pays produit notamment du cuivre et du cobalt.",
+      "socialOrganization": "Le recensement définit l'appartenance ethnique comme le groupe auquel chacun dit se rattacher ; il compte officiellement 73 groupes ethniques en 2010 et plus de 70 en 2022. La Constitution garantit l'institution des chefs et les institutions traditionnelles, qui existent selon la culture, les coutumes et les traditions des peuples concernés (article 165). Elle crée une Chambre des chefs, formée de cinq chefs par province, qui examine notamment les projets de loi touchant la coutume (article 169). La société chewa est matrilinéaire, selon la fiche de l'UNESCO sur le Gule Wamkulu. Chez les Lozi, Alfred St Hill Gibbons décrivait en 1910 un roi qui partage son pouvoir avec sa sœur aînée, la Mokwai.",
+      "regionalRelations": "La Zambie n'a pas d'accès à la mer et touche huit pays : la République démocratique du Congo, la Tanzanie, le Malawi, le Mozambique, le Zimbabwe, le Botswana, la Namibie et l'Angola, selon le recensement de 2010. De 1953 à 1963, la Rhodésie du Nord a formé une fédération avec la Rhodésie du Sud, aujourd'hui le Zimbabwe, et le Nyassaland, aujourd'hui le Malawi. Au recensement de 2022, 0,4 % des habitants n'ont pas la nationalité zambienne ; ils viennent surtout de République démocratique du Congo (26,5 %) et du Malawi (13,0 %)."
     },
     "historicalFacts": {
-      "ancientPeriods": "Présence humaine depuis la préhistoire, migrations bantoues depuis le nord, établissement de royaumes et chefferies.",
-      "middleAges": "Formation de royaumes bantous (Barotseland, royaume Bemba, empire Lunda), commerce transsaharien, contacts avec les Portugais.",
-      "precolonial": "Royaumes et chefferies bantous, expansion territoriale, résistance aux incursions extérieures.",
-      "colonization": "Protectorat britannique (1890), Rhodésie du Nord (1924), exploitation minière (cuivre), mouvements nationalistes (années 1950-1960).",
-      "independenceStruggle": "Mouvement nationaliste (United National Independence Party - UNIP, Kenneth Kaunda), indépendance (24 octobre 1964).",
-      "postIndependence": "République de Zambie (1964), socialisme zambien (1964-1991), multipartisme (1991), développement économique basé sur le cuivre, défis économiques et politiques."
+      "ancientPeriods": null,
+      "middleAges": null,
+      "precolonial": "Plusieurs pouvoirs se partagent le pays avant la colonisation. À l'ouest, les Barotse, aujourd'hui appelés Lozi, occupent la plaine du haut Zambèze depuis le début du XVIIe siècle environ, selon une estimation de 1910 ; au début du XIXe siècle, les Makololo venus du sud les soumettent, puis une révolte rétablit leur dynastie vers 1865. Dans la région du Luapula, le royaume lunda du Kazembe, fondé selon la tradition par des envoyés du Mwata ya Nvo, reçoit une expédition portugaise en 1798. Plus au nord, les informateurs de cette expédition placent la « nation Uemba », c'est-à-dire les Bemba, qu'ils disent ennemie des gens du Cazembe. À l'est, selon l'Encyclopaedia Britannica de 1911, des groupes venus du sud, dont les Ngoni, se sont imposés au XIXe siècle.",
+      "colonization": "Entre 1889 et 1891, de nombreux peuples situés entre les lacs Nyassa et Tanganyika et le Zambèze signent des traités avec la British South Africa Company, la compagnie de Cecil Rhodes. Le 27 juin 1890, Lewanika, roi des Barotse, place son pays sous la protection de la compagnie, qui obtient les droits sur les mines. À la fin du XIXe siècle, la compagnie soumet aussi les Bemba. Le chemin de fer atteint les mines de cuivre de Broken Hill, aujourd'hui Kabwe, en 1906, puis la frontière du Congo belge en 1910. Les deux territoires de la compagnie au nord du Zambèze forment la Rhodésie du Nord en 1911. De 1953 à 1963, celle-ci est fédérée avec la Rhodésie du Sud et le Nyassaland ; à partir de 1956, le barrage de Kariba est construit sur le Zambèze et des Tonga de la vallée sont déplacés.",
+      "independenceStruggle": "Le nom Zambia apparaît en octobre 1958 avec un parti indépendantiste, le Zambia African National Congress, lancé à Broken Hill, selon un article de 1999 que rapporte Henry Kyambalesa. La Rhodésie du Nord devient indépendante le 24 octobre 1964, l'année qui suit la dissolution de la fédération. Le préambule de la Constitution rend hommage aux combattants de la liberté qui ont lutté pour l'indépendance.",
+      "postIndependence": "Le 24 octobre 1964, la Zambie devient une république. Sa Constitution actuelle date de 1991 et a été révisée en 2016. Elle définit la République comme un État unitaire, démocratique et multipartite, à la fois multiethnique, multiracial, multireligieux et multiculturel (article 4). L'anglais est la langue officielle, et l'État s'engage à respecter et à protéger la diversité des langues du pays (article 258). Le recensement de 2022 compte 19 693 423 habitants, contre 13 092 666 en 2010."
     },
     "sources": [
       {
@@ -631,7 +634,7 @@
         "url": "https://web.archive.org/web/20260115/https://www.cia.gov/the-world-factbook/countries/zambia/",
         "tier": "official",
         "source_kind": "government",
-        "notes": "Répartition des groupes ethniques d'après le recensement de 2010, lue dans une copie archivée de janvier 2026 ; la publication a cessé d'être mise à jour début 2026. Les Lunda y sont comptés pour le nord-ouest seulement ; aucune fiche de notre projet ne correspond sans ambiguïté aux Lunda du nord-ouest ; la fiche Lala-Lamba décrit une désignation commune et non un peuple, d'où l'absence de lien pour les Lamba."
+        "notes": "Répartition des groupes ethniques d'après le recensement de 2010, lue dans une copie archivée de janvier 2026 ; la publication a cessé d'être mise à jour début 2026."
       },
       {
         "title": "UNSD M49 – Codes normalisés des pays et noms français",
@@ -644,6 +647,160 @@
         "url": "https://www.unfpa.org/data/world-population/ZM",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Zambia 2022 Census of Population and Housing: National Analytical Report",
+        "author": "Zambia Statistics Agency",
+        "year": 2025,
+        "url": "https://www.zamstats.gov.zm/wp-content/uploads/2025/08/2022-Census-National-Analytical-Report.pdf",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. 12, 14, 36, 45, 160-163 et 180",
+        "notes": "Rapport de l'office national de la statistique de Zambie, publié en 2025, lu dans le PDF du site officiel. Pages 12 et 14 : 19 693 423 habitants en 2022, contre 13 092 666 en 2010, dont 55,3 % en zone rurale et 44,7 % en ville. Pages 36 et 45 : 98,0 % de chrétiens, 0,5 % de musulmans, 0,2 % de religion traditionnelle africaine et 1,3 % sans religion ; catholiques (17,9 %), adventistes (17,7 %) et pentecôtistes (17,5 %) sont les plus nombreux parmi les chrétiens ; les habitants non zambiens, 0,4 %, viennent surtout de République démocratique du Congo et du Malawi. Pages 160 et 161 : le pays compte plus de 70 groupes ethniques ; l'appartenance ethnique est le groupe auquel chacun dit se rattacher ; l'anglais est la langue officielle et sept langues régionales sont reconnues ; le bemba est la langue la plus parlée à la maison (34,0 %). Page 163, figure 10.4 : répartition de la population par groupe ethnique, de Bemba (25,4 %) aux autres groupes de moins de 1 % chacun (9,4 %). Page 180 : 65,9 % des ménages ont une activité agricole, 88,0 % en zone rurale."
+      },
+      {
+        "title": "Zambia 2010 Census of Population and Housing: National Analytical Report",
+        "author": "Central Statistical Office (Zambie)",
+        "year": 2012,
+        "url": "https://catalog.ihsn.org/catalog/4124/download/55311",
+        "tier": "official",
+        "source_kind": "official_statistics",
+        "page": "p. 1, 63-64 et 67",
+        "notes": "Rapport de l'office national de la statistique de Zambie, publié en décembre 2012, lu dans le PDF du site officiel. Page 1 : le pays n'a pas d'accès à la mer et touche huit pays ; l'anglais est la langue officielle ; la Zambie est officiellement une nation chrétienne selon la Constitution de 1996 ; l'économie repose surtout sur les mines, l'agriculture, la construction, les transports et les communications, avec une production de cuivre et de cobalt. Pages 63 et 64 : le pays compte officiellement 73 groupes ethniques ; le nyanja est rangé parmi les langues parlées par plusieurs groupes ; les Lala sont le premier groupe de la province du Centre (20,3 %), les Chewa de l'Est (39,7 %), les Lunda du Nord-Ouest (34,5 %), les Tonga du Sud (74,4 %) et les Lozi de l'Ouest (50,3 %). Page 67, tableau 10.6 : répartition de la population par groupe ethnique, avec les Bemba (21,0 %), les Tonga (13,6 %), les Lunda du Nord-Ouest (2,6 %) et ceux du Luapula (0,9 %)."
+      },
+      {
+        "title": "Constitution de la Zambie de 1991, révisée en 2016, version anglaise, Constitute Project",
+        "author": "République de Zambie",
+        "year": 2016,
+        "url": "https://www.constituteproject.org/constitution/Zambia_2016",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Texte anglais de la Constitution, lu sur le site du Constitute Project. Le préambule déclare la République « a Christian Nation » tout en garantissant la liberté de conscience, de croyance et de religion, et rend hommage aux « freedom fighters » de l'indépendance. L'article 4 décrit un État « unitary, indivisible, multi-ethnic, multi-racial, multi-religious, multi-cultural and multi-party democratic ». L'article 165 garantit l'institution des chefs ; l'article 169 crée la Chambre des chefs, avec cinq chefs par province ; l'article 258 fait de l'anglais la langue officielle et engage l'État à protéger la diversité des langues."
+      },
+      {
+        "title": "UNESCO ICH — Gule Wamkulu",
+        "url": "https://ich.unesco.org/en/RL/gule-wamkulu-00142",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche de la Liste représentative du patrimoine culturel immatériel de l'humanité, lue en ligne. Élément inscrit en 2008 au nom du Malawi, du Mozambique et de la Zambie, après une proclamation en 2005. Le Gule Wamkulu est une danse rituelle masquée des Chewa, exécutée par les hommes initiés de la confrérie nyau, dans une société chewa matrilinéaire."
+      },
+      {
+        "title": "La mascarade Makishi, Liste représentative du patrimoine culturel immatériel de l'humanité, UNESCO",
+        "author": "UNESCO",
+        "year": 2008,
+        "url": "https://ich.unesco.org/fr/RL/la-mascarade-makishi-00140",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche de l'UNESCO lue en ligne, en français. Élément de la Zambie inscrit en 2008, après une proclamation en 2005. La mascarade clôt le mukanda, « un rituel annuel d'initiation pour les garçons de huit à douze ans », célébré par les communautés auxquelles appartiennent les Luvale, les Chokwe, les Luchazi et les Mbunda, établis dans les provinces du Nord-Ouest et de l'Ouest."
+      },
+      {
+        "title": "Encyclopaedia Britannica, 11e édition, vol. 3 : Barotse, Barotseland",
+        "author": "Alfred St Hill Gibbons",
+        "year": 1910,
+        "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Barotse_and_Barotseland",
+        "tier": "referenced",
+        "source_kind": "encyclopedia",
+        "page": "p. 424-426",
+        "notes": "Article d'encyclopédie paru en 1910-1911, lu dans la transcription de Wikisource qui reproduit les pages imprimées. Il porte le regard d'un officier britannique de l'époque coloniale. Page 425 : les Barotse, d'abord appelés Aälui, occupent la plaine du Zambèze depuis vingt-deux règnes, soit le début du XVIIe siècle environ, après avoir vécu sur la Kabompo ; les Makololo les soumettent au début du XIXe siècle, jusqu'à une révolte vers 1865 ; ce sont eux qui leur auraient donné le nom de Barotse, formé sur rotse, « plaine » ; le roi partage son pouvoir avec la Mokwai, sa sœur aînée, qui gouverne depuis Nalolo, la capitale étant Lialui ; le christianisme arrive en 1884 avec François Coillard. Page 426 : Kalomo est le siège de l'administration ; le chemin de fer atteint les mines de cuivre de Broken Hill en 1906 et la frontière du Congo belge en 1910."
+      },
+      {
+        "title": "Rhodesia, dans Encyclopaedia Britannica, 11e édition, vol. 23",
+        "author": "Encyclopaedia Britannica",
+        "year": 1911,
+        "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Rhodesia",
+        "tier": "referenced",
+        "source_kind": "encyclopedia",
+        "page": "p. 264 et 266",
+        "notes": "Lu dans la transcription de Wikisource. Article de l'époque coloniale, écrit du point de vue britannique. Page 264 : au nord du Zambèze, l'ouest est gouverné par les Barotse et l'est est passé sous la domination de groupes venus du sud, dont les « Agoni », les Ngoni, sont les plus puissants. Page 266 : entre 1889 et 1891, de nombreux peuples entre les lacs Nyassa et Tanganyika et le Zambèze passent des traités avec la British South Africa Company ; le 27 juin 1890, Lewanika, roi des Barotse, place son pays sous la protection de la compagnie, qui obtient les droits sur les mines et s'engage à ne pas intervenir dans l'administration intérieure."
+      },
+      {
+        "title": "British Central Africa, dans Encyclopaedia Britannica, 11e édition, vol. 4",
+        "author": "Harry Johnston",
+        "year": 1910,
+        "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/British_Central_Africa",
+        "tier": "referenced",
+        "source_kind": "encyclopedia",
+        "page": "p. 597",
+        "notes": "Article d'encyclopédie paru en 1910-1911, lu dans la transcription de Wikisource. Son auteur a été commissaire britannique dans la région, et le texte porte le regard colonial de l'époque. Après les guerres de 1896-1898 contre les Ngoni, la British South Africa Company a aussi soumis les « Awemba », c'est-à-dire les Bemba."
+      },
+      {
+        "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+        "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+        "year": 1873,
+        "url": "https://archive.org/details/landsofcazembel00roya",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 38-39, 99 et 103-104",
+        "notes": "Londres, John Murray pour la Royal Geographical Society, 1873, lu dans le texte de la numérisation d'Internet Archive. Pages 38 et 39 : selon Monteiro et Gamitto, Lunda, la capitale du Cazembe, se trouve au bord d'un lac de la région du Luapula. Page 99 : au nord vit la « Uemba nation », ennemie des gens du Cazembe. Pages 103 et 104 : l'expédition arrive à la capitale en octobre 1798 et Lacerda y meurt le même mois ; Burton résume la tradition rapportée par Monteiro et Gamitto : le Mwata ya Nvo envoie vers l'est le capitaine Canhembo, dont les successeurs, d'abord vassaux, deviennent indépendants ; Canhembo IV, surnommé Lequeza, reçoit Lacerda."
+      },
+      {
+        "title": "The Last Journals of David Livingstone in Central Africa, vol. I",
+        "author": "David Livingstone, édité par Horace Waller",
+        "year": 1874,
+        "url": "https://archive.org/details/lastjournalsofda01livi",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "page": "p. 165 et 168",
+        "notes": "Londres, John Murray, 1874, lu dans le texte de la numérisation d'Internet Archive. Page 165 : un informateur dit à Livingstone que le premier chef du Lobemba fut Motuna, puis Chafunga. Page 168, le 31 décembre 1866 : le chef de village Chitembo lui dit que « Chitapanga is paramount chief of all the Abemba »."
+      },
+      {
+        "title": "Risk and Vulnerability in an Untamed Landscape: The Zimbabwean Tonga in the aftermath of the Kariba Dam Induced Displacements, 1956-1980s",
+        "author": "Terence M. Mashingaidze",
+        "year": 2020,
+        "url": "https://www.jstage.jst.go.jp/article/jahss/9/1/9_21/_pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 22-24",
+        "notes": "Article paru dans le Journal of Human Security Studies, vol. 9, no 1, lu dans le PDF de la plateforme J-STAGE. Il étudie les Tonga de la rive zimbabwéenne déplacés par la construction du barrage de Kariba, commencée en 1956, pendant la fédération qui réunit de 1953 à 1963 la Rhodésie du Nord, la Rhodésie du Sud et le Nyassaland. Il renvoie, pour la rive zambienne, au livre d'Elizabeth Colson, The Social Consequences of Resettlement: The Impact of the Kariba Resettlement Upon the Gwembe Tonga."
+      },
+      {
+        "title": "Glottolog — Bemba (Zambia) (bemb1257)",
+        "url": "https://glottolog.org/resource/languoid/id/bemb1257",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de Glottolog, lue en ligne : langue bantoue de code ISO 639-3 bem."
+      },
+      {
+        "title": "Glottolog — Tonga (Zambia) (tong1318)",
+        "url": "https://glottolog.org/resource/languoid/id/tong1318",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de Glottolog, lue en ligne : langue bantoue de code ISO 639-3 toi."
+      },
+      {
+        "title": "Glottolog — Lozi (lozi1239)",
+        "url": "https://glottolog.org/resource/languoid/id/lozi1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de Glottolog, lue en ligne : langue bantoue de code ISO 639-3 loz, classée avec les langues sotho-tswana."
+      },
+      {
+        "title": "Glottolog — Nyanja (nyan1308)",
+        "url": "https://glottolog.org/resource/languoid/id/nyan1308",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de Glottolog, lue en ligne : langue bantoue de code ISO 639-3 nya."
+      },
+      {
+        "title": "Glottolog — Lunda (lund1266)",
+        "url": "https://glottolog.org/resource/languoid/id/lund1266",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de Glottolog, lue en ligne : langue bantoue de code ISO 639-3 lun."
+      },
+      {
+        "title": "Glottolog — Kaonde (kaon1241)",
+        "url": "https://glottolog.org/resource/languoid/id/kaon1241",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de Glottolog, lue en ligne : langue bantoue de code ISO 639-3 kqn."
+      },
+      {
+        "title": "Glottolog — Luvale (luva1239)",
+        "url": "https://glottolog.org/resource/languoid/id/luva1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de Glottolog, lue en ligne : langue bantoue de code ISO 639-3 lue."
       }
     ],
     "demographics": {
@@ -654,103 +811,127 @@
         {
           "name": "Bemba",
           "peopleId": "PPL_BEMBA",
-          "percentageInCountry": 21,
-          "region": "Nord (Northern Province, Luapula, Copperbelt)",
+          "referenceYear": 2022,
+          "percentageInCountry": 25.4,
           "languageFamily": "FLG_BANTU"
         },
         {
           "name": "Tonga",
           "peopleId": "PPL_TONGA_ZAMBIA",
-          "percentageInCountry": 13.6
+          "referenceYear": 2022,
+          "percentageInCountry": 14.9
         },
         {
           "name": "Chewa",
           "peopleId": "PPL_CHEWA",
-          "percentageInCountry": 7.4
+          "referenceYear": 2022,
+          "percentageInCountry": 8.9
         },
         {
           "name": "Lozi",
           "peopleId": "PPL_LOZI",
-          "percentageInCountry": 5.7
-        },
-        {
-          "name": "Nsenga",
-          "peopleId": "PPL_NSENGA",
-          "percentageInCountry": 5.3
+          "referenceYear": 2022,
+          "percentageInCountry": 6.5
         },
         {
           "name": "Tumbuka",
           "peopleId": "PPL_TUMBUKA",
-          "percentageInCountry": 4.4
+          "referenceYear": 2022,
+          "percentageInCountry": 4.2
+        },
+        {
+          "name": "Nsenga",
+          "peopleId": "PPL_NSENGA",
+          "referenceYear": 2022,
+          "percentageInCountry": 4.0
         },
         {
           "name": "Ngoni",
           "peopleId": "PPL_NGONI",
-          "percentageInCountry": 4
-        },
-        {
-          "name": "Lala",
-          "peopleId": "PPL_LALA",
-          "percentageInCountry": 3.1
+          "referenceYear": 2022,
+          "percentageInCountry": 3.2
         },
         {
           "name": "Kaonde",
           "peopleId": "PPL_KAONDE",
-          "percentageInCountry": 2.9
+          "referenceYear": 2022,
+          "percentageInCountry": 3.1
+        },
+        {
+          "name": "Lunda (Nord-Ouest)",
+          "peopleId": "PPL_LUNDA",
+          "referenceYear": 2022,
+          "percentageInCountry": 2.8
         },
         {
           "name": "Namwanga",
           "peopleId": "PPL_NAMWANGA",
-          "percentageInCountry": 2.8
+          "referenceYear": 2022,
+          "percentageInCountry": 2.7
         },
         {
-          "name": "Lunda (nord-ouest)",
-          "percentageInCountry": 2.6
-        },
-        {
-          "name": "Mambwe",
-          "peopleId": "PPL_MAMBWE",
+          "name": "Lala",
+          "peopleId": "PPL_LALA",
+          "referenceYear": 2022,
           "percentageInCountry": 2.5
         },
         {
           "name": "Luvale",
           "peopleId": "PPL_LUVALE",
-          "percentageInCountry": 2.2
+          "referenceYear": 2022,
+          "percentageInCountry": 2.3
+        },
+        {
+          "name": "Mambwe",
+          "peopleId": "PPL_MAMBWE",
+          "referenceYear": 2022,
+          "percentageInCountry": 2.3
         },
         {
           "name": "Lamba",
-          "percentageInCountry": 2.1
-        },
-        {
-          "name": "Ushi",
-          "peopleId": "PPL_USHI",
+          "peopleId": "PPL_LAMBA_ZAMBIA",
+          "referenceYear": 2022,
           "percentageInCountry": 1.9
         },
         {
           "name": "Lenje",
           "peopleId": "PPL_LENJE",
-          "percentageInCountry": 1.6
+          "referenceYear": 2022,
+          "percentageInCountry": 1.5
+        },
+        {
+          "name": "Habitants d'appartenance non zambienne",
+          "referenceYear": 2022,
+          "percentageInCountry": 1.1
         },
         {
           "name": "Bisa",
           "peopleId": "PPL_BISA",
-          "percentageInCountry": 1.6
+          "referenceYear": 2022,
+          "percentageInCountry": 1.1
         },
         {
           "name": "Mbunda",
           "peopleId": "PPL_MBUNDA",
-          "percentageInCountry": 1.2
+          "referenceYear": 2022,
+          "percentageInCountry": 1.1
         },
         {
-          "name": "Autres groupes ethniques",
-          "percentageInCountry": 13.8,
-          "region": "Divers"
+          "name": "Senga",
+          "peopleId": "PPL_SENGA",
+          "referenceYear": 2022,
+          "percentageInCountry": 1.0
         },
         {
-          "name": "Non précisé",
-          "percentageInCountry": 0.4
+          "name": "Autres groupes, de moins de 1 % chacun",
+          "referenceYear": 2022,
+          "percentageInCountry": 9.4
         }
       ]
+    },
+    "searchAnswer": {
+      "lead": "La Zambie est un pays d'Afrique australe sans accès à la mer. Depuis son indépendance en 1964, elle porte un nom tiré du fleuve Zambèze ; elle s'appelait avant Rhodésie du Nord.",
+      "followUp": "D'où vient le nom du fleuve Zambèze, que les sources expliquent de plusieurs façons ?"
     }
   }
 }

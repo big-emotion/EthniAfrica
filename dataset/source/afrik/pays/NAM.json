@@ -3,9 +3,9 @@
   "nameFr": "Namibie",
   "nameEn": "Namibia",
   "nameOfficial": "République de Namibie (Republic of Namibia, Republiek van Namibië)",
-  "summary": "La Namibie porte le nom du désert du Namib, « le vaste lieu » en langue nama. Peuplée de longue date par les Khoïsan puis par les migrations bantoues, elle fut colonie allemande du Sud-Ouest africain avant l'administration sud-africaine. Ovambo, Kavango, Herero, Damara, Nama et Himba y composent la population.",
-  "etymology": "Le nom \"Namibie\" viendrait du désert du Namib, qui borde la côte atlantique du pays. \"Namib\" est rapporté comme signifiant \"vaste lieu\" ou \"endroit vide\" en langue nama, selon des traductions qui varient. Le 12 juin 1968, l'Assemblée générale des Nations unies décide que le Territoire, jusque-là appelé Afrique du Sud-Ouest, sera désormais appelé Namibie ; le nom devient celui de l'État à l'indépendance en 1990. Auparavant, le territoire était appelé \"Afrique du Sud-Ouest\" (South West Africa, Suidwes-Afrika) pendant la colonisation sud-africaine.",
-  "nameOriginActor": "Le nom \"Namibie\" vient du désert du Namib, nommé par les Nama. Les Nations unies l'ont adopté pour le Territoire le 12 juin 1968 et il est devenu celui de l'État à l'indépendance en 1990, à la place de \"Afrique du Sud-Ouest\" (nom colonial sud-africain). Le nom \"Namibie\" a été proposé par les nationalistes namibiens.",
+  "summary": "La Namibie, pays d'Afrique australe, tient son nom du désert du Namib, un mot qui désigne un vaste espace ouvert en khoekhoegowab, la langue des Nama et des Damara, selon l'Atlas of Namibia. Colonie allemande sous le nom de Sud-Ouest africain allemand, puis territoire administré par l'Afrique du Sud sous le nom de Sud-Ouest africain, elle est appelée Namibie par les Nations unies en 1968 et devient indépendante le 21 mars 1990. Au recensement de 2023, la moitié des habitants se rattachent aux groupes ovambo, qui se nomment Aawambo.",
+  "etymology": "Le nom Namibie est formé sur Namib, le nom du désert qui longe la côte atlantique du pays. Selon l'Atlas of Namibia, publié à Windhoek en 2022, le mot Namib désigne un vaste espace ouvert en khoekhoegowab, la langue des Nama et des Damara. Le 12 juin 1968, la résolution 2372 de l'Assemblée générale des Nations unies proclame que, « conformément aux vœux de son peuple, le Sud-Ouest africain sera désormais appelé Namibie ». Le nom devient celui de l'État indépendant le 21 mars 1990.",
+  "nameOriginActor": "Le mot Namib vient du khoekhoegowab, la langue des Nama et des Damara, selon l'Atlas of Namibia. L'Assemblée générale des Nations unies a adopté le nom Namibie en 1968, « conformément aux vœux de son peuple », à la place de Sud-Ouest africain. Selon le journal The Namibian, l'idée viendrait du militant namibien Mburumba Kerina, qui demandait que le pays s'appelle Republic of Namib.",
   "nameHistory": {
     "summary": "Le nom Namibie désigne un pays d'Afrique australe, la République de Namibie, qui tient son nom du désert du Namib, sur sa côte atlantique. D'autres noms existent : le territoire s'est appelé Sud-Ouest africain allemand, Deutsch-Südwestafrika, puis Sud-Ouest africain, South West Africa en anglais, jusqu'en 1968. Les sources que nous avons lues sur l'origine de ces noms sont peu nombreuses ; nous les présentons plus bas.",
     "names": [
@@ -77,7 +77,7 @@
               "label": "12 juin 1968"
             },
             "era": "colonial",
-            "statement": "Le nom Namibie apparaît dans la résolution 2372 de l'Assemblée générale des Nations unies, qui proclame que, « conformément aux vœux de son peuple, le Sud-Ouest africain sera désormais appelé Namibie ». C'est la plus ancienne trace écrite de ce nom que le projet a lue. Le pays et ses peuples existaient bien avant ce nom.",
+            "statement": "Le nom Namibie apparaît dans la résolution 2372 de l'Assemblée générale des Nations unies, qui proclame que, « conformément aux vœux de son peuple, le Sud-Ouest africain sera désormais appelé Namibie ». C'est la plus ancienne trace écrite de ce nom que nous ayons lue. Le pays et ses peuples existaient bien avant ce nom.",
             "formAsWritten": "Namibie",
             "birth": true,
             "sources": [
@@ -273,8 +273,57 @@
         "selfGiven": false,
         "languageOfOrigin": "deu",
         "namedBy": null,
-        "periodLabel": "Jusqu'en 1915",
+        "periodLabel": "De 1884 à 1915",
         "accounts": [
+          {
+            "period": {
+              "from": 1884,
+              "to": 1884,
+              "label": "7 août 1884"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sud-Ouest africain allemand, German South-West Africa en anglais, est celui du protectorat proclamé le 7 août 1884, selon le Mémorial de la Shoah.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "The genocide of the Herero and Nama",
+                "author": "Mémorial de la Shoah",
+                "year": null,
+                "url": "https://www.memorialdelashoah.org/en/archives-et-documentation/genocides-xx-siecle/genocide-herero-nama.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Dossier historique du Mémorial de la Shoah, à Paris, lu dans sa version anglaise. « The protectorate of German South-West Africa was proclaimed on 7 August 1884. » Dans les années 1880, Hendrik Witbooi réunit « the Nama and Oorlam clans in the south ». Le 12 janvier 1904, les Herero d'Okahandja attaquent les fermes allemandes. Le 2 octobre 1904, le général Lothar von Trotha donne un ordre d'extermination. Des camps de concentration sont ouverts en 1905, à Windhoek, Swakopmund et Shark Island. « Between 1904 and 1908, about 80% of the Herero people and 50% of the Nama people living in what is now Namibia were exterminated by the forces of the Second Reich. » Samuel Maharero, mort en exil, est enterré à Okahandja le 26 août 1923 ; chez les Nama, une pierre dédiée à Hendrik Witbooi, inaugurée dans les années 1930, marque le premier Witbooi Day."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1891,
+              "label": "1891"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sud-Ouest africain allemand est écrit « Deutsch-Südwest-Afrika » dans le titre du récit de voyage du botaniste suisse Hans Schinz, publié en 1891. Le même titre parle des protectorats allemands du Grand Namaland et du pays herero.",
+            "formAsWritten": "Deutsch-Südwest-Afrika",
+            "actors": [
+              {
+                "name": "Hans Schinz",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Deutsch-Südwest-Afrika. Forschungsreisen durch die deutschen Schutzgebiete Gross-Nama- und Hereroland, nach dem Kunene, dem Ngami-See und der Kalaxari, 1884-1887",
+                "author": "Hans Schinz",
+                "year": 1891,
+                "url": "https://archive.org/details/deutschsdwesta00schi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Récit de voyage de la période coloniale allemande, publié à Oldenburg en 1891, lu dans la numérisation d'Internet Archive faite sur l'exemplaire des bibliothèques de l'université de Californie. Le titre nomme le pays « Deutsch-Südwest-Afrika » et parle des « deutschen Schutzgebiete », les protectorats allemands, du Grand Namaland et du pays herero."
+              }
+            ]
+          },
           {
             "period": {
               "from": null,
@@ -282,7 +331,7 @@
               "label": "Jusqu'à la conquête sud-africaine de 1914-1915"
             },
             "era": "colonial",
-            "statement": "Le nom Sud-Ouest africain allemand, Deutsch-Südwestafrika en allemand, désigne la colonie allemande que les troupes sud-africaines envahissent pendant la première guerre mondiale, selon Michael Crowder. Nous n'avons pas encore retrouvé la plus ancienne trace de ce nom.",
+            "statement": "Le nom Sud-Ouest africain allemand, Deutsch-Südwestafrika en allemand, désigne la colonie allemande que les troupes sud-africaines envahissent pendant la première guerre mondiale, selon Michael Crowder.",
             "aspect": "usage",
             "sources": [
               {
@@ -314,54 +363,43 @@
   "content": {
     "historicalNames": {
       "formerNames": [
+        "Sud-Ouest africain allemand (1884-1915)",
         "Deutsch-Südwestafrika (1884-1915)",
-        "Afrique du Sud-Ouest (1915-1990)"
+        "Sud-Ouest africain (1915-1968)"
       ],
-      "antiquity": "Le territoire actuel de la Namibie était peuplé de peuples khoïsan (San, Nama) et de peuples bantous (Herero, Ovambo). Les peuples autochtones avaient leurs propres noms pour leurs territoires.",
-      "middleAges": "Présence continue des peuples khoïsan et bantous. Migrations bantoues vers la région. Pas de nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Développement des chefferies bantoues (Ovambo, Herero, Kavango) et des groupes khoïsan (Nama, San). Commerce régional. Les Européens utilisaient le terme \"Afrique du Sud-Ouest\" pour désigner la région.",
-      "colonization": "1884-1915 : Colonie allemande du Sud-Ouest africain (Deutsch-Südwestafrika). 1915-1990 : Mandat puis colonie sud-africaine (Afrique du Sud-Ouest, South West Africa, Suidwes-Afrika). Le nom \"Afrique du Sud-Ouest\" est utilisé par les Allemands puis par les Sud-Africains.",
-      "contemporary": "1990 : Indépendance (21 mars 1990), proclamation de la République de Namibie. Le nom \"Namibie\" est officialisé pour remplacer \"Afrique du Sud-Ouest\"."
+      "antiquity": "Pour ces périodes très anciennes, nous n'avons pas trouvé de nom donné à l'ensemble du territoire. Selon l'Atlas of Namibia, les San et leurs ancêtres en ont sans doute été les seuls habitants pendant des dizaines de milliers d'années.",
+      "middleAges": "Selon l'Atlas of Namibia, des agriculteurs et des éleveurs de langue bantoue, ainsi que des éleveurs khoekhoe, commencent sans doute à entrer en Namibie il y a environ 1 200 ans. Nous n'avons pas trouvé de nom de cette époque pour l'ensemble du pays.",
+      "precolonial": "Avant la colonisation, les noms connus désignent des régions et des peuples plutôt que le pays entier. Une carte allemande de 1884, dressée par Bruno Hassenstein, appelle Gross-Namaqua-Land, le Grand Namaqualand, l'intérieur du sud du pays actuel. En 1891, le botaniste suisse Hans Schinz parle encore du Grand Namaland et du pays herero dans le titre de son récit de voyage.",
+      "colonization": "Le protectorat du Sud-Ouest africain allemand est proclamé le 7 août 1884, selon le Mémorial de la Shoah. Pendant la première guerre mondiale, l'Union sud-africaine conquiert ce territoire, puis l'administre sous mandat de la Société des Nations sous le nom de Sud-Ouest africain, South West Africa en anglais, selon Michael Crowder. Le 12 juin 1968, l'Assemblée générale des Nations unies proclame que le Sud-Ouest africain « sera désormais appelé Namibie ».",
+      "contemporary": "Le nom Namibie devient celui de l'État indépendant le 21 mars 1990. Les Nations unies rapportent que l'Assemblée constituante élit cette année-là Sam Nujoma président de la République."
     },
     "kingdoms": [
       {
-        "name": "Peuples khoïsan",
-        "period": "Préhistorique - présent",
+        "name": "Royaume des Ovakwanyama",
+        "period": "Jusqu'en 1915",
         "entryType": "polity",
-        "dominantPeoples": ["San", "Nama"],
-        "politicalCenters": ["Groupes nomades et semi-nomades"],
-        "historicalRole": "Peuples autochtones de la Namibie, chasseurs-cueilleurs (San), pasteurs (Nama), résistance à la colonisation."
+        "dominantPeoples": ["Ovakwanyama"],
+        "politicalCenters": [],
+        "historicalRole": "Les Ovakwanyama sont l'un des groupes ovambo ; leur langue, l'oshikwanyama, est parlée en Angola et en Namibie, selon Glottolog. Selon l'Atlas of Namibia, les Portugais battent leur roi, Mandume ya Ndemufayo, en 1915 ; environ 25 000 Ovakwanyama quittent alors l'Angola pour le nord de la Namibie."
       },
       {
-        "name": "Chefferies Ovambo",
-        "period": "Précolonial - présent",
-        "entryType": "polity",
-        "dominantPeoples": ["Ovambo"],
-        "politicalCenters": ["Chefferies traditionnelles (nord de la Namibie)"],
-        "historicalRole": "Chefferies Ovambo, agriculture et élevage, résistance à la colonisation, rôle majeur dans la lutte pour l'indépendance (SWAPO)."
-      },
-      {
-        "name": "Chefferies Herero",
-        "period": "Précolonial - présent",
+        "name": "Chefferie herero d'Okahandja",
+        "period": "Début du XXe siècle",
         "entryType": "polity",
         "dominantPeoples": ["Herero"],
-        "politicalCenters": [
-          "Chefferies traditionnelles (centre de la Namibie)"
-        ],
-        "historicalRole": "Chefferies Herero, tradition pastorale forte, résistance à la colonisation allemande (guerre des Herero, 1904-1908, génocide)."
+        "politicalCenters": ["Okahandja"],
+        "historicalRole": "Samuel Maharero, fils de Kamaharero, est un chef herero du centre du pays au début du XXe siècle, selon le Mémorial de la Shoah. Le 12 janvier 1904, les Herero d'Okahandja attaquent les fermes et les postes allemands. Samuel Maharero meurt en exil et il est enterré à Okahandja le 26 août 1923."
       },
       {
-        "name": "Chefferies Kavango",
-        "period": "Précolonial - présent",
+        "name": "Nama et Oorlam du Sud sous Hendrik Witbooi",
+        "period": "Années 1880 - début du XXe siècle",
         "entryType": "polity",
-        "dominantPeoples": ["Kavango"],
-        "politicalCenters": [
-          "Chefferies traditionnelles (nord-est de la Namibie)"
-        ],
-        "historicalRole": "Chefferies Kavango, agriculture et élevage, traditions culturelles."
+        "dominantPeoples": ["Nama", "Oorlam"],
+        "politicalCenters": [],
+        "historicalRole": "Les Oorlam sont venus en grand nombre de la région du Cap vers le centre et le sud de la Namibie entre 1730 et 1870, selon l'Atlas of Namibia. Dans les années 1880, Hendrik Witbooi réunit les clans nama et oorlam du Sud, selon le Mémorial de la Shoah. Il s'allie d'abord aux Allemands, puis se retourne contre eux."
       },
       {
-        "name": "Colonie allemande du Sud-Ouest africain",
+        "name": "Sud-Ouest africain allemand",
         "period": "1884 - 1915",
         "entryType": "colonial",
         "timeRange": {
@@ -369,14 +407,12 @@
           "endYear": 1915,
           "precision": "year"
         },
-        "dominantPeoples": [
-          "Tous les peuples namibiens sous domination coloniale allemande"
-        ],
-        "politicalCenters": ["Windhoek (capitale coloniale)"],
-        "historicalRole": "Colonisation allemande, guerre des Herero (1904-1908, génocide), résistance des peuples autochtones, développement de l'économie coloniale."
+        "dominantPeoples": ["Peuples de Namibie sous domination allemande"],
+        "politicalCenters": [],
+        "historicalRole": "Le protectorat allemand est proclamé le 7 août 1884, selon le Mémorial de la Shoah. De 1904 à 1908, la guerre menée contre les Herero et les Nama tue environ 80 % des Herero et 50 % des Nama. En 2021, l'Allemagne déclare qu'elle appelle désormais officiellement ces faits un génocide. Les troupes sud-africaines conquièrent la colonie pendant la première guerre mondiale, selon Michael Crowder."
       },
       {
-        "name": "Colonie sud-africaine (Afrique du Sud-Ouest)",
+        "name": "Sud-Ouest africain sous administration sud-africaine",
         "period": "1915 - 1990",
         "entryType": "colonial",
         "timeRange": {
@@ -384,179 +420,155 @@
           "endYear": 1990,
           "precision": "year"
         },
-        "dominantPeoples": [
-          "Tous les peuples namibiens sous domination coloniale sud-africaine"
-        ],
-        "politicalCenters": ["Windhoek (capitale coloniale)"],
-        "historicalRole": "Colonisation sud-africaine, apartheid, résistance namibienne (SWAPO), guerre d'indépendance (1966-1990), mouvements nationalistes."
+        "dominantPeoples": ["Peuples de Namibie sous domination sud-africaine"],
+        "politicalCenters": [],
+        "historicalRole": "Après la première guerre mondiale, l'Union sud-africaine administre le Sud-Ouest africain sous mandat de la Société des Nations, selon Michael Crowder. En 1966, l'Assemblée générale des Nations unies met fin à ce mandat, mais l'Afrique du Sud garde le territoire jusqu'à l'indépendance du 21 mars 1990, selon les Nations unies."
       }
     ],
     "majorPeoples": [
       {
         "name": "Ovambo",
-        "selfAppellation": "Ovambo",
-        "exonyms": [
-          "Ovambo (terme utilisé par les Européens)",
-          "\"Ambo\" (variante)"
-        ],
+        "selfAppellation": "Aawambo",
+        "exonyms": ["Ovambo", "Owambo"],
         "peopleId": "PPL_OVAMBO",
         "mainRegion": "Nord de la Namibie",
-        "languages": ["Ovambo (kwn", "ISO 639-3)", "anglais"],
+        "languages": ["oshikwanyama (kua)", "oshindonga (ndo)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Ovambo\" est l'auto-appellation. Pas de terme péjoratif connu. Groupe bantou majoritaire, rôle majeur dans la lutte pour l'indépendance (SWAPO)."
+        "appellationRemarks": "Le recensement de 2023 emploie la forme Aawambo et distingue neuf groupes, parmi lesquels les Aakwanyama et les Aandonga. Pour la langue ndonga, le catalogue Glottolog relève aussi les formes Oshindonga, Otjiwambo, Owambo et Ambo."
       },
       {
         "name": "Kavango",
-        "selfAppellation": "Kavango",
-        "exonyms": ["Kavango (terme utilisé par les Européens)"],
+        "selfAppellation": "Vakavango",
+        "exonyms": [],
         "peopleId": "PPL_KAVANGO",
         "mainRegion": "Nord-est de la Namibie",
-        "languages": ["Kavango (kng", "ISO 639-3)", "anglais"],
+        "languages": ["rukwangali (kwn)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Kavango\" est l'auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Le recensement de 2023 emploie la forme Vakavango et distingue plusieurs groupes, parmi lesquels les Vakwangali, les Vagciriku et les Hambukushu. Le catalogue Glottolog donne aussi les formes Rukwangali et Kwangari pour la langue des Kwangali."
       },
       {
         "name": "Herero",
         "selfAppellation": "Ovaherero",
-        "exonyms": ["Herero (terme utilisé par les Européens)"],
+        "exonyms": ["Herero"],
         "peopleId": "PPL_HERERO",
         "mainRegion": "Centre de la Namibie",
-        "languages": ["Herero (her", "ISO 639-3)", "anglais"],
+        "languages": ["otjiherero (her)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "Le peuple se nomme Ovaherero. Herero est le nom donné de l'extérieur le plus courant. Les sources ne signalent pas de sens insultant pour ces noms. L'élevage tient une place importante dans sa vie. Les Ovaherero ont subi le génocide perpétré par l'Allemagne de 1904 à 1908."
+        "appellationRemarks": "Le recensement de 2023 emploie la forme Ovaherero, et Glottolog donne Otjiherero pour leur langue. De 1904 à 1908, les Herero ont été victimes de la guerre d'extermination menée par l'Allemagne, que le gouvernement allemand appelle génocide depuis 2021."
       },
       {
         "name": "Damara",
         "selfAppellation": "Damara",
-        "exonyms": [
-          "Damara (terme utilisé par les Européens)",
-          "\"Bergdamara\" (terme historique",
-          "peut être problématique)"
-        ],
+        "exonyms": [],
         "peopleId": "PPL_DAMARA",
-        "mainRegion": "Centre de la Namibie",
-        "languages": ["Damara (naq", "ISO 639-3)", "anglais"],
+        "mainRegion": "Centre-ouest de la Namibie",
+        "languages": ["khoekhoegowab (naq)"],
         "languageFamily": "FLG_KHOE",
-        "appellationRemarks": "\"Damara\" est l'auto-appellation. \"Bergdamara\" est un terme historique qui peut être problématique dans certains contextes. Groupe khoïsan du centre de la Namibie."
+        "appellationRemarks": "Le recensement de 2023 emploie la forme Damara. Le Dictionary of South African English donne aussi les formes Dammara et, plus rarement, Dama. Les Damara parlent le khoekhoegowab, comme les Nama, selon l'Atlas of Namibia."
       },
       {
         "name": "Nama",
         "selfAppellation": "Nama",
-        "exonyms": [
-          "\"Nama\" (auto-appellation)",
-          "\"Hottentot\" (terme colonial péjoratif",
-          "à éviter)",
-          "\"Khoikhoi\" (terme historique)"
-        ],
+        "exonyms": ["Hottentot"],
         "peopleId": "PPL_NAMA",
         "mainRegion": "Sud de la Namibie",
-        "languages": ["Nama (naq", "ISO 639-3)", "anglais"],
+        "languages": ["khoekhoegowab (naq)"],
         "languageFamily": "FLG_KHOE",
-        "appellationRemarks": "\"Nama\" est l'auto-appellation. \"Hottentot\" est un terme colonial péjoratif qui doit être évité. \"Khoikhoi\" est un terme historique. Groupe khoïsan pasteur du sud de la Namibie."
+        "appellationRemarks": "Le recensement de 2023 emploie la forme Nama. Le mot Hottentot, ancien nom colonial des peuples khoekhoe, est jugé offensant par certains ; on écrit plutôt Khoikhoi, surtout dans les travaux savants, selon le Dictionary of South African English."
       },
       {
         "name": "Himba",
-        "selfAppellation": "Himba",
-        "exonyms": ["Himba (terme utilisé par les Européens)"],
+        "selfAppellation": "Ovahimba",
+        "exonyms": ["Himba"],
         "peopleId": "PPL_HIMBA",
         "mainRegion": "Nord-ouest de la Namibie",
-        "languages": ["Himba (her", "ISO 639-3)", "anglais"],
+        "languages": ["otjiherero (her)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Himba\" est l'auto-appellation. Pas de terme péjoratif connu. Groupe herero semi-nomade, tradition pastorale, culture traditionnelle préservée."
+        "appellationRemarks": "Le recensement de 2023 emploie la forme Ovahimba. L'Atlas of Namibia compte les Himba parmi les Herero."
       },
       {
         "name": "San",
-        "selfAppellation": "San",
-        "exonyms": [
-          "\"San\" (auto-appellation)",
-          "\"Bushmen\" (terme colonial",
-          "peut être problématique)",
-          "\"Basarwa\" (terme utilisé au Botswana)"
-        ],
+        "selfAppellation": "Variable selon les groupes, comme Ju|'hoansi ou Hei//om",
+        "exonyms": ["San", "Bushmen"],
         "peopleId": null,
-        "mainRegion": "Est de la Namibie (désert du Kalahari)",
-        "languages": [
-          "Langues khoïsan (diverses",
-          "ISO 639-3 variées)",
-          "anglais"
-        ],
-        "languageFamily": "FLG_KHOE",
-        "appellationRemarks": "\"San\" est l'auto-appellation. \"Bushmen\" est un terme colonial qui peut être problématique dans certains contextes. \"Basarwa\" est un terme utilisé au Botswana. Chasseurs-cueilleurs, peuples autochtones de la Namibie."
+        "mainRegion": "Dispersés dans tout le pays",
+        "languages": ["langues san (plusieurs codes ISO 639-3)"],
+        "languageFamily": null,
+        "appellationRemarks": "Le recensement de 2023 distingue plusieurs groupes san, comme les Ju|'hoansi, les !Khung et les Hei//om. San viendrait d'un mot nama qui veut dire « celui qui cueille sa nourriture », un nom donné par les Khoikhoi, selon le Dictionary of South African English. Ce dictionnaire note que les auteurs savants ont préféré San à Bushman, jugé péjoratif, et que certains tiennent aussi San pour un mot méprisant."
+      },
+      {
+        "name": "Basters de Rehoboth",
+        "selfAppellation": "Basters",
+        "exonyms": [],
+        "peopleId": null,
+        "mainRegion": "Rehoboth",
+        "languages": [],
+        "languageFamily": null,
+        "appellationRemarks": "Le recensement de 2023 emploie la forme Baster. Selon une citation de 1952 rapportée par le Dictionary of South African English, les gens de Rehoboth se nomment eux-mêmes Basters, « not without pride ». Venus de la région du Cap, ils s'installent à Rehoboth en 1870, selon l'Atlas of Namibia."
       },
       {
         "name": "Blancs namibiens",
-        "selfAppellation": "Variées selon les groupes (Afrikaners, Allemands namibiens)",
-        "exonyms": [
-          "\"Blancs\" (terme descriptif",
-          "peut être problématique)",
-          "\"Colons\" (terme historique)"
-        ],
+        "selfAppellation": "Variable selon les groupes",
+        "exonyms": [],
         "peopleId": null,
-        "mainRegion": "Toutes les régions de la Namibie, majoritairement urbains",
-        "languages": ["Afrikaans", "allemand", "anglais"],
-        "appellationRemarks": "Les Blancs namibiens sont descendants de colons allemands et afrikaners. Le terme \"Blanc\" peut être problématique et doit être utilisé avec précaution. Le terme \"Colon\" est historique et doit être contextualisé. Ils sont majoritairement chrétiens."
-      },
-      {
-        "name": "Autres peuples",
-        "selfAppellation": "Variées selon les groupes",
-        "exonyms": ["Variées selon les groupes"],
-        "mainRegion": "Diverses régions de la Namibie",
-        "languages": ["Langues diverses", "anglais"],
-        "appellationRemarks": "Chaque groupe a sa propre auto-appellation. Pas de terme péjoratif connu."
+        "mainRegion": "Surtout dans les villes",
+        "languages": [],
+        "languageFamily": null,
+        "appellationRemarks": "Le recensement de 2023 emploie la catégorie White. Selon l'Atlas of Namibia, des colons allemands arrivent en nombre après 1908, et des fermiers venus d'Afrique du Sud s'installent surtout après la première guerre mondiale."
       }
     ],
     "culture": {
       "mainLanguages": [
         {
-          "name": "Anglais",
+          "name": "anglais",
           "isoCode": "eng",
           "isPrimary": true
         },
         {
-          "name": "ovambo",
-          "isoCode": "kwn"
+          "name": "oshikwanyama",
+          "isoCode": "kua"
         },
         {
-          "name": "kavango",
-          "isoCode": "kng"
+          "name": "oshindonga",
+          "isoCode": "ndo"
         },
         {
-          "name": "herero",
-          "isoCode": "her"
-        },
-        {
-          "name": "damara",
+          "name": "khoekhoegowab",
           "isoCode": "naq"
-        },
-        {
-          "name": "nama",
-          "isoCode": "naq"
-        },
-        {
-          "name": "langues khoïsan"
         },
         {
           "name": "afrikaans",
           "isoCode": "afr"
         },
         {
+          "name": "otjiherero",
+          "isoCode": "her"
+        },
+        {
+          "name": "rukwangali",
+          "isoCode": "kwn"
+        },
+        {
           "name": "allemand",
           "isoCode": "deu"
+        },
+        {
+          "name": "langues san"
         }
       ],
-      "culturalTraditions": "Diversité culturelle importante reflétant la mosaïque ethnique de la Namibie. Traditions bantoues (Ovambo, Herero, Kavango, Himba) : masques, sculptures, musiques traditionnelles, danses traditionnelles, traditions pastorales (Herero, Himba). Traditions khoïsan (Nama, San, Damara) : art rupestre (San), traditions de chasse-cueillette (San), traditions pastorales (Nama), poésie orale. Traditions européennes (Blancs namibiens) : influence culturelle allemande et afrikaner. Musique et danse traditionnelles variées. Cérémonies de passage, rites d'initiation, fêtes traditionnelles. L'art rupestre san est réputé internationalement.",
-      "dominantReligions": "Christianisme (protestantisme majoritaire, catholicisme, églises indépendantes africaines), religions traditionnelles africaines (syncrétisme fréquent, culte des ancêtres, masques, rituels), toutes les communautés sont majoritairement chrétiennes",
-      "lifestyles": "Agriculture (Ovambo, Kavango, maïs, millet, cultures vivrières), pastoralisme (Herero, Himba, Nama, élevage de bovins), chasse-cueillette (San, désert du Kalahari), commerce et activités urbaines (zones urbaines, Windhoek, Swakopmund). Urbanisation modérée. Économie basée sur l'exploitation minière (diamants, uranium, zinc), l'agriculture, l'élevage, la pêche, et le tourisme. La Namibie est l'un des pays les plus développés d'Afrique, avec un IDH élevé.",
-      "socialOrganization": "Organisation en chefferies traditionnelles (Ovambo, Herero, Kavango), structures claniques patrilinéaires (majorité des groupes bantous) et patrilinéaires (groupes khoïsan). Importance des lignages et des familles étendues. Rôle des conseils d'anciens. Traditions d'initiation et de passage à l'âge adulte. Système patrilinéaire (majorité des groupes).",
-      "regionalRelations": "Relations historiques avec l'Angola (commerce, migrations, peuples transfrontaliers, frontière), l'Afrique du Sud (commerce, migrations, frontière), le Botswana (commerce, frontière), la Zambie (commerce, frontière). Intégration dans la SADC (Communauté de développement d'Afrique australe). Relations commerciales et culturelles transfrontalières. La Namibie est un pays de transit pour le commerce régional."
+      "culturalTraditions": "La Namibie compte plus de 80 000 images rupestres connues, peintes ou gravées sur la roche, selon l'Atlas of Namibia. Elles sont surtout nombreuses dans le massif du Brandberg, les monts Erongo et la région de Twyfelfontein, et la plupart auraient été faites au cours des 5 000 dernières années. Des commémorations rappellent aussi les guerres coloniales : chez les Nama, une pierre dédiée à Hendrik Witbooi, inaugurée dans les années 1930, marque le premier Witbooi Day, une commémoration annuelle, selon le Mémorial de la Shoah. Chez les Herero, l'enterrement de Samuel Maharero à Okahandja, en 1923, fut un grand événement.",
+      "dominantReligions": "Le rapport principal du recensement de 2023 ne donne pas la religion des habitants, et nous n'avons pas encore trouvé d'enquête publiée qui la mesure.",
+      "lifestyles": "Selon l'Atlas of Namibia, la culture des plantes et l'élevage commencent en Namibie au cours des 2 000 dernières années. La culture reste surtout limitée au nord du pays, alors que l'élevage s'étend beaucoup plus largement. Avant cela, et pendant la plus grande partie de l'histoire du pays, les habitants vivaient de chasse et de cueillette.",
+      "socialOrganization": "Le recensement de 2023 laisse chaque personne déclarer son groupe. Il distingue ainsi neuf groupes ovambo, comme les Aakwanyama et les Aandonga, plusieurs groupes kavango, comme les Vakwangali et les Hambukushu, et de nombreux groupes damara, nama et san. Nous n'avons pas encore réuni de source sur l'organisation des familles, des clans et des chefferies dans l'ensemble du pays.",
+      "regionalRelations": "Selon l'Atlas of Namibia, les Herero, dont les Himba, les Damara, les Aawambo et les Kavango viendraient d'agropasteurs des hauts plateaux du centre de l'Angola. Entre 1730 et 1870, de nombreux Oorlam arrivent de la région du Cap, en Afrique du Sud, et les Basters s'installent à Rehoboth en 1870. En 1915, environ 25 000 Ovakwanyama passent d'Angola en Namibie, et d'autres Angolais suivent plus tard pour fuir les impôts, le travail forcé, puis la guerre civile angolaise. Pendant la guerre d'indépendance, la SWAPO installe son quartier général en Zambie, puis en Angola après 1975."
     },
     "historicalFacts": {
-      "ancientPeriods": "Présence des peuples khoïsan (San, Nama) depuis la préhistoire. Migrations bantoues vers la région. Développement de chefferies locales.",
-      "middleAges": "Présence continue des peuples khoïsan et bantous. Migrations bantoues continues. Développement de structures politiques locales. Commerce régional.",
-      "precolonial": "Consolidation des chefferies bantoues (Ovambo, Herero, Kavango) et des groupes khoïsan (Nama, San). Commerce régional. Développement des traditions culturelles.",
-      "colonization": "1884-1915 : Colonie allemande du Sud-Ouest africain, guerre des Herero (1904-1908, génocide), résistance des peuples autochtones. 1915-1990 : Colonie sud-africaine (Afrique du Sud-Ouest), apartheid, résistance namibienne (SWAPO), guerre d'indépendance (1966-1990).",
-      "independenceStruggle": "1966-1990 : Guerre d'indépendance menée par la SWAPO (Organisation du peuple du Sud-Ouest africain), Sam Nujoma, résistance armée contre l'Afrique du Sud. 1988 : Accords de New York, retrait des troupes sud-africaines. 1990 : Indépendance (21 mars 1990), proclamation de la République de Namibie. Sam Nujoma devient premier président.",
-      "postIndependence": "République de Namibie (1990), présidence de Sam Nujoma (1990-2005), Hifikepunye Pohamba (2005-2015), Hage Geingob (2015-2024), Nangolo Mbumba (2024-2025), puis Netumbo Nandi-Ndaitwah depuis le 21 mars 2025. Stabilité politique, démocratie multipartite, développement économique, réconciliation nationale. Défis : inégalités économiques, chômage, VIH/sida, développement rural. La Namibie est l'un des pays les plus développés d'Afrique, avec un IDH élevé et une économie diversifiée."
+      "ancientPeriods": "Des outils de pierre trouvés en Namibie ont été datés de plusieurs centaines de milliers d'années, selon l'Atlas of Namibia. Les plus anciennes images du pays ont été tracées sur de petites plaques de pierre dans la grotte Apollo 11, près des monts Huns, dans le sud ; les dépôts qui les contenaient auraient environ 30 000 ans. Les San et leurs ancêtres ont sans doute été les seuls habitants du pays pendant des dizaines de milliers d'années.",
+      "middleAges": "Selon l'Atlas of Namibia, des agriculteurs et des éleveurs de langue bantoue, ainsi que des éleveurs khoekhoe, commencent sans doute à entrer en Namibie il y a environ 1 200 ans, peut-être plus tôt. Les récits oraux situent beaucoup de ces arrivées vers le XVIe siècle, mais l'atlas rappelle que la mémoire orale garde mieux les dates récentes.",
+      "precolonial": "Entre 1730 et 1870, de nombreux Oorlam venus de la région du Cap s'installent dans le centre et le sud du pays, selon l'Atlas of Namibia, et les Basters arrivent à Rehoboth en 1870. Dans les années 1880, Hendrik Witbooi réunit les clans nama et oorlam du Sud, selon le Mémorial de la Shoah. Au nord, les Ovakwanyama ont leur propre roi jusqu'à la défaite de Mandume ya Ndemufayo face aux Portugais, en 1915.",
+      "colonization": "Le protectorat du Sud-Ouest africain allemand est proclamé le 7 août 1884, selon le Mémorial de la Shoah. Le 12 janvier 1904, les Herero d'Okahandja attaquent les fermes et les postes allemands. Le 2 octobre 1904, le général Lothar von Trotha donne un ordre d'extermination, et des camps de concentration ouvrent en 1905, notamment à Windhoek, Swakopmund et Shark Island. Entre 1904 et 1908, environ 80 % des Herero et 50 % des Nama sont tués. En 2021, le ministre allemand des Affaires étrangères déclare que l'Allemagne appelle désormais officiellement ces faits un génocide. Pendant la première guerre mondiale, l'Union sud-africaine conquiert la colonie, puis l'administre sous mandat de la Société des Nations, selon Michael Crowder.",
+      "independenceStruggle": "En 1966, l'Assemblée générale des Nations unies met fin au mandat de l'Afrique du Sud, selon les Nations unies. La même année commence la guerre d'indépendance entre l'Armée populaire de libération de la Namibie, la force armée de la SWAPO, et l'armée sud-africaine ; elle dure jusqu'en 1989, selon l'Atlas of Namibia. En 1978, le Conseil de sécurité adopte le plan des Nations unies pour la Namibie, et le 22 décembre 1988 l'Angola, Cuba et l'Afrique du Sud signent un accord. Des élections ont lieu du 7 au 11 novembre 1989, et la Namibie devient indépendante le 21 mars 1990.",
+      "postIndependence": "Le 16 février 1990, l'Assemblée constituante élit Sam Nujoma, chef de la SWAPO, président de la République, selon les Nations unies. Le 21 mars 2025, Netumbo Nandi-Ndaitwah prête serment comme cinquième présidente du pays ; c'est la première femme chef de l'État namibien, selon l'agence de presse namibienne."
     },
     "sources": [
       {
@@ -629,7 +641,185 @@
         "url": "https://nsa.org.na/wp-content/uploads/2024/10/2023-Population-and-Housing-Census-Main-Report-28-Oct-2024.pdf",
         "tier": "official",
         "source_kind": "official_statistics",
-        "notes": "Le recensement a demandé à chaque personne son groupe. Parts calculées sur 3 022 401 personnes : Ovambo 50,4 % (somme des neuf lignes Aakolonkadhi, Aakwaluudhi, Aakwambi, Aakwanyama, Aambalantu, Aambadja, Aandonga, Aangandjera et Aawambo non classés ailleurs), Kavango 11,6 % (somme des lignes Hambukushu, Vambunza, Vagciriku, Vasambyu, Vakwangali et Vakavango non classés ailleurs). Herero 5,9 % (ligne Ovaherero), Damara 5,6 % (ligne « Damara, non classés ailleurs ») et Nama 3,1 % (ligne « Nama, non classés ailleurs ») : les sous-groupes Damara et Nama listés à part ne sont pas ajoutés, ces deux parts sont donc des minimums. Les Himba, les San et les Blancs restent dans « Autres ». Rapport lu le 6 octobre 2026."
+        "notes": "Le recensement, mené en septembre 2023, a demandé à chaque personne son groupe ; il compte 3 022 401 habitants. Ovambo : 1 523 239 personnes, soit 50,4 % (somme des neuf lignes Aakolonkadhi, Aakwaluudhi, Aakwambi, Aakwanyama, Aambalantu, Aambadja, Aandonga, Aangandjera et Aawambo non classés ailleurs). Kavango : 350 153 personnes, soit 11,6 % (somme des lignes Hambukushu, Vambunza, Vagciriku, Vasambyu, Vakwangali et Vakavango non classés ailleurs). Herero : 178 987 personnes, soit 5,9 % (ligne Ovaherero). Damara : 170 112 personnes, soit 5,6 % (ligne « Damara, non classés ailleurs »). Nama : 93 904 personnes, soit 3,1 % (ligne « Nama, non classés ailleurs ») ; les sous-groupes damara et nama listés à part ne sont pas ajoutés, ces deux parts sont donc des minimums. Himba : 35 221 personnes, soit 1,2 % (ligne Ovahimba). San : 71 201 personnes, soit 2,4 % (somme des lignes Ju|'hoansi, !Khung, Kwe/Kxoe/Mbarakwengo, Naro, Hei//om, !Xoo, /Auni et Nu-//en, ||Kx'au-||'en et San non classés ailleurs). White : 53 773 personnes, soit 1,8 %. Baster : 45 629 personnes, soit 1,5 %. Rapport lu le 3 novembre 2026."
+      },
+      {
+        "title": "Place names, dans Atlas of Namibia: its land, water and life",
+        "author": "Atlas of Namibia Team, Namibia Nature Foundation",
+        "year": 2022,
+        "url": "https://atlasofnamibia.online/node/77",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Atlas publié à Windhoek, lu dans sa version en ligne. « The name 'Namibia' is derived from the word 'Namib', which describes a vast open space in Khoekhoegowab, the Nama and Damara language. »"
+      },
+      {
+        "title": "Languages spoken in Namibia, dans Atlas of Namibia: its land, water and life",
+        "author": "Atlas of Namibia Team, Namibia Nature Foundation",
+        "year": 2022,
+        "url": "https://atlasofnamibia.online/node/108",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Atlas publié à Windhoek par la Namibia Nature Foundation, chapitre 9, lu dans sa version en ligne. Selon le recensement de 2011, cinq langues sont les plus parlées dans les ménages : « Otjiherero, 9.7 per cent; Afrikaans, 10.3 per cent; Khoekhoegowab, 11.3 per cent; Oshindonga, 15.1 per cent; and Oshikwanyama, 21.2 per cent of households ». « Although English is the official language of Namibia, it was not the language spoken in most households in 2011. » « Afrikaans, English and German are spoken widely and commonly in urban areas. » Les parlers khoekhoegowab sont ceux des Nama, dans la moitié sud du pays, des Damara, dans le centre-ouest, et des Haiǁom, au sud et à l'est du parc d'Etosha."
+      },
+      {
+        "title": "People on the move, dans Atlas of Namibia: its land, water and life",
+        "author": "Atlas of Namibia Team, Namibia Nature Foundation",
+        "year": 2022,
+        "url": "https://atlasofnamibia.online/chapter-9/people-on-the-move",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Atlas publié à Windhoek par la Namibia Nature Foundation, chapitre 9, lu dans sa version en ligne. « Bantu farmers and pastoralists and Khoekhoe pastoralists probably began to enter Namibia about 1,200 years ago, perhaps even earlier. » « Oral accounts place many of the immigrations in the 1500s or thereabouts ». Les Herero, dont les Himba, les Damara, les Aawambo et les Kavango viendraient d'agropasteurs des hauts plateaux du centre de l'Angola. « Between 1730 and 1870 large numbers of Oorlam people from South Africa's Cape moved into central and southern Namibia. » « Rehoboth Basters also moved from the Cape to settle at Rehoboth in 1870. » En 1915, environ 25 000 Ovakwanyama passent d'Angola en Namibie après la victoire portugaise « over their king, Mandume ya Ndemufayo »."
+      },
+      {
+        "title": "Shards of history illustrated, dans Atlas of Namibia: its land, water and life",
+        "author": "Atlas of Namibia Team, Namibia Nature Foundation",
+        "year": 2022,
+        "url": "https://atlasofnamibia.online/chapter-9/shards-of-history-illustrated",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Atlas publié à Windhoek par la Namibia Nature Foundation, chapitre 9, lu dans sa version en ligne. Des outils de pierre trouvés en Namibie ont été datés de plusieurs centaines de milliers d'années. « It is during the last 2,000 years (last map above) that farming of crops and livestock started » ; « While crop cultivation was largely limited to northern Namibia, livestock farming was much more widespread. »"
+      },
+      {
+        "title": "Rock art, dans Atlas of Namibia: its land, water and life",
+        "author": "Atlas of Namibia Team, Namibia Nature Foundation",
+        "year": 2022,
+        "url": "https://atlasofnamibia.online/chapter-9/shards-of-history-illustrated/rock-art",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Atlas publié à Windhoek par la Namibia Nature Foundation, chapitre 9, lu dans sa version en ligne. Les plus anciennes images ont été tracées sur de petites plaques de pierre trouvées dans la grotte Apollo 11, près des monts Huns : « The deposits of debris are estimated to be about 30,000 years old. » Le pays compte plus de 80 000 images connues ; les plus fortes concentrations se trouvent dans « the Brandberg, the Erongo Mountains and the Tywfelfontein area ». La plupart des images « are more likely to have been made in the last 5,000 years »."
+      },
+      {
+        "title": "Colonisation and liberation, dans Atlas of Namibia: its land, water and life",
+        "author": "Atlas of Namibia Team, Namibia Nature Foundation",
+        "year": 2022,
+        "url": "https://atlasofnamibia.online/chapter-9/shards-of-history-illustrated/colonisation-and-liberation",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Atlas publié à Windhoek par la Namibia Nature Foundation, chapitre 9, lu dans sa version en ligne. La guerre d'indépendance de la Namibie est menée « from 1966 to 1989 between the People's Liberation Army of Namibia (PLAN) », force armée de la SWAPO, et la South African Defence Force. « SWAPO's headquarters were in Zambia at that time, but were relocated to Angola following Angola's independence in 1975. » L'atlas cartographie 383 affrontements dans le bassin de la Cuvelai, entre l'Angola et la Namibie."
+      },
+      {
+        "title": "Glottolog — Ndonga",
+        "author": "Glottolog",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/ndon1254",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. Langue parlée en Namibie et en Angola, rangée dans les langues bantoues, groupe Ndonga (R.20). Autres noms relevés : Ambo, Ochindonga, Oshindonga, Osindonga, Otjiwambo, Owambo."
+      },
+      {
+        "title": "Glottolog — Kuanyama (kuan1247)",
+        "author": "Glottolog",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/kuan1247",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. Langue parlée en Namibie et en Angola, code ISO 639-3 kua, rangée dans les langues bantoues, groupe Ndonga (R.20), à côté du ndonga."
+      },
+      {
+        "title": "Glottolog — Herero (here1253)",
+        "author": "Glottolog",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/here1253",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. Langue parlée en Namibie et en Angola, code ISO 639-3 her, rangée dans les langues bantoues, groupe Herero (R.30). Autres noms relevés : Ochiherero, Otjiherero."
+      },
+      {
+        "title": "Glottolog — Kwangali (kwan1273)",
+        "author": "Glottolog",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/kwan1273",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. Langue parlée en Namibie et en Angola, code ISO 639-3 kwn, rangée dans les langues bantoues. Autres noms relevés : Cuangar, Kwangare, Kwangari, Rukwangali, Sikwangali."
+      },
+      {
+        "title": "Glottolog 5.3 — Nama (nama1264)",
+        "url": "https://glottolog.org/resource/languoid/id/nama1264",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Consulté le 3 novembre 2026. Glottolog nomme cette langue Nama (Namibia), code ISO 639-3 naq, et la range dans la famille khoe, branche khoekhoe du Nord."
+      },
+      {
+        "title": "The genocide of the Herero and Nama",
+        "author": "Mémorial de la Shoah",
+        "year": null,
+        "url": "https://www.memorialdelashoah.org/en/archives-et-documentation/genocides-xx-siecle/genocide-herero-nama.html",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Dossier historique du Mémorial de la Shoah, à Paris, lu dans sa version anglaise. « The protectorate of German South-West Africa was proclaimed on 7 August 1884. » Dans les années 1880, Hendrik Witbooi réunit « the Nama and Oorlam clans in the south ». Le 12 janvier 1904, les Herero d'Okahandja attaquent les fermes allemandes. Le 2 octobre 1904, le général Lothar von Trotha donne un ordre d'extermination. Des camps de concentration sont ouverts en 1905, à Windhoek, Swakopmund et Shark Island. « Between 1904 and 1908, about 80% of the Herero people and 50% of the Nama people living in what is now Namibia were exterminated by the forces of the Second Reich. » Samuel Maharero, mort en exil, est enterré à Okahandja le 26 août 1923 ; chez les Nama, une pierre dédiée à Hendrik Witbooi, inaugurée dans les années 1930, marque le premier Witbooi Day."
+      },
+      {
+        "title": "Foreign Minister Maas on the conclusion of negotiations with Namibia",
+        "author": "Auswärtiges Amt (ministère fédéral allemand des Affaires étrangères)",
+        "year": 2021,
+        "url": "https://www.auswaertiges-amt.de/en/newsroom/news/maas-namibia/2463598",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Déclaration du ministre allemand des Affaires étrangères Heiko Maas, 28 mai 2021, lue sur le site du ministère. Elle porte sur « the atrocities between 1904 and 1908 » commises contre les « Herero and Nama communities » : « We will now officially call these events what they are from today's perspective: a genocide. » L'Allemagne annonce un programme de 1,1 milliard d'euros."
+      },
+      {
+        "title": "UNTAG — Groupe d'assistance des Nations unies pour la période de transition en Namibie, historique",
+        "author": "Nations unies, maintien de la paix",
+        "year": null,
+        "url": "https://peacekeeping.un.org/mission/past/untagS.htm",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Page historique de la mission, lue en anglais. « In 1966, the Assembly declared that South Africa had failed to fulfil its obligations under the Mandate. » Par la résolution 435 (1978), le Conseil de sécurité approuve le plan des Nations unies pour la Namibie. Un accord tripartite entre l'Angola, Cuba et l'Afrique du Sud est signé le 22 décembre 1988. Les élections ont lieu du 7 au 11 novembre 1989. « On 16 February the Assembly elected SWAPO leader Sam Nujoma as President of the Republic for a five-year term. » « Namibia became independent on 21 March 1990. »"
+      },
+      {
+        "title": "Namibia makes history with swearing-in of first female president",
+        "author": "Andreas Thomas, Namibia Press Agency",
+        "year": 2025,
+        "url": "https://nampa.org/text/22593628",
+        "tier": "unverified",
+        "source_kind": "press",
+        "notes": "Dépêche de l'agence de presse namibienne du 21 mars 2025, lue en ligne pour ses premiers paragraphes. « Netumbo Nandi-Ndaitwah was on Friday sworn in as Namibia's fifth president », devenant « the country's first female head of state »."
+      },
+      {
+        "title": "Deutsch-Südwest-Afrika. Forschungsreisen durch die deutschen Schutzgebiete Gross-Nama- und Hereroland, nach dem Kunene, dem Ngami-See und der Kalaxari, 1884-1887",
+        "author": "Hans Schinz",
+        "year": 1891,
+        "url": "https://archive.org/details/deutschsdwesta00schi",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Récit de voyage de la période coloniale allemande, publié à Oldenburg en 1891, lu dans la numérisation d'Internet Archive faite sur l'exemplaire des bibliothèques de l'université de Californie. Le titre nomme le pays « Deutsch-Südwest-Afrika » et parle des « deutschen Schutzgebiete », les protectorats allemands, du Grand Namaland et du pays herero. Passage lu : page de titre."
+      },
+      {
+        "title": "Dictionary of South African English on Historical Principles, entrée « San »",
+        "author": "Dictionary Unit for South African English",
+        "year": null,
+        "url": "https://dsae.co.za/entry/San/e06221",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Entrée lue le 3 novembre 2026. San viendrait du nama et voudrait dire « celui qui cueille sa nourriture » : un nom donné à ce peuple par les Khoikhoi. Au début des années 1970, les auteurs savants préfèrent San à Bushman, jugé péjoratif ; certains pensent aujourd'hui que San était lui aussi un mot méprisant chez les Khoikhoi."
+      },
+      {
+        "title": "Dictionary of South African English on Historical Principles, entrée « Hottentot »",
+        "author": "Dictionary Unit for South African English",
+        "year": null,
+        "url": "https://dsae.co.za/entry/hottentot/e03109",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Entrée lue le 3 novembre 2026. « The word 'Hottentot' is seen by some as offensive, and Khoikhoi is sometimes substituted as a name for the people, particularly in scholarly contexts. »"
+      },
+      {
+        "title": "Dictionary of South African English on Historical Principles, entrée « Damara »",
+        "author": "Dictionary Unit for South African English",
+        "year": null,
+        "url": "https://dsae.co.za/entry/damara/e01905",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Entrée lue le 3 novembre 2026. Damara est « the name of an African people of Namibia » ; on trouve aussi les formes Dammara et, plus rarement, Dama."
+      },
+      {
+        "title": "Dictionary of South African English on Historical Principles, entrée « Baster »",
+        "author": "Dictionary Unit for South African English",
+        "year": null,
+        "url": "https://dsae.co.za/entry/baster/e00615",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Entrée lue le 3 novembre 2026. Le mot vient du néerlandais du Cap et désigne, dans l'un de ses sens, les membres de la communauté de Rehoboth. Une citation de 1952 rapporte que les gens de Rehoboth se nomment eux-mêmes Basters, « not without pride »."
       }
     ],
     "demographics": {
@@ -639,38 +829,85 @@
       "peoples": [
         {
           "name": "Ovambo",
-          "percentageInCountry": 50.4,
           "peopleId": "PPL_OVAMBO",
-          "region": "Nord de la Namibie"
+          "population": 1523239,
+          "referenceYear": 2023,
+          "percentageInCountry": 50.4,
+          "region": "Nord de la Namibie",
+          "languageFamily": "FLG_BANTU"
         },
         {
           "name": "Kavango",
-          "percentageInCountry": 11.6,
           "peopleId": "PPL_KAVANGO",
-          "region": "Nord-est de la Namibie"
+          "population": 350153,
+          "referenceYear": 2023,
+          "percentageInCountry": 11.6,
+          "region": "Nord-est de la Namibie",
+          "languageFamily": "FLG_BANTU"
         },
         {
           "name": "Herero",
-          "percentageInCountry": 5.9,
           "peopleId": "PPL_HERERO",
-          "region": "Centre de la Namibie"
+          "population": 178987,
+          "referenceYear": 2023,
+          "percentageInCountry": 5.9,
+          "region": "Centre de la Namibie",
+          "languageFamily": "FLG_BANTU"
         },
         {
           "name": "Damara",
+          "peopleId": "PPL_DAMARA",
+          "population": 170112,
+          "referenceYear": 2023,
           "percentageInCountry": 5.6,
-          "peopleId": "PPL_DAMARA"
+          "languageFamily": "FLG_KHOE"
         },
         {
           "name": "Nama",
+          "peopleId": "PPL_NAMA",
+          "population": 93904,
+          "referenceYear": 2023,
           "percentageInCountry": 3.1,
-          "peopleId": "PPL_NAMA"
+          "languageFamily": "FLG_KHOE"
         },
         {
-          "name": "Autres groupes ethniques",
+          "name": "San",
           "peopleId": null,
-          "region": "Divers",
-          "languageFamily": null,
-          "percentageInCountry": 23.4
+          "population": 71201,
+          "referenceYear": 2023,
+          "percentageInCountry": 2.4
+        },
+        {
+          "name": "Himba",
+          "peopleId": "PPL_HIMBA",
+          "population": 35221,
+          "referenceYear": 2023,
+          "percentageInCountry": 1.2,
+          "region": "Nord-ouest de la Namibie",
+          "languageFamily": "FLG_BANTU"
+        },
+        {
+          "name": "Blancs namibiens",
+          "peopleId": null,
+          "population": 53773,
+          "referenceYear": 2023,
+          "percentageInCountry": 1.8
+        },
+        {
+          "name": "Basters de Rehoboth",
+          "peopleId": null,
+          "population": 45629,
+          "referenceYear": 2023,
+          "percentageInCountry": 1.5
+        },
+        {
+          "name": "Autres groupes",
+          "peopleId": null,
+          "population": 500182,
+          "referenceYear": 2023,
+          "percentageInCountry": 16.5,
+          "region": null,
+          "languageFamily": null
         }
       ]
     }

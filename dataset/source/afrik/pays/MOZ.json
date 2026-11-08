@@ -3,9 +3,9 @@
   "nameFr": "Mozambique",
   "nameEn": "Mozambique",
   "nameOfficial": "République du Mozambique (República de Moçambique)",
-  "summary": "Le Mozambique porte le nom d'un sultan : Mussa bin Bique, qui régnait au XVe siècle sur l'île que les Portugais abordèrent les premiers. Cités-États swahilies, royaumes shona et chefferies bantoues s'y rencontraient avant cinq siècles de colonisation portugaise. Makua, Tsonga, Shona, Sena, Ndau et Makonde y composent la population.",
-  "etymology": "Le nom \"Mozambique\" viendrait de \"Mozambique\", nom d'une île au large de la côte nord du pays. L'île a été nommée d'après le sultan Mussa bin Bique (ou Musa al-Biq), qui régnait sur l'île au XVe siècle. Les Portugais ont utilisé le nom de l'île pour désigner toute la colonie.",
-  "nameOriginActor": "Le nom \"Mozambique\" vient de l'île de Mozambique, nommée d'après le sultan Mussa bin Bique (ou Musa al-Biq), qui régnait sur l'île au XVe siècle. Les Portugais ont utilisé le nom de l'île pour désigner toute la colonie portugaise en Afrique de l'Est.",
+  "summary": "Le nom Mozambique a d'abord désigné une petite île de corail de la côte nord, écrite Moncobiquy en 1498 dans le journal du voyage de Vasco de Gama ; les Portugais l'ont ensuite donné à leur colonie, et il est devenu celui de l'État indépendant en 1975. Selon une explication rapportée par le Haut-Commissariat du Mozambique à Londres, il viendrait de Mussa-Bin-Tiki, le nom d'un fils de sultan ; d'autres disent que l'île s'appelait d'abord Muipiti. Au recensement de 2017, la plupart des habitants avaient une langue bantoue pour langue maternelle, comme l'emakhuwa, le xichangana ou le cisena.",
+  "etymology": "Le nom Mozambique est d'abord celui d'une petite île de corail, au large de la côte nord du pays, dans l'actuelle province de Nampula. Le journal du premier voyage de Vasco de Gama l'écrit Moncobiquy en mars 1498 et note qu'un chef portant le titre de sultan y réside. Les sources proposent plusieurs origines. Selon une explication que rapporte le Haut-Commissariat du Mozambique à Londres, le nom viendrait de Mussa-Bin-Tiki, le nom d'un fils du sultan qui fut un temps seigneur de l'île ; selon d'autres, l'île s'appelait d'abord Muipiti. Le nom s'est répandu au XVIe siècle. Une explication souvent répétée rattache aussi le nom à un chef appelé Mussa bin Bique ; nous n'avons pas encore trouvé de travail d'historien accessible qui la documente, après avoir consulté le journal du voyage de Vasco de Gama et les livres d'Alexandre Lobato.",
+  "nameOriginActor": "Le nom de l'île a été étendu par les Portugais. Au début du XVIe siècle, leur capitainerie de la côte s'appelle « Sofala e Moçambique », selon l'historien Alexandre Lobato, et en 1752 un décret royal crée le gouvernement général de Moçambique ; jusque-là, le gouvernement de Moçambique dépendait de celui de l'Inde portugaise. À l'indépendance, en 1975, le nouvel État garde ce nom.",
   "nameHistory": {
     "summary": "Le nom Mozambique désigne un pays d'Afrique australe, la République du Mozambique, Moçambique en portugais. Il a d'abord désigné une petite île de corail, puis la colonie portugaise ; à l'indépendance, le pays s'est appelé République populaire du Mozambique. On ne sait pas avec certitude d'où vient le nom de l'île ; nous présentons plus bas ce que disent les sources.",
     "names": [
@@ -92,12 +92,77 @@
           },
           {
             "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "1929"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mozambique est celui de la « Colónia de Moçambique » dans une brochure de l'administration coloniale imprimée à Lourenço Marques en 1929 ; elle précise qu'une région du territoire tire son nom de l'île de Mozambique, l'un des premiers lieux occupés par les Portugais.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Colónia Portuguesa de Moçambique",
+                "author": "Gouvernement colonial du Mozambique",
+                "year": 1929,
+                "url": "https://archive.org/details/colniaportuguesa00unse",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5",
+                "notes": "Brochure imprimée à Lourenço Marques par l'Imprensa Nacional en 1929 ; c'est une publication de l'administration coloniale, lue en fac-similé sur Internet Archive (exemplaire de l'université de Caroline du Nord) le 3 novembre 2026. Elle décrit « A Colónia de Moçambique » et précise qu'une région « tira o seu nome da ilha de Moçambique, um dos primeiros lugares ocupados pelos portugueses »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1752,
+              "to": 1752,
+              "label": "19 avril 1752"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mozambique est celui du gouvernement général que crée un décret royal portugais du 19 avril 1752 ; jusque-là, le gouvernement de Moçambique dépendait de celui de l'Inde portugaise, selon un livre d'Alexandre Lobato publié en 1957.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Evolução Administrativa e Económica de Moçambique, 1752-1763 : Fundamentos da Criação do Governo-Geral em 1752",
+                "author": "Alexandre Lobato",
+                "year": 1957,
+                "url": "https://archive.org/details/dli.ernet.535143",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 18",
+                "notes": "Ouvrage publié à Lisbonne en 1957 par l'Agência Geral do Ultramar, l'organe de publication du ministère portugais des colonies, « étude commémorative du décret royal du 19 avril 1752 » ; c'est un livre d'époque coloniale, lu en fac-similé sur Internet Archive le 3 novembre 2026. La préface de l'ancien ministre M. M. Sarmento Rodrigues écrit que le livre traite de « la séparation administrative […] de Moçambique, pendant des siècles dépendant de l'État de l'Inde », et que « le gouvernement de Moçambique resta uni à celui de l'Inde jusqu'au milieu du XVIIIe siècle »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1508,
+              "to": 1530,
+              "label": "De 1508 à 1530"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mozambique s'associe à celui de Sofala pour désigner la capitainerie portugaise de la côte : l'historien Alexandre Lobato consacre un livre à la politique de la « Capitania de Sofala e Moçambique » de 1508 à 1530.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Expansão Portuguesa em Moçambique de 1498 a 1530, Livro I : Descobrimento e Ocupação da Costa, 1498-1508",
+                "author": "Alexandre Lobato",
+                "year": 1954,
+                "url": "https://archive.org/details/dli.ernet.535139",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Ouvrage publié à Lisbonne en 1954 par l'Agência Geral do Ultramar, l'organe de publication du ministère portugais des colonies ; c'est un livre d'époque coloniale, lu en fac-similé sur Internet Archive le 3 novembre 2026. La liste des ouvrages de l'auteur, au début du livre, annonce le « Livro II — Política da Capitania de Sofala e Moçambique de 1508 a 1530 — Lisboa — 1954 »."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 1498,
               "to": 1498,
               "label": "Mars 1498"
             },
             "era": "polity",
-            "statement": "Le nom Mozambique apparaît, sous la forme Moncobiquy, dans le journal du premier voyage de Vasco de Gama : dans cette île réside un chef qui porte le titre de sultan. C'est la plus ancienne trace de ce nom que le projet connaît. La ville de l'île, sous l'influence de Kilwa, existait déjà avant lui, selon A. I. Salim.",
+            "statement": "Le nom Mozambique apparaît, sous la forme Moncobiquy, dans le journal du premier voyage de Vasco de Gama : dans cette île réside un chef qui porte le titre de sultan. C'est la plus ancienne trace de ce nom que nous connaissons. La ville de l'île, sous l'influence de Kilwa, existait déjà avant lui, selon A. I. Salim.",
             "formAsWritten": "Moncobiquy",
             "birth": true,
             "sources": [
@@ -171,7 +236,7 @@
         "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
-        "periodLabel": "À partir de 1975",
+        "periodLabel": "Du 25 juin 1975 au 30 novembre 1990",
         "accounts": [
           {
             "period": {
@@ -193,6 +258,27 @@
                 "notes": "Notice consultée le 10 octobre 2026. Les États-Unis reconnaissent la République populaire du Mozambique le 25 juin 1975 ; le pays était auparavant sous souveraineté portugaise."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1990,
+              "label": "Du 25 juin 1975 au 30 novembre 1990"
+            },
+            "era": "modern",
+            "statement": "Le nom République populaire du Mozambique, República Popular de Moçambique en portugais, est proclamé par le Comité central du FRELIMO le 25 juin 1975, selon le préambule de la Constitution de 1990. Cette Constitution nomme l'État République de Moçambique et entre en vigueur le 30 novembre 1990.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constituição da República de Moçambique, Boletim da República, I série, n.º 44, suplemento, 2 de novembro de 1990",
+                "author": "Assemblée populaire de la République populaire du Mozambique",
+                "year": 1990,
+                "url": "https://archive.gazettes.africa/archive/mz/1990/mz-government-gazette-series-i-supplement-dated-1990-11-02-no-44.pdf",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Journal officiel du Mozambique, lu dans la copie de Gazettes.Africa le 3 novembre 2026. Le préambule dit qu'à zéro heure le 25 juin 1975 le Comité central du FRELIMO « proclamou solenemente a independência nacional de Moçambique e a sua constituição em República Popular de Moçambique », victoire de la « Luta Armada de Libertação Nacional, dirigida pela FRELIMO ». L'article 1 nomme « A República de Moçambique », l'article 5 fait du portugais la langue officielle, l'article 197 fait de Maputo la capitale, et l'article 206 fixe l'entrée en vigueur au 30 novembre 1990. Le texte est approuvé le 2 novembre 1990 et signé par le président Joaquim Alberto Chissano."
+              }
+            ]
           }
         ]
       }
@@ -201,58 +287,32 @@
   "content": {
     "historicalNames": {
       "formerNames": [
-        "Moçambique (colonie portugaise, 1498-1975)",
+        "Província de Moçambique (attesté en 1895)",
+        "Colónia de Moçambique (attesté en 1929)",
         "République populaire du Mozambique (1975-1990)"
       ],
-      "antiquity": "Le territoire actuel du Mozambique était peuplé de diverses sociétés bantoues sans nom unifié. Les peuples autochtones avaient leurs propres noms pour leurs territoires.",
-      "middleAges": "Migrations bantoues vers la région. Développement de chefferies et royaumes locaux. Commerce avec les Arabes et les Swahili (côte). Pas de nom unifié pour l'ensemble du territoire.",
-      "precolonial": "Développement des chefferies bantoues (Makua, Tsonga, Shona, Sena, Ndau, Makonde, Yao, Chopi, Tonga). Commerce avec les Arabes et les Swahili (côte, développement des cités-États swahilies). Les Portugais utilisaient le terme \"Moçambique\" pour désigner la colonie.",
-      "colonization": "1498-1975 : Colonie portugaise du Mozambique (Moçambique). Les Portugais ont établi des comptoirs commerciaux à partir de 1498 (Vasco de Gama). Colonisation progressive, développement de l'économie coloniale (esclavage, plantations, mines). Le nom \"Moçambique\" est officialisé par les Portugais.",
-      "contemporary": "1975 : Indépendance (25 juin 1975), proclamation de la République populaire du Mozambique. 1990 : Adoption de la constitution démocratique, République du Mozambique. Le nom \"Mozambique\" est officiel."
+      "antiquity": "Nous n'avons pas trouvé de source ouverte qui donne un nom au territoire avant le XVe siècle ; nous avons consulté les articles de la revue Africana Studia et les livres d'Alexandre Lobato.",
+      "middleAges": "Au XVe siècle, la ville de l'île de Mozambique est tombée sous l'influence de Kilwa, une cité de la côte plus au nord, selon A. I. Salim. Selon une explication rapportée par le Haut-Commissariat du Mozambique à Londres, certains disent que l'île s'appelait d'abord Muipiti.",
+      "precolonial": "Le journal du voyage de Vasco de Gama écrit le nom de l'île Moncobiquy en mars 1498. À l'intérieur des terres, les chroniqueurs portugais du XVIe siècle nomment Monomotapa le royaume présenté comme le maître des terres autour de Sofala, selon Alexandre Lobato. Au XIXe siècle, Soshangane appelle Gaza le royaume qu'il fonde en pays tsonga, et ses partisans sont appelés Shangana d'après son nom, selon Leonard D. Ngcongco.",
+      "colonization": "Au début du XVIe siècle, le nom de l'île passe à la capitainerie portugaise de « Sofala e Moçambique ». En 1752, un décret royal crée le gouvernement général de Moçambique. Les textes officiels portugais parlent de la « provincia de Moçambique » en 1895, puis de la « Colónia de Moçambique » en 1929.",
+      "contemporary": "Le 25 juin 1975, le FRELIMO proclame l'indépendance et la République populaire du Mozambique. La Constitution de 1990 nomme l'État República de Moçambique, en français République du Mozambique ; elle entre en vigueur le 30 novembre 1990."
     },
     "kingdoms": [
       {
-        "name": "Chefferies bantoues",
-        "period": "Précolonial - présent",
+        "name": "Cheikhat de l'île de Mozambique",
+        "period": "Attesté en 1498",
         "entryType": "polity",
-        "dominantPeoples": [
-          "Makua",
-          "Tsonga",
-          "Shona",
-          "Sena",
-          "Ndau",
-          "Makonde",
-          "Yao",
-          "Chopi",
-          "Tonga"
-        ],
-        "politicalCenters": ["Chefferies traditionnelles"],
-        "historicalRole": "Chefferies bantoues, développement des traditions culturelles, agriculture, commerce régional."
+        "dominantPeoples": ["Population musulmane de la côte, liée à Kilwa"],
+        "politicalCenters": ["Île de Mozambique"],
+        "historicalRole": "Quand les navires de Vasco de Gama arrivent devant l'île, le 2 mars 1498, un chef portant le titre de sultan y réside, selon le journal du voyage. La ville est alors tombée sous l'influence de Kilwa, une cité de la côte plus au nord, et son shaykh accueille d'abord bien les Portugais, selon A. I. Salim. Pour l'historien portugais Alexandre Lobato, l'île est une escale importante du commerce de l'or de Sofala, et la domination de Kilwa sur la côte jusqu'à Sofala est déjà en train de se défaire."
       },
       {
-        "name": "Cités-États swahilies",
-        "period": "Moyen Âge - XIXe siècle",
+        "name": "Monomotapa",
+        "period": "Attesté au début du XVIe siècle",
         "entryType": "polity",
-        "dominantPeoples": [
-          "Swahili",
-          "Arabes",
-          "populations bantoues côtières"
-        ],
-        "politicalCenters": [
-          "Sofala",
-          "Quelimane",
-          "Angoche",
-          "Mozambique (île)"
-        ],
-        "historicalRole": "Cités-États swahilies, commerce avec les Arabes et les Portugais, développement du commerce transocéanique, islamisation côtière."
-      },
-      {
-        "name": "Royaumes Shona",
-        "period": "Précolonial",
-        "entryType": "polity",
-        "dominantPeoples": ["Shona", "Ndau"],
-        "politicalCenters": ["Royaumes shona (Zimbabwe", "Mozambique)"],
-        "historicalRole": "Royaumes shona, héritage du Grand Zimbabwe, commerce régional, traditions shona."
+        "dominantPeoples": [],
+        "politicalCenters": ["Intérieur des terres, en arrière de Sofala"],
+        "historicalRole": "Le Monomotapa est un royaume de l'intérieur que les chroniqueurs portugais du XVIe siècle présentent comme le maître des terres autour de Sofala. Selon le chroniqueur João de Barros, cité par Alexandre Lobato, un chef voisin de Sofala nommé Moconde était son vassal. Lobato rapporte aussi que le Portugais António Fernandes parcourut ensuite la Zambézie et le Manica jusqu'au Monomotapa."
       },
       {
         "name": "Royaume de Gaza",
@@ -262,7 +322,7 @@
           "startYear": 1821,
           "endYear": 1895,
           "precision": "approximate",
-          "datingNote": "Le début correspond à l'installation de Soshangane en pays tsonga, dans les années 1820, selon Leonard D. Ngcongco (HGA VI). La fin, 1895, reprend la date de la conquête portugaise donnée par la fiche du peuple tsonga ; elle n'est pas lue dans la source citée."
+          "datingNote": "Le début correspond à l'installation de Soshangane en pays tsonga, dans les années 1820, selon Leonard D. Ngcongco ; l'année 1821 est une borne choisie dans cette décennie. La fin, 1895, est l'année du décret portugais du 7 décembre qui fait un district militaire des territoires soumis après la défaite de Gungunhana."
         },
         "dominantPeoples": [
           "Shangana (partisans de Soshangane)",
@@ -273,14 +333,14 @@
         "politicalCenters": [
           "Pays tsonga, non loin de la baie de Delagoa (premiers établissements)"
         ],
-        "historicalRole": "Royaume fondé par Soshangane, un des généraux de Zwide, qui s'établit en pays tsonga, non loin de la baie de Delagoa. Il soumet plusieurs petits groupes, dont les Manyika, les Ndau et les Chopi, et appelle son royaume Gaza. Au Mozambique, ses partisans sont appelés Shangana, d'après son nom, selon Leonard D. Ngcongco (HGA VI)."
+        "historicalRole": "Royaume fondé par Soshangane, un des généraux de Zwide, qui s'établit en pays tsonga, non loin de la baie de Delagoa. Il soumet plusieurs petits groupes, dont les Manyika, les Ndau et les Chopi, et appelle son royaume Gaza. Au Mozambique, ses partisans sont appelés Shangana, d'après son nom, selon Leonard D. Ngcongco. Le 7 décembre 1895, après la défaite de Gungunhana, que le texte portugais appelle « régulo », le commissaire royal António Enes fait des territoires soumis un « district militaire de Gaza »."
       },
       {
         "name": "Colonie portugaise du Mozambique",
-        "period": "1498 - 1975",
+        "period": "1505 - 1975",
         "entryType": "colonial",
         "timeRange": {
-          "startYear": 1498,
+          "startYear": 1505,
           "endYear": 1975,
           "precision": "year"
         },
@@ -288,119 +348,112 @@
           "Tous les peuples mozambicains sous domination coloniale portugaise"
         ],
         "politicalCenters": [
-          "Lourenço Marques (capitale coloniale",
-          "aujourd'hui Maputo)",
-          "Beira",
-          "Nampula"
+          "Sofala (premier fort, 1505)",
+          "Île de Mozambique",
+          "Lourenço Marques, aujourd'hui Maputo"
         ],
-        "historicalRole": "Colonisation portugaise, développement de l'économie coloniale (esclavage, plantations, mines), résistance des peuples autochtones, mouvements nationalistes (XXe siècle), guerre de libération (1964-1974)."
+        "historicalRole": "Les Portugais commencent à bâtir un fort à Sofala le 21 septembre 1505, date qui marque pour Alexandre Lobato le début de leur occupation. Pendant plus de deux siècles, le gouvernement de Moçambique dépend de celui de l'Inde portugaise, jusqu'au décret royal du 19 avril 1752 qui crée un gouvernement général. À la fin du XIXe siècle, la conquête du sud passe par la guerre contre Gungunhana. Le portugais, imposé comme langue officielle, sert la politique d'assimilation, selon Carlos J. Manuel. La colonie prend fin avec l'indépendance du 25 juin 1975."
       }
     ],
     "majorPeoples": [
       {
         "name": "Makua",
         "selfAppellation": "Makua",
-        "exonyms": [
-          "Makua (terme utilisé par les Européens)",
-          "\"Macua\" (variante)"
-        ],
+        "exonyms": ["Macua (graphie portugaise)"],
         "peopleId": "PPL_MAKUA",
-        "mainRegion": "Nord du Mozambique",
-        "languages": ["Makua (vmw", "ISO 639-3)", "portugais"],
+        "mainRegion": "Centre et nord du Mozambique",
+        "languages": ["makhuwa (vmw)", "portugais (por)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Makua\" est l'auto-appellation. Pas de terme péjoratif connu. Groupe bantou majoritaire au nord du Mozambique."
+        "appellationRemarks": "Leur langue s'appelle emakhuwa au Mozambique, selon David A. S. Langa ; Glottolog la range dans le groupe makua-lomwe et donne aussi la forme portugaise « macua »."
       },
       {
         "name": "Tsonga",
         "selfAppellation": "Tsonga",
-        "exonyms": [
-          "Tsonga (terme utilisé par les Européens)",
-          "\"Shangaan\" (terme historique",
-          "peut être problématique)"
-        ],
+        "exonyms": ["Shangaan"],
         "peopleId": "PPL_TSONGA",
         "mainRegion": "Sud du Mozambique",
-        "languages": ["Tsonga (tso", "ISO 639-3)", "portugais"],
+        "languages": ["tsonga (tso)", "portugais (por)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Tsonga\" est l'auto-appellation. \"Shangaan\" est un terme historique qui peut être problématique dans certains contextes. Groupe bantou du sud du Mozambique."
+        "appellationRemarks": "Glottolog compte xichangana, changana et shangaan parmi les noms de la langue tsonga, et range le changana parmi ses dialectes. Selon Leonard D. Ngcongco, le nom Shangana vient de Soshangane, fondateur du royaume de Gaza : au Mozambique, on appelait ainsi ses partisans."
       },
       {
-        "name": "Shona",
-        "selfAppellation": "Shona",
-        "exonyms": ["Shona (terme utilisé par les Européens)"],
-        "peopleId": "PPL_SHONA",
-        "mainRegion": "Centre du Mozambique",
-        "languages": ["Shona (sna", "ISO 639-3)", "portugais"],
+        "name": "Lomwe",
+        "selfAppellation": "Lomwe",
+        "exonyms": [],
+        "peopleId": "PPL_LOMWE",
+        "mainRegion": "Centre et nord du Mozambique",
+        "languages": ["lomwe (ngl)", "portugais (por)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Shona\" est l'auto-appellation. Pas de terme péjoratif connu. Héritiers des royaumes shona, héritage du Grand Zimbabwe."
+        "appellationRemarks": "Leur langue s'appelle elomwe au Mozambique, selon David A. S. Langa ; Glottolog la range avec le makhuwa dans le groupe makua-lomwe."
       },
       {
         "name": "Sena",
         "selfAppellation": "Sena",
-        "exonyms": ["Sena (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_SENA",
         "mainRegion": "Centre du Mozambique",
-        "languages": ["Sena (seh", "ISO 639-3)", "portugais"],
+        "languages": ["sena (seh)", "portugais (por)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Sena\" est l'auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Leur langue s'appelle cisena au Mozambique, selon David A. S. Langa ; Glottolog la situe au Mozambique et au Malawi."
+      },
+      {
+        "name": "Chuwabo",
+        "selfAppellation": "Chuwabo",
+        "exonyms": [],
+        "mainRegion": "Centre du Mozambique",
+        "languages": ["chuwabu (chw)", "portugais (por)"],
+        "languageFamily": "FLG_BANTU",
+        "appellationRemarks": "Leur langue s'appelle echuwabo au Mozambique, selon David A. S. Langa ; la fiche toponymique britannique la compte parmi les langues parlées par au moins un million de personnes au recensement de 2017."
+      },
+      {
+        "name": "Chewa",
+        "selfAppellation": "Chewa",
+        "exonyms": [],
+        "peopleId": "PPL_CHEWA",
+        "mainRegion": "Centre et nord du Mozambique",
+        "languages": ["nyanja ou chewa (nya)", "portugais (por)"],
+        "languageFamily": "FLG_BANTU",
+        "appellationRemarks": "Leur langue s'appelle cinyanja au Mozambique, selon David A. S. Langa ; Glottolog donne chewa et chichewa parmi ses autres noms."
       },
       {
         "name": "Ndau",
         "selfAppellation": "Ndau",
-        "exonyms": ["Ndau (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_NDAU",
         "mainRegion": "Centre du Mozambique",
-        "languages": ["Ndau (ndc", "ISO 639-3)", "portugais"],
+        "languages": ["ndau (ndc)", "portugais (por)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Ndau\" est l'auto-appellation. Pas de terme péjoratif connu. Groupe shona du centre du Mozambique."
+        "appellationRemarks": "Leur langue s'appelle cindawu au Mozambique, selon David A. S. Langa ; Glottolog la range dans le groupe shona et donne aussi le nom Sofala parmi ses autres noms."
       },
       {
         "name": "Makonde",
         "selfAppellation": "Makonde",
-        "exonyms": ["Makonde (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_MAKONDE",
-        "mainRegion": "Nord du Mozambique",
-        "languages": ["Makonde (kde", "ISO 639-3)", "portugais"],
+        "mainRegion": "Plateau de Mueda, province de Cabo Delgado",
+        "languages": ["makonde (kde)", "portugais (por)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Makonde\" est l'auto-appellation. Pas de terme péjoratif connu. Art réputé (sculptures makonde)."
+        "appellationRemarks": "Leur langue s'appelle ximakonde au Mozambique, selon David A. S. Langa ; Glottolog la situe au Mozambique et en Tanzanie. Le plateau de Mueda est le cœur du pays makonde, selon Joseph Hanlon."
       },
       {
         "name": "Yao",
         "selfAppellation": "Yao",
-        "exonyms": ["Yao (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_YAO",
         "mainRegion": "Nord du Mozambique",
-        "languages": ["Yao (yao", "ISO 639-3)", "portugais"],
+        "languages": ["yao (yao)", "portugais (por)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Yao\" est l'auto-appellation. Pas de terme péjoratif connu. Traditions islamiques, commerce régional."
+        "appellationRemarks": "Leur langue s'appelle ciyaawo au Mozambique, selon David A. S. Langa ; Glottolog donne aussi chiyao et ajawa parmi ses autres noms."
       },
       {
         "name": "Chopi",
         "selfAppellation": "Chopi",
-        "exonyms": ["Chopi (terme utilisé par les Européens)"],
+        "exonyms": [],
         "peopleId": "PPL_CHOPI",
-        "mainRegion": "Sud du Mozambique",
-        "languages": ["Chopi (cce", "ISO 639-3)", "portugais"],
+        "mainRegion": "Sud de la province d'Inhambane",
+        "languages": ["chopi (cce)", "portugais (por)"],
         "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Chopi\" est l'auto-appellation. Pas de terme péjoratif connu. Musique traditionnelle réputée (timbila, xylophone)."
-      },
-      {
-        "name": "Tonga",
-        "selfAppellation": "Tonga",
-        "exonyms": ["Tonga (terme utilisé par les Européens)"],
-        "peopleId": "PPL_TONGA_ZAMBIA",
-        "mainRegion": "Centre du Mozambique",
-        "languages": ["Tonga (toi", "ISO 639-3)", "portugais"],
-        "languageFamily": "FLG_BANTU",
-        "appellationRemarks": "\"Tonga\" est l'auto-appellation. Pas de terme péjoratif connu."
-      },
-      {
-        "name": "Autres peuples",
-        "selfAppellation": "Variées selon les groupes",
-        "exonyms": ["Variées selon les groupes"],
-        "mainRegion": "Diverses régions du Mozambique",
-        "languages": ["Langues diverses", "portugais"],
-        "appellationRemarks": "Chaque groupe a sa propre auto-appellation. Pas de terme péjoratif connu."
+        "appellationRemarks": "Leur langue s'appelle cicopi au Mozambique, selon David A. S. Langa ; Glottolog donne aussi txopi parmi ses autres noms."
       }
     ],
     "culture": {
@@ -411,7 +464,7 @@
           "isPrimary": true
         },
         {
-          "name": "makua",
+          "name": "makhuwa",
           "isoCode": "vmw"
         },
         {
@@ -419,12 +472,20 @@
           "isoCode": "tso"
         },
         {
-          "name": "shona",
-          "isoCode": "sna"
+          "name": "lomwe",
+          "isoCode": "ngl"
+        },
+        {
+          "name": "nyanja",
+          "isoCode": "nya"
         },
         {
           "name": "sena",
           "isoCode": "seh"
+        },
+        {
+          "name": "chuwabu",
+          "isoCode": "chw"
         },
         {
           "name": "ndau",
@@ -443,26 +504,23 @@
           "isoCode": "cce"
         },
         {
-          "name": "tonga",
-          "isoCode": "toi"
-        },
-        {
-          "name": "swahili"
+          "name": "swahili",
+          "isoCode": "swh"
         }
       ],
-      "culturalTraditions": "Diversité culturelle importante reflétant la mosaïque ethnique du Mozambique. Traditions bantoues : masques, sculptures, musiques traditionnelles, danses traditionnelles. Traditions shona : héritage du Grand Zimbabwe, traditions royales. Traditions makonde : art réputé (sculptures makonde, masques). Traditions chopi : musique traditionnelle réputée (timbila, xylophone). Traditions swahilies (côte) : commerce, islam, architecture swahilie. Musique et danse traditionnelles variées. Cérémonies de passage, rites d'initiation, fêtes traditionnelles. L'art makonde est réputé internationalement.",
-      "dominantReligions": "Christianisme (catholicisme majoritaire, protestantisme, églises indépendantes africaines), islam (minorité, côte, Yao), religions traditionnelles africaines (syncrétisme fréquent, culte des ancêtres, masques, rituels)",
-      "lifestyles": "Agriculture (maïs, manioc, riz, cultures vivrières), pêche (côte atlantique, importante source de protéines), élevage (bovins, caprins), commerce et activités urbaines (zones urbaines, Maputo, Beira, Nampula). Urbanisation modérée. Économie basée sur l'agriculture, la pêche, l'exploitation minière (charbon, gaz naturel), et les services. Le Mozambique est l'un des pays les plus pauvres d'Afrique, mais avec un potentiel économique important (gaz naturel, charbon).",
-      "socialOrganization": "Organisation en chefferies traditionnelles (Makua, Tsonga, Shona, Sena, Ndau, Makonde, Yao, Chopi, Tonga), structures claniques matrilinéaires (majorité des groupes bantous) et patrilinéaires. Importance des lignages et des familles étendues. Rôle des conseils d'anciens. Traditions d'initiation et de passage à l'âge adulte. Système matrilinéaire (majorité des groupes bantous).",
-      "regionalRelations": "Relations historiques avec l'Afrique du Sud (commerce, migrations, peuples transfrontaliers, frontière), le Zimbabwe (Shona, commerce, frontière), la Tanzanie (commerce, frontière), le Malawi (commerce, frontière), la Zambie (commerce, frontière). Intégration dans la SADC (Communauté de développement d'Afrique australe). Relations commerciales et culturelles transfrontalières. Le Mozambique est un pays de transit pour le commerce régional."
+      "culturalTraditions": "Plusieurs traditions du Mozambique sont inscrites par l'UNESCO au patrimoine culturel immatériel. Les Chopi, qui vivent surtout dans le sud de la province d'Inhambane, jouent dans des orchestres de cinq à trente xylophones de bois appelés timbila ; cette musique est inscrite en 2008. Chez les Chewa du Mozambique, du Malawi et de la Zambie, le Gule Wamkulu est une danse rituelle exécutée par la société secrète Nyau ; il est inscrit la même année. Chez les Makonde, la danse mapiko, où les danseurs portent des masques d'animaux ou de personnes, se transmet pendant les rites d'initiation ; elle est inscrite en 2023 sur la liste du patrimoine à sauvegarder d'urgence.",
+      "dominantReligions": "Selon la lettre d'information « Mozambique News Reports & Clippings », dirigée par Joseph Hanlon, 18 % des Mozambicains qui déclarent une religion aux recenseurs se disent musulmans. Au recensement de 2007, seules les deux provinces du nord, Niassa (61 %) et Cabo Delgado (54 %), avaient une majorité musulmane ; dans le Cabo Delgado, plusieurs districts du plateau de Mueda avaient une majorité catholique. Nous n'avons pas pu ouvrir les tableaux nationaux du recensement de 2017 sur la religion, car le site de l'Institut national de la statistique du Mozambique ne répondait pas.",
+      "lifestyles": "La plupart des Mozambicains ont une langue bantoue pour langue maternelle et vivent au quotidien dans cette langue, surtout à la campagne, tandis que le portugais se parle surtout en ville, selon Carlos J. Manuel. La population vit surtout sur les côtes et dans les vallées fertiles des fleuves, selon la fiche toponymique britannique. Nous n'avons pas encore trouvé de source ouverte et récente qui décrive les activités des habitants, comme l'agriculture ou la pêche.",
+      "socialOrganization": "Chez les Chewa, la société secrète Nyau initie les jeunes hommes à la vie d'adulte et danse le Gule Wamkulu à la fin de cette initiation, selon l'UNESCO. Chez les Makonde, la danse mapiko fait partie du passage de la puberté à l'âge adulte. Nous n'avons pas encore trouvé de source ouverte qui décrive les lignages et la parenté dans les différents peuples du pays.",
+      "regionalRelations": "Plusieurs langues du Mozambique se parlent aussi dans les pays voisins, selon Glottolog : le tsonga en Afrique du Sud, en Eswatini et au Zimbabwe, le ndau au Zimbabwe, le makonde en Tanzanie, le yao au Malawi, en Tanzanie et en Zambie, le sena et le lomwe au Malawi. Le Gule Wamkulu des Chewa est une tradition commune au Mozambique, au Malawi et à la Zambie. Au XIXe siècle, le royaume de Gaza naît de l'installation de Soshangane, un des généraux de Zwide, en pays tsonga, selon Leonard D. Ngcongco."
     },
     "historicalFacts": {
-      "ancientPeriods": "Peuplement initial par les peuples bantous. Migrations bantoues vers la région. Développement de chefferies locales.",
-      "middleAges": "Migrations bantoues continues. Développement de structures politiques locales. Commerce avec les Arabes et les Swahili (côte, développement des cités-États swahilies). Islamisation côtière.",
-      "precolonial": "Développement des chefferies bantoues (Makua, Tsonga, Shona, Sena, Ndau, Makonde, Yao, Chopi, Tonga). Commerce avec les Arabes et les Swahili (côte, cités-États swahilies : Sofala, Quelimane, Angoche, Mozambique). Royaumes shona (héritage du Grand Zimbabwe). Développement des traditions culturelles.",
-      "colonization": "1498 : Arrivée des Portugais (Vasco de Gama). Colonisation portugaise progressive (1498-1975), développement de l'économie coloniale (esclavage, plantations, mines). Résistance des peuples autochtones. XXe siècle : Développement du mouvement indépendantiste, guerre de libération (1964-1974), FRELIMO (Front de libération du Mozambique).",
-      "independenceStruggle": "1964-1974 : Guerre de libération menée par le FRELIMO (Front de libération du Mozambique), Samora Machel, Eduardo Mondlane. 1974 : Révolution des Œillets au Portugal, fin de la dictature portugaise. 1975 : Indépendance (25 juin 1975), proclamation de la République populaire du Mozambique. Samora Machel devient premier président.",
-      "postIndependence": "République populaire du Mozambique (1975-1990), régime socialiste, guerre civile (1977-1992, RENAMO contre FRELIMO). 1990 : Adoption de la constitution démocratique, République du Mozambique. 1992 : Accords de paix (Rome), fin de la guerre civile. 1990s-présent : Transition démocratique, élections multipartites, présidence de Joaquim Chissano (1986-2005), Armando Guebuza (2005-2015), Filipe Nyusi (depuis 2015). Défis : pauvreté, développement économique, reconstruction post-guerre, VIH/sida, sécurité (terrorisme dans le nord, depuis 2017). Le Mozambique est l'un des pays les plus pauvres d'Afrique, mais avec un potentiel économique important (gaz naturel, charbon)."
+      "ancientPeriods": "Nous n'avons pas encore trouvé de source ouverte sur le peuplement ancien du territoire ; nous avons consulté les articles de la revue Africana Studia, la fiche toponymique britannique et les livres d'Alexandre Lobato.",
+      "middleAges": "Au XVe siècle, la ville de l'île de Mozambique est tombée sous l'influence de Kilwa, une cité de la côte plus au nord, selon A. I. Salim. Selon Alexandre Lobato, l'or de Sofala s'échange alors contre des tissus de Cambay, en Inde, et ce commerce est aux mains de marchands musulmans ; l'île en est une escale importante, car les navires arabes s'y arrêtent à l'aller et au retour.",
+      "precolonial": "À l'intérieur des terres, les chroniqueurs portugais du XVIe siècle décrivent le Monomotapa comme le maître des terres autour de Sofala, selon Alexandre Lobato. Dans les années 1820, Soshangane, un des généraux de Zwide, s'établit en pays tsonga, non loin de la baie de Delagoa ; il soumet les Manyika, les Ndau et les Chopi et fonde le royaume de Gaza, selon Leonard D. Ngcongco.",
+      "colonization": "Les navires de Vasco de Gama arrivent devant l'île de Mozambique le 2 mars 1498, selon le journal du voyage. Les Portugais commencent à bâtir un fort à Sofala le 21 septembre 1505, date qui marque pour Alexandre Lobato le début de leur occupation. Le gouvernement de Moçambique dépend de celui de l'Inde portugaise jusqu'au décret royal du 19 avril 1752, qui crée un gouvernement général. En décembre 1895, après la défaite de Gungunhana, le commissaire royal António Enes fait des territoires soumis un district militaire de Gaza. Le portugais est imposé pendant la colonisation comme l'un des principaux outils de la politique d'assimilation, selon Carlos J. Manuel.",
+      "independenceStruggle": "Le Front de libération du Mozambique, le FRELIMO, est créé en 1962 à Dar es Salaam, en Tanzanie, pour rassembler les nationalistes mozambicains ; il déclenche la lutte armée pour l'indépendance en 1964, selon Luis de Brito. Le plateau de Mueda, au cœur du pays makonde, est l'un des centres de cette lutte, selon Joseph Hanlon. Le 25 juin 1975, le Comité central du FRELIMO proclame l'indépendance et la République populaire du Mozambique, selon le préambule de la Constitution de 1990. Le même jour, les États-Unis reconnaissent le nouvel État par une lettre du président Gerald Ford au président Samora Machel, selon l'Office of the Historian.",
+      "postIndependence": "Quelques années après l'indépendance, une longue guerre civile oppose le gouvernement à la Résistance nationale mozambicaine, la RENAMO, soutenue par le régime d'apartheid sud-africain, selon les Nations unies. La Constitution du 2 novembre 1990, signée par le président Joaquim Chissano, nomme l'État République de Moçambique. Le 4 octobre 1992, après deux ans de négociations à Rome, le gouvernement et la RENAMO signent un accord général de paix ; les premières élections multipartites ont lieu en octobre 1994, et le FRELIMO les remporte. Depuis 2017, une guerre touche la province de Cabo Delgado, dans le nord ; elle a commencé à Mocímboa da Praia, selon Joseph Hanlon. Nous n'avons pas encore trouvé de source officielle ouverte sur les présidents et les élections après 1994."
     },
     "sources": [
       {
@@ -515,7 +573,8 @@
         "title": "UNFPA – World Population Dashboard — Mozambique",
         "url": "https://www.unfpa.org/data/world-population/MZ",
         "tier": "official",
-        "source_kind": "intergovernmental"
+        "source_kind": "intergovernmental",
+        "notes": "Tableau de bord consulté le 3 novembre 2026 : « Total Population (2025): 35,600,000 », d'après les World Population Prospects 2024 de la Division de la population des Nations unies."
       },
       {
         "title": "Histoire générale de l'Afrique, VI, ch. 5 : Le Mfecane et l'émergence de nouveaux États africains",
@@ -523,27 +582,261 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, chapitre de Leonard D. Ngcongco (1996), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 132. Soshangane s'établit en pays tsonga, non loin de la baie de Delagoa, et y entreprend « de bâtir son propre royaume, qu'il appela Gaza »."
+      },
+      {
+        "title": "Toponymic Factfile: Mozambique",
+        "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+        "year": 2024,
+        "url": "https://assets.publishing.service.gov.uk/media/6785294af041702a11ca0ef3/Mozambique_Toponymic_Factfile.pdf",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Fiche officielle britannique de toponymie, édition 2024, relue le 3 novembre 2026. Le portugais est la seule langue officielle ; plus de 40 langues bantoues sont parlées, et celles qu'au moins un million de personnes emploient selon le recensement de 2017 sont « Makhuwa, Tsonga (tso), Lomwe (ngl), Chewa (nya), Sena (seh) and Chuwabu (chw) ». Aucun code ISO unique ne couvre le makhuwa ; le makhuwa central porte le code vmw. La population vit surtout sur les côtes et dans les vallées fertiles des fleuves. Passage lu : p. 1-2."
+      },
+      {
+        "title": "A necessidade de oficializar as línguas africanas em Moçambique: uma reflexão",
+        "author": "Carlos J. Manuel (Universidade Eduardo Mondlane)",
+        "year": 2023,
+        "url": "https://doi.org/10.21747/0874-2375/afr40a2",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Africana Studia, n° 40, 2023, revue du Centre d'études africaines de l'université de Porto, p. 17-28, lu le 3 novembre 2026. Les langues bantoues du pays forment huit groupes, dont « Swahili, Yaao (no norte do país), Makhuwa-Lomwe (centro-norte), Nyanja, Nsenga-Sena, Shona (no centro-norte), Copi e Tswa-Zronga (no sul do país) » ; les principales sont « Emakhuwa, Xichangana, Cisena, Elomwe, Cinyanja e Echuwabo ». Au recensement de 2017, les langues bantoues forment « pouco mais que 80 % » du répertoire, la plupart des Mozambicains vivent au quotidien dans une langue africaine, « especialmente no meio rural », et le portugais, parlé surtout en ville, est langue maternelle d'un peu moins de 20 % des habitants et seconde langue de plus de 46 %. Le portugais a été « imposto no período colonial […] como um dos mais importantes instrumentos da política assimilacionista ». Passage lu : p. 17-18."
+      },
+      {
+        "title": "Padrão linguístico de Moçambique: diglossia e línguas em perigo de extinção",
+        "author": "David Alberto Seth Langa (Universidade Eduardo Mondlane)",
+        "year": 2023,
+        "url": "https://doi.org/10.21747/0874-2375/afr40a10",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Africana Studia, n° 40, 2023, revue du Centre d'études africaines de l'université de Porto, p. 127-143, lu le 3 novembre 2026. Parmi les habitants de cinq ans ou plus, la part de ceux qui ont une langue bantoue pour langue maternelle passe de 98,8 % en 1980 à 79,2 % en 2017, et celle du portugais de 1,2 % à 16,5 %. L'article énumère les langues du pays : « Kimwani, Ximakonde, Ciyaawo, Emakhuwa, Elomwe, Ekoti, Echuwabo, Cinyanja, Cinyungwe, Cisena, Cibarwe, Cimanyika, Cindawu, Ciwutee, Gitonga, Citshwa, Cicopi, Xichangana e Xizronga ». Il rappelle que la lutte armée a commencé en 1964. Passage lu : p. 128-131."
+      },
+      {
+        "title": "Glottolog — Makhuwa (makh1264)",
+        "author": "Glottolog",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/makh1264",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog 5.3, consulté le 3 novembre 2026. Langue makhuwa (vmw), du groupe makua-lomwe, parlée au Mozambique ; parmi ses autres noms figurent Emakhuwa, Macua et « Língua macua » en portugais."
+      },
+      {
+        "title": "Glottolog — Tsonga (tson1249)",
+        "author": "Glottolog",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/tson1249",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog 5.3, consulté le 3 novembre 2026. Langue tsonga (tso), du groupe tswa-ronga, parlée au Mozambique, en Eswatini, en Afrique du Sud et au Zimbabwe ; Changana est l'un de ses dialectes, et Xichangana, Changana et Shangaan comptent parmi ses autres noms."
+      },
+      {
+        "title": "Glottolog — Mozambique Lomwe (lomw1241)",
+        "author": "Glottolog",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/lomw1241",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog 5.3, consulté le 3 novembre 2026. Langue lomwe (ngl), du groupe makua-lomwe, parlée au Malawi et au Mozambique ; parmi ses autres noms figurent Elomwe et Western Makua."
+      },
+      {
+        "title": "Glottolog — Sena (nucl1396)",
+        "author": "Glottolog",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/nucl1396",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog 5.3, consulté le 3 novembre 2026. Langue sena (seh), parlée au Malawi et au Mozambique ; parmi ses autres noms figurent Chisena et Cisena."
+      },
+      {
+        "title": "Glottolog — Chuwabu (chuw1238)",
+        "author": "Glottolog",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/chuw1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog 5.3, consulté le 3 novembre 2026. Langue chuwabu (chw), parlée au Mozambique."
+      },
+      {
+        "title": "Glottolog — Nyanja (nyan1308)",
+        "author": "Glottolog",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/nyan1308",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog 5.3, consulté le 3 novembre 2026. Langue nyanja (nya), aussi appelée chewa ou chichewa, parlée notamment au Malawi, au Mozambique, en Tanzanie, en Zambie et au Zimbabwe."
+      },
+      {
+        "title": "Glottolog — Ndau (ndau1241)",
+        "url": "https://glottolog.org/resource/languoid/id/ndau1241",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog 5.3, consulté le 3 novembre 2026. Langue ndau (ndc), du groupe shona, parlée au Mozambique et au Zimbabwe ; parmi ses autres noms figurent Chindau, Sofala et Southeast Shona."
+      },
+      {
+        "title": "Glottolog — Makonde (mako1251)",
+        "author": "Glottolog",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/mako1251",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog 5.3, consulté le 3 novembre 2026. Langue makonde (kde), parlée au Mozambique et en Tanzanie ; parmi ses autres noms figurent Shimakonde, Chimakonde et Maconde."
+      },
+      {
+        "title": "Glottolog — Yao (yaoo1241)",
+        "author": "Glottolog",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/yaoo1241",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog 5.3, consulté le 3 novembre 2026. Langue yao (yao), parlée au Malawi, au Mozambique, en Tanzanie et en Zambie ; parmi ses autres noms figurent Chiyao, Ciyao et Ajawa."
+      },
+      {
+        "title": "Glottolog — Chopi (chop1243)",
+        "author": "Glottolog",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/chop1243",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog 5.3, consulté le 3 novembre 2026. Langue chopi (cce), parlée au Mozambique ; parmi ses autres noms figurent Cicopi, Txopi et Shichopi."
+      },
+      {
+        "title": "Glottolog — Swahili (swah1253)",
+        "author": "Glottolog",
+        "year": 2026,
+        "url": "https://glottolog.org/resource/languoid/id/swah1253",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog 5.3, consulté le 3 novembre 2026. Le swahili (swh) compte le Mozambique parmi les pays où il est parlé."
+      },
+      {
+        "title": "A Journal of the First Voyage of Vasco da Gama, 1497-1499",
+        "author": "Auteur anonyme du voyage, traduit et annoté par E. G. Ravenstein",
+        "year": 1898,
+        "url": "https://archive.org/details/ajournalfirstvo00ravegoog",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Londres, Hakluyt Society, 1898, lu en fac-similé le 10 octobre 2026. Les navires arrivent devant l'île le 2 mars 1498 ; le journal écrit « In this place and island of Moncobiquy [Mozambique] there resided a chief [senhor] who had the title of Sultan », et Ravenstein note que João de Barros appelle ce chef Zacoeja. Passage lu : p. 22-25."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 25 : La côte orientale de l'Afrique",
+        "author": "A. I. Salim",
+        "year": 1999,
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, lu dans l'exemplaire numérisé. Quand les Portugais arrivent devant l'île de Mozambique, ils apprennent que la ville est tombée sous l'influence de Kilwa ; le shaykh leur fait bon accueil jusqu'à ce qu'il découvre qu'ils ne sont pas musulmans. Passage lu : p. 823."
+      },
+      {
+        "title": "A Expansão Portuguesa em Moçambique de 1498 a 1530, Livro I : Descobrimento e Ocupação da Costa, 1498-1508",
+        "author": "Alexandre Lobato",
+        "year": 1954,
+        "url": "https://archive.org/details/dli.ernet.535139",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Ouvrage publié à Lisbonne en 1954 par l'Agência Geral do Ultramar, l'organe de publication du ministère portugais des colonies ; c'est un livre d'époque coloniale, lu en fac-similé sur Internet Archive le 3 novembre 2026. « Moçambique era notável entreposto de tal comércio porque os pangaios árabes faziam escala no seu porto à ida e no regresso » ; l'or de Sofala « se resgatava por fazendas de Cambaia e era monopólio dos mercadores mouros da índia », et la domination de Kilwa sur la côte jusqu'à Sofala était déjà « em desagregação ». Plus loin (p. 106), selon João de Barros, le chef Moconde, voisin de Sofala, « era vassalo do Monomotapa » ; au chapitre « Ocupação de Sofala », la construction du fort de Sofala « principiaram em 21 de Setembro de 1505, data em que marca o início da ocupação portuguesa em Moçambique » ; ailleurs, António Fernandes « devassou os sertões da Zambézia e Manica e descobriu o Monomotapa ». Passage lu : p. 52."
+      },
+      {
+        "title": "Evolução Administrativa e Económica de Moçambique, 1752-1763 : Fundamentos da Criação do Governo-Geral em 1752",
+        "author": "Alexandre Lobato",
+        "year": 1957,
+        "url": "https://archive.org/details/dli.ernet.535143",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Ouvrage publié à Lisbonne en 1957 par l'Agência Geral do Ultramar, l'organe de publication du ministère portugais des colonies, « étude commémorative du décret royal du 19 avril 1752 » ; c'est un livre d'époque coloniale, lu en fac-similé sur Internet Archive le 3 novembre 2026. La préface de l'ancien ministre M. M. Sarmento Rodrigues écrit que le livre traite de « la séparation administrative […] de Moçambique, pendant des siècles dépendant de l'État de l'Inde », et que « le gouvernement de Moçambique resta uni à celui de l'Inde jusqu'au milieu du XVIIIe siècle ». Passage lu : p. 18."
+      },
+      {
+        "title": "Providencias publicadas pelo commissario regio na provincia de Moçambique, conselheiro António Ennes, desde 1 de janeiro até 18 de dezembro de 1895",
+        "author": "António Enes, commissaire royal portugais",
+        "year": 1896,
+        "url": "https://archive.org/details/providenciaspub00enesgoog",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Recueil officiel des décrets du commissaire royal, imprimé à Lisbonne en 1896 ; c'est un document de l'administration coloniale, lu en fac-similé sur Internet Archive le 3 novembre 2026. Le décret signé à Lourenço Marques le 7 décembre 1895 commence ainsi : « Tendo sido castigada pelas armas a rebellião do regulo Gungunhana » ; il fait des territoires soumis un « districto militar de Gaza ». Le titre du recueil parle de la « provincia de Moçambique ». Passage lu : p. 221."
+      },
+      {
+        "title": "A Colónia Portuguesa de Moçambique",
+        "author": "Gouvernement colonial du Mozambique",
+        "year": 1929,
+        "url": "https://archive.org/details/colniaportuguesa00unse",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "Brochure imprimée à Lourenço Marques par l'Imprensa Nacional en 1929 ; c'est une publication de l'administration coloniale, lue en fac-similé sur Internet Archive (exemplaire de l'université de Caroline du Nord) le 3 novembre 2026. Elle décrit « A Colónia de Moçambique » et précise qu'une région « tira o seu nome da ilha de Moçambique, um dos primeiros lugares ocupados pelos portugueses ». Passage lu : p. 5."
+      },
+      {
+        "title": "Constituição da República de Moçambique, Boletim da República, I série, n.º 44, suplemento, 2 de novembro de 1990",
+        "author": "Assemblée populaire de la République populaire du Mozambique",
+        "year": 1990,
+        "url": "https://archive.gazettes.africa/archive/mz/1990/mz-government-gazette-series-i-supplement-dated-1990-11-02-no-44.pdf",
+        "tier": "referenced",
+        "source_kind": "government",
+        "notes": "Journal officiel du Mozambique, lu dans la copie de Gazettes.Africa le 3 novembre 2026. Le préambule dit qu'à zéro heure le 25 juin 1975 le Comité central du FRELIMO « proclamou solenemente a independência nacional de Moçambique e a sua constituição em República Popular de Moçambique », victoire de la « Luta Armada de Libertação Nacional, dirigida pela FRELIMO ». L'article 1 nomme « A República de Moçambique », l'article 5 fait du portugais la langue officielle, l'article 197 fait de Maputo la capitale, et l'article 206 fixe l'entrée en vigueur au 30 novembre 1990. Le texte est approuvé le 2 novembre 1990 et signé par le président Joaquim Alberto Chissano."
+      },
+      {
+        "title": "Une relecture nécessaire : la genèse du parti-État FRELIMO",
+        "author": "Luis de Brito",
+        "year": 1988,
+        "url": "https://www.persee.fr/doc/polaf_0244-7827_1988_num_29_1_5153",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Politique africaine, n° 29, numéro « Mozambique : guerre et nationalismes », 1988, p. 15-27, lu sur Persée le 3 novembre 2026. Le FRELIMO, « créé en 1962 à Dar es-Salaam (Tanzanie) comme organisation unitaire des nationalistes mozambicains », « a déclenché en 1964 la lutte armée pour l'indépendance du Mozambique »."
+      },
+      {
+        "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Mozambique",
+        "author": "Office of the Historian, Département d'État des États-Unis",
+        "year": null,
+        "url": "https://history.state.gov/countries/mozambique",
+        "tier": "official",
+        "source_kind": "government",
+        "notes": "Notice relue le 3 novembre 2026. « The United States recognized the People's Republic of Mozambique on June 25, 1975 », par une lettre du président Gerald R. Ford au président Samora Machel ; l'ambassade est ouverte à « Lourenco Marques (now Maputo) » le 8 novembre 1975."
+      },
+      {
+        "title": "ONUMOZ — United Nations Operation in Mozambique, summary",
+        "author": "Département de l'information des Nations unies",
+        "year": null,
+        "url": "https://peacekeeping.un.org/sites/default/files/past/onumozS.htm",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Page de synthèse des opérations de maintien de la paix, lue le 3 novembre 2026. « A few years after Mozambique gained independence from Portugal in 1975, the impoverished country was plunged into a long and debilitating civil war between the Government and the Mozambican National Resistance (RENAMO), supported by South Africa's apartheid regime. On 4 October 1992, after two years of negotiations in Rome, the two parties signed a General Peace Agreement. » Plus loin : « The country's first multiparty elections were held in October 1994 » et « The Government's party, FRELIMO, won the parliamentary and presidential elections. »"
+      },
+      {
+        "title": "Mozambique News Reports & Clippings 484 : Supplement on religion and voting in Cabo Delgado districts and administrative posts",
+        "author": "Joseph Hanlon (dir.)",
+        "year": 2020,
+        "url": "https://university.open.ac.uk/technology/mozambique/sites/www.open.ac.uk.technology.mozambique/files/files/Mozambique_484-30Apr2020_Supplement-religion-vote.pdf",
+        "tier": "referenced",
+        "source_kind": "press",
+        "notes": "Lettre d'information diffusée par l'Open University, numéro du 30 avril 2020, lue le 3 novembre 2026. « Of those who declare a religion to census takers, 18% of Mozambicans say they are Muslim. Only the two northern provinces have an Islamic majority - Niassa (61%) and Cabo Delgado (54%). » Le texte s'appuie surtout sur le recensement de 2007. Il note aussi : « The Mueda plateau is the Makonde heartland and was a centre of the fight against Portuguese colonialism », et parle de « Mocimboa da Praia, where the civil war started in 2017 »."
+      },
+      {
+        "title": "UNESCO ICH — Chopi Timbila (00133)",
+        "author": "UNESCO, Patrimoine culturel immatériel",
+        "year": null,
+        "url": "https://ich.unesco.org/en/RL/chopi-timbila-00133",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche de la Liste représentative, lue le 3 novembre 2026 : « The Chopi communities live mainly in the southern part of Inhambane province in southern Mozambique » ; « Their orchestras consist of five to thirty wooden xylophones, called timbila ». Proclamé en 2005, inscrit en 2008."
+      },
+      {
+        "title": "UNESCO ICH — Gule Wamkulu",
+        "url": "https://ich.unesco.org/en/RL/gule-wamkulu-00142",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche lue le 3 novembre 2026 : le Gule Wamkulu est « a secret cult, involving a ritual dance practiced among the Chewa in Malawi, Zambia, and Mozambique », exécuté par la société secrète Nyau, dont les membres « still are responsible for the initiation of young men into adulthood ». Inscrit en 2008 sur la Liste représentative."
+      },
+      {
+        "title": "UNESCO ICH — Ingoma Ya Mapiko",
+        "author": "UNESCO, Patrimoine culturel immatériel",
+        "year": 2023,
+        "url": "https://ich.unesco.org/en/USL/ingoma-ya-mapiko-01996",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "Fiche lue le 3 novembre 2026 : « The mapiko dance is a celebratory dance practiced by the Makonde people of Mozambique », dansée avec des masques « that represent animals or people » et transmise « during initiation rites », dans le passage de la puberté à l'âge adulte. Inscrite en 2023 sur la Liste du patrimoine culturel immatériel nécessitant une sauvegarde urgente."
       }
     ],
     "demographics": {
       "totalPopulation": 35600000,
       "referenceYear": 2025,
       "source": "UNFPA – World Population Dashboard",
-      "peoples": [
-        {
-          "name": "Makua",
-          "percentageInCountry": 28,
-          "peopleId": "PPL_MAKUA",
-          "region": "Nord du Mozambique"
-        },
-        {
-          "name": "Autres groupes ethniques",
-          "peopleId": null,
-          "region": "Divers",
-          "languageFamily": null,
-          "percentageInCountry": 72
-        }
-      ]
+      "peoples": []
     }
   }
 }

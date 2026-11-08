@@ -47,24 +47,29 @@ describe("PPL_ZARMA — the fiche reads in French", () => {
     expect(faults).toEqual([]);
   });
 
-  // Dosso is in Niger: « nigerian » is the adjective for Nigeria.
+  // Dosso is in Niger: « nigerian » is the adjective for Nigeria. The
+  // unsourced sultanate paragraph that carried the slip left with premium
+  // batch 08; the adjective must not come back.
   // @req REQ-178
-  it("says the sultanate of Dosso is recognised by the State of Niger", () => {
-    const system = readZarma().content.organization.traditionalPoliticalSystem;
+  it("never calls Niger « nigerian »", () => {
+    const prose = proseOutsideSources(readZarma())
+      .map(([, text]) => text)
+      .join("\n");
 
-    expect(system).toContain("l'État nigérien");
-    expect(system).not.toMatch(/nigerian/i);
+    expect(prose).not.toMatch(/nigerian/i);
   });
 
   // « ca. » cuts the lead sentence of a tile preview short (« fonde ca. »).
+  // The founding date of Dosso it once carried had no source and was
+  // removed with premium batch 08 rather than kept as an invented date.
   // @req REQ-178
-  it("dates the founding of Dosso in words rather than with « ca. »", () => {
+  it("writes approximate dates in words rather than with « ca. »", () => {
     const prose = proseOutsideSources(readZarma())
       .map(([, text]) => text)
       .join("\n");
 
     expect(prose).not.toMatch(/\b[Cc]a\. ?\d/);
-    expect(prose).toContain("fondé vers 1750");
+    expect(prose).not.toContain("fondé vers 1750");
   });
 
   // The sources read do not say what Zarma means; the line must not borrow
