@@ -257,7 +257,18 @@
         "url": "https://joshuaproject.net/countries/ZA",
         "tier": "unverified",
         "source_kind": "missionary_database"
+      },
+      {
+        "title": "Lala-Bisa, Glottolog (lala1264)",
+        "url": "https://glottolog.org/resource/languoid/id/lala1264",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue, ISO 639-3 leb ; lue le 8 novembre 2026."
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "lala1264",
+      "iso639_3": "leb"
+    }
   }
 }

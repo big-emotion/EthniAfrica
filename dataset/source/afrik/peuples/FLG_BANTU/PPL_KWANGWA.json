@@ -7,99 +7,92 @@
     "appellations": {
       "mainName": "Kwangwa",
       "selfAppellation": "Kwangwa",
-      "exonyms": ["Kwanga", "BaKwangwa"],
-      "originOfExonyms": "Kwanga est la forme alternative du nom du peuple et de sa langue. Le prefixe bantu Ba- designe collectivement le peuple (BaKwangwa). Le nom est lie au fondateur Mange qui occupa les terres a l'est de la plaine Luyi, alors territoires des Nkoya.",
+      "exonyms": ["Kwanga", "BaKwangwa", "Bakwangwa", "Akwangwa"],
+      "originOfExonyms": "Sumbwa (1979) propose que le nom vienne du verbe luyana ku-kwanga, « échouer » ; cette hypothèse est présentée dans l'historique du nom. Kamuwanga (2008, p. 26) écrit que le groupe de Mange fut appelé Akwangwa après l'assassinat de son chef, parce qu'il l'avait abandonné. Le préfixe bantu Ba- sert à désigner un peuple au pluriel.",
       "whyProblematic": null,
-      "contemporaryUsage": "Le nom Kwangwa designe a la fois le peuple et sa langue dans la Province Occidentale de Zambie. Les Kwangwa font partie du grand ensemble Lozi-Barotse tout en etant reconnus comme proto-Lozi, avec le plus haut statut apres les Lozi proprement dits dans la hierarchie du Barotseland.",
+      "contemporaryUsage": "Le nom Kwangwa désigne à la fois un peuple et son parler. Glottolog le classe comme dialecte du luyana. Kamuwanga (2008) range les Kwangwa dans le groupe luyana avec les Kwandi, les Muenyi et les Mbowe, et parmi les peuples proches des premiers Lozi.",
       "linguisticFamily": "FLG_BANTU",
-      "ethnoLinguisticGroup": "Groupe Luyana-Lozi, sous-groupe proto-Lozi, Bantu occidental (Guthrie K.72)",
+      "ethnoLinguisticGroup": "Groupe luyana, Bantu occidental (Glottolog : luya1241)",
       "historicalRegion": "Province Occidentale de Zambie, plaine du Barotseland",
       "currentCountries": ["ZMB"]
     },
     "ethnicities": ["Kwangwa", "BaKwangwa"],
     "origins": {
-      "ancientOrigins": "Les Kwangwa sont une ramification directe du peuple Luyi (ancetres des Lozi). Les Luyi arriverent autour de Mongu sur la plaine d'inondation du Barotseland vers le milieu du XVIIe siecle sous la conduite d'une femme nommee Mwambwa. Sa fille lui succeda avant d'etre contestee par son fils Mboo. C'est lors du regne de Mboo que son parent Mange fut envoye a l'est pour fonder une nouvelle chefferie, etablissant le peuple Kwangwa sur des terres alors occupees par les Nkoya.",
-      "formationPeriod": "Milieu du XVIIe siecle, lors du reign de Mboo, premier roi etabli des Luyi. Mange s'installa a l'est de la plaine du Barotseland, dans les terres Nkoya. Les Kwangwa et les Nkoya coexistaient dans la region depuis environ 1500 apr. J.-C. selon certaines sources.",
+      "ancientOrigins": "Kamuwanga (2008, p. 22), qui suit Jalla (1954), écrit que les Kwangwa descendraient de Mbuyamwambwa par sa fille Noleya et qu'ils se seraient établis autour de Mongu. Il écrit ensuite qu'ils furent conquis par Ngalama et déplacés sur les hauteurs pour y travailler le fer. À la page 26, il rapporte que Mange quitte Kalabo vers le sud et s'installe près de Mongu actuelle. Les Bakwangwa disent que les Barozi les ont trouvés sur place et les ont absorbés (Stirke 1922).",
+      "formationPeriod": "Nous n'avons pas trouvé de date sourcée pour la formation du groupe kwangwa.",
       "migrationRoutes": [
-        "Du bassin du Congo vers la plaine du Barotseland (XVIIe siecle)",
-        "De Mongu vers l'est de la plaine d'inondation sous Mange",
-        "Exil temporaire vers Lukwakwa (nord) durant la domination Kololo et sous Sipopa"
+        "De Kalabo vers le sud, jusqu'aux environs de Mongu, sous Mange (Kamuwanga 2008, p. 26)"
       ],
       "historicalSettlementZones": [
-        "Zone est de la plaine du Barotseland, Province Occidentale de Zambie",
-        "Terres anciennement occupees par les Nkoya",
-        "Region de Lukwakwa (nord) lors des exils forces au XIXe siecle"
+        "Est du Zambèze, dans l'actuel Barotseland (Stirke 1922)",
+        "Environs de Mongu, Province de l'Ouest, Zambie (Kamuwanga 2008)"
       ],
-      "unificationsOrDivisions": "Apres leur fondation au XVIIe siecle, les Kwangwa n'eurent pas de chef propre apres Mange et payaient tribut au chef Luyi. La conquete Kololo vers 1830 bouleversa l'ordre etabli. Lors de la succession Kololo, les Kwangwa soutinrent leur candidat Mbua sans succes. La restauration Lozi sous Sipopa fut suivie de persecutions des Kwangwa qui avaient soutenu un candidat rival. Beaucoup fuirent vers Lukwakwa et y furent pendant au moins 20 ans, evoluant vers un groupe distinct que l'on suppose etre les Nyengo.",
-      "externalInfluences": "Conquete Kololo vers 1830 (Sotho impose comme lingua franca). Les Kwangwa maintinrent leur version du Luyi. Colonisation britannique apres 1890. La politique britannique integra le Barotseland comme protectorat en 1900. L'administration post-independance zambienna (depuis 1964) administre la region depuis Lusaka.",
-      "majorHistoricalEvents": "Fondation par Mange au XVIIe siecle. Conquete Kololo vers 1830 (David Livingstone rencontra le chef Kololo Sebitwane a Linyanti en 1851). Soutien echoue a Mbua lors de la succession Kololo. Exil vers Lukwakwa. Restauration Lozi sous Sipopa (annees 1860). Persecutions des Kwangwa par Sipopa. Renommage des Luyi en Lozi a la fin de la domination Kololo."
+      "unificationsOrDivisions": "Kamuwanga (2008) range les Kwangwa parmi les peuples proches des premiers Lozi. Stirke (1922) compte les Bakwangwa parmi les groupes qui composent le peuple lozi de son époque.",
+      "externalInfluences": null,
+      "majorHistoricalEvents": "Conquête des Kwangwa par Ngalama et déplacement vers les hauteurs pour travailler le fer (Kamuwanga 2008, p. 22). Selon Sumbwa (1979), la dernière guerre de Ngalama contre le prince Mange."
     },
     "organization": {
-      "traditionalPoliticalSystem": "Les Kwangwa n'avaient pas de chef independant apres le fondateur Mange, se placant sous l'autorite nominale du chef Luyi puis Lozi, tout en payant tribut. Dans la hierarchie tribale Lozi, les Kwangwa et les Kwandi etaient consideres proto-Lozi, occupant le rang le plus eleve apres les Lozi proprement dits. Ce statut privilegié impliquait des responsabilites rituelles dans les ceremonies royales.",
-      "clanOrganization": "Organisation clanique liee a la descendance du fondateur Mange. Les Kwangwa forment un groupe de parenté distinct avec des liens au Kwandi (issu de Mwanabinyi, autre parent de Mboo).",
-      "roleOfLineages": "Les lignages transmettent les droits fonciers et les privileges dans la hierarchie du Barotseland. Le metallurgiste et forgeron etait un role important dans la societe Kwangwa, transmis par apprentissage dans les familles de forgerons.",
-      "religiousAuthority": "Les Kwangwa reconnurent l'autorite spirituelle du roi Lozi. Le liyala est un rite de guerison specifique aux Kwangwa dans lequel un guerisseur (leech) danse toute la nuit en portant un amas de peaux autour des hanches, utilisant des hochets et dansant au son des tambours et d'un choeur. Les maladies traitees sont considerees comme venant des esprits ancestraux."
+      "traditionalPoliticalSystem": "Nous n'avons pas trouvé de source qui décrive l'organisation politique des Kwangwa.",
+      "clanOrganization": null,
+      "roleOfLineages": null,
+      "religiousAuthority": null
     },
     "languages": {
-      "mainLanguage": "Kwangwa (Kwanga)",
+      "mainLanguage": "Kwangwa (dialecte du luyana)",
       "isoCodes": [],
-      "dialects": ["Kwandi (apparente, K.721 selon Maho 2009)"],
-      "vehicularRole": "Le Kwangwa est un dialecte Luyana (Glottolog : kwan1275), sans code ISO 639-3 propre (classe mis). Il etait autrefois classe comme dialecte du Luyana divergent. Le recensement zambien de 2010 comptait 2 400 locuteurs des langues Kwanga et Kwandi combines. Pendant la domination Kololo, le Sotho (Kololo) fut impose comme lingua franca, donnant naissance au Lozi moderne. Les Kwangwa maintinrent leur Luyi en parallele et utilisent aujourd'hui le Lozi comme langue vehiculaire."
+      "dialects": [],
+      "vehicularRole": "Glottolog classe le kwangwa (kwan1275) comme dialecte du luyana et ne lui donne pas de code ISO 639-3. Johnston, dans l'introduction du livre de Stirke (1922), écrit que le Si-kwangwa, parlé à l'est du Zambèze, s'éloigne tant du luyi qu'il forme presque une langue à part, et que les préfixes initiaux y tombent."
     },
     "culture": {
-      "majorRites": "Participation aux ceremonies royales Lozi, notamment Kuomboka (migration du roi des plaines inondees vers les terres hautes) et Kathanga. Le liyala est une ceremonie de guerison specifique aux Kwangwa durant laquelle un guerisseur danse toute la nuit au son des tambours, traite des maladies attribuees aux esprits ancestraux.",
-      "symbols": "Le travail du metal (forge) est un symbole identitaire fort des Kwangwa. Leur reputation de forgerons habiles, smelting du mineral de fer pour fabriquer outils et lances, les distinguait dans la region du Barotseland. Ils partageaient cette tradition avec les Totela, habitants originels de la zone.",
-      "artsAndMusic": "Traditions musicales du Barotseland avec tambours, hochets (litungu, kakaki). Danse liyala : le guerisseur porte un amas de peaux autour des hanches et les balance en vibrant le corps, accompagne de hochets a main, de tambours et d'un choeur mixte.",
-      "spiritualities": "Croyances animistes centrees sur les esprits ancestraux (les maladies viennent des esprits ancestraux dans la tradition liyala). Introduction du christianisme par les missionnaires Paris Evangelical Missionary Society au XIXe siecle. Aujourd'hui christianisme (protestantisme, catholicisme) et pratiques traditionnelles coexistent dans la Province Occidentale."
+      "majorRites": null,
+      "symbols": null,
+      "artsAndMusic": null,
+      "spiritualities": null
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Chefferie Kwangwa fondee par Mange au XVIIe siecle, integree sans chef propre dans l'empire Luyi-Lozi. Le statut de proto-Lozi conferait aux Kwangwa le rang le plus eleve dans la hierarchie des groupes tributaires du Barotseland apres les Lozi proprement dits.",
-      "relationsWithNeighbors": "Liens etroits avec les Kwandi (autre groupe proto-Lozi fonde par Mwanabinyi). Relations avec les Nkoya (dont ils occupaient les terres). Apprentissage de la forge des Totela (habitants originels de la zone). Integration dans l'ensemble Lozi-Barotse de plus de 25 groupes Bantu.",
-      "conflictsOrAlliances": "Sous la domination Kololo (1830-1864) : opposition partielle avec tentative de placer Mbua sur le trone Kololo. Persecutions par le roi Lozi Sipopa (annees 1860). Exil a Lukwakwa. Reconfiguration progressive sous l'empire Lozi restaure.",
+      "kingdomsOrChiefdoms": "Nous n'avons pas trouvé de source qui décrive une chefferie kwangwa distincte.",
+      "relationsWithNeighbors": "Kamuwanga (2008, p. 22) écrit que les Kwangwa furent conquis par Ngalama. Stirke (1922) écrit que les Bakwangwa disent avoir été absorbés par les Barozi.",
+      "conflictsOrAlliances": null,
       "diaspora": null
     },
     "demography": {
-      "totalPopulation": 2400,
-      "referenceYear": 2025,
-      "source": "Recensement zambien 2010 : 2 400 locuteurs combines Kwanga et Kwandi (Wikipedia, Kwangwa language). Population totale du groupe ethnique non distinguee des Lozi dans les recensements recents.",
-      "distributionByCountry": [
-        {
-          "country": "ZMB",
-          "population": 2400
-        }
-      ]
+      "totalPopulation": null,
+      "referenceYear": null,
+      "source": "Nous n'avons trouvé aucun chiffre sourcé et propre aux Kwangwa dans les sources lues.",
+      "distributionByCountry": []
     },
     "sources": [
       {
-        "title": "Kwangwa – Zambia's Traditional History, 2020",
-        "url": "https://traditionalzambia.home.blog/tribes-of-zambia/second-bantu-invasion/luba/lozi/kwangwa/",
-        "tier": "unverified",
-        "source_kind": "community"
+        "title": "Prayer for protection: a comparative perspective on Psalms in relation to Lozi prayer traditions",
+        "url": "https://repository.up.ac.za/server/api/core/bitstreams/ade0dfa8-65e2-42d7-afcf-914a6ab8ad2f/content",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse de doctorat de Liswaniso Kamuwanga, université de Pretoria, 2008. Chapitre 2 lu le 8 novembre 2026, notamment les pages 22 et 26."
       },
       {
-        "title": "THE HISTORY OF THE KWANGWA PEOPLE – Facebook/Barotsenetwork, 2021",
-        "url": "https://www.facebook.com/Barotsenetwork/posts/the-history-of-the-kwangwa-peoplethe-kwangwas-are-an-offshoot-of-the-luyi-people/4009618459076922/",
-        "tier": "unverified",
-        "source_kind": "press"
+        "title": "Barotseland: eight years among the Barotse, avec une introduction de Harry Johnston",
+        "url": "https://www.gutenberg.org/ebooks/71338",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "D. E. C. Stirke, Londres, John Bale, Sons et Danielsson, 1922. Livre de l'époque coloniale, lu sur l'édition numérique du Projet Gutenberg le 8 novembre 2026."
       },
       {
-        "title": "Nkoya People of Zambia – Alkebulan Movement, 2017",
-        "url": "https://panafricanrevoluntionmovement.wordpress.com/2017/10/26/nkoya-people-of-zambia/",
-        "tier": "unverified"
+        "title": "Kwangwa – Glottolog kwan1275",
+        "url": "https://glottolog.org/resource/languoid/id/kwan1275",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche du dialecte, rattaché au luyana ; lue le 8 novembre 2026."
       },
       {
         "title": "About Zambia – Western Province Provincial Administration",
         "url": "https://www.wes.gov.zm/?page_id=1186",
         "tier": "official",
         "source_kind": "government"
-      },
-      {
-        "title": "Kwangwa – Glottolog kwan1275",
-        "url": "https://glottolog.org/resource/languoid/id/kwan1275",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "kwan1275"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Kwangwa désigne un peuple de l'est de la plaine de Bulozi, dans la province de l'Ouest de la Zambie, et son parler, que les auteurs rattachent au luyana ou au luyi. On ne sait pas comment ce peuple se nomme lui-même. On ne sait pas avec certitude d'où vient le nom ; une tradition rapportée par George Nyambe Sumbwa l'explique, et nous la présentons plus bas. Le nom Luyi, plus ancien, est traité sur la fiche des Lozi.",

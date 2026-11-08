@@ -84,7 +84,7 @@
     "demography": {
       "totalPopulation": 1615000,
       "referenceYear": 2025,
-      "source": "Joshua Project (2024) : 1 615 000 dans l'ensemble des pays. Wikipedia (citant diverses sources) : 1 562 000. Recensement zambien 2010 : environ 1 105 000 en Zambie seule (PeopleGroups.org). Estimations 2025 tenant compte de la croissance demographique zambienne.",
+      "source": "Joshua Project (2024) : 1 615 000 personnes dans l'ensemble des pays. La répartition par pays vient de la même base de seconde main ; le projet ne l'a pas vérifiée auprès d'un recensement. Le recensement zambien de 2010 compte environ 1 105 000 Lozi en Zambie, selon PeopleGroups.org.",
       "distributionByCountry": [
         {
           "country": "ZMB",
@@ -132,8 +132,33 @@
         "url": "https://en.wiktionary.org/wiki/Appendix:ISO_639-3_codes/Africa",
         "tier": "unverified",
         "source_kind": "community"
+      },
+      {
+        "title": "Prayer for protection: a comparative perspective on Psalms in relation to Lozi prayer traditions",
+        "url": "https://repository.up.ac.za/server/api/core/bitstreams/ade0dfa8-65e2-42d7-afcf-914a6ab8ad2f/content",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Thèse de doctorat de Liswaniso Kamuwanga, université de Pretoria, 2008. Chapitre 2 lu le 8 novembre 2026, pages 22 à 27 : peuples luyana, roi Mboo, royauté lozi."
+      },
+      {
+        "title": "Barotseland: eight years among the Barotse, avec une introduction de Harry Johnston",
+        "url": "https://www.gutenberg.org/ebooks/71338",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "D. E. C. Stirke, Londres, John Bale, Sons et Danielsson, 1922. Livre de l'époque coloniale, lu sur l'édition numérique du Projet Gutenberg le 8 novembre 2026."
+      },
+      {
+        "title": "Lozi, Glottolog (lozi1239)",
+        "url": "https://glottolog.org/resource/languoid/id/lozi1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue, ISO 639-3 loz ; lue le 8 novembre 2026."
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "lozi1239",
+      "iso639_3": "loz"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Lozi désigne le peuple de la plaine inondable du haut Zambèze, dans l'ouest de la Zambie, qui se nomme lui-même Malozi. D'autres noms existent : Barotse, écrit depuis le milieu du XIXe siècle, et Luyi, un nom plus ancien. Les sources ne s'accordent pas sur l'origine de ces noms ; nous les présentons plus bas. Selon George Nyambe Sumbwa, les Kwangwa et les Kwandi comptent parmi les peuples issus des Luyi ; ils ont leur fiche, comme les Luyana.",

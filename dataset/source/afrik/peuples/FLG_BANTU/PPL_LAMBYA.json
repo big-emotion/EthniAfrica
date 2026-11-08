@@ -58,21 +58,21 @@
       "diaspora": "Presence minoritaire en Zambie (district d'Isoka, environ 17 000 personnes) et expansion vers les plateaux tanzaniens (environ 30 400 personnes)."
     },
     "demography": {
-      "totalPopulation": 200000,
-      "referenceYear": 2025,
-      "source": "Omniglot (59 500 au Malawi + 30 400 en Tanzanie + 17 000 en Zambie = ~107 000 en 2006, projection 2025 estimee a 200 000) ; Wikipedia EN (85 000 en 2001)",
+      "totalPopulation": 106900,
+      "referenceYear": 2006,
+      "source": "Omniglot, qui additionne 59 500 locuteurs au Malawi, 30 400 en Tanzanie et 17 000 en Zambie vers 2006. Source de seconde main, non vérifiée par le projet ; nous n'avons trouvé aucun chiffre plus récent.",
       "distributionByCountry": [
         {
           "country": "MWI",
-          "population": 110000
+          "population": 59500
         },
         {
           "country": "TZA",
-          "population": 70000
+          "population": 30400
         },
         {
           "country": "ZMB",
-          "population": 20000
+          "population": 17000
         }
       ]
     },
@@ -107,7 +107,11 @@
         "tier": "unverified",
         "source_kind": "community"
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "lamb1272",
+      "iso639_3": "lai"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Lambya désigne un peuple de la région frontalière du Malawi, de la Tanzanie et de la Zambie, ainsi que son royaume et sa langue. On ne sait pas comment ce peuple se nomme lui-même. On ne sait pas non plus avec certitude d'où vient le nom Lambya ; nous présentons plus bas ses traces.",

@@ -110,8 +110,19 @@
         "url": "https://www.africabib.org/rec.php?RID=326712321",
         "tier": "referenced",
         "source_kind": "repository"
+      },
+      {
+        "title": "Lamba, Glottolog (lamb1271)",
+        "url": "https://glottolog.org/resource/languoid/id/lamb1271",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de la langue, ISO 639-3 lam ; lue le 8 novembre 2026."
       }
-    ]
+    ],
+    "externalIdentifiers": {
+      "glottocode": "lamb1271",
+      "iso639_3": "lam"
+    }
   },
   "nameHistory": {
     "summary": "Le nom Lamba désigne un peuple bantou du Copperbelt, en Zambie, et du sud du Katanga, en République démocratique du Congo, qui se nomme lui-même Lamba et appelle son pays Ilamba. On ne sait pas avec certitude d'où vient le nom Lamba : les sources lues ne l'expliquent pas. Le nom composé Lala-Lamba vient d'un manuel de langue de 1908 et ne désigne pas un peuple à part. La plus ancienne trace de Lamba date de 1798, sous la forme Arambas.",
