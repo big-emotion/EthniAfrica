@@ -37,6 +37,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Brief 17 — Search chrome: focus, list structure and the 320 px header](design/mockups/briefs/17-search-chrome-accessibility.md)
 - [Brief 18 — Related-only search results](design/mockups/briefs/18-related-only-search-results.md)
 - [Brief 19 — A recorded spelling answers the search](design/mockups/briefs/19-recorded-search-term.md)
+- [Brief 20 — The answer card in Claude and ChatGPT, and the install page](design/mockups/briefs/20-agent-answer-card.md)
 - [Name-page mockup briefs — one per type of name](design/mockups/briefs/README.md)
 - [Claude Design prompt, step 1 — shared rules and brief 1](design/mockups/briefs/claude-design-prompt-01.md)
 - [Claude Design prompt, step 2 — brief 2, the people fiche](design/mockups/briefs/claude-design-prompt-02.md)
@@ -126,6 +127,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Reader demand journal — 2026-11-05](audience/demand/2026-11-05.md)
 - [Reader demand journal — 2026-11-06](audience/demand/2026-11-06.md)
 - [Reader demand journal — 2026-11-07](audience/demand/2026-11-07.md)
+- [Reader demand journal — 2026-11-09](audience/demand/2026-11-09.md)
 
 ## Runbooks — procedures, and records of ones already run
 
@@ -133,13 +135,13 @@ were referenced by nothing at all, two of them written that same week.
 - [Anthroponym coverage plan](runbooks/anthroponym-coverage-plan.md)
 - [Anthroponym fiche research protocol](runbooks/anthroponym-fiche-research.md)
 - [Runbook — article media on the application host](runbooks/article-media.md)
-- [Runbook — submitting the public agent to the Claude and ChatGPT directories](runbooks/public-agent-directory-submission.md)
 - [Runbook — reading Facebook and Instagram audience data (read-only)](runbooks/meta-graph-readonly.md)
 - [Runbook — Supabase migration state](runbooks/migration-state.md)
 - [Moderation access](runbooks/moderation-access.md)
 - [Runbook — named-person candidate extraction](runbooks/person-extraction.md)
 - [Runbook — self-hosted Plausible Analytics](runbooks/plausible-self-hosted.md)
 - [Runbook — production deploy and rollback](runbooks/production-deploy.md)
+- [Runbook: submitting the public agent to the Claude and ChatGPT directories](runbooks/public-agent-directory-submission.md)
 - [Public agent (MCP server)](runbooks/public-agent-mcp.md)
 - [Runbook — regenerating the quiz question bank](runbooks/quiz-bank-regeneration.md)
 - [Restore drill — 2025-07-14](runbooks/restore-drill-2025-07-14.md)
