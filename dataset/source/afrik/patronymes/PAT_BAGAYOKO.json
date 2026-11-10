@@ -81,7 +81,10 @@
       ]
     }
   ],
-  "casteOrSocialFunction": null,
+  "casteOrSocialFunction": {
+    "value": "Le dictionnaire des jamuw donne à l'entrée Bàgayɔgɔ deux statuts, nùmu (forgeron) et hɔ̀rɔn (condition libre, non artisanale). Le jamu porte donc à la fois une condition libre et un statut artisanal. Le dictionnaire ne dit pas ici lequel s'applique dans quelle région.",
+    "sourceRefs": ["bamadaba-jamuw"]
+  },
   "bearers": [],
   "homonyms": [],
   "sources": [
@@ -135,10 +138,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
     {
       "fieldPath": "bearers",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
