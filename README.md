@@ -110,7 +110,9 @@ Resources under `/api/v2/`: `countries`, `peoples`, `language-families`, `langua
 JSON-RPC message per POST, no session, no event stream) with two tools, `rechercher_nom` and
 `lire_fiche`. It reads the corpus through the v2 handlers and services, stores nothing about the
 caller, and is metered by `src/proxy.ts` like every other `/api/v2` route. Draft: the frame it
-answers in is built in `src/lib/publicAgent/frame.ts`.
+answers in is built in `src/lib/publicAgent/frame.ts`. A third tool, `proposer_nom`, files a
+reader's proposal as a GitHub issue in a private repository for human review; it is off until
+configured, see [`docs/runbooks/public-agent-proposals.md`](docs/runbooks/public-agent-proposals.md).
 
 ```bash
 curl http://localhost:3000/api/v2/countries

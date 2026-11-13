@@ -147,6 +147,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Runbook — production deploy and rollback](runbooks/production-deploy.md)
 - [Runbook: submitting the public agent to the Claude and ChatGPT directories](runbooks/public-agent-directory-submission.md)
 - [Public agent (MCP server)](runbooks/public-agent-mcp.md)
+- [Public agent proposals](runbooks/public-agent-proposals.md)
 - [Runbook — regenerating the quiz question bank](runbooks/quiz-bank-regeneration.md)
 - [Restore drill — 2025-07-14](runbooks/restore-drill-2025-07-14.md)
 - [Restore drill — 2026-09-22](runbooks/restore-drill-2026-09-22.md)

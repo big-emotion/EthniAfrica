@@ -7,7 +7,8 @@
  *       A stateless Model Context Protocol server over the corpus. Each POST
  *       carries one JSON-RPC 2.0 message and gets one JSON answer; there is
  *       no session and no event stream. Two read-only tools: `rechercher_nom`
- *       (search a name) and `lire_fiche` (read one fiche). Answers are in
+ *       (search a name) and `lire_fiche` (read one fiche); and, when
+ *       enabled, `proposer_nom`, which files a proposal for human review. Answers are in
  *       French and follow one frame: in brief, where the name comes from,
  *       what the sources say, language, meaning and reason, other names,
  *       common beliefs, what is not known, and where to read further. A
@@ -48,7 +49,10 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    const answer = await handlePublicAgentMessage(message);
+    const answer = await handlePublicAgentMessage(message, {
+      // Set by the proxy from a validated key; it strips any client-sent copy.
+      apiKeyId: request.headers.get("x-api-key-id"),
+    });
     if (answer === null) {
       return applyCorsHeaders(new Response(null, { status: 202 }));
     }
