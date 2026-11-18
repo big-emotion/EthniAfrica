@@ -29,6 +29,16 @@ export interface FlagCreateInput {
   counter_source_citation?: string;
   proposed_rewrite?: string;
   contribution_payload?: Record<string, unknown>;
+  /** `{subject}:{id}:{section}` of a block comment (ARCH-032). */
+  block_key?: string;
+  /** The pseudonym shown on a comment; absent reads as « Un lecteur ». */
+  display_name?: string;
+  knowledge_basis?: string;
+  /**
+   * Set only for a reader already signed in. Absent, the flag stays private
+   * until its author confirms an address (`publishPendingFlagsForEmail`).
+   */
+  published_at?: string;
 }
 
 export interface CreatedFlag {
@@ -197,6 +207,10 @@ export async function createFlag(
       contributor_id: contributorId,
       status: "open",
       human_verified: true,
+      block_key: input.block_key ?? null,
+      knowledge_basis: input.knowledge_basis ?? null,
+      contributor_display_name_snapshot: input.display_name ?? null,
+      published_at: input.published_at ?? null,
     })
     .select("id, public_slug, status, created_at")
     .single();

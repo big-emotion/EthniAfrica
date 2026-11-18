@@ -68,7 +68,8 @@ function makeDependencies() {
       id: createdFlag.id,
     }),
     createReporterContact: vi.fn().mockResolvedValue("verification-token"),
-    sendFlagVerificationEmail: vi.fn().mockResolvedValue(undefined),
+    getReaderSession: vi.fn().mockResolvedValue(null),
+    sendReaderSignInLink: vi.fn().mockResolvedValue(true),
   };
 }
 
@@ -120,7 +121,7 @@ describe("flag handlers", () => {
 
       expect(result.status).toBe(201);
       expect(dependencies.createReporterContact).not.toHaveBeenCalled();
-      expect(dependencies.sendFlagVerificationEmail).not.toHaveBeenCalled();
+      expect(dependencies.sendReaderSignInLink).not.toHaveBeenCalled();
     });
 
     // @req REQ-012
@@ -148,24 +149,32 @@ describe("flag handlers", () => {
       dependencies.createReporterContact.mockResolvedValue(null);
 
       const result = await handleFlagCreate(
-        { ...validInput(), reporter_email: "lectrice@example.org" },
+        {
+          ...validInput(),
+          reporter_email: "lectrice@example.org",
+          age_confirmed: true,
+        },
         { accessToken: null },
         dependencies
       );
 
       expect(result.status).toBe(201);
-      expect(dependencies.sendFlagVerificationEmail).not.toHaveBeenCalled();
+      expect(dependencies.sendReaderSignInLink).not.toHaveBeenCalled();
     });
 
     // @req REQ-012
-    it("still reports success when the verification e-mail cannot be sent", async () => {
+    it("still reports success when the sign-in link cannot be sent", async () => {
       const dependencies = makeDependencies();
-      dependencies.sendFlagVerificationEmail.mockRejectedValue(
+      dependencies.sendReaderSignInLink.mockRejectedValue(
         new Error("Resend unavailable")
       );
 
       const result = await handleFlagCreate(
-        { ...validInput(), reporter_email: "lectrice@example.org" },
+        {
+          ...validInput(),
+          reporter_email: "lectrice@example.org",
+          age_confirmed: true,
+        },
         { accessToken: null },
         dependencies
       );
@@ -477,6 +486,166 @@ describe("flag handlers", () => {
           errors: [],
         },
       });
+    });
+  });
+
+  describe("handleFlagCreate — block comments", () => {
+    function commentInput(extra: Record<string, unknown> = {}) {
+      return {
+        ...validInput(),
+        block_key: "people:PPL_YORUBA:naming",
+        display_name: " Aïssata ",
+        knowledge_basis: "family",
+        ...extra,
+      };
+    }
+
+    // @req REQ-212
+    it("stores a comment privately when nobody is signed in", async () => {
+      const dependencies = makeDependencies();
+
+      const result = await handleFlagCreate(
+        commentInput(),
+        { accessToken: null },
+        dependencies
+      );
+
+      expect(result.status).toBe(201);
+      const [contributorId, input] = dependencies.createFlag.mock.calls[0];
+      expect(contributorId).toBeNull();
+      expect(input).toMatchObject({
+        block_key: "people:PPL_YORUBA:naming",
+        display_name: "Aïssata",
+        knowledge_basis: "family",
+      });
+      expect(input.published_at).toBeUndefined();
+    });
+
+    // @req REQ-212
+    it("publishes at once, under the reader's account, when a reader session comes with it", async () => {
+      const dependencies = makeDependencies();
+      dependencies.getReaderSession.mockResolvedValue({ id: "reader-1" });
+
+      const result = await handleFlagCreate(
+        commentInput(),
+        { accessToken: null },
+        dependencies
+      );
+
+      expect(result.status).toBe(201);
+      const [contributorId, input] = dependencies.createFlag.mock.calls[0];
+      expect(contributorId).toBe("reader-1");
+      expect(Date.parse(input.published_at)).not.toBeNaN();
+      expect(dependencies.checkFlagRateLimit).toHaveBeenCalledWith("reader-1");
+    });
+
+    // @req REQ-212
+    it("refuses a block key outside the vocabulary", async () => {
+      const dependencies = makeDependencies();
+
+      const result = await handleFlagCreate(
+        commentInput({ block_key: "people:PPL_YORUBA:footer" }),
+        { accessToken: null },
+        dependencies
+      );
+
+      expect(result.status).toBe(400);
+      expect(result.body.errors[0].field).toBe("block_key");
+      expect(dependencies.createFlag).not.toHaveBeenCalled();
+    });
+
+    // @req REQ-212
+    it("refuses a pseudonym longer than forty characters", async () => {
+      const dependencies = makeDependencies();
+
+      const result = await handleFlagCreate(
+        commentInput({ display_name: "x".repeat(41) }),
+        { accessToken: null },
+        dependencies
+      );
+
+      expect(result.status).toBe(400);
+      expect(dependencies.createFlag).not.toHaveBeenCalled();
+    });
+
+    // @req REQ-212
+    it("refuses a knowledge basis outside the four neutral answers", async () => {
+      const dependencies = makeDependencies();
+
+      const result = await handleFlagCreate(
+        commentInput({ knowledge_basis: "ethnicity" }),
+        { accessToken: null },
+        dependencies
+      );
+
+      expect(result.status).toBe(400);
+    });
+
+    /**
+     * The address creates a public account once confirmed, and the charter
+     * sets that account's floor at fifteen.
+     */
+    // @req REQ-212
+    it.each([undefined, false])(
+      "refuses an address whose age confirmation is %s",
+      async (ageConfirmed) => {
+        const dependencies = makeDependencies();
+
+        const result = await handleFlagCreate(
+          commentInput({
+            reporter_email: "lectrice@example.org",
+            age_confirmed: ageConfirmed,
+          }),
+          { accessToken: null },
+          dependencies
+        );
+
+        expect(result.status).toBe(400);
+        expect(result.body.errors[0].field).toBe("age_confirmed");
+        expect(dependencies.createFlag).not.toHaveBeenCalled();
+      }
+    );
+
+    // @req REQ-212
+    it("records the address and sends a sign-in link to it", async () => {
+      const dependencies = makeDependencies();
+
+      const result = await handleFlagCreate(
+        commentInput({
+          reporter_email: "lectrice@example.org",
+          age_confirmed: true,
+        }),
+        { accessToken: null },
+        dependencies
+      );
+
+      expect(result.status).toBe(201);
+      expect(dependencies.createReporterContact).toHaveBeenCalledWith(
+        createdFlag.id,
+        "lectrice@example.org",
+        "fr"
+      );
+      expect(dependencies.sendReaderSignInLink).toHaveBeenCalledWith(
+        "lectrice@example.org"
+      );
+    });
+
+    // Already signed in: the comment is public and the account exists.
+    // @req REQ-212
+    it("sends no sign-in link to a reader who is already signed in", async () => {
+      const dependencies = makeDependencies();
+      dependencies.getReaderSession.mockResolvedValue({ id: "reader-1" });
+
+      await handleFlagCreate(
+        commentInput({
+          reporter_email: "lectrice@example.org",
+          age_confirmed: true,
+        }),
+        { accessToken: null },
+        dependencies
+      );
+
+      expect(dependencies.sendReaderSignInLink).not.toHaveBeenCalled();
     });
   });
 

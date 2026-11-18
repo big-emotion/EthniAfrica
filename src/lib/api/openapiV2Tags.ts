@@ -113,6 +113,11 @@ export const OPENAPI_V2_TAGS: { name: string; description: string }[] = [
     description:
       "Words (WRD_*) whose history explains Africa through its names, each told in the shared nameHistory block (REQ-196, ARCH-028).",
   },
+  {
+    name: "API v2 - Comments",
+    description:
+      "Reader comments on the blocks of a page (REQ-212). A comment is written through POST /api/v2/flags with a block_key and stays private until its author confirms an address; these endpoints read the published threads, add a reply as a signed-in reader and report abuse anonymously.",
+  },
 ];
 
 /**

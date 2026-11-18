@@ -129,7 +129,10 @@ describe("OpenAPI v2 spec - BearerAuth security", () => {
         const explicitlyPublic = opSecurity.length === 0;
         const hasSupportedAuth = opSecurity.some(
           (requirement) =>
-            "BearerAuth" in requirement || "SupabaseJwtAuth" in requirement
+            "BearerAuth" in requirement ||
+            "SupabaseJwtAuth" in requirement ||
+            // A reader route (REQ-212): the session is the site's cookie.
+            "ReaderSessionCookie" in requirement
         );
         expect(explicitlyPublic || hasSupportedAuth).toBe(true);
       }
