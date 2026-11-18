@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useId, useState, type ReactNode } from "react";
 
 import { CaseFile } from "@/components/admin/CaseFile";
 import { Button } from "@/components/ui/button";
@@ -92,12 +92,20 @@ export function ModerationQueue({ language, reports }: ModerationQueueProps) {
   );
 }
 
-function QueueRow({
+/**
+ * One report with its status moves and case file. The grouped inbox renders
+ * the same row and slots the thread (publication, replies, hide) inside it,
+ * so a status move behaves the same from either view.
+ */
+// @req REQ-214
+export function QueueRow({
   language,
   report,
+  children,
 }: {
   language: Language;
   report: QueuedReport;
+  children?: ReactNode;
 }) {
   const noteId = useId();
   const caseFileId = useId();
@@ -202,6 +210,8 @@ function QueueRow({
           </pre>
         </details>
       )}
+
+      {children}
 
       {moves.length > 0 && (
         <>

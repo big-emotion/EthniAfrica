@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { ModerationInbox } from "@/components/admin/ModerationInbox";
 import { ModerationQueue } from "@/components/admin/ModerationQueue";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { FacetFilterBar } from "@/components/hubs/facets/FacetFilterBar";
@@ -10,6 +11,7 @@ import {
   type FlagKind,
   type FlagStatus,
 } from "@/api/v2/services/flags";
+import { listModerationInbox } from "@/api/v2/services/moderationInbox";
 import { getModeratorSession } from "@/lib/supabase/moderator";
 import {
   QUEUE_PAGE_SIZES,
@@ -19,6 +21,7 @@ import {
   type QueueSearchParams,
 } from "@/lib/admin/queueSearchParams";
 import { adminCopy } from "@/lib/i18n/copy/admin";
+import { moderationConsoleCopy } from "@/lib/i18n/copy/moderationConsole";
 import { getStaticPageRoute } from "@/lib/routing";
 import { noIndexMetadata } from "@/lib/seo/noIndexMetadata";
 import type { Language } from "@/types/shared";
@@ -58,6 +61,9 @@ export async function generateMetadata({
   const { lang } = await params;
   return noIndexMetadata(adminCopy[lang as Language].queue.metadataTitle);
 }
+
+/** `?vue=liste`: the flat list the console opened on before REQ-214. */
+const LIST_VIEW = "liste";
 
 // Reports are mutable and the queue must never be served stale to the person
 // deciding on them.
@@ -105,6 +111,58 @@ export default async function ModerationQueuePage({
   const sortOptions = [{ value: "oldest", label: copy.oldestFirst }];
   const queueRoute = getStaticPageRoute(language, "admin");
   const params = await searchParams;
+  const inboxCopy = moderationConsoleCopy[language].inbox;
+
+  const consoleHeader = (
+    <>
+      <p className="max-w-3xl text-afh-small text-afh-text-soft">
+        {copy.guidance}
+      </p>
+
+      <p className="text-afh-small">
+        <Link
+          className="underline underline-offset-2"
+          href={`${queueRoute}/sources`}
+        >
+          {copy.sourceReviewLink}
+        </Link>
+      </p>
+
+      <p className="text-afh-small">
+        <Link
+          className="underline underline-offset-2"
+          href={`${queueRoute}/recherches`}
+        >
+          {copy.searchReportLink}
+        </Link>
+      </p>
+    </>
+  );
+
+  // REQ-214: the grouped inbox is the default; the flat list, with its
+  // filters and paging, stays one link away.
+  if (firstParam(params, "vue") !== LIST_VIEW) {
+    const inbox = await listModerationInbox();
+    return (
+      <PageLayout language={language} title={copy.title}>
+        <div className="mx-auto w-full max-w-4xl space-y-afh-xl">
+          {consoleHeader}
+
+          <p className="text-afh-small">
+            <Link
+              className="underline underline-offset-2"
+              href={`${queueRoute}?vue=${LIST_VIEW}`}
+            >
+              {inboxCopy.listView}
+            </Link>
+          </p>
+
+          <ModerationInbox language={language} inbox={inbox} />
+        </div>
+      </PageLayout>
+    );
+  }
+
   const status = pickOption<FlagStatus>(
     firstParam(params, "statut"),
     statusOptions
@@ -128,39 +186,24 @@ export default async function ModerationQueuePage({
   const pageCount = Math.max(1, Math.ceil(total / pageSize));
 
   function buildHref(nextPage: number, nextSize: number): string {
-    const query = new URLSearchParams();
+    const query = new URLSearchParams({ vue: LIST_VIEW });
     if (status) query.set("statut", status);
     if (kind) query.set("type", kind);
     if (entityType) query.set("entite", entityType);
     if (sort === "oldest") query.set("tri", "oldest");
     if (nextSize !== QUEUE_PAGE_SIZES[0]) query.set("taille", String(nextSize));
     if (nextPage > 1) query.set("page", String(nextPage));
-    const suffix = query.toString();
-    return suffix ? `${queueRoute}?${suffix}` : queueRoute;
+    return `${queueRoute}?${query.toString()}`;
   }
 
   return (
     <PageLayout language={language} title={copy.title}>
       <div className="mx-auto w-full max-w-4xl space-y-afh-xl">
-        <p className="max-w-3xl text-afh-small text-afh-text-soft">
-          {copy.guidance}
-        </p>
+        {consoleHeader}
 
         <p className="text-afh-small">
-          <Link
-            className="underline underline-offset-2"
-            href={`${queueRoute}/sources`}
-          >
-            {copy.sourceReviewLink}
-          </Link>
-        </p>
-
-        <p className="text-afh-small">
-          <Link
-            className="underline underline-offset-2"
-            href={`${queueRoute}/recherches`}
-          >
-            {copy.searchReportLink}
+          <Link className="underline underline-offset-2" href={queueRoute}>
+            {inboxCopy.groupedView}
           </Link>
         </p>
 
@@ -197,6 +240,7 @@ export default async function ModerationQueuePage({
             },
           ]}
           preservedParams={{
+            vue: LIST_VIEW,
             taille: pageSize === QUEUE_PAGE_SIZES[0] ? null : String(pageSize),
           }}
         />
