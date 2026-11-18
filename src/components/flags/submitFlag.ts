@@ -1,50 +1,30 @@
 import type { FlagSubmissionPayload } from "@/components/flags/FlagForm";
-import { createBrowserSupabaseClient } from "@/lib/supabase/auth-client";
 
 /**
  * Sending a report, from wherever it was written.
  *
- * Two surfaces now write one: the dialog a fiche's reading rail opens, and the
- * "Signaler une erreur" page. They differ in everything a reader can see and
- * in nothing that happens after the send button, so the send lives here rather
- * than being copied — a second copy is how one of them would quietly stop
- * attaching the session, or stop reading the public slug back.
+ * Several surfaces write one: the dialog a fiche's reading rail opens, the
+ * "Signaler une erreur" page and the comment sheet of the result page. They
+ * differ in everything a reader can see and in nothing that happens after the
+ * send button, so the send lives here rather than being copied.
  *
  * It deliberately does not toast, track, or close anything: those belong to
  * the surface, which is the only thing that knows whether it has a dialog to
  * close or a confirmation panel to swap in.
- */
-
-/**
- * The session, when there is one, for attribution only.
  *
- * This used to be a gate: no session, or an account whose age was not
- * confirmed, and the dialog offered links instead of a form. Reporting now
- * costs no account (moderation charter §2), so the token is passed when it
- * exists and omitted when it does not — the API decides what to credit, and
- * accepts either way.
+ * No bearer travels with it. The proxy reads a bearer on `/api/v2` as an API
+ * key, so a session token sent that way was refused as an invalid key; the
+ * API reads a signed-in reader from the site's own cookies, which a
+ * same-origin request carries without being asked (REQ-212).
  */
-async function currentAccessToken(): Promise<string | null> {
-  const supabase = createBrowserSupabaseClient();
-  const {
-    data: { session },
-  } = await supabase.auth.getSession();
-
-  return session?.access_token ?? null;
-}
-
 // @req REQ-012
+// @req REQ-212
 export async function submitFlag(
   payload: FlagSubmissionPayload
 ): Promise<{ public_slug: string }> {
-  const accessToken = await currentAccessToken();
-
   const response = await fetch("/api/v2/flags", {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      ...(accessToken ? { Authorization: `Bearer ${accessToken}` } : {}),
-    },
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload),
   });
   const json = await response.json();

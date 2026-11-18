@@ -218,6 +218,32 @@ describe("FlagTarget", () => {
         })
       );
     });
+
+    // The proxy reads a bearer on /api/v2 as an API key, so a session token
+    // sent that way is refused as an invalid key (401). The API reads the
+    // signed-in reader from the site's cookies instead (REQ-212).
+    // @req REQ-212
+    it("sends no bearer, even for a signed-in reader", async () => {
+      const user = userEvent.setup();
+
+      await openAndReachForm();
+
+      await user.type(
+        screen.getByLabelText(/qu.est-ce qui ne va pas/i),
+        "Cette explication contient assez de détails pour être examinée."
+      );
+      await user.click(
+        screen.getByRole("button", { name: /valider le contrôle/i })
+      );
+      await user.click(screen.getByRole("button", { name: "Envoyer" }));
+
+      await waitFor(() => expect(fetch).toHaveBeenCalledOnce());
+      const headers = vi.mocked(fetch).mock.calls[0][1]?.headers as Record<
+        string,
+        string
+      >;
+      expect(headers).not.toHaveProperty("Authorization");
+    });
   });
 
   // @req REQ-180
