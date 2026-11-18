@@ -152,6 +152,19 @@ describe("getFlagBySlug", () => {
     );
   });
 
+  // Migration 116 lets the anon key see public profiles only; asking for the
+  // rest would come back empty anyway, so the query says what it can get.
+  // @req REQ-014
+  it("asks only for a profile its owner made public", async () => {
+    mockSupabase.maybeSingle
+      .mockResolvedValueOnce({ data: baseFlag, error: null })
+      .mockResolvedValueOnce({ data: null, error: null });
+
+    await getFlagBySlug("ABC123DEFG");
+
+    expect(mockSupabase.eq).toHaveBeenCalledWith("public", true);
+  });
+
   it("returns contributor with public = false (privacy guard expects caller to handle)", async () => {
     mockSupabase.maybeSingle
       .mockResolvedValueOnce({ data: baseFlag, error: null })

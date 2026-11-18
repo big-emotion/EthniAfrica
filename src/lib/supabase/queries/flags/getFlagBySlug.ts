@@ -70,6 +70,7 @@ export async function getFlagBySlug(
     const { data: profile, error: profileError } = await supabase
       .from("contributor_profiles")
       .select("display_name, public")
+      .eq("public", true)
       .or(`id.eq.${flag.contributor_id},user_id.eq.${flag.contributor_id}`)
       .maybeSingle();
 
