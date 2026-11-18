@@ -27,3 +27,12 @@ if (typeof globalThis.Path2D === "undefined") {
 // configured, so route tests asserting on that header need one. Tests that
 // exercise the unconfigured case delete this variable themselves.
 process.env.CORS_ALLOWED_ORIGIN ??= "http://localhost:3000";
+
+// The search result page reads its block comments on mount (REQ-212). No
+// suite runs the API, so that one read answers "no comments" here instead of
+// dialling localhost. A suite that stubs `fetch` itself replaces this.
+const realFetch = globalThis.fetch;
+globalThis.fetch = ((input: RequestInfo | URL, init?: RequestInit) =>
+  String(input).startsWith("/api/v2/comments?")
+    ? Promise.resolve(Response.json({ data: [] }))
+    : realFetch(input, init)) as typeof fetch;
