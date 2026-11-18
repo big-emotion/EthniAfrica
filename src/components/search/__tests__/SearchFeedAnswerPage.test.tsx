@@ -730,7 +730,13 @@ describe("no block says it is empty", () => {
     const { container } = renderAnswer("lingala", [subjectOf(withoutSpeakers)]);
 
     expect(blockIds(container)).not.toContain("answer-where");
-    expect(container.textContent).not.toMatch(/aucun|pas de donn/i);
+    // A comment footer's « Aucun commentaire » speaks of the readers, not of
+    // the data: it is the boards' invitation (brief 21), not an empty block.
+    const answer = container.cloneNode(true) as HTMLElement;
+    answer
+      .querySelectorAll("[data-comment-footer]")
+      .forEach((footer) => footer.remove());
+    expect(answer.textContent).not.toMatch(/aucun|pas de donn/i);
   });
 });
 

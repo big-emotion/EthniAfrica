@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
-import { render, screen, within } from "@testing-library/react";
+import { fireEvent, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it, onTestFinished, vi } from "vitest";
 
@@ -149,7 +149,38 @@ describe("SearchFeed", () => {
     });
     expect(actions).toHaveLength(1);
     expect(actions[0].closest('[data-feed-block="verdict"]')).not.toBeNull();
-    expect(actions[0]).toHaveAttribute("data-flag-kind", "contribution");
+  });
+
+  // Brief 21 (approved 2026-11-18): on the result page « Proposer une
+  // source » opens the comment form, and the verdict closes on its footer.
+  // @req REQ-212
+  it("opens the comment form from the verdict, which closes on its footer", async () => {
+    render(
+      <SearchFeed
+        query="voundou"
+        language="fr"
+        state="unknown"
+        results={[]}
+        subjects={[]}
+        leads={[]}
+        companions={emptyCompanions}
+      />
+    );
+
+    const verdict = screen
+      .getByRole("button", { name: "Proposer une source" })
+      .closest('[data-feed-block="verdict"]') as HTMLElement;
+    expect(await within(verdict).findByText("Aucun commentaire")).toBeVisible();
+    expect(
+      within(verdict).getByRole("button", { name: "Commenter" })
+    ).toBeVisible();
+
+    fireEvent.click(
+      screen.getByRole("button", { name: "Proposer une source" })
+    );
+    expect(
+      await screen.findByRole("button", { name: "Envoyer mon commentaire" })
+    ).toBeInTheDocument();
   });
 
   // The verdict's button is the confessing page's one call to action, so what

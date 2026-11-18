@@ -34,6 +34,14 @@ import { SpellingChoicesBlock } from "@/components/search/feed/SpellingChoicesBl
 import { OriginBlock } from "@/components/search/answer/OriginBlock";
 import { CountriesAnswer } from "@/components/search/feed/CountriesAnswer";
 import { SubjectAnswer } from "@/components/search/feed/SubjectAnswer";
+import {
+  BlockCommentsFooter,
+  BlockCommentsProvider,
+  PageCommentAction,
+  ParticipationInvite,
+} from "@/components/comments/BlockComments";
+import { pageBlockKeys } from "@/lib/comments/pageBlockKeys";
+import { commentsCopy } from "@/lib/i18n/copy/comments";
 import { VerdictBlock } from "@/components/search/feed/VerdictBlock";
 import { WordAnswerPage } from "@/components/search/feed/WordAnswerPage";
 import {
@@ -340,7 +348,23 @@ function recordedFicheLine(
 
 // @req REQ-178
 // @req REQ-180
-export function SearchFeed({
+/**
+ * The result page, with its comments per passage (brief 21, REQ-212): one
+ * read of every block's comments for the page, and one sheet.
+ */
+// @req REQ-212
+export function SearchFeed(props: SearchFeedProps) {
+  return (
+    <BlockCommentsProvider
+      blockKeys={pageBlockKeys(props.subjects, normalizedQueryId(props.query))}
+      language={props.language}
+    >
+      <SearchFeedReading {...props} />
+    </BlockCommentsProvider>
+  );
+}
+
+function SearchFeedReading({
   query,
   language,
   state,
@@ -854,6 +878,8 @@ export function SearchFeed({
               titleScale={titleScale}
               choices={choicesFor(subject!, peoplesOfFamily)}
               peopleLink={peopleLinkFor(subject!)}
+              subject={{ type: subject!.type, id: subject!.id }}
+              invite={index === 0}
               language={language}
             />
           );
@@ -884,23 +910,45 @@ export function SearchFeed({
     />
   );
   // The one way a reader with a name we do not hold says so (brief 12).
+  const proposeSourceClass =
+    "min-h-11 border-[color:var(--accent)] bg-[color:var(--accent-tint)] py-0 text-[color:var(--accent-foreground)] hover:bg-[color:var(--accent-tint)] hover:text-[color:var(--accent-foreground)] hover:brightness-95";
+  // Brief 21: the verdict's « Proposer une source » opens the comment form
+  // too, so the unknown name has one form and one queue; its footer follows.
   const proposeSource = (
-    <SearchFeedContributionAction
-      language={language}
-      // The form only displays fieldLabel; the request carries the type, id
-      // and fieldPath, which stay as they were. Without it the form no longer
-      // prints « Nous nous sommes trompés ? », the question brief 12 part A
-      // removed from this page.
-      target={{ ...contributionTarget, fieldLabel: undefined }}
-      label={answerCopy.invitationAction}
-      preferredKind="contribution"
-      variant="outline"
-      // Board search-unknown-430 (`.ea-owed-action`): the button's own medium
-      // weight, on the accent tint, in the accent fill's ink. The page's body
-      // ink turns light at night on a tint that stays light (1.12:1).
-      className="min-h-11 border-[color:var(--accent)] bg-[color:var(--accent-tint)] py-0 text-[color:var(--accent-foreground)] hover:bg-[color:var(--accent-tint)] hover:text-[color:var(--accent-foreground)] hover:brightness-95"
-    />
+    <>
+      <PageCommentAction
+        target={contributionTarget}
+        label={answerCopy.invitationAction}
+        className={proposeSourceClass}
+        fallback={proposeSourceDialog()}
+      />
+      <BlockCommentsFooter
+        subject={{ type: "search-query", id: normalizedQueryId(query) }}
+        section="verdict"
+        label={commentsCopy[language].blocks.verdict}
+        name={displayName}
+      />
+    </>
   );
+  function proposeSourceDialog() {
+    return (
+      <SearchFeedContributionAction
+        language={language}
+        // The form only displays fieldLabel; the request carries the type, id
+        // and fieldPath, which stay as they were. Without it the form no longer
+        // prints « Nous nous sommes trompés ? », the question brief 12 part A
+        // removed from this page.
+        target={{ ...contributionTarget, fieldLabel: undefined }}
+        label={answerCopy.invitationAction}
+        preferredKind="contribution"
+        variant="outline"
+        // Board search-unknown-430 (`.ea-owed-action`): the button's own medium
+        // weight, on the accent tint, in the accent fill's ink. The page's body
+        // ink turns light at night on a tint that stays light (1.12:1).
+        className={proposeSourceClass}
+      />
+    );
+  }
   // The same invitation for a spelling we do not hold (brief 16). Under the
   // choices it stays quiet: the choice is that page's one action, and the
   // accented button would be a second one, larger than the chip.
@@ -1010,6 +1058,19 @@ export function SearchFeed({
                   : answerCopy.appellationsLead
                 : undefined
             }
+            groupFooter={(subjectId) => {
+              const subject = subjects.find(
+                (candidate) => `${candidate.type}:${candidate.id}` === subjectId
+              );
+              return subject ? (
+                <BlockCommentsFooter
+                  subject={{ type: subject.type, id: subject.id }}
+                  section="naming"
+                  label={commentsCopy[language].blocks.names}
+                  name={getLocalizedSearchResultName(subject, language)}
+                />
+              ) : null;
+            }}
             language={language}
           />
         );
@@ -1302,6 +1363,7 @@ export function SearchFeed({
                   />
                 ) : undefined
               }
+              subject={{ type: subject.type, id: subject.id }}
               openName={openNames[keyOf(subject)]}
               onOpenNameChange={(nameText) =>
                 setOpenNames((open) => ({
@@ -1312,13 +1374,17 @@ export function SearchFeed({
               language={language}
               seeAlso={
                 index === 0 ? (
-                  <SeeAlso
-                    language={language}
-                    reviewed={Boolean(presentation)}
-                    lenses={lenses}
-                    active={activeLens}
-                    onChange={setActiveLens}
-                  />
+                  <>
+                    <SeeAlso
+                      language={language}
+                      reviewed={Boolean(presentation)}
+                      lenses={lenses}
+                      active={activeLens}
+                      onChange={setActiveLens}
+                    />
+                    {/* After the first answer, never before it (brief 21). */}
+                    <ParticipationInvite />
+                  </>
                 ) : undefined
               }
             />

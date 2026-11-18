@@ -1,5 +1,6 @@
 "use client";
 
+import { PageCommentAction } from "@/components/comments/BlockComments";
 import type { FlagFormTarget } from "@/components/flags/FlagForm";
 import { InlineMarkup } from "@/components/search/feed/InlineMarkup";
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
@@ -24,6 +25,9 @@ export interface OwedBlockProps {
   invitation: { title: string; body: string; action: string };
   contributionTarget: FlagFormTarget;
 }
+
+const INVITATION_ACTION =
+  "mt-afh-lg min-h-11 border-[color:var(--accent)] bg-[color:var(--accent-tint)] py-0 font-semibold text-[color:var(--accent-foreground)] hover:bg-[color:var(--accent-tint)] hover:text-[color:var(--accent-foreground)] hover:brightness-95";
 
 // @req REQ-180
 export function OwedBlock({
@@ -107,17 +111,26 @@ export function OwedBlock({
             <p className="mt-afh-xs text-afh-small leading-[var(--afh-leading-small)] text-afh-text">
               {invitation.body}
             </p>
-            <SearchFeedContributionAction
-              language={language}
+            {/* On a result page it opens the comment form (brief 21,
+                arbitration 1); elsewhere, the report dialog. */}
+            <PageCommentAction
               target={contributionTarget}
               label={invitation.action}
-              preferredKind={
-                contributionTarget.type === "search-query"
-                  ? "contribution"
-                  : "correction-proposal"
+              className={INVITATION_ACTION}
+              fallback={
+                <SearchFeedContributionAction
+                  language={language}
+                  target={contributionTarget}
+                  label={invitation.action}
+                  preferredKind={
+                    contributionTarget.type === "search-query"
+                      ? "contribution"
+                      : "correction-proposal"
+                  }
+                  variant="outline"
+                  className={INVITATION_ACTION}
+                />
               }
-              variant="outline"
-              className="mt-afh-lg min-h-11 border-[color:var(--accent)] bg-[color:var(--accent-tint)] py-0 font-semibold text-[color:var(--accent-foreground)] hover:bg-[color:var(--accent-tint)] hover:text-[color:var(--accent-foreground)] hover:brightness-95"
             />
           </div>
         </div>
