@@ -191,6 +191,29 @@ where it is the page's one action (« Proposer une source »); the closing then
 holds the silence and the conviction. _(Added 2026-10-17, brief 12, approved
 by delegation.)_
 
+### Comments sit on the block they discuss
+
+_Added 2026-11-18 (operator decision; rules in `moderation-charter.md` §2)._
+
+The invitation to correct stays at the closing of every page. In addition, each
+block that answers about **one** subject — what it is, where its name comes
+from, its names, where it lives, its sources, its appellations and its
+timeline — carries its own labelled control showing how many published comments
+it has and letting the reader add one. The verdict of an unknown name carries
+it too. Blocks that speak for several subjects at once (a shared origin, a set
+of countries) do not: a comment there could not say which subject it is about,
+so they keep the closing invitation only.
+
+A comment is anchored to the data, not to the page: `{subject}:{id}:{section}`.
+The same comment therefore shows wherever that block is shown, on the result
+page today and on the fiche tomorrow.
+
+When a contribution led to a published correction of a block, the block says so
+with the remediation shape (`moderation-charter.md` §5, sharp corner): the date,
+and a way to the discussion.
+
+The control's placement and wording are fixed by the approved boards, not here.
+
 ### Two columns have two reading orders
 
 §3 bis states a sequence, and a sequence assumes one column. The three desktop
