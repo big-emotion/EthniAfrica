@@ -73,6 +73,7 @@ export function CommentForm({ request, language, onSent }: CommentFormProps) {
   const [proof, setProof] = useState<Proof | null>(null);
   const [proofFailed, setProofFailed] = useState(false);
   const [proofPending, setProofPending] = useState(false);
+  const [attempt, setAttempt] = useState(0);
   const [openedAt] = useState(() => Date.now());
   const [sending, setSending] = useState(false);
   const [failed, setFailed] = useState(false);
@@ -132,6 +133,7 @@ export function CommentForm({ request, language, onSent }: CommentFormProps) {
       // The server spends the challenge before it can fail downstream, so a
       // second click on the same proof would be refused: a new one is solved.
       setProof(null);
+      setAttempt((count) => count + 1);
       setFailed(true);
     } finally {
       setSending(false);
@@ -327,18 +329,18 @@ export function CommentForm({ request, language, onSent }: CommentFormProps) {
       </div>
 
       {/* Nothing is asked of the reader: the browser pays a small cost and
-          says when it is done. It is solved again after a failed send. */}
-      {proof ? null : (
-        <ProofOfWorkGate
-          language={language}
-          onSolved={(solved) => {
-            setProof(solved);
-            setProofFailed(false);
-            setProofPending(false);
-          }}
-          onFailed={() => setProofFailed(true)}
-        />
-      )}
+          says when it is done. Remounted after a failed send, since the
+          server spent that challenge. */}
+      <ProofOfWorkGate
+        key={attempt}
+        language={language}
+        onSolved={(solved) => {
+          setProof(solved);
+          setProofFailed(false);
+          setProofPending(false);
+        }}
+        onFailed={() => setProofFailed(true)}
+      />
       {proofFailed ? (
         <p role="alert" className={ERROR}>
           {verification.verificationFailed}

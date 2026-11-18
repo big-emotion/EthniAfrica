@@ -107,7 +107,7 @@ function SheetBody({
   const copy = commentsCopy[language];
   const [sent, setSent] = useState<Sent>(null);
   return (
-    <div className="flex flex-col gap-afh-2xl px-afh-2xl pb-afh-6xl">
+    <div className="flex flex-col gap-afh-2xl px-afh-2xl pb-afh-6xl text-left">
       <div className="sticky top-0 z-[2] flex items-start justify-between gap-afh-lg border-b border-afh-border bg-afh-bg pb-afh-lg pt-afh-2xl">
         <div>
           <p className={EYEBROW}>{request.eyebrow}</p>
