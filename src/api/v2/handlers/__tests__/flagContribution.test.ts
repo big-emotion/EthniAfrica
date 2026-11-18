@@ -51,7 +51,8 @@ function makeDependencies() {
     getFlagByIdOrSlug: vi.fn(),
     decodeFlagCursor: vi.fn(),
     createReporterContact: vi.fn().mockResolvedValue(null),
-    sendFlagVerificationEmail: vi.fn().mockResolvedValue(undefined),
+    getReaderSession: vi.fn().mockResolvedValue(null),
+    sendReaderSignInLink: vi.fn().mockResolvedValue(true),
   };
 }
 

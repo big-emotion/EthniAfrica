@@ -557,6 +557,13 @@ const options: swaggerJsdoc.Options = {
           description:
             "Supabase access token for a signed-in session. Pass as Authorization: Bearer <JWT>. A session alone does not open moderator operations: reference-library writes and report transitions also require the address to be on the moderator allowlist.",
         },
+        ReaderSessionCookie: {
+          type: "apiKey",
+          in: "cookie",
+          name: "sb-auth-token",
+          description:
+            "The signed-in reader's Supabase session, as the cookies the confirmation page sets once the reader follows their e-mailed link. The real name is `sb-<project-ref>-auth-token`, possibly split into numbered chunks. Sent by the browser on same-site requests only: the cookies are SameSite=Lax and the API never allows credentials cross-origin. Never pass it as a bearer: on /api/v2 a bearer is read as an API key.",
+        },
       },
       schemas: {
         PaginationMeta: {
@@ -5199,7 +5206,32 @@ const options: swaggerJsdoc.Options = {
               maxLength: 320,
               example: "lectrice@example.org",
               description:
-                "Optional reply address. The report is created and published whether or not it is supplied. A single-use link is e-mailed to confirm the address, and only a confirmed address ever receives the moderation decision. Never published, and never returned by any endpoint.",
+                "Optional address. The flag is created either way but stays private (moderation only) until an address is confirmed. When one is given, a sign-in link is e-mailed to it; following it confirms the address, publishes the flags waiting for it and opens the reader's account. Only a confirmed address ever receives the moderation decision. Never published, and never returned by any endpoint.",
+            },
+            age_confirmed: {
+              type: "boolean",
+              description:
+                "Required, and true, whenever reporter_email is given: a confirmed address opens a public reader account, open from fifteen. A request with an address and without this is refused with 400.",
+            },
+            block_key: {
+              type: "string",
+              example: "people:PPL_YORUBA:naming",
+              description:
+                "Makes the flag a block comment (REQ-212). `{subject}:{id}:{section}`, subject in people, country, language, language_family, patronyme, place, search-query; section in naming, origin, what, where, sources, culture, history, verdict. Anchored to the data, so the same block on another page shares its comments.",
+            },
+            display_name: {
+              type: "string",
+              minLength: 1,
+              maxLength: 40,
+              example: "Amina",
+              description:
+                "Optional pseudonym shown with the comment. Without one the comment reads as written by « Un lecteur ».",
+            },
+            knowledge_basis: {
+              type: "string",
+              enum: ["family", "language", "reading", "other"],
+              description:
+                "Optional answer to « how do you know this ». Deliberately says nothing about origin or membership.",
             },
             language: {
               type: "string",
@@ -5491,6 +5523,215 @@ const options: swaggerJsdoc.Options = {
             },
           },
           required: ["license", "attribution", "pagination"],
+        },
+        // Block comments (REQ-212, ARCH-032)
+        CommentReply: {
+          type: "object",
+          properties: {
+            id: {
+              type: "string",
+              format: "uuid",
+              example: "4f1c2b9e-8a7d-4c3b-9e21-6d5f0a1b2c3d",
+            },
+            body: { type: "string", example: "Merci, je confirme." },
+            display_name: {
+              type: ["string", "null"],
+              example: "Amina",
+              description: "The author's pseudonym; null reads « Un lecteur ».",
+            },
+            is_moderation: {
+              type: "boolean",
+              description:
+                "Signed by the site as its moderation, not by a person.",
+            },
+            created_at: {
+              type: "string",
+              format: "date-time",
+              example: "2026-11-18T11:00:00.000Z",
+            },
+          },
+          required: [
+            "id",
+            "body",
+            "display_name",
+            "is_moderation",
+            "created_at",
+          ],
+        },
+        CommentThread: {
+          type: "object",
+          description:
+            "A published, visible comment and its visible replies. Carries no address, no account id and no field path.",
+          properties: {
+            id: {
+              type: "string",
+              format: "uuid",
+              example: "9c81ca0d-ae45-4f08-8f53-2ac0a9673abd",
+            },
+            public_slug: { type: "string", example: "flag-7kq3m2" },
+            flag_kind: { $ref: "#/components/schemas/FlagKind" },
+            body: { type: ["string", "null"], example: "On dit aussi Fulɓe." },
+            counter_source_url: { type: ["string", "null"], format: "uri" },
+            counter_source_citation: { type: ["string", "null"] },
+            proposed_rewrite: { type: ["string", "null"] },
+            knowledge_basis: {
+              type: ["string", "null"],
+              enum: ["family", "language", "reading", "other", null],
+            },
+            status: { $ref: "#/components/schemas/FlagStatus" },
+            remediation_state: {
+              type: ["string", "null"],
+              enum: [
+                "not_started",
+                "in_progress",
+                "published",
+                "not_applicable",
+                null,
+              ],
+            },
+            display_name: {
+              type: ["string", "null"],
+              example: "Amina",
+              description: "The author's pseudonym; null reads « Un lecteur ».",
+            },
+            created_at: {
+              type: "string",
+              format: "date-time",
+              example: "2026-11-18T10:00:00.000Z",
+            },
+            replies: {
+              type: "array",
+              items: { $ref: "#/components/schemas/CommentReply" },
+            },
+          },
+          required: [
+            "id",
+            "public_slug",
+            "flag_kind",
+            "body",
+            "counter_source_url",
+            "counter_source_citation",
+            "proposed_rewrite",
+            "knowledge_basis",
+            "status",
+            "remediation_state",
+            "display_name",
+            "created_at",
+            "replies",
+          ],
+        },
+        BlockComments: {
+          type: "object",
+          properties: {
+            block_key: { type: "string", example: "people:PPL_YORUBA:naming" },
+            count: {
+              type: "integer",
+              minimum: 0,
+              description:
+                "Visible comments on the block; replies not counted.",
+            },
+            threads: {
+              type: "array",
+              items: { $ref: "#/components/schemas/CommentThread" },
+            },
+            corrected_at: {
+              type: ["string", "null"],
+              format: "date-time",
+              description:
+                "Latest remediation_published_at of an accepted flag on this block: when the information shown was last corrected.",
+            },
+          },
+          required: ["block_key", "count", "threads", "corrected_at"],
+        },
+        CommentListResponse: {
+          type: "object",
+          properties: {
+            data: {
+              type: "array",
+              items: { $ref: "#/components/schemas/BlockComments" },
+            },
+            meta: { $ref: "#/components/schemas/ApiResponseMeta" },
+            errors: {
+              type: "array",
+              items: { $ref: "#/components/schemas/ApiErrorEntry" },
+              maxItems: 0,
+            },
+          },
+          required: ["data", "meta", "errors"],
+        },
+        CommentReplyCreateInput: {
+          type: "object",
+          required: ["body"],
+          properties: {
+            body: {
+              type: "string",
+              minLength: 1,
+              maxLength: 5000,
+              example: "Merci, je confirme.",
+            },
+            display_name: {
+              type: "string",
+              minLength: 1,
+              maxLength: 40,
+              example: "Amina",
+            },
+          },
+        },
+        CommentReplyResponse: {
+          type: "object",
+          properties: {
+            data: { $ref: "#/components/schemas/CommentReply" },
+            meta: { $ref: "#/components/schemas/ApiResponseMeta" },
+            errors: {
+              type: "array",
+              items: { $ref: "#/components/schemas/ApiErrorEntry" },
+              maxItems: 0,
+            },
+          },
+          required: ["data", "meta", "errors"],
+        },
+        CommentReportInput: {
+          type: "object",
+          required: ["antibot"],
+          properties: {
+            antibot: {
+              type: "object",
+              writeOnly: true,
+              required: [
+                "salt",
+                "nonce",
+                "difficultyBits",
+                "expiresAt",
+                "signature",
+              ],
+              description:
+                "A solved proof-of-work challenge from GET /v2/antibot/challenge, as on FlagCreateInput.",
+              properties: {
+                salt: { type: "string", example: "9f2c1ab4d7e60358" },
+                nonce: { type: "string", example: "418209" },
+                difficultyBits: { type: "integer", example: 20 },
+                expiresAt: { type: "integer", example: 1788080000000 },
+                signature: { type: "string", example: "3b1f…" },
+              },
+            },
+          },
+        },
+        CommentReportResponse: {
+          type: "object",
+          properties: {
+            data: {
+              type: "object",
+              properties: { received: { type: "boolean", enum: [true] } },
+              required: ["received"],
+            },
+            meta: { $ref: "#/components/schemas/ApiResponseMeta" },
+            errors: {
+              type: "array",
+              items: { $ref: "#/components/schemas/ApiErrorEntry" },
+              maxItems: 0,
+            },
+          },
+          required: ["data", "meta", "errors"],
         },
         FlagCreatedResponse: {
           type: "object",
