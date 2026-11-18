@@ -113,8 +113,8 @@
  *       editorial review, subject to anti-bot verification. Without a reader
  *       session the flag is stored privately, visible to the moderation only.
  *       An optional reporter_email (with age_confirmed true) receives a
- *       sign-in link; following it confirms the address, publishes the flags
- *       waiting for it and opens the reader's account. A request carrying a
+ *       sign-in link naming this flag; following it confirms the address,
+ *       publishes this flag only and opens the reader's account. A request carrying a
  *       signed-in reader's session cookie is published at once under that
  *       account. The request language is stored to localize resolution
  *       e-mails; missing or invalid values default to French. The address is

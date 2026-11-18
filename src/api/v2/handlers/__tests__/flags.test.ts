@@ -626,7 +626,8 @@ describe("flag handlers", () => {
         "fr"
       );
       expect(dependencies.sendReaderSignInLink).toHaveBeenCalledWith(
-        "lectrice@example.org"
+        "lectrice@example.org",
+        createdFlag.public_slug
       );
     });
 

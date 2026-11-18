@@ -21,12 +21,20 @@ const CONFIRMATION_PATH = `${getStaticPageRoute("fr", "account")}/confirmer`;
  * with no session storage: this runs inside the comment request, and the
  * person who will follow the link is not signed in by asking for it.
  *
+ * The link names the one comment it was issued for, and confirming it
+ * publishes that comment only. Without it, someone typing another person's
+ * address would get their comment published under that person's account
+ * the day that person confirms a comment of their own.
+ *
  * Answers false rather than throwing. The comment is committed by the time
  * this runs; a lost link is a reader who can ask again, a failed request is a
  * reader who files the same comment twice.
  */
 // @req REQ-212
-export async function sendReaderSignInLink(email: string): Promise<boolean> {
+export async function sendReaderSignInLink(
+  email: string,
+  publicSlug: string
+): Promise<boolean> {
   try {
     const supabase = createClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL ?? "",
@@ -37,7 +45,7 @@ export async function sendReaderSignInLink(email: string): Promise<boolean> {
       email,
       options: {
         shouldCreateUser: true,
-        emailRedirectTo: `${resolveSiteUrl()}${CONFIRMATION_PATH}`,
+        emailRedirectTo: `${resolveSiteUrl()}${CONFIRMATION_PATH}?commentaire=${encodeURIComponent(publicSlug)}`,
       },
     });
     if (error) {
