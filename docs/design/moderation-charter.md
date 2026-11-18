@@ -43,84 +43,111 @@ assigns it.
 
 ---
 
-## 2. Reporting costs two actions and no account
+## 2. Writing costs two actions; publishing costs one confirmed address
 
-**Given** a reader on a fiche,
-**when** they find an error,
-**then** they can report it in two actions: open, send.
+_Rewritten 2026-11-18, on the operator's decision to open the atlas to public
+comments. The previous version of this section said "no account, published
+immediately, anonymously". It is reversed below, and the reasons are stated so
+the reversal can itself be argued with._
 
-No account, no e-mail, no age confirmation stands between the reader and the
-send button. A proof of work is the control, computed by the reader's own
-browser and verified server-side; it asks the reader for nothing and sends
-nothing about them anywhere. It replaced Cloudflare Turnstile, which sent the
-reader's IP to a third party.
+**Status.** This section is the rule the implementation is built to. Until the
+reader account ships, the product still behaves as the previous version
+described; each part names its own enforcing test when it lands.
+
+**Given** a reader on a page,
+**when** they want to comment on, correct or complete a block,
+**then** they can write and send in two actions: open, send.
+
+No account and no e-mail stand between the reader and the send button. A proof
+of work is the anti-robot control, computed by the reader's own browser and
+verified server-side; it asks the reader for nothing and sends nothing about
+them anywhere. It replaced Cloudflare Turnstile, which sent the reader's IP to a
+third party.
 
 **It has one server-only secret, `ANTIBOT_HMAC_SECRET`, and it is not optional.**
 Unset, `GET /api/v2/antibot/challenge` answers 503, the dialog tells the reader
 the verification did not complete, and this whole section is untrue — silently,
 on a green build. The deployment checklist carries the curl that proves it.
 
-### Why no account
+### What is published, and when
 
-An account is a toll on the one gesture the atlas most wants to receive. It buys
-three things, and none of them is needed for a first report:
+**A contribution becomes public only once its author has confirmed their
+e-mail address.** Until then it is private: the moderator sees it in the
+console, the public does not.
 
-- **attribution** — a benefit to the contributor, not a precondition;
-- **follow-up** — the public slug already gives anyone a stable URL to watch;
-- **anti-abuse** — magic-link accounts are free to create, so an account is a
-  weak control where the proof of work and rate limiting are the real ones.
+| What the reader did                       | Moderator sees it | Public sees it            |
+| ----------------------------------------- | ----------------- | ------------------------- |
+| sent, no address                          | yes               | never                     |
+| sent, address given, link not yet clicked | yes               | not yet                   |
+| clicked the link and confirmed            | yes               | yes, on the block it aims |
+| writes while signed in                    | yes               | yes, at once              |
 
-The atlas has since taken this to its conclusion: **there are no public accounts
-at all.** Sign-up, sign-in and the GitHub and Google providers are gone. The only
-sign-in left is `/fr/admin/connexion`, which sends a link to an address on
-`admin_allowlist` and to no other. Nothing a reader does requires one.
+Nothing a reader sends is lost: the quick path without an address still reaches
+the moderator. Only publication waits.
 
-### The address is optional, and it is not an account
+### Why this reverses the earlier rule
 
-**Given** a reader who wants to know what became of their report,
-**when** they send it,
-**then** they may leave an address, and the report is published either way.
+The earlier rule published every report at once and anonymously, so the public
+register would never let the atlas choose which criticism exists. That reason
+still holds, and the new rule keeps it: **the moderator does not choose what is
+published — the author's confirmation does.** No human review stands between a
+confirmed contribution and the page.
 
-This is the one thing §2 collects about a person, and it is worth stating what it
-is not. It is not an account: no password, no profile, no name attached to the
-report, which stays anonymous on the public queue. It is not a condition: the
-report is created, published and queued whether the field was filled or left
-empty, and the send button never waits on it. And it is not usable until the
-reader proves it — a single-use link, valid 24 hours, stored only as a hash.
+What changed is the scale. The atlas is run by one person. Comments shown on
+the reading pages themselves, not only on a register few people open, make an
+unconfirmed public form an open door to spam, impersonation and harassment that
+one person cannot close by hand. A confirmed address is the cheapest control
+that still asks the honest reader for almost nothing, and it is what makes the
+rest of the system run without a moderator watching.
 
-The proof matters because anyone can type anyone's address into a public form.
-Confirming is what turns an address into a channel; an unconfirmed one is written
-to exactly once, with the confirmation itself, and then never again.
+### The confirmation link is the account
 
-The address is never published, never returned by the API, and never joins
-`flags` — it lives in `flag_reporter_contacts`, which carries RLS and no policy.
-A column on `flags` would be readable straight off PostgREST, because
-`flags_read_public` is `SELECT USING (true)` and our own column allowlist does
-not apply there.
+**Given** a reader who left an address,
+**when** they open the link sent to it and press « Publier mon commentaire »,
+**then** their pending contributions are published, and they are signed in to
+their reader account at `/fr/compte`.
 
-### Where age belongs
+There is no password and no separate registration. The account exists so that a
+contributor can follow what they started: their comments, their status, the
+replies, and whether the fiche was corrected because of them. It is a benefit
+returned to the contributor, never a toll on the first gesture.
 
-Age confirmation is a consequence of **account creation**, not of reporting.
-GDPR Article 8 governs consent as the legal basis for processing a minor's
-personal data. Reporting anonymously collects no identifier and publishes
-nothing under a name; creating an account does both, and the registration page
-already asks for the confirmation there.
+Three rules keep it honest:
 
-So the flag path never blocks on age. Instead:
+- **Confirmation is a button press, never a page load.** Mail scanners open
+  links before people do; a link that publishes on arrival would publish on the
+  scanner's behalf. The link opens a page; the page asks.
+- **The address is never published and never returned by the API.** It lives in
+  `flag_reporter_contacts` and in the auth users table, both behind RLS with no
+  public policy. Public columns of `flags` are granted column by column, so a
+  new column is private until someone decides otherwise.
+- **A reader account opens no other door.** Moderation authorises against
+  `admin_allowlist` alone. Every session-authenticated route checks the
+  allowlist, not merely that a session exists.
 
-> **A report from a contributor whose age is not confirmed is recorded
-> anonymously, never refused.**
+### Name and age
 
-Nobody is turned away, and no name is published without the confirmation that
-licenses it. This also removes the user-visible harm of a known defect: an
-account created through the sign-in page rather than the registration page can
-never confirm its age today, and used to be permanently unable to report.
+The reader may give a pseudonym; without one the contribution is signed « Un
+lecteur ». The real name is never asked for.
 
-### What is recorded
+Publishing under a name, even a pseudonym, and holding an account are
+processing of personal data. GDPR Article 8 and French law set the age of
+consent at 15. The form therefore asks the reader to confirm they are 15 or
+older **when they leave an address**. Without the confirmation the contribution
+is still received, privately, and never refused.
 
-`contributor_id` is set only when a session exists **and** that account has
-confirmed its age. Otherwise it is null and the public queue shows _anonyme_ —
-a case `PublicFlagsQueue` already handles.
+The form may ask how the reader knows what they write — their family, their
+language, their reading or research. That question is optional and is never
+worded as membership of a people: an ethnic origin is a special category of
+data under GDPR Article 9, and the atlas does not collect it.
+
+### What keeps it running without a moderator
+
+- the proof of work and the rate limits (per address and per IP);
+- confirmation before publication;
+- **three reports from readers hide a comment automatically** until a moderator
+  looks at it. Hiding is reversible and recorded; it is not a status change and
+  never erases the text.
 
 ---
 
@@ -233,7 +260,9 @@ without recording who made them is not auditable.
 
 ## 5. What the public sees at each state
 
-The register at `/fr/signalements` is public at every state, including `open`.
+Once published (§2), a contribution is public at every state, including `open`,
+on the block it aims at and in the register at `/fr/signalements`. A
+contribution its author has not confirmed is not on either, at any state.
 Publishing only resolved reports would let the atlas choose which criticism
 exists.
 
@@ -301,8 +330,9 @@ and never painted. The table above had required it since it was written.
 
 Held by `src/components/flags/__tests__/moderationRemediationCharter.test.tsx`.
 
-The report's own text is published as written, under the contributor's name when
-one is attributed and as _anonyme_ otherwise. A report is not a signed
+The contribution's own text is published as written, under the pseudonym its
+author chose, and as « Un lecteur » otherwise. Contributions published before
+2026-11-18 keep the _anonyme_ signature they were published with. A report is not a signed
 contribution to the corpus — it is a message about it — which is why it does not
 carry the CC-BY-SA consent that an authored contribution does.
 
@@ -310,25 +340,23 @@ carry the CC-BY-SA consent that an authored contribution does.
 
 ## 6. What the reader is told back
 
-The reader who sends a report receives, in the dialog and without navigating:
-the confirmation, and the public slug of their report. That slug is the whole
-feedback loop for a reader who left no address: a stable URL they can return to,
-where the status is shown and kept up to date.
+The reader who sends a contribution is told, in the sheet and without
+navigating, what happens next — and the sentence depends on what they did:
 
-**E-mail notification on the decision is now part of the minimum**, for the
-reader who asked for it. This section used to say the opposite — that it
-"presupposes an address, which §2 deliberately does not collect", and that it
-"belongs to the account path". Both halves are void: §2 collects an optional
-address, and there is no account path any more.
+- **address given**: « Vérifiez votre boîte mail : votre commentaire sera
+  publié dès que vous aurez cliqué sur le lien. »
+- **no address**: their message has reached the team and will not be shown
+  publicly; leaving an address is the way to publish it and follow it.
+- **signed in**: the comment is published, and it is in their account.
 
-What was true and stayed true is that the confirmation panel must not promise
-what the atlas cannot deliver. It said "vous recevrez un email quand la
-modération aura tranché" to every reader, including the ones who had left no
-address and to whom nothing could ever be sent. It now says one thing to a reader
-who left an address — confirm it — and another to a reader who did not.
+The confirmation panel must never promise what the atlas cannot deliver. A
+reader who left no address is not told they will hear back.
 
-A decision is sent only to a **confirmed** address. An unconfirmed one is treated
-as belonging to someone who never reported anything, because it may.
+The account page is the feedback loop. It shows each contribution with its
+publication state (waiting for confirmation, published, hidden), its
+disposition (§5), its replies, and the remediation when the fiche was
+corrected. E-mail is sent on a moderator's decision and on a moderator's reply,
+only to a **confirmed** address.
 
 ---
 
@@ -347,8 +375,11 @@ Named here so the gaps are visible rather than discovered:
   publication path writes it, `remediation_state` is set by hand and
   `remediation_published_at` is what proves it. The reader is no longer told a
   correction happened — but nothing yet makes one happen.
-- **Rate limiting.** Anonymous reporting makes it a prerequisite rather than a
-  refinement.
+- **Rate limiting** is a prerequisite, not a refinement: it is off when the
+  Upstash variables are missing. Production must have them.
+- **Votes, and comments that change the page.** Readers will be able to support
+  a contribution, and a confirmed correction should feed a revision draft. Both
+  are deliberately out of the first version.
 - **The three role models.** `user_roles`, `contributor_profiles.moderator_role`
   and `api_keys.tier` did not interoperate, and only the second opened any door
   — badly: it lived on a row the sign-in wrote under `id` while every reader
