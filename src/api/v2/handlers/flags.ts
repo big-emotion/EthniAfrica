@@ -221,7 +221,7 @@ export interface FlagHandlerDependencies {
     language?: Language
   ) => Promise<string | null>;
   getReaderSession: () => Promise<{ id: string } | null>;
-  sendReaderSignInLink: (email: string) => Promise<boolean>;
+  sendReaderSignInLink: (email: string, publicSlug: string) => Promise<boolean>;
 }
 
 export interface FlagHandlerContext {
@@ -468,7 +468,10 @@ export async function handleFlagCreate(
       // only when the address was recorded, and not to a reader whose
       // comment is already public under their account.
       if (recorded && !reader) {
-        await dependencies.sendReaderSignInLink(parsed.data.reporter_email);
+        await dependencies.sendReaderSignInLink(
+          parsed.data.reporter_email,
+          flag.public_slug
+        );
       }
     } catch (error) {
       logger.error("Failed to set up a reporter contact", error, {

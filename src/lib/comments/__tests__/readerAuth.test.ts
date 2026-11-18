@@ -38,15 +38,19 @@ describe("sendReaderSignInLink", () => {
   it("asks Supabase for a link that creates the account and lands on the confirmation page", async () => {
     mocks.signInWithOtp.mockResolvedValue({ data: {}, error: null });
 
-    await expect(sendReaderSignInLink("lectrice@example.org")).resolves.toBe(
-      true
-    );
+    await expect(
+      sendReaderSignInLink("lectrice@example.org", "flag-7kq3 m2")
+    ).resolves.toBe(true);
 
     expect(mocks.signInWithOtp).toHaveBeenCalledWith({
       email: "lectrice@example.org",
       options: {
         shouldCreateUser: true,
-        emailRedirectTo: "https://atlas.example.org/fr/compte/confirmer",
+        // The link publishes only the comment it was issued for: someone
+        // typing another person's address must not get a comment published
+        // under that person's account when they confirm their own.
+        emailRedirectTo:
+          "https://atlas.example.org/fr/compte/confirmer?commentaire=flag-7kq3%20m2",
       },
     });
   });
@@ -58,9 +62,9 @@ describe("sendReaderSignInLink", () => {
       error: { message: "rate limited" },
     });
 
-    await expect(sendReaderSignInLink("lectrice@example.org")).resolves.toBe(
-      false
-    );
+    await expect(
+      sendReaderSignInLink("lectrice@example.org", "flag-7kq3m2")
+    ).resolves.toBe(false);
     expect(mocks.loggerError).toHaveBeenCalled();
   });
 });

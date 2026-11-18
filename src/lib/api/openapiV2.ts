@@ -5206,7 +5206,7 @@ const options: swaggerJsdoc.Options = {
               maxLength: 320,
               example: "lectrice@example.org",
               description:
-                "Optional address. The flag is created either way but stays private (moderation only) until an address is confirmed. When one is given, a sign-in link is e-mailed to it; following it confirms the address, publishes the flags waiting for it and opens the reader's account. Only a confirmed address ever receives the moderation decision. Never published, and never returned by any endpoint.",
+                "Optional address. The flag is created either way but stays private (moderation only) until an address is confirmed. When one is given, a sign-in link is e-mailed to it; following it confirms the address, publishes this flag (the link names it, and no other) and opens the reader's account. Only a confirmed address ever receives the moderation decision. Never published, and never returned by any endpoint.",
             },
             age_confirmed: {
               type: "boolean",
