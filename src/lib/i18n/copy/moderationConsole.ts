@@ -70,6 +70,42 @@ export interface ModerationConsoleCopy {
     linkedRevision: string;
     noLinkedRevision: string;
   };
+  /** The default view: contributions by fiche, then block, then thread (REQ-214). */
+  inbox: {
+    groupedView: string;
+    listView: string;
+    empty: string;
+    truncated: string;
+    generalGroup: string;
+    wholeFiche: string;
+    openCount: (count: number) => string;
+    entityTypes: Record<string, string>;
+    sections: Record<string, string>;
+    publication: {
+      private: string;
+      awaiting_confirmation: string;
+      published: string;
+      hidden: string;
+    };
+    hiddenReason: (reason: string) => string;
+    /** `hidden_reason` values the system writes itself, in words. */
+    systemReasons: Record<string, string>;
+    abuseReports: (count: number) => string;
+    repliesHeading: string;
+    moderationSignature: string;
+    anonymousReader: string;
+    replyHidden: string;
+    replyLabel: string;
+    replyHint: string;
+    sendReply: string;
+    hideComment: string;
+    unhideComment: string;
+    hideReasonLabel: string;
+    hideReasonRequired: string;
+    hideReply: string;
+    unhideReply: string;
+    actionFailed: string;
+  };
 }
 
 const fr: ModerationConsoleCopy = {
@@ -131,6 +167,74 @@ const fr: ModerationConsoleCopy = {
     summaryHeading: "Ce qui a changé",
     linkedRevision: "Révision liée",
     noLinkedRevision: "Aucune révision n'est liée à ce signalement.",
+  },
+  inbox: {
+    groupedView: "Voir par fiche",
+    listView: "Voir la liste complète",
+    empty: "Aucune contribution pour l'instant.",
+    truncated:
+      "Seules les contributions les plus récentes sont classées ici. La liste complète les montre toutes.",
+    generalGroup: "Contributions sans fiche",
+    wholeFiche: "La fiche entière",
+    openCount: (count: number) =>
+      count === 0
+        ? "Rien à traiter"
+        : count === 1
+          ? "1 à traiter"
+          : `${count} à traiter`,
+    entityTypes: {
+      people: "Peuple",
+      country: "Pays",
+      language: "Langue",
+      language_family: "Famille linguistique",
+      patronyme: "Patronyme",
+      place: "Lieu",
+      "search-query": "Recherche",
+      fiche_section: "Section de fiche",
+      assertion: "Assertion",
+      source: "Source",
+    },
+    sections: {
+      naming: "Noms",
+      origin: "Origine",
+      what: "Présentation",
+      where: "Localisation",
+      sources: "Sources",
+      culture: "Culture",
+      history: "Histoire",
+      verdict: "Verdict sur le nom",
+    },
+    publication: {
+      private: "Privé : aucune adresse à confirmer",
+      awaiting_confirmation: "En attente de la confirmation de l'adresse",
+      published: "Publié",
+      hidden: "Masqué",
+    },
+    hiddenReason: (reason: string) => `Raison du masquage : ${reason}`,
+    systemReasons: {
+      reader_reports: "trois signalements de lecteurs",
+    },
+    abuseReports: (count: number) =>
+      count === 0
+        ? "Aucun signalement de lecteur"
+        : count === 1
+          ? "1 signalement de lecteur"
+          : `${count} signalements de lecteurs`,
+    repliesHeading: "Réponses",
+    moderationSignature: "Modération EthniAfrica",
+    anonymousReader: "Un lecteur",
+    replyHidden: "Réponse masquée",
+    replyLabel: "Répondre au nom de la modération",
+    replyHint:
+      "La réponse sera publique sous le commentaire, signée « Modération EthniAfrica ».",
+    sendReply: "Publier la réponse",
+    hideComment: "Masquer le commentaire",
+    unhideComment: "Rétablir le commentaire",
+    hideReasonLabel: "Raison du masquage",
+    hideReasonRequired: "Indiquez pourquoi vous masquez ce commentaire.",
+    hideReply: "Masquer la réponse",
+    unhideReply: "Rétablir la réponse",
+    actionFailed: "L'action a échoué.",
   },
 };
 

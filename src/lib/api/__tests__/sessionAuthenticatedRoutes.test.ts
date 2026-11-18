@@ -49,6 +49,9 @@ import { POST as createAssertionReference } from "@/app/api/v2/reference-library
 import { POST as createWorkingAsset } from "@/app/api/v2/reference-library/assets/route";
 import { PATCH as transitionFlag } from "@/app/api/v2/flags/[id]/route";
 import { POST as recordSourceTierRuling } from "@/app/api/v2/admin/source-tier-rulings/route";
+import { POST as replyAsModeration } from "@/app/api/v2/admin/comments/[id]/replies/route";
+import { PUT as setCommentVisibility } from "@/app/api/v2/admin/comments/[id]/visibility/route";
+import { PUT as setReplyVisibility } from "@/app/api/v2/admin/replies/[id]/visibility/route";
 
 /**
  * The middleware skips API-key validation on these routes, so the only thing
@@ -64,6 +67,8 @@ interface GuardCase {
 }
 
 const params = <T>(value: T) => ({ params: Promise.resolve(value) });
+
+const COMMENT_ID = "aaaaaaaa-0000-4000-8000-000000000001";
 
 const guardCases: GuardCase[] = [
   { method: "GET", pathname: "/api/v2/keys", send: (r) => listKeys(r) },
@@ -102,6 +107,21 @@ const guardCases: GuardCase[] = [
     method: "POST",
     pathname: "/api/v2/admin/source-tier-rulings",
     send: (r) => recordSourceTierRuling(r),
+  },
+  {
+    method: "POST",
+    pathname: `/api/v2/admin/comments/${COMMENT_ID}/replies`,
+    send: (r) => replyAsModeration(r, params({ id: COMMENT_ID })),
+  },
+  {
+    method: "PUT",
+    pathname: `/api/v2/admin/comments/${COMMENT_ID}/visibility`,
+    send: (r) => setCommentVisibility(r, params({ id: COMMENT_ID })),
+  },
+  {
+    method: "PUT",
+    pathname: `/api/v2/admin/replies/${COMMENT_ID}/visibility`,
+    send: (r) => setReplyVisibility(r, params({ id: COMMENT_ID })),
   },
 ];
 
