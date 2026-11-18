@@ -4,6 +4,7 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 const mocks = vi.hoisted(() => ({
   getModeratorSession: vi.fn(),
   listFlagsForModeration: vi.fn(),
+  listModerationInbox: vi.fn(),
 }));
 
 vi.mock("@/lib/supabase/moderator", () => ({
@@ -12,6 +13,10 @@ vi.mock("@/lib/supabase/moderator", () => ({
 
 vi.mock("@/api/v2/services/flags", () => ({
   listFlagsForModeration: mocks.listFlagsForModeration,
+}));
+
+vi.mock("@/api/v2/services/moderationInbox", () => ({
+  listModerationInbox: mocks.listModerationInbox,
 }));
 
 vi.mock("@/components/layout/PageLayout", () => ({
@@ -41,12 +46,17 @@ function report(overrides: Record<string, unknown> = {}) {
   };
 }
 
-async function renderQueue(params: Record<string, string> = {}, lang = "fr") {
+async function renderPage(params: Record<string, string>, lang = "fr") {
   const ui = await ModerationQueuePage({
     params: Promise.resolve({ lang }),
     searchParams: Promise.resolve(params),
   });
   return render(ui);
+}
+
+/** The flat list, as it was before the grouped inbox became the default. */
+async function renderQueue(params: Record<string, string> = {}, lang = "fr") {
+  return renderPage({ vue: "liste", ...params }, lang);
 }
 
 describe("ModerationQueuePage", () => {
@@ -57,6 +67,76 @@ describe("ModerationQueuePage", () => {
       items: [report()],
       total: 1,
     });
+    mocks.listModerationInbox.mockResolvedValue({
+      truncated: false,
+      fiches: [
+        {
+          entity_type: "people",
+          entity_id: "PPL_YORUBA",
+          open_count: 1,
+          last_activity_at: "2026-08-30T10:00:00.000Z",
+          blocks: [
+            {
+              block_key: "people:PPL_YORUBA:naming",
+              section: "naming",
+              open_count: 1,
+              last_activity_at: "2026-08-30T10:00:00.000Z",
+              threads: [
+                {
+                  ...report({ status: "open" }),
+                  block_key: "people:PPL_YORUBA:naming",
+                  publication_state: "published",
+                  published_at: "2026-08-30T10:00:00.000Z",
+                  hidden_reason: null,
+                  knowledge_basis: null,
+                  display_name: null,
+                  abuse_reports: 0,
+                  replies: [],
+                  last_activity_at: "2026-08-30T10:00:00.000Z",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    });
+  });
+
+  // @req REQ-214
+  it("opens on contributions grouped by fiche and block, not on the flat list", async () => {
+    await renderPage({});
+
+    expect(mocks.listModerationInbox).toHaveBeenCalled();
+    expect(mocks.listFlagsForModeration).not.toHaveBeenCalled();
+    expect(
+      screen.getByRole("heading", { level: 2, name: "Peuple · PPL_YORUBA" })
+    ).toBeTruthy();
+    expect(
+      screen.getByRole("heading", { level: 3, name: "Noms" })
+    ).toBeTruthy();
+    expect(
+      screen.getByRole("link", { name: "Voir la liste complète" })
+    ).toHaveProperty("href", expect.stringContaining("/fr/admin?vue=liste"));
+  });
+
+  // @req REQ-214
+  it("keeps today's flat list at ?vue=liste, with a way back to the grouped view", async () => {
+    await renderQueue();
+
+    expect(mocks.listFlagsForModeration).toHaveBeenCalled();
+    expect(mocks.listModerationInbox).not.toHaveBeenCalled();
+    expect(screen.getByTestId("moderation-queue")).toBeTruthy();
+    expect(screen.getByRole("link", { name: "Voir par fiche" })).toHaveProperty(
+      "href",
+      expect.stringMatching(/\/fr\/admin$/)
+    );
+  });
+
+  // @req REQ-214
+  it("asks the allowlist before reading the grouped inbox", async () => {
+    await renderPage({});
+
+    expect(mocks.getModeratorSession).toHaveBeenCalled();
   });
 
   // @req REQ-042
