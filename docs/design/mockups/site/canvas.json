@@ -1089,6 +1089,101 @@
       "h": 1900,
       "expand": "fill",
       "title": "Page EthniAfrica dans Claude et ChatGPT · 1440"
+    },
+    "search-state-comments-peul-430.dc.html": {
+      "x": 24970,
+      "y": 0,
+      "w": 430,
+      "h": 6315,
+      "expand": "fill",
+      "title": "Proposition B · « peul », pied de bloc · 430"
+    },
+    "search-state-comments-peul-768.dc.html": {
+      "x": 25480,
+      "y": 0,
+      "w": 768,
+      "h": 4501,
+      "expand": "fill",
+      "title": "Proposition B · « peul », pied de bloc · 768"
+    },
+    "search-state-comments-peul-1440.dc.html": {
+      "x": 26328,
+      "y": 0,
+      "w": 1440,
+      "h": 4160,
+      "expand": "fill",
+      "title": "Proposition B · « peul », pied de bloc · 1440"
+    },
+    "search-state-comments-panel-1440.dc.html": {
+      "x": 27848,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "Proposition B · fil ouvert en volet à droite · 1440"
+    },
+    "search-state-comments-unknown-430.dc.html": {
+      "x": 24970,
+      "y": 6435,
+      "w": 430,
+      "h": 2744,
+      "expand": "fill",
+      "title": "Proposition B · nom inconnu · 430"
+    },
+    "search-state-comments-unknown-768.dc.html": {
+      "x": 25480,
+      "y": 6435,
+      "w": 768,
+      "h": 1898,
+      "expand": "fill",
+      "title": "Proposition B · nom inconnu · 768"
+    },
+    "search-state-comments-unknown-1440.dc.html": {
+      "x": 26328,
+      "y": 6435,
+      "w": 1440,
+      "h": 1709,
+      "expand": "fill",
+      "title": "Proposition B · nom inconnu · 1440"
+    },
+    "comments-sheet-430.dc.html": {
+      "x": 24970,
+      "y": 9299,
+      "w": 430,
+      "h": 2220,
+      "expand": "fill",
+      "title": "Proposition B · fil ouvert avec le formulaire · 430"
+    },
+    "comments-empty-430.dc.html": {
+      "x": 25480,
+      "y": 9299,
+      "w": 430,
+      "h": 1600,
+      "expand": "fill",
+      "title": "Proposition B · fil vide · 430"
+    },
+    "comments-sent-430.dc.html": {
+      "x": 25990,
+      "y": 9299,
+      "w": 430,
+      "h": 900,
+      "expand": "fill",
+      "title": "Proposition B · après l'envoi · 430"
+    },
+    "comments-corrected-430.dc.html": {
+      "x": 26500,
+      "y": 9299,
+      "w": 430,
+      "h": 1341,
+      "expand": "fill",
+      "title": "Proposition B · passage corrigé · 430"
+    },
+    "account-430.dc.html": {
+      "x": 27010,
+      "y": 9299,
+      "w": 430,
+      "h": 2963,
+      "expand": "fill",
+      "title": "Proposition B · Mon compte, /fr/compte · 430"
     }
   },
   "order": [
@@ -1224,7 +1319,19 @@
     "agent-card-state-consent-390.dc.html",
     "agent-install-430.dc.html",
     "agent-install-768.dc.html",
-    "agent-install-1440.dc.html"
+    "agent-install-1440.dc.html",
+    "search-state-comments-peul-430.dc.html",
+    "search-state-comments-peul-768.dc.html",
+    "search-state-comments-peul-1440.dc.html",
+    "search-state-comments-panel-1440.dc.html",
+    "search-state-comments-unknown-430.dc.html",
+    "search-state-comments-unknown-768.dc.html",
+    "search-state-comments-unknown-1440.dc.html",
+    "comments-sheet-430.dc.html",
+    "comments-empty-430.dc.html",
+    "comments-sent-430.dc.html",
+    "comments-corrected-430.dc.html",
+    "account-430.dc.html"
   ],
   "notes": {
     "g0": {
@@ -1296,6 +1403,13 @@
       "text": "Page d’installation",
       "kind": "title1",
       "maxW": 3540
+    },
+    "g8": {
+      "x": 24970,
+      "y": -300,
+      "text": "Groupe 7 · Commentaires par passage (brief 21)",
+      "kind": "title1",
+      "maxW": 4318
     }
   },
   "designSystems": []
