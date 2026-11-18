@@ -120,21 +120,31 @@ describe("middleware", () => {
   });
 
   /**
-   * The atlas has no public accounts any more: reporting costs none, and the
-   * console authorizes an address rather than a role. `/fr/compte/*` was
-   * published and is in readers' history — moderators' especially, since the
-   * middleware used to send them there to sign in — so it is relocated rather
-   * than left to 404.
+   * `/fr/compte` is the reader account again (REQ-213): the link that
+   * publishes a comment opens it. Its old pages that have no reader
+   * successor still lead somewhere in one hop — the API keys to the console,
+   * where they moved; registration and profile to the reader account, which
+   * now needs neither.
    */
-  describe("retired account routes", () => {
+  describe("reader account routes", () => {
+    // @req REQ-213
+    it.each(["/fr/compte", "/fr/compte/connexion", "/fr/compte/confirmer"])(
+      "serves %s instead of relocating it",
+      async (path) => {
+        const response = await middleware(
+          new NextRequest(`http://localhost:3000${path}`)
+        );
+
+        expect(response.status).toBe(200);
+        expect(response.headers.get("location")).toBeNull();
+      }
+    );
+
     // @req REQ-091
     it.each([
-      ["/fr/compte/connexion", "/fr/admin/connexion"],
       ["/fr/compte/cles-api", "/fr/admin/cles-api"],
-      // Nothing to register for and no profile to hold: both land on the one
-      // sign-in left, which says reporting needs no account.
-      ["/fr/compte/inscription", "/fr/admin/connexion"],
-      ["/fr/compte/profil", "/fr/admin/connexion"],
+      ["/fr/compte/inscription", "/fr/compte/connexion"],
+      ["/fr/compte/profil", "/fr/compte"],
     ])("relocates %s to %s in one hop", async (legacy, current) => {
       const response = await middleware(
         new NextRequest(`http://localhost:3000${legacy}`)
@@ -143,18 +153,6 @@ describe("middleware", () => {
       expect(response.status).toBe(308);
       expect(response.headers.get("location")).toBe(
         `http://localhost:3000${current}`
-      );
-    });
-
-    // @req REQ-091
-    it("relocates the bare /fr/compte onto the console", async () => {
-      const response = await middleware(
-        new NextRequest("http://localhost:3000/fr/compte")
-      );
-
-      expect(response.status).toBe(308);
-      expect(response.headers.get("location")).toBe(
-        "http://localhost:3000/fr/admin"
       );
     });
   });
@@ -343,7 +341,7 @@ describe("middleware", () => {
         ["/en/jouer/quiz", "/fr/jeux/quiz"],
         ["/en/peuples-hub", "/fr/atlas/peuples"],
         ["/en/dossiers/noms/PPL_YORUBA", "/fr/atlas/appellations/PPL_YORUBA"],
-        ["/en/compte/inscription", "/fr/admin/connexion"],
+        ["/en/compte/inscription", "/fr/compte/connexion"],
         [
           "/en/regards/colonisation-et-resistances",
           "/fr/dossiers/regards/colonisation-et-resistances",

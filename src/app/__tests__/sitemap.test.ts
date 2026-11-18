@@ -174,6 +174,7 @@ describe("sitemap.xml", () => {
 
     for (const fragment of [
       "/fr/admin",
+      "/fr/compte",
       `${getLocalizedRoute("fr", "quiz")}/score`,
       "/fr/report-error",
     ]) {
@@ -265,7 +266,7 @@ describe("robots.txt", () => {
     const rule = robots().rules;
     const disallow = Array.isArray(rule) ? rule[0].disallow : rule.disallow;
 
-    expect(disallow).toEqual(["/fr/admin/"]);
+    expect(disallow).toEqual(["/fr/admin/", "/fr/compte"]);
     expect(disallow).not.toContain("/fr/politique-confidentialite");
     expect(disallow).not.toContain("/fr/confidentialite");
   });

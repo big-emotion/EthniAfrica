@@ -33,10 +33,9 @@ async function requestOrigin(): Promise<string> {
 /**
  * Ask for a sign-in link to the moderation console.
  *
- * This is the only sign-in surface left in the atlas. Reporting costs no
- * account, so there is no contributor to register, no password to reset and no
- * SSO provider to fall back on — an address is either on `admin_allowlist` or
- * it is not.
+ * There is no password to reset and no SSO provider to fall back on — an
+ * address is either on `admin_allowlist` or it is not. Readers have their own
+ * sign-in (`/fr/compte/connexion`, REQ-213), which never reaches the console.
  *
  * `shouldCreateUser` is true on purpose: the allowlist is the gate, so an
  * authorized person should not additionally have to have registered first. The

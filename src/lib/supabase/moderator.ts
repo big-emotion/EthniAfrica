@@ -15,9 +15,10 @@ const SIGN_IN_URL = "/fr/admin/connexion";
  * Two things changed here at once, and they are the same change. Authorization
  * used to read `contributor_profiles.moderator_role`, a column on a row that
  * only a successful sign-in created — and the sign-in wrote that row on the
- * wrong key, so the row was never found and the role was unreachable. And the
- * atlas no longer has public accounts to hang a role on. So the gate is now the
- * address itself, checked against `admin_allowlist`.
+ * wrong key, so the row was never found and the role was unreachable. So the
+ * gate is now the address itself, checked against `admin_allowlist`. Readers
+ * hold accounts of their own (REQ-213); their sessions are valid sessions, and
+ * this check is what keeps one out of the console.
  *
  * There is no role in the returned session because nothing downstream branches
  * on one: the console offers the same moves to everyone who can open it.

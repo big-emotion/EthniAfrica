@@ -375,9 +375,9 @@ function mapFlagRow(row: FlagRow): PublicFlag {
  *
  * It used to read `contributor_profiles.moderator_role`, hedged across two
  * columns (`.or(id.eq…, user_id.eq…)`) because the sign-in wrote one and every
- * reader queried the other. That whole model is gone with the public accounts:
- * authorization is the address, and the address is on the allowlist or it is
- * not.
+ * reader queried the other. That whole model is gone: authorization is the
+ * address, and the address is on the allowlist or it is not. A reader account
+ * (REQ-213) is a valid session and nothing more.
  */
 // @req REQ-042
 export async function getModeratorByAccessToken(

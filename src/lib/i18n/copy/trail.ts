@@ -86,6 +86,7 @@ const fr = {
     // The reader account (REQ-212). `inscription` and `profil` stay
     // removed: the account opens from a confirmed address, not a form.
     compte: "Compte",
+    confirmer: "Confirmation",
     contact: "Contact",
     contribute: "Contribuer",
     "mentions-legales": "Mentions légales",

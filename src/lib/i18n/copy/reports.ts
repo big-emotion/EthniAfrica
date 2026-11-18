@@ -8,7 +8,7 @@ const fr = {
     accuracyIntroduction:
       "Les informations présentées sur ce site proviennent de différentes sources, publiques ou collaboratives. Bien que nous fassions de notre mieux pour vérifier et consolider ces données, certaines peuvent être incomplètes, approximatives ou contenir des erreurs.",
     formIntroduction:
-      "Décrivez ci-dessous ce qui ne va pas. Aucun compte n'est nécessaire, et la correction proposée comme la source sont facultatives : nous préférons un signalement incomplet à un signalement que vous renoncez à écrire.",
+      "Décrivez ci-dessous ce qui ne va pas. Vous n'avez pas besoin de créer un compte, et la correction proposée comme la source sont facultatives : nous préférons un signalement incomplet à un signalement que vous renoncez à écrire. Si vous laissez votre adresse, vous recevez un lien pour le publier et le suivre dans votre compte.",
     ficheGuidanceBefore:
       "Si l'erreur se trouve sur une page précise, le bouton",
     reportButton: "Signaler",

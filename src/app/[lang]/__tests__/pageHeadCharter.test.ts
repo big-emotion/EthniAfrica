@@ -116,7 +116,7 @@ vi.mock("remark-gfm", () => ({ default: () => undefined }));
 const ROUTES_ROOT = resolve(__dirname, "..");
 
 /** Routes outside the contract: authenticated, or a one-shot token page. */
-const OUTSIDE = [/^admin(\/|$)/, /^signalements\/verifier$/];
+const OUTSIDE = [/^admin(\/|$)/, /^compte(\/|$)/, /^signalements\/verifier$/];
 
 /**
  * Routes withdrawn with the dossiers freeze.

@@ -18,11 +18,9 @@ export async function generateMetadata({
 }
 
 /**
- * The only sign-in surface the atlas has left.
- *
- * `/fr/compte/connexion` and `/fr/compte/inscription` are gone with the public
- * accounts they served: reporting costs no account, so nobody but a moderator
- * has a reason to sign in, and a moderator is an address on `admin_allowlist`.
+ * The moderators' sign-in. A moderator is an address on `admin_allowlist`.
+ * Readers sign in to their own account at `/fr/compte/connexion` (REQ-213);
+ * that session opens nothing here.
  */
 // @req REQ-042
 export default async function AdminSignInPage({

@@ -3,8 +3,17 @@ import { createServerSupabaseClient } from "@/lib/supabase/auth-server";
 import { logger } from "@/lib/api/logger";
 import { resolveSiteUrl } from "@/lib/siteUrl";
 
-const SIGN_IN_PATH = "/fr/admin/connexion";
 const DEFAULT_DESTINATION = "/fr/admin";
+const MODERATOR_SIGN_IN_PATH = "/fr/admin/connexion";
+const READER_SIGN_IN_PATH = "/fr/compte/connexion";
+
+// A refused link goes back to the sign-in of the area it was heading for, so
+// a reader is never shown the moderators' page.
+function signInPathFor(destination: string): string {
+  return /^\/fr\/compte(?=[/?#]|$)/.test(destination)
+    ? READER_SIGN_IN_PATH
+    : MODERATOR_SIGN_IN_PATH;
+}
 
 // Unroutable by construction (RFC 6761). Only its origin matters: anything
 // that resolves elsewhere is leaving the site.
@@ -47,13 +56,16 @@ function safeDestination(raw: string | null): string {
 /**
  * GET /api/auth/callback
  *
- * Completes a magic-link sign-in and sends the moderator where they were
- * headed. It no longer touches `contributor_profiles`: that upsert wrote the
+ * Completes a magic-link sign-in and sends the person where they were headed:
+ * a moderator to the console, a reader to their account (REQ-213). The
+ * reader's comment-confirmation link does not come through here — it is
+ * redeemed by `/fr/compte/confirmer` on a button press. It no longer touches `contributor_profiles`: that upsert wrote the
  * user id into `id` while every reader queried `user_id`, so it created rows
  * nobody could find — and authorization now reads `admin_allowlist`, which
  * needs no row of its own.
  */
 // @req REQ-042
+// @req REQ-213
 export async function GET(request: NextRequest) {
   const { searchParams } = request.nextUrl;
   // Not `request.nextUrl.origin`: behind the production container that is the
@@ -63,7 +75,7 @@ export async function GET(request: NextRequest) {
   const destination = safeDestination(searchParams.get("redirect"));
 
   function refuse(reason: string) {
-    const errorUrl = new URL(SIGN_IN_PATH, origin);
+    const errorUrl = new URL(signInPathFor(destination), origin);
     errorUrl.searchParams.set("error", reason);
     return NextResponse.redirect(errorUrl);
   }
