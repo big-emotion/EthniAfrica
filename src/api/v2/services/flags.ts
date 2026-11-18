@@ -1,6 +1,7 @@
 import { logger } from "@/lib/api/logger";
 import { isEmailAllowlisted } from "@/lib/auth/adminAllowlist";
 import { createAdminClient } from "@/lib/supabase/admin";
+import { PUBLIC_FLAG_SELECT } from "@/lib/flags/publicFlagColumns";
 
 export type FlagKind =
   | "inaccurate"
@@ -108,8 +109,7 @@ interface FlagRow {
   contribution_payload?: Record<string, unknown> | null;
 }
 
-const PUBLIC_FLAG_COLUMNS =
-  "id, public_slug, entity_type, entity_id, assertion_field_path, assertion_id, flag_kind, reason_text, counter_source_url, counter_source_citation, proposed_rewrite, contributor_id, severity, auto_generated, status, created_at, updated_at, resolved_at, moderator_notes, remediation_state, remediation_published_at, remediation_summary";
+const PUBLIC_FLAG_COLUMNS = PUBLIC_FLAG_SELECT;
 
 /**
  * What the moderator's console reads, and the public API deliberately does not.

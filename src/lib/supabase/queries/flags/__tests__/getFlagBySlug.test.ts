@@ -6,6 +6,7 @@ vi.mock("@/lib/supabase/server", () => ({
 
 import { getContributorAttribution, getFlagBySlug } from "../getFlagBySlug";
 import { createServerClient } from "@/lib/supabase/server";
+import { PUBLIC_FLAG_SELECT } from "@/lib/flags/publicFlagColumns";
 
 describe("getContributorAttribution", () => {
   // @req REQ-042
@@ -81,6 +82,23 @@ describe("getFlagBySlug", () => {
     vi.clearAllMocks();
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (createServerClient as any).mockReturnValue(mockSupabase);
+  });
+
+  // The anon key reaches PostgREST directly, so `*` is not a safe default:
+  // it fails once the table grants only public columns (migration 116), and
+  // before that it carried the contributor's address in contribution_payload.
+  // @req REQ-014
+  it("reads only the public columns of the flag", async () => {
+    mockSupabase.maybeSingle.mockResolvedValue({ data: null, error: null });
+
+    await getFlagBySlug("ABC123DEFG");
+
+    const [flagColumns] = mockSupabase.select.mock.calls[0];
+    const requested = String(flagColumns).split(/,\s*/);
+    expect(flagColumns).toBe(PUBLIC_FLAG_SELECT);
+    expect(requested).not.toContain("*");
+    expect(requested).not.toContain("contribution_payload");
+    expect(requested).not.toContain("moderator_id");
   });
 
   it("returns null when the flag is not found", async () => {

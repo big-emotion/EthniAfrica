@@ -11,6 +11,9 @@
  *   T7. INSERT with neither assertion_id nor (entity_type + entity_id) raises
  *       the anchor-required CHECK error (flags_has_anchor_check).
  *   T8. public_slug is auto-generated (10 Crockford chars) and UNIQUE across rows.
+ *   T9. anon reads the public columns, never contribution_payload (migration 116).
+ *  T10. A session cannot INSERT its own flag, even claiming human_verified.
+ *  T11. A session cannot give itself a moderator_role on contributor_profiles.
  *
  * Execution model
  * ---------------
@@ -441,6 +444,85 @@ describe.skipIf(SKIP)(
           String(dupErr?.message ?? "").includes("23505"),
         `Expected unique violation (23505), got: ${JSON.stringify(dupErr)}`
       ).toBe(true);
+    });
+
+    // -------------------------------------------------------------------------
+    // T9 — Column privileges: the public columns only (migration 116)
+    // -------------------------------------------------------------------------
+    // @req REQ-014
+    it("T9: anon cannot read contribution_payload", async () => {
+      const { error } = await anonClient()
+        .from("flags")
+        .select("id, contribution_payload")
+        .limit(1);
+
+      expect(
+        isRlsError(error),
+        `Expected permission denied (42501) on contribution_payload, got: ${JSON.stringify(error)}`
+      ).toBe(true);
+    });
+
+    // @req REQ-014
+    it("T9: anon still reads the public columns", async () => {
+      const { error } = await anonClient()
+        .from("flags")
+        .select("id, public_slug, status, reason_text")
+        .limit(1);
+
+      expect(error).toBeNull();
+    });
+
+    // -------------------------------------------------------------------------
+    // T10 — No direct client insert, even for the caller's own uid
+    // -------------------------------------------------------------------------
+    // @req REQ-012
+    it("T10: contributor INSERT of their own verified flag is rejected", async () => {
+      const { data, error } = await contributorClient()
+        .from("flags")
+        .insert(
+          entityFlag({
+            contributor_id: getUserIdFromJwt(JWT_CONTRIBUTOR),
+            human_verified: true,
+          })
+        )
+        .select("id")
+        .single();
+
+      try {
+        expect(
+          isRlsError(error),
+          `Expected permission denied for a direct session INSERT, got: ${JSON.stringify(error)}`
+        ).toBe(true);
+      } finally {
+        if (data?.id)
+          await serviceClient().from("flags").delete().eq("id", data.id);
+      }
+    });
+
+    // -------------------------------------------------------------------------
+    // T11 — No self-served moderator role
+    // -------------------------------------------------------------------------
+    // @req REQ-042
+    it("T11: contributor cannot create a profile with an admin role", async () => {
+      const uid = getUserIdFromJwt(JWT_CONTRIBUTOR);
+      const { data, error } = await contributorClient()
+        .from("contributor_profiles")
+        .insert({ id: uid, user_id: uid, moderator_role: "admin" })
+        .select("id")
+        .single();
+
+      try {
+        expect(
+          isRlsError(error),
+          `Expected permission denied for a self-served role, got: ${JSON.stringify(error)}`
+        ).toBe(true);
+      } finally {
+        if (data?.id)
+          await serviceClient()
+            .from("contributor_profiles")
+            .delete()
+            .eq("id", data.id);
+      }
     });
   }
 );
