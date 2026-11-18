@@ -83,9 +83,10 @@ const fr = {
     admin: "Administration",
     assistant: "Claude et ChatGPT",
     connexion: "Connexion",
-    // `compte`, `inscription` and `profil` were removed with the pages
-    // they named: there are no public accounts, so nothing registers, and
-    // a segment nobody can reach needs no word.
+    // The reader account (REQ-212). `inscription` and `profil` stay
+    // removed: the account opens from a confirmed address, not a form.
+    compte: "Compte",
+    confirmer: "Confirmation",
     contact: "Contact",
     contribute: "Contribuer",
     "mentions-legales": "Mentions légales",

@@ -175,4 +175,28 @@ describe("GET /api/auth/callback", () => {
 
     expect(response.headers.get("location")).toContain("/fr/admin/connexion");
   });
+
+  // A reader is not sent to the moderators' sign-in: that page would tell
+  // them the console is not for them, which is true and of no help.
+  // @req REQ-213
+  it("sends a reader whose code is spent back to the reader sign-in", async () => {
+    mocks.exchangeCodeForSession.mockResolvedValue({
+      error: { message: "invalid flow state" },
+    });
+
+    const response = await callbackFor("?code=stale&redirect=%2Ffr%2Fcompte");
+
+    expect(response.headers.get("location")).toMatch(
+      /^http:\/\/localhost:3000\/fr\/compte\/connexion\?error=/
+    );
+  });
+
+  // @req REQ-213
+  it("lands a signed-in reader on their account", async () => {
+    const response = await callbackFor("?code=abc&redirect=%2Ffr%2Fcompte");
+
+    expect(response.headers.get("location")).toBe(
+      "http://localhost:3000/fr/compte"
+    );
+  });
 });

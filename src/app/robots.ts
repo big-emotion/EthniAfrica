@@ -30,7 +30,9 @@ export default function robots(): MetadataRoute.Robots {
         // the stronger guarantee — a crawler can ignore a disallow line, it
         // cannot index a route that is gone. The retired `/en/` addresses are
         // left crawlable so their 308s can pass their standing on.
-        disallow: ["/fr/admin/"],
+        // `/fr/compte` without a trailing slash: the account page itself sits
+        // at the bare address, unlike the console behind its sign-in.
+        disallow: ["/fr/admin/", "/fr/compte"],
       },
     ],
     sitemap: `https://${CANONICAL_DOMAIN}/sitemap.xml`,

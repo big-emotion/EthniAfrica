@@ -407,7 +407,8 @@ loader run dies with `native WebSocket not found` before the target guard is rea
 ## First moderator
 
 Access to the moderation console is an address on `admin_allowlist` — not a role, and not an
-account, because the atlas has no public accounts. The console is `/fr/admin`, its sign-in
+account. Readers do have accounts (`/fr/compte`, REQ-213), opened by the link that publishes their
+first comment, and a reader session opens nothing in the console. The console is `/fr/admin`, its sign-in
 `/fr/admin/connexion`. Put the address on the list, then have the
 person request a link at the published sign-in page:
 
@@ -417,14 +418,15 @@ NEXT_PUBLIC_SUPABASE_URL=… SUPABASE_SERVICE_ROLE_KEY=… \
 ```
 
 The magic link only works once Supabase Auth's redirect allow-list carries this
-environment's `/api/auth/callback`; otherwise Supabase silently substitutes the
+environment's `/api/auth/callback` — and the reader mail once it carries
+`/fr/compte/confirmer**`; otherwise Supabase silently substitutes the
 project's Site URL. Full procedure and the failure modes:
 `docs/runbooks/moderation-access.md`.
 
-Sign-in is that magic link and nothing else. GitHub and Google are disabled in
-`supabase/config.toml` (`[auth.external.github]` and `[auth.external.google]`,
-`enabled = false`): with no public accounts they would only open a second door onto the same
-allowlist check.
+Sign-in is that magic link and nothing else, for moderators and readers alike. GitHub and Google
+are disabled in `supabase/config.toml` (`[auth.external.github]` and `[auth.external.google]`,
+`enabled = false`): a reader account needs no provider, and for the console they would only open
+a second door onto the same allowlist check.
 
 ## Legacy `user_roles`
 
