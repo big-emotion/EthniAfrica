@@ -1,5 +1,5 @@
 import { logger } from "@/lib/api/logger";
-import { isEmailAllowlisted } from "@/lib/auth/adminAllowlist";
+import { isConfirmedAllowlistedUser } from "@/lib/auth/adminAllowlist";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { PUBLIC_FLAG_SELECT } from "@/lib/flags/publicFlagColumns";
 
@@ -365,7 +365,7 @@ export async function getModeratorByAccessToken(
     return null;
   }
 
-  return (await isEmailAllowlisted(user.email)) ? { id: user.id } : null;
+  return (await isConfirmedAllowlistedUser(user)) ? { id: user.id } : null;
 }
 
 /**

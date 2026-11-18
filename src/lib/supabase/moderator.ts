@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import type { User } from "@supabase/supabase-js";
-import { isEmailAllowlisted } from "@/lib/auth/adminAllowlist";
+import { isConfirmedAllowlistedUser } from "@/lib/auth/adminAllowlist";
 import { createServerSupabaseClient } from "./auth-server";
 
 export interface ModeratorSession {
@@ -40,7 +40,7 @@ export async function getModeratorSession(): Promise<ModeratorSession> {
     redirect(SIGN_IN_URL);
   }
 
-  if (!(await isEmailAllowlisted(user.email))) {
+  if (!(await isConfirmedAllowlistedUser(user))) {
     redirect(SIGN_IN_URL);
   }
 

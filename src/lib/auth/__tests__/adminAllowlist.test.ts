@@ -13,7 +13,10 @@ vi.mock("@/lib/api/logger", () => ({
   logger: { error: mocks.loggerError },
 }));
 
-import { isEmailAllowlisted } from "../adminAllowlist";
+import {
+  isConfirmedAllowlistedUser,
+  isEmailAllowlisted,
+} from "../adminAllowlist";
 
 function allowlistReturning(result: {
   data: unknown;
@@ -87,5 +90,63 @@ describe("isEmailAllowlisted", () => {
       false
     );
     expect(mocks.loggerError).toHaveBeenCalled();
+  });
+});
+
+describe("isEmailAllowlisted address normalisation", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+  });
+
+  // @req REQ-042
+  it("looks the address up in lower case", async () => {
+    const { query } = allowlistReturning({
+      data: { email: "moderation@example.org" },
+      error: null,
+    });
+
+    await isEmailAllowlisted("Moderation@Example.ORG");
+
+    expect(query.eq).toHaveBeenCalledWith("email", "moderation@example.org");
+  });
+});
+
+describe("isConfirmedAllowlistedUser", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+  });
+
+  // @req REQ-042
+  it("admits a confirmed user whose address the allowlist holds", async () => {
+    allowlistReturning({
+      data: { email: "moderation@example.org" },
+      error: null,
+    });
+
+    await expect(
+      isConfirmedAllowlistedUser({
+        email: "moderation@example.org",
+        email_confirmed_at: "2026-11-01T00:00:00.000Z",
+      })
+    ).resolves.toBe(true);
+  });
+
+  // GoTrue sign-up is open: an address typed into a sign-up form is a claim
+  // until the confirmation link has been followed.
+  // @req REQ-042
+  it("refuses an unconfirmed user without consulting the allowlist", async () => {
+    const { from } = allowlistReturning({
+      data: { email: "moderation@example.org" },
+      error: null,
+    });
+
+    await expect(
+      isConfirmedAllowlistedUser({
+        email: "moderation@example.org",
+        email_confirmed_at: null,
+      })
+    ).resolves.toBe(false);
+    await expect(isConfirmedAllowlistedUser(null)).resolves.toBe(false);
+    expect(from).not.toHaveBeenCalled();
   });
 });

@@ -16,11 +16,11 @@ import path from "path";
 // Mock next/navigation redirect (throws in server components / middleware)
 // vi.hoisted ensures the variable is available when vi.mock factory runs.
 // ---------------------------------------------------------------------------
-const { mockRedirect, mockIsEmailAllowlisted } = vi.hoisted(() => {
+const { mockRedirect, mockIsConfirmedAllowlistedUser } = vi.hoisted(() => {
   const mockRedirect = vi.fn((url: string): never => {
     throw new Error(`REDIRECT:${url}`);
   });
-  return { mockRedirect, mockIsEmailAllowlisted: vi.fn() };
+  return { mockRedirect, mockIsConfirmedAllowlistedUser: vi.fn() };
 });
 
 vi.mock("next/navigation", () => ({
@@ -28,7 +28,7 @@ vi.mock("next/navigation", () => ({
 }));
 
 vi.mock("@/lib/auth/adminAllowlist", () => ({
-  isEmailAllowlisted: mockIsEmailAllowlisted,
+  isConfirmedAllowlistedUser: mockIsConfirmedAllowlistedUser,
 }));
 
 // ---------------------------------------------------------------------------
@@ -49,7 +49,11 @@ import { getModeratorSession } from "../moderator";
 const SIGN_IN = "REDIRECT:/fr/admin/connexion";
 
 function signedInAs(email: string) {
-  const user = { id: "user-uuid-123", email };
+  const user = {
+    id: "user-uuid-123",
+    email,
+    email_confirmed_at: "2026-11-01T00:00:00.000Z",
+  };
   mockGetUser.mockResolvedValue({ data: { user }, error: null });
   return user;
 }
@@ -62,7 +66,7 @@ describe("getModeratorSession", () => {
   // @req REQ-042
   it("returns the session for an address the allowlist holds", async () => {
     const user = signedInAs("moderation@example.org");
-    mockIsEmailAllowlisted.mockResolvedValue(true);
+    mockIsConfirmedAllowlistedUser.mockResolvedValue(true);
 
     await expect(getModeratorSession()).resolves.toEqual({ user });
   });
@@ -70,7 +74,7 @@ describe("getModeratorSession", () => {
   // @req REQ-042
   it("sends a signed-in stranger back to the sign-in page", async () => {
     signedInAs("passante@example.org");
-    mockIsEmailAllowlisted.mockResolvedValue(false);
+    mockIsConfirmedAllowlistedUser.mockResolvedValue(false);
 
     await expect(getModeratorSession()).rejects.toThrow(SIGN_IN);
   });
@@ -78,12 +82,12 @@ describe("getModeratorSession", () => {
   // @req REQ-042
   it("checks the address that is actually signed in", async () => {
     signedInAs("moderation@example.org");
-    mockIsEmailAllowlisted.mockResolvedValue(true);
+    mockIsConfirmedAllowlistedUser.mockResolvedValue(true);
 
     await getModeratorSession();
 
-    expect(mockIsEmailAllowlisted).toHaveBeenCalledWith(
-      "moderation@example.org"
+    expect(mockIsConfirmedAllowlistedUser).toHaveBeenCalledWith(
+      expect.objectContaining({ email: "moderation@example.org" })
     );
   });
 
@@ -92,7 +96,7 @@ describe("getModeratorSession", () => {
     mockGetUser.mockResolvedValue({ data: { user: null }, error: null });
 
     await expect(getModeratorSession()).rejects.toThrow(SIGN_IN);
-    expect(mockIsEmailAllowlisted).not.toHaveBeenCalled();
+    expect(mockIsConfirmedAllowlistedUser).not.toHaveBeenCalled();
   });
 
   // @req REQ-042
@@ -111,7 +115,7 @@ describe("getModeratorSession", () => {
       data: { user: { id: "user-uuid-123", email: null } },
       error: null,
     });
-    mockIsEmailAllowlisted.mockResolvedValue(false);
+    mockIsConfirmedAllowlistedUser.mockResolvedValue(false);
 
     await expect(getModeratorSession()).rejects.toThrow(SIGN_IN);
   });

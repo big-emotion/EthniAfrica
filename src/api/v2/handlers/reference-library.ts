@@ -93,9 +93,11 @@ export interface ReferenceLibraryHandlerContext {
 }
 
 export interface ReferenceLibraryHandlerDependencies {
-  getAuthenticatedReferenceUser: (
-    accessToken: string
-  ) => Promise<{ id: string; email: string | null } | null>;
+  getAuthenticatedReferenceUser: (accessToken: string) => Promise<{
+    id: string;
+    email: string | null;
+    email_confirmed_at?: string | null;
+  } | null>;
   isEmailAllowlisted: (email: string | null | undefined) => Promise<boolean>;
   searchReferences: (
     search: string,
@@ -167,7 +169,11 @@ function forbidden(): ReferenceLibraryHandlerResult<ApiEnvelope<null>> {
 async function authenticate(
   context: ReferenceLibraryHandlerContext,
   dependencies: ReferenceLibraryHandlerDependencies
-): Promise<{ id: string; email: string | null } | null> {
+): Promise<{
+  id: string;
+  email: string | null;
+  email_confirmed_at?: string | null;
+} | null> {
   const accessToken = context.accessToken?.trim();
   if (!accessToken) return null;
   return dependencies.getAuthenticatedReferenceUser(accessToken);
@@ -195,7 +201,10 @@ async function authorizeModerator(
 ): Promise<WriteAuthorization> {
   const user = await authenticate(context, dependencies);
   if (!user) return { refusal: unauthenticated() };
-  if (!(await dependencies.isEmailAllowlisted(user.email))) {
+  const moderator =
+    Boolean(user.email_confirmed_at) &&
+    (await dependencies.isEmailAllowlisted(user.email));
+  if (!moderator) {
     return { refusal: forbidden() };
   }
   return { user };

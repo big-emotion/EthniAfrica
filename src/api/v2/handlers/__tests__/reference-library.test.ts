@@ -10,6 +10,7 @@ import {
 const contributor = {
   id: "11111111-1111-4111-8111-111111111111",
   email: "moderation@example.org",
+  email_confirmed_at: "2026-11-01T00:00:00.000Z",
 };
 const source = {
   id: "22222222-2222-4222-8222-222222222222",

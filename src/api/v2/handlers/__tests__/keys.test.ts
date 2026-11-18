@@ -7,7 +7,11 @@ import {
   handlePublicKeyIssue,
 } from "@/api/v2/handlers/keys";
 
-const user = { id: "user-1", email: "moderation@example.org" };
+const user = {
+  id: "user-1",
+  email: "moderation@example.org",
+  email_confirmed_at: "2026-11-01T00:00:00.000Z",
+};
 
 const keySummary = {
   id: "key-1",

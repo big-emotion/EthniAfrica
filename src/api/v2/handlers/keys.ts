@@ -92,7 +92,10 @@ async function authorizeKeyOwner(
     ? await dependencies.getAuthenticatedUser(accessToken)
     : null;
   if (!user) return { refusal: { status: 401, body: unauthorized() } };
-  if (!(await dependencies.isEmailAllowlisted(user.email))) {
+  const moderator =
+    Boolean(user.email_confirmed_at) &&
+    (await dependencies.isEmailAllowlisted(user.email));
+  if (!moderator) {
     return { refusal: { status: 403, body: forbidden() } };
   }
   return { user };
