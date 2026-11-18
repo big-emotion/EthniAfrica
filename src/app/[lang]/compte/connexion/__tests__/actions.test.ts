@@ -1,9 +1,9 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-const mocks = vi.hoisted(() => ({ sendReaderLink: vi.fn() }));
+const mocks = vi.hoisted(() => ({ sendReaderSignInLink: vi.fn() }));
 
 vi.mock("@/lib/account/readerAuth", () => ({
-  sendReaderLink: mocks.sendReaderLink,
+  sendReaderSignInLink: mocks.sendReaderSignInLink,
 }));
 
 vi.mock("next/navigation", () => ({
@@ -23,7 +23,7 @@ function submit(email: string) {
 describe("requestReaderSignInLink", () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    mocks.sendReaderLink.mockResolvedValue(undefined);
+    mocks.sendReaderSignInLink.mockResolvedValue(undefined);
   });
 
   // @req REQ-213
@@ -31,17 +31,14 @@ describe("requestReaderSignInLink", () => {
     await expect(submit(" awa@example.org ")).rejects.toThrow(
       "REDIRECT /fr/compte/connexion?etat=envoye"
     );
-    expect(mocks.sendReaderLink).toHaveBeenCalledWith(
-      "awa@example.org",
-      "sign-in"
-    );
+    expect(mocks.sendReaderSignInLink).toHaveBeenCalledWith("awa@example.org");
   });
 
   // An address with no account gets exactly the same answer: the form must
   // not tell a stranger which addresses have commented.
   // @req REQ-213
   it("gives the same answer when no account exists for the address", async () => {
-    mocks.sendReaderLink.mockResolvedValue(undefined);
+    mocks.sendReaderSignInLink.mockResolvedValue(undefined);
 
     await expect(submit("nobody@example.org")).rejects.toThrow(
       "REDIRECT /fr/compte/connexion?etat=envoye"
@@ -53,6 +50,6 @@ describe("requestReaderSignInLink", () => {
     await expect(submit("awa")).rejects.toThrow(
       "REDIRECT /fr/compte/connexion?etat=adresse-invalide"
     );
-    expect(mocks.sendReaderLink).not.toHaveBeenCalled();
+    expect(mocks.sendReaderSignInLink).not.toHaveBeenCalled();
   });
 });

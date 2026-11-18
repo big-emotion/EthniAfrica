@@ -13,8 +13,11 @@ const fr = {
   contributionsTitle: "Mes commentaires",
   empty:
     "Vous n'avez pas encore de commentaire. Vous pouvez commenter un passage depuis la page d'un nom.",
-  linkSent:
-    "Un nouveau lien vient de partir vers votre adresse. Ouvrez-le pour publier votre commentaire.",
+  notice: {
+    publie: "Votre commentaire est publié.",
+    "pas-moi":
+      "Ce commentaire n'est plus lié à votre adresse. Il ne sera pas publié et ne sera jamais rattaché à votre compte.",
+  },
   state: {
     pending: "En attente de confirmation",
     published: "Publié",
@@ -25,10 +28,11 @@ const fr = {
     withdrawn: "Retiré",
   },
   pendingHelp:
-    "Ce commentaire sera publié quand vous aurez cliqué sur le lien reçu par e-mail.",
+    "Ce commentaire a été envoyé avec votre adresse, mais il n'est pas encore publié. Si vous l'avez écrit, vous pouvez le publier. Sinon, dites-le : il restera privé et ne sera jamais rattaché à votre compte.",
+  publish: "Publier",
+  notMine: "Ce n'est pas moi",
   hiddenHelp:
     "Des lecteurs ont signalé ce commentaire, ou la modération l'a masqué. Il n'est plus visible sur la page tant que la modération ne l'a pas revu.",
-  resendLink: "Renvoyer le lien",
   integrated: (date: string) => `Intégré à la fiche le ${date}`,
   moderationSignature: (date: string) => `Modération EthniAfrica · ${date}`,
   moderationName: "Modération EthniAfrica",
@@ -76,7 +80,7 @@ const fr = {
   confirmation: {
     metadataTitle: "Publier mon commentaire",
     title: "Publier mon commentaire",
-    lead: "Appuyez sur le bouton pour publier votre commentaire. Vous ouvrirez en même temps votre compte, où vous pourrez le suivre.",
+    lead: "Voici le commentaire envoyé avec votre adresse. Appuyez sur le bouton pour le publier. Vous ouvrirez en même temps votre compte, où vous pourrez le suivre.",
     why: "Le lien ne publie rien tout seul : certains logiciels ouvrent les liens d'un e-mail avant vous, et ils ne doivent pas publier à votre place.",
     submit: "Publier mon commentaire",
     signInTitle: "Ouvrir mon compte",

@@ -2,18 +2,23 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const mocks = vi.hoisted(() => ({
   getReaderSession: vi.fn(),
-  sendReaderLink: vi.fn(),
   eraseReaderAccount: vi.fn(),
+  publishPendingFlagForEmail: vi.fn(),
+  disownPendingFlag: vi.fn(),
   signOut: vi.fn(),
 }));
 
 vi.mock("@/lib/account/readerAuth", () => ({
   getReaderSession: mocks.getReaderSession,
-  sendReaderLink: mocks.sendReaderLink,
 }));
 
 vi.mock("@/api/v2/services/account", () => ({
   eraseReaderAccount: mocks.eraseReaderAccount,
+}));
+
+vi.mock("@/api/v2/services/comments", () => ({
+  publishPendingFlagForEmail: mocks.publishPendingFlagForEmail,
+  disownPendingFlag: mocks.disownPendingFlag,
 }));
 
 vi.mock("@/lib/supabase/auth-server", () => ({
@@ -30,11 +35,18 @@ vi.mock("next/navigation", () => ({
 
 import {
   deleteReaderAccount,
-  resendReaderLink,
+  disownPendingComment,
+  publishPendingComment,
   signOutReader,
 } from "../actions";
 
 const READER = { id: "user-1", email: "awa@example.org" };
+
+function withComment(slug: string) {
+  const form = new FormData();
+  form.set("commentaire", slug);
+  return form;
+}
 
 describe("account actions", () => {
   beforeEach(() => {
@@ -42,6 +54,8 @@ describe("account actions", () => {
     mocks.getReaderSession.mockResolvedValue(READER);
     mocks.signOut.mockResolvedValue({ error: null });
     mocks.eraseReaderAccount.mockResolvedValue(undefined);
+    mocks.publishPendingFlagForEmail.mockResolvedValue({ published: true });
+    mocks.disownPendingFlag.mockResolvedValue({ disowned: true });
   });
 
   // @req REQ-213
@@ -71,16 +85,42 @@ describe("account actions", () => {
     expect(mocks.eraseReaderAccount).not.toHaveBeenCalled();
   });
 
-  // A pending comment written signed-out, in another browser, waits on the
-  // same address; the account sends that address a fresh publication link.
+  // The session's address is the proof: a signed-in reader publishes a
+  // waiting comment that carries it, and only that one.
   // @req REQ-213
-  it("sends a fresh publication link to the reader's own address", async () => {
-    await expect(resendReaderLink()).rejects.toThrow(
-      "REDIRECT /fr/compte?lien=envoye"
-    );
-    expect(mocks.sendReaderLink).toHaveBeenCalledWith(
+  it("publishes one waiting comment with the session's own address", async () => {
+    await expect(
+      publishPendingComment(withComment("K7M2Q9X4AB"))
+    ).rejects.toThrow("REDIRECT /fr/compte?etat=publie");
+    expect(mocks.publishPendingFlagForEmail).toHaveBeenCalledWith(
+      "K7M2Q9X4AB",
       "awa@example.org",
-      "publish"
+      "user-1"
     );
+  });
+
+  // @req REQ-213
+  it("unlinks a waiting comment the reader did not write", async () => {
+    await expect(
+      disownPendingComment(withComment("K7M2Q9X4AB"))
+    ).rejects.toThrow("REDIRECT /fr/compte?etat=pas-moi");
+    expect(mocks.disownPendingFlag).toHaveBeenCalledWith(
+      "K7M2Q9X4AB",
+      "awa@example.org"
+    );
+  });
+
+  // @req REQ-213
+  it.each([
+    ["publishes", publishPendingComment],
+    ["unlinks", disownPendingComment],
+  ])("%s nothing without a reader session", async (_label, action) => {
+    mocks.getReaderSession.mockResolvedValue(null);
+
+    await expect(action(withComment("K7M2Q9X4AB"))).rejects.toThrow(
+      "REDIRECT /fr/compte/connexion"
+    );
+    expect(mocks.publishPendingFlagForEmail).not.toHaveBeenCalled();
+    expect(mocks.disownPendingFlag).not.toHaveBeenCalled();
   });
 });

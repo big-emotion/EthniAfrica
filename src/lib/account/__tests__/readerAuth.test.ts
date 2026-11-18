@@ -13,7 +13,7 @@ vi.mock("@/lib/supabase/auth-server", () => ({
   ),
 }));
 
-import { getReaderSession, sendReaderLink } from "../readerAuth";
+import { getReaderSession, sendReaderSignInLink } from "../readerAuth";
 
 describe("getReaderSession", () => {
   beforeEach(() => vi.clearAllMocks());
@@ -63,7 +63,7 @@ describe("getReaderSession", () => {
   });
 });
 
-describe("sendReaderLink", () => {
+describe("sendReaderSignInLink", () => {
   beforeEach(() => {
     vi.clearAllMocks();
     vi.stubEnv("NEXT_PUBLIC_SITE_URL", "https://ethniafrica.com");
@@ -72,24 +72,11 @@ describe("sendReaderLink", () => {
 
   afterEach(() => vi.unstubAllEnvs());
 
-  // A sign-in never creates an account: only a confirmed comment does.
+  // A sign-in never creates an account: only a confirmed comment does. And
+  // it names no comment, so the page it opens publishes nothing.
   // @req REQ-213
-  it("asks for a sign-in link to an existing account only", async () => {
-    await sendReaderLink("awa@example.org", "sign-in");
-
-    expect(mocks.signInWithOtp).toHaveBeenCalledWith({
-      email: "awa@example.org",
-      options: {
-        shouldCreateUser: false,
-        emailRedirectTo:
-          "https://ethniafrica.com/fr/compte/confirmer?raison=connexion",
-      },
-    });
-  });
-
-  // @req REQ-213
-  it("asks for a publication link when a comment waits on the address", async () => {
-    await sendReaderLink("awa@example.org", "publish");
+  it("asks for a sign-in link to an existing account only, naming no comment", async () => {
+    await sendReaderSignInLink("awa@example.org");
 
     expect(mocks.signInWithOtp).toHaveBeenCalledWith({
       email: "awa@example.org",
@@ -109,7 +96,7 @@ describe("sendReaderLink", () => {
     });
 
     await expect(
-      sendReaderLink("nobody@example.org", "sign-in")
+      sendReaderSignInLink("nobody@example.org")
     ).resolves.toBeUndefined();
   });
 });

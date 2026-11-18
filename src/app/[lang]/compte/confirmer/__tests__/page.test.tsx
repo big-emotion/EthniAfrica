@@ -4,7 +4,8 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const mocks = vi.hoisted(() => ({
   verifyOtp: vi.fn(),
-  publishPendingFlagsForEmail: vi.fn(),
+  publishPendingFlagForEmail: vi.fn(),
+  findPendingComment: vi.fn(),
 }));
 
 vi.mock("@/lib/supabase/auth-server", () => ({
@@ -14,7 +15,8 @@ vi.mock("@/lib/supabase/auth-server", () => ({
 }));
 
 vi.mock("@/api/v2/services/comments", () => ({
-  publishPendingFlagsForEmail: mocks.publishPendingFlagsForEmail,
+  publishPendingFlagForEmail: mocks.publishPendingFlagForEmail,
+  findPendingComment: mocks.findPendingComment,
 }));
 
 vi.mock("@/components/layout/PageLayout", () => ({
@@ -43,51 +45,89 @@ async function renderPage(query: Record<string, string>) {
   );
 }
 
+function hiddenValue(form: HTMLFormElement, name: string) {
+  return (form.querySelector(`input[name="${name}"]`) as HTMLInputElement)
+    ?.value;
+}
+
 describe("/fr/compte/confirmer", () => {
-  beforeEach(() => vi.clearAllMocks());
+  beforeEach(() => {
+    vi.clearAllMocks();
+    mocks.findPendingComment.mockResolvedValue({
+      public_slug: "K7M2Q9X4AB",
+      block_key: "people:PPL_PEUL:naming",
+      body: "On dit aussi Fulbe sans le ɓ.",
+    });
+  });
 
   // Mail scanners open the links of an e-mail before the reader does. A page
   // that redeemed the token on load would publish on the scanner's behalf.
   // @req REQ-213
   it("publishes nothing and redeems nothing when the page is only loaded", async () => {
-    await renderPage({ token_hash: "pkce_abc", type: "signup" });
+    await renderPage({
+      token_hash: "pkce_abc",
+      type: "signup",
+      commentaire: "K7M2Q9X4AB",
+    });
 
     expect(mocks.verifyOtp).not.toHaveBeenCalled();
-    expect(mocks.publishPendingFlagsForEmail).not.toHaveBeenCalled();
+    expect(mocks.publishPendingFlagForEmail).not.toHaveBeenCalled();
   });
 
+  // The reader sees exactly what they are about to publish.
   // @req REQ-213
-  it("offers one button that carries the token to the server action", async () => {
-    await renderPage({ token_hash: "pkce_abc", type: "signup" });
+  it("shows the comment above one button that carries the token and the comment", async () => {
+    await renderPage({
+      token_hash: "pkce_abc",
+      type: "signup",
+      commentaire: "K7M2Q9X4AB",
+    });
 
+    expect(mocks.findPendingComment).toHaveBeenCalledWith("K7M2Q9X4AB");
+    expect(screen.getByText("On dit aussi Fulbe sans le ɓ.")).toBeTruthy();
+    expect(screen.getByText("Peuple · Les autres noms")).toBeTruthy();
     const button = screen.getByRole("button", {
       name: "Publier mon commentaire",
     });
     const form = button.closest("form");
-    expect(form).not.toBeNull();
     expect(screen.getAllByRole("button")).toHaveLength(1);
-    expect(
-      (form.querySelector('input[name="token_hash"]') as HTMLInputElement).value
-    ).toBe("pkce_abc");
-    expect(
-      (form.querySelector('input[name="type"]') as HTMLInputElement).value
-    ).toBe("signup");
+    expect(hiddenValue(form, "token_hash")).toBe("pkce_abc");
+    expect(hiddenValue(form, "type")).toBe("signup");
+    expect(hiddenValue(form, "commentaire")).toBe("K7M2Q9X4AB");
   });
 
+  // A comment already published, or one the link does not name, gives a
+  // page that opens the account and claims to publish nothing.
   // @req REQ-213
-  it("names the account when the reader only asked to sign in", async () => {
+  it("only opens the account when the comment is no longer waiting", async () => {
+    mocks.findPendingComment.mockResolvedValue(null);
+
     await renderPage({
       token_hash: "pkce_abc",
       type: "magiclink",
-      raison: "connexion",
+      commentaire: "K7M2Q9X4AB",
     });
 
     expect(
-      screen.getByRole("heading", { name: "Ouvrir mon compte" })
-    ).toBeTruthy();
-    expect(
       screen.getByRole("button", { name: "Ouvrir mon compte" })
     ).toBeTruthy();
+    expect(
+      screen.queryByRole("button", { name: "Publier mon commentaire" })
+    ).toBeNull();
+  });
+
+  // @req REQ-213
+  it("names the account when the link names no comment", async () => {
+    await renderPage({ token_hash: "pkce_abc", type: "magiclink" });
+
+    expect(mocks.findPendingComment).not.toHaveBeenCalled();
+    expect(
+      screen.getByRole("heading", { name: "Ouvrir mon compte" })
+    ).toBeTruthy();
+    const form = screen
+      .getByRole("button", { name: "Ouvrir mon compte" })
+      .closest("form");
+    expect(hiddenValue(form, "commentaire")).toBeUndefined();
   });
 
   // @req REQ-213

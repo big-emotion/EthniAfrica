@@ -101,6 +101,9 @@ function verificationLink(
 
 const READER_CONFIRMATION_PATH = "/fr/compte/confirmer";
 
+// `flags.public_slug`: ten Crockford base32 characters (migration 022).
+const FLAG_SLUG = /^[0-9A-HJKMNP-TV-Z]{10}$/;
+
 // Only the path of `redirect_to` is read: the link is built on the site's own
 // address, so whatever the Auth allow-list lets through, the mail never points
 // a reader at another host.
@@ -119,14 +122,17 @@ function readerConfirmationLink(
     return null;
   }
 
-  const signIn = redirect.searchParams.get("raison") === "connexion";
+  // The comment the link was issued for: the page publishes that one and no
+  // other. Without one, the link only opens the account.
+  const comment = redirect.searchParams.get("commentaire");
+  const forComment = comment !== null && FLAG_SLUG.test(comment);
   const link = new URL(READER_CONFIRMATION_PATH, resolveSiteUrl());
   link.search = new URLSearchParams({
     token_hash: tokenHash,
     type: action,
-    ...(signIn ? { raison: "connexion" } : {}),
+    ...(forComment ? { commentaire: comment } : {}),
   }).toString();
-  return { link: link.toString(), intent: signIn ? "sign-in" : "publish" };
+  return { link: link.toString(), intent: forComment ? "publish" : "sign-in" };
 }
 
 // @req REQ-042

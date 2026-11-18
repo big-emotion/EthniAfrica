@@ -3,7 +3,7 @@
 import type { EmailOtpType } from "@supabase/supabase-js";
 import { redirect } from "next/navigation";
 
-import { publishPendingFlagsForEmail } from "@/api/v2/services/comments";
+import { publishPendingFlagForEmail } from "@/api/v2/services/comments";
 import { logger } from "@/lib/api/logger";
 import { getStaticPageRoute } from "@/lib/routing";
 import { createServerSupabaseClient } from "@/lib/supabase/auth-server";
@@ -30,8 +30,8 @@ const EXPIRED_LINK = `${ACCOUNT}/connexion?etat=lien-expire`;
  * The token is redeemed here, on a POST the reader makes by pressing the
  * button — never on the page's GET, which mail scanners make on their own.
  * `verifyOtp` on the cookie client sets the session; the address it returns
- * is the one Auth just proved the reader holds, and it alone decides which
- * pending comments are published.
+ * is the one Auth just proved the reader holds, and the named comment is
+ * published only if it carries that address.
  */
 // @req REQ-213
 export async function confirmReaderLink(formData: FormData): Promise<void> {
@@ -51,15 +51,21 @@ export async function confirmReaderLink(formData: FormData): Promise<void> {
     redirect(EXPIRED_LINK);
   }
 
-  try {
-    await publishPendingFlagsForEmail(user.email, user.id);
-  } catch (publishError) {
-    // The reader is signed in either way; their comments still read as
-    // waiting on the account page, which offers to send the link again.
-    logger.error(
-      "Failed to publish a reader's confirmed comments",
-      publishError
-    );
+  // Only the comment the link was issued for, and only if it carries this
+  // address: other pending comments of the address may be someone else's,
+  // and the account page asks about each of them.
+  const comment = String(formData.get("commentaire") ?? "").trim();
+  if (comment) {
+    try {
+      await publishPendingFlagForEmail(comment, user.email, user.id);
+    } catch (publishError) {
+      // The reader is signed in either way; the comment still reads as
+      // waiting on the account page, which offers to publish it.
+      logger.error(
+        "Failed to publish a reader's confirmed comment",
+        publishError
+      );
+    }
   }
 
   redirect(ACCOUNT);
