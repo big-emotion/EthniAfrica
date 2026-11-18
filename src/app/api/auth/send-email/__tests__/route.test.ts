@@ -191,6 +191,7 @@ describe("POST /api/auth/send-email", () => {
 
   describe("a reader's link (REQ-213)", () => {
     const READER_CONFIRMATION = "https://ethniafrica.com/fr/compte/confirmer";
+    const FOR_COMMENT = `${READER_CONFIRMATION}?commentaire=K7M2Q9X4AB`;
 
     beforeEach(() => {
       vi.stubEnv("NEXT_PUBLIC_SITE_URL", "https://ethniafrica.com");
@@ -198,21 +199,20 @@ describe("POST /api/auth/send-email", () => {
 
     // A link that went through Auth's GET verify would sign the reader in —
     // and publish their comment — on the first request a mail scanner made.
+    // The comment it was issued for travels with it, so the page publishes
+    // that one and no other.
     // @req REQ-213
-    it("links a commenter to the atlas's confirmation page, never to Auth's verify endpoint", async () => {
+    it("links a commenter to the atlas's confirmation page for their comment, never to Auth's verify endpoint", async () => {
       await POST(
         signedHookRequest(
-          hookPayload({
-            redirect_to: READER_CONFIRMATION,
-            email_action_type: "signup",
-          })
+          hookPayload({ redirect_to: FOR_COMMENT, email_action_type: "signup" })
         )
       );
 
       const { text, subject } = sentMessage();
       expect(subject).toBe("Publiez votre commentaire sur EthniAfrica");
       expect(text).toContain(
-        "https://ethniafrica.com/fr/compte/confirmer?token_hash=pkce_abc123&type=signup"
+        "https://ethniafrica.com/fr/compte/confirmer?token_hash=pkce_abc123&type=signup&commentaire=K7M2Q9X4AB"
       );
       expect(text).not.toContain("/auth/v1/verify");
     });
@@ -224,29 +224,44 @@ describe("POST /api/auth/send-email", () => {
       await POST(
         signedHookRequest(
           hookPayload({
-            redirect_to: READER_CONFIRMATION,
+            redirect_to: FOR_COMMENT,
             email_action_type: "magiclink",
           })
         )
       );
 
-      expect(sentMessage().text).toContain("&type=magiclink");
+      expect(sentMessage().text).toContain("&type=magiclink&");
     });
 
     // @req REQ-213
-    it("writes the sign-in mail when the reader only asked to open their account", async () => {
+    it("writes the sign-in mail when no comment is named", async () => {
       await POST(
-        signedHookRequest(
-          hookPayload({
-            redirect_to: `${READER_CONFIRMATION}?raison=connexion`,
-          })
-        )
+        signedHookRequest(hookPayload({ redirect_to: READER_CONFIRMATION }))
       );
 
       const { text, subject } = sentMessage();
       expect(subject).toBe("Votre lien pour ouvrir votre compte EthniAfrica");
       expect(text).toContain(
-        "https://ethniafrica.com/fr/compte/confirmer?token_hash=pkce_abc123&type=magiclink&raison=connexion"
+        "https://ethniafrica.com/fr/compte/confirmer?token_hash=pkce_abc123&type=magiclink"
+      );
+      expect(text).not.toContain("commentaire=");
+    });
+
+    // A slug is ten Crockford base32 characters; anything else is not
+    // carried into the mail.
+    // @req REQ-213
+    it("drops a comment parameter that is not a comment's address", async () => {
+      await POST(
+        signedHookRequest(
+          hookPayload({
+            redirect_to: `${READER_CONFIRMATION}?commentaire=%3Cscript%3E`,
+          })
+        )
+      );
+
+      expect(sentMessage().text).not.toContain("commentaire=");
+      expect(sentMessage().subject).toBe(
+        "Votre lien pour ouvrir votre compte EthniAfrica"
       );
     });
 

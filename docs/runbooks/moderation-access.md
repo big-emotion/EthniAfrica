@@ -94,7 +94,7 @@ else means the entry did not match and GoTrue fell back to the Site URL.
 ### The reader account's redirect — one more entry per environment
 
 The reader mail (REQ-213) asks Auth for a redirect to
-`<site>/fr/compte/confirmer`, sometimes with `?raison=connexion`. The send-email
+`<site>/fr/compte/confirmer?commentaire=<slug>` (a sign-in names no comment). The send-email
 hook (§2) recognises a reader mail by that path; if GoTrue substitutes the Site
 URL, the reader receives the **moderators'** mail instead, with a link that
 signs them in without publishing anything. So each environment's list carries
@@ -145,7 +145,11 @@ redirect is `/fr/compte/confirmer`. That mail never links to Auth's
 confirmation page with the token hash, and the page redeems it only when the
 reader presses « Publier mon commentaire ». GoTrue sends `signup` to an address
 it has never confirmed and `magiclink` to one it has; the link carries the type
-it was given and the page accepts both.
+it was given and the page accepts both. It also carries the `commentaire` slug
+of the redirect: the page publishes that one comment, and only if it carries
+the address just verified. Other pending comments of the address are never
+published by a link; the reader decides on each in the account (« Publier » or
+« Ce n'est pas moi »), since anyone can type someone else's address.
 
 Order matters: **the application first, then Auth.** A hook pointing at a route the
 running release does not have turns every sign-in into a 404.

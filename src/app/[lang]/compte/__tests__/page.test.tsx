@@ -11,7 +11,11 @@ const mocks = vi.hoisted(() => ({
 
 vi.mock("@/lib/account/readerAuth", () => ({
   getReaderSession: mocks.getReaderSession,
-  sendReaderLink: vi.fn(),
+}));
+
+vi.mock("@/api/v2/services/comments", () => ({
+  publishPendingFlagForEmail: vi.fn(),
+  disownPendingFlag: vi.fn(),
 }));
 
 vi.mock("@/api/v2/services/account", () => ({
@@ -110,8 +114,10 @@ describe("/fr/compte", () => {
     ).toBeTruthy();
   });
 
+  // A waiting comment carries the reader's address, but anyone can type an
+  // address: the reader says whether they wrote it before it is published.
   // @req REQ-213
-  it("shows a waiting comment with the way to get its link again", async () => {
+  it("asks about a waiting comment: publish it, or say it is not theirs", async () => {
     mocks.listAccountContributions.mockResolvedValue([
       contribution("a", { publication: "pending" }),
     ]);
@@ -120,7 +126,17 @@ describe("/fr/compte", () => {
     const card = within(item("Commentaire a"));
 
     expect(card.getByText("En attente de confirmation")).toBeTruthy();
-    expect(card.getByRole("button", { name: "Renvoyer le lien" })).toBeTruthy();
+    const publish = card.getByRole("button", { name: "Publier" });
+    const notMine = card.getByRole("button", { name: "Ce n'est pas moi" });
+    for (const button of [publish, notMine]) {
+      expect(
+        (
+          button
+            .closest("form")
+            .querySelector('input[name="commentaire"]') as HTMLInputElement
+        ).value
+      ).toBe("SLUG-a");
+    }
     expect(card.queryByRole("link", { name: "Voir la discussion" })).toBeNull();
   });
 
@@ -219,12 +235,13 @@ describe("/fr/compte", () => {
   });
 
   // @req REQ-213
-  it("confirms a fresh link was sent", async () => {
-    await renderPage({ lien: "envoye" });
+  it.each([
+    ["publie", /Votre commentaire est publié/],
+    ["pas-moi", /n'est plus lié à votre adresse/],
+  ])("confirms what the reader just did (%s)", async (state, sentence) => {
+    await renderPage({ etat: state });
 
-    expect(screen.getByRole("status").textContent).toMatch(
-      /Un nouveau lien vient de partir/
-    );
+    expect(screen.getByRole("status").textContent).toMatch(sentence);
   });
 
   // @req REQ-213

@@ -1,4 +1,3 @@
-import type { ReaderLinkIntent } from "@/lib/email/readerLink";
 import { resolveSiteUrl } from "@/lib/siteUrl";
 import { createServerSupabaseClient } from "@/lib/supabase/auth-server";
 
@@ -36,20 +35,17 @@ export async function getReaderSession(): Promise<ReaderSession | null> {
 }
 
 /**
- * Mail a reader the link to `/fr/compte/confirmer`.
+ * Mail a reader a sign-in link to `/fr/compte/confirmer`.
  *
- * Never creates an account: a reader account is opened by a confirmed
- * comment (POST /api/v2/flags), not by a sign-in form. Auth's answer is not
- * returned — whether an account exists for the address must not be
- * observable from the page that asked.
+ * The link names no comment (`?commentaire=`), so the page it opens signs the
+ * reader in and publishes nothing. Never creates an account: a reader
+ * account is opened by a confirmed comment (POST /api/v2/flags), not by a
+ * sign-in form. Auth's answer is not returned — whether an account exists
+ * for the address must not be observable from the page that asked.
  */
 // @req REQ-213
-export async function sendReaderLink(
-  email: string,
-  intent: ReaderLinkIntent
-): Promise<void> {
+export async function sendReaderSignInLink(email: string): Promise<void> {
   const destination = new URL(READER_CONFIRMATION_PATH, resolveSiteUrl());
-  if (intent === "sign-in") destination.searchParams.set("raison", "connexion");
 
   const supabase = await createServerSupabaseClient();
   await supabase.auth.signInWithOtp({

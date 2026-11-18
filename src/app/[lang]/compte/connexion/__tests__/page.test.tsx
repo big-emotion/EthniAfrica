@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import React from "react";
 import { describe, expect, it, vi } from "vitest";
 
-vi.mock("@/lib/account/readerAuth", () => ({ sendReaderLink: vi.fn() }));
+vi.mock("@/lib/account/readerAuth", () => ({ sendReaderSignInLink: vi.fn() }));
 
 vi.mock("@/components/layout/PageLayout", () => ({
   PageLayout: ({

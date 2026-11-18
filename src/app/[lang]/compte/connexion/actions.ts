@@ -2,7 +2,7 @@
 
 import { redirect } from "next/navigation";
 
-import { sendReaderLink } from "@/lib/account/readerAuth";
+import { sendReaderSignInLink } from "@/lib/account/readerAuth";
 import { getStaticPageRoute } from "@/lib/routing";
 
 /** Deliberately loose: Auth is the real check. */
@@ -14,7 +14,7 @@ const SIGN_IN = `${getStaticPageRoute("fr", "account")}/connexion`;
  * The reader sign-in form (REQ-213).
  *
  * It only ever reaches an existing account (`shouldCreateUser: false` in
- * `sendReaderLink`): an account is opened by a confirmed comment. And it
+ * `sendReaderSignInLink`): an account is opened by a confirmed comment. And it
  * answers the same whether or not an account exists, so it cannot be used to
  * learn who has commented.
  */
@@ -27,6 +27,6 @@ export async function requestReaderSignInLink(
     redirect(`${SIGN_IN}?etat=adresse-invalide`);
   }
 
-  await sendReaderLink(email, "sign-in");
+  await sendReaderSignInLink(email);
   redirect(`${SIGN_IN}?etat=envoye`);
 }

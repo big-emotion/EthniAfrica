@@ -58,7 +58,7 @@ site_url = "https://recette.africatlas.com"
 # The reader account's confirmation page is the second path. The send-email
 # hook recognises a reader mail by it, so a redirect GoTrue replaced with
 # `site_url` would send the reader the moderators' mail. `**` lets the query
-# string (`?raison=connexion`) match.
+# string (`?commentaire=<slug>`) match.
 additional_redirect_urls = [
   "http://localhost:3000/api/auth/callback",
   "https://recette.africatlas.com/api/auth/callback",
