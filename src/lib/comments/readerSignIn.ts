@@ -1,6 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 
 import { logger } from "@/lib/api/logger";
+import { getStaticPageRoute } from "@/lib/routing";
 import { resolveSiteUrl } from "@/lib/siteUrl";
 
 /**
@@ -9,7 +10,7 @@ import { resolveSiteUrl } from "@/lib/siteUrl";
  * (ETNI-2201). Confirmation is a POST behind that button so a mail scanner
  * prefetching the link publishes nothing.
  */
-const CONFIRMATION_PATH = "/fr/compte/confirmer";
+const CONFIRMATION_PATH = `${getStaticPageRoute("fr", "account")}/confirmer`;
 
 /**
  * E-mail a reader the link that confirms their address and opens their
