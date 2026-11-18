@@ -22,6 +22,7 @@
 
 import { createServerClient } from "../../server";
 import { logger } from "@/lib/api/logger";
+import { publishedFlagsOnly } from "@/lib/flags/publicFlagColumns";
 import {
   isSourceTier,
   toSourceKindOrNull,
@@ -233,10 +234,9 @@ export async function getFlagsSummaryMap(
 
   const map = new Map<string, FlagSummary>();
   for (const ids of idChunks) {
-    const { data, error } = await supabase
-      .from("flags")
-      .select("entity_id, status")
-      .in("entity_id", ids);
+    const { data, error } = await publishedFlagsOnly(
+      supabase.from("flags").select("entity_id, status")
+    ).in("entity_id", ids);
 
     if (error) {
       logger.error("module-zero-batch.getFlagsSummaryMap failed", error);

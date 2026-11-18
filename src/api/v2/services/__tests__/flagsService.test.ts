@@ -31,6 +31,8 @@ function resolvedQuery(result: {
   for (const method of [
     "select",
     "eq",
+    "not",
+    "is",
     "or",
     "order",
     "limit",

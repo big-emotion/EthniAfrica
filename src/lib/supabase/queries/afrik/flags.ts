@@ -9,6 +9,7 @@
 
 import { createServerClient } from "../../server";
 import { logger } from "@/lib/api/logger";
+import { publishedFlagsOnly } from "@/lib/flags/publicFlagColumns";
 
 export interface ActiveSourceFlag {
   /** UUID of the unreachable source, when the flag carries it in metadata. */
@@ -25,14 +26,15 @@ export interface ActiveSourceFlag {
  * pair is sufficient to flag the entire fiche. If the migration ever adds a
  * column for the specific source, this helper is the single place to extend.
  */
+// @req REQ-014
 export async function getActiveSourceFlags(
   entityType: string,
   entityId: string
 ): Promise<ActiveSourceFlag[]> {
   const supabase = createServerClient();
-  const { data, error } = await supabase
-    .from("flags")
-    .select("id, flag_kind, status, auto_generated")
+  const { data, error } = await publishedFlagsOnly(
+    supabase.from("flags").select("id, flag_kind, status, auto_generated")
+  )
     .eq("entity_type", entityType)
     .eq("entity_id", entityId)
     .eq("flag_kind", "other")

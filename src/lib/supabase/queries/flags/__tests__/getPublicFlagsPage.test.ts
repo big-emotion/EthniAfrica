@@ -3,6 +3,8 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 const mocks = vi.hoisted(() => {
   const flagsQuery = {
     select: vi.fn(),
+    not: vi.fn(),
+    is: vi.fn(),
     in: vi.fn(),
     or: vi.fn(),
     order: vi.fn(),
@@ -76,6 +78,8 @@ describe("queryPublicFlagsPage", () => {
     vi.clearAllMocks();
 
     mocks.flagsQuery.select.mockReturnValue(mocks.flagsQuery);
+    mocks.flagsQuery.not.mockReturnValue(mocks.flagsQuery);
+    mocks.flagsQuery.is.mockReturnValue(mocks.flagsQuery);
     mocks.flagsQuery.in.mockReturnValue(mocks.flagsQuery);
     mocks.flagsQuery.or.mockReturnValue(mocks.flagsQuery);
     mocks.flagsQuery.order.mockReturnValue(mocks.flagsQuery);

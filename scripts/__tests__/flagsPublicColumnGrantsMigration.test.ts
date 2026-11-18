@@ -54,9 +54,14 @@ describe("116 flags: the public reads public columns only", () => {
     expect(grant).toBeGreaterThan(revoke);
   });
 
+  // 116 sets the base list after a REVOKE ALL; 117 adds the block-comment
+  // columns. Together they must equal what the code selects, no more.
   // @req REQ-014
   it("grants exactly the columns the public API and pages select", () => {
-    const granted = grantedSelectColumns(ddl(), "flags");
+    const granted = [
+      ...grantedSelectColumns(ddl(), "flags"),
+      ...grantedSelectColumns(flat(readMigration("117_")), "flags"),
+    ];
 
     expect(granted).toEqual(PUBLIC_FLAG_SELECT.split(", "));
   });

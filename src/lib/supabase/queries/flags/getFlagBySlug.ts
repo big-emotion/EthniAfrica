@@ -1,6 +1,9 @@
 import { createServerClient } from "@/lib/supabase/server";
 import { logger } from "@/lib/api/logger";
-import { PUBLIC_FLAG_SELECT } from "@/lib/flags/publicFlagColumns";
+import {
+  PUBLIC_FLAG_SELECT,
+  publishedFlagsOnly,
+} from "@/lib/flags/publicFlagColumns";
 import type { FlagRow } from "@/types/module-zero";
 
 export interface ContributorProfile {
@@ -20,6 +23,7 @@ type PublicFlagRow = Omit<
   | "moderator_id"
   | "human_verified"
   | "revision_draft_id"
+  | "hidden_reason"
 >;
 
 export interface FlagPublicRecord {
@@ -53,9 +57,9 @@ export async function getFlagBySlug(
 ): Promise<FlagPublicRecord | null> {
   const supabase = createServerClient();
 
-  const { data: flag, error } = await supabase
-    .from("flags")
-    .select(PUBLIC_FLAG_SELECT)
+  const { data: flag, error } = await publishedFlagsOnly(
+    supabase.from("flags").select(PUBLIC_FLAG_SELECT)
+  )
     .eq("public_slug", slug)
     .maybeSingle();
 

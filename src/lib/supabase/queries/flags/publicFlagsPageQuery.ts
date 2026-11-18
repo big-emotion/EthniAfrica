@@ -3,6 +3,7 @@ import { z } from "zod";
 
 import { PUBLIC_FLAGS_PAGE_SIZE } from "@/api/v2/schemas/pagination";
 import { logger } from "@/lib/api/logger";
+import { publishedFlagsOnly } from "@/lib/flags/publicFlagColumns";
 import type { FlagRow } from "@/types/module-zero";
 
 export type PublicFlagStatus = FlagRow["status"];
@@ -354,11 +355,13 @@ export async function queryPublicFlagsPage(
   const kinds = uniqueValues(options.kinds);
   const targetTypes = uniqueValues(options.targetTypes);
 
-  let query = supabase
-    .from("flags")
-    .select(
-      "id, public_slug, flag_kind, status, entity_type, entity_id, reason_text, contributor_id, assertion_id, assertion_field_path, severity, auto_generated, created_at, remediation_state, remediation_published_at"
-    );
+  let query = publishedFlagsOnly(
+    supabase
+      .from("flags")
+      .select(
+        "id, public_slug, flag_kind, status, entity_type, entity_id, reason_text, contributor_id, assertion_id, assertion_field_path, severity, auto_generated, created_at, remediation_state, remediation_published_at"
+      )
+  );
 
   if (statuses.length > 0) {
     query = query.in("status", statuses);
