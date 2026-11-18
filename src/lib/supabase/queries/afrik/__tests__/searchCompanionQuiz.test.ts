@@ -9,10 +9,11 @@ function thenableQuery(result: { data: unknown; error: unknown }) {
     select: vi.fn(),
     eq: vi.fn(),
     is: vi.fn(),
+    not: vi.fn(),
     in: vi.fn(),
     order: vi.fn(),
   };
-  for (const method of ["select", "eq", "is", "in", "order"] as const) {
+  for (const method of ["select", "eq", "is", "not", "in", "order"] as const) {
     query[method].mockReturnValue(query);
   }
   query.then = (resolve, reject) =>

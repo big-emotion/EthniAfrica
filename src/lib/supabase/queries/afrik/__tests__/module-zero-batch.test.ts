@@ -59,6 +59,8 @@ function buildSupabaseMock(results: QueryResult | QueryResult[]) {
     in: inSpy,
     order: orderSpy,
     eq: eqSpy,
+    not: vi.fn(() => chain),
+    is: vi.fn(() => chain),
   };
 
   selectSpy.mockReturnValue(chain);
