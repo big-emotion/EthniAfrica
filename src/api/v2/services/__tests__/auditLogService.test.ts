@@ -51,6 +51,8 @@ function stubSupabase(options: {
       return flagQuery;
     }),
     eq: vi.fn(() => flagQuery),
+    not: vi.fn(() => flagQuery),
+    is: vi.fn(() => flagQuery),
     maybeSingle: vi.fn(() =>
       Promise.resolve({
         data: options.flag === undefined ? flagRow : options.flag,

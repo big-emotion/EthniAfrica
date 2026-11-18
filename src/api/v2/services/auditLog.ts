@@ -19,6 +19,7 @@
  */
 
 import { logger } from "@/lib/api/logger";
+import { publishedFlagsOnly } from "@/lib/flags/publicFlagColumns";
 import { createAdminClient } from "@/lib/supabase/admin";
 
 /** The trail's vocabulary, in the order a report normally walks it. */
@@ -130,7 +131,9 @@ export async function getFlagAuditTrail(
 ): Promise<FlagAuditTrail | null> {
   const supabase = createAdminClient();
 
-  let flagQuery = supabase.from("flags").select("id, public_slug, created_at");
+  let flagQuery = publishedFlagsOnly(
+    supabase.from("flags").select("id, public_slug, created_at")
+  );
   flagQuery = UUID_PATTERN.test(identifier)
     ? flagQuery.eq("id", identifier)
     : flagQuery.eq("public_slug", identifier);

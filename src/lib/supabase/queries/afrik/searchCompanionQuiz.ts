@@ -8,6 +8,7 @@ import {
   type QuizAssertionSource,
   type QuizSourceRow,
 } from "@/lib/quiz/eligibility";
+import { publishedFlagsOnly } from "@/lib/flags/publicFlagColumns";
 import { createServerClient } from "@/lib/supabase/server";
 import {
   toSourceTier,
@@ -203,9 +204,9 @@ export async function loadSearchCompanionQuizCandidates(
         .in("entity_id", chunk)
     ),
     readInChunks<FlagRow>("flags", entityIds, (chunk) =>
-      client
-        .from("flags")
-        .select("entity_type,entity_id,status")
+      publishedFlagsOnly(
+        client.from("flags").select("entity_type,entity_id,status")
+      )
         .eq("status", "open")
         .in("entity_id", chunk)
     ),

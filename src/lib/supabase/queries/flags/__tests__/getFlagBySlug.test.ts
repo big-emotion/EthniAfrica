@@ -76,6 +76,8 @@ describe("getFlagBySlug", () => {
       from: vi.fn(() => mockSupabase),
       select: vi.fn(() => mockSupabase),
       eq: vi.fn(() => mockSupabase),
+      not: vi.fn(() => mockSupabase),
+      is: vi.fn(() => mockSupabase),
       or: vi.fn(() => mockSupabase),
       maybeSingle: vi.fn(),
     };

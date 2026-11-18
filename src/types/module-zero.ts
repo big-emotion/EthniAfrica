@@ -70,4 +70,12 @@ export interface FlagRow {
   remediation_summary: string | null;
   /** The draft carrying the correction, once the revision loop is wired. */
   revision_draft_id: string | null;
+  /** `{subject}:{id}:{section}` of a block comment (migration 117). */
+  block_key: string | null;
+  /** NULL = private until the author confirms their address. */
+  published_at: string | null;
+  hidden_at: string | null;
+  /** Moderation-only; never granted to anon. */
+  hidden_reason: string | null;
+  knowledge_basis: "family" | "language" | "reading" | "other" | null;
 }
