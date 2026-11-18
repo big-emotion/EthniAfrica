@@ -20,7 +20,7 @@ vi.mock("@/lib/api/logger", () => ({
 }));
 
 import { getReaderSession } from "@/lib/comments/readerSession";
-import { sendReaderSignInLink } from "@/lib/comments/readerSignIn";
+import { sendCommentConfirmationLink } from "@/lib/comments/readerSignIn";
 
 beforeEach(() => {
   vi.clearAllMocks();
@@ -29,7 +29,7 @@ beforeEach(() => {
   vi.stubEnv("NEXT_PUBLIC_SUPABASE_ANON_KEY", "anon-key");
 });
 
-describe("sendReaderSignInLink", () => {
+describe("sendCommentConfirmationLink", () => {
   /**
    * The link creates the account on first use and lands on the reader's
    * confirmation page, whose button publishes the comments (ETNI-2201).
@@ -39,7 +39,7 @@ describe("sendReaderSignInLink", () => {
     mocks.signInWithOtp.mockResolvedValue({ data: {}, error: null });
 
     await expect(
-      sendReaderSignInLink("lectrice@example.org", "flag-7kq3 m2")
+      sendCommentConfirmationLink("lectrice@example.org", "flag-7kq3 m2")
     ).resolves.toBe(true);
 
     expect(mocks.signInWithOtp).toHaveBeenCalledWith({
@@ -63,7 +63,7 @@ describe("sendReaderSignInLink", () => {
     });
 
     await expect(
-      sendReaderSignInLink("lectrice@example.org", "flag-7kq3m2")
+      sendCommentConfirmationLink("lectrice@example.org", "flag-7kq3m2")
     ).resolves.toBe(false);
     expect(mocks.loggerError).toHaveBeenCalled();
   });

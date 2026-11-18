@@ -40,7 +40,7 @@ import {
 } from "@/lib/email/flagNotification";
 import { parseBlockKey } from "@/lib/comments/blockKey";
 import { getReaderSession } from "@/lib/comments/readerSession";
-import { sendReaderSignInLink } from "@/lib/comments/readerSignIn";
+import { sendCommentConfirmationLink } from "@/lib/comments/readerSignIn";
 import {
   createReporterContact,
   getVerifiedReporterContact,
@@ -221,7 +221,10 @@ export interface FlagHandlerDependencies {
     language?: Language
   ) => Promise<string | null>;
   getReaderSession: () => Promise<{ id: string } | null>;
-  sendReaderSignInLink: (email: string, publicSlug: string) => Promise<boolean>;
+  sendCommentConfirmationLink: (
+    email: string,
+    publicSlug: string
+  ) => Promise<boolean>;
 }
 
 export interface FlagHandlerContext {
@@ -262,7 +265,7 @@ const defaultDependencies: FlagHandlerDependencies = {
   decodeFlagCursor,
   createReporterContact,
   getReaderSession,
-  sendReaderSignInLink,
+  sendCommentConfirmationLink,
 };
 
 function resolveDependencies(
@@ -468,7 +471,7 @@ export async function handleFlagCreate(
       // only when the address was recorded, and not to a reader whose
       // comment is already public under their account.
       if (recorded && !reader) {
-        await dependencies.sendReaderSignInLink(
+        await dependencies.sendCommentConfirmationLink(
           parsed.data.reporter_email,
           flag.public_slug
         );
