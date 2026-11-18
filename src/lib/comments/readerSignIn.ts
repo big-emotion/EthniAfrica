@@ -31,7 +31,7 @@ const CONFIRMATION_PATH = `${getStaticPageRoute("fr", "account")}/confirmer`;
  * reader who files the same comment twice.
  */
 // @req REQ-212
-export async function sendReaderSignInLink(
+export async function sendCommentConfirmationLink(
   email: string,
   publicSlug: string
 ): Promise<boolean> {

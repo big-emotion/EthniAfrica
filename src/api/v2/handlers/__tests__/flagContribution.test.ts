@@ -52,7 +52,7 @@ function makeDependencies() {
     decodeFlagCursor: vi.fn(),
     createReporterContact: vi.fn().mockResolvedValue(null),
     getReaderSession: vi.fn().mockResolvedValue(null),
-    sendReaderSignInLink: vi.fn().mockResolvedValue(true),
+    sendCommentConfirmationLink: vi.fn().mockResolvedValue(true),
   };
 }
 

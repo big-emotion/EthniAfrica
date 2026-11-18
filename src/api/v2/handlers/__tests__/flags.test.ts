@@ -69,7 +69,7 @@ function makeDependencies() {
     }),
     createReporterContact: vi.fn().mockResolvedValue("verification-token"),
     getReaderSession: vi.fn().mockResolvedValue(null),
-    sendReaderSignInLink: vi.fn().mockResolvedValue(true),
+    sendCommentConfirmationLink: vi.fn().mockResolvedValue(true),
   };
 }
 
@@ -121,7 +121,7 @@ describe("flag handlers", () => {
 
       expect(result.status).toBe(201);
       expect(dependencies.createReporterContact).not.toHaveBeenCalled();
-      expect(dependencies.sendReaderSignInLink).not.toHaveBeenCalled();
+      expect(dependencies.sendCommentConfirmationLink).not.toHaveBeenCalled();
     });
 
     // @req REQ-012
@@ -159,13 +159,13 @@ describe("flag handlers", () => {
       );
 
       expect(result.status).toBe(201);
-      expect(dependencies.sendReaderSignInLink).not.toHaveBeenCalled();
+      expect(dependencies.sendCommentConfirmationLink).not.toHaveBeenCalled();
     });
 
     // @req REQ-012
     it("still reports success when the sign-in link cannot be sent", async () => {
       const dependencies = makeDependencies();
-      dependencies.sendReaderSignInLink.mockRejectedValue(
+      dependencies.sendCommentConfirmationLink.mockRejectedValue(
         new Error("Resend unavailable")
       );
 
@@ -625,7 +625,7 @@ describe("flag handlers", () => {
         "lectrice@example.org",
         "fr"
       );
-      expect(dependencies.sendReaderSignInLink).toHaveBeenCalledWith(
+      expect(dependencies.sendCommentConfirmationLink).toHaveBeenCalledWith(
         "lectrice@example.org",
         createdFlag.public_slug
       );
@@ -646,7 +646,7 @@ describe("flag handlers", () => {
         dependencies
       );
 
-      expect(dependencies.sendReaderSignInLink).not.toHaveBeenCalled();
+      expect(dependencies.sendCommentConfirmationLink).not.toHaveBeenCalled();
     });
   });
 
