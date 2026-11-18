@@ -66,6 +66,7 @@ five decisions. They are drawn in that order, after brief 6, one at a time.
 | 17 | [`17-search-chrome-accessibility.md`](17-search-chrome-accessibility.md) | Search page focus rings, « Aller plus loin » as a titled list, 320 px header and 200% zoom | `search-unknown` and `search-state-typo` at 430/768/1440; new `search-unknown-320` and `search-unknown-215`; `Main` (**approved 2026-10-18 by the operator**) |
 | 18 | [`18-related-only-search-results.md`](18-related-only-search-results.md) | Related-only search results and factual fiche titles | new `search-state-related` at 430/768/1440; `search-unknown`, `search-state-typo` and `Main` (**approved 2026-10-18 by the operator**) |
 | 20 | [`20-agent-answer-card.md`](20-agent-answer-card.md) | The answer card in Claude and ChatGPT, its states, and the install page | new `agent-card-*` and `agent-install-*` boards, group 6 (**approved 2026-10-23 by the operator**) |
+| 21 | [`21-block-comments.md`](21-block-comments.md) | Comments per passage on the result page, proposal B (the block footer), and the account page | group 7: new `search-state-comments-*`, `comments-*` and `account-430` boards (**approved 2026-11-18 by the operator**) |
 
 Brief 16 draws the state that DEC-075 (pull request #1835) adds to the result
 page. It is not one of the passes above and was drawn beside them.
