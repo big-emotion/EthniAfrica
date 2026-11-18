@@ -2,7 +2,9 @@ import { createHmac, timingSafeEqual } from "node:crypto";
 
 import { logger } from "@/lib/api/logger";
 import { graphConfigured, sendViaGraph } from "@/lib/email/graph";
+import { buildReaderLinkEmail } from "@/lib/email/readerLink";
 import { buildSignInLinkEmail } from "@/lib/email/signInLink";
+import { resolveSiteUrl } from "@/lib/siteUrl";
 
 /**
  * POST /api/auth/send-email — Supabase Auth's send-email hook.
@@ -18,15 +20,21 @@ import { buildSignInLinkEmail } from "@/lib/email/signInLink";
  * Only a request signed with `SEND_EMAIL_HOOK_SECRET` is served: the route
  * mails a sign-in link to whatever address the body names, which unsigned
  * would make it an open relay under the atlas's own sender.
+ *
+ * Two mails leave from here. A redirect into the reader account
+ * (`/fr/compte/confirmer`, REQ-213) gets the reader's mail, linking to the
+ * atlas's confirmation page; anything else is the moderation console's.
  */
 
 // Standard Webhooks' default tolerance: room for clock drift between the two
 // hosts, too little to replay a captured request later.
 const SIGNATURE_TOLERANCE_SECONDS = 5 * 60;
 
-// The mail kinds that carry a link. The console only ever asks for the first
-// two; the others share the shape and cost nothing to keep working. A code-only
-// or notification mail is refused rather than sent with a link it has no use for.
+// The mail kinds that carry a link. The console and the reader account only
+// ever ask for the first two — `signup` for an address Auth has never
+// confirmed, `magiclink` for one it has; the others share the shape and cost
+// nothing to keep working. A code-only or notification mail is refused rather
+// than sent with a link it has no use for.
 const LINK_ACTIONS = new Set(["magiclink", "signup", "invite", "recovery"]);
 
 interface SendEmailHookPayload {
@@ -91,7 +99,38 @@ function verificationLink(
   return link.toString();
 }
 
+const READER_CONFIRMATION_PATH = "/fr/compte/confirmer";
+
+// Only the path of `redirect_to` is read: the link is built on the site's own
+// address, so whatever the Auth allow-list lets through, the mail never points
+// a reader at another host.
+function readerConfirmationLink(
+  tokenHash: string,
+  action: string,
+  redirectTo: string
+): { link: string; intent: "publish" | "sign-in" } | null {
+  let redirect: URL;
+  try {
+    redirect = new URL(redirectTo);
+  } catch {
+    return null;
+  }
+  if (redirect.pathname.replace(/\/+$/, "") !== READER_CONFIRMATION_PATH) {
+    return null;
+  }
+
+  const signIn = redirect.searchParams.get("raison") === "connexion";
+  const link = new URL(READER_CONFIRMATION_PATH, resolveSiteUrl());
+  link.search = new URLSearchParams({
+    token_hash: tokenHash,
+    type: action,
+    ...(signIn ? { raison: "connexion" } : {}),
+  }).toString();
+  return { link: link.toString(), intent: signIn ? "sign-in" : "publish" };
+}
+
 // @req REQ-042
+// @req REQ-213
 export async function POST(request: Request) {
   const body = await request.text();
 
@@ -128,9 +167,16 @@ export async function POST(request: Request) {
     return hookFailure(503, "Mail transport is not configured");
   }
 
-  const content = buildSignInLinkEmail(
-    verificationLink(token_hash, email_action_type, redirect_to)
+  const reader = readerConfirmationLink(
+    token_hash,
+    email_action_type,
+    redirect_to
   );
+  const content = reader
+    ? buildReaderLinkEmail(reader.link, reader.intent)
+    : buildSignInLinkEmail(
+        verificationLink(token_hash, email_action_type, redirect_to)
+      );
   const sent = await sendViaGraph({
     to,
     subject: content.subject,
@@ -143,6 +189,7 @@ export async function POST(request: Request) {
 
   logger.info("Sign-in mail sent through Microsoft Graph", {
     action: email_action_type,
+    reader: reader !== null,
   });
   return Response.json({});
 }

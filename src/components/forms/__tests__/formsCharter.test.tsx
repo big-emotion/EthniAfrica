@@ -61,8 +61,9 @@ describe("FormFieldError — reserved --afh-error token carrier", () => {
 
 /**
  * The account family this suite used to cover — sign-in, registration, profile
- * and a second admin login — is gone with the public accounts. One sign-in
- * surface is left, and it has one field and one button.
+ * and a second admin login — is gone. The moderators' sign-in has one field
+ * and one button; the reader account (REQ-213) is tested under
+ * `src/app/[lang]/compte/`.
  */
 describe("AdminConnexionPage — charter", () => {
   beforeEach(() => vi.clearAllMocks());

@@ -189,6 +189,94 @@ describe("POST /api/auth/send-email", () => {
     expect(mocks.sendViaGraph).not.toHaveBeenCalled();
   });
 
+  describe("a reader's link (REQ-213)", () => {
+    const READER_CONFIRMATION = "https://ethniafrica.com/fr/compte/confirmer";
+
+    beforeEach(() => {
+      vi.stubEnv("NEXT_PUBLIC_SITE_URL", "https://ethniafrica.com");
+    });
+
+    // A link that went through Auth's GET verify would sign the reader in —
+    // and publish their comment — on the first request a mail scanner made.
+    // @req REQ-213
+    it("links a commenter to the atlas's confirmation page, never to Auth's verify endpoint", async () => {
+      await POST(
+        signedHookRequest(
+          hookPayload({
+            redirect_to: READER_CONFIRMATION,
+            email_action_type: "signup",
+          })
+        )
+      );
+
+      const { text, subject } = sentMessage();
+      expect(subject).toBe("Publiez votre commentaire sur EthniAfrica");
+      expect(text).toContain(
+        "https://ethniafrica.com/fr/compte/confirmer?token_hash=pkce_abc123&type=signup"
+      );
+      expect(text).not.toContain("/auth/v1/verify");
+    });
+
+    // GoTrue sends `signup` to an address it has never confirmed and
+    // `magiclink` to one it has; the page redeems either.
+    // @req REQ-213
+    it("keeps the magiclink action of an address already confirmed", async () => {
+      await POST(
+        signedHookRequest(
+          hookPayload({
+            redirect_to: READER_CONFIRMATION,
+            email_action_type: "magiclink",
+          })
+        )
+      );
+
+      expect(sentMessage().text).toContain("&type=magiclink");
+    });
+
+    // @req REQ-213
+    it("writes the sign-in mail when the reader only asked to open their account", async () => {
+      await POST(
+        signedHookRequest(
+          hookPayload({
+            redirect_to: `${READER_CONFIRMATION}?raison=connexion`,
+          })
+        )
+      );
+
+      const { text, subject } = sentMessage();
+      expect(subject).toBe("Votre lien pour ouvrir votre compte EthniAfrica");
+      expect(text).toContain(
+        "https://ethniafrica.com/fr/compte/confirmer?token_hash=pkce_abc123&type=magiclink&raison=connexion"
+      );
+    });
+
+    // Auth's allow-list decides which redirect it accepts; the link itself is
+    // still built on the site's own address, so a mis-set allow-list cannot
+    // turn the atlas's mail into a link to another host.
+    // @req REQ-213
+    it("builds the link on the site's address whatever host the redirect names", async () => {
+      await POST(
+        signedHookRequest(
+          hookPayload({
+            redirect_to: "https://elsewhere.example/fr/compte/confirmer",
+          })
+        )
+      );
+
+      expect(sentMessage().text).toContain(
+        "https://ethniafrica.com/fr/compte/confirmer?token_hash="
+      );
+      expect(sentMessage().text).not.toContain("elsewhere.example");
+    });
+
+    // @req REQ-213
+    it("keeps the moderator's mail for a redirect outside the account", async () => {
+      await POST(signedHookRequest(hookPayload()));
+
+      expect(sentMessage().text).toContain("/auth/v1/verify");
+    });
+  });
+
   // @req REQ-042
   it("reports a mail Microsoft refused as a failure", async () => {
     mocks.sendViaGraph.mockResolvedValue(false);

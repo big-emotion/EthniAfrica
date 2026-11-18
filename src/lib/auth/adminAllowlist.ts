@@ -5,9 +5,11 @@ import { createAdminClient } from "@/lib/supabase/admin";
  * Whether an address may open the moderation console.
  *
  * This is the whole authorization model for the admin. There is no role column
- * to read and no profile to provision first, which is the point: the atlas no
- * longer has public accounts, so authorization has to attach to something that
- * exists before anyone signs in, and an address is the only such thing.
+ * to read and no profile to provision first, which is the point: authorization
+ * attaches to something that exists before anyone signs in, and an address is
+ * the only such thing. It matters more now that readers hold accounts too
+ * (REQ-213): any reader can have a valid session, so a session proves who
+ * someone is and never what they may do — every moderator gate asks this list.
  *
  * It replaces `contributor_profiles.moderator_role`, which could only be set
  * on a row created by a successful sign-in — and the sign-in wrote that row on

@@ -2,8 +2,9 @@
  * Tests for getModeratorSession.
  *
  * Authorization moved from `contributor_profiles.moderator_role` to the
- * `admin_allowlist` table: the atlas has no public accounts any more, so the
- * gate has to attach to something that exists before anyone signs in.
+ * `admin_allowlist` table: the gate has to attach to something that exists
+ * before anyone signs in, and readers now hold valid sessions of their own
+ * (REQ-213), so a session alone proves nothing here.
  */
 // @req REQ-041
 // @req REQ-055

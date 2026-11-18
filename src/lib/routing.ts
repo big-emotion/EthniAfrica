@@ -474,7 +474,8 @@ export type StaticPageKey =
   | "contribute"
   | "assistant"
   | "reportError"
-  | "admin";
+  | "admin"
+  | "account";
 
 // @req REQ-141
 export const STATIC_PAGE_SLUGS: Record<
@@ -494,6 +495,9 @@ export const STATIC_PAGE_SLUGS: Record<
     assistant: "assistant",
     reportError: "report-error",
     admin: "admin",
+    // The reader account (REQ-212). Its pages ship with ETNI-2201; the comment
+    // API already needs the address its sign-in link lands on.
+    account: "compte",
   },
 };
 

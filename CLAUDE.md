@@ -115,8 +115,11 @@ Shared pieces: `src/api/v2/{schemas (zod),serializers,utils}`, `src/lib/api/cors
 ### Supabase clients (`src/lib/supabase/`)
 
 `server.ts` (SSR / server components) and `admin.ts` (service-role, server-only) are not
-interchangeable. `auth-client.ts` / `auth-server.ts` handle moderator auth (magic link to an
-`admin_allowlist` address); the browser authenticates but never queries the corpus. Migrations
+interchangeable. `auth-client.ts` / `auth-server.ts` handle both sign-ins, magic links only:
+moderators (an `admin_allowlist` address, `/fr/admin`) and readers (`/fr/compte`, opened by the
+link that publishes a first comment, REQ-213). A reader session authorizes nothing: every
+moderator and session-authenticated route checks the allowlist, never the mere session. The
+browser authenticates but never queries the corpus. Migrations
 are numbered in `supabase/migrations/`; a merge into `recette` applies them to recette, a
 published Release applies them to production. Recette and production are self-hosted stacks —
 the Supabase MCP cannot see either.

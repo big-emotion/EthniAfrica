@@ -49,7 +49,8 @@ export interface SiteTreeSection {
  * Some routes exist and are deliberately absent from both, and are named here
  * so the omission reads as a decision rather than an oversight:
  *
- *   · `admin/**`, `compte/**` — behind authentication.
+ *   · `admin/**`, `compte/**` — behind authentication (the console, and the
+ *     reader account of REQ-213).
  *   · `quiz/score`, `report-error` — the far end of a flow, meaningless when
  *     entered cold from a search result.
  *   · `comparer/[entityType]/[...ids]` — combinatorial. The `/comparer`
