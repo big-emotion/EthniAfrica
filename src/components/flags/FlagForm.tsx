@@ -56,6 +56,16 @@ export interface FlagSubmissionPayload {
   proposed_rewrite?: string;
   /** Optional. Buys the reader a decision in their inbox, nothing else. */
   reporter_email?: string;
+  /**
+   * Sent with an address and only then: the address opens a public reader
+   * account, and the moderation charter (§2) sets its floor at fifteen.
+   */
+  age_confirmed?: true;
+  /** A comment's passage, `{subject}:{id}:{section}` (REQ-212). */
+  block_key?: string;
+  /** The pseudonym a comment is signed with; absent reads « Un lecteur ». */
+  display_name?: string;
+  knowledge_basis?: "family" | "language" | "reading" | "other";
   antibot: AntibotProof;
   /** Always empty. Present so a bot that fills every field gives itself away. */
   website?: string;
@@ -98,6 +108,7 @@ interface FormErrors {
   proposedRewrite?: string;
   reason?: string;
   reporterEmail?: string;
+  ageConfirmed?: string;
 }
 
 function isValidHttpUrl(value: string) {
@@ -142,6 +153,7 @@ function validateForm({
   counterSourceCitation,
   reason,
   reporterEmail,
+  ageConfirmed,
   language,
 }: {
   counterSourceUrl: string;
@@ -149,6 +161,7 @@ function validateForm({
   proposedRewrite: string;
   reason: string;
   reporterEmail: string;
+  ageConfirmed: boolean;
   language: Language;
 }): FormErrors {
   const errors: FormErrors = {};
@@ -179,6 +192,10 @@ function validateForm({
     errors.reporterEmail = copy.invalidEmail;
   }
 
+  if (reporterEmail.trim() && !ageConfirmed) {
+    errors.ageConfirmed = copy.ageRequired;
+  }
+
   return errors;
 }
 
@@ -203,6 +220,7 @@ export function FlagForm({
   const [proposedRewrite, setProposedRewrite] = useState("");
   const [reason, setReason] = useState("");
   const [reporterEmail, setReporterEmail] = useState("");
+  const [ageConfirmed, setAgeConfirmed] = useState(false);
   const [errors, setErrors] = useState<FormErrors>({});
   const [proof, setProof] = useState<AntibotProof | null>(null);
   const [verificationError, setVerificationError] = useState("");
@@ -227,6 +245,8 @@ export function FlagForm({
   const reasonErrorId = `${idPrefix}-reason-error`;
   const reporterEmailId = `${idPrefix}-reporter-email`;
   const reporterEmailErrorId = `${idPrefix}-reporter-email-error`;
+  const ageConfirmedId = `${idPrefix}-age-confirmed`;
+  const ageConfirmedErrorId = `${idPrefix}-age-confirmed-error`;
   const turnstileHeadingId = `${idPrefix}-turnstile-heading`;
   const verificationErrorId = `${idPrefix}-verification-error`;
 
@@ -238,6 +258,7 @@ export function FlagForm({
       proposedRewrite,
       reason,
       reporterEmail,
+      ageConfirmed,
       language,
     });
     setErrors(nextErrors);
@@ -286,7 +307,7 @@ export function FlagForm({
           ? { proposed_rewrite: proposedRewrite.trim() }
           : {}),
         ...(reporterEmail.trim()
-          ? { reporter_email: reporterEmail.trim() }
+          ? { reporter_email: reporterEmail.trim(), age_confirmed: true }
           : {}),
         antibot: proof,
         website: "",
@@ -470,6 +491,43 @@ export function FlagForm({
               role="alert"
             >
               {errors.reporterEmail}
+            </p>
+          )}
+          {/* Asked only once an address is typed: without one nothing is
+              published under a name, so there is nothing to consent to. */}
+          {reporterEmail.trim() ? (
+            <label
+              htmlFor={ageConfirmedId}
+              className="flex min-h-11 items-center gap-afh-md font-semibold"
+            >
+              <input
+                id={ageConfirmedId}
+                type="checkbox"
+                checked={ageConfirmed}
+                onChange={(event) => {
+                  setAgeConfirmed(event.target.checked);
+                  setErrors((current) => ({
+                    ...current,
+                    ageConfirmed: undefined,
+                  }));
+                }}
+                aria-invalid={Boolean(errors.ageConfirmed)}
+                aria-describedby={
+                  errors.ageConfirmed ? ageConfirmedErrorId : undefined
+                }
+                required
+                className="size-[22px] flex-none accent-[color:var(--accent)]"
+              />
+              {copy.ageConfirm}
+            </label>
+          ) : null}
+          {errors.ageConfirmed && (
+            <p
+              className="text-afh-small text-afh-flag-open"
+              id={ageConfirmedErrorId}
+              role="alert"
+            >
+              {errors.ageConfirmed}
             </p>
           )}
         </div>

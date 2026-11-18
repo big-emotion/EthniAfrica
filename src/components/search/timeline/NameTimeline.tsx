@@ -35,6 +35,13 @@ import {
 } from "@/lib/search/nameTimeline";
 import { timelineTileAnchorId } from "@/lib/search/nameClosing";
 import { cn } from "@/lib/utils";
+import {
+  BlockCommentsFooter,
+  CorrectedBanner,
+  passageQuote,
+} from "@/components/comments/BlockComments";
+import type { BlockSection } from "@/lib/comments/blockKey";
+import { commentsCopy } from "@/lib/i18n/copy/comments";
 import type { SearchEntityType } from "@/types/afrik-frontend";
 import type { Language } from "@/types/shared";
 
@@ -67,6 +74,11 @@ export interface NameTimelineProps {
    */
   openName?: string;
   onOpenNameChange?: (nameText: string) => void;
+  /**
+   * The subject the timeline is about. With it, its passages close on their
+   * comment footers (brief 21, REQ-212).
+   */
+  subject?: { type: string; id: string };
   language: Language;
 }
 
@@ -145,6 +157,7 @@ export function NameTimeline({
   seeAlso,
   openName,
   onOpenNameChange,
+  subject,
   language,
 }: NameTimelineProps) {
   const copy = nameTimelineCopy[language];
@@ -162,6 +175,28 @@ export function NameTimeline({
   const name = timeline.names[shown];
   const forms = timeline.italicForms;
   const Heading = headingLevel;
+  const blockLabels = commentsCopy[language].blocks;
+  // The chips, the timeline and « Leur nom » all show the subject's names:
+  // they share its one `naming` thread, as the fiche will (ARCH-032).
+  const commentPassage = (
+    section: BlockSection,
+    label: string,
+    nameText = timeline.names[0].nameText,
+    quote?: string
+  ) =>
+    subject ? { subject, section, label, name: nameText, quote } : undefined;
+  const summaryPassage = commentPassage(
+    "what",
+    blockLabels.answer,
+    undefined,
+    passageQuote(timeline.summary)
+  );
+  const namesPassage = commentPassage("naming", blockLabels.names);
+  const timelinePassage = commentPassage(
+    "naming",
+    blockLabels.timeline,
+    name.nameText
+  );
   const anchorIdOf = (key: string) =>
     `timeline-${key}`.normalize("NFD").replace(/[^\w-]+/g, "-");
 
@@ -348,6 +383,7 @@ export function NameTimeline({
     <>
       <section className="afh-name-timeline" data-name-timeline="">
         <div className="afh-tile" data-timeline-summary="">
+          {summaryPassage ? <CorrectedBanner {...summaryPassage} /> : null}
           <p className="afh-tile-label">
             {copy.eyebrow(getSearchEntityLabel(subjectType))}
           </p>
@@ -384,6 +420,7 @@ export function NameTimeline({
               </span>
             </button>
           ) : null}
+          {summaryPassage ? <BlockCommentsFooter {...summaryPassage} /> : null}
         </div>
 
         {seeAlso}
@@ -417,6 +454,7 @@ export function NameTimeline({
             </button>
           ))}
         </div>
+        {namesPassage ? <BlockCommentsFooter {...namesPassage} /> : null}
 
         {name.shortLine ? (
           <p className="afh-name-timeline-intro">
@@ -429,6 +467,7 @@ export function NameTimeline({
           </p>
         ) : null}
 
+        {timelinePassage ? <CorrectedBanner {...timelinePassage} /> : null}
         <div className="ea-tl-controls">
           <p className="afh-name-timeline-hint">
             <span aria-hidden="true">↓ </span>
@@ -508,6 +547,7 @@ export function NameTimeline({
           )}
         </ol>
         <p className="afh-name-timeline-end">{copy.end(name.nameText)}</p>
+        {timelinePassage ? <BlockCommentsFooter {...timelinePassage} /> : null}
         {/* Off the thread, no dot, no date: the way on to the self-name's
             story, while the searched name is open (brief 11 §1b-c). */}
         {selfLead && shown === 0 ? (
@@ -532,6 +572,15 @@ export function NameTimeline({
             >
               {copy.handOffAction(selfLead.self)}
             </button>
+            {subject ? (
+              <BlockCommentsFooter
+                {...commentPassage(
+                  "naming",
+                  blockLabels.selfName,
+                  selfLead.self
+                )}
+              />
+            ) : null}
           </div>
         ) : null}
         {video}
@@ -545,6 +594,13 @@ export function NameTimeline({
         subjectType={subjectType}
         language={language}
         onRevealAccount={revealAccount}
+        footer={
+          subject ? (
+            <BlockCommentsFooter
+              {...commentPassage("sources", blockLabels.sources, name.nameText)}
+            />
+          ) : undefined
+        }
       />
     </>
   );

@@ -64,6 +64,9 @@ const fr = {
     invalidReason: "La description doit contenir entre 10 et 2 000 caractères.",
     invalidEmail:
       "Saisissez une adresse e-mail valide, ou laissez le champ vide.",
+    ageConfirm: "J'ai 15 ans ou plus",
+    ageRequired:
+      "Pour laisser une adresse, confirmez que vous avez 15 ans ou plus.",
     successTitle: "Signalement enregistré",
     successWithEmail:
       "Merci — confirmez votre adresse depuis le message que nous venons de vous envoyer, et vous recevrez la décision de la modération.",

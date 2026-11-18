@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { Fragment, useId, type MouseEvent } from "react";
+import { Fragment, useId, type MouseEvent, type ReactNode } from "react";
 
+import { PageCommentAction } from "@/components/comments/BlockComments";
 import type { FlagFormTarget } from "@/components/flags/FlagForm";
 import { Badge as NameBadgeChip } from "@/components/names/NameAnswerCard";
 import { SearchFeedContributionAction } from "@/components/search/feed/SearchFeedContributionAction";
@@ -118,6 +119,8 @@ export interface NameSourcesBlockProps {
   /** Kinds of source only the subject's other names cite (see `otherVoiceKinds`). */
   otherKinds?: readonly SourceKind[];
   subjectType?: SearchEntityType;
+  /** The comment footer that closes the block (brief 21). */
+  footer?: ReactNode;
   language: Language;
 }
 
@@ -129,6 +132,7 @@ export function NameSourcesBlock({
   onRevealAccount,
   otherKinds = [],
   subjectType,
+  footer,
   language,
 }: NameSourcesBlockProps) {
   const headingId = useId();
@@ -182,6 +186,7 @@ export function NameSourcesBlock({
           {copy.otherVoices(subjectType, otherKinds)}
         </p>
       ) : null}
+      {footer}
     </section>
   );
 }
@@ -634,6 +639,11 @@ export function NameFicheSourcesBlock({
   );
 }
 
+const REPORT_PAIR = [
+  "border-[color:var(--accent)] bg-[color:var(--accent-tint)] font-semibold text-[color:var(--accent-foreground)]",
+  "border-[color:var(--accent)] bg-afh-surface font-semibold text-afh-text",
+] as const;
+
 export interface NameClosingBandProps {
   silences: readonly string[];
   italicForms?: readonly string[];
@@ -696,24 +706,40 @@ export function NameClosingBand({
         <div className="flex flex-col gap-afh-lg rounded-afh-lg border border-[color:var(--accent)] bg-afh-surface p-afh-2xl">
           <p className="font-bold">{copy.invitationTitle}</p>
           <p className="text-afh-small leading-[1.6]">{copy.invitationBody}</p>
+          {/* On a result page both open the comment form, on no block
+              (brief 21, arbitration 1); elsewhere, the report dialog. */}
           <div className="flex flex-wrap gap-afh-md">
-            <SearchFeedContributionAction
-              language={language}
+            <PageCommentAction
               target={contributionTarget}
               label={copy.report}
-              preferredKind="correction-proposal"
-              variant="outline"
               // The tint stays light at night; --accent-foreground is the ink
               // that stays dark with it (--afh-text turns light: 1.12:1).
-              className="border-[color:var(--accent)] bg-[color:var(--accent-tint)] font-semibold text-[color:var(--accent-foreground)]"
+              className={REPORT_PAIR[0]}
+              fallback={
+                <SearchFeedContributionAction
+                  language={language}
+                  target={contributionTarget}
+                  label={copy.report}
+                  preferredKind="correction-proposal"
+                  variant="outline"
+                  className={REPORT_PAIR[0]}
+                />
+              }
             />
-            <SearchFeedContributionAction
-              language={language}
+            <PageCommentAction
               target={contributionTarget}
               label={copy.propose}
-              preferredKind="contribution"
-              variant="outline"
-              className="border-[color:var(--accent)] bg-afh-surface font-semibold text-afh-text"
+              className={REPORT_PAIR[1]}
+              fallback={
+                <SearchFeedContributionAction
+                  language={language}
+                  target={contributionTarget}
+                  label={copy.propose}
+                  preferredKind="contribution"
+                  variant="outline"
+                  className={REPORT_PAIR[1]}
+                />
+              }
             />
           </div>
         </div>

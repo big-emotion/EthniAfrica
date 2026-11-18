@@ -1,3 +1,9 @@
+import type { ReactNode } from "react";
+
+import {
+  CommentableBlock,
+  ParticipationInvite,
+} from "@/components/comments/BlockComments";
 import {
   NameChoices,
   type NameChoice,
@@ -12,6 +18,8 @@ import { WhatBlock } from "@/components/search/answer/WhatBlock";
 import { WhereBars } from "@/components/search/answer/WhereBars";
 import { ReviewedOrigin } from "@/components/search/feed/NameAnswerEntries";
 import { ActionLink } from "@/components/ui/ActionLink";
+import type { BlockSection } from "@/lib/comments/blockKey";
+import { commentsCopy } from "@/lib/i18n/copy/comments";
 import { searchAnswerCopy } from "@/lib/i18n/copy/searchAnswer";
 import { searchFeedCopy } from "@/lib/i18n/copy/searchFeed";
 import type { SearchAnswer } from "@/lib/search/answer";
@@ -42,6 +50,13 @@ export interface SubjectAnswerProps {
   choices?: readonly NameChoice[];
   /** The peoples behind the speaker figures, counted from the data. */
   peopleLink?: { count: number; href: string };
+  /**
+   * The subject the blocks answer about. With it, each block closes on its
+   * comment footer (REQ-212); without it (a shared answer), none does.
+   */
+  subject?: { type: string; id: string };
+  /** The participation sentence, after the first answer of the page. */
+  invite?: boolean;
   language: Language;
 }
 
@@ -63,6 +78,8 @@ export function SubjectAnswer({
   titleScale,
   choices = [],
   peopleLink,
+  subject,
+  invite = false,
   language,
 }: SubjectAnswerProps) {
   const where = presentAnswerWhere(answer.where, listedPeoples, language);
@@ -73,56 +90,96 @@ export function SubjectAnswer({
     ? reviewedAnswerSources(reviewed)
     : { count: answer.sources.count, accounts: answer.origin?.accounts };
 
+  const labels = commentsCopy[language].blocks;
+  const commentable = (
+    section: BlockSection,
+    label: string,
+    block: ReactNode
+  ) =>
+    subject ? (
+      <CommentableBlock
+        subject={subject}
+        section={section}
+        label={label}
+        name={answer.title}
+      >
+        {block}
+      </CommentableBlock>
+    ) : (
+      block
+    );
+
   return (
     <>
-      <WhatBlock
-        answer={answer}
-        language={language}
-        headingLevel={headingLevel}
-        titleScale={titleScale}
-      >
-        <SearchedNameLead
+      {commentable(
+        "what",
+        labels.what,
+        <WhatBlock
           answer={answer}
-          searchedForm={searchedForm}
-          href={selfNameHref}
           language={language}
-        />
-      </WhatBlock>
+          headingLevel={headingLevel}
+          titleScale={titleScale}
+        >
+          <SearchedNameLead
+            answer={answer}
+            searchedForm={searchedForm}
+            href={selfNameHref}
+            language={language}
+          />
+        </WhatBlock>
+      )}
+      {invite ? <ParticipationInvite /> : null}
       <NameChoices
         title={searchAnswerCopy[language].choices.title}
         choices={choices}
       />
-      {reviewed ? (
-        <ReviewedOrigin
-          answer={reviewed}
-          kind={answer.kind}
-          language={language}
-        />
-      ) : origin && origin.accounts.length > 0 ? (
-        <OriginBlock
-          origin={origin}
-          kind={answer.kind}
-          title={answer.title}
-          language={language}
-        />
-      ) : null}
-      {answer.names.length > 0 || answer.path ? (
-        <NamesBlock
-          answer={answer}
-          searchedForm={searchedForm}
-          language={language}
-        />
-      ) : null}
+      {reviewed
+        ? commentable(
+            "origin",
+            labels.origin,
+            <ReviewedOrigin
+              answer={reviewed}
+              kind={answer.kind}
+              language={language}
+            />
+          )
+        : origin && origin.accounts.length > 0
+          ? commentable(
+              "origin",
+              labels.origin,
+              <OriginBlock
+                origin={origin}
+                kind={answer.kind}
+                title={answer.title}
+                language={language}
+              />
+            )
+          : null}
+      {answer.names.length > 0 || answer.path
+        ? commentable(
+            "naming",
+            labels.names,
+            <NamesBlock
+              answer={answer}
+              searchedForm={searchedForm}
+              language={language}
+            />
+          )
+        : null}
       {where ? (
-        <WhereBars
-          where={where.where}
-          kind={answer.kind}
-          labels={where.labels}
-          facts={answer.what.facts}
-          unsplitPeopleNames={where.unsplitPeopleNames}
-          peopleLink={peopleLink}
-          language={language}
-        />
+        commentable(
+          "where",
+          labels.where,
+          <WhereBars
+            where={where.where}
+            kind={answer.kind}
+            labels={where.labels}
+            facts={answer.what.facts}
+            unsplitPeopleNames={where.unsplitPeopleNames}
+            peopleLink={peopleLink}
+            language={language}
+          />
+        )
       ) : peopleLink ? (
         // No speaker figures to hang it on: the peoples are still one click
         // away, counted from the data.
@@ -142,13 +199,27 @@ export function SubjectAnswer({
           language={language}
         />
       ) : null}
-      <SourcesLine
-        count={sources.count}
-        accounts={sources.accounts}
-        kind={answer.kind}
-        title={answer.title}
-        language={language}
-      />
+      {sources.count > 0 ? (
+        commentable(
+          "sources",
+          labels.sources,
+          <SourcesLine
+            count={sources.count}
+            accounts={sources.accounts}
+            kind={answer.kind}
+            title={answer.title}
+            language={language}
+          />
+        )
+      ) : (
+        <SourcesLine
+          count={sources.count}
+          accounts={sources.accounts}
+          kind={answer.kind}
+          title={answer.title}
+          language={language}
+        />
+      )}
     </>
   );
 }
