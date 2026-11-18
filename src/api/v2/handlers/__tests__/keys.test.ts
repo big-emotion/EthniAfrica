@@ -7,7 +7,7 @@ import {
   handlePublicKeyIssue,
 } from "@/api/v2/handlers/keys";
 
-const user = { id: "user-1" };
+const user = { id: "user-1", email: "moderation@example.org" };
 
 const keySummary = {
   id: "key-1",
@@ -29,6 +29,7 @@ function makeDependencies() {
       .fn()
       .mockResolvedValue({ ...keySummary, key: "usr_rawvalue" }),
     revokeUserApiKey: vi.fn().mockResolvedValue("revoked" as const),
+    isEmailAllowlisted: vi.fn().mockResolvedValue(true),
   };
 }
 

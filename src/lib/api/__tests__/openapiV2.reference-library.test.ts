@@ -68,6 +68,7 @@ describe("OpenAPI v2 reference library contract", () => {
       "200",
       "400",
       "401",
+      "403",
       "500",
     ]);
     expect(Object.keys(collection.post.responses).sort()).toEqual([

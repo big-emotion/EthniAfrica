@@ -276,7 +276,7 @@ describe("reference library writes are reserved to the moderator allowlist", () 
   }
 
   // @req REQ-042
-  it("leaves searching open to any signed-in session", async () => {
+  it("answers a search from a signed-in address off the allowlist with 403", async () => {
     const deps = dependencies({
       isEmailAllowlisted: vi.fn().mockResolvedValue(false),
     });
@@ -286,7 +286,8 @@ describe("reference library writes are reserved to the moderator allowlist", () 
       deps
     );
 
-    expect(result.status).toBe(200);
-    expect(deps.isEmailAllowlisted).not.toHaveBeenCalled();
+    expect(result.status).toBe(403);
+    expect(deps.isEmailAllowlisted).toHaveBeenCalledWith(contributor.email);
+    expect(deps.searchReferences).not.toHaveBeenCalled();
   });
 });

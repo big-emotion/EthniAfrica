@@ -41,7 +41,7 @@ const SELF_SERVICE_COLUMNS =
 // @req REQ-056
 export async function getAuthenticatedUser(
   accessToken: string
-): Promise<{ id: string } | null> {
+): Promise<{ id: string; email: string | null } | null> {
   const supabase = createAdminClient();
   const {
     data: { user },
@@ -53,7 +53,7 @@ export async function getAuthenticatedUser(
     return null;
   }
 
-  return { id: user.id };
+  return { id: user.id, email: user.email ?? null };
 }
 
 // @req REQ-056

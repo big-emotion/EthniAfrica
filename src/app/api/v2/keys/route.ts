@@ -6,8 +6,8 @@
  *     description: >-
  *       Session-authenticated self-service listing (ETNI-81). Requires a
  *       Supabase session access token in the Authorization header — never an
- *       api_keys Bearer key — and returns only keys owned by that session's
- *       user. The raw key is never included; only key_prefix identifies a row.
+ *       api_keys Bearer key — whose address is on the moderator allowlist,
+ *       and returns only keys owned by that session's user. The raw key is never included; only key_prefix identifies a row.
  *     tags: [API v2 - Keys]
  *     security:
  *       - SupabaseJwtAuth: []
@@ -25,6 +25,12 @@
  *                     $ref: '#/components/schemas/ApiKeySummary'
  *       401:
  *         description: Missing or invalid session token.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/ApiErrorEnvelope'
+ *       403:
+ *         description: The session's address is not on the moderator allowlist.
  *         content:
  *           application/json:
  *             schema:
@@ -77,6 +83,12 @@
  *               $ref: '#/components/schemas/ApiErrorEnvelope'
  *       401:
  *         description: Missing or invalid session token.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/ApiErrorEnvelope'
+ *       403:
+ *         description: The session's address is not on the moderator allowlist.
  *         content:
  *           application/json:
  *             schema:
