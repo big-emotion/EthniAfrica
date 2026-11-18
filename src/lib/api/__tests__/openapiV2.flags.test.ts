@@ -161,6 +161,11 @@ describe("OpenAPI v2 flags contract", () => {
         "target_type",
         "antibot",
         "elapsedMs",
+        // Block comments (REQ-212).
+        "age_confirmed",
+        "block_key",
+        "display_name",
+        "knowledge_basis",
       ].sort()
     );
     expect(schemas.FlagCreateInput.example).toMatchObject({
@@ -260,9 +265,14 @@ describe("OpenAPI v2 flags contract", () => {
       scheme: "bearer",
       bearerFormat: "JWT",
     });
-    // Two schemes: a bearer token, or none at all. The token decides who the
-    // report is credited to, never whether it is accepted.
-    expect(flagCollection.post.security).toEqual([{ SupabaseJwtAuth: [] }, {}]);
+    // A reader session cookie, a bearer token, or nothing at all. Either
+    // credential decides who the report is credited to, never whether it is
+    // accepted; only the reader session publishes it at once (REQ-212).
+    expect(flagCollection.post.security).toEqual([
+      { ReaderSessionCookie: [] },
+      { SupabaseJwtAuth: [] },
+      {},
+    ]);
     expect(flagCollection.get.security).toEqual([]);
     expect(flagDetail.get.security).toEqual([]);
   });

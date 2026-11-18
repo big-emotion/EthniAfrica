@@ -19,9 +19,6 @@
     "src/components/search/answer/__fixtures__/*.tsx!",
     "src/lib/atlas/assets/generate-*.mjs!",
     "supabase/functions/**/index.ts!",
-    // ETNI-2199 ships the comments service ahead of its routes (ETNI-2200).
-    // Remove this entry once src/app/api/v2/comments imports it.
-    "src/api/v2/services/comments.ts!",
     "docs/design/mockups/**/*.{js,css}"
   ],
   "project": [

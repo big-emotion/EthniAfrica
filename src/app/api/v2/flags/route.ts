@@ -109,17 +109,20 @@
  *   post:
  *     summary: Submit a report on an AFRIK entity
  *     description: >-
- *       Anyone may submit a report for editorial review, subject to anti-bot
- *       verification. No account is required or offered. An optional
- *       reporter_email buys the reader the moderation decision by e-mail and
- *       nothing else: the report is created and published whether or not one is
- *       supplied, a single-use link confirms the address, and only a confirmed
- *       address is ever written to. The request language is stored to localize
- *       verification and resolution e-mails; missing or invalid values default
- *       to French. The address is never published and never returned. Responses
- *       are mutable and use Cache-Control no-store.
- *     tags: [API v2 - Flags]
+ *       Anyone may submit a report or a block comment (block_key) for
+ *       editorial review, subject to anti-bot verification. Without a reader
+ *       session the flag is stored privately, visible to the moderation only.
+ *       An optional reporter_email (with age_confirmed true) receives a
+ *       sign-in link naming this flag; following it confirms the address,
+ *       publishes this flag only and opens the reader's account. A request carrying a
+ *       signed-in reader's session cookie is published at once under that
+ *       account. The request language is stored to localize resolution
+ *       e-mails; missing or invalid values default to French. The address is
+ *       never published and never returned. Responses are mutable and use
+ *       Cache-Control no-store.
+ *     tags: [API v2 - Flags, API v2 - Comments]
  *     security:
+ *       - ReaderSessionCookie: []
  *       - SupabaseJwtAuth: []
  *       - {}
  *     requestBody:

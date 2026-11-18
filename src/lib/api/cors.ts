@@ -41,10 +41,11 @@ export const applyCorsHeaders = (response: Response) => {
   // untouched, since CORS never applies to it, and makes the missing variable
   // visible as a blocked cross-origin call.
   //
-  // No Access-Control-Allow-Credentials: every credential this API accepts is
-  // an Authorization bearer header, which a cross-origin caller sends without
-  // it. Allowing credentials would only let a browser attach the site's
-  // cookies to a cross-origin request, and no route reads them for auth.
+  // No Access-Control-Allow-Credentials, ever: the comment routes read the
+  // reader's session from the site's cookies (lib/comments/readerSession.ts),
+  // and allowing credentials would let another origin's page write a comment
+  // or a reply as that reader. Every other credential is an Authorization
+  // bearer header, which a cross-origin caller sends without it.
   if (origin) {
     response.headers.set("Access-Control-Allow-Origin", origin);
   }

@@ -35,11 +35,12 @@ import {
 } from "@/lib/ratelimit/flagRateLimit";
 import {
   sendFlagResolutionEmail,
-  sendFlagVerificationEmail,
   type FlagResolutionRecipient,
   type FlagResolutionStatus,
-  type FlagVerificationEmail,
 } from "@/lib/email/flagNotification";
+import { parseBlockKey } from "@/lib/comments/blockKey";
+import { getReaderSession } from "@/lib/comments/readerSession";
+import { sendCommentConfirmationLink } from "@/lib/comments/readerSignIn";
 import {
   createReporterContact,
   getVerifiedReporterContact,
@@ -80,6 +81,22 @@ const FLAG_STATUSES = [
 
 const trimmedRequiredString = z.string().trim().min(1);
 
+/** Migration 117's `flags_knowledge_basis_check`. */
+const KNOWLEDGE_BASES = ["family", "language", "reading", "other"] as const;
+
+function requireAgeWithAddress(
+  value: { reporter_email?: string; age_confirmed?: boolean },
+  context: z.RefinementCtx
+) {
+  if (value.reporter_email && value.age_confirmed !== true) {
+    context.addIssue({
+      code: "custom",
+      path: ["age_confirmed"],
+      message: "age_confirmed must be true when reporter_email is given",
+    });
+  }
+}
+
 /**
  * Nobody reads a fiche, finds an error and describes it in under three
  * seconds. Generous on purpose: the cost of refusing a real reader is far
@@ -107,11 +124,29 @@ const submissionShape = {
   counter_source_citation: z.string().trim().max(2000).optional(),
   proposed_rewrite: z.string().trim().max(5000).optional(),
   /**
-   * Optional, and the only personal datum a report can carry. It buys the
-   * reader a decision in their inbox and nothing else — it is not attribution,
-   * not an account, and never appears on the public queue.
+   * Optional, and the only personal datum a report can carry. Confirmed, it
+   * publishes the reader's comments and opens their reader account (REQ-212);
+   * it never appears on the public queue.
    */
   reporter_email: z.string().trim().pipe(z.email().max(320)).optional(),
+  /**
+   * Required true alongside an address, since that address becomes a public
+   * account and the moderation charter sets its floor at fifteen. Checked in
+   * `requireAgeWithAddress`.
+   */
+  age_confirmed: z.boolean().optional(),
+  /** The commented block (ARCH-032); absent for a report on a whole fiche. */
+  block_key: z
+    .string()
+    .trim()
+    .refine((key) => parseBlockKey(key) !== null, {
+      message: "Unknown block key",
+    })
+    .optional(),
+  /** Optional pseudonym; a comment without one reads « Un lecteur ». */
+  display_name: z.string().trim().min(1).max(40).optional(),
+  /** "How do you know this": four neutral answers, nothing about origin. */
+  knowledge_basis: z.enum(KNOWLEDGE_BASES).optional(),
   antibot: z.object({
     salt: trimmedRequiredString,
     nonce: trimmedRequiredString,
@@ -125,12 +160,14 @@ const submissionShape = {
   elapsedMs: z.number().int().nonnegative().optional(),
 };
 
-const flagCreateSchema = z.object({
-  ...submissionShape,
-  target_type: trimmedRequiredString,
-  target_id: trimmedRequiredString,
-  flag_kind: z.enum(REPORT_KINDS),
-});
+const flagCreateSchema = z
+  .object({
+    ...submissionShape,
+    target_type: trimmedRequiredString,
+    target_id: trimmedRequiredString,
+    flag_kind: z.enum(REPORT_KINDS),
+  })
+  .superRefine(requireAgeWithAddress);
 
 /**
  * A contribution proposes something the corpus does not hold yet, so it is the
@@ -138,13 +175,15 @@ const flagCreateSchema = z.object({
  * a contribution with nothing proposed is an empty form, not a contribution.
  * The anchor stays mandatory everywhere else — see migration 081.
  */
-const contributionCreateSchema = z.object({
-  ...submissionShape,
-  target_type: trimmedRequiredString.optional(),
-  target_id: trimmedRequiredString.optional(),
-  flag_kind: z.literal("contribution"),
-  contribution_payload: z.record(z.string(), z.unknown()),
-});
+const contributionCreateSchema = z
+  .object({
+    ...submissionShape,
+    target_type: trimmedRequiredString.optional(),
+    target_id: trimmedRequiredString.optional(),
+    flag_kind: z.literal("contribution"),
+    contribution_payload: z.record(z.string(), z.unknown()),
+  })
+  .superRefine(requireAgeWithAddress);
 
 const flagListSchema = z.object({
   status: z.enum(FLAG_STATUSES).optional(),
@@ -181,9 +220,11 @@ export interface FlagHandlerDependencies {
     email: string,
     language?: Language
   ) => Promise<string | null>;
-  sendFlagVerificationEmail: (
-    input: FlagVerificationEmail
-  ) => Promise<void | boolean>;
+  getReaderSession: () => Promise<{ id: string } | null>;
+  sendCommentConfirmationLink: (
+    email: string,
+    publicSlug: string
+  ) => Promise<boolean>;
 }
 
 export interface FlagHandlerContext {
@@ -223,7 +264,8 @@ const defaultDependencies: FlagHandlerDependencies = {
   getFlagByIdOrSlug,
   decodeFlagCursor,
   createReporterContact,
-  sendFlagVerificationEmail,
+  getReaderSession,
+  sendCommentConfirmationLink,
 };
 
 function resolveDependencies(
@@ -314,10 +356,20 @@ export async function handleFlagCreate(
   const contributor = accessToken
     ? await dependencies.getAuthenticatedContributor(accessToken)
     : null;
-  const attributedTo =
+  const ageConfirmedContributor =
     contributor && (await dependencies.getAgeConfirmedAt(contributor.id))
       ? contributor.id
       : null;
+
+  /**
+   * A reader signed in through a confirmed address has already proven what
+   * an address is asked to prove, so what they write is public at once
+   * (REQ-212). Anyone else's comment waits, private, for its author to
+   * confirm one — a bearer session included, since the middleware never lets
+   * a browser session through as a bearer on this route.
+   */
+  const reader = await dependencies.getReaderSession();
+  const attributedTo = reader?.id ?? ageConfirmedContributor;
 
   /**
    * The two free filters, before the proof of work is even looked at.
@@ -349,6 +401,10 @@ export async function handleFlagCreate(
       "contribution_payload" in parsed.data
         ? parsed.data.contribution_payload
         : undefined,
+    block_key: parsed.data.block_key,
+    display_name: parsed.data.display_name,
+    knowledge_basis: parsed.data.knowledge_basis,
+    published_at: reader ? new Date().toISOString() : undefined,
   };
   // The cast is the price of `strictNullChecks: false`: zod infers every
   // property of a parsed object as optional, so a schema that guarantees these
@@ -406,18 +462,19 @@ export async function handleFlagCreate(
    */
   if (parsed.data.reporter_email) {
     try {
-      const token = await dependencies.createReporterContact(
+      const recorded = await dependencies.createReporterContact(
         flag.id,
         parsed.data.reporter_email,
         context.language ?? "fr"
       );
-      if (token) {
-        await dependencies.sendFlagVerificationEmail({
-          email: parsed.data.reporter_email,
-          token,
-          publicSlug: flag.public_slug,
-          language: context.language ?? "fr",
-        });
+      // The link publishes what is waiting for this address, so it is sent
+      // only when the address was recorded, and not to a reader whose
+      // comment is already public under their account.
+      if (recorded && !reader) {
+        await dependencies.sendCommentConfirmationLink(
+          parsed.data.reporter_email,
+          flag.public_slug
+        );
       }
     } catch (error) {
       logger.error("Failed to set up a reporter contact", error, {
