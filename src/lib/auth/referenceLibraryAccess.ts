@@ -1,7 +1,7 @@
 "use server";
 
 import { logger } from "@/lib/api/logger";
-import { isEmailAllowlisted } from "@/lib/auth/adminAllowlist";
+import { isConfirmedAllowlistedUser } from "@/lib/auth/adminAllowlist";
 import { createServerSupabaseClient } from "@/lib/supabase/auth-server";
 
 /**
@@ -26,7 +26,7 @@ export async function hasReferenceLibraryAccess(): Promise<boolean> {
     } = await supabase.auth.getUser();
 
     if (error || !user) return false;
-    return await isEmailAllowlisted(user.email);
+    return await isConfirmedAllowlistedUser(user);
   } catch (error) {
     logger.error("Failed to read the session for the reference library", error);
     return false;

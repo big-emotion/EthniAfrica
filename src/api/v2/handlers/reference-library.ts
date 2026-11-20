@@ -93,9 +93,11 @@ export interface ReferenceLibraryHandlerContext {
 }
 
 export interface ReferenceLibraryHandlerDependencies {
-  getAuthenticatedReferenceUser: (
-    accessToken: string
-  ) => Promise<{ id: string; email: string | null } | null>;
+  getAuthenticatedReferenceUser: (accessToken: string) => Promise<{
+    id: string;
+    email: string | null;
+    email_confirmed_at?: string | null;
+  } | null>;
   isEmailAllowlisted: (email: string | null | undefined) => Promise<boolean>;
   searchReferences: (
     search: string,
@@ -167,7 +169,11 @@ function forbidden(): ReferenceLibraryHandlerResult<ApiEnvelope<null>> {
 async function authenticate(
   context: ReferenceLibraryHandlerContext,
   dependencies: ReferenceLibraryHandlerDependencies
-): Promise<{ id: string; email: string | null } | null> {
+): Promise<{
+  id: string;
+  email: string | null;
+  email_confirmed_at?: string | null;
+} | null> {
   const accessToken = context.accessToken?.trim();
   if (!accessToken) return null;
   return dependencies.getAuthenticatedReferenceUser(accessToken);
@@ -178,9 +184,10 @@ type WriteAuthorization =
   | { refusal: ReferenceLibraryHandlerResult<ApiEnvelope<null>> };
 
 /**
- * Writes to the shared library are a moderator's, by operator decision: the
- * allowlist that opens the moderation console is the one consulted here, so
- * the two cannot disagree on who a moderator is.
+ * The library is a moderator's tool, by operator decision — writes and search
+ * alike, since public reader accounts make a bare session worth nothing as a
+ * credential. The allowlist that opens the moderation console is the one
+ * consulted here, so the two cannot disagree on who a moderator is.
  *
  * Unlike `PATCH /api/v2/flags/{id}`, which answers 403 to both, a missing
  * session and a session off the allowlist are told apart (401 / 403): the
@@ -194,7 +201,10 @@ async function authorizeModerator(
 ): Promise<WriteAuthorization> {
   const user = await authenticate(context, dependencies);
   if (!user) return { refusal: unauthenticated() };
-  if (!(await dependencies.isEmailAllowlisted(user.email))) {
+  const moderator =
+    Boolean(user.email_confirmed_at) &&
+    (await dependencies.isEmailAllowlisted(user.email));
+  if (!moderator) {
     return { refusal: forbidden() };
   }
   return { user };
@@ -211,7 +221,8 @@ export async function handleReferenceSearch(
   >
 > {
   const dependencies = resolveDependencies(injectedDependencies);
-  if (!(await authenticate(context, dependencies))) return unauthenticated();
+  const authorization = await authorizeModerator(context, dependencies);
+  if ("refusal" in authorization) return authorization.refusal;
 
   const parsed = referenceSearchSchema.safeParse(rawQuery);
   if (!parsed.success) {

@@ -28,6 +28,12 @@
  *           application/json:
  *             schema:
  *               $ref: '#/components/schemas/ApiErrorEnvelope'
+ *       403:
+ *         description: The session's address is not on the moderator allowlist.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/ApiErrorEnvelope'
  *       404:
  *         description: No key with this id is owned by the caller.
  *         content:

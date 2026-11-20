@@ -87,7 +87,11 @@ export interface PrivateWorkingAsset {
 // @req REQ-093
 export async function getAuthenticatedReferenceUser(
   accessToken: string
-): Promise<{ id: string; email: string | null } | null> {
+): Promise<{
+  id: string;
+  email: string | null;
+  email_confirmed_at: string | null;
+} | null> {
   const supabase = createAdminClient();
   const {
     data: { user },
@@ -101,7 +105,11 @@ export async function getAuthenticatedReferenceUser(
     return null;
   }
 
-  return { id: user.id, email: user.email ?? null };
+  return {
+    id: user.id,
+    email: user.email ?? null,
+    email_confirmed_at: user.email_confirmed_at ?? null,
+  };
 }
 
 // @req REQ-093

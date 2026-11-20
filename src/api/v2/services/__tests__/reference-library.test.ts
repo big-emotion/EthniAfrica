@@ -55,7 +55,13 @@ describe("reference library service", () => {
   // @req REQ-093
   it("authenticates a contributor from their JWT with the admin client", async () => {
     const getUser = vi.fn().mockResolvedValue({
-      data: { user: { id: "owner-123", email: "owner@example.org" } },
+      data: {
+        user: {
+          id: "owner-123",
+          email: "owner@example.org",
+          email_confirmed_at: "2026-11-01T00:00:00.000Z",
+        },
+      },
       error: null,
     });
     mocks.createAdminClient.mockReturnValue({ auth: { getUser } });
@@ -65,6 +71,7 @@ describe("reference library service", () => {
     await expect(getAuthenticatedReferenceUser("jwt")).resolves.toEqual({
       id: "owner-123",
       email: "owner@example.org",
+      email_confirmed_at: "2026-11-01T00:00:00.000Z",
     });
     expect(getUser).toHaveBeenCalledWith("jwt");
   });

@@ -11,6 +11,7 @@ import {
   type ApiKeySummary,
   type CreatedApiKey,
 } from "@/api/v2/services/keyService";
+import { isEmailAllowlisted } from "@/lib/auth/adminAllowlist";
 import {
   createApiError,
   createApiResponse,
@@ -32,6 +33,7 @@ export interface KeyHandlerDependencies {
   listUserApiKeys: typeof listUserApiKeys;
   createUserApiKey: typeof createUserApiKey;
   revokeUserApiKey: typeof revokeUserApiKey;
+  isEmailAllowlisted: typeof isEmailAllowlisted;
 }
 
 const defaultDependencies: KeyHandlerDependencies = {
@@ -39,6 +41,7 @@ const defaultDependencies: KeyHandlerDependencies = {
   listUserApiKeys,
   createUserApiKey,
   revokeUserApiKey,
+  isEmailAllowlisted,
 };
 
 function resolveDependencies(
@@ -63,13 +66,39 @@ function unauthorized(): ApiEnvelope<null> {
   });
 }
 
-async function requireUser(
+function forbidden(): ApiEnvelope<null> {
+  return createApiError({
+    code: "UNAUTHORIZED",
+    message: "Moderator role required",
+  });
+}
+
+type KeyAuthorization =
+  { user: { id: string } } | { refusal: KeyHandlerResult<ApiEnvelope<null>> };
+
+/**
+ * Self-service keys are a moderator's tool (the console at /admin/cles-api).
+ * Once readers can hold a session, "signed in" stops meaning "trusted": a
+ * reader minting keys at will would sidestep the one-key-per-address limit of
+ * the anonymous /issue endpoint. The allowlist that opens the console is the
+ * one consulted, so the two cannot disagree on who a moderator is.
+ */
+async function authorizeKeyOwner(
   context: KeyHandlerContext,
   dependencies: KeyHandlerDependencies
-): Promise<{ id: string } | null> {
+): Promise<KeyAuthorization> {
   const accessToken = context.accessToken?.trim();
-  if (!accessToken) return null;
-  return dependencies.getAuthenticatedUser(accessToken);
+  const user = accessToken
+    ? await dependencies.getAuthenticatedUser(accessToken)
+    : null;
+  if (!user) return { refusal: { status: 401, body: unauthorized() } };
+  const moderator =
+    Boolean(user.email_confirmed_at) &&
+    (await dependencies.isEmailAllowlisted(user.email));
+  if (!moderator) {
+    return { refusal: { status: 403, body: forbidden() } };
+  }
+  return { user };
 }
 
 // @req REQ-056
@@ -78,10 +107,9 @@ export async function handleKeyList(
   injectedDependencies: Partial<KeyHandlerDependencies> = {}
 ): Promise<KeyHandlerResult<ApiEnvelope<ApiKeySummary[]> | ApiEnvelope<null>>> {
   const dependencies = resolveDependencies(injectedDependencies);
-  const user = await requireUser(context, dependencies);
-  if (!user) {
-    return { status: 401, body: unauthorized() };
-  }
+  const authorization = await authorizeKeyOwner(context, dependencies);
+  if ("refusal" in authorization) return authorization.refusal;
+  const { user } = authorization;
 
   const keys = await dependencies.listUserApiKeys(user.id);
   return { status: 200, body: createApiResponse(keys) };
@@ -94,10 +122,9 @@ export async function handleKeyCreate(
   injectedDependencies: Partial<KeyHandlerDependencies> = {}
 ): Promise<KeyHandlerResult<ApiEnvelope<CreatedApiKey> | ApiEnvelope<null>>> {
   const dependencies = resolveDependencies(injectedDependencies);
-  const user = await requireUser(context, dependencies);
-  if (!user) {
-    return { status: 401, body: unauthorized() };
-  }
+  const authorization = await authorizeKeyOwner(context, dependencies);
+  if ("refusal" in authorization) return authorization.refusal;
+  const { user } = authorization;
 
   const parsed = createApiKeySchema.safeParse(rawInput);
   if (!parsed.success) {
@@ -118,10 +145,9 @@ export async function handleKeyRevoke(
   injectedDependencies: Partial<KeyHandlerDependencies> = {}
 ): Promise<KeyHandlerResult<ApiEnvelope<null>>> {
   const dependencies = resolveDependencies(injectedDependencies);
-  const user = await requireUser(context, dependencies);
-  if (!user) {
-    return { status: 401, body: unauthorized() };
-  }
+  const authorization = await authorizeKeyOwner(context, dependencies);
+  if ("refusal" in authorization) return authorization.refusal;
+  const { user } = authorization;
 
   const result = await dependencies.revokeUserApiKey(user.id, keyId);
   if (result === "not_found") {
