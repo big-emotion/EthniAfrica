@@ -10,6 +10,17 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [5.12.1] - 2026-11-23
+
+### Security
+
+- Reports (`flags`): the public key now reads only the public columns, so a
+  contributor's e-mail address and private report fields are no longer
+  readable outside the site. A self-registered session can no longer insert or
+  withdraw reports directly, raise its own moderator role, publish revisions,
+  read the audit log, or reach the API-key and reference-library routes
+  without being on the moderator allowlist (migration 116, #2105, #2116).
+
 ## [5.12.0] - 2026-10-28
 
 ### Added
@@ -2090,7 +2101,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.12.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.12.1...HEAD
+[5.12.1]: https://github.com/big-emotion/ethniafrica/compare/v5.12.0...v5.12.1
 [5.12.0]: https://github.com/big-emotion/ethniafrica/compare/v5.11.0...v5.12.0
 [5.11.0]: https://github.com/big-emotion/ethniafrica/compare/v5.10.0...v5.11.0
 [5.10.0]: https://github.com/big-emotion/ethniafrica/compare/v5.9.0...v5.10.0
