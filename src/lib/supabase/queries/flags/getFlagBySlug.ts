@@ -1,5 +1,6 @@
 import { createServerClient } from "@/lib/supabase/server";
 import { logger } from "@/lib/api/logger";
+import { PUBLIC_FLAG_SELECT } from "@/lib/flags/publicFlagColumns";
 import type { FlagRow } from "@/types/module-zero";
 
 export interface ContributorProfile {
@@ -12,8 +13,17 @@ export interface AssertionContext {
   statement: string | null;
 }
 
+type PublicFlagRow = Omit<
+  FlagRow,
+  | "contribution_payload"
+  | "contributor_display_name_snapshot"
+  | "moderator_id"
+  | "human_verified"
+  | "revision_draft_id"
+>;
+
 export interface FlagPublicRecord {
-  flag: FlagRow & { created_at: string };
+  flag: PublicFlagRow & { created_at: string };
   contributor: ContributorProfile | null;
   assertion: AssertionContext | null;
 }
@@ -37,6 +47,7 @@ export function getContributorAttribution(
  * queries; errors in those secondary fetches are soft-logged and default
  * to null so the page can still render with "contributeur anonyme".
  */
+// @req REQ-014
 export async function getFlagBySlug(
   slug: string
 ): Promise<FlagPublicRecord | null> {
@@ -44,7 +55,7 @@ export async function getFlagBySlug(
 
   const { data: flag, error } = await supabase
     .from("flags")
-    .select("*")
+    .select(PUBLIC_FLAG_SELECT)
     .eq("public_slug", slug)
     .maybeSingle();
 
@@ -59,6 +70,7 @@ export async function getFlagBySlug(
     const { data: profile, error: profileError } = await supabase
       .from("contributor_profiles")
       .select("display_name, public")
+      .eq("public", true)
       .or(`id.eq.${flag.contributor_id},user_id.eq.${flag.contributor_id}`)
       .maybeSingle();
 

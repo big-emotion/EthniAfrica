@@ -94,9 +94,10 @@ to exactly once, with the confirmation itself, and then never again.
 
 The address is never published, never returned by the API, and never joins
 `flags` — it lives in `flag_reporter_contacts`, which carries RLS and no policy.
-A column on `flags` would be readable straight off PostgREST, because
-`flags_read_public` is `SELECT USING (true)` and our own column allowlist does
-not apply there.
+PostgREST does not go through our API, so a column on `flags` is public unless
+it is left out of the column grants of migration 116, which give `anon` and
+`authenticated` SELECT on the public columns only. A separate table keeps the
+address out of reach without depending on that list staying right.
 
 ### Where age belongs
 

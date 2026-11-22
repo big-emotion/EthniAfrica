@@ -11,6 +11,12 @@
  *   T7. INSERT with neither assertion_id nor (entity_type + entity_id) raises
  *       the anchor-required CHECK error (flags_has_anchor_check).
  *   T8. public_slug is auto-generated (10 Crockford chars) and UNIQUE across rows.
+ *   T9. anon reads the public columns, never contribution_payload (migration 116).
+ *  T10. A session cannot INSERT its own flag, even claiming human_verified.
+ *  T11. A session cannot give itself a moderator_role on contributor_profiles.
+ *  T12. anon cannot select *, filter on contribution_payload, or read audit_log.
+ *  T13. A session cannot raise an existing profile, write working assets, or
+ *       call publish_revision.
  *
  * Execution model
  * ---------------
@@ -441,6 +447,188 @@ describe.skipIf(SKIP)(
           String(dupErr?.message ?? "").includes("23505"),
         `Expected unique violation (23505), got: ${JSON.stringify(dupErr)}`
       ).toBe(true);
+    });
+
+    // -------------------------------------------------------------------------
+    // T9 — Column privileges: the public columns only (migration 116)
+    // -------------------------------------------------------------------------
+    // @req REQ-014
+    it("T9: anon cannot read contribution_payload", async () => {
+      const { error } = await anonClient()
+        .from("flags")
+        .select("id, contribution_payload")
+        .limit(1);
+
+      expect(
+        isRlsError(error),
+        `Expected permission denied (42501) on contribution_payload, got: ${JSON.stringify(error)}`
+      ).toBe(true);
+    });
+
+    // @req REQ-014
+    it("T9: anon still reads the public columns", async () => {
+      const { error } = await anonClient()
+        .from("flags")
+        .select("id, public_slug, status, reason_text")
+        .limit(1);
+
+      expect(error).toBeNull();
+    });
+
+    // -------------------------------------------------------------------------
+    // T10 — No direct client insert, even for the caller's own uid
+    // -------------------------------------------------------------------------
+    // @req REQ-012
+    it("T10: contributor INSERT of their own verified flag is rejected", async () => {
+      const { data, error } = await contributorClient()
+        .from("flags")
+        .insert(
+          entityFlag({
+            contributor_id: getUserIdFromJwt(JWT_CONTRIBUTOR),
+            human_verified: true,
+          })
+        )
+        .select("id")
+        .single();
+
+      try {
+        expect(
+          isRlsError(error),
+          `Expected permission denied for a direct session INSERT, got: ${JSON.stringify(error)}`
+        ).toBe(true);
+      } finally {
+        if (data?.id)
+          await serviceClient().from("flags").delete().eq("id", data.id);
+      }
+    });
+
+    // -------------------------------------------------------------------------
+    // T11 — No self-served moderator role
+    // -------------------------------------------------------------------------
+    // @req REQ-042
+    it("T11: contributor cannot create a profile with an admin role", async () => {
+      const uid = getUserIdFromJwt(JWT_CONTRIBUTOR);
+      const { data, error } = await contributorClient()
+        .from("contributor_profiles")
+        .insert({ id: uid, user_id: uid, moderator_role: "admin" })
+        .select("id")
+        .single();
+
+      try {
+        expect(
+          isRlsError(error),
+          `Expected permission denied for a self-served role, got: ${JSON.stringify(error)}`
+        ).toBe(true);
+      } finally {
+        if (data?.id)
+          await serviceClient()
+            .from("contributor_profiles")
+            .delete()
+            .eq("id", data.id);
+      }
+    });
+
+    // -------------------------------------------------------------------------
+    // T12 — The anon key cannot reach private columns by any route
+    // -------------------------------------------------------------------------
+    // @req REQ-014
+    it("T12: anon select=* on flags is refused", async () => {
+      const { error } = await anonClient().from("flags").select("*").limit(1);
+
+      expect(isRlsError(error), JSON.stringify(error)).toBe(true);
+    });
+
+    // A filter reads the column as surely as a select does: an equality probe
+    // would otherwise confirm an address one guess at a time.
+    // @req REQ-014
+    it("T12: anon filter on contribution_payload is refused", async () => {
+      const { error } = await anonClient()
+        .from("flags")
+        .select("id")
+        .not("contribution_payload", "is", null)
+        .limit(1);
+
+      expect(isRlsError(error), JSON.stringify(error)).toBe(true);
+    });
+
+    // @req REQ-041
+    it("T12: anon cannot read audit_log", async () => {
+      const { error } = await anonClient()
+        .from("audit_log")
+        .select("id")
+        .limit(1);
+
+      expect(isRlsError(error), JSON.stringify(error)).toBe(true);
+    });
+
+    // -------------------------------------------------------------------------
+    // T13 — A session cannot promote itself by any remaining path
+    // -------------------------------------------------------------------------
+    // @req REQ-042
+    it("T13: contributor cannot raise their existing profile's role", async () => {
+      const uid = getUserIdFromJwt(JWT_CONTRIBUTOR);
+      const svc = serviceClient();
+      const { data: profile, error: seedError } = await svc
+        .from("contributor_profiles")
+        .insert({ user_id: uid, display_name: RUN_PREFIX })
+        .select("id")
+        .single();
+      expect(seedError).toBeNull();
+
+      try {
+        const { error } = await contributorClient()
+          .from("contributor_profiles")
+          .update({ moderator_role: "admin" })
+          .eq("user_id", uid);
+
+        expect(isRlsError(error), JSON.stringify(error)).toBe(true);
+        const { data: after } = await svc
+          .from("contributor_profiles")
+          .select("moderator_role")
+          .eq("id", profile!.id)
+          .single();
+        expect(after?.moderator_role).toBe("none");
+      } finally {
+        await svc.from("contributor_profiles").delete().eq("id", profile!.id);
+      }
+    });
+
+    // @req REQ-093
+    it("T13: contributor cannot insert a working asset row", async () => {
+      const uid = getUserIdFromJwt(JWT_CONTRIBUTOR);
+      const { data, error } = await contributorClient()
+        .from("source_working_assets")
+        .insert({
+          source_id: crypto.randomUUID(),
+          owner_id: uid,
+          asset_kind: "scan",
+          object_path: `${uid}/${RUN_PREFIX}.pdf`,
+          filename: `${RUN_PREFIX}.pdf`,
+          content_type: "application/pdf",
+          byte_size: 1,
+        })
+        .select("id")
+        .single();
+
+      try {
+        expect(isRlsError(error), JSON.stringify(error)).toBe(true);
+      } finally {
+        if (data?.id)
+          await serviceClient()
+            .from("source_working_assets")
+            .delete()
+            .eq("id", data.id);
+      }
+    });
+
+    // @req REQ-042
+    it("T13: contributor cannot call publish_revision", async () => {
+      const { error } = await contributorClient().rpc("publish_revision", {
+        p_draft_id: crypto.randomUUID(),
+        p_reason: RUN_PREFIX,
+      });
+
+      expect(isRlsError(error), JSON.stringify(error)).toBe(true);
     });
   }
 );

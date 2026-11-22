@@ -10,8 +10,9 @@
  *
  * Being listed here grants nothing. It only moves authentication from the
  * middleware to the handler, so every route listed must refuse a request that
- * carries no session: `sessionAuthenticatedRoutes.test.ts` holds each entry to
- * a no-bearer case and fails on an entry without one. The middleware still
+ * carries no session, and — since readers can now hold a session — one whose
+ * address is not on the moderator allowlist: `sessionAuthenticatedRoutes.test.ts`
+ * holds each entry to both cases and fails on an entry without one. The middleware still
  * meters these routes in the per-IP bucket and still secures their responses.
  *
  * Kept as one list so the next such route is an entry, not another ad-hoc
@@ -26,10 +27,11 @@ interface SessionAuthenticatedApiRoute {
 // @req REQ-056
 export const SESSION_AUTHENTICATED_API_ROUTES: readonly SessionAuthenticatedApiRoute[] =
   [
-    // API-key self-service (ETNI-81): keyService.getAuthenticatedUser. Its
-    // /issue endpoint is anonymous and takes no bearer at all.
+    // API-key self-service (ETNI-81), moderators only: the handler checks the
+    // session against the allowlist. Its /issue endpoint is anonymous and
+    // takes no bearer at all.
     { path: /^\/api\/v2\/keys(\/|$)/ },
-    // Search and every write; the handler resolves the session user.
+    // Search and every write, moderators only (allowlist in the handler).
     { path: /^\/api\/v2\/reference-library(\/|$)/ },
     // The moderation transition. GET on the same path is the public detail,
     // so a bearer there is still an API key.
