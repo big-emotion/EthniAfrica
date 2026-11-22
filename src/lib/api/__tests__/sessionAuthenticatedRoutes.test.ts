@@ -5,11 +5,71 @@ vi.mock("@/lib/api/logger", () => ({
   logger: { error: vi.fn(), warn: vi.fn(), info: vi.fn() },
 }));
 
+// Whoever the bearer resolves to. GoTrue sign-up is open, so a real,
+// confirmed user off the allowlist is the cheapest session there is. Every
+// table read answers empty, so a handler that forgets the allowlist answers
+// 2xx instead of 403.
+const session = vi.hoisted(() => ({
+  user: {
+    id: "reader-1",
+    email: "reader@example.org",
+    email_confirmed_at: "2026-11-01T00:00:00.000Z" as string | null,
+  },
+  allowlisted: false,
+}));
+
+vi.mock("@/lib/supabase/admin", () => {
+  const emptyQuery: unknown = new Proxy(() => undefined, {
+    get: (_target, property) =>
+      property === "then"
+        ? (resolve: (value: unknown) => void) =>
+            resolve({ data: [], error: null, count: 0 })
+        : () => emptyQuery,
+    apply: () => emptyQuery,
+  });
+  return {
+    createAdminClient: () => ({
+      auth: {
+        getUser: async () => ({ data: { user: session.user }, error: null }),
+      },
+      // The real allowlist module runs against this lookup, so the guard
+      // under test is the one the routes ship with.
+      from: (table: string) =>
+        table === "admin_allowlist"
+          ? {
+              select: () => ({
+                eq: () => ({
+                  maybeSingle: async () => ({
+                    data: session.allowlisted
+                      ? { email: session.user.email }
+                      : null,
+                    error: null,
+                  }),
+                }),
+              }),
+            }
+          : emptyQuery,
+      rpc: () => emptyQuery,
+      storage: { from: () => emptyQuery },
+    }),
+  };
+});
+
+function signInAs(user: Partial<typeof session.user>, allowlisted: boolean) {
+  session.user = {
+    id: "reader-1",
+    email: "reader@example.org",
+    email_confirmed_at: "2026-11-01T00:00:00.000Z",
+    ...user,
+  };
+  session.allowlisted = allowlisted;
+}
+
 import {
   SESSION_AUTHENTICATED_API_ROUTES,
   isSessionAuthenticatedApiRoute,
 } from "@/lib/api/sessionAuthenticatedRoutes";
-import { GET as listKeys } from "@/app/api/v2/keys/route";
+import { GET as listKeys, POST as createKey } from "@/app/api/v2/keys/route";
 import { DELETE as revokeKey } from "@/app/api/v2/keys/[id]/route";
 import {
   GET as searchReferences,
@@ -37,6 +97,7 @@ const params = <T>(value: T) => ({ params: Promise.resolve(value) });
 
 const guardCases: GuardCase[] = [
   { method: "GET", pathname: "/api/v2/keys", send: (r) => listKeys(r) },
+  { method: "POST", pathname: "/api/v2/keys", send: (r) => createKey(r) },
   {
     method: "DELETE",
     pathname: "/api/v2/keys/key-1",
@@ -74,19 +135,29 @@ const guardCases: GuardCase[] = [
   },
 ];
 
-function anonymousRequest({ method, pathname }: GuardCase): NextRequest {
+function anonymousRequest(
+  { method, pathname }: GuardCase,
+  headers: Record<string, string> = {}
+): NextRequest {
   const url = `http://localhost${pathname}`;
   if (pathname.endsWith("/assets")) {
-    return new NextRequest(url, { method, body: new FormData() });
+    return new NextRequest(url, { method, body: new FormData(), headers });
   }
   return new NextRequest(url, {
     method,
+    headers,
     ...(method === "GET" || method === "DELETE"
       ? {}
       : {
-          body: JSON.stringify({ status: "under_review" }),
-          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ status: "under_review", label: "CI" }),
+          headers: { ...headers, "content-type": "application/json" },
         }),
+  });
+}
+
+function readerRequest(guardCase: GuardCase): NextRequest {
+  return anonymousRequest(guardCase, {
+    authorization: "Bearer reader-session-jwt",
   });
 }
 
@@ -121,6 +192,49 @@ describe("session-authenticated API routes", () => {
       const response = await guardCase.send(anonymousRequest(guardCase));
 
       expect([401, 403]).toContain(response.status);
+    }
+  );
+
+  // Public reader accounts make a valid session cheap: anyone can hold one.
+  // A session is therefore never the authorization on these routes — the
+  // moderator allowlist is.
+  // @req REQ-056
+  it.each(guardCases)(
+    "refuses $method $pathname with 403 for a session off the allowlist",
+    async (guardCase) => {
+      signInAs({}, false);
+      const response = await guardCase.send(readerRequest(guardCase));
+
+      expect(response.status).toBe(403);
+    }
+  );
+
+  // An address is only the moderator's once GoTrue has seen it confirmed;
+  // an unconfirmed user carrying an allowlisted address proves nothing.
+  // @req REQ-056
+  it.each(guardCases)(
+    "refuses $method $pathname with 403 for an allowlisted but unconfirmed address",
+    async (guardCase) => {
+      signInAs(
+        { email: "moderation@example.org", email_confirmed_at: null },
+        true
+      );
+      const response = await guardCase.send(readerRequest(guardCase));
+
+      expect(response.status).toBe(403);
+    }
+  );
+
+  // The positive control: without it, a mock that refused everyone would
+  // pass both refusal suites above.
+  // @req REQ-056
+  it.each(guardCases)(
+    "lets a confirmed allowlisted moderator past the guard of $method $pathname",
+    async (guardCase) => {
+      signInAs({ email: "moderation@example.org" }, true);
+      const response = await guardCase.send(readerRequest(guardCase));
+
+      expect([401, 403]).not.toContain(response.status);
     }
   );
 

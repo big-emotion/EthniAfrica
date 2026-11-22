@@ -10,6 +10,7 @@ import {
 const contributor = {
   id: "11111111-1111-4111-8111-111111111111",
   email: "moderation@example.org",
+  email_confirmed_at: "2026-11-01T00:00:00.000Z",
 };
 const source = {
   id: "22222222-2222-4222-8222-222222222222",
@@ -276,7 +277,7 @@ describe("reference library writes are reserved to the moderator allowlist", () 
   }
 
   // @req REQ-042
-  it("leaves searching open to any signed-in session", async () => {
+  it("answers a search from a signed-in address off the allowlist with 403", async () => {
     const deps = dependencies({
       isEmailAllowlisted: vi.fn().mockResolvedValue(false),
     });
@@ -286,7 +287,8 @@ describe("reference library writes are reserved to the moderator allowlist", () 
       deps
     );
 
-    expect(result.status).toBe(200);
-    expect(deps.isEmailAllowlisted).not.toHaveBeenCalled();
+    expect(result.status).toBe(403);
+    expect(deps.isEmailAllowlisted).toHaveBeenCalledWith(contributor.email);
+    expect(deps.searchReferences).not.toHaveBeenCalled();
   });
 });

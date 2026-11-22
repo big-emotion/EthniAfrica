@@ -39,9 +39,11 @@ const SELF_SERVICE_COLUMNS =
  * file's own precedent alongside `reference-library.ts`.
  */
 // @req REQ-056
-export async function getAuthenticatedUser(
-  accessToken: string
-): Promise<{ id: string } | null> {
+export async function getAuthenticatedUser(accessToken: string): Promise<{
+  id: string;
+  email: string | null;
+  email_confirmed_at: string | null;
+} | null> {
   const supabase = createAdminClient();
   const {
     data: { user },
@@ -53,7 +55,11 @@ export async function getAuthenticatedUser(
     return null;
   }
 
-  return { id: user.id };
+  return {
+    id: user.id,
+    email: user.email ?? null,
+    email_confirmed_at: user.email_confirmed_at ?? null,
+  };
 }
 
 // @req REQ-056
