@@ -162,7 +162,7 @@ const options: swaggerJsdoc.Options = {
         get: {
           summary: "Search structured references",
           description:
-            "Searches the reference library. Open to any signed-in session; creating references, linking them to assertions and uploading working assets are reserved to moderators. The result is mutable and is never cached.",
+            "Searches the reference library. Reserved to moderators, like every reference-library operation: a signed-in session whose address is not on the moderator allowlist is refused with 403. The result is mutable and is never cached.",
           tags: ["API v2 - Reference Library"],
           security: [{ SupabaseJwtAuth: [] }],
           parameters: [
@@ -218,6 +218,20 @@ const options: swaggerJsdoc.Options = {
             },
             401: {
               description: "Missing or invalid Supabase access token.",
+              headers: {
+                "Cache-Control": {
+                  schema: { type: "string", example: "no-store" },
+                },
+              },
+              content: {
+                "application/json": {
+                  schema: { $ref: "#/components/schemas/ApiErrorEnvelope" },
+                },
+              },
+            },
+            403: {
+              description:
+                "The session's address is not on the moderator allowlist.",
               headers: {
                 "Cache-Control": {
                   schema: { type: "string", example: "no-store" },

@@ -1,15 +1,14 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-const { mockGetUser, mockIsEmailAllowlisted, mockCreateClient } = vi.hoisted(
-  () => ({
+const { mockGetUser, mockIsConfirmedAllowlistedUser, mockCreateClient } =
+  vi.hoisted(() => ({
     mockGetUser: vi.fn(),
-    mockIsEmailAllowlisted: vi.fn(),
+    mockIsConfirmedAllowlistedUser: vi.fn(),
     mockCreateClient: vi.fn(),
-  })
-);
+  }));
 
 vi.mock("@/lib/auth/adminAllowlist", () => ({
-  isEmailAllowlisted: mockIsEmailAllowlisted,
+  isConfirmedAllowlistedUser: mockIsConfirmedAllowlistedUser,
 }));
 
 vi.mock("@/lib/supabase/auth-server", () => ({
@@ -20,7 +19,13 @@ import { hasReferenceLibraryAccess } from "../referenceLibraryAccess";
 
 function signedInAs(email: string) {
   mockGetUser.mockResolvedValue({
-    data: { user: { id: "user-uuid-123", email } },
+    data: {
+      user: {
+        id: "user-uuid-123",
+        email,
+        email_confirmed_at: "2026-11-01T00:00:00.000Z",
+      },
+    },
     error: null,
   });
 }
@@ -34,18 +39,18 @@ describe("hasReferenceLibraryAccess", () => {
   // @req REQ-042
   it("opens the library to a session whose address is on the allowlist", async () => {
     signedInAs("moderation@example.org");
-    mockIsEmailAllowlisted.mockResolvedValue(true);
+    mockIsConfirmedAllowlistedUser.mockResolvedValue(true);
 
     await expect(hasReferenceLibraryAccess()).resolves.toBe(true);
-    expect(mockIsEmailAllowlisted).toHaveBeenCalledWith(
-      "moderation@example.org"
+    expect(mockIsConfirmedAllowlistedUser).toHaveBeenCalledWith(
+      expect.objectContaining({ email: "moderation@example.org" })
     );
   });
 
   // @req REQ-042
   it("keeps it closed to a signed-in address the allowlist does not hold", async () => {
     signedInAs("reader@example.org");
-    mockIsEmailAllowlisted.mockResolvedValue(false);
+    mockIsConfirmedAllowlistedUser.mockResolvedValue(false);
 
     await expect(hasReferenceLibraryAccess()).resolves.toBe(false);
   });
@@ -55,7 +60,7 @@ describe("hasReferenceLibraryAccess", () => {
     mockGetUser.mockResolvedValue({ data: { user: null }, error: null });
 
     await expect(hasReferenceLibraryAccess()).resolves.toBe(false);
-    expect(mockIsEmailAllowlisted).not.toHaveBeenCalled();
+    expect(mockIsConfirmedAllowlistedUser).not.toHaveBeenCalled();
   });
 
   // @req REQ-042

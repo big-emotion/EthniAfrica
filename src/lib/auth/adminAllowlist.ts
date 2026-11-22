@@ -20,7 +20,10 @@ import { createAdminClient } from "@/lib/supabase/admin";
 export async function isEmailAllowlisted(
   email: string | null | undefined
 ): Promise<boolean> {
-  const address = email?.trim();
+  // admin_allowlist.email is CITEXT, so the comparison is already
+  // case-insensitive in Postgres; lowering here keeps it so if the column or
+  // the lookup ever changes.
+  const address = email?.trim().toLowerCase();
   if (!address) return false;
 
   const supabase = createAdminClient();
@@ -39,4 +42,26 @@ export async function isEmailAllowlisted(
   }
 
   return Boolean(data);
+}
+
+/** The two fields of a GoTrue user that decide whether it is a moderator. */
+export interface SessionAddress {
+  email?: string | null;
+  email_confirmed_at?: string | null;
+}
+
+/**
+ * Whether a signed-in user is a moderator: a confirmed address on the
+ * allowlist.
+ *
+ * GoTrue sign-up is open (the moderator magic link needs it to create the
+ * user), so anyone can hold a session carrying any address they typed. The
+ * address only becomes theirs once the confirmation link has been followed.
+ */
+// @req REQ-042
+export async function isConfirmedAllowlistedUser(
+  user: SessionAddress | null | undefined
+): Promise<boolean> {
+  if (!user?.email_confirmed_at) return false;
+  return isEmailAllowlisted(user.email);
 }

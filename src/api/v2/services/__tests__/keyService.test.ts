@@ -56,14 +56,23 @@ describe("getAuthenticatedUser", () => {
   });
 
   // @req REQ-056
-  it("resolves a Supabase user from the bearer access token", async () => {
-    const getUser = vi
-      .fn()
-      .mockResolvedValue({ data: { user: { id: "user-1" } }, error: null });
+  it("resolves a Supabase user and its address from the bearer access token", async () => {
+    const getUser = vi.fn().mockResolvedValue({
+      data: {
+        user: {
+          id: "user-1",
+          email: "moderation@example.org",
+          email_confirmed_at: "2026-11-01T00:00:00.000Z",
+        },
+      },
+      error: null,
+    });
     mocks.createAdminClient.mockReturnValue({ auth: { getUser } });
 
     await expect(getAuthenticatedUser("valid-jwt")).resolves.toEqual({
       id: "user-1",
+      email: "moderation@example.org",
+      email_confirmed_at: "2026-11-01T00:00:00.000Z",
     });
     expect(getUser).toHaveBeenCalledWith("valid-jwt");
   });
