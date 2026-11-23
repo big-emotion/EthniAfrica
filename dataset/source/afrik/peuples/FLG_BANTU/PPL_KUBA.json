@@ -136,6 +136,18 @@
         "url": null,
         "tier": "needs_review",
         "source_kind": "academic"
+      },
+      {
+        "title": "Glottolog — Bushoong (bush1247)",
+        "url": "https://glottolog.org/resource/languoid/id/bush1247",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Genetic legacy of state centralization in the Kuba Kingdom of the Democratic Republic of the Congo (PNAS 2018, full text on PubMed Central)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6329964/",
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   },

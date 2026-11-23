@@ -120,6 +120,12 @@
         "url": "https://www.ecoi.net/en/document/1060343.html",
         "tier": "referenced",
         "source_kind": "government"
+      },
+      {
+        "title": "Glottolog — Gusii (gusi1247)",
+        "url": "https://glottolog.org/resource/languoid/id/gusi1247",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   },

@@ -101,6 +101,12 @@
         "url": "https://www.joshuaproject.net/clusters/341",
         "tier": "unverified",
         "source_kind": "missionary_database"
+      },
+      {
+        "title": "Glottolog — Kisi (kisi1243)",
+        "url": "https://glottolog.org/resource/languoid/id/kisi1243",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   },
