@@ -135,6 +135,22 @@
         "tier": "referenced",
         "source_kind": "academic",
         "notes": "Revue Matatu, volumes 27-28, 2003 ; travail universitaire indépendant de celui de Drewal, consulté le 10 septembre 2026."
+      },
+      {
+        "title": "Glottolog – Mokpwe (mokp1239)",
+        "url": "https://glottolog.org/resource/languoid/id/mokp1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Page lue le 8 novembre 2026 : code ISO 639-3 bri, parlé au Cameroun ; noms alternatifs Bakweri, Bakueri, Kwiri, Mokpwe, Bakpwe."
+      },
+      {
+        "title": "Myth Survey – Efasa-Moto, dieu suprême des Bakweri (Divine Che Neba, université de Yaoundé 1)",
+        "author": "Divine Che Neba, Obta (université de Varsovie)",
+        "year": 2017,
+        "url": "https://omc.obta.al.uw.edu.pl/myth-survey/item/144",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Notice lue le 8 novembre 2026 : récit recueilli à Buea le 31 juillet 2017 auprès d'Alfred Ngoisa Lyonga, relu par deux chercheuses. Elle parle du dieu Efasa-Moto et du mont Fako, pas de l'origine du nom Bakweri."
       }
     ]
   },

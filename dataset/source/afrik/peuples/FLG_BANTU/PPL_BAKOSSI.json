@@ -120,6 +120,14 @@
         "url": "https://www.cia.gov/the-world-factbook/countries/cameroon/",
         "tier": "official",
         "source_kind": "government"
+      },
+      {
+        "title": "Origins of the Tribe (Bakossi Cultural Development Association)",
+        "author": "Bakossi Cultural Development Association (BACDA)",
+        "url": "https://www.bacda.org/origin",
+        "tier": "unverified",
+        "source_kind": "community",
+        "notes": "Page lue le 8 novembre 2026. Elle écrit que le nom désigne « the inhabitants of the immediate western and eastern slopes of Mount Mwanenguba and Mount Kupe », qui se réclament d'un ancêtre commun, Ngoe. Elle s'appuie sur des traditions orales qui varient selon les clans et cite un seul ouvrage, The Tradition of a People: Bakossi (Edjedepang-Koge, 1986), que nous n'avons pas pu consulter."
       }
     ]
   },

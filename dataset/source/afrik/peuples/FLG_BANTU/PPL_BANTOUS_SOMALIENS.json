@@ -131,6 +131,23 @@
         "url": "https://www.refworld.org/reference/countryrep/mrgi/2018/121768",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Bantu ethnic identities in Somalia",
+        "author": "Ken Menkhaus",
+        "year": 2003,
+        "url": "https://www.persee.fr/doc/ethio_0066-2127_2003_num_19_1_1051",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 323-339",
+        "notes": "Article des Annales d'Éthiopie, lu en partie le 8 novembre 2026 : seul le passage sur l'étiquette « Somali Bantu » a été lu, pas l'article entier. Texte intégral en accès libre aussi à l'archive de l'université Roma Tre (hdl.handle.net/2307/3206)."
+      },
+      {
+        "title": "Glottolog – Mushungulu (mush1238)",
+        "url": "https://glottolog.org/resource/languoid/id/mush1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Page lue le 8 novembre 2026 : noms Chizigula, Kimushungulu, Kizigua, Mushunguli, parlé en Somalie, code ISO 639-3 xma ; Glottolog le range avec le zigula (ziw), deux variétés qui « diffèrent à peine »."
       }
     ]
   },
@@ -187,6 +204,27 @@
                 "source_kind": "academic",
                 "page": "p. 3-4",
                 "notes": "Washington, Center for Applied Linguistics, Cultural Orientation Resource Center, Culture Profile n° 16, février 2003, lu en texte intégral le 11 octobre 2026. Page 3 : ceux qui ont fui la vallée du Juba « are politely referred to as Wagosha (\"people of the forest\") or Jareer » ; « Derogatory terms to describe the Somali Bantu include adoon and habash, which translate as \"slave\" » ; « The Bantu refugees generally refer to themselves simply as the Bantu » ; « The word Mushunguli may have evolved from the word Mzigua ». Page 4 : la texture des cheveux distingue « jareer (kinky hair for the Bantu people) and jilec (soft hair for the non-Bantu) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1991,
+              "to": null,
+              "label": "Depuis 1991"
+            },
+            "statement": "Le nom Somali Bantu, tel que l'emploient les organisations d'aide et la presse, n'existait pas avant 1991, selon l'historien Ken Menkhaus. Il le décrit comme « an inadvertent creation of the international community - specifically, aid agencies and the media » (une création involontaire de la communauté internationale, surtout des agences d'aide et des médias).",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bantu ethnic identities in Somalia",
+                "author": "Ken Menkhaus",
+                "year": 2003,
+                "url": "https://www.persee.fr/doc/ethio_0066-2127_2003_num_19_1_1051",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 323-339",
+                "notes": "Article des Annales d'Éthiopie, lu en partie le 8 novembre 2026 : seul le passage sur l'étiquette « Somali Bantu » a été lu, pas l'article entier. Texte intégral en accès libre aussi à l'archive de l'université Roma Tre (hdl.handle.net/2307/3206)."
               }
             ]
           }
