@@ -18,7 +18,7 @@
     },
     "ethnicities": ["Aushi", "Ushi"],
     "origins": {
-      "ancientOrigins": "Les Aushi tracent leurs origines a l'Empire Luba-Lunda (actuelle RDC), un des grands empires bantous d'Afrique centrale. Ils font partie des groupes Luba qui ont migre vers l'est lors de l'expansion et de la fragmentation de cet empire aux XVe-XVIe siecles.",
+      "ancientOrigins": "Les Aushi disent venir du monde luba. Barnabas Chimba, un enseignant ushi qui écrit en bemba en 1943, raconte que les Abaushi viennent de Kola, en Angola, et que ses ancêtres étaient appelés Baluba. Selon lui, le premier chef des Baushi, Cabala-Muwe, arrive du Buluba et s’installe entre les rivières Lwela et Mansa, dans la région du Luapula. Ce récit est une tradition rapportée par un auteur du peuple lui-même ; les dates (XVe-XVIe siècles) restent à établir par d’autres sources.",
       "formationPeriod": "Vers 1500 apres J.-C., periode de la grande migration depuis l'Empire Luba-Lunda.",
       "migrationRoutes": [
         "Empire Luba-Lunda (RDC) vers le nord-est, traversee de la riviere Luapula vers la Zambie actuelle, installation dans la province de Luapula"
@@ -103,6 +103,12 @@
         "url": null,
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Barnabas Chimba, A History of the Baushi, Oxford University Press (Cape Town), 2nd ed. 1949 (1st ed. 1943)",
+        "url": "https://www.troyspier.com/assets/files/bibliographies/m40/chimba_history_baushi.pdf",
+        "tier": "referenced",
+        "source_kind": "archive"
       }
     ]
   },
@@ -160,6 +166,29 @@
                 "source_kind": "archive",
                 "page": "p. 460",
                 "notes": "Récit du voyage de 1883-1885. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Spier signale que le livre de Giraud de 1890 est peut-être la plus ancienne référence ; nous avons trouvé cette forme dès 1885."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1943,
+              "to": 1949,
+              "label": "Écrit en 1943, publié en 1949"
+            },
+            "era": "colonial",
+            "statement": "Le nom Abaushi est celui que l’enseignant ushi Barnabas Chimba emploie pour son propre peuple dans son livre écrit en bemba, A History of the Baushi (le titre anglais emploie Baushi). Il écrit que les Abaushi vivent entre les rivières Lwela et Mansa, dans le Luapula, et qu’ils viennent de Kola, en Angola.",
+            "aspect": "usage",
+            "formAsWritten": "Abaushi",
+            "sources": [
+              {
+                "title": "A History of the Baushi",
+                "author": "Barnabas Chimba",
+                "year": 1949,
+                "url": "https://www.troyspier.com/assets/files/bibliographies/m40/chimba_history_baushi.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "début du livre, « Abaushi. Amashiwi ya kutampa » et chapitre 1",
+                "notes": "Oxford University Press, Cape Town, 2e édition 1949 ; 1re édition 1943. Texte en bemba (avec préface). Lu dans le PDF numérisé le 8 novembre 2026 ; traduction du passage par le projet, à faire relire par un locuteur du bemba. Le numéro de page imprimé n’a pas été relevé."
               }
             ]
           }

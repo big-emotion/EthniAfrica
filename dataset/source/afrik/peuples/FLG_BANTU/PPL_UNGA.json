@@ -44,7 +44,7 @@
       "dialects": [
         "Dialecte Unga du Bemba, distinct du Bemba parle en Muchinga et dans la province du Nord en raison de l'isolement insulaire du peuple"
       ],
-      "vehicularRole": "Le Bemba est la langue vehiculaire regionale de la province de Luapula. L'anglais et le Nyanja sont les langues officielles nationales de la Zambie."
+      "vehicularRole": "Le Bemba est la langue vehiculaire regionale de la province de Luapula. L'anglais et le Nyanja sont les langues officielles nationales de la Zambie. Ichiro Imai (1985, p. 51) écrit que les Unga, comme leurs voisins N’gumbo et Kabende, parlent le cibemba, et qu’ils sont les seuls habitants des îles du marais."
     },
     "culture": {
       "majorRites": "Rites et ceremonies lies au cycle de la peche et de l'agriculture. La vie rituelle est fortement marquee par les contraintes saisonnieres du marecage : peche d'avril a novembre (saison seche), agriculture de janvier a mars (saison des pluies). Les pecheurs respectent le dimanche comme jour de repos et de visite sociale entre camps (pamitanda).",
@@ -61,7 +61,7 @@
     "demography": {
       "totalPopulation": 55000,
       "referenceYear": 2025,
-      "source": "Joshua Project (2025) : 55 000 personnes",
+      "source": "Joshua Project (2025) : 55 000 personnes. Le recensement de 1974 compte environ 16 000 Unga, d’après Ichiro Imai (1985, p. 51), qui cite le rapport final de l’administration zambienne. L’écart entre les deux chiffres n’est pas expliqué : nous n’avons pas trouvé de chiffre plus récent dans une source statistique.",
       "distributionByCountry": [
         {
           "country": "ZMB",
