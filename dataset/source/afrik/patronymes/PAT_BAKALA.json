@@ -65,27 +65,27 @@
   "gaps": [
     {
       "fieldPath": "alliances",
-      "reason": "la recherche web combinant « Bakala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « Bakala Surname Origin, Meaning & Last Name History » n'ont identifié aucune paire d'alliance ou de parenté à plaisanterie reliant Bakala à un autre nom documenté ici."
+      "reason": "la recherche web combinant « Bakala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la consultation de « Bakala Surname Origin, Meaning & Last Name History » n'ont identifié aucune paire d'alliance ou de parenté à plaisanterie reliant Bakala à un autre nom documenté ici."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "la recherche web combinant « Bakala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « Bakala Surname Origin, Meaning & Last Name History » n'ont établi aucune fonction sociale ou professionnelle héréditaire propre au nom Bakala."
+      "reason": "la recherche web combinant « Bakala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la consultation de « Bakala Surname Origin, Meaning & Last Name History » n'ont établi aucune fonction sociale ou professionnelle héréditaire propre au nom Bakala."
     },
     {
       "fieldPath": "bearers",
-      "reason": "la recherche web combinant « Bakala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « obituary », et la lecture de « Bakala Surname Origin, Meaning & Last Name History », n'a identifié aucun porteur décédé documentable sans ambiguïté. Les personnes vivantes seulement attestées par les sources ne sont pas ajoutées."
+      "reason": "la recherche web combinant « Bakala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « obituary », et la consultation de « Bakala Surname Origin, Meaning & Last Name History », n'a identifié aucun porteur décédé documentable sans ambiguïté. Les personnes vivantes seulement attestées par les sources ne sont pas ajoutées."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "la recherche web combinant « Bakala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « homonyme », et la lecture de « Bakala Surname Origin, Meaning & Last Name History », n'ont pas établi de lignée homonyme d'origine distincte."
+      "reason": "la recherche web combinant « Bakala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « homonyme », et la consultation de « Bakala Surname Origin, Meaning & Last Name History », n'ont pas établi de lignée homonyme d'origine distincte."
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "la recherche web combinant « Bakala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « Bakala Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Bakala permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
+      "reason": "la recherche web combinant « Bakala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la consultation de « Bakala Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Bakala permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
   ],
   "nameHistory": {
-    "summary": "Le nom Bakala s'écrit comme bakala, un mot du kikongo qui veut dire « homme (mâle) » dans le dictionnaire de Karl Edvard Laman (1936). Ce dictionnaire ne le donne pas comme nom de famille : on ne sait pas avec certitude si le nom Bakala vient de ce mot.",
+    "summary": "Le nom Bakala s'écrit comme bakala, un mot du kikongo qui veut dire « homme (mâle) » dans le dictionnaire de Karl Edvard Laman (1936). Chez les Beembe, un groupe kongo du Congo-Brazzaville, Lucien Niangui Goma relève Bakala comme un nom de personne qui évoque la force et la vaillance. Ces deux ouvrages ne présentent pas Bakala comme un nom de famille ou de clan : on ne sait pas avec certitude d'où vient le nom Bakala tel qu'il est porté aujourd'hui.",
     "names": [
       {
         "nameText": "Bakala",
@@ -115,6 +115,27 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 9",
                 "notes": "Bruxelles, Institut royal colonial belge, 1936. Missionnaire suédois, cité pour ce qu'il relève. Lu dans la numérisation d'Internet Archive le 16 octobre 2026, page vue en image. Page 9, colonne de droite : « bakala, pl. ma- ou ba- (dial. baakala, pl. maakala), homme (mâle) » ; entrées suivantes : « bakala, pl. bi-, [...] organe sexuel (membre) ; semen viril » et « bakala, pl. ba-, poivre. Capsicum annum ». Le dictionnaire ne traite pas de noms de famille."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Relevé dans une étude récente sur les noms beembe"
+            },
+            "statement": "Le nom Bakala figure dans le répertoire des noms de personne des Beembe, un groupe kongo du Niari, au Congo-Brazzaville. Lucien Niangui Goma le glose « être ou enfant masculin, traduit la force, la vaillance ». Il présente cette liste comme non exhaustive et propose le sens chaque fois que possible ; il ne dit pas que Bakala soit un nom de clan.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les noms propres et leurs secrets dans la civilisation précoloniale des Beembe du Congo-Brazzaville (XVIe-XIXe siècles)",
+                "author": "Lucien Niangui Goma",
+                "year": null,
+                "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2024/01/13-Lucien-NIANGUI-GOMA.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 214",
+                "notes": "Maître de conférences à l'université Marien Ngouabi, Brazzaville. Article en ligne sur le site de l'ACAREF ; le fichier est déposé en janvier 2024 d'après son adresse, mais la revue, le numéro et l'année de parution n'apparaissent pas dans le texte lu. Résumé, introduction et répertoire lus le 8 novembre 2026. Page 214, tableau « Noms / Sens des noms » : « Bakala : Etre ou enfant masculin, traduit la force, la vaillance »."
               }
             ]
           }

@@ -77,15 +77,15 @@
   "gaps": [
     {
       "fieldPath": "alliances",
-      "reason": "la recherche web combinant « Banda », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « Gender, Religion and Migration: A Study of Malawian Chewa and Yawo Muslim Women in Durban, 1994–2017 » n'ont identifié aucune paire d'alliance ou de parenté à plaisanterie reliant Banda à un autre nom documenté ici."
+      "reason": "la recherche web combinant « Banda », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la consultation de « Gender, Religion and Migration: A Study of Malawian Chewa and Yawo Muslim Women in Durban, 1994–2017 » n'ont identifié aucune paire d'alliance ou de parenté à plaisanterie reliant Banda à un autre nom documenté ici."
     },
     {
       "fieldPath": "bearers",
-      "reason": "la recherche web combinant « Banda », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « obituary », et la lecture de « Gender, Religion and Migration: A Study of Malawian Chewa and Yawo Muslim Women in Durban, 1994–2017 », n'a identifié aucun porteur décédé documentable sans ambiguïté. Les personnes vivantes seulement attestées par les sources ne sont pas ajoutées."
+      "reason": "la recherche web combinant « Banda », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « obituary », et la consultation de « Gender, Religion and Migration: A Study of Malawian Chewa and Yawo Muslim Women in Durban, 1994–2017 », n'a identifié aucun porteur décédé documentable sans ambiguïté. Les personnes vivantes seulement attestées par les sources ne sont pas ajoutées."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "la recherche web combinant « Banda », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « homonyme », et la lecture de « Gender, Religion and Migration: A Study of Malawian Chewa and Yawo Muslim Women in Durban, 1994–2017 », n'ont pas établi de lignée homonyme d'origine distincte."
+      "reason": "la recherche web combinant « Banda », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « homonyme », et la consultation de « Gender, Religion and Migration: A Study of Malawian Chewa and Yawo Muslim Women in Durban, 1994–2017 », n'ont pas établi de lignée homonyme d'origine distincte."
     }
   ],
   "nameHistory": {

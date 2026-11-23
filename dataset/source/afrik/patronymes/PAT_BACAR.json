@@ -59,20 +59,28 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Page dédiée consultée intégralement. Elle atteste Bacar aux Comores, sans fournir d'étymologie éditorialement attribuée. La distribution géographique ne permet pas d'établir à elle seule l'appartenance au peuple comorien."
+    },
+    {
+      "sourceKey": "mtrengoueni-mouhktar-gueunier-1999",
+      "title": "« NOM, Prénom » : une étape vers l'uniformisation culturelle ? Identité et statut juridique à Mayotte (Océan Indien Occidental)",
+      "url": "https://www.migrantsoutremer.org/IMG/pdf/rss-france-est_1999_noms-mahorais.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Mohamed M'Trengoueni, Soilihi Mouhktar et Noël J. Gueunier, Revue des Sciences Sociales de la France de l'Est, no 26, 1999, p. 45-53. Texte lu en grande partie le 8 novembre 2026 (introduction, inventaire des noms, structure du nom, schéma d'une lignée). L'article porte sur Mayotte, qu'il présente comme un cas particulier des noms comoriens ; il ne cite pas la forme Bacar, mais la forme Bakari."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "La recherche web combinant « Bacar », « patronyme », « origine », « clan », « alliance », « caste », « obituary » et « homonyme », ainsi que la lecture de « Bacar Surname Origin, Meaning & Last Name History », n'ont livré aucune étymologie ni chronique attribuable au nom lui-même. Les rapprochements plausibles non sourcés ont été écartés."
+      "reason": "La recherche web combinant « Bacar », « patronyme », « origine », « clan », « alliance », « caste », « obituary » et « homonyme », ainsi que la consultation de « Bacar Surname Origin, Meaning & Last Name History », n'ont livré aucune étymologie ni chronique attribuable au nom lui-même. Les rapprochements plausibles non sourcés ont été écartés."
     },
     {
       "fieldPath": "alliances",
-      "reason": "La recherche web combinant « Bacar », « patronyme », « origine », « clan », « alliance », « caste », « obituary » et « homonyme » et la lecture de « Bacar Surname Origin, Meaning & Last Name History » n'ont identifié aucune paire d'alliance ou de parenté à plaisanterie reliant Bacar à un autre nom documenté ici."
+      "reason": "La recherche web combinant « Bacar », « patronyme », « origine », « clan », « alliance », « caste », « obituary » et « homonyme » et la consultation de « Bacar Surname Origin, Meaning & Last Name History » n'ont identifié aucune paire d'alliance ou de parenté à plaisanterie reliant Bacar à un autre nom documenté ici."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "La recherche web combinant « Bacar », « patronyme », « origine », « clan », « alliance », « caste », « obituary » et « homonyme » et la lecture de « Bacar Surname Origin, Meaning & Last Name History » n'ont établi aucune fonction sociale ou professionnelle héréditaire propre au nom Bacar."
+      "reason": "La recherche web combinant « Bacar », « patronyme », « origine », « clan », « alliance », « caste », « obituary » et « homonyme » et la consultation de « Bacar Surname Origin, Meaning & Last Name History » n'ont établi aucune fonction sociale ou professionnelle héréditaire propre au nom Bacar."
     },
     {
       "fieldPath": "bearers",
@@ -80,7 +88,45 @@
     },
     {
       "fieldPath": "homonyms",
-      "reason": "La recherche web combinant « Bacar », « patronyme », « origine », « clan », « alliance », « caste », « obituary » et « homonyme », qui comprenait le terme « homonyme », et la lecture de « Bacar Surname Origin, Meaning & Last Name History » n'ont pas établi de lignée homonyme d'origine distincte."
+      "reason": "La recherche web combinant « Bacar », « patronyme », « origine », « clan », « alliance », « caste », « obituary » et « homonyme », qui comprenait le terme « homonyme », et la consultation de « Bacar Surname Origin, Meaning & Last Name History » n'ont pas établi de lignée homonyme d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "originExplained": false,
+    "summary": "Le nom Bacar est porté aux Comores, où la base Forebears l'atteste. Aucune des sources lues n'en explique l'origine. Une étude sur Mayotte, dont les noms sont un cas particulier des noms comoriens, décrit comment on y nomme les personnes : un nom propre, suivi du nom du père, sans nom de famille fixe.",
+    "names": [
+      {
+        "nameText": "Bacar",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté aux Comores ; les sources lues n'en donnent pas l'origine.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Décrit en 1999"
+            },
+            "statement": "Le nom d'une personne comorienne se compose, selon Mohamed M'Trengoueni, Soilihi Mouhktar et Noël Gueunier, d'un nom individuel suivi du nom du père, appelé sheredzo. Ce nom du père change à chaque génération : il ne forme donc pas un nom de famille fixe. Les auteurs ne parlent pas du nom Bacar ; ils citent la forme Bakari parmi les noms d'une lignée mahoraise donnée en exemple.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "« NOM, Prénom » : une étape vers l'uniformisation culturelle ? Identité et statut juridique à Mayotte (Océan Indien Occidental)",
+                "author": "Mohamed M'Trengoueni, Soilihi Mouhktar et Noël J. Gueunier",
+                "year": 1999,
+                "url": "https://www.migrantsoutremer.org/IMG/pdf/rss-france-est_1999_noms-mahorais.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 47",
+                "notes": "Revue des Sciences Sociales de la France de l'Est, no 26, 1999, p. 45-53. Les noms mahorais y sont décrits comme un cas particulier des noms comoriens. Passage lu le 8 novembre 2026 : « De ce système les Comoriens n'ont retenu que la partie centrale, constituée du nom individuel, suivi du nom du père. » et « Le nom du père énoncé à la suite du nom individuel s'appelle sheredzo »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
