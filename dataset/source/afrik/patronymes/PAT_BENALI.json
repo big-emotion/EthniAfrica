@@ -90,6 +90,14 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Compte rendu scientifique consulté le 2 septembre 2026. Il décrit la normalisation tunisienne ayant parfois soudé Ben Ali en Benali ; il ne retrace aucune généalogie."
+    },
+    {
+      "sourceKey": "qui-es-tu-j-ai-ete-dit-de-la-destruction-de-la-f",
+      "title": "Qui es-tu ? J'ai été dit. De la destruction de la filiation dans l'État civil d'Algérie ou éléments d'un onomacide sémantique",
+      "url": "https://insaniyat.crasc.dz/en/article/qui-es-tu-jai-ete-dit-de-la-destruction-de-la-filiation-dans-letat-civil-dalgerie-ou-elements-dun-onomacide-semantique",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Insaniyat, 4(10), 2000, p. 79-87, lu en ligne le 13 octobre 2026. L'article dit qu'en Tunisie c'est le décret beylical du 30 juin 1925 qui a commencé la réforme de l'état civil, sans supprimer la nomination traditionnelle, par exemple « Ali ben Ahmed ben Amor Bouderbala ». La version en ligne ne marque pas les pages de l'imprimé."
     }
   ],
   "gaps": [
@@ -236,7 +244,7 @@
               "to": null,
               "label": "Origine non datée"
             },
-            "statement": "Une contribution communautaire interprète Benali comme « fils d’Ali ». Cette lecture morphologique plausible est conservée au niveau non vérifié : la page ne démontre ni la fixation du patronyme ni une filiation commune.",
+            "statement": "Une contribution communautaire interprète Benali comme « fils d’Ali ». Cette explication par la forme du mot, plausible, est conservée au niveau non vérifié : la page ne démontre ni la fixation du patronyme ni une filiation commune.",
             "claimStatus": "claimed",
             "sources": [
               {

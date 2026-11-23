@@ -13,7 +13,7 @@
       "attestations": [
         {
           "countryId": "COD",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["historical-dictionary-of-the-democratic-republic"]
         }
       ]
     }
@@ -31,7 +31,7 @@
     {
       "countryId": "COD",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["historical-dictionary-of-the-democratic-republic"]
     }
   ],
   "alliances": [],
@@ -46,32 +46,44 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "historical-dictionary-of-the-democratic-republic",
+      "title": "Historical Dictionary of the Democratic Republic of the Congo, Third Edition",
+      "url": "https://shcas.shnu.edu.cn/_upload/article/files/dc/3d/863da74f4f1dbe922dc9702d9de9/a6f95c07-9183-4c78-a7c4-ec5ea565507a.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Lanham, Scarecrow Press, 2010 ; copie non officielle, hébergée par un site universitaire. Page 50, entrée « Bemba, Gombo Jean-Pierre » (né à Bokada, province de l'Équateur, « son of Jean Saolona Bemba ») ; page 51, entrée « Bemba, Saolona Jean » (« From Équateur Province »). Lu le 13 octobre 2026."
     }
   ],
   "gaps": [
     {
       "fieldPath": "alliances",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les recherches « Bemba clan Équateur », « Bemba patronyme Congo origine » et le dictionnaire historique de Kisangani et Bobb (2010) n'ont fourni aucune paire nommée et sourcée reliant Bemba à un autre nom documenté ici."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les recherches « Bemba clan Équateur », « Bemba patronyme Congo origine » et le dictionnaire historique de Kisangani et Bobb (2010) n'ont fourni aucune fonction sociale héréditaire attachée au nom."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les recherches « Bemba clan Équateur », « Bemba patronyme Congo origine » et le dictionnaire historique de Kisangani et Bobb (2010) n'ont fourni les noms de Jean Saolona Bemba et de son fils Jean-Pierre Bemba ; la source ne donne pas de dates de décès, et le second est vivant. Aucun porteur décédé n'est donc ajouté."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Bemba désigne aussi un peuple, présent notamment en RD Congo. Les sources lues ne disent pas si le nom de famille de l'Équateur a un lien avec lui ; nous ne les confondons pas."
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Les recherches « Bemba clan Équateur », « Bemba patronyme Congo origine » et le dictionnaire historique de Kisangani et Bobb (2010) n'ont fourni aucune règle de transmission du nom. Le dictionnaire cite seulement un père et son fils portant le même nom."
+    },
+    {
+      "fieldPath": "origin",
+      "reason": "Les recherches « Bemba clan Équateur », « Bemba patronyme Congo origine » et le dictionnaire historique de Kisangani et Bobb (2010) n'ont fourni ni étymologie ni récit d'origine propre au nom de famille Bemba."
     },
     {
       "fieldPath": "peoples",
-      "reason": "Nos fiches ne permettent pas encore de relier le nom Bemba à un peuple en République démocratique du Congo. Nous n'avons pas encore consulté de source consacrée à ce nom. Bemba désigne aussi un peuple présent en République démocratique du Congo. Ce seul rapprochement ne permet pas d'expliquer le nom de famille."
+      "reason": "Le dictionnaire de Kisangani et Bobb situe la famille Bemba dans la province de l'Équateur sans nommer de peuple. Le peuple bemba porte le même mot, mais aucune source lue ne relie les deux."
     }
   ],
   "nameHistory": {

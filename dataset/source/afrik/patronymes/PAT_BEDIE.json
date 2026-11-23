@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Fiche recherchée selon le protocole anthroponymique. Les affirmations sont limitées aux sources propres à Bédié ; les lacunes consignent les recherches restées sans résultat."
+    "directives": "Fiche approfondie selon docs/runbooks/anthroponym-fiche-research.md. Le rattachement au peuple baoulé reste une hypothèse tant qu'une source dédiée ne l'établit pas pour ce nom."
   },
   "id": "PAT_BEDIE",
   "nameMain": "Bédié",
@@ -37,8 +37,8 @@
   "peoples": [
     {
       "peopleId": "PPL_BAOULE",
-      "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "status": "supposed",
+      "sourceRefs": ["burkina24-deces-bedie-2023"]
     }
   ],
   "countries": [
@@ -74,6 +74,14 @@
       "tier": "official",
       "source_kind": "government",
       "notes": "Communiqué officiel signé par le président Alassane Ouattara le 2 août 2023 et consulté dans son PDF intégral. Il atteste la graphie BEDIE, la qualité d'ancien président ivoirien et le décès d'Henri Konan Bédié le 1er août 2023 ; il n'établit pas l'étymologie du nom."
+    },
+    {
+      "sourceKey": "burkina24-deces-bedie-2023",
+      "title": "Côte d'Ivoire : L'ancien Président Henri Konan Bédié s'en est allé à l'âge de 89 ans",
+      "url": "https://burkina24.com/?p=334123",
+      "tier": "unverified",
+      "source_kind": "press",
+      "notes": "Burkina24, article du 1er août 2023 signé Kouamé L.-Ph. Arnaud, lu en entier le 8 novembre 2026. Il écrit que Henri Konan Bédié « est né le 5 mai 1934 à Daoukro dans le centre de la Côte d'Ivoire » et qu'il est mort le 1er août 2023 à Abidjan après avoir été évacué de Daoukro, « son village natal ». L'article ne mentionne ni le peuple baoulé ni l'origine du nom."
     }
   ],
   "gaps": [
@@ -100,6 +108,56 @@
     {
       "fieldPath": "designatedSocialUnit",
       "reason": "Les sources consultées attestent un nom individuel dans l'état civil sans permettre de déterminer si son origine renvoie à un lignage, un clan ou une autre unité sociale."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Les recherches « Bédié Baoulé », « Henri Konan Bédié ethnie » et l'article de Burkina24 situent le porteur connu à Daoukro, au centre de la Côte d'Ivoire, sans écrire que le nom Bédié est un nom baoulé. Le rattachement au peuple baoulé reste donc une hypothèse, faute d'une source ouverte et lue qui l'établisse pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bédié est celui d'une famille de Côte d'Ivoire, connue surtout par Henri Konan Bédié, président du pays, mort le 1er août 2023. Le communiqué officiel annonçant son décès écrit son nom sans accent, BEDIE.",
+    "names": [
+      {
+        "nameText": "Bédié",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille ivoirien, écrit aussi Bedie dans les textes officiels.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Écrit en 2023"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le communiqué de la présidence de la République de Côte d'Ivoire, signé par Alassane Ouattara le 2 août 2023, annonce le décès d'Henri Konan Bédié le 1er août 2023 et écrit son nom BEDIE, sans accent. Le journal Burkina24 le dit né à Daoukro le 5 mai 1934.",
+            "sources": [
+              {
+                "title": "Communiqué de la Présidence de la République — décès du Président Henri Konan Bédié",
+                "author": "Présidence de la République de Côte d'Ivoire",
+                "year": 2023,
+                "url": "https://www.presidence.ci/wp-content/uploads/2023/08/Communique-de-la-Presidence-Deces-du-President-henri-Konan-BEDIE-1.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Communiqué officiel signé par le président Alassane Ouattara le 2 août 2023 et consulté dans son PDF intégral. Il atteste la graphie BEDIE, la qualité d'ancien président ivoirien et le décès d'Henri Konan Bédié le 1er août 2023 ; il n'établit pas l'étymologie du nom."
+              },
+              {
+                "title": "Côte d'Ivoire : L'ancien Président Henri Konan Bédié s'en est allé à l'âge de 89 ans",
+                "author": "Kouamé L.-Ph. Arnaud",
+                "year": 2023,
+                "url": "https://burkina24.com/?p=334123",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Burkina24, article du 1er août 2023 signé Kouamé L.-Ph. Arnaud, lu en entier le 8 novembre 2026. Il écrit que Henri Konan Bédié « est né le 5 mai 1934 à Daoukro dans le centre de la Côte d'Ivoire » et qu'il est mort le 1er août 2023 à Abidjan après avoir été évacué de Daoukro, « son village natal ». L'article ne mentionne ni le peuple baoulé ni l'origine du nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -13,7 +13,7 @@
       "attestations": [
         {
           "countryId": "ETH",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["dictionary-of-american-family-names-2e-ed-bekele"]
         }
       ]
     }
@@ -29,15 +29,18 @@
   "peoples": [
     {
       "peopleId": "PPL_AMHARA",
-      "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "status": "supposed",
+      "sourceRefs": ["dictionary-of-american-family-names-2e-ed-bekele"]
     }
   ],
   "countries": [
     {
       "countryId": "ETH",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "names-of-persons-national-usages-for-entry-in-ca",
+        "meyer-treis-2021-ethiopian-authors"
+      ]
     }
   ],
   "alliances": [],
@@ -60,6 +63,38 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Entrée communautaire consultée le 2 septembre 2026 : elle donne la graphie amharique በቀለ et la glose « grow, flourish ». La page ne documente pas une lignée. Les versions française et anglaise de Wikipédia n'ont été contrôlées que comme pistes et ne sont pas citées."
+    },
+    {
+      "sourceKey": "names-of-persons-national-usages-for-entry-in-ca",
+      "title": "Names of Persons: National Usages for Entry in Catalogues",
+      "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+      "tier": "referenced",
+      "source_kind": "repository",
+      "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lue dans le PDF de l'IFLA le 13 octobre 2026. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
+    },
+    {
+      "sourceKey": "dictionary-of-american-family-names-2e-ed-bekele",
+      "title": "Dictionary of American Family Names, 2e éd. — Bekele",
+      "url": "https://www.ancestry.com/last-name-meaning/bekele?geo-lang=en",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 dans la traduction française que le site affiche. La notice dit : nom éthiopien, du nom personnel Bekele interprété comme « il a prospéré » en amharique. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+    },
+    {
+      "sourceKey": "comparative-dictionary-of-geez-classical-ethiopi",
+      "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
+      "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu le 13 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 101, entrée sur les plantes (arabe baqala, « grow (plants) ») : le tigrigna bägʷälä y est glosé « germinate, sprout », et l'amharique bäqqälä figure parmi les mots apparentés."
+    },
+    {
+      "sourceKey": "meyer-treis-2021-ethiopian-authors",
+      "title": "How to quote Ethiopian authors in linguistic publications",
+      "url": "https://journals.sub.uni-hamburg.de/hup1/afrikaunduebersee/article/download/222/168/710",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Ronny Meyer et Yvonne Treis, « How to quote Ethiopian authors in linguistic publications », Afrika und Übersee 94, 2021, p. 80-90 (CNRS-LLACAN ; accès libre, licence CC BY 4.0), lu le 8 novembre 2026. Section 2 : « the concept of a family name is unknown. A person is identified by their given name, which is followed by their father's name (patronym) and [...] by their paternal grandfather's name (avonym) » ; « The father's or grandfather's names are not family names but simply given names of the respective individuals ». La note 4 cite le coureur Kenenisa Bekele, qui portait en compétition le nom de son père plutôt que son nom personnel ; il est vivant et n'est pas ajouté comme porteur."
     }
   ],
   "gaps": [
@@ -73,7 +108,7 @@
     },
     {
       "fieldPath": "peoples",
-      "reason": "Les recherches « Bekele anthroponymie », « Bekele onomastique », « Bekele etymology » et les résultats des catalogues Persée, OpenEdition, Oxford Academic et des dépôts universitaires éthiopiens n'ont livré aucun travail savant consacré à cette fiche. La source propre au nom ne démontre pas une association exclusive avec le peuple indiqué ; ce rattachement reste au niveau non vérifié."
+      "reason": "Le dictionnaire de Hanks dit que Bekele est un nom amharique, au sens de « il a prospéré ». Il ne dit pas que seuls des Amhara le portent, et aucune source lue ne l'établit : le rattachement au peuple amhara reste une hypothèse."
     },
     {
       "fieldPath": "alliances",
@@ -90,10 +125,6 @@
     {
       "fieldPath": "homonyms",
       "reason": "Les recherches exactes « Bekele homonym surname », « Bekele homonyme patronyme » et les variantes graphiques de la fiche n'ont pas établi deux origines distinctes et documentées pour la même forme."
-    },
-    {
-      "fieldPath": "countries",
-      "reason": "La source propre au nom n'a pas confirmé le pays où il est porté ; les recherches « Bekele » avec Ethiopia, Eritrea et les variantes de la fiche n'ont pas livré de registre officiel exploitable."
     }
   ],
   "nameHistory": {
@@ -136,6 +167,16 @@
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
                 "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 dans la traduction française que le site affiche. La notice dit : nom éthiopien, du nom personnel Bekele interprété comme « il a prospéré » en amharique. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              },
+              {
+                "title": "How to quote Ethiopian authors in linguistic publications",
+                "author": "Ronny Meyer et Yvonne Treis",
+                "year": 2021,
+                "url": "https://journals.sub.uni-hamburg.de/hup1/afrikaunduebersee/article/download/222/168/710",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80-81",
+                "notes": "Ronny Meyer et Yvonne Treis, « How to quote Ethiopian authors in linguistic publications », Afrika und Übersee 94, 2021, p. 80-90 (CNRS-LLACAN ; accès libre, licence CC BY 4.0), lu le 8 novembre 2026. Section 2 : « the concept of a family name is unknown. A person is identified by their given name, which is followed by their father's name (patronym) and [...] by their paternal grandfather's name (avonym) » ; « The father's or grandfather's names are not family names but simply given names of the respective individuals ». La note 4 cite le coureur Kenenisa Bekele, qui portait en compétition le nom de son père plutôt que son nom personnel ; il est vivant et n'est pas ajouté comme porteur."
               }
             ]
           },

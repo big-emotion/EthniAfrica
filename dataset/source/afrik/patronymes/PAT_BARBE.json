@@ -68,6 +68,14 @@
       "tier": "referenced",
       "source_kind": "linguistic_reference",
       "notes": "Patrick Hanks et al., Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry. La notice distingue plusieurs formations françaises ; aucune n'est sélectionnée sans archive de lignée seychelloise."
+    },
+    {
+      "sourceKey": "mahe-seychelles-mariages-table-des-patronymes-en",
+      "title": "Mahé [Seychelles] : mariages, table des patronymes en BAR",
+      "url": "https://cgmrgenealogie.org/tab_mari.php/Mah%C3%A9+%5BSEYCHELLES%5D/_BAR",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Base de données d'une association de généalogie, qui dépouille les tables et actes d'état civil, les registres paroissiaux et les registres d'inhumation. Lue le 18 octobre 2026. Le patronyme BARBE y figure dans les mariages de Mahé pour la période 1840-1904, avec 21 et 20 mentions dans deux colonnes, « Intervenant 1 » et « Intervenant 2 », que la page ne définit pas. Deux lignes notent des personnes inscrites BARBEIN (1896) et BARBIN (1899) qui ont signé « BARBE ». La table, en capitales, n'écrit pas d'accent. Le détail des actes n'a pas été lu."
     }
   ],
   "gaps": [

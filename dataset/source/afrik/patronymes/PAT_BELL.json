@@ -69,6 +69,22 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Article de Georges Balandier, Cahiers d'Études africaines, vol. 15, no 59, 1975, p. 361-380, consulté intégralement. Il nomme « Bona jo dit Bell » parmi les quatre unités principales duala, décrit la patrilignée dominante et la rivalité entre Bell et Akwa. Nous n'avons pas de fiche consacrée à Akwa, donc cette relation n'est pas ajoutée comme alliance structurée."
+    },
+    {
+      "sourceKey": "treaty-of-protection-with-chiefs-of-cameroon-coa",
+      "title": "Treaty of Protection with Chiefs of Cameroon Coast (1884), Black Central Europe",
+      "url": "https://blackcentraleurope.com/sources/1850-1914/treaty-of-protection-with-chiefs-of-cameroon-coast-1884/",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Page consultée le 13 octobre 2026. Le traité, daté du 12 juillet 1884, est signé à Douala ; la liste des signatures porte « King Bell » et « King Aqua »."
+    },
+    {
+      "sourceKey": "notes-on-africa-particularly-those-parts-which-a",
+      "title": "Notes on Africa, particularly those parts which are situated between Cape Verd and the River Congo",
+      "url": "https://archive.org/details/india.history.resource.90359",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Londres, Sherwood, Neely et Jones, 1819. Lu le 13 octobre 2026 sur l'exemplaire numérisé de l'Asiatic Society of Bombay, déposé sur archive.org. Chapitre XVIII, page 322, à propos de Cameroons : « A native, who calls himself King Bell, has the leading power ». L'auteur ne dit pas d'où vient le mot Bell."
     }
   ],
   "gaps": [
@@ -78,15 +94,15 @@
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "la recherche web combinant « Bell », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « Économie, société et pouvoir chez les Duala anciens » n'ont établi aucune fonction sociale ou professionnelle héréditaire propre au nom Bell."
+      "reason": "la recherche web combinant « Bell », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et l'examen de « Économie, société et pouvoir chez les Duala anciens » n'ont établi aucune fonction sociale ou professionnelle héréditaire propre au nom Bell."
     },
     {
       "fieldPath": "bearers",
-      "reason": "la recherche web combinant « Bell », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « obituary », et la lecture de « Économie, société et pouvoir chez les Duala anciens », n'a identifié aucun porteur décédé documentable sans ambiguïté. Les personnes vivantes seulement attestées par les sources ne sont pas ajoutées."
+      "reason": "la recherche web combinant « Bell », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « obituary », et l'examen de « Économie, société et pouvoir chez les Duala anciens », n'a identifié aucun porteur décédé documentable sans ambiguïté. Les personnes vivantes seulement attestées par les sources ne sont pas ajoutées."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "la recherche web combinant « Bell », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « homonyme », et la lecture de « Économie, société et pouvoir chez les Duala anciens », n'ont pas établi de lignée homonyme d'origine distincte."
+      "reason": "la recherche web combinant « Bell », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « homonyme », et l'examen de « Économie, société et pouvoir chez les Duala anciens », n'ont pas établi de lignée homonyme d'origine distincte."
     }
   ],
   "nameHistory": {
