@@ -130,6 +130,27 @@
         "url": null,
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Glottolog 5.3 — Northern Betsimisaraka Malagasy",
+        "url": "https://glottolog.org/resource/languoid/id/nort2890",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Base de référence linguistique, version 5.3, lue le 8 novembre 2026. Code ISO 639-3 bmm ; vitalité 6a (vigoureuse) selon Ethnologue 2025."
+      },
+      {
+        "title": "Glottolog 5.3 — Southern Betsimisaraka Malagasy",
+        "url": "https://glottolog.org/resource/languoid/id/sout2920",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Base de référence linguistique, version 5.3, lue le 8 novembre 2026. Code ISO 639-3 bzc ; vitalité 6a (vigoureuse) selon Ethnologue 2025."
+      },
+      {
+        "title": "History of Madagascar, vol. I (chapitre sur les peuples de l'île, p. 118-121)",
+        "url": "https://archive.org/details/historyofmadagas01elli",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "William Ellis, Londres, Fisher, Son & Co., 1838 ; texte missionnaire du XIXe siècle, lu dans la numérisation d'Internet Archive le 8 novembre 2026. Les découpages et les parentés qu'il avance sont ceux d'un observateur extérieur. Passage : « the country of the Betsimisaraka spreads along the eastern shore till it joins that of the Sakalavas of the north » ; le pays des Betanimena commence au Mananjary et finit à Tany-fotsy (p. 121) ; Ellis range les Betanimena et les Betsimisaraka dans une même division, estimée à un million de personnes (p. 114)."
       }
     ]
   },

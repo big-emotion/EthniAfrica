@@ -115,6 +115,20 @@
         "url": "https://joshuaproject.net/people_groups/15284",
         "tier": "unverified",
         "source_kind": "missionary_database"
+      },
+      {
+        "title": "Glottolog 5.3 — West Malagasy Sakalava",
+        "url": "https://glottolog.org/resource/languoid/id/saka1291",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Base de référence linguistique, version 5.3, lue le 8 novembre 2026. Code ISO 639-3 skg ; vitalité 6a (vigoureuse) selon Ethnologue 2025."
+      },
+      {
+        "title": "History of Madagascar, vol. I (chapitre sur les peuples de l'île, p. 118-121)",
+        "url": "https://archive.org/details/historyofmadagas01elli",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "William Ellis, Londres, Fisher, Son & Co., 1838 ; texte missionnaire du XIXe siècle, lu dans la numérisation d'Internet Archive le 8 novembre 2026. Les découpages et les parentés qu'il avance sont ceux d'un observateur extérieur. Passage : « the Sakalavas ... are divided into two great sections. North and South Sakalavas : the first includes the inhabitants of Iboina in the north, and Ambongo in the north-west ; the latter, those of Menabe in the west and south-west » (p. 119)."
       }
     ]
   },

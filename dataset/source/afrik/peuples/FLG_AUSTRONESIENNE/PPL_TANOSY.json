@@ -115,6 +115,27 @@
         "url": "https://www.britannica.com/place/Madagascar/Ethnic-groups",
         "tier": "unverified",
         "source_kind": "encyclopedia"
+      },
+      {
+        "title": "Glottolog 5.3 — Tanosy Malagasy",
+        "url": "https://glottolog.org/resource/languoid/id/tano1246",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Base de référence linguistique, version 5.3, lue le 8 novembre 2026. Code ISO 639-3 txy ; vitalité 6a (vigoureuse) selon Ethnologue 2025."
+      },
+      {
+        "title": "History of Madagascar, vol. I (chapitre sur les peuples de l'île, p. 118-121)",
+        "url": "https://archive.org/details/historyofmadagas01elli",
+        "tier": "referenced",
+        "source_kind": "archive",
+        "notes": "William Ellis, Londres, Fisher, Son & Co., 1838 ; texte missionnaire du XIXe siècle, lu dans la numérisation d'Internet Archive le 8 novembre 2026. Les découpages et les parentés qu'il avance sont ceux d'un observateur extérieur. Passage : « The Tanosy seem to be a branch of the southern Betsileo, blended with the Betanimena » (p. 120). Ellis écrit de loin et avec prudence (« seem ») ; cette parenté reste une hypothèse extérieure."
+      },
+      {
+        "title": "Rakibolana malagasy, article tanosy",
+        "url": "https://malagasyword.org/bins/teny2/tanosy",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Dictionnaire monolingue malgache de Régis Rajemisa-Raolison (Ambozontany, 1985), lu dans le Malagasy Dictionary and Encyclopedia en ligne le 8 novembre 2026. Passage : foko lehibe de l'extrême sud-est ; le dictionnaire dit que les Antanosy « voalaza ho taranaky ny Arabo » (on dit qu'ils descendent d'Arabes), qu'ils vivent entre Masihanaka et Mandrare, avec Tolañaro pour ville principale. Affirmation rapportée, non démontrée."
       }
     ]
   },
