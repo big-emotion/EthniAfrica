@@ -120,6 +120,33 @@
         "title": "Perrois, Louis – Ambete reliquary figures (Eliot Elisofon)",
         "url": null,
         "tier": "needs_review"
+      },
+      {
+        "title": "Glottolog — Mbere-Mbamba (mbete)",
+        "author": "Glottolog (Max Planck Institute for Evolutionary Anthropology)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/mber1257",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche lue le 8 novembre 2026 : la langue, de code ISO mdt, est parlée au Congo et au Gabon. Glottolog la nomme Mbere-Mbamba et cite parmi ses autres noms Mbede, Mbere et Mbété."
+      },
+      {
+        "title": "Obaa (mbete), liste de mots, Automated Similarity Judgment Program",
+        "author": "Cecil H. Brown, Søren Wichmann et collaborateurs",
+        "year": null,
+        "url": "https://asjp.clld.org/languages/OBAA",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche lue le 8 novembre 2026 : la liste de mots « Obaa » est rattachée à la langue mbete (code mdt, groupe B.61 de Guthrie selon Ethnologue). La page donne 151 500 locuteurs et renvoie à la thèse de Lane (1989) sur le multilinguisme chez les Mbete du nord du Congo."
+      },
+      {
+        "title": "Reliquary figure, accession 2002.456.17",
+        "author": "The Metropolitan Museum of Art",
+        "year": null,
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/319234",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Fiche lue le 8 novembre 2026 dans les données ouvertes du musée : culture « Kota peoples, Mbete group », datée du XIXe siècle, venue du Gabon ou de la République du Congo. Le musée range donc les Mbete parmi les peuples kota, ce que contestent les travaux cités dans cette fiche."
       }
     ]
   },
