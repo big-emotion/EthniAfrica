@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useId, useState } from "react";
+import { Fragment, useId, useState, type ReactNode } from "react";
 
 import { SearchFeedBlock } from "@/components/search/feed/SearchFeedBlock";
 import { SearchFeedEvidenceAction } from "@/components/search/feed/SearchFeedEvidenceAction";
@@ -42,6 +42,8 @@ export interface AppellationsBlockProps {
   language?: Language;
   /** Heading of each subject's group, keyed by `subjectId`; shown when several groups exist. */
   groupLabels?: Readonly<Record<string, string>>;
+  /** Drawn under each subject's group: its comment footer (REQ-212). */
+  groupFooter?: (subjectId: string) => ReactNode;
   className?: string;
 }
 
@@ -281,6 +283,7 @@ export function AppellationsBlock({
   subtitle,
   language = "fr",
   groupLabels,
+  groupFooter,
   className,
 }: AppellationsBlockProps) {
   const copy = nameAnswerCopy[language];
@@ -298,16 +301,18 @@ export function AppellationsBlock({
         subtitleClassName="hidden min-[1200px]:block"
       />
       {groups.map(({ subjectId, forms: group }) => (
-        <AppellationGroup
-          key={subjectId ?? "lead"}
-          forms={group}
-          language={language}
-          label={
-            groups.length > 1 && subjectId
-              ? groupLabels?.[subjectId]
-              : undefined
-          }
-        />
+        <Fragment key={subjectId ?? "lead"}>
+          <AppellationGroup
+            forms={group}
+            language={language}
+            label={
+              groups.length > 1 && subjectId
+                ? groupLabels?.[subjectId]
+                : undefined
+            }
+          />
+          {subjectId ? groupFooter?.(subjectId) : null}
+        </Fragment>
       ))}
     </SearchFeedBlock>
   );

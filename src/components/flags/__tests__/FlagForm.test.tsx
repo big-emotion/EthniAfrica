@@ -52,6 +52,7 @@ function renderForm(
 }
 
 const REASON_LABEL = /qu'est-ce qui ne va pas/i;
+const AGE_LABEL = "J'ai 15 ans ou plus";
 
 /**
  * Fill the one required field, optionally open a disclosure and fill it, then
@@ -383,6 +384,9 @@ describe("FlagForm submission and anti-bot lifecycle", () => {
     expect(onSubmit).toHaveBeenCalledWith(
       expect.not.objectContaining({ reporter_email: expect.anything() })
     );
+    expect(onSubmit).toHaveBeenCalledWith(
+      expect.not.objectContaining({ age_confirmed: expect.anything() })
+    );
   });
 
   // @req REQ-012
@@ -394,6 +398,7 @@ describe("FlagForm submission and anti-bot lifecycle", () => {
     fireEvent.change(screen.getByLabelText("Votre adresse e-mail"), {
       target: { value: "  lectrice@example.org  " },
     });
+    fireEvent.click(screen.getByLabelText(AGE_LABEL));
     solve();
 
     fireEvent.click(screen.getByRole("button", { name: "Envoyer" }));
@@ -434,6 +439,7 @@ describe("FlagForm submission and anti-bot lifecycle", () => {
     fireEvent.change(screen.getByLabelText("Votre adresse e-mail"), {
       target: { value: "lectrice@example.org" },
     });
+    fireEvent.click(screen.getByLabelText(AGE_LABEL));
     solve();
 
     fireEvent.click(screen.getByRole("button", { name: "Envoyer" }));
@@ -441,6 +447,62 @@ describe("FlagForm submission and anti-bot lifecycle", () => {
     expect(
       await screen.findByText(/confirmez votre adresse depuis le message/i)
     ).toBeInTheDocument();
+  });
+
+  // The API refuses an address without age_confirmed (moderation charter §2,
+  // REQ-212): the address opens a public reader account, floor fifteen.
+  // @req REQ-212
+  it("asks for the age only once an address is typed", () => {
+    renderWithVerification();
+    expect(screen.queryByLabelText(AGE_LABEL)).not.toBeInTheDocument();
+
+    fireEvent.change(screen.getByLabelText("Votre adresse e-mail"), {
+      target: { value: "lectrice@example.org" },
+    });
+
+    expect(screen.getByLabelText(AGE_LABEL)).not.toBeChecked();
+  });
+
+  // @req REQ-212
+  it("refuses an address without the age confirmation, and says why", async () => {
+    const { onSubmit, solve } = renderWithVerification();
+    fireEvent.change(screen.getByLabelText(REASON_LABEL), {
+      target: { value: validReason() },
+    });
+    fireEvent.change(screen.getByLabelText("Votre adresse e-mail"), {
+      target: { value: "lectrice@example.org" },
+    });
+    solve();
+
+    fireEvent.click(screen.getByRole("button", { name: "Envoyer" }));
+
+    expect(
+      await screen.findByText(
+        "Pour laisser une adresse, confirmez que vous avez 15 ans ou plus."
+      )
+    ).toBeInTheDocument();
+    expect(onSubmit).not.toHaveBeenCalled();
+  });
+
+  // @req REQ-212
+  it("sends age_confirmed with the address, and never without one", async () => {
+    const { onSubmit, solve } = renderWithVerification();
+    fireEvent.change(screen.getByLabelText(REASON_LABEL), {
+      target: { value: validReason() },
+    });
+    fireEvent.change(screen.getByLabelText("Votre adresse e-mail"), {
+      target: { value: "lectrice@example.org" },
+    });
+    fireEvent.click(screen.getByLabelText(AGE_LABEL));
+    solve();
+
+    fireEvent.click(screen.getByRole("button", { name: "Envoyer" }));
+
+    await waitFor(() => expect(onSubmit).toHaveBeenCalledOnce());
+    expect(vi.mocked(onSubmit).mock.calls[0][0]).toMatchObject({
+      reporter_email: "lectrice@example.org",
+      age_confirmed: true,
+    });
   });
 
   // @req REQ-012

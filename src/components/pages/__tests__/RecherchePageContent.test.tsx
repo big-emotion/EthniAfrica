@@ -98,7 +98,14 @@ const mockFicheFetch = vi.fn<
 >(async () => new Response(JSON.stringify({ data: {} }), { status: 200 }));
 const FICHE_PATH =
   /^\/api\/v2\/(peoples|countries|languages|language-families|patronymes)\//;
+// The page's one read of its block comments (REQ-212), kept apart likewise.
+const mockCommentsFetch = vi.fn(
+  async () => new Response(JSON.stringify({ data: [] }), { status: 200 })
+);
 global.fetch = vi.fn((input: RequestInfo | URL, init?: RequestInit) => {
+  if (String(input).startsWith("/api/v2/comments?")) {
+    return mockCommentsFetch();
+  }
   const target = String(input).startsWith("/api/v2/search/companions?")
     ? mockCompanionFetch
     : FICHE_PATH.test(String(input))
@@ -877,10 +884,17 @@ describe("RecherchePageContent", () => {
         name: nameAnswerCopy.fr.invitationAction,
       });
       expect(actions.length).toBeGreaterThan(0);
-      for (const action of actions) {
-        expect(action).toHaveAttribute("data-flag-kind", "contribution");
-      }
     });
+    // Brief 21: on the result page it opens the comment form, filed against
+    // the typed name.
+    fireEvent.click(
+      screen.getAllByRole("button", {
+        name: nameAnswerCopy.fr.invitationAction,
+      })[0]
+    );
+    expect(
+      await screen.findByRole("button", { name: "Envoyer mon commentaire" })
+    ).toBeInTheDocument();
   });
 
   // An unanswered request is not a silence in the corpus. The confession names
