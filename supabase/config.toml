@@ -20,12 +20,13 @@ pop3_port = 54326
 enabled = true
 
 # -------------------------------------------------------------------
-# Auth — one magic link, to an allowlisted address, and nothing else
+# Auth — magic links only, for moderators and readers
 # -------------------------------------------------------------------
-# There are no public accounts: reporting costs none (moderation charter §2),
-# and the only sign-in surface is /fr/admin/connexion, which mails a link to an
-# address on `admin_allowlist`. So there is no provider to federate with and no
-# sign-up to configure.
+# Two sign-ins, one mechanism. Moderators sign in at /fr/admin/connexion, which
+# mails a link to an address on `admin_allowlist`. Readers get an account
+# (/fr/compte, REQ-213) from the link that publishes their first comment, and
+# sign back in at /fr/compte/connexion. Neither has a password or a provider to
+# federate with, and a reader session authorizes nothing in the console.
 [auth]
 enabled = true
 
@@ -53,9 +54,16 @@ site_url = "https://recette.africatlas.com"
 # Production is self-hosted and reads `ADDITIONAL_REDIRECT_URLS` from
 # `/home/ubuntu/supabase/docker/.env` instead — see
 # docs/runbooks/moderation-access.md.
+#
+# The reader account's confirmation page is the second path. The send-email
+# hook recognises a reader mail by it, so a redirect GoTrue replaced with
+# `site_url` would send the reader the moderators' mail. `**` lets the query
+# string (`?commentaire=<slug>`) match.
 additional_redirect_urls = [
   "http://localhost:3000/api/auth/callback",
   "https://recette.africatlas.com/api/auth/callback",
+  "http://localhost:3000/fr/compte/confirmer**",
+  "https://recette.africatlas.com/fr/compte/confirmer**",
 ]
 jwt_expiry = 3600
 enable_refresh_token_rotation = true
@@ -64,7 +72,10 @@ refresh_token_reuse_interval = 10
 [auth.email]
 # The allowlist is the gate, so an authorized person need not have registered
 # first: `signInWithOtp` is called with `shouldCreateUser: true` and the account
-# it creates carries no privilege of its own.
+# it creates carries no privilege of its own. A reader's first comment creates
+# one the same way; the reader sign-in never does (`shouldCreateUser: false`).
+# Confirmations stay on: with them off, anyone could hold a session for a
+# moderator's address.
 enable_signup = true
 enable_confirmations = true
 double_confirm_changes = true

@@ -206,25 +206,42 @@ async function visibleRepliesOf(
   return byFlag;
 }
 
-/**
- * Publish what a reader wrote before confirming their address.
- *
- * Runs once the confirmation link has signed them in. Only flags still
- * private are touched, so following the same link twice publishes nothing
- * new and never moves an existing publication date.
- */
-// @req REQ-212
-export async function publishPendingFlagsForEmail(
-  email: string,
-  userId: string
-): Promise<{ published: number }> {
-  const supabase = createAdminClient();
-  const address = email.trim();
+interface PendingFlagWithContact {
+  flag: {
+    id: string;
+    public_slug: string;
+    block_key: string | null;
+    reason_text: string | null;
+  };
+  contactEmail: string | null;
+}
 
-  const { data: contacts, error: contactError } = await supabase
+/**
+ * A comment still waiting for its address, with the address it carries.
+ * Null when the slug names nothing, or names a comment already published.
+ */
+async function findPendingFlagWithContact(
+  slug: string
+): Promise<PendingFlagWithContact | null> {
+  const supabase = createAdminClient();
+  const { data: flag, error: flagError } = await supabase
+    .from("flags")
+    .select("id, public_slug, block_key, reason_text, published_at")
+    .eq("public_slug", slug)
+    .is("published_at", null)
+    .maybeSingle();
+
+  if (flagError) {
+    logger.error("Failed to read a pending comment", flagError);
+    throw new Error(`Failed to read a pending comment: ${flagError.message}`);
+  }
+  if (!flag) return null;
+
+  const { data: contact, error: contactError } = await supabase
     .from("flag_reporter_contacts")
-    .select("flag_id")
-    .eq("email", address);
+    .select("email")
+    .eq("flag_id", flag.id)
+    .maybeSingle();
 
   if (contactError) {
     logger.error("Failed to read reporter contacts", contactError);
@@ -233,39 +250,118 @@ export async function publishPendingFlagsForEmail(
     );
   }
 
-  const flagIds = (contacts ?? []).map(
-    (contact: { flag_id: string }) => contact.flag_id
-  );
-  if (flagIds.length === 0) return { published: 0 };
+  return {
+    flag,
+    contactEmail: (contact as { email: string } | null)?.email ?? null,
+  };
+}
 
+// `flag_reporter_contacts.email` is citext; compared here, after the read,
+// so the rule does not depend on how the column's operator resolves.
+function sameAddress(a: string | null, b: string): boolean {
+  return a != null && a.trim().toLowerCase() === b.trim().toLowerCase();
+}
+
+/**
+ * What a reader is about to publish, for the confirmation page to show above
+ * its button. A private read: the text of a comment nobody has published yet,
+ * never its address.
+ */
+// @req REQ-213
+export async function findPendingComment(slug: string): Promise<{
+  public_slug: string;
+  block_key: string | null;
+  body: string | null;
+} | null> {
+  const pending = await findPendingFlagWithContact(slug);
+  if (!pending) return null;
+  return {
+    public_slug: pending.flag.public_slug,
+    block_key: pending.flag.block_key,
+    body: pending.flag.reason_text,
+  };
+}
+
+/**
+ * Publish the one comment a confirmation link was issued for.
+ *
+ * Only that comment, and only while it is still private and carries the
+ * address the reader has just proved they hold. Publishing every pending
+ * comment of an address would let anyone who typed a stranger's address
+ * under a comment have it published, and signed, on the stranger's next
+ * confirmation. Following the same link twice publishes nothing new and
+ * never moves the publication date.
+ */
+// @req REQ-212
+// @req REQ-213
+export async function publishPendingFlagForEmail(
+  slug: string,
+  email: string,
+  userId: string
+): Promise<{ published: boolean }> {
+  const pending = await findPendingFlagWithContact(slug);
+  if (!pending || !sameAddress(pending.contactEmail, email)) {
+    return { published: false };
+  }
+
+  const supabase = createAdminClient();
   const now = new Date().toISOString();
   const { data: published, error: publishError } = await supabase
     .from("flags")
     .update({ published_at: now, contributor_id: userId })
-    .in("id", flagIds)
+    .eq("id", pending.flag.id)
     .is("published_at", null)
     .select("id");
 
   if (publishError) {
-    logger.error("Failed to publish pending comments", publishError);
+    logger.error("Failed to publish a pending comment", publishError);
     throw new Error(
-      `Failed to publish pending comments: ${publishError.message}`
+      `Failed to publish a pending comment: ${publishError.message}`
     );
   }
 
   const { error: verifyError } = await supabase
     .from("flag_reporter_contacts")
     .update({ verified_at: now })
-    .eq("email", address)
+    .eq("flag_id", pending.flag.id)
     .is("verified_at", null);
 
-  // The comments are public by now; a missing stamp only means the address
+  // The comment is public by now; a missing stamp only means the address
   // reads as unverified to the resolution e-mail, which is the safe side.
   if (verifyError) {
-    logger.error("Failed to stamp reporter contacts verified", verifyError);
+    logger.error("Failed to stamp a reporter contact verified", verifyError);
   }
 
-  return { published: (published ?? []).length };
+  return { published: (published ?? []).length > 0 };
+}
+
+/**
+ * « Ce n'est pas moi »: the reader says a pending comment carrying their
+ * address is not theirs. The address is unlinked, so the comment can never
+ * be published or attributed through it and stays private, in the
+ * moderation console only. A published comment is never touched here.
+ */
+// @req REQ-213
+export async function disownPendingFlag(
+  slug: string,
+  email: string
+): Promise<{ disowned: boolean }> {
+  const pending = await findPendingFlagWithContact(slug);
+  if (!pending || !sameAddress(pending.contactEmail, email)) {
+    return { disowned: false };
+  }
+
+  const supabase = createAdminClient();
+  const { error } = await supabase
+    .from("flag_reporter_contacts")
+    .delete()
+    .eq("flag_id", pending.flag.id);
+
+  if (error) {
+    logger.error("Failed to unlink a reporter contact", error);
+    throw new Error(`Failed to unlink a reporter contact: ${error.message}`);
+  }
+  return { disowned: true };
 }
 
 async function findFlag(flagId: string) {

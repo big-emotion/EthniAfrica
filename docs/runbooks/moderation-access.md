@@ -6,12 +6,15 @@ in this repository and will silently break the whole thing if they are wrong. Th
 
 ## The model, in one paragraph
 
-There are no public accounts. Reporting costs none (moderation charter §2), and
-the console authorizes an **e-mail address** against the `admin_allowlist` table
-— not a role, not a profile row. The published sign-in page (`/fr/admin/connexion`) is the only sign-in
-surface in the product; it sends a magic link to an address on the list and
-answers a stranger with the identical sentence, so the form cannot be used to
-enumerate moderators.
+Readers have accounts, moderators have an allowlist, and the two never meet. A
+reader account (`/fr/compte`, REQ-213, DEC-085) opens with the link that
+publishes a reader's first comment, and it opens no other door: the console
+authorizes an **e-mail address** against the `admin_allowlist` table — not a
+role, not a profile row, never the mere presence of a session. The moderators'
+sign-in page (`/fr/admin/connexion`) sends a magic link to an address on the
+list and answers a stranger with the identical sentence, so the form cannot be
+used to enumerate moderators. The readers' sign-in (`/fr/compte/connexion`)
+does the same for an existing reader account and never creates one.
 
 That identical sentence is also given when **no mail leaves at all**: the action
 swallows every refusal from Supabase on purpose. Nothing on the page tells a working
@@ -88,6 +91,35 @@ share a database and must not share an allow-list.
 must carry the `/api/auth/callback` of the environment you asked from. Anything
 else means the entry did not match and GoTrue fell back to the Site URL.
 
+### The reader account's redirect — one more entry per environment
+
+The reader mail (REQ-213) asks Auth for a redirect to
+`<site>/fr/compte/confirmer?commentaire=<slug>` (a sign-in names no comment). The send-email
+hook (§2) recognises a reader mail by that path; if GoTrue substitutes the Site
+URL, the reader receives the **moderators'** mail instead, with a link that
+signs them in without publishing anything. So each environment's list carries
+the confirmation page too, with a trailing `**` so the query string matches:
+
+- local (`supabase/config.toml`): `http://localhost:3000/fr/compte/confirmer**`
+- recette: `https://recette.africatlas.com/fr/compte/confirmer**`
+- production: `https://ethniafrica.com/fr/compte/confirmer**`
+
+**Production is an operator step.** Append the entry to
+`ADDITIONAL_REDIRECT_URLS` (comma-separated, after the callback) in the
+production stack's `.env`, recreate the `auth` container as above, and read
+`GOTRUE_URI_ALLOW_LIST` back from the running container. GoTrue also accepts a
+redirect on the Site URL's own host, so production may already let it through;
+the entry makes that explicit rather than leaving it to a fallback.
+
+**Proof it worked.** Leave a comment with an address you read. The mail's
+subject is « Publiez votre commentaire sur EthniAfrica » and its link starts
+with `<site>/fr/compte/confirmer?token_hash=`. A subject about the moderation
+console means the redirect did not match.
+
+While on that `.env`: `ENABLE_EMAIL_AUTOCONFIRM` must be `false`. With it on,
+anyone could sign up with a moderator's address and hold a session for it; the
+allowlist would then admit them.
+
 ## 2. The sign-in mail — Auth hands it to Microsoft Graph
 
 **Production Auth sends no mail of its own.** Measured 2026-09-15: the stack's
@@ -106,6 +138,18 @@ Auth is configured with a **send-email hook**: instead of speaking SMTP it POSTs
 each mail, signed, to `POST /api/auth/send-email`, which writes the sign-in mail
 (`src/lib/email/signInLink.ts`) and sends it through Graph. With the hook enabled,
 the `SMTP_*` values are no longer read.
+
+The same hook writes the reader's mail (`src/lib/email/readerLink.ts`) when the
+redirect is `/fr/compte/confirmer`. That mail never links to Auth's
+`/auth/v1/verify`, which signs in on a GET: it links to the atlas's own
+confirmation page with the token hash, and the page redeems it only when the
+reader presses « Publier mon commentaire ». GoTrue sends `signup` to an address
+it has never confirmed and `magiclink` to one it has; the link carries the type
+it was given and the page accepts both. It also carries the `commentaire` slug
+of the redirect: the page publishes that one comment, and only if it carries
+the address just verified. Other pending comments of the address are never
+published by a link; the reader decides on each in the account (« Publier » or
+« Ce n'est pas moi »), since anyone can type someone else's address.
 
 Order matters: **the application first, then Auth.** A hook pointing at a route the
 running release does not have turns every sign-in into a 404.

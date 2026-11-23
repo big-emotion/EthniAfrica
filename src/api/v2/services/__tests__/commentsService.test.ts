@@ -19,7 +19,9 @@ import {
   addReply,
   hideComment,
   listPublishedCommentsByBlockKeys,
-  publishPendingFlagsForEmail,
+  disownPendingFlag,
+  findPendingComment,
+  publishPendingFlagForEmail,
   recordAbuseReport,
   unhideComment,
 } from "../comments";
@@ -223,7 +225,7 @@ describe("listPublishedCommentsByBlockKeys", () => {
   });
 });
 
-describe("publishPendingFlagsForEmail", () => {
+describe("publishing one pending comment for a confirmed address", () => {
   function pendingWithContact(id: string, email: string) {
     return {
       flag: flag(id, { published_at: null }),
@@ -237,55 +239,166 @@ describe("publishPendingFlagsForEmail", () => {
     };
   }
 
-  // @req REQ-212
-  it("publishes the pending comments of the confirmed address and signs them", async () => {
-    const mine = pendingWithContact("a", "awa@example.org");
-    const other = pendingWithContact("b", "someone@example.org");
-    useDatabase({
-      flags: [mine.flag, other.flag],
-      flag_reporter_contacts: [mine.contact, other.contact],
+  describe("publishPendingFlagForEmail", () => {
+    // A stranger can type someone else's address under a comment. Confirming
+    // one's own comment must never publish theirs too.
+    // @req REQ-212
+    // @req REQ-213
+    it("publishes only the comment named, never the other pending comments of the address", async () => {
+      const mine = pendingWithContact("a", "awa@example.org");
+      const planted = pendingWithContact("b", "awa@example.org");
+      useDatabase({
+        flags: [mine.flag, planted.flag],
+        flag_reporter_contacts: [mine.contact, planted.contact],
+      });
+
+      await expect(
+        publishPendingFlagForEmail("SLUGa", "awa@example.org", "user-1")
+      ).resolves.toEqual({ published: true });
+
+      const [a, b] = db.tables.flags;
+      expect(a.published_at).toEqual(expect.any(String));
+      expect(a.contributor_id).toBe("user-1");
+      expect(b.published_at).toBeNull();
+      expect(b.contributor_id).toBeNull();
+      expect(db.tables.flag_reporter_contacts[0].verified_at).toEqual(
+        expect.any(String)
+      );
+      expect(db.tables.flag_reporter_contacts[1].verified_at).toBeNull();
     });
 
-    await expect(
-      publishPendingFlagsForEmail("awa@example.org", "user-1")
-    ).resolves.toEqual({ published: 1 });
+    // @req REQ-213
+    it("publishes nothing when the comment was left with another address", async () => {
+      const other = pendingWithContact("a", "someone@example.org");
+      useDatabase({
+        flags: [other.flag],
+        flag_reporter_contacts: [other.contact],
+      });
 
-    const [a, b] = db.tables.flags;
-    expect(a.published_at).toEqual(expect.any(String));
-    expect(a.contributor_id).toBe("user-1");
-    expect(b.published_at).toBeNull();
-    expect(db.tables.flag_reporter_contacts[0].verified_at).toEqual(
-      expect.any(String)
-    );
-    expect(db.tables.flag_reporter_contacts[1].verified_at).toBeNull();
-  });
-
-  // @req REQ-212
-  it("is idempotent: a second confirmation publishes nothing new", async () => {
-    const mine = pendingWithContact("a", "awa@example.org");
-    useDatabase({
-      flags: [mine.flag],
-      flag_reporter_contacts: [mine.contact],
+      await expect(
+        publishPendingFlagForEmail("SLUGa", "awa@example.org", "user-1")
+      ).resolves.toEqual({ published: false });
+      expect(db.tables.flags[0].published_at).toBeNull();
     });
 
-    await publishPendingFlagsForEmail("awa@example.org", "user-1");
-    const firstPublication = db.tables.flags[0].published_at;
-    const second = await publishPendingFlagsForEmail(
-      "awa@example.org",
-      "user-1"
-    );
+    // The column is citext: an address typed with capitals is the same one.
+    // @req REQ-213
+    it("matches the address whatever its case", async () => {
+      const mine = pendingWithContact("a", "Awa@Example.org");
+      useDatabase({
+        flags: [mine.flag],
+        flag_reporter_contacts: [mine.contact],
+      });
 
-    expect(second).toEqual({ published: 0 });
-    expect(db.tables.flags[0].published_at).toBe(firstPublication);
+      await expect(
+        publishPendingFlagForEmail("SLUGa", "awa@example.org", "user-1")
+      ).resolves.toEqual({ published: true });
+    });
+
+    // @req REQ-212
+    it("is idempotent: a second confirmation publishes nothing new", async () => {
+      const mine = pendingWithContact("a", "awa@example.org");
+      useDatabase({
+        flags: [mine.flag],
+        flag_reporter_contacts: [mine.contact],
+      });
+
+      await publishPendingFlagForEmail("SLUGa", "awa@example.org", "user-1");
+      const firstPublication = db.tables.flags[0].published_at;
+      const second = await publishPendingFlagForEmail(
+        "SLUGa",
+        "awa@example.org",
+        "user-1"
+      );
+
+      expect(second).toEqual({ published: false });
+      expect(db.tables.flags[0].published_at).toBe(firstPublication);
+    });
+
+    // @req REQ-213
+    it("publishes nothing for an unknown comment", async () => {
+      useDatabase({ flags: [flag("a")], flag_reporter_contacts: [] });
+
+      await expect(
+        publishPendingFlagForEmail("NOPE", "awa@example.org", "user-1")
+      ).resolves.toEqual({ published: false });
+    });
   });
 
-  // @req REQ-212
-  it("publishes nothing for an address with no pending comment", async () => {
-    useDatabase({ flags: [flag("a")], flag_reporter_contacts: [] });
+  describe("findPendingComment", () => {
+    // @req REQ-213
+    it("returns the text of a comment still waiting for its address", async () => {
+      const mine = pendingWithContact("a", "awa@example.org");
+      useDatabase({
+        flags: [mine.flag],
+        flag_reporter_contacts: [mine.contact],
+      });
 
-    await expect(
-      publishPendingFlagsForEmail("nobody@example.org", "user-1")
-    ).resolves.toEqual({ published: 0 });
+      await expect(findPendingComment("SLUGa")).resolves.toEqual({
+        public_slug: "SLUGa",
+        block_key: NAMING,
+        body: "Comment a",
+      });
+    });
+
+    // @req REQ-213
+    it("returns nothing for a comment already public", async () => {
+      useDatabase({ flags: [flag("a")] });
+
+      await expect(findPendingComment("SLUGa")).resolves.toBeNull();
+    });
+  });
+
+  describe("disownPendingFlag", () => {
+    // « Ce n'est pas moi »: the comment loses the address it carried, so it
+    // can never be published or attributed through it.
+    // @req REQ-213
+    it("unlinks the address from a pending comment and leaves it private", async () => {
+      const planted = pendingWithContact("a", "awa@example.org");
+      useDatabase({
+        flags: [planted.flag],
+        flag_reporter_contacts: [planted.contact],
+      });
+
+      await expect(
+        disownPendingFlag("SLUGa", "awa@example.org")
+      ).resolves.toEqual({ disowned: true });
+
+      expect(db.tables.flag_reporter_contacts).toEqual([]);
+      expect(db.tables.flags[0].published_at).toBeNull();
+      await expect(
+        publishPendingFlagForEmail("SLUGa", "awa@example.org", "user-1")
+      ).resolves.toEqual({ published: false });
+    });
+
+    // @req REQ-213
+    it("leaves another address's link alone", async () => {
+      const other = pendingWithContact("a", "someone@example.org");
+      useDatabase({
+        flags: [other.flag],
+        flag_reporter_contacts: [other.contact],
+      });
+
+      await expect(
+        disownPendingFlag("SLUGa", "awa@example.org")
+      ).resolves.toEqual({ disowned: false });
+      expect(db.tables.flag_reporter_contacts).toHaveLength(1);
+    });
+
+    // @req REQ-213
+    it("never unlinks a comment already published", async () => {
+      useDatabase({
+        flags: [flag("a")],
+        flag_reporter_contacts: [
+          pendingWithContact("a", "awa@example.org").contact,
+        ],
+      });
+
+      await expect(
+        disownPendingFlag("SLUGa", "awa@example.org")
+      ).resolves.toEqual({ disowned: false });
+      expect(db.tables.flag_reporter_contacts).toHaveLength(1);
+    });
   });
 });
 
