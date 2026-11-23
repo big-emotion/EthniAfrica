@@ -104,6 +104,10 @@
     {
       "fieldPath": "designatedSocialUnit",
       "reason": "Les sources consultées ne permettent pas de déterminer si Adjei désigne historiquement un lignage, un clan ou une autre unité sociale."
+    },
+    {
+      "fieldPath": "origin",
+      "reason": "Les recherches « Adjei Akan name meaning day name » et « Adjei Akan ewe anthroponymie » (7-8 novembre 2026) n'ont livré que des sites de prénoms : l'un rattache Adjei au lundi akan, un autre à un mot « Adje » glosé « bébé qui voyage ». Ils se contredisent entre eux et avec les listes de noms de naissance akan, où le lundi est Kwadwo ou Kojo. Aucun ne cite d'ouvrage. La notice Wikipédia du nom ne renvoie qu'au dictionnaire de noms de famille de Hanks, Coates et McClure (2016), dont nous n'avons pas pu lire l'entrée. Nous n'avons retenu aucune étymologie."
     }
   ],
   "nameHistory": {

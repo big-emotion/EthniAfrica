@@ -78,6 +78,10 @@
     {
       "fieldPath": "transmissionMode",
       "reason": "Le nom Agyemang est d'abord un nom de personne akan : nous ne documentons pas encore comment il passe d'une génération à l'autre comme nom de famille."
+    },
+    {
+      "fieldPath": "origin",
+      "reason": "Les recherches « Agyemang Akan name meaning » et « Agyeman Agyemang Asante etymology Twi dictionary » (7-8 novembre 2026) n'ont livré que des sites de prénoms qui se contredisent : l'un lit « sauveur de la nation », un autre « brave » et « personne », un troisième « né un lundi ». Aucun ne cite un dictionnaire twi ni un travail d'onomastique akan, et la notice Wikipédia du nom ne cite aucune source. Nous n'avons retenu aucune étymologie. Il reste à consulter le dictionnaire twi de Christaller et les travaux sur les noms akan."
     }
   ],
   "nameHistory": {

@@ -67,10 +67,6 @@
       "reason": "Les recherches bibliographiques et web « Ahouansou fon anthroponymie étymologie », « Ahouansou onomastique » et « Ahouansou surname meaning », ainsi que la page Forebears propre au nom, n'ont livré aucune étymologie ni histoire de formation vérifiable. La distribution observée n'est pas interprétée comme une origine."
     },
     {
-      "fieldPath": "peoples",
-      "reason": "Les recherches « Ahouansou fon anthroponymie » et « Ahouansou ethnic group » n'ont fourni aucune source propre au nom établissant son rattachement au peuple proposé par la file de candidats ; ce rattachement reste donc au statut « supposed »."
-    },
-    {
       "fieldPath": "alliances",
       "reason": "Les recherches « Ahouansou joking relationship », « Ahouansou alliance patronyme » et « Ahouansou sanankuya » n'ont établi aucune paire documentée dont les deux noms sont documentés ici."
     },
@@ -93,6 +89,10 @@
     {
       "fieldPath": "designatedSocialUnit",
       "reason": "Les sources consultées ne permettent pas de déterminer si Ahouansou désigne historiquement un lignage, un clan ou une autre unité sociale."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Les recherches « Ahouansou fon anthroponymie » et « Ahouansou ethnic group » n'ont fourni aucune source propre au nom établissant son rattachement au peuple proposé par la file de candidats. Une recherche du 7-8 novembre 2026 (« Ahouansou Dahomey famille Ouidah Abomey ») n'a trouvé que des pages sur l'histoire générale du royaume du Dahomey, sans mention du nom. Ce rattachement reste donc au statut « supposed »."
     }
   ]
 }

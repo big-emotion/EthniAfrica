@@ -151,6 +151,10 @@
     {
       "fieldPath": "designatedSocialUnit",
       "reason": "Les sources consultées ne permettent pas de confirmer si ce nom désigne historiquement un lignage, un clan ou une autre unité sociale."
+    },
+    {
+      "fieldPath": "origin",
+      "reason": "La recherche « Agbo meaning Ewe Fon » (7-8 novembre 2026) a trouvé un article de presse sur les noms éwé qui lit agbo « bélier » ou « porte », et une page eHRAF sur les Fon qui nomme agbodo une tranchée et Agbo-mɛ un lieu. Aucune de ces sources ne parle du nom de famille Agbo : elles ne suffisent pas à en tirer une étymologie, que nous ne proposons donc pas."
     }
   ],
   "nameHistory": {

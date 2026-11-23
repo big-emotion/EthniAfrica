@@ -67,10 +67,6 @@
       "reason": "Les recherches bibliographiques et web « Agbodjan fon anthroponymie étymologie », « Agbodjan onomastique » et « Agbodjan surname meaning », ainsi que la page Forebears propre au nom, n'ont livré aucune étymologie ni histoire de formation vérifiable. La distribution observée n'est pas interprétée comme une origine."
     },
     {
-      "fieldPath": "peoples",
-      "reason": "Les recherches « Agbodjan fon anthroponymie » et « Agbodjan ethnic group » n'ont fourni aucune source propre au nom établissant son rattachement au peuple proposé par la file de candidats ; ce rattachement reste donc au statut « supposed »."
-    },
-    {
       "fieldPath": "alliances",
       "reason": "Les recherches « Agbodjan joking relationship », « Agbodjan alliance patronyme » et « Agbodjan sanankuya » n'ont établi aucune paire documentée dont les deux noms sont documentés ici."
     },
@@ -93,6 +89,10 @@
     {
       "fieldPath": "designatedSocialUnit",
       "reason": "Les sources consultées ne permettent pas de déterminer si Agbodjan désigne historiquement un lignage, un clan ou une autre unité sociale."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Les recherches « Agbodjan fon anthroponymie » et « Agbodjan ethnic group » n'ont fourni aucune source propre au nom établissant son rattachement au peuple proposé par la file de candidats. Une recherche du 7-8 novembre 2026 (« Agbodjan Agbodjo Agbo Fon Ewe Gbe ») n'a trouvé que des pages de généalogie, sans origine, pour les graphies Agbodjo et Agbodji, et des généralités sur les noms éwé et fon. Ce rattachement reste donc au statut « supposed »."
     }
   ]
 }

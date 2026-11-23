@@ -1,0 +1,145 @@
+{
+  "description": "Proposals only, for the operator to decide. Batch surnames-07.",
+  "verifications": [
+    {
+      "fiche": "patronymes/PAT_ADEYEMI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_ADEYEMI; nameMain: Adeyemi; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Adéyẹmí (entrée du dictionnaire de noms yorùbá)",
+          "author": null,
+          "year": null,
+          "url": "https://www.yorubaname.com/entries/Ade%CD%81y%E1%BA%B9mi%CD%81",
+          "source_kind": "community",
+          "quote": "The crown is befitting of me",
+          "supports": "Gives the Yoruba meaning and the morphemes a-dé-yẹ-mí for Adeyemi. Does not state the naming system, transmission or social unit, and cites no source itself. Opened in this session; the gloss is community-written."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_ADJEI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_ADJEI; nameMain: Adjei; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_ADOUM.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_ADOUM; nameMain: Adoum; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_AGBO.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AGBO; nameMain: Agbo; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_AGBODJAN.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AGBODJAN; nameMain: Agbodjan; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_AGYEMANG.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AGYEMANG; nameMain: Agyemang; nameSystem: non_hereditary_patronymic; transmissionMode: other; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_AHMED.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AHMED; nameMain: Ahmed; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_AHOUANSOU.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AHOUANSOU; nameMain: Ahouansou; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_AH_CHUEN.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AH_CHUEN; nameMain: Ah Chuen; nameSystem: clan_name; transmissionMode: patrilineal; designatedSocialUnit: lineage",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_AIT_AHMED.json",
+      "path": "sources[2]",
+      "claim": "id: PAT_AIT_AHMED; nameMain: Aït Ahmed; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    }
+  ]
+}
