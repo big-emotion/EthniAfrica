@@ -30,19 +30,25 @@
     {
       "peopleId": "PPL_BAMILEKE",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "menang-menang-djoumessi-kumzse"]
     }
   ],
   "countries": [
     {
       "countryId": "CMR",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "menang-menang-djoumessi-kumzse"]
     }
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
-  "bearers": [],
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Mathias Djoumessi, chef de Foréké-Dschang et fondateur du Kumzse (vers 1900 - 1966)",
+      "sourceRefs": ["menang-menang-djoumessi-kumzse"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
@@ -52,6 +58,14 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "menang-menang-djoumessi-kumzse",
+      "title": "Djoumessi Mathias du Kumzse : personnage oublié de la lutte anticoloniale au Cameroun sous tutelle française",
+      "url": "https://revues.imist.ma/index.php/EGSM/article/download/48524/25443/133885",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Article de Paul Menang Menang, doctorant en études culturelles à l'Université de Douala, fondé sur des archives coloniales (Archives nationales de Yaoundé, archives départementales de Dschang) et des entretiens de terrain. Il écrit que Djoumessi Mathias « naquit à Foréké-Dschang, en pays bamiléké » vers 1900, qu'il est mort le 1er mai 1966 et qu'il s'est retrouvé « à la tête de la chefferie Foréké-Dschang ». L'article atteste Djoumessi comme nom d'une personne de la chefferie de Foréké-Dschang, au Cameroun, en pays bamiléké. Il n'explique ni le sens du nom, ni sa transmission, et ne dit pas que Djoumessi est le nom de la dynastie. L'année de publication ne figure pas dans le fichier consulté."
     }
   ],
   "gaps": [
@@ -64,12 +78,8 @@
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
-      "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
       "fieldPath": "homonyms",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les recherches menées n'ont pas établi deux origines distinctes pour la forme Djoumessi : les porteurs trouvés sont tous camerounais, et rien ne dit que le nom a un autre sens ailleurs."
     },
     {
       "fieldPath": "nameSystem",

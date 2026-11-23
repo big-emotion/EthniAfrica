@@ -13,7 +13,7 @@
       "attestations": [
         {
           "countryId": "CAF",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["gouv-cf-ministres-2018", "berkley-center-doubane"]
         }
       ]
     }
@@ -30,7 +30,7 @@
     {
       "countryId": "CAF",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["gouv-cf-ministres-2018", "berkley-center-doubane"]
     }
   ],
   "alliances": [],
@@ -45,28 +45,44 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "gouv-cf-ministres-2018",
+      "title": "Les ministres — Portail du Gouvernement de la République centrafricaine",
+      "url": "https://www.gouv.cf/article/62/les-ministres",
+      "tier": "official",
+      "source_kind": "government",
+      "notes": "La liste officielle des ministres écrit « S.E.M. Charles Armel DOUBANE » pour le ministre des Affaires étrangères et des Centrafricains de l'étranger. La page établit la graphie Doubane comme nom de famille porté en République centrafricaine. Elle ne donne ni l'origine du nom ni l'appartenance ethnique de la personne. Elle ne porte pas de date de publication, seulement la mention « ©2018 »."
+    },
+    {
+      "sourceKey": "berkley-center-doubane",
+      "title": "Charles-Armel Doubane — Berkley Center for Religion, Peace & World Affairs, Georgetown University",
+      "url": "https://berkleycenter.georgetown.edu/people/charles-armel-doubane",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Notice biographique d'un centre de recherche universitaire. Elle écrit « Born in Zemio, in southeastern CAR in 1966 » et indique qu'il a été ministre de l'Éducation de 2006 à 2008, représentant permanent auprès des Nations unies de 2011 à 2013, puis ministre des Affaires étrangères à partir d'avril 2016. Elle confirme la graphie Doubane et un lieu de naissance centrafricain, mais ne dit rien de l'étymologie ni de l'appartenance ethnique."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les recherches « Doubane origine », « Doubane nom Centrafrique » et « Doubane étymologie » n'ont donné que des notices consacrées à une personne, Charles-Armel Doubane, et aucune étude du nom. Les pages sur les noms de famille centrafricains consultées sont générales et ne mentionnent pas Doubane. Aucun récit d'origine, aucune chronique et aucune analyse linguistique n'a été trouvé."
     },
     {
       "fieldPath": "alliances",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Nous ne documentons pas encore ce point pour ce nom : les recherches menées n'ont trouvé aucune source qui le décrive."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Nous ne documentons pas encore ce point pour ce nom : les recherches menées n'ont trouvé aucune source qui le décrive."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Le seul porteur documenté, Charles-Armel Doubane, est vivant à la date de consultation. Les porteurs défunts ne sont pas documentés."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "La recherche a fait apparaître le nom français « Douane », qui vient d'un mot arabe, mais rien ne relie ce nom à Doubane. Aucun homonyme attesté n'est retenu."
     },
     {
       "fieldPath": "transmissionMode",
@@ -74,7 +90,7 @@
     },
     {
       "fieldPath": "peoples",
-      "reason": "Nos fiches ne permettent pas encore de relier le nom Doubane à un peuple en République centrafricaine. Nous n'avons pas encore consulté de source consacrée à ce nom."
+      "reason": "Aucune source ouverte ne relie le nom Doubane à un peuple. Un site d'opposition affirme que son porteur le plus connu est zandé ; il s'agit d'une source partisane qui n'a pas été retenue, et une appartenance individuelle ne dit rien du nom lui-même. Le nom reste sans peuple rattaché."
     }
   ]
 }
