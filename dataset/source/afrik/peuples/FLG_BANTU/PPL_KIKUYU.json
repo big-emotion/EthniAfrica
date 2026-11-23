@@ -102,6 +102,15 @@
         "source_kind": "linguistic_reference"
       },
       {
+        "title": "Glottolog 5 — Kikuyu (kiku1240)",
+        "author": "Hammarström, Harald; Forkel, Robert; Haspelmath, Martin; Bank, Sebastian",
+        "year": 2025,
+        "url": "https://glottolog.org/resource/languoid/id/kiku1240",
+        "tier": "referenced",
+        "source_kind": "linguistic_reference",
+        "notes": "Page opened 2026-11-08. Places Kikuyu (ISO 639-3 kik) in the Bantu line Northern Eastern Bantu, Central Kenya group (cent2274), citing Nurse and Rottland (1991/1992, p. 198) for the subclassification; lists the name variants Gikuyu, Gekoyo and Gigikuyu."
+      },
+      {
         "title": "Kenya National Bureau of Statistics — Kenya Population and Housing Census 2019",
         "url": "https://www.knbs.or.ke/2019-kenya-population-and-housing-census/",
         "tier": "official",
