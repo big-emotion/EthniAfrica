@@ -31,7 +31,7 @@
     ],
     "origins": {
       "ancientOrigins": "Les Bemba appartiennent a la branche centro-occidentale des peuples bantous occidentaux, caracterises par des traditions matrilineaires et le pastoralisme d'ovins et caprins plutot que de bovins. Leurs ancetres ont migre lentement le long des affluents du Congo depuis le bassin de l'Upemba (source du Lualaba, actuelle DRC), occupe sans interruption depuis le IVe siecle par des agriculteurs pratiquant le travail du fer. L'identite Bemba moderne derive de la royaute Luba qui s'est imposee sur diverses populations Sabi.",
-      "formationPeriod": "L'origine du royaume Bemba est liee a une rebellion anti-portugaise dans le royaume du Luba vers 1650. Les freres Chiti et Nkole, fils du roi luba Mukulumpe et de sa femme Mumbi Lyulu Mukasa du clan Bena-Ng'andu, ont migre vers l'est apres un conflit avec leur pere. Chiti fut tue par le chef Nsenga Mwase pendant la migration. Son frere Nkole reprit la direction avant d'etre egalement tue. C'est Chilufya qui finalement mena le groupe jusqu'au site fondateur de Ng'wena (pres de Kasama, actuelle province du Nord de la Zambie), premiere capitale du royaume Bemba.",
+      "formationPeriod": "L'origine du royaume Bemba est liee a une rebellion anti-portugaise dans le royaume du Luba vers 1650. Les freres Chiti et Nkole, fils du roi luba Mukulumpe et de sa femme Mumbi Lyulu Mukasa du clan Bena-Ng'andu, ont migre vers l'est apres un conflit avec leur pere. Chiti fut tue par le chef Nsenga Mwase pendant la migration. Son frere Nkole reprit la direction avant d'etre egalement tue. C'est Chilufya qui finalement mena le groupe jusqu'au site fondateur de Ng'wena (pres de Kasama, actuelle province du Nord de la Zambie), premiere capitale du royaume Bemba. Andrew Roberts (1970) estime pour sa part que la dynastie bemba est apparue dans la première moitié du XVIIe siècle, entre 1600 et 1660 environ, et rappelle que le lien exact avec les États luba et lunda du Katanga reste mal connu.",
       "migrationRoutes": [
         "Depuis le royaume du Luba (Upemba, DRC) vers l'est, en traversant la riviere Luapula",
         "Etablissement temporaire a Isandulula (sous le lac Mweru), Keleka pres du lac Bangweulu, Chulung'oma et Kashi-ka-Lwena",
@@ -89,7 +89,7 @@
     "demography": {
       "totalPopulation": 6600000,
       "referenceYear": 2025,
-      "source": "Estimations basees sur Wikipedia EN (6 605 200, note globale), Joshua Project (5 864 000 en Zambie seule), Ethnologue (SIL International 2024) et donnees demographiques zambiennes. La population Bemba inclut le noyau ethnique (environ 741 000 selon le recensement zambien incluant les urbains) plus les locuteurs de l'IchiBemba comme premiere langue (environ 3,7 millions en Zambie) et les communautes de DRC et Tanzanie.",
+      "source": "Estimations basees sur Joshua Project (5 864 000 en Zambie seule), Ethnologue (SIL International 2024) et donnees demographiques zambiennes. La population Bemba inclut le noyau ethnique (environ 741 000 selon le recensement zambien incluant les urbains) plus les locuteurs de l'IchiBemba comme premiere langue (environ 3,7 millions en Zambie) et les communautes de DRC et Tanzanie.",
       "distributionByCountry": [
         {
           "country": "ZMB",
@@ -131,6 +131,20 @@
         "title": "Nkwazi Magazine — Kalindula : A Rhythmic Journey Through Zambian Culture (2024)",
         "url": "https://nkwazimagazine.com/kalindula-a-rhythmic-journey-through-zambian-culture/",
         "tier": "unverified"
+      },
+      {
+        "title": "Andrew Roberts, « Chronology of the Bemba (N.E. Zambia) », Journal of African History, vol. 11, n° 2, 1970, p. 221-240",
+        "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/chronology-of-the-bemba-ne-zambia1/DE8494F978679D0EC141C491D6B67317",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Roberts écrit que les traditions de la dynastie du Chitimukulu, comme celles des chefferies bisa, « trace[nt] une origine à l'ouest, parmi les États luba et lunda du Katanga », et place l'apparition de la dynastie bemba dans la première moitié du XVIIe siècle. Lu le 8 novembre 2026 dans une copie de l'article."
+      },
+      {
+        "title": "Glottolog 5.3, Bemba (Zambia) (bemb1257)",
+        "url": "https://glottolog.org/resource/languoid/id/bemb1257",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue de l'Institut Max-Planck d'anthropologie évolutionniste. Code ISO 639-3 bem, pays : Botswana, République démocratique du Congo, Malawi, Zambie. Lue le 8 novembre 2026."
       }
     ]
   },

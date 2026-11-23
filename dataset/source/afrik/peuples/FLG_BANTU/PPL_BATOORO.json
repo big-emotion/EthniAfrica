@@ -48,11 +48,7 @@
     "languages": {
       "mainLanguage": "Rutooro",
       "isoCodes": ["ttj"],
-      "dialects": [
-        "Rutooro de Kabarole",
-        "Rutooro de Kyenjojo",
-        "Rutooro de Kyegegwa"
-      ],
+      "dialects": [],
       "vehicularRole": "Le Rutooro est la langue vernaculaire principale du royaume du Toro. Il est etroitement apparente au Runyoro (code ISO nyo) avec lequel il est parfois regroupe sous l'appellation Runyoro-Rutooro. Le swahili et l'anglais sont utilises comme langues de communication interethnique et officielles en Ouganda."
     },
     "culture": {
@@ -70,7 +66,7 @@
     "demography": {
       "totalPopulation": 1200000,
       "referenceYear": 2025,
-      "source": "Joshua Project (2024), estimation basee sur le recensement ougandais 2014 (districts du Toro: 1 million) avec projection 2025",
+      "source": "Joshua Project (2024), estimation basee sur le recensement ougandais 2014 (districts du Toro: 1 million) avec projection 2025 Le recensement de 2014 compte 810 708 Batoro, selon le journal Monitor.",
       "distributionByCountry": [
         {
           "country": "UGA",
@@ -108,6 +104,20 @@
         "url": "https://wals.info/languoid/lect/wals_code_rru",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Baganda, Banyankore, Basoga dominant tribes, Monitor (Nation Media Group), 25 mars 2016",
+        "url": "https://www.monitor.co.ug/uganda/news/national/baganda-banyankore-basoga-dominant-tribes-1644626",
+        "tier": "referenced",
+        "source_kind": "press",
+        "notes": "Article sur les résultats définitifs du recensement ougandais de 2014. Il range les Batoro dans la catégorie « autres », avec 810 708 personnes. Lu le 8 novembre 2026."
+      },
+      {
+        "title": "Glottolog 5.3, Tooro (toor1238)",
+        "url": "https://glottolog.org/resource/languoid/id/toor1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Fiche de langue de l'Institut Max-Planck d'anthropologie évolutionniste. Code ISO 639-3 ttj, pays : Ouganda et République démocratique du Congo, noms voisins Orutoro, Rutooro, Rutoro, Toro ; aucun dialecte listé. Lue le 8 novembre 2026."
       }
     ]
   },

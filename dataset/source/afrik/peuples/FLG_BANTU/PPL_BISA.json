@@ -23,7 +23,7 @@
       "Bisa de la vallee du Luangwa"
     ],
     "origins": {
-      "ancientOrigins": "Les Bisa sont originaires de l'Empire Luba situe dans l'actuelle Republique democratique du Congo. Ils firent partie du mouvement migratoire bantou qui quitta l'Empire Luba vers 1650, en meme temps que les Bemba. La legende fondatrice Bisa evoque une separation d'avec les Bemba au cours de la migration depuis le Congo: une soeur royale, accusee de ne pas avoir offert des champignons a un neveu affame, fut excommuniee du groupe migrant avec sa famille immediate. Cette famille devint le clan Ngona (clan du champignon), dominant parmi les Bisa et source de leurs chefs. Le clan Ngona est associe au toteme du champignon.",
+      "ancientOrigins": "Les Bisa sont originaires de l'Empire Luba situe dans l'actuelle Republique democratique du Congo. Ils firent partie du mouvement migratoire bantou qui quitta l'Empire Luba vers 1650, en meme temps que les Bemba. La legende fondatrice Bisa evoque une separation d'avec les Bemba au cours de la migration depuis le Congo: une soeur royale, accusee de ne pas avoir offert des champignons a un neveu affame, fut excommuniee du groupe migrant avec sa famille immediate. Cette famille devint le clan Ngona (clan du champignon), dominant parmi les Bisa et source de leurs chefs. Le clan Ngona est associe au toteme du champignon. Andrew Roberts (1970, p. 230) relève toutefois que les traditions bisa qu'il connaît ne racontent pas comment leurs chefs sont venus de l'est du Congo : elles expliquent leur origine par une scission d'avec les Bemba, et font descendre les chefs d'un ancêtre nommé Mukulumpe, élément qui a pu être emprunté aux Bemba.",
       "formationPeriod": "Les Bisa emergerent comme groupe distinct dans la premiere moitie du XVIIIe siecle, apres leur installation sur le plateau situe entre l'escarpement de Muchinga et le lac Bangweulu. Les archives historiques les mentionnent des 1798 (Lacerda).",
       "migrationRoutes": [
         "Depart de l'Empire Luba (DRC) vers 1650",
@@ -119,6 +119,13 @@
         "url": "https://joshuaproject.net/people_groups/19057/ZA",
         "tier": "unverified",
         "source_kind": "missionary_database"
+      },
+      {
+        "title": "Andrew Roberts, « Chronology of the Bemba (N.E. Zambia) », Journal of African History, vol. 11, n° 2, 1970, p. 230-231",
+        "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/chronology-of-the-bemba-ne-zambia1/DE8494F978679D0EC141C491D6B67317",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Dans la partie « Bisa », Roberts compare les traditions bemba et celles des chefferies bisa de Kopa (ancien Mwansabamba), Kabanda, Mungulube et Matipa, et cite le récit de la guerre entre Bemba et Bisa vu par Gamitto en 1831-1832. Lu le 8 novembre 2026 dans une copie de l'article."
       }
     ]
   },
