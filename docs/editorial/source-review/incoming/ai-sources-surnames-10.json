@@ -1,0 +1,145 @@
+{
+  "description": "Proposals for the ai_generated candidate-queue stub of surnames batch 10. No work opened in this session states the claim recorded by the stub (a name selected for documentation): each entry therefore carries no candidate and the operator decides between rejected and oral_needed. Nothing here is a decision.",
+  "verifications": [
+    {
+      "fiche": "patronymes/PAT_AL_ZAWI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AL_ZAWI; nameMain: Al-Zawi; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)",
+      "reviewNote": "Searched the web for a work stating this name selection and its classification; only unreferenced or SEO pages turned up, none opened as a citable source."
+    },
+    {
+      "fiche": "patronymes/PAT_AL_ZINTANI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AL_ZINTANI; nameMain: Al-Zintani; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)",
+      "reviewNote": "Searched the web for a work stating this name selection and its classification; only unreferenced or SEO pages turned up, none opened as a citable source."
+    },
+    {
+      "fiche": "patronymes/PAT_AMACHREE.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AMACHREE; nameMain: Amachree; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)",
+      "reviewNote": "Searched the web for a work stating this name selection and its classification; only unreferenced or SEO pages turned up, none opened as a citable source."
+    },
+    {
+      "fiche": "patronymes/PAT_AMARA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AMARA; nameMain: Amara; nameSystem: hereditary_family_name; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)",
+      "reviewNote": "Searched the web for a work stating this name selection and its classification; only unreferenced or SEO pages turned up, none opened as a citable source."
+    },
+    {
+      "fiche": "patronymes/PAT_AMEGAN.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AMEGAN; nameMain: Amegan; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)",
+      "reviewNote": "Searched the web for a work stating this name selection and its classification; only unreferenced or SEO pages turned up, none opened as a citable source."
+    },
+    {
+      "fiche": "patronymes/PAT_AMOAH.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AMOAH; nameMain: Amoah; nameSystem: non_hereditary_patronymic; transmissionMode: other; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)",
+      "reviewNote": "Searched the web for a work stating this name selection and its classification; only unreferenced or SEO pages turned up, none opened as a citable source."
+    },
+    {
+      "fiche": "patronymes/PAT_AMOUSSOU.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AMOUSSOU; nameMain: Amoussou; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)",
+      "reviewNote": "Searched the web for a work stating this name selection and its classification; only unreferenced or SEO pages turned up, none opened as a citable source."
+    },
+    {
+      "fiche": "patronymes/PAT_AMRANI.json",
+      "path": "sources[2]",
+      "claim": "id: PAT_AMRANI; nameMain: Amrani; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)",
+      "reviewNote": "Searched the web for a work stating this name selection and its classification; only unreferenced or SEO pages turned up, none opened as a citable source."
+    },
+    {
+      "fiche": "patronymes/PAT_ANDRIAMANJATO.json",
+      "path": "sources[2]",
+      "claim": "id: PAT_ANDRIAMANJATO; nameMain: Andriamanjato; nameSystem: non_hereditary_patronymic; transmissionMode: patrilineal; designatedSocialUnit: lineage",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)",
+      "reviewNote": "Searched the web for a work stating this name selection and its classification; only unreferenced or SEO pages turned up, none opened as a citable source."
+    },
+    {
+      "fiche": "patronymes/PAT_ANSAH.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_ANSAH; nameMain: Ansah; nameSystem: non_hereditary_patronymic; transmissionMode: other; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)",
+      "reviewNote": "Searched the web for a work stating this name selection and its classification; only unreferenced or SEO pages turned up, none opened as a citable source."
+    }
+  ]
+}
