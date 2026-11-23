@@ -40,12 +40,28 @@
     {
       "countryId": "MWI",
       "status": "attested",
-      "sourceRefs": ["forebears-chirwa"]
+      "sourceRefs": [
+        "forebears-chirwa",
+        "amnesty-afr36-41-1992",
+        "achpr-chirwa-1995",
+        "dacb-chirwa-yuraia"
+      ]
     }
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
-  "bearers": [],
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Orton Chirwa",
+      "sourceRefs": ["amnesty-afr36-41-1992", "achpr-chirwa-1995"]
+    },
+    {
+      "status": "deceased",
+      "displayName": "Yuraia Chatonda Chirwa",
+      "sourceRefs": ["dacb-chirwa-yuraia"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
@@ -63,6 +79,30 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Base de répartition patronymique consultée directement via son résultat indexé après le refus HTTP de la page. Elle atteste Chirwa surtout au Malawi, en Zambie et au Zimbabwe. Sa signification contributive et non référencée n'est pas reprise, et la géographie n'est pas transformée en attribution ethnique. La thèse historique également consultée reste réservée à la fiche Kamanga afin qu'aucune source ne soit portée d'une fiche à une autre."
+    },
+    {
+      "sourceKey": "achpr-chirwa-1995",
+      "title": "Achutan (on behalf of Banda) and Amnesty International (on behalf of Orton and Vera Chirwa) v. Malawi, communications 64/92, 68/92 et 78/92",
+      "url": "https://hrlibrary.umn.edu/africa/comcases/64-92b.html",
+      "tier": "official",
+      "source_kind": "archive",
+      "notes": "Décision de la Commission africaine des droits de l'homme et des peuples (Union africaine), 1995, lue en ligne le 8 novembre 2026 dans la bibliothèque de droits humains de l'université du Minnesota. Le paragraphe 2 dit qu'Orton Chirwa avait été « a prominent political figure in Malawi before independence », que les agents de sécurité malawiens l'ont pris en garde en 1981 et que les Chirwa ont ensuite été condamnés à mort pour trahison par le tribunal traditionnel de la région sud, peine commuée en détention à vie après des protestations internationales (paragraphe 3). Le texte ne donne pas la mort d'Orton Chirwa et ne dit rien de l'origine du nom."
+    },
+    {
+      "sourceKey": "amnesty-afr36-41-1992",
+      "title": "Malawi : Orton Chirwa, mort en détention (AFR 36/41/92, action urgente, 4 novembre 1992)",
+      "url": "https://www.amnesty.org/en/wp-content/uploads/2021/06/afr360411992en.pdf",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Action urgente d'Amnesty International du 4 novembre 1992, lue en texte intégral le 8 novembre 2026. Elle dit qu'Orton Chirwa, avocat et homme politique de 73 ans, prisonnier de conscience, est mort à la prison centrale de Zomba le 20 octobre 1992 et qu'il a été enterré le 1er novembre 1992 dans sa région d'origine, Nkhata Bay. Elle nomme sa veuve, Vera Chirwa, alors détenue. Le document ne dit rien du sens ni de l'origine du nom. Document d'une organisation de défense des droits humains, cité pour ce qu'il rapporte."
+    },
+    {
+      "sourceKey": "dacb-chirwa-yuraia",
+      "title": "Chirwa, Yuraia Chatonda — Dictionary of African Christian Biography",
+      "url": "https://dacb.org/stories/malawi/chirwa-yuraia/",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Notice de Masauko Wellby Tembo, soumise en novembre 2022 dans le cadre de l'université théologique de Zomba, lue le 13 octobre 2026 et relue le 8 novembre 2026. Yuraia Chatonda Chirwa (vers 1865-1951) y est dit « a Tonga by tribe », né au village de Mchaya près de la baie de Makuzi, au bord du lac Malawi. La notice ne parle ni du sens ni de l'origine du nom."
     }
   ],
   "gaps": [
@@ -79,10 +119,6 @@
       "reason": "la recherche web combinant « Chirwa », « Tumbuka », « Chewa », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la page Forebears dédiée, n'ont établi aucune fonction sociale ou professionnelle héréditaire propre au nom Chirwa."
     },
     {
-      "fieldPath": "bearers",
-      "reason": "la recherche web combinant « Chirwa », « Tumbuka », « Chewa », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la page Forebears dédiée, n'a identifié aucun porteur décédé documentable sans ambiguïté. Les personnes vivantes seulement attestées par les sources ne sont pas ajoutées."
-    },
-    {
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Chirwa », « Tumbuka », « Chewa », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la page Forebears dédiée, n'ont pas établi de lignée homonyme d'origine distincte."
     },
@@ -93,6 +129,14 @@
     {
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Chirwa », « Tumbuka », « Chewa », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la page Forebears dédiée, n'ont établi aucune règle propre à Chirwa permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
+    },
+    {
+      "fieldPath": "origin",
+      "reason": "Les trois sources lues pour ce nom (Commission africaine, Amnesty International, Dictionary of African Christian Biography) nomment des porteurs sans expliquer le nom. La recherche web « Chirwa surname origin clan Tumbuka Chewa Ngoni » ne livre que des blogs de prénoms qui se contredisent (« grand sac », « chef ») sans source ; aucun travail d'ethnographie ou de linguistique malawienne qui analyse le mot n'a été trouvé. Aucune étymologie n'est donc avancée."
+    },
+    {
+      "fieldPath": "countries",
+      "reason": "Le Zimbabwe vient du seul relevé de couverture du projet, qui n'est pas une source : il reste « supposé ». Le Malawi est établi par les trois sources lues, qui situent des porteurs à Nkhata Bay et près de la baie de Makuzi. Aucun registre officiel de répartition n'a été consulté."
     }
   ],
   "nameHistory": {

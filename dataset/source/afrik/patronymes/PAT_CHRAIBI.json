@@ -45,12 +45,22 @@
     {
       "countryId": "MAR",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue", "forebears-chraibi"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "forebears-chraibi",
+        "qantara-chraibi-2007"
+      ]
     }
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
-  "bearers": [],
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Driss Chraïbi",
+      "sourceRefs": ["qantara-chraibi-2007"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
@@ -68,13 +78,25 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Répertoire communautaire consulté le 2 septembre 2026. Il recense Chraibi surtout au Maroc et indique les variantes Chraïbi et Chraîbi, sans proposer d’étymologie."
+    },
+    {
+      "sourceKey": "qantara-chraibi-2007",
+      "title": "Encounter with a Phantom Writer : on the death of Driss Chraïbi (Regina Keil-Sagawe, Qantara.de, 2007)",
+      "url": "https://qantara.de/node/7915",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Article de la traductrice Regina Keil-Sagawe sur Qantara.de, lu en texte intégral le 8 novembre 2026. Il dit que Driss Chraïbi (1926 ?-2007), figure majeure de la littérature marocaine, est mort d'une crise cardiaque le dimanche 1er avril 2007 à Crest, en France, où il vivait depuis 1986. Il ne parle ni du sens du nom Chraïbi ni de l'origine de la famille. Les dates de naissance restent présentées avec un doute (« 1926? »)."
+    },
+    {
+      "sourceKey": "dosari-2020-sharaybi-egypte",
+      "title": "Le rôle de la famille marocaine al-Sharaybi dans les relations commerciales entre l'Égypte et le Hedjaz, 1630-1790 (notice du résumé, revue Amarabac, vol. 11, n° 37, 2020)",
+      "url": "https://search.emarefa.net/en/detail/BIM-975425",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Article de Hamsa bint Habish al-Dawsari, Amarabac, 30 juin 2020, pp. 89-138. Nous n'avons lu que la notice et le résumé, publiés sur la base e-Marefa le 8 novembre 2026, pas l'article lui-même. Le résumé présente la famille الشرايبي comme l'une des plus grandes familles marchandes d'Égypte à l'époque ottomane, d'origine marocaine. Il ne dit pas si cette famille est la même que celle des porteurs actuels du nom Chraïbi, et ne donne ni étymologie ni ascendance."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Les recherches exactes « Chraïbi anthroponymie », « Chraïbi onomastique » et « Chraïbi surname etymology » ont été menées dans Persée, ASJP, CRASC, OpenEdition, Google Scholar et des dépôts universitaires nord-africains. Aucun travail savant consacré à l’origine ou à l’histoire d’une lignée portant exactement cette graphie n’a été trouvé. La source propre au nom n’établit qu’une graphie ou une distribution et ne permet d’énoncer ni étymologie ni origine de lignée."
-    },
     {
       "fieldPath": "peoples",
       "reason": "Les recherches exactes « Chraïbi anthroponymie », « Chraïbi onomastique » et « Chraïbi surname etymology » ont été menées dans Persée, ASJP, CRASC, OpenEdition, Google Scholar et des dépôts universitaires nord-africains. Aucun travail savant consacré à l’origine ou à l’histoire d’une lignée portant exactement cette graphie n’a été trouvé. La source propre au nom ne démontre pas une association exclusive avec le peuple indiqué par la file d’attente ; ce rattachement reste au niveau non vérifié."
@@ -86,10 +108,6 @@
     {
       "fieldPath": "casteOrSocialFunction",
       "reason": "Les recherches « Chraïbi caste », « Chraïbi métier héréditaire » et « Chraïbi social function » n’ont livré aucune fonction sociale ou professionnelle héréditaire propre à cette graphie."
-    },
-    {
-      "fieldPath": "bearers",
-      "reason": "Les recherches biographiques exactes sur « Chraïbi » dans les catalogues, notices institutionnelles et archives accessibles n’ont pas permis d’isoler un porteur décédé dont ce segment soit explicitement documenté dans la position patronymique pertinente. Les personnes vivantes repérées ont été exclues."
     },
     {
       "fieldPath": "homonyms",
@@ -106,6 +124,10 @@
     {
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Chraïbi lignée », « Chraïbi clan », « Chraïbi tribe » et « Chraïbi place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
+    },
+    {
+      "fieldPath": "origin",
+      "reason": "Les recherches « Chraïbi famille origine », « الشرايبي أسرة فاس نسب » et « Chraïbi chorfa Idrissides » n'ont livré aucun texte qui explique le nom ni qui établisse une ascendance chérifienne ou idrisside de la famille. Une étude savante de 2020 existe sur une famille marchande marocaine du même nom écrit en arabe en Égypte (1630-1790), mais seul son résumé a été lu : elle n'est pas citée comme preuve d'une étymologie ni d'un lien avec les porteurs actuels. Le texte intégral de cette étude, et les ouvrages sur les familles de Fès (par exemple celui d'Ibn al-Ahmar), restent à consulter. Aucune étymologie n'est avancée."
     }
   ]
 }

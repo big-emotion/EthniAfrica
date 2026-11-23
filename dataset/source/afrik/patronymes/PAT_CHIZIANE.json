@@ -29,7 +29,7 @@
   "peoples": [
     {
       "peopleId": "PPL_TSONGA",
-      "status": "attested",
+      "status": "supposed",
       "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
@@ -37,7 +37,7 @@
     {
       "countryId": "MOZ",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "jprs-ssa-85-078"]
     }
   ],
   "alliances": [],
@@ -52,6 +52,14 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "jprs-ssa-85-078",
+      "title": "Sub-Saharan Africa Report, JPRS-SSA-85-078 (Joint Publications Research Service, 1985)",
+      "url": "https://archive.org/details/jprs-report_jprs-ssa-85-078",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Recueil du service américain de traduction et de reprise de presse, 30 août 1985, lu sur l'exemplaire numérisé d'archive.org. À la page 52, la brève « Cashew marketing figures », d'après le quotidien Notícias de Maputo du 1er juillet 1985, p. 2, rapporte une réunion tenue dans le district de Manjacaze, dans la province de Gaza, pour la fin de la vente des noix de cajou : un chèque est remis à un commerçant par « local party secretary Alberto Chiziane ». Elle ne dit rien de l'origine du nom. Lu le 13 octobre 2026."
     }
   ],
   "gaps": [
@@ -61,10 +69,6 @@
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "bearers",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
@@ -78,6 +82,18 @@
     {
       "fieldPath": "transmissionMode",
       "reason": "Nous ne documentons pas encore comment le nom Chiziane passe d'une génération à l'autre : aucune source dédiée n'a été consultée à ce jour."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Le rattachement aux Tsonga ne repose que sur le relevé de couverture du projet, qui n'est pas une source : il passe de « attesté » à « supposé ». La brève du JPRS (1985) situe un porteur dans le district de Manjacaze, province de Gaza, sans nommer de peuple."
+    },
+    {
+      "fieldPath": "bearers",
+      "reason": "La seule source lue nomme un porteur dans une brève de presse de 1985, sans qu'on sache s'il est décédé. L'écrivaine Paulina Chiziane est vivante à notre connaissance : elle n'est pas ajoutée. Aucun porteur décédé documenté n'a été trouvé."
+    },
+    {
+      "fieldPath": "origin",
+      "reason": "La brève du JPRS atteste le nom au Mozambique en 1985 mais ne l'explique pas. Aucun dictionnaire xitsonga ni travail d'onomastique mozambicaine n'a été trouvé qui l'analyse ; aucune étymologie n'est avancée."
     }
   ],
   "nameHistory": {
