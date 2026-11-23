@@ -13,7 +13,7 @@
       "attestations": [
         {
           "countryId": "COD",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["afrik-candidate-queue", "cidob-laurent-kabila"]
         }
       ]
     }
@@ -26,17 +26,29 @@
     "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
-  "peoples": [],
+  "peoples": [
+    {
+      "peopleId": "PPL_LUBA_KATANGA",
+      "status": "supposed",
+      "sourceRefs": ["cidob-laurent-kabila"]
+    }
+  ],
   "countries": [
     {
       "countryId": "COD",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "cidob-laurent-kabila"]
     }
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
-  "bearers": [],
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Laurent-Désiré Kabila (mort en 2001)",
+      "sourceRefs": ["cidob-laurent-kabila"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
@@ -46,6 +58,30 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "cidob-laurent-kabila",
+      "title": "Laurent Kabila",
+      "url": "https://www.cidob.org/lider-politico/laurent-kabila",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Fiche biographique de la fondation CIDOB (centre de recherche de Barcelone), éditée par Roberto Ortiz de Zárate Arce. Elle présente Laurent-Désiré Kabila comme « miembro de la etnia baluba » et dit que les sources se contredisent sur son lieu de naissance (Moba, Manono ou Jadotville) ; seule certitude : il est originaire du Katanga. Elle ne commente pas l'origine du nom. Lue le 8 novembre 2026."
+    },
+    {
+      "sourceKey": "colle-baluba-1913",
+      "title": "Les Baluba (Congo belge), tome II",
+      "url": "https://archive.org/details/lesbalubacongob02coll",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "R. P. Colle, Bruxelles, 1913, texte numérisé lu le 8 novembre 2026 : Kabila figure parmi les noms d'esprits luba (« Kabila ka lulombo », « Kabila ka vilye »). Source coloniale, citée pour ce que l'auteur écrit et non pour une étymologie du patronyme."
+    },
+    {
+      "sourceKey": "livingstone-last-journals-1874",
+      "title": "The Last Journals of David Livingstone, vol. II",
+      "url": "https://archive.org/details/lastjournalsofda02livi",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Londres, 1874, texte numérisé lu le 8 novembre 2026 : entrée du 20 septembre 1871, « the hot fountain called Kabila ». Nomme une source chaude du pays des Manyema, pas une famille."
     }
   ],
   "gaps": [
@@ -58,10 +94,6 @@
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
-      "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
@@ -71,7 +103,7 @@
     },
     {
       "fieldPath": "peoples",
-      "reason": "Nos fiches ne permettent pas encore de relier le nom Kabila à un peuple en République démocratique du Congo. Nous n'avons pas encore consulté de source consacrée à ce nom. Nos fiches relatent la prise de pouvoir de Laurent-Désiré Kabila et ses effets sur les Ngbande. Ce récit ne renseigne pas sur l'origine du nom."
+      "reason": "Seule l'appartenance luba d'un porteur du nom (Laurent-Désiré Kabila, selon la fondation CIDOB) a été établie. Aucune source lue ne dit à quel peuple le nom lui-même appartient : le rattachement reste une supposition. Recherches faites : fiche CIDOB, Encyclopedia.com (Columbia Encyclopedia, sans mention de l'ethnie)."
     }
   ],
   "nameHistory": {

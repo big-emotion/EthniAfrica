@@ -22,7 +22,13 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [],
+    "writtenChronicles": [
+      {
+        "claim": "Le père Colle note en 1913 que Mulumba est l'un des cinq noms de classe des Bahayo, les membres de la confrérie luba du buhabo ; ceux qui le portent ont pour totem l'oiseau kasozo. Il s'agit d'un nom de confrérie donné à l'initiation, et le texte ne dit pas qu'il se transmette de père en fils.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["colle-baluba-1913"]
+      }
+    ],
     "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
@@ -30,7 +36,7 @@
     {
       "peopleId": "PPL_LUBA",
       "status": "supposed",
-      "sourceRefs": ["forebears-mulumba"]
+      "sourceRefs": ["forebears-mulumba", "colle-baluba-1913"]
     }
   ],
   "countries": [
@@ -52,6 +58,14 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Base de répartition patronymique consultée directement. Elle atteste l’orthographe Mulumba et sa présence dans la RDC, mais la distribution ne démontre ni l’appartenance Luba, ni une origine unique, ni un mode de transmission."
+    },
+    {
+      "sourceKey": "colle-baluba-1913",
+      "title": "Les Baluba (Congo belge), tome II",
+      "url": "https://archive.org/details/lesbalubacongob02coll",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "R. P. Colle, Bruxelles, Albert Dewit, 1913, texte numérisé sur archive.org, lu le 8 novembre 2026. Missionnaire des Pères blancs : source coloniale, citée pour ce que l'auteur écrit et non comme une vérité intemporelle. Dans le chapitre sur la confrérie du buhabo : « Veux-tu le nom Mulumba ? Veux-tu le nom Kileme ? » ; puis « Les Bahayo sont divisés en cinq classes : 1° ceux qui ont le nom Mulumba ; ils ont pour totem l'oiseau kasozo »."
     }
   ],
   "gaps": [
@@ -78,6 +92,10 @@
     {
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mulumba », « Luba », « la RDC », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a établi aucune règle propre à Mulumba permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
+    },
+    {
+      "fieldPath": "origin.linguisticReconstructions",
+      "reason": "Aucun dictionnaire ni travail d'onomastique ciluba lu n'explique le sens de Mulumba. Cherché : Colle 1913 (le nom y est cité sans traduction) et l'article de Mulamba sur les anthroponymes ciluba (cité à la fiche Mutombo), qui ne le traite pas."
     }
   ],
   "nameHistory": {

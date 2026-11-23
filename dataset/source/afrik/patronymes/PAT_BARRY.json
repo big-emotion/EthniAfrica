@@ -13,7 +13,10 @@
       "attestations": [
         {
           "countryId": "BFA",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "diallo-2006-plaisanterie-peuls"
+          ]
         },
         {
           "countryId": "GIN",
@@ -26,7 +29,15 @@
       "attestations": [
         {
           "countryId": "GIN",
-          "sourceRefs": ["afrik-candidate-queue", "vieillard-fouta-clans"]
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "vieillard-fouta-clans",
+            "cantrelle-dupire-1964"
+          ]
+        },
+        {
+          "countryId": "BFA",
+          "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
         }
       ]
     }
@@ -34,7 +45,15 @@
   "transmissionMode": "patrilineal",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
+    "oralTraditions": [
+      {
+        "claim": "À Tarambaali, au Fouta-Djalon, les lignages du clan Bari descendraient d'un ancêtre qui aurait été l'élève coranique d'Alfa Moussa, le fondateur de la mosquée du village.",
+        "claimStatus": "claimed",
+        "collection": "not-stated",
+        "context": "Récit local de la misiide de Tarambaali (Guinée), rapporté au conditionnel par les enquêteurs dans leur étude de 1964 ; ni le narrateur ni la date de collecte ne sont donnés.",
+        "sourceRefs": ["cantrelle-dupire-1964"]
+      }
+    ],
     "writtenChronicles": [],
     "historicalSyntheses": [],
     "linguisticReconstructions": []
@@ -46,7 +65,8 @@
       "sourceRefs": [
         "afrik-candidate-queue",
         "vieillard-fouta-clans",
-        "straussberger-2016-futa"
+        "straussberger-2016-futa",
+        "cantrelle-dupire-1964"
       ]
     }
   ],
@@ -54,7 +74,7 @@
     {
       "countryId": "BFA",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "diallo-2006-plaisanterie-peuls"]
     },
     {
       "countryId": "GIN",
@@ -62,11 +82,18 @@
       "sourceRefs": [
         "afrik-candidate-queue",
         "vieillard-fouta-clans",
-        "straussberger-2016-futa"
+        "straussberger-2016-futa",
+        "cantrelle-dupire-1964"
       ]
     }
   ],
-  "alliances": [],
+  "alliances": [
+    {
+      "targetPatronymeId": "PAT_SIDIBE",
+      "allianceType": "hōlaare",
+      "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
+    }
+  ],
   "casteOrSocialFunction": null,
   "bearers": [],
   "homonyms": [],
@@ -94,13 +121,25 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "John Straussberger, The Journal of African History 57/2, 2016, p. 231-249, DOI 10.1017/S0021853716000050. La note 35 nomme explicitement Diallo, Barry, Sow et Bah comme yettore employés comme noms de famille et marqueurs fulɓe au Fouta-Djalon."
+    },
+    {
+      "sourceKey": "cantrelle-dupire-1964",
+      "title": "L'endogamie des Peuls du Fouta-Djallon",
+      "url": "https://webguine.site/bibliotheque/archives/rechAfric/1964/endogamiePeulFJ.html",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "P. Cantrelle et M. Dupire, Études guinéennes / Recherches africaines, 1964, reproduit par webGuinée. Enquête de terrain dans les villages de Dionfo et Tarambaali. Passages lus le 8 novembre 2026 : « la filiation s'établit par les mâles. Tout Foula dit appartenir à l'un des patriclans, Ba, Bari, So, Diallo » ; et « les lignages de clan Bari descendraient d'un ancêtre qui aurait été l'élève coranique du fondateur de la mosquée, Alfa Moussa ». Le texte emploie la forme Bari."
+    },
+    {
+      "sourceKey": "diallo-2006-plaisanterie-peuls",
+      "title": "Identités et relations de plaisanterie chez les Peuls de l'ouest du Burkina Faso",
+      "url": "https://journals.openedition.org/etudesafricaines/15399",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Youssouf Diallo, Cahiers d'études africaines, vol. 46, n° 184, 2006, p. 779-794. Lu le 8 novembre 2026 : « Les Sidibe et les Bari de l'ancienne chefferie de Barani, par exemple, sont liés par le hōlaare ». Il s'agit de l'ouest du Burkina Faso ; l'article écrit Bari, que la fiche rattache à Barry sans que l'auteur le dise."
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "alliances",
-      "reason": "Vieillard et Straussberger ont été recherchés pour une paire de dendiraagal nommant Barry ou Bari ; aucune paire explicite n’a été trouvée."
-    },
     {
       "fieldPath": "casteOrSocialFunction",
       "reason": "Les sources consultées classent Barry parmi des groupements transversaux aux rangs et ne lui attribuent aucun métier héréditaire ; aucune fonction de caste propre au nom n’est établie."
@@ -112,6 +151,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "La recherche des formes Barry et Bari dans Vieillard et Straussberger n’a pas mis au jour deux lignées distinctes ; les deux graphies sont traitées comme celles du même groupe Dayeeɓe."
+    },
+    {
+      "fieldPath": "alliances",
+      "reason": "Seule l'alliance hōlaare avec les Sidibé est établie (Diallo 2006). Vieillard et Straussberger ne nomment aucune autre paire pour Barry ou Bari."
     }
   ],
   "nameHistory": {

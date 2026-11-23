@@ -14,6 +14,10 @@
         {
           "countryId": "MLI",
           "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "BFA",
+          "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
         }
       ]
     },
@@ -50,6 +54,11 @@
       "countryId": "MLI",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "BFA",
+      "status": "attested",
+      "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
     }
   ],
   "alliances": [
@@ -62,6 +71,11 @@
         "canut-2002-senankuya",
         "canut-smith-2006-pactes"
       ]
+    },
+    {
+      "targetPatronymeId": "PAT_BARRY",
+      "allianceType": "hōlaare",
+      "sourceRefs": ["diallo-2006-plaisanterie-peuls"]
     }
   ],
   "casteOrSocialFunction": null,
@@ -98,7 +112,7 @@
       "url": "https://journals.openedition.org/etudesafricaines/15399",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Youssouf Diallo, Cahiers d'études africaines, vol. 46, n° 184, 2006, p. 779-794 (DOI 10.4000/etudesafricaines.15399). Revue à comité de lecture ; l'auteur était alors rattaché au Max-Planck-Institut für ethnologische Forschung. L'article situe Sidibé parmi les quatre clans peuls principaux (Diallo, Diakité, Sidibé, Sangaré) et décrit le couple Sidibé/Sangaré comme homologue au sein du noyau mythique de l'identité peule, entretenant à ce titre des relations de plaisanterie (dendiraagu, terme peul pour cette relation) ; l'enquête de terrain porte sur les Peuls de l'ouest du Burkina Faso."
+      "notes": "Youssouf Diallo, Cahiers d'études africaines, vol. 46, n° 184, 2006, p. 779-794 (DOI 10.4000/etudesafricaines.15399). Revue à comité de lecture ; l'auteur était alors rattaché au Max-Planck-Institut für ethnologische Forschung. L'article situe Sidibé parmi les quatre clans peuls principaux (Diallo, Diakité, Sidibé, Sangaré) et décrit le couple Sidibé/Sangaré comme homologue au sein du noyau mythique de l'identité peule, entretenant à ce titre des relations de plaisanterie (dendiraagu, terme peul pour cette relation) ; l'enquête de terrain porte sur les Peuls de l'ouest du Burkina Faso. Relu le 8 novembre 2026 : « Les Sidibe et les Bari de l'ancienne chefferie de Barani, par exemple, sont liés par le hōlaare » ; un Sidibé en visite chez un Bari peut se permettre de prendre ses objets. L'article écrit Bari ; nous le rattachons à la fiche Barry, dont Bari est une graphie, sans que l'auteur le dise."
     },
     {
       "sourceKey": "canut-2002-senankuya",
@@ -133,6 +147,10 @@
     {
       "fieldPath": "transmissionMode",
       "reason": "Rainer et Trebbi expliquent l’identification peule/malinké de Sidibé sans décrire la règle de transmission du nom ; aucun travail onomastique dédié établissant une filiation patrilinéaire, matrilinéaire ou élective n’a été trouvé."
+    },
+    {
+      "fieldPath": "origin",
+      "reason": "L'article de Youssouf Diallo (2006) a été relu : il ne donne aucun récit d'origine propre à Sidibé ; seul un récit concernant Diallo et Diakité y figure. Les recueils de traditions orales et chroniques du Wassoulou n'ont pas pu être consultés dans le temps imparti."
     }
   ],
   "nameHistory": {

@@ -91,11 +91,11 @@
   "gaps": [
     {
       "fieldPath": "origin.oralTraditions",
-      "reason": "Les récits de l'entrée Ilboudo/Lilboudo/Yilboudo ne sont rattachés à aucun griot nommé et n'ont pas de transcription publiée conforme au schéma."
+      "reason": "Les récits de l'entrée Ilboudo/Lilboudo/Yilboudo ne sont rattachés à aucun griot nommé et n'ont pas de transcription publiée conforme au schéma. Recherche complémentaire du 8 novembre 2026 : l'article d'Izard (1973, Persée, page ouverte) décrit le buudu mossi mais ne nomme ni Kaboré ni Ilboudo ; une recherche web sur les traditions d'origine de ce nom n'a donné que des généralités sur Tenkodogo et aucune source dédiée."
     },
     {
       "fieldPath": "origin.writtenChronicles",
-      "reason": "Les recherches Ilboudo, Lilboudo et Yilboudo dans Persée, theses.fr et les catalogues burkinabè n'ont pas livré de chronique historique indépendante."
+      "reason": "Les recherches Ilboudo, Lilboudo et Yilboudo dans Persée, theses.fr et les catalogues burkinabè n'ont pas livré de chronique historique indépendante. Recherche complémentaire du 8 novembre 2026 : l'article d'Izard (1973, Persée, page ouverte) décrit le buudu mossi mais ne nomme ni Kaboré ni Ilboudo ; une recherche web sur les traditions d'origine de ce nom n'a donné que des généralités sur Tenkodogo et aucune source dédiée."
     },
     {
       "fieldPath": "alliances",

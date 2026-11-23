@@ -1,0 +1,83 @@
+{
+  "description": "Proposals for the ai_generated sources of the surnames-03 batch (PAT_KABILA, PAT_BARRY, PAT_SIDIBE). Status proposed: the operator decides each one; none has an id or a decision.",
+  "verifications": [
+    {
+      "fiche": "patronymes/PAT_KABILA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_KABILA; nameMain: Kabila; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Laurent Kabila",
+          "author": "Roberto Ortiz de Zárate Arce (ed.), Fundación CIDOB",
+          "year": null,
+          "url": "https://www.cidob.org/lider-politico/laurent-kabila",
+          "source_kind": "academic",
+          "quote": "Miembro de la etnia baluba, perteneciente a su vez al gran grupo bantú",
+          "supports": "Supports only that a bearer of the name, Laurent-Désiré Kabila, is Luba and from Katanga (country COD). Does NOT support nameSystem clan_name, designatedSocialUnit clan or any transmission rule; the page does not discuss the name."
+        },
+        {
+          "title": "Les Baluba (Congo belge), tome II",
+          "author": "R. P. Colle",
+          "year": 1913,
+          "url": "https://archive.org/details/lesbalubacongob02coll",
+          "source_kind": "archive",
+          "quote": "Voici le Kabila ka vilye, Kabila femme ou fille de l'esprit",
+          "supports": "Supports only that Kabila is a Luba spirit name in 1913. Does not support a clan name; colonial source."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5 (workflow batch surnames-03)"
+    },
+    {
+      "fiche": "patronymes/PAT_BARRY.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BARRY; nameMain: Barry; nameSystem: clan_name; transmissionMode: patrilineal; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "L'endogamie des Peuls du Fouta-Djallon",
+          "author": "P. Cantrelle et M. Dupire",
+          "year": 1964,
+          "url": "https://webguine.site/bibliotheque/archives/rechAfric/1964/endogamiePeulFJ.html",
+          "source_kind": "academic",
+          "quote": "la filiation s'établit par les mâles. Tout Foula dit appartenir à l'un des patriclans, Ba, Bari, So, Diallo",
+          "supports": "Supports nameSystem clan_name, designatedSocialUnit clan and transmissionMode patrilineal for the Bari form of the name in the Fouta-Djalon. Does not cover Burkina Faso."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5 (workflow batch surnames-03)"
+    },
+    {
+      "fiche": "patronymes/PAT_SIDIBE.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_SIDIBE; nameMain: Sidibé; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Identités et relations de plaisanterie chez les Peuls de l'ouest du Burkina Faso",
+          "author": "Youssouf Diallo",
+          "year": 2006,
+          "url": "https://journals.openedition.org/etudesafricaines/15399",
+          "source_kind": "academic",
+          "quote": "l'ensemble ethnique peul est composé de quatre clans principaux : Diallo, Diakite, Sidibe et Sangare.",
+          "supports": "Supports nameSystem clan_name and designatedSocialUnit clan for Sidibé among the Fulbe of western Burkina Faso. Does not support transmissionMode: the article does not state how clan membership is transmitted. Does not cover Mali."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5 (workflow batch surnames-03)"
+    }
+  ]
+}

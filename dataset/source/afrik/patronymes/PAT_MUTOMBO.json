@@ -22,7 +22,13 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [],
+    "writtenChronicles": [
+      {
+        "claim": "Chez les Baluba, selon le père Colle (1913), « Bwana Mutombo » est le titre du sculpteur officiel des fétiches, que l'on obtient en apprenant le métier auprès d'un maître et non par la naissance. Colle emploie Mutombo dans ce titre, pas comme nom de famille.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["colle-baluba-1913"]
+      }
+    ],
     "historicalSyntheses": [],
     "linguisticReconstructions": []
   },
@@ -60,6 +66,14 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Base de répartition patronymique consultée directement. Elle atteste l’orthographe Mutombo et sa présence dans la RDC, mais la distribution ne démontre ni l’appartenance Luba, ni une origine unique, ni un mode de transmission."
+    },
+    {
+      "sourceKey": "colle-baluba-1913",
+      "title": "Les Baluba (Congo belge), tome II",
+      "url": "https://archive.org/details/lesbalubacongob02coll",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "R. P. Colle, Bruxelles, Albert Dewit, 1913, texte numérisé sur archive.org, lu le 8 novembre 2026. Missionnaire des Pères blancs : source coloniale, citée pour ce que l'auteur écrit et non comme une vérité intemporelle. Le chapitre sur les fétiches dit : « le fabricant attitré, quasi officiel, c'est le Bwana Mutombo », et plus loin : « Les Bwana-Mutombo sont les sculpteurs officiels de fétiches ». On y devient Bwana Mutombo par apprentissage, « moyennant redevance », chez un maître en exercice."
     }
   ],
   "gaps": [
@@ -69,7 +83,7 @@
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "la recherche web et bibliographique combinant « Mutombo », « Luba », « la RDC », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la source dédiée « Anthroponyms We Live By: An Ecolinguistic Approach to Names in Ciluba » et la page Forebears propre au nom, consultées directement, n’a établi aucune fonction sociale ou professionnelle héréditaire propre à Mutombo."
+      "reason": "Colle (1913) décrit un titre de sculpteur, « Bwana Mutombo », obtenu par apprentissage. Rien dans les sources lues ne dit que les porteurs du nom de famille Mutombo héritent de ce métier : aucune fonction héréditaire n'est donc retenue."
     },
     {
       "fieldPath": "bearers",
