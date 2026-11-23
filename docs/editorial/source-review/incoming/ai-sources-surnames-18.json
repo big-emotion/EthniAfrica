@@ -1,0 +1,74 @@
+{
+  "description": "Proposals for the ai_generated coverage-survey citation (sources[0], afrik-candidate-queue) of the surnames-18 batch. Proposed only: the operator decides each one. PAT_CHUKWU, PAT_CISSE, PAT_CONFAIT, PAT_CONTEH, PAT_COOPER, PAT_COSSA and PAT_COSTA are not yet proposed (no supporting passage read in this session).",
+  "verifications": [
+    {
+      "fiche": "patronymes/PAT_COLE.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_COLE; nameMain: Cole; nameSystem: hereditary_family_name; transmissionMode: patrilineal; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Elite persistence in Sierra Leone: what can names tell us? (African Economic History Working Paper No. 71)",
+          "author": "Yannick Dupraz, Rebecca Simson",
+          "year": 2023,
+          "url": "https://www.aehnetwork.org/wp-content/uploads/2023/03/71_AEHNWP_Dupraz_Simson.pdf",
+          "source_kind": "academic",
+          "quote": "Most held or assumed a set of common Anglo-Saxon last names associated with the first settlers from the Americas or with British administrators and settlers, such as Cole, Davies, Johnson and Williams.",
+          "supports": "Cole is a hereditary family name in Sierra Leone, held by Krio families and associated with settlers and British administrators. Working paper, not peer reviewed (the paper says so itself). Read in full text on 2026-11-08. The passage does not state the transmission rule."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_COKER.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_COKER; nameMain: Coker; nameSystem: hereditary_family_name; transmissionMode: patrilineal; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Elite persistence in Sierra Leone: what can names tell us? (African Economic History Working Paper No. 71)",
+          "author": "Yannick Dupraz, Rebecca Simson",
+          "year": 2023,
+          "url": "https://www.aehnetwork.org/wp-content/uploads/2023/03/71_AEHNWP_Dupraz_Simson.pdf",
+          "source_kind": "academic",
+          "quote": "Some of the most common Krio surnames are names of known European settlers (Cole, Coker).",
+          "supports": "Coker is a hereditary family name among the Krio of Sierra Leone, of settler origin. Working paper, not peer reviewed. Read in full text on 2026-11-08. The passage does not state the transmission rule."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    },
+    {
+      "fiche": "patronymes/PAT_CO.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_CO; nameMain: Có; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Marcelino Marques de Barros an Hugo Schuchardt (03-00537), Lisbon, 5 July 1885",
+          "author": "Marcelino Marques de Barros",
+          "year": 1885,
+          "url": "https://gams.uni-graz.at/o:hsa.letter.2779/sdef:TEI/get?context=context:hsa.letters&locale=de",
+          "source_kind": "archive",
+          "quote": "somente Cól po Có, tribu papel com este appelido",
+          "supports": "Có is a surname borne by a group of the Papel (Guinea-Bissau), per a nineteenth-century correspondent. Hugo Schuchardt Archiv, ed. Silvio Moreira de Sousa (2015). The page was read through a summarising fetch tool, so the quote should be checked against the live page. A primary letter, not a study of the name."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "claude-sonnet-5-5"
+    }
+  ]
+}
