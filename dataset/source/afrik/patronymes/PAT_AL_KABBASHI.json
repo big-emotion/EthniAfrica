@@ -22,7 +22,11 @@
       "attestations": [
         {
           "countryId": "SDN",
-          "sourceRefs": ["afrik-candidate-queue", "forebears-kabbashi"]
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "forebears-kabbashi",
+            "macmichael-1922"
+          ]
         }
       ]
     }
@@ -46,7 +50,11 @@
     {
       "countryId": "SDN",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue", "forebears-kabbashi"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "forebears-kabbashi",
+        "macmichael-1922"
+      ]
     }
   ],
   "alliances": [],
@@ -69,6 +77,14 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Répertoire communautaire consulté le 2 septembre 2026. Il recense Kabbashi au Soudan mais ne donne aucune signification ni histoire de lignée ; ses statistiques ne prouvent pas une origine ethnique."
+    },
+    {
+      "sourceKey": "macmichael-1922",
+      "title": "A History of the Arabs in the Sudan, vol. I",
+      "url": "https://archive.org/details/historyofarabsin01macmuoft",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 307 : chapitre 4, section « (a) The Kababish », description du groupe et de sa composition. Page 308 : « The name of Kababish (sing. Kabbashi) »."
     }
   ],
   "gaps": [

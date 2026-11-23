@@ -60,6 +60,14 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "le360-akhannouch-2021",
+      "title": "Vidéo. À Aguerd Oudad, le fief des Akhannouch",
+      "url": "https://fr.le360.ma/politique/video-a-aguerd-oudad-le-fief-des-akhannouch-245982/",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Le360, 20 septembre 2021, lu le 14 octobre 2026. L'article dit : « Près de Tafraout, un douar : Aguerd Oudad, fief des Akhannouch. L'Haj Hmad Akhannouch, patriarche de cette famille aujourd'hui prospère, en est originaire », et place Tafraout dans la province de Tiznit, dans le Souss. Un habitant cité, Brahim Chahid, situe leur domicile au centre du douar. L'article ne dit rien du sens du nom."
     }
   ],
   "gaps": [

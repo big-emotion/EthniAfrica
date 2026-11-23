@@ -1,0 +1,190 @@
+{
+  "description": "Proposals for the ai_generated sources of the premium surnames batch 08. Status proposed only: the operator decides each one.",
+  "verifications": [
+    {
+      "fiche": "patronymes/PAT_AKHANNOUCH.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AKHANNOUCH; nameMain: Akhannouch; nameSystem: hereditary_family_name; transmissionMode: other; designatedSocialUnit: lineage",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Vidéo. À Aguerd Oudad, le fief des Akhannouch",
+          "author": "M'hand Oubarka",
+          "year": 2021,
+          "url": "https://fr.le360.ma/politique/video-a-aguerd-oudad-le-fief-des-akhannouch-245982/",
+          "source_kind": "press",
+          "quote": "L'Haj Hmad Akhannouch, patriarche de cette famille aujourd'hui prospère, en est originaire.",
+          "supports": "Attests Akhannouch as a family name tied to the douar of Aguerd Oudad near Tafraout (Souss, Morocco). Says nothing about meaning or the PPL_CHLEUH link, which stays unsupported."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_ALAO.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_ALAO; nameMain: Alao; nameSystem: praise_name; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Àlàó - YorubaNames",
+          "author": null,
+          "year": null,
+          "url": "https://www.yorubaname.com/entries/ALAO",
+          "source_kind": "community",
+          "quote": "One destined to divide and conquer his/her enemies. [...] à-là-wó [...] A cognomen, oríkì.",
+          "supports": "Classes Alao as an oriki (praise name), gives the morphology and a gloss, and lists Arisekola Alao (1945-2014, Ibadan politician and businessman). Collaborative dictionary: community tier at best. Says nothing about Benin (BEN), so the country claim is not supported by it."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_ALAOUI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_ALAOUI; nameMain: Alaoui; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: lineage",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "« Si Mohammed! » : Names as Address Forms in Moroccan Arabic",
+          "author": null,
+          "year": 1999,
+          "url": "https://ans-names.pitt.edu/ans/article/download/1544/1543/3090",
+          "source_kind": "academic",
+          "quote": "Traditional family names may derive from prestigious Andalusian Muslim families (Benchekroun, Bennani), Arab tribes (al-Fihri, as-Sufyani) or Arab dynasties (al-Alaoui, al-Idrissi), or place names",
+          "supports": "Shows that al-Alaoui is a Moroccan family name of dynastic origin, consistent with the nisba classification. Read in this session from the downloaded PDF; author not checked on the PDF."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_ALEMAYEHU.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_ALEMAYEHU; nameMain: Alemayehu; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)",
+      "reviewNote": "Search found only aggregator and name-dictionary pages for the meaning of Alemayehu; no scholarly page was opened in this session."
+    },
+    {
+      "fiche": "patronymes/PAT_AL_DANAGLA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AL_DANAGLA; nameMain: al-Danagla; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "A History of the Arabs in the Sudan, vol. I",
+          "author": "Harold Alfred MacMichael",
+          "year": 1922,
+          "url": "https://archive.org/details/historyofarabsin01macmuoft",
+          "source_kind": "academic",
+          "quote": "commonly known to the south as Danagla, i.e. inhabitants of Dongola",
+          "supports": "Danagla as a group name meaning 'inhabitants of Dongola' (p. 13, colonial-era source, to be labelled as such). Read in the Internet Archive full text."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_AL_GADDAFI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AL_GADDAFI; nameMain: Al-Gaddafi; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)",
+      "reviewNote": "Searches for a source on the Qadhadhfa nisba returned Wikipedia mirrors and a UNHCR Refworld copy of 'Mapping Qaddafi's Tribal Allegiances in Libya'; the archive copy was blocked (verification page) and nothing could be quoted."
+    },
+    {
+      "fiche": "patronymes/PAT_AL_GHARIANI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AL_GHARIANI; nameMain: Al-Ghariani; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: settlement",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)",
+      "reviewNote": "The Najem (Westminster) PDF already cited in the fiche answered HTTP 405 to the fetch tool, so no passage could be quoted in this session."
+    },
+    {
+      "fiche": "patronymes/PAT_AL_JAALI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AL_JAALI; nameMain: al-Jaʿali; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Breaking the Pen (of Sir Harold ibn MacMichael ibn Hicks) The Ja'aliyyin Identity Revisited",
+          "author": "Abdullahi Ali Ibrahim",
+          "year": 1988,
+          "url": "https://ajis.org/index.php/ajiss/article/view/2881",
+          "source_kind": "academic",
+          "quote": "The indigenous tradition characterizes the Ja'aliyyin unequivocally as Arabs, who descended from al-'Abbas",
+          "supports": "Attests the Ja'aliyyin name and the tradition of descent from al-'Abbas, reported (not endorsed) by the author. Only the introduction is visible online; the full text was not read."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_AL_KABBASHI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AL_KABBASHI; nameMain: al-Kabbashi; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)",
+      "reviewNote": "MacMichael vol. I (p. 307-308) is already cited in the nameHistory; the Internet Archive text fetched in this session did not reach those pages, so no passage was quoted."
+    },
+    {
+      "fiche": "patronymes/PAT_AL_MAGARIEF.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AL_MAGARIEF; nameMain: Al-Magarief; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)",
+      "reviewNote": "The RAND RR129 PDF already cited in the fiche answered HTTP 403 to the fetch tool, so no passage could be quoted in this session."
+    }
+  ]
+}

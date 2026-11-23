@@ -55,7 +55,7 @@
     {
       "countryId": "SDN",
       "status": "attested",
-      "sourceRefs": ["jaeger-2024-danagla"]
+      "sourceRefs": ["jaeger-2024-danagla", "macmichael-1922"]
     }
   ],
   "alliances": [],
@@ -78,6 +78,14 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Marcus Jaeger, thèse de doctorat, Universität zu Köln, 2024, p. 18-19. Le texte distingue les usages d'Andaandi, de Dongolawi et de Danágla au Soudan. Il décrit Dongolawi comme un nom donné de l'extérieur, et dungulanderi et dungulawi comme des noms employés par les personnes concernées. Il ne décrit pas l'usage d'al-Danagla comme nom de famille."
+    },
+    {
+      "sourceKey": "macmichael-1922",
+      "title": "A History of the Arabs in the Sudan, vol. I",
+      "url": "https://archive.org/details/historyofarabsin01macmuoft",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 16 octobre 2026 dans la numérisation d'Internet Archive. Page imprimée vérifiée sur l'image de la page. Page 13 : « are commonly known to the north as Barabra... and to the south as Danagla, i.e. inhabitants of Dongola » et la note 2."
     }
   ],
   "gaps": [

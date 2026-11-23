@@ -60,6 +60,30 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Entrée communautaire consultée le 2 septembre 2026 : elle donne la graphie amharique አለማየሁ et la glose « I have seen the world ». Elle ne documente ni lignée ni transmission. Les versions anglaise et française de Wikipédia n'ont été contrôlées que comme pistes et ne sont pas citées."
+    },
+    {
+      "sourceKey": "ifla-names-of-persons-1996",
+      "title": "Names of Persons: National Usages for Entry in Catalogues",
+      "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+      "tier": "referenced",
+      "source_kind": "repository",
+      "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lue dans le PDF de l'IFLA le 12 octobre 2026. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle cite Wolde Mariam parmi les noms composés, W. Berhan pour Wolde Berhan parmi les abréviations, et l'abuna Lukas Tewolde parmi les exemples. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
+    },
+    {
+      "sourceKey": "dafn-alemayehu",
+      "title": "Dictionary of American Family Names, 2e éd. — Alemayehu",
+      "url": "https://www.ancestry.com/last-name-meaning/alemayehu?geo-lang=en",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel éthiopien interprété comme « j'ai vu le monde » en amharique. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+    },
+    {
+      "sourceKey": "rassam-1869",
+      "title": "Narrative of the British Mission to Theodore, King of Abyssinia (tome II)",
+      "url": "https://archive.org/details/narrativebritis01rassgoog",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Londres, John Murray, 1869, tome II. Lu le 13 octobre 2026 sur l'exemplaire numérisé de Google, déposé sur archive.org. Page 277, journal du 25 mars 1868 à Magdala : la reine Teru-Wark et « her son Dajjaj 'Alamayo » sont appelés à Salamgé. Le texte écrit le nom de la même façon page 293 (« Prince 'Alamayo ») ; l'auteur ne dit pas ce que veut dire le nom."
     }
   ],
   "gaps": [
