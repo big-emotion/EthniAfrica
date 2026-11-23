@@ -92,6 +92,16 @@
         "url": "https://www.ethnologue.com/country/ZM/",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "The Ila-Speaking Peoples of Northern Rhodesia, vol. I",
+        "author": "Edwin W. Smith and Andrew Murray Dale",
+        "year": 1920,
+        "url": "https://archive.org/details/ilaspeakingpeopl00smit",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. xxv-xxvii",
+        "notes": "Missionary monograph (London, Macmillan, 1920), read on the Internet Archive scan. Supports only the passages on the name Ba-ila and the country Bwila."
       }
     ]
   },

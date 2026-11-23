@@ -132,6 +132,12 @@
         "url": "https://digitalcollections.sit.edu/cgi/viewcontent.cgi?article=3539&context=capstones",
         "tier": "needs_review",
         "source_kind": "academic"
+      },
+      {
+        "title": "Glottolog - Hunde (hund1239)",
+        "url": "https://glottolog.org/resource/languoid/id/hund1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   },
