@@ -2,11 +2,13 @@
  * Public agent — a read-only Model Context Protocol server over the corpus.
  *
  * Stateless: each POST carries one JSON-RPC message and gets one JSON answer,
- * no session id, no event stream. Two tools, both read-only: search a name,
- * read one fiche. The corpus is read through the /api/v2 handlers and their
+ * no session id, no event stream. Two read-only tools (search a name, read
+ * one fiche) and one write, `proposer_nom`, which only files a proposal for
+ * human review (see publicAgentProposal.ts). The corpus is read through the /api/v2 handlers and their
  * services, never through a database client of its own.
  *
- * Nothing about the caller is stored: the search is called without the
+ * Nothing about the caller is stored (the API key id only keys a daily
+ * counter that expires on its own): the search is called without the
  * route's query log, and the handler keeps no state between calls.
  */
 import { z } from "zod";
@@ -16,6 +18,11 @@ import { getLanguageFamilyHandler } from "@/api/v2/handlers/languageFamilies";
 import { getLanguageHandler } from "@/api/v2/handlers/languages";
 import { getPatronymeHandler } from "@/api/v2/handlers/patronymes";
 import { getPeopleHandler } from "@/api/v2/handlers/peoples";
+import {
+  proposalsEnabled,
+  proposeName,
+  type ProposalCaller,
+} from "@/api/v2/handlers/publicAgentProposal";
 import { ftsSearchHandler } from "@/api/v2/handlers/search";
 import { logger } from "@/lib/api/logger";
 import {
@@ -92,7 +99,7 @@ const READ_ONLY = {
   openWorldHint: false,
 };
 
-const TOOLS = [
+const READ_TOOLS = [
   {
     name: "rechercher_nom",
     title: copy.tools.searchTitle,
@@ -127,6 +134,73 @@ const TOOLS = [
     annotations: READ_ONLY,
   },
 ];
+
+const PROPOSAL_TYPES = ["nouveau_nom", "correction", "temoignage"];
+
+// A write, so not readOnlyHint: the host may ask the person before calling it.
+const PROPOSE_TOOL = {
+  name: "proposer_nom",
+  title: copy.tools.proposeTitle,
+  description: copy.tools.proposeDescription,
+  inputSchema: {
+    type: "object",
+    properties: {
+      nom: {
+        type: "string",
+        description: copy.tools.proposeFields.name,
+        maxLength: 120,
+      },
+      type: {
+        type: "string",
+        enum: PROPOSAL_TYPES,
+        description: copy.tools.proposeFields.type,
+      },
+      details: {
+        type: "string",
+        description: copy.tools.proposeFields.details,
+        maxLength: 2000,
+      },
+      sources: {
+        type: "array",
+        items: { type: "string", maxLength: 300 },
+        maxItems: 5,
+        description: copy.tools.proposeFields.sources,
+      },
+      fiche: {
+        type: "string",
+        maxLength: 64,
+        description: copy.tools.proposeFields.fiche,
+      },
+      element: {
+        type: "string",
+        maxLength: 200,
+        description: copy.tools.proposeFields.element,
+      },
+      consentement: {
+        type: "boolean",
+        description: copy.tools.proposeFields.consent,
+      },
+      temoignage: {
+        type: "string",
+        maxLength: 2000,
+        description: copy.tools.proposeFields.testimony,
+      },
+    },
+    required: ["nom", "type", "details"],
+    additionalProperties: false,
+  },
+  annotations: {
+    readOnlyHint: false,
+    destructiveHint: false,
+    idempotentHint: false,
+    openWorldHint: false,
+  },
+};
+
+/** The proposal tool is listed only while it can work: the kill switch hides it. */
+function listedTools() {
+  return proposalsEnabled() ? [...READ_TOOLS, PROPOSE_TOOL] : READ_TOOLS;
+}
 
 class InvalidParams extends Error {}
 
@@ -313,16 +387,37 @@ async function readFiche(args: unknown) {
   return toolResult(undefined, [buildAgentFrame(subjectOfFiche(kind, fiche))]);
 }
 
-const TOOL_RUNNERS: Record<string, (args: unknown) => Promise<unknown>> = {
+async function proposeNameTool(args: unknown, caller: ProposalCaller) {
+  const outcome = await proposeName(args, caller);
+  switch (outcome.status) {
+    case "invalid":
+      throw new InvalidParams(outcome.message);
+    case "refused":
+      return toolError(outcome.message);
+    case "failed":
+      return toolError(copy.proposal.outage);
+    case "received":
+      return {
+        content: [{ type: "text", text: outcome.message }],
+        structuredContent: { codeDeRetrait: outcome.withdrawalCode },
+      };
+  }
+}
+
+const TOOL_RUNNERS: Record<
+  string,
+  (args: unknown, caller: ProposalCaller) => Promise<unknown>
+> = {
   rechercher_nom: searchName,
   lire_fiche: readFiche,
+  proposer_nom: proposeNameTool,
 };
 
-async function callTool(params: Row) {
+async function callTool(params: Row, caller: ProposalCaller) {
   const run = TOOL_RUNNERS[String(params.name)];
   if (!run) throw new InvalidParams(`Unknown tool: ${String(params.name)}`);
   try {
-    return await run(params.arguments ?? {});
+    return await run(params.arguments ?? {}, caller);
   } catch (error) {
     if (error instanceof InvalidParams) throw error;
     // The corpus could not be read: a tool error the agent can relay, with
@@ -347,7 +442,8 @@ function negotiatedVersion(params: Row): string {
  */
 // @req REQ-002
 export async function handlePublicAgentMessage(
-  message: unknown
+  message: unknown,
+  caller: ProposalCaller = { apiKeyId: null }
 ): Promise<JsonRpcResponse | null> {
   const request = (message ?? {}) as Row;
   if (
@@ -390,10 +486,10 @@ export async function handlePublicAgentMessage(
     case "ping":
       return ok({});
     case "tools/list":
-      return ok({ tools: TOOLS });
+      return ok({ tools: listedTools() });
     case "tools/call":
       try {
-        return ok(await callTool(params));
+        return ok(await callTool(params, caller));
       } catch (error) {
         if (error instanceof InvalidParams) {
           return fail(JSON_RPC_ERRORS.invalidParams, error.message);

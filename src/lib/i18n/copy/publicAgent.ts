@@ -68,6 +68,31 @@ export interface PublicAgentCopy {
     searchName: string;
     ficheTitle: string;
     ficheDescription: string;
+    proposeTitle: string;
+    proposeDescription: string;
+    proposeFields: {
+      name: string;
+      type: string;
+      details: string;
+      sources: string;
+      fiche: string;
+      element: string;
+      consent: string;
+      testimony: string;
+    };
+  };
+  /** What the person is told when they propose a name, a correction or a testimony. */
+  proposal: {
+    unavailable: string;
+    tooLong: (field: string, max: number) => string;
+    tooManySources: (max: number) => string;
+    testimonyNeedsConsent: string;
+    testimonyNeedsText: string;
+    dailyCap: string;
+    outage: string;
+    received: (code: string) => string;
+    /** PENDING OPERATOR DECISION: how a testimony's transmitter is described. */
+    transmitterFormula: string;
   };
 }
 
@@ -155,6 +180,44 @@ export const publicAgentCopy: Record<Language, PublicAgentCopy> = {
       ficheTitle: "Lire une fiche",
       ficheDescription:
         "Lit une fiche EthniAfrica par son type et son identifiant, tels que rechercher_nom les donne, et répond dans le même ordre.",
+      proposeTitle: "Proposer un nom, une correction ou un témoignage",
+      proposeDescription:
+        "Envoie à l'équipe EthniAfrica une proposition : un nom qui manque, une correction à une fiche, ou un témoignage de famille. Une personne de l'équipe relit tout avant que la fiche change. N'appelez cet outil que si la personne le demande, et dites-lui d'abord que sa proposition sera lue par l'équipe. Ne notez aucun nom de personne ni aucune adresse. Pour un témoignage, demandez d'abord son accord clair : sans cet accord, il n'est pas enregistré. La réponse contient un code de retrait que la personne doit garder : nous ne le redonnons pas.",
+      proposeFields: {
+        name: "Le nom concerné, tel que la personne l'a écrit.",
+        type: "nouveau_nom pour un nom qui manque, correction pour une erreur dans une fiche, temoignage pour un récit de famille.",
+        details:
+          "Ce que la personne propose, en quelques phrases, sans nom de personne ni adresse.",
+        sources:
+          "Jusqu'à cinq sources : une adresse web ou un titre par entrée.",
+        fiche: "L'identifiant de la fiche concernée, pour une correction.",
+        element:
+          "La partie de la fiche concernée, pour une correction (par exemple l'histoire du nom).",
+        consent:
+          "Vrai seulement si la personne a dit clairement qu'elle accepte que son témoignage soit enregistré.",
+        testimony:
+          "Le récit de famille, pour un témoignage, sans nom de personne.",
+      },
+    },
+    proposal: {
+      unavailable:
+        "Les propositions sont fermées pour le moment. Réessayez plus tard.",
+      tooLong: (field, max) =>
+        `Le champ « ${field} » est trop long : ${max} caractères au plus. Raccourcissez-le puis réessayez.`,
+      tooManySources: (max) =>
+        `Il y a trop de sources : ${max} au plus. Gardez les plus utiles.`,
+      testimonyNeedsConsent:
+        "Nous n'enregistrons un témoignage qu'avec l'accord clair de la personne. Demandez-lui son accord, puis réessayez.",
+      testimonyNeedsText:
+        "Un témoignage a besoin du récit lui-même. Ajoutez-le puis réessayez.",
+      dailyCap:
+        "Il y a eu beaucoup de propositions aujourd'hui. Réessayez demain.",
+      outage:
+        "Nous ne pouvons pas recevoir votre proposition pour le moment. Réessayez dans quelques minutes.",
+      transmitterFormula:
+        "un membre de la famille (formule à confirmer par l'opérateur)",
+      received: (code) =>
+        `Merci, nous avons bien reçu la proposition. Une personne de l'équipe la lira avant que la fiche change. Pour la retirer, écrivez-nous avec ce code : ${code}. Gardez-le, nous ne pourrons pas vous le redonner.`,
     },
   },
 };
