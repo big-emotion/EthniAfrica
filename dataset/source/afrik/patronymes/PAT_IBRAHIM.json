@@ -13,11 +13,14 @@
       "attestations": [
         {
           "countryId": "SDN",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": [
+            "uk-hm-passport-2026-sudan-names",
+            "verney-2019-sudan-names"
+          ]
         },
         {
           "countryId": "EGY",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["newarab-2025-sonallah-ibrahim"]
         }
       ]
     }
@@ -41,12 +44,20 @@
     {
       "countryId": "SDN",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "uk-hm-passport-2026-sudan-names",
+        "verney-2019-sudan-names"
+      ]
     },
     {
       "countryId": "EGY",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["newarab-2025-sonallah-ibrahim"]
+    },
+    {
+      "countryId": "NGA",
+      "status": "attested",
+      "sourceRefs": ["ryan-1981-hausa-nomenclature"]
     }
   ],
   "alliances": [],
@@ -109,6 +120,14 @@
       "tier": "referenced",
       "source_kind": "press",
       "notes": "Article du 13 août 2025, lu le 12 octobre 2026 : « Egyptian novelist Sonallah Ibrahim », né au Caire en 1937. Il n'indique pas de qui Ibrahim est le nom dans cette suite."
+    },
+    {
+      "sourceKey": "ryan-1981-hausa-nomenclature",
+      "title": "An Introduction to Hausa Personal Nomenclature",
+      "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Pauline M. Ryan, Names 29(2), 1981, pp. 139-164. Lu en texte intégral le 8 novembre 2026. L'autrice écrit que, à Abuja, un garçon prénommé Ibrahim à la cérémonie du nom reçoit en général plus tard le surnom Dodo, en souvenir d'Ibrahim, troisième émir (1877-1902). Le nom y est un nom donné, pas un nom de famille."
     }
   ],
   "gaps": [
@@ -142,7 +161,7 @@
     },
     {
       "fieldPath": "countries",
-      "reason": "Les sources propres à « Ibrahim » n'ont pas confirmé les pays où il est porté ; les recherches par pays n'ont pas livré de registre officiel directement exploitable pour cette fiche."
+      "reason": "Aucun registre officiel directement exploitable n'a été trouvé pour Ibrahim. Les pays retenus reposent sur des sources qui ne portent pas sur ce seul nom : l'usage soudanais des chaînes de noms (gouvernement britannique, revue Sudan Studies), le romancier égyptien Sonallah Ibrahim (presse), et l'usage haoussa du Nigeria (Ryan, 1981), où Ibrahim est un nom donné. Aucune de ces sources ne mesure la répartition du nom."
     }
   ],
   "nameHistory": {

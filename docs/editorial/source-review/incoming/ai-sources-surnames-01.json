@@ -1,0 +1,71 @@
+{
+  "description": "Proposals for the ai_generated sources of the surnames-01 batch that are not yet in ai-source-verifications.json. Nothing here is decided: the operator reviews each entry and adds an id and a decision in the main ledger.",
+  "verifications": [
+    {
+      "fiche": "patronymes/PAT_MAMBA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_MAMBA; nameMain: Mamba; nameSystem: totemic_clan; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Swaziland Oral History Project, collection Bonner : entretien avec Logwaja Mamba (clan Mamba), typescript revu",
+          "author": "Logwaja Mamba (informateur) ; collecteur non nommé",
+          "year": 1970,
+          "url": "https://emandulo.apc.uct.ac.za/collection/SWOHP/BONNER/35_Mamba_Logwaja/WITS_SWOHP_BON_19700715_edited_typescript_Mamba_Logwaja_A2760_A30_7_16.pdf",
+          "source_kind": "archive",
+          "quote": "Mbikati was the maiden who was the originator of the Mamba clan which had been hitherto Dlamini.",
+          "supports": "Mamba is a clan of the Swazi kingdom, said by one informant to have branched from the Dlamini. It supports clan status, not the totemic classification or the transmission mode. Read in full on 2026-11-08; the year comes from the file name."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08"
+    },
+    {
+      "fiche": "patronymes/PAT_SOUMAH.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_SOUMAH; nameMain: Soumah; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "La Guinée française : races, religions, coutumes, production, commerce",
+          "author": "André Arcin",
+          "year": 1907,
+          "url": "https://archive.org/details/laguinefrana00arci",
+          "source_kind": "archive",
+          "quote": "les Souma sont les chefs par excellence des Soso du Centre et des Dialonké occidentaux.",
+          "supports": "The Souma (Soumah) are presented as the ruling clan of the Soso in French Guinea. A colonial witness (1907): it supports the clan status and the Soso link, not the transmission mode. Read in the archive.org full text on 2026-11-08; the OCR reads 'Sosodu Gentre', here corrected to 'Soso du Centre' from the context."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08"
+    },
+    {
+      "fiche": "patronymes/PAT_IBRAHIM.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_IBRAHIM; nameMain: Ibrahim; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "An Introduction to Hausa Personal Nomenclature",
+          "author": "Pauline M. Ryan",
+          "year": 1981,
+          "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+          "source_kind": "academic",
+          "quote": "In Abuja, a boy named Ibrahim at the naming-ceremony will usually later acquire the nickname Dodo is memory of Ibrahim, the third Emir (1877-1902)",
+          "supports": "Ibrahim is a name given at the naming ceremony among Muslim Hausa, which fits a personal name rather than an inherited family name. It does not cover Sudan or Egypt, the two countries of the fiche. Read in full on 2026-11-08."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08"
+    }
+  ]
+}

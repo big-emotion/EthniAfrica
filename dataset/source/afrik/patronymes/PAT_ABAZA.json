@@ -31,7 +31,10 @@
     {
       "countryId": "EGY",
       "status": "attested",
-      "sourceRefs": ["wikipedia-en-abaza-family"]
+      "sourceRefs": [
+        "wikipedia-en-abaza-family",
+        "wac-raouf-abaza-interview-2019"
+      ]
     }
   ],
   "alliances": [],
@@ -54,6 +57,14 @@
       "tier": "unverified",
       "source_kind": "encyclopedia",
       "notes": "Article de l'encyclopédie Wikipédia en anglais, lu le 13 octobre 2026. Cité faute d'une source savante accessible : l'article rapporte les thèses de l'historienne Afaf Lutfi al-Sayyid-Marsot (Egypt in the Reign of Muhammad Ali, 1984, p. 123), de Robert Springborg (Family, Power, and Politics in Egypt, 2016) et de David Mills (Dividing the Nile, 2014). Ces livres n'ont pas été consultés ici : les thèses sont donc rapportées comme l'article les présente."
+    },
+    {
+      "sourceKey": "wac-raouf-abaza-interview-2019",
+      "title": "Raouf Abaza about the Abkhaz-Abaza Diaspora of Egypt: we are one big and strong family",
+      "url": "https://abaza.org/en/raouf-abaza-about-the-abkhaz-abaza-diaspora-of-egypt-we-are-one-big-and-strong-family",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Entretien avec Raouf Abaza (Maan), publié le 29 juin 2019 par le portail du Congrès mondial des Abazas, lu le 8 novembre 2026. Il dit que la plupart des Abaza d'Égypte vivent dans trois provinces : Charqiya, Le Caire et Alexandrie. Il ne dit ni comment la famille est arrivée en Égypte ni d'où vient le nom."
     }
   ],
   "gaps": [
@@ -84,6 +95,10 @@
     {
       "fieldPath": "transmissionMode",
       "reason": "L'article consulté dit que le nom vient d'une aïeule et que la famille descend ensuite des frères Hassan et Boghdady, sans dire comment le nom se transmet. Ce point reste à documenter."
+    },
+    {
+      "fieldPath": "sources",
+      "reason": "Les trois ouvrages savants cités par l'article de Wikipédia (Marsot 1984, Springborg 2016, Mills 2014) n'ont pas pu être lus le 8 novembre 2026 : l'exemplaire numérisé de Marsot sur Internet Archive est en prêt restreint, et aucune version intégrale des deux autres n'était accessible. Les thèses restent donc rapportées telles que l'article les présente. Glottolog (abaz1241) décrit la langue abaza, mais ne dit pas quel nom se donnent ses locuteurs."
     }
   ],
   "nameHistory": {
@@ -146,7 +161,7 @@
             },
             "era": "modern",
             "aspect": "meaning",
-            "statement": "L'article de Wikipédia rapporte deux lectures du nom : un ethnonyme, comme d'autres noms musulmans qui disent un peuple d'origine, ou, selon l'historienne Afaf Lutfi al-Sayyid-Marsot, l'hommage à une grand-mère aimée ou à son lieu de naissance. Ni l'article ni nous ne tranchons.",
+            "statement": "L'article de Wikipédia rapporte deux explications du nom : un ethnonyme, comme d'autres noms musulmans qui disent un peuple d'origine, ou, selon l'historienne Afaf Lutfi al-Sayyid-Marsot, l'hommage à une grand-mère aimée ou à son lieu de naissance. Ni l'article ni nous ne tranchons.",
             "sources": [
               {
                 "title": "Abaza family",
@@ -164,7 +179,7 @@
               "to": null,
               "label": "Origine non datée"
             },
-            "statement": "Selon l'article de Wikipédia, le nom vient d'une aïeule connue seulement sous le nom d'Abaza, d'origine abazine. Elle épouse le cheikh Muhammad al-Ayedi, chef de la famille al-Ayed, avant le règne de Muhammad Ali. Ses descendants se distinguent ensuite en « Awlad al-Aydeh » et « Awlad al-Abazyya ». L'article donne la région de Charqiya, dans le delta du Nil, comme base de la famille.",
+            "statement": "Selon l'article de Wikipédia, le nom vient d'une aïeule connue seulement sous le nom d'Abaza, d'origine abazine. Elle épouse le cheikh Muhammad al-Ayedi, chef de la famille al-Ayed, avant le règne de Muhammad Ali. Ses descendants se distinguent ensuite en « Awlad al-Aydeh » et « Awlad al-Abazyya ». L'article donne la région de Charqiya, dans le delta du Nil, comme base de la famille. Selon un entretien avec Raouf Abaza publié en 2019, la plupart des Abaza d'Égypte vivent aujourd'hui dans trois provinces : Charqiya, Le Caire et Alexandrie.",
             "claimStatus": "claimed",
             "sources": [
               {
@@ -174,6 +189,14 @@
                 "url": "https://en.wikipedia.org/wiki/Abaza_family",
                 "tier": "unverified",
                 "source_kind": "encyclopedia"
+              },
+              {
+                "title": "Raouf Abaza about the Abkhaz-Abaza Diaspora of Egypt: we are one big and strong family",
+                "author": "Congrès mondial des Abazas (portail abaza.org)",
+                "year": 2019,
+                "url": "https://abaza.org/en/raouf-abaza-about-the-abkhaz-abaza-diaspora-of-egypt-we-are-one-big-and-strong-family",
+                "tier": "unverified",
+                "source_kind": "community"
               }
             ]
           },
