@@ -1,0 +1,106 @@
+{
+  "description": "Proposals for the ai_generated coverage-queue source of batch surnames-09. Status proposed only; the operator decides each one.",
+  "verifications": [
+    {
+      "fiche": "patronymes/PAT_AL_RIZEIGAT.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AL_RIZEIGAT; nameMain: al-Rizeigat; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "A History of the Arabs in the Sudan, vol. I",
+          "author": "Harold Alfred MacMichael",
+          "year": 1922,
+          "url": "https://archive.org/details/historyofarabsin01macmuoft",
+          "source_kind": "academic",
+          "quote": "it is preferable to speak of these three tribes as having united in the south of Darfur to form the Rizaykat",
+          "supports": "The group exists in south-east Darfur under the name Rizaykat (p. 290-292); says nothing on the name as a hereditary surname, so nameSystem, transmissionMode and designatedSocialUnit stay unsupported."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_AL_SHAYGIYA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AL_SHAYGIYA; nameMain: al-Shaygiya; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "A History of the Arabs in the Sudan, vol. I",
+          "author": "Harold Alfred MacMichael",
+          "year": 1922,
+          "url": "https://archive.org/details/historyofarabsin01macmuoft",
+          "source_kind": "academic",
+          "quote": "The Shaikia country consists of the rich portion of the Nile valley which lies between Gebel Dayka in southern Dongola and the upstream end of the fourth cataract",
+          "supports": "The group exists in northern Sudan under the name Shaikia (p. 213-215); supports the country and spelling, not nameSystem or transmissionMode."
+        },
+        {
+          "title": "Some personal names and nicknames among the riverain people of northern Sudan",
+          "author": "Ahmed Al-Shahi",
+          "year": 1988,
+          "url": "https://ora.ox.ac.uk/objects/uuid%3A6cba3331-02f2-4ae9-af12-ce697e4dd5c8/files/rv979v447b",
+          "source_kind": "academic",
+          "quote": "research among the Shaygiyya tribe of Northern Sudan",
+          "supports": "Attests the spelling Shaygiyya for a tribe of northern Sudan (p. 131, note)."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_AL_MAHDI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AL_MAHDI; nameMain: al-Mahdi; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Some personal names and nicknames among the riverain people of northern Sudan",
+          "author": "Ahmed Al-Shahi",
+          "year": 1988,
+          "url": "https://ora.ox.ac.uk/objects/uuid%3A6cba3331-02f2-4ae9-af12-ce697e4dd5c8/files/rv979v447b",
+          "source_kind": "academic",
+          "quote": "The surnames Al-Mahdi, Al-Mirghani, Al-Hindi, Al-Sammani and Al-Majdhub indicate that the person is a descendant of the founder of a Sufi order and by extension a follower of that order",
+          "supports": "Al-Mahdi is a surname in northern Sudan (p. 135); transmissionMode is not stated."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    },
+    {
+      "fiche": "patronymes/PAT_AL_MIRGHANI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AL_MIRGHANI; nameMain: al-Mirghani; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: lineage",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Some personal names and nicknames among the riverain people of northern Sudan",
+          "author": "Ahmed Al-Shahi",
+          "year": 1988,
+          "url": "https://ora.ox.ac.uk/objects/uuid%3A6cba3331-02f2-4ae9-af12-ce697e4dd5c8/files/rv979v447b",
+          "source_kind": "academic",
+          "quote": "Mirghani (the family name of the founder of the Khatmiyya Sufi order)",
+          "supports": "Mirghani is the family name of the Khatmiyya founder (p. 135); transmissionMode is not stated."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (claude code workflow)"
+    }
+  ]
+}
