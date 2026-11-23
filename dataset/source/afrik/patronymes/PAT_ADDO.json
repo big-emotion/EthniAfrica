@@ -43,7 +43,15 @@
   "alliances": [],
   "casteOrSocialFunction": null,
   "bearers": [],
-  "homonyms": [],
+  "homonyms": [
+    {
+      "label": "Addo, nom italien",
+      "entityType": "patronyme",
+      "entityId": null,
+      "distinction": "Le dictionnaire de Patrick Hanks donne aussi un nom de famille Addo en Italie du Sud, tiré d'un nom de personne d'origine germanique ancienne. C'est un autre nom, qui s'écrit de la même façon que l'Addo akan et ga du Ghana.",
+      "sourceRefs": ["hanks-addo"]
+    }
+  ],
   "sources": [
     {
       "sourceKey": "afrik-candidate-queue",
@@ -52,6 +60,14 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "title": "Addo Name Meaning and Addo Family History at FamilySearch (Patrick Hanks, Dictionary of American Family Names, 2003)",
+      "url": "https://www.familysearch.org/en/surname?surname=addo",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Entrée Addo du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch, lue le 8 novembre 2026 : « West African (Ghana): name found among the Akan and Ga peoples, of unexplained etymology ». La même entrée cite un autre nom Addo, italien et sans rapport (« Italian (southern): from the personal name Addo, of ancient Germanic origin »).",
+      "sourceKey": "hanks-addo"
     }
   ],
   "gaps": [
@@ -65,10 +81,6 @@
     },
     {
       "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
@@ -177,6 +189,27 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 666 et p. 643",
                 "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Lu le 14 octobre 2026. Annexe G, « Proper Names of Persons », p. 666-667 : chacun porte d'ordinaire deux noms, dont l'un dit le jour de naissance ; l'auteur note que de beaucoup de ces noms le sens premier n'est pas connu. Adow figure dans la liste de la page 666. Page 643, « A List of the Kings of Akuapem » : « 14. Adow-Dankwa » ; la date qui suit n'est pas lisible sur l'exemplaire numérisé. Missionnaire de Bâle, cité pour les formes qu'il écrit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Décrit en 2003"
+            },
+            "era": "modern",
+            "statement": "Le dictionnaire de Patrick Hanks range Addo parmi les noms d'Afrique de l'Ouest, trouvés chez les Akan et les Ga du Ghana, et note que son origine n'est pas expliquée. Il connaît aussi un nom Addo italien, d'origine germanique ancienne : c'est un autre nom, qui s'écrit de la même façon.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Addo Name Meaning and Addo Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=addo",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée Addo du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch, lue le 8 novembre 2026 : « West African (Ghana): name found among the Akan and Ga peoples, of unexplained etymology ». La même entrée cite un autre nom Addo, italien et sans rapport (« Italian (southern): from the personal name Addo, of ancient Germanic origin »)."
               }
             ]
           }

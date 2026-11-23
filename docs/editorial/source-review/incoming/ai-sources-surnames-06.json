@@ -1,0 +1,182 @@
+[
+  {
+    "fiche": "patronymes/PAT_ABDALLAH.json",
+    "path": "sources[0]",
+    "claim": "id: PAT_ABDALLAH; nameMain: Abdallah; nameSystem: non_hereditary_patronymic; countries: EGY, COM, SDN",
+    "original": {
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null
+    },
+    "candidates": [],
+    "status": "proposed",
+    "proposedAt": "2026-11-08",
+    "model": "sonnet (claude code, workflow surnames-06)"
+  },
+  {
+    "fiche": "patronymes/PAT_ABDELKERIM.json",
+    "path": "sources[0]",
+    "claim": "id: PAT_ABDELKERIM; nameMain: Abdelkerim; nameSystem: non_hereditary_patronymic; countries: TCD",
+    "original": {
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null
+    },
+    "candidates": [
+      {
+        "title": "Abdulkarim Name Meaning and Family History at FamilySearch (Dictionary of American Family Names)",
+        "author": "Patrick Hanks (dir.)",
+        "year": 2003,
+        "url": "https://www.familysearch.org/en/surname?surname=abdulkarim",
+        "source_kind": "linguistic_reference",
+        "quote": "Muslim (also Abdul-Karim): from the Arabic personal name ʿAbdul-Karīm 'servant of the Most Generous' (see Karim).",
+        "supports": "The meaning of the name. It says nothing about Chad, the country attached to the fiche."
+      }
+    ],
+    "status": "proposed",
+    "proposedAt": "2026-11-08",
+    "model": "sonnet (claude code, workflow surnames-06)"
+  },
+  {
+    "fiche": "patronymes/PAT_ABDEL_AZIZ.json",
+    "path": "sources[0]",
+    "claim": "id: PAT_ABDEL_AZIZ; nameMain: Abdel Aziz; nameSystem: non_hereditary_patronymic; countries: EGY",
+    "original": {
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null
+    },
+    "candidates": [
+      {
+        "title": "Abdelaziz Name Meaning and Family History at FamilySearch (Dictionary of American Family Names)",
+        "author": "Patrick Hanks (dir.)",
+        "year": 2003,
+        "url": "https://www.familysearch.org/en/surname?surname=abdelaziz",
+        "source_kind": "linguistic_reference",
+        "quote": "from the Arabic personal name ʿAbd al-ʿAzīz ‘servant of the All-Mighty’ or ‘servant of the Beloved’",
+        "supports": "The meaning of the name. It does not locate it in Egypt."
+      }
+    ],
+    "status": "proposed",
+    "proposedAt": "2026-11-08",
+    "model": "sonnet (claude code, workflow surnames-06)"
+  },
+  {
+    "fiche": "patronymes/PAT_ABDEL_RAHMAN.json",
+    "path": "sources[0]",
+    "claim": "id: PAT_ABDEL_RAHMAN; nameMain: Abdel Rahman; nameSystem: non_hereditary_patronymic; countries: EGY",
+    "original": {
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null
+    },
+    "candidates": [
+      {
+        "title": "Abdelrahman Name Meaning and Family History at FamilySearch (Dictionary of American Family Names)",
+        "author": "Patrick Hanks (dir.)",
+        "year": 2003,
+        "url": "https://www.familysearch.org/en/surname?surname=abdelrahman",
+        "source_kind": "linguistic_reference",
+        "quote": "Muslim (also Abd el-Rahman): from the Arabic personal name ʿAbd al-Raḥmān 'servant of the Most Gracious' (see Rahman 1).",
+        "supports": "The meaning of the name. It does not locate it in Egypt."
+      }
+    ],
+    "status": "proposed",
+    "proposedAt": "2026-11-08",
+    "model": "sonnet (claude code, workflow surnames-06)"
+  },
+  {
+    "fiche": "patronymes/PAT_ABDI.json",
+    "path": "sources[0]",
+    "claim": "id: PAT_ABDI; nameMain: Abdi; nameSystem: non_hereditary_patronymic; countries: SOM; peoples: PPL_SOMALI",
+    "original": {
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null
+    },
+    "candidates": [
+      {
+        "title": "Abdi Name Meaning and Family History at FamilySearch (Dictionary of American Family Names)",
+        "author": "Patrick Hanks (dir.)",
+        "year": 2003,
+        "url": "https://www.familysearch.org/en/surname?surname=abdi",
+        "source_kind": "linguistic_reference",
+        "quote": "Somali: from a Somali Muslim personal name, a short form of Abdulle and thus a cognate of 1 above. It is also found in Ethiopia, Kenya, and Djibouti",
+        "supports": "Abdi as a Somali personal name; supports the Somali people and the non-hereditary system. Quote recorded in the fiche's own notes, the page re-read on 2026-11-08 confirms the Somali and Oromo entries."
+      }
+    ],
+    "status": "proposed",
+    "proposedAt": "2026-11-08",
+    "model": "sonnet (claude code, workflow surnames-06)"
+  },
+  {
+    "fiche": "patronymes/PAT_ABDULAI.json",
+    "path": "sources[2]",
+    "claim": "id: PAT_ABDULAI; nameMain: Abdulai; countries: GHA; peoples: PPL_DAGOMBA",
+    "original": {
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null
+    },
+    "candidates": [],
+    "status": "proposed",
+    "proposedAt": "2026-11-08",
+    "model": "sonnet (claude code, workflow surnames-06)"
+  },
+  {
+    "fiche": "patronymes/PAT_ABEBE.json",
+    "path": "sources[0]",
+    "claim": "id: PAT_ABEBE; nameMain: Abebe; countries: ETH; peoples: PPL_AMHARA",
+    "original": {
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null
+    },
+    "candidates": [],
+    "status": "proposed",
+    "proposedAt": "2026-11-08",
+    "model": "sonnet (claude code, workflow surnames-06)"
+  },
+  {
+    "fiche": "patronymes/PAT_ABERA.json",
+    "path": "sources[0]",
+    "claim": "id: PAT_ABERA; nameMain: Abera; countries: ETH",
+    "original": {
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null
+    },
+    "candidates": [],
+    "status": "proposed",
+    "proposedAt": "2026-11-08",
+    "model": "sonnet (claude code, workflow surnames-06)"
+  },
+  {
+    "fiche": "patronymes/PAT_ADDO.json",
+    "path": "sources[0]",
+    "claim": "id: PAT_ADDO; nameMain: Addo; nameSystem: non_hereditary_patronymic; countries: GHA; peoples: PPL_AKAN",
+    "original": {
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null
+    },
+    "candidates": [
+      {
+        "title": "Addo Name Meaning and Family History at FamilySearch (Dictionary of American Family Names)",
+        "author": "Patrick Hanks (dir.)",
+        "year": 2003,
+        "url": "https://www.familysearch.org/en/surname?surname=addo",
+        "source_kind": "linguistic_reference",
+        "quote": "West African (Ghana): name found among the Akan and Ga peoples, of unexplained etymology.",
+        "supports": "Addo as an Akan name of Ghana with no explained etymology. It does not state how the name is transmitted."
+      }
+    ],
+    "status": "proposed",
+    "proposedAt": "2026-11-08",
+    "model": "sonnet (claude code, workflow surnames-06)"
+  },
+  {
+    "fiche": "patronymes/PAT_ADEKUNLE.json",
+    "path": "sources[0]",
+    "claim": "id: PAT_ADEKUNLE; nameMain: Adekunle; countries: NGA; peoples: PPL_YORUBA",
+    "original": {
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null
+    },
+    "candidates": [],
+    "status": "proposed",
+    "proposedAt": "2026-11-08",
+    "model": "sonnet (claude code, workflow surnames-06)"
+  }
+]

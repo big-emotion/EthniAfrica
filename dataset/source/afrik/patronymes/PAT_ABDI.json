@@ -43,7 +43,15 @@
   "alliances": [],
   "casteOrSocialFunction": null,
   "bearers": [],
-  "homonyms": [],
+  "homonyms": [
+    {
+      "label": "Abdi, nom personnel oromo",
+      "entityType": "patronyme",
+      "entityId": null,
+      "distinction": "En Éthiopie, Abdi est aussi un nom personnel oromo qui voudrait dire « espoir » en oromo, selon le dictionnaire de Patrick Hanks. C'est un autre nom que l'Abdi somali, forme courte d'Abdulle, bien qu'il s'écrive de la même façon.",
+      "sourceRefs": ["hanks-abdi"]
+    }
+  ],
   "sources": [
     {
       "sourceKey": "afrik-candidate-queue",
@@ -60,6 +68,14 @@
       "tier": "official",
       "source_kind": "government",
       "notes": "Bureau du Premier ministre de la République fédérale de Somalie, page consultée intégralement. Elle identifie Jibril Abdirashid Haji Abdi comme homme d'État somalien et donne son mandat à partir de juin 2025. Le porteur étant vivant, il n'est pas ajouté à bearers sans auto-identification conforme au schéma."
+    },
+    {
+      "sourceKey": "hanks-abdi",
+      "title": "Abdi Name Meaning and Abdi Family History at FamilySearch (Patrick Hanks, Dictionary of American Family Names, 2003)",
+      "url": "https://www.familysearch.org/en/surname?surname=abdi",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Entrée Abdi du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch, relue le 8 novembre 2026. Elle distingue une origine arabe et musulmane (forme courte d'Abdul), une origine somalie (forme courte d'Abdulle) et une origine éthiopienne : « Ethiopian: from the Oromo personal name Abdi, meaning 'hope' in the Oromo language »."
     }
   ],
   "gaps": [
@@ -82,10 +98,6 @@
     {
       "fieldPath": "bearers",
       "reason": "Le seul porteur directement établi par la source officielle est vivant ; les recherches biographiques complémentaires n'ont pas identifié de porteur décédé suffisamment documenté pour cette fiche."
-    },
-    {
-      "fieldPath": "homonyms",
-      "reason": "Les sources consultées ne permettent pas encore de présenter un autre nom écrit comme Abdi, mais d'origine différente."
     }
   ],
   "nameHistory": {
