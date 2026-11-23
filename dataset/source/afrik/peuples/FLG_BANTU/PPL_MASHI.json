@@ -115,6 +115,15 @@
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
         "tier": "official",
         "source_kind": "government"
+      },
+      {
+        "title": "Glottolog 5.3, Mashi (Zambia) [mash1267]",
+        "author": "Hammarström, Forkel, Haspelmath, Bank (eds.)",
+        "year": null,
+        "url": "https://glottolog.org/resource/languoid/id/mash1267",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Page lue le 8 novembre 2026. Code ISO 639-3 mho ; pays : Angola, Namibie, Zambie ; autres noms : Mashi, Masi ; Lisimba 1982 cité pour le sous-classement."
       }
     ]
   },
