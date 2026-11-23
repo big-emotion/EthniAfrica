@@ -101,6 +101,25 @@ Consulter is ochre, neither of them learning which.
 arrow would be a second one making a promise the button does not keep, since a
 button is not a departure.
 
+### The text-only button
+
+A button may also be written as its label alone, with no container: « Voir
+aussi » under the verdict was the first. Brief 21 (comments per passage,
+approved 2026-11-18) extends it to the comment count (« 2 commentaires »),
+« Répondre », « Signaler », « Fermer » and « Voir la discussion ».
+
+It is still form C, not a fifth shape: it does something on the page (opens,
+closes, reports) and never goes to another page. It takes the label's ink
+(`--accent-ink`, or the text ink where an accent would compete), weight 600,
+`--afh-text-small`, a 44 px minimum height and the focus ring. It carries no
+arrow, no underline at rest and no glyph: an underline would make it an inline
+link, and a cross in place of « Fermer » would be the second glyph §8 forbids.
+
+Use it where several small actions sit in one row or one line and a container
+on each would outweigh the content: the footer of a passage, the actions under
+a comment, the head of a sheet. The one action a block is for keeps its
+container: « Commenter » beside the count is a bordered button.
+
 ---
 
 ## 5. Form D — the chip

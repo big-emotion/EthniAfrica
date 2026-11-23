@@ -1,6 +1,6 @@
 # Site mockups — the reference for every visible change
 
-One hundred and five boards: a design-system board, the pages recorded at 430, 768 and
+One hundred and fifty-seven boards: a design-system board, the pages recorded at 430, 768 and
 1440 px from release v5.2.0 (production, captured on 2026-10-14), and the
 approved changes listed under "Changes since the record". They are the reference every change a reader can see
 answers to, whoever makes it: the team, an agency, a contractor or an agent.
@@ -72,6 +72,9 @@ two is wrong, and the fix is decided, not improvised.
 | 5 · Mots          | Mot `WRD_RACE`                               | `word-race`          |
 | 6 · Agent         | Answer card in Claude and ChatGPT: six content types, wide column, dark theme, five states (390 and 720 px) | `agent-card-*` |
 |                   | Install page « EthniAfrica dans Claude et ChatGPT » | `agent-install`      |
+| 7 · Commentaires  | État proposé : « peul » et nom inconnu, un pied de commentaires par passage | `search-state-comments-peul`, `search-state-comments-unknown` |
+|                   | État : fil ouvert en volet à droite (1440 seulement) | `search-state-comments-panel` |
+|                   | États du fil à 430 : ouvert, vide, après l'envoi, passage corrigé ; page Mon compte | `comments-sheet`, `comments-empty`, `comments-sent`, `comments-corrected`, `account` |
 
 The three files of a page hold the same markup; the width alone changes the
 layout, through the same media and container queries the site uses. Long pages
@@ -109,6 +112,7 @@ are recorded whole, folded as the site folds them.
 | 2026-10-19 | ETNI-2135, approved by the operator in chat: Fula and Alaba fiche titles and breadcrumbs now show the single recorded self-name; no layout change | `people-fula`, `people-state-fula-culture-open`, `people-thin-alaba`, `Main` |
 | 2026-10-18 | The name story of a fiche is titled once, « L'histoire des noms », approved by the operator in chat on 2026-10-18 (a wording change, no brief: the layout does not move). The eyebrow over the question « D'où viennent ces noms ? » goes, and the question with it; on the family boards, where the chapter already carries the title, only the question goes. The place boards drew it first (brief 7); this aligns the country and family boards and the code | `country-civ`, `country-state-civ-quaqua`, `country-state-shared-congo`, `country-state-thin-gab`, `family-bantu`, `family-mande` |
 | 2026-10-23 | [Brief 20, the answer card in Claude and ChatGPT and the install page](../briefs/20-agent-answer-card.md), approved by the operator in chat on 2026-10-23. The card reuses the result page components; the group 6 boards use `agent-card.css` and `agent-install.css` beside `ea-live.css` | `agent-card-*` (new, 390 px; `agent-card-traore-720`), `agent-install` (new at 430, 768 and 1440 px) |
+| 2026-11-18 | [Brief 21, comments per passage, the block footer](../briefs/21-block-comments.md), proposal B **approved by the operator on 2026-11-18** (ETNI-2203, REQ-212): « N commentaires · Commenter » closes each passage, the thread opens from the bottom and as a right panel from 1024 px; the page-end « Signaler une erreur » and « Proposer une source » open the same form; the participation sentence after the first answer; text-only buttons added to the [actions charter](../../actions-charter.md) §4 | group 7 (new): `search-state-comments-peul` and `search-state-comments-unknown` at 430, 768 and 1440 px; `search-state-comments-panel-1440`; `comments-sheet-430`, `comments-empty-430`, `comments-sent-430`, `comments-corrected-430`, `account-430` |
 
 The boards of a changed page no longer record v5.2.0: they are the approved
 target, and the code is behind them until the implementation lands.
