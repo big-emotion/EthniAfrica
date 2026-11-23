@@ -96,7 +96,7 @@ export interface FlagListResult {
   next_cursor: string | null;
 }
 
-interface FlagRow {
+export interface FlagRow {
   id: string;
   public_slug: string;
   entity_type: string | null;
@@ -337,7 +337,8 @@ async function findFlag(
   return data ? mapFlagRow(data) : null;
 }
 
-function mapFlagRow(row: FlagRow): PublicFlag {
+// @req REQ-214
+export function mapFlagRow(row: FlagRow): PublicFlag {
   return {
     id: row.id,
     public_slug: row.public_slug,
