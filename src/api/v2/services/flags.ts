@@ -1,7 +1,10 @@
 import { logger } from "@/lib/api/logger";
 import { isConfirmedAllowlistedUser } from "@/lib/auth/adminAllowlist";
 import { createAdminClient } from "@/lib/supabase/admin";
-import { PUBLIC_FLAG_SELECT } from "@/lib/flags/publicFlagColumns";
+import {
+  PUBLIC_FLAG_SELECT,
+  publishedFlagsOnly,
+} from "@/lib/flags/publicFlagColumns";
 
 export type FlagKind =
   | "inaccurate"
@@ -241,9 +244,9 @@ export async function listFlags(
   filters: FlagListFilters
 ): Promise<FlagListResult> {
   const supabase = createAdminClient();
-  let query = supabase
-    .from("flags")
-    .select(PUBLIC_FLAG_COLUMNS)
+  let query = publishedFlagsOnly(
+    supabase.from("flags").select(PUBLIC_FLAG_COLUMNS)
+  )
     .order("created_at", { ascending: false })
     .order("id", { ascending: false })
     .limit(filters.limit + 1);
@@ -292,8 +295,20 @@ export async function listFlags(
 export async function getFlagByIdOrSlug(
   identifier: string
 ): Promise<PublicFlag | null> {
+  return findFlag(identifier, { publishedOnly: true });
+}
+
+/**
+ * `publishedOnly: false` is for the moderator paths: a comment waiting for
+ * its author's address is invisible to the public but must still be decided.
+ */
+async function findFlag(
+  identifier: string,
+  { publishedOnly }: { publishedOnly: boolean }
+): Promise<PublicFlag | null> {
   const supabase = createAdminClient();
   let query = supabase.from("flags").select(PUBLIC_FLAG_COLUMNS);
+  if (publishedOnly) query = publishedFlagsOnly(query);
   query = UUID_PATTERN.test(identifier)
     ? query.eq("id", identifier)
     : query.eq("public_slug", identifier);
@@ -390,7 +405,7 @@ export async function transitionFlag(
 > {
   const supabase = createAdminClient();
 
-  const current = await getFlagByIdOrSlug(identifier);
+  const current = await findFlag(identifier, { publishedOnly: false });
   if (!current) return { ok: false, reason: "not_found" };
 
   const { data, error } = await supabase

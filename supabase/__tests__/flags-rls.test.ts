@@ -17,6 +17,9 @@
  *  T12. anon cannot select *, filter on contribution_payload, or read audit_log.
  *  T13. A session cannot raise an existing profile, write working assets, or
  *       call publish_revision.
+ *  T14. anon sees published, visible flags only; hidden_reason is not granted;
+ *       block_key is checked (migration 117).
+ *  T15. flag_replies and flag_abuse_reports are closed to anon and sessions.
  *
  * Execution model
  * ---------------
@@ -630,5 +633,88 @@ describe.skipIf(SKIP)(
 
       expect(isRlsError(error), JSON.stringify(error)).toBe(true);
     });
+    // T14 — Publication rule (migration 117)
+    // -------------------------------------------------------------------------
+    // @req REQ-212
+    it("T14: anon sees a published flag, never a pending or a hidden one", async () => {
+      const svc = serviceClient();
+      const now = new Date().toISOString();
+      const { data: rows, error } = await svc
+        .from("flags")
+        .insert([
+          entityFlag({ published_at: now }),
+          entityFlag(),
+          entityFlag({ published_at: now, hidden_at: now }),
+        ])
+        .select("id");
+      expect(error).toBeNull();
+      const [published, pending, hidden] = rows!.map((row) =>
+        trackFlag(row.id as string)
+      );
+
+      const { data: visible, error: readError } = await anonClient()
+        .from("flags")
+        .select("id")
+        .in("id", [published, pending, hidden]);
+
+      expect(readError).toBeNull();
+      expect(visible!.map((row) => row.id)).toEqual([published]);
+    });
+
+    // @req REQ-212
+    it("T14: a new flag is private until published", async () => {
+      const { data } = await serviceClient()
+        .from("flags")
+        .insert(entityFlag())
+        .select("id, published_at")
+        .single();
+      trackFlag(data!.id as string);
+
+      expect(data!.published_at).toBeNull();
+    });
+
+    // @req REQ-212
+    it("T14: anon cannot read a moderator's hiding reason", async () => {
+      const { error } = await anonClient()
+        .from("flags")
+        .select("id, hidden_reason")
+        .limit(1);
+
+      expect(
+        isRlsError(error),
+        `Expected permission denied (42501) on hidden_reason, got: ${JSON.stringify(error)}`
+      ).toBe(true);
+    });
+
+    // @req REQ-212
+    it("T14: a block_key outside the vocabulary is refused", async () => {
+      const { data, error } = await serviceClient()
+        .from("flags")
+        .insert(entityFlag({ block_key: "languageFamily:FLG_BANTU:origin" }))
+        .select("id")
+        .single();
+      if (data?.id) trackFlag(data.id as string);
+
+      expect(isCheckViolation(error)).toBe(true);
+    });
+
+    // -------------------------------------------------------------------------
+    // T15 — Replies and reader reports are service-role only
+    // -------------------------------------------------------------------------
+    // @req REQ-212
+    it.each(["flag_replies", "flag_abuse_reports"])(
+      "T15: neither anon nor a session reads or writes %s",
+      async (table) => {
+        for (const client of [anonClient(), contributorClient()]) {
+          const read = await client.from(table).select("id").limit(1);
+          expect(isRlsError(read.error)).toBe(true);
+
+          const write = await client
+            .from(table)
+            .insert({ flag_id: seededFlagId, ip_hash: "x", body: "x" });
+          expect(isRlsError(write.error)).toBe(true);
+        }
+      }
+    );
   }
 );
