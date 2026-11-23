@@ -39,7 +39,7 @@
     {
       "peopleId": "PPL_AMHARA",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["dafn-assefa"]
     }
   ],
   "countries": [
@@ -69,6 +69,14 @@
       "tier": "referenced",
       "source_kind": "repository",
       "notes": "Entrée du Dictionary of American Family Names, 2e éd. (Oxford University Press, 2022), reproduite par Ancestry et consultée le 2 septembre 2026. Elle analyse Assefa comme nom personnel éthiopien amharique et précise que son enregistrement comme surname dans la diaspora ne correspond pas à un patronyme héréditaire en Éthiopie."
+    },
+    {
+      "sourceKey": "ifla-1996-names-of-persons",
+      "title": "Names of Persons: National Usages for Entry in Catalogues (IFLA Universal Bibliographic Control and International MARC Programme, 1996)",
+      "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+      "tier": "referenced",
+      "source_kind": "repository",
+      "notes": "Passage : p. 64-65. Quatrième édition, Munich, K. G. Saur, 1996, lue dans le PDF de l'IFLA le 13 octobre 2026. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
     }
   ],
   "gaps": [

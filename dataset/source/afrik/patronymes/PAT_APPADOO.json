@@ -68,6 +68,22 @@
       "tier": "unverified",
       "source_kind": "discovery",
       "notes": "Agrégateur de distribution consulté jusqu'au tableau par pays : Appadoo y est le plus fréquent et le plus dense à Maurice ; la page déclare que la signification n'est pas renseignée. Utilisé comme attestation faible, jamais comme étymologie."
+    },
+    {
+      "sourceKey": "mauritius-gazette-2016-101",
+      "title": "The Government Gazette of Mauritius, n° 101 du 19 novembre 2016 (Gouvernement de Maurice, 2016)",
+      "url": "https://archive.gazettes.africa/archive/mu/2016/mu-government-gazette-dated-2016-11-19-no-101.pdf",
+      "tier": "official",
+      "source_kind": "government",
+      "notes": "Passage : p. 4567, 4578, 4592. Gazette publiée à Port-Louis le samedi 19 novembre 2016, lue le 18 octobre 2026 dans l'exemplaire numérisé de Gazettes.Africa. Page 4567, General Notice No. 1723 of 2016, nominations : une fonctionnaire du ministère de l'Éducation dont le nom est écrit « APPADOO ». Pages 4578 et 4592 : le nom revient dans la liste des sociétés et dans celle des marques. La gazette ne dit rien de l'origine du nom ; les personnes nommées ne sont pas reprises ici."
+    },
+    {
+      "sourceKey": "odfn-appadoo",
+      "title": "Appadoo Surname Meaning — The Oxford Dictionary of Family Names in Britain and Ireland (Patrick Hanks, Richard Coates et Peter McClure, 2016)",
+      "url": "https://www.ancestry.com/last-name-meaning/appadoo?geo-lang=en",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "The Oxford Dictionary of Family Names in Britain and Ireland, Oxford University Press, 2016, notice reproduite par Ancestry et lue le 18 octobre 2026 dans la traduction française que le site affiche : un nom hindou d'origine télougoue, de appa, « père », et du suffixe du singulier -ḍu, qui se trouve aussi dans les Caraïbes."
     }
   ],
   "gaps": [

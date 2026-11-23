@@ -1,0 +1,205 @@
+{
+  "description": "Proposals for the ai_generated sources of the surnames-11 batch. Not part of the main ledger; the operator decides each one.",
+  "verifications": [
+    {
+      "fiche": "patronymes/PAT_AONDOAKAA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AONDOAKAA; nameMain: Aondoakaa; nameSystem: non_hereditary_patronymic; transmissionMode: other; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Past Attorney General of the Federation",
+          "author": "Federal Ministry of Justice (Nigeria)",
+          "year": null,
+          "url": "https://justice.gov.ng/past-attorney-general-of-the-federation/",
+          "source_kind": "government",
+          "quote": "CHIEF MICHAEL A. AONDOAKAA, SAN — 26th July 2007 to 10th Feb. 2010",
+          "supports": "Spelling Aondoakaa attested in Nigeria only. Neither people nor transmission is established. Passage tel qu'enregistré dans la fiche par le relevé du 13-18 octobre 2026 ; non rouvert dans cette session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (workflow batch surnames-11)"
+    },
+    {
+      "fiche": "patronymes/PAT_APPADOO.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_APPADOO; nameMain: Appadoo; nameSystem: hereditary_family_name; transmissionMode: patrilineal; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "The Oxford Dictionary of Family Names in Britain and Ireland",
+          "author": "Patrick Hanks, Richard Coates, Peter McClure (dir.)",
+          "year": 2016,
+          "url": "https://www.ancestry.com/last-name-meaning/appadoo?geo-lang=en",
+          "source_kind": "linguistic_reference",
+          "quote": "Hindu name of Telugu origin, from appa \"father\" and the singular suffix -du (rendered from the French translation shown by the site)",
+          "supports": "Origin of the name only; says nothing about Mauritius or transmission. Passage tel qu'enregistré dans la fiche par le relevé du 13-18 octobre 2026 ; non rouvert dans cette session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (workflow batch surnames-11)"
+    },
+    {
+      "fiche": "patronymes/PAT_APPIAH.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_APPIAH; nameMain: Appiah; nameSystem: non_hereditary_patronymic; transmissionMode: other; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Dictionary of American Family Names, 2e éd. — Appiah",
+          "author": "Patrick Hanks (dir.)",
+          "year": 2022,
+          "url": "https://www.ancestry.com/last-name-meaning/appiah?geo-lang=en",
+          "source_kind": "linguistic_reference",
+          "quote": "West Africa (Ghana): from an Akan male personal name of unexplained etymology; the final h is the characteristic anglicization (paraphrase recorded in the fiche)",
+          "supports": "Akan personal name from Ghana; etymology unexplained. Passage tel qu'enregistré dans la fiche par le relevé du 13-18 octobre 2026 ; non rouvert dans cette session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (workflow batch surnames-11)"
+    },
+    {
+      "fiche": "patronymes/PAT_ASANTE.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_ASANTE; nameMain: Asante; nameSystem: non_hereditary_patronymic; transmissionMode: other; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+          "author": "Johann Gottlieb Christaller",
+          "year": 1881,
+          "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+          "source_kind": "linguistic_reference",
+          "quote": "the native missionary D. Asante and the deacon Theoph. Opoku [...] both natives of Akropong (p. XVIII)",
+          "supports": "Asante as a personal name in the Akan area in 1881; no etymology. Passage tel qu'enregistré dans la fiche par le relevé du 13-18 octobre 2026 ; non rouvert dans cette session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (workflow batch surnames-11)"
+    },
+    {
+      "fiche": "patronymes/PAT_ASSEFA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_ASSEFA; nameMain: Assefa; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Dictionary of American Family Names, 2e éd. — Assefa",
+          "author": "Patrick Hanks (dir.)",
+          "year": 2022,
+          "url": "https://www.ancestry.com/last-name-meaning/assefa?geo-lang=en",
+          "source_kind": "linguistic_reference",
+          "quote": "Ethiopian Amharic personal name (paraphrase recorded in the fiche)",
+          "supports": "Assefa as an Amharic personal name from Ethiopia. Passage tel qu'enregistré dans la fiche par le relevé du 13-18 octobre 2026 ; non rouvert dans cette session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (workflow batch surnames-11)"
+    },
+    {
+      "fiche": "patronymes/PAT_ASSOUMANI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_ASSOUMANI; nameMain: Assoumani; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (workflow batch surnames-11)"
+    },
+    {
+      "fiche": "patronymes/PAT_ATEBA.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_ATEBA; nameMain: Ateba; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Decree No. 2025/357 of 22 July 2025 to appoint Subdivisional Officers",
+          "author": "Ministry of Territorial Administration (Cameroon)",
+          "year": 2025,
+          "url": "https://minat.gov.cm/wp-content/uploads/2025/07/decree_n_2025_357_of_22_07_2025.pdf",
+          "source_kind": "government",
+          "quote": "ATEBA Pierre Christian (page 2)",
+          "supports": "Spelling Ateba attested in Cameroon only; does not support the clan classification. Passage tel qu'enregistré dans la fiche par le relevé du 13-18 octobre 2026 ; non rouvert dans cette session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (workflow batch surnames-11)"
+    },
+    {
+      "fiche": "patronymes/PAT_AYARI.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AYARI; nameMain: Ayari; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (workflow batch surnames-11)"
+    },
+    {
+      "fiche": "patronymes/PAT_AYITE.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_AYITE; nameMain: Ayite; nameSystem: clan_name; transmissionMode: other; designatedSocialUnit: clan",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (workflow batch surnames-11)"
+    },
+    {
+      "fiche": "patronymes/PAT_BABATUNDE.json",
+      "path": "sources[0]",
+      "claim": "id: PAT_BABATUNDE; nameMain: Babatunde; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+      "original": {
+        "title": "Relevé de couverture anthroponymique EthniAfrica",
+        "url": null
+      },
+      "candidates": [
+        {
+          "title": "Lessons from Africa: A Supplement to Middle School Courses in World Cultures, Global Studies, and World Geography",
+          "author": "Merry M. Merryfield (dir.)",
+          "year": 1989,
+          "url": "https://files.eric.ed.gov/fulltext/ED304395.pdf",
+          "source_kind": "academic",
+          "quote": "List of Yoruba names and meanings attributed to E. B. Ogundimu (lesson 5, pp. 45-48)",
+          "supports": "Babatunde as a Yoruba name from Nigeria; already cited in the fiche at tier referenced. Passage tel qu'enregistré dans la fiche par le relevé du 13-18 octobre 2026 ; non rouvert dans cette session."
+        }
+      ],
+      "status": "proposed",
+      "proposedAt": "2026-11-08",
+      "model": "sonnet (workflow batch surnames-11)"
+    }
+  ]
+}

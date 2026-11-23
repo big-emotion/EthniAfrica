@@ -30,7 +30,7 @@
     {
       "peopleId": "PPL_TIV",
       "status": "supposed",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "adjeran-2019-tiv-names"]
     }
   ],
   "countries": [
@@ -60,6 +60,14 @@
       "tier": "official",
       "source_kind": "government",
       "notes": "Page du ministère fédéral nigérian de la Justice consultée directement. Elle atteste « Chief Michael A. Aondoakaa » comme Attorney General et ministre de la Justice du 26 juillet 2007 au 10 février 2010 ; elle n'établit ni l'étymologie du nom ni son rattachement tiv."
+    },
+    {
+      "sourceKey": "adjeran-2019-tiv-names",
+      "title": "Individual Names With Tiv People From Nigeria And Cameroon (Moufoutaou Adjeran, 2019)",
+      "url": "https://univ-bejaia.dz/revue/jslcs/article/download/277/218/359",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Passage : p. 17. Journal of Studies in Language, Culture and Society, vol. 2, no 2, 2019, p. 16-25 ; PDF intégral lu le 13 octobre 2026. L'auteur écrit que les noms individuels précédés de Aondo (« God ») ou de Ter (« Lord ») sont très liés à la croyance des Tiv, et en cite de nombreux, dont aondodoo (« God is good ») et aondoakula (« God guides »). Il ne cite pas Aondoakaa."
     }
   ],
   "gaps": [

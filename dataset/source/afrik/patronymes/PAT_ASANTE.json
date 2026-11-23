@@ -13,7 +13,7 @@
       "attestations": [
         {
           "countryId": "GHA",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["gold-coast-blue-book-1921"]
         }
       ]
     },
@@ -39,14 +39,14 @@
     {
       "peopleId": "PPL_ASANTE",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["christaller-1881-tshi"]
     }
   ],
   "countries": [
     {
       "countryId": "GHA",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["christaller-1881-tshi", "gold-coast-blue-book-1921"]
     }
   ],
   "alliances": [],
@@ -61,6 +61,22 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "gold-coast-blue-book-1921",
+      "title": "Gold Coast Colony. Blue Book 1921 (Gouvernement de la colonie de la Côte-de-l'Or (Accra), 1921)",
+      "url": "https://archive.org/details/blue-book-gold-coast-1921",
+      "tier": "referenced",
+      "source_kind": "government",
+      "notes": "Passage : p. 134 et p. 135. Registre annuel de la colonie, avec la liste de ses fonctionnaires ; exemplaire numérisé sur archive.org. Lu le 14 octobre 2026. Page 134, liste alphabétique des fonctionnaires : « Asante, K. » (géomètre de 1re classe), « Asante, S. W. O. » (commis de 2e classe, chemin de fer) et « Asante, T. R. M. » (surveillant, salle des machines) ; page 135 : « Asante, E. M. » (infirmier stagiaire, service médical) et « Asante, J. A. » (géomètre de 4e classe). Les noms sont écrits ainsi : famille d'abord, puis initiales."
+    },
+    {
+      "sourceKey": "christaller-1881-tshi",
+      "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi) (Johann Gottlieb Christaller, 1881)",
+      "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Passage : p. XIV et p. XVIII. Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Lu le 14 octobre 2026. Page XIV, liste des abréviations : « D. As. David Asante ». Page XVIII, note de l'introduction : « the native missionary D. Asante and the deacon Theoph. Opoku […] both natives of Akropong », qui visitent Salaga en 1877. Le livre ne dit pas d'où vient le nom Asante de cet homme. Missionnaire de Bâle, cité pour les formes qu'il écrit."
     }
   ],
   "gaps": [
