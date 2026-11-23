@@ -42,7 +42,13 @@
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
-  "bearers": [],
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Tchicaya U Tam'si, poète (1931-1988), fils du député Jean Félix-Tchicaya",
+      "sourceRefs": ["universalis-tchicaya-u-tamsi"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
@@ -52,6 +58,14 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "universalis-tchicaya-u-tamsi",
+      "title": "Tchicaya U Tam'si, Gérald-Félix Tchicaya dit (1931-1988), Encyclopædia Universalis",
+      "url": "https://www.universalis.fr/encyclopedie/tchicaya-u-tam-si/",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Lu le 8 novembre 2026. L'article dit que le poète est né à M'Pili en 1931, « dans la région du Kouilou », « fils d'un instituteur qui devait devenir le premier député noir » du Moyen-Congo, d'« une éminente famille du pays vili ». Il ne dit rien de l'origine ni du sens du nom Tchicaya lui-même."
     }
   ],
   "gaps": [
@@ -64,16 +78,16 @@
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
-      "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+    },
+    {
+      "fieldPath": "origin.linguisticReconstructions",
+      "reason": "La recherche « Tchicaya nom de famille vili Loango origine étymologie » et l'article de l'Encyclopædia Universalis n'ont livré aucune explication du nom Tchicaya ; un dictionnaire vili ou une étude de l'onomastique du Loango serait nécessaire."
     }
   ],
   "nameHistory": {

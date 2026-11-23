@@ -36,7 +36,13 @@
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
-  "bearers": [],
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Georges Akuèté Zankli Lawson I (vers 1777-1857), premier chef de Lolan à Aného",
+      "sourceRefs": ["rulers-togo-traditional"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
@@ -46,23 +52,19 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "rulers-togo-traditional",
+      "title": "Rulers: Togo, Traditional polities (Ben Cahoon, Rulers.org)",
+      "url": "https://www.rulers.org/togotrad.html",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Liste de souverains relue le 8 novembre 2026. Section Lolan : titre Togbé Ahuawoto ; premier titulaire Georges Akuèté Zankli Lawson I (vers 1777-1857), règne du 30 mars 1821 au 29 juin 1857 ; la famille Lawson établit une chefferie parallèle à Aného le 3 avril 1821. La page ne cite pas ses sources et les deux dates de 1821 diffèrent de trois jours."
     }
   ],
   "gaps": [
     {
-      "fieldPath": "alliances",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
@@ -72,6 +74,18 @@
     {
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Lawson à un peuple au Togo. Nous n'avons pas encore consulté de source consacrée à ce nom. Lawson apparaît comme nom d'un auteur cité dans notre fiche sur les Ogbia. Cette mention ne renseigne pas sur l'origine du nom."
+    },
+    {
+      "fieldPath": "alliances",
+      "reason": "Les recherches « Lawson Aného famille alliance » et « Lawson Little Popo origine » n'ont livré aucun pacte ni parenté à plaisanterie attribuable au nom Lawson."
+    },
+    {
+      "fieldPath": "homonyms",
+      "reason": "Lawson est aussi un nom de famille britannique, d'où vient peut-être le nom selon le récit de Gayibor déjà cité ; les recherches n'ont pas livré d'homonyme africain d'origine distincte documenté."
+    },
+    {
+      "fieldPath": "origin.oralTraditions",
+      "reason": "Les recensions de l'Académie des sciences d'outre-mer et la recherche « Lawson Aného origine Foli Bebe Accra » mentionnent une migration guin partie d'Accra vers 1700 ; nous n'avons pas pu lire le texte intégral de la recension de 2022 ni l'ouvrage de Jones et Sebald, donc nous ne rapportons pas cette tradition."
     }
   ],
   "nameHistory": {
