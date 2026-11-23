@@ -109,6 +109,13 @@
         "url": "https://peoplegroups.org/language/hav/",
         "tier": "unverified",
         "source_kind": "missionary_database"
+      },
+      {
+        "title": "Glottolog, Havu",
+        "url": "https://glottolog.org/resource/languoid/id/havu1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog consacre une entrée à la langue havu (ISO hav), rattachée à la famille atlantique-congo. Page lue en ligne le 8 novembre 2026."
       }
     ]
   },

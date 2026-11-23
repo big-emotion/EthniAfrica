@@ -96,6 +96,13 @@
         "url": "https://asq.africa.ufl.edu/wp-content/uploads/sites/168/Waters-V11Is1.pdf",
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Glottolog, Fipa",
+        "url": "https://glottolog.org/resource/languoid/id/fipa1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog consacre une entrée à la langue fipa (ISO fip), rattachée à la famille atlantique-congo. Page lue en ligne le 8 novembre 2026."
       }
     ]
   },

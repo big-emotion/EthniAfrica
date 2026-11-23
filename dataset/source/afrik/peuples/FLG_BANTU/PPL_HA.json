@@ -93,6 +93,13 @@
         "url": null,
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Glottolog, Ha",
+        "url": "https://glottolog.org/resource/languoid/id/haaa1252",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Glottolog consacre une entrée à la langue ha (ISO haq), rattachée à la famille atlantique-congo. Page lue en ligne le 8 novembre 2026."
       }
     ]
   },
