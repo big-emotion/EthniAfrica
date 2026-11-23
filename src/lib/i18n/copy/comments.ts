@@ -203,4 +203,5 @@ const fr: CommentsCopy = {
   },
 };
 
+// @req REQ-212
 export const commentsCopy: Record<Language, CommentsCopy> = { fr };

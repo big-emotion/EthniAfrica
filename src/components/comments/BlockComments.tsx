@@ -145,10 +145,12 @@ function usePassage(passage: CommentablePassage) {
   };
 }
 
+// @req REQ-212
 /** The text-only button of the actions charter §4: the label alone. */
 export const TEXT_BUTTON =
   "inline-flex min-h-11 items-center px-0.5 text-afh-small font-semibold text-[color:var(--accent-ink)] focus-visible:outline-none focus-visible:shadow-afh-focus";
 
+// @req REQ-212
 /** The bordered button the boards call `.cm-btn`. */
 export const BORDERED_BUTTON =
   "inline-flex min-h-11 items-center justify-center gap-afh-sm whitespace-nowrap rounded-afh-lg border border-afh-border bg-afh-surface px-afh-xl text-afh-small font-semibold leading-[1.2] text-afh-text focus-visible:outline-none focus-visible:shadow-afh-focus";
