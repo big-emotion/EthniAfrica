@@ -45,7 +45,7 @@
       "mainLanguage": "Sagala (Kisagala)",
       "isoCodes": ["sbm"],
       "dialects": [],
-      "vehicularRole": "Le swahili est la langue nationale et vehiculaire en Tanzanie; les Sagala sont en grande partie bilingues en swahili. La langue sagala est consideree comme menacee par Ethnologue: elle n'est plus transmise normalement aux jeunes generations. Elle n'est pas enseignee dans les ecoles. La langue comptait 106 331 locuteurs, selon des recensements academiques."
+      "vehicularRole": "Le swahili est la langue nationale et vehiculaire en Tanzanie; les Sagala sont en grande partie bilingues en swahili. La langue sagala est consideree comme menacee par Ethnologue: elle n'est plus transmise normalement aux jeunes generations. Elle n'est pas enseignee dans les ecoles. La langue comptait 106 331 locuteurs selon Muzale et Rugemalira (2008), chiffre repris par Bollaert (2018), qui n'est pas certaine que la langue soit réellement menacee."
     },
     "culture": {
       "majorRites": "Rites d'initiation: circoncision masculine (peu courante dans le passe, maintenant generalisee); petites incisions genitales pour les filles a la puberte, pratiquees par la muhunga. Nyemi: rites pour les filles. Rites funebres avec heritage matrilineaire des veuves. Mariage avec service a la belle-famille (bride-service). Propitiation des ancetres matrilineaires lors de toutes les celebrations importantes.",
@@ -96,10 +96,14 @@
         "source_kind": "missionary_database"
       },
       {
-        "title": "Bollaert, Flore – The synchronic phonology and nominal morphology of Sagala (Bantu G39, Tanzania): A preliminary study – Universiteit Gent, 2018",
+        "title": "The synchronic phonology and nominal morphology of Sagala (Bantu G39, Tanzania): A preliminary study",
         "url": "https://www.africanstudies.ugent.be/wp-content/uploads/2018/03/BA-Thesis-Flore-Bollaert.pdf",
         "tier": "referenced",
-        "source_kind": "academic"
+        "source_kind": "academic",
+        "author": "Flore Bollaert",
+        "year": 2018,
+        "page": "section 1.1 « Situating Sagala » et section sur la vitalité de la langue",
+        "notes": "Mémoire de licence, Universiteit Gent. Lu le 8 novembre 2026. L'auteure situe les locuteurs du sagala dans la région de Morogoro, en zone très montagneuse, et reprend le chiffre de 106 331 locuteurs de Muzale et Rugemalira (2008), qui écrivent le nom « Sagara ». Elle explique que [l] et [r] sont interchangeables en sagala, ce qui éclaire les deux graphies Sagala et Sagara. Elle écrit ne pas être certaine que la langue soit réellement menacée."
       }
     ]
   },
