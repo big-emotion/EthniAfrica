@@ -23,7 +23,13 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Le nom Bin Nasr se lit comme une filiation arabe : bin (écrit aussi ibn) veut dire « fils de », et Nasr s'écrit comme le mot arabe naṣr, qui veut dire « aide » ou « victoire » dans le dictionnaire de Lane. Bin Nasr signifie donc « fils de Nasr ». Ces deux sources décrivent la forme du nom, pas une lignée précise de Libye.",
+        "claimStatus": "established",
+        "sourceRefs": ["ifla-arabic-names", "lane-nasr-1863"]
+      }
+    ]
   },
   "peoples": [
     {
@@ -59,12 +65,28 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Article scientifique consulté le 2 septembre 2026. L’affiliation d’un auteur nommé Mustafa Ahmed bin Nasr au College of Education de Misurata atteste la forme en contexte libyen, sans établir qu’il s’agit d’un patronyme héréditaire ni en donner l’étymologie."
+    },
+    {
+      "sourceKey": "lane-nasr-1863",
+      "title": "An Arabic-English Lexicon, entrée نَصْرٌ (naṣr)",
+      "url": "https://www.laneslexicon.com/word/%D9%86%D8%B5%D8%B1/n39915",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Edward William Lane, An Arabic-English Lexicon, Londres, 1863-1893 ; transcription en ligne lue le 8 novembre 2026. L'entrée donne : « Aid or assistance, rendered to another, especially against an enemy : … victory or conquest »."
+    },
+    {
+      "sourceKey": "ifla-arabic-names",
+      "title": "Arabic names (fiche « Arabic » des lignes directrices IFLA sur les noms de personnes)",
+      "url": "https://repository.ifla.org/rest/api/core/bitstreams/e41641d3-309d-4108-ada8-86cf282ae354/content",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Document de la fédération internationale des bibliothèques (IFLA), lu le 8 novembre 2026, partie « Arabic usage to about 1800 » : le nasab, ou patronyme, est un composé formé de la particule ibn (« son of ») et du nom du père ou du grand-père, par exemple « ibn Muhammad ». Date de publication non indiquée sur le document lu."
     }
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "Les recherches exactes « Bin Nasr anthroponymie », « Bin Nasr onomastique » et « Bin Nasr surname etymology » ont été menées dans Persée, ASJP, CRASC, OpenEdition, Google Scholar et des dépôts universitaires nord-africains. Aucun travail savant consacré à l’origine ou à l’histoire d’une lignée portant exactement cette graphie n’a été trouvé. La source propre au nom n’établit qu’une graphie ou une distribution et ne permet d’énoncer ni étymologie ni origine de lignée."
+      "fieldPath": "origin.oralTraditions",
+      "reason": "Les recherches « Bin Nasr anthroponymie », « Bin Nasr onomastique » et « Bin Nasr surname etymology » dans Persée, ASJP, CRASC, OpenEdition, Google Scholar et des dépôts universitaires nord-africains n'ont montré aucune étude consacrée à une lignée Bin Nasr, ni récit oral ou chronique à son sujet. Seul le sens des deux éléments du nom est établi (voir l'origine linguistique)."
     },
     {
       "fieldPath": "peoples",
@@ -85,6 +107,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "Les recherches exactes « Bin Nasr homonym surname », « Bin Nasr homonyme patronyme » et les variantes graphiques de la fiche n’ont pas établi deux origines distinctes et documentées pour la même forme."
+    },
+    {
+      "fieldPath": "origin.writtenChronicles",
+      "reason": "Aucune chronique ni document d'archive nommant une lignée Bin Nasr n'a été trouvé dans les mêmes recherches."
     }
   ]
 }

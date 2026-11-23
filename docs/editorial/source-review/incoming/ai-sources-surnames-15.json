@@ -1,0 +1,94 @@
+[
+  {
+    "fiche": "patronymes/PAT_BIN_NASR.json",
+    "path": "sources[0]",
+    "claim": "id: PAT_BIN_NASR; nameMain: Bin Nasr; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+    "original": {
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null
+    },
+    "candidates": [
+      {
+        "title": "Arabic names (IFLA)",
+        "author": "IFLA",
+        "year": null,
+        "url": "https://repository.ifla.org/rest/api/core/bitstreams/e41641d3-309d-4108-ada8-86cf282ae354/content",
+        "source_kind": "academic",
+        "quote": "compound, consisting of the particle ibn (son of) indicating relationship and the name of the father and/or grandfather",
+        "supports": "The form of the name only: bin/ibn + father's name. Does not attest Bin Nasr in Libya."
+      }
+    ],
+    "status": "proposed",
+    "proposedAt": "2026-11-08",
+    "model": "sonnet-5.5 (Claude Code, batch surnames-15)"
+  },
+  {
+    "fiche": "patronymes/PAT_BISHARA.json",
+    "path": "sources[0]",
+    "claim": "id: PAT_BISHARA; nameMain: Bishara; nameSystem: non_hereditary_patronymic; transmissionMode: other; designatedSocialUnit: individual",
+    "original": {
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null
+    },
+    "candidates": [
+      {
+        "title": "An Arabic-English Lexicon, entry بُشْرَى",
+        "author": "Edward William Lane",
+        "year": 1863,
+        "url": "https://www.laneslexicon.com/word/%D8%A8%D8%B4%D8%B1%D9%89/n2598",
+        "source_kind": "linguistic_reference",
+        "quote": "a joyful annunciation; joyful, or glad, tidings; good news",
+        "supports": "The Arabic word bishara 'good news'. Does not attest the name in Egypt."
+      }
+    ],
+    "status": "proposed",
+    "proposedAt": "2026-11-08",
+    "model": "sonnet-5.5 (Claude Code, batch surnames-15)"
+  },
+  {
+    "fiche": "patronymes/PAT_BISHARI.json",
+    "path": "sources[0]",
+    "claim": "id: PAT_BISHARI; nameMain: Bishari; nameSystem: nisba; transmissionMode: other; designatedSocialUnit: other",
+    "original": {
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null
+    },
+    "candidates": [
+      {
+        "title": "Sustaining Livelihoods across the Rural-Urban Divide: Changes and Challenges Facing the Beja Pastoralists of North Eastern Sudan",
+        "author": "Sara Pantuliano",
+        "year": 2002,
+        "url": "https://www.iied.org/sites/default/files/pdfs/migrate/9163IIED.pdf",
+        "source_kind": "academic",
+        "quote": "The main tribes are the Amar'ar/Atmaan, the Bishariyyn and the Hadendowa, who mostly live in North-Eastern Sudan",
+        "supports": "Bishariyyn as a main Beja tribe in Sudan; not the Egyptian spelling Bishari."
+      }
+    ],
+    "status": "proposed",
+    "proposedAt": "2026-11-08",
+    "model": "sonnet-5.5 (Claude Code, batch surnames-15)"
+  },
+  {
+    "fiche": "patronymes/PAT_BIZIMANA.json",
+    "path": "sources[0]",
+    "claim": "id: PAT_BIZIMANA; nameMain: Bizimana; nameSystem: non_hereditary_patronymic; transmissionMode: non_hereditary; designatedSocialUnit: individual",
+    "original": {
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null
+    },
+    "candidates": [
+      {
+        "title": "Les noms de personnes au Burundi : un support du lien social",
+        "author": "Léandre Simbananiye",
+        "year": 2005,
+        "url": "https://www.anthropologie-societes.ant.ulaval.ca/sites/anthropologie-societes.ant.ulaval.ca/files/articles/fichiers/A&S_29-1_167-181.pdf",
+        "source_kind": "academic",
+        "quote": "Bizimana : c'est Imana qui le sait",
+        "supports": "Meaning of the name in Burundi (p. 174); says nothing of Rwanda, where the fiche places the name."
+      }
+    ],
+    "status": "proposed",
+    "proposedAt": "2026-11-08",
+    "model": "sonnet-5.5 (Claude Code, batch surnames-15)"
+  }
+]
