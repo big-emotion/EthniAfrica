@@ -46,7 +46,7 @@
     "organization": {
       "traditionalPoliticalSystem": "Organisation politique decentralisee basee sur le matrilignage. Chaque lignage local constituait une entite politique autonome. Il n'existait pas d'organisation politique depassant le niveau du lignage, a l'exception de rares faiseurs de pluie influents (Chamilandege ou Sengwa) qui etendaient leur autorite supra-lignagere. La Native Authority coloniale britannique (1920-1962) a impose une structure centralisee temporaire.",
       "clanOrganization": "Plus de 50 clans matrilineaires exogames parmi les Luguru, appeles Lukolo, Lukero et Kungugo. Ces clans ne sont pas des entites proprieteraires de terres, mais leurs histoires et coutumes les associent a des regions generales des monts Uluguru. Certains clans sont lies par des relations rituelles et de plaisanterie (watani). Environ 800 lignages matrilineaires identifies, chacun associe a une zone fonciere specifique.",
-      "ageClassSystems": null,
+      "ageClassSystems": "Les sources lues ne décrivent pas de classes d'âge chez les Luguru. Adam Skiba, qui a enquêté sur place en 2003, décrit l'initiation des garçons comme une décision de la famille : le père et l'oncle déclarent devant la communauté que le garçon a entre 10 et 13 ans et que le moment est venu. Un circonciseur nommé ngariba et un assistant nommé showari conduisent le rite, qui n'est pas présenté comme celui d'une classe d'âge.",
       "roleOfLineages": "Le matrilignage est l'unite fondamentale politique, sociale et fonciere. Chaque lignage a des droits inalienables sur des terres specifiques. Le chef de lignage (mwenye mlunga) supervise la distribution des terres, organise les ceremonies propitiatoires, gere les conflits fonciers et detient les insignes du lignage (stool/mkunga, hache/mambaza, chapeau/fia, bracelet/mhande, baton/tenge, tambour). Les lignages sont classes par senioritie en trois niveaux: tombo dwkuru (grand sein), tombo dukati (sein moyen), tombo dudogo (petit sein).",
       "religiousAuthority": "Le chef de lignage matrilineaire dirige les rituels de propitiation des esprits ancestraux (kutambika). Des faiseurs de pluie (dont le plus renomme portait le nom de Kingalu) exercaient une autorite religieuse reconnue au-dela de leur propre groupe, parfois par des peuples voisins."
     },
@@ -111,11 +111,21 @@
         "title": "Luguru – Database of Religious History, 2022",
         "url": "https://religiondatabase.org/browse/1323",
         "tier": "needs_review"
+      },
+      {
+        "title": "Initiation Ritual of Boys among the Luguru People in Eastern Tanzania",
+        "author": "Adam Skiba",
+        "year": 2015,
+        "url": "https://doi.org/10.18290/rt.2015.62.9-11",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "page": "p. 215",
+        "notes": "Âge de 10 à 13 ans confirmé par le père et l'oncle, rôles du ngariba et du showari : texte de l'article, p. 215 (en polonais, résumé en anglais)."
       }
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Luguru désigne un peuple des monts Uluguru et des plaines voisines, dans la région de Morogoro, en Tanzanie, qui se nomme lui-même Waluguru. D'autres noms existent : Ruguru, et Kami pour un groupe des plaines de l'est. On ne sait pas avec certitude si le peuple a donné son nom aux montagnes ou l'inverse : les sources que nous avons lues ne le disent pas.",
+    "summary": "Le nom Luguru désigne un peuple des monts Uluguru et des plaines voisines, dans la région de Morogoro, en Tanzanie, qui se nomme lui-même Waluguru. D'autres noms existent : Ruguru, et Kami pour un groupe des plaines de l'est. La plus ancienne trace du nom que nous connaissons est celle de Richard Burton, qui écrit Waruguru en 1860 pour les habitants de ces hauteurs ; aucune des sources lues ne dit si le peuple a donné son nom aux monts ou l'inverse.",
     "names": [
       {
         "nameText": "Waluguru",
