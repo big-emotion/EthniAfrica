@@ -45,7 +45,13 @@
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
-  "bearers": [],
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Boutros Ghali",
+      "sourceRefs": ["egyptindependent-botroseya-2016"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
@@ -55,6 +61,14 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "egyptindependent-botroseya-2016",
+      "title": "Botroseya Church, first church named after political family",
+      "url": "https://www.egyptindependent.com/botroseya-church-first-church-named-after-political-family/",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Egypt Independent, reprise d'un article d'Al-Masry Al-Youm, 12 décembre 2016, lu en ligne. L'article dit que l'église, d'abord dédiée à saint Pierre et saint Paul, est devenue « la Botroseya », nom tiré de Botros, mot arabe pour Pierre ; il décrit Boutros Ghali comme Premier ministre d'Égypte de 1908 à 1910 et place son assassinat en 1910. Il ne traite pas du nom comme objet d'étude."
     }
   ],
   "gaps": [
@@ -64,19 +78,15 @@
     },
     {
       "fieldPath": "alliances",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les deux notices de dictionnaire de noms et l'article de presse consultés ne mentionnent aucune alliance ou parenté à plaisanterie attachée au nom Boutros."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Aucune des sources consultées ne rattache le nom Boutros à une fonction ou à un statut héréditaire : c'est un prénom chrétien courant, pas un nom de métier."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Les sources consultées ne présentent pas d'autre nom écrit Boutros d'origine différente ; le nom est présenté comme une forme arabe de Pierre."
     },
     {
       "fieldPath": "transmissionMode",

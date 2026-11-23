@@ -11,7 +11,13 @@
     {
       "spelling": "Boussougou",
       "attestations": [
-        { "countryId": "GAB", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GAB",
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "union-boussougou-badinga-2018"
+          ]
+        }
       ]
     }
   ],
@@ -38,7 +44,13 @@
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
-  "bearers": [],
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Barthélémy Boussougou Badinga",
+      "sourceRefs": ["union-boussougou-badinga-2018"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
@@ -48,12 +60,20 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "union-boussougou-badinga-2018",
+      "title": "Barthélemy Boussougou Badinga s'en est allé",
+      "url": "https://www.lunion-archives.org/web.11/dmdocuments/N12760-02-07-2018-017.pdf",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Quotidien L'Union (Libreville), n° 12760, 2 juillet 2018, p. 17, lu dans le PDF des archives du journal. L'article raconte l'enterrement, le 16 juin 2018 à Tchibanga (province de la Nyanga), de Barthélémy Boussougou Badinga, né le 1er janvier 1929 à Malabilila (département de la Doutsila), patriarche et homme politique, et retrace sa carrière. Il atteste le nom Boussougou à Tchibanga ; il ne dit ni le peuple, ni le clan, ni le sens du nom."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Une recherche sur le web (nom accolé à Punu, Nzebi, Mitsogo, clan, Gabon) n'a trouvé ni explication du sens du nom, ni récit d'origine, ni étude d'onomastique gabonaise qui le traite. L'article de L'Union consulté donne un porteur à Tchibanga, pas une origine."
     },
     {
       "fieldPath": "alliances",
@@ -64,16 +84,16 @@
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
-      "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "L'article de L'Union consulté montre un porteur dont le nom suit « Barthélémy » puis précède « Badinga », sans dire comment le nom se transmet. Aucun travail sur le Punu consulté ne le précise pour ce nom."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "L'article de L'Union situe un porteur à Tchibanga, dans la Nyanga, mais ne nomme ni son peuple ni son clan. Le rattachement au peuple punu vient du relevé de couverture du projet, qui n'est pas une source : il reste à confirmer par un travail sur les clans punu."
     }
   ]
 }

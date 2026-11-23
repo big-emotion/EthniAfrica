@@ -13,7 +13,12 @@
       "attestations": [
         {
           "countryId": "DZA",
-          "sourceRefs": ["afrik-candidate-queue", "forebears-bouteflika"]
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "forebears-bouteflika",
+            "irishtimes-bouteflika-2021",
+            "menas-bouteflika-2021"
+          ]
         }
       ]
     }
@@ -41,7 +46,13 @@
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
-  "bearers": [],
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Abdelaziz Bouteflika",
+      "sourceRefs": ["irishtimes-bouteflika-2021", "menas-bouteflika-2021"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
@@ -59,6 +70,22 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Répertoire communautaire consulté le 2 septembre 2026. Il recense Bouteflika en Algérie mais ne donne aucune étymologie ni documentation généalogique."
+    },
+    {
+      "sourceKey": "irishtimes-bouteflika-2021",
+      "title": "Abdelaziz Bouteflika obituary: President of Algeria for nearly 20 years",
+      "url": "https://www.irishtimes.com/life-and-style/people/abdelaziz-bouteflika-obituary-president-of-algeria-for-nearly-20-years-1.4681802",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "The Irish Times, 25 septembre 2021, nécrologie lue en ligne. Elle donne Abdelaziz Bouteflika né le 2 mars 1937 à Oujda (Maroc) et mort le 17 septembre 2021, fils d'Ahmed Bouteflika et de Mansouria Ghezlaoui, dont les deux parents venaient de la région de Tlemcen, en Algérie. Elle ne dit rien du sens du nom."
+    },
+    {
+      "sourceKey": "menas-bouteflika-2021",
+      "title": "Obituary: Abdelaziz Bouteflika – 1937-2021",
+      "url": "https://menas.co.uk/blog/obituary-abdelaziz-bouteflika-1937-2021",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Menas Associates (Londres), nécrologie de septembre 2021, lue en ligne. Elle dit que son père « had emigrated from Tlemcen to Oujda as a youngster », que Bouteflika est mort d'un arrêt cardiaque le 17 septembre à Zeralda à 84 ans, et nomme son frère Saïd, conseiller spécial à la présidence. Elle ne traite pas l'origine du nom."
     }
   ],
   "gaps": [
@@ -79,10 +106,6 @@
       "reason": "Les recherches « Bouteflika caste », « Bouteflika métier héréditaire » et « Bouteflika social function » n’ont livré aucune fonction sociale ou professionnelle héréditaire propre à cette graphie."
     },
     {
-      "fieldPath": "bearers",
-      "reason": "Les recherches biographiques exactes sur « Bouteflika » dans les catalogues, notices institutionnelles et archives accessibles n’ont pas permis d’isoler un porteur décédé dont ce segment soit explicitement documenté dans la position patronymique pertinente. Les personnes vivantes repérées ont été exclues."
-    },
-    {
       "fieldPath": "homonyms",
       "reason": "Les recherches exactes « Bouteflika homonym surname », « Bouteflika homonyme patronyme » et les variantes graphiques de la fiche n’ont pas établi deux origines distinctes et documentées pour la même forme."
     },
@@ -92,7 +115,7 @@
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Les recherches « Bouteflika transmission patronyme », « Bouteflika filiation » et « Bouteflika hereditary surname » n’ont pas établi si, ni comment, cette forme se transmet dans les communautés concernées."
+      "reason": "Deux nécrologies de 2021 montrent le nom Bouteflika porté par le père, Ahmed, et par son fils Abdelaziz, famille originaire de la région de Tlemcen : c'est un cas de transmission du père au fils, pas une règle établie pour tous les porteurs. Les recherches « Bouteflika transmission patronyme » et « Bouteflika filiation » n'ont rien trouvé de plus général ; le mode reste donc « other »."
     },
     {
       "fieldPath": "designatedSocialUnit",
