@@ -1,4 +1,3 @@
-import { emailSignature } from "@/lib/email/signature";
 import * as Sentry from "@sentry/nextjs";
 import { logger } from "@/lib/api/logger";
 import { graphConfigured, sendViaGraph } from "@/lib/email/graph";
@@ -163,55 +162,4 @@ export async function sendFlagResolutionEmail(
     });
     Sentry.captureException(error);
   }
-}
-
-/** What the verification e-mail needs to say who it is about. */
-// @req REQ-012
-export interface FlagVerificationEmail {
-  email: string;
-  token: string;
-  publicSlug: string;
-  language?: Language;
-}
-
-/**
- * Ask a reader to confirm the address they left on a report.
- *
- * This is the one message the atlas will ever send to an unproven address, and
- * it exists precisely so there is never a second: anyone can type someone
- * else's address into the report form, and only the person holding the inbox
- * can turn it into a channel.
- *
- * The report is already published by the time this is sent. The link decides
- * whether a decision comes back, never whether the report counts.
- */
-// @req REQ-012
-export async function sendFlagVerificationEmail({
-  email,
-  token,
-  publicSlug,
-  language = FR,
-}: FlagVerificationEmail): Promise<boolean> {
-  if (!graphConfigured()) {
-    logger.warn(
-      "Flag verification email not sent: no email transport configured",
-      { flagSlug: publicSlug }
-    );
-    return false;
-  }
-
-  const reportsRoute = getStaticPageRoute(language, "reports");
-  const verificationLink = `${resolveSiteUrl()}${reportsRoute}/verifier?token=${encodeURIComponent(token)}`;
-
-  return sendNotification(email, {
-    subject: "Confirmez votre adresse pour suivre votre signalement",
-    text: [
-      "Votre signalement est bien enregistré et déjà consultable :",
-      flagPageUrl(publicSlug, language),
-      "Pour recevoir la décision de la modération par e-mail, confirmez cette adresse :",
-      verificationLink,
-      "Ce lien est valable 24 heures et ne fonctionne qu'une fois. Si vous n'avez rien signalé, ignorez ce message : sans confirmation, cette adresse ne sera plus utilisée.",
-      emailSignature(),
-    ].join("\n\n"),
-  });
 }

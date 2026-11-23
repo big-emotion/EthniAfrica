@@ -233,6 +233,12 @@ describe("createFlag", () => {
       contributor_id: "user-123",
       status: "open",
       human_verified: true,
+      // A report that is not a block comment, filed without a reader
+      // session: no block, and private until its author confirms an address.
+      block_key: null,
+      knowledge_basis: null,
+      contributor_display_name_snapshot: null,
+      published_at: null,
     });
     expect(query.select).toHaveBeenCalledWith(
       "id, public_slug, status, created_at"
@@ -258,6 +264,33 @@ describe("createFlag", () => {
         counter_source_url: null,
         counter_source_citation: null,
         proposed_rewrite: null,
+      })
+    );
+  });
+
+  // @req REQ-212
+  it("stores a block comment's block, pseudonym, basis and publication date", async () => {
+    const query = resolvedQuery({ data: createdFlag, error: null });
+    mocks.createAdminClient.mockReturnValue({ from: vi.fn(() => query) });
+
+    await createFlag("reader-1", {
+      target_type: "people",
+      target_id: "PPL_PEUL",
+      flag_kind: "correction-proposal",
+      reason_text: "On dit aussi Fulɓe, au pluriel.",
+      block_key: "people:PPL_PEUL:naming",
+      display_name: "Aïssata",
+      knowledge_basis: "language",
+      published_at: "2026-11-18T10:00:00.000Z",
+    });
+
+    expect(query.insert).toHaveBeenCalledWith(
+      expect.objectContaining({
+        block_key: "people:PPL_PEUL:naming",
+        contributor_display_name_snapshot: "Aïssata",
+        knowledge_basis: "language",
+        published_at: "2026-11-18T10:00:00.000Z",
+        contributor_id: "reader-1",
       })
     );
   });

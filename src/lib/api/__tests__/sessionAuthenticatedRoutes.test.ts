@@ -248,4 +248,20 @@ describe("session-authenticated API routes", () => {
   ])("keeps API-key validation on %s %s", (method, pathname) => {
     expect(isSessionAuthenticatedApiRoute(pathname, method)).toBe(false);
   });
+
+  // A reader's session travels as the site's cookies, not as a bearer
+  // (lib/comments/readerSession.ts), so the comment routes need no exemption
+  // here — and must not get one, since every entry is held to the moderator
+  // allowlist.
+  // @req REQ-212
+  it.each([
+    ["GET", "/api/v2/comments"],
+    ["POST", "/api/v2/comments/9c81ca0d-ae45-4f08-8f53-2ac0a9673abd/replies"],
+    ["POST", "/api/v2/comments/9c81ca0d-ae45-4f08-8f53-2ac0a9673abd/report"],
+  ])(
+    "leaves the reader route %s %s to the keyless path",
+    (method, pathname) => {
+      expect(isSessionAuthenticatedApiRoute(pathname, method)).toBe(false);
+    }
+  );
 });
