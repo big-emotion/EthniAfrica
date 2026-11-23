@@ -51,7 +51,13 @@
   ],
   "alliances": [],
   "casteOrSocialFunction": null,
-  "bearers": [],
+  "bearers": [
+    {
+      "status": "deceased",
+      "displayName": "Abdelhamid Ben Badis",
+      "sourceRefs": ["algerie360-ben-badis"]
+    }
+  ],
   "homonyms": [],
   "sources": [
     {
@@ -69,6 +75,14 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Répertoire communautaire consulté le 2 septembre 2026. Il recense 67 occurrences de Ben Badis en Algérie et indique qu’aucune signification n’est répertoriée."
+    },
+    {
+      "sourceKey": "algerie360-ben-badis",
+      "title": "Ben Badis, retour sur le parcours héroïque de l'un des pères du nationalisme algérien",
+      "url": "https://www.algerie360.com/ben-badis-retour-sur-le-parcours-de-lun-des-peres-du-nationalisme/",
+      "tier": "unverified",
+      "source_kind": "press",
+      "notes": "Article de Farid Larbi, Algérie360, 18 avril 2022, lu le 8 novembre 2026. Il écrit que Ben Badis est « né le 4 décembre 1889 à Constantine » et « mort le 16 avril 1940 dans la même ville », et le dit fondateur de l'Association des Oulémas."
     }
   ],
   "gaps": [
@@ -83,10 +97,6 @@
     {
       "fieldPath": "casteOrSocialFunction",
       "reason": "Les recherches « Ben Badis caste », « Ben Badis métier héréditaire » et « Ben Badis social function » n’ont livré aucune fonction sociale ou professionnelle héréditaire propre à cette graphie."
-    },
-    {
-      "fieldPath": "bearers",
-      "reason": "Les recherches biographiques exactes sur « Ben Badis » dans les catalogues, notices institutionnelles et archives accessibles n’ont pas permis d’isoler un porteur décédé dont ce segment soit explicitement documenté dans la position patronymique pertinente. Les personnes vivantes repérées ont été exclues."
     },
     {
       "fieldPath": "homonyms",
@@ -258,7 +268,7 @@
               "label": "Inscription de 1382"
             },
             "era": "polity",
-            "statement": "Le nom Ben Badis apparaît par écrit, sous la forme « ben Badis », sur la pierre tombale d'un cadi de Constantine mort en 784 de l'hégire, soit 1382 : il y est dit « Hassen ben Khalf-Allah ben Badis ben El-Kassem ben Mimoun ben Badis El-Qaïsi », selon la lecture que Gustave Mercier publie en 1901. C'est la plus ancienne trace de ce nom que le projet connaît ; la pierre a disparu après la conquête et l'on ne la connaît que par ces relevés. Elle donne la filiation d'un homme : le projet ne sait pas depuis quand le nom sert de nom de famille.",
+            "statement": "Le nom Ben Badis apparaît par écrit, sous la forme « ben Badis », sur la pierre tombale d'un cadi de Constantine mort en 784 de l'hégire, soit 1382 : il y est dit « Hassen ben Khalf-Allah ben Badis ben El-Kassem ben Mimoun ben Badis El-Qaïsi », selon le déchiffrement que Gustave Mercier publie en 1901. C'est la plus ancienne trace de ce nom que le projet connaît ; la pierre a disparu après la conquête et l'on ne la connaît que par ces relevés. Elle donne la filiation d'un homme : le projet ne sait pas depuis quand le nom sert de nom de famille.",
             "formAsWritten": "ben Badis",
             "birth": true,
             "sources": [
