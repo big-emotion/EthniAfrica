@@ -38,6 +38,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Brief 18 — Related-only search results](design/mockups/briefs/18-related-only-search-results.md)
 - [Brief 19 — A recorded spelling answers the search](design/mockups/briefs/19-recorded-search-term.md)
 - [Brief 20 — The answer card in Claude and ChatGPT, and the install page](design/mockups/briefs/20-agent-answer-card.md)
+- [Brief 21 — Comments per passage, the block footer](design/mockups/briefs/21-block-comments.md)
 - [Name-page mockup briefs — one per type of name](design/mockups/briefs/README.md)
 - [Claude Design prompt, step 1 — shared rules and brief 1](design/mockups/briefs/claude-design-prompt-01.md)
 - [Claude Design prompt, step 2 — brief 2, the people fiche](design/mockups/briefs/claude-design-prompt-02.md)
