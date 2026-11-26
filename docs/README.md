@@ -141,6 +141,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Reader demand journal — 2026-11-22](audience/demand/2026-11-22.md)
 - [Reader demand journal — 2026-11-23](audience/demand/2026-11-23.md)
 - [Reader demand journal — 2026-11-24](audience/demand/2026-11-24.md)
+- [Reader demand journal — 2026-11-26](audience/demand/2026-11-26.md)
 
 ## Runbooks — procedures, and records of ones already run
 
